@@ -73,3 +73,13 @@ button:disabled {
   color: #ccc;
   cursor: auto;
 }
+
+button.delete {
+    float: right;
+    margin-top: 2px;
+    background-color: gray !important;
+    color: white;
+    top: -7px;
+    position: relative;
+    height: 32px;
+}
