@@ -2,10 +2,13 @@
   <a class="navbar-brand" href="#">Angular CLI + Bootstrap</a>
   <ul class="nav navbar-nav mr-auto">
     <li class="nav-item active">
-      <a class="nav-link" href="" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" [routerLink]="['']" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/heroes" routerLinkActive="active">Heroes</a>
+      <a class="nav-link" [routerLink]="['/heroes']" routerLinkActive="active">Heroes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/chain']" routerLinkActive="active">Chain</a>
     </li>
     <li class="nav-item">
       <hero-search></hero-search>

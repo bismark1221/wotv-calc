@@ -15,9 +15,13 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HomeComponent } from './home/home.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ChainingComponent } from './chaining/chaining.component';
 
 import { HeroService } from './services/hero.service';
-import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { UnitService } from './services/unit.service';
+import { LoggerService } from './services/logger.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailComponent,
     HeroesComponent,
     HomeComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    PageNotFoundComponent,
+    ChainingComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     AppRoutingModule
   ],
   providers: [
-    HeroService
+    HeroService,
+    UnitService,
+    LoggerService
   ],
   bootstrap: [AppComponent]
 })
