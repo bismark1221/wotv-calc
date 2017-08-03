@@ -21,7 +21,22 @@ export const UNITS: Unit[] = [
     abilities: [
       {
         name: 'Fin Briar',
-        base: 230
+        base: 230,
+        frames: 1,
+        hits: 1
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Orlandeau',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Holy Explosion',
+        base: 200,
+        hits: 7,
+        frames: 7,
       }
     ]
   }

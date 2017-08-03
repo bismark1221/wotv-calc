@@ -1,5 +1,5 @@
 <div>
-  <h2>Characters</h2>
+  <h2>All units</h2>
   <ul class="units">
     <li *ngFor="let unit of units" [class.selected]="unit === selectedUnit" (click)="onSelect(unit)">
       <span class="badge">{{unit.id}}</span>
@@ -10,5 +10,24 @@
 <div *ngIf="selectedUnit">
   <h2>
     {{selectedUnit.name | uppercase}}
+  </h2>
+</div>
+
+<div>
+  <label for="chain1">Chain 1</label>
+  <select class="units" id="chain1" [(ngModel)]="chain.unit1">
+    <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
+  </select>
+
+  <label for="chain2">Chain 2</label>
+  <select class="units" id="chain2" [(ngModel)]="chain.unit2">
+    <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
+  </select>
+
+  <button (click)="calculateChain()" type="button">Calculate</button>
+</div>
+<div *ngIf="chain.result">
+  <h2>
+    {{chain.result}}
   </h2>
 </div>

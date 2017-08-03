@@ -21,6 +21,7 @@ import { ChainingComponent } from './chaining/chaining.component';
 
 import { HeroService } from './services/hero.service';
 import { UnitService } from './services/unit.service';
+import { ChainService } from './services/chain.service';
 import { LoggerService } from './services/logger.service';
 
 @NgModule({
@@ -45,7 +46,8 @@ import { LoggerService } from './services/logger.service';
   providers: [
     HeroService,
     UnitService,
-    LoggerService
+    LoggerService,
+    ChainService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Unit } from '../entities/unit';
+import { Chain } from '../entities/chain';
 import { UnitService } from '../services/unit.service';
+import { ChainService } from '../services/chain.service';
 
 @Component({
   selector: 'app-chaining',
@@ -12,13 +14,16 @@ import { UnitService } from '../services/unit.service';
 export class ChainingComponent implements OnInit {
   selectedUnit: Unit;
   units: Unit[];
+  chain: Chain;
 
   constructor(
-    private unitService: UnitService
+    private unitService: UnitService,
+    private chainService: ChainService
   ) { }
 
   ngOnInit(): void {
     this.getUnits();
+    this.chain = new Chain();
   }
 
   getUnits(): void {
@@ -27,5 +32,9 @@ export class ChainingComponent implements OnInit {
 
   onSelect(unit: Unit): void {
     this.selectedUnit = unit;
+  }
+
+  calculateChain(): void {
+    this.chainService.calculateChain(this.chain).then(chain => this.chain = chain);
   }
 }
