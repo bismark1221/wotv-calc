@@ -39,33 +39,51 @@ console.log('----------')
       console.log(i * frames2)
     }
 
+console.log('@@@@@@@@@@@@')
+
     var combo: any[] = [];
     var nbMulti = 0;
     var nbCombo1 = 1;
     var nbCombo2 = 1;
     var nbCombo = 1;
 
-    for (var i = 1; i < Math.max(hit1, hit2); i++) {
-      console.log("compare " + nbCombo1 + ":" + nbCombo1 * frames1 + '//' + nbCombo2 + ":" + (nbCombo2 - 1) * frames2)
-      console.log("control loop " + i + ":" + hit2)
-      if (nbCombo1 * frames1 < (nbCombo2 - 1) * frames2 || i > hit2 + nbMulti) {
+    for (var i = 0; i < Math.max(hit1, hit2); i++) {
+      console.log("### " + (nbCombo1 * frames1) + " ###")
+      //console.log("compare " + nbCombo1 + ":" + nbCombo1 * frames1 + '//' + nbCombo2 + ":" + (nbCombo2 - 1) * frames2)
+      console.log('i : ' + i)
+      console.log('nbCombo1 : ' + nbCombo1)
+      console.log('nbCombo2 : ' + nbCombo2)
+      console.log('nbCombo : ' + nbCombo)
+      console.log('nbMulti : ' + nbMulti)
+      //console.log("control loop " + nbCombo2 + ":" + (hit2 + nbMulti))
+      if (nbCombo1 * frames1 < (nbCombo2 - 1) * frames2 || nbCombo2 >= hit2 + nbMulti) {
         combo[nbMulti] = {
           num: (nbCombo1 > 1 ? nbCombo1 - 1 : 1),
-          combo: (nbCombo > 1 ? (nbCombo - 1) * 2 - 1 : 1),
+          combo: (nbCombo > 1 ? (nbCombo - 1) * 2 - 1 : 1)
         }
-        nbCombo = 0;
+
+        if (nbCombo1 * frames1 < (nbCombo2 - 1) * frames2) {
+          console.log((nbCombo1 > 1 ? nbCombo1 - 1 : 1) + " break for frame " + nbCombo1 * frames1 + " -- " + (nbCombo2 - 1) * frames2)
+        }
+
+        if (nbCombo2 >= hit2 + nbMulti) {
+          console.log((nbCombo1 > 1 ? nbCombo1 - 1 : 1) + " break for no more 2")
+        }
+
+        nbCombo2 = (nbCombo2 >= hit2 + nbMulti ? nbCombo2 : nbCombo2 - 1);
+        nbCombo = 1;
         nbMulti++;
-        nbCombo2 = nbCombo2 - 1;
-        console.log((nbCombo1 > 1 ? nbCombo1 - 1 : 1) + " break for frame " + nbCombo1 * frames1 + " -- " + nbCombo2 * frames2)
+
       }
+      console.log("#####")
       nbCombo1++;
       nbCombo2++;
       nbCombo++;
     }
 
     combo[nbMulti] = {
-      num: nbCombo1,
-      combo: nbCombo * 2 - 1
+      num: (nbCombo1 > 1 ? nbCombo1 - 1 : 1),
+      combo: (nbCombo > 1 ? (nbCombo - 1) * 2 - 1 : 1)
     }
 
     console.log(combo);
@@ -83,8 +101,8 @@ console.log('----------')
 ######
 5 10 15 20 25 30 35 40 45 50 55 60
 ----------
-7 14 BB 21 28 35 BB 42 49 BB
-
+7 14 -- 21 28 35 -- 42 49 -- -- --
+      1          2        3  4  5
 
 Total damage for a unit
 1 / nb_elem x base x ignore_def x debuff_elem  + repeat for each elem
