@@ -83,3 +83,27 @@ button.delete {
     position: relative;
     height: 32px;
 }
+
+.bar-chain-1 {
+  background-color: #5bc0de;
+}
+
+.bar-chain-2 {
+  background-color: #5cb85c;
+}
+
+.bar-chain-3 {
+  background-color: #5cb85c;
+}
+
+.bar-finisher {
+  background-color: #f0ad4e;
+}
+
+.bar-break {
+  background-color: #d9534f;
+}
+
+.bar-separator {
+  background-color: #000000;
+}

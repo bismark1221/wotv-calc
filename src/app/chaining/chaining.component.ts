@@ -15,6 +15,7 @@ export class ChainingComponent implements OnInit {
   selectedUnit: Unit;
   units: Unit[];
   chain: Chain;
+  testHits: any[];
 
   constructor(
     private unitService: UnitService,
@@ -34,7 +35,13 @@ export class ChainingComponent implements OnInit {
     this.selectedUnit = unit;
   }
 
+  onChangeUnit1(unit: Unit) {
+    this.testHits = this.unitService.calculateFrames(unit);
+  }
+
   calculateChain(): void {
-    this.chainService.calculateChain(this.chain).then(chain => this.chain = chain);
+    this.chainService.calculateChain(this.chain).then(chain => {
+      this.chain = chain;
+    });
   }
 }

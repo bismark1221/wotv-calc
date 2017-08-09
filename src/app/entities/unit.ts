@@ -4,5 +4,6 @@ export class Unit {
   id: number;
   name: string;
   type: string;
-  abilities: [Ability]
+  abilities: [Ability];
+  hitDamage?: number;
 }

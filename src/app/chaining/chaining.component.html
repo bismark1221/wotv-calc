@@ -15,7 +15,7 @@
 
 <div>
   <label for="chain1">Chain 1</label>
-  <select class="units" id="chain1" [(ngModel)]="chain.unit1">
+  <select class="units" id="chain1" [(ngModel)]="chain.unit1" (ngModelChange)="onChangeUnit1($event)">
     <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
   </select>
 
@@ -26,8 +26,22 @@
 
   <button (click)="calculateChain()" type="button">Calculate</button>
 </div>
+
+<div *ngIf="testHits">
+  <div class="progress">
+    <div *ngFor="let hit of testHits" class="progress-bar" [ngClass]="(hit.type === 'hit') ? 'bar-chain-1' : 'bar-break'" [ngStyle]="{'width': hit.size + '%'}">
+      {{hit.size}}
+    </div>
+  </div>
+</div>
+
 <div *ngIf="chain.result">
   <h2>
     {{chain.result}}
   </h2>
+  <div class="progress">
+    <div *ngFor="let hit of chain.hits" class="progress-bar" [ngClass]="'bar-chain-' + hit.unit.id" [ngStyle]="{'width': hit.unit.abilities[0].frames + '%'}">
+      {{hit.unit.name}}
+    </div>
+  </div>
 </div>
