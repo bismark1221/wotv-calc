@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ChainingComponent } from './chaining/chaining.component';
+import { BarchartComponent } from './d3/barchart/barchart.component';
 
 import { HeroService } from './services/hero.service';
 import { UnitService } from './services/unit.service';
@@ -34,7 +35,8 @@ import { LoggerService } from './services/logger.service';
     HomeComponent,
     HeroSearchComponent,
     PageNotFoundComponent,
-    ChainingComponent
+    ChainingComponent,
+    BarchartComponent
   ],
   imports: [
     BrowserModule,

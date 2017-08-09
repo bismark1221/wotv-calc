@@ -27,6 +27,8 @@
   <button (click)="calculateChain()" type="button">Calculate</button>
 </div>
 
+<app-barchart *ngIf="chartData" [data]="chartData"></app-barchart>
+
 <div *ngIf="testHits">
   <div class="progress">
     <div *ngFor="let hit of testHits" class="progress-bar" [ngClass]="(hit.type === 'hit') ? 'bar-chain-1' : 'bar-break'" [ngStyle]="{'width': hit.size + '%'}">

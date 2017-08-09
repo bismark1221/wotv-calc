@@ -16,6 +16,7 @@ export class ChainingComponent implements OnInit {
   units: Unit[];
   chain: Chain;
   testHits: any[];
+  chartData: Array<any>;
 
   constructor(
     private unitService: UnitService,
@@ -25,6 +26,7 @@ export class ChainingComponent implements OnInit {
   ngOnInit(): void {
     this.getUnits();
     this.chain = new Chain();
+    this.generateData();
   }
 
   getUnits(): void {
@@ -43,5 +45,15 @@ export class ChainingComponent implements OnInit {
     this.chainService.calculateChain(this.chain).then(chain => {
       this.chain = chain;
     });
+  }
+
+  generateData() {
+    this.chartData = [];
+    for (let i = 0; i < (8 + Math.floor(Math.random() * 10)); i++) {
+      this.chartData.push([
+        `Index ${i}`,
+        Math.floor(Math.random() * 100)
+      ]);
+    }
   }
 }
