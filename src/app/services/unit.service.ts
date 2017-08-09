@@ -17,19 +17,12 @@ export class UnitService {
 
   calculateFrames(unit: Unit) {
     var hits: any[] = [] ;
-    var totalFrames = unit.abilities[0].hits * unit.abilities[0].frames + unit.abilities[0].hits;
-    var pourcentage = 100 * unit.abilities[0].frames / totalFrames;
 
-    for (var i = 0; i < unit.abilities[0].hits * 2; i++) {
+    for (var i = 0; i < unit.abilities[0].hits; i++) {
       hits[i] = {
         size: 1,
+        frame: unit.abilities[0].frames * i,
         type: 'hit'
-      }
-
-      i++;
-      hits[i] = {
-        size: pourcentage,
-        type: 'frame'
       }
     }
 

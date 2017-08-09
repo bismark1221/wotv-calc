@@ -1,0 +1,33 @@
+.chain-chart {
+  width: 100%;
+  height: 400px;
+}
+
+.chain-chart .axis path,
+.chain-chart .axis line {
+  stroke: #999;
+}
+
+.chain-chart .axis text {
+  fill: #999;
+}
+
+.chain-chart .bar {
+  fill: #33b5e5;
+}
+
+.chain-chart .bar-failed {
+  fill: #CC0000;
+}
+
+.chain-chart .bar-running {
+  fill: #669900;
+}
+
+.chain-chart .bar-succeeded {
+  fill: #33b5e5;
+}
+
+.chain-chart .bar-killed {
+  fill: #ffbb33;
+}

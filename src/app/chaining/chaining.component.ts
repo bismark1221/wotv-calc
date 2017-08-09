@@ -17,6 +17,7 @@ export class ChainingComponent implements OnInit {
   chain: Chain;
   testHits: any[];
   chartData: Array<any>;
+  chainData: Array<any>;
 
   constructor(
     private unitService: UnitService,
@@ -39,6 +40,7 @@ export class ChainingComponent implements OnInit {
 
   onChangeUnit1(unit: Unit) {
     this.testHits = this.unitService.calculateFrames(unit);
+    this.chainData = this.testHits;
   }
 
   calculateChain(): void {

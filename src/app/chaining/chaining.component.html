@@ -27,6 +27,8 @@
   <button (click)="calculateChain()" type="button">Calculate</button>
 </div>
 
+<app-chain-chart *ngIf="chainData" [data]="chainData"></app-chain-chart>
+
 <app-barchart *ngIf="chartData" [data]="chartData"></app-barchart>
 
 <div *ngIf="testHits">
