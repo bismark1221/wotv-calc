@@ -1,51 +1,15 @@
 <div>
-  <h2>All units</h2>
-  <ul class="units">
-    <li *ngFor="let unit of units" [class.selected]="unit === selectedUnit" (click)="onSelect(unit)">
-      <span class="badge">{{unit.id}}</span>
-      <span class="text">{{unit.name}}</span>
-    </li>
-  </ul>
-</div>
-<div *ngIf="selectedUnit">
-  <h2>
-    {{selectedUnit.name | uppercase}}
-  </h2>
-</div>
-
-<div>
   <label for="chain1">Chain 1</label>
-  <select class="units" id="chain1" [(ngModel)]="chain.unit1" (ngModelChange)="onChangeUnit1($event)">
+  <select class="units" id="chain1" [(ngModel)]="chainService.chainers[0]" (ngModelChange)="onChangeChainers()">
+    <option></option>
     <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
   </select>
 
   <label for="chain2">Chain 2</label>
-  <select class="units" id="chain2" [(ngModel)]="chain.unit2">
+  <select class="units" id="chain2" [(ngModel)]="chainService.chainers[1]" (ngModelChange)="onChangeChainers()">
+    <option></option>
     <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
   </select>
-
-  <button (click)="calculateChain()" type="button">Calculate</button>
 </div>
 
-<app-chain-chart *ngIf="chainData" [data]="chainData"></app-chain-chart>
-
-<app-barchart *ngIf="chartData" [data]="chartData"></app-barchart>
-
-<div *ngIf="testHits">
-  <div class="progress">
-    <div *ngFor="let hit of testHits" class="progress-bar" [ngClass]="(hit.type === 'hit') ? 'bar-chain-1' : 'bar-break'" [ngStyle]="{'width': hit.size + '%'}">
-      {{hit.size}}
-    </div>
-  </div>
-</div>
-
-<div *ngIf="chain.result">
-  <h2>
-    {{chain.result}}
-  </h2>
-  <div class="progress">
-    <div *ngFor="let hit of chain.hits" class="progress-bar" [ngClass]="'bar-chain-' + hit.unit.id" [ngStyle]="{'width': hit.unit.abilities[0].frames + '%'}">
-      {{hit.unit.name}}
-    </div>
-  </div>
-</div>
+<app-chain-chart></app-chain-chart>

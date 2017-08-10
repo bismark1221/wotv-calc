@@ -29,7 +29,7 @@ export const UNITS: Unit[] = [
   },
   {
     id: 3,
-    name: 'Orlandeau',
+    name: 'Orlandu',
     type: 'chain',
     abilities: [
       {

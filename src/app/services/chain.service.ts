@@ -1,90 +1,88 @@
 import { Injectable } from '@angular/core';
 
 import 'rxjs/add/operator/toPromise';
+import { BehaviorSubject } from "rxjs/BehaviorSubject";
 
-import { Chain } from '../entities/chain';
+import { Unit } from '../entities/unit';
 
 @Injectable()
 export class ChainService {
-  calculateChain(chain: Chain): Promise<Chain> {
-    var hit1 = chain.unit1.abilities[0].hits;
-    var hit2 = chain.unit2.abilities[0].hits;
+  private total: number;
+  private multi: number;
+  private result: string;
+  private hits: any[] = [];
 
-    var frames1 = chain.unit1.abilities[0].frames;
-    var frames2 = chain.unit2.abilities[0].frames;
+  chainers: Unit[] = [];
+  finisher: Unit;
+  spark: boolean = false;
 
-    var chainHits: any[] = [];
-    var nbHit = 0;
-    var nbMulti = 0;
-    var nbCombo1 = 1;
-    var nbCombo2 = 1;
+  private dataSubject = new BehaviorSubject<any[]>(this.hits);
+  $hits = this.dataSubject.asObservable();
 
-    for (var i = 0; i < Math.max(hit1, hit2); i++) {
+  private calculateTotal(unit: Unit, combo: boolean): void {
+    if (combo) {
+      this.multi = this.multi + 0.1 + 1 * 0.2 + (this.spark && this.multi % 2 != 0 ? 0.3 : 0);
+      this.multi > 4 ? this.multi = 4 : true;
+    }
+    this.total = this.total + (unit.hitDamage * this.multi)
+  }
+
+  private addHit(unit: Unit, frame: number, totalHit: number, unitHit: number, combo: boolean) {
+    this.hits[totalHit] = {
+      unit: unit,
+      hit: (unitHit - 1) * frame
+    };
+    this.calculateTotal(unit, combo);
+  }
+
+  getResult(): string {
+    return this.result;
+  }
+
+  getHits(): any[] {
+    return this.hits;
+  }
+
+  calculateChain(): void {
+    let hit1 = this.chainers[0].abilities[0].hits;
+    let hit2 = this.chainers[1] ? this.chainers[1].abilities[0].hits : 0;
+
+    let frames1 = this.chainers[0].abilities[0].frames;
+    let frames2 = this.chainers[1] ? this.chainers[1].abilities[0].frames : 0;
+
+    this.chainers[0].hitDamage = this.chainers[0].abilities[0].base / this.chainers[0].abilities[0].hits;
+    if (this.chainers[1]) {
+      this.chainers[1].hitDamage = this.chainers[1].abilities[0].base / this.chainers[1].abilities[0].hits;
+    }
+
+    let nbHit = 0;
+    let nbMulti = 0;
+    let nbCombo1 = 1;
+    let nbCombo2 = 1;
+
+    this.total = 0;
+    this.multi = 1;
+    this.hits = [];
+
+    for (let i = 0; i < Math.max(hit1, hit2); i++) {
       if (nbCombo1 * frames1 < (nbCombo2 - 1) * frames2 || nbCombo2 >= hit2 + nbMulti) {
         nbCombo2 = (nbCombo2 >= hit2 + nbMulti ? nbCombo2 : nbCombo2 - 1);
         nbMulti++;
+        this.multi = 1;
+        this.addHit(this.chainers[0], frames1, nbHit, nbCombo1, false)
+        nbHit++;
       } else {
-        chainHits[nbHit] = {
-          unit: chain.unit2,
-          hit: (nbCombo2 - 1) * frames2
-        }
+        this.addHit(this.chainers[1], frames2, nbHit, nbCombo2, true)
+        nbHit++;
+        this.addHit(this.chainers[0], frames1, nbHit, nbCombo1, true)
         nbHit++;
       }
-
-      chainHits[nbHit] = {
-        unit: chain.unit1,
-        hit: nbCombo1 * frames1
-      }
-      nbHit++;
 
       nbCombo1++;
       nbCombo2++;
     }
 
-    chain.unit1.hitDamage = (1 / 1 * chain.unit1.abilities[0].base * 1 * 1) / chain.unit1.abilities[0].hits;
-    chain.unit2.hitDamage = (1 / 1 * chain.unit2.abilities[0].base * 1 * 1) / chain.unit2.abilities[0].hits;
-    var total = chain.unit1.hitDamage;
-    var multi = 1;
-    var spark = false;
-
-    chainHits.forEach(item => {
-      multi = multi + 0.1 + 1 * 0.2 + (spark && multi % 2 != 0 ? 0.3 : 0);
-      multi > 4 ? multi = 4 : true;
-      total = total + (item.unit.hitDamage * multi)
-    });
-
-    chain.result = Math.round(total).toString();
-    chain.hits = chainHits;
-
-    return Promise.resolve(chain);
+    this.result = Math.round(this.total).toString();
+    this.dataSubject.next(this.hits);
   }
 }
-
-
-/*
-Total damage for a unit
-1 / nb_elem x base x ignore_def x debuff_elem  + repeat for each elem
-
-
-
-
-  var total = damage;
-  var multi = 1;
-  var combo = 1;
-
-  while (combo <= hit) {
-    multi = multi + 0.1 + elem * 0.2 + (spark && combo % 2 != 0 ? 0.3 : 0);
-    multi > 4 ? multi = 4 : true;
-    total = total + (damage * multi)
-    combo = combo + 1
-  }
-
-  return total;
-
-
-
-
-
-
-
-  */
