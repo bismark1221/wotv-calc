@@ -64,8 +64,8 @@ export class ChainChartComponent implements OnInit {
 
   private getUnitsName = function() {
     let unitsName = [];
-    this.chainService.chainers.forEach(item => {
-      item.name ? unitsName.push(item.name) : true;
+    this.chainService.chainers.forEach((item, index) => {
+      item.name ? unitsName.push((index + 1) + '.' + item.name) : true;
     });
     return unitsName;
   }
@@ -119,7 +119,7 @@ export class ChainChartComponent implements OnInit {
     // update existing bars
     this.chart.selectAll('.bar').transition()
       .attr('x', d => this.xScale(d.hit))
-      .attr('y', d => this.yScale(d.unit.name))
+      .attr('y', d => this.yScale(d.unitName))
       .attr('width', d => 5)
       .attr('height', d => this.yScale.bandwidth());
 
@@ -129,7 +129,7 @@ export class ChainChartComponent implements OnInit {
       .append('rect')
       .attr('class', 'bar')
       .attr('x', d => this.xScale(d.hit))
-      .attr('y', d => this.yScale(d.unit.name))
+      .attr('y', d => this.yScale(d.unitName))
       .attr('width', 5)
       .attr('height', this.yScale.bandwidth());
   }
