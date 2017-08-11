@@ -12,6 +12,7 @@ export class ChainService {
   private nbHits: number;
   private result: string;
   private hits: any[] = [];
+  private lastHiter: number;
 
   chainers: Unit[] = [];
   finisher: Unit;
@@ -36,6 +37,7 @@ export class ChainService {
     };
     this.calculateTotal(this.chainers[unit], combo);
     this.nbHits++;
+    this.lastHiter = unit;
   }
 
   getResult(): string {
@@ -58,7 +60,6 @@ export class ChainService {
       this.chainers[1].hitDamage = this.chainers[1].abilities[0].base / this.chainers[1].abilities[0].hits;
     }
 
-
     let nbCombo1 = 0;
     let nbCombo2 = 0;
 
@@ -67,23 +68,45 @@ export class ChainService {
     this.multi = 1;
     this.hits = [];
 
-    for (let i = 0; i < Math.max(hit1, hit2); i++) {
+
+    this.multi = 1;
+    this.addHit(0, frames1, 0, false)
+
+    nbCombo1 = 1;
+    nbCombo2 = 0;
+
+    console.log(nbCombo2 < hit2)
+    console.log(nbCombo1 < hit1)
+
+    while (nbCombo1 <= hit1 && nbCombo2 <= hit2)
+    {
+      if ((this.lastHiter == 1 && nbCombo2 * frames2 < nbCombo1 * frames2) || (this.lastHiter == 2 && nbCombo1 < nbCombo2)) {
+        console.log('combo ok save new hit')
+      } else {
+        console.log('combo ko save new hit')
+      }
+      nbCombo1++;
+    }
+
+
+    /*for (let i = 0; i < hit1; i++) {
       if ((i === 0) || (nbCombo1 * frames1 < (nbCombo2 - 1) * frames2 + this.framesGap) || (hit2 === 0) || (nbCombo2 >= hit2)) {
         nbCombo2 = (nbCombo2 >= hit2 || nbCombo2 === 0 ? nbCombo2 : nbCombo2 - 1);
         this.multi = 1;
         this.addHit(0, frames1, nbCombo1, false)
+        nbCombo1++;
       } else {
         this.addHit(1, frames2, nbCombo2, true)
         nbCombo2++;
         this.addHit(0, frames1, nbCombo1, true)
+        nbCombo1++;
       }
-
-      nbCombo1++;
     }
 
-    if (nbCombo2 < hit2) {
-      this.addHit(1, frames2, nbCombo2, true)
-    }
+    for (let i = 0; nbCombo2 < hit2; i++) {
+      this.addHit(1, frames2, nbCombo2, i === 0 ? true : false)
+      nbCombo2++;
+    }*/
 
     this.result = Math.round(this.total).toString();
     this.dataSubject.next(this.hits);
