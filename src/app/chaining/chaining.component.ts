@@ -12,6 +12,7 @@ import { ChainService } from '../services/chain.service';
 
 export class ChainingComponent implements OnInit {
   units: Unit[];
+  framesGap: string = "1";
 
   constructor(
     private unitService: UnitService,
@@ -26,7 +27,8 @@ export class ChainingComponent implements OnInit {
     this.unitService.getUnits().then(units => this.units = units);
   }
 
-  onChangeChainers(): void {
+  onChangeChain(): void {
+    this.chainService.framesGap = parseInt(this.framesGap);
     this.chainService.calculateChain();
   }
 }

@@ -1,14 +1,20 @@
 <div>
   <label for="chain1">Chain 1</label>
-  <select class="units" id="chain1" [(ngModel)]="chainService.chainers[0]" (ngModelChange)="onChangeChainers()">
+  <select class="units" id="chain1" [(ngModel)]="chainService.chainers[0]" (ngModelChange)="onChangeChain()">
     <option></option>
     <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
   </select>
 
   <label for="chain2">Chain 2</label>
-  <select class="units" id="chain2" [(ngModel)]="chainService.chainers[1]" (ngModelChange)="onChangeChainers()">
+  <select class="units" id="chain2" [(ngModel)]="chainService.chainers[1]" (ngModelChange)="onChangeChain()">
     <option></option>
     <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
+  </select>
+
+  <label for="framesGap">Frames Gap</label>
+  <select class="units" id="framesGap" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()">
+    <option value="0">0</option>
+    <option value="1">1</option>
   </select>
 
   <h2>{{chainService.getResult()}}</h2>

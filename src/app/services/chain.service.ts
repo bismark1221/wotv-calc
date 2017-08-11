@@ -23,8 +23,10 @@ export class ChainService {
 
   private calculateTotal(unit: Unit, combo: boolean): void {
     if (combo) {
-      this.multi = this.multi + 0.1 + 1 * 0.2 + (this.framesGap === 0 && this.multi % 2 != 0 ? 0.3 : 0);
+      this.multi = this.multi + 0.1 + 1 * 0.2 + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
       this.multi > 4 ? this.multi = 4 : true;
+    } else {
+      this.multi = 1;
     }
 
     this.total = this.total + ( unit.hitDamage * this.multi)
@@ -60,7 +62,7 @@ export class ChainService {
       this.chainers[1].hitDamage = this.chainers[1].abilities[0].base / this.chainers[1].abilities[0].hits;
     }
 
-    let nbCombo1 = 0;
+    let nbCombo1 = 1;
     let nbCombo2 = 0;
 
     this.nbHits = 0;
@@ -68,45 +70,45 @@ export class ChainService {
     this.multi = 1;
     this.hits = [];
 
+    this.addHit(0, frames1, 0, false);
 
-    this.multi = 1;
-    this.addHit(0, frames1, 0, false)
-
-    nbCombo1 = 1;
-    nbCombo2 = 0;
-
-    console.log(nbCombo2 < hit2)
-    console.log(nbCombo1 < hit1)
-
-    while (nbCombo1 <= hit1 && nbCombo2 <= hit2)
-    {
-      if ((this.lastHiter == 1 && nbCombo2 * frames2 < nbCombo1 * frames2) || (this.lastHiter == 2 && nbCombo1 < nbCombo2)) {
-        console.log('combo ok save new hit')
+    while (nbCombo1 < hit1 && nbCombo2 < hit2 && hit2 !== 0) {
+      if (this.lastHiter == 0) {
+        if (nbCombo2 * frames2 + this.framesGap <= nbCombo1 * frames1) {
+          this.addHit(1, frames2, nbCombo2, true);
+          nbCombo2++;
+        } else {
+          this.addHit(0, frames1, nbCombo1, false);
+          nbCombo1++;
+        }
       } else {
-        console.log('combo ko save new hit')
+        if (nbCombo1 * frames1 <= nbCombo2 * frames2 + this.framesGap) {
+          this.addHit(0, frames1, nbCombo1, true);
+          nbCombo1++;
+        } else {
+          this.addHit(1, frames2, nbCombo2, false);
+          nbCombo2++;
+        }
+      }
+    }
+
+    for (let i = 0; nbCombo1 < hit1; i++) {
+      if (this.lastHiter == 1 && nbCombo1 * frames1 <= nbCombo2 * frames2 + this.framesGap) {
+        this.addHit(0, frames1, nbCombo1, true);
+      } else {
+        this.addHit(0, frames1, nbCombo1, false);
       }
       nbCombo1++;
     }
 
-
-    /*for (let i = 0; i < hit1; i++) {
-      if ((i === 0) || (nbCombo1 * frames1 < (nbCombo2 - 1) * frames2 + this.framesGap) || (hit2 === 0) || (nbCombo2 >= hit2)) {
-        nbCombo2 = (nbCombo2 >= hit2 || nbCombo2 === 0 ? nbCombo2 : nbCombo2 - 1);
-        this.multi = 1;
-        this.addHit(0, frames1, nbCombo1, false)
-        nbCombo1++;
-      } else {
-        this.addHit(1, frames2, nbCombo2, true)
-        nbCombo2++;
-        this.addHit(0, frames1, nbCombo1, true)
-        nbCombo1++;
-      }
-    }
-
     for (let i = 0; nbCombo2 < hit2; i++) {
-      this.addHit(1, frames2, nbCombo2, i === 0 ? true : false)
+      if (this.lastHiter == 0 && nbCombo2 * frames2 <= nbCombo1 * frames1 + this.framesGap) {
+        this.addHit(1, frames2, nbCombo2, true);
+      } else {
+        this.addHit(1, frames2, nbCombo2, false);
+      }
       nbCombo2++;
-    }*/
+    }
 
     this.result = Math.round(this.total).toString();
     this.dataSubject.next(this.hits);

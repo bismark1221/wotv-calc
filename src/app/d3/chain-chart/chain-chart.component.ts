@@ -49,7 +49,6 @@ export class ChainChartComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    console.log("Subscribe");
     this.chainService.$hits.subscribe(hits => {
       this.data = hits;
       if (this.data[0]) {
