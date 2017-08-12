@@ -1,6 +1,4 @@
-import { Unit } from '../entities/unit';
-
-export const UNITS: Unit[] = [
+export const UNITS: any[] = [
   {
     id: 1,
     name: 'Tidus',
@@ -29,7 +27,7 @@ export const UNITS: Unit[] = [
   },
   {
     id: 3,
-    name: 'Orlandu',
+    name: 'Orlandeau',
     type: 'chain',
     abilities: [
       {
@@ -37,6 +35,13 @@ export const UNITS: Unit[] = [
         base: 200,
         hits: 7,
         frames: 7,
+        ignore: 50,
+        elements: [
+          {
+            type: 'light',
+            debuff: '50'
+          }
+        ]
       }
     ]
   }

@@ -1,109 +1,35 @@
-.selected {
-  background-color: #CFD8DC !important;
-  color: white;
-}
-
-.units {
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding: 0;
-  width: 15em;
-}
-
-.units li {
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em 0;
-  height: 2em;
-  border-radius: 4px;
-}
-
-.units li.selected:hover {
-  background-color: #BBD8DC !important;
-  color: white;
-}
-
-.units li:hover {
-  color: #607D8B;
-  background-color: #DDD;
-  left: .1em;
-}
-
-.units .text {
-  position: relative;
-  top: -3px;
-}
-
-.units .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -5px;
-  height: 2.5em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
-  float: left;
-  width: 30px;
-}
-
-button {
+.chainParameters {
   margin-top: 20px;
-  font-family: Arial;
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer; cursor: hand;
 }
 
-button:hover {
-  background-color: #cfd8dc;
+.unit {
+  min-width: 1000px;
+  max-width: 1000px;
+  margin-bottom: 15px;
 }
 
-button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
+.selectLeftZone {
+  width: 250px;
+  text-align: center;
 }
 
-button.delete {
-    float: right;
-    margin-top: 2px;
-    background-color: gray !important;
-    color: white;
-    top: -7px;
-    position: relative;
-    height: 32px;
+.selectRightZone {
+  padding-left: 20px;
+  width: 750px;
 }
 
-.bar-chain-1 {
-  background-color: #5bc0de;
+.selectRightZoneTop {
+  width: 237px;
+  padding-right: 10px;
+  display: inline-block;
 }
 
-.bar-chain-2 {
-  background-color: #5cb85c;
+.selectRightZoneBottom {
+  width: 730px;
+  margin-top: 10px;
 }
 
-.bar-chain-3 {
-  background-color: #5cb85c;
-}
-
-.bar-finisher {
-  background-color: #f0ad4e;
-}
-
-.bar-break {
-  background-color: #d9534f;
-}
-
-.bar-separator {
-  background-color: #000000;
-}
+.selectRightZoneBottomElement {
+  width: 360px;
+  padding-right: 10px;
+  display: inline-block;}

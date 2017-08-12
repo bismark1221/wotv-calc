@@ -15,6 +15,7 @@ export class ChainService {
   private lastHiter: number;
 
   chainers: Unit[] = [];
+  abilities: Unit[] = [];
   finisher: Unit;
   framesGap: number = 1;
 
