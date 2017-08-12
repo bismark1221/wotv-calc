@@ -1,42 +1,42 @@
 <div class="row chainParameters" *ngFor="let i of [0,1]">
-  <div class="row form-group unit" *ngIf="i === 0 || chainService.chainers[i - 1]">
+  <div class="row form-group unit" *ngIf="i === 0 || chain[i - 1]">
     <div class="selectLeftZone">
       <label for="chain{{i}}">Unit {{ i + 1 }}</label>
-      <select class="form-control" id="chain{{i}}" [(ngModel)]="chainService.chainers[i]" (ngModelChange)="onChangeChain()">
+      <select class="form-control" id="chain{{i}}" [(ngModel)]="chain[i]" (ngModelChange)="onChangeUnit(i)">
         <option selected>Unit {{ i + 1 }}</option>
         <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
       </select>
-      <img src='assets/units/{{ chainService.chainers[i].id }}.png' *ngIf="chainService.chainers[i]" />
+      <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
     </div>
 
-    <div class="selectRightZone" *ngIf="chainService.chainers[i]">
+    <div class="selectRightZone" *ngIf="chain[i]">
       <div class="selectRightZoneTop">
-        <label for="ability{{i}}">Ability</label>
-        <select class="form-control" id="ability{{i}}" [(ngModel)]="chainService.chainers[i].abilities[0]" (ngModelChange)="onChangeChain()">
-          <option *ngFor="let ability of chainService.chainers[i].abilities" [ngValue]="ability">{{ability.name}}</option>
+        <label for="chainer{{i}}_ability">Ability</label>
+        <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="chain[i].ability" (ngModelChange)="onChangeChain()">
+          <option *ngFor="let ability of chain[i].abilities" [ngValue]="ability">{{ability.name}}</option>
         </select>
       </div>
 
       <div class="selectRightZoneTop">
-        <label for="base{{i}}">Base %</label>
-        <input class="form-control" type="number" name="base{{i}}" id="base{{i}}" value="{{chainService.chainers[i].abilities[0].base}}">
+        <label for="chainer{{i}}_base">Base %</label>
+        <input class="form-control" type="number" id="chainer{{i}}_base" [(ngModel)]="chain[i].ability.base" (ngModelChange)="onChangeChain()">
       </div>
 
       <div class="selectRightZoneTop">
         <label for="ignore{{i}}">Ignore (Def/Spr)</label>
-        <input class="form-control" type="number" name="ignore{{i}}" id="ignore{{i}}" value="{{chainService.chainers[i].abilities[0].ignore}}">
+        <input class="form-control" type="number" id="chainer{{i}}_ignore" [(ngModel)]="chain[i].ability.ignore" (ngModelChange)="onChangeChain()">
       </div>
 
-      <div *ngFor="let element of chainService.chainers[i].abilities[0].elements" class="selectRightZoneBottom">
+      <div *ngFor="let element of chain[i].ability.elements; let j = index" class="selectRightZoneBottom">
         <div class="selectRightZoneBottomElement">
-          <label for="unit1_element1">Element 1</label>
-          <select class="form-control" id="unit1_element1" [(ngModel)]="chainService.chainers[i].abilities[0].elements[0]">
-            <option *ngFor="let element of chainService.chainers[i].abilities[0].elements" [ngValue]="element">{{element.type}}</option>
+          <label for="unit{{i}}_element{{j}}">Element 1</label>
+          <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].ability.elements[j]" (ngModelChange)="onChangeChain()">
+            <option *ngFor="let element of chain[i].ability.elements" [ngValue]="element">{{element.type}}</option>
           </select>
         </div>
         <div class="selectRightZoneBottomElement">
-          <label for="unit1_element1_debuff">Debuff</label>
-          <input class="form-control" type="number" name="unit1_element1_debuff" id="unit1_element1_debuff" value="{{chainService.chainers[i].abilities[0].elements[0].debuff}}">
+          <label for="unit{{i}}_element{{j}}_debuff">Debuff</label>
+          <input class="form-control" type="number" id="unit{{i}}_element{{j}}_debuff" [(ngModel)]="chain[i].ability.elements[j].debuff" (ngModelChange)="onChangeChain()">
         </div>
       </div>
     </div>

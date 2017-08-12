@@ -35,12 +35,36 @@ export const UNITS: any[] = [
         base: 200,
         hits: 7,
         frames: 7,
-        ignore: 50,
+        ignore: 2,
         elements: [
           {
             type: 'light',
-            debuff: '50'
+            debuff: 1.5
           }
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: 'Lunera',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Aureole Ray',
+        base: 400,
+        hits: 20,
+        frames: 4,
+        ignore: 1,
+        elements: [
+          {
+            type: 'wind',
+            debuff: 1
+          },
+          {
+            type: 'light',
+            debuff: 1
+          },
         ]
       }
     ]

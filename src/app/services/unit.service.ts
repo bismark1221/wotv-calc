@@ -23,19 +23,4 @@ export class UnitService {
   getUnit(id: number): Promise<Unit> {
     return this.getUnits().then(units => units.find(unit => unit.id === id));
   }
-
-  calculateFrames(unit: Unit) {
-    var hits: any[] = [] ;
-
-    for (var i = 0; i < unit.abilities[0].hits; i++) {
-      hits[i] = {
-        name: unit.name,
-        size: 1,
-        frame: unit.abilities[0].frames * i,
-        type: 'hit'
-      }
-    }
-
-    return hits;
-  }
 }

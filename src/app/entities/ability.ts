@@ -4,7 +4,7 @@ export class Ability {
 
   frames?: number = 1;
   hits?: number = 1;
-  ignore?: number = 0;
+  ignore?: number = 1;
   dualable?: boolean = true;
   elements?: any[] = [];
 

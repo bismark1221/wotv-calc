@@ -14,17 +14,17 @@ export class ChainService {
   private hits: any[] = [];
   private lastHiter: number;
 
-  chainers: Unit[] = [];
-  abilities: Unit[] = [];
+  chainers: any[] = [];
   finisher: Unit;
   framesGap: number = 1;
 
   private dataSubject = new BehaviorSubject<any[]>(this.hits);
   $hits = this.dataSubject.asObservable();
 
-  private calculateTotal(unit: Unit, combo: boolean): void {
+  private calculateTotal(unit: any, combo: boolean): void {
+    //@Todo check previous element
     if (combo) {
-      this.multi = this.multi + 0.1 + 1 * 0.2 + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
+      this.multi = this.multi + 0.1 + unit.ability.elements.length * 0.2 + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
       this.multi > 4 ? this.multi = 4 : true;
     } else {
       this.multi = 1;
@@ -52,15 +52,32 @@ export class ChainService {
   }
 
   calculateChain(): void {
-    let hit1 = this.chainers[0].abilities[0].hits;
-    let hit2 = this.chainers[1] ? this.chainers[1].abilities[0].hits : 0;
+    let hit1 = this.chainers[0].ability.hits;
+    let hit2 = this.chainers[1] ? this.chainers[1].ability.hits : 0;
 
-    let frames1 = this.chainers[0].abilities[0].frames;
-    let frames2 = this.chainers[1] ? this.chainers[1].abilities[0].frames : 0;
+    let frames1 = this.chainers[0].ability.frames;
+    let frames2 = this.chainers[1] ? this.chainers[1].ability.frames : 0;
 
-    this.chainers[0].hitDamage = this.chainers[0].abilities[0].base / this.chainers[0].abilities[0].hits;
+    this.chainers[0].totalDamage = 0;
+    if (this.chainers[0].ability.elements && this.chainers[0].ability.elements.length > 0) {
+      this.chainers[0].ability.elements.forEach(element => {
+        this.chainers[0].totalDamage = this.chainers[0].totalDamage + (1/this.chainers[0].ability.elements.length) * this.chainers[0].ability.base * this.chainers[0].ability.ignore * element.debuff;
+      })
+    } else {
+      this.chainers[0].totalDamage = this.chainers[0].ability.base * this.chainers[0].ability.ignore;
+    }
+    this.chainers[0].hitDamage = this.chainers[0].totalDamage / this.chainers[0].ability.hits;
+
     if (this.chainers[1]) {
-      this.chainers[1].hitDamage = this.chainers[1].abilities[0].base / this.chainers[1].abilities[0].hits;
+      this.chainers[1].totalDamage = 0;
+      if (this.chainers[1].ability.elements && this.chainers[1].ability.elements.length > 0) {
+        this.chainers[1].ability.elements.forEach(element => {
+          this.chainers[1].totalDamage = this.chainers[1].totalDamage + (1/this.chainers[1].ability.elements.length) * this.chainers[1].ability.base * this.chainers[1].ability.ignore * element.debuff;
+        })
+      } else {
+        this.chainers[1].totalDamage = this.chainers[1].ability.base * this.chainers[1].ability.ignore;
+      }
+      this.chainers[1].hitDamage = this.chainers[1].totalDamage / this.chainers[1].ability.hits;
     }
 
     let nbCombo1 = 1;
