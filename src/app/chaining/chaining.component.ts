@@ -4,6 +4,7 @@ import { Unit } from '../entities/unit';
 import { UnitService } from '../services/unit.service';
 import { ChainService } from '../services/chain.service';
 import { ElementsService } from '../services/elements.service';
+import { KeysPipe } from '../pipes/keys.pipe';
 
 @Component({
   selector: 'app-chaining',

@@ -10,8 +10,8 @@
     </div>
 
     <div class="selectRightZone" *ngIf="chain[i]">
-      <div class="selectRightZoneTop">
-        <div class="selectRightZoneTopElement">
+      <div class="selectRightZoneBox">
+        <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_dual">Dualcast/Dualwield</label>
           <select class="form-control" id="chainer{{i}}_dual" [(ngModel)]="chain[i].dual" (ngModelChange)="onChangeChain()">
             <option [ngValue]="true">Yes</option>
@@ -19,50 +19,61 @@
           </select>
         </div>
 
-        <div class="selectRightZoneTopElement">
+        <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_weapon1">Element weapon 1</label>
           <select class="form-control" id="chainer{{i}}_weapon1" [(ngModel)]="chain[i].weapons[0]" (ngModelChange)="onChangeChain()">
-            <option *ngFor="let element of elements" [ngValue]="element.type">{{element.type}}</option>
+            <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
           </select>
         </div>
 
-        <div class="selectRightZoneTopElement" *ngIf="chain[i].dual">
+        <div class="selectRightZoneOneThird" *ngIf="chain[i].dual">
           <label for="chainer{{i}}_weapon2">Element weapon 2</label>
           <select class="form-control" id="chainer{{i}}_weapon2" [(ngModel)]="chain[i].weapons[1]" (ngModelChange)="onChangeChain()">
-            <option *ngFor="let element of elements" [ngValue]="element.type">{{element.type}}</option>
+            <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
           </select>
         </div>
       </div>
 
-      <div class="selectRightZoneMiddle">
-        <div class="selectRightZoneMiddleElement">
+      <div class="selectRightZoneBox littleMarginTop">
+        <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_ability">Ability</label>
           <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="chain[i].ability" (ngModelChange)="onChangeChain()">
             <option *ngFor="let ability of chain[i].abilities" [ngValue]="ability">{{ability.name}}</option>
           </select>
         </div>
 
-        <div class="selectRightZoneMiddleElement">
+        <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_base">Base %</label>
           <input class="form-control" type="number" id="chainer{{i}}_base" [(ngModel)]="chain[i].ability.base" (ngModelChange)="onChangeChain()">
         </div>
 
-        <div class="selectRightZoneMiddleElement">
+        <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_ignore">Ignore (Def/Spr)</label>
           <input class="form-control" type="number" id="chainer{{i}}_ignore" [(ngModel)]="chain[i].ability.ignore" (ngModelChange)="onChangeChain()">
         </div>
       </div>
 
-      <div *ngFor="let element of chain[i].ability.elements; let j = index" class="selectRightZoneBottom">
-        <div class="selectRightZoneBottomElement">
-          <label for="unit{{i}}_element{{j}}">Element 1</label>
+      <div class="selectRightZoneBox littleMarginTop">
+        <div *ngFor="let element of chain[i].ability.elements; let j = index" class="selectRightZoneOneThird">
+          <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
           <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].ability.elements[j]" (ngModelChange)="onChangeChain()">
-            <option *ngFor="let element of chain[i].ability.elements" [ngValue]="element">{{element.type}}</option>
+            <option [ngValue]="element">{{element}}</option>
           </select>
         </div>
-        <div class="selectRightZoneBottomElement">
-          <label for="unit{{i}}_element{{j}}_debuff">Debuff</label>
-          <input class="form-control" type="number" id="unit{{i}}_element{{j}}_debuff" [(ngModel)]="chain[i].ability.elements[j].debuff" (ngModelChange)="onChangeChain()">
+      </div>
+
+      <div class="selectRightZoneBox littleMarginTop">
+        <div *ngFor="let debuff of chain[i].ability.debuff | keys; let j = index" class="selectRightZoneBox littleMarginTop">
+          <div class="selectRightZoneOneThird">
+            <label for="unit{{i}}_debuff{{j}}_type">Debuff element {{j + 1}}</label>
+            <select class="form-control" id="unit{{i}}_debuff{{j}}_type">
+              <option [ngValue]="debuff.key">{{debuff.key}}</option>
+            </select>
+          </div>
+          <div class="selectRightZoneOneThird">
+            <label for="unit{{i}}_debuff{{j}}_value">Debuff value {{j + 1}}</label>
+            <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" value="{{debuff.value}}">
+          </div>
         </div>
       </div>
     </div>

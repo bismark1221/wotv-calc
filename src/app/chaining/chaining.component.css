@@ -18,33 +18,21 @@
   width: 750px;
 }
 
-.selectRightZoneTop {
+.littleMarginTop {
+  margin-top: 10px;
+}
+
+.selectRightZoneBox {
   width: 730px;
 }
 
-.selectRightZoneTopElement {
+.selectRightZoneOneThird {
   width: 237px;
   padding-right: 10px;
   display: inline-block;
 }
 
-.selectRightZoneMiddle {
-  width: 730px;
-  margin-top: 10px;
-}
-
-.selectRightZoneMiddleElement {
-  width: 237px;
-  padding-right: 10px;
+.selectRightZoneTwoThird {
+  width: 484px;
   display: inline-block;
 }
-
-.selectRightZoneBottom {
-  width: 730px;
-  margin-top: 10px;
-}
-
-.selectRightZoneBottomElement {
-  width: 360px;
-  padding-right: 10px;
-  display: inline-block;}

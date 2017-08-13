@@ -39,13 +39,13 @@ export const UNITS: any[] = [
         hits: 7,
         frames: 7,
         ignore: 2,
-        elements: [
-          {
-            type: 'light',
-            debuff: 1.5
-          }
-        ]
+        debuff: {
+          light : 1.5
+        }
       }
+    ],
+    weapons : [
+      'light'
     ]
   },
   {
@@ -60,16 +60,11 @@ export const UNITS: any[] = [
         frames: 4,
         ignore: 1,
         elements: [
-          {
-            type: 'wind',
-            debuff: 1
-          },
-          {
-            type: 'light',
-            debuff: 1
-          },
+          'wind',
+          'light'
         ]
       }
-    ]
+    ],
+    dual: false
   }
 ];

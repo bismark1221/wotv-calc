@@ -27,6 +27,8 @@ import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
 import { LoggerService } from './services/logger.service';
 
+import { KeysPipe } from './pipes/keys.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,8 @@ import { LoggerService } from './services/logger.service';
     PageNotFoundComponent,
     ChainingComponent,
     BarchartComponent,
-    ChainChartComponent
+    ChainChartComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,

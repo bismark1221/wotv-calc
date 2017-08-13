@@ -6,7 +6,8 @@ export class Ability {
   hits?: number = 1;
   ignore?: number = 1;
   dualable?: boolean = true;
-  elements?: any[] = [];
+  elements?: string[] = [];
+  debuff?: any[] = [];
 
   constructAbilityFromJson(ability: Ability): void {
     this.name = ability.name;
@@ -17,5 +18,6 @@ export class Ability {
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
     this.dualable = ability.dualable ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
+    this.debuff = ability.debuff ? ability.debuff : this.debuff;
   }
 }
