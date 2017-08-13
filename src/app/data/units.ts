@@ -10,6 +10,9 @@ export const UNITS: any[] = [
         frames: 5,
         base: 400
       }
+    ],
+    weapons : [
+      'water'
     ]
   },
   {

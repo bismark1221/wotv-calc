@@ -21,10 +21,21 @@ export class ChainService {
   private dataSubject = new BehaviorSubject<any[]>(this.hits);
   $hits = this.dataSubject.asObservable();
 
+  private calculateElements(unit: any): number {
+    let elements = 0;
+
+    unit.weapons.forEach(weapon => {
+      elements += weapon !== '' ? 1 : 0;
+    });
+    elements += unit.ability.elements.length;
+
+    return elements;
+  }
+
   private calculateTotal(unit: any, combo: boolean): void {
     //@Todo check previous element
     if (combo) {
-      this.multi = this.multi + 0.1 + unit.ability.elements.length * 0.2 + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
+      this.multi += 0.1 + this.calculateElements(unit) * 0.2 + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
       this.multi > 4 ? this.multi = 4 : true;
     } else {
       this.multi = 1;
@@ -52,8 +63,8 @@ export class ChainService {
   }
 
   calculateChain(): void {
-    let hit1 = this.chainers[0].ability.hits;
-    let hit2 = this.chainers[1] ? this.chainers[1].ability.hits : 0;
+    let hit1 = this.chainers[0].ability.hits * (this.chainers[0].dual ? 2 : 1);
+    let hit2 = this.chainers[1] ? this.chainers[1].ability.hits * (this.chainers[1].dual ? 2 : 1) : 0;
 
     let frames1 = this.chainers[0].ability.frames;
     let frames2 = this.chainers[1] ? this.chainers[1].ability.frames : 0;
@@ -130,6 +141,6 @@ export class ChainService {
 
     this.result = Math.round(this.total).toString();
     this.dataSubject.next(this.hits);
-    console.log(this.hits);
+    //console.log(this.hits);
   }
 }

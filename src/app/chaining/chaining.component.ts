@@ -13,6 +13,7 @@ import { ElementsService } from '../services/elements.service';
 })
 
 export class ChainingComponent implements OnInit {
+  selectedUnits: any[] = [];
   chain: any[] = [];
   finisher: Unit;
   units: Unit[];
@@ -39,6 +40,7 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeUnit(position: number) {
+    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chainService.chainers[position] = this.chain[position];
     this.chain[position].ability = this.chain[position].abilities[0];
     this.onChangeChain();

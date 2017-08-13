@@ -1,5 +1,9 @@
 export const ELEMENTS: any[] = [
   {
+    type: '',
+    debuff: 0
+  },
+  {
     type: 'dark',
     debuff: 0
   },
