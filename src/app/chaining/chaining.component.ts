@@ -20,6 +20,7 @@ export class ChainingComponent implements OnInit {
   units: Unit[];
   framesGap: string = "1";
   elements: string[];
+  abilityTypes: string[] = ['physic', 'magic'];
 
   constructor(
     private unitService: UnitService,
@@ -40,10 +41,21 @@ export class ChainingComponent implements OnInit {
     this.elementsService.getElements().then(elements => this.elements = elements);
   }
 
+  onChangeDual(position: number) {
+    this.chain[position].weapons[1] = '';
+    this.onChangeChain();
+  }
+
   onChangeUnit(position: number) {
-    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-    this.chainService.chainers[position] = this.chain[position];
-    this.chain[position].ability = this.chain[position].abilities[0];
+    this.chain.splice(position, 1);
+    this.chainService.chainers.splice(position, 1);
+
+    if (this.selectedUnits[position] !== 'Select unit') {
+      this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
+      this.chainService.chainers[position] = this.chain[position];
+      this.chain[position].ability = this.chain[position].abilities[0];
+    }
+
     this.onChangeChain();
   }
 

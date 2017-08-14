@@ -25,11 +25,13 @@ export class ChainService {
   private getElements(unit: any): string[] {
     let elements = [];
 
-    unit.weapons.forEach(weapon => {
-      if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
-        elements.push(weapon);
-      }
-    });
+    if (unit.ability.type === 'physic') {
+      unit.weapons.forEach(weapon => {
+        if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
+          elements.push(weapon);
+        }
+      });
+    }
 
     unit.ability.elements.forEach(element => {
       if (element !== '' && elements.findIndex(x => x === element) === -1) {
@@ -41,30 +43,21 @@ export class ChainService {
   }
 
   private calculateModifierByElements(unit: any): number {
+    let matchingElements = 0;
     let elements = this.getElements(unit);
 
-    let compareElements = this.compareElementsBetweenHits(elements);
+    elements.forEach(element => {
+      if(this.lastElements.findIndex(x => x === element) !== -1) {
+        matchingElements++;
+      }
+    })
+
     this.lastElements = elements;
 
-    return elements.length * compareElements;
+    return matchingElements * 0.2;
   }
-
-  private compareElementsBetweenHits(currentElements: string[]): number {
-    if(this.lastElements.length !== currentElements.length) {
-      return 0;
-    }
-
-    for(let i = 0; i < currentElements.length; i++) {
-      if(currentElements.findIndex(x => x === this.lastElements[i]) === -1) {
-        return 0;
-      }
-    }
-
-    return 0.2;
-  }
-
   private calculateTotal(unit: any, combo: boolean): void {
-    let elementsModifier = this.calculateModifierByElements(unit);
+    let elementsModifier = this.calculateModifierByElements(unit); // Need to be always here
 
     if (combo) {
       this.multi += 0.1 + elementsModifier + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
@@ -122,65 +115,68 @@ export class ChainService {
   }
 
   calculateChain(): void {
-    let hit1 = this.chainers[0].ability.hits * (this.chainers[0].dual ? 2 : 1);
-    let hit2 = this.chainers[1] ? this.chainers[1].ability.hits * (this.chainers[1].dual ? 2 : 1) : 0;
+    if (this.chainers.length > 0) {
+      let hit1 = this.chainers[0].ability.hits * (this.chainers[0].dual ? 2 : 1);
+      let hit2 = this.chainers[1] ? this.chainers[1].ability.hits * (this.chainers[1].dual ? 2 : 1) : 0;
 
-    let frames1 = this.chainers[0].ability.frames;
-    let frames2 = this.chainers[1] ? this.chainers[1].ability.frames : 0;
+      let frames1 = this.chainers[0].ability.frames;
+      let frames2 = this.chainers[1] ? this.chainers[1].ability.frames : 0;
 
-    let nbCombo1 = 1;
-    let nbCombo2 = 0;
+      let nbCombo1 = 1;
+      let nbCombo2 = 0;
 
-    this.nbHits = 0;
-    this.total = 0;
-    this.multi = 1;
-    this.hits = [];
-    this.lastElements = [];
+      this.nbHits = 0;
+      this.total = 0;
+      this.multi = 1;
+      this.hits = [];
+      this.lastElements = [];
 
-    this.calculateHitDamage();
+      this.calculateHitDamage();
 
-    this.addHit(0, frames1, 0, false);
+      this.addHit(0, frames1, 0, false);
 
-    while (nbCombo1 < hit1 && nbCombo2 < hit2 && hit2 !== 0) {
-      if (this.lastHiter == 0) {
-        if (nbCombo2 * frames2 + this.framesGap <= nbCombo1 * frames1) {
-          this.addHit(1, frames2, nbCombo2, true);
-          nbCombo2++;
+      while (nbCombo1 < hit1 && nbCombo2 < hit2 && hit2 !== 0) {
+        if (this.lastHiter == 0) {
+          if (nbCombo2 * frames2 + this.framesGap <= nbCombo1 * frames1) {
+            this.addHit(1, frames2, nbCombo2, true);
+            nbCombo2++;
+          } else {
+            this.addHit(0, frames1, nbCombo1, false);
+            nbCombo1++;
+          }
+        } else {
+          if (nbCombo1 * frames1 <= nbCombo2 * frames2 + this.framesGap) {
+            this.addHit(0, frames1, nbCombo1, true);
+            nbCombo1++;
+          } else {
+            this.addHit(1, frames2, nbCombo2, false);
+            nbCombo2++;
+          }
+        }
+      }
+
+      for (let i = 0; nbCombo1 < hit1; i++) {
+        if (this.lastHiter == 1 && nbCombo1 * frames1 <= nbCombo2 * frames2 + this.framesGap) {
+          this.addHit(0, frames1, nbCombo1, true);
         } else {
           this.addHit(0, frames1, nbCombo1, false);
-          nbCombo1++;
         }
-      } else {
-        if (nbCombo1 * frames1 <= nbCombo2 * frames2 + this.framesGap) {
-          this.addHit(0, frames1, nbCombo1, true);
-          nbCombo1++;
+        nbCombo1++;
+      }
+
+      for (let i = 0; nbCombo2 < hit2; i++) {
+        if (this.lastHiter == 0 && nbCombo2 * frames2 <= nbCombo1 * frames1 + this.framesGap) {
+          this.addHit(1, frames2, nbCombo2, true);
         } else {
           this.addHit(1, frames2, nbCombo2, false);
-          nbCombo2++;
         }
+        nbCombo2++;
       }
-    }
 
-    for (let i = 0; nbCombo1 < hit1; i++) {
-      if (this.lastHiter == 1 && nbCombo1 * frames1 <= nbCombo2 * frames2 + this.framesGap) {
-        this.addHit(0, frames1, nbCombo1, true);
-      } else {
-        this.addHit(0, frames1, nbCombo1, false);
-      }
-      nbCombo1++;
+      this.result = Math.round(this.total).toString();
+    } else {
+      this.hits = [];
     }
-
-    for (let i = 0; nbCombo2 < hit2; i++) {
-      if (this.lastHiter == 0 && nbCombo2 * frames2 <= nbCombo1 * frames1 + this.framesGap) {
-        this.addHit(1, frames2, nbCombo2, true);
-      } else {
-        this.addHit(1, frames2, nbCombo2, false);
-      }
-      nbCombo2++;
-    }
-
-    this.result = Math.round(this.total).toString();
     this.dataSubject.next(this.hits);
-    //console.log(this.hits);
   }
 }

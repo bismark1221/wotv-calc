@@ -62,7 +62,8 @@ export const UNITS: any[] = [
         elements: [
           'wind',
           'light'
-        ]
+        ],
+        type: 'magic'
       }
     ],
     dual: false

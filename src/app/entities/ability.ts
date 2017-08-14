@@ -8,6 +8,7 @@ export class Ability {
   dualable?: boolean = true;
   elements?: string[] = [];
   debuff?: any[] = [];
+  type?: string = 'physic';
 
   constructAbilityFromJson(ability: Ability): void {
     this.name = ability.name;
@@ -19,5 +20,6 @@ export class Ability {
     this.dualable = ability.dualable ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
     this.debuff = ability.debuff ? ability.debuff : this.debuff;
+    this.type = ability.type ? ability.type : this.type;
   }
 }

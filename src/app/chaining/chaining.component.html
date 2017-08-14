@@ -3,7 +3,7 @@
     <div class="selectLeftZone">
       <label for="chain{{i}}">Unit {{ i + 1 }}</label>
       <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
-        <option selected>Unit {{ i + 1 }}</option>
+        <option selected>Select unit</option>
         <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
       </select>
       <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
@@ -13,7 +13,7 @@
       <div class="selectRightZoneBox">
         <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_dual">Dualcast/Dualwield</label>
-          <select class="form-control" id="chainer{{i}}_dual" [(ngModel)]="chain[i].dual" (ngModelChange)="onChangeChain()">
+          <select class="form-control" id="chainer{{i}}_dual" [(ngModel)]="chain[i].dual" (ngModelChange)="onChangeDual(i)">
             <option [ngValue]="true">Yes</option>
             <option [ngValue]="false">No</option>
           </select>
@@ -54,6 +54,25 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
+        <div class="selectRightZoneOneThird">
+          <label for="chainer{{i}}_hit">Hits</label>
+          <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneOneThird">
+          <label for="chainer{{i}}_frames">Frames</label>
+          <input class="form-control" type="number" id="chainer{{i}}_frames" [(ngModel)]="chain[i].ability.frames" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneOneThird">
+          <label for="chainer{{i}}_type">Type</label>
+          <select class="form-control" id="chainer{{i}}_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="onChangeChain()">
+            <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="selectRightZoneBox littleMarginTop">
         <div *ngFor="let element of chain[i].ability.elements; let j = index" class="selectRightZoneOneThird">
           <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
           <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].ability.elements[j]" (ngModelChange)="onChangeChain()">
@@ -80,7 +99,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row" *ngIf="chain[1]">
   <label for="framesGap">Spark ?</label>
   <select class="form-control" id="framesGap" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()">
     <option value="0">Oui</option>
@@ -88,7 +107,8 @@
   </select>
 </div>
 
-<h2>{{chainService.getResult()}}</h2>
-
+<div class="row" *ngIf="chain[0]">
+  <h2>Total Modifier : {{chainService.getResult()}}%</h2>
+</div>
 
 <app-chain-chart></app-chain-chart>
