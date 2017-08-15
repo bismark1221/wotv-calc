@@ -2,9 +2,9 @@ import { Ability } from './ability';
 
 export class Unit {
   id: number;
-  name: string;
-  type: string;
-  abilities: Ability[] = [];
+  name: string = 'New unit';
+  type: string = 'chain';
+  abilities: Ability[] = [new Ability()];
   hitDamage?: number;
   dual?: boolean = true;
   weapons: string[] = ['', ''];
@@ -17,6 +17,7 @@ export class Unit {
     unit.weapons = unit.weapons ? unit.weapons : this.weapons;
     this.weapons[0] = unit.weapons[0] ? unit.weapons[0] : '';
     this.weapons[1] = unit.weapons[1] ? unit.weapons[1] : '';
+    this.abilities = [];
     unit.abilities.forEach(element => {
       let ability = new Ability();
       ability.constructAbilityFromJson(element);

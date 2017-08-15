@@ -1,12 +1,24 @@
 <div class="row chainParameters" *ngFor="let i of [0,1]">
   <div class="row form-group unit" *ngIf="i === 0 || chain[i - 1]">
     <div class="selectLeftZone">
-      <label for="chain{{i}}">Unit {{ i + 1 }}</label>
-      <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
-        <option selected>Select unit</option>
-        <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
-      </select>
-      <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
+      <div *ngIf="!chain[i] || chain[i].id">
+        <label for="chain{{i}}">Unit {{ i + 1 }}</label>
+        <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
+          <option selected>Select unit</option>
+          <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
+        </select>
+        <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
+      </div>
+      <div *ngIf="!chain[i]">
+        <button class="btn btn-secondary btnUnit" type="button" (click)="createNewUnit(i)">Create New Unit</button>
+      </div>
+      <div *ngIf="chain[i - 1] && !chain[i]">
+        <button class="btn btn-secondary btnUnit" type="button" (click)="duplicateUnit()">Duplicate Unit 1</button>
+      </div>
+      <div *ngIf="chain[i] && !chain[i].id">
+        <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
+        <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()">
+      </div>
     </div>
 
     <div class="selectRightZone" *ngIf="chain[i]">
@@ -35,11 +47,16 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <div class="selectRightZoneOneThird">
+        <div class="selectRightZoneOneThird" *ngIf="chain[i].id">
           <label for="chainer{{i}}_ability">Ability</label>
           <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="chain[i].ability" (ngModelChange)="onChangeChain()">
             <option *ngFor="let ability of chain[i].abilities" [ngValue]="ability">{{ability.name}}</option>
           </select>
+        </div>
+
+        <div class="selectRightZoneOneThird" *ngIf="!chain[i].id">
+          <label for="chainer{{i}}_ability">Ability name</label>
+          <input class="form-control" type="text" id="chainer{{i}}_ability" [(ngModel)]="chain[i].ability.name" (ngModelChange)="onChangeChain()">
         </div>
 
         <div class="selectRightZoneOneThird">
@@ -76,25 +93,33 @@
         <div *ngFor="let element of chain[i].ability.elements; let j = index" class="selectRightZoneOneThird">
           <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
           <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].ability.elements[j]" (ngModelChange)="onChangeChain()">
-            <option [ngValue]="element">{{element}}</option>
+            <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
           </select>
         </div>
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <div *ngFor="let debuff of chain[i].ability.debuff | keys; let j = index" class="selectRightZoneBox littleMarginTop">
+        <button class="btn btn-secondary btnDebuff" type="button" (click)="addNewDebuff(i)">Add debuff</button>
+        <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneBox littleMarginTop">
           <div class="selectRightZoneOneThird">
             <label for="unit{{i}}_debuff{{j}}_type">Debuff element {{j + 1}}</label>
-            <select class="form-control" id="unit{{i}}_debuff{{j}}_type">
-              <option [ngValue]="debuff.key">{{debuff.key}}</option>
+            <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i, j)">
+              <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
             </select>
           </div>
           <div class="selectRightZoneOneThird">
             <label for="unit{{i}}_debuff{{j}}_value">Debuff value {{j + 1}}</label>
-            <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" value="{{debuff.value}}">
+            <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
+          </div>
+          <div class="selectRightZoneOneThird">
+            <button class="btn btn-secondary btnDebuff" type="button" (click)="removeDebuff(i, j)">Remove debuff</button>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="selectDeleteZone" *ngIf="chain[i]">
+      <button class="btn btn-secondary btnDelete" type="button" (click)="deleteUnit(i)">X</button>
     </div>
   </div>
 </div>

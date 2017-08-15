@@ -1,13 +1,13 @@
 export class Ability {
-  name: string;
-  base: number;
+  name: string = 'New ability';
+  base: number = 0;
 
   frames?: number = 1;
   hits?: number = 1;
   ignore?: number = 1;
   dualable?: boolean = true;
   elements?: string[] = [];
-  debuff?: any[] = [];
+  debuff?: any = {};
   type?: string = 'physic';
 
   constructAbilityFromJson(ability: Ability): void {
