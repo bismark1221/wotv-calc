@@ -42,6 +42,16 @@ export const UNITS: any[] = [
         debuff: {
           light : 1.5
         }
+      },
+      {
+        name: 'Holy Explosion + 2',
+        base: 260,
+        hits: 7,
+        frames: 7,
+        ignore: 2,
+        debuff: {
+          light : 1.5
+        }
       }
     ],
     weapons : [
@@ -67,5 +77,35 @@ export const UNITS: any[] = [
       }
     ],
     dual: false
+  },
+  {
+    id: 5,
+    name: 'Aileen',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Piledriver',
+        base: 200,
+        hits: 5,
+        frames: 15,
+        ignore: 2,
+        debuff: {
+          earth : 1.5
+        }
+      },
+      {
+        name: 'Piledriver + 2',
+        base: 250,
+        hits: 7,
+        frames: 8,
+        ignore: 2,
+        debuff: {
+          earth : 1.75
+        }
+      }
+    ],
+    weapons : [
+      'earth'
+    ]
   }
 ];

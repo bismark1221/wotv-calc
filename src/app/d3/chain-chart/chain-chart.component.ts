@@ -13,25 +13,6 @@ export class ChainChartComponent implements OnInit {
   @ViewChild('chart') private chartContainer: ElementRef;
   private data: Array<any>;
 
-  // from gantt
-  private FIT_TIME_DOMAIN_MODE = "fit";
-  private FIXED_TIME_DOMAIN_MODE = "fixed";
-  private margin: any = { top : 20, right : 40, bottom : 20, left : 150 };
-  private timeDomainStart = new Date("Sun Dec 01 00:00:00 EST 2017");
-  private timeDomainEnd = new Date("Sun Dec 07 00:00:00 EST 2017");
-  private timeDomainMode = this.FIT_TIME_DOMAIN_MODE;
-  private taskTypes = [];
-  private tickFormat = "%H:%M";
-  private x: any;
-  private y: any;
-  private taskStatus = {
-    "SUCCEEDED" : "bar",
-    "FAILED" : "bar-failed",
-    "RUNNING" : "bar-running",
-    "KILLED" : "bar-killed"
-  };
-
-  // from bar
   private chart: any;
   private width: number;
   private height: number;
@@ -40,6 +21,14 @@ export class ChainChartComponent implements OnInit {
   private colors: any;
   private xAxis: any;
   private yAxis: any;
+
+  private margin: any = { top : 20, right : 20, bottom : 20, left : 80 };
+  private hitStatus = {
+    "chain" : "bar",
+    "break" : "bar-failed",
+    "finish" : "bar-running",
+    "other" : "bar-killed"
+  };
 
   constructor(private chainService: ChainService) { }
 

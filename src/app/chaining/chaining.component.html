@@ -5,15 +5,15 @@
         <label for="chain{{i}}">Unit {{ i + 1 }}</label>
         <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
           <option selected>Select unit</option>
-          <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
+          <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{unit.name}}</option>
         </select>
         <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
       </div>
       <div *ngIf="!chain[i]">
-        <button class="btn btn-secondary btnUnit" type="button" (click)="createNewUnit(i)">Create New Unit</button>
+        <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">Create New Unit</button>
       </div>
       <div *ngIf="chain[i - 1] && !chain[i]">
-        <button class="btn btn-secondary btnUnit" type="button" (click)="duplicateUnit()">Duplicate Unit 1</button>
+        <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="duplicateUnit()">Duplicate Unit 1</button>
       </div>
       <div *ngIf="chain[i] && !chain[i].id">
         <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
@@ -49,8 +49,8 @@
       <div class="selectRightZoneBox littleMarginTop">
         <div class="selectRightZoneOneThird" *ngIf="chain[i].id">
           <label for="chainer{{i}}_ability">Ability</label>
-          <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="chain[i].ability" (ngModelChange)="onChangeChain()">
-            <option *ngFor="let ability of chain[i].abilities" [ngValue]="ability">{{ability.name}}</option>
+          <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
+            <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
           </select>
         </div>
 
@@ -99,12 +99,12 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <button class="btn btn-secondary btnDebuff" type="button" (click)="addNewDebuff(i)">Add debuff</button>
+        <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addNewDebuff(i)">Add debuff</button>
         <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneBox littleMarginTop">
           <div class="selectRightZoneOneThird">
             <label for="unit{{i}}_debuff{{j}}_type">Debuff element {{j + 1}}</label>
             <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i, j)">
-              <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
+              <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
             </select>
           </div>
           <div class="selectRightZoneOneThird">
@@ -112,14 +112,14 @@
             <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
           </div>
           <div class="selectRightZoneOneThird">
-            <button class="btn btn-secondary btnDebuff" type="button" (click)="removeDebuff(i, j)">Remove debuff</button>
+            <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove debuff</button>
           </div>
         </div>
       </div>
     </div>
 
     <div class="selectDeleteZone" *ngIf="chain[i]">
-      <button class="btn btn-secondary btnDelete" type="button" (click)="deleteUnit(i)">X</button>
+      <button class="btn btn-secondary fullWidth btnDelete" type="button" (click)="deleteUnit(i)">X</button>
     </div>
   </div>
 </div>
@@ -132,8 +132,8 @@
   </select>
 </div>
 
-<div class="row" *ngIf="chain[0]">
+<div class="row littleMarginTop" *ngIf="chain[0]">
   <h2>Total Modifier : {{chainService.getResult()}}%</h2>
 </div>
 
-<app-chain-chart></app-chain-chart>
+<app-chain-chart *ngIf="chain[0]"></app-chain-chart>

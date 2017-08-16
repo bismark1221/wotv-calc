@@ -20,6 +20,7 @@ import { ChainService } from './services/chain.service';
 import { LoggerService } from './services/logger.service';
 
 import { KeysPipe } from './pipes/keys.pipe';
+import { TypePipe } from './pipes/type.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { KeysPipe } from './pipes/keys.pipe';
     PageNotFoundComponent,
     ChainingComponent,
     ChainChartComponent,
-    KeysPipe
+    KeysPipe,
+    TypePipe
   ],
   imports: [
     BrowserModule,

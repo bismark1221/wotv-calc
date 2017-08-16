@@ -79,12 +79,14 @@ export class ChainService {
     this.lastHiter = unit;
   }
 
-  private getDebuffModifier(unit: any, element: string): number {
+  private getDebuffModifier(element: string): number {
     let modifier = 1;
 
-    if (unit.ability.debuff[element]) {
-      modifier = unit.ability.debuff[element];
-    }
+    this.chainers.forEach(unit => {
+      if (unit.ability.debuff[element] && unit.ability.debuff[element] > modifier) {
+        modifier = unit.ability.debuff[element];
+      }
+    });
 
     return modifier;
   }
@@ -96,7 +98,7 @@ export class ChainService {
 
       if (elements.length > 0) {
         elements.forEach(element => {
-          unit.totalDamage = unit.totalDamage + (1/elements.length) * unit.ability.base * unit.ability.ignore * this.getDebuffModifier(unit, element);
+          unit.totalDamage = unit.totalDamage + (1/elements.length) * unit.ability.base * unit.ability.ignore * this.getDebuffModifier(element);
         })
       } else {
         unit.totalDamage = unit.ability.base * unit.ability.ignore;
@@ -177,6 +179,7 @@ export class ChainService {
     } else {
       this.hits = [];
     }
+
     this.dataSubject.next(this.hits);
   }
 }

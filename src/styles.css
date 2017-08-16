@@ -5,9 +5,13 @@
 /* Bootstrap tuto */
 body {
   padding-top: 5rem;
-  font-size: 1.5rem;
+  font-family: Palatino !important;
 }
 
 .row {
   margin: 0;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: Palatino !important;
 }
