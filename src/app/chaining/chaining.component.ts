@@ -40,7 +40,22 @@ export class ChainingComponent implements OnInit {
   private updateServiceDebuffs(position: number) {
     this.chain[position].ability.debuff = {};
     this.chain[position].debuffs.forEach(debuff => {
-      this.chain[position].ability.debuff[debuff.type, debuff.value];
+      let actualDebuff = this.chain[position].ability.debuff[debuff.type] ? this.chain[position].ability.debuff[debuff.type] : 1;
+      this.chain[position].ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
+    });
+  }
+
+  private updateLocalElements(position: number) {
+    this.chain[position].elements = [];
+    this.chain[position].ability.elements.forEach(element => {
+      this.chain[position].elements.push({type: element});
+    });
+  }
+
+  private updateServiceElements(position: number) {
+    this.chain[position].ability.elements = [];
+    this.chain[position].elements.forEach(element => {
+      this.chain[position].ability.elements.push(element.type);
     });
   }
 
@@ -68,6 +83,7 @@ export class ChainingComponent implements OnInit {
     this.chain[1] = JSON.parse(JSON.stringify(this.chain[0]));
     this.chainService.chainers[1] = this.chain[1];
     this.updateLocalDebuffs(1);
+    this.updateLocalElements(1);
 
     this.onChangeChain();
   }
@@ -87,8 +103,25 @@ export class ChainingComponent implements OnInit {
     this.onChangeChain();
   }
 
-  addNewDebuff(position: number) {
-    this.chain[position].debuffs.push({type: '', value: 1});
+  addElement(position: number) {
+    this.chain[position].elements.push({type: 'dark'});
+    this.updateServiceElements(position);
+    this.onChangeChain();
+  }
+
+  removeElement(position: number, element: number) {
+    this.chain[position].elements.splice(element, 1);
+    this.updateServiceElements(position);
+    this.onChangeChain();
+  }
+
+  onChangeElement(position: number) {
+    this.updateServiceElements(position);
+    this.onChangeChain();
+  }
+
+  addDebuff(position: number) {
+    this.chain[position].debuffs.push({type: 'dark', value: 1});
     this.updateServiceDebuffs(position);
     this.onChangeChain();
   }
@@ -99,17 +132,15 @@ export class ChainingComponent implements OnInit {
     this.onChangeChain();
   }
 
-  onChangeDebuff(position: number, debuff: number) {
-    let type = this.chain[position].debuffs[debuff].type;
-    if (type !== '') {
-      this.chain[position].ability.debuff[type] = this.chain[position].debuffs[debuff].value;
-    }
+  onChangeDebuff(position: number) {
+    this.updateServiceDebuffs(position);
     this.onChangeChain();
   }
 
   onChangeSkill(position: number) {
     this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
     this.updateLocalDebuffs(position);
+    this.updateLocalElements(position);
     this.onChangeChain();
   }
 
@@ -132,6 +163,7 @@ export class ChainingComponent implements OnInit {
       this.selectedAbilities[position] = this.selectedAbilities[position] ? this.selectedAbilities[position] : 0;
       this.chain[position].ability = this.chain[position].ability ? this.chain[position].ability : this.chain[position].abilities[0];
       this.updateLocalDebuffs(position);
+      this.updateLocalElements(position);
     }
 
     this.onChangeChain();

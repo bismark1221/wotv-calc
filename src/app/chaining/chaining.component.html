@@ -90,20 +90,27 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <div *ngFor="let element of chain[i].ability.elements; let j = index" class="selectRightZoneOneThird">
-          <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
-          <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].ability.elements[j]" (ngModelChange)="onChangeChain()">
-            <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
-          </select>
+        <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addElement(i)">Add element</button>
+        <div *ngFor="let abilityElement of chain[i].elements; let j = index" class="selectRightZoneBox littleMarginTop">
+          <div class="selectRightZoneOneThird">
+            <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
+            <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].elements[j].type" (ngModelChange)="onChangeElement(i)">
+              <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
+            </select>
+          </div>
+
+          <div class="selectRightZoneOneThird">
+            <button class="btn btn-secondary fullWidth" type="button" (click)="removeElement(i, j)">Remove element</button>
+          </div>
         </div>
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addNewDebuff(i)">Add debuff</button>
+        <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(i)">Add debuff</button>
         <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneBox littleMarginTop">
           <div class="selectRightZoneOneThird">
             <label for="unit{{i}}_debuff{{j}}_type">Debuff element {{j + 1}}</label>
-            <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i, j)">
+            <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i)">
               <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
             </select>
           </div>
