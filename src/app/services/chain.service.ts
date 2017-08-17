@@ -116,6 +116,20 @@ export class ChainService {
     return this.hits;
   }
 
+  private sortFramesArray() {
+    this.chainers.forEach(unit => {
+      unit.frames.sort((a: any, b: any) => {
+        if (a < b) {
+          return -1;
+        } else if (a > b) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+    });
+  }
+
   private calculateHitsAndFrames() {
     this.chainers.forEach(unit => {
       unit.frames = [];
@@ -150,6 +164,8 @@ export class ChainService {
         }
       }
     });
+
+    this.sortFramesArray();
   }
 
   calculateChain(): void {
