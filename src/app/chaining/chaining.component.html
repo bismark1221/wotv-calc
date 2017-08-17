@@ -72,20 +72,52 @@
 
       <div class="selectRightZoneBox littleMarginTop">
         <div class="selectRightZoneOneThird">
-          <label for="chainer{{i}}_hit">Hits</label>
-          <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="onChangeChain()">
-        </div>
-
-        <div class="selectRightZoneOneThird">
-          <label for="chainer{{i}}_frames">Frames</label>
-          <input class="form-control" type="number" id="chainer{{i}}_linearFrames" [(ngModel)]="chain[i].ability.linearFrames" (ngModelChange)="onChangeChain()">
-        </div>
-
-        <div class="selectRightZoneOneThird">
           <label for="chainer{{i}}_type">Type</label>
           <select class="form-control" id="chainer{{i}}_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="onChangeChain()">
             <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
           </select>
+        </div>
+
+        <div class="selectRightZoneOneThird verticalTop">
+          <label for="chainer{{i}}_frames">Linear Frames</label>
+          <div>
+            <input type="checkbox" id="chainer{{i}}_linearFrames" [(ngModel)]="chain[i].ability.linearFrames" (ngModelChange)="onChangeChain()">
+            <label for="chainer{{i}}_linearFrames"></label>
+          </div>
+        </div>
+
+        <div class="selectRightZoneOneThird" *ngIf="chain[i].ability.linearFrames">
+          <label for="chainer{{i}}_frames">Frames</label>
+          <input class="form-control" type="number" id="chainer{{i}}_frames" [(ngModel)]="chain[i].ability.frames" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneOneThird" *ngIf="!chain[i].ability.linearFrames">
+          <label for="chainer{{i}}_framesList">Frames (0-X-X-X-X)</label>
+          <input class="form-control" type="text" id="chainer{{i}}_framesList" [(ngModel)]="chain[i].ability.framesList" (ngModelChange)="onChangeChain()">
+        </div>
+      </div>
+
+      <div class="selectRightZoneBox littleMarginTop">
+        <div class="selectRightZoneOneThird" *ngIf="chain[i].ability.linearFrames">
+          <label for="chainer{{i}}_hits">Hits</label>
+          <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneOneThird">
+          <label for="chainer{{i}}_castTime">Cast time</label>
+          <input class="form-control" type="number" id="chainer{{i}}_castTime" [(ngModel)]="chain[i].ability.castTime" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneOneThird">
+          <label for="chainer{{i}}_offset">Offset</label>
+          <input class="form-control" type="number" id="chainer{{i}}_offset" [(ngModel)]="chain[i].ability.offset" (ngModelChange)="onChangeChain()">
+        </div>
+      </div>
+
+      <div class="selectRightZoneBox littleMarginTop">
+        <div class="selectRightZoneOneThird">
+          <label for="chainer{{i}}_firstHit">First Hit</label>
+          <input class="form-control" type="number" id="chainer{{i}}_firstHit" [(ngModel)]="chain[i].ability.firstHit" (ngModelChange)="onChangeChain()">
         </div>
       </div>
 

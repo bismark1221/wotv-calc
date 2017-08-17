@@ -8,7 +8,7 @@ export const UNITS: any[] = [
         name: 'Quick Hit',
         hits: 12,
         firstHit: 22,
-        linearFrames: 5,
+        frames: 5,
         base: 400
       }
     ],
@@ -24,7 +24,7 @@ export const UNITS: any[] = [
       {
         name: 'Fin Briar',
         base: 230,
-        linearFrames: 1,
+        frames: 1,
         hits: 1
       }
     ]
@@ -37,10 +37,11 @@ export const UNITS: any[] = [
       {
         name: 'Holy Explosion',
         base: 200,
+        linearFrames: false,
         castTime: 40,
         offset: 16,
         firstHit: 70,
-        frames: '0-7-5-7-7-7-7',
+        framesList: '0-7-5-7-7-7-7',
         ignore: 2,
         debuff: {
           light : 1.5
@@ -49,10 +50,11 @@ export const UNITS: any[] = [
       {
         name: 'Holy Explosion + 2',
         base: 260,
+        linearFrames: false,
         castTime: 40,
         offset: 16,
         firstHit: 70,
-        frames: '0-7-5-7-7-7-7',
+        framesList: '0-7-5-7-7-7-7',
         ignore: 2,
         debuff: {
           light : 1.5
@@ -72,7 +74,7 @@ export const UNITS: any[] = [
         name: 'Aureole Ray',
         base: 400,
         hits: 20,
-        linearFrames: 4,
+        frames: 4,
         ignore: 1,
         elements: [
           'wind',
@@ -92,7 +94,7 @@ export const UNITS: any[] = [
         name: 'Piledriver',
         base: 200,
         hits: 5,
-        linearFrames: 15,
+        frames: 15,
         castTime: 0,
         offset: 36,
         firstHit: 2,
@@ -105,7 +107,7 @@ export const UNITS: any[] = [
         name: 'Piledriver + 2',
         base: 250,
         hits: 7,
-        linearFrames: 8,
+        frames: 8,
         castTime: 8,
         offset: 36,
         firstHit: 2,
