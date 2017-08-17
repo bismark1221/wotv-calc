@@ -116,16 +116,52 @@ export class ChainService {
     return this.hits;
   }
 
+  private calculateHitsAndFrames() {
+    this.chainers.forEach(unit => {
+      unit.frames = [];
+      let countFrames = unit.ability.firstHit + unit.ability.offset;
+      let dualCountFrames = unit.ability.firstHit + (unit.ability.offset * 2) + unit.ability.castTime;
+
+      if (unit.ability.frames !== '') {
+        unit.ability.frames.split('-').forEach(hit => {
+          countFrames += Number(hit);
+          unit.frames.push(countFrames);
+        });
+
+        if (unit.dual) {
+          unit.ability.frames.split('-').forEach(hit => {
+            dualCountFrames += Number(hit);
+            unit.frames.push(dualCountFrames);
+          });
+        }
+      } else {
+        unit.frames.push(countFrames);
+        for (let i = 1; i < unit.ability.hits; i++) {
+          countFrames += unit.ability.linearFrames;
+          unit.frames.push(countFrames);
+        }
+
+        if (unit.dual) {
+          unit.frames.push(dualCountFrames);
+          for (let i = 1; i < unit.ability.hits; i++) {
+            dualCountFrames += unit.ability.linearFrames;
+            unit.frames.push(dualCountFrames);
+          }
+        }
+      }
+    });
+  }
+
   calculateChain(): void {
     if (this.chainers.length > 0) {
-      let hit1 = this.chainers[0].ability.hits * (this.chainers[0].dual ? 2 : 1);
-      let hit2 = this.chainers[1] ? this.chainers[1].ability.hits * (this.chainers[1].dual ? 2 : 1) : 0;
-
-      let frames1 = this.chainers[0].ability.frames;
-      let frames2 = this.chainers[1] ? this.chainers[1].ability.frames : 0;
+      this.calculateHitsAndFrames();
 
       let nbCombo1 = 1;
       let nbCombo2 = 0;
+      let frames1 = 1;
+      let frames2 = 1;
+      let hit1 = 1;
+      let hit2 = 1;
 
       this.nbHits = 0;
       this.total = 0;
