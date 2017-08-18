@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Unit } from '../entities/unit';
 import { UnitService } from '../services/unit.service';
@@ -16,12 +17,16 @@ import { KeysPipe } from '../pipes/keys.pipe';
 })
 
 export class ChainingComponent implements OnInit {
+  private lastCreatedId: number = 10000;
+  private positionIds: any = {};
+
   chain: any[] = [];
 
-  selectedUnits: any[] = ["Select unit", "Select unit"];
-  selectedAbilities: any[] = ["", ""];
+  selectedUnits: any[] = ['', ''];
+  selectedAbilities: any[] = ['', ''];
   finisher: Unit;
   units: Unit[];
+  createdUnits: any[];
 
   framesGap: string = "1";
   elements: string[];
@@ -41,18 +46,56 @@ export class ChainingComponent implements OnInit {
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
-    private elementsService: ElementsService
+    private elementsService: ElementsService,
+    private localStorageService: LocalStorageService
   ) { }
+
+  private getUnits(): void {
+    this.unitService.getUnits().then(units => {
+      this.units = units;
+      this.createdUnits = this.localStorageService.get<any[]>('units');
+      this.sortUnits();
+    });
+  }
+
+  private getElements(): void {
+    this.elementsService.getElements().then(elements => {
+      this.elements = elements
+      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
+      this.requiredElements.splice(0, 1);
+
+      this.requiredElements.forEach(element => {
+        this.multiElements.push({id: element, name: element});
+      })
+    });
+  }
 
   private sortUnits() {
     this.units.sort((a: any, b: any) => {
-      if (a.name < b.name) {
+      if (a.name.toLowerCase() < b.name.toLowerCase()) {
         return -1;
-      } else if (a.name > b.name) {
+      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
         return 1;
       } else {
         return 0;
       }
+    });
+
+    this.createdUnits.sort((a: any, b: any) => {
+      if (a.name.toLowerCase() < b.name.toLowerCase()) {
+        return -1;
+      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+
+    let position = 0;
+    this.createdUnits.forEach(unit => {
+      this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
+      this.positionIds[unit.id] = position;
+      position++;
     });
   }
 
@@ -76,25 +119,6 @@ export class ChainingComponent implements OnInit {
     this.getElements();
   }
 
-  getUnits(): void {
-    this.unitService.getUnits().then(units => {
-      this.units = units;
-      this.sortUnits();
-    });
-  }
-
-  getElements(): void {
-    this.elementsService.getElements().then(elements => {
-      this.elements = elements
-      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
-      this.requiredElements.splice(0, 1);
-
-      this.requiredElements.forEach(element => {
-        this.multiElements.push({id: element, name: element});
-      })
-    });
-  }
-
   duplicateUnit() {
     this.selectedUnits[1] = this.selectedUnits[0];
     this.selectedAbilities[1] = this.selectedAbilities[0];
@@ -112,7 +136,7 @@ export class ChainingComponent implements OnInit {
   }
 
   deleteUnit(position: number) {
-    this.selectedUnits[position] = 'Select unit';
+    this.selectedUnits[position] = '';
     this.onChangeUnit(position);
   }
 
@@ -145,10 +169,10 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeUnit(position: number) {
-    if (this.selectedUnits[position] === 'Select unit') {
+    if (this.selectedUnits[position] === '') {
       if (position === 0 && this.chain[position + 1]) {
         this.selectedUnits[position] = this.selectedUnits[position + 1];
-        this.selectedUnits[position + 1] = 'Select unit';
+        this.selectedUnits[position + 1] = '';
         this.chain.splice(position + 1, 1);
         this.chainService.chainers.splice(position + 1, 1);
       } else {
@@ -157,7 +181,7 @@ export class ChainingComponent implements OnInit {
       }
     }
 
-    if (this.selectedUnits[position] !== 'Select unit') {
+    if (this.selectedUnits[position] !== '') {
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
       this.chainService.chainers[position] = this.chain[position];
       this.selectedAbilities[position] = this.selectedAbilities[position] ? this.selectedAbilities[position] : 0;
@@ -171,5 +195,20 @@ export class ChainingComponent implements OnInit {
   onChangeChain(): void {
     this.chainService.framesGap = parseInt(this.framesGap);
     this.chainService.calculateChain();
+  }
+
+  saveUnit(position: number) {
+    this.lastCreatedId++;
+    this.chain[position].id = this.lastCreatedId;
+    this.createdUnits.push(this.chain[position]);
+    this.sortUnits();
+    this.selectedUnits[position] = this.chain[position];
+    this.localStorageService.set('units', this.createdUnits);
+  }
+
+  updateUnit(position: number) {
+    this.createdUnits[this.positionIds[this.chain[position].id]] = this.chain[position];
+    this.sortUnits();
+    this.localStorageService.set('units', this.createdUnits);
   }
 }

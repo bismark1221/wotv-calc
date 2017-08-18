@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+import { LocalStorageModule } from 'angular-2-local-storage';
 
 import { AppRoutingModule } from './app-routing.module'
 
@@ -41,7 +42,11 @@ import { TypePipe } from './pipes/type.pipe';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    MultiselectDropdownModule
+    MultiselectDropdownModule,
+    LocalStorageModule.withConfig({
+      prefix: 'ffbe-chain',
+      storageType: 'localStorage'
+    })
   ],
   providers: [
     UnitService,

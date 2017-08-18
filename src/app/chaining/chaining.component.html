@@ -1,13 +1,22 @@
 <div class="row chainParameters" *ngFor="let i of [0,1]">
   <div class="row form-group unit" *ngIf="i === 0 || chain[i - 1]">
     <div class="selectLeftZone">
-      <div *ngIf="!chain[i] || chain[i].id">
-        <label for="chain{{i}}">Unit {{ i + 1 }}</label>
-        <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
-          <option selected>Select unit</option>
-          <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{unit.name}}</option>
-        </select>
-        <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
+      <div>
+        <label *ngIf="!chain[i] || (chain[i] && chain[i].id)" for="chain{{i}}">Unit {{ i + 1 }}</label>
+        <div *ngIf="!chain[i] || chain[i].id < 10000">
+          <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
+            <option value="" selected>Predefined units</option>
+            <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{unit.name}}</option>
+          </select>
+          <img src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
+        </div>
+        <div *ngIf="!chain[i] || chain[i].id > 10000" [ngClass]="{ 'littleMarginTop': !chain[i] }">
+          <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
+            <option value="" selected>My units</option>
+            <option *ngFor="let unit of createdUnits | type:'chain'" [ngValue]="unit">{{unit.name}}</option>
+          </select>
+          <button *ngIf="chain[i]" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="updateUnit(i)">Save</button>
+        </div>
       </div>
       <div *ngIf="!chain[i]">
         <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">Create New Unit</button>
@@ -18,6 +27,7 @@
       <div *ngIf="chain[i] && !chain[i].id">
         <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
         <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()">
+      <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
       </div>
     </div>
 
