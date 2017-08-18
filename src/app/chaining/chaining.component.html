@@ -59,29 +59,17 @@
           <input class="form-control" type="text" id="chainer{{i}}_ability" [(ngModel)]="chain[i].ability.name" (ngModelChange)="onChangeChain()">
         </div>
 
-        <div class="selectRightZoneOneThird">
+        <div class="selectRightZoneTwoThirdDividedInThird">
           <label for="chainer{{i}}_base">Base %</label>
           <input class="form-control" type="number" id="chainer{{i}}_base" [(ngModel)]="chain[i].ability.base" (ngModelChange)="onChangeChain()">
         </div>
 
-        <div class="selectRightZoneOneThird">
+        <div class="selectRightZoneTwoThirdDividedInThird">
           <label for="chainer{{i}}_ignore">Ignore (Def/Spr)</label>
           <input class="form-control" type="number" id="chainer{{i}}_ignore" [(ngModel)]="chain[i].ability.ignore" (ngModelChange)="onChangeChain()">
         </div>
-      </div>
 
-      <div class="selectRightZoneBox littleMarginTop">
-        <div class="selectRightZoneOneThird">
-          <label for="chainer{{i}}_hit">Hits</label>
-          <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="onChangeChain()">
-        </div>
-
-        <div class="selectRightZoneOneThird">
-          <label for="chainer{{i}}_frames">Frames</label>
-          <input class="form-control" type="number" id="chainer{{i}}_frames" [(ngModel)]="chain[i].ability.frames" (ngModelChange)="onChangeChain()">
-        </div>
-
-        <div class="selectRightZoneOneThird">
+        <div class="selectRightZoneTwoThirdDividedInThird">
           <label for="chainer{{i}}_type">Type</label>
           <select class="form-control" id="chainer{{i}}_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="onChangeChain()">
             <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
@@ -90,16 +78,56 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
+        <div class="selectRightZoneMediumBox verticalTop text-center">
+          <label for="chainer{{i}}_frames">Linear Frames</label>
+          <div>
+            <input type="checkbox" id="chainer{{i}}_linearFrames" [(ngModel)]="chain[i].ability.linearFrames" (ngModelChange)="onChangeChain()">
+            <label for="chainer{{i}}_linearFrames"></label>
+          </div>
+        </div>
+
+        <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].ability.linearFrames">
+          <label for="chainer{{i}}_frames">Hit X Frames</label>
+          <input class="form-control" type="number" id="chainer{{i}}_frames" [(ngModel)]="chain[i].ability.frames" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!chain[i].ability.linearFrames">
+          <label for="chainer{{i}}_framesList">Frames (0-X-X-X-X)</label>
+          <input class="form-control" type="text" id="chainer{{i}}_framesList" [(ngModel)]="chain[i].ability.framesList" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneLittleBox">
+          <label for="chainer{{i}}_firstHit">First Hit</label>
+          <input class="form-control" type="number" id="chainer{{i}}_firstHit" [(ngModel)]="chain[i].ability.firstHit" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneLittleBox">
+          <label for="chainer{{i}}_castTime">Cast time</label>
+          <input class="form-control" type="number" id="chainer{{i}}_castTime" [(ngModel)]="chain[i].ability.castTime" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneLittleBox">
+          <label for="chainer{{i}}_offset">Offset</label>
+          <input class="form-control" type="number" id="chainer{{i}}_offset" [(ngModel)]="chain[i].ability.offset" (ngModelChange)="onChangeChain()">
+        </div>
+
+        <div class="selectRightZoneLittleBox" *ngIf="chain[i].ability.linearFrames">
+          <label for="chainer{{i}}_hits">Hits</label>
+          <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="onChangeChain()">
+        </div>
+      </div>
+
+      <div class="selectRightZoneBox littleMarginTop">
         <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addElement(i)">Add element</button>
-        <div *ngFor="let abilityElement of chain[i].elements; let j = index" class="selectRightZoneBox littleMarginTop">
-          <div class="selectRightZoneOneThird">
+        <div *ngFor="let abilityElement of chain[i].elements; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+          <div class="selectRightZoneTwoDividedTwo">
             <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
             <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].elements[j].type" (ngModelChange)="onChangeElement(i)">
               <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
             </select>
           </div>
 
-          <div class="selectRightZoneOneThird">
+          <div class="selectRightZoneTwoDividedTwo">
             <button class="btn btn-secondary fullWidth" type="button" (click)="removeElement(i, j)">Remove element</button>
           </div>
         </div>
@@ -107,19 +135,19 @@
 
       <div class="selectRightZoneBox littleMarginTop">
         <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(i)">Add debuff</button>
-        <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneBox littleMarginTop">
-          <div class="selectRightZoneOneThird">
-            <label for="unit{{i}}_debuff{{j}}_type">Debuff element {{j + 1}}</label>
+        <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+          <div class="selectRightZoneTwoDividedThree">
+            <label for="unit{{i}}_debuff{{j}}_type">Element {{j + 1}}</label>
             <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i)">
               <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
             </select>
           </div>
-          <div class="selectRightZoneOneThird">
-            <label for="unit{{i}}_debuff{{j}}_value">Debuff value {{j + 1}}</label>
+          <div class="selectRightZoneTwoDividedThree">
+            <label for="unit{{i}}_debuff{{j}}_value">Value {{j + 1}}</label>
             <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
           </div>
-          <div class="selectRightZoneOneThird">
-            <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove debuff</button>
+          <div class="selectRightZoneTwoDividedThree">
+            <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove</button>
           </div>
         </div>
       </div>

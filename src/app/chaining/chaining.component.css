@@ -38,8 +38,44 @@
   width: 730px;
 }
 
+.selectRightZoneDividedTwo {
+  width: 365px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoDividedTwo {
+  width: 175px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoDividedThree {
+  width: 115px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
 .selectRightZoneOneThird {
   width: 237px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoThirdDividedInThird {
+  width: 156px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneMediumBox {
+  width: 120px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneLittleBox {
+  width: 106px;
   padding-right: 10px;
   display: inline-block;
 }
@@ -57,4 +93,83 @@
   height: 200px;
   padding: 0;
   margin-top: 30px;
+}
+
+.verticalTop {
+  vertical-align: top;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -8px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: 'X';
+  position: absolute;
+  top: -8px;
+  left: 1px;
+  font-size: 25px;
+  line-height: 1.75;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
 }

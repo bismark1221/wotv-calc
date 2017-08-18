@@ -7,6 +7,7 @@ export const UNITS: any[] = [
       {
         name: 'Quick Hit',
         hits: 12,
+        firstHit: 22,
         frames: 5,
         base: 400
       }
@@ -36,8 +37,11 @@ export const UNITS: any[] = [
       {
         name: 'Holy Explosion',
         base: 200,
-        hits: 7,
-        frames: 7,
+        linearFrames: false,
+        castTime: 40,
+        offset: 16,
+        firstHit: 70,
+        framesList: '0-7-5-7-7-7-7',
         ignore: 2,
         debuff: {
           light : 1.5
@@ -46,8 +50,11 @@ export const UNITS: any[] = [
       {
         name: 'Holy Explosion + 2',
         base: 260,
-        hits: 7,
-        frames: 7,
+        linearFrames: false,
+        castTime: 40,
+        offset: 16,
+        firstHit: 70,
+        framesList: '0-7-5-7-7-7-7',
         ignore: 2,
         debuff: {
           light : 1.5
@@ -88,6 +95,9 @@ export const UNITS: any[] = [
         base: 200,
         hits: 5,
         frames: 15,
+        castTime: 0,
+        offset: 36,
+        firstHit: 2,
         ignore: 2,
         debuff: {
           earth : 1.5
@@ -98,6 +108,9 @@ export const UNITS: any[] = [
         base: 250,
         hits: 7,
         frames: 8,
+        castTime: 8,
+        offset: 36,
+        firstHit: 2,
         ignore: 2,
         debuff: {
           earth : 1.75
