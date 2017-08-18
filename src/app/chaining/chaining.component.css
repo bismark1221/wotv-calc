@@ -38,8 +38,44 @@
   width: 730px;
 }
 
+.selectRightZoneDividedTwo {
+  width: 365px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoDividedTwo {
+  width: 175px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoDividedThree {
+  width: 115px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
 .selectRightZoneOneThird {
   width: 237px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoThirdDividedInThird {
+  width: 156px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneMediumBox {
+  width: 120px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneLittleBox {
+  width: 106px;
   padding-right: 10px;
   display: inline-block;
 }
@@ -80,7 +116,7 @@
 [type="checkbox"]:checked + label:before {
   content: '';
   position: absolute;
-  left:0;
+  left: -10px;
   top: -8px;
   width: 38px;
   height: 38px;
@@ -93,7 +129,7 @@
   content: 'X';
   position: absolute;
   top: -8px;
-  left: 10px;
+  left: 1px;
   font-size: 25px;
   line-height: 1.75;
   -webkit-transition: all .2s;
