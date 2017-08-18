@@ -75,6 +75,24 @@ export const UNITS: any[] = [
         base: 400,
         hits: 20,
         frames: 4,
+        castTime: 40,
+        offset: 16,
+        firstHit: 58,
+        ignore: 1,
+        elements: [
+          'wind',
+          'light'
+        ],
+        type: 'magic'
+      },
+      {
+        name: 'Aureole Ray + 2',
+        base: 400,
+        hits: 30,
+        frames: 4,
+        castTime: 40,
+        offset: 16,
+        firstHit: 42,
         ignore: 1,
         elements: [
           'wind',
@@ -119,6 +137,29 @@ export const UNITS: any[] = [
     ],
     weapons : [
       'earth'
+    ]
+  },
+  {
+    id: 6,
+    name: 'Veritas of the Dark',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Dark Punishment',
+        base: 200,
+        linearFrames: false,
+        castTime: 40,
+        offset: 16,
+        firstHit: 70,
+        framesList: '0-7-5-7-7-7-7',
+        ignore: 2,
+        debuff: {
+          dark : 1.5
+        }
+      }
+    ],
+    weapons : [
+      'dark'
     ]
   }
 ];

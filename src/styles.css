@@ -15,3 +15,24 @@ body {
 button, input, optgroup, select, textarea {
   font-family: Palatino !important;
 }
+
+.dropdown-item {
+  padding-left: 10px;
+}
+
+.dropdown-item > a {
+  text-decoration: none;
+  color: #464a4c;
+}
+
+.dropdown-item > a > span {
+  margin-right: 5px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #e5e5e8;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #e5e5e8;
+}

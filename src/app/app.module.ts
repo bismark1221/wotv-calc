@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 
+import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+
 import { AppRoutingModule } from './app-routing.module'
 
 import { AppComponent } from './app.component';
@@ -38,7 +40,8 @@ import { TypePipe } from './pipes/type.pipe';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MultiselectDropdownModule
   ],
   providers: [
     UnitService,

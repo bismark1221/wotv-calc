@@ -118,19 +118,13 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addElement(i)">Add element</button>
-        <div *ngFor="let abilityElement of chain[i].elements; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
-          <div class="selectRightZoneTwoDividedTwo">
-            <label for="unit{{i}}_element{{j}}">Element {{j + 1}}</label>
-            <select class="form-control" id="unit{{i}}_element{{j}}" [(ngModel)]="chain[i].elements[j].type" (ngModelChange)="onChangeElement(i)">
-              <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
-            </select>
-          </div>
-
-          <div class="selectRightZoneTwoDividedTwo">
-            <button class="btn btn-secondary fullWidth" type="button" (click)="removeElement(i, j)">Remove element</button>
-          </div>
-        </div>
+        <ss-multiselect-dropdown
+          [options]="multiElements"
+          [settings]="multiElementsSettings"
+          [texts]="multiElementsTexts"
+          [(ngModel)]="this.chain[i].ability.elements"
+          (ngModelChange)="onChangeChain()">
+        </ss-multiselect-dropdown>
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">

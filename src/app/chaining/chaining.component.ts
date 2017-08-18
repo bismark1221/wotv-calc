@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
+
 import { Unit } from '../entities/unit';
 import { UnitService } from '../services/unit.service';
 import { ChainService } from '../services/chain.service';
@@ -14,21 +16,45 @@ import { KeysPipe } from '../pipes/keys.pipe';
 })
 
 export class ChainingComponent implements OnInit {
+  chain: any[] = [];
+
   selectedUnits: any[] = ["Select unit", "Select unit"];
   selectedAbilities: any[] = ["", ""];
-  chain: any[] = [];
   finisher: Unit;
   units: Unit[];
+
   framesGap: string = "1";
   elements: string[];
   requiredElements: string[];
+  multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic'];
+
+  multiElementsTexts: IMultiSelectTexts = {
+    defaultTitle: 'Select ability element(s)'
+  };
+
+  multiElementsSettings: IMultiSelectSettings = {
+    checkedStyle: 'fontawesome',
+    dynamicTitleMaxItems: 8
+  };
 
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
     private elementsService: ElementsService
   ) { }
+
+  private sortUnits() {
+    this.units.sort((a: any, b: any) => {
+      if (a.name < b.name) {
+        return -1;
+      } else if (a.name > b.name) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  }
 
   private updateLocalDebuffs(position: number) {
     this.chain[position].debuffs = [];
@@ -45,27 +71,16 @@ export class ChainingComponent implements OnInit {
     });
   }
 
-  private updateLocalElements(position: number) {
-    this.chain[position].elements = [];
-    this.chain[position].ability.elements.forEach(element => {
-      this.chain[position].elements.push({type: element});
-    });
-  }
-
-  private updateServiceElements(position: number) {
-    this.chain[position].ability.elements = [];
-    this.chain[position].elements.forEach(element => {
-      this.chain[position].ability.elements.push(element.type);
-    });
-  }
-
   ngOnInit(): void {
     this.getUnits();
     this.getElements();
   }
 
   getUnits(): void {
-    this.unitService.getUnits().then(units => this.units = units);
+    this.unitService.getUnits().then(units => {
+      this.units = units;
+      this.sortUnits();
+    });
   }
 
   getElements(): void {
@@ -73,6 +88,10 @@ export class ChainingComponent implements OnInit {
       this.elements = elements
       this.requiredElements = JSON.parse(JSON.stringify(this.elements));
       this.requiredElements.splice(0, 1);
+
+      this.requiredElements.forEach(element => {
+        this.multiElements.push({id: element, name: element});
+      })
     });
   }
 
@@ -83,7 +102,6 @@ export class ChainingComponent implements OnInit {
     this.chain[1] = JSON.parse(JSON.stringify(this.chain[0]));
     this.chainService.chainers[1] = this.chain[1];
     this.updateLocalDebuffs(1);
-    this.updateLocalElements(1);
 
     this.onChangeChain();
   }
@@ -100,23 +118,6 @@ export class ChainingComponent implements OnInit {
 
   onChangeDual(position: number) {
     this.chain[position].weapons[1] = '';
-    this.onChangeChain();
-  }
-
-  addElement(position: number) {
-    this.chain[position].elements.push({type: 'dark'});
-    this.updateServiceElements(position);
-    this.onChangeChain();
-  }
-
-  removeElement(position: number, element: number) {
-    this.chain[position].elements.splice(element, 1);
-    this.updateServiceElements(position);
-    this.onChangeChain();
-  }
-
-  onChangeElement(position: number) {
-    this.updateServiceElements(position);
     this.onChangeChain();
   }
 
@@ -140,7 +141,6 @@ export class ChainingComponent implements OnInit {
   onChangeSkill(position: number) {
     this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
     this.updateLocalDebuffs(position);
-    this.updateLocalElements(position);
     this.onChangeChain();
   }
 
@@ -163,12 +163,10 @@ export class ChainingComponent implements OnInit {
       this.selectedAbilities[position] = this.selectedAbilities[position] ? this.selectedAbilities[position] : 0;
       this.chain[position].ability = this.chain[position].ability ? this.chain[position].ability : this.chain[position].abilities[0];
       this.updateLocalDebuffs(position);
-      this.updateLocalElements(position);
     }
 
     this.onChangeChain();
   }
-
 
   onChangeChain(): void {
     this.chainService.framesGap = parseInt(this.framesGap);
