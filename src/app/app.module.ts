@@ -24,6 +24,7 @@ import { LoggerService } from './services/logger.service';
 
 import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TypePipe } from './pipes/type.pipe';
     ChainingComponent,
     ChainChartComponent,
     KeysPipe,
-    TypePipe
+    TypePipe,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

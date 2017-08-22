@@ -1,3 +1,7 @@
+.inlineBlock {
+  display: inline-block;
+}
+
 .fullWidth {
   width: 100%;
 }
@@ -6,12 +10,21 @@
   cursor: pointer;
 }
 
+.firstSelectLevel {
+  width: 228px;
+}
+
 .littleMarginTop {
   margin-top: 10px;
 }
 
+.littleMarginBottom {
+  margin-bottom: 10px;
+}
+
 .chainParameters {
   margin-top: 20px;
+  margin: auto
 }
 
 .unit {
@@ -20,14 +33,46 @@
   margin-bottom: 15px;
 }
 
-.selectLeftZone {
-  width: 250px;
+.unitImg {
+  height: 100px;
+}
+
+.selectUnit1 {
+  color: #848b8e;;
+  font-size: 6em;
+}
+
+.selectUnitZone {
+  min-width: 250px;
   text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.btnDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0;
+  border-right: 0;
+  padding: 7px;
+  padding-bottom: 5px;
+  line-height: 1;
+}
+
+.selectDetailZone {
+  width: 100%;
+  text-align: left;
 }
 
 .selectRightZone {
   padding-left: 20px;
   width: 750px;
+  text-align: left;
 }
 
 .selectDeleteZone {
@@ -87,12 +132,6 @@
 
 .btnAddDebuff {
   width: 710px;
-}
-
-.btnDelete {
-  height: 200px;
-  padding: 0;
-  margin-top: 30px;
 }
 
 .verticalTop {
