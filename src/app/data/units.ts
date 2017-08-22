@@ -141,7 +141,7 @@ export const UNITS: any[] = [
   },
   {
     id: 6,
-    name: 'Veritas of the Dark',
+    name: 'Dark Veritas',
     type: 'chain',
     abilities: [
       {
