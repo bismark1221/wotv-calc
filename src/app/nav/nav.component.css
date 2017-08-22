@@ -1,0 +1,8 @@
+.navbar {
+  flex-direction: row;
+}
+
+.centerNav {
+  display: inline-flex;
+  margin: 0 auto;
+}

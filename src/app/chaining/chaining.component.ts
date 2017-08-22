@@ -136,6 +136,7 @@ export class ChainingComponent implements OnInit {
 
   createNewUnit(position: number) {
     this.selectedUnits[position] = new Unit();
+    this.selectedUnits[position].viewOptions = true;
     this.onChangeUnit(position);
   }
 
@@ -186,8 +187,7 @@ export class ChainingComponent implements OnInit {
     }
 
     if (this.selectedUnits[position] !== '') {
-      this.selectedUnits[position].viewOptions = false;
-
+      this.selectedUnits[position].viewOptions = this.selectedUnits[position].viewOptions ? true : false;
 
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
       this.chainService.chainers[position] = this.chain[position];
@@ -217,5 +217,9 @@ export class ChainingComponent implements OnInit {
     this.createdUnits[this.positionIds[this.chain[position].id]] = this.chain[position];
     this.sortUnits();
     this.localStorageService.set('units', this.createdUnits);
+  }
+
+  showOptions(position: number) {
+    this.chain[position].viewOptions = !this.chain[position].viewOptions;
   }
 }
