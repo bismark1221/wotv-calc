@@ -1,3 +1,7 @@
+.inlineBlock {
+  display: inline-block;
+}
+
 .fullWidth {
   width: 100%;
 }
@@ -12,6 +16,7 @@
 
 .chainParameters {
   margin-top: 20px;
+  margin: auto
 }
 
 .unit {
@@ -20,9 +25,24 @@
   margin-bottom: 15px;
 }
 
-.selectLeftZone {
+.selectUnit1 {
+  color: #848b8e;;
+  font-size: 6em;
+}
+
+.selectUnitZone {
   width: 250px;
   text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.selectDetailZone {
+  width: 100%;
+  text-align: left;
 }
 
 .selectRightZone {

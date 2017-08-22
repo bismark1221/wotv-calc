@@ -26,7 +26,7 @@ export class ChainingComponent implements OnInit {
   selectedAbilities: any[] = ['', ''];
   finisher: Unit;
   units: Unit[];
-  createdUnits: any[];
+  createdUnits: any[] = [];
 
   framesGap: string = "1";
   elements: string[];
@@ -81,15 +81,19 @@ export class ChainingComponent implements OnInit {
       }
     });
 
-    this.createdUnits.sort((a: any, b: any) => {
-      if (a.name.toLowerCase() < b.name.toLowerCase()) {
-        return -1;
-      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
+    if (this.createdUnits) {
+      this.createdUnits.sort((a: any, b: any) => {
+        if (a.name.toLowerCase() < b.name.toLowerCase()) {
+          return -1;
+        } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+    } else {
+      this.createdUnits = [];
+    }
 
     let position = 0;
     this.createdUnits.forEach(unit => {
@@ -182,6 +186,9 @@ export class ChainingComponent implements OnInit {
     }
 
     if (this.selectedUnits[position] !== '') {
+      this.selectedUnits[position].viewOptions = false;
+
+
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
       this.chainService.chainers[position] = this.chain[position];
       this.selectedAbilities[position] = this.selectedAbilities[position] ? this.selectedAbilities[position] : 0;
