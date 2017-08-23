@@ -1,3 +1,14 @@
 .title {
   text-align: center;
 }
+
+.home {
+  margin: 0 auto;
+  width: 650px;
+  text-align: left;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  position: relative;
+}

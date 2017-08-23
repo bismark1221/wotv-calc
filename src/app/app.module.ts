@@ -5,6 +5,7 @@ import { HttpModule }    from '@angular/http';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
+import { MarkdownModule } from 'angular2-markdown';
 
 import { AppRoutingModule } from './app-routing.module'
 
@@ -48,7 +49,8 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     LocalStorageModule.withConfig({
       prefix: 'ffbe-chain',
       storageType: 'localStorage'
-    })
+    }),
+    MarkdownModule.forRoot()
   ],
   providers: [
     UnitService,
