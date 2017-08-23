@@ -198,11 +198,13 @@
 </div>
 
 <div class="row" *ngIf="chain[1]">
-  <label for="framesGap">Spark ?</label>
-  <select class="form-control" id="framesGap" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()">
-    <option value="0">Oui</option>
-    <option value="1">Non</option>
-  </select>
+  <div class="selectChainZone">
+    <label for="framesGap">Spark ?</label>
+    <select class="form-control" id="framesGap" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()">
+      <option value="0">Oui</option>
+      <option value="1">Non</option>
+    </select>
+  </div>
 </div>
 
 <div class="row littleMarginTop" *ngIf="chain[0]">

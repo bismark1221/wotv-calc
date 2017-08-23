@@ -10,6 +10,17 @@
   cursor: pointer;
 }
 
+.selectChainZone {
+  margin: 0 auto;
+  min-width: 250px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  position: relative;
+}
+
 .firstSelectLevel {
   width: 228px;
 }
@@ -30,7 +41,6 @@
 .unit {
   min-width: 1030px;
   max-width: 1030px;
-  margin-bottom: 15px;
 }
 
 .unitImg {
@@ -39,11 +49,12 @@
 
 .selectUnit1 {
   color: #848b8e;;
-  font-size: 6em;
+  font-size: 4em;
 }
 
 .selectUnitZone {
   min-width: 250px;
+  min-height: 142px;
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
