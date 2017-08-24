@@ -1,34 +1,5 @@
 export const UNITS: any[] = [
-  {
-    id: 1,
-    name: 'Tidus',
-    type: 'chain',
-    abilities: [
-      {
-        name: 'Quick Hit',
-        hits: 12,
-        firstHit: 22,
-        frames: 5,
-        base: 400
-      }
-    ],
-    weapons : [
-      'water'
-    ]
-  },
-  {
-    id: 2,
-    name: 'Firion',
-    type: 'finish',
-    abilities: [
-      {
-        name: 'Fin Briar',
-        base: 230,
-        frames: 1,
-        hits: 1
-      }
-    ]
-  },
+// Chain
   {
     id: 3,
     name: 'Orlandeau',
@@ -787,6 +758,151 @@ export const UNITS: any[] = [
         firstHit: 140,
         ignore: 2,
         type: 'magic'
+      }
+    ]
+  },
+  {
+    id: 1,
+    name: 'Tidus',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Quick Hit',
+        hits: 12,
+        firstHit: 22,
+        frames: 5,
+        castTime: 40,
+        offset: 16,
+        base: 400
+      },
+      {
+        name: 'Quick Hit + 2 (JP Only)',
+        hits: 12,
+        firstHit: 22,
+        frames: 5,
+        castTime: 40,
+        offset: 16,
+        base: 720
+      },
+      {
+        name: 'Energy Rain',
+        hits: 4,
+        firstHit: 67,
+        frames: 10,
+        castTime: 40,
+        offset: 16,
+        base: 180
+      }
+    ],
+    weapons : [
+      'water'
+    ]
+  },
+  {
+    id: 31,
+    name: 'Vaan',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Assault Strike',
+        hits: 8,
+        firstHit: 22,
+        frames: 8,
+        castTime: 40,
+        offset: 16,
+        base: 270
+      },
+      {
+        name: 'Assault Strike + 2 (JP Only)',
+        hits: 8,
+        firstHit: 22,
+        frames: 8,
+        castTime: 40,
+        offset: 16,
+        base: 400
+      }
+    ]
+  },
+  {
+    id: 32,
+    name: 'Vargas',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Flare Ride+',
+        linearFrames: false,
+        framesList: '0-10-10-10-78',
+        firstHit: 2,
+        castTime: 40,
+        offset: 26,
+        base: 200
+      }
+    ]
+  },
+  {
+    id: 33,
+    name: 'Victoria',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Overflow (Max charge)',
+        hits: 10,
+        frames: 24,
+        firstHit: 57,
+        castTime: 40,
+        offset: 16,
+        base: 940,
+        elements: [
+          'dark'
+        ]
+      }
+    ]
+  },
+  {
+    id: 34,
+    name: 'Zidane (JP Only - 6 stars)',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Free Energy',
+        hits: 8,
+        frames: 8,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 360
+      },
+      {
+        name: 'Free Energy + 2',
+        hits: 8,
+        frames: 8,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 450
+      },
+      {
+        name: 'Lucky Seven',
+        hits: 7,
+        frames: 8,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 777
+      }
+    ]
+  },
+// Finish
+  {
+    id: 2,
+    name: 'Firion',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Fin Briar',
+        base: 230,
+        frames: 1,
+        hits: 1
       }
     ]
   }
