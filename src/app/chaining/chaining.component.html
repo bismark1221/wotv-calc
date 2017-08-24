@@ -44,16 +44,6 @@
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
 
-          <!--<div class="selectDetailZone" *ngIf="chain[i] && !chain[i].viewOptions">
-            <hr />
-            <p>
-              Dualwield : {{ chain[i].dual ? 'Yes' : 'No' }}
-            </p>
-            <p *ngIf="chain[i].weapons[0] !== '' || chain[i].weapons[1] !== ''">
-              Weapons : {{ chain[i].weapons[0] | capitalize }}
-            </p>
-          </div>-->
-
           <hr *ngIf="chain[i]"/>
 
           <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i] && chain[i].id">
@@ -208,7 +198,23 @@
 </div>
 
 <div class="row littleMarginTop" *ngIf="chain[0]">
-  <h2>Total Modifier : {{chainService.getResult()}}%</h2>
+  <div class="selectDetailZone">
+    <h2>Result</h2>
+    <p>
+      Total modifier : {{chainService.getResult()}}%
+    </p>
+    <p *ngIf="chain[1]">
+      <span *ngIf="chainService.getDiffFirstHits() === 0">
+        Both units must be sent on the same frame
+      </span>
+      <span *ngIf="chainService.getDiffFirstHits() > 0">
+        {{chain[0].name}} must be sent {{chainService.getDiffFirstHits()}} frames before {{chain[1].name}}
+      </span>
+      <span *ngIf="chainService.getDiffFirstHits() < 0">
+        {{chain[1].name}} must be sent {{-chainService.getDiffFirstHits()}} frames before {{chain[0].name}}
+      </span>
+    </p>
+  </div>
 </div>
 
 <app-chain-chart *ngIf="chain[0]"></app-chain-chart>

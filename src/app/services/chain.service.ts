@@ -10,7 +10,8 @@ export class ChainService {
   private total: number;
   private multi: number;
   private nbHits: number;
-  private result: string;
+  private result: number;
+  private diffFirstHits: number;
   private hits: any[] = [];
   private lastHiter: number;
   private lastElements: string[];
@@ -123,6 +124,16 @@ export class ChainService {
     this.lastHiter = unit;
   }
 
+  private calculateFramesDiffForFirstHits() {
+    if (this.chainers.length === 2) {
+      let firstHitUnit1 = this.chainers[0].ability.firstHit + this.chainers[0].ability.offset;
+      let firstHitUnit2 = this.chainers[1].ability.firstHit + this.chainers[1].ability.offset;
+      this.diffFirstHits = firstHitUnit1 - firstHitUnit2 + this.framesGap;
+    } else {
+      this.diffFirstHits = 0;
+    }
+  }
+
   private calculateHitsAndFrames() {
     this.chainers.forEach(unit => {
       unit.frames = [];
@@ -170,6 +181,7 @@ export class ChainService {
 
     this.calculateHitsAndFrames();
     this.calculateHitDamage();
+    this.calculateFramesDiffForFirstHits();
   }
 
   calculateChain(): void {
@@ -222,7 +234,7 @@ export class ChainService {
         nbCombo2++;
       }
 
-      this.result = Math.round(this.total).toString();
+      this.result = Math.round(this.total);
     } else {
       this.hits = [];
     }
@@ -230,11 +242,15 @@ export class ChainService {
     this.dataSubject.next(this.hits);
   }
 
-  getResult(): string {
+  getResult(): number {
     return this.result;
   }
 
   getHits(): any[] {
     return this.hits;
+  }
+
+  getDiffFirstHits(): number {
+    return this.diffFirstHits;
   }
 }
