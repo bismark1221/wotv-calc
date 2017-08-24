@@ -48,7 +48,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: 'Holy Explosion + 2',
+        name: 'Holy Explosion + 2 (JP Only)',
         base: 260,
         linearFrames: false,
         castTime: 40,
@@ -66,50 +66,12 @@ export const UNITS: any[] = [
     ]
   },
   {
-    id: 4,
-    name: 'Lunera',
-    type: 'chain',
-    abilities: [
-      {
-        name: 'Aureole Ray',
-        base: 400,
-        hits: 20,
-        frames: 4,
-        castTime: 40,
-        offset: 16,
-        firstHit: 58,
-        ignore: 1,
-        elements: [
-          'wind',
-          'light'
-        ],
-        type: 'magic'
-      },
-      {
-        name: 'Aureole Ray + 2',
-        base: 400,
-        hits: 30,
-        frames: 4,
-        castTime: 40,
-        offset: 16,
-        firstHit: 42,
-        ignore: 1,
-        elements: [
-          'wind',
-          'light'
-        ],
-        type: 'magic'
-      }
-    ],
-    dual: false
-  },
-  {
     id: 7,
     name: '2B',
-    type: "chain",
-    "abilities": [
+    type: 'chain',
+    'abilities': [
       {
-        name: "Avoid Attack",
+        name: 'Avoid Attack',
         base: 900,
         linearFrames: true,
         frames: 9,
@@ -119,7 +81,7 @@ export const UNITS: any[] = [
         firstHit: 42
       },
       {
-        name: "Extra Speed",
+        name: 'Extra Speed',
         base: 600,
         linearFrames: false,
         framesList: '0-7-7-7-8-8-8-8-8-8',
@@ -128,7 +90,7 @@ export const UNITS: any[] = [
         firstHit: 2
       },
       {
-        name: "R050: Spear",
+        name: 'R050: Spear',
         base: 550,
         linearFrames: true,
         frames: 5,
@@ -138,7 +100,7 @@ export const UNITS: any[] = [
         firstHit: 22
       },
       {
-        name: "Steel Pipe",
+        name: 'Steel Pipe',
         base: 200,
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-9',
@@ -151,10 +113,10 @@ export const UNITS: any[] = [
   {
     id: 8,
     name: '9S',
-    type: "chain",
-    "abilities": [
+    type: 'chain',
+    'abilities': [
       {
-        name: "Counter Attack",
+        name: 'Counter Attack',
         base: 180,
         linearFrames: true,
         hits: 5,
@@ -165,7 +127,7 @@ export const UNITS: any[] = [
         ignore: 2
       },
       {
-        name: "TM (R020: Mirage)",
+        name: 'TM (R020: Mirage)',
         base: 300,
         linearFrames: true,
         hits: 8,
@@ -179,10 +141,10 @@ export const UNITS: any[] = [
   {
     id: 9,
     name: 'A2',
-    type: "chain",
-    "abilities": [
+    type: 'chain',
+    'abilities': [
       {
-        name: "Dash Attack",
+        name: 'Dash Attack',
         base: 400,
         linearFrames: false,
         framesList: '0-7-7-8-8-16-8',
@@ -191,7 +153,7 @@ export const UNITS: any[] = [
         firstHit: 9,
       },
       {
-        name: "Offensive Heal Combo (Math are wrong)",
+        name: 'Offensive Heal Combo (Math are wrong)',
         base: 255,
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5',
@@ -200,7 +162,7 @@ export const UNITS: any[] = [
         firstHit: 42,
       },
       {
-        name: "Heavy Attack",
+        name: 'Heavy Attack',
         base: 330,
         linearFrames: false,
         framesList: '0-9-9-9-9-9-5-4-9-5',
@@ -213,10 +175,10 @@ export const UNITS: any[] = [
   {
     id: 10,
     name: 'Ace',
-    type: "chain",
-    "abilities": [
+    type: 'chain',
+    'abilities': [
       {
-        name: "Tri-Beam Laser + 2",
+        name: 'Tri-Beam Laser + 2',
         base: 2250,
         linearFrames: true,
         hits: 7,
@@ -237,10 +199,10 @@ export const UNITS: any[] = [
   {
     id: 11,
     name: 'Agrias',
-    type: "chain",
-    "abilities": [
+    type: 'chain',
+    'abilities': [
       {
-        name: "Divine Ruination",
+        name: 'Divine Ruination',
         base: 160,
         linearFrames: true,
         hits: 5,
@@ -254,7 +216,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: "Divine Ruination + 2",
+        name: 'Divine Ruination + 2 (JP Only)',
         base: 200,
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -290,7 +252,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: 'Piledriver + 2',
+        name: 'Piledriver + 2 (JP Only)',
         base: 250,
         hits: 7,
         frames: 8,
@@ -433,7 +395,7 @@ export const UNITS: any[] = [
   },
   {
     id: 17,
-    name: 'Folhen',
+    name: 'Fohlen',
     type: 'chain',
     abilities: [
       {
@@ -475,47 +437,357 @@ export const UNITS: any[] = [
         ]
       },
     ]
-  }
-];
-
-
-/*
+  },
   {
-    id: ,
-    name: '',
-    type: "chain",
-    "abilities": [
+    id: 19,
+    name: 'Gilgamesh',
+    type: 'chain',
+    abilities: [
       {
-        name: "Avoid Attack",
-        base: 900,
-        linearFrames: true,
+        name: 'Tri-Attack',
+        base: 300,
+        linearFrames: false,
+        framesList: '0-4-16-4-16-4',
+        castTime: 40,
+        offset: 26,
+        firstHit: 40
+      },
+      {
+        name: 'Tri-Attack + 2 (JP Only)',
+        base: 300,
+        linearFrames: false,
+        framesList: '0-4-6-4-6-4-6-4-6-4-6-4',
+        castTime: 40,
+        offset: 26,
+        firstHit: 40
+      },
+    ]
+  },
+  {
+    id: 20,
+    name: 'Knight Delita',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Strategic Blade',
+        base: 230,
         hits: 8,
-        frames: 9,
-        castTime: 0,
-        offset: 32,
+        frames: 5,
+        castTime: 40,
+        offset: 16,
+        firstHit: 51,
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        name: 'Lightning Stab',
+        base: 250,
+        hits: 6,
+        frames: 5,
+        castTime: 40,
+        offset: 16,
         firstHit: 42,
         ignore: 2,
         debuff: {
-          earth : 1.75
+          lightning : 1.5
         }
       },
+    ]
+  },
+  {
+    id: 21,
+    name: 'Light Veritas',
+    type: 'chain',
+    abilities: [
       {
-        name: "Extra Speed",
-        base: 600,
-        linearFrames: false,
-        framesList: '0-7-7-7-8-8-8-8-8-8',
-        castTime: 8,
-        offset: 32,
-        firstHit: 2,
-        ignore: 2,
+        name: 'Divine Shot',
+        base: 700,
+        hits: 7,
+        frames: 9,
+        castTime: 40,
+        offset: 16,
+        firstHit: 42,
+        elements: [
+          'light'
+        ],
         debuff: {
-          earth : 1.75
+          light : 1.5
         }
       }
-    ],
-    weapons : [
-      'dark'
+    ]
+  },
+  {
+    id: 4,
+    name: 'Lunera',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Aureole Ray',
+        base: 400,
+        hits: 20,
+        frames: 4,
+        castTime: 40,
+        offset: 16,
+        firstHit: 58,
+        elements: [
+          'wind',
+          'light'
+        ],
+        type: 'magic'
+      },
+      {
+        name: 'Aureole Ray + 2 (JP Only)',
+        base: 400,
+        hits: 30,
+        frames: 4,
+        castTime: 40,
+        offset: 16,
+        firstHit: 42,
+        elements: [
+          'wind',
+          'light'
+        ],
+        type: 'magic'
+      }
     ],
     dual: false
+  },
+  {
+    id: 22,
+    name: 'Mercenary Ramza',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Blade of Justice',
+        base: 250,
+        framesList: '0-8-8-8-8-8-6-8',
+        castTime: 40,
+        offset: 16,
+        firstHit: 42,
+        ignore: 1.5,
+      }
+    ]
+  },
+  {
+    id: 23,
+    name: 'Randi',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Torrential Slash',
+        base: 400,
+        hits: 10,
+        frames: 10,
+        castTime: 40,
+        offset: 26,
+        firstHit: 42
+      }
+    ]
+  },
+  {
+    id: 24,
+    name: 'Rasler',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Patriotic Slash',
+        base: 300,
+        hits: 7,
+        frames: 10,
+        castTime: 40,
+        offset: 26,
+        firstHit: 42
+      }
+    ]
+  },
+  {
+    id: 25,
+    name: 'Reberta',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Mystic Thrust',
+        base: 400,
+        hits: 7,
+        frames: 10,
+        castTime: 40,
+        offset: 26,
+        firstHit: 42
+      }
+    ]
+  },
+  {
+    id: 26,
+    name: 'Rikku',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Burning Soul',
+        base: 230,
+        hits: 9,
+        frames: 25,
+        castTime: 40,
+        offset: 16,
+        firstHit: 40,
+        elements: [
+          'fire'
+        ]
+      },
+      {
+        name: 'Winter Storm',
+        base: 230,
+        hits: 9,
+        frames: 13,
+        castTime: 40,
+        offset: 16,
+        firstHit: 40,
+        elements: [
+          'ice'
+        ]
+      },
+      {
+        name: 'Lightning Rod',
+        base: 230,
+        hits: 9,
+        frames: 5,
+        castTime: 40,
+        offset: 16,
+        firstHit: 45,
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        name: 'Tidal Wave + 2 (JP Only)',
+        base: 280,
+        hits: 12,
+        frames: 12,
+        castTime: 40,
+        offset: 16,
+        firstHit: 132,
+        elements: [
+          'water'
+        ]
+      },
+      {
+        name: 'Tidal Wave',
+        base: 230,
+        hits: 9,
+        frames: 9,
+        castTime: 40,
+        offset: 16,
+        firstHit: 40,
+        elements: [
+          'water'
+        ]
+      }
+    ]
+  },
+  {
+    id: 27,
+    name: 'Seabreeze Dark Fina',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Ultima + 2 (JP Only)',
+        base: 280,
+        linearFrames: false,
+        framesList: '0-37-38-37-38-38-37',
+        castTime: 40,
+        offset: 16,
+        firstHit: 140,
+        ignore: 2,
+        type: 'magic'
+      },
+    ]
+  },
+  {
+    id: 28,
+    name: 'Setzer',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Prismatic Flash',
+        base: 180,
+        hits: 7,
+        frames: 5,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16
+      },
+      {
+        name: 'Red Card',
+        base: 320,
+        hits: 10,
+        frames: 3,
+        firstHit: 40,
+        castTime: 40,
+        offset: 16
+      }
+    ]
+  },
+  {
+    id: 29,
+    name: 'Shantotto',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Tornado (JP only - 5 stars)',
+        base: 250,
+        hits: 12,
+        frames: 12,
+        firstHit: 80,
+        castTime: 40,
+        offset: 16,
+        elements: [
+          'wind'
+        ],
+        debuff: {
+          wind : 1.5
+        },
+        type: 'magic'
+      }
+    ]
+  },
+  {
+    id: 30,
+    name: 'Trance Terra',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Chaos Wave',
+        base: 360,
+        hits: 5,
+        frames: 20,
+        castTime: 40,
+        offset: 16,
+        firstHit: 52,
+        ignore: 2,
+        type: 'magic'
+      },
+      {
+        name: 'Chaos Wave + 2 (JP Only)',
+        base: 420,
+        hits: 10,
+        frames: 8,
+        castTime: 40,
+        offset: 16,
+        firstHit: 60,
+        ignore: 2,
+        type: 'magic'
+      },
+      {
+        name: 'Ultima + 2 (JP Only)',
+        base: 280,
+        linearFrames: false,
+        framesList: '0-37-38-37-38-38-37',
+        castTime: 40,
+        offset: 16,
+        firstHit: 140,
+        ignore: 2,
+        type: 'magic'
+      }
+    ]
   }
-*/
+];
