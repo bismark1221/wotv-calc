@@ -95,7 +95,7 @@ export class ChainService {
         unit.totalDamage = unit.ability.base * unit.ability.ignore;
       }
 
-      unit.hitDamage = unit.totalDamage / unit.frames.length;
+      unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual ? 2 : 1));
     });
   }
 
