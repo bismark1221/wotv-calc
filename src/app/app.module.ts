@@ -6,6 +6,7 @@ import { HttpModule }    from '@angular/http';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { MarkdownModule } from 'angular2-markdown';
+import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 import { AppRoutingModule } from './app-routing.module'
 
@@ -27,6 +28,8 @@ import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { RoundPipe } from './pipes/round.pipe';
+import { ContactComponent } from './contact/contact.component';
+import { LegalComponent } from './legal/legal.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { RoundPipe } from './pipes/round.pipe';
     TypePipe,
     CapitalizePipe,
     RoundPipe,
-    MyUnitsComponent
+    MyUnitsComponent,
+    ContactComponent,
+    LegalComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { RoundPipe } from './pipes/round.pipe';
       prefix: 'ffbe-chain',
       storageType: 'localStorage'
     }),
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   providers: [
     UnitService,
