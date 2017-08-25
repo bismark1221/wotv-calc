@@ -5,15 +5,13 @@ import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Unit } from '../entities/unit';
 import { UnitService } from '../services/unit.service';
-import { ChainService } from '../services/chain.service';
 import { ElementsService } from '../services/elements.service';
-import { KeysPipe } from '../pipes/keys.pipe';
+import { ChainService } from '../services/chain.service';
 
 @Component({
   selector: 'app-chaining',
   templateUrl: './chaining.component.html',
-  styleUrls: ['./chaining.component.css'],
-  providers: [ElementsService]
+  styleUrls: ['./chaining.component.css']
 })
 
 export class ChainingComponent implements OnInit {

@@ -1,3 +1,162 @@
-<p>
-  my-units works!
-</p>
+<div class="row unit form-group" >
+  <div class="chainParameters">
+    <div class="inlineBlock verticalTop littleMarginBottom">
+
+      <div class="selectUnitZone">
+        <button *ngIf="selectedUnit" type="button" class="btn btn-secondary btnDelete" (click)="deleteUnit()">X</button>
+
+        <div class="inlineBlock firstSelectLevel">
+          <label for="selectedUnit">My Units</label>
+          <div>
+            <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnit" (ngModelChange)="onChangeUnit()">
+              <option value="" selected>Select unit</option>
+              <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{unit.name}}</option>
+            </select>
+            <button *ngIf="selectedUnit" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="updateUnit()">Save</button>
+          </div>
+
+          <div class="selectRightZoneOneThird" *ngIf="selectedUnit && selectedUnit.id">
+            <hr />
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="deleteUnit()">Remove Unit</button>
+          </div>
+
+          <div *ngIf="!selectedUnit">
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit()">Create New Unit</button>
+          </div>
+
+          <div *ngIf="selectedUnit && !selectedUnit.id">
+            <label for="unit_name">Unit name</label>
+            <input class="form-control" type="text" id="unit_name" [(ngModel)]="selectedUnit.name">
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit()">Save</button>
+          </div>
+        </div>
+
+        <div class="selectRightZone inlineBlock verticalTop" *ngIf="selectedUnit">
+          <div class="selectRightZoneBox">
+            <div class="selectRightZoneOneThird">
+              <label for="unit_dual">Dualcast/Dualwield</label>
+              <select class="form-control" id="unit_dual" [(ngModel)]="selectedUnit.dual" (ngModelChange)="onChangeDual()">
+                <option [ngValue]="true">Yes</option>
+                <option [ngValue]="false">No</option>
+              </select>
+            </div>
+
+            <div class="selectRightZoneOneThird">
+              <label for="unit_weapon1">Element weapon 1</label>
+              <select class="form-control" id="unit_weapon1" [(ngModel)]="selectedUnit.weapons[0]">
+                <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
+              </select>
+            </div>
+
+            <div class="selectRightZoneOneThird" *ngIf="selectedUnit.dual">
+              <label for="unit_weapon2">Element weapon 2</label>
+              <select class="form-control" id="unit_weapon2" [(ngModel)]="selectedUnit.weapons[1]">
+                <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <div class="selectRightZoneOneThird" *ngIf="selectedUnit.id">
+              <label for="unit_ability">Ability</label>
+              <select class="form-control" id="unit_ability" [(ngModel)]="selectedAbility" (ngModelChange)="onChangeSkill()">
+                <option *ngFor="let ability of selectedUnit.abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
+              </select>
+            </div>
+
+            <div class="selectRightZoneOneThird" *ngIf="!selectedUnit.id">
+              <label for="unit_ability">Ability name</label>
+              <input class="form-control" type="text" id="unit_ability" [(ngModel)]="selectedUnit.ability.name">
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird">
+              <label for="unit_base">Base %</label>
+              <input class="form-control" type="number" id="unit_base" [(ngModel)]="selectedUnit.ability.base">
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird">
+              <label for="unit_ignore">Ignore (Def/Spr)</label>
+              <input class="form-control" type="number" id="unit_ignore" [(ngModel)]="selectedUnit.ability.ignore">
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird">
+              <label for="unit_type">Type</label>
+              <select class="form-control" id="unit_type" [(ngModel)]="selectedUnit.ability.type">
+                <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <div class="selectRightZoneMediumBox verticalTop text-center">
+              <label for="unit_frames">Linear Frames</label>
+              <div>
+                <input type="checkbox" id="unit_linearFrames" [(ngModel)]="selectedUnit.ability.linearFrames">
+                <label for="unit_linearFrames"></label>
+              </div>
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="selectedUnit.ability.linearFrames">
+              <label for="unit_frames">Hit X Frames</label>
+              <input class="form-control" type="number" id="unit_frames" [(ngModel)]="selectedUnit.ability.frames">
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!selectedUnit.ability.linearFrames">
+              <label for="unit_framesList">Frames (0-X-X-X-X)</label>
+              <input class="form-control" type="text" id="unit_framesList" [(ngModel)]="selectedUnit.ability.framesList">
+            </div>
+
+            <div class="selectRightZoneLittleBox">
+              <label for="unit_firstHit">First Hit</label>
+              <input class="form-control" type="number" id="unit_firstHit" [(ngModel)]="selectedUnit.ability.firstHit">
+            </div>
+
+            <div class="selectRightZoneLittleBox">
+              <label for="unit_castTime">Cast time</label>
+              <input class="form-control" type="number" id="unit_castTime" [(ngModel)]="selectedUnit.ability.castTime">
+            </div>
+
+            <div class="selectRightZoneLittleBox">
+              <label for="unit_offset">Offset</label>
+              <input class="form-control" type="number" id="unit_offset" [(ngModel)]="selectedUnit.ability.offset">
+            </div>
+
+            <div class="selectRightZoneLittleBox" *ngIf="selectedUnit.ability.linearFrames">
+              <label for="unit_hits">Hits</label>
+              <input class="form-control" type="number" id="unit_hits" [(ngModel)]="selectedUnit.ability.hits">
+            </div>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <ss-multiselect-dropdown
+              [options]="multiElements"
+              [settings]="multiElementsSettings"
+              [texts]="multiElementsTexts"
+              [(ngModel)]="this.selectedUnit.ability.elements"
+             >
+            </ss-multiselect-dropdown>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff()">Add debuff</button>
+            <div *ngFor="let debuff of selectedUnit.debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+              <div class="selectRightZoneTwoDividedThree">
+                <label for="unit{{i}}_debuff{{j}}_type">Element {{j + 1}}</label>
+                <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="selectedUnit.debuffs[j].type" (ngModelChange)="onChangeDebuff()">
+                  <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
+                </select>
+              </div>
+              <div class="selectRightZoneTwoDividedThree">
+                <label for="unit{{i}}_debuff{{j}}_value">Value {{j + 1}}</label>
+                <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="selectedUnit.debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
+              </div>
+              <div class="selectRightZoneTwoDividedThree">
+                <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

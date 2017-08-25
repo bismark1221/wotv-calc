@@ -14,20 +14,19 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { MyUnitsComponent } from './my-units/my-units.component';
 import { ChainingComponent } from './chaining/chaining.component';
-
 import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
 import { LoggerService } from './services/logger.service';
+import { ElementsService } from './services/elements.service';
 
 import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { RoundPipe } from './pipes/round.pipe';
-import { MyUnitsComponent } from './my-units/my-units.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +58,8 @@ import { MyUnitsComponent } from './my-units/my-units.component';
   providers: [
     UnitService,
     LoggerService,
-    ChainService
+    ChainService,
+    ElementsService
   ],
   bootstrap: [AppComponent]
 })
