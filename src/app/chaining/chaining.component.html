@@ -22,7 +22,7 @@
             <button *ngIf="chain[i]" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="updateUnit(i)">Save</button>
           </div>
 
-          <div class="selectRightZoneOneThird" *ngIf="chain[i] && chain[i].id && !chain[i].viewOptions">
+          <div class="selectRightZoneOneThird" *ngIf="chain[i] && chain[i].id && !viewOptions[i]">
             <hr />
             <label for="chainer{{i}}_ability">Ability</label>
             <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
@@ -47,7 +47,7 @@
           <hr *ngIf="chain[i]"/>
 
           <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i] && chain[i].id">
-            {{ chain[i].viewOptions ? 'Hide' : 'Show' }} Options
+            {{ viewOptions[i] ? 'Hide' : 'Show' }} Options
           </button>
         </div>
 
@@ -57,7 +57,7 @@
           Select unit 1 first !
         </div>
 
-        <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i] && chain[i].viewOptions">
+        <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i] && viewOptions[i]">
           <div class="selectRightZoneBox">
             <div class="selectRightZoneOneThird">
               <label for="chainer{{i}}_dual">Dualcast/Dualwield</label>
@@ -208,10 +208,10 @@
         Both units must be sent on the same frame
       </span>
       <span *ngIf="chainService.getDiffFirstHits() > 0">
-        {{chain[0].name}} must be sent {{chainService.getDiffFirstHits()}} frames before {{chain[1].name}}
+        {{chain[0].name}} must be sent {{chainService.getDiffFirstHits()}} frames ({{chainService.getDiffFirstHits() * 1 / 60 * 1000 | round}}ms) before {{chain[1].name}}
       </span>
       <span *ngIf="chainService.getDiffFirstHits() < 0">
-        {{chain[1].name}} must be sent {{-chainService.getDiffFirstHits()}} frames before {{chain[0].name}}
+        {{chain[1].name}} must be sent {{-chainService.getDiffFirstHits()}} frames ({{-chainService.getDiffFirstHits() * 1 / 60 * 1000 | round}}ms) before {{chain[0].name}}
       </span>
     </p>
   </div>

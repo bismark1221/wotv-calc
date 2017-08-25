@@ -33,6 +33,8 @@ export class ChainingComponent implements OnInit {
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic'];
+  viewOptions: boolean[] = [false, false];
+
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -136,7 +138,7 @@ export class ChainingComponent implements OnInit {
 
   createNewUnit(position: number) {
     this.selectedUnits[position] = new Unit();
-    this.selectedUnits[position].viewOptions = true;
+    this.viewOptions[position] = true;
     this.onChangeUnit(position);
   }
 
@@ -180,19 +182,20 @@ export class ChainingComponent implements OnInit {
         this.selectedUnits[position + 1] = '';
         this.chain.splice(position + 1, 1);
         this.chainService.chainers.splice(position + 1, 1);
+        this.viewOptions[position] = this.viewOptions[position + 1];
+        this.viewOptions[position + 1] = false;
       } else {
         this.chain.splice(position, 1);
         this.chainService.chainers.splice(position, 1);
+        this.viewOptions[position] = false;
       }
     }
 
     if (this.selectedUnits[position] !== '') {
-      this.selectedUnits[position].viewOptions = this.selectedUnits[position].viewOptions ? true : false;
-
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
       this.chainService.chainers[position] = this.chain[position];
-      this.selectedAbilities[position] = this.selectedAbilities[position] ? this.selectedAbilities[position] : 0;
-      this.chain[position].ability = this.chain[position].ability ? this.chain[position].ability : this.chain[position].abilities[0];
+      this.selectedAbilities[position] = 0;
+      this.chain[position].ability = this.chain[position].abilities[0];
       this.updateLocalDebuffs(position);
     }
 
@@ -220,6 +223,6 @@ export class ChainingComponent implements OnInit {
   }
 
   showOptions(position: number) {
-    this.chain[position].viewOptions = !this.chain[position].viewOptions;
+    this.viewOptions[position] = !this.viewOptions[position];
   }
 }

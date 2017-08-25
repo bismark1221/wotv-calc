@@ -6,7 +6,6 @@ export class TypePipe implements PipeTransform {
     if (!items || !type) {
       return items;
     }
-    // filter items array, items which match and return true will be kept, false will be filtered out
     return items.filter(item => item.type.indexOf(type) !== -1);
   }
 }
