@@ -35,7 +35,6 @@ export class ChainingComponent implements OnInit {
   abilityTypes: string[] = ['physic', 'magic'];
   viewOptions: boolean[] = [false, false];
 
-
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
   };

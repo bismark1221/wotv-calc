@@ -27,6 +27,7 @@ import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { RoundPipe } from './pipes/round.pipe';
+import { MyUnitsComponent } from './my-units/my-units.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RoundPipe } from './pipes/round.pipe';
     KeysPipe,
     TypePipe,
     CapitalizePipe,
-    RoundPipe
+    RoundPipe,
+    MyUnitsComponent
   ],
   imports: [
     BrowserModule,
