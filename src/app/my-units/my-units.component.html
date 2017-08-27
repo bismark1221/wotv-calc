@@ -3,21 +3,21 @@
     <div class="inlineBlock verticalTop littleMarginBottom">
 
       <div class="selectUnitZone">
-        <button *ngIf="selectedUnit" type="button" class="btn btn-secondary btnDelete" (click)="deleteUnit()">X</button>
+        <button *ngIf="selectedUnit" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit()">X</button>
 
         <div class="inlineBlock firstSelectLevel">
-          <label for="selectedUnit">My Units</label>
-          <div>
+          <label *ngIf="!selectedUnit || (selectedUnit && selectedUnit.id)"for="selectedUnit">My Units</label>
+          <div *ngIf="!selectedUnit || (selectedUnit && selectedUnit.id)">
             <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnit" (ngModelChange)="onChangeUnit()">
               <option value="" selected>Select unit</option>
-              <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{unit.name}}</option>
+              <option *ngFor="let unit of units" [ngValue]="unit">{{unit.name}}</option>
             </select>
             <button *ngIf="selectedUnit" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="updateUnit()">Save</button>
           </div>
 
           <div class="selectRightZoneOneThird" *ngIf="selectedUnit && selectedUnit.id">
             <hr />
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="deleteUnit()">Remove Unit</button>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit()">Remove Unit</button>
           </div>
 
           <div *ngIf="!selectedUnit">
@@ -56,30 +56,54 @@
             </div>
           </div>
 
+          <hr />
+
           <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneOneThird" *ngIf="selectedUnit.id">
+            <div class="selectRightZoneOneThird" *ngIf="!activeRenameAbility">
               <label for="unit_ability">Ability</label>
               <select class="form-control" id="unit_ability" [(ngModel)]="selectedAbility" (ngModelChange)="onChangeSkill()">
                 <option *ngFor="let ability of selectedUnit.abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
               </select>
             </div>
 
-            <div class="selectRightZoneOneThird" *ngIf="!selectedUnit.id">
+            <div class="selectRightZoneOneThird" *ngIf="activeRenameAbility">
               <label for="unit_ability">Ability name</label>
               <input class="form-control" type="text" id="unit_ability" [(ngModel)]="selectedUnit.ability.name">
             </div>
 
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!activeRenameAbility">
+              <label>&nbsp;</label>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility()">Rename ability</button>
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="activeRenameAbility">
+              <label>&nbsp;</label>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="updateUnit()">Save ability</button>
+            </div>
+
             <div class="selectRightZoneTwoThirdDividedInThird">
+              <label>&nbsp;</label>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility()">Add ability</button>
+            </div>
+
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="selectedUnit.abilities.length > 1">
+              <label>&nbsp;</label>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility()">Delete ability</button>
+            </div>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <div class="selectRightZoneOneThird">
               <label for="unit_base">Base %</label>
               <input class="form-control" type="number" id="unit_base" [(ngModel)]="selectedUnit.ability.base">
             </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird">
+            <div class="selectRightZoneOneThird">
               <label for="unit_ignore">Ignore (Def/Spr)</label>
               <input class="form-control" type="number" id="unit_ignore" [(ngModel)]="selectedUnit.ability.ignore">
             </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird">
+            <div class="selectRightZoneOneThird">
               <label for="unit_type">Type</label>
               <select class="form-control" id="unit_type" [(ngModel)]="selectedUnit.ability.type">
                 <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>

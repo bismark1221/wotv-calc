@@ -4,6 +4,7 @@ import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'ang
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Unit } from '../entities/unit';
+import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 
@@ -24,6 +25,8 @@ export class MyUnitsComponent implements OnInit {
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic'];
+
+  activeRenameAbility = false;
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -76,14 +79,14 @@ export class MyUnitsComponent implements OnInit {
     });
   }
 
-  private updateLocalDebuffs(position: number) {
+  private updateLocalDebuffs() {
     this.selectedUnit.debuffs = [];
     Object.keys(this.selectedUnit.ability.debuff).forEach(key => {
       this.selectedUnit.debuffs.push({type: key, value: this.selectedUnit.ability.debuff[key]});
     });
   }
 
-  private updateServiceDebuffs(position: number) {
+  private updateServiceDebuffs() {
     this.selectedUnit.ability.debuff = {};
     this.selectedUnit.debuffs.forEach(debuff => {
       let actualDebuff = this.selectedUnit.ability.debuff[debuff.type] ? this.selectedUnit.ability.debuff[debuff.type] : 1;
@@ -96,48 +99,48 @@ export class MyUnitsComponent implements OnInit {
     this.getElements();
   }
 
-  createNewUnit(position: number) {
+  createNewUnit() {
     this.selectedUnit = new Unit();
-    this.onChangeUnit(position);
+    this.onChangeUnit();
   }
 
-  deleteUnit(position: number) {
+  unselectUnit() {
     this.selectedUnit = '';
-    this.onChangeUnit(position);
+    this.onChangeUnit();
   }
 
-  onChangeDual(position: number) {
+  onChangeDual() {
     this.selectedUnit.weapons[1] = '';
   }
 
-  addDebuff(position: number) {
+  addDebuff() {
     this.selectedUnit.debuffs.push({type: 'dark', value: 1});
-    this.updateServiceDebuffs(position);
+    this.updateServiceDebuffs();
   }
 
-  removeDebuff(position: number, debuff: number) {
+  removeDebuff(debuff: number) {
     this.selectedUnit.debuffs.splice(debuff, 1);
-    this.updateServiceDebuffs(position);
+    this.updateServiceDebuffs();
   }
 
-  onChangeDebuff(position: number) {
-    this.updateServiceDebuffs(position);
+  onChangeDebuff() {
+    this.updateServiceDebuffs();
   }
 
-  onChangeSkill(position: number) {
+  onChangeSkill() {
     this.selectedUnit.ability = this.selectedUnit.abilities[this.selectedAbility];
-    this.updateLocalDebuffs(position);
+    this.updateLocalDebuffs();
   }
 
-  onChangeUnit(position: number) {
+  onChangeUnit() {
     if (this.selectedUnit !== '') {
       this.selectedAbility = 0;
       this.selectedUnit.ability = this.selectedUnit.abilities[0];
-      this.updateLocalDebuffs(position);
+      this.updateLocalDebuffs();
     }
   }
 
-  saveUnit(position: number) {
+  saveUnit() {
     this.lastCreatedId++;
     this.selectedUnit.id = this.lastCreatedId;
     this.units.push(this.selectedUnit);
@@ -145,9 +148,38 @@ export class MyUnitsComponent implements OnInit {
     this.localStorageService.set('units', this.units);
   }
 
-  updateUnit(position: number) {
+  updateUnit() {
     this.units[this.positionIds[this.selectedUnit.id]] = this.selectedUnit;
     this.sortUnits();
     this.localStorageService.set('units', this.units);
+    this.activeRenameAbility = false;
+  }
+
+  removeUnit() {
+    this.units.splice(this.positionIds[this.selectedUnit.id], 1);
+    this.sortUnits();
+    this.localStorageService.set('units', this.units);
+    this.selectedUnit = '';
+    this.onChangeUnit();
+  }
+
+  renameAbility() {
+    this.activeRenameAbility = !this.activeRenameAbility;
+  }
+
+  addAbility() {
+    this.activeRenameAbility = true;
+    this.selectedUnit.abilities.push(new Ability());
+    this.selectedAbility = this.selectedUnit.abilities.length - 1;
+    this.selectedUnit.ability = this.selectedUnit.abilities[this.selectedAbility];
+    this.updateLocalDebuffs();
+  }
+
+  removeAbility() {
+    this.selectedUnit.abilities.splice(this.selectedAbility, 1);
+    this.selectedUnit.ability = this.selectedUnit.abilities[0];
+    this.updateLocalDebuffs();
+    this.updateUnit();
+    this.selectedAbility = 0;
   }
 }

@@ -8,7 +8,7 @@ import { MyUnitsComponent } from './my-units/my-units.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
 
-const routes: Routes = [
+const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'chain', component: ChainingComponent },
   { path: 'my-units', component: MyUnitsComponent },
@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{ enableTracing: true })],
+  imports: [RouterModule.forRoot(ROUTES,{ enableTracing: false })],
   exports: [RouterModule]
 })
 
