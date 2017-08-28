@@ -8,7 +8,7 @@ export class Ability {
   castTime?: number = 0;
   offset?: number = 16;
   hits?: number = 1;
-  ignore?: number = 1;
+  ignore?: number = 0;
   firstHit?: number = 0;
   dualable?: boolean = true;
   elements?: string[] = [];

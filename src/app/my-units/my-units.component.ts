@@ -27,6 +27,7 @@ export class MyUnitsComponent implements OnInit {
   abilityTypes: string[] = ['physic', 'magic'];
 
   activeRenameAbility = false;
+  activeRenameUnit = false;
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -48,18 +49,6 @@ export class MyUnitsComponent implements OnInit {
     this.sortUnits();
   }
 
-  private getElements(): void {
-    this.elementsService.getElements().then(elements => {
-      this.elements = elements
-      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
-      this.requiredElements.splice(0, 1);
-
-      this.requiredElements.forEach(element => {
-        this.multiElements.push({id: element, name: element});
-      })
-    });
-  }
-
   private sortUnits() {
     this.units.sort((a: any, b: any) => {
       if (a.name.toLowerCase() < b.name.toLowerCase()) {
@@ -79,6 +68,25 @@ export class MyUnitsComponent implements OnInit {
     });
   }
 
+  private localSaveUnits() {
+    this.sortUnits();
+    this.localStorageService.set('units', this.units);
+    this.activeRenameAbility = false;
+    this.activeRenameUnit = false;
+  }
+
+  private getElements(): void {
+    this.elementsService.getElements().then(elements => {
+      this.elements = elements
+      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
+      this.requiredElements.splice(0, 1);
+
+      this.requiredElements.forEach(element => {
+        this.multiElements.push({id: element, name: element});
+      })
+    });
+  }
+
   private updateLocalDebuffs() {
     this.selectedUnit.debuffs = [];
     Object.keys(this.selectedUnit.ability.debuff).forEach(key => {
@@ -89,7 +97,7 @@ export class MyUnitsComponent implements OnInit {
   private updateServiceDebuffs() {
     this.selectedUnit.ability.debuff = {};
     this.selectedUnit.debuffs.forEach(debuff => {
-      let actualDebuff = this.selectedUnit.ability.debuff[debuff.type] ? this.selectedUnit.ability.debuff[debuff.type] : 1;
+      let actualDebuff = this.selectedUnit.ability.debuff[debuff.type] ? this.selectedUnit.ability.debuff[debuff.type] : 0;
       this.selectedUnit.ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
     });
   }
@@ -97,20 +105,6 @@ export class MyUnitsComponent implements OnInit {
   ngOnInit() {
     this.getUnits();
     this.getElements();
-  }
-
-  createNewUnit() {
-    this.selectedUnit = new Unit();
-    this.onChangeUnit();
-  }
-
-  unselectUnit() {
-    this.selectedUnit = '';
-    this.onChangeUnit();
-  }
-
-  onChangeDual() {
-    this.selectedUnit.weapons[1] = '';
   }
 
   addDebuff() {
@@ -132,6 +126,42 @@ export class MyUnitsComponent implements OnInit {
     this.updateLocalDebuffs();
   }
 
+  onChangeDual() {
+    this.selectedUnit.weapons[1] = '';
+  }
+
+  createNewUnit() {
+    this.activeRenameUnit = true;
+    this.selectedUnit = new Unit();
+    this.selectedUnit.name = 'Unit ' + (this.units.length + 1);
+    this.onChangeUnit();
+    this.saveUnit();
+  }
+
+  saveUnit() {
+    let position = this.positionIds[this.selectedUnit.id];
+    if (position >= 0) {
+      this.units[position] = this.selectedUnit;
+    } else {
+      this.lastCreatedId++;
+      this.selectedUnit.id = this.lastCreatedId;
+      this.units.push(this.selectedUnit);
+    }
+
+    this.sortUnits();
+    this.localStorageService.set('units', this.units);
+    this.localSaveUnits();
+    this.activeRenameAbility = false;
+    this.activeRenameUnit = false;
+  }
+
+  removeUnit() {
+    this.units.splice(this.positionIds[this.selectedUnit.id], 1);
+    this.localSaveUnits();
+    this.selectedUnit = '';
+    this.onChangeUnit();
+  }
+
   onChangeUnit() {
     if (this.selectedUnit !== '') {
       this.selectedAbility = 0;
@@ -140,46 +170,34 @@ export class MyUnitsComponent implements OnInit {
     }
   }
 
-  saveUnit() {
-    this.lastCreatedId++;
-    this.selectedUnit.id = this.lastCreatedId;
-    this.units.push(this.selectedUnit);
-    this.sortUnits();
-    this.localStorageService.set('units', this.units);
-  }
-
-  updateUnit() {
-    this.units[this.positionIds[this.selectedUnit.id]] = this.selectedUnit;
-    this.sortUnits();
-    this.localStorageService.set('units', this.units);
-    this.activeRenameAbility = false;
-  }
-
-  removeUnit() {
-    this.units.splice(this.positionIds[this.selectedUnit.id], 1);
-    this.sortUnits();
-    this.localStorageService.set('units', this.units);
+  unselectUnit() {
     this.selectedUnit = '';
     this.onChangeUnit();
   }
 
-  renameAbility() {
-    this.activeRenameAbility = !this.activeRenameAbility;
+  renameUnit() {
+    this.activeRenameUnit = !this.activeRenameUnit;
   }
 
   addAbility() {
-    this.activeRenameAbility = true;
+    this.activeRenameAbility = false;
     this.selectedUnit.abilities.push(new Ability());
     this.selectedAbility = this.selectedUnit.abilities.length - 1;
     this.selectedUnit.ability = this.selectedUnit.abilities[this.selectedAbility];
+    this.selectedUnit.ability.name = 'Ability ' + this.selectedUnit.abilities.length;
     this.updateLocalDebuffs();
+    this.saveUnit();
   }
 
   removeAbility() {
     this.selectedUnit.abilities.splice(this.selectedAbility, 1);
     this.selectedUnit.ability = this.selectedUnit.abilities[0];
     this.updateLocalDebuffs();
-    this.updateUnit();
+    this.saveUnit();
     this.selectedAbility = 0;
+  }
+
+  renameAbility() {
+    this.activeRenameAbility = !this.activeRenameAbility;
   }
 }

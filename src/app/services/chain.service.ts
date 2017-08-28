@@ -75,8 +75,8 @@ export class ChainService {
     let modifier = 1;
 
     this.chainers.forEach(unit => {
-      if (unit.ability.debuff[element] && unit.ability.debuff[element] > modifier) {
-        modifier = unit.ability.debuff[element];
+      if (unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
+        modifier = unit.ability.debuff[element] / 100 + 1;
       }
     });
 
@@ -87,13 +87,14 @@ export class ChainService {
     this.chainers.forEach(unit => {
       unit.totalDamage = 0;
       let elements = this.getElements(unit);
+      let realIgnore = unit.ability.ignore * 2 / 100 + 1;
 
       if (elements.length > 0) {
         elements.forEach(element => {
-          unit.totalDamage = unit.totalDamage + (1/elements.length) * unit.ability.base * unit.ability.ignore * this.getDebuffModifier(element);
+          unit.totalDamage = unit.totalDamage + (1/elements.length) * unit.ability.base * realIgnore * this.getDebuffModifier(element);
         })
       } else {
-        unit.totalDamage = unit.ability.base * unit.ability.ignore;
+        unit.totalDamage = unit.ability.base * realIgnore;
       }
 
       unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual ? 2 : 1));

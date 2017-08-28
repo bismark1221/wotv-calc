@@ -13,9 +13,9 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 70,
         framesList: '0-7-5-7-7-7-7',
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          light : 1.5
+          light: 50
         }
       },
       {
@@ -26,9 +26,9 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 70,
         framesList: '0-7-5-7-7-7-7',
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          light : 1.5
+          light: 50
         }
       }
     ],
@@ -95,7 +95,7 @@ export const UNITS: any[] = [
         castTime: 8,
         offset: 32,
         firstHit: 42,
-        ignore: 2
+        ignore: 50
       },
       {
         name: 'TM (R020: Mirage)',
@@ -157,11 +157,11 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 64,
-        ignore: 1.5,
+        ignore: 25,
         debuff: {
-          fire : 1.75,
-          light : 1.75,
-          lightning : 1.75
+          fire: 75,
+          light: 75,
+          lightning: 75
         }
       }
     ],
@@ -181,9 +181,9 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 70,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          light : 1.5
+          light: 50
         }
       },
       {
@@ -194,9 +194,9 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 70,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          light : 1.5
+          light: 50
         }
       }
     ],
@@ -217,9 +217,9 @@ export const UNITS: any[] = [
         castTime: 0,
         offset: 36,
         firstHit: 2,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          earth : 1.5
+          earth: 50
         }
       },
       {
@@ -230,9 +230,9 @@ export const UNITS: any[] = [
         castTime: 8,
         offset: 36,
         firstHit: 2,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          earth : 1.75
+          earth: 75
         }
       }
     ],
@@ -269,7 +269,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 72,
-        ignore: 1.5,
+        ignore: 25,
       },
       {
         name: 'Sword of Kings',
@@ -300,8 +300,8 @@ export const UNITS: any[] = [
           'lightning'
         ],
         debuff: {
-          light : 1.5,
-          lightning : 1.5
+          light: 50,
+          lightning: 50
         }
       },
     ]
@@ -319,7 +319,7 @@ export const UNITS: any[] = [
         castTime: 8,
         offset: 36,
         firstHit: 22,
-        ignore: 2
+        ignore: 50
       },
     ]
   },
@@ -336,7 +336,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 140,
-        ignore: 2,
+        ignore: 50,
         type: 'magic'
       },
     ]
@@ -354,9 +354,9 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 70,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          dark : 1.5
+          dark: 50
         }
       }
     ],
@@ -377,9 +377,9 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 26,
         firstHit: 10,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          wind : 1.5
+          wind: 50
         },
         elements: [
           'wind'
@@ -401,7 +401,7 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 40,
         debuff: {
-          ice : 1.5
+          ice: 50
         },
         elements: [
           'ice'
@@ -459,9 +459,9 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 42,
-        ignore: 2,
+        ignore: 50,
         debuff: {
-          lightning : 1.5
+          lightning: 50
         }
       },
     ]
@@ -483,7 +483,7 @@ export const UNITS: any[] = [
           'light'
         ],
         debuff: {
-          light : 1.5
+          light: 50
         }
       }
     ]
@@ -536,7 +536,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 42,
-        ignore: 1.5,
+        ignore: 25,
       }
     ]
   },
@@ -668,7 +668,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 140,
-        ignore: 2,
+        ignore: 50,
         type: 'magic'
       },
     ]
@@ -715,7 +715,7 @@ export const UNITS: any[] = [
           'wind'
         ],
         debuff: {
-          wind : 1.5
+          wind: 50
         },
         type: 'magic'
       }
@@ -734,7 +734,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 52,
-        ignore: 2,
+        ignore: 50,
         type: 'magic'
       },
       {
@@ -745,7 +745,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 60,
-        ignore: 2,
+        ignore: 50,
         type: 'magic'
       },
       {
@@ -756,7 +756,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 140,
-        ignore: 2,
+        ignore: 50,
         type: 'magic'
       }
     ]
