@@ -45,19 +45,21 @@ export interface TooltipOptions {
   animations: [
     trigger("tooltipState", [
       state("active", style({
+        visibility: 'visible',
         opacity: 1,
         transform: "translate(0, -4px)"
       })),
       state("inactive", style({
+        visibility: 'hidden',
         opacity: 0,
         transform: "translate(0, 0)"
       })),
       transition(":enter", [
-        style({opacity: 0, transform: "translate(0,0)"}),
+        style({visibility: 'visible', opacity: 0, transform: "translate(0,0)"}),
         animate(300)
       ]),
       transition(":leave", [
-        style({opacity: 0, transform: "translate(0,0)"}),
+        style({visibility: 'hidden', opacity: 0, transform: "translate(0,0)"}),
         animate(300)
       ]),
       transition("inactive => active", animate(300)),
