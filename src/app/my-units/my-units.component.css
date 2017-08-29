@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.helperIcon {
+  color: #848b8e;
+}
+
 .selectChainZone {
   margin: 0 auto;
   min-width: 250px;
@@ -45,11 +49,6 @@
 
 .unitImg {
   height: 100px;
-}
-
-.selectUnit1 {
-  color: #848b8e;;
-  font-size: 4em;
 }
 
 .selectUnitZone {
@@ -153,6 +152,11 @@
 
 .verticalTop {
   vertical-align: top;
+}
+
+.selectHr {
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 [type="checkbox"]:not(:checked),

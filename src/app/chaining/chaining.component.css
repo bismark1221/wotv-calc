@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.helperIcon {
+  color: #848b8e;
+}
+
 .selectChainZone {
   margin: 0 auto;
   min-width: 250px;
@@ -124,6 +128,12 @@
   display: inline-block;
 }
 
+.selectRightZoneFrames {
+  width: 266px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
 .selectRightZoneMediumBox {
   width: 120px;
   padding-right: 10px;
@@ -147,6 +157,16 @@
 
 .verticalTop {
   vertical-align: top;
+}
+
+.selectHr {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.selectHrWithBottomMargin {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 [type="checkbox"]:not(:checked),

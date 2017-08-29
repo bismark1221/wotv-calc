@@ -13,7 +13,7 @@ body {
 }
 
 button, input, optgroup, select, textarea {
-  font-family: Palatino !important;
+  font-family: Palatino, Helvetica, sans-serif !important;
 }
 
 .dropdown-item {
@@ -35,4 +35,19 @@ button, input, optgroup, select, textarea {
 
 .dropdown-item.active, .dropdown-item:active {
   background-color: #e5e5e8;
+}
+
+.tooltip {
+  background-color: #848b8e !important;
+  font-size: 0.9rem !important;
+  font-family: Palatino, Helvetica, sans-serif !important;
+}
+
+.tooltip-arrow {
+  border-top-color: #848b8e !important;
+}
+
+.tooltip-ability-type {
+  left: 600px !important;
+  top: 160px !important;
 }

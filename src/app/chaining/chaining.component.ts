@@ -4,6 +4,7 @@ import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'ang
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Unit } from '../entities/unit';
+import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
@@ -13,24 +14,22 @@ import { ChainService } from '../services/chain.service';
   templateUrl: './chaining.component.html',
   styleUrls: ['./chaining.component.css']
 })
-
 export class ChainingComponent implements OnInit {
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
 
   chain: any[] = [];
-
   selectedUnits: any[] = ['', ''];
   selectedAbilities: any[] = ['', ''];
-  finisher: Unit;
+
   units: Unit[];
   createdUnits: any[] = [];
-
-  framesGap: string = "1";
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic'];
+
+  framesGap: string = "1";
   viewOptions: boolean[] = [false, false];
 
   multiElementsTexts: IMultiSelectTexts = {
@@ -52,20 +51,8 @@ export class ChainingComponent implements OnInit {
   private getUnits(): void {
     this.unitService.getUnits().then(units => {
       this.units = units;
-      this.createdUnits = this.localStorageService.get<any[]>('units');
+      this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
       this.sortUnits();
-    });
-  }
-
-  private getElements(): void {
-    this.elementsService.getElements().then(elements => {
-      this.elements = elements
-      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
-      this.requiredElements.splice(0, 1);
-
-      this.requiredElements.forEach(element => {
-        this.multiElements.push({id: element, name: element});
-      })
     });
   }
 
@@ -80,25 +67,42 @@ export class ChainingComponent implements OnInit {
       }
     });
 
-    if (this.createdUnits) {
-      this.createdUnits.sort((a: any, b: any) => {
-        if (a.name.toLowerCase() < b.name.toLowerCase()) {
-          return -1;
-        } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
-          return 1;
-        } else {
-          return 0;
-        }
-      });
-    } else {
-      this.createdUnits = [];
-    }
+    this.createdUnits.sort((a: any, b: any) => {
+      if (a.name.toLowerCase() < b.name.toLowerCase()) {
+        return -1;
+      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
 
     let position = 0;
     this.createdUnits.forEach(unit => {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
       this.positionIds[unit.id] = position;
       position++;
+    });
+  }
+
+  private localSaveUnits() {
+    this.chain.forEach(unit => {
+      unit.activeRename = false;
+      unit.ability.activeRename = false;
+    })
+    this.sortUnits();
+    this.localStorageService.set('units', this.createdUnits);
+  }
+
+  private getElements(): void {
+    this.elementsService.getElements().then(elements => {
+      this.elements = elements
+      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
+      this.requiredElements.splice(0, 1);
+
+      this.requiredElements.forEach(element => {
+        this.multiElements.push({id: element, name: element});
+      })
     });
   }
 
@@ -122,6 +126,78 @@ export class ChainingComponent implements OnInit {
     this.getElements();
   }
 
+  addDebuff(position: number) {
+    this.chain[position].debuffs.push({type: 'dark', value: 1});
+    this.updateServiceDebuffs(position);
+    this.saveUnit(position);
+  }
+
+  removeDebuff(position: number, debuff: number) {
+    this.chain[position].debuffs.splice(debuff, 1);
+    this.updateServiceDebuffs(position);
+    this.saveUnit(position);
+  }
+
+  onChangeDebuff(position: number) {
+    this.updateServiceDebuffs(position);
+    this.saveUnit(position);
+  }
+
+  onChangeSkill(position: number) {
+    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
+    this.updateLocalDebuffs(position);
+    this.onChangeChain();
+  }
+
+  onChangeDual(position: number) {
+    this.chain[position].weapons[1] = '';
+    this.saveUnit(position);
+  }
+
+  createNewUnit(position: number) {
+    this.selectedUnits[position] = new Unit();
+    this.selectedUnits[position] = 'Unit ' + (this.createdUnits.length + 1);
+    this.selectedUnits[position].activeRename = true;
+    this.viewOptions[position] = true;
+    this.onChangeUnit(position);
+    this.saveUnit(position);
+  }
+
+  saveUnit(position: number) {
+    if (!this.chain[position].id || this.chain[position].id > 10000) {
+
+      let positionCreated = this.positionIds[this.chain[position].id];
+      if (positionCreated >= 0) {
+        this.createdUnits[positionCreated] = this.chain[position];
+      } else {
+        this.lastCreatedId++;
+        this.chain[position].id = this.lastCreatedId;
+        this.createdUnits.push(this.chain[position]);
+      }
+
+      this.chain[position].activeRename = false;
+      this.chain[position].ability.activeRename = false;
+      //this.selectedUnits[position] = this.chain[position]; -----------------------------------
+
+      this.sortUnits();
+      this.localSaveUnits();
+    }
+
+    this.onChangeChain();
+  }
+
+  removeUnit(position: number) {
+    this.createdUnits.splice(this.positionIds[this.chain[position].id], 1);
+    this.localSaveUnits();
+    this.selectedUnits[position] = '';
+    this.onChangeUnit(position);
+  }
+
+  unselectUnit(position: number) {
+    this.selectedUnits[position] = '';
+    this.onChangeUnit(position);
+  }
+
   duplicateUnit() {
     this.selectedUnits[1] = this.selectedUnits[0];
     this.selectedAbilities[1] = this.selectedAbilities[0];
@@ -130,45 +206,6 @@ export class ChainingComponent implements OnInit {
     this.chainService.chainers[1] = this.chain[1];
     this.updateLocalDebuffs(1);
 
-    this.onChangeChain();
-  }
-
-  createNewUnit(position: number) {
-    this.selectedUnits[position] = new Unit();
-    this.viewOptions[position] = true;
-    this.onChangeUnit(position);
-  }
-
-  deleteUnit(position: number) {
-    this.selectedUnits[position] = '';
-    this.onChangeUnit(position);
-  }
-
-  onChangeDual(position: number) {
-    this.chain[position].weapons[1] = '';
-    this.onChangeChain();
-  }
-
-  addDebuff(position: number) {
-    this.chain[position].debuffs.push({type: 'dark', value: 1});
-    this.updateServiceDebuffs(position);
-    this.onChangeChain();
-  }
-
-  removeDebuff(position: number, debuff: number) {
-    this.chain[position].debuffs.splice(debuff, 1);
-    this.updateServiceDebuffs(position);
-    this.onChangeChain();
-  }
-
-  onChangeDebuff(position: number) {
-    this.updateServiceDebuffs(position);
-    this.onChangeChain();
-  }
-
-  onChangeSkill(position: number) {
-    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
-    this.updateLocalDebuffs(position);
     this.onChangeChain();
   }
 
@@ -194,6 +231,8 @@ export class ChainingComponent implements OnInit {
       this.selectedAbilities[position] = 0;
       this.chain[position].ability = this.chain[position].abilities[0];
       this.updateLocalDebuffs(position);
+      this.chain[position].activeRename = false;
+      this.chain[position].ability.activeRename = false;
     }
 
     this.onChangeChain();
@@ -204,19 +243,30 @@ export class ChainingComponent implements OnInit {
     this.chainService.calculateChain();
   }
 
-  saveUnit(position: number) {
-    this.lastCreatedId++;
-    this.chain[position].id = this.lastCreatedId;
-    this.createdUnits.push(this.chain[position]);
-    this.sortUnits();
-    this.selectedUnits[position] = this.chain[position];
-    this.localStorageService.set('units', this.createdUnits);
+  addAbility(position: number) {
+    this.chain[position].ability.activeRename = false;
+    this.chain[position].abilities.push(new Ability());
+    this.selectedAbilities[position] = this.chain[position].abilities.length - 1;
+    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
+    this.chain[position].ability.name = 'Ability ' + this.chain[position].abilities.length;
+    this.updateLocalDebuffs(position);
+    this.saveUnit(position);
   }
 
-  updateUnit(position: number) {
-    this.createdUnits[this.positionIds[this.chain[position].id]] = this.chain[position];
-    this.sortUnits();
-    this.localStorageService.set('units', this.createdUnits);
+  removeAbility(position: number) {
+    this.chain[position].abilities.splice(this.selectedAbilities[position], 1);
+    this.chain[position].ability = this.chain[position].abilities[0];
+    this.updateLocalDebuffs(position);
+    this.saveUnit(position);
+    this.selectedAbilities[position] = 0;
+  }
+
+  renameAbility(position: number) {
+    this.chain[position].activeRename = !this.chain[position].activeRename;
+  }
+
+  renameUnit(position: number) {
+    this.chain[position].ability.activeRename = !this.chain[position].ability.activeRename;
   }
 
   showOptions(position: number) {

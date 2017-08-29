@@ -2,13 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule }    from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { MarkdownModule } from 'angular2-markdown';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { TooltipModule } from './tooltip/tooltip.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -50,6 +52,7 @@ import { LegalComponent } from './legal/legal.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
@@ -59,7 +62,8 @@ import { LegalComponent } from './legal/legal.component';
       storageType: 'localStorage'
     }),
     MarkdownModule.forRoot(),
-    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
+    TooltipModule
   ],
   providers: [
     UnitService,

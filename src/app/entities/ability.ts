@@ -5,7 +5,7 @@ export class Ability {
   linearFrames?: boolean = true;
   frames?: number = 1;
   framesList?: string = '0';
-  castTime?: number = 0;
+  castTime?: number = 40;
   offset?: number = 16;
   hits?: number = 1;
   ignore?: number = 0;

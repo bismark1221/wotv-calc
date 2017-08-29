@@ -892,6 +892,88 @@ export const UNITS: any[] = [
       }
     ]
   },
+  {
+    id: 35,
+    name: 'Onion Knight',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Splendor of the Wind',
+        hits: 12,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 380,
+        elements: [
+          'wind'
+        ]
+      },
+      {
+        name: 'Splendor of the Fire',
+        hits: 12,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 380,
+        elements: [
+          'fire'
+        ]
+      },
+      {
+        name: 'Splendor of the Earth',
+        hits: 12,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 380,
+        elements: [
+          'earth'
+        ]
+      },
+      {
+        name: 'Splendor of the Water',
+        hits: 12,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 380,
+        elements: [
+          'water'
+        ]
+      },
+      {
+        name: 'Onion Slice',
+        hits: 12,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 400
+      },
+      {
+        name: 'Asthma Allergy',
+        hits: 12,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 220
+      },
+      {
+        name: 'TM (Onion Cutter)',
+        hits: 16,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 520
+      }
+    ]
+  },
 // Finish
   {
     id: 2,

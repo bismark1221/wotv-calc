@@ -45,8 +45,12 @@ export class MyUnitsComponent implements OnInit {
   ) { }
 
   private getUnits(): void {
-    this.units = this.localStorageService.get<any[]>('units');
+    this.units = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
     this.sortUnits();
+    if (this.units.length > 0) {
+      this.selectedUnit = this.units[0];
+      this.onChangeUnit();
+    }
   }
 
   private sortUnits() {
@@ -110,15 +114,18 @@ export class MyUnitsComponent implements OnInit {
   addDebuff() {
     this.selectedUnit.debuffs.push({type: 'dark', value: 1});
     this.updateServiceDebuffs();
+    this.saveUnit();
   }
 
   removeDebuff(debuff: number) {
     this.selectedUnit.debuffs.splice(debuff, 1);
     this.updateServiceDebuffs();
+    this.saveUnit();
   }
 
   onChangeDebuff() {
     this.updateServiceDebuffs();
+    this.saveUnit();
   }
 
   onChangeSkill() {
@@ -128,6 +135,7 @@ export class MyUnitsComponent implements OnInit {
 
   onChangeDual() {
     this.selectedUnit.weapons[1] = '';
+    this.saveUnit();
   }
 
   createNewUnit() {
@@ -149,7 +157,6 @@ export class MyUnitsComponent implements OnInit {
     }
 
     this.sortUnits();
-    this.localStorageService.set('units', this.units);
     this.localSaveUnits();
     this.activeRenameAbility = false;
     this.activeRenameUnit = false;
@@ -167,16 +174,9 @@ export class MyUnitsComponent implements OnInit {
       this.selectedAbility = 0;
       this.selectedUnit.ability = this.selectedUnit.abilities[0];
       this.updateLocalDebuffs();
+      this.activeRenameAbility = false;
+      this.activeRenameUnit = false;
     }
-  }
-
-  unselectUnit() {
-    this.selectedUnit = '';
-    this.onChangeUnit();
-  }
-
-  renameUnit() {
-    this.activeRenameUnit = !this.activeRenameUnit;
   }
 
   addAbility() {
@@ -199,5 +199,9 @@ export class MyUnitsComponent implements OnInit {
 
   renameAbility() {
     this.activeRenameAbility = !this.activeRenameAbility;
+  }
+
+  renameUnit() {
+    this.activeRenameUnit = !this.activeRenameUnit;
   }
 }
