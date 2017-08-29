@@ -20,18 +20,18 @@
               <option value="" selected>My units</option>
               <option *ngFor="let unit of createdUnits | type:'chain'" [ngValue]="unit">{{ unit.name | capitalize}}</option>
             </select>
-            <button *ngIf="chain[i] && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit()">Rename</button>
+            <button *ngIf="chain[i] && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
             <button *ngIf="chain[i]" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
 
           <div *ngIf="chain[i] && chain[i].activeRename">
             <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
-            <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()">
+            <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()" (keyup.enter)="saveUnit(i)">
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
 
           <div class="selectRightZoneOneThird" *ngIf="chain[i] && chain[i].id > 10000">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit()">Remove Unit</button>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">Remove Unit</button>
           </div>
 
           <div class="selectRightZoneOneThird" *ngIf="chain[i] && !viewOptions[i]">
@@ -101,7 +101,7 @@
 
             <div class="selectRightZoneOneThird" *ngIf="chain[i].ability.activeRename">
               <label for="unit_ability">Ability name</label>
-              <input class="form-control" type="text" id="unit_ability" [(ngModel)]="chain[i].ability.name">
+              <input class="form-control" type="text" id="unit_ability" [(ngModel)]="chain[i].ability.name" (keyup.enter)="saveUnit(i)">
             </div>
 
             <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!chain[i].ability.activeRename">
@@ -127,10 +127,10 @@
 
           <div class="selectRightZoneBox littleMarginTop">
             <div class="selectRightZoneOneThird">
-              <span id="tooltip_base"></span>
+              <span id="tooltip_base_{{i}}"></span>
               <label for="chainer{{i}}_base"
                 tooltip="ex: damage 7x = 700%"
-                parentSelector="#tooltip_base">
+                parentSelector="#tooltip_base_{{i}}">
                 Base % <i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
               </label>
               <div class="input-group">
@@ -148,10 +148,10 @@
             </div>
 
             <div class="selectRightZoneOneThird">
-              <span id="tooltip_type"></span>
+              <span id="tooltip_type_{{i}}"></span>
               <label for="chainer{{i}}_type"
                 tooltip="physic if weapon element is applied to the ability"
-                parentSelector="#tooltip_type"
+                parentSelector="#tooltip_type_{{i}}"
                 tooltipClass="tooltip-ability-type">
                 Type <i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
               </label>

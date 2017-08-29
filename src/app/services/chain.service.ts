@@ -15,6 +15,7 @@ export class ChainService {
   private hits: any[] = [];
   private lastHiter: number;
   private lastElements: string[];
+  private countHits: any[] = [{chain: 0, break: 0}, {chain: 0, break: 0}];
 
   chainers: any[] = [];
   finisher: Unit;
@@ -116,9 +117,24 @@ export class ChainService {
   }
 
   private addHit(unit: number, frame: number, combo: boolean) {
+    let unitName = (unit + 1) + '.' + this.chainers[unit].name;
+    frame = frame + (unit === 1 ? this.framesGap : 0);
+    let size = 5;
+    let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? 'chain' : 'break';
+    this.countHits[unit][type]++;
+    type = 'unit' + (unit + 1).toString() + '-' + type + (this.countHits[unit][type] % 2 != 0 ? '1' : '2');
+
+    if (this.nbHits > 0 && this.hits[this.nbHits - 1].unitName === unitName && this.hits[this.nbHits - 1].hit === frame) {
+      this.hits[this.nbHits - 1].size = 5;
+      frame += 0.5;
+      size = 2.5;
+    }
+
     this.hits[this.nbHits] = {
-      unitName: (unit + 1) + '.' + this.chainers[unit].name,
-      hit: frame + (unit === 1 ? this.framesGap : 0)
+      unitName: unitName,
+      hit: frame,
+      type: type,
+      size: size
     };
     this.calculateTotal(this.chainers[unit], combo);
     this.nbHits++;
@@ -138,8 +154,8 @@ export class ChainService {
   private calculateHitsAndFrames() {
     this.chainers.forEach(unit => {
       unit.frames = [];
-      let countFrames = 0; //unit.ability.firstHit + unit.ability.offset;
-      let dualCountFrames = unit.ability.offset + unit.ability.castTime; //unit.ability.firstHit + (unit.ability.offset * 2) + unit.ability.castTime;
+      let countFrames = 0;
+      let dualCountFrames = unit.ability.offset + unit.ability.castTime;
 
       if (!unit.ability.linearFrames) {
         unit.ability.framesList.split('-').forEach(hit => {
@@ -239,6 +255,8 @@ export class ChainService {
     } else {
       this.hits = [];
     }
+
+    console.log(this.hits)
 
     this.dataSubject.next(this.hits);
   }

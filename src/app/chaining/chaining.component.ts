@@ -177,7 +177,7 @@ export class ChainingComponent implements OnInit {
 
       this.chain[position].activeRename = false;
       this.chain[position].ability.activeRename = false;
-      //this.selectedUnits[position] = this.chain[position]; -----------------------------------
+      this.selectedUnits[position] = this.chain[position];
 
       this.sortUnits();
       this.localSaveUnits();
@@ -261,11 +261,11 @@ export class ChainingComponent implements OnInit {
     this.selectedAbilities[position] = 0;
   }
 
-  renameAbility(position: number) {
+  renameUnit(position: number) {
     this.chain[position].activeRename = !this.chain[position].activeRename;
   }
 
-  renameUnit(position: number) {
+  renameAbility(position: number) {
     this.chain[position].ability.activeRename = !this.chain[position].ability.activeRename;
   }
 

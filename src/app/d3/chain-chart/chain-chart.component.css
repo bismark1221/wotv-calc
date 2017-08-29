@@ -12,22 +12,38 @@
   fill: #999;
 }
 
-.chain-chart .bar {
+.bar {
   fill: #33b5e5;
 }
 
-.chain-chart .bar-failed {
-  fill: #CC0000;
+.bar-unit1-chain1 {
+  fill: #3868e8;
 }
 
-.chain-chart .bar-running {
-  fill: #669900;
+.bar-unit1-chain2 {
+  fill: #6f93f3;
 }
 
-.chain-chart .bar-succeeded {
-  fill: #33b5e5;
+.bar-unit2-chain1 {
+  fill: #17bd00;
 }
 
-.chain-chart .bar-killed {
-  fill: #ffbb33;
+.bar-unit2-chain2 {
+  fill: #70dc60;
+}
+
+.bar-unit1-break1 {
+  fill: #ff0600;
+}
+
+.bar-unit1-break2 {
+  fill: #ff0600;
+}
+
+.bar-unit2-break1 {
+  fill: #ff0600;
+}
+
+.bar-unit2-break2 {
+  fill: #ff0600;
 }

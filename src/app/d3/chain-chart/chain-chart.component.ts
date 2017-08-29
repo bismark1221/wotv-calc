@@ -23,12 +23,6 @@ export class ChainChartComponent implements OnInit {
   private yAxis: any;
 
   private margin: any = { top : 20, right : 20, bottom : 20, left : 80 };
-  private hitStatus = {
-    "chain" : "bar",
-    "break" : "bar-failed",
-    "finish" : "bar-running",
-    "other" : "bar-killed"
-  };
 
   constructor(private chainService: ChainService) { }
 
@@ -104,19 +98,20 @@ export class ChainChartComponent implements OnInit {
 
     // update existing bars
     this.chart.selectAll('.bar').transition()
+      .attr('class', d => 'bar bar-' + d.type)
       .attr('x', d => this.xScale(d.hit))
       .attr('y', d => this.yScale(d.unitName))
-      .attr('width', d => 5)
+      .attr('width', d => d.size)
       .attr('height', d => this.yScale.bandwidth());
 
     // add new bars
     update
       .enter()
       .append('rect')
-      .attr('class', 'bar')
+      .attr('class', d => 'bar bar-' + d.type)
       .attr('x', d => this.xScale(d.hit))
       .attr('y', d => this.yScale(d.unitName))
-      .attr('width', 5)
+      .attr('width', d => d.size)
       .attr('height', this.yScale.bandwidth());
   }
 }
