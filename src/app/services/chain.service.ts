@@ -127,10 +127,12 @@ export class ChainService {
     let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? 'chain' : 'break';
     type = 'unit' + (unit + 1).toString() + '-' + type + (hit.type === 'classic' ? '1' : '2');
 
-    if (this.nbHits > 0 && this.hits[this.nbHits - 1].unitName === unitName && this.hits[this.nbHits - 1].hit === frame) {
-      this.hits[this.nbHits - 1].size = 5;
-      frame += 0.5;
-      size = 3;
+    for (let i = 1; i <= 2; i++) {
+      if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === frame) {
+        this.hits[this.nbHits - i].size = 5;
+        frame += 0.5;
+        size = 3;
+      }
     }
 
     this.hits[this.nbHits] = {
