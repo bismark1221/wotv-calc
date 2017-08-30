@@ -27,7 +27,7 @@ export class ChainingComponent implements OnInit {
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
-  abilityTypes: string[] = ['physic', 'magic'];
+  abilityTypes: string[] = ['physic', 'magic', 'hybrid'];
 
   framesGap: string = "1";
   viewOptions: boolean[] = [false, false];
@@ -155,6 +155,16 @@ export class ChainingComponent implements OnInit {
   }
 
   createNewUnit(position: number) {
+    this.selectedUnits[position] = new Unit();
+    this.selectedUnits[position] = 'Unit ' + (this.createdUnits.length + 1);
+    this.selectedUnits[position].activeRename = true;
+    this.viewOptions[position] = true;
+    this.onChangeUnit(position);
+    this.saveUnit(position);
+  }
+
+  createNewUnitFromPredefined(position: number) {
+    let unit =
     this.selectedUnits[position] = new Unit();
     this.selectedUnits[position] = 'Unit ' + (this.createdUnits.length + 1);
     this.selectedUnits[position].activeRename = true;

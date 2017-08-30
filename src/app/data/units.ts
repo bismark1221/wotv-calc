@@ -120,7 +120,7 @@ export const UNITS: any[] = [
         linearFrames: false,
         framesList: '0-7-7-8-8-16-8',
         castTime: 7,
-        offset: 32,
+        offset: 26,
         firstHit: 9,
       },
       {
@@ -400,6 +400,7 @@ export const UNITS: any[] = [
         castTime: 8,
         offset: 16,
         firstHit: 40,
+        type: 'hybrid',
         debuff: {
           ice: 50
         },
@@ -903,7 +904,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 380,
         elements: [
           'wind'
@@ -915,7 +916,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 380,
         elements: [
           'fire'
@@ -927,7 +928,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 380,
         elements: [
           'earth'
@@ -939,7 +940,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 380,
         elements: [
           'water'
@@ -951,7 +952,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 400
       },
       {
@@ -960,7 +961,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 220
       },
       {
@@ -969,7 +970,7 @@ export const UNITS: any[] = [
         frames: 7,
         firstHit: 42,
         castTime: 40,
-        offset: 16,
+        offset: 0,
         base: 520
       }
     ]
