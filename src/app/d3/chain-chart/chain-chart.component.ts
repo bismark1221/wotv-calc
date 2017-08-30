@@ -13,9 +13,10 @@ export class ChainChartComponent implements OnInit {
   @ViewChild('chart') private chartContainer: ElementRef;
   data: Array<any>;
 
-  private chart: any;
   private width: number;
   private height: number;
+  private maxFrame: number;
+  private chart: any;
   private xScale: any;
   private yScale: any;
   private colors: any;
@@ -24,22 +25,38 @@ export class ChainChartComponent implements OnInit {
 
   private margin: any = { top : 20, right : 20, bottom : 20, left : 80 };
 
+  private frames: number[];
+
   constructor(private chainService: ChainService) { }
 
   ngOnInit() {
     this.data = this.chainService.getHits();
+    this.updateMaxFrame();
     this.createChart();
   }
 
   ngAfterViewInit() {
     this.chainService.$hits.subscribe(hits => {
       this.data = hits;
+      this.updateMaxFrame();
+      this.addDottedLines();
       this.updateChart();
     });
   }
 
-  private getMaxFrame = function() {
-    return this.data[this.data.length - 1] ? this.data[this.data.length - 1].hit : 100;
+  private addDottedLines() {
+    this.frames = [];
+    for (let i = 0; i <= this.maxFrame; i++) {
+      this.data.push({
+        hit: i,
+        type: "dotted",
+        unitName: this.getUnitsName[0]
+      });
+    }
+  }
+
+  private updateMaxFrame = function() {
+    this.maxFrame = this.data[this.data.length - 1] ? this.data[this.data.length - 1].hit + 1: 100;
   }
 
   private getUnitsName = function() {
@@ -68,7 +85,7 @@ export class ChainChartComponent implements OnInit {
       .attr("height", element.offsetHeight)
       .attr("transform", `translate(${this.margin.left}, ${this.margin.top})`);
 
-    let xDomain = [0, this.getMaxFrame()];
+    let xDomain = [0, this.maxFrame];
     let yDomain = this.getUnitsName();
     this.xScale = d3.scaleLinear().domain(xDomain).range([0, this.width]);
     this.yScale = d3.scaleBand().padding(0.1).domain(yDomain).rangeRound([0, this.height]);
@@ -84,8 +101,7 @@ export class ChainChartComponent implements OnInit {
   }
 
   updateChart() {
-    // update scales & axis
-    this.xScale.domain([0, this.getMaxFrame()]);
+    this.xScale.domain([0, this.maxFrame]);
     this.yScale.domain(this.getUnitsName());
 
     this.xAxis.transition().call(d3.axisBottom(this.xScale));
@@ -101,8 +117,15 @@ export class ChainChartComponent implements OnInit {
       .attr('class', d => 'bar bar-' + d.type)
       .attr('x', d => this.xScale(d.hit))
       .attr('y', d => this.yScale(d.unitName))
-      .attr('width', d => d.size)
-      .attr('height', d => this.yScale.bandwidth());
+      .attr('width', d => {
+        if (d.type !== 'dotted') {
+          return 930 / this.maxFrame / (d.divided ? 2 : 1)
+        }
+        return 1;
+      })
+      .attr('height', d => {
+        return d.type === 'dotted' ? 160 : this.yScale.bandwidth()
+      });
 
     // add new bars
     update
@@ -111,7 +134,14 @@ export class ChainChartComponent implements OnInit {
       .attr('class', d => 'bar bar-' + d.type)
       .attr('x', d => this.xScale(d.hit))
       .attr('y', d => this.yScale(d.unitName))
-      .attr('width', d => d.size)
-      .attr('height', this.yScale.bandwidth());
+      .attr('width', d => {
+        if (d.type !== 'dotted') {
+          return 930 / this.maxFrame / (d.divided ? 2 : 1)
+        }
+        return 1;
+      })
+      .attr('height', d => {
+        return d.type === 'dotted' ? 160 : this.yScale.bandwidth()
+      });
   }
 }

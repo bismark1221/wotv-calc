@@ -122,16 +122,16 @@ export class ChainService {
   private addHit(unit: number, hit: any, combo: boolean) {
     let unitName = (unit + 1) + '.' + this.chainers[unit].name;
     let frame = hit.frame + (unit === 1 ? this.framesGap : 0);
-    let size = 5;
+    let divided = false;
 
     let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? 'chain' : 'break';
     type = 'unit' + (unit + 1).toString() + '-' + type + (hit.type === 'classic' ? '1' : '2');
 
     for (let i = 1; i <= 2; i++) {
       if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === frame) {
-        this.hits[this.nbHits - i].size = 5;
+        this.hits[this.nbHits - i].divided = true;
         frame += 0.5;
-        size = 3;
+        divided = true;
       }
     }
 
@@ -139,7 +139,7 @@ export class ChainService {
       unitName: unitName,
       hit: frame,
       type: type,
-      size: size
+      divided: divided
     };
     this.calculateTotal(this.chainers[unit], combo);
     this.nbHits++;
