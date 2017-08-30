@@ -169,6 +169,44 @@
   margin-top: 10px;
 }
 
+.legendColor {
+  width: 20px;
+  height: 20px;
+}
+
+.legendClassic1 {
+  background-color: #3868e8;
+}
+
+.legendClassic2 {
+  background-color: #17bd00;
+}
+
+.legendDual1 {
+  background-color: #42c1cc;
+}
+
+.legendDual2 {
+  background-color: #b4c132;
+}
+
+.legendBreak1 {
+  background-color: #ff0600;
+}
+
+.legendBreak2 {
+  background-color: #ff9492;
+}
+
+.legendColorBlock {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.legendColorBlock > div {
+  display: inline-block;
+}
+
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;

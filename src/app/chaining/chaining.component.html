@@ -266,3 +266,21 @@
 </div>
 
 <app-chain-chart *ngIf="chain[0]"></app-chain-chart>
+<div *ngIf="chain[0]">
+  <p>Legend</p>
+  <div class="legendColorBlock">
+    <div class="legendColor legendClassic1"></div>
+    <div class="legendColor legendClassic2"></div>
+    <div>Unit classic hit</div>
+  </div>
+  <div class="legendColorBlock">
+    <div class="legendColor legendDual1"></div>
+    <div class="legendColor legendDual2"></div>
+    <div>Unit hit from dual</div>
+  </div>
+  <div class="legendColorBlock">
+    <div class="legendColor legendBreak1"></div>
+    <div class="legendColor legendBreak2"></div>
+    <div>Unit hit break chain</div>
+  </div>
+</div>

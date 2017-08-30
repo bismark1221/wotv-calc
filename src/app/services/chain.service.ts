@@ -15,7 +15,6 @@ export class ChainService {
   private hits: any[] = [];
   private lastHiter: number;
   private lastElements: string[];
-  private countHits: any[] = [{chain: 0, break: 0}, {chain: 0, break: 0}];
 
   chainers: any[] = [];
   finisher: Unit;
@@ -105,29 +104,33 @@ export class ChainService {
   private sortFramesArray() {
     this.chainers.forEach(unit => {
       unit.frames.sort((a: any, b: any) => {
-        if (a < b) {
+        if (a.frame < b.frame) {
           return -1;
-        } else if (a > b) {
+        } else if (a.frame > b.frame) {
           return 1;
         } else {
-          return 0;
+          if (a.type === 'classic') {
+            return -1;
+          } else {
+            return 1;
+          }
         }
       });
     });
   }
 
-  private addHit(unit: number, frame: number, combo: boolean) {
+  private addHit(unit: number, hit: any, combo: boolean) {
     let unitName = (unit + 1) + '.' + this.chainers[unit].name;
-    frame = frame + (unit === 1 ? this.framesGap : 0);
+    let frame = hit.frame + (unit === 1 ? this.framesGap : 0);
     let size = 5;
+
     let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? 'chain' : 'break';
-    this.countHits[unit][type]++;
-    type = 'unit' + (unit + 1).toString() + '-' + type + (this.countHits[unit][type] % 2 != 0 ? '1' : '2');
+    type = 'unit' + (unit + 1).toString() + '-' + type + (hit.type === 'classic' ? '1' : '2');
 
     if (this.nbHits > 0 && this.hits[this.nbHits - 1].unitName === unitName && this.hits[this.nbHits - 1].hit === frame) {
       this.hits[this.nbHits - 1].size = 5;
       frame += 0.5;
-      size = 2.5;
+      size = 3;
     }
 
     this.hits[this.nbHits] = {
@@ -160,27 +163,27 @@ export class ChainService {
       if (!unit.ability.linearFrames) {
         unit.ability.framesList.split('-').forEach(hit => {
           countFrames += Number(hit);
-          unit.frames.push(countFrames);
+          unit.frames.push({frame: countFrames, type: 'classic'});
         });
 
         if (unit.dual) {
           unit.ability.framesList.split('-').forEach(hit => {
             dualCountFrames += Number(hit);
-            unit.frames.push(dualCountFrames);
+            unit.frames.push({frame: dualCountFrames, type: 'dual'});
           });
         }
       } else {
-        unit.frames.push(countFrames);
+        unit.frames.push({frame: countFrames, type: 'classic'});
         for (let i = 1; i < unit.ability.hits; i++) {
           countFrames += unit.ability.frames;
-          unit.frames.push(countFrames);
+          unit.frames.push({frame: countFrames, type: 'classic'});
         }
 
         if (unit.dual) {
-          unit.frames.push(dualCountFrames);
+          unit.frames.push({frame: dualCountFrames, type: 'dual'});
           for (let i = 1; i < unit.ability.hits; i++) {
             dualCountFrames += unit.ability.frames;
-            unit.frames.push(dualCountFrames);
+            unit.frames.push({frame: dualCountFrames, type: 'dual'});
           }
         }
       }
@@ -215,7 +218,7 @@ export class ChainService {
 
       while (nbCombo1 < hits1 && nbCombo2 < hits2 && hits2 !== 0) {
         if (this.lastHiter == 0) {
-          if (this.chainers[1].frames[nbCombo2] + this.framesGap <= this.chainers[0].frames[nbCombo1]) {
+          if (this.chainers[1].frames[nbCombo2].frame + this.framesGap <= this.chainers[0].frames[nbCombo1].frame) {
             this.addHit(1, this.chainers[1].frames[nbCombo2], true);
             nbCombo2++;
           } else {
@@ -223,7 +226,7 @@ export class ChainService {
             nbCombo1++;
           }
         } else {
-          if (this.chainers[0].frames[nbCombo1] <= this.chainers[1].frames[nbCombo2] + this.framesGap) {
+          if (this.chainers[0].frames[nbCombo1].frame <= this.chainers[1].frames[nbCombo2].frame + this.framesGap) {
             this.addHit(0, this.chainers[0].frames[nbCombo1], true);
             nbCombo1++;
           } else {
@@ -234,7 +237,7 @@ export class ChainService {
       }
 
       for (let i = 0; nbCombo1 < hits1; i++) {
-        if (this.lastHiter == 1 && this.chainers[0].frames[nbCombo1] <= this.chainers[1].frames[nbCombo2 - 1] + this.framesGap) {
+        if (this.lastHiter == 1 && this.chainers[0].frames[nbCombo1].frame <= this.chainers[1].frames[nbCombo2 - 1].frame + this.framesGap) {
           this.addHit(0, this.chainers[0].frames[nbCombo1], true);
         } else {
           this.addHit(0, this.chainers[0].frames[nbCombo1], false);
@@ -243,7 +246,7 @@ export class ChainService {
       }
 
       for (let i = 0; nbCombo2 < hits2; i++) {
-        if (this.lastHiter == 0 && this.chainers[1].frames[nbCombo2] <= this.chainers[0].frames[nbCombo1 - 1] + this.framesGap) {
+        if (this.lastHiter == 0 && this.chainers[1].frames[nbCombo2].frame <= this.chainers[0].frames[nbCombo1 - 1].frame + this.framesGap) {
           this.addHit(1, this.chainers[1].frames[nbCombo2], true);
         } else {
           this.addHit(1, this.chainers[1].frames[nbCombo2], false);
@@ -255,8 +258,6 @@ export class ChainService {
     } else {
       this.hits = [];
     }
-
-    console.log(this.hits)
 
     this.dataSubject.next(this.hits);
   }
