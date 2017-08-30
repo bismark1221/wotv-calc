@@ -125,9 +125,9 @@ export const UNITS: any[] = [
       },
       {
         name: 'Offensive Heal Combo (Math are wrong)',
-        base: 255,
+        base: 510,
         linearFrames: false,
-        framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5',
+        framesList: '0-5-5-5-5-5-5-5',
         castTime: 40,
         offset: 16,
         firstHit: 42,
