@@ -9,4 +9,10 @@
 
 .nav-link {
   display: inline-block;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.nav-link.active {
+  color: rgba(255,255,255,.7) !important;
 }

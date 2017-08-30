@@ -189,6 +189,8 @@ export class ChainService {
           }
         }
       }
+
+      console.log(unit.frames);
     });
 
     this.sortFramesArray();
@@ -216,22 +218,51 @@ export class ChainService {
       let hits1 = this.chainers[0].frames.length;
       let hits2 = this.chainers[1] ? this.chainers[1].frames.length : 0;
 
+      let actualFrame1 = 0;
+      let actualFrame2 = 0;
+      let prevFrame1 = 0;
+      let prevFrame2 = 0;
+
       this.addHit(0, this.chainers[0].frames[0], false);
 
       while (nbCombo1 < hits1 && nbCombo2 < hits2 && hits2 !== 0) {
+        console.log("####### " + nbCombo1 + " vs " + nbCombo2 + " #######")
+
+        actualFrame1 = this.chainers[0].frames[nbCombo1].frame;
+        actualFrame2 = this.chainers[1].frames[nbCombo2].frame;
+        prevFrame1 = this.chainers[0].frames[nbCombo1 - 1].frame;
+        if (nbCombo2 > 0) {
+          prevFrame2 = this.chainers[1].frames[nbCombo2 - 1].frame;
+        } else {
+          prevFrame2 = 0;
+        }
+
+// Add are made by shift (if break add other -- for 21 we check the same)
         if (this.lastHiter == 0) {
-          if (this.chainers[1].frames[nbCombo2].frame + this.framesGap <= this.chainers[0].frames[nbCombo1].frame) {
+          console.log("check unit 2")
+          console.log("actualFrame1 " + actualFrame1)
+          console.log("actualFrame2 " + (actualFrame2 + this.framesGap))
+          console.log("prevFrame1 " + prevFrame1)
+          if (actualFrame2 + this.framesGap <= actualFrame1 && actualFrame2 + this.framesGap - prevFrame1 < 21) {
+            console.log("chain")
             this.addHit(1, this.chainers[1].frames[nbCombo2], true);
             nbCombo2++;
           } else {
+            console.log("break")
             this.addHit(0, this.chainers[0].frames[nbCombo1], false);
             nbCombo1++;
           }
         } else {
-          if (this.chainers[0].frames[nbCombo1].frame <= this.chainers[1].frames[nbCombo2].frame + this.framesGap) {
+          console.log("check unit 1")
+          console.log("actualFrame1 " + actualFrame1)
+          console.log("actualFrame2 " + (actualFrame2 + this.framesGap))
+          console.log("prevFrame2 " + prevFrame1)
+          if (actualFrame1 <= actualFrame2 + this.framesGap && actualFrame1 - prevFrame2 + this.framesGap < 21) {
+            console.log("chain")
             this.addHit(0, this.chainers[0].frames[nbCombo1], true);
             nbCombo1++;
           } else {
+            console.log("break")
             this.addHit(1, this.chainers[1].frames[nbCombo2], false);
             nbCombo2++;
           }
@@ -239,6 +270,7 @@ export class ChainService {
       }
 
       for (let i = 0; nbCombo1 < hits1; i++) {
+        console.log("####### cb1 : " + nbCombo1 + " #######")
         if (this.lastHiter == 1 && this.chainers[0].frames[nbCombo1].frame <= this.chainers[1].frames[nbCombo2 - 1].frame + this.framesGap) {
           this.addHit(0, this.chainers[0].frames[nbCombo1], true);
         } else {
@@ -248,6 +280,7 @@ export class ChainService {
       }
 
       for (let i = 0; nbCombo2 < hits2; i++) {
+        console.log("####### cb2 : " + nbCombo2 + " #######")
         if (this.lastHiter == 0 && this.chainers[1].frames[nbCombo2].frame <= this.chainers[0].frames[nbCombo1 - 1].frame + this.framesGap) {
           this.addHit(1, this.chainers[1].frames[nbCombo2], true);
         } else {
