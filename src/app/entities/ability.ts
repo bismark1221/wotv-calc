@@ -23,9 +23,9 @@ export class Ability {
     this.frames = ability.frames ? ability.frames : this.frames;
     this.framesList = ability.framesList ? ability.framesList : this.framesList;
     this.hits = ability.hits ? ability.hits : this.hits;
-    this.firstHit = ability.firstHit ? ability.firstHit : this.firstHit;
-    this.castTime = ability.castTime ? ability.castTime : this.castTime;
-    this.offset = ability.offset ? ability.offset : this.offset;
+    this.firstHit = ability.firstHit || ability.firstHit === 0 ? ability.firstHit : this.firstHit;
+    this.castTime = ability.castTime || ability.castTime === 0 ? ability.castTime : this.castTime;
+    this.offset = ability.offset || ability.offset === 0 ? ability.offset : this.offset;
 
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
     this.dualable = ability.dualable ? ability.dualable : this.dualable;

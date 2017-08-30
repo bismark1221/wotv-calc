@@ -11,7 +11,7 @@ import { ChainService } from '../../services/chain.service';
 
 export class ChainChartComponent implements OnInit {
   @ViewChild('chart') private chartContainer: ElementRef;
-  private data: Array<any>;
+  data: Array<any>;
 
   private chart: any;
   private width: number;
