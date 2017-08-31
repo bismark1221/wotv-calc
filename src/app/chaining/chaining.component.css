@@ -16,13 +16,17 @@
 
 .selectChainZone {
   margin: 0 auto;
-  min-width: 250px;
+  min-width: 540px;
+}
+
+.selectSlider {
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   padding: 10px;
   position: relative;
+  margin-left: 20px;
 }
 
 .firstSelectLevel {
@@ -281,4 +285,8 @@
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
   border: 1px dotted blue;
+}
+
+nouislider {
+  margin-bottom: 2rem;
 }

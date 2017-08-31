@@ -237,11 +237,10 @@
 
 <div class="row" *ngIf="chain[1]">
   <div class="selectChainZone">
-    <label for="framesGap">Spark ?</label>
-    <select class="form-control" id="framesGap" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()">
-      <option value="0">Oui</option>
-      <option value="1">Non</option>
-    </select>
+    <div class="selectSlider">
+      <label>Difference in first hit frame</label>
+      <nouislider [config]="sliderConfig" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()"></nouislider>
+    </div>
   </div>
 </div>
 

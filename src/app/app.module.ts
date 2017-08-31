@@ -11,6 +11,7 @@ import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
+import { SliderModule } from './slider/slider.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -63,7 +64,8 @@ import { LegalComponent } from './legal/legal.component';
     }),
     MarkdownModule.forRoot(),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
-    TooltipModule
+    TooltipModule,
+    SliderModule
   ],
   providers: [
     UnitService,

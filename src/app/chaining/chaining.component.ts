@@ -41,6 +41,19 @@ export class ChainingComponent implements OnInit {
     dynamicTitleMaxItems: 8
   };
 
+  sliderConfig: any = {
+    start: 1,
+    step: 1,
+    range: {
+      min: 0,
+      max: 10
+    },
+    pips: {
+      mode: 'steps',
+      density: 10
+    }
+};
+
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
