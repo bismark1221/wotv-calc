@@ -1,42 +1,6 @@
 export const UNITS: any[] = [
 // Chain
   {
-    id: 3,
-    name: 'Orlandeau',
-    type: 'chain',
-    abilities: [
-      {
-        name: 'Holy Explosion',
-        base: 200,
-        linearFrames: false,
-        castTime: 40,
-        offset: 16,
-        firstHit: 70,
-        framesList: '0-7-5-7-7-7-7',
-        ignore: 50,
-        debuff: {
-          light: 50
-        }
-      },
-      {
-        name: 'Holy Explosion + 2 (JP Only)',
-        base: 260,
-        linearFrames: false,
-        castTime: 40,
-        offset: 16,
-        firstHit: 70,
-        framesList: '0-7-5-7-7-7-7',
-        ignore: 50,
-        debuff: {
-          light: 50
-        }
-      }
-    ],
-    weapons : [
-      'light'
-    ]
-  },
-  {
     id: 7,
     name: '2B',
     type: 'chain',
@@ -480,6 +444,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 42,
+        type: 'hybrid',
         elements: [
           'light'
         ],
@@ -539,6 +504,42 @@ export const UNITS: any[] = [
         firstHit: 42,
         ignore: 25,
       }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Orlandeau',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Holy Explosion',
+        base: 200,
+        linearFrames: false,
+        castTime: 40,
+        offset: 16,
+        firstHit: 70,
+        framesList: '0-7-5-7-7-7-7',
+        ignore: 50,
+        debuff: {
+          light: 50
+        }
+      },
+      {
+        name: 'Holy Explosion + 2 (JP Only)',
+        base: 260,
+        linearFrames: false,
+        castTime: 40,
+        offset: 16,
+        firstHit: 70,
+        framesList: '0-7-5-7-7-7-7',
+        ignore: 50,
+        debuff: {
+          light: 50
+        }
+      }
+    ],
+    weapons : [
+      'light'
     ]
   },
   {

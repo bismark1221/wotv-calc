@@ -169,7 +169,7 @@ export class ChainingComponent implements OnInit {
 
   createNewUnit(position: number) {
     this.selectedUnits[position] = new Unit();
-    this.selectedUnits[position] = 'Unit ' + (this.createdUnits.length + 1);
+    this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
     this.selectedUnits[position].activeRename = true;
     this.viewOptions[position] = true;
     this.onChangeUnit(position);
@@ -179,7 +179,7 @@ export class ChainingComponent implements OnInit {
   createNewUnitFromPredefined(position: number) {
     let unit =
     this.selectedUnits[position] = new Unit();
-    this.selectedUnits[position] = 'Unit ' + (this.createdUnits.length + 1);
+    this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
     this.selectedUnits[position].activeRename = true;
     this.viewOptions[position] = true;
     this.onChangeUnit(position);

@@ -247,7 +247,7 @@
 <div class="row littleMarginTop" *ngIf="chain[0]">
   <div class="selectDetailZone">
     <h2>Result</h2>
-    <p>
+    <p *ngIf="chain[0].ability.type !== 'hybrid' && (!chain[1] || chain[1].ability.type !== 'hybrid')">
       Total modifier : {{chainService.getResult()}}%
     </p>
     <p *ngIf="chain[1]">
