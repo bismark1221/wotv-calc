@@ -70,25 +70,8 @@ export class ChainingComponent implements OnInit {
   }
 
   private sortUnits() {
-    this.units.sort((a: any, b: any) => {
-      if (a.name.toLowerCase() < b.name.toLowerCase()) {
-        return -1;
-      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-
-    this.createdUnits.sort((a: any, b: any) => {
-      if (a.name.toLowerCase() < b.name.toLowerCase()) {
-        return -1;
-      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
+    this.unitService.sort(this.units);
+    this.unitService.sort(this.createdUnits);
 
     let position = 0;
     this.createdUnits.forEach(unit => {
