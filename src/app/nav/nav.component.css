@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.navbar-nav {
+  text-align: center;
+}
+
 .nav-link {
   display: inline-block;
   padding-right: .5rem;
@@ -15,4 +19,47 @@
 
 .nav-link.active {
   color: rgba(255,255,255,.7) !important;
+}
+
+.btnMenu {
+  color: #464a4c;
+  height: 35px;
+  cursor: pointer;
+}
+
+.navButton {
+  display: none;
+}
+
+.navLinkMobile {
+  display: list-item !important;
+}
+
+.fixed-top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1100;
+}
+
+@media (max-width: 339px) {
+  .centerNav {
+    display: block;
+  }
+
+  .navButton {
+    display: block;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .nav-link {
+    display: block;
+  }
 }

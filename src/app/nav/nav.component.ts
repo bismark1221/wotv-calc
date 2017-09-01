@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  displayLink: boolean = false;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  menu(forceClose: boolean = false) {
+    this.displayLink = forceClose ? false : !this.displayLink;
   }
 
 }
