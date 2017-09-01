@@ -47,8 +47,8 @@
 }
 
 .unit {
-  min-width: 1030px;
   max-width: 1030px;
+  margin: auto;
 }
 
 .unitImg {
@@ -85,6 +85,7 @@
 
 .btnSwitch {
   margin: auto 0 auto 15px;
+  color: #464a4c;
 }
 
 .selectDetailZone {
@@ -94,7 +95,7 @@
 
 .selectRightZone {
   padding-left: 20px;
-  width: 750px;
+  max-width: 750px;
   text-align: left;
 }
 
@@ -103,7 +104,7 @@
 }
 
 .selectRightZoneBox {
-  width: 730px;
+  max-width: 730px;
 }
 
 .selectRightZoneDividedTwo {
@@ -160,7 +161,7 @@
 }
 
 .btnAddDebuff {
-  width: 710px;
+  /*width: 710px;*/
 }
 
 .verticalTop {
@@ -308,4 +309,23 @@ nouislider {
 .zoneSwitchWithFullOptions {
   margin-top: 10px;
   margin-left: 490px;
+}
+
+.topBlock {
+  display: inline-block;
+}
+
+@media (max-width: 738px) {
+  .topBlock {
+    display: block;
+  }
+
+  .zoneSwitchWithoutOptions {
+    margin: 10px auto;
+    width: 50px;
+  }
+
+  .zoneSwitchWithoutOptions > button > .fa-exchange {
+    transform: rotate(90deg);
+  }
 }

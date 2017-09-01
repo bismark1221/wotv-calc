@@ -1,14 +1,31 @@
-.chain-chart {
+.scrollChart {
   width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scrollChart::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 5px;
+}
+
+.scrollChart::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.chainChart {
+  min-width: 1040px;
   height: 200px;
 }
 
-.chain-chart .axis path,
-.chain-chart .axis line {
+.chainChart .axis path,
+.chainChart .axis line {
   stroke: #999;
 }
 
-.chain-chart .axis text {
+.chainChart .axis text {
   fill: #999;
 }
 

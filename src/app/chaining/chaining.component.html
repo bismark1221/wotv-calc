@@ -1,6 +1,6 @@
 <div class="row unit form-group" >
   <div class="chainParameters">
-    <div class="inlineBlock verticalTop littleMarginBottom" *ngFor="let i of [0,1]">
+    <div class="topBlock verticalTop littleMarginBottom" *ngFor="let i of [0,1]">
       <div class="inlineBlock verticalTop">
 
         <div class="selectUnitZone">
@@ -239,7 +239,7 @@
         </div>
       </div>
 
-      <div *ngIf="i === 0 && chain[1]" class="inlineBlock" [ngClass]="
+      <div *ngIf="i === 0 && chain[1]" class="topBlock" [ngClass]="
         {'zoneSwitchWithoutOptions': !viewOptions[0] && !viewOptions[1],
          'zoneSwitchWithOneOptions': viewOptions[0] || viewOptions[1],
          'zoneSwitchWithFullOptions': viewOptions[0] && viewOptions[1]
