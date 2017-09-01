@@ -177,18 +177,19 @@ export class ChainingComponent implements OnInit {
   }
 
   createNewUnitFromPredefined(position: number) {
-    let unit =
-    this.selectedUnits[position] = new Unit();
-    this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
+    let unit = JSON.parse(JSON.stringify(this.chain[position]));
+    unit.name = 'Unit ' + (this.createdUnits.length + 1);
+    unit.id = undefined;
+
+    this.chain[position] = unit;
+    this.saveUnit(position);
     this.selectedUnits[position].activeRename = true;
     this.viewOptions[position] = true;
     this.onChangeUnit(position);
-    this.saveUnit(position);
   }
 
   saveUnit(position: number) {
     if (!this.chain[position].id || this.chain[position].id > 10000) {
-
       let positionCreated = this.positionIds[this.chain[position].id];
       if (positionCreated >= 0) {
         this.createdUnits[positionCreated] = this.chain[position];

@@ -235,7 +235,7 @@ export class ChainService {
 
         if (this.lastHiter == 0) {
           if (actualFrame2 + this.framesGap <= actualFrame1) {
-            this.addHit(1, this.chainers[1].frames[nbCombo2], actualFrame2 + this.framesGap - prevFrame1 <= 21);
+            this.addHit(1, this.chainers[1].frames[nbCombo2], (actualFrame2 + this.framesGap) - prevFrame1 <= 21);
             nbCombo2++;
           } else {
             this.addHit(0, this.chainers[0].frames[nbCombo1], false);
@@ -243,7 +243,7 @@ export class ChainService {
           }
         } else {
           if (actualFrame1 <= actualFrame2 + this.framesGap) {
-            this.addHit(0, this.chainers[0].frames[nbCombo1], actualFrame1 - prevFrame2 + this.framesGap <= 21);
+            this.addHit(0, this.chainers[0].frames[nbCombo1], actualFrame1 - (prevFrame2 + this.framesGap) <= 21);
             nbCombo1++;
           } else {
             this.addHit(1, this.chainers[1].frames[nbCombo2], false);

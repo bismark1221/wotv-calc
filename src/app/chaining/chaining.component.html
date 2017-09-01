@@ -47,6 +47,11 @@
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">Create New Unit</button>
           </div>
 
+          <div *ngIf="chain[i] && viewOptions[i]">
+            <hr class="selectHr"/>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnitFromPredefined(i)">Clone To My Unit</button>
+          </div>
+
           <div *ngIf="chain[i - 1] && !chain[i]">
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="duplicateUnit()">Duplicate Unit 1</button>
           </div>
