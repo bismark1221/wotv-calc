@@ -16,7 +16,7 @@
 
 .selectChainZone {
   margin: 0 auto;
-  min-width: 540px;
+  min-width: 610px;
 }
 
 .selectSlider {
@@ -43,7 +43,7 @@
 
 .chainParameters {
   margin-top: 20px;
-  margin: auto
+  margin: auto;
 }
 
 .unit {
@@ -81,6 +81,10 @@
   padding: 7px;
   padding-bottom: 5px;
   line-height: 1;
+}
+
+.btnSwitch {
+  margin: auto 0 auto 15px;
 }
 
 .selectDetailZone {
@@ -289,4 +293,19 @@
 
 nouislider {
   margin-bottom: 2rem;
+}
+
+.zoneSwitchWithoutOptions {
+  margin-top: 43px;
+}
+
+.zoneSwitchWithOneOptions {
+  margin-top: 10px;
+  margin-left: 100px;
+  display: block;
+}
+
+.zoneSwitchWithFullOptions {
+  margin-top: 10px;
+  margin-left: 490px;
 }

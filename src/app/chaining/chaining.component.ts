@@ -233,7 +233,7 @@ export class ChainingComponent implements OnInit {
     this.onChangeChain();
   }
 
-  onChangeUnit(position: number) {
+  onChangeUnit(position: number, ability: number = 0) {
     if (this.selectedUnits[position] === '') {
       if (position === 0 && this.chain[position + 1]) {
         this.selectedUnits[position] = this.selectedUnits[position + 1];
@@ -252,8 +252,8 @@ export class ChainingComponent implements OnInit {
     if (this.selectedUnits[position] !== '') {
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
       this.chainService.chainers[position] = this.chain[position];
-      this.selectedAbilities[position] = 0;
-      this.chain[position].ability = this.chain[position].abilities[0];
+      this.selectedAbilities[position] = ability;
+      this.chain[position].ability = this.chain[position].abilities[ability];
       this.updateLocalDebuffs(position);
       this.chain[position].activeRename = false;
       this.chain[position].ability.activeRename = false;
@@ -295,5 +295,16 @@ export class ChainingComponent implements OnInit {
 
   showOptions(position: number) {
     this.viewOptions[position] = !this.viewOptions[position];
+  }
+
+  switchUnits() {
+    let unit1 = this.selectedUnits[0];
+    let ability1 = this.selectedAbilities[0];
+
+    this.selectedUnits[0] = this.selectedUnits[1];
+    this.selectedUnits[1] = unit1;
+
+    this.onChangeUnit(0, this.selectedAbilities[1]);
+    this.onChangeUnit(1, ability1);
   }
 }
