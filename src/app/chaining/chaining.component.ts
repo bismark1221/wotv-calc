@@ -257,6 +257,7 @@ export class ChainingComponent implements OnInit {
   onChangeChain(): void {
     this.chainService.framesGap = this.framesGap;
     this.chainService.calculateChain();
+    this.changeMultiSelectDropdown();
   }
 
   addAbility(position: number) {
