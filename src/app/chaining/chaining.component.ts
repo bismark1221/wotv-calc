@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
@@ -15,6 +15,7 @@ import { ChainService } from '../services/chain.service';
   styleUrls: ['./chaining.component.css']
 })
 export class ChainingComponent implements OnInit {
+  @ViewChild('chainDiv') private chainDiv: ElementRef;
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
 
@@ -29,7 +30,7 @@ export class ChainingComponent implements OnInit {
   multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic', 'hybrid'];
 
-  framesGap: string = "1";
+  framesGap: number = 1;
   viewOptions: boolean[] = [false, false];
 
   multiElementsTexts: IMultiSelectTexts = {
@@ -115,6 +116,14 @@ export class ChainingComponent implements OnInit {
       let actualDebuff = this.chain[position].ability.debuff[debuff.type] ? this.chain[position].ability.debuff[debuff.type] : 1;
       this.chain[position].ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
     });
+  }
+
+  private changeMultiSelectDropdown() {
+    if (this.chainDiv.nativeElement.clientWidth === 250) {
+      this.multiElementsSettings.dynamicTitleMaxItems = 3;
+    } else {
+      this.multiElementsSettings.dynamicTitleMaxItems = 8;
+    }
   }
 
   ngOnInit(): void {
@@ -246,8 +255,9 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeChain(): void {
-    this.chainService.framesGap = parseInt(this.framesGap);
+    this.chainService.framesGap = this.framesGap;
     this.chainService.calculateChain();
+    this.changeMultiSelectDropdown();
   }
 
   addAbility(position: number) {
@@ -278,6 +288,7 @@ export class ChainingComponent implements OnInit {
 
   showOptions(position: number) {
     this.viewOptions[position] = !this.viewOptions[position];
+    this.changeMultiSelectDropdown();
   }
 
   switchUnits() {
@@ -289,5 +300,20 @@ export class ChainingComponent implements OnInit {
 
     this.onChangeUnit(0, this.selectedAbilities[1]);
     this.onChangeUnit(1, ability1);
+  }
+
+  updateFramesGap(minusPlus: boolean) {
+    minusPlus ? this.framesGap++ : this.framesGap--;
+    this.checkFramesGap();
+  }
+
+  checkFramesGap() {
+    if (this.framesGap <= 0) {
+      this.framesGap = 0;
+    } else if (this.framesGap >= 10) {
+      this.framesGap = 10;
+    }
+
+    this.onChangeChain();
   }
 }

@@ -48,11 +48,17 @@ button, input, optgroup, select, textarea {
   border-top-color: #848b8e !important;
 }
 
-.tooltip-ability-type {
-  left: 600px !important;
-  top: 160px !important;
-}
-
 .noUi-value-sub {
   font-size: 15px;
+}
+
+@media (max-width: 738px) {
+  .dropdown-inline {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
@@ -14,6 +14,7 @@ import { ElementsService } from '../services/elements.service';
   styleUrls: ['./my-units.component.css']
 })
 export class MyUnitsComponent implements OnInit {
+  @ViewChild('myUnitsDiv') private myUnitsDiv: ElementRef;
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
 
@@ -106,9 +107,21 @@ export class MyUnitsComponent implements OnInit {
     });
   }
 
+  private changeMultiSelectDropdown() {
+    if (this.myUnitsDiv.nativeElement.clientWidth === 250) {
+      this.multiElementsSettings.dynamicTitleMaxItems = 3;
+    } else {
+      this.multiElementsSettings.dynamicTitleMaxItems = 8;
+    }
+  }
+
   ngOnInit() {
     this.getUnits();
     this.getElements();
+  }
+
+  ngAfterViewInit() {
+    this.changeMultiSelectDropdown();
   }
 
   addDebuff() {
@@ -160,6 +173,7 @@ export class MyUnitsComponent implements OnInit {
     this.localSaveUnits();
     this.activeRenameAbility = false;
     this.activeRenameUnit = false;
+    this.changeMultiSelectDropdown();
   }
 
   removeUnit() {

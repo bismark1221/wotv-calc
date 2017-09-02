@@ -1,6 +1,6 @@
 <div class="row unit form-group" >
-  <div class="chainParameters">
-    <div class="inlineBlock verticalTop littleMarginBottom">
+  <div class="chainParameters" #myUnitsDiv>
+    <div class="topBlock verticalTop littleMarginBottom">
 
       <div class="selectUnitZone">
         <div class="inlineBlock firstSelectLevel">
@@ -15,11 +15,11 @@
 
           <div *ngIf="activeRenameUnit">
             <label for="unit_name">Unit name</label>
-            <input class="form-control" type="text" id="unit_name" [(ngModel)]="selectedUnit.name">
+            <input class="form-control" type="text" id="unit_name" [(ngModel)]="selectedUnit.name" (keyup.enter)="saveUnit()">
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit()">Save</button>
           </div>
 
-          <div class="selectRightZoneOneThird" *ngIf="selectedUnit">
+          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft" *ngIf="selectedUnit">
             <hr class="selectHr"/>
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit()">Remove Unit</button>
           </div>
@@ -31,6 +31,7 @@
         </div>
 
         <div class="selectRightZone inlineBlock verticalTop" *ngIf="selectedUnit">
+          <hr class="mobileSeparatorSelectRightZone"/>
           <div class="selectRightZoneBox">
             <div class="selectRightZoneOneThird">
               <label for="unit_dual">Dualcast/Dualwield</label>
@@ -47,7 +48,7 @@
               </select>
             </div>
 
-            <div class="selectRightZoneOneThird" *ngIf="selectedUnit.dual">
+            <div class="selectRightZoneOneThird tabletMarginTop" *ngIf="selectedUnit.dual">
               <label for="unit_weapon2">Element weapon 2</label>
               <select class="form-control" id="unit_weapon2" [(ngModel)]="selectedUnit.weapons[1]" (ngModelChange)="saveUnit()">
                 <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
@@ -58,37 +59,39 @@
           <hr />
 
           <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneOneThird" *ngIf="!activeRenameAbility">
+            <div class="selectRightZoneOneThird selectAbility" *ngIf="!activeRenameAbility">
               <label for="unit_ability">Ability</label>
               <select class="form-control" id="unit_ability" [(ngModel)]="selectedAbility" (ngModelChange)="onChangeSkill()">
                 <option *ngFor="let ability of selectedUnit.abilities; let j = index" [ngValue]="j">{{ ability.name | capitalize }}</option>
               </select>
             </div>
 
-            <div class="selectRightZoneOneThird" *ngIf="activeRenameAbility">
-              <label for="unit_ability">Ability name</label>
-              <input class="form-control" type="text" id="unit_ability" [(ngModel)]="selectedUnit.ability.name">
-            </div>
+            <diV class="buttonsAbility">
+              <div class="selectRightZoneOneThird selectAbility" *ngIf="activeRenameAbility">
+                <label for="unit_ability">Ability name</label>
+                <input class="form-control" type="text" id="unit_ability" [(ngModel)]="selectedUnit.ability.name" (keyup.enter)="saveUnit()">
+              </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!activeRenameAbility">
-              <label>&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility()">Rename ability</button>
-            </div>
+              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!activeRenameAbility">
+                <label class="emptyLabel">&nbsp;</label>
+                <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility()">Rename ability</button>
+              </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="activeRenameAbility">
-              <label>&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit()">Save ability</button>
-            </div>
+              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="activeRenameAbility">
+                <label class="emptyLabel">&nbsp;</label>
+                <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit()">Save ability</button>
+              </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird">
-              <label>&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility()">Add ability</button>
-            </div>
+              <div class="selectRightZoneTwoThirdDividedInThird">
+                <label class="emptyLabel">&nbsp;</label>
+                <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility()">Add ability</button>
+              </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="selectedUnit.abilities.length > 1">
-              <label>&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility()">Delete ability</button>
-            </div>
+              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="selectedUnit.abilities.length > 1">
+                <label class="emptyLabel">&nbsp;</label>
+                <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility()">Delete ability</button>
+              </div>
+            </diV>
           </div>
 
           <div class="selectRightZoneBox littleMarginTop">
@@ -113,7 +116,7 @@
               </div>
             </div>
 
-            <div class="selectRightZoneOneThird">
+            <div class="selectRightZoneOneThird tabletMarginTop">
               <span id="tooltip_type"></span>
               <label for="unit_type" id="label_type"
                 tooltip="physic if weapon element is applied to the ability"
@@ -128,7 +131,7 @@
           </div>
 
           <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneMediumBox verticalTop text-center">
+            <div class="selectRightZoneMediumBox verticalTop blockLinearFrames tabletMarginLeft">
               <label for="unit_frames">Linear Frames</label>
               <div>
                 <input type="checkbox" id="unit_linearFrames" [(ngModel)]="selectedUnit.ability.linearFrames" (ngModelChange)="saveUnit()">
@@ -151,7 +154,7 @@
               <input class="form-control" type="text" id="unit_framesList" [(ngModel)]="selectedUnit.ability.framesList" (ngModelChange)="saveUnit()">
             </div>
 
-            <div class="selectRightZoneLittleBox">
+            <div class="selectRightZoneLittleBox tabletMarginTop tabletMarginLeft">
               <label for="unit_firstHit">First Hit</label>
               <input class="form-control" type="number" id="unit_firstHit" min="0" [(ngModel)]="selectedUnit.ability.firstHit" (ngModelChange)="saveUnit()">
             </div>
@@ -167,7 +170,7 @@
             </div>
           </div>
 
-          <div class="selectRightZoneBox littleMarginTop" *ngIf="multiElements.length > 0">
+          <div class="selectRightZoneBox littleMarginTop multiSelectDropdown tabletMarginLeft" *ngIf="multiElements.length > 0">
             <ss-multiselect-dropdown
               [options]="multiElements"
               [settings]="multiElementsSettings"
@@ -177,9 +180,11 @@
             </ss-multiselect-dropdown>
           </div>
 
-          <div class="selectRightZoneBox littleMarginTop">
+          <div class="selectRightZoneBox littleMarginTop tabletMarginLeft">
+            <hr class="mobileSeparatorSelectDebuff"/>
             <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff()">Add debuff</button>
             <div *ngFor="let debuff of selectedUnit.debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+              <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
               <div class="selectRightZoneTwoDividedThree">
                 <label for="unit{{i}}_debuff{{j}}_type">Element {{j + 1}}</label>
                 <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="selectedUnit.debuffs[j].type" (ngModelChange)="onChangeDebuff(j)">
