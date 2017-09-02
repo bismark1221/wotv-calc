@@ -16,10 +16,10 @@
 
 .selectChainZone {
   margin: 0 auto;
-  min-width: 610px;
 }
 
 .selectSlider {
+  width: 590px;
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
@@ -315,6 +315,20 @@ nouislider {
   display: inline-block;
 }
 
+.selectFramesGap {
+  display: none;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  position: relative;
+}
+
+.inputFramesGap {
+  text-align: center;
+}
+
 @media (max-width: 738px) {
   .topBlock {
     display: block;
@@ -327,5 +341,18 @@ nouislider {
 
   .zoneSwitchWithoutOptions > button > .fa-exchange {
     transform: rotate(90deg);
+  }
+
+  .selectFramesGap {
+    display: block;
+    width: 250px;
+  }
+
+  .selectSlider {
+    display: none;
+  }
+
+  .selectUnitZone {
+    margin: 0;
   }
 }

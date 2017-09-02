@@ -29,7 +29,7 @@ export class ChainingComponent implements OnInit {
   multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic', 'hybrid'];
 
-  framesGap: string = "1";
+  framesGap: number = 1;
   viewOptions: boolean[] = [false, false];
 
   multiElementsTexts: IMultiSelectTexts = {
@@ -246,7 +246,7 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeChain(): void {
-    this.chainService.framesGap = parseInt(this.framesGap);
+    this.chainService.framesGap = this.framesGap;
     this.chainService.calculateChain();
   }
 
@@ -289,5 +289,24 @@ export class ChainingComponent implements OnInit {
 
     this.onChangeUnit(0, this.selectedAbilities[1]);
     this.onChangeUnit(1, ability1);
+  }
+
+  updateFramesGap(minusPlus: boolean) {
+    minusPlus ? this.framesGap++ : this.framesGap--;
+    this.checkFramesGap();
+  }
+
+  checkFramesGap() {
+    console.log(this.framesGap)
+    if (this.framesGap <= 0) {
+      console.log("minus")
+      this.framesGap = 0;
+    } else if (this.framesGap >= 10) {
+      console.log("plus")
+      this.framesGap = 10;
+    }
+    console.log(this.framesGap)
+
+    this.onChangeChain();
   }
 }

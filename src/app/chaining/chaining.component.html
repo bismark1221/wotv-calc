@@ -258,6 +258,22 @@
       <label>Difference in first hit frame</label>
       <nouislider [config]="sliderConfig" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()"></nouislider>
     </div>
+    <div class="selectFramesGap">
+      <label>Difference in first hit frame</label>
+      <div class="input-group">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(false)">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </span>
+        <input class="form-control inputFramesGap" type="number" id="chain_framesGap" [(ngModel)]="framesGap" (ngModelChange)="checkFramesGap()">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(true)">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 
