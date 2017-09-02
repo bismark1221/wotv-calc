@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
@@ -15,6 +15,7 @@ import { ChainService } from '../services/chain.service';
   styleUrls: ['./chaining.component.css']
 })
 export class ChainingComponent implements OnInit {
+  @ViewChild('chainDiv') private chainDiv: ElementRef;
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
 
@@ -115,6 +116,14 @@ export class ChainingComponent implements OnInit {
       let actualDebuff = this.chain[position].ability.debuff[debuff.type] ? this.chain[position].ability.debuff[debuff.type] : 1;
       this.chain[position].ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
     });
+  }
+
+  private changeMultiSelectDropdown() {
+    if (this.chainDiv.nativeElement.clientWidth === 250) {
+      this.multiElementsSettings.dynamicTitleMaxItems = 3;
+    } else {
+      this.multiElementsSettings.dynamicTitleMaxItems = 8;
+    }
   }
 
   ngOnInit(): void {
@@ -278,6 +287,7 @@ export class ChainingComponent implements OnInit {
 
   showOptions(position: number) {
     this.viewOptions[position] = !this.viewOptions[position];
+    this.changeMultiSelectDropdown();
   }
 
   switchUnits() {
@@ -297,15 +307,11 @@ export class ChainingComponent implements OnInit {
   }
 
   checkFramesGap() {
-    console.log(this.framesGap)
     if (this.framesGap <= 0) {
-      console.log("minus")
       this.framesGap = 0;
     } else if (this.framesGap >= 10) {
-      console.log("plus")
       this.framesGap = 10;
     }
-    console.log(this.framesGap)
 
     this.onChangeChain();
   }

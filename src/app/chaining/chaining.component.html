@@ -1,5 +1,5 @@
-<div class="row unit form-group" >
-  <div class="chainParameters">
+<div class="row unit form-group">
+  <div class="chainParameters" #chainDiv>
     <div class="topBlock verticalTop littleMarginBottom" *ngFor="let i of [0,1]">
       <div class="inlineBlock verticalTop">
 
@@ -31,11 +31,11 @@
               <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
             </div>
 
-            <div class="selectRightZoneOneThird" *ngIf="chain[i] && chain[i].id > 10000">
+            <div class="selectRightZoneOneThird mobileNoMarginTop" *ngIf="chain[i] && chain[i].id > 10000">
               <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">Remove Unit</button>
             </div>
 
-            <div class="selectRightZoneOneThird" *ngIf="chain[i] && !viewOptions[i]">
+            <div class="selectRightZoneOneThird buttonsUnit mobileNoMarginTop" *ngIf="chain[i] && !viewOptions[i]">
               <hr class="selectHrWithBottomMargin"/>
               <label for="chainer{{i}}_ability">Ability</label>
               <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
@@ -71,6 +71,7 @@
           </div>
 
           <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i] && viewOptions[i]">
+            <hr class="mobileSeparatorSelectRightZone"/>
             <div class="selectRightZoneBox">
               <div class="selectRightZoneOneThird">
                 <label for="chainer{{i}}_dual">Dualcast/Dualwield</label>
@@ -87,7 +88,7 @@
                 </select>
               </div>
 
-              <div class="selectRightZoneOneThird" *ngIf="chain[i].dual">
+              <div class="selectRightZoneOneThird tabletMarginTop" *ngIf="chain[i].dual">
                 <label for="chainer{{i}}_weapon2">Element weapon 2</label>
                 <select class="form-control" id="chainer{{i}}_weapon2" [(ngModel)]="chain[i].weapons[1]" (ngModelChange)="saveUnit(i)">
                   <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
@@ -98,37 +99,39 @@
             <hr />
 
             <div class="selectRightZoneBox littleMarginTop">
-              <div class="selectRightZoneOneThird">
+              <div class="selectRightZoneOneThird selectAbility" *ngIf="!chain[i].ability.activeRename">
                 <label for="chainer{{i}}_ability">Ability</label>
                 <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
                   <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
                 </select>
               </div>
 
-              <div class="selectRightZoneOneThird" *ngIf="chain[i].ability.activeRename">
+              <div class="selectRightZoneOneThird selectAbility" *ngIf="chain[i].ability.activeRename">
                 <label for="unit_ability">Ability name</label>
                 <input class="form-control" type="text" id="unit_ability" [(ngModel)]="chain[i].ability.name" (keyup.enter)="saveUnit(i)">
               </div>
 
-              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="!chain[i].ability.activeRename">
-                <label>&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(i)">Rename ability</button>
-              </div>
+              <diV class="buttonsAbility">
+                <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].id > 10000 && !chain[i].ability.activeRename">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(i)">Rename ability</button>
+                </div>
 
-              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].ability.activeRename">
-                <label>&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit(i)">Save ability</button>
-              </div>
+                <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].id > 10000 && chain[i].ability.activeRename">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit(i)">Save ability</button>
+                </div>
 
-              <div class="selectRightZoneTwoThirdDividedInThird">
-                <label>&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility(i)">Add ability</button>
-              </div>
+                <div class="selectRightZoneTwoThirdDividedInThird">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility(i)">Add ability</button>
+                </div>
 
-              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].abilities.length > 1">
-                <label>&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility(i)">Delete ability</button>
-              </div>
+                <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].abilities.length > 1">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility(i)">Delete ability</button>
+                </div>
+              </diV>
             </div>
 
             <div class="selectRightZoneBox littleMarginTop">
@@ -153,7 +156,7 @@
                 </div>
               </div>
 
-              <div class="selectRightZoneOneThird">
+              <div class="selectRightZoneOneThird tabletMarginTop">
                 <span id="tooltip_type_{{i}}"></span>
                 <label for="chainer{{i}}_type"
                   tooltip="physic if weapon element is applied to the ability"
@@ -168,7 +171,7 @@
             </div>
 
             <div class="selectRightZoneBox littleMarginTop">
-              <div class="selectRightZoneMediumBox verticalTop text-center">
+              <div class="selectRightZoneMediumBox verticalTop blockLinearFrames tabletMarginLeft">
                 <label for="chainer{{i}}_frames">Linear Frames</label>
                 <div>
                   <input type="checkbox" id="chainer{{i}}_linearFrames" [(ngModel)]="chain[i].ability.linearFrames" (ngModelChange)="saveUnit(i)">
@@ -191,7 +194,7 @@
                 <input class="form-control" type="text" id="chainer{{i}}_framesList" [(ngModel)]="chain[i].ability.framesList" (ngModelChange)="saveUnit(i)">
               </div>
 
-              <div class="selectRightZoneLittleBox">
+              <div class="selectRightZoneLittleBox tabletMarginTop tabletMarginLeft">
                 <label for="chainer{{i}}_firstHit">First Hit</label>
                 <input class="form-control" type="number" id="chainer{{i}}_firstHit" [(ngModel)]="chain[i].ability.firstHit" (ngModelChange)="saveUnit(i)">
               </div>
@@ -207,7 +210,7 @@
               </div>
             </div>
 
-            <div class="selectRightZoneBox littleMarginTop" *ngIf="multiElements.length > 0">
+            <div class="selectRightZoneBox littleMarginTop multiSelectDropdown tabletMarginLeft" *ngIf="multiElements.length > 0">
               <ss-multiselect-dropdown
                 [options]="multiElements"
                 [settings]="multiElementsSettings"
@@ -217,9 +220,11 @@
               </ss-multiselect-dropdown>
             </div>
 
-            <div class="selectRightZoneBox littleMarginTop">
+            <div class="selectRightZoneBox littleMarginTop tabletMarginLeft">
+              <hr class="mobileSeparatorSelectDebuff"/>
               <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(i)">Add debuff</button>
               <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+                <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
                 <div class="selectRightZoneTwoDividedThree">
                   <label for="unit{{i}}_debuff{{j}}_type">Element {{j + 1}}</label>
                   <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i, j)">

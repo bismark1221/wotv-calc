@@ -161,7 +161,7 @@
 }
 
 .btnAddDebuff {
-  /*width: 710px;*/
+  width: 100%;
 }
 
 .verticalTop {
@@ -303,12 +303,17 @@ nouislider {
 .zoneSwitchWithOneOptions {
   margin-top: 10px;
   margin-left: 100px;
-  display: block;
+  display: block !important;
 }
 
 .zoneSwitchWithFullOptions {
-  margin-top: 10px;
-  margin-left: 490px;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.zoneSwitchWithFullOptions > button {
+  display: block;
+  margin: 10px auto;
 }
 
 .topBlock {
@@ -329,20 +334,27 @@ nouislider {
   text-align: center;
 }
 
+.mobileSeparatorSelectRightZone {
+  display: none;
+}
+
+.mobileSeparatorSelectDebuff {
+  display: none;
+}
+
+.emptyLabel {
+  display: inline-block;
+}
+
+.blockLinearFrames {
+  text-align: center;
+}
+
+.buttonsAbility {
+  display: inline-block;
+}
+
 @media (max-width: 738px) {
-  .topBlock {
-    display: block;
-  }
-
-  .zoneSwitchWithoutOptions {
-    margin: 10px auto;
-    width: 50px;
-  }
-
-  .zoneSwitchWithoutOptions > button > .fa-exchange {
-    transform: rotate(90deg);
-  }
-
   .selectFramesGap {
     display: block;
     width: 250px;
@@ -354,5 +366,206 @@ nouislider {
 
   .selectUnitZone {
     margin: 0;
+    width: 250px;
+  }
+
+  .selectRightZone {
+    padding: 0;
+    width: 228px;
+  }
+
+  .selectRightZoneOneThird {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+
+  .selectRightZoneBox {
+    width: 230px !important;
+    margin-top: 0;
+  }
+
+  hr {
+    margin-bottom: 0;
+  }
+
+  .selectRightZoneTwoThirdDividedInThird {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  .emptyLabel {
+    display: none;
+  }
+
+  .selectRightZoneMediumBox {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .blockLinearFrames {
+    text-align: left;
+    height: 70px;
+  }
+
+  [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+    margin-left: 10px
+  }
+
+  [type="checkbox"][_ngcontent-c3]:not(:checked) + label[_ngcontent-c3]:after, [type="checkbox"][_ngcontent-c3]:checked + label[_ngcontent-c3]:after {
+    left: 11px;
+  }
+
+  .selectRightZoneFrames {
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 0;
+  }
+
+  .selectRightZoneLittleBox {
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 0;
+  }
+
+  .multiSelectDropdown {
+    margin-top: 10px;
+  }
+
+  .dropdown-inline {
+    width: 100%;
+  }
+
+  .dropdown-toogle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btnAddDebuff {
+    margin-top: 10px;
+  }
+
+  .selectRightZoneDividedTwo {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .selectRightZoneTwoDividedThree {
+    width: 100% !important;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  .mobileSeparatorSelectDebuff {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .mobileSeparatorSelectRightZone {
+    margin-bottom: 0 !important;
+  }
+
+  .buttonsAbility {
+    margin: 0 !important;
+  }
+
+  .buttonsUnit {
+    margin-left: 10px;
+  }
+
+  .tabletMarginLeft {
+    margin-left: 0 !important;
+  }
+
+  .tabletMarginTop {
+    margin-top: 10px;
+  }
+
+  .tabletNoMarginTop {
+    margin-top: 10px !important;
+  }
+
+  .btnSwitch {
+    margin: 0 auto;
+  }
+
+  .btn-number {
+    background-color: #dcdcdc;
+    color: #464a4c;
+  }
+
+  .mobileNoMarginTop {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 821px) {
+  .zoneSwitchWithoutOptions > button > .fa-exchange {
+    transform: rotate(90deg);
+  }
+
+  .zoneSwitchWithoutOptions {
+    margin: 10px auto;
+    width: 50px;
+  }
+
+  .topBlock {
+    display: block;
+  }
+
+  .selectRightZoneBox {
+    width: 500px;
+  }
+
+  .buttonsUnit {
+    margin-left: 0 !important;
+  }
+
+  .selectRightZoneOneThird {
+    margin-left: 10px;
+  }
+
+  .emptyLabel {
+    display: none;
+  }
+
+  .selectAbility {
+    display: block;
+  }
+
+  .buttonsAbility {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .tabletMarginLeft {
+    margin-left: 10px;
+  }
+
+  .tabletNoMarginTop {
+    margin-top: 0;
+  }
+
+  .tabletMarginTop {
+    margin-top: 10px;
+  }
+
+  .selectRightZoneDividedTwo {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .selectRightZoneTwoDividedThree {
+    width: 164px;
+  }
+}
+
+@media (max-width: 1043px) {
+  .mobileSeparatorSelectRightZone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
   }
 }

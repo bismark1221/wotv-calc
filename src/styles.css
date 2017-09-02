@@ -56,3 +56,14 @@ button, input, optgroup, select, textarea {
 .noUi-value-sub {
   font-size: 15px;
 }
+
+@media (max-width: 738px) {
+  .dropdown-inline {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+  }
+}
