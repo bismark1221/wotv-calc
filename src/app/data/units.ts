@@ -770,18 +770,18 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Quick Hit',
-        hits: 12,
+        linearFrames: false,
+        framesList: '0-5-5-5-5-5-5-5-5-5-5-20',
         firstHit: 22,
-        frames: 5,
         castTime: 40,
         offset: 16,
         base: 400
       },
       {
         name: 'Quick Hit + 2 (JP Only)',
-        hits: 12,
+        linearFrames: false,
+        framesList: '0-5-5-5-5-5-5-5-5-5-5-20',
         firstHit: 22,
-        frames: 5,
         castTime: 40,
         offset: 16,
         base: 720
