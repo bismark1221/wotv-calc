@@ -89,9 +89,9 @@ export const UNITS: any[] = [
       },
       {
         name: 'Offensive Heal Combo (Math are wrong)',
-        base: 510,
+        base: 500,
         linearFrames: false,
-        framesList: '0-5-5-5-5-5-5-5',
+        framesList: '0-10-10-10-10-10-10-10',
         castTime: 40,
         offset: 16,
         firstHit: 42,
@@ -234,6 +234,7 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 72,
         ignore: 25,
+        type: 'magic'
       },
       {
         name: 'Sword of Kings',
@@ -242,7 +243,7 @@ export const UNITS: any[] = [
         frames: 10,
         castTime: 40,
         offset: 16,
-        firstHit: 42
+        firstHit: 42,
       },
     ]
   },
