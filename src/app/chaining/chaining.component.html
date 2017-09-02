@@ -286,7 +286,10 @@
   <div class="selectDetailZone">
     <h2>Result</h2>
     <p *ngIf="chain[0].ability.type !== 'hybrid' && (!chain[1] || chain[1].ability.type !== 'hybrid')">
-      Total modifier : {{chainService.getResult()}}%
+      Total modifier : {{chainService.getResult().modifier}}%
+    </p>
+    <p *ngIf="chain[1]">
+      Total combo : {{chainService.getResult().combo}}
     </p>
     <p *ngIf="chain[1]">
       <span *ngIf="chainService.getDiffFirstHits() === 0">

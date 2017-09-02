@@ -10,11 +10,15 @@ export class ChainService {
   private total: number;
   private multi: number;
   private nbHits: number;
-  private result: number;
   private diffFirstHits: number;
   private hits: any[] = [];
   private lastHiter: number;
   private lastElements: string[];
+  private combo: any[] = [];
+  private result: any = {
+    modifier: 0,
+    combo: 0
+  }
 
   chainers: any[] = [];
   finisher: Unit;
@@ -64,8 +68,10 @@ export class ChainService {
     if (combo) {
       this.multi += 0.1 + elementsModifier + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
       this.multi > 4 ? this.multi = 4 : true;
+      this.combo[this.combo.length - 1]++;
     } else {
       this.multi = 1;
+      this.combo.push(0);
     }
 
     this.total = this.total + (unit.hitDamage * this.multi)
@@ -200,6 +206,7 @@ export class ChainService {
     this.multi = 1;
     this.hits = [];
     this.lastElements = [];
+    this.combo = [];
 
     this.calculateHitsAndFrames();
     this.calculateHitDamage();
@@ -270,7 +277,8 @@ export class ChainService {
         nbCombo2++;
       }
 
-      this.result = Math.round(this.total);
+      this.result.modifier = Math.round(this.total);
+      this.result.combo = this.combo.join(" + ");
     } else {
       this.hits = [];
     }
