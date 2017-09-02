@@ -28,7 +28,7 @@ export class ChainingComponent implements OnInit {
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
-  abilityTypes: string[] = ['physic', 'magic', 'hybrid'];
+  abilityTypes: string[] = ['physic', 'magic', 'hybrid', 'LB'];
 
   framesGap: number = 1;
   viewOptions: boolean[] = [false, false];

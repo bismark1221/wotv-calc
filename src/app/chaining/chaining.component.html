@@ -233,7 +233,10 @@
                 </div>
                 <div class="selectRightZoneTwoDividedThree">
                   <label for="unit{{i}}_debuff{{j}}_value">Value {{j + 1}}</label>
-                  <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
+                  <div class="input-group">
+                    <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
+                    <span class="input-group-addon" id="unit_base_percent">%</span>
+                  </div>
                 </div>
                 <div class="selectRightZoneTwoDividedThree">
                   <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove</button>

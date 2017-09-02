@@ -103,7 +103,7 @@ export class ChainService {
         unit.totalDamage = unit.ability.base * realIgnore;
       }
 
-      unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual ? 2 : 1));
+      unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.type !== 'LB' ? 2 : 1));
     });
   }
 
@@ -174,7 +174,7 @@ export class ChainService {
           unit.frames.push({frame: countFrames, type: 'classic'});
         });
 
-        if (unit.dual) {
+        if (unit.dual && unit.ability.type !== 'LB') {
           unit.ability.framesList.split('-').forEach(hit => {
             dualCountFrames += Number(hit);
             unit.frames.push({frame: dualCountFrames, type: 'dual'});
@@ -187,7 +187,7 @@ export class ChainService {
           unit.frames.push({frame: countFrames, type: 'classic'});
         }
 
-        if (unit.dual) {
+        if (unit.dual && unit.ability.type !== 'LB') {
           unit.frames.push({frame: dualCountFrames, type: 'dual'});
           for (let i = 1; i < unit.ability.hits; i++) {
             dualCountFrames += unit.ability.frames;

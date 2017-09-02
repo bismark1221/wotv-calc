@@ -25,7 +25,7 @@ export class MyUnitsComponent implements OnInit {
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
-  abilityTypes: string[] = ['physic', 'magic'];
+  abilityTypes: string[] = ['physic', 'magic', 'hybrid', 'LB'];
 
   activeRenameAbility = false;
   activeRenameUnit = false;

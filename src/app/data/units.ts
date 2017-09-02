@@ -974,6 +974,16 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 0,
         base: 520
+      },
+      {
+        name: 'LB (Twin Swords)',
+        linearFrames: false,
+        framesList: '0-4-47-4-35-5-5-5-5-5-5-5-5-5-20-4',
+        firstHit: 68,
+        castTime: 40,
+        offset: 0,
+        base: 800,
+        type: 'LB'
       }
     ]
   },
