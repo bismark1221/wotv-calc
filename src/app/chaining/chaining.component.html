@@ -65,9 +65,13 @@
 
             <hr class="selectHr" *ngIf="chain[i - 1] && !chain[i]"/>
 
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && !chain[i]">
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && !chain[i] && chain[0].ability.type !== 'hybrid'">
               Find Best Chainers
             </button>
+
+            <div class="littleMarginTop" *ngIf="chain[i - 1] && !chain[i] && chain[0].ability.type === 'hybrid'">
+              Sorry, chains that involve hybrid abilites are not properly implemented yet :(
+            </div>
           </div>
 
           <div class="inlineBlock firstSelectLevel" *ngIf="i == 1 && bestChainers[0] && !chain[i]">
