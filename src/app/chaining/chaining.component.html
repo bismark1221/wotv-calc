@@ -4,9 +4,9 @@
       <div class="inlineBlock verticalTop">
 
         <div class="selectUnitZone">
-          <button *ngIf="chain[i]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
+          <button *ngIf="chain[i] || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
-          <div class="inlineBlock firstSelectLevel" *ngIf="i === 0 || chain[0]">
+          <div class="inlineBlock firstSelectLevel" *ngIf="i === 0 || (chain[0] && !bestChainers[0])">
             <label *ngIf="!chain[i] || (chain[i] && !chain[i].activeRename)" for="chain{{i}}">Unit {{ i + 1 }}</label>
             <div *ngIf="!chain[i] || chain[i].id < 10000">
               <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
@@ -61,6 +61,31 @@
 
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i]">
               {{ viewOptions[i] ? 'Hide' : 'Show' }} Options
+            </button>
+
+            <hr class="selectHr" *ngIf="chain[i - 1] && !chain[i]"/>
+
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && !chain[i]">
+              Find Best Chainers
+            </button>
+          </div>
+
+          <div class="inlineBlock firstSelectLevel" *ngIf="i == 1 && bestChainers[0] && !chain[i]">
+            <label>Best chainers</label>
+            <button
+              *ngFor="let chainer of bestChainers; let j = index"
+              class="btn btn-secondary fullWidth"
+              [ngClass]="{'littleMarginTop': j !== 0}"
+              type="button"
+              (click)="selectUnit(1, chainer.unit, chainer.ability, chainer.frames)"
+            >
+              <div class="bestChainerButton">
+                {{ chainer.unit.name }}<br />
+                <span>
+                  {{ chainer.ability.name }}<br />
+                  {{ chainer.modifier }}%
+                </span>
+              </div>
             </button>
           </div>
 

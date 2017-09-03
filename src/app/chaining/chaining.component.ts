@@ -32,6 +32,7 @@ export class ChainingComponent implements OnInit {
 
   framesGap: number = 1;
   viewOptions: boolean[] = [false, false];
+  bestChainers: any[] = [];
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -124,6 +125,19 @@ export class ChainingComponent implements OnInit {
     } else {
       this.multiElementsSettings.dynamicTitleMaxItems = 8;
     }
+  }
+
+  private findPositionOfAbility(unit: any, searchAbility: any) {
+    let i = 0;
+    let position = 0;
+    unit.abilities.forEach(ability => {
+      if (ability.name === searchAbility.name) {
+        position = i;
+      }
+      i++;
+    });
+
+    return position;
   }
 
   ngOnInit(): void {
@@ -239,6 +253,7 @@ export class ChainingComponent implements OnInit {
         this.chainService.chainers.splice(position, 1);
         this.viewOptions[position] = false;
       }
+      this.framesGap = 1;
     }
 
     if (this.selectedUnits[position] !== '') {
@@ -255,6 +270,7 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeChain(): void {
+    this.bestChainers = [];
     this.chainService.getChain(this.framesGap);
     this.changeMultiSelectDropdown();
   }
@@ -317,7 +333,51 @@ export class ChainingComponent implements OnInit {
   }
 
   findBestFrames() {
-    this.framesGap = this.chainService.findBestFrames()
+    this.framesGap = this.chainService.findBestFrames().bestFrames;
     this.chainService.getChain(this.framesGap);
+  }
+
+  findBestChainers() {
+    let chainers = [];
+    let allUnits = this.units.concat(this.createdUnits);
+    this.bestChainers = [];
+
+    allUnits.forEach(unit => {
+      this.chainService.chainers[1] = JSON.parse(JSON.stringify(unit));
+
+      unit.abilities.forEach(ability => {
+        this.chainService.chainers[1].ability = ability;
+        let result = this.chainService.findBestFrames();
+        chainers.push({
+          unit: unit,
+          ability: ability,
+          frames: result.bestFrames,
+          modifier: result.bestModifier
+        });
+      })
+    });
+
+    chainers.sort((a: any, b: any) => {
+      if (a.modifier > b.modifier) {
+        return -1
+      } else if (a.modifier < b.modifier) {
+        return 1;
+      }
+      return 0;
+    });
+
+    for (let i = 0; i < 5; i++) {
+      if (chainers[i]) {
+        this.bestChainers.push(chainers[i]);
+      }
+    }
+
+    this.chainService.chainers.splice(1, 1);
+  }
+
+  selectUnit(position: number, unit: any, ability: any, frames: number) {
+    this.selectedUnits[position] = unit;
+    this.framesGap = frames;
+    this.onChangeUnit(position, this.findPositionOfAbility(unit, ability));
   }
 }

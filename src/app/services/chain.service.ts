@@ -206,7 +206,6 @@ export class ChainService {
 
   private initializeChain() {
     this.nbHits = 0;
-    this.total = 0;
     this.multi = 1;
     this.hits = [];
     this.lastElements = [];
@@ -219,6 +218,7 @@ export class ChainService {
 
   private calculateChain(framesGap: number) {
     this.framesGap = framesGap;
+    this.total = 0;
 
     if (this.chainers.length > 0) {
       this.initializeChain();
@@ -302,31 +302,34 @@ export class ChainService {
         }
         nbCombo2++;
       }
-
-      this.result.modifier = Math.round(this.total);
-      this.result.combo = this.combo.join(" + ");
     } else {
       this.hits = [];
     }
+
+    return Math.round(this.total);
   }
 
   getChain(framesGap: number) {
-    this.calculateChain(framesGap);
+    this.result.modifier = this.calculateChain(framesGap);
+    this.result.combo = this.combo.join(" + ");
     this.dataSubject.next(this.hits);
   }
 
-  findBestFrames(): number {
+  findBestFrames(): any {
     let bestFrames = 0;
-    let bestModifier = 0
+    let bestModifier = 0;
     for (let i = -10; i <= 10; i++) {
-      this.calculateChain(i);
-      if (this.result.modifier > bestModifier) {
-        bestModifier = this.result.modifier;
+      let modifier = this.calculateChain(i);
+      if (modifier > bestModifier) {
+        bestModifier = modifier;
         bestFrames = i;
       }
     }
 
-    return bestFrames;
+    return {
+      bestFrames: bestFrames,
+      bestModifier: bestModifier
+    };
   }
 
   getResult(): number {

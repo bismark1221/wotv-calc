@@ -354,6 +354,33 @@ nouislider {
   display: inline-block;
 }
 
+.bestChainers {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.bestChainers > li {
+  margin-top: 5px;
+}
+
+.bestChainers > li > a {
+  cursor: pointer;
+}
+
+.bestChainerButton {
+  width: 194px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bestChainerButton > span {
+  font-size: .9rem;
+}
+
 @media (max-width: 738px) {
   .selectFramesGap {
     display: block;
