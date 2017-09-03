@@ -217,11 +217,13 @@ export class ChainService {
     this.calculateFramesDiffForFirstHits();
   }
 
-  calculateChain(): void {
+  private calculateChain(framesGap: number) {
+    this.framesGap = framesGap;
+
     if (this.chainers.length > 0) {
       this.initializeChain();
 
-      let nbCombo1 = 1;
+      let nbCombo1 = 0;
       let nbCombo2 = 0;
 
       let hits1 = this.chainers[0].frames.length;
@@ -232,16 +234,24 @@ export class ChainService {
       let prevFrame1 = 0;
       let prevFrame2 = 0;
 
-      this.addHit(0, this.chainers[0].frames[0], false);
+      if (this.framesGap >= 0) {
+        this.addHit(0, this.chainers[0].frames[0], false);
+        nbCombo1++;
+      } else {
+        this.addHit(1, this.chainers[1].frames[0], false);
+        nbCombo2++;
+      }
 
       while (nbCombo1 < hits1 && nbCombo2 < hits2 && hits2 !== 0) {
         actualFrame1 = this.chainers[0].frames[nbCombo1].frame;
         actualFrame2 = this.chainers[1].frames[nbCombo2].frame;
-        prevFrame1 = this.chainers[0].frames[nbCombo1 - 1].frame;
+
+        if (nbCombo1 > 0) {
+          prevFrame1 = this.chainers[0].frames[nbCombo1 - 1].frame;
+        }
+
         if (nbCombo2 > 0) {
           prevFrame2 = this.chainers[1].frames[nbCombo2 - 1].frame;
-        } else {
-          prevFrame2 = 0;
         }
 
         if (this.lastHiter == 0) {
@@ -264,8 +274,14 @@ export class ChainService {
       }
 
       for (let i = 0; nbCombo1 < hits1; i++) {
-        if (this.lastHiter == 1 && this.chainers[0].frames[nbCombo1].frame <= this.chainers[1].frames[nbCombo2 - 1].frame + this.framesGap) {
-          this.addHit(0, this.chainers[0].frames[nbCombo1], true);
+        actualFrame1 = this.chainers[0].frames[nbCombo1].frame;
+
+        if (nbCombo2 > 0) {
+          prevFrame2 = this.chainers[1].frames[nbCombo2 - 1].frame;
+        }
+
+        if (this.lastHiter == 1 && actualFrame1 >= prevFrame2 + this.framesGap) {
+          this.addHit(0, this.chainers[0].frames[nbCombo1], actualFrame1 - (prevFrame2 + this.framesGap) <= 21);
         } else {
           this.addHit(0, this.chainers[0].frames[nbCombo1], false);
         }
@@ -273,8 +289,14 @@ export class ChainService {
       }
 
       for (let i = 0; nbCombo2 < hits2; i++) {
-        if (this.lastHiter == 0 && this.chainers[1].frames[nbCombo2].frame <= this.chainers[0].frames[nbCombo1 - 1].frame + this.framesGap) {
-          this.addHit(1, this.chainers[1].frames[nbCombo2], true);
+        actualFrame2 = this.chainers[1].frames[nbCombo2].frame;
+
+        if (nbCombo1 > 0) {
+          prevFrame1 = this.chainers[0].frames[nbCombo1 - 1].frame;
+        }
+
+        if (this.lastHiter == 0 && actualFrame2 + this.framesGap >= prevFrame1) {
+          this.addHit(1, this.chainers[1].frames[nbCombo2], (actualFrame2 + this.framesGap) - prevFrame1 <= 21);
         } else {
           this.addHit(1, this.chainers[1].frames[nbCombo2], false);
         }
@@ -286,8 +308,25 @@ export class ChainService {
     } else {
       this.hits = [];
     }
+  }
 
+  getChain(framesGap: number) {
+    this.calculateChain(framesGap);
     this.dataSubject.next(this.hits);
+  }
+
+  findBestFrames(): number {
+    let bestFrames = 0;
+    let bestModifier = 0
+    for (let i = -10; i <= 10; i++) {
+      this.calculateChain(i);
+      if (this.result.modifier > bestModifier) {
+        bestModifier = this.result.modifier;
+        bestFrames = i;
+      }
+    }
+
+    return bestFrames;
   }
 
   getResult(): number {

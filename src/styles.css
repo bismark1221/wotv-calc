@@ -52,6 +52,10 @@ button, input, optgroup, select, textarea {
   font-size: 15px;
 }
 
+.noUi-pips-horizontal {
+  height: 40px;
+}
+
 @media (max-width: 738px) {
   .dropdown-inline {
     width: 100%;

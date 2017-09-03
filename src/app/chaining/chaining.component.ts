@@ -46,7 +46,7 @@ export class ChainingComponent implements OnInit {
     start: 1,
     step: 1,
     range: {
-      min: 0,
+      min: -10,
       max: 10
     },
     pips: {
@@ -255,8 +255,7 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeChain(): void {
-    this.chainService.framesGap = this.framesGap;
-    this.chainService.calculateChain();
+    this.chainService.getChain(this.framesGap);
     this.changeMultiSelectDropdown();
   }
 
@@ -308,12 +307,17 @@ export class ChainingComponent implements OnInit {
   }
 
   checkFramesGap() {
-    if (this.framesGap <= 0) {
-      this.framesGap = 0;
+    if (this.framesGap <= -10) {
+      this.framesGap = -10;
     } else if (this.framesGap >= 10) {
       this.framesGap = 10;
     }
 
     this.onChangeChain();
+  }
+
+  findBestFrames() {
+    this.framesGap = this.chainService.findBestFrames()
+    this.chainService.getChain(this.framesGap);
   }
 }

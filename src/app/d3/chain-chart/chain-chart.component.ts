@@ -16,6 +16,7 @@ export class ChainChartComponent implements OnInit {
   private width: number;
   private height: number;
   private maxFrame: number;
+  private minFrame: number;
   private chart: any;
   private xScale: any;
   private yScale: any;
@@ -31,14 +32,14 @@ export class ChainChartComponent implements OnInit {
 
   ngOnInit() {
     this.data = this.chainService.getHits();
-    this.updateMaxFrame();
+    this.updateMinMaxFrame();
     this.createChart();
   }
 
   ngAfterViewInit() {
     this.chainService.$hits.subscribe(hits => {
       this.data = hits;
-      this.updateMaxFrame();
+      this.updateMinMaxFrame();
       this.addDottedLines();
       this.updateChart();
     });
@@ -46,7 +47,7 @@ export class ChainChartComponent implements OnInit {
 
   private addDottedLines() {
     this.frames = [];
-    for (let i = 0; i <= this.maxFrame; i++) {
+    for (let i = this.minFrame; i <= this.maxFrame; i++) {
       this.data.push({
         hit: i,
         type: "dotted",
@@ -55,7 +56,8 @@ export class ChainChartComponent implements OnInit {
     }
   }
 
-  private updateMaxFrame = function() {
+  private updateMinMaxFrame = function() {
+    this.minFrame = this.data[0] ? this.data[0].hit: 0;
     this.maxFrame = this.data[this.data.length - 1] ? this.data[this.data.length - 1].hit + 1: 100;
   }
 
@@ -85,7 +87,7 @@ export class ChainChartComponent implements OnInit {
       .attr("height", element.offsetHeight)
       .attr("transform", `translate(${this.margin.left}, ${this.margin.top})`);
 
-    let xDomain = [0, this.maxFrame];
+    let xDomain = [this.minFrame, this.maxFrame];
     let yDomain = this.getUnitsName();
     this.xScale = d3.scaleLinear().domain(xDomain).range([0, this.width]);
     this.yScale = d3.scaleBand().padding(0.1).domain(yDomain).rangeRound([0, this.height]);
@@ -101,7 +103,7 @@ export class ChainChartComponent implements OnInit {
   }
 
   updateChart() {
-    this.xScale.domain([0, this.maxFrame]);
+    this.xScale.domain([this.minFrame, this.maxFrame]);
     this.yScale.domain(this.getUnitsName());
 
     this.xAxis.transition().call(d3.axisBottom(this.xScale));
@@ -121,7 +123,7 @@ export class ChainChartComponent implements OnInit {
       .attr('y', d => this.yScale(d.unitName))
       .attr('width', d => {
         if (d.type !== 'dotted') {
-          return 930 / this.maxFrame / (d.divided ? 2 : 1)
+          return 930 / (this.maxFrame + Math.abs(this.minFrame)) / (d.divided ? 2 : 1)
         }
         return 1;
       })
@@ -138,7 +140,7 @@ export class ChainChartComponent implements OnInit {
       .attr('y', d => this.yScale(d.unitName))
       .attr('width', d => {
         if (d.type !== 'dotted') {
-          return 930 / this.maxFrame / (d.divided ? 2 : 1)
+          return 930 / (this.maxFrame + Math.abs(this.minFrame)) / (d.divided ? 2 : 1)
         }
         return 1;
       })
