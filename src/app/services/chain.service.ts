@@ -17,7 +17,7 @@ export class ChainService {
   private combo: any[] = [];
   private result: any = {
     modifier: 0,
-    combo: 0
+    combo: '0'
   }
 
   chainers: any[] = [];
@@ -69,9 +69,11 @@ export class ChainService {
       this.multi += 0.1 + elementsModifier + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
       this.multi > 4 ? this.multi = 4 : true;
       this.combo[this.combo.length - 1]++;
+      this.hits[this.nbHits].combo = this.combo[this.combo.length - 1];
     } else {
       this.multi = 1;
       this.combo.push(0);
+      this.hits[this.nbHits].combo = 0;
     }
 
     this.total = this.total + (unit.hitDamage * this.multi)

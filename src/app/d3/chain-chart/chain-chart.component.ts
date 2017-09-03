@@ -108,6 +108,8 @@ export class ChainChartComponent implements OnInit {
     this.yAxis.transition().call(d3.axisLeft(this.yScale));
 
     let update = this.chart.selectAll('.bar').data(this.data);
+    let tooltip = d3.select("body").append("div").attr("class", "tooltip-chart").style("opacity", 0);
+
 
     // remove exiting bars
     update.exit().remove();
@@ -142,6 +144,17 @@ export class ChainChartComponent implements OnInit {
       })
       .attr('height', d => {
         return d.type === 'dotted' ? 160 : this.yScale.bandwidth()
+      })
+      .on("mouseover", d => {
+        if (d.type !== 'dotted') {
+          tooltip.transition().duration(200).style("opacity", .9);
+          tooltip.html('combo : ' + d.combo + '<br/>frame : ' + d.hit).style("left", (d3.event.pageX - 50) + "px").style("top", (d3.event.pageY - 40) + "px");
+        }
+      })
+      .on("mouseout", d => {
+        if (d.type !== 'dotted') {
+          tooltip.transition().duration(500).style("opacity", 0);
+        }
       });
   }
 }
