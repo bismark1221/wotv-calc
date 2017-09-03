@@ -147,8 +147,16 @@ export class ChainChartComponent implements OnInit {
       })
       .on("mouseover", d => {
         if (d.type !== 'dotted') {
+          let text = '';
+          if (d.combo !== undefined) {
+            text += 'combo : ' + d.combo + '<br/>';
+            tooltip.attr('height', '30px')
+          } else {
+            tooltip.attr('height', '15px')
+          }
+
           tooltip.transition().duration(200).style("opacity", .9);
-          tooltip.html('combo : ' + d.combo + '<br/>frame : ' + d.hit).style("left", (d3.event.pageX - 50) + "px").style("top", (d3.event.pageY - 40) + "px");
+          tooltip.html(text + 'frame : ' + d.hit).style("left", (d3.event.pageX - 50) + "px").style("top", (d3.event.pageY - 40) + "px");
         }
       })
       .on("mouseout", d => {
