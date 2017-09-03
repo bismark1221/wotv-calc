@@ -234,7 +234,8 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 72,
         ignore: 25,
-        type: 'magic'
+        type: 'magic',
+        dualable: false
       },
       {
         name: 'Sword of Kings',
@@ -738,7 +739,8 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 52,
         ignore: 50,
-        type: 'magic'
+        type: 'magic',
+        dualable: false
       },
       {
         name: 'Chaos Wave + 2 (JP Only)',
@@ -749,7 +751,8 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 60,
         ignore: 50,
-        type: 'magic'
+        type: 'magic',
+        dualable: false
       },
       {
         name: 'Ultima + 2 (JP Only)',
@@ -983,7 +986,8 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 0,
         base: 800,
-        type: 'LB'
+        type: 'LB',
+        dualable: false
       }
     ]
   },

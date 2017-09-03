@@ -381,6 +381,12 @@ nouislider {
   font-size: .9rem;
 }
 
+.selectRightZoneInFour {
+  width: 177px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
 @media (max-width: 738px) {
   .selectFramesGap {
     display: block;
@@ -404,6 +410,13 @@ nouislider {
   .selectRightZoneOneThird {
     margin-top: 10px;
     margin-left: 0 !important;
+  }
+
+  .selectRightZoneInFour {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0 !important;
+    padding-right: 0;
   }
 
   .selectRightZoneBox {
@@ -500,6 +513,7 @@ nouislider {
 
   .buttonsUnit {
     margin-left: 10px;
+    width: 100%;
   }
 
   .tabletMarginLeft {
@@ -555,6 +569,10 @@ nouislider {
   }
 
   .selectRightZoneOneThird {
+    margin-left: 10px;
+  }
+
+  .selectRightZoneInFour {
     margin-left: 10px;
   }
 

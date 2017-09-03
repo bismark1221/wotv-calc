@@ -19,7 +19,7 @@ export class Ability {
     this.name = ability.name;
     this.base = ability.base;
 
-    this.linearFrames = ability.linearFrames === false || ability.linearFrames === true ? ability.linearFrames : this.linearFrames;
+    this.linearFrames = typeof ability.linearFrames == 'boolean' ? ability.linearFrames : this.linearFrames;
     this.frames = ability.frames ? ability.frames : this.frames;
     this.framesList = ability.framesList ? ability.framesList : this.framesList;
     this.hits = ability.hits ? ability.hits : this.hits;
@@ -28,7 +28,7 @@ export class Ability {
     this.offset = ability.offset || ability.offset === 0 ? ability.offset : this.offset;
 
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
-    this.dualable = ability.dualable ? ability.dualable : this.dualable;
+    this.dualable = typeof ability.dualable == 'boolean' ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
     this.debuff = ability.debuff ? ability.debuff : this.debuff;
 
