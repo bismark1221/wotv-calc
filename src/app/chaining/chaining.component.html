@@ -1,18 +1,27 @@
 <div class="row unit form-group">
   <div class="chainParameters" #chainDiv>
-    <div class="topBlock verticalTop littleMarginBottom" *ngFor="let i of [0,1]">
+    <div class="topBlock verticalTop littleMarginBottom" *ngFor="let i of [0,1,2,3,4,5]">
       <div class="inlineBlock verticalTop">
 
-        <div class="selectUnitZone">
+        <div class="selectUnitZone" *ngIf="i === 0 || chain[i - 1]">
           <button *ngIf="chain[i] || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
-          <div class="inlineBlock firstSelectLevel" *ngIf="i === 0 || (chain[0] && !bestChainers[0])">
+          <div class="inlineBlock firstSelectLevel" *ngIf="!bestChainers[0]">
             <label *ngIf="!chain[i] || (chain[i] && !chain[i].activeRename)" for="chain{{i}}">Unit {{ i + 1 }}</label>
             <div *ngIf="!chain[i] || chain[i].id < 10000">
               <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
                 <option value="" selected>Predefined units</option>
                 <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{ unit.name | capitalize}}</option>
               </select>
+
+              <select2
+                [data]="listUnits | async"
+                [options]="select2Options"
+                [value]=""
+                (valueChanged)="onChangeUnit(i, $event.value);"></select2>
+
+              <p>{{exampleModel}}</p>
+
               <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
             </div>
 
@@ -278,16 +287,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div *ngIf="i === 0 && chain[1]" class="topBlock" [ngClass]="
-        {'zoneSwitchWithoutOptions': !viewOptions[0] && !viewOptions[1],
-         'zoneSwitchWithOneOptions': viewOptions[0] || viewOptions[1],
-         'zoneSwitchWithFullOptions': viewOptions[0] && viewOptions[1]
-        }">
-        <button type="button" class="btn btn-secondary btnSwitch" (click)="switchUnits()">
-          <i class="fa fa-exchange" aria-hidden="true" [ngClass]="{'fa-rotate-90': viewOptions[0] || viewOptions[1]}"></i>
-        </button>
       </div>
     </div>
   </div>

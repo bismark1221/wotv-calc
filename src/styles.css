@@ -1,5 +1,6 @@
 /* Import external libraries */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
 @import "~nouislider/distribute/nouislider.min.css";
 
@@ -65,4 +66,27 @@ button, input, optgroup, select, textarea {
     width: 100%;
     text-align: left;
   }
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+  height: 38px !important;
+  padding-left: 8px !important;
+  padding-top: 8px !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  text-align: left !important;
+  font-size: 16px !important;
+  padding: 0 !important;
+}
+
+.select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
+  border-color: #464a4c transparent transparent !important;
+  border-width: 8px 4px 0 !important;
+  left: 3px !important;
+  margin-left: 0px !important;
 }

@@ -8,6 +8,7 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { MarkdownModule } from 'angular2-markdown';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
+import { Select2Module } from 'ng2-select2';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
@@ -65,7 +66,8 @@ import { LegalComponent } from './legal/legal.component';
     MarkdownModule.forRoot(),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     TooltipModule,
-    SliderModule
+    SliderModule,
+    Select2Module
   ],
   providers: [
     UnitService,

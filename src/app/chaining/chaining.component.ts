@@ -1,7 +1,11 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewChecked, ChangeDetectorRef } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { Select2OptionData } from 'ng2-select2';
+
+import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject } from "rxjs/BehaviorSubject";
 
 import { Unit } from '../entities/unit';
 import { Ability } from '../entities/ability';
@@ -14,16 +18,16 @@ import { ChainService } from '../services/chain.service';
   templateUrl: './chaining.component.html',
   styleUrls: ['./chaining.component.css']
 })
-export class ChainingComponent implements OnInit {
+export class ChainingComponent implements OnInit, AfterViewChecked {
   @ViewChild('chainDiv') private chainDiv: ElementRef;
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
+  private units: Unit[];
 
   chain: any[] = [];
-  selectedUnits: any[] = ['', ''];
-  selectedAbilities: any[] = ['', ''];
+  selectedUnits: any[] = ['', '', '', '', '', ''];
+  selectedAbilities: any[] = ['', '', '', '', '', ''];
 
-  units: Unit[];
   createdUnits: any[] = [];
   elements: string[];
   requiredElements: string[];
@@ -54,18 +58,66 @@ export class ChainingComponent implements OnInit {
       mode: 'steps',
       density: 10
     }
-};
+  };
+
+  private observableUnits =[
+    {
+      id: '',
+      text: 'Predefined units',
+      children: []
+    },
+    {
+      id: '0',
+      text: 'Chainers',
+      children: []
+    },
+    {
+      id: '0',
+      text: 'Finishers',
+      children: []
+    }
+  ];
+
+  listUnits: Observable<Array<Select2OptionData>>;
+
+  select2Options: Select2Options = {
+    theme: 'bootstrap'
+  }
+
+  exampleModel: any;
 
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
     private elementsService: ElementsService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private ref: ChangeDetectorRef
   ) { }
+
+  changed(foo) {
+    console.log(foo)
+  }
 
   private getUnits(): void {
     this.unitService.getUnits().then(units => {
       this.units = units;
+
+      units.forEach(unit => {
+        this.observableUnits[(unit.type === 'chain' ? 1 : 2)].children.push({
+          id: unit.id.toString(),
+          text: unit.name
+        });
+      });
+
+      delete this.observableUnits[0].children;
+
+      this.listUnits = Observable.create((obs) => {
+        obs.next(this.observableUnits);
+        obs.complete();
+      });
+
+      console.log(this.listUnits);
+
       this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
       this.sortUnits();
     });
@@ -143,6 +195,10 @@ export class ChainingComponent implements OnInit {
   ngOnInit(): void {
     this.getUnits();
     this.getElements();
+  }
+
+  ngAfterViewChecked(): void {
+    this.ref.detectChanges();
   }
 
   addDebuff(position: number) {
@@ -240,6 +296,7 @@ export class ChainingComponent implements OnInit {
   }
 
   onChangeUnit(position: number, ability: number = 0) {
+    console.log(this.selectedUnits[position])
     if (this.selectedUnits[position] === '') {
       if (position === 0 && this.chain[position + 1]) {
         this.selectedUnits[position] = this.selectedUnits[position + 1];
@@ -304,17 +361,6 @@ export class ChainingComponent implements OnInit {
   showOptions(position: number) {
     this.viewOptions[position] = !this.viewOptions[position];
     this.changeMultiSelectDropdown();
-  }
-
-  switchUnits() {
-    let unit1 = this.selectedUnits[0];
-    let ability1 = this.selectedAbilities[0];
-
-    this.selectedUnits[0] = this.selectedUnits[1];
-    this.selectedUnits[1] = unit1;
-
-    this.onChangeUnit(0, this.selectedAbilities[1]);
-    this.onChangeUnit(1, ability1);
   }
 
   updateFramesGap(minusPlus: boolean) {

@@ -83,11 +83,6 @@
   line-height: 1;
 }
 
-.btnSwitch {
-  margin: auto 0 auto 15px;
-  color: #464a4c;
-}
-
 .selectDetailZone {
   width: 100%;
   text-align: left;
@@ -294,26 +289,6 @@
 
 nouislider {
   margin-bottom: 45px;
-}
-
-.zoneSwitchWithoutOptions {
-  margin-top: 43px;
-}
-
-.zoneSwitchWithOneOptions {
-  margin-top: 10px;
-  margin-left: 100px;
-  display: block !important;
-}
-
-.zoneSwitchWithFullOptions {
-  width: 100%;
-  margin: 0 !important;
-}
-
-.zoneSwitchWithFullOptions > button {
-  display: block;
-  margin: 10px auto;
 }
 
 .topBlock {
@@ -532,10 +507,6 @@ nouislider {
     margin-top: 10px !important;
   }
 
-  .btnSwitch {
-    margin: 0 auto;
-  }
-
   .btn-number {
     background-color: #dcdcdc;
     color: #464a4c;
@@ -547,15 +518,6 @@ nouislider {
 }
 
 @media (max-width: 821px) {
-  .zoneSwitchWithoutOptions > button > .fa-exchange {
-    transform: rotate(90deg);
-  }
-
-  .zoneSwitchWithoutOptions {
-    margin: 10px auto;
-    width: 50px;
-  }
-
   .topBlock {
     display: block;
   }
