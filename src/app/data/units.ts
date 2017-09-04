@@ -553,7 +553,7 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Torrential Slash',
-        base: 400,
+        base: 700,
         hits: 10,
         frames: 10,
         castTime: 40,
@@ -1001,9 +1001,39 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Fin Briar',
-        base: 230,
+        hits: 1,
         frames: 1,
-        hits: 1
+        firstHit: 30,
+        castTime: 40,
+        offset: 0,
+        base: 230,
+      }
+    ]
+  },
+  {
+    id: 36,
+    name: 'Fire Veritas',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Heavy Stomp',
+        hits: 1,
+        frames: 1,
+        firstHit: 90,
+        castTime: 40,
+        offset: 0,
+        base: 250,
+        ignore: 50
+      },
+      {
+        name: 'Full Charge Stomp',
+        hits: 1,
+        frames: 1,
+        firstHit: 90,
+        castTime: 40,
+        offset: 0,
+        base: 500,
+        ignore: 50
       }
     ]
   }
