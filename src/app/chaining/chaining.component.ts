@@ -346,16 +346,14 @@ export class ChainingComponent implements OnInit {
       this.chainService.chainers[1] = JSON.parse(JSON.stringify(unit));
 
       unit.abilities.forEach(ability => {
-        if (ability.type !== 'hybrid') {
-          this.chainService.chainers[1].ability = ability;
-          let result = this.chainService.findBestFrames();
-          chainers.push({
-            unit: unit,
-            ability: ability,
-            frames: result.bestFrames,
-            modifier: result.bestModifier
-          });
-        }
+        this.chainService.chainers[1].ability = ability;
+        let result = this.chainService.findBestFrames();
+        chainers.push({
+          unit: unit,
+          ability: ability,
+          frames: result.bestFrames,
+          modifier: result.bestModifier
+        });
       })
     });
 

@@ -98,13 +98,18 @@ export class ChainService {
       unit.totalDamage = 0;
       let elements = this.getElements(unit);
       let realIgnore = unit.ability.ignore * 2 / 100 + 1;
+      let base = unit.ability.base
+
+      if (unit.ability.type === 'hybrid') {
+        base /= 2;
+      }
 
       if (elements.length > 0) {
         elements.forEach(element => {
-          unit.totalDamage = unit.totalDamage + (1/elements.length) * unit.ability.base * realIgnore * this.getDebuffModifier(element);
+          unit.totalDamage = unit.totalDamage + (1/elements.length) * base * realIgnore * this.getDebuffModifier(element);
         })
       } else {
-        unit.totalDamage = unit.ability.base * realIgnore;
+        unit.totalDamage = base * realIgnore;
       }
 
       unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.type !== 'LB' && unit.ability.dualable ? 2 : 1));
