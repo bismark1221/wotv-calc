@@ -407,10 +407,10 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'Strategic Blade',
+        name: 'Commanding Blade',
         base: 230,
         hits: 8,
-        frames: 5,
+        frames: 9,
         castTime: 40,
         offset: 16,
         firstHit: 51,
@@ -473,7 +473,8 @@ export const UNITS: any[] = [
           'wind',
           'light'
         ],
-        type: 'magic'
+        type: 'magic',
+        dualable: false
       },
       {
         name: 'Aureole Ray + 2 (JP Only)',
@@ -487,7 +488,8 @@ export const UNITS: any[] = [
           'wind',
           'light'
         ],
-        type: 'magic'
+        type: 'magic',
+        dualable: false
       }
     ],
     dual: false
