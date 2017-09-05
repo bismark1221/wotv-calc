@@ -10,12 +10,14 @@ export class ChainService {
   private total: number;
   private multi: number;
   private nbHits: number;
+  private best: any;
   private hits: any[] = [];
   private lastHitter: number;
   private nextHitter: number;
   private lastElements: string[];
   private combo: any[] = [];
   private nbCombo: number[] = [];
+  private spark: boolean = true;
   private result: any = {
     modifier: 0,
     combo: '0'
@@ -188,15 +190,27 @@ export class ChainService {
     let elementsModifier = this.calculateModifierByElements(unit); // Need to be always here
 
     if (combo) {
-      this.multi += 0.1 + elementsModifier + (unit.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0); // TODO manage spark
-      this.multi > 4 ? this.multi = 4 : true;
+      this.multi += 0.1 + elementsModifier;
+      if (this.multi < 4) {
+        if (this.spark && this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
+          this.spark = false;
+          this.multi += 0.3;
+        } else {
+          this.spark = true;
+        }
+      }
+
+      if (this.multi > 4) {
+        this.multi = 4;
+      }
+
       this.combo[this.combo.length - 1]++;
     } else {
       this.multi = 1;
       this.combo.push(0);
     }
 
-    if (this.units.length === 2) {
+    if (this.units.length > 1) {
       this.hits[this.nbHits].combo = this.combo[this.combo.length - 1];
     }
 
@@ -277,21 +291,39 @@ export class ChainService {
     this.dataSubject.next(this.hits);
   }
 
-  findBestFrames(): any {
-    let bestFrames = 0;
-    let bestModifier = 0;
-    for (let i = -10; i <= 10; i++) {
-      // let modifier = this.calculateChain(i);
-      // if (modifier > bestModifier) {
-      //   bestModifier = modifier;
-      //   bestFrames = i;
-      // }
-    }
-
-    return {
-      bestFrames: bestFrames,
-      bestModifier: bestModifier
+  findBestFrames() {
+    this.best = {
+      modifier: {frames: [], max: 0},
+      combo: {frames: [], max: 0}
     };
+
+    this.calculateAllPossibleFrames(0);
+
+    return this.best;
+  }
+
+  private calculateAllPossibleFrames(unitPosition: number) {
+    if (unitPosition < this.units.length) {
+      for (let i = -10; i <= 10; i++) {
+        this.units[unitPosition].framesGap = i;
+        this.calculateAllPossibleFrames(unitPosition + 1);
+      }
+    } else {
+      let modifier = this.calculateChain();
+      if (modifier > this.best.modifier.max) {
+        this.best.modifier.max = modifier;
+        this.units.forEach((unit, index) => {
+          this.best.modifier.frames[index] = unit.framesGap;
+        });
+      }
+
+      if (Math.max.apply(null, this.combo) > this.best.combo.max) {
+        this.best.combo.max = Math.max.apply(null, this.combo);
+        this.units.forEach((unit, index) => {
+          this.best.combo.frames[index] = unit.framesGap;
+        });
+      }
+    }
   }
 
   getResult(): number {

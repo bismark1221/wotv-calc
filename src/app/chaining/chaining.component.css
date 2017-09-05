@@ -19,14 +19,12 @@
 }
 
 .selectSlider {
-  width: 590px;
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  padding: 10px;
+  padding: 10px 20px;
   position: relative;
-  margin-left: 20px;
 }
 
 .firstSelectLevel {
@@ -39,6 +37,14 @@
 
 .littleMarginBottom {
   margin-bottom: 10px;
+}
+
+.mediumMarginRight {
+  margin-right: 20px;
+}
+
+.highMarginRight {
+  margin-right: 30px;
 }
 
 .chainParameters {
@@ -68,7 +74,6 @@
   border-radius: .25rem;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   padding: 10px;
-  margin-left: 20px;
   position: relative;
 }
 
@@ -289,10 +294,12 @@
 
 nouislider {
   margin-bottom: 45px;
+  width: 230px;
+  display: inline-block;
 }
 
 .topBlock {
-  display: inline-block;
+  margin: 0 auto 10px;
 }
 
 .selectFramesGap {
@@ -327,6 +334,10 @@ nouislider {
 
 .buttonsAbility {
   display: inline-block;
+}
+
+.buttonsChain {
+  width: 278px;
 }
 
 .bestChainers {

@@ -1,9 +1,9 @@
 <div class="row unit form-group">
   <div class="chainParameters" #chainDiv>
-    <div class="topBlock verticalTop littleMarginBottom" *ngFor="let i of [0,1,2,3,4,5]">
-      <div class="inlineBlock verticalTop">
+    <div class="topBlock verticalTop" *ngFor="let line of [0,3]">
+      <div class="inlineBlock verticalTop" *ngFor="let i of [0 + line, 1 + line, 2 + line]">
 
-        <div class="selectUnitZone" *ngIf="i === 0 || chain[i - 1]">
+        <div class="selectUnitZone" *ngIf="i === 0 || chain[i - 1]" [ngClass]="{'mediumMarginRight': (i % 3 !== 2)}">
           <button *ngIf="chain[i] || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
           <div class="inlineBlock firstSelectLevel" *ngIf="!bestChainers[0]">
@@ -289,30 +289,40 @@
   <div class="selectChainZone">
     <div class="selectSlider">
       <label>Difference in first hit frame</label>
-      <nouislider [config]="sliderConfig" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()"></nouislider>
-      <button class="btn btn-secondary fullWidth" type="button" (click)="findBestFrames()">Find best frame difference</button>
+      <div>
+        <nouislider
+          *ngFor="let unit of chain; let i = index"
+          [config]="sliderConfig"
+          [(ngModel)]="unit.framesGap"
+          (ngModelChange)="onChangeChain()"
+          [ngClass]="{'highMarginRight': (i % 3 !== 2 && chain[i + 1])}">
+        </nouislider>
+      </div>
+      <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
+      <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
     </div>
     <div class="selectFramesGap">
       <label>Difference in first hit frame</label>
-      <div class="input-group">
+      <div class="input-group" *ngFor="let unit of chain; let i = index">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(false)">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(unit, false)">
             <i class="fa fa-minus" aria-hidden="true"></i>
           </button>
         </span>
-        <input class="form-control inputFramesGap" type="number" id="chain_framesGap" [(ngModel)]="framesGap" (ngModelChange)="checkFramesGap()">
+        <input class="form-control inputFramesGap" type="number" id="chain_framesGap" [(ngModel)]="unit.framesGap" (ngModelChange)="checkFramesGap(unit)">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(true)">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(unit, true)">
             <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </span>
       </div>
-      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames()">Find best frame difference</button>
+      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
+      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">Find max combo</button>
     </div>
   </div>
 </div>
 
-<div class="row littleMarginTop" *ngIf="chain[0]">
+<div class="row littleMarginTop" *ngIf="chain[0] && !findInProgress">
   <div class="selectDetailZone">
     <h2>Result</h2>
     <p>
@@ -334,8 +344,11 @@
     </p> -->
   </div>
 </div>
+<div class="row littleMarginTop" *ngIf="chain[0] && findInProgress">
+  LOADING !!!!!
+</div>
 
-<app-chain-chart *ngIf="chain[0]"></app-chain-chart>
+<app-chain-chart *ngIf="chain[0] && !findInProgress"></app-chain-chart>
 <div *ngIf="chain[0]">
   <p>Legend</p>
   <div class="legendColorBlock">

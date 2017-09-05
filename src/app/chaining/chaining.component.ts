@@ -54,8 +54,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       max: 10
     },
     pips: {
-      mode: 'steps',
-      density: 10
+      mode: 'count',
+      values: 11,
+      density: 6
     }
   };
 
@@ -355,42 +356,46 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.changeMultiSelectDropdown();
   }
 
-  updateFramesGap(position: number, minusPlus: boolean) {
-    minusPlus ? this.chain[position].framesGap++ : this.chain[position].framesGap--;
-    this.checkFramesGap(position);
+  updateFramesGap(unit: any, minusPlus: boolean) {
+    minusPlus ? unit.framesGap++ : unit.framesGap--;
+    this.checkFramesGap(unit);
   }
 
-  checkFramesGap(position: number) {
-    if (this.chain[position].framesGap <= -10) {
-      this.chain[position].framesGap = -10;
-    } else if (this.chain[position].framesGap >= 10) {
-      this.chain[position].framesGap = 10;
+  checkFramesGap(unit: any) {
+    if (unit.framesGap <= -10) {
+      unit.framesGap = -10;
+    } else if (unit.framesGap >= 10) {
+      unit.framesGap = 10;
     }
 
     this.onChangeChain();
   }
 
-  findBestFrames() {
-    // this.framesGap = this.chainService.findBestFrames().bestFrames;
-    // this.chainService.getChain(this.framesGap);
+  findBestFrames(type: string) {
+    let result = this.chainService.findBestFrames();
+    result[type].frames.forEach((framesGap, index) => {
+      this.chain[index].framesGap = framesGap;
+    });
+    this.onChangeChain();
   }
 
   findBestChainers() {
     let chainers = [];
     let allUnits = this.units.concat(this.createdUnits);
+    let nextChainerPosition = this.chainService.units.length;
     this.bestChainers = [];
 
     allUnits.forEach(unit => {
-      this.chainService.units[1] = JSON.parse(JSON.stringify(unit));
+      this.chainService.units[nextChainerPosition] = JSON.parse(JSON.stringify(unit));
 
       unit.abilities.forEach(ability => {
-        this.chainService.units[1].ability = ability;
+        this.chainService.units[nextChainerPosition].ability = ability;
         let result = this.chainService.findBestFrames();
         chainers.push({
           unit: unit,
           ability: ability,
-          frames: result.bestFrames,
-          modifier: result.bestModifier
+          frames: result.modifier.frames,
+          modifier: result.modifier.max
         });
       })
     });

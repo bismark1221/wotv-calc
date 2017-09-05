@@ -57,7 +57,7 @@ export class ChainChartComponent implements OnInit {
   }
 
   private updateMinMaxFrame = function() {
-    this.minFrame = this.data[0] ? this.data[0].hit: 0;
+    this.minFrame = 0;
     this.maxFrame = this.data[this.data.length - 1] ? this.data[this.data.length - 1].hit + 1: 100;
   }
 
