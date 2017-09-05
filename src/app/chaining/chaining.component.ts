@@ -332,8 +332,8 @@ export class ChainingComponent implements OnInit {
     this.onChangeChain();
   }
 
-  findBestFrames() {
-    this.framesGap = this.chainService.findBestFrames().bestFrames;
+  findBestFrames(type: string) {
+    this.framesGap = this.chainService.findBestFrames()[type].bestFrames;
     this.chainService.getChain(this.framesGap);
   }
 
@@ -347,7 +347,7 @@ export class ChainingComponent implements OnInit {
 
       unit.abilities.forEach(ability => {
         this.chainService.chainers[1].ability = ability;
-        let result = this.chainService.findBestFrames();
+        let result = this.chainService.findBestFrames()['modifier'];
         chainers.push({
           unit: unit,
           ability: ability,

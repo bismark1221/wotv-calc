@@ -321,20 +321,31 @@ export class ChainService {
   }
 
   findBestFrames(): any {
-    let bestFrames = 0;
-    let bestModifier = 0;
+    let result = {
+      modifier: {
+        bestFrames: 0,
+        bestModifier: 0
+      },
+      combo: {
+        bestFrames: 0,
+        bestCombo: 0
+      }
+    };
+
     for (let i = -10; i <= 10; i++) {
       let modifier = this.calculateChain(i);
-      if (modifier > bestModifier) {
-        bestModifier = modifier;
-        bestFrames = i;
+      if (modifier > result.modifier.bestModifier) {
+        result.modifier.bestFrames = i;
+        result.modifier.bestModifier = modifier;
+      }
+
+      if (Math.max.apply(null, this.combo) > result.combo.bestCombo) {
+        result.combo.bestFrames = i;
+        result.combo.bestCombo = Math.max.apply(null, this.combo);
       }
     }
 
-    return {
-      bestFrames: bestFrames,
-      bestModifier: bestModifier
-    };
+    return result;
   }
 
   getResult(): number {

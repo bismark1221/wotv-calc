@@ -298,7 +298,8 @@
     <div class="selectSlider">
       <label>Difference in first hit frame</label>
       <nouislider [config]="sliderConfig" [(ngModel)]="framesGap" (ngModelChange)="onChangeChain()"></nouislider>
-      <button class="btn btn-secondary fullWidth" type="button" (click)="findBestFrames()">Find best frame difference</button>
+      <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
+      <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
     </div>
     <div class="selectFramesGap">
       <label>Difference in first hit frame</label>
@@ -315,7 +316,8 @@
           </button>
         </span>
       </div>
-      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames()">Find best frame difference</button>
+      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
+      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">Find max combo</button>
     </div>
   </div>
 </div>
