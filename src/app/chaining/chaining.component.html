@@ -322,7 +322,7 @@
   </div>
 </div>
 
-<div class="row littleMarginTop" *ngIf="chain[0] && !findInProgress">
+<div class="row littleMarginTop" *ngIf="chain[0]">
   <div class="selectDetailZone">
     <h2>Result</h2>
     <p>
@@ -344,11 +344,8 @@
     </p> -->
   </div>
 </div>
-<div class="row littleMarginTop" *ngIf="chain[0] && findInProgress">
-  LOADING !!!!!
-</div>
 
-<app-chain-chart *ngIf="chain[0] && !findInProgress"></app-chain-chart>
+<app-chain-chart *ngIf="chain[0]"></app-chain-chart>
 <div *ngIf="chain[0]">
   <p>Legend</p>
   <div class="legendColorBlock">
