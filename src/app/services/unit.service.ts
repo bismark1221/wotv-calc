@@ -8,6 +8,7 @@ import { UNITS } from '../data/units';
 
 @Injectable()
 export class UnitService {
+  private units: Unit[];
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
   private sre = /^\s+|\s+$/g;
   private snre = /\s+/g;
@@ -67,11 +68,12 @@ export class UnitService {
         unit.constructUnitFromJson(element);
         units.push(unit);
       });
+      this.units = units;
       return units;
     });
   }
 
-  getUnit(id: number): Promise<Unit> {
-    return this.getUnits().then(units => units.find(unit => unit.id === id));
+  getUnit(id: number): Unit {
+    return this.units.find(unit => unit.id === id);
   }
 }

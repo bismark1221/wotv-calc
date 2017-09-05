@@ -63,7 +63,7 @@ export class ChainChartComponent implements OnInit {
 
   private getUnitsName = function() {
     let unitsName = [];
-    this.chainService.chainers.forEach((item, index) => {
+    this.chainService.units.forEach((item, index) => {
       item.name ? unitsName.push((index + 1) + '.' + item.name) : true;
     });
     return unitsName;

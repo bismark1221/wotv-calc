@@ -90,3 +90,7 @@ button, input, optgroup, select, textarea {
   left: 3px !important;
   margin-left: 0px !important;
 }
+
+.select2-container--bootstrap .select2-results>.select2-results__options {
+  max-height: 300px;
+}

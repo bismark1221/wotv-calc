@@ -10,81 +10,64 @@ export class ChainService {
   private total: number;
   private multi: number;
   private nbHits: number;
-  private diffFirstHits: number;
   private hits: any[] = [];
-  private lastHiter: number;
+  private lastHitter: number;
+  private nextHitter: number;
   private lastElements: string[];
   private combo: any[] = [];
+  private nbCombo: number[] = [];
   private result: any = {
     modifier: 0,
     combo: '0'
   }
 
-  chainers: any[] = [];
+  units: any[] = [];
   finisher: Unit;
-  framesGap: number = 1;
 
   private dataSubject = new BehaviorSubject<any[]>(this.hits);
   $hits = this.dataSubject.asObservable();
 
-  private getElements(unit: any): string[] {
-    let elements = [];
+  // Once Upon A Time
+  private initializeChain() {
+    this.nbHits = 0;
+    this.multi = 1;
+    this.hits = [];
+    this.lastElements = [];
+    this.combo = [];
+    this.nbCombo = [];
 
-    if (unit.ability.type === 'physic') {
-      unit.weapons.forEach(weapon => {
-        if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
-          elements.push(weapon);
+    this.getElements();
+    this.calculateHitsAndFrames();
+    this.calculateHitDamage();
+    this.insertFirstHit();
+  }
+
+  private getElements() {
+    this.units.forEach(unit => {
+      let elements = [];
+
+      if (unit.ability.type === 'physic') {
+        unit.weapons.forEach(weapon => {
+          if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
+            elements.push(weapon);
+          }
+        });
+      }
+
+      unit.ability.elements.forEach(element => {
+        if (element !== '' && elements.findIndex(x => x === element) === -1) {
+          elements.push(element);
         }
       });
-    }
 
-    unit.ability.elements.forEach(element => {
-      if (element !== '' && elements.findIndex(x => x === element) === -1) {
-        elements.push(element);
-      }
+      unit.elements = elements;
     });
-
-    return elements;
-  }
-
-  private calculateModifierByElements(unit: any): number {
-    let matchingElements = 0;
-    let elements = this.getElements(unit);
-
-    elements.forEach(element => {
-      if(this.lastElements.findIndex(x => x === element) !== -1) {
-        matchingElements++;
-      }
-    })
-
-    this.lastElements = elements;
-
-    return matchingElements * 0.2;
-  }
-
-  private calculateTotal(unit: any, combo: boolean): void {
-    let elementsModifier = this.calculateModifierByElements(unit); // Need to be always here
-
-    if (combo) {
-      this.multi += 0.1 + elementsModifier + (this.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0);
-      this.multi > 4 ? this.multi = 4 : true;
-      this.combo[this.combo.length - 1]++;
-    } else {
-      this.multi = 1;
-      this.combo.push(0);
-    }
-
-    if (this.chainers.length === 2) {
-      this.hits[this.nbHits].combo = this.combo[this.combo.length - 1];
-    }
-
-    this.total = this.total + (unit.hitDamage * this.multi)
   }
 
   private getDebuffModifier(element: string): number {
     let modifier = 1;
 
-    this.chainers.forEach(unit => {
+    this.units.forEach(unit => {
       if (unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
         modifier = unit.ability.debuff[element] / 100 + 1;
       }
@@ -94,9 +77,9 @@ export class ChainService {
   }
 
   private calculateHitDamage() {
-    this.chainers.forEach(unit => {
+    this.units.forEach(unit => {
       unit.totalDamage = 0;
-      let elements = this.getElements(unit);
+      let elements = unit.elements;
       let realIgnore = unit.ability.ignore * 2 / 100 + 1;
       let base = unit.ability.base
 
@@ -117,7 +100,7 @@ export class ChainService {
   }
 
   private sortFramesArray() {
-    this.chainers.forEach(unit => {
+    this.units.forEach(unit => {
       unit.frames.sort((a: any, b: any) => {
         if (a.frame < b.frame) {
           return -1;
@@ -134,48 +117,11 @@ export class ChainService {
     });
   }
 
-  private addHit(unit: number, hit: any, combo: boolean) {
-    let unitName = (unit + 1) + '.' + this.chainers[unit].name;
-    let frame = hit.frame + (unit === 1 ? this.framesGap : 0);
-    let divided = false;
-
-    let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? 'chain' : 'break';
-    type = 'unit' + (unit + 1).toString() + '-' + type + (hit.type === 'classic' ? '1' : '2');
-
-    for (let i = 1; i <= 2; i++) {
-      if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === frame) {
-        this.hits[this.nbHits - i].divided = true;
-        frame += 0.5;
-        divided = true;
-      }
-    }
-
-    this.hits[this.nbHits] = {
-      unitName: unitName,
-      hit: frame,
-      type: type,
-      divided: divided
-    };
-    this.calculateTotal(this.chainers[unit], combo);
-    this.nbHits++;
-    this.lastHiter = unit;
-  }
-
-  private calculateFramesDiffForFirstHits() {
-    if (this.chainers.length === 2) {
-      let firstHitUnit1 = this.chainers[0].ability.firstHit + this.chainers[0].ability.offset;
-      let firstHitUnit2 = this.chainers[1].ability.firstHit + this.chainers[1].ability.offset;
-      this.diffFirstHits = firstHitUnit1 - firstHitUnit2 + this.framesGap;
-    } else {
-      this.diffFirstHits = 0;
-    }
-  }
-
   private calculateHitsAndFrames() {
-    this.chainers.forEach(unit => {
+    this.units.forEach(unit => {
       unit.frames = [];
-      let countFrames = 0;
-      let dualCountFrames = unit.ability.offset + unit.ability.castTime;
+      let countFrames = 0 + unit.framesGap;
+      let dualCountFrames = unit.ability.offset + unit.ability.castTime + unit.framesGap;
 
       if (!unit.ability.linearFrames) {
         unit.ability.framesList.split('-').forEach(hit => {
@@ -209,103 +155,114 @@ export class ChainService {
     this.sortFramesArray();
   }
 
-  private initializeChain() {
-    this.nbHits = 0;
-    this.multi = 1;
-    this.hits = [];
-    this.lastElements = [];
-    this.combo = [];
+  private insertFirstHit() {
+    let minFramesGap = 0;
+    let unitPosition = 0;
+    this.units.forEach((unit, index) => {
+      if (unit.framesGap < minFramesGap) {
+        minFramesGap = unit.framesGap;
+        unitPosition = index;
+      }
+      this.nbCombo.push(0);
+    });
 
-    this.calculateHitsAndFrames();
-    this.calculateHitDamage();
-    this.calculateFramesDiffForFirstHits();
+    this.addHit(unitPosition, false);
   }
 
-  private calculateChain(framesGap: number) {
-    this.framesGap = framesGap;
+  // Dark Side
+  private calculateModifierByElements(unit: any): number {
+    let matchingElements = 0;
+
+    unit.elements.forEach(element => {
+      if(this.lastElements.findIndex(x => x === element) !== -1) {
+        matchingElements++;
+      }
+    })
+
+    this.lastElements = unit.elements;
+
+    return matchingElements * 0.2;
+  }
+
+  private calculateTotal(unit: any, combo: boolean): void {
+    let elementsModifier = this.calculateModifierByElements(unit); // Need to be always here
+
+    if (combo) {
+      this.multi += 0.1 + elementsModifier + (unit.framesGap === 0 && this.nbHits % 2 != 0 ? 0.3 : 0); // TODO manage spark
+      this.multi > 4 ? this.multi = 4 : true;
+      this.combo[this.combo.length - 1]++;
+    } else {
+      this.multi = 1;
+      this.combo.push(0);
+    }
+
+    if (this.units.length === 2) {
+      this.hits[this.nbHits].combo = this.combo[this.combo.length - 1];
+    }
+
+    this.total = this.total + (unit.hitDamage * this.multi)
+  }
+
+  private addHit(unitPosition: number, combo: boolean) {
+    let unit = this.units[unitPosition];
+    let unitName = (unitPosition + 1) + '.' + unit.name;
+    let hit = unit.frames[this.nbCombo[unitPosition]];
+    let divided = false;
+
+    let type = combo || this.nbHits === 0 || this.units.length === 1 ? 'chain' : 'break';
+    type = 'unit1-' + type + (hit.type === 'classic' ? '1' : '2');
+
+    for (let i = 1; i <= this.units.length; i++) {
+      if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
+        this.hits[this.nbHits - i].divided = true;
+        hit.frame += 0.5;
+        divided = true;
+      }
+    }
+
+    this.hits[this.nbHits] = {
+      unitName: unitName,
+      hit: hit.frame,
+      type: type,
+      divided: divided
+    };
+
+    this.calculateTotal(unit, combo);
+    this.nbCombo[unitPosition]++;
+    this.nbHits++;
+    this.lastHitter = unitPosition;
+  }
+
+  private getNextHitter(): number {
+    let minFrame = 10000;
+    let minPosition = -1;
+    this.units.forEach((unit, index) => {
+      let nbCombo = this.nbCombo[index];
+      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
+        minFrame = unit.frames[nbCombo].frame;
+        minPosition = index;
+      }
+    });
+
+    this.nextHitter = minPosition;
+
+    return minPosition;
+  }
+
+  private calculateChain() {
     this.total = 0;
 
-    if (this.chainers.length > 0) {
+    if (this.units.length > 0) {
       this.initializeChain();
 
-      let nbCombo1 = 0;
-      let nbCombo2 = 0;
-
-      let hits1 = this.chainers[0].frames.length;
-      let hits2 = this.chainers[1] ? this.chainers[1].frames.length : 0;
-
-      let actualFrame1 = 0;
-      let actualFrame2 = 0;
-      let prevFrame1 = 0;
-      let prevFrame2 = 0;
-
-      if (this.framesGap >= 0) {
-        this.addHit(0, this.chainers[0].frames[0], false);
-        nbCombo1++;
-      } else {
-        this.addHit(1, this.chainers[1].frames[0], false);
-        nbCombo2++;
-      }
-
-      while (nbCombo1 < hits1 && nbCombo2 < hits2 && hits2 !== 0) {
-        actualFrame1 = this.chainers[0].frames[nbCombo1].frame;
-        actualFrame2 = this.chainers[1].frames[nbCombo2].frame;
-
-        if (nbCombo1 > 0) {
-          prevFrame1 = this.chainers[0].frames[nbCombo1 - 1].frame;
-        }
-
-        if (nbCombo2 > 0) {
-          prevFrame2 = this.chainers[1].frames[nbCombo2 - 1].frame;
-        }
-
-        if (this.lastHiter == 0) {
-          if (actualFrame2 + this.framesGap <= actualFrame1) {
-            this.addHit(1, this.chainers[1].frames[nbCombo2], (actualFrame2 + this.framesGap) - prevFrame1 <= 21);
-            nbCombo2++;
-          } else {
-            this.addHit(0, this.chainers[0].frames[nbCombo1], false);
-            nbCombo1++;
-          }
+      while (this.getNextHitter() !== -1) {
+        if (this.lastHitter === this.nextHitter) {
+          this.addHit(this.nextHitter, false);
         } else {
-          if (actualFrame1 <= actualFrame2 + this.framesGap) {
-            this.addHit(0, this.chainers[0].frames[nbCombo1], actualFrame1 - (prevFrame2 + this.framesGap) <= 21);
-            nbCombo1++;
-          } else {
-            this.addHit(1, this.chainers[1].frames[nbCombo2], false);
-            nbCombo2++;
-          }
+          let previousFrame = this.units[this.lastHitter].frames[this.nbCombo[this.lastHitter] - 1].frame;
+          let actualFrame = this.units[this.nextHitter].frames[this.nbCombo[this.nextHitter]].frame;
+          this.addHit(this.nextHitter, (actualFrame - previousFrame <= 21));
         }
-      }
-
-      for (let i = 0; nbCombo1 < hits1; i++) {
-        actualFrame1 = this.chainers[0].frames[nbCombo1].frame;
-
-        if (nbCombo2 > 0) {
-          prevFrame2 = this.chainers[1].frames[nbCombo2 - 1].frame;
-        }
-
-        if (this.lastHiter == 1 && actualFrame1 >= prevFrame2 + this.framesGap) {
-          this.addHit(0, this.chainers[0].frames[nbCombo1], actualFrame1 - (prevFrame2 + this.framesGap) <= 21);
-        } else {
-          this.addHit(0, this.chainers[0].frames[nbCombo1], false);
-        }
-        nbCombo1++;
-      }
-
-      for (let i = 0; nbCombo2 < hits2; i++) {
-        actualFrame2 = this.chainers[1].frames[nbCombo2].frame;
-
-        if (nbCombo1 > 0) {
-          prevFrame1 = this.chainers[0].frames[nbCombo1 - 1].frame;
-        }
-
-        if (this.lastHiter == 0 && actualFrame2 + this.framesGap >= prevFrame1) {
-          this.addHit(1, this.chainers[1].frames[nbCombo2], (actualFrame2 + this.framesGap) - prevFrame1 <= 21);
-        } else {
-          this.addHit(1, this.chainers[1].frames[nbCombo2], false);
-        }
-        nbCombo2++;
       }
     } else {
       this.hits = [];
@@ -314,8 +271,8 @@ export class ChainService {
     return Math.round(this.total);
   }
 
-  getChain(framesGap: number) {
-    this.result.modifier = this.calculateChain(framesGap);
+  getChain() {
+    this.result.modifier = this.calculateChain();
     this.result.combo = this.combo.join(" + ");
     this.dataSubject.next(this.hits);
   }
@@ -324,11 +281,11 @@ export class ChainService {
     let bestFrames = 0;
     let bestModifier = 0;
     for (let i = -10; i <= 10; i++) {
-      let modifier = this.calculateChain(i);
-      if (modifier > bestModifier) {
-        bestModifier = modifier;
-        bestFrames = i;
-      }
+      // let modifier = this.calculateChain(i);
+      // if (modifier > bestModifier) {
+      //   bestModifier = modifier;
+      //   bestFrames = i;
+      // }
     }
 
     return {
@@ -343,9 +300,5 @@ export class ChainService {
 
   getHits(): any[] {
     return this.hits;
-  }
-
-  getDiffFirstHits(): number {
-    return this.diffFirstHits;
   }
 }

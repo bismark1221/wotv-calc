@@ -8,11 +8,11 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { MarkdownModule } from 'angular2-markdown';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
-import { Select2Module } from 'ng2-select2';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
 import { SliderModule } from './slider/slider.module';
+import { Select2Module } from './select2/select2.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';

@@ -9,18 +9,11 @@
           <div class="inlineBlock firstSelectLevel" *ngIf="!bestChainers[0]">
             <label *ngIf="!chain[i] || (chain[i] && !chain[i].activeRename)" for="chain{{i}}">Unit {{ i + 1 }}</label>
             <div *ngIf="!chain[i] || chain[i].id < 10000">
-              <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
-                <option value="" selected>Predefined units</option>
-                <option *ngFor="let unit of units | type:'chain'" [ngValue]="unit">{{ unit.name | capitalize}}</option>
-              </select>
 
               <select2
                 [data]="listUnits | async"
                 [options]="select2Options"
-                [value]=""
                 (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-
-              <p>{{exampleModel}}</p>
 
               <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
             </div>
@@ -328,7 +321,7 @@
     <p *ngIf="chain[1]">
       Total combo : {{chainService.getResult().combo}}
     </p>
-    <p *ngIf="chain[1]">
+    <!-- <p *ngIf="chain[1]">
       <span *ngIf="chainService.getDiffFirstHits() === 0">
         Both units must be sent on the same frame
       </span>
@@ -338,7 +331,7 @@
       <span *ngIf="chainService.getDiffFirstHits() < 0">
         {{chain[1].name}} must be sent {{-chainService.getDiffFirstHits()}} frames ({{-chainService.getDiffFirstHits() * 1 / 60 * 1000 | round}}ms) before {{chain[0].name}}
       </span>
-    </p>
+    </p> -->
   </div>
 </div>
 

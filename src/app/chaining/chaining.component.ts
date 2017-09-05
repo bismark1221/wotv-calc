@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewChecked, ChangeDetec
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
-import { Select2OptionData } from 'ng2-select2';
+import { Select2OptionData } from '../select2/select2.interface';
 
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
@@ -34,7 +34,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   multiElements: IMultiSelectOption[] = [];
   abilityTypes: string[] = ['physic', 'magic', 'hybrid', 'LB'];
 
-  framesGap: number = 1;
   viewOptions: boolean[] = [false, false];
   bestChainers: any[] = [];
 
@@ -84,8 +83,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     theme: 'bootstrap'
   }
 
-  exampleModel: any;
-
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
@@ -93,10 +90,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private localStorageService: LocalStorageService,
     private ref: ChangeDetectorRef
   ) { }
-
-  changed(foo) {
-    console.log(foo)
-  }
 
   private getUnits(): void {
     this.unitService.getUnits().then(units => {
@@ -115,8 +108,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         obs.next(this.observableUnits);
         obs.complete();
       });
-
-      console.log(this.listUnits);
 
       this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
       this.sortUnits();
@@ -289,38 +280,39 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.selectedAbilities[1] = this.selectedAbilities[0];
 
     this.chain[1] = JSON.parse(JSON.stringify(this.chain[0]));
-    this.chainService.chainers[1] = this.chain[1];
+    this.chainService.units[1] = this.chain[1];
     this.updateLocalDebuffs(1);
 
     this.onChangeChain();
   }
 
-  onChangeUnit(position: number, ability: number = 0) {
-    console.log(this.selectedUnits[position])
-    if (this.selectedUnits[position] === '') {
+  onChangeUnit(position: number, unitId: any = 0, ability: number = 0) {
+    this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
+
+    if (this.selectedUnits[position] === undefined) {
       if (position === 0 && this.chain[position + 1]) {
         this.selectedUnits[position] = this.selectedUnits[position + 1];
         this.selectedUnits[position + 1] = '';
         this.chain.splice(position + 1, 1);
-        this.chainService.chainers.splice(position + 1, 1);
+        this.chainService.units.splice(position + 1, 1);
         this.viewOptions[position] = this.viewOptions[position + 1];
         this.viewOptions[position + 1] = false;
       } else {
         this.chain.splice(position, 1);
-        this.chainService.chainers.splice(position, 1);
+        this.chainService.units.splice(position, 1);
         this.viewOptions[position] = false;
       }
-      this.framesGap = 1;
     }
 
-    if (this.selectedUnits[position] !== '') {
+    if (this.selectedUnits[position] !== undefined) {
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-      this.chainService.chainers[position] = this.chain[position];
+      this.chainService.units[position] = this.chain[position];
       this.selectedAbilities[position] = ability;
       this.chain[position].ability = this.chain[position].abilities[ability];
       this.updateLocalDebuffs(position);
       this.chain[position].activeRename = false;
       this.chain[position].ability.activeRename = false;
+      this.chain[position].framesGap =  0;
     }
 
     this.onChangeChain();
@@ -328,7 +320,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   onChangeChain(): void {
     this.bestChainers = [];
-    this.chainService.getChain(this.framesGap);
+    this.chainService.getChain();
     this.changeMultiSelectDropdown();
   }
 
@@ -363,24 +355,24 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.changeMultiSelectDropdown();
   }
 
-  updateFramesGap(minusPlus: boolean) {
-    minusPlus ? this.framesGap++ : this.framesGap--;
-    this.checkFramesGap();
+  updateFramesGap(position: number, minusPlus: boolean) {
+    minusPlus ? this.chain[position].framesGap++ : this.chain[position].framesGap--;
+    this.checkFramesGap(position);
   }
 
-  checkFramesGap() {
-    if (this.framesGap <= -10) {
-      this.framesGap = -10;
-    } else if (this.framesGap >= 10) {
-      this.framesGap = 10;
+  checkFramesGap(position: number) {
+    if (this.chain[position].framesGap <= -10) {
+      this.chain[position].framesGap = -10;
+    } else if (this.chain[position].framesGap >= 10) {
+      this.chain[position].framesGap = 10;
     }
 
     this.onChangeChain();
   }
 
   findBestFrames() {
-    this.framesGap = this.chainService.findBestFrames().bestFrames;
-    this.chainService.getChain(this.framesGap);
+    // this.framesGap = this.chainService.findBestFrames().bestFrames;
+    // this.chainService.getChain(this.framesGap);
   }
 
   findBestChainers() {
@@ -389,10 +381,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.bestChainers = [];
 
     allUnits.forEach(unit => {
-      this.chainService.chainers[1] = JSON.parse(JSON.stringify(unit));
+      this.chainService.units[1] = JSON.parse(JSON.stringify(unit));
 
       unit.abilities.forEach(ability => {
-        this.chainService.chainers[1].ability = ability;
+        this.chainService.units[1].ability = ability;
         let result = this.chainService.findBestFrames();
         chainers.push({
           unit: unit,
@@ -418,12 +410,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       }
     }
 
-    this.chainService.chainers.splice(1, 1);
+    this.chainService.units.splice(1, 1);
   }
 
-  selectUnit(position: number, unit: any, ability: any, frames: number) {
+  selectUnit(position: number, unit: any, ability: any) {
     this.selectedUnits[position] = unit;
-    this.framesGap = frames;
     this.onChangeUnit(position, this.findPositionOfAbility(unit, ability));
   }
 }
