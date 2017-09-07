@@ -12,6 +12,7 @@ import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
+import { ChainBackService } from '../services/chain.back.service';
 
 @Component({
   selector: 'app-chaining',
@@ -87,6 +88,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
+    private chainBackService: ChainBackService,
     private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
     private ref: ChangeDetectorRef
@@ -371,8 +373,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.onChangeChain();
   }
 
-  findBestFrames(type: string) {
-    let result = this.chainService.findBestFrames();
+  async findBestFrames(type: string) {
+    this.chainBackService.chainService = this.chainService;
+    let result = await this.chainBackService.findBestFrames();
+    console.log(result);
+    // let result = this.chainService.findBestFrames();
     result[type].frames.forEach((framesGap, index) => {
       this.chain[index].framesGap = framesGap;
     });

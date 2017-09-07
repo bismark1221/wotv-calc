@@ -19,6 +19,7 @@
 }
 
 .selectSlider {
+  max-width: 792px;
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
