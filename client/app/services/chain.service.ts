@@ -22,6 +22,7 @@ export class ChainService {
     modifier: 0,
     combo: '0'
   }
+  private test = 0;
 
   units: any[] = [];
   finisher: Unit;
@@ -309,6 +310,8 @@ export class ChainService {
         this.calculateAllPossibleFrames(unitPosition + 1);
       }
     } else {
+      this.test++;
+      console.log(this.test);
       let modifier = this.calculateChain();
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;

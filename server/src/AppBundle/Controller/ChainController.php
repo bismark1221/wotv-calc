@@ -10,6 +10,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\View\View;
 
+use AppBundle\Service\ChainService;
+
 class ChainController extends FOSRestController
 {
     /**
@@ -29,17 +31,17 @@ class ChainController extends FOSRestController
     /**
      * @Rest\Post("/api/find-best-chains")
      */
-    public function postAction(Request $request)
+    public function findBestChainsAction(Request $request)
     {
-        $data = new \StdClass();
-        error_log(var_export($request->request, true));
-        $foo = json_decode($request->getContent(), true);
-        if(empty($foo))
+        $data = json_decode($request->getContent(), true);
+        if(empty($data))
         {
           return new View("NULL VALUES ARE NOT ALLOWED", Response::HTTP_NOT_ACCEPTABLE);
         }
 
-        $data->bar = $foo;
-        return $foo;
+        $chainService = new ChainService;
+        $test = $chainService->findBestFrames($data);
+
+        return $test;
     }
 }

@@ -374,10 +374,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   async findBestFrames(type: string) {
-    this.chainBackService.chainService = this.chainService;
-    let result = await this.chainBackService.findBestFrames();
+    let result;
+    if (type == 'combo') {
+      this.chainBackService.chainService = this.chainService;
+      result = await this.chainBackService.findBestFrames();
+    } else {
+      result = this.chainService.findBestFrames();
+    }
     console.log(result);
-    // let result = this.chainService.findBestFrames();
     result[type].frames.forEach((framesGap, index) => {
       this.chain[index].framesGap = framesGap;
     });
