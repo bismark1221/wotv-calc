@@ -18,11 +18,11 @@ export class ChainService {
   private combo: any[] = [];
   private nbCombo: number[] = [];
   private spark: boolean = true;
+  private frames: number[];
   private result: any = {
     modifier: 0,
     combo: '0'
   }
-  private test = 0;
 
   units: any[] = [];
   finisher: Unit;
@@ -297,6 +297,7 @@ export class ChainService {
       modifier: {frames: [], max: 0},
       combo: {frames: [], max: 0}
     };
+    this.frames = [];
 
     this.calculateAllPossibleFrames(0);
 
@@ -306,12 +307,11 @@ export class ChainService {
   private calculateAllPossibleFrames(unitPosition: number) {
     if (unitPosition < this.units.length) {
       for (let i = -10; i <= 10; i++) {
+        this.frames[unitPosition] = i;
         this.units[unitPosition].framesGap = i;
         this.calculateAllPossibleFrames(unitPosition + 1);
       }
-    } else {
-      this.test++;
-      console.log(this.test);
+    } else if (this.frames.findIndex(x => x === -10) !== -1) {
       let modifier = this.calculateChain();
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;

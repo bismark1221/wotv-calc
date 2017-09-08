@@ -20,6 +20,7 @@ class ChainService
         'combo' => '0'
     );
     private $test = 0;
+    private $frames = [];
 
     public function findBestFrames($units) {
         ini_set('max_execution_time', 600);
@@ -36,21 +37,27 @@ class ChainService
             )
         );
 
+        $this->countUnits = count($this->units);
         $this->calculateAllPossibleFrames(0);
 
         return $this->best;
     }
 
     private function calculateAllPossibleFrames($unitPosition) {
-        if ($unitPosition < count($this->units)) {
+        if ($unitPosition < $this->countUnits) {
             for ($i = -10; $i <= 10; $i++) {
+                $this->frames[$unitPosition] = $i;
                 $this->units[$unitPosition]['framesGap'] = $i;
                 $this->calculateAllPossibleFrames($unitPosition + 1);
             }
-        } else {
+        } elseif (array_search(-10, $this->frames) !== false) {
             $modifier = $this->calculateChain();
-            $this->test++;
-            error_log($this->test);
+            // $text = "";
+            // foreach ($this->units as $unit) {
+            //     $text .= $unit['framesGap'] . " ; ";
+            // }
+            //$this->test++;
+            //error_log($text . $this->test . " ; " . $modifier);
             if ($modifier > $this->best['modifier']['max']) {
                 $this->best['modifier']['max'] = $modifier;
                 foreach ($this->units as $index => $unit) {

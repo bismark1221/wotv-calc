@@ -12,7 +12,6 @@ export class ChainBackService {
   constructor(private http: Http) { }
 
   async findBestFrames() {
-
     const response = await this.http.post(this.findBestChainsUrl, this.chainService.units).toPromise();
     return response.json();
   }

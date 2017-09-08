@@ -34,7 +34,7 @@ class ChainController extends FOSRestController
     public function findBestChainsAction(Request $request)
     {
         $data = json_decode($request->getContent(), true);
-        if(empty($data))
+        if(empty($data) || !is_array($data))
         {
           return new View("NULL VALUES ARE NOT ALLOWED", Response::HTTP_NOT_ACCEPTABLE);
         }
