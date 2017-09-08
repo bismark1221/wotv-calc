@@ -6,7 +6,7 @@ import { BehaviorSubject } from "rxjs/BehaviorSubject";
 import { Unit } from '../entities/unit';
 
 @Injectable()
-export class ChainService {
+export class FindBestService {
   private total: number;
   private multi: number;
   private nbHits: number;
@@ -19,19 +19,11 @@ export class ChainService {
   private nbCombo: number[] = [];
   private spark: boolean = true;
   private frames: number[];
-  private result: any = {
-    modifier: 0,
-    combo: '0'
-  }
 
   units: any[] = [];
-  finisher: Unit;
-
-  private dataSubject = new BehaviorSubject<any[]>(this.hits);
-  $hits = this.dataSubject.asObservable();
 
   // Once Upon A Time
-  private initializeChain(fullInit: boolean = true) {
+  private initializeChain() {
     this.nbHits = 0;
     this.multi = 1;
     this.hits = [];
@@ -39,19 +31,7 @@ export class ChainService {
     this.combo = [];
     this.nbCombo = [];
 
-    if (fullInit) {
-      this.units.forEach(unit => {
-        if (unit.ability.type === 'LB') {
-          unit.ability.dualable = false;
-        }
-      });
-    }
-
     this.calculateHitsAndFrames();
-    if (fullInit) {
-      this.getElements();
-      this.calculateHitDamage();
-    }
     this.insertFirstHit();
   }
 
@@ -234,19 +214,19 @@ export class ChainService {
     let type = combo || this.nbHits === 0 || this.units.length === 1 ? 'chain' : 'break';
     type = 'unit1-' + type + (hit.type === 'classic' ? '1' : '2');
 
-    for (let i = 1; i <= this.units.length; i++) {
-      if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
-        this.hits[this.nbHits - i].divided = true;
-        hit.frame += 0.5;
-        divided = true;
-      }
-    }
+    // for (let i = 1; i <= this.units.length; i++) {
+    //   if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
+    //     this.hits[this.nbHits - i].divided = true;
+    //     hit.frame += 0.5;
+    //     divided = true;
+    //   }
+    // }
 
     this.hits[this.nbHits] = {
       unitName: unitName,
       hit: hit.frame,
-      type: type,
-      divided: divided
+      // type: type,
+      // divided: divided
     };
 
     this.calculateTotal(unit, combo);
@@ -271,11 +251,11 @@ export class ChainService {
     return minPosition;
   }
 
-  private calculateChain(fullInit: boolean = true) {
+  private calculateChain() {
     this.total = 0;
 
     if (this.units.length > 0) {
-      this.initializeChain(fullInit);
+      this.initializeChain();
 
       while (this.getNextHitter() !== -1) {
         if (this.lastHitter === this.nextHitter) {
@@ -291,12 +271,6 @@ export class ChainService {
     }
 
     return Math.round(this.total);
-  }
-
-  getChain() {
-    this.result.modifier = this.calculateChain();
-    this.result.combo = this.combo.join(" + ");
-    this.dataSubject.next(this.hits);
   }
 
   findBestFrames() {
@@ -326,7 +300,7 @@ export class ChainService {
         this.calculateAllPossibleFrames(unitPosition + 1);
       }
     } else if (this.frames.findIndex(x => x === -10) !== -1) {
-      let modifier = this.calculateChain(false);
+      let modifier = this.calculateChain();
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;
         this.units.forEach((unit, index) => {
@@ -341,13 +315,5 @@ export class ChainService {
         });
       }
     }
-  }
-
-  getResult(): number {
-    return this.result;
-  }
-
-  getHits(): any[] {
-    return this.hits;
   }
 }

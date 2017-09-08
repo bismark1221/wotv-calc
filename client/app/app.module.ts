@@ -26,6 +26,7 @@ import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
 import { ChainBackService } from './services/chain.back.service';
+import { FindBestService } from './services/find-best.service';
 import { LoggerService } from './services/logger.service';
 import { ElementsService } from './services/elements.service';
 
@@ -75,7 +76,8 @@ import { LegalComponent } from './legal/legal.component';
     LoggerService,
     ChainService,
     ElementsService,
-    ChainBackService
+    ChainBackService,
+    FindBestService
   ],
   bootstrap: [AppComponent]
 })

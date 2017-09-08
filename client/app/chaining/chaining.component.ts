@@ -13,6 +13,7 @@ import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
 import { ChainBackService } from '../services/chain.back.service';
+import { FindBestService } from '../services/find-best.service';
 
 @Component({
   selector: 'app-chaining',
@@ -89,6 +90,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private unitService: UnitService,
     private chainService: ChainService,
     private chainBackService: ChainBackService,
+    private findBestService: FindBestService,
     private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
     private ref: ChangeDetectorRef
@@ -379,7 +381,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.chainBackService.chainService = this.chainService;
       result = await this.chainBackService.findBestFrames();
     } else {
-      result = this.chainService.findBestFrames();
+      this.findBestService.units = this.chainService.units;
+      result = this.findBestService.findBestFrames();
     }
     console.log(result);
     result[type].frames.forEach((framesGap, index) => {

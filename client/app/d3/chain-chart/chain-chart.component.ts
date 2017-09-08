@@ -150,7 +150,7 @@ export class ChainChartComponent implements OnInit {
       .on("mouseover", d => {
         if (d.type !== 'dotted') {
           let text = '';
-          if (d.combo !== undefined) {
+          if (d.combo !== undefined && this.chainService.units.length > 1) {
             text += 'combo : ' + d.combo + '<br/>';
             tooltip.attr('height', '30px')
           } else {
