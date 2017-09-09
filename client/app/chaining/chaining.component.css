@@ -374,6 +374,16 @@ nouislider {
   display: inline-block;
 }
 
+.buttonDuplicate {
+  width: 100px;
+  display: inline-block;
+}
+
+.selectDuplicate {
+  width: 120px;
+  display: inline-block;
+}
+
 @media (max-width: 738px) {
   .selectFramesGap {
     display: block;

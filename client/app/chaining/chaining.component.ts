@@ -12,7 +12,6 @@ import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
-import { ChainBackService } from '../services/chain.back.service';
 import { FindBestService } from '../services/find-best.service';
 
 @Component({
@@ -27,6 +26,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   private units: Unit[];
 
   chain: any[] = [];
+  idSelected: string[] = [];
+  idCreated: string[] = [];
   selectedUnits: any[] = ['', '', '', '', '', ''];
   selectedAbilities: any[] = ['', '', '', '', '', ''];
 
@@ -38,6 +39,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   viewOptions: boolean[] = [false, false];
   bestChainers: any[] = [];
+  duplicatePosition: number = 0;
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -64,7 +66,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private observableUnits =[
     {
-      id: '',
+      id: 'unselect',
       text: 'Predefined units',
       children: []
     },
@@ -72,15 +74,24 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       id: '0',
       text: 'Chainers',
       children: []
+    }
+  ];
+
+  private observableCreatedUnits =[
+    {
+      id: 'unselect',
+      text: 'My units',
+      children: []
     },
     {
       id: '0',
-      text: 'Finishers',
+      text: 'Chainers',
       children: []
     }
   ];
 
   listUnits: Observable<Array<Select2OptionData>>;
+  listCreatedUnits: Observable<Array<Select2OptionData>>;
 
   select2Options: Select2Options = {
     theme: 'bootstrap'
@@ -89,7 +100,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
-    private chainBackService: ChainBackService,
     private findBestService: FindBestService,
     private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
@@ -101,10 +111,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.units = units;
 
       units.forEach(unit => {
-        this.observableUnits[(unit.type === 'chain' ? 1 : 2)].children.push({
-          id: unit.id.toString(),
-          text: unit.name
-        });
+        if (unit.type === 'chain') {
+          this.observableUnits[1].children.push({
+            id: unit.id.toString(),
+            text: unit.name
+          });
+        }
       });
 
       delete this.observableUnits[0].children;
@@ -115,6 +127,23 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       });
 
       this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
+
+      this.createdUnits.forEach(unit => {
+        if (unit.type === 'chain') {
+          this.observableCreatedUnits[1].children.push({
+            id: unit.id.toString(),
+            text: unit.name
+          });
+        }
+      });
+
+      delete this.observableCreatedUnits[0].children;
+
+      this.listCreatedUnits = Observable.create((obs) => {
+        obs.next(this.observableCreatedUnits);
+        obs.complete();
+      });
+
       this.sortUnits();
     });
   }
@@ -189,6 +218,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   ngOnInit(): void {
+    for (let i = 0; i <= 5; i++) {
+      this.idSelected[i] = 'unselect';
+      this.idCreated[i] = 'unselect';
+    }
     this.getUnits();
     this.getElements();
   }
@@ -232,6 +265,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.viewOptions[position] = true;
     this.onChangeUnit(position);
     this.saveUnit(position);
+    this.idSelected[position] = this.selectedUnits[position].id;
   }
 
   createNewUnitFromPredefined(position: number) {
@@ -272,36 +306,46 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.createdUnits.splice(this.positionIds[this.chain[position].id], 1);
     this.localSaveUnits();
     this.selectedUnits[position] = '';
-    this.onChangeUnit(position);
+    this.onChangeUnit(position, 'unselect');
   }
 
-  unselectUnit(position: number) {
-    this.selectedUnits[position] = '';
-    this.onChangeUnit(position);
-  }
+  duplicateUnit(position: number, copy: number) {
+    this.idSelected[position] = this.idSelected[copy];
+    this.selectedUnits[position] = this.selectedUnits[copy];
+    this.selectedAbilities[position] = this.selectedAbilities[copy];
 
-  duplicateUnit() {
-    this.selectedUnits[1] = this.selectedUnits[0];
-    this.selectedAbilities[1] = this.selectedAbilities[0];
-
-    this.chain[1] = JSON.parse(JSON.stringify(this.chain[0]));
-    this.chainService.units[1] = this.chain[1];
-    this.updateLocalDebuffs(1);
+    this.chain[position] = JSON.parse(JSON.stringify(this.chain[copy]));
+    this.chainService.units[position] = this.chain[position];
+    this.updateLocalDebuffs(position);
 
     this.onChangeChain();
   }
 
-  onChangeUnit(position: number, unitId: any = 0, ability: number = 0) {
-    this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
+  unselectUnit(position: number) {
+    this.selectedUnits[position] = '';
+    this.onChangeUnit(position, 'unselect');
+  }
 
-    if (this.selectedUnits[position] === undefined) {
-      if (position === 0 && this.chain[position + 1]) {
+  onChangeUnit(position: number, unitId: any = 0, ability: number = 0) {
+    this.idSelected[position] = unitId;
+    if (unitId < 10000) {
+      this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
+    } else if (unitId >= 10000) {
+      this.selectedUnits[position] = this.createdUnits.find(unit => unit.id === parseInt(unitId));
+    }
+
+    console.log(unitId)
+
+    if (unitId === 'unselect') {
+      if (this.chain[position + 1]) {
         this.selectedUnits[position] = this.selectedUnits[position + 1];
         this.selectedUnits[position + 1] = '';
         this.chain.splice(position + 1, 1);
         this.chainService.units.splice(position + 1, 1);
         this.viewOptions[position] = this.viewOptions[position + 1];
         this.viewOptions[position + 1] = false;
+        this.idSelected[position] = this.selectedUnits[position].id;
+        this.idSelected[position + 1] = 'unselect';
       } else {
         this.chain.splice(position, 1);
         this.chainService.units.splice(position, 1);
@@ -309,7 +353,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       }
     }
 
-    if (this.selectedUnits[position] !== undefined) {
+    if (unitId !== 'unselect') {
       this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
       this.chainService.units[position] = this.chain[position];
       this.selectedAbilities[position] = ability;
@@ -321,12 +365,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     this.onChangeChain();
-  }
-
-  onChangeChain(): void {
-    this.bestChainers = [];
-    this.chainService.getChain();
-    this.changeMultiSelectDropdown();
+    this.duplicatePosition = 0;
   }
 
   addAbility(position: number) {
@@ -375,16 +414,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.onChangeChain();
   }
 
-  async findBestFrames(type: string) {
+  onChangeChain(): void {
+    this.bestChainers = [];
+    this.chainService.getChain();
+    this.changeMultiSelectDropdown();
+  }
+
+  findBestFrames(type: string) {
     let result;
-    if (type == 'combo') {
-      this.chainBackService.chainService = this.chainService;
-      result = await this.chainBackService.findBestFrames();
-    } else {
-      this.findBestService.units = this.chainService.units;
-      result = this.findBestService.findBestFrames();
-    }
-    console.log(result);
+
+    this.findBestService.units = this.chainService.units;
+    result = this.findBestService.findBestFrames();
+
     result[type].frames.forEach((framesGap, index) => {
       this.chain[index].framesGap = framesGap;
     });
@@ -396,13 +437,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let allUnits = this.units.concat(this.createdUnits);
     let nextChainerPosition = this.chainService.units.length;
     this.bestChainers = [];
+    this.findBestService.units = this.chainService.units;
 
     allUnits.forEach(unit => {
-      this.chainService.units[nextChainerPosition] = JSON.parse(JSON.stringify(unit));
+      this.findBestService.units[nextChainerPosition] = JSON.parse(JSON.stringify(unit));
 
       unit.abilities.forEach(ability => {
-        this.chainService.units[nextChainerPosition].ability = ability;
-        let result = this.chainService.findBestFrames();
+        this.findBestService.units[nextChainerPosition].ability = ability;
+        let result = this.findBestService.findBestFrames();
         chainers.push({
           unit: unit,
           ability: ability,
@@ -432,6 +474,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   selectUnit(position: number, unit: any, ability: any) {
     this.selectedUnits[position] = unit;
-    this.onChangeUnit(position, this.findPositionOfAbility(unit, ability));
+    this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability));
   }
 }

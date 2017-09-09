@@ -6,23 +6,23 @@
         <div class="selectUnitZone" *ngIf="i === 0 || chain[i - 1]" [ngClass]="{'mediumMarginRight': (i % 3 !== 2)}">
           <button *ngIf="chain[i] || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
-          <div class="inlineBlock firstSelectLevel" *ngIf="!bestChainers[0]">
+          <div class="inlineBlock firstSelectLevel" *ngIf="chain[i] || !bestChainers[0]">
             <label *ngIf="!chain[i] || (chain[i] && !chain[i].activeRename)" for="chain{{i}}">Unit {{ i + 1 }}</label>
             <div *ngIf="!chain[i] || chain[i].id < 10000">
-
               <select2
                 [data]="listUnits | async"
+                [value]="idSelected[i]"
                 [options]="select2Options"
                 (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-
               <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
             </div>
 
             <div *ngIf="(!chain[i] || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': !chain[i]}">
-              <select class="form-control" id="chain{{i}}" [(ngModel)]="selectedUnits[i]" (ngModelChange)="onChangeUnit(i)">
-                <option value="" selected>My units</option>
-                <option *ngFor="let unit of createdUnits | type:'chain'" [ngValue]="unit">{{ unit.name | capitalize}}</option>
-              </select>
+              <select2
+                [data]="listCreatedUnits | async"
+                [value]="idSelected[i]"
+                [options]="select2Options"
+                (valueChanged)="onChangeUnit(i, $event.value);"></select2>
               <button *ngIf="chain[i] && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
               <button *ngIf="chain[i]" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
             </div>
@@ -55,8 +55,15 @@
               <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnitFromPredefined(i)">Clone To My Unit</button>
             </div>
 
-            <div *ngIf="chain[i - 1] && !chain[i]">
-              <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="duplicateUnit()">Duplicate Unit 1</button>
+            <div *ngIf="!chain[i] && chain.length === 1">
+              <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="duplicateUnit(i, 0)">Duplicate {{ chain[0].name }}</button>
+            </div>
+
+            <div class="littleMarginTop" *ngIf="!chain[i] && chain.length > 1">
+              <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition">
+                <option *ngFor="let duplicate of chain; let j = index" [ngValue]="j">{{ duplicate.name | capitalize }}</option>
+              </select>
+              <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i, duplicatePosition)">Duplicate</button>
             </div>
 
             <hr class="selectHr" *ngIf="chain[i]"/>
@@ -72,7 +79,7 @@
             </button>
           </div>
 
-          <div class="inlineBlock firstSelectLevel" *ngIf="i == 1 && bestChainers[0] && !chain[i]">
+          <div class="inlineBlock firstSelectLevel" *ngIf="!chain[i] && bestChainers[0]">
             <label>Best chainers</label>
             <button
               *ngFor="let chainer of bestChainers; let j = index"
@@ -298,8 +305,13 @@
           [ngClass]="{'highMarginRight': (i % 3 !== 2 && chain[i + 1])}">
         </nouislider>
       </div>
-      <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
-      <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
+      <div *ngIf="chain.length <= 4">
+        <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
+        <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
+      </div>
+      <div *ngIf="chain.length >= 5">
+        Sorry but calculation for such chain are too heavy :( I'm working a queue system...
+      </div>
     </div>
     <div class="selectFramesGap">
       <label>Difference in first hit frame</label>
@@ -316,8 +328,13 @@
           </button>
         </span>
       </div>
-      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
-      <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">Find max combo</button>
+      <div *ngIf="chain.length <= 4">
+        <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
+        <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">Find max combo</button>
+      </div>
+      <div *ngIf="chain.length >= 5">
+        Sorry but calculation for such chain are too heavy :( I'm working a queue system...
+      </div>
     </div>
   </div>
 </div>

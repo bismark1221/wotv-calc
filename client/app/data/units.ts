@@ -151,7 +151,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: 'Divine Ruination + 2 (JP Only)',
+        name: 'Divine Ruination + 2',
         base: 200,
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -165,7 +165,7 @@ export const UNITS: any[] = [
       }
     ],
     weapons : [
-      'ligth'
+      'light'
     ]
   },
   {
@@ -391,7 +391,7 @@ export const UNITS: any[] = [
         firstHit: 40
       },
       {
-        name: 'Tri-Attack + 2 (JP Only)',
+        name: 'Tri-Attack + 2',
         base: 300,
         linearFrames: false,
         framesList: '0-4-6-4-6-4-6-4-6-4-6-4',
