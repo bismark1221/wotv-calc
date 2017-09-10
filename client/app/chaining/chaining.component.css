@@ -26,6 +26,7 @@
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   padding: 10px 20px;
   position: relative;
+  margin-right: 20px;
 }
 
 .firstSelectLevel {
@@ -68,7 +69,7 @@
 }
 
 .selectUnitZone {
-  min-width: 250px;
+  width: 250px;
   min-height: 142px;
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
@@ -105,7 +106,7 @@
 }
 
 .selectRightZoneBox {
-  max-width: 730px;
+  width: 730px;
 }
 
 .selectRightZoneDividedTwo {
@@ -162,7 +163,7 @@
 }
 
 .btnAddDebuff {
-  width: 100%;
+  width: 710px;
 }
 
 .verticalTop {
@@ -294,7 +295,7 @@
 }
 
 nouislider {
-  margin-bottom: 45px;
+  margin: 0 10px 45px;
   width: 230px;
   display: inline-block;
 }
@@ -384,7 +385,184 @@ nouislider {
   display: inline-block;
 }
 
-@media (max-width: 738px) {
+.allSelectUnit {
+  width: 994px;
+  text-align: center;
+}
+
+.expandedSelecUnit {
+  width: 1004px;
+}
+
+.marginUnit0 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit1 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit2 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit3 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit4 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit5 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1049px) {
+  .mobileSeparatorSelectRightZone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .topBlock {
+    display: block;
+  }
+
+  .expandedSelecUnit {
+    width: 792px;
+  }
+
+  .divAddDebuff {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 839px) {
+  nouislider {
+    width: 220px;
+  }
+
+  .selectSlider {
+    max-width: 522px;
+  }
+
+  .buttonsChain {
+    width: 238px;
+  }
+
+  .topBlock {
+    display: block;
+  }
+
+  .allSelectUnit {
+    width: 542px;
+  }
+
+  .selectRightZoneBox {
+    width: 500px;
+  }
+
+  .expandedSelecUnit {
+    width: 522px !important;
+  }
+
+  .selectAbilityTop {
+    width: 228px !important;
+  }
+
+  .selectRightZone {
+    padding-left: 0;
+    max-width: 500px;
+  }
+
+  .paddingRightTwoColumns {
+    padding-right: 10px !important;
+  }
+
+  .selectRightZoneOneThird {
+    padding-right: 0px;
+    width: 248px;
+  }
+
+  .emptyLabel {
+    display: none;
+  }
+
+  .selectAbility {
+    display: block;
+    padding-right: 10px;
+  }
+
+  .buttonsAbility {
+    margin-top: 10px;
+  }
+
+  .tabletMarginLeft {
+    margin-left: 10px;
+  }
+
+  .tabletNoMarginLeft {
+    margin-left: 0 !important;
+  }
+
+  .tabletNoMarginTop {
+    margin-top: 0;
+  }
+
+  .tabletMarginTop {
+    margin-top: 10px;
+  }
+
+  .selectRightZoneDividedTwo {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .selectRightZoneTwoDividedThree {
+    width: 164px;
+  }
+
+  .blockLinearFrames {
+    width: 130px;
+  }
+
+  .blockLinearFrames > label {
+    float: left;
+  }
+
+  .buttonDelete {
+    width: 228px;
+  }
+
+  .selectRightZoneTwoThirdDividedInThird {
+    width: 164px;
+  }
+
+  .selectRightZoneFrames {
+    width: 274px;
+  }
+
+  .divAddDebuff {
+    margin: 0;
+  }
+
+  .btnAddDebuff {
+    width: 490px;
+  }
+}
+
+@media (max-width: 600px) {
+  .selectAbilityTop {
+    padding: 0 !important;
+  }
+
   .selectFramesGap {
     display: block;
     width: 250px;
@@ -394,9 +572,21 @@ nouislider {
     display: none;
   }
 
+  .allSelectUnit {
+    width: 250px
+  }
+
+  .expandedSelecUnit {
+    width: 250px !important;
+  }
+
   .selectUnitZone {
-    margin: 0;
+    margin: 0 0 10px;
     width: 250px;
+  }
+
+  .framesButtons {
+    margin-bottom: 10px;
   }
 
   .selectRightZone {
@@ -407,17 +597,19 @@ nouislider {
   .selectRightZoneOneThird {
     margin-top: 10px;
     margin-left: 0 !important;
+    width: 237px;
+    padding-right: 10px;
   }
 
   .selectRightZoneInFour {
     margin-top: 10px;
-    width: 100%;
+    width: 227px;
     margin-left: 0 !important;
     padding-right: 0;
   }
 
   .selectRightZoneBox {
-    width: 230px !important;
+    width: 227px !important;
     margin-top: 0;
   }
 
@@ -437,7 +629,6 @@ nouislider {
 
   .selectRightZoneMediumBox {
     margin-top: 10px;
-    width: 100%;
   }
 
   .blockLinearFrames {
@@ -449,7 +640,7 @@ nouislider {
     margin-left: 10px
   }
 
-  [type="checkbox"][_ngcontent-c3]:not(:checked) + label[_ngcontent-c3]:after, [type="checkbox"][_ngcontent-c3]:checked + label[_ngcontent-c3]:after {
+  [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
     left: 11px;
   }
 
@@ -483,7 +674,7 @@ nouislider {
   }
 
   .selectRightZoneDividedTwo {
-    width: 100%;
+    width: 227px;
     padding-right: 0;
     margin-top: 0;
   }
@@ -506,11 +697,7 @@ nouislider {
 
   .buttonsAbility {
     margin: 0 !important;
-  }
-
-  .buttonsUnit {
-    margin-left: 10px;
-    width: 100%;
+    width: 227px;
   }
 
   .tabletMarginLeft {
@@ -537,72 +724,12 @@ nouislider {
   .mobileNoMarginTop {
     margin: 0 !important;
   }
-}
 
-@media (max-width: 821px) {
-  .topBlock {
-    display: block;
-  }
-
-  .selectRightZoneBox {
-    width: 500px;
-  }
-
-  .buttonsUnit {
-    margin-left: 0 !important;
-  }
-
-  .selectRightZoneOneThird {
-    margin-left: 10px;
-  }
-
-  .selectRightZoneInFour {
-    margin-left: 10px;
-  }
-
-  .emptyLabel {
-    display: none;
-  }
-
-  .selectAbility {
-    display: block;
-  }
-
-  .buttonsAbility {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  .tabletMarginLeft {
-    margin-left: 10px;
-  }
-
-  .tabletNoMarginLeft {
-    margin-left: 0 !important;
-  }
-
-  .tabletNoMarginTop {
-    margin-top: 0;
-  }
-
-  .tabletMarginTop {
-    margin-top: 10px;
-  }
-
-  .selectRightZoneDividedTwo {
-    width: 100%;
+  .paddingRightTwoColumns {
     padding-right: 0;
   }
 
-  .selectRightZoneTwoDividedThree {
-    width: 164px;
-  }
-}
-
-@media (max-width: 1043px) {
-  .mobileSeparatorSelectRightZone {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
+  .btnAddDebuff {
+    width: 227px;
   }
 }

@@ -7,6 +7,6 @@ import { ELEMENTS } from '../data/elements';
 @Injectable()
 export class ElementsService {
   getElements(): Promise<string[]> {
-    return Promise.resolve(ELEMENTS);
+    return Promise.resolve(JSON.parse(JSON.stringify(ELEMENTS)));
   }
 }

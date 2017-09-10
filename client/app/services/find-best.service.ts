@@ -17,7 +17,6 @@ export class FindBestService {
   private lastElements: string[];
   private combo: any[] = [];
   private nbCombo: number[] = [];
-  private spark: boolean = true;
   private frames: number[];
   private elements: string[];
   private modifierElements: number[] = [];
@@ -53,7 +52,7 @@ export class FindBestService {
         }
 
         this.unitHits[index] = [];
-        for (let i = -10; i <= 10; i++) {
+        for (let i = 0; i <= 20; i++) {
           this.calculateUnitHits(unit, index, i);
         }
 
@@ -165,12 +164,12 @@ export class FindBestService {
 
   private calculateAllPossibleFrames(unitPosition: number) {
     if (unitPosition < this.units.length) {
-      for (let i = -10; i <= 10; i++) {
+      for (let i = 0; i <= 20; i++) {
         this.frames[unitPosition] = i;
         this.units[unitPosition].frames = this.unitHits[unitPosition][i];
         this.calculateAllPossibleFrames(unitPosition + 1);
       }
-    } else if (this.frames.findIndex(x => x === -10) !== -1) {
+    } else if (this.frames.findIndex(x => x === 0) !== -1) {
       let modifier = this.calculateChain();
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;
@@ -214,7 +213,6 @@ export class FindBestService {
     this.lastElements = [];
     this.combo = [];
     this.nbCombo = [];
-    this.spark = true;
 
     this.sortFramesArray();
     this.addHit(this.getNextHitter(), false);
@@ -274,13 +272,8 @@ export class FindBestService {
     if (combo) {
       let elementsModifier = this.calculateModifierByElements(unit);
       this.multi += 0.1 + elementsModifier;
-      if (this.multi < 4) {
-        if (this.spark && this.hits[this.nbHits] === this.hits[this.nbHits - 1]) {
-          this.spark = false;
-          this.multi += 0.3;
-        } else {
-          this.spark = true;
-        }
+      if (this.multi < 4 && this.hits[this.nbHits] === this.hits[this.nbHits - 1]) {
+        this.multi += 0.3;
       }
 
       if (this.multi > 4) {

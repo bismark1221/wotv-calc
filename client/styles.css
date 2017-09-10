@@ -57,14 +57,21 @@ button, input, optgroup, select, textarea {
   height: 40px;
 }
 
-@media (max-width: 738px) {
+@media (max-width: 839px) {
   .dropdown-inline {
     width: 100%;
+    padding-right: 10px;
   }
 
   .dropdown-toggle {
     width: 100%;
     text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-inline {
+    padding-right: 0;
   }
 }
 

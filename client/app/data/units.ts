@@ -993,6 +993,22 @@ export const UNITS: any[] = [
       }
     ]
   },
+  {
+    id: 37,
+    name: 'Queen',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Devastate + 2',
+        linearFrames: false,
+        framesList: '0-46-56-66-96',
+        firstHit: 20,
+        castTime: 40,
+        offset: 0,
+        base: 800
+      }
+    ]
+  },
 // Finish
   {
     id: 2,

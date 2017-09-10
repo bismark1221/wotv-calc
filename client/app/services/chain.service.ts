@@ -17,7 +17,6 @@ export class ChainService {
   private lastElements: string[];
   private combo: any[] = [];
   private nbCombo: number[] = [];
-  private spark: boolean = true;
   private frames: number[];
   private elements: string[];
   private modifierElements: number[] = [];
@@ -242,7 +241,6 @@ export class ChainService {
     this.lastElements = [];
     this.combo = [];
     this.nbCombo = [];
-    this.spark = true;
 
     this.sortFramesArray();
     this.addHit(this.getNextHitter(), false);
@@ -317,13 +315,8 @@ export class ChainService {
     if (combo) {
       let elementsModifier = this.calculateModifierByElements(unit);
       this.multi += 0.1 + elementsModifier;
-      if (this.multi < 4) {
-        if (this.spark && this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
-          this.spark = false;
-          this.multi += 0.3;
-        } else {
-          this.spark = true;
-        }
+      if (this.multi < 4 && this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
+        this.multi += 0.3;
       }
 
       if (this.multi > 4) {
@@ -351,6 +344,32 @@ export class ChainService {
     })
 
     return matchingElements * 0.2;
+  }
+
+  calculateFramesDiffForFirstHits() {
+    let diff = [];
+    this.units.forEach((unit, index) => {
+      diff.push({
+        position: index,
+        firstHit: unit.ability.firstHit + unit.ability.offset + unit.framesGap
+      });
+    });
+
+    diff.sort((a: any, b: any) => {
+      if (a.firstHit < b.firstHit) {
+        return -1;
+      } else if (a.firstHit > b.firstHit) {
+        return 1;
+      } else {
+        if (a.position < b.position) {
+          return -1;
+        } else {
+          return 1;
+        }
+      }
+    });
+
+    return diff;
   }
 
   getResult(): number {

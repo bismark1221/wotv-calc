@@ -29,9 +29,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   idSelected: string[] = [];
   idCreated: string[] = [];
   selectedUnits: any[] = ['', '', '', '', '', ''];
-  selectedAbilities: any[] = ['', '', '', '', '', ''];
+  selectedAbilities: any[] = [0, 0, 0, 0, 0, 0];
 
   createdUnits: any[] = [];
+  diffFirstHits: any[] = [];
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
@@ -54,8 +55,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     start: 1,
     step: 1,
     range: {
-      min: -10,
-      max: 10
+      min: 0,
+      max: 20
     },
     pips: {
       mode: 'count',
@@ -171,7 +172,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private getElements(): void {
     this.elementsService.getElements().then(elements => {
-      this.elements = elements
+      this.elements = elements;
       this.requiredElements = JSON.parse(JSON.stringify(this.elements));
       this.requiredElements.splice(0, 1);
 
@@ -262,10 +263,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.selectedUnits[position] = new Unit();
     this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
     this.selectedUnits[position].activeRename = true;
+    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
+    this.chain[position].ability = this.chain[position].abilities[0];
     this.viewOptions[position] = true;
-    this.onChangeUnit(position);
     this.saveUnit(position);
     this.idSelected[position] = this.selectedUnits[position].id;
+    this.onChangeUnit(position, this.chain[position].id);
   }
 
   createNewUnitFromPredefined(position: number) {
@@ -277,7 +280,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.saveUnit(position);
     this.selectedUnits[position].activeRename = true;
     this.viewOptions[position] = true;
-    this.onChangeUnit(position);
+    this.onChangeUnit(position, this.chain[position].id);
   }
 
   saveUnit(position: number) {
@@ -322,8 +325,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   unselectUnit(position: number) {
+    let deleteLast = false;
+    if (position !== this.chain.length - 1) {
+      deleteLast = true;
+    }
+
     this.selectedUnits[position] = '';
     this.onChangeUnit(position, 'unselect');
+
+    if (deleteLast) {
+      this.selectedUnits[(this.chain.length - 1)] = '';
+      this.onChangeUnit((this.chain.length - 1), 'unselect');
+    }
   }
 
   onChangeUnit(position: number, unitId: any = 0, ability: number = 0) {
@@ -334,38 +347,42 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.selectedUnits[position] = this.createdUnits.find(unit => unit.id === parseInt(unitId));
     }
 
-    console.log(unitId)
-
     if (unitId === 'unselect') {
-      if (this.chain[position + 1]) {
-        this.selectedUnits[position] = this.selectedUnits[position + 1];
-        this.selectedUnits[position + 1] = '';
-        this.chain.splice(position + 1, 1);
-        this.chainService.units.splice(position + 1, 1);
-        this.viewOptions[position] = this.viewOptions[position + 1];
-        this.viewOptions[position + 1] = false;
-        this.idSelected[position] = this.selectedUnits[position].id;
-        this.idSelected[position + 1] = 'unselect';
-      } else {
+      if (position === this.chain.length - 1) {
         this.chain.splice(position, 1);
         this.chainService.units.splice(position, 1);
         this.viewOptions[position] = false;
+        this.selectedAbilities[position] = 0;
+      } else {
+        this.chain.forEach((unit, index) => {
+          if (index >= position && this.chain[index + 1]) {
+            this.selectedUnits[index] = this.selectedUnits[index + 1];
+            this.viewOptions[index] = this.viewOptions[index + 1];
+            this.idSelected[index] = this.selectedUnits[index].id;
+            this.updateChangedUnit(index, this.selectedAbilities[index + 1]);
+          }
+        });
       }
-    }
-
-    if (unitId !== 'unselect') {
-      this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-      this.chainService.units[position] = this.chain[position];
-      this.selectedAbilities[position] = ability;
-      this.chain[position].ability = this.chain[position].abilities[ability];
-      this.updateLocalDebuffs(position);
-      this.chain[position].activeRename = false;
-      this.chain[position].ability.activeRename = false;
-      this.chain[position].framesGap =  0;
+    } else {
+      if (this.chain[position] && this.chain[position].id === unitId) {
+        ability = this.selectedAbilities[position];
+      }
+      this.updateChangedUnit(position, ability);
     }
 
     this.onChangeChain();
     this.duplicatePosition = 0;
+  }
+
+  private updateChangedUnit(position: number, ability: number = 0) {
+    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
+    this.chainService.units[position] = this.chain[position];
+    this.selectedAbilities[position] = ability;
+    this.chain[position].ability = this.chain[position].abilities[ability];
+    this.updateLocalDebuffs(position);
+    this.chain[position].activeRename = false;
+    this.chain[position].ability.activeRename = false;
+    this.chain[position].framesGap =  0;
   }
 
   addAbility(position: number) {
@@ -405,10 +422,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   checkFramesGap(unit: any) {
-    if (unit.framesGap <= -10) {
-      unit.framesGap = -10;
-    } else if (unit.framesGap >= 10) {
-      unit.framesGap = 10;
+    if (unit.framesGap <= 0) {
+      unit.framesGap = 0;
+    } else if (unit.framesGap >= 20) {
+      unit.framesGap = 20;
     }
 
     this.onChangeChain();
@@ -417,6 +434,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   onChangeChain(): void {
     this.bestChainers = [];
     this.chainService.getChain();
+    this.diffFirstHits = this.chainService.calculateFramesDiffForFirstHits();
     this.changeMultiSelectDropdown();
   }
 
