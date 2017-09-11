@@ -1,0 +1,306 @@
+import { Injectable } from '@angular/core';
+
+import 'rxjs/add/operator/toPromise';
+import { BehaviorSubject } from "rxjs/BehaviorSubject";
+
+import { ElementsService } from '../services/elements.service';
+
+@Injectable()
+export class FindBestService {
+  private total: number;
+  private multi: number;
+  private nbHits: number;
+  private best: any;
+  private hits: any[] = [];
+  private lastHitter: number;
+  private nextHitter: number;
+  private lastElements: string[];
+  private combo: any[] = [];
+  private nbCombo: number[] = [];
+  private frames: number[];
+  private elements: string[];
+  private modifierElements: number[] = [];
+  private unitHits: any[] = [];
+
+  units: any[] = [];
+
+  constructor(
+    private elementsService: ElementsService
+  ) {
+    this.getPossibleElements();
+  }
+
+  private getPossibleElements(): void {
+    this.elementsService.getElements().then(elements => {
+      this.elements = elements
+      this.elements.splice(0, 1);
+    });
+  }
+
+  findBestFrames() {
+    this.best = {
+      modifier: {frames: [], max: 0},
+      combo: {frames: [], max: 0}
+    };
+
+    if (this.units.length > 0) {
+      this.frames = [];
+
+      this.units.forEach((unit, index) => {
+        if (unit.ability.type === 'LB') {
+          unit.ability.dualable = false;
+        }
+
+        this.unitHits[index] = [];
+        for (let i = 0; i <= 20; i++) {
+          this.calculateUnitHits(unit, index, i);
+        }
+
+        unit.frames = this.unitHits[index][0];
+      });
+
+      this.getElements();
+      this.calculateDebuffModifier();
+      this.calculateHitDamage();
+      this.calculateAllPossibleFrames(0);
+    }
+
+    return this.best;
+  }
+
+  // Once Upon A Time
+  private calculateUnitHits(unit: any, unitPosition: number, framesGap: number) {
+    this.unitHits[unitPosition][framesGap] = [];
+    let countFrames = 0 + framesGap;
+    let dualCountFrames = unit.ability.offset + unit.ability.castTime + framesGap;
+
+    if (!unit.ability.linearFrames) {
+      unit.ability.framesList.split('-').forEach(hit => {
+        countFrames += Number(hit);
+        this.unitHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+      });
+
+      if (unit.dual && unit.ability.dualable) {
+        unit.ability.framesList.split('-').forEach(hit => {
+          dualCountFrames += Number(hit);
+          this.unitHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+        });
+      }
+    } else {
+      this.unitHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+      for (let i = 1; i < unit.ability.hits; i++) {
+        countFrames += unit.ability.frames;
+        this.unitHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+      }
+
+      if (unit.dual && unit.ability.dualable) {
+        this.unitHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+        for (let i = 1; i < unit.ability.hits; i++) {
+          dualCountFrames += unit.ability.frames;
+          this.unitHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+        }
+      }
+    }
+  }
+
+  private getElements() {
+    this.units.forEach(unit => {
+      let elements = [];
+
+      if (unit.ability.type === 'physic') {
+        unit.weapons.forEach(weapon => {
+          if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
+            elements.push(weapon);
+          }
+        });
+      }
+
+      unit.ability.elements.forEach(element => {
+        if (element !== '' && elements.findIndex(x => x === element) === -1) {
+          elements.push(element);
+        }
+      });
+
+      unit.elements = elements;
+    });
+  }
+
+  private calculateDebuffModifier() {
+    this.modifierElements = [];
+    this.elements.forEach(element => {
+      let modifier = 1;
+
+      this.units.forEach(unit => {
+        if (unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
+          modifier = unit.ability.debuff[element] / 100 + 1;
+        }
+      });
+
+      this.modifierElements[element] = modifier;
+    });
+  }
+
+  private calculateHitDamage() {
+    this.units.forEach(unit => {
+      unit.totalDamage = 0;
+      let realIgnore = unit.ability.ignore * 2 / 100 + 1;
+      let base = unit.ability.base
+
+      if (unit.ability.type === 'hybrid') {
+        base /= 2;
+      }
+
+      if (unit.elements.length > 0) {
+        unit.elements.forEach(element => {
+          unit.totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
+        })
+      } else {
+        unit.totalDamage = base * realIgnore;
+      }
+
+      unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.dualable ? 2 : 1));
+    });
+  }
+
+  private calculateAllPossibleFrames(unitPosition: number) {
+    if (unitPosition < this.units.length) {
+      for (let i = 0; i <= 20; i++) {
+        this.frames[unitPosition] = i;
+        this.units[unitPosition].frames = this.unitHits[unitPosition][i];
+        this.calculateAllPossibleFrames(unitPosition + 1);
+      }
+    } else if (this.frames.findIndex(x => x === 0) !== -1) {
+      let modifier = this.calculateChain();
+      if (modifier > this.best.modifier.max) {
+        this.best.modifier.max = modifier;
+        this.units.forEach((unit, index) => {
+          this.best.modifier.frames[index] = this.frames[index];
+        });
+      }
+
+      let combo = Math.max.apply(null, this.combo);
+      if (combo > this.best.combo.max) {
+        this.best.combo.max = combo;
+        this.units.forEach((unit, index) => {
+          this.best.combo.frames[index] = this.frames[index];
+        });
+      }
+    }
+  }
+
+  private calculateChain() {
+    this.total = 0;
+
+    this.initializeChain();
+
+    while (this.getNextHitter() !== -1) {
+      if (this.lastHitter === this.nextHitter) {
+        this.addHit(this.nextHitter, false);
+      } else {
+        let previousFrame = this.units[this.lastHitter].frames[this.nbCombo[this.lastHitter] - 1].frame;
+        let actualFrame = this.units[this.nextHitter].frames[this.nbCombo[this.nextHitter]].frame;
+        this.addHit(this.nextHitter, (actualFrame - previousFrame <= 21));
+      }
+    }
+
+    return Math.round(this.total);
+  }
+
+  private initializeChain() {
+    this.nbHits = 0;
+    this.multi = 1;
+    this.hits = [];
+    this.lastElements = [];
+    this.combo = [];
+    this.nbCombo = [];
+
+    this.sortFramesArray();
+    this.addHit(this.getNextHitter(), false);
+  }
+
+  private sortFramesArray() {
+    this.units.forEach(unit => {
+      this.nbCombo.push(0);
+      unit.frames.sort((a: any, b: any) => {
+        if (a.frame < b.frame) {
+          return -1;
+        } else if (a.frame > b.frame) {
+          return 1;
+        } else {
+          if (a.type === 'classic') {
+            return -1;
+          } else {
+            return 1;
+          }
+        }
+      });
+    });
+  }
+
+  private getNextHitter(): number {
+    let minFrame = 10000;
+    let minPosition = -1;
+    this.units.forEach((unit, index) => {
+      let nbCombo = this.nbCombo[index];
+      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
+        minFrame = unit.frames[nbCombo].frame;
+        minPosition = index;
+      }
+    });
+
+    this.nextHitter = minPosition;
+
+    return minPosition;
+  }
+
+  private addHit(unitPosition: number, combo: boolean) {
+    let unit = this.units[unitPosition];
+    let hit = unit.frames[this.nbCombo[unitPosition]];
+
+    let type = combo || this.nbHits === 0 ? 'chain' : 'break';
+    type = 'unit1-' + type + (hit.type === 'classic' ? '1' : '2');
+
+    this.hits[this.nbHits] = hit.frame;
+
+    this.calculateTotal(unit, combo);
+    this.nbCombo[unitPosition]++;
+    this.nbHits++;
+    this.lastHitter = unitPosition;
+  }
+
+  private calculateTotal(unit: any, combo: boolean): void {
+    if (combo) {
+      let elementsModifier = this.calculateModifierByElements(unit);
+      this.multi += 0.1 + elementsModifier;
+      if (this.multi < 4 && this.hits[this.nbHits] === this.hits[this.nbHits - 1]) {
+        this.multi += 0.3;
+      }
+
+      if (this.multi > 4) {
+        this.multi = 4;
+      }
+
+      this.combo[this.combo.length - 1]++;
+    } else {
+      this.multi = 1;
+      this.combo.push(0);
+    }
+
+    this.lastElements = unit.elements;
+    this.total = this.total + (unit.hitDamage * this.multi);
+  }
+
+  private calculateModifierByElements(unit: any): number {
+    let matchingElements = 0;
+
+    unit.elements.forEach(element => {
+      if(this.lastElements.findIndex(x => x === element) !== -1) {
+        matchingElements++;
+      }
+    })
+
+    return matchingElements * 0.2;
+  }
+
+
+}

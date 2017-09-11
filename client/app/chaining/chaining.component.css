@@ -1,0 +1,741 @@
+.inlineBlock {
+  display: inline-block;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.helperIcon {
+  color: #848b8e;
+}
+
+.selectChainZone {
+  margin: 0 auto;
+}
+
+.selectSlider {
+  max-width: 792px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px 20px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.firstSelectLevel {
+  width: 228px;
+}
+
+.littleMarginTop {
+  margin-top: 10px;
+}
+
+.littleMarginBottom {
+  margin-bottom: 10px;
+}
+
+.mediumMarginRight {
+  margin-right: 20px;
+}
+
+.highMarginRight {
+  margin-right: 30px;
+}
+
+.chainParameters {
+  margin-top: 20px;
+  margin: auto;
+}
+
+.unit {
+  max-width: 1030px;
+  margin: auto;
+}
+
+.unitImg {
+  height: 100px;
+}
+
+.selectUnit1 {
+  color: #848b8e;;
+  font-size: 4em;
+}
+
+.selectUnitZone {
+  width: 250px;
+  min-height: 142px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  position: relative;
+}
+
+.btnDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0;
+  border-right: 0;
+  padding: 7px;
+  padding-bottom: 5px;
+  line-height: 1;
+}
+
+.selectDetailZone {
+  width: 100%;
+  text-align: left;
+}
+
+.selectRightZone {
+  padding-left: 20px;
+  max-width: 750px;
+  text-align: left;
+}
+
+.selectDeleteZone {
+  width: 30px;
+}
+
+.selectRightZoneBox {
+  width: 730px;
+}
+
+.selectRightZoneDividedTwo {
+  width: 365px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoDividedTwo {
+  width: 175px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoDividedThree {
+  width: 115px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneOneThird {
+  width: 237px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoThirdDividedInThird {
+  width: 156px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneFrames {
+  width: 266px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneMediumBox {
+  width: 120px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneLittleBox {
+  width: 106px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.selectRightZoneTwoThird {
+  width: 484px;
+  display: inline-block;
+}
+
+.btnAddDebuff {
+  width: 710px;
+}
+
+.verticalTop {
+  vertical-align: top;
+}
+
+.selectHr {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.selectHrWithBottomMargin {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.legendColor {
+  width: 20px;
+  height: 20px;
+}
+
+.legendClassic1 {
+  background-color: #3868e8;
+}
+
+.legendClassic2 {
+  background-color: #17bd00;
+}
+
+.legendDual1 {
+  background-color: #42c1cc;
+}
+
+.legendDual2 {
+  background-color: #b4c132;
+}
+
+.legendBreak1 {
+  background-color: #ff0600;
+}
+
+.legendBreak2 {
+  background-color: #ff9492;
+}
+
+.legendColorBlock {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.legendColorBlock > div {
+  display: inline-block;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -8px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: 'X';
+  position: absolute;
+  top: -8px;
+  left: 1px;
+  font-size: 25px;
+  line-height: 1.75;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+  color: #464a4c;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+nouislider {
+  margin: 0 10px 45px;
+  width: 230px;
+  display: inline-block;
+}
+
+.topBlock {
+  margin: 0 auto 10px;
+}
+
+.selectFramesGap {
+  display: none;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  position: relative;
+}
+
+.inputFramesGap {
+  text-align: center;
+}
+
+.mobileSeparatorSelectRightZone {
+  display: none;
+}
+
+.mobileSeparatorSelectDebuff {
+  display: none;
+}
+
+.emptyLabel {
+  display: inline-block;
+}
+
+.blockLinearFrames {
+  text-align: center;
+}
+
+.buttonsAbility {
+  display: inline-block;
+}
+
+.buttonsChain {
+  width: 278px;
+}
+
+.bestChainers {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.bestChainers > li {
+  margin-top: 5px;
+}
+
+.bestChainers > li > a {
+  cursor: pointer;
+}
+
+.bestChainerButton {
+  width: 194px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.largeButtonDuplicate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bestChainerButton > span {
+  font-size: .9rem;
+}
+
+.selectRightZoneInFour {
+  width: 177px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.buttonDuplicate {
+  width: 100px;
+  display: inline-block;
+}
+
+.selectDuplicate {
+  width: 120px;
+  display: inline-block;
+}
+
+.allSelectUnit {
+  width: 994px;
+  text-align: center;
+}
+
+.expandedSelecUnit {
+  width: 1004px;
+}
+
+.marginUnit0 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit1 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit2 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit3 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit4 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.marginUnit5 {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1049px) {
+  .mobileSeparatorSelectRightZone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .topBlock {
+    display: block;
+  }
+
+  .expandedSelecUnit {
+    width: 792px;
+  }
+
+  .divAddDebuff {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 839px) {
+  nouislider {
+    width: 220px;
+  }
+
+  .selectSlider {
+    max-width: 522px;
+  }
+
+  .buttonsChain {
+    width: 238px;
+  }
+
+  .topBlock {
+    display: block;
+  }
+
+  .allSelectUnit {
+    width: 542px;
+  }
+
+  .selectRightZoneBox {
+    width: 500px;
+  }
+
+  .expandedSelecUnit {
+    width: 522px !important;
+  }
+
+  .selectAbilityTop {
+    width: 228px !important;
+  }
+
+  .selectRightZone {
+    padding-left: 0;
+    max-width: 500px;
+  }
+
+  .paddingRightTwoColumns {
+    padding-right: 10px !important;
+  }
+
+  .selectRightZoneOneThird {
+    padding-right: 0px;
+    width: 248px;
+  }
+
+  .emptyLabel {
+    display: none;
+  }
+
+  .selectAbility {
+    display: block;
+    padding-right: 10px;
+  }
+
+  .buttonsAbility {
+    margin-top: 10px;
+  }
+
+  .tabletMarginLeft {
+    margin-left: 10px;
+  }
+
+  .tabletNoMarginLeft {
+    margin-left: 0 !important;
+  }
+
+  .tabletNoMarginTop {
+    margin-top: 0;
+  }
+
+  .tabletMarginTop {
+    margin-top: 10px;
+  }
+
+  .selectRightZoneDividedTwo {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .selectRightZoneTwoDividedThree {
+    width: 164px;
+  }
+
+  .blockLinearFrames {
+    width: 130px;
+  }
+
+  .blockLinearFrames > label {
+    float: left;
+  }
+
+  .buttonDelete {
+    width: 228px;
+  }
+
+  .selectRightZoneTwoThirdDividedInThird {
+    width: 164px;
+  }
+
+  .selectRightZoneFrames {
+    width: 274px;
+  }
+
+  .divAddDebuff {
+    margin: 0;
+  }
+
+  .btnAddDebuff {
+    width: 490px;
+  }
+}
+
+@media (max-width: 600px) {
+  .selectAbilityTop {
+    padding: 0 !important;
+  }
+
+  .selectFramesGap {
+    display: block;
+    width: 250px;
+  }
+
+  .selectSlider {
+    display: none;
+  }
+
+  .allSelectUnit {
+    width: 250px
+  }
+
+  .expandedSelecUnit {
+    width: 250px !important;
+  }
+
+  .selectUnitZone {
+    margin: 0 0 10px;
+    width: 250px;
+  }
+
+  .framesButtons {
+    margin-bottom: 10px;
+  }
+
+  .selectRightZone {
+    padding: 0;
+    width: 228px;
+  }
+
+  .selectRightZoneOneThird {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    width: 237px;
+    padding-right: 10px;
+  }
+
+  .selectRightZoneInFour {
+    margin-top: 10px;
+    width: 227px;
+    margin-left: 0 !important;
+    padding-right: 0;
+  }
+
+  .selectRightZoneBox {
+    width: 227px !important;
+    margin-top: 0;
+  }
+
+  hr {
+    margin-bottom: 0;
+  }
+
+  .selectRightZoneTwoThirdDividedInThird {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  .emptyLabel {
+    display: none;
+  }
+
+  .selectRightZoneMediumBox {
+    margin-top: 10px;
+  }
+
+  .blockLinearFrames {
+    text-align: left;
+    height: 70px;
+  }
+
+  [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+    margin-left: 10px
+  }
+
+  [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+    left: 11px;
+  }
+
+  .selectRightZoneFrames {
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 0;
+  }
+
+  .selectRightZoneLittleBox {
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 0;
+  }
+
+  .multiSelectDropdown {
+    margin-top: 10px;
+  }
+
+  .dropdown-inline {
+    width: 100%;
+  }
+
+  .dropdown-toogle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btnAddDebuff {
+    margin-top: 10px;
+  }
+
+  .selectRightZoneDividedTwo {
+    width: 227px;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .selectRightZoneTwoDividedThree {
+    width: 100% !important;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  .mobileSeparatorSelectDebuff {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .mobileSeparatorSelectRightZone {
+    margin-bottom: 0 !important;
+  }
+
+  .buttonsAbility {
+    margin: 0 !important;
+    width: 227px;
+  }
+
+  .tabletMarginLeft {
+    margin-left: 0 !important;
+  }
+
+  .tabletNoMarginLeft {
+    margin-left: 0 !important;
+  }
+
+  .tabletMarginTop {
+    margin-top: 10px;
+  }
+
+  .tabletNoMarginTop {
+    margin-top: 10px !important;
+  }
+
+  .btn-number {
+    background-color: #dcdcdc;
+    color: #464a4c;
+  }
+
+  .mobileNoMarginTop {
+    margin: 0 !important;
+  }
+
+  .paddingRightTwoColumns {
+    padding-right: 0;
+  }
+
+  .btnAddDebuff {
+    width: 227px;
+  }
+}
