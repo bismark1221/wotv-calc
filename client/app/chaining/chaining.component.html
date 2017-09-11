@@ -13,7 +13,7 @@
               [value]="idSelected[i]"
               [position]="i"
               [options]="select2Options"
-              (valueChanged)="selectChangeUnit(i, $event.value, $event);"></select2>
+              (valueChanged)="onChangeUnit(i, $event.value);"></select2>
             <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
           </div>
 
@@ -23,7 +23,7 @@
               [value]="idSelected[i]"
               [position]="i"
               [options]="select2Options"
-              (valueChanged)="selectChangeUnit(i, $event.value, $event);"></select2>
+              (valueChanged)="onChangeUnit(i, $event.value);"></select2>
             <button *ngIf="chain[i] && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
             <button *ngIf="chain[i]" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
@@ -57,7 +57,7 @@
           </div>
 
           <div *ngIf="!chain[i] && chain.length === 1">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="duplicateUnit(i, 0)">Duplicate {{ chain[0].name }}</button>
+            <button class="btn btn-secondary fullWidth littleMarginTop largeButtonDuplicate" type="button" (click)="duplicateUnit(i, 0)">Duplicate {{ chain[0].name }}</button>
           </div>
 
           <div class="littleMarginTop" *ngIf="!chain[i] && chain.length > 1">

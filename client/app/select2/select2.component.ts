@@ -68,54 +68,35 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log("###### -- " + this.position);
-    console.log(changes);
-
     if(!this.element) {
-      // console.log("No ELEMENT")
       setTimeout(() => {
-        // console.log("end wait")
-        // console.log(this.element)
         if (this.element) {
           this.ngOnChanges(changes)
         }
-      }, 200)
+      }, 200);
 
       return;
     }
 
     if(changes['data']) {
-      // console.log("refresh plugin data")
       this.initPlugin();
 
-      // console.log("val -- " + this.element.val())
       let newValue: string = this.element.val();
-      if(changes['value']) {
-        console.log("change value")
-        let newValue = changes['value'].currentValue;
-        this.setElementValue(newValue);
+      if (changes['value']) {
+        newValue = changes['value'].currentValue;
         this.positionSelected[this.position] = newValue;
-        this.valueChanged.emit({
-          value: newValue,
-          data: this.element.select2('data')
-        });
-      } else {
-        console.log("@@@@@@@@@@@ only send data -- " + this.positionSelected[this.position])
-        this.valueChanged.emit({
-          value: this.positionSelected[this.position],
-          data: this.element.select2('data')
-        });
+      } else if (this.positionSelected[this.position]) {
+        newValue = this.positionSelected[this.position];
       }
-      console.log("TTTTTTTTT")
-      console.log(this.element)
-      console.log(newValue);
-      console.log(this.positionSelected);
-      console.log("TTTTTTTTT")
 
+      this.setElementValue(newValue);
+      this.valueChanged.emit({
+        value: newValue,
+        data: this.element.select2('data')
+      });
     }
 
     if(changes['value']) {
-      // console.log("refresh plugin value")
       const newValue: string = changes['value'].currentValue;
 
       this.setElementValue(newValue);
@@ -130,11 +111,9 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
     if(changes['disabled'] && changes['disabled'].previousValue !== changes['disabled'].currentValue) {
       this.renderer.setElementProperty(this.selector.nativeElement, 'disabled', this.disabled);
     }
-    // console.log("@@@@@");
   }
 
   ngAfterViewInit() {
-    // console.log("ngAfterViewInit")
     this.element = jQuery(this.selector.nativeElement);
     this.initPlugin();
 

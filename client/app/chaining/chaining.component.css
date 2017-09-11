@@ -365,6 +365,12 @@ nouislider {
   text-overflow: ellipsis;
 }
 
+.largeButtonDuplicate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .bestChainerButton > span {
   font-size: .9rem;
 }

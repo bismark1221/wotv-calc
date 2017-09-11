@@ -1001,11 +1001,78 @@ export const UNITS: any[] = [
       {
         name: 'Devastate + 2',
         linearFrames: false,
-        framesList: '0-46-56-66-96',
+        framesList: '0-26-10-10-30',
         firstHit: 20,
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 800
+      }
+    ]
+  },
+  {
+    id: 38,
+    name: 'Prishe',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Raging Fists',
+        hits: 8,
+        frames: 5,
+        firstHit: 2,
+        castTime: 40,
+        offset: 26,
+        base: 350
+      },
+      {
+        name: 'Prishe Special',
+        hits: 15,
+        frames: 4,
+        firstHit: 4,
+        castTime: 40,
+        offset: 26,
+        base: 500,
+        ignore: 50
+      }
+    ]
+  },
+  {
+    id: 39,
+    name: 'Nyx',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'King\'s Sword',
+        hits: 8,
+        frames: 8,
+        firstHit: 82,
+        castTime: 40,
+        offset: 26,
+        base: 200,
+        ignore: 50,
+        debuff: {
+          fire: 50
+        }
+      }
+    ]
+  },
+  {
+    id: 40,
+    name: 'Glauca',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Dark of dawn',
+        hits: 8,
+        frames: 9,
+        firstHit: 102,
+        castTime: 40,
+        offset: 26,
+        base: 200,
+        ignore: 25,
+        debuff: {
+          light: 50,
+          dark: 50
+        }
       }
     ]
   },

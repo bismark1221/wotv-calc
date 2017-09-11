@@ -65,37 +65,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
   };
 
-  observableUnits: Array<Select2OptionData> = [
-    {
-      id: 'unselect',
-      text: 'Predefined units',
-      children: []
-    },
-    {
-      id: '0',
-      text: 'Chainers',
-      children: []
-    }
-  ];
-
-  observableCreatedUnits: Array<Select2OptionData> = [
-    {
-      id: 'unselect',
-      text: 'My units',
-      children: []
-    },
-    {
-      id: '0',
-      text: 'Chainers',
-      children: []
-    }
-  ];
-
-  // listUnits: Observable<Array<Select2OptionData>>;
-  //listCreatedUnits: Observable<Array<Select2OptionData>>;
-
-  // private dataSubject = new BehaviorSubject<Array<Select2OptionData>>(this.observableCreatedUnits);
-  // listCreatedUnits = this.dataSubject.asObservable();
+  observableUnits: Array<Select2OptionData> = [];
+  observableCreatedUnits: Array<Select2OptionData> = [];
 
   select2Options: Select2Options = {
     theme: 'bootstrap'
@@ -114,42 +85,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.unitService.getUnits().then(units => {
       this.units = units;
 
-      units.forEach(unit => {
-        if (unit.type === 'chain') {
-          this.observableUnits[1].children.push({
-            id: unit.id.toString(),
-            text: unit.name
-          });
-        }
-      });
-
-      delete this.observableUnits[0].children;
-
-      // this.listUnits = Observable.create((obs) => {
-      //   obs.next(this.observableUnits);
-      //   obs.complete();
-      // });
-
       this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
 
-      this.createdUnits.forEach(unit => {
-        if (unit.type === 'chain') {
-          this.observableCreatedUnits[1].children.push({
-            id: unit.id.toString(),
-            text: unit.name
-          });
-        }
-      });
-
-      delete this.observableCreatedUnits[0].children;
-
-      //this.dataSubject.next(this.observableCreatedUnits);
-      // this.listCreatedUnits = Observable.create((obs) => {
-      //   obs.next(this.observableCreatedUnits);
-      //   obs.complete();
-      // });
-
-      this.sortUnits();
+      this.reloadList();
     });
   }
 
@@ -267,25 +205,15 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.selectedUnits[position] = new Unit();
     this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
     this.selectedUnits[position].activeRename = true;
+
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chain[position].ability = this.chain[position].abilities[0];
+
     this.viewOptions[position] = true;
     this.saveUnit(position);
 
-    this.observableCreatedUnits[1].children.push({
-      id: this.chain[position].id.toString(),
-      text: this.chain[position].name
-    });
-
-    this.observableCreatedUnits =  JSON.parse(JSON.stringify(this.observableCreatedUnits));
-
-    // console.log(this.observableCreatedUnits)
-
     this.idSelected[position] = this.selectedUnits[position].id;
-    console.log("call change -- " + this.chain[position].id)
     this.onChangeUnit(position, this.chain[position].id);
-    console.log(this.chain)
-    console.log(this.viewOptions)
   }
 
   createNewUnitFromPredefined(position: number) {
@@ -294,9 +222,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     unit.id = undefined;
 
     this.chain[position] = unit;
-    this.saveUnit(position);
-    this.selectedUnits[position].activeRename = true;
     this.viewOptions[position] = true;
+    this.saveUnit(position);
+
+    this.idSelected[position] = this.selectedUnits[position].id;
     this.onChangeUnit(position, this.chain[position].id);
   }
 
@@ -311,15 +240,63 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         this.createdUnits.push(this.chain[position]);
       }
 
-      this.chain[position].activeRename = false;
-      this.chain[position].ability.activeRename = false;
       this.selectedUnits[position] = this.chain[position];
 
-      this.sortUnits();
       this.localSaveUnits();
+      this.reloadList();
     }
 
     this.onChangeChain();
+  }
+
+  private reloadList() {
+    this.sortUnits();
+
+    this.observableUnits = [
+      {
+        id: 'unselect',
+        text: 'Predefined units',
+        children: []
+      },
+      {
+        id: '0',
+        text: 'Chainers',
+        children: []
+      }
+    ];
+
+    this.units.forEach(unit => {
+      if (unit.type === 'chain') {
+        this.observableUnits[1].children.push({
+          id: unit.id.toString(),
+          text: unit.name
+        });
+      }
+    });
+    delete this.observableUnits[0].children;
+
+    this.observableCreatedUnits = [
+      {
+        id: 'unselect',
+        text: 'My units',
+        children: []
+      },
+      {
+        id: '0',
+        text: 'Chainers',
+        children: []
+      }
+    ];
+
+    this.createdUnits.forEach(unit => {
+      if (unit.type === 'chain') {
+        this.observableCreatedUnits[1].children.push({
+          id: unit.id.toString(),
+          text: unit.name
+        });
+      }
+    });
+    delete this.observableCreatedUnits[0].children;
   }
 
   removeUnit(position: number) {
@@ -327,6 +304,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.localSaveUnits();
     this.selectedUnits[position] = '';
     this.onChangeUnit(position, 'unselect');
+    this.reloadList();
   }
 
   duplicateUnit(position: number, copy: number) {
@@ -360,17 +338,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
   }
 
-  selectChangeUnit(position: number, unitId: any, event) {
-    console.log("CHANGE FROM SELECT -- " + position)
-    console.log(event)
-    console.log("CHANGe END -- " + unitId)
-    if (event && event.value) {
-      this.onChangeUnit(position, unitId)
-    }
-  }
-
   onChangeUnit(position: number, unitId: any = 0, ability: number = 0, framesGap: number = 0) {
-    console.log("### -- " + unitId)
     this.idSelected[position] = unitId;
     if (unitId < 10000) {
       this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
@@ -382,7 +350,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       if (position === this.chain.length - 1) {
         this.chain.splice(position, 1);
         this.chainService.units.splice(position, 1);
-        console.log("fff")
         this.viewOptions[position] = false;
         this.selectedAbilities[position] = 0;
       } else {
@@ -396,28 +363,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         });
       }
     } else {
-      console.log("zzzz")
       if (this.chain[position] && this.chain[position].id === unitId) {
         ability = this.selectedAbilities[position];
       }
-      console.log(this.lastCreatedId)
-      console.log("zzz")
-      if (this.lastCreatedId === unitId) {
-        this.viewOptions[position] = true;
-      }
+
       this.updateChangedUnit(position, ability, framesGap);
     }
 
     this.onChangeChain();
     this.duplicatePosition = 0;
-
-    console.log(this.viewOptions)
-    console.log(this.chain)
-    console.log(position)
   }
 
   private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
-    console.log(this.selectedUnits)
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chainService.units[position] = this.chain[position];
     this.selectedAbilities[position] = ability;
