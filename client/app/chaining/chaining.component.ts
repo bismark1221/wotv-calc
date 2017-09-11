@@ -382,7 +382,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.updateLocalDebuffs(position);
     this.chain[position].activeRename = false;
     this.chain[position].ability.activeRename = false;
-    this.chain[position].framesGap = framesGap;
+    this.chain[position].framesGap = (!this.chain[position].framesGap ? framesGap : this.chain[position].framesGap);
   }
 
   addAbility(position: number) {
@@ -492,6 +492,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain.forEach((chainer, index) => {
       chainer.framesGap = framesGaps[index];
     })
+    unit.framesGap = framesGaps[position]
     this.selectedUnits[position] = unit;
     this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[(framesGaps.length - 1)]);
   }
