@@ -710,7 +710,7 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'Tornado (JP only - 5 stars)',
+        name: 'Tornado',
         base: 250,
         hits: 12,
         frames: 12,
