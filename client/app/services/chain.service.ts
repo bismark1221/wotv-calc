@@ -287,8 +287,8 @@ export class ChainService {
     let hit = unit.frames[this.nbCombo[unitPosition]];
     let divided = false;
 
-    let type = combo || this.nbHits === 0 || this.units.length === 1 ? 'chain' : 'break';
-    type = 'unit1-' + type + (hit.type === 'classic' ? '1' : '2');
+    let type = combo || this.nbHits === 0 || this.units.length === 1 ? unit.type : 'break';
+    type = type + (hit.type === 'classic' ? '1' : '2');
 
     for (let i = 1; i <= this.units.length; i++) {
       if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
@@ -300,6 +300,7 @@ export class ChainService {
 
     this.hits[this.nbHits] = {
       unitName: unitName,
+      unitType: unit.type,
       hit: hit.frame,
       type: type,
       divided: divided
@@ -370,6 +371,17 @@ export class ChainService {
     });
 
     return diff;
+  }
+
+  findHighestChainHit() {
+    let maxHit = 0;
+    this.hits.forEach(hit => {
+      if (hit.unitType === 'chain' && hit.hit > maxHit) {
+        maxHit = hit.hit + 1;
+      }
+    });
+
+    return maxHit;
   }
 
   getResult(): number {

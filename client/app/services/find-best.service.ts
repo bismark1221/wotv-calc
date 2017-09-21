@@ -257,9 +257,6 @@ export class FindBestService {
     let unit = this.units[unitPosition];
     let hit = unit.frames[this.nbCombo[unitPosition]];
 
-    let type = combo || this.nbHits === 0 ? 'chain' : 'break';
-    type = 'unit1-' + type + (hit.type === 'classic' ? '1' : '2');
-
     this.hits[this.nbHits] = hit.frame;
 
     this.calculateTotal(unit, combo);

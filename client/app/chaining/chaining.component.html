@@ -300,7 +300,9 @@
       <div>
         <nouislider
           *ngFor="let unit of chain; let i = index"
-          [config]="sliderConfig"
+          [config]="sliderConfig[i]"
+          [min]="sliderConfig[i].range.min"
+          [max]="sliderConfig[i].range.max"
           [(ngModel)]="unit.framesGap"
           (ngModelChange)="onChangeChain()">
         </nouislider>
@@ -317,13 +319,13 @@
       <label>Difference in first hit frame</label>
       <div class="input-group framesButtons" *ngFor="let unit of chain; let i = index">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(unit, false)">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(i, false)">
             <i class="fa fa-minus" aria-hidden="true"></i>
           </button>
         </span>
         <input class="form-control inputFramesGap" type="number" id="chain_framesGap" [(ngModel)]="unit.framesGap" (ngModelChange)="checkFramesGap(unit)">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(unit, true)">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(i, true)">
             <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </span>
