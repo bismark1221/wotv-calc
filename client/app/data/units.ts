@@ -408,7 +408,7 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Commanding Blade',
-        base: 230,
+        base: 200,
         hits: 8,
         frames: 9,
         castTime: 40,
@@ -416,20 +416,17 @@ export const UNITS: any[] = [
         firstHit: 51,
         elements: [
           'lightning'
-        ]
+        ],
+        ignore: 50
       },
       {
         name: 'Lightning Stab',
-        base: 250,
+        base: 230,
         hits: 6,
         frames: 5,
         castTime: 40,
         offset: 16,
-        firstHit: 42,
-        ignore: 50,
-        debuff: {
-          lightning: 50
-        }
+        firstHit: 42
       },
     ]
   },
