@@ -243,6 +243,7 @@ export class ChainService {
     this.nbCombo = [];
 
     this.sortFramesArray();
+
     this.addHit(this.getNextHitter(), false);
   }
 
@@ -270,7 +271,7 @@ export class ChainService {
     let minPosition = -1;
     this.units.forEach((unit, index) => {
       let nbCombo = this.nbCombo[index];
-      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
+      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame <= minFrame) {
         minFrame = unit.frames[nbCombo].frame;
         minPosition = index;
       }

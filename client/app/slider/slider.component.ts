@@ -145,7 +145,6 @@ export class SliderComponent implements ControlValueAccessor, OnInit, OnChanges 
   }
 
   ngOnChanges(changes: any) {
-    console.log(changes)
     if (this.slider && (changes.min || changes.max || changes.step)) {
       setTimeout(() => {
         this.slider.updateOptions({

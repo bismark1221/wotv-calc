@@ -76,12 +76,12 @@
           <hr class="selectHr" *ngIf="chain[i - 1] && !chain[i] && chain.length <= 2"/>
 
           <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && !chain[i] && chain.length <= 2">
-            Find Best Chainers
+            Find Best Units
           </button>
         </div>
 
         <div class="inlineBlock firstSelectLevel" *ngIf="!chain[i] && bestChainers[0]">
-          <label>Best chainers</label>
+          <label>Best units</label>
           <button
             *ngFor="let chainer of bestChainers; let j = index"
             class="btn btn-secondary fullWidth"

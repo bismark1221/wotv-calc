@@ -21,6 +21,9 @@ export class FindBestService {
   private elements: string[];
   private modifierElements: number[] = [];
   private unitHits: any[] = [];
+  private chainers: any[] = [];
+  private finishers: any[] = [];
+  private hitters: any[] = [];
 
   units: any[] = [];
 
@@ -40,11 +43,14 @@ export class FindBestService {
   findBestFrames() {
     this.best = {
       modifier: {frames: [], max: 0},
-      combo: {frames: [], max: 0}
+      combo: {frames: [], max: -1}
     };
+    this.chainers = [];
+    this.finishers = [];
 
     if (this.units.length > 0) {
       this.frames = [];
+      let chainerIndex = 0;
 
       this.units.forEach((unit, index) => {
         if (unit.ability.type === 'LB') {
@@ -52,8 +58,19 @@ export class FindBestService {
         }
 
         this.unitHits[index] = [];
-        for (let i = 0; i <= 20; i++) {
-          this.calculateUnitHits(unit, index, i);
+
+        if (unit.type === 'chain') {
+          for (let i = 0; i <= 20; i++) {
+            this.calculateUnitHits(unit, index, i);
+          }
+          unit.minFrame = 0;
+          unit.maxFrame = 20;
+          unit.chainerIndex = chainerIndex;
+          this.chainers.push(unit);
+          chainerIndex++;
+        } else {
+          this.calculateUnitHits(unit, index, 0);
+          this.finishers.push(unit);
         }
 
         unit.frames = this.unitHits[index][0];
@@ -62,8 +79,34 @@ export class FindBestService {
       this.getElements();
       this.calculateDebuffModifier();
       this.calculateHitDamage();
-      this.calculateAllPossibleFrames(0);
+      this.calculateAllPossibleFrames('chainers', 0);
+
+
+
+      if (this.finishers.length > 0) {
+        let maxFrames = Math.max(this.best.modifier.hits[this.best.modifier.hits.length - 1], this.best.combo.hits[this.best.combo.hits.length - 1]) + 1;
+
+        ['modifier', 'combo'].forEach(type => {
+          this.units.forEach((unit, index) => {
+            if (unit.type !== 'chain' && type === 'modifier') {
+              for (let i = 0; i <= maxFrames; i++) {
+                this.calculateUnitHits(unit, index, i);
+              }
+              unit.minFrame = 0;
+              unit.maxFrame = maxFrames;
+            } else if (unit.type === 'chain') {
+              let chainerFrame = this.best[type].frames[unit.chainerIndex];
+              this.frames[index] = chainerFrame;
+              unit.frames = this.unitHits[index][chainerFrame];
+              unit.minFrame = chainerFrame;
+              unit.maxFrame = chainerFrame;
+            }
+          });
+          this.calculateAllPossibleFrames('units', 0);
+        });
+      }
     }
+
 
     return this.best;
   }
@@ -162,51 +205,53 @@ export class FindBestService {
     });
   }
 
-  private calculateAllPossibleFrames(unitPosition: number) {
-    if (unitPosition < this.units.length) {
-      for (let i = 0; i <= 20; i++) {
+  private calculateAllPossibleFrames(type: string, unitPosition: number) {
+    if (unitPosition < this[type].length) {
+      for (let i = this[type][unitPosition].minFrame; i <= this[type][unitPosition].maxFrame; i++) {
         this.frames[unitPosition] = i;
-        this.units[unitPosition].frames = this.unitHits[unitPosition][i];
-        this.calculateAllPossibleFrames(unitPosition + 1);
+        this[type][unitPosition].frames = this.unitHits[unitPosition][i];
+        this.calculateAllPossibleFrames(type, unitPosition + 1);
       }
     } else if (this.frames.findIndex(x => x === 0) !== -1) {
-      let modifier = this.calculateChain();
+      let modifier = this.calculateChain(type);
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;
-        this.units.forEach((unit, index) => {
+        this[type].forEach((unit, index) => {
           this.best.modifier.frames[index] = this.frames[index];
         });
+        this.best.modifier.hits = this.hits;
       }
 
       let combo = Math.max.apply(null, this.combo);
       if (combo > this.best.combo.max) {
         this.best.combo.max = combo;
-        this.units.forEach((unit, index) => {
+        this[type].forEach((unit, index) => {
           this.best.combo.frames[index] = this.frames[index];
         });
+        this.best.combo.hits = this.hits;
       }
     }
   }
 
-  private calculateChain() {
+  private calculateChain(type: string) {
     this.total = 0;
 
-    this.initializeChain();
+    this.initializeChain(type);
 
-    while (this.getNextHitter() !== -1) {
+    while (this.getNextHitter(type) !== -1) {
       if (this.lastHitter === this.nextHitter) {
-        this.addHit(this.nextHitter, false);
+        this.addHit(type, this.nextHitter, false);
       } else {
-        let previousFrame = this.units[this.lastHitter].frames[this.nbCombo[this.lastHitter] - 1].frame;
-        let actualFrame = this.units[this.nextHitter].frames[this.nbCombo[this.nextHitter]].frame;
-        this.addHit(this.nextHitter, (actualFrame - previousFrame <= 21));
+        let previousFrame = this[type][this.lastHitter].frames[this.nbCombo[this.lastHitter] - 1].frame;
+        let actualFrame = this[type][this.nextHitter].frames[this.nbCombo[this.nextHitter]].frame;
+        this.addHit(type, this.nextHitter, (actualFrame - previousFrame <= 21));
       }
     }
 
     return Math.round(this.total);
   }
 
-  private initializeChain() {
+  private initializeChain(type: string) {
     this.nbHits = 0;
     this.multi = 1;
     this.hits = [];
@@ -214,12 +259,15 @@ export class FindBestService {
     this.combo = [];
     this.nbCombo = [];
 
-    this.sortFramesArray();
-    this.addHit(this.getNextHitter(), false);
+    this.sortFramesArray(type);
+
+    this.calculateHitterOrder();
+
+    this.addHit(type, this.getNextHitter(type), false);
   }
 
-  private sortFramesArray() {
-    this.units.forEach(unit => {
+  private sortFramesArray(type: string) {
+    this[type].forEach(unit => {
       this.nbCombo.push(0);
       unit.frames.sort((a: any, b: any) => {
         if (a.frame < b.frame) {
@@ -237,12 +285,33 @@ export class FindBestService {
     });
   }
 
-  private getNextHitter(): number {
+  private calculateHitterOrder() {
+    let minIndex = 0;
+    let nbCombo = JSON.parse(JSON.stringify(this.nbCombo));
+    nbCombo[-1] = 0;
+    this.hitters = [];
+
+    while (minIndex !== -1) {
+      let minFrame = 10000;
+      minIndex = -1;
+      this.units.forEach((unit, index) => {
+        if (unit.frames.length > nbCombo[index] && unit.frames[nbCombo[index]].frame < minFrame) {
+          minFrame = unit.frames[nbCombo[index]].frame;
+          minIndex = index;
+        }
+      });
+
+      nbCombo[minIndex]++;
+      this.hitters.push(minIndex);
+    }
+  }
+
+  private getNextHitter(type: string): number {
     let minFrame = 10000;
     let minPosition = -1;
-    this.units.forEach((unit, index) => {
+    this[type].forEach((unit, index) => {
       let nbCombo = this.nbCombo[index];
-      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
+      if (this[type][index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
         minFrame = unit.frames[nbCombo].frame;
         minPosition = index;
       }
@@ -253,8 +322,8 @@ export class FindBestService {
     return minPosition;
   }
 
-  private addHit(unitPosition: number, combo: boolean) {
-    let unit = this.units[unitPosition];
+  private addHit(type: string, unitPosition: number, combo: boolean) {
+    let unit = this[type][unitPosition];
     let hit = unit.frames[this.nbCombo[unitPosition]];
 
     this.hits[this.nbHits] = hit.frame;
