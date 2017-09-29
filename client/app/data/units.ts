@@ -61,16 +61,6 @@ export const UNITS: any[] = [
         firstHit: 42,
         ignore: 50
       },
-      {
-        name: 'TM (R020: Mirage)',
-        base: 300,
-        linearFrames: true,
-        hits: 8,
-        frames: 10,
-        castTime: 40,
-        offset: 16,
-        firstHit: 42
-      },
     ]
   },
   {
@@ -800,6 +790,20 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         base: 180
+      },
+      {
+        name: 'Jecht Shot',
+        chain: false,
+        hits: 1,
+        frames: 1,
+        firstHit: 100,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        ignore: 50,
+        elements: [
+          'water'
+        ]
       }
     ],
     weapons : [
@@ -972,15 +976,6 @@ export const UNITS: any[] = [
         base: 220
       },
       {
-        name: 'TM (Onion Cutter)',
-        hits: 16,
-        frames: 7,
-        firstHit: 42,
-        castTime: 40,
-        offset: 0,
-        base: 520
-      },
-      {
         name: 'LB (Twin Swords)',
         linearFrames: false,
         framesList: '0-4-47-4-35-5-5-5-5-5-5-5-5-5-20-4',
@@ -1084,6 +1079,7 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Fin Briar',
+        chain: false,
         hits: 1,
         frames: 1,
         firstHit: 30,
@@ -1100,6 +1096,7 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Heavy Stomp',
+        chain: false,
         hits: 1,
         frames: 1,
         firstHit: 90,
@@ -1110,6 +1107,7 @@ export const UNITS: any[] = [
       },
       {
         name: 'Full Charge Stomp',
+        chain: false,
         hits: 1,
         frames: 1,
         firstHit: 90,
@@ -1119,5 +1117,52 @@ export const UNITS: any[] = [
         ignore: 50
       }
     ]
-  }
+  },
+//TMR
+  {
+    id: 41,
+    name: 'TMR',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Onion Knight - Onion Cutter',
+        hits: 16,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 0,
+        base: 520
+      },
+      {
+        name: '9S - R020: Mirage',
+        base: 300,
+        linearFrames: true,
+        hits: 8,
+        frames: 10,
+        castTime: 40,
+        offset: 16,
+        firstHit: 42
+      },
+    ]
+  },
+  {
+    id: 42,
+    name: 'Generic Spells',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Meteor',
+        chain: false,
+        hits: 1,
+        frames: 1,
+        firstHit: 350,
+        castTime: 40,
+        offset: 0,
+        base: 250,
+        ignore: 25,
+        type: 'magic'
+      }
+    ]
+  },
+
 ];

@@ -20,6 +20,7 @@ export class ChainService {
   private frames: number[];
   private elements: string[];
   private modifierElements: number[] = [];
+  private hitters: any[] = [];
   private result: any = {
     modifier: 0,
     combo: '0'
@@ -244,6 +245,8 @@ export class ChainService {
 
     this.sortFramesArray();
 
+    this.calculateHitterOrder();
+
     this.addHit(this.getNextHitter(), false);
   }
 
@@ -266,20 +269,37 @@ export class ChainService {
     });
   }
 
+  private calculateHitterOrder() {
+    let minIndex = 0;
+    let lastHitter = 0;
+    let nbCombo = JSON.parse(JSON.stringify(this.nbCombo));
+    nbCombo[-1] = 0;
+    this.hitters = [];
+
+    while (minIndex !== -1) {
+      let minFrame = 10000;
+      minIndex = -1;
+      this.units.forEach((unit, index) => {
+        if (unit.frames.length > nbCombo[index] &&
+          (index === 0
+            || unit.frames[nbCombo[index]].frame < minFrame
+            || (unit.frames[nbCombo[index]].frame === minFrame && lastHitter !== index))
+        ) {
+          minFrame = unit.frames[nbCombo[index]].frame;
+          minIndex = index;
+        }
+      });
+
+      lastHitter = minIndex;
+      nbCombo[minIndex]++;
+      this.hitters.push(minIndex);
+    }
+  }
+
   private getNextHitter(): number {
-    let minFrame = 10000;
-    let minPosition = -1;
-    this.units.forEach((unit, index) => {
-      let nbCombo = this.nbCombo[index];
-      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame <= minFrame) {
-        minFrame = unit.frames[nbCombo].frame;
-        minPosition = index;
-      }
-    });
+    this.nextHitter = this.hitters[this.nbHits];
 
-    this.nextHitter = minPosition;
-
-    return minPosition;
+    return this.nextHitter;
   }
 
   private addHit(unitPosition: number, combo: boolean) {
@@ -301,7 +321,7 @@ export class ChainService {
 
     this.hits[this.nbHits] = {
       unitName: unitName,
-      unitType: unit.type,
+      unitType: unit.ability.chain ? 'chain' : 'finish',
       hit: hit.frame,
       type: type,
       divided: divided

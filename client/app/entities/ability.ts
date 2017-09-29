@@ -14,6 +14,7 @@ export class Ability {
   elements?: string[] = [];
   debuff?: any = {};
   type?: string = 'physic';
+  chain?: boolean = true;
 
   constructAbilityFromJson(ability: Ability): void {
     this.name = ability.name;
@@ -33,5 +34,6 @@ export class Ability {
     this.debuff = ability.debuff ? ability.debuff : this.debuff;
 
     this.type = ability.type ? ability.type : this.type;
+    this.chain = typeof ability.chain == 'boolean' ? ability.chain : this.chain;
   }
 }

@@ -447,7 +447,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let hits = this.chainService.getHits();
     let maxHitForChain = this.chainService.findHighestChainHit();
     this.chain.forEach((unit, position) => {
-      if (unit.type === 'chain') {
+      if (unit.ability.chain) {
         this.sliderConfig[position].range.max = 20;
       } else {
         this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;

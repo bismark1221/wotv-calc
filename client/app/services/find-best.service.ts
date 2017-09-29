@@ -59,7 +59,7 @@ export class FindBestService {
 
         this.unitHits[index] = [];
 
-        if (unit.type === 'chain') {
+        if (unit.ability.chain) {
           for (let i = 0; i <= 20; i++) {
             this.calculateUnitHits(unit, index, i);
           }
@@ -81,20 +81,18 @@ export class FindBestService {
       this.calculateHitDamage();
       this.calculateAllPossibleFrames('chainers', 0);
 
-
-
       if (this.finishers.length > 0) {
         let maxFrames = Math.max(this.best.modifier.hits[this.best.modifier.hits.length - 1], this.best.combo.hits[this.best.combo.hits.length - 1]) + 1;
 
         ['modifier', 'combo'].forEach(type => {
           this.units.forEach((unit, index) => {
-            if (unit.type !== 'chain' && type === 'modifier') {
+            if (!unit.ability.chain && type === 'modifier') {
               for (let i = 0; i <= maxFrames; i++) {
                 this.calculateUnitHits(unit, index, i);
               }
               unit.minFrame = 0;
               unit.maxFrame = maxFrames;
-            } else if (unit.type === 'chain') {
+            } else if (unit.ability.chain) {
               let chainerFrame = this.best[type].frames[unit.chainerIndex];
               this.frames[index] = chainerFrame;
               unit.frames = this.unitHits[index][chainerFrame];
@@ -238,7 +236,7 @@ export class FindBestService {
 
     this.initializeChain(type);
 
-    while (this.getNextHitter(type) !== -1) {
+    while (this.getNextHitter() !== -1) {
       if (this.lastHitter === this.nextHitter) {
         this.addHit(type, this.nextHitter, false);
       } else {
@@ -261,9 +259,9 @@ export class FindBestService {
 
     this.sortFramesArray(type);
 
-    this.calculateHitterOrder();
+    this.calculateHitterOrder(type);
 
-    this.addHit(type, this.getNextHitter(type), false);
+    this.addHit(type, this.getNextHitter(), false);
   }
 
   private sortFramesArray(type: string) {
@@ -285,8 +283,9 @@ export class FindBestService {
     });
   }
 
-  private calculateHitterOrder() {
+  private calculateHitterOrder(type: string) {
     let minIndex = 0;
+    let lastHitter = 0;
     let nbCombo = JSON.parse(JSON.stringify(this.nbCombo));
     nbCombo[-1] = 0;
     this.hitters = [];
@@ -294,32 +293,27 @@ export class FindBestService {
     while (minIndex !== -1) {
       let minFrame = 10000;
       minIndex = -1;
-      this.units.forEach((unit, index) => {
-        if (unit.frames.length > nbCombo[index] && unit.frames[nbCombo[index]].frame < minFrame) {
+      this[type].forEach((unit, index) => {
+        if (unit.frames.length > nbCombo[index] &&
+          (index === 0
+            || unit.frames[nbCombo[index]].frame < minFrame
+            || (unit.frames[nbCombo[index]].frame === minFrame && lastHitter !== index))
+        ) {
           minFrame = unit.frames[nbCombo[index]].frame;
           minIndex = index;
         }
       });
 
+      lastHitter = minIndex;
       nbCombo[minIndex]++;
       this.hitters.push(minIndex);
     }
   }
 
-  private getNextHitter(type: string): number {
-    let minFrame = 10000;
-    let minPosition = -1;
-    this[type].forEach((unit, index) => {
-      let nbCombo = this.nbCombo[index];
-      if (this[type][index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
-        minFrame = unit.frames[nbCombo].frame;
-        minPosition = index;
-      }
-    });
+  private getNextHitter(): number {
+    this.nextHitter = this.hitters[this.nbHits];
 
-    this.nextHitter = minPosition;
-
-    return minPosition;
+    return this.nextHitter;
   }
 
   private addHit(type: string, unitPosition: number, combo: boolean) {
