@@ -36,7 +36,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
-  abilityTypes: string[] = ['physic', 'magic', 'hybrid', 'LB'];
+  abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
+  abilityTypes: string[] = ['chain', 'finish'];
 
   viewOptions: boolean[] = [false, false];
   bestChainers: any[] = [];
@@ -447,7 +448,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let hits = this.chainService.getHits();
     let maxHitForChain = this.chainService.findHighestChainHit();
     this.chain.forEach((unit, position) => {
-      if (unit.ability.chain) {
+      if (unit.ability.type === 'chain') {
         this.sliderConfig[position].range.max = 20;
       } else {
         this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;

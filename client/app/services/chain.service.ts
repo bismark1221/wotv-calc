@@ -48,10 +48,6 @@ export class ChainService {
     this.frames = [];
 
     this.units.forEach(unit => {
-      if (unit.ability.type === 'LB') {
-        unit.ability.dualable = false;
-      }
-
       unit.frames = this.calculateUnitHits(unit);
     });
 
@@ -144,7 +140,7 @@ export class ChainService {
     this.units.forEach(unit => {
       let elements = [];
 
-      if (unit.ability.type === 'physic') {
+      if (unit.ability.damage === 'physic') {
         unit.weapons.forEach(weapon => {
           if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
             elements.push(weapon);
@@ -196,7 +192,7 @@ export class ChainService {
       let realIgnore = unit.ability.ignore * 2 / 100 + 1;
       let base = unit.ability.base
 
-      if (unit.ability.type === 'hybrid') {
+      if (unit.ability.damage === 'hybrid') {
         base /= 2;
       }
 
@@ -321,7 +317,7 @@ export class ChainService {
 
     this.hits[this.nbHits] = {
       unitName: unitName,
-      unitType: unit.ability.chain ? 'chain' : 'finish',
+      unitType: unit.ability.type,
       hit: hit.frame,
       type: type,
       divided: divided

@@ -53,10 +53,6 @@ export class FindBestService {
       let chainerIndex = 0;
 
       this.units.forEach((unit, index) => {
-        if (unit.ability.type === 'LB') {
-          unit.ability.dualable = false;
-        }
-
         this.unitHits[index] = [];
 
         if (unit.ability.chain) {
@@ -86,13 +82,13 @@ export class FindBestService {
 
         ['modifier', 'combo'].forEach(type => {
           this.units.forEach((unit, index) => {
-            if (!unit.ability.chain && type === 'modifier') {
+            if (unit.ability.type === 'finish' && type === 'modifier') {
               for (let i = 0; i <= maxFrames; i++) {
                 this.calculateUnitHits(unit, index, i);
               }
               unit.minFrame = 0;
               unit.maxFrame = maxFrames;
-            } else if (unit.ability.chain) {
+            } else if (unit.ability.type === 'chain') {
               let chainerFrame = this.best[type].frames[unit.chainerIndex];
               this.frames[index] = chainerFrame;
               unit.frames = this.unitHits[index][chainerFrame];
@@ -148,7 +144,7 @@ export class FindBestService {
     this.units.forEach(unit => {
       let elements = [];
 
-      if (unit.ability.type === 'physic') {
+      if (unit.ability.damage === 'physic') {
         unit.weapons.forEach(weapon => {
           if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
             elements.push(weapon);
@@ -187,7 +183,7 @@ export class FindBestService {
       let realIgnore = unit.ability.ignore * 2 / 100 + 1;
       let base = unit.ability.base
 
-      if (unit.ability.type === 'hybrid') {
+      if (unit.ability.damage === 'hybrid') {
         base /= 2;
       }
 

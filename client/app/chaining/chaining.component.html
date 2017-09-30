@@ -198,8 +198,8 @@
                 tooltipClass="tooltip-ability-type">
                 Type <i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
               </label>
-              <select class="form-control" id="chainer{{i}}_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="saveUnit(i)">
-                <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+              <select class="form-control" id="chainer{{i}}_type" [(ngModel)]="chain[i].ability.damage" (ngModelChange)="saveUnit(i)">
+                <option *ngFor="let abilityDamage of abilityDamages" [ngValue]="abilityDamage">{{abilityDamage}}</option>
               </select>
             </div>
 
