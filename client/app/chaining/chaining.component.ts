@@ -36,7 +36,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
-  abilityTypes: string[] = ['physic', 'magic', 'hybrid', 'LB'];
+  abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
+  abilityTypes: string[] = ['chain', 'finish'];
 
   viewOptions: boolean[] = [false, false];
   bestChainers: any[] = [];
@@ -51,19 +52,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     dynamicTitleMaxItems: 8
   };
 
-  sliderConfig: any = {
-    start: 1,
-    step: 1,
-    range: {
-      min: 0,
-      max: 20
-    },
-    pips: {
-      mode: 'count',
-      values: 11,
-      density: 6
-    }
-  };
+  sliderConfig: any[] = [];
 
   observableUnits: Array<Select2OptionData> = [];
   observableCreatedUnits: Array<Select2OptionData> = [];
@@ -100,6 +89,13 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
       this.positionIds[unit.id] = position;
       position++;
+
+      unit.abilities.forEach(ability => {
+        if(this.abilityTypes.findIndex(x => x === ability.type) === -1) {
+          ability.damage = ability.type === 'LB' ? 'physic' : ability.type;
+          ability.type = 'chain';
+        }
+      });
     });
   }
 
@@ -164,6 +160,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     for (let i = 0; i <= 5; i++) {
       this.idSelected[i] = 'unselect';
       this.idCreated[i] = 'unselect';
+      this.sliderConfig[i] = {
+        start: 1,
+        step: 1,
+        range: {
+          min: 0,
+          max: 20
+        },
+        pips: {
+          mode: 'count',
+          values: 11,
+          density: 6
+        }
+      };
     }
     this.getUnits();
     this.getElements();
@@ -262,16 +271,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         id: '0',
         text: 'Chainers',
         children: []
+      },
+      {
+        id: '0',
+        text: 'Finishers',
+        children: []
       }
     ];
 
     this.units.forEach(unit => {
-      if (unit.type === 'chain') {
-        this.observableUnits[1].children.push({
-          id: unit.id.toString(),
-          text: unit.name
-        });
-      }
+      this.observableUnits[(unit.type === 'chain' ? 1 : 2)].children.push({
+        id: unit.id.toString(),
+        text: unit.name
+      });
     });
     delete this.observableUnits[0].children;
 
@@ -285,16 +297,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         id: '0',
         text: 'Chainers',
         children: []
+      },
+      {
+        id: '0',
+        text: 'Finishers',
+        children: []
       }
     ];
 
     this.createdUnits.forEach(unit => {
-      if (unit.type === 'chain') {
-        this.observableCreatedUnits[1].children.push({
-          id: unit.id.toString(),
-          text: unit.name
-        });
-      }
+      this.observableCreatedUnits[(unit.type === 'chain' ? 1 : 2)].children.push({
+        id: unit.id.toString(),
+        text: unit.name
+      });
     });
     delete this.observableCreatedUnits[0].children;
   }
@@ -416,16 +431,13 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.changeMultiSelectDropdown();
   }
 
-  updateFramesGap(unit: any, minusPlus: boolean) {
-    minusPlus ? unit.framesGap++ : unit.framesGap--;
-    this.checkFramesGap(unit);
-  }
+  updateFramesGap(position: number, minusPlus: boolean) {
+    minusPlus ? this.chain[position].framesGap++ : this.chain[position].framesGap--;
 
-  checkFramesGap(unit: any) {
-    if (unit.framesGap <= 0) {
-      unit.framesGap = 0;
-    } else if (unit.framesGap >= 20) {
-      unit.framesGap = 20;
+    if (this.chain[position].framesGap <= 0) {
+      this.chain[position].framesGap = 0;
+    } else if (this.chain[position].framesGap >= this.sliderConfig[position].range.max) {
+      this.chain[position].framesGap = this.sliderConfig[position].range.max;
     }
 
     this.onChangeChain();
@@ -436,6 +448,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chainService.getChain();
     this.diffFirstHits = this.chainService.calculateFramesDiffForFirstHits();
     this.changeMultiSelectDropdown();
+    this.calculateMaxFramesGap();
+  }
+
+  private calculateMaxFramesGap() {
+    let hits = this.chainService.getHits();
+    let maxHitForChain = this.chainService.findHighestChainHit();
+    this.chain.forEach((unit, position) => {
+      if (unit.ability.type === 'chain') {
+        this.sliderConfig[position].range.max = 20;
+      } else {
+        this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;
+      }
+    });
   }
 
   findBestFrames(type: string) {

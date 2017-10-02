@@ -76,12 +76,12 @@
           <hr class="selectHr" *ngIf="chain[i - 1] && !chain[i] && chain.length <= 2"/>
 
           <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && !chain[i] && chain.length <= 2">
-            Find Best Chainers
+            Find Best Units
           </button>
         </div>
 
         <div class="inlineBlock firstSelectLevel" *ngIf="!chain[i] && bestChainers[0]">
-          <label>Best chainers</label>
+          <label>Best units</label>
           <button
             *ngFor="let chainer of bestChainers; let j = index"
             class="btn btn-secondary fullWidth"
@@ -190,16 +190,18 @@
               </div>
             </div>
 
+            <div class="selectRightZoneInFour">
+              <label for="chainer{{i}}_ability_type">Ability Type</label>
+              <select class="form-control" id="chainer{{i}}_damage_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="saveUnit(i)">
+                <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+              </select>
+            </div>
+
             <div class="selectRightZoneInFour tabletMarginTop">
               <span id="tooltip_type_{{i}}"></span>
-              <label for="chainer{{i}}_type"
-                tooltip="physic if weapon element is applied to the ability"
-                parentSelector="#tooltip_type_{{i}}"
-                tooltipClass="tooltip-ability-type">
-                Type <i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
-              </label>
-              <select class="form-control" id="chainer{{i}}_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="saveUnit(i)">
-                <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+              <label for="chainer{{i}}_damage_type">Damage Type</label>
+              <select class="form-control" id="chainer{{i}}_damage_type" [(ngModel)]="chain[i].ability.damage" (ngModelChange)="saveUnit(i)">
+                <option *ngFor="let abilityDamage of abilityDamages" [ngValue]="abilityDamage">{{abilityDamage}}</option>
               </select>
             </div>
 
@@ -300,7 +302,9 @@
       <div>
         <nouislider
           *ngFor="let unit of chain; let i = index"
-          [config]="sliderConfig"
+          [config]="sliderConfig[i]"
+          [min]="sliderConfig[i].range.min"
+          [max]="sliderConfig[i].range.max"
           [(ngModel)]="unit.framesGap"
           (ngModelChange)="onChangeChain()">
         </nouislider>
@@ -317,13 +321,13 @@
       <label>Difference in first hit frame</label>
       <div class="input-group framesButtons" *ngFor="let unit of chain; let i = index">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(unit, false)">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(i, false)">
             <i class="fa fa-minus" aria-hidden="true"></i>
           </button>
         </span>
         <input class="form-control inputFramesGap" type="number" id="chain_framesGap" [(ngModel)]="unit.framesGap" (ngModelChange)="checkFramesGap(unit)">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(unit, true)">
+          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(i, true)">
             <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </span>

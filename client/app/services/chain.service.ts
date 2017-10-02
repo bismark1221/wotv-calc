@@ -20,6 +20,7 @@ export class ChainService {
   private frames: number[];
   private elements: string[];
   private modifierElements: number[] = [];
+  private hitters: any[] = [];
   private result: any = {
     modifier: 0,
     combo: '0'
@@ -47,10 +48,6 @@ export class ChainService {
     this.frames = [];
 
     this.units.forEach(unit => {
-      if (unit.ability.type === 'LB') {
-        unit.ability.dualable = false;
-      }
-
       unit.frames = this.calculateUnitHits(unit);
     });
 
@@ -143,7 +140,7 @@ export class ChainService {
     this.units.forEach(unit => {
       let elements = [];
 
-      if (unit.ability.type === 'physic') {
+      if (unit.ability.damage === 'physic') {
         unit.weapons.forEach(weapon => {
           if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
             elements.push(weapon);
@@ -195,7 +192,7 @@ export class ChainService {
       let realIgnore = unit.ability.ignore * 2 / 100 + 1;
       let base = unit.ability.base
 
-      if (unit.ability.type === 'hybrid') {
+      if (unit.ability.damage === 'hybrid') {
         base /= 2;
       }
 
@@ -243,6 +240,9 @@ export class ChainService {
     this.nbCombo = [];
 
     this.sortFramesArray();
+
+    this.calculateHitterOrder();
+
     this.addHit(this.getNextHitter(), false);
   }
 
@@ -265,20 +265,37 @@ export class ChainService {
     });
   }
 
+  private calculateHitterOrder() {
+    let minIndex = 0;
+    let lastHitter = 0;
+    let nbCombo = JSON.parse(JSON.stringify(this.nbCombo));
+    nbCombo[-1] = 0;
+    this.hitters = [];
+
+    while (minIndex !== -1) {
+      let minFrame = 10000;
+      minIndex = -1;
+      this.units.forEach((unit, index) => {
+        if (unit.frames.length > nbCombo[index] &&
+          (index === 0
+            || unit.frames[nbCombo[index]].frame < minFrame
+            || (unit.frames[nbCombo[index]].frame === minFrame && lastHitter !== index))
+        ) {
+          minFrame = unit.frames[nbCombo[index]].frame;
+          minIndex = index;
+        }
+      });
+
+      lastHitter = minIndex;
+      nbCombo[minIndex]++;
+      this.hitters.push(minIndex);
+    }
+  }
+
   private getNextHitter(): number {
-    let minFrame = 10000;
-    let minPosition = -1;
-    this.units.forEach((unit, index) => {
-      let nbCombo = this.nbCombo[index];
-      if (this.units[index].frames.length > nbCombo && unit.frames[nbCombo].frame < minFrame) {
-        minFrame = unit.frames[nbCombo].frame;
-        minPosition = index;
-      }
-    });
+    this.nextHitter = this.hitters[this.nbHits];
 
-    this.nextHitter = minPosition;
-
-    return minPosition;
+    return this.nextHitter;
   }
 
   private addHit(unitPosition: number, combo: boolean) {
@@ -287,8 +304,8 @@ export class ChainService {
     let hit = unit.frames[this.nbCombo[unitPosition]];
     let divided = false;
 
-    let type = combo || this.nbHits === 0 || this.units.length === 1 ? 'chain' : 'break';
-    type = 'unit1-' + type + (hit.type === 'classic' ? '1' : '2');
+    let type = combo || this.nbHits === 0 || this.units.length === 1 ? unit.type : 'break';
+    type = type + (hit.type === 'classic' ? '1' : '2');
 
     for (let i = 1; i <= this.units.length; i++) {
       if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
@@ -300,6 +317,7 @@ export class ChainService {
 
     this.hits[this.nbHits] = {
       unitName: unitName,
+      unitType: unit.ability.type,
       hit: hit.frame,
       type: type,
       divided: divided
@@ -370,6 +388,17 @@ export class ChainService {
     });
 
     return diff;
+  }
+
+  findHighestChainHit() {
+    let maxHit = 0;
+    this.hits.forEach(hit => {
+      if (hit.unitType === 'chain' && hit.hit > maxHit) {
+        maxHit = hit.hit + 1;
+      }
+    });
+
+    return maxHit;
   }
 
   getResult(): number {

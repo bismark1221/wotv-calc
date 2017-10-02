@@ -42,7 +42,21 @@ export const UNITS: any[] = [
         castTime: 8,
         offset: 32,
         firstHit: 42
-      }
+      },
+      {
+        name: 'A150: Vault (activated)',
+        type: 'finish',
+        base: 400,
+        linearFrames: true,
+        hits: 1,
+        frames: 1,
+        castTime: 8,
+        offset: 32,
+        firstHit: 42,
+        debuff: {
+          lightning: 65
+        }
+      },
     ]
   },
   {
@@ -60,16 +74,6 @@ export const UNITS: any[] = [
         offset: 32,
         firstHit: 42,
         ignore: 50
-      },
-      {
-        name: 'TM (R020: Mirage)',
-        base: 300,
-        linearFrames: true,
-        hits: 8,
-        frames: 10,
-        castTime: 40,
-        offset: 16,
-        firstHit: 42
       },
     ]
   },
@@ -104,6 +108,16 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 42,
+      },
+      {
+        name: 'Finisher',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 600
       }
     ]
   },
@@ -126,8 +140,21 @@ export const UNITS: any[] = [
           fire: 75,
           light: 75,
           lightning: 75
-        }
-      }
+        },
+        damage: 'magic'
+      },
+      {
+        name: 'Attack Hand',
+        type: 'finish',
+        base: 320,
+        ignore: 25,
+        hits: 1,
+        frames: 1,
+        castTime: 40,
+        offset: 16,
+        firstHit: 150,
+        damage: 'magic'
+      },
     ],
     dual: false
   },
@@ -234,7 +261,7 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 72,
         ignore: 25,
-        type: 'magic',
+        damage: 'magic',
         dualable: false
       },
       {
@@ -303,8 +330,23 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 140,
         ignore: 50,
-        type: 'magic'
+        damage: 'magic'
       },
+      {
+        name: 'Dystopia (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 120,
+        castTime: 40,
+        offset: 0,
+        base: 600,
+        elements: [
+          'dark'
+        ],
+        dualable: false,
+        damage: 'magic'
+      }
     ]
   },
   {
@@ -324,6 +366,20 @@ export const UNITS: any[] = [
         debuff: {
           dark: 50
         }
+      },
+      {
+        name: 'Dark Edge',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 110,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        ignore: 50,
+        elements: [
+          'dark'
+        ]
       }
     ],
     weapons : [
@@ -366,7 +422,7 @@ export const UNITS: any[] = [
         castTime: 8,
         offset: 16,
         firstHit: 40,
-        type: 'hybrid',
+        damage: 'hybrid',
         debuff: {
           ice: 50
         },
@@ -374,6 +430,17 @@ export const UNITS: any[] = [
           'ice'
         ]
       },
+      {
+        name: 'Second Intention',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 100,
+        castTime: 40,
+        offset: 16,
+        base: 600,
+        damage: 'hybrid',
+      }
     ]
   },
   {
@@ -443,7 +510,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         firstHit: 42,
-        type: 'hybrid',
+        damage: 'hybrid',
         elements: [
           'light'
         ],
@@ -470,7 +537,7 @@ export const UNITS: any[] = [
           'wind',
           'light'
         ],
-        type: 'magic',
+        damage: 'magic',
         dualable: false
       },
       {
@@ -485,7 +552,37 @@ export const UNITS: any[] = [
           'wind',
           'light'
         ],
-        type: 'magic',
+        damage: 'magic',
+        dualable: false
+      },
+      {
+        name: 'Gleaming Arrow (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 410,
+        castTime: 40,
+        offset: 16,
+        base: 1500,
+        elements : [
+          'light'
+        ],
+        damage: 'magic',
+        dualable: false
+      },
+      {
+        name: 'Gail Arrow (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 70,
+        castTime: 40,
+        offset: 16,
+        base: 1500,
+        elements : [
+          'wind'
+        ],
+        damage: 'magic',
         dualable: false
       }
     ],
@@ -499,6 +596,7 @@ export const UNITS: any[] = [
       {
         name: 'Blade of Justice',
         base: 250,
+        linearFrames: false,
         framesList: '0-8-8-8-8-8-6-8',
         castTime: 40,
         offset: 16,
@@ -672,8 +770,23 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 140,
         ignore: 50,
-        type: 'magic'
+        damage: 'magic'
       },
+      {
+        name: 'Utopia (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 120,
+        castTime: 40,
+        offset: 0,
+        base: 600,
+        elements: [
+          'water'
+        ],
+        dualable: false,
+        damage: 'magic'
+      }
     ]
   },
   {
@@ -720,7 +833,7 @@ export const UNITS: any[] = [
         debuff: {
           wind: 50
         },
-        type: 'magic'
+        damage: 'magic'
       }
     ]
   },
@@ -738,7 +851,7 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 52,
         ignore: 50,
-        type: 'magic',
+        damage: 'magic',
         dualable: false
       },
       {
@@ -750,7 +863,7 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 60,
         ignore: 50,
-        type: 'magic',
+        damage: 'magic',
         dualable: false
       },
       {
@@ -762,7 +875,7 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 140,
         ignore: 50,
-        type: 'magic'
+        damage: 'magic'
       }
     ]
   },
@@ -797,6 +910,20 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         base: 180
+      },
+      {
+        name: 'Jecht Shot',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 100,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        ignore: 50,
+        elements: [
+          'water'
+        ]
       }
     ],
     weapons : [
@@ -969,15 +1096,6 @@ export const UNITS: any[] = [
         base: 220
       },
       {
-        name: 'TM (Onion Cutter)',
-        hits: 16,
-        frames: 7,
-        firstHit: 42,
-        castTime: 40,
-        offset: 0,
-        base: 520
-      },
-      {
         name: 'LB (Twin Swords)',
         linearFrames: false,
         framesList: '0-4-47-4-35-5-5-5-5-5-5-5-5-5-20-4',
@@ -985,7 +1103,6 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 0,
         base: 800,
-        type: 'LB',
         dualable: false
       }
     ]
@@ -1073,6 +1190,24 @@ export const UNITS: any[] = [
       }
     ]
   },
+  {
+    id: 43,
+    name: 'Chic Ariana',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Alluring Chorus',
+        linearFrames: 'X-7-7-8-8-16-8',
+        firstHit: 139,
+        castTime: 40,
+        offset: 16,
+        base: 280,
+        ignore: 25,
+        damage: 'magic',
+        dualable: false
+      }
+    ]
+  },
 // Finish
   {
     id: 2,
@@ -1081,12 +1216,14 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Fin Briar',
+        type: 'finish',
         hits: 1,
         frames: 1,
         firstHit: 30,
         castTime: 40,
         offset: 0,
-        base: 230,
+        base: 180,
+        ignore: 25
       }
     ]
   },
@@ -1097,6 +1234,7 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Heavy Stomp',
+        type: 'finish',
         hits: 1,
         frames: 1,
         firstHit: 90,
@@ -1107,6 +1245,7 @@ export const UNITS: any[] = [
       },
       {
         name: 'Full Charge Stomp',
+        type: 'finish',
         hits: 1,
         frames: 1,
         firstHit: 90,
@@ -1116,5 +1255,539 @@ export const UNITS: any[] = [
         ignore: 50
       }
     ]
-  }
+  },
+  {
+    id: 44,
+    name: 'Eve',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Roundhouse Kick',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 10,
+        castTime: 40,
+        offset: 0,
+        base: 350,
+      }
+    ]
+  },
+  {
+    id: 45,
+    name: 'Adam',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Cube Explosion - Large',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 60,
+        castTime: 40,
+        offset: 0,
+        base: 500,
+      }
+    ]
+  },
+  {
+    id: 46,
+    name: 'Vargas',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Supreme Blaze',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 240,
+        castTime: 40,
+        offset: 0,
+        base: 250,
+        ignore: 50,
+        elements : [
+          'fire'
+        ]
+      }
+    ]
+  },
+  {
+    id: 47,
+    name: 'Kelsus',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Crushing Vice',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 60,
+        castTime: 40,
+        offset: 0,
+        base: 500,
+      }
+    ]
+  },
+  {
+    id: 48,
+    name: 'Maxwell',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Destiny',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 102,
+        castTime: 40,
+        offset: 0,
+        base: 200,
+        ignore: 50,
+        elements : [
+          'light'
+        ]
+      }
+    ]
+  },
+  {
+    id: 49,
+    name: 'Black Cat Lid',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Ultimate Blow',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 70,
+        castTime: 40,
+        offset: 0,
+        base: 250,
+        ignore: 35
+      }
+    ]
+  },
+  {
+    id: 50,
+    name: 'Helena',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Best Shot',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 100,
+        castTime: 40,
+        offset: 0,
+        base: 450
+      }
+    ]
+  },
+  {
+    id: 51,
+    name: 'Zargabaath',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Word of Law',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 270,
+        castTime: 40,
+        offset: 0,
+        base: 300,
+        ignore: 50,
+        elements: [
+          'light'
+        ],
+        dualable: false,
+        damage: 'magic'
+      }
+    ]
+  },
+  {
+    id: 53,
+    name: 'Grace',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Destroy Arm +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 80,
+        castTime: 40,
+        offset: 0,
+        base: 250,
+        ignore: 50
+      }
+    ]
+  },
+  {
+    id: 54,
+    name: 'Rem',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Dagger Boomerang (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 120,
+        castTime: 40,
+        offset: 0,
+        base: 620
+      }
+    ]
+  },
+  {
+    id: 55,
+    name: 'Zyrus',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Blood Pulsar (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 130,
+        castTime: 40,
+        offset: 0,
+        base: 650,
+        damage: 'magic'
+      },
+      {
+        name: 'Blood Rend',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 90,
+        castTime: 40,
+        offset: 0,
+        base: 500,
+        elements: [
+          'water'
+        ],
+        damage: 'magic'
+      }
+    ]
+  },
+  {
+    id: 56,
+    name: 'Shine',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Into Darkness',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 23,
+        castTime: 40,
+        offset: 0,
+        base: 420,
+        elements: [
+          'dark'
+        ]
+      }
+    ]
+  },
+  {
+    id: 57,
+    name: 'Olive',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'True Shot',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 100,
+        castTime: 40,
+        offset: 0,
+        base: 240,
+        ignore: 50
+      }
+    ]
+  },
+  {
+    id: 58,
+    name: 'Emperor',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Starfall',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 350,
+        castTime: 40,
+        offset: 0,
+        base: 230,
+        ignore: 50,
+        dualable: false,
+        damage: 'magic'
+      },
+      {
+        name: 'Fire From Below (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 80,
+        castTime: 40,
+        offset: 0,
+        base: 2000,
+        dualable: false,
+        damage: 'magic',
+        elements : [
+          'fire'
+        ]
+      }
+    ]
+  },
+  {
+    id: 52,
+    name: 'Luneth',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Cut Through +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 60,
+        castTime: 40,
+        offset: 0,
+        base: 525,
+        ignore: 50
+      }
+    ]
+  },
+  {
+    id: 59,
+    name: 'Dark Knight Cecil',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Soul Eater +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 20,
+        castTime: 40,
+        offset: 0,
+        base: 750,
+        elements: [
+          'dark'
+        ],
+        debuff: {
+          dark: 100
+        },
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 60,
+    name: 'Gaffgarion',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Abyssal Blade +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 120,
+        castTime: 40,
+        offset: 0,
+        base: 750,
+        elements: [
+          'dark'
+        ]
+      }
+    ]
+  },
+  {
+    id: 61,
+    name: 'Kefka',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Light of Judgment +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 280,
+        ignore: 50,
+        dualable: false,
+        damage: 'magic'
+      }
+    ]
+  },
+  {
+    id: 62,
+    name: 'Bartz',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Wind Shear +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 70,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'hybrid'
+      }
+    ]
+  },
+//TMR
+  {
+    id: 41,
+    name: 'TMR',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Onion Knight - Onion Cutter',
+        hits: 16,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 0,
+        base: 520
+      },
+      {
+        name: '9S - R020: Mirage',
+        base: 300,
+        linearFrames: true,
+        hits: 8,
+        frames: 10,
+        castTime: 40,
+        offset: 16,
+        firstHit: 42
+      },
+    ]
+  },
+  {
+    id: 42,
+    name: 'Generic Spells',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Meteor',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 350,
+        castTime: 40,
+        offset: 0,
+        base: 250,
+        ignore: 25,
+        damage: 'magic'
+      },
+      {
+        name: 'Ultima',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 350,
+        castTime: 40,
+        offset: 0,
+        base: 280,
+        ignore: 50,
+        damage: 'magic'
+      },
+      {
+        name: 'Stonja',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 170,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'magic',
+        elements: [
+          'earth'
+        ]
+      },
+      {
+        name: 'Aeroja',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 170,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'magic',
+        elements: [
+          'wind'
+        ]
+      },
+      {
+        name: 'Waterja',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 190,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'magic',
+        elements: [
+          'water'
+        ]
+      },
+      {
+        name: 'Thundaja',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 150,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'magic',
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        name: 'Blizzaja',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 240,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ]
+      },
+      {
+        name: 'firaja',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 210,
+        castTime: 40,
+        offset: 0,
+        base: 700,
+        damage: 'magic',
+        elements: [
+          'fire'
+        ]
+      }
+    ]
+  },
+
 ];

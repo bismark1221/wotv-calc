@@ -13,7 +13,9 @@ export class Ability {
   dualable?: boolean = true;
   elements?: string[] = [];
   debuff?: any = {};
-  type?: string = 'physic';
+  type?: string = 'chain';
+  damage?: string = 'physic';
+  chain?: boolean = true;
 
   constructAbilityFromJson(ability: Ability): void {
     this.name = ability.name;
@@ -33,5 +35,7 @@ export class Ability {
     this.debuff = ability.debuff ? ability.debuff : this.debuff;
 
     this.type = ability.type ? ability.type : this.type;
+    this.damage = ability.damage ? ability.damage : this.damage;
+    this.chain = typeof ability.chain == 'boolean' ? ability.chain : this.chain;
   }
 }
