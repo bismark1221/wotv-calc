@@ -517,6 +517,17 @@ export const UNITS: any[] = [
         debuff: {
           light: 50
         }
+      },
+      {
+        name: 'Saint Buster',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 150,
+        castTime: 40,
+        offset: 0,
+        base: 1600,
+        damage: 'hybrid'
       }
     ]
   },
@@ -1689,6 +1700,17 @@ export const UNITS: any[] = [
         offset: 0,
         base: 250,
         ignore: 25,
+        damage: 'magic'
+      },
+      {
+        name: 'Comet',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 120,
+        castTime: 40,
+        offset: 0,
+        base: 190,
         damage: 'magic'
       },
       {
