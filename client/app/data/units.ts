@@ -96,7 +96,7 @@ export const UNITS: any[] = [
         base: 510,
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5',
-        castTime: 40,
+        castTime: 35,
         offset: 16,
         firstHit: 42,
       },
