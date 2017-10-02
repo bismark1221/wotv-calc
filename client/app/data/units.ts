@@ -96,9 +96,9 @@ export const UNITS: any[] = [
         base: 510,
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5',
-        castTime: 35,
+        castTime: 40,
         offset: 16,
-        firstHit: 42,
+        firstHit: 35,
       },
       {
         name: 'Heavy Attack',
