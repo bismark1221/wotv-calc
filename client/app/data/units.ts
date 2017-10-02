@@ -997,7 +997,9 @@ export const UNITS: any[] = [
         base: 940,
         elements: [
           'dark'
-        ]
+        ],
+        damage: 'magic',
+        dualable: false
       }
     ]
   },
@@ -1129,7 +1131,7 @@ export const UNITS: any[] = [
         framesList: '0-26-10-10-30',
         firstHit: 20,
         castTime: 40,
-        offset: 16,
+        offset: 40,
         base: 800
       }
     ]
