@@ -25,7 +25,8 @@ export class MyUnitsComponent implements OnInit {
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
-  abilityTypes: string[] = ['physic', 'magic', 'hybrid', 'LB'];
+  abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
+  abilityTypes: string[] = ['chain', 'finish'];
 
   activeRenameAbility = false;
   activeRenameUnit = false;
@@ -70,6 +71,13 @@ export class MyUnitsComponent implements OnInit {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
       this.positionIds[unit.id] = position;
       position++;
+
+      unit.abilities.forEach(ability => {
+        if(this.abilityTypes.findIndex(x => x === ability.type) === -1) {
+          ability.damage = ability.type === 'LB' ? 'physic' : ability.type;
+          ability.type = 'chain';
+        }
+      });
     });
   }
 
