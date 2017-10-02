@@ -93,9 +93,9 @@ export const UNITS: any[] = [
       },
       {
         name: 'Offensive Heal Combo (Math are wrong)',
-        base: 500,
+        base: 255,
         linearFrames: false,
-        framesList: '0-10-10-10-10-10-10-10',
+        framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5',
         castTime: 40,
         offset: 16,
         firstHit: 42,
@@ -1235,6 +1235,17 @@ export const UNITS: any[] = [
         offset: 0,
         base: 180,
         ignore: 25
+      },
+      {
+        name: 'Fin Briar +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 30,
+        castTime: 40,
+        offset: 0,
+        base: 230,
+        ignore: 50
       }
     ]
   },
