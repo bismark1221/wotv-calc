@@ -1131,7 +1131,7 @@ export const UNITS: any[] = [
         framesList: '0-26-10-10-30',
         firstHit: 20,
         castTime: 40,
-        offset: 40,
+        offset: 80,
         base: 800
       }
     ]
