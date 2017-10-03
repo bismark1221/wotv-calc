@@ -286,7 +286,7 @@ export const UNITS: any[] = [
         hits: 7,
         frames: 5,
         castTime: 8,
-        offset: 26,
+        offset: 50,
         firstHit: 47,
         elements: [
           'light',
@@ -495,6 +495,20 @@ export const UNITS: any[] = [
         offset: 16,
         firstHit: 42
       },
+      {
+        name: 'Strategic blade',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 20,
+        castTime: 40,
+        offset: 16,
+        base: 250,
+        ignore: 50,
+        debuff: {
+          lightning: 50
+        }
+      }
     ]
   },
   {
@@ -1117,7 +1131,16 @@ export const UNITS: any[] = [
         offset: 0,
         base: 800,
         dualable: false
-      }
+      },
+      {
+        name: 'TMR - Onion Cutter',
+        hits: 16,
+        frames: 7,
+        firstHit: 42,
+        castTime: 40,
+        offset: 0,
+        base: 520
+      },
     ]
   },
   {
@@ -1608,8 +1631,7 @@ export const UNITS: any[] = [
         ],
         debuff: {
           dark: 100
-        },
-        dualable: false
+        }
       }
     ]
   },
@@ -1677,15 +1699,6 @@ export const UNITS: any[] = [
     name: 'TMR',
     type: 'chain',
     abilities: [
-      {
-        name: 'Onion Knight - Onion Cutter',
-        hits: 16,
-        frames: 7,
-        firstHit: 42,
-        castTime: 40,
-        offset: 0,
-        base: 520
-      },
       {
         name: '9S - R020: Mirage',
         base: 300,
