@@ -33,6 +33,7 @@ import { ElementsService } from './services/elements.service';
 import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { AbsolutePipe } from './pipes/absolute.pipe';
 import { RoundPipe } from './pipes/round.pipe';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
@@ -49,6 +50,7 @@ import { LegalComponent } from './legal/legal.component';
     KeysPipe,
     TypePipe,
     CapitalizePipe,
+    AbsolutePipe,
     RoundPipe,
     MyUnitsComponent,
     ContactComponent,

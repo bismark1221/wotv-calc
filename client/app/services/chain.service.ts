@@ -369,14 +369,14 @@ export class ChainService {
     this.units.forEach((unit, index) => {
       diff.push({
         position: index,
-        firstHit: unit.ability.firstHit + unit.ability.offset + unit.framesGap
+        firstHit: unit.ability.firstHit + unit.framesGap
       });
     });
 
     diff.sort((a: any, b: any) => {
-      if (a.firstHit < b.firstHit) {
+      if (a.firstHit > b.firstHit) {
         return -1;
-      } else if (a.firstHit > b.firstHit) {
+      } else if (a.firstHit < b.firstHit) {
         return 1;
       } else {
         if (a.position < b.position) {

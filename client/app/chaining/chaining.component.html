@@ -355,7 +355,7 @@
     <p *ngIf="chain[1]">
       <span *ngFor="let diff of diffFirstHits; let j = index">
         <span *ngIf="j === 0">Send {{ this.chain[diff.position].name }} first - </span>
-        <span *ngIf="j !== 0">Send {{ this.chain[diff.position].name }} at {{ (diff.firstHit - diffFirstHits[0].firstHit) }} frames ({{ (diff.firstHit - diffFirstHits[0].firstHit) * 1 / 60 * 1000 | round }}ms)</span>
+        <span *ngIf="j !== 0">Send {{ this.chain[diff.position].name }} at {{ (diff.firstHit - diffFirstHits[0].firstHit) | absolute }} frames ({{ (diff.firstHit - diffFirstHits[0].firstHit) * 1 / 60 * 1000 | round | absolute }}ms)</span>
         <span *ngIf="j !== 0 && j !== (diffFirstHits.length - 1)"> - </span>
       </span>
     </p>
