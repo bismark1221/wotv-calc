@@ -55,7 +55,7 @@ export class FindBestService {
       this.units.forEach((unit, index) => {
         this.unitHits[index] = [];
 
-        if (unit.ability.chain) {
+        if (unit.ability.type === 'chain') {
           for (let i = 0; i <= 20; i++) {
             this.calculateUnitHits(unit, index, i);
           }
