@@ -19,7 +19,7 @@
 }
 
 .selectSlider {
-  max-width: 792px;
+  max-width: 520px;
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
@@ -392,7 +392,7 @@ nouislider {
 }
 
 .allSelectUnit {
-  width: 994px;
+  width: 540px;
   text-align: center;
 }
 
@@ -453,10 +453,6 @@ nouislider {
 @media (max-width: 839px) {
   nouislider {
     width: 220px;
-  }
-
-  .selectSlider {
-    max-width: 522px;
   }
 
   .buttonsChain {

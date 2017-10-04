@@ -2,43 +2,43 @@
   <div class="chainParameters allSelectUnit" #chainDiv>
     <div class="inlineBlock verticalTop" *ngFor="let i of [0, 1, 2, 3, 4, 5]">
 
-      <div class="selectUnitZone marginUnit{{i}}" *ngIf="i === 0 || chain[i - 1]" [ngClass]="{'expandedSelecUnit': viewOptions[i]}">
+      <div class="selectUnitZone marginUnit{{i}}" [ngClass]="{'expandedSelecUnit': viewOptions[i]}">
         <button *ngIf="chain[i] || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
         <div class="inlineBlock firstSelectLevel" *ngIf="chain[i] || !bestChainers[0]">
-          <label *ngIf="!chain[i] || (chain[i] && !chain[i].activeRename)" for="chain{{i}}">Unit {{ i + 1 }}</label>
-          <div *ngIf="!chain[i] || chain[i].id < 10000">
+          <label *ngIf="!chain[i].activeRename" for="chain{{i}}">Unit {{ i + 1 }}</label>
+          <div *ngIf="chain[i].id === 'unselect' || chain[i].id < 10000">
             <select2
               [data]="observableUnits"
               [value]="idSelected[i]"
               [position]="i"
               [options]="select2Options"
               (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-            <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i]" />
+            <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect'" />
           </div>
 
-          <div *ngIf="(!chain[i] || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': !chain[i]}">
+          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': !chain[i]}">
             <select2
               [data]="observableCreatedUnits"
               [value]="idSelected[i]"
               [position]="i"
               [options]="select2Options"
               (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-            <button *ngIf="chain[i] && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
-            <button *ngIf="chain[i]" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
+            <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
+            <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
 
-          <div *ngIf="chain[i] && chain[i].activeRename">
+          <div *ngIf="chain[i].id !== 'unselect' && chain[i].activeRename">
             <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
             <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()" (keyup.enter)="saveUnit(i)">
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
 
-          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i] && chain[i].id > 10000">
+          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].id > 10000">
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">Remove Unit</button>
           </div>
 
-          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop" *ngIf="chain[i] && !viewOptions[i]">
+          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop" *ngIf="chain[i].id !== 'unselect' && !viewOptions[i]">
             <hr class="selectHrWithBottomMargin"/>
             <label for="chainer{{i}}_ability">Ability</label>
             <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
@@ -46,41 +46,37 @@
             </select>
           </div>
 
-          <div *ngIf="!chain[i]">
+          <div *ngIf="chain[i].id === 'unselect'">
             <hr class="selectHr"/>
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">Create New Unit</button>
           </div>
 
-          <div *ngIf="chain[i] && viewOptions[i]">
+          <div *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
             <hr class="selectHr"/>
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnitFromPredefined(i)">Clone To My Unit</button>
           </div>
 
-          <div *ngIf="!chain[i] && chain.length === 1">
-            <button class="btn btn-secondary fullWidth littleMarginTop largeButtonDuplicate" type="button" (click)="duplicateUnit(i, 0)">Duplicate {{ chain[0].name }}</button>
-          </div>
-
-          <div class="littleMarginTop" *ngIf="!chain[i] && chain.length > 1">
+          <div class="littleMarginTop" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0">
             <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition">
-              <option *ngFor="let duplicate of chain; let j = index" [ngValue]="j">{{ duplicate.name | capitalize }}</option>
+              <option *ngFor="let duplicate of availableDuplicate; let j = index" [ngValue]="j">{{ duplicate.name | capitalize }}</option>
             </select>
             <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i, duplicatePosition)">Duplicate</button>
           </div>
 
-          <hr class="selectHr" *ngIf="chain[i]"/>
+          <hr class="selectHr" *ngIf="chain[i].id !== 'unselect'"/>
 
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i]">
+          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i].id !== 'unselect'">
             {{ viewOptions[i] ? 'Hide' : 'Show' }} Options
           </button>
 
-          <hr class="selectHr" *ngIf="chain[i - 1] && !chain[i] && chain.length <= 2"/>
+          <hr class="selectHr" *ngIf="chain[i - 1] && chain[i].id === 'unselect' && chain.length <= 2"/>
 
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && !chain[i] && chain.length <= 2">
+          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && chain[i].id === 'unselect' && chain.length <= 2">
             Find Best Units
           </button>
         </div>
 
-        <div class="inlineBlock firstSelectLevel" *ngIf="!chain[i] && bestChainers[0]">
+        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id === 'unselect' && bestChainers[0]">
           <label>Best units</label>
           <button
             *ngFor="let chainer of bestChainers; let j = index"
@@ -98,13 +94,7 @@
           </button>
         </div>
 
-        <div *ngIf="i === 1 && !chain[0]">
-          <label>Unit 2</label><br />
-          <i class="fa fa-ban selectUnit1" aria-hidden="true"></i><br />
-          Select unit 1 first !
-        </div>
-
-        <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i] && viewOptions[i]">
+        <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
           <hr class="mobileSeparatorSelectRightZone"/>
           <div class="selectRightZoneBox">
             <div class="selectRightZoneOneThird paddingRightTwoColumns">
@@ -295,7 +285,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="chain[1]">
+<div class="row" *ngIf="availableDuplicate.lenght > 1">
   <div class="selectChainZone">
     <div class="selectSlider">
       <label>Difference in first hit frame</label>

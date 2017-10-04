@@ -28,8 +28,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   chain: any[] = [];
   idSelected: string[] = [];
   idCreated: string[] = [];
-  selectedUnits: any[] = ['', '', '', '', '', ''];
-  selectedAbilities: any[] = [0, 0, 0, 0, 0, 0];
+  selectedUnits: any[] = [];
+  selectedAbilities: any[] = [];
+  availableDuplicate: any[] = [];
 
   createdUnits: any[] = [];
   diffFirstHits: any[] = [];
@@ -69,6 +70,38 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private localStorageService: LocalStorageService,
     private ref: ChangeDetectorRef
   ) { }
+
+  ngOnInit(): void {
+    for (let i = 0; i <= 5; i++) {
+      this.chain[i] = {
+        id: 'unselect',
+        framesGap: 0
+      };
+      this.selectedUnits[i] = '';
+      this.selectedAbilities[i] = 0;
+      this.idSelected[i] = 'unselect';
+      this.idCreated[i] = 'unselect';
+      this.sliderConfig[i] = {
+        start: 1,
+        step: 1,
+        range: {
+          min: 0,
+          max: 20
+        },
+        pips: {
+          mode: 'count',
+          values: 11,
+          density: 6
+        }
+      };
+    }
+    this.getUnits();
+    this.getElements();
+  }
+
+  ngAfterViewChecked(): void {
+    this.ref.detectChanges();
+  }
 
   private getUnits(): void {
     this.unitService.getUnits().then(units => {
@@ -154,32 +187,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     });
 
     return position;
-  }
-
-  ngOnInit(): void {
-    for (let i = 0; i <= 5; i++) {
-      this.idSelected[i] = 'unselect';
-      this.idCreated[i] = 'unselect';
-      this.sliderConfig[i] = {
-        start: 1,
-        step: 1,
-        range: {
-          min: 0,
-          max: 20
-        },
-        pips: {
-          mode: 'count',
-          values: 11,
-          density: 6
-        }
-      };
-    }
-    this.getUnits();
-    this.getElements();
-  }
-
-  ngAfterViewChecked(): void {
-    this.ref.detectChanges();
   }
 
   addDebuff(position: number) {
@@ -353,31 +360,24 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
   }
 
-  onChangeUnit(position: number, unitId: any = 0, ability: number = 0, framesGap: number = 0) {
+  onChangeUnit(position: number, unitId: any = 'unselect', ability: number = 0, framesGap: number = 0) {
     this.idSelected[position] = unitId;
-    if (unitId < 10000) {
-      this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
-    } else if (unitId >= 10000) {
-      this.selectedUnits[position] = this.createdUnits.find(unit => unit.id === parseInt(unitId));
-    }
 
     if (unitId === 'unselect') {
-      if (position === this.chain.length - 1) {
-        this.chain.splice(position, 1);
-        this.chainService.units.splice(position, 1);
-        this.viewOptions[position] = false;
-        this.selectedAbilities[position] = 0;
-      } else {
-        this.chain.forEach((unit, index) => {
-          if (index >= position && this.chain[index + 1]) {
-            this.selectedUnits[index] = this.selectedUnits[index + 1];
-            this.viewOptions[index] = this.viewOptions[index + 1];
-            this.idSelected[index] = this.selectedUnits[index].id;
-            this.updateChangedUnit(index, this.selectedAbilities[index + 1]);
-          }
-        });
-      }
+      this.chain[position] = {
+        id: 'unselect',
+        framesGap: 0
+      };
+      this.chainService.units.splice(position, 1);
+      this.viewOptions[position] = false;
+      this.selectedAbilities[position] = 0;
     } else {
+      if (unitId < 10000) {
+        this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
+      } else if (unitId >= 10000) {
+        this.selectedUnits[position] = this.createdUnits.find(unit => unit.id === parseInt(unitId));
+      }
+
       if (this.chain[position] && this.chain[position].id === unitId) {
         ability = this.selectedAbilities[position];
       }
@@ -386,7 +386,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     this.onChangeChain();
+    this.updateDuplicatePossibilities();
+  }
+
+  private updateDuplicatePossibilities() {
     this.duplicatePosition = 0;
+    this.availableDuplicate = [];
+
+    this.chain.forEach(unit => {
+      if (unit.id !== 'unselect') {
+        this.availableDuplicate.push(unit);
+      }
+    });
   }
 
   private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
@@ -444,21 +455,25 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeChain(): void {
-    this.bestChainers = [];
-    this.chainService.getChain();
-    this.diffFirstHits = this.chainService.calculateFramesDiffForFirstHits();
-    this.changeMultiSelectDropdown();
-    this.calculateMaxFramesGap();
+    if (this.availableDuplicate.length > 0) {
+      this.bestChainers = [];
+      this.chainService.getChain();
+      this.diffFirstHits = this.chainService.calculateFramesDiffForFirstHits();
+      this.changeMultiSelectDropdown();
+      this.calculateMaxFramesGap();
+    }
   }
 
   private calculateMaxFramesGap() {
     let hits = this.chainService.getHits();
     let maxHitForChain = this.chainService.findHighestChainHit();
     this.chain.forEach((unit, position) => {
-      if (unit.ability.type === 'chain') {
-        this.sliderConfig[position].range.max = 20;
-      } else {
-        this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;
+      if (unit.id !== 'unselect') {
+        if (unit.ability.type === 'chain') {
+          this.sliderConfig[position].range.max = 20;
+        } else {
+          this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;
+        }
       }
     });
   }
