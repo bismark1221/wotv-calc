@@ -3,9 +3,9 @@
     <div class="inlineBlock verticalTop" *ngFor="let i of [0, 1, 2, 3, 4, 5]">
 
       <div class="selectUnitZone marginUnit{{i}}" [ngClass]="{'expandedSelecUnit': viewOptions[i]}">
-        <button *ngIf="chain[i] || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
+        <button *ngIf="chain[i].id !== 'unselect' || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
-        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i] || !bestChainers[0]">
+        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id !== 'unselect' || !bestChainers[0]">
           <label *ngIf="!chain[i].activeRename" for="chain{{i}}">Unit {{ i + 1 }}</label>
           <div *ngIf="chain[i].id === 'unselect' || chain[i].id < 10000">
             <select2
@@ -17,7 +17,7 @@
             <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect'" />
           </div>
 
-          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': !chain[i]}">
+          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
             <select2
               [data]="observableCreatedUnits"
               [value]="idSelected[i]"
@@ -69,9 +69,9 @@
             {{ viewOptions[i] ? 'Hide' : 'Show' }} Options
           </button>
 
-          <hr class="selectHr" *ngIf="chain[i - 1] && chain[i].id === 'unselect' && chain.length <= 2"/>
+          <hr class="selectHr" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && availableDuplicate.length <= 2"/>
 
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i - 1] && chain[i].id === 'unselect' && chain.length <= 2">
+          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && availableDuplicate.length <= 2">
             Find Best Units
           </button>
         </div>
@@ -285,7 +285,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="availableDuplicate.lenght > 1">
+<div class="row" *ngIf="availableDuplicate.length > 1">
   <div class="selectChainZone">
     <div class="selectSlider">
       <label>Difference in first hit frame</label>
@@ -299,11 +299,11 @@
           (ngModelChange)="onChangeChain()">
         </nouislider>
       </div>
-      <div *ngIf="chain.length <= 4">
+      <div *ngIf="availableDuplicate.length <= 4">
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
       </div>
-      <div *ngIf="chain.length >= 5">
+      <div *ngIf="availableDuplicate.length >= 5">
         Sorry but calculation for such chain are too heavy :( I'm working a queue system...
       </div>
     </div>
@@ -322,27 +322,27 @@
           </button>
         </span>
       </div>
-      <div *ngIf="chain.length <= 4">
+      <div *ngIf="availableDuplicate.length <= 4">
         <button class="btn btn-secondary fullWidth" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
         <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">Find max combo</button>
       </div>
-      <div *ngIf="chain.length >= 5">
+      <div *ngIf="availableDuplicate.length >= 5">
         Sorry but calculation for such chain are too heavy :( I'm working a queue system...
       </div>
     </div>
   </div>
 </div>
 
-<div class="row littleMarginTop" *ngIf="chain[0]">
+<div class="row littleMarginTop" *ngIf="availableDuplicate.length > 0">
   <div class="selectDetailZone">
     <h2>Result</h2>
     <p>
       Total modifier : {{chainService.getResult().modifier}}%
     </p>
-    <p *ngIf="chain[1]">
+    <p *ngIf="availableDuplicate.length > 1">
       Total combo : {{chainService.getResult().combo}}
     </p>
-    <p *ngIf="chain[1]">
+    <p *ngIf="availableDuplicate.length > 1">
       <span *ngFor="let diff of diffFirstHits; let j = index">
         <span *ngIf="j === 0">Send {{ this.chain[diff.position].name }} first - </span>
         <span *ngIf="j !== 0">Send {{ this.chain[diff.position].name }} at {{ (diff.firstHit - diffFirstHits[0].firstHit) | absolute }} frames ({{ (diff.firstHit - diffFirstHits[0].firstHit) * 1 / 60 * 1000 | round | absolute }}ms)</span>
@@ -352,8 +352,8 @@
   </div>
 </div>
 
-<app-chain-chart *ngIf="chain[0]"></app-chain-chart>
-<div *ngIf="chain[0]">
+<app-chain-chart *ngIf="availableDuplicate.length > 0"></app-chain-chart>
+<div *ngIf="availableDuplicate.length > 0">
   <p>Legend</p>
   <div class="legendColorBlock">
     <div class="legendColor legendClassic1"></div>
