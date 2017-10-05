@@ -243,7 +243,9 @@ export class ChainService {
 
     this.calculateHitterOrder();
 
-    this.addHit(this.getNextHitter(), false);
+    if (this.getNextHitter() !== -1) {
+      this.addHit(this.nextHitter, false);
+    }
   }
 
   private sortFramesArray() {
