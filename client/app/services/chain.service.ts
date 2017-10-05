@@ -249,8 +249,8 @@ export class ChainService {
   }
 
   private sortFramesArray() {
-    this.units.forEach(unit => {
-      this.nbCombo.push(0);
+    this.units.forEach((unit, index) => {
+      this.nbCombo[index] = 0;
       unit.frames.sort((a: any, b: any) => {
         if (a.frame < b.frame) {
           return -1;
