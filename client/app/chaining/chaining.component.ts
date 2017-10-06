@@ -40,7 +40,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
   abilityTypes: string[] = ['chain', 'finish'];
 
-  viewOptions: boolean[] = [false, false];
+  viewOptions: boolean[] = [];
   bestChainers: any[] = [];
   duplicatePosition: number = 0;
 
