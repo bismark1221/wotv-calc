@@ -1275,7 +1275,7 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 300
+        base: 500
       },
       {
         name: 'Falcon Kick',
@@ -1293,7 +1293,7 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 300
+        base: 600
       },
       {
         name: 'Dragon Kick',
@@ -1302,7 +1302,7 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 300
+        base: 400
       },
       {
         name: 'LB - Fist Supreme',
