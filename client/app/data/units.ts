@@ -1233,13 +1233,85 @@ export const UNITS: any[] = [
     abilities: [
       {
         name: 'Alluring Chorus',
-        linearFrames: 'X-7-7-8-8-16-8',
+        linearFrames: false,
+        framesList: '0-7-7-8-8-16-8',
         firstHit: 139,
         castTime: 40,
         offset: 16,
         base: 280,
         ignore: 25,
         damage: 'magic',
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 63,
+    name: 'Goken',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Firm Punch',
+        hits: 6,
+        frames: 10,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      },
+      {
+        name: 'Light Kick',
+        hits: 6,
+        frames: 10,
+        firstHit: 50,
+        castTime: 40,
+        offset: 16,
+        base: 200
+      },
+      {
+        name: 'Wolfclaw Fist',
+        hits: 8,
+        frames: 10,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      },
+      {
+        name: 'Falcon Kick',
+        hits: 8,
+        frames: 10,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      },
+      {
+        name: 'Tigerclaw Fist',
+        hits: 10,
+        frames: 8,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      },
+      {
+        name: 'Dragon Kick',
+        hits: 10,
+        frames: 8,
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      },
+      {
+        name: 'LB - Fist Supreme',
+        linearFrames: false,
+        framesList: '0-7-9-7-9-7-9-9-5-5',
+        firstHit: 47,
+        castTime: 40,
+        offset: 16,
+        base: 840,
         dualable: false
       }
     ]
