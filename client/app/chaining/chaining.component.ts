@@ -23,6 +23,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   @ViewChild('chainDiv') private chainDiv: ElementRef;
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
+  private positionIdsInChain: any = {};
   private units: Unit[];
 
   chain: any[] = [];
@@ -42,7 +43,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   viewOptions: boolean[] = [];
   bestChainers: any[] = [];
-  duplicatePosition: number = 0;
+  duplicatePosition: number[] = [];
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -56,7 +57,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   sliderConfig: any[] = [];
 
   observableUnits: Array<Select2OptionData> = [];
-  observableCreatedUnits: Array<Select2OptionData> = [];
 
   select2Options: Select2Options = {
     theme: 'bootstrap'
@@ -73,10 +73,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   ngOnInit(): void {
     for (let i = 0; i <= 5; i++) {
-      this.chain[i] = {
-        id: 'unselect',
-        framesGap: 0
-      };
+      this.chain[i] = {id: 'unselect'};
       this.selectedUnits[i] = '';
       this.selectedAbilities[i] = 0;
       this.idSelected[i] = 'unselect';
@@ -117,12 +114,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.unitService.sort(this.units);
     this.unitService.sort(this.createdUnits);
 
-    let position = 0;
-    this.createdUnits.forEach(unit => {
+    this.createdUnits.forEach((unit, index) => {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
-      this.positionIds[unit.id] = position;
-      position++;
+      this.positionIds[unit.id] = index;
 
+      // Needed to correct old createdUnits
       unit.abilities.forEach(ability => {
         if(this.abilityTypes.findIndex(x => x === ability.type) === -1) {
           ability.damage = ability.type === 'LB' ? 'physic' : ability.type;
@@ -271,7 +267,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.observableUnits = [
       {
         id: 'unselect',
-        text: 'Predefined units',
+        text: 'Units',
         children: []
       },
       {
@@ -282,6 +278,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       {
         id: '0',
         text: 'Finishers',
+        children: []
+      },
+      {
+        id: '0',
+        text: 'My Units',
         children: []
       }
     ];
@@ -292,33 +293,15 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         text: unit.name
       });
     });
-    delete this.observableUnits[0].children;
-
-    this.observableCreatedUnits = [
-      {
-        id: 'unselect',
-        text: 'My units',
-        children: []
-      },
-      {
-        id: '0',
-        text: 'Chainers',
-        children: []
-      },
-      {
-        id: '0',
-        text: 'Finishers',
-        children: []
-      }
-    ];
 
     this.createdUnits.forEach(unit => {
-      this.observableCreatedUnits[(unit.type === 'chain' ? 1 : 2)].children.push({
+      this.observableUnits[3].children.push({
         id: unit.id.toString(),
         text: unit.name
       });
     });
-    delete this.observableCreatedUnits[0].children;
+
+    delete this.observableUnits[0].children;
   }
 
   removeUnit(position: number) {
@@ -329,12 +312,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.reloadList();
   }
 
-  duplicateUnit(position: number, copy: number) {
-    this.idSelected[position] = this.idSelected[copy];
-    this.selectedUnits[position] = this.selectedUnits[copy];
-    this.selectedAbilities[position] = this.selectedAbilities[copy];
+  duplicateUnit(position: number) {
+    this.idSelected[position] = this.idSelected[this.positionIdsInChain[this.duplicatePosition[position]]];
+    this.selectedUnits[position] = this.selectedUnits[this.positionIdsInChain[this.duplicatePosition[position]]];
+    this.selectedAbilities[position] = this.selectedAbilities[this.positionIdsInChain[this.duplicatePosition[position]]];
 
-    this.chain[position] = JSON.parse(JSON.stringify(this.chain[copy]));
+    this.chain[position] = JSON.parse(JSON.stringify(this.chain[this.positionIdsInChain[this.duplicatePosition[position]]]));
     this.chainService.units[position] = this.chain[position];
     this.updateLocalDebuffs(position);
 
@@ -390,12 +373,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   private updateDuplicatePossibilities() {
-    this.duplicatePosition = 0;
     this.availableDuplicate = [];
+    this.positionIdsInChain = {};
 
     this.chain.forEach(unit => {
-      if (unit.id !== 'unselect') {
+      if (unit.id !== 'unselect') { // console -- && this.availableDuplicate.findIndex(x => x.id === unit.id) === -1
         this.availableDuplicate.push(unit);
+      }
+    });
+
+    this.chain.forEach((unit, index) => {
+      this.positionIdsInChain[unit.id] = index;
+      if (this.availableDuplicate[0]) {
+        this.duplicatePosition[index] = this.availableDuplicate[0].id;
       }
     });
   }

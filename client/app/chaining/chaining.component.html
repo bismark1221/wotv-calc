@@ -18,12 +18,6 @@
           </div>
 
           <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
-            <select2
-              [data]="observableCreatedUnits"
-              [value]="idSelected[i]"
-              [position]="i"
-              [options]="select2Options"
-              (valueChanged)="onChangeUnit(i, $event.value);"></select2>
             <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
             <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
           </div>
@@ -57,10 +51,10 @@
           </div>
 
           <div class="littleMarginTop" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0">
-            <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition">
-              <option *ngFor="let duplicate of availableDuplicate; let j = index" [ngValue]="j">{{ duplicate.name | capitalize }}</option>
+            <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition[i]">
+              <option *ngFor="let duplicate of availableDuplicate" [ngValue]="duplicate.id">{{ duplicate.name | capitalize }}</option>
             </select>
-            <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i, duplicatePosition)">Duplicate</button>
+            <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i)">Duplicate</button>
           </div>
 
           <hr class="selectHr" *ngIf="chain[i].id !== 'unselect'"/>
@@ -288,16 +282,18 @@
 <div class="row" *ngIf="availableDuplicate.length > 1">
   <div class="selectChainZone">
     <div class="selectSlider">
-      <label>Difference in first hit frame</label>
-      <div>
-        <nouislider
-          *ngFor="let unit of chain; let i = index"
-          [config]="sliderConfig[i]"
-          [min]="sliderConfig[i].range.min"
-          [max]="sliderConfig[i].range.max"
-          [(ngModel)]="unit.framesGap"
-          (ngModelChange)="onChangeChain()">
-        </nouislider>
+      <label class="block">Difference in first hit frame</label>
+      <div class="inlineBlock" *ngFor="let unit of chain; let i = index">
+        <div class="inlineBlock" *ngIf="unit.id !== 'unselect'">
+          <label class="block">{{unit.name}}</label>
+          <nouislider
+            [config]="sliderConfig[i]"
+            [min]="sliderConfig[i].range.min"
+            [max]="sliderConfig[i].range.max"
+            [(ngModel)]="unit.framesGap"
+            (ngModelChange)="onChangeChain()">
+          </nouislider>
+        </div>
       </div>
       <div *ngIf="availableDuplicate.length <= 4">
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>

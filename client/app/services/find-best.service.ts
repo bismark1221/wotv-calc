@@ -71,7 +71,7 @@ export class FindBestService {
             this.calculateUnitHits(unit, index, i, 'chainer');
           }
         } else {
-          this.calculateUnitHits(unit, index, 0);
+          this.calculateUnitsHits(unit, index, 0);
           this.finishers.push(unit);
         }
 
@@ -90,7 +90,7 @@ export class FindBestService {
           this.units.forEach((unit, index) => {
             if (unit.ability.type === 'finish' && type === 'modifier') {
               for (let i = 0; i <= maxFrames; i++) {
-                this.calculateUnitHits(unit, index, i);
+                this.calculateUnitsHits(unit, index, i);
               }
               unit.minFrame = 0;
               unit.maxFrame = maxFrames;
@@ -107,6 +107,7 @@ export class FindBestService {
       }
     }
 
+    console.log(this.best)
 
     return this.best;
   }
@@ -210,6 +211,12 @@ export class FindBestService {
   }
 
   private calculateAllPossibleFrames(type: string, unitPosition: number) {
+    // console.log(type)
+    // console.log(unitPosition)
+    // console.log(this.unitsHits)
+    // console.log(this.chainersHits)
+    // console.log(this[type + 'Hits'])
+
     if (unitPosition < this[type].length) {
       for (let i = this[type][unitPosition].minFrame; i <= this[type][unitPosition].maxFrame; i++) {
         this.frames[unitPosition] = i;
@@ -218,6 +225,10 @@ export class FindBestService {
       }
     } else if (this.frames.findIndex(x => x === 0) !== -1) {
       let modifier = this.calculateChain(type);
+      console.log("#####")
+      console.log(modifier)
+      console.log(this.frames)
+      console.log("#####")
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;
         this[type].forEach((unit, index) => {

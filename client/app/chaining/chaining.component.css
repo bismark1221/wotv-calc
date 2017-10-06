@@ -2,6 +2,10 @@
   display: inline-block;
 }
 
+.block {
+  display: block;
+}
+
 .fullWidth {
   width: 100%;
 }
@@ -339,7 +343,7 @@ nouislider {
 }
 
 .buttonsChain {
-  width: 278px;
+  width: 250px;
 }
 
 .bestChainers {
