@@ -469,8 +469,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.findBestService.units = this.chainService.units;
     result = this.findBestService.findBestFrames();
 
-    result[type].frames.forEach((framesGap, index) => {
-      this.chain[index].framesGap = framesGap;
+    this.chain.forEach((unit, index) => {
+      unit.framesGap = result[type].frames[index];
     });
     this.onChangeChain();
   }
