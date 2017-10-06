@@ -20,10 +20,11 @@ export class FindBestService {
   private frames: number[];
   private elements: string[];
   private modifierElements: number[] = [];
-  private unitsHits: any[] = [];
+  private chainUnitsHits: any[] = [];
   private chainersHits: any[] = [];
   private chainers: any[] = [];
   private finishers: any[] = [];
+  private chainUnits: any[] = [];
   private hitters: any[] = [];
 
   units: any[] = [];
@@ -48,16 +49,19 @@ export class FindBestService {
     };
 
     if (this.units.length > 0) {
+      this.chainUnits = [];
       this.chainers = [];
       this.finishers = [];
       this.frames = [];
-      this.unitsHits = [];
+      this.chainUnitsHits = [];
       this.chainersHits = [];
       let chainerIndex = 0;
+      let unitIndex = 0;
 
       this.units.forEach((unit, index) => {
-        this.unitsHits[index] = [];
+        this.chainUnitsHits[unitIndex] = [];
         unit.index = index;
+        unit.unitIndex = unitIndex;
 
         if (unit.ability.type === 'chain') {
           this.chainersHits.push([]);
@@ -68,14 +72,18 @@ export class FindBestService {
           chainerIndex++;
 
           for (let i = 0; i <= 20; i++) {
-            this.calculateUnitHits(unit, index, i, 'chainer');
+            this.calculateUnitHits(unit, unitIndex, i, 'chainer');
           }
         } else {
-          this.calculateUnitHits(unit, index, 0);
+          this.calculateUnitHits(unit, unitIndex, 0);
           this.finishers.push(unit);
         }
 
-        unit.frames = this.unitsHits[index][0];
+        if (unit) {
+          this.chainUnits.push(unit);
+        }
+        unit.frames = this.chainUnitsHits[unitIndex][0];
+        unitIndex++;
       });
 
       this.getElements();
@@ -87,7 +95,7 @@ export class FindBestService {
         let maxFrames = Math.max(this.best.modifier.hits[this.best.modifier.hits.length - 1], this.best.combo.hits[this.best.combo.hits.length - 1]) + 1;
 
         ['modifier', 'combo'].forEach(type => {
-          this.units.forEach((unit, index) => {
+          this.chainUnits.forEach((unit, index) => {
             if (unit.ability.type === 'finish' && type === 'modifier') {
               for (let i = 0; i <= maxFrames; i++) {
                 this.calculateUnitHits(unit, index, i);
@@ -97,57 +105,55 @@ export class FindBestService {
             } else if (unit.ability.type === 'chain') {
               let chainerFrame = this.best[type].frames[unit.index];
               this.frames[index] = chainerFrame;
-              unit.frames = this.unitsHits[index][chainerFrame];
+              unit.frames = this.chainUnitsHits[index][chainerFrame];
               unit.minFrame = chainerFrame;
               unit.maxFrame = chainerFrame;
             }
           });
-          this.calculateAllPossibleFrames('units', 0);
+          this.calculateAllPossibleFrames('chainUnits', 0);
         });
       }
     }
-
-    console.log(this.best)
 
     return this.best;
   }
 
   // Once Upon A Time
   private calculateUnitHits(unit: any, unitPosition: number, framesGap: number, type: string = 'unit') {
-    this.unitsHits[unitPosition][framesGap] = [];
+    this.chainUnitsHits[unitPosition][framesGap] = [];
     let countFrames = 0 + framesGap;
     let dualCountFrames = unit.ability.offset + unit.ability.castTime + framesGap;
 
     if (!unit.ability.linearFrames) {
       unit.ability.framesList.split('-').forEach(hit => {
         countFrames += Number(hit);
-        this.unitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+        this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
       });
 
       if (unit.dual && unit.ability.dualable) {
         unit.ability.framesList.split('-').forEach(hit => {
           dualCountFrames += Number(hit);
-          this.unitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+          this.chainUnitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
         });
       }
     } else {
-      this.unitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+      this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
       for (let i = 1; i < unit.ability.hits; i++) {
         countFrames += unit.ability.frames;
-        this.unitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+        this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
       }
 
       if (unit.dual && unit.ability.dualable) {
-        this.unitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+        this.chainUnitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
         for (let i = 1; i < unit.ability.hits; i++) {
           dualCountFrames += unit.ability.frames;
-          this.unitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+          this.chainUnitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
         }
       }
     }
 
     if (type === 'chainer') {
-      this.chainersHits[unit.chainerIndex][framesGap] = this.unitsHits[unitPosition][framesGap];
+      this.chainersHits[unit.chainerIndex][framesGap] = this.chainUnitsHits[unitPosition][framesGap];
     }
   }
 
@@ -211,12 +217,6 @@ export class FindBestService {
   }
 
   private calculateAllPossibleFrames(type: string, unitPosition: number) {
-    // console.log(type)
-    // console.log(unitPosition)
-    // console.log(this.unitsHits)
-    // console.log(this.chainersHits)
-    // console.log(this[type + 'Hits'])
-
     if (unitPosition < this[type].length) {
       for (let i = this[type][unitPosition].minFrame; i <= this[type][unitPosition].maxFrame; i++) {
         this.frames[unitPosition] = i;
@@ -225,10 +225,6 @@ export class FindBestService {
       }
     } else if (this.frames.findIndex(x => x === 0) !== -1) {
       let modifier = this.calculateChain(type);
-      console.log("#####")
-      console.log(modifier)
-      console.log(this.frames)
-      console.log("#####")
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;
         this[type].forEach((unit, index) => {

@@ -295,7 +295,7 @@
           </nouislider>
         </div>
       </div>
-      <div *ngIf="availableDuplicate.length <= 4">
+      <div *ngIf="availableDuplicate.length <= 4"><!-- console -- count only chainer -->
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
       </div>
