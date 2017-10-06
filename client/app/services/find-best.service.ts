@@ -71,7 +71,7 @@ export class FindBestService {
             this.calculateUnitHits(unit, index, i, 'chainer');
           }
         } else {
-          this.calculateUnitsHits(unit, index, 0);
+          this.calculateUnitHits(unit, index, 0);
           this.finishers.push(unit);
         }
 
@@ -90,7 +90,7 @@ export class FindBestService {
           this.units.forEach((unit, index) => {
             if (unit.ability.type === 'finish' && type === 'modifier') {
               for (let i = 0; i <= maxFrames; i++) {
-                this.calculateUnitsHits(unit, index, i);
+                this.calculateUnitHits(unit, index, i);
               }
               unit.minFrame = 0;
               unit.maxFrame = maxFrames;
