@@ -22,6 +22,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { MyUnitsComponent } from './my-units/my-units.component';
 import { ChainingComponent } from './chaining/chaining.component';
 import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
+import { ContactComponent } from './contact/contact.component';
+import { LegalComponent } from './legal/legal.component';
+import { MacroComponent } from './macro/macro.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
@@ -35,8 +38,6 @@ import { TypePipe } from './pipes/type.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AbsolutePipe } from './pipes/absolute.pipe';
 import { RoundPipe } from './pipes/round.pipe';
-import { ContactComponent } from './contact/contact.component';
-import { LegalComponent } from './legal/legal.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { LegalComponent } from './legal/legal.component';
     RoundPipe,
     MyUnitsComponent,
     ContactComponent,
-    LegalComponent
+    LegalComponent,
+    MacroComponent
   ],
   imports: [
     BrowserModule,

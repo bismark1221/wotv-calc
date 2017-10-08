@@ -32,6 +32,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   selectedUnits: any[] = [];
   selectedAbilities: any[] = [];
   availableDuplicate: any[] = [];
+  chainers: any[] = [];
+  finishers: any[] = [];
 
   createdUnits: any[] = [];
   diffFirstHits: any[] = [];
@@ -44,6 +46,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   viewOptions: boolean[] = [];
   bestChainers: any[] = [];
   duplicatePosition: number[] = [];
+  viewBestChainers: number = -1;
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -130,8 +133,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private localSaveUnits() {
     this.chain.forEach(unit => {
-      unit.activeRename = false;
-      unit.ability.activeRename = false;
+      if (unit.id !== 'unselect') {
+        unit.activeRename = false;
+        unit.ability.activeRename = false;
+      }
     })
     this.sortUnits();
     this.localStorageService.set('units', this.createdUnits);
@@ -325,22 +330,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   unselectUnit(position: number) {
-    if (this.chain[position]) {
-      let deleteLast = false;
-      if (position !== this.chain.length - 1) {
-        deleteLast = true;
-      }
-
+    if (this.chain[position].id !== 'unselect') {
       this.selectedUnits[position] = '';
       this.onChangeUnit(position, 'unselect');
-
-      if (deleteLast) {
-        this.selectedUnits[(this.chain.length - 1)] = '';
-        this.onChangeUnit((this.chain.length - 1), 'unselect');
-      }
-    } else {
-      this.bestChainers = [];
     }
+    this.viewBestChainers = -1;
+    this.bestChainers = [];
   }
 
   onChangeUnit(position: number, unitId: any = 'unselect', ability: number = 0, framesGap: number = 0) {
@@ -351,10 +346,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         id: 'unselect',
         framesGap: 0
       };
-      this.chainService.units.splice(position, 1);
+      this.chainService.units[position] = null;
       this.viewOptions[position] = false;
       this.selectedAbilities[position] = 0;
     } else {
+      this.viewBestChainers = -1;
       if (unitId < 10000) {
         this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
       } else if (unitId >= 10000) {
@@ -374,11 +370,21 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private updateDuplicatePossibilities() {
     this.availableDuplicate = [];
+    this.chainers = [];
+    this.finishers = [];
     this.positionIdsInChain = {};
 
     this.chain.forEach(unit => {
-      if (unit.id !== 'unselect') { // console -- && this.availableDuplicate.findIndex(x => x.id === unit.id) === -1
-        this.availableDuplicate.push(unit);
+      if (unit.id !== 'unselect') {
+        if (this.availableDuplicate.findIndex(x => x.id === unit.id)) {
+          this.availableDuplicate.push(unit);
+        }
+
+        if (unit.type === 'chain') {
+          this.chainers.push(unit);
+        } else {
+          this.finishers.push(unit);
+        }
       }
     });
 
@@ -446,7 +452,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   onChangeChain(): void {
     if (this.availableDuplicate.length > 0) {
-      this.bestChainers = [];
       this.chainService.getChain();
       this.diffFirstHits = this.chainService.calculateFramesDiffForFirstHits();
       this.changeMultiSelectDropdown();
@@ -480,18 +485,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.onChangeChain();
   }
 
-  findBestChainers() {
+  findBestChainers(position: number) {
     let chainers = [];
     let allUnits = this.units.concat(this.createdUnits);
-    let nextChainerPosition = this.chainService.units.length;
+
+    this.viewBestChainers = position;
     this.bestChainers = [];
     this.findBestService.units = JSON.parse(JSON.stringify(this.chainService.units));
 
     allUnits.forEach(unit => {
-      this.findBestService.units[nextChainerPosition] = JSON.parse(JSON.stringify(unit));
+      this.findBestService.units[position] = JSON.parse(JSON.stringify(unit));
 
       unit.abilities.forEach(ability => {
-        this.findBestService.units[nextChainerPosition].ability = ability;
+        this.findBestService.units[position].ability = ability;
         let result = this.findBestService.findBestFrames();
         chainers.push({
           unit: unit,

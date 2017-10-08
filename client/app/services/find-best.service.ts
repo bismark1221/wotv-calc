@@ -59,31 +59,31 @@ export class FindBestService {
       let unitIndex = 0;
 
       this.units.forEach((unit, index) => {
-        this.chainUnitsHits[unitIndex] = [];
-        unit.index = index;
-        unit.unitIndex = unitIndex;
-
-        if (unit.ability.type === 'chain') {
-          this.chainersHits.push([]);
-          unit.minFrame = 0;
-          unit.maxFrame = 20;
-          unit.chainerIndex = chainerIndex;
-          this.chainers.push(unit);
-          chainerIndex++;
-
-          for (let i = 0; i <= 20; i++) {
-            this.calculateUnitHits(unit, unitIndex, i, 'chainer');
-          }
-        } else {
-          this.calculateUnitHits(unit, unitIndex, 0);
-          this.finishers.push(unit);
-        }
-
         if (unit) {
+          this.chainUnitsHits[unitIndex] = [];
+          unit.index = index;
+          unit.unitIndex = unitIndex;
+
+          if (unit.ability.type === 'chain') {
+            this.chainersHits.push([]);
+            unit.minFrame = 0;
+            unit.maxFrame = 20;
+            unit.chainerIndex = chainerIndex;
+            this.chainers.push(unit);
+            chainerIndex++;
+
+            for (let i = 0; i <= 20; i++) {
+              this.calculateUnitHits(unit, unitIndex, i, 'chainer');
+            }
+          } else {
+            this.calculateUnitHits(unit, unitIndex, 0);
+            this.finishers.push(unit);
+          }
+
           this.chainUnits.push(unit);
+          unit.frames = this.chainUnitsHits[unitIndex][0];
+          unitIndex++;
         }
-        unit.frames = this.chainUnitsHits[unitIndex][0];
-        unitIndex++;
       });
 
       this.getElements();
@@ -96,13 +96,13 @@ export class FindBestService {
 
         ['modifier', 'combo'].forEach(type => {
           this.chainUnits.forEach((unit, index) => {
-            if (unit.ability.type === 'finish' && type === 'modifier') {
+            if (unit && unit.ability.type === 'finish' && type === 'modifier') {
               for (let i = 0; i <= maxFrames; i++) {
                 this.calculateUnitHits(unit, index, i);
               }
               unit.minFrame = 0;
               unit.maxFrame = maxFrames;
-            } else if (unit.ability.type === 'chain') {
+            } else if (unit && unit.ability.type === 'chain') {
               let chainerFrame = this.best[type].frames[unit.index];
               this.frames[index] = chainerFrame;
               unit.frames = this.chainUnitsHits[index][chainerFrame];
@@ -159,23 +159,25 @@ export class FindBestService {
 
   private getElements() {
     this.units.forEach(unit => {
-      let elements = [];
+      if (unit) {
+        let elements = [];
 
-      if (unit.ability.damage === 'physic') {
-        unit.weapons.forEach(weapon => {
-          if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
-            elements.push(weapon);
+        if (unit.ability.damage === 'physic') {
+          unit.weapons.forEach(weapon => {
+            if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
+              elements.push(weapon);
+            }
+          });
+        }
+
+        unit.ability.elements.forEach(element => {
+          if (element !== '' && elements.findIndex(x => x === element) === -1) {
+            elements.push(element);
           }
         });
+
+        unit.elements = elements;
       }
-
-      unit.ability.elements.forEach(element => {
-        if (element !== '' && elements.findIndex(x => x === element) === -1) {
-          elements.push(element);
-        }
-      });
-
-      unit.elements = elements;
     });
   }
 
@@ -185,7 +187,7 @@ export class FindBestService {
       let modifier = 1;
 
       this.units.forEach(unit => {
-        if (unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
+        if (unit && unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
           modifier = unit.ability.debuff[element] / 100 + 1;
         }
       });
@@ -196,23 +198,25 @@ export class FindBestService {
 
   private calculateHitDamage() {
     this.units.forEach(unit => {
-      unit.totalDamage = 0;
-      let realIgnore = unit.ability.ignore * 2 / 100 + 1;
-      let base = unit.ability.base
+      if (unit) {
+        unit.totalDamage = 0;
+        let realIgnore = unit.ability.ignore * 2 / 100 + 1;
+        let base = unit.ability.base
 
-      if (unit.ability.damage === 'hybrid') {
-        base /= 2;
+        if (unit.ability.damage === 'hybrid') {
+          base /= 2;
+        }
+
+        if (unit.elements.length > 0) {
+          unit.elements.forEach(element => {
+            unit.totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
+          })
+        } else {
+          unit.totalDamage = base * realIgnore;
+        }
+
+        unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.dualable ? 2 : 1));
       }
-
-      if (unit.elements.length > 0) {
-        unit.elements.forEach(element => {
-          unit.totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
-        })
-      } else {
-        unit.totalDamage = base * realIgnore;
-      }
-
-      unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.dualable ? 2 : 1));
     });
   }
 

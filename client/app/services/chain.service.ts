@@ -21,6 +21,7 @@ export class ChainService {
   private elements: string[];
   private modifierElements: number[] = [];
   private hitters: any[] = [];
+  private chainers: any[] = [];
   private result: any = {
     modifier: 0,
     combo: '0'
@@ -28,8 +29,11 @@ export class ChainService {
 
   units: any[] = [];
 
-  private dataSubject = new BehaviorSubject<any[]>(this.hits);
-  $hits = this.dataSubject.asObservable();
+  private hitsDataSubject = new BehaviorSubject<any[]>(this.hits);
+  $hits = this.hitsDataSubject.asObservable();
+
+  private unitsDataSubject = new BehaviorSubject<any[]>(this.units);
+  $units = this.unitsDataSubject.asObservable();
 
   constructor(
     private elementsService: ElementsService
@@ -46,9 +50,14 @@ export class ChainService {
 
   getChain() {
     this.frames = [];
+    this.chainers = [];
 
-    this.units.forEach(unit => {
-      unit.frames = this.calculateUnitHits(unit);
+    this.units.forEach((unit, index) => {
+      if (unit) {
+        unit.frames = this.calculateUnitHits(unit);
+        unit.index = index;
+        this.chainers.push(unit);
+      }
     });
 
     this.getElements();
@@ -58,7 +67,8 @@ export class ChainService {
     this.result.modifier = this.calculateChain();
     this.result.combo = this.combo.join(" + ");
 
-    this.dataSubject.next(this.hits);
+    this.hitsDataSubject.next(this.hits);
+    this.unitsDataSubject.next(this.units);
   }
 
   // Once Upon A Time
@@ -138,23 +148,25 @@ export class ChainService {
 
   private getElements() {
     this.units.forEach(unit => {
-      let elements = [];
+      if (unit) {
+        let elements = [];
 
-      if (unit.ability.damage === 'physic') {
-        unit.weapons.forEach(weapon => {
-          if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
-            elements.push(weapon);
+        if (unit.ability.damage === 'physic') {
+          unit.weapons.forEach(weapon => {
+            if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
+              elements.push(weapon);
+            }
+          });
+        }
+
+        unit.ability.elements.forEach(element => {
+          if (element !== '' && elements.findIndex(x => x === element) === -1) {
+            elements.push(element);
           }
         });
+
+        unit.elements = elements;
       }
-
-      unit.ability.elements.forEach(element => {
-        if (element !== '' && elements.findIndex(x => x === element) === -1) {
-          elements.push(element);
-        }
-      });
-
-      unit.elements = elements;
     });
   }
 
@@ -177,7 +189,7 @@ export class ChainService {
       let modifier = 1;
 
       this.units.forEach(unit => {
-        if (unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
+        if (unit && unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
           modifier = unit.ability.debuff[element] / 100 + 1;
         }
       });
@@ -188,23 +200,25 @@ export class ChainService {
 
   private calculateHitDamage() {
     this.units.forEach(unit => {
-      unit.totalDamage = 0;
-      let realIgnore = unit.ability.ignore * 2 / 100 + 1;
-      let base = unit.ability.base
+      if (unit) {
+        unit.totalDamage = 0;
+        let realIgnore = unit.ability.ignore * 2 / 100 + 1;
+        let base = unit.ability.base
 
-      if (unit.ability.damage === 'hybrid') {
-        base /= 2;
+        if (unit.ability.damage === 'hybrid') {
+          base /= 2;
+        }
+
+        if (unit.elements.length > 0) {
+          unit.elements.forEach(element => {
+            unit.totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
+          })
+        } else {
+          unit.totalDamage = base * realIgnore;
+        }
+
+        unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.dualable ? 2 : 1));
       }
-
-      if (unit.elements.length > 0) {
-        unit.elements.forEach(element => {
-          unit.totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
-        })
-      } else {
-        unit.totalDamage = base * realIgnore;
-      }
-
-      unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.dualable ? 2 : 1));
     });
   }
 
@@ -212,15 +226,15 @@ export class ChainService {
   private calculateChain() {
     this.total = 0;
 
-    if (this.units.length > 0) {
+    if (this.chainers.length > 0) {
       this.initializeChain();
 
       while (this.getNextHitter() !== -1) {
         if (this.lastHitter === this.nextHitter) {
           this.addHit(this.nextHitter, false);
         } else {
-          let previousFrame = this.units[this.lastHitter].frames[this.nbCombo[this.lastHitter] - 1].frame;
-          let actualFrame = this.units[this.nextHitter].frames[this.nbCombo[this.nextHitter]].frame;
+          let previousFrame = this.chainers[this.lastHitter].frames[this.nbCombo[this.lastHitter] - 1].frame;
+          let actualFrame = this.chainers[this.nextHitter].frames[this.nbCombo[this.nextHitter]].frame;
           this.addHit(this.nextHitter, (actualFrame - previousFrame <= 21));
         }
       }
@@ -249,7 +263,7 @@ export class ChainService {
   }
 
   private sortFramesArray() {
-    this.units.forEach((unit, index) => {
+    this.chainers.forEach((unit, index) => {
       this.nbCombo[index] = 0;
       unit.frames.sort((a: any, b: any) => {
         if (a.frame < b.frame) {
@@ -277,7 +291,7 @@ export class ChainService {
     while (minIndex !== -1) {
       let minFrame = 10000;
       minIndex = -1;
-      this.units.forEach((unit, index) => {
+      this.chainers.forEach((unit, index) => {
         if (unit.frames.length > nbCombo[index] &&
           (index === 0
             || unit.frames[nbCombo[index]].frame < minFrame
@@ -301,15 +315,15 @@ export class ChainService {
   }
 
   private addHit(unitPosition: number, combo: boolean) {
-    let unit = this.units[unitPosition];
-    let unitName = (unitPosition + 1) + '.' + unit.name;
+    let unit = this.chainers[unitPosition];
+    let unitName = (unit.index + 1) + '.' + unit.name;
     let hit = unit.frames[this.nbCombo[unitPosition]];
     let divided = false;
 
-    let type = combo || this.nbHits === 0 || this.units.length === 1 ? unit.type : 'break';
+    let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? unit.type : 'break';
     type = type + (hit.type === 'classic' ? '1' : '2');
 
-    for (let i = 1; i <= this.units.length; i++) {
+    for (let i = 1; i <= this.chainers.length; i++) {
       if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
         this.hits[this.nbHits - i].divided = true;
         hit.frame += 0.5;
@@ -369,16 +383,19 @@ export class ChainService {
   calculateFramesDiffForFirstHits() {
     let diff = [];
     this.units.forEach((unit, index) => {
-      diff.push({
-        position: index,
-        firstHit: unit.ability.firstHit + unit.framesGap
-      });
+      if (unit) {
+        diff.push({
+          position: index,
+          firstHit: unit.ability.firstHit,
+          framesGap: unit.framesGap
+        });
+      }
     });
 
     diff.sort((a: any, b: any) => {
       if (a.firstHit > b.firstHit) {
         return -1;
-      } else if (a.firstHit < b.firstHit) {
+      } else if (a.firstHit - a.framesGap < b.firstHit - b.framesGap) {
         return 1;
       } else {
         if (a.position < b.position) {

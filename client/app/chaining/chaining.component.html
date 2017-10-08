@@ -1,285 +1,289 @@
 <div class="row unit form-group">
   <div class="chainParameters allSelectUnit" #chainDiv>
-    <div class="inlineBlock verticalTop" *ngFor="let i of [0, 1, 2, 3, 4, 5]">
+    <div class="inlineBlock verticalTop" *ngFor="let column of [0, 3]">
+      <!-- <div class="verticalTop"> -->
+        <div
+          class=" verticalTop selectUnitZone marginUnit{{i}}"
+          [ngClass]="{'expandedSelecUnit': viewOptions[i], 'autoMargin': viewOptions[column + 0] || viewOptions[column + 1] || viewOptions[column + 2]}"
+          *ngFor="let i of [column + 0, column + 1, column + 2]">
+          <button *ngIf="chain[i].id !== 'unselect' || viewBestChainers === i" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
 
-      <div class="selectUnitZone marginUnit{{i}}" [ngClass]="{'expandedSelecUnit': viewOptions[i]}">
-        <button *ngIf="chain[i].id !== 'unselect' || bestChainers[0]" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
-
-        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id !== 'unselect' || !bestChainers[0]">
-          <label *ngIf="!chain[i].activeRename" for="chain{{i}}">Unit {{ i + 1 }}</label>
-          <div *ngIf="chain[i].id === 'unselect' || chain[i].id < 10000">
-            <select2
-              [data]="observableUnits"
-              [value]="idSelected[i]"
-              [position]="i"
-              [options]="select2Options"
-              (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-            <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect'" />
-          </div>
-
-          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
-            <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
-            <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
-          </div>
-
-          <div *ngIf="chain[i].id !== 'unselect' && chain[i].activeRename">
-            <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
-            <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()" (keyup.enter)="saveUnit(i)">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
-          </div>
-
-          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].id > 10000">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">Remove Unit</button>
-          </div>
-
-          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop" *ngIf="chain[i].id !== 'unselect' && !viewOptions[i]">
-            <hr class="selectHrWithBottomMargin"/>
-            <label for="chainer{{i}}_ability">Ability</label>
-            <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
-              <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ ability.name | capitalize }}</option>
-            </select>
-          </div>
-
-          <div *ngIf="chain[i].id === 'unselect'">
-            <hr class="selectHr"/>
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">Create New Unit</button>
-          </div>
-
-          <div *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
-            <hr class="selectHr"/>
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnitFromPredefined(i)">Clone To My Unit</button>
-          </div>
-
-          <div class="littleMarginTop" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0">
-            <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition[i]">
-              <option *ngFor="let duplicate of availableDuplicate" [ngValue]="duplicate.id">{{ duplicate.name | capitalize }}</option>
-            </select>
-            <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i)">Duplicate</button>
-          </div>
-
-          <hr class="selectHr" *ngIf="chain[i].id !== 'unselect'"/>
-
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i].id !== 'unselect'">
-            {{ viewOptions[i] ? 'Hide' : 'Show' }} Options
-          </button>
-
-          <hr class="selectHr" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && availableDuplicate.length <= 2"/>
-
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers()" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && availableDuplicate.length <= 2">
-            Find Best Units
-          </button>
-        </div>
-
-        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id === 'unselect' && bestChainers[0]">
-          <label>Best units</label>
-          <button
-            *ngFor="let chainer of bestChainers; let j = index"
-            class="btn btn-secondary fullWidth"
-            [ngClass]="{'littleMarginTop': j !== 0}"
-            type="button"
-            (click)="selectUnit(i, chainer.unit, chainer.ability, chainer.frames)">
-            <div class="bestChainerButton">
-              {{ chainer.unit.name }}<br />
-              <span>
-                {{ chainer.ability.name }}<br />
-                {{ chainer.modifier }}%
-              </span>
-            </div>
-          </button>
-        </div>
-
-        <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
-          <hr class="mobileSeparatorSelectRightZone"/>
-          <div class="selectRightZoneBox">
-            <div class="selectRightZoneOneThird paddingRightTwoColumns">
-              <label for="chainer{{i}}_dual">Dualcast/Dualwield</label>
-              <select class="form-control" id="chainer{{i}}_dual" [(ngModel)]="chain[i].dual" (ngModelChange)="onChangeDual(i)">
-                <option [ngValue]="true">Yes</option>
-                <option [ngValue]="false">No</option>
-              </select>
+          <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id !== 'unselect' || viewBestChainers !== i">
+            <label for="chain{{i}}">Unit {{ i + 1 }}</label>
+            <div>
+              <select2
+                [data]="observableUnits"
+                [value]="idSelected[i]"
+                [position]="i"
+                [options]="select2Options"
+                (valueChanged)="onChangeUnit(i, $event.value);"></select2>
+              <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect' && chain[i].id < 10000" />
             </div>
 
-            <div class="selectRightZoneOneThird">
-              <label for="chainer{{i}}_weapon1">Element weapon 1</label>
-              <select class="form-control" id="chainer{{i}}_weapon1" [(ngModel)]="chain[i].weapons[0]" (ngModelChange)="saveUnit(i)">
-                <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
-              </select>
+            <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
+              <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">Rename</button>
+              <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
             </div>
 
-            <div class="selectRightZoneOneThird tabletMarginTop paddingRightTwoColumns" *ngIf="chain[i].dual">
-              <label for="chainer{{i}}_weapon2">Element weapon 2</label>
-              <select class="form-control" id="chainer{{i}}_weapon2" [(ngModel)]="chain[i].weapons[1]" (ngModelChange)="saveUnit(i)">
-                <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
-              </select>
+            <div *ngIf="chain[i].id !== 'unselect' && chain[i].activeRename">
+              <label for="chainer{{i}}_name">Unit name {{ i + 1 }}</label>
+              <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()" (keyup.enter)="saveUnit(i)">
+              <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">Save</button>
             </div>
-          </div>
 
-          <hr />
+            <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].id > 10000">
+              <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">Remove Unit</button>
+            </div>
 
-          <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneOneThird selectAbility" *ngIf="!chain[i].ability.activeRename">
+            <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop" *ngIf="chain[i].id !== 'unselect' && !viewOptions[i]">
+              <hr class="selectHrWithBottomMargin"/>
               <label for="chainer{{i}}_ability">Ability</label>
               <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
-                <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
+                <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ ability.name | capitalize }}</option>
               </select>
             </div>
 
-            <div class="selectRightZoneOneThird selectAbility" *ngIf="chain[i].ability.activeRename">
-              <label for="unit_ability">Ability name</label>
-              <input class="form-control" type="text" id="unit_ability" [(ngModel)]="chain[i].ability.name" (keyup.enter)="saveUnit(i)">
+            <div *ngIf="chain[i].id === 'unselect'">
+              <hr class="selectHr"/>
+              <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">Create New Unit</button>
             </div>
 
-            <diV class="buttonsAbility">
-              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].id > 10000 && !chain[i].ability.activeRename">
-                <label class="emptyLabel">&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(i)">Rename ability</button>
-              </div>
-
-              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].id > 10000 && chain[i].ability.activeRename">
-                <label class="emptyLabel">&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit(i)">Save ability</button>
-              </div>
-
-              <div class="selectRightZoneTwoThirdDividedInThird">
-                <label class="emptyLabel">&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility(i)">Add ability</button>
-              </div>
-
-              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].abilities.length > 1">
-                <label class="emptyLabel">&nbsp;</label>
-                <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility(i)">Delete ability</button>
-              </div>
-            </diV>
-          </div>
-
-          <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneInFour">
-              <span id="tooltip_base_{{i}}"></span>
-              <label for="chainer{{i}}_base"
-                tooltip="ex: damage 7x = 700%"
-                parentSelector="#tooltip_base_{{i}}">
-                Base % <i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
-              </label>
-              <div class="input-group">
-                <input class="form-control" type="number" id="chainer{{i}}_base" [(ngModel)]="chain[i].ability.base" (ngModelChange)="saveUnit(i)">
-                <span class="input-group-addon" id="unit_base_percent">%</span>
-              </div>
+            <div *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
+              <hr class="selectHr"/>
+              <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnitFromPredefined(i)">Clone To My Unit</button>
             </div>
 
-            <div class="selectRightZoneInFour">
-              <label for="chainer{{i}}_ignore">Ignore (Def/Spr)</label>
-              <div class="input-group">
-                <input class="form-control" type="number" id="chainer{{i}}_ignore" [(ngModel)]="chain[i].ability.ignore" (ngModelChange)="saveUnit(i)">
-                <span class="input-group-addon" id="unit_base_percent">%</span>
-              </div>
-            </div>
-
-            <div class="selectRightZoneInFour">
-              <label for="chainer{{i}}_ability_type">Ability Type</label>
-              <select class="form-control" id="chainer{{i}}_damage_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="saveUnit(i)">
-                <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+            <div class="littleMarginTop" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0">
+              <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition[i]">
+                <option *ngFor="let duplicate of availableDuplicate" [ngValue]="duplicate.id">{{ duplicate.name | capitalize }}</option>
               </select>
+              <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i)">Duplicate</button>
             </div>
 
-            <div class="selectRightZoneInFour tabletMarginTop">
-              <span id="tooltip_type_{{i}}"></span>
-              <label for="chainer{{i}}_damage_type">Damage Type</label>
-              <select class="form-control" id="chainer{{i}}_damage_type" [(ngModel)]="chain[i].ability.damage" (ngModelChange)="saveUnit(i)">
-                <option *ngFor="let abilityDamage of abilityDamages" [ngValue]="abilityDamage">{{abilityDamage}}</option>
-              </select>
-            </div>
+            <hr class="selectHr" *ngIf="chain[i].id !== 'unselect'"/>
 
-            <div class="selectRightZoneInFour">
-              <label for="chainer{{i}}_ignore">Dualable ?</label>
-              <select class="form-control" id="chainer{{i}}_dualable" [(ngModel)]="chain[i].ability.dualable" (ngModelChange)="saveUnit(i)">
-                <option [ngValue]="true">Yes</option>
-                <option [ngValue]="false">No</option>
-              </select>
-            </div>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="showOptions(i)" *ngIf="chain[i].id !== 'unselect'">
+              {{ viewOptions[i] ? 'Hide' : 'Show' }} Options
+            </button>
+
+            <hr class="selectHr" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && chainers.length <= 2"/>
+
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers(i)" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && chainers.length <= 2">
+              Find Best Units
+            </button>
           </div>
 
-          <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneMediumBox verticalTop blockLinearFrames">
-              <label for="chainer{{i}}_frames">Linear Frames</label>
-              <div>
-                <input type="checkbox" id="chainer{{i}}_linearFrames" [(ngModel)]="chain[i].ability.linearFrames" (ngModelChange)="saveUnit(i)">
-                <label for="chainer{{i}}_linearFrames"></label>
+          <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id === 'unselect' && viewBestChainers === i">
+            <label>Best units</label>
+            <button
+              *ngFor="let chainer of bestChainers; let j = index"
+              class="btn btn-secondary fullWidth"
+              [ngClass]="{'littleMarginTop': j !== 0}"
+              type="button"
+              (click)="selectUnit(i, chainer.unit, chainer.ability, chainer.frames)">
+              <div class="bestChainerButton">
+                {{ chainer.unit.name }}<br />
+                <span>
+                  {{ chainer.ability.name }}<br />
+                  {{ chainer.modifier }}%
+                </span>
               </div>
-            </div>
-
-            <div class="selectRightZoneLittleBox" *ngIf="chain[i].ability.linearFrames">
-              <label for="chainer{{i}}_hits">Hits</label>
-              <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="saveUnit(i)">
-            </div>
-
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].ability.linearFrames">
-              <label for="chainer{{i}}_frames">Hit X Frames</label>
-              <input class="form-control" type="number" id="chainer{{i}}_frames" [(ngModel)]="chain[i].ability.frames" (ngModelChange)="saveUnit(i)">
-            </div>
-
-            <div class="selectRightZoneFrames" *ngIf="!chain[i].ability.linearFrames">
-              <label for="chainer{{i}}_framesList">Frames (0-X-X-X-X)</label>
-              <input class="form-control" type="text" id="chainer{{i}}_framesList" [(ngModel)]="chain[i].ability.framesList" (ngModelChange)="saveUnit(i)">
-            </div>
-
-            <div class="selectRightZoneLittleBox tabletMarginTop">
-              <label for="chainer{{i}}_firstHit">First Hit</label>
-              <input class="form-control" type="number" id="chainer{{i}}_firstHit" [(ngModel)]="chain[i].ability.firstHit" (ngModelChange)="saveUnit(i)">
-            </div>
-
-            <div class="selectRightZoneLittleBox">
-              <label for="chainer{{i}}_castTime">Cast time</label>
-              <input class="form-control" type="number" id="chainer{{i}}_castTime" [(ngModel)]="chain[i].ability.castTime" (ngModelChange)="saveUnit(i)">
-            </div>
-
-            <div class="selectRightZoneLittleBox">
-              <label for="chainer{{i}}_offset">Offset</label>
-              <input class="form-control" type="number" id="chainer{{i}}_offset" [(ngModel)]="chain[i].ability.offset" (ngModelChange)="saveUnit(i)">
-            </div>
+            </button>
           </div>
 
-          <div class="selectRightZoneBox littleMarginTop multiSelectDropdown" *ngIf="multiElements.length > 0">
-            <ss-multiselect-dropdown
-              [options]="multiElements"
-              [settings]="multiElementsSettings"
-              [texts]="multiElementsTexts"
-              [(ngModel)]="this.chain[i].ability.elements"
-              (ngModelChange)="saveUnit(i)">
-            </ss-multiselect-dropdown>
-          </div>
-
-          <div class="selectRightZoneBox littleMarginTop">
-            <hr class="mobileSeparatorSelectDebuff"/>
-            <div class="divAddDebuff">
-              <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(i)">Add debuff</button>
-            </div>
-            <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
-              <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
-              <div class="selectRightZoneTwoDividedThree">
-                <label for="unit{{i}}_debuff{{j}}_type">Element {{j + 1}}</label>
-                <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i, j)">
-                  <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
+          <div class="selectRightZone inlineBlock verticalTop" *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
+            <hr class="mobileSeparatorSelectRightZone"/>
+            <div class="selectRightZoneBox">
+              <div class="selectRightZoneOneThird paddingRightTwoColumns">
+                <label for="chainer{{i}}_dual">Dualcast/Dualwield</label>
+                <select class="form-control" id="chainer{{i}}_dual" [(ngModel)]="chain[i].dual" (ngModelChange)="onChangeDual(i)">
+                  <option [ngValue]="true">Yes</option>
+                  <option [ngValue]="false">No</option>
                 </select>
               </div>
-              <div class="selectRightZoneTwoDividedThree">
-                <label for="unit{{i}}_debuff{{j}}_value">Value {{j + 1}}</label>
+
+              <div class="selectRightZoneOneThird">
+                <label for="chainer{{i}}_weapon1">Element weapon 1</label>
+                <select class="form-control" id="chainer{{i}}_weapon1" [(ngModel)]="chain[i].weapons[0]" (ngModelChange)="saveUnit(i)">
+                  <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
+                </select>
+              </div>
+
+              <div class="selectRightZoneOneThird tabletMarginTop paddingRightTwoColumns" *ngIf="chain[i].dual">
+                <label for="chainer{{i}}_weapon2">Element weapon 2</label>
+                <select class="form-control" id="chainer{{i}}_weapon2" [(ngModel)]="chain[i].weapons[1]" (ngModelChange)="saveUnit(i)">
+                  <option *ngFor="let element of elements" [ngValue]="element">{{element}}</option>
+                </select>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="selectRightZoneBox littleMarginTop">
+              <div class="selectRightZoneOneThird selectAbility" *ngIf="!chain[i].ability.activeRename">
+                <label for="chainer{{i}}_ability">Ability</label>
+                <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
+                  <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
+                </select>
+              </div>
+
+              <div class="selectRightZoneOneThird selectAbility" *ngIf="chain[i].ability.activeRename">
+                <label for="unit_ability">Ability name</label>
+                <input class="form-control" type="text" id="unit_ability" [(ngModel)]="chain[i].ability.name" (keyup.enter)="saveUnit(i)">
+              </div>
+
+              <diV class="buttonsAbility">
+                <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].id > 10000 && !chain[i].ability.activeRename">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(i)">Rename ability</button>
+                </div>
+
+                <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].id > 10000 && chain[i].ability.activeRename">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit(i)">Save ability</button>
+                </div>
+
+                <div class="selectRightZoneTwoThirdDividedInThird">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility(i)">Add ability</button>
+                </div>
+
+                <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].abilities.length > 1">
+                  <label class="emptyLabel">&nbsp;</label>
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility(i)">Delete ability</button>
+                </div>
+              </diV>
+            </div>
+
+            <div class="selectRightZoneBox littleMarginTop">
+              <div class="selectRightZoneInFour">
+                <span id="tooltip_base_{{i}}"></span>
+                <label for="chainer{{i}}_base"
+                  tooltip="ex: damage 7x = 700%"
+                  parentSelector="#tooltip_base_{{i}}">
+                  Base % <i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
+                </label>
                 <div class="input-group">
-                  <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
+                  <input class="form-control" type="number" id="chainer{{i}}_base" [(ngModel)]="chain[i].ability.base" (ngModelChange)="saveUnit(i)">
                   <span class="input-group-addon" id="unit_base_percent">%</span>
                 </div>
               </div>
-              <div class="selectRightZoneTwoDividedThree">
-                <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove</button>
+
+              <div class="selectRightZoneInFour">
+                <label for="chainer{{i}}_ignore">Ignore (Def/Spr)</label>
+                <div class="input-group">
+                  <input class="form-control" type="number" id="chainer{{i}}_ignore" [(ngModel)]="chain[i].ability.ignore" (ngModelChange)="saveUnit(i)">
+                  <span class="input-group-addon" id="unit_base_percent">%</span>
+                </div>
+              </div>
+
+              <div class="selectRightZoneInFour">
+                <label for="chainer{{i}}_ability_type">Ability Type</label>
+                <select class="form-control" id="chainer{{i}}_damage_type" [(ngModel)]="chain[i].ability.type" (ngModelChange)="saveUnit(i)">
+                  <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{abilityType}}</option>
+                </select>
+              </div>
+
+              <div class="selectRightZoneInFour tabletMarginTop">
+                <span id="tooltip_type_{{i}}"></span>
+                <label for="chainer{{i}}_damage_type">Damage Type</label>
+                <select class="form-control" id="chainer{{i}}_damage_type" [(ngModel)]="chain[i].ability.damage" (ngModelChange)="saveUnit(i)">
+                  <option *ngFor="let abilityDamage of abilityDamages" [ngValue]="abilityDamage">{{abilityDamage}}</option>
+                </select>
+              </div>
+
+              <div class="selectRightZoneInFour">
+                <label for="chainer{{i}}_ignore">Dualable ?</label>
+                <select class="form-control" id="chainer{{i}}_dualable" [(ngModel)]="chain[i].ability.dualable" (ngModelChange)="saveUnit(i)">
+                  <option [ngValue]="true">Yes</option>
+                  <option [ngValue]="false">No</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="selectRightZoneBox littleMarginTop">
+              <div class="selectRightZoneMediumBox verticalTop blockLinearFrames">
+                <label for="chainer{{i}}_frames">Linear Frames</label>
+                <div>
+                  <input type="checkbox" id="chainer{{i}}_linearFrames" [(ngModel)]="chain[i].ability.linearFrames" (ngModelChange)="saveUnit(i)">
+                  <label for="chainer{{i}}_linearFrames"></label>
+                </div>
+              </div>
+
+              <div class="selectRightZoneLittleBox" *ngIf="chain[i].ability.linearFrames">
+                <label for="chainer{{i}}_hits">Hits</label>
+                <input class="form-control" type="number" id="chainer{{i}}_hits" [(ngModel)]="chain[i].ability.hits" (ngModelChange)="saveUnit(i)">
+              </div>
+
+              <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[i].ability.linearFrames">
+                <label for="chainer{{i}}_frames">Hit X Frames</label>
+                <input class="form-control" type="number" id="chainer{{i}}_frames" [(ngModel)]="chain[i].ability.frames" (ngModelChange)="saveUnit(i)">
+              </div>
+
+              <div class="selectRightZoneFrames" *ngIf="!chain[i].ability.linearFrames">
+                <label for="chainer{{i}}_framesList">Frames (0-X-X-X-X)</label>
+                <input class="form-control" type="text" id="chainer{{i}}_framesList" [(ngModel)]="chain[i].ability.framesList" (ngModelChange)="saveUnit(i)">
+              </div>
+
+              <div class="selectRightZoneLittleBox tabletMarginTop">
+                <label for="chainer{{i}}_firstHit">First Hit</label>
+                <input class="form-control" type="number" id="chainer{{i}}_firstHit" [(ngModel)]="chain[i].ability.firstHit" (ngModelChange)="saveUnit(i)">
+              </div>
+
+              <div class="selectRightZoneLittleBox">
+                <label for="chainer{{i}}_castTime">Cast time</label>
+                <input class="form-control" type="number" id="chainer{{i}}_castTime" [(ngModel)]="chain[i].ability.castTime" (ngModelChange)="saveUnit(i)">
+              </div>
+
+              <div class="selectRightZoneLittleBox">
+                <label for="chainer{{i}}_offset">Offset</label>
+                <input class="form-control" type="number" id="chainer{{i}}_offset" [(ngModel)]="chain[i].ability.offset" (ngModelChange)="saveUnit(i)">
+              </div>
+            </div>
+
+            <div class="selectRightZoneBox littleMarginTop multiSelectDropdown" *ngIf="multiElements.length > 0">
+              <ss-multiselect-dropdown
+                [options]="multiElements"
+                [settings]="multiElementsSettings"
+                [texts]="multiElementsTexts"
+                [(ngModel)]="this.chain[i].ability.elements"
+                (ngModelChange)="saveUnit(i)">
+              </ss-multiselect-dropdown>
+            </div>
+
+            <div class="selectRightZoneBox littleMarginTop">
+              <hr class="mobileSeparatorSelectDebuff"/>
+              <div class="divAddDebuff">
+                <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(i)">Add debuff</button>
+              </div>
+              <div *ngFor="let debuff of chain[i].debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+                <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
+                <div class="selectRightZoneTwoDividedThree">
+                  <label for="unit{{i}}_debuff{{j}}_type">Element {{j + 1}}</label>
+                  <select class="form-control" id="unit{{i}}_debuff{{j}}_type" [(ngModel)]="chain[i].debuffs[j].type" (ngModelChange)="onChangeDebuff(i, j)">
+                    <option *ngFor="let element of requiredElements" [ngValue]="element">{{element}}</option>
+                  </select>
+                </div>
+                <div class="selectRightZoneTwoDividedThree">
+                  <label for="unit{{i}}_debuff{{j}}_value">Value {{j + 1}}</label>
+                  <div class="input-group">
+                    <input class="form-control" type="number" id="unit{{i}}_debuff{{j}}_value" [(ngModel)]="chain[i].debuffs[j].value" (ngModelChange)="onChangeDebuff(i, j)">
+                    <span class="input-group-addon" id="unit_base_percent">%</span>
+                  </div>
+                </div>
+                <div class="selectRightZoneTwoDividedThree">
+                  <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(i, j)">Remove</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
 </div>
 
-<div class="row" *ngIf="availableDuplicate.length > 1">
+<div class="row" *ngIf="chainers.length + finishers.length > 1">
   <div class="selectChainZone">
     <div class="selectSlider">
       <label class="block">Difference in first hit frame</label>
@@ -295,11 +299,11 @@
           </nouislider>
         </div>
       </div>
-      <div *ngIf="availableDuplicate.length <= 4"><!-- console -- count only chainer -->
+      <div *ngIf="chainers.length <= 4">
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">Find max combo</button>
       </div>
-      <div *ngIf="availableDuplicate.length >= 5">
+      <div *ngIf="chainers.length >= 5">
         Sorry but calculation for such chain are too heavy :( I'm working a queue system...
       </div>
     </div>
@@ -318,11 +322,11 @@
           </button>
         </span>
       </div>
-      <div *ngIf="availableDuplicate.length <= 4">
+      <div *ngIf="chainers.length <= 4">
         <button class="btn btn-secondary fullWidth" type="button" (click)="findBestFrames('modifier')">Find best modifier</button>
         <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">Find max combo</button>
       </div>
-      <div *ngIf="availableDuplicate.length >= 5">
+      <div *ngIf="chainers.length >= 5">
         Sorry but calculation for such chain are too heavy :( I'm working a queue system...
       </div>
     </div>
@@ -335,15 +339,8 @@
     <p>
       Total modifier : {{chainService.getResult().modifier}}%
     </p>
-    <p *ngIf="availableDuplicate.length > 1">
+    <p *ngIf="chainers.length + finishers.length > 1">
       Total combo : {{chainService.getResult().combo}}
-    </p>
-    <p *ngIf="availableDuplicate.length > 1">
-      <span *ngFor="let diff of diffFirstHits; let j = index">
-        <span *ngIf="j === 0">Send {{ this.chain[diff.position].name }} first - </span>
-        <span *ngIf="j !== 0">Send {{ this.chain[diff.position].name }} at {{ (diff.firstHit - diffFirstHits[0].firstHit) | absolute }} frames ({{ (diff.firstHit - diffFirstHits[0].firstHit) * 1 / 60 * 1000 | round | absolute }}ms)</span>
-        <span *ngIf="j !== 0 && j !== (diffFirstHits.length - 1)"> - </span>
-      </span>
     </p>
   </div>
 </div>
@@ -365,5 +362,12 @@
     <div class="legendColor legendBreak1"></div>
     <div class="legendColor legendBreak2"></div>
     <div>Unit hit break chain</div>
+  </div>
+</div>
+
+<div class="row littleMarginTop" *ngIf="availableDuplicate.length > 0">
+  <div class="selectDetailZone">
+    <h2>Macro</h2>
+    <app-macro></app-macro>
   </div>
 </div>

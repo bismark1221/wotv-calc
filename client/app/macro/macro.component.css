@@ -1,0 +1,78 @@
+.input_macro {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.result_macro {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.memu_macro {
+  width: 350px;
+}
+
+.nox_macro {
+  width: 600px;
+}
+
+.littleMarginTop {
+  margin-top: 10px;
+}
+
+.options_macro {
+  max-width: 970px;
+  text-align: center;
+}
+
+.group_input_macro {
+  display: inline-block;
+  text-align: center;
+}
+
+.group_button_macro {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button_macro {
+  display: inline-block;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.group_result_macro {
+  text-align: left;
+}
+
+@media (max-width: 1004px) {
+  .group_result_macro {
+    text-align: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .nox_macro {
+    width: 350px;
+  }
+}
+
+@media (max-width: 630px) {
+  .nox_macro {
+    width: 350px;
+  }
+}
+
+@media (max-width: 380px) {
+  .memu_macro {
+    width: 250px;
+  }
+
+  .nox_macro {
+    width: 250px;
+  }
+}

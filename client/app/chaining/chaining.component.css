@@ -27,7 +27,6 @@
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   padding: 10px 20px;
   position: relative;
   margin-right: 20px;
@@ -78,7 +77,6 @@
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   padding: 10px;
   position: relative;
 }
@@ -255,10 +253,6 @@
   left: 1px;
   font-size: 25px;
   line-height: 1.75;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  transition: all .2s;
   color: #464a4c;
 }
 
@@ -313,7 +307,6 @@ nouislider {
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   padding: 10px;
   position: relative;
 }
@@ -396,7 +389,6 @@ nouislider {
 }
 
 .allSelectUnit {
-  width: 540px;
   text-align: center;
 }
 
@@ -432,6 +424,13 @@ nouislider {
 .marginUnit5 {
   margin-right: 20px;
   margin-bottom: 10px;
+}
+
+.autoMargin {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  left: -10px;
 }
 
 @media (max-width: 1049px) {
