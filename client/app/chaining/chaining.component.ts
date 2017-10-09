@@ -36,7 +36,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   finishers: any[] = [];
 
   createdUnits: any[] = [];
-  diffFirstHits: any[] = [];
   elements: string[];
   requiredElements: string[];
   multiElements: IMultiSelectOption[] = [];
@@ -318,15 +317,15 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   duplicateUnit(position: number) {
-    this.idSelected[position] = this.idSelected[this.positionIdsInChain[this.duplicatePosition[position]]];
-    this.selectedUnits[position] = this.selectedUnits[this.positionIdsInChain[this.duplicatePosition[position]]];
-    this.selectedAbilities[position] = this.selectedAbilities[this.positionIdsInChain[this.duplicatePosition[position]]];
+    let unit = this.unitService.getUnit(this.duplicatePosition[position]);
+    this.selectedUnits[position] = unit;
 
-    this.chain[position] = JSON.parse(JSON.stringify(this.chain[this.positionIdsInChain[this.duplicatePosition[position]]]));
-    this.chainService.units[position] = this.chain[position];
-    this.updateLocalDebuffs(position);
-
-    this.onChangeChain();
+    this.onChangeUnit(
+      position,
+      unit.id,
+      this.selectedAbilities[this.positionIdsInChain[this.duplicatePosition[position]]],
+      this.chain[this.positionIdsInChain[this.duplicatePosition[position]]].framesGap
+    );
   }
 
   unselectUnit(position: number) {
@@ -404,7 +403,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.updateLocalDebuffs(position);
     this.chain[position].activeRename = false;
     this.chain[position].ability.activeRename = false;
-    this.chain[position].framesGap = (!this.chain[position].framesGap ? framesGap : this.chain[position].framesGap);
+    this.chain[position].framesGap = (!this.chain[position].framesGap || framesGap !== 0 ? framesGap : this.chain[position].framesGap);
   }
 
   addAbility(position: number) {
@@ -453,7 +452,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   onChangeChain(): void {
     if (this.availableDuplicate.length > 0) {
       this.chainService.getChain();
-      this.diffFirstHits = this.chainService.calculateFramesDiffForFirstHits();
       this.changeMultiSelectDropdown();
       this.calculateMaxFramesGap();
     }
@@ -529,7 +527,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       chainer.framesGap = framesGaps[index];
     })
     unit.framesGap = framesGaps[position]
+
     this.selectedUnits[position] = unit;
-    this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[(framesGaps.length - 1)]);
+    this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[position]);
   }
 }
