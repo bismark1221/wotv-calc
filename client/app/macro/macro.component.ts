@@ -48,7 +48,7 @@ export class MacroComponent implements OnInit {
     let memuMilliseconds: number = 1000;
     let noxMilliseconds: number = 100;
     let memuSeparator: number = 100;
-    let noxSeparator: number = 1;
+    let noxSeparator: number = 2;
 
     let positions = [
       {
@@ -80,7 +80,9 @@ export class MacroComponent implements OnInit {
     this.memu += String(Math.round(memuMilliseconds + memuMilliseconds * frame)) + '--VINPUT--MULTI:1:0:' + Math.round(positions[position].width * this.width) + ':' + Math.round(positions[position].height * this.height) + '\n';
     this.memu += String(Math.round(memuMilliseconds + memuMilliseconds * frame + memuSeparator)) + '--VINPUT--MULTI:1:1:0:' + String(this.height) + '\n';
 
-    this.nox += '0ScRiPtSePaRaToR' + String(this.height) + '|' + String(this.width) + '|MULTI:1:0:' + Math.round(positions[position].height * this.height) + ':' + Math.round(positions[position].width * this.width) + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame)) + '\n';
-    this.nox += '0ScRiPtSePaRaToR' + String(this.height) + '|' + String(this.width) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
+    this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:1:0:' + Math.round(positions[position].width * this.width) + ':' + Math.round(positions[position].height * this.height) + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame)) + '\n';
+    this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
+    this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
+    this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:1' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
   }
 }
