@@ -1629,7 +1629,8 @@ export const UNITS: any[] = [
         base: 240,
         ignore: 50
       }
-    ]
+    ],
+    dual: false
   },
   {
     id: 58,
