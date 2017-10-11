@@ -46,9 +46,9 @@ export class MacroComponent implements OnInit {
 
   private addMacroHit(frame: number, position: number) {
     let memuMilliseconds: number = 1000;
-    let noxMilliseconds: number = 10;
+    let noxMilliseconds: number = 1;
     let memuSeparator: number = 100;
-    let noxSeparator: number = 2;
+    let noxSeparator: number = 1;
 
     let positions = [
       [
