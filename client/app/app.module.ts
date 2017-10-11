@@ -8,6 +8,7 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { MarkdownModule } from 'angular2-markdown';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
+import { ClipboardModule } from 'ngx-clipboard';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
@@ -73,7 +74,8 @@ import { RoundPipe } from './pipes/round.pipe';
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     TooltipModule,
     SliderModule,
-    Select2Module
+    Select2Module,
+    ClipboardModule
   ],
   providers: [
     UnitService,
