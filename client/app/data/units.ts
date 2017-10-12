@@ -1191,7 +1191,7 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'King\'s Sword',
+        name: 'Kingsglaive',
         hits: 8,
         frames: 8,
         firstHit: 82,
@@ -1202,7 +1202,17 @@ export const UNITS: any[] = [
         debuff: {
           fire: 50
         }
-      }
+      },
+      {
+        name: 'Desperate Blow',
+        hits: 1,
+        frames: 1,
+        firstHit: 180,
+        castTime: 40,
+        offset: 26,
+        base: 750,
+        type: 'finish'
+      },
     ]
   },
   {
@@ -1211,7 +1221,7 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'Dark of dawn',
+        name: 'Daybreak Darkness',
         hits: 8,
         frames: 9,
         firstHit: 102,
@@ -1315,6 +1325,26 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 64,
+    name: 'Toxic Rain',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Toxic Rain',
+        hits: 7,
+        frames: 10,
+        firstHit: 50,
+        castTime: 40,
+        offset: 16,
+        base: 180,
+        ignore: 25,
+        damage: 'magic',
+        dualable: false
+      },
+    ],
+    dual: false
   },
 // Finish
   {
@@ -1769,11 +1799,11 @@ export const UNITS: any[] = [
 //TMR
   {
     id: 41,
-    name: 'TMR',
+    name: 'Pod 153',
     type: 'chain',
     abilities: [
       {
-        name: '9S - R020: Mirage',
+        name: 'R020: Mirage',
         base: 300,
         linearFrames: true,
         hits: 8,
@@ -1783,6 +1813,25 @@ export const UNITS: any[] = [
         firstHit: 42
       },
     ]
+  },
+  {
+    id: 65,
+    name: 'Alterna',
+    type: 'finish',
+    abilities: [
+      {
+        name: 'Alterna',
+        hits: 1,
+        frames: 1,
+        firstHit: 365,
+        castTime: 40,
+        offset: 16,
+        base: 510,
+        ignore: 25,
+        damage: 'magic',
+        type: 'finish'
+      },
+    ],
   },
   {
     id: 42,
