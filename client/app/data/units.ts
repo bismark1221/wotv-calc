@@ -127,7 +127,7 @@ export const UNITS: any[] = [
     type: 'chain',
     'abilities': [
       {
-        name: 'Tri-Beam Laser + 2',
+        name: 'Tri-Beam Laser +2',
         base: 2250,
         linearFrames: true,
         hits: 7,
@@ -178,7 +178,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: 'Divine Ruination + 2',
+        name: 'Divine Ruination +2',
         base: 200,
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -214,7 +214,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: 'Piledriver + 2 (JP Only)',
+        name: 'Piledriver +2 (JP Only)',
         base: 250,
         hits: 7,
         frames: 8,
@@ -322,7 +322,7 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'Ultima + 2',
+        name: 'Ultima +2',
         base: 280,
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -458,7 +458,7 @@ export const UNITS: any[] = [
         firstHit: 40
       },
       {
-        name: 'Tri-Attack + 2',
+        name: 'Tri-Attack +2',
         base: 300,
         linearFrames: false,
         framesList: '0-4-6-4-6-4-6-4-6-4-6-4',
@@ -466,6 +466,17 @@ export const UNITS: any[] = [
         offset: 26,
         firstHit: 40
       },
+      {
+        name: 'Snowpetal +2',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 60,
+        castTime: 40,
+        offset: 0,
+        base: 200,
+        ignore: 65
+      }
     ]
   },
   {
@@ -566,7 +577,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        name: 'Aureole Ray + 2 (JP Only)',
+        name: 'Aureole Ray +2 (JP Only)',
         base: 400,
         hits: 30,
         frames: 4,
@@ -649,7 +660,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        name: 'Holy Explosion + 2 (JP Only)',
+        name: 'Holy Explosion +2 (JP Only)',
         base: 260,
         linearFrames: false,
         castTime: 40,
@@ -756,7 +767,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        name: 'Tidal Wave + 2 (JP Only)',
+        name: 'Tidal Wave +2 (JP Only)',
         base: 280,
         hits: 12,
         frames: 12,
@@ -787,7 +798,7 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'Ultima + 2 (JP Only)',
+        name: 'Ultima +2 (JP Only)',
         base: 280,
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -880,7 +891,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        name: 'Chaos Wave + 2 (JP Only)',
+        name: 'Chaos Wave +2 (JP Only)',
         base: 420,
         hits: 10,
         frames: 8,
@@ -892,7 +903,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        name: 'Ultima + 2 (JP Only)',
+        name: 'Ultima +2 (JP Only)',
         base: 280,
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -919,7 +930,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
-        name: 'Quick Hit + 2 (JP Only)',
+        name: 'Quick Hit +2 (JP Only)',
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-20',
         firstHit: 22,
@@ -970,7 +981,7 @@ export const UNITS: any[] = [
         base: 270
       },
       {
-        name: 'Assault Strike + 2 (JP Only)',
+        name: 'Assault Strike +2 (JP Only)',
         hits: 8,
         firstHit: 22,
         frames: 8,
@@ -1032,7 +1043,7 @@ export const UNITS: any[] = [
         base: 360
       },
       {
-        name: 'Free Energy + 2',
+        name: 'Free Energy +2',
         hits: 8,
         frames: 8,
         firstHit: 42,
@@ -1149,7 +1160,7 @@ export const UNITS: any[] = [
     type: 'chain',
     abilities: [
       {
-        name: 'Devastate + 2',
+        name: 'Devastate +2',
         linearFrames: false,
         framesList: '0-26-10-10-30',
         firstHit: 20,
