@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-legal',
   templateUrl: './legal.component.html',
   styleUrls: ['./legal.component.css']
 })
-export class LegalComponent implements OnInit {
 
-  constructor() { }
+export class LegalComponent {
+  markdown = '';
 
-  ngOnInit() {
+  constructor(translate: TranslateService) {
+    translate.get('legal.markdown').subscribe((res: string) => {
+      this.markdown = res;
+    });
   }
-
 }
