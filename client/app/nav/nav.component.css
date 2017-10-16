@@ -42,7 +42,38 @@
   z-index: 1100;
 }
 
-@media (max-width: 339px) {
+.flag {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/nav/flags.png') no-repeat;
+}
+
+.flag.flag-gb {
+  background-position: -24px 0;
+}
+
+.flag.flag-fr {
+  background-position: 0 0;
+}
+
+.nav-link-lang {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.separator {
+  margin-right: 5px;
+}
+
+.lang {
+  margin-top: 6px;
+}
+
+@media (max-width: 403px) {
   .centerNav {
     display: block;
   }
@@ -61,5 +92,9 @@
 
   .nav-link {
     display: block;
+  }
+
+  .lang {
+    display: none;
   }
 }

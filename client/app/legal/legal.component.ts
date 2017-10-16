@@ -9,8 +9,10 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class LegalComponent {
   markdown = '';
+  private translateService;
 
   constructor(translate: TranslateService) {
+    this.translateService = translate;
     translate.get('legal.markdown').subscribe((res: string) => {
       this.markdown = res;
     });
