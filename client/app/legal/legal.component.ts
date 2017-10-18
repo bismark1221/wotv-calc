@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-legal',
@@ -9,11 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class LegalComponent {
   markdown = '';
-  private translateService;
 
-  constructor(translate: TranslateService) {
-    this.translateService = translate;
-    translate.get('legal.markdown').subscribe((res: string) => {
+  constructor(private translateService: TranslateService) {
+    this.getTranslation();
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.getTranslation();
+    });
+  }
+
+  private getTranslation() {
+    this.translateService.get('legal.markdown').subscribe((res: string) => {
       this.markdown = res;
     });
   }

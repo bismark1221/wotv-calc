@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,16 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeComponent {
   markdown = '';
 
-  constructor(translate: TranslateService) {
-    translate.get('home.markdown').subscribe((res: string) => {
+  constructor(private translateService: TranslateService) {
+    this.getTranslation();
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.getTranslation();
+    });
+  }
+
+  private getTranslation() {
+    this.translateService.get('home.markdown').subscribe((res: string) => {
       this.markdown = res;
     });
   }
