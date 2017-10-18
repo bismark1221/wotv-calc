@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewChecked, ChangeDetec
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Select2OptionData } from '../select2/select2.interface';
+import { Angulartics2 } from 'angulartics2';
 
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
@@ -70,7 +71,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private findBestService: FindBestService,
     private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
-    private ref: ChangeDetectorRef
+    private ref: ChangeDetectorRef,
+    private angulartics: Angulartics2
   ) { }
 
   ngOnInit(): void {
@@ -189,82 +191,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     return position;
   }
 
-  addDebuff(position: number) {
-    this.chain[position].debuffs.push({type: 'dark', value: 1});
-    this.updateServiceDebuffs(position);
-    this.saveUnit(position);
-  }
-
-  removeDebuff(position: number, debuff: number) {
-    this.chain[position].debuffs.splice(debuff, 1);
-    this.updateServiceDebuffs(position);
-    this.saveUnit(position);
-  }
-
-  onChangeDebuff(position: number) {
-    this.updateServiceDebuffs(position);
-    this.saveUnit(position);
-  }
-
-  onChangeSkill(position: number) {
-    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
-    this.updateLocalDebuffs(position);
-    this.onChangeChain();
-  }
-
-  onChangeDual(position: number) {
-    this.chain[position].weapons[1] = '';
-    this.saveUnit(position);
-  }
-
-  createNewUnit(position: number) {
-    this.selectedUnits[position] = new Unit();
-    this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
-    this.selectedUnits[position].activeRename = true;
-
-    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-    this.chain[position].ability = this.chain[position].abilities[0];
-
-    this.viewOptions[position] = true;
-    this.saveUnit(position);
-
-    this.idSelected[position] = this.selectedUnits[position].id;
-    this.onChangeUnit(position, this.chain[position].id);
-  }
-
-  createNewUnitFromPredefined(position: number) {
-    let unit = JSON.parse(JSON.stringify(this.chain[position]));
-    unit.name = 'Unit ' + (this.createdUnits.length + 1);
-    unit.id = undefined;
-
-    this.chain[position] = unit;
-    this.viewOptions[position] = true;
-    this.saveUnit(position);
-
-    this.idSelected[position] = this.selectedUnits[position].id;
-    this.onChangeUnit(position, this.chain[position].id);
-  }
-
-  saveUnit(position: number) {
-    if (!this.chain[position].id || this.chain[position].id > 10000) {
-      let positionCreated = this.positionIds[this.chain[position].id];
-      if (positionCreated >= 0) {
-        this.createdUnits[positionCreated] = this.chain[position];
-      } else {
-        this.lastCreatedId++;
-        this.chain[position].id = this.lastCreatedId;
-        this.createdUnits.push(this.chain[position]);
-      }
-
-      this.selectedUnits[position] = this.chain[position];
-
-      this.localSaveUnits();
-      this.reloadList();
-    }
-
-    this.onChangeChain();
-  }
-
   private reloadList() {
     this.sortUnits();
 
@@ -306,6 +232,139 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     });
 
     delete this.observableUnits[0].children;
+  }
+
+  private updateDuplicatePossibilities() {
+    this.availableDuplicate = [];
+    this.chainers = [];
+    this.finishers = [];
+    this.positionIdsInChain = {};
+
+    this.chain.forEach(unit => {
+      if (unit.id !== 'unselect') {
+        if (this.availableDuplicate.findIndex(x => x.id === unit.id)) {
+          this.availableDuplicate.push(unit);
+        }
+
+        if (unit.type === 'chain') {
+          this.chainers.push(unit);
+        } else {
+          this.finishers.push(unit);
+        }
+      }
+    });
+
+    this.chain.forEach((unit, index) => {
+      this.positionIdsInChain[unit.id] = index;
+      if (this.availableDuplicate[0]) {
+        this.duplicatePosition[index] = this.availableDuplicate[0].id;
+      }
+    });
+  }
+
+  private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
+    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
+    this.chainService.units[position] = this.chain[position];
+    this.selectedAbilities[position] = ability;
+    this.chain[position].ability = this.chain[position].abilities[ability];
+    this.updateLocalDebuffs(position);
+    this.chain[position].activeRename = false;
+    this.chain[position].ability.activeRename = false;
+    this.chain[position].framesGap = (!this.chain[position].framesGap || framesGap !== 0 ? framesGap : this.chain[position].framesGap);
+  }
+
+  private calculateMaxFramesGap() {
+    let hits = this.chainService.getHits();
+    let maxHitForChain = this.chainService.findHighestChainHit();
+    this.chain.forEach((unit, position) => {
+      if (unit.id !== 'unselect') {
+        if (unit.ability.type === 'chain') {
+          this.sliderConfig[position].range.max = 20;
+        } else {
+          this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;
+        }
+      }
+    });
+  }
+
+  addDebuff(position: number) {
+    this.chain[position].debuffs.push({type: 'dark', value: 1});
+    this.updateServiceDebuffs(position);
+    this.saveUnit(position);
+  }
+
+  removeDebuff(position: number, debuff: number) {
+    this.chain[position].debuffs.splice(debuff, 1);
+    this.updateServiceDebuffs(position);
+    this.saveUnit(position);
+  }
+
+  onChangeDebuff(position: number) {
+    this.updateServiceDebuffs(position);
+    this.saveUnit(position);
+  }
+
+  onChangeSkill(position: number) {
+    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
+    this.updateLocalDebuffs(position);
+    this.onChangeChain();
+  }
+
+  onChangeDual(position: number) {
+    this.chain[position].weapons[1] = '';
+    this.saveUnit(position);
+  }
+
+  createNewUnit(position: number) {
+    this.selectedUnits[position] = new Unit();
+    this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
+    this.selectedUnits[position].activeRename = true;
+
+    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
+    this.chain[position].ability = this.chain[position].abilities[0];
+
+    this.viewOptions[position] = true;
+    this.saveUnit(position);
+
+    this.idSelected[position] = this.selectedUnits[position].id;
+    this.onChangeUnit(position, this.chain[position].id);
+
+    this.angulartics.eventTrack.next({ action: 'createNewUnit', properties: { category: 'chain' }});
+  }
+
+  createNewUnitFromPredefined(position: number) {
+    let unit = JSON.parse(JSON.stringify(this.chain[position]));
+    unit.name = 'Unit ' + (this.createdUnits.length + 1);
+    unit.id = undefined;
+
+    this.chain[position] = unit;
+    this.viewOptions[position] = true;
+    this.saveUnit(position);
+
+    this.idSelected[position] = this.selectedUnits[position].id;
+    this.onChangeUnit(position, this.chain[position].id);
+
+    this.angulartics.eventTrack.next({ action: 'createNewUnitFromPredefined', properties: { category: 'chain' }});
+  }
+
+  saveUnit(position: number) {
+    if (!this.chain[position].id || this.chain[position].id > 10000) {
+      let positionCreated = this.positionIds[this.chain[position].id];
+      if (positionCreated >= 0) {
+        this.createdUnits[positionCreated] = this.chain[position];
+      } else {
+        this.lastCreatedId++;
+        this.chain[position].id = this.lastCreatedId;
+        this.createdUnits.push(this.chain[position]);
+      }
+
+      this.selectedUnits[position] = this.chain[position];
+
+      this.localSaveUnits();
+      this.reloadList();
+    }
+
+    this.onChangeChain();
   }
 
   removeUnit(position: number) {
@@ -367,45 +426,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.updateDuplicatePossibilities();
   }
 
-  private updateDuplicatePossibilities() {
-    this.availableDuplicate = [];
-    this.chainers = [];
-    this.finishers = [];
-    this.positionIdsInChain = {};
-
-    this.chain.forEach(unit => {
-      if (unit.id !== 'unselect') {
-        if (this.availableDuplicate.findIndex(x => x.id === unit.id)) {
-          this.availableDuplicate.push(unit);
-        }
-
-        if (unit.type === 'chain') {
-          this.chainers.push(unit);
-        } else {
-          this.finishers.push(unit);
-        }
-      }
-    });
-
-    this.chain.forEach((unit, index) => {
-      this.positionIdsInChain[unit.id] = index;
-      if (this.availableDuplicate[0]) {
-        this.duplicatePosition[index] = this.availableDuplicate[0].id;
-      }
-    });
-  }
-
-  private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
-    this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-    this.chainService.units[position] = this.chain[position];
-    this.selectedAbilities[position] = ability;
-    this.chain[position].ability = this.chain[position].abilities[ability];
-    this.updateLocalDebuffs(position);
-    this.chain[position].activeRename = false;
-    this.chain[position].ability.activeRename = false;
-    this.chain[position].framesGap = (!this.chain[position].framesGap || framesGap !== 0 ? framesGap : this.chain[position].framesGap);
-  }
-
   addAbility(position: number) {
     this.chain[position].ability.activeRename = false;
     this.chain[position].abilities.push(new Ability());
@@ -434,6 +454,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   showOptions(position: number) {
     this.viewOptions[position] = !this.viewOptions[position];
+    if (this.viewOptions[position]) {
+      this.angulartics.eventTrack.next({ action: 'showOptions', properties: { category: 'chain' }});
+    }
+
     this.changeMultiSelectDropdown();
   }
 
@@ -457,20 +481,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
   }
 
-  private calculateMaxFramesGap() {
-    let hits = this.chainService.getHits();
-    let maxHitForChain = this.chainService.findHighestChainHit();
-    this.chain.forEach((unit, position) => {
-      if (unit.id !== 'unselect') {
-        if (unit.ability.type === 'chain') {
-          this.sliderConfig[position].range.max = 20;
-        } else {
-          this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;
-        }
-      }
-    });
-  }
-
   findBestFrames(type: string) {
     let result;
 
@@ -481,6 +491,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       unit.framesGap = result[type].frames[index];
     });
     this.onChangeChain();
+
+    this.angulartics.eventTrack.next({ action: 'findBestFrames_' + type, properties: { category: 'chain' }});
   }
 
   findBestChainers(position: number) {
@@ -520,6 +532,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         this.bestChainers.push(chainers[i]);
       }
     }
+
+    this.angulartics.eventTrack.next({ action: 'findBestChainers', properties: { category: 'chain' }});
   }
 
   selectUnit(position: number, unit: any, ability: any, framesGaps: any) {

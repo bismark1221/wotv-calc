@@ -847,6 +847,16 @@ export const UNITS: any[] = [
         firstHit: 40,
         castTime: 40,
         offset: 16
+      },
+      {
+        name: 'Double Dice',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 16,
+        castTime: 40,
+        offset: 16,
+        base: 50
       }
     ]
   },
