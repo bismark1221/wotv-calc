@@ -901,7 +901,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        name: 'Chaos Wave +2 (JP Only)',
+        name: 'Chaos Wave +2',
         base: 420,
         hits: 10,
         frames: 8,
@@ -913,7 +913,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        name: 'Ultima +2 (JP Only)',
+        name: 'Ultima +2',
         base: 280,
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -1401,6 +1401,17 @@ export const UNITS: any[] = [
           fire: 50
         }
       },
+      {
+        name: 'LB - Phantom Fury (max)',
+        linearFrames: false,
+        framesList: '0-4-4-4-4-4-4-4-30',
+        firstHit: 62,
+        castTime: 40,
+        offset: 16,
+        base: 660,
+        damage: 'magic',
+        dualable: false
+      },
     ],
   },
   {
@@ -1418,6 +1429,22 @@ export const UNITS: any[] = [
         base: 350,
         debuff: {
           water: 50
+        }
+      },
+      {
+        name: 'LB - Unleash the Kraken (max)',
+        linearFrames: false,
+        framesList: '0-10-10-10-35-10-10-10',
+        firstHit: 62,
+        castTime: 40,
+        offset: 16,
+        base: 570,
+        dualable: false,
+        elements: [
+          'water'
+        ],
+        debuff: {
+          water: 74
         }
       },
     ],
@@ -1787,6 +1814,24 @@ export const UNITS: any[] = [
         elements : [
           'fire'
         ]
+      },
+      {
+        name: 'Fire From Below +2 (max)',
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 80,
+        castTime: 40,
+        offset: 0,
+        base: 2500,
+        dualable: false,
+        damage: 'magic',
+        elements : [
+          'fire'
+        ],
+        debuff: {
+          fire: 50
+        }
       }
     ]
   },
