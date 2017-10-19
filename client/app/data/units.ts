@@ -856,7 +856,7 @@ export const UNITS: any[] = [
         firstHit: 16,
         castTime: 40,
         offset: 16,
-        base: 50
+        base: 100
       }
     ]
   },
@@ -1366,6 +1366,78 @@ export const UNITS: any[] = [
       },
     ],
     dual: false
+  },
+  {
+    id: 66,
+    name: 'Grim Lord Sakura',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Grim - Soul Barrage',
+        hits: 10,
+        frames: 10,
+        firstHit: 62,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        ignore: 50,
+        damage: 'magic'
+      },
+      {
+        name: 'Grim - Eldritch Flames',
+        hits: 5,
+        frames: 10,
+        firstHit: 110,
+        castTime: 40,
+        offset: 16,
+        base: 300,
+        damage: 'magic',
+        elements : [
+          'dark',
+          'fire'
+        ],
+        debuff : {
+          dark: 50,
+          fire: 50
+        }
+      },
+    ],
+  },
+  {
+    id: 67,
+    name: 'Pirate Jake',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Feed the Fishes',
+        hits: 6,
+        frames: 5,
+        firstHit: 22,
+        castTime: 40,
+        offset: 16,
+        base: 350,
+        debuff: {
+          water: 50
+        }
+      },
+    ],
+  },
+  {
+    id: 68,
+    name: 'Illusionist Nichol',
+    type: 'chain',
+    abilities: [
+      {
+        name: 'Illusion - Phantasmal Forces',
+        hits: 7,
+        frames: 8,
+        firstHit: 50,
+        castTime: 40,
+        offset: 16,
+        base: 600,
+        damage: 'magic',
+      },
+    ],
   },
 // Finish
   {
