@@ -314,7 +314,7 @@ export class FindBestService {
         if (unit.frames.length > nbCombo[index] &&
           (index === 0
             || unit.frames[nbCombo[index]].frame < minFrame
-            || (unit.frames[nbCombo[index]].frame === minFrame && lastHitter !== index))
+            || (unit.frames[nbCombo[index]].frame === minFrame && minIndex > index))
         ) {
           minFrame = unit.frames[nbCombo[index]].frame;
           minIndex = index;
