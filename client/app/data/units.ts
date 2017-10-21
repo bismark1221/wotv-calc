@@ -1425,7 +1425,7 @@ export const UNITS: any[] = [
         frames: 5,
         firstHit: 22,
         castTime: 20,
-        offset: 10,
+        offset: 12,
         base: 350,
         debuff: {
           water: 50
