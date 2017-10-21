@@ -935,7 +935,7 @@ export const UNITS: any[] = [
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-20',
         firstHit: 22,
-        castTime: 40,
+        castTime: 20,
         offset: 16,
         base: 400
       },
@@ -944,7 +944,7 @@ export const UNITS: any[] = [
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-20',
         firstHit: 22,
-        castTime: 40,
+        castTime: 20,
         offset: 16,
         base: 720
       },
