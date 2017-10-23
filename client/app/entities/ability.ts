@@ -1,4 +1,9 @@
+import { TranslateService } from '@ngx-translate/core';
+
 export class Ability {
+  names: any = {
+    en: 'New ability'
+  };
   name: string = 'New ability';
   base: number = 0;
 
@@ -17,8 +22,9 @@ export class Ability {
   damage?: string = 'physic';
   chain?: boolean = true;
 
-  constructAbilityFromJson(ability: Ability): void {
-    this.name = ability.name;
+  constructAbilityFromJson(ability: Ability, translateService: TranslateService): void {
+    this.names = ability.names;
+    this.getName(translateService);
     this.base = ability.base;
 
     this.linearFrames = typeof ability.linearFrames == 'boolean' ? ability.linearFrames : this.linearFrames;
@@ -37,5 +43,15 @@ export class Ability {
     this.type = ability.type ? ability.type : this.type;
     this.damage = ability.damage ? ability.damage : this.damage;
     this.chain = typeof ability.chain == 'boolean' ? ability.chain : this.chain;
+  }
+
+  getName(translateService: TranslateService): string {
+    if (!this.names[translateService.currentLang]) {
+      this.name = this.names[translateService.getDefaultLang()];
+    } else {
+      this.name = this.names[translateService.currentLang];
+    }
+
+    return this.name;
   }
 }

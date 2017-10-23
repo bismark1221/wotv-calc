@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 
 import 'rxjs/add/operator/toPromise';
 
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+
 import { Unit } from '../entities/unit';
 import { Ability } from '../entities/ability';
 import { UNITS } from '../data/units';
@@ -17,6 +19,8 @@ export class UnitService {
   private ore = /^0/;
   private oFxNcL: any;
   private oFyNcL: any;
+
+  constructor(private translateService: TranslateService) {}
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -65,7 +69,7 @@ export class UnitService {
       let units: Unit[] = [];
       unitsFromJson.forEach(element => {
         let unit = new Unit();
-        unit.constructUnitFromJson(element);
+        unit.constructUnitFromJson(element, this.translateService);
         units.push(unit);
       });
       this.units = units;

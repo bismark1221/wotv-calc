@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
 import { Ability } from '../entities/ability';
@@ -43,7 +44,8 @@ export class MyUnitsComponent implements OnInit {
   constructor(
     private unitService: UnitService,
     private elementsService: ElementsService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private translateService: TranslateService
   ) { }
 
   private getUnits(): void {

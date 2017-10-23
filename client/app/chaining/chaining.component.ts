@@ -7,6 +7,7 @@ import { Angulartics2 } from 'angulartics2';
 
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
 import { Ability } from '../entities/ability';
@@ -72,8 +73,13 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
     private ref: ChangeDetectorRef,
-    private angulartics: Angulartics2
-  ) { }
+    private angulartics: Angulartics2,
+    private translateService: TranslateService
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.reloadList();
+    });
+  }
 
   ngOnInit(): void {
     for (let i = 0; i <= 5; i++) {
@@ -202,12 +208,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       },
       {
         id: '0',
-        text: 'Chainers',
-        children: []
-      },
-      {
-        id: '0',
-        text: 'Finishers',
+        text: 'Units',
         children: []
       },
       {
@@ -218,14 +219,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     ];
 
     this.units.forEach(unit => {
-      this.observableUnits[(unit.type === 'chain' ? 1 : 2)].children.push({
+      this.observableUnits[1].children.push({
         id: unit.id.toString(),
-        text: unit.name
+        text: unit.getName(this.translateService)
       });
+
+      unit.abilities.forEach(ability => {
+        ability.getName(this.translateService)
+      })
     });
 
     this.createdUnits.forEach(unit => {
-      this.observableUnits[3].children.push({
+      this.observableUnits[2].children.push({
         id: unit.id.toString(),
         text: unit.name
       });
@@ -263,6 +268,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
+    console.log(this.selectedUnits[position])
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chainService.units[position] = this.chain[position];
     this.selectedAbilities[position] = ability;
