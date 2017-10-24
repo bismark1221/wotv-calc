@@ -76,8 +76,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private angulartics: Angulartics2,
     private translateService: TranslateService
   ) {
+    this.getTranslation();
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.reloadList();
+      this.getTranslation();
+      this.getElements();
     });
   }
 
@@ -108,6 +112,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   ngAfterViewChecked(): void {
     this.ref.detectChanges();
+  }
+
+  private getTranslation() {
+    this.translateService.get('chain.label.multiElements').subscribe((res: string) => {
+      this.multiElementsTexts = {
+        defaultTitle: res
+      };
+    });
   }
 
   private getUnits(): void {
@@ -154,9 +166,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.elements = elements;
       this.requiredElements = JSON.parse(JSON.stringify(this.elements));
       this.requiredElements.splice(0, 1);
+      this.multiElements = [];
 
       this.requiredElements.forEach(element => {
-        this.multiElements.push({id: element, name: element});
+        this.translateService.get('elements.' + element).subscribe((res: string) => {
+          this.multiElements.push({id: element, name: res});
+        });
       })
     });
   }

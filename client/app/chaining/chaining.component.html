@@ -20,18 +20,26 @@
           </div>
 
           <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
-            <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">{{ 'chain.button.rename' | translate }}</button>
-            <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">{{ 'chain.button.save' | translate }}</button>
+            <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">
+              {{ 'chain.button.rename' | translate }}
+            </button>
+            <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">
+              {{ 'chain.button.save' | translate }}
+            </button>
           </div>
 
           <div *ngIf="chain[i].id !== 'unselect' && chain[i].activeRename">
             <label for="chainer{{i}}_name">{{ 'chain.label.unitName' | translate }} {{ i + 1 }}</label>
             <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()" (keyup.enter)="saveUnit(i)">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">{{ 'chain.button.save' | translate }}</button>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">
+              {{ 'chain.button.save' | translate }}
+            </button>
           </div>
 
           <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].id > 10000">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">{{ 'chain.button.removeUnit' | translate }}</button>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">
+              {{ 'chain.button.removeUnit' | translate }}
+            </button>
           </div>
 
           <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop" *ngIf="chain[i].id !== 'unselect' && !viewOptions[i]">
@@ -44,7 +52,9 @@
 
           <div *ngIf="chain[i].id === 'unselect'">
             <hr class="selectHr"/>
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">{{ 'chain.button.createUnit' | translate }}</button>
+            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">
+              {{ 'chain.button.createUnit' | translate }}
+            </button>
           </div>
 
           <div *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
@@ -122,7 +132,7 @@
             <div class="selectRightZoneOneThird selectAbility" *ngIf="!chain[i].ability.activeRename">
               <label for="chainer{{i}}_ability">{{ 'chain.label.ability' | translate }}</label>
               <select class="form-control" id="chainer{{i}}_ability" [(ngModel)]="selectedAbilities[i]" (ngModelChange)="onChangeSkill(i)">
-                <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ability.name}}</option>
+                <option *ngFor="let ability of chain[i].abilities; let j = index" [ngValue]="j">{{ ability.name | capitalize }}</option>
               </select>
             </div>
 

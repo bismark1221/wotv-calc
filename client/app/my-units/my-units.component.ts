@@ -46,7 +46,22 @@ export class MyUnitsComponent implements OnInit {
     private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
     private translateService: TranslateService
-  ) { }
+  ) {
+    this.getTranslation();
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.getTranslation();
+      this.getElements();
+    });
+  }
+
+  private getTranslation() {
+    this.translateService.get('chain.label.multiElements').subscribe((res: string) => {
+      this.multiElementsTexts = {
+        defaultTitle: res
+      };
+    });
+  }
 
   private getUnits(): void {
     this.units = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
@@ -95,9 +110,12 @@ export class MyUnitsComponent implements OnInit {
       this.elements = elements
       this.requiredElements = JSON.parse(JSON.stringify(this.elements));
       this.requiredElements.splice(0, 1);
+      this.multiElements = [];
 
       this.requiredElements.forEach(element => {
-        this.multiElements.push({id: element, name: element});
+        this.translateService.get('elements.' + element).subscribe((res: string) => {
+          this.multiElements.push({id: element, name: res});
+        });
       })
     });
   }

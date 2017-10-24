@@ -1,7 +1,7 @@
 {
   "home" : {
     "title" : "Bienvenue sur FFBE-Chain",
-    "markdown" : "FRFRFRFRFRFThis web app has been created so you can optimize your chaining with differents units on the game Final Fantasy Brave Exvius.\n\r\n\rThis app focusses on the global version of FFBE, however, some units or awakened abilities are already available for future comparison (e.g. Aileen enhanced Piledriver, or 6* Zidane)\n\rFor now, you will find the following features :\n\r - Calculate chain with chainers and finishers\n\r - Find best unit and combo based on your selection\n\r - Generate macro for memu and nox\n\r - Create and save your own units. (This option saves your units in your browser, if you change browser or use another computer, you will not be able to find them)\n\r\n\r---\n\r\n\r##### Change Logs :\n\r\n\r12/10/2017\n\r - Update Pod 153 (9S' TMR) as a unit to be easily findable in the list\n\r - Add Toxic Rain (Octopus reward) and Alterna (Noctis' TMR)\n\r - Update Nyx and Glauca with their officials global skills name\n\r\n\r11/10/2017\n\r - Macro are finally here :)\n\r - Memu and Nox are working\n\r - However the result in-game can differ from the chart... In-game lag, some data that are not in the datamine files (offset and cast time)\n\r - Don't forget to not put any acceleration in your macro\n\r\n\r06/10/2017\n\r - Add Goken as a chainer\n\r\n\r02/10/2017\n\r - After three weeks of rest playing Monster Hunter Stories, sorry :( , I'm back into business :)\n\r - So to your pleasure, and also mine, you can now add finisher in the app. The calculator work pretty well with them so feel free to test\n\r - I also decide to add the possibility for chainers to have \"finisher\" ability, like Tidus and his Jetch Shot\n\r - Add lot of finisher (Luneth, Fire Veritas, A2, ...)\n\r - If you think I miss good finisher feel free to contact me\n\r\n\r11/09/2017\n\r - Increase possible chainers to 6, unfortunatly the calculation to find best frames and chainers are really to heavy for more than 4 units. I will work on a queue system later to resolve this limitation, sorry...\n\r - Add upgraded abilities for Agrias, Gilgamesh and Queen\n\r - Finally add Prishe, Nyx and Glauca thanks to Taiwan Fan Festa\n\r\n\r03/09/2017\n\r - Chains that involve hybrid abilities are now working\n\r\n\r02/09/2017\n\r - Find units that can chain well with your unit\n\r - Change the difference in frame from 0 to 20\n\r - Pass your mouse on bar to view combo and frame\n\r\n\r01/09/2017\n\r - Include first LB with Onion Knight\n\r - Mobile version is live :)\n\r\n\r---\n\r\n\rThat's all for now, but I will keep improving this app, my next steps being (not in a specific order) :\n\r - Share units and chain setups with your friends\n\r - Calculate damages based on units/monsters characteristics\n\r\n\rIf you're lost, new to the game and don't know what chaining is in FFBE, nor how it works, I suggest that you go check out the [FFBE sub-reddit], or the [english wiki] for further information\n\r\n\rBig thanks to the following people for all their hard work that help me to build this app :\n\r - [Xeleko]\n\r - [/u/Fatalderp]\n\r - [/u/Nazta]\n\r - [/u/Cyanjet]\n\r - All the sub-reddit community\n\r\n\r**Bismark**\n\r[FFBE sub-reddit]: https://www.reddit.com/r/FFBraveExvius\n\r[english wiki]: https://exvius.gamepedia.com/Final_Fantasy_Brave_Exvius_Wiki\n\r[Xeleko]: https://www.youtube.com/user/Xeleko\n\r[/u/Fatalderp]: https://www.reddit.com/user/Fatalderp\n\r[/u/Nazta]: https://www.reddit.com/user/Nazta\n\r[/u/Cyanjet]: https://www.reddit.com/user/Cyanjet"
+    "markdown" : "Ce site a été créé pour que vous puissiez optimiser vos chaines avec différentes unités dans Final Fantasy Brave Exvius\n\r\n\r\n\rCette application est basée sur la version globale du jeu, il y a cependant quelques unités ou sorts qui ne sont disponibles que sur la version japonaise pour le moment (ex: Djidane 6 étoiles, ...)\n\rLe site dispose des fonctionnalités suivantes :\n\r - Calculer une chaine avec différent type d'unité\n\r - Trouver la meilleure unité ou combo en fonction de votre sélection\n\r - Générer des macros pour memu et nox\n\r - Créer et enregistrer vos propres unités (Cette option sauvegarde vos unités dans votre navigateur, donc si vous en changer ou que vous changer d'ordinateur vous ne pourrez pas les retrouver)\n\r\n\r---\n\r\n\r##### Modifications :\n\r\n\r20/10/2017\n\r - Si vous voyez cette page en Français c'est que vous avez trouvé le nouvel ajout de choix de langue (français et anglais pour l'instant)\n\r - Ajout des invocations dans le calculateur\n\r\n\r19/10/2017\n\r - Ajout de Sakura, Seigneur Sombre, de Jake, Pirate et de Nichol, Illusionniste\n\r - Ajout du Double dés de Setzer (Pour le moment j'ai mis un faux modificateur pour ne pas casser le système, par contre les frames sont correctes ^^)\n\r - Ajout des abilités améliorées de Terra en Transe et d'Empereur\n\r\n\r12/10/2017\n\r - Ajout du Pod 153 (la récompense de confiance de 9S) en tant qu'unité pour être trouvé plus facilement\n\r - Ajout de Pluie toxique et d'Alterna (la récompense de confiance de Noctis)\n\r\n\r11/10/2017\n\r - Arrivé des macro :)\n\r - Memu and Nox sont pris en compte\n\r - Cependant le résultat en jeu peut être différent du graphique... Lag, certaines données que l'on n'a pas via les fichiers de datamining (offset)\n\r - N'oubliez pas de ne pas d'accélération dans votre macro\n\r\n\r06/10/2017\n\r - Ajout de Goken\n\r\n\r02/10/2017\n\r - Vous pouvez désormais choisir si une abilités est de type chaine ou finisseur\n\r - Vouz pouvez dès à présent trouver bon nombre de finisseur (Luneth, Véritas des flammes, A2, ...)\n\r\n\r---\n\r\n\rC'est tout pour le moment, mais je vais continuer de mettre à jour l'application.\n\rVoici mes prochaines grandes étapes (pas forcément dans l'ordre) :\n\r - Partager vos unités et chaines avec vos amis\n\r - Calculer les dégats en fonction des charactéristiques des unités et du monstre\n\r\n\rSi jamais vous etez perdu ou que vous etez nouveaux, je ne peux que vous conseiller d'aller sur le [sub-reddit FFBE] ou le [wiki anglais]\n\r\n\rUn grand merci à tous ceux sans qui ce site n'aurait surement jamais vu le jour :)\n\r - [Xeleko]\n\r - [/u/Fatalderp]\n\r - [/u/Nazta]\n\r - [/u/Cyanjet]\n\r - [/u/Solaris]\n\r - All the sub-reddit community\n\r\n\r**Bismark**\n\r[sub-reddit FFBE]: https://www.reddit.com/r/FFBraveExvius\n\r[wiki anglais]: https://exvius.gamepedia.com/Final_Fantasy_Brave_Exvius_Wiki\n\r[Xeleko]: https://www.youtube.com/user/Xeleko\n\r[/u/Fatalderp]: https://www.reddit.com/user/Fatalderp\n\r[/u/Nazta]: https://www.reddit.com/user/Nazta\n\r[/u/Cyanjet]: https://www.reddit.com/user/Cyanjet\n\r[/u/Solaris]: https://www.reddit.com/user/__solaris__"
   },
   "chain" : {
     "label" : {
@@ -38,7 +38,8 @@
       "dualHit" : "Coup 2nd sort/arme",
       "breakHit" : "Coup qui casse la chaine",
       "macro" : "Macro",
-      "tooltip" : "ex: dégâts 7x = 700%"
+      "tooltip" : "ex: dégâts 7x = 700%",
+      "multiElements" : "Sélectionner les éléments de l'abilité"
     },
     "button" : {
       "save" : "Sauvegarder",
@@ -60,6 +61,9 @@
       "findBestCombo" : "Trouver le meilleur combo"
     }
   },
+  "my-units" : {
+    "title" : "Mes Unités"
+  },
   "macro" : {
     "width" : "Largeur",
     "height" : "Hauteur",
@@ -68,7 +72,7 @@
   },
   "contact" : {
     "title" : "Contact",
-    "content" : "If you find bugs, have question or just want to leave me a message you can send an E-Mail to bismark@ffbe-chain.com or on Reddit /u/bahamut1221."
+    "content" : "Si vous trouvez des bugs, que vous avez des questions ou que souhaitez juste laisser un message vous pouvez envoyer un email à bismark@ffbe-chain.com ou sur Reddit /u/bahamut1221"
   },
   "legal" : {
     "title" : "Informations légales",
@@ -87,11 +91,21 @@
   },
   "abilityType" : {
     "chain" : "chaine",
-    "finish" : "finisheur"
+    "finish" : "finisseur"
   },
   "abilityDamage" : {
     "physic" : "physique",
     "magic" : "magic",
     "hybrid" : "hybride"
+  },
+  "footer" : {
+    "made" : "Fait avec ",
+    "by" : " par Bismark",
+    "contact" : "Contact",
+    "legal" : "Informations légales"
+  },
+  "nav" : {
+    "chain" : "Outil de Chaine",
+    "my" : "Mes Unités"
   }
 }

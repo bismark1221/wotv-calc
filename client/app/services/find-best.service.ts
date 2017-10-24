@@ -44,8 +44,8 @@ export class FindBestService {
 
   findBestFrames() {
     this.best = {
-      modifier: {frames: {}, max: 0},
-      combo: {frames: {}, max: -1}
+      modifier: {frames: {}, max: 0, hits: []},
+      combo: {frames: {}, max: -1, hits: []}
     };
 
     if (this.units.length > 0) {
