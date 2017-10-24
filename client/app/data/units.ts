@@ -1167,11 +1167,10 @@ export const UNITS: any[] = [
         hits: 10,
         frames: 8,
         castTime: 40,
-        offset: 16,
+        offset: 12,
         firstHit: 60,
         ignore: 50,
-        damage: 'magic',
-        dualable: false
+        damage: 'magic'
       },
       {
         names: {
@@ -2948,7 +2947,7 @@ export const UNITS: any[] = [
         type: 'finish',
         hits: 1,
         frames: 1,
-        firstHit: 210,
+        firstHit: 170,
         castTime: 40,
         offset: 0,
         base: 300,
