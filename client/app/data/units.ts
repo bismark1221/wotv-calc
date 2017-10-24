@@ -2702,4 +2702,260 @@ export const UNITS: any[] = [
       }
     ]
   },
+  // Espers
+  {
+    id: 69,
+    names: {
+      en: 'Siren',
+      fr: 'Sirène'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Lunatic Voice (2)',
+          fr: 'Voix ensorcelante (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 170,
+        castTime: 40,
+        offset: 0,
+        base: 120,
+        damage: 'magic',
+        elements: [
+          'water'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 70,
+    names: {
+      en: 'Ifrit',
+      fr: 'Ifrit'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Hellfire (2)',
+          fr: 'Flammes de l\'enfer (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 140,
+        damage: 'physic',
+        elements: [
+          'fire'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 71,
+    names: {
+      en: 'Shiva',
+      fr: 'Shiva'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Diamond Dust (2)',
+          fr: 'Poussière de diamant (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 140,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 72,
+    names: {
+      en: 'Diabolos',
+      fr: 'Diabolos'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Dark Messenger (2)',
+          fr: 'Héraut ténébreux (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 190,
+        castTime: 40,
+        offset: 0,
+        base: 170,
+        damage: 'magic',
+        elements: [
+          'dark'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 73,
+    names: {
+      en: 'Ramuh',
+      fr: 'Ramuh'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Judgment Bolt (2)',
+          fr: 'Foudre du jugement (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 140,
+        damage: 'magic',
+        elements: [
+          'lightning'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 74,
+    names: {
+      en: 'Titan',
+      fr: 'Titan'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Gaia\'s Wrath (2)',
+          fr: 'Colère de Gaïa (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 170,
+        castTime: 40,
+        offset: 0,
+        base: 170,
+        damage: 'physic',
+        elements: [
+          'earth'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 75,
+    names: {
+      en: 'Tetra Sylphid',
+      fr: 'Tétra-Sylphides'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Heavenswind (2)',
+          fr: 'Vent céleste (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 190,
+        castTime: 40,
+        offset: 0,
+        base: 180,
+        damage: 'magic',
+        elements: [
+          'wind'
+        ],
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 76,
+    names: {
+      en: 'Odin',
+      fr: 'Odin'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Gungnir (2)',
+          fr: 'Gungnir (2)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 70,
+        castTime: 40,
+        offset: 0,
+        base: 200,
+        damage: 'physic',
+        dualable: false
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 77,
+    names: {
+      en: 'Bahamut',
+      fr: 'Bahamut'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'Megaflare (1)',
+          fr: 'MégaBrasier (1)'
+        },
+        type: 'finish',
+        hits: 1,
+        frames: 1,
+        firstHit: 210,
+        castTime: 40,
+        offset: 0,
+        base: 300,
+        damage: 'magic',
+        dualable: false
+      },
+    ],
+    dual: false
+  }
 ];
