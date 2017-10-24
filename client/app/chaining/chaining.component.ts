@@ -121,8 +121,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   private sortUnits() {
-    this.unitService.sort(this.units);
-    this.unitService.sort(this.createdUnits);
+    this.unitService.sort(this.units, this.translateService);
+    this.unitService.sort(this.createdUnits, null);
 
     this.createdUnits.forEach((unit, index) => {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
@@ -268,7 +268,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
-    console.log(this.selectedUnits[position])
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chainService.units[position] = this.chain[position];
     this.selectedAbilities[position] = ability;

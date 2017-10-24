@@ -30,10 +30,15 @@ export class UnitService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sort(units: Unit[]): Unit[] {
+  public sort(units: Unit[], translate: any): Unit[] {
     units.sort((a: any, b: any) => {
-      const x = this.i(a.name);
-      const y = this.i(b.name);
+      let x = this.i(a.name);
+      let y = this.i(b.name);
+
+      if (translate) {
+        x = this.i(a.getName(translate));
+        y = this.i(b.getName(translate));
+      }
 
       const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
       const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
