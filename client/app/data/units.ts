@@ -1160,8 +1160,8 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Chaos Wave +2',
-          fr: 'Onde chaotique +2'
+          en: 'Chaos Wave Awakened +2',
+          fr: 'Onde chaotique - Év. +2'
         },
         base: 420,
         hits: 10,
