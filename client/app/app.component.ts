@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Angulartics2GoogleAnalytics } from 'angulartics2';
+import { Angulartics2GoogleAnalytics, Angulartics2 } from 'angulartics2';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
@@ -13,6 +13,7 @@ export class AppComponent {
   constructor(
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     translate: TranslateService,
+    private angulartics: Angulartics2,
     private localStorageService: LocalStorageService
   ) {
     translate.addLangs(["en", "fr"]);
@@ -24,5 +25,6 @@ export class AppComponent {
     }
 
     translate.use(lang);
+    this.angulartics.eventTrack.next({ action: lang, properties: { category: 'lang' }});
   }
 }

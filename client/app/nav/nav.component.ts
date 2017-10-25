@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { Angulartics2 } from 'angulartics2';
 
 @Component({
   selector: 'app-nav',
@@ -13,6 +14,7 @@ export class NavComponent {
 
   constructor(
     private localStorageService: LocalStorageService,
+    private angulartics: Angulartics2,
     private translateService: TranslateService
   ) {}
 
@@ -24,7 +26,10 @@ export class NavComponent {
     if (this.translateService.getLangs().indexOf(lang) !== -1) {
       this.localStorageService.set('lang', lang);
       this.translateService.use(lang);
+
+      this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});
     }
+
     this.menu(true);
   }
 }
