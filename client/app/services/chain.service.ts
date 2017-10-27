@@ -393,7 +393,7 @@ export class ChainService {
     });
 
     diff.sort((a: any, b: any) => {
-      if (a.firstHit > b.firstHit) {
+      if (a.firstHit - a.framesGap > b.firstHit - b.framesGap) {
         return -1;
       } else if (a.firstHit - a.framesGap < b.firstHit - b.framesGap) {
         return 1;
