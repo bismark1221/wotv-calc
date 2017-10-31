@@ -16,8 +16,8 @@ export const UNITS: any[] = [
         base: 900,
         linearFrames: true,
         frames: 9,
-        castTime: 0,
-        offset: 32,
+        castTime: 40,
+        offset: 0,
         hits: 8,
         firstHit: 42
       },
@@ -29,8 +29,8 @@ export const UNITS: any[] = [
         base: 600,
         linearFrames: false,
         framesList: '0-7-7-7-8-8-8-8-8-8',
-        castTime: 8,
-        offset: 32,
+        castTime: 0,
+        offset: 40,
         firstHit: 2
       },
       {
@@ -41,8 +41,8 @@ export const UNITS: any[] = [
         base: 550,
         linearFrames: true,
         frames: 5,
-        castTime: 8,
-        offset: 32,
+        castTime: 0,
+        offset: 40,
         hits: 6,
         firstHit: 22
       },
@@ -54,8 +54,8 @@ export const UNITS: any[] = [
         base: 200,
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-9',
-        castTime: 8,
-        offset: 32,
+        castTime: 40,
+        offset: 0,
         firstHit: 42
       },
       {
@@ -68,12 +68,27 @@ export const UNITS: any[] = [
         linearFrames: true,
         hits: 1,
         frames: 1,
-        castTime: 8,
-        offset: 32,
+        castTime: 40,
+        offset: 0,
         firstHit: 42,
         debuff: {
           lightning: 65
         }
+      },
+      {
+        names: {
+          en: 'Self Destruct: 2B',
+          fr: 'Autodestruction : 2B'
+        },
+        type: 'finish',
+        base: 999,
+        linearFrames: true,
+        hits: 1,
+        frames: 1,
+        castTime: 40,
+        offset: 0,
+        firstHit: 80,
+        dualable: false
       },
     ]
   },
@@ -94,10 +109,25 @@ export const UNITS: any[] = [
         linearFrames: true,
         hits: 5,
         frames: 10,
-        castTime: 8,
-        offset: 32,
+        castTime: 40,
+        offset: 0,
         firstHit: 42,
         ignore: 50
+      },
+      {
+        names: {
+          en: 'Self Destruct: 9S',
+          fr: 'Autodestruction : 9S'
+        },
+        type: 'finish',
+        base: 999,
+        linearFrames: true,
+        hits: 1,
+        frames: 1,
+        castTime: 40,
+        offset: 0,
+        firstHit: 80,
+        dualable: false
       },
     ]
   },
@@ -117,8 +147,8 @@ export const UNITS: any[] = [
         base: 400,
         linearFrames: false,
         framesList: '0-7-7-8-8-16-8',
-        castTime: 7,
-        offset: 26,
+        castTime: 8,
+        offset: 31,
         firstHit: 9,
       },
       {
@@ -129,8 +159,8 @@ export const UNITS: any[] = [
         base: 510,
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5',
-        castTime: 40,
-        offset: 16,
+        castTime: 35,
+        offset: 31,
         firstHit: 35,
       },
       {
@@ -141,8 +171,8 @@ export const UNITS: any[] = [
         base: 330,
         linearFrames: false,
         framesList: '0-9-9-9-9-9-5-4-9-5',
-        castTime: 40,
-        offset: 16,
+        castTime: 42,
+        offset: 14,
         firstHit: 42,
       },
       {
@@ -170,14 +200,14 @@ export const UNITS: any[] = [
     'abilities': [
       {
         names: {
-          en: 'Tri-Beam Laser +2',
-          fr: 'Laser triple +2'
+          en: 'Tri-Beam Laser +2 (orange)',
+          fr: 'Laser triple +2 (orange)'
         },
-        base: 2250,
+        base: 560,
         linearFrames: true,
         hits: 7,
         frames: 7,
-        castTime: 40,
+        castTime: 0,
         offset: 16,
         firstHit: 64,
         ignore: 25,
@@ -198,7 +228,7 @@ export const UNITS: any[] = [
         ignore: 25,
         hits: 1,
         frames: 1,
-        castTime: 40,
+        castTime: 75,
         offset: 16,
         firstHit: 150,
         damage: 'magic'
@@ -284,7 +314,7 @@ export const UNITS: any[] = [
         base: 250,
         hits: 7,
         frames: 8,
-        castTime: 8,
+        castTime: 0,
         offset: 36,
         firstHit: 2,
         ignore: 50,
@@ -372,8 +402,8 @@ export const UNITS: any[] = [
         base: 270,
         hits: 7,
         frames: 5,
-        castTime: 8,
-        offset: 50,
+        castTime: 40,
+        offset: 16,
         firstHit: 47,
         elements: [
           'light',
@@ -402,8 +432,8 @@ export const UNITS: any[] = [
         base: 140,
         hits: 5,
         frames: 5,
-        castTime: 8,
-        offset: 36,
+        castTime: 0,
+        offset: 44,
         firstHit: 22,
         ignore: 50
       },
@@ -513,7 +543,7 @@ export const UNITS: any[] = [
         base: 200,
         hits: 7,
         frames: 10,
-        castTime: 40,
+        castTime: 0,
         offset: 26,
         firstHit: 10,
         ignore: 50,
@@ -2956,5 +2986,123 @@ export const UNITS: any[] = [
       },
     ],
     dual: false
+  },
+  {
+    id: 78,
+    names: {
+      en: 'Loren',
+      fr: 'Loren'
+    },
+    type: 'finish',
+    abilities: [
+      {
+        names: {
+          en: 'LB - Kingdom\'s Order',
+          fr: 'LB - Ordre royal'
+        },
+        linearFrames: false,
+        framesList: '0-10-13-14-14-10-13-14-24-12-34-18-18',
+        firstHit: 34,
+        castTime: 0,
+        offset: 16,
+        base: 420,
+        ignore: 50,
+        debuff: {
+          wind: 74
+        },
+        dualable: false
+      },
+    ],
   }
 ];
+/*
+"name": "Swiftwind Blade",
+"attack_frames": [[2,  9,  16,  23,  30,  37,  44,  51,  58,  65]],
+effect_frames": [[0]],
+"element_inflict": ["Wind"],
+"effects": ["Physical wind damage (4.5x, ATK) to one enemy"],
+"Lame oscillante",
+
+    "501970": {
+        "name": "Quickbolt Blade",
+        "compendium_id": 10133,
+        "type": "ABILITY",
+        "active": true,
+        "rarity": 8,
+        "mp_cost": 45,
+        "attack_count": [1],
+        "attack_frames": [[50]],
+        "effect_frames": [[0]],
+        "move_type": 1,
+        "motion_type": 1,
+        "effect_type": "Default",
+        "attack_type": "Physical",
+        "element_inflict": ["Lightning"],
+        "effects": ["Physical lightning damage (4.5x, ATK) to one enemy (ignore cover)"],
+        "effects_raw": [[1, 1, 21, [0,  0,  225,  -50]]],
+        "unit_restriction": null,
+        "icon": "ability_20.png",
+        "strings": {
+            "name": [
+                "Quickbolt Blade",
+                "迅雷之劍",
+                "신뢰의 검",
+                "Lame",
+                "Donnerschlagklinge",
+                "Cuchilla centella"
+            ],
+
+
+            "501980": {
+        "name": "Greased Lightning",
+        "compendium_id": 10134,
+        "type": "ABILITY",
+        "active": true,
+        "rarity": 8,
+        "mp_cost": 50,
+        "attack_count": [8],
+        "attack_frames": [[2,  9,  16,  23,  30,  37,  44,  51]],
+        "effect_frames": [[0]],
+        "move_type": 4,
+        "motion_type": 2,
+        "effect_type": "Default",
+        "attack_type": "Physical",
+        "element_inflict": null,
+        "effects": ["Physical damage (5x, ATK) to one enemy (ignore cover)"],
+        "effects_raw": [[1, 1, 21, [0,  0,  250,  -50]]],
+        "unit_restriction": null,
+        "icon": "ability_54.png",
+        "strings": {
+            "name": [
+                "Greased Lightning",
+                "疾風迅雷",
+                "질풍신뢰",
+                "Éclair supersonique",
+
+
+                213820": {
+        "name": "Blade Prison",
+        "compendium_id": 1441,
+        "type": "ABILITY",
+        "active": true,
+        "rarity": 8,
+        "mp_cost": 45,
+        "attack_count": [10],
+        "attack_frames": [[42,  50,  58,  66,  74,  82,  90,  98,  106,  114]],
+        "effect_frames": [[40,  40,  100]],
+        "move_type": 4,
+        "motion_type": 2,
+        "effect_type": "Default",
+        "attack_type": "Physical",
+        "element_inflict": null,
+        "effects": ["Physical damage (4x, ATK) to one enemy"],
+        "effects_raw": [[1, 1, 1, [0,  0,  0,  0,  0,  0,  400]]],
+        "unit_restriction": null,
+        "icon": "ability_54.png",
+        "strings": {
+            "name": [
+                "Blade Prison",
+                "劍獄",
+                "검의 감옥",
+                "Prison de lames",
+*/
