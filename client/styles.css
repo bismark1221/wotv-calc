@@ -57,24 +57,6 @@ button, input, optgroup, select, textarea {
   height: 40px;
 }
 
-@media (max-width: 839px) {
-  .dropdown-inline {
-    width: 100%;
-    padding-right: 10px;
-  }
-
-  .dropdown-toggle {
-    width: 100%;
-    text-align: left;
-  }
-}
-
-@media (max-width: 600px) {
-  .dropdown-inline {
-    padding-right: 0;
-  }
-}
-
 .select2-container {
   width: 100% !important;
 }
@@ -100,4 +82,29 @@ button, input, optgroup, select, textarea {
 
 .select2-container--bootstrap .select2-results>.select2-results__options {
   max-height: 300px;
+}
+
+@media (max-width: 839px) {
+  .dropdown-inline {
+    width: 100%;
+    padding-right: 10px;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-inline {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .youtube {
+    width: 250px;
+    height: 140px;
+  }
 }

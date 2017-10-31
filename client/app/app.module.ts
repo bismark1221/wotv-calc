@@ -29,6 +29,7 @@ import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
 import { MacroComponent } from './macro/macro.component';
+import { HowToComponent } from './how-to/how-to.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
@@ -64,7 +65,8 @@ export function createTranslateLoader(http: HttpClient) {
     MyUnitsComponent,
     ContactComponent,
     LegalComponent,
-    MacroComponent
+    MacroComponent,
+    HowToComponent
   ],
   imports: [
     BrowserModule,
