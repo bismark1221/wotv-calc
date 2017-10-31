@@ -12,6 +12,7 @@ import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 import { ClipboardModule } from 'ngx-clipboard';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LightboxModule } from 'angular2-lightbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
@@ -92,7 +93,8 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    })
+    }),
+    LightboxModule
   ],
   providers: [
     UnitService,
