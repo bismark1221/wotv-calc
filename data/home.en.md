@@ -11,6 +11,11 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+01/11/2017
+ - Add Loren (with temporary offset)
+ - New page to explain how chain really work in game
+ - Change how to show options on the simulator (click on the gear)
+
 20/10/2017
  - Add translation system for French language (maybe more later)
  - Add espers in the calculator
@@ -30,16 +35,6 @@ For now, you will find the following features :
  - Memu and Nox are working
  - However the result in-game can differ from the chart... In-game lag, some data that are not in the datamine files (offset and cast time)
  - Don't forget to not put any acceleration in your macro
-
-06/10/2017
- - Add Goken as a chainer
-
-02/10/2017
- - After three weeks of rest playing Monster Hunter Stories, sorry :( , I'm back into business :)
- - So to your pleasure, and also mine, you can now add finisher in the app. The calculator work pretty well with them so feel free to test
- - I also decide to add the possibility for chainers to have finisher ability, like Tidus and his Jetch Shot
- - Add lot of finisher (Luneth, Fire Veritas, A2, ...)
- - If you think I miss good finisher feel free to contact me
 
 ---
 

@@ -1,9 +1,8 @@
 Ce site a été créé pour que vous puissiez optimiser vos chaines avec différentes unités dans Final Fantasy Brave Exvius
 
-
 Cette application est basée sur la version globale du jeu, il y a cependant quelques unités ou sorts qui ne sont disponibles que sur la version japonaise pour le moment (ex: Djidane 6 étoiles, ...)
 Le site dispose des fonctionnalités suivantes :
- - Calculer une chaine avec différent type d'unité
+ - Calculer une chaine avec différents types d'unités
  - Trouver la meilleure unité ou combo en fonction de votre sélection
  - Générer des macros pour memu et nox
  - Créer et enregistrer vos propres unités (Cette option sauvegarde vos unités dans votre navigateur, donc si vous en changer ou que vous changer d'ordinateur vous ne pourrez pas les retrouver)
@@ -11,6 +10,11 @@ Le site dispose des fonctionnalités suivantes :
 ---
 
 ##### Modifications :
+
+01/11/2017
+ - Ajout de Loren (avec des offset temporaires)
+ - Nouvelle page pour expliquer le fonctionnement des chaines dans le jeu
+ - Modification de l'affichage des options dans le simulateur (cliquez sur l'engrenage)
 
 20/10/2017
  - Si vous voyez cette page en Français c'est que vous avez trouvé le nouvel ajout de choix de langue (français et anglais pour l'instant)
@@ -30,13 +34,6 @@ Le site dispose des fonctionnalités suivantes :
  - Memu and Nox sont pris en compte
  - Cependant le résultat en jeu peut être différent du graphique... Lag, certaines données que l'on n'a pas via les fichiers de datamining (offset)
  - N'oubliez pas de ne pas d'accélération dans votre macro
-
-06/10/2017
- - Ajout de Goken
-
-02/10/2017
- - Vous pouvez désormais choisir si une abilités est de type chaine ou finisseur
- - Vouz pouvez dès à présent trouver bon nombre de finisseur (Luneth, Véritas des flammes, A2, ...)
 
 ---
 
