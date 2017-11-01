@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
+import { NavService } from '../services/nav.service'
 
 @Component({
   selector: 'app-nav',
@@ -11,12 +12,24 @@ import { Angulartics2 } from 'angulartics2';
 
 export class NavComponent {
   displayLink: boolean = false;
+  menuDisabled: boolean;
 
   constructor(
     private localStorageService: LocalStorageService,
     private angulartics: Angulartics2,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {}
+
+  ngOnInit() {
+    this.menuDisabled = this.navService.menuDisabled;
+  }
+
+  ngAfterViewInit() {
+    this.navService.$menuDisabled.subscribe(menuDisabled => {
+      this.menuDisabled = menuDisabled;
+    });
+  }
 
   menu(forceClose: boolean = false) {
     this.displayLink = forceClose ? false : !this.displayLink;

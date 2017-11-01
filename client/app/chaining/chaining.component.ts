@@ -4,6 +4,7 @@ import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'ang
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Select2OptionData } from '../select2/select2.interface';
 import { Angulartics2 } from 'angulartics2';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
@@ -15,6 +16,7 @@ import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
 import { FindBestService } from '../services/find-best.service';
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-chaining',
@@ -44,7 +46,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
   abilityTypes: string[] = ['chain', 'finish'];
 
-  viewOptions: boolean[] = [];
+  viewOptions: number = -1;
   bestChainers: any[] = [];
   duplicatePosition: number[] = [];
   viewBestChainers: number = -1;
@@ -74,7 +76,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private localStorageService: LocalStorageService,
     private ref: ChangeDetectorRef,
     private angulartics: Angulartics2,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private modalService: NgbModal,
+    private navService: NavService
   ) {
     this.getTranslation();
 
@@ -343,7 +347,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chain[position].ability = this.chain[position].abilities[0];
 
-    this.viewOptions[position] = true;
     this.saveUnit(position);
 
     this.idSelected[position] = this.selectedUnits[position].id;
@@ -358,7 +361,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     unit.id = undefined;
 
     this.chain[position] = unit;
-    this.viewOptions[position] = true;
     this.saveUnit(position);
 
     this.idSelected[position] = this.selectedUnits[position].id;
@@ -425,7 +427,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         framesGap: 0
       };
       this.chainService.units[position] = null;
-      this.viewOptions[position] = false;
       this.selectedAbilities[position] = 0;
     } else {
       this.viewBestChainers = -1;
@@ -472,11 +473,22 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain[position].ability.activeRename = !this.chain[position].ability.activeRename;
   }
 
-  showOptions(position: number) {
-    this.viewOptions[position] = !this.viewOptions[position];
-    if (this.viewOptions[position]) {
-      this.angulartics.eventTrack.next({ action: 'showOptions', properties: { category: 'chain' }});
-    }
+  showOptions(modal, position: number) {
+    this.viewOptions = position;
+    this.navService.updateMenu(true);
+
+    this.modalService.open(modal, { windowClass: 'options-modal' }).result.then(
+      (result) => {
+        this.viewOptions = -1;
+        this.navService.updateMenu(false);
+      },
+      (reason) => {
+        this.viewOptions = -1;
+        this.navService.updateMenu(false);
+      }
+    );
+
+    this.angulartics.eventTrack.next({ action: 'showOptions', properties: { category: 'chain' }});
 
     this.changeMultiSelectDropdown();
   }

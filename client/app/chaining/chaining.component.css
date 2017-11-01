@@ -434,6 +434,16 @@ nouislider {
   left: -10px;
 }
 
+.btnOptions {
+  float: right;
+  padding: 2px 5px 0px 5px;
+  margin-top: -5px;
+}
+
+.btnOptions i {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1049px) {
   .mobileSeparatorSelectRightZone {
     margin-top: 10px;

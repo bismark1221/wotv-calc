@@ -73,6 +73,12 @@
   margin-top: 6px;
 }
 
+.menuDisabled {
+  background-color: #fff;
+  border-color: #ccc;
+  opacity: .65;
+}
+
 @media (max-width: 500px) {
   .centerNav {
     display: block;

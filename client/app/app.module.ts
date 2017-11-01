@@ -13,6 +13,7 @@ import { ClipboardModule } from 'ngx-clipboard';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LightboxModule } from 'angular2-lightbox';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
@@ -38,6 +39,7 @@ import { ChainBackService } from './services/chain.back.service';
 import { FindBestService } from './services/find-best.service';
 import { LoggerService } from './services/logger.service';
 import { ElementsService } from './services/elements.service';
+import { NavService } from './services/nav.service';
 
 import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
@@ -94,7 +96,8 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    LightboxModule
+    LightboxModule,
+    NgbModule.forRoot()
   ],
   providers: [
     UnitService,
@@ -102,7 +105,8 @@ export function createTranslateLoader(http: HttpClient) {
     ChainService,
     ElementsService,
     ChainBackService,
-    FindBestService
+    FindBestService,
+    NavService
   ],
   bootstrap: [AppComponent]
 })

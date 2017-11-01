@@ -389,3 +389,25 @@ body.lb-disable-scrolling {
   transition-property: all;
   transition-timing-function: ease;
 }
+
+/* Chain Modal */
+.options-modal {
+  z-index: 1200;
+}
+
+.options-modal .modal-dialog {
+  max-width: 780px;
+}
+
+@media (max-width: 839px) {
+  .options-modal .modal-dialog {
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 600px) {
+  .options-modal .modal-dialog {
+    max-width: 260px;
+    margin: 30px auto;
+  }
+}

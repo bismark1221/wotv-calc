@@ -23,7 +23,7 @@
 </nav>
 
 <nav class="navbar fixed-top-right navButton">
-  <button type="button" class="btn btn-secondary btnMenu" (click)="menu()">
+  <button type="button" class="btn btn-secondary btnMenu" [ngClass]="{'menuDisabled': menuDisabled}" (click)="menu()">
     <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
 </nav>
