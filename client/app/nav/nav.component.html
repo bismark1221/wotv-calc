@@ -8,6 +8,7 @@
         <a class="nav-link" [routerLink]="['/how-to']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.how-to' | translate }}</a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>
+        <!-- <a class="nav-link nav-link-lang pointer" (click)="changeLang('tw')"><img src="../../assets/nav/blank.gif" class="flag flag-tw" /></a> -->
       </li>
     </ul>
   </div>
@@ -19,6 +20,10 @@
     <a class="pointer" (click)="changeLang('fr')">
       <img src="../../assets/nav/blank.gif" class="flag flag-fr" />
     </a>
+    <!-- <span class="separator"></span>
+    <a class="pointer" (click)="changeLang('tw')">
+      <img src="../../assets/nav/blank.gif" class="flag flag-tw" />
+    </a> -->
   </div>
 </nav>
 

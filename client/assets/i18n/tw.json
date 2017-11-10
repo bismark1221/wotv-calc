@@ -5,72 +5,72 @@
   },
   "chain" : {
     "label" : {
-      "unit" : "Unit",
-      "unitName" : "Unit name",
-      "ability" : "Ability",
-      "bestUnits" : "Best units",
-      "yes" : "Yes",
-      "no" : "No",
-      "dual" : "Dualcast/Dualwield",
-      "elementWeapon" : "Element weapon",
-      "abilityName" : "Ability name",
-      "base" : "Base %",
-      "ignore" : "Ignore (Def/Spr)",
-      "abilityType" : "Ability Type",
-      "damageType" : "Damage Type",
-      "dualable" : "Dualable ?",
-      "linearFrames" : "Linear Frames",
-      "hits" : "Hits",
-      "frames" : "Hit X Frames",
-      "nonLinearFrames" : "Frames (0-X-X-X-X)",
-      "firstHit" : "First Hit",
-      "castTime" : "Cast time",
-      "offset" : "Offset",
-      "element" : "Element",
-      "value" : "Value",
-      "differenceFirstHit" : "Difference in first hit frame",
-      "sorryBestModifier" : "Sorry but calculation for such chain are too heavy :( I'm working a queue system...",
-      "result" : "Result",
-      "totalModifier" : "Total modifier :",
-      "totalCombo" : "Total combo :",
-      "legend" : "Legend",
-      "classicHit" : "Unit classic hit",
-      "dualHit" : "Unit hit from dual",
-      "breakHit" : "Unit hit break chain",
-      "macro" : "Macro",
-      "tooltip" : "ex: damage 7x = 700%",
-      "multiElements" : "Select ability element(s)"
+      "unit" : "兵員",
+      "unitName" : "兵員名",
+      "ability" : "能力",
+      "bestUnits" : "最佳兵員",
+      "yes" : "是",
+      "no" : "否",
+      "dual" : "連續魔/雙刀流",
+      "elementWeapon" : "屬性武器",
+      "abilityName" : "能力名",
+      "base" : "基礎傷害 %",
+      "ignore" : "忽略 (防禦/精神)",
+      "abilityType" : "能力類型",
+      "damageType" : "傷害類型",
+      "dualable" : "可連續/雙刀 ?",
+      "linearFrames" : "線性幀數",
+      "hits" : "段數",
+      "frames" : "段數 X 幀數",
+      "nonLinearFrames" : "幀數 (0-X-X-X-X)",
+      "firstHit" : "初次擊打",
+      "castTime" : "施展時間",
+      "offset" : "兩手間隔",
+      "element" : "屬性",
+      "value" : "數值",
+      "differenceFirstHit" : "初次擊打幀數差",
+      "sorryBestModifier" : "抱歉這樣的連鎖計算量太龐大 :( 我正試著加上排隊系統...",
+      "result" : "結果",
+      "totalModifier" : "總倍率 :",
+      "totalCombo" : "總combo數 :",
+      "legend" : "圖例",
+      "classicHit" : "第一回擊打",
+      "dualHit" : "第二回擊打",
+      "breakHit" : "破壞連鎖擊打",
+      "macro" : "巨集",
+      "tooltip" : "如: 傷害 7x = 700%",
+      "multiElements" : "選擇能力屬性(可複選)"
     },
     "button" : {
-      "save" : "Save",
-      "rename" : "Rename",
-      "removeUnit" : "Remove Unit",
-      "createUnit" : "Create New Unit",
-      "cloneUnit" : "Clone To My Units",
-      "duplicate" : "Duplicate",
-      "showOptions" : "Show Options",
-      "hideOptions" : "Hide Options",
-      "findBest" : "Find Best Units",
-      "renameAbility" :  "Rename ability",
-      "saveAbility" :  "Save ability",
-      "addAbility" :  "Add ability",
-      "removeAbility" :  "Delete ability",
-      "addDebuff" : "Add debuff",
-      "remove" : "Remove",
-      "findBestModifier" : "Find best modifier",
-      "findBestCombo" : "Find best combo"
+      "save" : "儲存",
+      "rename" : "重新命名",
+      "removeUnit" : "移除兵員",
+      "createUnit" : "建立新的兵員",
+      "cloneUnit" : "複製到我的兵員",
+      "duplicate" : "複製",
+      "showOptions" : "顯示選項",
+      "hideOptions" : "隱藏選項",
+      "findBest" : "尋找最佳兵員",
+      "renameAbility" :  "重新命名能力",
+      "saveAbility" :  "儲存能力",
+      "addAbility" :  "新增能力",
+      "removeAbility" :  "新增能力",
+      "addDebuff" : "新增debuff",
+      "remove" : "移除",
+      "findBestModifier" : "倍率最佳化",
+      "findBestCombo" : "Combo最佳化"
     }
   },
   "my-units" : {
-    "title" : "My Units"
+    "title" : "我的兵員"
   },
   "macro" : {
-    "width" : "Width",
-    "height" : "Height",
-    "copy" : "Copy",
-    "warningMemu" : "Be careful you need to have an extra empty line at the end of your macro file",
-    "memu" : "Memu",
-    "nox" : "Nox"
+    "width" : "寬",
+    "height" : "高",
+    "copy" : "複製",
+    "warningMemu" : "注意：巨集最後面必須保留一行空白行",
+    "memu" : "逍遙安卓",
+    "nox" : "夜神"
   },
   "contact" : {
     "title" : "Contact",
@@ -82,23 +82,23 @@
   },
   "elements" : {
     "" : "",
-    "dark" : "dark",
-    "earth" : "earth",
-    "fire" : "fire",
-    "ice" : "ice",
-    "light" : "light",
-    "lightning" : "lightning",
-    "water" : "water",
-    "wind" : "wind"
+    "dark" : "暗",
+    "earth" : "土",
+    "fire" : "火",
+    "ice" : "冰",
+    "light" : "光",
+    "lightning" : "雷",
+    "water" : "水",
+    "wind" : "風"
   },
   "abilityType" : {
-    "chain" : "chain",
-    "finish" : "finish"
+    "chain" : "連鎖型",
+    "finish" : "終結型"
   },
   "abilityDamage" : {
-    "physic" : "physic",
-    "magic" : "magic",
-    "hybrid" : "hybrid"
+    "physic" : "物理傷害",
+    "magic" : "魔法傷害",
+    "hybrid" : "物魔混合"
   },
   "footer" : {
     "made" : "Made with ",
@@ -107,8 +107,8 @@
     "legal" : "Legal notices"
   },
   "nav" : {
-    "chain" : "Chain Tools",
-    "my" : "My Units",
+    "chain" : "連鎖工具",
+    "my" : "我的兵員",
     "how-to" : "How To"
   },
   "how-to" : {
@@ -116,3 +116,10 @@
     "markdown" : "### Chains\n\r\n\r#### How does the game work ?\n\rThe first thing you should know when starting to play with chain, is that the game run on 60 frames per second\n\r\n\rThis is important because hits of abilities hit each X frames and not in seconds or milliseconds\n\r\n\rBut we can easily find that 1 frame = 16.66 milliseconds\n\r\n\r#### What is a chain ?\n\rIt's when 2 units, or more, hit the target whit alternating hits\n\r\n\rHere a small exemple: The first unit will hit first, then the second unit hit, next the first unit hit again, then the second one, etc...\n\r\n\rWhen you see in game \"Combo\", it's that you are already in a chain :)\n\r\n\r#### Why chaining is important ?\n\rBecause it's nice to see high combo ^^\n\r\n\rNo I'm kidding, it's important because at each combo the power of the hits increase by a certain rate up to 400%\n\r\n\rHere is the detail of the modifications\n\r - Neutral combo : 10%\n\r - Elemental combo : 20% by elements\n\r - Spark combo : 30%\n\r\n\rKnowing that each of thoses combo can be combined, if you do a spark fire/water combo so the power gain 80% in one hit\n\r\n\rYou can find bellow a table which show the number of hit necessary to reach the maximum power\n\r\n\r![chain modifier][chain_modifier]\n\r\n\r#### Break a chain\n\rThere is 2 way to break a chain\n\r - An unit hit twice in a row\n\r - If there is more than 21 frames between 2 hits\n\r\n\rWhen a chain is break, we start again at 0 combo and the power drop to 100%\n\r\n\r#### Add a finisher in a chain\n\rAt any moment you can add another unit in a chain to take advantage of the rise of power\n\r\n\rIt become interested to use some finisher, units who have abilities which do only one hit\n\r\n\rWith those spells, all their power is rise with one hit, moreover those abilities are more powerfull than the chain skills generally\n\r\n\rSo we need to try to include them as soon as the power is at 400%\n\r\n\r#### Analyse data find on internet\n\rThere is multiple way to write data about abilities\n\r\n\rLet's take an example with Tidus' Quick Hit\n\r - Frames version : 22-5-5-5-5-5-5-5-5-5-5-20\n\r - Cumulative version : 22-27-32-37-42-47-52-57-62-67-72-92\n\r - ffbe-chain version : 0-5-5-5-5-5-5-5-5-5-5-20\n\r\n\rThe first number in the 2 first example is the first hit of the ability, here 22\n\r\n\rThat mean that Tidus will hit with his Quick Hit at 22 frames after you tap on the unit, so that's 22 x 16.66 = 366.52 milliseconds\n\r\n\rNext thanks to the first example, we know that the second hit came 5 frames after the first one, so that's 27 frames (We can find this data on the cumulative version)\n\r\n\r#### What's happen with a dualwield/dualcast\n\rLet's review again our Tidus with his Quick Hit (22-5-5-5-5-5-5-5-5-5-5-20)\n\r\n\rLet's imagine that Tidus has 2 weapons, so a dualcast, in this case we need another data : At when moment start the 2nd spell ?\n\r\n\rWe can find the extracted data the cast time of any ability, for Quick Hit it's 20 frames\n\r\n\rIn theory we should have the following result\n\r - 1st spell: 22-27-32-37-42-47-52-57-62-67-72-92\n\r - 2nd spell: 42-47-52-57-62-67-72-77-82-87-92-112\n\r\n\r![fake tidus quick hit][fake_quick_hit]\n\r\n\rUnfortunately is not so simple... Thank to Whaat on reddit, we have discover that some abilities have an extra delay, named offset, but this data is not on the data files... ([Multi-Hit Chain Reference/Hit Data] and [frame delays on dualhit])\n\r\n\rFor the Quick Hit, we have find that the offset is 16 frames, so here are the real data for Tidus\n\r - 1st spell: 22-27-32-37-42-47-52-57-62-67-72-92\n\r - 2nd spell: 58-63-68-73-78-83-88-93-98-103-108-128\n\r\n\r![real tidus quick hit][real_quick_hit]\n\r\n\rLike you can see, the 2nd spell start before the ending of the first one, it's the case for lot of units\n\r\n\rHere is the case of Orlandeau who \"wait\" for his first spell to finish before launching the 2nd one\n\r\n\r![orlandeau][orlandeau]\n\r\n\r#### What is a spark ?\n\rA spark combo is when 2 units hit on the same frame, be careful only 1 of the 2 hit is concidered as a spark\n\r\n\r#### The positioning is important when chaining\n\rA new discovery, for myself, it's that the positioning can play an important part in your chains\n\r\n\rAn unit who is on a smaller position than another will always hit before the other, even in a spark combo\n\r\n\rAnd it's in this case that some weird things can happen...\n\r\n\rIt's the case of Tidus and Pirate Jake, I put here a small video of my youtube channel to show this odd behavior\n\r\n\r<iframe class=\"youtube\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vTmBNy9jMDY\" frameborder=\"0\" allowfullscreen></iframe>\n\r\n\rBut don't worry, this is already implemented on the simulator :)\n\r\n\r![chain tidus and pirate jake][tidus_pirate_jake]\n\r\n\r##### Macros\n\rI will not explain here how to use macro on your emulators because there is already lot a pretty good tutorials\n\r\n\rI just put some little rules which can be useful\n\r - Memu : Be careful, you need to have an extra empty line at the end of your macro files (This empty line is generated in the simulator, so if you click on the Copy button there shouldn't have any problems)\n\r\n\r[chain_modifier]: ../../assets/how-to/ffbe_chain_modifier.png \"Chain Modifier\"\n\r[fake_quick_hit]: ../../assets/how-to/fake_quick_hit.png \"Fake Quick Hit\"\n\r[real_quick_hit]: ../../assets/how-to/real_quick_hit.png \"Real Quick Hit\"\n\r[orlandeau]: ../../assets/how-to/orlandeau.png \"Chain Orlandeau\"\n\r[tidus_pirate_jake]: ../../assets/how-to/tidus_pirate_jake.png \"Chain Tidus and Pirate Jake\"\n\r[Multi-Hit Chain Reference/Hit Data]: https://dm.reddit.com/r/FFBraveExvius/comments/5dbam6/jp_multihit_chain_referencehit_data\n\r[frame delays on dualhit]: https://dm.reddit.com/r/FFBraveExvius/comments/6ct7uc/frame_delays_for_many_popular_chaining_moves\n\r"
   }
 }
+
+
+
+
+
+
+

@@ -49,12 +49,16 @@
   background: url('../../assets/nav/flags.png') no-repeat;
 }
 
-.flag.flag-gb {
-  background-position: -24px 0;
+.flag.flag-tw {
+  background-position: 0 -24px;
 }
 
 .flag.flag-fr {
   background-position: 0 0;
+}
+
+.flag.flag-gb {
+  background-position: -24px 0;
 }
 
 .nav-link-lang {

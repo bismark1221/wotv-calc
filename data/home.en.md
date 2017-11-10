@@ -11,8 +11,11 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+10/11/2017
+ - Add Barbariccia
+
 01/11/2017
- - Add Loren (with temporary offset)
+ - Add Loren
  - New page to explain how chain really work in game
  - Change how to show options on the simulator (click on the gear)
 

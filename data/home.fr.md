@@ -11,8 +11,11 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+10/11/2017
+ - Ajout de Barbariccia
+
 01/11/2017
- - Ajout de Loren (avec des offset temporaires)
+ - Ajout de Loren
  - Nouvelle page pour expliquer le fonctionnement des chaines dans le jeu
  - Modification de l'affichage des options dans le simulateur (cliquez sur l'engrenage)
 
