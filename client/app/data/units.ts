@@ -79,7 +79,27 @@ export const UNITS: any[] = [
         elements: [
           'water'
         ]
-      }
+      },
+      {
+        names: {
+          en: "Blitz Ace",
+          tw: "水鬥球王牌",
+          kr: "블리츠의 에이스",
+          fr: "Champion de blitz",
+          de: "Blitzass",
+          es: "As del blitzbol"
+        },
+        linearFrames: false,
+        framesList: '0-4-10-4-10-4-4-4-12-4-20-4-14-4-36-150',
+        firstHit: 106,
+        castTime: 0,
+        offset: 0,
+        base: 410,
+        debuff: {
+          water: 100
+        },
+        dualable: false
+      },
     ],
     weapons : [
       'water'
