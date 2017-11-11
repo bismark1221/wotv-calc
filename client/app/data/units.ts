@@ -120,7 +120,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Fin Briar',
-          fr: 'Fin Briar'
+          fr: 'Fin Briar',
+          tw: '野薔薇之翼',
+          kr: '핀의 들장미',
+          de: 'Fingestrüpp',
+          es: 'Fin Briar'
         },
         type: 'finish',
         hits: 1,
@@ -134,7 +138,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Fin Briar +2',
-          fr: 'Fin Briar +2'
+          fr: 'Fin Briar +2',
+          tw: '野薔薇之翼 +2',
+          kr: '핀의 들장미 +2',
+          de: 'Fingestrüpp +2',
+          es: 'Fin Briar +2'
         },
         type: 'finish',
         hits: 1,
@@ -162,7 +170,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Divine Ruination',
-          fr: 'Ruine divine'
+          fr: 'Ruine divine',
+          tw: '聖光爆裂破',
+          kr: '성광폭렬파',
+          de: 'Göttliche Zerstörung',
+          es: 'Ruina divina'
         },
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -178,7 +190,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Divine Ruination +2 (JP Only)',
-          fr: 'Ruine divine +2 (JP Seulement)'
+          fr: 'Ruine divine +2 (JP Seulement)',
+          tw: '聖光爆裂破 +2 (JP Only)',
+          kr: '성광폭렬파 +2 (JP Only)',
+          de: 'Göttliche Zerstörung +2 (JP Only)',
+          es: 'Ruina divina +2 (JP Only)'
         },
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -211,7 +227,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Aureole Ray',
-          fr: 'Rayon auréole'
+          fr: 'Rayon auréole',
+          tw: '日輪射線',
+          kr: '광환의 광선',
+          de: 'Koronastrahl',
+          es: 'Rayo áureo'
         },
         linearFrames: false,
         framesList: '0-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4',
@@ -229,7 +249,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Aureole Ray +2 (JP Only)',
-          fr: 'Rayon auréole +2 (JP Seulement)'
+          fr: 'Rayon auréole +2 (JP Seulement)',
+          tw: '日輪射線 +2 (JP Only)',
+          kr: '광환의 광선 +2 (JP Only)',
+          de: 'Koronastrahl +2 (JP Only)',
+          es: 'Rayo áureo +2 (JP Only)'
         },
         linearFrames: false,
         framesList: '0-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4',
@@ -246,8 +270,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Gleaming Arrow (max)',
-          fr: 'Flèche étincelante (max)'
+          en: 'Gleaming Arrow',
+          fr: 'Flèche étincelante',
+          tw: '閃光箭',
+          kr: '빛나는 화살',
+          de: 'Leuchtender Pfeil',
+          es: 'Saeta centella'
         },
         type: 'finish',
         hits: 1,
@@ -264,8 +292,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Gail Arrow (max)',
-          fr: 'Flèche tornade (max)'
+          en: 'Gail Arrow',
+          fr: 'Flèche tornade',
+          tw: '烈風箭',
+          kr: '돌풍의 화살',
+          de: 'Gailpfeil',
+          es: 'Saeta tornado'
         },
         type: 'finish',
         hits: 1,
@@ -298,7 +330,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Piledriver',
-          fr: 'Sonnette'
+          fr: 'Sonnette',
+          tw: '打樁機',
+          kr: '항타기',
+          de: 'Ramme',
+          es: 'Martinete'
         },
         linearFrames: false,
         framesList: '0-15-15-15-15',
@@ -314,7 +350,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Piledriver +2 (JP Only)',
-          fr: 'Sonnette +2 (JP Seulement)'
+          fr: 'Sonnette +2 (JP Seulement)',
+          tw: '打樁機 +2 (JP Only)',
+          kr: '항타기 +2 (JP Only)',
+          de: 'Ramme +2 (JP Only)',
+          es: 'Martinete +2 (JP Only)'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8',
@@ -347,7 +387,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Dark Punishment',
-          fr: 'Punition obscure'
+          fr: 'Punition obscure',
+          tw: '暗黑之罪',
+          kr: '암흑의 죄업',
+          de: 'Dunkelstrafe',
+          es: 'Castigo tenebroso'
         },
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -363,7 +407,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Dark Edge',
-          fr: 'Entaille obscure'
+          fr: 'Entaille obscure',
+          tw: '暗黑之刃',
+          kr: '암흑의 칼',
+          de: 'Dunkelschneide',
+          es: 'Filo tenebroso'
         },
         type: 'finish',
         hits: 1,
@@ -397,7 +445,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Avoid Attack',
-          fr: 'Esquiver Attaque'
+          fr: 'Esquiver Attaque',
+          tw: '閃避攻擊',
+          kr: '어보이드 어택',
+          de: 'Angriff ausweichen',
+          es: 'Esquivar'
         },
         linearFrames: false,
         framesList: '0-9-9-9-9-9-9-9',
@@ -409,7 +461,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Extract Speed',
-          fr: 'Attaque Sonique'
+          fr: 'Attaque Sonique',
+          tw: '迅速攻擊',
+          kr: '스피드 어택',
+          de: 'Extrakt-Tempo',
+          es: 'Lentificar'
         },
         linearFrames: false,
         framesList: '0-7-7-7-8-8-8-8-8-8',
@@ -421,7 +477,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'R050: Spear',
-          fr: 'R050: Lance'
+          fr: 'R050: Lance',
+          tw: 'R050：矛',
+          kr: 'R050: 스피어',
+          de: 'R050: Speer',
+          es: 'R050: Lanza'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5',
@@ -433,7 +493,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Steel Pipe',
-          fr: 'Barre de fer'
+          fr: 'Barre de fer',
+          tw: '鐵管',
+          kr: '쇠 파이프',
+          de: 'Stahlröhre',
+          es: 'Tubo de hierro'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-9',
@@ -445,7 +509,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'A150: Vault',
-          fr: 'A150: Décharge'
+          fr: 'A150: Décharge',
+          tw: 'A150：伏特',
+          kr: 'A150: 볼트',
+          de: 'A150: Volt',
+          es: 'A150: Voltio'
         },
         type: 'finish',
         hits: 1,
@@ -461,7 +529,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Self Destruct: 2B',
-          fr: 'Autodestruction : 2B'
+          fr: 'Autodestruction : 2B',
+          tw: '自爆：2B',
+          kr: '자폭: 2B',
+          de: 'Selbstzerstörung: 2B',
+          es: 'Autodestrucción: 2B'
         },
         type: 'finish',
         hits: 1,
@@ -489,7 +561,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Counter Attack',
-          fr: 'Contre-attaquer'
+          fr: 'Contre-attaquer',
+          tw: '反制攻擊',
+          kr: '카운터 어택',
+          de: 'Konterangriff',
+          es: 'Contragolpe'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10',
@@ -502,7 +578,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Self Destruct: 9S',
-          fr: 'Autodestruction : 9S'
+          fr: 'Autodestruction : 9S',
+          tw: '自爆：9S',
+          kr: '자폭: 9S',
+          de: 'Selbstzerstörung: 9S',
+          es: 'Autodestrucción: 9S'
         },
         type: 'finish',
         hits: 1,
@@ -530,7 +610,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Dash Attack',
-          fr: 'Attaque rapide'
+          fr: 'Attaque rapide',
+          tw: '突進攻擊',
+          kr: '대시',
+          de: 'Sprintangriff',
+          es: 'Ataque en carrera'
         },
         linearFrames: false,
         framesList: '0-7-7-8-8-16-8',
@@ -541,8 +625,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Offensive Heal Combo (Modifier are wrong)',
-          fr: 'Combo offensivo-curatif (Le modificateur est incorrecte)'
+          en: 'Offensive Heal Combo',
+          fr: 'Combo offensivo-curatif',
+          tw: '攻擊時回復HP連擊',
+          kr: '공격 HP 회복 콤보',
+          de: 'Offensive Heilkombo',
+          es: 'Combo curativo-ofensivo'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5',
@@ -554,7 +642,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Heavy Attack',
-          fr: 'Attaque lourde'
+          fr: 'Attaque lourde',
+          tw: '強攻擊',
+          kr: '강공격',
+          de: 'Schwerer Angriff',
+          es: 'Ataque pesado'
         },
         linearFrames: false,
         framesList: '0-9-9-9-9-9-5-4-9-5',
@@ -566,7 +658,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Finisher',
-          fr: 'Coup fatal'
+          fr: 'Coup fatal',
+          tw: '必殺',
+          kr: '필살',
+          de: 'Todesstoß',
+          es: 'Golpe de gracia'
         },
         type: 'finish',
         hits: 1,
@@ -593,7 +689,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tri-Beam Laser +2 (orange)',
-          fr: 'Laser triple +2 (orange)'
+          fr: 'Laser triple +2 (orange)',
+          tw: '三重雷射 +2 (橙子)',
+          kr: '트라이 레이저 +2 (주황색)',
+          de: 'Triple-Jackpot +2 (oranje)',
+          es: 'Láser triple +2 (naranja)'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7',
@@ -612,7 +712,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Attack Hand',
-          fr: 'Tirage explosif'
+          fr: 'Tirage explosif',
+          tw: '攻擊牌組',
+          kr: '공격 편성',
+          de: 'Angriffsdeck',
+          es: 'Mano ofensiva'
         },
         type: 'finish',
         hits: 1,
@@ -642,7 +746,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Divine Ruination',
-          fr: 'Ruine divine'
+          fr: 'Ruine divine',
+          tw: '聖光爆裂破',
+          kr: '성광폭렬파',
+          de: 'Göttliche Zerstörung',
+          es: 'Ruina divina'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10',
@@ -658,7 +766,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Divine Ruination +2',
-          fr: 'Ruine divine +2'
+          fr: 'Ruine divine +2',
+          tw: '聖光爆裂破 +2',
+          kr: '성광폭렬파 +2',
+          de: 'Göttliche Zerstörung +2',
+          es: 'Ruina divina +2'
         },
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -691,7 +803,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Disorder',
-          fr: 'Désordre'
+          fr: 'Désordre',
+          tw: '無序亂射',
+          kr: '난동',
+          de: 'Störung',
+          es: 'Desorden'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5-5',
@@ -717,7 +833,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Heaven\'s Fury',
-          fr: 'Ire céleste'
+          fr: 'Ire céleste',
+          tw: '聖光爆裂斬',
+          kr: '성광폭렬참',
+          de: 'Himmelszorn',
+          es: 'Aura celestial'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10-10-10-10',
@@ -732,7 +852,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Sword of Kings',
-          fr: 'Épée des Rois'
+          fr: 'Épée des Rois',
+          tw: '霸王之劍',
+          kr: '패왕의 검',
+          de: 'Schwert der Könige',
+          es: 'Espada de reyes'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10',
@@ -758,7 +882,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Thunder Clap',
-          fr: 'Coup de tonnerre'
+          fr: 'Coup de tonnerre',
+          tw: '雷霆一擊',
+          kr: '내리치는 천둥번개',
+          de: 'Donnerkrachen',
+          es: 'Trueno atronador'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5',
@@ -792,7 +920,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Phantom Shadow',
-          fr: 'Ombre fantasmatique'
+          fr: 'Ombre fantasmatique',
+          tw: '夢幻泡影',
+          kr: '몽환포영',
+          de: 'Schall und Rauch',
+          es: 'Sombra fantasma'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5',
@@ -819,7 +951,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Ultima +2',
-          fr: 'Ultima +2'
+          fr: 'Ultima +2',
+          tw: '究極 +2',
+          kr: '알테마 +2',
+          de: 'Ultima +2',
+          es: 'Artema +2'
         },
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -832,8 +968,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Dystopia (max)',
-          fr: 'Dystopie (max)'
+          en: 'Dystopia',
+          fr: 'Dystopie',
+          tw: '敵托邦',
+          kr: '디스토피아',
+          de: 'Dystopia',
+          es: 'Distopía'
         },
         type: 'finish',
         hits: 1,
@@ -865,7 +1005,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Sonic Blast',
-          fr: 'Rafale sonique'
+          fr: 'Rafale sonique',
+          tw: '音速突擊',
+          kr: '소닉 블래스트',
+          de: 'Schallwelle',
+          es: 'Estallido sónico'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10',
@@ -898,7 +1042,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Frost Flower Blitz',
-          fr: 'Pétales gelés'
+          fr: 'Pétales gelés',
+          tw: '冰花迅雷',
+          kr: '서리꽃 폭풍',
+          de: 'Eisblumenblitz',
+          es: 'Pétalos helados'
         },
         linearFrames: false,
         framesList: '0-7-5-7-7-7-7',
@@ -917,7 +1065,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Second Intention',
-          fr: 'Seconde intention'
+          fr: 'Seconde intention',
+          tw: '第二意願',
+          kr: '숨겨진 의도',
+          de: 'Plan B',
+          es: 'Segundas intenciones'
         },
         type: 'finish',
         hits: 1,
@@ -945,7 +1097,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tri-Attack',
-          fr: 'Triple-attaque'
+          fr: 'Triple-attaque',
+          tw: '三劍舞',
+          kr: '세 자루의 검',
+          de: 'Dreifachschlag',
+          es: 'Triataque'
         },
         linearFrames: false,
         framesList: '0-4-16-4-16-4',
@@ -957,7 +1113,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tri-Attack +2',
-          fr: 'Triple-attaque +2'
+          fr: 'Triple-attaque +2',
+          tw: '三劍舞 +2',
+          kr: '세 자루의 검 +2',
+          de: 'Dreifachschlag +2',
+          es: 'Triataque +2'
         },
         linearFrames: false,
         framesList: '0-4-6-4-6-4-6-4-6-4-6-4',
@@ -969,7 +1129,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Snowpetal +2',
-          fr: 'Flocon de neige +2'
+          fr: 'Flocon de neige +2',
+          tw: '雪月花 +2',
+          kr: '설월화 +2',
+          de: 'Wintermondblüten +2',
+          es: 'Pétalo de nieve +2'
         },
         type: 'finish',
         hits: 1,
@@ -997,7 +1161,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Commanding Blade',
-          fr: 'Lame du commandant'
+          fr: 'Lame du commandant',
+          tw: '霸道之劍',
+          kr: '패도의 검',
+          de: 'Eindrucksvolle Klinge',
+          es: 'Hoja del comandante'
         },
         linearFrames: false,
         framesList: '0-9-9-9-9-9-9-9',
@@ -1013,7 +1181,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Lightning Stab',
-          fr: 'Décharge sacrée'
+          fr: 'Décharge sacrée',
+          tw: '無雙閃電刺',
+          kr: '무쌍번개 찌르기',
+          de: 'Heiliger Blitz',
+          es: 'Descarga sagrada'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5',
@@ -1025,7 +1197,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Strategic blade',
-          fr: 'Lame du stratège'
+          fr: 'Lame du stratège',
+          tw: '謀略之劍',
+          kr: '함정의 검',
+          de: 'Taktikklinge',
+          es: 'Hoja del estratega'
         },
         type: 'finish',
         hits: 1,
@@ -1056,7 +1232,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Divine Shot',
-          fr: 'Tir divin'
+          fr: 'Tir divin',
+          tw: '聖徒射擊',
+          kr: '성스러운 사격',
+          de: 'Göttlicher Schuss',
+          es: 'Disparo divino'
         },
         linearFrames: false,
         framesList: '0-9-9-9-9-9-9',
@@ -1075,7 +1255,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Saint Buster',
-          fr: 'Casseur céleste'
+          fr: 'Casseur céleste',
+          tw: '神聖破壞',
+          kr: '세인트 버스터',
+          de: 'Heiligenjäger',
+          es: 'Destructor santo'
         },
         type: 'finish',
         hits: 1,
@@ -1103,7 +1287,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Blade of Justice',
-          fr: 'Lame de la justice'
+          fr: 'Lame de la justice',
+          tw: '正義之劍',
+          kr: '영웅의 검',
+          de: 'Klinge der Gerechtigkeit',
+          es: 'Hoja justiciera'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-6-8',
@@ -1130,7 +1318,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Torrential Slash',
-          fr: 'Entaille torrentielle'
+          fr: 'Entaille torrentielle',
+          tw: '前後逆波斬',
+          kr: '전후격파 베기',
+          de: 'Reißender Schnitt',
+          es: 'Tajo torrencial'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10-10-10-10',
@@ -1156,7 +1348,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Patriotic Slash',
-          fr: 'Coup patriotique'
+          fr: 'Coup patriotique',
+          tw: '救國斬閃',
+          kr: '구국의 검광',
+          de: 'Patriotischer Hieb',
+          es: 'Corte patriótico'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10',
@@ -1182,7 +1378,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Mystic Thrust',
-          fr: 'Coup mystique'
+          fr: 'Coup mystique',
+          tw: '神秘衝擊',
+          kr: '마법 찌르기',
+          de: 'Mystischer Stoß',
+          es: 'Estoque místico'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10',
@@ -1208,7 +1408,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Burning Soul',
-          fr: 'Âme ardente'
+          fr: 'Âme ardente',
+          tw: '燃燒之心',
+          kr: '타오르는 마음',
+          de: 'Flammenseele',
+          es: 'Alma candente'
         },
         linearFrames: false,
         framesList: '0-25-25-25-25-25-25-25-25',
@@ -1223,7 +1427,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Winter Storm',
-          fr: 'Avalanche'
+          fr: 'Avalanche',
+          tw: '寒冬風暴',
+          kr: '겨울 폭풍',
+          de: 'Wintersturm',
+          es: 'Tormenta invernal'
         },
         linearFrames: false,
         framesList: '0-13-13-13-13-13-13-13-13',
@@ -1238,7 +1446,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Lightning Rod',
-          fr: 'Flash'
+          fr: 'Flash',
+          tw: '閃電箭',
+          kr: '라이트닝 볼트',
+          de: 'Blitzableiter',
+          es: 'Rayos fulminantes'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5-5',
@@ -1253,7 +1465,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tidal Wave',
-          fr: 'Tsunami'
+          fr: 'Tsunami',
+          tw: '大海嘯',
+          kr: '해일',
+          de: 'Flutwelle',
+          es: 'Ola sísmica'
         },
         linearFrames: false,
         framesList: '0-9-9-9-9-9-9-9-9',
@@ -1268,7 +1484,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tidal Wave +2 (JP Only)',
-          fr: 'Tsunami +2 (JP Seulement)'
+          fr: 'Tsunami +2 (JP Seulement)',
+          tw: '大海嘯 +2 (JP Only)',
+          kr: '해일 +2 (JP Only)',
+          de: 'Flutwelle +2 (JP Only)',
+          es: 'Ola sísmica +2 (JP Only)'
         },
         linearFrames: false,
         framesList: '0-12-12-12-12-12-12-12-12-12-12-12',
@@ -1297,7 +1517,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Ultima +2 (JP Only)',
-          fr: 'Ultima +2 (JP Seulement)'
+          fr: 'Ultima +2 (JP Seulement)',
+          tw: '究極 +2 (JP Only)',
+          kr: '알테마 +2 (JP Only)',
+          de: 'Ultima +2 (JP Only)',
+          es: 'Artema +2 (JP Only)'
         },
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -1310,8 +1534,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Utopia (max)',
-          fr: 'Utopie (max)'
+          en: 'Utopia',
+          fr: 'Utopie',
+          tw: '烏托邦',
+          kr: '유토피아',
+          de: 'Utopia',
+          es: 'Utopía'
         },
         type: 'finish',
         hits: 1,
@@ -1343,7 +1571,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Prismatic Flash',
-          fr: 'Prisme arc-en-ciel'
+          fr: 'Prisme arc-en-ciel',
+          tw: '七色閃光',
+          kr: '세븐플래시',
+          de: 'Prismatischer Blitz',
+          es: 'Multiflash'
         },
         base: 180,
         linearFrames: false,
@@ -1355,7 +1587,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Red Card',
-          fr: 'Carte sanglante'
+          fr: 'Carte sanglante',
+          tw: '血色飛牌',
+          kr: '레드 카드',
+          de: 'Rote Karte',
+          es: 'Carta roja'
         },
         linearFrames: false,
         framesList: '0-3-3-3-3-3-3-3-3-3',
@@ -1367,7 +1603,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Double Dice',
-          fr: 'Double dés'
+          fr: 'Double dés',
+          tw: '雙重骰子',
+          kr: '더블 주사위',
+          de: 'Doppelwürfel',
+          es: 'Dado doble'
         },
         type: 'finish',
         hits: 1,
@@ -1394,7 +1634,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tornado',
-          fr: 'Tornade'
+          fr: 'Tornade',
+          tw: '龍捲風',
+          kr: '토네이도',
+          de: 'Tornado',
+          es: 'Tornado'
         },
         linearFrames: false,
         framesList: '0-12-12-12-12-12-12-12-12-12-12-12',
@@ -1427,7 +1671,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Chaos Wave',
-          fr: 'Onde chaotique'
+          fr: 'Onde chaotique',
+          tw: '混沌波動',
+          kr: '혼돈의 파동',
+          de: 'Chaoswelle',
+          es: 'Ola caótica'
         },
         linearFrames: false,
         framesList: '0-20-20-20-20',
@@ -1442,7 +1690,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Chaos Wave Awakened +2',
-          fr: 'Onde chaotique - Év. +2'
+          fr: 'Onde chaotique - Év. +2',
+          tw: '覺醒混沌波動 +2',
+          kr: '각성·혼돈의 파동 +2',
+          de: 'Chaoswelle erwacht +2',
+          es: 'Ola caótica - Haz +2'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8-8-8',
@@ -1456,7 +1708,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Ultima +2',
-          fr: 'Ultima +2'
+          fr: 'Ultima +2',
+          tw: '究極 +2',
+          kr: '알테마 +2',
+          de: 'Ultima +2',
+          es: 'Artema +2'
         },
         linearFrames: false,
         framesList: '0-37-38-37-38-38-37',
@@ -1485,6 +1741,10 @@ export const UNITS: any[] = [
         names: {
           en: 'Assault Strike',
           fr: 'Violent assaut',
+          tw: '突擊強襲',
+          kr: '강습 타격',
+          de: 'Angriffsschlag',
+          es: 'Golpe asaltador'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8',
@@ -1497,6 +1757,10 @@ export const UNITS: any[] = [
         names: {
           en: 'Assault Strike +2 (JP Only)',
           fr: 'Violent assaut +2 (JP Seulement)',
+          tw: '突擊強襲 +2 (JP Only)',
+          kr: '강습 타격 +2 (JP Only)',
+          de: 'Angriffsschlag +2 (JP Only)',
+          es: 'Golpe asaltador +2 (JP Only)'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8',
@@ -1522,7 +1786,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Flare Ride+',
-          fr: 'Galop enflammé +'
+          fr: 'Galop enflammé +',
+          tw: '焰光斬·改',
+          kr: '강화 플레어 라이드',
+          de: 'Flammenritt Plus',
+          es: 'Galope flamígero +'
         },
         linearFrames: false,
         framesList: '0-10-10-10-78',
@@ -1534,7 +1802,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Supreme Blaze',
-          fr: 'Explosion suprême'
+          fr: 'Explosion suprême',
+          tw: '霸神之爆炎',
+          kr: '패신의 폭염',
+          de: 'Meisterlohe',
+          es: 'Ardor supremo'
         },
         type: 'finish',
         hits: 1,
@@ -1564,8 +1836,12 @@ export const UNITS: any[] = [
     abilities: [
       {
         names: {
-          en: 'Overflow (max)',
-          fr: 'Dépassement (max)'
+          en: 'Overflow',
+          fr: 'Dépassement',
+          tw: '溢出',
+          kr: '범람',
+          de: 'Überfluss',
+          es: 'Derrame'
         },
         linearFrames: false,
         framesList: '0-24-24-24-24-24-24-24-24-24',
@@ -1596,7 +1872,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Free Energy',
-          fr: 'Energétik'
+          fr: 'Energétik',
+          tw: '能量解放',
+          kr: '자유로운 힘',
+          de: 'Kostenlose Energie',
+          es: 'Energía libre'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8',
@@ -1608,7 +1888,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Free Energy +2',
-          fr: 'Energétik +2'
+          fr: 'Energétik +2',
+          tw: '能量解放 +2',
+          kr: '자유로운 힘 +2',
+          de: 'Kostenlose Energie +2',
+          es: 'Energía libre +2'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8',
@@ -1620,7 +1904,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Lucky Seven',
-          fr: 'Coudepot'
+          fr: 'Coudepot',
+          tw: '幸運7',
+          kr: '럭키 세븐',
+          de: 'Glückssieben',
+          es: 'Súper 7'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8',
@@ -1646,7 +1934,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Splendor of the Wind',
-          fr: 'Splendeur du vent'
+          fr: 'Splendeur du vent',
+          tw: '風之光輝',
+          kr: '바람의 인도',
+          de: 'Windpracht',
+          es: 'Esplendor de viento'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7',
@@ -1661,7 +1953,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Splendor of the Fire',
-          fr: 'Splendeur du feu'
+          fr: 'Splendeur du feu',
+          tw: '火之光輝',
+          kr: '불꽃의 인도',
+          de: 'Feuerpracht',
+          es: 'Esplendor de fuego'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7',
@@ -1676,7 +1972,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Splendor of the Earth',
-          fr: 'Splendeur de la terre'
+          fr: 'Splendeur de la terre',
+          tw: '土之光輝',
+          kr: '땅의 인도',
+          de: 'Erdpracht',
+          es: 'Esplendor de tierra'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7',
@@ -1691,7 +1991,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Splendor of the Water',
-          fr: 'Splendeur de l\'eau'
+          fr: 'Splendeur de l\'eau',
+          tw: '水之光輝',
+          kr: '물의 인도',
+          de: 'Wasserpracht',
+          es: 'Esplendor de agua'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7',
@@ -1706,7 +2010,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Onion Slice',
-          fr: 'Tranche-oignon'
+          fr: 'Tranche-oignon',
+          tw: '洋蔥刺',
+          kr: '양파 슬라이스',
+          de: 'Zwiebelschnitt',
+          es: 'Corte cebolla'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7',
@@ -1718,7 +2026,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Full Speed Bladeblitz',
-          fr: 'Lame éclair rapide'
+          fr: 'Lame éclair rapide',
+          tw: '全速全斬',
+          kr: '전속 전방위 베기',
+          de: 'Voller Klingenblitz',
+          es: 'Tormenta de acero'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7',
@@ -1746,8 +2058,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'TMR - Onion Cutter',
-          fr: 'TMR - Coupe-oignon'
+          en: 'Onion Cutter',
+          fr: 'Coupe-oignon',
+          tw: '洋蔥斬',
+          kr: '양파 칼날',
+          de: 'Zwiebelschneider',
+          es: 'Cortador cebolla'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7',
@@ -1773,7 +2089,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Heavy Stomp',
-          fr: 'Piétinement'
+          fr: 'Piétinement',
+          tw: '沉重印章',
+          kr: '무거운 발구르기',
+          de: 'Schwerer Stampfer',
+          es: 'Pisotón fuerte'
         },
         type: 'finish',
         hits: 1,
@@ -1787,7 +2107,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Full Charge Stomp',
-          fr: 'Piétinement maximum'
+          fr: 'Piétinement maximum',
+          tw: '超蓄力印章',
+          kr: '전력 발구르기',
+          de: 'Voller Stampfer',
+          es: 'Pisotón total'
         },
         type: 'finish',
         hits: 1,
@@ -1815,7 +2139,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Devastate +2',
-          fr: 'Dévastation +2'
+          fr: 'Dévastation +2',
+          tw: '毀滅之劍',
+          kr: '데바스테이트',
+          de: 'Verwüstung',
+          es: 'Devastador'
         },
         linearFrames: false,
         framesList: '0-26-10-10-30',
@@ -1841,7 +2169,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Raging Fists',
-          fr: 'Poings de colère'
+          fr: 'Poings de colère',
+          tw: '乱擊',
+          kr: '난격',
+          de: 'Fäuste des Zorns',
+          es: 'Puños de la ira'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5-5-5',
@@ -1853,7 +2185,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Prishe Special',
-          fr: 'Spécialité de Prishe'
+          fr: 'Spécialité de Prishe',
+          tw: '普利修特技',
+          kr: '프리쉬 스페셜',
+          de: 'Prishe-Spezial',
+          es: 'Especial de Prishe'
         },
         linearFrames: false,
         framesList: '0-4-4-4-4-4-4-4-4-4-4-4-4-4-4',
@@ -1880,7 +2216,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Kingsglaive',
-          fr: 'Glaive du roi'
+          fr: 'Glaive du roi',
+          tw: '王之劍',
+          kr: '왕의 검',
+          de: 'Königsgleve',
+          es: 'Glaive real'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8',
@@ -1896,7 +2236,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Desperate Blow',
-          fr: 'Attaque désespérée'
+          fr: 'Attaque désespérée',
+          tw: '拼死一擊',
+          kr: '필사의 일격',
+          de: 'Verzweiflungsschlag',
+          es: 'Golpe finiquitador'
         },
         type: 'finish',
         hits: 1,
@@ -1923,7 +2267,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Daybreak Darkness',
-          fr: 'Ténèbres de l\'aube'
+          fr: 'Ténèbres de l\'aube',
+          tw: '拂曉之暗',
+          kr: '새벽의 어둠',
+          de: 'Dunkler Sonnenaufgang',
+          es: 'Oscuridad del ocaso'
         },
         linearFrames: false,
         framesList: '0-9-9-9-9-9-9-9',
@@ -1954,7 +2302,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'R020: Mirage',
-          fr: 'R020: Mirage'
+          fr: 'R020: Mirage',
+          tw: 'R020：幻象',
+          kr: 'R020: 미라쥬',
+          de: 'R020: Illusion',
+          es: 'R020: Espejismo'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10-10',
@@ -1980,7 +2332,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Meteor',
-          fr: 'Météore'
+          fr: 'Météore',
+          tw: '隕石',
+          kr: '메테오',
+          de: 'Meteo',
+          es: 'Meteo'
         },
         type: 'finish',
         hits: 1,
@@ -1995,7 +2351,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Comet',
-          fr: 'Comète'
+          fr: 'Comète',
+          tw: '彗星',
+          kr: '코멧',
+          de: 'Komet',
+          es: 'Cometa'
         },
         type: 'finish',
         hits: 1,
@@ -2009,7 +2369,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Ultima',
-          fr: 'Ultima'
+          fr: 'Ultima',
+          tw: '究極',
+          kr: '알테마',
+          de: 'Ultima',
+          es: 'Artema'
         },
         type: 'finish',
         hits: 1,
@@ -2024,7 +2388,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Stonja',
-          fr: 'Terre max'
+          fr: 'Terre max',
+          tw: '強落石',
+          kr: '스톤쟈',
+          de: 'Terraka',
+          es: 'Piedra+++'
         },
         type: 'finish',
         hits: 1,
@@ -2041,7 +2409,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Aeroja',
-          fr: 'Vent max'
+          fr: 'Vent max',
+          tw: '強勁風',
+          kr: '에어로쟈',
+          de: 'Aeroka',
+          es: 'Aero+++'
         },
         type: 'finish',
         hits: 1,
@@ -2058,7 +2430,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Waterja',
-          fr: 'Eau max'
+          fr: 'Eau max',
+          tw: '強流水',
+          kr: '워터쟈',
+          de: 'Aquaka',
+          es: 'Aqua+++'
         },
         type: 'finish',
         hits: 1,
@@ -2075,7 +2451,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Thundaja',
-          fr: 'Foudre max'
+          fr: 'Foudre max',
+          tw: '強雷電',
+          kr: '선더쟈',
+          de: 'Blitzka',
+          es: 'Electro+++'
         },
         type: 'finish',
         hits: 1,
@@ -2092,7 +2472,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Blizzaja',
-          fr: 'Glace max'
+          fr: 'Glace max',
+          tw: '強暴雪',
+          kr: '블리자쟈',
+          de: 'Eiska',
+          es: 'Hielo+++'
         },
         type: 'finish',
         hits: 1,
@@ -2109,7 +2493,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'firaja',
-          fr: 'Feu max'
+          fr: 'Feu max',
+          tw: '強火焰',
+          kr: '파이자',
+          de: 'Feuka',
+          es: 'Piro+++'
         },
         type: 'finish',
         hits: 1,
@@ -2140,7 +2528,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Alluring Chorus',
-          fr: 'Chœur envoûtant'
+          fr: 'Chœur envoûtant',
+          tw: '魅惑合唱',
+          kr: '매혹적인 코러스',
+          de: 'Verführerischer Refrain',
+          es: 'Coro seductor'
         },
         linearFrames: false,
         framesList: '0-7-7-8-8-16-8',
@@ -2169,7 +2561,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Roundhouse Kick',
-          fr: 'Coup de pied retourné'
+          fr: 'Coup de pied retourné',
+          tw: '迴旋踢',
+          kr: '돌려차기',
+          de: 'Roundhouse-Kick',
+          es: 'Patada giratoria'
         },
         type: 'finish',
         hits: 1,
@@ -2196,7 +2592,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Cube Explosion - Large',
-          fr: 'Explosion cubique - Grande'
+          fr: 'Explosion cubique - Grande',
+          tw: '立方爆破・大',
+          kr: '큐브 파괴·대',
+          de: 'Würfelexplosion - Groß',
+          es: 'Explosión cúbica - Grande'
         },
         type: 'finish',
         hits: 1,
@@ -2223,7 +2623,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Crushing Vice',
-          fr: 'Vice écrasant'
+          fr: 'Vice écrasant',
+          tw: '雙臂重擊',
+          kr: '바이스 크러쉬',
+          de: 'Schraubstock',
+          es: 'Aplastador vicioso'
         },
         type: 'finish',
         hits: 1,
@@ -2250,7 +2654,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Destiny',
-          fr: 'Destinée'
+          fr: 'Destinée',
+          tw: '命運',
+          kr: '데스티니',
+          de: 'Schicksal',
+          es: 'Destino'
         },
         type: 'finish',
         hits: 1,
@@ -2281,7 +2689,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Ultimate Blow',
-          fr: 'Souffle ultime'
+          fr: 'Souffle ultime',
+          tw: '究極一擊',
+          kr: '궁극의  강타',
+          de: 'Ultimativer Schlag',
+          es: 'Golpe supremo'
         },
         type: 'finish',
         hits: 1,
@@ -2309,7 +2721,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Best Shot',
-          fr: 'Superbe tir'
+          fr: 'Superbe tir',
+          tw: '準確射擊',
+          kr: '최고의 사격',
+          de: 'Bester Schuss',
+          es: 'Tiro superbio'
         },
         type: 'finish',
         hits: 1,
@@ -2336,7 +2752,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Word of Law',
-          fr: 'Mot de la loi'
+          fr: 'Mot de la loi',
+          tw: '法令',
+          kr: '법전의 말씀',
+          de: 'Wort des Gesetzes',
+          es: 'Palabra de ley'
         },
         type: 'finish',
         hits: 1,
@@ -2369,7 +2789,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Cut Through +2',
-          fr: 'Trancher +2'
+          fr: 'Trancher +2',
+          tw: '斬殺 +2',
+          kr: '깊이 베기 +2',
+          de: 'Dreindreschen +2',
+          es: 'Descuartizar +2'
         },
         type: 'finish',
         hits: 1,
@@ -2397,7 +2821,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Destroy Arm +2',
-          fr: 'Détruire arme +2'
+          fr: 'Détruire arme +2',
+          tw: '毀滅臂鎧',
+          kr: '파괴의 무기',
+          de: 'Armzerstörer',
+          es: 'Destruir arma'
         },
         type: 'finish',
         hits: 1,
@@ -2424,8 +2852,12 @@ export const UNITS: any[] = [
     abilities: [
       {
         names: {
-          en: 'Dagger Boomerang (max)',
-          fr: 'Dague boomerang (max)'
+          en: 'Dagger Boomerang',
+          fr: 'Dague boomerang',
+          tw: '迴旋匕首',
+          kr: '부메랑 대거',
+          de: 'Dolchbumerang',
+          es: 'Dagas bumerán'
         },
         type: 'finish',
         hits: 1,
@@ -2451,8 +2883,12 @@ export const UNITS: any[] = [
     abilities: [
       {
         names: {
-          en: 'Blood Pulsar (max)',
-          fr: 'Pulsar de sang (max)'
+          en: 'Blood Pulsar',
+          fr: 'Pulsar de sang',
+          tw: '血色脈衝',
+          kr: '피의 펄서',
+          de: 'Blutpulsar',
+          es: 'Pulso sangriento'
         },
         type: 'finish',
         hits: 1,
@@ -2466,7 +2902,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Blood Rend',
-          fr: 'Déchirure sanglante'
+          fr: 'Déchirure sanglante',
+          tw: '血色撕裂',
+          kr: '피의 열파',
+          de: 'Blutriss',
+          es: 'Hemorragia sangrienta'
         },
         type: 'finish',
         hits: 1,
@@ -2497,7 +2937,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Into Darkness',
-          fr: 'Obscurité sans fin'
+          fr: 'Obscurité sans fin',
+          tw: '黑暗降臨',
+          kr: '어둠 속으로',
+          de: 'Ins Dunkel',
+          es: 'Oscuridad profunda'
         },
         type: 'finish',
         hits: 1,
@@ -2527,7 +2971,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'True Shot',
-          fr: 'Tir sérieux'
+          fr: 'Tir sérieux',
+          tw: '精準射擊',
+          kr: '진실의 포탄',
+          de: 'Wahrer Schuss',
+          es: 'Disparo verdadero'
         },
         type: 'finish',
         hits: 1,
@@ -2556,7 +3004,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Starfall',
-          fr: 'Météorite'
+          fr: 'Météorite',
+          tw: '隕星',
+          kr: '운석',
+          de: 'Sternenbruch',
+          es: 'Meteorito'
         },
         type: 'finish',
         hits: 1,
@@ -2571,8 +3023,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Fire From Below (max)',
-          fr: 'Feu de l\'Enfer (max)'
+          en: 'Fire From Below',
+          fr: 'Feu de l\'Enfer',
+          tw: '地獄業火',
+          kr: '지옥의 업화',
+          de: 'Feuer von unten',
+          es: 'Fuego del averno'
         },
         type: 'finish',
         hits: 1,
@@ -2589,8 +3045,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Fire From Below +2 (max)',
-          fr: 'Feu de l\'Enfer +2 (max)'
+          en: 'Fire From Below +2',
+          fr: 'Feu de l\'Enfer +2',
+          tw: '地獄業火 +2',
+          kr: '지옥의 업화 +2',
+          de: 'Feuer von unten +2',
+          es: 'Fuego del averno +2'
         },
         type: 'finish',
         hits: 1,
@@ -2625,7 +3085,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Soul Eater +2',
-          fr: 'Mangeur d\'âme +2'
+          fr: 'Mangeur d\'âme +2',
+          tw: '噬魂 +2',
+          kr: '영혼 포식자 +2',
+          de: 'Seelenfresser +2',
+          es: 'Devora almas +2'
         },
         type: 'finish',
         hits: 1,
@@ -2658,7 +3122,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Abyssal Blade +2',
-          fr: 'Lame abyssale +2'
+          fr: 'Lame abyssale +2',
+          tw: '罪惡斬',
+          kr: '악마의 검',
+          de: 'Abyssklinge',
+          es: 'Hoja abisal'
         },
         type: 'finish',
         hits: 1,
@@ -2688,7 +3156,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Light of Judgment +2',
-          fr: 'Lumière du jugement +2'
+          fr: 'Lumière du jugement +2',
+          tw: '制裁之光',
+          kr: '심판의 빛',
+          de: 'Licht des Urteils',
+          es: 'Luz de juicio'
         },
         type: 'finish',
         hits: 1,
@@ -2718,7 +3190,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Wind Shear +2',
-          fr: 'Tranche-vent +2'
+          fr: 'Tranche-vent +2',
+          tw: '旋風斬',
+          kr: '선풍참',
+          de: 'Windschneide',
+          es: 'Tajo de viento'
         },
         type: 'finish',
         hits: 1,
@@ -2746,7 +3222,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Firm Punch',
-          fr: 'Poing ferme'
+          fr: 'Poing ferme',
+          tw: '剛拳',
+          kr: '강권',
+          de: 'Solider Schlag',
+          es: 'Puñetazo firme'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10',
@@ -2758,7 +3238,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Light Kick',
-          fr: 'Coup de pied léger'
+          fr: 'Coup de pied léger',
+          tw: '柔腳',
+          kr: '유격',
+          de: 'Weicher Tritt',
+          es: 'Patada suave'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10',
@@ -2770,7 +3254,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Wolfclaw Fist',
-          fr: 'Poings croc-de-loup'
+          fr: 'Poings croc-de-loup',
+          tw: '狼剛拳',
+          kr: '늑대의 강권',
+          de: 'Wolfsklauenfaust',
+          es: 'Puño garra de lobo'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10-10',
@@ -2782,7 +3270,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Falcon Kick',
-          fr: 'Coup de pied du Faucon'
+          fr: 'Coup de pied du Faucon',
+          tw: '鷹柔腳',
+          kr: '매의 유격',
+          de: 'Falkentritt',
+          es: 'Patada halcón'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10-10',
@@ -2794,7 +3286,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tigerclaw Fist',
-          fr: 'Poings croc-de-tigre'
+          fr: 'Poings croc-de-tigre',
+          tw: '虎剛拳',
+          kr: '호랑이의 강권',
+          de: 'Tigerklauenfaust',
+          es: 'Puño garra de tigre'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8-8-8',
@@ -2806,7 +3302,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Dragon Kick',
-          fr: 'Coup de pied du Dragon'
+          fr: 'Coup de pied du Dragon',
+          tw: '龍柔腳',
+          kr: '용의 유격',
+          de: 'Drachentritt',
+          es: 'Patada dragón'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8-8-8',
@@ -2916,7 +3416,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Grim - Soul Barrage',
-          fr: 'Obscurité - Barrage spectral'
+          fr: 'Obscurité - Barrage spectral',
+          tw: '冷血 - 靈魂彈幕',
+          kr: '사신·영혼 난사',
+          de: 'Grimm - Seelensperre',
+          es: 'Parca - Ráfaga de alma'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10-10-10-10-10-10',
@@ -2930,7 +3434,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Grim - Eldritch Flames',
-          fr: 'Obscurité - Flammes surnaturelles'
+          fr: 'Obscurité - Flammes surnaturelles',
+          tw: '冷血 - 鬼火',
+          kr: '사신·오싹한 불꽃',
+          de: 'Grimm - Unirdische Flammen',
+          es: 'Parca - Llama de Eldritch'
         },
         linearFrames: false,
         framesList: '0-10-10-10-10',
@@ -2983,7 +3491,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Feed the Fishes',
-          fr: 'Nourrissez les poissons'
+          fr: 'Nourrissez les poissons',
+          tw: '餵魚',
+          kr: '물고기 밥',
+          de: 'Macht sie zu Fischfutter!',
+          es: 'Echadlo a los peces'
         },
         linearFrames: false,
         framesList: '0-5-5-5-5-5',
@@ -3035,7 +3547,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Illusion - Phantasmal Forces',
-          fr: 'Illusion - Forces fantasmagorique'
+          fr: 'Illusion - Forces fantasmagorique',
+          tw: '幻術 - 幻影力量',
+          kr: '마술·환영의 위력',
+          de: 'Illusion - Phantasmagorische Kräfte',
+          es: 'Ilusión - Fuerzas fantasmales'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8',
@@ -3062,7 +3578,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Lunatic Voice (2)',
-          fr: 'Voix ensorcelante (2)'
+          fr: 'Voix ensorcelante (2)',
+          tw: '狂迷之聲 (2)',
+          kr: '광기의 노래 (2)',
+          de: 'Wahnstimme (2)',
+          es: 'Voz lunática (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3095,7 +3615,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Hellfire (2)',
-          fr: 'Flammes de l\'enfer (2)'
+          fr: 'Flammes de l\'enfer (2)',
+          tw: '地獄火焰 (2)',
+          kr: '지옥의 화염 (2)',
+          de: 'Inferno (2)',
+          es: 'Fuego infernal (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3128,7 +3652,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Diamond Dust (2)',
-          fr: 'Poussière de diamant (2)'
+          fr: 'Poussière de diamant (2)',
+          tw: '鑽石星塵 (2)',
+          kr: '다이아몬드 더스트 (2)',
+          de: 'Diamantstaub (2)',
+          es: 'Polvo de diamantes (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3161,7 +3689,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Dark Messenger (2)',
-          fr: 'Héraut ténébreux (2)'
+          fr: 'Héraut ténébreux (2)',
+          tw: '黑暗使者 (2)',
+          kr: '어둠에서 온 사자 (2)',
+          de: 'Dunkler Bote (2)',
+          es: 'Emisario de la noche (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3194,7 +3726,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Judgment Bolt (2)',
-          fr: 'Foudre du jugement (2)'
+          fr: 'Foudre du jugement (2)',
+          tw: '制裁之雷 (2)',
+          kr: '심판의 벼락 (2)',
+          de: 'Ionenschlag (2)',
+          es: 'Rayos de justicia (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3227,7 +3763,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Gaia\'s Wrath (2)',
-          fr: 'Colère de Gaïa (2)'
+          fr: 'Colère de Gaïa (2)',
+          tw: '大地之怒 (2)',
+          kr: '대지의 분노 (2)',
+          de: 'Gaias Wut (2)',
+          es: 'Ira de la tierra (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3260,7 +3800,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Heavenswind (2)',
-          fr: 'Vent céleste (2)'
+          fr: 'Vent céleste (2)',
+          tw: '四天之風 (2)',
+          kr: '사천의 바람 (2)',
+          de: 'Himmelswind (2)',
+          es: 'Viento celestial (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3293,7 +3837,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Gungnir (2)',
-          fr: 'Gungnir (2)'
+          fr: 'Gungnir (2)',
+          tw: '奧汀神槍 (2)',
+          kr: '궁니르 (2)',
+          de: 'Gungnir (2)',
+          es: 'Gungnir (2)'
         },
         type: 'finish',
         hits: 1,
@@ -3323,7 +3871,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Megaflare (1)',
-          fr: 'MégaBrasier (1)'
+          fr: 'MégaBrasier (1)',
+          tw: '百萬核爆 (1)',
+          kr: '메가플레어 (1)',
+          de: 'Megaflamme (1)',
+          es: 'Megafulgor (1)'
         },
         type: 'finish',
         hits: 1,
@@ -3353,7 +3905,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Swiftwind Blade',
-          fr: 'Lame oscillante'
+          fr: 'Lame oscillante',
+          tw: '疾風之劍',
+          kr: '질풍의 검',
+          de: 'Sturmwindklinge',
+          es: 'Cuchilla veloz'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7-7-7',
@@ -3368,7 +3924,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Greased Lightning',
-          fr: 'Éclair supersonique'
+          fr: 'Éclair supersonique',
+          tw: '疾風迅雷',
+          kr: '질풍신뢰',
+          de: 'Geölter Blitz',
+          es: 'Tormenta huracanada'
         },
         linearFrames: false,
         framesList: '0-7-7-7-7-7-7-7',
@@ -3381,7 +3941,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Blade Prison',
-          fr: 'Prison de lames'
+          fr: 'Prison de lames',
+          tw: '劍獄',
+          kr: '검의 감옥',
+          de: 'Klingengefängnis',
+          es: 'Prisión de cuchillas'
         },
         linearFrames: false,
         framesList: '0-8-8-8-8-8-8-8-8-8',
@@ -3394,7 +3958,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Quickbolt Blade',
-          fr: 'Lame'
+          fr: 'Lame flashfoudre',
+          tw: '迅雷之劍',
+          kr: '신뢰의 검',
+          de: 'Donnerschlagklinge',
+          es: 'Cuchilla centella'
         },
         type: 'finish',
         hits: 1,
@@ -3446,7 +4014,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Tornado',
-          fr: 'Tornade'
+          fr: 'Tornade',
+          tw: '龍捲風',
+          kr: '토네이도',
+          de: 'Tornado',
+          es: 'Tornado'
         },
         linearFrames: false,
         framesList: '0-12-12-12-12-12-12-12-12-12-12-12',
@@ -3465,7 +4037,11 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Sunder',
-          fr: 'Bourrasque électrique'
+          fr: 'Bourrasque électrique',
+          tw: '斬斷',
+          kr: '천둥',
+          de: 'Blitzwind',
+          es: 'Arrasar'
         },
         type: 'finish',
         hits: 1,

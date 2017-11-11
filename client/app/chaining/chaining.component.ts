@@ -68,6 +68,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     theme: 'bootstrap'
   }
 
+  labels = {
+    units: 'Units',
+    myunits: 'My Units'
+  }
+
   constructor(
     private unitService: UnitService,
     private chainService: ChainService,
@@ -83,9 +88,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.getTranslation();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.reloadList();
       this.getTranslation();
       this.getElements();
+      this.reloadList();
     });
   }
 
@@ -123,6 +128,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.multiElementsTexts = {
         defaultTitle: res
       };
+    });
+
+    this.translateService.get('chain.label.units').subscribe((res: string) => {
+      this.labels.units = res;
+    });
+
+    this.translateService.get('chain.label.my-units').subscribe((res: string) => {
+      this.labels.myunits = res;
     });
   }
 
@@ -222,17 +235,17 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.observableUnits = [
       {
         id: 'unselect',
-        text: 'Units',
+        text: this.labels.units,
         children: []
       },
       {
         id: '0',
-        text: 'Units',
+        text: this.labels.units,
         children: []
       },
       {
         id: '0',
-        text: 'My Units',
+        text: this.labels.myunits,
         children: []
       }
     ];

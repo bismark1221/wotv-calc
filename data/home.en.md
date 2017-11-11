@@ -11,8 +11,11 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+11/11/2017
+ - Translation for Taiwan (traditional chinese) thanks to [/u/GiveMeZidane]
+
 10/11/2017
- - Add Barbariccia
+ - Barbariccia the new waifu is here
 
 01/11/2017
  - Add Loren
@@ -63,3 +66,4 @@ Big thanks to the following people for all their hard work that help me to build
 [/u/Nazta]: https://www.reddit.com/user/Nazta
 [/u/Cyanjet]: https://www.reddit.com/user/Cyanjet
 [/u/Solaris]: https://www.reddit.com/user/__solaris__
+[/u/GiveMeZidane]: https://dm.reddit.com/user/GiveMeZidane

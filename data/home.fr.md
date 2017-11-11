@@ -11,8 +11,11 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+11/11/2017
+ - Traduction pour Taiwan (Chinois traditionnel) un grand merci à [/u/GiveMeZidane]
+
 10/11/2017
- - Ajout de Barbariccia
+ - Barbariccia notre nouvelle waifu exclu est là
 
 01/11/2017
  - Ajout de Loren
@@ -63,3 +66,4 @@ Un grand merci à tous ceux sans qui ce site n'aurait surement jamais vu le jour
 [/u/Nazta]: https://www.reddit.com/user/Nazta
 [/u/Cyanjet]: https://www.reddit.com/user/Cyanjet
 [/u/Solaris]: https://www.reddit.com/user/__solaris__
+[/u/GiveMeZidane]: https://dm.reddit.com/user/GiveMeZidane

@@ -2,7 +2,7 @@
   <div class="how-to" #HowToDiv>
     <h1 class="title">{{ 'how-to.title' | translate }}</h1>
 
-    <markdown *ngIf="lang == 'en'">
+    <markdown *ngIf="lang != 'fr'">
 ### Chains
 
 #### How does the game work ?
@@ -70,7 +70,7 @@ Voici donc un tableau qui récapitule le nombre de coup nécessaire pour atteind
 
     <img src="../../assets/how-to/ffbe_chain_modifier.png" alt="chain modifier" title="Chain Modifier" class="img-thumbnail pointer" (click)="open('../../assets/how-to/ffbe_chain_modifier.png')">
 
-    <markdown *ngIf="lang == 'en'">
+    <markdown *ngIf="lang != 'fr'">
 #### Break a chain
 There is 2 way to break a chain
  - An unit hit twice in a row
@@ -158,7 +158,7 @@ Du coup la théorie voudrais le schéma suivant
 
     <img src="../../assets/how-to/fake_quick_hit.png" alt="fake tidus quick hit" title="Fake Quick Hit" class="img-thumbnail pointer" (click)="open('../../assets/how-to/fake_quick_hit.png')">
 
-    <markdown *ngIf="lang == 'en'">
+    <markdown *ngIf="lang != 'fr'">
 Unfortunately is not so simple... Thank to Whaat on reddit, we have discover that some abilities have an extra delay, named offset, but this data is not on the data files... ([Multi-Hit Chain Reference/Hit Data] and [frame delays on dualhit])
 
 For the Quick Hit, we have find that the offset is 16 frames, so here are the real data for Tidus
@@ -182,7 +182,7 @@ Pour l'Attaque éclair de Tidus on a donc découvert qu'il avait donc un offset 
 
     <img src="../../assets/how-to/real_quick_hit.png" alt="real tidus quick hit" title="Real Quick Hit" class="img-thumbnail pointer" (click)="open('../../assets/how-to/real_quick_hit.png')">
 
-    <markdown *ngIf="lang == 'en'">
+    <markdown *ngIf="lang != 'fr'">
 Like you can see, the 2nd spell start before the ending of the first one, it's the case for lot of units
 
 Here is the case of Orlandeau who "wait" for his first spell to finish before launching the 2nd one
@@ -196,7 +196,7 @@ Voici le cas d'Orlandeau qui "attend" la fin de son premier sort avant de lancer
 
     <img src="../../assets/how-to/orlandeau.png" alt="orlandeau" title="Chain Orlandeau" class="img-thumbnail pointer" (click)="open('../../assets/how-to/orlandeau.png')">
 
-    <markdown *ngIf="lang == 'en'">
+    <markdown *ngIf="lang != 'fr'">
 #### What is a spark ?
 A spark combo is when 2 units hit on the same frame, be careful only 1 of the 2 hit is concidered as a spark
 
@@ -234,7 +234,7 @@ Mais ne vous en faites pas sur le site cette problématique est déjà prise en 
 
     <img src="../../assets/how-to/tidus_pirate_jake.png" alt="chain tidus and pirate jake" title="Chain Tidus and Pirate Jake" class="img-thumbnail pointer" (click)="open('../../assets/how-to/tidus_pirate_jake.png')">
 
-    <markdown *ngIf="lang == 'en'">
+    <markdown *ngIf="lang != 'fr'">
 ##### Macros
 I will not explain here how to use macro on your emulators because there is already lot a pretty good tutorials
 
