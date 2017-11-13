@@ -1031,7 +1031,7 @@ export const UNITS: any[] = [
     id: 18,
     names: {
       en: 'Fryevia',
-      fr: 'Freyja',
+      fr: 'Fryevia',
       tw: '弗雷比亞',
       kr: '프레이비아',
       de: 'Fryevia',
