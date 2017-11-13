@@ -1032,10 +1032,10 @@ export const UNITS: any[] = [
     names: {
       en: 'Fryevia',
       fr: 'Freyja',
-      tw: '芙萊雅',
-      kr: '프레이야',
-      de: 'Freya',
-      es: 'Freija'
+      tw: '弗雷比亞',
+      kr: '프레이비아',
+      de: 'Fryevia',
+      es: 'Fryevia'
     },
     type: 'chain',
     abilities: [
