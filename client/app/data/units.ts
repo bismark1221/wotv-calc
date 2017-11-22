@@ -4085,4 +4085,34 @@ export const UNITS: any[] = [
       }
     ]
   },
+  {
+    id: 80,
+    names: {
+      en: 'Cor',
+      tw: '柯爾',
+      kr: '코르',
+      fr: 'Cor',
+      de: 'Cor',
+      es: 'Cor'
+    },
+    type: 'chain',
+    abilities: [
+      {
+        names: {
+          en: 'Slaughtering Blade',
+          tw: '斬瞬刀',
+          kr: '참순도',
+          fr: 'Lame sanguinaire',
+          de: 'Schlachtklinge',
+          es: 'Hoja sanguinaria'
+        },
+        linearFrames: false,
+        framesList: '0-8-8-8-8-8-8-8',
+        firstHit: 0,
+        castTime: 0,
+        offset: 60,
+        base: 280
+      },
+    ]
+  }
 ];
