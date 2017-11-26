@@ -4114,5 +4114,130 @@ export const UNITS: any[] = [
         base: 280
       },
     ]
+  },
+  {
+    id: 81,
+    names: {
+      en: 'Noctis',
+      tw: '諾克提斯',
+      kr: '녹티스',
+      fr: 'Noctis',
+      de: 'Noctis',
+      es: 'Noctis'
+    },
+    type: 'chain',
+    abilities: [
+      {
+        names: {
+          en: 'Warp Strike',
+          tw: '變移破解',
+          kr: '시프트 브레이크',
+          fr: 'Assaut éclipse',
+          de: 'Warp-Angriff',
+          es: 'Lux Impetus'
+        },
+        linearFrames: false,
+        framesList: '0-22-13',
+        firstHit: 52,
+        castTime: 50,
+        offset: 16,
+        base: 250,
+        ignore: 50
+      },
+      {
+        names: {
+          en: 'Point-Blank Warp-Strike',
+          tw: '零距離變移破解',
+          kr: '영거리 시프트 브레이크',
+          fr: 'Assauts éclipse critiques',
+          de: 'Direkt-Warp',
+          es: 'Quemarropa'
+        },
+        linearFrames: false,
+        framesList: '0-22-13',
+        firstHit: 52,
+        castTime: 50,
+        offset: 16,
+        base: 525,
+        ignore: 50
+      },
+      {
+        names: {
+          en: 'Thunder Flask',
+          tw: '雷電瓶',
+          kr: '선더 보틀',
+          fr: 'Sphère de foudre',
+          de: 'Donnerflasche',
+          es: 'Vial Electro'
+        },
+        linearFrames: false,
+        framesList: '0',
+        firstHit: 80,
+        castTime: 40,
+        offset: 16,
+        base: 400,
+        damage: 'hybrid',
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        names: {
+          en: 'Blizzard Flask',
+          tw: '暴雪瓶',
+          kr: '블리자드 보틀',
+          fr: 'Sphère de glace',
+          de: 'Schneesturmflasche',
+          es: 'Vial Hielo'
+        },
+        linearFrames: false,
+        framesList: '0',
+        firstHit: 145,
+        castTime: 40,
+        offset: 16,
+        base: 400,
+        damage: 'hybrid',
+        elements: [
+          'ice'
+        ]
+      },
+      {
+        names: {
+          en: 'Fire Flask',
+          tw: '火焰瓶',
+          kr: '파이어 보틀',
+          fr: 'Sphère de feu',
+          de: 'Molotowcocktail',
+          es: 'Vial Piro'
+        },
+        linearFrames: false,
+        framesList: '0',
+        firstHit: 95,
+        castTime: 40,
+        offset: 16,
+        base: 400,
+        damage: 'hybrid',
+        elements: [
+          'fire'
+        ]
+      },
+      {
+        names: {
+          en: 'Armiger',
+          tw: '幻影劍',
+          kr: '팬텀 소드',
+          fr: 'Arsenal fantôme',
+          de: 'Armiger',
+          es: 'Coro espectral'
+        },
+        linearFrames: false,
+        framesList: '0-5-11-42-50',
+        firstHit: 121,
+        castTime: 0,
+        offset: 0,
+        base: 1480,
+        dualable: false
+      },
+    ]
   }
 ];
