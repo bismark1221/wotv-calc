@@ -10,7 +10,7 @@ import { UnitService } from '../services/unit.service'
 
 export class HomeComponent {
   markdown = '';
-  updated = [81,80];
+  updated = [82, 81, 80];
   units = [];
 
   constructor(

@@ -4140,7 +4140,7 @@ export const UNITS: any[] = [
         framesList: '0-22-13',
         firstHit: 52,
         castTime: 50,
-        offset: 16,
+        offset: 60,
         base: 250,
         ignore: 50
       },
@@ -4157,7 +4157,7 @@ export const UNITS: any[] = [
         framesList: '0-22-13',
         firstHit: 52,
         castTime: 50,
-        offset: 16,
+        offset: 60,
         base: 525,
         ignore: 50
       },
@@ -4177,6 +4177,7 @@ export const UNITS: any[] = [
         offset: 16,
         base: 400,
         damage: 'hybrid',
+        type: 'finish',
         elements: [
           'lightning'
         ]
@@ -4197,6 +4198,7 @@ export const UNITS: any[] = [
         offset: 16,
         base: 400,
         damage: 'hybrid',
+        type: 'finish',
         elements: [
           'ice'
         ]
@@ -4217,6 +4219,7 @@ export const UNITS: any[] = [
         offset: 16,
         base: 400,
         damage: 'hybrid',
+        type: 'finish',
         elements: [
           'fire'
         ]
@@ -4236,6 +4239,61 @@ export const UNITS: any[] = [
         castTime: 0,
         offset: 0,
         base: 1480,
+        dualable: false
+      },
+    ]
+  },
+  {
+    id: 82,
+    names: {
+      en: 'Duke',
+      tw: '杜克',
+      kr: '듀크',
+      fr: 'Duke',
+      de: 'Duke',
+      es: 'Duke'
+    },
+    type: 'chain',
+    abilities: [
+      {
+        names: {
+          en: 'Hexa Thrust',
+          tw: '六角突擊',
+          kr: '헥사 드러스트',
+          fr: 'Hexaestoque',
+          de: 'Sechserstoß',
+          es: 'Hexaestoque'
+        },
+        linearFrames: false,
+        framesList: '0-6-6-6-6-29',
+        firstHit: 28,
+        castTime: 0,
+        offset: 66,
+        base: 200,
+        ignore: 50,
+        debuff: {
+          ice: 50
+        }
+      },
+      {
+        names: {
+          en: 'Vaskylade',
+          tw: '龍騎槍蛇神突擊',
+          kr: '용의 창 바스킬레이드',
+          fr: 'Vaskylade',
+          de: 'Vaskylade',
+          es: 'Vaskylade'
+        },
+        linearFrames: false,
+        framesList: '0-61-49-10-10',
+        firstHit: 74,
+        castTime: 0,
+        offset: 0,
+        base: 520,
+        ignore: 50,
+        elements: [
+          'ice'
+        ],
         dualable: false
       },
     ]
