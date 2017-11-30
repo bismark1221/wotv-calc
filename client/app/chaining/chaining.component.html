@@ -1,6 +1,6 @@
 <ng-template #options let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <h4 class="modal-title">Unit {{ viewOptions + 1 }} : {{ chain[viewOptions].name | capitalize }}</h4>
+    <h4 class="modal-title">{{ 'chain.label.unit' | translate }} {{ viewOptions + 1 }} : {{ chain[viewOptions].name | capitalize }}</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
