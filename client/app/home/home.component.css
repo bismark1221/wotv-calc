@@ -11,13 +11,10 @@
 }
 
 .updated {
-  float: right;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
   padding: 10px;
   text-align: center;
-  margin-left: 10px;
-  margin-bottom: 10px;
 }
 
 .unitName {
@@ -27,4 +24,15 @@
 .separator {
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+.buy_coffee {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.right_zone {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }

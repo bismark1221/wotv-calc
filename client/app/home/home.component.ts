@@ -9,6 +9,7 @@ import { UnitService } from '../services/unit.service'
 })
 
 export class HomeComponent {
+  lang = 'en';
   markdown = '';
   updated = [82, 81, 80];
   units = [];
@@ -19,7 +20,10 @@ export class HomeComponent {
   ) {
     this.getTranslation();
 
+    this.lang = this.translateService.currentLang;
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.lang = this.translateService.currentLang;
       this.getTranslation();
       this.getUnits();
     });

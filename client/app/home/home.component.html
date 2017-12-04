@@ -2,10 +2,16 @@
   <h1 class="title">{{ 'home.title' | translate }}</h1>
 </div>
 <div class="home">
-  <div class="updated">
-    {{ 'home.last_updated' | translate }}
-    <hr class="separator" />
-    <span class="unitName" *ngFor="let name of units">{{name}}</span>
+  <div class="right_zone">
+    <a href='https://ko-fi.com/M4M464Q7' target='_blank'>
+      <img  *ngIf="lang != 'fr'" class='buy_coffee' src='assets/footer/buy_coffee_en.png' alt='Buy Me a Coffee at ko-fi.com' />
+      <img  *ngIf="lang == 'fr'" class='buy_coffee' src='assets/footer/buy_coffee_fr.png' alt='Buy Me a Coffee at ko-fi.com' />
+    </a>
+    <div class="updated">
+      {{ 'home.last_updated' | translate }}
+      <hr class="separator" />
+      <span class="unitName" *ngFor="let name of units">{{name}}</span>
+    </div>
   </div>
   <markdown [data]="markdown"></markdown>
 </div>

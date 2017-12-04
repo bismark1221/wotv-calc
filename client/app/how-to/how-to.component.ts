@@ -16,10 +16,10 @@ export class HowToComponent {
     private translateService: TranslateService,
     private lightboxService: Lightbox
   ) {
-    this.lang = this.translateService.currentLang
+    this.lang = this.translateService.currentLang;
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.lang = this.translateService.currentLang
+      this.lang = this.translateService.currentLang;
     });
   }
 
