@@ -240,10 +240,6 @@
   display: inline-block;
 }
 
-.blockLinearFrames {
-  text-align: center;
-}
-
 .buttonsAbility {
   display: inline-block;
 }
@@ -308,11 +304,6 @@
   .selectRightZoneMediumBox {
     margin-top: 10px;
     width: 100%;
-  }
-
-  .blockLinearFrames {
-    text-align: left;
-    height: 70px;
   }
 
   [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {

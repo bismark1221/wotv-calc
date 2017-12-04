@@ -37,7 +37,6 @@ import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
 import { ChainBackService } from './services/chain.back.service';
 import { FindBestService } from './services/find-best.service';
-import { LoggerService } from './services/logger.service';
 import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
 
@@ -101,7 +100,6 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     UnitService,
-    LoggerService,
     ChainService,
     ElementsService,
     ChainBackService,

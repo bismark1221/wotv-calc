@@ -552,14 +552,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.findBestService.units[position] = JSON.parse(JSON.stringify(unit));
 
       unit.abilities.forEach(ability => {
-        this.findBestService.units[position].ability = ability;
-        let result = this.findBestService.findBestFrames();
-        chainers.push({
-          unit: unit,
-          ability: ability,
-          frames: result.modifier.frames,
-          modifier: result.modifier.max
-        });
+        if (ability.type === 'chain') {
+          this.findBestService.units[position].ability = ability;
+          let result = this.findBestService.findBestFrames();
+          chainers.push({
+            unit: unit,
+            ability: ability,
+            frames: result.modifier.frames,
+            modifier: result.modifier.max
+          });
+        }
       });
     });
 

@@ -11,35 +11,19 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+04/12/2017
+- La recherche de meilleures unités ne retourne désormais plus que des chaineurs
+
 11/11/2017
  - Traduction pour Taiwan (Chinois traditionnel) un grand merci à [/u/GiveMeZidane]
 
-10/11/2017
- - Barbariccia notre nouvelle waifu exclu est là
-
 01/11/2017
- - Ajout de Loren
  - Nouvelle page pour expliquer le fonctionnement des chaines dans le jeu
  - Modification de l'affichage des options dans le simulateur (cliquez sur l'engrenage)
 
 20/10/2017
  - Si vous voyez cette page en Français c'est que vous avez trouvé le nouvel ajout de choix de langue (français et anglais pour l'instant)
  - Ajout des invocations dans le calculateur
-
-19/10/2017
- - Ajout de Sakura, Seigneur Sombre, de Jake, Pirate et de Nichol, Illusionniste
- - Ajout du Double dés de Setzer (Pour le moment j'ai mis un faux modificateur pour ne pas casser le système, par contre les frames sont correctes ^^)
- - Ajout des abilités améliorées de Terra en Transe et d'Empereur
-
-12/10/2017
- - Ajout du Pod 153 (la récompense de confiance de 9S) en tant qu'unité pour être trouvé plus facilement
- - Ajout de Pluie toxique et d'Alterna (la récompense de confiance de Noctis)
-
-11/10/2017
- - Arrivé des macro :)
- - Memu and Nox sont pris en compte
- - Cependant le résultat en jeu peut être différent du graphique... Lag, certaines données que l'on n'a pas via les fichiers de datamining (offset)
- - N'oubliez pas de ne pas d'accélération dans votre macro
 
 ---
 

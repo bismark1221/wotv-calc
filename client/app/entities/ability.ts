@@ -7,7 +7,6 @@ export class Ability {
   name: string = 'New ability';
   base: number = 0;
 
-  linearFrames?: boolean = true;
   frames?: number = 1;
   framesList?: string = '0';
   castTime?: number = 40;
@@ -27,7 +26,6 @@ export class Ability {
     this.getName(translateService);
     this.base = ability.base;
 
-    this.linearFrames = typeof ability.linearFrames == 'boolean' ? ability.linearFrames : this.linearFrames;
     this.frames = ability.frames ? ability.frames : this.frames;
     this.framesList = ability.framesList ? ability.framesList : this.framesList;
     this.hits = ability.hits ? ability.hits : this.hits;

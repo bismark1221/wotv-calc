@@ -77,32 +77,16 @@ export class ChainService {
     let countFrames = 0 + unit.framesGap;
     let dualCountFrames = unit.ability.offset + unit.ability.castTime + unit.framesGap;
 
-    if (!unit.ability.linearFrames) {
-      unit.ability.framesList.split('-').forEach(hit => {
-        countFrames += Number(hit);
-        unitHits.push({frame: countFrames, type: 'classic'});
-      });
-
-      if (unit.dual && unit.ability.dualable) {
-        unit.ability.framesList.split('-').forEach(hit => {
-          dualCountFrames += Number(hit);
-          unitHits.push({frame: dualCountFrames, type: 'dual'});
-        });
-      }
-    } else {
+    unit.ability.framesList.split('-').forEach(hit => {
+      countFrames += Number(hit);
       unitHits.push({frame: countFrames, type: 'classic'});
-      for (let i = 1; i < unit.ability.hits; i++) {
-        countFrames += unit.ability.frames;
-        unitHits.push({frame: countFrames, type: 'classic'});
-      }
+    });
 
-      if (unit.dual && unit.ability.dualable) {
+    if (unit.dual && unit.ability.dualable) {
+      unit.ability.framesList.split('-').forEach(hit => {
+        dualCountFrames += Number(hit);
         unitHits.push({frame: dualCountFrames, type: 'dual'});
-        for (let i = 1; i < unit.ability.hits; i++) {
-          dualCountFrames += unit.ability.frames;
-          unitHits.push({frame: dualCountFrames, type: 'dual'});
-        }
-      }
+      });
     }
 
     return unitHits;
@@ -114,32 +98,16 @@ export class ChainService {
       let countFrames = 0 + unit.framesGap;
       let dualCountFrames = unit.ability.offset + unit.ability.castTime + unit.framesGap;
 
-      if (!unit.ability.linearFrames) {
-        unit.ability.framesList.split('-').forEach(hit => {
-          countFrames += Number(hit);
-          unit.frames.push({frame: countFrames, type: 'classic'});
-        });
-
-        if (unit.dual && unit.ability.dualable) {
-          unit.ability.framesList.split('-').forEach(hit => {
-            dualCountFrames += Number(hit);
-            unit.frames.push({frame: dualCountFrames, type: 'dual'});
-          });
-        }
-      } else {
+      unit.ability.framesList.split('-').forEach(hit => {
+        countFrames += Number(hit);
         unit.frames.push({frame: countFrames, type: 'classic'});
-        for (let i = 1; i < unit.ability.hits; i++) {
-          countFrames += unit.ability.frames;
-          unit.frames.push({frame: countFrames, type: 'classic'});
-        }
+      });
 
-        if (unit.dual && unit.ability.dualable) {
+      if (unit.dual && unit.ability.dualable) {
+        unit.ability.framesList.split('-').forEach(hit => {
+          dualCountFrames += Number(hit);
           unit.frames.push({frame: dualCountFrames, type: 'dual'});
-          for (let i = 1; i < unit.ability.hits; i++) {
-            dualCountFrames += unit.ability.frames;
-            unit.frames.push({frame: dualCountFrames, type: 'dual'});
-          }
-        }
+        });
       }
     });
 

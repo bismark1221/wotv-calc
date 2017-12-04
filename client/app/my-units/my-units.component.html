@@ -152,25 +152,7 @@
           </div>
 
           <div class="selectRightZoneBox littleMarginTop">
-            <div class="selectRightZoneMediumBox verticalTop blockLinearFrames tabletMarginLeft">
-              <label for="unit_frames">{{ 'chain.label.linearFrames' | translate }}</label>
-              <div>
-                <input type="checkbox" id="unit_linearFrames" [(ngModel)]="selectedUnit.ability.linearFrames" (ngModelChange)="saveUnit()">
-                <label for="unit_linearFrames"></label>
-              </div>
-            </div>
-
-            <div class="selectRightZoneLittleBox" *ngIf="selectedUnit.ability.linearFrames">
-              <label for="unit_hits">{{ 'chain.label.hits' | translate }}</label>
-              <input class="form-control" type="number" id="unit_hits" min="1" [(ngModel)]="selectedUnit.ability.hits" (ngModelChange)="saveUnit()">
-            </div>
-
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="selectedUnit.ability.linearFrames">
-              <label for="unit_frames">{{ 'chain.label.frames' | translate }}</label>
-              <input class="form-control" type="number" id="unit_frames" min="1" [(ngModel)]="selectedUnit.ability.frames" (ngModelChange)="saveUnit()">
-            </div>
-
-            <div class="selectRightZoneFrames" *ngIf="!selectedUnit.ability.linearFrames">
+            <div class="selectRightZoneFrames">
               <label for="unit_framesList">{{ 'chain.label.nonLinearFrames' | translate }}</label>
               <input class="form-control" type="text" id="unit_framesList" [(ngModel)]="selectedUnit.ability.framesList" (ngModelChange)="saveUnit()">
             </div>

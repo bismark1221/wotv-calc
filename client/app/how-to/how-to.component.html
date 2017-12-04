@@ -27,7 +27,7 @@ No I'm kidding, it's important because at each combo the power of the hits incre
 Here is the detail of the modifications
  - Neutral combo : 10%
  - Elemental combo : 20% by elements
- - Spark combo : 30%
+ - Spark combo : 30% (only one every two hits)
 
 Knowing that each of thoses combo can be combined, if you do a spark fire/water combo so the power gain 80% in one hit
 
@@ -61,7 +61,7 @@ Non, concrètement à chaque combo la puissance des coups augmente et ce jusqu'�
 Voici le détail des modifications
  - Combo neutre : 10%
  - Combo élémentaire : 20% par éléments
- - Combo étincelle : 30%
+ - Combo étincelle : 30% (seulement un coup sur deux)
 
 Sachant que chacun de ces combos sont cumulables, du coup un combo feu + eau en étincelles fait grimpé la puissance de 80% d'un seul coup
 
@@ -71,6 +71,9 @@ Voici donc un tableau qui récapitule le nombre de coup nécessaire pour atteind
     <img src="../../assets/how-to/ffbe_chain_modifier.png" alt="chain modifier" title="Chain Modifier" class="img-thumbnail pointer" (click)="open('../../assets/how-to/ffbe_chain_modifier.png')">
 
     <markdown *ngIf="lang != 'fr'">
+#### What is a spark ?
+A spark combo is when 2 units hit on the same frame, be careful only 1 of the 2 hit is concidered as a spark
+
 #### Break a chain
 There is 2 way to break a chain
  - An unit hit twice in a row
@@ -114,6 +117,9 @@ In theory we should have the following result
     </markdown>
 
     <markdown *ngIf="lang == 'fr'">
+#### Qu'est-ce-que les étincelles ?
+Une étincelle survient quand 2 unité frappes lors de la même frame, attention par contre un seul des 2 coup est concidéré comme étincelle
+
 #### Briser une chaine
 Il y a plusieurs façons de briser une chaine
  - Une unité tape 2 fois d'affilé
@@ -197,9 +203,6 @@ Voici le cas d'Orlandeau qui "attend" la fin de son premier sort avant de lancer
     <img src="../../assets/how-to/orlandeau.png" alt="orlandeau" title="Chain Orlandeau" class="img-thumbnail pointer" (click)="open('../../assets/how-to/orlandeau.png')">
 
     <markdown *ngIf="lang != 'fr'">
-#### What is a spark ?
-A spark combo is when 2 units hit on the same frame, be careful only 1 of the 2 hit is concidered as a spark
-
 #### The positioning is important when chaining
 A new discovery, for myself, it's that the positioning can play an important part in your chains
 
@@ -215,9 +218,6 @@ But don't worry, this is already implemented on the simulator :)
     </markdown>
 
     <markdown *ngIf="lang == 'fr'">
-#### Qu'est-ce-que les étincelles ?
-Une étincelle survient quand 2 unité frappes lors de la même frame, attention par contre un seul des 2 coup est concidéré comme étincelle
-
 #### L'importance des positions dans une chaine
 Nouvelle découverte, en tout cas pour ma part, c'est que la position des unités à une importance dans les chaines
 

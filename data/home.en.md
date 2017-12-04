@@ -11,36 +11,19 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+04/12/2017
+ - Only show chainers on the search for best units (because the order for finishers is almost always the same...)
+
 11/11/2017
  - Translation for Taiwan (traditional chinese) thanks to [/u/GiveMeZidane]
 
-10/11/2017
- - Barbariccia the new waifu is here
-
 01/11/2017
- - Add Loren
  - New page to explain how chain really work in game
  - Change how to show options on the simulator (click on the gear)
 
 20/10/2017
  - Add translation system for French language (maybe more later)
  - Add espers in the calculator
-
-19/10/2017
- - Add Grim Lord Sakura, Pirate Jake and Illusionist Nichol
- - Add Setzer's Double Dice (I put a fake modifier to not break the system, but the timing is good ^^)
- - Add enhanced abilities for Trance Terra and Emperor
-
-12/10/2017
- - Update Pod 153 (9S' TMR) as a unit to be easily findable in the list
- - Add Toxic Rain (Octopus reward) and Alterna (Noctis' TMR)
- - Update Nyx and Glauca with their officials global skills name
-
-11/10/2017
- - Macro are finally here :)
- - Memu and Nox are working
- - However the result in-game can differ from the chart... In-game lag, some data that are not in the datamine files (offset and cast time)
- - Don't forget to not put any acceleration in your macro
 
 ---
 

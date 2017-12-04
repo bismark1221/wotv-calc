@@ -113,25 +113,7 @@
       </div>
 
       <div class="selectRightZoneBox littleMarginTop">
-        <div class="selectRightZoneMediumBox verticalTop blockLinearFrames">
-          <label for="chainer_frames">{{ 'chain.label.linearFrames' | translate }}</label>
-          <div>
-            <input type="checkbox" id="chainer_linearFrames" [(ngModel)]="chain[viewOptions].ability.linearFrames" (ngModelChange)="saveUnit(viewOptions)">
-            <label for="chainer_linearFrames"></label>
-          </div>
-        </div>
-
-        <div class="selectRightZoneLittleBox" *ngIf="chain[viewOptions].ability.linearFrames">
-          <label for="chainer_hits">{{ 'chain.label.hits' | translate }}</label>
-          <input class="form-control" type="number" id="chainer_hits" [(ngModel)]="chain[viewOptions].ability.hits" (ngModelChange)="saveUnit(viewOptions)">
-        </div>
-
-        <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[viewOptions].ability.linearFrames">
-          <label for="chainer_frames">{{ 'chain.label.frames' | translate }}</label>
-          <input class="form-control" type="number" id="chainer_frames" [(ngModel)]="chain[viewOptions].ability.frames" (ngModelChange)="saveUnit(viewOptions)">
-        </div>
-
-        <div class="selectRightZoneFrames" *ngIf="!chain[viewOptions].ability.linearFrames">
+        <div class="selectRightZoneFrames">
           <label for="chainer_framesList">{{ 'chain.label.nonLinearFrames' | translate }}</label>
           <input class="form-control" type="text" id="chainer_framesList" [(ngModel)]="chain[viewOptions].ability.framesList" (ngModelChange)="saveUnit(viewOptions)">
         </div>

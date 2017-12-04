@@ -328,10 +328,6 @@ nouislider {
   display: inline-block;
 }
 
-.blockLinearFrames {
-  text-align: center;
-}
-
 .buttonsAbility {
   display: inline-block;
 }
@@ -545,14 +541,6 @@ nouislider {
     width: 164px;
   }
 
-  .blockLinearFrames {
-    width: 130px;
-  }
-
-  .blockLinearFrames > label {
-    float: left;
-  }
-
   .buttonDelete {
     width: 228px;
   }
@@ -645,11 +633,6 @@ nouislider {
 
   .selectRightZoneMediumBox {
     margin-top: 10px;
-  }
-
-  .blockLinearFrames {
-    text-align: left;
-    height: 70px;
   }
 
   [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {

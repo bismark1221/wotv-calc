@@ -19,6 +19,7 @@ export class HomeComponent {
     private unitService: UnitService
   ) {
     this.getTranslation();
+    this.getUnits();
 
     this.lang = this.translateService.currentLang;
 
