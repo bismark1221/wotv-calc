@@ -38,6 +38,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   availableDuplicate: any[] = [];
   chainers: any[] = [];
   finishers: any[] = [];
+  firstHits: any[] = [];
 
   createdUnits: any[] = [];
   elements: string[];
@@ -521,6 +522,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   onChangeChain(): void {
     if (this.availableDuplicate.length > 0) {
       this.chainService.getChain();
+      this.firstHits = this.chainService.calculateFramesDiffForFirstHits();
       this.changeMultiSelectDropdown();
       this.calculateMaxFramesGap();
     }
