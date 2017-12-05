@@ -521,6 +521,23 @@ export const UNITS: any[] = [
         base: 999,
         dualable: false
       },
+      {
+        names: {
+          en: 'Ho229 Type-B',
+          fr: 'Ho229 Type-B',
+          tw: 'Ho229 Type-B',
+          kr: 'Ho229 Type-B',
+          de: 'Ho229 Type-B',
+          es: 'Ho229 Tipo-B'
+        },
+        framesList: '0-10-10-10-11-12-12-12-12-12',
+        firstHit: 125,
+        castTime: 0,
+        offset: 0,
+        base: 545,
+        ignore: 50,
+        dualable: false
+      },
     ]
   },
   {
