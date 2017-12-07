@@ -4148,5 +4148,73 @@ export const UNITS: any[] = [
         dualable: false
       },
     ]
+  },
+  {
+    id: 83,
+    names: {
+      en: 'Aura',
+      tw: '阿烏拉',
+      kr: '아우라',
+      fr: 'Aura',
+      de: 'Aura',
+      es: 'Aura'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Hundred Thrusts',
+          tw: '百烈槍',
+          kr: '백열의 창',
+          fr: 'Cent coups',
+          de: 'Hundert Stöße',
+          es: 'Cien estoques'
+        },
+        framesList: '0-10-10-10-10-10-10-10',
+        firstHit: 47,
+        castTime: 40,
+        offset: 0,
+        base: 120,
+        ignore: 50,
+      },
+      {
+        names: {
+          en: 'Thousand Thrusts',
+          tw: '千烈槍',
+          kr: '천열의 창',
+          fr: 'Mille coups',
+          de: 'Tausend Stöße',
+          es: 'Mil estoques'
+        },
+        framesList: '0-10-10-10-10-10-10-10-5-10-10-10',
+        firstHit: 47,
+        castTime: 40,
+        offset: 0,
+        base: 180,
+        ignore: 50,
+      },
+      {
+        names: {
+          en: 'Tornado Spear',
+          tw: '颶風矛',
+          kr: '돌풍의 창',
+          fr: 'Lance tornade',
+          de: 'Tornadospeer',
+          es: 'Lanza tornado'
+        },
+        framesList: '0-5-7-7-7-7-7-7-7-8',
+        firstHit: 116,
+        castTime: 0,
+        offset: 0,
+        base: 390,
+        ignore: 50,
+        elements: [
+          'wind'
+        ],
+        debuff: {
+          wind: 72
+        },
+        dualable: false
+      },
+    ]
   }
 ];

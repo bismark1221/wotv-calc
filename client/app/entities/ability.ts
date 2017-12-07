@@ -7,11 +7,9 @@ export class Ability {
   name: string = 'New ability';
   base: number = 0;
 
-  frames?: number = 1;
   framesList?: string = '0';
   castTime?: number = 40;
   offset?: number = 16;
-  hits?: number = 1;
   ignore?: number = 0;
   firstHit?: number = 0;
   dualable?: boolean = true;
@@ -26,9 +24,7 @@ export class Ability {
     this.getName(translateService);
     this.base = ability.base;
 
-    this.frames = ability.frames ? ability.frames : this.frames;
     this.framesList = ability.framesList ? ability.framesList : this.framesList;
-    this.hits = ability.hits ? ability.hits : this.hits;
     this.firstHit = ability.firstHit || ability.firstHit === 0 ? ability.firstHit : this.firstHit;
     this.castTime = ability.castTime || ability.castTime === 0 ? ability.castTime : this.castTime;
     this.offset = ability.offset || ability.offset === 0 ? ability.offset : this.offset;
