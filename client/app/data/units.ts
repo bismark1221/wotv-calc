@@ -4000,7 +4000,8 @@ export const UNITS: any[] = [
         castTime: 50,
         offset: 120,
         base: 250,
-        ignore: 50
+        ignore: 50,
+        type: 'finish'
       },
       {
         names: {
@@ -4016,7 +4017,8 @@ export const UNITS: any[] = [
         castTime: 50,
         offset: 120,
         base: 525,
-        ignore: 50
+        ignore: 50,
+        type: 'finish'
       },
       {
         names: {
