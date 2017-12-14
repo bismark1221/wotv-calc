@@ -4161,6 +4161,7 @@ export const UNITS: any[] = [
       de: 'Aura',
       es: 'Aura'
     },
+    type: 'chain',
     abilities: [
       {
         names: {
@@ -4215,6 +4216,159 @@ export const UNITS: any[] = [
         debuff: {
           wind: 72
         },
+        dualable: false
+      },
+    ]
+  },
+  {
+    id: 84,
+    names: {
+      en: 'William',
+      tw: '威廉',
+      kr: '윌리엄',
+      fr: 'William',
+      de: 'William',
+      es: 'William'
+    },
+    type: 'chain',
+    abilities: [
+      {
+        names: {
+          en: 'Innocent Magika',
+          tw: '聖潔魔法',
+          kr: '이노센트 마기카',
+          fr: 'Magika innocente',
+          de: 'Unschuldige Magika',
+          es: 'Magika inocente'
+        },
+        framesList: '0-40-20-30-30',
+        firstHit: 70,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        ignore: 25,
+        damage: 'magic',
+        dualable: false
+      },
+      {
+        names: {
+          en: 'Quake',
+          tw: '地槌',
+          kr: '퀘이크',
+          fr: 'Séisme',
+          de: 'Beben',
+          es: 'Seísmo'
+        },
+        framesList: '0-22-21-22-23-23-22-23',
+        firstHit: 160,
+        castTime: 40,
+        offset: 16,
+        base: 275,
+        elements: [
+          'earth'
+        ],
+        damage: 'magic'
+      },
+      {
+        names: {
+          en: 'Grand Wave',
+          tw: '大波動',
+          kr: '거대한 파동',
+          fr: 'Grande vague',
+          de: 'Große Welle',
+          es: 'Gran oleaje'
+        },
+        framesList: '0',
+        firstHit: 140,
+        castTime: 0,
+        offset: 0,
+        base: 940,
+        elements: [
+          'earth'
+        ],
+        damage: 'magic',
+        type: 'finish',
+        dualable: false
+      },
+    ]
+  },
+  {
+    id: 85,
+    names: {
+      en: 'Cloud',
+      tw: '克勞德',
+      kr: '클라우드',
+      fr: 'Cloud',
+      de: 'Cloud',
+      es: 'Cloud'
+    },
+    type: 'chain',
+    dual: false,
+    abilities: [
+      {
+        names: {
+          en: 'Climhazzard',
+          tw: '罪惡烈斬',
+          kr: '클라임 해저드',
+          fr: 'Péril ascendant',
+          de: 'Climgefahr',
+          es: 'Riesgo climático'
+        },
+        framesList: '0',
+        firstHit: 4,
+        castTime: 0,
+        offset: 66,
+        base: 275,
+        ignore: 50,
+        type: 'finish'
+      },
+      {
+        names: {
+          en: 'Meteor Rain',
+          tw: '流星雨',
+          kr: '메테오 레인',
+          fr: 'Pluie de météorites',
+          de: 'Meteorregen',
+          es: 'Lluvia meteorito'
+        },
+        framesList: '0-8-8-8-8-8-8-8',
+        firstHit: 84,
+        castTime: 4,
+        offset: 66,
+        base: 180,
+        ignore: 50
+      },
+      {
+        names: {
+          en: 'Finishing Touch',
+          tw: '畫龍點睛',
+          kr: '화룡점정',
+          fr: 'Finition',
+          de: 'Letzter Schliff',
+          es: 'Toque final'
+        },
+        framesList: '0',
+        firstHit: 75,
+        castTime: 0,
+        offset: 66,
+        base: 400,
+        type: 'finish'
+      },
+      {
+        names: {
+          en: 'Omnislash',
+          tw: '超究武神霸斬',
+          kr: '초구무신패참',
+          fr: 'Omnifrappe',
+          de: 'Omnischlag',
+          es: 'Omnilátigo'
+        },
+        framesList: '0-18-16-32-16-12-22-22-16-14-32-18-12-30-102',
+        firstHit: 188,
+        castTime: 1,
+        offset: 0,
+        base: 1050,
+        ignore: 50,
         dualable: false
       },
     ]
