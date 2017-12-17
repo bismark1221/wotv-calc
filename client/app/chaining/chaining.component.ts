@@ -160,9 +160,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
       // Needed to correct old createdUnits
       unit.abilities.forEach(ability => {
-        if(this.abilityTypes.findIndex(x => x === ability.type) === -1) {
+        if (this.abilityTypes.findIndex(x => x === ability.type) === -1) {
           ability.damage = ability.type === 'LB' ? 'physic' : ability.type;
           ability.type = 'chain';
+        }
+
+        if (!ability.range) {
+          ability.range = {
+            min: 0,
+            max: 20
+          }
         }
       });
     });
@@ -595,5 +602,48 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
     this.selectedUnits[position] = unit;
     this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[position]);
+  }
+
+  canFindBestChainers(position: number) :boolean {
+    let highRangeChainer = this.countNumberOfHighRangeChainer();
+    if (
+      this.chain[position].id !== 'unselect' ||
+      this.availableDuplicate.length === 0 ||
+      this.chainers.length > 2 ||
+      highRangeChainer > 1 ||
+      this.finishers.length > 1 ||
+      (highRangeChainer === 1 && this.chainers.length > 1)
+    ) {
+      return false;
+    }
+
+    return true;
+  }
+
+  canFindBestChain() :boolean {
+    let highRangeChainer = this.countNumberOfHighRangeChainer();
+    if (
+      highRangeChainer > 2 ||
+      this.chainers.length > 4 ||
+      this.finishers.length > 3 ||
+      ((highRangeChainer === 1 || highRangeChainer === 2) && this.finishers.length > 2) ||
+      (highRangeChainer === 2 && this.chainers.length > 3)
+    ) {
+      return false;
+    }
+
+    return true;
+  }
+
+  private countNumberOfHighRangeChainer() :number {
+    let count = 0;
+    this.chain.forEach((unit, index) => {
+      if (unit.id !== 'unselect') {
+        if (unit.ability.range.max - unit.ability.range.min > 50)
+          count++;
+      }
+    });
+
+    return count;
   }
 }

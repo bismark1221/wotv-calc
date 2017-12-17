@@ -252,7 +252,7 @@
 
           <hr class="selectHr" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && chainers.length <= 2"/>
 
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers(i)" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && chainers.length <= 2">
+          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers(i)" *ngIf="canFindBestChainers(i)">
             {{ 'chain.button.findBest' | translate }}
           </button>
         </div>
@@ -295,7 +295,7 @@
           </nouislider>
         </div>
       </div>
-      <div *ngIf="chainers.length <= 4">
+      <div *ngIf="canFindBestChain()">
         <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">
           {{ 'chain.button.findBestModifier' | translate }}
         </button>
@@ -303,7 +303,7 @@
           {{ 'chain.button.findBestCombo' | translate }}
         </button>
       </div>
-      <div *ngIf="chainers.length >= 5">
+      <div *ngIf="!canFindBestChain()">
         {{ 'chain.label.sorryBestModifier' | translate }}
       </div>
     </div>
@@ -322,7 +322,7 @@
           </button>
         </span>
       </div>
-      <div *ngIf="chainers.length <= 4">
+      <div *ngIf="canFindBestChain()">
         <button class="btn btn-secondary fullWidth" type="button" (click)="findBestFrames('modifier')">
           {{ 'chain.button.findBestModifier' | translate }}
         </button>
@@ -330,7 +330,7 @@
           {{ 'chain.button.findBestCombo' | translate }}
         </button>
       </div>
-      <div *ngIf="chainers.length >= 5">
+      <div *ngIf="!canFindBestChain()">
         {{ 'chain.label.sorryBestModifier' | translate }}
       </div>
     </div>
