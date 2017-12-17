@@ -66,22 +66,22 @@ export class FindBestService {
 
           if (unit.ability.type === 'chain') {
             this.chainersHits.push([]);
-            unit.minFrame = 0;
-            unit.maxFrame = 20;
+            unit.minFrame = unit.ability.range.min;
+            unit.maxFrame = unit.ability.range.max;
             unit.chainerIndex = chainerIndex;
             this.chainers.push(unit);
             chainerIndex++;
 
-            for (let i = 0; i <= 20; i++) {
+            for (let i = unit.minFrame; i <= unit.maxFrame; i++) {
               this.calculateUnitHits(unit, unitIndex, i, 'chainer');
             }
           } else {
-            this.calculateUnitHits(unit, unitIndex, 0);
+            this.calculateUnitHits(unit, unitIndex, unit.ability.range.min);
             this.finishers.push(unit);
           }
 
           this.chainUnits.push(unit);
-          unit.frames = this.chainUnitsHits[unitIndex][0];
+          unit.frames = this.chainUnitsHits[unitIndex][unit.ability.range.min];
           unitIndex++;
         }
       });
@@ -100,8 +100,8 @@ export class FindBestService {
               for (let i = 0; i <= maxFrames; i++) {
                 this.calculateUnitHits(unit, index, i);
               }
-              unit.minFrame = 0;
-              unit.maxFrame = maxFrames;
+              unit.minFrame = unit.ability.range.min;
+              unit.maxFrame = unit.ability.range.min > maxFrames ? unit.ability.range.min : maxFrames;
             } else if (unit && unit.ability.type === 'chain') {
               let chainerFrame = this.best[type].frames[unit.index];
               this.frames[index] = chainerFrame;

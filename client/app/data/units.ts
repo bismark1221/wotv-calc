@@ -4369,7 +4369,10 @@ export const UNITS: any[] = [
         offset: 0,
         base: 1050,
         ignore: 50,
-        dualable: false
+        dualable: false,
+        range: {
+          min: -360
+        }
       },
     ]
   }

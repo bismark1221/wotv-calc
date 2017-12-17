@@ -317,9 +317,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain.forEach((unit, position) => {
       if (unit.id !== 'unselect') {
         if (unit.ability.type === 'chain') {
-          this.sliderConfig[position].range.max = 20;
+          this.sliderConfig[position].range.min = unit.ability.range.min;
+          this.sliderConfig[position].range.max = unit.ability.range.max;
         } else {
-          this.sliderConfig[position].range.max = maxHitForChain > 20 ? maxHitForChain : 20;
+          this.sliderConfig[position].range.min = unit.ability.range.min;
+          this.sliderConfig[position].range.max = maxHitForChain > unit.ability.range.max ? maxHitForChain : unit.ability.range.max;
         }
       }
     });

@@ -18,6 +18,10 @@ export class Ability {
   type?: string = 'chain';
   damage?: string = 'physic';
   chain?: boolean = true;
+  range?: any = {
+    min: 0,
+    max: 20
+  }
 
   constructAbilityFromJson(ability: Ability, translateService: TranslateService): void {
     this.names = ability.names;
@@ -37,6 +41,11 @@ export class Ability {
     this.type = ability.type ? ability.type : this.type;
     this.damage = ability.damage ? ability.damage : this.damage;
     this.chain = typeof ability.chain == 'boolean' ? ability.chain : this.chain;
+
+    if (ability.range) {
+      this.range.min = ability.range.min ? ability.range.min : this.range.min;
+      this.range.max = ability.range.max ? ability.range.max : this.range.max;
+    }
   }
 
   getName(translateService: TranslateService): string {
