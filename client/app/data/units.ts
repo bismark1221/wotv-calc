@@ -9,7 +9,6 @@ export const UNITS: any[] = [
       de: 'Tidus',
       kr: '프리오닐'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -110,7 +109,6 @@ export const UNITS: any[] = [
       de: 'Firion',
       es: 'Firion'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -158,7 +156,6 @@ export const UNITS: any[] = [
       de: 'Orlandeau',
       es: 'Orlandeau'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -213,7 +210,6 @@ export const UNITS: any[] = [
       de: 'Lunera',
       es: 'Lunera'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -312,7 +308,6 @@ export const UNITS: any[] = [
       de: 'Aileen',
       es: 'Aileen'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -367,7 +362,6 @@ export const UNITS: any[] = [
       de: 'Veritas der Finstere',
       es: 'Veritas el tenebroso'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -423,7 +417,6 @@ export const UNITS: any[] = [
       de: '2B',
       es: '2B'
     },
-    type: 'chain',
     'abilities': [
       {
         names: {
@@ -550,7 +543,6 @@ export const UNITS: any[] = [
       de: '9S',
       es: '9S'
     },
-    type: 'chain',
     'abilities': [
       {
         names: {
@@ -597,7 +589,6 @@ export const UNITS: any[] = [
       de: 'A2',
       es: 'A2'
     },
-    type: 'chain',
     'abilities': [
       {
         names: {
@@ -672,7 +663,6 @@ export const UNITS: any[] = [
       de: 'Ace',
       es: 'Ace'
     },
-    type: 'chain',
     'abilities': [
       {
         names: {
@@ -727,7 +717,6 @@ export const UNITS: any[] = [
       de: 'Agrias',
       es: 'Agrias'
     },
-    type: 'chain',
     'abilities': [
       {
         names: {
@@ -782,7 +771,6 @@ export const UNITS: any[] = [
       de: 'Amelia',
       es: 'Amelia'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -811,7 +799,6 @@ export const UNITS: any[] = [
       de: 'Ashe',
       es: 'Ashe'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -858,7 +845,6 @@ export const UNITS: any[] = [
       de: 'Bran',
       es: 'Bran'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -895,7 +881,6 @@ export const UNITS: any[] = [
       de: 'Chizuru',
       es: 'Chizuru'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -925,7 +910,6 @@ export const UNITS: any[] = [
       de: 'Dunkel-Fina',
       es: 'Fina oscura'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -977,7 +961,6 @@ export const UNITS: any[] = [
       de: 'Fohlen',
       es: 'Fohlen'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1013,7 +996,6 @@ export const UNITS: any[] = [
       de: 'Fryevia',
       es: 'Fryevia'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1066,7 +1048,6 @@ export const UNITS: any[] = [
       de: 'Gilgamesch',
       es: 'Gilgamesh'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1127,7 +1108,6 @@ export const UNITS: any[] = [
       de: 'Ritter Delita',
       es: 'Delita caballero'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1195,7 +1175,6 @@ export const UNITS: any[] = [
       de: 'Veritas des Lichts',
       es: 'Veritas el luminoso'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1248,7 +1227,6 @@ export const UNITS: any[] = [
       de: 'Söldner Ramza',
       es: 'Ramza mercenario'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1278,7 +1256,6 @@ export const UNITS: any[] = [
       de: 'Randi',
       es: 'Randy'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1307,7 +1284,6 @@ export const UNITS: any[] = [
       de: 'Rasler',
       es: 'Rasler'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1336,7 +1312,6 @@ export const UNITS: any[] = [
       de: 'Reberta',
       es: 'Reberta'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1365,7 +1340,6 @@ export const UNITS: any[] = [
       de: 'Rikku',
       es: 'Rikku'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1469,7 +1443,6 @@ export const UNITS: any[] = [
       de: 'Dunkel-Seewind-Fina',
       es: 'Fina oscura de la marea'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1521,7 +1494,6 @@ export const UNITS: any[] = [
       de: 'Setzer',
       es: 'Setzer'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1581,7 +1553,6 @@ export const UNITS: any[] = [
       de: 'Shantotto',
       es: 'Shantotto'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1617,7 +1588,6 @@ export const UNITS: any[] = [
       de: 'Trance-Terra',
       es: 'Terra en trance'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1683,7 +1653,6 @@ export const UNITS: any[] = [
       de: 'Vaan',
       es: 'Vaan'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1727,7 +1696,6 @@ export const UNITS: any[] = [
       de: 'Vargas',
       es: 'Vargas'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1776,7 +1744,6 @@ export const UNITS: any[] = [
       de: 'Victoria',
       es: 'Victoria'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1810,7 +1777,6 @@ export const UNITS: any[] = [
       de: 'Zidane (JP Only - 6 stars)',
       es: 'Yitán (JP Only - 6 stars)'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -1869,7 +1835,6 @@ export const UNITS: any[] = [
       de: 'Zwiebelritter',
       es: 'Caballero Cebolla'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2016,7 +1981,6 @@ export const UNITS: any[] = [
       de: 'Veritas der Flammende',
       es: 'Veritas el llameante'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2064,7 +2028,6 @@ export const UNITS: any[] = [
       de: 'Queen',
       es: 'Queen'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2093,7 +2056,6 @@ export const UNITS: any[] = [
       de: 'Prishe',
       es: 'Prishe'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2138,7 +2100,6 @@ export const UNITS: any[] = [
       de: 'Nyx',
       es: 'Nyx'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2187,7 +2148,6 @@ export const UNITS: any[] = [
       de: 'Glauca',
       es: 'Glauca'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2221,7 +2181,6 @@ export const UNITS: any[] = [
       de: 'Pod 153',
       es: 'Pod 153'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2250,7 +2209,6 @@ export const UNITS: any[] = [
       de: 'Generieke spreuken',
       es: 'Hechizos genéricos'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2437,7 +2395,6 @@ export const UNITS: any[] = [
       de: 'Schicke Ariana',
       es: 'Ariana chic'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -2469,7 +2426,6 @@ export const UNITS: any[] = [
       de: 'Eva',
       es: 'Eva'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2499,7 +2455,6 @@ export const UNITS: any[] = [
       de: 'Adam',
       es: 'Adán'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2529,7 +2484,6 @@ export const UNITS: any[] = [
       de: 'Kelsus',
       es: 'Kelsus'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2559,7 +2513,6 @@ export const UNITS: any[] = [
       de: 'Maxwell',
       es: 'Maxwell'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2593,7 +2546,6 @@ export const UNITS: any[] = [
       de: 'Schwarze Katze Lid',
       es: 'Lid minina negra'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2624,7 +2576,6 @@ export const UNITS: any[] = [
       de: 'Helena',
       es: 'Helena'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2654,7 +2605,6 @@ export const UNITS: any[] = [
       de: 'Zargabaath',
       es: 'Zargabaath'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2690,7 +2640,6 @@ export const UNITS: any[] = [
       de: 'Luneth',
       es: 'Luneth'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2721,7 +2670,6 @@ export const UNITS: any[] = [
       de: 'Grace',
       es: 'Grace'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2752,7 +2700,6 @@ export const UNITS: any[] = [
       de: 'Rem',
       es: 'Rem'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2782,7 +2729,6 @@ export const UNITS: any[] = [
       de: 'Zyrus',
       es: 'Zyrus'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2833,7 +2779,6 @@ export const UNITS: any[] = [
       de: 'Shine',
       es: 'Shine'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2866,7 +2811,6 @@ export const UNITS: any[] = [
       de: 'Olive',
       es: 'Olivia'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2898,7 +2842,6 @@ export const UNITS: any[] = [
       de: 'Imperator',
       es: 'Emperador'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -2976,7 +2919,6 @@ export const UNITS: any[] = [
       de: 'Dunkelritter Cecil',
       es: 'Cecil oscuro'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3012,7 +2954,6 @@ export const UNITS: any[] = [
       de: 'Gaffgarion',
       es: 'Gaffgarion'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3045,7 +2986,6 @@ export const UNITS: any[] = [
       de: 'Kefka',
       es: 'Kefka'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3078,7 +3018,6 @@ export const UNITS: any[] = [
       de: 'Bartz',
       es: 'Bartz'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3109,7 +3048,6 @@ export const UNITS: any[] = [
       de: 'Goken',
       es: 'Goken'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3229,7 +3167,6 @@ export const UNITS: any[] = [
       de: 'Giftregen',
       es: 'Lluvia tóxica'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3262,7 +3199,6 @@ export const UNITS: any[] = [
       de: 'Alterna',
       es: 'Versus'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3294,7 +3230,6 @@ export const UNITS: any[] = [
       de: 'Grimmige Herrin Sakura',
       es: 'Sakura la parca'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3366,7 +3301,6 @@ export const UNITS: any[] = [
       de: 'Piraten-Jake',
       es: 'Jake pirata'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3420,7 +3354,6 @@ export const UNITS: any[] = [
       de: 'Illusionist Nichol',
       es: 'Nichol ilusionista'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3450,7 +3383,6 @@ export const UNITS: any[] = [
       de: 'Sirene',
       es: 'Sirena'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3486,7 +3418,6 @@ export const UNITS: any[] = [
       de: 'Ifrit',
       es: 'Ifrit'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3522,7 +3453,6 @@ export const UNITS: any[] = [
       de: 'Shiva',
       es: 'Shiva'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3558,7 +3488,6 @@ export const UNITS: any[] = [
       de: 'Diabolos',
       es: 'Diablo'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3594,7 +3523,6 @@ export const UNITS: any[] = [
       de: 'Ramuh',
       es: 'Lamú'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3630,7 +3558,6 @@ export const UNITS: any[] = [
       de: 'Titan',
       es: 'Titán'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3666,7 +3593,6 @@ export const UNITS: any[] = [
       de: 'Tetra Sylphid',
       es: 'Tetra Sílfide'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3702,7 +3628,6 @@ export const UNITS: any[] = [
       de: 'Odin',
       es: 'Odín'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3735,7 +3660,6 @@ export const UNITS: any[] = [
       de: 'Bahamut',
       es: 'Bahamut'
     },
-    type: 'finish',
     abilities: [
       {
         names: {
@@ -3768,7 +3692,6 @@ export const UNITS: any[] = [
       de: 'Loren',
       es: 'Loren'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3872,7 +3795,6 @@ export const UNITS: any[] = [
       de: 'Barbarizia',
       es: 'Barbariccia'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3955,7 +3877,6 @@ export const UNITS: any[] = [
       de: 'Cor',
       es: 'Cor'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -3984,7 +3905,6 @@ export const UNITS: any[] = [
       de: 'Noctis',
       es: 'Noctis'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -4108,7 +4028,6 @@ export const UNITS: any[] = [
       de: 'Duke',
       es: 'Duke'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -4161,7 +4080,6 @@ export const UNITS: any[] = [
       de: 'Aura',
       es: 'Aura'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -4230,7 +4148,6 @@ export const UNITS: any[] = [
       de: 'William',
       es: 'William'
     },
-    type: 'chain',
     abilities: [
       {
         names: {
@@ -4302,7 +4219,6 @@ export const UNITS: any[] = [
       de: 'Cloud',
       es: 'Cloud'
     },
-    type: 'chain',
     dual: false,
     abilities: [
       {

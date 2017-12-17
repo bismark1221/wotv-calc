@@ -288,7 +288,7 @@ export class ChainService {
     let hit = unit.frames[this.nbCombo[unitPosition]];
     let divided = false;
 
-    let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? unit.type : 'break';
+    let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? unit.ability.type : 'break';
     type = type + (hit.type === 'classic' ? '1' : '2');
 
     for (let i = 1; i <= this.chainers.length; i++) {

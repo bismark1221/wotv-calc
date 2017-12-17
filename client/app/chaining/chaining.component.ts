@@ -291,7 +291,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
           this.availableDuplicate.push(unit);
         }
 
-        if (unit.type === 'chain') {
+        if (unit.ability.type === 'chain') {
           this.chainers.push(unit);
         } else {
           this.finishers.push(unit);
