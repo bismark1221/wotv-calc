@@ -11,6 +11,9 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+19/12/2017
+ - Gestion de la répartition des dégats pour une abilité (par exemple pour la LB de Cloud les hits sont tous à 5% sauf le dernier qui est 30% ce qui change la philosophie de l'abilité)
+
 04/12/2017
 - La recherche de meilleures unités ne retourne désormais plus que des chaineurs
 

@@ -11,6 +11,9 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+19/12/2017
+ - Damage dristribution for an ability are now implemented (For exemple Cloud's LB is 5% per hit expect for the last one which is 30%)
+
 04/12/2017
  - Only show chainers on the search for best units (because the order for finishers is almost always the same...)
 
