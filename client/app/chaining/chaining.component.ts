@@ -171,6 +171,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
             max: 20
           }
         }
+
+        if (!ability.hitDamage) {
+          let frames = ability.framesList.split('-');
+          ability.hitDamage = [];
+          frames.forEach(hit => {
+            ability.hitDamage.push(100 / frames.length);
+          });
+        }
       });
     });
   }

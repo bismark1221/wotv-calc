@@ -18,6 +18,7 @@ export class Ability {
   type?: string = 'chain';
   damage?: string = 'physic';
   chain?: boolean = true;
+  hitDamage?: any[] = [];
   range?: any = {
     min: 0,
     max: 20
@@ -45,6 +46,15 @@ export class Ability {
     if (ability.range) {
       this.range.min = ability.range.min ? ability.range.min : this.range.min;
       this.range.max = ability.range.max ? ability.range.max : this.range.max;
+    }
+
+    if (ability.hitDamage) {
+      this.hitDamage = ability.hitDamage;
+    } else {
+      let frames = this.framesList.split('-');
+      frames.forEach(hit => {
+        this.hitDamage.push(100 / frames.length);
+      });
     }
   }
 

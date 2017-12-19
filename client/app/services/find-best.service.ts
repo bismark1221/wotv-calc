@@ -12,6 +12,7 @@ export class FindBestService {
   private nbHits: number;
   private best: any;
   private hits: any[] = [];
+  private hitsDamage: any[] = [];
   private lastHitter: number;
   private nextHitter: number;
   private lastElements: string[];
@@ -88,11 +89,15 @@ export class FindBestService {
 
       this.getElements();
       this.calculateDebuffModifier();
-      this.calculateHitDamage();
+      this.calculateTotalDamage();
       this.calculateAllPossibleFrames('chainers', 0);
 
       if (this.finishers.length > 0) {
         let maxFrames = Math.max(this.best.modifier.hits[this.best.modifier.hits.length - 1], this.best.combo.hits[this.best.combo.hits.length - 1]) + 1;
+
+        if (!maxFrames) {
+          maxFrames = 20;
+        }
 
         ['modifier', 'combo'].forEach(type => {
           this.chainUnits.forEach((unit, index) => {
@@ -124,15 +129,15 @@ export class FindBestService {
     let countFrames = 0 + framesGap;
     let dualCountFrames = unit.ability.offset + unit.ability.castTime + framesGap;
 
-    unit.ability.framesList.split('-').forEach(hit => {
+    unit.ability.framesList.split('-').forEach((hit, index) => {
       countFrames += Number(hit);
-      this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic'});
+      this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic', damage: unit.ability.hitDamage[index]});
     });
 
     if (unit.dual && unit.ability.dualable) {
-      unit.ability.framesList.split('-').forEach(hit => {
+      unit.ability.framesList.split('-').forEach((hit, index) => {
         dualCountFrames += Number(hit);
-        this.chainUnitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual'});
+        this.chainUnitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual', damage: unit.ability.hitDamage[index]});
       });
     }
 
@@ -180,7 +185,7 @@ export class FindBestService {
     });
   }
 
-  private calculateHitDamage() {
+  private calculateTotalDamage() {
     this.units.forEach(unit => {
       if (unit) {
         unit.totalDamage = 0;
@@ -198,8 +203,6 @@ export class FindBestService {
         } else {
           unit.totalDamage = base * realIgnore;
         }
-
-        unit.hitDamage = unit.totalDamage / (unit.frames.length / (unit.dual && unit.ability.dualable ? 2 : 1));
       }
     });
   }
@@ -254,6 +257,7 @@ export class FindBestService {
     this.nbHits = 0;
     this.multi = 1;
     this.hits = [];
+    this.hitsDamage = [];
     this.lastElements = [];
     this.combo = [];
     this.nbCombo = [];
@@ -322,6 +326,7 @@ export class FindBestService {
     let hit = unit.frames[this.nbCombo[unitPosition]];
 
     this.hits[this.nbHits] = hit.frame;
+    this.hitsDamage[this.nbHits] = hit.damage;
 
     this.calculateTotal(unit, combo);
     this.nbCombo[unitPosition]++;
@@ -348,7 +353,7 @@ export class FindBestService {
     }
 
     this.lastElements = unit.elements;
-    this.total = this.total + (unit.hitDamage * this.multi);
+    this.total = this.total + ((unit.totalDamage * this.hitsDamage[this.nbHits] / 100) * this.multi);
   }
 
   private calculateModifierByElements(unit: any): number {
