@@ -4394,11 +4394,11 @@ export const UNITS: any[] = [
     id: 86,
     names: {
       en: 'Tinkerer Carrie',
-      tw: 'Tinkerer Carrie',
-      kr: 'Tinkerer Carrie',
-      fr: 'Tinkerer Carrie',
-      de: 'Tinkerer Carrie',
-      es: 'Tinkerer Carrie'
+      tw: '機械工匠凱莉',
+      kr: '세공사 캐리',
+      fr: 'Carrie bricoleuse',
+      de: 'Tüftler Carrie',
+      es: 'Carrie la juguetera'
     },
     abilities: [
       {
@@ -4411,6 +4411,7 @@ export const UNITS: any[] = [
           es: 'Cacharro mecánico'
         },
         framesList: '0-8-8-9',
+        hitDamage: [20, 25, 25, 30],
         firstHit: 60,
         castTime: 40,
         offset: 16,
@@ -4434,6 +4435,23 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         base: 300
+      },
+      {
+        names: {
+          en: 'Hope of Light',
+          tw: '希望之光',
+          kr: '빛에 대한 희망',
+          fr: 'Lumière de l\'espoir',
+          de: 'Hoffnungsschimmer',
+          es: 'Estrella fugaz'
+        },
+        framesList: '0-7-7-7-7-7',
+        hitDamage: [12, 12, 12, 12, 12, 40],
+        firstHit: 80,
+        castTime: 70,
+        offset: 16,
+        base: 570,
+        dualable: false
       }
     ]
   },
@@ -4441,8 +4459,8 @@ export const UNITS: any[] = [
     id: 87,
     names: {
       en: 'Kryla',
-      tw: 'Kryla',
-      kr: 'Kryla',
+      tw: '克里菈',
+      kr: '크라일라',
       fr: 'Kryla',
       de: 'Kryla',
       es: 'Kryla'
@@ -4529,8 +4547,8 @@ export const UNITS: any[] = [
     id: 88,
     names: {
       en: 'Christine',
-      tw: 'Christine',
-      kr: 'Christine',
+      tw: '克莉絲汀',
+      kr: '크리스틴',
       fr: 'Christine',
       de: 'Christine',
       es: 'Christine'
@@ -4570,6 +4588,7 @@ export const UNITS: any[] = [
           es: 'Cero absoluto'
         },
         framesList: '0-5-5-5-5-5-5-5-5-5-5',
+        hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
         firstHit: 40,
         castTime: 20,
         offset: 16,
@@ -4589,6 +4608,7 @@ export const UNITS: any[] = [
           es: 'Cero absoluto (Max)'
         },
         framesList: '0-5-5-5-5-5-5-5-5-5-5',
+        hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
         firstHit: 40,
         castTime: 20,
         offset: 16,
@@ -4617,6 +4637,27 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
+      },
+      {
+        names: {
+          en: 'Snowbear Rampage',
+          tw: '失控雪熊',
+          kr: '광란의 눈곰',
+          fr: 'Fureur de l\'ours blanc',
+          de: 'Schneebär-Raserei',
+          es: 'Furia polar'
+        },
+        framesList: '0-3-3-3-3-3-3-3-3-3-3',
+        hitDamage: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10],
+        firstHit: 80,
+        castTime: 1,
+        offset: 0,
+        base: 710,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+        dualable: false
       }
     ]
   },
