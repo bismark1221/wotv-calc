@@ -182,12 +182,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Divine Ruination +2 (JP Only)',
-          fr: 'Ruine divine +2 (JP Seulement)',
-          tw: '聖光爆裂破 +2 (JP Only)',
-          kr: '성광폭렬파 +2 (JP Only)',
-          de: 'Göttliche Zerstörung +2 (JP Only)',
-          es: 'Ruina divina +2 (JP Only)'
+          en: 'Divine Ruination +2',
+          fr: 'Ruine divine +2',
+          tw: '聖光爆裂破 +2',
+          kr: '성광폭렬파 +2',
+          de: 'Göttliche Zerstörung +2',
+          es: 'Ruina divina +2'
         },
         framesList: '0-7-5-7-7-7-7',
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
@@ -2760,12 +2760,12 @@ export const UNITS: any[] = [
     abilities: [
       {
         names: {
-          en: 'Dagger Boomerang',
-          fr: 'Dague boomerang',
-          tw: '迴旋匕首',
-          kr: '부메랑 대거',
-          de: 'Dolchbumerang',
-          es: 'Dagas bumerán'
+          en: 'Dagger Boomerang (Max)',
+          fr: 'Dague boomerang (Max)',
+          tw: '迴旋匕首 (Max)',
+          kr: '부메랑 대거 (Max)',
+          de: 'Dolchbumerang (Max)',
+          es: 'Dagas bumerán (Max)'
         },
         type: 'finish',
         framesList: '0',
@@ -2773,6 +2773,22 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 0,
         base: 620
+      },
+      {
+        names: {
+          en: 'Dagger Boomerang +2 (Max)',
+          fr: 'Dague boomerang +2 (Max)',
+          tw: '迴旋匕首 +2 (Max)',
+          kr: '부메랑 대거 +2 (Max)',
+          de: 'Dolchbumerang +2 (Max)',
+          es: 'Dagas bumerán +2 (Max)'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 120,
+        castTime: 40,
+        offset: 0,
+        base: 860
       }
     ]
   },
@@ -4372,6 +4388,270 @@ export const UNITS: any[] = [
           min: -360
         }
       },
+    ]
+  },
+  {
+    id: 86,
+    names: {
+      en: 'Tinkerer Carrie',
+      tw: 'Tinkerer Carrie',
+      kr: 'Tinkerer Carrie',
+      fr: 'Tinkerer Carrie',
+      de: 'Tinkerer Carrie',
+      es: 'Tinkerer Carrie'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Mechanical Trinket',
+          tw: '機械玩具箱',
+          kr: '장난감 기계 상자',
+          fr: 'Babiole mécanique',
+          de: 'Aufziehkästchen',
+          es: 'Cacharro mecánico'
+        },
+        framesList: '0-8-8-9',
+        firstHit: 60,
+        castTime: 40,
+        offset: 16,
+        base: 160,
+        ignore: 50,
+        debuff: {
+          ice: 50
+        }
+      },
+      {
+        names: {
+          en: 'Robot Soldiers',
+          tw: '機關士兵',
+          kr: '로보트 병사',
+          fr: 'Soldat robot',
+          de: 'Aufziehsoldaten',
+          es: 'Robosoldados'
+        },
+        framesList: '0-5-5-5-5-5-5-5-5-5',
+        firstHit: 60,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      }
+    ]
+  },
+  {
+    id: 87,
+    names: {
+      en: 'Kryla',
+      tw: 'Kryla',
+      kr: 'Kryla',
+      fr: 'Kryla',
+      de: 'Kryla',
+      es: 'Kryla'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Jinx - Emberfrost Brew',
+          tw: '惡兆 - 烈火將至',
+          kr: '징크스 - 불의 양조',
+          fr: 'Maléfice - Braise gelée',
+          de: 'Verhexen - Eisbrand-Gebräu',
+          es: 'Gafe - Mezcolanza feroz'
+        },
+        framesList: '0',
+        firstHit: 150,
+        castTime: 40,
+        offset: 16,
+        base: 300,
+        damage: 'magic',
+        type: 'finish',
+        elements: [
+          'fire',
+          'ice'
+        ],
+        debuff: {
+          fire: 50,
+          ice: 50
+        }
+      },
+      {
+        names: {
+          en: 'Jinx - Geysershock Brew',
+          tw: '惡兆 - 暴雪將至',
+          kr: '징크스 - 눈보라의 양조',
+          fr: 'Maléfice - Geyser électrique',
+          de: 'Verhexen - Sprudelschock-Gebräu',
+          es: 'Gafe - Mezcolanza tormentosa'
+        },
+        framesList: '0',
+        firstHit: 70,
+        castTime: 40,
+        offset: 16,
+        base: 300,
+        damage: 'magic',
+        type: 'finish',
+        elements: [
+          'lightning',
+          'water'
+        ],
+        debuff: {
+          lightning: 50,
+          water: 50
+        }
+      },
+      {
+        names: {
+          en: 'Jinx - Cycloseismic Brew',
+          tw: '惡兆 - 泥流將至',
+          kr: '징크스 - 진흙의 양조',
+          fr: 'Maléfice - Cycloséisme',
+          de: 'Verhexen - Schlammböel-Gebräu',
+          es: 'Gafe - Mezcolanza turbia'
+        },
+        framesList: '0',
+        firstHit: 180,
+        castTime: 40,
+        offset: 16,
+        base: 300,
+        damage: 'magic',
+        type: 'finish',
+        elements: [
+          'wind',
+          'earth'
+        ],
+        debuff: {
+          wind: 50,
+          earth: 50
+        }
+      }
+    ]
+  },
+  {
+    id: 88,
+    names: {
+      en: 'Christine',
+      tw: 'Christine',
+      kr: 'Christine',
+      fr: 'Christine',
+      de: 'Christine',
+      es: 'Christine'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Ice Shards',
+          tw: '寒冰碎片',
+          kr: '얼음 조각',
+          fr: 'Fragment de glace',
+          de: 'Eissplitter',
+          es: 'Fragmentos de hielo'
+        },
+        framesList: '0-7-7-7-7-5-7-7-7-7',
+        firstHit: 49,
+        castTime: 20,
+        offset: 0,
+        base: 330,
+        ignore: 25,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+        dualable: false
+      },
+      {
+        names: {
+          en: 'Absolute Zero',
+          tw: '極限零凍',
+          kr: '절대영도',
+          fr: 'Zéro absolu',
+          de: 'Absoluter Nullpunkt',
+          es: 'Cero absoluto'
+        },
+        framesList: '0-5-5-5-5-5-5-5-5-5-5',
+        firstHit: 40,
+        castTime: 20,
+        offset: 16,
+        base: 300,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+      },
+      {
+        names: {
+          en: 'Absolute Zero (Max)',
+          tw: '極限零凍 (Max)',
+          kr: '절대영도 (Max)',
+          fr: 'Zéro absolu (Max)',
+          de: 'Absoluter Nullpunkt (Max)',
+          es: 'Cero absoluto (Max)'
+        },
+        framesList: '0-5-5-5-5-5-5-5-5-5-5',
+        firstHit: 40,
+        castTime: 20,
+        offset: 16,
+        base: 900,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+      },
+      {
+        names: {
+          en: 'Snow Burial',
+          tw: '冰雪葬',
+          kr: '설장',
+          fr: 'Cercueil de neige',
+          de: 'Schneebegräbnis',
+          es: 'Entierro de nieve'
+        },
+        framesList: '0-8-8-8-8-8-8-8-8-8',
+        firstHit: 60,
+        castTime: 58,
+        offset: 16,
+        base: 350,
+        ignore: 50,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+      }
+    ]
+  },
+  {
+    id: 89,
+    names: {
+      en: 'White Knight Noel',
+      tw: '白騎士諾埃爾',
+      kr: '백기사 노엘',
+      fr: 'Chevalier blanc Noël',
+      de: 'Weißer Ritter Noel',
+      es: 'Caballero blanco Noel'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Glacial Wave +2',
+          tw: '冰凍波 +2',
+          kr: '빙하의 파도 +2',
+          fr: 'Onde glaciale +2',
+          de: 'Gletscherwelle +2',
+          es: 'Ola glacial +2'
+        },
+        framesList: '0-6-4-3-3',
+        firstHit: 178,
+        castTime: 40,
+        offset: 16,
+        base: 400,
+        ignore: 25,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+        debuff: {
+          ice: 50
+        },
+        dualable: false
+      }
     ]
   }
 ];
