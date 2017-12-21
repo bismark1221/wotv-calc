@@ -27,6 +27,7 @@ export class FindBestService {
   private finishers: any[] = [];
   private chainUnits: any[] = [];
   private hitters: any[] = [];
+  private minFrames: number = 0;
 
   units: any[] = [];
 
@@ -56,6 +57,7 @@ export class FindBestService {
       this.frames = [];
       this.chainUnitsHits = [];
       this.chainersHits = [];
+      this.minFrames = 0;
       let chainerIndex = 0;
       let unitIndex = 0;
 
@@ -64,10 +66,10 @@ export class FindBestService {
           this.chainUnitsHits[unitIndex] = [];
           unit.index = index;
           unit.unitIndex = unitIndex;
+          unit.minFrame = unit.ability.range.min;
 
           if (unit.ability.type === 'chain') {
             this.chainersHits.push([]);
-            unit.minFrame = unit.ability.range.min;
             unit.maxFrame = unit.ability.range.max;
             unit.chainerIndex = chainerIndex;
             this.chainers.push(unit);
@@ -87,6 +89,7 @@ export class FindBestService {
         }
       });
 
+      this.findMinFrames();
       this.getElements();
       this.calculateDebuffModifier();
       this.calculateTotalDamage();
@@ -102,11 +105,11 @@ export class FindBestService {
         ['modifier', 'combo'].forEach(type => {
           this.chainUnits.forEach((unit, index) => {
             if (unit && unit.ability.type === 'finish' && type === 'modifier') {
-              for (let i = 0; i <= maxFrames; i++) {
+              unit.maxFrame = unit.ability.range.max > maxFrames ? unit.ability.range.max : maxFrames;
+
+              for (let i = unit.minFrame; i <= unit.maxFrame; i++) {
                 this.calculateUnitHits(unit, index, i);
               }
-              unit.minFrame = unit.ability.range.min;
-              unit.maxFrame = unit.ability.range.min > maxFrames ? unit.ability.range.min : maxFrames;
             } else if (unit && unit.ability.type === 'chain') {
               let chainerFrame = this.best[type].frames[unit.index];
               this.frames[index] = chainerFrame;
@@ -146,6 +149,12 @@ export class FindBestService {
     }
   }
 
+  private findMinFrames() {
+    this.units.forEach(unit => {
+      this.minFrames = unit && unit.minFrame < this.minFrames ? unit.minFrame : this.minFrames;
+    });
+  }
+
   private getElements() {
     this.units.forEach(unit => {
       if (unit) {
@@ -169,6 +178,8 @@ export class FindBestService {
       }
     });
   }
+
+
 
   private calculateDebuffModifier() {
     this.modifierElements = [];
@@ -214,7 +225,7 @@ export class FindBestService {
         this[type][unitPosition].frames = this[type + 'Hits'][unitPosition][i];
         this.calculateAllPossibleFrames(type, unitPosition + 1);
       }
-    } else if (this.frames.findIndex(x => x === 0) !== -1) {
+    } else if (this.frames.findIndex(x => x === this.minFrames || x === 0) !== -1) {
       let modifier = this.calculateChain(type);
       if (modifier > this.best.modifier.max) {
         this.best.modifier.max = modifier;

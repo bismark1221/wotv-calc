@@ -4555,7 +4555,10 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
-        dualable: false
+        dualable: false,
+        range: {
+          min: -10
+        }
       },
       {
         names: {
