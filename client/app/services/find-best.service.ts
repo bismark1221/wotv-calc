@@ -179,8 +179,6 @@ export class FindBestService {
     });
   }
 
-
-
   private calculateDebuffModifier() {
     this.modifierElements = [];
     this.elements.forEach(element => {
@@ -378,6 +376,4 @@ export class FindBestService {
 
     return matchingElements * 0.2;
   }
-
-
 }

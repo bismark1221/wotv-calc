@@ -80,6 +80,9 @@ nelmio_cors:
 
 fos_rest:
     body_listener: true
+    routing_loader:
+        include_format: false
+        default_format: json
     format_listener:
         rules:
             - { path: '^/', priorities: ['json'], fallback_format: json, prefer_extension: false }
@@ -88,3 +91,13 @@ fos_rest:
         view_response_listener: 'force'
         formats:
             json: true
+        mime_types:
+            json: ['application/json']
+    exception:
+        enabled: true
+        messages:
+            Symfony\Component\HttpKernel\Exception\HttpException: true
+    format_listener:
+        enabled: true
+        rules:
+            - { path: '^/api', priorities: ['json'], fallback_format: json, prefer_extension: false }

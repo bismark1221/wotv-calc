@@ -1,0 +1,9 @@
+hello:
+  path:      /hello
+  defaults:  { _controller: AppBundle:Chain:get }
+  methods: [GET]
+
+find_best:
+  path:      /find-best
+  defaults:  { _controller: AppBundle:Chain:findBest }
+  methods: [POST]

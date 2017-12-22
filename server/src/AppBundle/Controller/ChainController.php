@@ -14,9 +14,7 @@ use AppBundle\Service\ChainService;
 
 class ChainController extends FOSRestController
 {
-    /**
-     * @Rest\Get("/api/hello")
-     */
+
     public function getAction()
     {
         // $restresult = $this->getDoctrine()->getRepository('AppBundle:User')->findAll();
@@ -29,9 +27,9 @@ class ChainController extends FOSRestController
     }
 
     /**
-     * @Rest\Post("/api/find-best-chains")
+     * @Rest\Post("/api/find-best")
      */
-    public function findBestChainsAction(Request $request)
+    public function findBestAction(Request $request)
     {
         $data = json_decode($request->getContent(), true);
         if(empty($data) || !is_array($data))
