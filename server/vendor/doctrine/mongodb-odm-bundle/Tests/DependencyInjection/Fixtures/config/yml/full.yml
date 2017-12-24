@@ -1,0 +1,92 @@
+doctrine_mongodb:
+    fixture_loader: Symfony\Bridge\Doctrine\DataFixtures\ContainerAwareLoader
+    auto_generate_proxy_classes: true
+    auto_generate_hydrator_classes: true
+    default_connection: conn1
+    default_database: default_db_name
+    default_document_manager: default_dm_name
+    hydrator_dir: %kernel.cache_dir%/doctrine/odm/mongodb/Test_Hydrators
+    hydrator_namespace: Test_Hydrators
+    proxy_dir: %kernel.cache_dir%/doctrine/odm/mongodb/Test_Proxies
+    proxy_namespace: Test_Proxies
+
+    resolve_target_documents:
+        Foo\BarInterface: Bar\FooClass
+
+    default_commit_options:
+        j: false
+        timeout: 10
+        w: majority
+        wtimeout: 10
+        fsync: false
+        safe: 2
+
+    connections:
+        conn1:
+            server:               mongodb://localhost
+            options:
+                connect:          true
+                connectTimeoutMS: 500
+                db:               database_val
+                journal:          true
+                password:         password_val
+                readPreference:   secondaryPreferred
+                readPreferenceTags:
+                  - { dc: east, use: reporting }
+                  - { dc: west }
+                  - {  }
+                replicaSet:       foo
+                slaveOkay:        true
+                socketTimeoutMS:  1000
+                ssl:              true
+                authMechanism:    X509
+                username:         username_val
+                w:                majority
+                wTimeoutMS:       1000
+        conn2:
+            server: mongodb://otherhost
+
+    document_managers:
+        dm1:
+            default_repository_class:   Doctrine\ODM\MongoDB\DocumentRepository
+            repository_factory:         ~
+            mappings:
+                FooBundle:   annotation
+            metadata_cache_driver:
+                type:                  memcache
+                class:                 fooClass
+                host:                  host_val
+                port:                  1234
+                instance_class:        instance_val
+            profiler:
+                enabled: true
+                pretty:  false
+            filters:
+                disabled_filter:
+                    class:   Vendor\Filter\DisabledFilter
+                    enabled: false
+                basic_filter:
+                    class:   Vendor\Filter\BasicFilter
+                    enabled: true
+                complex_filter:
+                    class:   Vendor\Filter\ComplexFilter
+                    enabled: true
+                    parameters:
+                        integer: 1
+                        string:  foo
+                        object:  { key: value }
+                        array:   [ 1, 2, 3 ]
+        dm2:
+            connection:       dm2_connection
+            database:         db1
+            default_repository_class:   Foo\Bar\CustomRepository
+            repository_factory:         ~
+            mappings:
+                BarBundle:
+                    type:   yml
+                    dir:    %kernel.cache_dir%
+                    prefix: prefix_val
+                    alias:  alias_val
+                    is_bundle: false
+            metadata_cache_driver: apc
+            logging: true

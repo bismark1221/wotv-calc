@@ -2,12 +2,9 @@
 
 namespace AppBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use FOS\RestBundle\Controller\Annotations as Rest;
-use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 
 use AppBundle\Service\ChainService;
@@ -26,9 +23,6 @@ class ChainController extends FOSRestController
         return $foo;
     }
 
-    /**
-     * @Rest\Post("/api/find-best")
-     */
     public function findBestAction(Request $request)
     {
         $data = json_decode($request->getContent(), true);
