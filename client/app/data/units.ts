@@ -2438,6 +2438,23 @@ export const UNITS: any[] = [
         elements: [
           'fire'
         ]
+      },
+      {
+        names: {
+          en: 'Chainsaw',
+          fr: '回轉電鋸',
+          tw: '회전톱',
+          kr: 'Tronçonneuse',
+          de: 'Kettensäge',
+          es: 'Motosierra'
+        },
+        framesList: '0-8-8-8-8-8-16',
+        hitDamage: [14, 14, 15, 14, 14, 15, 14],
+        firstHit: 42,
+        castTime: 40,
+        offset: 17,
+        base: 140,
+        ignore: 25
       }
     ]
   },
@@ -3826,8 +3843,7 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 17,
-        base: 400,
-        ignore: 50,
+        base: 400
       },
       {
         names: {
