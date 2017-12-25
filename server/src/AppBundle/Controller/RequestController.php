@@ -8,7 +8,6 @@ use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 
 use AppBundle\Document\RequestDocument;
-
 use AppBundle\Service\ChainService;
 
 class RequestController extends FOSRestController
@@ -16,25 +15,39 @@ class RequestController extends FOSRestController
 
     public function saveAction(Request $data)
     {
-        $request = new RequestDocument();
-        $request->setModified($data->get('modified'));
-        $request->setUnits($data->get('units'));
-
         $link = "";
         forEach($data->get('units') as $unit) {
-            $link .= $unit['id'] . $unit['ability']['id'];
+            if (!$unit && $data->get('moving')) {
+                $link .= '00';
+            } else {
+                $link .= $unit['id'] . $unit['ability']['id'];
+            }
         }
 
-        $request->setLink($link);
+        $chain = $this->get('doctrine_mongodb')
+            ->getRepository('AppBundle:ChainDocument')
+            ->findOneBy(array('link' => $link));
 
-        $dm = $this->get('doctrine_mongodb')->getManager();
-        $dm->persist($request);
-        $dm->flush();
+        if ($chain && !$data->get('modified')) {
+            $result = $chain;
+        } else {
+            $request = new RequestDocument();
+            $request->setModified($data->get('modified'));
+            $request->setMoving($data->get('moving'));
+            $request->setUnits($data->get('units'));
 
-        $result = array();
-        $result['id'] = $request->getId();
-        $result['createdAt'] = $request->getCreatedAt();
-        $result['number'] = 42;
+            $request->setLink($link);
+
+            $dm = $this->get('doctrine_mongodb')->getManager();
+            $dm->persist($request);
+            $dm->flush();
+
+            $result = array();
+            $result['id'] = $request->getId();
+            $result['createdAt'] = $request->getCreatedAt();
+            $result['link'] = $request->getLink();
+            $result['number'] = 42;
+        }
 
         return $result;
     }
@@ -49,15 +62,14 @@ class RequestController extends FOSRestController
             throw $this->createNotFoundException('Request not found for id ' . $id);
         }
 
+        if ($request->getStatus() === 'done') {
+            $chain = $this->get('doctrine_mongodb')
+                ->getRepository('AppBundle:ChainDocument')
+                ->find($request->getChain());
 
+            $request->setChain($chain->getResult());
+        }
 
-
-        $chainService = new ChainService;
-        $result = $chainService->findBestFrames($request->getUnits());
-
-
-
-
-        return $result;
+        return $request;
     }
 }

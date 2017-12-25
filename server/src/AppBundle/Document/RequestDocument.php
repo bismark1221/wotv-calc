@@ -40,7 +40,12 @@ class RequestDocument
     protected $modified;
 
     /**
-     * @MongoDB\Field(type="string")
+     * @MongoDB\Field(type="boolean")
+     */
+    protected $moving;
+
+    /**
+     * @MongoDB\Field(type="raw")
      */
     protected $chain;
 
@@ -167,6 +172,28 @@ class RequestDocument
     public function getModified()
     {
         return $this->modified;
+    }
+
+    /**
+     * Set moving
+     *
+     * @param boolean $moving
+     * @return self
+     */
+    public function setMoving($moving)
+    {
+        $this->moving = $moving;
+        return $this;
+    }
+
+    /**
+     * Get moving
+     *
+     * @return boolean $moving
+     */
+    public function getMoving()
+    {
+        return $this->moving;
     }
 
     /**

@@ -7,33 +7,55 @@ use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 
+use AppBundle\Document\ChainDocument;
 use AppBundle\Service\ChainService;
 
 class ChainController extends FOSRestController
 {
-
-    public function getAction()
+    public function findBestAction()
     {
-        // $restresult = $this->getDoctrine()->getRepository('AppBundle:User')->findAll();
-        //   if ($restresult === null) {
-        //     return new View("there are no users exist", Response::HTTP_NOT_FOUND);
-        // }
-        $foo = new \StdClass();
-        $foo->bar = "baz";
-        return $foo;
-    }
+        $request = $this->get('doctrine_mongodb')
+            ->getRepository('AppBundle:RequestDocument')
+            ->findOneBy(array('status' => 'created'));
 
-    public function findBestAction(Request $request)
-    {
-        $data = json_decode($request->getContent(), true);
-        if(empty($data) || !is_array($data))
-        {
-          return new View("NULL VALUES ARE NOT ALLOWED", Response::HTTP_NOT_ACCEPTABLE);
+        if (!$request) {
+            throw $this->createNotFoundException('No more request to run');
+        } else {
+            $request->setStatus('running');
+
+            $dm = $this->get('doctrine_mongodb')->getManager();
+            $dm->persist($request);
+            $dm->flush();
         }
 
-        $chainService = new ChainService;
-        $test = $chainService->findBestFrames($data);
+        $chain = $this->get('doctrine_mongodb')
+            ->getRepository('AppBundle:ChainDocument')
+            ->findOneBy(array('link' => $request->getLink()));
 
-        return $test;
+        if ($chain) {
+            $result = $chain->getResult();
+        } else {
+            $chainService = new ChainService;
+            $result = $chainService->findBestFrames($request->getUnits());
+
+            $chain = new ChainDocument();
+            $chain->setUnits($request->getUnits());
+            $chain->setLink($request->getLink());
+            $chain->setModified($request->getModified());
+            unset($result['modifier']['hits']);
+            unset($result['combo']['hits']);
+            $chain->setResult($result);
+
+            $dm->persist($chain);
+            $dm->flush();
+        }
+
+        $request->setChain($chain->getId());
+        $request->setStatus('done');
+
+        $dm->persist($request);
+        $dm->flush();
+
+        return $result;
     }
 }
