@@ -1,5 +1,43 @@
-<div class="row requests form-group" >
+<div class="row requests form-group">
+  <h2 class="title fullWidth">
+    My Requests
+  </h2>
   <div *ngFor="let request of requests" class="requestBlock">
-    <div>{{ request.id }}</div>
+    <div class="requestTitle">Request : {{ request.id }}</div>
+    <div class="requestLeft verticalTop">
+      <div *ngIf="lang != 'fr'">Created the {{ request.createdAt | date:"MM-dd 'at' HH:mm"}}</div>
+      <div *ngIf="lang == 'fr'">Crée le {{ request.createdAt | date:"dd-MM 'à' HH:mm"}}</div>
+      <div>
+        <div class="unitsTitle">
+          Chain
+        </div>
+        <div class="unitsLeft">
+          <div *ngFor="let i of [0, 1, 2]">
+            <span *ngIf="request.units[i]">{{ request.units[i].name }} - {{ request.units[i].ability.name }}</span>
+            <span *ngIf="!request.units[i]">No unit</span>
+          </div>
+        </div>
+        <div class="unitsRight">
+          <div *ngFor="let i of [3, 4, 5]">
+            <span *ngIf="request.units[i]">{{ request.units[i].name }} - {{ request.units[i].ability.name }}</span>
+            <span *ngIf="!request.units[i]">No unit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="requestRight verticalTop">
+      <div *ngIf="request.status !== 'done'">
+        <h4>Position in queue</h4>
+        <h4>42</h4>
+      </div>
+      <div *ngIf="request.status === 'done'">
+        <h4>Result</h4>
+        <div>Modifier : {{ request.chain.modifier.max }}%<br /><a class="pointer" (click)="showResult('modifier')">(click to show)</a></div>
+        <div>Combo : {{ request.chain.combo.max }}<br /><a class="pointer" (click)="showResult('combo')">(click to show)</a></div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="requests.length === 0">
+    It seem you didn't made request for the time being... You can either import one or create one from the simulator
   </div>
 </div>

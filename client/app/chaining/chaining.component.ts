@@ -579,7 +579,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   async saveRequest() {
     let request = await this.backService.saveRequest(this.chain, false);
     let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
-    savedRequests.push(request);
+    savedRequests.unshift(request);
     this.localStorageService.set('requests', savedRequests);
 
     console.log(request);

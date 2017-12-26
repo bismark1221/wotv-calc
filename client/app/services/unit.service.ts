@@ -69,7 +69,7 @@ export class UnitService {
     return units;
   }
 
-  getUnits(): Promise<Unit[]> {
+  getUnits(): Promise<Unit[]> { // TO REMOVE
     return Promise.resolve(UNITS).then(unitsFromJson => {
       let units: Unit[] = [];
       unitsFromJson.forEach(element => {
