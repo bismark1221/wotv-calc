@@ -1,6 +1,7 @@
 import { TranslateService } from '@ngx-translate/core';
 
 export class Ability {
+  id: number;
   names: any = {
     en: 'New ability'
   };
@@ -25,6 +26,7 @@ export class Ability {
   }
 
   constructAbilityFromJson(ability: Ability, translateService: TranslateService): void {
+    this.id = ability.id;
     this.names = ability.names;
     this.getName(translateService);
     this.base = ability.base;

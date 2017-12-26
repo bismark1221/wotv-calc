@@ -28,26 +28,40 @@ class RequestController extends FOSRestController
             ->getRepository('AppBundle:ChainDocument')
             ->findOneBy(array('link' => $link));
 
+        $result = array();
+
+        $request = new RequestDocument();
+        $request->setModified($data->get('modified'));
+        $request->setMoving($data->get('moving'));
+        $request->setUnits($data->get('units'));
+        $request->setLink($link);
+
         if ($chain && !$data->get('modified')) {
-            $result = $chain;
+            $request->setStatus('done');
+            $request->setChain($chain->getId());
         } else {
-            $request = new RequestDocument();
-            $request->setModified($data->get('modified'));
-            $request->setMoving($data->get('moving'));
-            $request->setUnits($data->get('units'));
-
-            $request->setLink($link);
-
-            $dm = $this->get('doctrine_mongodb')->getManager();
-            $dm->persist($request);
-            $dm->flush();
-
-            $result = array();
-            $result['id'] = $request->getId();
-            $result['createdAt'] = $request->getCreatedAt();
-            $result['link'] = $request->getLink();
-            $result['number'] = 42;
+            $chain = null;
         }
+
+        $dm = $this->get('doctrine_mongodb')->getManager();
+        $dm->persist($request);
+        $dm->flush();
+
+        $result['id'] = $request->getId();
+        $result['createdAt'] = $request->getCreatedAt();
+        $result['units'] = $request->getUnits();
+        $result['status'] = $request->getStatus();
+        $result['chain'] = $chain;
+
+        $allInWaiting = $this->get('doctrine_mongodb')
+            ->getRepository('AppBundle:RequestDocument')
+            ->createQueryBuilder('n')
+            ->field('status')
+            ->in(array('created', 'running'))
+            ->getQuery()
+            ->execute();
+
+        $result['number'] = count($allInWaiting);
 
         return $result;
     }

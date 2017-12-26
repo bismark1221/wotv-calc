@@ -102,9 +102,10 @@ class ChainService
       $this->calculateAllPossibleFrames('chainers', 0);
 
       if (count($this->finishers) > 0) {
+        error_log(var_export($this->best, true));
         $maxFrames = max(
           $this->best['modifier']['hits'][count($this->best['modifier']['hits']) - 1],
-          $this->best['combo']['hits'][count($this->best['combo']['hits']) - 1]
+          count($this->best['combo']['hits']) > 0 ? $this->best['combo']['hits'][count($this->best['combo']['hits']) - 1] : 20
         ) + 1;
 
       if (!$maxFrames) {
@@ -114,17 +115,17 @@ class ChainService
       foreach (['modifier', 'combo'] as $type) {
         foreach ($this->chainUnits as $index => $unit) {
           if ($unit && $unit['ability']['type'] === 'finish' && $type === 'modifier') {
-            $this->units[$index]['maxFrame'] = $unit['ability']['range']['max'] > $maxFrames ? $unit['ability']['range']['max'] : $maxFrames;
+            $this->chainUnits[$index]['maxFrame'] = $unit['ability']['range']['max'] > $maxFrames ? $unit['ability']['range']['max'] : $maxFrames;
 
-            for ($i = $unit['minFrame']; $i <= $unit['maxFrame']; $i++) {
+            for ($i = $unit['minFrame']; $i <= $this->chainUnits[$index]['maxFrame']; $i++) {
               $this->calculateUnitHits($unit, $index, $i);
             }
           } else if ($unit && $unit['ability']['type'] === 'chain') {
             $chainerFrame = $this->best[$type]['frames'][$unit['index']];
             $this->frames[$index] = $chainerFrame;
             $this->units[$index]['frames'] = $this->chainUnitsHits[$index][$chainerFrame];
-            $this->units[$index]['minFrame'] = $chainerFrame;
-            $this->units[$index]['maxFrame'] = $chainerFrame;
+            $this->chainUnits[$index]['minFrame'] = $chainerFrame;
+            $this->chainUnits[$index]['maxFrame'] = $chainerFrame;
           }
         }
         $this->calculateAllPossibleFrames('chainUnits', 0);

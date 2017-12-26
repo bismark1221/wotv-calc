@@ -15,6 +15,7 @@ import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
+import { BackService } from '../services/back.service';
 import { FindBestService } from '../services/find-best.service';
 import { NavService } from '../services/nav.service';
 
@@ -51,6 +52,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   bestChainers: any[] = [];
   duplicatePosition: number[] = [];
   viewBestChainers: number = -1;
+  requestPosition: number = -1;
+  requestAlreadyDone: boolean = false;
+  requestResult: any[] = [];
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -84,7 +88,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private angulartics: Angulartics2,
     private translateService: TranslateService,
     private modalService: NgbModal,
-    private navService: NavService
+    private navService: NavService,
+    private backService: BackService
   ) {
     this.getTranslation();
 
@@ -546,6 +551,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeChain(): void {
+    this.requestPosition = -1;
+    this.requestAlreadyDone = false;
+    this.requestResult = [];
     if (this.availableDuplicate.length > 0) {
       this.chainService.getChain();
       this.firstHits = this.chainService.calculateFramesDiffForFirstHits();
@@ -566,6 +574,38 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.onChangeChain();
 
     this.angulartics.eventTrack.next({ action: 'findBestFrames_' + type, properties: { category: 'chain' }});
+  }
+
+  async saveRequest() {
+    let request = await this.backService.saveRequest(this.chain, false);
+    let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+    savedRequests.push(request);
+    this.localStorageService.set('requests', savedRequests);
+
+    console.log(request);
+
+    if (request.status === 'done') {
+      this.requestAlreadyDone = true;
+      this.requestResult = request.chain.result;
+    } else {
+      this.requestPosition = request.number;
+    }
+
+    this.angulartics.eventTrack.next({ action: 'saveRequest', properties: { category: 'chain' }});
+  }
+
+  showResult(type: string) {
+    let i = 0;
+
+    this.chain.forEach((unit, index) => {
+      if (unit && unit.id !== 'unselect') {
+        unit.framesGap = this.requestResult[type].frames[i];
+        i++;
+      }
+    });
+    this.onChangeChain();
+
+    this.angulartics.eventTrack.next({ action: 'showResult_' + type, properties: { category: 'chain' }});
   }
 
   findBestChainers(position: number) {
@@ -649,7 +689,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       return false;
     }
 
-    return true;
+    return false; /// TEST TEST TEST TEST
   }
 
   private countNumberOfHighRangeChainer() :number {

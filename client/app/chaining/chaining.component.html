@@ -303,8 +303,18 @@
           {{ 'chain.button.findBestCombo' | translate }}
         </button>
       </div>
-      <div *ngIf="!canFindBestChain()">
-        {{ 'chain.label.sorryBestModifier' | translate }}
+      <div *ngIf="!canFindBestChain() && requestPosition === -1 && !requestAlreadyDone">
+        <button class="btn btn-secondary buttonsChain" type="button" (click)="saveRequest()">
+          {{ 'chain.button.findInQueue' | translate }}
+        </button>
+      </div>
+      <div *ngIf="!canFindBestChain() && requestPosition !== -1 && !requestAlreadyDone">
+        Your request has been added to queue, you are positionned N°{{requestPosition}}, please check back the request page later!
+      </div>
+      <div *ngIf="!canFindBestChain() && requestAlreadyDone">
+        Lucky you, someone already search for the same chain, you can find the result below :<br />
+        - Max Modifier : {{ requestResult.modifier.max }}% <a class="pointer" (click)="showResult('modifier')">(click to show)</a><br />
+        - Max Combo : {{ requestResult.combo.max }} <a class="pointer" (click)="showResult('combo')">(click to show)</a>
       </div>
     </div>
     <div class="selectFramesGap">

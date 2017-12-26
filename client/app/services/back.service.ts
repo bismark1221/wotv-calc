@@ -13,10 +13,10 @@ export class BackService {
 
   constructor(private http: Http) { }
 
-  async saveRequest(units: any[], modified: boolean, moving: boolean) {
+  async saveRequest(units: any[], modified: boolean) {
     let body = {
       modified: modified,
-      moving: moving,
+      moving: false,
       units: this.formatUnitsForRequest(units)
     }
 
@@ -29,7 +29,48 @@ export class BackService {
   }
 
   private formatUnitsForRequest(units) {
-    return units;
+    let formattedUnits = [];
+
+    units.forEach(unit => {
+      if (!unit || unit.id === 'unselect') {
+        formattedUnits.push(null);
+      } else {
+        let formattedUnit = {
+          id: unit.id,
+          dual: unit.dual,
+          weapons: unit.weapons,
+          ability: {
+            id: unit.ability.id,
+            base: unit.ability.base,
+            castTime: unit.ability.castTime,
+            damage: unit.ability.damage,
+            debuff: unit.ability.debuff,
+            dualable: unit.ability.dualable,
+            elements: unit.ability.elements,
+            firstHit: unit.ability.firstHit,
+            framesList: unit.ability.framesList,
+            hitDamage: unit.ability.hitDamage,
+            ignore: unit.ability.ignore,
+            offset: unit.ability.offset,
+            range: unit.ability.range,
+            type: unit.ability.type
+          }
+        }
+
+        formattedUnits.push(formattedUnit);
+      }
+    });
+
+    return formattedUnits;
+  }
+
+  async getRequest(id: string) {
+    try {
+      const response = await this.http.get(this.requestsUrl + '/' + id).toPromise();
+      return response.json();
+    } catch (error) {
+      return error.json();
+    }
   }
 
   async findBestFrames() {
