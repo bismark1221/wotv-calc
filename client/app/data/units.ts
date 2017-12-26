@@ -2860,9 +2860,9 @@ export const UNITS: any[] = [
       {
         names: {
           en: 'Blood Hydra',
-          fr: '赤血九頭龍',
-          tw: '피의 히드라',
-          kr: 'Hydre sanglante',
+          tw: '赤血九頭龍',
+          kr: '피의 히드라',
+          fr: 'Hydre sanglante',
           de: 'Bluthydra',
           es: 'Hidra sangrienta'
         },
