@@ -2856,6 +2856,27 @@ export const UNITS: any[] = [
           'water'
         ],
         damage: 'magic'
+      },
+      {
+        names: {
+          en: 'Blood Hydra',
+          fr: '赤血九頭龍',
+          tw: '피의 히드라',
+          kr: 'Hydre sanglante',
+          de: 'Bluthydra',
+          es: 'Hidra sangrienta'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 215,
+        castTime: 45,
+        offset: 0,
+        base: 740,
+        elements: [
+          'water'
+        ],
+        damage: 'magic',
+        dualable: false
       }
     ]
   },
