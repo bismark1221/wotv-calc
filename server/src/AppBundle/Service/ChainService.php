@@ -102,7 +102,6 @@ class ChainService
       $this->calculateAllPossibleFrames('chainers', 0);
 
       if (count($this->finishers) > 0) {
-        error_log(var_export($this->best, true));
         $maxFrames = max(
           $this->best['modifier']['hits'][count($this->best['modifier']['hits']) - 1],
           count($this->best['combo']['hits']) > 0 ? $this->best['combo']['hits'][count($this->best['combo']['hits']) - 1] : 20

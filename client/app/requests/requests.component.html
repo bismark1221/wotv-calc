@@ -27,9 +27,12 @@
         </div>
       </div>
       <div class="requestRight verticalTop">
+        <div *ngIf="request.error">
+          Your request generate an other... If the problem persist contact me :)
+        </div>
         <div *ngIf="request.status !== 'done'">
           <h4>Position<br/>in queue</h4>
-          <h4>42</h4>
+          <h4>{{ request.number }}</h4>
         </div>
         <div *ngIf="request.status === 'done'">
           <h4>Result</h4>

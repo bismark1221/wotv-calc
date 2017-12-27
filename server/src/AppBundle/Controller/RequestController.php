@@ -12,7 +12,6 @@ use AppBundle\Service\ChainService;
 
 class RequestController extends FOSRestController
 {
-
     public function saveAction(Request $data)
     {
         $link = "";
@@ -24,11 +23,10 @@ class RequestController extends FOSRestController
             }
         }
 
-        $chain = $this->get('doctrine_mongodb')
-            ->getRepository('AppBundle:ChainDocument')
-            ->findOneBy(array('link' => $link));
+        $dm = $this->get('doctrine_mongodb');
 
-        $result = array();
+        $chain = $dm->getRepository('AppBundle:ChainDocument')
+            ->findOneBy(array('link' => $link));
 
         $request = new RequestDocument();
         $request->setModified($data->get('modified'));
@@ -44,33 +42,25 @@ class RequestController extends FOSRestController
             $chain = null;
         }
 
-        $dm = $this->get('doctrine_mongodb')->getManager();
+        $dm = $dm->getManager();
         $dm->persist($request);
         $dm->flush();
 
+        $result = array();
         $result['id'] = $request->getId();
         $result['createdAt'] = $request->getCreatedAt();
         $result['units'] = $request->getUnits();
         $result['status'] = $request->getStatus();
         $result['chain'] = $chain;
-
-        $allInWaiting = $this->get('doctrine_mongodb')
-            ->getRepository('AppBundle:RequestDocument')
-            ->createQueryBuilder('n')
-            ->field('status')
-            ->in(array('created', 'running'))
-            ->getQuery()
-            ->execute();
-
-        $result['number'] = count($allInWaiting);
+        $result['number'] = $this->getRequestQueuePosition($request->getId(), $link);
 
         return $result;
     }
 
     public function getAction($id)
     {
-        $request = $this->get('doctrine_mongodb')
-            ->getRepository('AppBundle:RequestDocument')
+        $dm = $this->get('doctrine_mongodb');
+        $request = $dm->getRepository('AppBundle:RequestDocument')
             ->find($id);
 
         if (!$request) {
@@ -78,13 +68,43 @@ class RequestController extends FOSRestController
         }
 
         if ($request->getStatus() === 'done') {
-            $chain = $this->get('doctrine_mongodb')
-                ->getRepository('AppBundle:ChainDocument')
+            $chain = $dm->getRepository('AppBundle:ChainDocument')
                 ->find($request->getChain());
 
             $request->setChain($chain->getResult());
         }
 
-        return $request;
+        $result = array();
+        $result['id'] = $request->getId();
+        $result['createdAt'] = $request->getCreatedAt();
+        $result['units'] = $request->getUnits();
+        $result['status'] = $request->getStatus();
+        $result['chain'] = $request->getChain();
+        $result['number'] = $this->getRequestQueuePosition($id, $request->getLink());
+
+        return $result;
+    }
+
+    private function getRequestQueuePosition($id, $link) {
+        $allInWaiting = $this->get('doctrine_mongodb')
+            ->getRepository('AppBundle:RequestDocument')
+            ->createQueryBuilder('n')
+            ->field('status')
+            ->in(array('created', 'running'))
+            ->group(array('link' => 1 ), array ('total' => 0))
+            ->reduce('function(curr, result) {result.total += 1;}')
+            ->sort('createdAt', 'asc')
+            ->getQuery()
+            ->execute();
+
+        $i = 0;
+        foreach ($allInWaiting as $index => $request) {
+            $i++;
+            if ($request['link'] === $link) {
+                break;
+            }
+        }
+
+        return $i;
     }
 }

@@ -36,22 +36,32 @@ export class RequestsComponent implements OnInit {
     let requests = this.requests;
     if (refresh) {
       requests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+
+      await Promise.all(requests.map(async (request, index) => {
+        if (request && request.status !== 'done' && request.id) {
+          this.loading = true;
+          let getRequest = await this.backService.getRequest(request.id);
+          this.loading = false;
+
+          if (getRequest.id) {
+            requests[index] = getRequest;
+          } else if (getRequest.code === 404) {
+            requests.splice(index, 1);
+          } else {
+            requests[index].error = true;
+          }
+        } else if (!request || request.code === 404) {
+          requests.splice(index, 1);
+        } else if (request.code) {
+          requests[index].error = true;
+        }
+      }));
+
+      this.requests = requests;
+      this.localSaveRequests();
     }
 
-    await Promise.all(requests.map(async (request, index) => {
-      if (request && request.status !== 'done' && request.id && refresh) {
-        this.loading = true;
-        requests[index] = await this.backService.getRequest(request.id);
-        this.loading = false;
-      } else if (!request || !request.id) {
-        requests.splice(index, 1);
-      }
-    }));
-
-    this.requests = requests;
-
     this.getNames();
-    this.localSaveRequests();
   }
 
   private localSaveRequests() {
