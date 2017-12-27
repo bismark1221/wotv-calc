@@ -39,6 +39,7 @@ class RequestController extends FOSRestController
         if ($chain && !$data->get('modified')) {
             $request->setStatus('done');
             $request->setChain($chain->getId());
+            $chain = $chain->getResult();
         } else {
             $chain = null;
         }

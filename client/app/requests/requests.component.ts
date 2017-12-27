@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
@@ -14,12 +15,14 @@ import { BackService } from '../services/back.service';
 export class RequestsComponent implements OnInit {
   lang = 'en';
   requests: any[] = [];
+  loading = false;
 
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private unitService: UnitService,
     private backService: BackService,
+    private router: Router
   ) {
     this.lang = this.translateService.currentLang;
 
@@ -29,22 +32,23 @@ export class RequestsComponent implements OnInit {
     });
   }
 
-  private getRequests(refresh: boolean): void {
+  private async getRequests(refresh: boolean) {
+    let requests = this.requests;
     if (refresh) {
-      this.requests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+      requests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
     }
 
-    this.updateRequests(refresh);
-
-    console.log(this.requests)
-  }
-
-  private async updateRequests(refresh: boolean) {
-    await Promise.all(this.requests.map(async (request, index) => {
-      if (request.status !== 'done' && refresh) {
-        this.requests[index] = await this.backService.getRequest(request.id);
+    await Promise.all(requests.map(async (request, index) => {
+      if (request && request.status !== 'done' && request.id && refresh) {
+        this.loading = true;
+        requests[index] = await this.backService.getRequest(request.id);
+        this.loading = false;
+      } else if (!request || !request.id) {
+        requests.splice(index, 1);
       }
     }));
+
+    this.requests = requests;
 
     this.getNames();
     this.localSaveRequests();
@@ -66,15 +70,13 @@ export class RequestsComponent implements OnInit {
   }
 
   private getNames() {
-    this.unitService.getUnits().then(units => {
-      this.requests.forEach(request => {
-        request.units.forEach(unit => {
-          if (unit) {
-            let fullUnit = this.unitService.getUnit(unit.id);
-            unit.name = fullUnit.names[this.lang];
-            unit.ability.name = fullUnit.abilities[unit.ability.id - 1].names[this.lang];
-          }
-        });
+    this.requests.forEach(request => {
+      request.units.forEach(unit => {
+        if (unit) {
+          let fullUnit = this.unitService.getUnit(unit.id);
+          unit.name = fullUnit.names[this.lang];
+          unit.ability.name = fullUnit.abilities[unit.ability.id - 1].names[this.lang];
+        }
       });
     });
   }
@@ -83,8 +85,11 @@ export class RequestsComponent implements OnInit {
     this.getRequests(true);
   }
 
+  showResult(id: string, type: string) {
+    this.router.navigate(['/chain',{request: id, type: type}]);
+  }
+
   async findBest() {
     let result = await this.backService.findBestFrames();
-    console.log(result)
   }
 }

@@ -113,7 +113,6 @@ export class ChainChartComponent implements OnInit {
     let update = this.chart.selectAll('.bar').data(this.data);
     let tooltip = d3.select("body").append("div").attr("class", "tooltip-chart").style("opacity", 0);
 
-
     // remove exiting bars
     update.exit().remove();
 

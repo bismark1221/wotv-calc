@@ -38,10 +38,8 @@ export class FindBestService {
   }
 
   private getPossibleElements(): void {
-    this.elementsService.getElements().then(elements => {
-      this.elements = elements
-      this.elements.splice(0, 1);
-    });
+    this.elements = this.elementsService.getElements();
+    this.elements.splice(0, 1);
   }
 
   findBestFrames() {
