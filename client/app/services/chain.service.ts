@@ -54,6 +54,7 @@ export class ChainService {
 
     this.units.forEach((unit, index) => {
       if (unit) {
+        unit.framesGap = unit.framesGap ? unit.framesGap : 0;
         unit.frames = this.calculateUnitHits(unit);
         unit.index = index;
         this.chainers.push(unit);

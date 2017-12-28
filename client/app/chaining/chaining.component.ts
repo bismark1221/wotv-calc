@@ -429,15 +429,24 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   duplicateUnit(position: number) {
-    let unit = this.unitService.getUnit(this.duplicatePosition[position]);
-    this.selectedUnits[position] = unit;
+    let id = this.duplicatePosition[position];
+    let unit;
 
-    this.onChangeUnit(
-      position,
-      unit.id,
-      this.selectedAbilities[this.positionIdsInChain[this.duplicatePosition[position]]],
-      this.chain[this.positionIdsInChain[this.duplicatePosition[position]]].framesGap
-    );
+    if (id < 10000) {
+      unit = this.unitService.getUnit(this.duplicatePosition[position]);
+    } else {
+      unit = this.createdUnits.find(unit => unit.id === id);
+    }
+
+    if (unit.id) {
+      this.selectedUnits[position] = unit;
+      this.onChangeUnit(
+        position,
+        unit.id,
+        this.selectedAbilities[this.positionIdsInChain[this.duplicatePosition[position]]],
+        this.chain[this.positionIdsInChain[this.duplicatePosition[position]]].framesGap
+      );
+    }
   }
 
   unselectUnit(position: number) {

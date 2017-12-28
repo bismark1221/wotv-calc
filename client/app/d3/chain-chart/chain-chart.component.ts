@@ -87,8 +87,9 @@ export class ChainChartComponent implements OnInit {
       .attr("height", element.offsetHeight)
       .attr("transform", `translate(${this.margin.left}, ${this.margin.top})`);
 
-    let xDomain = [this.minFrame, this.maxFrame];
+    let xDomain = [isNaN(this.minFrame) ? 0 : this.minFrame, this.maxFrame];
     let yDomain = this.getUnitsName();
+
     this.xScale = d3.scaleLinear().domain(xDomain).range([0, this.width]);
     this.yScale = d3.scaleBand().padding(0.1).domain(yDomain).rangeRound([0, this.height]);
 
