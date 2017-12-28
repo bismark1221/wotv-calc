@@ -67,6 +67,20 @@
   "my-units" : {
     "title" : "Mes Unités"
   },
+  "requests" : {
+    "title" : "My Requêtes",
+    "request" : "Requête",
+    "created" : "Crée le",
+    "noUnit" : "Pas d'unité",
+    "result" : "Résultat",
+    "position" : "Position dans la file",
+    "modifier" : "Modificateur",
+    "combo" : "Combo",
+    "noRequests" : "Il semble que vous n'aillez pas encore fait de requêtes... Vous pouvez soit en importer ou en créer une via le simlateur",
+    "search" : "Vos requêtes sont en train d'être recherchées...",
+    "error" : "Votre requête a génerer une erreur... Si le problème persiste contactez moi :)",
+    "click" : "cliquer pour voir"
+  },
   "macro" : {
     "width" : "Largeur",
     "height" : "Hauteur",
@@ -112,7 +126,8 @@
   "nav" : {
     "chain" : "Outil de Chaine",
     "my" : "Mes Unités",
-    "how-to" : "FAQ"
+    "how-to" : "FAQ",
+    "requests" : "Mes Requêtes"
   },
   "how-to" : {
     "title" : "FAQ",
