@@ -4734,5 +4734,40 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 90,
+    names: {
+      en: 'Frozen Hurricane',
+      tw: '冰凍颶風',
+      kr: '프로즌 허리케인',
+      fr: 'Ouragan gelé',
+      de: 'Eisiger Sturmwind',
+      es: 'Huracán gélido'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Frozen Hurricane',
+          tw: '冰凍颶風',
+          kr: '프로즌 허리케인',
+          fr: 'Ouragan gelé',
+          de: 'Eisiger Sturmwind',
+          es: 'Huracán gélido'
+        },
+        framesList: '0-12-12-12-12-12-12-12-12-12-12-12',
+        hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
+        firstHit: 80,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        ignore: 25,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ],
+        dualable: false
+      }
+    ]
   }
 ];
