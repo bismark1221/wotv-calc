@@ -4769,5 +4769,246 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 91,
+    names: {
+      en: 'Kaliva',
+      tw: '卡里瓦',
+      kr: '카리바',
+      fr: 'Kaliva',
+      de: 'Kaliva',
+      es: 'Kaliva'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Focus Magic - Piercing Shot',
+          tw: '魔法聚集-穿刺',
+          kr: '포커스 매직·피어싱 샷',
+          fr: 'Concentration magique - Tir perforant',
+          de: 'Fokusmagie - Durchschuss',
+          es: 'Concentrar magia - Disparo penetrante'
+        },
+        framesList: '0-6-6-6-6',
+        firstHit: 8,
+        castTime: 40,
+        offset: 16,
+        base: 150,
+        ignore: 30,
+        damage: 'magic',
+        elements: [
+          'ice'
+        ]
+      },
+      {
+        names: {
+          en: 'Focus Magic - Water Shot',
+          tw: '魔法聚集-水擊',
+          kr: '포커스 매직·워터 샷',
+          fr: 'Concentration magique - Tir aquatique',
+          de: 'Fokusmagie - Wasserschuss',
+          es: 'Concentrar magia - Disparo acuático'
+        },
+        framesList: '0-6-6-6-6',
+        firstHit: 8,
+        castTime: 40,
+        offset: 16,
+        base: 150,
+        damage: 'magic',
+        elements: [
+          'water'
+        ]
+      },
+      {
+        names: {
+          en: 'Focus Magic - Frostbite (Max)',
+          tw: '魔法聚集-凍傷 (Max)',
+          kr: '포커스 매직·프로스트바이트 (Max)',
+          fr: 'Concentration magique - Congélation (Max)',
+          de: 'Fokusmagie - Frostbeule (Max)',
+          es: 'Concentrar magia - Congelación (Max)'
+        },
+        framesList: '0',
+        firstHit: 120,
+        castTime: 40,
+        offset: 16,
+        base: 420,
+        damage: 'magic',
+        type: 'finish',
+        elements: [
+          'ice'
+        ]
+      },
+      {
+        names: {
+          en: 'Aquatic Implosion',
+          tw: '水波聚爆',
+          kr: '아쿠아 임플로전',
+          fr: 'Explosion aquatique',
+          de: 'Aquatische Implosion',
+          es: 'Implosión acuática'
+        },
+        framesList: '0-6-6-6-6-7',
+        hitDamage: [16, 16, 16, 16, 16, 20],
+        firstHit: 46,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        damage: 'magic',
+        elements: [
+          'water'
+        ],
+        dualable: false
+      },
+      {
+        names: {
+          en: 'Icicle Press',
+          tw: '冰雪重壓',
+          kr: '아이시클 프레스',
+          fr: 'Pression de stalactite',
+          de: 'Eiszapfenmangel',
+          es: 'Carámbano de hielo'
+        },
+        framesList: '0-15',
+        firstHit: 110,
+        castTime: 40,
+        offset: 16,
+        base: 200,
+        damage: 'magic',
+        type: 'finish',
+        debuff: {
+          ice: 50,
+          water: 50
+        },
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 92,
+    names: {
+      en: 'Ray Jack',
+      tw: '雷佳克',
+      kr: '레이 잭',
+      fr: 'Ray Jack',
+      de: 'Ray Jack',
+      es: 'Ray Jack'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Lightning Strike',
+          tw: '電閃雷鳴',
+          kr: '라이트닝 버스터',
+          fr: 'Frappe électrique',
+          de: 'Blitzhieb',
+          es: 'Golpe atronador'
+        },
+        framesList: '0-5-5-5-5-5',
+        hitDamage: [16, 17, 16, 17, 17, 17],
+        firstHit: 46,
+        castTime: 40,
+        offset: 16,
+        base: 400,
+        elements: [
+          'light'
+        ]
+      },
+      {
+        names: {
+          en: 'Holy Affliction',
+          tw: '聖光悲愴',
+          kr: '홀리 어플릭션',
+          fr: 'Affliction sacrée',
+          de: 'Heilige Trübsal',
+          es: 'Aflicción sagrada'
+        },
+        framesList: '0-6-6-6-6-6',
+        hitDamage: [16, 17, 16, 17, 17, 17],
+        firstHit: 46,
+        castTime: 40,
+        offset: 16,
+        base: 400,
+        elements: [
+          'light'
+        ]
+      },
+      {
+        names: {
+          en: 'Luminous Strike',
+          tw: '輝光直擊',
+          kr: '루미너스 스트라이크',
+          fr: 'Frappe lumineuse',
+          de: 'Leuchthieb',
+          es: 'Golpe de luz'
+        },
+        framesList: '0-8-8-8-8-8',
+        hitDamage: [16, 17, 16, 17, 17, 17],
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 450,
+        elements: [
+          'light'
+        ]
+      },
+      {
+        names: {
+          en: 'Sacred Strike',
+          tw: '聖光直擊',
+          kr: '세이크리드 스트라이크',
+          fr: 'Frappe sacrée',
+          de: 'Heiliger Hieb',
+          es: 'Golpe sagrado'
+        },
+        framesList: '0-6-6-6-6-6',
+        hitDamage: [16, 17, 16, 17, 17, 17],
+        firstHit: 46,
+        castTime: 40,
+        offset: 16,
+        base: 220,
+        ignore: 50
+      },
+      {
+        names: {
+          en: 'Morning Star',
+          tw: '啟明星獻禮',
+          kr: '루시퍼의 선물',
+          fr: 'Étoile du matin',
+          de: 'Morgenstern',
+          es: 'Estrella del alba'
+        },
+        framesList: '0-6-6-6-6-7',
+        hitDamage: [16, 16, 16, 16, 16, 20],
+        firstHit: 46,
+        castTime: 40,
+        offset: 16,
+        base: 220,
+        elements: [
+          'light'
+        ]
+      },
+      {
+        names: {
+          en: 'Hero of Legend',
+          tw: '神諭勇者',
+          kr: '신탁의 용사',
+          fr: 'Héros légendaire',
+          de: 'Legendärer Held',
+          es: 'Héroe legendario'
+        },
+        framesList: '0',
+        firstHit: 175,
+        castTime: 40,
+        offset: 16,
+        base: 420,
+        ignore: 50,
+        elements: [
+          'light'
+        ],
+        dualable: false
+      }
+    ]
   }
 ];
