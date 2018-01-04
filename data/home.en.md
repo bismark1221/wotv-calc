@@ -11,6 +11,10 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+04/01/2018
+ - Happy New Year :)
+ - Right now I don't time to adapt the simulator to the triple cast of Kaliva... It should be good in 2 weeks, sorry...
+
 19/12/2017
  - Damage dristribution for an ability are now implemented (For exemple Cloud's LB is 5% per hit expect for the last one which is 30%)
 

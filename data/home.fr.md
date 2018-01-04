@@ -11,6 +11,10 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+04/01/2018
+ - Bonne Année :)
+ - Je n'ai pas le temps de gérer le triple-cast de Kaliva tout de suite... D'ici 2 semaines ça devrait êter bon, désolé...
+
 19/12/2017
  - Gestion de la répartition des dégats pour une abilité (par exemple pour la LB de Cloud les hits sont tous à 5% sauf le dernier qui est 30% ce qui change la philosophie de l'abilité)
 
