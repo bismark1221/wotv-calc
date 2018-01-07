@@ -4966,7 +4966,7 @@ export const UNITS: any[] = [
         hitDamage: [16, 17, 16, 17, 17, 17],
         firstHit: 46,
         castTime: 40,
-        offset: 16,
+        offset: 8,
         base: 220,
         ignore: 50
       },
