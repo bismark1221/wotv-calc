@@ -11,6 +11,11 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+23/01/2018
+ - Hello à tous, bon comme certains l'ont remarqué le site n'a pas été mis à jour pendant 2 semaines :( Vraiment désolé, j'ai changé de maison, j'ai dû faire des travaux et pas d'internet pendant 10 jours m'ont beaucoup perturbé... Mais je suis de retour et le site est donc à jour :)
+ - Ajout des 2 dernières bannières (Balthier, Lasswell flammes gelées, ...)
+ - Ajout des dernières améliorations (Aileen, Vicoria, ...)
+
 04/01/2018
  - Bonne Année :)
  - Je n'ai pas le temps de gérer le triple-cast de Kaliva tout de suite... D'ici 2 semaines ça devrait êter bon, désolé...

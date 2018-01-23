@@ -97,9 +97,6 @@ export const UNITS: any[] = [
         },
         dualable: false
       },
-    ],
-    weapons : [
-      'water'
     ]
   },
   {
@@ -200,9 +197,6 @@ export const UNITS: any[] = [
           light: 50
         }
       }
-    ],
-    weapons : [
-      'light'
     ]
   },
   {
@@ -336,12 +330,12 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Piledriver +2 (JP Only)',
-          fr: 'Sonnette +2 (JP Seulement)',
-          tw: '打樁機 +2 (JP Only)',
-          kr: '항타기 +2 (JP Only)',
-          de: 'Ramme +2 (JP Only)',
-          es: 'Martinete +2 (JP Only)'
+          en: 'Piledriver +2',
+          fr: 'Sonnette +2',
+          tw: '打樁機 +2',
+          kr: '항타기 +2',
+          de: 'Ramme +2',
+          es: 'Martinete +2'
         },
         framesList: '0-8-8-8-8-8-8',
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
@@ -354,9 +348,6 @@ export const UNITS: any[] = [
           earth: 75
         }
       }
-    ],
-    weapons : [
-      'earth'
     ]
   },
   {
@@ -410,9 +401,6 @@ export const UNITS: any[] = [
           'dark'
         ]
       }
-    ],
-    weapons : [
-      'dark'
     ]
   },
   {
@@ -772,9 +760,6 @@ export const UNITS: any[] = [
           light: 50
         }
       }
-    ],
-    weapons : [
-      'light'
     ]
   },
   {
@@ -801,8 +786,23 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 200,
+        base: 200
       },
+      {
+        names: {
+          en: 'Disorder +2',
+          fr: 'Désordre +2',
+          tw: '無序亂射 +2',
+          kr: '난동 +2',
+          de: 'Störung +2',
+          es: 'Desorden +2'
+        },
+        framesList: '0-5-5-5-5-5-5-5-5-5',
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 350
+      }
     ]
   },
   {
@@ -887,6 +887,30 @@ export const UNITS: any[] = [
           lightning: 50
         }
       },
+      {
+        names: {
+          en: 'Thunder Clap +2',
+          fr: 'Coup de tonnerre +2',
+          tw: '雷霆一擊 +2',
+          kr: '내리치는 천둥번개 +2',
+          de: 'Donnerkrachen +2',
+          es: 'Trueno atronador +2'
+        },
+        framesList: '0-5-5-5-5-5-5',
+        hitDamage: [14, 14, 14, 14, 14, 15, 15],
+        firstHit: 47,
+        castTime: 40,
+        offset: 16,
+        base: 320,
+        elements: [
+          'light',
+          'lightning'
+        ],
+        debuff: {
+          light: 50,
+          lightning: 50
+        }
+      }
     ]
   },
   {
@@ -997,13 +1021,30 @@ export const UNITS: any[] = [
         offset: 66,
         base: 200,
         ignore: 50,
-        debuff: {
-          wind: 50
-        },
         elements: [
           'wind'
         ]
       },
+      {
+        names: {
+          en: 'Sonic Blast +2',
+          fr: 'Rafale sonique +2',
+          tw: '音速突擊 +2',
+          kr: '소닉 블래스트 +2',
+          de: 'Schallwelle +2',
+          es: 'Estallido sónico +2'
+        },
+        framesList: '0-10-10-10-10-10-10',
+        hitDamage: [14, 14, 14, 14, 14, 14, 16],
+        firstHit: 10,
+        castTime: 0,
+        offset: 66,
+        base: 250,
+        ignore: 50,
+        elements: [
+          'wind'
+        ]
+      }
     ]
   },
   {
@@ -1678,6 +1719,25 @@ export const UNITS: any[] = [
         base: 280,
         ignore: 50,
         damage: 'magic'
+      },
+      {
+        names: {
+          en: 'Riot Blade - Trance',
+          fr: '入神·暴亂劍',
+          tw: '트랜스·폭도의 검격',
+          kr: 'Lame rebelle - Transe',
+          de: 'Tumultschwert - Trance',
+          es: 'Hoja letal - trance'
+        },
+        framesList: '0-10-14-9-16-12-42-4-4',
+        hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
+        firstHit: 49,
+        castTime: 0,
+        offset: 0,
+        base: 390,
+        ignore: 50,
+        damage: 'magic',
+        dualable: false
       }
     ]
   },
@@ -1799,6 +1859,26 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         base: 940,
+        elements: [
+          'dark'
+        ],
+        damage: 'magic',
+        dualable: false
+      },
+      {
+        names: {
+          en: 'Overflow +2',
+          fr: 'Dépassement +2',
+          tw: '溢出 +2',
+          kr: '범람 +2',
+          de: 'Überfluss +2',
+          es: 'Derrame +2'
+        },
+        framesList: '0-24-24-24-24-24-24-24-24-24',
+        firstHit: 57,
+        castTime: 40,
+        offset: 16,
+        base: 1150,
         elements: [
           'dark'
         ],
@@ -2279,8 +2359,27 @@ export const UNITS: any[] = [
         framesList: '0',
         firstHit: 350,
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 250,
+        ignore: 25,
+        damage: 'magic'
+      },
+      {
+        names: {
+          en: 'Meteor +2',
+          fr: 'Météore +2',
+          tw: '隕石 +2',
+          kr: '메테오 +2',
+          de: 'Meteo +2',
+          es: 'Meteo +2'
+        },
+        type: 'finish',
+        framesList: '0-20-20',
+        hitDamage: [33, 33, 34],
+        firstHit: 310,
+        castTime: 40,
+        offset: 16,
+        base: 300,
         ignore: 25,
         damage: 'magic'
       },
@@ -2297,26 +2396,8 @@ export const UNITS: any[] = [
         framesList: '0',
         firstHit: 120,
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 190,
-        damage: 'magic'
-      },
-      {
-        names: {
-          en: 'Ultima',
-          fr: 'Ultima',
-          tw: '究極',
-          kr: '알테마',
-          de: 'Ultima',
-          es: 'Artema'
-        },
-        type: 'finish',
-        framesList: '0',
-        firstHit: 350,
-        castTime: 40,
-        offset: 0,
-        base: 280,
-        ignore: 50,
         damage: 'magic'
       },
       {
@@ -2664,8 +2745,24 @@ export const UNITS: any[] = [
         framesList: '0',
         firstHit: 100,
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 450
+      },
+      {
+        names: {
+          en: 'Best Shot +2',
+          fr: 'Superbe tir +2',
+          tw: '準確射擊 +2',
+          kr: '최고의 사격 +2',
+          de: 'Bester Schuss +2',
+          es: 'Tiro superbio +2'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 100,
+        castTime: 40,
+        offset: 16,
+        base: 555
       }
     ]
   },
@@ -5007,6 +5104,487 @@ export const UNITS: any[] = [
         elements: [
           'light'
         ],
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 93,
+    names: {
+      en: 'Kaede',
+      tw: '楓',
+      kr: '카에데',
+      fr: 'Kaede',
+      de: 'Kaede',
+      es: 'Kaede'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Halberd Dance',
+          tw: '薙刀艷舞',
+          kr: '치도염무',
+          fr: 'Danse de hallebarde',
+          de: 'Hellebardentanz',
+          es: 'Danza de alabarda'
+        },
+        framesList: '0-10-10-10-10-10',
+        hitDamage: [16, 16, 17, 17, 17, 17],
+        firstHit: 42,
+        castTime: 40,
+        offset: 26,
+        base: 300,
+        ignore: 25
+      },
+      {
+        names: {
+          en: 'Samurai Princess\'s Order',
+          tw: '公主武士大號令',
+          kr: '사무라이 공주의 대호령',
+          fr: 'Ordre de la princesse samouraï',
+          de: 'Befehl der Samurai-Prinzessin',
+          es: 'Orden de la princesa samurái'
+        },
+        framesList: '0-10-10-10-10-10-10-10-10-10',
+        firstHit: 78,
+        castTime: 0,
+        offset: 0,
+        base: 790,
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 94,
+    names: {
+      en: 'Jiraiya',
+      tw: '自來也',
+      kr: '지라이야',
+      fr: 'Jiraiya',
+      de: 'Jiraiya',
+      es: 'Jiraiya'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Blazing Hell Slash',
+          tw: '焰獄斬',
+          kr: '염옥참',
+          fr: 'Entaille flammes infernales',
+          de: 'Flammender Höllenschlag',
+          es: 'Tajo de fuego infernal'
+        },
+        framesList: '0-2-4-12-5',
+        firstHit: 24,
+        castTime: 45,
+        offset: 26,
+        base: 550,
+        damage: 'hybrid',
+        elements: [
+          'fire'
+        ]
+      },
+      {
+        names: {
+          en: 'Torpedo Stance',
+          tw: '雷擊陣',
+          kr: '전격진',
+          fr: 'Posture torpille',
+          de: 'Torpedo-Kata',
+          es: 'Formación torpedo'
+        },
+        framesList: '0-10-10-10-10',
+        firstHit: 45,
+        castTime: 40,
+        offset: 26,
+        base: 450,
+        damage: 'hybrid',
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        names: {
+          en: 'Purgatory Fire Slash',
+          tw: '煉獄剎燒斬',
+          kr: '연옥찰소참',
+          fr: 'Flammes du purgatoire',
+          de: 'Flammenschlag des Purgatoriums',
+          es: 'Tajo ígneo del purgatorio'
+        },
+        framesList: '0-8-8-8-8-8-8',
+        hitDamage: [10, 10, 10, 10, 10, 10, 40],
+        firstHit: 10,
+        castTime: 0,
+        offset: 8,
+        base: 750,
+        damage: 'hybrid',
+        elements: [
+          'fire'
+        ]
+      },
+      {
+        names: {
+          en: 'Thunder Strike Stance',
+          tw: '轟雷衝擊陣',
+          kr: '굉뇌격출진',
+          fr: 'Posture électrocoup',
+          de: 'Gewitterschlag-Kata',
+          es: 'Electrogolpe firme'
+        },
+        framesList: '0-10-10-10-10-10-10',
+        hitDamage: [10, 10, 10, 10, 10, 20, 30],
+        firstHit: 42,
+        castTime: 40,
+        offset: 26,
+        base: 550,
+        damage: 'hybrid',
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        names: {
+          en: 'Toad Art - Raiden',
+          tw: '蟾蜍忍法·雷電',
+          kr: '두꺼비 인법·뇌전',
+          fr: 'Art des crapauds - Raiden',
+          de: 'Krötenkunst - Raiden',
+          es: 'Artesapo - Raiden'
+        },
+        framesList: '0-10-10-10-10-10-10',
+        hitDamage: [14, 14, 15, 14, 14, 15, 14],
+        firstHit: 133,
+        castTime: 0,
+        offset: 0,
+        base: 1400,
+        damage: 'hybrid',
+        elements: [
+          'lightning'
+        ],
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 95,
+    names: {
+      en: 'Pyro Glacial Lasswell',
+      tw: '冰炎騎士拉斯韋爾',
+      kr: '빙염의 기사 라스웰',
+      fr: 'Lasswell flammes gelées',
+      de: 'Eisflammenritter Lasswell',
+      es: 'Lasswell pirogélido'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Heavensplitter',
+          tw: '眺望破天',
+          kr: '조망파천',
+          fr: 'Partition céleste',
+          de: 'Himmelssplitter',
+          es: 'Partidor celeste'
+        },
+        framesList: '0',
+        firstHit: 2,
+        castTime: 0,
+        offset: 8,
+        type: 'finish',
+        base: 230
+      },
+      {
+        names: {
+          en: 'Crimson Flash',
+          tw: '紅紫一閃',
+          kr: '홍전일섬',
+          fr: 'Éclat pourpre',
+          de: 'Purpurblitz',
+          es: 'Destello escarlata'
+        },
+        framesList: '0',
+        firstHit: 6,
+        castTime: 0,
+        offset: 8,
+        base: 200,
+        type: 'finish',
+        ignore: 50
+      },
+      {
+        names: {
+          en: 'Fatal Bloom',
+          tw: '雪華終焉',
+          kr: '설화종언',
+          fr: 'Floraison fatale',
+          de: 'Fatale Blüte',
+          es: 'Floración fatal'
+        },
+        framesList: '0',
+        firstHit: 2,
+        castTime: 0,
+        offset: 8,
+        base: 675,
+        type: 'finish',
+        elements: [
+          'ice'
+        ],
+        debuff: {
+          ice: 50
+        }
+      },
+      {
+        names: {
+          en: 'Crimson Era',
+          tw: '深紅終結',
+          kr: '진홍의 종지부',
+          fr: 'Ère carmin',
+          de: 'Purpurne Ära',
+          es: 'Era carmesí'
+        },
+        framesList: '0',
+        firstHit: 20,
+        castTime: 0,
+        offset: 8,
+        base: 675,
+        type: 'finish',
+        elements: [
+          'fire'
+        ],
+        debuff: {
+          fire: 50
+        }
+      },
+      {
+        names: {
+          en: 'Blade Flash - Final',
+          tw: '紫電一閃・終',
+          kr: '자전일섬·종',
+          fr: 'Flash pourpre - Final',
+          de: 'Flimmerklinge - Final',
+          es: 'Destello de hoja - Final'
+        },
+        framesList: '0',
+        firstHit: 2,
+        castTime: 0,
+        offset: 8,
+        base: 525,
+        ignore: 50,
+        type: 'finish',
+      },
+      {
+        names: {
+          en: 'Unstoppable Wave',
+          tw: '跋山涉水',
+          kr: '발산섭수',
+          fr: 'Vague imparable',
+          de: 'Unaufhaltbare Welle',
+          es: 'Ola imparable'
+        },
+        framesList: '0',
+        firstHit: 28,
+        castTime: 0,
+        offset: 0,
+        base: 790,
+        ignore: 50,
+        dualable: false,
+        type: 'finish',
+      }
+    ]
+  },
+  {
+    id: 96,
+    names: {
+      en: 'Drace',
+      tw: '朵芮絲',
+      kr: '드레이스',
+      fr: 'Drace',
+      de: 'Drace',
+      es: 'Drace'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Revolt',
+          tw: '反叛',
+          kr: '반란',
+          fr: 'Révolte',
+          de: 'Revolte',
+          es: 'Levantamiento'
+        },
+        framesList: '0-24-24-24-24-24',
+        hitDamage: [16, 16, 16, 16, 16, 20],
+        firstHit: 70,
+        castTime: 40,
+        offset: 16,
+        base: 300,
+        ignore: 25,
+        damage: 'magic',
+        dualable: false
+      },
+      {
+        names: {
+          en: 'Flamephant',
+          tw: '火炎幻想',
+          kr: '불꽃의 사제',
+          fr: 'Flaméphant',
+          de: 'Flammenfant',
+          es: 'Flamígero'
+        },
+        framesList: '0',
+        firstHit: 100,
+        castTime: 40,
+        offset: 16,
+        base: 420,
+        damage: 'magic',
+        type: 'finish',
+        elements: [
+          'fire'
+        ],
+        dualable: false,
+      }
+    ]
+  },
+  {
+    id: 97,
+    names: {
+      en: 'Balthier',
+      tw: '巴爾弗雷亞',
+      kr: '발프레아',
+      fr: 'Balthier',
+      de: 'Balthier',
+      es: 'Balthier'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Elemental Shot - Fire',
+          tw: '屬性強化彈·火',
+          kr: '저항력 강화탄·불',
+          fr: 'Tir élémentaire : feu',
+          de: 'Elementarschuss - Feuer',
+          es: 'Tiro Piro'
+        },
+        framesList: '0',
+        firstHit: 55,
+        castTime: 0,
+        offset: 8,
+        base: 150,
+        ignore: 50,
+        type: 'finish',
+        debuff: {
+          fire: 60
+        }
+      },
+      {
+        names: {
+          en: 'Elemental Shot - Lightning',
+          tw: '屬性強化彈·雷',
+          kr: '저항력 강화탄·번개',
+          fr: 'Tir élémentaire : foudre',
+          de: 'Elementarschuss - Blitz',
+          es: 'Tiro Electro'
+        },
+        framesList: '0',
+        firstHit: 40,
+        castTime: 0,
+        offset: 8,
+        base: 150,
+        ignore: 50,
+        type: 'finish',
+        debuff: {
+          lightning: 60
+        }
+      },
+      {
+        names: {
+          en: 'Elemental Shot - Water',
+          tw: '屬性強化彈·水',
+          kr: '저항력 강화탄·물',
+          fr: 'Tir élémentaire : eau',
+          de: 'Elementarschuss - Wasser',
+          es: 'Tiro Aqua'
+        },
+        framesList: '0',
+        firstHit: 90,
+        castTime: 0,
+        offset: 8,
+        base: 150,
+        ignore: 50,
+        type: 'finish',
+        debuff: {
+          water: 60
+        }
+      },
+      {
+        names: {
+          en: 'Elemental Shot - Light',
+          tw: '屬性強化彈·光',
+          kr: '저항력 강화탄·빛',
+          fr: 'Tir élémentaire : lumière',
+          de: 'Elementarschuss - Licht',
+          es: 'Tiro Sanctus'
+        },
+        framesList: '0',
+        firstHit: 40,
+        castTime: 0,
+        offset: 8,
+        base: 150,
+        ignore: 50,
+        type: 'finish',
+        debuff: {
+          light: 60
+        }
+      },
+      {
+        names: {
+          en: 'Killer Shot',
+          tw: '致命射擊',
+          kr: '치명 사격',
+          fr: 'Tir mortel',
+          de: 'Todesschuss',
+          es: 'Tiro mortal'
+        },
+        framesList: '0',
+        firstHit: 85,
+        castTime: 40,
+        offset: 16,
+        base: 250,
+        ignore: 50,
+        type: 'finish'
+      },
+      {
+        names: {
+          en: 'Finishing Blow',
+          tw: '終極吐息',
+          kr: '피니싱 블로우',
+          fr: 'Souffle final',
+          de: 'Gnadenhieb',
+          es: 'Estocada final'
+        },
+        framesList: '0',
+        firstHit: 100,
+        castTime: 40,
+        offset: 16,
+        base: 500,
+        ignore: 50,
+        type: 'finish'
+      },
+      {
+        names: {
+          en: 'Element of Treachery',
+          tw: '謀逆之相位星',
+          kr: '역모의 아스팩트',
+          fr: 'Impact astral',
+          de: 'Element der Tücke',
+          es: 'Impacto astral'
+        },
+        framesList: '0',
+        firstHit: 185,
+        castTime: 0,
+        offset: 0,
+        base: 390,
+        ignore: 50,
+        type: 'finish',
         dualable: false
       }
     ]

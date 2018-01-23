@@ -1,6 +1,6 @@
 This web app has been created so you can optimize your chaining with differents units on the game Final Fantasy Brave Exvius
 
-This app focusses on the global version of FFBE, however, some units or awakened abilities are already available for future comparison (e.g. Aileen enhanced Piledriver, or 6* Zidane)
+This app focusses on the global version of FFBE, however, some units or awakened abilities are already available for future comparison (e.g. 6* Zidane)
 For now, you will find the following features :
  - Calculate chain with chainers and finishers
  - Find best unit and combo based on your selection
@@ -10,6 +10,11 @@ For now, you will find the following features :
 ---
 
 ##### Change Logs :
+
+23/01/2018
+ - Hello everyone, As some of you noticed the site has not been updated for 2 weeks :( Really sorry, I changed house, I had to do some work and no internet during 10 days disturbed me a lot ... But I'm back and the site is up to date :)
+ - Added the last 2 banners (Balthier, Pyro Glacial Lasswell, ...)
+ - Added the latest awakening (Aileen, Vicoria, ...)
 
 04/01/2018
  - Happy New Year :)
