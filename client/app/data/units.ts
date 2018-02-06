@@ -196,6 +196,25 @@ export const UNITS: any[] = [
         debuff: {
           light: 50
         }
+      },
+      {
+        names: {
+          en: 'Lightning Stab',
+          fr: 'Décharge sacrée',
+          tw: '無雙閃電刺',
+          kr: '무쌍번개 찌르기',
+          de: 'Heiliger Blitz',
+          es: 'Descarga sagrada'
+        },
+        framesList: '0-5-5-5-5-5',
+        hitDamage: [15, 15, 15, 15, 20, 20],
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 230,
+        elements: [
+          'lightning'
+        ],
       }
     ]
   },
@@ -5587,6 +5606,107 @@ export const UNITS: any[] = [
         type: 'finish',
         dualable: false
       }
+    ]
+  },
+  {
+    id: 98,
+    names: {
+      en: 'Blossom Sage Sakura',
+      tw: '櫻雲賢者櫻',
+      kr: '벚꽃의 현자 사쿠라',
+      fr: 'Sakura sage des fleurs',
+      de: 'Blütenmagierin Sakura',
+      es: 'Sakura sabia floreciente'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Quick Thunder\'s Light',
+          tw: '迅・雷光',
+          kr: '신속·뇌광',
+          fr: 'Lumière de l\'éclair rapide',
+          de: 'Schnelles Donnerlicht',
+          es: 'Luz atronadora veloz'
+        },
+        framesList: '0-10',
+        firstHit: 2,
+        castTime: 0,
+        offset: 8,
+        base: 230,
+        type: 'finish',
+        damage: 'magic',
+        elements: [
+          'lightning'
+        ],
+        debuff: {
+          lightning: 50
+        }
+      },
+      {
+        names: {
+          en: 'Quick Bright Flash',
+          tw: '迅・光閃',
+          kr: '신속·섬광',
+          fr: 'Éclat lumineux rapide',
+          de: 'Schneller Heller Blitz',
+          es: 'Destello luminoso veloz'
+        },
+        framesList: '0-10',
+        firstHit: 2,
+        castTime: 0,
+        offset: 8,
+        base: 230,
+        type: 'finish',
+        damage: 'magic',
+        elements: [
+          'light'
+        ],
+        debuff: {
+          light: 50
+        }
+      },
+      {
+        names: {
+          en: 'Quick Blighted Gloom',
+          tw: '迅・冥暗',
+          kr: '신속·명암',
+          fr: 'Pénombre ternie rapide',
+          de: 'Schnelle Verdorbene Düsternis',
+          es: 'Penumbra luminosa veloz'
+        },
+        framesList: '0-10',
+        firstHit: 2,
+        castTime: 0,
+        offset: 8,
+        base: 230,
+        type: 'finish',
+        damage: 'magic',
+        elements: [
+          'dark'
+        ],
+        debuff: {
+          dark: 50
+        }
+      },
+      {
+        names: {
+          en: 'Quick Rebel Intention',
+          tw: '迅・反叛之意',
+          kr: '신속·반역의 결심',
+          fr: 'Rébellion instantanée',
+          de: 'Schneller Rebellenplan',
+          es: 'Rebeldía veloz'
+        },
+        framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5',
+        hitDamage: [2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3],
+        firstHit: 12,
+        castTime: 0,
+        offset: 8,
+        base: 800,
+        type: 'finish',
+        damage: 'magic',
+        dualable: false
+      },
     ]
   }
 ];
