@@ -5697,6 +5697,24 @@ export const UNITS: any[] = [
           de: 'Schneller Rebellenplan',
           es: 'Rebeldía veloz'
         },
+        framesList: '0',
+        firstHit: 167,
+        castTime: 0,
+        offset: 8,
+        base: 650,
+        ignore: 25,
+        type: 'finish',
+        damage: 'magic'
+      },
+      {
+        names: {
+          en: 'Eternal Ray',
+          tw: '永恆之光',
+          kr: '영원의 섬광',
+          fr: 'Rayon éternel',
+          de: 'Ewiger Strahl',
+          es: 'Rayo infinito'
+        },
         framesList: '0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5',
         hitDamage: [2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3],
         firstHit: 12,
@@ -5706,7 +5724,7 @@ export const UNITS: any[] = [
         type: 'finish',
         damage: 'magic',
         dualable: false
-      },
+      }
     ]
   }
 ];
