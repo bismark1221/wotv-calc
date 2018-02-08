@@ -252,19 +252,19 @@ export const UNITS: any[] = [
       },
       {
         names: {
-          en: 'Aureole Ray +2 (JP Only)',
-          fr: 'Rayon auréole +2 (JP Seulement)',
-          tw: '日輪射線 +2 (JP Only)',
-          kr: '광환의 광선 +2 (JP Only)',
-          de: 'Koronastrahl +2 (JP Only)',
-          es: 'Rayo áureo +2 (JP Only)'
+          en: 'Aureole Ray +2',
+          fr: 'Rayon auréole +2',
+          tw: '日輪射線 +2',
+          kr: '광환의 광선 +2',
+          de: 'Koronastrahl +2',
+          es: 'Rayo áureo +2'
         },
         framesList: '0-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4',
         hitDamage: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 400,
+        base: 720,
         elements: [
           'wind',
           'light'
@@ -2552,7 +2552,7 @@ export const UNITS: any[] = [
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
         firstHit: 42,
         castTime: 40,
-        offset: 17,
+        offset: 16,
         base: 140,
         ignore: 25
       }
@@ -3054,6 +3054,23 @@ export const UNITS: any[] = [
         castTime: 20,
         offset: 26,
         base: 240,
+        ignore: 50
+      },
+      {
+        names: {
+          en: 'True Shot +2',
+          fr: 'Tir sérieux +2',
+          tw: '精準射擊 +2',
+          kr: '진실의 포탄 +2',
+          de: 'Wahrer Schuss +2',
+          es: 'Disparo verdadero +2'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 100,
+        castTime: 20,
+        offset: 26,
+        base: 350,
         ignore: 50
       }
     ],
@@ -5724,6 +5741,166 @@ export const UNITS: any[] = [
         type: 'finish',
         damage: 'magic',
         dualable: false
+      }
+    ]
+  },
+  {
+    id: 99,
+    names: {
+      en: 'Yun',
+      tw: '雲',
+      kr: '윤',
+      fr: 'Yun',
+      de: 'Yun',
+      es: 'Yun'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Raging Bird',
+          tw: '憤怒之鳥',
+          kr: '분노한 새',
+          fr: 'Oiseau enragé',
+          de: 'Wütender Vogel',
+          es: 'Pájaro enrabietado'
+        },
+        framesList: '0-3-2-3-4-2-4-2-3-2',
+        hitDamage: [8, 8, 9, 9, 10, 10, 10, 11, 12, 13],
+        firstHit: 38,
+        castTime: 40,
+        offset: 16,
+        base: 300
+      },
+      {
+        names: {
+          en: 'Raging Bird +2',
+          tw: '憤怒之鳥 +2',
+          kr: '분노한 새 +2',
+          fr: 'Oiseau enragé +2',
+          de: 'Wütender Vogel +2',
+          es: 'Pájaro enrabietado +2'
+        },
+        framesList: '0-3-3-3-3-3-3-3-3-3',
+        hitDamage: [8, 8, 9, 9, 10, 10, 10, 11, 12, 13],
+        firstHit: 38,
+        castTime: 40,
+        offset: 16,
+        base: 400
+      },
+      {
+        names: {
+          en: 'Blazing Combo',
+          tw: '熾熱連擊',
+          kr: '타오르는 연속 공격',
+          fr: 'Combo explosif',
+          de: 'Flammende Kombo',
+          es: 'Combo ígneo'
+        },
+        framesList: '0-4-6-5-8',
+        hitDamage: [17, 19, 20, 21, 23],
+        firstHit: 85,
+        castTime: 40,
+        offset: 16,
+        base: 185,
+        ignore: 25,
+        elements: [
+          'fire'
+        ],
+        debuff: {
+          fire: 30
+        }
+      },
+      {
+        names: {
+          en: 'Blazing Combo +2',
+          tw: '熾熱連擊 +2',
+          kr: '타오르는 연속 공격 +2',
+          fr: 'Combo explosif +2',
+          de: 'Flammende Kombo +2',
+          es: 'Combo ígneo +2'
+        },
+        framesList: '0-8-8-8-8-8-8-8',
+        hitDamage: [9, 10, 11, 12, 13, 14, 15, 16],
+        firstHit: 85,
+        castTime: 40,
+        offset: 16,
+        base: 300,
+        ignore: 50,
+        elements: [
+          'fire'
+        ],
+        debuff: {
+          fire: 50
+        }
+      }
+    ]
+  },
+  {
+    id: 100,
+    names: {
+      en: 'Cupid Artemios',
+      tw: '愛神阿特米奧',
+      kr: '큐피드 아르테미오스',
+      fr: 'Artemios-Cupidon',
+      de: 'Amor-Artemios',
+      es: 'Artemios Cupido'
+    },
+    abilities: [
+      {
+        names: {
+          en: 'Lux Magna +2',
+          tw: '光輝一擊 +2',
+          kr: '럭스 마그나 +2',
+          fr: 'Lux Magna +2',
+          de: 'Lux Magna +2',
+          es: 'Lux Magna +2'
+        },
+        framesList: '0',
+        firstHit: 120,
+        castTime: 40,
+        offset: 16,
+        base: 500,
+        elements: [
+          'light'
+        ],
+        debuff: {
+          light: 50,
+          dark: 50
+        }
+      },
+      {
+        names: {
+          en: 'Chainsaw',
+          fr: '回轉電鋸',
+          tw: '회전톱',
+          kr: 'Tronçonneuse',
+          de: 'Kettensäge',
+          es: 'Motosierra'
+        },
+        framesList: '0-8-8-8-8-8-16',
+        hitDamage: [14, 14, 15, 14, 14, 15, 14],
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 140,
+        ignore: 25
+      },
+      {
+        names: {
+          en: 'Chainsaw +2',
+          fr: '回轉電鋸 +2',
+          tw: '회전톱 +2',
+          kr: 'Tronçonneuse +2',
+          de: 'Kettensäge +2',
+          es: 'Motosierra +2'
+        },
+        framesList: '0-8-8-8-8-8-16',
+        hitDamage: [14, 14, 15, 14, 14, 15, 14],
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 230,
+        ignore: 40
       }
     ]
   }
