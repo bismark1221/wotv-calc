@@ -713,7 +713,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       return false;
     }
 
-    return false; /// TEST TEST TEST TEST
+    return true;
   }
 
   private countNumberOfHighRangeChainer() :number {

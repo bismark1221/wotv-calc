@@ -304,9 +304,10 @@
         </button>
       </div>
       <div *ngIf="!canFindBestChain() && requestPosition === -1 && !requestAlreadyDone">
-        <button class="btn btn-secondary buttonsChain" type="button" (click)="saveRequest()">
+        <!-- <button class="btn btn-secondary buttonsChain" type="button" (click)="saveRequest()">
           {{ 'chain.button.findInQueue' | translate }}
-        </button>
+        </button> -->
+        {{ 'chain.label.sorryBestModifier' | translate }}
       </div>
       <div *ngIf="!canFindBestChain() && requestPosition !== -1 && !requestAlreadyDone">
         Your request has been added to queue, you are positionned N°{{requestPosition}}, please check back the request page later!
