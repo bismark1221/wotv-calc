@@ -5725,6 +5725,26 @@ export const UNITS: any[] = [
       },
       {
         names: {
+          en: 'Quick Final Thunder (Max)',
+          tw: '迅・終焉轟雷 (Max)',
+          kr: '신속·종말의 뇌락 (Max)',
+          fr: 'Éclair final rapide (Max)',
+          de: 'Schneller letzter Donner (Max)',
+          es: 'Trueno final veloz (Max)'
+        },
+        framesList: '0',
+        firstHit: 150,
+        castTime: 40,
+        offset: 16,
+        base: 1500,
+        type: 'finish',
+        damage: 'magic',
+        elements: [
+          'lightning'
+        ]
+      },
+      {
+        names: {
           en: 'Eternal Ray',
           tw: '永恆之光',
           kr: '영원의 섬광',
