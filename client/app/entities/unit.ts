@@ -17,15 +17,17 @@ export class Unit {
     this.id = unit.id;
     this.names = unit.names;
     this.getName(translateService);
-    this.type = unit.type;
+    this.type = unit.type ? unit.type : this.type;
     this.dual = typeof unit.dual == 'boolean' ? unit.dual : this.dual;
+
     unit.weapons = unit.weapons ? unit.weapons : this.weapons;
     this.weapons[0] = unit.weapons[0] ? unit.weapons[0] : '';
     this.weapons[1] = unit.weapons[1] ? unit.weapons[1] : '';
+
     this.abilities = [];
-    unit.abilities.forEach(element => {
+    unit.abilities.forEach(dataAbility => {
       let ability = new Ability();
-      ability.constructAbilityFromJson(element, translateService);
+      ability.constructAbilityFromJson(dataAbility, translateService);
       this.abilities.push(ability);
     });
   }

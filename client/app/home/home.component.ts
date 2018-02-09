@@ -38,11 +38,9 @@ export class HomeComponent {
 
   private getUnits() {
     this.units = [];
-    this.unitService.getUnits().then(units => {
-      this.updated.forEach(id => {
-        let unit = this.unitService.getUnit(id);
-        this.units.push(unit.getName(this.translateService));
-      });
+    this.updated.forEach(id => {
+      let unit = this.unitService.getUnit(id);
+      this.units.push(unit.getName(this.translateService));
     });
   }
 }

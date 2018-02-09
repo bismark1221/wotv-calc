@@ -1,0 +1,39 @@
+{
+    "name": "doctrine/mongodb",
+    "type": "library",
+    "description": "Doctrine MongoDB Abstraction Layer",
+    "keywords": ["database", "persistence", "mongodb"],
+    "homepage": "http://www.doctrine-project.org",
+    "license": "MIT",
+    "authors": [
+        { "name": "Bulat Shakirzyanov", "email": "mallluhuct@gmail.com" },
+        { "name": "Kris Wallsmith", "email": "kris.wallsmith@gmail.com" },
+        { "name": "Jonathan H. Wage", "email": "jonwage@gmail.com" },
+        { "name": "Jeremy Mikola", "email": "jmikola@gmail.com" },
+        { "name": "Maciej Malarz", "email": "malarzm@gmail.com" },
+        { "name": "Andreas Braun", "email": "alcaeus@alcaeus.org" }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "ext-mongo": "^1.5",
+        "doctrine/common": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8|~5.0",
+        "jmikola/geojson": "^1.0"
+    },
+    "suggest": {
+        "jmikola/geojson": "Support GeoJSON geometry objects in 2dsphere queries"
+    },
+    "autoload": {
+        "psr-0": { "Doctrine\\MongoDB": "lib/" }
+    },
+    "autoload-dev": {
+        "psr-0": { "Doctrine\\MongoDB\\Tests": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
+}

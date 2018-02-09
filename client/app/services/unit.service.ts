@@ -69,20 +69,24 @@ export class UnitService {
     return units;
   }
 
-  getUnits(): Promise<Unit[]> {
-    return Promise.resolve(UNITS).then(unitsFromJson => {
-      let units: Unit[] = [];
-      unitsFromJson.forEach(element => {
-        let unit = new Unit();
-        unit.constructUnitFromJson(element, this.translateService);
-        units.push(unit);
-      });
-      this.units = units;
-      return units;
+  getUnits(): Unit[] {
+    let units: Unit[] = [];
+
+    UNITS.forEach(unitData => {
+      let unit = new Unit();
+      unit.constructUnitFromJson(unitData, this.translateService);
+      units.push(unit);
     });
+
+    this.units = units;
+    return units;
   }
 
   getUnit(id: number): Unit {
+    if (!this.units || this.units.length === 0) {
+      this.getUnits();
+    }
+
     return this.units.find(unit => unit.id === id);
   }
 }

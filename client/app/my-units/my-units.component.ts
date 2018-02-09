@@ -106,17 +106,15 @@ export class MyUnitsComponent implements OnInit {
   }
 
   private getElements(): void {
-    this.elementsService.getElements().then(elements => {
-      this.elements = elements
-      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
-      this.requiredElements.splice(0, 1);
-      this.multiElements = [];
+    this.elements = this.elementsService.getElements();
+    this.requiredElements = JSON.parse(JSON.stringify(this.elements));
+    this.requiredElements.splice(0, 1);
+    this.multiElements = [];
 
-      this.requiredElements.forEach(element => {
-        this.translateService.get('elements.' + element).subscribe((res: string) => {
-          this.multiElements.push({id: element, name: res});
-        });
-      })
+    this.requiredElements.forEach(element => {
+      this.translateService.get('elements.' + element).subscribe((res: string) => {
+        this.multiElements.push({id: element, name: res});
+      });
     });
   }
 

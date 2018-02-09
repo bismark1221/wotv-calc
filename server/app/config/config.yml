@@ -7,6 +7,7 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    jms_serializer.camel_case_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy
 
 framework:
     #esi: ~
@@ -32,6 +33,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    serializer:
+        enabled: false
 
 # Twig Configuration
 twig:
@@ -80,6 +83,9 @@ nelmio_cors:
 
 fos_rest:
     body_listener: true
+    routing_loader:
+        include_format: false
+        default_format: json
     format_listener:
         rules:
             - { path: '^/', priorities: ['json'], fallback_format: json, prefer_extension: false }
@@ -88,3 +94,31 @@ fos_rest:
         view_response_listener: 'force'
         formats:
             json: true
+        mime_types:
+            json: ['application/json']
+    exception:
+        enabled: true
+        messages:
+            Symfony\Component\HttpKernel\Exception\HttpException: true
+    format_listener:
+        enabled: true
+        rules:
+            - { path: '^/api', priorities: ['json'], fallback_format: json, prefer_extension: false }
+    serializer:
+        serialize_null:  true
+
+jms_serializer:
+    handlers:
+        datetime:
+            default_format: "Y-m-d\\TH:i:sP"
+            default_timezone: "UTC"
+
+doctrine_mongodb:
+    connections:
+        default:
+            server: "%mongodb_server%"
+            options: {}
+    default_database: ffbe-chain
+    document_managers:
+        default:
+            auto_mapping: true

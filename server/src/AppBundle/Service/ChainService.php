@@ -4,329 +4,397 @@ namespace AppBundle\Service;
 
 class ChainService
 {
-    private $total;
-    private $multi;
-    private $nbHits;
-    private $best;
-    private $hits = [];
-    private $lastHitter;
-    private $nextHitter;
-    private $lastElements;
-    private $combo = [];
-    private $nbCombo = [];
-    private $spark = true;
-    private $result = array(
-        'modifier' => 0,
-        'combo' => '0'
+  private $elements = [
+    'dark',
+    'earth',
+    'fire',
+    'ice',
+    'light',
+    'lightning',
+    'water',
+    'wind'
+  ];
+
+  private $total;
+  private $multi;
+  private $nbHits;
+  private $best;
+  private $hits = [];
+  private $hitsDamage = [];
+  private $lastHitter;
+  private $nextHitter;
+  private $lastElements;
+  private $combo = [];
+  private $nbCombo = [];
+  private $frames = [];
+  private $modifierElements = [];
+  private $chainUnitsHits = [];
+  private $chainersHits = [];
+  private $chainers = [];
+  private $finishers = [];
+  private $chainUnits = [];
+  private $hitters = [];
+  private $minFrames = 0;
+
+  public $units = [];
+
+  public function findBestFrames($units) {
+    ini_set('max_execution_time', 6000000);
+
+    $this->units = $units;
+    $this->best = array(
+      'modifier' => array(
+        'frames' => [],
+        'max' => 0,
+        'hits' => []
+      ),
+      'combo' => array(
+        'frames' => [],
+        'max' => 0,
+        'hits' => []
+      )
     );
-    private $test = 0;
-    private $frames = [];
 
-    public function findBestFrames($units) {
-        ini_set('max_execution_time', 600);
+    if (count($this->units) > 0) {
+      $this->chainUnits = [];
+      $this->chainers = [];
+      $this->finishers = [];
+      $this->frames = [];
+      $this->chainUnitsHits = [];
+      $this->chainersHits = [];
+      $this->minFrames = 0;
+      $chainerIndex = 0;
+      $unitIndex = 0;
 
-        $this->units = $units;
-        $this->best = array(
-            'modifier' => array(
-                'frames' => [],
-                'max' => 0
-            ),
-            'combo' => array(
-                'frames' => [],
-                'max' => 0
-            )
-        );
+      $this->getElements();
+      $this->calculateDebuffModifier();
+      $this->calculateTotalDamage();
 
-        $this->countUnits = count($this->units);
-        $this->calculateAllPossibleFrames(0);
-
-        return $this->best;
-    }
-
-    private function calculateAllPossibleFrames($unitPosition) {
-        if ($unitPosition < $this->countUnits) {
-            for ($i = -10; $i <= 10; $i++) {
-                $this->frames[$unitPosition] = $i;
-                $this->units[$unitPosition]['framesGap'] = $i;
-                $this->calculateAllPossibleFrames($unitPosition + 1);
-            }
-        } elseif (array_search(-10, $this->frames) !== false) {
-            $modifier = $this->calculateChain();
-            // $text = "";
-            // foreach ($this->units as $unit) {
-            //     $text .= $unit['framesGap'] . " ; ";
-            // }
-            //$this->test++;
-            //error_log($text . $this->test . " ; " . $modifier);
-            if ($modifier > $this->best['modifier']['max']) {
-                $this->best['modifier']['max'] = $modifier;
-                foreach ($this->units as $index => $unit) {
-                    $this->best['modifier']['frames'][$index] = $unit['framesGap'];
-                };
-            }
-
-            if (max($this->combo) > $this->best['combo']['max']) {
-                $this->best['combo']['max'] = max($this->combo);
-                foreach ($this->units as $index => $unit) {
-                    $this->best['combo']['frames'][$index] = $unit['framesGap'];
-                }
-            }
-        }
-    }
-
-    private function calculateChain() {
-        $this->initializeChain();
-
-        while ($this->getNextHitter() !== -1) {
-            if ($this->lastHitter === $this->nextHitter) {
-                $this->addHit($this->nextHitter, false);
-            } else {
-                $previousFrame = $this->units[$this->lastHitter]['frames'][$this->nbCombo[$this->lastHitter] - 1]['frame'];
-                $actualFrame = $this->units[$this->nextHitter]['frames'][$this->nbCombo[$this->nextHitter]]['frame'];
-                $this->addHit($this->nextHitter, ($actualFrame - $previousFrame <= 21));
-            }
-        }
-
-        return round($this->total);
-    }
-
-    private function initializeChain() {
-        $this->total = 0;
-        $this->nbHits = 0;
-        $this->multi = 1;
-        $this->hits = [];
-        $this->lastElements = [];
-        $this->combo = [];
-        $this->nbCombo = [];
-
-        $this->getElements();
-        $this->calculateHitsAndFrames();
-        $this->calculateHitDamage();
-        $this->insertFirstHit();
-    }
-
-    private function getElements() {
-        foreach ($this->units as $index => $unit) {
-            $elements = [];
-
-            if ($unit['ability']['type'] === 'physic') {
-                foreach ($unit['weapons'] as $weapon) {
-                    if ($weapon !== '' && array_search($weapon, $elements) === false) {
-                        array_push($elements, $weapon);
-                    }
-                }
-            }
-
-            foreach ($unit['ability']['elements'] as $element) {
-                if ($element !== '' && array_search($element, $elements) === false) {
-                    array_push($elements, $element);
-                }
-            }
-
-            $this->units[$index]['elements'] = $elements;
-        }
-    }
-
-    private function calculateHitsAndFrames() {
-        foreach ($this->units as $index => $unit) {
-            $unit['frames'] = [];
-            $countFrames = 0 + $unit['framesGap'];
-            $dualCountFrames = $unit['ability']['offset'] + $unit['ability']['castTime'] + $unit['framesGap'];
-
-            if (!$unit['ability']['linearFrames']) {
-                foreach (explode('-', $unit['ability']['framesList']) as $hit) {
-                    $countFrames += (int) $hit;
-                    array_push($unit['frames'], array('frame' => $countFrames, 'type' => 'classic'));
-                }
-
-                if ($unit['dual'] && $unit['ability']['type'] !== 'LB' && $unit['ability']['dualable']) {
-                    foreach (explode('-', $unit['ability']['framesList']) as $hit) {
-                        $dualCountFrames += (int) $hit;
-                        array_push($unit['frames'], array('frame' => $dualCountFrames, 'type' => 'dual'));
-                    }
-                }
-            } else {
-                array_push($unit['frames'], array('frame' => $countFrames, 'type' => 'classic'));
-                for ($i = 1; $i < $unit['ability']['hits']; $i++) {
-                    $countFrames += $unit['ability']['frames'];
-                    array_push($unit['frames'], array('frame' => $countFrames, 'type' => 'classic'));
-                }
-
-                if ($unit['dual'] && $unit['ability']['type'] !== 'LB' && $unit['ability']['dualable']) {
-                    array_push($unit['frames'], array('frame' => $dualCountFrames, 'type' => 'dual'));
-                    for ($i = 1; $i < $unit['ability']['hits']; $i++) {
-                        $dualCountFrames += $unit['ability']['frames'];
-                        array_push($unit['frames'], array('frame' => $dualCountFrames, 'type' => 'dual'));
-                    }
-                }
-            }
-
-            $this->units[$index]['frames'] = $unit['frames'];
-        }
-
-        $this->sortFramesArray();
-    }
-
-    private function sortFramesArray() {
       foreach ($this->units as $index => $unit) {
-        usort($unit['frames'], function($a, $b) {
-            if ($a['frame'] < $b['frame']) {
-                return -1;
-            } else if ($a['frame'] > $b['frame']) {
-                return 1;
-            } else {
-                if ($a['type'] === 'classic') {
-                    return -1;
-                } else {
-                    return 1;
-                }
-            }
-        });
+        if ($unit) {
+          $this->chainUnitsHits[$unitIndex] = [];
+          $this->units[$index]['index'] = $index;
+          $this->units[$index]['unitIndex'] = $unitIndex;
+          $this->units[$index]['minFrame'] = $unit['ability']['range']['min'];
 
-        $this->units[$index]['frames'] = $unit['frames'];
+          if ($unit['ability']['type'] === 'chain') {
+            array_push($this->chainersHits, []);
+            $this->units[$index]['maxFrame'] = $unit['ability']['range']['max'];
+            $this->units[$index]['chainerIndex'] = $chainerIndex;
+            array_push($this->chainers, $this->units[$index]);
+            $chainerIndex++;
+
+            for ($i = $this->units[$index]['minFrame']; $i <= $this->units[$index]['maxFrame']; $i++) {
+              $this->calculateUnitHits($this->units[$index], $unitIndex, $i, 'chainer');
+            }
+          } else {
+            $this->calculateUnitHits($this->units[$index], $unitIndex, $this->units[$index]['minFrame']);
+            array_push($this->finishers, $this->units[$index]);
+          }
+
+          array_push($this->chainUnits, $this->units[$index]);
+          $this->units[$index]['frames'] = $this->chainUnitsHits[$unitIndex][$this->units[$index]['minFrame']];
+          $unitIndex++;
+        }
+      }
+
+      $this->findMinFrames();
+      $this->calculateAllPossibleFrames('chainers', 0);
+
+      if (count($this->finishers) > 0) {
+        $maxFrames = max(
+          $this->best['modifier']['hits'][count($this->best['modifier']['hits']) - 1],
+          count($this->best['combo']['hits']) > 0 ? $this->best['combo']['hits'][count($this->best['combo']['hits']) - 1] : 20
+        ) + 1;
+
+      if (!$maxFrames) {
+        $maxFrames = 20;
+      }
+
+      foreach (['modifier', 'combo'] as $type) {
+        foreach ($this->chainUnits as $index => $unit) {
+          if ($unit && $unit['ability']['type'] === 'finish' && $type === 'modifier') {
+            $this->chainUnits[$index]['maxFrame'] = $unit['ability']['range']['max'] > $maxFrames ? $unit['ability']['range']['max'] : $maxFrames;
+
+            for ($i = $unit['minFrame']; $i <= $this->chainUnits[$index]['maxFrame']; $i++) {
+              $this->calculateUnitHits($unit, $index, $i);
+            }
+          } else if ($unit && $unit['ability']['type'] === 'chain') {
+            $chainerFrame = $this->best[$type]['frames'][$unit['index']];
+            $this->frames[$index] = $chainerFrame;
+            $this->units[$index]['frames'] = $this->chainUnitsHits[$index][$chainerFrame];
+            $this->chainUnits[$index]['minFrame'] = $chainerFrame;
+            $this->chainUnits[$index]['maxFrame'] = $chainerFrame;
+          }
+        }
+        $this->calculateAllPossibleFrames('chainUnits', 0);
+      }
       }
     }
 
-    private function calculateHitDamage() {
-      foreach ($this->units as $index => $unit) {
-        $unit['totalDamage'] = 0;
-        $elements = $unit['elements'];
+    return $this->best;
+  }
+
+  // Once Upon A Time
+  private function calculateUnitHits($unit, $unitPosition, $framesGap, $type = 'unit') {
+    $this->chainUnitsHits[$unitPosition][$framesGap] = [];
+    $countFrames = 0 + $framesGap;
+    $dualCountFrames = $unit['ability']['offset'] + $unit['ability']['castTime'] + $framesGap;
+
+    forEach(explode('-', $unit['ability']['framesList']) as $index => $hit) {
+      $countFrames += intval($hit);
+      array_push(
+        $this->chainUnitsHits[$unitPosition][$framesGap],
+        array(
+          'frame' => $countFrames,
+          'type' => 'classic',
+          'damage' => $unit['ability']['hitDamage'][$index]
+        )
+      );
+    }
+
+    if ($unit['dual'] && $unit['ability']['dualable']) {
+      forEach(explode('-', $unit['ability']['framesList']) as $index => $hit) {
+        $dualCountFrames += intval($hit);
+        array_push(
+          $this->chainUnitsHits[$unitPosition][$framesGap],
+          array(
+            'frame' => $dualCountFrames,
+            'type' => 'dual',
+            'damage' => $unit['ability']['hitDamage'][$index]
+          )
+        );
+      }
+    }
+
+    if ($type === 'chainer') {
+      $this->chainersHits[$unit['chainerIndex']][$framesGap] = $this->chainUnitsHits[$unitPosition][$framesGap];
+    }
+  }
+
+  private function findMinFrames() {
+    forEach($this->units as $unit) {
+      $this->minFrames = $unit && $unit['minFrame'] < $this->minFrames ? $unit['minFrame'] : $this->minFrames;
+    }
+  }
+
+  private function getElements() {
+    foreach ($this->units as $index => $unit) {
+      if ($unit) {
+        $elements = [];
+
+        if ($unit['ability']['damage'] === 'physic') {
+          foreach ($unit['weapons'] as $weapon) {
+            if ($weapon !== '' && array_search($weapon, $elements) === false) {
+              array_push($elements, $weapon);
+            }
+          }
+        }
+
+        foreach ($unit['ability']['elements'] as $element) {
+          if ($element !== '' && array_search($element, $elements) === false) {
+            array_push($elements, $element);
+          }
+        }
+
+        $this->units[$index]['elements'] = $elements;
+      }
+    }
+  }
+
+  private function calculateDebuffModifier() {
+    $this->modifierElements = [];
+    forEach($this->elements as $element) {
+      $modifier = 1;
+
+      forEach($this->units as $unit) {
+        if ($unit && isset($unit['ability']['debuff'][$element]) && $unit['ability']['debuff'][$element] / 100 + 1 > $modifier) {
+          $modifier = $unit['ability']['debuff'][$element] / 100 + 1;
+        }
+      }
+
+      $this->modifierElements[$element] = $modifier;
+    }
+  }
+
+  private function calculateTotalDamage() {
+    forEach($this->units as $index => $unit) {
+      if ($unit) {
+        $this->units[$index]['totalDamage'] = 0;
         $realIgnore = $unit['ability']['ignore'] * 2 / 100 + 1;
         $base = $unit['ability']['base'];
 
-        if ($unit['ability']['type'] === 'hybrid') {
+        if ($unit['ability']['damage'] === 'hybrid') {
           $base /= 2;
         }
 
-        if (count($elements) > 0) {
-          foreach ($elements as $element) {
-            $unit['totalDamage'] = $unit['totalDamage'] + (1 / count($elements)) * $base * $realIgnore * $this->getDebuffModifier($element);
+        if (count($unit['elements']) > 0) {
+          forEach($unit['elements'] as $element) {
+            $this->units[$index]['totalDamage'] += (1 / count($unit['elements'])) * $base * $realIgnore * $this->modifierElements[$element];
           }
         } else {
-          $unit['totalDamage'] = $base * $realIgnore;
+          $this->units[$index]['totalDamage'] = $base * $realIgnore;
         }
+      }
+    }
+  }
 
-        $unit['hitDamage'] = $unit['totalDamage'] / (count($unit['frames']) / ($unit['dual'] && $unit['ability']['type'] !== 'LB' && $unit['ability']['dualable'] ? 2 : 1));
+  private function calculateAllPossibleFrames($type, $unitPosition) {
+    if ($unitPosition < count($this->{$type})) {
+      for ($i = $this->{$type}[$unitPosition]['minFrame']; $i <= $this->{$type}[$unitPosition]['maxFrame']; $i++) {
+        $this->frames[$unitPosition] = $i;
+        $this->{$type}[$unitPosition]['frames'] = $this->{$type . 'Hits'}[$unitPosition][$i];
+        $this->calculateAllPossibleFrames($type, $unitPosition + 1);
+      }
+    } else if (array_search(0, $this->frames) !== false || array_search($this->minFrames, $this->frames) !== false) {
+      $modifier = $this->calculateChain($type);
+      if ($modifier > $this->best['modifier']['max']) {
+        $this->best['modifier']['max'] = $modifier;
+        forEach($this->{$type} as $index => $unit) {
+          $this->best['modifier']['frames'][$unit['index']] = $this->frames[$index];
+        }
+        $this->best['modifier']['hits'] = $this->hits;
+      }
 
-        $this->units[$index]['totalDamage'] = $unit['totalDamage'];
-        $this->units[$index]['hitDamage'] = $unit['hitDamage'];
+      $combo = max($this->combo);
+      if ($combo > $this->best['combo']['max']) {
+        $this->best['combo']['max'] = $combo;
+        forEach($this->{$type} as $index => $unit) {
+          $this->best['combo']['frames'][$unit['index']] = $this->frames[$index];
+        }
+        $this->best['combo']['hits'] = $this->hits;
+      }
+    }
+  }
+
+  private function calculateChain($type) {
+    $this->initializeChain($type);
+
+    while ($this->getNextHitter() !== -1) {
+      if ($this->lastHitter === $this->nextHitter) {
+        $this->addHit($type, $this->nextHitter, false);
+      } else {
+        $previousFrame = $this->{$type}[$this->lastHitter]['frames'][$this->nbCombo[$this->lastHitter] - 1]['frame'];
+        $actualFrame = $this->{$type}[$this->nextHitter]['frames'][$this->nbCombo[$this->nextHitter]]['frame'];
+        $this->addHit($type, $this->nextHitter, ($actualFrame - $previousFrame <= 21));
       }
     }
 
-    private function getDebuffModifier($element) {
-        $modifier = 1;
+    return round($this->total);
+  }
 
-        foreach ($this->units as $unit) {
-            if (isset($unit['ability']['debuff'][$element]) && $unit['ability']['debuff'][$element] / 100 + 1 > $modifier) {
-                $modifier = $unit['ability']['debuff'][$element] / 100 + 1;
-            }
-        }
+  private function initializeChain($type) {
+    $this->total = 0;
+    $this->nbHits = 0;
+    $this->multi = 1;
+    $this->hits = [];
+    $this->hitsDamage = [];
+    $this->lastElements = [];
+    $this->combo = [];
+    $this->nbCombo = [];
 
-        return $modifier;
-    }
+    $this->sortFramesArray($type);
+    $this->calculateHitterOrder($type);
+    $this->addHit($type, $this->getNextHitter(), false);
+  }
 
-    private function insertFirstHit() {
-        $minFramesGap = 0;
-        $unitPosition = 0;
-        foreach ($this->units as $index => $unit) {
-            if ($unit['framesGap'] < $minFramesGap) {
-                $minFramesGap = $unit['framesGap'];
-                $unitPosition = $index;
-            }
-            array_push($this->nbCombo, 0);
-        }
-
-        $this->addHit($unitPosition, false);
-    }
-
-    private function calculateModifierByElements($unit) {
-      $matchingElements = 0;
-
-      foreach ($unit['elements'] as $element) {
-        if(array_search($element, $this->lastElements) !== false) {
-          $matchingElements++;
-        }
-      }
-
-      $this->lastElements = $unit['elements'];
-
-      return $matchingElements * 0.2;
-    }
-
-    private function calculateTotal($unit, $combo) {
-      $elementsModifier = $this->calculateModifierByElements($unit); // Need to be always here
-
-      if ($combo) {
-        $this->multi += 0.1 + $elementsModifier;
-        if ($this->multi < 4) {
-          if ($this->spark && $this->hits[$this->nbHits]['hit'] === $this->hits[$this->nbHits - 1]['hit']) {
-            $this->spark = false;
-            $this->multi += 0.3;
+  private function sortFramesArray($type) {
+    foreach ($this->{$type} as $index => $unit) {
+      array_push($this->nbCombo, 0);
+      usort($unit['frames'], function($a, $b) {
+        if ($a['frame'] < $b['frame']) {
+          return -1;
+        } else if ($a['frame'] > $b['frame']) {
+          return 1;
+        } else {
+          if ($a['type'] === 'classic') {
+            return -1;
           } else {
-            $this->spark = true;
+            return 1;
           }
         }
+      });
 
-        if ($this->multi > 4) {
-          $this->multi = 4;
-        }
+      $this->{$type}[$index]['frames'] = $unit['frames'];
 
-        $this->combo[count($this->combo) - 1]++;
-      } else {
-        $this->multi = 1;
-        array_push($this->combo, 0);
-      }
-
-      if (count($this->units) > 1) {
-        $this->hits[$this->nbHits]['combo'] = $this->combo[count($this->combo) - 1];
-      }
-
-      $this->total = $this->total + ($unit['hitDamage'] * $this->multi);
     }
+  }
 
-    private function addHit($unitPosition, $combo) {
-      $unit = $this->units[$unitPosition];
-      $unitName = ($unitPosition + 1) + '.' + $unit['name'];
-      $hit = $unit['frames'][$this->nbCombo[$unitPosition]];
-      $divided = false;
+  private function calculateHitterOrder($type) {
+    $minIndex = 0;
+    $nbCombo = $this->nbCombo;
+    $nbCombo[-1] = 0;
+    $this->hitters = [];
 
-      $type = $combo || $this->nbHits === 0 || count($this->units) === 1 ? 'chain' : 'break';
-      $type = 'unit1-' + $type + ($hit['type'] === 'classic' ? '1' : '2');
-
-      for ($i = 1; $i <= count($this->units); $i++) {
-        if ($this->nbHits > ($i - 1) && $this->hits[$this->nbHits - $i]['unitName'] === $unitName && $this->hits[$this->nbHits - $i]['hit'] === $hit['frame']) {
-          $this->hits[$this->nbHits - $i]['divided'] = true;
-          $hit['frame'] += 0.5;
-          $divided = true;
-        }
-      }
-
-      $this->hits[$this->nbHits] = array(
-        'unitName' => $unitName,
-        'hit' => $hit['frame'],
-        'type' => $type,
-        'divided' => $divided
-      );
-
-      $this->calculateTotal($unit, $combo);
-      $this->nbCombo[$unitPosition]++;
-      $this->nbHits++;
-      $this->lastHitter = $unitPosition;
-    }
-
-    private function getNextHitter() {
+    while ($minIndex !== -1) {
       $minFrame = 10000;
-      $minPosition = -1;
-      foreach ($this->units as $index => $unit) {
-        $nbCombo = $this->nbCombo[$index];
-        if (count($this->units[$index]['frames']) > $nbCombo && $unit['frames'][$nbCombo]['frame'] < $minFrame) {
-          $minFrame = $unit['frames'][$nbCombo]['frame'];
-          $minPosition = $index;
+      $minIndex = -1;
+      forEach($this->{$type} as $index => $unit) {
+        if (count($unit['frames']) > $nbCombo[$index] &&
+          ($index === 0
+          || $unit['frames'][$nbCombo[$index]]['frame'] < $minFrame
+          || ($unit['frames'][$nbCombo[$index]]['frame'] === $minFrame && $minIndex > $index))
+        ) {
+          $minFrame = $unit['frames'][$nbCombo[$index]]['frame'];
+          $minIndex = $index;
         }
       }
 
-      $this->nextHitter = $minPosition;
-
-      return $minPosition;
+      $nbCombo[$minIndex]++;
+      array_push($this->hitters, $minIndex);
     }
+  }
+
+  private function getNextHitter() {
+    $this->nextHitter = $this->hitters[$this->nbHits];
+
+    return $this->nextHitter;
+  }
+
+  private function addHit($type, $unitPosition, $combo) {
+    $unit = $this->{$type}[$unitPosition];
+    $hit = $unit['frames'][$this->nbCombo[$unitPosition]];
+
+    $this->hits[$this->nbHits] = $hit['frame'];
+    $this->hitsDamage[$this->nbHits] = $hit['damage'];
+
+    $this->calculateTotal($unit, $combo);
+    $this->nbCombo[$unitPosition]++;
+    $this->nbHits++;
+    $this->lastHitter = $unitPosition;
+  }
+
+  private function calculateTotal($unit, $combo) {
+    if ($combo) {
+      $elementsModifier = $this->calculateModifierByElements($unit);
+      $this->multi += 0.1 + $elementsModifier;
+      if ($this->multi < 4 && $this->hits[$this->nbHits] === $this->hits[$this->nbHits - 1]) {
+        $this->multi += 0.3;
+      }
+
+      if ($this->multi > 4) {
+        $this->multi = 4;
+      }
+
+      $this->combo[count($this->combo) - 1]++;
+    } else {
+      $this->multi = 1;
+      array_push($this->combo, 0);
+    }
+
+    $this->lastElements = $unit['elements'];
+    $this->total = $this->total + (($unit['totalDamage'] * $this->hitsDamage[$this->nbHits] / 100) * $this->multi);
+  }
+
+  private function calculateModifierByElements($unit) {
+    $matchingElements = 0;
+
+    forEach($unit['elements']as $element) {
+      if (array_search($element, $this->lastElements) !== false) {
+        $matchingElements++;
+      }
+    }
+
+    return $matchingElements * 0.2;
+  }
 }

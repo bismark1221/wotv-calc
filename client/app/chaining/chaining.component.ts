@@ -5,6 +5,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { Select2OptionData } from '../select2/select2.interface';
 import { Angulartics2 } from 'angulartics2';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
@@ -15,6 +16,7 @@ import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
+import { BackService } from '../services/back.service';
 import { FindBestService } from '../services/find-best.service';
 import { NavService } from '../services/nav.service';
 
@@ -51,6 +53,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   bestChainers: any[] = [];
   duplicatePosition: number[] = [];
   viewBestChainers: number = -1;
+  requestPosition: number = -1;
+  requestAlreadyDone: boolean = false;
+  requestResult: any[] = [];
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -84,7 +89,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private angulartics: Angulartics2,
     private translateService: TranslateService,
     private modalService: NgbModal,
-    private navService: NavService
+    private navService: NavService,
+    private backService: BackService,
+    private activatedRoute: ActivatedRoute
   ) {
     this.getTranslation();
 
@@ -118,10 +125,35 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
     this.getUnits();
     this.getElements();
+
+    this.activatedRoute.params.subscribe((params: Params) => {
+      if (params.request && params.type) {
+        this.loadRequest(params);
+      }
+    });
   }
 
   ngAfterViewChecked(): void {
     this.ref.detectChanges();
+  }
+
+  private loadRequest(params: any) {
+    let requests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+    let request = requests.find(request => request.id === params.request);
+    let framesGap = [];
+    let i = 0;
+
+    request.units.forEach((requestUnit, index) => {
+      framesGap.push(0);
+      if (requestUnit) {
+        let unit = this.unitService.getUnit(requestUnit.id);
+        framesGap[index] = request.chain[params.type].frames[i];
+        this.selectUnit(index, unit, requestUnit.ability.id - 1, framesGap);
+        i++;
+      }
+    });
+
+    this.onChangeChain();
   }
 
   private getTranslation() {
@@ -141,13 +173,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   private getUnits(): void {
-    this.unitService.getUnits().then(units => {
-      this.units = units;
+    this.units = this.unitService.getUnits();
 
-      this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
+    this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
 
-      this.reloadList();
-    });
+    this.reloadList();
   }
 
   private sortUnits() {
@@ -195,17 +225,15 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   private getElements(): void {
-    this.elementsService.getElements().then(elements => {
-      this.elements = elements;
-      this.requiredElements = JSON.parse(JSON.stringify(this.elements));
-      this.requiredElements.splice(0, 1);
-      this.multiElements = [];
+    this.elements = this.elementsService.getElements();
+    this.requiredElements = JSON.parse(JSON.stringify(this.elements));
+    this.requiredElements.splice(0, 1);
+    this.multiElements = [];
 
-      this.requiredElements.forEach(element => {
-        this.translateService.get('elements.' + element).subscribe((res: string) => {
-          this.multiElements.push({id: element, name: res});
-        });
-      })
+    this.requiredElements.forEach(element => {
+      this.translateService.get('elements.' + element).subscribe((res: string) => {
+        this.multiElements.push({id: element, name: res});
+      });
     });
   }
 
@@ -458,7 +486,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.bestChainers = [];
   }
 
-  onChangeUnit(position: number, unitId: any = 'unselect', ability: number = 0, framesGap: number = 0) {
+  onChangeUnit(position: number, unitId: any = 'unselect', ability: number = 0, framesGap: number = 0, launchChain: boolean = true) {
     this.idSelected[position] = unitId;
 
     if (unitId === 'unselect') {
@@ -483,7 +511,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.updateChangedUnit(position, ability, framesGap);
     }
 
-    this.onChangeChain();
+    if (launchChain) {
+      this.onChangeChain();
+    }
+
     this.updateDuplicatePossibilities();
   }
 
@@ -546,6 +577,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeChain(): void {
+    this.requestPosition = -1;
+    this.requestAlreadyDone = false;
+    this.requestResult = [];
     if (this.availableDuplicate.length > 0) {
       this.chainService.getChain();
       this.firstHits = this.chainService.calculateFramesDiffForFirstHits();
@@ -566,6 +600,36 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.onChangeChain();
 
     this.angulartics.eventTrack.next({ action: 'findBestFrames_' + type, properties: { category: 'chain' }});
+  }
+
+  async saveRequest() {
+    let request = await this.backService.saveRequest(this.chain, false);
+    let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+    savedRequests.unshift(request);
+    this.localStorageService.set('requests', savedRequests);
+
+    if (request.status === 'done') {
+      this.requestAlreadyDone = true;
+      this.requestResult = request.chain;
+    } else {
+      this.requestPosition = request.number;
+    }
+
+    this.angulartics.eventTrack.next({ action: 'saveRequest', properties: { category: 'chain' }});
+  }
+
+  showResult(type: string) {
+    let i = 0;
+
+    this.chain.forEach((unit, index) => {
+      if (unit && unit.id !== 'unselect') {
+        unit.framesGap = this.requestResult[type].frames[i];
+        i++;
+      }
+    });
+    this.onChangeChain();
+
+    this.angulartics.eventTrack.next({ action: 'showResult_' + type, properties: { category: 'chain' }});
   }
 
   findBestChainers(position: number) {
@@ -611,14 +675,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.angulartics.eventTrack.next({ action: 'findBestChainers', properties: { category: 'chain' }});
   }
 
-  selectUnit(position: number, unit: any, ability: any, framesGaps: any) {
+  selectUnit(position: number, unit: any, ability: any, framesGaps: any, launchChain: boolean = true) {
     this.chain.forEach((chainer, index) => {
       chainer.framesGap = framesGaps[index];
     })
     unit.framesGap = framesGaps[position]
 
     this.selectedUnits[position] = unit;
-    this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[position]);
+    this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[position], launchChain);
   }
 
   canFindBestChainers(position: number) :boolean {

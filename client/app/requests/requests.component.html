@@ -1,0 +1,54 @@
+<div class="row requests form-group">
+  <h2 class="title fullWidth">
+    {{ 'requests.title' | translate }}
+  </h2>
+  <div *ngIf="loading" class="alignCenter">
+    {{ 'requests.search' | translate }}
+  </div>
+  <div *ngIf="!loading && requests.length > 0" class="marginAuto">
+    <div *ngFor="let request of requests" class="requestBlock">
+      <div class="requestTitle">
+        {{ 'requests.request' | translate }} : {{ request.id }}
+        <div *ngIf="lang != 'fr'" class="requestDate">{{ 'requests.created' | translate }} {{ request.createdAt | date:"MM-dd 'at' HH:mm"}}</div>
+        <div *ngIf="lang == 'fr'" class="requestDate">{{ 'requests.created' | translate }} {{ request.createdAt | date:"dd-MM 'à' HH:mm"}}</div>
+      </div>
+      <div class="requestLeft verticalTop">
+        <div class="unitsLeft unitsZone">
+          <div *ngFor="let i of [0, 1, 2]">
+            <span *ngIf="request.units[i]">{{ request.units[i].name }} - {{ request.units[i].ability.name }}</span>
+            <span *ngIf="!request.units[i]">{{ 'requests.noUnit' | translate }}</span>
+          </div>
+        </div>
+        <div class="unitsRight unitsZone">
+          <div *ngFor="let i of [3, 4, 5]">
+            <span *ngIf="request.units[i]">{{ request.units[i].name }} - {{ request.units[i].ability.name }}</span>
+            <span *ngIf="!request.units[i]">{{ 'requests.noUnit' | translate }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="requestRight verticalTop">
+        <div *ngIf="request.error">
+          {{ 'requests.error' | translate }}
+        </div>
+        <div *ngIf="request.status !== 'done'">
+          <h4>{{ 'requests.position' | translate }}</h4>
+          <h4>{{ request.number }}</h4>
+        </div>
+        <div *ngIf="request.status === 'done'">
+          <h4>{{ 'requests.result' | translate }}</h4>
+          <div>
+            {{ 'requests.modifier' | translate }} : {{ request.chain.modifier.max }}%<br />
+            <a class="pointer" (click)="showResult(request.id, 'modifier')">({{ 'requests.click' | translate }})</a>
+          </div>
+          <div>
+            {{ 'requests.combo' | translate }} : {{ request.chain.combo.max }}<br />
+            <a class="pointer" (click)="showResult(request.id, 'combo')">({{ 'requests.click' | translate }})</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!loading && requests.length === 0" class="alignCenter">
+    {{ 'requests.noRequests' | translate }}
+  </div>
+</div>

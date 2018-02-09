@@ -67,6 +67,20 @@
   "my-units" : {
     "title" : "My Units"
   },
+  "requests" : {
+    "title" : "My Requests",
+    "request" : "Request",
+    "created" : "Created the",
+    "noUnit" : "No unit",
+    "result" : "Result",
+    "position" : "Position in queue",
+    "modifier" : "Modifier",
+    "combo" : "Combo",
+    "noRequests" : "It seem you didn't made request for the time being... You can either import one or create one from the simulator",
+    "search" : "Requests are being searched...",
+    "error" : "Your request generate an error... If the problem persist contact me :)",
+    "click" : "click to show"
+  },
   "macro" : {
     "width" : "Width",
     "height" : "Height",
@@ -112,7 +126,8 @@
   "nav" : {
     "chain" : "Chain Tools",
     "my" : "My Units",
-    "how-to" : "How To"
+    "how-to" : "How To",
+    "requests" : "My Requests"
   },
   "how-to" : {
     "title" : "How To",

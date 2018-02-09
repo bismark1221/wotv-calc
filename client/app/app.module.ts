@@ -32,10 +32,11 @@ import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
 import { MacroComponent } from './macro/macro.component';
 import { HowToComponent } from './how-to/how-to.component';
+import { RequestsComponent } from './requests/requests.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
-import { ChainBackService } from './services/chain.back.service';
+import { BackService } from './services/back.service';
 import { FindBestService } from './services/find-best.service';
 import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
@@ -68,7 +69,8 @@ export function createTranslateLoader(http: HttpClient) {
     ContactComponent,
     LegalComponent,
     MacroComponent,
-    HowToComponent
+    HowToComponent,
+    RequestsComponent
   ],
   imports: [
     BrowserModule,
@@ -102,7 +104,7 @@ export function createTranslateLoader(http: HttpClient) {
     UnitService,
     ChainService,
     ElementsService,
-    ChainBackService,
+    BackService,
     FindBestService,
     NavService
   ],

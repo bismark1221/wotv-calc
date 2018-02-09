@@ -11,6 +11,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Quick Hit',
           fr: 'Attaque éclair',
@@ -27,6 +28,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
+        id: 2,
         names: {
           en: 'Quick Hit +2 (JP Only)',
           fr: 'Attaque éclair +2 (JP Seulement)',
@@ -43,6 +45,7 @@ export const UNITS: any[] = [
         base: 720
       },
       {
+        id: 3,
         names: {
           en: 'Energy Rain',
           fr: 'Déluge d\'énergie',
@@ -58,6 +61,7 @@ export const UNITS: any[] = [
         base: 180
       },
       {
+        id: 4,
         names: {
           en: 'Jecht Shot',
           fr: 'Jecht Shoot',
@@ -78,6 +82,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 5,
         names: {
           en: "Blitz Ace",
           tw: "水鬥球王牌",
@@ -111,6 +116,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Fin Briar',
           fr: 'Fin Briar',
@@ -122,12 +128,13 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 30,
-        castTime: 0, //"effect_frames": [[0, 0, 27]],
+        castTime: 0,
         offset: 36,
         base: 180,
         ignore: 25
       },
       {
+        id: 2,
         names: {
           en: 'Fin Briar +2',
           fr: 'Fin Briar +2',
@@ -139,7 +146,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 30,
-        castTime: 0, //"effect_frames": [[0, 0, 27]],
+        castTime: 0,
         offset: 36,
         base: 230,
         ignore: 50
@@ -158,6 +165,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Divine Ruination',
           fr: 'Ruine divine',
@@ -178,6 +186,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Divine Ruination +2',
           fr: 'Ruine divine +2',
@@ -198,6 +207,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 3,
         names: {
           en: 'Lightning Stab',
           fr: 'Décharge sacrée',
@@ -230,6 +240,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Aureole Ray',
           fr: 'Rayon auréole',
@@ -251,6 +262,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 2,
         names: {
           en: 'Aureole Ray +2',
           fr: 'Rayon auréole +2',
@@ -273,6 +285,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 3,
         names: {
           en: 'Gleaming Arrow',
           fr: 'Flèche étincelante',
@@ -294,6 +307,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 4,
         names: {
           en: 'Gail Arrow',
           fr: 'Flèche tornade',
@@ -329,6 +343,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Piledriver',
           fr: 'Sonnette',
@@ -348,6 +363,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Piledriver +2',
           fr: 'Sonnette +2',
@@ -381,6 +397,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Dark Punishment',
           fr: 'Punition obscure',
@@ -401,6 +418,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Dark Edge',
           fr: 'Entaille obscure',
@@ -434,6 +452,7 @@ export const UNITS: any[] = [
     },
     'abilities': [
       {
+        id: 1,
         names: {
           en: 'Avoid Attack',
           fr: 'Esquiver Attaque',
@@ -450,6 +469,7 @@ export const UNITS: any[] = [
         base: 900,
       },
       {
+        id: 2,
         names: {
           en: 'Extract Speed',
           fr: 'Attaque Sonique',
@@ -465,6 +485,7 @@ export const UNITS: any[] = [
         base: 600,
       },
       {
+        id: 3,
         names: {
           en: 'R050: Spear',
           fr: 'R050: Lance',
@@ -476,11 +497,12 @@ export const UNITS: any[] = [
         framesList: '0-5-5-5-5-5',
         hitDamage: [16, 16, 17, 17, 17, 17],
         firstHit: 22,
-        castTime: 0, //"effect_frames": [[0, 0, 20, 25, 30, 35, 40, 45]],
+        castTime: 0,
         offset: 40,
         base: 550,
       },
       {
+        id: 4,
         names: {
           en: 'Steel Pipe',
           fr: 'Barre de fer',
@@ -497,6 +519,7 @@ export const UNITS: any[] = [
         base: 200,
       },
       {
+        id: 5,
         names: {
           en: 'A150: Vault',
           fr: 'A150: Décharge',
@@ -516,6 +539,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 6,
         names: {
           en: 'Self Destruct: 2B',
           fr: 'Autodestruction : 2B',
@@ -533,6 +557,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 7,
         names: {
           en: 'Ho229 Type-B',
           fr: 'Ho229 Type-B',
@@ -563,6 +588,7 @@ export const UNITS: any[] = [
     },
     'abilities': [
       {
+        id: 1,
         names: {
           en: 'Counter Attack',
           fr: 'Contre-attaquer',
@@ -579,6 +605,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 2,
         names: {
           en: 'Self Destruct: 9S',
           fr: 'Autodestruction : 9S',
@@ -609,6 +636,7 @@ export const UNITS: any[] = [
     },
     'abilities': [
       {
+        id: 1,
         names: {
           en: 'Dash Attack',
           fr: 'Attaque rapide',
@@ -625,6 +653,7 @@ export const UNITS: any[] = [
         base: 400,
       },
       {
+        id: 2,
         names: {
           en: 'Offensive Heal Combo',
           fr: 'Combo offensivo-curatif',
@@ -641,6 +670,7 @@ export const UNITS: any[] = [
         base: 510,
       },
       {
+        id: 3,
         names: {
           en: 'Heavy Attack',
           fr: 'Attaque lourde',
@@ -657,6 +687,7 @@ export const UNITS: any[] = [
         base: 330,
       },
       {
+        id: 4,
         names: {
           en: 'Finisher',
           fr: 'Coup fatal',
@@ -686,6 +717,7 @@ export const UNITS: any[] = [
     },
     'abilities': [
       {
+        id: 1,
         names: {
           en: 'Tri-Beam Laser +2 (orange)',
           fr: 'Laser triple +2 (orange)',
@@ -697,7 +729,7 @@ export const UNITS: any[] = [
         framesList: '0-7-7-7-7-7-7',
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         firstHit: 64,
-        castTime: 0, //"effect_frames": [[0, 20, 0]],
+        castTime: 0,
         offset: 46,
         base: 560,
         ignore: 25,
@@ -709,6 +741,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Attack Hand',
           fr: 'Tirage explosif',
@@ -720,7 +753,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 150,
-        castTime: 75, //"effect_frames": [[75, 40]],
+        castTime: 75,
         offset: 0,
         base: 320,
         ignore: 25,
@@ -741,6 +774,7 @@ export const UNITS: any[] = [
     },
     'abilities': [
       {
+        id: 1,
         names: {
           en: 'Divine Ruination',
           fr: 'Ruine divine',
@@ -760,6 +794,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Divine Ruination +2',
           fr: 'Ruine divine +2',
@@ -793,6 +828,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Disorder',
           fr: 'Désordre',
@@ -808,6 +844,7 @@ export const UNITS: any[] = [
         base: 200
       },
       {
+        id: 2,
         names: {
           en: 'Disorder +2',
           fr: 'Désordre +2',
@@ -836,6 +873,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Heaven\'s Fury',
           fr: 'Ire céleste',
@@ -854,6 +892,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 2,
         names: {
           en: 'Sword of Kings',
           fr: 'Épée des Rois',
@@ -883,6 +922,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Thunder Clap',
           fr: 'Coup de tonnerre',
@@ -907,6 +947,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Thunder Clap +2',
           fr: 'Coup de tonnerre +2',
@@ -944,6 +985,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Phantom Shadow',
           fr: 'Ombre fantasmatique',
@@ -973,6 +1015,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Ultima +2',
           fr: 'Ultima +2',
@@ -991,6 +1034,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Dystopia',
           fr: 'Dystopie',
@@ -1025,6 +1069,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Sonic Blast',
           fr: 'Rafale sonique',
@@ -1045,6 +1090,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Sonic Blast +2',
           fr: 'Rafale sonique +2',
@@ -1078,6 +1124,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Frost Flower Blitz',
           fr: 'Pétales gelés',
@@ -1101,6 +1148,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Second Intention',
           fr: 'Seconde intention',
@@ -1112,7 +1160,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 100,
-        castTime: 0, //"effect_frames": [[0, 0, 27]],
+        castTime: 0,
         offset: 66,
         base: 600,
         damage: 'hybrid',
@@ -1131,6 +1179,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Tri-Attack',
           fr: 'Triple-attaque',
@@ -1147,6 +1196,7 @@ export const UNITS: any[] = [
         base: 300,
       },
       {
+        id: 2,
         names: {
           en: 'Tri-Attack +2',
           fr: 'Triple-attaque +2',
@@ -1163,6 +1213,7 @@ export const UNITS: any[] = [
         base: 300,
       },
       {
+        id: 3,
         names: {
           en: 'Snowpetal +2',
           fr: 'Flocon de neige +2',
@@ -1174,7 +1225,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 60,
-        castTime: 0, //"effect_frames": [[0, 0, 30]],
+        castTime: 0,
         offset: 40,
         base: 200,
         ignore: 65
@@ -1193,6 +1244,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Commanding Blade',
           fr: 'Lame du commandant',
@@ -1210,6 +1262,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 2,
         names: {
           en: 'Lightning Stab',
           fr: 'Décharge sacrée',
@@ -1229,6 +1282,7 @@ export const UNITS: any[] = [
         ],
       },
       {
+        id: 3,
         names: {
           en: 'Strategic blade',
           fr: 'Lame du stratège',
@@ -1262,6 +1316,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Divine Shot',
           fr: 'Tir divin',
@@ -1285,6 +1340,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Saint Buster',
           fr: 'Casseur céleste',
@@ -1315,6 +1371,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Blade of Justice',
           fr: 'Lame de la justice',
@@ -1345,6 +1402,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Torrential Slash',
           fr: 'Entaille torrentielle',
@@ -1373,6 +1431,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Patriotic Slash',
           fr: 'Coup patriotique',
@@ -1402,6 +1461,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Mystic Thrust',
           fr: 'Coup mystique',
@@ -1431,6 +1491,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Burning Soul',
           fr: 'Âme ardente',
@@ -1450,6 +1511,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Winter Storm',
           fr: 'Avalanche',
@@ -1469,6 +1531,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 3,
         names: {
           en: 'Lightning Rod',
           fr: 'Flash',
@@ -1488,6 +1551,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 4,
         names: {
           en: 'Tidal Wave',
           fr: 'Tsunami',
@@ -1507,6 +1571,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 5,
         names: {
           en: 'Tidal Wave +2 (JP Only)',
           fr: 'Tsunami +2 (JP Seulement)',
@@ -1539,6 +1604,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Ultima +2 (JP Only)',
           fr: 'Ultima +2 (JP Seulement)',
@@ -1557,6 +1623,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Utopia',
           fr: 'Utopie',
@@ -1591,6 +1658,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Prismatic Flash',
           fr: 'Prisme arc-en-ciel',
@@ -1607,6 +1675,7 @@ export const UNITS: any[] = [
         offset: 56
       },
       {
+        id: 2,
         names: {
           en: 'Red Card',
           fr: 'Carte sanglante',
@@ -1622,6 +1691,7 @@ export const UNITS: any[] = [
         base: 320,
       },
       {
+        id: 3,
         names: {
           en: 'Double Dice',
           fr: 'Double dés',
@@ -1651,6 +1721,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Tornado',
           fr: 'Tornade',
@@ -1687,6 +1758,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Chaos Wave',
           fr: 'Onde chaotique',
@@ -1705,6 +1777,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 2,
         names: {
           en: 'Chaos Wave Awakened +2',
           fr: 'Onde chaotique - Év. +2',
@@ -1722,6 +1795,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 3,
         names: {
           en: 'Ultima +2',
           fr: 'Ultima +2',
@@ -1740,6 +1814,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 4,
         names: {
           en: 'Riot Blade - Trance',
           fr: '入神·暴亂劍',
@@ -1772,6 +1847,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Assault Strike',
           fr: 'Violent assaut',
@@ -1788,6 +1864,7 @@ export const UNITS: any[] = [
         base: 270
       },
       {
+        id: 2,
         names: {
           en: 'Assault Strike +2 (JP Only)',
           fr: 'Violent assaut +2 (JP Seulement)',
@@ -1817,6 +1894,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Flare Ride+',
           fr: 'Galop enflammé +',
@@ -1832,6 +1910,7 @@ export const UNITS: any[] = [
         base: 200
       },
       {
+        id: 2,
         names: {
           en: 'Supreme Blaze',
           fr: 'Explosion suprême',
@@ -1865,6 +1944,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Overflow',
           fr: 'Dépassement',
@@ -1885,6 +1965,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 2,
         names: {
           en: 'Overflow +2',
           fr: 'Dépassement +2',
@@ -1918,6 +1999,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Free Energy',
           fr: 'Energétik',
@@ -1934,6 +2016,7 @@ export const UNITS: any[] = [
         base: 360
       },
       {
+        id: 2,
         names: {
           en: 'Free Energy +2',
           fr: 'Energétik +2',
@@ -1950,6 +2033,7 @@ export const UNITS: any[] = [
         base: 450
       },
       {
+        id: 3,
         names: {
           en: 'Lucky Seven',
           fr: 'Coudepot',
@@ -1979,6 +2063,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Splendor of the Wind',
           fr: 'Splendeur du vent',
@@ -1998,6 +2083,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Splendor of the Fire',
           fr: 'Splendeur du feu',
@@ -2017,6 +2103,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 3,
         names: {
           en: 'Splendor of the Earth',
           fr: 'Splendeur de la terre',
@@ -2036,6 +2123,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 4,
         names: {
           en: 'Splendor of the Water',
           fr: 'Splendeur de l\'eau',
@@ -2055,6 +2143,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 5,
         names: {
           en: 'Onion Slice',
           fr: 'Tranche-oignon',
@@ -2071,6 +2160,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
+        id: 6,
         names: {
           en: 'Full Speed Bladeblitz',
           fr: 'Lame éclair rapide',
@@ -2087,6 +2177,7 @@ export const UNITS: any[] = [
         base: 220
       },
       {
+        id: 7,
         names: {
           en: 'Twin Swords',
           fr: 'Double épées',
@@ -2104,6 +2195,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 8,
         names: {
           en: 'Onion Cutter',
           fr: 'Coupe-oignon',
@@ -2133,6 +2225,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Heavy Stomp',
           fr: 'Piétinement',
@@ -2150,6 +2243,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 2,
         names: {
           en: 'Full Charge Stomp',
           fr: 'Piétinement maximum',
@@ -2180,6 +2274,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Devastate +2',
           fr: 'Dévastation +2',
@@ -2208,6 +2303,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Raging Fists',
           fr: 'Poings de colère',
@@ -2224,6 +2320,7 @@ export const UNITS: any[] = [
         base: 350
       },
       {
+        id: 2,
         names: {
           en: 'Prishe Special',
           fr: 'Spécialité de Prishe',
@@ -2254,6 +2351,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Kingsglaive',
           fr: 'Glaive du roi',
@@ -2274,6 +2372,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Desperate Blow',
           fr: 'Attaque désespérée',
@@ -2303,6 +2402,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Daybreak Darkness',
           fr: 'Ténèbres de l\'aube',
@@ -2337,6 +2437,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'R020: Mirage',
           fr: 'R020: Mirage',
@@ -2366,6 +2467,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Meteor',
           fr: 'Météore',
@@ -2384,6 +2486,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Meteor +2',
           fr: 'Météore +2',
@@ -2403,23 +2506,26 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 3,
         names: {
-          en: 'Comet',
-          fr: 'Comète',
-          tw: '彗星',
-          kr: '코멧',
-          de: 'Komet',
-          es: 'Cometa'
+          en: 'Ultima',
+          fr: 'Ultima',
+          tw: '究極',
+          kr: '알테마',
+          de: 'Ultima',
+          es: 'Artema'
         },
         type: 'finish',
         framesList: '0',
-        firstHit: 120,
+        firstHit: 350,
         castTime: 40,
-        offset: 16,
-        base: 190,
+        offset: 0,
+        base: 280,
+        ignore: 50,
         damage: 'magic'
       },
       {
+        id: 4,
         names: {
           en: 'Stonja',
           fr: 'Terre max',
@@ -2440,6 +2546,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 5,
         names: {
           en: 'Aeroja',
           fr: 'Vent max',
@@ -2460,6 +2567,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 6,
         names: {
           en: 'Waterja',
           fr: 'Eau max',
@@ -2480,6 +2588,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 7,
         names: {
           en: 'Thundaja',
           fr: 'Foudre max',
@@ -2500,6 +2609,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 8,
         names: {
           en: 'Blizzaja',
           fr: 'Glace max',
@@ -2520,6 +2630,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 9,
         names: {
           en: 'firaja',
           fr: 'Feu max',
@@ -2540,6 +2651,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 10,
         names: {
           en: 'Chainsaw',
           fr: '回轉電鋸',
@@ -2555,6 +2667,24 @@ export const UNITS: any[] = [
         offset: 16,
         base: 140,
         ignore: 25
+      },
+      {
+        id: 11,
+        names: {
+          en: 'Comet',
+          fr: 'Comète',
+          tw: '彗星',
+          kr: '코멧',
+          de: 'Komet',
+          es: 'Cometa'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 120,
+        castTime: 40,
+        offset: 16,
+        base: 190,
+        damage: 'magic'
       }
     ]
   },
@@ -2570,6 +2700,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Alluring Chorus',
           fr: 'Chœur envoûtant',
@@ -2581,7 +2712,7 @@ export const UNITS: any[] = [
         framesList: '0-7-7-8-8-16-8',
         hitDamage: [10, 15, 15, 15, 15, 15, 15],
         firstHit: 139,
-        castTime: 0, //"effect_frames": [[0, 0, 140]],
+        castTime: 0,
         offset: 56,
         base: 280,
         ignore: 25,
@@ -2602,6 +2733,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Roundhouse Kick',
           fr: 'Coup de pied retourné',
@@ -2631,6 +2763,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Cube Explosion - Large',
           fr: 'Explosion cubique - Grande',
@@ -2660,6 +2793,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Crushing Vice',
           fr: 'Vice écrasant',
@@ -2689,6 +2823,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Destiny',
           fr: 'Destinée',
@@ -2722,6 +2857,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Ultimate Blow',
           fr: 'Souffle ultime',
@@ -2752,6 +2888,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Best Shot',
           fr: 'Superbe tir',
@@ -2768,6 +2905,7 @@ export const UNITS: any[] = [
         base: 450
       },
       {
+        id: 2,
         names: {
           en: 'Best Shot +2',
           fr: 'Superbe tir +2',
@@ -2797,6 +2935,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Word of Law',
           fr: 'Mot de la loi',
@@ -2832,6 +2971,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Cut Through +2',
           fr: 'Trancher +2',
@@ -2862,6 +3002,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Destroy Arm +2',
           fr: 'Détruire arme +2',
@@ -2892,6 +3033,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Dagger Boomerang (Max)',
           fr: 'Dague boomerang (Max)',
@@ -2908,6 +3050,7 @@ export const UNITS: any[] = [
         base: 620
       },
       {
+        id: 2,
         names: {
           en: 'Dagger Boomerang +2 (Max)',
           fr: 'Dague boomerang +2 (Max)',
@@ -2937,6 +3080,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Blood Pulsar',
           fr: 'Pulsar de sang',
@@ -2954,6 +3098,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Blood Rend',
           fr: 'Déchirure sanglante',
@@ -2974,6 +3119,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 3,
         names: {
           en: 'Blood Hydra',
           tw: '赤血九頭龍',
@@ -3008,6 +3154,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Into Darkness',
           fr: 'Obscurité sans fin',
@@ -3019,7 +3166,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 23,
-        castTime: 0, //"effect_frames": [[0, 20, 20]],
+        castTime: 0,
         offset: 40,
         base: 420,
         elements: [
@@ -3040,6 +3187,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'True Shot',
           fr: 'Tir sérieux',
@@ -3057,6 +3205,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 2,
         names: {
           en: 'True Shot +2',
           fr: 'Tir sérieux +2',
@@ -3088,6 +3237,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Starfall',
           fr: 'Météorite',
@@ -3107,6 +3257,7 @@ export const UNITS: any[] = [
         dualable: false,
       },
       {
+        id: 2,
         names: {
           en: 'Fire From Below',
           fr: 'Feu de l\'Enfer',
@@ -3128,6 +3279,7 @@ export const UNITS: any[] = [
         dualable: false,
       },
       {
+        id: 3,
         names: {
           en: 'Fire From Below +2',
           fr: 'Feu de l\'Enfer +2',
@@ -3165,6 +3317,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Soul Eater +2',
           fr: 'Mangeur d\'âme +2',
@@ -3200,6 +3353,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Abyssal Blade +2',
           fr: 'Lame abyssale +2',
@@ -3232,6 +3386,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Light of Judgment +2',
           fr: 'Lumière du jugement +2',
@@ -3264,6 +3419,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Wind Shear +2',
           fr: 'Tranche-vent +2',
@@ -3275,7 +3431,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 70,
-        castTime: 40, //"effect_frames": [[0]], "effects_raw": [[1, 1, 40, [0, 0, 0, 0, 0, 0, 0, 0, 540, 540]]],
+        castTime: 40,
         offset: 0,
         base: 700,
         damage: 'hybrid'
@@ -3294,6 +3450,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Firm Punch',
           fr: 'Poing ferme',
@@ -3310,6 +3467,7 @@ export const UNITS: any[] = [
         base: 300
       },
       {
+        id: 2,
         names: {
           en: 'Light Kick',
           fr: 'Coup de pied léger',
@@ -3326,6 +3484,7 @@ export const UNITS: any[] = [
         base: 200
       },
       {
+        id: 3,
         names: {
           en: 'Wolfclaw Fist',
           fr: 'Poings croc-de-loup',
@@ -3342,6 +3501,7 @@ export const UNITS: any[] = [
         base: 500
       },
       {
+        id: 4,
         names: {
           en: 'Falcon Kick',
           fr: 'Coup de pied du Faucon',
@@ -3358,6 +3518,7 @@ export const UNITS: any[] = [
         base: 300
       },
       {
+        id: 5,
         names: {
           en: 'Tigerclaw Fist',
           fr: 'Poings croc-de-tigre',
@@ -3373,6 +3534,7 @@ export const UNITS: any[] = [
         base: 600
       },
       {
+        id: 6,
         names: {
           en: 'Dragon Kick',
           fr: 'Coup de pied du Dragon',
@@ -3388,6 +3550,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
+        id: 7,
         names: {
           en: 'Fist Supreme',
           fr: 'Coup de poings ultime',
@@ -3418,6 +3581,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Toxic Rain',
           fr: 'Pluie toxique',
@@ -3451,6 +3615,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Alterna',
           fr: 'Alternance',
@@ -3482,6 +3647,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Grim - Soul Barrage',
           fr: 'Obscurité - Barrage spectral',
@@ -3500,6 +3666,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Grim - Eldritch Flames',
           fr: 'Obscurité - Flammes surnaturelles',
@@ -3525,6 +3692,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 3,
         names: {
           en: 'Phantom Fury',
           fr: 'Furie fantomatique',
@@ -3556,6 +3724,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Feed the Fishes',
           fr: 'Nourrissez les poissons',
@@ -3575,6 +3744,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Unleash the Kraken',
           fr: 'Relâchez le Kraken',
@@ -3611,6 +3781,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Illusion - Phantasmal Forces',
           fr: 'Illusion - Forces fantasmagorique',
@@ -3641,6 +3812,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Lunatic Voice (2)',
           fr: 'Voix ensorcelante (2)',
@@ -3676,6 +3848,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Hellfire (2)',
           fr: 'Flammes de l\'enfer (2)',
@@ -3711,6 +3884,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Diamond Dust (2)',
           fr: 'Poussière de diamant (2)',
@@ -3746,6 +3920,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Dark Messenger (2)',
           fr: 'Héraut ténébreux (2)',
@@ -3781,6 +3956,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Judgment Bolt (2)',
           fr: 'Foudre du jugement (2)',
@@ -3816,6 +3992,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Gaia\'s Wrath (2)',
           fr: 'Colère de Gaïa (2)',
@@ -3851,6 +4028,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Heavenswind (2)',
           fr: 'Vent céleste (2)',
@@ -3886,6 +4064,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Gungnir (2)',
           fr: 'Gungnir (2)',
@@ -3918,6 +4097,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Megaflare (1)',
           fr: 'MégaBrasier (1)',
@@ -3950,6 +4130,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Swiftwind Blade',
           fr: 'Lame oscillante',
@@ -3968,6 +4149,7 @@ export const UNITS: any[] = [
         ],
       },
       {
+        id: 2,
         names: {
           en: 'Greased Lightning',
           fr: 'Éclair supersonique',
@@ -3985,6 +4167,7 @@ export const UNITS: any[] = [
         ignore: 50,
       },
       {
+        id: 3,
         names: {
           en: 'Blade Prison',
           fr: 'Prison de lames',
@@ -4000,6 +4183,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
+        id: 4,
         names: {
           en: 'Quickbolt Blade',
           fr: 'Lame flashfoudre',
@@ -4020,6 +4204,7 @@ export const UNITS: any[] = [
         ],
       },
       {
+        id: 5,
         names: {
           en: 'Kingdom\'s Order',
           fr: 'Ordre royal',
@@ -4054,6 +4239,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Tornado',
           fr: 'Tornade',
@@ -4077,6 +4263,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 2,
         names: {
           en: 'Sunder',
           fr: 'Bourrasque électrique',
@@ -4099,6 +4286,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 3,
         names: {
           en: 'Maelstrom',
           fr: 'Maelström',
@@ -4138,6 +4326,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Slaughtering Blade',
           tw: '斬瞬刀',
@@ -4167,6 +4356,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Warp Strike',
           tw: '變移破解',
@@ -4185,6 +4375,7 @@ export const UNITS: any[] = [
         type: 'finish'
       },
       {
+        id: 2,
         names: {
           en: 'Point-Blank Warp-Strike',
           tw: '零距離變移破解',
@@ -4203,6 +4394,7 @@ export const UNITS: any[] = [
         type: 'finish'
       },
       {
+        id: 3,
         names: {
           en: 'Thunder Flask',
           tw: '雷電瓶',
@@ -4223,6 +4415,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 4,
         names: {
           en: 'Blizzard Flask',
           tw: '暴雪瓶',
@@ -4243,6 +4436,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 5,
         names: {
           en: 'Fire Flask',
           tw: '火焰瓶',
@@ -4263,6 +4457,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 6,
         names: {
           en: 'Armiger',
           tw: '幻影劍',
@@ -4292,6 +4487,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Hexa Thrust',
           tw: '六角突擊',
@@ -4312,6 +4508,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Vaskylade',
           tw: '龍騎槍蛇神突擊',
@@ -4345,6 +4542,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Hundred Thrusts',
           tw: '百烈槍',
@@ -4362,6 +4560,7 @@ export const UNITS: any[] = [
         ignore: 50,
       },
       {
+        id: 2,
         names: {
           en: 'Thousand Thrusts',
           tw: '千烈槍',
@@ -4379,6 +4578,7 @@ export const UNITS: any[] = [
         ignore: 50,
       },
       {
+        id: 3,
         names: {
           en: 'Tornado Spear',
           tw: '颶風矛',
@@ -4415,6 +4615,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Innocent Magika',
           tw: '聖潔魔法',
@@ -4433,6 +4634,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 2,
         names: {
           en: 'Quake',
           tw: '地槌',
@@ -4453,6 +4655,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 3,
         names: {
           en: 'Grand Wave',
           tw: '大波動',
@@ -4488,6 +4691,7 @@ export const UNITS: any[] = [
     dual: false,
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Climhazzard',
           tw: '罪惡烈斬',
@@ -4505,6 +4709,7 @@ export const UNITS: any[] = [
         type: 'finish'
       },
       {
+        id: 2,
         names: {
           en: 'Meteor Rain',
           tw: '流星雨',
@@ -4522,6 +4727,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 3,
         names: {
           en: 'Finishing Touch',
           tw: '畫龍點睛',
@@ -4538,6 +4744,7 @@ export const UNITS: any[] = [
         type: 'finish'
       },
       {
+        id: 4,
         names: {
           en: 'Omnislash',
           tw: '超究武神霸斬',
@@ -4572,6 +4779,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Mechanical Trinket',
           tw: '機械玩具箱',
@@ -4592,6 +4800,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Robot Soldiers',
           tw: '機關士兵',
@@ -4607,6 +4816,7 @@ export const UNITS: any[] = [
         base: 300
       },
       {
+        id: 3,
         names: {
           en: 'Hope of Light',
           tw: '希望之光',
@@ -4637,6 +4847,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Jinx - Emberfrost Brew',
           tw: '惡兆 - 烈火將至',
@@ -4662,6 +4873,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Jinx - Geysershock Brew',
           tw: '惡兆 - 暴雪將至',
@@ -4687,6 +4899,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 3,
         names: {
           en: 'Jinx - Cycloseismic Brew',
           tw: '惡兆 - 泥流將至',
@@ -4725,6 +4938,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Ice Shards',
           tw: '寒冰碎片',
@@ -4749,6 +4963,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Absolute Zero',
           tw: '極限零凍',
@@ -4769,6 +4984,7 @@ export const UNITS: any[] = [
         ],
       },
       {
+        id: 3,
         names: {
           en: 'Absolute Zero (Max)',
           tw: '極限零凍 (Max)',
@@ -4789,6 +5005,7 @@ export const UNITS: any[] = [
         ],
       },
       {
+        id: 4,
         names: {
           en: 'Snow Burial',
           tw: '冰雪葬',
@@ -4809,6 +5026,7 @@ export const UNITS: any[] = [
         ],
       },
       {
+        id: 5,
         names: {
           en: 'Snowbear Rampage',
           tw: '失控雪熊',
@@ -4843,6 +5061,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Glacial Wave +2',
           tw: '冰凍波 +2',
@@ -4880,6 +5099,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Frozen Hurricane',
           tw: '冰凍颶風',
@@ -4915,6 +5135,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Focus Magic - Piercing Shot',
           tw: '魔法聚集-穿刺',
@@ -4935,6 +5156,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Focus Magic - Water Shot',
           tw: '魔法聚集-水擊',
@@ -4954,6 +5176,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 3,
         names: {
           en: 'Focus Magic - Frostbite (Max)',
           tw: '魔法聚集-凍傷 (Max)',
@@ -4974,6 +5197,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 4,
         names: {
           en: 'Aquatic Implosion',
           tw: '水波聚爆',
@@ -4995,6 +5219,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 5,
         names: {
           en: 'Icicle Press',
           tw: '冰雪重壓',
@@ -5030,6 +5255,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Lightning Strike',
           tw: '電閃雷鳴',
@@ -5049,6 +5275,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Holy Affliction',
           tw: '聖光悲愴',
@@ -5068,6 +5295,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 3,
         names: {
           en: 'Luminous Strike',
           tw: '輝光直擊',
@@ -5087,6 +5315,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 4,
         names: {
           en: 'Sacred Strike',
           tw: '聖光直擊',
@@ -5104,6 +5333,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 5,
         names: {
           en: 'Morning Star',
           tw: '啟明星獻禮',
@@ -5123,6 +5353,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 6,
         names: {
           en: 'Hero of Legend',
           tw: '神諭勇者',
@@ -5156,6 +5387,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Halberd Dance',
           tw: '薙刀艷舞',
@@ -5173,6 +5405,7 @@ export const UNITS: any[] = [
         ignore: 25
       },
       {
+        id: 2,
         names: {
           en: 'Samurai Princess\'s Order',
           tw: '公主武士大號令',
@@ -5202,6 +5435,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Blazing Hell Slash',
           tw: '焰獄斬',
@@ -5221,6 +5455,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 2,
         names: {
           en: 'Torpedo Stance',
           tw: '雷擊陣',
@@ -5240,6 +5475,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 3,
         names: {
           en: 'Purgatory Fire Slash',
           tw: '煉獄剎燒斬',
@@ -5260,6 +5496,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 4,
         names: {
           en: 'Thunder Strike Stance',
           tw: '轟雷衝擊陣',
@@ -5280,6 +5517,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 5,
         names: {
           en: 'Toad Art - Raiden',
           tw: '蟾蜍忍法·雷電',
@@ -5314,6 +5552,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Heavensplitter',
           tw: '眺望破天',
@@ -5330,6 +5569,7 @@ export const UNITS: any[] = [
         base: 230
       },
       {
+        id: 2,
         names: {
           en: 'Crimson Flash',
           tw: '紅紫一閃',
@@ -5347,6 +5587,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        id: 3,
         names: {
           en: 'Fatal Bloom',
           tw: '雪華終焉',
@@ -5369,6 +5610,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 4,
         names: {
           en: 'Crimson Era',
           tw: '深紅終結',
@@ -5391,6 +5633,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 5,
         names: {
           en: 'Blade Flash - Final',
           tw: '紫電一閃・終',
@@ -5408,6 +5651,7 @@ export const UNITS: any[] = [
         type: 'finish',
       },
       {
+        id: 6,
         names: {
           en: 'Unstoppable Wave',
           tw: '跋山涉水',
@@ -5439,6 +5683,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Revolt',
           tw: '反叛',
@@ -5458,6 +5703,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 2,
         names: {
           en: 'Flamephant',
           tw: '火炎幻想',
@@ -5492,6 +5738,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Elemental Shot - Fire',
           tw: '屬性強化彈·火',
@@ -5512,6 +5759,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Elemental Shot - Lightning',
           tw: '屬性強化彈·雷',
@@ -5532,6 +5780,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 3,
         names: {
           en: 'Elemental Shot - Water',
           tw: '屬性強化彈·水',
@@ -5552,6 +5801,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 4,
         names: {
           en: 'Elemental Shot - Light',
           tw: '屬性強化彈·光',
@@ -5572,6 +5822,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 5,
         names: {
           en: 'Killer Shot',
           tw: '致命射擊',
@@ -5589,6 +5840,7 @@ export const UNITS: any[] = [
         type: 'finish'
       },
       {
+        id: 6,
         names: {
           en: 'Finishing Blow',
           tw: '終極吐息',
@@ -5606,6 +5858,7 @@ export const UNITS: any[] = [
         type: 'finish'
       },
       {
+        id: 7,
         names: {
           en: 'Element of Treachery',
           tw: '謀逆之相位星',
@@ -5637,6 +5890,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Quick Thunder\'s Light',
           tw: '迅・雷光',
@@ -5660,6 +5914,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Quick Bright Flash',
           tw: '迅・光閃',
@@ -5683,6 +5938,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 3,
         names: {
           en: 'Quick Blighted Gloom',
           tw: '迅・冥暗',
@@ -5706,6 +5962,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 4,
         names: {
           en: 'Quick Rebel Intention',
           tw: '迅・反叛之意',
@@ -5724,6 +5981,7 @@ export const UNITS: any[] = [
         damage: 'magic'
       },
       {
+        id: 5,
         names: {
           en: 'Quick Final Thunder (Max)',
           tw: '迅・終焉轟雷 (Max)',
@@ -5744,6 +6002,7 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 6,
         names: {
           en: 'Eternal Ray',
           tw: '永恆之光',
@@ -5776,6 +6035,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Raging Bird',
           tw: '憤怒之鳥',
@@ -5792,6 +6052,7 @@ export const UNITS: any[] = [
         base: 300
       },
       {
+        id: 2,
         names: {
           en: 'Raging Bird +2',
           tw: '憤怒之鳥 +2',
@@ -5808,6 +6069,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
+        id: 3,
         names: {
           en: 'Blazing Combo',
           tw: '熾熱連擊',
@@ -5831,6 +6093,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 4,
         names: {
           en: 'Blazing Combo +2',
           tw: '熾熱連擊 +2',
@@ -5867,6 +6130,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
+        id: 1,
         names: {
           en: 'Lux Magna +2',
           tw: '光輝一擊 +2',
@@ -5889,6 +6153,7 @@ export const UNITS: any[] = [
         }
       },
       {
+        id: 2,
         names: {
           en: 'Chainsaw',
           fr: '回轉電鋸',
@@ -5906,6 +6171,7 @@ export const UNITS: any[] = [
         ignore: 25
       },
       {
+        id: 3,
         names: {
           en: 'Chainsaw +2',
           fr: '回轉電鋸 +2',

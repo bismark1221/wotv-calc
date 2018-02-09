@@ -1,0 +1,14 @@
+request_save:
+  path:      /request
+  defaults:  { _controller: AppBundle:Request:save }
+  methods: [POST]
+
+request_get:
+  path:      /request/{id}
+  defaults:  { _controller: AppBundle:Request:get }
+  methods: [GET]
+
+find_best:
+  path:      /find-best
+  defaults:  { _controller: AppBundle:Chain:findBest }
+  methods: [GET]

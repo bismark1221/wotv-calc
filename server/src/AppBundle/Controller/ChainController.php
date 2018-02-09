@@ -2,46 +2,75 @@
 
 namespace AppBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use FOS\RestBundle\Controller\Annotations as Rest;
-use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
 
+use AppBundle\Document\ChainDocument;
 use AppBundle\Service\ChainService;
 
 class ChainController extends FOSRestController
 {
-    /**
-     * @Rest\Get("/api/hello")
-     */
-    public function getAction()
+    public function findBestAction()
     {
-        // $restresult = $this->getDoctrine()->getRepository('AppBundle:User')->findAll();
-        //   if ($restresult === null) {
-        //     return new View("there are no users exist", Response::HTTP_NOT_FOUND);
-        // }
-        $foo = new \StdClass();
-        $foo->bar = "baz";
-        return $foo;
-    }
+        $requestRepository = $this->get('doctrine_mongodb')
+            ->getRepository('AppBundle:RequestDocument');
+        $request = $requestRepository->findOneBy(array('status' => 'created'));
 
-    /**
-     * @Rest\Post("/api/find-best-chains")
-     */
-    public function findBestChainsAction(Request $request)
-    {
-        $data = json_decode($request->getContent(), true);
-        if(empty($data) || !is_array($data))
-        {
-          return new View("NULL VALUES ARE NOT ALLOWED", Response::HTTP_NOT_ACCEPTABLE);
+        if (!$request) {
+            throw $this->createNotFoundException('No more request to run');
+        } else {
+            $request->setStatus('running');
+
+            $dm = $this->get('doctrine_mongodb')->getManager();
+            $dm->persist($request);
+            $dm->flush();
+
+            $chain = $this->get('doctrine_mongodb')
+                ->getRepository('AppBundle:ChainDocument')
+                ->findOneBy(array('link' => $request->getLink()));
+
+            if ($chain) {
+                $result = $chain->getResult();
+            } else {
+                if ($request->getMoving()) {
+                    $units = $request->getUnits();
+                } else {
+                    $units = array();
+                    forEach($request->getUnits() as $unit) {
+                        if ($unit) {
+                            array_push($units, $unit);
+                        }
+                    }
+                }
+
+                $chainService = new ChainService;
+                $result = $chainService->findBestFrames($units);
+
+                $chain = new ChainDocument();
+                $chain->setUnits($units);
+                $chain->setLink($request->getLink());
+                $chain->setModified($request->getModified());
+                unset($result['modifier']['hits']);
+                unset($result['combo']['hits']);
+                $chain->setResult($result);
+
+                $dm->persist($chain);
+                $dm->flush();
+            }
+
+            $allRequestsForLink = $requestRepository->findBy(array('link' => $chain->getLink()));
+
+            forEach($allRequestsForLink as $request) {
+                $request->setChain($chain->getId());
+                $request->setStatus('done');
+
+                $dm->persist($request);
+                $dm->flush();
+            }
+
+            return $result;
         }
-
-        $chainService = new ChainService;
-        $test = $chainService->findBestFrames($data);
-
-        return $test;
     }
 }

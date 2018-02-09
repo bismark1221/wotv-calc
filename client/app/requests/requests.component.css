@@ -1,0 +1,99 @@
+.inlineBlock {
+  display: inline-block;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.marginAuto {
+  margin: auto;
+}
+
+.verticalTop {
+  vertical-align: top;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.requests {
+  max-width: 1030px;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.requestBlock {
+  min-width: 800px;
+  min-height: 142px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.requestTitle {
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  padding-bottom: 5px;
+}
+
+.requestDate {
+  float: right;
+}
+
+.requestLeft {
+  min-width: 600px;
+  display: inline-block;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.requestRight {
+  width: 170px;
+  display: inline-block;
+  padding: 5px;
+  padding-right: 0px;
+  text-align: center;
+  border-left: 1px solid rgba(0,0,0,.15);
+}
+
+.unitsZone {
+  width: 290px;
+  display: inline-block;
+  text-align: center;
+}
+
+.unitsLeft {
+  margin-right: 20px;
+}
+
+.unitsRight {
+}
+
+.unitsTitle {
+  width: 100%;
+}
+
+
+
+@media (max-width: 738px) {
+}
+
+@media (max-width: 821px) {
+}
+
+@media (max-width: 1053px) {
+}
