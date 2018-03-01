@@ -1,0 +1,10 @@
+### Units ###
+<div *ngFor="let unit of ffbeChainUnits; let j = index">
+  {{j}} -- {{unit.names.en}}
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed[j] = !isCollapsed[j]" [attr.aria-expanded]="!isCollapsed[j]">
+    Toggle
+  </button>
+  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed[j]">
+    <pre [innerHtml]="unit | prettyjson"></pre>
+  </div>
+</div>

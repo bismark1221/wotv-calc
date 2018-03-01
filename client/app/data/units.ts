@@ -1990,12 +1990,12 @@ export const UNITS: any[] = [
   {
     id: 34,
     names: {
-      en: 'Zidane (JP Only - 6 stars)',
-      fr: 'Djidane (JP Seulement - 6 étoiles)',
-      tw: '吉坦 (JP Only - 6 stars)',
-      kr: '지탄 (JP Only - 6 stars)',
-      de: 'Zidane (JP Only - 6 stars)',
-      es: 'Yitán (JP Only - 6 stars)'
+      en: 'Zidane',
+      fr: 'Djidane',
+      tw: '吉坦',
+      kr: '지탄',
+      de: 'Zidane',
+      es: 'Yitán'
     },
     abilities: [
       {
@@ -6187,6 +6187,542 @@ export const UNITS: any[] = [
         offset: 16,
         base: 230,
         ignore: 40
+      }
+    ]
+  },
+  {
+    id: 101,
+    names: {
+      en: 'Ang',
+      tw: '昂',
+      kr: '앙',
+      fr: 'Ang',
+      de: 'Ang',
+      es: 'Ang',
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Beast Hunter Arrow",
+          tw: "狩獵之箭",
+          kr: "엽수의 화살",
+          fr: "Flèche chasse-bête",
+          de: "Bestienjäger-Pfeil",
+          es: "Flecha tumbabestias"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 85,
+        framesList: "0",
+        offset: 16,
+        base: 275,
+        type: "finish"
+      },
+      {
+        id: 2,
+        names: {
+          en: "Bird Hunter Arrow",
+          tw: "射鳥之箭",
+          kr: "사조의 화살",
+          fr: "Flèche chasse-oiseau",
+          de: "Vogeljäger-Pfeil",
+          es: "Flecha tumbapájaros"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 85,
+        framesList: "0",
+        offset: 16,
+        base: 275,
+        type: "finish"
+      },
+      {
+        id: 3,
+        names: {
+          en: "Dragon Hunter Arrow",
+          tw: "屠龍之箭",
+          kr: "도룡의 화살",
+          fr: "Flèche chasse-dragon",
+          de: "Drachejäger-Pfeil",
+          es: "Flecha tumbadragones"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 85,
+        framesList: "0",
+        offset: 16,
+        base: 275,
+        type: "finish"
+      },
+      {
+        id: 4,
+        names: {
+          en: "Insect Hunter Arrow",
+          tw: "殺蟲之箭",
+          kr: "살충의 화살",
+          fr: "Flèche chasse-insecte",
+          de: "Insektenjäger-PFeil",
+          es: "Flecha tumbainsectos"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 85,
+        framesList: "0",
+        offset: 16,
+        base: 275,
+        type: "finish"
+      },
+      {
+        id: 5,
+        names: {
+          en: "Petrifying Shot",
+          tw: "石化連射",
+          kr: "석화연사",
+          fr: "Tir pétrifiant",
+          de: "Versteinernder Schuss",
+          es: "Tiro petrificante"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 22,
+        framesList: "0",
+        offset: 16,
+        base: 70,
+        type: "finish"
+      },
+      {
+        id: 6,
+        names: {
+          en: "Penetrating Shot",
+          tw: "穿甲連射",
+          kr: "철갑연사",
+          fr: "Tir pénétrant",
+          de: "Durchdringender Schuss",
+          es: "Tiro penetrante"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 22,
+        framesList: "0",
+        offset: 16,
+        base: 70,
+        type: "finish"
+      },
+      {
+        id: 7,
+        names: {
+          en: "Ash Shot",
+          tw: "灰燼連射",
+          kr: "회신연사",
+          fr: "Tir de cendre",
+          de: "Ascheschuss",
+          es: "Tiro de ceniza"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          fire: 50
+        },
+        firstHit: 22,
+        framesList: "0",
+        offset: 16,
+        base: 70,
+        type: "finish"
+      },
+      {
+        id: 8,
+        names: {
+          en: "Swift Shot",
+          tw: "急速連射",
+          kr: "질속연사",
+          fr: "Tir ultra rapide",
+          de: "Flinker Schuss",
+          es: "Tiro rápido"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 22,
+        framesList: "0",
+        offset: 16,
+        base: 200,
+        type: "finish"
+      },
+      {
+        id: 9,
+        names: {
+          en: "Falling Sun",
+          tw: "射日",
+          kr: "낙일",
+          fr: "Soleil descendant",
+          de: "Sonnensturz",
+          es: "Sol descendente"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 60,
+        damage: "physical",
+        elements: [
+          "fire"
+        ],
+        debuff: {
+          fire: 74
+        },
+        firstHit: 150,
+        framesList: "0",
+        base: 650,
+        ignore: 50,
+        offset: 16,
+        type: "finish",
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 102,
+    names: {
+      en: "Prompto",
+      tw: "普羅恩普特",
+      kr: "프롬프토",
+      fr: "Prompto",
+      de: "Prompto",
+      es: "Prompto"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Ballistic",
+          tw: "扇形彈幕",
+          kr: "불릿 팬",
+          fr: "Déluge de balles",
+          de: "Kugelhagel",
+          es: "Gatillo fácil"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        base: 220,
+        framesList: "0-5-5-5-5-5-5-5-5-5",
+        offset: 16
+      },
+      {
+        id: 2,
+        names: {
+          en: "Circular Saw",
+          tw: "圓盤鋸",
+          kr: "서큘러 쏘우",
+          fr: "Scie circulaire",
+          de: "Wirbelsäge",
+          es: "Sierra circular"
+        },
+        hitDamage: [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 225,
+        ignore: 50
+      },
+      {
+        id: 3,
+        names: {
+          en: "Gravity Well",
+          tw: "引力波",
+          kr: "어트랙트 웨이브",
+          fr: "Vortex",
+          de: "Gravitationspulsator",
+          es: "Gravitón"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          lightning: 60
+        },
+        firstHit: 110,
+        framesList: "0",
+        offset: 8,
+        base: 360,
+        type: "finish"
+      },
+      {
+        id: 4,
+        names: {
+          en: "Recoil",
+          tw: "衝擊波",
+          kr: "블래스터",
+          fr: "Ravageur",
+          de: "Rückstoß",
+          es: "Fulminador"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 104,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 110,
+        framesList: "0",
+        offset: 16,
+        base: 250,
+        ignore: 50,
+        type: "finish"
+      },
+      {
+        id: 5,
+        names: {
+          en: "Drillbreaker",
+          tw: "破壞鑽頭",
+          kr: "드릴 브레이커",
+          fr: "Foreuse",
+          de: "Perforator",
+          es: "Perforador"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 104,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 114,
+        framesList: "0",
+        offset: 16,
+        base: 200,
+        ignore: 50,
+        type: "finish"
+      },
+      {
+        id: 6,
+        names: {
+          en: "Trigger-Happy",
+          tw: "連發射擊",
+          kr: "트리거 해피",
+          fr: "Gâchette facile",
+          de: "Nervöser Finger",
+          es: "Metrallazo"
+        },
+        hitDamage: [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
+        ],
+        castTime: 138,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 180,
+        framesList: "0-8-8-8-8-8-8-8-32-8-8-8-8-8-96",
+        offset: 16,
+        base: 800,
+        dualable: false
+      }
+    ]
+  },
+  {
+  id: 103,
+    names: {
+      en: "Beatrix",
+      tw: "貝特麗克絲",
+      kr: "베아트릭스",
+      fr: "Béate",
+      de: "Beatrix",
+      es: "Beatrix"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Seiken - Thunder Slash",
+          tw: "聖劍技・雷鳴劍",
+          kr: "성검기·뇌명검",
+          fr: "Lame Ste - Foudrolle",
+          de: "Heiliges Schwert - Schocker",
+          es: "Ira santa - Sable eléctrico"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [
+          "lightning"
+        ],
+        debuff: {},
+        firstHit: 26,
+        framesList: "0-8-8-8-8-8-8-8",
+        offset: 86,
+        base: 400
+      },
+      {
+        id: 2,
+        names: {
+          en: "Seiken - Stock Break",
+          tw: "聖劍技・破曉斬",
+          kr: "성검기·스톡 브레이크",
+          fr: "Lame Ste - Fente",
+          de: "Heiliges Schwert - Donnerklinge",
+          es: "Ira santa - Devastación"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 72,
+        framesList: "0",
+        offset: 86,
+        base: 200,
+        type: "finish"
+      },
+      {
+        id: 3,
+        names: {
+          en: "Seiken - Climhazzard",
+          tw: "聖劍技・天災",
+          kr: "성검기·클라임 해저드",
+          fr: "Lame Ste - Mortimer",
+          de: "Heiliges Schwert - Exekutionsschlag",
+          es: "Ira santa - Guillotina"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [],
+        debuff: {},
+        firstHit: 65,
+        framesList: "0",
+        offset: 86,
+        type: "finish"
+      },
+      {
+        id: 4,
+        names: {
+          en: "Seiken - Saint Bringer",
+          tw: "聖劍技・聖使",
+          kr: "성검기·세인트 브링거",
+          fr: "Lame Ste - Porteur de l'aube",
+          de: "Heiliges Schwert - Heilsbringer",
+          es: "Ira santa - Portador del alba"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          light: 50
+        },
+        firstHit: 12,
+        framesList: "0-8-8-8-8-8-8-8",
+        offset: 86,
+        base: 425
+      },
+      {
+        id: 5,
+        names: {
+          en: "Seiken - Shock",
+          tw: "聖劍技・震擊",
+          kr: "성검기·쇼크",
+          fr: "Lame Ste - Choc",
+          de: "Heiliges Schwert - Atomisator",
+          es: "Ira santa - Shock"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0",
+        offset: 16,
+        base: 265,
+        ignore: 50,
+        type: "finish"
+      },
+      {
+        id: 6,
+        names: {
+          en: "Rose of May",
+          tw: "皋月的荊棘",
+          kr: "로즈 오브 메이",
+          fr: "Rose de mai",
+          de: "Mairosen",
+          es: "Rosa de mayo"
+        },
+        hitDamage: [
+          15, 15, 15, 55
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 98,
+        framesList: "0-32-59-87",
+        offset: 8,
+        base: 520,
+        ignore: 50,
+        dualable: false
       }
     ]
   }

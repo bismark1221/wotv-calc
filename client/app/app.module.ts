@@ -14,6 +14,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LightboxModule } from 'angular2-lightbox';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrettyJsonModule } from 'angular2-prettyjson';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
@@ -33,6 +34,7 @@ import { LegalComponent } from './legal/legal.component';
 import { MacroComponent } from './macro/macro.component';
 import { HowToComponent } from './how-to/how-to.component';
 import { RequestsComponent } from './requests/requests.component';
+import { JsonComponent } from './json/json.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
@@ -70,7 +72,8 @@ export function createTranslateLoader(http: HttpClient) {
     LegalComponent,
     MacroComponent,
     HowToComponent,
-    RequestsComponent
+    RequestsComponent,
+    JsonComponent
   ],
   imports: [
     BrowserModule,
@@ -98,7 +101,8 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     LightboxModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    PrettyJsonModule
   ],
   providers: [
     UnitService,
