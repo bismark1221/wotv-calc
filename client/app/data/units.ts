@@ -1404,18 +1404,46 @@ export const UNITS: any[] = [
       {
         id: 1,
         names: {
-          en: 'Torrential Slash',
-          fr: 'Entaille torrentielle',
-          tw: '前後逆波斬',
-          kr: '전후격파 베기',
-          de: 'Reißender Schnitt',
-          es: 'Tajo torrencial'
+          en: "Whirlwind Slash",
+          tw: "旋風三段斬",
+          kr: "질풍 삼단 베기",
+          fr: "Entaille tourbillonnante",
+          de: "Wirbelwindschnitt",
+          es: "Tajo torbellino"
         },
-        framesList: '0-10-10-10-10-10-10-10-10-10',
-        firstHit: 42,
+        hitDamage: [50, 50],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          wind: 50
+        },
+        firstHit: 17,
+        framesList: "0-26",
+        offset: 8,
+        base: 700
+      },
+      {
+        id: 2,
+        names: {
+          en: "Torrential Slash",
+          tw: "前後逆波斬",
+          kr: "전후격파 베기",
+          fr: "Entaille torrentielle",
+          de: "Reißender Schnitt",
+          es: "Tajo torrencial"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
         castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10-10-10",
         offset: 26,
-        base: 700,
+        base: 700
       }
     ]
   },
@@ -5902,7 +5930,7 @@ export const UNITS: any[] = [
         framesList: '0-10',
         firstHit: 2,
         castTime: 0,
-        offset: 8,
+        offset: 56,
         base: 230,
         type: 'finish',
         damage: 'magic',
@@ -5926,7 +5954,7 @@ export const UNITS: any[] = [
         framesList: '0-10',
         firstHit: 2,
         castTime: 0,
-        offset: 8,
+        offset: 56,
         base: 230,
         type: 'finish',
         damage: 'magic',
@@ -5950,7 +5978,7 @@ export const UNITS: any[] = [
         framesList: '0-10',
         firstHit: 2,
         castTime: 0,
-        offset: 8,
+        offset: 56,
         base: 230,
         type: 'finish',
         damage: 'magic',
@@ -5974,7 +6002,7 @@ export const UNITS: any[] = [
         framesList: '0',
         firstHit: 167,
         castTime: 0,
-        offset: 8,
+        offset: 160,
         base: 650,
         ignore: 25,
         type: 'finish',
@@ -6187,6 +6215,31 @@ export const UNITS: any[] = [
         offset: 16,
         base: 230,
         ignore: 40
+      },
+      {
+        id: 4,
+        names: {
+          en: "Astral Shot",
+          tw: "星光射擊",
+          kr: "아스트랄 사격",
+          fr: "Tir astral",
+          de: "Astralschuss",
+          es: "Saeta astral"
+        },
+        hitDamage: [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [
+          "light"
+        ],
+        debuff: {},
+        firstHit: 40,
+        framesList: "0-9-9-9-9-9-9-9-9-9-9-10-9-11-15",
+        offset: 8,
+        base: 430,
+        dualable: false
       }
     ]
   },
@@ -6573,7 +6626,7 @@ export const UNITS: any[] = [
     ]
   },
   {
-  id: 103,
+    id: 103,
     names: {
       en: "Beatrix",
       tw: "貝特麗克絲",
@@ -6722,6 +6775,112 @@ export const UNITS: any[] = [
         offset: 8,
         base: 520,
         ignore: 50,
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 104,
+    names: {
+      en: "Yuri",
+      tw: "百合",
+      kr: "유리",
+      fr: "Yuri",
+      de: "Yuri",
+      es: "Yuri"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Whirlwind Evasion 2",
+          tw: "旋風遁・二式",
+          kr: "질풍둔 2식",
+          fr: "Évasion - Tornade II",
+          de: "Wirbelwindvermeidung 2",
+          es: "Evasión del remolino II"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "wind"
+        ],
+        debuff: {},
+        firstHit: 59,
+        framesList: "0-8-8-8-8-8-8-8",
+        offset: 16,
+        base: 400
+      },
+      {
+        id: 2,
+        names: {
+          en: "Earthsplit Evasion 2",
+          tw: "土割遁・二式",
+          kr: "토할둔 2식",
+          fr: "Évasion - Fissure terrestre II",
+          de: "Erdspaltenvermeidung 2",
+          es: "Evasión partetierra II"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "earth"
+        ],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 425
+      },
+      {
+        id: 3,
+        names: {
+          en: "Mugen - Fake",
+          tw: "夢幻之術・偽",
+          kr: "몽환술·거짓",
+          fr: "Rêverie - Tromperie",
+          de: "Mugen - Täuschung",
+          es: "Mugen - Falsedad"
+        },
+        hitDamage: [
+          10, 10, 10, 20, 20, 30
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-8-8-14-10-10",
+        offset: 16,
+        base: 270
+      },
+      {
+        id: 4,
+        names: {
+          en: "Heavenly Chains",
+          tw: "天鎖滅襲刃",
+          kr: "천쇄멸습인",
+          fr: "Chaînes divines",
+          de: "Himmlische Ketten",
+          es: "Cadenas celestiales"
+        },
+        hitDamage: [
+          15, 15, 15, 15, 40
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 18,
+        framesList: "0-30-28-10-36",
+        offset: 8,
+        base: 742.5,
         dualable: false
       }
     ]

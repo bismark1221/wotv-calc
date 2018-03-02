@@ -235,6 +235,22 @@ export class JsonComponent implements OnInit {
       return;
     }
 
+    // "effects": ["3 physical attacks (1.6x each, 4.8x total, ATK) to all enemies"],
+    // "effects_raw": [[2, 1, 42, [0,  0,  3,  3,  160]]]
+    effect = this.findEffect(ability, 2, 1, 42);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[3] * effect[4];
+      return;
+    }
+
+    // "effects": ["Critical physical damage (4.95x, ATK) to all enemies"],
+    // "effects_raw": [[2, 1, 43, [0,  0,  495,  0]]]},
+    effect = this.findEffect(ability, 2, 1, 43);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2] * 1.5;
+      return;
+    }
+
     // magic damage : [1, 1, 15, [0,  0,  0,  0,  0,  180,  0]
     // & ignore : [2, 1, 70, [0,  0,  180,  50]]
     effect = this.findEffect(ability, 1, 1, 15);
@@ -252,6 +268,12 @@ export class JsonComponent implements OnInit {
 
     // hybrid damage : [1, 1, 40, [0,  0,  0,  0,  0,  0,  0,  0,  180,  180]]
     effect = this.findEffect(ability, 1, 1, 40);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[8];
+      return;
+    }
+
+    effect = this.findEffect(ability, 2, 1, 40);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[8];
       return;
@@ -349,8 +371,22 @@ export class JsonComponent implements OnInit {
     if (effect) {
       for (let i = 2; i < effect.length; i++) {
         if (effect[i] !== 2) {
+          console.log("ADD SKILL 1")
+          console.log(effect[i])
           this.addSkill(unitId, this.skills[effect[i]], effect[i]);
         }
+      }
+    }
+
+    // [1, 3, 100, [[2,  2,  2], [502050,  502060,  502070], 99999, 4, 1]]
+    effect = this.findEffect(ability, 1, 3, 100);
+    if (effect) {
+      if (Array.isArray(effect[1])) {
+        effect[1].forEach(skillId => {
+          this.addSkill(unitId, this.skills[skillId], skillId);
+        });
+      } else {
+        this.addSkill(unitId, this.skills[effect[1]], effect[1]);
       }
     }
   }
