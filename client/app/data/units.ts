@@ -521,6 +521,28 @@ export const UNITS: any[] = [
       {
         id: 5,
         names: {
+          en: "R040: Blade",
+          tw: "R040：劍",
+          kr: "R040: 블레이드",
+          fr: "R040 : Lame",
+          de: "R040: Klinge",
+          es: "R040: Espada"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-40-40-40-40",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 6,
+        names: {
           en: 'A150: Vault',
           fr: 'A150: Décharge',
           tw: 'A150：伏特',
@@ -539,7 +561,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        id: 6,
+        id: 7,
         names: {
           en: 'Self Destruct: 2B',
           fr: 'Autodestruction : 2B',
@@ -557,7 +579,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 7,
+        id: 8,
         names: {
           en: 'Ho229 Type-B',
           fr: 'Ho229 Type-B',
@@ -6443,6 +6465,29 @@ export const UNITS: any[] = [
       {
         id: 9,
         names: {
+          en: "Armor Piercing Arrow",
+          tw: "穿甲箭雨",
+          kr: "철갑의 화살",
+          fr: "Flèche brisarmure",
+          de: "Panzerbrecher-Pfeil",
+          es: "Flecha penetraarmaduras"
+        },
+        hitDamage: [
+          16, 18, 20, 22, 24
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 82,
+        framesList: "0-7-7-7-7",
+        offset: 16,
+        base: 180,
+        ignore: 25
+      },
+      {
+        id: 10,
+        names: {
           en: "Falling Sun",
           tw: "射日",
           kr: "낙일",
@@ -6469,7 +6514,8 @@ export const UNITS: any[] = [
         type: "finish",
         dualable: false
       }
-    ]
+    ],
+    dual: false
   },
   {
     id: 102,

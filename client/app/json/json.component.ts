@@ -114,8 +114,6 @@ export class JsonComponent implements OnInit {
     Object.keys(this.summons).forEach(summonId => {
       this.addSummon(this.summons[summonId], summonId);
     });
-
-    console.log(this.ffbeChainUnits)
   }
 
   private addUnit(unit) {
@@ -371,8 +369,6 @@ export class JsonComponent implements OnInit {
     if (effect) {
       for (let i = 2; i < effect.length; i++) {
         if (effect[i] !== 2) {
-          console.log("ADD SKILL 1")
-          console.log(effect[i])
           this.addSkill(unitId, this.skills[effect[i]], effect[i]);
         }
       }

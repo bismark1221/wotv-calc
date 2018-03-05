@@ -445,6 +445,17 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.reloadList();
     }
 
+    if (this.chain[position].id) {
+      this.chain[position].abilities.forEach(ability => {
+        if (ability.framesList.split('-').length !== ability.hitDamage.length) {
+          let hitCount = ability.framesList.split('-').length;
+          for (let i = 0; i < hitCount; i++) {
+            ability.hitDamage[i] = 100 / hitCount;
+          }
+        }
+      });
+    }
+
     this.onChangeChain();
   }
 
