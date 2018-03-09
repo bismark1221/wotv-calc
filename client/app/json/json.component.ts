@@ -97,7 +97,7 @@ export class JsonComponent implements OnInit {
         let entries = Object.keys(this.units[unitId].entries);
         if (this.lbs[entries[entries.length - 1]]){
           this.addSkill(id, this.lbs[entries[entries.length - 1]], entries[entries.length - 1]);
-          this.ffbeChainUnits[id].abilities[this.ffbeChainUnits[id].abilities.length - 1].dualable = false;
+          this.ffbeChainUnits[id].abilities[this.ffbeChainUnits[id].abilities.length - 1].dualable = false; // to pass in method addSKill !!!!!
         }
       }
     });
@@ -145,6 +145,17 @@ export class JsonComponent implements OnInit {
   }
 
   private addSkill(unitId, ability, dataId) {
+    let exist = false;
+    this.ffbeChainUnits[unitId].abilities.forEach(skill => {
+      if (skill.dataId == dataId) {
+        exist = true;
+      }
+    })
+
+    if (exist) {
+      return;
+    }
+
     let id = this.ffbeChainUnits[unitId].abilities.length;
 
     this.ffbeChainUnits[unitId].abilities[id] = {
@@ -167,7 +178,7 @@ export class JsonComponent implements OnInit {
     this.updateOffset(unitId, id, ability);
     this.updateDamage(unitId, id, ability);
     this.updateDebuff(unitId, id, ability);
-    this.unlockSkill(unitId, ability);
+    this.unlockSkill(unitId, ability, dataId);
     this.isMultipleCastAbility(unitId, ability);
 
     if (ability.attack_frames[0].length === 1) {
@@ -248,6 +259,12 @@ export class JsonComponent implements OnInit {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2] * 1.5;
       return;
     }
+    // [1, 1, 43, [0,  0,  700,  0]]
+    effect = this.findEffect(ability, 1, 1, 43);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2] * 1.5;
+      return;
+    }
 
     // magic damage : [1, 1, 15, [0,  0,  0,  0,  0,  180,  0]
     // & ignore : [2, 1, 70, [0,  0,  180,  50]]
@@ -261,6 +278,13 @@ export class JsonComponent implements OnInit {
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
+      return;
+    }
+
+    // magic damage with SPR scalling : [2, 1, 103, [100,  99999,  250]]
+    effect = this.findEffect(ability, 2, 1, 103);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       return;
     }
 
@@ -347,7 +371,7 @@ export class JsonComponent implements OnInit {
     }
   }
 
-  private unlockSkill(unitId, ability) {
+  private unlockSkill(unitId, ability, dataId) {
     // gagne l'accès à un spell qui donne 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
     let effect = this.findEffect(ability, 0, 3, 98);
     if (effect) {
@@ -384,6 +408,24 @@ export class JsonComponent implements OnInit {
       } else {
         this.addSkill(unitId, this.skills[effect[1]], effect[1]);
       }
+    }
+
+    // [0, 3, 100, [[2,  2,  2], [910944,  910945,  910946], 99999, 2, 1]]
+    effect = this.findEffect(ability, 0, 3, 100);
+    if (effect) {
+      if (Array.isArray(effect[1])) {
+        effect[1].forEach(skillId => {
+          this.addSkill(unitId, this.skills[skillId], skillId);
+        });
+      } else {
+        this.addSkill(unitId, this.skills[effect[1]], effect[1]);
+      }
+    }
+
+    // [0, 3, 50, [30,  3,  910947,  1]]
+    effect = this.findEffect(ability, 0, 3, 50);
+    if (effect) {
+      this.addSkill(unitId, this.skills[effect[2]], effect[2]);
     }
   }
 

@@ -6930,5 +6930,322 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 105,
+    names: {
+      en: "Divine Soleil",
+      tw: "女神索蕾莜",
+      kr: "여신 솔레이유",
+      fr: "Soleil divine",
+      de: "Göttliche Soleil",
+      es: "Soleil divina"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Dance of Sorrow",
+          tw: "憂傷之舞",
+          kr: "비애의 춤",
+          fr: "Danse du chagrin",
+          de: "Tanz des Kummers",
+          es: "Danza del dolor"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 250,
+        type: "finish",
+        dualable: false
+      },
+      {
+        id: 2,
+        names: {
+          en: "Dance of Grievance",
+          tw: "哀怨之舞",
+          kr: "고충의 춤",
+          fr: "Danse du ressentiment",
+          de: "Tanz der Gram",
+          es: "Danza del resentimiento"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 20,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 20,
+        framesList: "0",
+        offset: 16,
+        type: "finish",
+        base: 300,
+        dualable: false
+      },
+      {
+        id: 3,
+        names: {
+          en: "Dance of Misery",
+          tw: "悲痛之舞",
+          kr: "도탄의 춤",
+          fr: "Danse de la souffrance",
+          de: "Tanz des Elends",
+          es: "Danza del suplicio"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 20,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 33,
+        framesList: "0",
+        offset: 16,
+        type: "finish",
+        base: 500,
+        dualable: false
+      },
+      {
+        id: 4,
+        names: {
+          en: "Wheel of Life",
+          tw: "大輪迴",
+          kr: "윤회",
+          fr: "Roue de la vie",
+          de: "Rad des Lebens",
+          es: "Rueda de la vida"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 40,
+        framesList: "0",
+        offset: 16,
+        type: "finish",
+        base: 120,
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 106,
+    names: {
+      en: "Explorer Aileen",
+      tw: "探險家艾琳",
+      kr: "탐험가 아이린",
+      fr: "Aileen exploratrice",
+      de: "Forscher Aileen",
+      es: "Aileen exploradora"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Assault Rifle",
+          tw: "突擊步槍",
+          kr: "돌격 소총",
+          fr: "Fusil d'assaut",
+          de: "Sturmgewehr",
+          es: "Rifle de asalto"
+        },
+        hitDamage: [
+          15, 15, 20, 15, 20, 15
+        ],
+        castTime: 60,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 60,
+        framesList: "0-6-6-6-6-6",
+        offset: 16,
+        base: 300
+      },
+      {
+        id: 2,
+        names: {
+          en: "Piledriver Finish",
+          tw: "終結打樁機",
+          kr: "마지막 치명타",
+          fr: "Coup aplatissant",
+          de: "Dampframmenabgang",
+          es: "Golpe aplastante"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8",
+        offset: 36,
+        base: 220,
+        ignore: 50
+      },
+      {
+        id: 3,
+        names: {
+          en: "Point-blank Impact",
+          tw: "近距離衝擊",
+          kr: "직격타",
+          fr: "Impact à bout portant",
+          de: "Direkter Aufprall",
+          es: "Impacto a bocajarro"
+        },
+        hitDamage: [
+          20, 20, 20, 40
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 36,
+        framesList: "0-71-13-105",
+        offset: 8,
+        base: 850,
+        ignore: 50,
+        dualable: false
+      },
+      {
+        id: 4,
+        names: {
+          en: "Killing Blow",
+          tw: "致命吹擊",
+          kr: "치명타",
+          fr: "Souffle mortel",
+          de: "Todeshieb",
+          es: "Golpe mortífero"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 60,
+        framesList: "0",
+        offset: 16,
+        type: "finish",
+        base: 1050
+      }
+    ],
+    dual: false
+  },
+  {
+    id: 107,
+    names: {
+      en: "Lara Croft",
+      tw: "蘿拉·卡芙特",
+      kr: "라라 크로프트",
+      fr: "Lara Croft",
+      de: "Lara Croft",
+      es: "Lara Croft"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Full Auto Shotgun",
+          tw: "全自動散彈槍",
+          kr: "전자동 샷건",
+          fr: "Fusil à pompe automatique",
+          de: "Vollautomatikflinte",
+          es: "Escopeta automática"
+        },
+        hitDamage: [
+          14, 14, 15, 14, 14, 15, 14
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-8-8-8-8-8-16",
+        offset: 16,
+        base: 160
+      },
+      {
+        id: 2,
+        names: {
+          en: "Open Wound",
+          tw: "皮開肉綻",
+          kr: "아물지 않은 상처",
+          fr: "Plaie ouverte",
+          de: "Offene Wunde",
+          es: "Heridas abiertas"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8",
+        offset: 36,
+        base: 200
+      },
+      {
+        id: 3,
+        names: {
+          en: "Automatic Pistols",
+          tw: "自動火槍",
+          kr: "자동 권총",
+          fr: "Pistolets automatiques",
+          de: "Automatikpistolen",
+          es: "Pistolas automáticas"
+        },
+        hitDamage: [
+          16, 16, 16, 16, 16, 20
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 60,
+        framesList: "0-6-6-6-6-6",
+        offset: 16,
+        base: 220
+      },
+      {
+        id: 4,
+        names: {
+          en: "Blaze of Glory",
+          tw: "炎炎烈日",
+          kr: "영광의 불꽃",
+          fr: "Étincelle de gloire",
+          de: "Ruhmesglanz",
+          es: "Llamarada de gloria"
+        },
+        hitDamage: [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        castTime: 15,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 12,
+        framesList: "0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+        offset: 16,
+        base: 800,
+        dualable: false
+      }
+    ]
   }
 ];
