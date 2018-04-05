@@ -288,6 +288,14 @@ export class JsonComponent implements OnInit {
       return;
     }
 
+    // magic damage with EVO damage : [2, 1, 124, [0, 0, 0, 0, 0, 0, 0, 900, 900, [50,  50]]
+    effect = this.findEffect(ability, 2, 1, 124);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[7];
+      return;
+    }
+
+
     // hybrid damage : [1, 1, 40, [0,  0,  0,  0,  0,  0,  0,  0,  180,  180]]
     effect = this.findEffect(ability, 1, 1, 40);
     if (effect) {
@@ -388,6 +396,16 @@ export class JsonComponent implements OnInit {
       }
     }
 
+    // [1, 1, 99, [[2,  2], [503890,  503910], 2, 503900, 2, 503890]]
+    effect = this.findEffect(ability, 1, 1, 99);
+    if (effect) {
+      for (let i = 2; i < effect.length; i++) {
+        if (effect[i] !== 2) {
+          this.addSkill(unitId, this.skills[effect[i]], effect[i]);
+        }
+      }
+    }
+
     // [2, 1, 99, [[2,  2,  2], [208240,  704460,  704470], 2, 500590, 2, 500580]]]
     effect = this.findEffect(ability, 2, 1, 99);
     if (effect) {
@@ -426,6 +444,26 @@ export class JsonComponent implements OnInit {
     effect = this.findEffect(ability, 0, 3, 50);
     if (effect) {
       this.addSkill(unitId, this.skills[effect[2]], effect[2]);
+    }
+
+    // Random use skill : [2, 1, 29, [[504100,  30], [504110,  30], [504120,  40], [0,  0], [0,  0]]]
+    effect = this.findEffect(ability, 2, 1, 29);
+    if (effect) {
+      for (let i = 0; i < effect.length; i++) {
+        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
+          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0]);
+        }
+      }
+    }
+
+    // Random use skill : [1, 1, 29, [[504130,  25], [504140,  25], [504150,  25], [504160,  25], [0,  0]]]
+    effect = this.findEffect(ability, 1, 1, 29);
+    if (effect) {
+      for (let i = 0; i < effect.length; i++) {
+        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
+          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0]);
+        }
+      }
     }
   }
 
@@ -522,7 +560,7 @@ export class JsonComponent implements OnInit {
 
     effect = this.findEffect(ability, 2, 1, 79);
     if (effect) {
-      base = effect[6];
+      base = effect[7];
     }
 
     effect = this.findEffect(ability, 2, 1, 94);

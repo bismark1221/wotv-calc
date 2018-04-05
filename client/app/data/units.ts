@@ -3876,7 +3876,29 @@ export const UNITS: any[] = [
         firstHit: 170,
         castTime: 40,
         offset: 0,
-        base: 120,
+        base: 12000,
+        damage: 'magic',
+        elements: [
+          'water'
+        ],
+        dualable: false
+      },
+      {
+        id: 2,
+        names: {
+          en: 'Lunatic Voice (3)',
+          fr: 'Voix ensorcelante (3)',
+          tw: '狂迷之聲 (3)',
+          kr: '광기의 노래 (3)',
+          de: 'Wahnstimme (3)',
+          es: 'Voz lunática (3)'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 170,
+        castTime: 40,
+        offset: 0,
+        base: 21000,
         damage: 'magic',
         elements: [
           'water'
@@ -3912,7 +3934,29 @@ export const UNITS: any[] = [
         firstHit: 110,
         castTime: 40,
         offset: 0,
-        base: 140,
+        base: 14000,
+        damage: 'physic',
+        elements: [
+          'fire'
+        ],
+        dualable: false
+      },
+      {
+        id: 2,
+        names: {
+          en: 'Hellfire (3)',
+          fr: 'Flammes de l\'enfer (3)',
+          tw: '地獄火焰 (3)',
+          kr: '지옥의 화염 (3)',
+          de: 'Inferno (3)',
+          es: 'Fuego infernal (3)'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 23500,
         damage: 'physic',
         elements: [
           'fire'
@@ -3948,7 +3992,7 @@ export const UNITS: any[] = [
         firstHit: 110,
         castTime: 40,
         offset: 0,
-        base: 140,
+        base: 14000,
         damage: 'magic',
         elements: [
           'ice'
@@ -3984,7 +4028,7 @@ export const UNITS: any[] = [
         firstHit: 190,
         castTime: 40,
         offset: 0,
-        base: 170,
+        base: 17000,
         damage: 'magic',
         elements: [
           'dark'
@@ -4020,7 +4064,7 @@ export const UNITS: any[] = [
         firstHit: 110,
         castTime: 40,
         offset: 0,
-        base: 140,
+        base: 14000,
         damage: 'magic',
         elements: [
           'lightning'
@@ -4056,7 +4100,7 @@ export const UNITS: any[] = [
         firstHit: 170,
         castTime: 40,
         offset: 0,
-        base: 170,
+        base: 17000,
         damage: 'physic',
         elements: [
           'earth'
@@ -4092,7 +4136,7 @@ export const UNITS: any[] = [
         firstHit: 190,
         castTime: 40,
         offset: 0,
-        base: 180,
+        base: 18000,
         damage: 'magic',
         elements: [
           'wind'
@@ -4128,7 +4172,7 @@ export const UNITS: any[] = [
         firstHit: 70,
         castTime: 40,
         offset: 0,
-        base: 200,
+        base: 20000,
         damage: 'physic',
         dualable: false
       },
@@ -4161,7 +4205,7 @@ export const UNITS: any[] = [
         firstHit: 170,
         castTime: 40,
         offset: 0,
-        base: 300,
+        base: 30000,
         damage: 'magic',
         dualable: false
       },
@@ -7247,5 +7291,638 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 108,
+    names: {
+      en: "Leviathan",
+      tw: "利維坦",
+      kr: "리바이어선",
+      fr: "Léviathan",
+      de: "Leviathan",
+      es: "Leviatán"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Tsunami (2)",
+          tw: "大海嘯 (2)",
+          kr: "대해일 (2)",
+          fr: "Tsunami (2)",
+          de: "Tsunami (2)",
+          es: "Tsunami (2)"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        elements: [
+          "water"
+        ],
+        debuff: {},
+        dualable: false,
+        ignore: 0,
+        type: "magic",
+        base: 38000,
+        firstHit: 120,
+        framesList: "0",
+        offset: 8
+      },
+    ],
+    dual: false
+  },
+  {
+    id: 109,
+    names: {
+      en: "Kunshira",
+      tw: "庫西拉",
+      kr: "쿤시라",
+      fr: "Kunshira",
+      de: "Kunshira",
+      es: "Kunshira"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Firaja Blade",
+          tw: "強火焰劍",
+          kr: "파이쟈 검",
+          fr: "Lame feu max",
+          de: "Feuka-Klinge",
+          es: "Hoja Piro++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 170,
+        framesList: "0",
+        offset: 8,
+        base: 800,
+        type: "finish"
+      },
+      {
+        id: 2,
+        names: {
+          en: "Waterja Blade",
+          tw: "強流水劍",
+          kr: "워터쟈 검",
+          fr: "Lame eau max",
+          de: "Aquaka-Klinge",
+          es: "Hoja Aqua++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "water"
+        ],
+        debuff: {},
+        firstHit: 150,
+        framesList: "0",
+        offset: 8,
+        base: 800,
+        type: "finish"
+      },
+      {
+        id: 3,
+        names: {
+          en: "Thundaja Blade",
+          tw: "強雷電劍",
+          kr: "선더쟈 검",
+          fr: "Lame foudre max",
+          de: "Blitzka-Klinge",
+          es: "Hoja Electro++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "lightning"
+        ],
+        debuff: {},
+        firstHit: 110,
+        framesList: "0",
+        offset: 8,
+        base: 800,
+        type: "finish"
+      },
+      {
+        id: 4,
+        names: {
+          en: "Aeoroja Blade",
+          tw: "強勁風劍",
+          kr: "에어로쟈 검",
+          fr: "Lame vent max",
+          de: "Aeroka-Klinge",
+          es: "Hoja Aero++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "wind"
+        ],
+        debuff: {},
+        firstHit: 130,
+        framesList: "0",
+        offset: 8,
+        base: 800,
+        type: "finish"
+      },
+      {
+        id: 5,
+        names: {
+          en: "Holy Blade",
+          tw: "神聖劍",
+          kr: "홀리 검",
+          fr: "SidéLame",
+          de: "Sanctusklinge",
+          es: "Hoja Sanctus"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "light"
+        ],
+        debuff: {},
+        firstHit: 410,
+        framesList: "0",
+        offset: 8,
+        base: 460,
+        type: "finish"
+      },
+      {
+        id: 6,
+        names: {
+          en: "Fire Formation",
+          tw: "炎魔劍陣",
+          kr: "염마검진",
+          fr: "Formation de feu",
+          de: "Feuerformation",
+          es: "Formación hoja ígnea"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 550,
+        type: "finish"
+      },
+      {
+        id: 7,
+        names: {
+          en: "Water Formation",
+          tw: "水魔劍陣",
+          kr: "수마검진",
+          fr: "Formation d'eau",
+          de: "Wasserformation",
+          es: "Formación hoja acuosa"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "water"
+        ],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 550,
+        type: "finish"
+      },
+      {
+        id: 8,
+        names: {
+          en: "Lightning Formation",
+          tw: "雷魔劍陣",
+          kr: "뇌마검진",
+          fr: "Formation de foudre",
+          de: "Blitzformation",
+          es: "Formación hoja eléctrica"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "lightning"
+        ],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 550,
+        type: "finish"
+      },
+      {
+        id: 9,
+        names: {
+          en: "Wind Formation",
+          tw: "風魔劍陣",
+          kr: "풍마검진",
+          fr: "Formation de vent",
+          de: "Windformation",
+          es: "Formación hoja aérea"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "wind"
+        ],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 550,
+        type: "finish"
+      },
+      {
+        id: 10,
+        names: {
+          en: "Light Formation",
+          tw: "光魔劍陣",
+          kr: "광마검진",
+          fr: "Formation de lumière",
+          de: "Lichtformation",
+          es: "Formación hoja luminosa"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "light"
+        ],
+        debuff: {},
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 550,
+        type: "finish"
+      },
+      {
+        id: 11,
+        names: {
+          en: "Spellblade - Blazing Threat",
+          tw: "魔法劍·炎威",
+          kr: "마법검·염위",
+          fr: "Magilame - Menace ardente",
+          de: "Schwertmagie - Flammendrohung",
+          es: "Esgrimago - Amenaza ígnea"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "fire"
+        ],
+        debuff: {
+          "fire": 50
+        },
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 550
+      },
+      {
+        id: 12,
+        names: {
+          en: "Spellblade - Calm Waters",
+          tw: "魔法劍·水鏡",
+          kr: "마법검·수경",
+          fr: "Magilame - Eau calme",
+          de: "Schwertmagie - Stille Wasser",
+          es: "Esgrimago - Aguas calmadas"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "water"
+        ],
+        debuff: {
+          "water": 50
+        },
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 550
+      },
+      {
+        id: 13,
+        names: {
+          en: "Spellblade - Roaring Thunder",
+          tw: "魔法劍·轟雷",
+          kr: "마법검·굉뢰",
+          fr: "Magilame - Éclair rugissant",
+          de: "Schwertmagie - Brüllender Donner",
+          es: "Esgrimago - Trueno rugidor"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "lightning"
+        ],
+        debuff: {
+          "lightning": 50
+        },
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 550
+      },
+      {
+        id: 14,
+        names: {
+          en: "Spellblade - Windstorm",
+          tw: "魔法劍·暴風",
+          kr: "마법검·폭풍",
+          fr: "Magilame - Tempête éolienne",
+          de: "Schwertmagie - Sturmwind",
+          es: "Esgrimago - Tormenta eólica"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "wind"
+        ],
+        debuff: {
+          "wind": 50
+        },
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 550
+      },
+      {
+        id: 15,
+        names: {
+          en: "Spellblade - Glittering Light",
+          tw: "魔法劍·煌光",
+          kr: "마법검·황광",
+          fr: "Magilame - Lumière éclatante",
+          de: "Schwertmagie - Glitzerndes Licht",
+          es: "Esgrimago - Luz destellante"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "light"
+        ],
+        debuff: {
+          "light": 50
+        },
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 550
+      },
+      {
+        id: 16,
+        names: {
+          en: "Mageblade",
+          tw: "魔操劍",
+          kr: "마술검",
+          fr: "Sabre magique",
+          de: "Spruchklinge",
+          es: "Sable mágico"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [],
+        debuff: {},
+        firstHit: 72,
+        framesList: "0",
+        offset: 8,
+        base: 700,
+        type: "finish"
+      },
+      {
+        id: 17,
+        names: {
+          en: "Superior Mageblade",
+          tw: "翔·魔操劍",
+          kr: "마술검·비상",
+          fr: "Sabre magique +",
+          de: "Überlegene Spruchklinge",
+          es: "Sable mágico+"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [],
+        debuff: {},
+        firstHit: 12,
+        framesList: "0",
+        offset: 8,
+        base: 1100,
+        type: "finish"
+      },
+      {
+        id: 18,
+        names: {
+          en: "Blade Master",
+          tw: "魔劍大師",
+          kr: "블레이드 마스터",
+          fr: "Maître des lames",
+          de: "Meisterklinge",
+          es: "Maestro de la espada"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [],
+        debuff: {},
+        firstHit: 100,
+        framesList: "0",
+        offset: 8,
+        base: 1800,
+        type: "finish",
+        dualable: false
+      }
+    ],
+  },
+  {
+    id: 110,
+    names: {
+      en: "Lotus Mage Fina",
+      tw: "白蓮魔道士菲娜",
+      kr: "백련의 마도사 피나",
+      fr: "Fina, mage du lotus",
+      de: "Lotusmagierin Fina",
+      es: "Fina maga del loto"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Arch Punisher",
+          tw: "弧光執刑者",
+          kr: "최고의 형벌자",
+          fr: "Arc punisseur",
+          de: "Erzbestrafer",
+          es: "Archicastigador"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "light"
+        ],
+        debuff: {},
+        firstHit: 190,
+        framesList: "0",
+        offset: 16,
+        base: 360,
+        type: "finish",
+        dualable: false
+      },
+      {
+        id: 2,
+        names: {
+          en: 'Dystopia',
+          fr: 'Dystopie',
+          tw: '敵托邦',
+          kr: '디스토피아',
+          de: 'Dystopia',
+          es: 'Distopía'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 120,
+        castTime: 40,
+        offset: 16,
+        base: 600,
+        elements: [
+          'dark'
+        ],
+        dualable: false,
+        damage: 'magic'
+      },
+      {
+        id: 3,
+        names: {
+          en: 'Ultima',
+          fr: 'Ultima',
+          tw: '究極',
+          kr: '알테마',
+          de: 'Ultima',
+          es: 'Artema'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 350,
+        castTime: 40,
+        offset: 0,
+        base: 280,
+        ignore: 50,
+        damage: 'magic'
+      },
+      {
+        id: 4,
+        names: {
+          en: "Sacred Burst",
+          tw: "神聖爆發",
+          kr: "거룩한 폭발",
+          fr: "Éclat sacré",
+          de: "Heilige Salve",
+          es: "Estallido sacro"
+        },
+        hitDamage: [
+          14, 15, 14, 14, 14, 14, 15
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "light"
+        ],
+        debuff: {},
+        firstHit: 162,
+        framesList: "0-8-8-8-8-8-8",
+        offset: 16,
+        dualable: false
+      },
+      {
+        id: 5,
+        names: {
+          en: "Judgment Cross",
+          tw: "交錯審判",
+          kr: "정의의 십자가",
+          fr: "Signe du jugement",
+          de: "Urteilskreuz",
+          es: "Cruz del juicio"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "magic",
+        elements: [],
+        debuff: {
+          light: 50,
+          dark: 50
+        },
+        firstHit: 8,
+        framesList: "0-20-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 940,
+        dualable: false
+      }
+    ],
   }
 ];
