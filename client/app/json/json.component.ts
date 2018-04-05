@@ -266,9 +266,17 @@ export class JsonComponent implements OnInit {
       return;
     }
 
+
+
     // magic damage : [1, 1, 15, [0,  0,  0,  0,  0,  180,  0]
     // & ignore : [2, 1, 70, [0,  0,  180,  50]]
     effect = this.findEffect(ability, 1, 1, 15);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[5];
+      return;
+    }
+
+    effect = this.findEffect(ability, 2, 1, 15);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[5];
       return;
@@ -278,6 +286,13 @@ export class JsonComponent implements OnInit {
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
+      return;
+    }
+
+    // magic with upgrade : [2, 1, 72, [0,  0,  150,  100,  100,  5]]
+    effect = this.findEffect(ability, 2, 1, 72);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2] + effect[4] * effect[5];
       return;
     }
 
@@ -292,8 +307,17 @@ export class JsonComponent implements OnInit {
     effect = this.findEffect(ability, 2, 1, 124);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[7];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
       return;
     }
+
+    effect = this.findEffect(ability, 1, 1, 124);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[7];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
+      return;
+    }
+
 
 
     // hybrid damage : [1, 1, 40, [0,  0,  0,  0,  0,  0,  0,  0,  180,  180]]

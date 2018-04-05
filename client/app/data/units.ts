@@ -30,12 +30,12 @@ export const UNITS: any[] = [
       {
         id: 2,
         names: {
-          en: 'Quick Hit +2 (JP Only)',
-          fr: 'Attaque éclair +2 (JP Seulement)',
-          tw: '快捷進擊 +2 (JP Only)',
-          kr: '퀵 트릭 +2 (JP Only)',
-          de: 'Schneller Treffer +2 (JP Only)',
-          es: 'Golpe rápido +2 (JP Only)'
+          en: 'Quick Hit +2',
+          fr: 'Attaque éclair +2',
+          tw: '快捷進擊 +2',
+          kr: '퀵 트릭 +2',
+          de: 'Schneller Treffer +2',
+          es: 'Golpe rápido +2'
         },
         framesList: '0-5-5-5-5-5-5-5-5-5-5-20',
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
@@ -1623,12 +1623,12 @@ export const UNITS: any[] = [
       {
         id: 5,
         names: {
-          en: 'Tidal Wave +2 (JP Only)',
-          fr: 'Tsunami +2 (JP Seulement)',
-          tw: '大海嘯 +2 (JP Only)',
-          kr: '해일 +2 (JP Only)',
-          de: 'Flutwelle +2 (JP Only)',
-          es: 'Ola sísmica +2 (JP Only)'
+          en: 'Tidal Wave +2',
+          fr: 'Tsunami +2',
+          tw: '大海嘯 +2',
+          kr: '해일 +2',
+          de: 'Flutwelle +2',
+          es: 'Ola sísmica +2'
         },
         framesList: '0-12-12-12-12-12-12-12-12-12-12-12',
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
@@ -1656,12 +1656,12 @@ export const UNITS: any[] = [
       {
         id: 1,
         names: {
-          en: 'Ultima +2 (JP Only)',
-          fr: 'Ultima +2 (JP Seulement)',
-          tw: '究極 +2 (JP Only)',
-          kr: '알테마 +2 (JP Only)',
-          de: 'Ultima +2 (JP Only)',
-          es: 'Artema +2 (JP Only)'
+          en: 'Ultima +2',
+          fr: 'Ultima +2',
+          tw: '究極 +2',
+          kr: '알테마 +2',
+          de: 'Ultima +2',
+          es: 'Artema +2'
         },
         framesList: '0-37-38-37-38-38-37',
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
@@ -1688,6 +1688,28 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         base: 600,
+        elements: [
+          'water'
+        ],
+        dualable: false,
+        damage: 'magic'
+      },
+      {
+        id: 3,
+        names: {
+          en: 'Utopia +2',
+          fr: 'Utopie +2',
+          tw: '烏托邦 +2',
+          kr: '유토피아 +2',
+          de: 'Utopia +2',
+          es: 'Utopía +2'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 120,
+        castTime: 40,
+        offset: 16,
+        base: 910,
         elements: [
           'water'
         ],
@@ -1916,12 +1938,12 @@ export const UNITS: any[] = [
       {
         id: 2,
         names: {
-          en: 'Assault Strike +2 (JP Only)',
-          fr: 'Violent assaut +2 (JP Seulement)',
-          tw: '突擊強襲 +2 (JP Only)',
-          kr: '강습 타격 +2 (JP Only)',
-          de: 'Angriffsschlag +2 (JP Only)',
-          es: 'Golpe asaltador +2 (JP Only)'
+          en: 'Assault Strike +2',
+          fr: 'Violent assaut +2',
+          tw: '突擊強襲 +2',
+          kr: '강습 타격 +2',
+          de: 'Angriffsschlag +2',
+          es: 'Golpe asaltador +2'
         },
         framesList: '0-8-8-8-8-8-8-8',
         hitDamage: [2, 12, 12, 12, 13, 13, 13, 13],
@@ -7923,6 +7945,230 @@ export const UNITS: any[] = [
         base: 940,
         dualable: false
       }
+    ],
+  },
+  {
+    id: 111,
+    names: {
+      en: "Lulu",
+      tw: "露露",
+      kr: "루루",
+      fr: "Lulu",
+      de: "Lulu",
+      es: "Lulu"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Waterja",
+          tw: "強流水",
+          kr: "워터쟈",
+          fr: "Eau max",
+          de: "Aquaka",
+          es: "Aqua+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "water"
+        ],
+        debuff: {},
+        firstHit: 190,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 2,
+        names: {
+          en: "Thundaja",
+          tw: "強雷電",
+          kr: "선더쟈",
+          fr: "Foudre max",
+          de: "Blitzka",
+          es: "Electro+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "lightning"
+        ],
+        debuff: {},
+        firstHit: 150,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 3,
+        names: {
+          en: "Firaja",
+          tw: "強火焰",
+          kr: "파이자",
+          fr: "Feu max",
+          de: "Feuka",
+          es: "Piro+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 210,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 4,
+        names: {
+          en: "Blizzaja",
+          tw: "強暴雪",
+          kr: "블리자쟈",
+          fr: "Glace max",
+          de: "Eiska",
+          es: "Hielo+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "ice"
+        ],
+        debuff: {},
+        firstHit: 240,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 5,
+        names: {
+          en: "Flood",
+          tw: "洪水",
+          kr: "플러드",
+          fr: "Inondation",
+          de: "Flut",
+          es: "Inundación"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "water"
+        ],
+        debuff: {
+          lightning: 50
+        },
+        firstHit: 133,
+        framesList: "0-12-12-12-12-12-12-12-12-12-12-12",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 6,
+        names: {
+          en: "Ultima Fury",
+          tw: "T·最終究極",
+          kr: "T·알테마",
+          fr: "Ultima T",
+          de: "Ultima-Wut",
+          es: "Artema triple"
+        },
+        hitDamage: [
+          16, 16, 17, 17, 17, 17
+        ],
+        castTime: 0,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 160,
+        framesList: "0-24-24-24-24-24",
+        offset: 8,
+        base: 570,
+        ignore: 50,
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 112,
+    names: {
+      en: "Yuna",
+      tw: "優娜",
+      kr: "유우나",
+      fr: "Yuna",
+      de: "Yuna",
+      es: "Yuna"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Energy Ray",
+          tw: "射擊光線",
+          kr: "슈팅·레이",
+          fr: "Hurlements",
+          de: "Laserstrahl",
+          es: "Rayo devastador"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 300,
+        framesList: "0",
+        offset: 16,
+        base: 900,
+        type: "finish",
+        dualable: false
+      },
+      {
+        id: 2,
+        names: {
+          en: "Energy Blast",
+          tw: "射擊能量",
+          kr: "슈팅·파워",
+          fr: "Écho",
+          de: "Solaris-Strahl",
+          es: "Lluvia de muerte"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [],
+        debuff: {},
+        firstHit: 285,
+        framesList: "0",
+        offset: 16,
+        base: 2000,
+        type: "finish",
+        dualable: false
+      },
     ],
   }
 ];
