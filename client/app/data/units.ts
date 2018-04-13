@@ -8170,5 +8170,522 @@ export const UNITS: any[] = [
         dualable: false
       },
     ],
+  },
+  {
+    id: 113,
+    names: {
+      en: "Camille",
+      tw: "卡米爾",
+      kr: "카밀",
+      fr: "Camille",
+      de: "Camille",
+      es: "Camille"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Swift Tidal Attack",
+          tw: "水迅擊流斬",
+          kr: "수신경류참",
+          fr: "Attaque fluidovéloce",
+          de: "Flinker Gezeitenstreich",
+          es: "Ataque mareomotriz"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 20,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          water: 50
+        },
+        firstHit: 22,
+        framesList: "0-5-5-5-5-5-5-5-5-5-5-20",
+        offset: 16,
+        base: 300
+      },
+      {
+        id: 2,
+        names: {
+          en: "Earth-shattering Blade",
+          tw: "土濤烈波劍",
+          kr: "토주열파검",
+          fr: "Lame briseterre",
+          de: "Erdzerschmetterer",
+          es: "Hoja sacudetierra"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          earth: 50
+        },
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8",
+        offset: 36,
+        base: 300
+      },
+      {
+        id: 3,
+        names: {
+          en: "Burying Slash",
+          tw: "水地靈劍·葬",
+          kr: "물과 땅의 영검",
+          fr: "Entaille brûlante",
+          de: "Begräbnishieb",
+          es: "Cuchillada enterradora"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          water: 74,
+          earth: 74
+        },
+        firstHit: 26,
+        framesList: "0-10-16-80-48",
+        offset: 8,
+        base: 740,
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 114,
+    names: {
+      en: "Emperor Shera",
+      tw: "榭拉皇帝",
+      kr: "시엘라 황제",
+      fr: "Empereur Shera",
+      de: "Imperator Shera",
+      es: "Emperador Shera"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Ende Streiten",
+          tw: "爭辯結論",
+          kr: "투쟁의 끝",
+          fr: "Ende Streiten",
+          de: "Streitschlichter",
+          es: "Tiro finiquitador"
+        },
+        hitDamage: [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 16,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 8,
+        base: 480
+      },
+      {
+        id: 2,
+        names: {
+          en: "Hell Shaft",
+          tw: "地獄轉軸",
+          kr: "헬 샤프트",
+          fr: "Puit infernal",
+          de: "Höllenschacht",
+          es: "Pozo infernal"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 20,
+        framesList: "0",
+        offset: 8,
+        base: 230,
+        ignore: 25,
+        type: "finish"
+      },
+      {
+        id: 3,
+        names: {
+          en: "Repression",
+          tw: "鎮壓",
+          kr: "진압",
+          fr: "Répression",
+          de: "Repression",
+          es: "Represión"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [
+          "fire"
+        ],
+        debuff: {
+          "fire": 50
+        },
+        firstHit: 210,
+        framesList: "0",
+        offset: 16,
+        base: 200,
+        type: "finish"
+      },
+      {
+        id: 4,
+        names: {
+          en: "Schmerzen",
+          tw: "柔美",
+          kr: "고통",
+          fr: "Schmerzen",
+          de: "Schmerzen",
+          es: "Schmerzen"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 72,
+        framesList: "0",
+        offset: 16,
+        base: 320,
+        type: "finish"
+      },
+      {
+        id: 5,
+        names: {
+          en: "Eroberung",
+          tw: "征服",
+          kr: "정복",
+          fr: "Lame fantôme",
+          de: "Eroberung",
+          es: "Hoja de Geist"
+        },
+        hitDamage: [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        castTime: 14,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          fire: 60
+        },
+        firstHit: 16,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 420
+      },
+      {
+        id: 6,
+        names: {
+          en: "Kaiser Verteidiger",
+          tw: "皇帝守護",
+          kr: "카이저 페어타이디거",
+          fr: "Kaiser Verteidige",
+          de: "Imperator Protegit!",
+          es: "Kaiser Verteidige"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 85,
+        framesList: "0-4-21-8-85-4-4-22-6-6-12",
+        offset: 8,
+        base: 470,
+        ignore: 50,
+        dualable: false
+      }
+    ],
+  },
+  {
+    id: 115,
+    names: {
+      en: "Nameless Gunner Jake",
+      tw: "無名槍士傑科",
+      kr: "무명의 총잡이 제이크",
+      fr: "Jake, tireur anonyme",
+      de: "Namenloser Pistolero Jake",
+      es: "Jake el pistolero anónimo"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Dueling",
+          tw: "決鬥",
+          kr: "결투",
+          fr: "Duelisme",
+          de: "Duell",
+          es: "Duelismo"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        castTime: 15,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 15,
+        framesList: "0-10-10-10-10-10-66",
+        offset: 16,
+        base: 360
+      },
+      {
+        id: 2,
+        names: {
+          en: "Vaporiser",
+          tw: "高熱射線",
+          kr: "기화 장치",
+          fr: "Vaporisateur",
+          de: "Zerstäuber",
+          es: "Evaporizador"
+        },
+        hitDamage: [
+          13, 13, 13, 13, 13, 15
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 46,
+        framesList: "0-6-6-6-6-13",
+        offset: 8,
+        base: 250
+      },
+      {
+        id: 3,
+        names: {
+          en: "Break Style+",
+          tw: "破解風格·改",
+          kr: "개량형 브레이크 스타일",
+          fr: "Style briseur +",
+          de: "Brecherstil+",
+          es: "Estilo rompedor+"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 50
+        ],
+        castTime: 14,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 16,
+        framesList: "0-21-32-29-9-24",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 4,
+        names: {
+          en: "Breakdown",
+          tw: "潰擊降低",
+          kr: "브레이크 다운",
+          fr: "Rupture",
+          de: "Zusammenbruch",
+          es: "Rotura"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 50
+        ],
+        castTime: 14,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 16,
+        framesList: "0-21-32-29-9-24",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 5,
+        names: {
+          en: "Last Shot",
+          tw: "最後一射",
+          kr: "라스트 샷",
+          fr: "Dernier tir",
+          de: "Letzter Schuss",
+          es: "Disparo final"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 160,
+        framesList: "0",
+        offset: 16,
+        base: 275,
+        ignore: 50,
+        type: "finish"
+      },
+      {
+        id: 6,
+        names: {
+          en: "Fatal Barrage",
+          tw: "致命火力",
+          kr: "치명적 사격",
+          fr: "Barrage fatal",
+          de: "Tödliches Sperrfeuer",
+          es: "Ráfaga mortal"
+        },
+        hitDamage: [
+          11, 11, 11, 11, 11, 11, 11, 23
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 92,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 200,
+        ignore: 50
+      },
+      {
+        id: 7,
+        names: {
+          en: "Flame Assault",
+          tw: "灼炎攻擊",
+          kr: "화염 공격",
+          fr: "Assaut enflammé",
+          de: "Flammenangriff",
+          es: "Asalto flamígero"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 50
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          fire: 50
+        },
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10",
+        offset: 8,
+        base: 100
+      },
+      {
+        id: 8,
+        names: {
+          en: "Ice Assault",
+          tw: "寒冰攻擊",
+          kr: "빙설 공격",
+          fr: "Assaut glacé",
+          de: "Eisangriff",
+          es: "Asalto gélido"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 50
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          ice: 50
+        },
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10",
+        offset: 8,
+        base: 100
+      },
+      {
+        id: 9,
+        names: {
+          en: "Electro Assault",
+          tw: "雷電攻擊",
+          kr: "전격 공격",
+          fr: "Assaut électrique",
+          de: "Elektroangriff",
+          es: "Asalto eléctrico"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 50
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          lightning: 50
+        },
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10",
+        offset: 8,
+        base: 100
+      },
+      {
+        id: 10,
+        names: {
+          en: "Light Assault",
+          tw: "閃光攻擊",
+          kr: "광선 공격",
+          fr: "Assaut lumineux",
+          de: "Lichtangriff",
+          es: "Asalto luminoso"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 50
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          light: 50
+        },
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10",
+        offset: 8,
+        base: 100
+      },
+      {
+        id: 11,
+        names: {
+          en: "AL Type Light Particle Beam",
+          tw: "AL式魔電粒子炮",
+          kr: "AL식 마전입자포",
+          fr: "Rayon à particules de lum. type AL",
+          de: "AL-Typ Lichtpartikelstrahl",
+          es: "Rayo de partículas de luz tipo AL"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 150,
+        framesList: "0",
+        offset: 8,
+        base: 720,
+        ignore: 50,
+        type: "finish",
+        dualable: false
+      }
+    ]
   }
 ];
