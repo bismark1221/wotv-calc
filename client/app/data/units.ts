@@ -8687,5 +8687,110 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 116,
+    names: {
+      en: "Emilia",
+      tw: "埃米利亞",
+      kr: "에밀리아",
+      fr: "Émilia",
+      de: "Emilia",
+      es: "Emilia"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Throwing Fall",
+          tw: "拋落",
+          kr: "슬로잉 폴",
+          fr: "Chute ralentie",
+          de: "Gebremster Fall",
+          es: "Caída ralentizada"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-7-7-7-7-7-7-7-7-7-7-7",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 2,
+        names: {
+          en: "Into Darkness",
+          tw: "黑暗降臨",
+          kr: "어둠 속으로",
+          fr: "Obscurité sans fin",
+          de: "Ins Dunkel",
+          es: "Oscuridad profunda"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [
+          "dark"
+        ],
+        debuff: {},
+        firstHit: 23,
+        framesList: "0",
+        offset: 8,
+        base: 420,
+        type: "finish"
+      },
+      {
+        id: 3,
+        names: {
+          en: "Funeral Knife",
+          tw: "葬禮之刃",
+          kr: "장례의 나이프",
+          fr: "Couteau funéraire",
+          de: "Begräbnismesser",
+          es: "Cuchillo funerario"
+        },
+        hitDamage: [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 325
+      },
+      {
+        id: 4,
+        names: {
+          en: "Throwing Knife",
+          tw: "緩速小刀",
+          kr: "스로잉 나이프",
+          fr: "Couteau de lancer",
+          de: "Wurfmesser",
+          es: "Cuchillada voladora"
+        },
+        hitDamage: [
+          16, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 42,
+        framesList: "0-39-4-4-4-4-4-89-4-4-4-4-4-4-4",
+        offset: 8,
+        base: 840,
+        dualable: false
+      }
+    ]
   }
 ];
