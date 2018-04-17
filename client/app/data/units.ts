@@ -8792,5 +8792,233 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 117,
+    names: {
+      en: "Lightning",
+      tw: "雷光",
+      kr: "라이트닝",
+      fr: "Lightning",
+      de: "Lightning",
+      es: "Lightning"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Area Blitz",
+          tw: "區域衝擊波",
+          kr: "구역 블래스트",
+          fr: "Fauchage",
+          de: "Rundumschlag",
+          es: "Golpe circular"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 12,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 14,
+        framesList: "0-28-26-23-43",
+        offset: 16,
+        base: 180
+      },
+      {
+        id: 2,
+        names: {
+          en: "Area Blast +2",
+          tw: "區域衝擊波 +2",
+          kr: "구역 블래스트 +2",
+          fr: "Fauchage +2",
+          de: "Rundumschlag +2",
+          es: "Golpe circular +2"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 12,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 14,
+        framesList: "0-28-26-23-43",
+        offset: 16,
+        base: 220
+      },
+      {
+        id: 3,
+        names: {
+          en: "Crushing Blow",
+          tw: "絕影",
+          kr: "절영",
+          fr: "Charge éclair",
+          de: "Zerstörer",
+          es: "Arremetida"
+        },
+        hitDamage: [
+          20, 20, 30, 30
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          lightning: 20
+        },
+        firstHit: 42,
+        framesList: "0-20-30-2",
+        offset: 16,
+        base: 270
+      },
+      {
+        id: 4,
+        names: {
+          en: "Crushing Blow +2",
+          tw: "絕影 +2",
+          kr: "절영 +2",
+          fr: "Charge éclair +2",
+          de: "Zerstörer +2",
+          es: "Arremetida +2"
+        },
+        hitDamage: [
+          20, 20, 30, 30
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuff: {
+          lightning: 75
+        },
+        firstHit: 42,
+        framesList: "0-20-30-2",
+        offset: 16,
+        base: 350
+      },
+      {
+        id: 5,
+        names: {
+          en: "Electric Blitz",
+          tw: "電氣衝擊波",
+          kr: "일렉트릭 블래스트",
+          fr: "Électro-explosion",
+          de: "Elektrische Walze",
+          es: "Azote eléctrico"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [
+          "lightning"
+        ],
+        debuff: {},
+        firstHit: 30,
+        framesList: "0",
+        offset: 8,
+        base: 200,
+        type: "finish"
+      },
+      {
+        id: 6,
+        names: {
+          en: "Heat Blitz",
+          tw: "高溫衝擊波",
+          kr: "히트 블래스트",
+          fr: "Pyro-explosion",
+          de: "Glutwalze",
+          es: "Azote caluroso"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 110,
+        framesList: "0",
+        offset: 16,
+        base: 190,
+        type: "finish"
+      },
+      {
+        id: 7,
+        names: {
+          en: "Ice Blitz",
+          tw: "冰凍衝擊波",
+          kr: "아이스 블래스트",
+          fr: "Cryo-explosion",
+          de: "Eiswalze",
+          es: "Azote frío"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [
+          "ice"
+        ],
+        debuff: {},
+        firstHit: 110,
+        framesList: "0",
+        offset: 16,
+        base: 190,
+        type: "finish"
+      },
+      {
+        id: 8,
+        names: {
+          en: "Aero Blitz",
+          tw: "勁風衝擊波",
+          kr: "에어로 블래스트",
+          fr: "Aéro-explosion",
+          de: "Aero-Walze",
+          es: "Azote eólico"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [
+          "wind"
+        ],
+        debuff: {},
+        firstHit: 70,
+        framesList: "0",
+        offset: 16,
+        base: 190,
+        type: "finish"
+      },
+      {
+        id: 9,
+        names: {
+          en: "Army of One",
+          tw: "王牌驅散",
+          kr: "신 드라이브",
+          fr: "Combo éclair",
+          de: "Ein-Mann-Armee",
+          es: "Andanada"
+        },
+        hitDamage: [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 39,
+        framesList: "0-14-14-34-32-42-3-7-3-24-3-31-50-3-3-4-3-3-3-3",
+        offset: 8,
+        base: 410,
+        dualable: false
+      }
+    ]
   }
 ];
