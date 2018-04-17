@@ -6222,7 +6222,7 @@ export const UNITS: any[] = [
         hitDamage: [9, 10, 11, 12, 13, 14, 15, 16],
         firstHit: 85,
         castTime: 40,
-        offset: 16,
+        offset: 26,
         base: 300,
         ignore: 50,
         elements: [
@@ -6270,42 +6270,6 @@ export const UNITS: any[] = [
       },
       {
         id: 2,
-        names: {
-          en: 'Chainsaw',
-          fr: '回轉電鋸',
-          tw: '회전톱',
-          kr: 'Tronçonneuse',
-          de: 'Kettensäge',
-          es: 'Motosierra'
-        },
-        framesList: '0-8-8-8-8-8-16',
-        hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        firstHit: 42,
-        castTime: 40,
-        offset: 16,
-        base: 140,
-        ignore: 25
-      },
-      {
-        id: 3,
-        names: {
-          en: 'Chainsaw +2',
-          fr: '回轉電鋸 +2',
-          tw: '회전톱 +2',
-          kr: 'Tronçonneuse +2',
-          de: 'Kettensäge +2',
-          es: 'Motosierra +2'
-        },
-        framesList: '0-8-8-8-8-8-16',
-        hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        firstHit: 42,
-        castTime: 40,
-        offset: 16,
-        base: 230,
-        ignore: 40
-      },
-      {
-        id: 4,
         names: {
           en: "Astral Shot",
           tw: "星光射擊",
