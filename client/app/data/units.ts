@@ -8718,7 +8718,7 @@ export const UNITS: any[] = [
         debuff: {},
         firstHit: 42,
         framesList: "0-7-7-7-7-7-7-7-7-7-7-7",
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
