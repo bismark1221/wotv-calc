@@ -1186,6 +1186,50 @@ export const UNITS: any[] = [
         offset: 66,
         base: 600,
         damage: 'hybrid',
+      },
+      {
+        id: 3,
+        names: {
+          en: 'Frost Flower Blitz +2',
+          fr: 'Pétales gelés +2',
+          tw: '冰花迅雷 +2',
+          kr: '서리꽃 폭풍 +2',
+          de: 'Eisblumenblitz +2',
+          es: 'Pétalos helados +2'
+        },
+        framesList: '0-7-5-7-7-7-7',
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        firstHit: 70,
+        castTime: 40,
+        offset: 16,
+        base: 1000,
+        damage: 'hybrid',
+        debuff: {
+          ice: 75
+        },
+        elements: [
+          'ice'
+        ]
+      },
+      {
+        id: 4,
+        names: {
+          en: 'Second Intention +2',
+          fr: 'Seconde intention +2',
+          tw: '第二意願 +2',
+          kr: '숨겨진 의도 +2',
+          de: 'Plan B +2',
+          es: 'Segundas intenciones +2'
+        },
+        type: 'finish',
+        framesList: '0',
+        firstHit: 100,
+        castTime: 0,
+        offset: 66,
+        base: 1200,
+        damage: 'hybrid',
       }
     ]
   },
@@ -1757,7 +1801,7 @@ export const UNITS: any[] = [
           es: 'Carta roja'
         },
         framesList: '0-3-3-3-3-3-3-3-3-3',
-        firstHit: 40,
+        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 320,
@@ -1778,6 +1822,46 @@ export const UNITS: any[] = [
         castTime: 0,
         offset: 56,
         base: 100
+      },
+      {
+        id: 4,
+        names: {
+          en: 'Red Card +2',
+          fr: 'Carte sanglante +2',
+          tw: '血色飛牌 +2',
+          kr: '레드 카드 +2',
+          de: 'Rote Karte +2',
+          es: 'Carta roja +2'
+        },
+        framesList: '0-3-3-3-3-3-3-3-3-3',
+        firstHit: 42,
+        castTime: 40,
+        offset: 16,
+        base: 450,
+      },
+      {
+        id: 5,
+        names: {
+          en: "Diving Bomb",
+          tw: "俯衝炸彈",
+          kr: "다이빙·봄",
+          fr: "Saut en bombe",
+          de: "Tauchbombe",
+          es: "Salto en bomba"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 20
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 150,
+        framesList: "0-6-5-7-5-5-8-5-5",
+        offset: 8,
+        base: 390,
+        ignore: 50,
+        dualable: false
       }
     ]
   },
@@ -8982,6 +9066,73 @@ export const UNITS: any[] = [
         offset: 8,
         base: 410,
         dualable: false
+      }
+    ]
+  },
+  {
+    id: 118,
+    names: {
+      en: "Phoenix",
+      tw: "地獄鳳凰",
+      kr: "피닉스",
+      fr: "Phénix",
+      de: "Phönix",
+      es: "Fénix"
+    },
+    abilities: [
+      {
+        id: 1,
+        names: {
+          en: "Flames of Rebirth (1)",
+          tw: "轉生之炎 (1)",
+          kr: "윤회의 불꽃 (1)",
+          fr: "Feu résurrecteur (1)",
+          de: "Reinkarnationsflamme (1)",
+          es: "Llamas del renacer (1)"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        dualable: false,
+        type: 'finish',
+        ignore: 0,
+        damage: "magic",
+        base: 2050,
+        firstHit: 110,
+        framesList: "0",
+        offset: 8
+      },
+      {
+        id: 2,
+        names: {
+          en: "Flames of Rebirth (2)",
+          tw: "轉生之炎 (2)",
+          kr: "윤회의 불꽃 (2)",
+          fr: "Feu résurrecteur (2)",
+          de: "Reinkarnationsflamme (2)",
+          es: "Llamas del renacer (2)"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        dualable: false,
+        type: 'finish',
+        ignore: 0,
+        damage: "magic",
+        base: 8200,
+        firstHit: 110,
+        framesList: "0",
+        offset: 8
       }
     ]
   }

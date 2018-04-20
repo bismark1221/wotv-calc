@@ -550,7 +550,6 @@ export class JsonComponent implements OnInit {
   private addSummonSkill(summonId, ability, dataId) {
     let id = this.ffbeChainUnits[summonId].abilities.length;
     let base = 0;
-    let type = 'physical';
     let names = {};
 
     if (Array.isArray(ability.strings.name)) {
@@ -573,13 +572,14 @@ export class JsonComponent implements OnInit {
       debuff: {},
       dualable: false,
       ignore: 0,
-      type: 'finish'
+      type: 'finish',
+      damage: 'physic'
     };
 
     let effect = this.findEffect(ability, 2, 1, 80);
     if (effect) {
       base = effect[6];
-      type = 'magic';
+      this.ffbeChainUnits[summonId].abilities[id].damage = 'magic';
     }
 
     effect = this.findEffect(ability, 2, 1, 79);
@@ -593,7 +593,6 @@ export class JsonComponent implements OnInit {
     }
 
     this.ffbeChainUnits[summonId].abilities[id].base = base;
-    this.ffbeChainUnits[summonId].abilities[id].type = type;
 
     this.updateFrames(summonId, id, ability);
     this.updateOffset(summonId, id, ability);
