@@ -17,6 +17,7 @@ export class Ability {
   elements?: string[] = [];
   debuff?: any = {};
   type?: string = 'chain';
+  magicType?: string = null;
   damage?: string = 'physic';
   chain?: boolean = true;
   hitDamage?: any[] = [];
@@ -44,6 +45,7 @@ export class Ability {
     this.type = ability.type ? ability.type : this.type;
     this.damage = ability.damage ? ability.damage : this.damage;
     this.chain = typeof ability.chain == 'boolean' ? ability.chain : this.chain;
+    this.magicType = typeof ability.magicType == 'string' ? ability.magicType : this.magicType;
 
     if (ability.range) {
       this.range.min = ability.range.min ? ability.range.min : this.range.min;

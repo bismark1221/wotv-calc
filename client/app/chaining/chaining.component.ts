@@ -104,9 +104,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   ngOnInit(): void {
     for (let i = 0; i <= 5; i++) {
-      this.chain[i] = {id: 'unselect'};
+      this.chain[i] = {id: 'unselect', selectedIds: []};
       this.selectedUnits[i] = '';
-      this.selectedAbilities[i] = 0;
       this.idSelected[i] = 'unselect';
       this.idCreated[i] = 'unselect';
       this.sliderConfig[i] = {
@@ -148,7 +147,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       if (requestUnit) {
         let unit = this.unitService.getUnit(requestUnit.id);
         framesGap[index] = request.chain[params.type].frames[i];
-        this.selectUnit(index, unit, requestUnit.ability.id - 1, framesGap);
+        this.selectUnit(index, unit, requestUnit.ability.id - 1, framesGap); // Adapt to multiple casts
         i++;
       }
     });
@@ -217,7 +216,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain.forEach(unit => {
       if (unit.id !== 'unselect') {
         unit.activeRename = false;
-        unit.ability.activeRename = false;
+        unit.selectedAbilities.forEach(ability => {
+          ability.activeRename = false;
+        });
       }
     })
     this.sortUnits();
@@ -239,16 +240,23 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private updateLocalDebuffs(position: number) {
     this.chain[position].debuffs = [];
-    Object.keys(this.chain[position].ability.debuff).forEach(key => {
-      this.chain[position].debuffs.push({type: key, value: this.chain[position].ability.debuff[key]});
+    this.chain[position].selectedAbilities.forEach(ability => {
+      Object.keys(ability.debuff).forEach(key => {
+        this.chain[position].debuffs.push({type: key, value: ability.debuff[key]});
+      });
     });
   }
 
   private updateServiceDebuffs(position: number) {
-    this.chain[position].ability.debuff = {};
+    this.chain[position].selectedAbilities.forEach(ability => {
+      ability.debuff = {};
+    });
+
     this.chain[position].debuffs.forEach(debuff => {
-      let actualDebuff = this.chain[position].ability.debuff[debuff.type] ? this.chain[position].ability.debuff[debuff.type] : 1;
-      this.chain[position].ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
+      this.chain[position].selectedAbilities.forEach(ability => {
+        let actualDebuff = ability.debuff[debuff.type] ? ability.debuff[debuff.type] : 1;
+        ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
+      });
     });
   }
 
@@ -265,6 +273,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let position = 0;
     unit.abilities.forEach(ability => {
       if (ability.name === searchAbility.name) {
+        position = i;
+      }
+      i++;
+    });
+
+    return position;
+  }
+
+  private findPositionOfAbilityById(unit: any, id: any) {
+    let i = 0;
+    let position = 0;
+    unit.abilities.forEach(ability => {
+      if (ability.id === id) {
         position = i;
       }
       i++;
@@ -327,7 +348,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
           this.availableDuplicate.push(unit);
         }
 
-        if (unit.ability.type === 'chain') {
+        if (unit.selectedAbilities[0] && unit.selectedAbilities[0].type === 'chain') {
           this.chainers.push(unit);
         } else {
           this.finishers.push(unit);
@@ -343,14 +364,24 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     });
   }
 
-  private updateChangedUnit(position: number, ability: number = 0, framesGap: number = 0) {
+  private updateChangedUnit(position: number, abilitiesPositions: any = [], framesGap: number = 0) {
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
     this.chainService.units[position] = this.chain[position];
-    this.selectedAbilities[position] = ability;
-    this.chain[position].ability = this.chain[position].abilities[ability];
+
+    this.chain[position].selectedAbilities = [];
+    this.chain[position].selectedIds = [];
+    abilitiesPositions.forEach(abilityPosition => {
+      this.chain[position].selectedIds.push(this.chain[position].abilities[abilityPosition].id);
+    });
+
+    abilitiesPositions.forEach((abilityPosition, index) => {
+      this.chain[position].selectedAbilities[index] = this.chain[position].abilities[abilityPosition];
+      this.chain[position].selectedAbilities[index].activeRename = false;
+    });
+
     this.updateLocalDebuffs(position);
+
     this.chain[position].activeRename = false;
-    this.chain[position].ability.activeRename = false;
     this.chain[position].framesGap = (!this.chain[position].framesGap || framesGap !== 0 ? framesGap : this.chain[position].framesGap);
   }
 
@@ -359,15 +390,75 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let maxHitForChain = this.chainService.findHighestChainHit();
     this.chain.forEach((unit, position) => {
       if (unit.id !== 'unselect') {
-        if (unit.ability.type === 'chain') {
-          this.sliderConfig[position].range.min = unit.ability.range.min;
-          this.sliderConfig[position].range.max = unit.ability.range.max;
+        if (unit.selectedAbilities[0].type === 'chain') {
+          this.sliderConfig[position].range.min = unit.selectedAbilities[0].range.min;
+          this.sliderConfig[position].range.max = unit.selectedAbilities[0].range.max;
         } else {
-          this.sliderConfig[position].range.min = unit.ability.range.min;
-          this.sliderConfig[position].range.max = maxHitForChain > unit.ability.range.max ? maxHitForChain : unit.ability.range.max;
+          this.sliderConfig[position].range.min = unit.selectedAbilities[0].range.min;
+          this.sliderConfig[position].range.max = maxHitForChain > unit.selectedAbilities[0].range.max ? maxHitForChain : unit.selectedAbilities[0].range.max;
         }
       }
     });
+  }
+
+  private countNumberOfHighRangeChainer() :number {
+    let count = 0;
+    this.chain.forEach((unit, index) => {
+      if (unit.id !== 'unselect') {
+        if (unit.selectedAbilities[0].range.max - unit.selectedAbilities[0].range.min > 50)
+          count++;
+      }
+    });
+
+    return count;
+  }
+
+  private updateMultipleSkill(position: number) {
+    if (this.chain[position].id !== 'unselect' && this.chain[position].selectedAbilities && this.chain[position].selectedAbilities[0]) {
+      this.chain[position].possibleMultiple = [{id: 0}];
+      let castNumber = 1;
+      let ability = this.chain[position].selectedAbilities[0];
+      if (ability.magicType) {
+        if (this.chain[position].multipleBlack > 1) {
+          this.multipleMagic("black", position);
+          castNumber = this.chain[position].multipleBlack;
+        }
+        if (this.chain[position].multipleWhite > 1) {
+          this.multipleMagic("white", position);
+          castNumber = castNumber < this.chain[position].multipleWhite ? this.chain[position].multipleWhite : castNumber;
+        }
+      } else {
+        castNumber = this.multipleAbility(position);
+      }
+
+      this.chain[position].castNumber = [];
+      for (let i = 1; i < castNumber; i++) {
+        this.chain[position].castNumber.push(i)
+      }
+    }
+  }
+
+  private multipleMagic(magicType: string, position: number) {
+    this.chain[position].abilities.forEach(ability => {
+      if (ability.magicType && ability.magicType === magicType) {
+        this.chain[position].possibleMultiple.push(ability);
+      }
+    });
+  }
+
+  private multipleAbility(position: number) :number {
+    let id = this.chain[position].selectedAbilities[0].id;
+    let castNumber = 1;
+    if (this.chain[position].multiSkills[id]) {
+      castNumber = this.chain[position].multiSkills[id];
+      this.chain[position].abilities.forEach(ability => {
+        if (this.chain[position].multiSkills[ability.id]) {
+          this.chain[position].possibleMultiple.push(ability);
+        }
+      });
+    }
+
+    return castNumber;
   }
 
   addDebuff(position: number) {
@@ -387,10 +478,24 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.saveUnit(position);
   }
 
-  onChangeSkill(position: number) {
-    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
-    this.updateLocalDebuffs(position);
+  onChangeSkill(unitPosition: number, abilityPosition: any) {
+
+    let positionInList = this.findPositionOfAbilityById(this.chain[unitPosition], this.chain[unitPosition].selectedIds[abilityPosition]);
+    let ability = this.chain[unitPosition].abilities[positionInList];
+    this.chain[unitPosition].selectedAbilities[abilityPosition] = ability;
+
+
+
+    this.updateLocalDebuffs(unitPosition);
     this.onChangeChain();
+
+
+
+    if (abilityPosition === 0) {
+      this.updateMultipleSkill(unitPosition);
+    }
+
+
   }
 
   onChangeDual(position: number) {
@@ -404,7 +509,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.selectedUnits[position].activeRename = true;
 
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-    this.chain[position].ability = this.chain[position].abilities[0];
+    this.chain[position].selectedIds[0] = 0;
+    this.chain[position].selectedAbilities[0] = this.chain[position].abilities[0];
 
     this.saveUnit(position);
 
@@ -482,7 +588,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.onChangeUnit(
         position,
         unit.id,
-        this.selectedAbilities[this.positionIdsInChain[this.duplicatePosition[position]]],
+        this.chain[this.positionIdsInChain[this.duplicatePosition[position]]].selectedIds,
         this.chain[this.positionIdsInChain[this.duplicatePosition[position]]].framesGap
       );
     }
@@ -497,16 +603,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.bestChainers = [];
   }
 
-  onChangeUnit(position: number, unitId: any = 'unselect', ability: number = 0, framesGap: number = 0, launchChain: boolean = true) {
+  onChangeUnit(position: number, unitId: any = 'unselect', abilities: any = [0], framesGap: number = 0, launchChain: boolean = true) {
     this.idSelected[position] = unitId;
 
     if (unitId === 'unselect') {
       this.chain[position] = {
         id: 'unselect',
-        framesGap: 0
+        framesGap: 0,
+        selectedIds: []
       };
       this.chainService.units[position] = null;
-      this.selectedAbilities[position] = 0;
     } else {
       this.viewBestChainers = -1;
       if (unitId < 10000) {
@@ -515,11 +621,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         this.selectedUnits[position] = this.createdUnits.find(unit => unit.id === parseInt(unitId));
       }
 
-      if (this.chain[position] && this.chain[position].id === unitId) {
-        ability = this.selectedAbilities[position];
-      }
-
-      this.updateChangedUnit(position, ability, framesGap);
+      this.updateChangedUnit(position, abilities, framesGap);
+      this.updateMultipleSkill(position);
     }
 
     if (launchChain) {
@@ -527,32 +630,34 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     this.updateDuplicatePossibilities();
+    //console.log(this.chain[position])
   }
 
-  addAbility(position: number) {
-    this.chain[position].ability.activeRename = false;
-    this.chain[position].abilities.push(new Ability());
-    this.selectedAbilities[position] = this.chain[position].abilities.length - 1;
-    this.chain[position].ability = this.chain[position].abilities[this.selectedAbilities[position]];
-    this.chain[position].ability.name = 'Ability ' + this.chain[position].abilities.length;
-    this.updateLocalDebuffs(position);
-    this.saveUnit(position);
+  addAbility(unitPosition: number, abilityPosition: number) {
+    this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename = false;
+    this.chain[unitPosition].abilities.push(new Ability());
+
+    let newAbilityPosition = this.chain[unitPosition].abilities.length - 1;
+    this.chain[unitPosition].selectedAbilities[abilityPosition] = this.chain[unitPosition].abilities[newAbilityPosition];
+    this.chain[unitPosition].selectedAbilities[abilityPosition].name = 'Ability ' + this.chain[unitPosition].abilities.length;
+
+    this.updateLocalDebuffs(unitPosition);
+    this.saveUnit(unitPosition);
   }
 
-  removeAbility(position: number) {
-    this.chain[position].abilities.splice(this.selectedAbilities[position], 1);
-    this.chain[position].ability = this.chain[position].abilities[0];
-    this.updateLocalDebuffs(position);
-    this.saveUnit(position);
-    this.selectedAbilities[position] = 0;
+  removeAbility(unitPosition: number, abilityPosition: number) {
+    this.chain[unitPosition].abilities.splice(abilityPosition, 1); // To check
+    this.chain[unitPosition].selectedAbilities[abilityPosition] = this.chain[unitPosition].abilities[0];
+    this.updateLocalDebuffs(unitPosition);
+    this.saveUnit(unitPosition);
   }
 
   renameUnit(position: number) {
     this.chain[position].activeRename = !this.chain[position].activeRename;
   }
 
-  renameAbility(position: number) {
-    this.chain[position].ability.activeRename = !this.chain[position].ability.activeRename;
+  renameAbility(unitPosition: number, abilityPosition: number) {
+    this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename = !this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename;
   }
 
   showOptions(modal, position: number) {
@@ -656,7 +761,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
       unit.abilities.forEach(ability => {
         if (ability.type === 'chain') {
-          this.findBestService.units[position].ability = ability;
+          this.findBestService.units[position].ability = ability; // To adapt...
           let result = this.findBestService.findBestFrames();
           chainers.push({
             unit: unit,
@@ -686,14 +791,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.angulartics.eventTrack.next({ action: 'findBestChainers', properties: { category: 'chain' }});
   }
 
-  selectUnit(position: number, unit: any, ability: any, framesGaps: any, launchChain: boolean = true) {
+  selectUnit(position: number, unit: any, ability: any, framesGaps: any, launchChain: boolean = true) { // Pass to multiple abilities
     this.chain.forEach((chainer, index) => {
       chainer.framesGap = framesGaps[index];
     })
     unit.framesGap = framesGaps[position]
 
     this.selectedUnits[position] = unit;
-    this.onChangeUnit(position, unit.id, this.findPositionOfAbility(unit, ability), framesGaps[position], launchChain);
+    this.onChangeUnit(position, unit.id, [this.findPositionOfAbility(unit, ability)], framesGaps[position], launchChain);
   }
 
   canFindBestChainers(position: number) :boolean {
@@ -725,17 +830,5 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     return true;
-  }
-
-  private countNumberOfHighRangeChainer() :number {
-    let count = 0;
-    this.chain.forEach((unit, index) => {
-      if (unit.id !== 'unselect') {
-        if (unit.ability.range.max - unit.ability.range.min > 50)
-          count++;
-      }
-    });
-
-    return count;
   }
 }

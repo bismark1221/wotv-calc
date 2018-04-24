@@ -30,35 +30,59 @@
 }
 
 .bar {
-  fill: #33b5e5;
+  fill: #000000;
 }
 
 .bar-dotted {
   fill: #a5a5a5;
 }
 
-.bar-chain1 {
+.bar-chain0 {
   fill: #3868e8;
 }
 
-.bar-chain2 {
+.bar-chain1 {
   fill: #42c1cc;
 }
 
-.bar-finish1 {
+.bar-chain2 {
   fill: #269e23;
 }
 
-.bar-finish2 {
+.bar-chain3 {
   fill: #80d87e;
 }
 
-.bar-break1 {
+.bar-finish0 {
+  fill: #3868e8;
+}
+
+.bar-finish1 {
+  fill: #42c1cc;
+}
+
+.bar-finish2 {
+  fill: #269e23;
+}
+
+.bar-finish3 {
+  fill: #80d87e;
+}
+
+.bar-break0 {
   fill: #ff0600;
 }
 
+.bar-break1 {
+  fill: #e44238;
+}
+
 .bar-break2 {
-  fill: #ff9492;
+  fill: #d85d5a
+}
+
+.bar-break3 {
+  fill: #ff9492
 }
 
 .tooltip-chart {

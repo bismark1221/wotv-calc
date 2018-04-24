@@ -1418,7 +1418,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 150,
-        castTime: 40, //"effect_frames": [[40, 100, 120]],
+        castTime: 40,
         offset: 0,
         base: 1600,
         damage: 'hybrid'
@@ -1914,7 +1914,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 500580,
         names: {
           en: 'Chaos Wave',
           fr: 'Onde chaotique',
@@ -3803,7 +3803,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 910520,
         names: {
           en: 'Grim - Soul Barrage',
           fr: 'Obscurité - Barrage spectral',
@@ -3819,10 +3819,11 @@ export const UNITS: any[] = [
         offset: 26,
         base: 200,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        dualable: false
       },
       {
-        id: 2,
+        id: 910526,
         names: {
           en: 'Grim - Eldritch Flames',
           fr: 'Obscurité - Flammes surnaturelles',
@@ -3845,10 +3846,38 @@ export const UNITS: any[] = [
         debuff : {
           dark: 50,
           fire: 50
-        }
+        },
+        dualable: false
       },
       {
-        id: 3,
+        id: 20310,
+        names: {
+          en: "Thundaja",
+          tw: "強雷電",
+          kr: "선더쟈",
+          fr: "Foudre max",
+          de: "Blitzka",
+          es: "Electro+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "lightning"
+        ],
+        debuff: {},
+        dualable: false,
+        firstHit: 150,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 401002006,
         names: {
           en: 'Phantom Fury',
           fr: 'Furie fantomatique',
@@ -3867,6 +3896,18 @@ export const UNITS: any[] = [
         dualable: false
       },
     ],
+    multiSkills: {
+      910514: 2,
+      910515: 2,
+      910516: 2,
+      910517: 2,
+      910520: 2,
+      910522: 2,
+      910526: 2
+    },
+    multipleBlack: 2,
+    multipleWhite: 1,
+    multipleGreen: 1
   },
   {
     id: 67,

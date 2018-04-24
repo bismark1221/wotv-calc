@@ -197,18 +197,13 @@ export class FindBestService {
       if (unit) {
         unit.totalDamage = 0;
         let realIgnore = unit.ability.ignore * 2 / 100 + 1;
-        let base = unit.ability.base
-
-        if (unit.ability.damage === 'hybrid') {
-          base /= 2;
-        }
 
         if (unit.elements.length > 0) {
           unit.elements.forEach(element => {
-            unit.totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
+            unit.totalDamage += (1 / unit.elements.length) * unit.ability.base * realIgnore * this.modifierElements[element];
           })
         } else {
-          unit.totalDamage = base * realIgnore;
+          unit.totalDamage = unit.ability.base * realIgnore;
         }
       }
     });

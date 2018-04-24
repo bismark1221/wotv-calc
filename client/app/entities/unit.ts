@@ -12,6 +12,10 @@ export class Unit {
     en: 'New Unit'
   };
   name: string = 'New Unit';
+  multiSkills: any[] = [];
+  multipleBlack: number = 1;
+  multipleWhite: number = 1;
+  multipleGreen: number = 1;
 
   constructUnitFromJson(unit: Unit, translateService: TranslateService): void {
     this.id = unit.id;
@@ -30,6 +34,11 @@ export class Unit {
       ability.constructAbilityFromJson(dataAbility, translateService);
       this.abilities.push(ability);
     });
+
+    this.multiSkills = unit.multiSkills ? unit.multiSkills : this.multiSkills;
+    this.multipleBlack = unit.multipleBlack ? unit.multipleBlack : this.multipleBlack;
+    this.multipleWhite = unit.multipleWhite ? unit.multipleWhite : this.multipleWhite;
+    this.multipleGreen = unit.multipleGreen ? unit.multipleGreen : this.multipleGreen;
   }
 
   getName(translateService: TranslateService): string {
