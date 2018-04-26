@@ -9135,5 +9135,128 @@ export const UNITS: any[] = [
         offset: 8
       }
     ]
+  },
+  {
+    id: 119,
+    names: {
+      en: "Orochi",
+      tw: "八俁遠呂智",
+      kr: "야마타노오로치",
+      fr: "Hydragon",
+      de: "Orochi",
+      es: "Hidra"
+    },
+    abilities: [
+      {
+        id: 503070,
+        names: {
+          en: "Shock and Claw",
+          tw: "恐怖之爪",
+          kr: "공포의 발톱",
+          fr: "Griffe de l'effroi",
+          de: "Garstige Krallen",
+          es: "Garra de espanto"
+        },
+        hitDamage: [
+          20, 20, 60
+        ],
+        castTime: 32,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 34,
+        framesList: "0-26-92",
+        offset: 16,
+        base: 225,
+        ignore: 50
+      },
+      {
+        id: 306000206,
+        names: {
+          en: "Purgatory Pyre",
+          tw: "煉獄火焰",
+          kr: "지옥의 화염",
+          fr: "Tout feu tout flamme",
+          de: "Feurige Säuberung",
+          es: "Pira purgativa"
+        },
+        hitDamage: [
+          8, 7, 8, 8, 7, 8, 7, 8, 7, 8, 8, 8, 8
+        ],
+        castTime: 0,
+        damage: "hybrid",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 95,
+        framesList: "0-10-10-10-10-10-10-10-10-10-10-10-14",
+        offset: 8,
+        base: 610,
+        dualable: false
+      }
+    ]
+  },
+  {
+    id: 120,
+    names: {
+      en: "Dragonlord",
+      tw: "龍王",
+      kr: "용왕",
+      fr: "Lordragon",
+      de: "Drachenfürst",
+      es: "Draconarius"
+    },
+    abilities: [
+      {
+        id: 205570,
+        names: {
+          en: "Kafrizzle",
+          tw: "美拉蓋亞",
+          kr: "메라가이아",
+          fr: "Gigaflamme",
+          de: "Schmurgel",
+          es: "Superataque ígneo"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "fire"
+        ],
+        debuff: {},
+        firstHit: 240,
+        framesList: "0",
+        offset: 16,
+        base: 2000,
+        type: "finish",
+        dualable: false
+      },
+      {
+        id: 306000106,
+        names: {
+          en: "Dark Temptation",
+          tw: "黑暗邀請",
+          kr: "어둠으로의 초대",
+          fr: "Tentation obscure",
+          de: "Dunkle Versuchung",
+          es: "Tentación oscura"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 0,
+        damage: "physical",
+        elements: [],
+        debuff: {},
+        firstHit: 149,
+        framesList: "0-9-9-9-9",
+        offset: 8,
+        base: 390,
+        dualable: false
+      }
+    ]
   }
 ];
