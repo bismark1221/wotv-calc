@@ -97,9 +97,12 @@ export const UNITS: any[] = [
         castTime: 0,
         offset: 0,
         base: 410,
-        debuff: {
-          water: 100
-        },
+        debuffs: [
+          {
+            type: 'water',
+            value: 100
+          }
+        ],
         dualable: false
       },
     ]
@@ -181,9 +184,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 200,
         ignore: 50,
-        debuff: {
-          light: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -202,9 +208,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 260,
         ignore: 50,
-        debuff: {
-          light: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ]
       },
       {
         id: 3,
@@ -358,9 +367,12 @@ export const UNITS: any[] = [
         offset: 36,
         base: 200,
         ignore: 50,
-        debuff: {
-          earth: 50
-        }
+        debuffs: [
+          {
+            type: 'earth',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -379,9 +391,12 @@ export const UNITS: any[] = [
         offset: 36,
         base: 250,
         ignore: 50,
-        debuff: {
-          earth: 75
-        }
+        debuffs: [
+          {
+            type: 'earth',
+            value: 75
+          }
+        ]
       }
     ]
   },
@@ -413,9 +428,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 200,
         ignore: 50,
-        debuff: {
-          dark: 50
-        }
+        debuffs: [
+          {
+            type: 'dark',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -534,7 +552,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-40-40-40-40",
         offset: 16,
@@ -556,9 +574,12 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 0,
         base: 400,
-        debuff: {
-          lightning: 65
-        }
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 65
+          }
+        ]
       },
       {
         id: 7,
@@ -755,11 +776,20 @@ export const UNITS: any[] = [
         offset: 46,
         base: 560,
         ignore: 25,
-        debuff: {
-          fire: 75,
-          light: 75,
-          lightning: 75
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 75,
+          },
+          {
+            type: 'light',
+            value: 75,
+          },
+          {
+            type: 'lightning',
+            value: 75,
+          }
+        ],
         damage: 'magic'
       },
       {
@@ -811,9 +841,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 160,
         ignore: 50,
-        debuff: {
-          light: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -832,9 +865,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 200,
         ignore: 50,
-        debuff: {
-          light: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ]
       }
     ]
   },
@@ -963,10 +999,16 @@ export const UNITS: any[] = [
           'light',
           'lightning'
         ],
-        debuff: {
-          light: 50,
-          lightning: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50,
+          },
+          {
+            type: 'lightning',
+            value: 50,
+          }
+        ]
       },
       {
         id: 2,
@@ -988,10 +1030,16 @@ export const UNITS: any[] = [
           'light',
           'lightning'
         ],
-        debuff: {
-          light: 50,
-          lightning: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50,
+          },
+          {
+            type: 'lightning',
+            value: 50,
+          }
+        ]
       }
     ]
   },
@@ -1162,9 +1210,12 @@ export const UNITS: any[] = [
         offset: 22,
         base: 800,
         damage: 'hybrid',
-        debuff: {
-          ice: 50
-        },
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50
+          }
+        ],
         elements: [
           'ice'
         ]
@@ -1206,9 +1257,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 1000,
         damage: 'hybrid',
-        debuff: {
-          ice: 75
-        },
+        debuffs: [
+          {
+            type: 'ice',
+            value: 75
+          }
+        ],
         elements: [
           'ice'
         ]
@@ -1364,9 +1418,12 @@ export const UNITS: any[] = [
         offset: 40,
         base: 250,
         ignore: 50,
-        debuff: {
-          lightning: 50
-        }
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 50
+          }
+        ]
       }
     ]
   },
@@ -1401,9 +1458,12 @@ export const UNITS: any[] = [
         elements: [
           'light'
         ],
-        debuff: {
-          light: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -1481,9 +1541,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          wind: 50
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 50
+          }
+        ],
         firstHit: 17,
         framesList: "0-26",
         offset: 8,
@@ -1505,7 +1568,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-10-10-10-10-10-10-10-10-10",
         offset: 26,
@@ -1855,7 +1918,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 150,
         framesList: "0-6-5-7-5-5-8-5-5",
         offset: 8,
@@ -1895,9 +1958,12 @@ export const UNITS: any[] = [
         elements: [
           'wind'
         ],
-        debuff: {
-          wind: 50
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 50
+          }
+        ],
         damage: 'magic'
       }
     ]
@@ -2523,9 +2589,12 @@ export const UNITS: any[] = [
         offset: 26,
         base: 200,
         ignore: 50,
-        debuff: {
-          fire: 50
-        }
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -2574,10 +2643,16 @@ export const UNITS: any[] = [
         offset: 26,
         base: 200,
         ignore: 25,
-        debuff: {
-          light: 50,
-          dark: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50,
+          },
+          {
+            type: 'dark',
+            value: 50,
+          }
+        ]
       }
     ]
   },
@@ -3454,9 +3529,12 @@ export const UNITS: any[] = [
         elements : [
           'fire'
         ],
-        debuff: {
-          fire: 50
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ],
         dualable: false,
       }
     ]
@@ -3491,9 +3569,12 @@ export const UNITS: any[] = [
         elements: [
           'dark'
         ],
-        debuff: {
-          dark: 100
-        }
+        debuffs: [
+          {
+            type: 'dark',
+            value: 100
+          }
+        ]
       }
     ]
   },
@@ -3843,10 +3924,16 @@ export const UNITS: any[] = [
           'dark',
           'fire'
         ],
-        debuff : {
-          dark: 50,
-          fire: 50
-        },
+        debuffs : [
+          {
+            type: 'dark',
+            value: 50
+          },
+          {
+            type: 'fire',
+            value: 50
+          }
+        ],
         dualable: false
       },
       {
@@ -3868,7 +3955,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {},
+        debuffs: [],
         dualable: false,
         firstHit: 150,
         framesList: "0",
@@ -3905,7 +3992,7 @@ export const UNITS: any[] = [
       910522: 2,
       910526: 2
     },
-    multipleBlack: 2,
+    multipleBlack: 3,
     multipleWhite: 1,
     multipleGreen: 1
   },
@@ -3936,9 +4023,12 @@ export const UNITS: any[] = [
         castTime: 20,
         offset: 14,
         base: 350,
-        debuff: {
-          water: 50
-        }
+        debuffs: [
+          {
+            type: 'water',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -3960,9 +4050,12 @@ export const UNITS: any[] = [
         elements: [
           'water'
         ],
-        debuff: {
-          water: 74
-        }
+        debuffs: [
+          {
+            type: 'water',
+            value: 74
+          }
+        ]
       },
     ],
   },
@@ -4461,9 +4554,12 @@ export const UNITS: any[] = [
         offset: 0,
         base: 420,
         ignore: 50,
-        debuff: {
-          wind: 74
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 74
+          }
+        ],
         dualable: false
       },
     ],
@@ -4498,9 +4594,12 @@ export const UNITS: any[] = [
         elements: [
           'wind'
         ],
-        debuff: {
-          wind: 50
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 50
+          }
+        ],
         damage: 'magic'
       },
       {
@@ -4546,10 +4645,16 @@ export const UNITS: any[] = [
           'wind',
           'lightning'
         ],
-        debuff: {
-          wind: 74,
-          lightning: 74
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 74,
+          },
+          {
+            type: 'lightning',
+            value: 74,
+          }
+        ],
         damage: 'magic',
         dualable: false
       }
@@ -4744,9 +4849,12 @@ export const UNITS: any[] = [
         offset: 66,
         base: 200,
         ignore: 50,
-        debuff: {
-          ice: 50
-        }
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -4837,9 +4945,12 @@ export const UNITS: any[] = [
         elements: [
           'wind'
         ],
-        debuff: {
-          wind: 72
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 72
+          }
+        ],
         dualable: false
       },
     ]
@@ -5036,9 +5147,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 160,
         ignore: 50,
-        debuff: {
-          ice: 50
-        }
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -5108,10 +5222,16 @@ export const UNITS: any[] = [
           'fire',
           'ice'
         ],
-        debuff: {
-          fire: 50,
-          ice: 50
-        }
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50,
+          },
+          {
+            type: 'ice',
+            value: 50,
+          }
+        ]
       },
       {
         id: 2,
@@ -5134,10 +5254,16 @@ export const UNITS: any[] = [
           'lightning',
           'water'
         ],
-        debuff: {
-          lightning: 50,
-          water: 50
-        }
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 50,
+          },
+          {
+            type: 'water',
+            value: 50,
+          }
+        ]
       },
       {
         id: 3,
@@ -5160,10 +5286,16 @@ export const UNITS: any[] = [
           'wind',
           'earth'
         ],
-        debuff: {
-          wind: 50,
-          earth: 50
-        }
+        debuffs: [
+          {
+            type: 'wind',
+            value: 50,
+          },
+          {
+            type: 'earth',
+            value: 50,
+          }
+        ]
       }
     ]
   },
@@ -5321,9 +5453,12 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
-        debuff: {
-          ice: 50
-        },
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50
+          }
+        ],
         dualable: false
       }
     ]
@@ -5476,10 +5611,16 @@ export const UNITS: any[] = [
         base: 200,
         damage: 'magic',
         type: 'finish',
-        debuff: {
-          ice: 50,
-          water: 50
-        },
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50,
+          },
+          {
+            type: 'water',
+            value: 50,
+          }
+        ],
         dualable: false
       }
     ]
@@ -5846,9 +5987,12 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
-        debuff: {
-          ice: 50
-        }
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50
+          }
+        ]
       },
       {
         id: 4,
@@ -5869,9 +6013,12 @@ export const UNITS: any[] = [
         elements: [
           'fire'
         ],
-        debuff: {
-          fire: 50
-        }
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ]
       },
       {
         id: 5,
@@ -5995,9 +6142,12 @@ export const UNITS: any[] = [
         base: 150,
         ignore: 50,
         type: 'finish',
-        debuff: {
-          fire: 60
-        }
+        debuffs: [
+          {
+            type: 'fire',
+            value: 60
+          }
+        ]
       },
       {
         id: 2,
@@ -6016,9 +6166,12 @@ export const UNITS: any[] = [
         base: 150,
         ignore: 50,
         type: 'finish',
-        debuff: {
-          lightning: 60
-        }
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 60
+          }
+        ]
       },
       {
         id: 3,
@@ -6037,9 +6190,12 @@ export const UNITS: any[] = [
         base: 150,
         ignore: 50,
         type: 'finish',
-        debuff: {
-          water: 60
-        }
+        debuffs: [
+          {
+            type: 'water',
+            value: 60
+          }
+        ]
       },
       {
         id: 4,
@@ -6058,9 +6214,12 @@ export const UNITS: any[] = [
         base: 150,
         ignore: 50,
         type: 'finish',
-        debuff: {
-          light: 60
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 60
+          }
+        ]
       },
       {
         id: 5,
@@ -6150,9 +6309,12 @@ export const UNITS: any[] = [
         elements: [
           'lightning'
         ],
-        debuff: {
-          lightning: 50
-        }
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 50
+          }
+        ]
       },
       {
         id: 2,
@@ -6174,9 +6336,12 @@ export const UNITS: any[] = [
         elements: [
           'light'
         ],
-        debuff: {
-          light: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ]
       },
       {
         id: 3,
@@ -6198,9 +6363,12 @@ export const UNITS: any[] = [
         elements: [
           'dark'
         ],
-        debuff: {
-          dark: 50
-        }
+        debuffs: [
+          {
+            type: 'dark',
+            value: 50
+          }
+        ]
       },
       {
         id: 4,
@@ -6329,9 +6497,12 @@ export const UNITS: any[] = [
         elements: [
           'fire'
         ],
-        debuff: {
-          fire: 30
-        }
+        debuffs: [
+          {
+            type: 'fire',
+            value: 30
+          }
+        ]
       },
       {
         id: 4,
@@ -6353,9 +6524,12 @@ export const UNITS: any[] = [
         elements: [
           'fire'
         ],
-        debuff: {
-          fire: 50
-        }
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ]
       }
     ]
   },
@@ -6388,10 +6562,16 @@ export const UNITS: any[] = [
         elements: [
           'light'
         ],
-        debuff: {
-          light: 50,
-          dark: 50
-        }
+        debuffs: [
+          {
+            type: 'light',
+            value: 50,
+          },
+          {
+            type: 'dark',
+            value: 50,
+          }
+        ]
       },
       {
         id: 2,
@@ -6411,7 +6591,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 40,
         framesList: "0-9-9-9-9-9-9-9-9-9-9-10-9-11-15",
         offset: 8,
@@ -6447,7 +6627,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 85,
         framesList: "0",
         offset: 16,
@@ -6470,7 +6650,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 85,
         framesList: "0",
         offset: 16,
@@ -6493,7 +6673,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 85,
         framesList: "0",
         offset: 16,
@@ -6516,7 +6696,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 85,
         framesList: "0",
         offset: 16,
@@ -6539,7 +6719,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 22,
         framesList: "0",
         offset: 16,
@@ -6562,7 +6742,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 22,
         framesList: "0",
         offset: 16,
@@ -6585,9 +6765,12 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {
-          fire: 50
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ],
         firstHit: 22,
         framesList: "0",
         offset: 16,
@@ -6610,7 +6793,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 22,
         framesList: "0",
         offset: 16,
@@ -6633,7 +6816,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 82,
         framesList: "0-7-7-7-7",
         offset: 16,
@@ -6658,9 +6841,12 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {
-          fire: 74
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 74
+          }
+        ],
         firstHit: 150,
         framesList: "0",
         base: 650,
@@ -6699,7 +6885,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         base: 220,
         framesList: "0-5-5-5-5-5-5-5-5-5",
@@ -6721,7 +6907,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-10-10-10-10-10-10-10",
         offset: 16,
@@ -6744,9 +6930,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          lightning: 60
-        },
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 60
+          }
+        ],
         firstHit: 110,
         framesList: "0",
         offset: 8,
@@ -6769,7 +6958,7 @@ export const UNITS: any[] = [
         castTime: 104,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 110,
         framesList: "0",
         offset: 16,
@@ -6793,7 +6982,7 @@ export const UNITS: any[] = [
         castTime: 104,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 114,
         framesList: "0",
         offset: 16,
@@ -6817,7 +7006,7 @@ export const UNITS: any[] = [
         castTime: 138,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 180,
         framesList: "0-8-8-8-8-8-8-8-32-8-8-8-8-8-96",
         offset: 16,
@@ -6855,7 +7044,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 26,
         framesList: "0-8-8-8-8-8-8-8",
         offset: 86,
@@ -6877,7 +7066,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 72,
         framesList: "0",
         offset: 86,
@@ -6900,7 +7089,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "hybrid",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 65,
         framesList: "0",
         offset: 86,
@@ -6922,9 +7111,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          light: 50
-        },
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ],
         firstHit: 12,
         framesList: "0-8-8-8-8-8-8-8",
         offset: 86,
@@ -6946,7 +7138,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0",
         offset: 16,
@@ -6970,7 +7162,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 98,
         framesList: "0-32-59-87",
         offset: 8,
@@ -7009,7 +7201,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 59,
         framesList: "0-8-8-8-8-8-8-8",
         offset: 16,
@@ -7033,7 +7225,7 @@ export const UNITS: any[] = [
         elements: [
           "earth"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0-10-10-10-10-10-10-10",
         offset: 16,
@@ -7055,7 +7247,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-8-8-14-10-10",
         offset: 16,
@@ -7077,7 +7269,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 18,
         framesList: "0-30-28-10-36",
         offset: 8,
@@ -7113,7 +7305,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0",
         offset: 16,
@@ -7137,7 +7329,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 20,
         framesList: "0",
         offset: 16,
@@ -7161,7 +7353,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 33,
         framesList: "0",
         offset: 16,
@@ -7185,7 +7377,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 40,
         framesList: "0",
         offset: 16,
@@ -7222,7 +7414,7 @@ export const UNITS: any[] = [
         castTime: 60,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 60,
         framesList: "0-6-6-6-6-6",
         offset: 16,
@@ -7244,7 +7436,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8",
         offset: 36,
@@ -7267,7 +7459,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 36,
         framesList: "0-71-13-105",
         offset: 8,
@@ -7291,7 +7483,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 60,
         framesList: "0",
         offset: 16,
@@ -7328,7 +7520,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-8-8-8-8-8-16",
         offset: 16,
@@ -7350,7 +7542,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8",
         offset: 36,
@@ -7372,7 +7564,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 60,
         framesList: "0-6-6-6-6-6",
         offset: 16,
@@ -7394,7 +7586,7 @@ export const UNITS: any[] = [
         castTime: 15,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 12,
         framesList: "0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
         offset: 16,
@@ -7431,7 +7623,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuff: {},
+        debuffs: [],
         dualable: false,
         ignore: 0,
         type: "magic",
@@ -7472,7 +7664,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 170,
         framesList: "0",
         offset: 8,
@@ -7497,7 +7689,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 150,
         framesList: "0",
         offset: 8,
@@ -7522,7 +7714,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 110,
         framesList: "0",
         offset: 8,
@@ -7547,7 +7739,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 130,
         framesList: "0",
         offset: 8,
@@ -7572,7 +7764,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 410,
         framesList: "0",
         offset: 8,
@@ -7597,7 +7789,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0",
         offset: 16,
@@ -7622,7 +7814,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0",
         offset: 16,
@@ -7647,7 +7839,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0",
         offset: 16,
@@ -7672,7 +7864,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0",
         offset: 16,
@@ -7697,7 +7889,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 120,
         framesList: "0",
         offset: 16,
@@ -7722,9 +7914,12 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {
-          "fire": 50
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8-8-8-8",
         offset: 8,
@@ -7748,9 +7943,12 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuff: {
-          "water": 50
-        },
+        debuffs: [
+          {
+            type: 'water',
+            value: 50
+          }
+        ],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8-8-8-8",
         offset: 8,
@@ -7774,9 +7972,12 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {
-          "lightning": 50
-        },
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 50
+          }
+        ],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8-8-8-8",
         offset: 8,
@@ -7800,9 +8001,12 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuff: {
-          "wind": 50
-        },
+        debuffs: [
+          {
+            type: 'wind',
+            value: 50
+          }
+        ],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8-8-8-8",
         offset: 8,
@@ -7826,9 +8030,12 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuff: {
-          "light": 50
-        },
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8-8-8-8",
         offset: 8,
@@ -7850,7 +8057,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "hybrid",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 72,
         framesList: "0",
         offset: 8,
@@ -7873,7 +8080,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "hybrid",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 12,
         framesList: "0",
         offset: 8,
@@ -7896,7 +8103,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "hybrid",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 100,
         framesList: "0",
         offset: 8,
@@ -7935,7 +8142,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 190,
         framesList: "0",
         offset: 16,
@@ -8002,7 +8209,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 162,
         framesList: "0-8-8-8-8-8-8",
         offset: 16,
@@ -8024,10 +8231,16 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "magic",
         elements: [],
-        debuff: {
-          light: 50,
-          dark: 50
-        },
+        debuffs: [
+          {
+            type: 'light',
+            value: 50,
+          },
+          {
+            type: 'dark',
+            value: 50,
+          }
+        ],
         firstHit: 8,
         framesList: "0-20-8-8-8-8-8-8-8-8-8",
         offset: 8,
@@ -8065,7 +8278,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 190,
         framesList: "0",
         offset: 16,
@@ -8090,7 +8303,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 150,
         framesList: "0",
         offset: 16,
@@ -8115,7 +8328,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 210,
         framesList: "0",
         offset: 16,
@@ -8140,7 +8353,7 @@ export const UNITS: any[] = [
         elements: [
           "ice"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 240,
         framesList: "0",
         offset: 16,
@@ -8165,9 +8378,12 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuff: {
-          lightning: 50
-        },
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 50
+          }
+        ],
         firstHit: 133,
         framesList: "0-12-12-12-12-12-12-12-12-12-12-12",
         offset: 16,
@@ -8189,7 +8405,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 160,
         framesList: "0-24-24-24-24-24",
         offset: 8,
@@ -8226,7 +8442,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 300,
         framesList: "0",
         offset: 16,
@@ -8250,7 +8466,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 285,
         framesList: "0",
         offset: 16,
@@ -8287,9 +8503,12 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "physical",
         elements: [],
-        debuff: {
-          water: 50
-        },
+        debuffs: [
+          {
+            type: 'water',
+            value: 50
+          }
+        ],
         firstHit: 22,
         framesList: "0-5-5-5-5-5-5-5-5-5-5-20",
         offset: 16,
@@ -8311,9 +8530,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          earth: 50
-        },
+        debuffs: [
+          {
+            type: 'earth',
+            value: 50
+          }
+        ],
         firstHit: 2,
         framesList: "0-8-8-8-8-8-8",
         offset: 36,
@@ -8335,10 +8557,16 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          water: 74,
-          earth: 74
-        },
+        debuffs: [
+          {
+            type: 'water',
+            value: 74,
+          },
+          {
+            type: 'earth',
+            value: 74,
+          }
+        ],
         firstHit: 26,
         framesList: "0-10-16-80-48",
         offset: 8,
@@ -8374,7 +8602,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 16,
         framesList: "0-10-10-10-10-10-10-10",
         offset: 8,
@@ -8398,7 +8626,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 20,
         framesList: "0",
         offset: 8,
@@ -8424,9 +8652,12 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {
-          "fire": 50
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ],
         firstHit: 210,
         framesList: "0",
         offset: 16,
@@ -8451,7 +8682,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 72,
         framesList: "0",
         offset: 16,
@@ -8474,9 +8705,12 @@ export const UNITS: any[] = [
         castTime: 14,
         damage: "physical",
         elements: [],
-        debuff: {
-          fire: 60
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 60
+          }
+        ],
         firstHit: 16,
         framesList: "0-10-10-10-10-10-10-10",
         offset: 16,
@@ -8498,7 +8732,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 85,
         framesList: "0-4-21-8-85-4-4-22-6-6-12",
         offset: 8,
@@ -8535,7 +8769,7 @@ export const UNITS: any[] = [
         castTime: 15,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 15,
         framesList: "0-10-10-10-10-10-66",
         offset: 16,
@@ -8557,7 +8791,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 46,
         framesList: "0-6-6-6-6-13",
         offset: 8,
@@ -8579,7 +8813,7 @@ export const UNITS: any[] = [
         castTime: 14,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 16,
         framesList: "0-21-32-29-9-24",
         offset: 16,
@@ -8601,7 +8835,7 @@ export const UNITS: any[] = [
         castTime: 14,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 16,
         framesList: "0-21-32-29-9-24",
         offset: 16,
@@ -8623,7 +8857,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 160,
         framesList: "0",
         offset: 16,
@@ -8647,7 +8881,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 92,
         framesList: "0-10-10-10-10-10-10-10",
         offset: 16,
@@ -8670,9 +8904,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          fire: 50
-        },
+        debuffs: [
+          {
+            type: 'fire',
+            value: 50
+          }
+        ],
         firstHit: 42,
         framesList: "0-10-10-10-10-10",
         offset: 8,
@@ -8694,9 +8931,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          ice: 50
-        },
+        debuffs: [
+          {
+            type: 'ice',
+            value: 50
+          }
+        ],
         firstHit: 42,
         framesList: "0-10-10-10-10-10",
         offset: 8,
@@ -8718,9 +8958,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          lightning: 50
-        },
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 50
+          }
+        ],
         firstHit: 42,
         framesList: "0-10-10-10-10-10",
         offset: 8,
@@ -8742,9 +8985,12 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {
-          light: 50
-        },
+        debuffs: [
+          {
+            type: 'light',
+            value: 50
+          }
+        ],
         firstHit: 42,
         framesList: "0-10-10-10-10-10",
         offset: 8,
@@ -8766,7 +9012,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 150,
         framesList: "0",
         offset: 8,
@@ -8804,7 +9050,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-7-7-7-7-7-7-7-7-7-7-7",
         offset: 14,
@@ -8828,7 +9074,7 @@ export const UNITS: any[] = [
         elements: [
           "dark"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 23,
         framesList: "0",
         offset: 8,
@@ -8851,7 +9097,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-10-10-10-10-10-10-10-10",
         offset: 16,
@@ -8873,7 +9119,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 42,
         framesList: "0-39-4-4-4-4-4-89-4-4-4-4-4-4-4",
         offset: 8,
@@ -8909,7 +9155,7 @@ export const UNITS: any[] = [
         castTime: 12,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 14,
         framesList: "0-28-26-23-43",
         offset: 16,
@@ -8931,7 +9177,7 @@ export const UNITS: any[] = [
         castTime: 12,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 14,
         framesList: "0-28-26-23-43",
         offset: 16,
@@ -8953,9 +9199,12 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {
-          lightning: 20
-        },
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 20
+          }
+        ],
         firstHit: 42,
         framesList: "0-20-30-2",
         offset: 16,
@@ -8977,9 +9226,12 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "physical",
         elements: [],
-        debuff: {
-          lightning: 75
-        },
+        debuffs: [
+          {
+            type: 'lightning',
+            value: 75
+          }
+        ],
         firstHit: 42,
         framesList: "0-20-30-2",
         offset: 16,
@@ -9003,7 +9255,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 30,
         framesList: "0",
         offset: 8,
@@ -9028,7 +9280,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 110,
         framesList: "0",
         offset: 16,
@@ -9053,7 +9305,7 @@ export const UNITS: any[] = [
         elements: [
           "ice"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 110,
         framesList: "0",
         offset: 16,
@@ -9078,7 +9330,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuff: {},
+        debuffs: [],
         firstHit: 70,
         framesList: "0",
         offset: 16,
@@ -9101,7 +9353,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuffs: [],
         firstHit: 39,
         framesList: "0-14-14-34-32-42-3-7-3-24-3-31-50-3-3-4-3-3-3-3",
         offset: 8,
@@ -9138,7 +9390,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         dualable: false,
         type: 'finish',
         ignore: 0,
@@ -9165,7 +9417,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuffs: [],
         dualable: false,
         type: 'finish',
         ignore: 0,

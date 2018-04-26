@@ -31,144 +31,145 @@
         </div>
       </div>
 
-      <hr />
-
-      <div *ngFor="let ability of chain[viewOptions].selectedIds">
+      <div *ngFor="let abilityIndex of chain[viewOptions].castNumber">
+        <hr />
         <div class="selectRightZoneBox littleMarginTop">
-          <div class="selectRightZoneOneThird selectAbility" *ngIf="!ability.activeRename">
-            <label for="chainer_ability">{{ 'chain.label.ability' | translate }} 1</label>
-            <select class="form-control" id="chainer_ability" [(ngModel)]="chain[viewOptions].selectedIds[viewOptions]" (ngModelChange)="onChangeSkill(viewOptions, 0)">
-              <option *ngFor="let unitAbility of chain[viewOptions].abilities" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
+          <div class="selectRightZoneOneThird selectAbility" *ngIf="!getActiveRename(viewOptions, abilityIndex)">
+            <label for="chainer_ability">{{ 'chain.label.ability' | translate }} {{ abilityIndex + 1 }}</label>
+            <select class="form-control" id="chainer_ability" [(ngModel)]="chain[viewOptions].selectedIds[abilityIndex]" (ngModelChange)="onChangeSkill(viewOptions, abilityIndex)">
+              <option *ngFor="let unitAbility of getAvailableAbilities(viewOptions, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
             </select>
           </div>
 
-          <div class="selectRightZoneOneThird selectAbility" *ngIf="ability.activeRename">
+          <div class="selectRightZoneOneThird selectAbility" *ngIf="getActiveRename(viewOptions, abilityIndex)">
             <label for="unit_ability">{{ 'chain.label.abilityName' | translate }}</label>
-            <input class="form-control" type="text" id="unit_ability" [(ngModel)]="ability.name" (keyup.enter)="saveUnit(viewOptions)">
+            <input class="form-control" type="text" id="unit_ability" [(ngModel)]="getAbility(viewOptions, abilityIndex).name" (keyup.enter)="saveUnit(viewOptions)">
           </div>
 
           <diV class="buttonsAbility">
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[viewOptions].id > 10000 && !ability.activeRename">
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[viewOptions].id > 10000 && !getActiveRename(viewOptions, abilityIndex)">
               <label class="emptyLabel">&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(viewOptions)">{{ 'chain.button.renameAbility' | translate }}</button>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(viewOptions, abilityIndex)">{{ 'chain.button.renameAbility' | translate }}</button>
             </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[viewOptions].id > 10000 && ability.activeRename">
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[viewOptions].id > 10000 && getActiveRename(viewOptions, abilityIndex)">
               <label class="emptyLabel">&nbsp;</label>
               <button class="btn btn-secondary fullWidth" type="button" (click)="saveUnit(viewOptions)">{{ 'chain.button.saveAbility' | translate }}</button>
             </div>
 
             <div class="selectRightZoneTwoThirdDividedInThird">
               <label class="emptyLabel">&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility(viewOptions)">{{ 'chain.button.addAbility' | translate }}</button>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="addAbility(viewOptions, abilityIndex)">{{ 'chain.button.addAbility' | translate }}</button>
             </div>
 
             <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="chain[viewOptions].abilities.length > 1">
               <label class="emptyLabel">&nbsp;</label>
-              <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility(viewOptions)">{{ 'chain.button.removeAbility' | translate }}</button>
+              <button class="btn btn-secondary fullWidth" type="button" (click)="removeAbility(viewOptions, abilityIndex)">{{ 'chain.button.removeAbility' | translate }}</button>
             </div>
           </diV>
         </div>
 
-        <div class="selectRightZoneBox littleMarginTop">
-          <div class="selectRightZoneInFour">
-            <span id="tooltip_base"></span>
-            <label for="chainer_base"
-              tooltip="{{ 'chain.label.tooltip' | translate }}"
-              parentSelector="#tooltip_base">
-              {{ 'chain.label.base' | translate }}<i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
-            </label>
-            <div class="input-group">
-              <input class="form-control" type="number" id="chainer_base" [(ngModel)]="ability.base" (ngModelChange)="saveUnit(viewOptions)">
-              <span class="input-group-addon" id="unit_base_percent">%</span>
-            </div>
-          </div>
-
-          <div class="selectRightZoneInFour">
-            <label for="chainer_ignore">{{ 'chain.label.ignore' | translate }}</label>
-            <div class="input-group">
-              <input class="form-control" type="number" id="chainer_ignore" [(ngModel)]="ability.ignore" (ngModelChange)="saveUnit(viewOptions)">
-              <span class="input-group-addon" id="unit_base_percent">%</span>
-            </div>
-          </div>
-
-          <div class="selectRightZoneInFour">
-            <label for="chainer_ability_type">{{ 'chain.label.abilityType' | translate }}</label>
-            <select class="form-control" id="chainer_damage_type" [(ngModel)]="ability.type" (ngModelChange)="saveUnit(viewOptions)">
-              <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{ 'abilityType.' + abilityType | translate }}</option>
-            </select>
-          </div>
-
-          <div class="selectRightZoneInFour tabletMarginTop">
-            <label for="chainer_damage_type">{{ 'chain.label.damageType' | translate }}</label>
-            <select class="form-control" id="chainer_damage_type" [(ngModel)]="ability.damage" (ngModelChange)="saveUnit(viewOptions)">
-              <option *ngFor="let abilityDamage of abilityDamages" [ngValue]="abilityDamage">{{ 'abilityDamage.' + abilityDamage | translate }}</option>
-            </select>
-          </div>
-
-          <div class="selectRightZoneInFour">
-            <label for="chainer_ignore">{{ 'chain.label.dualable' | translate }}</label>
-            <select class="form-control" id="chainer_dualable" [(ngModel)]="ability.dualable" (ngModelChange)="saveUnit(viewOptions)">
-              <option [ngValue]="true">{{ 'chain.label.yes' | translate }}</option>
-              <option [ngValue]="false">{{ 'chain.label.no' | translate }}</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="selectRightZoneBox littleMarginTop">
-          <div class="selectRightZoneFrames">
-            <label for="chainer_framesList">{{ 'chain.label.nonLinearFrames' | translate }}</label>
-            <input class="form-control" type="text" id="chainer_framesList" [(ngModel)]="ability.framesList" (ngModelChange)="saveUnit(viewOptions)">
-          </div>
-
-          <div class="selectRightZoneLittleBox tabletMarginTop">
-            <label for="chainer_firstHit">{{ 'chain.label.firstHit' | translate }}</label>
-            <input class="form-control" type="number" id="chainer_firstHit" [(ngModel)]="ability.firstHit" (ngModelChange)="saveUnit(viewOptions)">
-          </div>
-
-          <div class="selectRightZoneLittleBox">
-            <label for="chainer_castTime">{{ 'chain.label.castTime' | translate }}</label>
-            <input class="form-control" type="number" id="chainer_castTime" [(ngModel)]="ability.castTime" (ngModelChange)="saveUnit(viewOptions)">
-          </div>
-
-          <div class="selectRightZoneLittleBox">
-            <label for="chainer_offset">{{ 'chain.label.offset' | translate }}</label>
-            <input class="form-control" type="number" id="chainer_offset" [(ngModel)]="ability.offset" (ngModelChange)="saveUnit(viewOptions)">
-          </div>
-        </div>
-
-        <div class="selectRightZoneBox littleMarginTop multiSelectDropdown" *ngIf="multiElements.length > 0">
-          <ss-multiselect-dropdown
-            [options]="multiElements"
-            [settings]="multiElementsSettings"
-            [texts]="multiElementsTexts"
-            [(ngModel)]="this.ability.elements"
-            (ngModelChange)="saveUnit(viewOptions)">
-          </ss-multiselect-dropdown>
-        </div>
-
-        <div class="selectRightZoneBox littleMarginTop">
-          <hr class="mobileSeparatorSelectDebuff"/>
-          <div class="divAddDebuff">
-            <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(viewOptions)">{{ 'chain.button.addDebuff' | translate }}</button>
-          </div>
-          <div *ngFor="let debuff of chain[viewOptions].debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
-            <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
-            <div class="selectRightZoneTwoDividedThree">
-              <label for="unit_debuff{{j}}_type">{{ 'chain.label.element' | translate }} {{j + 1}}</label>
-              <select class="form-control" id="unit_debuff{{j}}_type" [(ngModel)]="chain[viewOptions].debuffs[j].type" (ngModelChange)="onChangeDebuff(viewOptions, j)">
-                <option *ngFor="let element of requiredElements" [ngValue]="element">{{ 'elements.' + element | translate }}</option>
-              </select>
-            </div>
-            <div class="selectRightZoneTwoDividedThree">
-              <label for="unit_debuff{{j}}_value">{{ 'chain.label.value' | translate }} {{j + 1}}</label>
+        <div *ngIf="getAbility(viewOptions, abilityIndex); let ability">
+          <div class="selectRightZoneBox littleMarginTop">
+            <div class="selectRightZoneInFour">
+              <span id="tooltip_base"></span>
+              <label for="chainer_base"
+                tooltip="{{ 'chain.label.tooltip' | translate }}"
+                parentSelector="#tooltip_base">
+                {{ 'chain.label.base' | translate }}<i class="fa fa-info-circle helperIcon" aria-hidden="true"></i>
+              </label>
               <div class="input-group">
-                <input class="form-control" type="number" id="unit_debuff{{j}}_value" [(ngModel)]="chain[viewOptions].debuffs[j].value" (ngModelChange)="onChangeDebuff(viewOptions, j)">
+                <input class="form-control" type="number" id="chainer_base" [(ngModel)]="ability.base" (ngModelChange)="saveUnit(viewOptions)">
                 <span class="input-group-addon" id="unit_base_percent">%</span>
               </div>
             </div>
-            <div class="selectRightZoneTwoDividedThree">
-              <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(viewOptions, j)">{{ 'chain.button.remove' | translate }}</button>
+
+            <div class="selectRightZoneInFour">
+              <label for="chainer_ignore">{{ 'chain.label.ignore' | translate }}</label>
+              <div class="input-group">
+                <input class="form-control" type="number" id="chainer_ignore" [(ngModel)]="ability.ignore" (ngModelChange)="saveUnit(viewOptions)">
+                <span class="input-group-addon" id="unit_base_percent">%</span>
+              </div>
+            </div>
+
+            <div class="selectRightZoneInFour">
+              <label for="chainer_ability_type">{{ 'chain.label.abilityType' | translate }}</label>
+              <select class="form-control" id="chainer_damage_type" [(ngModel)]="ability.type" (ngModelChange)="saveUnit(viewOptions)">
+                <option *ngFor="let abilityType of abilityTypes" [ngValue]="abilityType">{{ 'abilityType.' + abilityType | translate }}</option>
+              </select>
+            </div>
+
+            <div class="selectRightZoneInFour tabletMarginTop">
+              <label for="chainer_damage_type">{{ 'chain.label.damageType' | translate }}</label>
+              <select class="form-control" id="chainer_damage_type" [(ngModel)]="ability.damage" (ngModelChange)="saveUnit(viewOptions)">
+                <option *ngFor="let abilityDamage of abilityDamages" [ngValue]="abilityDamage">{{ 'abilityDamage.' + abilityDamage | translate }}</option>
+              </select>
+            </div>
+
+            <div class="selectRightZoneInFour">
+              <label for="chainer_ignore">{{ 'chain.label.dualable' | translate }}</label>
+              <select class="form-control" id="chainer_dualable" [(ngModel)]="ability.dualable" (ngModelChange)="saveUnit(viewOptions)">
+                <option [ngValue]="true">{{ 'chain.label.yes' | translate }}</option>
+                <option [ngValue]="false">{{ 'chain.label.no' | translate }}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <div class="selectRightZoneFrames">
+              <label for="chainer_framesList">{{ 'chain.label.nonLinearFrames' | translate }}</label>
+              <input class="form-control" type="text" id="chainer_framesList" [(ngModel)]="ability.framesList" (ngModelChange)="saveUnit(viewOptions)">
+            </div>
+
+            <div class="selectRightZoneLittleBox tabletMarginTop">
+              <label for="chainer_firstHit">{{ 'chain.label.firstHit' | translate }}</label>
+              <input class="form-control" type="number" id="chainer_firstHit" [(ngModel)]="ability.firstHit" (ngModelChange)="saveUnit(viewOptions)">
+            </div>
+
+            <div class="selectRightZoneLittleBox">
+              <label for="chainer_castTime">{{ 'chain.label.castTime' | translate }}</label>
+              <input class="form-control" type="number" id="chainer_castTime" [(ngModel)]="ability.castTime" (ngModelChange)="saveUnit(viewOptions)">
+            </div>
+
+            <div class="selectRightZoneLittleBox">
+              <label for="chainer_offset">{{ 'chain.label.offset' | translate }}</label>
+              <input class="form-control" type="number" id="chainer_offset" [(ngModel)]="ability.offset" (ngModelChange)="saveUnit(viewOptions)">
+            </div>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop multiSelectDropdown" *ngIf="multiElements.length > 0">
+            <ss-multiselect-dropdown
+              [options]="multiElements"
+              [settings]="multiElementsSettings"
+              [texts]="multiElementsTexts"
+              [(ngModel)]="this.ability.elements"
+              (ngModelChange)="saveUnit(viewOptions)">
+            </ss-multiselect-dropdown>
+          </div>
+
+          <div class="selectRightZoneBox littleMarginTop">
+            <hr class="mobileSeparatorSelectDebuff"/>
+            <div class="divAddDebuff">
+              <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(viewOptions, abilityIndex)">{{ 'chain.button.addDebuff' | translate }}</button>
+            </div>
+            <div *ngFor="let debuff of ability.debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+              <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
+              <div class="selectRightZoneTwoDividedThree">
+                <label for="ability_{{abilityIndex}}_debuff{{j}}_type">{{ 'chain.label.element' | translate }} {{j + 1}}</label>
+                <select class="form-control" id="ability_{{abilityIndex}}_debuff{{j}}_type" [(ngModel)]="ability.debuffs[j].type" (ngModelChange)="onChangeDebuff(viewOptions)">
+                  <option *ngFor="let element of requiredElements" [ngValue]="element">{{ 'elements.' + element | translate }}</option>
+                </select>
+              </div>
+              <div class="selectRightZoneTwoDividedThree">
+                <label for="ability_{{abilityIndex}}_debuff{{j}}_value">{{ 'chain.label.value' | translate }} {{j + 1}}</label>
+                <div class="input-group">
+                  <input class="form-control" type="number" id="ability_{{abilityIndex}}_debuff{{j}}_value" [(ngModel)]="ability.debuffs[j].value" (ngModelChange)="onChangeDebuff(viewOptions)">
+                  <span class="input-group-addon" id="unit_base_percent">%</span>
+                </div>
+              </div>
+              <div class="selectRightZoneTwoDividedThree">
+                <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(viewOptions, abilityIndex, j)">{{ 'chain.button.remove' | translate }}</button>
+              </div>
             </div>
           </div>
         </div>
@@ -238,17 +239,17 @@
             <button class="btn btn-secondary btnOptions" type="button" (click)="showOptions(options, i)">
               <i class="fa fa-cog pointer" aria-hidden="true"></i>
             </button>
-            <select class="form-control" id="chainer{{i}}_ability_0" [(ngModel)]="chain[i].selectedIds[0]" (ngModelChange)="onChangeSkill(i, 0)">
+            <!-- <select class="form-control" id="chainer{{i}}_ability_0" [(ngModel)]="chain[i].selectedIds[0]" (ngModelChange)="onChangeSkill(i, 0)">
               <option *ngFor="let unitAbility of chain[i].abilities" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
-            </select>
+            </select> -->
 
 
 
 
 
-            <div *ngFor="let cast of chain[i].castNumber">
-              <select class="form-control" id="chainer{{i}}_ability_{{cast}}" [(ngModel)]="chain[i].selectedIds[cast]" (ngModelChange)="onChangeSkill(i, cast)">
-                <option *ngFor="let unitAbility of chain[i].possibleMultiple" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
+            <div *ngFor="let abilityIndex of chain[i].castNumber">
+              <select class="form-control" id="chainer{{i}}_ability_{{abilityIndex}}" [(ngModel)]="chain[i].selectedIds[abilityIndex]" (ngModelChange)="onChangeSkill(i, abilityIndex)">
+                <option *ngFor="let unitAbility of getAvailableAbilities(i, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
               </select>
             </div>
 

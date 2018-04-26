@@ -238,28 +238,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     });
   }
 
-  private updateLocalDebuffs(position: number) {
-    this.chain[position].debuffs = [];
-    this.chain[position].selectedAbilities.forEach(ability => {
-      Object.keys(ability.debuff).forEach(key => {
-        this.chain[position].debuffs.push({type: key, value: ability.debuff[key]});
-      });
-    });
-  }
-
-  private updateServiceDebuffs(position: number) {
-    this.chain[position].selectedAbilities.forEach(ability => {
-      ability.debuff = {};
-    });
-
-    this.chain[position].debuffs.forEach(debuff => {
-      this.chain[position].selectedAbilities.forEach(ability => {
-        let actualDebuff = ability.debuff[debuff.type] ? ability.debuff[debuff.type] : 1;
-        ability.debuff[debuff.type] = debuff.value > actualDebuff ? debuff.value : actualDebuff;
-      });
-    });
-  }
-
   private changeMultiSelectDropdown() {
     if (this.chainDiv.nativeElement.clientWidth === 250) {
       this.multiElementsSettings.dynamicTitleMaxItems = 3;
@@ -283,7 +261,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private findPositionOfAbilityById(unit: any, id: any) {
     let i = 0;
-    let position = 0;
+    let position = null;
     unit.abilities.forEach(ability => {
       if (ability.id === id) {
         position = i;
@@ -379,8 +357,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.chain[position].selectedAbilities[index].activeRename = false;
     });
 
-    this.updateLocalDebuffs(position);
-
     this.chain[position].activeRename = false;
     this.chain[position].framesGap = (!this.chain[position].framesGap || framesGap !== 0 ? framesGap : this.chain[position].framesGap);
   }
@@ -432,8 +408,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       }
 
       this.chain[position].castNumber = [];
-      for (let i = 1; i < castNumber; i++) {
-        this.chain[position].castNumber.push(i)
+      for (let i = 0; i < castNumber; i++) {
+        this.chain[position].castNumber.push(i);
+        if (i > 0) {
+
+        }
       }
     }
   }
@@ -461,41 +440,50 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     return castNumber;
   }
 
-  addDebuff(position: number) {
-    this.chain[position].debuffs.push({type: 'dark', value: 1});
-    this.updateServiceDebuffs(position);
-    this.saveUnit(position);
+  private assignMultipleSkill(unitPosition: number) {
+    let ability = this.chain[unitPosition].selectedAbilities[0];
+
+    console.log("assign")
+    for(let i = 1; i < this.chain[unitPosition].castNumber.length; i++) {
+      console.log(i)
+      if (!this.chain[unitPosition].selectedIds[i]) {
+        console.log("Add ability")
+        this.chain[unitPosition].selectedIds[i] = ability.id;
+        this.chain[unitPosition].selectedAbilities[i] = ability;
+      }
+    }
   }
 
-  removeDebuff(position: number, debuff: number) {
-    this.chain[position].debuffs.splice(debuff, 1);
-    this.updateServiceDebuffs(position);
-    this.saveUnit(position);
+  addDebuff(unitPosition: number, abilityPosition: number) {
+    this.chain[unitPosition].selectedAbilities[abilityPosition].debuffs.push({type: 'dark', value: 1});
+    this.saveUnit(unitPosition);
+  }
+
+  removeDebuff(unitPosition: number, abilityPosition: number, debuff: number) {
+    this.chain[unitPosition].selectedAbilities[abilityPosition].debuffs.splice(debuff, 1);
+    this.saveUnit(unitPosition);
   }
 
   onChangeDebuff(position: number) {
-    this.updateServiceDebuffs(position);
     this.saveUnit(position);
   }
 
   onChangeSkill(unitPosition: number, abilityPosition: any) {
-
     let positionInList = this.findPositionOfAbilityById(this.chain[unitPosition], this.chain[unitPosition].selectedIds[abilityPosition]);
-    let ability = this.chain[unitPosition].abilities[positionInList];
-    this.chain[unitPosition].selectedAbilities[abilityPosition] = ability;
+    if (positionInList !== null) {
+      let ability = this.chain[unitPosition].abilities[positionInList];
+      this.chain[unitPosition].selectedAbilities[abilityPosition] = ability;
 
-
-
-    this.updateLocalDebuffs(unitPosition);
-    this.onChangeChain();
-
-
-
-    if (abilityPosition === 0) {
-      this.updateMultipleSkill(unitPosition);
+      if (abilityPosition === 0) {
+        this.updateMultipleSkill(unitPosition);
+        this.assignMultipleSkill(unitPosition);
+      }
+    } else {
+      this.chain[unitPosition].selectedIds.splice(abilityPosition, 1);
+      this.chain[unitPosition].selectedAbilities.splice(abilityPosition, 1);
     }
 
-
+    this.onChangeChain();
   }
 
   onChangeDual(position: number) {
@@ -623,6 +611,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
       this.updateChangedUnit(position, abilities, framesGap);
       this.updateMultipleSkill(position);
+      this.assignMultipleSkill(position);
     }
 
     if (launchChain) {
@@ -630,7 +619,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     this.updateDuplicatePossibilities();
-    //console.log(this.chain[position])
   }
 
   addAbility(unitPosition: number, abilityPosition: number) {
@@ -641,14 +629,32 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain[unitPosition].selectedAbilities[abilityPosition] = this.chain[unitPosition].abilities[newAbilityPosition];
     this.chain[unitPosition].selectedAbilities[abilityPosition].name = 'Ability ' + this.chain[unitPosition].abilities.length;
 
-    this.updateLocalDebuffs(unitPosition);
     this.saveUnit(unitPosition);
+    this.updateMultipleSkill(unitPosition);
   }
 
   removeAbility(unitPosition: number, abilityPosition: number) {
-    this.chain[unitPosition].abilities.splice(abilityPosition, 1); // To check
-    this.chain[unitPosition].selectedAbilities[abilityPosition] = this.chain[unitPosition].abilities[0];
-    this.updateLocalDebuffs(unitPosition);
+    let abilityId = this.chain[unitPosition].selectedIds[abilityPosition];
+    this.chain[unitPosition].abilities.splice(this.findPositionOfAbilityById(this.chain[unitPosition], abilityId), 1);
+
+    let indexToRemove = [];
+    this.chain[unitPosition].selectedAbilities.forEach((ability, index) => {
+      if (ability.id === abilityId) {
+        if (index === 0) {
+          this.chain[unitPosition].selectedAbilities[0] = this.chain[unitPosition].abilities[0];
+          this.chain[unitPosition].selectedIds[0] = this.chain[unitPosition].abilities[0].id;
+        } else {
+          indexToRemove.unshift(index);
+        }
+      }
+    });
+
+    indexToRemove.forEach(index => {
+      this.chain[unitPosition].selectedIds.splice(index, 1);
+      this.chain[unitPosition].selectedAbilities.splice(index, 1);
+    });
+
+    this.updateMultipleSkill(unitPosition);
     this.saveUnit(unitPosition);
   }
 
@@ -702,6 +708,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.changeMultiSelectDropdown();
       this.calculateMaxFramesGap();
     }
+    console.log(this.chain)
   }
 
   findBestFrames(type: string) {
@@ -716,22 +723,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.onChangeChain();
 
     this.angulartics.eventTrack.next({ action: 'findBestFrames_' + type, properties: { category: 'chain' }});
-  }
-
-  async saveRequest() {
-    let request = await this.backService.saveRequest(this.chain, false);
-    let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
-    savedRequests.unshift(request);
-    this.localStorageService.set('requests', savedRequests);
-
-    if (request.status === 'done') {
-      this.requestAlreadyDone = true;
-      this.requestResult = request.chain;
-    } else {
-      this.requestPosition = request.number;
-    }
-
-    this.angulartics.eventTrack.next({ action: 'saveRequest', properties: { category: 'chain' }});
   }
 
   showResult(type: string) {
@@ -830,5 +821,41 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     return true;
+  }
+
+  getAbility(unitPosition: number, abilityPosition: number) {
+    return this.chain[unitPosition].selectedAbilities[abilityPosition];
+  }
+
+  getAvailableAbilities(unitPosition: number, abilityPosition: number) {
+    if (this.chain[unitPosition].selectedAbilities.length === 0 || abilityPosition === 0) {
+      return this.chain[unitPosition].abilities;
+    } else {
+      return this.chain[unitPosition].possibleMultiple;
+    }
+  }
+
+  getActiveRename(unitPosition: number, abilityPosition: number) {
+    if (this.getAbility(unitPosition, abilityPosition)) {
+      return this.chain[unitPosition].activeRename;
+    } else {
+      return false;
+    }
+  }
+
+  async saveRequest() {
+    let request = await this.backService.saveRequest(this.chain, false);
+    let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+    savedRequests.unshift(request);
+    this.localStorageService.set('requests', savedRequests);
+
+    if (request.status === 'done') {
+      this.requestAlreadyDone = true;
+      this.requestResult = request.chain;
+    } else {
+      this.requestPosition = request.number;
+    }
+
+    this.angulartics.eventTrack.next({ action: 'saveRequest', properties: { category: 'chain' }});
   }
 }

@@ -124,21 +124,6 @@ export class ChainService {
     });
   }
 
-
-  private getDebuffModifier(element: string): number {
-    let modifier = 1;
-
-    this.units.forEach(unit => {
-      unit.selectedAbilities.forEach(ability => {
-        if (ability.debuff[element] && ability.debuff[element] / 100 + 1 > modifier) {
-          modifier = ability.debuff[element] / 100 + 1;
-        }
-      });
-    });
-
-    return modifier;
-  }
-
   private calculateDebuffModifier() {
     this.modifierElements = [];
     this.elements.forEach(element => {
@@ -147,8 +132,9 @@ export class ChainService {
       this.units.forEach(unit => {
         if (unit) {
           unit.selectedAbilities.forEach(ability => {
-            if (unit && ability.debuff[element] && ability.debuff[element] / 100 + 1 > modifier) {
-              modifier = ability.debuff[element] / 100 + 1;
+            let debuff = this.getDebuff(ability, element);
+            if (unit && debuff && debuff / 100 + 1 > modifier) {
+              modifier = debuff / 100 + 1;
             }
           });
         }
@@ -156,6 +142,18 @@ export class ChainService {
 
       this.modifierElements[element] = modifier;
     });
+  }
+
+  private getDebuff(ability: any, element: string) {
+    let debuffValue = null;
+    ability.debuffs.forEach(debuff => {
+      if (debuff.type == element) {
+        debuffValue = debuff.value;
+        return;
+      }
+    });
+
+    return debuffValue;
   }
 
   private calculateTotalDamage() {

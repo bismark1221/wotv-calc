@@ -15,7 +15,7 @@ export class Ability {
   firstHit?: number = 0;
   dualable?: boolean = true;
   elements?: string[] = [];
-  debuff?: any = {};
+  debuffs?: any[] = [];
   type?: string = 'chain';
   magicType?: string = null;
   damage?: string = 'physic';
@@ -40,7 +40,7 @@ export class Ability {
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
     this.dualable = typeof ability.dualable == 'boolean' ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
-    this.debuff = ability.debuff ? ability.debuff : this.debuff;
+    this.debuffs = ability.debuffs ? ability.debuffs : this.debuffs;
 
     this.type = ability.type ? ability.type : this.type;
     this.damage = ability.damage ? ability.damage : this.damage;
