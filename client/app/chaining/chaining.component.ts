@@ -782,7 +782,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.angulartics.eventTrack.next({ action: 'findBestChainers', properties: { category: 'chain' }});
   }
 
-  selectUnit(position: number, unit: any, ability: any, framesGaps: any, launchChain: boolean = true) { // Pass to multiple abilities
+  selectUnit(position: number, unit: any, abilities: any, framesGaps: any, launchChain: boolean = true) { // Pass to multiple abilities
     this.chain.forEach((chainer, index) => {
       chainer.framesGap = framesGaps[index];
     })

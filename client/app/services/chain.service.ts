@@ -75,10 +75,11 @@ export class ChainService {
   private calculateUnitHits(unit: any) {
     let unitHits = [];
     let countFrames = unit.framesGap;
-    let dualCountFrames = unit.framesGap;
+    let startFrames = unit.framesGap;
     unit.selectedAbilities.forEach((ability, index) => {
       if (index > 0) {
-        countFrames = unit.framesGap + ability.offset + ability.castTime; // To rework !!!!
+        startFrames += ability.offset + ability.castTime;
+        countFrames = startFrames;
       }
 
       ability.framesList.split('-').forEach((hit, i) => {
@@ -86,8 +87,8 @@ export class ChainService {
         unitHits.push({frame: countFrames, type: index, damage: ability.hitDamage[i], abilityIndex: index});
       });
 
-      if (unit.dual && ability.dualable && index === 0) {
-        countFrames = unit.framesGap + ability.offset + ability.castTime; // To rework !!!!
+      if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
+        countFrames = startFrames + ability.offset + ability.castTime;
         ability.framesList.split('-').forEach((hit, i) => {
           countFrames += Number(hit);
           unitHits.push({frame: countFrames, type: index + 1, damage: ability.hitDamage[i], abilityIndex: index});
