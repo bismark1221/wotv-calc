@@ -448,7 +448,7 @@ export const UNITS: any[] = [
         type: 'finish',
         framesList: '0',
         firstHit: 110,
-        castTime: 40, //"effect_frames": [[0, 0, 40]],
+        castTime: 40,
         offset: 16,
         base: 200,
         ignore: 50,
@@ -790,7 +790,8 @@ export const UNITS: any[] = [
             value: 75,
           }
         ],
-        damage: 'magic'
+        damage: 'magic',
+        dualable: false
       },
       {
         id: 2,
@@ -809,10 +810,10 @@ export const UNITS: any[] = [
         offset: 0,
         base: 320,
         ignore: 25,
-        damage: 'magic'
-      },
-    ],
-    dual: false
+        damage: 'magic',
+        dualable: false
+      }
+    ]
   },
   {
     id: 11,
@@ -1101,7 +1102,9 @@ export const UNITS: any[] = [
         offset: 16,
         base: 280,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 2,
@@ -1125,7 +1128,8 @@ export const UNITS: any[] = [
         dualable: false,
         damage: 'magic'
       }
-    ]
+    ],
+    multipleBlack: 2
   },
   {
     id: 17,
@@ -1777,7 +1781,9 @@ export const UNITS: any[] = [
         offset: 16,
         base: 280,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 2,
@@ -1823,7 +1829,8 @@ export const UNITS: any[] = [
         dualable: false,
         damage: 'magic'
       }
-    ]
+    ],
+    multipleBlack: 2
   },
   {
     id: 28,
@@ -1867,7 +1874,7 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 320,
+        base: 320
       },
       {
         id: 3,
@@ -1900,7 +1907,7 @@ export const UNITS: any[] = [
         firstHit: 42,
         castTime: 40,
         offset: 16,
-        base: 450,
+        base: 450
       },
       {
         id: 5,
@@ -1964,9 +1971,12 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       }
-    ]
+    ],
+    multipleBlack: 2
   },
   {
     id: 30,
@@ -1980,7 +1990,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 500580,
+        id: 500590,
         names: {
           en: 'Chaos Wave',
           fr: 'Onde chaotique',
@@ -1999,7 +2009,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 2,
+        id: 704700,
         names: {
           en: 'Chaos Wave Awakened +2',
           fr: 'Onde chaotique - Év. +2',
@@ -2014,7 +2024,8 @@ export const UNITS: any[] = [
         offset: 12,
         base: 420,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        dualable: false
       },
       {
         id: 3,
@@ -2033,7 +2044,9 @@ export const UNITS: any[] = [
         offset: 16,
         base: 280,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 4,
@@ -2055,7 +2068,12 @@ export const UNITS: any[] = [
         damage: 'magic',
         dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      500590: 2,
+      704700: 2
+    },
+    multipleBlack: 2,
   },
   {
     id: 31,
@@ -2714,7 +2732,9 @@ export const UNITS: any[] = [
         offset: 16,
         base: 250,
         ignore: 25,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 2,
@@ -2734,7 +2754,9 @@ export const UNITS: any[] = [
         offset: 16,
         base: 300,
         ignore: 25,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 3,
@@ -2753,7 +2775,9 @@ export const UNITS: any[] = [
         offset: 0,
         base: 280,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 4,
@@ -2774,7 +2798,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'earth'
-        ]
+        ],
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 5,
@@ -2795,7 +2821,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'wind'
-        ]
+        ],
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 6,
@@ -2816,7 +2844,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'water'
-        ]
+        ],
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 7,
@@ -2837,7 +2867,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'lightning'
-        ]
+        ],
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 8,
@@ -2858,7 +2890,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'ice'
-        ]
+        ],
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 9,
@@ -2879,7 +2913,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'fire'
-        ]
+        ],
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 10,
@@ -2915,9 +2951,12 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 16,
         base: 190,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       }
-    ]
+    ],
+    multipleBlack: 2
   },
   {
     id: 43,
@@ -3274,6 +3313,7 @@ export const UNITS: any[] = [
           es: 'Dagas bumerán (Max)'
         },
         type: 'finish',
+        damage: "magic",
         framesList: '0',
         firstHit: 120,
         castTime: 40,
@@ -3291,6 +3331,7 @@ export const UNITS: any[] = [
           es: 'Dagas bumerán +2 (Max)'
         },
         type: 'finish',
+        damage: "magic",
         framesList: '0',
         firstHit: 120,
         castTime: 40,
@@ -3311,7 +3352,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 910225,
         names: {
           en: 'Blood Pulsar',
           fr: 'Pulsar de sang',
@@ -3326,10 +3367,11 @@ export const UNITS: any[] = [
         castTime: 30,
         offset: 16,
         base: 650,
-        damage: 'magic'
+        damage: 'magic',
+        dualable: false
       },
       {
-        id: 2,
+        id: 910228,
         names: {
           en: 'Blood Rend',
           fr: 'Déchirure sanglante',
@@ -3347,10 +3389,11 @@ export const UNITS: any[] = [
         elements: [
           'water'
         ],
-        damage: 'magic'
+        damage: 'magic',
+        dualable: false
       },
       {
-        id: 3,
+        id: 401001806,
         names: {
           en: 'Blood Hydra',
           tw: '赤血九頭龍',
@@ -3371,7 +3414,11 @@ export const UNITS: any[] = [
         damage: 'magic',
         dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      910225: 2,
+      910228: 2
+    }
   },
   {
     id: 56,
@@ -3836,9 +3883,8 @@ export const UNITS: any[] = [
         ignore: 25,
         damage: 'magic',
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 65,
@@ -3869,8 +3915,11 @@ export const UNITS: any[] = [
         base: 510,
         ignore: 25,
         damage: 'magic',
-      },
+        dualable: false,
+        magicType: 'black'
+      }
     ],
+    multipleBlack: 2
   },
   {
     id: 66,
@@ -3984,12 +4033,7 @@ export const UNITS: any[] = [
       },
     ],
     multiSkills: {
-      910514: 2,
-      910515: 2,
-      910516: 2,
-      910517: 2,
       910520: 2,
-      910522: 2,
       910526: 2
     },
     multipleBlack: 3,
@@ -4071,7 +4115,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 910537,
         names: {
           en: 'Illusion - Phantasmal Forces',
           fr: 'Illusion - Forces fantasmagorique',
@@ -4087,8 +4131,12 @@ export const UNITS: any[] = [
         offset: 16,
         base: 600,
         damage: 'magic',
-      },
+        dualable: false,
+      }
     ],
+    multiSkills: {
+      910537: 2
+    }
   },
   {
     id: 69,
@@ -4144,9 +4192,8 @@ export const UNITS: any[] = [
           'water'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 70,
@@ -4202,9 +4249,8 @@ export const UNITS: any[] = [
           'fire'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 71,
@@ -4238,9 +4284,8 @@ export const UNITS: any[] = [
           'ice'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 72,
@@ -4274,9 +4319,8 @@ export const UNITS: any[] = [
           'dark'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 73,
@@ -4310,9 +4354,8 @@ export const UNITS: any[] = [
           'lightning'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 74,
@@ -4346,9 +4389,8 @@ export const UNITS: any[] = [
           'earth'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 75,
@@ -4382,9 +4424,8 @@ export const UNITS: any[] = [
           'wind'
         ],
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 76,
@@ -4415,9 +4456,8 @@ export const UNITS: any[] = [
         base: 20000,
         damage: 'physic',
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 77,
@@ -4448,9 +4488,8 @@ export const UNITS: any[] = [
         base: 30000,
         damage: 'magic',
         dualable: false
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 78,
@@ -4600,7 +4639,9 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 2,
@@ -4658,7 +4699,8 @@ export const UNITS: any[] = [
         damage: 'magic',
         dualable: false
       }
-    ]
+    ],
+    multipleBlack: 2
   },
   {
     id: 80,
@@ -5004,7 +5046,9 @@ export const UNITS: any[] = [
         elements: [
           'earth'
         ],
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 3,
@@ -5027,8 +5071,9 @@ export const UNITS: any[] = [
         damage: 'magic',
         type: 'finish',
         dualable: false
-      },
-    ]
+      }
+    ],
+    multipleBlack: 2
   },
   {
     id: 85,
@@ -5040,7 +5085,6 @@ export const UNITS: any[] = [
       de: 'Cloud',
       es: 'Cloud'
     },
-    dual: false,
     abilities: [
       {
         id: 1,
@@ -5117,7 +5161,8 @@ export const UNITS: any[] = [
           min: -360
         }
       },
-    ]
+    ],
+    dual: false
   },
   {
     id: 86,
@@ -5202,7 +5247,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 910610,
         names: {
           en: 'Jinx - Emberfrost Brew',
           tw: '惡兆 - 烈火將至',
@@ -5231,10 +5276,11 @@ export const UNITS: any[] = [
             type: 'ice',
             value: 50,
           }
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 2,
+        id: 910611,
         names: {
           en: 'Jinx - Geysershock Brew',
           tw: '惡兆 - 暴雪將至',
@@ -5263,10 +5309,11 @@ export const UNITS: any[] = [
             type: 'water',
             value: 50,
           }
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 3,
+        id: 910613,
         names: {
           en: 'Jinx - Cycloseismic Brew',
           tw: '惡兆 - 泥流將至',
@@ -5295,9 +5342,15 @@ export const UNITS: any[] = [
             type: 'earth',
             value: 50,
           }
-        ]
+        ],
+        dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      910610: 2,
+      910611: 2,
+      910613: 2
+    }
   },
   {
     id: 88,
@@ -5336,7 +5389,7 @@ export const UNITS: any[] = [
         }
       },
       {
-        id: 2,
+        id: 910652,
         names: {
           en: 'Absolute Zero',
           tw: '極限零凍',
@@ -5355,9 +5408,10 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
+        dualable: false
       },
       {
-        id: 3,
+        id: 910653,
         names: {
           en: 'Absolute Zero (Max)',
           tw: '極限零凍 (Max)',
@@ -5376,9 +5430,10 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
+        dualable: false
       },
       {
-        id: 4,
+        id: 910654,
         names: {
           en: 'Snow Burial',
           tw: '冰雪葬',
@@ -5397,6 +5452,7 @@ export const UNITS: any[] = [
         elements: [
           'ice'
         ],
+        dualable: false
       },
       {
         id: 5,
@@ -5420,7 +5476,12 @@ export const UNITS: any[] = [
         ],
         dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      910652: 2,
+      910653: 2,
+      910654: 2
+    }
   },
   {
     id: 89,
@@ -5511,7 +5572,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 910751,
         names: {
           en: 'Focus Magic - Piercing Shot',
           tw: '魔法聚集-穿刺',
@@ -5529,10 +5590,11 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'ice'
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 2,
+        id: 910752,
         names: {
           en: 'Focus Magic - Water Shot',
           tw: '魔法聚集-水擊',
@@ -5549,10 +5611,11 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'water'
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 3,
+        id: 910757,
         names: {
           en: 'Focus Magic - Frostbite (Max)',
           tw: '魔法聚集-凍傷 (Max)',
@@ -5570,10 +5633,11 @@ export const UNITS: any[] = [
         type: 'finish',
         elements: [
           'ice'
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 4,
+        id: 910709,
         names: {
           en: 'Aquatic Implosion',
           tw: '水波聚爆',
@@ -5595,7 +5659,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 5,
+        id: 910759,
         names: {
           en: 'Icicle Press',
           tw: '冰雪重壓',
@@ -5623,7 +5687,12 @@ export const UNITS: any[] = [
         ],
         dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      910751: 3,
+      910752: 3,
+      910757: 3
+    }
   },
   {
     id: 92,
@@ -6290,7 +6359,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 219330,
         names: {
           en: 'Quick Thunder\'s Light',
           tw: '迅・雷光',
@@ -6314,10 +6383,11 @@ export const UNITS: any[] = [
             type: 'lightning',
             value: 50
           }
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 2,
+        id: 219340,
         names: {
           en: 'Quick Bright Flash',
           tw: '迅・光閃',
@@ -6341,10 +6411,11 @@ export const UNITS: any[] = [
             type: 'light',
             value: 50
           }
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 3,
+        id: 219350,
         names: {
           en: 'Quick Blighted Gloom',
           tw: '迅・冥暗',
@@ -6368,10 +6439,11 @@ export const UNITS: any[] = [
             type: 'dark',
             value: 50
           }
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 4,
+        id: 219490,
         names: {
           en: 'Quick Rebel Intention',
           tw: '迅・反叛之意',
@@ -6387,10 +6459,11 @@ export const UNITS: any[] = [
         base: 650,
         ignore: 25,
         type: 'finish',
-        damage: 'magic'
+        damage: 'magic',
+        dualable: false
       },
       {
-        id: 5,
+        id: 219320,
         names: {
           en: 'Quick Final Thunder (Max)',
           tw: '迅・終焉轟雷 (Max)',
@@ -6408,10 +6481,11 @@ export const UNITS: any[] = [
         damage: 'magic',
         elements: [
           'lightning'
-        ]
+        ],
+        dualable: false
       },
       {
-        id: 6,
+        id: 100012406,
         names: {
           en: 'Eternal Ray',
           tw: '永恆之光',
@@ -6430,7 +6504,14 @@ export const UNITS: any[] = [
         damage: 'magic',
         dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      219320: 2,
+      219330: 2,
+      219340: 2,
+      219350: 2,
+      219490: 2
+    }
   },
   {
     id: 99,
@@ -6870,7 +6951,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 221400,
         names: {
           en: "Ballistic",
           tw: "扇形彈幕",
@@ -6892,7 +6973,7 @@ export const UNITS: any[] = [
         offset: 16
       },
       {
-        id: 2,
+        id: 221420,
         names: {
           en: "Circular Saw",
           tw: "圓盤鋸",
@@ -6915,7 +6996,7 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
-        id: 3,
+        id: 221430,
         names: {
           en: "Gravity Well",
           tw: "引力波",
@@ -6943,7 +7024,7 @@ export const UNITS: any[] = [
         type: "finish"
       },
       {
-        id: 4,
+        id: 221390,
         names: {
           en: "Recoil",
           tw: "衝擊波",
@@ -6967,7 +7048,7 @@ export const UNITS: any[] = [
         type: "finish"
       },
       {
-        id: 5,
+        id: 221450,
         names: {
           en: "Drillbreaker",
           tw: "破壞鑽頭",
@@ -6991,7 +7072,7 @@ export const UNITS: any[] = [
         type: "finish"
       },
       {
-        id: 6,
+        id: 215000706,
         names: {
           en: "Trigger-Happy",
           tw: "連發射擊",
@@ -7013,7 +7094,13 @@ export const UNITS: any[] = [
         base: 800,
         dualable: false
       }
-    ]
+    ],
+    multiSkills: {
+      221420: 2,
+      221430: 2,
+      221390: 2,
+      221450: 2
+    }
   },
   {
     id: 103,
@@ -7631,9 +7718,8 @@ export const UNITS: any[] = [
         firstHit: 120,
         framesList: "0",
         offset: 8
-      },
-    ],
-    dual: false
+      }
+    ]
   },
   {
     id: 109,
@@ -8189,7 +8275,9 @@ export const UNITS: any[] = [
         offset: 0,
         base: 280,
         ignore: 50,
-        damage: 'magic'
+        damage: 'magic',
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 4,
@@ -8248,6 +8336,7 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
+    multipleBlack: 2
   },
   {
     id: 111,
@@ -8283,7 +8372,9 @@ export const UNITS: any[] = [
         framesList: "0",
         offset: 16,
         base: 600,
-        type: "finish"
+        type: "finish",
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 2,
@@ -8308,7 +8399,9 @@ export const UNITS: any[] = [
         framesList: "0",
         offset: 16,
         base: 600,
-        type: "finish"
+        type: "finish",
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 3,
@@ -8333,7 +8426,9 @@ export const UNITS: any[] = [
         framesList: "0",
         offset: 16,
         base: 600,
-        type: "finish"
+        type: "finish",
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 4,
@@ -8358,7 +8453,9 @@ export const UNITS: any[] = [
         framesList: "0",
         offset: 16,
         base: 600,
-        type: "finish"
+        type: "finish",
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 5,
@@ -8387,7 +8484,9 @@ export const UNITS: any[] = [
         firstHit: 133,
         framesList: "0-12-12-12-12-12-12-12-12-12-12-12",
         offset: 16,
-        base: 250
+        base: 250,
+        magicType: 'black',
+        dualable: false
       },
       {
         id: 6,
@@ -8413,7 +8512,8 @@ export const UNITS: any[] = [
         ignore: 50,
         dualable: false
       }
-    ]
+    ],
+    multipleBlack: 2
   },
   {
     id: 112,
@@ -8473,8 +8573,8 @@ export const UNITS: any[] = [
         base: 2000,
         type: "finish",
         dualable: false
-      },
-    ],
+      }
+    ]
   },
   {
     id: 113,
@@ -8740,7 +8840,7 @@ export const UNITS: any[] = [
         ignore: 50,
         dualable: false
       }
-    ],
+    ]
   },
   {
     id: 115,
@@ -9375,33 +9475,6 @@ export const UNITS: any[] = [
     abilities: [
       {
         id: 1,
-        names: {
-          en: "Flames of Rebirth (1)",
-          tw: "轉生之炎 (1)",
-          kr: "윤회의 불꽃 (1)",
-          fr: "Feu résurrecteur (1)",
-          de: "Reinkarnationsflamme (1)",
-          es: "Llamas del renacer (1)"
-        },
-        hitDamage: [
-          100
-        ],
-        castTime: 0,
-        elements: [
-          "fire"
-        ],
-        debuffs: [],
-        dualable: false,
-        type: 'finish',
-        ignore: 0,
-        damage: "magic",
-        base: 2050,
-        firstHit: 110,
-        framesList: "0",
-        offset: 8
-      },
-      {
-        id: 2,
         names: {
           en: "Flames of Rebirth (2)",
           tw: "轉生之炎 (2)",

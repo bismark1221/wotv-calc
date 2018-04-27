@@ -166,7 +166,7 @@ export class JsonComponent implements OnInit {
       damage: null,
       magicType: ability.magic_type ? ability.magic_type.toLowerCase() : null,
       elements: [],
-      debuff: {},
+      debuffs: [],
       dualable: false
     };
 
@@ -176,14 +176,14 @@ export class JsonComponent implements OnInit {
       });
     }
 
-    if (ability.type === "ABILITY" && ability.attack_type === "Physical") {
+    if (ability.type === "ABILITY" && (ability.attack_type === "Physical" || ability.attack_type === "Hybrid")) {
       this.ffbeChainUnits[unitId].abilities[id].dualable = true;
     }
 
     this.updateFrames(unitId, id, ability);
     this.updateOffset(unitId, id, ability);
     this.updateDamage(unitId, id, ability);
-    this.updateDebuff(unitId, id, ability);
+    this.updateDebuffs(unitId, id, ability);
     this.unlockSkill(unitId, ability, dataId);
     this.isMultipleCastAbility(unitId, ability);
 
@@ -306,6 +306,13 @@ export class JsonComponent implements OnInit {
     }
 
     // magic with upgrade : [2, 1, 72, [0,  0,  150,  100,  100,  5]]
+    effect = this.findEffect(ability, 1, 1, 72);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2] + effect[4] * effect[5];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
+      return;
+    }
+
     effect = this.findEffect(ability, 2, 1, 72);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2] + effect[4] * effect[5];
@@ -354,7 +361,7 @@ export class JsonComponent implements OnInit {
     }
   }
 
-  private updateDebuff(unitId, id, ability) {
+  private updateDebuffs(unitId, id, ability) {
     // [2, 1, 33, [-50,  0,  0,  0,  0,  0,  0,  0,  1,  5]]
     // [1, 1, 33, [0,  0,  -60,  0,  0,  0,  0,  0,  1,  5]]
     // fire, ice, lightning, water, wind, earth, light, dark, nbEnemy, nbTurn
@@ -366,7 +373,10 @@ export class JsonComponent implements OnInit {
     if (effect) {
       for (let i = 0; i <= 7; i++) {
         if (effect[i] !== 0) {
-          this.ffbeChainUnits[unitId].abilities[id].debuff[this.debuffElement[i]] = Math.abs(effect[i]);
+          this.ffbeChainUnits[unitId].abilities[id].debuffs.push({
+            type: this.debuffElement[i],
+            value: Math.abs(effect[i])
+          });
         }
       }
     }
@@ -410,7 +420,18 @@ export class JsonComponent implements OnInit {
     // gagne l'accès à un spell qui donne 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
     // Son vrai 5 cast :                           [0, 3, 98, [5,  704290,  1,  704140,  9999,  1,  0]]
     effect = this.findEffect(ability, 0, 3, 98);
+    if (effect && ability.mp_cost === 0) {
+      // check if 1 is array
+      if (Array.isArray(effect[3])) {
+        effect[3].forEach(skillId => {
+          this.ffbeChainUnits[unitId].multiSkills[skillId] = effect[0];
+        })
+      } else {
+        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = effect[0];
+      }
+    }
 
+    effect = this.findEffect(ability, 0, 3, 53);
     if (effect && ability.mp_cost === 0) {
       // check if 1 is array
       if (Array.isArray(effect[3])) {
@@ -442,6 +463,15 @@ export class JsonComponent implements OnInit {
 
     // [1, 1, 99, [[2,  2], [503890,  503910], 2, 503900, 2, 503890]]
     effect = this.findEffect(ability, 1, 1, 99);
+    if (effect) {
+      for (let i = 2; i < effect.length; i++) {
+        if (effect[i] !== 2) {
+          this.addSkill(unitId, this.skills[effect[i]], effect[i]);
+        }
+      }
+    }
+
+    effect = this.findEffect(ability, 0, 3, 99);
     if (effect) {
       for (let i = 2; i < effect.length; i++) {
         if (effect[i] !== 2) {
@@ -589,7 +619,7 @@ export class JsonComponent implements OnInit {
       hitDamage: ability.attack_damage[0],
       castTime: ability.effect_frames[0][0],
       elements: [],
-      debuff: {},
+      debuffs: {},
       dualable: false,
       ignore: 0,
       type: 'finish',
