@@ -789,7 +789,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     unit.framesGap = framesGaps[position]
 
     this.selectedUnits[position] = unit;
-    this.onChangeUnit(position, unit.id, [this.findPositionOfAbility(unit, ability)], framesGaps[position], launchChain);
+    //this.onChangeUnit(position, unit.id, [this.findPositionOfAbility(unit, ability)], framesGaps[position], launchChain);
   }
 
   canFindBestChainers(position: number) :boolean {
