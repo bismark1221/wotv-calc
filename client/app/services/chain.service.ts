@@ -55,6 +55,7 @@ export class ChainService {
         unit.framesGap = unit.framesGap ? unit.framesGap : 0;
         unit.index = index;
         unit.frames = this.calculateUnitHits(unit);
+        unit.abilitiesType = this.getAbilitiesType(unit);
         this.chainers.push(unit);
       }
     });
@@ -68,7 +69,6 @@ export class ChainService {
 
     this.hitsDataSubject.next(this.hits);
     this.unitsDataSubject.next(this.units);
-    console.log(this.units)
   }
 
   // Once Upon A Time
@@ -97,6 +97,19 @@ export class ChainService {
     });
 
     return unitHits;
+  }
+
+  private getAbilitiesType(unit: any): string {
+    let type = "finish";
+
+    unit.selectedAbilities.forEach(ability => {
+      if (ability.type === "chain") {
+        type = "chain";
+        return;
+      }
+    });
+
+    return type;
   }
 
   private getElements() {
@@ -289,7 +302,7 @@ export class ChainService {
 
     this.hits[this.nbHits] = {
       unitName: unitName,
-      unitType: unit.selectedAbilities[hit.abilityIndex].type,
+      unitType: unit.abilitiesType,
       hit: hit.frame,
       damage: hit.damage,
       type: type,

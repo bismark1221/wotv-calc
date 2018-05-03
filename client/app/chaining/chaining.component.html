@@ -239,25 +239,12 @@
             <button class="btn btn-secondary btnOptions" type="button" (click)="showOptions(options, i)">
               <i class="fa fa-cog pointer" aria-hidden="true"></i>
             </button>
-            <!-- <select class="form-control" id="chainer{{i}}_ability_0" [(ngModel)]="chain[i].selectedIds[0]" (ngModelChange)="onChangeSkill(i, 0)">
-              <option *ngFor="let unitAbility of chain[i].abilities" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
-            </select> -->
-
-
-
-
 
             <div *ngFor="let abilityIndex of chain[i].castNumber">
               <select class="form-control" id="chainer{{i}}_ability_{{abilityIndex}}" [(ngModel)]="chain[i].selectedIds[abilityIndex]" (ngModelChange)="onChangeSkill(i, abilityIndex)">
                 <option *ngFor="let unitAbility of getAvailableAbilities(i, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
               </select>
             </div>
-
-
-
-
-
-
           </div>
 
           <div *ngIf="chain[i].id === 'unselect'">
@@ -424,6 +411,6 @@
 <div class="row littleMarginTop" *ngIf="availableDuplicate.length > 0">
   <div class="selectDetailZone">
     <h2>{{ 'chain.label.macro' | translate }}</h2>
-    <!-- <app-macro></app-macro> -->
+    <app-macro></app-macro>
   </div>
 </div>

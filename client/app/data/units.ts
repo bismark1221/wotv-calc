@@ -4036,7 +4036,7 @@ export const UNITS: any[] = [
       910520: 2,
       910526: 2
     },
-    multipleBlack: 3,
+    multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
   },

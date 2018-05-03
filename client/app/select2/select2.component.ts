@@ -78,34 +78,31 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
       return;
     }
 
+    console.log(changes)
+
     if(changes['data']) {
-      this.initPlugin();
+      if (!changes['data'].previousValue) {
+        this.initPlugin();
 
-      let newValue: string = this.element.val();
-      if (changes['value']) {
-        newValue = changes['value'].currentValue;
-        this.positionSelected[this.position] = newValue;
-      } else if (this.positionSelected[this.position]) {
-        newValue = this.positionSelected[this.position];
+        let newValue: string = this.element.val();
+        if (changes['value']) {
+          newValue = changes['value'].currentValue;
+          this.positionSelected[this.position] = newValue;
+        } else if (this.positionSelected[this.position]) {
+          newValue = this.positionSelected[this.position];
+        }
+
+        this.setElementValue(newValue);
+        this.valueChanged.emit({
+          value: newValue,
+          data: this.element.select2('data')
+        });
       }
-
-      this.setElementValue(newValue);
-      this.valueChanged.emit({
-        value: newValue,
-        data: this.element.select2('data')
-      });
-    }
-
-    if(changes['value']) {
+    } else if(changes['value']) {
       const newValue: string = changes['value'].currentValue;
 
       this.setElementValue(newValue);
       this.positionSelected[this.position] = newValue;
-
-      this.valueChanged.emit({
-        value: newValue,
-        data: this.element.select2('data')
-      });
     }
 
     if(changes['disabled'] && changes['disabled'].previousValue !== changes['disabled'].currentValue) {
@@ -136,6 +133,7 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
         });
         return;
       }
+
       this.valueChanged.emit({
         value: this.element.val(),
         data: this.element.select2('data')
