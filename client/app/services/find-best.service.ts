@@ -64,11 +64,21 @@ export class FindBestService {
           this.chainUnitsHits[unitIndex] = [];
           unit.index = index;
           unit.unitIndex = unitIndex;
-          unit.minFrame = unit.ability.range.min;
+          unit.abilitiesType = "finish";
+          unit.minFrame = 0;
+          unit.maxFrame = 20;
 
-          if (unit.ability.type === 'chain') {
+          unit.selectedAbilities.forEach(ability => {
+            if (ability.type === "chain") {
+              unit.abilitiesType = "chain";
+              return;
+            }
+            unit.minFrame = ability.range.min > unit.minFrames ? ability.range.min : unit.minFrame;
+            unit.maxFrame = ability.range.max > unit.maxFrames ? ability.range.max : unit.maxFrame;
+          });
+
+          if (unit.abilitiesType === 'chain') {
             this.chainersHits.push([]);
-            unit.maxFrame = unit.ability.range.max;
             unit.chainerIndex = chainerIndex;
             this.chainers.push(unit);
             chainerIndex++;
@@ -77,12 +87,12 @@ export class FindBestService {
               this.calculateUnitHits(unit, unitIndex, i, 'chainer');
             }
           } else {
-            this.calculateUnitHits(unit, unitIndex, unit.ability.range.min);
+            this.calculateUnitHits(unit, unitIndex, unit.minFrame);
             this.finishers.push(unit);
           }
 
           this.chainUnits.push(unit);
-          unit.frames = this.chainUnitsHits[unitIndex][unit.ability.range.min];
+          unit.frames = this.chainUnitsHits[unitIndex][unit.minFrame];
           unitIndex++;
         }
       });
@@ -127,20 +137,28 @@ export class FindBestService {
   // Once Upon A Time
   private calculateUnitHits(unit: any, unitPosition: number, framesGap: number, type: string = 'unit') {
     this.chainUnitsHits[unitPosition][framesGap] = [];
-    let countFrames = 0 + framesGap;
-    let dualCountFrames = unit.ability.offset + unit.ability.castTime + framesGap;
+    let countFrames = framesGap;
+    let startFrames = framesGap;
 
-    unit.ability.framesList.split('-').forEach((hit, index) => {
-      countFrames += Number(hit);
-      this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: 'classic', damage: unit.ability.hitDamage[index]});
-    });
+    unit.selectedAbilities.forEach((ability, index) => {
+      if (index > 0) {
+        startFrames += ability.offset + ability.castTime;
+        countFrames = startFrames;
+      }
 
-    if (unit.dual && unit.ability.dualable) {
-      unit.ability.framesList.split('-').forEach((hit, index) => {
-        dualCountFrames += Number(hit);
-        this.chainUnitsHits[unitPosition][framesGap].push({frame: dualCountFrames, type: 'dual', damage: unit.ability.hitDamage[index]});
+      ability.framesList.split('-').forEach((hit, i) => {
+        countFrames += Number(hit);
+        this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: index, damage: ability.hitDamage[i], abilityIndex: index});
       });
-    }
+
+      if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
+        countFrames = startFrames + ability.offset + ability.castTime;
+        ability.framesList.split('-').forEach((hit, i) => {
+          countFrames += Number(hit);
+          this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: index + 1, damage: ability.hitDamage[i], abilityIndex: index});
+        });
+      }
+    });
 
     if (type === 'chainer') {
       this.chainersHits[unit.chainerIndex][framesGap] = this.chainUnitsHits[unitPosition][framesGap];
@@ -158,18 +176,20 @@ export class FindBestService {
       if (unit) {
         let elements = [];
 
-        if (unit.ability.damage === 'physic') {
-          unit.weapons.forEach(weapon => {
-            if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
-              elements.push(weapon);
+        unit.selectedAbilities.forEach(ability => {
+          if (ability.damage === 'physic') {
+            unit.weapons.forEach(weapon => {
+              if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
+                elements.push(weapon);
+              }
+            });
+          }
+
+          ability.elements.forEach(element => {
+            if (element !== '' && elements.findIndex(x => x === element) === -1) {
+              elements.push(element);
             }
           });
-        }
-
-        unit.ability.elements.forEach(element => {
-          if (element !== '' && elements.findIndex(x => x === element) === -1) {
-            elements.push(element);
-          }
         });
 
         unit.elements = elements;
@@ -183,8 +203,13 @@ export class FindBestService {
       let modifier = 1;
 
       this.units.forEach(unit => {
-        if (unit && unit.ability.debuff[element] && unit.ability.debuff[element] / 100 + 1 > modifier) {
-          modifier = unit.ability.debuff[element] / 100 + 1;
+        if (unit) {
+          unit.selectedAbilities.forEach(ability => {
+            let debuff = this.getDebuff(ability, element);
+            if (unit && debuff && debuff / 100 + 1 > modifier) {
+              modifier = debuff / 100 + 1;
+            }
+          });
         }
       });
 
@@ -192,19 +217,36 @@ export class FindBestService {
     });
   }
 
+  private getDebuff(ability: any, element: string) {
+    let debuffValue = null;
+    console.log(ability)
+    ability.debuffs.forEach(debuff => {
+      if (debuff.type == element) {
+        debuffValue = debuff.value;
+        return;
+      }
+    });
+
+    return debuffValue;
+  }
+
   private calculateTotalDamage() {
     this.units.forEach(unit => {
       if (unit) {
-        unit.totalDamage = 0;
-        let realIgnore = unit.ability.ignore * 2 / 100 + 1;
+        unit.selectedAbilities.forEach(ability => {
+          let totalDamage = 0;
+          let realIgnore = ability.ignore * 2 / 100 + 1;
 
-        if (unit.elements.length > 0) {
-          unit.elements.forEach(element => {
-            unit.totalDamage += (1 / unit.elements.length) * unit.ability.base * realIgnore * this.modifierElements[element];
-          })
-        } else {
-          unit.totalDamage = unit.ability.base * realIgnore;
-        }
+          if (unit.elements.length > 0) {
+            unit.elements.forEach(element => {
+              totalDamage += (1 / unit.elements.length) * ability.base * realIgnore * this.modifierElements[element];
+            })
+          } else {
+            totalDamage = ability.base * realIgnore;
+          }
+
+          ability.totalDamage = totalDamage;
+        });
       }
     });
   }
@@ -224,6 +266,7 @@ export class FindBestService {
           this.best.modifier.frames[unit.index] = this.frames[index];
         });
         this.best.modifier.hits = this.hits;
+        return;
       }
 
       let combo = Math.max.apply(null, this.combo);
@@ -280,7 +323,7 @@ export class FindBestService {
         } else if (a.frame > b.frame) {
           return 1;
         } else {
-          if (a.type === 'classic') {
+          if (a.type == 0) {
             return -1;
           } else {
             return 1;
@@ -330,13 +373,13 @@ export class FindBestService {
     this.hits[this.nbHits] = hit.frame;
     this.hitsDamage[this.nbHits] = hit.damage;
 
-    this.calculateTotal(unit, combo);
+    this.calculateTotal(unit, combo, hit.abilityIndex);
     this.nbCombo[unitPosition]++;
     this.nbHits++;
     this.lastHitter = unitPosition;
   }
 
-  private calculateTotal(unit: any, combo: boolean): void {
+  private calculateTotal(unit: any, combo: boolean, abilityIndex: number): void {
     if (combo) {
       let elementsModifier = this.calculateModifierByElements(unit);
       this.multi += 0.1 + elementsModifier;
@@ -355,7 +398,7 @@ export class FindBestService {
     }
 
     this.lastElements = unit.elements;
-    this.total = this.total + ((unit.totalDamage * this.hitsDamage[this.nbHits] / 100) * this.multi);
+    this.total = this.total + ((unit.selectedAbilities[abilityIndex].totalDamage * this.hitsDamage[this.nbHits] / 100) * this.multi);
   }
 
   private calculateModifierByElements(unit: any): number {

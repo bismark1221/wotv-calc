@@ -142,7 +142,7 @@
               [options]="multiElements"
               [settings]="multiElementsSettings"
               [texts]="multiElementsTexts"
-              [(ngModel)]="this.ability.elements"
+              [(ngModel)]="ability.elements"
               (ngModelChange)="saveUnit(viewOptions)">
             </ss-multiselect-dropdown>
           </div>
@@ -252,11 +252,6 @@
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">
               {{ 'chain.button.createUnit' | translate }}
             </button>
-          </div>
-
-          <div *ngIf="chain[i].id !== 'unselect' && viewOptions[i]">
-            <hr class="selectHr"/>
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnitFromPredefined(i)">{{ 'chain.button.cloneUnit' | translate }}</button>
           </div>
 
           <div class="littleMarginTop" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0">

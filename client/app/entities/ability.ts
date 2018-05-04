@@ -1,7 +1,7 @@
 import { TranslateService } from '@ngx-translate/core';
 
 export class Ability {
-  id: number;
+  id: number = 1;
   names: any = {
     en: 'New ability'
   };

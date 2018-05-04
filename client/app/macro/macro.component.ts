@@ -11,8 +11,8 @@ export class MacroComponent implements OnInit {
 
   width: number = 1280;
   height: number = 720;
-  memu: string;
-  nox: string;
+  memu: string = '';
+  nox: string = '';
 
   constructor(private chainService: ChainService) { }
 
@@ -21,10 +21,12 @@ export class MacroComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.chainService.$units.subscribe(units => {
-      this.units = units;
-      this.generateMacro();
-    });
+    this.chainService.$units.subscribe(
+      units => setTimeout(() => {
+        this.units = units;
+        this.generateMacro();
+      }
+    , 0));
   }
 
   updateSize(width: number, height: number) {

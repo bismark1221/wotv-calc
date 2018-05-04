@@ -76,6 +76,7 @@ export class ChainService {
     let unitHits = [];
     let countFrames = unit.framesGap;
     let startFrames = unit.framesGap;
+
     unit.selectedAbilities.forEach((ability, index) => {
       if (index > 0) {
         startFrames += ability.offset + ability.castTime;
@@ -310,8 +311,8 @@ export class ChainService {
       ability: hit.abilityIndex
     };
 
-    this.nbCombo[unitPosition]++;
     this.calculateTotal(unit, combo);
+    this.nbCombo[unitPosition]++;
     this.nbHits++;
     this.lastHitter = unitPosition;
   }

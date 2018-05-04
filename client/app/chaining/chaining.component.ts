@@ -233,9 +233,23 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
     this.requiredElements.forEach(element => {
       this.translateService.get('elements.' + element).subscribe((res: string) => {
-        this.multiElements.push({id: element, name: res});
+        if (!this.isElementTranslated(element)) {
+          this.multiElements.push({id: element, name: res});
+        }
       });
     });
+  }
+
+  private isElementTranslated(element: string): boolean {
+    let result = false;
+
+    this.multiElements.forEach(data => {
+      if (data.id === element) {
+        result = true
+      }
+    });
+
+    return result;
   }
 
   private changeMultiSelectDropdown() {
@@ -555,25 +569,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain[position].selectedAbilities = [this.chain[position].abilities[0]];
 
     this.saveUnit(position);
-
     this.idSelected[position] = this.selectedUnits[position].id;
-    //this.onChangeUnit(position, this.chain[position].id);
 
     this.angulartics.eventTrack.next({ action: 'createNewUnit', properties: { category: 'chain' }});
-  }
-
-  createNewUnitFromPredefined(position: number) {
-    let unit = JSON.parse(JSON.stringify(this.chain[position]));
-    unit.name = 'Unit ' + (this.createdUnits.length + 1);
-    unit.id = undefined;
-
-    this.chain[position] = unit;
-    this.saveUnit(position);
-
-    this.idSelected[position] = this.selectedUnits[position].id;
-    this.onChangeUnit(position, this.chain[position].id);
-
-    this.angulartics.eventTrack.next({ action: 'createNewUnitFromPredefined', properties: { category: 'chain' }});
   }
 
   saveUnit(position: number) {
@@ -646,7 +644,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeUnit(position: number, unitId: any = 'unselect', abilitiesIds: number[] = [], framesGap: number = 0, launchChain: boolean = true) {
-    console.log("CHANGE UNITS")
+    //console.log("CHANGE UNITS")
     this.idSelected[position] = unitId;
 
     if (unitId === 'unselect') {
@@ -761,8 +759,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeChain(): void {
-    console.log("Build Chain")
-    console.log(this.chain)
+    // console.log("Build Chain")
+    // console.log(this.chain)
     this.requestPosition = -1;
     this.requestAlreadyDone = false;
     this.requestResult = [];
@@ -788,20 +786,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.angulartics.eventTrack.next({ action: 'findBestFrames_' + type, properties: { category: 'chain' }});
   }
 
-  showResult(type: string) {
-    let i = 0;
-
-    this.chain.forEach((unit, index) => {
-      if (unit && unit.id !== 'unselect') {
-        unit.framesGap = this.requestResult[type].frames[i];
-        i++;
-      }
-    });
-    this.onChangeChain();
-
-    this.angulartics.eventTrack.next({ action: 'showResult_' + type, properties: { category: 'chain' }});
-  }
-
   findBestChainers(position: number) {
     let chainers = [];
     let allUnits = this.units.concat(this.createdUnits);
@@ -815,11 +799,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
       unit.abilities.forEach(ability => {
         if (ability.type === 'chain') {
-          this.findBestService.units[position].ability = ability; // To adapt...
+          this.findBestService.units[position].selectedAbilities = [ability];
+          // this.chain[unitPosition].selectedIds = [this.chain[unitPosition].selectedIds[0]];
+          // this.updateMultipleSkill(unitPosition);
+
+
+
+
           let result = this.findBestService.findBestFrames();
           chainers.push({
             unit: unit,
-            ability: ability,
             frames: result.modifier.frames,
             modifier: result.modifier.max
           });
@@ -904,6 +893,20 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     } else {
       return false;
     }
+  }
+
+  showResult(type: string) {
+    let i = 0;
+
+    this.chain.forEach((unit, index) => {
+      if (unit && unit.id !== 'unselect') {
+        unit.framesGap = this.requestResult[type].frames[i];
+        i++;
+      }
+    });
+    this.onChangeChain();
+
+    this.angulartics.eventTrack.next({ action: 'showResult_' + type, properties: { category: 'chain' }});
   }
 
   async saveRequest() {

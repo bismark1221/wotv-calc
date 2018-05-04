@@ -9529,7 +9529,7 @@ export const UNITS: any[] = [
         castTime: 32,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuff: [],
         firstHit: 34,
         framesList: "0-26-92",
         offset: 16,
@@ -9554,7 +9554,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuff: [],
         firstHit: 95,
         framesList: "0-10-10-10-10-10-10-10-10-10-10-10-14",
         offset: 8,
@@ -9592,7 +9592,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: {},
+        debuff: [],
         firstHit: 240,
         framesList: "0",
         offset: 16,
@@ -9616,7 +9616,7 @@ export const UNITS: any[] = [
         castTime: 0,
         damage: "physical",
         elements: [],
-        debuff: {},
+        debuff: [],
         firstHit: 149,
         framesList: "0-9-9-9-9",
         offset: 8,

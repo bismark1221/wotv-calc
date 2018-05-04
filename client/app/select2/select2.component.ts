@@ -78,31 +78,22 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
       return;
     }
 
-    console.log(changes)
-
     if(changes['data']) {
-      if (!changes['data'].previousValue) {
-        this.initPlugin();
+      this.initPlugin();
+    }
 
-        let newValue: string = this.element.val();
-        if (changes['value']) {
-          newValue = changes['value'].currentValue;
-          this.positionSelected[this.position] = newValue;
-        } else if (this.positionSelected[this.position]) {
-          newValue = this.positionSelected[this.position];
-        }
+    if(changes['value']) {
+      let newValue = changes['value'].currentValue;
 
-        this.setElementValue(newValue);
+      this.setElementValue(newValue);
+      this.positionSelected[this.position] = newValue;
+
+      if (newValue !== "unselect" && typeof newValue !== "string") {
         this.valueChanged.emit({
           value: newValue,
           data: this.element.select2('data')
         });
       }
-    } else if(changes['value']) {
-      const newValue: string = changes['value'].currentValue;
-
-      this.setElementValue(newValue);
-      this.positionSelected[this.position] = newValue;
     }
 
     if(changes['disabled'] && changes['disabled'].previousValue !== changes['disabled'].currentValue) {

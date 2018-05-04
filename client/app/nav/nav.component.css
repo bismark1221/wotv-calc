@@ -50,15 +50,27 @@
 }
 
 .flag.flag-tw {
-  background-position: 0 -24px;
+    background-position: -48px -24px;
 }
 
-.flag.flag-fr {
-  background-position: 0 0;
+.flag.flag-es {
+    background-position: -24px 0;
 }
 
 .flag.flag-gb {
-  background-position: -24px 0;
+    background-position: 0 -24px;
+}
+
+.flag.flag-fr {
+    background-position: -48px 0;
+}
+
+.flag.flag-de {
+    background-position: 0 0;
+}
+
+.flag.flag-kr {
+    background-position: -24px -24px;
 }
 
 .nav-link-lang {
