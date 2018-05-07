@@ -112,13 +112,15 @@ export class FindBestService {
 
         ['modifier', 'combo'].forEach(type => {
           this.chainUnits.forEach((unit, index) => {
-            if (unit && unit.ability.type === 'finish' && type === 'modifier') {
-              unit.maxFrame = unit.ability.range.max > maxFrames ? unit.ability.range.max : maxFrames;
+            if (unit && unit.abilitiesType === 'finish' && type === 'modifier') {
+              unit.selectedAbilities.forEach(ability => {
+                unit.maxFrame = maxFrames > ability.range.max ? maxFrames : ability.range.max;
+              });
 
               for (let i = unit.minFrame; i <= unit.maxFrame; i++) {
                 this.calculateUnitHits(unit, index, i);
               }
-            } else if (unit && unit.ability.type === 'chain') {
+            } else if (unit && unit.abilitiesType === 'chain') {
               let chainerFrame = this.best[type].frames[unit.index];
               this.frames[index] = chainerFrame;
               unit.frames = this.chainUnitsHits[index][chainerFrame];
@@ -219,7 +221,6 @@ export class FindBestService {
 
   private getDebuff(ability: any, element: string) {
     let debuffValue = null;
-    console.log(ability)
     ability.debuffs.forEach(debuff => {
       if (debuff.type == element) {
         debuffValue = debuff.value;

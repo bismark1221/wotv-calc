@@ -275,13 +275,13 @@
             class="btn btn-secondary fullWidth"
             [ngClass]="{'littleMarginTop': j !== 0}"
             type="button"
-            (click)="selectUnit(i, chainer.unit, chainer.ability, chainer.frames)">
+            (click)="selectUnit(i, chainer.unit, chainer.abilities, chainer.frames)">
             <div class="bestChainerButton">
               {{ chainer.unit.name }}<br />
-              <span>
-                {{ chainer.ability.name }}<br />
-                {{ chainer.modifier }}%
+              <span *ngFor="let ability of chainer.abilities">
+                {{ ability.name }}<br />
               </span>
+              {{ chainer.modifier }}%
             </div>
           </button>
         </div>

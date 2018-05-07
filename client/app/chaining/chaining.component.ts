@@ -187,8 +187,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
       this.positionIds[unit.id] = index;
 
+      if (!unit.multiSkills) {
+        unit.multiSkills = {};
+      }
+
       // Needed to correct old createdUnits
-      unit.abilities.forEach(ability => {
+      unit.abilities.forEach((ability, abilityIndex) => {
         if (this.abilityTypes.findIndex(x => x === ability.type) === -1) {
           ability.damage = ability.type === 'LB' ? 'physic' : ability.type;
           ability.type = 'chain';
@@ -201,12 +205,25 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
           }
         }
 
+        if (!ability.debuffs) {
+          ability.debuffs = [];
+          if (ability.debuff) {
+            Object.keys(ability.debuff).forEach(debuffIndex => {
+              ability.debuffs.push({type: debuffIndex, value: ability.debuff[debuffIndex]});
+            });
+          }
+        }
+
         if (!ability.hitDamage) {
           let frames = ability.framesList.split('-');
           ability.hitDamage = [];
           frames.forEach(hit => {
             ability.hitDamage.push(100 / frames.length);
           });
+        }
+
+        if (!ability.id) {
+          ability.id = abilityIndex + 1000000000
         }
       });
     });
@@ -437,54 +454,58 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     return count;
   }
 
-  private updateMultipleSkill(position: number, autoAssign: boolean = true) {
-    if (this.chain[position].id !== 'unselect' && this.chain[position].selectedAbilities && this.chain[position].selectedAbilities[0]) {
-      this.chain[position].possibleMultiple = [{id: 0}];
+  private updateMultipleSkill(unit: any, autoAssign: boolean = true): any {
+    if (unit.id !== 'unselect' && unit.selectedAbilities && unit.selectedAbilities[0]) {
+      unit.possibleMultiple = [{id: 0}];
       let castNumber = 1;
-      let ability = this.chain[position].selectedAbilities[0];
+      let ability = unit.selectedAbilities[0];
       if (ability.magicType) {
-        if (this.chain[position].multipleBlack > 1) {
-          this.multipleMagic("black", position);
-          castNumber = this.chain[position].multipleBlack;
+        if (unit.multipleBlack > 1) {
+          unit = this.multipleMagic("black", unit);
+          castNumber = unit.multipleBlack;
         }
-        if (this.chain[position].multipleWhite > 1) {
-          this.multipleMagic("white", position);
-          castNumber = castNumber < this.chain[position].multipleWhite ? this.chain[position].multipleWhite : castNumber;
+        if (unit.multipleWhite > 1) {
+          unit = this.multipleMagic("white", unit);
+          castNumber = castNumber < unit.multipleWhite ? unit.multipleWhite : castNumber;
         }
       } else {
-        castNumber = this.multipleAbility(position);
+        castNumber = this.multipleAbility(unit);
       }
 
-      this.chain[position].castNumber = [];
+      unit.castNumber = [];
       for (let i = 0; i < castNumber; i++) {
-        this.chain[position].castNumber.push(i);
+        unit.castNumber.push(i);
         if (i > 0) {
 
         }
       }
 
       if (autoAssign) {
-        this.assignMultipleSkill(position);
+        unit = this.assignMultipleSkill(unit);
       }
     }
+
+    return unit;
   }
 
-  private multipleMagic(magicType: string, position: number) {
-    this.chain[position].abilities.forEach(ability => {
+  private multipleMagic(magicType: string, unit: any): any {
+    unit.abilities.forEach(ability => {
       if (ability.magicType && ability.magicType === magicType) {
-        this.chain[position].possibleMultiple.push(ability);
+        unit.possibleMultiple.push(ability);
       }
     });
+
+    return unit;
   }
 
-  private multipleAbility(position: number) :number {
-    let id = this.chain[position].selectedAbilities[0].id;
+  private multipleAbility(unit: any) :number {
+    let id = unit.selectedAbilities[0].id;
     let castNumber = 1;
-    if (this.chain[position].multiSkills[id]) {
-      castNumber = this.chain[position].multiSkills[id];
-      this.chain[position].abilities.forEach(ability => {
-        if (this.chain[position].multiSkills[ability.id]) {
-          this.chain[position].possibleMultiple.push(ability);
+    if (unit.multiSkills[id]) {
+      castNumber = unit.multiSkills[id];
+      unit.abilities.forEach(ability => {
+        if (unit.multiSkills[ability.id]) {
+          unit.possibleMultiple.push(ability);
         }
       });
     }
@@ -492,15 +513,17 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     return castNumber;
   }
 
-  private assignMultipleSkill(unitPosition: number) {
-    let ability = this.chain[unitPosition].selectedAbilities[0];
+  private assignMultipleSkill(unit: any) {
+    let ability = unit.selectedAbilities[0];
 
-    for(let i = 1; i < this.chain[unitPosition].castNumber.length; i++) {
-      if (!this.chain[unitPosition].selectedIds[i]) {
-        this.chain[unitPosition].selectedIds[i] = ability.id;
-        this.chain[unitPosition].selectedAbilities[i] = JSON.parse(JSON.stringify(ability));
+    for(let i = 1; i < unit.castNumber.length; i++) {
+      if (!unit.selectedIds[i]) {
+        unit.selectedIds[i] = ability.id;
+        unit.selectedAbilities[i] = JSON.parse(JSON.stringify(ability));
       }
     }
+
+    return unit;
   }
 
   private isFirstAbilityMultiple(position: number) :number {
@@ -542,7 +565,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
       if (abilityPosition === 0) {
         this.chain[unitPosition].selectedIds = [this.chain[unitPosition].selectedIds[0]];
-        this.updateMultipleSkill(unitPosition);
+        this.chain[unitPosition] = this.updateMultipleSkill(this.chain[unitPosition]);
       }
     } else {
       for (let i = this.chain[unitPosition].castNumber.length; i >= abilityPosition; i--) {
@@ -664,7 +687,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       }
 
       this.updateChangedUnit(position, abilitiesIds, framesGap);
-      this.updateMultipleSkill(position);
+      this.chain[position] = this.updateMultipleSkill(this.chain[position]);
     }
 
     this.updateDuplicatePossibilities();
@@ -689,7 +712,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename = false;
     this.chain[unitPosition].selectedIds[abilityPosition] = newId;
 
-    this.updateMultipleSkill(unitPosition);
+    this.chain[unitPosition] = this.updateMultipleSkill(this.chain[unitPosition]);
     this.saveUnit(unitPosition);
   }
 
@@ -714,7 +737,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.chain[unitPosition].selectedAbilities.splice(index, 1);
     });
 
-    this.updateMultipleSkill(unitPosition);
+    this.chain[unitPosition] = this.updateMultipleSkill(this.chain[unitPosition]);
     this.saveUnit(unitPosition);
   }
 
@@ -800,8 +823,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       unit.abilities.forEach(ability => {
         if (ability.type === 'chain') {
           this.findBestService.units[position].selectedAbilities = [ability];
-          // this.chain[unitPosition].selectedIds = [this.chain[unitPosition].selectedIds[0]];
-          // this.updateMultipleSkill(unitPosition);
+
+
+
+
+          this.findBestService.units[position].selectedIds = [ability.id];
+          this.findBestService.units[position] = this.updateMultipleSkill(this.findBestService.units[position]);
 
 
 
@@ -809,6 +836,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
           let result = this.findBestService.findBestFrames();
           chainers.push({
             unit: unit,
+            abilities: this.findBestService.units[position].selectedAbilities,
             frames: result.modifier.frames,
             modifier: result.modifier.max
           });
