@@ -588,8 +588,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.selectedUnits[position].activeRename = true;
 
     this.chain[position] = JSON.parse(JSON.stringify(this.selectedUnits[position]));
-    this.chain[position].selectedIds = [0]
+    this.chain[position].selectedIds = [this.chain[position].abilities[0].id]
     this.chain[position].selectedAbilities = [this.chain[position].abilities[0]];
+    this.chain[position].castNumber = [0];
 
     this.saveUnit(position);
     this.idSelected[position] = this.selectedUnits[position].id;
@@ -606,12 +607,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         this.lastCreatedId++;
         this.chain[position].id = this.lastCreatedId;
         this.createdUnits.push(this.chain[position]);
+        this.reloadList();
       }
 
       this.selectedUnits[position] = this.chain[position];
 
       this.localSaveUnits();
-      this.reloadList();
     }
 
     if (this.chain[position].id) {
@@ -667,7 +668,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeUnit(position: number, unitId: any = 'unselect', abilitiesIds: number[] = [], framesGap: number = 0, launchChain: boolean = true) {
-    //console.log("CHANGE UNITS")
     this.idSelected[position] = unitId;
 
     if (unitId === 'unselect') {
@@ -678,7 +678,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         selectedAbilities: []
       };
       this.chainService.units[position] = null;
-    } else {
+    } else if (this.chain[position].id !== unitId) {
       this.viewBestChainers = -1;
       if (unitId < 10000) {
         this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
@@ -782,8 +782,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeChain(): void {
-    // console.log("Build Chain")
-    // console.log(this.chain)
     this.requestPosition = -1;
     this.requestAlreadyDone = false;
     this.requestResult = [];
@@ -862,14 +860,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.angulartics.eventTrack.next({ action: 'findBestChainers', properties: { category: 'chain' }});
   }
 
-  selectUnit(position: number, unit: any, abilities: any, framesGaps: any, launchChain: boolean = true) { // Pass to multiple abilities
+  selectUnit(position: number, unit: any, abilities: any, framesGaps: any, launchChain: boolean = true) {
     this.chain.forEach((chainer, index) => {
       chainer.framesGap = framesGaps[index];
     })
     unit.framesGap = framesGaps[position]
 
     this.selectedUnits[position] = unit;
-    //this.onChangeUnit(position, unit.id, abilities, framesGaps[position], launchChain);
+    let selectedIds = [];
+    abilities.forEach(ability => {
+      selectedIds.push(ability.id);
+    })
+    this.onChangeUnit(position, unit.id, selectedIds, framesGaps[position], launchChain);
   }
 
   canFindBestChainers(position: number) :boolean {
