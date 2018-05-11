@@ -4,7 +4,7 @@
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
         <a class="nav-link" [routerLink]="['/chain']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.chain' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/my-units']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.my' | translate }}</a>
+        <!-- <a class="nav-link" [routerLink]="['/my-units']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.my' | translate }}</a> -->
         <a class="nav-link" [routerLink]="['/how-to']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.how-to' | translate }}</a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>

@@ -11,7 +11,7 @@ import { UnitService } from '../services/unit.service'
 export class HomeComponent {
   lang = 'en';
   markdown = '';
-  updated = [120, 119, 18, 28, 118];
+  updated = [122, 121, 120, 119, 18];
   units = [];
 
   constructor(

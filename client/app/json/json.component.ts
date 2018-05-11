@@ -263,6 +263,13 @@ export class JsonComponent implements OnInit {
       return;
     }
 
+    effect = this.findEffect(ability, 1, 1, 126);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[5] * effect[6];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
     // "effects": ["Critical physical damage (4.95x, ATK) to all enemies"],
     // "effects_raw": [[2, 1, 43, [0,  0,  495,  0]]]},
     effect = this.findEffect(ability, 2, 1, 43);
@@ -321,6 +328,13 @@ export class JsonComponent implements OnInit {
     }
 
     // magic damage with SPR scalling : [2, 1, 103, [100,  99999,  250]]
+    effect = this.findEffect(ability, 1, 1, 103);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
+      return;
+    }
+
     effect = this.findEffect(ability, 2, 1, 103);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
@@ -386,33 +400,33 @@ export class JsonComponent implements OnInit {
     // ==> full dualcast ==> "effects_raw": [0, 3, 45, ["none"]]
     let effect = this.findEffect(ability, 0, 3, 45);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleBlack = 2;
-      this.ffbeChainUnits[unitId].multipleWhite = 2;
-      this.ffbeChainUnits[unitId].multipleGreen = 2;
+      this.ffbeChainUnits[unitId].multipleBlack = 2 > this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
+      this.ffbeChainUnits[unitId].multipleWhite = 2 > this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
+      this.ffbeChainUnits[unitId].multipleGreen = 2 > this.ffbeChainUnits[unitId].multipleGreen ? 2 : this.ffbeChainUnits[unitId].multipleGreen;
     }
 
     // ==> dual black ==> [0, 3, 44, ["none"]]
     effect = this.findEffect(ability, 0, 3, 44);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleBlack = 2;
+      this.ffbeChainUnits[unitId].multipleBlack = 2 > this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
     }
 
     // ==> white magic ==> [0, 3, 52, [2,  2,  XXX]]  &&  [0, 3, 52, [2,  3,  XXX]]  &&  [0, 3, 97, ...]
     effect = this.findEffect(ability, 0, 3, 52);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleWhite = effect[1];
+      this.ffbeChainUnits[unitId].multipleWhite = effect[1] > this.ffbeChainUnits[unitId].multipleWhite ? effect[1] : this.ffbeChainUnits[unitId].multipleWhite;
     }
 
     effect = this.findEffect(ability, 0, 3, 97);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleWhite = 2;
+      this.ffbeChainUnits[unitId].multipleWhite = 2 > this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
     }
 
     // ==> "effects_raw": [0, 3, 1006, [2, [ListSkillIds, ..., ..., ...]]]
     effect = this.findEffect(ability, 0, 3, 1006);
     if (effect) {
       effect[1].forEach(skillId => {
-        this.ffbeChainUnits[unitId].multiSkills[skillId] = effect[0];
+        this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
       });
     }
 
@@ -420,26 +434,27 @@ export class JsonComponent implements OnInit {
     // gagne l'accès à un spell qui donne 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
     // Son vrai 5 cast :                           [0, 3, 98, [5,  704290,  1,  704140,  9999,  1,  0]]
     effect = this.findEffect(ability, 0, 3, 98);
-    if (effect && ability.mp_cost === 0) {
+    if (effect ) {                   // && ability.mp_cost === 0
       // check if 1 is array
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
-          this.ffbeChainUnits[unitId].multiSkills[skillId] = effect[0];
+          this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
         })
       } else {
-        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = effect[0];
+        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = !this.ffbeChainUnits[unitId].multiSkills[effect[3]] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[effect[3]] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[effect[3]];
+        // this.ffbeChainUnits[unitId].multiSkills[effect[3]] = effect[0];
       }
     }
 
     effect = this.findEffect(ability, 0, 3, 53);
-    if (effect && ability.mp_cost === 0) {
+    if (effect) {                   // && ability.mp_cost === 0
       // check if 1 is array
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
-          this.ffbeChainUnits[unitId].multiSkills[skillId] = effect[0];
+          this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
         })
       } else {
-        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = effect[0];
+        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = !this.ffbeChainUnits[unitId].multiSkills[effect[3]] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[effect[3]] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[effect[3]];
       }
     }
   }
@@ -456,9 +471,9 @@ export class JsonComponent implements OnInit {
         this.addSkill(unitId, this.skills[effect[3]], effect[3]);
       }
 
-      if (ability.mp_cost !== 0) {
+      //if (ability.mp_cost !== 0) {
         this.addSkill(unitId, this.skills[effect[1]], effect[1]);
-      }
+      //}
     }
 
     // [1, 1, 99, [[2,  2], [503890,  503910], 2, 503900, 2, 503890]]

@@ -14,7 +14,7 @@ import { JsonComponent } from './json/json.component';
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'chain', component: ChainingComponent },
-  { path: 'my-units', component: MyUnitsComponent },
+  // { path: 'my-units', component: MyUnitsComponent },
   { path: 'requests', component: RequestsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },

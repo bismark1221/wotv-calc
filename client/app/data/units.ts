@@ -9624,5 +9624,363 @@ export const UNITS: any[] = [
         dualable: false
       }
     ]
+  },
+  {
+    id: 121,
+    names: {
+      en: "Lila",
+      tw: "利拉",
+      kr: "리라",
+      fr: "Lila",
+      de: "Lila",
+      es: "Lila"
+    },
+    abilities: [
+      {
+        id: 224660,
+        names: {
+          en: "Martial Arts - Heaven Shift",
+          tw: "格鬥術·操氣天沖",
+          kr: "격투술·조기천충",
+          fr: "Art martial - Chang. céleste",
+          de: "Kampfkunst - Himmlischer Stoß",
+          es: "Artes marciales - Cambio celeste"
+        },
+        hitDamage: [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10
+        ],
+        castTime: 8,
+        damage: "physical",
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 8,
+        framesList: "0-5-5-5-5-5-5-5-7-7-10-10-10-10",
+        offset: 83,
+        base: 1000
+      },
+      {
+        id: 224650,
+        names: {
+          en: "Martial Arts - Overthrow",
+          tw: "格鬥術·操氣滅升",
+          kr: "격투술·조기멸승",
+          fr: "Art martial - Renversement",
+          de: "Kampfkunst - Überwindung",
+          es: "Artes marciales - Llave celeste"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physical",
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 120,
+        framesList: "0",
+        offset: 16,
+        base: 650,
+        type: "finish"
+      },
+      {
+        id: 224670,
+        names: {
+          en: "Martial Arts - Heaven Scar",
+          tw: "格鬥術·操氣裂天",
+          kr: "격투술·조기열천",
+          fr: "Art martial - Cicatrice céleste",
+          de: "Kampfkunst - Himmelsspalter",
+          es: "Artes marciales - Cicatriz celeste"
+        },
+        hitDamage: [
+          15, 15, 15, 55
+        ],
+        castTime: 8,
+        damage: "physical",
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 22,
+        framesList: "0-16-37-81",
+        offset: 16,
+        base: 750
+      },
+      {
+        id: 224680,
+        names: {
+          en: "Martial Arts - Tojin Combo",
+          tw: "格鬥術·鬥神連擊",
+          kr: "격투술·투신연격",
+          fr: "Art martial - Combo Tojin",
+          de: "Kampfkunst - Salve des Kriegsgottes",
+          es: "Artes marciales - Combo Tojin"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 10,
+        framesList: "0-10-10-10-10-10-10",
+        offset: 32,
+        base: 520
+      },
+      {
+        id: 100013806,
+        names: {
+          en: "Flower Barrage",
+          tw: "六華仙裂",
+          kr: "육화선열",
+          fr: "Déluge de fleurs",
+          de: "Blumenbeschuss",
+          es: "Descarga floral"
+        },
+        hitDamage: [
+          15, 10, 10, 10, 10, 10, 10, 10, 15
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 49,
+        framesList: "0-16-16-12-8-15-6-3-54",
+        offset: 8,
+        base: 1240
+      }
+    ],
+    multiSkills: {
+      224650: 3,
+      224660: 3,
+      224670: 3,
+      224680: 3
+    },
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 122,
+    names: {
+      en: "Sephiroth",
+      tw: "賽菲羅斯",
+      kr: "세피로스",
+      fr: "Séphiroth",
+      de: "Sephiroth",
+      es: "Sefirot"
+    },
+    abilities: [
+      {
+        id: 224510,
+        names: {
+          en: "Oblivion",
+          tw: "虛空",
+          kr: "허공",
+          fr: "Chaos",
+          de: "Vergessenheit",
+          es: "Olvido"
+        },
+        hitDamage: [
+          33, 33, 34
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 22,
+        framesList: "0-20-30",
+        offset: 8,
+        base: 360
+      },
+      {
+        id: 224520,
+        names: {
+          en: "The Heavens Wept",
+          tw: "天舞輪迴斬",
+          kr: "천무윤회참",
+          fr: "Affliction céleste",
+          de: "Samsara-Spalter",
+          es: "Furia transmigratoria"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "light",
+            value: 60
+          },
+          {
+            type: "dark",
+            value: 60
+          }
+        ],
+        dualable: true,
+        firstHit: 70,
+        framesList: "0-7-5-7-7-7-7",
+        offset: 16,
+        base: 480
+      },
+      {
+        id: 224550,
+        names: {
+          en: "Black Materia",
+          tw: "黑色魔晶石",
+          kr: "블랙 마테리아",
+          fr: "Matéria noire",
+          de: "Schwarze Materia",
+          es: "Materia negra"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "light",
+            value: 70
+          },
+          {
+            type: "dark",
+            value: 70
+          }
+        ],
+        dualable: false,
+        firstHit: 350,
+        framesList: "0",
+        offset: 16,
+        base: 180,
+        ignore: 50,
+        type: "finish"
+      },
+      {
+        id: 224530,
+        names: {
+          en: "Aeolian Onslaught",
+          tw: "一陣",
+          kr: "일진",
+          fr: "Charge éolienne",
+          de: "Windböe",
+          es: "Cortavientos"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-7-7-7-7-7-7-7-7-7-7-7",
+        offset: 16,
+        base: 500
+      },
+      {
+        id: 224540,
+        names: {
+          en: "Heaven's Light",
+          tw: "天照",
+          kr: "천국의 빛",
+          fr: "Lumière des cieux",
+          de: "Himmelslicht",
+          es: "Luz del cielo"
+        },
+        hitDamage: [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 0,
+        framesList: "0-14-8-8-8-8-8-8-8-8-8-8-8-8-8-6",
+        offset: 80,
+        base: 270,
+        ignore: 50
+      },
+      {
+        id: 224570,
+        names: {
+          en: "Octaslash",
+          tw: "八刀一閃",
+          kr: "팔도일섬",
+          fr: "Octofrappe",
+          de: "Achtstreich",
+          es: "Octacorte"
+        },
+        hitDamage: [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 250,
+        ignore: 50
+      },
+      {
+        id: 207001006,
+        names: {
+          en: "One-Winged Angel",
+          tw: "獨翼天使",
+          kr: "편익의 천사",
+          fr: "Ange à une aile",
+          de: "Einflügliger Engel",
+          es: "Fulgor seráfico"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "light",
+            value: 100
+          },
+          {
+            type: "dark",
+            value: 100
+          }
+        ],
+        dualable: false,
+        firstHit: 220,
+        framesList: "0",
+        offset: 8,
+        base: 600,
+        ignore: 50,
+        type: "finish"
+      }
+    ],
+    multiSkills: {},
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
   }
 ];

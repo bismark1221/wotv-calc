@@ -11,29 +11,36 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
-23/01/2018
+11/05
+- Well, it's been a long time since the last major upgrade... But I'm back with a new system for the simulator, the dual-abilities
+- You can know choose differents abilities during a dualcast or dualabilities
+- You choose the 1st ability and the 2nd one, same as in-game
+- I also add the posibilities to view units' and abilities' translation for all supported language in the data
+- If you find some bug don't hesitate to contact me :)
+
+23/01
  - Hello everyone, As some of you noticed the site has not been updated for 2 weeks :( Really sorry, I changed house, I had to do some work and no internet during 10 days disturbed me a lot ... But I'm back and the site is up to date :)
  - Added the last 2 banners (Balthier, Pyro Glacial Lasswell, ...)
  - Added the latest awakening (Aileen, Vicoria, ...)
 
-04/01/2018
+04/01
  - Happy New Year :)
  - Right now I don't time to adapt the simulator to the triple cast of Kaliva... It should be good in 2 weeks, sorry...
 
-19/12/2017
+19/12
  - Damage dristribution for an ability are now implemented (For exemple Cloud's LB is 5% per hit expect for the last one which is 30%)
 
-04/12/2017
+04/12
  - Only show chainers on the search for best units (because the order for finishers is almost always the same...)
 
-11/11/2017
+11/11
  - Translation for Taiwan (traditional chinese) thanks to [/u/GiveMeZidane]
 
-01/11/2017
+01/11
  - New page to explain how chain really work in game
  - Change how to show options on the simulator (click on the gear)
 
-20/10/2017
+20/10
  - Add translation system for French language (maybe more later)
  - Add espers in the calculator
 

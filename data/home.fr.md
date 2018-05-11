@@ -11,29 +11,35 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
-23/01/2018
+11/05
+- Humm... Quand je regarde cette page je me dis que ça fait quand même longtemps que j'ai pas ajouté de nouvelles fonctionnalités sur le site...
+- Du coup, rien que pour vous, voici désormais la possibilité de réellement jouer avec les multi-cast et multi-abilités
+- Vous choisissez le 1er sort puis le 2nd, exactement comme vous le feriez dans le jeu
+- Si vous trouver des bugs, n'hésitez pas à me contacter :)
+
+23/01
  - Hello à tous, bon comme certains l'ont remarqué le site n'a pas été mis à jour pendant 2 semaines :( Vraiment désolé, j'ai changé de maison, j'ai dû faire des travaux et pas d'internet pendant 10 jours m'ont beaucoup perturbé... Mais je suis de retour et le site est donc à jour :)
  - Ajout des 2 dernières bannières (Balthier, Lasswell flammes gelées, ...)
  - Ajout des dernières améliorations (Aileen, Vicoria, ...)
 
-04/01/2018
+04/01
  - Bonne Année :)
  - Je n'ai pas le temps de gérer le triple-cast de Kaliva tout de suite... D'ici 2 semaines ça devrait êter bon, désolé...
 
-19/12/2017
+19/12
  - Gestion de la répartition des dégats pour une abilité (par exemple pour la LB de Cloud les hits sont tous à 5% sauf le dernier qui est 30% ce qui change la philosophie de l'abilité)
 
-04/12/2017
+04/12
 - La recherche de meilleures unités ne retourne désormais plus que des chaineurs
 
-11/11/2017
+11/11
  - Traduction pour Taiwan (Chinois traditionnel) un grand merci à [/u/GiveMeZidane]
 
-01/11/2017
+01/11
  - Nouvelle page pour expliquer le fonctionnement des chaines dans le jeu
  - Modification de l'affichage des options dans le simulateur (cliquez sur l'engrenage)
 
-20/10/2017
+20/10
  - Si vous voyez cette page en Français c'est que vous avez trouvé le nouvel ajout de choix de langue (français et anglais pour l'instant)
  - Ajout des invocations dans le calculateur
 
