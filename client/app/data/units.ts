@@ -9889,7 +9889,7 @@ export const UNITS: any[] = [
         dualable: true,
         firstHit: 42,
         framesList: "0-7-7-7-7-7-7-7-7-7-7-7",
-        offset: 16,
+        offset: 14,
         base: 500
       },
       {
