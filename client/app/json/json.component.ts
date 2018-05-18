@@ -238,6 +238,13 @@ export class JsonComponent implements OnInit {
       return;
     }
 
+    effect = this.findEffect(ability, 2, 4, 1);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
     effect = this.findEffect(ability, 1, 1, 21);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
@@ -300,6 +307,14 @@ export class JsonComponent implements OnInit {
     effect = this.findEffect(ability, 2, 1, 15);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[5];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
+      return;
+    }
+
+    effect = this.findEffect(ability, 1, 1, 70);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
+      this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
       return;
     }
@@ -439,7 +454,7 @@ export class JsonComponent implements OnInit {
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
           this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
-        })
+        });
       } else {
         this.ffbeChainUnits[unitId].multiSkills[effect[3]] = !this.ffbeChainUnits[unitId].multiSkills[effect[3]] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[effect[3]] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[effect[3]];
         // this.ffbeChainUnits[unitId].multiSkills[effect[3]] = effect[0];
@@ -452,7 +467,7 @@ export class JsonComponent implements OnInit {
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
           this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
-        })
+        });
       } else {
         this.ffbeChainUnits[unitId].multiSkills[effect[3]] = !this.ffbeChainUnits[unitId].multiSkills[effect[3]] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[effect[3]] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[effect[3]];
       }
@@ -466,7 +481,7 @@ export class JsonComponent implements OnInit {
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
           this.addSkill(unitId, this.skills[skillId], skillId);
-        })
+        });
       } else if (this.skills[effect[3]]) {
         this.addSkill(unitId, this.skills[effect[3]], effect[3]);
       }
@@ -545,8 +560,16 @@ export class JsonComponent implements OnInit {
       }
     }
 
-    // Random use skill : [1, 1, 29, [[504130,  25], [504140,  25], [504150,  25], [504160,  25], [0,  0]]]
     effect = this.findEffect(ability, 1, 1, 29);
+    if (effect) {
+      for (let i = 0; i < effect.length; i++) {
+        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
+          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0]);
+        }
+      }
+    }
+
+    effect = this.findEffect(ability, 0, 3, 29);
     if (effect) {
       for (let i = 0; i < effect.length; i++) {
         if (Array.isArray(effect[i]) && effect[i][0] !== 0) {

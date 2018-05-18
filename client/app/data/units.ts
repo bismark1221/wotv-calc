@@ -9982,5 +9982,345 @@ export const UNITS: any[] = [
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
+  },
+  {
+    id: 123,
+    names: {
+      en: "Heltich",
+      tw: "海爾蒂克",
+      kr: "헬틱",
+      fr: "Heltich",
+      de: "Heltich",
+      es: "Heltich"
+    },
+    abilities: [
+      {
+        id: 506240,
+        names: {
+          en: "Originating Swirl",
+          tw: "根源災禍",
+          kr: "근원의 소용돌이",
+          fr: "Tourbillon original",
+          de: "Ursprungswirbel",
+          es: "Torbellino original"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 82,
+        framesList: "0-10-10-10-10-10-10",
+        offset: 16,
+        base: 320,
+        ignore: 25
+      },
+      {
+        id: 506250,
+        names: {
+          en: "True Originating Swirl",
+          tw: "真·根源災禍",
+          kr: "진·근원의 소용돌이",
+          fr: "Tourbillon originel X",
+          de: "Wahrer Ursprungswirbel",
+          es: "Torbellino original+"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 120,
+        framesList: "0-10-10-10-10-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 320,
+        ignore: 50
+      },
+      {
+        id: 506260,
+        names: {
+          en: "Soul Drive",
+          tw: "靈魂驅動",
+          kr: "소울 드라이브",
+          fr: "Sursaut d'âme",
+          de: "Seelenschub",
+          es: "Picado del alma"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 200,
+        framesList: "0",
+        offset: 16,
+        base: 660,
+        type: "finish"
+      },
+      {
+        id: 100005706,
+        names: {
+          en: "Despair",
+          tw: "絕望",
+          kr: "절망",
+          fr: "Désespoir",
+          de: "Verzweiflung",
+          es: "Desesperación"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "dark"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 107,
+        framesList: "0",
+        offset: 8,
+        base: 940,
+        type: "finish"
+      }
+    ],
+    multiSkills: {},
+    multipleBlack: 2,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 124,
+    names: {
+      en: "Killian",
+      tw: "希里安",
+      kr: "킬리언",
+      fr: "Killian",
+      de: "Killian",
+      es: "Killian"
+    },
+    abilities: [
+      {
+        id: 224000,
+        names: {
+          en: "Flashover",
+          tw: "閃絡",
+          kr: "섬략",
+          fr: "Feu soudain",
+          de: "Lichtbogen",
+          es: "Combustión súbita"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 48,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "fire",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 68,
+        framesList: "0",
+        offset: 16,
+        base: 350,
+        type: "finish"
+      },
+      {
+        id: 224020,
+        names: {
+          en: "Gear-up",
+          tw: "換檔加速",
+          kr: "기어 상승",
+          fr: "Préparation",
+          de: "Gang hochschalten",
+          es: "Cambio de marcha"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 38,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 78,
+        framesList: "0",
+        offset: 16,
+        base: 400,
+        type: "finish"
+      },
+      {
+        id: 100013406,
+        names: {
+          en: "Blazing Drive",
+          tw: "炙炎衝擊",
+          kr: "블레이징 드라이브",
+          fr: "Frappe brûlante",
+          de: "Lodernder Schub",
+          es: "Golpe abrasador"
+        },
+        hitDamage: [
+          20, 20, 20, 40
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [
+          "fire"
+        ],
+        debuffs: [
+          {
+            type: "fire",
+            value: 84
+          }
+        ],
+        dualable: false,
+        firstHit: 145,
+        framesList: "0-22-58-56",
+        offset: 8,
+        base: 840
+      }
+    ],
+    multiSkills: {
+      224020: 4
+    },
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 125,
+    names: {
+      en: "Heavenly Technician Lid",
+      tw: "星虹技師里德",
+      kr: "성홍의 기술자 리드",
+      fr: "Lid, ingénieure cosmique",
+      de: "Himmlische Technikerin Lid",
+      es: "Lid ingeniera cósmica"
+    },
+    abilities: [
+      {
+        id: 223840,
+        names: {
+          en: "Sunlight Beam",
+          tw: "太陽光束",
+          kr: "선 라이트 빔",
+          fr: "Rayon du soleil",
+          de: "Sonnenstrahl",
+          es: "Rayo solar"
+        },
+        hitDamage: [
+          11, 11, 11, 11, 11, 11, 11, 23
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 92,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 200
+      },
+      {
+        id: 506190,
+        names: {
+          en: "Running Fire+",
+          tw: "牙式連發火槍·改",
+          kr: "개량형 아식연발총",
+          fr: "Tirs nourris +",
+          de: "Lauffeuer+",
+          es: "Bioametralladora+"
+        },
+        hitDamage: [
+          2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 42,
+        framesList: "0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+        offset: 16,
+        base: 320,
+        ignore: 25
+      },
+      {
+        id: 506200,
+        names: {
+          en: "Explosive Type Panic Shells",
+          tw: "炸裂式哀鳴彈",
+          kr: "작렬식 아비규환탄",
+          fr: "Cartouches de panique explosives",
+          de: "Explodierende Pandämoniumkugeln",
+          es: "Cartuchos de pánico explosivos"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 425,
+        framesList: "0",
+        offset: 16,
+        base: 1200,
+        type: "finish"
+      },
+      {
+        id: 100011906,
+        names: {
+          en: "Mechabo Custom Hammer",
+          tw: "機械鳥特製鐵錘",
+          kr: "메카보 해머 커스텀",
+          fr: "Marteau personnalisé de mécabo",
+          de: "Mechabo-Maßhammer",
+          es: "Martillo personalizable de Chocobot"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 4,
+        framesList: "0",
+        offset: 8,
+        base: 940,
+        type: "finish"
+      }
+    ],
+    multiSkills: {},
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
   }
 ];

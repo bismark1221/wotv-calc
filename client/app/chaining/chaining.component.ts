@@ -561,11 +561,13 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let positionInList = this.findPositionOfAbilityById(this.chain[unitPosition], this.chain[unitPosition].selectedIds[abilityPosition]);
     if (positionInList !== null) {
       let ability = JSON.parse(JSON.stringify(this.chain[unitPosition].abilities[positionInList]));
-      this.chain[unitPosition].selectedAbilities[abilityPosition] = ability;
 
       if (abilityPosition === 0) {
+        this.chain[unitPosition].selectedAbilities = [ability];
         this.chain[unitPosition].selectedIds = [this.chain[unitPosition].selectedIds[0]];
         this.chain[unitPosition] = this.updateMultipleSkill(this.chain[unitPosition]);
+      } else {
+        this.chain[unitPosition].selectedAbilities[abilityPosition] = ability;
       }
     } else {
       for (let i = this.chain[unitPosition].castNumber.length; i >= abilityPosition; i--) {
@@ -821,15 +823,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       unit.abilities.forEach(ability => {
         if (ability.type === 'chain') {
           this.findBestService.units[position].selectedAbilities = [ability];
-
-
-
-
           this.findBestService.units[position].selectedIds = [ability.id];
           this.findBestService.units[position] = this.updateMultipleSkill(this.findBestService.units[position]);
-
-
-
 
           let result = this.findBestService.findBestFrames();
           chainers.push({
