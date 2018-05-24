@@ -11,6 +11,11 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+24/05
+- Ajout d'une nouvelle page pour voir les familles de chaineurs
+- C'est une page 'brut', générer à partir des données sans contrôle
+- Vous allez donc voir des unités ou améliorations qui ne sont pas encore dispo sur la globale
+
 11/05
 - Humm... Quand je regarde cette page je me dis que ça fait quand même longtemps que j'ai pas ajouté de nouvelles fonctionnalités sur le site...
 - Du coup, rien que pour vous, voici désormais la possibilité de réellement jouer avec les multi-cast et multi-abilités
