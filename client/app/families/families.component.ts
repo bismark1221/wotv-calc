@@ -111,11 +111,11 @@ export class FamiliesComponent implements OnInit {
       }
     });
 
-    console.log(this.knownFamilies)
-
     for (let i = indexToRemove.length - 1; i >= 0; i--) {
       this.families.splice(indexToRemove[i], 1);
     }
+
+    this.updateName();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.updateName();
