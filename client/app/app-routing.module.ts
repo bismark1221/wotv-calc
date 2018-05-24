@@ -10,11 +10,14 @@ import { LegalComponent } from './legal/legal.component';
 import { HowToComponent } from './how-to/how-to.component';
 import { RequestsComponent } from './requests/requests.component';
 import { JsonComponent } from './json/json.component';
+import { FamiliesComponent } from './families/families.component';
+import { GenerateFamiliesComponent } from './families/generate.component';
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'chain', component: ChainingComponent },
-  // { path: 'my-units', component: MyUnitsComponent },
+  { path: 'families', component: FamiliesComponent },
+  { path: 'generate-families', component: GenerateFamiliesComponent },
   { path: 'requests', component: RequestsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },

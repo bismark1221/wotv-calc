@@ -35,6 +35,8 @@ import { MacroComponent } from './macro/macro.component';
 import { HowToComponent } from './how-to/how-to.component';
 import { RequestsComponent } from './requests/requests.component';
 import { JsonComponent } from './json/json.component';
+import { FamiliesComponent } from './families/families.component';
+import { GenerateFamiliesComponent } from './families/generate.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
@@ -42,6 +44,7 @@ import { BackService } from './services/back.service';
 import { FindBestService } from './services/find-best.service';
 import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
+import { JsonService } from './services/json.service';
 
 import { KeysPipe } from './pipes/keys.pipe';
 import { TypePipe } from './pipes/type.pipe';
@@ -73,7 +76,9 @@ export function createTranslateLoader(http: HttpClient) {
     MacroComponent,
     HowToComponent,
     RequestsComponent,
-    JsonComponent
+    JsonComponent,
+    FamiliesComponent,
+    GenerateFamiliesComponent
   ],
   imports: [
     BrowserModule,
@@ -110,7 +115,8 @@ export function createTranslateLoader(http: HttpClient) {
     ElementsService,
     BackService,
     FindBestService,
-    NavService
+    NavService,
+    JsonService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,19 @@
+:host /deep/ pre span{
+  white-space: normal;
+}
+
+:host /deep/ .string {
+  color: green;
+}
+
+:host /deep/ .number {
+  color: darkorange;
+}
+
+:host /deep/ .boolean {
+  color: blue;
+}
+
+:host /deep/ .null {
+  color: magenta;
+}

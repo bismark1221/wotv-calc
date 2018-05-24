@@ -6597,7 +6597,7 @@ export const UNITS: any[] = [
         },
         framesList: '0-8-8-8-8-8-8-8',
         hitDamage: [9, 10, 11, 12, 13, 14, 15, 16],
-        firstHit: 85,
+        firstHit: 82,
         castTime: 40,
         offset: 26,
         base: 300,
@@ -7180,7 +7180,8 @@ export const UNITS: any[] = [
         firstHit: 65,
         framesList: "0",
         offset: 86,
-        type: "finish"
+        type: "finish",
+        base: 600
       },
       {
         id: 4,
@@ -8301,6 +8302,7 @@ export const UNITS: any[] = [
         firstHit: 162,
         framesList: "0-8-8-8-8-8-8",
         offset: 16,
+        base: 525,
         dualable: false
       },
       {
