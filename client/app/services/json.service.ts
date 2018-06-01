@@ -11,6 +11,7 @@ export class JsonService {
   lbs = {};
   summons = {};
   upgrades = {};
+  equipments = {};
   minimumHit = 1;
   debuffElement = [
     'fire',
@@ -45,6 +46,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/enhancements.json').toPromise();
   }
 
+  private getEquipments() {
+    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/equipment.json').toPromise();
+  }
+
   getJsons(): Promise<any[]> {
     return Promise.all([
       this.getUnits(),
@@ -52,12 +57,14 @@ export class JsonService {
       this.getLBs(),
       this.getSummons(),
       this.getUpgrades(),
+      this.getEquipments()
     ]).then(responses => {
       this.units = responses[0];
       this.skills = responses[1];
       this.lbs = responses[2];
       this.summons = responses[3];
       this.upgrades = responses[4];
+      this.equipments = responses[5];
 
       this.formatJsons();
 
@@ -94,6 +101,12 @@ export class JsonService {
 
     Object.keys(this.summons).forEach(summonId => {
       this.addSummon(this.summons[summonId], summonId);
+    });
+
+    Object.keys(this.equipments).forEach(equipmentId => {
+      if (this.equipments[equipmentId].skills) {
+        this.addEquipment(equipmentId);
+      }
     });
   }
 
@@ -709,5 +722,33 @@ export class JsonService {
     });
 
     return find;
+  }
+
+  private addEquipment(equipmentId) {
+    let equipment = this.equipments[equipmentId];
+    let id = this.ffbeChainUnits.length;
+
+    console.log(equipment)
+
+    this.ffbeChainUnits[id] = {
+      dataId: Number(equipmentId),
+      names: {
+        en: equipment.strings.name ? equipment.strings.name[0]: '',
+        tw: equipment.strings.name ? equipment.strings.name[1]: '',
+        kr: equipment.strings.name ? equipment.strings.name[2]: '',
+        fr: equipment.strings.name ? equipment.strings.name[3]: '',
+        de: equipment.strings.name ? equipment.strings.name[4]: '',
+        es: equipment.strings.name ? equipment.strings.name[5]: ''
+      },
+      abilities: [],
+      multiSkills: {},
+      multipleBlack: 1,
+      multipleWhite: 1,
+      multipleGreen: 1
+    };
+
+    equipment.skills.forEach(skillId => {
+      this.addSkill(id, this.skills[skillId], skillId);
+    });
   }
 }

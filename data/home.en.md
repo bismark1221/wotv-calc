@@ -12,16 +12,16 @@ For now, you will find the following features :
 ##### Change Logs :
 
 24/05
-- Add a new page to show chain families
-- It's a 'raw' page, generated from raw data without any check
-- So you will find future units or awaikenings
+ - Add a new page to show chain families
+ - It's a 'raw' page, generated from raw data without any check
+ - So you will find future units or awaikenings
 
 11/05
-- Well, it's been a long time since the last major upgrade... But I'm back with a new system for the simulator, the dual-abilities
-- You can know choose differents abilities during a dualcast or dualabilities
-- You choose the 1st ability and the 2nd one, same as in-game
-- I also add the posibilities to view units' and abilities' translation for all supported language in the data
-- If you find some bug don't hesitate to contact me :)
+ - Well, it's been a long time since the last major upgrade... But I'm back with a new system for the simulator, the dual-abilities
+ - You can know choose differents abilities during a dualcast or dualabilities
+ - You choose the 1st ability and the 2nd one, same as in-game
+ - I also add the posibilities to view units' and abilities' translation for all supported language in the data
+ - If you find some bug don't hesitate to contact me :)
 
 23/01
  - Hello everyone, As some of you noticed the site has not been updated for 2 weeks :( Really sorry, I changed house, I had to do some work and no internet during 10 days disturbed me a lot ... But I'm back and the site is up to date :)
