@@ -1454,7 +1454,32 @@ export const UNITS: any[] = [
             value: 50
           }
         ]
-      }
+      },
+      {
+        id: 911061,
+        names: {
+          en: "Commanding Blade + 2",
+          tw: "霸道之劍 + 2",
+          kr: "패도의 검 + 2",
+          fr: "Lame du commandant + 2",
+          de: "Eindrucksvolle Klinge + 2",
+          es: "Hoja del comandante + 2"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 51,
+        framesList: "0-9-9-9-9-9-9-9",
+        offset: 16,
+        base: 300,
+        ignore: 50
+      },
     ]
   },
   {
@@ -1537,13 +1562,40 @@ export const UNITS: any[] = [
           es: "Hoja justiciera"
         },
         framesList: "0-8-8-8-8-8-6-8",
-        hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
         firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 250,
         ignore: 25,
-      }
+      },
+      {
+        id: 705500,
+        names: {
+          en: "Blade of Justice + 2",
+          tw: "正義之劍 + 2",
+          kr: "정의로운 검 + 2",
+          fr: "Lame de la justice + 2",
+          de: "Schwert der Rechtschaffenheit + 2",
+          es: "Espada justiciera + 2"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-8-8-8-8-8-6-8",
+        offset: 16,
+        base: 300,
+        ignore: 25
+      },
     ]
   },
   {
@@ -1663,6 +1715,78 @@ export const UNITS: any[] = [
         castTime: 42,
         offset: 24,
         base: 400,
+      },
+      {
+        id: 911067,
+        names: {
+          en: "Mystic Thrust + 1",
+          tw: "神秘衝擊 + 1",
+          kr: "마법 찌르기 + 1",
+          fr: "Coup mystique + 1",
+          de: "Mystischer Stoß + 1",
+          es: "Estoque místico + 1"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 450
+      },
+      {
+        id: 911069,
+        names: {
+          en: "Mystic Thrust + 2",
+          tw: "神秘衝擊 + 2",
+          kr: "마법 찌르기 + 2",
+          fr: "Coup mystique + 2",
+          de: "Mystischer Stoß + 2",
+          es: "Estoque místico + 2"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 500
+      },
+      {
+        id: 911070,
+        names: {
+          en: "Mystic Blitz + 2",
+          tw: "神秘閃擊 + 2",
+          kr: "마법 공습 + 2",
+          fr: "Raid mystique + 2",
+          de: "Mystischer Blitz + 2",
+          es: "Centella mística + 2"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 500
       }
     ]
   },
@@ -2796,7 +2920,7 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: "0",
-        firstHit: 350,
+        firstHit: 365,
         castTime: 40,
         offset: 0,
         base: 280,
@@ -2980,9 +3104,37 @@ export const UNITS: any[] = [
         damage: "magic",
         magicType: "black",
         dualable: false
-      }
+      },
+      {
+        id: 10210,
+        names: {
+          en: "Holy",
+          tw: "神聖",
+          kr: "홀리",
+          fr: "Sidéral",
+          de: "Sanctus",
+          es: "Sanctus"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "white",
+        elements: [
+          "light"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 450,
+        framesList: "0",
+        offset: 16,
+        base: 230,
+        type: "finish"
+      },
     ],
-    multipleBlack: 2
+    multipleBlack: 2,
+    multipleWhite: 2
   },
   {
     id: 43,
@@ -3439,11 +3591,65 @@ export const UNITS: any[] = [
         ],
         damage: "magic",
         dualable: false
+      },
+      {
+        id: 911033,
+        names: {
+          en: "Blood Rend + 2",
+          tw: "血色撕裂 + 2",
+          kr: "피의 열파 + 2",
+          fr: "Déchirure sanglante + 2",
+          de: "Blutriss + 2",
+          es: "Hemorragia sangrienta + 2"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 30,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "water"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 90,
+        framesList: "0",
+        offset: 16,
+        base: 750,
+        type: "finish"
+      },
+      {
+        id: 911050,
+        names: {
+          en: "Blood Pulsar + 2",
+          tw: "血色脈衝 + 2",
+          kr: "피의 펄서 + 2",
+          fr: "Pulsar de sang + 2",
+          de: "Blutpulsar + 2",
+          es: "Pulso sangriento + 2"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 30,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 130,
+        framesList: "0",
+        offset: 16,
+        base: 1050,
+        type: "finish"
       }
     ],
     multiSkills: {
       910225: 2,
-      910228: 2
+      910228: 2,
+      911033: 2,
+      911050: 2
     }
   },
   {
@@ -4945,6 +5151,36 @@ export const UNITS: any[] = [
         ],
         dualable: false
       },
+      {
+        id: 216480,
+        names: {
+          en: "Dragon Crash",
+          tw: "龍墜",
+          kr: "용추",
+          fr: "Chute du dragon",
+          de: "Drachenramme",
+          es: "Caída del dragón"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "ice",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 65,
+        framesList: "0",
+        offset: 16,
+        base: 180,
+        type: "finish"
+      }
     ]
   },
   {
@@ -8299,7 +8535,7 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: "0",
-        firstHit: 350,
+        firstHit: 365,
         castTime: 40,
         offset: 0,
         base: 280,
