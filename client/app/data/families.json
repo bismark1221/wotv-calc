@@ -3517,6 +3517,33 @@
         ]
       },
       {
+        "id": 100008804,
+        "names": {
+          "en": "Moogle",
+          "tw": "莫古利",
+          "kr": "모그리",
+          "fr": "Mog",
+          "de": "Mogry",
+          "es": "Moguri"
+        },
+        "abilities": [
+          {
+            "id": 707173,
+            "names": {
+              "en": "Mog Barrage + 2",
+              "tw": "莫古亂突刺 + 2",
+              "kr": "모그 혼란 + 2",
+              "fr": "Pluie de coups mog + 2",
+              "de": "Mogry-Sperrfeuer + 2",
+              "es": "Ráfaga moguri + 2"
+            },
+            "firstHit": 22,
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
         "id": 210000105,
         "names": {
           "en": "Tidus",
@@ -3908,6 +3935,38 @@
     ]
   },
   {
+    "family": "112-6-6-6-6",
+    "units": [
+      {
+        "id": 100016605,
+        "names": {
+          "en": "Ukiyo",
+          "tw": "浮世",
+          "kr": "우키요",
+          "fr": "Ukiyo",
+          "de": "Ukiyo",
+          "es": "Ukiyo"
+        },
+        "abilities": [
+          {
+            "id": 227347,
+            "names": {
+              "en": "Dragon Charm",
+              "tw": "龍之符",
+              "kr": "용의 부적",
+              "fr": "Amulette (dragon)",
+              "de": "Drachen-Gebet",
+              "es": "Amuleto dragoniano"
+            },
+            "firstHit": 112,
+            "offset": 16,
+            "castTime": 110
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "178-6-4-3-3",
     "units": [
       {
@@ -4032,32 +4091,32 @@
     ]
   },
   {
-    "family": "46-6-6-6-6-7",
+    "family": "46-6-6-6-6-13",
     "units": [
       {
-        "id": 401003203,
+        "id": 100012005,
         "names": {
-          "en": "Toby",
-          "tw": "托比",
-          "kr": "토비",
-          "fr": "Toby",
-          "de": "Toby",
-          "es": "Toby"
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
         },
         "abilities": [
           {
-            "id": 910728,
+            "id": 222950,
             "names": {
-              "en": "Tortoise Toss",
-              "tw": "龜甲猛擲",
-              "kr": "토토스 슬로우",
-              "fr": "Lancer de tortue",
-              "de": "Schildkrötenwurf",
-              "es": "Lanzamiento de tortuga"
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
             },
             "firstHit": 46,
-            "offset": 16,
-            "castTime": 40
+            "offset": 8,
+            "castTime": 0
           }
         ]
       }
@@ -4096,32 +4155,32 @@
     ]
   },
   {
-    "family": "46-6-6-6-6-13",
+    "family": "46-6-6-6-6-7",
     "units": [
       {
-        "id": 100012005,
+        "id": 401003203,
         "names": {
-          "en": "Nameless Gunner Jake",
-          "tw": "無名槍士傑科",
-          "kr": "무명의 총잡이 제이크",
-          "fr": "Jake, tireur anonyme",
-          "de": "Namenloser Pistolero Jake",
-          "es": "Jake el pistolero anónimo"
+          "en": "Toby",
+          "tw": "托比",
+          "kr": "토비",
+          "fr": "Toby",
+          "de": "Toby",
+          "es": "Toby"
         },
         "abilities": [
           {
-            "id": 222950,
+            "id": 910728,
             "names": {
-              "en": "Vaporiser",
-              "tw": "高熱射線",
-              "kr": "기화 장치",
-              "fr": "Vaporisateur",
-              "de": "Zerstäuber",
-              "es": "Evaporizador"
+              "en": "Tortoise Toss",
+              "tw": "龜甲猛擲",
+              "kr": "토토스 슬로우",
+              "fr": "Lancer de tortue",
+              "de": "Schildkrötenwurf",
+              "es": "Lanzamiento de tortuga"
             },
             "firstHit": 46,
-            "offset": 8,
-            "castTime": 0
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }
@@ -4501,6 +4560,20 @@
             "firstHit": 42,
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 707172,
+            "names": {
+              "en": "Mog Barrage + 1",
+              "tw": "莫古亂突刺 + 1",
+              "kr": "모그 혼란 + 1",
+              "fr": "Pluie de coups mog + 1",
+              "de": "Mogry-Sperrfeuer + 1",
+              "es": "Ráfaga moguri + 1"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }
@@ -4593,6 +4666,32 @@
               "fr": "Mort carmin",
               "de": "Purpurner Tod",
               "es": "Muerte escarlata"
+            },
+            "firstHit": 5,
+            "offset": 16
+          },
+          {
+            "id": 911079,
+            "names": {
+              "en": "Death Crimson + 1",
+              "tw": "深紅死襲 + 1",
+              "kr": "진홍빛 죽음 + 1",
+              "fr": "Mort carmin + 1",
+              "de": "Purpurner Tod + 1",
+              "es": "Muerte escarlata + 1"
+            },
+            "firstHit": 5,
+            "offset": 16
+          },
+          {
+            "id": 911081,
+            "names": {
+              "en": "Death Crimson+ + 2",
+              "tw": "深紅死襲+ + 2",
+              "kr": "진홍빛 죽음+ + 2",
+              "fr": "Mort carmin+ + 2",
+              "de": "Purpurner Tod+ + 2",
+              "es": "Muerte escarlata+ + 2"
             },
             "firstHit": 5,
             "offset": 16
@@ -5085,6 +5184,38 @@
             "firstHit": 46,
             "offset": 16,
             "castTime": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "122-7-7-7-7-7-7-7-17",
+    "units": [
+      {
+        "id": 100016605,
+        "names": {
+          "en": "Ukiyo",
+          "tw": "浮世",
+          "kr": "우키요",
+          "fr": "Ukiyo",
+          "de": "Ukiyo",
+          "es": "Ukiyo"
+        },
+        "abilities": [
+          {
+            "id": 227346,
+            "names": {
+              "en": "Tengu Charm",
+              "tw": "天狗之符",
+              "kr": "텐구의 부적",
+              "fr": "Amulette (tengu)",
+              "de": "Tengu-Gebet",
+              "es": "Amuleto tengu"
+            },
+            "firstHit": 122,
+            "offset": 16,
+            "castTime": 110
           }
         ]
       }
@@ -5616,6 +5747,38 @@
     ]
   },
   {
+    "family": "42-8-8-8-11",
+    "units": [
+      {
+        "id": 100016605,
+        "names": {
+          "en": "Ukiyo",
+          "tw": "浮世",
+          "kr": "우키요",
+          "fr": "Ukiyo",
+          "de": "Ukiyo",
+          "es": "Ukiyo"
+        },
+        "abilities": [
+          {
+            "id": 507861,
+            "names": {
+              "en": "Demon Tsukumo",
+              "tw": "鬼付喪",
+              "kr": "귀신 츠쿠모",
+              "fr": "Tsukumo démoniaque",
+              "de": "Dämonischer Tsukumo",
+              "es": "Tsukumo demoníaco"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "2-8-8-8-8-8",
     "units": [
       {
@@ -5876,7 +6039,7 @@
               "en": "Black Formal",
               "tw": "黑色禮服",
               "kr": "블랙 포멀",
-              "fr": "Noir formel",
+              "fr": "Noir habillé",
               "de": "Förmlich in Schwarz",
               "es": "Negro formal"
             },
@@ -6039,12 +6202,12 @@
       {
         "id": 204001605,
         "names": {
-          "en": "Studious Dragoon Kain",
+          "en": "Atoning Dragoon Kain",
           "tw": "極致龍騎士凱因",
           "kr": "궁극의 용기사 카인",
-          "fr": "Kaïn, dragonnier studieux",
-          "de": "Strebsamer Dragoner Kain",
-          "es": "Kain élite draconarius"
+          "fr": "Kaïn, dragonnier repenti",
+          "de": "Sühnender Dragoner Kain",
+          "es": "Kain, dragontino redentor"
         },
         "abilities": [
           {
@@ -6610,6 +6773,66 @@
     ]
   },
   {
+    "family": "42-8-8-8-8-8-6-8",
+    "units": [
+      {
+        "id": 253000115,
+        "names": {
+          "en": "Mercenary Ramza",
+          "tw": "傭兵拉姆薩",
+          "kr": "용병 람자",
+          "fr": "Ramza mercenaire",
+          "de": "Söldner Ramza",
+          "es": "Ramza mercenario"
+        },
+        "abilities": [
+          {
+            "id": 210520,
+            "names": {
+              "en": "Blade of Justice",
+              "tw": "正義之劍",
+              "kr": "정의로운 검",
+              "fr": "Lame de la justice",
+              "de": "Klinge der Gerechtigkeit",
+              "es": "Hoja justiciera"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 705490,
+            "names": {
+              "en": "Blade of Justice + 1",
+              "tw": "正義之劍 + 1",
+              "kr": "정의로운 검 + 1",
+              "fr": "Lame de la justice + 1",
+              "de": "Schwert der Rechtschaffenheit + 1",
+              "es": "Espada justiciera + 1"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 705500,
+            "names": {
+              "en": "Blade of Justice + 2",
+              "tw": "正義之劍 + 2",
+              "kr": "정의로운 검 + 2",
+              "fr": "Lame de la justice + 2",
+              "de": "Schwert der Rechtschaffenheit + 2",
+              "es": "Espada justiciera + 2"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-8-8-8-8-8-8-9",
     "units": [
       {
@@ -6632,38 +6855,6 @@
               "fr": "Barre de fer",
               "de": "Stahlröhre",
               "es": "Tubo de hierro"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-8-8-8-6-8",
-    "units": [
-      {
-        "id": 253000115,
-        "names": {
-          "en": "Mercenary Ramza",
-          "tw": "傭兵拉姆薩",
-          "kr": "용병 람자",
-          "fr": "Ramza mercenaire",
-          "de": "Söldner Ramza",
-          "es": "Ramza mercenario"
-        },
-        "abilities": [
-          {
-            "id": 210520,
-            "names": {
-              "en": "Blade of Justice",
-              "tw": "正義之劍",
-              "kr": "영웅의 검",
-              "fr": "Lame de la justice",
-              "de": "Klinge der Gerechtigkeit",
-              "es": "Hoja justiciera"
             },
             "firstHit": 42,
             "offset": 16,
@@ -7467,12 +7658,12 @@
       {
         "id": 204001605,
         "names": {
-          "en": "Studious Dragoon Kain",
+          "en": "Atoning Dragoon Kain",
           "tw": "極致龍騎士凱因",
           "kr": "궁극의 용기사 카인",
-          "fr": "Kaïn, dragonnier studieux",
-          "de": "Strebsamer Dragoner Kain",
-          "es": "Kain élite draconarius"
+          "fr": "Kaïn, dragonnier repenti",
+          "de": "Sühnender Dragoner Kain",
+          "es": "Kain, dragontino redentor"
         },
         "abilities": [
           {
@@ -7800,6 +7991,34 @@
               "fr": "Lame du commandant",
               "de": "Eindrucksvolle Klinge",
               "es": "Hoja del comandante"
+            },
+            "firstHit": 51,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911060,
+            "names": {
+              "en": "Commanding Blade + 1",
+              "tw": "霸道之劍 + 1",
+              "kr": "패도의 검 + 1",
+              "fr": "Lame du commandant + 1",
+              "de": "Eindrucksvolle Klinge + 1",
+              "es": "Hoja del comandante + 1"
+            },
+            "firstHit": 51,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911061,
+            "names": {
+              "en": "Commanding Blade + 2",
+              "tw": "霸道之劍 + 2",
+              "kr": "패도의 검 + 2",
+              "fr": "Lame du commandant + 2",
+              "de": "Eindrucksvolle Klinge + 2",
+              "es": "Hoja del comandante + 2"
             },
             "firstHit": 51,
             "offset": 16,
@@ -9210,7 +9429,7 @@
             "names": {
               "en": "Mystic Thrust",
               "tw": "神秘衝擊",
-              "kr": "신비의 창",
+              "kr": "마법 찌르기",
               "fr": "Coup mystique",
               "de": "Mystischer Stoß",
               "es": "Estoque místico"
@@ -9224,7 +9443,7 @@
             "names": {
               "en": "Mystic Thrust",
               "tw": "神秘衝擊",
-              "kr": "신비의 창",
+              "kr": "마법 찌르기",
               "fr": "Coup mystique",
               "de": "Mystischer Stoß",
               "es": "Estoque místico"
@@ -9481,6 +9700,89 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401001705,
+        "names": {
+          "en": "Reberta",
+          "tw": "蕾貝爾塔",
+          "kr": "리베르타",
+          "fr": "Réberta",
+          "de": "Reberta",
+          "es": "Reberta"
+        },
+        "abilities": [
+          {
+            "id": 911066,
+            "names": {
+              "en": "Mystic Thrust + 1",
+              "tw": "神秘衝擊 + 1",
+              "kr": "마법 찌르기 + 1",
+              "fr": "Coup mystique + 1",
+              "de": "Mystischer Stoß + 1",
+              "es": "Estoque místico + 1"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911067,
+            "names": {
+              "en": "Mystic Thrust + 1",
+              "tw": "神秘衝擊 + 1",
+              "kr": "마법 찌르기 + 1",
+              "fr": "Coup mystique + 1",
+              "de": "Mystischer Stoß + 1",
+              "es": "Estoque místico + 1"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911068,
+            "names": {
+              "en": "Mystic Thrust + 2",
+              "tw": "神秘衝擊 + 2",
+              "kr": "마법 찌르기 + 2",
+              "fr": "Coup mystique + 2",
+              "de": "Mystischer Stoß + 2",
+              "es": "Estoque místico + 2"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911070,
+            "names": {
+              "en": "Mystic Blitz + 2",
+              "tw": "神秘閃擊 + 2",
+              "kr": "마법 공습 + 2",
+              "fr": "Raid mystique + 2",
+              "de": "Mystischer Blitz + 2",
+              "es": "Centella mística + 2"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911069,
+            "names": {
+              "en": "Mystic Thrust + 2",
+              "tw": "神秘衝擊 + 2",
+              "kr": "마법 찌르기 + 2",
+              "fr": "Coup mystique + 2",
+              "de": "Mystischer Stoß + 2",
+              "es": "Estoque místico + 2"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -9587,6 +9889,38 @@
               "es": "Lluvia negra"
             },
             "firstHit": 60,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "72-10-10-10-10-10-10-10",
+    "units": [
+      {
+        "id": 100016605,
+        "names": {
+          "en": "Ukiyo",
+          "tw": "浮世",
+          "kr": "우키요",
+          "fr": "Ukiyo",
+          "de": "Ukiyo",
+          "es": "Ukiyo"
+        },
+        "abilities": [
+          {
+            "id": 227351,
+            "names": {
+              "en": "Ukiyo's Light Spell",
+              "tw": "浮世式陽咒彈",
+              "kr": "우키요식 주술탄[양]",
+              "fr": "Sort de lumière d'Ukiyo",
+              "de": "Ukiyos Lichtspruch",
+              "es": "Hechizo lumínico de Ukiyo"
+            },
+            "firstHit": 72,
             "offset": 16,
             "castTime": 40
           }
@@ -10086,7 +10420,7 @@
               "kr": "진·근원의 소용돌이",
               "fr": "Tourbillon originel X",
               "de": "Wahrer Ursprungswirbel",
-              "es": "Torbellino original+"
+              "es": "Torbellino original X"
             },
             "firstHit": 120,
             "offset": 16,
@@ -10271,7 +10605,7 @@
               "en": "Cat Hook",
               "tw": "貓撲",
               "kr": "냥냥펀치",
-              "fr": "Capuche de chat",
+              "fr": "Crochet félin",
               "de": "Katzenhaken",
               "es": "Garfio felino"
             },
@@ -10285,7 +10619,7 @@
               "en": "Cat Hook",
               "tw": "貓撲",
               "kr": "냥냥펀치",
-              "fr": "Capuche de chat",
+              "fr": "Crochet félin",
               "de": "Katzenhaken",
               "es": "Garfio felino"
             },
@@ -10299,7 +10633,7 @@
               "en": "Cat Hook",
               "tw": "貓撲",
               "kr": "냥냥펀치",
-              "fr": "Capuche de chat",
+              "fr": "Crochet félin",
               "de": "Katzenhaken",
               "es": "Garfio felino"
             },
@@ -11981,7 +12315,14 @@
     "units": [
       {
         "id": 100014905,
-        "names": {},
+        "names": {
+          "en": "Madam",
+          "tw": null,
+          "kr": "마담",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
         "abilities": [
           {
             "id": 100014905,
@@ -13525,6 +13866,38 @@
               "es": "Asalto"
             },
             "firstHit": 74,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "180-66-10-10-10",
+    "units": [
+      {
+        "id": 100016605,
+        "names": {
+          "en": "Ukiyo",
+          "tw": "浮世",
+          "kr": "우키요",
+          "fr": "Ukiyo",
+          "de": "Ukiyo",
+          "es": "Ukiyo"
+        },
+        "abilities": [
+          {
+            "id": 100016606,
+            "names": {
+              "en": "Tsukumo's Descent",
+              "tw": "付喪降臨",
+              "kr": "츠쿠모 강림",
+              "fr": "Attaque de Tsukumo",
+              "de": "Tsukomos Herabkunft",
+              "es": "Descenso de Tsukumo"
+            },
+            "firstHit": 180,
             "offset": 8,
             "castTime": 0
           }
