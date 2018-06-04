@@ -32,38 +32,6 @@
     ]
   },
   {
-    "family": "65-2-2-2-1-2-1-2-12",
-    "units": [
-      {
-        "id": 100000603,
-        "names": {
-          "en": "Sakura",
-          "tw": "櫻",
-          "kr": "사쿠라",
-          "fr": "Sakura",
-          "de": "Sakura",
-          "es": "Sakura"
-        },
-        "abilities": [
-          {
-            "id": 100000605,
-            "names": {
-              "en": "Eternal Pain",
-              "tw": "永久劇痛",
-              "kr": "영원한 고통의 굴레",
-              "fr": "Douleur éternelle",
-              "de": "Ewiger Schmerz",
-              "es": "Dolor eterno"
-            },
-            "firstHit": 65,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "65-2-2-2-1-2-1-2-38",
     "units": [
       {
@@ -90,6 +58,38 @@
             "firstHit": 65,
             "offset": 16,
             "castTime": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "65-2-2-2-1-2-1-2-12",
+    "units": [
+      {
+        "id": 100000603,
+        "names": {
+          "en": "Sakura",
+          "tw": "櫻",
+          "kr": "사쿠라",
+          "fr": "Sakura",
+          "de": "Sakura",
+          "es": "Sakura"
+        },
+        "abilities": [
+          {
+            "id": 100000605,
+            "names": {
+              "en": "Eternal Pain",
+              "tw": "永久劇痛",
+              "kr": "영원한 고통의 굴레",
+              "fr": "Douleur éternelle",
+              "de": "Ewiger Schmerz",
+              "es": "Dolor eterno"
+            },
+            "firstHit": 65,
+            "offset": 8,
+            "castTime": 0
           }
         ]
       }
@@ -2217,65 +2217,6 @@
     ]
   },
   {
-    "family": "50-5-5-5-5",
-    "units": [
-      {
-        "id": 100009405,
-        "names": {
-          "en": "Kelsus",
-          "tw": "凱爾蘇斯",
-          "kr": "켈서스",
-          "fr": "Kelsus",
-          "de": "Kelsus",
-          "es": "Kelsus"
-        },
-        "abilities": [
-          {
-            "id": 214960,
-            "names": {
-              "en": "Missile Shelter",
-              "tw": "導彈庇護所",
-              "kr": "미사일 셸터",
-              "fr": "Abri à missiles",
-              "de": "Raketenschutz",
-              "es": "Refugio antimisiles"
-            },
-            "firstHit": 50,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100009903,
-        "names": {
-          "en": "Conrad",
-          "tw": "孔拉德",
-          "kr": "콘래드",
-          "fr": "Conrad",
-          "de": "Conrad",
-          "es": "Conrad"
-        },
-        "abilities": [
-          {
-            "id": 214960,
-            "names": {
-              "en": "Missile Shelter",
-              "tw": "導彈庇護所",
-              "kr": "미사일 셸터",
-              "fr": "Abri à missiles",
-              "de": "Raketenschutz",
-              "es": "Refugio antimisiles"
-            },
-            "firstHit": 50,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "60-5-5-5-5",
     "units": [
       {
@@ -2614,38 +2555,6 @@
     ]
   },
   {
-    "family": "52-5-43-5-5-5",
-    "units": [
-      {
-        "id": 100002503,
-        "names": {
-          "en": "Duane",
-          "tw": "杜安",
-          "kr": "딘",
-          "fr": "Duane",
-          "de": "Deen",
-          "es": "Duane"
-        },
-        "abilities": [
-          {
-            "id": 100002505,
-            "names": {
-              "en": "Death Scythe",
-              "tw": "死神鐮刀",
-              "kr": "죽음의 낫",
-              "fr": "Faux de la mort",
-              "de": "Todessichel",
-              "es": "Guadaña letal"
-            },
-            "firstHit": 52,
-            "offset": 16,
-            "castTime": 50
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "72-5-5-5-5-20",
     "units": [
       {
@@ -2855,52 +2764,6 @@
             "firstHit": 42,
             "offset": 8,
             "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "45-5-5-5-5-5-5",
-    "units": [
-      {
-        "id": 401003905,
-        "names": {
-          "en": "Ang",
-          "tw": "昂",
-          "kr": "앙",
-          "fr": "Ang",
-          "de": "Ang",
-          "es": "Ang"
-        },
-        "abilities": [
-          {
-            "id": 910857,
-            "names": {
-              "en": "Tempest Arrows",
-              "tw": "追風箭",
-              "kr": "추풍의 화살",
-              "fr": "Tempête de flèches",
-              "de": "Orkanpfeile",
-              "es": "Flechas de la tempestad"
-            },
-            "firstHit": 45,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 910858,
-            "names": {
-              "en": "Blaze Arrows",
-              "tw": "爆炎箭",
-              "kr": "폭염의 화살",
-              "fr": "Flèche incendiaire",
-              "de": "Feuersbrunstpfeile",
-              "es": "Flechas del incendio"
-            },
-            "firstHit": 45,
-            "offset": 16,
-            "castTime": 40
           }
         ]
       }
@@ -4091,38 +3954,6 @@
     ]
   },
   {
-    "family": "46-6-6-6-6-13",
-    "units": [
-      {
-        "id": 100012005,
-        "names": {
-          "en": "Nameless Gunner Jake",
-          "tw": "無名槍士傑科",
-          "kr": "무명의 총잡이 제이크",
-          "fr": "Jake, tireur anonyme",
-          "de": "Namenloser Pistolero Jake",
-          "es": "Jake el pistolero anónimo"
-        },
-        "abilities": [
-          {
-            "id": 222950,
-            "names": {
-              "en": "Vaporiser",
-              "tw": "高熱射線",
-              "kr": "기화 장치",
-              "fr": "Vaporisateur",
-              "de": "Zerstäuber",
-              "es": "Evaporizador"
-            },
-            "firstHit": 46,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "46-6-6-6-6-6",
     "units": [
       {
@@ -4181,6 +4012,119 @@
             "firstHit": 46,
             "offset": 16,
             "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 1100000126,
+        "names": {
+          "en": "Lightbringer",
+          "tw": "光明使者",
+          "kr": "라이트 브링거",
+          "fr": "Illuminateur",
+          "de": "Lichtbringer",
+          "es": "Iluminador"
+        },
+        "abilities": [
+          {
+            "id": 910707,
+            "names": {
+              "en": "Morning Star",
+              "tw": "啟明星獻禮",
+              "kr": "루시퍼의 선물",
+              "fr": "Étoile du matin",
+              "de": "Morgenstern",
+              "es": "Estrella del alba"
+            },
+            "firstHit": 46,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 1100000128,
+        "names": {
+          "en": "Staff of Blizzards",
+          "tw": "冰杖",
+          "kr": "빙설의 지팡이",
+          "fr": "Bâton blizzard",
+          "de": "Blizzardstab",
+          "es": "Bastón de la ventisca"
+        },
+        "abilities": [
+          {
+            "id": 910709,
+            "names": {
+              "en": "Aquatic Implosion",
+              "tw": "水波聚爆",
+              "kr": "아쿠아 임플로전",
+              "fr": "Explosion aquatique",
+              "de": "Aquatische Implosion",
+              "es": "Implosión acuática"
+            },
+            "firstHit": 46,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 1100000129,
+        "names": {
+          "en": "Wing Edges",
+          "tw": "翼刃",
+          "kr": "윙 엣지",
+          "fr": "Dague ailée",
+          "de": "Flügelschneide",
+          "es": "Daga alada"
+        },
+        "abilities": [
+          {
+            "id": 910710,
+            "names": {
+              "en": "Tornado Alley",
+              "tw": "龍捲力場",
+              "kr": "토네이도 필드",
+              "fr": "Champ d'Ouragan",
+              "de": "Tornadoallee",
+              "es": "Callejón huracanado"
+            },
+            "firstHit": 46,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "46-6-6-6-6-13",
+    "units": [
+      {
+        "id": 100012005,
+        "names": {
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
+        },
+        "abilities": [
+          {
+            "id": 222950,
+            "names": {
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
+            },
+            "firstHit": 46,
+            "offset": 8,
+            "castTime": 0
           }
         ]
       }
@@ -4272,38 +4216,6 @@
             "firstHit": 132,
             "offset": 16,
             "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "2-6-6-6-6-6-6",
-    "units": [
-      {
-        "id": 401003004,
-        "names": {
-          "en": "Barusa",
-          "tw": "巴魯薩",
-          "kr": "바루사",
-          "fr": "Barusa",
-          "de": "Barusa",
-          "es": "Barusa"
-        },
-        "abilities": [
-          {
-            "id": 910746,
-            "names": {
-              "en": "Primeval Howl",
-              "tw": "蜥蜴嘶吼",
-              "kr": "하울링 리저드",
-              "fr": "Hurlement primitif",
-              "de": "Urzeitliches Heulen",
-              "es": "Aullido primitivo"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
           }
         ]
       }
@@ -4638,63 +4550,6 @@
             "firstHit": 80,
             "offset": 16,
             "castTime": 70
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "5-7-5-3-17-7-7",
-    "units": [
-      {
-        "id": 401001705,
-        "names": {
-          "en": "Reberta",
-          "tw": "蕾貝爾塔",
-          "kr": "리베르타",
-          "fr": "Réberta",
-          "de": "Reberta",
-          "es": "Reberta"
-        },
-        "abilities": [
-          {
-            "id": 910216,
-            "names": {
-              "en": "Death Crimson",
-              "tw": "深紅死襲",
-              "kr": "진홍빛 죽음",
-              "fr": "Mort carmin",
-              "de": "Purpurner Tod",
-              "es": "Muerte escarlata"
-            },
-            "firstHit": 5,
-            "offset": 16
-          },
-          {
-            "id": 911079,
-            "names": {
-              "en": "Death Crimson + 1",
-              "tw": "深紅死襲 + 1",
-              "kr": "진홍빛 죽음 + 1",
-              "fr": "Mort carmin + 1",
-              "de": "Purpurner Tod + 1",
-              "es": "Muerte escarlata + 1"
-            },
-            "firstHit": 5,
-            "offset": 16
-          },
-          {
-            "id": 911081,
-            "names": {
-              "en": "Death Crimson+ + 2",
-              "tw": "深紅死襲+ + 2",
-              "kr": "진홍빛 죽음+ + 2",
-              "fr": "Mort carmin+ + 2",
-              "de": "Purpurner Tod+ + 2",
-              "es": "Muerte escarlata+ + 2"
-            },
-            "firstHit": 5,
-            "offset": 16
           }
         ]
       }
@@ -5222,38 +5077,6 @@
     ]
   },
   {
-    "family": "2-7-7-7-7-7-7-7-7-7",
-    "units": [
-      {
-        "id": 100009105,
-        "names": {
-          "en": "Loren",
-          "tw": "洛倫",
-          "kr": "로렌",
-          "fr": "Loren",
-          "de": "Loren",
-          "es": "Loren"
-        },
-        "abilities": [
-          {
-            "id": 501960,
-            "names": {
-              "en": "Swiftwind Blade",
-              "tw": "疾風之劍",
-              "kr": "질풍의 검",
-              "fr": "Lame oscillante",
-              "de": "Sturmwindklinge",
-              "es": "Cuchilla veloz"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "2-7-7-7-8-8-8-8-8-8",
     "units": [
       {
@@ -5290,6 +5113,38 @@
               "fr": "Accélérer",
               "de": "Tempo",
               "es": "Acelerar"
+            },
+            "firstHit": 2,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "2-7-7-7-7-7-7-7-7-7",
+    "units": [
+      {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌",
+          "fr": "Loren",
+          "de": "Loren",
+          "es": "Loren"
+        },
+        "abilities": [
+          {
+            "id": 501960,
+            "names": {
+              "en": "Swiftwind Blade",
+              "tw": "疾風之劍",
+              "kr": "질풍의 검",
+              "fr": "Lame oscillante",
+              "de": "Sturmwindklinge",
+              "es": "Cuchilla veloz"
             },
             "firstHit": 2,
             "offset": 8,
@@ -5358,6 +5213,33 @@
             "firstHit": 49,
             "offset": 16,
             "castTime": 20
+          }
+        ]
+      },
+      {
+        "id": 1100000127,
+        "names": {
+          "en": "Grasping Sphere",
+          "tw": "掌中魔球",
+          "kr": "클링 스피어",
+          "fr": "Sphère de cupidité",
+          "de": "Fesselkristall",
+          "es": "Esfera de la codicia"
+        },
+        "abilities": [
+          {
+            "id": 910708,
+            "names": {
+              "en": "Carpet Bomb",
+              "tw": "撼地爆炸",
+              "kr": "랜드 보머",
+              "fr": "Tapis de bombes",
+              "de": "Flächenbombe",
+              "es": "Bombardeo de alfombra"
+            },
+            "firstHit": 49,
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }
@@ -5500,20 +5382,6 @@
             "castTime": 40
           },
           {
-            "id": 211370,
-            "names": {
-              "en": "Onion Slice",
-              "tw": "洋蔥刺",
-              "kr": "양파 슬라이스",
-              "fr": "Tranche-oignon",
-              "de": "Zwiebelschnitt",
-              "es": "Corte cebolla"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
             "id": 506840,
             "names": {
               "en": "Onion Slice",
@@ -5563,6 +5431,52 @@
               "fr": "Charge éolienne",
               "de": "Windböe",
               "es": "Cortavientos"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7",
+    "units": [
+      {
+        "id": 302003300,
+        "names": {
+          "en": "Onion Sword",
+          "tw": "洋蔥劍",
+          "kr": "양파 검",
+          "fr": "Épée oignon",
+          "de": "Zwiebelschwert",
+          "es": "Espada cebolla"
+        },
+        "abilities": [
+          {
+            "id": 506860,
+            "names": {
+              "en": "Onion Cutter",
+              "tw": "洋蔥斬",
+              "kr": "양파 칼날",
+              "fr": "Coupe-oignon",
+              "de": "Zwiebelschneider",
+              "es": "Cortador cebolla"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 506870,
+            "names": {
+              "en": "Onion Cutter",
+              "tw": "洋蔥斬",
+              "kr": "양파 칼날",
+              "fr": "Coupe-oignon",
+              "de": "Zwiebelschneider",
+              "es": "Cortador cebolla"
             },
             "firstHit": 42,
             "offset": 16,
@@ -5870,6 +5784,38 @@
     ]
   },
   {
+    "family": "42-8-8-14-10-10",
+    "units": [
+      {
+        "id": 100010303,
+        "names": {
+          "en": "Yuri",
+          "tw": "百合",
+          "kr": "유리",
+          "fr": "Yuri",
+          "de": "Yuri",
+          "es": "Yuri"
+        },
+        "abilities": [
+          {
+            "id": 218230,
+            "names": {
+              "en": "Mugen - Fake",
+              "tw": "夢幻之術・偽",
+              "kr": "몽환술·거짓",
+              "fr": "Rêverie - Tromperie",
+              "de": "Mugen - Täuschung",
+              "es": "Mugen - Falsedad"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-8-8-8-8-8",
     "units": [
       {
@@ -5919,38 +5865,6 @@
               "fr": "Frappe lumineuse",
               "de": "Leuchthieb",
               "es": "Golpe de luz"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-14-10-10",
-    "units": [
-      {
-        "id": 100010303,
-        "names": {
-          "en": "Yuri",
-          "tw": "百合",
-          "kr": "유리",
-          "fr": "Yuri",
-          "de": "Yuri",
-          "es": "Yuri"
-        },
-        "abilities": [
-          {
-            "id": 218230,
-            "names": {
-              "en": "Mugen - Fake",
-              "tw": "夢幻之術・偽",
-              "kr": "몽환술·거짓",
-              "fr": "Rêverie - Tromperie",
-              "de": "Mugen - Täuschung",
-              "es": "Mugen - Falsedad"
             },
             "firstHit": 42,
             "offset": 16,
@@ -6261,6 +6175,66 @@
     ]
   },
   {
+    "family": "42-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 209000103,
+        "names": {
+          "en": "Zidane",
+          "tw": "吉坦",
+          "kr": "지탄",
+          "fr": "Djidane",
+          "de": "Zidane",
+          "es": "Yitán"
+        },
+        "abilities": [
+          {
+            "id": 503340,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 503350,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 503360,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-8-8-8-8-8-16",
     "units": [
       {
@@ -6419,66 +6393,6 @@
               "fr": "Fusil à pompe automatique",
               "de": "Vollautomatikflinte",
               "es": "Escopeta automática"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 209000103,
-        "names": {
-          "en": "Zidane",
-          "tw": "吉坦",
-          "kr": "지탄",
-          "fr": "Djidane",
-          "de": "Zidane",
-          "es": "Yitán"
-        },
-        "abilities": [
-          {
-            "id": 503340,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 503350,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 503360,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
             },
             "firstHit": 42,
             "offset": 16,
@@ -6773,6 +6687,38 @@
     ]
   },
   {
+    "family": "42-8-8-8-8-8-8-9",
+    "units": [
+      {
+        "id": 310000105,
+        "names": {
+          "en": "2B",
+          "tw": "2B",
+          "kr": "2B",
+          "fr": "2B",
+          "de": "2B",
+          "es": "2B"
+        },
+        "abilities": [
+          {
+            "id": 504030,
+            "names": {
+              "en": "Steel Pipe",
+              "tw": "鐵管",
+              "kr": "쇠 파이프",
+              "fr": "Barre de fer",
+              "de": "Stahlröhre",
+              "es": "Tubo de hierro"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-8-8-8-8-8-6-8",
     "units": [
       {
@@ -6823,38 +6769,6 @@
               "fr": "Lame de la justice + 2",
               "de": "Schwert der Rechtschaffenheit + 2",
               "es": "Espada justiciera + 2"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-8-8-8-8-9",
-    "units": [
-      {
-        "id": 310000105,
-        "names": {
-          "en": "2B",
-          "tw": "2B",
-          "kr": "2B",
-          "fr": "2B",
-          "de": "2B",
-          "es": "2B"
-        },
-        "abilities": [
-          {
-            "id": 504030,
-            "names": {
-              "en": "Steel Pipe",
-              "tw": "鐵管",
-              "kr": "쇠 파이프",
-              "fr": "Barre de fer",
-              "de": "Stahlröhre",
-              "es": "Tubo de hierro"
             },
             "firstHit": 42,
             "offset": 16,
@@ -7841,6 +7755,38 @@
     ]
   },
   {
+    "family": "42-9-9-9",
+    "units": [
+      {
+        "id": 403043100,
+        "names": {
+          "en": "",
+          "tw": "",
+          "kr": "",
+          "fr": "",
+          "de": "",
+          "es": ""
+        },
+        "abilities": [
+          {
+            "id": 214630,
+            "names": {
+              "en": "null",
+              "tw": "火焰爆竹",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "149-9-9-9-9",
     "units": [
       {
@@ -8160,32 +8106,6 @@
     "family": "2-10-10-10",
     "units": [
       {
-        "id": 310000403,
-        "names": {
-          "en": "21O",
-          "tw": "21O",
-          "kr": "21O",
-          "fr": "21O",
-          "de": "21O",
-          "es": "21O"
-        },
-        "abilities": [
-          {
-            "id": 218460,
-            "names": {
-              "en": "A100: Decoy",
-              "tw": "A100：誘餌",
-              "kr": "A100: 디코이",
-              "fr": "A100 : Diversn",
-              "de": "A100: Falle",
-              "es": "A100: Señuelo"
-            },
-            "firstHit": 2,
-            "offset": 16
-          }
-        ]
-      },
-      {
         "id": 314000104,
         "names": {
           "en": "Yew",
@@ -8209,38 +8129,6 @@
             "firstHit": 2,
             "offset": 8,
             "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-10-10-10",
-    "units": [
-      {
-        "id": 100010303,
-        "names": {
-          "en": "Yuri",
-          "tw": "百合",
-          "kr": "유리",
-          "fr": "Yuri",
-          "de": "Yuri",
-          "es": "Yuri"
-        },
-        "abilities": [
-          {
-            "id": 214310,
-            "names": {
-              "en": "Anti-Insect Stance",
-              "tw": "殺蟲絕命術",
-              "kr": "살충절명술",
-              "fr": "Posture anti-insecte",
-              "de": "Anti-Insekten-Kata",
-              "es": "Postura antiinsectos"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
           }
         ]
       }
@@ -8335,38 +8223,6 @@
               "es": "Galope flamígero+"
             },
             "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "25-10-10-10-10",
-    "units": [
-      {
-        "id": 312000205,
-        "names": {
-          "en": "Hawk",
-          "tw": "霍克埃",
-          "kr": "호크아이",
-          "fr": "Hawk",
-          "de": "Hawk",
-          "es": "Hawk"
-        },
-        "abilities": [
-          {
-            "id": 220470,
-            "names": {
-              "en": "Thousand Slashes",
-              "tw": "千枚斬",
-              "kr": "1,000장 베기",
-              "fr": "Mille entailles",
-              "de": "Tausend Schnitte",
-              "es": "Mil cortes"
-            },
-            "firstHit": 25,
             "offset": 8,
             "castTime": 0
           }
@@ -8886,33 +8742,6 @@
               "fr": "Poing ferme",
               "de": "Solider Schlag",
               "es": "Puñetazo firme"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100010203,
-        "names": {
-          "en": "Kamui",
-          "tw": "神威",
-          "kr": "카무이",
-          "fr": "Kamui",
-          "de": "Kamui",
-          "es": "Kamui"
-        },
-        "abilities": [
-          {
-            "id": 214220,
-            "names": {
-              "en": "Sacrificial Flame",
-              "tw": "八熱",
-              "kr": "팔열",
-              "fr": "Brasier sacrificiel",
-              "de": "Opferflamme",
-              "es": "Llama sacrificadora"
             },
             "firstHit": 42,
             "offset": 16,
@@ -9457,6 +9286,38 @@
     ]
   },
   {
+    "family": "50-10-10-10-10-10-10",
+    "units": [
+      {
+        "id": 504208500,
+        "names": {
+          "en": "Toxic Rain",
+          "tw": "暴風酸性雨",
+          "kr": "산성 폭풍우",
+          "fr": "Pluie toxique",
+          "de": "Giftregen",
+          "es": "Lluvia tóxica"
+        },
+        "abilities": [
+          {
+            "id": 208580,
+            "names": {
+              "en": "Toxic Rain",
+              "tw": "暴風酸性雨",
+              "kr": "산성 폭풍우",
+              "fr": "Pluie toxique",
+              "de": "Giftregen",
+              "es": "Lluvia tóxica"
+            },
+            "firstHit": 50,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "82-10-10-10-10-10-10",
     "units": [
       {
@@ -9783,48 +9644,56 @@
             "castTime": 40
           }
         ]
-      }
-    ]
-  },
-  {
-    "family": "45-10-10-10-10-10-10-10",
-    "units": [
+      },
       {
-        "id": 212001105,
+        "id": 304002600,
         "names": {
-          "en": "Gabranth",
-          "tw": "加布藍斯",
-          "kr": "가브라스",
-          "fr": "Gabranth",
-          "de": "Gabranth",
-          "es": "Gabranth"
+          "en": "Masamune",
+          "tw": "正宗",
+          "kr": "마사무네",
+          "fr": "Masamune",
+          "de": "Masamune",
+          "es": "Masamune"
         },
         "abilities": [
           {
-            "id": 505320,
+            "id": 224570,
             "names": {
-              "en": "Frost Purge",
-              "tw": "百鬼·秋霜的破邪",
-              "kr": "백귀·추상의 파사",
-              "fr": "Lames purgatrices",
-              "de": "Eisklingentanz",
-              "es": "Sables de hielo"
+              "en": "Octaslash",
+              "tw": "八刀一閃",
+              "kr": "팔도일섬",
+              "fr": "Octofrappe",
+              "de": "Achtstreich",
+              "es": "Octacorte"
             },
-            "firstHit": 45,
+            "firstHit": 42,
             "offset": 16,
             "castTime": 40
-          },
+          }
+        ]
+      },
+      {
+        "id": 409015100,
+        "names": {
+          "en": "Pod 153",
+          "tw": "輔助機１５３",
+          "kr": "포드 153",
+          "fr": "Pod 153",
+          "de": "Pod 153",
+          "es": "Pod 153"
+        },
+        "abilities": [
           {
-            "id": 505300,
+            "id": 218810,
             "names": {
-              "en": "Frost Purge",
-              "tw": "百鬼·秋霜的破邪",
-              "kr": "백귀·추상의 파사",
-              "fr": "Lames purgatrices",
-              "de": "Eisklingentanz",
-              "es": "Sables de hielo"
+              "en": "R020: Mirage",
+              "tw": "R020：幻象",
+              "kr": "R020: 미라쥬",
+              "fr": "R020: Mirage",
+              "de": "R020: Illusion",
+              "es": "R020: Espejismo"
             },
-            "firstHit": 45,
+            "firstHit": 42,
             "offset": 16,
             "castTime": 40
           }
@@ -10646,6 +10515,38 @@
     ]
   },
   {
+    "family": "42-12-12-12-7-9",
+    "units": [
+      {
+        "id": 1100000038,
+        "names": {
+          "en": "Hyades Magnums",
+          "tw": "畢宿火槍",
+          "kr": "히아데스",
+          "fr": "Hyades",
+          "de": "Hades-Streitwagen",
+          "es": "Híades"
+        },
+        "abilities": [
+          {
+            "id": 910030,
+            "names": {
+              "en": "Cold Blood",
+              "tw": "冷血",
+              "kr": "냉혈",
+              "fr": "De sang froid",
+              "de": "Kaltblütig",
+              "es": "A sangre fría"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "6-12-12-12-12-42-4-4",
     "units": [
       {
@@ -10899,6 +10800,33 @@
               "fr": "Tornade",
               "de": "Tornado",
               "es": "Tornado"
+            },
+            "firstHit": 212,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 504217610,
+        "names": {
+          "en": "Frozen Hurricane",
+          "tw": "冰凍颶風",
+          "kr": "프로즌 허리케인",
+          "fr": "Ouragan gelé",
+          "de": "Eisiger Sturmwind",
+          "es": "Huracán gélido"
+        },
+        "abilities": [
+          {
+            "id": 217610,
+            "names": {
+              "en": "Frozen Hurricane",
+              "tw": "冰凍颶風",
+              "kr": "프로즌 허리케인",
+              "fr": "Ouragan gelé",
+              "de": "Eisiger Sturmwind",
+              "es": "Huracán gélido"
             },
             "firstHit": 212,
             "offset": 16,
@@ -11371,38 +11299,6 @@
     ]
   },
   {
-    "family": "73-15-15-15-15-15-15",
-    "units": [
-      {
-        "id": 254000205,
-        "names": {
-          "en": "Queen",
-          "tw": "葵因",
-          "kr": "퀸",
-          "fr": "Queen",
-          "de": "Queen",
-          "es": "Queen"
-        },
-        "abilities": [
-          {
-            "id": 254000206,
-            "names": {
-              "en": "Divine Judgment",
-              "tw": "十字審判",
-              "kr": "크로스 저지",
-              "fr": "Croix du jugement",
-              "de": "Richtkreuz",
-              "es": "Iudicium Crux"
-            },
-            "firstHit": 73,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "40-15-15-15-15-15-15-15-15-15",
     "units": [
       {
@@ -11716,38 +11612,6 @@
     ]
   },
   {
-    "family": "108-18-14-32",
-    "units": [
-      {
-        "id": 100010203,
-        "names": {
-          "en": "Kamui",
-          "tw": "神威",
-          "kr": "카무이",
-          "fr": "Kamui",
-          "de": "Kamui",
-          "es": "Kamui"
-        },
-        "abilities": [
-          {
-            "id": 100010205,
-            "names": {
-              "en": "Bushido - Mortal Slash",
-              "tw": "奧義∙斷命斬",
-              "kr": "오의·단명참",
-              "fr": "Bushido - Entaille mortelle",
-              "de": "Bushido - Todeshieb",
-              "es": "Bushido - Tajo mortal"
-            },
-            "firstHit": 108,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "26-18-101-10-10-10-10",
     "units": [
       {
@@ -11876,38 +11740,6 @@
     ]
   },
   {
-    "family": "12-20-20-20",
-    "units": [
-      {
-        "id": 212001105,
-        "names": {
-          "en": "Gabranth",
-          "tw": "加布藍斯",
-          "kr": "가브라스",
-          "fr": "Gabranth",
-          "de": "Gabranth",
-          "es": "Gabranth"
-        },
-        "abilities": [
-          {
-            "id": 221950,
-            "names": {
-              "en": "Fulminating Oblivion",
-              "tw": "影與深淵的衝擊",
-              "kr": "그림자와 심연의 충격",
-              "fr": "Bannissement ténèbreux",
-              "de": "Donnerhall",
-              "es": "Energía caótica"
-            },
-            "firstHit": 12,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "15-20-55-70",
     "units": [
       {
@@ -11934,38 +11766,6 @@
             "firstHit": 15,
             "offset": 16,
             "castTime": 10
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "32-20-20-20",
-    "units": [
-      {
-        "id": 310000304,
-        "names": {
-          "en": "Adam",
-          "tw": "亞當",
-          "kr": "아담",
-          "fr": "Adam",
-          "de": "Adam",
-          "es": "Adán"
-        },
-        "abilities": [
-          {
-            "id": 218470,
-            "names": {
-              "en": "Bullet Wave",
-              "tw": "彈幕",
-              "kr": "불릿 웨이브",
-              "fr": "Rideau de balles",
-              "de": "Kugelhagel",
-              "es": "Telón de balas"
-            },
-            "firstHit": 32,
-            "offset": 16,
-            "castTime": 40
           }
         ]
       }
@@ -12088,38 +11888,6 @@
               "es": "Gema luz de sol"
             },
             "firstHit": 90,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "120-20-20-20",
-    "units": [
-      {
-        "id": 100010303,
-        "names": {
-          "en": "Yuri",
-          "tw": "百合",
-          "kr": "유리",
-          "fr": "Yuri",
-          "de": "Yuri",
-          "es": "Yuri"
-        },
-        "abilities": [
-          {
-            "id": 214300,
-            "names": {
-              "en": "Anti-Plantoid Stance",
-              "tw": "滅草發破陣",
-              "kr": "멸초발파진",
-              "fr": "Posture anti-plante",
-              "de": "Anti-Pflanzen-Kata",
-              "es": "Postura antiplantoides"
-            },
-            "firstHit": 120,
             "offset": 16,
             "castTime": 40
           }
@@ -13507,20 +13275,6 @@
           "es": "2B"
         },
         "abilities": [
-          {
-            "id": 218540,
-            "names": {
-              "en": "R040: Blade",
-              "tw": "R040：劍",
-              "kr": "R040: 블레이드",
-              "fr": "R040 : Lame",
-              "de": "R040: Klinge",
-              "es": "R040: Espada"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
           {
             "id": 503950,
             "names": {

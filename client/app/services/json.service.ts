@@ -11,6 +11,7 @@ export class JsonService {
   lbs = {};
   summons = {};
   upgrades = {};
+  materias = {};
   equipments = {};
   minimumHit = 1;
   debuffElement = [
@@ -50,6 +51,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/equipment.json').toPromise();
   }
 
+  private getMaterias() {
+    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/materia.json').toPromise();
+  }
+
   getJsons(): Promise<any[]> {
     return Promise.all([
       this.getUnits(),
@@ -57,7 +62,8 @@ export class JsonService {
       this.getLBs(),
       this.getSummons(),
       this.getUpgrades(),
-      this.getEquipments()
+      this.getEquipments(),
+      this.getMaterias()
     ]).then(responses => {
       this.units = responses[0];
       this.skills = responses[1];
@@ -65,6 +71,7 @@ export class JsonService {
       this.summons = responses[3];
       this.upgrades = responses[4];
       this.equipments = responses[5];
+      this.materias = responses[6];
 
       this.formatJsons();
 
@@ -108,6 +115,14 @@ export class JsonService {
         this.addEquipment(equipmentId);
       }
     });
+
+    Object.keys(this.materias).forEach(materiaId => {
+      if (this.materias[materiaId].skills) {
+        this.addMateria(materiaId);
+      }
+    });
+
+    this.filterRealUsableSkills();
   }
 
   private getUpgradeLevel(unitId, upgrade) {
@@ -728,8 +743,6 @@ export class JsonService {
     let equipment = this.equipments[equipmentId];
     let id = this.ffbeChainUnits.length;
 
-    console.log(equipment)
-
     this.ffbeChainUnits[id] = {
       dataId: Number(equipmentId),
       names: {
@@ -750,5 +763,46 @@ export class JsonService {
     equipment.skills.forEach(skillId => {
       this.addSkill(id, this.skills[skillId], skillId);
     });
+  }
+
+  private addMateria(materiaId) {
+    let materia = this.materias[materiaId];
+    let id = this.ffbeChainUnits.length;
+
+    this.ffbeChainUnits[id] = {
+      dataId: Number(materiaId),
+      names: {
+        en: materia.strings.names ? materia.strings.names[0]: '',
+        tw: materia.strings.names ? materia.strings.names[1]: '',
+        kr: materia.strings.names ? materia.strings.names[2]: '',
+        fr: materia.strings.names ? materia.strings.names[3]: '',
+        de: materia.strings.names ? materia.strings.names[4]: '',
+        es: materia.strings.names ? materia.strings.names[5]: ''
+      },
+      abilities: [],
+      multiSkills: {},
+      multipleBlack: 1,
+      multipleWhite: 1,
+      multipleGreen: 1
+    };
+
+    materia.skills.forEach(skillId => {
+      this.addSkill(id, this.skills[skillId], skillId);
+    });
+  }
+
+  private filterRealUsableSkills() {
+    for (let i = this.ffbeChainUnits.length - 1; i >= 0; i--) {
+      for (let j = this.ffbeChainUnits[i].abilities.length - 1; j >= 0; j--) {
+        if (this.ffbeChainUnits[i].abilities[j].firstHit === -1
+          || !this.ffbeChainUnits[i].abilities[j].damage) {
+          this.ffbeChainUnits[i].abilities.splice(j, 1);
+        }
+      }
+
+      if (this.ffbeChainUnits[i].abilities.length === 0) {
+        this.ffbeChainUnits.splice(i, 1);
+      }
+    }
   }
 }
