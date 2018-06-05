@@ -31,6 +31,34 @@
         </div>
       </div>
 
+      <div class="selectRightZoneBox">
+        <div class="selectRightZoneOneThird paddingRightTwoColumns">
+          <label for="chainer_dual">Multi Cast</label>
+          <div id="chainer_multi_cast">
+            <div *ngFor="let multiCast of this.chain[viewOptions].multiCasts; let multiCastIndex = index">
+              Number of cast  <input class="form-control" type="number" id="chainer_multi_cast_count" [(ngModel)]="multiCast.count" (ngModelChange)="saveUnit(viewOptions)">
+              <ss-multiselect-dropdown
+                [options]="multiAbilities[viewOptions][multiCast.count]"
+                [settings]="multiElementsSettings"
+                [texts]="multiAbilitiesTexts"
+                [(ngModel)]="multiCast.abilities"
+                (ngModelChange)="updateMultiCast(viewOptions)">
+              </ss-multiselect-dropdown>
+            </div>
+          </div>
+        </div>
+
+        <div class="selectRightZoneOneThird">
+          <label for="chainer_multi_black">Multicast Black</label>
+          <input class="form-control" type="number" id="chainer_multi_black" [(ngModel)]="chain[viewOptions].multipleBlack" (ngModelChange)="saveUnit(viewOptions)">
+        </div>
+
+        <div class="selectRightZoneOneThird tabletMarginTop paddingRightTwoColumns">
+          <label for="chainer_multi_white">Multicast White</label>
+          <input class="form-control" type="number" id="chainer_multi_white" [(ngModel)]="chain[viewOptions].multipleWhite" (ngModelChange)="saveUnit(viewOptions)">
+        </div>
+      </div>
+
       <div *ngFor="let abilityIndex of chain[viewOptions].castNumber">
         <hr />
         <div class="selectRightZoneBox littleMarginTop">

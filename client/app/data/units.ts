@@ -2219,10 +2219,15 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      500590: 2,
-      704700: 2
-    },
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          500590,
+          704700
+        ]
+      }
+    ],
     multipleBlack: 2,
   },
   {
@@ -3645,12 +3650,17 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {
-      910225: 2,
-      910228: 2,
-      911033: 2,
-      911050: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910225,
+          910228,
+          911033,
+          911050
+        ]
+      }
+    ]
   },
   {
     id: 56,
@@ -4264,10 +4274,15 @@ export const UNITS: any[] = [
         dualable: false
       },
     ],
-    multiSkills: {
-      910520: 2,
-      910526: 2
-    },
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910520,
+          910526
+        ]
+      }
+    ],
     multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
@@ -4366,9 +4381,14 @@ export const UNITS: any[] = [
         dualable: false,
       }
     ],
-    multiSkills: {
-      910537: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910537
+        ]
+      }
+    ]
   },
   {
     id: 69,
@@ -5608,11 +5628,16 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      910610: 2,
-      910611: 2,
-      910613: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910610,
+          910611,
+          910613
+        ]
+      }
+    ]
   },
   {
     id: 88,
@@ -5739,11 +5764,16 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      910652: 2,
-      910653: 2,
-      910654: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910652,
+          910653,
+          910654
+        ]
+      }
+    ]
   },
   {
     id: 89,
@@ -5950,11 +5980,16 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      910751: 3,
-      910752: 3,
-      910757: 3
-    }
+    multiCasts: [
+      {
+        count: 3,
+        abilities: [
+          910751,
+          910752,
+          910757
+        ]
+      }
+    ]
   },
   {
     id: 92,
@@ -6767,13 +6802,18 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      219320: 2,
-      219330: 2,
-      219340: 2,
-      219350: 2,
-      219490: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          219320,
+          219330,
+          219340,
+          219350,
+          219490
+        ]
+      }
+    ]
   },
   {
     id: 99,
@@ -7357,12 +7397,17 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      221420: 2,
-      221430: 2,
-      221390: 2,
-      221450: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          221420,
+          221430,
+          221390,
+          221450
+        ]
+      }
+    ]
   },
   {
     id: 103,
@@ -10022,12 +10067,17 @@ export const UNITS: any[] = [
         base: 1240
       }
     ],
-    multiSkills: {
-      224650: 3,
-      224660: 3,
-      224670: 3,
-      224680: 3
-    },
+    multiCasts: [
+      {
+        count: 3,
+        abilities: [
+          224650,
+          224660,
+          224670,
+          224680
+        ]
+      }
+    ],
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10245,7 +10295,7 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {},
+    multiCasts: {},
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10364,7 +10414,7 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {},
+    multiCasts: {},
     multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10467,9 +10517,14 @@ export const UNITS: any[] = [
         base: 840
       }
     ],
-    multiSkills: {
-      224020: 4
-    },
+    multiCasts: [
+      {
+        count: 4,
+        abilities: [
+          224020
+        ]
+      }
+    ],
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10585,7 +10640,7 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {},
+    multiCasts: {},
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
