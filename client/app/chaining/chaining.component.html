@@ -31,31 +31,28 @@
         </div>
       </div>
 
-      <div class="selectRightZoneBox">
+      <div class="selectRightZoneBox littleMarginTop">
         <div class="selectRightZoneOneThird paddingRightTwoColumns">
-          <label for="chainer_dual">Multi Cast</label>
-          <div id="chainer_multi_cast">
-            <div *ngFor="let multiCast of this.chain[viewOptions].multiCasts; let multiCastIndex = index">
-              Number of cast  <input class="form-control" type="number" id="chainer_multi_cast_count" [(ngModel)]="multiCast.count" (ngModelChange)="saveUnit(viewOptions)">
-              <ss-multiselect-dropdown
-                [options]="multiAbilities[viewOptions][multiCast.count]"
-                [settings]="multiElementsSettings"
-                [texts]="multiAbilitiesTexts"
-                [(ngModel)]="multiCast.abilities"
-                (ngModelChange)="updateMultiCast(viewOptions)">
-              </ss-multiselect-dropdown>
-            </div>
+          <div *ngFor="let multiCast of this.chain[viewOptions].multiCasts; let multiCastIndex = index">
+            Multicast Abilities<input class="form-control" type="number" id="chainer_multi_cast_count" min="1" [(ngModel)]="multiCast.count" (ngModelChange)="updateMultiCast(viewOptions)">
+            <ss-multiselect-dropdown
+              [options]="multiAbilities[viewOptions][multiCast.count]"
+              [settings]="multiAbilitiesSettings"
+              [texts]="multiAbilitiesTexts"
+              [(ngModel)]="multiCast.abilities"
+              (ngModelChange)="updateMultiCast(viewOptions)">
+            </ss-multiselect-dropdown>
           </div>
         </div>
 
         <div class="selectRightZoneOneThird">
-          <label for="chainer_multi_black">Multicast Black</label>
-          <input class="form-control" type="number" id="chainer_multi_black" [(ngModel)]="chain[viewOptions].multipleBlack" (ngModelChange)="saveUnit(viewOptions)">
+          <label for="chainer_multi_black">Multicast Black Magic</label>
+          <input class="form-control" type="number" id="chainer_multi_black" [(ngModel)]="chain[viewOptions].multipleBlack" (ngModelChange)="updateMagicMultiCast(viewOptions)">
         </div>
 
         <div class="selectRightZoneOneThird tabletMarginTop paddingRightTwoColumns">
-          <label for="chainer_multi_white">Multicast White</label>
-          <input class="form-control" type="number" id="chainer_multi_white" [(ngModel)]="chain[viewOptions].multipleWhite" (ngModelChange)="saveUnit(viewOptions)">
+          <label for="chainer_multi_white">Multicast White Magic</label>
+          <input class="form-control" type="number" id="chainer_multi_white" [(ngModel)]="chain[viewOptions].multipleWhite" (ngModelChange)="updateMagicMultiCast(viewOptions)">
         </div>
       </div>
 

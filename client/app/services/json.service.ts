@@ -154,7 +154,10 @@ export class JsonService {
           es: unit.names[5]
         },
         abilities: [],
-        multiCasts: [],
+        multiCasts: [{
+          count: 1,
+          abilities: []
+        }],
         multipleBlack: 1,
         multipleWhite: 1,
         multipleGreen: 1
@@ -501,9 +504,9 @@ export class JsonService {
   private findMultiCastByCount(unitId, count) {
     let position = -1;
 
-    this.ffbeChainUnits[unitId].multiCasts.forEach(multiCast => {
+    this.ffbeChainUnits[unitId].multiCasts.forEach((multiCast, index) => {
       if (multiCast.count === count) {
-        position = multiCast.count
+        position = index;
         return position;
       }
     });
@@ -665,7 +668,10 @@ export class JsonService {
         es: summon.names[5]
       },
       abilities: [],
-      multiCasts: {},
+      multiCasts: [{
+        count: 1,
+        abilities: []
+      }],
       multipleBlack: 1,
       multipleWhite: 1,
       multipleGreen: 1
@@ -777,7 +783,10 @@ export class JsonService {
         es: equipment.strings.name ? equipment.strings.name[5]: ''
       },
       abilities: [],
-      multiCasts: {},
+      multiCasts: [{
+        count: 1,
+        abilities: []
+      }],
       multipleBlack: 1,
       multipleWhite: 1,
       multipleGreen: 1
@@ -803,7 +812,10 @@ export class JsonService {
         es: materia.strings.names ? materia.strings.names[5]: ''
       },
       abilities: [],
-      multiCasts: {},
+      multiCasts: [{
+        count: 1,
+        abilities: []
+      }],
       multipleBlack: 1,
       multipleWhite: 1,
       multipleGreen: 1

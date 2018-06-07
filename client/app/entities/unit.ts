@@ -12,7 +12,10 @@ export class Unit {
     en: 'New Unit'
   };
   name: string = 'New Unit';
-  multiCasts: any[] = [];
+  multiCasts: any[] = [{
+    count: 1,
+    abilities: []
+  }];
   multipleBlack: number = 1;
   multipleWhite: number = 1;
   multipleGreen: number = 1;

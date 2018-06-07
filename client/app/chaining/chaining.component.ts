@@ -71,6 +71,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     dynamicTitleMaxItems: 8
   };
 
+  multiAbilitiesSettings: IMultiSelectSettings = {
+    checkedStyle: 'fontawesome',
+    dynamicTitleMaxItems: 3,
+    buttonClasses: 'btn btn-default btn-secondary multi-abilities-select',
+  };
+
   sliderConfig: any[] = [];
 
   observableUnits: Array<Select2OptionData> = [];
@@ -193,7 +199,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.positionIds[unit.id] = index;
 
       if (!unit.multiCasts) {
-        unit.multiCasts = {};
+        unit.multiCasts = [{
+          count: 1,
+          abilities: []
+        }];
       }
 
       // Needed to correct old createdUnits
@@ -401,6 +410,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.chain[position].activeRename = false;
     this.chain[position].framesGap = (!this.chain[position].framesGap || framesGap !== 0 ? framesGap : this.chain[position].framesGap);
 
+    this.updateMultiplePossibleAbilities(position);
+  }
+
+  private updateMultiplePossibleAbilities(position: number) {
     this.multiAbilities[position] = {};
     if (this.chain[position].multiCasts.length !== 0) {
       this.chain[position].multiCasts.forEach(multiCast => {
@@ -479,6 +492,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       unit.possibleMultiple = [{id: 0}];
       let castNumber = 1;
       let ability = unit.selectedAbilities[0];
+
       if (ability.magicType) {
         if (unit.multipleBlack > 1) {
           unit = this.multipleMagic("black", unit);
@@ -973,9 +987,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   updateMultiCast(position: number) {
+    let min = 1;
     let unitMultiCast = null;
 
     this.chain[position].multiCasts.forEach(multiCast => {
+      if (multiCast.count < min) {
+        multiCast.count = min;
+      }
+
       if (multiCast.count === this.chain[position].castNumber.length) {
         unitMultiCast = multiCast;
       }
@@ -1000,6 +1019,11 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       });
     }
 
+    this.updateMagicMultiCast(position);
+    this.updateMultiplePossibleAbilities(position);
+  }
+
+  updateMagicMultiCast(position: number) {
     this.updateMultipleSkill(this.chain[position]);
     this.saveUnit(position);
   }

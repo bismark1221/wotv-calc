@@ -10295,7 +10295,6 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiCasts: {},
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10414,7 +10413,6 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiCasts: {},
     multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10640,8 +10638,272 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiCasts: {},
     multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 126,
+    names: {
+      en: "Pure Summoner Rydia",
+      tw: "無瑕召喚士莉迪亞",
+      kr: "순수의 소환사 리디아",
+      fr: "Rydia, pure invocatrice",
+      de: "Reine Beschwörerin Rydia",
+      es: "Rydia invocadora pura"
+    },
+    abilities: [
+      {
+        id: 223400,
+        names: {
+          en: "Eidolon Chocobo Kick",
+          tw: "幻獸陸行鳥的踢腿",
+          kr: "환수 초코보의 발차기",
+          fr: "Éon : Coup de chocobo",
+          de: "Beschwörbarer Chocobo: Tritt",
+          es: "Eidolón: patada chocobo"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 50,
+        framesList: "0-10-10-10-10",
+        offset: 16,
+        base: 500
+      },
+      {
+        id: 223420,
+        names: {
+          en: "Eidolon Cockatrice Peck",
+          tw: "幻獸蛇雞獸的喙",
+          kr: "환수 코카트리스의 부리",
+          fr: "Éon : Bec de Coquatrice",
+          de: "Beschwörbarer Basilisk: Schnabel",
+          es: "Eidolón: picotazo de cocatriz"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "earth"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 80,
+        framesList: "0",
+        offset: 16,
+        base: 1000,
+        type: "finish"
+      },
+      {
+        id: 20400,
+        names: {
+          en: "Quake",
+          tw: "地槌",
+          kr: "퀘이크",
+          fr: "Séisme",
+          de: "Beben",
+          es: "Seísmo"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "earth"
+        ],
+        debuffs: [
+          {
+            type: "earth",
+            value: 50
+          }
+        ],
+        dualable: false,
+        firstHit: 160,
+        framesList: "0-22-21-22-23-23-22-23",
+        offset: 16,
+        base: 275
+      },
+      {
+        id: 20390,
+        names: {
+          en: "Tornado",
+          tw: "龍捲風",
+          kr: "토네이도",
+          fr: "Tornade",
+          de: "Tornado",
+          es: "Tornado"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "wind"
+        ],
+        debuffs: [
+          {
+            type: "wind",
+            value: 50
+          }
+        ],
+        dualable: false,
+        firstHit: 212,
+        framesList: "0-12-12-12-12-12-12-12-12-12-12-12",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 20350,
+        names: {
+          en: "Flare",
+          tw: "核爆",
+          kr: "플레어",
+          fr: "Brasier",
+          de: "Flamme",
+          es: "Fulgor"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "fire"
+        ],
+        debuffs: [
+          {
+            type: "water",
+            value: 30
+          }
+        ],
+        dualable: false,
+        firstHit: 240,
+        framesList: "0",
+        offset: 16,
+        base: 230,
+        type: "finish"
+      },
+      {
+        id: 223430,
+        names: {
+          en: "Eidolon Mindflayer's Chant",
+          tw: "幻獸奪心魔的詠唱",
+          kr: "환수 마인드 플레어의 영창",
+          fr: "Éon : Chant de Psychopolype",
+          de: "Beschwörbarer Gedankenschinder: Intonation",
+          es: "Eidolón: canto del mentalis"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "water"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 140,
+        framesList: "0",
+        offset: 16,
+        base: 1600,
+        type: "finish"
+      },
+      {
+        id: 20430,
+        names: {
+          en: "Meteor",
+          tw: "隕石",
+          kr: "메테오",
+          fr: "Météore",
+          de: "Meteo",
+          es: "Meteo"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 350,
+        framesList: "0",
+        offset: 16,
+        base: 250,
+        ignore: 25,
+        type: "finish"
+      },
+      {
+        id: 223410,
+        names: {
+          en: "Eidolon Bomb Explosion",
+          tw: "幻獸炸彈的自爆",
+          kr: "환수 봄의 자폭",
+          fr: "Éon : Explosion de Bombo",
+          de: "Beschwörbarer Bomber : Explosion",
+          es: "Eidolón: explosión bom"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "fire"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 150,
+        framesList: "0",
+        offset: 16,
+        base: 1800,
+        type: "finish"
+      },
+      {
+        id: 204001506,
+        names: {
+          en: "Esper Mist Dragon Breath",
+          tw: "幻獸霧龍的吐息",
+          kr: "환수 미스트 드래곤의 순결",
+          fr: "Éon dragon des brumes : souffle",
+          de: "Esper Nebeldrache: Atem",
+          es: "Esper dragón de Mist: aliento"
+        },
+        hitDamage: [
+          2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3
+        ],
+        castTime: 188,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 188,
+        framesList: "0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+        offset: 16,
+        base: 2000
+      }
+    ],
+    multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
   }

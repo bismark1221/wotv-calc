@@ -84,6 +84,14 @@ button, input, optgroup, select, textarea {
   max-height: 300px;
 }
 
+.multi-abilities-select {
+  margin-top: 10px;
+  width: 227px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media (max-width: 839px) {
   .dropdown-inline {
     width: 100%;
