@@ -154,7 +154,10 @@ export class JsonService {
           es: unit.names[5]
         },
         abilities: [],
-        multiSkills: {},
+        multiCasts: [{
+          count: 1,
+          abilities: []
+        }],
         multipleBlack: 1,
         multipleWhite: 1,
         multipleGreen: 1
@@ -463,7 +466,8 @@ export class JsonService {
     effect = this.findEffect(ability, 0, 3, 1006);
     if (effect) {
       effect[1].forEach(skillId => {
-        this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
+        let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
+        this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(skillId);
       });
     }
 
@@ -472,28 +476,50 @@ export class JsonService {
     // Son vrai 5 cast :                           [0, 3, 98, [5,  704290,  1,  704140,  9999,  1,  0]]
     effect = this.findEffect(ability, 0, 3, 98);
     if (effect ) {                   // && ability.mp_cost === 0
-      // check if 1 is array
+      let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
+
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
-          this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
+          this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(skillId);
         });
       } else {
-        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = !this.ffbeChainUnits[unitId].multiSkills[effect[3]] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[effect[3]] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[effect[3]];
-        // this.ffbeChainUnits[unitId].multiSkills[effect[3]] = effect[0];
+        this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(effect[3]);
       }
     }
 
     effect = this.findEffect(ability, 0, 3, 53);
     if (effect) {                   // && ability.mp_cost === 0
-      // check if 1 is array
+      let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
+
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
-          this.ffbeChainUnits[unitId].multiSkills[skillId] = !this.ffbeChainUnits[unitId].multiSkills[skillId] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[skillId] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[skillId];
+          this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(skillId);
         });
       } else {
-        this.ffbeChainUnits[unitId].multiSkills[effect[3]] = !this.ffbeChainUnits[unitId].multiSkills[effect[3]] || effect[0] > this.ffbeChainUnits[unitId].multiSkills[effect[3]] ? effect[0] : this.ffbeChainUnits[unitId].multiSkills[effect[3]];
+        this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(effect[3]);
       }
     }
+  }
+
+  private findMultiCastByCount(unitId, count) {
+    let position = -1;
+
+    this.ffbeChainUnits[unitId].multiCasts.forEach((multiCast, index) => {
+      if (multiCast.count === count) {
+        position = index;
+        return position;
+      }
+    });
+
+    if (position === -1) {
+      position = this.ffbeChainUnits[unitId].multiCasts.length;
+      this.ffbeChainUnits[unitId].multiCasts.push({
+        count: count,
+        abilities: []
+      });
+    }
+
+    return position;
   }
 
   private unlockSkill(unitId, ability, dataId, level = 0) {
@@ -642,7 +668,10 @@ export class JsonService {
         es: summon.names[5]
       },
       abilities: [],
-      multiSkills: {},
+      multiCasts: [{
+        count: 1,
+        abilities: []
+      }],
       multipleBlack: 1,
       multipleWhite: 1,
       multipleGreen: 1
@@ -754,7 +783,10 @@ export class JsonService {
         es: equipment.strings.name ? equipment.strings.name[5]: ''
       },
       abilities: [],
-      multiSkills: {},
+      multiCasts: [{
+        count: 1,
+        abilities: []
+      }],
       multipleBlack: 1,
       multipleWhite: 1,
       multipleGreen: 1
@@ -780,7 +812,10 @@ export class JsonService {
         es: materia.strings.names ? materia.strings.names[5]: ''
       },
       abilities: [],
-      multiSkills: {},
+      multiCasts: [{
+        count: 1,
+        abilities: []
+      }],
       multipleBlack: 1,
       multipleWhite: 1,
       multipleGreen: 1

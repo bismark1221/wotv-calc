@@ -2219,10 +2219,15 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      500590: 2,
-      704700: 2
-    },
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          500590,
+          704700
+        ]
+      }
+    ],
     multipleBlack: 2,
   },
   {
@@ -3645,12 +3650,17 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {
-      910225: 2,
-      910228: 2,
-      911033: 2,
-      911050: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910225,
+          910228,
+          911033,
+          911050
+        ]
+      }
+    ]
   },
   {
     id: 56,
@@ -4264,10 +4274,15 @@ export const UNITS: any[] = [
         dualable: false
       },
     ],
-    multiSkills: {
-      910520: 2,
-      910526: 2
-    },
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910520,
+          910526
+        ]
+      }
+    ],
     multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
@@ -4366,9 +4381,14 @@ export const UNITS: any[] = [
         dualable: false,
       }
     ],
-    multiSkills: {
-      910537: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910537
+        ]
+      }
+    ]
   },
   {
     id: 69,
@@ -5608,11 +5628,16 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      910610: 2,
-      910611: 2,
-      910613: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910610,
+          910611,
+          910613
+        ]
+      }
+    ]
   },
   {
     id: 88,
@@ -5739,11 +5764,16 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      910652: 2,
-      910653: 2,
-      910654: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          910652,
+          910653,
+          910654
+        ]
+      }
+    ]
   },
   {
     id: 89,
@@ -5950,11 +5980,16 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      910751: 3,
-      910752: 3,
-      910757: 3
-    }
+    multiCasts: [
+      {
+        count: 3,
+        abilities: [
+          910751,
+          910752,
+          910757
+        ]
+      }
+    ]
   },
   {
     id: 92,
@@ -6767,13 +6802,18 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      219320: 2,
-      219330: 2,
-      219340: 2,
-      219350: 2,
-      219490: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          219320,
+          219330,
+          219340,
+          219350,
+          219490
+        ]
+      }
+    ]
   },
   {
     id: 99,
@@ -7357,12 +7397,17 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multiSkills: {
-      221420: 2,
-      221430: 2,
-      221390: 2,
-      221450: 2
-    }
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          221420,
+          221430,
+          221390,
+          221450
+        ]
+      }
+    ]
   },
   {
     id: 103,
@@ -10022,12 +10067,17 @@ export const UNITS: any[] = [
         base: 1240
       }
     ],
-    multiSkills: {
-      224650: 3,
-      224660: 3,
-      224670: 3,
-      224680: 3
-    },
+    multiCasts: [
+      {
+        count: 3,
+        abilities: [
+          224650,
+          224660,
+          224670,
+          224680
+        ]
+      }
+    ],
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10245,7 +10295,6 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {},
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10364,7 +10413,6 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {},
     multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10467,9 +10515,14 @@ export const UNITS: any[] = [
         base: 840
       }
     ],
-    multiSkills: {
-      224020: 4
-    },
+    multiCasts: [
+      {
+        count: 4,
+        abilities: [
+          224020
+        ]
+      }
+    ],
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
@@ -10585,7 +10638,504 @@ export const UNITS: any[] = [
         type: "finish"
       }
     ],
-    multiSkills: {},
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 126,
+    names: {
+      en: "Pure Summoner Rydia",
+      tw: "無瑕召喚士莉迪亞",
+      kr: "순수의 소환사 리디아",
+      fr: "Rydia, pure invocatrice",
+      de: "Reine Beschwörerin Rydia",
+      es: "Rydia invocadora pura"
+    },
+    abilities: [
+      {
+        id: 223400,
+        names: {
+          en: "Eidolon Chocobo Kick",
+          tw: "幻獸陸行鳥的踢腿",
+          kr: "환수 초코보의 발차기",
+          fr: "Éon : Coup de chocobo",
+          de: "Beschwörbarer Chocobo: Tritt",
+          es: "Eidolón: patada chocobo"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 50,
+        framesList: "0-10-10-10-10",
+        offset: 16,
+        base: 500
+      },
+      {
+        id: 223420,
+        names: {
+          en: "Eidolon Cockatrice Peck",
+          tw: "幻獸蛇雞獸的喙",
+          kr: "환수 코카트리스의 부리",
+          fr: "Éon : Bec de Coquatrice",
+          de: "Beschwörbarer Basilisk: Schnabel",
+          es: "Eidolón: picotazo de cocatriz"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "earth"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 80,
+        framesList: "0",
+        offset: 16,
+        base: 1000,
+        type: "finish"
+      },
+      {
+        id: 20400,
+        names: {
+          en: "Quake",
+          tw: "地槌",
+          kr: "퀘이크",
+          fr: "Séisme",
+          de: "Beben",
+          es: "Seísmo"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "earth"
+        ],
+        debuffs: [
+          {
+            type: "earth",
+            value: 50
+          }
+        ],
+        dualable: false,
+        firstHit: 160,
+        framesList: "0-22-21-22-23-23-22-23",
+        offset: 16,
+        base: 275
+      },
+      {
+        id: 20390,
+        names: {
+          en: "Tornado",
+          tw: "龍捲風",
+          kr: "토네이도",
+          fr: "Tornade",
+          de: "Tornado",
+          es: "Tornado"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "wind"
+        ],
+        debuffs: [
+          {
+            type: "wind",
+            value: 50
+          }
+        ],
+        dualable: false,
+        firstHit: 212,
+        framesList: "0-12-12-12-12-12-12-12-12-12-12-12",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 20350,
+        names: {
+          en: "Flare",
+          tw: "核爆",
+          kr: "플레어",
+          fr: "Brasier",
+          de: "Flamme",
+          es: "Fulgor"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "fire"
+        ],
+        debuffs: [
+          {
+            type: "water",
+            value: 30
+          }
+        ],
+        dualable: false,
+        firstHit: 240,
+        framesList: "0",
+        offset: 16,
+        base: 230,
+        type: "finish"
+      },
+      {
+        id: 223430,
+        names: {
+          en: "Eidolon Mindflayer's Chant",
+          tw: "幻獸奪心魔的詠唱",
+          kr: "환수 마인드 플레어의 영창",
+          fr: "Éon : Chant de Psychopolype",
+          de: "Beschwörbarer Gedankenschinder: Intonation",
+          es: "Eidolón: canto del mentalis"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "water"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 140,
+        framesList: "0",
+        offset: 16,
+        base: 1600,
+        type: "finish"
+      },
+      {
+        id: 20430,
+        names: {
+          en: "Meteor",
+          tw: "隕石",
+          kr: "메테오",
+          fr: "Météore",
+          de: "Meteo",
+          es: "Meteo"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 350,
+        framesList: "0",
+        offset: 16,
+        base: 250,
+        ignore: 25,
+        type: "finish"
+      },
+      {
+        id: 223410,
+        names: {
+          en: "Eidolon Bomb Explosion",
+          tw: "幻獸炸彈的自爆",
+          kr: "환수 봄의 자폭",
+          fr: "Éon : Explosion de Bombo",
+          de: "Beschwörbarer Bomber : Explosion",
+          es: "Eidolón: explosión bom"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "fire"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 150,
+        framesList: "0",
+        offset: 16,
+        base: 1800,
+        type: "finish"
+      },
+      {
+        id: 204001506,
+        names: {
+          en: "Esper Mist Dragon Breath",
+          tw: "幻獸霧龍的吐息",
+          kr: "환수 미스트 드래곤의 순결",
+          fr: "Éon dragon des brumes : souffle",
+          de: "Esper Nebeldrache: Atem",
+          es: "Esper dragón de Mist: aliento"
+        },
+        hitDamage: [
+          2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3
+        ],
+        castTime: 188,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 188,
+        framesList: "0-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+        offset: 16,
+        base: 2000
+      }
+    ],
+    multipleBlack: 2,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 127,
+    names: {
+      en: "Atoning Dragoon Kain",
+      tw: "極致龍騎士凱因",
+      kr: "궁극의 용기사 카인",
+      fr: "Kaïn, dragonnier repenti",
+      de: "Sühnender Dragoner Kain",
+      es: "Kain, dragontino redentor"
+    },
+    abilities: [
+      {
+        id: 223500,
+        names: {
+          en: "Piercing Darkness",
+          tw: "刺骨黑暗",
+          kr: "피어싱 스크로",
+          fr: "Ténèbres perçantes",
+          de: "Dunkeldurchstoß",
+          es: "Tiniebla penetrante"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "dark",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 350
+      },
+      {
+        id: 223490,
+        names: {
+          en: "Piercing Aqua",
+          tw: "刺骨冰水",
+          kr: "피어싱 아쿠아",
+          fr: "Eau perçante",
+          de: "Wasserdurchstoß",
+          es: "Agua penetrante"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "water",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 350
+      },
+      {
+        id: 223480,
+        names: {
+          en: "Piercing Air",
+          tw: "刺骨寒風",
+          kr: "피어싱 에어",
+          fr: "Vent perçant",
+          de: "Luftdurchstoß",
+          es: "Viento penetrante"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "wind",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 350
+      },
+      {
+        id: 223470,
+        names: {
+          en: "Sonic Gale",
+          tw: "音速颶風",
+          kr: "소닉 게일",
+          fr: "Siroco sonique",
+          de: "Schallsturm",
+          es: "Siroco sónico"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 6,
+        framesList: "0-8-8-8-8-8-8",
+        offset: 8,
+        base: 225,
+        ignore: 50
+      },
+      {
+        id: 204001606,
+        names: {
+          en: "Dragon's Bane",
+          tw: "龍禍",
+          kr: "드래곤 베인",
+          fr: "Fléau du dragon",
+          de: "Drachenunheil",
+          es: "Pesadilla del dragón"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 182,
+        framesList: "0",
+        offset: 8,
+        base: 570,
+        ignore: 50,
+        type: "finish"
+      }
+    ],
+    multiCasts: [
+      {
+        count: 1,
+        abilities: []
+      }
+    ],
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 128,
+    names: {
+      en: "Yang",
+      tw: "楊",
+      kr: "얀",
+      fr: "Yang",
+      de: "Yang",
+      es: "Yang"
+    },
+    abilities: [
+      {
+        id: 223790,
+        names: {
+          en: "All-out Scuffle",
+          tw: "全力格鬥",
+          kr: "전력 격투",
+          fr: "Rixe totale",
+          de: "Kompromissloser Nahkampf",
+          es: "Reyerta total"
+        },
+        hitDamage: [
+          16, 16, 16, 16, 16, 20
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8",
+        offset: 8,
+        base: 200,
+        ignore: 50
+      },
+      {
+        id: 204000706,
+        names: {
+          en: "Happo Ranbu",
+          tw: "八方亂舞",
+          kr: "팔방난무",
+          fr: "Happo Ranbu",
+          de: "Happo Ranbu",
+          es: "Happo Ranbu"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 32,
+        framesList: "0-3-18-18-3-23-3-20-26-3-34-4",
+        offset: 8,
+        base: 840
+      }
+    ],
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          223790
+        ]
+      }
+    ],
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1

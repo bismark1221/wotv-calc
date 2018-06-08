@@ -11,6 +11,9 @@ For now, you will find the following features :
 
 ##### Change Logs :
 
+08/06
+ - You can now update the multicast abilities by yourself
+
 24/05
  - Add a new page to show chain families
  - It's a 'raw' page, generated from raw data without any check
