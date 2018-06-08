@@ -11,6 +11,9 @@ Le site dispose des fonctionnalités suivantes :
 
 ##### Modifications :
 
+08/06
+ - Vous pouvez désormais mettre à jour vous même les abilités disponibles pour du multi-cast
+
 24/05
 - Ajout d'une nouvelle page pour voir les familles de chaineurs
 - C'est une page 'brut', générer à partir des données sans contrôle

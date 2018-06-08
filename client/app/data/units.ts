@@ -10906,5 +10906,238 @@ export const UNITS: any[] = [
     multipleBlack: 2,
     multipleWhite: 1,
     multipleGreen: 1
+  },
+  {
+    id: 127,
+    names: {
+      en: "Atoning Dragoon Kain",
+      tw: "極致龍騎士凱因",
+      kr: "궁극의 용기사 카인",
+      fr: "Kaïn, dragonnier repenti",
+      de: "Sühnender Dragoner Kain",
+      es: "Kain, dragontino redentor"
+    },
+    abilities: [
+      {
+        id: 223500,
+        names: {
+          en: "Piercing Darkness",
+          tw: "刺骨黑暗",
+          kr: "피어싱 스크로",
+          fr: "Ténèbres perçantes",
+          de: "Dunkeldurchstoß",
+          es: "Tiniebla penetrante"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "dark",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 350
+      },
+      {
+        id: 223490,
+        names: {
+          en: "Piercing Aqua",
+          tw: "刺骨冰水",
+          kr: "피어싱 아쿠아",
+          fr: "Eau perçante",
+          de: "Wasserdurchstoß",
+          es: "Agua penetrante"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "water",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 350
+      },
+      {
+        id: 223480,
+        names: {
+          en: "Piercing Air",
+          tw: "刺骨寒風",
+          kr: "피어싱 에어",
+          fr: "Vent perçant",
+          de: "Luftdurchstoß",
+          es: "Viento penetrante"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "wind",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8-8-8-8-8-8",
+        offset: 8,
+        base: 350
+      },
+      {
+        id: 223470,
+        names: {
+          en: "Sonic Gale",
+          tw: "音速颶風",
+          kr: "소닉 게일",
+          fr: "Siroco sonique",
+          de: "Schallsturm",
+          es: "Siroco sónico"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 6,
+        framesList: "0-8-8-8-8-8-8",
+        offset: 8,
+        base: 225,
+        ignore: 50
+      },
+      {
+        id: 204001606,
+        names: {
+          en: "Dragon's Bane",
+          tw: "龍禍",
+          kr: "드래곤 베인",
+          fr: "Fléau du dragon",
+          de: "Drachenunheil",
+          es: "Pesadilla del dragón"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 182,
+        framesList: "0",
+        offset: 8,
+        base: 570,
+        ignore: 50,
+        type: "finish"
+      }
+    ],
+    multiCasts: [
+      {
+        count: 1,
+        abilities: []
+      }
+    ],
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 128,
+    names: {
+      en: "Yang",
+      tw: "楊",
+      kr: "얀",
+      fr: "Yang",
+      de: "Yang",
+      es: "Yang"
+    },
+    abilities: [
+      {
+        id: 223790,
+        names: {
+          en: "All-out Scuffle",
+          tw: "全力格鬥",
+          kr: "전력 격투",
+          fr: "Rixe totale",
+          de: "Kompromissloser Nahkampf",
+          es: "Reyerta total"
+        },
+        hitDamage: [
+          16, 16, 16, 16, 16, 20
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 2,
+        framesList: "0-8-8-8-8-8",
+        offset: 8,
+        base: 200,
+        ignore: 50
+      },
+      {
+        id: 204000706,
+        names: {
+          en: "Happo Ranbu",
+          tw: "八方亂舞",
+          kr: "팔방난무",
+          fr: "Happo Ranbu",
+          de: "Happo Ranbu",
+          es: "Happo Ranbu"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 32,
+        framesList: "0-3-18-18-3-23-3-20-26-3-34-4",
+        offset: 8,
+        base: 840
+      }
+    ],
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          223790
+        ]
+      }
+    ],
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
   }
 ];

@@ -32,38 +32,6 @@
     ]
   },
   {
-    "family": "65-2-2-2-1-2-1-2-38",
-    "units": [
-      {
-        "id": 401000904,
-        "names": {
-          "en": "Maiden Sakura",
-          "tw": "少女櫻",
-          "kr": "작은 아씨 사쿠라",
-          "fr": "Sakura jeune femme",
-          "de": "Maid Sakura",
-          "es": "Sakura doncella"
-        },
-        "abilities": [
-          {
-            "id": 401000905,
-            "names": {
-              "en": "Arirang",
-              "tw": "阿里郎",
-              "kr": "아리랑",
-              "fr": "Arirang",
-              "de": "Arirang",
-              "es": "Arirang"
-            },
-            "firstHit": 65,
-            "offset": 16,
-            "castTime": 60
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "65-2-2-2-1-2-1-2-12",
     "units": [
       {
@@ -90,6 +58,38 @@
             "firstHit": 65,
             "offset": 8,
             "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "65-2-2-2-1-2-1-2-38",
+    "units": [
+      {
+        "id": 401000904,
+        "names": {
+          "en": "Maiden Sakura",
+          "tw": "少女櫻",
+          "kr": "작은 아씨 사쿠라",
+          "fr": "Sakura jeune femme",
+          "de": "Maid Sakura",
+          "es": "Sakura doncella"
+        },
+        "abilities": [
+          {
+            "id": 401000905,
+            "names": {
+              "en": "Arirang",
+              "tw": "阿里郎",
+              "kr": "아리랑",
+              "fr": "Arirang",
+              "de": "Arirang",
+              "es": "Arirang"
+            },
+            "firstHit": 65,
+            "offset": 16,
+            "castTime": 60
           }
         ]
       }
@@ -3492,6 +3492,61 @@
             "castTime": 8
           }
         ]
+      },
+      {
+        "id": 204001605,
+        "names": {
+          "en": "Atoning Dragoon Kain",
+          "tw": "極致龍騎士凱因",
+          "kr": "궁극의 용기사 카인",
+          "fr": "Kaïn, dragonnier repenti",
+          "de": "Sühnender Dragoner Kain",
+          "es": "Kain, dragontino redentor"
+        },
+        "abilities": [
+          {
+            "id": 223500,
+            "names": {
+              "en": "Piercing Darkness",
+              "tw": "刺骨黑暗",
+              "kr": "피어싱 스크로",
+              "fr": "Ténèbres perçantes",
+              "de": "Dunkeldurchstoß",
+              "es": "Tiniebla penetrante"
+            },
+            "firstHit": 8,
+            "offset": 16,
+            "castTime": 8
+          },
+          {
+            "id": 223490,
+            "names": {
+              "en": "Piercing Aqua",
+              "tw": "刺骨冰水",
+              "kr": "피어싱 아쿠아",
+              "fr": "Eau perçante",
+              "de": "Wasserdurchstoß",
+              "es": "Agua penetrante"
+            },
+            "firstHit": 8,
+            "offset": 16,
+            "castTime": 8
+          },
+          {
+            "id": 223480,
+            "names": {
+              "en": "Piercing Air",
+              "tw": "刺骨寒風",
+              "kr": "피어싱 에어",
+              "fr": "Vent perçant",
+              "de": "Luftdurchstoß",
+              "es": "Viento penetrante"
+            },
+            "firstHit": 8,
+            "offset": 16,
+            "castTime": 8
+          }
+        ]
       }
     ]
   },
@@ -3954,28 +4009,28 @@
     ]
   },
   {
-    "family": "46-6-6-6-6-6",
+    "family": "46-6-6-6-6-13",
     "units": [
       {
-        "id": 401002905,
+        "id": 100012005,
         "names": {
-          "en": "Ray Jack",
-          "tw": "雷佳克",
-          "kr": "레이 잭",
-          "fr": "Ray Jack",
-          "de": "Ray Jack",
-          "es": "Ray Jack"
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
         },
         "abilities": [
           {
-            "id": 910725,
+            "id": 222950,
             "names": {
-              "en": "Sacred Strike",
-              "tw": "聖光直擊",
-              "kr": "세이크리드 스트라이크",
-              "fr": "Frappe sacrée",
-              "de": "Heiliger Hieb",
-              "es": "Golpe sagrado"
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
             },
             "firstHit": 46,
             "offset": 8,
@@ -4099,28 +4154,28 @@
     ]
   },
   {
-    "family": "46-6-6-6-6-13",
+    "family": "46-6-6-6-6-6",
     "units": [
       {
-        "id": 100012005,
+        "id": 401002905,
         "names": {
-          "en": "Nameless Gunner Jake",
-          "tw": "無名槍士傑科",
-          "kr": "무명의 총잡이 제이크",
-          "fr": "Jake, tireur anonyme",
-          "de": "Namenloser Pistolero Jake",
-          "es": "Jake el pistolero anónimo"
+          "en": "Ray Jack",
+          "tw": "雷佳克",
+          "kr": "레이 잭",
+          "fr": "Ray Jack",
+          "de": "Ray Jack",
+          "es": "Ray Jack"
         },
         "abilities": [
           {
-            "id": 222950,
+            "id": 910725,
             "names": {
-              "en": "Vaporiser",
-              "tw": "高熱射線",
-              "kr": "기화 장치",
-              "fr": "Vaporisateur",
-              "de": "Zerstäuber",
-              "es": "Evaporizador"
+              "en": "Sacred Strike",
+              "tw": "聖光直擊",
+              "kr": "세이크리드 스트라이크",
+              "fr": "Frappe sacrée",
+              "de": "Heiliger Hieb",
+              "es": "Golpe sagrado"
             },
             "firstHit": 46,
             "offset": 8,
@@ -5077,6 +5132,38 @@
     ]
   },
   {
+    "family": "2-7-7-7-7-7-7-7-7-7",
+    "units": [
+      {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌",
+          "fr": "Loren",
+          "de": "Loren",
+          "es": "Loren"
+        },
+        "abilities": [
+          {
+            "id": 501960,
+            "names": {
+              "en": "Swiftwind Blade",
+              "tw": "疾風之劍",
+              "kr": "질풍의 검",
+              "fr": "Lame oscillante",
+              "de": "Sturmwindklinge",
+              "es": "Cuchilla veloz"
+            },
+            "firstHit": 2,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "2-7-7-7-8-8-8-8-8-8",
     "units": [
       {
@@ -5113,38 +5200,6 @@
               "fr": "Accélérer",
               "de": "Tempo",
               "es": "Acelerar"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "2-7-7-7-7-7-7-7-7-7",
-    "units": [
-      {
-        "id": 100009105,
-        "names": {
-          "en": "Loren",
-          "tw": "洛倫",
-          "kr": "로렌",
-          "fr": "Loren",
-          "de": "Loren",
-          "es": "Loren"
-        },
-        "abilities": [
-          {
-            "id": 501960,
-            "names": {
-              "en": "Swiftwind Blade",
-              "tw": "疾風之劍",
-              "kr": "질풍의 검",
-              "fr": "Lame oscillante",
-              "de": "Sturmwindklinge",
-              "es": "Cuchilla veloz"
             },
             "firstHit": 2,
             "offset": 8,
@@ -6055,6 +6110,33 @@
         ]
       },
       {
+        "id": 204001605,
+        "names": {
+          "en": "Atoning Dragoon Kain",
+          "tw": "極致龍騎士凱因",
+          "kr": "궁극의 용기사 카인",
+          "fr": "Kaïn, dragonnier repenti",
+          "de": "Sühnender Dragoner Kain",
+          "es": "Kain, dragontino redentor"
+        },
+        "abilities": [
+          {
+            "id": 223470,
+            "names": {
+              "en": "Sonic Gale",
+              "tw": "音速颶風",
+              "kr": "소닉 게일",
+              "fr": "Siroco sonique",
+              "de": "Schallsturm",
+              "es": "Siroco sónico"
+            },
+            "firstHit": 2,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      },
+      {
         "id": 401003505,
         "names": {
           "en": "Explorer Aileen",
@@ -6111,38 +6193,6 @@
     ]
   },
   {
-    "family": "6-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 204001605,
-        "names": {
-          "en": "Atoning Dragoon Kain",
-          "tw": "極致龍騎士凱因",
-          "kr": "궁극의 용기사 카인",
-          "fr": "Kaïn, dragonnier repenti",
-          "de": "Sühnender Dragoner Kain",
-          "es": "Kain, dragontino redentor"
-        },
-        "abilities": [
-          {
-            "id": 223470,
-            "names": {
-              "en": "Sonic Gale",
-              "tw": "音速颶風",
-              "kr": "소닉 게일",
-              "fr": "Siroco sonique",
-              "de": "Schallsturm",
-              "es": "Siroco sónico"
-            },
-            "firstHit": 6,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "10-8-8-8-8-8-8",
     "units": [
       {
@@ -6169,66 +6219,6 @@
             "firstHit": 10,
             "offset": 8,
             "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 209000103,
-        "names": {
-          "en": "Zidane",
-          "tw": "吉坦",
-          "kr": "지탄",
-          "fr": "Djidane",
-          "de": "Zidane",
-          "es": "Yitán"
-        },
-        "abilities": [
-          {
-            "id": 503340,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 503350,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 503360,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
           }
         ]
       }
@@ -6393,6 +6383,66 @@
               "fr": "Fusil à pompe automatique",
               "de": "Vollautomatikflinte",
               "es": "Escopeta automática"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 209000103,
+        "names": {
+          "en": "Zidane",
+          "tw": "吉坦",
+          "kr": "지탄",
+          "fr": "Djidane",
+          "de": "Zidane",
+          "es": "Yitán"
+        },
+        "abilities": [
+          {
+            "id": 503340,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 503350,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 503360,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
             },
             "firstHit": 42,
             "offset": 16,
@@ -6687,38 +6737,6 @@
     ]
   },
   {
-    "family": "42-8-8-8-8-8-8-9",
-    "units": [
-      {
-        "id": 310000105,
-        "names": {
-          "en": "2B",
-          "tw": "2B",
-          "kr": "2B",
-          "fr": "2B",
-          "de": "2B",
-          "es": "2B"
-        },
-        "abilities": [
-          {
-            "id": 504030,
-            "names": {
-              "en": "Steel Pipe",
-              "tw": "鐵管",
-              "kr": "쇠 파이프",
-              "fr": "Barre de fer",
-              "de": "Stahlröhre",
-              "es": "Tubo de hierro"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "42-8-8-8-8-8-6-8",
     "units": [
       {
@@ -6829,6 +6847,38 @@
               "fr": "Energétik + 2",
               "de": "Kostenlose Energie + 2",
               "es": "Energía libre + 2"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-8-8-8-8-8-8-9",
+    "units": [
+      {
+        "id": 310000105,
+        "names": {
+          "en": "2B",
+          "tw": "2B",
+          "kr": "2B",
+          "fr": "2B",
+          "de": "2B",
+          "es": "2B"
+        },
+        "abilities": [
+          {
+            "id": 504030,
+            "names": {
+              "en": "Steel Pipe",
+              "tw": "鐵管",
+              "kr": "쇠 파이프",
+              "fr": "Barre de fer",
+              "de": "Stahlröhre",
+              "es": "Tubo de hierro"
             },
             "firstHit": 42,
             "offset": 16,
@@ -7561,66 +7611,6 @@
             "firstHit": 60,
             "offset": 16,
             "castTime": 58
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "2-8-8-8-8-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 204001605,
-        "names": {
-          "en": "Atoning Dragoon Kain",
-          "tw": "極致龍騎士凱因",
-          "kr": "궁극의 용기사 카인",
-          "fr": "Kaïn, dragonnier repenti",
-          "de": "Sühnender Dragoner Kain",
-          "es": "Kain, dragontino redentor"
-        },
-        "abilities": [
-          {
-            "id": 223500,
-            "names": {
-              "en": "Piercing Darkness",
-              "tw": "刺骨黑暗",
-              "kr": "피어싱 스크로",
-              "fr": "Ténèbres perçantes",
-              "de": "Dunkeldurchstoß",
-              "es": "Tiniebla penetrante"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
-          },
-          {
-            "id": 223490,
-            "names": {
-              "en": "Piercing Aqua",
-              "tw": "刺骨冰水",
-              "kr": "피어싱 아쿠아",
-              "fr": "Eau perçante",
-              "de": "Wasserdurchstoß",
-              "es": "Agua penetrante"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
-          },
-          {
-            "id": 223480,
-            "names": {
-              "en": "Piercing Air",
-              "tw": "刺骨寒風",
-              "kr": "피어싱 에어",
-              "fr": "Vent perçant",
-              "de": "Luftdurchstoß",
-              "es": "Viento penetrante"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
           }
         ]
       }
