@@ -611,6 +611,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.saveUnit(position);
     this.idSelected[position] = this.selectedUnits[position].id;
 
+    this.updateChangedUnit(position, [this.chain[position].abilities[0].id], 0);
+    this.chain[position] = this.updateMultipleSkill(this.chain[position]);
+
     this.angulartics.eventTrack.next({ action: 'createNewUnit', properties: { category: 'chain' }});
   }
 
