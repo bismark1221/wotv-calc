@@ -36,7 +36,6 @@ import { HowToComponent } from './how-to/how-to.component';
 import { RequestsComponent } from './requests/requests.component';
 import { JsonComponent } from './json/json.component';
 import { FamiliesComponent } from './families/families.component';
-import { GenerateFamiliesComponent } from './families/generate.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
@@ -77,8 +76,7 @@ export function createTranslateLoader(http: HttpClient) {
     HowToComponent,
     RequestsComponent,
     JsonComponent,
-    FamiliesComponent,
-    GenerateFamiliesComponent
+    FamiliesComponent
   ],
   imports: [
     BrowserModule,

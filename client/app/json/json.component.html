@@ -1,5 +1,20 @@
+<!-- <div>
+  ### Raw Json Units ###
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsedRaw = !isCollapsedRaw" [attr.aria-expanded]="!isCollapsedRaw">
+    Toggle
+  </button>
+  <div id="dataRawJson" [ngbCollapse]="isCollapsedRaw">
+    <pre [innerHtml]="units | prettyjson"></pre>
+  </div>
+</div> -->
+
+### Raw Families ###
+<div>
+  <textarea id="rawJson">{{ families | json }}</textarea>
+</div>
+
 ### Units ###
-<div *ngFor="let unit of ffbeChainUnits; let j = index">
+<div *ngFor="let unit of units; let j = index">
   {{j}} -- {{unit.names.en}}
   <button type="button" class="btn btn-outline-primary" (click)="isCollapsed[j] = !isCollapsed[j]" [attr.aria-expanded]="!isCollapsed[j]">
     Toggle
@@ -9,12 +24,13 @@
   </div>
 </div>
 
-<!-- <div>
-  Raw Json
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsedRaw = !isCollapsedRaw" [attr.aria-expanded]="!isCollapsedRaw">
+### Families ###
+<div *ngFor="let family of families; let j = index">
+  {{ family.family }}
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsedFamily[j] = !isCollapsedFamily[j]" [attr.aria-expanded]="!isCollapsedFamily[j]">
     Toggle
   </button>
-  <div id="dataRawJson" [ngbCollapse]="isCollapsedRaw">
-    <pre [innerHtml]="ffbeChainUnits | prettyjson"></pre>
+  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsedFamily[j]">
+    <pre [innerHtml]="family | prettyjson"></pre>
   </div>
-</div> -->
+</div>

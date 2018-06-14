@@ -5978,6 +5978,39 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false
+      },
+      {
+        id: 911140,
+        names: {
+          en: "Icicle Press + 2",
+          tw: "冰雪重壓 + 2",
+          kr: "아이시클 프레스 + 2",
+          fr: "Pression de stalactite + 2",
+          de: "Eiszapfenmangel + 2",
+          es: "Carámbano de hielo + 2"
+        },
+        hitDamage: [
+          50, 50
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "ice",
+            value: 75
+          },
+          {
+            type: "water",
+            value: 75
+          }
+        ],
+        dualable: false,
+        firstHit: 110,
+        framesList: "0-15",
+        offset: 16,
+        base: 250
       }
     ],
     multiCasts: [
@@ -6076,8 +6109,44 @@ export const UNITS: any[] = [
         hitDamage: [16, 17, 16, 17, 17, 17],
         firstHit: 46,
         castTime: 40,
+        debuffs: [
+          {
+            type: "light",
+            value: 50
+          }
+        ],
         offset: 8,
         base: 220,
+        ignore: 50
+      },
+      {
+        id: 911158,
+        names: {
+          en: "Sacred Strike + 2",
+          tw: "聖光直擊 + 2",
+          kr: "세이크리드 스트라이크 + 2",
+          fr: "Frappe sacrée + 2",
+          de: "Heiliger Hieb + 2",
+          es: "Golpe sagrado + 2"
+        },
+        hitDamage: [
+          6, 6, 7, 7, 8, 8, 8, 50
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [
+          {
+            type: "light",
+            value: 50
+          }
+        ],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 260,
         ignore: 50
       },
       {
@@ -11139,5 +11208,226 @@ export const UNITS: any[] = [
     multipleBlack: 1,
     multipleWhite: 1,
     multipleGreen: 1
+  },
+  {
+    id: 129,
+    names: {
+      en: "Lexa",
+      tw: "萊基薩",
+      kr: "렉사",
+      fr: "Lexa",
+      de: "Lexa",
+      es: "Lexa"
+    },
+    abilities: [
+      {
+        id: 20330,
+        names: {
+          en: "Aeroja",
+          tw: "強勁風",
+          kr: "에어로쟈",
+          fr: "Vent max",
+          de: "Aeroka",
+          es: "Aero+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "wind"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 170,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 225280,
+        names: {
+          en: "Liber Magika",
+          tw: "魔法之書",
+          kr: "리베르 마기카",
+          fr: "Liber Magika",
+          de: "Liber Magika",
+          es: "Liber Magika"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 147,
+        framesList: "0",
+        offset: 16,
+        base: 200,
+        ignore: 25,
+        type: "finish"
+      },
+      {
+        id: 20390,
+        names: {
+          en: "Tornado",
+          tw: "龍捲風",
+          kr: "토네이도",
+          fr: "Tornade",
+          de: "Tornado",
+          es: "Tornado"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "wind"
+        ],
+        debuffs: [
+          {
+            type: "wind",
+            value: 50
+          }
+        ],
+        dualable: false,
+        firstHit: 212,
+        framesList: "0-12-12-12-12-12-12-12-12-12-12-12",
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 100014106,
+        names: {
+          en: "Fortis Tempest",
+          tw: "強音暴風",
+          kr: "포르티스 템페스타",
+          fr: "Forte tempête",
+          de: "Sturmkraft",
+          es: "Fuerte tempestad"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 0,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "wind"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 200,
+        framesList: "0-10-10-10-10",
+        offset: 8,
+        base: 740
+      }
+    ],
+    multipleBlack: 2,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 130,
+    names: {
+      en: "Maritime Strategist Nichol",
+      tw: "洸洋軍師尼科爾",
+      kr: "광양의 참모 니콜",
+      fr: "Nichol, stratège maritime",
+      de: "Maritimer Stratege Nichol",
+      es: "Nichol estratega marino"
+    },
+    abilities: [
+      {
+        id: 225080,
+        names: {
+          en: "Sharp Kick",
+          tw: "猛烈踢擊",
+          kr: "샤프 킥",
+          fr: "Coup de pied aiguisé",
+          de: "Scharfer Tritt",
+          es: "Patada aguda"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 0,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 5,
+        framesList: "0",
+        offset: 8,
+        base: 270,
+        type: "finish"
+      },
+      {
+        id: 20300,
+        names: {
+          en: "Blizzaja",
+          tw: "強暴雪",
+          kr: "블리자쟈",
+          fr: "Glace max",
+          de: "Eiska",
+          es: "Hielo+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "ice"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 240,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      },
+      {
+        id: 20320,
+        names: {
+          en: "Waterja",
+          tw: "強流水",
+          kr: "워터쟈",
+          fr: "Eau max",
+          de: "Aquaka",
+          es: "Aqua+++"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: "black",
+        elements: [
+          "water"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 190,
+        framesList: "0",
+        offset: 16,
+        base: 600,
+        type: "finish"
+      }
+    ],
+    multipleBlack: 2,
+    multipleWhite: 2,
+    multipleGreen: 2
   }
 ];

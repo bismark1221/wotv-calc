@@ -32,38 +32,6 @@
     ]
   },
   {
-    "family": "65-2-2-2-1-2-1-2-12",
-    "units": [
-      {
-        "id": 100000603,
-        "names": {
-          "en": "Sakura",
-          "tw": "櫻",
-          "kr": "사쿠라",
-          "fr": "Sakura",
-          "de": "Sakura",
-          "es": "Sakura"
-        },
-        "abilities": [
-          {
-            "id": 100000605,
-            "names": {
-              "en": "Eternal Pain",
-              "tw": "永久劇痛",
-              "kr": "영원한 고통의 굴레",
-              "fr": "Douleur éternelle",
-              "de": "Ewiger Schmerz",
-              "es": "Dolor eterno"
-            },
-            "firstHit": 65,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "65-2-2-2-1-2-1-2-38",
     "units": [
       {
@@ -90,6 +58,38 @@
             "firstHit": 65,
             "offset": 16,
             "castTime": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "65-2-2-2-1-2-1-2-12",
+    "units": [
+      {
+        "id": 100000603,
+        "names": {
+          "en": "Sakura",
+          "tw": "櫻",
+          "kr": "사쿠라",
+          "fr": "Sakura",
+          "de": "Sakura",
+          "es": "Sakura"
+        },
+        "abilities": [
+          {
+            "id": 100000605,
+            "names": {
+              "en": "Eternal Pain",
+              "tw": "永久劇痛",
+              "kr": "영원한 고통의 굴레",
+              "fr": "Douleur éternelle",
+              "de": "Ewiger Schmerz",
+              "es": "Dolor eterno"
+            },
+            "firstHit": 65,
+            "offset": 8,
+            "castTime": 0
           }
         ]
       }
@@ -352,38 +352,6 @@
     ]
   },
   {
-    "family": "42-3-6-3-5-3-20-3-34-3",
-    "units": [
-      {
-        "id": 100001201,
-        "names": {
-          "en": "Eldin",
-          "tw": "埃爾丹",
-          "kr": "엘딘",
-          "fr": "Eldin",
-          "de": "Eldin",
-          "es": "Eldin"
-        },
-        "abilities": [
-          {
-            "id": 100001202,
-            "names": {
-              "en": "Toxic Gift",
-              "tw": "贈毒",
-              "kr": "맹독 선물",
-              "fr": "Cadeau empoisonné",
-              "de": "Giftgeschenk",
-              "es": "Regalo envenenado"
-            },
-            "firstHit": 42,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "42-3-3-3-3-3-3-3-3-3",
     "units": [
       {
@@ -479,6 +447,38 @@
             "firstHit": 42,
             "offset": 16,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-3-6-3-5-3-20-3-34-3",
+    "units": [
+      {
+        "id": 100001201,
+        "names": {
+          "en": "Eldin",
+          "tw": "埃爾丹",
+          "kr": "엘딘",
+          "fr": "Eldin",
+          "de": "Eldin",
+          "es": "Eldin"
+        },
+        "abilities": [
+          {
+            "id": 100001202,
+            "names": {
+              "en": "Toxic Gift",
+              "tw": "贈毒",
+              "kr": "맹독 선물",
+              "fr": "Cadeau empoisonné",
+              "de": "Giftgeschenk",
+              "es": "Regalo envenenado"
+            },
+            "firstHit": 42,
+            "offset": 8,
+            "castTime": 0
           }
         ]
       }
@@ -3438,7 +3438,7 @@
               "tw": "快捷進擊 + 1",
               "kr": "퀵 트릭 + 1",
               "fr": "Attaque éclair + 1",
-              "de": "Schneller Treffer + 1",
+              "de": "Rapidschlag + 1",
               "es": "Golpe rápido + 1"
             },
             "firstHit": 22,
@@ -3452,7 +3452,7 @@
               "tw": "快捷進擊 + 2",
               "kr": "퀵 트릭 + 2",
               "fr": "Attaque éclair + 2",
-              "de": "Schneller Treffer + 2",
+              "de": "Rapidschlag + 2",
               "es": "Golpe rápido + 2"
             },
             "firstHit": 22,
@@ -3697,7 +3697,7 @@
             "names": {
               "en": "Esper Mist Dragon Breath",
               "tw": "幻獸霧龍的吐息",
-              "kr": "환수 미스트 드래곤의 순결",
+              "kr": "환수 미스트 드래곤의 숨결",
               "fr": "Éon dragon des brumes : souffle",
               "de": "Esper Nebeldrache: Atem",
               "es": "Esper dragón de Mist: aliento"
@@ -3945,38 +3945,6 @@
     ]
   },
   {
-    "family": "28-6-6-6-6-29",
-    "units": [
-      {
-        "id": 100010805,
-        "names": {
-          "en": "Duke",
-          "tw": "杜克",
-          "kr": "듀크",
-          "fr": "Duke",
-          "de": "Duke",
-          "es": "Duke"
-        },
-        "abilities": [
-          {
-            "id": 216450,
-            "names": {
-              "en": "Hexa Thrust",
-              "tw": "六角突擊",
-              "kr": "헥사 드러스트",
-              "fr": "Hexaestoc",
-              "de": "Sechserstoß",
-              "es": "Hexaestoque"
-            },
-            "firstHit": 28,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "28-6-6-6-6-11",
     "units": [
       {
@@ -4009,30 +3977,30 @@
     ]
   },
   {
-    "family": "46-6-6-6-6-13",
+    "family": "28-6-6-6-6-29",
     "units": [
       {
-        "id": 100012005,
+        "id": 100010805,
         "names": {
-          "en": "Nameless Gunner Jake",
-          "tw": "無名槍士傑科",
-          "kr": "무명의 총잡이 제이크",
-          "fr": "Jake, tireur anonyme",
-          "de": "Namenloser Pistolero Jake",
-          "es": "Jake el pistolero anónimo"
+          "en": "Duke",
+          "tw": "杜克",
+          "kr": "듀크",
+          "fr": "Duke",
+          "de": "Duke",
+          "es": "Duke"
         },
         "abilities": [
           {
-            "id": 222950,
+            "id": 216450,
             "names": {
-              "en": "Vaporiser",
-              "tw": "高熱射線",
-              "kr": "기화 장치",
-              "fr": "Vaporisateur",
-              "de": "Zerstäuber",
-              "es": "Evaporizador"
+              "en": "Hexa Thrust",
+              "tw": "六角突擊",
+              "kr": "헥사 드러스트",
+              "fr": "Hexaestoc",
+              "de": "Sechserstoß",
+              "es": "Hexaestoque"
             },
-            "firstHit": 46,
+            "firstHit": 28,
             "offset": 8,
             "castTime": 0
           }
@@ -4154,6 +4122,38 @@
     ]
   },
   {
+    "family": "46-6-6-6-6-13",
+    "units": [
+      {
+        "id": 100012005,
+        "names": {
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
+        },
+        "abilities": [
+          {
+            "id": 222950,
+            "names": {
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
+            },
+            "firstHit": 46,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "46-6-6-6-6-6",
     "units": [
       {
@@ -4176,6 +4176,20 @@
               "fr": "Frappe sacrée",
               "de": "Heiliger Hieb",
               "es": "Golpe sagrado"
+            },
+            "firstHit": 46,
+            "offset": 8,
+            "castTime": 0
+          },
+          {
+            "id": 911157,
+            "names": {
+              "en": "Sacred Strike + 1",
+              "tw": "聖光直擊 + 1",
+              "kr": "세이크리드 스트라이크 + 1",
+              "fr": "Frappe sacrée + 1",
+              "de": "Heiliger Hieb + 1",
+              "es": "Golpe sagrado + 1"
             },
             "firstHit": 46,
             "offset": 8,
@@ -4637,6 +4651,31 @@
             "firstHit": 9,
             "offset": 16,
             "castTime": 9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "20-7-5-7-7-7-7",
+    "units": [
+      {
+        "id": 401004005,
+        "names": {},
+        "abilities": [
+          {
+            "id": 911095,
+            "names": {
+              "en": "undefined",
+              "tw": "undefined",
+              "kr": "undefined",
+              "fr": "undefined",
+              "de": "undefined",
+              "es": "undefined"
+            },
+            "firstHit": 20,
+            "offset": 16,
+            "castTime": 20
           }
         ]
       }
@@ -5132,38 +5171,6 @@
     ]
   },
   {
-    "family": "2-7-7-7-7-7-7-7-7-7",
-    "units": [
-      {
-        "id": 100009105,
-        "names": {
-          "en": "Loren",
-          "tw": "洛倫",
-          "kr": "로렌",
-          "fr": "Loren",
-          "de": "Loren",
-          "es": "Loren"
-        },
-        "abilities": [
-          {
-            "id": 501960,
-            "names": {
-              "en": "Swiftwind Blade",
-              "tw": "疾風之劍",
-              "kr": "질풍의 검",
-              "fr": "Lame oscillante",
-              "de": "Sturmwindklinge",
-              "es": "Cuchilla veloz"
-            },
-            "firstHit": 2,
-            "offset": 8,
-            "castTime": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "2-7-7-7-8-8-8-8-8-8",
     "units": [
       {
@@ -5200,6 +5207,38 @@
               "fr": "Accélérer",
               "de": "Tempo",
               "es": "Acelerar"
+            },
+            "firstHit": 2,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "2-7-7-7-7-7-7-7-7-7",
+    "units": [
+      {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌",
+          "fr": "Loren",
+          "de": "Loren",
+          "es": "Loren"
+        },
+        "abilities": [
+          {
+            "id": 501960,
+            "names": {
+              "en": "Swiftwind Blade",
+              "tw": "疾風之劍",
+              "kr": "질풍의 검",
+              "fr": "Lame oscillante",
+              "de": "Sturmwindklinge",
+              "es": "Cuchilla veloz"
             },
             "firstHit": 2,
             "offset": 8,
@@ -5839,38 +5878,6 @@
     ]
   },
   {
-    "family": "42-8-8-14-10-10",
-    "units": [
-      {
-        "id": 100010303,
-        "names": {
-          "en": "Yuri",
-          "tw": "百合",
-          "kr": "유리",
-          "fr": "Yuri",
-          "de": "Yuri",
-          "es": "Yuri"
-        },
-        "abilities": [
-          {
-            "id": 218230,
-            "names": {
-              "en": "Mugen - Fake",
-              "tw": "夢幻之術・偽",
-              "kr": "몽환술·거짓",
-              "fr": "Rêverie - Tromperie",
-              "de": "Mugen - Täuschung",
-              "es": "Mugen - Falsedad"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "42-8-8-8-8-8",
     "units": [
       {
@@ -5920,6 +5927,38 @@
               "fr": "Frappe lumineuse",
               "de": "Leuchthieb",
               "es": "Golpe de luz"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-8-8-14-10-10",
+    "units": [
+      {
+        "id": 100010303,
+        "names": {
+          "en": "Yuri",
+          "tw": "百合",
+          "kr": "유리",
+          "fr": "Yuri",
+          "de": "Yuri",
+          "es": "Yuri"
+        },
+        "abilities": [
+          {
+            "id": 218230,
+            "names": {
+              "en": "Mugen - Fake",
+              "tw": "夢幻之術・偽",
+              "kr": "몽환술·거짓",
+              "fr": "Rêverie - Tromperie",
+              "de": "Mugen - Täuschung",
+              "es": "Mugen - Falsedad"
             },
             "firstHit": 42,
             "offset": 16,
@@ -6225,6 +6264,66 @@
     ]
   },
   {
+    "family": "42-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 209000103,
+        "names": {
+          "en": "Zidane",
+          "tw": "吉坦",
+          "kr": "지탄",
+          "fr": "Djidane",
+          "de": "Zidane",
+          "es": "Yitán"
+        },
+        "abilities": [
+          {
+            "id": 503340,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 503350,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 503360,
+            "names": {
+              "en": "Lucky Seven",
+              "tw": "幸運7",
+              "kr": "럭키 세븐",
+              "fr": "Coudepot",
+              "de": "Glückssieben",
+              "es": "Súper 7"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-8-8-8-8-8-16",
     "units": [
       {
@@ -6383,66 +6482,6 @@
               "fr": "Fusil à pompe automatique",
               "de": "Vollautomatikflinte",
               "es": "Escopeta automática"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 209000103,
-        "names": {
-          "en": "Zidane",
-          "tw": "吉坦",
-          "kr": "지탄",
-          "fr": "Djidane",
-          "de": "Zidane",
-          "es": "Yitán"
-        },
-        "abilities": [
-          {
-            "id": 503340,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 503350,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
-            },
-            "firstHit": 42,
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 503360,
-            "names": {
-              "en": "Lucky Seven",
-              "tw": "幸運7",
-              "kr": "럭키 세븐",
-              "fr": "Coudepot",
-              "de": "Glückssieben",
-              "es": "Súper 7"
             },
             "firstHit": 42,
             "offset": 16,
@@ -7268,6 +7307,26 @@
               "fr": "Fleurs du chaos",
               "de": "Chaosblüten",
               "es": "Flores del caos"
+            },
+            "firstHit": 2,
+            "offset": 8,
+            "castTime": 0
+          }
+        ]
+      },
+      {
+        "id": 401004005,
+        "names": {},
+        "abilities": [
+          {
+            "id": 911096,
+            "names": {
+              "en": "undefined",
+              "tw": "undefined",
+              "kr": "undefined",
+              "fr": "undefined",
+              "de": "undefined",
+              "es": "undefined"
             },
             "firstHit": 2,
             "offset": 8,
@@ -9628,6 +9687,33 @@
               "fr": "Coup mystique + 2",
               "de": "Mystischer Stoß + 2",
               "es": "Estoque místico + 2"
+            },
+            "firstHit": 42,
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401002905,
+        "names": {
+          "en": "Ray Jack",
+          "tw": "雷佳克",
+          "kr": "레이 잭",
+          "fr": "Ray Jack",
+          "de": "Ray Jack",
+          "es": "Ray Jack"
+        },
+        "abilities": [
+          {
+            "id": 911158,
+            "names": {
+              "en": "Sacred Strike + 2",
+              "tw": "聖光直擊 + 2",
+              "kr": "세이크리드 스트라이크 + 2",
+              "fr": "Frappe sacrée + 2",
+              "de": "Heiliger Hieb + 2",
+              "es": "Golpe sagrado + 2"
             },
             "firstHit": 42,
             "offset": 16,
@@ -12127,6 +12213,24 @@
             "firstHit": 8,
             "offset": 8,
             "castTime": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "93-20-8-8-8-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 401004005,
+        "names": {},
+        "abilities": [
+          {
+            "id": 401004006,
+            "names": {},
+            "firstHit": 93,
+            "offset": 16,
+            "castTime": 140
           }
         ]
       }
