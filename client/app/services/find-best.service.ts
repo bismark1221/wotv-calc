@@ -71,10 +71,10 @@ export class FindBestService {
           unit.selectedAbilities.forEach(ability => {
             if (ability.type === "chain") {
               unit.abilitiesType = "chain";
-              return;
             }
-            unit.minFrame = ability.range.min > unit.minFrames ? ability.range.min : unit.minFrame;
-            unit.maxFrame = ability.range.max > unit.maxFrames ? ability.range.max : unit.maxFrame;
+
+            unit.minFrame = ability.range.min < unit.minFrame ? ability.range.min : unit.minFrame;
+            unit.maxFrame = ability.range.max > unit.maxFrame ? ability.range.max : unit.maxFrame;
           });
 
           if (unit.abilitiesType === 'chain') {
