@@ -1,7 +1,7 @@
 import {epsilon} from "../math";
 import albers from "./albers";
 import conicEqualArea from "./conicEqualArea";
-import {fitExtent, fitSize} from "./fit";
+import {fitExtent, fitSize, fitWidth, fitHeight} from "./fit";
 
 // The projections must have mutually exclusive clip regions on the sphere,
 // as this will avoid emitting interleaving lines and polygons.
@@ -92,6 +92,14 @@ export default function() {
 
   albersUsa.fitSize = function(size, object) {
     return fitSize(albersUsa, size, object);
+  };
+
+  albersUsa.fitWidth = function(width, object) {
+    return fitWidth(albersUsa, width, object);
+  };
+
+  albersUsa.fitHeight = function(height, object) {
+    return fitHeight(albersUsa, height, object);
   };
 
   function reset() {

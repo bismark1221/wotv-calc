@@ -1,11 +1,12 @@
 import {cartesian, cartesianAddInPlace, cartesianCross, cartesianDot, cartesianScale, spherical} from "../cartesian";
 import {circleStream} from "../circle";
-import {abs, cos, epsilon, pi, sqrt} from "../math";
+import {abs, cos, epsilon, pi, radians, sqrt} from "../math";
 import pointEqual from "../pointEqual";
 import clip from "./index";
 
-export default function(radius, delta) {
+export default function(radius) {
   var cr = cos(radius),
+      delta = 6 * radians,
       smallRadius = cr > 0,
       notHemisphere = abs(cr) > epsilon; // TODO optimise for this common case
 

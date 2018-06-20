@@ -18,6 +18,10 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * @fileoverview
+ * @suppress {missingRequire}
+ */
 (function (global) {
     // Detect and setup WTF.
     var wtfTrace = null;
@@ -33,7 +37,7 @@
         }
         return false;
     })();
-    var WtfZoneSpec = (function () {
+    var WtfZoneSpec = /** @class */ (function () {
         function WtfZoneSpec() {
             this.name = 'WTF';
         }
@@ -84,14 +88,13 @@
             instance(zonePathName(targetZone), shallowObj(task.data, 2));
             return retValue;
         };
-        
+        WtfZoneSpec.forkInstance = wtfEnabled && wtfEvents.createInstance('Zone:fork(ascii zone, ascii newZone)');
+        WtfZoneSpec.scheduleInstance = {};
+        WtfZoneSpec.cancelInstance = {};
+        WtfZoneSpec.invokeScope = {};
+        WtfZoneSpec.invokeTaskScope = {};
         return WtfZoneSpec;
     }());
-    WtfZoneSpec.forkInstance = wtfEnabled && wtfEvents.createInstance('Zone:fork(ascii zone, ascii newZone)');
-    WtfZoneSpec.scheduleInstance = {};
-    WtfZoneSpec.cancelInstance = {};
-    WtfZoneSpec.invokeScope = {};
-    WtfZoneSpec.invokeTaskScope = {};
     function shallowObj(obj, depth) {
         if (!depth)
             return null;

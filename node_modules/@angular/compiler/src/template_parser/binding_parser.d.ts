@@ -5,8 +5,8 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import { SecurityContext } from '@angular/core';
 import { CompileDirectiveSummary, CompilePipeSummary } from '../compile_metadata';
+import { SecurityContext } from '../core';
 import { ASTWithSource, BindingPipe, RecursiveAstVisitor } from '../expression_parser/ast';
 import { Parser } from '../expression_parser/parser';
 import { InterpolationConfig } from '../ml_parser/interpolation_config';
@@ -26,9 +26,9 @@ export declare class BoundProperty {
     expression: ASTWithSource;
     type: BoundPropertyType;
     sourceSpan: ParseSourceSpan;
-    constructor(name: string, expression: ASTWithSource, type: BoundPropertyType, sourceSpan: ParseSourceSpan);
     readonly isLiteral: boolean;
     readonly isAnimation: boolean;
+    constructor(name: string, expression: ASTWithSource, type: BoundPropertyType, sourceSpan: ParseSourceSpan);
 }
 /**
  * Parses bindings in templates and in the directive host area.
@@ -42,6 +42,7 @@ export declare class BindingParser {
     private _usedPipes;
     constructor(_exprParser: Parser, _interpolationConfig: InterpolationConfig, _schemaRegistry: ElementSchemaRegistry, pipes: CompilePipeSummary[], _targetErrors: ParseError[]);
     getUsedPipes(): CompilePipeSummary[];
+    createBoundHostProperties(dirMeta: CompileDirectiveSummary, sourceSpan: ParseSourceSpan): BoundProperty[] | null;
     createDirectiveHostPropertyAsts(dirMeta: CompileDirectiveSummary, elementSelector: string, sourceSpan: ParseSourceSpan): BoundElementPropertyAst[] | null;
     createDirectiveHostEventAsts(dirMeta: CompileDirectiveSummary, sourceSpan: ParseSourceSpan): BoundEventAst[] | null;
     parseInterpolation(value: string, sourceSpan: ParseSourceSpan): ASTWithSource;
@@ -65,7 +66,6 @@ export declare class BindingParser {
      * @param propName the name of the property / attribute
      * @param sourceSpan
      * @param isAttr true when binding to an attribute
-     * @private
      */
     private _validatePropertyOrAttributeName(propName, sourceSpan, isAttr);
 }

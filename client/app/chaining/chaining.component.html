@@ -105,7 +105,9 @@
               </label>
               <div class="input-group">
                 <input class="form-control" type="number" id="chainer_base" [(ngModel)]="ability.base" (ngModelChange)="saveUnit(viewOptions)">
-                <span class="input-group-addon" id="unit_base_percent">%</span>
+                <div class="input-group-append">
+                  <span class="input-group-text" id="unit_base_percent">%</span>
+                </div>
               </div>
             </div>
 
@@ -113,7 +115,9 @@
               <label for="chainer_ignore">{{ 'chain.label.ignore' | translate }}</label>
               <div class="input-group">
                 <input class="form-control" type="number" id="chainer_ignore" [(ngModel)]="ability.ignore" (ngModelChange)="saveUnit(viewOptions)">
-                <span class="input-group-addon" id="unit_base_percent">%</span>
+                <div class="input-group-append">
+                  <span class="input-group-text" id="unit_base_percent">%</span>
+                </div>
               </div>
             </div>
 
@@ -189,7 +193,9 @@
                 <label for="ability_{{abilityIndex}}_debuff{{j}}_value">{{ 'chain.label.value' | translate }} {{j + 1}}</label>
                 <div class="input-group">
                   <input class="form-control" type="number" id="ability_{{abilityIndex}}_debuff{{j}}_value" [(ngModel)]="ability.debuffs[j].value" (ngModelChange)="onChangeDebuff(viewOptions)">
-                  <span class="input-group-addon" id="unit_base_percent">%</span>
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="unit_base_percent">%</span>
+                  </div>
                 </div>
               </div>
               <div class="selectRightZoneTwoDividedThree">

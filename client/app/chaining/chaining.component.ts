@@ -7,8 +7,7 @@ import { Angulartics2 } from 'angulartics2';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from "rxjs/BehaviorSubject";
+import { Observable, BehaviorSubject } from 'rxjs';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
@@ -68,7 +67,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   multiElementsSettings: IMultiSelectSettings = {
     checkedStyle: 'fontawesome',
-    dynamicTitleMaxItems: 8
+    dynamicTitleMaxItems: 8,
+    buttonClasses: 'btn btn-default btn-secondary multi-abilities-select',
   };
 
   multiAbilitiesSettings: IMultiSelectSettings = {

@@ -1,4 +1,7 @@
 "use strict";
-var concat_1 = require('../operator/concat');
-exports.concat = concat_1.concatStatic;
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(require("rxjs-compat/observable/concat"));
 //# sourceMappingURL=concat.js.map

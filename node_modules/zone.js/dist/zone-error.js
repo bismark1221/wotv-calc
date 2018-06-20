@@ -18,6 +18,10 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * @fileoverview
+ * @suppress {globalThis,undefinedVars}
+ */
 Zone.__load_patch('Error', function (global, Zone, api) {
     /*
      * This code patches Error so that:
@@ -88,9 +92,10 @@ Zone.__load_patch('Error', function (global, Zone, api) {
             // We got called with a `new` operator AND we are subclass of ZoneAwareError
             // in that case we have to copy all of our properties to `this`.
             Object.keys(error).concat('stack', 'message').forEach(function (key) {
-                if (error[key] !== undefined) {
+                var value = error[key];
+                if (value !== undefined) {
                     try {
-                        _this[key] = error[key];
+                        _this[key] = value;
                     }
                     catch (e) {
                         // ignore the assignment in case it is a setter and it throws.
@@ -145,6 +150,7 @@ Zone.__load_patch('Error', function (global, Zone, api) {
             }
         });
     }
+    var ZONE_CAPTURESTACKTRACE = 'zoneCaptureStackTrace';
     Object.defineProperty(ZoneAwareError, 'prepareStackTrace', {
         get: function () {
             return NativeError.prepareStackTrace;
@@ -159,13 +165,13 @@ Zone.__load_patch('Error', function (global, Zone, api) {
                     for (var i = 0; i < structuredStackTrace.length; i++) {
                         var st = structuredStackTrace[i];
                         // remove the first function which name is zoneCaptureStackTrace
-                        if (st.getFunctionName() === 'zoneCaptureStackTrace') {
+                        if (st.getFunctionName() === ZONE_CAPTURESTACKTRACE) {
                             structuredStackTrace.splice(i, 1);
                             break;
                         }
                     }
                 }
-                return value.apply(this, [error, structuredStackTrace]);
+                return value.call(this, error, structuredStackTrace);
             };
         }
     });
@@ -173,6 +179,14 @@ Zone.__load_patch('Error', function (global, Zone, api) {
     // run/runGuarded/runTask frames. This is done by creating a detect zone and then threading
     // the execution through all of the above methods so that we can look at the stack trace and
     // find the frames of interest.
+    var ZONE_AWARE_ERROR = 'ZoneAwareError';
+    var ERROR_DOT = 'Error.';
+    var EMPTY = '';
+    var RUN_GUARDED = 'runGuarded';
+    var RUN_TASK = 'runTask';
+    var RUN = 'run';
+    var BRACKETS = '(';
+    var AT = '@';
     var detectZone = Zone.current.fork({
         name: 'detect',
         onHandleError: function (parentZD, current, target, error) {
@@ -183,7 +197,7 @@ Zone.__load_patch('Error', function (global, Zone, api) {
                     var frame = frames_2.shift();
                     // On safari it is possible to have stack frame with no line number.
                     // This check makes sure that we don't filter frames on name only (must have
-                    // linenumber)
+                    // line number)
                     if (/:\d+:\d+/.test(frame)) {
                         // Get rid of the path so that we don't accidentally find function name in path.
                         // In chrome the separator is `(` and `@` in FF and safari
@@ -191,20 +205,20 @@ Zone.__load_patch('Error', function (global, Zone, api) {
                         // Chrome: at Zone.run (http://localhost:9876/base/build/lib/zone.js:100:24)
                         // FireFox: Zone.prototype.run@http://localhost:9876/base/build/lib/zone.js:101:24
                         // Safari: run@http://localhost:9876/base/build/lib/zone.js:101:24
-                        var fnName = frame.split('(')[0].split('@')[0];
+                        var fnName = frame.split(BRACKETS)[0].split(AT)[0];
                         var frameType = 1;
-                        if (fnName.indexOf('ZoneAwareError') !== -1) {
+                        if (fnName.indexOf(ZONE_AWARE_ERROR) !== -1) {
                             zoneAwareFrame1 = frame;
-                            zoneAwareFrame2 = frame.replace('Error.', '');
+                            zoneAwareFrame2 = frame.replace(ERROR_DOT, EMPTY);
                             blackListedStackFrames[zoneAwareFrame2] = 0 /* blackList */;
                         }
-                        if (fnName.indexOf('runGuarded') !== -1) {
+                        if (fnName.indexOf(RUN_GUARDED) !== -1) {
                             runGuardedFrame = true;
                         }
-                        else if (fnName.indexOf('runTask') !== -1) {
+                        else if (fnName.indexOf(RUN_TASK) !== -1) {
                             runTaskFrame = true;
                         }
-                        else if (fnName.indexOf('run') !== -1) {
+                        else if (fnName.indexOf(RUN) !== -1) {
                             runFrame = true;
                         }
                         else {
@@ -249,7 +263,7 @@ Zone.__load_patch('Error', function (global, Zone, api) {
     // all kinds of tasks with one error thrown.
     childDetectZone.run(function () {
         childDetectZone.runGuarded(function () {
-            var fakeTransitionTo = function (toState, fromState1, fromState2) { };
+            var fakeTransitionTo = function () { };
             childDetectZone.scheduleEventTask(blacklistedStackFramesSymbol, function () {
                 childDetectZone.scheduleMacroTask(blacklistedStackFramesSymbol, function () {
                     childDetectZone.scheduleMicroTask(blacklistedStackFramesSymbol, function () {

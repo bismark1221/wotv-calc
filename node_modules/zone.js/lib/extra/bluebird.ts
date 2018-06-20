@@ -11,9 +11,30 @@ Zone.__load_patch('bluebird', (global: any, Zone: ZoneType, api: _ZonePrivate) =
   // global.Promise is not Bluebird, and Bluebird is just be
   // used by other libraries such as sequelize, so I think it is
   // safe to just expose a method to patch Bluebird explicitly
-  (Zone as any)[Zone.__symbol__('bluebird')] = function patchBluebird(Bluebird: any) {
-    Bluebird.setScheduler((fn: Function) => {
-      Zone.current.scheduleMicroTask('bluebird', fn);
+  const BLUEBIRD = 'bluebird';
+  (Zone as any)[Zone.__symbol__(BLUEBIRD)] = function patchBluebird(Bluebird: any) {
+    // patch method of Bluebird.prototype which not using `then` internally
+    const bluebirdApis: string[] = ['then', 'spread', 'finally'];
+    bluebirdApis.forEach(bapi => {
+      api.patchMethod(Bluebird.prototype, bapi, (delegate: Function) => (self: any, args: any[]) => {
+        const zone = Zone.current;
+        for (let i = 0; i < args.length; i ++) {
+          const func = args[i];
+          if (typeof func === 'function') {
+            args[i] = function() {
+              const argSelf: any = this;
+              const argArgs: any = arguments;
+              zone.scheduleMicroTask('Promise.then', () => {
+                return func.apply(argSelf, argArgs);
+              });
+            };
+          }
+        }
+        return delegate.apply(self, args);
+      });
     });
+
+    // override global promise
+    global[api.symbol('ZoneAwarePromise')] = Bluebird;
   };
 });

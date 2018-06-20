@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { Compiler, InjectionToken, Injector, NgModuleFactoryLoader } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { LoadedRouterConfig, Route } from './config';
 /**
  * @docsNotRequired
@@ -18,7 +18,7 @@ export declare class RouterConfigLoader {
     private compiler;
     private onLoadStartListener;
     private onLoadEndListener;
-    constructor(loader: NgModuleFactoryLoader, compiler: Compiler, onLoadStartListener?: (r: Route) => void, onLoadEndListener?: (r: Route) => void);
+    constructor(loader: NgModuleFactoryLoader, compiler: Compiler, onLoadStartListener?: ((r: Route) => void) | undefined, onLoadEndListener?: ((r: Route) => void) | undefined);
     load(parentInjector: Injector, route: Route): Observable<LoadedRouterConfig>;
     private loadModuleFactory(loadChildren);
 }

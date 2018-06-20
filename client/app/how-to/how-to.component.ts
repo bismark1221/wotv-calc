@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { MarkdownService } from 'angular2-markdown';
 import { Lightbox } from 'angular2-lightbox';
 
 @Component({

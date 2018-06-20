@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import * as families from '../data/families.json';
+import { default as families } from '../data/families.json';
 
 @Component({
   selector: 'app-families',
@@ -55,11 +55,6 @@ export class FamiliesComponent implements OnInit {
       name: "families.families.sok",
       units: []
     },
-    // {
-    //   frames: "42-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4",
-    //   name: "Aureole Ray +2",
-    //   units: []
-    // },
     {
       frames: "10-10-10-10-10-10-10",
       name: "Sonic Blast",

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 import { ChainService } from './chain.service';
 
@@ -11,7 +11,7 @@ export class BackService {
 
   private requestsUrl = 'api/request';
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
   async saveRequest(units: any[], modified: boolean) {
     let body = {
@@ -21,8 +21,8 @@ export class BackService {
     }
 
     try {
-      const response = await this.http.post(this.requestsUrl, body).toPromise();
-      return response.json();
+      // const response = await this.http.post(this.requestsUrl, body).toPromise();
+      // return response.json();
     } catch (error) {
       return error.json();
     }
@@ -66,8 +66,8 @@ export class BackService {
 
   async getRequest(id: string) {
     try {
-      const response = await this.http.get(this.requestsUrl + '/' + id).toPromise();
-      return response.json();
+      // const response = await this.http.get(this.requestsUrl + '/' + id).toPromise();
+      // return response.json();
     } catch (error) {
       return error.json();
     }
@@ -75,8 +75,8 @@ export class BackService {
 
   async findBestFrames() {
     try {
-      const response = await this.http.get(this.findBestChainsUrl).toPromise();
-      return response.json();
+      // const response = await this.http.get(this.findBestChainsUrl).toPromise();
+      // return response.json();
     } catch (error) {
       return error.json();
     }

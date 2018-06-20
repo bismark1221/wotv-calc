@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule }    from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
-import { MarkdownModule } from 'angular2-markdown';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 import { ClipboardModule } from 'ngx-clipboard';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -20,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from './tooltip/tooltip.module';
 import { SliderModule } from './slider/slider.module';
 import { Select2Module } from './select2/select2.module';
+import { NgxMdModule } from 'ngx-md';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -79,17 +78,16 @@ export function createTranslateLoader(http: HttpClient) {
     FamiliesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'app-root'}),
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
     AppRoutingModule,
     MultiselectDropdownModule,
     LocalStorageModule.withConfig({
       prefix: 'ffbe-chain',
       storageType: 'localStorage'
     }),
-    MarkdownModule.forRoot(),
+    NgxMdModule.forRoot(),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     TooltipModule,
     SliderModule,

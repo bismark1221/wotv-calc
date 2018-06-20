@@ -1,3 +1,1 @@
-import {  zipStatic  } from '../operator/zip';
-
-export const zip = zipStatic;
+export * from 'rxjs-compat/observable/zip';

@@ -1,5 +1,5 @@
-import { Component, ElementRef, trigger, state, style, transition, animate }
-  from "@angular/core";
+import { Component, ElementRef } from "@angular/core";
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 export interface TooltipOptions {
   content: string;

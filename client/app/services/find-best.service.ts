@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import 'rxjs/add/operator/toPromise';
-import { BehaviorSubject } from "rxjs/BehaviorSubject";
+
+import { BehaviorSubject } from "rxjs";
 
 import { ElementsService } from '../services/elements.service';
 

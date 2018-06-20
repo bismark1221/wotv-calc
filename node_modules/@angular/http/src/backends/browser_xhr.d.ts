@@ -3,7 +3,7 @@
  *
  * Take care not to evaluate this in non-browser contexts.
  *
- * @experimental
+ * @deprecated see https://angular.io/guide/http
  */
 export declare class BrowserXhr {
     constructor();
