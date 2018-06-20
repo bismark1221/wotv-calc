@@ -1,2 +1,1 @@
-import { concatStatic } from '../operator/concat';
-export declare const concat: typeof concatStatic;
+export * from 'rxjs-compat/observable/concat';

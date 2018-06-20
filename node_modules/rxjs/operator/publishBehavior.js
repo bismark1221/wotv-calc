@@ -1,14 +1,7 @@
 "use strict";
-var BehaviorSubject_1 = require('../BehaviorSubject');
-var multicast_1 = require('./multicast');
-/**
- * @param value
- * @return {ConnectableObservable<T>}
- * @method publishBehavior
- * @owner Observable
- */
-function publishBehavior(value) {
-    return multicast_1.multicast.call(this, new BehaviorSubject_1.BehaviorSubject(value));
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-exports.publishBehavior = publishBehavior;
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(require("rxjs-compat/operator/publishBehavior"));
 //# sourceMappingURL=publishBehavior.js.map

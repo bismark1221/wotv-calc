@@ -4,7 +4,10 @@ export declare class MultiSelectSearchFilter implements PipeTransform {
     private _lastOptions;
     private _searchCache;
     private _searchCacheInclusive;
-    transform(options: Array<IMultiSelectOption>, str: string, limit?: number, renderLimit?: number): Array<IMultiSelectOption>;
+    private _prevSkippedItems;
+    transform(options: IMultiSelectOption[], str?: string, limit?: number, renderLimit?: number): IMultiSelectOption[];
+    private _getSubsetOptions(options, prevOptions, prevSearchStr);
+    private _doSearch(options, str, limit);
     private _limitRenderedItems<T>(items, limit);
     private _escapeRegExp(str);
 }

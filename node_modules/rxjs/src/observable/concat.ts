@@ -1,3 +1,1 @@
-import {  concatStatic  } from '../operator/concat';
-
-export const concat = concatStatic;
+export * from 'rxjs-compat/observable/concat';

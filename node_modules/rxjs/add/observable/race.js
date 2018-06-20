@@ -1,5 +1,4 @@
 "use strict";
-var Observable_1 = require('../../Observable');
-var race_1 = require('../../operator/race');
-Observable_1.Observable.race = race_1.raceStatic;
+Object.defineProperty(exports, "__esModule", { value: true });
+require("rxjs-compat/add/observable/race");
 //# sourceMappingURL=race.js.map

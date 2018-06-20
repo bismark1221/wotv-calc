@@ -1,8 +1,13 @@
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import { NgbCalendar } from '../ngb-calendar';
 import { Injectable } from '@angular/core';
 import { isNumber } from '../../util/util';
@@ -54,20 +59,38 @@ var NgbCalendarHijri = (function (_super) {
      * `month` is 0 for Muharram, 1 for Safar, etc.
      * `year` is any Hijri year.
      */
-    NgbCalendarHijri.prototype._getMonthStart = function (year, month) {
+    /**
+       * Returns the start of Hijri Month.
+       * `month` is 0 for Muharram, 1 for Safar, etc.
+       * `year` is any Hijri year.
+       */
+    NgbCalendarHijri.prototype._getMonthStart = /**
+       * Returns the start of Hijri Month.
+       * `month` is 0 for Muharram, 1 for Safar, etc.
+       * `year` is any Hijri year.
+       */
+    function (year, month) {
         return Math.ceil(29.5 * month) + (year - 1) * 354 + Math.floor((3 + 11 * year) / 30.0);
     };
     /**
      * Returns the start of Hijri year.
      * `year` is any Hijri year.
      */
-    NgbCalendarHijri.prototype._getYearStart = function (year) { return (year - 1) * 354 + Math.floor((3 + 11 * year) / 30.0); };
+    /**
+       * Returns the start of Hijri year.
+       * `year` is any Hijri year.
+       */
+    NgbCalendarHijri.prototype._getYearStart = /**
+       * Returns the start of Hijri year.
+       * `year` is any Hijri year.
+       */
+    function (year) { return (year - 1) * 354 + Math.floor((3 + 11 * year) / 30.0); };
+    NgbCalendarHijri.decorators = [
+        { type: Injectable },
+    ];
+    /** @nocollapse */
+    NgbCalendarHijri.ctorParameters = function () { return []; };
     return NgbCalendarHijri;
 }(NgbCalendar));
 export { NgbCalendarHijri };
-NgbCalendarHijri.decorators = [
-    { type: Injectable },
-];
-/** @nocollapse */
-NgbCalendarHijri.ctorParameters = function () { return []; };
 //# sourceMappingURL=ngb-calendar-hijri.js.map

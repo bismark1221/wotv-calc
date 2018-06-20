@@ -5,6 +5,10 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * @fileoverview
+ * @suppress {missingRequire}
+ */
 
 (function(global: any) {
   interface Wtf {
@@ -118,7 +122,7 @@
       const retValue = parentZoneDelegate.cancelTask(targetZone, task);
       instance(zonePathName(targetZone), shallowObj(task.data, 2));
       return retValue;
-    };
+    }
   }
 
   function shallowObj(obj: {[k: string]: any}, depth: number): any {

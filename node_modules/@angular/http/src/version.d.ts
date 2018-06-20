@@ -12,6 +12,6 @@
  */
 import { Version } from '@angular/core';
 /**
- * @stable
+ * @deprecated see https://angular.io/guide/http
  */
 export declare const VERSION: Version;

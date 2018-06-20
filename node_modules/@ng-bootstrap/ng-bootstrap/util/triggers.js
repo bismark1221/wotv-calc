@@ -33,6 +33,7 @@ export function parseTriggers(triggers, aliases) {
     return parsedTriggers;
 }
 var noopFn = function () { };
+var ɵ0 = noopFn;
 export function listenToTriggers(renderer, nativeElement, triggers, openFn, closeFn, toggleFn) {
     var parsedTriggers = parseTriggers(triggers);
     var listeners = [];
@@ -49,4 +50,5 @@ export function listenToTriggers(renderer, nativeElement, triggers, openFn, clos
     });
     return function () { listeners.forEach(function (unsubscribeFn) { return unsubscribeFn(); }); };
 }
+export { ɵ0 };
 //# sourceMappingURL=triggers.js.map

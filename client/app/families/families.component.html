@@ -1,6 +1,6 @@
 <div class="row families">
   <div>
-    <markdown [data]="markdown"></markdown>
+    <ngx-md [data]="markdown"></ngx-md>
   </div>
 
   <h1 class="title">
@@ -11,7 +11,7 @@
     <table class="table table-striped table-bordered table-hover table-sm">
       <thead  class="thead-light">
         <tr>
-          <th scope="col" colspan="2">
+          <th scope="col" colspan="2" class="title_row">
             {{ knownFamily.name | translate }} ({{ knownFamily.frames }})
           </th>
         </tr>
@@ -39,7 +39,7 @@
     <table class="table table-striped table-bordered table-hover table-sm">
       <thead  class="thead-light">
         <tr>
-          <th scope="col" colspan="2">
+          <th scope="col" colspan="2" class="title_row">
             {{ family.family }}
           </th>
         </tr>

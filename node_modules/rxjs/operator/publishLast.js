@@ -1,13 +1,7 @@
 "use strict";
-var AsyncSubject_1 = require('../AsyncSubject');
-var multicast_1 = require('./multicast');
-/**
- * @return {ConnectableObservable<T>}
- * @method publishLast
- * @owner Observable
- */
-function publishLast() {
-    return multicast_1.multicast.call(this, new AsyncSubject_1.AsyncSubject());
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-exports.publishLast = publishLast;
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(require("rxjs-compat/operator/publishLast"));
 //# sourceMappingURL=publishLast.js.map
