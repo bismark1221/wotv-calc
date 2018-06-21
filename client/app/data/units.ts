@@ -11429,5 +11429,175 @@ export const UNITS: any[] = [
     multipleBlack: 2,
     multipleWhite: 2,
     multipleGreen: 2
-  }
+  },
+  {
+    id: 131,
+    names: {
+      en: "Mario Frigo",
+      tw: "馬里奧·弗瑞格",
+      kr: "마리오 프리고",
+      fr: "Mario Frego",
+      de: "Mario Frigo",
+      es: "Mario Frigo"
+    },
+    abilities: [
+      {
+        id: 911037,
+        names: {
+          en: "Rebel drop - Urga Stupka-210",
+          tw: "反抗軍空投：Urga Stupka-210",
+          kr: "물자 투하·Urga Stupka-210",
+          fr: "Livraison rebelle - Urga Stupka-210",
+          de: "Rebellennachschub - Urga Stupka-210",
+          es: "Lanzamiento rebelde - Urga Stupka-210"
+        },
+        hitDamage: [
+          25, 25, 25, 25
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 32,
+        framesList: "32-20-20-20",
+        offset: 16,
+        base: 180
+      },
+      {
+        id: 911046,
+        names: {
+          en: "Rebel drop - Dionysus PLDS-H",
+          tw: "反抗軍空投：Dionysus PLDS-H",
+          kr: "물자 투하·Dionysus PLDS-H",
+          fr: "Livraison rebelle - Dionysus PLDS-H",
+          de: "Rebellennachschub - Dionysus PLDS-H",
+          es: "Lanzamiento rebelde - Dionysus PLDS-H"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 70,
+        framesList: "70-7-5-7-7-7-7",
+        offset: 16,
+        base: 300
+      },
+      {
+        id: 401004106,
+        names: {
+          en: "Rebel drop - M488",
+          tw: "反抗軍空投：M488",
+          kr: "물자 투하·M488",
+          fr: "Livraison rebelle - M488",
+          de: "Rebellennachschub - M490",
+          es: "Lanzamiento rebelde - M488"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 76,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 160,
+        framesList: "0",
+        offset: 16,
+        base: 820,
+        type: "finish"
+      }
+    ],
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          911037,
+          911046
+        ]
+      }
+    ],
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+  id: 132,
+  names: {
+    en: "Rico Rodriguez",
+    tw: "瑞科·羅德里格茲",
+    kr: "리코 로드리게즈",
+    fr: "Rico Rodriguez",
+    de: "Rico Rodriguez",
+    es: "Rico Rodríguez"
+  },
+  abilities: [
+    {
+      id: 911096,
+      names: {
+        en: "Chaos Object Homing",
+        tw: "爆破物追擊手榴彈",
+        kr: "혼돈 물체 자동 추적 장치",
+        fr: "Guidage d'objets de chaos",
+        de: "Chaotisches Anvisieren",
+        es: "Objeto caótico dirigido"
+      },
+      hitDamage: [
+        6, 6, 6, 6, 6, 6, 6, 58
+      ],
+      castTime: 40,
+      damage: "physic",
+      magicType: null,
+      elements: [],
+      debuffs: [],
+      dualable: true,
+      firstHit: 42,
+      framesList: "42-10-10-10-10-10-10-10",
+      offset: 16,
+      base: 210,
+      ignore: 50
+    },
+    {
+      id: 401004006,
+      names: {
+        en: "Death From Above",
+        tw: "天降死亡",
+        kr: "상공으로부터의 죽음",
+        fr: "Mort céleste",
+        de: "Tod von oben",
+        es: "Muerte desde las alturas"
+      },
+      hitDamage: [
+        9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+      ],
+      castTime: 140,
+      damage: "physic",
+      magicType: null,
+      elements: [],
+      debuffs: [],
+      dualable: false,
+      firstHit: 93,
+      framesList: "93-20-8-8-8-8-8-8-8-8-8",
+      offset: 16,
+      base: 570,
+      ignore: 50
+    }
+  ],
+  multiCasts: [
+    {
+      count: 1,
+      abilities: []
+    }
+  ],
+  multipleBlack: 1,
+  multipleWhite: 1,
+  multipleGreen: 1
+}
 ];
