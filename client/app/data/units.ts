@@ -993,6 +993,31 @@ export const UNITS: any[] = [
         offset: 16,
         base: 270,
       },
+      {
+        id: 705340,
+        names: {
+          en: "Heaven's Fury + 2",
+          tw: "聖光爆裂斬 + 2",
+          kr: "성광폭렬참 + 2",
+          fr: "Ire céleste + 2",
+          de: "Himmelszorn + 2",
+          es: "Aura celestial + 2"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 72,
+        framesList: "0-10-10-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 300,
+        ignore: 25
+      }
     ]
   },
   {
@@ -3401,7 +3426,7 @@ export const UNITS: any[] = [
         framesList: "0",
         firstHit: 270,
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 300,
         ignore: 50,
         elements: [
@@ -3409,6 +3434,34 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         damage: "magic"
+      },
+      {
+        id: 911175,
+        names: {
+          en: "Word of Law + 2",
+          tw: "法令 + 2",
+          kr: "법전의 말씀 + 2",
+          fr: "Mot de la loi + 2",
+          de: "Wort des Gesetzes + 2",
+          es: "Palabra de ley + 2"
+        },
+        hitDamage: [
+          100
+        ],
+        castTime: 40,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "light"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 270,
+        framesList: "0",
+        offset: 16,
+        base: 300,
+        ignore: 50,
+        type: "finish"
       }
     ]
   },
@@ -4536,6 +4589,28 @@ export const UNITS: any[] = [
           "ice"
         ],
         dualable: false
+      },
+      {
+        id: 2,
+        names: {
+          en: "Diamond Dust (3)",
+          fr: "Poussière de diamant (3)",
+          tw: "鑽石星塵 (3)",
+          kr: "다이아몬드 더스트 (3)",
+          de: "Diamantstaub (3)",
+          es: "Polvo de diamantes (3)"
+        },
+        type: "finish",
+        framesList: "0",
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 19000,
+        damage: "magic",
+        elements: [
+          "ice"
+        ],
+        dualable: false
       }
     ]
   },
@@ -4601,6 +4676,28 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 0,
         base: 14000,
+        damage: "magic",
+        elements: [
+          "lightning"
+        ],
+        dualable: false
+      },
+      {
+        id: 3,
+        names: {
+          en: "Judgment Bolt (3)",
+          fr: "Foudre du jugement (3)",
+          tw: "制裁之雷 (3)",
+          kr: "심판의 벼락 (3)",
+          de: "Ionenschlag (3)",
+          es: "Rayos de justicia (3)"
+        },
+        type: "finish",
+        framesList: "0",
+        firstHit: 110,
+        castTime: 40,
+        offset: 0,
+        base: 21000,
         damage: "magic",
         elements: [
           "lightning"
@@ -11461,7 +11558,7 @@ export const UNITS: any[] = [
         debuffs: [],
         dualable: true,
         firstHit: 32,
-        framesList: "32-20-20-20",
+        framesList: "0-20-20-20",
         offset: 16,
         base: 180
       },
@@ -11485,7 +11582,7 @@ export const UNITS: any[] = [
         debuffs: [],
         dualable: true,
         firstHit: 70,
-        framesList: "70-7-5-7-7-7-7",
+        framesList: "0-7-5-7-7-7-7",
         offset: 16,
         base: 300
       },
@@ -11529,75 +11626,123 @@ export const UNITS: any[] = [
     multipleGreen: 1
   },
   {
-  id: 132,
-  names: {
-    en: "Rico Rodriguez",
-    tw: "瑞科·羅德里格茲",
-    kr: "리코 로드리게즈",
-    fr: "Rico Rodriguez",
-    de: "Rico Rodriguez",
-    es: "Rico Rodríguez"
-  },
-  abilities: [
-    {
-      id: 911096,
-      names: {
-        en: "Chaos Object Homing",
-        tw: "爆破物追擊手榴彈",
-        kr: "혼돈 물체 자동 추적 장치",
-        fr: "Guidage d'objets de chaos",
-        de: "Chaotisches Anvisieren",
-        es: "Objeto caótico dirigido"
-      },
-      hitDamage: [
-        6, 6, 6, 6, 6, 6, 6, 58
-      ],
-      castTime: 40,
-      damage: "physic",
-      magicType: null,
-      elements: [],
-      debuffs: [],
-      dualable: true,
-      firstHit: 42,
-      framesList: "42-10-10-10-10-10-10-10",
-      offset: 16,
-      base: 210,
-      ignore: 50
+    id: 132,
+    names: {
+      en: "Rico Rodriguez",
+      tw: "瑞科·羅德里格茲",
+      kr: "리코 로드리게즈",
+      fr: "Rico Rodriguez",
+      de: "Rico Rodriguez",
+      es: "Rico Rodríguez"
     },
-    {
-      id: 401004006,
-      names: {
-        en: "Death From Above",
-        tw: "天降死亡",
-        kr: "상공으로부터의 죽음",
-        fr: "Mort céleste",
-        de: "Tod von oben",
-        es: "Muerte desde las alturas"
+    abilities: [
+      {
+        id: 911096,
+        names: {
+          en: "Chaos Object Homing",
+          tw: "爆破物追擊手榴彈",
+          kr: "혼돈 물체 자동 추적 장치",
+          fr: "Guidage d'objets de chaos",
+          de: "Chaotisches Anvisieren",
+          es: "Objeto caótico dirigido"
+        },
+        hitDamage: [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        castTime: 40,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: true,
+        firstHit: 42,
+        framesList: "0-10-10-10-10-10-10-10",
+        offset: 16,
+        base: 210,
+        ignore: 50
       },
-      hitDamage: [
-        9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
-      ],
-      castTime: 140,
-      damage: "physic",
-      magicType: null,
-      elements: [],
-      debuffs: [],
-      dualable: false,
-      firstHit: 93,
-      framesList: "93-20-8-8-8-8-8-8-8-8-8",
-      offset: 16,
-      base: 570,
-      ignore: 50
-    }
-  ],
-  multiCasts: [
-    {
-      count: 1,
-      abilities: []
-    }
-  ],
-  multipleBlack: 1,
-  multipleWhite: 1,
-  multipleGreen: 1
-}
+      {
+        id: 401004006,
+        names: {
+          en: "Death From Above",
+          tw: "天降死亡",
+          kr: "상공으로부터의 죽음",
+          fr: "Mort céleste",
+          de: "Tod von oben",
+          es: "Muerte desde las alturas"
+        },
+        hitDamage: [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        castTime: 140,
+        damage: "physic",
+        magicType: null,
+        elements: [],
+        debuffs: [],
+        dualable: false,
+        firstHit: 93,
+        framesList: "0-20-8-8-8-8-8-8-8-8-8",
+        offset: 16,
+        base: 570,
+        ignore: 50
+      }
+    ],
+    multiCasts: [
+      {
+        count: 1,
+        abilities: []
+      }
+    ],
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  },
+  {
+    id: 133,
+    names: {
+      en: "Ling",
+      tw: "鈴",
+      kr: "링",
+      fr: "Ling",
+      de: "Ling",
+      es: "Ling"
+    },
+    abilities: [
+      {
+        id: 100014506,
+        names: {
+          en: "Dance of the Phoenix",
+          tw: "火鳳凰之舞",
+          kr: "불사조의 춤",
+          fr: "Danse du Phénix",
+          de: "Tanz des Phönix",
+          es: "Baile del fénix"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 50,
+        damage: "magic",
+        magicType: null,
+        elements: [
+          "fire"
+        ],
+        debuffs: [],
+        dualable: false,
+        firstHit: 190,
+        framesList: "0-10-10-10-10",
+        offset: 16,
+        base: 620
+      }
+    ],
+    multiCasts: [
+      {
+        count: 1,
+        abilities: []
+      }
+    ],
+    multipleBlack: 1,
+    multipleWhite: 1,
+    multipleGreen: 1
+  }
 ];
