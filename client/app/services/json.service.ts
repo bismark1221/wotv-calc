@@ -153,14 +153,7 @@ export class JsonService {
           de: unit.names[4],
           es: unit.names[5]
         },
-        abilities: [],
-        multiCasts: [{
-          count: 1,
-          abilities: []
-        }],
-        multipleBlack: 1,
-        multipleWhite: 1,
-        multipleGreen: 1
+        abilities: []
       };
 
       this.isCollapsed.push(true);
@@ -189,11 +182,13 @@ export class JsonService {
       hitDamage: ability.attack_damage[0],
       castTime: ability.effect_frames[0][0],
       damage: null,
-      magicType: ability.magic_type ? ability.magic_type.toLowerCase() : null,
       elements: [],
-      debuffs: [],
-      dualable: false
+      debuffs: []
     };
+
+    if (ability.magic_type) {
+      this.ffbeChainUnits[unitId].abilities[id].magicType = ability.magic_type.toLowerCase();
+    }
 
     if (ability.element_inflict) {
       ability.element_inflict.forEach(element => {
@@ -201,8 +196,8 @@ export class JsonService {
       });
     }
 
-    if (ability.type === "ABILITY" && (ability.attack_type === "Physical" || ability.attack_type === "Hybrid")) {
-      this.ffbeChainUnits[unitId].abilities[id].dualable = true;
+    if (!(ability.type === "ABILITY" && (ability.attack_type === "Physical" || ability.attack_type === "Hybrid"))) {
+      this.ffbeChainUnits[unitId].abilities[id].dualable = false;
     }
 
     this.updateFrames(unitId, id, ability);
@@ -497,15 +492,23 @@ export class JsonService {
   private findMultiCastByCount(unitId, count) {
     let position = -1;
 
-    this.ffbeChainUnits[unitId].multiCasts.forEach((multiCast, index) => {
-      if (multiCast.count === count) {
-        position = index;
-        return position;
-      }
-    });
+    if (this.ffbeChainUnits[unitId].multiCasts) {
+      this.ffbeChainUnits[unitId].multiCasts.forEach((multiCast, index) => {
+        if (multiCast.count === count) {
+          position = index;
+          return position;
+        }
+      });
+    }
 
     if (position === -1) {
-      position = this.ffbeChainUnits[unitId].multiCasts.length;
+      if (!this.ffbeChainUnits[unitId].multiCasts) {
+        this.ffbeChainUnits[unitId].multiCasts = [];
+        position = 0;
+      } else {
+        position = this.ffbeChainUnits[unitId].multiCasts.length;
+      }
+
       this.ffbeChainUnits[unitId].multiCasts.push({
         count: count,
         abilities: []
@@ -618,18 +621,6 @@ export class JsonService {
     }
   }
 
-  private getDamageType(ability) {
-    let type = 'physical';
-
-    if (ability.attack_type) {
-      type = ability.attack_type.toLowerCase();
-    } else if (ability.damage_type) {
-      type = ability.damage_type.toLowerCase();
-    }
-
-    return type;
-  }
-
   private getNames(ability, level = 0) {
     let names = {};
 
@@ -660,14 +651,7 @@ export class JsonService {
         de: summon.names[4],
         es: summon.names[5]
       },
-      abilities: [],
-      multiCasts: [{
-        count: 1,
-        abilities: []
-      }],
-      multipleBlack: 1,
-      multipleWhite: 1,
-      multipleGreen: 1
+      abilities: []
     };
 
     Object.keys(summon.skill).forEach(skillId => {
@@ -775,14 +759,7 @@ export class JsonService {
         de: equipment.strings.name ? equipment.strings.name[4]: '',
         es: equipment.strings.name ? equipment.strings.name[5]: ''
       },
-      abilities: [],
-      multiCasts: [{
-        count: 1,
-        abilities: []
-      }],
-      multipleBlack: 1,
-      multipleWhite: 1,
-      multipleGreen: 1
+      abilities: []
     };
 
     equipment.skills.forEach(skillId => {
@@ -804,14 +781,7 @@ export class JsonService {
         de: materia.strings.names ? materia.strings.names[4]: '',
         es: materia.strings.names ? materia.strings.names[5]: ''
       },
-      abilities: [],
-      multiCasts: [{
-        count: 1,
-        abilities: []
-      }],
-      multipleBlack: 1,
-      multipleWhite: 1,
-      multipleGreen: 1
+      abilities: []
     };
 
     materia.skills.forEach(skillId => {
@@ -824,6 +794,8 @@ export class JsonService {
       for (let j = this.ffbeChainUnits[i].abilities.length - 1; j >= 0; j--) {
         if (!this.ffbeChainUnits[i].abilities[j].damage) { //this.ffbeChainUnits[i].abilities[j].firstHit === -1 TODO !!!!!
           this.ffbeChainUnits[i].abilities.splice(j, 1);
+        } else if (this.ffbeChainUnits[i].abilities[j].damage === "physic") {
+          delete this.ffbeChainUnits[i].abilities[j].damage;
         }
       }
 

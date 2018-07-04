@@ -528,7 +528,6 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
         framesList: [42, 40, 40, 40, 40],
@@ -794,7 +793,6 @@ export const UNITS: any[] = [
         ],
         castTime: 0,
         damage: "magic",
-        magicType: null,
         dualable: false,
         framesList: [190],
         offset: 8,
@@ -965,7 +963,6 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
@@ -1279,8 +1276,7 @@ export const UNITS: any[] = [
           es: "Segundas intenciones +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 0,
         offset: 66,
         base: 1200,
@@ -1309,9 +1305,8 @@ export const UNITS: any[] = [
           de: "Dreifachschlag",
           es: "Triataque"
         },
-        framesList: [0, 4, 16, 4, 16, 4],
+        framesList: [40, 4, 16, 4, 16, 4],
         hitDamage: [16, 16, 17, 17, 17, 17],
-        firstHit: 40,
         castTime: 40,
         offset: 26,
         base: 300,
@@ -1326,9 +1321,8 @@ export const UNITS: any[] = [
           de: "Dreifachschlag +2",
           es: "Triataque +2"
         },
-        framesList: [0, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4],
+        framesList: [40, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4],
         hitDamage: [8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9],
-        firstHit: 40,
         castTime: 40,
         offset: 26,
         base: 300,
@@ -1344,8 +1338,7 @@ export const UNITS: any[] = [
           es: "Pétalo de nieve +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 60,
+        framesList: [60],
         castTime: 0,
         offset: 40,
         base: 200,
@@ -1374,9 +1367,8 @@ export const UNITS: any[] = [
           de: "Eindrucksvolle Klinge",
           es: "Hoja del comandante"
         },
-        framesList: [0, 9, 9, 9, 9, 9, 9, 9],
+        framesList: [51, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
-        firstHit: 51,
         castTime: 40,
         offset: 16,
         base: 200,
@@ -1392,9 +1384,8 @@ export const UNITS: any[] = [
           de: "Heiliger Blitz",
           es: "Descarga sagrada"
         },
-        framesList: [0, 5, 5, 5, 5, 5],
+        framesList: [42, 5, 5, 5, 5, 5],
         hitDamage: [15, 15, 15, 15, 20, 20],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 230,
@@ -1413,8 +1404,7 @@ export const UNITS: any[] = [
           es: "Hoja del estratega"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 20,
+        framesList: [20],
         castTime: 0,
         offset: 40,
         base: 250,
@@ -1440,13 +1430,9 @@ export const UNITS: any[] = [
           12, 13, 12, 13, 12, 13, 12, 13
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 51,
-        framesList: [0, 9, 9, 9, 9, 9, 9, 9],
+        framesList: [51, 9, 9, 9, 9, 9, 9, 9],
         offset: 16,
         base: 300,
         ignore: 50
@@ -1474,9 +1460,8 @@ export const UNITS: any[] = [
           de: "Göttlicher Schuss",
           es: "Disparo divino"
         },
-        framesList: [0, 9, 9, 9, 9, 9, 9],
+        framesList: [42, 9, 9, 9, 9, 9, 9],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 700,
@@ -1502,8 +1487,7 @@ export const UNITS: any[] = [
           es: "Destructor santo"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 150,
+        framesList: [150],
         castTime: 40,
         offset: 0,
         base: 1600,
@@ -1532,11 +1516,10 @@ export const UNITS: any[] = [
           de: "Klinge der Gerechtigkeit",
           es: "Hoja justiciera"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 6, 8],
+        framesList: [42, 8, 8, 8, 8, 8, 6, 8],
         hitDamage: [
           12, 13, 12, 13, 12, 13, 12, 13
         ],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 250,
@@ -1556,13 +1539,9 @@ export const UNITS: any[] = [
           12, 13, 12, 13, 12, 13, 12, 13
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 8, 8, 8, 8, 8, 6, 8],
+        framesList: [42, 8, 8, 8, 8, 8, 6, 8],
         offset: 16,
         base: 300,
         ignore: 25
@@ -1592,7 +1571,6 @@ export const UNITS: any[] = [
         },
         hitDamage: [50, 50],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -1600,8 +1578,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 17,
-        framesList: [0, 26],
+        framesList: [17, 26],
         offset: 8,
         base: 700
       },
@@ -1619,11 +1596,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         offset: 26,
         base: 700
       }
@@ -1650,9 +1625,8 @@ export const UNITS: any[] = [
           de: "Patriotischer Hieb",
           es: "Corte patriótico"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        firstHit: 42,
         castTime: 40,
         offset: 26,
         base: 300,
@@ -1680,11 +1654,10 @@ export const UNITS: any[] = [
           de: "Mystischer Stoß",
           es: "Estoque místico"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        firstHit: 42,
-        castTime: 42,
-        offset: 24,
+        castTime: 40,
+        offset: 16,
         base: 400,
       },
       {
@@ -1701,13 +1674,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 450
       },
@@ -1725,13 +1694,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 500
       },
@@ -1749,13 +1714,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 500
       }
@@ -1782,9 +1743,8 @@ export const UNITS: any[] = [
           de: "Flammenseele",
           es: "Alma candente"
         },
-        framesList: [0, 25, 25, 25, 25, 25, 25, 25, 25],
+        framesList: [40, 25, 25, 25, 25, 25, 25, 25, 25],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        firstHit: 40,
         castTime: 40,
         offset: 16,
         base: 230,
@@ -1802,9 +1762,8 @@ export const UNITS: any[] = [
           de: "Wintersturm",
           es: "Tormenta invernal"
         },
-        framesList: [0, 13, 13, 13, 13, 13, 13, 13, 13],
+        framesList: [40, 13, 13, 13, 13, 13, 13, 13, 13],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        firstHit: 40,
         castTime: 40,
         offset: 16,
         base: 230,
@@ -1822,9 +1781,8 @@ export const UNITS: any[] = [
           de: "Blitzableiter",
           es: "Rayos fulminantes"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [45, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        firstHit: 45,
         castTime: 40,
         offset: 16,
         base: 230,
@@ -1842,9 +1800,8 @@ export const UNITS: any[] = [
           de: "Flutwelle",
           es: "Ola sísmica"
         },
-        framesList: [0, 9, 9, 9, 9, 9, 9, 9, 9],
+        framesList: [40, 9, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        firstHit: 40,
         castTime: 40,
         offset: 16,
         base: 230,
@@ -1862,9 +1819,8 @@ export const UNITS: any[] = [
           de: "Flutwelle +2",
           es: "Ola sísmica +2"
         },
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [132, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 132,
         castTime: 40,
         offset: 16,
         base: 280,
@@ -1895,9 +1851,8 @@ export const UNITS: any[] = [
           de: "Ultima +2",
           es: "Artema +2"
         },
-        framesList: [0, 37, 38, 37, 38, 38, 37],
+        framesList: [140, 37, 38, 37, 38, 38, 37],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
-        firstHit: 140,
         castTime: 40,
         offset: 16,
         base: 280,
@@ -1917,8 +1872,7 @@ export const UNITS: any[] = [
           es: "Utopía"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 16,
         base: 600,
@@ -1939,8 +1893,7 @@ export const UNITS: any[] = [
           es: "Utopía +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 16,
         base: 910,
@@ -1975,9 +1928,8 @@ export const UNITS: any[] = [
           es: "Multiflash"
         },
         base: 180,
-        framesList: [0, 5, 5, 5, 5, 5, 5],
+        framesList: [42, 5, 5, 5, 5, 5, 5],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
-        firstHit: 42,
         castTime: 0,
         offset: 56
       },
@@ -1991,8 +1943,7 @@ export const UNITS: any[] = [
           de: "Rote Karte",
           es: "Carta roja"
         },
-        framesList: [0, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-        firstHit: 42,
+        framesList: [42, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         castTime: 40,
         offset: 16,
         base: 320
@@ -2008,8 +1959,7 @@ export const UNITS: any[] = [
           es: "Dado doble"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 16,
+        framesList: [16],
         castTime: 0,
         offset: 56,
         base: 100
@@ -2024,8 +1974,7 @@ export const UNITS: any[] = [
           de: "Rote Karte +2",
           es: "Carta roja +2"
         },
-        framesList: [0, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-        firstHit: 42,
+        framesList: [42, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         castTime: 40,
         offset: 16,
         base: 450
@@ -2044,11 +1993,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 20
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 150,
-        framesList: [0, 6, 5, 7, 5, 5, 8, 5, 5],
+        framesList: [150, 6, 5, 7, 5, 5, 8, 5, 5],
         offset: 8,
         base: 390,
         ignore: 50,
@@ -2077,9 +2024,8 @@ export const UNITS: any[] = [
           de: "Tornado",
           es: "Tornado"
         },
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 212,
         castTime: 40,
         offset: 16,
         base: 250,
@@ -2117,8 +2063,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 170,
-        framesList: [0],
+        framesList: [170],
         offset: 16,
         base: 600,
         type: "finish"
@@ -2147,8 +2092,7 @@ export const UNITS: any[] = [
           de: "Chaoswelle",
           es: "Ola caótica"
         },
-        framesList: [0, 20, 20, 20, 20],
-        firstHit: 52,
+        framesList: [52, 20, 20, 20, 20],
         castTime: 40,
         offset: 16,
         base: 360,
@@ -2166,8 +2110,7 @@ export const UNITS: any[] = [
           de: "Chaoswelle erwacht +2",
           es: "Ola caótica - Haz +2"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        firstHit: 60,
+        framesList: [60, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
         offset: 12,
         base: 420,
@@ -2185,9 +2128,8 @@ export const UNITS: any[] = [
           de: "Ultima +2",
           es: "Artema +2"
         },
-        framesList: [0, 37, 38, 37, 38, 38, 37],
+        framesList: [140, 37, 38, 37, 38, 38, 37],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
-        firstHit: 140,
         castTime: 40,
         offset: 16,
         base: 280,
@@ -2206,9 +2148,8 @@ export const UNITS: any[] = [
           de: "Tumultschwert - Trance",
           es: "Hoja letal - trance"
         },
-        framesList: [0, 10, 14, 9, 16, 12, 42, 4, 4],
+        framesList: [49, 10, 14, 9, 16, 12, 42, 4, 4],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        firstHit: 49,
         castTime: 0,
         offset: 0,
         base: 390,
@@ -2249,9 +2190,8 @@ export const UNITS: any[] = [
           de: "Angriffsschlag",
           es: "Golpe asaltador"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [22, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [2, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 22,
         castTime: 20,
         offset: 16,
         base: 270
@@ -2266,9 +2206,8 @@ export const UNITS: any[] = [
           de: "Angriffsschlag +2",
           es: "Golpe asaltador +2"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [22, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [2, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 22,
         castTime: 20,
         offset: 16,
         base: 400
@@ -2296,8 +2235,7 @@ export const UNITS: any[] = [
           de: "Flammenritt Plus",
           es: "Galope flamígero +"
         },
-        framesList: [0, 10, 10, 10, 78],
-        firstHit: 2,
+        framesList: [2, 10, 10, 10, 78],
         castTime: 0,
         offset: 66,
         base: 200
@@ -2313,8 +2251,7 @@ export const UNITS: any[] = [
           es: "Ardor supremo"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 240,
+        framesList: [240],
         castTime: 40,
         offset: 16,
         base: 250,
@@ -2346,8 +2283,7 @@ export const UNITS: any[] = [
           de: "Überfluss",
           es: "Derrame"
         },
-        framesList: [0, 24, 24, 24, 24, 24, 24, 24, 24, 24],
-        firstHit: 57,
+        framesList: [57, 24, 24, 24, 24, 24, 24, 24, 24, 24],
         castTime: 40,
         offset: 16,
         base: 940,
@@ -2367,8 +2303,7 @@ export const UNITS: any[] = [
           de: "Überfluss +2",
           es: "Derrame +2"
         },
-        framesList: [0, 24, 24, 24, 24, 24, 24, 24, 24, 24],
-        firstHit: 57,
+        framesList: [57, 24, 24, 24, 24, 24, 24, 24, 24, 24],
         castTime: 40,
         offset: 16,
         base: 1150,
@@ -2401,9 +2336,8 @@ export const UNITS: any[] = [
           de: "Kostenlose Energie",
           es: "Energía libre"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [42, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 360
@@ -2418,9 +2352,8 @@ export const UNITS: any[] = [
           de: "Kostenlose Energie +2",
           es: "Energía libre +2"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [42, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 450
@@ -2435,9 +2368,8 @@ export const UNITS: any[] = [
           de: "Glückssieben",
           es: "Súper 7"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [42, 8, 8, 8, 8, 8, 8],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 777
@@ -2465,9 +2397,8 @@ export const UNITS: any[] = [
           de: "Windpracht",
           es: "Esplendor de viento"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 380,
@@ -2485,9 +2416,8 @@ export const UNITS: any[] = [
           de: "Feuerpracht",
           es: "Esplendor de fuego"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 380,
@@ -2505,9 +2435,8 @@ export const UNITS: any[] = [
           de: "Erdpracht",
           es: "Esplendor de tierra"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 380,
@@ -2525,9 +2454,8 @@ export const UNITS: any[] = [
           de: "Wasserpracht",
           es: "Esplendor de agua"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 380,
@@ -2545,9 +2473,8 @@ export const UNITS: any[] = [
           de: "Zwiebelschnitt",
           es: "Corte cebolla"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 400
@@ -2562,9 +2489,8 @@ export const UNITS: any[] = [
           de: "Voller Klingenblitz",
           es: "Tormenta de acero"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 220
@@ -2579,9 +2505,8 @@ export const UNITS: any[] = [
           de: "Zwillingsschwerter",
           es: "Espadas gemelas"
         },
-        framesList: [0, 4, 47, 4, 35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20, 4],
+        framesList: [68, 4, 47, 4, 35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20, 4],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10],
-        firstHit: 68,
         castTime: 40,
         offset: 0,
         base: 800,
@@ -2597,9 +2522,8 @@ export const UNITS: any[] = [
           de: "Zwiebelschneider",
           es: "Cortador cebolla"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7],
-        firstHit: 42,
         castTime: 40,
         offset: 14,
         base: 520
@@ -2628,8 +2552,7 @@ export const UNITS: any[] = [
           es: "Pisotón fuerte"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 90,
+        framesList: [90],
         castTime: 40,
         offset: 0,
         base: 250,
@@ -2646,8 +2569,7 @@ export const UNITS: any[] = [
           es: "Pisotón total"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 90,
+        framesList: [90],
         castTime: 40,
         offset: 0,
         base: 500,
@@ -2676,8 +2598,7 @@ export const UNITS: any[] = [
           de: "Verwüstung",
           es: "Devastador"
         },
-        framesList: [0, 26, 10, 10, 30],
-        firstHit: 20,
+        framesList: [20, 26, 10, 10, 30],
         castTime: 40,
         offset: 80,
         base: 800
@@ -2705,9 +2626,8 @@ export const UNITS: any[] = [
           de: "Fäuste des Zorns",
           es: "Puños de la ira"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [2, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
-        firstHit: 2,
         castTime: 0,
         offset: 66,
         base: 350
@@ -2722,9 +2642,8 @@ export const UNITS: any[] = [
           de: "Prishe-Spezial",
           es: "Especial de Prishe"
         },
-        framesList: [0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+        framesList: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16],
-        firstHit: 4,
         castTime: 0,
         offset: 66,
         base: 500,
@@ -2753,9 +2672,8 @@ export const UNITS: any[] = [
           de: "Königsgleve",
           es: "Glaive real"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [82, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 82,
         castTime: 40,
         offset: 26,
         base: 200,
@@ -2778,8 +2696,7 @@ export const UNITS: any[] = [
           es: "Golpe finiquitador"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 180,
+        framesList: [180],
         castTime: 40,
         offset: 86,
         base: 750,
@@ -2807,9 +2724,8 @@ export const UNITS: any[] = [
           de: "Dunkler Sonnenaufgang",
           es: "Oscuridad del ocaso"
         },
-        framesList: [0, 9, 9, 9, 9, 9, 9, 9],
+        framesList: [102, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 102,
         castTime: 40,
         offset: 26,
         base: 200,
@@ -2848,9 +2764,8 @@ export const UNITS: any[] = [
           de: "R020: Illusion",
           es: "R020: Espejismo"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 300,
@@ -2879,8 +2794,7 @@ export const UNITS: any[] = [
           es: "Meteo"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 350,
+        framesList: [350],
         castTime: 40,
         offset: 16,
         base: 250,
@@ -2900,9 +2814,8 @@ export const UNITS: any[] = [
           es: "Meteo +2"
         },
         type: "finish",
-        framesList: [0, 20, 20],
+        framesList: [310, 20, 20],
         hitDamage: [33, 33, 34],
-        firstHit: 310,
         castTime: 40,
         offset: 16,
         base: 300,
@@ -2922,8 +2835,7 @@ export const UNITS: any[] = [
           es: "Artema"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 365,
+        framesList: [365],
         castTime: 40,
         offset: 0,
         base: 280,
@@ -2943,8 +2855,7 @@ export const UNITS: any[] = [
           es: "Piedra+++"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 170,
+        framesList: [170],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -2966,8 +2877,7 @@ export const UNITS: any[] = [
           es: "Aero+++"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 170,
+        framesList: [170],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -2989,8 +2899,7 @@ export const UNITS: any[] = [
           es: "Aqua+++"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 190,
+        framesList: [190],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -3012,8 +2921,7 @@ export const UNITS: any[] = [
           es: "Electro+++"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 150,
+        framesList: [150],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -3035,8 +2943,7 @@ export const UNITS: any[] = [
           es: "Hielo+++"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 240,
+        framesList: [240],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -3058,8 +2965,7 @@ export const UNITS: any[] = [
           es: "Piro+++"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 210,
+        framesList: [210],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -3080,9 +2986,8 @@ export const UNITS: any[] = [
           de: "Kettensäge",
           es: "Motosierra"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 16],
+        framesList: [42, 8, 8, 8, 8, 8, 16],
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 140,
@@ -3099,8 +3004,7 @@ export const UNITS: any[] = [
           es: "Cometa"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 16,
         base: 190,
@@ -3129,8 +3033,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 450,
-        framesList: [0],
+        framesList: [450],
         offset: 16,
         base: 230,
         type: "finish"
@@ -3160,9 +3063,8 @@ export const UNITS: any[] = [
           de: "Verführerischer Refrain",
           es: "Coro seductor"
         },
-        framesList: [0, 7, 7, 8, 8, 16, 8],
+        framesList: [139, 7, 7, 8, 8, 16, 8],
         hitDamage: [10, 15, 15, 15, 15, 15, 15],
-        firstHit: 139,
         castTime: 0,
         offset: 56,
         base: 280,
@@ -3194,8 +3096,7 @@ export const UNITS: any[] = [
           es: "Patada giratoria"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 10,
+        framesList: [10],
         castTime: 0,
         offset: 40,
         base: 350,
@@ -3224,8 +3125,7 @@ export const UNITS: any[] = [
           es: "Explosión cúbica - Grande"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 60,
+        framesList: [60],
         castTime: 0,
         offset: 40,
         base: 500,
@@ -3254,8 +3154,7 @@ export const UNITS: any[] = [
           es: "Aplastador vicioso"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 60,
+        framesList: [60],
         castTime: 0,
         offset: 40,
         base: 500,
@@ -3284,8 +3183,7 @@ export const UNITS: any[] = [
           es: "Destino"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 102,
+        framesList: [102],
         castTime: 40,
         offset: 0,
         base: 200,
@@ -3318,8 +3216,7 @@ export const UNITS: any[] = [
           es: "Golpe supremo"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 70,
+        framesList: [70],
         castTime: 40,
         offset: 0,
         base: 250,
@@ -3349,8 +3246,7 @@ export const UNITS: any[] = [
           es: "Tiro superbio"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 40,
         offset: 16,
         base: 450
@@ -3366,8 +3262,7 @@ export const UNITS: any[] = [
           es: "Tiro superbio +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 40,
         offset: 16,
         base: 555
@@ -3396,8 +3291,7 @@ export const UNITS: any[] = [
           es: "Palabra de ley"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 270,
+        framesList: [270],
         castTime: 40,
         offset: 16,
         base: 300,
@@ -3423,14 +3317,12 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [
           "light"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 270,
-        framesList: [0],
+        framesList: [270],
         offset: 16,
         base: 300,
         ignore: 50,
@@ -3460,8 +3352,7 @@ export const UNITS: any[] = [
           es: "Descuartizar +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 60,
+        framesList: [60],
         castTime: 0,
         offset: 40,
         base: 525,
@@ -3491,8 +3382,7 @@ export const UNITS: any[] = [
           es: "Destruir arma"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 80,
+        framesList: [80],
         castTime: 0,
         offset: 40,
         base: 250,
@@ -3523,8 +3413,7 @@ export const UNITS: any[] = [
         },
         type: "finish",
         damage: "magic",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 0,
         base: 620
@@ -3541,8 +3430,7 @@ export const UNITS: any[] = [
         },
         type: "finish",
         damage: "magic",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 0,
         base: 860
@@ -3571,8 +3459,7 @@ export const UNITS: any[] = [
           es: "Pulso sangriento"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 130,
+        framesList: [130],
         castTime: 30,
         offset: 16,
         base: 650,
@@ -3590,8 +3477,7 @@ export const UNITS: any[] = [
           es: "Hemorragia sangrienta"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 90,
+        framesList: [90],
         castTime: 30,
         offset: 16,
         base: 500,
@@ -3612,8 +3498,7 @@ export const UNITS: any[] = [
           es: "Hidra sangrienta"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 215,
+        framesList: [215],
         castTime: 45,
         offset: 0,
         base: 740,
@@ -3638,14 +3523,12 @@ export const UNITS: any[] = [
         ],
         castTime: 30,
         damage: "magic",
-        magicType: null,
         elements: [
           "water"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 90,
-        framesList: [0],
+        framesList: [90],
         offset: 16,
         base: 750,
         type: "finish"
@@ -3665,12 +3548,10 @@ export const UNITS: any[] = [
         ],
         castTime: 30,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 130,
-        framesList: [0],
+        framesList: [130],
         offset: 16,
         base: 1050,
         type: "finish"
@@ -3710,8 +3591,7 @@ export const UNITS: any[] = [
           es: "Oscuridad profunda"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 23,
+        framesList: [23],
         castTime: 0,
         offset: 40,
         base: 420,
@@ -3743,8 +3623,7 @@ export const UNITS: any[] = [
           es: "Disparo verdadero"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 20,
         offset: 26,
         base: 240,
@@ -3761,8 +3640,7 @@ export const UNITS: any[] = [
           es: "Disparo verdadero +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 20,
         offset: 26,
         base: 350,
@@ -3793,8 +3671,7 @@ export const UNITS: any[] = [
           es: "Meteorito"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 350,
+        framesList: [350],
         castTime: 40,
         offset: 0,
         base: 230,
@@ -3813,8 +3690,7 @@ export const UNITS: any[] = [
           es: "Fuego del averno"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 80,
+        framesList: [80],
         castTime: 40,
         offset: 0,
         base: 2000,
@@ -3835,8 +3711,7 @@ export const UNITS: any[] = [
           es: "Fuego del averno +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 80,
+        framesList: [80],
         castTime: 40,
         offset: 0,
         base: 2500,
@@ -3876,8 +3751,7 @@ export const UNITS: any[] = [
           es: "Devora almas +2"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 20,
+        framesList: [20],
         castTime: 0,
         offset: 40,
         base: 750,
@@ -3915,8 +3789,7 @@ export const UNITS: any[] = [
           es: "Hoja abisal"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 0,
         base: 750,
@@ -3948,8 +3821,7 @@ export const UNITS: any[] = [
           es: "Luz de juicio"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 280,
@@ -3981,8 +3853,7 @@ export const UNITS: any[] = [
           es: "Tajo de viento"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 70,
+        framesList: [70],
         castTime: 40,
         offset: 0,
         base: 700,
@@ -4011,9 +3882,8 @@ export const UNITS: any[] = [
           de: "Solider Schlag",
           es: "Puñetazo firme"
         },
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10],
         hitDamage: [16, 16, 17, 17, 17, 17],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 300
@@ -4028,9 +3898,8 @@ export const UNITS: any[] = [
           de: "Weicher Tritt",
           es: "Patada suave"
         },
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [50, 10, 10, 10, 10, 10],
         hitDamage: [16, 16, 17, 17, 17, 17],
-        firstHit: 50,
         castTime: 40,
         offset: 16,
         base: 200
@@ -4045,9 +3914,8 @@ export const UNITS: any[] = [
           de: "Wolfsklauenfaust",
           es: "Puño garra de lobo"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 500
@@ -4062,9 +3930,8 @@ export const UNITS: any[] = [
           de: "Falkentritt",
           es: "Patada halcón"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 300
@@ -4079,8 +3946,7 @@ export const UNITS: any[] = [
           de: "Tigerklauenfaust",
           es: "Puño garra de tigre"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        firstHit: 42,
+        framesList: [42, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
         offset: 16,
         base: 600
@@ -4095,8 +3961,7 @@ export const UNITS: any[] = [
           de: "Drachentritt",
           es: "Patada dragón"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        firstHit: 42,
+        framesList: [42, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
         offset: 16,
         base: 400
@@ -4111,9 +3976,8 @@ export const UNITS: any[] = [
           de: "Stärkste Faust",
           es: "Puño supremo"
         },
-        framesList: [0, 7, 9, 7, 9, 7, 9, 9, 5, 5],
+        framesList: [47, 7, 9, 7, 9, 7, 9, 9, 5, 5],
         hitDamage: [5, 5, 5, 5, 5, 5, 5, 65],
-        firstHit: 47,
         castTime: 0,
         offset: 0,
         base: 840,
@@ -4142,9 +4006,8 @@ export const UNITS: any[] = [
           de: "Giftregen",
           es: "Lluvia tóxica"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [50, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        firstHit: 50,
         castTime: 40,
         offset: 16,
         base: 180,
@@ -4176,8 +4039,7 @@ export const UNITS: any[] = [
           es: "Versus"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 365,
+        framesList: [365],
         castTime: 40,
         offset: 16,
         base: 510,
@@ -4210,9 +4072,8 @@ export const UNITS: any[] = [
           de: "Grimm - Seelensperre",
           es: "Parca - Ráfaga de alma"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [62, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [5, 5, 5, 7, 7, 8, 9, 9, 10, 35],
-        firstHit: 62,
         castTime: 30,
         offset: 26,
         base: 200,
@@ -4230,9 +4091,8 @@ export const UNITS: any[] = [
           de: "Grimm - Unirdische Flammen",
           es: "Parca - Llama de Eldritch"
         },
-        framesList: [0, 10, 10, 10, 10],
+        framesList: [110, 10, 10, 10, 10],
         hitDamage: [10, 10, 15, 15, 50],
-        firstHit: 110,
         castTime: 0,
         offset: 56,
         base: 300,
@@ -4274,8 +4134,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 150,
-        framesList: [0],
+        framesList: [150],
         offset: 16,
         base: 600,
         type: "finish"
@@ -4290,9 +4149,8 @@ export const UNITS: any[] = [
           de: "Phantomwut",
           es: "Furia fantasma"
         },
-        framesList: [0, 4, 4, 4, 4, 4, 4, 4, 30],
+        framesList: [62, 4, 4, 4, 4, 4, 4, 4, 30],
         hitDamage: [5, 7, 8, 9, 10, 11, 12, 13, 25],
-        firstHit: 62,
         castTime: 60,
         offset: 0,
         base: 660,
@@ -4309,9 +4167,7 @@ export const UNITS: any[] = [
         ]
       }
     ],
-    multipleBlack: 2,
-    multipleWhite: 1,
-    multipleGreen: 1
+    multipleBlack: 2
   },
   {
     id: 67,
@@ -4334,9 +4190,8 @@ export const UNITS: any[] = [
           de: "Macht sie zu Fischfutter!",
           es: "Echadlo a los peces"
         },
-        framesList: [0, 5, 5, 5, 5, 5],
+        framesList: [22, 5, 5, 5, 5, 5],
         hitDamage: [16, 16, 16, 17, 17, 18],
-        firstHit: 22,
         castTime: 20,
         offset: 14,
         base: 350,
@@ -4357,9 +4212,8 @@ export const UNITS: any[] = [
           de: "Befreit den Kraken",
           es: "Soltad al Kraken"
         },
-        framesList: [0, 10, 10, 10, 35, 10, 10, 10],
+        framesList: [62, 10, 10, 10, 35, 10, 10, 10],
         hitDamage: [10, 10, 12, 12, 13, 13, 15, 15],
-        firstHit: 62,
         castTime: 0,
         offset: 0,
         base: 570,
@@ -4397,9 +4251,8 @@ export const UNITS: any[] = [
           de: "Illusion - Phantasmagorische Kräfte",
           es: "Ilusión - Fuerzas fantasmales"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [50, 8, 8, 8, 8, 8, 8],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        firstHit: 50,
         castTime: 20,
         offset: 16,
         base: 600,
@@ -4438,8 +4291,7 @@ export const UNITS: any[] = [
           es: "Voz lunática (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 170,
+        framesList: [170],
         castTime: 40,
         offset: 0,
         base: 12000,
@@ -4460,8 +4312,7 @@ export const UNITS: any[] = [
           es: "Voz lunática (3)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 170,
+        framesList: [170],
         castTime: 40,
         offset: 0,
         base: 21000,
@@ -4495,12 +4346,10 @@ export const UNITS: any[] = [
           es: "Fuego infernal (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 14000,
-        damage: "physic",
         elements: [
           "fire"
         ],
@@ -4517,12 +4366,10 @@ export const UNITS: any[] = [
           es: "Fuego infernal (3)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 23500,
-        damage: "physic",
         elements: [
           "fire"
         ],
@@ -4552,8 +4399,7 @@ export const UNITS: any[] = [
           es: "Polvo de diamantes (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 14000,
@@ -4574,8 +4420,7 @@ export const UNITS: any[] = [
           es: "Polvo de diamantes (3)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 19000,
@@ -4609,8 +4454,7 @@ export const UNITS: any[] = [
           es: "Emisario de la noche (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 190,
+        framesList: [190],
         castTime: 40,
         offset: 0,
         base: 17000,
@@ -4644,8 +4488,7 @@ export const UNITS: any[] = [
           es: "Rayos de justicia (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 14000,
@@ -4666,8 +4509,7 @@ export const UNITS: any[] = [
           es: "Rayos de justicia (3)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 110,
+        framesList: [110],
         castTime: 40,
         offset: 0,
         base: 21000,
@@ -4701,12 +4543,10 @@ export const UNITS: any[] = [
           es: "Ira de la tierra (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 170,
+        framesList: [170],
         castTime: 40,
         offset: 0,
         base: 17000,
-        damage: "physic",
         elements: [
           "earth"
         ],
@@ -4736,8 +4576,7 @@ export const UNITS: any[] = [
           es: "Viento celestial (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 190,
+        framesList: [190],
         castTime: 40,
         offset: 0,
         base: 18000,
@@ -4771,12 +4610,10 @@ export const UNITS: any[] = [
           es: "Gungnir (2)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 70,
+        framesList: [70],
         castTime: 40,
         offset: 0,
         base: 20000,
-        damage: "physic",
         dualable: false
       }
     ]
@@ -4803,8 +4640,7 @@ export const UNITS: any[] = [
           es: "Megafulgor (1)"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 170,
+        framesList: [170],
         castTime: 40,
         offset: 0,
         base: 30000,
@@ -4834,8 +4670,7 @@ export const UNITS: any[] = [
           de: "Sturmwindklinge",
           es: "Cuchilla veloz"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-        firstHit: 2,
+        framesList: [2, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         castTime: 0,
         offset: 66,
         base: 450,
@@ -4853,9 +4688,8 @@ export const UNITS: any[] = [
           de: "Geölter Blitz",
           es: "Tormenta huracanada"
         },
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [2, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 2,
         castTime: 0,
         offset: 26,
         base: 250,
@@ -4871,8 +4705,7 @@ export const UNITS: any[] = [
           de: "Klingengefängnis",
           es: "Prisión de cuchillas"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        firstHit: 42,
+        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 42],
         castTime: 40,
         offset: 17,
         base: 400
@@ -4888,8 +4721,7 @@ export const UNITS: any[] = [
           es: "Cuchilla centella"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 50,
+        framesList: [50],
         castTime: 0,
         offset: 40,
         base: 225,
@@ -4908,9 +4740,8 @@ export const UNITS: any[] = [
           de: "Königlicher Befehl",
           es: "Orden del reino"
         },
-        framesList: [0, 10, 13, 14, 14, 10, 13, 14, 24, 12, 34, 18, 18, 18, 16],
+        framesList: [34, 10, 13, 14, 14, 10, 13, 14, 24, 12, 34, 18, 18, 18, 16],
         hitDamage: [3, 3, 3, 3, 3, 3, 3, 3, 3, 12, 12, 12, 12, 12, 13],
-        firstHit: 34,
         castTime: 0,
         offset: 0,
         base: 420,
@@ -4946,9 +4777,8 @@ export const UNITS: any[] = [
           de: "Tornado",
           es: "Tornado"
         },
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 212,
         castTime: 40,
         offset: 16,
         base: 250,
@@ -4986,8 +4816,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 170,
-        framesList: [0],
+        framesList: [170],
         offset: 16,
         base: 600,
         type: "finish"
@@ -5003,8 +4832,7 @@ export const UNITS: any[] = [
           es: "Arrasar"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 20,
         offset: 0,
         base: 1000,
@@ -5025,9 +4853,8 @@ export const UNITS: any[] = [
           de: "Mahlstrom",
           es: "Vórtice"
         },
-        framesList: [0, 5, 5, 10, 10, 20, 20],
+        framesList: [100, 5, 5, 10, 10, 20, 20],
         hitDamage: [10, 10, 20, 15, 15, 15, 15],
-        firstHit: 100,
         castTime: 90,
         offset: 0,
         base: 840,
@@ -5074,7 +4901,6 @@ export const UNITS: any[] = [
         },
         framesList: [0, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
-        firstHit: 0,
         castTime: 0,
         offset: 60,
         base: 280
@@ -5102,9 +4928,8 @@ export const UNITS: any[] = [
           de: "Warp-Angriff",
           es: "Lux Impetus"
         },
-        framesList: [0, 22, 13],
+        framesList: [52, 22, 13],
         hitDamage: [60, 20, 20],
-        firstHit: 52,
         castTime: 50,
         offset: 120,
         base: 250,
@@ -5121,9 +4946,8 @@ export const UNITS: any[] = [
           de: "Direkt-Warp",
           es: "Quemarropa"
         },
-        framesList: [0, 22, 13],
+        framesList: [52, 22, 13],
         hitDamage: [60, 20, 20],
-        firstHit: 52,
         castTime: 50,
         offset: 120,
         base: 525,
@@ -5140,8 +4964,7 @@ export const UNITS: any[] = [
           de: "Donnerflasche",
           es: "Vial Electro"
         },
-        framesList: [0],
-        firstHit: 80,
+        framesList: [80],
         castTime: 40,
         offset: 60,
         base: 400,
@@ -5161,8 +4984,7 @@ export const UNITS: any[] = [
           de: "Schneesturmflasche",
           es: "Vial Hielo"
         },
-        framesList: [0],
-        firstHit: 145,
+        framesList: [145],
         castTime: 40,
         offset: 60,
         base: 400,
@@ -5182,8 +5004,7 @@ export const UNITS: any[] = [
           de: "Molotowcocktail",
           es: "Vial Piro"
         },
-        framesList: [0],
-        firstHit: 95,
+        framesList: [95],
         castTime: 40,
         offset: 60,
         base: 400,
@@ -5203,8 +5024,7 @@ export const UNITS: any[] = [
           de: "Armiger",
           es: "Coro espectral"
         },
-        framesList: [0, 5, 11, 42, 50],
-        firstHit: 121,
+        framesList: [0, 5, 11, 42, 5121],
         castTime: 0,
         offset: 0,
         base: 1480,
@@ -5233,9 +5053,8 @@ export const UNITS: any[] = [
           de: "Sechserstoß",
           es: "Hexaestoque"
         },
-        framesList: [0, 6, 6, 6, 6, 29],
+        framesList: [28, 6, 6, 6, 6, 29],
         hitDamage: [10, 10, 10, 10, 10, 50],
-        firstHit: 28,
         castTime: 0,
         offset: 66,
         base: 200,
@@ -5257,8 +5076,7 @@ export const UNITS: any[] = [
           de: "Vaskylade",
           es: "Vaskylade"
         },
-        framesList: [0, 61, 49, 10, 10],
-        firstHit: 74,
+        framesList: [0, 61, 49, 10, 174],
         castTime: 0,
         offset: 0,
         base: 520,
@@ -5282,8 +5100,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -5291,9 +5107,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        dualable: true,
-        firstHit: 65,
-        framesList: [0],
+        framesList: [65],
         offset: 16,
         base: 180,
         type: "finish"
@@ -5321,9 +5135,8 @@ export const UNITS: any[] = [
           de: "Hundert Stöße",
           es: "Cien estoques"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [47, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        firstHit: 47,
         castTime: 40,
         offset: 0,
         base: 120,
@@ -5339,9 +5152,8 @@ export const UNITS: any[] = [
           de: "Tausend Stöße",
           es: "Mil estoques"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 5, 10, 10, 10],
+        framesList: [47, 10, 10, 10, 10, 10, 10, 10, 5, 10, 10, 10],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9],
-        firstHit: 47,
         castTime: 40,
         offset: 0,
         base: 180,
@@ -5357,8 +5169,7 @@ export const UNITS: any[] = [
           de: "Tornadospeer",
           es: "Lanza tornado"
         },
-        framesList: [0, 5, 7, 7, 7, 7, 7, 7, 7, 8],
-        firstHit: 116,
+        framesList: [0, 5, 7, 7, 7, 7, 7, 7, 7, 116],
         castTime: 0,
         offset: 0,
         base: 390,
@@ -5397,8 +5208,7 @@ export const UNITS: any[] = [
           de: "Unschuldige Magika",
           es: "Magika inocente"
         },
-        framesList: [0, 40, 20, 30, 30],
-        firstHit: 70,
+        framesList: [0, 40, 20, 30, 370],
         castTime: 40,
         offset: 16,
         base: 200,
@@ -5416,9 +5226,8 @@ export const UNITS: any[] = [
           de: "Beben",
           es: "Seísmo"
         },
-        framesList: [0, 22, 21, 22, 23, 23, 22, 23],
+        framesList: [160, 22, 21, 22, 23, 23, 22, 23],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
-        firstHit: 160,
         castTime: 40,
         offset: 16,
         base: 275,
@@ -5439,8 +5248,7 @@ export const UNITS: any[] = [
           de: "Große Welle",
           es: "Gran oleaje"
         },
-        framesList: [0],
-        firstHit: 140,
+        framesList: [140],
         castTime: 0,
         offset: 0,
         base: 940,
@@ -5475,8 +5283,7 @@ export const UNITS: any[] = [
           de: "Climgefahr",
           es: "Riesgo climático"
         },
-        framesList: [0],
-        firstHit: 4,
+        framesList: [4],
         castTime: 0,
         offset: 66,
         base: 275,
@@ -5493,9 +5300,8 @@ export const UNITS: any[] = [
           de: "Meteorregen",
           es: "Lluvia meteorito"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [84, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
-        firstHit: 84,
         castTime: 4,
         offset: 66,
         base: 180,
@@ -5511,8 +5317,7 @@ export const UNITS: any[] = [
           de: "Letzter Schliff",
           es: "Toque final"
         },
-        framesList: [0],
-        firstHit: 75,
+        framesList: [75],
         castTime: 0,
         offset: 66,
         base: 400,
@@ -5528,9 +5333,8 @@ export const UNITS: any[] = [
           de: "Omnischlag",
           es: "Omnilátigo"
         },
-        framesList: [0, 18, 16, 32, 16, 12, 22, 22, 16, 14, 32, 18, 12, 30, 102],
+        framesList: [188, 18, 16, 32, 16, 12, 22, 22, 16, 14, 32, 18, 12, 30, 102],
         hitDamage: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 30],
-        firstHit: 188,
         castTime: 1,
         offset: 0,
         base: 1050,
@@ -5564,9 +5368,8 @@ export const UNITS: any[] = [
           de: "Aufziehkästchen",
           es: "Cacharro mecánico"
         },
-        framesList: [0, 8, 8, 9],
+        framesList: [60, 8, 8, 9],
         hitDamage: [20, 25, 25, 30],
-        firstHit: 60,
         castTime: 40,
         offset: 16,
         base: 160,
@@ -5588,8 +5391,7 @@ export const UNITS: any[] = [
           de: "Aufziehsoldaten",
           es: "Robosoldados"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        firstHit: 60,
+        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 60],
         castTime: 40,
         offset: 16,
         base: 300
@@ -5604,9 +5406,8 @@ export const UNITS: any[] = [
           de: "Hoffnungsschimmer",
           es: "Estrella fugaz"
         },
-        framesList: [0, 7, 7, 7, 7, 7],
+        framesList: [80, 7, 7, 7, 7, 7],
         hitDamage: [12, 12, 12, 12, 12, 40],
-        firstHit: 80,
         castTime: 70,
         offset: 16,
         base: 570,
@@ -5635,8 +5436,7 @@ export const UNITS: any[] = [
           de: "Verhexen - Eisbrand-Gebräu",
           es: "Gafe - Mezcolanza feroz"
         },
-        framesList: [0],
-        firstHit: 150,
+        framesList: [150],
         castTime: 40,
         offset: 16,
         base: 300,
@@ -5668,8 +5468,7 @@ export const UNITS: any[] = [
           de: "Verhexen - Sprudelschock-Gebräu",
           es: "Gafe - Mezcolanza tormentosa"
         },
-        framesList: [0],
-        firstHit: 70,
+        framesList: [70],
         castTime: 40,
         offset: 16,
         base: 300,
@@ -5701,8 +5500,7 @@ export const UNITS: any[] = [
           de: "Verhexen - Schlammböel-Gebräu",
           es: "Gafe - Mezcolanza turbia"
         },
-        framesList: [0],
-        firstHit: 180,
+        framesList: [180],
         castTime: 40,
         offset: 16,
         base: 300,
@@ -5757,8 +5555,7 @@ export const UNITS: any[] = [
           de: "Eissplitter",
           es: "Fragmentos de hielo"
         },
-        framesList: [0, 7, 7, 7, 7, 5, 7, 7, 7, 7],
-        firstHit: 49,
+        framesList: [0, 7, 7, 7, 7, 5, 7, 7, 7, 49],
         castTime: 20,
         offset: 0,
         base: 330,
@@ -5782,9 +5579,8 @@ export const UNITS: any[] = [
           de: "Absoluter Nullpunkt",
           es: "Cero absoluto"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-        firstHit: 40,
         castTime: 20,
         offset: 16,
         base: 300,
@@ -5804,9 +5600,8 @@ export const UNITS: any[] = [
           de: "Absoluter Nullpunkt (Max)",
           es: "Cero absoluto (Max)"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-        firstHit: 40,
         castTime: 20,
         offset: 16,
         base: 900,
@@ -5826,8 +5621,7 @@ export const UNITS: any[] = [
           de: "Schneebegräbnis",
           es: "Entierro de nieve"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        firstHit: 60,
+        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 60],
         castTime: 36,
         offset: 16,
         base: 350,
@@ -5848,9 +5642,8 @@ export const UNITS: any[] = [
           de: "Schneebär-Raserei",
           es: "Furia polar"
         },
-        framesList: [0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+        framesList: [80, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         hitDamage: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10],
-        firstHit: 80,
         castTime: 1,
         offset: 0,
         base: 710,
@@ -5893,8 +5686,7 @@ export const UNITS: any[] = [
           de: "Gletscherwelle +2",
           es: "Ola glacial +2"
         },
-        framesList: [0, 6, 4, 3, 3],
-        firstHit: 178,
+        framesList: [0, 6, 4, 3, 178],
         castTime: 40,
         offset: 16,
         base: 400,
@@ -5934,9 +5726,8 @@ export const UNITS: any[] = [
           de: "Eisiger Sturmwind",
           es: "Huracán gélido"
         },
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
-        firstHit: 80,
         castTime: 40,
         offset: 16,
         base: 200,
@@ -5970,8 +5761,7 @@ export const UNITS: any[] = [
           de: "Fokusmagie - Durchschuss",
           es: "Concentrar magia - Disparo penetrante"
         },
-        framesList: [0, 6, 6, 6, 6],
-        firstHit: 8,
+        framesList: [0, 6, 6, 6, 8],
         castTime: 40,
         offset: 16,
         base: 150,
@@ -5992,8 +5782,7 @@ export const UNITS: any[] = [
           de: "Fokusmagie - Wasserschuss",
           es: "Concentrar magia - Disparo acuático"
         },
-        framesList: [0, 6, 6, 6, 6],
-        firstHit: 8,
+        framesList: [0, 6, 6, 6, 8],
         castTime: 40,
         offset: 16,
         base: 150,
@@ -6013,8 +5802,7 @@ export const UNITS: any[] = [
           de: "Fokusmagie - Frostbeule (Max)",
           es: "Concentrar magia - Congelación (Max)"
         },
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 16,
         base: 420,
@@ -6035,9 +5823,8 @@ export const UNITS: any[] = [
           de: "Aquatische Implosion",
           es: "Implosión acuática"
         },
-        framesList: [0, 6, 6, 6, 6, 7],
+        framesList: [46, 6, 6, 6, 6, 7],
         hitDamage: [16, 16, 16, 16, 16, 20],
-        firstHit: 46,
         castTime: 40,
         offset: 16,
         base: 200,
@@ -6057,8 +5844,7 @@ export const UNITS: any[] = [
           de: "Eiszapfenmangel",
           es: "Carámbano de hielo"
         },
-        framesList: [0, 15],
-        firstHit: 110,
+        framesList: [0, 1110],
         castTime: 40,
         offset: 16,
         base: 200,
@@ -6091,7 +5877,6 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -6104,8 +5889,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 110,
-        framesList: [0, 15],
+        framesList: [110, 15],
         offset: 16,
         base: 250
       }
@@ -6142,9 +5926,8 @@ export const UNITS: any[] = [
           de: "Blitzhieb",
           es: "Golpe atronador"
         },
-        framesList: [0, 5, 5, 5, 5, 5],
+        framesList: [46, 5, 5, 5, 5, 5],
         hitDamage: [16, 17, 16, 17, 17, 17],
-        firstHit: 46,
         castTime: 40,
         offset: 16,
         base: 400,
@@ -6162,9 +5945,8 @@ export const UNITS: any[] = [
           de: "Heilige Trübsal",
           es: "Aflicción sagrada"
         },
-        framesList: [0, 6, 6, 6, 6, 6],
+        framesList: [46, 6, 6, 6, 6, 6],
         hitDamage: [16, 17, 16, 17, 17, 17],
-        firstHit: 46,
         castTime: 40,
         offset: 16,
         base: 400,
@@ -6182,9 +5964,8 @@ export const UNITS: any[] = [
           de: "Leuchthieb",
           es: "Golpe de luz"
         },
-        framesList: [0, 8, 8, 8, 8, 8],
+        framesList: [42, 8, 8, 8, 8, 8],
         hitDamage: [16, 17, 16, 17, 17, 17],
-        firstHit: 42,
         castTime: 40,
         offset: 16,
         base: 450,
@@ -6202,9 +5983,8 @@ export const UNITS: any[] = [
           de: "Heiliger Hieb",
           es: "Golpe sagrado"
         },
-        framesList: [0, 6, 6, 6, 6, 6],
+        framesList: [46, 6, 6, 6, 6, 6],
         hitDamage: [16, 17, 16, 17, 17, 17],
-        firstHit: 46,
         castTime: 40,
         debuffs: [
           {
@@ -6230,8 +6010,6 @@ export const UNITS: any[] = [
           6, 6, 7, 7, 8, 8, 8, 50
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -6239,9 +6017,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 260,
         ignore: 50
@@ -6256,9 +6032,8 @@ export const UNITS: any[] = [
           de: "Morgenstern",
           es: "Estrella del alba"
         },
-        framesList: [0, 6, 6, 6, 6, 7],
+        framesList: [46, 6, 6, 6, 6, 7],
         hitDamage: [16, 16, 16, 16, 16, 20],
-        firstHit: 46,
         castTime: 40,
         offset: 16,
         base: 220,
@@ -6276,8 +6051,7 @@ export const UNITS: any[] = [
           de: "Legendärer Held",
           es: "Héroe legendario"
         },
-        framesList: [0],
-        firstHit: 175,
+        framesList: [175],
         castTime: 40,
         offset: 16,
         base: 420,
@@ -6310,9 +6084,8 @@ export const UNITS: any[] = [
           de: "Hellebardentanz",
           es: "Danza de alabarda"
         },
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10],
         hitDamage: [16, 16, 17, 17, 17, 17],
-        firstHit: 42,
         castTime: 40,
         offset: 26,
         base: 300,
@@ -6328,8 +6101,7 @@ export const UNITS: any[] = [
           de: "Befehl der Samurai-Prinzessin",
           es: "Orden de la princesa samurái"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-        firstHit: 78,
+        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 178],
         castTime: 0,
         offset: 0,
         base: 790,
@@ -6358,8 +6130,7 @@ export const UNITS: any[] = [
           de: "Flammender Höllenschlag",
           es: "Tajo de fuego infernal"
         },
-        framesList: [0, 2, 4, 12, 5],
-        firstHit: 24,
+        framesList: [0, 2, 4, 12, 24],
         castTime: 45,
         offset: 26,
         base: 550,
@@ -6378,8 +6149,7 @@ export const UNITS: any[] = [
           de: "Torpedo-Kata",
           es: "Formación torpedo"
         },
-        framesList: [0, 10, 10, 10, 10],
-        firstHit: 45,
+        framesList: [0, 10, 10, 10, 145],
         castTime: 40,
         offset: 26,
         base: 450,
@@ -6398,9 +6168,8 @@ export const UNITS: any[] = [
           de: "Flammenschlag des Purgatoriums",
           es: "Tajo ígneo del purgatorio"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [10, 8, 8, 8, 8, 8, 8],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
-        firstHit: 10,
         castTime: 0,
         offset: 8,
         base: 750,
@@ -6419,9 +6188,8 @@ export const UNITS: any[] = [
           de: "Gewitterschlag-Kata",
           es: "Electrogolpe firme"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10],
         hitDamage: [10, 10, 10, 10, 10, 20, 30],
-        firstHit: 42,
         castTime: 40,
         offset: 26,
         base: 550,
@@ -6440,9 +6208,8 @@ export const UNITS: any[] = [
           de: "Krötenkunst - Raiden",
           es: "Artesapo - Raiden"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [133, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        firstHit: 133,
         castTime: 0,
         offset: 0,
         base: 1400,
@@ -6475,8 +6242,7 @@ export const UNITS: any[] = [
           de: "Himmelssplitter",
           es: "Partidor celeste"
         },
-        framesList: [0],
-        firstHit: 2,
+        framesList: [2],
         castTime: 0,
         offset: 8,
         type: "finish",
@@ -6492,8 +6258,7 @@ export const UNITS: any[] = [
           de: "Purpurblitz",
           es: "Destello escarlata"
         },
-        framesList: [0],
-        firstHit: 6,
+        framesList: [6],
         castTime: 0,
         offset: 8,
         base: 200,
@@ -6510,8 +6275,7 @@ export const UNITS: any[] = [
           de: "Fatale Blüte",
           es: "Floración fatal"
         },
-        framesList: [0],
-        firstHit: 2,
+        framesList: [2],
         castTime: 0,
         offset: 8,
         base: 675,
@@ -6536,8 +6300,7 @@ export const UNITS: any[] = [
           de: "Purpurne Ära",
           es: "Era carmesí"
         },
-        framesList: [0],
-        firstHit: 20,
+        framesList: [20],
         castTime: 0,
         offset: 8,
         base: 675,
@@ -6562,8 +6325,7 @@ export const UNITS: any[] = [
           de: "Flimmerklinge - Final",
           es: "Destello de hoja - Final"
         },
-        framesList: [0],
-        firstHit: 2,
+        framesList: [2],
         castTime: 0,
         offset: 8,
         base: 525,
@@ -6580,8 +6342,7 @@ export const UNITS: any[] = [
           de: "Unaufhaltbare Welle",
           es: "Ola imparable"
         },
-        framesList: [0],
-        firstHit: 28,
+        framesList: [28],
         castTime: 0,
         offset: 0,
         base: 790,
@@ -6612,9 +6373,8 @@ export const UNITS: any[] = [
           de: "Revolte",
           es: "Levantamiento"
         },
-        framesList: [0, 24, 24, 24, 24, 24],
+        framesList: [70, 24, 24, 24, 24, 24],
         hitDamage: [16, 16, 16, 16, 16, 20],
-        firstHit: 70,
         castTime: 40,
         offset: 16,
         base: 300,
@@ -6632,8 +6392,7 @@ export const UNITS: any[] = [
           de: "Flammenfant",
           es: "Flamígero"
         },
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 40,
         offset: 16,
         base: 420,
@@ -6667,8 +6426,7 @@ export const UNITS: any[] = [
           de: "Elementarschuss - Feuer",
           es: "Tiro Piro"
         },
-        framesList: [0],
-        firstHit: 55,
+        framesList: [55],
         castTime: 0,
         offset: 8,
         base: 150,
@@ -6691,8 +6449,7 @@ export const UNITS: any[] = [
           de: "Elementarschuss - Blitz",
           es: "Tiro Electro"
         },
-        framesList: [0],
-        firstHit: 40,
+        framesList: [40],
         castTime: 0,
         offset: 8,
         base: 150,
@@ -6715,8 +6472,7 @@ export const UNITS: any[] = [
           de: "Elementarschuss - Wasser",
           es: "Tiro Aqua"
         },
-        framesList: [0],
-        firstHit: 90,
+        framesList: [90],
         castTime: 0,
         offset: 8,
         base: 150,
@@ -6739,8 +6495,7 @@ export const UNITS: any[] = [
           de: "Elementarschuss - Licht",
           es: "Tiro Sanctus"
         },
-        framesList: [0],
-        firstHit: 40,
+        framesList: [40],
         castTime: 0,
         offset: 8,
         base: 150,
@@ -6763,8 +6518,7 @@ export const UNITS: any[] = [
           de: "Todesschuss",
           es: "Tiro mortal"
         },
-        framesList: [0],
-        firstHit: 85,
+        framesList: [85],
         castTime: 40,
         offset: 16,
         base: 250,
@@ -6781,8 +6535,7 @@ export const UNITS: any[] = [
           de: "Gnadenhieb",
           es: "Estocada final"
         },
-        framesList: [0],
-        firstHit: 100,
+        framesList: [100],
         castTime: 40,
         offset: 16,
         base: 500,
@@ -6799,8 +6552,7 @@ export const UNITS: any[] = [
           de: "Element der Tücke",
           es: "Impacto astral"
         },
-        framesList: [0],
-        firstHit: 185,
+        framesList: [185],
         castTime: 0,
         offset: 0,
         base: 390,
@@ -6831,8 +6583,7 @@ export const UNITS: any[] = [
           de: "Schnelles Donnerlicht",
           es: "Luz atronadora veloz"
         },
-        framesList: [0, 10],
-        firstHit: 2,
+        framesList: [0, 12],
         castTime: 0,
         offset: 56,
         base: 230,
@@ -6859,8 +6610,7 @@ export const UNITS: any[] = [
           de: "Schneller Heller Blitz",
           es: "Destello luminoso veloz"
         },
-        framesList: [0, 10],
-        firstHit: 2,
+        framesList: [0, 12],
         castTime: 0,
         offset: 56,
         base: 230,
@@ -6887,8 +6637,7 @@ export const UNITS: any[] = [
           de: "Schnelle Verdorbene Düsternis",
           es: "Penumbra luminosa veloz"
         },
-        framesList: [0, 10],
-        firstHit: 2,
+        framesList: [0, 12],
         castTime: 0,
         offset: 56,
         base: 230,
@@ -6915,8 +6664,7 @@ export const UNITS: any[] = [
           de: "Schneller Rebellenplan",
           es: "Rebeldía veloz"
         },
-        framesList: [0],
-        firstHit: 167,
+        framesList: [167],
         castTime: 0,
         offset: 160,
         base: 650,
@@ -6935,8 +6683,7 @@ export const UNITS: any[] = [
           de: "Schneller letzter Donner (Max)",
           es: "Trueno final veloz (Max)"
         },
-        framesList: [0],
-        firstHit: 150,
+        framesList: [150],
         castTime: 40,
         offset: 16,
         base: 1500,
@@ -6957,9 +6704,8 @@ export const UNITS: any[] = [
           de: "Ewiger Strahl",
           es: "Rayo infinito"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3],
-        firstHit: 12,
         castTime: 0,
         offset: 8,
         base: 800,
@@ -7002,9 +6748,8 @@ export const UNITS: any[] = [
           de: "Wütender Vogel",
           es: "Pájaro enrabietado"
         },
-        framesList: [0, 3, 2, 3, 4, 2, 4, 2, 3, 2],
+        framesList: [38, 3, 2, 3, 4, 2, 4, 2, 3, 2],
         hitDamage: [8, 8, 9, 9, 10, 10, 10, 11, 12, 13],
-        firstHit: 38,
         castTime: 40,
         offset: 16,
         base: 300
@@ -7019,9 +6764,8 @@ export const UNITS: any[] = [
           de: "Wütender Vogel +2",
           es: "Pájaro enrabietado +2"
         },
-        framesList: [0, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+        framesList: [38, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         hitDamage: [8, 8, 9, 9, 10, 10, 10, 11, 12, 13],
-        firstHit: 38,
         castTime: 40,
         offset: 16,
         base: 400
@@ -7036,9 +6780,8 @@ export const UNITS: any[] = [
           de: "Flammende Kombo",
           es: "Combo ígneo"
         },
-        framesList: [0, 4, 6, 5, 8],
+        framesList: [85, 4, 6, 5, 8],
         hitDamage: [17, 19, 20, 21, 23],
-        firstHit: 85,
         castTime: 40,
         offset: 16,
         base: 185,
@@ -7063,9 +6806,8 @@ export const UNITS: any[] = [
           de: "Flammende Kombo +2",
           es: "Combo ígneo +2"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [82, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [9, 10, 11, 12, 13, 14, 15, 16],
-        firstHit: 82,
         castTime: 40,
         offset: 26,
         base: 300,
@@ -7103,8 +6845,7 @@ export const UNITS: any[] = [
           de: "Lux Magna +2",
           es: "Lux Magna +2"
         },
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 16,
         base: 500,
@@ -7136,13 +6877,11 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
         ],
         castTime: 0,
-        damage: "physical",
         elements: [
           "light"
         ],
         debuffs: [],
-        firstHit: 40,
-        framesList: [0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 9, 11, 15],
+        framesList: [40, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 9, 11, 15],
         offset: 8,
         base: 430,
         dualable: false
@@ -7174,11 +6913,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 85,
-        framesList: [0],
+        framesList: [85],
         offset: 16,
         base: 275,
         type: "finish"
@@ -7197,11 +6934,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 85,
-        framesList: [0],
+        framesList: [85],
         offset: 16,
         base: 275,
         type: "finish"
@@ -7220,11 +6955,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 85,
-        framesList: [0],
+        framesList: [85],
         offset: 16,
         base: 275,
         type: "finish"
@@ -7243,11 +6976,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 85,
-        framesList: [0],
+        framesList: [85],
         offset: 16,
         base: 275,
         type: "finish"
@@ -7266,11 +6997,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 22,
-        framesList: [0],
+        framesList: [22],
         offset: 16,
         base: 70,
         type: "finish"
@@ -7289,11 +7018,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 22,
-        framesList: [0],
+        framesList: [22],
         offset: 16,
         base: 70,
         type: "finish"
@@ -7312,7 +7039,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -7320,8 +7046,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 22,
-        framesList: [0],
+        framesList: [22],
         offset: 16,
         base: 70,
         type: "finish"
@@ -7340,11 +7065,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 22,
-        framesList: [0],
+        framesList: [22],
         offset: 16,
         base: 200,
         type: "finish"
@@ -7363,11 +7086,9 @@ export const UNITS: any[] = [
           16, 18, 20, 22, 24
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 82,
-        framesList: [0, 7, 7, 7, 7],
+        framesList: [82, 7, 7, 7, 7],
         offset: 16,
         base: 180,
         ignore: 25
@@ -7386,7 +7107,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 60,
-        damage: "physical",
         elements: [
           "fire"
         ],
@@ -7396,8 +7116,7 @@ export const UNITS: any[] = [
             value: 74
           }
         ],
-        firstHit: 150,
-        framesList: [0],
+        framesList: [150],
         base: 650,
         ignore: 50,
         offset: 16,
@@ -7432,12 +7151,10 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
         base: 220,
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [42, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         offset: 16
       },
       {
@@ -7454,11 +7171,9 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 13, 13, 13, 13
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 225,
         ignore: 50
@@ -7477,7 +7192,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -7485,8 +7199,7 @@ export const UNITS: any[] = [
             value: 60
           }
         ],
-        firstHit: 110,
-        framesList: [0],
+        framesList: [110],
         offset: 8,
         base: 360,
         type: "finish"
@@ -7505,11 +7218,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 104,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 110,
-        framesList: [0],
+        framesList: [110],
         offset: 16,
         base: 250,
         ignore: 50,
@@ -7529,11 +7240,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 104,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 114,
-        framesList: [0],
+        framesList: [114],
         offset: 16,
         base: 200,
         ignore: 50,
@@ -7553,11 +7262,9 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
         ],
         castTime: 138,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 180,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 32, 8, 8, 8, 8, 8, 96],
+        framesList: [180, 8, 8, 8, 8, 8, 8, 8, 32, 8, 8, 8, 8, 8, 96],
         offset: 16,
         base: 800,
         dualable: false
@@ -7600,13 +7307,11 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         castTime: 0,
-        damage: "physical",
         elements: [
           "lightning"
         ],
         debuffs: [],
-        firstHit: 26,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [26, 8, 8, 8, 8, 8, 8, 8],
         offset: 86,
         base: 400
       },
@@ -7624,11 +7329,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 72,
-        framesList: [0],
+        framesList: [72],
         offset: 86,
         base: 200,
         type: "finish"
@@ -7648,12 +7351,9 @@ export const UNITS: any[] = [
         ],
         castTime: 0,
         damage: "hybrid",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 65,
-        framesList: [0],
+        framesList: [65],
         offset: 86,
         base: 600,
         type: "finish"
@@ -7672,7 +7372,6 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -7680,8 +7379,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 12,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [12, 8, 8, 8, 8, 8, 8, 8],
         offset: 86,
         base: 425
       },
@@ -7699,11 +7397,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0],
+        framesList: [42],
         offset: 16,
         base: 265,
         ignore: 50,
@@ -7723,11 +7419,9 @@ export const UNITS: any[] = [
           15, 15, 15, 55
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 98,
-        framesList: [0, 32, 59, 87],
+        framesList: [98, 32, 59, 87],
         offset: 8,
         base: 520,
         ignore: 50,
@@ -7765,8 +7459,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         debuffs: [],
-        firstHit: 59,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [59, 8, 8, 8, 8, 8, 8, 8],
         offset: 16,
         base: 400
       },
@@ -7789,8 +7482,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [120, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 425
       },
@@ -7808,11 +7500,9 @@ export const UNITS: any[] = [
           10, 10, 10, 20, 20, 30
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 8, 8, 14, 10, 10],
+        framesList: [42, 8, 8, 14, 10, 10],
         offset: 16,
         base: 270
       },
@@ -7830,11 +7520,9 @@ export const UNITS: any[] = [
           15, 15, 15, 15, 40
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 18,
-        framesList: [0, 30, 28, 10, 36],
+        framesList: [18, 30, 28, 10, 36],
         offset: 8,
         base: 742.5,
         dualable: false
@@ -7869,8 +7557,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 250,
         type: "finish",
@@ -7893,8 +7580,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 20,
-        framesList: [0],
+        framesList: [20],
         offset: 16,
         type: "finish",
         base: 300,
@@ -7917,8 +7603,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 33,
-        framesList: [0],
+        framesList: [33],
         offset: 16,
         type: "finish",
         base: 500,
@@ -7941,8 +7626,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 40,
-        framesList: [0],
+        framesList: [40],
         offset: 16,
         type: "finish",
         base: 120,
@@ -7975,11 +7659,9 @@ export const UNITS: any[] = [
           15, 15, 20, 15, 20, 15
         ],
         castTime: 60,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 60,
-        framesList: [0, 6, 6, 6, 6, 6],
+        framesList: [60, 6, 6, 6, 6, 6],
         offset: 16,
         base: 300
       },
@@ -7997,11 +7679,9 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 15, 15
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8],
         offset: 36,
         base: 220,
         ignore: 50
@@ -8020,11 +7700,9 @@ export const UNITS: any[] = [
           20, 20, 20, 40
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 36,
-        framesList: [0, 71, 13, 105],
+        framesList: [36, 71, 13, 105],
         offset: 8,
         base: 850,
         ignore: 50,
@@ -8044,11 +7722,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 60,
-        framesList: [0],
+        framesList: [60],
         offset: 16,
         type: "finish",
         base: 1050
@@ -8081,11 +7757,9 @@ export const UNITS: any[] = [
           14, 14, 15, 14, 14, 15, 14
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 8, 8, 8, 8, 8, 16],
+        framesList: [42, 8, 8, 8, 8, 8, 16],
         offset: 16,
         base: 160
       },
@@ -8103,11 +7777,9 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 15, 15
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8],
         offset: 36,
         base: 200
       },
@@ -8125,11 +7797,9 @@ export const UNITS: any[] = [
           16, 16, 16, 16, 16, 20
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 60,
-        framesList: [0, 6, 6, 6, 6, 6],
+        framesList: [60, 6, 6, 6, 6, 6],
         offset: 16,
         base: 220
       },
@@ -8147,11 +7817,9 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         castTime: 15,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 12,
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         offset: 16,
         base: 800,
         dualable: false
@@ -8191,8 +7859,7 @@ export const UNITS: any[] = [
         ignore: 0,
         type: "magic",
         base: 38000,
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 8
       }
     ]
@@ -8227,8 +7894,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         debuffs: [],
-        firstHit: 170,
-        framesList: [0],
+        framesList: [170],
         offset: 8,
         base: 800,
         type: "finish"
@@ -8252,8 +7918,7 @@ export const UNITS: any[] = [
           "water"
         ],
         debuffs: [],
-        firstHit: 150,
-        framesList: [0],
+        framesList: [150],
         offset: 8,
         base: 800,
         type: "finish"
@@ -8277,8 +7942,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         debuffs: [],
-        firstHit: 110,
-        framesList: [0],
+        framesList: [110],
         offset: 8,
         base: 800,
         type: "finish"
@@ -8302,8 +7966,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         debuffs: [],
-        firstHit: 130,
-        framesList: [0],
+        framesList: [130],
         offset: 8,
         base: 800,
         type: "finish"
@@ -8327,8 +7990,7 @@ export const UNITS: any[] = [
           "light"
         ],
         debuffs: [],
-        firstHit: 410,
-        framesList: [0],
+        framesList: [410],
         offset: 8,
         base: 460,
         type: "finish"
@@ -8352,8 +8014,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 550,
         type: "finish"
@@ -8377,8 +8038,7 @@ export const UNITS: any[] = [
           "water"
         ],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 550,
         type: "finish"
@@ -8402,8 +8062,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 550,
         type: "finish"
@@ -8427,8 +8086,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 550,
         type: "finish"
@@ -8452,8 +8110,7 @@ export const UNITS: any[] = [
           "light"
         ],
         debuffs: [],
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 550,
         type: "finish"
@@ -8482,8 +8139,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 550
       },
@@ -8511,8 +8167,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 550
       },
@@ -8540,8 +8195,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 550
       },
@@ -8569,8 +8223,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 550
       },
@@ -8598,8 +8251,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 550
       },
@@ -8620,8 +8272,7 @@ export const UNITS: any[] = [
         damage: "hybrid",
         elements: [],
         debuffs: [],
-        firstHit: 72,
-        framesList: [0],
+        framesList: [72],
         offset: 8,
         base: 700,
         type: "finish"
@@ -8643,8 +8294,7 @@ export const UNITS: any[] = [
         damage: "hybrid",
         elements: [],
         debuffs: [],
-        firstHit: 12,
-        framesList: [0],
+        framesList: [12],
         offset: 8,
         base: 1100,
         type: "finish"
@@ -8666,8 +8316,7 @@ export const UNITS: any[] = [
         damage: "hybrid",
         elements: [],
         debuffs: [],
-        firstHit: 100,
-        framesList: [0],
+        framesList: [100],
         offset: 8,
         base: 1800,
         type: "finish",
@@ -8705,8 +8354,7 @@ export const UNITS: any[] = [
           "light"
         ],
         debuffs: [],
-        firstHit: 190,
-        framesList: [0],
+        framesList: [190],
         offset: 16,
         base: 360,
         type: "finish",
@@ -8723,8 +8371,7 @@ export const UNITS: any[] = [
           es: "Distopía"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 120,
+        framesList: [120],
         castTime: 40,
         offset: 16,
         base: 600,
@@ -8745,8 +8392,7 @@ export const UNITS: any[] = [
           es: "Artema"
         },
         type: "finish",
-        framesList: [0],
-        firstHit: 365,
+        framesList: [365],
         castTime: 40,
         offset: 0,
         base: 280,
@@ -8770,13 +8416,11 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [
           "light"
         ],
         debuffs: [],
-        firstHit: 162,
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [162, 8, 8, 8, 8, 8, 8],
         offset: 16,
         base: 525,
         dualable: false
@@ -8807,8 +8451,7 @@ export const UNITS: any[] = [
             value: 50,
           }
         ],
-        firstHit: 8,
-        framesList: [0, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [8, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 940,
         dualable: false
@@ -8846,8 +8489,7 @@ export const UNITS: any[] = [
           "water"
         ],
         debuffs: [],
-        firstHit: 190,
-        framesList: [0],
+        framesList: [190],
         offset: 16,
         base: 600,
         type: "finish",
@@ -8873,8 +8515,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         debuffs: [],
-        firstHit: 150,
-        framesList: [0],
+        framesList: [150],
         offset: 16,
         base: 600,
         type: "finish",
@@ -8900,8 +8541,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         debuffs: [],
-        firstHit: 210,
-        framesList: [0],
+        framesList: [210],
         offset: 16,
         base: 600,
         type: "finish",
@@ -8927,8 +8567,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         debuffs: [],
-        firstHit: 240,
-        framesList: [0],
+        framesList: [240],
         offset: 16,
         base: 600,
         type: "finish",
@@ -8959,8 +8598,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 133,
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 16,
         base: 250,
         magicType: "black",
@@ -8983,8 +8621,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 160,
-        framesList: [0, 24, 24, 24, 24, 24],
+        framesList: [160, 24, 24, 24, 24, 24],
         offset: 8,
         base: 570,
         ignore: 50,
@@ -9021,8 +8658,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 300,
-        framesList: [0],
+        framesList: [300],
         offset: 16,
         base: 900,
         type: "finish",
@@ -9045,8 +8681,7 @@ export const UNITS: any[] = [
         damage: "magic",
         elements: [],
         debuffs: [],
-        firstHit: 285,
-        framesList: [0],
+        framesList: [285],
         offset: 16,
         base: 2000,
         type: "finish",
@@ -9079,7 +8714,6 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 20,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9087,8 +8721,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 22,
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
+        framesList: [22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
         offset: 16,
         base: 300
       },
@@ -9106,7 +8739,6 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 15, 15
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9114,8 +8746,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8],
         offset: 36,
         base: 300
       },
@@ -9133,7 +8764,6 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9145,8 +8775,7 @@ export const UNITS: any[] = [
             value: 74,
           }
         ],
-        firstHit: 26,
-        framesList: [0, 10, 16, 80, 48],
+        framesList: [26, 10, 16, 80, 48],
         offset: 8,
         base: 740,
         dualable: false
@@ -9178,11 +8807,9 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 12, 12, 12, 16
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 16,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [16, 10, 10, 10, 10, 10, 10, 10],
         offset: 8,
         base: 480
       },
@@ -9200,13 +8827,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physical",
         elements: [
           "fire"
         ],
         debuffs: [],
-        firstHit: 20,
-        framesList: [0],
+        framesList: [20],
         offset: 8,
         base: 230,
         ignore: 25,
@@ -9226,7 +8851,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [
           "fire"
         ],
@@ -9236,8 +8860,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 210,
-        framesList: [0],
+        framesList: [210],
         offset: 16,
         base: 200,
         type: "finish"
@@ -9256,13 +8879,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [
           "fire"
         ],
         debuffs: [],
-        firstHit: 72,
-        framesList: [0],
+        framesList: [72],
         offset: 16,
         base: 320,
         type: "finish"
@@ -9281,7 +8902,6 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 12, 12, 12, 16
         ],
         castTime: 14,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9289,8 +8909,7 @@ export const UNITS: any[] = [
             value: 60
           }
         ],
-        firstHit: 16,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [16, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 420
       },
@@ -9308,11 +8927,9 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 85,
-        framesList: [0, 4, 21, 8, 85, 4, 4, 22, 6, 6, 12],
+        framesList: [85, 4, 21, 8, 85, 4, 4, 22, 6, 6, 12],
         offset: 8,
         base: 470,
         ignore: 50,
@@ -9345,11 +8962,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 40
         ],
         castTime: 15,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 15,
-        framesList: [0, 10, 10, 10, 10, 10, 66],
+        framesList: [15, 10, 10, 10, 10, 10, 66],
         offset: 16,
         base: 360
       },
@@ -9367,11 +8982,9 @@ export const UNITS: any[] = [
           13, 13, 13, 13, 13, 15
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 46,
-        framesList: [0, 6, 6, 6, 6, 13],
+        framesList: [46, 6, 6, 6, 6, 13],
         offset: 8,
         base: 250
       },
@@ -9389,11 +9002,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 50
         ],
         castTime: 14,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 16,
-        framesList: [0, 21, 32, 29, 9, 24],
+        framesList: [16, 21, 32, 29, 9, 24],
         offset: 16,
         base: 250
       },
@@ -9411,11 +9022,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 50
         ],
         castTime: 14,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 16,
-        framesList: [0, 21, 32, 29, 9, 24],
+        framesList: [16, 21, 32, 29, 9, 24],
         offset: 16,
         base: 250
       },
@@ -9433,11 +9042,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 160,
-        framesList: [0],
+        framesList: [160],
         offset: 16,
         base: 275,
         ignore: 50,
@@ -9457,11 +9064,9 @@ export const UNITS: any[] = [
           11, 11, 11, 11, 11, 11, 11, 23
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 92,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [92, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 200,
         ignore: 50
@@ -9480,7 +9085,6 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 50
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9488,8 +9092,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10],
         offset: 8,
         base: 100
       },
@@ -9507,7 +9110,6 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 50
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9515,8 +9117,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10],
         offset: 8,
         base: 100
       },
@@ -9534,7 +9135,6 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 50
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9542,8 +9142,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10],
         offset: 8,
         base: 100
       },
@@ -9561,7 +9160,6 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 50
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9569,8 +9167,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10],
         offset: 8,
         base: 100
       },
@@ -9588,11 +9185,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 150,
-        framesList: [0],
+        framesList: [150],
         offset: 8,
         base: 720,
         ignore: 50,
@@ -9626,11 +9221,9 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         offset: 14,
         base: 250
       },
@@ -9648,13 +9241,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physical",
         elements: [
           "dark"
         ],
         debuffs: [],
-        firstHit: 23,
-        framesList: [0],
+        framesList: [23],
         offset: 8,
         base: 420,
         type: "finish"
@@ -9673,11 +9264,9 @@ export const UNITS: any[] = [
           11, 11, 11, 11, 11, 11, 11, 11, 12
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 325
       },
@@ -9695,11 +9284,9 @@ export const UNITS: any[] = [
           16, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 42,
-        framesList: [0, 39, 4, 4, 4, 4, 4, 89, 4, 4, 4, 4, 4, 4, 4],
+        framesList: [42, 39, 4, 4, 4, 4, 4, 89, 4, 4, 4, 4, 4, 4, 4],
         offset: 8,
         base: 840,
         dualable: false
@@ -9731,11 +9318,9 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         castTime: 12,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 14,
-        framesList: [0, 28, 26, 23, 43],
+        framesList: [14, 28, 26, 23, 43],
         offset: 16,
         base: 180
       },
@@ -9753,11 +9338,9 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         castTime: 12,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 14,
-        framesList: [0, 28, 26, 23, 43],
+        framesList: [14, 28, 26, 23, 43],
         offset: 16,
         base: 220
       },
@@ -9775,7 +9358,6 @@ export const UNITS: any[] = [
           20, 20, 30, 30
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9783,8 +9365,7 @@ export const UNITS: any[] = [
             value: 20
           }
         ],
-        firstHit: 42,
-        framesList: [0, 20, 30, 2],
+        framesList: [42, 20, 30, 2],
         offset: 16,
         base: 270
       },
@@ -9802,7 +9383,6 @@ export const UNITS: any[] = [
           20, 20, 30, 30
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [
           {
@@ -9810,8 +9390,7 @@ export const UNITS: any[] = [
             value: 75
           }
         ],
-        firstHit: 42,
-        framesList: [0, 20, 30, 2],
+        framesList: [42, 20, 30, 2],
         offset: 16,
         base: 350
       },
@@ -9829,13 +9408,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physical",
         elements: [
           "lightning"
         ],
         debuffs: [],
-        firstHit: 30,
-        framesList: [0],
+        framesList: [30],
         offset: 8,
         base: 200,
         type: "finish"
@@ -9854,13 +9431,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [
           "fire"
         ],
         debuffs: [],
-        firstHit: 110,
-        framesList: [0],
+        framesList: [110],
         offset: 16,
         base: 190,
         type: "finish"
@@ -9879,13 +9454,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [
           "ice"
         ],
         debuffs: [],
-        firstHit: 110,
-        framesList: [0],
+        framesList: [110],
         offset: 16,
         base: 190,
         type: "finish"
@@ -9904,13 +9477,11 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [
           "wind"
         ],
         debuffs: [],
-        firstHit: 70,
-        framesList: [0],
+        framesList: [70],
         offset: 16,
         base: 190,
         type: "finish"
@@ -9929,11 +9500,9 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        firstHit: 39,
-        framesList: [0, 14, 14, 34, 32, 42, 3, 7, 3, 24, 3, 31, 50, 3, 3, 4, 3, 3, 3, 3],
+        framesList: [39, 14, 14, 34, 32, 42, 3, 7, 3, 24, 3, 31, 50, 3, 3, 4, 3, 3, 3, 3],
         offset: 8,
         base: 410,
         dualable: false
@@ -9974,8 +9543,7 @@ export const UNITS: any[] = [
         ignore: 0,
         damage: "magic",
         base: 8200,
-        firstHit: 110,
-        framesList: [0],
+        framesList: [110],
         offset: 8
       }
     ]
@@ -10005,11 +9573,9 @@ export const UNITS: any[] = [
           20, 20, 60
         ],
         castTime: 32,
-        damage: "physical",
         elements: [],
         debuff: [],
-        firstHit: 34,
-        framesList: [0, 26, 92],
+        framesList: [34, 26, 92],
         offset: 16,
         base: 225,
         ignore: 50
@@ -10033,8 +9599,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         debuff: [],
-        firstHit: 95,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 14],
+        framesList: [95, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 14],
         offset: 8,
         base: 610,
         dualable: false
@@ -10071,8 +9636,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         debuff: [],
-        firstHit: 240,
-        framesList: [0],
+        framesList: [240],
         offset: 16,
         base: 2000,
         type: "finish",
@@ -10092,11 +9656,9 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         castTime: 0,
-        damage: "physical",
         elements: [],
         debuff: [],
-        firstHit: 149,
-        framesList: [0, 9, 9, 9, 9],
+        framesList: [149, 9, 9, 9, 9],
         offset: 8,
         base: 390,
         dualable: false
@@ -10128,12 +9690,9 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 10, 10, 10
         ],
         castTime: 8,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 8,
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 7, 7, 10, 10, 10, 10],
+        framesList: [8, 5, 5, 5, 5, 5, 5, 5, 7, 7, 10, 10, 10, 10],
         offset: 83,
         base: 1000
       },
@@ -10151,12 +9710,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 120,
-        framesList: [0],
+        framesList: [120],
         offset: 16,
         base: 650,
         type: "finish"
@@ -10175,12 +9731,9 @@ export const UNITS: any[] = [
           15, 15, 15, 55
         ],
         castTime: 8,
-        damage: "physical",
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 22,
-        framesList: [0, 16, 37, 81],
+        framesList: [22, 16, 37, 81],
         offset: 16,
         base: 750
       },
@@ -10198,13 +9751,9 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 40
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 10,
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [10, 10, 10, 10, 10, 10, 10],
         offset: 32,
         base: 520
       },
@@ -10222,13 +9771,10 @@ export const UNITS: any[] = [
           15, 10, 10, 10, 10, 10, 10, 10, 15
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 49,
-        framesList: [0, 16, 16, 12, 8, 15, 6, 3, 54],
+        framesList: [49, 16, 16, 12, 8, 15, 6, 3, 54],
         offset: 8,
         base: 1240
       }
@@ -10243,10 +9789,7 @@ export const UNITS: any[] = [
           224680
         ]
       }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 122,
@@ -10273,13 +9816,9 @@ export const UNITS: any[] = [
           33, 33, 34
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 22,
-        framesList: [0, 20, 30],
+        framesList: [22, 20, 30],
         offset: 8,
         base: 360
       },
@@ -10297,8 +9836,6 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -10310,9 +9847,7 @@ export const UNITS: any[] = [
             value: 60
           }
         ],
-        dualable: true,
-        firstHit: 70,
-        framesList: [0, 7, 5, 7, 7, 7, 7],
+        framesList: [70, 7, 5, 7, 7, 7, 7],
         offset: 16,
         base: 480
       },
@@ -10331,7 +9866,6 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -10344,8 +9878,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 350,
-        framesList: [0],
+        framesList: [350],
         offset: 16,
         base: 180,
         ignore: 50,
@@ -10365,13 +9898,9 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+        framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         offset: 14,
         base: 500
       },
@@ -10389,12 +9918,8 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 0,
         framesList: [0, 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6],
         offset: 80,
         base: 270,
@@ -10414,13 +9939,9 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 58
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 250,
         ignore: 50
@@ -10439,8 +9960,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -10453,17 +9972,13 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 220,
-        framesList: [0],
+        framesList: [220],
         offset: 8,
         base: 600,
         ignore: 50,
         type: "finish"
       }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 123,
@@ -10491,12 +10006,10 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 82,
-        framesList: [0, 10, 10, 10, 10, 10, 10],
+        framesList: [82, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 320,
         ignore: 25
@@ -10516,12 +10029,10 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 120,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [120, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 320,
         ignore: 50
@@ -10541,12 +10052,10 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 200,
-        framesList: [0],
+        framesList: [200],
         offset: 16,
         base: 660,
         type: "finish"
@@ -10566,22 +10075,18 @@ export const UNITS: any[] = [
         ],
         castTime: 0,
         damage: "magic",
-        magicType: null,
         elements: [
           "dark"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 107,
-        framesList: [0],
+        framesList: [107],
         offset: 8,
         base: 940,
         type: "finish"
       }
     ],
-    multipleBlack: 2,
-    multipleWhite: 1,
-    multipleGreen: 1
+    multipleBlack: 2
   },
   {
     id: 124,
@@ -10608,8 +10113,6 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 48,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -10617,9 +10120,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        dualable: true,
-        firstHit: 68,
-        framesList: [0],
+        framesList: [68],
         offset: 16,
         base: 350,
         type: "finish"
@@ -10638,13 +10139,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 38,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 78,
-        framesList: [0],
+        framesList: [78],
         offset: 16,
         base: 400,
         type: "finish"
@@ -10663,8 +10160,6 @@ export const UNITS: any[] = [
           20, 20, 20, 40
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [
           "fire"
         ],
@@ -10675,8 +10170,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 145,
-        framesList: [0, 22, 58, 56],
+        framesList: [145, 22, 58, 56],
         offset: 8,
         base: 840
       }
@@ -10688,10 +10182,7 @@ export const UNITS: any[] = [
           224020
         ]
       }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 125,
@@ -10718,13 +10209,9 @@ export const UNITS: any[] = [
           11, 11, 11, 11, 11, 11, 11, 23
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 92,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [92, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 200
       },
@@ -10742,13 +10229,10 @@ export const UNITS: any[] = [
           2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 42,
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [42, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         offset: 16,
         base: 320,
         ignore: 25
@@ -10767,13 +10251,10 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 425,
-        framesList: [0],
+        framesList: [425],
         offset: 16,
         base: 1200,
         type: "finish"
@@ -10792,21 +10273,15 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 4,
-        framesList: [0],
+        framesList: [4],
         offset: 8,
         base: 940,
         type: "finish"
       }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 126,
@@ -10834,12 +10309,10 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 50,
-        framesList: [0, 10, 10, 10, 10],
+        framesList: [50, 10, 10, 10, 10],
         offset: 16,
         base: 500
       },
@@ -10858,14 +10331,12 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [
           "earth"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 80,
-        framesList: [0],
+        framesList: [80],
         offset: 16,
         base: 1000,
         type: "finish"
@@ -10896,8 +10367,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 160,
-        framesList: [0, 22, 21, 22, 23, 23, 22, 23],
+        framesList: [160, 22, 21, 22, 23, 23, 22, 23],
         offset: 16,
         base: 275
       },
@@ -10927,8 +10397,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 212,
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 16,
         base: 250
       },
@@ -10958,8 +10427,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 240,
-        framesList: [0],
+        framesList: [240],
         offset: 16,
         base: 230,
         type: "finish"
@@ -10979,14 +10447,12 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [
           "water"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 140,
-        framesList: [0],
+        framesList: [140],
         offset: 16,
         base: 1600,
         type: "finish"
@@ -11010,8 +10476,7 @@ export const UNITS: any[] = [
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 350,
-        framesList: [0],
+        framesList: [350],
         offset: 16,
         base: 250,
         ignore: 25,
@@ -11032,14 +10497,12 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [
           "fire"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 150,
-        framesList: [0],
+        framesList: [150],
         offset: 16,
         base: 1800,
         type: "finish"
@@ -11059,19 +10522,15 @@ export const UNITS: any[] = [
         ],
         castTime: 188,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 188,
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        framesList: [188, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         offset: 16,
         base: 2000
       }
     ],
-    multipleBlack: 2,
-    multipleWhite: 1,
-    multipleGreen: 1
+    multipleBlack: 2
   },
   {
     id: 127,
@@ -11098,8 +10557,6 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -11107,9 +10564,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        dualable: true,
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 350
       },
@@ -11127,8 +10582,6 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -11136,9 +10589,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        dualable: true,
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 350
       },
@@ -11156,8 +10607,6 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [
           {
@@ -11165,9 +10614,7 @@ export const UNITS: any[] = [
             value: 50
           }
         ],
-        dualable: true,
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 350
       },
@@ -11185,13 +10632,9 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 6,
-        framesList: [0, 8, 8, 8, 8, 8, 8],
+        framesList: [6, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 225,
         ignore: 50
@@ -11210,28 +10653,16 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 182,
-        framesList: [0],
+        framesList: [182],
         offset: 8,
         base: 570,
         ignore: 50,
         type: "finish"
       }
-    ],
-    multiCasts: [
-      {
-        count: 1,
-        abilities: []
-      }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 128,
@@ -11258,13 +10689,9 @@ export const UNITS: any[] = [
           16, 16, 16, 16, 16, 20
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 2,
-        framesList: [0, 8, 8, 8, 8, 8],
+        framesList: [2, 8, 8, 8, 8, 8],
         offset: 8,
         base: 200,
         ignore: 50
@@ -11283,13 +10710,10 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 32,
-        framesList: [0, 3, 18, 18, 3, 23, 3, 20, 26, 3, 34, 4],
+        framesList: [32, 3, 18, 18, 3, 23, 3, 20, 26, 3, 34, 4],
         offset: 8,
         base: 840
       }
@@ -11301,10 +10725,7 @@ export const UNITS: any[] = [
           223790
         ]
       }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 129,
@@ -11338,8 +10759,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 170,
-        framesList: [0],
+        framesList: [170],
         offset: 16,
         base: 600,
         type: "finish"
@@ -11359,12 +10779,10 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 147,
-        framesList: [0],
+        framesList: [147],
         offset: 16,
         base: 200,
         ignore: 25,
@@ -11396,8 +10814,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        firstHit: 212,
-        framesList: [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 16,
         base: 250
       },
@@ -11416,21 +10833,17 @@ export const UNITS: any[] = [
         ],
         castTime: 0,
         damage: "magic",
-        magicType: null,
         elements: [
           "wind"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 200,
-        framesList: [0, 10, 10, 10, 10],
+        framesList: [200, 10, 10, 10, 10],
         offset: 8,
         base: 740
       }
     ],
-    multipleBlack: 2,
-    multipleWhite: 1,
-    multipleGreen: 1
+    multipleBlack: 2
   },
   {
     id: 130,
@@ -11457,13 +10870,9 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 0,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 5,
-        framesList: [0],
+        framesList: [5],
         offset: 8,
         base: 270,
         type: "finish"
@@ -11489,8 +10898,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 240,
-        framesList: [0],
+        framesList: [240],
         offset: 16,
         base: 600,
         type: "finish"
@@ -11516,8 +10924,7 @@ export const UNITS: any[] = [
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 190,
-        framesList: [0],
+        framesList: [190],
         offset: 16,
         base: 600,
         type: "finish"
@@ -11552,13 +10959,9 @@ export const UNITS: any[] = [
           25, 25, 25, 25
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 32,
-        framesList: [0, 20, 20, 20],
+        framesList: [32, 20, 20, 20],
         offset: 16,
         base: 180
       },
@@ -11576,13 +10979,9 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 70,
-        framesList: [0, 7, 5, 7, 7, 7, 7],
+        framesList: [70, 7, 5, 7, 7, 7, 7],
         offset: 16,
         base: 300
       },
@@ -11600,13 +10999,10 @@ export const UNITS: any[] = [
           100
         ],
         castTime: 76,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 160,
-        framesList: [0],
+        framesList: [160],
         offset: 16,
         base: 820,
         type: "finish"
@@ -11620,10 +11016,7 @@ export const UNITS: any[] = [
           911046
         ]
       }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 132,
@@ -11650,13 +11043,9 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 58
         ],
         castTime: 40,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
-        dualable: true,
-        firstHit: 42,
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10],
+        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 210,
         ignore: 50
@@ -11675,27 +11064,15 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         castTime: 140,
-        damage: "physic",
-        magicType: null,
         elements: [],
         debuffs: [],
         dualable: false,
-        firstHit: 93,
-        framesList: [0, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
+        framesList: [93, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 16,
         base: 570,
         ignore: 50
       }
-    ],
-    multiCasts: [
-      {
-        count: 1,
-        abilities: []
-      }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   },
   {
     id: 133,
@@ -11723,26 +11100,15 @@ export const UNITS: any[] = [
         ],
         castTime: 50,
         damage: "magic",
-        magicType: null,
         elements: [
           "fire"
         ],
         debuffs: [],
         dualable: false,
-        firstHit: 190,
-        framesList: [0, 10, 10, 10, 10],
+        framesList: [190, 10, 10, 10, 10],
         offset: 16,
         base: 620
       }
-    ],
-    multiCasts: [
-      {
-        count: 1,
-        abilities: []
-      }
-    ],
-    multipleBlack: 1,
-    multipleWhite: 1,
-    multipleGreen: 1
+    ]
   }
 ];

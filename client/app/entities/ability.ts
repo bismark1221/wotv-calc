@@ -6,19 +6,21 @@ export class Ability {
     en: 'New ability'
   };
   name: string = 'New ability';
+
+  type?: string = 'chain';
+  damage?: string = 'physic';
+  magicType?: string = null;
+
+  castTime?: number = 0;
+  offset?: number = 0;
+  ignore?: number = 0;
   base: number = 0;
 
-  framesList?: any[] = [0];
-  castTime?: number = 40;
-  offset?: number = 16;
-  ignore?: number = 0;
   dualable?: boolean = true;
+
+  framesList?: any[] = [0];
   elements?: string[] = [];
   debuffs?: any[] = [];
-  type?: string = 'chain';
-  magicType?: string = null;
-  damage?: string = 'physic';
-  chain?: boolean = true;
   hitDamage?: any[] = [];
   range?: any = {
     min: 0,
@@ -42,7 +44,6 @@ export class Ability {
 
     this.type = ability.type ? ability.type : this.type;
     this.damage = ability.damage ? ability.damage : this.damage;
-    this.chain = typeof ability.chain == 'boolean' ? ability.chain : this.chain;
     this.magicType = typeof ability.magicType == 'string' ? ability.magicType : this.magicType;
 
     if (ability.range) {
