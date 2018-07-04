@@ -69,6 +69,7 @@ export class JsonComponent implements OnInit {
       });
     });
 
+    this.cleanFamilies();
     this.sortFamilies();
   }
 
@@ -96,6 +97,20 @@ export class JsonComponent implements OnInit {
     })
 
     return find;
+  }
+
+  private cleanFamilies() {
+    let indexToRemove = [];
+
+    this.families.forEach((family, index) => {
+      if (family.units.length === 1) {
+        indexToRemove.push(index);
+      }
+    });
+
+    for (let i = indexToRemove.length - 1; i >= 0; i--) {
+      this.families.splice(indexToRemove[i], 1);
+    }
   }
 
   private sortFamilies() {

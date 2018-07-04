@@ -13,7 +13,6 @@ export class FamiliesComponent implements OnInit {
   markdown = '';
 
   families = null;
-  aloneFamilies = [];
   knownFamilies = [
     {
       frames: "22-5-5-5-5-5-5-5-5-5-5-20",
@@ -89,21 +88,12 @@ export class FamiliesComponent implements OnInit {
     let indexToRemove = [];
 
     this.families.forEach((family, index) => {
-      let removed = false;
-      if (family.units.length === 1) {
-        this.aloneFamilies.push(family);
-        indexToRemove.push(index);
-        removed = true;
-      }
-
-      if (!removed) {
-        this.knownFamilies.forEach(knownFamily => {
-          if (family.family === knownFamily.frames) {
-            knownFamily.units = family.units;
-            indexToRemove.push(index);
-          }
-        });
-      }
+      this.knownFamilies.forEach(knownFamily => {
+        if (family.family === knownFamily.frames) {
+          knownFamily.units = family.units;
+          indexToRemove.push(index);
+        }
+      });
     });
 
     for (let i = indexToRemove.length - 1; i >= 0; i--) {
