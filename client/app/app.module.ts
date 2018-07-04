@@ -25,7 +25,6 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MyUnitsComponent } from './my-units/my-units.component';
 import { ChainingComponent } from './chaining/chaining.component';
 import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
 import { ContactComponent } from './contact/contact.component';
@@ -68,7 +67,6 @@ export function createTranslateLoader(http: HttpClient) {
     CapitalizePipe,
     AbsolutePipe,
     RoundPipe,
-    MyUnitsComponent,
     ContactComponent,
     LegalComponent,
     MacroComponent,

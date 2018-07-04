@@ -47,7 +47,6 @@ export class BackService {
             debuff: unit.ability.debuff,
             dualable: unit.ability.dualable,
             elements: unit.ability.elements,
-            firstHit: unit.ability.firstHit,
             framesList: unit.ability.framesList,
             hitDamage: unit.ability.hitDamage,
             ignore: unit.ability.ignore,

@@ -8,11 +8,10 @@ export class Ability {
   name: string = 'New ability';
   base: number = 0;
 
-  framesList?: string = '0';
+  framesList?: any[] = [0];
   castTime?: number = 40;
   offset?: number = 16;
   ignore?: number = 0;
-  firstHit?: number = 0;
   dualable?: boolean = true;
   elements?: string[] = [];
   debuffs?: any[] = [];
@@ -33,7 +32,6 @@ export class Ability {
     this.base = ability.base;
 
     this.framesList = ability.framesList ? ability.framesList : this.framesList;
-    this.firstHit = ability.firstHit || ability.firstHit === 0 ? ability.firstHit : this.firstHit;
     this.castTime = ability.castTime || ability.castTime === 0 ? ability.castTime : this.castTime;
     this.offset = ability.offset || ability.offset === 0 ? ability.offset : this.offset;
 
@@ -55,9 +53,8 @@ export class Ability {
     if (ability.hitDamage) {
       this.hitDamage = ability.hitDamage;
     } else {
-      let frames = this.framesList.split('-');
-      frames.forEach(hit => {
-        this.hitDamage.push(100 / frames.length);
+      this.framesList.forEach(hit => {
+        this.hitDamage.push(100 / this.framesList.length);
       });
     }
   }

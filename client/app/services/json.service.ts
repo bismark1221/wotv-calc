@@ -218,23 +218,16 @@ export class JsonService {
   }
 
   private updateFrames(unitId, id, ability) {
-    let framesList = '';
-    let firstHit = -1;
+    let framesList = [];
 
     for (let i = 0; i < ability.attack_frames[0].length; i++) {
       if (i === 0) {
-        firstHit = ability.attack_frames[0][i];
-        framesList += '0';
+        framesList.push(ability.attack_frames[0][i]);
       } else {
-        framesList += Math.abs(ability.attack_frames[0][i] - ability.attack_frames[0][i - 1]);
-      }
-
-      if (i !== ability.attack_frames[0].length - 1) {
-        framesList += '-';
+        framesList.push(Math.abs(ability.attack_frames[0][i] - ability.attack_frames[0][i - 1]));
       }
     }
 
-    this.ffbeChainUnits[unitId].abilities[id].firstHit = firstHit;
     this.ffbeChainUnits[unitId].abilities[id].framesList = framesList;
   }
 
@@ -829,8 +822,7 @@ export class JsonService {
   private filterRealUsableSkills() {
     for (let i = this.ffbeChainUnits.length - 1; i >= 0; i--) {
       for (let j = this.ffbeChainUnits[i].abilities.length - 1; j >= 0; j--) {
-        if (this.ffbeChainUnits[i].abilities[j].firstHit === -1
-          || !this.ffbeChainUnits[i].abilities[j].damage) {
+        if (!this.ffbeChainUnits[i].abilities[j].damage) { //this.ffbeChainUnits[i].abilities[j].firstHit === -1 TODO !!!!!
           this.ffbeChainUnits[i].abilities.splice(j, 1);
         }
       }

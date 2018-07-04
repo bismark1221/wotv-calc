@@ -57,6 +57,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   requestAlreadyDone: boolean = false;
   requestResult: any[] = [];
 
+  flatFramesPattern: string = "^([0-9]|-)*$"
+
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
   };
@@ -184,9 +186,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   private getUnits(): void {
     this.units = this.unitService.getUnits();
-
     this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
-
     this.reloadList();
   }
 
@@ -228,11 +228,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
           }
         }
 
-        if (!ability.hitDamage) {
+        if (!Array.isArray(ability.framesList)) {
           let frames = ability.framesList.split('-');
+          frames[0] = ability.firstHit;
+          ability.framesList = frames;
+        }
+
+        if (!ability.hitDamage) {
           ability.hitDamage = [];
-          frames.forEach(hit => {
-            ability.hitDamage.push(100 / frames.length);
+          ability.framesList.forEach(hit => {
+            ability.hitDamage.push(100 / ability.framesList.length);
           });
         }
 
@@ -405,6 +410,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     ids.forEach((id, index) => {
       this.chain[position].selectedAbilities[index] = this.chain[position].abilities[this.findPositionOfAbilityById(this.chain[position], id)];
       this.chain[position].selectedAbilities[index].activeRename = false;
+      this.chain[position].selectedAbilities[index].flatFrames = this.chain[position].selectedAbilities[index].framesList.join('-');
     });
 
     this.chain[position].activeRename = false;
@@ -580,17 +586,13 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   addDebuff(unitPosition: number, abilityPosition: number) {
-    this.chain[unitPosition].selectedAbilities[abilityPosition].debuffs.push({type: 'dark', value: 1});
+    this.getAbility(unitPosition, abilityPosition).debuffs.push({type: 'dark', value: 1});
     this.saveUnit(unitPosition);
   }
 
   removeDebuff(unitPosition: number, abilityPosition: number, debuff: number) {
-    this.chain[unitPosition].selectedAbilities[abilityPosition].debuffs.splice(debuff, 1);
+    this.getAbility(unitPosition, abilityPosition).debuffs.splice(debuff, 1);
     this.saveUnit(unitPosition);
-  }
-
-  onChangeDebuff(position: number) {
-    this.saveUnit(position);
   }
 
   onChangeDual(position: number) {
@@ -636,8 +638,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
     if (this.chain[position].id) {
       this.chain[position].abilities.forEach(ability => {
-        if (ability.framesList.split('-').length !== ability.hitDamage.length) {
-          let hitCount = ability.framesList.split('-').length;
+        if (ability.framesList.length !== ability.hitDamage.length) {
+          let hitCount = ability.framesList.length;
           for (let i = 0; i < hitCount; i++) {
             ability.hitDamage[i] = 100 / hitCount;
           }
@@ -949,6 +951,15 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     } else {
       return this.chain[unitPosition].possibleMultiple;
     }
+  }
+
+  updateFramesList(unitPosition: number, abilityPosition: number) {
+    this.getAbility(unitPosition, abilityPosition).framesList = this.getAbility(unitPosition, abilityPosition).flatFrames.split('-');
+    this.getAbility(unitPosition, abilityPosition).framesList.forEach((frames, index) => {
+      this.getAbility(unitPosition, abilityPosition).framesList[index] = isNaN(Number(frames)) ? 0 : Number(frames);
+    });
+
+    this.saveUnit(unitPosition);
   }
 
   getActiveRename(unitPosition: number, abilityPosition: number) {

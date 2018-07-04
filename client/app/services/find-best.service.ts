@@ -148,14 +148,20 @@ export class FindBestService {
         countFrames = startFrames;
       }
 
-      ability.framesList.split('-').forEach((hit, i) => {
+      ability.framesList.forEach((hit, i) => {
+        if (i === 0) {
+          hit = 0;
+        }
         countFrames += Number(hit);
         this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: index, damage: ability.hitDamage[i], abilityIndex: index});
       });
 
       if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
         countFrames = startFrames + ability.offset + ability.castTime;
-        ability.framesList.split('-').forEach((hit, i) => {
+        ability.framesList.forEach((hit, i) => {
+          if (i === 0) {
+            hit = 0;
+          }
           countFrames += Number(hit);
           this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: index + 1, damage: ability.hitDamage[i], abilityIndex: index});
         });

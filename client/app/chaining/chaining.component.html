@@ -146,13 +146,8 @@
 
           <div class="selectRightZoneBox littleMarginTop">
             <div class="selectRightZoneFrames">
-              <label for="chainer_framesList">{{ 'chain.label.nonLinearFrames' | translate }}</label>
-              <input class="form-control" type="text" id="chainer_framesList" [(ngModel)]="ability.framesList" (ngModelChange)="saveUnit(viewOptions)">
-            </div>
-
-            <div class="selectRightZoneLittleBox tabletMarginTop">
-              <label for="chainer_firstHit">{{ 'chain.label.firstHit' | translate }}</label>
-              <input class="form-control" type="number" id="chainer_firstHit" [(ngModel)]="ability.firstHit" (ngModelChange)="saveUnit(viewOptions)">
+              <label for="chainer_framesList" [ngStyle]="flatFrames.errors?.pattern && {'color': 'red'}">{{ 'chain.label.nonLinearFrames' | translate }}</label>
+              <input class="form-control" [pattern]="flatFramesPattern" #flatFrames="ngModel" type="text" id="chainer_framesList" [(ngModel)]="ability.flatFrames" (ngModelChange)="updateFramesList(viewOptions, abilityIndex)">
             </div>
 
             <div class="selectRightZoneLittleBox">
@@ -185,14 +180,14 @@
               <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
               <div class="selectRightZoneTwoDividedThree">
                 <label for="ability_{{abilityIndex}}_debuff{{j}}_type">{{ 'chain.label.element' | translate }} {{j + 1}}</label>
-                <select class="form-control" id="ability_{{abilityIndex}}_debuff{{j}}_type" [(ngModel)]="ability.debuffs[j].type" (ngModelChange)="onChangeDebuff(viewOptions)">
+                <select class="form-control" id="ability_{{abilityIndex}}_debuff{{j}}_type" [(ngModel)]="ability.debuffs[j].type" (ngModelChange)="saveUnit(viewOptions)">
                   <option *ngFor="let element of requiredElements" [ngValue]="element">{{ 'elements.' + element | translate }}</option>
                 </select>
               </div>
               <div class="selectRightZoneTwoDividedThree">
                 <label for="ability_{{abilityIndex}}_debuff{{j}}_value">{{ 'chain.label.value' | translate }} {{j + 1}}</label>
                 <div class="input-group">
-                  <input class="form-control" type="number" id="ability_{{abilityIndex}}_debuff{{j}}_value" [(ngModel)]="ability.debuffs[j].value" (ngModelChange)="onChangeDebuff(viewOptions)">
+                  <input class="form-control" type="number" id="ability_{{abilityIndex}}_debuff{{j}}_value" [(ngModel)]="ability.debuffs[j].value" (ngModelChange)="saveUnit(viewOptions)">
                   <div class="input-group-append">
                     <span class="input-group-text" id="unit_base_percent">%</span>
                   </div>

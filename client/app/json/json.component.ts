@@ -36,16 +36,13 @@ export class JsonComponent implements OnInit {
 
     this.units.forEach(unit => {
       unit.abilities.forEach(ability => {
-        if (ability.framesList.split('-').length > 3) {
-          let frames = ability.framesList.split('-');
-          frames[0] = ability.firstHit;
+        if (ability.framesList.length > 3) {
+          let frames = ability.framesList.join('-');
 
-          ability.framesList = frames.join('-');
-
-          let familyIndex = this.getFamilyIndexFromFramesList(ability.framesList);
+          let familyIndex = this.getFamilyIndexFromFramesList(frames);
           if (familyIndex === null) {
             this.families.push({
-              family: ability.framesList,
+              family: frames,
               units: []
             });
             familyIndex = this.families.length - 1;
@@ -65,7 +62,6 @@ export class JsonComponent implements OnInit {
           this.families[familyIndex].units[unitIndex].abilities.push({
             id: ability.dataId,
             names: ability.names,
-            firstHit: ability.firstHit,
             offset: ability.offset,
             castTime: ability.castTime
           });
