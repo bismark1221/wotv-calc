@@ -92,7 +92,7 @@ export class JsonService {
       if (this.units[unitId].entries) {
         let entries = Object.keys(this.units[unitId].entries);
         if (this.lbs[entries[entries.length - 1]]){
-          this.addSkill(id, this.lbs[entries[entries.length - 1]], entries[entries.length - 1]);
+          this.addSkill(id, this.lbs[entries[entries.length - 1]], entries[entries.length - 1], 0, true);
         }
       }
     });
@@ -146,15 +146,16 @@ export class JsonService {
       this.ffbeChainUnits[id] = {
         dataId: Number(entries[0]),
         names: {
-          en: unit.names[0],
-          tw: unit.names[1],
-          kr: unit.names[2],
-          fr: unit.names[3],
-          de: unit.names[4],
-          es: unit.names[5]
+          en: unit.names[0]
         },
         abilities: []
       };
+
+      ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+        if (unit.names[index + 1] !== this.ffbeChainUnits[id].names.en) {
+          this.ffbeChainUnits[id].names[lang] = unit.names[index + 1];
+        }
+      });
 
       this.isCollapsed.push(true);
 
@@ -162,7 +163,7 @@ export class JsonService {
     }
   }
 
-  private addSkill(unitId, ability, dataId, level = 0) {
+  private addSkill(unitId, ability, dataId, level = 0, lb = false) {
     let exist = false;
     this.ffbeChainUnits[unitId].abilities.forEach(skill => {
       if (skill.dataId == dataId) {
@@ -180,11 +181,14 @@ export class JsonService {
       dataId: Number(dataId),
       names: this.getNames(ability, level),
       hitDamage: ability.attack_damage[0],
-      castTime: ability.effect_frames[0][0],
       damage: null,
       elements: [],
       debuffs: []
     };
+
+    if (!lb) {
+      this.ffbeChainUnits[unitId].abilities[id].castTime = ability.effect_frames[0][0];
+    }
 
     if (ability.magic_type) {
       this.ffbeChainUnits[unitId].abilities[id].magicType = ability.magic_type.toLowerCase();
@@ -227,10 +231,12 @@ export class JsonService {
   }
 
   private updateOffset(unitId, id, ability) {
-    if (this.ffbeChainUnits[unitId].abilities[id].castTime === 0) {
-      this.ffbeChainUnits[unitId].abilities[id].offset = 8;
-    } else {
-      this.ffbeChainUnits[unitId].abilities[id].offset = 16;
+    if (this.ffbeChainUnits[unitId].abilities[id].castTime) {
+      if (this.ffbeChainUnits[unitId].abilities[id].castTime === 0) {
+        this.ffbeChainUnits[unitId].abilities[id].offset = 8;
+      } else {
+        this.ffbeChainUnits[unitId].abilities[id].offset = 16;
+      }
     }
   }
 
@@ -625,14 +631,14 @@ export class JsonService {
     let names = {};
 
     if (Array.isArray(ability.strings.name)) {
-      names = {
-        en: ability.strings.name[0] + (level > 0 ? ' + ' + level : ''),
-        tw: ability.strings.name[1] + (level > 0 ? ' + ' + level : ''),
-        kr: ability.strings.name[2] + (level > 0 ? ' + ' + level : ''),
-        fr: ability.strings.name[3] + (level > 0 ? ' + ' + level : ''),
-        de: ability.strings.name[4] + (level > 0 ? ' + ' + level : ''),
-        es: ability.strings.name[5] + (level > 0 ? ' + ' + level : '')
-      };
+      let englishName = ability.strings.name[0];
+      names.en = ability.strings.name[0] + (level > 0 ? ' + ' + level : '');
+
+      ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+        if (ability.strings.name[index + 1] !== englishName) {
+          names[lang] = ability.strings.name[index + 1] + (level > 0 ? ' + ' + level : '');
+        }
+      });
     }
 
     return names;
@@ -644,15 +650,16 @@ export class JsonService {
     this.ffbeChainUnits[id] = {
       dataId: Number(summonId),
       names: {
-        en: summon.names[0],
-        tw: summon.names[1],
-        kr: summon.names[2],
-        fr: summon.names[3],
-        de: summon.names[4],
-        es: summon.names[5]
+        en: summon.names[0]
       },
       abilities: []
     };
+
+    ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+      if (summon.names[index + 1] !== this.ffbeChainUnits[id].names.en) {
+        this.ffbeChainUnits[id].names[lang] = summon.names[index + 1];
+      }
+    });
 
     Object.keys(summon.skill).forEach(skillId => {
       this.addSummonSkill(id, summon.skill[skillId], skillId);
@@ -667,14 +674,13 @@ export class JsonService {
     let names = {};
 
     if (Array.isArray(ability.strings.name)) {
-      names = {
-        en: ability.strings.name[0] + ' (' + (id + 1) + ')',
-        tw: ability.strings.name[1] + ' (' + (id + 1) + ')',
-        kr: ability.strings.name[2] + ' (' + (id + 1) + ')',
-        fr: ability.strings.name[3] + ' (' + (id + 1) + ')',
-        de: ability.strings.name[4] + ' (' + (id + 1) + ')',
-        es: ability.strings.name[5] + ' (' + (id + 1) + ')'
-      };
+      names.en = ability.strings.name[0] + ' (' + (id + 1) + ')';
+
+      ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+        if (ability.strings.name[index + 1] !== ability.strings.name[0]) {
+          names[lang] = ability.strings.name[index + 1] + ' (' + (id + 1) + ')';
+        }
+      });
     }
 
     this.ffbeChainUnits[summonId].abilities[id] = {
@@ -752,15 +758,16 @@ export class JsonService {
     this.ffbeChainUnits[id] = {
       dataId: Number(equipmentId),
       names: {
-        en: equipment.strings.name ? equipment.strings.name[0]: '',
-        tw: equipment.strings.name ? equipment.strings.name[1]: '',
-        kr: equipment.strings.name ? equipment.strings.name[2]: '',
-        fr: equipment.strings.name ? equipment.strings.name[3]: '',
-        de: equipment.strings.name ? equipment.strings.name[4]: '',
-        es: equipment.strings.name ? equipment.strings.name[5]: ''
+        en: equipment.strings.name ? equipment.strings.name[0]: ''
       },
       abilities: []
     };
+
+    ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+      if (equipment.strings.name[index + 1] !== this.ffbeChainUnits[id].names.en) {
+        this.ffbeChainUnits[id].names[lang] = equipment.strings.name[index + 1];
+      }
+    });
 
     equipment.skills.forEach(skillId => {
       this.addSkill(id, this.skills[skillId], skillId);
@@ -774,15 +781,16 @@ export class JsonService {
     this.ffbeChainUnits[id] = {
       dataId: Number(materiaId),
       names: {
-        en: materia.strings.names ? materia.strings.names[0]: '',
-        tw: materia.strings.names ? materia.strings.names[1]: '',
-        kr: materia.strings.names ? materia.strings.names[2]: '',
-        fr: materia.strings.names ? materia.strings.names[3]: '',
-        de: materia.strings.names ? materia.strings.names[4]: '',
-        es: materia.strings.names ? materia.strings.names[5]: ''
+        en: materia.strings.names ? materia.strings.names[0]: ''
       },
       abilities: []
     };
+
+    ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+      if (materia.strings.names[index + 1] !== this.ffbeChainUnits[id].names.en) {
+        this.ffbeChainUnits[id].names[lang] = materia.strings.names[index + 1];
+      }
+    });
 
     materia.skills.forEach(skillId => {
       this.addSkill(id, this.skills[skillId], skillId);
@@ -794,8 +802,14 @@ export class JsonService {
       for (let j = this.ffbeChainUnits[i].abilities.length - 1; j >= 0; j--) {
         if (!this.ffbeChainUnits[i].abilities[j].damage) { //this.ffbeChainUnits[i].abilities[j].firstHit === -1 TODO !!!!!
           this.ffbeChainUnits[i].abilities.splice(j, 1);
-        } else if (this.ffbeChainUnits[i].abilities[j].damage === "physic") {
-          delete this.ffbeChainUnits[i].abilities[j].damage;
+        } else  {
+          if (this.ffbeChainUnits[i].abilities[j].damage === "physic") {
+            delete this.ffbeChainUnits[i].abilities[j].damage;
+          }
+
+          if (this.ffbeChainUnits[i].abilities[j].castTime === 0) {
+            delete this.ffbeChainUnits[i].abilities[j].castTime;
+          }
         }
       }
 

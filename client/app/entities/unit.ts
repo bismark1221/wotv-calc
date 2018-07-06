@@ -5,7 +5,6 @@ export class Unit {
   id: number;
   type: string = 'chain';
   abilities: Ability[] = [new Ability()];
-  hitDamage?: number;
   dual?: boolean = true;
   weapons: string[] = ['', ''];
   names: any = {

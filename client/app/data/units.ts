@@ -3,10 +3,7 @@ export const UNITS: any[] = [
     id: 1,
     names: {
       en: "Tidus",
-      fr: "Tidus",
       tw: "提達",
-      es: "Tidus",
-      de: "Tidus",
       kr: "프리오닐"
     },
     abilities: [
@@ -89,8 +86,6 @@ export const UNITS: any[] = [
         },
         framesList: [106, 4, 10, 4, 10, 4, 4, 4, 12, 4, 20, 4, 14, 4, 36, 150],
         hitDamage: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 20],
-        castTime: 0,
-        offset: 0,
         base: 410,
         debuffs: [
           {
@@ -106,26 +101,20 @@ export const UNITS: any[] = [
     id: 2,
     names: {
       en: "Firion",
-      fr: "Firion",
       tw: "弗利奧尼爾",
-      kr: "프리오닐",
-      de: "Firion",
-      es: "Firion"
+      kr: "프리오닐"
     },
     abilities: [
       {
         id: 1,
         names: {
           en: "Fin Briar",
-          fr: "Fin Briar",
           tw: "野薔薇之翼",
           kr: "핀의 들장미",
-          de: "Fingestrüpp",
-          es: "Fin Briar"
+          de: "Fingestrüpp"
         },
         type: "finish",
         framesList: [30],
-        castTime: 0,
         offset: 36,
         base: 180,
         ignore: 25
@@ -134,15 +123,12 @@ export const UNITS: any[] = [
         id: 2,
         names: {
           en: "Fin Briar +2",
-          fr: "Fin Briar +2",
           tw: "野薔薇之翼 +2",
           kr: "핀의 들장미 +2",
-          de: "Fingestrüpp +2",
-          es: "Fin Briar +2"
+          de: "Fingestrüpp +2"
         },
         type: "finish",
         framesList: [30],
-        castTime: 0,
         offset: 36,
         base: 230,
         ignore: 50
@@ -153,11 +139,8 @@ export const UNITS: any[] = [
     id: 3,
     names: {
       en: "Orlandeau",
-      fr: "Orlandeau",
       tw: "奧爾蘭多",
-      kr: "올란두",
-      de: "Orlandeau",
-      es: "Orlandeau"
+      kr: "올란두"
     },
     abilities: [
       {
@@ -231,11 +214,8 @@ export const UNITS: any[] = [
     id: 4,
     names: {
       en: "Lunera",
-      fr: "Lunera",
       tw: "盧內拉",
-      kr: "루네라",
-      de: "Lunera",
-      es: "Lunera"
+      kr: "루네라"
     },
     abilities: [
       {
@@ -293,8 +273,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [410],
-        castTime: 0,
-        offset: 0,
         base: 1500,
         elements : [
           "light"
@@ -314,8 +292,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [70],
-        castTime: 0,
-        offset: 0,
         base: 1500,
         elements : [
           "wind"
@@ -330,11 +306,8 @@ export const UNITS: any[] = [
     id: 5,
     names: {
       en: "Aileen",
-      fr: "Aileen",
       tw: "艾琳",
-      kr: "아이린",
-      de: "Aileen",
-      es: "Aileen"
+      kr: "아이린"
     },
     abilities: [
       {
@@ -348,7 +321,6 @@ export const UNITS: any[] = [
           es: "Martinete"
         },
         framesList: [2, 15, 15, 15, 15],
-        castTime: 0,
         offset: 36,
         base: 200,
         ignore: 50,
@@ -371,7 +343,6 @@ export const UNITS: any[] = [
         },
         framesList: [2, 8, 8, 8, 8, 8, 8],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
-        castTime: 0,
         offset: 36,
         base: 250,
         ignore: 50,
@@ -443,12 +414,7 @@ export const UNITS: any[] = [
   {
     id: 7,
     names: {
-      en: "2B",
-      fr: "2B",
-      tw: "2B",
-      kr: "2B",
-      de: "2B",
-      es: "2B"
+      en: "2B"
     },
     abilities: [
       {
@@ -464,7 +430,7 @@ export const UNITS: any[] = [
         framesList: [42, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 900,
       },
       {
@@ -478,7 +444,6 @@ export const UNITS: any[] = [
           es: "Lentificar"
         },
         framesList: [2, 7, 7, 7, 8, 8, 8, 8, 8, 8],
-        castTime: 0,
         offset: 40,
         base: 600,
       },
@@ -494,7 +459,6 @@ export const UNITS: any[] = [
         },
         framesList: [22, 5, 5, 5, 5, 5],
         hitDamage: [16, 16, 17, 17, 17, 17],
-        castTime: 0,
         offset: 40,
         base: 550,
       },
@@ -511,7 +475,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8, 8, 9],
         hitDamage : [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 200,
       },
       {
@@ -547,7 +511,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [42],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 400,
         debuffs: [
           {
@@ -569,7 +533,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [80],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 999,
         dualable: false
       },
@@ -577,15 +541,9 @@ export const UNITS: any[] = [
         id: 8,
         names: {
           en: "Ho229 Type-B",
-          fr: "Ho229 Type-B",
-          tw: "Ho229 Type-B",
-          kr: "Ho229 Type-B",
-          de: "Ho229 Type-B",
           es: "Ho229 Tipo-B"
         },
         framesList: [125, 10, 10, 10, 11, 12, 12, 12, 12, 12],
-        castTime: 0,
-        offset: 0,
         base: 545,
         ignore: 50,
         dualable: false
@@ -595,12 +553,7 @@ export const UNITS: any[] = [
   {
     id: 8,
     names: {
-      en: "9S",
-      fr: "9S",
-      tw: "9S",
-      kr: "9S",
-      de: "9S",
-      es: "9S"
+      en: "9S"
     },
     abilities: [
       {
@@ -615,7 +568,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 10, 10, 10, 10],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 180,
         ignore: 50
       },
@@ -632,7 +585,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [80],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 999,
         dualable: false
       },
@@ -641,12 +594,7 @@ export const UNITS: any[] = [
   {
     id: 9,
     names: {
-      en: "A2",
-      fr: "A2",
-      tw: "A2",
-      kr: "A2",
-      de: "A2",
-      es: "A2"
+      en: "A2"
     },
     abilities: [
       {
@@ -719,11 +667,8 @@ export const UNITS: any[] = [
     id: 10,
     names: {
       en: "Ace",
-      fr: "Ace",
       tw: "艾斯",
-      kr: "에이스",
-      de: "Ace",
-      es: "Ace"
+      kr: "에이스"
     },
     abilities: [
       {
@@ -738,7 +683,6 @@ export const UNITS: any[] = [
         },
         framesList: [64, 7, 7, 7, 7, 7, 7],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        castTime: 0,
         offset: 46,
         base: 560,
         ignore: 25,
@@ -772,7 +716,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [150],
         castTime: 75,
-        offset: 0,
+        offset: 16,
         base: 320,
         ignore: 25,
         damage: "magic",
@@ -791,11 +735,9 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "magic",
         dualable: false,
         framesList: [190],
-        offset: 8,
         base: 410,
         ignore: 50,
         type: "finish"
@@ -806,11 +748,8 @@ export const UNITS: any[] = [
     id: 11,
     names: {
       en: "Agrias",
-      fr: "Agrias",
       tw: "阿格莉亞絲",
-      kr: "아그리아스",
-      de: "Agrias",
-      es: "Agrias"
+      kr: "아그리아스"
     },
     abilities: [
       {
@@ -864,11 +803,8 @@ export const UNITS: any[] = [
     id: 12,
     names: {
       en: "Amelia",
-      fr: "Amélia",
       tw: "艾美利亞",
-      kr: "아멜리아",
-      de: "Amelia",
-      es: "Amelia"
+      kr: "아멜리아"
     },
     abilities: [
       {
@@ -907,11 +843,8 @@ export const UNITS: any[] = [
     id: 13,
     names: {
       en: "Ashe",
-      fr: "Ashe",
       tw: "雅雪",
-      kr: "아셰",
-      de: "Ashe",
-      es: "Ashe"
+      kr: "아셰"
     },
     abilities: [
       {
@@ -977,11 +910,8 @@ export const UNITS: any[] = [
     id: 14,
     names: {
       en: "Bran",
-      fr: "Bran",
       tw: "布蘭",
-      kr: "브란",
-      de: "Bran",
-      es: "Bran"
+      kr: "브란"
     },
     abilities: [
       {
@@ -1050,11 +980,8 @@ export const UNITS: any[] = [
     id: 15,
     names: {
       en: "Chizuru",
-      fr: "Chizuru",
       tw: "千鶴",
-      kr: "치즈루",
-      de: "Chizuru",
-      es: "Chizuru"
+      kr: "치즈루"
     },
     abilities: [
       {
@@ -1068,7 +995,6 @@ export const UNITS: any[] = [
           es: "Sombra fantasma"
         },
         framesList: [22, 5, 5, 5, 5],
-        castTime: 0,
         offset: 44,
         base: 140,
         ignore: 50
@@ -1090,10 +1016,8 @@ export const UNITS: any[] = [
         id: 1,
         names: {
           en: "Ultima +2",
-          fr: "Ultima +2",
           tw: "究極 +2",
           kr: "알테마 +2",
-          de: "Ultima +2",
           es: "Artema +2"
         },
         framesList: [140, 37, 38, 37, 38, 38, 37],
@@ -1113,7 +1037,6 @@ export const UNITS: any[] = [
           fr: "Dystopie",
           tw: "敵托邦",
           kr: "디스토피아",
-          de: "Dystopia",
           es: "Distopía"
         },
         type: "finish",
@@ -1134,11 +1057,8 @@ export const UNITS: any[] = [
     id: 17,
     names: {
       en: "Fohlen",
-      fr: "Fohlen",
       tw: "福倫",
-      kr: "포렌",
-      de: "Fohlen",
-      es: "Fohlen"
+      kr: "포렌"
     },
     abilities: [
       {
@@ -1153,7 +1073,6 @@ export const UNITS: any[] = [
         },
         framesList: [10, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        castTime: 0,
         offset: 66,
         base: 200,
         ignore: 50,
@@ -1173,7 +1092,6 @@ export const UNITS: any[] = [
         },
         framesList: [10, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        castTime: 0,
         offset: 66,
         base: 250,
         ignore: 50,
@@ -1187,11 +1105,8 @@ export const UNITS: any[] = [
     id: 18,
     names: {
       en: "Fryevia",
-      fr: "Fryevia",
       tw: "弗雷比亞",
-      kr: "프레이비아",
-      de: "Fryevia",
-      es: "Fryevia"
+      kr: "프레이비아"
     },
     abilities: [
       {
@@ -1206,7 +1121,6 @@ export const UNITS: any[] = [
         },
         framesList: [40, 7, 5, 7, 7, 7, 7],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
-        castTime: 0,
         offset: 22,
         base: 800,
         damage: "hybrid",
@@ -1232,7 +1146,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [100],
-        castTime: 0,
         offset: 66,
         base: 600,
         damage: "hybrid",
@@ -1277,7 +1190,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [100],
-        castTime: 0,
         offset: 66,
         base: 1200,
         damage: "hybrid",
@@ -1288,11 +1200,9 @@ export const UNITS: any[] = [
     id: 19,
     names: {
       en: "Gilgamesh",
-      fr: "Gilgamesh",
       tw: "吉爾伽美什",
       kr: "길가메시",
-      de: "Gilgamesch",
-      es: "Gilgamesh"
+      de: "Gilgamesch"
     },
     abilities: [
       {
@@ -1339,7 +1249,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [60],
-        castTime: 0,
         offset: 40,
         base: 200,
         ignore: 65
@@ -1405,7 +1314,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [20],
-        castTime: 0,
         offset: 40,
         base: 250,
         ignore: 50,
@@ -1489,7 +1397,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [150],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 1600,
         damage: "hybrid"
       }
@@ -1555,7 +1463,6 @@ export const UNITS: any[] = [
       fr: "Randy",
       tw: "蘭迪",
       kr: "랜디",
-      de: "Randi",
       es: "Randy"
     },
     abilities: [
@@ -1570,7 +1477,6 @@ export const UNITS: any[] = [
           es: "Tajo torbellino"
         },
         hitDamage: [50, 50],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -1608,11 +1514,8 @@ export const UNITS: any[] = [
     id: 24,
     names: {
       en: "Rasler",
-      fr: "Rasler",
       tw: "拉斯勒",
-      kr: "라슬러",
-      de: "Rasler",
-      es: "Rasler"
+      kr: "라슬러"
     },
     abilities: [
       {
@@ -1639,9 +1542,7 @@ export const UNITS: any[] = [
       en: "Reberta",
       fr: "Réberta",
       tw: "蕾貝爾塔",
-      kr: "리베르타",
-      de: "Reberta",
-      es: "Reberta"
+      kr: "리베르타"
     },
     abilities: [
       {
@@ -1726,11 +1627,8 @@ export const UNITS: any[] = [
     id: 26,
     names: {
       en: "Rikku",
-      fr: "Rikku",
       tw: "琉克",
-      kr: "류크",
-      de: "Rikku",
-      es: "Rikku"
+      kr: "류크"
     },
     abilities: [
       {
@@ -1845,10 +1743,8 @@ export const UNITS: any[] = [
         id: 1,
         names: {
           en: "Ultima +2",
-          fr: "Ultima +2",
           tw: "究極 +2",
           kr: "알테마 +2",
-          de: "Ultima +2",
           es: "Artema +2"
         },
         framesList: [140, 37, 38, 37, 38, 38, 37],
@@ -1868,7 +1764,6 @@ export const UNITS: any[] = [
           fr: "Utopie",
           tw: "烏托邦",
           kr: "유토피아",
-          de: "Utopia",
           es: "Utopía"
         },
         type: "finish",
@@ -1889,7 +1784,6 @@ export const UNITS: any[] = [
           fr: "Utopie +2",
           tw: "烏托邦 +2",
           kr: "유토피아 +2",
-          de: "Utopia +2",
           es: "Utopía +2"
         },
         type: "finish",
@@ -1910,11 +1804,8 @@ export const UNITS: any[] = [
     id: 28,
     names: {
       en: "Setzer",
-      fr: "Setzer",
       tw: "塞策",
-      kr: "셋쳐",
-      de: "Setzer",
-      es: "Setzer"
+      kr: "셋쳐"
     },
     abilities: [
       {
@@ -1930,7 +1821,6 @@ export const UNITS: any[] = [
         base: 180,
         framesList: [42, 5, 5, 5, 5, 5, 5],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
-        castTime: 0,
         offset: 56
       },
       {
@@ -1960,7 +1850,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [16],
-        castTime: 0,
         offset: 56,
         base: 100
       },
@@ -1992,11 +1881,9 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 10, 20
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [150, 6, 5, 7, 5, 5, 8, 5, 5],
-        offset: 8,
         base: 390,
         ignore: 50,
         dualable: false
@@ -2007,11 +1894,8 @@ export const UNITS: any[] = [
     id: 29,
     names: {
       en: "Shantotto",
-      fr: "Shantotto",
       tw: "香托托",
-      kr: "샨토토",
-      de: "Shantotto",
-      es: "Shantotto"
+      kr: "샨토토"
     },
     abilities: [
       {
@@ -2020,9 +1904,7 @@ export const UNITS: any[] = [
           en: "Tornado",
           fr: "Tornade",
           tw: "龍捲風",
-          kr: "토네이도",
-          de: "Tornado",
-          es: "Tornado"
+          kr: "토네이도"
         },
         framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
@@ -2122,10 +2004,8 @@ export const UNITS: any[] = [
         id: 3,
         names: {
           en: "Ultima +2",
-          fr: "Ultima +2",
           tw: "究極 +2",
           kr: "알테마 +2",
-          de: "Ultima +2",
           es: "Artema +2"
         },
         framesList: [140, 37, 38, 37, 38, 38, 37],
@@ -2150,8 +2030,6 @@ export const UNITS: any[] = [
         },
         framesList: [49, 10, 14, 9, 16, 12, 42, 4, 4],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        castTime: 0,
-        offset: 0,
         base: 390,
         ignore: 50,
         damage: "magic",
@@ -2173,11 +2051,8 @@ export const UNITS: any[] = [
     id: 31,
     names: {
       en: "Vaan",
-      fr: "Vaan",
       tw: "梵恩",
-      kr: "반",
-      de: "Vaan",
-      es: "Vaan"
+      kr: "반"
     },
     abilities: [
       {
@@ -2218,11 +2093,8 @@ export const UNITS: any[] = [
     id: 32,
     names: {
       en: "Vargas",
-      fr: "Vargas",
       tw: "瓦爾加斯",
-      kr: "발가스",
-      de: "Vargas",
-      es: "Vargas"
+      kr: "발가스"
     },
     abilities: [
       {
@@ -2236,7 +2108,6 @@ export const UNITS: any[] = [
           es: "Galope flamígero +"
         },
         framesList: [2, 10, 10, 10, 78],
-        castTime: 0,
         offset: 66,
         base: 200
       },
@@ -2266,11 +2137,8 @@ export const UNITS: any[] = [
     id: 33,
     names: {
       en: "Victoria",
-      fr: "Victoria",
       tw: "維多利亞",
-      kr: "빅토리아",
-      de: "Victoria",
-      es: "Victoria"
+      kr: "빅토리아"
     },
     abilities: [
       {
@@ -2322,7 +2190,6 @@ export const UNITS: any[] = [
       fr: "Djidane",
       tw: "吉坦",
       kr: "지탄",
-      de: "Zidane",
       es: "Yitán"
     },
     abilities: [
@@ -2507,8 +2374,6 @@ export const UNITS: any[] = [
         },
         framesList: [68, 4, 47, 4, 35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20, 4],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10],
-        castTime: 40,
-        offset: 0,
         base: 800,
         dualable: false
       },
@@ -2554,7 +2419,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [90],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 250,
         ignore: 50
       },
@@ -2571,7 +2436,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [90],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 500,
         ignore: 50
       }
@@ -2581,11 +2446,8 @@ export const UNITS: any[] = [
     id: 37,
     names: {
       en: "Queen",
-      fr: "Queen",
       tw: "葵因",
-      kr: "퀸",
-      de: "Queen",
-      es: "Queen"
+      kr: "퀸"
     },
     abilities: [
       {
@@ -2609,11 +2471,8 @@ export const UNITS: any[] = [
     id: 38,
     names: {
       en: "Prishe",
-      fr: "Prishe",
       tw: "普利修",
-      kr: "프리쉬",
-      de: "Prishe",
-      es: "Prishe"
+      kr: "프리쉬"
     },
     abilities: [
       {
@@ -2628,7 +2487,6 @@ export const UNITS: any[] = [
         },
         framesList: [2, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
-        castTime: 0,
         offset: 66,
         base: 350
       },
@@ -2644,7 +2502,6 @@ export const UNITS: any[] = [
         },
         framesList: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16],
-        castTime: 0,
         offset: 66,
         base: 500,
         ignore: 50
@@ -2655,11 +2512,8 @@ export const UNITS: any[] = [
     id: 39,
     names: {
       en: "Nyx",
-      fr: "Nyx",
       tw: "尼克斯",
-      kr: "닉스",
-      de: "Nyx",
-      es: "Nyx"
+      kr: "닉스"
     },
     abilities: [
       {
@@ -2707,11 +2561,8 @@ export const UNITS: any[] = [
     id: 40,
     names: {
       en: "Glauca",
-      fr: "Glauca",
       tw: "格拉烏卡",
-      kr: "글라우카",
-      de: "Glauca",
-      es: "Glauca"
+      kr: "글라우카"
     },
     abilities: [
       {
@@ -2747,18 +2598,14 @@ export const UNITS: any[] = [
     id: 41,
     names: {
       en: "Pod 153",
-      fr: "Pod 153",
       tw: "輔助機１５３",
-      kr: "포드 153",
-      de: "Pod 153",
-      es: "Pod 153"
+      kr: "포드 153"
     },
     abilities: [
       {
         id: 1,
         names: {
           en: "R020: Mirage",
-          fr: "R020: Mirage",
           tw: "R020：幻象",
           kr: "R020: 미라쥬",
           de: "R020: Illusion",
@@ -2790,8 +2637,7 @@ export const UNITS: any[] = [
           fr: "Météore",
           tw: "隕石",
           kr: "메테오",
-          de: "Meteo",
-          es: "Meteo"
+          de: "Meteo"
         },
         type: "finish",
         framesList: [350],
@@ -2810,8 +2656,7 @@ export const UNITS: any[] = [
           fr: "Météore +2",
           tw: "隕石 +2",
           kr: "메테오 +2",
-          de: "Meteo +2",
-          es: "Meteo +2"
+          de: "Meteo +2"
         },
         type: "finish",
         framesList: [310, 20, 20],
@@ -2828,16 +2673,14 @@ export const UNITS: any[] = [
         id: 3,
         names: {
           en: "Ultima",
-          fr: "Ultima",
           tw: "究極",
           kr: "알테마",
-          de: "Ultima",
           es: "Artema"
         },
         type: "finish",
         framesList: [365],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -2857,7 +2700,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [170],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "magic",
         elements: [
@@ -2879,7 +2722,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [170],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "magic",
         elements: [
@@ -2901,7 +2744,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [190],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "magic",
         elements: [
@@ -2923,7 +2766,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [150],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "magic",
         elements: [
@@ -2945,7 +2788,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [240],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "magic",
         elements: [
@@ -2967,7 +2810,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [210],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "magic",
         elements: [
@@ -3019,8 +2862,7 @@ export const UNITS: any[] = [
           tw: "神聖",
           kr: "홀리",
           fr: "Sidéral",
-          de: "Sanctus",
-          es: "Sanctus"
+          de: "Sanctus"
         },
         hitDamage: [
           100
@@ -3049,8 +2891,7 @@ export const UNITS: any[] = [
       fr: "Ariana chic",
       tw: "時尚亞莉安娜",
       kr: "시크 아리아나",
-      de: "Schicke Ariana",
-      es: "Ariana chic"
+      de: "Schicke Ariana"
     },
     abilities: [
       {
@@ -3065,7 +2906,6 @@ export const UNITS: any[] = [
         },
         framesList: [139, 7, 7, 8, 8, 16, 8],
         hitDamage: [10, 15, 15, 15, 15, 15, 15],
-        castTime: 0,
         offset: 56,
         base: 280,
         ignore: 25,
@@ -3097,7 +2937,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [10],
-        castTime: 0,
         offset: 40,
         base: 350,
       }
@@ -3107,10 +2946,8 @@ export const UNITS: any[] = [
     id: 45,
     names: {
       en: "Adam",
-      fr: "Adam",
       tw: "亞當",
       kr: "아담",
-      de: "Adam",
       es: "Adán"
     },
     abilities: [
@@ -3126,7 +2963,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [60],
-        castTime: 0,
         offset: 40,
         base: 500,
       }
@@ -3136,11 +2972,8 @@ export const UNITS: any[] = [
     id: 47,
     names: {
       en: "Kelsus",
-      fr: "Kelsus",
       tw: "凱爾蘇斯",
-      kr: "켈서스",
-      de: "Kelsus",
-      es: "Kelsus"
+      kr: "켈서스"
     },
     abilities: [
       {
@@ -3155,7 +2988,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [60],
-        castTime: 0,
         offset: 40,
         base: 500,
       }
@@ -3165,11 +2997,8 @@ export const UNITS: any[] = [
     id: 48,
     names: {
       en: "Maxwell",
-      fr: "Maxwell",
       tw: "麥斯威爾",
-      kr: "막스웰",
-      de: "Maxwell",
-      es: "Maxwell"
+      kr: "막스웰"
     },
     abilities: [
       {
@@ -3185,7 +3014,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [102],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 200,
         ignore: 50,
         elements : [
@@ -3218,7 +3047,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [70],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 250,
         ignore: 35
       }
@@ -3228,11 +3057,8 @@ export const UNITS: any[] = [
     id: 50,
     names: {
       en: "Helena",
-      fr: "Helena",
       tw: "海倫娜",
-      kr: "헬레나",
-      de: "Helena",
-      es: "Helena"
+      kr: "헬레나"
     },
     abilities: [
       {
@@ -3273,11 +3099,8 @@ export const UNITS: any[] = [
     id: 51,
     names: {
       en: "Zargabaath",
-      fr: "Zargabaath",
       tw: "查格博斯",
-      kr: "자르가바스",
-      de: "Zargabaath",
-      es: "Zargabaath"
+      kr: "자르가바스"
     },
     abilities: [
       {
@@ -3334,11 +3157,8 @@ export const UNITS: any[] = [
     id: 52,
     names: {
       en: "Luneth",
-      fr: "Luneth",
       tw: "路涅斯",
-      kr: "루네스",
-      de: "Luneth",
-      es: "Luneth"
+      kr: "루네스"
     },
     abilities: [
       {
@@ -3353,7 +3173,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [60],
-        castTime: 0,
         offset: 40,
         base: 525,
         ignore: 50
@@ -3364,11 +3183,8 @@ export const UNITS: any[] = [
     id: 53,
     names: {
       en: "Grace",
-      fr: "Grace",
       tw: "格蕾斯",
-      kr: "그레이스",
-      de: "Grace",
-      es: "Grace"
+      kr: "그레이스"
     },
     abilities: [
       {
@@ -3383,7 +3199,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [80],
-        castTime: 0,
         offset: 40,
         base: 250,
         ignore: 50
@@ -3394,11 +3209,8 @@ export const UNITS: any[] = [
     id: 54,
     names: {
       en: "Rem",
-      fr: "Rem",
       tw: "蕾姆",
-      kr: "렘",
-      de: "Rem",
-      es: "Rem"
+      kr: "렘"
     },
     abilities: [
       {
@@ -3415,7 +3227,7 @@ export const UNITS: any[] = [
         damage: "magic",
         framesList: [120],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 620
       },
       {
@@ -3432,7 +3244,7 @@ export const UNITS: any[] = [
         damage: "magic",
         framesList: [120],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 860
       }
     ]
@@ -3441,11 +3253,8 @@ export const UNITS: any[] = [
     id: 55,
     names: {
       en: "Zyrus",
-      fr: "Zyrus",
       tw: "扎拉斯",
-      kr: "자이러스",
-      de: "Zyrus",
-      es: "Zyrus"
+      kr: "자이러스"
     },
     abilities: [
       {
@@ -3499,8 +3308,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [215],
-        castTime: 45,
-        offset: 0,
         base: 740,
         elements: [
           "water"
@@ -3573,11 +3380,8 @@ export const UNITS: any[] = [
     id: 56,
     names: {
       en: "Shine",
-      fr: "Shine",
       tw: "夏因",
-      kr: "샤인",
-      de: "Shine",
-      es: "Shine"
+      kr: "샤인"
     },
     abilities: [
       {
@@ -3592,7 +3396,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [23],
-        castTime: 0,
         offset: 40,
         base: 420,
         elements: [
@@ -3605,10 +3408,8 @@ export const UNITS: any[] = [
     id: 57,
     names: {
       en: "Olive",
-      fr: "Olive",
       tw: "奧利芙",
       kr: "올리브",
-      de: "Olive",
       es: "Olivia"
     },
     abilities: [
@@ -3673,7 +3474,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [350],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 230,
         ignore: 50,
         damage: "magic",
@@ -3692,7 +3493,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [80],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 2000,
         damage: "magic",
         elements : [
@@ -3713,7 +3514,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [80],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 2500,
         damage: "magic",
         elements : [
@@ -3752,7 +3553,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [20],
-        castTime: 0,
         offset: 40,
         base: 750,
         elements: [
@@ -3771,11 +3571,8 @@ export const UNITS: any[] = [
     id: 60,
     names: {
       en: "Gaffgarion",
-      fr: "Gaffgarion",
       tw: "加夫加利安",
-      kr: "가프가리온",
-      de: "Gaffgarion",
-      es: "Gaffgarion"
+      kr: "가프가리온"
     },
     abilities: [
       {
@@ -3791,7 +3588,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [120],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 750,
         elements: [
           "dark"
@@ -3803,11 +3600,8 @@ export const UNITS: any[] = [
     id: 61,
     names: {
       en: "Kefka",
-      fr: "Kefka",
       tw: "凱夫卡",
-      kr: "케프카",
-      de: "Kefka",
-      es: "Kefka"
+      kr: "케프카"
     },
     abilities: [
       {
@@ -3823,7 +3617,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [110],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 280,
         ignore: 50,
         dualable: false,
@@ -3835,11 +3629,8 @@ export const UNITS: any[] = [
     id: 62,
     names: {
       en: "Bartz",
-      fr: "Bartz",
       tw: "巴茲",
-      kr: "버츠",
-      de: "Bartz",
-      es: "Bartz"
+      kr: "버츠"
     },
     abilities: [
       {
@@ -3855,7 +3646,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [70],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 700,
         damage: "hybrid"
       }
@@ -3865,11 +3656,8 @@ export const UNITS: any[] = [
     id: 63,
     names: {
       en: "Goken",
-      fr: "Goken",
       tw: "剛健",
-      kr: "고우켄",
-      de: "Goken",
-      es: "Goken"
+      kr: "고우켄"
     },
     abilities: [
       {
@@ -3978,8 +3766,6 @@ export const UNITS: any[] = [
         },
         framesList: [47, 7, 9, 7, 9, 7, 9, 9, 5, 5],
         hitDamage: [5, 5, 5, 5, 5, 5, 5, 65],
-        castTime: 0,
-        offset: 0,
         base: 840,
         dualable: false
       }
@@ -4024,7 +3810,6 @@ export const UNITS: any[] = [
       fr: "Alternance",
       tw: "吸收",
       kr: "얼터너",
-      de: "Alterna",
       es: "Versus"
     },
     abilities: [
@@ -4035,7 +3820,6 @@ export const UNITS: any[] = [
           fr: "Alternance",
           tw: "吸收",
           kr: "얼터너",
-          de: "Alterna",
           es: "Versus"
         },
         type: "finish",
@@ -4093,7 +3877,6 @@ export const UNITS: any[] = [
         },
         framesList: [110, 10, 10, 10, 10],
         hitDamage: [10, 10, 15, 15, 50],
-        castTime: 0,
         offset: 56,
         base: 300,
         damage: "magic",
@@ -4151,8 +3934,6 @@ export const UNITS: any[] = [
         },
         framesList: [62, 4, 4, 4, 4, 4, 4, 4, 30],
         hitDamage: [5, 7, 8, 9, 10, 11, 12, 13, 25],
-        castTime: 60,
-        offset: 0,
         base: 660,
         damage: "magic",
         dualable: false
@@ -4214,8 +3995,6 @@ export const UNITS: any[] = [
         },
         framesList: [62, 10, 10, 10, 35, 10, 10, 10],
         hitDamage: [10, 10, 12, 12, 13, 13, 15, 15],
-        castTime: 0,
-        offset: 0,
         base: 570,
         dualable: false,
         elements: [
@@ -4292,8 +4071,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [170],
-        castTime: 40,
-        offset: 0,
         base: 12000,
         damage: "magic",
         elements: [
@@ -4313,8 +4090,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [170],
-        castTime: 40,
-        offset: 0,
         base: 21000,
         damage: "magic",
         elements: [
@@ -4328,11 +4103,8 @@ export const UNITS: any[] = [
     id: 70,
     names: {
       en: "Ifrit",
-      fr: "Ifrit",
       tw: "伊弗利特",
-      kr: "이프리트",
-      de: "Ifrit",
-      es: "Ifrit"
+      kr: "이프리트"
     },
     abilities: [
       {
@@ -4347,8 +4119,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [110],
-        castTime: 40,
-        offset: 0,
         base: 14000,
         elements: [
           "fire"
@@ -4367,8 +4137,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [110],
-        castTime: 40,
-        offset: 0,
         base: 23500,
         elements: [
           "fire"
@@ -4381,11 +4149,8 @@ export const UNITS: any[] = [
     id: 71,
     names: {
       en: "Shiva",
-      fr: "Shiva",
       tw: "濕婆",
-      kr: "시바",
-      de: "Shiva",
-      es: "Shiva"
+      kr: "시바"
     },
     abilities: [
       {
@@ -4400,8 +4165,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [110],
-        castTime: 40,
-        offset: 0,
         base: 14000,
         damage: "magic",
         elements: [
@@ -4421,8 +4184,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [110],
-        castTime: 40,
-        offset: 0,
         base: 19000,
         damage: "magic",
         elements: [
@@ -4436,10 +4197,8 @@ export const UNITS: any[] = [
     id: 72,
     names: {
       en: "Diabolos",
-      fr: "Diabolos",
       tw: "迪亞波羅斯",
       kr: "디아볼로스",
-      de: "Diabolos",
       es: "Diablo"
     },
     abilities: [
@@ -4455,8 +4214,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [190],
-        castTime: 40,
-        offset: 0,
         base: 17000,
         damage: "magic",
         elements: [
@@ -4470,10 +4227,8 @@ export const UNITS: any[] = [
     id: 73,
     names: {
       en: "Ramuh",
-      fr: "Ramuh",
       tw: "拉姆",
       kr: "라무",
-      de: "Ramuh",
       es: "Lamú"
     },
     abilities: [
@@ -4489,8 +4244,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [110],
-        castTime: 40,
-        offset: 0,
         base: 14000,
         damage: "magic",
         elements: [
@@ -4510,8 +4263,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [110],
-        castTime: 40,
-        offset: 0,
         base: 21000,
         damage: "magic",
         elements: [
@@ -4525,10 +4276,8 @@ export const UNITS: any[] = [
     id: 74,
     names: {
       en: "Titan",
-      fr: "Titan",
       tw: "泰坦",
       kr: "타이탄",
-      de: "Titan",
       es: "Titán"
     },
     abilities: [
@@ -4544,8 +4293,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [170],
-        castTime: 40,
-        offset: 0,
         base: 17000,
         elements: [
           "earth"
@@ -4561,7 +4308,6 @@ export const UNITS: any[] = [
       fr: "Tétra-Sylphides",
       tw: "四方風精靈",
       kr: "테트라 실피드",
-      de: "Tetra Sylphid",
       es: "Tetra Sílfide"
     },
     abilities: [
@@ -4577,8 +4323,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [190],
-        castTime: 40,
-        offset: 0,
         base: 18000,
         damage: "magic",
         elements: [
@@ -4592,27 +4336,21 @@ export const UNITS: any[] = [
     id: 76,
     names: {
       en: "Odin",
-      fr: "Odin",
       tw: "奧汀",
       kr: "오딘",
-      de: "Odin",
       es: "Odín"
     },
     abilities: [
       {
         id: 1,
         names: {
-          en: "Gungnir (2)",
-          fr: "Gungnir (2)",
-          tw: "奧汀神槍 (2)",
-          kr: "궁니르 (2)",
-          de: "Gungnir (2)",
-          es: "Gungnir (2)"
+          en: "Zantetsuken (2)",
+          tw: "斬鐵劍 (2)",
+          kr: "참철검 (2)",
+          es: "Sable justiciero (2)"
         },
         type: "finish",
         framesList: [70],
-        castTime: 40,
-        offset: 0,
         base: 20000,
         dualable: false
       }
@@ -4622,11 +4360,8 @@ export const UNITS: any[] = [
     id: 77,
     names: {
       en: "Bahamut",
-      fr: "Bahamut",
       tw: "巴哈姆特",
-      kr: "바하무트",
-      de: "Bahamut",
-      es: "Bahamut"
+      kr: "바하무트"
     },
     abilities: [
       {
@@ -4641,8 +4376,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [170],
-        castTime: 40,
-        offset: 0,
         base: 30000,
         damage: "magic",
         dualable: false
@@ -4653,11 +4386,8 @@ export const UNITS: any[] = [
     id: 78,
     names: {
       en: "Loren",
-      fr: "Loren",
       tw: "洛倫",
-      kr: "로렌",
-      de: "Loren",
-      es: "Loren"
+      kr: "로렌"
     },
     abilities: [
       {
@@ -4671,7 +4401,6 @@ export const UNITS: any[] = [
           es: "Cuchilla veloz"
         },
         framesList: [2, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-        castTime: 0,
         offset: 66,
         base: 450,
         elements: [
@@ -4690,7 +4419,6 @@ export const UNITS: any[] = [
         },
         framesList: [2, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
-        castTime: 0,
         offset: 26,
         base: 250,
         ignore: 50,
@@ -4722,7 +4450,6 @@ export const UNITS: any[] = [
         },
         type: "finish",
         framesList: [50],
-        castTime: 0,
         offset: 40,
         base: 225,
         ignore: 50,
@@ -4742,8 +4469,6 @@ export const UNITS: any[] = [
         },
         framesList: [34, 10, 13, 14, 14, 10, 13, 14, 24, 12, 34, 18, 18, 18, 16],
         hitDamage: [3, 3, 3, 3, 3, 3, 3, 3, 3, 12, 12, 12, 12, 12, 13],
-        castTime: 0,
-        offset: 0,
         base: 420,
         ignore: 50,
         debuffs: [
@@ -4762,9 +4487,7 @@ export const UNITS: any[] = [
       en: "Barbariccia",
       tw: "巴爾巴莉希亞",
       kr: "발바리시아",
-      fr: "Barbariccia",
-      de: "Barbarizia",
-      es: "Barbariccia"
+      de: "Barbarizia"
     },
     abilities: [
       {
@@ -4773,9 +4496,7 @@ export const UNITS: any[] = [
           en: "Tornado",
           fr: "Tornade",
           tw: "龍捲風",
-          kr: "토네이도",
-          de: "Tornado",
-          es: "Tornado"
+          kr: "토네이도"
         },
         framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
@@ -4834,7 +4555,7 @@ export const UNITS: any[] = [
         type: "finish",
         framesList: [100],
         castTime: 20,
-        offset: 0,
+        offset: 16,
         base: 1000,
         elements: [
           "wind",
@@ -4855,8 +4576,6 @@ export const UNITS: any[] = [
         },
         framesList: [100, 5, 5, 10, 10, 20, 20],
         hitDamage: [10, 10, 20, 15, 15, 15, 15],
-        castTime: 90,
-        offset: 0,
         base: 840,
         elements: [
           "wind",
@@ -4883,10 +4602,7 @@ export const UNITS: any[] = [
     names: {
       en: "Cor",
       tw: "柯爾",
-      kr: "코르",
-      fr: "Cor",
-      de: "Cor",
-      es: "Cor"
+      kr: "코르"
     },
     abilities: [
       {
@@ -4901,7 +4617,6 @@ export const UNITS: any[] = [
         },
         framesList: [0, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
-        castTime: 0,
         offset: 60,
         base: 280
       },
@@ -4912,10 +4627,7 @@ export const UNITS: any[] = [
     names: {
       en: "Noctis",
       tw: "諾克提斯",
-      kr: "녹티스",
-      fr: "Noctis",
-      de: "Noctis",
-      es: "Noctis"
+      kr: "녹티스"
     },
     abilities: [
       {
@@ -5025,8 +4737,6 @@ export const UNITS: any[] = [
           es: "Coro espectral"
         },
         framesList: [0, 5, 11, 42, 5121],
-        castTime: 0,
-        offset: 0,
         base: 1480,
         dualable: false
       },
@@ -5037,10 +4747,7 @@ export const UNITS: any[] = [
     names: {
       en: "Duke",
       tw: "杜克",
-      kr: "듀크",
-      fr: "Duke",
-      de: "Duke",
-      es: "Duke"
+      kr: "듀크"
     },
     abilities: [
       {
@@ -5055,7 +4762,6 @@ export const UNITS: any[] = [
         },
         framesList: [28, 6, 6, 6, 6, 29],
         hitDamage: [10, 10, 10, 10, 10, 50],
-        castTime: 0,
         offset: 66,
         base: 200,
         ignore: 50,
@@ -5071,14 +4777,9 @@ export const UNITS: any[] = [
         names: {
           en: "Vaskylade",
           tw: "龍騎槍蛇神突擊",
-          kr: "용의 창 바스킬레이드",
-          fr: "Vaskylade",
-          de: "Vaskylade",
-          es: "Vaskylade"
+          kr: "용의 창 바스킬레이드"
         },
         framesList: [0, 61, 49, 10, 174],
-        castTime: 0,
-        offset: 0,
         base: 520,
         ignore: 50,
         elements: [
@@ -5119,10 +4820,7 @@ export const UNITS: any[] = [
     names: {
       en: "Aura",
       tw: "阿烏拉",
-      kr: "아우라",
-      fr: "Aura",
-      de: "Aura",
-      es: "Aura"
+      kr: "아우라"
     },
     abilities: [
       {
@@ -5138,7 +4836,7 @@ export const UNITS: any[] = [
         framesList: [47, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 120,
         ignore: 50,
       },
@@ -5155,7 +4853,7 @@ export const UNITS: any[] = [
         framesList: [47, 10, 10, 10, 10, 10, 10, 10, 5, 10, 10, 10],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 180,
         ignore: 50,
       },
@@ -5170,8 +4868,6 @@ export const UNITS: any[] = [
           es: "Lanza tornado"
         },
         framesList: [0, 5, 7, 7, 7, 7, 7, 7, 7, 116],
-        castTime: 0,
-        offset: 0,
         base: 390,
         ignore: 50,
         elements: [
@@ -5192,10 +4888,7 @@ export const UNITS: any[] = [
     names: {
       en: "William",
       tw: "威廉",
-      kr: "윌리엄",
-      fr: "William",
-      de: "William",
-      es: "William"
+      kr: "윌리엄"
     },
     abilities: [
       {
@@ -5249,8 +4942,6 @@ export const UNITS: any[] = [
           es: "Gran oleaje"
         },
         framesList: [140],
-        castTime: 0,
-        offset: 0,
         base: 940,
         elements: [
           "earth"
@@ -5267,10 +4958,7 @@ export const UNITS: any[] = [
     names: {
       en: "Cloud",
       tw: "克勞德",
-      kr: "클라우드",
-      fr: "Cloud",
-      de: "Cloud",
-      es: "Cloud"
+      kr: "클라우드"
     },
     abilities: [
       {
@@ -5284,7 +4972,6 @@ export const UNITS: any[] = [
           es: "Riesgo climático"
         },
         framesList: [4],
-        castTime: 0,
         offset: 66,
         base: 275,
         ignore: 50,
@@ -5318,7 +5005,6 @@ export const UNITS: any[] = [
           es: "Toque final"
         },
         framesList: [75],
-        castTime: 0,
         offset: 66,
         base: 400,
         type: "finish"
@@ -5335,8 +5021,6 @@ export const UNITS: any[] = [
         },
         framesList: [188, 18, 16, 32, 16, 12, 22, 22, 16, 14, 32, 18, 12, 30, 102],
         hitDamage: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 30],
-        castTime: 1,
-        offset: 0,
         base: 1050,
         ignore: 50,
         dualable: false,
@@ -5408,8 +5092,6 @@ export const UNITS: any[] = [
         },
         framesList: [80, 7, 7, 7, 7, 7],
         hitDamage: [12, 12, 12, 12, 12, 40],
-        castTime: 70,
-        offset: 16,
         base: 570,
         dualable: false
       }
@@ -5420,10 +5102,7 @@ export const UNITS: any[] = [
     names: {
       en: "Kryla",
       tw: "克里菈",
-      kr: "크라일라",
-      fr: "Kryla",
-      de: "Kryla",
-      es: "Kryla"
+      kr: "크라일라"
     },
     abilities: [
       {
@@ -5539,10 +5218,7 @@ export const UNITS: any[] = [
     names: {
       en: "Christine",
       tw: "克莉絲汀",
-      kr: "크리스틴",
-      fr: "Christine",
-      de: "Christine",
-      es: "Christine"
+      kr: "크리스틴"
     },
     abilities: [
       {
@@ -5557,7 +5233,7 @@ export const UNITS: any[] = [
         },
         framesList: [0, 7, 7, 7, 7, 5, 7, 7, 7, 49],
         castTime: 20,
-        offset: 0,
+        offset: 16,
         base: 330,
         ignore: 25,
         damage: "magic",
@@ -5644,8 +5320,6 @@ export const UNITS: any[] = [
         },
         framesList: [80, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         hitDamage: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10],
-        castTime: 1,
-        offset: 0,
         base: 710,
         damage: "magic",
         elements: [
@@ -5745,10 +5419,7 @@ export const UNITS: any[] = [
     names: {
       en: "Kaliva",
       tw: "卡里瓦",
-      kr: "카리바",
-      fr: "Kaliva",
-      de: "Kaliva",
-      es: "Kaliva"
+      kr: "카리바"
     },
     abilities: [
       {
@@ -5910,10 +5581,7 @@ export const UNITS: any[] = [
     names: {
       en: "Ray Jack",
       tw: "雷佳克",
-      kr: "레이 잭",
-      fr: "Ray Jack",
-      de: "Ray Jack",
-      es: "Ray Jack"
+      kr: "레이 잭"
     },
     abilities: [
       {
@@ -6052,8 +5720,6 @@ export const UNITS: any[] = [
           es: "Héroe legendario"
         },
         framesList: [175],
-        castTime: 40,
-        offset: 16,
         base: 420,
         ignore: 50,
         elements: [
@@ -6068,10 +5734,7 @@ export const UNITS: any[] = [
     names: {
       en: "Kaede",
       tw: "楓",
-      kr: "카에데",
-      fr: "Kaede",
-      de: "Kaede",
-      es: "Kaede"
+      kr: "카에데"
     },
     abilities: [
       {
@@ -6102,8 +5765,6 @@ export const UNITS: any[] = [
           es: "Orden de la princesa samurái"
         },
         framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 178],
-        castTime: 0,
-        offset: 0,
         base: 790,
         dualable: false
       }
@@ -6114,10 +5775,7 @@ export const UNITS: any[] = [
     names: {
       en: "Jiraiya",
       tw: "自來也",
-      kr: "지라이야",
-      fr: "Jiraiya",
-      de: "Jiraiya",
-      es: "Jiraiya"
+      kr: "지라이야"
     },
     abilities: [
       {
@@ -6170,7 +5828,6 @@ export const UNITS: any[] = [
         },
         framesList: [10, 8, 8, 8, 8, 8, 8],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
-        castTime: 0,
         offset: 8,
         base: 750,
         damage: "hybrid",
@@ -6210,8 +5867,6 @@ export const UNITS: any[] = [
         },
         framesList: [133, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        castTime: 0,
-        offset: 0,
         base: 1400,
         damage: "hybrid",
         elements: [
@@ -6243,7 +5898,6 @@ export const UNITS: any[] = [
           es: "Partidor celeste"
         },
         framesList: [2],
-        castTime: 0,
         offset: 8,
         type: "finish",
         base: 230
@@ -6259,7 +5913,6 @@ export const UNITS: any[] = [
           es: "Destello escarlata"
         },
         framesList: [6],
-        castTime: 0,
         offset: 8,
         base: 200,
         type: "finish",
@@ -6276,7 +5929,6 @@ export const UNITS: any[] = [
           es: "Floración fatal"
         },
         framesList: [2],
-        castTime: 0,
         offset: 8,
         base: 675,
         type: "finish",
@@ -6301,7 +5953,6 @@ export const UNITS: any[] = [
           es: "Era carmesí"
         },
         framesList: [20],
-        castTime: 0,
         offset: 8,
         base: 675,
         type: "finish",
@@ -6326,7 +5977,6 @@ export const UNITS: any[] = [
           es: "Destello de hoja - Final"
         },
         framesList: [2],
-        castTime: 0,
         offset: 8,
         base: 525,
         ignore: 50,
@@ -6343,8 +5993,6 @@ export const UNITS: any[] = [
           es: "Ola imparable"
         },
         framesList: [28],
-        castTime: 0,
-        offset: 0,
         base: 790,
         ignore: 50,
         dualable: false,
@@ -6357,10 +6005,7 @@ export const UNITS: any[] = [
     names: {
       en: "Drace",
       tw: "朵芮絲",
-      kr: "드레이스",
-      fr: "Drace",
-      de: "Drace",
-      es: "Drace"
+      kr: "드레이스"
     },
     abilities: [
       {
@@ -6410,10 +6055,7 @@ export const UNITS: any[] = [
     names: {
       en: "Balthier",
       tw: "巴爾弗雷亞",
-      kr: "발프레아",
-      fr: "Balthier",
-      de: "Balthier",
-      es: "Balthier"
+      kr: "발프레아"
     },
     abilities: [
       {
@@ -6427,7 +6069,6 @@ export const UNITS: any[] = [
           es: "Tiro Piro"
         },
         framesList: [55],
-        castTime: 0,
         offset: 8,
         base: 150,
         ignore: 50,
@@ -6450,7 +6091,6 @@ export const UNITS: any[] = [
           es: "Tiro Electro"
         },
         framesList: [40],
-        castTime: 0,
         offset: 8,
         base: 150,
         ignore: 50,
@@ -6473,7 +6113,6 @@ export const UNITS: any[] = [
           es: "Tiro Aqua"
         },
         framesList: [90],
-        castTime: 0,
         offset: 8,
         base: 150,
         ignore: 50,
@@ -6496,7 +6135,6 @@ export const UNITS: any[] = [
           es: "Tiro Sanctus"
         },
         framesList: [40],
-        castTime: 0,
         offset: 8,
         base: 150,
         ignore: 50,
@@ -6553,8 +6191,6 @@ export const UNITS: any[] = [
           es: "Impacto astral"
         },
         framesList: [185],
-        castTime: 0,
-        offset: 0,
         base: 390,
         ignore: 50,
         type: "finish",
@@ -6584,7 +6220,6 @@ export const UNITS: any[] = [
           es: "Luz atronadora veloz"
         },
         framesList: [0, 12],
-        castTime: 0,
         offset: 56,
         base: 230,
         type: "finish",
@@ -6611,7 +6246,6 @@ export const UNITS: any[] = [
           es: "Destello luminoso veloz"
         },
         framesList: [0, 12],
-        castTime: 0,
         offset: 56,
         base: 230,
         type: "finish",
@@ -6638,7 +6272,6 @@ export const UNITS: any[] = [
           es: "Penumbra luminosa veloz"
         },
         framesList: [0, 12],
-        castTime: 0,
         offset: 56,
         base: 230,
         type: "finish",
@@ -6665,7 +6298,6 @@ export const UNITS: any[] = [
           es: "Rebeldía veloz"
         },
         framesList: [167],
-        castTime: 0,
         offset: 160,
         base: 650,
         ignore: 25,
@@ -6706,8 +6338,6 @@ export const UNITS: any[] = [
         },
         framesList: [12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3],
-        castTime: 0,
-        offset: 8,
         base: 800,
         type: "finish",
         damage: "magic",
@@ -6732,10 +6362,7 @@ export const UNITS: any[] = [
     names: {
       en: "Yun",
       tw: "雲",
-      kr: "윤",
-      fr: "Yun",
-      de: "Yun",
-      es: "Yun"
+      kr: "윤"
     },
     abilities: [
       {
@@ -6840,10 +6467,7 @@ export const UNITS: any[] = [
         names: {
           en: "Lux Magna +2",
           tw: "光輝一擊 +2",
-          kr: "럭스 마그나 +2",
-          fr: "Lux Magna +2",
-          de: "Lux Magna +2",
-          es: "Lux Magna +2"
+          kr: "럭스 마그나 +2"
         },
         framesList: [120],
         castTime: 40,
@@ -6876,13 +6500,11 @@ export const UNITS: any[] = [
         hitDamage: [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
         ],
-        castTime: 0,
         elements: [
           "light"
         ],
         debuffs: [],
         framesList: [40, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 9, 11, 15],
-        offset: 8,
         base: 430,
         dualable: false
       }
@@ -6893,10 +6515,7 @@ export const UNITS: any[] = [
     names: {
       en: "Ang",
       tw: "昂",
-      kr: "앙",
-      fr: "Ang",
-      de: "Ang",
-      es: "Ang",
+      kr: "앙"
     },
     abilities: [
       {
@@ -7119,7 +6738,6 @@ export const UNITS: any[] = [
         framesList: [150],
         base: 650,
         ignore: 50,
-        offset: 16,
         type: "finish",
         dualable: false
       }
@@ -7131,10 +6749,7 @@ export const UNITS: any[] = [
     names: {
       en: "Prompto",
       tw: "普羅恩普特",
-      kr: "프롬프토",
-      fr: "Prompto",
-      de: "Prompto",
-      es: "Prompto"
+      kr: "프롬프토"
     },
     abilities: [
       {
@@ -7191,7 +6806,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -7261,11 +6875,9 @@ export const UNITS: any[] = [
         hitDamage: [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
         ],
-        castTime: 138,
         elements: [],
         debuffs: [],
         framesList: [180, 8, 8, 8, 8, 8, 8, 8, 32, 8, 8, 8, 8, 8, 96],
-        offset: 16,
         base: 800,
         dualable: false
       }
@@ -7288,9 +6900,7 @@ export const UNITS: any[] = [
       en: "Beatrix",
       tw: "貝特麗克絲",
       kr: "베아트릭스",
-      fr: "Béate",
-      de: "Beatrix",
-      es: "Beatrix"
+      fr: "Béate"
     },
     abilities: [
       {
@@ -7306,7 +6916,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
-        castTime: 0,
         elements: [
           "lightning"
         ],
@@ -7328,7 +6937,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [72],
@@ -7349,7 +6957,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [],
         debuffs: [],
@@ -7371,7 +6978,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -7418,11 +7024,9 @@ export const UNITS: any[] = [
         hitDamage: [
           15, 15, 15, 55
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [98, 32, 59, 87],
-        offset: 8,
         base: 520,
         ignore: 50,
         dualable: false
@@ -7434,10 +7038,7 @@ export const UNITS: any[] = [
     names: {
       en: "Yuri",
       tw: "百合",
-      kr: "유리",
-      fr: "Yuri",
-      de: "Yuri",
-      es: "Yuri"
+      kr: "유리"
     },
     abilities: [
       {
@@ -7519,11 +7120,9 @@ export const UNITS: any[] = [
         hitDamage: [
           15, 15, 15, 15, 40
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [18, 30, 28, 10, 36],
-        offset: 8,
         base: 742.5,
         dualable: false
       }
@@ -7678,7 +7277,6 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [2, 8, 8, 8, 8, 8, 8],
@@ -7699,11 +7297,9 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 40
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [36, 71, 13, 105],
-        offset: 8,
         base: 850,
         ignore: 50,
         dualable: false
@@ -7737,10 +7333,7 @@ export const UNITS: any[] = [
     names: {
       en: "Lara Croft",
       tw: "蘿拉·卡芙特",
-      kr: "라라 크로프트",
-      fr: "Lara Croft",
-      de: "Lara Croft",
-      es: "Lara Croft"
+      kr: "라라 크로프트"
     },
     abilities: [
       {
@@ -7776,7 +7369,6 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [2, 8, 8, 8, 8, 8, 8],
@@ -7816,11 +7408,9 @@ export const UNITS: any[] = [
         hitDamage: [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        castTime: 15,
         elements: [],
         debuffs: [],
         framesList: [12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        offset: 16,
         base: 800,
         dualable: false
       }
@@ -7833,7 +7423,6 @@ export const UNITS: any[] = [
       tw: "利維坦",
       kr: "리바이어선",
       fr: "Léviathan",
-      de: "Leviathan",
       es: "Leviatán"
     },
     abilities: [
@@ -7842,15 +7431,11 @@ export const UNITS: any[] = [
         names: {
           en: "Tsunami (2)",
           tw: "大海嘯 (2)",
-          kr: "대해일 (2)",
-          fr: "Tsunami (2)",
-          de: "Tsunami (2)",
-          es: "Tsunami (2)"
+          kr: "대해일 (2)"
         },
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [
           "water"
         ],
@@ -7859,8 +7444,7 @@ export const UNITS: any[] = [
         ignore: 0,
         type: "magic",
         base: 38000,
-        framesList: [120],
-        offset: 8
+        framesList: [120]
       }
     ]
   },
@@ -7869,10 +7453,7 @@ export const UNITS: any[] = [
     names: {
       en: "Kunshira",
       tw: "庫西拉",
-      kr: "쿤시라",
-      fr: "Kunshira",
-      de: "Kunshira",
-      es: "Kunshira"
+      kr: "쿤시라"
     },
     abilities: [
       {
@@ -7888,7 +7469,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "fire"
@@ -7912,7 +7492,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "water"
@@ -7936,7 +7515,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "lightning"
@@ -7960,7 +7538,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "wind"
@@ -7984,7 +7561,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "light"
@@ -8128,7 +7704,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "fire"
@@ -8156,7 +7731,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "water"
@@ -8184,7 +7758,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "lightning"
@@ -8212,7 +7785,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "wind"
@@ -8240,7 +7812,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "light"
@@ -8268,7 +7839,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [],
         debuffs: [],
@@ -8290,7 +7860,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [],
         debuffs: [],
@@ -8312,12 +7881,10 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [],
         debuffs: [],
         framesList: [100],
-        offset: 8,
         base: 1800,
         type: "finish",
         dualable: false
@@ -8367,7 +7934,6 @@ export const UNITS: any[] = [
           fr: "Dystopie",
           tw: "敵托邦",
           kr: "디스토피아",
-          de: "Dystopia",
           es: "Distopía"
         },
         type: "finish",
@@ -8385,16 +7951,14 @@ export const UNITS: any[] = [
         id: 3,
         names: {
           en: "Ultima",
-          fr: "Ultima",
           tw: "究極",
           kr: "알테마",
-          de: "Ultima",
           es: "Artema"
         },
         type: "finish",
         framesList: [365],
         castTime: 40,
-        offset: 0,
+        offset: 16,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -8438,7 +8002,6 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        castTime: 0,
         damage: "magic",
         elements: [],
         debuffs: [
@@ -8452,7 +8015,6 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [8, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        offset: 8,
         base: 940,
         dualable: false
       }
@@ -8464,10 +8026,7 @@ export const UNITS: any[] = [
     names: {
       en: "Lulu",
       tw: "露露",
-      kr: "루루",
-      fr: "Lulu",
-      de: "Lulu",
-      es: "Lulu"
+      kr: "루루"
     },
     abilities: [
       {
@@ -8617,12 +8176,10 @@ export const UNITS: any[] = [
         hitDamage: [
           16, 16, 17, 17, 17, 17
         ],
-        castTime: 0,
         damage: "magic",
         elements: [],
         debuffs: [],
         framesList: [160, 24, 24, 24, 24, 24],
-        offset: 8,
         base: 570,
         ignore: 50,
         dualable: false
@@ -8635,10 +8192,7 @@ export const UNITS: any[] = [
     names: {
       en: "Yuna",
       tw: "優娜",
-      kr: "유우나",
-      fr: "Yuna",
-      de: "Yuna",
-      es: "Yuna"
+      kr: "유우나"
     },
     abilities: [
       {
@@ -8694,10 +8248,7 @@ export const UNITS: any[] = [
     names: {
       en: "Camille",
       tw: "卡米爾",
-      kr: "카밀",
-      fr: "Camille",
-      de: "Camille",
-      es: "Camille"
+      kr: "카밀"
     },
     abilities: [
       {
@@ -8738,7 +8289,6 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -8763,7 +8313,6 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -8776,7 +8325,6 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [26, 10, 16, 80, 48],
-        offset: 8,
         base: 740,
         dualable: false
       }
@@ -8806,7 +8354,6 @@ export const UNITS: any[] = [
         hitDamage: [
           12, 12, 12, 12, 12, 12, 12, 16
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [16, 10, 10, 10, 10, 10, 10, 10],
@@ -8826,7 +8373,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [
           "fire"
         ],
@@ -8844,7 +8390,6 @@ export const UNITS: any[] = [
           tw: "鎮壓",
           kr: "진압",
           fr: "Répression",
-          de: "Repression",
           es: "Represión"
         },
         hitDamage: [
@@ -8870,10 +8415,7 @@ export const UNITS: any[] = [
         names: {
           en: "Schmerzen",
           tw: "柔美",
-          kr: "고통",
-          fr: "Schmerzen",
-          de: "Schmerzen",
-          es: "Schmerzen"
+          kr: "고통"
         },
         hitDamage: [
           100
@@ -8926,11 +8468,9 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [85, 4, 21, 8, 85, 4, 4, 22, 6, 6, 12],
-        offset: 8,
         base: 470,
         ignore: 50,
         dualable: false
@@ -8981,7 +8521,6 @@ export const UNITS: any[] = [
         hitDamage: [
           13, 13, 13, 13, 13, 15
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [46, 6, 6, 6, 6, 13],
@@ -9084,7 +8623,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -9109,7 +8647,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -9134,7 +8671,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -9159,7 +8695,6 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -9184,11 +8719,9 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [150],
-        offset: 8,
         base: 720,
         ignore: 50,
         type: "finish",
@@ -9202,9 +8735,7 @@ export const UNITS: any[] = [
       en: "Emilia",
       tw: "埃米利亞",
       kr: "에밀리아",
-      fr: "Émilia",
-      de: "Emilia",
-      es: "Emilia"
+      fr: "Émilia"
     },
     abilities: [
       {
@@ -9240,7 +8771,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [
           "dark"
         ],
@@ -9283,11 +8813,9 @@ export const UNITS: any[] = [
         hitDamage: [
           16, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [42, 39, 4, 4, 4, 4, 4, 89, 4, 4, 4, 4, 4, 4, 4],
-        offset: 8,
         base: 840,
         dualable: false
       }
@@ -9298,10 +8826,7 @@ export const UNITS: any[] = [
     names: {
       en: "Lightning",
       tw: "雷光",
-      kr: "라이트닝",
-      fr: "Lightning",
-      de: "Lightning",
-      es: "Lightning"
+      kr: "라이트닝"
     },
     abilities: [
       {
@@ -9407,7 +8932,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [
           "lightning"
         ],
@@ -9499,11 +9023,9 @@ export const UNITS: any[] = [
         hitDamage: [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [39, 14, 14, 34, 32, 42, 3, 7, 3, 24, 3, 31, 50, 3, 3, 4, 3, 3, 3, 3],
-        offset: 8,
         base: 410,
         dualable: false
       }
@@ -9533,7 +9055,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [
           "fire"
         ],
@@ -9543,8 +9064,7 @@ export const UNITS: any[] = [
         ignore: 0,
         damage: "magic",
         base: 8200,
-        framesList: [110],
-        offset: 8
+        framesList: [110]
       }
     ]
   },
@@ -9555,7 +9075,6 @@ export const UNITS: any[] = [
       tw: "八俁遠呂智",
       kr: "야마타노오로치",
       fr: "Hydragon",
-      de: "Orochi",
       es: "Hidra"
     },
     abilities: [
@@ -9593,14 +9112,12 @@ export const UNITS: any[] = [
         hitDamage: [
           8, 7, 8, 8, 7, 8, 7, 8, 7, 8, 8, 8, 8
         ],
-        castTime: 0,
         damage: "hybrid",
         elements: [
           "fire"
         ],
         debuff: [],
         framesList: [95, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 14],
-        offset: 8,
         base: 610,
         dualable: false
       }
@@ -9655,11 +9172,9 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        castTime: 0,
         elements: [],
         debuff: [],
         framesList: [149, 9, 9, 9, 9],
-        offset: 8,
         base: 390,
         dualable: false
       }
@@ -9670,10 +9185,7 @@ export const UNITS: any[] = [
     names: {
       en: "Lila",
       tw: "利拉",
-      kr: "리라",
-      fr: "Lila",
-      de: "Lila",
-      es: "Lila"
+      kr: "리라"
     },
     abilities: [
       {
@@ -9770,12 +9282,10 @@ export const UNITS: any[] = [
         hitDamage: [
           15, 10, 10, 10, 10, 10, 10, 10, 15
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [49, 16, 16, 12, 8, 15, 6, 3, 54],
-        offset: 8,
         base: 1240
       }
     ],
@@ -9798,7 +9308,6 @@ export const UNITS: any[] = [
       tw: "賽菲羅斯",
       kr: "세피로스",
       fr: "Séphiroth",
-      de: "Sephiroth",
       es: "Sefirot"
     },
     abilities: [
@@ -9815,7 +9324,6 @@ export const UNITS: any[] = [
         hitDamage: [
           33, 33, 34
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [22, 20, 30],
@@ -9917,7 +9425,6 @@ export const UNITS: any[] = [
         hitDamage: [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [0, 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6],
@@ -9959,7 +9466,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -9973,7 +9479,6 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [220],
-        offset: 8,
         base: 600,
         ignore: 50,
         type: "finish"
@@ -9985,10 +9490,7 @@ export const UNITS: any[] = [
     names: {
       en: "Heltich",
       tw: "海爾蒂克",
-      kr: "헬틱",
-      fr: "Heltich",
-      de: "Heltich",
-      es: "Heltich"
+      kr: "헬틱"
     },
     abilities: [
       {
@@ -10073,7 +9575,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         damage: "magic",
         elements: [
           "dark"
@@ -10081,7 +9582,6 @@ export const UNITS: any[] = [
         debuffs: [],
         dualable: false,
         framesList: [107],
-        offset: 8,
         base: 940,
         type: "finish"
       }
@@ -10093,10 +9593,7 @@ export const UNITS: any[] = [
     names: {
       en: "Killian",
       tw: "希里安",
-      kr: "킬리언",
-      fr: "Killian",
-      de: "Killian",
-      es: "Killian"
+      kr: "킬리언"
     },
     abilities: [
       {
@@ -10159,7 +9656,6 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 40
         ],
-        castTime: 0,
         elements: [
           "fire"
         ],
@@ -10171,7 +9667,6 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [145, 22, 58, 56],
-        offset: 8,
         base: 840
       }
     ],
@@ -10272,12 +9767,10 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [4],
-        offset: 8,
         base: 940,
         type: "finish"
       }
@@ -10377,9 +9870,7 @@ export const UNITS: any[] = [
           en: "Tornado",
           tw: "龍捲風",
           kr: "토네이도",
-          fr: "Tornade",
-          de: "Tornado",
-          es: "Tornado"
+          fr: "Tornade"
         },
         hitDamage: [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
@@ -10520,13 +10011,11 @@ export const UNITS: any[] = [
         hitDamage: [
           2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3
         ],
-        castTime: 188,
         damage: "magic",
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [188, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        offset: 16,
         base: 2000
       }
     ],
@@ -10556,7 +10045,6 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -10581,7 +10069,6 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -10606,7 +10093,6 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        castTime: 0,
         elements: [],
         debuffs: [
           {
@@ -10631,7 +10117,6 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 14, 16
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [6, 8, 8, 8, 8, 8, 8],
@@ -10652,12 +10137,10 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [182],
-        offset: 8,
         base: 570,
         ignore: 50,
         type: "finish"
@@ -10669,10 +10152,7 @@ export const UNITS: any[] = [
     names: {
       en: "Yang",
       tw: "楊",
-      kr: "얀",
-      fr: "Yang",
-      de: "Yang",
-      es: "Yang"
+      kr: "얀"
     },
     abilities: [
       {
@@ -10688,7 +10168,6 @@ export const UNITS: any[] = [
         hitDamage: [
           16, 16, 16, 16, 16, 20
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [2, 8, 8, 8, 8, 8],
@@ -10709,12 +10188,10 @@ export const UNITS: any[] = [
         hitDamage: [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [32, 3, 18, 18, 3, 23, 3, 20, 26, 3, 34, 4],
-        offset: 8,
         base: 840
       }
     ],
@@ -10732,10 +10209,7 @@ export const UNITS: any[] = [
     names: {
       en: "Lexa",
       tw: "萊基薩",
-      kr: "렉사",
-      fr: "Lexa",
-      de: "Lexa",
-      es: "Lexa"
+      kr: "렉사"
     },
     abilities: [
       {
@@ -10769,10 +10243,7 @@ export const UNITS: any[] = [
         names: {
           en: "Liber Magika",
           tw: "魔法之書",
-          kr: "리베르 마기카",
-          fr: "Liber Magika",
-          de: "Liber Magika",
-          es: "Liber Magika"
+          kr: "리베르 마기카"
         },
         hitDamage: [
           100
@@ -10794,9 +10265,7 @@ export const UNITS: any[] = [
           en: "Tornado",
           tw: "龍捲風",
           kr: "토네이도",
-          fr: "Tornade",
-          de: "Tornado",
-          es: "Tornado"
+          fr: "Tornade"
         },
         hitDamage: [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
@@ -10831,7 +10300,6 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        castTime: 0,
         damage: "magic",
         elements: [
           "wind"
@@ -10839,7 +10307,6 @@ export const UNITS: any[] = [
         debuffs: [],
         dualable: false,
         framesList: [200, 10, 10, 10, 10],
-        offset: 8,
         base: 740
       }
     ],
@@ -10869,7 +10336,6 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 0,
         elements: [],
         debuffs: [],
         framesList: [5],
@@ -10940,9 +10406,7 @@ export const UNITS: any[] = [
       en: "Mario Frigo",
       tw: "馬里奧·弗瑞格",
       kr: "마리오 프리고",
-      fr: "Mario Frego",
-      de: "Mario Frigo",
-      es: "Mario Frigo"
+      fr: "Mario Frego"
     },
     abilities: [
       {
@@ -10998,12 +10462,10 @@ export const UNITS: any[] = [
         hitDamage: [
           100
         ],
-        castTime: 76,
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [160],
-        offset: 16,
         base: 820,
         type: "finish"
       }
@@ -11023,10 +10485,7 @@ export const UNITS: any[] = [
     names: {
       en: "Rico Rodriguez",
       tw: "瑞科·羅德里格茲",
-      kr: "리코 로드리게즈",
-      fr: "Rico Rodriguez",
-      de: "Rico Rodriguez",
-      es: "Rico Rodríguez"
+      kr: "리코 로드리게즈"
     },
     abilities: [
       {
@@ -11063,12 +10522,10 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        castTime: 140,
         elements: [],
         debuffs: [],
         dualable: false,
         framesList: [93, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        offset: 16,
         base: 570,
         ignore: 50
       }
@@ -11079,10 +10536,7 @@ export const UNITS: any[] = [
     names: {
       en: "Ling",
       tw: "鈴",
-      kr: "링",
-      fr: "Ling",
-      de: "Ling",
-      es: "Ling"
+      kr: "링"
     },
     abilities: [
       {
@@ -11106,7 +10560,6 @@ export const UNITS: any[] = [
         debuffs: [],
         dualable: false,
         framesList: [190, 10, 10, 10, 10],
-        offset: 16,
         base: 620
       }
     ]
