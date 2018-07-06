@@ -210,10 +210,6 @@ export class JsonService {
     this.updateDebuffs(unitId, id, ability);
     this.unlockSkill(unitId, ability, dataId, level);
     this.isMultipleCastAbility(unitId, ability);
-
-    if (ability.attack_frames[0].length === 1) {
-      this.ffbeChainUnits[unitId].abilities[id].type = 'finish';
-    }
   }
 
   private updateFrames(unitId, id, ability) {
@@ -632,7 +628,7 @@ export class JsonService {
 
     if (Array.isArray(ability.strings.name)) {
       let englishName = ability.strings.name[0];
-      names.en = ability.strings.name[0] + (level > 0 ? ' + ' + level : '');
+      names['en'] = ability.strings.name[0] + (level > 0 ? ' + ' + level : '');
 
       ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
         if (ability.strings.name[index + 1] !== englishName) {
@@ -674,7 +670,7 @@ export class JsonService {
     let names = {};
 
     if (Array.isArray(ability.strings.name)) {
-      names.en = ability.strings.name[0] + ' (' + (id + 1) + ')';
+      names['en'] = ability.strings.name[0] + ' (' + (id + 1) + ')';
 
       ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
         if (ability.strings.name[index + 1] !== ability.strings.name[0]) {
@@ -691,8 +687,6 @@ export class JsonService {
       elements: [],
       debuffs: {},
       dualable: false,
-      ignore: 0,
-      type: 'finish',
       damage: 'physic'
     };
 

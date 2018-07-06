@@ -42,7 +42,12 @@ export class Ability {
     this.elements = ability.elements ? ability.elements : this.elements;
     this.debuffs = ability.debuffs ? ability.debuffs : this.debuffs;
 
-    this.type = ability.type ? ability.type : this.type;
+    if (ability.type) {
+      this.type = ability.type;
+    } else {
+      this.type = this.framesList.length > 1 ? this.type : 'finish';
+    }
+
     this.damage = ability.damage ? ability.damage : this.damage;
     this.magicType = typeof ability.magicType == 'string' ? ability.magicType : this.magicType;
 
