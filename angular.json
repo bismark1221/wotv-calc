@@ -94,14 +94,6 @@
               "**/node_modules/**"
             ]
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/server",
-            "main": "main.ts",
-            "tsConfig": "tsconfig.server.json"
-          }
         }
       }
     },

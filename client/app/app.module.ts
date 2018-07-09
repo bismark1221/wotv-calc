@@ -10,15 +10,15 @@ import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 import { ClipboardModule } from 'ngx-clipboard';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { LightboxModule } from 'angular2-lightbox';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrettyJsonModule } from 'angular2-prettyjson';
+import { NgxMdModule } from 'ngx-md';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { TooltipModule } from './tooltip/tooltip.module';
 import { SliderModule } from './slider/slider.module';
 import { Select2Module } from './select2/select2.module';
-import { NgxMdModule } from 'ngx-md';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -43,8 +43,6 @@ import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
 
-import { KeysPipe } from './pipes/keys.pipe';
-import { TypePipe } from './pipes/type.pipe';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AbsolutePipe } from './pipes/absolute.pipe';
 import { RoundPipe } from './pipes/round.pipe';
@@ -62,8 +60,6 @@ export function createTranslateLoader(http: HttpClient) {
     PageNotFoundComponent,
     ChainingComponent,
     ChainChartComponent,
-    KeysPipe,
-    TypePipe,
     CapitalizePipe,
     AbsolutePipe,
     RoundPipe,
@@ -99,7 +95,6 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    LightboxModule,
     NgbModule.forRoot(),
     PrettyJsonModule
   ],
