@@ -1,21 +1,7 @@
 import * as noUiSlider from 'nouislider';
-import {
-  Component,
-  ElementRef,
-  EventEmitter,
-  forwardRef,
-  Input,
-  OnInit,
-  OnChanges,
-  Output,
-  NgModule,
-} from '@angular/core';
+import { Component, ElementRef, EventEmitter, forwardRef, Input, OnInit, OnChanges, Output, NgModule } from '@angular/core';
 
-import {
-  ControlValueAccessor,
-  FormControl,
-  NG_VALUE_ACCESSOR
-} from '@angular/forms';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 import { DefaultFormatter } from './default.formatter';
 import { UiFormatter } from './uiformatter.interface';
