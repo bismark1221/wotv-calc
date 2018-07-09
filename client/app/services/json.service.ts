@@ -180,11 +180,12 @@ export class JsonService {
     this.ffbeChainUnits[unitId].abilities[id] = {
       dataId: Number(dataId),
       names: this.getNames(ability, level),
-      hitDamage: ability.attack_damage[0],
-      damage: null,
-      elements: [],
-      debuffs: []
+      damage: null
     };
+
+    if (ability.attack_damage[0].length > 1) {
+      this.ffbeChainUnits[unitId].abilities[id].hitDamage = ability.attack_damage[0];
+    }
 
     if (!lb) {
       this.ffbeChainUnits[unitId].abilities[id].castTime = ability.effect_frames[0][0];
@@ -196,6 +197,9 @@ export class JsonService {
 
     if (ability.element_inflict) {
       ability.element_inflict.forEach(element => {
+        if (!this.ffbeChainUnits[unitId].abilities[id].elements) {
+          this.ffbeChainUnits[unitId].abilities[id].elements = [];
+        }
         this.ffbeChainUnits[unitId].abilities[id].elements.push(element.toLowerCase());
       });
     }
@@ -417,6 +421,9 @@ export class JsonService {
     if (effect) {
       for (let i = 0; i <= 7; i++) {
         if (effect[i] !== 0) {
+          if (!this.ffbeChainUnits[unitId].abilities[id].debuffs) {
+            this.ffbeChainUnits[unitId].abilities[id].debuffs = [];
+          }
           this.ffbeChainUnits[unitId].abilities[id].debuffs.push({
             type: this.debuffElement[i],
             value: Math.abs(effect[i])
@@ -682,13 +689,15 @@ export class JsonService {
     this.ffbeChainUnits[summonId].abilities[id] = {
       dataId: Number(dataId),
       names: names,
-      hitDamage: ability.attack_damage[0],
       castTime: ability.effect_frames[0][0],
       elements: [],
-      debuffs: {},
       dualable: false,
       damage: 'physic'
     };
+
+    if (ability.attack_damage[0].length > 1) {
+      this.ffbeChainUnits[summonId].abilities[id].hitDamage = ability.attack_damage[0];
+    }
 
     let effect = this.findEffect(ability, 2, 1, 80);
     if (effect) {
