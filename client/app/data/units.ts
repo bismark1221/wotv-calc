@@ -9870,5 +9870,177 @@ export const UNITS: any[] = [
         base: 620
       }
     ]
+  },
+  {
+    id: 134,
+    names: {
+      en: "Aranea",
+      tw: "艾拉妮亞",
+      kr: "아라네아"
+    },
+    abilities: [
+      {
+        id: 215000606,
+        names: {
+          en: "Highwind",
+          tw: "制空強擊",
+          kr: "에어 슈페리오리티",
+          fr: "Suprématie aérienne",
+          de: "Lufthoheit",
+          es: "As del aire"
+        },
+        dualable: false,
+        framesList: [
+          151
+        ],
+        base: 600,
+        ignore: 50
+      }
+    ]
+  },
+  {
+    id: 135,
+    names: {
+      en: "Ukiyo",
+      tw: "浮世",
+      kr: "우키요"
+    },
+    abilities: [
+      {
+        id: 227346,
+        names: {
+          en: "Tengu Charm",
+          tw: "天狗之符",
+          kr: "텐구의 부적",
+          fr: "Amulette (tengu)",
+          de: "Tengu-Gebet",
+          es: "Amuleto tengu"
+        },
+        damage: "magic",
+        hitDamage: [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        castTime: 110,
+        elements: [
+          "wind"
+        ],
+        dualable: false,
+        framesList: [
+          122, 7, 7, 7, 7, 7, 7, 7, 17
+        ],
+        offset: 16,
+        base: 140,
+        debuffs: [
+          {
+            type: "wind",
+            value: 60
+          }
+        ]
+      },
+      {
+        id: 227347,
+        names: {
+          en: "Dragon Charm",
+          tw: "龍之符",
+          kr: "용의 부적",
+          fr: "Amulette (dragon)",
+          de: "Drachen-Gebet",
+          es: "Amuleto dragoniano"
+        },
+        damage: "magic",
+        castTime: 110,
+        dualable: false,
+        framesList: [
+          112, 6, 6, 6, 6
+        ],
+        offset: 16,
+        base: 250
+      },
+      {
+        id: 227351,
+        names: {
+          en: "Ukiyo's Light Spell",
+          tw: "浮世式陽咒彈",
+          kr: "우키요식 주술탄[양]",
+          fr: "Sort de lumière d'Ukiyo",
+          de: "Ukiyos Lichtspruch",
+          es: "Hechizo lumínico de Ukiyo"
+        },
+        damage: "magic",
+        hitDamage: [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        castTime: 40,
+        elements: [
+          "light"
+        ],
+        dualable: false,
+        framesList: [
+          72, 10, 10, 10, 10, 10, 10, 10
+        ],
+        offset: 16,
+        base: 450
+      },
+      {
+        id: 227350,
+        names: {
+          en: "Tsukumo's Transformation",
+          tw: "付喪變化",
+          kr: "츠쿠모 변화",
+          fr: "Transformation de Tsukumo",
+          de: "Tsukumo-Verwandlung",
+          es: "Transformación de Tsukumo"
+        },
+        damage: "magic",
+        castTime: 110,
+        dualable: false,
+        framesList: [
+          150
+        ],
+        offset: 16,
+        base: 300
+      },
+      {
+        id: 507861,
+        names: {
+          en: "Demon Tsukumo",
+          tw: "鬼付喪",
+          kr: "귀신 츠쿠모",
+          fr: "Tsukumo démoniaque",
+          de: "Dämonischer Tsukumo",
+          es: "Tsukumo demoníaco"
+        },
+        damage: "magic",
+        castTime: 40,
+        dualable: false,
+        framesList: [
+          42, 8, 8, 8, 11
+        ],
+        offset: 16,
+        base: 800,
+        ignore: 25
+      },
+      {
+        id: 100016606,
+        names: {
+          en: "Tsukumo's Descent",
+          tw: "付喪降臨",
+          kr: "츠쿠모 강림",
+          fr: "Attaque de Tsukumo",
+          de: "Tsukomos Herabkunft",
+          es: "Descenso de Tsukumo"
+        },
+        damage: "magic",
+        elements: [
+          "light",
+          "dark"
+        ],
+        dualable: false,
+        framesList: [
+          180, 66, 10, 10, 10
+        ],
+        base: 1380
+      }
+    ]
   }
 ];
