@@ -190,6 +190,29 @@
     "family": "42-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4",
     "units": [
       {
+        "id": 100000503,
+        "names": {
+          "en": "Lid",
+          "tw": "里德",
+          "kr": "리드"
+        },
+        "abilities": [
+          {
+            "id": 501050,
+            "names": {
+              "en": "Running Fire + 2",
+              "tw": "牙式連發火槍 + 2",
+              "kr": "아식연발총 + 2",
+              "fr": "Tirs nourris + 2",
+              "de": "Lauffeuer + 2",
+              "es": "Bioametralladora + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100007505,
         "names": {
           "en": "Lunera",
@@ -206,42 +229,6 @@
               "fr": "Rayon auréole + 2",
               "de": "Koronastrahl + 2",
               "es": "Rayo áureo + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100009105,
-        "names": {
-          "en": "Loren",
-          "tw": "洛倫",
-          "kr": "로렌"
-        },
-        "abilities": [
-          {
-            "id": 227164,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100012605,
-        "names": {
-          "en": "Kunshira",
-          "tw": "庫西拉",
-          "kr": "쿤시라"
-        },
-        "abilities": [
-          {
-            "id": 227610,
-            "names": {
-              "en": "null"
             },
             "offset": 16,
             "castTime": 40
@@ -836,27 +823,6 @@
         ]
       },
       {
-        "id": 100015405,
-        "names": {
-          "en": "Nalu",
-          "tw": null,
-          "kr": "나루",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 226913,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 20
-          }
-        ]
-      },
-      {
         "id": 207001005,
         "names": {
           "en": "Sephiroth",
@@ -937,24 +903,6 @@
               "fr": "Attaque éclair",
               "de": "Rapidschlag",
               "es": "Golpe rápido"
-            },
-            "offset": 16,
-            "castTime": 20
-          }
-        ]
-      },
-      {
-        "id": 254000205,
-        "names": {
-          "en": "Queen",
-          "tw": "葵因",
-          "kr": "퀸"
-        },
-        "abilities": [
-          {
-            "id": 226751,
-            "names": {
-              "en": "null"
             },
             "offset": 16,
             "castTime": 20
@@ -1309,140 +1257,6 @@
     ]
   },
   {
-    "family": "70-6-6-6-6-6-6-6",
-    "units": [
-      {
-        "id": 100010005,
-        "names": {
-          "en": "Raegen",
-          "tw": "雷根",
-          "kr": "레겐"
-        },
-        "abilities": [
-          {
-            "id": 228081,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100011705,
-        "names": {
-          "en": "Pyro Glacial Lasswell",
-          "tw": "冰炎騎士拉斯韋爾",
-          "kr": "빙염의 기사 라스웰",
-          "fr": "Lasswell flammes gelées",
-          "de": "Eisflammenritter Lasswell",
-          "es": "Lasswell pirogélido"
-        },
-        "abilities": [
-          {
-            "id": 227561,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 207001005,
-        "names": {
-          "en": "Sephiroth",
-          "tw": "賽菲羅斯",
-          "kr": "세피로스",
-          "fr": "Séphiroth",
-          "es": "Sefirot"
-        },
-        "abilities": [
-          {
-            "id": 228051,
-            "names": {
-              "en": "Immanence",
-              "tw": "震天動地",
-              "kr": "진천동지",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-7-7-7-7-7",
-    "units": [
-      {
-        "id": 100008804,
-        "names": {
-          "en": "Moogle",
-          "tw": "莫古利",
-          "kr": "모그리",
-          "fr": "Mog",
-          "de": "Mogry",
-          "es": "Moguri"
-        },
-        "abilities": [
-          {
-            "id": 211300,
-            "names": {
-              "en": "Mog Barrage",
-              "tw": "莫古亂突刺",
-              "kr": "모그 혼란",
-              "fr": "Pluie de coups mog",
-              "de": "Mogry-Sperrfeuer",
-              "es": "Ráfaga moguri"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 707172,
-            "names": {
-              "en": "Mog Barrage + 1",
-              "tw": "莫古亂突刺 + 1",
-              "kr": "모그 혼란 + 1",
-              "fr": "Pluie de coups mog + 1",
-              "de": "Mogry-Sperrfeuer + 1",
-              "es": "Ráfaga moguri + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100016205,
-        "names": {
-          "en": "Hyoh",
-          "tw": null,
-          "kr": "효우",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227281,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "70-7-5-7-7-7-7",
     "units": [
       {
@@ -1495,98 +1309,6 @@
         ]
       },
       {
-        "id": 100011705,
-        "names": {
-          "en": "Pyro Glacial Lasswell",
-          "tw": "冰炎騎士拉斯韋爾",
-          "kr": "빙염의 기사 라스웰",
-          "fr": "Lasswell flammes gelées",
-          "de": "Eisflammenritter Lasswell",
-          "es": "Lasswell pirogélido"
-        },
-        "abilities": [
-          {
-            "id": 227560,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100013305,
-        "names": {
-          "en": "Emperor Shera",
-          "tw": "榭拉皇帝",
-          "kr": "시엘라 황제",
-          "fr": "Empereur Shera",
-          "de": "Imperator Shera",
-          "es": "Emperador Shera"
-        },
-        "abilities": [
-          {
-            "id": 228003,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100016205,
-        "names": {
-          "en": "Hyoh",
-          "tw": null,
-          "kr": "효우",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227282,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 227283,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 207000305,
-        "names": {
-          "en": "Tifa",
-          "tw": null,
-          "kr": "티파",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227836,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
         "id": 207001005,
         "names": {
           "en": "Sephiroth",
@@ -1605,27 +1327,6 @@
               "fr": "Affliction céleste",
               "de": "Samsara-Spalter",
               "es": "Furia transmigratoria"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 211000805,
-        "names": {
-          "en": "Livid Shantotto",
-          "tw": null,
-          "kr": "분노한 샨토토",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227192,
-            "names": {
-              "en": "null"
             },
             "offset": 16,
             "castTime": 40
@@ -1741,27 +1442,6 @@
         ]
       },
       {
-        "id": 306000905,
-        "names": {
-          "en": "Estark",
-          "tw": "艾斯塔克",
-          "kr": "에스타크",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 226981,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
         "id": 401004104,
         "names": {
           "en": "Mario Frigo",
@@ -1845,40 +1525,6 @@
     "family": "42-7-7-7-7-7-7-7-7-7-7-7",
     "units": [
       {
-        "id": 100009105,
-        "names": {
-          "en": "Loren",
-          "tw": "洛倫",
-          "kr": "로렌"
-        },
-        "abilities": [
-          {
-            "id": 227162,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 227163,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 227161,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
         "id": 100012104,
         "names": {
           "en": "Emilia",
@@ -1896,56 +1542,6 @@
               "fr": "Chute ralentie",
               "de": "Gebremster Fall",
               "es": "Caída ralentizada"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100016403,
-        "names": {
-          "en": "Domino",
-          "tw": null,
-          "kr": "도미노",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227310,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100016704,
-        "names": {
-          "en": "Macmedi",
-          "tw": null,
-          "kr": "마크메디",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227670,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 227671,
-            "names": {
-              "en": "null"
             },
             "offset": 16,
             "castTime": 40
@@ -2128,46 +1724,6 @@
             },
             "offset": 16,
             "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 306001104,
-        "names": {
-          "en": "Überkilling Machine",
-          "tw": "殺戮魔神",
-          "kr": "킬러 마징가",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227051,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 302005700,
-        "names": {
-          "en": "Hell Sabre",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 226996,
-            "names": {
-              "en": "null"
-            }
           }
         ]
       }
@@ -2363,31 +1919,6 @@
               "fr": "Lame briseterre",
               "de": "Erdzerschmetterer",
               "es": "Hoja sacudetierra"
-            }
-          }
-        ]
-      },
-      {
-        "id": 100015604,
-        "names": {
-          "en": "Shinju",
-          "tw": null,
-          "kr": "신쥬",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 507515,
-            "names": {
-              "en": "null"
-            }
-          },
-          {
-            "id": 507514,
-            "names": {
-              "en": "null"
             }
           }
         ]
@@ -2627,83 +2158,6 @@
               "fr": "Je m'en occupe !",
               "de": "Ich kümmer mich drum!",
               "es": "¡Yo me encargo!"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-8-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 209000103,
-        "names": {
-          "en": "Zidane",
-          "tw": "吉坦",
-          "kr": "지탄",
-          "fr": "Djidane",
-          "es": "Yitán"
-        },
-        "abilities": [
-          {
-            "id": 217430,
-            "names": {
-              "en": "Free Energy",
-              "tw": "能量解放",
-              "kr": "자유로운 힘",
-              "fr": "Energétik",
-              "de": "Kostenlose Energie",
-              "es": "Energía libre"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 703770,
-            "names": {
-              "en": "Free Energy + 1",
-              "tw": "能量解放 + 1",
-              "kr": "자유로운 힘 + 1",
-              "fr": "Energétik + 1",
-              "de": "Kostenlose Energie + 1",
-              "es": "Energía libre + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 703780,
-            "names": {
-              "en": "Free Energy + 2",
-              "tw": "能量解放 + 2",
-              "kr": "자유로운 힘 + 2",
-              "fr": "Energétik + 2",
-              "de": "Kostenlose Energie + 2",
-              "es": "Energía libre + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 314001500,
-        "names": {
-          "en": "Summer Whip",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 226890,
-            "names": {
-              "en": "null"
             },
             "offset": 16,
             "castTime": 40
@@ -4454,105 +3908,6 @@
     ]
   },
   {
-    "family": "0-14-8-8-8-8-8-8-8-8-8-8-8-8-8-6",
-    "units": [
-      {
-        "id": 100007705,
-        "names": {
-          "en": "Veritas of the Dark",
-          "tw": "常暗之維利亞斯",
-          "kr": "영원한 어둠의 베리어스",
-          "fr": "Veritas des Ténèbres",
-          "de": "Veritas der Finstere",
-          "es": "Veritas el tenebroso"
-        },
-        "abilities": [
-          {
-            "id": 226871,
-            "names": {
-              "en": "null"
-            }
-          }
-        ]
-      },
-      {
-        "id": 207001005,
-        "names": {
-          "en": "Sephiroth",
-          "tw": "賽菲羅斯",
-          "kr": "세피로스",
-          "fr": "Séphiroth",
-          "es": "Sefirot"
-        },
-        "abilities": [
-          {
-            "id": 224540,
-            "names": {
-              "en": "Heaven's Light",
-              "tw": "天照",
-              "kr": "천국의 빛",
-              "fr": "Lumière des cieux",
-              "de": "Himmelslicht",
-              "es": "Luz del cielo"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-15-15-15-15",
-    "units": [
-      {
-        "id": 100007904,
-        "names": {
-          "en": "Veritas of the Waters",
-          "tw": "水華之維利亞斯",
-          "kr": "물꽃의 베리어스",
-          "fr": "Veritas des Mers",
-          "de": "Veritas der Meere",
-          "es": "Veritas el marino"
-        },
-        "abilities": [
-          {
-            "id": 501870,
-            "names": {
-              "en": "Aqua Prison",
-              "tw": "水業牢籠",
-              "kr": "물의 감옥",
-              "fr": "Prison aquatique",
-              "de": "Aquagefängnis",
-              "es": "Prisión acuática"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 207000805,
-        "names": {
-          "en": "Vincent",
-          "tw": null,
-          "kr": "빈센트",
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 227851,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "52-20-20-20-20",
     "units": [
       {
@@ -4598,22 +3953,6 @@
               "fr": "Onde chaotique",
               "de": "Chaoswelle",
               "es": "Ola caótica"
-            },
-            "offset": 16,
-            "castTime": 50
-          },
-          {
-            "id": 226852,
-            "names": {
-              "en": "null"
-            },
-            "offset": 16,
-            "castTime": 50
-          },
-          {
-            "id": 226853,
-            "names": {
-              "en": "null"
             },
             "offset": 16,
             "castTime": 50

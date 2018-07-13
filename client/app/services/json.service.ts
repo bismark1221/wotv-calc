@@ -812,7 +812,7 @@ export class JsonService {
   private filterRealUsableSkills() {
     for (let i = this.ffbeChainUnits.length - 1; i >= 0; i--) {
       for (let j = this.ffbeChainUnits[i].abilities.length - 1; j >= 0; j--) {
-        if (!this.ffbeChainUnits[i].abilities[j].damage) { //this.ffbeChainUnits[i].abilities[j].firstHit === -1 TODO !!!!!
+        if (!this.ffbeChainUnits[i].abilities[j].damage || this.ffbeChainUnits[i].abilities[j].names.en == "null") { //this.ffbeChainUnits[i].abilities[j].firstHit === -1 TODO !!!!!
           this.ffbeChainUnits[i].abilities.splice(j, 1);
         } else  {
           if (this.ffbeChainUnits[i].abilities[j].damage === "physic") {
