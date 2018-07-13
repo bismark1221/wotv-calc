@@ -10042,5 +10042,207 @@ export const UNITS: any[] = [
         base: 1380
       }
     ]
+  },
+  {
+    id: 136,
+    names: {
+      en: "Zile",
+      tw: "扎伊爾",
+      kr: "자일"
+    },
+    abilities: [
+      {
+        id: 226350,
+        names: {
+          en: "Heavy Shell",
+          tw: "重炮彈",
+          kr: "중포탄",
+          fr: "Carapace lourde",
+          de: "Schwere Artilleriegranaten",
+          es: "Cartucho pesado"
+        },
+        castTime: 75,
+        framesList: [
+          145
+        ],
+        offset: 16,
+        base: 150,
+        ignore: 50
+      },
+      {
+        id: 507130,
+        names: {
+          en: "Powerful Shell",
+          tw: "強力炮彈",
+          kr: "강력 포탄",
+          fr: "Balle puissante",
+          de: "Kraftprojektil",
+          es: "Escudo potente"
+        },
+        castTime: 75,
+        framesList: [
+          110
+        ],
+        offset: 16,
+        base: 825
+      },
+      {
+        id: 507140,
+        names: {
+          en: "Super Shell",
+          tw: "超強力炮彈",
+          kr: "초강력 포탄",
+          fr: "Super balle",
+          de: "Super Kraftprojektil",
+          es: "Superescudo"
+        },
+        castTime: 75,
+        framesList: [
+          135
+        ],
+        offset: 16,
+        base: 1500
+      },
+      {
+        id: 507150,
+        names: {
+          en: "Devastating Shell",
+          tw: "激烈強力炮彈",
+          kr: "격렬 강력 포탄",
+          fr: "Balle dévastatrice",
+          de: "Verheerendes Kraftprojektil",
+          es: "Escudo devastador"
+        },
+        castTime: 75,
+        framesList: [
+          135
+        ],
+        offset: 16,
+        base: 2250
+      },
+      {
+        id: 507170,
+        names: {
+          en: "Miraculous Shell",
+          tw: "填充火藥過多的奇蹟大爆炸彈",
+          kr: "화약 오버 기적의 대폭발탄",
+          fr: "Bouclier miraculeux",
+          de: "Übervolles Wundersprenggeschoss",
+          es: "Escudo milagroso"
+        },
+        castTime: 75,
+        framesList: [
+          275
+        ],
+        offset: 16,
+        base: 2650
+      },
+      {
+        id: 100015206,
+        names: {
+          en: "Knightly Crossfire!",
+          tw: "騎士團十字炮火！",
+          kr: "기사단식 십자포화!",
+          fr: "Passe d'armes chevaleresque !",
+          de: "Ritterliches Kreuzfeuer!",
+          es: "¡Fuego cruzado entre caballeros!"
+        },
+        hitDamage: [
+          20, 20, 60
+        ],
+        dualable: false,
+        framesList: [
+          286, 30, 30
+        ],
+        base: 1720
+      }
+    ]
+  },
+  {
+    id: 137,
+    names: {
+      en: "Raegen",
+      tw: "雷根",
+      kr: "레겐"
+    },
+    abilities: [
+      {
+        id: 226130,
+        names: {
+          en: "Hero's Edge",
+          tw: "英雄之刃",
+          kr: "영웅의 검날",
+          fr: "Lame de héros",
+          de: "Heldenklinge",
+          es: "Filo del héroe"
+        },
+        hitDamage: [
+          20, 20, 60
+        ],
+        framesList: [
+          8, 13, 22
+        ],
+        base: 240
+      },
+      {
+        id: 226120,
+        names: {
+          en: "Blades of Azure Crimson",
+          tw: "緋蒼之劍",
+          kr: "비창의 검",
+          fr: "Lames azur carmin",
+          de: "Purpurazurklingen",
+          es: "Hojas azul enrojecido"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 40,
+        framesList: [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        offset: 16,
+        base: 480,
+        debuffs: [
+          {
+            type: "fire",
+            value: 60
+          },
+          {
+            type: "ice",
+            value: 60
+          }
+        ]
+      },
+      {
+        id: 100010006,
+        names: {
+          en: "Darkness Purging Blades of Azure Crimson",
+          tw: "斬暗緋蒼之劍",
+          kr: "어둠을 떨치는 비창의 검",
+          fr: "Lames azur carmin briseuses de ténèbres",
+          de: "Dunkelheit bannende Purpurazurklingen",
+          es: "Hojas azul enrojecido de oscuridad purgadora"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        dualable: false,
+        framesList: [
+          22, 10, 10, 10, 10, 10, 13
+        ],
+        base: 1200,
+        debuffs: [
+          {
+            type: "fire",
+            value: 100
+          },
+          {
+            type: "ice",
+            value: 100
+          }
+        ]
+      }
+    ]
   }
 ];

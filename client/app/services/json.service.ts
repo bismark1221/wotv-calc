@@ -171,7 +171,7 @@ export class JsonService {
       }
     })
 
-    if (exist) {
+    if (exist || !ability) {
       return;
     }
 
@@ -621,6 +621,15 @@ export class JsonService {
     }
 
     effect = this.findEffect(ability, 0, 3, 29);
+    if (effect) {
+      for (let i = 0; i < effect.length; i++) {
+        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
+          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0], level);
+        }
+      }
+    }
+
+    effect = this.findEffect(ability, 0, 0, 29);
     if (effect) {
       for (let i = 0; i < effect.length; i++) {
         if (Array.isArray(effect[i]) && effect[i][0] !== 0) {

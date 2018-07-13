@@ -7,10 +7,7 @@
         "names": {
           "en": "Setzer",
           "tw": "塞策",
-          "kr": "셋쳐",
-          "fr": "Setzer",
-          "de": "Setzer",
-          "es": "Setzer"
+          "kr": "셋쳐"
         },
         "abilities": [
           {
@@ -59,10 +56,7 @@
         "names": {
           "en": "Yun",
           "tw": "雲",
-          "kr": "윤",
-          "fr": "Yun",
-          "de": "Yun",
-          "es": "Yun"
+          "kr": "윤"
         },
         "abilities": [
           {
@@ -103,10 +97,7 @@
         "names": {
           "en": "Jake",
           "tw": "傑科",
-          "kr": "제이크",
-          "fr": "Jake",
-          "de": "Jake",
-          "es": "Jake"
+          "kr": "제이크"
         },
         "abilities": [
           {
@@ -116,11 +107,8 @@
               "tw": "革命之雷",
               "kr": "혁명의 번개",
               "fr": "Révolution",
-              "de": "Revolution",
               "es": "Rayo revolucionario"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -131,7 +119,6 @@
           "tw": "牛仔傑科",
           "kr": "카우보이 제이크",
           "fr": "Jake cowboy",
-          "de": "Cowboy Jake",
           "es": "Jake vaquero"
         },
         "abilities": [
@@ -144,9 +131,7 @@
               "fr": "Allez, tu tentes ta chance ou pas ?",
               "de": "Ist heute dein Glückstag, Punk?",
               "es": "¿Te sientes afortunado, zascandil?"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -161,9 +146,7 @@
           "en": "Reberta",
           "tw": "蕾貝爾塔",
           "kr": "리베르타",
-          "fr": "Réberta",
-          "de": "Reberta",
-          "es": "Reberta"
+          "fr": "Réberta"
         },
         "abilities": [
           {
@@ -175,9 +158,7 @@
               "fr": "Pulsion destructrice",
               "de": "Zerstörerischer Stoß",
               "es": "Impulso destructor"
-            },
-            "offset": 16,
-            "castTime": 10
+            }
           }
         ]
       },
@@ -187,9 +168,7 @@
           "en": "Reberta",
           "tw": "蕾貝爾塔",
           "kr": "리베르타",
-          "fr": "Réberta",
-          "de": "Reberta",
-          "es": "Reberta"
+          "fr": "Réberta"
         },
         "abilities": [
           {
@@ -201,9 +180,71 @@
               "fr": "Coup destructeur",
               "de": "Zerstörungsstoß",
               "es": "Estoque demoledor"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4",
+    "units": [
+      {
+        "id": 100007505,
+        "names": {
+          "en": "Lunera",
+          "tw": "盧內拉",
+          "kr": "루네라"
+        },
+        "abilities": [
+          {
+            "id": 704540,
+            "names": {
+              "en": "Aureole Ray + 2",
+              "tw": "日輪射線 + 2",
+              "kr": "광환의 광선 + 2",
+              "fr": "Rayon auréole + 2",
+              "de": "Koronastrahl + 2",
+              "es": "Rayo áureo + 2"
             },
             "offset": 16,
-            "castTime": 10
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌"
+        },
+        "abilities": [
+          {
+            "id": 227164,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100012605,
+        "names": {
+          "en": "Kunshira",
+          "tw": "庫西拉",
+          "kr": "쿤시라"
+        },
+        "abilities": [
+          {
+            "id": 227610,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }
@@ -217,10 +258,7 @@
         "names": {
           "en": "Medius",
           "tw": "梅迪亞斯",
-          "kr": "메디우스",
-          "fr": "Medius",
-          "de": "Medius",
-          "es": "Medius"
+          "kr": "메디우스"
         },
         "abilities": [
           {
@@ -243,10 +281,7 @@
         "names": {
           "en": "Carrie",
           "tw": "卡里",
-          "kr": "캐리",
-          "fr": "Carrie",
-          "de": "Carrie",
-          "es": "Carrie"
+          "kr": "캐리"
         },
         "abilities": [
           {
@@ -269,10 +304,7 @@
         "names": {
           "en": "Conrad",
           "tw": "孔拉德",
-          "kr": "콘래드",
-          "fr": "Conrad",
-          "de": "Conrad",
-          "es": "Conrad"
+          "kr": "콘래드"
         },
         "abilities": [
           {
@@ -295,10 +327,7 @@
         "names": {
           "en": "Edgar",
           "tw": "埃德加",
-          "kr": "에드가",
-          "fr": "Edgar",
-          "de": "Edgar",
-          "es": "Edgar"
+          "kr": "에드가"
         },
         "abilities": [
           {
@@ -321,10 +350,7 @@
         "names": {
           "en": "Prompto",
           "tw": "普羅恩普特",
-          "kr": "프롬프토",
-          "fr": "Prompto",
-          "de": "Prompto",
-          "es": "Prompto"
+          "kr": "프롬프토"
         },
         "abilities": [
           {
@@ -350,12 +376,7 @@
       {
         "id": 310000105,
         "names": {
-          "en": "2B",
-          "tw": "2B",
-          "kr": "2B",
-          "fr": "2B",
-          "de": "2B",
-          "es": "2B"
+          "en": "2B"
         },
         "abilities": [
           {
@@ -367,9 +388,7 @@
               "fr": "Lances chargées",
               "de": "Speer aufladen",
               "es": "Cargar lanza"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 503930,
@@ -380,9 +399,7 @@
               "fr": "R050: Lance",
               "de": "R050: Speer",
               "es": "R050: Lanza"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -448,10 +465,7 @@
         "names": {
           "en": "Orlandeau",
           "tw": "奧爾蘭多",
-          "kr": "올란두",
-          "fr": "Orlandeau",
-          "de": "Orlandeau",
-          "es": "Orlandeau"
+          "kr": "올란두"
         },
         "abilities": [
           {
@@ -472,6 +486,57 @@
     ]
   },
   {
+    "family": "62-5-10-10-10-10",
+    "units": [
+      {
+        "id": 253000105,
+        "names": {
+          "en": "Ramza",
+          "tw": "拉姆薩",
+          "kr": "람자"
+        },
+        "abilities": [
+          {
+            "id": 226693,
+            "names": {
+              "en": "Northern Apprentice",
+              "tw": "見習北天劍",
+              "kr": "견습 북천검",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 253000205,
+        "names": {
+          "en": "Delita",
+          "tw": "迪利塔",
+          "kr": "디리타"
+        },
+        "abilities": [
+          {
+            "id": 226693,
+            "names": {
+              "en": "Northern Apprentice",
+              "tw": "見習北天劍",
+              "kr": "견습 북천검",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "72-5-5-5-5-20",
     "units": [
       {
@@ -479,10 +544,7 @@
         "names": {
           "en": "Soleil",
           "tw": "索蕾莜",
-          "kr": "솔레이유",
-          "fr": "Soleil",
-          "de": "Soleil",
-          "es": "Soleil"
+          "kr": "솔레이유"
         },
         "abilities": [
           {
@@ -505,10 +567,7 @@
         "names": {
           "en": "Penelo",
           "tw": "潘妮蘿",
-          "kr": "판네로",
-          "fr": "Penelo",
-          "de": "Penelo",
-          "es": "Penelo"
+          "kr": "판네로"
         },
         "abilities": [
           {
@@ -551,9 +610,7 @@
               "fr": "Canon magitech",
               "de": "Magiegeschütz",
               "es": "Cañón mágico"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -562,10 +619,7 @@
         "names": {
           "en": "Wedge",
           "tw": "魏吉",
-          "kr": "웨지",
-          "fr": "Wedge",
-          "de": "Wedge",
-          "es": "Wedge"
+          "kr": "웨지"
         },
         "abilities": [
           {
@@ -577,9 +631,7 @@
               "fr": "Giga rayon gelant",
               "de": "Giga-Eisstrahl",
               "es": "Gigarrayo Hielo"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -588,10 +640,7 @@
         "names": {
           "en": "Biggs",
           "tw": "比格斯",
-          "kr": "빅스",
-          "fr": "Biggs",
-          "de": "Biggs",
-          "es": "Biggs"
+          "kr": "빅스"
         },
         "abilities": [
           {
@@ -603,9 +652,7 @@
               "fr": "Giga rayon brûlant",
               "de": "Giga-Feuerstrahl",
               "es": "Gigarrayo Piro"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -620,9 +667,7 @@
           "en": "Amelia",
           "tw": "艾美利亞",
           "kr": "아멜리아",
-          "fr": "Amélia",
-          "de": "Amelia",
-          "es": "Amelia"
+          "fr": "Amélia"
         },
         "abilities": [
           {
@@ -671,10 +716,7 @@
         "names": {
           "en": "Prompto",
           "tw": "普羅恩普特",
-          "kr": "프롬프토",
-          "fr": "Prompto",
-          "de": "Prompto",
-          "es": "Prompto"
+          "kr": "프롬프토"
         },
         "abilities": [
           {
@@ -702,10 +744,7 @@
         "names": {
           "en": "Wakka",
           "tw": "瓦卡",
-          "kr": "와카",
-          "fr": "Wakka",
-          "de": "Wakka",
-          "es": "Wakka"
+          "kr": "와카"
         },
         "abilities": [
           {
@@ -717,9 +756,7 @@
               "fr": "Combos",
               "de": "Angriffsrollen",
               "es": "Ruleta de chutes"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -728,10 +765,7 @@
         "names": {
           "en": "Orran",
           "tw": "奧蘭",
-          "kr": "오란",
-          "fr": "Orran",
-          "de": "Orran",
-          "es": "Orran"
+          "kr": "오란"
         },
         "abilities": [
           {
@@ -743,9 +777,7 @@
               "fr": "Stase céleste",
               "de": "Himmlische Stase",
               "es": "Estasis celestial"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -759,10 +791,7 @@
         "names": {
           "en": "Camille",
           "tw": "卡米爾",
-          "kr": "카밀",
-          "fr": "Camille",
-          "de": "Camille",
-          "es": "Camille"
+          "kr": "카밀"
         },
         "abilities": [
           {
@@ -807,14 +836,70 @@
         ]
       },
       {
+        "id": 100015405,
+        "names": {
+          "en": "Nalu",
+          "tw": null,
+          "kr": "나루",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 226913,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
+        "id": 207001005,
+        "names": {
+          "en": "Sephiroth",
+          "tw": "賽菲羅斯",
+          "kr": "세피로스",
+          "fr": "Séphiroth",
+          "es": "Sefirot"
+        },
+        "abilities": [
+          {
+            "id": 228052,
+            "names": {
+              "en": "Light Eclipse",
+              "tw": "蝕光",
+              "kr": "빛의 잠식",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 20
+          },
+          {
+            "id": 228053,
+            "names": {
+              "en": "Descent into Darkness",
+              "tw": "墮暗",
+              "kr": "암흑 타락",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
         "id": 210000105,
         "names": {
           "en": "Tidus",
           "tw": "提達",
-          "kr": "티더",
-          "fr": "Tidus",
-          "de": "Tidus",
-          "es": "Tidus"
+          "kr": "티더"
         },
         "abilities": [
           {
@@ -833,12 +918,12 @@
           {
             "id": 702950,
             "names": {
-              "en": "Quick Hit + 1",
-              "tw": "快捷進擊 + 1",
-              "kr": "퀵 트릭 + 1",
-              "fr": "Attaque éclair + 1",
-              "de": "Rapidschlag + 1",
-              "es": "Golpe rápido + 1"
+              "en": "Quick Hit",
+              "tw": "快捷進擊",
+              "kr": "퀵 트릭",
+              "fr": "Attaque éclair",
+              "de": "Rapidschlag",
+              "es": "Golpe rápido"
             },
             "offset": 16,
             "castTime": 20
@@ -846,12 +931,30 @@
           {
             "id": 702960,
             "names": {
-              "en": "Quick Hit + 2",
-              "tw": "快捷進擊 + 2",
-              "kr": "퀵 트릭 + 2",
-              "fr": "Attaque éclair + 2",
-              "de": "Rapidschlag + 2",
-              "es": "Golpe rápido + 2"
+              "en": "Quick Hit",
+              "tw": "快捷進擊",
+              "kr": "퀵 트릭",
+              "fr": "Attaque éclair",
+              "de": "Rapidschlag",
+              "es": "Golpe rápido"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
+        "id": 254000205,
+        "names": {
+          "en": "Queen",
+          "tw": "葵因",
+          "kr": "퀸"
+        },
+        "abilities": [
+          {
+            "id": 226751,
+            "names": {
+              "en": "null"
             },
             "offset": 16,
             "castTime": 20
@@ -868,10 +971,7 @@
         "names": {
           "en": "Lila",
           "tw": "利拉",
-          "kr": "리라",
-          "fr": "Lila",
-          "de": "Lila",
-          "es": "Lila"
+          "kr": "리라"
         },
         "abilities": [
           {
@@ -944,6 +1044,60 @@
     ]
   },
   {
+    "family": "42-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+    "units": [
+      {
+        "id": 100011905,
+        "names": {
+          "en": "Heavenly Technician Lid",
+          "tw": "星虹技師里德",
+          "kr": "성홍의 기술자 리드",
+          "fr": "Lid, ingénieure cosmique",
+          "de": "Himmlische Technikerin Lid",
+          "es": "Lid ingeniera cósmica"
+        },
+        "abilities": [
+          {
+            "id": 506190,
+            "names": {
+              "en": "Running Fire+",
+              "tw": "牙式連發火槍·改",
+              "kr": "개량형 아식연발총",
+              "fr": "Tirs nourris +",
+              "de": "Lauffeuer+",
+              "es": "Bioametralladora+"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 215000705,
+        "names": {
+          "en": "Prompto",
+          "tw": "普羅恩普特",
+          "kr": "프롬프토"
+        },
+        "abilities": [
+          {
+            "id": 508073,
+            "names": {
+              "en": "Rapidus",
+              "tw": "小號",
+              "kr": "투바",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "46-6-6-6-6-7",
     "units": [
       {
@@ -951,10 +1105,7 @@
         "names": {
           "en": "Toby",
           "tw": "托比",
-          "kr": "토비",
-          "fr": "Toby",
-          "de": "Toby",
-          "es": "Toby"
+          "kr": "토비"
         },
         "abilities": [
           {
@@ -1044,9 +1195,60 @@
               "fr": "Champ d'Ouragan",
               "de": "Tornadoallee",
               "es": "Callejón huracanado"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "46-6-6-6-6-13",
+    "units": [
+      {
+        "id": 100012005,
+        "names": {
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
+        },
+        "abilities": [
+          {
+            "id": 222950,
+            "names": {
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
+            }
+          }
+        ]
+      },
+      {
+        "id": 100015005,
+        "names": {
+          "en": "Vagrant Knight Rain",
+          "tw": "彷徨騎士雷因",
+          "kr": "방황의 기사 레인",
+          "fr": "Rain, chevalier vagabond",
+          "de": "Wandernder Ritter Rain",
+          "es": "Rain caballero mendicante"
+        },
+        "abilities": [
+          {
+            "id": 226399,
+            "names": {
+              "en": "Bond with Jake",
+              "tw": "與傑科的羈絆",
+              "kr": "제이크와의 인연",
+              "fr": "Lien avec Jake",
+              "de": "Verbindung mit Jake",
+              "es": "Unión con Jake"
+            }
           }
         ]
       }
@@ -1086,10 +1288,7 @@
         "names": {
           "en": "Lara Croft",
           "tw": "蘿拉·卡芙特",
-          "kr": "라라 크로프트",
-          "fr": "Lara Croft",
-          "de": "Lara Croft",
-          "es": "Lara Croft"
+          "kr": "라라 크로프트"
         },
         "abilities": [
           {
@@ -1104,6 +1303,140 @@
             },
             "offset": 16,
             "castTime": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "70-6-6-6-6-6-6-6",
+    "units": [
+      {
+        "id": 100010005,
+        "names": {
+          "en": "Raegen",
+          "tw": "雷根",
+          "kr": "레겐"
+        },
+        "abilities": [
+          {
+            "id": 228081,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100011705,
+        "names": {
+          "en": "Pyro Glacial Lasswell",
+          "tw": "冰炎騎士拉斯韋爾",
+          "kr": "빙염의 기사 라스웰",
+          "fr": "Lasswell flammes gelées",
+          "de": "Eisflammenritter Lasswell",
+          "es": "Lasswell pirogélido"
+        },
+        "abilities": [
+          {
+            "id": 227561,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207001005,
+        "names": {
+          "en": "Sephiroth",
+          "tw": "賽菲羅斯",
+          "kr": "세피로스",
+          "fr": "Séphiroth",
+          "es": "Sefirot"
+        },
+        "abilities": [
+          {
+            "id": 228051,
+            "names": {
+              "en": "Immanence",
+              "tw": "震天動地",
+              "kr": "진천동지",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-7-7-7-7-7",
+    "units": [
+      {
+        "id": 100008804,
+        "names": {
+          "en": "Moogle",
+          "tw": "莫古利",
+          "kr": "모그리",
+          "fr": "Mog",
+          "de": "Mogry",
+          "es": "Moguri"
+        },
+        "abilities": [
+          {
+            "id": 211300,
+            "names": {
+              "en": "Mog Barrage",
+              "tw": "莫古亂突刺",
+              "kr": "모그 혼란",
+              "fr": "Pluie de coups mog",
+              "de": "Mogry-Sperrfeuer",
+              "es": "Ráfaga moguri"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 707172,
+            "names": {
+              "en": "Mog Barrage + 1",
+              "tw": "莫古亂突刺 + 1",
+              "kr": "모그 혼란 + 1",
+              "fr": "Pluie de coups mog + 1",
+              "de": "Mogry-Sperrfeuer + 1",
+              "es": "Ráfaga moguri + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100016205,
+        "names": {
+          "en": "Hyoh",
+          "tw": null,
+          "kr": "효우",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227281,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }
@@ -1143,21 +1476,110 @@
         "names": {
           "en": "Raegen",
           "tw": "雷根",
-          "kr": "레겐",
-          "fr": "Raegen",
-          "de": "Raegen",
-          "es": "Raegen"
+          "kr": "레겐"
         },
         "abilities": [
           {
             "id": 226120,
             "names": {
-              "en": "Erythrite Blade",
+              "en": "Blades of Azure Crimson",
               "tw": "緋蒼之劍",
               "kr": "비창의 검",
-              "fr": "Lame d'érythrite",
+              "fr": "Lames azur carmin",
               "de": "Purpurazurklingen",
-              "es": "Espada de erythrita"
+              "es": "Hojas azul enrojecido"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100011705,
+        "names": {
+          "en": "Pyro Glacial Lasswell",
+          "tw": "冰炎騎士拉斯韋爾",
+          "kr": "빙염의 기사 라스웰",
+          "fr": "Lasswell flammes gelées",
+          "de": "Eisflammenritter Lasswell",
+          "es": "Lasswell pirogélido"
+        },
+        "abilities": [
+          {
+            "id": 227560,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100013305,
+        "names": {
+          "en": "Emperor Shera",
+          "tw": "榭拉皇帝",
+          "kr": "시엘라 황제",
+          "fr": "Empereur Shera",
+          "de": "Imperator Shera",
+          "es": "Emperador Shera"
+        },
+        "abilities": [
+          {
+            "id": 228003,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100016205,
+        "names": {
+          "en": "Hyoh",
+          "tw": null,
+          "kr": "효우",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227282,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227283,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207000305,
+        "names": {
+          "en": "Tifa",
+          "tw": null,
+          "kr": "티파",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227836,
+            "names": {
+              "en": "null"
             },
             "offset": 16,
             "castTime": 40
@@ -1171,7 +1593,6 @@
           "tw": "賽菲羅斯",
           "kr": "세피로스",
           "fr": "Séphiroth",
-          "de": "Sephiroth",
           "es": "Sefirot"
         },
         "abilities": [
@@ -1191,14 +1612,32 @@
         ]
       },
       {
+        "id": 211000805,
+        "names": {
+          "en": "Livid Shantotto",
+          "tw": null,
+          "kr": "분노한 샨토토",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227192,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 253000304,
         "names": {
           "en": "Agrias",
           "tw": "阿格莉亞絲",
-          "kr": "아그리아스",
-          "fr": "Agrias",
-          "de": "Agrias",
-          "es": "Agrias"
+          "kr": "아그리아스"
         },
         "abilities": [
           {
@@ -1221,10 +1660,7 @@
         "names": {
           "en": "Orlandeau",
           "tw": "奧爾蘭多",
-          "kr": "올란두",
-          "fr": "Orlandeau",
-          "de": "Orlandeau",
-          "es": "Orlandeau"
+          "kr": "올란두"
         },
         "abilities": [
           {
@@ -1273,10 +1709,7 @@
         "names": {
           "en": "Fryevia",
           "tw": "弗雷比亞",
-          "kr": "프레이비아",
-          "fr": "Fryevia",
-          "de": "Fryevia",
-          "es": "Fryevia"
+          "kr": "프레이비아"
         },
         "abilities": [
           {
@@ -1308,14 +1741,33 @@
         ]
       },
       {
+        "id": 306000905,
+        "names": {
+          "en": "Estark",
+          "tw": "艾斯塔克",
+          "kr": "에스타크",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 226981,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004104,
         "names": {
           "en": "Mario Frigo",
           "tw": "馬里奧·弗瑞格",
           "kr": "마리오 프리고",
-          "fr": "Mario Frego",
-          "de": "Mario Frigo",
-          "es": "Mario Frigo"
+          "fr": "Mario Frego"
         },
         "abilities": [
           {
@@ -1343,10 +1795,7 @@
         "names": {
           "en": "Christine",
           "tw": "克莉絲汀",
-          "kr": "크리스틴",
-          "fr": "Christine",
-          "de": "Christine",
-          "es": "Christine"
+          "kr": "크리스틴"
         },
         "abilities": [
           {
@@ -1396,14 +1845,46 @@
     "family": "42-7-7-7-7-7-7-7-7-7-7-7",
     "units": [
       {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌"
+        },
+        "abilities": [
+          {
+            "id": 227162,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227163,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227161,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100012104,
         "names": {
           "en": "Emilia",
           "tw": "埃米利亞",
           "kr": "에밀리아",
-          "fr": "Émilia",
-          "de": "Emilia",
-          "es": "Emilia"
+          "fr": "Émilia"
         },
         "abilities": [
           {
@@ -1422,6 +1903,56 @@
         ]
       },
       {
+        "id": 100016403,
+        "names": {
+          "en": "Domino",
+          "tw": null,
+          "kr": "도미노",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227310,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100016704,
+        "names": {
+          "en": "Macmedi",
+          "tw": null,
+          "kr": "마크메디",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227670,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227671,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 203000105,
         "names": {
           "en": "Onion Knight",
@@ -1433,7 +1964,7 @@
         },
         "abilities": [
           {
-            "id": 211380,
+            "id": 507291,
             "names": {
               "en": "Splendor of the Wind",
               "tw": "風之光輝",
@@ -1446,7 +1977,33 @@
             "castTime": 40
           },
           {
-            "id": 211390,
+            "id": 507303,
+            "names": {
+              "en": "Splendor of the Wind",
+              "tw": "風之光輝",
+              "kr": "바람의 인도",
+              "fr": "Splendeur du vent",
+              "de": "Windpracht",
+              "es": "Esplendor de viento"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 507292,
+            "names": {
+              "en": "Splendor of the Fire",
+              "tw": "火之光輝",
+              "kr": "불꽃의 인도",
+              "fr": "Splendeur du feu",
+              "de": "Feuerpracht",
+              "es": "Esplendor de fuego"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 507304,
             "names": {
               "en": "Splendor of the Fire",
               "tw": "火之光輝",
@@ -1472,7 +2029,7 @@
             "castTime": 40
           },
           {
-            "id": 211400,
+            "id": 507293,
             "names": {
               "en": "Splendor of the Water",
               "tw": "水之光輝",
@@ -1485,7 +2042,33 @@
             "castTime": 40
           },
           {
-            "id": 211410,
+            "id": 507305,
+            "names": {
+              "en": "Splendor of the Water",
+              "tw": "水之光輝",
+              "kr": "물의 인도",
+              "fr": "Splendeur de l'eau",
+              "de": "Wasserpracht",
+              "es": "Esplendor de agua"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 507294,
+            "names": {
+              "en": "Splendor of the Earth",
+              "tw": "土之光輝",
+              "kr": "땅의 인도",
+              "fr": "Splendeur de la terre",
+              "de": "Erdpracht",
+              "es": "Esplendor de tierra"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 507306,
             "names": {
               "en": "Splendor of the Earth",
               "tw": "土之光輝",
@@ -1506,9 +2089,7 @@
               "fr": "Tranche-oignon",
               "de": "Zwiebelschnitt",
               "es": "Corte cebolla"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 506850,
@@ -1532,7 +2113,6 @@
           "tw": "賽菲羅斯",
           "kr": "세피로스",
           "fr": "Séphiroth",
-          "de": "Sephiroth",
           "es": "Sefirot"
         },
         "abilities": [
@@ -1550,6 +2130,46 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 306001104,
+        "names": {
+          "en": "Überkilling Machine",
+          "tw": "殺戮魔神",
+          "kr": "킬러 마징가",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227051,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 302005700,
+        "names": {
+          "en": "Hell Sabre",
+          "tw": null,
+          "kr": null,
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 226996,
+            "names": {
+              "en": "null"
+            }
+          }
+        ]
       }
     ]
   },
@@ -1561,10 +2181,7 @@
         "names": {
           "en": "Ryunan",
           "tw": "柳南",
-          "kr": "류난",
-          "fr": "Ryunan",
-          "de": "Ryunan",
-          "es": "Ryunan"
+          "kr": "류난"
         },
         "abilities": [
           {
@@ -1576,9 +2193,7 @@
               "fr": "Descente du dragon",
               "de": "Drachensturz",
               "es": "Descenso del draco"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -1587,10 +2202,7 @@
         "names": {
           "en": "Yang",
           "tw": "楊",
-          "kr": "얀",
-          "fr": "Yang",
-          "de": "Yang",
-          "es": "Yang"
+          "kr": "얀"
         },
         "abilities": [
           {
@@ -1602,9 +2214,7 @@
               "fr": "Rixe totale",
               "de": "Kompromissloser Nahkampf",
               "es": "Reyerta total"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -1618,10 +2228,7 @@
         "names": {
           "en": "Miyuki",
           "tw": "美雪",
-          "kr": "미유키",
-          "fr": "Miyuki",
-          "de": "Miyuki",
-          "es": "Miyuki"
+          "kr": "미유키"
         },
         "abilities": [
           {
@@ -1644,10 +2251,7 @@
         "names": {
           "en": "Ray Jack",
           "tw": "雷佳克",
-          "kr": "레이 잭",
-          "fr": "Ray Jack",
-          "de": "Ray Jack",
-          "es": "Ray Jack"
+          "kr": "레이 잭"
         },
         "abilities": [
           {
@@ -1675,10 +2279,7 @@
         "names": {
           "en": "Yuri",
           "tw": "百合",
-          "kr": "유리",
-          "fr": "Yuri",
-          "de": "Yuri",
-          "es": "Yuri"
+          "kr": "유리"
         },
         "abilities": [
           {
@@ -1701,10 +2302,7 @@
         "names": {
           "en": "Wadow",
           "tw": "瓦多",
-          "kr": "와도우",
-          "fr": "Wadow",
-          "de": "Wadow",
-          "es": "Wadow"
+          "kr": "와도우"
         },
         "abilities": [
           {
@@ -1732,10 +2330,7 @@
         "names": {
           "en": "Aileen",
           "tw": "艾琳",
-          "kr": "아이린",
-          "fr": "Aileen",
-          "de": "Aileen",
-          "es": "Aileen"
+          "kr": "아이린"
         },
         "abilities": [
           {
@@ -1747,9 +2342,7 @@
               "fr": "Sonnette + 2",
               "de": "Ramme + 2",
               "es": "Martinete + 2"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -1758,10 +2351,7 @@
         "names": {
           "en": "Camille",
           "tw": "卡米爾",
-          "kr": "카밀",
-          "fr": "Camille",
-          "de": "Camille",
-          "es": "Camille"
+          "kr": "카밀"
         },
         "abilities": [
           {
@@ -1773,9 +2363,32 @@
               "fr": "Lame briseterre",
               "de": "Erdzerschmetterer",
               "es": "Hoja sacudetierra"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": 100015604,
+        "names": {
+          "en": "Shinju",
+          "tw": null,
+          "kr": "신쥬",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 507515,
+            "names": {
+              "en": "null"
+            }
+          },
+          {
+            "id": 507514,
+            "names": {
+              "en": "null"
+            }
           }
         ]
       },
@@ -1799,9 +2412,7 @@
               "fr": "Siroco sonique",
               "de": "Schallsturm",
               "es": "Siroco sónico"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -1825,9 +2436,7 @@
               "fr": "Coup aplatissant",
               "de": "Dampframmenabgang",
               "es": "Golpe aplastante"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -1836,10 +2445,7 @@
         "names": {
           "en": "Lara Croft",
           "tw": "蘿拉·卡芙特",
-          "kr": "라라 크로프트",
-          "fr": "Lara Croft",
-          "de": "Lara Croft",
-          "es": "Lara Croft"
+          "kr": "라라 크로프트"
         },
         "abilities": [
           {
@@ -1851,9 +2457,7 @@
               "fr": "Plaie ouverte",
               "de": "Offene Wunde",
               "es": "Heridas abiertas"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -1867,10 +2471,7 @@
         "names": {
           "en": "Ruggles",
           "tw": "拉格爾斯",
-          "kr": "러글스",
-          "fr": "Ruggles",
-          "de": "Ruggles",
-          "es": "Ruggles"
+          "kr": "러글스"
         },
         "abilities": [
           {
@@ -1893,10 +2494,7 @@
         "names": {
           "en": "Conrad",
           "tw": "孔拉德",
-          "kr": "콘래드",
-          "fr": "Conrad",
-          "de": "Conrad",
-          "es": "Conrad"
+          "kr": "콘래드"
         },
         "abilities": [
           {
@@ -1919,10 +2517,7 @@
         "names": {
           "en": "Edgar",
           "tw": "埃德加",
-          "kr": "에드가",
-          "fr": "Edgar",
-          "de": "Edgar",
-          "es": "Edgar"
+          "kr": "에드가"
         },
         "abilities": [
           {
@@ -1997,10 +2592,7 @@
         "names": {
           "en": "Lara Croft",
           "tw": "蘿拉·卡芙特",
-          "kr": "라라 크로프트",
-          "fr": "Lara Croft",
-          "de": "Lara Croft",
-          "es": "Lara Croft"
+          "kr": "라라 크로프트"
         },
         "abilities": [
           {
@@ -2023,10 +2615,7 @@
         "names": {
           "en": "Annika Svennson",
           "tw": "安妮卡·斯文森",
-          "kr": "아니카 스벤슨",
-          "fr": "Annika Svennson",
-          "de": "Annika Svennson",
-          "es": "Annika Svennson"
+          "kr": "아니카 스벤슨"
         },
         "abilities": [
           {
@@ -2047,6 +2636,83 @@
     ]
   },
   {
+    "family": "42-8-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 209000103,
+        "names": {
+          "en": "Zidane",
+          "tw": "吉坦",
+          "kr": "지탄",
+          "fr": "Djidane",
+          "es": "Yitán"
+        },
+        "abilities": [
+          {
+            "id": 217430,
+            "names": {
+              "en": "Free Energy",
+              "tw": "能量解放",
+              "kr": "자유로운 힘",
+              "fr": "Energétik",
+              "de": "Kostenlose Energie",
+              "es": "Energía libre"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 703770,
+            "names": {
+              "en": "Free Energy + 1",
+              "tw": "能量解放 + 1",
+              "kr": "자유로운 힘 + 1",
+              "fr": "Energétik + 1",
+              "de": "Kostenlose Energie + 1",
+              "es": "Energía libre + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 703780,
+            "names": {
+              "en": "Free Energy + 2",
+              "tw": "能量解放 + 2",
+              "kr": "자유로운 힘 + 2",
+              "fr": "Energétik + 2",
+              "de": "Kostenlose Energie + 2",
+              "es": "Energía libre + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 314001500,
+        "names": {
+          "en": "Summer Whip",
+          "tw": null,
+          "kr": null,
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 226890,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "82-8-8-8-8-8-8-8",
     "units": [
       {
@@ -2054,10 +2720,7 @@
         "names": {
           "en": "Nyx",
           "tw": "尼克斯",
-          "kr": "닉스",
-          "fr": "Nyx",
-          "de": "Nyx",
-          "es": "Nyx"
+          "kr": "닉스"
         },
         "abilities": [
           {
@@ -2080,10 +2743,7 @@
         "names": {
           "en": "Yun",
           "tw": "雲",
-          "kr": "윤",
-          "fr": "Yun",
-          "de": "Yun",
-          "es": "Yun"
+          "kr": "윤"
         },
         "abilities": [
           {
@@ -2124,10 +2784,7 @@
         "names": {
           "en": "Kunshira",
           "tw": "庫西拉",
-          "kr": "쿤시라",
-          "fr": "Kunshira",
-          "de": "Kunshira",
-          "es": "Kunshira"
+          "kr": "쿤시라"
         },
         "abilities": [
           {
@@ -2139,9 +2796,7 @@
               "fr": "Magilame - Menace ardente",
               "de": "Schwertmagie - Flammendrohung",
               "es": "Esgrimago - Amenaza ígnea"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 220710,
@@ -2152,9 +2807,7 @@
               "fr": "Magilame - Eau calme",
               "de": "Schwertmagie - Stille Wasser",
               "es": "Esgrimago - Aguas calmadas"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 220720,
@@ -2165,9 +2818,7 @@
               "fr": "Magilame - Éclair rugissant",
               "de": "Schwertmagie - Brüllender Donner",
               "es": "Esgrimago - Trueno rugidor"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 220730,
@@ -2178,9 +2829,7 @@
               "fr": "Magilame - Tempête éolienne",
               "de": "Schwertmagie - Sturmwind",
               "es": "Esgrimago - Tormenta eólica"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 220740,
@@ -2191,9 +2840,7 @@
               "fr": "Magilame - Lumière éclatante",
               "de": "Schwertmagie - Glitzerndes Licht",
               "es": "Esgrimago - Luz destellante"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -2217,9 +2864,7 @@
               "fr": "Attaque circulaire",
               "de": "Wirbelschnitt",
               "es": "Corte torbellino"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -2228,10 +2873,7 @@
         "names": {
           "en": "Reimi",
           "tw": "蕾米",
-          "kr": "레이미",
-          "fr": "Reimi",
-          "de": "Reimi",
-          "es": "Reimi"
+          "kr": "레이미"
         },
         "abilities": [
           {
@@ -2243,9 +2885,60 @@
               "fr": "Fleurs du chaos",
               "de": "Chaosblüten",
               "es": "Flores del caos"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "12-8-8-8-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 253000115,
+        "names": {
+          "en": "Mercenary Ramza",
+          "tw": "傭兵拉姆薩",
+          "kr": "용병 람자",
+          "fr": "Ramza mercenaire",
+          "de": "Söldner Ramza",
+          "es": "Ramza mercenario"
+        },
+        "abilities": [
+          {
+            "id": 227101,
+            "names": {
+              "en": "Raging Inferno",
+              "tw": "亂之炎",
+              "kr": "혼란의 불꽃",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            }
+          }
+        ]
+      },
+      {
+        "id": 253000215,
+        "names": {
+          "en": "Knight Delita",
+          "tw": "騎士迪利塔",
+          "kr": "기사 디리타",
+          "fr": "Delita chevalier",
+          "de": "Ritter Delita",
+          "es": "Delita caballero"
+        },
+        "abilities": [
+          {
+            "id": 227101,
+            "names": {
+              "en": "Raging Inferno",
+              "tw": "亂之炎",
+              "kr": "혼란의 불꽃",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            }
           }
         ]
       }
@@ -2259,10 +2952,7 @@
         "names": {
           "en": "Goken",
           "tw": "剛健",
-          "kr": "고우켄",
-          "fr": "Goken",
-          "de": "Goken",
-          "es": "Goken"
+          "kr": "고우켄"
         },
         "abilities": [
           {
@@ -2298,10 +2988,7 @@
         "names": {
           "en": "Loren",
           "tw": "洛倫",
-          "kr": "로렌",
-          "fr": "Loren",
-          "de": "Loren",
-          "es": "Loren"
+          "kr": "로렌"
         },
         "abilities": [
           {
@@ -2329,10 +3016,7 @@
         "names": {
           "en": "Terra",
           "tw": "蒂娜",
-          "kr": "티나",
-          "fr": "Terra",
-          "de": "Terra",
-          "es": "Terra"
+          "kr": "티나"
         },
         "abilities": [
           {
@@ -2459,10 +3143,7 @@
         "names": {
           "en": "Christine",
           "tw": "克莉絲汀",
-          "kr": "크리스틴",
-          "fr": "Christine",
-          "de": "Christine",
-          "es": "Christine"
+          "kr": "크리스틴"
         },
         "abilities": [
           {
@@ -2490,10 +3171,7 @@
         "names": {
           "en": "Charie",
           "tw": "夏莉",
-          "kr": "샤리",
-          "fr": "Charie",
-          "de": "Charie",
-          "es": "Charie"
+          "kr": "샤리"
         },
         "abilities": [
           {
@@ -2505,9 +3183,7 @@
               "fr": "Danse de lame lumineuse",
               "de": "Lichtklingentanz",
               "es": "Baile de hoja lumínica"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 216740,
@@ -2560,10 +3236,7 @@
         "names": {
           "en": "Jiraiya",
           "tw": "自來也",
-          "kr": "지라이야",
-          "fr": "Jiraiya",
-          "de": "Jiraiya",
-          "es": "Jiraiya"
+          "kr": "지라이야"
         },
         "abilities": [
           {
@@ -2630,10 +3303,7 @@
         "names": {
           "en": "Ling",
           "tw": "鈴",
-          "kr": "링",
-          "fr": "Ling",
-          "de": "Ling",
-          "es": "Ling"
+          "kr": "링"
         },
         "abilities": [
           {
@@ -2645,9 +3315,7 @@
               "fr": "Danse du Phénix",
               "de": "Tanz des Phönix",
               "es": "Baile del fénix"
-            },
-            "offset": 16,
-            "castTime": 50
+            }
           }
         ]
       },
@@ -2656,10 +3324,7 @@
         "names": {
           "en": "Ling",
           "tw": "鈴",
-          "kr": "링",
-          "fr": "Ling",
-          "de": "Ling",
-          "es": "Ling"
+          "kr": "링"
         },
         "abilities": [
           {
@@ -2671,9 +3336,7 @@
               "fr": "Danse du phénix",
               "de": "Tanz des Phönix",
               "es": "Baile del fénix"
-            },
-            "offset": 16,
-            "castTime": 50
+            }
           }
         ]
       }
@@ -2687,10 +3350,7 @@
         "names": {
           "en": "Goken",
           "tw": "剛健",
-          "kr": "고우켄",
-          "fr": "Goken",
-          "de": "Goken",
-          "es": "Goken"
+          "kr": "고우켄"
         },
         "abilities": [
           {
@@ -2713,10 +3373,7 @@
         "names": {
           "en": "Kaede",
           "tw": "楓",
-          "kr": "카에데",
-          "fr": "Kaede",
-          "de": "Kaede",
-          "es": "Kaede"
+          "kr": "카에데"
         },
         "abilities": [
           {
@@ -2754,9 +3411,7 @@
               "fr": "Assaut enflammé",
               "de": "Flammenangriff",
               "es": "Asalto flamígero"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 222910,
@@ -2767,9 +3422,7 @@
               "fr": "Assaut glacé",
               "de": "Eisangriff",
               "es": "Asalto gélido"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 222920,
@@ -2780,9 +3433,7 @@
               "fr": "Assaut électrique",
               "de": "Elektroangriff",
               "es": "Asalto eléctrico"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 222930,
@@ -2793,9 +3444,7 @@
               "fr": "Assaut lumineux",
               "de": "Lichtangriff",
               "es": "Asalto luminoso"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -2809,10 +3458,7 @@
         "names": {
           "en": "Fohlen",
           "tw": "福倫",
-          "kr": "포렌",
-          "fr": "Fohlen",
-          "de": "Fohlen",
-          "es": "Fohlen"
+          "kr": "포렌"
         },
         "abilities": [
           {
@@ -2824,9 +3470,7 @@
               "fr": "Rafale sonique",
               "de": "Schallwelle",
               "es": "Estallido sónico"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 703570,
@@ -2837,9 +3481,7 @@
               "fr": "Rafale sonique + 1",
               "de": "Schallwelle + 1",
               "es": "Estallido sónico + 1"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           },
           {
             "id": 703580,
@@ -2850,9 +3492,7 @@
               "fr": "Rafale sonique + 2",
               "de": "Schallwelle + 2",
               "es": "Estallido sónico + 2"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -2861,10 +3501,7 @@
         "names": {
           "en": "Lila",
           "tw": "利拉",
-          "kr": "리라",
-          "fr": "Lila",
-          "de": "Lila",
-          "es": "Lila"
+          "kr": "리라"
         },
         "abilities": [
           {
@@ -2876,9 +3513,7 @@
               "fr": "Art martial - Combo Tojin",
               "de": "Kampfkunst - Salve des Kriegsgottes",
               "es": "Artes marciales - Combo Tojin"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -2892,10 +3527,7 @@
         "names": {
           "en": "Jiraiya",
           "tw": "自來也",
-          "kr": "지라이야",
-          "fr": "Jiraiya",
-          "de": "Jiraiya",
-          "es": "Jiraiya"
+          "kr": "지라이야"
         },
         "abilities": [
           {
@@ -2918,10 +3550,7 @@
         "names": {
           "en": "Ashe",
           "tw": "雅雪",
-          "kr": "아셰",
-          "fr": "Ashe",
-          "de": "Ashe",
-          "es": "Ashe"
+          "kr": "아셰"
         },
         "abilities": [
           {
@@ -2944,10 +3573,7 @@
         "names": {
           "en": "Rasler",
           "tw": "拉斯勒",
-          "kr": "라슬러",
-          "fr": "Rasler",
-          "de": "Rasler",
-          "es": "Rasler"
+          "kr": "라슬러"
         },
         "abilities": [
           {
@@ -2971,9 +3597,7 @@
           "en": "Reberta",
           "tw": "蕾貝爾塔",
           "kr": "리베르타",
-          "fr": "Réberta",
-          "de": "Reberta",
-          "es": "Reberta"
+          "fr": "Réberta"
         },
         "abilities": [
           {
@@ -3014,10 +3638,7 @@
         "names": {
           "en": "Goken",
           "tw": "剛健",
-          "kr": "고우켄",
-          "fr": "Goken",
-          "de": "Goken",
-          "es": "Goken"
+          "kr": "고우켄"
         },
         "abilities": [
           {
@@ -3053,10 +3674,7 @@
         "names": {
           "en": "Prompto",
           "tw": "普羅恩普特",
-          "kr": "프롬프토",
-          "fr": "Prompto",
-          "de": "Prompto",
-          "es": "Prompto"
+          "kr": "프롬프토"
         },
         "abilities": [
           {
@@ -3080,9 +3698,7 @@
           "en": "Reberta",
           "tw": "蕾貝爾塔",
           "kr": "리베르타",
-          "fr": "Réberta",
-          "de": "Reberta",
-          "es": "Reberta"
+          "fr": "Réberta"
         },
         "abilities": [
           {
@@ -3157,10 +3773,7 @@
         "names": {
           "en": "Ray Jack",
           "tw": "雷佳克",
-          "kr": "레이 잭",
-          "fr": "Ray Jack",
-          "de": "Ray Jack",
-          "es": "Ray Jack"
+          "kr": "레이 잭"
         },
         "abilities": [
           {
@@ -3184,8 +3797,6 @@
           "en": "Rico Rodriguez",
           "tw": "瑞科·羅德里格茲",
           "kr": "리코 로드리게즈",
-          "fr": "Rico Rodriguez",
-          "de": "Rico Rodriguez",
           "es": "Rico Rodríguez"
         },
         "abilities": [
@@ -3209,10 +3820,7 @@
         "names": {
           "en": "Masamune",
           "tw": "正宗",
-          "kr": "마사무네",
-          "fr": "Masamune",
-          "de": "Masamune",
-          "es": "Masamune"
+          "kr": "마사무네"
         },
         "abilities": [
           {
@@ -3235,10 +3843,7 @@
         "names": {
           "en": "Pod 153",
           "tw": "輔助機１５３",
-          "kr": "포드 153",
-          "fr": "Pod 153",
-          "de": "Pod 153",
-          "es": "Pod 153"
+          "kr": "포드 153"
         },
         "abilities": [
           {
@@ -3247,7 +3852,6 @@
               "en": "R020: Mirage",
               "tw": "R020：幻象",
               "kr": "R020: 미라쥬",
-              "fr": "R020: Mirage",
               "de": "R020: Illusion",
               "es": "R020: Espejismo"
             },
@@ -3312,6 +3916,32 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 100015005,
+        "names": {
+          "en": "Vagrant Knight Rain",
+          "tw": "彷徨騎士雷因",
+          "kr": "방황의 기사 레인",
+          "fr": "Rain, chevalier vagabond",
+          "de": "Wandernder Ritter Rain",
+          "es": "Rain caballero mendicante"
+        },
+        "abilities": [
+          {
+            "id": 226397,
+            "names": {
+              "en": "Bond with Lid",
+              "tw": "與里德的羈絆",
+              "kr": "리드와의 인연",
+              "fr": "Lien avec Lid",
+              "de": "Verbindung mit Lid",
+              "es": "Unión con Lid"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -3323,10 +3953,7 @@
         "names": {
           "en": "Yuri",
           "tw": "百合",
-          "kr": "유리",
-          "fr": "Yuri",
-          "de": "Yuri",
-          "es": "Yuri"
+          "kr": "유리"
         },
         "abilities": [
           {
@@ -3349,10 +3976,7 @@
         "names": {
           "en": "Wadow",
           "tw": "瓦多",
-          "kr": "와도우",
-          "fr": "Wadow",
-          "de": "Wadow",
-          "es": "Wadow"
+          "kr": "와도우"
         },
         "abilities": [
           {
@@ -3380,10 +4004,7 @@
         "names": {
           "en": "Fayt",
           "tw": "菲特",
-          "kr": "페이트",
-          "fr": "Fayt",
-          "de": "Fayt",
-          "es": "Fayt"
+          "kr": "페이트"
         },
         "abilities": [
           {
@@ -3391,13 +4012,11 @@
             "names": {
               "en": "Ethereal Blast of Time",
               "tw": "異凍·衝刺·刻",
-              "kr": "이세리얼 블래스트·타임",
+              "kr": "이데리얼 블래스트·타임",
               "fr": "Explosion iserial - Temps",
               "de": "Iserialknall - Zeit",
               "es": "Explosión iserial - Tiempo"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -3406,10 +4025,7 @@
         "names": {
           "en": "Fidel",
           "tw": "菲德爾",
-          "kr": "피델",
-          "fr": "Fidel",
-          "de": "Fidel",
-          "es": "Fidel"
+          "kr": "피델"
         },
         "abilities": [
           {
@@ -3417,13 +4033,11 @@
             "names": {
               "en": "Ethereal Blast",
               "tw": "異凍·衝擊",
-              "kr": "이세리얼 블래스트",
+              "kr": "이데리얼 블래스트",
               "fr": "Explosion iserial",
               "de": "Iserialknall",
               "es": "Explosión iserial"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -3452,9 +4066,7 @@
               "fr": "Juge des Enfers",
               "de": "Höllischer Richtspruch",
               "es": "Juicio infernal"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -3478,9 +4090,7 @@
               "fr": "Eaux infernales",
               "de": "Höllenwasser",
               "es": "Aguas infernales"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -3490,14 +4100,63 @@
     "family": "133-12-12-12-12-12-12-12-12-12-12-12",
     "units": [
       {
+        "id": 100007205,
+        "names": {
+          "en": "Seabreeze Dark Fina",
+          "tw": "涼爽魔人菲娜",
+          "kr": "바닷바람의 마인 피나",
+          "fr": "Fina obs. en maillot",
+          "de": "Dunkel-Seewind-Fina",
+          "es": "Fina oscura de la marea"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100012505,
+        "names": {
+          "en": "Maritime Strategist Nichol",
+          "tw": "洸洋軍師尼科爾",
+          "kr": "광양의 참모 니콜",
+          "fr": "Nichol, stratège maritime",
+          "de": "Maritimer Stratege Nichol",
+          "es": "Nichol estratega marino"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 210000405,
         "names": {
           "en": "Lulu",
           "tw": "露露",
-          "kr": "루루",
-          "fr": "Lulu",
-          "de": "Lulu",
-          "es": "Lulu"
+          "kr": "루루"
         },
         "abilities": [
           {
@@ -3520,10 +4179,7 @@
         "names": {
           "en": "Rikku",
           "tw": "琉克",
-          "kr": "류크",
-          "fr": "Rikku",
-          "de": "Rikku",
-          "es": "Rikku"
+          "kr": "류크"
         },
         "abilities": [
           {
@@ -3547,14 +4203,14 @@
     "family": "212-12-12-12-12-12-12-12-12-12-12-12",
     "units": [
       {
-        "id": 100014104,
+        "id": 100000315,
         "names": {
-          "en": "Lexa",
-          "tw": "萊基薩",
-          "kr": "렉사",
-          "fr": "Lexa",
-          "de": "Lexa",
-          "es": "Lexa"
+          "en": "Dark Fina",
+          "tw": "魔人菲娜",
+          "kr": "마인 피나",
+          "fr": "Fina obscure",
+          "de": "Dunkel-Fina",
+          "es": "Fina oscura"
         },
         "abilities": [
           {
@@ -3563,9 +4219,73 @@
               "en": "Tornado",
               "tw": "龍捲風",
               "kr": "토네이도",
-              "fr": "Tornade",
-              "de": "Tornado",
-              "es": "Tornado"
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100007205,
+        "names": {
+          "en": "Seabreeze Dark Fina",
+          "tw": "涼爽魔人菲娜",
+          "kr": "바닷바람의 마인 피나",
+          "fr": "Fina obs. en maillot",
+          "de": "Dunkel-Seewind-Fina",
+          "es": "Fina oscura de la marea"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100014005,
+        "names": {
+          "en": "Mediena",
+          "tw": "美迪愛娜",
+          "kr": "메디아나"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100014104,
+        "names": {
+          "en": "Lexa",
+          "tw": "萊基薩",
+          "kr": "렉사"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
             },
             "offset": 16,
             "castTime": 40
@@ -3589,9 +4309,52 @@
               "en": "Tornado",
               "tw": "龍捲風",
               "kr": "토네이도",
-              "fr": "Tornade",
-              "de": "Tornado",
-              "es": "Tornado"
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 208000205,
+        "names": {
+          "en": "Rinoa",
+          "tw": null,
+          "kr": "리노아",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 210000405,
+        "names": {
+          "en": "Lulu",
+          "tw": "露露",
+          "kr": "루루"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
             },
             "offset": 16,
             "castTime": 40
@@ -3603,10 +4366,7 @@
         "names": {
           "en": "Shantotto",
           "tw": "香托托",
-          "kr": "샨토토",
-          "fr": "Shantotto",
-          "de": "Shantotto",
-          "es": "Shantotto"
+          "kr": "샨토토"
         },
         "abilities": [
           {
@@ -3615,9 +4375,28 @@
               "en": "Tornado",
               "tw": "龍捲風",
               "kr": "토네이도",
-              "fr": "Tornade",
-              "de": "Tornado",
-              "es": "Tornado"
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 254000905,
+        "names": {
+          "en": "Rem",
+          "tw": "蕾姆",
+          "kr": "렘"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
             },
             "offset": 16,
             "castTime": 40
@@ -3630,9 +4409,7 @@
           "en": "Barbariccia",
           "tw": "巴爾巴莉希亞",
           "kr": "발바리시아",
-          "fr": "Barbariccia",
-          "de": "Barbarizia",
-          "es": "Barbariccia"
+          "de": "Barbarizia"
         },
         "abilities": [
           {
@@ -3641,9 +4418,7 @@
               "en": "Tornado",
               "tw": "龍捲風",
               "kr": "토네이도",
-              "fr": "Tornade",
-              "de": "Tornado",
-              "es": "Tornado"
+              "fr": "Tornade"
             },
             "offset": 16,
             "castTime": 40
@@ -3679,6 +4454,105 @@
     ]
   },
   {
+    "family": "0-14-8-8-8-8-8-8-8-8-8-8-8-8-8-6",
+    "units": [
+      {
+        "id": 100007705,
+        "names": {
+          "en": "Veritas of the Dark",
+          "tw": "常暗之維利亞斯",
+          "kr": "영원한 어둠의 베리어스",
+          "fr": "Veritas des Ténèbres",
+          "de": "Veritas der Finstere",
+          "es": "Veritas el tenebroso"
+        },
+        "abilities": [
+          {
+            "id": 226871,
+            "names": {
+              "en": "null"
+            }
+          }
+        ]
+      },
+      {
+        "id": 207001005,
+        "names": {
+          "en": "Sephiroth",
+          "tw": "賽菲羅斯",
+          "kr": "세피로스",
+          "fr": "Séphiroth",
+          "es": "Sefirot"
+        },
+        "abilities": [
+          {
+            "id": 224540,
+            "names": {
+              "en": "Heaven's Light",
+              "tw": "天照",
+              "kr": "천국의 빛",
+              "fr": "Lumière des cieux",
+              "de": "Himmelslicht",
+              "es": "Luz del cielo"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-15-15-15-15",
+    "units": [
+      {
+        "id": 100007904,
+        "names": {
+          "en": "Veritas of the Waters",
+          "tw": "水華之維利亞斯",
+          "kr": "물꽃의 베리어스",
+          "fr": "Veritas des Mers",
+          "de": "Veritas der Meere",
+          "es": "Veritas el marino"
+        },
+        "abilities": [
+          {
+            "id": 501870,
+            "names": {
+              "en": "Aqua Prison",
+              "tw": "水業牢籠",
+              "kr": "물의 감옥",
+              "fr": "Prison aquatique",
+              "de": "Aquagefängnis",
+              "es": "Prisión acuática"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207000805,
+        "names": {
+          "en": "Vincent",
+          "tw": null,
+          "kr": "빈센트",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227851,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "52-20-20-20-20",
     "units": [
       {
@@ -3686,10 +4560,7 @@
         "names": {
           "en": "Terra",
           "tw": "蒂娜",
-          "kr": "티나",
-          "fr": "Terra",
-          "de": "Terra",
-          "es": "Terra"
+          "kr": "티나"
         },
         "abilities": [
           {
@@ -3732,6 +4603,22 @@
             "castTime": 50
           },
           {
+            "id": 226852,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 50
+          },
+          {
+            "id": 226853,
+            "names": {
+              "en": "null"
+            },
+            "offset": 16,
+            "castTime": 50
+          },
+          {
             "id": 704490,
             "names": {
               "en": "Chaos Wave + 2",
@@ -3765,14 +4652,37 @@
     "family": "160-22-21-22-23-23-22-23",
     "units": [
       {
+        "id": 100000315,
+        "names": {
+          "en": "Dark Fina",
+          "tw": "魔人菲娜",
+          "kr": "마인 피나",
+          "fr": "Fina obscure",
+          "de": "Dunkel-Fina",
+          "es": "Fina oscura"
+        },
+        "abilities": [
+          {
+            "id": 20400,
+            "names": {
+              "en": "Quake",
+              "tw": "地槌",
+              "kr": "퀘이크",
+              "fr": "Séisme",
+              "de": "Beben",
+              "es": "Seísmo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100010504,
         "names": {
           "en": "William",
           "tw": "威廉",
-          "kr": "윌리엄",
-          "fr": "William",
-          "de": "William",
-          "es": "William"
+          "kr": "윌리엄"
         },
         "abilities": [
           {
@@ -3799,6 +4709,29 @@
           "fr": "Rydia, pure invocatrice",
           "de": "Reine Beschwörerin Rydia",
           "es": "Rydia invocadora pura"
+        },
+        "abilities": [
+          {
+            "id": 20400,
+            "names": {
+              "en": "Quake",
+              "tw": "地槌",
+              "kr": "퀘이크",
+              "fr": "Séisme",
+              "de": "Beben",
+              "es": "Seísmo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 254000905,
+        "names": {
+          "en": "Rem",
+          "tw": "蕾姆",
+          "kr": "렘"
         },
         "abilities": [
           {
@@ -3841,9 +4774,7 @@
               "fr": "Parade mécanique",
               "de": "Mechanischer Ausfall",
               "es": "Mecadesfile"
-            },
-            "offset": 16,
-            "castTime": 35
+            }
           }
         ]
       },
@@ -3867,9 +4798,7 @@
               "fr": "Parade mécanique",
               "de": "Mechanischer Ausfall",
               "es": "Mecadesfile"
-            },
-            "offset": 16,
-            "castTime": 35
+            }
           }
         ]
       }
@@ -3883,10 +4812,7 @@
         "names": {
           "en": "Lid",
           "tw": "里德",
-          "kr": "리드",
-          "fr": "Lid",
-          "de": "Lid",
-          "es": "Lid"
+          "kr": "리드"
         },
         "abilities": [
           {
@@ -3898,9 +4824,7 @@
               "fr": "Parade mécanique",
               "de": "Mechanischer Ausfall",
               "es": "Mecadesfile"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -3924,9 +4848,7 @@
               "fr": "Envie estivale de Lid",
               "de": "Lids Sommerspezial",
               "es": "Envío veraniego de Lid"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
@@ -3952,8 +4874,6 @@
               "en": "Ultima + 2",
               "tw": "究極 + 2",
               "kr": "알테마 + 2",
-              "fr": "Ultima + 2",
-              "de": "Ultima + 2",
               "es": "Artema + 2"
             },
             "offset": 16,
@@ -3978,8 +4898,6 @@
               "en": "Ultima + 2",
               "tw": "究極 + 2",
               "kr": "알테마 + 2",
-              "fr": "Ultima + 2",
-              "de": "Ultima + 2",
               "es": "Artema + 2"
             },
             "offset": 16,
@@ -4004,8 +4922,6 @@
               "en": "Ultima + 2",
               "tw": "究極 + 2",
               "kr": "알테마 + 2",
-              "fr": "Ultima + 2",
-              "de": "Ultima + 2",
               "es": "Artema + 2"
             },
             "offset": 16,
@@ -4023,10 +4939,7 @@
         "names": {
           "en": "Aileen",
           "tw": "艾琳",
-          "kr": "아이린",
-          "fr": "Aileen",
-          "de": "Aileen",
-          "es": "Aileen"
+          "kr": "아이린"
         },
         "abilities": [
           {
@@ -4038,9 +4951,7 @@
               "fr": "Impact fatal",
               "de": "Fataler Aufprall",
               "es": "Impacto fatal"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       },
@@ -4064,9 +4975,7 @@
               "fr": "Impact à bout portant",
               "de": "Direkter Aufprall",
               "es": "Impacto a bocajarro"
-            },
-            "offset": 8,
-            "castTime": 0
+            }
           }
         ]
       }
