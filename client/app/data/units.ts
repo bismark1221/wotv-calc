@@ -1863,7 +1863,7 @@ export const UNITS: any[] = [
           tw: "龍捲風",
           kr: "토네이도"
         },
-        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
         offset: 16,
@@ -4371,7 +4371,7 @@ export const UNITS: any[] = [
           tw: "龍捲風",
           kr: "토네이도"
         },
-        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
         offset: 16,
@@ -9275,7 +9275,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 16,
         base: 250
       },
@@ -9622,7 +9622,7 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
-        framesList: [212, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 16,
         base: 250
       },
