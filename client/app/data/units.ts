@@ -10244,5 +10244,240 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    id: 138,
+    names: {
+      en: "Mediena",
+      tw: "美迪愛娜",
+      kr: "메디아나"
+    },
+    abilities: [
+      {
+        id: 20290,
+        names: {
+          en: "Firaja",
+          tw: "強火焰",
+          kr: "파이자",
+          fr: "Feu max",
+          de: "Feuka",
+          es: "Piro+++"
+        },
+        damage: "magic",
+        castTime: 40,
+        magicType: "black",
+        elements: [
+          "fire"
+        ],
+        dualable: false,
+        framesList: [
+          210
+        ],
+        offset: 16,
+        base: 600
+      },
+      {
+        id: 20310,
+        names: {
+          en: "Thundaja",
+          tw: "強雷電",
+          kr: "선더쟈",
+          fr: "Foudre max",
+          de: "Blitzka",
+          es: "Electro+++"
+        },
+        damage: "magic",
+        castTime: 40,
+        magicType: "black",
+        elements: [
+          "lightning"
+        ],
+        dualable: false,
+        framesList: [
+          150
+        ],
+        offset: 16,
+        base: 600
+      },
+      {
+        id: 20330,
+        names: {
+          en: "Aeroja",
+          tw: "強勁風",
+          kr: "에어로쟈",
+          fr: "Vent max",
+          de: "Aeroka",
+          es: "Aero+++"
+        },
+        damage: "magic",
+        castTime: 40,
+        magicType: "black",
+        elements: [
+          "wind"
+        ],
+        dualable: false,
+        framesList: [
+          170
+        ],
+        offset: 16,
+        base: 600
+      },
+      {
+        id: 20300,
+        names: {
+          en: "Blizzaja",
+          tw: "強暴雪",
+          kr: "블리자쟈",
+          fr: "Glace max",
+          de: "Eiska",
+          es: "Hielo+++"
+        },
+        damage: "magic",
+        castTime: 40,
+        magicType: "black",
+        elements: [
+          "ice"
+        ],
+        dualable: false,
+        framesList: [
+          240
+        ],
+        offset: 16,
+        base: 600
+      },
+      {
+        id: 20360,
+        names: {
+          en: "Freeze",
+          tw: "冰結",
+          kr: "프리즈",
+          fr: "Gel",
+          de: "Frost",
+          es: "Congelación"
+        },
+        damage: "magic",
+        hitDamage: [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        castTime: 40,
+        magicType: "black",
+        elements: [
+          "ice"
+        ],
+        dualable: false,
+        framesList: [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ],
+        offset: 16,
+        base: 275,
+        debuffs: [
+          {
+            type: "ice",
+            value: 50
+          }
+        ]
+      },
+      {
+        id: 20550,
+        names: {
+          en: "Zoblizza",
+          tw: "冰封",
+          kr: "조블리자",
+          fr: "Glace Z",
+          de: "Eisza",
+          es: "Hielo Z"
+        },
+        damage: "magic",
+        castTime: 40,
+        magicType: "black",
+        elements: [
+          "ice"
+        ],
+        dualable: false,
+        framesList: [
+          250
+        ],
+        offset: 16,
+        base: 1200
+      },
+      {
+        id: 100014006,
+        names: {
+          en: "Cosmo Plume",
+          tw: "宇宙羽流",
+          kr: "코스모 플룸",
+          fr: "Plume cosmique",
+          de: "Kosmofeder",
+          es: "Pilar cósmico"
+        },
+        damage: "magic",
+        hitDamage: [
+          5, 5, 5, 5, 5, 5, 5, 20, 20, 25
+        ],
+        dualable: false,
+        framesList: [
+          40, 8, 52, 8, 14, 48, 12, 12, 10, 10
+        ],
+        base: 420,
+        ignore: 50
+      }
+    ],
+    multipleBlack: 2,
+    multipleWhite: 2,
+    multipleGreen: 2
+  },
+  {
+  id: 139,
+    names: {
+      en: "Awakened Rain",
+      tw: "雷因（覺醒）",
+      kr: "레인(각성한 힘)",
+      fr: "Rain éveillé",
+      de: "Erweckter Rain",
+      es: "Rain despertado"
+    },
+    abilities: [
+      {
+        id: 226410,
+        names: {
+          en: "Rising Ray",
+          tw: "上升射線",
+          kr: "승천하는 광선",
+          fr: "Rayon ascendant",
+          de: "Emporsteigender Strahl",
+          es: "Rayo creciente"
+        },
+        damage: "magic",
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        castTime: 40,
+        framesList: [
+          110, 9, 9, 9, 9, 9, 9, 9, 9, 9
+        ],
+        offset: 16,
+        base: 360
+      },
+      {
+        id: 100015806,
+        names: {
+          en: "Blood Linkage",
+          tw: "鮮血連結",
+          kr: "이어진 핏줄",
+          fr: "Lien du sang",
+          de: "Blutsbande",
+          es: "Unión de sangre"
+        },
+        damage: "magic",
+        hitDamage: [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5
+        ],
+        dualable: false,
+        framesList: [
+          140, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        base: 1240
+      }
+    ]
   }
 ];

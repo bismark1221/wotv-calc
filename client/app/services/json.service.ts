@@ -81,11 +81,16 @@ export class JsonService {
 
   private formatJsons() {
     Object.keys(this.units).forEach(unitId => {
+
       let id = this.addUnit(this.units[unitId]);
 
       if (id && this.units[unitId].skills) {
         this.units[unitId].skills.forEach((ability, index) => {
-          this.addSkill(id, this.skills[ability.id], ability.id);
+          if (ability.rarity < 7) {
+            this.addSkill(id, this.skills[ability.id], ability.id);
+          } else {
+            // TODO add 7 stars skills
+          }
         });
       }
 
@@ -437,26 +442,26 @@ export class JsonService {
     // ==> full dualcast ==> "effects_raw": [0, 3, 45, ["none"]]
     let effect = this.findEffect(ability, 0, 3, 45);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleBlack = 2 > this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
-      this.ffbeChainUnits[unitId].multipleWhite = 2 > this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
-      this.ffbeChainUnits[unitId].multipleGreen = 2 > this.ffbeChainUnits[unitId].multipleGreen ? 2 : this.ffbeChainUnits[unitId].multipleGreen;
+      this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || 2 >= this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
+      this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 2 >= this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
+      this.ffbeChainUnits[unitId].multipleGreen = !this.ffbeChainUnits[unitId].multipleGreen || 2 >= this.ffbeChainUnits[unitId].multipleGreen ? 2 : this.ffbeChainUnits[unitId].multipleGreen;
     }
 
     // ==> dual black ==> [0, 3, 44, ["none"]]
     effect = this.findEffect(ability, 0, 3, 44);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleBlack = 2 > this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
+      this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || 2 >= this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
     }
 
     // ==> white magic ==> [0, 3, 52, [2,  2,  XXX]]  &&  [0, 3, 52, [2,  3,  XXX]]  &&  [0, 3, 97, ...]
     effect = this.findEffect(ability, 0, 3, 52);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleWhite = effect[1] > this.ffbeChainUnits[unitId].multipleWhite ? effect[1] : this.ffbeChainUnits[unitId].multipleWhite;
+      this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || effect[1] >= this.ffbeChainUnits[unitId].multipleWhite ? effect[1] : this.ffbeChainUnits[unitId].multipleWhite;
     }
 
     effect = this.findEffect(ability, 0, 3, 97);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleWhite = 2 > this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
+      this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 2 >= this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
     }
 
     // ==> "effects_raw": [0, 3, 1006, [2, [ListSkillIds, ..., ..., ...]]]
