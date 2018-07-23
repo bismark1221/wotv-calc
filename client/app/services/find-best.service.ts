@@ -142,6 +142,8 @@ export class FindBestService {
     let countFrames = framesGap;
     let startFrames = framesGap;
 
+    unit.multiAbilities = false;
+
     unit.selectedAbilities.forEach((ability, index) => {
       if (index > 0) {
         startFrames += ability.offset + ability.castTime;
@@ -157,6 +159,7 @@ export class FindBestService {
       });
 
       if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
+        unit.multiAbilities = true;
         countFrames = startFrames + ability.offset + ability.castTime;
         ability.framesList.forEach((hit, i) => {
           if (i === 0) {
@@ -167,6 +170,10 @@ export class FindBestService {
         });
       }
     });
+
+    if (unit.selectedAbilities.length > 1) {
+      unit.multiAbilities = true;
+    }
 
     if (type === 'chainer') {
       this.chainersHits[unit.chainerIndex][framesGap] = this.chainUnitsHits[unitPosition][framesGap];
@@ -337,6 +344,16 @@ export class FindBestService {
           }
         }
       });
+
+      if (unit.multiAbilities) {
+        let i = 0;
+        unit.frames.forEach((frame, index) => {
+          if (i !== 0 && unit.frames[i].frame === frame.frame) {
+            frame.frame += 0.5;
+          }
+          i = index;
+        });
+      }
     });
   }
 

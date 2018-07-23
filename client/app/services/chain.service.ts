@@ -77,6 +77,8 @@ export class ChainService {
     let countFrames = unit.framesGap;
     let startFrames = unit.framesGap;
 
+    unit.multiAbilities = false;
+
     unit.selectedAbilities.forEach((ability, index) => {
       if (index > 0) {
         startFrames += ability.offset + ability.castTime;
@@ -92,6 +94,7 @@ export class ChainService {
       });
 
       if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
+        unit.multiAbilities = true;
         countFrames = startFrames + ability.offset + ability.castTime;
         ability.framesList.forEach((hit, i) => {
           if (i === 0) {
@@ -102,6 +105,10 @@ export class ChainService {
         });
       }
     });
+
+    if (unit.selectedAbilities.length > 1) {
+      unit.multiAbilities = true;
+    }
 
     return unitHits;
   }
@@ -254,6 +261,17 @@ export class ChainService {
           }
         }
       });
+
+      if (unit.multiAbilities) {
+        let i = 0;
+        unit.frames.forEach((frame, index) => {
+          if (i !== 0 && unit.frames[i].frame === frame.frame) {
+            frame.frame += 0.5;
+            frame.divided = true;
+          }
+          i = index;
+        });
+      }
     });
   }
 
@@ -299,21 +317,13 @@ export class ChainService {
     let type = combo || this.nbHits === 0 || this.chainers.length === 1 ? unit.selectedAbilities[hit.abilityIndex].type : 'break';
     type = type + hit.type;
 
-    for (let i = 1; i <= this.chainers.length; i++) {
-      if (this.nbHits > (i - 1) && this.hits[this.nbHits - i].unitName === unitName && this.hits[this.nbHits - i].hit === hit.frame) {
-        this.hits[this.nbHits - i].divided = true;
-        hit.frame += 0.5;
-        divided = true;
-      }
-    }
-
     this.hits[this.nbHits] = {
       unitName: unitName,
       unitType: unit.abilitiesType,
       hit: hit.frame,
       damage: hit.damage,
       type: type,
-      divided: divided,
+      divided: hit.divided,
       ability: hit.abilityIndex
     };
 
