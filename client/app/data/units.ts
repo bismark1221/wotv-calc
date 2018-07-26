@@ -353,7 +353,7 @@ export const UNITS: any[] = [
   {
     id: 6,
     names: {
-      en: "Dark Veritas",
+      en: "Veritas of the Dark",
       fr: "Veritas des Ténèbres",
       tw: "常暗之維利亞斯",
       kr: "영원한 어둠의 베리어스",
@@ -402,6 +402,54 @@ export const UNITS: any[] = [
         elements: [
           "dark"
         ]
+      },
+      {
+        id: 705820,
+        "names": {
+          "en": "Dark Punishment + 2",
+          "tw": "暗黑之罪 + 2",
+          "kr": "암흑의 죄업 + 2",
+          "fr": "Punition obscure + 2",
+          "de": "Dunkelstrafe + 2",
+          "es": "Castigo tenebroso + 2"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 260,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ]
+      },
+      {
+        id: 705800,
+        "names": {
+          "en": "Dark Edge + 2",
+          "tw": "暗黑之刃 + 2",
+          "kr": "암흑의 칼 + 2",
+          "fr": "Entaille obscure + 2",
+          "de": "Dunkelschneide + 2",
+          "es": "Filo tenebroso + 2"
+        },
+        castTime: 40,
+        offset: 16,
+        "elements": [
+          "dark"
+        ],
+        "framesList": [
+          110
+        ],
+        "base": 300,
+        "ignore": 50
       }
     ]
   },
@@ -1324,7 +1372,7 @@ export const UNITS: any[] = [
   {
     id: 21,
     names: {
-      en: "Light Veritas",
+      en: "Veritas of the Light",
       fr: "Veritas de la Lumière",
       tw: "光輝之維利亞斯",
       kr: "찬란한 빛의 베리어스",
@@ -1373,6 +1421,58 @@ export const UNITS: any[] = [
         offset: 16,
         base: 1600,
         damage: "hybrid"
+      },
+      {
+        id: 70140,
+        "names": {
+          "en": "Ultima + 2",
+          "tw": "究極 + 2",
+          "kr": "알테마 + 2",
+          "es": "Artema + 2"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "dualable": false,
+        "framesList": [
+          140, 37, 38, 37, 38, 38, 37
+        ],
+        "offset": 16,
+        "base": 280,
+        "ignore": 50
+      },
+      {
+        id: 706000,
+        "names": {
+          "en": "Divine Shot + 2",
+          "tw": "聖徒射擊 + 2",
+          "kr": "성스러운 사격 + 2",
+          "fr": "Tir divin + 2",
+          "de": "Göttlicher Schuss + 2",
+          "es": "Disparo divino + 2"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "framesList": [
+          42, 9, 9, 9, 9, 9, 9
+        ],
+        "offset": 16,
+        "base": 850,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 65
+          }
+        ]
       }
     ]
   },
@@ -2349,7 +2449,7 @@ export const UNITS: any[] = [
   {
     id: 36,
     names: {
-      en: "Fire Veritas",
+      en: "Veritas of the Flame",
       fr: "Veritas des Flammes",
       tw: "劫火之維利亞斯",
       kr: "지옥불의 베리어스",
@@ -2388,6 +2488,60 @@ export const UNITS: any[] = [
         offset: 16,
         base: 500,
         ignore: 50
+      },
+      {
+        id: 911181,
+        "names": {
+          "en": "Heavy Stomp + 2",
+          "tw": "沉重印章 + 2",
+          "kr": "무거운 발구르기 + 2",
+          "fr": "Piétinement + 2",
+          "de": "Schwerer Stampfer + 2",
+          "es": "Pisotón fuerte + 2"
+        },
+        "castTime": 40,
+        "framesList": [
+          90
+        ],
+        "offset": 16,
+        "base": 300,
+        "ignore": 50
+      },
+      {
+        id: 911182,
+        "names": {
+          "en": "Power Stomp + 2",
+          "tw": "全力重踏 + 2",
+          "kr": "힘의 발구르기 + 2",
+          "fr": "Choc brutal + 2",
+          "de": "Kraftstampfer + 2",
+          "es": "Pisotón potente + 2"
+        },
+        "castTime": 40,
+        "framesList": [
+          90
+        ],
+        "offset": 16,
+        "base": 500,
+        "ignore": 50
+      },
+      {
+        id: 506290,
+        "names": {
+          "en": "Full Charge Stomp + 2",
+          "tw": "超蓄力印章 + 2",
+          "kr": "전력 발구르기 + 2",
+          "fr": "Piétinement maximum + 2",
+          "de": "Voller Stampfer + 2",
+          "es": "Pisotón total + 2"
+        },
+        "castTime": 40,
+        "framesList": [
+          90
+        ],
+        "offset": 16,
+        "base": 620,
+        "ignore": 50
       }
     ]
   },
@@ -2454,6 +2608,80 @@ export const UNITS: any[] = [
         offset: 66,
         base: 500,
         ignore: 50
+      },
+      {
+        id: 504940,
+        "names": {
+          "en": "Tornado Kick+ + 2",
+          "tw": "鬥魂旋風腳+ + 2",
+          "kr": "투귀질풍각+ + 2",
+          "fr": "Coup de pied tornade + + 2",
+          "de": "Tornadotritt+ + 2",
+          "es": "Patada tornado+ + 2"
+        },
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "framesList": [
+          0, 30, 30
+        ],
+        "base": 250,
+        "ignore": 50,
+        offset: 66,
+      },
+      {
+        id: 504970,
+        "names": {
+          "en": "Prishe Special + 2",
+          "tw": "普利修特技 + 2",
+          "kr": "프리쉬 스페셜 + 2",
+          "fr": "Spécialité de Prishe + 2",
+          "de": "Prishe-Spezial + 2",
+          "es": "Especial de Prishe + 2"
+        },
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
+        ],
+        "framesList": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "base": 500,
+        "ignore": 50,
+        offset: 66,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 40
+          },
+          {
+            "type": "ice",
+            "value": 40
+          },
+          {
+            "type": "lightning",
+            "value": 40
+          },
+          {
+            "type": "water",
+            "value": 40
+          },
+          {
+            "type": "wind",
+            "value": 40
+          },
+          {
+            "type": "earth",
+            "value": 40
+          },
+          {
+            "type": "light",
+            "value": 40
+          },
+          {
+            "type": "dark",
+            "value": 40
+          }
+        ]
       }
     ]
   },
@@ -4175,6 +4403,23 @@ export const UNITS: any[] = [
           "earth"
         ],
         dualable: false
+      },
+      {
+        id: 10803,
+        names: {
+          en: "Gaia's Wrath (3)",
+          tw: "大地之怒 (3)",
+          kr: "대지의 분노 (3)",
+          fr: "Colère de Gaïa (3)",
+          de: "Gaias Wut (3)",
+          es: "Ira de la tierra (3)"
+        },
+        elements: [
+          "earth"
+        ],
+        dualable: false,
+        base: 22000,
+        framesList: [120]
       }
     ]
   },
@@ -4307,7 +4552,7 @@ export const UNITS: any[] = [
           de: "Klingengefängnis",
           es: "Prisión de cuchillas"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 42],
+        framesList: [42, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
         offset: 17,
         base: 400
@@ -4600,7 +4845,7 @@ export const UNITS: any[] = [
           de: "Armiger",
           es: "Coro espectral"
         },
-        framesList: [0, 5, 11, 42, 5121],
+        framesList: [121, 5, 11, 42, 50],
         base: 1480,
         dualable: false
       },
@@ -4643,7 +4888,7 @@ export const UNITS: any[] = [
           tw: "龍騎槍蛇神突擊",
           kr: "용의 창 바스킬레이드"
         },
-        framesList: [0, 61, 49, 10, 174],
+        framesList: [74, 61, 49, 10, 10],
         base: 520,
         ignore: 50,
         elements: [
@@ -4726,7 +4971,7 @@ export const UNITS: any[] = [
           de: "Tornadospeer",
           es: "Lanza tornado"
         },
-        framesList: [0, 5, 7, 7, 7, 7, 7, 7, 7, 116],
+        framesList: [116, 5, 7, 7, 7, 7, 7, 7, 7, 8],
         base: 390,
         ignore: 50,
         elements: [
@@ -4760,7 +5005,7 @@ export const UNITS: any[] = [
           de: "Unschuldige Magika",
           es: "Magika inocente"
         },
-        framesList: [0, 40, 20, 30, 370],
+        framesList: [70, 40, 20, 30, 30],
         castTime: 40,
         offset: 16,
         base: 200,
@@ -4931,7 +5176,7 @@ export const UNITS: any[] = [
           de: "Aufziehsoldaten",
           es: "Robosoldados"
         },
-        framesList: [0, 5, 5, 5, 5, 5, 5, 5, 5, 60],
+        framesList: [62, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         castTime: 40,
         offset: 16,
         base: 300
@@ -5084,7 +5329,7 @@ export const UNITS: any[] = [
           de: "Eissplitter",
           es: "Fragmentos de hielo"
         },
-        framesList: [0, 7, 7, 7, 7, 5, 7, 7, 7, 49],
+        framesList: [49, 7, 7, 7, 7, 5, 7, 7, 7, 7],
         castTime: 20,
         offset: 16,
         base: 330,
@@ -5150,7 +5395,7 @@ export const UNITS: any[] = [
           de: "Schneebegräbnis",
           es: "Entierro de nieve"
         },
-        framesList: [0, 8, 8, 8, 8, 8, 8, 8, 8, 60],
+        framesList: [60, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 36,
         offset: 16,
         base: 350,
@@ -5213,7 +5458,7 @@ export const UNITS: any[] = [
           de: "Gletscherwelle +2",
           es: "Ola glacial +2"
         },
-        framesList: [0, 6, 4, 3, 178],
+        framesList: [178, 6, 4, 3, 3],
         castTime: 40,
         offset: 16,
         base: 400,
@@ -5285,7 +5530,7 @@ export const UNITS: any[] = [
           de: "Fokusmagie - Durchschuss",
           es: "Concentrar magia - Disparo penetrante"
         },
-        framesList: [0, 6, 6, 6, 8],
+        framesList: [8, 6, 6, 6, 6],
         castTime: 40,
         offset: 16,
         base: 150,
@@ -5306,7 +5551,7 @@ export const UNITS: any[] = [
           de: "Fokusmagie - Wasserschuss",
           es: "Concentrar magia - Disparo acuático"
         },
-        framesList: [0, 6, 6, 6, 8],
+        framesList: [8, 6, 6, 6, 6],
         castTime: 40,
         offset: 16,
         base: 150,
@@ -5367,7 +5612,7 @@ export const UNITS: any[] = [
           de: "Eiszapfenmangel",
           es: "Carámbano de hielo"
         },
-        framesList: [0, 1110],
+        framesList: [110, 15],
         castTime: 40,
         offset: 16,
         base: 200,
@@ -5614,7 +5859,7 @@ export const UNITS: any[] = [
           de: "Befehl der Samurai-Prinzessin",
           es: "Orden de la princesa samurái"
         },
-        framesList: [0, 10, 10, 10, 10, 10, 10, 10, 10, 178],
+        framesList: [78, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         base: 790,
         dualable: false
       }
@@ -5638,7 +5883,7 @@ export const UNITS: any[] = [
           de: "Flammender Höllenschlag",
           es: "Tajo de fuego infernal"
         },
-        framesList: [0, 2, 4, 12, 24],
+        framesList: [24, 2, 4, 12, 5],
         castTime: 45,
         offset: 26,
         base: 550,
@@ -5657,7 +5902,7 @@ export const UNITS: any[] = [
           de: "Torpedo-Kata",
           es: "Formación torpedo"
         },
-        framesList: [0, 10, 10, 10, 145],
+        framesList: [45, 10, 10, 10, 10],
         castTime: 40,
         offset: 26,
         base: 450,
@@ -6055,7 +6300,7 @@ export const UNITS: any[] = [
           de: "Schnelles Donnerlicht",
           es: "Luz atronadora veloz"
         },
-        framesList: [0, 12],
+        framesList: [2, 10],
         offset: 56,
         base: 230,
         type: "finish",
@@ -6081,7 +6326,7 @@ export const UNITS: any[] = [
           de: "Schneller Heller Blitz",
           es: "Destello luminoso veloz"
         },
-        framesList: [0, 12],
+        framesList: [2, 10],
         offset: 56,
         base: 230,
         type: "finish",
@@ -6107,7 +6352,7 @@ export const UNITS: any[] = [
           de: "Schnelle Verdorbene Düsternis",
           es: "Penumbra luminosa veloz"
         },
-        framesList: [0, 12],
+        framesList: [2, 10],
         offset: 56,
         base: 230,
         type: "finish",
@@ -10477,6 +10722,583 @@ export const UNITS: any[] = [
           140, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         base: 1240
+      }
+    ]
+  },
+  {
+    id: 140,
+    names: {
+      en: "Reimi",
+      tw: "蕾米",
+      kr: "레이미"
+    },
+    abilities: [
+      {
+        id: 225620,
+        names: {
+          en: "Chaotic Blossoms",
+          tw: "亂櫻",
+          kr: "벚꽃난무",
+          fr: "Fleurs du chaos",
+          de: "Chaosblüten",
+          es: "Flores del caos"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        framesList: [
+          2, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        base: 200,
+        offset: 8
+      },
+      {
+        id: 225630,
+        names: {
+          en: "Crimson Squall",
+          tw: "紅陣雨",
+          kr: "붉은 가을비",
+          fr: "Hurlement pourpre",
+          de: "Sturmpfeil",
+          es: "Lluvia carmesí"
+        },
+        hitDamage: [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        castTime: 40,
+        framesList: [
+          42, 7, 7, 7, 7, 7, 7, 7
+        ],
+        offset: 16,
+        base: 220
+      },
+      {
+        id: 225640,
+        names: {
+          en: "Crescent Wings",
+          tw: "弦月",
+          kr: "조각달",
+          fr: "Ailes en croissant",
+          de: "Flügel des Zorns",
+          es: "Alas crecientes"
+        },
+        hitDamage: [
+          50, 50
+        ],
+        castTime: 40,
+        framesList: [
+          142, 4
+        ],
+        offset: 16,
+        base: 200,
+        ignore: 25
+      },
+      {
+        id: 319000106,
+        names: {
+          en: "Savage Sparrows",
+          tw: "荒燕",
+          kr: "황연",
+          fr: "Moineaux sauvages",
+          de: "Wildspatzen",
+          es: "Gorriones salvajes"
+        },
+        hitDamage: [
+          16, 16, 17, 17, 17, 17
+        ],
+        dualable: false,
+        framesList: [
+          103, 5, 5, 5, 5, 5
+        ],
+        base: 720
+      }
+    ],
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          225620,
+          225630,
+          225640
+        ]
+      }
+    ]
+  },
+  {
+    id: 141,
+    names: {
+      en: "Fidel",
+      tw: "菲德爾",
+      kr: "피델"
+    },
+    abilities: [
+      {
+        id: 225770,
+        names: {
+          en: "Mirror Blade",
+          tw: "鏡面剎",
+          kr: "경면살",
+          fr: "Lame miroir",
+          de: "Spiegelwelt",
+          es: "Espada reflejante"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        framesList: [
+          17, 9, 17, 39, 8
+        ],
+        base: 360,
+        offset: 8
+      },
+      {
+        id: 225420,
+        names: {
+          en: "Abyssal Gate",
+          tw: "迷失者閃避",
+          kr: "스트레이어 보이드",
+          fr: "Porte des abysses",
+          de: "Einschießen",
+          es: "Puerta a las profundidades"
+        },
+        hitDamage: [
+          33, 33, 34
+        ],
+        castTime: 40,
+        framesList: [
+          52, 40, 40
+        ],
+        offset: 16,
+        base: 400
+      },
+      {
+        id: 225760,
+        names: {
+          en: "Cyclone Blade",
+          tw: "颶風之刃",
+          kr: "사이클론 블레이드",
+          fr: "Lame cyclone",
+          de: "Wirbelsturmklinge",
+          es: "Espada ciclónica"
+        },
+        hitDamage: [
+          20, 20, 20, 20, 20
+        ],
+        castTime: 40,
+        framesList: [
+          62, 8, 8, 8, 8
+        ],
+        offset: 16,
+        base: 200,
+        debuffs: [
+          {
+            type: "wind",
+            value: 50
+          }
+        ]
+      },
+      {
+        id: 225410,
+        names: {
+          en: "Air Raid",
+          tw: "垂直空中襲擊",
+          kr: "바티칼 에어레이드",
+          fr: "Raid aérien",
+          de: "Vertikaler Luftschlag",
+          es: "Asalto aéreo"
+        },
+        hitDamage: [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        castTime: 40,
+        framesList: [
+          42, 30, 7, 3, 4, 4, 7, 7, 7
+        ],
+        offset: 16,
+        base: 350,
+        ignore: 50
+      },
+      {
+        id: 320000106,
+        names: {
+          en: "Ethereal Blast",
+          tw: "異凍·衝擊",
+          kr: "이데리얼 블래스트",
+          fr: "Explosion iserial",
+          de: "Iserialknall",
+          es: "Explosión etérea"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9
+        ],
+        dualable: false,
+        framesList: [
+          202, 10, 10, 10, 10, 10, 10, 10, 20, 8, 8, 8
+        ],
+        base: 550,
+        ignore: 50
+      }
+    ]
+  },
+  {
+    id: 142,
+    "names": {
+      "en": "Fayt",
+      "tw": "菲特",
+      "kr": "페이트"
+    },
+    "abilities": [
+      {
+        "id": 225400,
+        "names": {
+          "en": "Blade of Fury",
+          "tw": "連鎖刃器",
+          "kr": "블레이드 리액터",
+          "fr": "Onde tranchante",
+          "de": "Klingenreaktor",
+          "es": "Hoja reactiva"
+        },
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 15,
+        "framesList": [
+          17, 13, 17, 23, 35
+        ],
+        "offset": 16,
+        "base": 1250
+      },
+      {
+        "id": 225390,
+        "names": {
+          "en": "Side Kick",
+          "tw": "衝突反射",
+          "kr": "리플렉트 스트라이프",
+          "fr": "Mêlée défoulante",
+          "de": "Reflektierte Zwietracht",
+          "es": "Riña reflectante"
+        },
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "framesList": [
+          2, 5, 5
+        ],
+        "base": 240,
+        offset: 8
+      },
+      {
+        "id": 225420,
+        "names": {
+          "en": "Abyssal Gate",
+          "tw": "迷失者閃避",
+          "kr": "스트레이어 보이드",
+          "fr": "Porte des abysses",
+          "de": "Einschießen",
+          "es": "Puerta a las profundidades"
+        },
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "framesList": [
+          52, 40, 40
+        ],
+        "offset": 16,
+        "base": 400
+      },
+      {
+        "id": 225410,
+        "names": {
+          "en": "Air Raid",
+          "tw": "垂直空中襲擊",
+          "kr": "바티칼 에어레이드",
+          "fr": "Raid aérien",
+          "de": "Vertikaler Luftschlag",
+          "es": "Asalto aéreo"
+        },
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 30, 7, 3, 4, 4, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 350,
+        "ignore": 50
+      },
+      {
+        "id": 318000106,
+        "names": {
+          "en": "Ethereal Blast of Time",
+          "tw": "異凍·衝刺·刻",
+          "kr": "이데리얼 블래스트·타임",
+          "fr": "Explosion éthérée du temps",
+          "de": "Iserialknall - Zeit",
+          "es": "Explosión temporal etérea"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9
+        ],
+        "dualable": false,
+        "framesList": [
+          202, 10, 10, 10, 10, 10, 10, 10, 20, 8, 8, 8
+        ],
+        "base": 580,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          },
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 143,
+    "names": {
+      "en": "Rena",
+      "tw": "蕾娜",
+      "kr": "레나"
+    },
+    "abilities": [
+      {
+        id: 225570,
+        "names": {
+          "en": "Laser Beams",
+          "tw": "光束",
+          "kr": "레이",
+          "fr": "Rayon",
+          "de": "Strahl",
+          "es": "Rayo láser"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "framesList": [
+          60, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        id: 225580,
+        "names": {
+          "en": "Star Flare",
+          "tw": "星耀",
+          "kr": "스타 플레어",
+          "fr": "Brasier stellaire",
+          "de": "Sternenfeuer",
+          "es": "Fulgor estelar"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "framesList": [
+          140, 30, 30, 30, 30, 30, 30
+        ],
+        "offset": 16,
+        "base": 660
+      }
+    ],
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          225570,
+          225580
+        ]
+      }
+    ]
+  },
+  {
+    id: 144,
+    "names": {
+      "en": "Veritas of the Waters",
+      "tw": "水華之維利亞斯",
+      "kr": "물꽃의 베리어스",
+      "fr": "Veritas des Mers",
+      "de": "Veritas der Meere",
+      "es": "Veritas el marino"
+    },
+    "abilities": [
+      {
+        id: 100007906,
+        "names": {
+          "en": "Aquatic Retribution",
+          "tw": "華麗水罰",
+          "kr": "화려한 물고문",
+          "fr": "Châtiment aquatique",
+          "de": "Aquatische Vergeltung",
+          "es": "Retribución marina"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          20,
+          20,
+          60
+        ],
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          76,
+          11,
+          8
+        ],
+        "base": 570
+      },
+      {
+        id: 506450,
+        "names": {
+          "en": "Psycho Skewer + 2",
+          "tw": "瘋狂穿刺 + 2",
+          "kr": "사이코스큐어 + 2",
+          "fr": "Empalement psychotique + 2",
+          "de": "Psycho-Spieß + 2",
+          "es": "Pincho psicopático + 2"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          190
+        ],
+        "offset": 16,
+        "base": 1000
+      },
+      {
+        "id": 506510,
+        "names": {
+          "en": "Swift Current + 2",
+          "tw": "急流 + 2",
+          "kr": "급류 + 2",
+          "fr": "Courant rapide + 2",
+          "de": "Flinke Strömung + 2",
+          "es": "Corriente potente + 2"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          100, 15, 15, 15, 15
+        ],
+        "offset": 16,
+        "base": 500,
+        "ignore": 25
+      },
+      {
+        "id": 506520,
+        "names": {
+          "en": "Aqua Prison + 2",
+          "tw": "水業牢籠 + 2",
+          "kr": "물의 감옥 + 2",
+          "fr": "Prison aquatique + 2",
+          "de": "Aquagefängnis + 2",
+          "es": "Prisión acuática + 2"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          42, 15, 15, 15, 15
+        ],
+        "offset": 16,
+        "base": 250,
+        "ignore": 25
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2
+  },
+  {
+    id: 145,
+    "names": {
+      "en": "Werei",
+      "tw": "韋萊",
+      "kr": "웨라이"
+    },
+    "abilities": [
+      {
+        id: 705000,
+        "names": {
+          "en": "Stone Fall + 2",
+          "tw": "墜石 + 2",
+          "kr": "낙석 + 2",
+          "fr": "Chute de pierre + 2",
+          "de": "Steinschlag + 2",
+          "es": "Avalancha de rocas + 2"
+        },
+        "elements": [
+          "earth"
+        ],
+        "framesList": [
+          140
+        ],
+        "offset": 8,
+        "base": 400,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 65
+          }
+        ]
       }
     ]
   }

@@ -224,11 +224,13 @@ export class JsonService {
   private updateFrames(unitId, id, ability) {
     let framesList = [];
 
-    for (let i = 0; i < ability.attack_frames[0].length; i++) {
+    let frames = ability.attack_frames[0].sort((n1, n2) => n1 - n2);
+
+    for (let i = 0; i < frames.length; i++) {
       if (i === 0) {
-        framesList.push(ability.attack_frames[0][i]);
+        framesList.push(frames[i]);
       } else {
-        framesList.push(Math.abs(ability.attack_frames[0][i] - ability.attack_frames[0][i - 1]));
+        framesList.push(Math.abs(frames[i] - frames[i - 1]));
       }
     }
 
@@ -242,6 +244,8 @@ export class JsonService {
       } else {
         this.ffbeChainUnits[unitId].abilities[id].offset = 16;
       }
+    } else {
+      this.ffbeChainUnits[unitId].abilities[id].offset = 8;
     }
   }
 
@@ -469,7 +473,7 @@ export class JsonService {
     if (effect) {
       effect[1].forEach(skillId => {
         let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
-        this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(skillId);
+        this.saveMultiCast(unitId, multiCastPosition, skillId);
       });
     }
 
@@ -482,10 +486,10 @@ export class JsonService {
 
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
-          this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(skillId);
+          this.saveMultiCast(unitId, multiCastPosition, skillId);
         });
       } else {
-        this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(effect[3]);
+        this.saveMultiCast(unitId, multiCastPosition, effect[3]);
       }
     }
 
@@ -495,11 +499,25 @@ export class JsonService {
 
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
-          this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(skillId);
+          this.saveMultiCast(unitId, multiCastPosition, skillId);
         });
       } else {
-        this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(effect[3]);
+        this.saveMultiCast(unitId, multiCastPosition, effect[3]);
       }
+    }
+  }
+
+  private saveMultiCast(unitId, multiCastPosition, abilityId) {
+    let exist = false;
+
+    this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.forEach(ability => {
+      if (ability == abilityId) {
+        exist = true;
+      }
+    });
+
+    if (!exist) {
+      this.ffbeChainUnits[unitId].multiCasts[multiCastPosition].abilities.push(abilityId);
     }
   }
 
