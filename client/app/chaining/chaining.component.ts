@@ -737,6 +737,10 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       }
     }
 
+    this.chain[unitPosition].selectedIds.forEach((id, index) => {
+      this.chain[unitPosition].selectedAbilities[index].flatFrames = this.chain[unitPosition].selectedAbilities[index].framesList.join('-');
+    });
+
     this.onChangeChain();
   }
 
