@@ -86,11 +86,7 @@ export class JsonService {
 
       if (id && this.units[unitId].skills) {
         this.units[unitId].skills.forEach((ability, index) => {
-          if (ability.rarity < 7) {
-            this.addSkill(id, this.skills[ability.id], ability.id);
-          } else {
-            // TODO add 7 stars skills
-          }
+          this.addSkill(id, this.skills[ability.id], ability.id);
         });
       }
 
@@ -266,9 +262,30 @@ export class JsonService {
       return;
     }
 
+    effect = this.findEffect(ability, 2, 1, 81);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
     effect = this.findEffect(ability, 2, 4, 1);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
+    effect = this.findEffect(ability, 1, 1, 41);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
+    effect = this.findEffect(ability, 2, 1, 112);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
@@ -300,7 +317,7 @@ export class JsonService {
 
     effect = this.findEffect(ability, 1, 1, 126);
     if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[5] * effect[6];
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[4] + effect[5] * effect[6];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
@@ -465,7 +482,16 @@ export class JsonService {
 
     effect = this.findEffect(ability, 0, 3, 97);
     if (effect) {
-      this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 2 >= this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
+      if (effect[0] === 2) {
+        this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 2 >= this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
+      } else if (effect[0] === 0) {
+        this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || 3 >= this.ffbeChainUnits[unitId].multipleBlack ? 3 : this.ffbeChainUnits[unitId].multipleBlack;
+        this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 3 >= this.ffbeChainUnits[unitId].multipleWhite ? 3 : this.ffbeChainUnits[unitId].multipleWhite;
+        this.ffbeChainUnits[unitId].multipleGreen = !this.ffbeChainUnits[unitId].multipleGreen || 3 >= this.ffbeChainUnits[unitId].multipleGreen ? 3 : this.ffbeChainUnits[unitId].multipleGreen;
+      } else {
+        console.log("effect not known ==> ");
+        console.log(ability);
+      }
     }
 
     // ==> "effects_raw": [0, 3, 1006, [2, [ListSkillIds, ..., ..., ...]]]
@@ -659,6 +685,26 @@ export class JsonService {
           this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0], level);
         }
       }
+    }
+
+    effect = this.findEffect(ability, 0, 3, 130);
+    if (effect) {
+      this.addSkill(unitId, this.skills[effect[0]], effect[0], level);
+    }
+
+    effect = this.findEffect(ability, 1, 1, 130);
+    if (effect) {
+      this.addSkill(unitId, this.skills[effect[0]], effect[0], level);
+    }
+
+    effect = this.findEffect(ability, 2, 1, 130);
+    if (effect) {
+      this.addSkill(unitId, this.skills[effect[0]], effect[0], level);
+    }
+
+    effect = this.findEffect(ability, 0, 3, 72);
+    if (effect) {
+      this.addSkill(unitId, this.lbs[effect[0]], effect[0], 1, true);
     }
   }
 
