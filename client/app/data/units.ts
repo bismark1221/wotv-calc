@@ -9516,7 +9516,7 @@ export const UNITS: any[] = [
           "es": "Empatía infinita"
         },
         "castTime": 20,
-        hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12]
+        hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
