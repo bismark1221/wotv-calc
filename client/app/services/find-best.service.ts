@@ -152,7 +152,11 @@ export class FindBestService {
 
       ability.framesList.forEach((hit, i) => {
         if (i === 0) {
-          hit = 0;
+          if (index === 0) {
+            hit = 0;
+          } else {
+            hit = hit - unit.selectedAbilities[0].framesList[0];
+          }
         }
         countFrames += Number(hit);
         this.chainUnitsHits[unitPosition][framesGap].push({frame: countFrames, type: index, damage: ability.hitDamage[i], abilityIndex: index});
