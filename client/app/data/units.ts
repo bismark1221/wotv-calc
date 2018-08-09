@@ -9487,14 +9487,10 @@ export const UNITS: any[] = [
           "es": "Corte fulmíneo"
         },
         "hitDamage": [
-          30,
-          30,
-          40
+          30, 30, 40
         ],
         "framesList": [
-          2,
-          10,
-          10
+          2, 10, 10
         ],
         "offset": 8,
         "base": 1100,
@@ -9534,49 +9530,11 @@ export const UNITS: any[] = [
           "es": "Andanada"
         },
         "hitDamage": [
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         "dualable": false,
         "framesList": [
-          39,
-          14,
-          14,
-          34,
-          32,
-          42,
-          3,
-          7,
-          3,
-          24,
-          3,
-          31,
-          50,
-          3,
-          3,
-          4,
-          3,
-          3,
-          3,
-          3
+          39, 14, 14, 34, 32, 42, 3, 7, 3, 24, 3, 31, 50, 3, 3, 4, 3, 3, 3, 3
         ],
         "offset": 8,
         "base": 1800
@@ -12814,7 +12772,6 @@ export const UNITS: any[] = [
       }
     ]
   },
-  ,
   {
     id: 150,
     "names": {
@@ -12842,6 +12799,283 @@ export const UNITS: any[] = [
         ],
         "offset": 16,
         "base": 600
+      }
+    ]
+  },
+  {
+    id: 151,
+    "names": {
+      "en": "Nalu",
+      "tw": "娜露",
+      "kr": "나루"
+    },
+    "abilities": [
+      {
+        "id": 226912,
+        "names": {
+          "en": "Lightning Spear Jab",
+          "tw": "雷槍一迅",
+          "kr": "뇌창일신",
+          "fr": "Coup de lance de foudre",
+          "de": "Blitzspeerstich",
+          "es": "Lanzada de rayo"
+        },
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          10
+        ],
+        "offset": 8,
+        "base": 400
+      },
+      {
+        "id": 226913,
+        "names": {
+          "en": "Thunder Spear",
+          "tw": "雷鳴槍",
+          "kr": "뇌명창",
+          "fr": "Lance-tonnerre",
+          "de": "Donnerspeer",
+          "es": "Lanza de rayo"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ],
+        "offset": 16,
+        "base": 250,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 507490,
+        "names": {
+          "en": "Thunder Fang",
+          "tw": "槍牙襲雷",
+          "kr": "창아습뢰",
+          "fr": "Croc foudroyant",
+          "de": "Donnerzahn",
+          "es": "Colmillo de rayo"
+        },
+        "hitDamage": [
+          12, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8,
+        "base": 1100
+      },
+      {
+        "id": 100015407,
+        "names": {
+          "en": "Beastly Symbiosis",
+          "tw": "獸往無盡",
+          "kr": "수왕무진",
+          "fr": "Symbiose bestiale",
+          "de": "Bestiae ad Infinitum",
+          "es": "Simbiosis bestial"
+        },
+        "hitDamage": [
+          4, 4, 4, 5, 4, 4, 5, 4, 4, 4, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 5
+        ],
+        "dualable": false,
+        "framesList": [
+          56, 6, 5, 5, 5, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 8,
+        "base": 1200,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "names": {
+      "en": "Pecciotta",
+      "tw": "皮曹塔",
+      "kr": "페초타"
+    },
+    "abilities": [
+      {
+        "id": 100015506,
+        "names": {
+          "en": "Black Storm",
+          "tw": "漫天風沙",
+          "kr": "검은 폭풍",
+          "fr": "Tempête noire",
+          "de": "Sandsturm",
+          "es": "Tormenta negra"
+        },
+        "dualable": false,
+        "framesList": [
+          0
+        ],
+        "offset": 8,
+        "base": 700
+      },
+      {
+        "id": 507500,
+        "names": {
+          "en": "Glorious Wind",
+          "tw": "風靈暴怒",
+          "kr": "영광의 바람",
+          "fr": "Vent glorieux",
+          "de": "Ruhmreicher Wind",
+          "es": "Viento de gloria"
+        },
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "framesList": [
+          60, 7, 7, 8, 7, 7, 8, 7, 7, 8, 7, 7, 8, 7, 7, 8
+        ],
+        "offset": 16,
+        "base": 500,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "names": {
+      "en": "Shinju",
+      "tw": "真珠",
+      "kr": "신쥬"
+    },
+    "abilities": [
+      {
+        "id": 507515,
+        "names": {
+          "en": "Violent Tail",
+          "tw": "暴力馬尾",
+          "kr": "난폭한 꼬리",
+          "fr": "Coup de queue violent",
+          "de": "Gewaltschweif",
+          "es": "Cola violenta"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 8,
+        "base": 300,
+        "ignore": 50
+      },
+      {
+        "id": 226956,
+        "names": {
+          "en": "Shut up already!",
+          "tw": "你好煩啊！",
+          "kr": "짜증 난다고!",
+          "fr": "Tais-toi donc !",
+          "de": "Du nervst!",
+          "es": "¡¿Pero por qué no te callas?!"
+        },
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "framesList": [
+          22, 9, 9, 10
+        ],
+        "offset": 8,
+        "base": 200
+      },
+      {
+        "id": 507510,
+        "names": {
+          "en": "Now we're talkin'!",
+          "tw": "來感覺了！！",
+          "kr": "감이 오는데!!",
+          "fr": "Exactement c'qui m'fallait !",
+          "de": "Jetzt kommen wir der Sache näher!",
+          "es": "¡Ahora sí!"
+        },
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "framesList": [
+          25, 7, 7, 7, 7
+        ],
+        "offset": 8,
+        "base": 400
+      },
+      {
+        "id": 507511,
+        "names": {
+          "en": "Hyped Up!",
+          "tw": "情緒MAX！！！",
+          "kr": "텐션 MAX!!!",
+          "fr": "À 100 % !",
+          "de": "Bombenstimmung!",
+          "es": "¡A tope!"
+        },
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "castTime": 40,
+        "framesList": [
+          55, 10, 10, 10, 10, 10
+        ],
+        "offset": 16,
+        "base": 500,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 100015606,
+        "names": {
+          "en": "Soil Rush",
+          "tw": "靈魂突進",
+          "kr": "토지 돌진",
+          "fr": "Ruée terrestre",
+          "de": "Erdsturz",
+          "es": "Celeridad terrenal"
+        },
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 16
+        ],
+        "dualable": false,
+        "framesList": [
+          38, 10, 10, 10, 6, 6, 6, 6, 6, 6, 6, 6, 5, 4, 4, 4, 4, 4, 4, 4, 4, 24
+        ],
+        "offset": 8,
+        "base": 1080,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 84
+          }
+        ]
       }
     ]
   }
