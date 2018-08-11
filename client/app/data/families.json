@@ -834,6 +834,30 @@
         ]
       },
       {
+        "id": 100015405,
+        "names": {
+          "en": "Nalu",
+          "tw": "娜露",
+          "kr": "나루",
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 226913,
+            "names": {
+              "en": "Thunder Spear",
+              "tw": "雷鳴槍",
+              "kr": "뇌명창",
+              "fr": "Lance-tonnerre",
+              "de": "Donnerspeer",
+              "es": "Lanza de rayo"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
         "id": 207001005,
         "names": {
           "en": "Sephiroth",
@@ -2074,6 +2098,41 @@
               "fr": "Lame briseterre",
               "de": "Erdzerschmetterer",
               "es": "Hoja sacudetierra"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100015604,
+        "names": {
+          "en": "Shinju",
+          "tw": "真珠",
+          "kr": "신쥬",
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 507515,
+            "names": {
+              "en": "Violent Tail",
+              "tw": "暴力馬尾",
+              "kr": "난폭한 꼬리",
+              "fr": "Coup de queue violent",
+              "de": "Gewaltschweif",
+              "es": "Cola violenta"
+            },
+            "offset": 8
+          },
+          {
+            "id": 507514,
+            "names": {
+              "en": "Violent Tail",
+              "tw": "暴力馬尾",
+              "kr": "난폭한 꼬리",
+              "fr": "Coup de queue violent",
+              "de": "Gewaltschweif",
+              "es": "Cola violenta"
             },
             "offset": 8
           }
