@@ -80,7 +80,7 @@ export class FamiliesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.families = families;
+    this.families = JSON.parse(JSON.stringify(families));
     this.cleanFamilies();
   }
 
