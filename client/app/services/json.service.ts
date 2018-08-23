@@ -283,6 +283,13 @@ export class JsonService {
       return;
     }
 
+
+    effect = this.findEffect(ability, 1, 1, 112);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
     effect = this.findEffect(ability, 2, 1, 112);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
@@ -338,6 +345,19 @@ export class JsonService {
       return;
     }
 
+    // 1, 1, 102, [100,  99999,  400]
+    effect = this.findEffect(ability, 1, 1, 102);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+    effect = this.findEffect(ability, 2, 1, 102);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
 
 
     // magic damage : [1, 1, 15, [0,  0,  0,  0,  0,  180,  0]

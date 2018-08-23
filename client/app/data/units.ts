@@ -5066,6 +5066,27 @@ export const UNITS: any[] = [
           "dark"
         ],
         dualable: false
+      },
+      {
+        id: 10503,
+        "names": {
+          "en": "Dark Messenger (3)",
+          "tw": "黑暗使者 (3)",
+          "kr": "어둠에서 온 사자 (3)",
+          "fr": "Héraut ténébreux (3)",
+          "de": "Dunkler Bote (3)",
+          "es": "Emisario de la noche (3)"
+        },
+        elements: [
+          "dark"
+        ],
+        "dualable": false,
+        "damage": "magic",
+        "base": 30000,
+        "framesList": [
+          400
+        ],
+        "offset": 8
       }
     ]
   },
@@ -5188,6 +5209,28 @@ export const UNITS: any[] = [
           "wind"
         ],
         dualable: false
+      },
+      {
+        id: 10903,
+        "names": {
+          "en": "Heavenswind (3)",
+          "tw": "四天之風 (3)",
+          "kr": "사천의 바람 (3)",
+          "fr": "Vent céleste (3)",
+          "de": "Himmelswind (3)",
+          "es": "Viento celestial (3)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "damage": "magic",
+        "base": 23000,
+        "framesList": [
+          230
+        ],
+        elements: [
+          "wind"
+        ],
+        "offset": 16
       }
     ]
   },
@@ -13074,6 +13117,508 @@ export const UNITS: any[] = [
           {
             "type": "earth",
             "value": 84
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 154,
+    "names": {
+      "en": "Václav Koller",
+      "tw": "瓦茨拉夫·科勒",
+      "kr": "바클라프 콜러"
+    },
+    "abilities": [
+      {
+        "id": 911119,
+        "names": {
+          "en": "Toy Gun Experimentation",
+          "tw": "玩具槍實驗",
+          "kr": "장난감 총 실험",
+          "fr": "Expérimentation au pistolet en plastique",
+          "de": "Spielzeugpistolenexperimente",
+          "es": "Experimentación con armas de juguete"
+        },
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 40,
+        "framesList": [
+          80, 10, 10
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 911121,
+        "names": {
+          "en": "Mass Remote Hacking",
+          "tw": "大規模遠端駭入",
+          "kr": "매스 리부트 해킹",
+          "fr": "Piratage à distance massif",
+          "de": "Massenhaftes Remote Hacken",
+          "es": "Hackeo remoto en masa"
+        },
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 40,
+        "framesList": [
+          80, 10, 10
+        ],
+        "offset": 16,
+        "base": 200
+      },
+      {
+        "id": 911122,
+        "names": {
+          "en": "Crippling Experimentation",
+          "tw": "傷殘實驗",
+          "kr": "실험 저해",
+          "fr": "Expérimentation paralysante",
+          "de": "Schädigende Experimente",
+          "es": "Experimentación catastrófica"
+        },
+        "hitDamage": [
+          16, 16, 17, 17
+        ],
+        "castTime": 40,
+        "framesList": [
+          40, 8, 8, 8
+        ],
+        "offset": 16,
+        "base": 150
+      },
+      {
+        "id": 911127,
+        "names": {
+          "en": "Augmentation Tuning",
+          "tw": "強化調整",
+          "kr": "증강 튜닝",
+          "fr": "Augmentation personnalisée",
+          "de": "Augmentierungsanpassung",
+          "es": "Ajustes de aumento"
+        },
+        "hitDamage": [
+          16, 16, 17, 17
+        ],
+        "castTime": 40,
+        "framesList": [
+          40, 8, 8, 8
+        ],
+        "offset": 16,
+        "base": 200
+      },
+      {
+        "id": 911132,
+        "names": {
+          "en": "Full Augmentation Potential",
+          "tw": "最大強化潛能",
+          "kr": "최대 증강 잠재력",
+          "fr": "Augmentation potentiel maximum",
+          "de": "Volles Augmentierungspotenzial",
+          "es": "Potencial máximo de aumentos"
+        },
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16,
+        "base": 250,
+        "ignore": 25
+      },
+      {
+        "id": 401005106,
+        "names": {
+          "en": "Augmentation Revolution",
+          "tw": "強化革命",
+          "kr": "증강 혁명",
+          "fr": "Révolution de l'augmentation",
+          "de": "Augmentierungsrevolution",
+          "es": "Revolución de los aumentos"
+        },
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          304, 2, 2, 2
+        ],
+        "offset": 8,
+        "base": 420
+      }
+    ]
+  },
+  {
+    id: 155,
+    "names": {
+      "en": "Viktor Marchenko",
+      "tw": "維克托·馬爾琴科",
+      "kr": "빅토르 마르첸코"
+    },
+    "abilities": [
+      {
+        "id": 911217,
+        "names": {
+          "en": "P.E.P.S. Knockback",
+          "tw": "P.E.P.S.衝擊",
+          "kr": "P.E.P.S. 넉백",
+          "fr": "PRIME - Répulsion",
+          "de": "P.E.P.S. Rückstoß",
+          "es": "Bloqueo P.E.P.S."
+        },
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 300
+      },
+      {
+        "id": 911226,
+        "names": {
+          "en": "Pro-Augmentation",
+          "tw": "擁護強化人",
+          "kr": "증강 인류 지지",
+          "fr": "Pro-augmentation",
+          "es": "Proaumento"
+        },
+        "castTime": 40,
+        "framesList": [
+          130
+        ],
+        "offset": 16,
+        "base": 400
+      },
+      {
+        "id": 911227,
+        "names": {
+          "en": "Pro-Human",
+          "tw": "擁護人類",
+          "kr": "일반 인류 지지",
+          "fr": "Pro-humain",
+          "de": "Pro-Mensch",
+          "es": "Prohumano"
+        },
+        "castTime": 40,
+        "framesList": [
+          130
+        ],
+        "offset": 16,
+        "base": 400
+      },
+      {
+        "id": 911229,
+        "names": {
+          "en": "Takedown",
+          "tw": "擊倒",
+          "kr": "테이크다운",
+          "fr": "Renverser",
+          "es": "Derribamiento"
+        },
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 750
+      },
+      {
+        "id": 911231,
+        "names": {
+          "en": "Security System",
+          "tw": "保全系統",
+          "kr": "보안 시스템",
+          "fr": "Système de sécurité",
+          "de": "Sicherheitssystem",
+          "es": "Sistema de seguridad"
+        },
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16,
+        "base": 650
+      },
+      {
+        "id": 911242,
+        "names": {
+          "en": "Icarus Dash",
+          "tw": "伊卡洛斯衝刺",
+          "kr": "이카루스 대쉬",
+          "fr": "Accélération Icarus",
+          "de": "Ikarus-Sprint",
+          "es": "Esprint de Ícaro"
+        },
+        "castTime": 1,
+        "framesList": [
+          40
+        ],
+        "offset": 16,
+        "base": 1850,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 75
+          }
+        ]
+      },
+      {
+        "id": 911243,
+        "names": {
+          "en": "Plasma Bolt",
+          "tw": "等離子閃電",
+          "kr": "플라즈마 볼트",
+          "fr": "Éclair à Plasma",
+          "de": "Plasmablitz",
+          "es": "Rayo de plasma"
+        },
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 1850,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          }
+        ]
+      },
+      {
+        "id": 401005007,
+        "names": {
+          "en": "Hyperion Plasma Blast",
+          "tw": "太陽神等離子爆破",
+          "kr": "하이페리온 플라즈마 블래스트",
+          "fr": "Explosion à plasma Hyperion",
+          "de": "Hyperion-Plasmablitz",
+          "es": "Explosión de plasma Hiperión"
+        },
+        "dualable": false,
+        "framesList": [
+          260
+        ],
+        "offset": 8,
+        "base": 1500
+      }
+    ]
+  },
+  {
+    id: 156,
+    "names": {
+      "en": "Adam Jensen",
+      "tw": "亞當·傑森",
+      "kr": "아담 젠슨"
+    },
+    "abilities": [
+      {
+        "id": 911193,
+        "names": {
+          "en": "Wall Breaker",
+          "tw": "破牆者",
+          "kr": "장벽 브레이커",
+          "fr": "Briseur de mur",
+          "de": "Wand durchschlagen",
+          "es": "Rompemuros"
+        },
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 100
+      },
+      {
+        "id": 911196,
+        "names": {
+          "en": "P.E.P.S. Knockback",
+          "tw": "P.E.P.S.衝擊",
+          "kr": "P.E.P.S. 넉백",
+          "fr": "PRIME - Répulsion",
+          "de": "P.E.P.S. Rückstoß",
+          "es": "Bloqueo P.E.P.S."
+        },
+        "castTime": 40,
+        "framesList": [
+          100
+        ],
+        "offset": 16,
+        "base": 300
+      },
+      {
+        "id": 911199,
+        "names": {
+          "en": "TESLA",
+          "kr": "테슬라"
+        },
+        "hitDamage": [
+          15, 15, 15, 15, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5
+        ],
+        "offset": 16,
+        "base": 350,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 911200,
+        "names": {
+          "en": "Wideband Frequency-Jammer",
+          "tw": "頻寬干擾器",
+          "kr": "광대역 주파수 방해 전파",
+          "fr": "Brouilleur à bande large",
+          "de": "Breitbandfrequenz-Störsender",
+          "es": "Bloqueador de frecuencias de banda ancha"
+        },
+        "framesList": [
+          31
+        ],
+        "offset": 8,
+        "base": 100
+      },
+      {
+        "id": 911204,
+        "names": {
+          "en": "Quicksilver Reflex Booster",
+          "tw": "水銀反射加速器",
+          "kr": "퀵실버 리플렉스 부스터",
+          "fr": "Booster de réflexes Quicksilver",
+          "de": "Quecksilber-Reflexbooster",
+          "es": "Potenciador de reflejos"
+        },
+        "castTime": 3,
+        "framesList": [
+          60
+        ],
+        "offset": 16,
+        "base": 300
+      },
+      {
+        "id": 911206,
+        "names": {
+          "en": "Nanoblade",
+          "tw": "奈米刀片",
+          "kr": "나노 블레이드",
+          "fr": "Nanolame",
+          "de": "Nanoklinge",
+          "es": "Nanocuchilla"
+        },
+        "castTime": 10,
+        "framesList": [
+          2
+        ],
+        "offset": 16,
+        "base": 1400
+      },
+      {
+        "id": 911239,
+        "names": {
+          "en": "Explosive Heat Blade",
+          "tw": "爆破熱能刀片",
+          "kr": "폭발열 블레이드",
+          "fr": "Nanolame explosive",
+          "de": "Explosive Hitzeklinge",
+          "es": "Cuchilla calorífica explosiva"
+        },
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          10
+        ],
+        "offset": 8,
+        "base": 1200,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 911240,
+        "names": {
+          "en": "Typhoon Explosive System",
+          "tw": "颱風爆破系統",
+          "kr": "타이푼 폭발 시스템",
+          "fr": "Système explosif Typhoon",
+          "de": "Taifun-Explosivsystem",
+          "es": "Sistema de explosiones Typhoon"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 1200,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          }
+        ]
+      },
+      {
+        "id": 911241,
+        "names": {
+          "en": "Remote Hacking",
+          "tw": "遠端駭入",
+          "kr": "원격 해킹",
+          "fr": "Piratage à distance",
+          "de": "Remote Hacken",
+          "es": "Hackeo remoto"
+        },
+        "framesList": [
+          31
+        ],
+        "offset": 8,
+        "base": 1700
+      },
+      {
+        "id": 401004907,
+        "names": {
+          "en": "Icarus Dash - Charged Dash",
+          "tw": "伊卡洛斯衝刺 - 蓄力衝刺",
+          "kr": "이카루스 대쉬 - 전력 질주",
+          "fr": "Accélération Icarus - Accélération chargée",
+          "de": "Ikarus-Sprint: Beschleunigen",
+          "es": "Esprint de Ícaro - Carga"
+        },
+        "dualable": false,
+        "framesList": [
+          126
+        ],
+        "offset": 8,
+        "base": 1040,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 100
           }
         ]
       }
