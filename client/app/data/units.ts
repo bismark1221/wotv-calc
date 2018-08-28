@@ -12700,7 +12700,7 @@ export const UNITS: any[] = [
           2,
           10
         ],
-        "offset": 8,
+        "offset": 86,
         "base": 300,
         "ignore": 50
       },
@@ -12765,7 +12765,7 @@ export const UNITS: any[] = [
         "framesList": [
           62, 5, 10, 10, 10, 10
         ],
-        "offset": 16,
+        "offset": 36,
         "base": 600
       },
       {
@@ -12840,7 +12840,7 @@ export const UNITS: any[] = [
         "framesList": [
           62, 5, 10, 10, 10, 10
         ],
-        "offset": 16,
+        "offset": 36,
         "base": 600
       }
     ]
