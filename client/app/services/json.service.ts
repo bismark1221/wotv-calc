@@ -498,6 +498,8 @@ export class JsonService {
     effect = this.findEffect(ability, 0, 3, 52);
     if (effect) {
       this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || effect[1] >= this.ffbeChainUnits[unitId].multipleWhite ? effect[1] : this.ffbeChainUnits[unitId].multipleWhite;
+      this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || effect[1] >= this.ffbeChainUnits[unitId].multipleBlack ? effect[1] : this.ffbeChainUnits[unitId].multipleBlack;
+      this.ffbeChainUnits[unitId].multipleGreen = !this.ffbeChainUnits[unitId].multipleGreen || effect[1] >= this.ffbeChainUnits[unitId].multipleGreen ? effect[1] : this.ffbeChainUnits[unitId].multipleGreen;
     }
 
     effect = this.findEffect(ability, 0, 3, 97);

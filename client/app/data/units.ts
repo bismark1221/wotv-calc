@@ -2899,7 +2899,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 380,
         elements: [
           "wind"
@@ -2918,7 +2918,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 380,
         elements: [
           "fire"
@@ -2937,7 +2937,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 380,
         elements: [
           "earth"
@@ -2956,7 +2956,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 380,
         elements: [
           "water"
@@ -2975,7 +2975,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 400
       },
       {
@@ -2991,7 +2991,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 220
       },
       {
@@ -3022,8 +3022,303 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7],
         castTime: 40,
-        offset: 14,
+        offset: 16,
         base: 520
+      },
+      {
+        id: 507308,
+        "names": {
+          "en": "Splendor of the Wind + 2",
+          "tw": "風之光輝 + 2",
+          "kr": "바람의 인도 + 2",
+          "fr": "Splendeur du vent + 2",
+          "de": "Windpracht + 2",
+          "es": "Esplendor de viento + 2"
+        },
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          42,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 400,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ]
+      },
+      {
+        id: 507310,
+        "names": {
+          "en": "Splendor of the Fire + 2",
+          "tw": "火之光輝 + 2",
+          "kr": "불꽃의 인도 + 2",
+          "fr": "Splendeur du feu + 2",
+          "de": "Feuerpracht + 2",
+          "es": "Esplendor de fuego + 2"
+        },
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          42,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 400,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ]
+      },
+      {
+        id: 507312,
+        "names": {
+          "en": "Splendor of the Water + 2",
+          "tw": "水之光輝 + 2",
+          "kr": "물의 인도 + 2",
+          "fr": "Splendeur de l'eau + 2",
+          "de": "Wasserpracht + 2",
+          "es": "Esplendor de agua + 2"
+        },
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "framesList": [
+          42,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 400,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ]
+      },
+      {
+        id: 507314,
+        "names": {
+          "en": "Splendor of the Earth + 2",
+          "tw": "土之光輝 + 2",
+          "kr": "땅의 인도 + 2",
+          "fr": "Splendeur de la terre + 2",
+          "de": "Erdpracht + 2",
+          "es": "Esplendor de tierra + 2"
+        },
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "framesList": [
+          42,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 400,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 506840,
+        "names": {
+          "en": "Onion Slice (+ 2)",
+          "tw": "洋蔥刺 (+ 2)",
+          "kr": "양파 슬라이스 (+ 2)",
+          "fr": "Tranche-oignon (+ 2)",
+          "de": "Zwiebelschnitt (+ 2)",
+          "es": "Corte cebolla (+ 2)"
+        },
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12
+        ],
+        "framesList": [
+          42,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 8,
+        "base": 720
+      },
+      {
+        "id": 506860,
+        "names": {
+          "en": "Onion Cutter (+ 2)",
+          "tw": "洋蔥斬 (+ 2)",
+          "kr": "양파 칼날 (+ 2)",
+          "fr": "Coupe-oignon (+ 2)",
+          "de": "Zwiebelschneider (+ 2)",
+          "es": "Cortador cebolla (+ 2)"
+        },
+        "hitDamage": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7,
+          7
+        ],
+        "castTime": 40,
+        "framesList": [
+          42,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 880
       },
     ]
   },
@@ -3312,6 +3607,81 @@ export const UNITS: any[] = [
         offset: 86,
         base: 750,
       },
+      {
+        "id": 706840,
+        "names": {
+          "en": "Warp Strike + 2",
+          "tw": "變移破解 + 2",
+          "kr": "시프트 브레이크 + 2",
+          "fr": "Assaut éclipse + 2",
+          "de": "Warp-Angriff + 2",
+          "es": "Lux Impetus + 2"
+        },
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 200,
+        "ignore": 50
+      },
+      {
+        "id": 706860,
+        "names": {
+          "en": "Warp Charge + 2",
+          "tw": "變移蓄力 + 2",
+          "kr": "시프트 차지 + 2",
+          "fr": "Charge éclipse + 2",
+          "de": "Warpansturm + 2",
+          "es": "Lux Assultus + 2"
+        },
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 200,
+        "ignore": 50
+      },
+      {
+        "id": 706880,
+        "names": {
+          "en": "Kingsglaive + 2",
+          "tw": "王之劍 + 2",
+          "kr": "왕의 검 + 2",
+          "fr": "Glaive du roi + 2",
+          "de": "Königsgleve + 2",
+          "es": "Glaive real + 2"
+        },
+        "hitDamage": [
+          12,
+          12,
+          12,
+          12,
+          13,
+          13,
+          13,
+          13
+        ],
+        "castTime": 40,
+        "framesList": [
+          82,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "offset": 26,
+        "base": 275,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 70
+          }
+        ]
+      }
     ]
   },
   {
@@ -3348,6 +3718,24 @@ export const UNITS: any[] = [
             value: 50,
           }
         ]
+      },
+      {
+        id: 706940,
+        "names": {
+          "en": "Great Chop + 2",
+          "tw": "大斬擊 + 2",
+          "kr": "대참격 + 2",
+          "fr": "Grand coup + 2",
+          "de": "Großes Beil + 2",
+          "es": "Despedazador + 2"
+        },
+        "castTime": 30,
+        "framesList": [
+          140
+        ],
+        "offset": 16,
+        "base": 260,
+        "ignore": 50
       }
     ]
   },
@@ -5766,6 +6154,49 @@ export const UNITS: any[] = [
         ],
         dualable: false
       },
+      {
+        "id": 706400,
+        "names": {
+          "en": "Thousand Thrusts + 2",
+          "tw": "千烈槍 + 2",
+          "kr": "천열의 창 + 2",
+          "fr": "Mille coups + 2",
+          "de": "Tausend Stöße + 2",
+          "es": "Mil estoques + 2"
+        },
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "castTime": 40,
+        "framesList": [
+          47,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          5,
+          10,
+          10,
+          10
+        ],
+        "offset": 16,
+        "base": 275,
+        "ignore": 50
+      }
     ]
   },
   {
@@ -9299,7 +9730,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-        offset: 14,
+        offset: 16,
         base: 250
       },
       {
@@ -9926,7 +10357,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-        offset: 14,
+        offset: 16,
         base: 500
       },
       {
@@ -13623,5 +14054,841 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    id: 157,
+    "names": {
+      "en": "Alexander",
+      "tw": "亞歷山大",
+      "kr": "알렉산더",
+      "fr": "Alexandre",
+      "es": "Alejandro"
+    },
+    "abilities": [
+      {
+        id: 11301,
+        "names": {
+          "en": "Divine Judgment (1)",
+          "tw": "神聖審判 (1)",
+          "kr": "성스러운 심판 (1)",
+          "fr": "Jugement divin (1)",
+          "de": "Jüngstes Gericht (1)",
+          "es": "Veredicto final (1)"
+        },
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "damage": "magic",
+        "base": 5000,
+        "framesList": [
+          100
+        ],
+        "offset": 8
+      },
+      {
+        id: 11302,
+        "names": {
+          "en": "Divine Judgment (2)",
+          "tw": "神聖審判 (2)",
+          "kr": "성스러운 심판 (2)",
+          "fr": "Jugement divin (2)",
+          "de": "Jüngstes Gericht (2)",
+          "es": "Veredicto final (2)"
+        },
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "damage": "magic",
+        "base": 14000,
+        "framesList": [
+          110
+        ],
+        "offset": 8
+      }
+    ]
+  },
+  {
+    id: 158,
+    "names": {
+      "en": "Shadow Lord",
+      "tw": "黑暗之王",
+      "kr": "암흑의 왕",
+      "fr": "Seigneur des ombres",
+      "de": "Schattenlord",
+      "es": "Señor oscuro"
+    },
+    "abilities": [
+      {
+        id: 507701,
+        "names": {
+          "en": "Dynamic Assault",
+          "tw": "動態突擊",
+          "kr": "역동적 돌격",
+          "fr": "Assaut dynamique",
+          "de": "Dynamischer Angriff",
+          "es": "Asalto dinámico"
+        },
+        "castTime": 40,
+        "framesList": [
+          50
+        ],
+        "offset": 16,
+        "base": 1125
+      },
+      {
+        id: 507703,
+        "names": {
+          "en": "Violent Rupture",
+          "tw": "暴力狂歡",
+          "kr": "폭력적 파괴",
+          "fr": "Rupture violente",
+          "de": "Gewaltsamer Bruch",
+          "es": "Ruptura violenta"
+        },
+        "castTime": 20,
+        "framesList": [
+          30
+        ],
+        "offset": 16,
+        "base": 450,
+        "ignore": 50
+      },
+      {
+        id: 507705,
+        "names": {
+          "en": "Oblivion Smash",
+          "tw": "忘卻粉碎",
+          "kr": "망각의 강타",
+          "fr": "Frappe de l'oubli",
+          "de": "Schlag der Vergessenheit",
+          "es": "Golpe de olvido"
+        },
+        "castTime": 40,
+        "framesList": [
+          52
+        ],
+        "offset": 16,
+        "base": 450
+      },
+      {
+        id: 507707,
+        "names": {
+          "en": "Cross Smash",
+          "tw": "交叉粉碎",
+          "kr": "십자 강타",
+          "fr": "Frappe croisée",
+          "de": "Kreuzschlag",
+          "es": "Golpe en cruz"
+        },
+        "hitDamage": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "castTime": 24,
+        "framesList": [
+          26,
+          5,
+          5,
+          5
+        ],
+        "offset": 16,
+        "base": 750,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ]
+      },
+      {
+        id: 507709,
+        "names": {
+          "en": "Dynamic Implosion",
+          "tw": "動態聚爆",
+          "kr": "역동적 폭축",
+          "fr": "Implosion dynamique",
+          "de": "Dynamische Implosion",
+          "es": "Implosión dinámica"
+        },
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "framesList": [
+          92
+        ],
+        "offset": 16,
+        "base": 1800
+      },
+      {
+        id: 211000907,
+        "names": {
+          "en": "Tera Slash",
+          "tw": "大地斬擊",
+          "kr": "테라 슬래시",
+          "fr": "Terratranche",
+          "de": "Teraschlag",
+          "es": "Teracorte"
+        },
+        "dualable": false,
+        "framesList": [
+          66
+        ],
+        "offset": 8,
+        "base": 900
+      }
+    ]
+  },
+  {
+    id: 159,
+    "names": {
+      "en": "Livid Shantotto",
+      "tw": "狂暴香托托",
+      "kr": "분노한 샨토토",
+      "fr": "Shantotto furieuse",
+      "de": "Tobende Shantotto",
+      "es": "Shantotto enfurecida"
+    },
+    "abilities": [
+      {
+        id: 20570,
+        "names": {
+          "en": "Stone I",
+          "tw": "落石I",
+          "kr": "스톤I",
+          "fr": "Pierre II",
+          "de": "Terra I",
+          "es": "Piedra I"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "framesList": [
+          120
+        ],
+        "offset": 16,
+        "base": 800
+      },
+      {
+        id: 20580,
+        "names": {
+          "en": "Water I",
+          "tw": "流水I",
+          "kr": "워터I",
+          "fr": "Eau II",
+          "de": "Aqua I",
+          "es": "Aqua I"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          80
+        ],
+        "offset": 16,
+        "base": 810
+      },
+      {
+        id: 20590,
+        "names": {
+          "en": "Aero I",
+          "tw": "勁風I",
+          "kr": "에어로I",
+          "fr": "Vent II"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "framesList": [
+          100
+        ],
+        "offset": 16,
+        "base": 820
+      },
+      {
+        id: 20600,
+        "names": {
+          "en": "Fire I",
+          "tw": "火焰I",
+          "kr": "파이어I",
+          "fr": "Feu II",
+          "de": "Feura I",
+          "es": "Piro I"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          80
+        ],
+        "offset": 16,
+        "base": 830
+      },
+      {
+        id: 20610,
+        "names": {
+          "en": "Blizzard I",
+          "tw": "暴雪I",
+          "kr": "블리자드I",
+          "fr": "Glace II",
+          "de": "Eis I",
+          "es": "Hielo I"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          130
+        ],
+        "offset": 16,
+        "base": 840
+      },
+      {
+        id: 20620,
+        "names": {
+          "en": "Thunder I",
+          "tw": "雷電I",
+          "kr": "선더I",
+          "fr": "Foudre I",
+          "de": "Blitz I",
+          "es": "Electro I"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 850
+      },
+      {
+        id: 20630,
+        "names": {
+          "en": "Stonega V",
+          "tw": "大落石V",
+          "kr": "스톤가V",
+          "fr": "OmniPierre V",
+          "de": "Terraga V",
+          "es": "Piedra++ V"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "framesList": [
+          180
+        ],
+        "offset": 16,
+        "base": 1000
+      },
+      {
+        id: 20640,
+        "names": {
+          "en": "Waterga V",
+          "tw": "大流水V",
+          "kr": "워터가V",
+          "fr": "OmniEau V",
+          "de": "Aquaga V",
+          "es": "Aqua++ V"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16,
+        "base": 1005
+      },
+      {
+        id: 20650,
+        "names": {
+          "en": "Aeroga V",
+          "tw": "大勁風V",
+          "kr": "에어로가V",
+          "fr": "OmniVent V",
+          "es": "Aero++ V"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16,
+        "base": 1010
+      },
+      {
+        id: 20660,
+        "names": {
+          "en": "Firaga V",
+          "tw": "大火焰V",
+          "kr": "파이가V",
+          "fr": "OmniFeu V",
+          "de": "Feuga V",
+          "es": "Piro++ V"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          150
+        ],
+        "offset": 16,
+        "base": 1015
+      },
+      {
+        id: 20670,
+        "names": {
+          "en": "Blizzaga V",
+          "tw": "大暴雪V",
+          "kr": "블리자가V",
+          "fr": "OmniGlace V",
+          "de": "Eisga V",
+          "es": "Hielo++ V"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          150
+        ],
+        "offset": 16,
+        "base": 1020
+      },
+      {
+        id: 20680,
+        "names": {
+          "en": "Thundaga V",
+          "tw": "大雷電V",
+          "kr": "선더가V",
+          "fr": "OmniFoudre V",
+          "de": "Blitzga B",
+          "es": "Electro++ V"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 1025
+      },
+      {
+        id: 227193,
+        "names": {
+          "en": "Doctor's Orders",
+          "tw": "博士命令",
+          "kr": "닥터의 명령",
+          "fr": "Ordre du médecin",
+          "de": "Ärztliche Anweisung",
+          "es": "Órdenes del médico"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          58
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          150,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 1120,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ]
+      },
+      {
+        id: 227195,
+        "names": {
+          "en": "Lesson in Pain",
+          "tw": "痛苦的教訓",
+          "kr": "고통 속 교훈",
+          "fr": "Leçon douloureuse",
+          "de": "Schmerzhafte Lehrstunde",
+          "es": "Lección dolorosa"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          58
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          100,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "offset": 16,
+        "base": 1100,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          }
+        ]
+      },
+      {
+        id: 227200,
+        "names": {
+          "en": "Colossal Shantotto",
+          "tw": "巨大香托托",
+          "kr": "콜로설 샨토토",
+          "fr": "Shantotto colossale",
+          "de": "Kolossale Shantotto",
+          "es": "Shantotto colosal"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          130
+        ],
+        "offset": 16,
+        "base": 320
+      },
+      {
+        id: 20690,
+        "names": {
+          "en": "Bio III",
+          "tw": "毒化III",
+          "kr": "바이오III",
+          "fr": "Bactérie III"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          120
+        ],
+        "offset": 16,
+        "base": 120
+      },
+      {
+        id: 227194,
+        "names": {
+          "en": "Empirical Research",
+          "tw": "實驗研究",
+          "kr": "실증적 조사",
+          "fr": "Recherches empiriques",
+          "de": "Empirische Forschung",
+          "es": "Investigación empírica"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          56
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          70,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "offset": 16,
+        "base": 1080,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          }
+        ]
+      },
+      {
+        id: 20730,
+        "names": {
+          "en": "Flood II",
+          "tw": "洪水II",
+          "kr": "플러드II",
+          "fr": "Déluge II",
+          "de": "Flut II",
+          "es": "Inundación II"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          160
+        ],
+        "offset": 16,
+        "base": 700,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ]
+      },
+      {
+        id: 227192,
+        "names": {
+          "en": "Final Exam",
+          "tw": "最終測驗",
+          "kr": "마지막 시험",
+          "fr": "Examen final",
+          "de": "Abschlußprüfung",
+          "es": "Examen final"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          58
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "framesList": [
+          70,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7
+        ],
+        "offset": 16,
+        "base": 1150,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          }
+        ]
+      },
+      {
+        id: 20700,
+        "names": {
+          "en": "Flare II",
+          "tw": "核爆II",
+          "kr": "플레어II",
+          "fr": "Brasier II",
+          "de": "Flamme II",
+          "es": "Fulgor II"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16,
+        "base": 700,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ]
+      },
+      {
+        id: 211000807,
+        "names": {
+          "en": "Play Rough",
+          "tw": "爆發",
+          "kr": "분노",
+          "fr": "Turbulence",
+          "de": "Ausraster",
+          "es": "Juego duro"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "dualable": false,
+        "framesList": [
+          42,
+          38,
+          70,
+          50,
+          50,
+          68,
+          132
+        ],
+        "offset": 8,
+        "base": 1200,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 70
+          },
+          {
+            "type": "ice",
+            "value": 70
+          },
+          {
+            "type": "lightning",
+            "value": 70
+          },
+          {
+            "type": "water",
+            "value": 70
+          },
+          {
+            "type": "wind",
+            "value": 70
+          },
+          {
+            "type": "earth",
+            "value": 70
+          }
+        ]
+      }
+    ],
+    "multipleWhite": 3,
+    "multipleBlack": 3,
+    "multipleGreen": 3
   }
 ];
