@@ -262,6 +262,13 @@ export class JsonService {
       return;
     }
 
+    effect = this.findEffect(ability, 1, 1, 81);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
     effect = this.findEffect(ability, 2, 1, 81);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[6];

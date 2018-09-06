@@ -10149,6 +10149,50 @@ export const UNITS: any[] = [
         framesList: [149, 9, 9, 9, 9],
         base: 390,
         dualable: false
+      },
+      {
+        "id": 507553,
+        "names": {
+          "en": "Kafrizzle + 2",
+          "tw": "美拉蓋亞 + 2",
+          "kr": "메라가이아 + 2",
+          "fr": "Gigaflamme + 2",
+          "de": "Schmurgel + 2",
+          "es": "Superataque ígneo + 2"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16,
+        "base": 3000
+      },
+      {
+        "id": 507554,
+        "names": {
+          "en": "Kafrizzle + 2 (Max)",
+          "tw": "美拉蓋亞 + 2 (Max)",
+          "kr": "메라가이아 + 2 (Max)",
+          "fr": "Gigaflamme + 2 (Max)",
+          "de": "Schmurgel + 2 (Max)",
+          "es": "Superataque ígneo + 2 (Max)"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16,
+        "base": 4400
       }
     ]
   },
@@ -14890,5 +14934,790 @@ export const UNITS: any[] = [
     "multipleWhite": 3,
     "multipleBlack": 3,
     "multipleGreen": 3
+  },
+  {
+    "id": 160,
+    "names": {
+      "en": "Slime Knight",
+      "tw": "史萊姆騎士",
+      "kr": "슬라임 나이트",
+      "fr": "Monte-gluant",
+      "de": "Schleimritter",
+      "es": "Jinete de limo"
+    },
+    "abilities": [
+      {
+        "id": 205720,
+        "names": {
+          "en": "Thunder Slash",
+          "tw": "閃電斬",
+          "kr": "번개 베기",
+          "fr": "Lame d'éclair",
+          "de": "Blitzhieb",
+          "es": "Estocada de trueno"
+        },
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 160
+      },
+      {
+        "id": 205930,
+        "names": {
+          "en": "Sizz",
+          "tw": "基拉",
+          "kr": "기라",
+          "fr": "Crame",
+          "de": "Knister",
+          "es": "Miniincendio"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 130
+      },
+      {
+        "id": 227043,
+        "names": {
+          "en": "Frost Slash",
+          "tw": "冰結斬",
+          "kr": "빙결 베기",
+          "fr": "Lame de gel",
+          "de": "Frosthieb",
+          "es": "Estocada de hielo"
+        },
+        "damage": "hybrid",
+        "castTime": 29,
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          100
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 205590,
+        "names": {
+          "en": "Sizzle",
+          "tw": "貝基拉瑪",
+          "kr": "베기라마",
+          "fr": "Supercrame",
+          "de": "Brutzel",
+          "es": "Incendio"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          80
+        ],
+        "offset": 16,
+        "base": 140
+      },
+      {
+        "id": 205690,
+        "names": {
+          "en": "Unbridled Blade",
+          "tw": "全心全力斬",
+          "kr": "전신전령 베기",
+          "fr": "Entaille mortelle",
+          "de": "Volldampfschlitzer",
+          "es": "Estocada letal"
+        },
+        "framesList": [
+          10
+        ],
+        "offset": 8,
+        "base": 300
+      },
+      {
+        "id": 227042,
+        "names": {
+          "en": "Gale Slash",
+          "tw": "風迅斬",
+          "kr": "풍신 베기",
+          "fr": "Lame d'Éole",
+          "de": "Sturmwindhieb",
+          "es": "Estocada huracanada"
+        },
+        "damage": "hybrid",
+        "castTime": 29,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          140
+        ],
+        "offset": 16,
+        "base": 380
+      },
+      {
+        "id": 227041,
+        "names": {
+          "en": "Super Double-Edged Slash",
+          "tw": "超捨生斬",
+          "kr": "슈퍼 양날 베기",
+          "fr": "Super double-lame",
+          "de": "Zweischneider Superhieb",
+          "es": "Superestocada doble"
+        },
+        "castTime": 29,
+        "framesList": [
+          50
+        ],
+        "offset": 16,
+        "base": 600
+      },
+      {
+        "id": 306001206,
+        "names": {
+          "en": "Hallowed Slash",
+          "tw": "神聖之刃",
+          "kr": "홀리 엣지",
+          "fr": "Lame bénie",
+          "de": "Seliger Hieb",
+          "es": "Estocada encantada"
+        },
+        "damage": "hybrid",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          140
+        ],
+        "offset": 8,
+        "base": 1100
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          227041,
+          227042,
+          227043
+        ]
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "names": {
+      "en": "Überkilling Machine",
+      "tw": "殺戮魔神",
+      "kr": "킬러 마징가",
+      "fr": "Mékanocinglé",
+      "de": "Obertodmaschine",
+      "es": "Máquina supermortal"
+    },
+    "abilities": [
+      {
+        "id": 205710,
+        "names": {
+          "en": "Metal Slash",
+          "tw": "金屬斬",
+          "kr": "메탈 베기",
+          "fr": "Lame de métal",
+          "de": "Metallhieb",
+          "es": "Estocada metálica"
+        },
+        "dualable": false,
+        "framesList": [
+          10
+        ],
+        "offset": 8,
+        "base": 2000
+      },
+      {
+        "id": 205700,
+        "names": {
+          "en": "Cutting Edge",
+          "tw": "渾身斬",
+          "kr": "혼신의 베기",
+          "fr": "Entaille puissante",
+          "de": "Schnittiger Schlag",
+          "es": "Tajada mortal"
+        },
+        "framesList": [
+          0
+        ],
+        "offset": 8,
+        "base": 180
+      },
+      {
+        "id": 205720,
+        "names": {
+          "en": "Thunder Slash",
+          "tw": "閃電斬",
+          "kr": "번개 베기",
+          "fr": "Lame d'éclair",
+          "de": "Blitzhieb",
+          "es": "Estocada de trueno"
+        },
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 160
+      },
+      {
+        "id": 205730,
+        "names": {
+          "en": "Flame Slash",
+          "tw": "火炎斬",
+          "kr": "화염 베기",
+          "fr": "Lame de feu",
+          "de": "Flammenhieb",
+          "es": "Estocada flamígera"
+        },
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          55
+        ],
+        "offset": 8,
+        "base": 160
+      },
+      {
+        "id": 205740,
+        "names": {
+          "en": "Kacrackle Slash",
+          "tw": "瑪夏德斬",
+          "kr": "마햐드 베기",
+          "fr": "Entaille mégaglace",
+          "de": "Eiszeit (DQ)",
+          "es": "Estocada superhelada"
+        },
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          125
+        ],
+        "offset": 8,
+        "base": 160
+      },
+      {
+        "id": 507572,
+        "names": {
+          "en": "Executioner's Slash",
+          "tw": "大魔神斬",
+          "kr": "대마신 베기",
+          "fr": "Taillade du bourreau",
+          "de": "Scharfrichterhieb",
+          "es": "Estocada ejecutora"
+        },
+        "hitDamage": [
+          50,
+          50
+        ],
+        "framesList": [
+          31,
+          31
+        ],
+        "offset": 8,
+        "base": 525
+      },
+      {
+        "id": 227051,
+        "names": {
+          "en": "Multislash",
+          "tw": "暴雨斬",
+          "kr": "장대비 베기",
+          "fr": "Multi-lame",
+          "de": "Multihieb",
+          "es": "Multiestocada"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 260
+      },
+      {
+        "id": 227055,
+        "names": {
+          "en": "Dragon Slash",
+          "tw": "惡龍斬",
+          "kr": "드래곤 베기",
+          "fr": "Lame du dragon",
+          "de": "Drachenhieb",
+          "es": "Dragoestocada"
+        },
+        "castTime": 40,
+        "framesList": [
+          52
+        ],
+        "offset": 16,
+        "base": 250
+      },
+      {
+        "id": 227053,
+        "names": {
+          "en": "Demon Demeaner",
+          "tw": "惡魔斬",
+          "kr": "악마 베기",
+          "fr": "Démonlition",
+          "de": "Dämonenhieb",
+          "es": "Exorcista"
+        },
+        "castTime": 40,
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 250
+      },
+      {
+        "id": 227054,
+        "names": {
+          "en": "Undead Undoer",
+          "tw": "殭屍斬",
+          "kr": "좀비 베기",
+          "fr": "Morozombie",
+          "de": "Untotentöter",
+          "es": "Exterminamuertos"
+        },
+        "castTime": 40,
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 250
+      },
+      {
+        "id": 227050,
+        "names": {
+          "en": "Mace Helichopter",
+          "tw": "鐵球大回轉",
+          "kr": "쇠구슬 돌리기",
+          "fr": "Hélicouptère de massue",
+          "de": "Keulenrotor",
+          "es": "Mazo helitroceador"
+        },
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 40,
+        "framesList": [
+          45,
+          20
+        ],
+        "offset": 16,
+        "base": 320
+      },
+      {
+        "id": 306001106,
+        "names": {
+          "en": "Code Zero",
+          "tw": "代碼復位",
+          "kr": "코드 제로",
+          "fr": "Code zéro",
+          "es": "Código Cero"
+        },
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "dualable": false,
+        "framesList": [
+          37, 15, 15, 15, 15, 15, 15, 15, 15, 15
+        ],
+        "offset": 8,
+        "base": 1020
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "names": {
+      "en": "Marquis de Léon",
+      "tw": "獅王",
+      "kr": "킹 레오",
+      "fr": "Lord Lionel"
+    },
+    "abilities": [
+      {
+        "id": 205590,
+        "names": {
+          "en": "Sizzle",
+          "tw": "貝基拉瑪",
+          "kr": "베기라마",
+          "fr": "Supercrame",
+          "de": "Brutzel",
+          "es": "Incendio"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          80
+        ],
+        "offset": 16,
+        "base": 140
+      },
+      {
+        "id": 206050,
+        "names": {
+          "en": "Total War Cry",
+          "tw": "猛烈吼叫",
+          "kr": "세찬 외침",
+          "fr": "Super cri de guerre",
+          "de": "Kampfurschrei",
+          "es": "Gran grito de guerra"
+        },
+        "castTime": 40,
+        "framesList": [
+          45
+        ],
+        "offset": 16,
+        "base": 100,
+        "ignore": 25
+      },
+      {
+        "id": 205740,
+        "names": {
+          "en": "Kacrackle Slash",
+          "tw": "瑪夏德斬",
+          "kr": "마햐드 베기",
+          "fr": "Entaille mégaglace",
+          "de": "Eiszeit (DQ)",
+          "es": "Estocada superhelada"
+        },
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          125
+        ],
+        "offset": 8,
+        "base": 160
+      },
+      {
+        "id": 227003,
+        "names": {
+          "en": "Wild Animaul",
+          "tw": "慈悲斬",
+          "kr": "메타 베기",
+          "fr": "Coupe sauvage",
+          "de": "Zerschnitzeln",
+          "es": "Fauna salvaje"
+        },
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 205580,
+        "names": {
+          "en": "Kafrizz",
+          "tw": "美拉佐瑪",
+          "kr": "메라조마",
+          "fr": "Mégaflamme",
+          "de": "Zisch",
+          "es": "Megaataque ígneo"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          150
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 227001,
+        "names": {
+          "en": "Freezing Blizzard",
+          "tw": "凍結暴風雪",
+          "kr": "얼어붙은 눈보라",
+          "fr": "Souffle de givre",
+          "de": "Kältesturm",
+          "es": "Tormenta heladora"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          55, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 16,
+        "base": 250,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 227005,
+        "names": {
+          "en": "Kacrack",
+          "tw": "瑪夏德",
+          "kr": "마햐드",
+          "fr": "Mégaglace",
+          "de": "Klirr",
+          "es": "Superhelada"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16,
+        "base": 400
+      },
+      {
+        "id": 227000,
+        "names": {
+          "en": "Knuckle Sandwich",
+          "tw": "正拳突擊",
+          "kr": "정권 찌르기",
+          "fr": "Casse-dentier",
+          "de": "Furchtbare Faust",
+          "es": "Puñodillo"
+        },
+        "castTime": 70,
+        "framesList": [
+          72
+        ],
+        "offset": 16,
+        "base": 265,
+        "ignore": 50
+      },
+      {
+        "id": 507543,
+        "names": {
+          "en": "Fiendish Fauna Fist",
+          "tw": "魔人百獸拳",
+          "kr": "마인백수권",
+          "fr": "Poing du démon bestial",
+          "de": "Diabolische Faunafaust",
+          "es": "Puño animamistoso"
+        },
+        "castTime": 40,
+        "framesList": [
+          170
+        ],
+        "offset": 16,
+        "base": 650
+      },
+      {
+        "id": 227024,
+        "names": {
+          "en": "Blizzard Slash",
+          "tw": "暴雪衝擊",
+          "kr": "블리자 러쉬",
+          "fr": "Lame de blizzard",
+          "de": "Eishieb",
+          "es": "Estocada helada"
+        },
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          90
+        ],
+        "offset": 8,
+        "base": 700
+      },
+      {
+        "id": 306001007,
+        "names": {
+          "en": "Blizzard Blast",
+          "tw": "極寒凍結",
+          "kr": "극한동결",
+          "fr": "Tempête de neige",
+          "de": "Fieser Frost",
+          "es": "Ráfaga glacial"
+        },
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          62, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 8,
+        "base": 1800
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "names": {
+      "en": "Estark",
+      "tw": "艾斯塔克",
+      "kr": "에스타크"
+    },
+    "abilities": [
+      {
+        "id": 226983,
+        "names": {
+          "en": "Crushing Smash",
+          "tw": "擊潰",
+          "kr": "때려눕히기",
+          "fr": "Frappe violente",
+          "de": "Schmetterschlag",
+          "es": "Golpe aplastante"
+        },
+        "castTime": 40,
+        "framesList": [
+          47
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 226987,
+        "names": {
+          "en": "Assassin's Stab",
+          "tw": "刺客襲擊",
+          "kr": "어쌔신 어택",
+          "fr": "Coup de l'assassin",
+          "de": "Meuchelmörder",
+          "es": "Puñalada asesina"
+        },
+        "castTime": 40,
+        "framesList": [
+          45
+        ],
+        "offset": 16,
+        "base": 250
+      },
+      {
+        "id": 226985,
+        "names": {
+          "en": "True Attack Attacker",
+          "tw": "真·碎刃",
+          "kr": "진·칼날 부수기",
+          "fr": "Attaque-attaque X",
+          "de": "Wahrer Klingenbrecher",
+          "es": "Ultraatacaatacante"
+        },
+        "castTime": 50,
+        "framesList": [
+          52
+        ],
+        "offset": 16,
+        "base": 170
+      },
+      {
+        "id": 226981,
+        "names": {
+          "en": "Lordly Thrust",
+          "tw": "帝王一閃",
+          "kr": "황제의 일섬",
+          "fr": "Frappe seigneuriale",
+          "de": "Herrlicher Stoß",
+          "es": "Impulso señorial"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 250,
+        "ignore": 50
+      },
+      {
+        "id": 507531,
+        "names": {
+          "en": "Lightning Storm",
+          "tw": "地獄雷打",
+          "kr": "지고 스파크",
+          "fr": "Lame choc",
+          "de": "Blitzgewitter",
+          "es": "Tormenta luminosa"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 1000,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 306000907,
+        "names": {
+          "en": "Death Blow",
+          "tw": "必殺一擊",
+          "kr": "필살의 일격",
+          "fr": "Frappe létale",
+          "de": "Todesstoß",
+          "es": "Golpe mortal"
+        },
+        "dualable": false,
+        "framesList": [
+          117
+        ],
+        "offset": 8,
+        "base": 2100
+      }
+    ]
   }
 ];
