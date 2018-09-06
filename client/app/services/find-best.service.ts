@@ -254,13 +254,14 @@ export class FindBestService {
         unit.selectedAbilities.forEach(ability => {
           let totalDamage = 0;
           let realIgnore = ability.ignore * 2 / 100 + 1;
+          let base = ability.damage === 'hybrid' ? ability.base / 2 : ability.base;
 
           if (unit.elements.length > 0) {
             unit.elements.forEach(element => {
-              totalDamage += (1 / unit.elements.length) * ability.base * realIgnore * this.modifierElements[element];
+              totalDamage += (1 / unit.elements.length) * base * realIgnore * this.modifierElements[element];
             })
           } else {
-            totalDamage = ability.base * realIgnore;
+            totalDamage = base * realIgnore;
           }
 
           ability.totalDamage = totalDamage;

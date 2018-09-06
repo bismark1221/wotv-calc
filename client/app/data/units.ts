@@ -3253,6 +3253,7 @@ export const UNITS: any[] = [
           8,
           12
         ],
+        "castTime": 40,
         "framesList": [
           42,
           7,
@@ -3267,7 +3268,7 @@ export const UNITS: any[] = [
           7,
           7
         ],
-        "offset": 8,
+        "offset": 16,
         "base": 720
       },
       {
