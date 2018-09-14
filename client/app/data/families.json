@@ -1439,7 +1439,7 @@
           "en": "Hyoh",
           "tw": "獵豹",
           "kr": "효우",
-          "de": null,
+          "de": "Hyou",
           "es": "Hyou"
         },
         "abilities": [
@@ -1448,7 +1448,7 @@
             "names": {
               "en": "Ruthless Blade",
               "tw": "冷酷劍刃",
-              "kr": "null",
+              "kr": "루슬리스 블레이드",
               "fr": "Lame implacable",
               "de": "Gnadenlose Klinge",
               "es": "Hoja implacable"
@@ -1563,7 +1563,7 @@
           "en": "Hyoh",
           "tw": "獵豹",
           "kr": "효우",
-          "de": null,
+          "de": "Hyou",
           "es": "Hyou"
         },
         "abilities": [
@@ -1572,10 +1572,10 @@
             "names": {
               "en": "Flame Blade",
               "tw": "烈焰劍",
-              "kr": "null",
+              "kr": "플레임 블레이드",
               "fr": "Lame enflammée",
-              "de": "null",
-              "es": "null"
+              "de": "Flammenklinge",
+              "es": "Hoja llameante"
             },
             "offset": 16,
             "castTime": 40
@@ -1585,10 +1585,10 @@
             "names": {
               "en": "Voltage Blade",
               "tw": "伏特劍",
-              "kr": "null",
+              "kr": "볼트 블레이드",
               "fr": "Lame électrisante",
-              "de": "null",
-              "es": "null"
+              "de": "Voltklinge",
+              "es": "Hoja de voltaje"
             },
             "offset": 16,
             "castTime": 40
@@ -1915,6 +1915,29 @@
               "fr": "Chute ralentie",
               "de": "Gebremster Fall",
               "es": "Caída ralentizada"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100016403,
+        "names": {
+          "en": "Domino",
+          "tw": "多米諾",
+          "kr": "도미노"
+        },
+        "abilities": [
+          {
+            "id": 227310,
+            "names": {
+              "en": "Wind Smash",
+              "tw": "風之碎擊",
+              "kr": "바람의 강타",
+              "fr": "Impact éolien",
+              "de": "Windschlag",
+              "es": "Golpe de viento"
             },
             "offset": 16,
             "castTime": 40

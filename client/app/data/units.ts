@@ -12007,24 +12007,73 @@ export const UNITS: any[] = [
         base: 360
       },
       {
-        id: 100015806,
-        names: {
-          en: "Blood Linkage",
-          tw: "鮮血連結",
-          kr: "이어진 핏줄",
-          fr: "Lien du sang",
-          de: "Blutsbande",
-          es: "Unión de sangre"
+        "id": 228091,
+        "names": {
+          "en": "Soul Prominence",
+          "tw": "日珥",
+          "kr": "홍염의 영혼",
+          "fr": "Grandeur d'âme",
+          "de": "Seelenlodern",
+          "es": "Prominencia espiritual"
         },
-        damage: "magic",
-        hitDamage: [
+        "damage": "magic",
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          52, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 16,
+        "base": 360
+      },
+      {
+        "id": 228092,
+        "names": {
+          "en": "Earth Explosion",
+          "tw": "撼地爆裂",
+          "kr": "대지의 폭발",
+          "fr": "Explosion terrestre",
+          "de": "Erdexplosion",
+          "es": "Explosión de tierra"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "framesList": [
+          52, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 16,
+        "base": 360
+      },
+      {
+        "id": 100015807,
+        "names": {
+          "en": "Blood Linkage",
+          "tw": "鮮血連結",
+          "kr": "이어진 핏줄",
+          "fr": "Lien du sang",
+          "de": "Blutsbande",
+          "es": "Unión de sangre"
+        },
+        "damage": "magic",
+        "hitDamage": [
           4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5
         ],
-        dualable: false,
-        framesList: [
+        "dualable": false,
+        "framesList": [
           140, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        base: 1240
+        "offset": 8,
+        "base": 2600
       }
     ]
   },
@@ -15718,6 +15767,210 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 2100
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "names": {
+      "en": "Hyoh",
+      "tw": "獵豹",
+      "kr": "효우",
+      "de": "Hyou",
+      "es": "Hyou"
+    },
+    "abilities": [
+      {
+        "id": 227282,
+        "names": {
+          "en": "Flame Blade",
+          "tw": "烈焰劍",
+          "kr": "플레임 블레이드",
+          "fr": "Lame enflammée",
+          "de": "Flammenklinge",
+          "es": "Hoja llameante"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 350,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 227283,
+        "names": {
+          "en": "Voltage Blade",
+          "tw": "伏特劍",
+          "kr": "볼트 블레이드",
+          "fr": "Lame électrisante",
+          "de": "Voltklinge",
+          "es": "Hoja de voltaje"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 350,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 227284,
+        "names": {
+          "en": "Life-severing Blade",
+          "tw": "絕命劍",
+          "kr": "명절검",
+          "fr": "Lame coupe-vie",
+          "de": "Lebenstrennende Klinge",
+          "es": "Hoja rebanavidas"
+        },
+        "castTime": 22,
+        "framesList": [
+          22
+        ],
+        "offset": 16,
+        "base": 210
+      },
+      {
+        "id": 227285,
+        "names": {
+          "en": "Unknown Traitor",
+          "tw": "不明背叛者",
+          "kr": "무명의 반역자",
+          "fr": "Traître inconnu",
+          "de": "Unbekannter Verräter",
+          "es": "Traidor desconocido"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          140
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 227281,
+        "names": {
+          "en": "Ruthless Blade",
+          "tw": "冷酷劍刃",
+          "kr": "루슬리스 블레이드",
+          "fr": "Lame implacable",
+          "de": "Gnadenlose Klinge",
+          "es": "Hoja implacable"
+        },
+        "hitDamage": [
+          9, 9, 9, 9, 9, 11, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 350
+      },
+      {
+        "id": 227280,
+        "names": {
+          "en": "Servant of the Blade",
+          "tw": "劍奴",
+          "kr": "블레이드 슬레이브",
+          "fr": "Serviteur de l'épée",
+          "de": "Diener der Klinge",
+          "es": "Esclavo de la espada"
+        },
+        "hitDamage": [
+          2, 2, 2, 2, 2, 3, 88
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 410
+      },
+      {
+        "id": 507742,
+        "names": {
+          "en": "Phantom Blade",
+          "tw": "幻影劍刃",
+          "kr": "팬텀 블레이드",
+          "fr": "Lame fantôme",
+          "de": "Phantomklinge",
+          "es": "Hoja fantasma"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 10, 50
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 560,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "lightning",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 100016207,
+        "names": {
+          "en": "Extreme Nova",
+          "tw": "終極新星",
+          "kr": "극한의 광휘",
+          "fr": "Nova extrême",
+          "de": "Extremnova",
+          "es": "Nova extrema"
+        },
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 13
+        ],
+        "dualable": false,
+        "framesList": [
+          28, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 8,
+        "base": 1900
+      }
+    ],
+    dual: false,
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          227280,
+          227281,
+          227282,
+          227283,
+          227284,
+          227285
+        ]
       }
     ]
   }
