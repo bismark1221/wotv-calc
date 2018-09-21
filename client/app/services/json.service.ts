@@ -290,16 +290,30 @@ export class JsonService {
       return;
     }
 
-
     effect = this.findEffect(ability, 1, 1, 112);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
+
     effect = this.findEffect(ability, 2, 1, 112);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
+    effect = this.findEffect(ability, 1, 1, 25);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[1];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return;
+    }
+
+    effect = this.findEffect(ability, 2, 1, 25);
+    if (effect) {
+      this.ffbeChainUnits[unitId].abilities[id].base = effect[1];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }

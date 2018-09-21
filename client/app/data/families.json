@@ -145,10 +145,10 @@
       {
         "id": 100014405,
         "names": {
-          "en": "Reberta",
-          "tw": "蕾貝爾塔",
-          "kr": "리베르타",
-          "fr": "Réberta"
+          "en": "Reberta (JP)",
+          "tw": "蕾貝爾塔 (JP)",
+          "kr": "리베르타 (JP)",
+          "fr": "Réberta (JP)"
         },
         "abilities": [
           {
@@ -175,7 +175,19 @@
         },
         "abilities": [
           {
-            "id": 401001706,
+            "id": 950000002,
+            "names": {
+              "en": "Destructive Thrust + 1",
+              "tw": "破壞衝擊 + 1",
+              "kr": "파괴의 찌르기 + 1",
+              "fr": "Coup destructeur + 1",
+              "de": "Zerstörungsstoß + 1",
+              "es": "Estoque demoledor + 1"
+            },
+            "offset": 8
+          },
+          {
+            "id": 401001707,
             "names": {
               "en": "Destructive Thrust",
               "tw": "破壞衝擊",
@@ -979,6 +991,29 @@
               "fr": "Attaque éclair",
               "de": "Rapidschlag",
               "es": "Golpe rápido"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
+        "id": 254000205,
+        "names": {
+          "en": "Queen",
+          "tw": "葵因",
+          "kr": "퀸"
+        },
+        "abilities": [
+          {
+            "id": 226751,
+            "names": {
+              "en": "Armor Piercing",
+              "tw": "鎧甲刺穿",
+              "kr": "아머 피어싱",
+              "fr": "Perforation renforcée",
+              "de": "Rüstungsdurchstoß",
+              "es": "Perforarmaduras"
             },
             "offset": 16,
             "castTime": 20
@@ -1832,6 +1867,45 @@
               "fr": "Livraison rebelle - Dionysus PLDS-H",
               "de": "Rebellennachschub - Dionysus PLDS-H",
               "es": "Lanzamiento rebelde - Dionysus PLDS-H"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401005305,
+        "names": {
+          "en": "Aloha Lasswell",
+          "tw": "拉斯韋爾（泳裝）",
+          "kr": "알로하 라스웰",
+          "fr": "Lasswell tenue d'été",
+          "de": "Aloha-Lasswell",
+          "es": "Lasswell hawaiano"
+        },
+        "abilities": [
+          {
+            "id": 911279,
+            "names": {
+              "en": "Summer - Waves of the Ocean",
+              "tw": "夏日 - 海洋波浪",
+              "kr": "여름·파도",
+              "fr": "Été - Vagues océaniques",
+              "de": "Sommer - Ozeanwellen",
+              "es": "Verano - Voluntad del océano"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911278,
+            "names": {
+              "en": "Summer - Winds of the Sea",
+              "tw": "夏日 - 大海之風",
+              "kr": "여름·해풍",
+              "fr": "Été - Ailes marines",
+              "de": "Sommer - Meereswinde",
+              "es": "Verano - Voluntad de los mares"
             },
             "offset": 16,
             "castTime": 40
@@ -3200,9 +3274,9 @@
               "en": "Raging Inferno",
               "tw": "亂之炎",
               "kr": "혼란의 불꽃",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "fr": "Déluge infernal",
+              "de": "Tobende Feuersbrunst",
+              "es": "Furia infernal"
             },
             "offset": 8
           }
@@ -3225,9 +3299,9 @@
               "en": "Raging Inferno",
               "tw": "亂之炎",
               "kr": "혼란의 불꽃",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "fr": "Déluge infernal",
+              "de": "Tobende Feuersbrunst",
+              "es": "Furia infernal"
             },
             "offset": 8
           }
@@ -4027,6 +4101,19 @@
         },
         "abilities": [
           {
+            "id": 911322,
+            "names": {
+              "en": "Mystic Assault",
+              "tw": "神秘突擊",
+              "kr": "신비로운 돌격",
+              "fr": "Assaut mystique",
+              "de": "Mystischer Überfall",
+              "es": "Asalto místico"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
             "id": 911066,
             "names": {
               "en": "Mystic Thrust + 1",
@@ -4406,6 +4493,57 @@
             },
             "offset": 16,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-10-10-10-10-10-10-10-10",
+    "units": [
+      {
+        "id": 100012104,
+        "names": {
+          "en": "Emilia",
+          "tw": "埃米利亞",
+          "kr": "에밀리아",
+          "fr": "Émilia"
+        },
+        "abilities": [
+          {
+            "id": 223130,
+            "names": {
+              "en": "Funeral Knife",
+              "tw": "葬禮之刃",
+              "kr": "장례의 나이프",
+              "fr": "Couteau funéraire",
+              "de": "Begräbnismesser",
+              "es": "Cuchillo funerario"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 254000205,
+        "names": {
+          "en": "Queen",
+          "tw": "葵因",
+          "kr": "퀸"
+        },
+        "abilities": [
+          {
+            "id": 507321,
+            "names": {
+              "en": "Exploder",
+              "tw": "雷管",
+              "kr": "익스플로더",
+              "fr": "Explosif",
+              "de": "Sprengzünder",
+              "es": "Explosivo"
+            },
+            "offset": 8
           }
         ]
       }
@@ -4938,6 +5076,125 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401005405,
+        "names": {
+          "en": "Seaside Nichol",
+          "tw": "尼科爾（泳裝）",
+          "kr": "바닷가의 니콜",
+          "fr": "Nichol tenue d'été",
+          "de": "Badestrand-Nichol",
+          "es": "Nichol playero"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911312,
+            "names": {
+              "en": "Diver - Submersion",
+              "tw": "潛水員 - 下潛",
+              "kr": "다이버·잠수",
+              "fr": "Plongeur - Immersion",
+              "de": "Taucher - Untertauchen",
+              "es": "Buceo - Inmersión"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401005504,
+        "names": {
+          "en": "Summertime Luka",
+          "tw": "露露卡（泳裝）",
+          "kr": "여름날의 루루카",
+          "fr": "Luluka tenue d'été",
+          "de": "Sommerferien-Luka",
+          "es": "Luka estival"
+        },
+        "abilities": [
+          {
+            "id": 911260,
+            "names": {
+              "en": "Aqua - Tidal Party",
+              "tw": "水域 - 潮汐",
+              "kr": "아쿠아·조석",
+              "fr": "Aqua - Marée",
+              "de": "Aqua - Wellenparty",
+              "es": "Aqua - Equipo mareomotriz"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "140-14-14-14-14-14-15-15",
+    "units": [
+      {
+        "id": 100014005,
+        "names": {
+          "en": "Mediena",
+          "tw": "美迪愛娜",
+          "kr": "메디아나"
+        },
+        "abilities": [
+          {
+            "id": 20360,
+            "names": {
+              "en": "Freeze",
+              "tw": "冰結",
+              "kr": "프리즈",
+              "fr": "Gel",
+              "de": "Frost",
+              "es": "Congelación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401005405,
+        "names": {
+          "en": "Seaside Nichol",
+          "tw": "尼科爾（泳裝）",
+          "kr": "바닷가의 니콜",
+          "fr": "Nichol tenue d'été",
+          "de": "Badestrand-Nichol",
+          "es": "Nichol playero"
+        },
+        "abilities": [
+          {
+            "id": 911313,
+            "names": {
+              "en": "Diver - Regelation",
+              "tw": "潛水員 - 再凝",
+              "kr": "다이버·복빙",
+              "fr": "Plongeur - Surgélation",
+              "de": "Taucher - Regelation",
+              "es": "Buceo - Regelación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -4987,6 +5244,32 @@
               "fr": "Onde chaotique",
               "de": "Chaoswelle",
               "es": "Ola caótica"
+            },
+            "offset": 16,
+            "castTime": 50
+          },
+          {
+            "id": 226852,
+            "names": {
+              "en": "Chaos Dark",
+              "tw": "混沌黑暗",
+              "kr": "혼돈의 어둠",
+              "fr": "Ténèbres chaotiques",
+              "de": "Chaosdunkelheit",
+              "es": "Oscuridad caótica"
+            },
+            "offset": 16,
+            "castTime": 50
+          },
+          {
+            "id": 226853,
+            "names": {
+              "en": "Chaos Flare",
+              "tw": "混沌核爆",
+              "kr": "혼돈의 불꽃",
+              "fr": "Brasier chaotique",
+              "de": "Chaosflammen",
+              "es": "Fulgor caótico"
             },
             "offset": 16,
             "castTime": 50

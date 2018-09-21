@@ -74,26 +74,66 @@ export const UNITS: any[] = [
         ]
       },
       {
-        id: 5,
-        names: {
-          en: "Blitz Ace",
-          tw: "水鬥球王牌",
-          kr: "블리츠의 에이스",
-          fr: "Champion de blitz",
-          de: "Blitzass",
-          es: "As del blitzbol"
+        "dataId": 226821,
+        "names": {
+          "en": "Jecht Shot 2",
+          "tw": "傑克特射門２",
+          "kr": "젝트 슛2",
+          "fr": "Jecht Shoot 2",
+          "de": "Jekkt-Spezial 2",
+          "es": "Chut de Jecht S"
         },
-        framesList: [106, 4, 10, 4, 10, 4, 4, 4, 12, 4, 20, 4, 14, 4, 36, 150],
-        hitDamage: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 20],
-        base: 410,
-        debuffs: [
-          {
-            type: "water",
-            value: 100
-          }
+        "castTime": 40,
+        "framesList": [
+          100
         ],
-        dualable: false
+        "offset": 16,
+        "base": 800,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 65
+          }
+        ]
       },
+      {
+        "dataId": 210000107,
+        "names": {
+          "en": "Blitz Ace",
+          "tw": "水鬥球王牌",
+          "kr": "블리츠의 에이스",
+          "fr": "As du Blitz",
+          "de": "Blitzballgott",
+          "es": "As del blitzbol"
+        },
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 20
+        ],
+        "dualable": false,
+        "framesList": [
+          106, 4, 10, 4, 10, 4, 4, 4, 12, 4, 20, 4, 14, 4, 36, 150
+        ],
+        "offset": 8,
+        "base": 1200,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          226821,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
     ]
   },
   {
@@ -851,8 +891,27 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [190],
-        base: 410,
+        base: 800,
         ignore: 50
+      },
+      {
+        "id": 900000017,
+        "names": {
+          "en": "Jackpot Shot + 1",
+          "tw": "雷射加農 + 1",
+          "kr": "포격 광선 + 1",
+          "fr": "Canon laser + 1",
+          "de": "Jackpot-Shot + 1",
+          "es": "As láser + 1"
+        },
+        "damage": "magic",
+        "dualable": false,
+        "framesList": [
+          190
+        ],
+        "offset": 8,
+        "base": 900,
+        "ignore": 50
       }
     ]
   },
@@ -1777,6 +1836,107 @@ export const UNITS: any[] = [
         base: 300,
         ignore: 50
       },
+      {
+        "id": 227101,
+        "names": {
+          "en": "Raging Inferno",
+          "tw": "亂之炎",
+          "kr": "혼란의 불꽃",
+          "fr": "Déluge infernal",
+          "de": "Tobende Feuersbrunst",
+          "es": "Furia infernal"
+        },
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          12, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 8,
+        "base": 680
+      },
+      {
+        "id": 226772,
+        "names": {
+          "en": "Blade of Creation",
+          "tw": "萬象光明劍",
+          "kr": "만상광명검",
+          "fr": "Lumière de la Création",
+          "de": "Klinge der strahlenden Schöpfung",
+          "es": "Hoja de la creación"
+        },
+        "framesList": [
+          20
+        ],
+        "offset": 8,
+        "base": 420
+      },
+      {
+        "id": 507610,
+        "names": {
+          "en": "Blade of Absolute Supremacy",
+          "tw": "絕霸剛衝劍",
+          "kr": "절패강충검",
+          "fr": "Tueur suprême",
+          "de": "Klinge der Absoluten Herrschaft",
+          "es": "Hoja de la supremacía absoluta"
+        },
+        "framesList": [
+          130
+        ],
+        "offset": 8,
+        "base": 825,
+        "ignore": 50
+      },
+      {
+        "id": 253000217,
+        "names": {
+          "en": "Blade of Dark Desire",
+          "tw": "野心黑劍",
+          "kr": "어두운 야심의 검",
+          "fr": "Lame des désirs obscurs",
+          "de": "Klinge der dunklen Begierde",
+          "es": "Hoja del deseo impío"
+        },
+        "hitDamage": [
+          20, 20, 20, 40
+        ],
+        "dualable": false,
+        "framesList": [
+          58, 20, 22, 77
+        ],
+        "offset": 8,
+        "base": 1400
+      },
+      {
+        "id": 2530002172,
+        "names": {
+          "en": "Blade of Dark Desire + 2",
+          "tw": "野心黑劍 + 2",
+          "kr": "어두운 야심의 검 + 2",
+          "fr": "Lame des désirs obscurs + 2",
+          "de": "Klinge der dunklen Begierde + 2",
+          "es": "Hoja del deseo impío + 2"
+        },
+        "hitDamage": [
+          20, 20, 20, 40
+        ],
+        "dualable": false,
+        "framesList": [
+          58, 20, 22, 77
+        ],
+        "offset": 8,
+        "base": 1600,
+        debuffs: [
+          {
+            type: "lightning",
+            value: 100
+          }
+        ]
+      },
     ]
   },
   {
@@ -1935,6 +2095,97 @@ export const UNITS: any[] = [
         base: 300,
         ignore: 25
       },
+      {
+        "id": 227101,
+        "names": {
+          "en": "Raging Inferno",
+          "tw": "亂之炎",
+          "kr": "혼란의 불꽃",
+          "fr": "Déluge infernal",
+          "de": "Tobende Feuersbrunst",
+          "es": "Furia infernal"
+        },
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          12, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 8,
+        "base": 680
+      },
+      {
+        "id": 507602,
+        "names": {
+          "en": "Crush Resistance",
+          "tw": "咬擊超狼破",
+          "kr": "교격초랑파",
+          "fr": "Oppression",
+          "de": "Resistenzbrecher",
+          "es": "Resistencia aplastante"
+        },
+        "castTime": 62,
+        "framesList": [
+          62
+        ],
+        "offset": 16,
+        "base": 1200,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          },
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 253000117,
+        "names": {
+          "en": "Ultima Blade",
+          "tw": "究極劍刃",
+          "kr": "알테마 검",
+          "fr": "Lame Ultima",
+          "de": "Ultima-Klinge",
+          "es": "Hoja Artema"
+        },
+        "dualable": false,
+        "framesList": [
+          230
+        ],
+        "offset": 8,
+        "base": 600,
+        "ignore": 50
+      }
     ]
   },
   {
@@ -2037,7 +2288,7 @@ export const UNITS: any[] = [
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
         castTime: 40,
         offset: 16,
-        base: 400,
+        base: 500,
       },
       {
         id: 911067,
@@ -2055,7 +2306,7 @@ export const UNITS: any[] = [
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
-        base: 450
+        base: 550
       },
       {
         id: 911069,
@@ -2073,7 +2324,7 @@ export const UNITS: any[] = [
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
-        base: 500
+        base: 600
       },
       {
         id: 911070,
@@ -2091,7 +2342,78 @@ export const UNITS: any[] = [
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
-        base: 500
+        base: 600
+      },
+      {
+        "id": 911321,
+        "names": {
+          "en": "Crimson Raid",
+          "tw": "深紅爆擊",
+          "kr": "진홍의 폭격",
+          "fr": "Descente rouge",
+          "de": "Blutroter Raubzug",
+          "es": "Invasión carmesí"
+        },
+        "castTime": 20,
+        "framesList": [
+          100
+        ],
+        "offset": 16,
+        "base": 700
+      },
+      {
+        "id": 401001707,
+        "names": {
+          "en": "Destructive Thrust",
+          "tw": "破壞衝擊",
+          "kr": "파괴의 찌르기",
+          "fr": "Coup destructeur",
+          "de": "Zerstörungsstoß",
+          "es": "Estoque demoledor"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 10
+        ],
+        "dualable": false,
+        "framesList": [
+          147, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 8,
+        "base": 1400
+      },
+      {
+        "id": 950000002,
+        "names": {
+          "en": "Destructive Thrust + 1",
+          "tw": "破壞衝擊 + 1",
+          "kr": "파괴의 찌르기 + 1",
+          "fr": "Coup destructeur + 1",
+          "de": "Zerstörungsstoß + 1",
+          "es": "Estoque demoledor + 1"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 10
+        ],
+        "dualable": false,
+        "framesList": [
+          147, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 8,
+        "base": 1400,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 104
+          },
+          {
+            "type": "ice",
+            "value": 104
+          },
+          {
+            "type": "lightning",
+            "value": 104
+          }
+        ]
       }
     ]
   },
@@ -2610,7 +2932,7 @@ export const UNITS: any[] = [
         framesList: [52, 20, 20, 20, 20],
         castTime: 40,
         offset: 16,
-        base: 360,
+        base: 460,
         ignore: 50,
         damage: "magic",
         dualable: false
@@ -2628,7 +2950,7 @@ export const UNITS: any[] = [
         framesList: [60, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
         offset: 12,
-        base: 420,
+        base: 520,
         ignore: 50,
         damage: "magic",
         dualable: false
@@ -2652,6 +2974,72 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        "dataId": 226852,
+        "names": {
+          "en": "Chaos Dark",
+          "tw": "混沌黑暗",
+          "kr": "혼돈의 어둠",
+          "fr": "Ténèbres chaotiques",
+          "de": "Chaosdunkelheit",
+          "es": "Oscuridad caótica"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          52,
+          20,
+          20,
+          20,
+          20
+        ],
+        "offset": 16,
+        "base": 1400
+      },
+      {
+        "dataId": 226853,
+        "names": {
+          "en": "Chaos Flare",
+          "tw": "混沌核爆",
+          "kr": "혼돈의 불꽃",
+          "fr": "Brasier chaotique",
+          "de": "Chaosflammen",
+          "es": "Fulgor caótico"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          52,
+          20,
+          20,
+          20,
+          20
+        ],
+        "offset": 16,
+        "base": 1400
+      },
+      {
         id: 4,
         names: {
           en: "Riot Blade - Trance",
@@ -2663,7 +3051,7 @@ export const UNITS: any[] = [
         },
         framesList: [49, 10, 14, 9, 16, 12, 42, 4, 4],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
-        base: 390,
+        base: 640,
         ignore: 50,
         damage: "magic",
         dualable: false
@@ -2671,10 +3059,12 @@ export const UNITS: any[] = [
     ],
     multiCasts: [
       {
-        count: 2,
+        count: 4,
         abilities: [
           500590,
-          704700
+          704700,
+          226852,
+          226853
         ]
       }
     ],
@@ -2995,21 +3385,6 @@ export const UNITS: any[] = [
         base: 220
       },
       {
-        id: 7,
-        names: {
-          en: "Twin Swords",
-          fr: "Double épées",
-          tw: "雙劍",
-          kr: "트윈 소드",
-          de: "Zwillingsschwerter",
-          es: "Espadas gemelas"
-        },
-        framesList: [68, 4, 47, 4, 35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20, 4],
-        hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10],
-        base: 800,
-        dualable: false
-      },
-      {
         id: 8,
         names: {
           en: "Onion Cutter",
@@ -3036,36 +3411,14 @@ export const UNITS: any[] = [
           "es": "Esplendor de viento + 2"
         },
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          12
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
         "elements": [
           "wind"
         ],
         "framesList": [
-          42,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
         "offset": 16,
         "base": 400,
@@ -3087,36 +3440,14 @@ export const UNITS: any[] = [
           "es": "Esplendor de fuego + 2"
         },
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          12
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "framesList": [
-          42,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
         "offset": 16,
         "base": 400,
@@ -3138,36 +3469,14 @@ export const UNITS: any[] = [
           "es": "Esplendor de agua + 2"
         },
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          12
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
         "elements": [
           "water"
         ],
         "framesList": [
-          42,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
         "offset": 16,
         "base": 400,
@@ -3189,36 +3498,14 @@ export const UNITS: any[] = [
           "es": "Esplendor de tierra + 2"
         },
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          12
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
         "elements": [
           "earth"
         ],
         "framesList": [
-          42,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
         "offset": 16,
         "base": 400,
@@ -3240,33 +3527,11 @@ export const UNITS: any[] = [
           "es": "Corte cebolla (+ 2)"
         },
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          12
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
         "framesList": [
-          42,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
         "offset": 16,
         "base": 720
@@ -3282,45 +3547,49 @@ export const UNITS: any[] = [
           "es": "Cortador cebolla (+ 2)"
         },
         "hitDamage": [
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          7,
-          7,
-          7,
-          7
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7
         ],
         "castTime": 40,
         "framesList": [
-          42,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7,
-          7
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
         "offset": 16,
         "base": 880
       },
+      {
+        "dataId": 507290,
+        "names": {
+          "en": "Onion Chop",
+          "tw": "洋蔥斬碎",
+          "kr": "다진 양파",
+          "fr": "Taillade de l'Oignon",
+          "de": "Zwiebelschlag",
+          "es": "Tajo Cebolla"
+        },
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 8,
+        "base": 1100
+      },
+      {
+        id: 7,
+        names: {
+          en: "Twin Swords",
+          fr: "Double épées",
+          tw: "雙劍",
+          kr: "트윈 소드",
+          de: "Zwillingsschwerter",
+          es: "Espadas gemelas"
+        },
+        framesList: [68, 4, 47, 4, 35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20, 4],
+        hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10],
+        base: 1100,
+        dualable: false
+      }
     ]
   },
   {
@@ -3433,17 +3702,108 @@ export const UNITS: any[] = [
       {
         id: 1,
         names: {
-          en: "Devastate +2",
-          fr: "Dévastation +2",
-          tw: "毀滅之劍",
-          kr: "데바스테이트",
-          de: "Verwüstung",
-          es: "Devastador"
+          en: "Devastate + 2",
+          fr: "Dévastation + 2",
+          tw: "毀滅之劍 + 2",
+          kr: "데바스테이트 + 2",
+          de: "Verwüstung + 2",
+          es: "Devastador + 2"
         },
         framesList: [20, 26, 10, 10, 30],
         castTime: 40,
         offset: 80,
         base: 800
+      },
+      {
+        "id": 226751,
+        "names": {
+          "en": "Armor Piercing",
+          "tw": "鎧甲刺穿",
+          "kr": "아머 피어싱",
+          "fr": "Perforation renforcée",
+          "de": "Rüstungsdurchstoß",
+          "es": "Perforarmaduras"
+        },
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ],
+        "offset": 16,
+        "base": 550
+      },
+      {
+        "id": 226753,
+        "names": {
+          "en": "Hollow Piercing",
+          "tw": "洞穿",
+          "kr": "홀로우 피어싱",
+          "fr": "Perforation vide",
+          "de": "Hohldurchstoß",
+          "es": "Perforación nimia"
+        },
+        "framesList": [
+          2
+        ],
+        "offset": 8,
+        "base": 375,
+        "ignore": 50
+      },
+      {
+        "id": 507321,
+        "names": {
+          "en": "Exploder",
+          "tw": "雷管",
+          "kr": "익스플로더",
+          "fr": "Explosif",
+          "de": "Sprengzünder",
+          "es": "Explosivo"
+        },
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 20
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8,
+        "base": 1500
+      },
+      {
+        "id": 254000207,
+        "names": {
+          "en": "Divine Judgment",
+          "tw": "十字審判",
+          "kr": "크로스 저지",
+          "fr": "Croix du jugement",
+          "de": "Richtkreuz",
+          "es": "Iudicium Crux"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "framesList": [
+          73, 15, 15, 15, 15, 15, 15
+        ],
+        "offset": 8,
+        "base": 1400
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          226751,
+          226753
+        ]
       }
     ]
   },
@@ -3584,7 +3944,7 @@ export const UNITS: any[] = [
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
         offset: 26,
-        base: 200,
+        base: 220,
         ignore: 50,
         debuffs: [
           {
@@ -3606,7 +3966,7 @@ export const UNITS: any[] = [
         framesList: [180],
         castTime: 40,
         offset: 86,
-        base: 750,
+        base: 900,
       },
       {
         "id": 706840,
@@ -3622,7 +3982,7 @@ export const UNITS: any[] = [
           40
         ],
         "offset": 8,
-        "base": 200,
+        "base": 250,
         "ignore": 50
       },
       {
@@ -3639,7 +3999,7 @@ export const UNITS: any[] = [
           40
         ],
         "offset": 8,
-        "base": 200,
+        "base": 250,
         "ignore": 50
       },
       {
@@ -3653,34 +4013,78 @@ export const UNITS: any[] = [
           "es": "Glaive real + 2"
         },
         "hitDamage": [
-          12,
-          12,
-          12,
-          12,
-          13,
-          13,
-          13,
-          13
+          12, 12, 12, 12, 13, 13, 13, 13
         ],
         "castTime": 40,
         "framesList": [
-          82,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
+          82, 8, 8, 8, 8, 8, 8, 8
         ],
         "offset": 26,
-        "base": 275,
+        "base": 325,
         "ignore": 50,
         "debuffs": [
           {
             "type": "fire",
             "value": 70
           }
+        ]
+      },
+      {
+        "id": 215001107,
+        "names": {
+          "en": "Lethal Combat",
+          "tw": "致命格鬥",
+          "kr": "목숨을 건 전투",
+          "fr": "Combat mortel",
+          "de": "Tödlicher Kampf",
+          "es": "Trifulca letal"
+        },
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "dualable": false,
+        "framesList": [
+          36, 43, 27, 34
+        ],
+        "offset": 8,
+        "base": 800,
+        "ignore": 50
+      },
+      {
+        "id": 900000197,
+        "names": {
+          "en": "Lethal Combat + 1",
+          "tw": "致命格鬥 + 1",
+          "kr": "목숨을 건 전투 + 1",
+          "fr": "Combat mortel + 1",
+          "de": "Tödlicher Kampf + 1",
+          "es": "Trifulca letal + 1"
+        },
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "dualable": false,
+        "framesList": [
+          36, 43, 27, 34
+        ],
+        "offset": 8,
+        "base": 800,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          706840,
+          706860,
+          706880
         ]
       }
     ]
@@ -4698,7 +5102,7 @@ export const UNITS: any[] = [
         dualable: false,
       },
       {
-        id: 2,
+        id: 204980,
         names: {
           en: "Fire From Below",
           fr: "Feu de l'Enfer",
@@ -4718,7 +5122,7 @@ export const UNITS: any[] = [
         dualable: false,
       },
       {
-        id: 3,
+        id: 702720,
         names: {
           en: "Fire From Below +2",
           fr: "Feu de l'Enfer +2",
@@ -4742,6 +5146,74 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false,
+      },
+      {
+        "id": 202000507,
+        "names": {
+          "en": "Fierce Wind",
+          "tw": "龍捲",
+          "kr": "회오리바람",
+          "fr": "Cyclone",
+          "de": "Heftiger Wind",
+          "es": "Ciclón"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "framesList": [
+          78, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 8,
+        "base": 1350,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          },
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          204980,
+          702720
+        ]
       }
     ]
   },
@@ -15970,6 +16442,540 @@ export const UNITS: any[] = [
           227283,
           227284,
           227285
+        ]
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "names": {
+      "en": "Aloha Lasswell",
+      "tw": "拉斯韋爾（泳裝）",
+      "kr": "알로하 라스웰",
+      "fr": "Lasswell tenue d'été",
+      "de": "Aloha-Lasswell",
+      "es": "Lasswell hawaiano"
+    },
+    "abilities": [
+      {
+        "id": 911269,
+        "names": {
+          "en": "Summer - Tidal Splash",
+          "tw": "夏日 - 潮汐噴濺",
+          "kr": "여름·파도의 물보라",
+          "fr": "Été - Reflux des marées",
+          "de": "Sommer - Wellenspritzer",
+          "es": "Verano - Salpicón de las mareas"
+        },
+        "castTime": 40,
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 200
+      },
+      {
+        "id": 911272,
+        "names": {
+          "en": "Summer - Sea Breeze",
+          "tw": "夏日 - 海風",
+          "kr": "여름·바닷바람",
+          "fr": "Été - Brise marine",
+          "de": "Sommer - Meeresbrise",
+          "es": "Verano - Brisa marina"
+        },
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          70
+        ],
+        "offset": 16,
+        "base": 200
+      },
+      {
+        "id": 911279,
+        "names": {
+          "en": "Summer - Waves of the Ocean",
+          "tw": "夏日 - 海洋波浪",
+          "kr": "여름·파도",
+          "fr": "Été - Vagues océaniques",
+          "de": "Sommer - Ozeanwellen",
+          "es": "Verano - Voluntad del océano"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 460,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 911278,
+        "names": {
+          "en": "Summer - Winds of the Sea",
+          "tw": "夏日 - 大海之風",
+          "kr": "여름·해풍",
+          "fr": "Été - Ailes marines",
+          "de": "Sommer - Meereswinde",
+          "es": "Verano - Voluntad de los mares"
+        },
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 460,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 911280,
+        "names": {
+          "en": "Summer - Ocean Splitter",
+          "tw": "夏日 - 分裂大海",
+          "kr": "여름·바다 가르기",
+          "fr": "Été - Séparation des océans",
+          "de": "Sommer - Ozeanspalter",
+          "es": "Verano - Rompeocéanos"
+        },
+        "elements": [
+          "water"
+        ],
+        "framesList": [
+          70
+        ],
+        "offset": 8,
+        "base": 540
+      },
+      {
+        "id": 911286,
+        "names": {
+          "en": "Summer - Showdown",
+          "tw": "夏日 - 撒手鐧",
+          "kr": "여름·대결",
+          "fr": "Été - Confrontation",
+          "de": "Sommer - Showdown",
+          "es": "Verano - Enfrentamiento"
+        },
+        "framesList": [
+          70
+        ],
+        "offset": 8,
+        "base": 1200
+      },
+      {
+        "id": 911288,
+        "names": {
+          "en": "Enriched Mind",
+          "tw": "充實心靈",
+          "kr": "풍부한 지식",
+          "fr": "Esprit enrichi",
+          "de": "Reicherer Geist",
+          "es": "Mente enriquecida"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          120
+        ],
+        "offset": 16,
+        "base": 500
+      },
+      {
+        "id": 401005307,
+        "names": {
+          "en": "Shark Wave",
+          "tw": "鯊魚浪潮",
+          "kr": "경파",
+          "fr": "Vague-requin",
+          "de": "Hai-Welle",
+          "es": "Ola de tiburón"
+        },
+        "hitDamage": [
+          50,
+          50
+        ],
+        "dualable": false,
+        "framesList": [
+          125,
+          80
+        ],
+        "offset": 8,
+        "base": 1290,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "wind",
+            "value": 100
+          }
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          911269,
+          911272,
+          911278,
+          911279,
+          911280
+        ]
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "names": {
+      "en": "Seaside Nichol",
+      "tw": "尼科爾（泳裝）",
+      "kr": "바닷가의 니콜",
+      "fr": "Nichol tenue d'été",
+      "de": "Badestrand-Nichol",
+      "es": "Nichol playero"
+    },
+    "abilities": [
+      {
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16,
+        "base": 600
+      },
+      {
+        "id": 20320,
+        "names": {
+          "en": "Waterja",
+          "tw": "強流水",
+          "kr": "워터쟈",
+          "fr": "Eau max",
+          "de": "Aquaka",
+          "es": "Aqua+++"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          190
+        ],
+        "offset": 16,
+        "base": 600
+      },
+      {
+        "id": 911301,
+        "names": {
+          "en": "Diver - Waterfall",
+          "tw": "潛水員 - 瀑布",
+          "kr": "다이버·폭포",
+          "fr": "Plongeur - Chute d'eau",
+          "de": "Taucher - Wasserfall",
+          "es": "Buceo - Catarata"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          150
+        ],
+        "offset": 16,
+        "base": 250,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 911302,
+        "names": {
+          "en": "Diver - Icicle",
+          "tw": "潛水員 - 冰柱",
+          "kr": "다이버·고드름",
+          "fr": "Plongeur - Stalactite",
+          "de": "Taucher - Eiszapfen",
+          "es": "Buceo - Carámbano"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16,
+        "base": 250,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 20380,
+        "names": {
+          "en": "Flood",
+          "tw": "洪水",
+          "kr": "플러드",
+          "fr": "Inondation",
+          "de": "Flut",
+          "es": "Inundación"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 250,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 911312,
+        "names": {
+          "en": "Diver - Submersion",
+          "tw": "潛水員 - 下潛",
+          "kr": "다이버·잠수",
+          "fr": "Plongeur - Immersion",
+          "de": "Taucher - Untertauchen",
+          "es": "Buceo - Inmersión"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 360
+      },
+      {
+        "id": 911313,
+        "names": {
+          "en": "Diver - Regelation",
+          "tw": "潛水員 - 再凝",
+          "kr": "다이버·복빙",
+          "fr": "Plongeur - Surgélation",
+          "de": "Taucher - Regelation",
+          "es": "Buceo - Regelación"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ],
+        "offset": 16,
+        "base": 360
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911301,
+          911302,
+          911312,
+          911313
+        ]
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "names": {
+      "en": "Summertime Luka",
+      "tw": "露露卡（泳裝）",
+      "kr": "여름날의 루루카",
+      "fr": "Luluka tenue d'été",
+      "de": "Sommerferien-Luka",
+      "es": "Luka estival"
+    },
+    "abilities": [
+      {
+        "id": 911255,
+        "names": {
+          "en": "Aqua - Splash",
+          "tw": "水域 - 噴濺",
+          "kr": "아쿠아·물보라",
+          "fr": "Aqua - éclaboussure",
+          "de": "Aqua - Spritzer",
+          "es": "Aqua - Salpicón"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          80
+        ],
+        "offset": 16,
+        "base": 200
+      },
+      {
+        "id": 911256,
+        "names": {
+          "en": "Aqua - Stream",
+          "tw": "水域 - 激流",
+          "kr": "아쿠아·격류",
+          "fr": "Aqua - courant",
+          "de": "Aqua - Schwall",
+          "es": "Aqua - Corriente"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16,
+        "base": 600
+      },
+      {
+        "id": 911258,
+        "names": {
+          "en": "Aqua - Whirlpool",
+          "tw": "水域 - 漩渦",
+          "kr": "아쿠아·소용돌이",
+          "fr": "Aqua - Tourbillon",
+          "de": "Aqua - Strudel",
+          "es": "Aqua - Remolino"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16,
+        "base": 250,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 911260,
+        "names": {
+          "en": "Aqua - Tidal Party",
+          "tw": "水域 - 潮汐",
+          "kr": "아쿠아·조석",
+          "fr": "Aqua - Marée",
+          "de": "Aqua - Wellenparty",
+          "es": "Aqua - Equipo mareomotriz"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 250
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911255,
+          911256,
+          911258,
+          911260
         ]
       }
     ]
