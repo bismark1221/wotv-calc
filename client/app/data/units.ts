@@ -74,7 +74,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 226821,
+        "id": 226821,
         "names": {
           "en": "Jecht Shot 2",
           "tw": "傑克特射門２",
@@ -97,7 +97,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 210000107,
+        "id": 210000107,
         "names": {
           "en": "Blitz Ace",
           "tw": "水鬥球王牌",
@@ -2974,7 +2974,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        "dataId": 226852,
+        "id": 226852,
         "names": {
           "en": "Chaos Dark",
           "tw": "混沌黑暗",
@@ -3007,7 +3007,7 @@ export const UNITS: any[] = [
         "base": 1400
       },
       {
-        "dataId": 226853,
+        "id": 226853,
         "names": {
           "en": "Chaos Flare",
           "tw": "混沌核爆",
@@ -3557,7 +3557,7 @@ export const UNITS: any[] = [
         "base": 880
       },
       {
-        "dataId": 507290,
+        "id": 507290,
         "names": {
           "en": "Onion Chop",
           "tw": "洋蔥斬碎",

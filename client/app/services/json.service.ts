@@ -248,85 +248,28 @@ export class JsonService {
   private updateDamage(unitId, id, ability) {
     // physic damage : [1, 1, 1, [0,  0,  0,  0,  0,  0,  100]]
     // & ignore : [1, 1, 21, [0,  0,  500,  -50]]
-    let effect = this.findEffect(ability, 1, 1, 1);
+    let effect = this.findEffect(ability, [[1, 1, 1], [2, 1, 1], [1, 1, 81], [2, 1, 81], [2, 4, 1]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
 
-    effect = this.findEffect(ability, 2, 1, 1);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 1, 1, 81);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 81);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 4, 1);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[6];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 1, 1, 41);
+    effect = this.findEffect(ability, [[1, 1, 41], [1, 1, 112], [2, 1, 112]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
 
-    effect = this.findEffect(ability, 1, 1, 112);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 112);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[0];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 1, 1, 25);
+    effect = this.findEffect(ability, [[1, 1, 25], [2, 1, 25]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[1];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
 
-    effect = this.findEffect(ability, 2, 1, 25);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[1];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 1, 1, 21);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
-      this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 21);
+    effect = this.findEffect(ability, [[1, 1, 21], [2, 1, 21]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
@@ -336,14 +279,14 @@ export class JsonService {
 
     // "effects": ["3 physical attacks (1.6x each, 4.8x total, ATK) to all enemies"],
     // "effects_raw": [[2, 1, 42, [0,  0,  3,  3,  160]]]
-    effect = this.findEffect(ability, 2, 1, 42);
+    effect = this.findEffect(ability, [[2, 1, 42]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[3] * effect[4];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return;
     }
 
-    effect = this.findEffect(ability, 1, 1, 126);
+    effect = this.findEffect(ability, [[1, 1, 126]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[4] + effect[5] * effect[6];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
@@ -352,14 +295,7 @@ export class JsonService {
 
     // "effects": ["Critical physical damage (4.95x, ATK) to all enemies"],
     // "effects_raw": [[2, 1, 43, [0,  0,  495,  0]]]},
-    effect = this.findEffect(ability, 2, 1, 43);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[2] * 1.5;
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-    // [1, 1, 43, [0,  0,  700,  0]]
-    effect = this.findEffect(ability, 1, 1, 43);
+    effect = this.findEffect(ability, [[1, 1, 43], [2, 1, 43]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2] * 1.5;
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
@@ -367,13 +303,7 @@ export class JsonService {
     }
 
     // 1, 1, 102, [100,  99999,  400]
-    effect = this.findEffect(ability, 1, 1, 102);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
-      return;
-    }
-    effect = this.findEffect(ability, 2, 1, 102);
+    effect = this.findEffect(ability, [[1, 1, 102], [2, 1, 102]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
@@ -383,29 +313,14 @@ export class JsonService {
 
     // magic damage : [1, 1, 15, [0,  0,  0,  0,  0,  180,  0]
     // & ignore : [2, 1, 70, [0,  0,  180,  50]]
-    effect = this.findEffect(ability, 1, 1, 15);
+    effect = this.findEffect(ability, [[1, 1, 15], [2, 1, 15]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[5];
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
       return;
     }
 
-    effect = this.findEffect(ability, 2, 1, 15);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[5];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 1, 1, 70);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
-      this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
-      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 70);
+    effect = this.findEffect(ability, [[1, 1, 70], [2, 1, 70]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(effect[3]);
@@ -414,14 +329,7 @@ export class JsonService {
     }
 
     // magic with upgrade : [2, 1, 72, [0,  0,  150,  100,  100,  5]]
-    effect = this.findEffect(ability, 1, 1, 72);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[2] + effect[4] * effect[5];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 72);
+    effect = this.findEffect(ability, [[1, 1, 72], [2, 1, 72]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2] + effect[4] * effect[5];
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
@@ -429,14 +337,7 @@ export class JsonService {
     }
 
     // magic damage with SPR scalling : [2, 1, 103, [100,  99999,  250]]
-    effect = this.findEffect(ability, 1, 1, 103);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 103);
+    effect = this.findEffect(ability, [[1, 1, 103], [2, 1, 103]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[2];
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
@@ -444,14 +345,7 @@ export class JsonService {
     }
 
     // magic damage with EVO damage : [2, 1, 124, [0, 0, 0, 0, 0, 0, 0, 900, 900, [50,  50]]
-    effect = this.findEffect(ability, 2, 1, 124);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[7];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
-      return;
-    }
-
-    effect = this.findEffect(ability, 1, 1, 124);
+    effect = this.findEffect(ability, [[1, 1, 124], [2, 1, 124]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[7];
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
@@ -461,14 +355,7 @@ export class JsonService {
 
 
     // hybrid damage : [1, 1, 40, [0,  0,  0,  0,  0,  0,  0,  0,  180,  180]]
-    effect = this.findEffect(ability, 1, 1, 40);
-    if (effect) {
-      this.ffbeChainUnits[unitId].abilities[id].base = effect[8];
-      this.ffbeChainUnits[unitId].abilities[id].damage = "hybrid";
-      return;
-    }
-
-    effect = this.findEffect(ability, 2, 1, 40);
+    effect = this.findEffect(ability, [[1, 1, 40], [2, 1, 40]]);
     if (effect) {
       this.ffbeChainUnits[unitId].abilities[id].base = effect[8];
       this.ffbeChainUnits[unitId].abilities[id].damage = "hybrid";
@@ -480,10 +367,7 @@ export class JsonService {
     // [2, 1, 33, [-50,  0,  0,  0,  0,  0,  0,  0,  1,  5]]
     // [1, 1, 33, [0,  0,  -60,  0,  0,  0,  0,  0,  1,  5]]
     // fire, ice, lightning, water, wind, earth, light, dark, nbEnemy, nbTurn
-    let effect = this.findEffect(ability, 2, 1, 33);
-    if (!effect) {
-      effect = this.findEffect(ability, 1, 1, 33);
-    }
+    let effect = this.findEffect(ability, [[1, 1, 33], [2, 1, 33]]);
 
     if (effect) {
       for (let i = 0; i <= 7; i++) {
@@ -502,7 +386,7 @@ export class JsonService {
 
   private isMultipleCastAbility(unitId, ability) {
     // ==> full dualcast ==> "effects_raw": [0, 3, 45, ["none"]]
-    let effect = this.findEffect(ability, 0, 3, 45);
+    let effect = this.findEffect(ability, [[0, 3, 45]]);
     if (effect) {
       this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || 2 >= this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
       this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 2 >= this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
@@ -510,20 +394,20 @@ export class JsonService {
     }
 
     // ==> dual black ==> [0, 3, 44, ["none"]]
-    effect = this.findEffect(ability, 0, 3, 44);
+    effect = this.findEffect(ability, [[0, 3, 44]]);
     if (effect) {
       this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || 2 >= this.ffbeChainUnits[unitId].multipleBlack ? 2 : this.ffbeChainUnits[unitId].multipleBlack;
     }
 
     // ==> white magic ==> [0, 3, 52, [2,  2,  XXX]]  &&  [0, 3, 52, [2,  3,  XXX]]  &&  [0, 3, 97, ...]
-    effect = this.findEffect(ability, 0, 3, 52);
+    effect = this.findEffect(ability, [[0, 3, 52]]);
     if (effect) {
       this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || effect[1] >= this.ffbeChainUnits[unitId].multipleWhite ? effect[1] : this.ffbeChainUnits[unitId].multipleWhite;
       this.ffbeChainUnits[unitId].multipleBlack = !this.ffbeChainUnits[unitId].multipleBlack || effect[1] >= this.ffbeChainUnits[unitId].multipleBlack ? effect[1] : this.ffbeChainUnits[unitId].multipleBlack;
       this.ffbeChainUnits[unitId].multipleGreen = !this.ffbeChainUnits[unitId].multipleGreen || effect[1] >= this.ffbeChainUnits[unitId].multipleGreen ? effect[1] : this.ffbeChainUnits[unitId].multipleGreen;
     }
 
-    effect = this.findEffect(ability, 0, 3, 97);
+    effect = this.findEffect(ability, [[0, 3, 97]]);
     if (effect) {
       if (effect[0] === 2) {
         this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 2 >= this.ffbeChainUnits[unitId].multipleWhite ? 2 : this.ffbeChainUnits[unitId].multipleWhite;
@@ -538,7 +422,7 @@ export class JsonService {
     }
 
     // ==> "effects_raw": [0, 3, 1006, [2, [ListSkillIds, ..., ..., ...]]]
-    effect = this.findEffect(ability, 0, 3, 1006);
+    effect = this.findEffect(ability, [[0, 3, 1006]]);
     if (effect) {
       effect[1].forEach(skillId => {
         let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
@@ -549,21 +433,8 @@ export class JsonService {
     // ???? "effects_raw": [[0, 3, 98, [2, 504560, -1, [910652,  910654], 4, 1, 1]]], ???? && mp_cost === 0
     // gagne l'accès à un spell qui donne 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
     // Son vrai 5 cast :                           [0, 3, 98, [5,  704290,  1,  704140,  9999,  1,  0]]
-    effect = this.findEffect(ability, 0, 3, 98);
+    effect = this.findEffect(ability, [[0, 3, 98], [0, 3, 53]]);
     if (effect ) {                   // && ability.mp_cost === 0
-      let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
-
-      if (Array.isArray(effect[3])) {
-        effect[3].forEach(skillId => {
-          this.saveMultiCast(unitId, multiCastPosition, skillId);
-        });
-      } else {
-        this.saveMultiCast(unitId, multiCastPosition, effect[3]);
-      }
-    }
-
-    effect = this.findEffect(ability, 0, 3, 53);
-    if (effect) {                   // && ability.mp_cost === 0
       let multiCastPosition = this.findMultiCastByCount(unitId, effect[0]);
 
       if (Array.isArray(effect[3])) {
@@ -621,7 +492,7 @@ export class JsonService {
 
   private unlockSkill(unitId, ability, dataId, level = 0) {
     // gagne l'accès à un spell qui donne 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
-    let effect = this.findEffect(ability, 0, 3, 98);
+    let effect = this.findEffect(ability, [[0, 3, 98]]);
     if (effect) {
       if (Array.isArray(effect[3])) {
         effect[3].forEach(skillId => {
@@ -635,26 +506,7 @@ export class JsonService {
     }
 
     // [1, 1, 99, [[2,  2], [503890,  503910], 2, 503900, 2, 503890]]
-    effect = this.findEffect(ability, 1, 1, 99);
-    if (effect) {
-      for (let i = 2; i < effect.length; i++) {
-        if (effect[i] !== 2) {
-          this.addSkill(unitId, this.skills[effect[i]], effect[i], level);
-        }
-      }
-    }
-
-    effect = this.findEffect(ability, 0, 3, 99);
-    if (effect) {
-      for (let i = 2; i < effect.length; i++) {
-        if (effect[i] !== 2) {
-          this.addSkill(unitId, this.skills[effect[i]], effect[i], level);
-        }
-      }
-    }
-
-    // [2, 1, 99, [[2,  2,  2], [208240,  704460,  704470], 2, 500590, 2, 500580]]]
-    effect = this.findEffect(ability, 2, 1, 99);
+    effect = this.findEffect(ability, [[1, 1, 99], [0, 3, 99], [2, 1, 99]]);
     if (effect) {
       for (let i = 2; i < effect.length; i++) {
         if (effect[i] !== 2) {
@@ -664,19 +516,7 @@ export class JsonService {
     }
 
     // [1, 3, 100, [[2,  2,  2], [502050,  502060,  502070], 99999, 4, 1]]
-    effect = this.findEffect(ability, 1, 3, 100);
-    if (effect) {
-      if (Array.isArray(effect[1])) {
-        effect[1].forEach(skillId => {
-          this.addSkill(unitId, this.skills[skillId], skillId, level);
-        });
-      } else {
-        this.addSkill(unitId, this.skills[effect[1]], effect[1], level);
-      }
-    }
-
-    // [0, 3, 100, [[2,  2,  2], [910944,  910945,  910946], 99999, 2, 1]]
-    effect = this.findEffect(ability, 0, 3, 100);
+    effect = this.findEffect(ability, [[1, 3, 100], [0, 3, 100]]);
     if (effect) {
       if (Array.isArray(effect[1])) {
         effect[1].forEach(skillId => {
@@ -688,13 +528,13 @@ export class JsonService {
     }
 
     // [0, 3, 50, [30,  3,  910947,  1]]
-    effect = this.findEffect(ability, 0, 3, 50);
+    effect = this.findEffect(ability, [[0, 3, 50]]);
     if (effect) {
       this.addSkill(unitId, this.skills[effect[2]], effect[2], level);
     }
 
     // Random use skill : [2, 1, 29, [[504100,  30], [504110,  30], [504120,  40], [0,  0], [0,  0]]]
-    effect = this.findEffect(ability, 2, 1, 29);
+    effect = this.findEffect(ability, [[2, 1, 29], [1, 1, 29], [0, 3, 29], [0, 0, 29]]);
     if (effect) {
       for (let i = 0; i < effect.length; i++) {
         if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
@@ -703,49 +543,12 @@ export class JsonService {
       }
     }
 
-    effect = this.findEffect(ability, 1, 1, 29);
-    if (effect) {
-      for (let i = 0; i < effect.length; i++) {
-        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
-          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0], level);
-        }
-      }
-    }
-
-    effect = this.findEffect(ability, 0, 3, 29);
-    if (effect) {
-      for (let i = 0; i < effect.length; i++) {
-        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
-          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0], level);
-        }
-      }
-    }
-
-    effect = this.findEffect(ability, 0, 0, 29);
-    if (effect) {
-      for (let i = 0; i < effect.length; i++) {
-        if (Array.isArray(effect[i]) && effect[i][0] !== 0) {
-          this.addSkill(unitId, this.skills[effect[i][0]], effect[i][0], level);
-        }
-      }
-    }
-
-    effect = this.findEffect(ability, 0, 3, 130);
+    effect = this.findEffect(ability, [[0, 3, 130], [1, 1, 130], [2, 1, 130]]);
     if (effect) {
       this.addSkill(unitId, this.skills[effect[0]], effect[0], level);
     }
 
-    effect = this.findEffect(ability, 1, 1, 130);
-    if (effect) {
-      this.addSkill(unitId, this.skills[effect[0]], effect[0], level);
-    }
-
-    effect = this.findEffect(ability, 2, 1, 130);
-    if (effect) {
-      this.addSkill(unitId, this.skills[effect[0]], effect[0], level);
-    }
-
-    effect = this.findEffect(ability, 0, 3, 72);
+    effect = this.findEffect(ability, [[0, 3, 72]]);
     if (effect) {
       this.addSkill(unitId, this.lbs[effect[0]], effect[0], 1, true);
     }
@@ -820,18 +623,18 @@ export class JsonService {
       this.ffbeChainUnits[summonId].abilities[id].hitDamage = ability.attack_damage[0];
     }
 
-    let effect = this.findEffect(ability, 2, 1, 80);
+    let effect = this.findEffect(ability, [[2, 1, 80]]);
     if (effect) {
       base = effect[6];
       this.ffbeChainUnits[summonId].abilities[id].damage = 'magic';
     }
 
-    effect = this.findEffect(ability, 2, 1, 79);
+    effect = this.findEffect(ability, [[2, 1, 79]]);
     if (effect) {
       base = effect[7];
     }
 
-    effect = this.findEffect(ability, 2, 1, 94);
+    effect = this.findEffect(ability, [[2, 1, 94]]);
     if (effect) {
       base = effect[0];
     }
@@ -855,21 +658,24 @@ export class JsonService {
     return find;
   }
 
-  private findEffect(ability, one, two, three) {
+  private findEffect(ability, numbers) {
     let find = null;
-    let effects = [];
 
-    if (ability.effects_raw) {
-      effects = ability.effects_raw;
-    } else if (ability.max_level) {
-      effects = ability.max_level.effects_raw;
-    }
+    numbers.forEach(number => {
+      let effects = [];
 
-    effects.forEach(effect => {
-      if (effect[0] == one && effect[1] == two && effect[2] == three) {
-        find = effect[3];
-        return;
+      if (ability.effects_raw) {
+        effects = ability.effects_raw;
+      } else if (ability.max_level) {
+        effects = ability.max_level.effects_raw;
       }
+
+      effects.forEach(effect => {
+        if (effect[0] == number[0] && effect[1] == number[1] && effect[2] == number[2]) {
+          find = effect[3];
+          return;
+        }
+      });
     });
 
     return find;
