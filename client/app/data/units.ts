@@ -6524,6 +6524,28 @@ export const UNITS: any[] = [
         ]
       },
       {
+        id: 3,
+        names: {
+          en: "Hexa Thrust + 2",
+          tw: "六角突擊 + 2",
+          kr: "헥사 드러스트 + 2",
+          fr: "Hexaestoque + 2",
+          de: "Sechserstoß + 2",
+          es: "Hexaestoque + 2"
+        },
+        framesList: [28, 6, 6, 6, 6, 29],
+        hitDamage: [10, 10, 10, 10, 10, 50],
+        offset: 66,
+        base: 250,
+        ignore: 50,
+        debuffs: [
+          {
+            type: "ice",
+            value: 75
+          }
+        ]
+      },
+      {
         id: 2,
         names: {
           en: "Vaskylade",
@@ -16979,5 +17001,624 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 168,
+    "names": {
+      "en": "Circe",
+      "tw": "瑟希",
+      "kr": "서스",
+      "fr": "Circé"
+    },
+    "abilities": [
+      {
+        "id": 911353,
+        "names": {
+          "en": "Predict - Blazing Omen",
+          "tw": "預言-炙熱預兆",
+          "kr": "예측·화재의 징조",
+          "fr": "Présage - Augure ardent",
+          "de": "Weissaung - Omen der Glut",
+          "es": "Predicción - Presagio abrasador"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          95
+        ],
+        "offset": 16,
+        "base": 260
+      },
+      {
+        "id": 911354,
+        "names": {
+          "en": "Predict - Freezing Omen",
+          "tw": "預言-凍結預兆",
+          "kr": "예측·빙결의 징조",
+          "fr": "Présage - Augure glacial",
+          "de": "Weissagung - Omen des Frosts",
+          "es": "Predicción - Presagio helado"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          130
+        ],
+        "offset": 16,
+        "base": 260
+      },
+      {
+        "id": 911355,
+        "names": {
+          "en": "Predict - Cyclonic Omen",
+          "tw": "預言-風旋預兆",
+          "kr": "예측·선풍의 징조",
+          "fr": "Présage - Augure tempétueux",
+          "de": "Weissagung - Omen des Zyklons",
+          "es": "Predicción - Presagio ciclónico"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind",
+          "earth"
+        ],
+        "dualable": false,
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ],
+        "offset": 16,
+        "base": 260
+      },
+      {
+        "id": 911356,
+        "names": {
+          "en": "Predict - Torrential Omen",
+          "tw": "預言-滂沱預兆",
+          "kr": "예측·홍수의 징조",
+          "fr": "Présage - Augure torrentiel",
+          "de": "Weissagung - Omen der Flut",
+          "es": "Predicción - Presagio torrencial"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 260
+      },
+      {
+        "id": 911360,
+        "names": {
+          "en": "Predict - Rapture",
+          "tw": "預言-喜樂",
+          "kr": "예측·황홀감",
+          "fr": "Présage - Ascension",
+          "de": "Weissagung - Entrückung",
+          "es": "Predicción - Éxtasis"
+        },
+        "damage": "magic",
+        "castTime": 4,
+        "dualable": false,
+        "framesList": [
+          6
+        ],
+        "offset": 16,
+        "base": 425,
+        "ignore": 50
+      },
+      {
+        "id": 401004407,
+        "names": {
+          "en": "Premonition",
+          "tw": "徵兆",
+          "kr": "불길한 예감",
+          "fr": "Prémonition",
+          "de": "Vorahnung",
+          "es": "Premonición"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "dualable": false,
+        "framesList": [
+          40, 40, 40, 50
+        ],
+        "offset": 8,
+        "base": 2400,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          },
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 911373,
+        "names": {
+          "en": "Predict - Downpour",
+          "tw": "預言 - 暴雨",
+          "kr": "예측·폭우",
+          "fr": "Présage - Averse",
+          "de": "Weissagung - Regenguss",
+          "es": "Predicción - Aguacero"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 900
+      },
+      {
+        "id": 911374,
+        "names": {
+          "en": "Predict - Sandstorm",
+          "tw": "預言 - 沙暴",
+          "kr": "예측·모래 폭풍",
+          "fr": "Présage - Sirocco",
+          "de": "Weissagung - Sandsturm",
+          "es": "Predicción - Tormenta de arena"
+        },
+        "damage": "magic",
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind",
+          "earth"
+        ],
+        "dualable": false,
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ],
+        "offset": 16,
+        "base": 600
+      },
+      {
+        "id": 911375,
+        "names": {
+          "en": "Predict - Flash-freeze",
+          "tw": "預言 - 急凍",
+          "kr": "예측·급속 냉동",
+          "fr": "Présage - Blizzard",
+          "de": "Weissagung - Schockfrost",
+          "es": "Predicción - Destello helado"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          130
+        ],
+        "offset": 16,
+        "base": 680
+      },
+      {
+        "id": 911376,
+        "names": {
+          "en": "Predict - Heat Wave",
+          "tw": "預言 - 熱浪",
+          "kr": "예측·열파",
+          "fr": "Présage - Canicule",
+          "de": "Weissagung - Hitzewelle",
+          "es": "Predicción - Ola de calor"
+        },
+        "damage": "magic",
+        "castTime": 95,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          95
+        ],
+        "offset": 16,
+        "base": 430
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911353,
+          911354,
+          911355,
+          911356,
+          911360,
+          911373,
+          911374,
+          911375,
+          911376
+        ]
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "names": {
+      "en": "Malphasie",
+      "tw": "瑪爾菲希",
+      "kr": "멜파지"
+    },
+    "abilities": [
+      {
+        "id": 911326,
+        "names": {
+          "en": "Swooping Strike",
+          "tw": "俯衝猛擊",
+          "kr": "급강하 공격",
+          "fr": "Frappe fulgurante",
+          "de": "Sturzflug-Streich",
+          "es": "Golpe en picado"
+        },
+        "damage": "hybrid",
+        "castTime": 40,
+        "framesList": [
+          140
+        ],
+        "offset": 16,
+        "base": 180
+      },
+      {
+        "id": 911328,
+        "names": {
+          "en": "Menacing Strike",
+          "tw": "威脅猛擊",
+          "kr": "위협적 공격",
+          "fr": "Frappe menaçante",
+          "de": "Bedrohender Streich",
+          "es": "Golpe amenazante"
+        },
+        "damage": "hybrid",
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "framesList": [
+          80
+        ],
+        "offset": 16,
+        "base": 400
+      },
+      {
+        "id": 911329,
+        "names": {
+          "en": "Flying Strike",
+          "tw": "飛行猛擊",
+          "kr": "비행 공격",
+          "fr": "Frappe aérienne",
+          "de": "Flugstreich",
+          "es": "Golpe volador"
+        },
+        "damage": "hybrid",
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          110
+        ],
+        "offset": 16,
+        "base": 400
+      },
+      {
+        "id": 20330,
+        "names": {
+          "en": "Aeroja",
+          "tw": "強勁風",
+          "kr": "에어로쟈",
+          "fr": "Vent max",
+          "de": "Aeroka",
+          "es": "Aero+++"
+        },
+        "damage": "magic",
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "framesList": [
+          170
+        ],
+        "offset": 16,
+        "base": 600
+      },
+      {
+        "id": 911335,
+        "names": {
+          "en": "Tenebrous Dive",
+          "tw": "黑暗潛躍",
+          "kr": "암흑 침강",
+          "fr": "Plongeon ténébreux",
+          "de": "Dunkler Sturzflug",
+          "es": "Descenso tenebroso"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 800,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 911336,
+        "names": {
+          "en": "Aerial Dive",
+          "tw": "空中潛躍",
+          "kr": "공중 침강",
+          "fr": "Plongeon aérien",
+          "de": "Wehender Sturzflug",
+          "es": "Descenso aéreo"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16,
+        "base": 800,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 911341,
+        "names": {
+          "en": "Thousand Wings+",
+          "tw": "千之羽+",
+          "kr": "천 개의 깃털+",
+          "fr": "Mille et une ailes +",
+          "de": "Tausend Flügel+",
+          "es": "Miles de alas+"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 1100
+      },
+      {
+        "id": 911340,
+        "names": {
+          "en": "Thousand Wings",
+          "tw": "千之羽",
+          "kr": "천 개의 깃털",
+          "fr": "Mille et une ailes",
+          "de": "Tausend Flügel",
+          "es": "Miles de alas"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 800
+      },
+      {
+        "id": 911343,
+        "names": {
+          "en": "Vengeful Sky",
+          "tw": "復仇之空",
+          "kr": "복수의 하늘",
+          "fr": "Ciel vengeur",
+          "de": "Rachsüchtiger Himmel",
+          "es": "Cielo vengativo"
+        },
+        "damage": "hybrid",
+        "framesList": [
+          40
+        ],
+        "offset": 8,
+        "base": 400
+      },
+      {
+        "id": 911345,
+        "names": {
+          "en": "Fiendish Winds",
+          "tw": "殘酷之風",
+          "kr": "기괴한 바람",
+          "fr": "Vents démoniaques",
+          "de": "Teuflische Winde",
+          "es": "Alas hostiles"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16,
+        "base": 1100
+      },
+      {
+        "id": 911346,
+        "names": {
+          "en": "Turbulence",
+          "tw": "亂流",
+          "kr": "난기류",
+          "fr": "Hourvari",
+          "de": "Turbulenz",
+          "es": "Turbulencia"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16,
+        "base": 1100
+      },
+      {
+        "id": 911348,
+        "names": {
+          "en": "Intense Rancor",
+          "tw": "極端怨仇",
+          "kr": "맹렬한 원한",
+          "fr": "Rancœur absolue",
+          "de": "Gewaltiger Groll",
+          "es": "Ultrarrencor"
+        },
+        "damage": "hybrid",
+        "castTime": 40,
+        "framesList": [
+          72
+        ],
+        "offset": 16,
+        "base": 2600
+      },
+      {
+        "id": 401004607,
+        "names": {
+          "en": "Murderous Intent",
+          "tw": "殺意",
+          "kr": "살의",
+          "fr": "Desseins meurtriers",
+          "de": "Mordlust",
+          "es": "Intento asesino"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "dualable": false,
+        "framesList": [
+          155, 45, 20
+        ],
+        "offset": 8,
+        "base": 2720
+      },
+      {
+        "id": 911384,
+        "names": {
+          "en": "Raucous Storm",
+          "tw": "嘶吼風暴",
+          "kr": "거센 폭풍",
+          "fr": "Orage retentissant",
+          "de": "Dröhnender Sturm",
+          "es": "Tormenta torrencial"
+        },
+        "damage": "hybrid",
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind",
+          "dark"
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16,
+        "base": 1600
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2
   }
 ];

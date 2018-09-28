@@ -252,6 +252,42 @@
         ]
       },
       {
+        "id": 401004605,
+        "names": {
+          "en": "Malphasie",
+          "tw": "瑪爾菲希",
+          "kr": "멜파지"
+        },
+        "abilities": [
+          {
+            "id": 911345,
+            "names": {
+              "en": "Fiendish Winds",
+              "tw": "殘酷之風",
+              "kr": "기괴한 바람",
+              "fr": "Vents démoniaques",
+              "de": "Teuflische Winde",
+              "es": "Alas hostiles"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911346,
+            "names": {
+              "en": "Turbulence",
+              "tw": "亂流",
+              "kr": "난기류",
+              "fr": "Hourvari",
+              "de": "Turbulenz",
+              "es": "Turbulencia"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401005005,
         "names": {
           "en": "Viktor Marchenko",
@@ -1867,6 +1903,42 @@
               "fr": "Livraison rebelle - Dionysus PLDS-H",
               "de": "Rebellennachschub - Dionysus PLDS-H",
               "es": "Lanzamiento rebelde - Dionysus PLDS-H"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004605,
+        "names": {
+          "en": "Malphasie",
+          "tw": "瑪爾菲希",
+          "kr": "멜파지"
+        },
+        "abilities": [
+          {
+            "id": 911335,
+            "names": {
+              "en": "Tenebrous Dive",
+              "tw": "黑暗潛躍",
+              "kr": "암흑 침강",
+              "fr": "Plongeon ténébreux",
+              "de": "Dunkler Sturzflug",
+              "es": "Descenso tenebroso"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911336,
+            "names": {
+              "en": "Aerial Dive",
+              "tw": "空中潛躍",
+              "kr": "공중 침강",
+              "fr": "Plongeon aérien",
+              "de": "Wehender Sturzflug",
+              "es": "Descenso aéreo"
             },
             "offset": 16,
             "castTime": 40
@@ -4916,6 +4988,55 @@
         ]
       },
       {
+        "id": 401004605,
+        "names": {
+          "en": "Malphasie",
+          "tw": "瑪爾菲希",
+          "kr": "멜파지"
+        },
+        "abilities": [
+          {
+            "id": 911341,
+            "names": {
+              "en": "Thousand Wings+",
+              "tw": "千之羽+",
+              "kr": "천 개의 깃털+",
+              "fr": "Mille et une ailes +",
+              "de": "Tausend Flügel+",
+              "es": "Miles de alas+"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911340,
+            "names": {
+              "en": "Thousand Wings",
+              "tw": "千之羽",
+              "kr": "천 개의 깃털",
+              "fr": "Mille et une ailes",
+              "de": "Tausend Flügel",
+              "es": "Miles de alas"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911384,
+            "names": {
+              "en": "Raucous Storm",
+              "tw": "嘶吼風暴",
+              "kr": "거센 폭풍",
+              "fr": "Orage retentissant",
+              "de": "Dröhnender Sturm",
+              "es": "Tormenta torrencial"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004905,
         "names": {
           "en": "Adam Jensen",
@@ -5071,6 +5192,56 @@
               "fr": "Tsunami + 2",
               "de": "Flutwelle + 2",
               "es": "Ola sísmica + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004405,
+        "names": {
+          "en": "Circe",
+          "tw": "瑟希",
+          "kr": "서스",
+          "fr": "Circé"
+        },
+        "abilities": [
+          {
+            "id": 911356,
+            "names": {
+              "en": "Predict - Torrential Omen",
+              "tw": "預言-滂沱預兆",
+              "kr": "예측·홍수의 징조",
+              "fr": "Présage - Augure torrentiel",
+              "de": "Weissagung - Omen der Flut",
+              "es": "Predicción - Presagio torrencial"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911369,
+            "names": {
+              "en": "Downpour",
+              "tw": "暴雨",
+              "kr": "폭우",
+              "fr": "Averse",
+              "de": "Regenguss",
+              "es": "Aguacero"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911373,
+            "names": {
+              "en": "Predict - Downpour",
+              "tw": "預言 - 暴雨",
+              "kr": "예측·폭우",
+              "fr": "Présage - Averse",
+              "de": "Weissagung - Regenguss",
+              "es": "Predicción - Aguacero"
             },
             "offset": 16,
             "castTime": 40
@@ -5399,6 +5570,56 @@
               "fr": "Séisme",
               "de": "Beben",
               "es": "Seísmo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004405,
+        "names": {
+          "en": "Circe",
+          "tw": "瑟希",
+          "kr": "서스",
+          "fr": "Circé"
+        },
+        "abilities": [
+          {
+            "id": 911355,
+            "names": {
+              "en": "Predict - Cyclonic Omen",
+              "tw": "預言-風旋預兆",
+              "kr": "예측·선풍의 징조",
+              "fr": "Présage - Augure tempétueux",
+              "de": "Weissagung - Omen des Zyklons",
+              "es": "Predicción - Presagio ciclónico"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911370,
+            "names": {
+              "en": "Sandstorm",
+              "tw": "沙暴",
+              "kr": "모래 폭풍",
+              "fr": "Sirocco",
+              "de": "Sandsturm",
+              "es": "Tormenta de arena"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911374,
+            "names": {
+              "en": "Predict - Sandstorm",
+              "tw": "預言 - 沙暴",
+              "kr": "예측·모래 폭풍",
+              "fr": "Présage - Sirocco",
+              "de": "Weissagung - Sandsturm",
+              "es": "Predicción - Tormenta de arena"
             },
             "offset": 16,
             "castTime": 40
