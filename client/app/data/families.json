@@ -1193,6 +1193,61 @@
     ]
   },
   {
+    "family": "46-6-6-6-6-13",
+    "units": [
+      {
+        "id": 100012005,
+        "names": {
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
+        },
+        "abilities": [
+          {
+            "id": 222950,
+            "names": {
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100015005,
+        "names": {
+          "en": "Vagrant Knight Rain",
+          "tw": "彷徨騎士雷因",
+          "kr": "방황의 기사 레인",
+          "fr": "Rain, chevalier vagabond",
+          "de": "Wandernder Ritter Rain",
+          "es": "Rain caballero mendicante"
+        },
+        "abilities": [
+          {
+            "id": 226399,
+            "names": {
+              "en": "Bond with Jake",
+              "tw": "與傑科的羈絆",
+              "kr": "제이크와의 인연",
+              "fr": "Lien avec Jake",
+              "de": "Verbindung mit Jake",
+              "es": "Unión con Jake"
+            },
+            "offset": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "46-6-6-6-6-7",
     "units": [
       {
@@ -1290,61 +1345,6 @@
               "fr": "Champ d'Ouragan",
               "de": "Tornadoallee",
               "es": "Callejón huracanado"
-            },
-            "offset": 8
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "46-6-6-6-6-13",
-    "units": [
-      {
-        "id": 100012005,
-        "names": {
-          "en": "Nameless Gunner Jake",
-          "tw": "無名槍士傑科",
-          "kr": "무명의 총잡이 제이크",
-          "fr": "Jake, tireur anonyme",
-          "de": "Namenloser Pistolero Jake",
-          "es": "Jake el pistolero anónimo"
-        },
-        "abilities": [
-          {
-            "id": 222950,
-            "names": {
-              "en": "Vaporiser",
-              "tw": "高熱射線",
-              "kr": "기화 장치",
-              "fr": "Vaporisateur",
-              "de": "Zerstäuber",
-              "es": "Evaporizador"
-            },
-            "offset": 8
-          }
-        ]
-      },
-      {
-        "id": 100015005,
-        "names": {
-          "en": "Vagrant Knight Rain",
-          "tw": "彷徨騎士雷因",
-          "kr": "방황의 기사 레인",
-          "fr": "Rain, chevalier vagabond",
-          "de": "Wandernder Ritter Rain",
-          "es": "Rain caballero mendicante"
-        },
-        "abilities": [
-          {
-            "id": 226399,
-            "names": {
-              "en": "Bond with Jake",
-              "tw": "與傑科的羈絆",
-              "kr": "제이크와의 인연",
-              "fr": "Lien avec Jake",
-              "de": "Verbindung mit Jake",
-              "es": "Unión con Jake"
             },
             "offset": 8
           }
@@ -1454,75 +1454,6 @@
               "fr": "null",
               "de": "null",
               "es": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-7-7-7-7-7",
-    "units": [
-      {
-        "id": 100008804,
-        "names": {
-          "en": "Moogle",
-          "tw": "莫古利",
-          "kr": "모그리",
-          "fr": "Mog",
-          "de": "Mogry",
-          "es": "Moguri"
-        },
-        "abilities": [
-          {
-            "id": 211300,
-            "names": {
-              "en": "Mog Barrage",
-              "tw": "莫古亂突刺",
-              "kr": "모그 혼란",
-              "fr": "Pluie de coups mog",
-              "de": "Mogry-Sperrfeuer",
-              "es": "Ráfaga moguri"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 707172,
-            "names": {
-              "en": "Mog Barrage + 1",
-              "tw": "莫古亂突刺 + 1",
-              "kr": "모그 혼란 + 1",
-              "fr": "Pluie de coups mog + 1",
-              "de": "Mogry-Sperrfeuer + 1",
-              "es": "Ráfaga moguri + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100016205,
-        "names": {
-          "en": "Hyoh",
-          "tw": "獵豹",
-          "kr": "효우",
-          "de": "Hyou",
-          "es": "Hyou"
-        },
-        "abilities": [
-          {
-            "id": 227281,
-            "names": {
-              "en": "Ruthless Blade",
-              "tw": "冷酷劍刃",
-              "kr": "루슬리스 블레이드",
-              "fr": "Lame implacable",
-              "de": "Gnadenlose Klinge",
-              "es": "Hoja implacable"
             },
             "offset": 16,
             "castTime": 40
@@ -1660,6 +1591,32 @@
               "fr": "Lame électrisante",
               "de": "Voltklinge",
               "es": "Hoja de voltaje"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227280,
+            "names": {
+              "en": "Servant of the Blade",
+              "tw": "劍奴",
+              "kr": "블레이드 슬레이브",
+              "fr": "Serviteur de l'épée",
+              "de": "Diener der Klinge",
+              "es": "Esclavo de la espada"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 507742,
+            "names": {
+              "en": "Phantom Blade",
+              "tw": "幻影劍刃",
+              "kr": "팬텀 블레이드",
+              "fr": "Lame fantôme",
+              "de": "Phantomklinge",
+              "es": "Hoja fantasma"
             },
             "offset": 16,
             "castTime": 40
@@ -2068,6 +2025,31 @@
         ]
       },
       {
+        "id": 100016205,
+        "names": {
+          "en": "Hyoh",
+          "tw": "獵豹",
+          "kr": "효우",
+          "de": "Hyou",
+          "es": "Hyou"
+        },
+        "abilities": [
+          {
+            "id": 227281,
+            "names": {
+              "en": "Ruthless Blade",
+              "tw": "冷酷劍刃",
+              "kr": "루슬리스 블레이드",
+              "fr": "Lame implacable",
+              "de": "Gnadenlose Klinge",
+              "es": "Hoja implacable"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100016403,
         "names": {
           "en": "Domino",
@@ -2102,58 +2084,6 @@
         },
         "abilities": [
           {
-            "id": 507291,
-            "names": {
-              "en": "Splendor of the Wind",
-              "tw": "風之光輝",
-              "kr": "바람의 인도",
-              "fr": "Splendeur du vent",
-              "de": "Windpracht",
-              "es": "Esplendor de viento"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507303,
-            "names": {
-              "en": "Splendor of the Wind",
-              "tw": "風之光輝",
-              "kr": "바람의 인도",
-              "fr": "Splendeur du vent",
-              "de": "Windpracht",
-              "es": "Esplendor de viento"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507292,
-            "names": {
-              "en": "Splendor of the Fire",
-              "tw": "火之光輝",
-              "kr": "불꽃의 인도",
-              "fr": "Splendeur du feu",
-              "de": "Feuerpracht",
-              "es": "Esplendor de fuego"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507304,
-            "names": {
-              "en": "Splendor of the Fire",
-              "tw": "火之光輝",
-              "kr": "불꽃의 인도",
-              "fr": "Splendeur du feu",
-              "de": "Feuerpracht",
-              "es": "Esplendor de fuego"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
             "id": 211420,
             "names": {
               "en": "Full Speed Bladeblitz",
@@ -2162,58 +2092,6 @@
               "fr": "Lame éclair rapide",
               "de": "Voller Klingenblitz",
               "es": "Tormenta de acero"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507293,
-            "names": {
-              "en": "Splendor of the Water",
-              "tw": "水之光輝",
-              "kr": "물의 인도",
-              "fr": "Splendeur de l'eau",
-              "de": "Wasserpracht",
-              "es": "Esplendor de agua"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507305,
-            "names": {
-              "en": "Splendor of the Water",
-              "tw": "水之光輝",
-              "kr": "물의 인도",
-              "fr": "Splendeur de l'eau",
-              "de": "Wasserpracht",
-              "es": "Esplendor de agua"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507294,
-            "names": {
-              "en": "Splendor of the Earth",
-              "tw": "土之光輝",
-              "kr": "땅의 인도",
-              "fr": "Splendeur de la terre",
-              "de": "Erdpracht",
-              "es": "Esplendor de tierra"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507306,
-            "names": {
-              "en": "Splendor of the Earth",
-              "tw": "土之光輝",
-              "kr": "땅의 인도",
-              "fr": "Splendeur de la terre",
-              "de": "Erdpracht",
-              "es": "Esplendor de tierra"
             },
             "offset": 16,
             "castTime": 40
@@ -2239,214 +2117,6 @@
               "fr": "Tranche-oignon",
               "de": "Zwiebelschnitt",
               "es": "Corte cebolla"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507295,
-            "names": {
-              "en": "Splendor of the Wind + 1",
-              "tw": "風之光輝 + 1",
-              "kr": "바람의 인도 + 1",
-              "fr": "Splendeur du vent + 1",
-              "de": "Windpracht + 1",
-              "es": "Esplendor de viento + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507307,
-            "names": {
-              "en": "Splendor of the Wind + 1",
-              "tw": "風之光輝 + 1",
-              "kr": "바람의 인도 + 1",
-              "fr": "Splendeur du vent + 1",
-              "de": "Windpracht + 1",
-              "es": "Esplendor de viento + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507296,
-            "names": {
-              "en": "Splendor of the Wind + 2",
-              "tw": "風之光輝 + 2",
-              "kr": "바람의 인도 + 2",
-              "fr": "Splendeur du vent + 2",
-              "de": "Windpracht + 2",
-              "es": "Esplendor de viento + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507308,
-            "names": {
-              "en": "Splendor of the Wind + 2",
-              "tw": "風之光輝 + 2",
-              "kr": "바람의 인도 + 2",
-              "fr": "Splendeur du vent + 2",
-              "de": "Windpracht + 2",
-              "es": "Esplendor de viento + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507297,
-            "names": {
-              "en": "Splendor of the Fire + 1",
-              "tw": "火之光輝 + 1",
-              "kr": "불꽃의 인도 + 1",
-              "fr": "Splendeur du feu + 1",
-              "de": "Feuerpracht + 1",
-              "es": "Esplendor de fuego + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507309,
-            "names": {
-              "en": "Splendor of the Fire + 1",
-              "tw": "火之光輝 + 1",
-              "kr": "불꽃의 인도 + 1",
-              "fr": "Splendeur du feu + 1",
-              "de": "Feuerpracht + 1",
-              "es": "Esplendor de fuego + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507298,
-            "names": {
-              "en": "Splendor of the Fire + 2",
-              "tw": "火之光輝 + 2",
-              "kr": "불꽃의 인도 + 2",
-              "fr": "Splendeur du feu + 2",
-              "de": "Feuerpracht + 2",
-              "es": "Esplendor de fuego + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507310,
-            "names": {
-              "en": "Splendor of the Fire + 2",
-              "tw": "火之光輝 + 2",
-              "kr": "불꽃의 인도 + 2",
-              "fr": "Splendeur du feu + 2",
-              "de": "Feuerpracht + 2",
-              "es": "Esplendor de fuego + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507299,
-            "names": {
-              "en": "Splendor of the Water + 1",
-              "tw": "水之光輝 + 1",
-              "kr": "물의 인도 + 1",
-              "fr": "Splendeur de l'eau + 1",
-              "de": "Wasserpracht + 1",
-              "es": "Esplendor de agua + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507311,
-            "names": {
-              "en": "Splendor of the Water + 1",
-              "tw": "水之光輝 + 1",
-              "kr": "물의 인도 + 1",
-              "fr": "Splendeur de l'eau + 1",
-              "de": "Wasserpracht + 1",
-              "es": "Esplendor de agua + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507300,
-            "names": {
-              "en": "Splendor of the Water + 2",
-              "tw": "水之光輝 + 2",
-              "kr": "물의 인도 + 2",
-              "fr": "Splendeur de l'eau + 2",
-              "de": "Wasserpracht + 2",
-              "es": "Esplendor de agua + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507312,
-            "names": {
-              "en": "Splendor of the Water + 2",
-              "tw": "水之光輝 + 2",
-              "kr": "물의 인도 + 2",
-              "fr": "Splendeur de l'eau + 2",
-              "de": "Wasserpracht + 2",
-              "es": "Esplendor de agua + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507301,
-            "names": {
-              "en": "Splendor of the Earth + 1",
-              "tw": "土之光輝 + 1",
-              "kr": "땅의 인도 + 1",
-              "fr": "Splendeur de la terre + 1",
-              "de": "Erdpracht + 1",
-              "es": "Esplendor de tierra + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507313,
-            "names": {
-              "en": "Splendor of the Earth + 1",
-              "tw": "土之光輝 + 1",
-              "kr": "땅의 인도 + 1",
-              "fr": "Splendeur de la terre + 1",
-              "de": "Erdpracht + 1",
-              "es": "Esplendor de tierra + 1"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507302,
-            "names": {
-              "en": "Splendor of the Earth + 2",
-              "tw": "土之光輝 + 2",
-              "kr": "땅의 인도 + 2",
-              "fr": "Splendeur de la terre + 2",
-              "de": "Erdpracht + 2",
-              "es": "Esplendor de tierra + 2"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 507314,
-            "names": {
-              "en": "Splendor of the Earth + 2",
-              "tw": "土之光輝 + 2",
-              "kr": "땅의 인도 + 2",
-              "fr": "Splendeur de la terre + 2",
-              "de": "Erdpracht + 2",
-              "es": "Esplendor de tierra + 2"
             },
             "offset": 16,
             "castTime": 40
@@ -5879,6 +5549,57 @@
               "tw": "究極 + 2",
               "kr": "알테마 + 2",
               "es": "Artema + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "52-40-40-50",
+    "units": [
+      {
+        "id": 318000105,
+        "names": {
+          "en": "Fayt",
+          "tw": "菲特",
+          "kr": "페이트"
+        },
+        "abilities": [
+          {
+            "id": 225420,
+            "names": {
+              "en": "Abyssal Gate",
+              "tw": "迷失者閃避",
+              "kr": "스트레이어 보이드",
+              "fr": "Porte des abysses",
+              "de": "Einschießen",
+              "es": "Puerta a las profundidades"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 320000104,
+        "names": {
+          "en": "Fidel",
+          "tw": "菲德爾",
+          "kr": "피델"
+        },
+        "abilities": [
+          {
+            "id": 225420,
+            "names": {
+              "en": "Abyssal Gate",
+              "tw": "迷失者閃避",
+              "kr": "스트레이어 보이드",
+              "fr": "Porte des abysses",
+              "de": "Einschießen",
+              "es": "Puerta a las profundidades"
             },
             "offset": 16,
             "castTime": 40

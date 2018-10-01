@@ -16392,7 +16392,7 @@ export const UNITS: any[] = [
           "es": "Esclavo de la espada"
         },
         "hitDamage": [
-          2, 2, 2, 2, 2, 3, 88
+          3.4782608695652173, 3.4782608695652173, 3.4782608695652173, 3.4782608695652173, 3.4782608695652173, 4.3478260869565215, 78.26086956521739
         ],
         "castTime": 40,
         "framesList": [
@@ -17279,7 +17279,7 @@ export const UNITS: any[] = [
     ],
     "multiCasts": [
       {
-        "count": 2,
+        "count": 4,
         "abilities": [
           911353,
           911354,
