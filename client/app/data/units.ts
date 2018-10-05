@@ -17620,5 +17620,229 @@ export const UNITS: any[] = [
     "multipleBlack": 2,
     "multipleWhite": 2,
     "multipleGreen": 2
+  },
+  {
+    "id": 170,
+    "names": {
+      "en": "Ignis",
+      "tw": "伊格尼斯",
+      "kr": "이그니스"
+    },
+    "abilities": [
+      {
+        "id": 507870,
+        "names": {
+          "en": "Final Blow",
+          "tw": "最終一擊",
+          "kr": "파이널 어택",
+          "fr": "Coup final",
+          "de": "Endgültiger Angriff",
+          "es": "Golpe final"
+        },
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "framesList": [
+          32, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 507871,
+        "names": {
+          "en": "Overwhelm",
+          "tw": "全員突擊",
+          "kr": "라운드 어설트",
+          "fr": "Persécution",
+          "de": "Alle auf einen",
+          "es": "Opresión"
+        },
+        "base": 350,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "ignore": 50,
+        "framesList": [
+          32, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 215000507,
+        "names": {
+          "en": "Sagefire",
+          "tw": "賢者之炎",
+          "kr": "현자의 불꽃",
+          "fr": "Enfièvrement",
+          "de": "Ungleiches Paar",
+          "es": "Fuego de la sabiduría"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          178
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000107,
+        "names": {
+          "en": "Sagefire + 1",
+          "tw": "賢者之炎 + 1",
+          "kr": "현자의 불꽃 + 1",
+          "fr": "Enfièvrement + 1",
+          "de": "Ungleiches Paar + 1",
+          "es": "Fuego de la sabiduría + 1"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          },
+          {
+            "type": "lightning",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          178
+        ],
+        "offset": 8
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "names": {
+      "en": "Ravus",
+      "tw": "瑞布斯",
+      "kr": "레이브스"
+    },
+    "abilities": [
+      {
+        "id": 227382,
+        "names": {
+          "en": "Blitz Blade",
+          "tw": "連續斬",
+          "kr": "연속 베기",
+          "fr": "Lame-foudre",
+          "de": "Serienschnitt",
+          "es": "Hoja relámpago"
+        },
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 13,
+        "framesList": [
+          15, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227384,
+        "names": {
+          "en": "Zantetsuken",
+          "tw": "斬鐵劍",
+          "kr": "참철검",
+          "es": "Sable justiciero"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          50
+        ],
+        "offset": 16
+      },
+      {
+        "id": 507891,
+        "names": {
+          "en": "True Zantetsuken",
+          "tw": "真·斬鐵劍",
+          "kr": "진·참철검",
+          "fr": "Zantetsuken +",
+          "de": "Wahres Zantetsuken",
+          "es": "Sable justiciero real"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 70
+          }
+        ],
+        "framesList": [
+          50
+        ],
+        "offset": 16
+      },
+      {
+        "id": 215001006,
+        "names": {
+          "en": "Technique - Last Rites",
+          "tw": "奧義·黃泉送葬",
+          "kr": "오의·황천 보내기",
+          "fr": "Technique - Derniers rites",
+          "de": "Technik - Letzte Salbung",
+          "es": "Técnica - Últimos ritos"
+        },
+        "base": 940,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          139
+        ],
+        "offset": 8
+      }
+    ]
   }
 ];

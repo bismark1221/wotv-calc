@@ -1421,6 +1421,19 @@
         },
         "abilities": [
           {
+            "id": 227561,
+            "names": {
+              "en": "Obliterating Mirror of Equity",
+              "tw": "絕·明鏡",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
             "id": 508001,
             "names": {
               "en": "Absolute Mirror of Equity",
@@ -2066,6 +2079,45 @@
               "fr": "Impact éolien",
               "de": "Windschlag",
               "es": "Golpe de viento"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100016704,
+        "names": {
+          "en": "Macmedi",
+          "tw": "麥克梅迪",
+          "kr": "마크메디",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227670,
+            "names": {
+              "en": "Full Auto-fire",
+              "tw": "全自動射擊",
+              "kr": "전자동 사격",
+              "fr": "Tir automatique total",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227671,
+            "names": {
+              "en": "Bullet Barrage",
+              "tw": "彈幕射擊",
+              "kr": "탄막 사격",
+              "fr": "Mur de balles",
+              "de": "null",
+              "es": "null"
             },
             "offset": 16,
             "castTime": 40
