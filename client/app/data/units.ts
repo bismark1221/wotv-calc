@@ -438,7 +438,7 @@ export const UNITS: any[] = [
         },
         framesList: [2, 15, 15, 15, 15],
         offset: 36,
-        base: 200,
+        base: 320,
         ignore: 50,
         debuffs: [
           {
@@ -460,7 +460,7 @@ export const UNITS: any[] = [
         framesList: [2, 8, 8, 8, 8, 8, 8],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
         offset: 36,
-        base: 250,
+        base: 370,
         ignore: 50,
         debuffs: [
           {
@@ -468,6 +468,27 @@ export const UNITS: any[] = [
             value: 75
           }
         ]
+      },
+      {
+        "id": 100005907,
+        "names": {
+          "en": "Fatal Impact",
+          "tw": "毀滅衝擊",
+          "kr": "페이탈 임팩트",
+          "fr": "Impact fatal",
+          "de": "Fataler Aufprall",
+          "es": "Impacto fatal"
+        },
+        "base": 1025,
+        "hitDamage": [
+          20, 20, 20, 40
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          36, 71, 13, 105
+        ],
+        "offset": 8
       }
     ]
   },
@@ -496,7 +517,7 @@ export const UNITS: any[] = [
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
         offset: 16,
-        base: 200,
+        base: 300,
         ignore: 50,
         debuffs: [
           {
@@ -518,7 +539,7 @@ export const UNITS: any[] = [
         framesList: [110],
         castTime: 40,
         offset: 16,
-        base: 200,
+        base: 300,
         ignore: 50,
         elements: [
           "dark"
@@ -542,7 +563,7 @@ export const UNITS: any[] = [
           70, 7, 5, 7, 7, 7, 7
         ],
         "offset": 16,
-        "base": 260,
+        "base": 360,
         "ignore": 50,
         "debuffs": [
           {
@@ -567,10 +588,81 @@ export const UNITS: any[] = [
           "dark"
         ],
         "framesList": [
-          110
+          210
         ],
         "base": 300,
         "ignore": 50
+      },
+      {
+        "id": 226871,
+        "names": {
+          "en": "Dark Blade of Vengeance",
+          "tw": "怨誓之暗刃",
+          "kr": "원수의 검은 칼날",
+          "fr": "Coutelas de la rancœur",
+          "de": "Dunkelklinge der Rache",
+          "es": "Alfanje del rencor"
+        },
+        "base": 650,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          0, 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6
+        ],
+        "offset": 8
+      },
+      {
+        "id": 100007707,
+        "names": {
+          "en": "Seal of Conviction",
+          "tw": "斷罪刻印",
+          "kr": "단죄의 각인",
+          "fr": "Sceau de conviction",
+          "de": "Siegel der Überzeugung",
+          "es": "Sello penitente"
+        },
+        "base": 800,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 24
+        ],
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          45, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 6, 5, 22
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000057,
+        "names": {
+          "en": "Seal of Conviction + 1",
+          "tw": "斷罪刻印 + 1",
+          "kr": "단죄의 각인 + 1",
+          "fr": "Sceau de conviction + 1",
+          "de": "Siegel der Überzeugung + 1",
+          "es": "Sello penitente + 1"
+        },
+        "base": 1000,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 24
+        ],
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          45, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 6, 5, 22
+        ],
+        "offset": 8
       }
     ]
   },
@@ -2043,6 +2135,54 @@ export const UNITS: any[] = [
             "value": 65
           }
         ]
+      },
+      {
+        "id": 507643,
+        "names": {
+          "en": "Saint Eraser",
+          "tw": "神聖抹除",
+          "kr": "성스러운 말소",
+          "fr": "Effacement divin",
+          "de": "Heilige Auslöschung",
+          "es": "Eliminación divina"
+        },
+        "damage": "hybrid",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "framesList": [
+          220
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100008207,
+        "names": {
+          "en": "Dawn of Judgment",
+          "tw": "裁決曉光",
+          "kr": "심판의 새벽빛",
+          "fr": "Aube du jugement",
+          "de": "Urteilsdämmerung",
+          "es": "Amanecer de justicia"
+        },
+        "damage": "hybrid",
+        "base": 2520,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 7, 7, 7, 7, 7, 7, 10
+        ],
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "framesList": [
+          26, 6, 6, 6, 6, 6, 6, 6, 36, 6, 6, 6, 96, 13, 13, 13, 14, 14, 13
+        ],
+        "offset": 8
       }
     ]
   },
@@ -3688,6 +3828,73 @@ export const UNITS: any[] = [
         "offset": 16,
         "base": 620,
         "ignore": 50
+      },
+      {
+        "id": 227131,
+        "names": {
+          "en": "Big Swing",
+          "tw": "大力揮舞",
+          "kr": "빅 스윙",
+          "fr": "Grosse frappe",
+          "de": "Großer Schwung",
+          "es": "Gran golpe"
+        },
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          47
+        ],
+        "offset": 16
+      },
+      {
+        "id": 507641,
+        "names": {
+          "en": "Red Inferno",
+          "tw": "火紅地獄",
+          "kr": "적색의 불길",
+          "fr": "Enfer rouge",
+          "de": "Rotes Inferno",
+          "es": "Al rojo vivo"
+        },
+        "base": 3000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          92
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100008007,
+        "names": {
+          "en": "Burning Hellfire",
+          "tw": "狂猛獄炎",
+          "kr": "맹렬한 지옥불",
+          "fr": "Feu de l'enfer",
+          "de": "Brennendes Höllenfeuer",
+          "es": "Fuego del averno"
+        },
+        "base": 740,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          100
+        ],
+        "offset": 8
       }
     ]
   },
@@ -3919,6 +4126,125 @@ export const UNITS: any[] = [
             "value": 40
           }
         ]
+      },
+      {
+        "id": 227091,
+        "names": {
+          "en": "Knuckle Sandwich",
+          "tw": "迎面猛拳",
+          "kr": "너클 샌드위치",
+          "fr": "Prise en sandwich",
+          "de": "Backpfeife",
+          "es": "Puñodillo"
+        },
+        "base": 520,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          52
+        ],
+        "offset": 16
+      },
+      {
+        "id": 507590,
+        "names": {
+          "en": "Auroral Uppercut",
+          "tw": "羅剎七星拳",
+          "kr": "나찰칠성권",
+          "fr": "Uppercut de l'aurore",
+          "de": "Rosiger Kinnhaken",
+          "es": "Corte superior de la aurora"
+        },
+        "base": 1000,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "elements": [
+          "light"
+        ],
+        "ignore": 50,
+        "framesList": [
+          19, 10, 10, 10, 10, 10, 20
+        ],
+        "offset": 8
+      },
+      {
+        "id": 211000407,
+        "names": {
+          "en": "Nullifying Dropkick",
+          "tw": "昆侖八象腳",
+          "kr": "곤륜팔상각",
+          "fr": "Savate immunisante",
+          "de": "Verheerender Prellstoß",
+          "es": "Patada aérea anuladora"
+        },
+        "base": 820,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          98
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000067,
+        "names": {
+          "en": "Nullifying Dropkick + 1",
+          "tw": "昆侖八象腳 + 1",
+          "kr": "곤륜팔상각 + 1",
+          "fr": "Savate immunisante + 1",
+          "de": "Verheerender Prellstoß + 1",
+          "es": "Patada aérea anuladora + 1"
+        },
+        "base": 820,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          },
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          98
+        ],
+        "offset": 8
       }
     ]
   },
@@ -4673,6 +4999,47 @@ export const UNITS: any[] = [
         offset: 16,
         base: 300,
         ignore: 50
+      },
+      {
+        "id": 911415,
+        "names": {
+          "en": "Vengeance Blade",
+          "tw": "復仇·刀刃",
+          "kr": "벤젠스 블레이드",
+          "fr": "Lame vengeresse",
+          "de": "Racheklinge",
+          "es": "Hoja de la venganza"
+        },
+        "base": 600,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401001107,
+        "names": {
+          "en": "Alexander Crest",
+          "tw": "亞歷山大紋章",
+          "kr": "알렉산더의 문장",
+          "fr": "Emblème d'Alexandre",
+          "de": "Alexanderwappen",
+          "es": "Emblema alexandrino"
+        },
+        "base": 645,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          180
+        ],
+        "offset": 8
       }
     ]
   },
@@ -4823,7 +5190,7 @@ export const UNITS: any[] = [
         framesList: [120],
         castTime: 40,
         offset: 16,
-        base: 620
+        base: 820
       },
       {
         id: 2,
@@ -4839,7 +5206,29 @@ export const UNITS: any[] = [
         framesList: [120],
         castTime: 40,
         offset: 16,
-        base: 860
+        base: 1060
+      },
+      {
+        "id": 254000907,
+        "names": {
+          "en": "Seraphim Strike",
+          "tw": "魔法衛星",
+          "kr": "매직 새틀라이트",
+          "fr": "Punition céleste",
+          "de": "Seraphim-Schlag",
+          "es": "Haz brujo"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          100
+        ],
+        "offset": 8
       }
     ]
   },
@@ -6319,34 +6708,102 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 3,
-        names: {
-          en: "Maelstrom",
-          fr: "Maelström",
-          tw: "大漩渦",
-          kr: "마엘스트롬",
-          de: "Mahlstrom",
-          es: "Vórtice"
+        "id": 911398,
+        "names": {
+          "en": "Tempest Eye Wall",
+          "tw": "暴風眼之牆",
+          "kr": "태풍의 눈",
+          "fr": "Mur cyclonique",
+          "de": "Sturmaugenmauer",
+          "es": "Muro tempestuoso"
         },
-        framesList: [100, 5, 5, 10, 10, 20, 20],
-        hitDamage: [10, 10, 20, 15, 15, 15, 15],
-        base: 840,
-        elements: [
-          "wind",
-          "lightning"
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          12, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
         ],
-        debuffs: [
+        "castTime": 40,
+        "elements": [
+          "lightning",
+          "wind"
+        ],
+        "dualable": false,
+        "debuffs": [
           {
-            type: "wind",
-            value: 74,
+            "type": "lightning",
+            "value": 120
           },
           {
-            type: "lightning",
-            value: 74,
+            "type": "wind",
+            "value": 120
           }
         ],
-        damage: "magic",
-        dualable: false
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 91014,
+        "names": {
+          "en": "Raging Wind",
+          "tw": "烈風",
+          "kr": "조에어로",
+          "fr": "Vent rageur",
+          "de": "Wütende Winde",
+          "es": "Viento furibundo"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "framesList": [
+          100
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401001407,
+        "names": {
+          "en": "Maelstrom",
+          "tw": "大漩渦",
+          "kr": "마엘스트롬",
+          "fr": "Maelström",
+          "de": "Mahlstrom",
+          "es": "Vórtice"
+        },
+        "damage": "magic",
+        "base": 545,
+        "hitDamage": [
+          6, 6, 7, 7, 8, 8, 9, 9, 40
+        ],
+        "elements": [
+          "lightning",
+          "wind"
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 104
+          },
+          {
+            "type": "wind",
+            "value": 104
+          }
+        ],
+        "framesList": [
+          100, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8
       }
     ],
     multipleBlack: 2
@@ -8700,22 +9157,70 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
-        id: 6,
-        names: {
-          en: "Rose of May",
-          tw: "皋月的荊棘",
-          kr: "로즈 오브 메이",
-          fr: "Rose de mai",
-          de: "Mairosen",
-          es: "Rosa de mayo"
+        "id": 507632,
+        "names": {
+          "en": "Seiken - Rose Finale",
+          "tw": "聖劍技・最終玫瑰",
+          "kr": "성검기: 로즈 오브 피날레",
+          "fr": "Lame sainte - Bouquet final",
+          "de": "Heiliges Schwert - Rosenfinale",
+          "es": "Seiken - Rosa final"
         },
-        hitDamage: [
+        "damage": "hybrid",
+        "base": 4200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 24,
+        "elements": [
+          "light"
+        ],
+        "framesList": [
+          124
+        ],
+        "offset": 16
+      },
+      {
+        "id": 209001107,
+        "names": {
+          "en": "Rose of May",
+          "tw": "皋月的荊棘",
+          "kr": "로즈 오브 메이",
+          "fr": "Rose de mai",
+          "de": "Mairosen",
+          "es": "Rosa de mayo"
+        },
+        "base": 675,
+        "hitDamage": [
           15, 15, 15, 55
         ],
-        framesList: [98, 32, 59, 87],
-        base: 520,
-        ignore: 50,
-        dualable: false
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          98, 32, 59, 87
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000097,
+        "names": {
+          "en": "Rose of May + 1",
+          "tw": "皋月的荊棘 + 1",
+          "kr": "로즈 오브 메이 + 1",
+          "fr": "Rose de mai + 1",
+          "de": "Mairosen + 1",
+          "es": "Rosa de mayo + 1"
+        },
+        "base": 675,
+        "hitDamage": [
+          15, 15, 15, 55
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          98, 32, 59, 87
+        ],
+        "offset": 8
       }
     ]
   },
@@ -17842,6 +18347,265 @@ export const UNITS: any[] = [
           139
         ],
         "offset": 8
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "names": {
+      "en": "Macmedi",
+      "tw": "麥克梅迪",
+      "kr": "마크메디"
+    },
+    "abilities": [
+      {
+        "id": 227671,
+        "names": {
+          "en": "Bullet Barrage",
+          "tw": "彈幕射擊",
+          "kr": "탄막 사격",
+          "fr": "Mur de balles",
+          "de": "Kugelhagel",
+          "es": "Ráfaga de balas"
+        },
+        "base": 280,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227678,
+        "names": {
+          "en": "Shooting Arm",
+          "tw": "射擊武裝",
+          "kr": "사격장비",
+          "fr": "Bras armé",
+          "de": "Schusshand",
+          "es": "Brazo disparador"
+        },
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 58,
+        "framesList": [
+          50
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227672,
+        "names": {
+          "en": "Shot in the Dark",
+          "tw": "暗黑彈",
+          "kr": "암흑탄",
+          "fr": "Tir dans le noir",
+          "de": "Schuss im Dunkeln",
+          "es": "Disparo en la oscuridad"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "ignore": 50,
+        "framesList": [
+          100
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100016706,
+        "names": {
+          "en": "Auto Operation",
+          "tw": "自動操縱",
+          "kr": "자동 조작",
+          "fr": "Opération automatique",
+          "de": "Automatische Bedienung",
+          "es": "Autooperación"
+        },
+        "base": 590,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 25
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          78, 7, 7, 7, 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 8
+        ],
+        "offset": 8
+      }
+    ]
+  },{
+    "id": 173,
+    "names": {
+      "en": "Citra",
+      "tw": "希特拉",
+      "kr": "시트라"
+    },
+    "abilities": [
+      {
+        "id": 227652,
+        "names": {
+          "en": "Evocation - Light of Supremacy",
+          "tw": "喚起·霸光",
+          "kr": "환기·패광",
+          "fr": "Appel - Lumière de la domination",
+          "de": "Rufen - Licht der Übermacht",
+          "es": "Invocación - Luz de la supremacía"
+        },
+        "damage": "magic",
+        "base": 900,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          90
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227653,
+        "names": {
+          "en": "Holy Mind",
+          "tw": "精神聖域",
+          "kr": "성스러운 축복",
+          "fr": "Saint Esprit",
+          "de": "Heiliger Sinn",
+          "es": "Mente sagrada"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227650,
+        "names": {
+          "en": "Evocation - Light of Ruin",
+          "tw": "喚起·滅光",
+          "kr": "환기·멸광",
+          "fr": "Appel - Lumière de la destruction",
+          "de": "Rufen - Licht des Untergangs",
+          "es": "Invocación - Luz ruinosa"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508095,
+        "names": {
+          "en": "Evocation - Fierce Light of Supremacy",
+          "tw": "喚起·絕霸光",
+          "kr": "환기·절패광",
+          "fr": "Appel - Lum. de la domination absolue",
+          "de": "Rufen - Licht der absoluten Übermacht",
+          "es": "Invocación - Luz feroz de la supremacía"
+        },
+        "damage": "magic",
+        "base": 2500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          150
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100016907,
+        "names": {
+          "en": "Gleam of Reverie",
+          "tw": "夢想閃耀",
+          "kr": "환상의 반짝임",
+          "fr": "Lueur onirique",
+          "de": "Glänzende Träumerei",
+          "es": "Brillo ensoñador"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "water",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          },
+          {
+            "type": "earth",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          330
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          227650,
+          227652
+        ]
       }
     ]
   }

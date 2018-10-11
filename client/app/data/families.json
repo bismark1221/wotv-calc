@@ -2090,10 +2090,7 @@
         "names": {
           "en": "Macmedi",
           "tw": "麥克梅迪",
-          "kr": "마크메디",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "마크메디"
         },
         "abilities": [
           {
@@ -2103,8 +2100,8 @@
               "tw": "全自動射擊",
               "kr": "전자동 사격",
               "fr": "Tir automatique total",
-              "de": "null",
-              "es": "null"
+              "de": "Vollautomatisches Abfeuern",
+              "es": "Autodisparo máximo"
             },
             "offset": 16,
             "castTime": 40
@@ -2116,8 +2113,8 @@
               "tw": "彈幕射擊",
               "kr": "탄막 사격",
               "fr": "Mur de balles",
-              "de": "null",
-              "es": "null"
+              "de": "Kugelhagel",
+              "es": "Ráfaga de balas"
             },
             "offset": 16,
             "castTime": 40
@@ -3886,6 +3883,29 @@
         ]
       },
       {
+        "id": 401001105,
+        "names": {
+          "en": "Zargabaath",
+          "tw": "查格博斯",
+          "kr": "자르가바스"
+        },
+        "abilities": [
+          {
+            "id": 911415,
+            "names": {
+              "en": "Vengeance Blade",
+              "tw": "復仇·刀刃",
+              "kr": "벤젠스 블레이드",
+              "fr": "Lame vengeresse",
+              "de": "Racheklinge",
+              "es": "Hoja de la venganza"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401001705,
         "names": {
           "en": "Reberta",
@@ -4706,6 +4726,19 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 911398,
+            "names": {
+              "en": "Tempest Eye Wall",
+              "tw": "暴風眼之牆",
+              "kr": "태풍의 눈",
+              "fr": "Mur cyclonique",
+              "de": "Sturmaugenmauer",
+              "es": "Muro tempestuoso"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -5086,6 +5119,60 @@
             },
             "offset": 16,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "0-14-8-8-8-8-8-8-8-8-8-8-8-8-8-6",
+    "units": [
+      {
+        "id": 100007705,
+        "names": {
+          "en": "Veritas of the Dark",
+          "tw": "常暗之維利亞斯",
+          "kr": "영원한 어둠의 베리어스",
+          "fr": "Veritas des Ténèbres",
+          "de": "Veritas der Finstere",
+          "es": "Veritas el tenebroso"
+        },
+        "abilities": [
+          {
+            "id": 226871,
+            "names": {
+              "en": "Dark Blade of Vengeance",
+              "tw": "怨誓之暗刃",
+              "kr": "원수의 검은 칼날",
+              "fr": "Coutelas de la rancœur",
+              "de": "Dunkelklinge der Rache",
+              "es": "Alfanje del rencor"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 207001005,
+        "names": {
+          "en": "Sephiroth",
+          "tw": "賽菲羅斯",
+          "kr": "세피로스",
+          "fr": "Séphiroth",
+          "es": "Sefirot"
+        },
+        "abilities": [
+          {
+            "id": 224540,
+            "names": {
+              "en": "Heaven's Light",
+              "tw": "天照",
+              "kr": "천국의 빛",
+              "fr": "Lumière des cieux",
+              "de": "Himmelslicht",
+              "es": "Luz del cielo"
+            },
+            "offset": 8
           }
         ]
       }
@@ -5672,7 +5759,7 @@
         },
         "abilities": [
           {
-            "id": 100005906,
+            "id": 100005907,
             "names": {
               "en": "Fatal Impact",
               "tw": "毀滅衝擊",
