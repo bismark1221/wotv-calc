@@ -5968,7 +5968,7 @@ export const UNITS: any[] = [
         hitDamage: [5, 5, 5, 7, 7, 8, 9, 9, 10, 35],
         castTime: 30,
         offset: 26,
-        base: 200,
+        base: 300,
         ignore: 50,
         damage: "magic",
         dualable: false
@@ -5986,7 +5986,7 @@ export const UNITS: any[] = [
         framesList: [110, 10, 10, 10, 10],
         hitDamage: [10, 10, 15, 15, 50],
         offset: 56,
-        base: 300,
+        base: 400,
         damage: "magic",
         elements : [
           "dark",
@@ -6026,32 +6026,74 @@ export const UNITS: any[] = [
         base: 600
       },
       {
-        id: 401002006,
-        names: {
-          en: "Phantom Fury",
-          fr: "Furie fantomatique",
-          tw: "狂怒幻影",
-          kr: "유령의 진노",
-          de: "Phantomwut",
-          es: "Furia fantasma"
+        "id": 911459,
+        "names": {
+          "en": "Grim - Eldritch Wave",
+          "tw": "冷血 - 恐懼波",
+          "kr": "사신·으스스한 파동",
+          "fr": "Obscurité - Onde spectrale",
+          "de": "Grimm - Schauerliche Welle",
+          "es": "Parca - Ola de Eldritch"
         },
-        framesList: [62, 4, 4, 4, 4, 4, 4, 4, 30],
-        hitDamage: [5, 7, 8, 9, 10, 11, 12, 13, 25],
-        base: 660,
-        damage: "magic",
-        dualable: false
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire",
+          "dark"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          },
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ],
+        "offset": 16
       },
-    ],
-    multiCasts: [
       {
-        count: 2,
-        abilities: [
-          910520,
-          910526
-        ]
+        "id": 401002007,
+        "names": {
+          "en": "Phantom Fury",
+          "tw": "狂怒幻影",
+          "kr": "유령의 진노",
+          "fr": "Furie fantomatique",
+          "de": "Phantomwut",
+          "es": "Furia fantasma"
+        },
+        "damage": "magic",
+        "base": 1110,
+        "hitDamage": [
+          5, 7, 8, 9, 10, 11, 12, 13, 25
+        ],
+        "dualable": false,
+        "framesList": [
+          62, 4, 4, 4, 4, 4, 4, 4, 30
+        ],
+        "offset": 8
       }
     ],
-    multipleBlack: 2
+    "multipleBlack": 2,
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          910520,
+          910526,
+          911459
+        ]
+      }
+    ]
   },
   {
     id: 67,
@@ -18444,7 +18486,8 @@ export const UNITS: any[] = [
         "offset": 8
       }
     ]
-  },{
+  },
+  {
     "id": 173,
     "names": {
       "en": "Citra",
@@ -18608,5 +18651,406 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 174,
+    "names": {
+      "en": "Dracu Lasswell",
+      "tw": "吸血鬼拉斯韋爾",
+      "kr": "드라큘라 라스웰",
+      "fr": "Draculasswell",
+      "de": "Dracu-Lasswell",
+      "es": "Draculasswell"
+    },
+    "abilities": [
+      {
+        "id": 911438,
+        "names": {
+          "en": "Crescent Blade",
+          "tw": "新月劍",
+          "kr": "언월도",
+          "fr": "Lame en croissant de lune",
+          "de": "Sichelklinge",
+          "es": "Hoja creciente"
+        },
+        "base": 200,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911444,
+        "names": {
+          "en": "Equity Slash",
+          "tw": "兩斷劍",
+          "kr": "양단검",
+          "fr": "Taillade miroir",
+          "de": "Spaltende Klinge",
+          "es": "Corte de la equidad"
+        },
+        "base": 345,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911446,
+        "names": {
+          "en": "Dark Descent",
+          "tw": "黑暗墮落",
+          "kr": "어둠으로의 추락",
+          "fr": "Sombre descente",
+          "de": "Dunkler Abstieg",
+          "es": "Descenso oscuro"
+        },
+        "damage": "hybrid",
+        "base": 2600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 70
+          }
+        ],
+        "framesList": [
+          290
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401000307,
+        "names": {
+          "en": "Azure Sky",
+          "tw": "雲外蒼天",
+          "kr": "운외창천",
+          "fr": "Ciel sans nuage",
+          "de": "Wolkenbeben",
+          "es": "Cielo azul"
+        },
+        "base": 1190,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          80
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          911438,
+          911444
+        ]
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "names": {
+      "en": "Lilith",
+      "tw": "莉莉絲",
+      "kr": "릴리스"
+    },
+    "abilities": [
+      {
+        "id": 911485,
+        "names": {
+          "en": "Serpenté - Dusk Lash",
+          "tw": "蛇蠍・黃昏鞭擊",
+          "kr": "뱀여인·황혼의 채찍질",
+          "fr": "Serpenté - Fouet du crépuscule",
+          "de": "Serpenté - Peitschenhieb der Abenddämmerung",
+          "es": "Serpenté - Látigo crepuscular"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 26
+      },
+      {
+        "id": 911486,
+        "names": {
+          "en": "Serpenté - Dawn Lash",
+          "tw": "蛇蠍・黎明鞭擊",
+          "kr": "뱀여인·새벽의 채찍질",
+          "fr": "Serpenté - Fouet de l'aube",
+          "de": "Serpenté - Peitschenhieb der Morgendämmerung",
+          "es": "Serpenté - Látigo del alba"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 26
+      },
+      {
+        "id": 911489,
+        "names": {
+          "en": "Life Siphon",
+          "tw": "生命虹吸",
+          "kr": "생명 흡수",
+          "fr": "Siphon vital",
+          "de": "Lebenssog",
+          "es": "Sifón vital"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          120
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911494,
+        "names": {
+          "en": "Serpenté - Kiss of Midnight",
+          "tw": "蛇蠍・午夜之吻",
+          "kr": "뱀여인·반야의 키스",
+          "fr": "Serpenté - Baiser de minuit",
+          "de": "Serpenté - Mitternachtskuss",
+          "es": "Serpenté - Beso de medianoche"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "dark"
+        ],
+        "dualable": false,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401005907,
+        "names": {
+          "en": "Sinister Dance",
+          "tw": "邪靈之舞",
+          "kr": "사악한 춤",
+          "fr": "Danse sinistre",
+          "de": "Sinistrer Tanz",
+          "es": "Danza siniestra"
+        },
+        "damage": "magic",
+        "base": 1090,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 20
+        ],
+        "dualable": false,
+        "framesList": [
+          85, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911485,
+          911486,
+          911494
+        ]
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "names": {
+      "en": "Lucius",
+      "tw": "路西亞斯",
+      "kr": "루시우스"
+    },
+    "abilities": [
+      {
+        "id": 911529,
+        "names": {
+          "en": "Demonic Barrage",
+          "tw": "惡魔彈幕",
+          "kr": "악마의 탄막",
+          "fr": "Rafale démoniaque",
+          "de": "Dämonisches Trommelfeuer",
+          "es": "Ráfaga demoníaca"
+        },
+        "base": 400,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911518,
+        "names": {
+          "en": "Piercing Barrage",
+          "tw": "貫通彈幕",
+          "kr": "관통의 탄막",
+          "fr": "Rafale pénétrante",
+          "de": "Durchschießendes Trommelfeuer",
+          "es": "Ráfaga penetrante"
+        },
+        "base": 240,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911519,
+        "names": {
+          "en": "Cleaving Barrage",
+          "tw": "分裂彈幕",
+          "kr": "절삭의 탄막",
+          "fr": "Rafale clivante",
+          "de": "Spaltendes Trommelfeuer",
+          "es": "Ráfaga rompedora"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          40
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911520,
+        "names": {
+          "en": "Crushing Barrage",
+          "tw": "粉碎彈幕",
+          "kr": "분쇄의 탄막",
+          "fr": "Rafale écrasante",
+          "de": "Zerschmetterndes Trommelfeuer",
+          "es": "Ráfaga demoledora"
+        },
+        "base": 520,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 26
+      },
+      {
+        "id": 911524,
+        "names": {
+          "en": "Blood Moon Barrage",
+          "tw": "血月彈幕",
+          "kr": "적월의 탄막",
+          "fr": "Rafale de la lune sanglante",
+          "de": "Trommelfeuer des Blutmondes",
+          "es": "Ráfaga de la luna de sangre"
+        },
+        "base": 640,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "dark"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401006007,
+        "names": {
+          "en": "Sinister Fury",
+          "tw": "邪靈之怒",
+          "kr": "사악한 분노",
+          "fr": "Furie sinistre",
+          "de": "Unheilvoller Zorn",
+          "es": "Furia siniestra"
+        },
+        "base": 1400,
+        "hitDamage": [
+          5, 5, 6, 5, 5, 7, 5, 5, 7, 50
+        ],
+        "dualable": false,
+        "framesList": [
+          105, 10, 5, 5, 10, 5, 5, 10, 10, 20
+        ],
+        "offset": 8
+      }
+    ],
+    "multipleBlack": 2
   }
 ];

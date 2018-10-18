@@ -309,6 +309,52 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401005905,
+        "names": {
+          "en": "Lilith",
+          "tw": "莉莉絲",
+          "kr": "릴리스"
+        },
+        "abilities": [
+          {
+            "id": 911494,
+            "names": {
+              "en": "Serpenté - Kiss of Midnight",
+              "tw": "蛇蠍・午夜之吻",
+              "kr": "뱀여인·반야의 키스",
+              "fr": "Serpenté - Baiser de minuit",
+              "de": "Serpenté - Mitternachtskuss",
+              "es": "Serpenté - Beso de medianoche"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006005,
+        "names": {
+          "en": "Lucius",
+          "tw": "路西亞斯",
+          "kr": "루시우스"
+        },
+        "abilities": [
+          {
+            "id": 911524,
+            "names": {
+              "en": "Blood Moon Barrage",
+              "tw": "血月彈幕",
+              "kr": "적월의 탄막",
+              "fr": "Rafale de la lune sanglante",
+              "de": "Trommelfeuer des Blutmondes",
+              "es": "Ráfaga de la luna de sangre"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -1055,6 +1101,31 @@
             "castTime": 20
           }
         ]
+      },
+      {
+        "id": 330000404,
+        "names": {
+          "en": "Lucian",
+          "tw": "露西奧",
+          "kr": "루시오",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227807,
+            "names": {
+              "en": "Shining Bolt",
+              "tw": "耀眼閃電",
+              "kr": "빛나는 뇌격",
+              "fr": "Éclair brillant",
+              "de": "Leuchtender Blitzschlag",
+              "es": "Rayo cegador"
+            },
+            "offset": 8
+          }
+        ]
       }
     ]
   },
@@ -1139,6 +1210,56 @@
     ]
   },
   {
+    "family": "42-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+    "units": [
+      {
+        "id": 203000105,
+        "names": {
+          "en": "Onion Knight",
+          "tw": "洋蔥劍士",
+          "kr": "양파 검사",
+          "fr": "Chevalier Oignon",
+          "de": "Zwiebelritter",
+          "es": "Caballero Cebolla"
+        },
+        "abilities": [
+          {
+            "id": 507290,
+            "names": {
+              "en": "Onion Chop",
+              "tw": "洋蔥斬碎",
+              "kr": "다진 양파",
+              "fr": "Taillade de l'Oignon",
+              "de": "Zwiebelschlag",
+              "es": "Tajo Cebolla"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 312000205,
+        "names": {
+          "en": "Hawk",
+          "tw": "霍克埃",
+          "kr": "호크아이"
+        },
+        "abilities": [
+          {
+            "id": 508481,
+            "names": {
+              "en": "Shuriken",
+              "tw": "手裏劍",
+              "kr": "수리검"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
     "units": [
       {
@@ -1187,61 +1308,6 @@
             },
             "offset": 16,
             "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "46-6-6-6-6-13",
-    "units": [
-      {
-        "id": 100012005,
-        "names": {
-          "en": "Nameless Gunner Jake",
-          "tw": "無名槍士傑科",
-          "kr": "무명의 총잡이 제이크",
-          "fr": "Jake, tireur anonyme",
-          "de": "Namenloser Pistolero Jake",
-          "es": "Jake el pistolero anónimo"
-        },
-        "abilities": [
-          {
-            "id": 222950,
-            "names": {
-              "en": "Vaporiser",
-              "tw": "高熱射線",
-              "kr": "기화 장치",
-              "fr": "Vaporisateur",
-              "de": "Zerstäuber",
-              "es": "Evaporizador"
-            },
-            "offset": 8
-          }
-        ]
-      },
-      {
-        "id": 100015005,
-        "names": {
-          "en": "Vagrant Knight Rain",
-          "tw": "彷徨騎士雷因",
-          "kr": "방황의 기사 레인",
-          "fr": "Rain, chevalier vagabond",
-          "de": "Wandernder Ritter Rain",
-          "es": "Rain caballero mendicante"
-        },
-        "abilities": [
-          {
-            "id": 226399,
-            "names": {
-              "en": "Bond with Jake",
-              "tw": "與傑科的羈絆",
-              "kr": "제이크와의 인연",
-              "fr": "Lien avec Jake",
-              "de": "Verbindung mit Jake",
-              "es": "Unión con Jake"
-            },
-            "offset": 8
           }
         ]
       }
@@ -1345,6 +1411,61 @@
               "fr": "Champ d'Ouragan",
               "de": "Tornadoallee",
               "es": "Callejón huracanado"
+            },
+            "offset": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "46-6-6-6-6-13",
+    "units": [
+      {
+        "id": 100012005,
+        "names": {
+          "en": "Nameless Gunner Jake",
+          "tw": "無名槍士傑科",
+          "kr": "무명의 총잡이 제이크",
+          "fr": "Jake, tireur anonyme",
+          "de": "Namenloser Pistolero Jake",
+          "es": "Jake el pistolero anónimo"
+        },
+        "abilities": [
+          {
+            "id": 222950,
+            "names": {
+              "en": "Vaporiser",
+              "tw": "高熱射線",
+              "kr": "기화 장치",
+              "fr": "Vaporisateur",
+              "de": "Zerstäuber",
+              "es": "Evaporizador"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100015005,
+        "names": {
+          "en": "Vagrant Knight Rain",
+          "tw": "彷徨騎士雷因",
+          "kr": "방황의 기사 레인",
+          "fr": "Rain, chevalier vagabond",
+          "de": "Wandernder Ritter Rain",
+          "es": "Rain caballero mendicante"
+        },
+        "abilities": [
+          {
+            "id": 226399,
+            "names": {
+              "en": "Bond with Jake",
+              "tw": "與傑科的羈絆",
+              "kr": "제이크와의 인연",
+              "fr": "Lien avec Jake",
+              "de": "Verbindung mit Jake",
+              "es": "Unión con Jake"
             },
             "offset": 8
           }
@@ -1467,6 +1588,32 @@
               "fr": "null",
               "de": "null",
               "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401000305,
+        "names": {
+          "en": "Dracu Lasswell",
+          "tw": "吸血鬼拉斯韋爾",
+          "kr": "드라큘라 라스웰",
+          "fr": "Draculasswell",
+          "de": "Dracu-Lasswell",
+          "es": "Draculasswell"
+        },
+        "abilities": [
+          {
+            "id": 911444,
+            "names": {
+              "en": "Equity Slash",
+              "tw": "兩斷劍",
+              "kr": "양단검",
+              "fr": "Taillade miroir",
+              "de": "Spaltende Klinge",
+              "es": "Corte de la equidad"
             },
             "offset": 16,
             "castTime": 40
@@ -1856,6 +2003,32 @@
         ]
       },
       {
+        "id": 401000305,
+        "names": {
+          "en": "Dracu Lasswell",
+          "tw": "吸血鬼拉斯韋爾",
+          "kr": "드라큘라 라스웰",
+          "fr": "Draculasswell",
+          "de": "Dracu-Lasswell",
+          "es": "Draculasswell"
+        },
+        "abilities": [
+          {
+            "id": 911438,
+            "names": {
+              "en": "Crescent Blade",
+              "tw": "新月劍",
+              "kr": "언월도",
+              "fr": "Lame en croissant de lune",
+              "de": "Sichelklinge",
+              "es": "Hoja creciente"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004104,
         "names": {
           "en": "Mario Frigo",
@@ -1948,6 +2121,65 @@
               "fr": "Été - Ailes marines",
               "de": "Sommer - Meereswinde",
               "es": "Verano - Voluntad de los mares"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401005905,
+        "names": {
+          "en": "Lilith",
+          "tw": "莉莉絲",
+          "kr": "릴리스"
+        },
+        "abilities": [
+          {
+            "id": 911497,
+            "names": {
+              "en": "Energy Melding",
+              "tw": "能量融合",
+              "kr": "활기의 융합",
+              "fr": "Fusion énergétique",
+              "de": "Energieverschmelzung",
+              "es": "Fusión energética"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911498,
+            "names": {
+              "en": "Dream Melding",
+              "tw": "夢境融合",
+              "kr": "망상의 융합",
+              "fr": "Fusion onirique",
+              "de": "Traumverschmelzung",
+              "es": "Fusión onírica"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006005,
+        "names": {
+          "en": "Lucius",
+          "tw": "路西亞斯",
+          "kr": "루시우스"
+        },
+        "abilities": [
+          {
+            "id": 911529,
+            "names": {
+              "en": "Demonic Barrage",
+              "tw": "惡魔彈幕",
+              "kr": "악마의 탄막",
+              "fr": "Rafale démoniaque",
+              "de": "Dämonisches Trommelfeuer",
+              "es": "Ráfaga demoníaca"
             },
             "offset": 16,
             "castTime": 40
@@ -2122,6 +2354,32 @@
         ]
       },
       {
+        "id": 100017403,
+        "names": {
+          "en": "Forelsket",
+          "tw": "福爾斯科特",
+          "kr": "포렐스켓",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 228143,
+            "names": {
+              "en": "Slice",
+              "tw": "碎切",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "Corte"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 203000105,
         "names": {
           "en": "Onion Knight",
@@ -2166,6 +2424,32 @@
               "fr": "Tranche-oignon",
               "de": "Zwiebelschnitt",
               "es": "Corte cebolla"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 203001305,
+        "names": {
+          "en": "Onion Knight Refia",
+          "tw": "洋蔥劍士蕾菲亞",
+          "kr": "양파 검사 레피아",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 211420,
+            "names": {
+              "en": "Full Speed Bladeblitz",
+              "tw": "全速全斬",
+              "kr": "전속 전방위 베기",
+              "fr": "Lame éclair rapide",
+              "de": "Voller Klingenblitz",
+              "es": "Tormenta de acero"
             },
             "offset": 16,
             "castTime": 40
@@ -2531,6 +2815,32 @@
         ]
       },
       {
+        "id": 330000105,
+        "names": {
+          "en": "Lenneth",
+          "tw": "蕾娜斯",
+          "kr": "레나스",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 227747,
+            "names": {
+              "en": "Glowing Pierce",
+              "tw": "灼光之槍",
+              "kr": "섬광 찌르기",
+              "fr": "Percée éblouissante",
+              "de": "Durchbohrung",
+              "es": "Zambullida"
+            },
+            "offset": 16,
+            "castTime": 1
+          }
+        ]
+      },
+      {
         "id": 401003505,
         "names": {
           "en": "Explorer Aileen",
@@ -2755,6 +3065,31 @@
     "family": "42-8-8-8-8-8-8-8",
     "units": [
       {
+        "id": 100017905,
+        "names": {
+          "en": "Sieghard",
+          "tw": "吉克哈特",
+          "kr": "지크하르트",
+          "fr": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 228417,
+            "names": {
+              "en": "Dangerous Rose",
+              "tw": "D·危險玫瑰",
+              "kr": "null",
+              "fr": "Rose dangereuse",
+              "de": "Gefährliche Rose",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 209000103,
         "names": {
           "en": "Zidane",
@@ -2915,6 +3250,65 @@
               "fr": "Combo explosif + 2",
               "de": "Flammende Kombo + 2",
               "es": "Combo ígneo + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401005905,
+        "names": {
+          "en": "Lilith",
+          "tw": "莉莉絲",
+          "kr": "릴리스"
+        },
+        "abilities": [
+          {
+            "id": 911485,
+            "names": {
+              "en": "Serpenté - Dusk Lash",
+              "tw": "蛇蠍・黃昏鞭擊",
+              "kr": "뱀여인·황혼의 채찍질",
+              "fr": "Serpenté - Fouet du crépuscule",
+              "de": "Serpenté - Peitschenhieb der Abenddämmerung",
+              "es": "Serpenté - Látigo crepuscular"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911486,
+            "names": {
+              "en": "Serpenté - Dawn Lash",
+              "tw": "蛇蠍・黎明鞭擊",
+              "kr": "뱀여인·새벽의 채찍질",
+              "fr": "Serpenté - Fouet de l'aube",
+              "de": "Serpenté - Peitschenhieb der Morgendämmerung",
+              "es": "Serpenté - Látigo del alba"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006005,
+        "names": {
+          "en": "Lucius",
+          "tw": "路西亞斯",
+          "kr": "루시우스"
+        },
+        "abilities": [
+          {
+            "id": 911520,
+            "names": {
+              "en": "Crushing Barrage",
+              "tw": "粉碎彈幕",
+              "kr": "분쇄의 탄막",
+              "fr": "Rafale écrasante",
+              "de": "Zerschmetterndes Trommelfeuer",
+              "es": "Ráfaga demoledora"
             },
             "offset": 16,
             "castTime": 40
@@ -4065,6 +4459,29 @@
         ]
       },
       {
+        "id": 401006005,
+        "names": {
+          "en": "Lucius",
+          "tw": "路西亞斯",
+          "kr": "루시우스"
+        },
+        "abilities": [
+          {
+            "id": 911518,
+            "names": {
+              "en": "Piercing Barrage",
+              "tw": "貫通彈幕",
+              "kr": "관통의 탄막",
+              "fr": "Rafale pénétrante",
+              "de": "Durchschießendes Trommelfeuer",
+              "es": "Ráfaga penetrante"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 304002600,
         "names": {
           "en": "Masamune",
@@ -4599,6 +5016,30 @@
         ]
       },
       {
+        "id": 203001503,
+        "names": {
+          "en": "Unei",
+          "tw": "烏內",
+          "kr": "우네",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 204001505,
         "names": {
           "en": "Pure Summoner Rydia",
@@ -4890,6 +5331,31 @@
           "fr": "Nichol, stratège maritime",
           "de": "Maritimer Stratege Nichol",
           "es": "Nichol estratega marino"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100018104,
+        "names": {
+          "en": "Theobald",
+          "tw": "迪奧巴特",
+          "kr": "테오볼트",
+          "fr": null,
+          "es": null
         },
         "abilities": [
           {
@@ -5281,6 +5747,32 @@
             "castTime": 50
           }
         ]
+      },
+      {
+        "id": 401002005,
+        "names": {
+          "en": "Grim Lord Sakura",
+          "tw": "冷血貴族櫻",
+          "kr": "사신 사쿠라",
+          "fr": "Sakura, seigneur sombre",
+          "de": "Grimmige Herrin Sakura",
+          "es": "Sakura la parca"
+        },
+        "abilities": [
+          {
+            "id": 911459,
+            "names": {
+              "en": "Grim - Eldritch Wave",
+              "tw": "冷血 - 恐懼波",
+              "kr": "사신·으스스한 파동",
+              "fr": "Obscurité - Onde spectrale",
+              "de": "Grimm - Schauerliche Welle",
+              "es": "Parca - Ola de Eldritch"
+            },
+            "offset": 16,
+            "castTime": 50
+          }
+        ]
       }
     ]
   },
@@ -5319,6 +5811,58 @@
           "en": "William",
           "tw": "威廉",
           "kr": "윌리엄"
+        },
+        "abilities": [
+          {
+            "id": 20400,
+            "names": {
+              "en": "Quake",
+              "tw": "地槌",
+              "kr": "퀘이크",
+              "fr": "Séisme",
+              "de": "Beben",
+              "es": "Seísmo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100017605,
+        "names": {
+          "en": "Yuraisha",
+          "tw": "尤萊莎",
+          "kr": "유라이샤",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 20400,
+            "names": {
+              "en": "Quake",
+              "tw": "地槌",
+              "kr": "퀘이크",
+              "fr": "Séisme",
+              "de": "Beben",
+              "es": "Seísmo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 203000604,
+        "names": {
+          "en": "Doga",
+          "tw": "多加",
+          "kr": "도가",
+          "fr": null,
+          "de": null,
+          "es": null
         },
         "abilities": [
           {
