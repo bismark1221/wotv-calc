@@ -367,9 +367,24 @@ export class JsonService {
       return find;
     }
 
+    find = this.findEffect(rawEffect, [134]);
+    if (find) {
+      find.damage = find.effect[4];
+      this.ffbeChainUnits[unitId].abilities[id].dualable = false;
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return find;
+    }
+
     find = this.findEffect(rawEffect, [41, 112]);
     if (find) {
       find.damage = find.effect[0];
+      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      return find;
+    }
+
+    find = this.findEffect(rawEffect, [22]);
+    if (find) {
+      find.damage = find.effect[3];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return find;
     }

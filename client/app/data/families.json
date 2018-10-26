@@ -536,6 +536,19 @@
             },
             "offset": 16,
             "castTime": 20
+          },
+          {
+            "id": 911543,
+            "names": {
+              "en": "Feed the Fishes + 1",
+              "tw": "餵魚 + 1",
+              "kr": "물고기 밥 + 1",
+              "fr": "Nourrissez les poissons + 1",
+              "de": "Macht sie zu Fischfutter! + 1",
+              "es": "Echadlo a los peces + 1"
+            },
+            "offset": 16,
+            "castTime": 20
           }
         ]
       }
@@ -865,6 +878,31 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 254001905,
+        "names": {
+          "en": "Kurasame",
+          "tw": "暮雨",
+          "kr": "쿠라사메",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 228332,
+            "names": {
+              "en": "Zekken - Freezing Showers",
+              "tw": "絕劍·冰雨",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 8
+          }
+        ]
       }
     ]
   },
@@ -1103,14 +1141,50 @@
         ]
       },
       {
+        "id": 254001905,
+        "names": {
+          "en": "Kurasame",
+          "tw": "暮雨",
+          "kr": "쿠라사메",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 508520,
+            "names": {
+              "en": "Zekken - Twilight Rain",
+              "tw": "絕劍·暮雨",
+              "kr": "null",
+              "fr": "null",
+              "de": "Absolutes Schwert: Zwielichtiger Regen",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 20
+          },
+          {
+            "id": 228333,
+            "names": {
+              "en": "Zekken - Sudden Downpour",
+              "tw": "絕劍·驟雨",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
         "id": 330000404,
         "names": {
           "en": "Lucian",
           "tw": "露西奧",
-          "kr": "루시오",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "루시오"
         },
         "abilities": [
           {
@@ -1124,6 +1198,32 @@
               "es": "Rayo cegador"
             },
             "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 401002204,
+        "names": {
+          "en": "Pirate Jake",
+          "tw": "海盜傑科",
+          "kr": "해적 제이크",
+          "fr": "Jake, pirate",
+          "de": "Piraten-Jake",
+          "es": "Jake pirata"
+        },
+        "abilities": [
+          {
+            "id": 911544,
+            "names": {
+              "en": "Feed the Fishes + 2",
+              "tw": "餵魚 + 2",
+              "kr": "물고기 밥 + 2",
+              "fr": "Nourrissez les poissons + 2",
+              "de": "Macht sie zu Fischfutter! + 2",
+              "es": "Echadlo a los peces + 2"
+            },
+            "offset": 16,
+            "castTime": 20
           }
         ]
       }
@@ -1585,6 +1685,32 @@
               "en": "Immanence",
               "tw": "震天動地",
               "kr": "진천동지",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 254001805,
+        "names": {
+          "en": "Machina",
+          "tw": "馬其納",
+          "kr": "마키나",
+          "fr": null,
+          "de": null,
+          "es": null
+        },
+        "abilities": [
+          {
+            "id": 228310,
+            "names": {
+              "en": "Element Eiger",
+              "tw": "元素巔峰",
+              "kr": "null",
               "fr": "null",
               "de": "null",
               "es": "null"
@@ -2818,11 +2944,8 @@
         "id": 330000105,
         "names": {
           "en": "Lenneth",
-          "tw": "蕾娜斯",
-          "kr": "레나스",
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "蕾娜絲",
+          "kr": "레나스"
         },
         "abilities": [
           {
@@ -3069,9 +3192,7 @@
         "names": {
           "en": "Sieghard",
           "tw": "吉克哈特",
-          "kr": "지크하르트",
-          "fr": null,
-          "es": null
+          "kr": "지크하르트"
         },
         "abilities": [
           {
@@ -5353,9 +5474,7 @@
         "names": {
           "en": "Theobald",
           "tw": "迪奧巴特",
-          "kr": "테오볼트",
-          "fr": null,
-          "es": null
+          "kr": "테오볼트"
         },
         "abilities": [
           {
@@ -5822,6 +5941,32 @@
               "fr": "Séisme",
               "de": "Beben",
               "es": "Seísmo"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 70432,
+            "names": {
+              "en": "Quake + 1",
+              "tw": "地槌 + 1",
+              "kr": "퀘이크 + 1",
+              "fr": "Séisme + 1",
+              "de": "Beben + 1",
+              "es": "Seísmo + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 70433,
+            "names": {
+              "en": "Quake + 2",
+              "tw": "地槌 + 2",
+              "kr": "퀘이크 + 2",
+              "fr": "Séisme + 2",
+              "de": "Beben + 2",
+              "es": "Seísmo + 2"
             },
             "offset": 16,
             "castTime": 40
