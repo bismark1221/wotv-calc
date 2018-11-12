@@ -252,6 +252,29 @@
         ]
       },
       {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌"
+        },
+        "abilities": [
+          {
+            "id": 227164,
+            "names": {
+              "en": "Tempest Flash",
+              "tw": "烈風飛電",
+              "kr": "열풍비전",
+              "fr": "Éclat de tempête",
+              "de": "Sturmblitz",
+              "es": "Destello tempestuoso"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004605,
         "names": {
           "en": "Malphasie",
@@ -884,10 +907,7 @@
         "names": {
           "en": "Kurasame",
           "tw": "暮雨",
-          "kr": "쿠라사메",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "쿠라사메"
         },
         "abilities": [
           {
@@ -895,10 +915,10 @@
             "names": {
               "en": "Zekken - Freezing Showers",
               "tw": "絕劍·冰雨",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "절검·얼음비",
+              "fr": "Zekken - Douches gelées",
+              "de": "Zekken - Eiskalter Schauer",
+              "es": "Zekken - Tromba de granizo"
             },
             "offset": 8
           }
@@ -1145,10 +1165,7 @@
         "names": {
           "en": "Kurasame",
           "tw": "暮雨",
-          "kr": "쿠라사메",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "쿠라사메"
         },
         "abilities": [
           {
@@ -1156,10 +1173,10 @@
             "names": {
               "en": "Zekken - Twilight Rain",
               "tw": "絕劍·暮雨",
-              "kr": "null",
-              "fr": "null",
-              "de": "Absolutes Schwert: Zwielichtiger Regen",
-              "es": "null"
+              "kr": "절검·저녁비",
+              "fr": "Zekken - Pluie du crépuscule",
+              "de": "Zekken - Regen im Zwielicht",
+              "es": "Zekken - Lluvia del crepúsculo"
             },
             "offset": 16,
             "castTime": 20
@@ -1169,10 +1186,10 @@
             "names": {
               "en": "Zekken - Sudden Downpour",
               "tw": "絕劍·驟雨",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "절검·소나기",
+              "fr": "Zekken - Averse soudaine",
+              "de": "Zekken - Plötzlicher Niederschlag",
+              "es": "Zekken - Aguacero inesperado"
             },
             "offset": 16,
             "castTime": 20
@@ -1646,9 +1663,9 @@
             "names": {
               "en": "Obliterating Mirror of Equity",
               "tw": "絕·明鏡",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
+              "kr": "절·명경",
+              "fr": "Sérénité destructrice",
+              "de": "Vernichtender Spiegel der Gerechtigkeit",
               "es": "null"
             },
             "offset": 16,
@@ -1658,10 +1675,10 @@
             "id": 508001,
             "names": {
               "en": "Absolute Mirror of Equity",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
+              "tw": "極·明鏡",
+              "kr": "극·명경",
+              "fr": "Sérénité absolue",
+              "de": "Vollkommene Kata",
               "es": "Tranquilidad absoluta"
             },
             "offset": 16,
@@ -1699,10 +1716,7 @@
         "names": {
           "en": "Machina",
           "tw": "馬其納",
-          "kr": "마키나",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "마키나"
         },
         "abilities": [
           {
@@ -1710,10 +1724,9 @@
             "names": {
               "en": "Element Eiger",
               "tw": "元素巔峰",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "엘리멘트 아이거",
+              "fr": "Élément d'Eiger",
+              "es": "Elemento de Eiger"
             },
             "offset": 16,
             "castTime": 40
@@ -1846,6 +1859,32 @@
         ]
       },
       {
+        "id": 100011705,
+        "names": {
+          "en": "Pyro Glacial Lasswell",
+          "tw": "冰炎騎士拉斯韋爾",
+          "kr": "빙염의 기사 라스웰",
+          "fr": "Lasswell flammes gelées",
+          "de": "Eisflammenritter Lasswell",
+          "es": "Lasswell pirogélido"
+        },
+        "abilities": [
+          {
+            "id": 227560,
+            "names": {
+              "en": "Winter's Oblivion",
+              "tw": "無明冰月",
+              "kr": "무명빙월",
+              "fr": "Oubli hivernal",
+              "de": "Winter der Spirituellen Dunkelheit",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100016205,
         "names": {
           "en": "Hyoh",
@@ -1903,6 +1942,29 @@
               "fr": "Lame fantôme",
               "de": "Phantomklinge",
               "es": "Hoja fantasma"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100017304,
+        "names": {
+          "en": "Magna",
+          "tw": "馬格納",
+          "kr": "마그나"
+        },
+        "abilities": [
+          {
+            "id": 228130,
+            "names": {
+              "en": "Sacred Flux",
+              "tw": "流聖瀑",
+              "kr": "유성폭",
+              "fr": "Flux sacré",
+              "de": "Sakralkatarakt",
+              "es": "Flujo sagrado"
             },
             "offset": 16,
             "castTime": 40
@@ -2372,6 +2434,55 @@
     "family": "42-7-7-7-7-7-7-7-7-7-7-7",
     "units": [
       {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌"
+        },
+        "abilities": [
+          {
+            "id": 227162,
+            "names": {
+              "en": "High-Voltage Twin Blade",
+              "tw": "迅雷雙刃",
+              "kr": "신뢰의 쌍날",
+              "fr": "Lame jumelle électrifiée",
+              "de": "Donnernde Zwillingsklinge",
+              "es": "Espada doble de alto voltaje"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227163,
+            "names": {
+              "en": "Dazzling Twin Blade",
+              "tw": "炫光雙刃",
+              "kr": "현광의 쌍날",
+              "fr": "Lame jumelle éblouissante",
+              "de": "Gleißende Zwillingsklinge",
+              "es": "Espada doble deslumbrante"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 227161,
+            "names": {
+              "en": "Tempestuous Twin Blade",
+              "tw": "疾風雙刃",
+              "kr": "질풍의 쌍날",
+              "fr": "Lame jumelle tempétueuse",
+              "de": "Stürmische Zwillingsklinge",
+              "es": "Espada doble tempestuosa"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100012104,
         "names": {
           "en": "Emilia",
@@ -2484,10 +2595,7 @@
         "names": {
           "en": "Forelsket",
           "tw": "福爾斯科特",
-          "kr": "포렐스켓",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "포렐스켓"
         },
         "abilities": [
           {
@@ -2495,10 +2603,10 @@
             "names": {
               "en": "Slice",
               "tw": "碎切",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "Corte"
+              "kr": "깍둑썰기",
+              "fr": "Découpe",
+              "de": "Scheibenschneiden",
+              "es": "Rebanar"
             },
             "offset": 16,
             "castTime": 40
@@ -2910,6 +3018,42 @@
               "fr": "Coup de queue violent",
               "de": "Gewaltschweif",
               "es": "Cola violenta"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100017204,
+        "names": {
+          "en": "Leopold",
+          "tw": "雷歐波特",
+          "kr": "레오폴드",
+          "fr": "Léopold",
+          "es": "Leopoldo"
+        },
+        "abilities": [
+          {
+            "id": 508381,
+            "names": {
+              "en": "Sandstorm Blade",
+              "tw": "地嵐之劍",
+              "kr": "모래 폭풍의 검",
+              "fr": "Lame tempétueuse",
+              "de": "Erdsturmklinge",
+              "es": "Hoja de la tormenta de arena"
+            },
+            "offset": 8
+          },
+          {
+            "id": 508380,
+            "names": {
+              "en": "Sandstorm Blade",
+              "tw": "地嵐之劍",
+              "kr": "모래 폭풍의 검",
+              "fr": "Lame tempétueuse",
+              "de": "Erdsturmklinge",
+              "es": "Hoja de la tormenta de arena"
             },
             "offset": 8
           }
@@ -3829,6 +3973,58 @@
             },
             "offset": 16,
             "castTime": 58
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-10-10-10",
+    "units": [
+      {
+        "id": 100010303,
+        "names": {
+          "en": "Yuri",
+          "tw": "百合",
+          "kr": "유리"
+        },
+        "abilities": [
+          {
+            "id": 214310,
+            "names": {
+              "en": "Anti-Insect Stance",
+              "tw": "殺蟲絕命術",
+              "kr": "살충절명술",
+              "fr": "Posture anti-insecte",
+              "de": "Anti-Insekten-Kata",
+              "es": "Postura antiinsectos"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 205000805,
+        "names": {
+          "en": "Gilgamesh",
+          "tw": "吉爾伽美什",
+          "kr": "길가메시",
+          "de": "Gilgamesch"
+        },
+        "abilities": [
+          {
+            "id": 227482,
+            "names": {
+              "en": "Secret Sword Art - Kotetsu",
+              "tw": "【秘劍】虎徹",
+              "kr": "[비검] 고테쓰",
+              "fr": "[Tech. secrète] Kotetsu",
+              "de": "[Geheimtechnik] Kotetsu",
+              "es": "Arte secreto de la espada - Kotetsu"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }

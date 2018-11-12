@@ -20171,5 +20171,487 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 182,
+    "names": {
+      "en": "Machina",
+      "tw": "馬其納",
+      "kr": "마키나"
+    },
+    "abilities": [
+      {
+        "id": 228313,
+        "names": {
+          "en": "Dark Side",
+          "tw": "黑暗面",
+          "kr": "다크 사이드",
+          "fr": "Sphère sombre",
+          "de": "Dunkle Macht",
+          "es": "Manto de Érebo"
+        },
+        "base": 400,
+        "hitDamage": [
+          15, 15, 15, 15, 15
+        ],
+        "castTime": 12,
+        "elements": [
+          "dark"
+        ],
+        "framesList": [
+          32, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228312,
+        "names": {
+          "en": "Siphon Sword",
+          "tw": "吸能劍",
+          "kr": "드레인 소드",
+          "fr": "Lame vampirique",
+          "de": "Subvitaschwert",
+          "es": "Filo drenador"
+        },
+        "base": 150,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 2,
+        "framesList": [
+          4, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20220,
+        "names": {
+          "en": "Thundaga",
+          "tw": "大雷電",
+          "kr": "선더가",
+          "fr": "Foudre X",
+          "de": "Blitzga",
+          "es": "Electro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          70
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228311,
+        "names": {
+          "en": "Stunning Slash",
+          "tw": "眩暈劍",
+          "kr": "스턴 블레이드",
+          "fr": "Lame assommante",
+          "de": "Betäubungshieb",
+          "es": "Táser"
+        },
+        "base": 300,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 2,
+        "framesList": [
+          4, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228310,
+        "names": {
+          "en": "Element Eiger",
+          "tw": "元素巔峰",
+          "kr": "엘리멘트 아이거",
+          "fr": "Élément d'Eiger",
+          "es": "Elemento de Eiger"
+        },
+        "base": 520,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508511,
+        "names": {
+          "en": "Rush Blade",
+          "tw": "衝鋒劍",
+          "kr": "러쉬 블레이드",
+          "fr": "Lame de Fougue",
+          "de": "Hastklinge",
+          "es": "Hoja veloz"
+        },
+        "base": 500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "ignore": 50,
+        "framesList": [
+          14, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 254001807,
+        "names": {
+          "en": "Cyclone Drive",
+          "tw": "迴旋猛擊",
+          "kr": "스핀 드라이브",
+          "fr": "Vrilles",
+          "de": "Zyklonantrieb",
+          "es": "Estoque tornado"
+        },
+        "base": 700,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 45
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          132, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 8
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "names": {
+      "en": "Kurasame",
+      "tw": "暮雨",
+      "kr": "쿠라사메"
+    },
+    "abilities": [
+      {
+        "id": 228335,
+        "names": {
+          "en": "Blizzaja Sword",
+          "tw": "強暴雪劍",
+          "kr": "블리자쟈 검",
+          "fr": "Épée glace max",
+          "de": "Eiska-Schwert",
+          "es": "Espada Hielo+++"
+        },
+        "damage": "hybrid",
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          200
+        ],
+        "offset": 8
+      },
+      {
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          150
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228332,
+        "names": {
+          "en": "Zekken - Freezing Showers",
+          "tw": "絕劍·冰雨",
+          "kr": "절검·얼음비",
+          "fr": "Zekken - Douches gelées",
+          "de": "Zekken - Eiskalter Schauer",
+          "es": "Zekken - Tromba de granizo"
+        },
+        "damage": "hybrid",
+        "base": 700,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 8
+      },
+      {
+        "id": 228331,
+        "names": {
+          "en": "Zekken - Cloudless Rain",
+          "tw": "絕劍·天泣",
+          "kr": "절검·맑은비",
+          "fr": "Zekken - Pluie sans nuage",
+          "de": "Zekken - Wolkenloser Regen",
+          "es": "Zekken - Lluvia de cielo despejado"
+        },
+        "damage": "hybrid",
+        "base": 700,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "elements": [
+          "water"
+        ],
+        "framesList": [
+          32, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 8
+      },
+      {
+        "id": 508520,
+        "names": {
+          "en": "Zekken - Twilight Rain",
+          "tw": "絕劍·暮雨",
+          "kr": "절검·저녁비",
+          "fr": "Zekken - Pluie du crépuscule",
+          "de": "Zekken - Regen im Zwielicht",
+          "es": "Zekken - Lluvia del crepúsculo"
+        },
+        "damage": "hybrid",
+        "base": 2400,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 34
+        ],
+        "castTime": 20,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228333,
+        "names": {
+          "en": "Zekken - Sudden Downpour",
+          "tw": "絕劍·驟雨",
+          "kr": "절검·소나기",
+          "fr": "Zekken - Averse soudaine",
+          "de": "Zekken - Plötzlicher Niederschlag",
+          "es": "Zekken - Aguacero inesperado"
+        },
+        "damage": "hybrid",
+        "base": 1260,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508525,
+        "names": {
+          "en": "Thrust of Death",
+          "tw": "死神刺突",
+          "kr": "사신의 찌르기",
+          "fr": "Coup mortel",
+          "de": "Stoß des Todes",
+          "es": "Estocada mortífera"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          5
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000297,
+        "names": {
+          "en": "Absolute Zero + 1",
+          "tw": "絕對零度 + 1",
+          "kr": "절대 영도 + 1",
+          "fr": "Zéro absolu + 1",
+          "de": "Absoluter Nullpunkt + 1",
+          "es": "Cero absoluto + 1"
+        },
+        "damage": "hybrid",
+        "base": 3000,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          176,
+          0
+        ],
+        "offset": 8
+      },
+      {
+        "id": 508524,
+        "names": {
+          "en": "Diamond Rain",
+          "tw": "鑽石之雨",
+          "kr": "다이아몬드 레인",
+          "fr": "Pluie de diamant",
+          "de": "Diamantregen",
+          "es": "Lluvia de diamantes"
+        },
+        "damage": "hybrid",
+        "base": 5400,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 13
+        ],
+        "elements": [
+          "ice"
+        ],
+        "framesList": [
+          2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 8
+      },
+      {
+        "id": 228342,
+        "names": {
+          "en": "Intimidating Stance",
+          "tw": "恫嚇體勢",
+          "kr": "중단세",
+          "fr": "Pose d'intimidation",
+          "de": "Einschüchternde Stellung",
+          "es": "Aire intimidante"
+        },
+        "damage": "magic",
+        "base": 2,
+        "hitDamage": [],
+        "dualable": false,
+        "ignore": null,
+        "framesList": [],
+        "offset": 8
+      },
+      {
+        "id": 254001907,
+        "names": {
+          "en": "Absolute Zero",
+          "tw": "絕對零度",
+          "kr": "절대 영도",
+          "fr": "Zéro absolu",
+          "de": "Absoluter Nullpunkt",
+          "es": "Cero absoluto"
+        },
+        "damage": "hybrid",
+        "base": 3000,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          176,
+          0
+        ],
+        "offset": 8
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          228331,
+          228332,
+          228333,
+          508520
+        ]
+      }
+    ]
   }
 ];
