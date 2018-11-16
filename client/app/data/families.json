@@ -239,12 +239,12 @@
           {
             "id": 704540,
             "names": {
-              "en": "Aureole Ray + 2",
-              "tw": "日輪射線 + 2",
-              "kr": "광환의 광선 + 2",
-              "fr": "Rayon auréole + 2",
-              "de": "Koronastrahl + 2",
-              "es": "Rayo áureo + 2"
+              "en": "Aureole Ray",
+              "tw": "日輪射線",
+              "kr": "광환의 광선",
+              "fr": "Rayon auréole",
+              "de": "Koronastrahl",
+              "es": "Rayo áureo"
             },
             "offset": 16,
             "castTime": 40
@@ -1659,27 +1659,27 @@
         },
         "abilities": [
           {
+            "id": 508001,
+            "names": {
+              "en": "Absolute Mirror of Equity + 1",
+              "tw": "極·明鏡 + 1",
+              "kr": "극·명경 + 1",
+              "fr": "Sérénité Ultime + 1",
+              "de": "Vollkommene Kata + 1",
+              "es": "Tranquilidad absoluta + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
             "id": 227561,
             "names": {
               "en": "Obliterating Mirror of Equity",
               "tw": "絕·明鏡",
               "kr": "절·명경",
               "fr": "Sérénité destructrice",
-              "de": "Vernichtender Spiegel der Gerechtigkeit",
-              "es": "null"
-            },
-            "offset": 16,
-            "castTime": 40
-          },
-          {
-            "id": 508001,
-            "names": {
-              "en": "Absolute Mirror of Equity",
-              "tw": "極·明鏡",
-              "kr": "극·명경",
-              "fr": "Sérénité absolue",
-              "de": "Vollkommene Kata",
-              "es": "Tranquilidad absoluta"
+              "de": "Vernichtende Kata",
+              "es": "Tranquilidad destructiva"
             },
             "offset": 16,
             "castTime": 40
@@ -1877,7 +1877,7 @@
               "kr": "무명빙월",
               "fr": "Oubli hivernal",
               "de": "Winter der Spirituellen Dunkelheit",
-              "es": "null"
+              "es": "Abandono invernal"
             },
             "offset": 16,
             "castTime": 40
@@ -2142,12 +2142,12 @@
           {
             "id": 911006,
             "names": {
-              "en": "Frost Flower Blitz + 1",
-              "tw": "冰花迅雷 + 1",
-              "kr": "서리꽃 폭풍 + 1",
-              "fr": "Pétales gelés + 1",
-              "de": "Eisblumenblitz + 1",
-              "es": "Pétalos helados + 1"
+              "en": "Frost Flower Blitz",
+              "tw": "冰花迅雷",
+              "kr": "서리꽃 폭풍",
+              "fr": "Pétales gelés",
+              "de": "Eisblumenblitz",
+              "es": "Pétalos helados"
             },
             "offset": 16,
             "castTime": 40
@@ -2155,12 +2155,12 @@
           {
             "id": 911007,
             "names": {
-              "en": "Frost Flower Blitz + 2",
-              "tw": "冰花迅雷 + 2",
-              "kr": "서리꽃 폭풍 + 2",
-              "fr": "Pétales gelés + 2",
-              "de": "Eisblumenblitz + 2",
-              "es": "Pétalos helados + 2"
+              "en": "Frost Flower Blitz",
+              "tw": "冰花迅雷",
+              "kr": "서리꽃 폭풍",
+              "fr": "Pétales gelés",
+              "de": "Eisblumenblitz",
+              "es": "Pétalos helados"
             },
             "offset": 16,
             "castTime": 40
@@ -2270,6 +2270,65 @@
               "fr": "Plongeon aérien",
               "de": "Wehender Sturzflug",
               "es": "Descenso aéreo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004705,
+        "names": {
+          "en": "Ellesperis",
+          "tw": "艾莉絲珮芮絲",
+          "kr": "엘레스페리스"
+        },
+        "abilities": [
+          {
+            "id": 911615,
+            "names": {
+              "en": "Human Splitter",
+              "tw": "人類綻裂者",
+              "kr": "인간 분열",
+              "fr": "Fléau d'humain",
+              "de": "Menschensplitter",
+              "es": "Partehumanos"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911616,
+            "names": {
+              "en": "Demon Splitter",
+              "tw": "惡魔綻裂者",
+              "kr": "악마 분열",
+              "fr": "Fléau de démon",
+              "de": "Dämonensplitter",
+              "es": "Partedemonios"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004805,
+        "names": {
+          "en": "Beryl",
+          "tw": "貝利爾",
+          "kr": "베릴"
+        },
+        "abilities": [
+          {
+            "id": 911583,
+            "names": {
+              "en": "Heaven - Force of Light",
+              "tw": "天堂-光之力",
+              "kr": "천국·빛의 힘",
+              "fr": "Paradis - Force de lumière",
+              "de": "Himmel - Macht des Lichts",
+              "es": "Hocicazo - Fuerza lumínica"
             },
             "offset": 16,
             "castTime": 40
@@ -4594,6 +4653,29 @@
         ]
       },
       {
+        "id": 302001405,
+        "names": {
+          "en": "Fryevia",
+          "tw": "弗雷比亞",
+          "kr": "프레이비아"
+        },
+        "abilities": [
+          {
+            "id": 911629,
+            "names": {
+              "en": "Flower Assault",
+              "tw": "花之突擊",
+              "kr": "꽃잎 강습",
+              "fr": "Coup de la fleur",
+              "de": "Blumiger Überfall",
+              "es": "Asalto floral"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401001105,
         "names": {
           "en": "Zargabaath",
@@ -4746,6 +4828,52 @@
               "fr": "Guidage d'objets de chaos",
               "de": "Chaotisches Anvisieren",
               "es": "Objeto caótico dirigido"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004705,
+        "names": {
+          "en": "Ellesperis",
+          "tw": "艾莉絲珮芮絲",
+          "kr": "엘레스페리스"
+        },
+        "abilities": [
+          {
+            "id": 911618,
+            "names": {
+              "en": "Blood Sacrifice",
+              "tw": "鮮血獻祭",
+              "kr": "피의 희생",
+              "fr": "Sacrifice de sang",
+              "de": "Blutopfer",
+              "es": "Sacrificio de sangre"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004805,
+        "names": {
+          "en": "Beryl",
+          "tw": "貝利爾",
+          "kr": "베릴"
+        },
+        "abilities": [
+          {
+            "id": 911580,
+            "names": {
+              "en": "Heaven - Penance Poke",
+              "tw": "天堂-苦修猛擊",
+              "kr": "천국·속죄",
+              "fr": "Paradis - Frappe de pénitence",
+              "de": "Himmel - Strafstups",
+              "es": "Cielo - Toque de penitencia"
             },
             "offset": 16,
             "castTime": 40
@@ -6083,6 +6211,29 @@
               "fr": "Obscurité - Onde spectrale",
               "de": "Grimm - Schauerliche Welle",
               "es": "Parca - Ola de Eldritch"
+            },
+            "offset": 16,
+            "castTime": 50
+          }
+        ]
+      },
+      {
+        "id": 401004805,
+        "names": {
+          "en": "Beryl",
+          "tw": "貝利爾",
+          "kr": "베릴"
+        },
+        "abilities": [
+          {
+            "id": 911586,
+            "names": {
+              "en": "Heaven - Ye Not Guilty",
+              "tw": "天堂-汝等無罪",
+              "kr": "천국·무죄",
+              "fr": "Paradis - Non coupable",
+              "de": "Himmel - Bist frei von Schuld",
+              "es": "Cielo - Sin culpa"
             },
             "offset": 16,
             "castTime": 50

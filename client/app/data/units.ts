@@ -5380,6 +5380,89 @@ export const UNITS: any[] = [
         base: 1060
       },
       {
+        "dataId": 226811,
+        "names": {
+          "en": "Flying Daggers",
+          "tw": "匕首投擲",
+          "kr": "대거 샷",
+          "fr": "Dagues furieuses",
+          "de": "Fliegende Dolche",
+          "es": "Dagas voladoras"
+        },
+        "damage": "magic",
+        "base": 640,
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        "castTime": 20,
+        "framesList": [
+          30, 20, 20, 20, 20, 20, 20, 20, 20
+        ],
+        "offset": 16
+      },
+      {
+        "dataId": 20390,
+        "names": {
+          "en": "Tornado",
+          "tw": "龍捲風",
+          "kr": "토네이도",
+          "fr": "Tornade"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "dataId": 20400,
+        "names": {
+          "en": "Quake",
+          "tw": "地槌",
+          "kr": "퀘이크",
+          "fr": "Séisme",
+          "de": "Beben",
+          "es": "Seísmo"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ],
+        "offset": 16
+      },
+      {
         "id": 254000907,
         "names": {
           "en": "Seraphim Strike",
@@ -5401,7 +5484,8 @@ export const UNITS: any[] = [
         ],
         "offset": 8
       }
-    ]
+    ],
+    "multipleBlack": 2,
   },
   {
     id: 55,
@@ -5564,7 +5648,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 20,
-        offset: 26,
+        offset: 16,
         base: 240,
         ignore: 50
       },
@@ -5580,7 +5664,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 20,
-        offset: 26,
+        offset: 16,
         base: 350,
         ignore: 50
       },
@@ -7265,7 +7349,7 @@ export const UNITS: any[] = [
         "offset": 8
       }
     ],
-    multipleBlack: 2
+    multipleBlack: 3
   },
   {
     id: 80,
