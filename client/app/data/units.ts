@@ -7529,9 +7529,10 @@ export const UNITS: any[] = [
         "base": 1680,
         "hitDamage": [
           20, 20, 20, 20, 20
+        ],
         "dualable": false,
         "framesList": [
-          120, 1, 5, 11, 42, 50
+          121, 5, 11, 42, 50
         ],
         "offset": 8
       }
@@ -9338,7 +9339,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         dualable: false
-      }
+      },
       {
         "id": 219360,
         "names": {
