@@ -737,7 +737,7 @@ export const UNITS: any[] = [
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
         offset: 16,
-        base: 900,
+        base: 1000,
       },
       {
         id: 2,
@@ -751,7 +751,7 @@ export const UNITS: any[] = [
         },
         framesList: [2, 7, 7, 7, 8, 8, 8, 8, 8, 8],
         offset: 40,
-        base: 600,
+        base: 700,
       },
       {
         id: 3,
@@ -840,16 +840,150 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 8,
-        names: {
-          en: "Ho229 Type-B",
-          es: "Ho229 Tipo-B"
+        "id": 509312,
+        "names": {
+          "en": "True Charge Blade",
+          "tw": "真·充能劍",
+          "kr": "진·차지 블레이드",
+          "fr": "Lame à charge véritable",
+          "de": "Wahre geladene Klinge",
+          "es": "Hoja cargada de la verdad"
         },
-        framesList: [125, 10, 10, 10, 11, 12, 12, 12, 12, 12],
-        base: 545,
-        ignore: 50,
-        dualable: false
+        "base": 1200,
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20, 20
+        ],
+        "offset": 16
       },
+      {
+        "id": 509313,
+        "names": {
+          "en": "True Charge Spear",
+          "tw": "真·充能矛",
+          "kr": "진·차지 스피어",
+          "fr": "Lance à charge véritable",
+          "de": "Wahrer geladener Speer",
+          "es": "Lanza cargada de la verdad"
+        },
+        "base": 600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 509314,
+        "names": {
+          "en": "True Charge Volt",
+          "tw": "真·充能伏特",
+          "kr": "진·차지 볼트",
+          "fr": "Foudre à charge véritable",
+          "de": "Wahrer geladener Schock",
+          "es": "Relámpago cargado de la verdad"
+        },
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          40
+        ],
+        "offset": 8
+      },
+      {
+        "id": 509315,
+        "names": {
+          "en": "YoRHa Sword Dance",
+          "tw": "寄葉式·亂舞斬",
+          "kr": "요르하식·난무",
+          "fr": "Danse d'épée YoRHa",
+          "de": "YoRHa Klingentanz",
+          "es": "Danza de la espada de YoRHa"
+        },
+        "base": 1500,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 509316,
+        "names": {
+          "en": "YoRHa Slaughter Dance",
+          "tw": "寄葉式·殲滅亂舞斬",
+          "kr": "요르하식·섬멸 난무",
+          "fr": "Danse du massacre YoRHa",
+          "de": "YoRHa Massakertanz",
+          "es": "Danza de la hecatombe de YoRHa"
+        },
+        "base": 1100,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 310000107,
+        "names": {
+          "en": "Ho229 Type-B",
+          "es": "Ho229 Tipo-B"
+        },
+        "base": 1400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          125, 10, 10, 10, 11, 12, 12, 12, 12, 12
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000320,
+        "names": {
+          "en": "Ho229 Type-B + 1",
+          "es": "Ho229 Tipo-B + 1"
+        },
+        "base": 1400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          125, 10, 10, 10, 11, 12, 12, 12, 12, 12
+        ],
+        "offset": 8
+      }
     ]
   },
   {
@@ -899,7 +1033,7 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
+        id: 910288,
         names: {
           en: "Dash Attack",
           fr: "Attaque rapide",
@@ -912,10 +1046,10 @@ export const UNITS: any[] = [
         hitDamage: [10, 15, 15, 15, 15, 15, 15],
         castTime: 9,
         offset: 30,
-        base: 400,
+        base: 550,
       },
       {
-        id: 2,
+        id: 910289,
         names: {
           en: "Offensive Heal Combo",
           fr: "Combo offensivo-curatif",
@@ -925,13 +1059,15 @@ export const UNITS: any[] = [
           es: "Combo curativo-ofensivo"
         },
         framesList: [35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 9, 10, 10, 10],
+        "hitDamage": [
+          11.764705882352942, 11.764705882352942, 11.764705882352942, 11.764705882352942, 12.745098039215685, 18.627450980392158, 19.607843137254903, 0.2352941176470588, 0.2352941176470588, 0.2352941176470588, 0.2352941176470588, 0.2549019607843137, 0.3725490196078431, 0.392156862745098
+        ],
         castTime: 35,
         offset: 31,
         base: 510,
       },
       {
-        id: 3,
+        id: 910298,
         names: {
           en: "Heavy Attack",
           fr: "Attaque lourde",
@@ -944,10 +1080,10 @@ export const UNITS: any[] = [
         hitDamage: [12, 12, 8, 10, 10, 10, 10, 10, 9, 9],
         castTime: 40,
         offset: 16,
-        base: 330,
+        base: 480,
       },
       {
-        id: 4,
+        id: 910294,
         names: {
           en: "Finisher",
           fr: "Coup fatal",
@@ -959,7 +1095,79 @@ export const UNITS: any[] = [
         framesList: [42],
         castTime: 40,
         offset: 16,
-        base: 600
+        base: 750
+      },
+      {
+        "id": 509320,
+        "names": {
+          "en": "Avoid Heavy Attack",
+          "tw": "閃避重擊",
+          "kr": "헤비 어택·어보이드",
+          "fr": "Anti-attaque lourde",
+          "de": "Schweren Angriff vermeiden",
+          "es": "Antiataque pesado"
+        },
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 509324,
+        "names": {
+          "en": "Hateful Blade",
+          "tw": "憎惡之刃",
+          "kr": "증오의 칼날",
+          "fr": "Lame haineuse",
+          "de": "Hasserfüllte Klinge",
+          "es": "Hoja abominable"
+        },
+        "base": 1800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          53
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401001207,
+        "names": {
+          "en": "Berserk",
+          "tw": "狂暴",
+          "kr": "버서커",
+          "fr": "Folie meurtrière",
+          "de": "Berserker",
+          "es": "Ráksasa"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          170
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          910288,
+          910289,
+          910298,
+          910294,
+          509320
+        ]
       }
     ]
   },
@@ -5380,7 +5588,7 @@ export const UNITS: any[] = [
         base: 1060
       },
       {
-        "dataId": 226811,
+        "id": 226811,
         "names": {
           "en": "Flying Daggers",
           "tw": "匕首投擲",
@@ -5401,7 +5609,7 @@ export const UNITS: any[] = [
         "offset": 16
       },
       {
-        "dataId": 20390,
+        "id": 20390,
         "names": {
           "en": "Tornado",
           "tw": "龍捲風",
@@ -5431,7 +5639,7 @@ export const UNITS: any[] = [
         "offset": 16
       },
       {
-        "dataId": 20400,
+        "id": 20400,
         "names": {
           "en": "Quake",
           "tw": "地槌",
