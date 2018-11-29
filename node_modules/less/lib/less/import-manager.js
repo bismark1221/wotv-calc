@@ -1,13 +1,14 @@
-var contexts = require("./contexts"),
+var contexts = require('./contexts'),
     Parser = require('./parser/parser'),
     LessError = require('./less-error'),
     utils = require('./utils'),
-    PromiseConstructor = typeof Promise === 'undefined' ? require('promise') : Promise;
+    PromiseConstructor = typeof Promise === 'undefined' ? require('promise') : Promise,
+    logger = require('./logger');
 
 module.exports = function(environment) {
 
     // FileInfo = {
-    //  'relativeUrls' - option - whether to adjust URL's to be relative
+    //  'rewriteUrls' - option - whether to adjust URL's to be relative
     //  'filename' - full resolved filename of current file
     //  'rootpath' - path to append to normal URLs for this node
     //  'currentDirectory' - path to the current file, absolute
@@ -28,7 +29,7 @@ module.exports = function(environment) {
         this.queue = [];        // Files which haven't been imported yet
         this.files = {};        // Holds the imported parse trees.
     };
-    
+
     /**
      * Add an import to be imported
      * @param path - the raw path
@@ -49,6 +50,7 @@ module.exports = function(environment) {
             var importedEqualsRoot = fullPath === importManager.rootFilename;
             if (importOptions.optional && e) {
                 callback(null, {rules:[]}, false, null);
+                logger.info('The file ' + fullPath + ' was skipped because it was not found and the import was marked optional.');
             }
             else {
                 // Inline imports aren't cached here.
@@ -56,14 +58,14 @@ module.exports = function(environment) {
                 // same name as they used to do before this comment and the condition below have been added.
                 if (!importManager.files[fullPath] && !importOptions.inline) {
                     importManager.files[fullPath] = { root: root, options: importOptions };
-                } 
+                }
                 if (e && !importManager.error) { importManager.error = e; }
                 callback(e, root, importedEqualsRoot, fullPath);
             }
         };
 
         var newFileInfo = {
-            relativeUrls: this.context.relativeUrls,
+            rewriteUrls: this.context.rewriteUrls,
             entryPath: currentFileInfo.entryPath,
             rootpath: currentFileInfo.rootpath,
             rootFilename: currentFileInfo.rootFilename
@@ -72,7 +74,7 @@ module.exports = function(environment) {
         var fileManager = environment.getFileManager(path, currentFileInfo.currentDirectory, this.context, environment);
 
         if (!fileManager) {
-            fileParsedFunc({ message: "Could not find a file-manager for " + path });
+            fileParsedFunc({ message: 'Could not find a file-manager for ' + path });
             return;
         }
 
@@ -90,9 +92,9 @@ module.exports = function(environment) {
             // - If path of imported file is '../mixins.less' and rootpath is 'less/',
             //   then rootpath should become 'less/../'
             newFileInfo.currentDirectory = fileManager.getPath(resolvedFilename);
-            if (newFileInfo.relativeUrls) {
+            if (newFileInfo.rewriteUrls) {
                 newFileInfo.rootpath = fileManager.join(
-                    (importManager.context.rootpath || ""),
+                    (importManager.context.rootpath || ''),
                     fileManager.pathDiff(newFileInfo.currentDirectory, newFileInfo.entryPath));
 
                 if (!fileManager.isPathAbsolute(newFileInfo.rootpath) && fileManager.alwaysMakePathsAbsolute()) {
@@ -121,10 +123,10 @@ module.exports = function(environment) {
             } else if (importOptions.inline) {
                 fileParsedFunc(null, contents, resolvedFilename);
             } else {
-                
+
                 // import (multiple) parse trees apparently get altered and can't be cached.
                 // TODO: investigate why this is
-                if (importManager.files[resolvedFilename] 
+                if (importManager.files[resolvedFilename]
                     && !importManager.files[resolvedFilename].options.multiple
                     && !importOptions.multiple) {
 
@@ -140,14 +142,14 @@ module.exports = function(environment) {
         var promise, context = utils.clone(this.context);
 
         if (tryAppendExtension) {
-            context.ext = importOptions.isPlugin ? ".js" : ".less";
+            context.ext = importOptions.isPlugin ? '.js' : '.less';
         }
 
         if (importOptions.isPlugin) {
             promise = pluginLoader.loadPlugin(path, currentFileInfo.currentDirectory, context, environment, fileManager);
         }
         else {
-            promise = fileManager.loadFile(path, currentFileInfo.currentDirectory, context, environment, 
+            promise = fileManager.loadFile(path, currentFileInfo.currentDirectory, context, environment,
                 function(err, loadedFile) {
                     if (err) {
                         fileParsedFunc(err);

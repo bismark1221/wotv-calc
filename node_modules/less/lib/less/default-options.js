@@ -1,10 +1,13 @@
 // Export a new default each time
 module.exports = function() {
     return {
+        /* Inline Javascript - @plugin still allowed */
+        javascriptEnabled: false,
+
         /* Outputs a makefile import dependency list to stdout. */
         depends: false,
 
-        /* Compress using less built-in compression. 
+        /* (DEPRECATED) Compress using less built-in compression. 
          * This does an okay job but does not utilise all the tricks of 
          * dedicated css compression. */
         compress: false,
@@ -39,13 +42,18 @@ module.exports = function() {
          * that references an image, exactly the same URL will be output in the css. 
          * This option allows you to re-write URL's in imported files so that the 
          * URL is always relative to the base imported file */
-        relativeUrls: false,
+        rewriteUrls: false,
 
         /* Compatibility with IE8. Used for limiting data-uri length */
         ieCompat: false,  // true until 3.0
 
-        /* Without this option on, Less will try and process all math in your css */
-        strictMath: false,
+        /* How to process math 
+         *   0 always           - eagerly try to solve all operations
+         *   1 parens-division  - require parens for division "/"
+         *   2 parens | strict  - require parens for all operations
+         *   3 strict-legacy    - legacy strict behavior (super-strict)
+         */
+        math: 0,
 
         /* Without this option, less attempts to guess at the output unit when it does maths. */
         strictUnits: false,

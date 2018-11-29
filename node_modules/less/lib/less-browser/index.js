@@ -2,8 +2,8 @@
 // index.js
 // Should expose the additional browser functions on to the less object
 //
-var addDataAttr = require("./utils").addDataAttr,
-    browser = require("./browser");
+var addDataAttr = require('./utils').addDataAttr,
+    browser = require('./browser');
 
 module.exports = function(window, options) {
     var document = window.document;
@@ -11,15 +11,15 @@ module.exports = function(window, options) {
     
     less.options = options;
     var environment = less.environment,
-        FileManager = require("./file-manager")(options, less.logger),
+        FileManager = require('./file-manager')(options, less.logger),
         fileManager = new FileManager();
     environment.addFileManager(fileManager);
     less.FileManager = FileManager;
-    less.PluginLoader = require("./plugin-loader");
+    less.PluginLoader = require('./plugin-loader');
 
-    require("./log-listener")(less, options);
-    var errors = require("./error-reporting")(window, less, options);
-    var cache = less.cache = options.cache || require("./cache")(window, options, less.logger);
+    require('./log-listener')(less, options);
+    var errors = require('./error-reporting')(window, less, options);
+    var cache = less.cache = options.cache || require('./cache')(window, options, less.logger);
     require('./image-size')(less.environment);
 
     // Setup user functions - Deprecate?
@@ -30,7 +30,13 @@ module.exports = function(window, options) {
     var typePattern = /^text\/(x-)?less$/;
 
     function clone(obj) {
-        return JSON.parse(JSON.stringify(obj || {}));
+        var cloned = {};
+        for (var prop in obj) {
+            if (obj.hasOwnProperty(prop)) {
+                cloned[prop] = obj[prop];
+            }
+        }
+        return cloned;
     }
 
     // only really needed for phantom
@@ -59,7 +65,7 @@ module.exports = function(window, options) {
                 less.render(lessText, instanceOptions,
                         bind(function(style, e, result) {
                             if (e) {
-                                errors.add(e, "inline");
+                                errors.add(e, 'inline');
                             } else {
                                 style.type = 'text/css';
                                 if (style.styleSheet) {
@@ -93,7 +99,8 @@ module.exports = function(window, options) {
                 currentDirectory: fileManager.getPath(path),
                 filename: path,
                 rootFilename: path,
-                relativeUrls: instanceOptions.relativeUrls};
+                rewriteUrls: instanceOptions.rewriteUrls
+            };
 
             newFileInfo.entryPath = newFileInfo.currentDirectory;
             newFileInfo.rootpath = instanceOptions.rootpath || newFileInfo.currentDirectory;
@@ -222,7 +229,7 @@ module.exports = function(window, options) {
 
                 endTime = new Date();
                 totalMilliseconds = endTime - startTime;
-                less.logger.info("Less has finished and no sheets were loaded.");
+                less.logger.info('Less has finished and no sheets were loaded.');
                 resolve({
                     startTime: startTime,
                     endTime: endTime,
@@ -239,12 +246,12 @@ module.exports = function(window, options) {
                         return;
                     }
                     if (webInfo.local) {
-                        less.logger.info("Loading " + sheet.href + " from cache.");
+                        less.logger.info('Loading ' + sheet.href + ' from cache.');
                     } else {
-                        less.logger.info("Rendered " + sheet.href + " successfully.");
+                        less.logger.info('Rendered ' + sheet.href + ' successfully.');
                     }
                     browser.createCSS(window.document, css, sheet);
-                    less.logger.info("CSS for " + sheet.href + " generated in " + (new Date() - endTime) + 'ms');
+                    less.logger.info('CSS for ' + sheet.href + ' generated in ' + (new Date() - endTime) + 'ms');
 
                     // Count completed sheet
                     remainingSheets--;
@@ -252,7 +259,7 @@ module.exports = function(window, options) {
                     // Check if the last remaining sheet was processed and then call the promise
                     if (remainingSheets === 0) {
                         totalMilliseconds = new Date() - startTime;
-                        less.logger.info("Less has finished. CSS generated in " + totalMilliseconds + 'ms');
+                        less.logger.info('Less has finished. CSS generated in ' + totalMilliseconds + 'ms');
                         resolve({
                             startTime: startTime,
                             endTime: endTime,

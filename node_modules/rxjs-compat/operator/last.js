@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var operators_1 = require("rxjs/operators");
+/* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
  * It optionally takes a predicate function as a parameter, in which case, rather than emitting

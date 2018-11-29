@@ -1,4 +1,4 @@
-var Node = require("./node");
+var Node = require('./node');
 
 var URL = function (val, index, currentFileInfo, isEvald) {
     this.value = val;
@@ -7,33 +7,32 @@ var URL = function (val, index, currentFileInfo, isEvald) {
     this.isEvald = isEvald;
 };
 URL.prototype = new Node();
-URL.prototype.type = "Url";
+URL.prototype.type = 'Url';
 URL.prototype.accept = function (visitor) {
     this.value = visitor.visit(this.value);
 };
 URL.prototype.genCSS = function (context, output) {
-    output.add("url(");
+    output.add('url(');
     this.value.genCSS(context, output);
-    output.add(")");
+    output.add(')');
 };
 URL.prototype.eval = function (context) {
     var val = this.value.eval(context),
         rootpath;
 
     if (!this.isEvald) {
-        // Add the base path if the URL is relative
+        // Add the rootpath if the URL requires a rewrite
         rootpath = this.fileInfo() && this.fileInfo().rootpath;
-        if (rootpath &&
-            typeof val.value === "string" &&
-            context.isPathRelative(val.value)) {
-
+        if (typeof rootpath === 'string' &&
+            typeof val.value === 'string' &&
+            context.pathRequiresRewrite(val.value)) {
             if (!val.quote) {
-                rootpath = rootpath.replace(/[\(\)'"\s]/g, function(match) { return "\\" + match; });
+                rootpath = escapePath(rootpath);
             }
-            val.value = rootpath + val.value;
+            val.value = context.rewritePath(val.value, rootpath);
+        } else {
+            val.value = context.normalizePath(val.value);
         }
-
-        val.value = context.normalizePath(val.value);
 
         // Add url args if enabled
         if (context.urlArgs) {
@@ -51,4 +50,9 @@ URL.prototype.eval = function (context) {
 
     return new URL(val, this.getIndex(), this.fileInfo(), true);
 };
+
+function escapePath(path) {
+    return path.replace(/[\(\)'"\s]/g, function(match) { return '\\' + match; });
+}
+
 module.exports = URL;

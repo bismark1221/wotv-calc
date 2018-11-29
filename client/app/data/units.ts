@@ -7582,6 +7582,21 @@ export const UNITS: any[] = [
         offset: 60,
         base: 280
       },
+      {
+        id: 2,
+        names: {
+          en: "Slaughtering Blade + 2",
+          tw: "斬瞬刀 + 2",
+          kr: "참순도 + 2",
+          fr: "Lame sanguinaire + 2",
+          de: "Schlachtklinge + 2",
+          es: "Hoja sanguinaria + 2"
+        },
+        framesList: [0, 8, 8, 8, 8, 8, 8, 8],
+        hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
+        offset: 60,
+        base: 280
+      },
     ]
   },
   {
@@ -10687,6 +10702,21 @@ export const UNITS: any[] = [
         dualable: false,
         type: "magic",
         base: 38000,
+        framesList: [120]
+      },
+      {
+        id: 2,
+        names: {
+          en: "Tsunami (3)",
+          tw: "大海嘯 (3)",
+          kr: "대해일 (3)"
+        },
+        elements: [
+          "water"
+        ],
+        dualable: false,
+        type: "magic",
+        base: 40000,
         framesList: [120]
       }
     ]

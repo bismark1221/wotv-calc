@@ -19,7 +19,7 @@ module.exports = function (environment) {
                 this._sourceMapRootpath += '/';
             }
         } else {
-            this._sourceMapRootpath = "";
+            this._sourceMapRootpath = '';
         }
         this._outputSourceFiles = options.outputSourceFiles;
         this._sourceMapGeneratorConstructor = environment.getSourceMapGenerator();
@@ -42,7 +42,7 @@ module.exports = function (environment) {
     SourceMapOutput.prototype.normalizeFilename = function(filename) {
         filename = filename.replace(/\\/g, '/');
         filename = this.removeBasepath(filename);
-        return (this._sourceMapRootpath || "") + filename;
+        return (this._sourceMapRootpath || '') + filename;
     };
 
     SourceMapOutput.prototype.add = function(chunk, fileInfo, index, mapLines) {
@@ -58,7 +58,7 @@ module.exports = function (environment) {
             sourceColumns,
             i;
 
-        if (fileInfo) {
+        if (fileInfo && fileInfo.filename) {
             var inputSource = this._contentsMap[fileInfo.filename];
 
             // remove vars/banner added to the top of the file
@@ -70,14 +70,14 @@ module.exports = function (environment) {
                 inputSource = inputSource.slice(this._contentsIgnoredCharsMap[fileInfo.filename]);
             }
             inputSource = inputSource.substring(0, index);
-            sourceLines = inputSource.split("\n");
+            sourceLines = inputSource.split('\n');
             sourceColumns = sourceLines[sourceLines.length - 1];
         }
 
-        lines = chunk.split("\n");
+        lines = chunk.split('\n');
         columns = lines[lines.length - 1];
 
-        if (fileInfo) {
+        if (fileInfo && fileInfo.filename) {
             if (!mapLines) {
                 this._sourceMapGenerator.addMapping({ generated: { line: this._lineNumber + 1, column: this._column},
                     original: { line: sourceLines.length, column: sourceColumns.length},

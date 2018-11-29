@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var operators_1 = require("rxjs/operators");
+/* tslint:enable:max-line-length */
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.

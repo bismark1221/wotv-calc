@@ -1,11 +1,11 @@
-var Node = require("./node"),
-    Media = require("./media"),
-    URL = require("./url"),
-    Quoted = require("./quoted"),
-    Ruleset = require("./ruleset"),
-    Anonymous = require("./anonymous"),
-    utils = require("../utils"),
-    LessError = require("../less-error");
+var Node = require('./node'),
+    Media = require('./media'),
+    URL = require('./url'),
+    Quoted = require('./quoted'),
+    Ruleset = require('./ruleset'),
+    Anonymous = require('./anonymous'),
+    utils = require('../utils'),
+    LessError = require('../less-error');
 
 //
 // CSS @import node
@@ -50,7 +50,7 @@ var Import = function (path, features, options, index, currentFileInfo, visibili
 // ruleset.
 //
 Import.prototype = new Node();
-Import.prototype.type = "Import";
+Import.prototype.type = 'Import';
 Import.prototype.accept = function (visitor) {
     if (this.features) {
         this.features = visitor.visit(this.features);
@@ -62,10 +62,10 @@ Import.prototype.accept = function (visitor) {
 };
 Import.prototype.genCSS = function (context, output) {
     if (this.css && this.path._fileInfo.reference === undefined) {
-        output.add("@import ", this._fileInfo, this._index);
+        output.add('@import ', this._fileInfo, this._index);
         this.path.genCSS(context, output);
         if (this.features) {
-            output.add(" ");
+            output.add(' ');
             this.features.genCSS(context, output);
         }
         output.add(';');
@@ -97,17 +97,18 @@ Import.prototype.evalForImport = function (context) {
 };
 Import.prototype.evalPath = function (context) {
     var path = this.path.eval(context);
-    var rootpath = this._fileInfo && this._fileInfo.rootpath;
+    var fileInfo = this._fileInfo;
 
     if (!(path instanceof URL)) {
-        if (rootpath) {
-            var pathValue = path.value;
-            // Add the base path if the import is relative
-            if (pathValue && context.isPathRelative(pathValue)) {
-                path.value = rootpath + pathValue;
-            }
+        // Add the rootpath if the URL requires a rewrite
+        var pathValue = path.value;
+        if (fileInfo &&
+            pathValue &&
+            context.pathRequiresRewrite(pathValue)) {
+            path.value = context.rewritePath(pathValue, fileInfo.rootpath);
+        } else {
+            path.value = context.normalizePath(path.value);
         }
-        path.value = context.normalizePath(path.value);
     }
 
     return path;
@@ -136,7 +137,7 @@ Import.prototype.doEval = function (context) {
                 this.root.eval(context);
             }
             catch (e) {
-                e.message = "Plugin error during evaluation";
+                e.message = 'Plugin error during evaluation';
                 throw new LessError(e, this.root.imports, this.root.filename);
             }
         }
@@ -149,7 +150,7 @@ Import.prototype.doEval = function (context) {
     }
 
     if (this.skip) {
-        if (typeof this.skip === "function") {
+        if (typeof this.skip === 'function') {
             this.skip = this.skip();
         }
         if (this.skip) {
