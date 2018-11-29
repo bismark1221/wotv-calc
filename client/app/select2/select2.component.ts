@@ -40,7 +40,7 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
   @Input() disabled: boolean = false;
 
   // all additional options
-  @Input() options: Select2Options;
+  @Input() options: Select2.Options;
 
   // emitter when value is changed
   @Output() valueChanged = new EventEmitter();
@@ -153,7 +153,7 @@ export class Select2Component implements AfterViewInit, OnChanges, OnDestroy, On
       this.renderer.setElementProperty(this.selector.nativeElement, 'innerHTML', '');
     }
 
-    let options: Select2Options = {
+    let options: Select2.Options = {
       data: this.data,
       width: (this.width) ? this.width : 'resolve'
     };

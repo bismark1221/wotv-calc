@@ -292,6 +292,9 @@
           <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers(i)" *ngIf="canFindBestChainers(i)">
             {{ 'chain.button.findBest' | translate }}
           </button>
+          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestCombos(i)" *ngIf="canFindBestChainers(i)">
+            {{ 'chain.button.findBestByCombo' | translate }}
+          </button>
         </div>
 
         <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id === 'unselect' && viewBestChainers === i">
@@ -307,7 +310,12 @@
               <span *ngFor="let ability of chainer.abilities">
                 {{ ability.name }}<br />
               </span>
-              {{ chainer.modifier }}%
+              <span *ngIf="chainer.modifier">
+                {{ chainer.modifier }}%
+              </span>
+              <span *ngIf="chainer.combo">
+                max combo : {{ chainer.combo }}
+              </span>
             </div>
           </button>
         </div>

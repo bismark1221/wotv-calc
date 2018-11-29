@@ -83,7 +83,7 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
 
   observableUnits: Array<Select2OptionData> = [];
 
-  select2Options: Select2Options = {
+  select2Options: Select2.Options = {
     theme: 'bootstrap'
   }
 
@@ -886,6 +886,52 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       if (a.modifier > b.modifier) {
         return -1
       } else if (a.modifier < b.modifier) {
+        return 1;
+      }
+      return 0;
+    });
+
+    for (let i = 0; i < 5; i++) {
+      if (chainers[i]) {
+        this.bestChainers.push(chainers[i]);
+      }
+    }
+
+    this.angulartics.eventTrack.next({ action: 'findBestChainers', properties: { category: 'chain' }});
+  }
+
+  findBestCombos(position: number) {
+    let chainers = [];
+    let allUnits = this.units.concat(this.createdUnits);
+
+    this.viewBestChainers = position;
+    this.bestChainers = [];
+    this.findBestService.units = JSON.parse(JSON.stringify(this.chainService.units));
+
+    allUnits.forEach(unit => {
+      this.findBestService.units[position] = JSON.parse(JSON.stringify(unit));
+
+      unit.abilities.forEach(ability => {
+        if (ability.type === 'chain') {
+          this.findBestService.units[position].selectedAbilities = [ability];
+          this.findBestService.units[position].selectedIds = [ability.id];
+          this.findBestService.units[position] = this.updateMultipleSkill(this.findBestService.units[position]);
+
+          let result = this.findBestService.findBestFrames();
+          chainers.push({
+            unit: unit,
+            abilities: this.findBestService.units[position].selectedAbilities,
+            frames: result.combo.frames,
+            combo: result.combo.max
+          });
+        }
+      });
+    });
+
+    chainers.sort((a: any, b: any) => {
+      if (a.combo > b.combo) {
+        return -1
+      } else if (a.combo < b.combo) {
         return 1;
       }
       return 0;
