@@ -102,11 +102,6 @@ export class JsonService {
       this.upgrades[upgradeId].units.forEach(unitId => {
         let unitIndex = this.getUnitIdFromDataId(unitId);
         if (unitIndex) {
-          if (unitId === 210000105) {
-            console.log("@@@@@@@@@@@@@@")
-            console.log(this.skills[this.upgrades[upgradeId].skill_id_new])
-            console.log(this.getUpgradeLevel(unitId, upgradeId))
-          }
           this.addSkill(unitIndex, this.skills[this.upgrades[upgradeId].skill_id_new], this.upgrades[upgradeId].skill_id_new, this.getUpgradeLevel(unitId, upgradeId));
         }
       });
@@ -187,12 +182,6 @@ export class JsonService {
     }
 
     let id = this.ffbeChainUnits[unitId].abilities.length;
-
-    if (ability.name === "Quick Hit") {
-      console.log("###### -- " + dataId)
-      console.log(ability)
-      console.log(level)
-    }
 
     this.ffbeChainUnits[unitId].abilities[id] = {
       dataId: Number(dataId),

@@ -1925,6 +1925,31 @@ export const UNITS: any[] = [
         "offset": 8
       },
       {
+        "id": 911665,
+        "names": {
+          "en": "Aurora Storm",
+          "tw": "極光風暴",
+          "kr": "극광의 폭풍",
+          "fr": "Tempête de l'Aurore",
+          "de": "Aurora-Sturm",
+          "es": "Tormenta del alba"
+        },
+        "damage": "hybrid",
+        "base": 1500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice",
+          "light"
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 16
+      },
+      {
         "id": 302001407,
         "names": {
           "en": "Ice Prison",
@@ -22292,6 +22317,707 @@ export const UNITS: any[] = [
           28, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
         ],
         "offset": 8
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "names": {
+      "en": "Aurora Fryevia",
+      "tw": "極光弗雷比亞",
+      "kr": "오로라 프레이비아",
+      "fr": "Fryevia de l'Aurore"
+    },
+    "abilities": [
+      {
+        "id": 911642,
+        "names": {
+          "en": "Flash - Luster",
+          "tw": "閃光・光澤",
+          "kr": "섬광·광채",
+          "fr": "Flash - Éclat",
+          "de": "Blitz - Glanz",
+          "es": "Destello - Resplandor"
+        },
+        "damage": "hybrid",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 20,
+        "elements": [
+          "light"
+        ],
+        "framesList": [
+          34
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911643,
+        "names": {
+          "en": "Purge",
+          "tw": "釋放",
+          "kr": "숙청",
+          "de": "Reinigung",
+          "es": "Purga"
+        },
+        "damage": "hybrid",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "framesList": [
+          12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911645,
+        "names": {
+          "en": "Flash - Brilliance",
+          "tw": "閃光・輝煌",
+          "kr": "섬광·광휘",
+          "fr": "Flash - Brillance",
+          "de": "Blitz - Brillanz",
+          "es": "Destello - Fulgor"
+        },
+        "damage": "hybrid",
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911651,
+        "names": {
+          "en": "Flash - Dazzle",
+          "tw": "閃光・奪目",
+          "kr": "섬광·황홀",
+          "fr": "Flash - Reflet",
+          "de": "Blitz - Blenden",
+          "es": "Destello - Obnubilación"
+        },
+        "damage": "hybrid",
+        "base": 1100,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911654,
+        "names": {
+          "en": "Flash - Endless Punishment",
+          "tw": "閃光・無盡懲罰",
+          "kr": "섬광·영원한 형벌",
+          "fr": "Flash - Punition éternelle",
+          "de": "Blitz - Endlose Bestrafung",
+          "es": "Destello - Castigo infinito"
+        },
+        "damage": "hybrid",
+        "base": 750,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911657,
+        "names": {
+          "en": "Flash - Furious Radiance",
+          "tw": "閃光・強烈光輝",
+          "kr": "섬광·맹렬한 빛",
+          "fr": "Flash - Rayonnement furieux",
+          "de": "Blitz - Zorniger Glanz",
+          "es": "Destello - Resplandor colérico"
+        },
+        "damage": "hybrid",
+        "base": 1400,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911665,
+        "names": {
+          "en": "Aurora Storm",
+          "tw": "極光風暴",
+          "kr": "극광의 폭풍",
+          "fr": "Tempête de l'Aurore",
+          "de": "Aurora-Sturm",
+          "es": "Tormenta del alba"
+        },
+        "damage": "hybrid",
+        "base": 1500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice",
+          "light"
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911660,
+        "names": {
+          "en": "First Light",
+          "tw": "初始之光",
+          "kr": "여명",
+          "fr": "Premières lueurs",
+          "de": "Erstes Licht",
+          "es": "Primeros albores"
+        },
+        "damage": "hybrid",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          130
+        ],
+        "offset": 8
+      },
+      {
+        "id": 401006407,
+        "names": {
+          "en": "Judge and Jury",
+          "tw": "法官與陪審員",
+          "kr": "판사와 배심원",
+          "fr": "Seule juge",
+          "de": "Alleiniger Richter",
+          "es": "Jueza y jurado"
+        },
+        "damage": "hybrid",
+        "base": 2720,
+        "hitDamage": [
+          2, 2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "dualable": false,
+        "framesList": [
+          60, 10, 48, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          911642,
+          911645,
+          911651,
+          911654,
+          911657,
+          911665
+        ]
+      }
+    ],
+    dual: false
+  },
+  {
+    "id": 189,
+    "names": {
+      "en": "Sieghard",
+      "tw": "吉克哈特",
+      "kr": "지크하르트"
+    },
+    "abilities": [
+      {
+        "id": 228403,
+        "names": {
+          "en": "Mind Charm",
+          "tw": "D·精神魅惑",
+          "kr": "D·정신적 매혹",
+          "fr": "Charme de l'esprit",
+          "de": "Geistiger Charme",
+          "es": "Embrujo mental"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          92
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228417,
+        "names": {
+          "en": "Dangerous Rose",
+          "tw": "D·危險玫瑰",
+          "kr": "D·위험한 장미",
+          "fr": "Rose dangereuse",
+          "de": "Gefährliche Rose",
+          "es": "Rosa peligrosa"
+        },
+        "base": 280,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20340,
+        "names": {
+          "en": "Stonja",
+          "tw": "強落石",
+          "kr": "스톤쟈",
+          "fr": "Terre max",
+          "de": "Terraka",
+          "es": "Piedra+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "framesList": [
+          170
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228402,
+        "names": {
+          "en": "Block Charm",
+          "tw": "D·防禦魅惑",
+          "kr": "D·방어적 매혹",
+          "fr": "Charme du physique",
+          "de": "Entwaffnender Charme",
+          "es": "Bloquear embrujo"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          92
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228404,
+        "names": {
+          "en": "Full Break Charm",
+          "tw": "D·身心潰擊魅惑",
+          "kr": "D·풀 브레이크적 매혹",
+          "fr": "Charme dévastateur",
+          "de": "Vernichtender Charme",
+          "es": "Embrujo rompetodo"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          92
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508574,
+        "names": {
+          "en": "Earthbound",
+          "tw": "地縛",
+          "kr": "지상의 속박",
+          "fr": "Terre-à-terre",
+          "de": "Erdgebunden",
+          "es": "Vínculo terrenal"
+        },
+        "base": 200,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 8
+      },
+      {
+        "id": 100017907,
+        "names": {
+          "en": "Beauteous Sanctuary",
+          "tw": "美若聖域",
+          "kr": "미의 성역",
+          "fr": "Sanctuaire de la beauté suprême",
+          "de": "Hinreißendes Heiligtum",
+          "es": "Santuario de la belleza"
+        },
+        "base": 1690,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "dualable": false,
+        "framesList": [
+          4, 15, 15
+        ],
+        "offset": 8
+      }
+    ],
+    dual: false
+  },
+  {
+    "id": 190,
+    "names": {
+      "en": "Dietlinde",
+      "tw": "底特瑞奇",
+      "kr": "디트린데"
+    },
+    "abilities": [
+      {
+        "id": 228422,
+        "names": {
+          "en": "One-Shot Kill",
+          "tw": "一槍斃命",
+          "kr": "원 샷 킬",
+          "fr": "Mort subite",
+          "de": "Eine Kugel, ein Abschuss",
+          "es": "Disparo mortal"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          85
+        ],
+        "offset": 8
+      },
+      {
+        "id": 228424,
+        "names": {
+          "en": "Arm Snipe",
+          "tw": "狙臂",
+          "kr": "무장 저격",
+          "fr": "Tir au bras",
+          "de": "Armschuss",
+          "es": "Disparo al brazo"
+        },
+        "base": 225,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "framesList": [
+          65
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228425,
+        "names": {
+          "en": "Head Snipe",
+          "tw": "狙頭",
+          "kr": "머리 저격",
+          "fr": "Tir à la tête",
+          "de": "Kopfschuss",
+          "es": "Disparo a la cabeza"
+        },
+        "base": 225,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "framesList": [
+          85
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228421,
+        "names": {
+          "en": "Machine Gun Parasol",
+          "tw": "陽傘機槍",
+          "kr": "머신건 파라솔",
+          "fr": "Parapluie mitrailleur",
+          "de": "Maschinengewehrschirm",
+          "es": "Parametralletas"
+        },
+        "base": 450,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228420,
+        "names": {
+          "en": "Smartshot",
+          "tw": "迅捷射擊",
+          "kr": "스마트 샷",
+          "fr": "Tir de précision",
+          "de": "Gripsschuss",
+          "es": "Tiro inteligente"
+        },
+        "base": 225,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          100
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508581,
+        "names": {
+          "en": "My Fair Lady Gunner",
+          "tw": "女槍手",
+          "kr": "총잡이 숙녀",
+          "fr": "La belle et le flingue",
+          "de": "Holde Schützin<br>",
+          "es": "Mi querida pistolera"
+        },
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100018006,
+        "names": {
+          "en": "Lady's Bullet",
+          "tw": "貴婦人的子彈",
+          "kr": "미스트리스의 총탄",
+          "fr": "Balle de dame",
+          "de": "Damenhafte Kugel",
+          "es": "Bala de señora"
+        },
+        "base": 740,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 60
+        ],
+        "dualable": false,
+        "framesList": [
+          66, 10, 10, 10, 10, 10, 10, 10, 65
+        ],
+        "offset": 8
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "names": {
+      "en": "Theobald",
+      "tw": "迪奧巴特",
+      "kr": "테오볼트"
+    },
+    "abilities": [
+      {
+        "id": 228431,
+        "names": {
+          "en": "Aqua Philosophy",
+          "tw": "水之哲理",
+          "kr": "물의 철학",
+          "fr": "Philosophie aquatique",
+          "de": "Aquatische Philosophie",
+          "es": "Filosofía acuática"
+        },
+        "damage": "magic",
+        "base": 280,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          40, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20320,
+        "names": {
+          "en": "Waterja",
+          "tw": "強流水",
+          "kr": "워터쟈",
+          "fr": "Eau max",
+          "de": "Aquaka",
+          "es": "Aqua+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          190
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20380,
+        "names": {
+          "en": "Flood",
+          "tw": "洪水",
+          "kr": "플러드",
+          "fr": "Inondation",
+          "de": "Flut",
+          "es": "Inundación"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228430,
+        "names": {
+          "en": "Aqua Authority",
+          "tw": "水之權能",
+          "kr": "물의 권세",
+          "fr": "Autorité aquatique",
+          "de": "Aquatische Autorität",
+          "es": "Autoridad acuática"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      }
+    ],
+    "multipleBlack": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          228430,
+          228431
+        ]
       }
     ]
   }
