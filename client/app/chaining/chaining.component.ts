@@ -134,7 +134,9 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
           density: 6
         }
       };
+      this.onChangeUnit(i, 'unselect');
     }
+
     this.getUnits();
     this.getElements();
 
