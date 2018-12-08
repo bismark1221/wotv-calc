@@ -12,6 +12,7 @@ export class MacroComponent implements OnInit {
   width: number = 1280;
   height: number = 720;
   memu: string = '';
+  memu6: string = '';
   nox: string = '';
 
   constructor(private chainService: ChainService) { }
@@ -37,16 +38,18 @@ export class MacroComponent implements OnInit {
 
   generateMacro() {
     this.memu = '';
+    this.memu6 = '';
     this.nox = '';
 
     let firstHits = this.chainService.calculateFramesDiffForFirstHits();
+
     firstHits.forEach((hit, index) => {
       let frame = firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap;
-      this.addMacroHit(frame * 1 / 60 * 1000, hit.position);
+      this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
     });
   }
 
-  private addMacroHit(frame: number, position: number) {
+  private addMacroHit(frame: number, position: number, index: number) {
     let memuMilliseconds: number = 1000;
     let noxMilliseconds: number = 1;
     let memuSeparator: number = 100;
@@ -139,6 +142,9 @@ export class MacroComponent implements OnInit {
 
     this.memu += String(Math.round(memuMilliseconds + memuMilliseconds * frame)) + '--VINPUT--MULTI:1:0:' + width + ':' + height + '\n';
     this.memu += String(Math.round(memuMilliseconds + memuMilliseconds * frame + memuSeparator)) + '--VINPUT--MULTI:1:1:0:' + String(this.height) + '\n';
+
+    this.memu6 += String(Math.round(memuMilliseconds + memuMilliseconds * frame)) + '--VINPUT--MULTI2:1:0:0:' + width + ':' + height + ':0\n';
+    this.memu6 += String(Math.round(memuMilliseconds + memuMilliseconds * frame + memuSeparator)) + '--VINPUT--MULTI2:1:0:-1:-1:-2:2\n';
 
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:1:0:' + width + ':' + height + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame)) + '\n';
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
