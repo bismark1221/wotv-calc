@@ -14,7 +14,6 @@ export class MacroComponent implements OnInit {
   memu: string = '';
   memu6: string = '';
   nox: string = '';
-  lastFrame: number = 0;
 
   constructor(private chainService: ChainService) { }
 
@@ -38,24 +37,15 @@ export class MacroComponent implements OnInit {
   }
 
   generateMacro() {
-    this.lastFrame = 0;
     this.memu = '';
-    this.memu6 = 'size ' + this.width + ' ' + this.height + '\n';
-    this.memu6 += 'delay 1000\n';
+    this.memu6 = '';
     this.nox = '';
 
     let firstHits = this.chainService.calculateFramesDiffForFirstHits();
 
-    console.log("START MACRO")
-    console.log(firstHits)
-
     firstHits.forEach((hit, index) => {
-      console.log("FOOO1 : " + this.lastFrame);
       let frame = firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap;
       this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
-      this.lastFrame = frame * 1 / 60 * 1000;
-      console.log("FOOO2 : " + this.lastFrame);
-      console.log("FOOO3 : " + frame * 1 / 60 * 1000);
     });
   }
 
@@ -153,11 +143,8 @@ export class MacroComponent implements OnInit {
     this.memu += String(Math.round(memuMilliseconds + memuMilliseconds * frame)) + '--VINPUT--MULTI:1:0:' + width + ':' + height + '\n';
     this.memu += String(Math.round(memuMilliseconds + memuMilliseconds * frame + memuSeparator)) + '--VINPUT--MULTI:1:1:0:' + String(this.height) + '\n';
 
-    console.log(this.lastFrame)
-    if (index !== 0) {
-      this.memu6 += 'delay ' + (memuMilliseconds + frame - this.lastFrame) + '\n';
-    }
-    this.memu6 += 'touch ' + width + ' ' + height + ' 1' + '\n';
+    this.memu6 += String(Math.round(memuMilliseconds + memuMilliseconds * frame)) + '--VINPUT--MULTI2:1:0:0:' + width + ':' + height + ':0\n';
+    this.memu6 += String(Math.round(memuMilliseconds + memuMilliseconds * frame + memuSeparator)) + '--VINPUT--MULTI2:1:0:-1:-1:-2:2\n';
 
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:1:0:' + width + ':' + height + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame)) + '\n';
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
