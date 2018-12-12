@@ -352,12 +352,12 @@
           {
             "id": 227610,
             "names": {
-              "en": "Tempest Mageblade",
+              "en": "Tempest Spellblade",
               "tw": "風雷魔劍舞",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "풍뢰의 마검무",
+              "fr": "Magilame des tempêtes",
+              "de": "Sturmschwertmagie",
+              "es": "Esgrimago tempestuoso"
             },
             "offset": 16,
             "castTime": 40
@@ -463,6 +463,30 @@
               "fr": "Rafale de la lune sanglante",
               "de": "Trommelfeuer des Blutmondes",
               "es": "Ráfaga de la luna de sangre"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006405,
+        "names": {
+          "en": "Aurora Fryevia",
+          "tw": "極光弗雷比亞",
+          "kr": "오로라 프레이비아",
+          "fr": "Fryevia de l'Aurore"
+        },
+        "abilities": [
+          {
+            "id": 911654,
+            "names": {
+              "en": "Flash - Endless Punishment",
+              "tw": "閃光・無盡懲罰",
+              "kr": "섬광·영원한 형벌",
+              "fr": "Flash - Punition éternelle",
+              "de": "Blitz - Endlose Bestrafung",
+              "es": "Destello - Castigo infinito"
             },
             "offset": 16,
             "castTime": 40
@@ -1013,6 +1037,53 @@
             "offset": 8
           }
         ]
+      },
+      {
+        "id": 302001405,
+        "names": {
+          "en": "Fryevia",
+          "tw": "弗雷比亞",
+          "kr": "프레이비아"
+        },
+        "abilities": [
+          {
+            "id": 911665,
+            "names": {
+              "en": "Aurora Storm",
+              "tw": "極光風暴",
+              "kr": "극광의 폭풍",
+              "fr": "Tempête de l'Aurore",
+              "de": "Aurora-Sturm",
+              "es": "Tormenta del alba"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006405,
+        "names": {
+          "en": "Aurora Fryevia",
+          "tw": "極光弗雷比亞",
+          "kr": "오로라 프레이비아",
+          "fr": "Fryevia de l'Aurore"
+        },
+        "abilities": [
+          {
+            "id": 911665,
+            "names": {
+              "en": "Aurora Storm",
+              "tw": "極光風暴",
+              "kr": "극광의 폭풍",
+              "fr": "Tempête de l'Aurore",
+              "de": "Aurora-Sturm",
+              "es": "Tormenta del alba"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -1156,7 +1227,7 @@
               "en": "Light Eclipse",
               "tw": "蝕光",
               "kr": "빛의 잠식",
-              "fr": "null",
+              "fr": "Éclipse de lumière",
               "de": "null",
               "es": "null"
             },
@@ -1169,7 +1240,7 @@
               "en": "Descent into Darkness",
               "tw": "墮暗",
               "kr": "암흑 타락",
-              "fr": "null",
+              "fr": "Descente aux ténèbres",
               "de": "null",
               "es": "null"
             },
@@ -1532,12 +1603,12 @@
           {
             "id": 508073,
             "names": {
-              "en": "Rapidus",
+              "en": "Rapidus SMG",
               "tw": "小號",
               "kr": "투바",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "fr": "Mitraillette",
+              "de": "Maschinengewehr",
+              "es": "Dyne"
             },
             "offset": 16,
             "castTime": 40
@@ -1783,6 +1854,19 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 508351,
+            "names": {
+              "en": "Crimson Frost Edge",
+              "tw": "null",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -1841,7 +1925,7 @@
               "en": "Immanence",
               "tw": "震天動地",
               "kr": "진천동지",
-              "fr": "null",
+              "fr": "Désastre",
               "de": "null",
               "es": "null"
             },
@@ -2111,6 +2195,30 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401006405,
+        "names": {
+          "en": "Aurora Fryevia",
+          "tw": "極光弗雷比亞",
+          "kr": "오로라 프레이비아",
+          "fr": "Fryevia de l'Aurore"
+        },
+        "abilities": [
+          {
+            "id": 911645,
+            "names": {
+              "en": "Flash - Brilliance",
+              "tw": "閃光・輝煌",
+              "kr": "섬광·광휘",
+              "fr": "Flash - Brillance",
+              "de": "Blitz - Brillanz",
+              "es": "Destello - Fulgor"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -2186,6 +2294,19 @@
               "fr": "Lames azur carmin",
               "de": "Purpurazurklingen",
               "es": "Hojas azul enrojecido"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 508350,
+            "names": {
+              "en": "Blue Flame Edge",
+              "tw": "null",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
             },
             "offset": 16,
             "castTime": 40
@@ -2919,6 +3040,80 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401006405,
+        "names": {
+          "en": "Aurora Fryevia",
+          "tw": "極光弗雷比亞",
+          "kr": "오로라 프레이비아",
+          "fr": "Fryevia de l'Aurore"
+        },
+        "abilities": [
+          {
+            "id": 911657,
+            "names": {
+              "en": "Flash - Furious Radiance",
+              "tw": "閃光・強烈光輝",
+              "kr": "섬광·맹렬한 빛",
+              "fr": "Flash - Rayonnement furieux",
+              "de": "Blitz - Zorniger Glanz",
+              "es": "Destello - Resplandor colérico"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "2-7-7-7-7-7-7-7-7-7",
+    "units": [
+      {
+        "id": 100009105,
+        "names": {
+          "en": "Loren",
+          "tw": "洛倫",
+          "kr": "로렌"
+        },
+        "abilities": [
+          {
+            "id": 501960,
+            "names": {
+              "en": "Swiftwind Blade + 1",
+              "tw": "疾風之劍 + 1",
+              "kr": "질풍의 검 + 1",
+              "fr": "Lame oscillante + 1",
+              "de": "Sturmwindklinge + 1",
+              "es": "Cuchilla veloz + 1"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 312000305,
+        "names": {
+          "en": "Kevin",
+          "tw": "凱文",
+          "kr": "케빈",
+          "fr": "Kévin"
+        },
+        "abilities": [
+          {
+            "id": 228262,
+            "names": {
+              "en": "Black Tortoise Sweep",
+              "tw": "玄武百裂腳",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 8
+          }
+        ]
       }
     ]
   },
@@ -3172,10 +3367,10 @@
             "names": {
               "en": "Machine Gun Parasol",
               "tw": "陽傘機槍",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "머신건 파라솔",
+              "fr": "Parapluie mitrailleur",
+              "de": "Maschinengewehrschirm",
+              "es": "Parametralletas"
             },
             "offset": 16,
             "castTime": 40
@@ -3184,11 +3379,11 @@
             "id": 508581,
             "names": {
               "en": "My Fair Lady Gunner",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "女槍手",
+              "kr": "총잡이 숙녀",
+              "fr": "La belle et le flingue",
+              "de": "Holde Schützin<br>",
+              "es": "Mi querida pistolera"
             },
             "offset": 16,
             "castTime": 40
@@ -3365,6 +3560,30 @@
               "es": "null"
             },
             "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 401006405,
+        "names": {
+          "en": "Aurora Fryevia",
+          "tw": "極光弗雷比亞",
+          "kr": "오로라 프레이비아",
+          "fr": "Fryevia de l'Aurore"
+        },
+        "abilities": [
+          {
+            "id": 911651,
+            "names": {
+              "en": "Flash - Dazzle",
+              "tw": "閃光・奪目",
+              "kr": "섬광·황홀",
+              "fr": "Flash - Reflet",
+              "de": "Blitz - Blenden",
+              "es": "Destello - Obnubilación"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -3965,11 +4184,11 @@
             "id": 508574,
             "names": {
               "en": "Earthbound",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "地縛",
+              "kr": "지상의 속박",
+              "fr": "Terre-à-terre",
+              "de": "Erdgebunden",
+              "es": "Vínculo terrenal"
             },
             "offset": 8
           }
@@ -4285,10 +4504,10 @@
             "names": {
               "en": "Dangerous Rose",
               "tw": "D·危險玫瑰",
-              "kr": "null",
+              "kr": "D·위험한 장미",
               "fr": "Rose dangereuse",
               "de": "Gefährliche Rose",
-              "es": "null"
+              "es": "Rosa peligrosa"
             },
             "offset": 16,
             "castTime": 40
@@ -5576,10 +5795,10 @@
             "names": {
               "en": "Aqua Philosophy",
               "tw": "水之哲理",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "물의 철학",
+              "fr": "Philosophie aquatique",
+              "de": "Aquatische Philosophie",
+              "es": "Filosofía acuática"
             },
             "offset": 16,
             "castTime": 40
@@ -5592,9 +5811,7 @@
           "en": "Cannon",
           "tw": "坎農",
           "kr": "카논",
-          "fr": null,
-          "de": "Kanon",
-          "es": null
+          "de": "Kanon"
         },
         "abilities": [
           {
@@ -5602,10 +5819,10 @@
             "names": {
               "en": "Broom Arts - Off you go.",
               "tw": "掃技·請抬腳",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "청소의 기예·돌아가 주십시오",
+              "fr": "Art du balai - Ouste",
+              "de": "Besenkunst - Und fort mit dir.",
+              "es": "Arte de limpieza - Allá vas"
             },
             "offset": 16,
             "castTime": 40
@@ -5615,10 +5832,10 @@
             "names": {
               "en": "Scarlet Stitch",
               "tw": "猩紅刺繡",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "진홍의 바느질",
+              "fr": "Point écarlate",
+              "de": "Scharlachstich",
+              "es": "Puntada escarlata"
             },
             "offset": 16,
             "castTime": 40
@@ -7002,6 +7219,30 @@
         ]
       },
       {
+        "id": 401006305,
+        "names": {
+          "en": "Popstar Katy",
+          "tw": "流行音樂巨星凱蒂",
+          "kr": "팝스타 케이티",
+          "es": "Estrella del pop Katy"
+        },
+        "abilities": [
+          {
+            "id": 911692,
+            "names": {
+              "en": "Command - Showtime",
+              "tw": "指令 - 開演",
+              "kr": "커맨드·쇼타임",
+              "fr": "Ordre - Lever de rideau",
+              "de": "Befehl - Showtime",
+              "es": "Orden - Comienza el espectáculo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 504217610,
         "names": {
           "en": "Frozen Hurricane",
@@ -7120,10 +7361,10 @@
             "names": {
               "en": "Aqua Authority",
               "tw": "水之權能",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "물의 권세",
+              "fr": "Autorité aquatique",
+              "de": "Aquatische Autorität",
+              "es": "Autoridad acuática"
             },
             "offset": 16,
             "castTime": 40
@@ -7995,6 +8236,30 @@
               "fr": "Présage - Sirocco",
               "de": "Weissagung - Sandsturm",
               "es": "Predicción - Tormenta de arena"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006305,
+        "names": {
+          "en": "Popstar Katy",
+          "tw": "流行音樂巨星凱蒂",
+          "kr": "팝스타 케이티",
+          "es": "Estrella del pop Katy"
+        },
+        "abilities": [
+          {
+            "id": 911679,
+            "names": {
+              "en": "Command - Bass Blast",
+              "tw": "指令 - 重低音衝擊",
+              "kr": "커맨드·베이스 소리",
+              "fr": "Ordre - Explosion des basses",
+              "de": "Befehl - Bassexplosion",
+              "es": "Orden - Explosión de bajo"
             },
             "offset": 16,
             "castTime": 40

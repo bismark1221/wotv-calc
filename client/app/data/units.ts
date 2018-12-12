@@ -7924,21 +7924,6 @@ export const UNITS: any[] = [
         ]
       },
       {
-        id: 2,
-        names: {
-          en: "Vaskylade",
-          tw: "龍騎槍蛇神突擊",
-          kr: "용의 창 바스킬레이드"
-        },
-        framesList: [74, 61, 49, 10, 10],
-        base: 520,
-        ignore: 50,
-        elements: [
-          "ice"
-        ],
-        dualable: false
-      },
-      {
         id: 216480,
         names: {
           en: "Dragon Crash",
@@ -7958,6 +7943,122 @@ export const UNITS: any[] = [
         framesList: [65],
         offset: 16,
         base: 180
+      },
+      {
+        "id": 227540,
+        "names": {
+          "en": "Heavenfall Spear - Skyrule",
+          "tw": "飛天滅龍槍·操天",
+          "kr": "비천멸룡창·조천",
+          "fr": "Lance tombeciel - Loi des cieux",
+          "de": "Himmelsfallspeer - Luftherrscher",
+          "es": "Lanza derrumbacielos - Ley celestial"
+        },
+        "base": 470,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          0
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227541,
+        "names": {
+          "en": "Gelid Spear",
+          "tw": "光熱之槍",
+          "kr": "혹한의 창",
+          "fr": "Lance de givre",
+          "de": "Eisiger Speer",
+          "es": "Lanza gélida"
+        },
+        "base": 640,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 26,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 70
+          }
+        ],
+        "framesList": [
+          28, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 507980,
+        "names": {
+          "en": "Draconic Sealing Spears",
+          "tw": "封龍滅槍陣",
+          "kr": "봉룡멸창진",
+          "fr": "Lances du sceau draconien",
+          "de": "Drakonische Siegelspeere",
+          "es": "Lanzas de sellado dragontino"
+        },
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          172
+        ],
+        "offset": 16
+      },
+      {
+        "id": 507981,
+        "names": {
+          "en": "Heavenfall Spear - Icebreaker",
+          "tw": "飛天滅龍槍·破冰",
+          "kr": "비천멸룡창·빙괴",
+          "fr": "Lance tombeciel - Briseglace",
+          "de": "Himmelsfallspeer - Eisbrecher",
+          "es": "Lanza derrumbacielos - Rompehielo"
+        },
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          0
+        ],
+        "offset": 8
+      },
+      {
+        "id": 100010807,
+        "names": {
+          "en": "Vaskylade",
+          "tw": "龍騎槍蛇神突擊",
+          "kr": "용의 창 바스킬레이드"
+        },
+        "base": 900,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          74, 61, 49, 10, 10
+        ],
+        "offset": 8
       }
     ]
   },
@@ -10178,31 +10279,135 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
-        id: 215000706,
-        names: {
-          en: "Trigger-Happy",
-          tw: "連發射擊",
-          kr: "트리거 해피",
-          fr: "Gâchette facile",
-          de: "Nervöser Finger",
-          es: "Metrallazo"
+        "id": 508070,
+        "names": {
+          "en": "Overkill",
+          "tw": "突擊必殺",
+          "kr": "레이드 킬",
+          "fr": "Coup de grâce",
+          "de": "Verschrotten",
+          "es": "Golpe de gracia"
         },
-        hitDamage: [
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 508073,
+        "names": {
+          "en": "Rapidus SMG",
+          "tw": "小號",
+          "kr": "투바",
+          "fr": "Mitraillette",
+          "de": "Maschinengewehr",
+          "es": "Dyne"
+        },
+        "base": 840,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508074,
+        "names": {
+          "en": "Sagitta rifle",
+          "tw": "穿心",
+          "kr": "렉타 사지타",
+          "fr": "Fusil à lunette",
+          "de": "Scharfschützengewehr",
+          "es": "Lekta Sagitta"
+        },
+        "base": 945,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 20,
+        "framesList": [
+          72
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508075,
+        "names": {
+          "en": "Alea bazooka",
+          "tw": "投機者",
+          "kr": "알레아",
+          "fr": "Lance-roquette",
+          "de": "Raketenwerfer (FFXV)",
+          "es": "Alea"
+        },
+        "base": 785,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          90
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508079,
+        "names": {
+          "en": "Trigger-Happy",
+          "tw": "大獎狩獵",
+          "kr": "프라이즈 헌트",
+          "fr": "Gâchette facile",
+          "de": "Mega-Ballistik",
+          "es": "Caza perfecta"
+        },
+        "base": 1350,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 50
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 8, 8, 8, 8, 8, 8, 8, 8, 8, 30
+        ],
+        "offset": 16
+      },
+      {
+        "id": 215000707,
+        "names": {
+          "en": "Trigger-Happy (LB)",
+          "tw": "連發射擊 (LB)",
+          "kr": "트리거 해피 (LB)",
+          "fr": "Gâchette facile (LB)",
+          "de": "Nervöser Finger (LB)",
+          "es": "Caza perfecta (LB)"
+        },
+        "base": 1070,
+        "hitDamage": [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 16
         ],
-        framesList: [180, 8, 8, 8, 8, 8, 8, 8, 32, 8, 8, 8, 8, 8, 96],
-        base: 800,
-        dualable: false
+        "dualable": false,
+        "framesList": [
+          180, 8, 8, 8, 8, 8, 8, 8, 32, 8, 8, 8, 8, 8, 96
+        ],
+        "offset": 8
       }
     ],
     multiCasts: [
       {
         count: 2,
         abilities: [
+          221390,
           221420,
           221430,
-          221390,
-          221450
+          221450,
         ]
       }
     ]
@@ -11106,19 +11311,50 @@ export const UNITS: any[] = [
         base: 1100
       },
       {
-        id: 18,
-        names: {
-          en: "Blade Master",
-          tw: "魔劍大師",
-          kr: "블레이드 마스터",
-          fr: "Maître des lames",
-          de: "Meisterklinge",
-          es: "Maestro de la espada"
+        "id": 227610,
+        "names": {
+          "en": "Tempest Spellblade",
+          "tw": "風雷魔劍舞",
+          "kr": "풍뢰의 마검무",
+          "fr": "Magilame des tempêtes",
+          "de": "Sturmschwertmagie",
+          "es": "Esgrimago tempestuoso"
         },
-        damage: "hybrid",
-        framesList: [100],
-        base: 1800,
-        dualable: false
+        "damage": "hybrid",
+        "base": 1100,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning",
+          "wind"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100012607,
+        "names": {
+          "en": "Blade Master",
+          "tw": "魔劍大師",
+          "kr": "블레이드 마스터",
+          "fr": "Maître des lames",
+          "de": "Meisterklinge",
+          "es": "Maestro de espadas"
+        },
+        "damage": "hybrid",
+        "base": 3200,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          100
+        ],
+        "offset": 8
       }
     ],
   },
@@ -11229,15 +11465,15 @@ export const UNITS: any[] = [
         debuffs: [
           {
             type: "light",
-            value: 50,
+            value: 75,
           },
           {
             type: "dark",
-            value: 50,
+            value: 75,
           }
         ],
         framesList: [8, 20, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        base: 940,
+        base: 1040,
         dualable: false
       }
     ],
@@ -11366,23 +11602,114 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 6,
-        names: {
-          en: "Ultima Fury",
-          tw: "T·最終究極",
-          kr: "T·알테마",
-          fr: "Ultima T",
-          de: "Ultima-Wut",
-          es: "Artema triple"
+        "id": 20390,
+        "names": {
+          "en": "Tornado",
+          "tw": "龍捲風",
+          "kr": "토네이도",
+          "fr": "Tornade"
         },
-        hitDamage: [
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508020,
+        "names": {
+          "en": "Flare Fury",
+          "tw": "T·核爆",
+          "kr": "T·플레어",
+          "fr": "S. Brasier",
+          "de": "Flare-Wut",
+          "es": "Fulgor T"
+        },
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "ignore": 25,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          240, 20, 20
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20760,
+        "names": {
+          "en": "Raging Water",
+          "tw": "狂水",
+          "kr": "조워터",
+          "fr": "Flots déchaînés",
+          "de": "Reißender Strom",
+          "es": "Aguas enfurecidas"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          110
+        ],
+        "offset": 16
+      },
+      {
+        "id": 210000407,
+        "names": {
+          "en": "Ultima Fury",
+          "tw": "T·最終究極",
+          "kr": "T·알테마",
+          "fr": "Ultima T",
+          "de": "Ultima-Wut",
+          "es": "Artema triple"
+        },
+        "damage": "magic",
+        "base": 750,
+        "hitDamage": [
           16, 16, 17, 17, 17, 17
         ],
-        damage: "magic",
-        framesList: [160, 24, 24, 24, 24, 24],
-        base: 570,
-        ignore: 50,
-        dualable: false
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          160, 24, 24, 24, 24, 24
+        ],
+        "offset": 8
       }
     ],
     multipleBlack: 2
@@ -11429,7 +11756,9 @@ export const UNITS: any[] = [
         base: 2000,
         dualable: false
       }
-    ]
+    ],
+    multipleBlack: 2,
+    multipleWhite: 2
   },
   {
     id: 113,
@@ -13608,23 +13937,69 @@ export const UNITS: any[] = [
       tw: "艾拉妮亞",
       kr: "아라네아"
     },
-    abilities: [
+    abilities: [,
       {
-        id: 215000606,
-        names: {
-          en: "Highwind",
-          tw: "制空強擊",
-          kr: "에어 슈페리오리티",
-          fr: "Suprématie aérienne",
-          de: "Lufthoheit",
-          es: "As del aire"
+        "id": 227620,
+        "names": {
+          "en": "Dragoon Dive",
+          "tw": "龍躍",
+          "kr": "드래곤 리프",
+          "fr": "Saut de dragon",
+          "de": "Drachensatz",
+          "es": "Caída dracontina"
         },
-        dualable: false,
-        framesList: [
+        "base": 470,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "framesList": [
+          0
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227622,
+        "names": {
+          "en": "High Dragoon Dive",
+          "tw": "龍騰",
+          "kr": "하이 드래곤 리프",
+          "fr": "Super saut de dragon",
+          "de": "Hoher Drachensatz",
+          "es": "Caída dracontina+"
+        },
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "framesList": [
+          0
+        ],
+        "offset": 16
+      },
+      {
+        "id": 215000607,
+        "names": {
+          "en": "Highwind",
+          "tw": "制空強擊",
+          "kr": "에어 슈페리오리티",
+          "fr": "Suprématie aérienne",
+          "de": "Lufthoheit",
+          "es": "As del aire"
+        },
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
           151
         ],
-        base: 600,
-        ignore: 50
+        "offset": 8
       }
     ]
   },
@@ -23017,6 +23392,158 @@ export const UNITS: any[] = [
         "abilities": [
           228430,
           228431
+        ]
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "names": {
+      "en": "Popstar Katy",
+      "tw": "流行音樂巨星凱蒂",
+      "kr": "팝스타 케이티",
+      "es": "Estrella del pop Katy"
+    },
+    "abilities": [
+      {
+        "id": 911678,
+        "names": {
+          "en": "Command - Cue the Spotlight",
+          "tw": "指令 - 聚光燈",
+          "kr": "커맨드·스포트라이트 큐",
+          "fr": "Ordre - Caler les lumières",
+          "de": "Befehl - Rampenlicht-Einsatz",
+          "es": "Orden - Hacia el foco"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 60,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          40
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911679,
+        "names": {
+          "en": "Command - Bass Blast",
+          "tw": "指令 - 重低音衝擊",
+          "kr": "커맨드·베이스 소리",
+          "fr": "Ordre - Explosion des basses",
+          "de": "Befehl - Bassexplosion",
+          "es": "Orden - Explosión de bajo"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          10, 10, 15, 10, 10, 15, 10, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911681,
+        "names": {
+          "en": "Command - Backup Dancer Step",
+          "tw": "指令 - 僕從拍掌",
+          "kr": "커맨드·백댄서의 스텝",
+          "fr": "Ordre - Pas de danseur",
+          "de": "Befehl - Backup-Tanzschritt",
+          "es": "Orden - Paso hacia atrás de bailarina"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 30,
+        "dualable": false,
+        "framesList": [
+          30, 25
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911684,
+        "names": {
+          "en": "Command - Backup Dancer Rush",
+          "tw": "指令 - 僕從衝刺",
+          "kr": "커맨드·백댄서의 분주함",
+          "fr": "Ordre - Accélération de danseur",
+          "de": "Befehl - Backup-Tanzsturm",
+          "es": "Orden - Carrerilla hacia atrás de bailarina"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          50
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911692,
+        "names": {
+          "en": "Command - Showtime",
+          "tw": "指令 - 開演",
+          "kr": "커맨드·쇼타임",
+          "fr": "Ordre - Lever de rideau",
+          "de": "Befehl - Showtime",
+          "es": "Orden - Comienza el espectáculo"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401006307,
+        "names": {
+          "en": "Eye See You",
+          "es": "¡Te veo!"
+        },
+        "damage": "magic",
+        "base": 1540,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "dualable": false,
+        "framesList": [
+          250, 25, 40
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911678,
+          911679,
+          911681,
+          911684,
+          911692
         ]
       }
     ]
