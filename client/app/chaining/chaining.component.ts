@@ -545,12 +545,14 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     let castNumber = 1;
 
     unit.multiCasts.forEach(multiCast => {
-      if (multiCast.abilities.indexOf(ability.id) !== -1) {
-        castNumber = multiCast.count;
+      if (castNumber <= multiCast.count) {
+        if (multiCast.abilities.indexOf(ability.id) !== -1) {
+          castNumber = multiCast.count;
 
-        multiCast.abilities.forEach(abilityId => {
-          unit.possibleMultiple.push(unit.abilities[this.findPositionOfAbilityById(unit, abilityId)]);
-        });
+          multiCast.abilities.forEach(abilityId => {
+            unit.possibleMultiple.push(unit.abilities[this.findPositionOfAbilityById(unit, abilityId)]);
+          });
+        }
       }
     });
 

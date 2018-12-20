@@ -8437,7 +8437,7 @@ export const UNITS: any[] = [
         framesList: [150],
         castTime: 40,
         offset: 16,
-        base: 300,
+        base: 400,
         damage: "magic",
         elements: [
           "fire",
@@ -8468,7 +8468,7 @@ export const UNITS: any[] = [
         framesList: [70],
         castTime: 40,
         offset: 16,
-        base: 300,
+        base: 400,
         damage: "magic",
         elements: [
           "lightning",
@@ -8499,7 +8499,7 @@ export const UNITS: any[] = [
         framesList: [180],
         castTime: 40,
         offset: 16,
-        base: 300,
+        base: 400,
         damage: "magic",
         elements: [
           "wind",
@@ -8516,6 +8516,27 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false
+      },
+      {
+        "id": 401002707,
+        "names": {
+          "en": "Mambo Hodge-podge",
+          "tw": "雜燴舞蹈",
+          "kr": "뒤죽박죽 맘보",
+          "fr": "Mambo étrange",
+          "de": "Mambo-Sammelsurium",
+          "es": "Mambo extraño"
+        },
+        "damage": "magic",
+        "base": 1490,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          400
+        ],
+        "offset": 8
       }
     ],
     multiCasts: [
@@ -8625,35 +8646,101 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        id: 5,
-        names: {
-          en: "Snowbear Rampage",
-          tw: "失控雪熊",
-          kr: "광란의 눈곰",
-          fr: "Fureur de l'ours blanc",
-          de: "Schneebär-Raserei",
-          es: "Furia polar"
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
         },
-        framesList: [80, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-        hitDamage: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10],
-        base: 710,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
           "ice"
         ],
-        dualable: false
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20360,
+        "names": {
+          "en": "Freeze",
+          "tw": "冰結",
+          "kr": "프리즈",
+          "fr": "Gel",
+          "de": "Frost",
+          "es": "Congelación"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401002607,
+        "names": {
+          "en": "Snowbear Rampage",
+          "tw": "失控雪熊",
+          "kr": "광란의 눈곰",
+          "fr": "Fureur de l'ours blanc",
+          "de": "Schneebär-Raserei",
+          "es": "Furia polar"
+        },
+        "damage": "magic",
+        "base": 1290,
+        "hitDamage": [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          80, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+        ],
+        "offset": 8
       }
     ],
     multiCasts: [
       {
-        count: 2,
+        count: 4,
         abilities: [
           910652,
           910653,
           910654
         ]
       }
-    ]
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2
   },
   {
     id: 89,
@@ -8692,8 +8779,123 @@ export const UNITS: any[] = [
           }
         ],
         dualable: false
+      },
+      {
+        "id": 20330,
+        "names": {
+          "en": "Aeroja",
+          "tw": "強勁風",
+          "kr": "에어로쟈",
+          "fr": "Vent max",
+          "de": "Aeroka",
+          "es": "Aero+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "framesList": [
+          170
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20390,
+        "names": {
+          "en": "Tornado",
+          "tw": "龍捲風",
+          "kr": "토네이도",
+          "fr": "Tornade"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "framesList": [
+          240
+        ],
+        "offset": 16
+      },
+      {
+        "id": 20360,
+        "names": {
+          "en": "Freeze",
+          "tw": "冰結",
+          "kr": "프리즈",
+          "fr": "Gel",
+          "de": "Frost",
+          "es": "Congelación"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ],
+        "offset": 16
       }
-    ]
+    ],
+    "multipleBlack": 3
   },
   {
     id: 90,
@@ -23544,6 +23746,545 @@ export const UNITS: any[] = [
           911681,
           911684,
           911692
+        ]
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "names": {
+      "en": "Tiana",
+      "tw": "蒂安娜",
+      "kr": "티아나"
+    },
+    "abilities": [
+      {
+        "id": 911733,
+        "names": {
+          "en": "Formula - Disastrous Wind",
+          "tw": "公式 - 災害之風",
+          "kr": "포뮬라·재앙의 바람",
+          "fr": "Formule - Vent désastreux",
+          "de": "Formel - Katastrophaler Wind",
+          "es": "Fórmula - Viento huracanado"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 1,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          82
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911747,
+        "names": {
+          "en": "Formula - Quaking Earth",
+          "tw": "公式 - 顫動之土",
+          "kr": "포뮬라·대지의 전율",
+          "fr": "Formule - Terre tremblante",
+          "de": "Formel - Bebende Erde",
+          "es": "Fórmula - Seísmo"
+        },
+        "damage": "magic",
+        "base": 1400,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911736,
+        "names": {
+          "en": "Formula - Raging Fire",
+          "tw": "公式 - 憤怒之火",
+          "kr": "포뮬라·분노의 화염",
+          "fr": "Formule - Feu ravageur",
+          "de": "Formel - Tobendes Feuer",
+          "es": "Fórmula - Fuego implacable"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911741,
+        "names": {
+          "en": "Formula - Troubled Water",
+          "tw": "公式 - 憂愁之水",
+          "kr": "포뮬라·거친 물살",
+          "fr": "Formule - Eaux troubles",
+          "de": "Formel - Aufgewühlte Gewässer",
+          "es": "Fórmula - Aguas turbulentas"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          50, 50
+        ],
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "framesList": [
+          82, 10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911742,
+        "names": {
+          "en": "Formula - Dreadful Lightning",
+          "tw": "公式 - 恐懼之雷",
+          "kr": "포뮬라·무시무시한 번개",
+          "fr": "Formule - Foudre menaçante",
+          "de": "Formel - Grässlicher Blitz",
+          "es": "Fórmula - Rayo amenazador"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "framesList": [
+          92
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911750,
+        "names": {
+          "en": "Formula - Starfall",
+          "tw": "公式 - 星隕",
+          "kr": "포뮬라·쏟아지는 별",
+          "fr": "Formule - Pluie stellaire",
+          "de": "Formel - Sternfall",
+          "es": "Fórmula - Lluvia de estrellas"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          120
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401006207,
+        "names": {
+          "en": "Accidental Mixture",
+          "tw": "意外混合",
+          "kr": "뜻밖의 혼합물",
+          "fr": "Mélange accidentel",
+          "de": "Zufallsmischung",
+          "es": "Mezcla accidental"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          90
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          911747,
+          911733,
+          911736
+        ]
+      },
+      {
+        "count": 2,
+        "abilities": [
+          911741,
+          911742,
+          911750,
+          911747,
+          911733,
+          911736
+        ]
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "names": {
+      "en": "Felix",
+      "tw": "菲利克斯",
+      "kr": "펠릭스",
+      "fr": "Félix",
+      "es": "Félix"
+    },
+    "abilities": [
+      {
+        "id": 911701,
+        "names": {
+          "en": "Toy Pellet - Hail",
+          "tw": "玩具碎片 - 冰雹",
+          "kr": "장난감 총알·우박",
+          "fr": "Balles en plastique - Grêle",
+          "de": "Spielzeugschuss - Hagel",
+          "es": "Balín de juguete - Granizo"
+        },
+        "damage": "hybrid",
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911700,
+        "names": {
+          "en": "Toy Pellet - Ember",
+          "tw": "玩具碎片 - 灰燼",
+          "kr": "장난감 총알·장작",
+          "fr": "Balles en plastique - Braise",
+          "de": "Spielzeugschuss - Glut",
+          "es": "Balín de juguete - Ascua"
+        },
+        "damage": "hybrid",
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911706,
+        "names": {
+          "en": "Toy Blaster",
+          "tw": "玩具火焰發射器",
+          "kr": "장난감 총잡이",
+          "fr": "Petit canon",
+          "de": "Spielzeugblaster",
+          "es": "Cañón de juguete"
+        },
+        "damage": "hybrid",
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911708,
+        "names": {
+          "en": "Toy Rifle - Flora",
+          "tw": "玩具步槍 - 植物",
+          "kr": "장난감 소총·플로라",
+          "fr": "Petit fusil - Flore",
+          "de": "Spielzeuggewehr - Flora",
+          "es": "Rifle de juguete - Flora"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911727,
+        "names": {
+          "en": "Salute - Blade Rush",
+          "tw": "敬禮 - 劍刃疾走",
+          "kr": "경례·칼날 돌진",
+          "fr": "Salut - Lame véloce",
+          "de": "Salut - Klingenzorn",
+          "es": "Saludo - Hoja veloz"
+        },
+        "damage": "hybrid",
+        "base": 2400,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 40,
+        "framesList": [
+          10, 8, 9, 9
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911709,
+        "names": {
+          "en": "Toy Rifle - Fauna",
+          "tw": "玩具步槍 - 動物",
+          "kr": "장난감 소총·파우나",
+          "fr": "Petit fusil - Faune",
+          "de": "Spielzeuggewehr - Fauna",
+          "es": "Rifle de juguete - Fauna"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911710,
+        "names": {
+          "en": "Salute - Torch Lighting",
+          "tw": "敬禮 - 點燃火把",
+          "kr": "경례·횃불 빛",
+          "fr": "Salut - Torche allumée",
+          "de": "Salut - Fackelbeleuchtung",
+          "es": "Saludo - Antorcha encendida"
+        },
+        "damage": "hybrid",
+        "base": 580,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911711,
+        "names": {
+          "en": "Salute - Perimeter Check",
+          "tw": "敬禮 - 邊境巡查",
+          "kr": "경례·주변 경계",
+          "fr": "Salut - Ronde de surveillance",
+          "de": "Salut - Umgebungspatrouille",
+          "es": "Saludo - Ronda de valoración"
+        },
+        "damage": "hybrid",
+        "base": 580,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911731,
+        "names": {
+          "en": "Salute - Blade Storm",
+          "tw": "敬禮 - 劍刃風暴",
+          "kr": "경례·칼날 폭풍",
+          "fr": "Salut - Tempête de lames",
+          "de": "Salut - Klingensturm",
+          "es": "Saludo - Tormenta de espadas"
+        },
+        "damage": "hybrid",
+        "base": 950,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911717,
+        "names": {
+          "en": "Toy Pop Blast",
+          "tw": "玩具爆炸衝擊",
+          "kr": "장난감 폭발",
+          "fr": "Avalanche de jouets",
+          "de": "Spielzeugknaller",
+          "es": "Avalancha de juguetes"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          },
+          {
+            "type": "earth",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 911723,
+        "names": {
+          "en": "Ember Blade Frenzy",
+          "tw": "火劍亂舞",
+          "kr": "화염검 난무",
+          "fr": "Frénésie incandescente",
+          "de": "Glutschwert-Raserei",
+          "es": "Frenesí incandescente"
+        },
+        "damage": "hybrid",
+        "base": 3200,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 911725,
+        "names": {
+          "en": "Wooden Blade Frenzy",
+          "tw": "木劍亂舞",
+          "kr": "목판검 난무",
+          "fr": "Pluie d'estocs en bois",
+          "de": "Holzschwert-Raserei",
+          "es": "Furor de espadas de madera"
+        },
+        "damage": "hybrid",
+        "base": 3200,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 401006107,
+        "names": {
+          "en": "Toy Volley Fire",
+          "tw": "玩具齊射",
+          "kr": "장난감 일제 사격",
+          "fr": "Rideau de balles en plastique",
+          "de": "Spielzeugsalvenschuss",
+          "es": "Lluvia de balas de juguete"
+        },
+        "damage": "hybrid",
+        "base": 3000,
+        "hitDamage": [
+          7, 6, 7, 7, 7, 6, 7, 6, 7, 6, 7, 7, 7, 6, 7
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "earth",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          280, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          911710,
+          911711,
+          911727,
+          911731
         ]
       }
     ]

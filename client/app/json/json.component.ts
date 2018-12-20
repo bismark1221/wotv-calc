@@ -132,19 +132,19 @@ export class JsonComponent implements OnInit {
   }
 
   private castTimeDifferent() {
-    // this.families.forEach(family => {
-    //   let name = family.units[0].names.en + "_" + family.units[0].abilities[0].names.en;
-    //   let castTime = family.units[0].abilities[0].castTime;
-    //   family.units.forEach(unit => {
-    //     unit.abilities.forEach(ability => {
-    //       if (ability.castTime != castTime) {
-    //         console.log("Diff in cast Time");
-    //         console.log(family.family)
-    //         console.log(name);
-    //         console.log(unit.names.en + "_" + ability.names.en);
-    //       }
-    //     });
-    //   });
-    // });
+    this.families.forEach(family => {
+      let name = family.units[0].names.en + "_" + family.units[0].abilities[0].names.en;
+      let castTime = family.units[0].abilities[0].castTime;
+      family.units.forEach(unit => {
+        unit.abilities.forEach(ability => {
+          if (ability.castTime != castTime) {
+            console.log("Diff in cast Time");
+            console.log(family.family)
+            console.log(name);
+            console.log(unit.names.en + "_" + ability.names.en);
+          }
+        });
+      });
+    });
   }
 }
