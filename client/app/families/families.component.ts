@@ -110,18 +110,18 @@ export class FamiliesComponent implements OnInit {
   private updateName() {
     this.families.forEach(family => {
       family.units.forEach(unit => {
-        unit.name = unit.names[this.lang];
+        unit.name = unit.names[this.lang] ? unit.names[this.lang] : unit.names['en'];
         unit.abilities.forEach(ability => {
-          ability.name = ability.names[this.lang];
+          ability.name = ability.names[this.lang] ? ability.names[this.lang] : ability.names['en'];
         });
       });
     });
 
     this.knownFamilies.forEach(family => {
       family.units.forEach(unit => {
-        unit.name = unit.names[this.lang];
+        unit.name = unit.names[this.lang] ? unit.names[this.lang] : unit.names['en'];
         unit.abilities.forEach(ability => {
-          ability.name = ability.names[this.lang];
+          ability.name = ability.names[this.lang] ? ability.names[this.lang] : ability.names['en'];
         });
       });
     });

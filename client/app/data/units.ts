@@ -24288,5 +24288,504 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 195,
+    "names": {
+      "en": "Sora",
+      "tw": "索拉",
+      "kr": "소라"
+    },
+    "abilities": [
+      {
+        "id": 230842,
+        "names": {
+          "en": "Slapshot",
+          "tw": "全力揮擊",
+          "kr": "슬랩 샷",
+          "fr": "Frappe éclair",
+          "de": "Ratzefatze",
+          "es": "Golpe súbito"
+        },
+        "base": 320,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "framesList": [
+          17, 22, 39
+        ],
+        "offset": 8
+      },
+      {
+        "id": 230843,
+        "names": {
+          "en": "Stun Impact",
+          "tw": "氣絕衝擊",
+          "kr": "스턴 임팩트",
+          "fr": "Dôme d'impact",
+          "de": "Betäubungsschlag",
+          "es": "Aturdidor"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          80
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230844,
+        "names": {
+          "en": "Hurricane Blast",
+          "tw": "颶風休止符",
+          "kr": "허리케인 피리어드",
+          "fr": "Frappe ouragan",
+          "de": "Orkanstoß",
+          "es": "Pulso Huracanado"
+        },
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230845,
+        "names": {
+          "en": "Blitz",
+          "tw": "潰擊",
+          "kr": "파이널 브레이크",
+          "fr": "Coup de grâce",
+          "de": "Brutalo",
+          "es": "Guillotina final"
+        },
+        "base": 380,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          42
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230849,
+        "names": {
+          "en": "Vortex",
+          "tw": "能量漩渦",
+          "kr": "볼텍스",
+          "de": "Rotator",
+          "es": "Vórtice"
+        },
+        "base": 480,
+        "hitDamage": [
+          200
+        ],
+        "castTime": 40,
+        "framesList": [
+          57
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230850,
+        "names": {
+          "en": "Ripple Drive",
+          "tw": "波濤彈擊",
+          "kr": "리플 드라이브",
+          "fr": "Propagation",
+          "de": "Wellenschub",
+          "es": "Oleada Mágica"
+        },
+        "base": 350,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 4,
+        "framesList": [
+          84, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230851,
+        "names": {
+          "en": "Sonic Blade",
+          "tw": "音速斬擊",
+          "kr": "소닉 레이브",
+          "fr": "Aquilon",
+          "de": "Perforieren",
+          "es": "Estocada veloz"
+        },
+        "base": 450,
+        "hitDamage": [
+          1.92, 1.92, 1.92, 1.92, 1.92, 2.4, 88
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230857,
+        "names": {
+          "en": "Ars Arcanum",
+          "tw": "最終奧義",
+          "kr": "라스트 아르카눔",
+          "fr": "Arcanes",
+          "es": "Último arcano"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230858,
+        "names": {
+          "en": "Strike Raid",
+          "tw": "衝撞突襲",
+          "kr": "스트라이크 레이드",
+          "fr": "Diskobolos",
+          "de": "Schwertwurf",
+          "es": "Tiro mortífero"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          50
+        ],
+        "offset": 16
+      },
+      {
+        "id": 335000107,
+        "names": {
+          "en": "Ragnarok",
+          "tw": "諸神黃昏",
+          "kr": "라그나로크",
+          "de": "Ragnarök"
+        },
+        "base": 2080,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "dualable": false,
+        "framesList": [
+          30, 16, 13, 14, 16, 64
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          230842,
+          230843,
+          230844,
+          230845,
+          230849,
+          230850,
+          230851,
+          230857,
+          230858
+        ]
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "names": {
+      "en": "Cloud (KH)",
+      "tw": "克勞德(KH)",
+      "kr": "클라우드(KH)"
+    },
+    "abilities": [
+      {
+        "id": 230862,
+        "names": {
+          "en": "Braver",
+          "tw": "勇猛烈斬",
+          "kr": "브레이버",
+          "fr": "Bravoure",
+          "de": "Mutangriff",
+          "es": "Héroe"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 4,
+        "framesList": [
+          6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230863,
+        "names": {
+          "en": "Cross-slash",
+          "tw": "兇斬",
+          "kr": "흉베기",
+          "fr": "Taillade croisée",
+          "de": "Kreuzhieb",
+          "es": "Látigo-cruzado"
+        },
+        "base": 300,
+        "hitDamage": [
+          10, 10, 10, 10, 60
+        ],
+        "castTime": 19,
+        "framesList": [
+          19, 26, 30, 30, 30
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230864,
+        "names": {
+          "en": "Blade Beam",
+          "tw": "破晄擊",
+          "kr": "파황격",
+          "fr": "Contre taillade",
+          "de": "Klingenstrahl",
+          "es": "Rayo espada"
+        },
+        "base": 325,
+        "hitDamage": [
+          50, 50
+        ],
+        "framesList": [
+          4, 4
+        ],
+        "offset": 8
+      },
+      {
+        "id": 230865,
+        "names": {
+          "en": "Assault Charge",
+          "tw": "突襲衝鋒",
+          "kr": "어설트 차지",
+          "fr": "Assaut chargé",
+          "de": "Überfallangriff",
+          "es": "Carga de asalto"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "ignore": 50,
+        "framesList": [
+          17
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230869,
+        "names": {
+          "en": "Climhazzard",
+          "tw": "罪惡烈斬",
+          "kr": "클라임 해저드",
+          "fr": "Péril ascendant",
+          "de": "Climgefahr",
+          "es": "Salto mortal"
+        },
+        "base": 275,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "ignore": 50,
+        "framesList": [
+          19
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230870,
+        "names": {
+          "en": "Meteor Rain",
+          "tw": "流星雨",
+          "kr": "메테오 레인",
+          "fr": "Pluie de météorites",
+          "de": "Meteoregen",
+          "es": "Lluvia de meteoros"
+        },
+        "base": 200,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 4,
+        "ignore": 50,
+        "framesList": [
+          84, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230871,
+        "names": {
+          "en": "Split Burst",
+          "tw": "劈裂爆破",
+          "kr": "스플릿 버스트",
+          "fr": "Rupture explosive",
+          "de": "Spaltsalve",
+          "es": "Ruptura explosiva"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 17,
+        "ignore": 50,
+        "framesList": [
+          19
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230872,
+        "names": {
+          "en": "Sonic Blade",
+          "tw": "音速斬擊",
+          "kr": "소닉 레이브",
+          "fr": "Aquilon",
+          "de": "Perforieren",
+          "es": "Estocada veloz"
+        },
+        "base": 190,
+        "hitDamage": [
+          1.6842105263157896, 1.6842105263157896, 1.6842105263157896, 1.6842105263157896, 1.6842105263157896, 2.105263157894737, 89.47368421052632
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 509744,
+        "names": {
+          "en": "Cross-slash+",
+          "tw": "兇斬 改",
+          "kr": "개량형 흉베기",
+          "fr": "Taillade croisée +",
+          "de": "Kreuzhieb+",
+          "es": "Látigo-cruzado+"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 60
+        ],
+        "castTime": 19,
+        "framesList": [
+          19, 26, 30, 30, 30
+        ],
+        "offset": 16
+      },
+      {
+        "id": 509745,
+        "names": {
+          "en": "Assault Break",
+          "tw": "突擊破壞",
+          "kr": "어설트 브레이크",
+          "fr": "Assaut destructeur",
+          "de": "Bruchangriff",
+          "es": "Asalto quebrantador"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "ignore": 50,
+        "framesList": [
+          19
+        ],
+        "offset": 16
+      },
+      {
+        "id": 230879,
+        "names": {
+          "en": "Continuum Cut",
+          "tw": "連續劈斬",
+          "kr": "컨티넘 컷",
+          "fr": "Continuum",
+          "de": "Kontinuummesser",
+          "es": "Corte infinito"
+        },
+        "base": 850,
+        "hitDamage": [
+          1.2307692307692308, 1.2307692307692308, 1.2307692307692308, 1.2307692307692308, 1.2307692307692308, 1.5384615384615383, 92.3076923076923
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 335000207,
+        "names": {
+          "en": "Omnislash",
+          "tw": "超究武神霸斬",
+          "kr": "초구무신패참",
+          "fr": "Omnifrappe",
+          "de": "Omnischlag",
+          "es": "Omnilátigo"
+        },
+        "base": 1920,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 70
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          216, 34, 26, 12, 10, 9, 53
+        ],
+        "offset": 8,
+        range: {
+          min: -360
+        }
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230862,
+          230863,
+          230864,
+          230865,
+          230869,
+          230870,
+          230871,
+          230872,
+          509745,
+          230879,
+          509744
+        ]
+      }
+    ]
   }
 ];

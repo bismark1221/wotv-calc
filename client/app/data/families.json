@@ -470,6 +470,31 @@
         ]
       },
       {
+        "id": 401006105,
+        "names": {
+          "en": "Felix",
+          "tw": "菲利克斯",
+          "kr": "펠릭스",
+          "fr": "Félix",
+          "es": "Félix"
+        },
+        "abilities": [
+          {
+            "id": 911731,
+            "names": {
+              "en": "Salute - Blade Storm",
+              "tw": "敬禮 - 劍刃風暴",
+              "kr": "경례·칼날 폭풍",
+              "fr": "Salut - Tempête de lames",
+              "de": "Salut - Klingensturm",
+              "es": "Saludo - Tormenta de espadas"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401006405,
         "names": {
           "en": "Aurora Fryevia",
@@ -1887,7 +1912,7 @@
               "en": "Absolute Mirror of Equity + 1",
               "tw": "極·明鏡 + 1",
               "kr": "극·명경 + 1",
-              "fr": "Sérénité Ultime + 1",
+              "fr": "Sérénité absolue + 1",
               "de": "Vollkommene Kata + 1",
               "es": "Tranquilidad absoluta + 1"
             },
@@ -1900,7 +1925,7 @@
               "en": "Obliterating Mirror of Equity",
               "tw": "絕·明鏡",
               "kr": "절·명경",
-              "fr": "Sérénité destructrice",
+              "fr": "Sérénité primordiale",
               "de": "Vernichtende Kata",
               "es": "Tranquilidad destructiva"
             },
@@ -2143,6 +2168,28 @@
               "fr": "null",
               "de": "null",
               "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 335000105,
+        "names": {
+          "en": "Sora",
+          "tw": "索拉",
+          "kr": "소라"
+        },
+        "abilities": [
+          {
+            "id": 230857,
+            "names": {
+              "en": "Ars Arcanum",
+              "tw": "最終奧義",
+              "kr": "라스트 아르카눔",
+              "fr": "Arcanes",
+              "es": "Último arcano"
             },
             "offset": 16,
             "castTime": 40
@@ -2799,6 +2846,65 @@
         ]
       },
       {
+        "id": 335000105,
+        "names": {
+          "en": "Sora",
+          "tw": "索拉",
+          "kr": "소라"
+        },
+        "abilities": [
+          {
+            "id": 230851,
+            "names": {
+              "en": "Sonic Blade",
+              "tw": "音速斬擊",
+              "kr": "소닉 레이브",
+              "fr": "Aquilon",
+              "de": "Perforieren",
+              "es": "Estocada veloz"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 335000205,
+        "names": {
+          "en": "Cloud (KH)",
+          "tw": "克勞德(KH)",
+          "kr": "클라우드(KH)"
+        },
+        "abilities": [
+          {
+            "id": 230872,
+            "names": {
+              "en": "Sonic Blade",
+              "tw": "音速斬擊",
+              "kr": "소닉 레이브",
+              "fr": "Aquilon",
+              "de": "Perforieren",
+              "es": "Estocada veloz"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 230879,
+            "names": {
+              "en": "Continuum Cut",
+              "tw": "連續劈斬",
+              "kr": "컨티넘 컷",
+              "fr": "Continuum",
+              "de": "Kontinuummesser",
+              "es": "Corte infinito"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401000305,
         "names": {
           "en": "Dracu Lasswell",
@@ -3131,12 +3237,12 @@
           {
             "id": 910643,
             "names": {
-              "en": "Ice Shards",
-              "tw": "寒冰碎片",
-              "kr": "얼음 조각",
-              "fr": "Fragment de glace",
-              "de": "Eissplitter",
-              "es": "Fragmentos de hielo"
+              "en": "Ice Shards + 1",
+              "tw": "寒冰碎片 + 1",
+              "kr": "얼음 조각 + 1",
+              "fr": "Fragment de glace + 1",
+              "de": "Eissplitter + 1",
+              "es": "Fragmentos de hielo + 1"
             },
             "offset": 16,
             "castTime": 20
@@ -4818,6 +4924,80 @@
     ]
   },
   {
+    "family": "84-8-8-8-8-8-8-8",
+    "units": [
+      {
+        "id": 207000105,
+        "names": {
+          "en": "Cloud",
+          "tw": "克勞德",
+          "kr": "클라우드"
+        },
+        "abilities": [
+          {
+            "id": 214830,
+            "names": {
+              "en": "Meteor Rain",
+              "tw": "流星雨",
+              "kr": "메테오 레인",
+              "fr": "Pluie de météorites",
+              "de": "Meteorregen",
+              "es": "Lluvia meteorito"
+            },
+            "offset": 16,
+            "castTime": 4
+          }
+        ]
+      },
+      {
+        "id": 335000105,
+        "names": {
+          "en": "Sora",
+          "tw": "索拉",
+          "kr": "소라"
+        },
+        "abilities": [
+          {
+            "id": 230850,
+            "names": {
+              "en": "Ripple Drive",
+              "tw": "波濤彈擊",
+              "kr": "리플 드라이브",
+              "fr": "Propagation",
+              "de": "Wellenschub",
+              "es": "Oleada Mágica"
+            },
+            "offset": 16,
+            "castTime": 4
+          }
+        ]
+      },
+      {
+        "id": 335000205,
+        "names": {
+          "en": "Cloud (KH)",
+          "tw": "克勞德(KH)",
+          "kr": "클라우드(KH)"
+        },
+        "abilities": [
+          {
+            "id": 230870,
+            "names": {
+              "en": "Meteor Rain",
+              "tw": "流星雨",
+              "kr": "메테오 레인",
+              "fr": "Pluie de météorites",
+              "de": "Meteoregen",
+              "es": "Lluvia de meteoros"
+            },
+            "offset": 16,
+            "castTime": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "2-8-8-8-8-8-8-8-8-8",
     "units": [
       {
@@ -5199,12 +5379,38 @@
           {
             "id": 910654,
             "names": {
-              "en": "Snow Burial",
-              "tw": "冰雪葬",
-              "kr": "설장",
-              "fr": "Cercueil de neige",
-              "de": "Schneebegräbnis",
-              "es": "Entierro de nieve"
+              "en": "Snow Burial + 2",
+              "tw": "冰雪葬 + 2",
+              "kr": "설장 + 2",
+              "fr": "Cercueil de neige + 2",
+              "de": "Schneebegräbnis + 2",
+              "es": "Entierro de nieve + 2"
+            },
+            "offset": 16,
+            "castTime": 58
+          },
+          {
+            "id": 911794,
+            "names": {
+              "en": "Snow Burial + 2",
+              "tw": "冰雪葬 + 2",
+              "kr": "설장 + 2",
+              "fr": "Cercueil de neige + 2",
+              "de": "Schneebegräbnis + 2",
+              "es": "Entierro de nieve + 2"
+            },
+            "offset": 16,
+            "castTime": 58
+          },
+          {
+            "id": 911795,
+            "names": {
+              "en": "Snow Burial + 2",
+              "tw": "冰雪葬 + 2",
+              "kr": "설장 + 2",
+              "fr": "Cercueil de neige + 2",
+              "de": "Schneebegräbnis + 2",
+              "es": "Entierro de nieve + 2"
             },
             "offset": 16,
             "castTime": 58
@@ -6292,6 +6498,44 @@
         ]
       },
       {
+        "id": 401006105,
+        "names": {
+          "en": "Felix",
+          "tw": "菲利克斯",
+          "kr": "펠릭스",
+          "fr": "Félix",
+          "es": "Félix"
+        },
+        "abilities": [
+          {
+            "id": 911710,
+            "names": {
+              "en": "Salute - Torch Lighting",
+              "tw": "敬禮 - 點燃火把",
+              "kr": "경례·횃불 빛",
+              "fr": "Salut - Torche allumée",
+              "de": "Salut - Fackelbeleuchtung",
+              "es": "Saludo - Antorcha encendida"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911711,
+            "names": {
+              "en": "Salute - Perimeter Check",
+              "tw": "敬禮 - 邊境巡查",
+              "kr": "경례·주변 경계",
+              "fr": "Salut - Ronde de surveillance",
+              "de": "Salut - Umgebungspatrouille",
+              "es": "Saludo - Ronda de valoración"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 304002600,
         "names": {
           "en": "Masamune",
@@ -6724,6 +6968,44 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401006105,
+        "names": {
+          "en": "Felix",
+          "tw": "菲利克斯",
+          "kr": "펠릭스",
+          "fr": "Félix",
+          "es": "Félix"
+        },
+        "abilities": [
+          {
+            "id": 911723,
+            "names": {
+              "en": "Ember Blade Frenzy",
+              "tw": "火劍亂舞",
+              "kr": "화염검 난무",
+              "fr": "Frénésie incandescente",
+              "de": "Glutschwert-Raserei",
+              "es": "Frenesí incandescente"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 911725,
+            "names": {
+              "en": "Wooden Blade Frenzy",
+              "tw": "木劍亂舞",
+              "kr": "목판검 난무",
+              "fr": "Pluie d'estocs en bois",
+              "de": "Holzschwert-Raserei",
+              "es": "Furor de espadas de madera"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -7060,6 +7342,30 @@
         ]
       },
       {
+        "id": 302000705,
+        "names": {
+          "en": "White Knight Noel",
+          "tw": "白騎士諾埃爾",
+          "kr": "백기사 노엘",
+          "fr": "Chevalier blanc Noël",
+          "de": "Weißer Ritter Noel",
+          "es": "Caballero blanco Noel"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 331000304,
         "names": {
           "en": "Emeralda",
@@ -7105,6 +7411,29 @@
               "fr": "null",
               "de": "null",
               "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 335000105,
+        "names": {
+          "en": "Sora",
+          "tw": "索拉",
+          "kr": "소라"
+        },
+        "abilities": [
+          {
+            "id": 230844,
+            "names": {
+              "en": "Hurricane Blast",
+              "tw": "颶風休止符",
+              "kr": "허리케인 피리어드",
+              "fr": "Frappe ouragan",
+              "de": "Orkanstoß",
+              "es": "Pulso Huracanado"
             },
             "offset": 16,
             "castTime": 40
@@ -7613,6 +7942,55 @@
         ]
       },
       {
+        "id": 302000705,
+        "names": {
+          "en": "White Knight Noel",
+          "tw": "白騎士諾埃爾",
+          "kr": "백기사 노엘",
+          "fr": "Chevalier blanc Noël",
+          "de": "Weißer Ritter Noel",
+          "es": "Caballero blanco Noel"
+        },
+        "abilities": [
+          {
+            "id": 20360,
+            "names": {
+              "en": "Freeze",
+              "tw": "冰結",
+              "kr": "프리즈",
+              "fr": "Gel",
+              "de": "Frost",
+              "es": "Congelación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401002605,
+        "names": {
+          "en": "Christine",
+          "tw": "克莉絲汀",
+          "kr": "크리스틴"
+        },
+        "abilities": [
+          {
+            "id": 20360,
+            "names": {
+              "en": "Freeze",
+              "tw": "冰結",
+              "kr": "프리즈",
+              "fr": "Gel",
+              "de": "Frost",
+              "es": "Congelación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401005405,
         "names": {
           "en": "Seaside Nichol",
@@ -8010,6 +8388,29 @@
             "castTime": 50
           }
         ]
+      },
+      {
+        "id": 401006205,
+        "names": {
+          "en": "Tiana",
+          "tw": "蒂安娜",
+          "kr": "티아나"
+        },
+        "abilities": [
+          {
+            "id": 911736,
+            "names": {
+              "en": "Formula - Raging Fire",
+              "tw": "公式 - 憤怒之火",
+              "kr": "포뮬라·분노의 화염",
+              "fr": "Formule - Feu ravageur",
+              "de": "Formel - Tobendes Feuer",
+              "es": "Fórmula - Fuego implacable"
+            },
+            "offset": 16,
+            "castTime": 50
+          }
+        ]
       }
     ]
   },
@@ -8236,6 +8637,29 @@
               "fr": "Présage - Sirocco",
               "de": "Weissagung - Sandsturm",
               "es": "Predicción - Tormenta de arena"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006205,
+        "names": {
+          "en": "Tiana",
+          "tw": "蒂安娜",
+          "kr": "티아나"
+        },
+        "abilities": [
+          {
+            "id": 911747,
+            "names": {
+              "en": "Formula - Quaking Earth",
+              "tw": "公式 - 顫動之土",
+              "kr": "포뮬라·대지의 전율",
+              "fr": "Formule - Terre tremblante",
+              "de": "Formel - Bebende Erde",
+              "es": "Fórmula - Seísmo"
             },
             "offset": 16,
             "castTime": 40
