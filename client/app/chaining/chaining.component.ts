@@ -19,6 +19,7 @@ import { BackService } from '../services/back.service';
 import { FindBestService } from '../services/find-best.service';
 import { NavService } from '../services/nav.service';
 
+
 @Component({
   selector: 'app-chaining',
   templateUrl: './chaining.component.html',
@@ -57,7 +58,8 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   requestAlreadyDone: boolean = false;
   requestResult: any[] = [];
 
-  flatFramesPattern: string = "^([0-9]|-)*$"
+  flatFramesPattern: string = "^([0-9]+-?)*(?<!-)$"
+  hitDamagePattern: string = "^([0-9]+(\.[0-9]{1,99}){0,1},)*([0-9]+(\.[0-9]{1,99}){0,1})?(?<!,)$"
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -1012,6 +1014,19 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     this.getAbility(unitPosition, abilityPosition).framesList.forEach((frames, index) => {
       this.getAbility(unitPosition, abilityPosition).framesList[index] = isNaN(Number(frames)) ? 0 : Number(frames);
     });
+
+    if (this.getAbility(unitPosition, abilityPosition).framesList.length !== this.getAbility(unitPosition, abilityPosition).hitDamage.length) {
+      let hitCount = this.getAbility(unitPosition, abilityPosition).framesList.length;
+      for (let i = 0; i < hitCount; i++) {
+        this.getAbility(unitPosition, abilityPosition).hitDamage[i] = 100 / hitCount;
+      }
+    }
+
+    this.saveUnit(unitPosition);
+  }
+
+  updateHitDamage(unitPosition: number, abilityPosition: number) {
+    this.getAbility(unitPosition, abilityPosition).hitDamage = this.getAbility(unitPosition, abilityPosition).hitDamage.split(',');
 
     this.saveUnit(unitPosition);
   }

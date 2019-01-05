@@ -146,8 +146,15 @@
 
           <div class="selectRightZoneBox littleMarginTop">
             <div class="selectRightZoneFrames">
-              <label for="chainer_framesList" [ngStyle]="flatFrames.errors?.pattern && {'color': 'red'}">{{ 'chain.label.nonLinearFrames' | translate }}</label>
-              <input class="form-control" [pattern]="flatFramesPattern" #flatFrames="ngModel" type="text" id="chainer_framesList" [(ngModel)]="ability.flatFrames" (ngModelChange)="updateFramesList(viewOptions, abilityIndex)">
+              <div>
+                <label for="chainer_framesList" [ngStyle]="flatFrames.errors?.pattern && {'color': 'red'}">{{ 'chain.label.nonLinearFrames' | translate }}</label>
+                <input class="form-control" [pattern]="flatFramesPattern" #flatFrames="ngModel" type="text" id="chainer_framesList" [(ngModel)]="ability.flatFrames" (ngModelChange)="updateFramesList(viewOptions, abilityIndex)">
+              </div>
+
+              <div>
+                <label for="chainer_hitDamage" [ngStyle]="hitDamage.errors?.pattern && {'color': 'red'}">{{ 'chain.label.hitDamage' | translate }}</label>
+                <input class="form-control" [pattern]="hitDamagePattern" #hitDamage="ngModel" type="text" id="chainer_hitDamage" [(ngModel)]="chain[viewOptions].selectedAbilities[abilityIndex].hitDamage" (ngModelChange)="updateHitDamage(viewOptions, abilityIndex)" disabled="disabled">
+              </div>
             </div>
 
             <div class="selectRightZoneLittleBox">
@@ -206,10 +213,6 @@
     <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
   </div>
 </ng-template>
-
-
-
-
 
 
 
