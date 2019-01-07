@@ -39,7 +39,7 @@ C'est quand 2 unités, ou plus, vont frapper la cible avec des coups de façon a
 Pour rentrer un peu plus dans les détails avec un petit exemple<br/>
 L'unité 1 va taper en premier la cible, puis ensuite l'unité 2, l'unité 1 va ensuite re-taper, puis l'unité 2, etc...<br/>
 En jeu globalement à chaque fois que vous voyer marquer "Combo", c'est que vous etes en train de faire une chaine :)<br/>
-
+<br/>
 #### Pourquoi faire des chaines ?<br/>
 Parce qu'on veut voir de gros chiffres ^^<br/>
 Non, concrètement à chaque combo la puissance des coups augmente et ce jusqu'à X4<br/>
@@ -170,11 +170,8 @@ Voici le cas d'Orlandeau qui "attend" la fin de son premier sort avant de lancer
 A new discovery, for myself, it's that the positioning can play an important part in your chains<br/>
 An unit who is on a smaller position than another will always hit before the other, even in a spark combo<br/>
 And it's in this case that some weird things can happen...<br/>
-It's the case of Tidus and Pirate Jake, I put here a small video of my youtube channel to show this odd behavior<br/>
+It's the case of Tidus and Pirate Jake, I put here a small video of my old youtube channel to show this odd behavior<br/>
 <br/>
-<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/vTmBNy9jMDY" frameborder="0" allowfullscreen></iframe><br/>
-<br/>
-But don't worry, this is already implemented on the simulator :)<br/>
     </ngx-md>
 
     <ngx-md *ngIf="lang == 'fr'">
@@ -182,9 +179,18 @@ But don't worry, this is already implemented on the simulator :)<br/>
 Nouvelle découverte, en tout cas pour ma part, c'est que la position des unités à une importance dans les chaines<br/>
 Une unité positionnée avant une autre frappera toujours avant, même dans le cadre d'un combo étincelle<br/>
 Et c'est justement dans se cas précis où il peut se passer des choses bizarres, c'est le cas pour une chaine entre Tidus et Pirate Jake<br/>
-Je vous met donc ici une petite vidéo de ma chaine youtube qui montre la différence de chaine en inversant juste Tidus et Pirate Jake de position<br/>
+Je vous met donc ici une petite vidéo de mon ancienne chaine youtube qui montre la différence de chaine en inversant juste Tidus et Pirate Jake de position<br/>
 <br/>
+    </ngx-md>
+
 <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/vTmBNy9jMDY" frameborder="0" allowfullscreen></iframe><br/>
+
+    <ngx-md *ngIf="lang != 'fr'">
+<br/>
+But don't worry, this is already implemented on the simulator :)<br/>
+    </ngx-md>
+
+    <ngx-md *ngIf="lang == 'fr'">
 <br/>
 Mais ne vous en faites pas sur le site cette problématique est déjà prise en compte<br/>
     </ngx-md>
@@ -193,17 +199,16 @@ Mais ne vous en faites pas sur le site cette problématique est déjà prise en 
 
     <ngx-md *ngIf="lang != 'fr'">
 ##### Macros<br/>
-I will not explain here how to use macro on your emulators because there is already lot a pretty good tutorials<br/>
-<br/>
-I just put some little rules which can be useful<br/>
+I will not explain here how to use macro on your emulators because there is already lot a pretty good tutorials but juut some littles rules which can be useful<br/>
  - Memu : Be careful, you need to have an extra empty line at the end of your macro files (This empty line is generated in the simulator, so if you click on the Copy button there shouldn't have any problems)<br/>
+ - No empty line between 2 instructions lines, in Memu and Nox<br/>
     </ngx-md>
 
     <ngx-md *ngIf="lang == 'fr'">
 ##### Les macro<br/>
 Je ne vais pas vous expliquer ici comment mettre en place les macro dans vos émulateurs mais juste quelques règles sur l'utilisation des macro<br/>
  - Memu : Attention vous devez avoir une ligne vide à la fin de votre fichier sinon le dernier coup ne marchera pas (elle est ajoutée dans le générateur, du coup si vous cliquez sur Copier il ne devrait pas y avoir de problèmes)<br/>
- - Pas de ligne vide dans le fichier entre les différentes instructions, aussi sous Memu que Nox<br/>
+ - Pas de ligne vide dans le fichier entre les différentes instructions, aussi bien sous Memu que Nox<br/>
     </ngx-md>
   </div>
 </div>
