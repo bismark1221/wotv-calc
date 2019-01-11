@@ -27,7 +27,7 @@ export class JsonComponent implements OnInit {
 
       this.generateFamilies();
 
-      this.castTimeDifferent();
+      //this.castTimeDifferent();
     });
   }
 

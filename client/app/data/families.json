@@ -1249,12 +1249,12 @@
           {
             "id": 228052,
             "names": {
-              "en": "Light Eclipse",
+              "en": "Consuming Light",
               "tw": "蝕光",
               "kr": "빛의 잠식",
               "fr": "Éclipse de lumière",
-              "de": "null",
-              "es": "null"
+              "de": "Lichtfinsternis",
+              "es": "Eclipse luminoso"
             },
             "offset": 16,
             "castTime": 20
@@ -1266,8 +1266,8 @@
               "tw": "墮暗",
               "kr": "암흑 타락",
               "fr": "Descente aux ténèbres",
-              "de": "null",
-              "es": "null"
+              "de": "Sturz in die Finsternis",
+              "es": "Descenso a la Oscuridad"
             },
             "offset": 16,
             "castTime": 20
@@ -1947,12 +1947,12 @@
           {
             "id": 228051,
             "names": {
-              "en": "Immanence",
+              "en": "Supremacy",
               "tw": "震天動地",
               "kr": "진천동지",
               "fr": "Désastre",
-              "de": "null",
-              "es": "null"
+              "de": "Übermacht",
+              "es": "Inmanencia"
             },
             "offset": 16,
             "castTime": 40
@@ -2564,10 +2564,7 @@
         "names": {
           "en": "Tifa",
           "tw": "蒂法",
-          "kr": "티파",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "티파"
         },
         "abilities": [
           {
@@ -2575,10 +2572,10 @@
             "names": {
               "en": "Final Heaven",
               "tw": "終極天堂",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "파이널 헤븐",
+              "fr": "Ciel ultime",
+              "de": "Himmelsfaust",
+              "es": "Cielo final"
             },
             "offset": 16,
             "castTime": 40
@@ -8132,10 +8129,7 @@
         "names": {
           "en": "Vincent",
           "tw": "文森特",
-          "kr": "빈센트",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "빈센트"
         },
         "abilities": [
           {
@@ -8143,10 +8137,10 @@
             "names": {
               "en": "Berserk Dance",
               "tw": "狂戰士之舞",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "버서크 댄스",
+              "fr": "Danse furieuse",
+              "de": "Wahnsinnstanz",
+              "es": "Danza loca"
             },
             "offset": 16,
             "castTime": 40

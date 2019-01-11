@@ -14,6 +14,7 @@ export class MacroComponent implements OnInit {
   memu: string = '';
   memu6: string = '';
   nox: string = '';
+  ld: string = '';
 
   constructor(private chainService: ChainService) { }
 
@@ -40,6 +41,7 @@ export class MacroComponent implements OnInit {
     this.memu = '';
     this.memu6 = '';
     this.nox = '';
+    this.ld = '{"operations": [';
 
     let firstHits = this.chainService.calculateFramesDiffForFirstHits();
 
@@ -47,6 +49,20 @@ export class MacroComponent implements OnInit {
       let frame = firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap;
       this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
     });
+    this.ld = `],
+      "recordInfo": {
+          "loopType": 0,
+          "loopTimes": 1,
+          "circleDuration": 1829,
+          "loopInterval": 0,
+          "loopDuration": 0,
+          "accelerateTimes": 1,
+          "recordName": "My script1",
+          "createTime": "19.01.01 23:23:23",
+          "playOnBoot": false,
+          "rebootTiming": 0
+      }
+    }`;
   }
 
   private addMacroHit(frame: number, position: number, index: number) {
@@ -150,5 +166,31 @@ export class MacroComponent implements OnInit {
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:1' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
+
+    this.ld += `
+        {
+            "timing": 1214,
+            "operationId": "PutMultiTouch",
+            "points": [
+                {
+                    "id": 1,
+                    "x": 14765,
+                    "y": 3624,
+                    "state": 1
+                }
+            ]
+        },
+        {
+            "timing": 1214,
+            "operationId": "PutMultiTouch",
+            "points": [
+                {
+                    "id": 1,
+                    "x": 14765,
+                    "y": 3624,
+                    "state": 0
+                }
+            ]
+        }`;
   }
 }

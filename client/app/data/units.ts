@@ -8294,11 +8294,26 @@ export const UNITS: any[] = [
         },
         framesList: [4],
         offset: 66,
-        base: 275,
+        base: 400,
         ignore: 50
       },
       {
         id: 2,
+        names: {
+          en: "Climhazzard +2",
+          tw: "罪惡烈斬 +2",
+          kr: "클라임 해저드 +2",
+          fr: "Péril ascendant +2",
+          de: "Climgefahr +2",
+          es: "Riesgo climático +2"
+        },
+        framesList: [4],
+        offset: 66,
+        base: 500,
+        ignore: 50
+      },
+      {
+        id: 3,
         names: {
           en: "Meteor Rain",
           tw: "流星雨",
@@ -8311,11 +8326,11 @@ export const UNITS: any[] = [
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
         castTime: 4,
         offset: 66,
-        base: 180,
+        base: 210,
         ignore: 50
       },
       {
-        id: 3,
+        id: 4,
         names: {
           en: "Finishing Touch",
           tw: "畫龍點睛",
@@ -8329,7 +8344,7 @@ export const UNITS: any[] = [
         base: 400
       },
       {
-        id: 4,
+        id: 5,
         names: {
           en: "Omnislash",
           tw: "超究武神霸斬",
@@ -8340,13 +8355,24 @@ export const UNITS: any[] = [
         },
         framesList: [188, 18, 16, 32, 16, 12, 22, 22, 16, 14, 32, 18, 12, 30, 102],
         hitDamage: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 30],
-        base: 1050,
+        base: 1250,
         ignore: 50,
         dualable: false,
         range: {
           min: -360
         }
       },
+    ],
+    multiCasts: [
+      {
+        count: 2,
+        abilities: [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
     ],
     dual: false
   },
@@ -13070,7 +13096,7 @@ export const UNITS: any[] = [
         ],
         framesList: [70, 7, 5, 7, 7, 7, 7],
         offset: 16,
-        base: 480
+        base: 680
       },
       {
         id: 224550,
@@ -13116,7 +13142,7 @@ export const UNITS: any[] = [
         castTime: 40,
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         offset: 16,
-        base: 500
+        base: 700
       },
       {
         id: 224540,
@@ -13133,7 +13159,7 @@ export const UNITS: any[] = [
         ],
         framesList: [0, 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6],
         offset: 80,
-        base: 270,
+        base: 370,
         ignore: 50
       },
       {
@@ -13152,11 +13178,91 @@ export const UNITS: any[] = [
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
-        base: 250,
+        base: 360,
         ignore: 50
       },
       {
-        id: 207001006,
+        "id": 228052,
+        "names": {
+          "en": "Consuming Light",
+          "tw": "蝕光",
+          "kr": "빛의 잠식",
+          "fr": "Éclipse de lumière",
+          "de": "Lichtfinsternis",
+          "es": "Eclipse luminoso"
+        },
+        "base": 690,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228053,
+        "names": {
+          "en": "Descent into Darkness",
+          "tw": "墮暗",
+          "kr": "암흑 타락",
+          "fr": "Descente aux ténèbres",
+          "de": "Sturz in die Finsternis",
+          "es": "Descenso a la Oscuridad"
+        },
+        "base": 690,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228051,
+        "names": {
+          "en": "Supremacy",
+          "tw": "震天動地",
+          "kr": "진천동지",
+          "fr": "Désastre",
+          "de": "Übermacht",
+          "es": "Inmanencia"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508320,
+        "names": {
+          "en": "Tragic End",
+          "tw": "悲慘終結",
+          "kr": "비극적 결말",
+          "fr": "Fin tragique",
+          "de": "Tragisches Ende",
+          "es": "Final trágico"
+        },
+        "base": 1700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          120
+        ],
+        "offset": 16
+      },
+      {
+        id: 207001007,
         names: {
           en: "One-Winged Angel",
           tw: "獨翼天使",
@@ -13177,7 +13283,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [220],
-        base: 600,
+        base: 1150,
         ignore: 50
       }
     ]
@@ -24785,6 +24891,527 @@ export const UNITS: any[] = [
           230879,
           509744
         ]
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "names": {
+      "en": "Barret",
+      "tw": "巴雷特",
+      "kr": "바렛"
+    },
+    "abilities": [
+      {
+        "id": 227874,
+        "names": {
+          "en": "Satellite Beam",
+          "tw": "衛星射線",
+          "kr": "새틀라이트 빔",
+          "fr": "Frappe satellite",
+          "de": "Satellitenstrahl",
+          "es": "Haz del satélite"
+        },
+        "base": 300,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "framesList": [
+          125, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227875,
+        "names": {
+          "en": "Ungarmax",
+          "tw": "極度憤怒",
+          "kr": "앵거 맥스",
+          "fr": "Colère maximale",
+          "de": "Wutanfall"
+        },
+        "base": 200,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 15
+        ],
+        "castTime": 88,
+        "ignore": 50,
+        "framesList": [
+          90, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "offset": 16
+      },
+      {
+        "id": 207000206,
+        "names": {
+          "en": "Catastrophe",
+          "tw": "災變",
+          "kr": "카타스트로피",
+          "de": "Katastrophe",
+          "es": "Catástrofe"
+        },
+        "base": 520,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "dualable": false,
+        "ignore": 50,
+        "framesList": [
+          230, 6, 6, 6, 7, 6, 6, 6, 7, 6, 6, 6, 7, 6, 6, 6, 7, 6, 6, 8
+        ],
+        "offset": 8
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          227874,
+          227875
+        ]
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "names": {
+      "en": "Vincent",
+      "tw": "文森特",
+      "kr": "빈센트"
+    },
+    "abilities": [
+      {
+        "id": 227851,
+        "names": {
+          "en": "Berserk Dance",
+          "tw": "狂戰士之舞",
+          "kr": "버서크 댄스",
+          "fr": "Danse furieuse",
+          "de": "Wahnsinnstanz",
+          "es": "Danza loca"
+        },
+        "base": 300,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "framesList": [
+          42, 15, 15, 15, 15
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227850,
+        "names": {
+          "en": "Beast Flare",
+          "tw": "手槍火光",
+          "kr": "비스트 플레어",
+          "fr": "Brasier bestial",
+          "de": "Biesterflamme",
+          "es": "Flama de bestia"
+        },
+        "base": 350,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 160,
+        "elements": [
+          "fire"
+        ],
+        "framesList": [
+          110, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227853,
+        "names": {
+          "en": "Livewire",
+          "tw": "活體火花",
+          "kr": "라이브 스파크",
+          "fr": "Colère foudroyante",
+          "de": "Lebensfunken",
+          "es": "Cable activo"
+        },
+        "base": 350,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        "castTime": 41,
+        "elements": [
+          "lightning"
+        ],
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 16
+      },
+      {
+        "id": 227852,
+        "names": {
+          "en": "Gigadunk",
+          "tw": "十億暴扣",
+          "kr": "기가덩크",
+          "fr": "Pilonnage gigas",
+          "de": "Gigafaust"
+        },
+        "base": 335,
+        "hitDamage": [
+          100
+        ],
+        "ignore": 50,
+        "framesList": [
+          10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227854,
+        "names": {
+          "en": "Splattercombo",
+          "tw": "濺射連擊",
+          "kr": "스플래터 콤보",
+          "fr": "Massacre sanglant",
+          "de": "Sägenkombo",
+          "es": "Salpicacombo"
+        },
+        "base": 670,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 30
+        ],
+        "framesList": [
+          2, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227856,
+        "names": {
+          "en": "Chaos Saber",
+          "tw": "混沌劍",
+          "kr": "카오스 세이버",
+          "fr": "Lame de chaos",
+          "de": "Chaossäbel",
+          "es": "Sable del caos"
+        },
+        "base": 225,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 70,
+        "ignore": 50,
+        "framesList": [
+          72
+        ],
+        "offset": 16
+      },
+      {
+        "id": 207000807,
+        "names": {
+          "en": "Satan Slam",
+          "tw": "撒旦衝擊",
+          "kr": "사탄 임팩트",
+          "fr": "Impact satanique",
+          "de": "Höllenpein",
+          "es": "Portazo Satán"
+        },
+        "base": 650,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          520
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000187,
+        "names": {
+          "en": "Satan Slam + 1",
+          "tw": "撒旦衝擊 + 1",
+          "kr": "사탄 임팩트 + 1",
+          "fr": "Impact satanique + 1",
+          "de": "Höllenpein + 1",
+          "es": "Portazo Satán + 1"
+        },
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "framesList": [
+          520
+        ],
+        "offset": 8
+      }
+    ],
+    dual: false
+  },
+  {
+    "id": 199,
+    "names": {
+      "en": "Tifa",
+      "tw": "蒂法",
+      "kr": "티파"
+    },
+    "abilities": [
+      {
+        "id": 227830,
+        "names": {
+          "en": "Beat Rush",
+          "tw": "掌擊衝鋒",
+          "kr": "장타 러쉬",
+          "fr": "Volée de paumes",
+          "de": "Schlagsturm",
+          "es": "Golpe veloz"
+        },
+        "base": 220,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "framesList": [
+          2, 13, 12
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227831,
+        "names": {
+          "en": "Somersault",
+          "tw": "空翻",
+          "kr": "서머솔트",
+          "fr": "Saut périlleux",
+          "de": "Salto",
+          "es": "Salto mortal"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227832,
+        "names": {
+          "en": "Waterkick",
+          "tw": "水面踢",
+          "kr": "수면 차기",
+          "fr": "Coup de pied circulaire",
+          "de": "Wassertritt",
+          "es": "Golpeagua"
+        },
+        "base": 310,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "water"
+        ],
+        "framesList": [
+          10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227833,
+        "names": {
+          "en": "Meteodrive",
+          "tw": "隕石驅動",
+          "kr": "메테오 드라이브",
+          "fr": "Chute météore",
+          "es": "Meteobatida"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227834,
+        "names": {
+          "en": "Dolphin Blow",
+          "tw": "海豚猛攻",
+          "kr": "돌핀 블로우",
+          "fr": "Uppercut dauphin",
+          "de": "Delfinschlag",
+          "es": "Golpe de delfín"
+        },
+        "base": 330,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "water"
+        ],
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227835,
+        "names": {
+          "en": "Meteor Strike",
+          "tw": "隕石撞擊",
+          "kr": "메테오 스트라이크",
+          "fr": "Frappe météore",
+          "de": "Meteorschlag",
+          "es": "Ataque meteorito"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          82
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227837,
+        "names": {
+          "en": "Zangan Combination",
+          "tw": "斬岩組合拳",
+          "kr": "잔간 콤비네이션",
+          "fr": "Enchaînement de Zangan",
+          "de": "Zangan-Kombo",
+          "es": "Combo de Zangan"
+        },
+        "base": 300,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 22
+        ],
+        "ignore": 50,
+        "framesList": [
+          2, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 20
+        ],
+        "offset": 8
+      },
+      {
+        "id": 227836,
+        "names": {
+          "en": "Final Heaven",
+          "tw": "終極天堂",
+          "kr": "파이널 헤븐",
+          "fr": "Ciel ultime",
+          "de": "Himmelsfaust",
+          "es": "Cielo final"
+        },
+        "base": 700,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 508161,
+        "names": {
+          "en": "Overdrive Plus",
+          "tw": "增驅+",
+          "kr": "오버 드라이브·플러스",
+          "fr": "Super chute plus",
+          "de": "Mega-Ekstase",
+          "es": "Turbo+"
+        },
+        "base": 2300,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          140
+        ],
+        "offset": 8
+      },
+      {
+        "id": 508162,
+        "names": {
+          "en": "Seventh Heaven",
+          "tw": "第七天堂",
+          "kr": "세븐스 헤븐",
+          "fr": "Septième Ciel",
+          "de": "Siebter Himmel",
+          "es": "Séptimo Cielo"
+        },
+        "base": 670,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 40
+        ],
+        "ignore": 50,
+        "framesList": [
+          132, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8
+      },
+      {
+        "id": 207000307,
+        "names": {
+          "en": "Limit Reels",
+          "tw": "極限轉軸",
+          "kr": "리미트 릴",
+          "fr": "Pugilatoire",
+          "de": "Limitrolle",
+          "es": "Espiral límite"
+        },
+        "base": 1450,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 25, 40
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          133, 10, 20, 35, 55, 57, 52, 137, 84
+        ],
+        "offset": 8
+      },
+      {
+        "id": 900000177,
+        "names": {
+          "en": "Limit Reels + 1",
+          "tw": "極限轉軸 + 1",
+          "kr": "리미트 릴 + 1",
+          "fr": "Pugilatoire + 1",
+          "de": "Limitrolle + 1",
+          "es": "Espiral límite + 1"
+        },
+        "base": 1450,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 25, 40
+        ],
+        "dualable": false,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          133, 10, 20, 35, 55, 57, 52, 137, 84
+        ],
+        "offset": 8
       }
     ]
   }
