@@ -9549,6 +9549,27 @@ export const UNITS: any[] = [
         "offset": 16
       },
       {
+        "id": 508001,
+        "names": {
+          "en": "Absolute Mirror of Equity",
+          "tw": "極·明鏡",
+          "kr": "극·명경",
+          "fr": "Sérénité absolue",
+          "de": "Vollkommene Kata",
+          "es": "Tranquilidad absoluta"
+        },
+        "base": 650,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "offset": 16
+      },
+      {
         "id": 227561,
         "names": {
           "en": "Obliterating Mirror of Equity",
