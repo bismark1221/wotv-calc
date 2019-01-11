@@ -26,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ChainingComponent } from './chaining/chaining.component';
+import { ChainingModalComponent } from './chaining-modal/chaining-modal.component';
 import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
@@ -69,7 +70,8 @@ export function createTranslateLoader(http: HttpClient) {
     HowToComponent,
     RequestsComponent,
     JsonComponent,
-    FamiliesComponent
+    FamiliesComponent,
+    ChainingModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -107,7 +109,12 @@ export function createTranslateLoader(http: HttpClient) {
     NavService,
     JsonService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ],
+  entryComponents: [
+    ChainingModalComponent
+  ]
 })
 
 export class AppModule { }
