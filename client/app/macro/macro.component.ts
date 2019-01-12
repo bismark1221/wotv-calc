@@ -15,6 +15,12 @@ export class MacroComponent implements OnInit {
   memu6: string = '';
   nox: string = '';
   ld: string = '';
+  openedMacro: string = 'memu';
+  emulatorList: string[] = [
+    'memu',
+    'nox',
+    'ld'
+  ]
 
   constructor(private chainService: ChainService) { }
 
@@ -41,7 +47,8 @@ export class MacroComponent implements OnInit {
     this.memu = '';
     this.memu6 = '';
     this.nox = '';
-    this.ld = '{"operations": [';
+    this.ld = `{
+    "operations": [`;
 
     let firstHits = this.chainService.calculateFramesDiffForFirstHits();
     let lastFrame = 0;
@@ -51,21 +58,22 @@ export class MacroComponent implements OnInit {
       this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
       lastFrame = frame;
     });
-    this.ld += `],
-      "recordInfo": {
-          "loopType": 0,
-          "loopTimes": 1,
-          "circleDuration": ` + lastFrame * 1 / 60 * 1000 + `,
-          "loopInterval": 0,
-          "loopDuration": 0,
-          "accelerateTimes": 1,
-          "recordName": "ffbe-chain",
-          "createTime": "19.01.01 23:23:23",
-          "playOnBoot": false,
-          "rebootTiming": 0
-      }
-    }`;
-    
+    this.ld += `
+    ],
+    "recordInfo": {
+        "loopType": 0,
+        "loopTimes": 1,
+        "circleDuration": ` + lastFrame * 1 / 60 * 1000 + `,
+        "loopInterval": 0,
+        "loopDuration": 0,
+        "accelerateTimes": 1,
+        "recordName": "ffbe-chain",
+        "createTime": "19.01.01 23:23:23",
+        "playOnBoot": false,
+        "rebootTiming": 0
+    }
+}`;
+
     console.log(this.ld);
   }
 
@@ -253,7 +261,8 @@ export class MacroComponent implements OnInit {
       ]
     ];
 
-    this.ld += `
+    this.ld += index !== 0 ? ',' : '';
+    this.ld +=`
         {
             "timing": ` + String(Math.round(ldMilliseconds * frame)) + `,
             "operationId": "PutMultiTouch",

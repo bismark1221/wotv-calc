@@ -1,5 +1,11 @@
 <div class="macro">
   <div class="options_macro">
+    <div class="group_input_emulator">
+      <label for="macro_emulator">{{ 'macro.emulator' | translate }}</label>
+      <select class="form-control" id="macro_emulator" [(ngModel)]="openedMacro">
+        <option *ngFor="let emulator of emulatorList" [ngValue]="emulator">{{ 'macro.' + emulator | translate }}</option>
+      </select>
+    </div>
     <div class="group_input_macro">
       <div class="input_macro">
         <label for="macro_width">{{ 'macro.width' | translate }}</label>
@@ -20,7 +26,7 @@
     </div>
   </div>
   <div class="group_result_macro">
-    <div class="result_macro memu_macro littleMarginTop">
+    <div class="result_macro memu_macro littleMarginTop" *ngIf="openedMacro == 'memu'">
       <label for="macro_memu">{{ 'macro.memu' | translate }}</label>
       <p>{{ 'macro.warningMemu' | translate }}</p>
       <div class="input-group macro_input_group">
@@ -30,7 +36,7 @@
         </span>
       </div>
     </div>
-    <div class="result_macro memu_macro littleMarginTop">
+    <div class="result_macro memu_macro littleMarginTop" *ngIf="openedMacro == 'memu'">
       <label for="macro_memu6">{{ 'macro.memu6' | translate }}</label>
       <p>{{ 'macro.warningMemu' | translate }}</p>
       <div class="input-group macro_input_group">
@@ -40,12 +46,21 @@
         </span>
       </div>
     </div>
-    <div class="result_macro nox_macro littleMarginTop">
+    <div class="result_macro nox_macro littleMarginTop" *ngIf="openedMacro == 'nox'">
       <label for="macro_nox">{{ 'macro.nox' | translate }}</label>
       <div class="input-group macro_input_group">
         <textarea class="form-control macro_text" rows="13" id="macro_nox" #macro_nox [(ngModel)]="nox"></textarea>
         <span class="input-group-addon">
           <button class="btn btn-secondary copy_button" [ngxClipboard]="macro_nox">{{ 'macro.copy' | translate }}</button>
+        </span>
+      </div>
+    </div>
+    <div class="result_macro ld_macro littleMarginTop" *ngIf="openedMacro == 'ld'">
+      <label for="macro_ld">{{ 'macro.ld' | translate }}</label>
+      <div class="input-group macro_input_group">
+        <textarea class="form-control macro_text" rows="13" id="macro_ld" #macro_ld [(ngModel)]="ld"></textarea>
+        <span class="input-group-addon">
+          <button class="btn btn-secondary copy_button" [ngxClipboard]="macro_ld">{{ 'macro.copy' | translate }}</button>
         </span>
       </div>
     </div>

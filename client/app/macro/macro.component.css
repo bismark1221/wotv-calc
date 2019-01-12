@@ -17,10 +17,17 @@
 
 .memu_macro {
   width: 350px;
+  text-align: center;
 }
 
 .nox_macro {
   width: 600px;
+  text-align: center;
+}
+
+.ld_macro {
+  width: 600px;
+  text-align: center;
 }
 
 .littleMarginTop {
@@ -32,6 +39,12 @@
   text-align: center;
 }
 
+.group_input_emulator {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
 .group_input_macro {
   display: inline-block;
   text-align: center;
@@ -40,7 +53,6 @@
 .group_button_macro {
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
 }
 
 .button_macro {
@@ -85,11 +97,13 @@
   .nox_macro {
     width: 350px;
   }
-}
 
-@media (max-width: 630px) {
-  .nox_macro {
+  .ld_macro {
     width: 350px;
+  }
+
+  .memu_macro {
+    width: 300px;
   }
 }
 
@@ -99,6 +113,10 @@
   }
 
   .nox_macro {
+    width: 250px;
+  }
+
+  .ld_macro {
     width: 250px;
   }
 }
