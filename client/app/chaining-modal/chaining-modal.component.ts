@@ -20,7 +20,7 @@ export class ChainingModalComponent implements OnInit {
   @Output() passEntry: EventEmitter<any> = new EventEmitter();
 
   selectedAbilities: any[] = [];
-  errors = {"frames" : [], "hits" : []};
+  errors = {"frames" : null, "hits" : null};
 
   elements: string[];
   requiredElements: string[];
@@ -337,10 +337,10 @@ export class ChainingModalComponent implements OnInit {
     }
   }
 
-  private validateFramesAndHits(frames, hits, checkSameLength) {
+  private validateFramesAndHits(frames, hits) {
     let valid = true;;
 
-    if ((frames.length === 1 && frames[0] === "") || (hits === 0 && hits[0] === "")) {
+    if ((frames.length === 1 && frames[0] === "") || (hits.length === 1 && hits[0] === "")) {
       return 'no_value';
     }
 
@@ -354,40 +354,65 @@ export class ChainingModalComponent implements OnInit {
       return 'nan';
     }
 
+    hits.forEach(hit => {
+      if (isNaN(hit) || hit == 0) {
+        valid = false;
+      }
+    });
+
+    if (!valid) {
+      return 'nan';
+    }
+
     if (hits.length !== frames.length) {
-      return 'diff_legth';
+      return 'diff_length';
     }
 
     return true;
   }
 
+  adjustHitDamageFromFrames(abilityPosition: number) {
+    this.getAbility(abilityPosition).hitDamage = [];
+    let hitCount = this.getAbility(abilityPosition).framesList.length;
+    for (let i = 0; i < hitCount; i++) {
+      this.getAbility(abilityPosition).hitDamage[i] = 100 / hitCount;
+    }
+    this.getAbility(abilityPosition).flatHitDamage = this.getAbility(abilityPosition).hitDamage.join(',');
+  }
+
   updateFramesList(abilityPosition: number) {
     let frames = this.getAbility(abilityPosition).flatFrames.split('-');
-    let valid_frames = this.validateFramesAndHits(frames, this.getAbility(abilityPosition).hitDamage, false);
+    let valid_frames = this.validateFramesAndHits(frames, this.getAbility(abilityPosition).hitDamage);
 
     if (valid_frames === true) {
       this.getAbility(abilityPosition).framesList = frames;
       this.getAbility(abilityPosition).framesList.forEach((frames, index) => {
-        this.getAbility(abilityPosition).framesList[index] = isNaN(Number(frames)) ? 0 : Number(frames);
+        this.getAbility(abilityPosition).framesList[index] = Number(frames);
       });
-
-      if (this.getAbility(abilityPosition).framesList.length !== this.getAbility(abilityPosition).hitDamage.length) {
-        this.getAbility(abilityPosition).hitDamage = [];
-        let hitCount = this.getAbility(abilityPosition).framesList.length;
-        for (let i = 0; i < hitCount; i++) {
-          this.getAbility(abilityPosition).hitDamage[i] = 100 / hitCount;
-        }
-        this.getAbility(abilityPosition).flatHitDamage = this.getAbility(abilityPosition).hitDamage.join(',');
-      }
     } else {
-      errors.frames = valid_frames;
+      this.errors.frames = valid_frames;
+      console.log(this.errors)
       console.log(frames)
       console.log(valid_frames)
     }
   }
 
   updateHitDamage(abilityPosition: number) {
-    this.getAbility(abilityPosition).hitDamage = this.getAbility(abilityPosition).flatHitDamage.split(',');
+    let hitDamage = this.getAbility(abilityPosition).flatHitDamage.split(',');
+    let valid_hitDamage = this.validateFramesAndHits(this.getAbility(abilityPosition).framesList, hitDamage);
+
+    if (valid_hitDamage === true) {
+      this.getAbility(abilityPosition).hitDamage = hitDamage;
+    } else {
+      this.errors.hits = valid_hitDamage;
+      console.log(this.errors)
+      console.log(hitDamage)
+      console.log(valid_hitDamage)
+    }
+  }
+
+  updateHitDamageTEST(abilityPosition: number) {
+    console.log("FOOOOO")
   }
 
   getActiveRename(abilityPosition: number) {
