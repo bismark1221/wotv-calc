@@ -260,8 +260,8 @@ export class MacroComponent implements OnInit {
             "points": [
                 {
                     "id": 1,
-                    "x": ` + String(Math.round(positions[positionRatio][position].width)) + `,
-                    "y": ` + String(Math.round(positions[positionRatio][position].height)) + `,
+                    "x": ` + String(Math.round(ldPosisions[positionRatio][position].width)) + `,
+                    "y": ` + String(Math.round(ldPosisions[positionRatio][position].height)) + `,
                     "state": 1
                 }
             ]
@@ -272,8 +272,8 @@ export class MacroComponent implements OnInit {
             "points": [
                 {
                     "id": 1,
-                    "x": ` + String(Math.round(positions[positionRatio][position].width)) + `,
-                    "y": ` + String(Math.round(positions[positionRatio][position].height)) + `,
+                    "x": ` + String(Math.round(ldPosisions[positionRatio][position].width)) + `,
+                    "y": ` + String(Math.round(ldPosisions[positionRatio][position].height)) + `,
                     "state": 0
                 }
             ]
