@@ -53,21 +53,24 @@ export class MacroComponent implements OnInit {
       "recordInfo": {
           "loopType": 0,
           "loopTimes": 1,
-          "circleDuration": 1829,
+          "circleDuration": ` + frame * 1 / 60 * 1000 + `,
           "loopInterval": 0,
           "loopDuration": 0,
           "accelerateTimes": 1,
-          "recordName": "My script1",
+          "recordName": "ffbe-chain",
           "createTime": "19.01.01 23:23:23",
           "playOnBoot": false,
           "rebootTiming": 0
       }
     }`;
+    
+    console.log(this.ld);
   }
 
   private addMacroHit(frame: number, position: number, index: number) {
     let memuMilliseconds: number = 1000;
     let noxMilliseconds: number = 1;
+    let ldMilliseconds: number = 1;
     let memuSeparator: number = 100;
     let noxSeparator: number = 1;
 
@@ -167,27 +170,108 @@ export class MacroComponent implements OnInit {
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:6' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
     this.nox += '0ScRiPtSePaRaToR' + String(this.width) + '|' + String(this.height) + '|MULTI:0:1' + 'ScRiPtSePaRaToR' + String(Math.round(noxMilliseconds + noxMilliseconds * frame + noxSeparator)) + '\n';
 
+    let ldPosisions = [
+      [
+        {
+          width: 12700,
+          height: 8200
+        },
+        {
+          width: 14700,
+          height: 8200
+        },
+        {
+          width: 16700,
+          height: 8200
+        },
+        {
+          width: 12700,
+          height: 2900
+        },
+        {
+          width: 14700,
+          height: 2900
+        },
+        {
+          width: 16700,
+          height: 2900
+        }
+      ],
+      [
+        {
+          width: 4400,
+          height: 7100
+        },
+        {
+          width: 4400,
+          height: 8200
+        },
+        {
+          width: 4400,
+          height: 9400
+        },
+        {
+          width: 14200,
+          height: 7100
+        },
+        {
+          width: 14200,
+          height: 8200
+        },
+        {
+          width: 14200,
+          height: 9400
+        }
+      ],
+      [
+        {
+          width: 4400,
+          height: 6500
+        },
+        {
+          width: 4400,
+          height: 7800
+        },
+        {
+          width: 4400,
+          height: 9200
+        },
+        {
+          width: 14200,
+          height: 6500
+        },
+        {
+          width: 14200,
+          height: 7800
+        },
+        {
+          width: 14200,
+          height: 9200
+        }
+      ]
+    ];
+
     this.ld += `
         {
-            "timing": 1214,
+            "timing": ` + String(Math.round(ldMilliseconds * frame)) + `,
             "operationId": "PutMultiTouch",
             "points": [
                 {
                     "id": 1,
-                    "x": 14765,
-                    "y": 3624,
+                    "x": ` + String(Math.round(positions[positionRatio][position].width)) + `,
+                    "y": ` + String(Math.round(positions[positionRatio][position].height)) + `,
                     "state": 1
                 }
             ]
         },
         {
-            "timing": 1214,
+            "timing": ` + String(Math.round(ldMilliseconds * frame)) + `,
             "operationId": "PutMultiTouch",
             "points": [
                 {
                     "id": 1,
-                    "x": 14765,
-                    "y": 3624,
+                    "x": ` + String(Math.round(positions[positionRatio][position].width)) + `,
+                    "y": ` + String(Math.round(positions[positionRatio][position].height)) + `,
                     "state": 0
                 }
             ]
