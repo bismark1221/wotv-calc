@@ -44,16 +44,18 @@ export class MacroComponent implements OnInit {
     this.ld = '{"operations": [';
 
     let firstHits = this.chainService.calculateFramesDiffForFirstHits();
+    let lastFrame = 0;
 
     firstHits.forEach((hit, index) => {
       let frame = firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap;
       this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
+      lastFrame = frame;
     });
     this.ld = `],
       "recordInfo": {
           "loopType": 0,
           "loopTimes": 1,
-          "circleDuration": ` + frame * 1 / 60 * 1000 + `,
+          "circleDuration": ` + lastFrame * 1 / 60 * 1000 + `,
           "loopInterval": 0,
           "loopDuration": 0,
           "accelerateTimes": 1,
