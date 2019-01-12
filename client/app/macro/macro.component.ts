@@ -51,7 +51,7 @@ export class MacroComponent implements OnInit {
       this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
       lastFrame = frame;
     });
-    this.ld = `],
+    this.ld += `],
       "recordInfo": {
           "loopType": 0,
           "loopTimes": 1,
