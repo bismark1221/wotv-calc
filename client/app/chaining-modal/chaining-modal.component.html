@@ -1,7 +1,7 @@
 <div>
   <div class="modal-header">
     <h4 class="modal-title">{{ 'chain.label.unit' | translate }} : {{ unit.name | capitalize }}</h4>
-    <button type="button" class="close" aria-label="Close" (click)="close('Cross click')">
+    <button type="button" class="close" aria-label="Close" (click)="close()">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -234,6 +234,6 @@
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" (click)="close('Close click')">Close</button>
+    <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
   </div>
 </div>
