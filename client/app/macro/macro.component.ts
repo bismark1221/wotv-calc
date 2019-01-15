@@ -73,8 +73,6 @@ export class MacroComponent implements OnInit {
         "rebootTiming": 0
     }
 }`;
-
-    console.log(this.ld);
   }
 
   private addMacroHit(frame: number, position: number, index: number) {

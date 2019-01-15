@@ -1,21 +1,21 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewChecked, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { IMultiSelectOption, IMultiSelectTexts, IMultiSelectSettings } from 'angular-2-dropdown-multiselect';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Select2OptionData } from '../select2/select2.interface';
 import { Angulartics2 } from 'angulartics2';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+// import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable } from 'rxjs';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+
+import { ChainingModalComponent } from '../chaining-modal/chaining-modal.component';
 
 import { Unit } from '../entities/unit';
 import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
-import { ElementsService } from '../services/elements.service';
 import { ChainService } from '../services/chain.service';
-import { BackService } from '../services/back.service';
+// import { BackService } from '../services/back.service';
 import { FindBestService } from '../services/find-best.service';
 import { NavService } from '../services/nav.service';
 
@@ -25,8 +25,7 @@ import { NavService } from '../services/nav.service';
   templateUrl: './chaining.component.html',
   styleUrls: ['./chaining.component.css']
 })
-export class ChainingComponent implements OnInit, AfterViewChecked {
-  @ViewChild('chainDiv') private chainDiv: ElementRef;
+export class ChainingComponent implements OnInit {
   private lastCreatedId: number = 10000;
   private positionIds: any = {};
   private positionIdsInChain: any = {};
@@ -43,43 +42,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   firstHits: any[] = [];
 
   createdUnits: any[] = [];
-  elements: string[];
-  requiredElements: string[];
-  multiElements: IMultiSelectOption[] = [];
   multiAbilities: any[] = [];
-  abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
   abilityTypes: string[] = ['chain', 'finish'];
 
   viewOptions: number = -1;
   bestChainers: any[] = [];
   duplicatePosition: number[] = [];
   viewBestChainers: number = -1;
-  requestPosition: number = -1;
-  requestAlreadyDone: boolean = false;
-  requestResult: any[] = [];
-
-  flatFramesPattern: string = "^([0-9]+-?)*(?<!-)$"
-  hitDamagePattern: string = "^([0-9]+(\.[0-9]{1,99}){0,1},)*([0-9]+(\.[0-9]{1,99}){0,1})?(?<!,)$"
-
-  multiElementsTexts: IMultiSelectTexts = {
-    defaultTitle: 'Select ability element(s)'
-  };
-
-  multiAbilitiesTexts: IMultiSelectTexts = {
-    defaultTitle: 'Select ability(ies)'
-  };
-
-  multiElementsSettings: IMultiSelectSettings = {
-    checkedStyle: 'fontawesome',
-    dynamicTitleMaxItems: 8,
-    buttonClasses: 'btn btn-default btn-secondary multi-abilities-select',
-  };
-
-  multiAbilitiesSettings: IMultiSelectSettings = {
-    checkedStyle: 'fontawesome',
-    dynamicTitleMaxItems: 3,
-    buttonClasses: 'btn btn-default btn-secondary multi-abilities-select',
-  };
+  // requestPosition: number = -1;
+  // requestAlreadyDone: boolean = false;
+  // requestResult: any[] = [];
 
   sliderConfig: any[] = [];
 
@@ -98,21 +70,18 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     private unitService: UnitService,
     private chainService: ChainService,
     private findBestService: FindBestService,
-    private elementsService: ElementsService,
     private localStorageService: LocalStorageService,
-    private ref: ChangeDetectorRef,
     private angulartics: Angulartics2,
     private translateService: TranslateService,
     private modalService: NgbModal,
     private navService: NavService,
-    private backService: BackService,
-    private activatedRoute: ActivatedRoute
+    // private backService: BackService,
+    // private activatedRoute: ActivatedRoute
   ) {
     this.getTranslation();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getTranslation();
-      this.getElements();
       this.reloadList();
     });
   }
@@ -140,45 +109,34 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
 
     this.getUnits();
-    this.getElements();
 
-    this.activatedRoute.params.subscribe((params: Params) => {
-      if (params.request && params.type) {
-        this.loadRequest(params);
-      }
-    });
+    // this.activatedRoute.params.subscribe((params: Params) => {
+    //   if (params.request && params.type) {
+    //     this.loadRequest(params);
+    //   }
+    // });
   }
 
-  ngAfterViewChecked(): void {
-    this.ref.detectChanges();
-  }
+  // private loadRequest(params: any) {
+  //   let requests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+  //   let request = requests.find(request => request.id === params.request);
+  //   let framesGap = [];
+  //   let i = 0;
 
-  private loadRequest(params: any) {
-    let requests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
-    let request = requests.find(request => request.id === params.request);
-    let framesGap = [];
-    let i = 0;
+  //   request.units.forEach((requestUnit, index) => {
+  //     framesGap.push(0);
+  //     if (requestUnit) {
+  //       let unit = this.unitService.getUnit(requestUnit.id);
+  //       framesGap[index] = request.chain[params.type].frames[i];
+  //       this.selectUnit(index, unit, requestUnit.ability.id - 1, framesGap); // Adapt to multiple casts
+  //       i++;
+  //     }
+  //   });
 
-    request.units.forEach((requestUnit, index) => {
-      framesGap.push(0);
-      if (requestUnit) {
-        let unit = this.unitService.getUnit(requestUnit.id);
-        framesGap[index] = request.chain[params.type].frames[i];
-        this.selectUnit(index, unit, requestUnit.ability.id - 1, framesGap); // Adapt to multiple casts
-        i++;
-      }
-    });
-
-    this.onChangeChain();
-  }
+  //   this.onChangeChain();
+  // }
 
   private getTranslation() {
-    this.translateService.get('chain.label.multiElements').subscribe((res: string) => {
-      this.multiElementsTexts = {
-        defaultTitle: res
-      };
-    });
-
     this.translateService.get('chain.label.units').subscribe((res: string) => {
       this.labels.units = res;
     });
@@ -263,41 +221,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     })
     this.sortUnits();
     this.localStorageService.set('units', this.createdUnits);
-  }
-
-  private getElements(): void {
-    this.elements = this.elementsService.getElements();
-    this.requiredElements = JSON.parse(JSON.stringify(this.elements));
-    this.requiredElements.splice(0, 1);
-    this.multiElements = [];
-
-    this.requiredElements.forEach(element => {
-      this.translateService.get('elements.' + element).subscribe((res: string) => {
-        if (!this.isElementTranslated(element)) {
-          this.multiElements.push({id: element, name: res});
-        }
-      });
-    });
-  }
-
-  private isElementTranslated(element: string): boolean {
-    let result = false;
-
-    this.multiElements.forEach(data => {
-      if (data.id === element) {
-        result = true
-      }
-    });
-
-    return result;
-  }
-
-  private changeMultiSelectDropdown() {
-    if (this.chainDiv.nativeElement.clientWidth === 250) {
-      this.multiElementsSettings.dynamicTitleMaxItems = 3;
-    } else {
-      this.multiElementsSettings.dynamicTitleMaxItems = 8;
-    }
   }
 
   private findPositionOfAbility(unit: any, searchAbility: any) {
@@ -414,7 +337,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     ids.forEach((id, index) => {
       this.chain[position].selectedAbilities[index] = this.chain[position].abilities[this.findPositionOfAbilityById(this.chain[position], id)];
       this.chain[position].selectedAbilities[index].activeRename = false;
-      this.chain[position].selectedAbilities[index].flatFrames = this.chain[position].selectedAbilities[index].framesList.join('-');
     });
 
     this.chain[position].activeRename = false;
@@ -470,19 +392,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
         this.sliderConfig[position].range.max = max;
       }
     });
-  }
-
-  private getAbilitiesType(unit: any): string {
-    let type = "finish";
-
-    unit.selectedAbilities.forEach(ability => {
-      if (ability.type === "chain") {
-        type = "chain";
-        return;
-      }
-    });
-
-    return type;
   }
 
   private countNumberOfHighRangeChainer() :number {
@@ -591,21 +500,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
   }
 
-  addDebuff(unitPosition: number, abilityPosition: number) {
-    this.getAbility(unitPosition, abilityPosition).debuffs.push({type: 'dark', value: 1});
-    this.saveUnit(unitPosition);
-  }
-
-  removeDebuff(unitPosition: number, abilityPosition: number, debuff: number) {
-    this.getAbility(unitPosition, abilityPosition).debuffs.splice(debuff, 1);
-    this.saveUnit(unitPosition);
-  }
-
-  onChangeDual(position: number) {
-    this.chain[position].weapons[1] = '';
-    this.saveUnit(position);
-  }
-
   createNewUnit(position: number) {
     this.selectedUnits[position] = new Unit();
     this.selectedUnits[position].name = 'Unit ' + (this.createdUnits.length + 1);
@@ -642,16 +536,16 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       this.localSaveUnits();
     }
 
-    if (this.chain[position].id) {
-      this.chain[position].abilities.forEach(ability => {
-        if (ability.framesList.length !== ability.hitDamage.length) {
-          let hitCount = ability.framesList.length;
-          for (let i = 0; i < hitCount; i++) {
-            ability.hitDamage[i] = 100 / hitCount;
-          }
-        }
-      });
-    }
+    // if (this.chain[position].id) {
+    //   this.chain[position].abilities.forEach(ability => {
+    //     if (ability.framesList.length !== ability.hitDamage.length) {
+    //       let hitCount = ability.framesList.length;
+    //       for (let i = 0; i < hitCount; i++) {
+    //         ability.hitDamage[i] = 100 / hitCount;
+    //       }
+    //     }
+    //   });
+    // }
 
     this.onChangeChain();
   }
@@ -743,83 +637,29 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
       }
     }
 
-    this.chain[unitPosition].selectedIds.forEach((id, index) => {
-      this.chain[unitPosition].selectedAbilities[index].flatFrames = this.chain[unitPosition].selectedAbilities[index].framesList.join('-');
-    });
-
     this.onChangeChain();
-  }
-
-  addAbility(unitPosition: number, abilityPosition: number) {
-    this.chain[unitPosition].abilities.push(new Ability());
-    let newAbilityPosition = this.chain[unitPosition].abilities.length - 1;
-    let newId = this.chain[unitPosition].abilities.length + 1000000000
-    this.chain[unitPosition].abilities[newAbilityPosition].id = newId;
-
-    if (this.isFirstAbilityMultiple(unitPosition) > 1) {
-      this.chain[unitPosition].multiCasts[newId] = this.isFirstAbilityMultiple(unitPosition);
-    }
-
-    this.chain[unitPosition].selectedAbilities[abilityPosition] = this.chain[unitPosition].abilities[newAbilityPosition];
-    this.chain[unitPosition].selectedAbilities[abilityPosition].name = 'Ability ' + this.chain[unitPosition].abilities.length;
-    this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename = false;
-    this.chain[unitPosition].selectedIds[abilityPosition] = newId;
-
-    this.chain[unitPosition] = this.updateMultipleSkill(this.chain[unitPosition]);
-    this.saveUnit(unitPosition);
-  }
-
-  removeAbility(unitPosition: number, abilityPosition: number) {
-    let abilityId = this.chain[unitPosition].selectedIds[abilityPosition];
-    this.chain[unitPosition].abilities.splice(this.findPositionOfAbilityById(this.chain[unitPosition], abilityId), 1);
-
-    let indexToRemove = [];
-    this.chain[unitPosition].selectedAbilities.forEach((ability, index) => {
-      if (ability.id === abilityId) {
-        if (index === 0) {
-          this.chain[unitPosition].selectedAbilities[0] = this.chain[unitPosition].abilities[0];
-          this.chain[unitPosition].selectedIds[0] = this.chain[unitPosition].abilities[0].id;
-        } else {
-          indexToRemove.unshift(index);
-        }
-      }
-    });
-
-    indexToRemove.forEach(index => {
-      this.chain[unitPosition].selectedIds.splice(index, 1);
-      this.chain[unitPosition].selectedAbilities.splice(index, 1);
-    });
-
-    this.chain[unitPosition] = this.updateMultipleSkill(this.chain[unitPosition]);
-    this.saveUnit(unitPosition);
   }
 
   renameUnit(position: number) {
     this.chain[position].activeRename = !this.chain[position].activeRename;
   }
 
-  renameAbility(unitPosition: number, abilityPosition: number) {
-    this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename = !this.chain[unitPosition].selectedAbilities[abilityPosition].activeRename;
-  }
-
-  showOptions(modal, position: number) {
+  showOptions(position: number) {
     this.viewOptions = position;
     this.navService.updateMenu(true);
 
-    this.modalService.open(modal, { windowClass: 'options-modal' }).result.then(
-      (result) => {
-        this.viewOptions = -1;
-        this.navService.updateMenu(false);
-      },
-      (reason) => {
-        this.viewOptions = -1;
-        this.navService.updateMenu(false);
-      }
-    );
+    const modalRef = this.modalService.open(ChainingModalComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.unit = this.chain[position];
+
+    modalRef.componentInstance.passEntry.subscribe((receivedEntry) => {
+      this.viewOptions = -1;
+      this.navService.updateMenu(false);
+      this.chain[position] = receivedEntry;
+      this.saveUnit(position);
+    })
 
     this.angulartics.eventTrack.next({ action: 'showOptions', properties: { category: 'chain' }});
-
-    this.changeMultiSelectDropdown();
   }
 
   updateFramesGap(position: number, minusPlus: boolean) {
@@ -835,13 +675,12 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
   }
 
   onChangeChain(): void {
-    this.requestPosition = -1;
-    this.requestAlreadyDone = false;
-    this.requestResult = [];
+    // this.requestPosition = -1;
+    // this.requestAlreadyDone = false;
+    // this.requestResult = [];
     if (this.availableDuplicate.length > 0) {
       this.chainService.getChain();
       this.firstHits = this.chainService.calculateFramesDiffForFirstHits();
-      this.changeMultiSelectDropdown();
       this.calculateMaxFramesGap();
     }
   }
@@ -997,10 +836,6 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     return true;
   }
 
-  getAbility(unitPosition: number, abilityPosition: number) {
-    return this.chain[unitPosition].selectedAbilities[abilityPosition];
-  }
-
   getAvailableAbilities(unitPosition: number, abilityPosition: number) {
     if (this.chain[unitPosition].selectedAbilities.length === 0 || abilityPosition === 0) {
       return this.chain[unitPosition].abilities;
@@ -1009,105 +844,33 @@ export class ChainingComponent implements OnInit, AfterViewChecked {
     }
   }
 
-  updateFramesList(unitPosition: number, abilityPosition: number) {
-    this.getAbility(unitPosition, abilityPosition).framesList = this.getAbility(unitPosition, abilityPosition).flatFrames.split('-');
-    this.getAbility(unitPosition, abilityPosition).framesList.forEach((frames, index) => {
-      this.getAbility(unitPosition, abilityPosition).framesList[index] = isNaN(Number(frames)) ? 0 : Number(frames);
-    });
+  // showResult(type: string) {
+  //   let i = 0;
 
-    if (this.getAbility(unitPosition, abilityPosition).framesList.length !== this.getAbility(unitPosition, abilityPosition).hitDamage.length) {
-      let hitCount = this.getAbility(unitPosition, abilityPosition).framesList.length;
-      for (let i = 0; i < hitCount; i++) {
-        this.getAbility(unitPosition, abilityPosition).hitDamage[i] = 100 / hitCount;
-      }
-    }
+  //   this.chain.forEach((unit, index) => {
+  //     if (unit && unit.id !== 'unselect') {
+  //       unit.framesGap = this.requestResult[type].frames[i];
+  //       i++;
+  //     }
+  //   });
+  //   this.onChangeChain();
 
-    this.saveUnit(unitPosition);
-  }
+  //   this.angulartics.eventTrack.next({ action: 'showResult_' + type, properties: { category: 'chain' }});
+  // }
 
-  updateHitDamage(unitPosition: number, abilityPosition: number) {
-    this.getAbility(unitPosition, abilityPosition).hitDamage = this.getAbility(unitPosition, abilityPosition).hitDamage.split(',');
+  // async saveRequest() {
+  //   let request = await this.backService.saveRequest(this.chain, false);
+  //   let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
+  //   savedRequests.unshift(request);
+  //   this.localStorageService.set('requests', savedRequests);
 
-    this.saveUnit(unitPosition);
-  }
+  //   if (request.status === 'done') {
+  //     this.requestAlreadyDone = true;
+  //     this.requestResult = request.chain;
+  //   } else {
+  //     this.requestPosition = request.number;
+  //   }
 
-  getActiveRename(unitPosition: number, abilityPosition: number) {
-    if (this.getAbility(unitPosition, abilityPosition)) {
-      return this.getAbility(unitPosition, abilityPosition).activeRename;
-    } else {
-      return false;
-    }
-  }
-
-  showResult(type: string) {
-    let i = 0;
-
-    this.chain.forEach((unit, index) => {
-      if (unit && unit.id !== 'unselect') {
-        unit.framesGap = this.requestResult[type].frames[i];
-        i++;
-      }
-    });
-    this.onChangeChain();
-
-    this.angulartics.eventTrack.next({ action: 'showResult_' + type, properties: { category: 'chain' }});
-  }
-
-  async saveRequest() {
-    let request = await this.backService.saveRequest(this.chain, false);
-    let savedRequests = this.localStorageService.get<any[]>('requests') ? this.localStorageService.get<any[]>('requests') : [];
-    savedRequests.unshift(request);
-    this.localStorageService.set('requests', savedRequests);
-
-    if (request.status === 'done') {
-      this.requestAlreadyDone = true;
-      this.requestResult = request.chain;
-    } else {
-      this.requestPosition = request.number;
-    }
-
-    this.angulartics.eventTrack.next({ action: 'saveRequest', properties: { category: 'chain' }});
-  }
-
-  updateMultiCast(position: number) {
-    let min = 1;
-    let unitMultiCast = null;
-
-    this.chain[position].multiCasts.forEach(multiCast => {
-      if (multiCast.count < min) {
-        multiCast.count = min;
-      }
-
-      if (multiCast.count === this.chain[position].castNumber.length) {
-        unitMultiCast = multiCast;
-      }
-    });
-
-    if (unitMultiCast) {
-      let indexToRemove = [];
-      this.chain[position].selectedAbilities.forEach((ability, index) => {
-        if (unitMultiCast.abilities.indexOf(ability.id) === -1) {
-          if (index === 0) {
-            this.chain[position].selectedAbilities[0] = this.chain[position].abilities[0];
-            this.chain[position].selectedIds[0] = this.chain[position].abilities[0].id;
-          } else {
-            indexToRemove.unshift(index);
-          }
-        }
-      });
-
-      indexToRemove.forEach(index => {
-        this.chain[position].selectedIds.splice(index, 1);
-        this.chain[position].selectedAbilities.splice(index, 1);
-      });
-    }
-
-    this.updateMagicMultiCast(position);
-    this.updateMultiplePossibleAbilities(position);
-  }
-
-  updateMagicMultiCast(position: number) {
-    this.updateMultipleSkill(this.chain[position]);
-    this.saveUnit(position);
-  }
+  //   this.angulartics.eventTrack.next({ action: 'saveRequest', properties: { category: 'chain' }});
+  // }
 }
