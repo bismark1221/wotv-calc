@@ -79,14 +79,18 @@ export class TooltipComponent {
    * Set the content and position of the tooltip, then set the active status.
    */
   public renderTooltip(el: ElementRef, options: TooltipOptions): ElementRef {
-    this._relativeElement = el;
-    this.tooltipClass = options.tooltipClass;
-    if (options.content) {
-      this._setTooltipContent(options.content);
-      this._setTooltipPosition();
-    }
-    if (options.active) {
-      this.active = true;
+    if (options.content !== "") {
+      this._relativeElement = el;
+      this.tooltipClass = options.tooltipClass;
+      if (options.content) {
+        this._setTooltipContent(options.content);
+        this._setTooltipPosition();
+      }
+      if (options.active) {
+        this.active = true;
+      } else {
+        this.active = false;
+      }
     } else {
       this.active = false;
     }

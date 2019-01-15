@@ -15,7 +15,13 @@
 }
 
 .helperIcon {
+  margin-left: 5px;
   color: #848b8e;
+}
+
+.errorIcon {
+  margin-left: 5px;
+  color: red;
 }
 
 .selectChainZone {
@@ -152,6 +158,12 @@
   display: inline-block;
 }
 
+.selectAdjustFramesAndCastTime {
+  width: 150px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
 .selectRightZoneMediumBox {
   width: 120px;
   padding-right: 10px;
@@ -171,6 +183,10 @@
 
 .btnAddDebuff {
   width: 710px;
+}
+
+.error-message {
+  color: red;
 }
 
 .verticalTop {

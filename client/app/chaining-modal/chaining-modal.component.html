@@ -147,19 +147,43 @@
           <div class="selectRightZoneBox littleMarginTop">
             <div class="selectRightZoneFrames">
               <div>
-                <label for="chainer_framesList" [ngStyle]="flatFrames.errors?.pattern && {'color': 'red'}">{{ 'chain.label.nonLinearFrames' | translate }}</label>
-                <input class="form-control" [pattern]="flatFramesPattern" #flatFrames="ngModel" type="text" id="chainer_framesList" [(ngModel)]="ability.flatFrames" (ngModelChange)="updateFramesList(abilityIndex)">
+                <span id="tooltip_frames"></span>
+                <label
+                  for="chainer_framesList"
+                  tooltip="{{ errors[abilityIndex].frames ? ('chain.errors.frames.' + errors[abilityIndex].frames | translate) : null }}"
+                  parentSelector="#tooltip_frames"
+                  [ngStyle]="errors[abilityIndex].frames && {'color': 'red'}">
+                  {{ 'chain.label.nonLinearFrames' | translate }}
+                  <i *ngIf="errors[abilityIndex].frames" class="fa fa-exclamation-circle errorIcon" aria-hidden="true"></i>
+                </label>
+                <input class="form-control" type="text" id="chainer_framesList" [(ngModel)]="ability.flatFrames" (ngModelChange)="validateRegex(abilityIndex)" (blur)="validateRegex(abilityIndex)">
               </div>
 
-              <div>
-                <label for="chainer_hitDamage" [ngStyle]="hitDamage.errors?.pattern && {'color': 'red'}">{{ 'chain.label.hitDamage' | translate }}</label>
-                <input class="form-control" [pattern]="hitDamagePattern" #hitDamage="ngModel" type="text" id="chainer_hitDamage" [(ngModel)]="ability.flatHitDamage" (ngModelChange)="updateHitDamage(abilityIndex)" (blur)="updateHitDamageTEST(abilityIndex)">
+              <div class="littleMarginTop">
+                <span id="tooltip_hitDamage"></span>
+                <label
+                  for="chainer_hitDamage"
+                  tooltip="{{ errors[abilityIndex].hits ? ('chain.errors.hits.' + errors[abilityIndex].hits | translate) : null }}"
+                  parentSelector="#tooltip_hitDamage"
+                  [ngStyle]="errors[abilityIndex].hits && {'color': 'red'}">
+                  {{ 'chain.label.hitDamage' | translate }}
+                  <i *ngIf="errors[abilityIndex].hits" class="fa fa-exclamation-circle errorIcon" aria-hidden="true"></i>
+                </label>
+                <input class="form-control" type="text" id="chainer_hitDamage" [(ngModel)]="ability.flatHitDamage" (ngModelChange)="validateRegex(abilityIndex)" (blur)="validateRegex(abilityIndex)">
               </div>
             </div>
 
-            <div class="selectRightZoneLittleBox">
-              <label for="chainer_castTime">{{ 'chain.label.castTime' | translate }}</label>
-              <input class="form-control" type="number" id="chainer_castTime" [(ngModel)]="ability.castTime">
+            <div class="selectAdjustFramesAndCastTime">
+              <div>
+                <button class="btn btn-secondary" type="button" (click)="adjustHitDamageFromFrames(abilityIndex)">
+                  {{ 'chain.label.adjustHitDamage' | translate }}
+                </button>
+              </div>
+
+              <div class="littleMarginTop">
+                <label for="chainer_castTime">{{ 'chain.label.castTime' | translate }}</label>
+                <input class="form-control" type="number" id="chainer_castTime" [(ngModel)]="ability.castTime">
+              </div>
             </div>
 
             <div class="selectRightZoneLittleBox">

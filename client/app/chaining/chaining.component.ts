@@ -657,7 +657,6 @@ export class ChainingComponent implements OnInit {
       this.navService.updateMenu(false);
       this.chain[position] = receivedEntry;
       this.saveUnit(position);
-      console.log(receivedEntry);
     })
 
     this.angulartics.eventTrack.next({ action: 'showOptions', properties: { category: 'chain' }});

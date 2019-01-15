@@ -20,7 +20,7 @@ export class ChainingModalComponent implements OnInit {
   @Output() passEntry: EventEmitter<any> = new EventEmitter();
 
   selectedAbilities: any[] = [];
-  errors = {"frames" : null, "hits" : null};
+  errors: any[] = [];
 
   elements: string[];
   requiredElements: string[];
@@ -29,8 +29,8 @@ export class ChainingModalComponent implements OnInit {
   abilityDamages: string[] = ['physic', 'magic', 'hybrid'];
   abilityTypes: string[] = ['chain', 'finish'];
 
-  flatFramesPattern: string = "^([0-9]+-?)*(?<!-)$";
-  hitDamagePattern: string = "^([0-9]+(\.[0-9]{1,99}){0,1},)*([0-9]+(\.[0-9]{1,99}){0,1})?(?<!,)$";
+  framesPattern: string = "^([0-9]+-?)*(?<!-)$";
+  hitsPattern: string = "^([0-9]+([.|,][0-9]{1,99}){0,1}-)*([0-9]+([.|,][0-9]{1,99}){0,1})?(?<!-)$";
 
   multiElementsTexts: IMultiSelectTexts = {
     defaultTitle: 'Select ability element(s)'
@@ -65,7 +65,8 @@ export class ChainingModalComponent implements OnInit {
     this.getElements();
     this.unit.selectedAbilities.forEach((ability, index) => {
       ability.flatFrames = ability.framesList.join('-');
-      ability.flatHitDamage = ability.hitDamage.join(',');
+      ability.flatHitDamage = ability.hitDamage.join('-');
+      this.errors[index] = {"frames" : null, "hits" : null};
     });
   }
 
@@ -273,9 +274,12 @@ export class ChainingModalComponent implements OnInit {
       }
     }
 
+    this.errors = [];
+
     this.unit.selectedIds.forEach((id, index) => {
       this.unit.selectedAbilities[index].flatFrames = this.unit.selectedAbilities[index].framesList.join('-');
-      this.unit.selectedAbilities[index].flatHitDamage = this.unit.selectedAbilities[index].hitDamage.join(',');
+      this.unit.selectedAbilities[index].flatHitDamage = this.unit.selectedAbilities[index].hitDamage.join('-');
+      this.errors[index] = {"frames" : null, "hits" : null};
     });
   }
 
@@ -337,35 +341,54 @@ export class ChainingModalComponent implements OnInit {
     }
   }
 
-  private validateFramesAndHits(frames, hits) {
-    let valid = true;;
+  validateRegex(abilityPosition: number) {
+    let types: string[] = ['frames', 'hits'];
 
-    if ((frames.length === 1 && frames[0] === "") || (hits.length === 1 && hits[0] === "")) {
-      return 'no_value';
-    }
+    types.forEach(type => {
+      let regexp = new RegExp(this[type + 'Pattern']);
+      this.errors[abilityPosition][type] = null;
 
-    frames.forEach(frame => {
-      if (isNaN(frame) || frame == 0) {
-        valid = false;
+      if (!regexp.test(type === 'frames' ? this.getAbility(abilityPosition).flatFrames : this.getAbility(abilityPosition).flatHitDamage)) {
+        this.errors[abilityPosition][type] = 'regex';
       }
     });
 
-    if (!valid) {
-      return 'nan';
+
+    if (this.errors[abilityPosition].frames === null && this.errors[abilityPosition].hits === null) {
+      let frames = this.getAbility(abilityPosition).flatFrames.split('-');
+      let hits = this.getAbility(abilityPosition).flatHitDamage.split('-');
+
+      if(this.validateFramesAndHits(abilityPosition, frames, hits)) {
+        this.getAbility(abilityPosition).framesList = frames;
+        this.getAbility(abilityPosition).hitDamage = hits;
+      }
     }
+  }
+
+  private validateFramesAndHits(abilityPosition: number, frames, hits) {
+    let valid = true;
+    let totalHit = 0;
+    this.errors[abilityPosition].frames = null;
+    this.errors[abilityPosition].hits = null;
 
     hits.forEach(hit => {
+      hit = hit.replace(/,/g, '.');
       if (isNaN(hit) || hit == 0) {
         valid = false;
+      } else {
+        totalHit += Number(hit);
       }
     });
 
-    if (!valid) {
-      return 'nan';
+    if (hits.length !== frames.length) {
+      this.errors[abilityPosition].frames = 'diff_length';
+      this.errors[abilityPosition].hits = 'diff_length';
+      return false;
     }
 
-    if (hits.length !== frames.length) {
-      return 'diff_length';
+    if (Math.round(totalHit) !== 100) {
+      this.errors[abilityPosition].hits = 'not_hundred';
+      return false;
     }
 
     return true;
@@ -373,46 +396,13 @@ export class ChainingModalComponent implements OnInit {
 
   adjustHitDamageFromFrames(abilityPosition: number) {
     this.getAbility(abilityPosition).hitDamage = [];
-    let hitCount = this.getAbility(abilityPosition).framesList.length;
+    let frames = this.getAbility(abilityPosition).flatFrames.split('-');
+    let hitCount = frames.length;
     for (let i = 0; i < hitCount; i++) {
       this.getAbility(abilityPosition).hitDamage[i] = 100 / hitCount;
     }
-    this.getAbility(abilityPosition).flatHitDamage = this.getAbility(abilityPosition).hitDamage.join(',');
-  }
-
-  updateFramesList(abilityPosition: number) {
-    let frames = this.getAbility(abilityPosition).flatFrames.split('-');
-    let valid_frames = this.validateFramesAndHits(frames, this.getAbility(abilityPosition).hitDamage);
-
-    if (valid_frames === true) {
-      this.getAbility(abilityPosition).framesList = frames;
-      this.getAbility(abilityPosition).framesList.forEach((frames, index) => {
-        this.getAbility(abilityPosition).framesList[index] = Number(frames);
-      });
-    } else {
-      this.errors.frames = valid_frames;
-      console.log(this.errors)
-      console.log(frames)
-      console.log(valid_frames)
-    }
-  }
-
-  updateHitDamage(abilityPosition: number) {
-    let hitDamage = this.getAbility(abilityPosition).flatHitDamage.split(',');
-    let valid_hitDamage = this.validateFramesAndHits(this.getAbility(abilityPosition).framesList, hitDamage);
-
-    if (valid_hitDamage === true) {
-      this.getAbility(abilityPosition).hitDamage = hitDamage;
-    } else {
-      this.errors.hits = valid_hitDamage;
-      console.log(this.errors)
-      console.log(hitDamage)
-      console.log(valid_hitDamage)
-    }
-  }
-
-  updateHitDamageTEST(abilityPosition: number) {
-    console.log("FOOOOO")
+    this.getAbility(abilityPosition).flatHitDamage = this.getAbility(abilityPosition).hitDamage.join('-');
+    this.validateRegex(abilityPosition)
   }
 
   getActiveRename(abilityPosition: number) {
