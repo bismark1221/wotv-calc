@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { UnitService } from '../services/unit.service'
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-home',
@@ -8,15 +9,17 @@ import { UnitService } from '../services/unit.service'
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   lang = 'en';
   markdown = '';
-  updated = [199, 198, 197, 85, 122];
+  updated = [200, 199, 198, 197, 85];
   units = [];
+  youtubeId = null;
 
   constructor(
     private translateService: TranslateService,
-    private unitService: UnitService
+    private unitService: UnitService,
+    private httpClient: HttpClient
   ) {
     this.getTranslation();
     this.getUnits();
@@ -28,6 +31,19 @@ export class HomeComponent {
       this.getTranslation();
       this.getUnits();
     });
+  }
+
+  ngOnInit() {
+    this.httpClient
+      .get<any>("https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCvRB2kQNT7QlrGTigTVXU2w&key=AIzaSyAElnFixLPjzIgo0XOofEzJDPQJ80CXXo4")
+      .subscribe(
+        data => {
+          this.youtubeId = data && data.items && data.items[0] && data.items[0].id ? data.items[0].id.videoId : null;
+        },
+        error => {
+          console.log("Error", error);
+        }
+    );
   }
 
   private getTranslation() {

@@ -25435,5 +25435,162 @@ export const UNITS: any[] = [
         "offset": 8
       }
     ]
+  },
+  {
+    "id": 200,
+    "names": {
+      "en": "Yubel",
+      "tw": "尤貝爾",
+      "kr": "유벨"
+    },
+    "abilities": [
+      {
+        "id": 228654,
+        "names": {
+          "en": "Powered Up Pinwheel",
+          "tw": "風車·私有",
+          "kr": "풍차 칼날·사유물",
+          "fr": "Moulin à vent",
+          "de": "Brausendes Windrad",
+          "es": "Molinete implacable"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          110
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228653,
+        "names": {
+          "en": "Chocobo Beak",
+          "tw": "陸行鳥之喙",
+          "kr": "초코보 부리",
+          "fr": "Choco-bec",
+          "de": "Chocobo-Schnabel",
+          "es": "Chocobopico"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          60
+        ],
+        "offset": 8
+      },
+      {
+        "id": 228652,
+        "names": {
+          "en": "Chocobo Dash",
+          "tw": "陸行鳥衝擊",
+          "kr": "초코보 대시",
+          "fr": "Choco-galop",
+          "de": "Chocobo-Sprint",
+          "es": "Chocobogalope"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          },
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          40
+        ],
+        "offset": 8
+      },
+      {
+        "id": 228650,
+        "names": {
+          "en": "Frost Blade, Flame Ring",
+          "tw": "冰刃火環",
+          "kr": "빙인화환",
+          "fr": "Givrelame & pyrocercle",
+          "de": "Frostklinge, Flammenring",
+          "es": "Hoja gélida, Anillo pírico"
+        },
+        "base": 380,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 70
+          }
+        ],
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 228651,
+        "names": {
+          "en": "Shadow Blade, Light Ring",
+          "tw": "暗刃光環",
+          "kr": "암인광환",
+          "fr": "Ombrelame & luminocercle",
+          "de": "Schattenklinge, Lichtring",
+          "es": "Hoja umbrosa, Anillo refulgente"
+        },
+        "base": 380,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 70
+          }
+        ],
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ],
+        "offset": 16
+      },
+      {
+        "id": 100018506,
+        "names": {
+          "en": "Combination Attack",
+          "tw": "組合攻擊",
+          "kr": "조합 공격",
+          "fr": "Attaque combinée",
+          "de": "Komboangriff",
+          "es": "Combinación de ataques"
+        },
+        "base": 840,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "dualable": false,
+        "framesList": [
+          142, 20, 20
+        ],
+        "offset": 8
+      }
+    ]
   }
 ];
