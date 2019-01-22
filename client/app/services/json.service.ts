@@ -81,7 +81,6 @@ export class JsonService {
 
   private formatJsons() {
     Object.keys(this.units).forEach(unitId => {
-
       let id = this.addUnit(this.units[unitId]);
 
       if (id !== null && this.units[unitId].skills) {
@@ -212,8 +211,8 @@ export class JsonService {
       this.ffbeChainUnits[unitId].abilities[id].dualable = false;
     }
 
-    this.checkEffects(unitId, id, ability, dataId, level);
     this.updateOffset(unitId, id, ability);
+    this.checkEffects(unitId, id, ability, dataId, level);
   }
 
   private checkEffects(unitId, id, ability, dataId, level = 0) {
@@ -229,10 +228,16 @@ export class JsonService {
     effects.forEach((effect, index) => {
       let find = this.updateDamage(effect, unitId, id);
       if (find) {
-        this.ffbeChainUnits[unitId].abilities[id].base += find.damage;
-        find.index = index;
-        find.hitDamage = ability.attack_damage[damageEffects.length];
-        damageEffects.push(find);
+        if (!find.combo) {
+          find.combo = 1;
+        }
+
+        for(let i = 1; i <= find.combo; i++) {
+          this.ffbeChainUnits[unitId].abilities[id].base += find.damage;
+          find.index = index;
+          find.hitDamage = ability.attack_damage[index];
+          damageEffects.push(find);
+        };
       }
 
       this.unlockSkill(effect, unitId, level);
@@ -241,7 +246,7 @@ export class JsonService {
     });
 
     this.calculateDamage(damageEffects, unitId, id, ability);
-    this.updateFrames(unitId, id, ability);
+    this.updateFrames(damageEffects, unitId, id, ability);
 
     return;
   }
@@ -311,15 +316,27 @@ export class JsonService {
     }
   }
 
-  private updateFrames(unitId, id, ability) {
+  private updateFrames(effects, unitId, id, ability) {
     let framesList = [];
     let frames = [];
+    let combo = 1
+    let frameBetweenCombo = 0;
 
-    ability.attack_frames.forEach(attackFrame => {
-      attackFrame.forEach(frame => {
-        frames.push(frame);
-      });
+    effects.forEach(effect => {
+      if (effect.combo > 1) {
+        combo = effect.combo;
+      }
     });
+
+    for (let i = 1; i <= combo; i++) {
+      ability.attack_frames.forEach(attackFrame => {
+        attackFrame.forEach(frame => {
+          frames.push(frame + frameBetweenCombo);
+        });
+      });
+
+      frameBetweenCombo += this.ffbeChainUnits[unitId].abilities[id].castTime + this.ffbeChainUnits[unitId].abilities[id].offset;
+    }
 
     frames = frames.sort((n1, n2) => n1 - n2);
 
@@ -332,10 +349,14 @@ export class JsonService {
     }
 
     this.ffbeChainUnits[unitId].abilities[id].framesList = framesList;
+    if (this.ffbeChainUnits[unitId].abilities[id].castTime) {
+      this.ffbeChainUnits[unitId].abilities[id].castTime = this.ffbeChainUnits[unitId].abilities[id].castTime * combo;
+      this.ffbeChainUnits[unitId].abilities[id].offset = this.ffbeChainUnits[unitId].abilities[id].offset * combo;
+    }
   }
 
   private calculateDamage(effects, unitId, id, ability) {
-    effects.forEach((effect, effectIndex) => {
+    effects.forEach(effect => {
       let ratioNewDamage = effect.damage * 100 / this.ffbeChainUnits[unitId].abilities[id].base;
 
       if (effect.hitDamage) {
@@ -411,7 +432,8 @@ export class JsonService {
     // "effects_raw": [[2, 1, 42, [0,  0,  3,  3,  160]]]
     find = this.findEffect(rawEffect, [42]);
     if (find) {
-      find.damage = find.effect[3] * find.effect[4];
+      find.damage = find.effect[4];
+      find.combo = find.effect[3];
       this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
       return find;
     }
@@ -719,8 +741,8 @@ export class JsonService {
     });
 
     this.ffbeChainUnits[summonId].abilities[id].base = base;
-    this.updateFrames(summonId, id, ability);
     this.updateOffset(summonId, id, ability);
+    this.updateFrames([{combo:1}], summonId, id, ability);
   }
 
   private getUnitIdFromDataId(dataId) {
