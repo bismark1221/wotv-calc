@@ -840,7 +840,7 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
-        "dataId": 503950,
+        "id": 503950,
         "names": {
           "en": "Charge Blade",
           "tw": "充能劍",
@@ -9390,7 +9390,7 @@ export const UNITS: any[] = [
         framesList: [10, 8, 8, 8, 8, 8, 8],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
         offset: 8,
-        base: 750,
+        base: 1360,
         damage: "hybrid",
         elements: [
           "fire"
@@ -9410,30 +9410,180 @@ export const UNITS: any[] = [
         hitDamage: [10, 10, 10, 10, 10, 20, 30],
         castTime: 40,
         offset: 26,
-        base: 550,
+        base: 980,
         damage: "hybrid",
         elements: [
           "lightning"
         ]
       },
       {
-        id: 5,
-        names: {
-          en: "Toad Art - Raiden",
-          tw: "蟾蜍忍法·雷電",
-          kr: "두꺼비 인법·뇌전",
-          fr: "Art des crapauds - Raiden",
-          de: "Krötenkunst - Raiden",
-          es: "Artesapo - Raiden"
+        "id": 911920,
+        "names": {
+          "en": "True Purgatory Fire Slash",
+          "tw": "真‧煉獄剎燒斬",
+          "kr": "진·연옥찰소참",
+          "fr": "Flammes du purgatoire ultimes",
+          "de": "Wahrer Flammenschlag des Purgatoriums",
+          "es": "Tajo fulminante del purgatorio"
         },
-        framesList: [133, 10, 10, 10, 10, 10, 10],
-        hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        base: 1400,
-        damage: "hybrid",
-        elements: [
+        "damage": "hybrid",
+        "base": 1600,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 911921,
+        "names": {
+          "en": "True Thunder Strike Stance",
+          "tw": "真‧轟雷擊衝陣",
+          "kr": "진·굉뇌격출진",
+          "fr": "Posture électrocoup ultime",
+          "de": "Wahre Gewitterschlag-Kata",
+          "es": "Azote fulminante del trueno"
+        },
+        "damage": "hybrid",
+        "base": 1200,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
           "lightning"
         ],
-        dualable: false
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 227963,
+        "names": {
+          "en": "Shadow Dragon Roar",
+          "tw": "暗龍咆絕破",
+          "kr": "흑룡포절파",
+          "fr": "Rugissement du dragon des ombres",
+          "de": "Gebrüll des Schattendrachen",
+          "es": "Rugido del dragón de las sombras"
+        },
+        "damage": "hybrid",
+        "base": 1800,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 227960,
+        "names": {
+          "en": "Demonic Spark",
+          "tw": "鬼火花",
+          "kr": "도깨비불꽃",
+          "fr": "Étincelle démoniaque",
+          "de": "Dämonenfunke",
+          "es": "Chispa demoníaca"
+        },
+        "damage": "hybrid",
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          },
+          {
+            "type": "lightning",
+            "value": 75
+          },
+          {
+            "type": "dark",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          90
+        ]
+      },
+      {
+        "id": 508230,
+        "names": {
+          "en": "Shadowless Thrust",
+          "tw": "無影一刺",
+          "kr": "그림자 없는 일격",
+          "fr": "Frappe sans ombre",
+          "de": "Schattenloser Streich",
+          "es": "Asalto sin sombra"
+        },
+        "damage": "hybrid",
+        "base": 3600,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 100011307,
+        "names": {
+          "en": "Toad Art - Raiden",
+          "tw": "蟾蜍忍法·雷電",
+          "kr": "두꺼비 인법·뇌전",
+          "fr": "Art des crapauds - Raiden",
+          "de": "Krötenkunst - Raiden",
+          "es": "Artesapo - Raiden"
+        },
+        "damage": "hybrid",
+        "base": 2720,
+        "hitDamage": [
+          14, 14, 15, 14, 14, 15, 14
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          133, 10, 10, 10, 10, 10, 10
+        ]
       }
     ]
   },
@@ -12222,22 +12372,78 @@ export const UNITS: any[] = [
         base: 420
       },
       {
-        id: 6,
-        names: {
-          en: "Kaiser Verteidiger",
-          tw: "皇帝守護",
-          kr: "카이저 페어타이디거",
-          fr: "Kaiser Verteidige",
-          de: "Imperator Protegit!",
-          es: "Kaiser Verteidige"
+        "id": 228003,
+        "names": {
+          "en": "Flughöhe",
+          "tw": "飛行高度",
+          "kr": "비행 고도",
+          "es": "Altitud"
         },
-        hitDamage: [
+        "base": 235,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 100013307,
+        "names": {
+          "en": "Kaiser Verteidiger",
+          "tw": "皇帝守護",
+          "kr": "카이저 페어타이디거",
+          "fr": "Imperator Protegit",
+          "de": "Imperator Protegit!",
+          "es": "Imperator Protegit"
+        },
+        "base": 600,
+        "hitDamage": [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        framesList: [85, 4, 21, 8, 85, 4, 4, 22, 6, 6, 12],
-        base: 470,
-        ignore: 50,
-        dualable: false
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          85, 4, 21, 8, 85, 4, 4, 22, 6, 6, 12
+        ]
+      },
+      {
+        "id": 900000217,
+        "names": {
+          "en": "Kaiser Verteidiger + 1",
+          "tw": "皇帝守護 + 1",
+          "kr": "카이저 페어타이디거 + 1",
+          "fr": "Imperator Protegit + 1",
+          "de": "Imperator Protegit! + 1",
+          "es": "Imperator Protegit + 1"
+        },
+        "base": 650,
+        "hitDamage": [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          85, 4, 21, 8, 85, 4, 4, 22, 6, 6, 12
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          228003
+        ]
       }
     ]
   },
@@ -12451,19 +12657,86 @@ export const UNITS: any[] = [
         base: 100
       },
       {
-        id: 11,
-        names: {
-          en: "AL Type Light Particle Beam",
-          tw: "AL式魔電粒子炮",
-          kr: "AL식 마전입자포",
-          fr: "Rayon à particules de lum. type AL",
-          de: "AL-Typ Lichtpartikelstrahl",
-          es: "Rayo de partículas de luz tipo AL"
+        "id": 227992,
+        "names": {
+          "en": "Plasma Wave",
+          "tw": "等離子編織",
+          "kr": "플라즈마 웨이브",
+          "fr": "Vague de plasma",
+          "de": "Plasmawelle",
+          "es": "Onda de plasma"
         },
-        framesList: [150],
-        base: 720,
-        ignore: 50,
-        dualable: false
+        "base": 360,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 227993,
+        "names": {
+          "en": "Alpha Cannon",
+          "tw": "阿爾法加農炮",
+          "kr": "알파 캐논",
+          "fr": "Canon alpha",
+          "de": "Alphakanone",
+          "es": "Cañón alfa"
+        },
+        "base": 620,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 20, 10
+        ]
+      },
+      {
+        "id": 508263,
+        "names": {
+          "en": "Last Shot",
+          "tw": "最後一射",
+          "kr": "라스트 샷",
+          "fr": "Dernier tir",
+          "de": "Letzter Schuss",
+          "es": "Disparo final"
+        },
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          160
+        ]
+      },
+      {
+        "id": 100012007,
+        "names": {
+          "en": "AL Type Light Particle Beam",
+          "tw": "AL式魔電粒子炮",
+          "kr": "AL식 마전입자포",
+          "fr": "Rayon à particules de lum. type AL",
+          "de": "AL-Typ Lichtpartikelstrahl",
+          "es": "Rayo de partículas de luz (tipo AL)"
+        },
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          150
+        ]
       }
     ]
   },
@@ -13070,6 +13343,84 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [49, 16, 16, 12, 8, 15, 6, 3, 54],
         base: 1240
+      },
+      {
+        "id": 508330,
+        "names": {
+          "en": "Martial Arts - Waking Palm",
+          "tw": "格鬥術·醒眼掌",
+          "kr": "격투술·성안장",
+          "fr": "Arts martiaux - Paume de l'éveil",
+          "de": "Kampfkunst - Erwachende Hand",
+          "es": "Artes marciales - Palma del despertar"
+        },
+        "base": 2600,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 228062,
+        "names": {
+          "en": "Martial Arts - Shield Breaker",
+          "tw": "格鬥術·壞盾突",
+          "kr": "격투술·괴순돌",
+          "fr": "Arts martiaux - Brise-bouclier",
+          "de": "Kampfkunst - Schildbrecher",
+          "es": "Artes marciales - Rompescudo"
+        },
+        "base": 240,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "offset": 8,
+        "framesList": [
+          0, 5, 5, 5
+        ]
+      },
+      {
+        "id": 100013807,
+        "names": {
+          "en": "Flower Barrage",
+          "tw": "六華仙裂",
+          "kr": "육화선열",
+          "fr": "Déluge de fleurs",
+          "de": "Blumenbeschuss",
+          "es": "Descarga floral"
+        },
+        "base": 1650,
+        "hitDamage": [
+          15, 10, 10, 10, 10, 10, 10, 10, 15
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          49, 16, 16, 12, 8, 15, 6, 3, 54
+        ]
+      },
+      {
+        "id": 900000237,
+        "names": {
+          "en": "Flower Barrage + 1",
+          "tw": "六華仙裂 + 1",
+          "kr": "육화선열 + 1",
+          "fr": "Déluge de fleurs + 1",
+          "de": "Blumenbeschuss + 1",
+          "es": "Descarga floral + 1"
+        },
+        "base": 1800,
+        "hitDamage": [
+          15, 10, 10, 10, 10, 10, 10, 10, 15
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          49, 16, 16, 12, 8, 15, 6, 3, 54
+        ]
       }
     ],
     multiCasts: [
@@ -13079,7 +13430,9 @@ export const UNITS: any[] = [
           224650,
           224660,
           224670,
-          224680
+          224680,
+          508330,
+          228062
         ]
       }
     ]
@@ -13607,7 +13960,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [50, 10, 10, 10, 10],
         offset: 16,
-        base: 500
+        base: 650
       },
       {
         id: 223420,
@@ -13627,7 +13980,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [80],
         offset: 16,
-        base: 1000
+        base: 1150
       },
       {
         id: 20400,
@@ -13657,7 +14010,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [160, 22, 21, 22, 23, 23, 22, 23],
         offset: 16,
-        base: 275
+        base: 375
       },
       {
         id: 20390,
@@ -13685,7 +14038,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 16,
-        base: 250
+        base: 350
       },
       {
         id: 20350,
@@ -13712,7 +14065,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [240],
         offset: 16,
-        base: 230
+        base: 330
       },
       {
         id: 223430,
@@ -13732,7 +14085,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [140],
         offset: 16,
-        base: 1600
+        base: 1750
       },
       {
         id: 20430,
@@ -13750,7 +14103,7 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [350],
         offset: 16,
-        base: 250,
+        base: 350,
         ignore: 25
       },
       {
@@ -13771,28 +14124,77 @@ export const UNITS: any[] = [
         dualable: false,
         framesList: [150],
         offset: 16,
-        base: 1800
+        base: 1950
       },
       {
-        id: 204001506,
-        names: {
-          en: "Esper Mist Dragon Breath",
-          tw: "幻獸霧龍的吐息",
-          kr: "환수 미스트 드래곤의 순결",
-          fr: "Éon dragon des brumes : souffle",
-          de: "Esper Nebeldrache: Atem",
-          es: "Esper dragón de Mist: aliento"
+        "id": 508281,
+        "names": {
+          "en": "Burst Storm",
+          "tw": "爆裂風暴",
+          "kr": "버스트 스톰",
+          "fr": "Tempête explosive",
+          "de": "Rauschender Sturm",
+          "es": "Explosión tormentosa"
         },
-        hitDamage: [
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 75
+          },
+          {
+            "type": "wind",
+            "value": 75
+          },
+          {
+            "type": "earth",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 204001507,
+        "names": {
+          "en": "Mist Dragon Breath",
+          "tw": "幻獸霧龍的吐息",
+          "kr": "환수 미스트 드래곤의 숨결",
+          "fr": "Souffle du dragon des brumes",
+          "de": "Nebeldrache: Atem",
+          "es": "Esper dragón de Mist: aliento"
+        },
+        "damage": "magic",
+        "base": 2800,
+        "hitDamage": [
           2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3
         ],
-        damage: "magic",
-        dualable: false,
-        framesList: [188, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        base: 2000
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          188, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       }
     ],
-    multipleBlack: 2
+    multipleBlack: 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          223400,
+          223420,
+          223430
+        ]
+      }
+    ]
   },
   {
     id: 127,
@@ -13826,7 +14228,7 @@ export const UNITS: any[] = [
         ],
         framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
-        base: 350
+        base: 600
       },
       {
         id: 223490,
@@ -13849,7 +14251,7 @@ export const UNITS: any[] = [
         ],
         framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
-        base: 350
+        base: 600
       },
       {
         id: 223480,
@@ -13872,7 +14274,7 @@ export const UNITS: any[] = [
         ],
         framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
-        base: 350
+        base: 600
       },
       {
         id: 223470,
@@ -13889,23 +14291,93 @@ export const UNITS: any[] = [
         ],
         framesList: [6, 8, 8, 8, 8, 8, 8],
         offset: 8,
-        base: 225,
+        base: 345,
         ignore: 50
       },
       {
-        id: 204001606,
-        names: {
-          en: "Dragon's Bane",
-          tw: "龍禍",
-          kr: "드래곤 베인",
-          fr: "Fléau du dragon",
-          de: "Drachenunheil",
-          es: "Pesadilla del dragón"
+        "id": 228022,
+        "names": {
+          "en": "Dragon Raid+",
+          "tw": "龍之劍改",
+          "kr": "개량형 드래곤 레이드",
+          "fr": "Raid de dragon +",
+          "de": "Drachenangriff+",
+          "es": "Ataque dragón"
         },
-        dualable: false,
-        framesList: [182],
-        base: 570,
-        ignore: 50
+        "base": 580,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508290,
+        "names": {
+          "en": "Piercing Dead",
+          "tw": "穿刺死亡",
+          "kr": "날카로운 죽음",
+          "fr": "Mort perçante",
+          "de": "Todesspieß",
+          "es": "Pinchazo mortal"
+        },
+        "base": 1000,
+        "hitDamage": [
+          30,
+          30,
+          40
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          46,
+          10,
+          10
+        ]
+      },
+      {
+        "id": 228021,
+        "names": {
+          "en": "Accumulating Blow",
+          "tw": "積累打擊",
+          "kr": "타격 축적",
+          "fr": "Frappe accumulée",
+          "de": "Schlag auf Schlag",
+          "es": "Golpe acumulativo"
+        },
+        "base": 330,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 204001607,
+        "names": {
+          "en": "Dragon's Bane",
+          "tw": "龍禍",
+          "kr": "드래곤 베인",
+          "fr": "Fléau du dragon",
+          "de": "Drachenunheil",
+          "es": "Pesadilla del dragón"
+        },
+        "base": 850,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          182
+        ]
       }
     ]
   },
@@ -14124,6 +14596,64 @@ export const UNITS: any[] = [
         framesList: [190],
         offset: 16,
         base: 600
+      },
+      {
+        "id": 20380,
+        "names": {
+          "en": "Flood",
+          "tw": "洪水",
+          "kr": "플러드",
+          "fr": "Inondation",
+          "de": "Flut",
+          "es": "Inundación"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 20760,
+        "names": {
+          "en": "Raging Water",
+          "tw": "狂水",
+          "kr": "조워터",
+          "fr": "Flots déchaînés",
+          "de": "Reißender Strom",
+          "es": "Aguas enfurecidas"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          110
+        ]
       }
     ],
     multipleBlack: 2,
@@ -14669,32 +15199,126 @@ export const UNITS: any[] = [
         ]
       },
       {
-        id: 100010006,
-        names: {
-          en: "Darkness Purging Blades of Azure Crimson",
-          tw: "斬暗緋蒼之劍",
-          kr: "어둠을 떨치는 비창의 검",
-          fr: "Lames azur carmin briseuses de ténèbres",
-          de: "Dunkelheit bannende Purpurazurklingen",
-          es: "Hojas azul enrojecido de oscuridad purgadora"
+        "id": 228080,
+        "names": {
+          "en": "Sword of Ares",
+          "tw": "戰神霸刀",
+          "kr": "전투신의 패도",
+          "fr": "Épée d'Arès",
+          "de": "Schwert des Kriegsgottes",
+          "es": "Espada de Ares"
         },
-        hitDamage: [
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 228081,
+        "names": {
+          "en": "Octostrike Blade",
+          "tw": "八連刃",
+          "kr": "팔연검",
+          "fr": "Lame octimpact",
+          "de": "Klinge des Achtfachen Streichs",
+          "es": "Hoja octaimpacto"
+        },
+        "base": 345,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 508350,
+        "names": {
+          "en": "Azure Flame Edge",
+          "tw": "八連刃",
+          "kr": "파염의 창검",
+          "fr": "Lame de flamme azur",
+          "de": "Azurblaue Flammenklinge",
+          "es": "Filo azurígneo"
+        },
+        "base": 1450,
+        "hitDamage": [
           14, 14, 14, 14, 14, 14, 16
         ],
-        dualable: false,
-        framesList: [
-          22, 10, 10, 10, 10, 10, 13
-        ],
-        base: 1200,
-        debuffs: [
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
           {
-            type: "fire",
-            value: 100
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 508351,
+        "names": {
+          "en": "Crimson Frost Edge",
+          "tw": "破炎蒼劍",
+          "kr": "열빙의 비검",
+          "fr": "Lame de glace écarlate",
+          "de": "Purpurrote Frostklinge",
+          "es": "Filo gélido escarlata"
+        },
+        "base": 1450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100010007,
+        "names": {
+          "en": "Darkness Purging Blades of Azure Crimson",
+          "tw": "斬暗緋蒼之劍",
+          "kr": "어둠을 떨치는 비창의 검",
+          "fr": "Lames azur carmin briseuses de ténèbres",
+          "de": "Dunkelheit bannende Purpurazurklingen",
+          "es": "Hojas azul enrojecido de oscuridad purgadora"
+        },
+        "base": 2100,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
           },
           {
-            type: "ice",
-            value: 100
+            "type": "ice",
+            "value": 100
           }
+        ],
+        "framesList": [
+          22, 10, 10, 10, 10, 10, 13
         ]
       }
     ]
@@ -14728,7 +15352,7 @@ export const UNITS: any[] = [
           210
         ],
         offset: 16,
-        base: 600
+        base: 700
       },
       {
         id: 20310,
@@ -14751,7 +15375,7 @@ export const UNITS: any[] = [
           150
         ],
         offset: 16,
-        base: 600
+        base: 700
       },
       {
         id: 20330,
@@ -14774,7 +15398,7 @@ export const UNITS: any[] = [
           170
         ],
         offset: 16,
-        base: 600
+        base: 700
       },
       {
         id: 20300,
@@ -14797,7 +15421,7 @@ export const UNITS: any[] = [
           240
         ],
         offset: 16,
-        base: 600
+        base: 800
       },
       {
         id: 20360,
@@ -14823,7 +15447,7 @@ export const UNITS: any[] = [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
         offset: 16,
-        base: 275,
+        base: 475,
         debuffs: [
           {
             type: "ice",
@@ -14834,12 +15458,12 @@ export const UNITS: any[] = [
       {
         id: 20550,
         names: {
-          en: "Zoblizza",
-          tw: "冰封",
-          kr: "조블리자",
-          fr: "Glace Z",
-          de: "Eisza",
-          es: "Hielo Z"
+          "en": "Raging Ice",
+          "tw": "烈冰",
+          "kr": "조블리자",
+          "fr": "Glace rageuse",
+          "de": "Wütendes Eis",
+          "es": "Hielo furibundo"
         },
         damage: "magic",
         castTime: 40,
@@ -14852,33 +15476,95 @@ export const UNITS: any[] = [
           250
         ],
         offset: 16,
-        base: 1200
+        base: 1400
       },
       {
-        id: 100014006,
-        names: {
-          en: "Cosmo Plume",
-          tw: "宇宙羽流",
-          kr: "코스모 플룸",
-          fr: "Plume cosmique",
-          de: "Kosmofeder",
-          es: "Pilar cósmico"
+        "id": 20390,
+        "names": {
+          "en": "Tornado",
+          "tw": "龍捲風",
+          "kr": "토네이도",
+          "fr": "Tornade"
         },
-        damage: "magic",
-        hitDamage: [
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 508312,
+        "names": {
+          "en": "Ice Catastrophe",
+          "tw": "寒冰災變",
+          "kr": "결빙의 재앙",
+          "fr": "Calamité glaciale",
+          "de": "Eiskatastrophe",
+          "es": "Catástrofe glacial"
+        },
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 41,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          140
+        ]
+      },
+      {
+        "id": 100014007,
+        "names": {
+          "en": "Cosmo Plume",
+          "tw": "宇宙羽流",
+          "kr": "코스모 플룸",
+          "fr": "Plume cosmique",
+          "de": "Kosmofeder",
+          "es": "Pilar cósmico"
+        },
+        "damage": "magic",
+        "base": 780,
+        "hitDamage": [
           5, 5, 5, 5, 5, 5, 5, 20, 20, 25
         ],
-        dualable: false,
-        framesList: [
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
           40, 8, 52, 8, 14, 48, 12, 12, 10, 10
-        ],
-        base: 420,
-        ignore: 50
+        ]
       }
     ],
-    multipleBlack: 2,
-    multipleWhite: 2,
-    multipleGreen: 2
+    multipleBlack: 3,
+    multipleWhite: 3,
+    multipleGreen: 3
   },
   {
   id: 139,
@@ -15287,57 +15973,130 @@ export const UNITS: any[] = [
         "ignore": 50
       },
       {
-        "id": 318000106,
+        "id": 911893,
+        "names": {
+          "en": "Charge (SO3)",
+          "tw": "蓄力 (SO3)",
+          "kr": "충전 (SO3)",
+          "de": "Ansturm (SO3)",
+          "es": "Recarga (SO3)"
+        },
+        "base": 520,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 911894,
+        "names": {
+          "en": "Enhanced Shotgun Blast",
+          "tw": "強化散彈槍·伏特",
+          "kr": "강화 샷건·볼트",
+          "fr": "Super fusillade explosive",
+          "de": "Verstärkter Schrotflintenschuss",
+          "es": "Supertiroteo explosivo"
+        },
+        "base": 650,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 911897,
+        "names": {
+          "en": "Enhanced Aerial",
+          "tw": "強化大氣",
+          "kr": "강화 에어리얼",
+          "fr": "Super onde de choc",
+          "de": "Verstärkter Luftangriff",
+          "es": "Superonda de choque"
+        },
+        "base": 1400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 318000107,
         "names": {
           "en": "Ethereal Blast of Time",
           "tw": "異凍·衝刺·刻",
           "kr": "이데리얼 블래스트·타임",
           "fr": "Explosion éthérée du temps",
-          "de": "Iserialknall - Zeit",
+          "de": "Ätherischer Zeitknall",
           "es": "Explosión temporal etérea"
         },
+        "base": 800,
         "hitDamage": [
           8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9
         ],
-        "dualable": false,
         "framesList": [
           202, 10, 10, 10, 10, 10, 10, 10, 20, 8, 8, 8
         ],
-        "base": 580,
+        "dualable": false,
+        "offset": 8,
         "ignore": 50,
         "debuffs": [
           {
             "type": "fire",
-            "value": 60
+            "value": 70
           },
           {
             "type": "ice",
-            "value": 60
+            "value": 70
           },
           {
             "type": "lightning",
-            "value": 60
+            "value": 70
           },
           {
             "type": "water",
-            "value": 60
+            "value": 70
           },
           {
             "type": "wind",
-            "value": 60
+            "value": 70
           },
           {
             "type": "earth",
-            "value": 60
+            "value": 70
           },
           {
             "type": "light",
-            "value": 60
+            "value": 70
           },
           {
             "type": "dark",
-            "value": 60
+            "value": 70
           }
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          225400,
+          225390,
+          225420,
+          225410,
+          911893,
+          911894,
+          911897
         ]
       }
     ]
@@ -15399,6 +16158,52 @@ export const UNITS: any[] = [
         ],
         "offset": 16,
         "base": 660
+      },
+      {
+        "id": 911906,
+        "names": {
+          "en": "Fix Cloud",
+          "tw": "修復之雲",
+          "kr": "픽스 클라우드",
+          "fr": "Brume temporelle",
+          "de": "Gestockte Wolke",
+          "es": "Bruma aturdidora"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 911907,
+        "names": {
+          "en": "Light Cross",
+          "tw": "交叉光芒",
+          "kr": "빛의 십자가",
+          "fr": "Croix de lumière",
+          "de": "Lichtkreuz",
+          "es": "Cruz luminosa"
+        },
+        "damage": "magic",
+        "base": 1040,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
+        ]
       }
     ],
     multiCasts: [
@@ -15406,7 +16211,8 @@ export const UNITS: any[] = [
         count: 2,
         abilities: [
           225570,
-          225580
+          225580,
+          911906
         ]
       }
     ]
@@ -25610,6 +26416,413 @@ export const UNITS: any[] = [
           142, 20, 20
         ],
         "offset": 8
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "names": {
+      "en": "Sophia",
+      "tw": "索菲雅",
+      "kr": "소피아"
+    },
+    "abilities": [
+      {
+        "id": 911857,
+        "names": {
+          "en": "Fire Bolt (SO3)",
+          "tw": "火焰箭（SO3）",
+          "kr": "파이어 볼트(SO3)",
+          "fr": "Boule de feu (SO3)",
+          "de": "Feuerpfeil (SO3)",
+          "es": "Rayo de fuego (SO3)"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 911858,
+        "names": {
+          "en": "Ice Needles",
+          "tw": "寒冰針刺",
+          "kr": "아이스 니들",
+          "fr": "Dards de glace",
+          "de": "Eisnadeln",
+          "es": "Agujas de hielo"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 20,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 911859,
+        "names": {
+          "en": "Lightning Blast",
+          "tw": "雷霆衝擊",
+          "kr": "라이트닝 블래스트",
+          "fr": "Foudre (SO3)",
+          "de": "Blitzruption",
+          "es": "Explosión de rayo"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 911860,
+        "names": {
+          "en": "Earth Glaive",
+          "tw": "大地之劍",
+          "kr": "어스 글레이브",
+          "fr": "Glaive de terre",
+          "de": "Erdgleve",
+          "es": "Gurja de tierra"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 911866,
+        "names": {
+          "en": "Crush",
+          "tw": "壓迫",
+          "kr": "프레스",
+          "fr": "Pression",
+          "de": "Presse",
+          "es": "Pulverización"
+        },
+        "damage": "magic",
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          15
+        ]
+      },
+      {
+        "id": 911867,
+        "names": {
+          "en": "Thunder Flare",
+          "tw": "雷電閃耀",
+          "kr": "선더 플레어",
+          "fr": "Coup de tonnerre",
+          "de": "Donnerfackel",
+          "es": "Llama de trueno"
+        },
+        "damage": "magic",
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 911870,
+        "names": {
+          "en": "Deep Freeze",
+          "tw": "深寒凍結",
+          "kr": "딥 프리즈",
+          "fr": "Surgélation",
+          "de": "Tiefgefrieren",
+          "es": "Hipotermia total"
+        },
+        "damage": "magic",
+        "base": 220,
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ]
+      },
+      {
+        "id": 911873,
+        "names": {
+          "en": "Fireball (SO3)",
+          "tw": "爆裂（SO3）",
+          "kr": "폭발(SO3)",
+          "fr": "Explosion (SO3)",
+          "de": "Explosion (SO3)",
+          "es": "Bola de fuego (SO3)"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 911878,
+        "names": {
+          "en": "Blood Scylla",
+          "tw": "嗜血斯庫拉",
+          "kr": "블러드 스킬라",
+          "fr": "Scylla",
+          "de": "Blutskylla",
+          "es": "Escila sanguinaria"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          55
+        ]
+      },
+      {
+        "id": 911879,
+        "names": {
+          "en": "Stone Rain",
+          "tw": "岩石之雨",
+          "kr": "록 레인",
+          "fr": "Pluie de pierres",
+          "de": "Steinregen",
+          "es": "Lluvia de piedra"
+        },
+        "damage": "magic",
+        "base": 1150,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "id": 911883,
+        "names": {
+          "en": "Southern Cross (SO3)",
+          "tw": "南十字星（SO3）",
+          "kr": "남십자성(SO3)",
+          "fr": "Croix du Sud (SO3)",
+          "de": "Kreuz des Südens (SO3)",
+          "es": "Cruz del Sur (SO3)"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [100],
+        "elements": [
+          "fire",
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          },
+          {
+            "type": "dark",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 911884,
+        "names": {
+          "en": "Efreet",
+          "tw": "伊弗利特之劍",
+          "kr": "이프리트 소드",
+          "fr": "Éfrit",
+          "de": "Ifritschwert",
+          "es": "Espada Ifrit"
+        },
+        "damage": "magic",
+        "base": 1400,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 911885,
+        "names": {
+          "en": "Ravenous Fiend",
+          "tw": "貪婪惡魔",
+          "kr": "그렘린 레어",
+          "fr": "Gremlins",
+          "de": "Räuberischer Freund",
+          "es": "Diablillos voraces"
+        },
+        "damage": "magic",
+        "base": 1400,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 401006507,
+        "names": {
+          "en": "Meteor Swarm",
+          "tw": "流星雨",
+          "kr": "메테오 스웜",
+          "fr": "Nuée de météores",
+          "de": "Meteorstrom",
+          "es": "Nubarrón de meteoros"
+        },
+        "damage": "magic",
+        "base": 1290,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          130, 10, 10, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          911857,
+          911858,
+          911859,
+          911860,
+          911866,
+          911867,
+          911870,
+          911873,
+          911878,
+          911879,
+          911884,
+          911885
+        ]
       }
     ]
   }

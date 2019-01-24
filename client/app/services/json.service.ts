@@ -25,6 +25,25 @@ export class JsonService {
     'dark'
   ];
 
+  moveTypes = {
+    0: "none",
+    1: "walk",
+    2: "walk",
+    3: "wrap",
+    4: "none",
+    5: "run",
+    6: "dash"
+  };
+
+  motionTypes = {
+    1: "default",
+    2: "orb",
+    3: "none",
+    5: "crouch",
+    6: "dance",
+    8: "default"
+  };
+
   constructor(private http: HttpClient) {}
 
   private getUnits() {
@@ -187,7 +206,9 @@ export class JsonService {
       names: this.getNames(ability, level),
       damage: null,
       base: 0,
-      hitDamage: []
+      hitDamage: [],
+      // move: this.moveTypes[ability.move_type],
+      // motion : this.motionTypes[ability.motion_type]
     };
 
     if (!lb) {

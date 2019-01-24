@@ -256,11 +256,11 @@
             "id": 508281,
             "names": {
               "en": "Burst Storm",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "爆裂風暴",
+              "kr": "버스트 스톰",
+              "fr": "Tempête explosive",
+              "de": "Rauschender Sturm",
+              "es": "Explosión tormentosa"
             },
             "offset": 16,
             "castTime": 40
@@ -1337,7 +1337,7 @@
           {
             "id": 228882,
             "names": {
-              "en": "Jecht Slash",
+              "en": "Hot Steel",
               "tw": "null",
               "kr": "null",
               "fr": "null",
@@ -1872,10 +1872,10 @@
             "names": {
               "en": "Octostrike Blade",
               "tw": "八連刃",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "팔연검",
+              "fr": "Lame octimpact",
+              "de": "Klinge des Achtfachen Streichs",
+              "es": "Hoja octaimpacto"
             },
             "offset": 16,
             "castTime": 40
@@ -1884,11 +1884,11 @@
             "id": 508351,
             "names": {
               "en": "Crimson Frost Edge",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "破炎蒼劍",
+              "kr": "열빙의 비검",
+              "fr": "Lame de glace écarlate",
+              "de": "Purpurrote Frostklinge",
+              "es": "Filo gélido escarlata"
             },
             "offset": 16,
             "castTime": 40
@@ -1973,7 +1973,7 @@
           {
             "id": 228906,
             "names": {
-              "en": "Decaying Flames",
+              "en": "Gnawing Flame",
               "tw": "null",
               "kr": "null",
               "fr": "null",
@@ -1986,7 +1986,7 @@
           {
             "id": 228907,
             "names": {
-              "en": "Hell Winds",
+              "en": "Hellstorm",
               "tw": "null",
               "kr": "null",
               "fr": "null",
@@ -2038,6 +2038,29 @@
               "fr": "null",
               "de": "Schockwelle des Weißen Tigers",
               "es": "null"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 318000105,
+        "names": {
+          "en": "Fayt",
+          "tw": "菲特",
+          "kr": "페이트"
+        },
+        "abilities": [
+          {
+            "id": 911894,
+            "names": {
+              "en": "Enhanced Shotgun Blast",
+              "tw": "強化散彈槍·伏特",
+              "kr": "강화 샷건·볼트",
+              "fr": "Super fusillade explosive",
+              "de": "Verstärkter Schrotflintenschuss",
+              "es": "Supertiroteo explosivo"
             },
             "offset": 16,
             "castTime": 40
@@ -2348,12 +2371,12 @@
           {
             "id": 508350,
             "names": {
-              "en": "Blue Flame Edge",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "en": "Azure Flame Edge",
+              "tw": "八連刃",
+              "kr": "파염의 창검",
+              "fr": "Lame de flamme azur",
+              "de": "Azurblaue Flammenklinge",
+              "es": "Filo azurígneo"
             },
             "offset": 16,
             "castTime": 40
@@ -2373,10 +2396,10 @@
             "names": {
               "en": "Shadow Dragon Roar + 1",
               "tw": "暗龍咆絕破 + 1",
-              "kr": "null + 1",
-              "fr": "null + 1",
-              "de": "null + 1",
-              "es": "null + 1"
+              "kr": "흑룡포절파 + 1",
+              "fr": "Rugissement du dragon des ombres + 1",
+              "de": "Gebrüll des Schattendrachen + 1",
+              "es": "Rugido del dragón de las sombras + 1"
             },
             "offset": 16,
             "castTime": 40
@@ -2425,10 +2448,8 @@
             "names": {
               "en": "Flughöhe",
               "tw": "飛行高度",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "비행 고도",
+              "es": "Altitud"
             },
             "offset": 16,
             "castTime": 40
@@ -3980,6 +4001,57 @@
     ]
   },
   {
+    "family": "60-8-8-8",
+    "units": [
+      {
+        "id": 306000503,
+        "names": {
+          "en": "Golem",
+          "tw": "巨像兵",
+          "kr": "골렘",
+          "es": "Gólem"
+        },
+        "abilities": [
+          {
+            "id": 205840,
+            "names": {
+              "en": "Multifists",
+              "tw": "爆裂拳",
+              "kr": "폭렬권",
+              "fr": "Multipoing",
+              "de": "Faustwirbel",
+              "es": "Multipuñetazo"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 306001005,
+        "names": {
+          "en": "Marquis de Léon",
+          "tw": "獅王",
+          "kr": "킹 레오",
+          "fr": "Lord Lionel"
+        },
+        "abilities": [
+          {
+            "id": 205840,
+            "names": {
+              "en": "Multifists",
+              "tw": "爆裂拳",
+              "kr": "폭렬권",
+              "fr": "Multipoing",
+              "de": "Faustwirbel",
+              "es": "Multipuñetazo"
+            },
+            "offset": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "2-8-8-8-8-8",
     "units": [
       {
@@ -4746,6 +4818,29 @@
   {
     "family": "82-8-8-8-8-8-8-8",
     "units": [
+      {
+        "id": 100011305,
+        "names": {
+          "en": "Jiraiya",
+          "tw": "自來也",
+          "kr": "지라이야"
+        },
+        "abilities": [
+          {
+            "id": 911920,
+            "names": {
+              "en": "True Purgatory Fire Slash + 1",
+              "tw": "真‧煉獄剎燒斬 + 1",
+              "kr": "진·연옥찰소참 + 1",
+              "fr": "Flammes du purgatoire ultimes + 1",
+              "de": "Wahrer Flammenschlag des Purgatoriums + 1",
+              "es": "Tajo fulminante del purgatorio + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
       {
         "id": 215001105,
         "names": {
@@ -6059,12 +6154,12 @@
           {
             "id": 503410,
             "names": {
-              "en": "Thunder Strike Stance + 1",
-              "tw": "轟雷衝擊陣 + 1",
-              "kr": "굉뇌격출진 + 1",
-              "fr": "Posture électrocoup + 1",
-              "de": "Gewitterschlag-Kata + 1",
-              "es": "Electrogolpe firme + 1"
+              "en": "Thunder Strike Stance",
+              "tw": "轟雷衝擊陣",
+              "kr": "굉뇌격출진",
+              "fr": "Posture électrocoup",
+              "de": "Gewitterschlag-Kata",
+              "es": "Electrogolpe firme"
             },
             "offset": 16,
             "castTime": 40
@@ -6189,6 +6284,29 @@
               "fr": "Coup de pied du Faucon + 2",
               "de": "Falkentritt + 2",
               "es": "Patada halcón + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100011305,
+        "names": {
+          "en": "Jiraiya",
+          "tw": "自來也",
+          "kr": "지라이야"
+        },
+        "abilities": [
+          {
+            "id": 911921,
+            "names": {
+              "en": "True Thunder Strike Stance + 1",
+              "tw": "真‧轟雷擊衝陣 + 1",
+              "kr": "진·굉뇌격출진 + 1",
+              "fr": "Posture électrocoup ultime + 1",
+              "de": "Wahre Gewitterschlag-Kata + 1",
+              "es": "Azote fulminante del trueno + 1"
             },
             "offset": 16,
             "castTime": 40
@@ -6841,13 +6959,13 @@
         },
         "abilities": [
           {
-            "id": 318000106,
+            "id": 318000107,
             "names": {
               "en": "Ethereal Blast of Time",
               "tw": "異凍·衝刺·刻",
               "kr": "이데리얼 블래스트·타임",
               "fr": "Explosion éthérée du temps",
-              "de": "Iserialknall - Zeit",
+              "de": "Ätherischer Zeitknall",
               "es": "Explosión temporal etérea"
             },
             "offset": 8
@@ -6869,7 +6987,7 @@
               "tw": "異凍·衝擊",
               "kr": "이데리얼 블래스트",
               "fr": "Explosion iserial",
-              "de": "Iserialknall",
+              "de": "Ätherknall",
               "es": "Explosión etérea"
             },
             "offset": 8
@@ -8010,6 +8128,29 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401006505,
+        "names": {
+          "en": "Sophia",
+          "tw": "索菲雅",
+          "kr": "소피아"
+        },
+        "abilities": [
+          {
+            "id": 911870,
+            "names": {
+              "en": "Deep Freeze",
+              "tw": "深寒凍結",
+              "kr": "딥 프리즈",
+              "fr": "Surgélation",
+              "de": "Tiefgefrieren",
+              "es": "Hipotermia total"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -8403,6 +8544,42 @@
             "castTime": 50
           }
         ]
+      },
+      {
+        "id": 401006505,
+        "names": {
+          "en": "Sophia",
+          "tw": "索菲雅",
+          "kr": "소피아"
+        },
+        "abilities": [
+          {
+            "id": 911884,
+            "names": {
+              "en": "Efreet",
+              "tw": "伊弗利特之劍",
+              "kr": "이프리트 소드",
+              "fr": "Éfrit",
+              "de": "Ifritschwert",
+              "es": "Espada Ifrit"
+            },
+            "offset": 16,
+            "castTime": 50
+          },
+          {
+            "id": 911885,
+            "names": {
+              "en": "Ravenous Fiend",
+              "tw": "貪婪惡魔",
+              "kr": "그렘린 레어",
+              "fr": "Gremlins",
+              "de": "Räuberischer Freund",
+              "es": "Diablillos voraces"
+            },
+            "offset": 16,
+            "castTime": 50
+          }
+        ]
       }
     ]
   },
@@ -8676,6 +8853,29 @@
               "fr": "Ordre - Explosion des basses",
               "de": "Befehl - Bassexplosion",
               "es": "Orden - Explosión de bajo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006505,
+        "names": {
+          "en": "Sophia",
+          "tw": "索菲雅",
+          "kr": "소피아"
+        },
+        "abilities": [
+          {
+            "id": 911879,
+            "names": {
+              "en": "Stone Rain",
+              "tw": "岩石之雨",
+              "kr": "록 레인",
+              "fr": "Pluie de pierres",
+              "de": "Steinregen",
+              "es": "Lluvia de piedra"
             },
             "offset": 16,
             "castTime": 40

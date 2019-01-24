@@ -63,7 +63,9 @@ export class JsonComponent implements OnInit {
             id: ability.dataId,
             names: ability.names,
             offset: ability.offset,
-            castTime: ability.castTime
+            castTime: ability.castTime,
+            // move: ability.move,
+            // motion: ability.motion
           });
         }
       });
