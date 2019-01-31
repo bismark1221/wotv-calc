@@ -10512,10 +10512,26 @@ export const UNITS: any[] = [
           de: "Durchdringender Schuss",
           es: "Tiro penetrante"
         },
-        castTime: 20,
-        framesList: [22],
-        offset: 16,
+        castTime: 60,
+        framesList: [22, 36, 36],
+        offset: 48,
         base: 70
+      },
+      {
+        id: 11,
+        names: {
+          en: "Penetrating Shot + 2",
+          tw: "穿甲連射 + 2",
+          kr: "철갑연사 + 2",
+          fr: "Tir pénétrant + 2",
+          de: "Durchdringender Schuss + 2",
+          es: "Tiro penetrante + 2"
+        },
+        castTime: 60,
+        framesList: [22, 36, 36],
+        offset: 48,
+        base: 100,
+        ignore: 50
       },
       {
         id: 7,
@@ -11027,6 +11043,28 @@ export const UNITS: any[] = [
         base: 400
       },
       {
+        id: 10,
+        names: {
+          en: "Whirlwind Evasion 2 + 2",
+          tw: "旋風遁・二式 + 2",
+          kr: "질풍둔 2식 + 2",
+          fr: "Évasion - Tornade II + 2",
+          de: "Wirbelwindvermeidung 2 + 2",
+          es: "Evasión del remolino II + 2"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "wind"
+        ],
+        framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        offset: 16,
+        base: 700
+      },
+      {
         id: 2,
         names: {
           en: "Earthsplit Evasion 2",
@@ -11045,6 +11083,28 @@ export const UNITS: any[] = [
           "earth"
         ],
         framesList: [120, 10, 10, 10, 10, 10, 10, 10],
+        offset: 16,
+        base: 425
+      },
+      {
+        id: 20,
+        names: {
+          en: "Earthsplit Evasion 2 + 2",
+          tw: "土割遁・二式 + 2",
+          kr: "토할둔 2식 + 2",
+          fr: "Évasion - Fissure terrestre II + 2",
+          de: "Erdspaltenvermeidung 2 + 2",
+          es: "Evasión partetierra II + 2"
+        },
+        hitDamage: [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        castTime: 40,
+        damage: "hybrid",
+        elements: [
+          "earth"
+        ],
+        framesList: [160, 22, 21, 22, 23, 23, 22, 23],
         offset: 16,
         base: 425
       },
@@ -13326,23 +13386,6 @@ export const UNITS: any[] = [
         framesList: [10, 10, 10, 10, 10, 10, 10],
         offset: 32,
         base: 520
-      },
-      {
-        id: 100013806,
-        names: {
-          en: "Flower Barrage",
-          tw: "六華仙裂",
-          kr: "육화선열",
-          fr: "Déluge de fleurs",
-          de: "Blumenbeschuss",
-          es: "Descarga floral"
-        },
-        hitDamage: [
-          15, 10, 10, 10, 10, 10, 10, 10, 15
-        ],
-        dualable: false,
-        framesList: [49, 16, 16, 12, 8, 15, 6, 3, 54],
-        base: 1240
       },
       {
         "id": 508330,
@@ -23802,6 +23845,50 @@ export const UNITS: any[] = [
         "offset": 16
       },
       {
+        "id": 215030,
+        "names": {
+          "en": "Frostbite",
+          "tw": "冰霜痛擊",
+          "kr": "동상",
+          "fr": "Gelure",
+          "de": "Frostbiss",
+          "es": "Frío quemador"
+        },
+        "base": 450,
+        "hitDamage": [50, 50],
+        "castTime": 100,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          }
+        ],
+        "framesList": [10, 70]
+      },
+      {
+        "id": 215031,
+        "names": {
+          "en": "Frostbite + 2",
+          "tw": "冰霜痛擊 + 2",
+          "kr": "동상 + 2",
+          "fr": "Gelure + 2",
+          "de": "Frostbiss + 2",
+          "es": "Frío quemador + 2"
+        },
+        "base": 600,
+        "hitDamage": [50, 50],
+        "castTime": 100,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 75
+          }
+        ],
+        "framesList": [10, 70]
+      },
+      {
         "id": 227523,
         "names": {
           "en": "Empyrean Frost Arrow",
@@ -26822,6 +26909,998 @@ export const UNITS: any[] = [
           911879,
           911884,
           911885
+        ]
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "names": {
+      "en": "Miyuki",
+      "tw": "美雪",
+      "kr": "미유키"
+    },
+    "abilities": [
+      {
+        "id": 218130,
+        "names": {
+          "en": "Kunai Rain",
+          "tw": "苦無雨",
+          "kr": "수리검 강우",
+          "fr": "Pluie de kunai",
+          "de": "Kunai-Regen",
+          "es": "Lluvia de kunai"
+        },
+        "base": 180,
+        "hitDamage": [
+          16, 16, 17, 17, 17, 17
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 218131,
+        "names": {
+          "en": "Kunai Rain + 2",
+          "tw": "苦無雨 + 2",
+          "kr": "수리검 강우 + 2",
+          "fr": "Pluie de kunai + 2",
+          "de": "Kunai-Regen + 2",
+          "es": "Lluvia de kunai + 2"
+        },
+        "base": 230,
+        "hitDamage": [
+          16, 16, 17, 17, 17, 17
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          42, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 217700,
+        "names": {
+          "en": "Lightning 2",
+          "tw": "雷擊二式",
+          "kr": "뇌격 2식",
+          "fr": "Éclair II",
+          "de": "Blitzschlag 2",
+          "es": "Relámpago II"
+        },
+        "damage": "hybrid",
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 218090,
+        "names": {
+          "en": "Blitz 2",
+          "tw": "雷迅二式",
+          "kr": "뇌신 2식",
+          "fr": "Tonnerre II",
+          "de": "Entladung 2",
+          "es": "Centella II"
+        },
+        "damage": "hybrid",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 218100,
+        "names": {
+          "en": "Trick Attack",
+          "tw": "暗算偷襲",
+          "kr": "속여넘기기",
+          "fr": "Attaque feintée",
+          "de": "Trickangriff",
+          "es": "Ataque engañoso"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 218110,
+        "names": {
+          "en": "Shadowbinder",
+          "tw": "影縫",
+          "kr": "그림자 솔기",
+          "fr": "Entrave d'ombre",
+          "de": "Schattenbinden",
+          "es": "Tejedor de sombras"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "id": 218140,
+        "names": {
+          "en": "Thundersplit Blade",
+          "tw": "絕雙雷裂刃",
+          "kr": "절쌍뇌열인",
+          "fr": "Lame tranchefoudre",
+          "de": "Donnerspaltklinge",
+          "es": "Cuchilla parterayo"
+        },
+        "base": 360,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "offset": 8,
+        "framesList": [
+          14, 14, 15, 15, 15, 14
+        ]
+      },
+      {
+        "id": 218141,
+        "names": {
+          "en": "Thundersplit Blade + 2",
+          "tw": "絕雙雷裂刃 + 2",
+          "kr": "절쌍뇌열인 + 2",
+          "fr": "Lame tranchefoudre + 2",
+          "de": "Donnerspaltklinge + 2",
+          "es": "Cuchilla parterayo + 2"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "elements": [
+          "lightning"
+        ],
+        "offset": 8,
+        "framesList": [
+          14, 14, 15, 15, 15, 14
+        ]
+      },
+      {
+        "id": 100003806,
+        "names": {
+          "en": "Mugen",
+          "tw": "夢幻之術",
+          "kr": "몽환술"
+        },
+        "base": 790,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 12, 12, 13
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          138, 1, 1, 1, 1, 1, 1, 1, 1, 17, 10, 10
+        ]
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "names": {
+      "en": "Auron",
+      "tw": "奧隆",
+      "kr": "아론"
+    },
+    "abilities": [
+      {
+        "id": 228909,
+        "names": {
+          "en": "Power Break",
+          "tw": "潰力",
+          "kr": "파워 브레이크",
+          "fr": "Émousse",
+          "de": "Kraftbrecher",
+          "es": "Rompebrazo"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          18
+        ]
+      },
+      {
+        "id": 228910,
+        "names": {
+          "en": "Magic Break",
+          "tw": "潰魔",
+          "kr": "매직 브레이크",
+          "fr": "Annumagik",
+          "de": "Magiebrecher",
+          "es": "Rompemagia"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          18
+        ]
+      },
+      {
+        "id": 228911,
+        "names": {
+          "en": "Armor Break",
+          "tw": "潰甲",
+          "kr": "아머 브레이크",
+          "fr": "Trépan",
+          "de": "Panzerbrecher",
+          "es": "Rompecoraza"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          18
+        ]
+      },
+      {
+        "id": 228912,
+        "names": {
+          "en": "Mental Break",
+          "tw": "潰心",
+          "kr": "멘탈 브레이크",
+          "fr": "Déprime",
+          "de": "Geistbrecher",
+          "es": "Rompecoraza"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          18
+        ]
+      },
+      {
+        "id": 228903,
+        "names": {
+          "en": "Banishing Blade",
+          "tw": "征伐",
+          "kr": "정벌",
+          "fr": "Éradication",
+          "de": "Suppression",
+          "es": "Hoja exiliadora"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          48
+        ]
+      },
+      {
+        "id": 228901,
+        "names": {
+          "en": "Dragon Fang",
+          "tw": "牙龍",
+          "kr": "아룡",
+          "fr": "Dent de dragon",
+          "de": "Seisma",
+          "es": "Sablazo sísmico"
+        },
+        "base": 360,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          68
+        ]
+      },
+      {
+        "id": 228906,
+        "names": {
+          "en": "Gnawing Flame",
+          "tw": "蝕炎",
+          "kr": "융염",
+          "fr": "Flamme dévorante",
+          "de": "Zerfressende Flamme",
+          "es": "Llama lacerante"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 228907,
+        "names": {
+          "en": "Hellstorm",
+          "tw": "業風",
+          "kr": "업풍",
+          "fr": "Ouragan infernal",
+          "de": "Höllenwind",
+          "es": "Tormenta infernal"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 228902,
+        "names": {
+          "en": "Shooting Star",
+          "tw": "流星",
+          "kr": "유성",
+          "fr": "Comète",
+          "de": "Holosiderit",
+          "es": "Estrella fugaz"
+        },
+        "base": 275,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          38
+        ]
+      },
+      {
+        "id": 508764,
+        "names": {
+          "en": "Take the Initiative",
+          "tw": "先驅",
+          "kr": "선구자",
+          "fr": "Esprit d'initiative",
+          "de": "Vorpreschen",
+          "es": "Precursor"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 508761,
+        "names": {
+          "en": "God-Killer",
+          "tw": "弒神",
+          "kr": "신살",
+          "fr": "Déicide",
+          "de": "Gottestöter",
+          "es": "Ejecutor de dioses"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          126
+        ]
+      },
+      {
+        "id": 210000607,
+        "names": {
+          "en": "Tornado",
+          "tw": "陣風",
+          "kr": "진풍",
+          "fr": "Tornade",
+          "de": "Zephyr",
+          "es": "Huracán"
+        },
+        "base": 900,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 79
+          },
+          {
+            "type": "wind",
+            "value": 79
+          }
+        ],
+        "framesList": [
+          225, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          228909,
+          228910,
+          228911,
+          228912
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          228901,
+          228902,
+          228903,
+          228906,
+          228907,
+          508761
+        ]
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "names": {
+      "en": "Jecht",
+      "tw": "傑克特",
+      "kr": "젝트",
+      "de": "Jekkt"
+    },
+    "abilities": [
+      {
+        "id": 207040,
+        "names": {
+          "en": "Jecht Shot",
+          "tw": "傑克特射門",
+          "kr": "젝트 슛",
+          "fr": "Jecht Shoot",
+          "de": "Jekkt-Spezial",
+          "es": "Chut de Jecht"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228880,
+        "names": {
+          "en": "Jecht Beam",
+          "tw": "傑克特光束",
+          "kr": "젝트 빔",
+          "fr": "Regard de tueur",
+          "de": "Jekkt-Strahl",
+          "es": "Rayo de Jecht"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 228883,
+        "names": {
+          "en": "Triumphant Grasp",
+          "tw": "傑克特之指",
+          "kr": "젝트 핑거",
+          "fr": "Poigne de fer",
+          "de": "Jekkt-Finger",
+          "es": "Mano de Jecht"
+        },
+        "base": 420,
+        "hitDamage": [
+          28.571428571428573,
+          71.42857142857143
+        ],
+        "offset": 8,
+        "framesList": [
+          19,
+          47
+        ]
+      },
+      {
+        "id": 228884,
+        "names": {
+          "en": "Jecht Bomber",
+          "tw": "傑克特轟炸",
+          "kr": "젝트 보머",
+          "fr": "Aura oppressante",
+          "de": "Jekkt-Bombe",
+          "es": "Furia de Jecht"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 66,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          66
+        ]
+      },
+      {
+        "id": 228885,
+        "names": {
+          "en": "Jecht Shot Mark III",
+          "tw": "傑克特射門3號",
+          "kr": "젝트 님 슛 3호",
+          "fr": "Incroyable Shoot du Grand Jecht no 3",
+          "de": "Jekkt-Spezial 3",
+          "es": "Chut de Jecht número 3"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228881,
+        "names": {
+          "en": "Jecht Rush",
+          "tw": "傑克特衝鋒",
+          "kr": "젝트 러쉬",
+          "fr": "Ruée de Jecht",
+          "de": "Jekkt-Rausch",
+          "es": "Acometida de Jecht"
+        },
+        "base": 300,
+        "hitDamage": [
+          2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 83.33333333333331
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 228882,
+        "names": {
+          "en": "Hot Steel",
+          "tw": "傑克特斬擊",
+          "kr": "젝트 슬래시",
+          "fr": "Feinte de Jecht",
+          "de": "Jekkt-Hieb",
+          "es": "Acero caliente"
+        },
+        "base": 520,
+        "hitDamage": [
+          2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.307692307692308, 76.92307692307692
+        ],
+        "castTime": 20,
+        "offset": 16,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ]
+      },
+      {
+        "id": 228886,
+        "names": {
+          "en": "Quick Block",
+          "tw": "快速格擋",
+          "kr": "퀵 블록",
+          "fr": "Blocage rapide",
+          "de": "Blitzblock",
+          "es": "Bloqueo rápido"
+        },
+        "base": 180,
+        "hitDamage": [
+          30, 70
+        ],
+        "castTime": 17,
+        "offset": 16,
+        "framesList": [
+          18, 48
+        ]
+      },
+      {
+        "id": 508753,
+        "names": {
+          "en": "Otherworld",
+          "tw": "另一個世界",
+          "kr": "다른 세계",
+          "fr": "Outremonde",
+          "es": "Ultramundo"
+        },
+        "base": 900,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          290
+        ]
+      },
+      {
+        "id": 210001007,
+        "names": {
+          "en": "Ultimate Jecht Shot",
+          "tw": "真·傑克特射門",
+          "kr": "진 젝트 소드",
+          "fr": "Ultime Jecht Shoot",
+          "de": "Original Jekkt-Spezial",
+          "es": "Auténtico chut de Jecht"
+        },
+        "base": 1600,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          365
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          207040,
+          228880,
+          228881,
+          228882,
+          228883,
+          228884,
+          228885,
+          228886
+        ]
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "names": {
+      "en": "Belgemine",
+      "tw": "貝爾格米娜",
+      "kr": "베르게미네",
+      "de": "Belgmene"
+    },
+    "abilities": [
+      {
+        "id": 228930,
+        "names": {
+          "en": "Valefor's Power",
+          "tw": "瓦爾法雷之力",
+          "kr": "발파레의 힘",
+          "fr": "Pouvoir de Valefor",
+          "de": "Macht von Valfaris",
+          "es": "Poder de Valefor"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          140
+        ]
+      },
+      {
+        "id": 228931,
+        "names": {
+          "en": "Ifrit's Power",
+          "tw": "伊弗利特之力",
+          "kr": "이프리트의 힘",
+          "fr": "Pouvoir d'Ifrit",
+          "de": "Macht von Ifrit",
+          "es": "Poder de Ifrit"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 228932,
+        "names": {
+          "en": "Ixion's Power",
+          "tw": "伊克西翁之力",
+          "kr": "익시온의 힘",
+          "fr": "Pouvoir d'Ixion",
+          "de": "Macht von Ixion",
+          "es": "Poder de Ixion"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 228933,
+        "names": {
+          "en": "Shiva's Power",
+          "tw": "濕婆之力",
+          "kr": "시바의 힘",
+          "fr": "Pouvoir de Shiva",
+          "de": "Macht von Shiva",
+          "es": "Poder de Shiva"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 228934,
+        "names": {
+          "en": "Bahamut's Power",
+          "tw": "巴哈姆特之力",
+          "kr": "바하무트의 힘",
+          "fr": "Pouvoir de Bahamut",
+          "de": "Macht von Bahamut",
+          "es": "Poder de Bahamut"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 228936,
+        "names": {
+          "en": "Anima's Power",
+          "tw": "靈魂之力",
+          "kr": "아니마의 힘",
+          "fr": "Pouvoir d'Anima",
+          "de": "Macht von Anima",
+          "es": "Poder de Ánima"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 40
+          },
+          {
+            "type": "dark",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228937,
+        "names": {
+          "en": "Magus Sisters' Power",
+          "tw": "梅格思三姐妹之力",
+          "kr": "메이거스 3자매의 힘",
+          "fr": "Pouvoir des Sœurs Magus",
+          "de": "Macht der Magus-Schwestern",
+          "es": "Poder de las hermanas Magus"
+        },
+        "damage": "magic",
+        "base": 225,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 41,
+        "dualable": false,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "id": 210001906,
+        "names": {
+          "en": "Dance of Summoning",
+          "tw": "召喚連舞",
+          "kr": "소환연무",
+          "fr": "Danse d'invocation",
+          "de": "Beschwörungstanz",
+          "es": "Danza de la invocación"
+        },
+        "damage": "magic",
+        "base": 740,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          460
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          228930,
+          228931,
+          228932,
+          228933,
+          228934,
+          228936,
+          228937
         ]
       }
     ]

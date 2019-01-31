@@ -30,6 +30,11 @@ export class FamiliesComponent implements OnInit {
       units: []
     },
     {
+      frames: "70-6-6-6-6-6-6-6",
+      name: "Absolute Mirror of Equity",
+      units: []
+    },
+    {
       frames: "2-8-8-8-8-8-8",
       name: "families.families.pd",
       units: []

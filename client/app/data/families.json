@@ -1327,22 +1327,20 @@
         "id": 210001005,
         "names": {
           "en": "Jecht",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "傑克特",
+          "kr": "젝트",
+          "de": "Jekkt"
         },
         "abilities": [
           {
             "id": 228882,
             "names": {
               "en": "Hot Steel",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "傑克特斬擊",
+              "kr": "젝트 슬래시",
+              "fr": "Feinte de Jecht",
+              "de": "Jekkt-Hieb",
+              "es": "Acero caliente"
             },
             "offset": 16,
             "castTime": 20
@@ -1812,7 +1810,7 @@
           "tw": "探險家艾琳",
           "kr": "탐험가 아이린",
           "fr": "Aileen exploratrice",
-          "de": "Forscher Aileen",
+          "de": "Forscherin Aileen",
           "es": "Aileen exploradora"
         },
         "abilities": [
@@ -1963,22 +1961,19 @@
         "id": 210000605,
         "names": {
           "en": "Auron",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "奧隆",
+          "kr": "아론"
         },
         "abilities": [
           {
             "id": 228906,
             "names": {
               "en": "Gnawing Flame",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "蝕炎",
+              "kr": "융염",
+              "fr": "Flamme dévorante",
+              "de": "Zerfressende Flamme",
+              "es": "Llama lacerante"
             },
             "offset": 16,
             "castTime": 40
@@ -1987,11 +1982,11 @@
             "id": 228907,
             "names": {
               "en": "Hellstorm",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "業風",
+              "kr": "업풍",
+              "fr": "Ouragan infernal",
+              "de": "Höllenwind",
+              "es": "Tormenta infernal"
             },
             "offset": 16,
             "castTime": 40
@@ -2632,22 +2627,20 @@
         "id": 210001005,
         "names": {
           "en": "Jecht",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "傑克特",
+          "kr": "젝트",
+          "de": "Jekkt"
         },
         "abilities": [
           {
             "id": 228881,
             "names": {
               "en": "Jecht Rush",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "傑克特衝鋒",
+              "kr": "젝트 러쉬",
+              "fr": "Ruée de Jecht",
+              "de": "Jekkt-Rausch",
+              "es": "Acometida de Jecht"
             },
             "offset": 16,
             "castTime": 40
@@ -2658,22 +2651,20 @@
         "id": 210001904,
         "names": {
           "en": "Belgemine",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "貝爾格米娜",
+          "kr": "베르게미네",
+          "de": "Belgmene"
         },
         "abilities": [
           {
             "id": 228931,
             "names": {
               "en": "Ifrit's Power",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "伊弗利特之力",
+              "kr": "이프리트의 힘",
+              "fr": "Pouvoir d'Ifrit",
+              "de": "Macht von Ifrit",
+              "es": "Poder de Ifrit"
             },
             "offset": 16,
             "castTime": 40
@@ -2682,11 +2673,11 @@
             "id": 228932,
             "names": {
               "en": "Ixion's Power",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "伊克西翁之力",
+              "kr": "익시온의 힘",
+              "fr": "Pouvoir d'Ixion",
+              "de": "Macht von Ixion",
+              "es": "Poder de Ixion"
             },
             "offset": 16,
             "castTime": 40
@@ -2695,11 +2686,11 @@
             "id": 228933,
             "names": {
               "en": "Shiva's Power",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "濕婆之力",
+              "kr": "시바의 힘",
+              "fr": "Pouvoir de Shiva",
+              "de": "Macht von Shiva",
+              "es": "Poder de Shiva"
             },
             "offset": 16,
             "castTime": 40
@@ -4123,6 +4114,32 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 707308,
+            "names": {
+              "en": "Kunai Rain + 1",
+              "tw": "苦無雨 + 1",
+              "kr": "수리검 강우 + 1",
+              "fr": "Pluie de kunai + 1",
+              "de": "Kunai-Regen + 1",
+              "es": "Lluvia de kunai + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 707309,
+            "names": {
+              "en": "Kunai Rain + 2",
+              "tw": "苦無雨 + 2",
+              "kr": "수리검 강우 + 2",
+              "fr": "Pluie de kunai + 2",
+              "de": "Kunai-Regen + 2",
+              "es": "Lluvia de kunai + 2"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -4447,7 +4464,7 @@
           "tw": "探險家艾琳",
           "kr": "탐험가 아이린",
           "fr": "Aileen exploratrice",
-          "de": "Forscher Aileen",
+          "de": "Forscherin Aileen",
           "es": "Aileen exploradora"
         },
         "abilities": [
@@ -4532,6 +4549,27 @@
               "fr": "Tronçonneuse",
               "de": "Kettensäge",
               "es": "Motosierra"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100019704,
+        "names": {
+          "en": null
+        },
+        "abilities": [
+          {
+            "id": 209920,
+            "names": {
+              "en": "Special Hammer",
+              "tw": "特殊鎚擊",
+              "kr": "스페셜 망치",
+              "fr": "Marteau spécial",
+              "de": "Spezialhammer",
+              "es": "Martillo especial"
             },
             "offset": 16,
             "castTime": 40
@@ -6302,7 +6340,7 @@
             "id": 911921,
             "names": {
               "en": "True Thunder Strike Stance + 1",
-              "tw": "真‧轟雷擊衝陣 + 1",
+              "tw": "真‧轟雷衝擊陣 + 1",
               "kr": "진·굉뇌격출진 + 1",
               "fr": "Posture électrocoup ultime + 1",
               "de": "Wahre Gewitterschlag-Kata + 1",
@@ -6868,6 +6906,19 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 707314,
+            "names": {
+              "en": "Earthsplit Evasion 2 + 1",
+              "tw": "土割遁・二式 + 1",
+              "kr": "토할둔 2식 + 1",
+              "fr": "Évasion - Fissure terrestre II + 1",
+              "de": "Erdspaltenvermeidung 2 + 1",
+              "es": "Evasión partetierra II + 1"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -7267,6 +7318,29 @@
         ]
       },
       {
+        "id": 100010303,
+        "names": {
+          "en": "Yuri",
+          "tw": "百合",
+          "kr": "유리"
+        },
+        "abilities": [
+          {
+            "id": 707313,
+            "names": {
+              "en": "Whirlwind Evasion 2 + 2",
+              "tw": "旋風遁・二式 + 2",
+              "kr": "질풍둔 2식 + 2",
+              "fr": "Évasion - Tornade II + 2",
+              "de": "Wirbelwindvermeidung 2 + 2",
+              "es": "Evasión del remolino II + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100014005,
         "names": {
           "en": "Mediena",
@@ -7354,6 +7428,25 @@
           "fr": "Rydia, pure invocatrice",
           "de": "Reine Beschwörerin Rydia",
           "es": "Rydia invocadora pura"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 204001904,
+        "names": {
+          "en": null
         },
         "abilities": [
           {
@@ -8613,6 +8706,29 @@
         ]
       },
       {
+        "id": 100010303,
+        "names": {
+          "en": "Yuri",
+          "tw": "百合",
+          "kr": "유리"
+        },
+        "abilities": [
+          {
+            "id": 707315,
+            "names": {
+              "en": "Earthsplit Evasion 2 + 2",
+              "tw": "土割遁・二式 + 2",
+              "kr": "토할둔 2식 + 2",
+              "fr": "Évasion - Fissure terrestre II + 2",
+              "de": "Erdspaltenvermeidung 2 + 2",
+              "es": "Evasión partetierra II + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100010504,
         "names": {
           "en": "William",
@@ -9226,7 +9342,7 @@
           "tw": "探險家艾琳",
           "kr": "탐험가 아이린",
           "fr": "Aileen exploratrice",
-          "de": "Forscher Aileen",
+          "de": "Forscherin Aileen",
           "es": "Aileen exploradora"
         },
         "abilities": [
