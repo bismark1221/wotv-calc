@@ -460,11 +460,11 @@ export class ChainingComponent implements OnInit {
         if (multiCast.abilities.indexOf(ability.id) !== -1) {
           castNumber = multiCast.count;
 
-          console.log("multipleAbility")
           multiCast.abilities.forEach(abilityId => {
-            console.log(abilityId)
-            console.log(unit.abilities[this.findPositionOfAbilityById(unit, abilityId)])
-            unit.possibleMultiple.push(unit.abilities[this.findPositionOfAbilityById(unit, abilityId)]);
+            let tempAbility = unit.abilities[this.findPositionOfAbilityById(unit, abilityId)];
+            if (tempAbility) {
+              unit.possibleMultiple.push(tempAbility);
+            }
           });
         }
       }
@@ -840,7 +840,6 @@ export class ChainingComponent implements OnInit {
   }
 
   getAvailableAbilities(unitPosition: number, abilityPosition: number) {
-    console.log(this.chain[unitPosition])
     if (this.chain[unitPosition].selectedAbilities.length === 0 || abilityPosition === 0) {
       return this.chain[unitPosition].abilities;
     } else {
