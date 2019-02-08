@@ -10580,10 +10580,10 @@ export const UNITS: any[] = [
           de: "Versteinernder Schuss",
           es: "Tiro petrificante"
         },
-        castTime: 20,
-        framesList: [22],
-        offset: 16,
-        base: 70
+        castTime: 60,
+        framesList: [22, 36, 36],
+        offset: 48,
+        base: 210
       },
       {
         id: 6,
@@ -10598,7 +10598,7 @@ export const UNITS: any[] = [
         castTime: 60,
         framesList: [22, 36, 36],
         offset: 48,
-        base: 70
+        base: 210
       },
       {
         id: 11,
@@ -10613,7 +10613,7 @@ export const UNITS: any[] = [
         castTime: 60,
         framesList: [22, 36, 36],
         offset: 48,
-        base: 100,
+        base: 300,
         ignore: 50
       },
       {
@@ -10626,16 +10626,16 @@ export const UNITS: any[] = [
           de: "Ascheschuss",
           es: "Tiro de ceniza"
         },
-        castTime: 20,
+        castTime: 60,
         debuffs: [
           {
             type: "fire",
             value: 50
           }
         ],
-        framesList: [22],
-        offset: 16,
-        base: 70
+        framesList: [22, 36, 36],
+        offset: 48,
+        base: 210
       },
       {
         id: 72,
@@ -10647,16 +10647,16 @@ export const UNITS: any[] = [
           de: "Ascheschuss + 2",
           es: "Tiro de ceniza + 2"
         },
-        castTime: 20,
+        castTime: 60,
         debuffs: [
           {
             type: "fire",
             value: 75
           }
         ],
-        framesList: [22],
-        offset: 16,
-        base: 100,
+        framesList: [22, 36, 36],
+        offset: 48,
+        base: 300,
         ignore: 50
       },
       {
@@ -10669,10 +10669,10 @@ export const UNITS: any[] = [
           de: "Flinker Schuss",
           es: "Tiro rápido"
         },
-        castTime: 20,
-        framesList: [22],
-        offset: 16,
-        base: 200
+        castTime: 60,
+        framesList: [22, 36, 36],
+        offset: 48,
+        base: 600
       },
       {
         id: 9,
@@ -10749,12 +10749,12 @@ export const UNITS: any[] = [
           "de": "Gewagter Schuss",
           "es": "Tiro audaz"
         },
-        "base": 500,
-        "hitDamage": [],
-        "offset": 8,
+        "base": 1000,
+        "hitDamage": [50, 50],
+        "offset": 36,
         "ignore": 50,
         "framesList": [
-          15
+          15, 36
         ]
       },
       {
