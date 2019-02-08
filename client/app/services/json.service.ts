@@ -239,11 +239,10 @@ export class JsonService {
   private checkEffects(unitId, id, ability, dataId, level = 0) {
     let damageEffects = [];
     let effects = [];
-
     if (ability.effects_raw) {
       effects = ability.effects_raw;
-    } else if (ability.max_level) {
-      effects = ability.max_level.effects_raw;
+    } else if (ability.levels) {
+      effects = ability.levels[ability.levels.length - 1][1];
     }
 
     effects.forEach((effect, index) => {
@@ -327,6 +326,11 @@ export class JsonService {
     }
 
     find = this.findEffect(rawEffect, [130]);
+    if (find) {
+      this.addSkill(unitId, this.skills[find.effect[0]], find.effect[0], level);
+    }
+
+    find = this.findEffect(rawEffect, [132]);
     if (find) {
       this.addSkill(unitId, this.skills[find.effect[0]], find.effect[0], level);
     }

@@ -10358,6 +10358,89 @@ export const UNITS: any[] = [
             value: 50
           }
         ]
+      },
+      {
+        "id": 912018,
+        "names": {
+          "en": "Multi-Barrage",
+          "tw": "多重連射",
+          "kr": "다중 사격",
+          "fr": "Averse de coups",
+          "de": "Multi-Sperrfeuer",
+          "es": "Fuego múltiple"
+        },
+        "base": 350,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 72
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912017,
+        "names": {
+          "en": "Multi-Barrage+",
+          "tw": "多重連射改",
+          "kr": "개량형 다중 사격",
+          "fr": "Averse de coups +",
+          "de": "Multi-Sperrfeuer+",
+          "es": "Fuego múltiple+"
+        },
+        "base": 600,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 72
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912023,
+        "names": {
+          "en": "Perfect Strikes",
+          "tw": "完美直擊",
+          "kr": "완벽한 타격",
+          "fr": "Enchaînement parfait",
+          "de": "Perfekte Treffer",
+          "es": "Golpe perfecto"
+        },
+        "base": 800,
+        "hitDamage": [
+          5, 5, 6, 6, 7, 7, 9, 55
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 302000907,
+        "names": {
+          "en": "Golden Talisman",
+          "tw": "黃金護符",
+          "kr": "황금의 부적",
+          "fr": "Talisman doré",
+          "de": "Goldener Talisman",
+          "es": "Talismán dorado"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          100
+        ]
       }
     ]
   },
@@ -10555,6 +10638,28 @@ export const UNITS: any[] = [
         base: 70
       },
       {
+        id: 72,
+        names: {
+          en: "Ash Shot + 2",
+          tw: "灰燼連射 + 2",
+          kr: "회신연사 + 2",
+          fr: "Tir de cendre + 2",
+          de: "Ascheschuss + 2",
+          es: "Tiro de ceniza + 2"
+        },
+        castTime: 20,
+        debuffs: [
+          {
+            type: "fire",
+            value: 75
+          }
+        ],
+        framesList: [22],
+        offset: 16,
+        base: 100,
+        ignore: 50
+      },
+      {
         id: 8,
         names: {
           en: "Swift Shot",
@@ -10589,32 +10694,115 @@ export const UNITS: any[] = [
         ignore: 25
       },
       {
-        id: 10,
-        names: {
-          en: "Falling Sun",
-          tw: "射日",
-          kr: "낙일",
-          fr: "Soleil descendant",
-          de: "Sonnensturz",
-          es: "Sol descendente"
+        "id": 912031,
+        "names": {
+          "en": "Azure Arrow",
+          "tw": "蒼風之箭",
+          "kr": "창풍의 화살",
+          "fr": "Flèches azur",
+          "de": "Azurblauer Pfeil",
+          "es": "Flecha azulada"
         },
-        castTime: 60,
-        elements: [
-          "fire"
+        "base": 400,
+        "hitDamage": [
+          100
         ],
-        debuffs: [
+        "castTime": 20,
+        "offset": 16,
+        "debuffs": [
           {
-            type: "fire",
-            value: 74
+            "type": "wind",
+            "value": 75
           }
         ],
-        framesList: [150],
-        base: 650,
-        ignore: 50,
-        dualable: false
+        "framesList": [
+          22
+        ]
+      },
+      {
+        "id": 912034,
+        "names": {
+          "en": "Power Arrow",
+          "tw": "力量之箭",
+          "kr": "힘있는 화살",
+          "fr": "Tir focalisé",
+          "de": "Kraftpfeil",
+          "es": "Flecha implacable"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          22
+        ]
+      },
+      {
+        "id": 912028,
+        "names": {
+          "en": "Bold Shot",
+          "tw": "大膽射擊",
+          "kr": "대담한 발포",
+          "fr": "Tir audacieux",
+          "de": "Gewagter Schuss",
+          "es": "Tiro audaz"
+        },
+        "base": 500,
+        "hitDamage": [],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          15
+        ]
+      },
+      {
+        "id": 401003907,
+        "names": {
+          "en": "Falling Sun",
+          "tw": "射日",
+          "kr": "지는 해",
+          "fr": "Soleil descendant",
+          "de": "Sonnensturz",
+          "es": "Sol descendente"
+        },
+        "base": 940,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          150
+        ]
       }
     ],
-    dual: false
+    dual: false,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          9,
+          1,
+          2,
+          3,
+          4,
+          912031,
+          912034
+        ]
+      }
+    ]
   },
   {
     id: 102,
@@ -27901,6 +28089,771 @@ export const UNITS: any[] = [
           228934,
           228936,
           228937
+        ]
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "names": {
+      "en": "Qin",
+      "tw": "琴",
+      "kr": "친"
+    },
+    "abilities": [
+      {
+        "id": 911953,
+        "names": {
+          "en": "Recital - Vengeance Maelstrom",
+          "tw": "演奏 - 廣陵散",
+          "kr": "연주·광릉산",
+          "fr": "Récital - Maelström vengeur",
+          "de": "Aufführung - Mahlstrom der Rache",
+          "es": "Recital - Vórtice vengativo"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "id": 911955,
+        "names": {
+          "en": "Recital - Elemental Storm",
+          "tw": "演奏 - 五行嵐",
+          "kr": "연주·영속의 폭풍",
+          "fr": "Récital - Typhon des éléments",
+          "de": "Aufführung - Elementarsturm",
+          "es": "Recital - Tormenta elemental"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [100],
+        "castTime": 5,
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 70
+          },
+          {
+            "type": "ice",
+            "value": 70
+          },
+          {
+            "type": "lightning",
+            "value": 70
+          },
+          {
+            "type": "water",
+            "value": 70
+          },
+          {
+            "type": "wind",
+            "value": 70
+          },
+          {
+            "type": "earth",
+            "value": 70
+          },
+          {
+            "type": "light",
+            "value": 70
+          },
+          {
+            "type": "dark",
+            "value": 70
+          }
+        ],
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 911959,
+        "names": {
+          "en": "Recital - Nomad's Revenge",
+          "tw": "演奏 - 胡笳十八拍",
+          "kr": "연주·노마드의 복수",
+          "fr": "Récital - Revanche du nomade",
+          "de": "Aufführung - Rache des Nomaden",
+          "es": "Recital - Venganza de los nómadas"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 911961,
+        "names": {
+          "en": "Recital - Ten-Sided Ambush",
+          "tw": "演奏 - 十面埋伏",
+          "kr": "연주·십면 매복",
+          "fr": "Récital - Embuscade de tous côtés",
+          "de": "Aufführung - Zehnseitiger Überfall",
+          "es": "Recital - Emboscada sin escapatoria"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [100],
+        "castTime": 5,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 911965,
+        "names": {
+          "en": "Recital - Ambitious Comforts",
+          "tw": "演奏 - 平沙落雁",
+          "kr": "연주·야심찬 위안",
+          "fr": "Récital - Réconfort des oies sauvages",
+          "de": "Aufführung - Ambitionierte Behaglichkeiten",
+          "es": "Recital - Consuelo insaciable"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [100],
+        "castTime": 15,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 911969,
+        "names": {
+          "en": "Recital - Singing Praise",
+          "tw": "演奏 - 漁舟唱晚",
+          "kr": "연주·찬송",
+          "fr": "Récital - Fierté du pêcheur",
+          "de": "Aufführung - Lobgesang",
+          "es": "Recital - Orgullo de cantante"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [100],
+        "castTime": 20,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 911975,
+        "names": {
+          "en": "Recital - Secret Lark",
+          "tw": "演奏 - 寒鴉戲水",
+          "kr": "연주·비밀의 종달새",
+          "fr": "Récital - Escapade du corbeau",
+          "de": "Aufführung - Krähenspiel",
+          "es": "Recital - Chanza enigmática"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [100],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 911979,
+        "names": {
+          "en": "Recital - Invigorating Praise",
+          "tw": "演奏 - 梅花三弄",
+          "kr": "연주·활기찬 찬사",
+          "fr": "Récital - Force des fleurs de pêcher",
+          "de": "Aufführung - Erfrischender Lobgesang",
+          "es": "Recital - Elogio reconfortante"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [100],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 911985,
+        "names": {
+          "en": "Butterfly Dance",
+          "tw": "蝶舞",
+          "kr": "접무",
+          "fr": "Danse du papillon",
+          "de": "Tanz der Schmetterlinge",
+          "es": "Danza de la mariposa"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 911986,
+        "names": {
+          "en": "Searing Phoenix",
+          "tw": "燃燒的朱雀",
+          "kr": "타오르는 주작",
+          "fr": "Phénix incandescent",
+          "de": "Sengender Phönix",
+          "es": "Fénix llameante"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 911988,
+        "names": {
+          "en": "Razor Petal Storm",
+          "tw": "剃刀風暴",
+          "kr": "체도풍",
+          "fr": "Tornade de pétales tranchants",
+          "de": "Sturm der messerscharfen Blüten",
+          "es": "Tormenta de pétalos filosos"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 911987,
+        "names": {
+          "en": "Rushing River Flow",
+          "tw": "急流河川",
+          "kr": "급류강하",
+          "fr": "Rivière impétueuse",
+          "de": "Rauschender Flußstrom",
+          "es": "Caudal impetuoso"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 911996,
+        "names": {
+          "en": "Moonlight Waltz",
+          "tw": "月光華爾茲",
+          "kr": "월광의 왈츠",
+          "fr": "Valse au clair de lune",
+          "de": "Mondscheinwalzer",
+          "es": "Vals del claro de luna"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 950000006,
+        "names": {
+          "en": "Piercing of a Million Needles",
+          "tw": "散針百萬",
+          "kr": "산침일만",
+          "fr": "Ponction d'un million d'aiguilles",
+          "de": "Eine Million Stechnadeln",
+          "es": "Millón de agujas punzantes"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 12, 14, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          110, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911985,
+          911986,
+          911987,
+          911988,
+          911996
+        ]
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "names": {
+      "en": "Bai Hu & Zhu Que",
+      "tw": "白虎&朱雀",
+      "kr": "바이 후 & 주 체",
+      "es": "Bai Hu y Zhu Que"
+    },
+    "abilities": [
+      {
+        "id": 912039,
+        "names": {
+          "en": "Element Arts - Blazing Kick",
+          "tw": "五行式 - 烈火踢",
+          "kr": "속성술·열화축",
+          "fr": "Arcane élémentaire - Pied enflammé",
+          "de": "Elementarkünste - Lodernder Tritt",
+          "es": "Artes elementales - Patada llameante"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          64
+        ]
+      },
+      {
+        "id": 912040,
+        "names": {
+          "en": "Element Arts - Tornado Punch",
+          "tw": "五行式 - 旋風拳",
+          "kr": "속성술·선풍권",
+          "fr": "Arcane élémentaire - Poing tempétueux",
+          "de": "Elementarkünste - Tornadofaust",
+          "es": "Artes elementales - Puño huracanado"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          64
+        ]
+      },
+      {
+        "id": 912043,
+        "names": {
+          "en": "Element Arts - Lightning Fist",
+          "tw": "五行式 - 雷電拳",
+          "kr": "속성술·뇌전권",
+          "fr": "Arcane élémentaire - Poing fulgurant",
+          "de": "Elementarkünste - Blitzfaust",
+          "es": "Artes elementales - Puño relámpago"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          64
+        ]
+      },
+      {
+        "id": 912044,
+        "names": {
+          "en": "Element Arts - Seismic Kick",
+          "tw": "五行式 - 地震踢",
+          "kr": "속성술·지진축",
+          "fr": "Arcane élémentaire - Pied tellurique",
+          "de": "Elementarkünste - Seismischer Tritt",
+          "es": "Artes elementales - Patada sísmica"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          64
+        ]
+      },
+      {
+        "id": 912047,
+        "names": {
+          "en": "White Tiger - Shattering Fist",
+          "tw": "白虎式 - 破碎拳",
+          "kr": "백호술·파쇄권",
+          "fr": "Tigre blanc - Poing fracassant",
+          "de": "Weißer Tiger - Zerschmetternde Faust",
+          "es": "Tigre blanco - Puño aplastante"
+        },
+        "base": 720,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912048,
+        "names": {
+          "en": "Blood Phoenix - Defensive Stance",
+          "tw": "朱雀式 - 防禦法",
+          "kr": "주작술·방어법",
+          "fr": "Phénix de sang - Posture défensive",
+          "de": "Blutroter Phönix - Verteidigungsstand",
+          "es": "Fénix escarlata - Postura de defensa"
+        },
+        "damage": "magic",
+        "base": 950,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912050,
+        "names": {
+          "en": "White Tiger - Piercing Claw",
+          "tw": "白虎式 - 穿心爪",
+          "kr": "백호술·천심조",
+          "fr": "Tigre blanc - Griffe lacérante",
+          "de": "Weißer Tiger - Durchstoßende Kralle",
+          "es": "Tigre blanco - Garra lacerante"
+        },
+        "base": 200,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912051,
+        "names": {
+          "en": "Blood Phoenix - Burning Strike",
+          "tw": "朱雀式 - 猛火拳擊",
+          "kr": "주작술·맹화권격",
+          "fr": "Phénix de sang - Frappe ardente",
+          "de": "Blutroter Phönix - Brennender Streich",
+          "es": "Fénix escarlata - Golpe calcinante"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912053,
+        "names": {
+          "en": "White Tiger - Tiger's Roar",
+          "tw": "白虎式 - 虎嘯",
+          "kr": "백호술·호랑이의 포효",
+          "fr": "Tigre blanc - Rugissement du tigre",
+          "de": "Weißer Tiger - Gebrüll des Tigers",
+          "es": "Tigre blanco - Rugido del tigre"
+        },
+        "base": 400,
+        "hitDamage": [],
+        "offset": 8,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 912060,
+        "names": {
+          "en": "Saint's Arts - Spirit Palm",
+          "tw": "聖人式 - 拳魂",
+          "kr": "성인술·혼장",
+          "fr": "Arcane du saint - Paume de l'esprit",
+          "de": "Heiligenkünste - Geisteshandfläche",
+          "es": "Artes santas - Palma espiritual"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          41, 59
+        ],
+        "castTime": 20,
+        "offset": 16,
+        "framesList": [
+          64, 10
+        ]
+      },
+      {
+        "id": 912071,
+        "names": {
+          "en": "Saint's Arts - True Spirit Palm",
+          "tw": "聖人式 - 真魂掌",
+          "kr": "성인술·진혼장",
+          "fr": "Arcane spéciale - Paume de l'esprit suprême",
+          "de": "Heiligenkünste - Wahre Geisteshandfläche",
+          "es": "Artes santas - Palma espiritual suprema"
+        },
+        "base": 1000,
+        "hitDamage": [
+          60, 40
+        ],
+        "castTime": 20,
+        "offset": 16,
+        "framesList": [
+          64, 10
+        ]
+      },
+      {
+        "id": 912061,
+        "names": {
+          "en": "White Tiger - Limit Strike",
+          "tw": "白虎式 - 極限拳",
+          "kr": "백호술·극한권",
+          "fr": "Tigre blanc - Coup transcendantal",
+          "de": "Weißer Tiger - Limitstreich",
+          "es": "Tigre blanco - Golpe de oro"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          64
+        ]
+      },
+      {
+        "id": 912062,
+        "names": {
+          "en": "Blood Phoenix - Energy Burst",
+          "tw": "朱雀式 - 能量釋放",
+          "kr": "주작술·에너지 방출",
+          "fr": "Phénix de sang - Déflagration d'énergie",
+          "de": "Blutroter Phönix - Energierausch",
+          "es": "Fénix escarlata - Descarga de energía"
+        },
+        "damage": "magic",
+        "base": 1050,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          64
+        ]
+      },
+      {
+        "id": 912067,
+        "names": {
+          "en": "Special Arts - Ferocious Tiger Strike",
+          "tw": "特別式 - 猛虎拳擊",
+          "kr": "특별술·맹호권격",
+          "fr": "Arcane spéciale - Frappe du tigre féroce",
+          "de": "Spezialkünste - Wilder Tigerstreich",
+          "es": "Artes especiales - Golpe salvaje del tigre"
+        },
+        "base": 830,
+        "hitDamage": [
+          2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 3.1325301204819276, 84.33734939759034
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912069,
+        "names": {
+          "en": "Special Arts - Swift Phoenix Strike",
+          "tw": "特別式 - 迅朱雀拳擊",
+          "kr": "특별술·신주작권격",
+          "fr": "Arcane spéciale - Frappe du phénix vif",
+          "de": "Spezialkünste - Flinker Phönixstreich",
+          "es": "Artes especiales - Golpe rápido del fénix"
+        },
+        "damage": "magic",
+        "base": 1660,
+        "hitDamage": [
+          2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 3.1325301204819276, 84.33734939759034
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 401006707,
+        "names": {
+          "en": "Ultimate Art - Tiger & Phoenix Strike",
+          "tw": "究極式 - 白虎朱雀攻擊",
+          "kr": "궁극술·백호 주작 공격",
+          "fr": "Arcane ultime - Frappe du tigre et du phénix",
+          "de": "Ultimative Kunst - Tiger- & Phönix-Streich",
+          "es": "Arte supremo - Golpe del tigre y del fénix"
+        },
+        "base": 3180,
+        "hitDamage": [
+          56.28930817610062, 43.71069182389938
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          95, 25
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          912047,
+          912050,
+          912053,
+          912061,
+          912039,
+          912040,
+          912043,
+          912044,
+          912060,
+          912071,
+          912048,
+          912051,
+          912054,
+          912062
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          912039,
+          912040,
+          912043,
+          912044,
+          912047,
+          912050,
+          912053,
+          912061,
+          912048,
+          912051,
+          912054,
+          912062,
+          912064,
+          912066,
+          912068
         ]
       }
     ]

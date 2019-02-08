@@ -517,6 +517,29 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401006605,
+        "names": {
+          "en": "Qin",
+          "tw": "琴",
+          "kr": "친"
+        },
+        "abilities": [
+          {
+            "id": 911996,
+            "names": {
+              "en": "Moonlight Waltz",
+              "tw": "月光華爾茲",
+              "kr": "월광의 왈츠",
+              "fr": "Valse au clair de lune",
+              "de": "Mondscheinwalzer",
+              "es": "Vals del claro de luna"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -2016,6 +2039,29 @@
         ]
       },
       {
+        "id": 302000905,
+        "names": {
+          "en": "Yun",
+          "tw": "雲",
+          "kr": "윤"
+        },
+        "abilities": [
+          {
+            "id": 912023,
+            "names": {
+              "en": "Perfect Strikes",
+              "tw": "完美直擊",
+              "kr": "완벽한 타격",
+              "fr": "Enchaînement parfait",
+              "de": "Perfekte Treffer",
+              "es": "Golpe perfecto"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 312000305,
         "names": {
           "en": "Kevin",
@@ -2279,6 +2325,29 @@
               "fr": "Flash - Brillance",
               "de": "Blitz - Brillanz",
               "es": "Destello - Fulgor"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006605,
+        "names": {
+          "en": "Qin",
+          "tw": "琴",
+          "kr": "친"
+        },
+        "abilities": [
+          {
+            "id": 911988,
+            "names": {
+              "en": "Razor Petal Storm",
+              "tw": "剃刀風暴",
+              "kr": "체도풍",
+              "fr": "Tornade de pétales tranchants",
+              "de": "Sturm der messerscharfen Blüten",
+              "es": "Tormenta de pétalos filosos"
             },
             "offset": 16,
             "castTime": 40
@@ -3174,6 +3243,92 @@
               "fr": "Flash - Rayonnement furieux",
               "de": "Blitz - Zorniger Glanz",
               "es": "Destello - Resplandor colérico"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006605,
+        "names": {
+          "en": "Qin",
+          "tw": "琴",
+          "kr": "친"
+        },
+        "abilities": [
+          {
+            "id": 911987,
+            "names": {
+              "en": "Rushing River Flow",
+              "tw": "急流河川",
+              "kr": "급류강하",
+              "fr": "Rivière impétueuse",
+              "de": "Rauschender Flußstrom",
+              "es": "Caudal impetuoso"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006705,
+        "names": {
+          "en": "Bai Hu & Zhu Que",
+          "tw": "白虎&朱雀",
+          "kr": "바이 후 & 주 체",
+          "es": "Bai Hu y Zhu Que"
+        },
+        "abilities": [
+          {
+            "id": 912047,
+            "names": {
+              "en": "White Tiger - Shattering Fist",
+              "tw": "白虎式 - 破碎拳",
+              "kr": "백호술·파쇄권",
+              "fr": "Tigre blanc - Poing fracassant",
+              "de": "Weißer Tiger - Zerschmetternde Faust",
+              "es": "Tigre blanco - Puño aplastante"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912048,
+            "names": {
+              "en": "Blood Phoenix - Defensive Stance",
+              "tw": "朱雀式 - 防禦法",
+              "kr": "주작술·방어법",
+              "fr": "Phénix de sang - Posture défensive",
+              "de": "Blutroter Phönix - Verteidigungsstand",
+              "es": "Fénix escarlata - Postura de defensa"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912067,
+            "names": {
+              "en": "Special Arts - Ferocious Tiger Strike",
+              "tw": "特別式 - 猛虎拳擊",
+              "kr": "특별술·맹호권격",
+              "fr": "Arcane spéciale - Frappe du tigre féroce",
+              "de": "Spezialkünste - Wilder Tigerstreich",
+              "es": "Artes especiales - Golpe salvaje del tigre"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912069,
+            "names": {
+              "en": "Special Arts - Swift Phoenix Strike",
+              "tw": "特別式 - 迅朱雀拳擊",
+              "kr": "특별술·신주작권격",
+              "fr": "Arcane spéciale - Frappe du phénix vif",
+              "de": "Spezialkünste - Flinker Phönixstreich",
+              "es": "Artes especiales - Golpe rápido del fénix"
             },
             "offset": 16,
             "castTime": 40
@@ -6375,6 +6530,42 @@
         ]
       },
       {
+        "id": 302000905,
+        "names": {
+          "en": "Yun",
+          "tw": "雲",
+          "kr": "윤"
+        },
+        "abilities": [
+          {
+            "id": 912017,
+            "names": {
+              "en": "Multi-Barrage+",
+              "tw": "多重連射改",
+              "kr": "개량형 다중 사격",
+              "fr": "Averse de coups +",
+              "de": "Multi-Sperrfeuer+",
+              "es": "Fuego múltiple+"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912018,
+            "names": {
+              "en": "Multi-Barrage",
+              "tw": "多重連射",
+              "kr": "다중 사격",
+              "fr": "Averse de coups",
+              "de": "Multi-Sperrfeuer",
+              "es": "Fuego múltiple"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 302001405,
         "names": {
           "en": "Fryevia",
@@ -6680,6 +6871,66 @@
               "fr": "Salut - Ronde de surveillance",
               "de": "Salut - Umgebungspatrouille",
               "es": "Saludo - Ronda de valoración"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006605,
+        "names": {
+          "en": "Qin",
+          "tw": "琴",
+          "kr": "친"
+        },
+        "abilities": [
+          {
+            "id": 911986,
+            "names": {
+              "en": "Searing Phoenix",
+              "tw": "燃燒的朱雀",
+              "kr": "타오르는 주작",
+              "fr": "Phénix incandescent",
+              "de": "Sengender Phönix",
+              "es": "Fénix llameante"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006705,
+        "names": {
+          "en": "Bai Hu & Zhu Que",
+          "tw": "白虎&朱雀",
+          "kr": "바이 후 & 주 체",
+          "es": "Bai Hu y Zhu Que"
+        },
+        "abilities": [
+          {
+            "id": 912050,
+            "names": {
+              "en": "White Tiger - Piercing Claw",
+              "tw": "白虎式 - 穿心爪",
+              "kr": "백호술·천심조",
+              "fr": "Tigre blanc - Griffe lacérante",
+              "de": "Weißer Tiger - Durchstoßende Kralle",
+              "es": "Tigre blanco - Garra lacerante"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912051,
+            "names": {
+              "en": "Blood Phoenix - Burning Strike",
+              "tw": "朱雀式 - 猛火拳擊",
+              "kr": "주작술·맹화권격",
+              "fr": "Phénix de sang - Frappe ardente",
+              "de": "Blutroter Phönix - Brennender Streich",
+              "es": "Fénix escarlata - Golpe calcinante"
             },
             "offset": 16,
             "castTime": 40
@@ -8668,6 +8919,29 @@
               "fr": "Gremlins",
               "de": "Räuberischer Freund",
               "es": "Diablillos voraces"
+            },
+            "offset": 16,
+            "castTime": 50
+          }
+        ]
+      },
+      {
+        "id": 401006605,
+        "names": {
+          "en": "Qin",
+          "tw": "琴",
+          "kr": "친"
+        },
+        "abilities": [
+          {
+            "id": 911985,
+            "names": {
+              "en": "Butterfly Dance",
+              "tw": "蝶舞",
+              "kr": "접무",
+              "fr": "Danse du papillon",
+              "de": "Tanz der Schmetterlinge",
+              "es": "Danza de la mariposa"
             },
             "offset": 16,
             "castTime": 50
