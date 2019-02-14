@@ -41,7 +41,7 @@ export class ChainingComponent implements OnInit {
   finishers: any[] = [];
   firstHits: any[] = [];
 
-  averageChainModifier: number = 1;
+  averageChainMultiplier: number = 1;
 
   createdUnits: any[] = [];
   multiAbilities: any[] = [];
