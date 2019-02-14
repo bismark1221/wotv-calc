@@ -28859,7 +28859,7 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "dataId": 208,
+    "id": 208,
     "names": {
       "en": "Ignacio",
       "tw": "伊格尼西奧",
@@ -28867,7 +28867,7 @@ export const UNITS: any[] = [
     },
     "abilities": [
       {
-        "dataId": 228963,
+        "id": 228963,
         "names": {
           "en": "Termination Stamp",
           "tw": "終結踩踏",
@@ -28886,7 +28886,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 20200,
+        "id": 20200,
         "names": {
           "en": "Firaga",
           "tw": "大火焰",
@@ -28912,7 +28912,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 228964,
+        "id": 228964,
         "names": {
           "en": "Suction Stamp",
           "tw": "抽離踩踏",
@@ -28931,7 +28931,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 228962,
+        "id": 228962,
         "names": {
           "en": "Burst Stamp",
           "tw": "爆裂踩踏",
@@ -28951,7 +28951,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 20290,
+        "id": 20290,
         "names": {
           "en": "Firaja",
           "tw": "強火焰",
@@ -28977,7 +28977,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 228961,
+        "id": 228961,
         "names": {
           "en": "Crush Stamp",
           "tw": "粉碎踩踏",
@@ -29003,7 +29003,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 228965,
+        "id": 228965,
         "names": {
           "en": "Critical Stamp",
           "tw": "致命踩踏",
@@ -29022,7 +29022,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 508791,
+        "id": 508791,
         "names": {
           "en": "Full Burst Stamp",
           "tw": "全爆裂踩踏",
@@ -29042,7 +29042,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 100018707,
+        "id": 100018707,
         "names": {
           "en": "Ardent Conflagration",
           "tw": "紅炎超熱爆碎擊",
