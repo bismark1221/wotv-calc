@@ -28857,5 +28857,232 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "dataId": 208,
+    "names": {
+      "en": "Ignacio",
+      "tw": "伊格尼西奧",
+      "kr": "이그니시오"
+    },
+    "abilities": [
+      {
+        "dataId": 228963,
+        "names": {
+          "en": "Termination Stamp",
+          "tw": "終結踩踏",
+          "kr": "터미네이트 스탬프",
+          "fr": "Pilon fatal",
+          "de": "Auslöschungsstampfer",
+          "es": "Pisotón mortal"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "dataId": 20200,
+        "names": {
+          "en": "Firaga",
+          "tw": "大火焰",
+          "kr": "파이가",
+          "fr": "Feu X",
+          "de": "Feuga",
+          "es": "Piro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "dataId": 228964,
+        "names": {
+          "en": "Suction Stamp",
+          "tw": "抽離踩踏",
+          "kr": "석션 스탬프",
+          "fr": "Pilon-siphon",
+          "de": "Saugstampfer",
+          "es": "Pisotón succionador"
+        },
+        "base": 80,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "dataId": 228962,
+        "names": {
+          "en": "Burst Stamp",
+          "tw": "爆裂踩踏",
+          "kr": "버스트 스탬프",
+          "fr": "Pilon éclatant",
+          "de": "Berststampfer",
+          "es": "Pisotón explosivo"
+        },
+        "base": 275,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          17
+        ]
+      },
+      {
+        "dataId": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "dataId": 228961,
+        "names": {
+          "en": "Crush Stamp",
+          "tw": "粉碎踩踏",
+          "kr": "크러쉬 스탬프",
+          "fr": "Pilon écrasant",
+          "de": "Zerschmetternder Stampfer",
+          "es": "Pisotón aplastante"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          17
+        ]
+      },
+      {
+        "dataId": 228965,
+        "names": {
+          "en": "Critical Stamp",
+          "tw": "致命踩踏",
+          "kr": "크리티컬 스탬프",
+          "fr": "Pilon critique",
+          "de": "Kritischer Stampfer",
+          "es": "Pisotón crítico"
+        },
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "dataId": 508791,
+        "names": {
+          "en": "Full Burst Stamp",
+          "tw": "全爆裂踩踏",
+          "kr": "풀 버스트 스탬프",
+          "fr": "Pilon éclatant absolu",
+          "de": "Voller Doppelstampfer",
+          "es": "Pisotón superexplosivo"
+        },
+        "base": 525,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          17
+        ]
+      },
+      {
+        "dataId": 100018707,
+        "names": {
+          "en": "Ardent Conflagration",
+          "tw": "紅炎超熱爆碎擊",
+          "kr": "홍염폭열파쇄격",
+          "fr": "Conflagration ardente",
+          "de": "Tobende Feuersbrunst",
+          "es": "Conflagración ardiente"
+        },
+        "base": 1135,
+        "hitDamage": [
+          4.863436123348018, 4.863436123348018, 4.863436123348018, 4.863436123348018, 4.863436123348018, 6.079295154185022, 69.60352422907489
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          228961,
+          228962,
+          228963,
+          228964,
+          228965,
+          228966,
+          228968,
+          228969,
+          228970,
+          228971,
+          228972
+        ]
+      }
+    ]
   }
 ];

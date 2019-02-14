@@ -7,6 +7,7 @@ import { ElementsService } from '../services/elements.service';
 export class ChainService {
   private total: number;
   private multi: number;
+  private multiList: any[] = [];
   private nbHits: number;
   private best: any;
   private hits: any[] = [];
@@ -234,6 +235,7 @@ export class ChainService {
   private initializeChain() {
     this.nbHits = 0;
     this.multi = 1;
+    this.multiList = [];
     this.hits = [];
     this.lastElements = [];
     this.combo = [];
@@ -358,6 +360,7 @@ export class ChainService {
     this.hits[this.nbHits].combo = this.combo[this.combo.length - 1];
     let ability = this.hits[this.nbHits].ability;
     this.total = this.total + ((unit.selectedAbilities[ability].totalDamage * this.hits[this.nbHits].damage / 100) * this.multi);
+    this.multiList.push(this.multi);
   }
 
   private calculateModifierByElements(unit: any): number {
@@ -418,5 +421,9 @@ export class ChainService {
 
   getHits(): any[] {
     return this.hits;
+  }
+
+  getMultiplierList(): any[] {
+    return this.multiList;
   }
 }

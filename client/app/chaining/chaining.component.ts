@@ -41,6 +41,8 @@ export class ChainingComponent implements OnInit {
   finishers: any[] = [];
   firstHits: any[] = [];
 
+  averageChainModifier: number = 1;
+
   createdUnits: any[] = [];
   multiAbilities: any[] = [];
   abilityTypes: string[] = ['chain', 'finish'];
@@ -685,6 +687,13 @@ export class ChainingComponent implements OnInit {
       this.chainService.getChain();
       this.firstHits = this.chainService.calculateFramesDiffForFirstHits();
       this.calculateMaxFramesGap();
+
+      let totalMutiplier = 0;
+      let multiplierList = this.chainService.getMultiplierList();
+      multiplierList.forEach(multiplier => {
+        totalMutiplier += multiplier;
+      });
+      this.averageChainMultiplier = totalMutiplier / multiplierList.length;
     }
   }
 

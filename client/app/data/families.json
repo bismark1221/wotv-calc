@@ -2608,6 +2608,28 @@
         ]
       },
       {
+        "id": 100018705,
+        "names": {
+          "en": "Ignacio",
+          "tw": "伊格尼西奧",
+          "kr": "이그니시오"
+        },
+        "abilities": [
+          {
+            "id": 100018707,
+            "names": {
+              "en": "Ardent Conflagration",
+              "tw": "紅炎超熱爆碎擊",
+              "kr": "홍염폭열파쇄격",
+              "fr": "Conflagration ardente",
+              "de": "Tobende Feuersbrunst",
+              "es": "Conflagración ardiente"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
         "id": 205000805,
         "names": {
           "en": "Gilgamesh",
@@ -3652,7 +3674,7 @@
               "tw": "女槍手",
               "kr": "총잡이 숙녀",
               "fr": "La belle et le flingue",
-              "de": "Holde Schützin<br>",
+              "de": "Holde Schützin",
               "es": "Mi querida pistolera"
             },
             "offset": 16,

@@ -186,6 +186,9 @@
       {{ 'chain.label.totalCombo' | translate }} {{chainService.getResult().combo}}
     </p>
     <p *ngIf="chainers.length + finishers.length > 1">
+      Average Chain Modifier : {{ averageChainMultiplier }}
+    </p>
+    <p *ngIf="chainers.length + finishers.length > 1">
       <span *ngFor="let hit of firstHits; let j = index">
         <span *ngIf="j === 0">
           Send unit {{ this.chain[hit.position].name }} ({{ hit.position + 1 }}) first
