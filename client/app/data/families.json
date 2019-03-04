@@ -1948,7 +1948,7 @@
               "kr": "절·명경",
               "fr": "Sérénité primordiale",
               "de": "Vernichtende Kata",
-              "es": "Tranquilidad destructiva"
+              "es": "Tranquilidad absoluta"
             },
             "offset": 16,
             "castTime": 40
@@ -2620,7 +2620,7 @@
             "names": {
               "en": "Ardent Conflagration",
               "tw": "紅炎超熱爆碎擊",
-              "kr": "홍염폭열파쇄격",
+              "kr": "홍염초열폭쇄격",
               "fr": "Conflagration ardente",
               "de": "Tobende Feuersbrunst",
               "es": "Conflagración ardiente"
@@ -4735,7 +4735,12 @@
       {
         "id": 100019704,
         "names": {
-          "en": null
+          "en": "Nagflar",
+          "tw": null,
+          "kr": null,
+          "fr": null,
+          "de": null,
+          "es": null
         },
         "abilities": [
           {
@@ -5050,6 +5055,19 @@
               "fr": "Flammes du purgatoire ultimes + 1",
               "de": "Wahrer Flammenschlag des Purgatoriums + 1",
               "es": "Tajo fulminante del purgatorio + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912122,
+            "names": {
+              "en": "Purgatory Fire Slash + 2",
+              "tw": "煉獄剎燒斬 + 2",
+              "kr": "연옥찰소참 + 2",
+              "fr": "Flammes du purgatoire + 2",
+              "de": "Flammenschlag des Purgatoriums + 2",
+              "es": "Tajo ígneo del purgatorio + 2"
             },
             "offset": 16,
             "castTime": 40
@@ -6151,6 +6169,32 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 707328,
+            "names": {
+              "en": "Halberd Dance + 1",
+              "tw": "薙刀艷舞 + 1",
+              "kr": "치도염무 + 1",
+              "fr": "Danse de hallebarde + 1",
+              "de": "Hellebardentanz + 1",
+              "es": "Danza de alabarda + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 707329,
+            "names": {
+              "en": "Halberd Dance + 2",
+              "tw": "薙刀艷舞 + 2",
+              "kr": "치도염무 + 2",
+              "fr": "Danse de hallebarde + 2",
+              "de": "Hellebardentanz + 2",
+              "es": "Danza de alabarda + 2"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -6378,6 +6422,19 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 912123,
+            "names": {
+              "en": "Thunder Strike Stance + 1",
+              "tw": "轟雷衝擊陣 + 1",
+              "kr": "굉뇌격출진 + 1",
+              "fr": "Posture électrocoup + 1",
+              "de": "Gewitterschlag-Kata + 1",
+              "es": "Electrogolpe firme + 1"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -6522,6 +6579,19 @@
               "fr": "Posture électrocoup ultime + 1",
               "de": "Wahre Gewitterschlag-Kata + 1",
               "es": "Azote fulminante del trueno + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912124,
+            "names": {
+              "en": "Thunder Strike Stance + 2",
+              "tw": "轟雷衝擊陣 + 2",
+              "kr": "굉뇌격출진 + 2",
+              "fr": "Posture électrocoup + 2",
+              "de": "Gewitterschlag-Kata + 2",
+              "es": "Electrogolpe firme + 2"
             },
             "offset": 16,
             "castTime": 40
@@ -7212,6 +7282,19 @@
               "fr": "Évasion - Fissure terrestre II",
               "de": "Erdspaltenvermeidung 2",
               "es": "Evasión partetierra II"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 707314,
+            "names": {
+              "en": "Earthsplit Evasion 2 + 1",
+              "tw": "土割遁・二式 + 1",
+              "kr": "토할둔 2식 + 1",
+              "fr": "Évasion - Fissure terrestre II + 1",
+              "de": "Erdspaltenvermeidung 2 + 1",
+              "es": "Evasión partetierra II + 1"
             },
             "offset": 16,
             "castTime": 40
@@ -9067,6 +9150,29 @@
               "fr": "Séisme + 2",
               "de": "Beben + 2",
               "es": "Seísmo + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100012704,
+        "names": {
+          "en": "Wadow",
+          "tw": "瓦多",
+          "kr": "와도우"
+        },
+        "abilities": [
+          {
+            "id": 707315,
+            "names": {
+              "en": "Earthsplit Evasion 2 + 2",
+              "tw": "土割遁・二式 + 2",
+              "kr": "토할둔 2식 + 2",
+              "fr": "Évasion - Fissure terrestre II + 2",
+              "de": "Erdspaltenvermeidung 2 + 2",
+              "es": "Evasión partetierra II + 2"
             },
             "offset": 16,
             "castTime": 40

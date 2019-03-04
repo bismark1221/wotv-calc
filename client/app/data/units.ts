@@ -9318,6 +9318,23 @@ export const UNITS: any[] = [
       {
         id: 2,
         names: {
+          en: "Halberd Dance + 2",
+          tw: "薙刀艷舞 + 2",
+          kr: "치도염무 + 2",
+          fr: "Danse de hallebarde + 2",
+          de: "Hellebardentanz + 2",
+          es: "Danza de alabarda + 2"
+        },
+        framesList: [42, 10, 10, 10, 10, 10],
+        hitDamage: [16, 16, 17, 17, 17, 17],
+        castTime: 40,
+        offset: 26,
+        base: 375,
+        ignore: 25
+      },
+      {
+        id: 3,
+        names: {
           en: "Samurai Princess's Order",
           tw: "公主武士大號令",
           kr: "사무라이 공주의 대호령",
@@ -9397,6 +9414,36 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912122,
+        "names": {
+          "en": "Purgatory Fire Slash + 2",
+          "tw": "煉獄剎燒斬 + 2",
+          "kr": "연옥찰소참 + 2",
+          "fr": "Flammes du purgatoire + 2",
+          "de": "Flammenschlag des Purgatoriums + 2",
+          "es": "Tajo ígneo del purgatorio + 2"
+        },
+        "damage": "hybrid",
+        "base": 990,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
         id: 4,
         names: {
           en: "Thunder Strike Stance",
@@ -9414,6 +9461,36 @@ export const UNITS: any[] = [
         damage: "hybrid",
         elements: [
           "lightning"
+        ]
+      },
+      {
+        "id": 912124,
+        "names": {
+          "en": "Thunder Strike Stance + 2",
+          "tw": "轟雷衝擊陣 + 2",
+          "kr": "굉뇌격출진 + 2",
+          "fr": "Posture électrocoup + 2",
+          "de": "Gewitterschlag-Kata + 2",
+          "es": "Electrogolpe firme + 2"
+        },
+        "damage": "hybrid",
+        "base": 770,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
         ]
       },
       {
@@ -9535,6 +9612,41 @@ export const UNITS: any[] = [
           {
             "type": "dark",
             "value": 75
+          }
+        ],
+        "framesList": [
+          90
+        ]
+      },
+      {
+        "id": 912126,
+        "names": {
+          "en": "Demonic Spark + 2",
+          "tw": "鬼火花 + 2",
+          "kr": "도깨비불꽃 + 2",
+          "fr": "Étincelle démoniaque + 2",
+          "de": "Dämonenfunke + 2",
+          "es": "Chispa demoníaca + 2"
+        },
+        "damage": "hybrid",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 90
+          },
+          {
+            "type": "lightning",
+            "value": 90
+          },
+          {
+            "type": "dark",
+            "value": 90
           }
         ],
         "framesList": [
@@ -29081,6 +29193,289 @@ export const UNITS: any[] = [
           228970,
           228971,
           228972
+        ]
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "names": {
+      "en": "Myra",
+      "tw": "米菈",
+      "kr": "마이라"
+    },
+    "abilities": [
+      {
+        "id": 912091,
+        "names": {
+          "en": "Fighting!",
+          "tw": "加油！",
+          "kr": "파이팅!",
+          "fr": "Je fonce !",
+          "de": "Toi toi toi!",
+          "es": "¡A luchar!"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      }
+    ],
+    "multipleWhite": 2,
+    "multipleBlack": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          912091
+        ]
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "names": {
+      "en": "Wadow",
+      "tw": "瓦多",
+      "kr": "와도우"
+    },
+    "abilities": [
+      {
+        "id": 214280,
+        "names": {
+          "en": "Earthsplit Evasion",
+          "tw": "土割遁",
+          "kr": "토할둔",
+          "fr": "Évasion - Fissure terrestre",
+          "de": "Erdspaltenvermeidung",
+          "es": "Evasión partetierras"
+        },
+        "damage": "hybrid",
+        "base": 300,
+        "hitDamage": [
+          16, 16, 17, 17, 17, 17
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "framesList": [
+          50, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 218200,
+        "names": {
+          "en": "Earthsplit Evasion 2",
+          "tw": "土割遁・二式",
+          "kr": "토할둔 2식",
+          "fr": "Évasion - Fissure terrestre II",
+          "de": "Erdspaltenvermeidung 2",
+          "es": "Evasión partetierra II"
+        },
+        "damage": "hybrid",
+        "base": 425,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "framesList": [
+          120, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 707315,
+        "names": {
+          "en": "Earthsplit Evasion 2 + 2",
+          "tw": "土割遁・二式 + 2",
+          "kr": "토할둔 2식 + 2",
+          "fr": "Évasion - Fissure terrestre II + 2",
+          "de": "Erdspaltenvermeidung 2 + 2",
+          "es": "Evasión partetierra II + 2"
+        },
+        "damage": "hybrid",
+        "base": 700,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "id": 220950,
+        "names": {
+          "en": "Septic Blade",
+          "tw": "多毒刀",
+          "kr": "부식도",
+          "fr": "Lame sceptique",
+          "de": "Giftklinge",
+          "es": "Hoja séptica"
+        },
+        "damage": "hybrid",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 47,
+        "offset": 16,
+        "framesList": [
+          49
+        ]
+      },
+      {
+        "id": 221340,
+        "names": {
+          "en": "Dog Attack - Earth",
+          "tw": "忍犬突·土",
+          "kr": "닌자견 돌격·땅",
+          "fr": "Attaque canine - Terre",
+          "de": "Hundsangriff - Erde",
+          "es": "Ataque canino - Tierra"
+        },
+        "damage": "hybrid",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "earth"
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          49
+        ]
+      },
+      {
+        "id": 221350,
+        "names": {
+          "en": "Dog Attack - Light",
+          "tw": "忍犬突·光",
+          "kr": "닌자견 돌격·빛",
+          "fr": "Attaque canine - Lumière",
+          "de": "Hundsangriff - Licht",
+          "es": "Ataque canino - Luz"
+        },
+        "damage": "hybrid",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "light"
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          49
+        ]
+      },
+      {
+        "id": 220930,
+        "names": {
+          "en": "Super Dog Attack - Earth",
+          "tw": "超忍犬突·土",
+          "kr": "슈퍼 닌자견 돌격·땅",
+          "fr": "Superattaque canine - Terre",
+          "de": "Super-Hundeangriff - Erde",
+          "es": "Superataque canino - Tierra"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "elements": [
+          "earth"
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          25, 8, 8, 8
+        ]
+      },
+      {
+        "id": 220940,
+        "names": {
+          "en": "Super Dog Attack - Light",
+          "tw": "超忍犬突·光",
+          "kr": "슈퍼 닌자견 돌격·빛",
+          "fr": "Superattaque canine - Lumière",
+          "de": "Super-Hundeangriff - Licht",
+          "es": "Superataque canino - Luz"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "elements": [
+          "light"
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          25, 8, 8, 8
+        ]
+      },
+      {
+        "id": 100012706,
+        "names": {
+          "en": "Earthen Helix",
+          "tw": "豪土螺旋輪",
+          "kr": "호토나선륜",
+          "fr": "Hélice terrestre",
+          "de": "Erdhelix",
+          "es": "Hélice terrenal"
+        },
+        "damage": "hybrid",
+        "base": 800,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          190, 30, 30
         ]
       }
     ]
