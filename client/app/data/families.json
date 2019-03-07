@@ -1981,6 +1981,43 @@
         ]
       },
       {
+        "id": 209001105,
+        "names": {
+          "en": "Beatrix",
+          "tw": "貝特麗克絲",
+          "kr": "베아트릭스",
+          "fr": "Béate"
+        },
+        "abilities": [
+          {
+            "id": 508417,
+            "names": {
+              "en": "Seiken - Saint Bringer+ + 2",
+              "tw": "聖劍技・聖使+ + 2",
+              "kr": "성검기·세인트 브링거+ + 2",
+              "fr": "Lame Ste - Porteur de l'aube+ + 2",
+              "de": "Heiliges Schwert - Heilsbringer+ + 2",
+              "es": "Ira santa - Portador del alba+ + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 508416,
+            "names": {
+              "en": "Seiken - Saint Bringer + 2",
+              "tw": "聖劍技・聖使 + 2",
+              "kr": "성검기·세인트 브링거 + 2",
+              "fr": "Lame Ste - Porteur de l'aube + 2",
+              "de": "Heiliges Schwert - Heilsbringer + 2",
+              "es": "Ira santa - Portador del alba + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 210000605,
         "names": {
           "en": "Auron",
@@ -3739,9 +3776,9 @@
           "en": "Onion Knight Refia",
           "tw": "洋蔥劍士蕾菲亞",
           "kr": "양파 검사 레피아",
-          "fr": null,
-          "de": null,
-          "es": null
+          "fr": "Refia, chevalier oignon",
+          "de": "Zwiebelritter Refia",
+          "es": "Refia, Caballero Cebolla"
         },
         "abilities": [
           {
@@ -3753,6 +3790,19 @@
               "fr": "Lame éclair rapide",
               "de": "Voller Klingenblitz",
               "es": "Tormenta de acero"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 508620,
+            "names": {
+              "en": "Hacked to Pieces",
+              "tw": "切碎",
+              "kr": "산산조각 내기",
+              "fr": "En mille morceaux",
+              "de": "Kleingehackt",
+              "es": "Picadillo de enemigo"
             },
             "offset": 16,
             "castTime": 40
@@ -7744,9 +7794,8 @@
           "en": "Unei",
           "tw": "烏內",
           "kr": "우네",
-          "fr": null,
-          "de": null,
-          "es": null
+          "fr": "Unéi",
+          "es": "Une"
         },
         "abilities": [
           {
@@ -7754,10 +7803,10 @@
             "names": {
               "en": "Snowstorm",
               "tw": "吹雪",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "설풍",
+              "fr": "Tempête de neige",
+              "de": "Schneesturm",
+              "es": "Tormenta de nieve"
             },
             "offset": 16,
             "castTime": 40
@@ -9210,10 +9259,7 @@
         "names": {
           "en": "Doga",
           "tw": "多加",
-          "kr": "도가",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "도가"
         },
         "abilities": [
           {

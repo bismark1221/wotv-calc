@@ -11191,6 +11191,20 @@ export const UNITS: any[] = [
         base: 200
       },
       {
+        id: 4,
+        names: {
+          en: "Seiken - Stock Break+ + 2",
+          tw: "聖劍技・破曉斬+ + 2",
+          kr: "성검기·스톡 브레이크+ + 2",
+          fr: "Lame Ste - Fente+ + 2",
+          de: "Heiliges Schwert - Donnerklinge+ + 2",
+          es: "Ira santa - Devastación+ + 2"
+        },
+        framesList: [72],
+        offset: 86,
+        base: 500
+      },
+      {
         id: 217070,
         names: {
           en: "Seiken - Climhazzard",
@@ -11206,7 +11220,22 @@ export const UNITS: any[] = [
         base: 600
       },
       {
-        id: 4,
+        id: 217070,
+        names: {
+          en: "Seiken - Climhazzard+ + 2",
+          tw: "聖劍技・天災+ + 2",
+          kr: "성검기·클라임 해저드+ + 2",
+          fr: "Lame Ste - Mortimer+ + 2",
+          de: "Heiliges Schwert - Exekutionsschlag+ + 2",
+          es: "Ira santa - Guillotina+ + 2"
+        },
+        damage: "hybrid",
+        framesList: [65],
+        offset: 86,
+        base: 1500
+      },
+      {
+        id: 13,
         names: {
           en: "Seiken - Saint Bringer",
           tw: "聖劍技・聖使",
@@ -11229,7 +11258,30 @@ export const UNITS: any[] = [
         base: 425
       },
       {
-        id: 5,
+        id: 14,
+        names: {
+          en: "Seiken - Saint Bringer+ + 2",
+          tw: "聖劍技・聖使+ + 2",
+          kr: "성검기·세인트 브링거+ + 2",
+          fr: "Lame Ste - Porteur de l'aube+ + 2",
+          de: "Heiliges Schwert - Heilsbringer+ + 2",
+          es: "Ira santa - Portador del alba+ + 2"
+        },
+        hitDamage: [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        debuffs: [
+          {
+            type: "light",
+            value: 50
+          }
+        ],
+        framesList: [70, 6, 6, 6, 6, 6, 6, 6],
+        offset: 86,
+        base: 1000
+      },
+      {
+        id: 15,
         names: {
           en: "Seiken - Shock",
           tw: "聖劍技・震擊",
@@ -29476,6 +29528,695 @@ export const UNITS: any[] = [
         "offset": 8,
         "framesList": [
           190, 30, 30
+        ]
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "names": {
+      "en": "Unei",
+      "tw": "烏內",
+      "kr": "우네",
+      "fr": "Unéi",
+      "es": "Une"
+    },
+    "abilities": [
+      {
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 228600,
+        "names": {
+          "en": "Snowstorm",
+          "tw": "吹雪",
+          "kr": "설풍",
+          "fr": "Tempête de neige",
+          "de": "Schneesturm",
+          "es": "Tormenta de nieve"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 20390,
+        "names": {
+          "en": "Tornado",
+          "tw": "龍捲風",
+          "kr": "토네이도",
+          "fr": "Tornade"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 203001505,
+        "names": {
+          "en": "Magic Ice Wedge",
+          "tw": "魔導冰楔",
+          "kr": "마도빙설",
+          "fr": "Cale de glace magique",
+          "de": "Magischer Eiskeil",
+          "es": "Cuña mágica helada"
+        },
+        "damage": "magic",
+        "base": 640,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 89
+          }
+        ],
+        "framesList": [
+          30, 22, 22, 22, 22, 22
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2
+  },
+  {
+    "id": 212,
+    "names": {
+      "en": "Doga",
+      "tw": "多加",
+      "kr": "도가"
+    },
+    "abilities": [
+      {
+        "id": 20200,
+        "names": {
+          "en": "Firaga",
+          "tw": "大火焰",
+          "kr": "파이가",
+          "fr": "Feu X",
+          "de": "Feuga",
+          "es": "Piro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20160,
+        "names": {
+          "en": "Drain",
+          "tw": "吸血",
+          "kr": "드레인",
+          "fr": "Saignée",
+          "de": "Subvita",
+          "es": "Drenaje"
+        },
+        "base": 80,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 20350,
+        "names": {
+          "en": "Flare",
+          "tw": "核爆",
+          "kr": "플레어",
+          "fr": "Brasier",
+          "de": "Flamme",
+          "es": "Fulgor"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 30
+          }
+        ],
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 20400,
+        "names": {
+          "en": "Quake",
+          "tw": "地槌",
+          "kr": "퀘이크",
+          "fr": "Séisme",
+          "de": "Beben",
+          "es": "Seísmo"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "id": 203000606,
+        "names": {
+          "en": "Doga's Flame",
+          "tw": "多加之炎",
+          "kr": "도가의 불꽃",
+          "fr": "Flamme de Doga",
+          "de": "Dogas Flamme",
+          "es": "Llama de Doga"
+        },
+        "damage": "magic",
+        "base": 740,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          37, 15, 15, 15, 15, 15, 15
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2
+  },
+  {
+    "id": 213,
+    "names": {
+      "en": "Onion Knight Refia",
+      "tw": "洋蔥劍士蕾菲亞",
+      "kr": "양파 검사 레피아",
+      "fr": "Refia, chevalier oignon",
+      "de": "Zwiebelritter Refia",
+      "es": "Refia, Caballero Cebolla"
+    },
+    "abilities": [
+      {
+        "id": 211420,
+        "names": {
+          "en": "Full Speed Bladeblitz",
+          "tw": "全速全斬",
+          "kr": "전속 전방위 베기",
+          "fr": "Lame éclair rapide",
+          "de": "Voller Klingenblitz",
+          "es": "Tormenta de acero"
+        },
+        "base": 220,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 228551,
+        "names": {
+          "en": "Onion Shredder",
+          "tw": "洋蔥攪拌機",
+          "kr": "양파 채썰기",
+          "fr": "Taille-oignon",
+          "de": "Zwiebelschredder",
+          "es": "Picacebolla"
+        },
+        "base": 450,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 42,
+        "offset": 16,
+        "framesList": [
+          44, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 508620,
+        "names": {
+          "en": "Hacked to Pieces",
+          "tw": "切碎",
+          "kr": "산산조각 내기",
+          "fr": "En mille morceaux",
+          "de": "Kleingehackt",
+          "es": "Picadillo de enemigo"
+        },
+        "base": 550,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 508622,
+        "names": {
+          "en": "Onion Meteor",
+          "tw": "洋蔥隕石",
+          "kr": "양파 메테오",
+          "fr": "Météore d'oignon",
+          "de": "Zwiebelmeteor",
+          "es": "Meteorito Cebolla"
+        },
+        "base": 600,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "castTime": 2,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          44, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 203001307,
+        "names": {
+          "en": "Radiant Sword",
+          "tw": "閃耀之劍",
+          "kr": "트윙클 소드",
+          "fr": "Épée radieuse",
+          "de": "Leuchtendes Schwert",
+          "es": "Espada resplandeciente"
+        },
+        "base": 1600,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 55
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          },
+          {
+            "type": "water",
+            "value": 80
+          },
+          {
+            "type": "wind",
+            "value": 80
+          },
+          {
+            "type": "earth",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          61, 6, 6, 6, 22, 6, 6, 6, 6, 55
+        ]
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "names": {
+      "en": "Dark Knight Luneth",
+      "tw": "魔劍士魯內斯",
+      "kr": "마검사 루네스",
+      "fr": "Luneth, chevalier noir",
+      "de": "Dunkelritter Luneth",
+      "es": "Luneth, Caballero Oscuro"
+    },
+    "abilities": [
+      {
+        "id": 200170,
+        "names": {
+          "en": "Darkness",
+          "tw": "黑暗魔法",
+          "kr": "암흑",
+          "fr": "Ténèbres",
+          "de": "Schwarzkunst",
+          "es": "Oscuridad"
+        },
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 16,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 203330,
+        "names": {
+          "en": "Hit All",
+          "tw": "攻擊全體",
+          "kr": "전체 히트",
+          "fr": "Frappe-tout",
+          "de": "Multitreffer",
+          "es": "Golpe global"
+        },
+        "base": 180,
+        "hitDamage": [100],
+        "offset": 8,
+        "framesList": [27]
+      },
+      {
+        "id": 228571,
+        "names": {
+          "en": "Dark Blade - Kyuumei-Youtou",
+          "tw": "暗黑劍·吸命妖刀",
+          "kr": "암흑검·생명을 빨아들이는 요도",
+          "fr": "Lame obscure - Kyuumei-Youtou",
+          "de": "Dunkelklinge - Lebensfresserklinge",
+          "es": "Hoja oscura - Kyuumei-Youtou"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "id": 228574,
+        "names": {
+          "en": "Dark Blade - Kikuichimonji",
+          "tw": "暗黑劍·菊一文字",
+          "kr": "암흑검·키쿠이치몬지",
+          "fr": "Lame obscure - Kikuichimonji",
+          "de": "Dunkelklinge - Chrysanthemenzeichen",
+          "es": "Hoja oscura - Kikuichimonji"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 24,
+        "offset": 16,
+        "framesList": [
+          27
+        ]
+      },
+      {
+        "id": 228575,
+        "names": {
+          "en": "Dark Blade - Masamune",
+          "tw": "暗黑劍·正宗",
+          "kr": "암흑검·마사무네",
+          "fr": "Lame obscure - Masamune",
+          "de": "Dunkelklinge - Masamune",
+          "es": "Hoja oscura - Masamune"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 25,
+        "offset": 16,
+        "framesList": [
+          27
+        ]
+      },
+      {
+        "id": 228570,
+        "names": {
+          "en": "Dark Blade - Ansai",
+          "tw": "暗黑劍·闇碎",
+          "kr": "암흑검·암쇄",
+          "fr": "Lame obscure - Ansaï",
+          "de": "Dunkelklinge - Ansai",
+          "es": "Hoja oscura - Ansai"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 25,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          27
+        ]
+      },
+      {
+        "id": 228573,
+        "names": {
+          "en": "Dark Blade - Kotetsu",
+          "tw": "暗黑劍·虎徹",
+          "kr": "암흑검·코테츠",
+          "fr": "Lame obscure - Kotetsu",
+          "de": "Dunkelklinge - Kotetsu",
+          "es": "Hoja oscura - Kotetsu"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 25,
+        "offset": 16,
+        "framesList": [
+          27
+        ]
+      },
+      {
+        "id": 228572,
+        "names": {
+          "en": "Dark Blade - Ashura",
+          "tw": "暗黑劍·阿修羅",
+          "kr": "암흑검·아수라",
+          "fr": "Lame obscure - Ashura",
+          "de": "Dunkelklinge - Ashura",
+          "es": "Hoja oscura - Ashura"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 25,
+        "offset": 16,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 228576,
+        "names": {
+          "en": "Dark Blade - Ma-no-Meigeki",
+          "tw": "暗黑劍·魔冥擊",
+          "kr": "암흑검·마의 명격",
+          "fr": "Lame obscure - Ma-no-Meigeki",
+          "de": "Dunkelklinge - Teuflischer Dunkelstreich",
+          "es": "Hoja oscura - Ma-no-Meigeki"
+        },
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 25,
+        "offset": 16,
+        "framesList": [
+          27
+        ]
+      },
+      {
+        "id": 508632,
+        "names": {
+          "en": "Scar of the Abyss",
+          "tw": "深淵傷痕",
+          "kr": "심연의 상흔",
+          "fr": "Cicatrice de l'abysse",
+          "de": "Narbe des Abgrunds",
+          "es": "Cicatriz del abismo"
+        },
+        "base": 1700,
+        "hitDamage": [100],
+        "castTime": 1,
+        "offset": 16,
+        "framesList": [
+          227
+        ]
+      },
+      {
+        "id": 203001407,
+        "names": {
+          "en": "Blade of Destruction",
+          "tw": "魔滅刃",
+          "kr": "마멸인",
+          "fr": "Lame de destruction",
+          "de": "Klinge der Zerstörung",
+          "es": "Hoja de la destrucción"
+        },
+        "base": 1100,
+        "hitDamage": [100],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          90
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          228570,
+          228571,
+          228572,
+          228573,
+          228574,
+          228575,
+          228576,
+          508630
         ]
       }
     ]
