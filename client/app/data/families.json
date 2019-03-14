@@ -1948,7 +1948,7 @@
               "kr": "절·명경",
               "fr": "Sérénité primordiale",
               "de": "Vernichtende Kata",
-              "es": "Tranquilidad absoluta"
+              "es": "Tranquilidad destructiva"
             },
             "offset": 16,
             "castTime": 40
@@ -4612,6 +4612,29 @@
         ]
       },
       {
+        "id": 100019704,
+        "names": {
+          "en": "Nagflar",
+          "tw": "納古爾法",
+          "kr": "나글파",
+          "de": "Naglfar"
+        },
+        "abilities": [
+          {
+            "id": 229310,
+            "names": {
+              "en": "Dig down deep, lali!",
+              "tw": "向下挖啦哩！",
+              "kr": "파자라리!",
+              "fr": "On creuse profond !",
+              "de": "Grab tief, lali!",
+              "es": "¡Cavar, cavar, cavar, lalá!"
+            },
+            "offset": 8
+          }
+        ]
+      },
+      {
         "id": 204001605,
         "names": {
           "en": "Atoning Dragoon Kain",
@@ -4786,11 +4809,9 @@
         "id": 100019704,
         "names": {
           "en": "Nagflar",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "納古爾法",
+          "kr": "나글파",
+          "de": "Naglfar"
         },
         "abilities": [
           {

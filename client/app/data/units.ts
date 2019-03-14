@@ -30220,5 +30220,581 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 215,
+    "names": {
+      "en": "Falma",
+      "tw": "法瑪",
+      "kr": "팔마"
+    },
+    "abilities": [
+      {
+        "id": 229334,
+        "names": {
+          "en": "Reverse Thrust - HP",
+          "tw": "反轉推力・HP",
+          "kr": "역추진 장치·HP",
+          "fr": "Virevolte arrière - PV",
+          "de": "Umkehrschub - LP",
+          "es": "Empuje de reversa - VIT"
+        },
+        "base": 130,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 229332,
+        "names": {
+          "en": "Wings of a Dream",
+          "tw": "夢之翼",
+          "kr": "꿈의 날개",
+          "fr": "Ailes oniriques",
+          "de": "Traumflügel",
+          "es": "Alas oníricas"
+        },
+        "base": 240,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          },
+          {
+            "type": "light",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          52, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229333,
+        "names": {
+          "en": "Full Speed Ahead",
+          "tw": "全速前進",
+          "kr": "전속 전진",
+          "fr": "En avant toute !",
+          "de": "Mit Volldampf voraus",
+          "es": "A toda velocidad"
+        },
+        "base": 240,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          52, 10, 10, 10, 10, 10,
+          48
+        ]
+      },
+      {
+        "id": 229331,
+        "names": {
+          "en": "Landing Lights",
+          "tw": "著陸指示燈",
+          "kr": "랜딩 글라이드",
+          "fr": "Phares d'atterrissage",
+          "de": "Landescheinwerfer",
+          "es": "Luces de aterrizaje"
+        },
+        "base": 300,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 16,
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229330,
+        "names": {
+          "en": "Wingtip",
+          "tw": "翼梢",
+          "kr": "윙 팁",
+          "fr": "Aileron",
+          "de": "Flügelspitze",
+          "es": "Punta de ala"
+        },
+        "base": 300,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 100019805,
+        "names": {
+          "en": "Signal Bullet",
+          "tw": "訊號子彈",
+          "kr": "신호탄",
+          "fr": "Balle signalétique",
+          "de": "Signalschuss",
+          "es": "Bala señalizadora"
+        },
+        "base": 440,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          196, 20, 20
+        ]
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "names": {
+      "en": "Nagflar",
+      "tw": "納古爾法",
+      "kr": "나글파",
+      "de": "Naglfar"
+    },
+    "abilities": [
+      {
+        "id": 209910,
+        "names": {
+          "en": "Heavy Hammer",
+          "tw": "沉重鎚擊",
+          "kr": "무거운 망치",
+          "fr": "Marteau lourd",
+          "de": "Schwerer Hammer",
+          "es": "Martillo pesado"
+        },
+        "base": 160,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          42, 10, 10
+        ]
+      },
+      {
+        "id": 229311,
+        "names": {
+          "en": "Dig it up, lali!",
+          "tw": "挖起來啦哩！",
+          "kr": "캐내자라리!",
+          "fr": "On refait surface !",
+          "de": "Zu Tage, lali!",
+          "es": "¡Y después a excavar!"
+        },
+        "base": 400,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        "elements": [
+          "earth"
+        ],
+        "offset": 36,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 209920,
+        "names": {
+          "en": "Special Hammer",
+          "tw": "特殊鎚擊",
+          "kr": "스페셜 망치",
+          "fr": "Marteau spécial",
+          "de": "Spezialhammer",
+          "es": "Martillo especial"
+        },
+        "base": 140,
+        "hitDamage": [
+          14, 14, 15, 14, 14, 15, 14
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          42, 8, 8, 8, 8, 8, 16
+        ]
+      },
+      {
+        "id": 229310,
+        "names": {
+          "en": "Dig down deep, lali!",
+          "tw": "向下挖啦哩！",
+          "kr": "파자라리!",
+          "fr": "On creuse profond !",
+          "de": "Grab tief, lali!",
+          "es": "¡Cavar, cavar, cavar, lalá!"
+        },
+        "base": 320,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        "elements": [
+          "earth"
+        ],
+        "offset": 36,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 100019706,
+        "names": {
+          "en": "General's Toolbox",
+          "tw": "大將的工作道具",
+          "kr": "대장의 작업 도구",
+          "fr": "Boîte à outils du général",
+          "de": "Werkzeugkasten des Generals",
+          "es": "Caja de herramientas del general"
+        },
+        "base": 840,
+        "hitDamage": [
+          10, 10, 10, 10, 60
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          108, 6, 12, 6, 14
+        ]
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "names": {
+      "en": "Cid",
+      "tw": "希德",
+      "kr": "시드"
+    },
+    "abilities": [
+      {
+        "id": 508944,
+        "names": {
+          "en": "Gale Grid",
+          "tw": "風向坐標",
+          "kr": "게일 그리드",
+          "fr": "Rafale ravageuse",
+          "de": "Sturmgitter",
+          "es": "Rosa de los vientos"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 75
+          }
+        ],
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508945,
+        "names": {
+          "en": "Gale Grid+",
+          "tw": "風向坐標·改",
+          "kr": "개량형 게일 그리드",
+          "fr": "Rafale ravageuse +",
+          "de": "Sturmgitter+",
+          "es": "Rosa de los vientos+"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 100
+          }
+        ],
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508946,
+        "names": {
+          "en": "Spineshatter Dive 0+",
+          "tw": "破碎衝零式·改",
+          "kr": "개량형 척추 강타 0식",
+          "fr": "Piqué brise-échine style 0 +",
+          "de": "Zerschmetternder Sturzflug 0+",
+          "es": "Rompespaldas 0+"
+        },
+        "base": 1850,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508947,
+        "names": {
+          "en": "True Spineshatter Dive 0",
+          "tw": "真破碎衝零式",
+          "kr": "진 척추 강타 0식",
+          "fr": "Piqué brise-échine style 0 absolu",
+          "de": "Wahrer Zerschmetternder Sturzflug 0+",
+          "es": "Rompespaldas 0 mortal"
+        },
+        "base": 1850,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 212190,
+        "names": {
+          "en": "Blade Dance",
+          "tw": "劍舞",
+          "kr": "칼춤",
+          "fr": "Danse du sabre",
+          "de": "Schwerttanz",
+          "es": "Baile de espadas"
+        },
+        "base": 360,
+        "hitDamage": [13.3333333333, 20, 13.3333333333, 20, 13.3333333334, 20],
+        "offset": 24,
+        "framesList": [27, 57, 90, 120, 153, 183],
+        "castTime": 75,
+      },
+      {
+        "id": 229274,
+        "names": {
+          "en": "Sky Charge",
+          "tw": "天空蓄力",
+          "kr": "스카이 차지",
+          "fr": "Charge céleste",
+          "de": "Luftansturm",
+          "es": "Carga celestial"
+        },
+        "base": 80,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 221330,
+        "names": {
+          "en": "Dispel Lance",
+          "tw": "驅魔長槍",
+          "kr": "디스펠 랜스",
+          "fr": "Lance dissipation",
+          "de": "Bannlanze",
+          "es": "Lanza Antimagia"
+        },
+        "base": 200,
+        "hitDamage": [40, 60],
+        "offset": 8,
+        "framesList": [27, 57],
+        "castTime": 25,
+      },
+      {
+        "id": 508942,
+        "names": {
+          "en": "Aerial Shot",
+          "tw": "航空射擊",
+          "kr": "공중 사격",
+          "fr": "Tir aérien",
+          "de": "Luftschuss",
+          "es": "Golpe aéreo"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508943,
+        "names": {
+          "en": "Aerial Shot+",
+          "tw": "航空射擊·改",
+          "kr": "개량형 공중 사격",
+          "fr": "Tir aérien +",
+          "de": "Luftschuss+",
+          "es": "Golpe aéreo+"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508940,
+        "names": {
+          "en": "Downforce",
+          "tw": "下壓力",
+          "kr": "다운 포스",
+          "fr": "Courant descendant",
+          "de": "Abtrieb",
+          "es": "Fuerza aerodinámica"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 508941,
+        "names": {
+          "en": "Downforce+",
+          "tw": "下壓力·改",
+          "kr": "개량형 다운 포스",
+          "fr": "Courant descendant +",
+          "de": "Abtrieb+",
+          "es": "Fuerza aerodinámica+"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 229276,
+        "names": {
+          "en": "Air Stratus",
+          "tw": "天氣層雲",
+          "kr": "대폭격",
+          "fr": "Stratus protecteur",
+          "de": "Nebelwolke",
+          "es": "Estrato de aire"
+        },
+        "base": 470,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 229277,
+        "names": {
+          "en": "Beast Spindle",
+          "tw": "猛獸迴旋",
+          "kr": "비스트 스핀들",
+          "fr": "Broche bestiale",
+          "de": "Bestienspindel",
+          "es": "Cabrestante de bestias"
+        },
+        "base": 850,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 100019507,
+        "names": {
+          "en": "Invincible Highwind",
+          "tw": "無敵·神風",
+          "kr": "인빈시블 하이윈드",
+          "fr": "Invincible Hautvent",
+          "de": "Unbesiegbarer Sturmwind",
+          "es": "Torbellino indomable"
+        },
+        "base": 1400,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          30
+        ]
+      }
+    ],
+    dualable: false
   }
 ];
