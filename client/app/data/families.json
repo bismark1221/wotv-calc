@@ -361,6 +361,55 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 912221,
+            "names": {
+              "en": "Tempest Spellblade + 1",
+              "tw": "風雷魔劍舞 + 1",
+              "kr": "풍뢰의 마검무 + 1",
+              "fr": "Magilame des tempêtes + 1",
+              "de": "Sturmschwertmagie + 1",
+              "es": "Esgrimago tempestuoso + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912222,
+            "names": {
+              "en": "Tempest Spellblade + 2",
+              "tw": "風雷魔劍舞 + 2",
+              "kr": "풍뢰의 마검무 + 2",
+              "fr": "Magilame des tempêtes + 2",
+              "de": "Sturmschwertmagie + 2",
+              "es": "Esgrimago tempestuoso + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100019905,
+        "names": {
+          "en": "Karlette",
+          "tw": "卡瑞菈特",
+          "kr": "칼레라트"
+        },
+        "abilities": [
+          {
+            "id": 229253,
+            "names": {
+              "en": "Merciless",
+              "tw": "冷酷無情",
+              "kr": "무자비",
+              "fr": "Sans merci",
+              "de": "Gnadenlos",
+              "es": "Inmisericordia"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -1207,6 +1256,32 @@
             },
             "offset": 16,
             "castTime": 20
+          },
+          {
+            "id": 707444,
+            "names": {
+              "en": "Swift Tidal Attack + 1",
+              "tw": "水迅擊流斬 + 1",
+              "kr": "수신경류참 + 1",
+              "fr": "Attaque fluidovéloce + 1",
+              "de": "Flinker Gezeitenstreich + 1",
+              "es": "Ataque mareomotriz + 1"
+            },
+            "offset": 16,
+            "castTime": 20
+          },
+          {
+            "id": 707445,
+            "names": {
+              "en": "Swift Tidal Attack + 2",
+              "tw": "水迅擊流斬 + 2",
+              "kr": "수신경류참 + 2",
+              "fr": "Attaque fluidovéloce + 2",
+              "de": "Flinker Gezeitenstreich + 2",
+              "es": "Ataque mareomotriz + 2"
+            },
+            "offset": 16,
+            "castTime": 20
           }
         ]
       },
@@ -1253,6 +1328,29 @@
               "fr": "Lance-tonnerre",
               "de": "Donnerspeer",
               "es": "Lanza de rayo"
+            },
+            "offset": 16,
+            "castTime": 20
+          }
+        ]
+      },
+      {
+        "id": 100019905,
+        "names": {
+          "en": "Karlette",
+          "tw": "卡瑞菈特",
+          "kr": "칼레라트"
+        },
+        "abilities": [
+          {
+            "id": 229243,
+            "names": {
+              "en": "Aquatic Creation",
+              "tw": "洪水鍛造",
+              "kr": "워터 포지",
+              "fr": "Création aquatique",
+              "de": "Aquatische Schöpfung",
+              "es": "Creación acuática"
             },
             "offset": 16,
             "castTime": 20
@@ -1935,7 +2033,7 @@
               "kr": "극·명경 + 1",
               "fr": "Sérénité absolue + 1",
               "de": "Vollkommene Kata + 1",
-              "es": "Tranquilidad absoluta + 1"
+              "es": "Tranquilidad total + 1"
             },
             "offset": 16,
             "castTime": 40
@@ -1948,7 +2046,43 @@
               "kr": "절·명경",
               "fr": "Sérénité primordiale",
               "de": "Vernichtende Kata",
-              "es": "Tranquilidad destructiva"
+              "es": "Tranquilidad fulminante"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100019905,
+        "names": {
+          "en": "Karlette",
+          "tw": "卡瑞菈特",
+          "kr": "칼레라트"
+        },
+        "abilities": [
+          {
+            "id": 229244,
+            "names": {
+              "en": "Aerial Creation",
+              "tw": "暴風鍛造",
+              "kr": "에어로 포지",
+              "fr": "Création aérienne",
+              "de": "Luftige Schöpfung",
+              "es": "Creación aérea"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229242,
+            "names": {
+              "en": "Cosmic Creation",
+              "tw": "落雷鍛造",
+              "kr": "선더 포지",
+              "fr": "Création cosmique",
+              "de": "Kosmische Schöpfung",
+              "es": "Creación eléctrica"
             },
             "offset": 16,
             "castTime": 40
@@ -2691,11 +2825,10 @@
           {
             "id": 227481,
             "names": {
-              "en": "Secret Sword Art - Excalipoor",
+              "en": "[Geheimtechnik] Exkalibuh",
               "tw": "【秘劍】石中劍",
               "kr": "[비검] 엑스칼리파",
               "fr": "[Tech. secrète] Excalipur",
-              "de": "[Geheimtechnik] Exkalipoor",
               "es": "Arte secreto de la espada - Excalipur"
             },
             "offset": 16,
@@ -4516,6 +4649,30 @@
               "es": "Hoja sacudetierra"
             },
             "offset": 8
+          },
+          {
+            "id": 707446,
+            "names": {
+              "en": "Earth-shattering Blade + 1",
+              "tw": "土濤烈波劍 + 1",
+              "kr": "토주열파검 + 1",
+              "fr": "Lame briseterre + 1",
+              "de": "Erdzerschmetterer + 1",
+              "es": "Hoja sacudetierra + 1"
+            },
+            "offset": 8
+          },
+          {
+            "id": 707447,
+            "names": {
+              "en": "Earth-shattering Blade + 2",
+              "tw": "土濤烈波劍 + 2",
+              "kr": "토주열파검 + 2",
+              "fr": "Lame briseterre + 2",
+              "de": "Erdzerschmetterer + 2",
+              "es": "Hoja sacudetierra + 2"
+            },
+            "offset": 8
           }
         ]
       },
@@ -5930,10 +6087,7 @@
         "names": {
           "en": "Franis",
           "tw": "弗拉尼斯",
-          "kr": "프라니스",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "프라니스"
         },
         "abilities": [
           {
@@ -5941,10 +6095,10 @@
             "names": {
               "en": "Carmine Bisect",
               "tw": "洋紅二分斬",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "kr": "암적색의 양단",
+              "fr": "Division sanglante",
+              "de": "Blutrote Zweiteilung",
+              "es": "División sanguinolenta"
             },
             "offset": 8
           }
@@ -9254,10 +9408,7 @@
         "names": {
           "en": "Yuraisha",
           "tw": "尤萊莎",
-          "kr": "유라이샤",
-          "fr": null,
-          "de": null,
-          "es": null
+          "kr": "유라이샤"
         },
         "abilities": [
           {

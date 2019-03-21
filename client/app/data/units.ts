@@ -9951,6 +9951,26 @@ export const UNITS: any[] = [
           "fire"
         ],
         dualable: false,
+      },
+      {
+        id: 3,
+        names: {
+          en: "Flamephant + 2",
+          tw: "火炎幻想 + 2",
+          kr: "불꽃의 사제 + 2",
+          fr: "Flaméphant + 2",
+          de: "Flammenfant + 2",
+          es: "Flamígero + 2"
+        },
+        framesList: [100],
+        castTime: 40,
+        offset: 16,
+        base: 600,
+        damage: "magic",
+        elements: [
+          "fire"
+        ],
+        dualable: false,
       }
     ]
   },
@@ -10090,12 +10110,31 @@ export const UNITS: any[] = [
         },
         "base": 6000,
         "hitDamage": [
-          30, 30, 40
+          5.000000000000001, 5.000000000000001, 6.666666666666668, 5.000000000000001, 5.000000000000001, 6.666666666666668, 5.000000000000001, 5.000000000000001, 6.666666666666668, 5.000000000000001, 5.000000000000001, 6.666666666666668, 5.000000000000001, 5.000000000000001, 6.666666666666668, 5.000000000000001, 5.000000000000001, 6.666666666666668
         ],
+        "offset": 8,
         "framesList": [
-          34, 5, 15
+          34, 5, 3, 5, 3, 4, 1, 3, 4, 1, 3, 4, 1, 3, 4, 1, 7, 8
+        ]
+      },
+      {
+        "id": 912213,
+        "names": {
+          "en": "Rapid Shot + 2",
+          "tw": "快速射擊 + 2",
+          "kr": "신속 사격 + 2",
+          "fr": "Rafale rapide + 2",
+          "de": "Schnellfeuer + 2",
+          "es": "Disparo rápido + 2"
+        },
+        "base": 6000,
+        "hitDamage": [
+          7.5, 7.5, 10, 7.5, 7.5, 10, 7.5, 7.5, 10, 7.5, 7.5, 10
         ],
-        "offset": 8
+        "offset": 8,
+        "framesList": [
+          34, 5, 3, 5, 3, 4, 1, 3, 4, 1, 7, 8
+        ]
       },
       {
         "id": 507942,
@@ -12167,6 +12206,31 @@ export const UNITS: any[] = [
         "offset": 16
       },
       {
+        "id": 227611,
+        "names": {
+          "en": "Tempest Spellblade + 2",
+          "tw": "風雷魔劍舞 + 2",
+          "kr": "풍뢰의 마검무 + 2",
+          "fr": "Magilame des tempêtes + 2",
+          "de": "Sturmschwertmagie + 2",
+          "es": "Esgrimago tempestuoso + 2"
+        },
+        "damage": "hybrid",
+        "base": 1600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning",
+          "wind"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "offset": 16
+      },
+      {
         "id": 100012607,
         "names": {
           "en": "Blade Master",
@@ -12624,6 +12688,30 @@ export const UNITS: any[] = [
         base: 300
       },
       {
+        id: 11,
+        names: {
+          en: "Swift Tidal Attack + 2",
+          tw: "水迅擊流斬 + 2",
+          kr: "수신경류참 + 2",
+          fr: "Attaque fluidovéloce + 2",
+          de: "Flinker Gezeitenstreich + 2",
+          es: "Ataque mareomotriz + 2"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 20,
+        debuffs: [
+          {
+            type: "water",
+            value: 65
+          }
+        ],
+        framesList: [22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
+        offset: 16,
+        base: 400
+      },
+      {
         id: 2,
         names: {
           en: "Earth-shattering Blade",
@@ -12645,6 +12733,29 @@ export const UNITS: any[] = [
         framesList: [2, 8, 8, 8, 8, 8, 8],
         offset: 36,
         base: 300
+      },
+      {
+        id: 21,
+        names: {
+          en: "Earth-shattering Blade + 2",
+          tw: "土濤烈波劍 + 2",
+          kr: "토주열파검 + 2",
+          fr: "Lame briseterre + 2",
+          de: "Erdzerschmetterer + 2",
+          es: "Hoja sacudetierra + 2"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        debuffs: [
+          {
+            type: "earth",
+            value: 65
+          }
+        ],
+        framesList: [2, 8, 8, 8, 8, 8, 8],
+        offset: 36,
+        base: 400
       },
       {
         id: 3,
@@ -30795,6 +30906,857 @@ export const UNITS: any[] = [
         ]
       }
     ],
-    dualable: false
+    dual: false
+  },
+  {
+    "id": 218,
+    "names": {
+      "en": "Yuraisha",
+      "tw": "尤萊莎",
+      "kr": "유라이샤"
+    },
+    "abilities": [
+      {
+        "id": 20250,
+        "names": {
+          "en": "Stonga",
+          "tw": "大落石",
+          "kr": "스톤가",
+          "fr": "Terre X",
+          "de": "Terraga",
+          "es": "Piedra++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          180
+        ]
+      },
+      {
+        "id": 20240,
+        "names": {
+          "en": "Aeroga",
+          "tw": "大勁風",
+          "kr": "에어로가",
+          "fr": "Vent X",
+          "es": "Aero++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 20340,
+        "names": {
+          "en": "Stonja",
+          "tw": "強落石",
+          "kr": "스톤쟈",
+          "fr": "Terre max",
+          "de": "Terraka",
+          "es": "Piedra+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          170
+        ]
+      },
+      {
+        "id": 20330,
+        "names": {
+          "en": "Aeroja",
+          "tw": "強勁風",
+          "kr": "에어로쟈",
+          "fr": "Vent max",
+          "de": "Aeroka",
+          "es": "Aero+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          170
+        ]
+      },
+      {
+        "id": 228508,
+        "names": {
+          "en": "Dissipation Slam",
+          "tw": "解咒抹掌",
+          "kr": "해주말장",
+          "fr": "Horion dissipateur",
+          "de": "Zerstreuender Schlag",
+          "es": "Golpe desenfrenado"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 20400,
+        "names": {
+          "en": "Quake",
+          "tw": "地槌",
+          "kr": "퀘이크",
+          "fr": "Séisme",
+          "de": "Beben",
+          "es": "Seísmo"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2
+  },
+  {
+    "id": 219,
+    "names": {
+      "en": "Ishil",
+      "tw": "伊修爾",
+      "kr": "이실"
+    },
+    "abilities": [
+      {
+        "id": 228540,
+        "names": {
+          "en": "Area Shot",
+          "tw": "範圍射擊",
+          "kr": "범구역 사격",
+          "fr": "Tir de zone",
+          "de": "Flächenschuss",
+          "es": "Zona de tiro"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 228541,
+        "names": {
+          "en": "Twin Arrow",
+          "tw": "雙箭",
+          "kr": "쌍화살",
+          "fr": "Flèches jumelles",
+          "de": "Zwillingspfeil",
+          "es": "Flechas gemelas"
+        },
+        "base": 440,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 80,
+        "offset": 32,
+        "framesList": [
+          42, 56
+        ]
+      },
+      {
+        "id": 228542,
+        "names": {
+          "en": "Hawk Shot",
+          "tw": "鷹隼射擊",
+          "kr": "매의 사격",
+          "fr": "Tir de l'aigle",
+          "de": "Adlerschuss",
+          "es": "Tiro de halcón"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228543,
+        "names": {
+          "en": "Chaos Arrow",
+          "tw": "混沌箭",
+          "kr": "혼돈의 화살",
+          "fr": "Flèche du chaos",
+          "de": "Chaospfeil",
+          "es": "Flecha caótica"
+        },
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 228546,
+        "names": {
+          "en": "Impaling Shot",
+          "tw": "撕裂射擊",
+          "kr": "천공의 사격",
+          "fr": "Empalement instantané",
+          "de": "Pfählschuss",
+          "es": "Disparo perforador"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 20,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 228547,
+        "names": {
+          "en": "Squall Arrow",
+          "tw": "狂風射擊",
+          "kr": "돌풍의 화살",
+          "fr": "Flèche du requin",
+          "de": "Sturmpfeile",
+          "es": "Flecha tempestuosa"
+        },
+        "base": 425,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 200,
+        "offset": 80,
+        "framesList": [
+          80, 56, 56, 56, 56
+        ]
+      },
+      {
+        "id": 100017805,
+        "names": {
+          "en": "Scorching Bow",
+          "tw": "燒盡魔弓",
+          "kr": "소진마궁",
+          "fr": "Arc flamboyant",
+          "de": "Sengender Bogen",
+          "es": "Arco ardiente"
+        },
+        "base": 720,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          120
+        ]
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "names": {
+      "en": "Franis",
+      "tw": "弗拉尼斯",
+      "kr": "프라니스"
+    },
+    "abilities": [
+      {
+        "id": 228520,
+        "names": {
+          "en": "Thrust",
+          "tw": "刺突",
+          "kr": "꿰뚫기",
+          "fr": "Coup plongeant",
+          "de": "Stoß",
+          "es": "Estocada"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 18,
+        "offset": 16,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 200440,
+        "names": {
+          "en": "Bladeblitz",
+          "tw": "全斬",
+          "kr": "전방위 베기",
+          "fr": "Lame éclair",
+          "de": "Klingenblitz",
+          "es": "Relámpago de acero"
+        },
+        "base": 140,
+        "hitDamage": [50, 50],
+        "offset": 18,
+        "framesList": [20, 36]
+      },
+      {
+        "id": 228521,
+        "names": {
+          "en": "Heat Knuckle",
+          "tw": "灼熱一指",
+          "kr": "작열의 너클",
+          "fr": "Poing ardent",
+          "de": "Hitzefaust",
+          "es": "Puño ardiente"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "offset": 8,
+        "framesList": [
+          15
+        ]
+      },
+      {
+        "id": 508610,
+        "names": {
+          "en": "Burning Reprisal",
+          "tw": "反擊灼刀",
+          "kr": "반격의 작도",
+          "fr": "Riposte enflammée",
+          "de": "Brennende Vergeltung",
+          "es": "Represalia ardiente"
+        },
+        "base": 200,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 18,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          20, 16
+        ]
+      },
+      {
+        "id": 228524,
+        "names": {
+          "en": "Searing Slash",
+          "tw": "炎熱斬",
+          "kr": "염열참",
+          "fr": "Entaille incendiaire",
+          "de": "Sengender Schnitt",
+          "es": "Corte abrasador"
+        },
+        "base": 280,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 18,
+        "offset": 16,
+        "framesList": [
+          20, 16
+        ]
+      },
+      {
+        "id": 228525,
+        "names": {
+          "en": "Double Strike",
+          "tw": "二連刺",
+          "kr": "연속 찌르기",
+          "fr": "Double frappe",
+          "de": "Doppelstreich",
+          "es": "Golpe doble"
+        },
+        "base": 360,
+        "hitDamage": [
+          50, 50
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 8
+        ]
+      },
+      {
+        "id": 228529,
+        "names": {
+          "en": "Hellflame Flash",
+          "tw": "業炎閃",
+          "kr": "업염섬",
+          "fr": "Éclair infernal",
+          "de": "Höllischer Blitz",
+          "es": "Fulgor infernal"
+        },
+        "base": 380,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 18,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          20, 16
+        ]
+      },
+      {
+        "id": 228530,
+        "names": {
+          "en": "Carmine Bisect",
+          "tw": "洋紅二分斬",
+          "kr": "암적색의 양단",
+          "fr": "Division sanglante",
+          "de": "Blutrote Zweiteilung",
+          "es": "División sanguinolenta"
+        },
+        "base": 340,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          2, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 228528,
+        "names": {
+          "en": "Full-Body Lunge",
+          "tw": "渾身刺",
+          "kr": "혼신의 찌르기",
+          "fr": "Placage total",
+          "de": "Totaler Ausfallschritt",
+          "es": "Placaje total"
+        },
+        "base": 420,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 100017706,
+        "names": {
+          "en": "Violent Heat",
+          "tw": "暴力擊打",
+          "kr": "혹서",
+          "fr": "Chaleur cuisante",
+          "de": "Brutale Hitze",
+          "es": "Quemazón violenta"
+        },
+        "base": 535,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          206
+        ]
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "names": {
+      "en": "Karlette",
+      "tw": "卡瑞菈特",
+      "kr": "칼레라트"
+    },
+    "abilities": [
+      {
+        "id": 20320,
+        "names": {
+          "en": "Waterja",
+          "tw": "強流水",
+          "kr": "워터쟈",
+          "fr": "Eau max",
+          "de": "Aquaka",
+          "es": "Aqua+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          190
+        ]
+      },
+      {
+        "id": 20330,
+        "names": {
+          "en": "Aeroja",
+          "tw": "強勁風",
+          "kr": "에어로쟈",
+          "fr": "Vent max",
+          "de": "Aeroka",
+          "es": "Aero+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          170
+        ]
+      },
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 20310,
+        "names": {
+          "en": "Thundaja",
+          "tw": "強雷電",
+          "kr": "선더쟈",
+          "fr": "Foudre max",
+          "de": "Blitzka",
+          "es": "Electro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 229243,
+        "names": {
+          "en": "Aquatic Creation",
+          "tw": "洪水鍛造",
+          "kr": "워터 포지",
+          "fr": "Création aquatique",
+          "de": "Aquatische Schöpfung",
+          "es": "Creación acuática"
+        },
+        "damage": "hybrid",
+        "base": 1150,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "elements": [
+          "water"
+        ],
+        "offset": 16,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ]
+      },
+      {
+        "id": 229244,
+        "names": {
+          "en": "Aerial Creation",
+          "tw": "暴風鍛造",
+          "kr": "에어로 포지",
+          "fr": "Création aérienne",
+          "de": "Luftige Schöpfung",
+          "es": "Creación aérea"
+        },
+        "damage": "hybrid",
+        "base": 1150,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229241,
+        "names": {
+          "en": "Volcanic Creation",
+          "tw": "猛火鍛造",
+          "kr": "파이어 포지",
+          "fr": "Création volcanique",
+          "de": "Vulkanische Schöpfung",
+          "es": "Creación ígnea"
+        },
+        "damage": "hybrid",
+        "base": 1300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "id": 229242,
+        "names": {
+          "en": "Cosmic Creation",
+          "tw": "落雷鍛造",
+          "kr": "선더 포지",
+          "fr": "Création cosmique",
+          "de": "Kosmische Schöpfung",
+          "es": "Creación eléctrica"
+        },
+        "damage": "hybrid",
+        "base": 1150,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229253,
+        "names": {
+          "en": "Merciless",
+          "tw": "冷酷無情",
+          "kr": "무자비",
+          "fr": "Sans merci",
+          "de": "Gnadenlos",
+          "es": "Inmisericordia"
+        },
+        "damage": "hybrid",
+        "base": 1100,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning",
+          "light"
+        ],
+        "offset": 16,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 508932,
+        "names": {
+          "en": "Lost Legacy",
+          "tw": "失落的遺產",
+          "kr": "잃어버린 유산",
+          "fr": "Héritage perdu",
+          "de": "Verlorenes Vermächtnis",
+          "es": "Legado perdido"
+        },
+        "damage": "hybrid",
+        "base": 3600,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          68
+        ]
+      },
+      {
+        "id": 100019907,
+        "names": {
+          "en": "Elemental Lord",
+          "tw": "元素之主",
+          "kr": "원소의 제왕",
+          "fr": "Seigneur des éléments",
+          "de": "Herr der Elemente",
+          "es": "Señor de los elementos"
+        },
+        "damage": "hybrid",
+        "base": 3600,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 13, 13, 7, 8, 15
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          },
+          {
+            "type": "lightning",
+            "value": 80
+          },
+          {
+            "type": "water",
+            "value": 80
+          },
+          {
+            "type": "wind",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          40, 9, 7, 9, 7, 9, 7, 9, 7, 9, 7, 54, 20, 20, 20, 20
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229241,
+          229242,
+          229243,
+          229244,
+          229253
+        ]
+      }
+    ],
+    dual: false
   }
 ];
