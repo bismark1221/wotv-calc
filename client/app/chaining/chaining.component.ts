@@ -688,12 +688,21 @@ export class ChainingComponent implements OnInit {
       this.firstHits = this.chainService.calculateFramesDiffForFirstHits();
       this.calculateMaxFramesGap();
 
-      let totalMutiplier = 0;
+      let totalMultiplier = 0;
+      let unitMultiplier = [
+        {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}
+      ];
       let multiplierList = this.chainService.getMultiplierList();
       multiplierList.forEach(multiplier => {
-        totalMutiplier += multiplier;
+        unitMultiplier[multiplier.unit].total += multiplier.multi;
+        unitMultiplier[multiplier.unit].nbHits += 1;
+        totalMultiplier += multiplier.multi;
       });
-      this.averageChainMultiplier = totalMutiplier / multiplierList.length;
+
+      unitMultiplier.forEach((multi, index) => {
+        this.chain[index].averageChainMultiplier = multi.total / multi.nbHits;
+      });
+      this.averageChainMultiplier = totalMultiplier / multiplierList.length;
     }
   }
 
