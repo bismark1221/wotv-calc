@@ -3495,7 +3495,7 @@ export const UNITS: any[] = [
           es: "Ola caótica"
         },
         framesList: [52, 20, 20, 20, 20],
-        castTime: 40,
+        castTime: 50,
         offset: 16,
         base: 460,
         ignore: 50,
@@ -31758,5 +31758,1706 @@ export const UNITS: any[] = [
       }
     ],
     dual: false
+  },
+  {
+    "id": 222,
+    "names": {
+      "en": "Chu-Chu",
+      "tw": "啾啾",
+      "kr": "츄츄"
+    },
+    "abilities": [
+      {
+        "id": 228841,
+        "names": {
+          "en": "Culen Prayer",
+          "tw": "庫雷恩的祈禱",
+          "kr": "코른의 기도",
+          "fr": "Prière de Culen",
+          "de": "Culen-Gebet",
+          "es": "Oración de Culen"
+        },
+        "base": 1,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 228842,
+        "names": {
+          "en": "Myrm Prayer",
+          "tw": "穆魯姆的祈禱",
+          "kr": "물룸의 기도",
+          "fr": "Prière de Myrm",
+          "de": "Myrm-Gebet",
+          "es": "Oración de Myrm"
+        },
+        "base": 1,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 228845,
+        "names": {
+          "en": "Forest Wind",
+          "tw": "森林之風",
+          "kr": "숲의 바람",
+          "fr": "Vent sylvestre",
+          "de": "Waldwind",
+          "es": "Viento del bosque"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 228847,
+        "names": {
+          "en": "Earth Gnome",
+          "tw": "大地居民",
+          "kr": "대지의 주민",
+          "fr": "Habitante de la terre",
+          "de": "Erdgnom",
+          "es": "Gnomo de tierra"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228848,
+        "names": {
+          "en": "Ancient Myth",
+          "tw": "太古的神秘",
+          "kr": "태고의 신비",
+          "fr": "Mythe séculaire",
+          "de": "Uraltes Mysterium",
+          "es": "Mito antiguo"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 331000605,
+        "names": {
+          "en": "Chu-Chu's Spell",
+          "tw": "啾啾特製",
+          "kr": "츄츄 스페셜",
+          "fr": "Charme de Chu-Chu",
+          "de": "Chu-Chus Spruch",
+          "es": "Hechizo de Chu-Chu"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          220
+        ]
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "names": {
+      "en": "Rico",
+      "tw": "利柯",
+      "kr": "리코"
+    },
+    "abilities": [
+      {
+        "id": 228821,
+        "names": {
+          "en": "Rico Rocket",
+          "tw": "利柯火箭",
+          "kr": "리코 로켓",
+          "fr": "Rico-roquette",
+          "de": "Rico-Rakete",
+          "es": "Cohete Rico"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 228822,
+        "names": {
+          "en": "Death Drive",
+          "tw": "死亡驅動",
+          "kr": "데스 드라이브",
+          "fr": "Ruée mortelle",
+          "de": "Tödliche Hektik",
+          "es": "Impulso mortal"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 228823,
+        "names": {
+          "en": "Dragon Fist",
+          "tw": "龍拳",
+          "kr": "드래곤 너클",
+          "fr": "Poing du dragon",
+          "de": "Drachenfaust",
+          "es": "Puño del dragón"
+        },
+        "base": 170,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 228825,
+        "names": {
+          "en": "Fire Bomb",
+          "tw": "雷炎爆彈",
+          "kr": "염뢰 폭탄",
+          "fr": "Bombe incendiaire",
+          "de": "Feuerbombe",
+          "es": "Bomba ígnea"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "offset": 8,
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "id": 228826,
+        "names": {
+          "en": "Pile Crusher",
+          "tw": "堆疊粉碎",
+          "kr": "파일 크러시",
+          "fr": "Brise-os",
+          "de": "Knochenbrecher",
+          "es": "Triturahuesos"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 228827,
+        "names": {
+          "en": "Spin Strike",
+          "tw": "抽絲直擊",
+          "kr": "설트 스트라이크",
+          "fr": "Frappe-torpille",
+          "de": "Schleuderstoß",
+          "es": "Golpe centrífugo"
+        },
+        "base": 270,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 228829,
+        "names": {
+          "en": "Hell Splash",
+          "tw": "地獄飛濺",
+          "kr": "헬 스플래시",
+          "fr": "Fissure de l'enfer",
+          "de": "Höllenspritzer",
+          "es": "Salpicón infernal"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 50,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 228830,
+        "names": {
+          "en": "Flame Lariat",
+          "tw": "炎獄套索",
+          "kr": "염옥의 래리어트",
+          "fr": "Lariat enflammé",
+          "de": "Flammenlasso",
+          "es": "Reata en llamas"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "offset": 8,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 228831,
+        "names": {
+          "en": "Death Roll",
+          "tw": "死亡翻滾",
+          "kr": "데스 롤",
+          "fr": "Roulade de la mort",
+          "de": "Todesrolle",
+          "es": "La suerte está echada"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          70
+        ]
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "names": {
+      "en": "Emeralda",
+      "tw": "艾美拉達",
+      "kr": "에메랄다",
+      "de": "Smaragda",
+      "es": "Esmeralda"
+    },
+    "abilities": [
+      {
+        "id": 228771,
+        "names": {
+          "en": "Leg Cutter",
+          "tw": "斷足",
+          "kr": "레그 커터",
+          "fr": "Tranche-jambe",
+          "de": "Beinschneider",
+          "es": "Rompepiernas"
+        },
+        "base": 170,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "offset": 8,
+        "framesList": [
+          2,
+          20
+        ]
+      },
+      {
+        "id": 228772,
+        "names": {
+          "en": "Wave Cutter",
+          "tw": "浪切",
+          "kr": "웨이브 커터",
+          "fr": "Tranche-vague",
+          "de": "Wellenschneider",
+          "es": "Rompeolas"
+        },
+        "base": 240,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "offset": 8,
+        "framesList": [
+          2,
+          20
+        ]
+      },
+      {
+        "id": 228773,
+        "names": {
+          "en": "Anemo Dharm",
+          "tw": "風之達姆",
+          "kr": "리그 담",
+          "fr": "Anémodharma",
+          "de": "Anemo-Dharma",
+          "es": "Anemodarma"
+        },
+        "damage": "magic",
+        "base": 220,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 228774,
+        "names": {
+          "en": "Terra Feist",
+          "tw": "大地暴虐",
+          "kr": "루드 피스트",
+          "fr": "Terralutte",
+          "de": "Terra-Faust",
+          "es": "Combaterra"
+        },
+        "damage": "magic",
+        "base": 220,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          200
+        ]
+      },
+      {
+        "id": 228776,
+        "names": {
+          "en": "Grand Arm",
+          "tw": "恢宏之臂",
+          "kr": "그랜드 암",
+          "fr": "Bras tellurique",
+          "de": "Großer Arm",
+          "es": "Brazo grandioso"
+        },
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 228777,
+        "names": {
+          "en": "Divider",
+          "tw": "分割者",
+          "kr": "디바이더",
+          "fr": "Déphasement",
+          "de": "Teiler",
+          "es": "Divisorio"
+        },
+        "base": 260,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 228778,
+        "names": {
+          "en": "Thermo Geist",
+          "tw": "火之感性",
+          "kr": "엘라 지스트",
+          "fr": "Esprit thermique",
+          "de": "Thermo-Geist",
+          "es": "Termofasma"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 228779,
+        "names": {
+          "en": "Aqua Dhaum",
+          "tw": "水之多姆",
+          "kr": "레이 돔",
+          "fr": "Aquadôme",
+          "de": "Wasser-Dharma",
+          "es": "Acuípula"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 228784,
+        "names": {
+          "en": "Reycount",
+          "tw": "射線計數",
+          "kr": "레이 카운트",
+          "fr": "Ultrarayon",
+          "de": "Strahlenzahl",
+          "es": "Rayúltiple"
+        },
+        "base": 400,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          82, 20, 20, 20
+        ]
+      },
+      {
+        "id": 228785,
+        "names": {
+          "en": "Tornado Hand",
+          "tw": "龍捲之手",
+          "kr": "토네이도 핸드",
+          "fr": "Main-tornade",
+          "de": "Tornado-Hand",
+          "es": "Mano huracanada"
+        },
+        "base": 380,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 228786,
+        "names": {
+          "en": "Flying Arm",
+          "tw": "飛臂",
+          "kr": "플라잉 암",
+          "fr": "Bras-boomerang",
+          "de": "Fliegender Arm",
+          "es": "Brazo volador"
+        },
+        "base": 200,
+        "hitDamage": [
+          50, 50
+        ],
+        "offset": 8,
+        "framesList": [
+          20, 22
+        ]
+      },
+      {
+        "id": 228783,
+        "names": {
+          "en": "Dark Beast",
+          "tw": "黑暗野獸",
+          "kr": "다크 비스트",
+          "fr": "Bête obscure",
+          "de": "Dunkle Bestie",
+          "es": "Bestia oscura"
+        },
+        "base": 430,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "dark"
+        ],
+        "offset": 8,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 331000306,
+        "names": {
+          "en": "Rapid Nanogrowth",
+          "tw": "納米急速增長",
+          "kr": "나노 초고속 성장",
+          "fr": "Nanocroissance accélérée",
+          "de": "Schnelles Nanowachstum",
+          "es": "Nanocrecimiento veloz"
+        },
+        "base": 1150,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 30
+        ],
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          65, 25, 29, 30, 3, 4, 21, 25, 26, 53, 59, 3, 4, 5, 348
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          228771,
+          228772,
+          228773,
+          228774,
+          228776,
+          228777,
+          228778,
+          228779,
+          228783,
+          228784,
+          228785,
+          228786
+        ]
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "names": {
+      "en": "Bart",
+      "tw": "巴特",
+      "kr": "발트"
+    },
+    "abilities": [
+      {
+        "id": 228793,
+        "names": {
+          "en": "Head Hunter",
+          "tw": "首級獵人",
+          "kr": "넥 헌터",
+          "fr": "Chasseur de tête",
+          "de": "Kopfgeldjäger",
+          "es": "Cazamolleras"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 19,
+        "offset": 16,
+        "framesList": [
+          21
+        ]
+      },
+      {
+        "id": 228794,
+        "names": {
+          "en": "Rhythm Shock",
+          "tw": "節奏震擊",
+          "kr": "리듬 쇼크",
+          "fr": "Choc rythmique",
+          "de": "Rhythmisches Beben",
+          "es": "Sacudida rítmica"
+        },
+        "base": 220,
+        "hitDamage": [
+          50, 50
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 40
+        ]
+      },
+      {
+        "id": 228795,
+        "names": {
+          "en": "Bracer",
+          "tw": "頸縛",
+          "kr": "넥 소서",
+          "fr": "Fortifiant",
+          "de": "Verstärken",
+          "es": "Fortín"
+        },
+        "base": 300,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          2, 20, 20, 20
+        ]
+      },
+      {
+        "id": 228799,
+        "names": {
+          "en": "Prominence",
+          "tw": "卓越",
+          "kr": "홍염",
+          "fr": "Renommée",
+          "de": "Prominenz",
+          "es": "Prominencia"
+        },
+        "base": 560,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 228800,
+        "names": {
+          "en": "Land Break",
+          "tw": "陸地破裂",
+          "kr": "랜드 브레이크",
+          "fr": "Brise-terre",
+          "de": "Anlandung",
+          "es": "Rompetierra"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228801,
+        "names": {
+          "en": "Angel",
+          "tw": "天使",
+          "kr": "엔젤",
+          "fr": "Ange vengeur",
+          "de": "Engel",
+          "es": "Ángel"
+        },
+        "base": 300,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 228802,
+        "names": {
+          "en": "Tornado (Xenogears)",
+          "tw": "龍捲颶風 (Xenogears)",
+          "kr": "토네이도 (Xenogears)",
+          "fr": "Tourbillon (Xenogears)",
+          "es": "Tifón (Xenogears)"
+        },
+        "base": 460,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 16,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 508732,
+        "names": {
+          "en": "Justice (Xenogears)",
+          "tw": "帝王制裁",
+          "kr": "제왕의 심판(Xenogears)",
+          "de": "Gerechtigkeit (Xenogears)",
+          "es": "Ecuanimidad (Xenogears)"
+        },
+        "base": 1200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 331000407,
+        "names": {
+          "en": "Yggdrasil IV",
+          "tw": "世界樹IV",
+          "kr": "초거대 기어 위그드라실 IV"
+        },
+        "base": 1660,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          420
+        ]
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "names": {
+      "en": "Fei",
+      "tw": "飛",
+      "kr": "페이"
+    },
+    "abilities": [
+      {
+        "id": 228713,
+        "names": {
+          "en": "Raijin",
+          "tw": "武技雷迅",
+          "kr": "무예 뇌신"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 228714,
+        "names": {
+          "en": "Hoten",
+          "tw": "武技崩天",
+          "kr": "무예 붕천"
+        },
+        "base": 300,
+        "hitDamage": [11, 11, 11, 11, 11, 11, 11, 11, 12],
+        "offset": 246,
+        "framesList": [
+          26, 42, 74, 98, 114, 146, 170, 186, 218
+        ]
+      },
+      {
+        "id": 228715,
+        "names": {
+          "en": "Senretsu",
+          "tw": "武技千烈",
+          "kr": "무예 천열"
+        },
+        "base": 180,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 10, 10, 10, 20
+        ]
+      },
+      {
+        "id": 228716,
+        "names": {
+          "en": "Guided Shot",
+          "tw": "彈指",
+          "kr": "지탄",
+          "fr": "Tir guidé",
+          "de": "Gezielter Schuss",
+          "es": "Tiro enfilado"
+        },
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 20,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 228722,
+        "names": {
+          "en": "Hagan",
+          "tw": "武技破岩",
+          "kr": "무예 파암"
+        },
+        "base": 400,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 228723,
+        "names": {
+          "en": "Ryujin",
+          "tw": "武技龍迅",
+          "kr": "무예 용신"
+        },
+        "base": 400,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 228724,
+        "names": {
+          "en": "Koho",
+          "tw": "武技虎咆",
+          "kr": "무예 호포"
+        },
+        "base": 450,
+        "hitDamage": [
+          50, 50
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 60
+        ]
+      },
+      {
+        "id": 228725,
+        "names": {
+          "en": "Radiance",
+          "tw": "千光",
+          "kr": "천광",
+          "de": "Glanz",
+          "es": "Resplandor"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 508704,
+        "names": {
+          "en": "Big Bang",
+          "tw": "銀牙",
+          "kr": "은아",
+          "de": "Urknall"
+        },
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          200
+        ]
+      },
+      {
+        "id": 228731,
+        "names": {
+          "en": "Kakei",
+          "tw": "超武技火勁",
+          "kr": "초무예 화경"
+        },
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228732,
+        "names": {
+          "en": "Chikei",
+          "tw": "超武技地勁",
+          "kr": "초무예 지경"
+        },
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          75
+        ]
+      },
+      {
+        "id": 228733,
+        "names": {
+          "en": "Fukei",
+          "tw": "超武技風勁",
+          "kr": "초무예 풍경"
+        },
+        "base": 600,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          52, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+        ]
+      },
+      {
+        "id": 228734,
+        "names": {
+          "en": "Suikei",
+          "tw": "超武技水勁",
+          "kr": "초무예 수경"
+        },
+        "base": 600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          40, 18, 18, 18, 86
+        ]
+      },
+      {
+        "id": 228735,
+        "names": {
+          "en": "Kokei",
+          "tw": "超武技光勁",
+          "kr": "초무예 광경"
+        },
+        "base": 600,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          40, 15, 16, 49
+        ]
+      },
+      {
+        "id": 228736,
+        "names": {
+          "en": "Yamikei",
+          "tw": "超武技暗勁",
+          "kr": "초무예 암경"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 331000107,
+        "names": {
+          "en": "Chi Combo",
+          "tw": "超武技連擊",
+          "kr": "초무예 콤보",
+          "fr": "Déchaînement de qi",
+          "de": "Chi-Kombo",
+          "es": "Combo de chi"
+        },
+        "base": 2000,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 12
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          },
+          {
+            "type": "water",
+            "value": 80
+          },
+          {
+            "type": "wind",
+            "value": 80
+          },
+          {
+            "type": "earth",
+            "value": 80
+          },
+          {
+            "type": "light",
+            "value": 80
+          },
+          {
+            "type": "dark",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          69, 33, 18, 18, 18, 75, 58, 11, 14, 9, 8, 12, 3, 6, 9, 6, 47, 20, 22, 15, 16, 47, 266
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          228713,
+          228714,
+          228715,
+          228716,
+          228722,
+          228723,
+          228724,
+          228725,
+          508704,
+          228731,
+          228732,
+          228733,
+          228734,
+          228735,
+          228736
+        ]
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "names": {
+      "en": "Elly",
+      "tw": "艾蕾",
+      "kr": "엘리"
+    },
+    "abilities": [
+      {
+        "id": 228743,
+        "names": {
+          "en": "Anemo Bolt",
+          "tw": "風之弩箭",
+          "kr": "리그 볼트",
+          "fr": "Anémovolt",
+          "de": "Anemo-Bolzen",
+          "es": "Anemolámpago"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 228744,
+        "names": {
+          "en": "Terra Lance",
+          "tw": "大地之槍",
+          "kr": "루드 랜스",
+          "fr": "Terralance",
+          "de": "Terra-Lanze",
+          "es": "Lanza Terra"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10
+        ]
+      },
+      {
+        "id": 228745,
+        "names": {
+          "en": "Thermo Cube",
+          "tw": "火之立方",
+          "kr": "엘라 큐브",
+          "fr": "Cube thermique",
+          "de": "Thermo-Kubus",
+          "es": "Termocubo"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 228746,
+        "names": {
+          "en": "Aqua Ice",
+          "tw": "水之冰擊",
+          "kr": "레이 아이스",
+          "fr": "Aquaglace",
+          "de": "Wassereis",
+          "es": "Acuirámbano"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          145
+        ]
+      },
+      {
+        "id": 228751,
+        "names": {
+          "en": "Screamer",
+          "tw": "狂嘯",
+          "kr": "스크리머",
+          "fr": "Hurleur",
+          "de": "Kreischer",
+          "es": "El grito"
+        },
+        "damage": "magic",
+        "base": 100,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          40, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 228752,
+        "names": {
+          "en": "Breakthrough",
+          "tw": "突透",
+          "kr": "브레이크 스루",
+          "fr": "Percée",
+          "de": "Durchbruch",
+          "es": "Progreso"
+        },
+        "damage": "magic",
+        "base": 100,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          42, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 228753,
+        "names": {
+          "en": "Anemo Burn",
+          "tw": "風之爆破",
+          "kr": "리그 번",
+          "fr": "Anémobrûlure",
+          "de": "Anemo-Verbrennung",
+          "es": "Anemodura"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          55, 10, 10
+        ]
+      },
+      {
+        "id": 228754,
+        "names": {
+          "en": "Terra Storm",
+          "tw": "大地衝蕩",
+          "kr": "루드 스톰",
+          "fr": "Terratempête",
+          "de": "Terra-Sturm",
+          "es": "Tormenterra"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          88, 8, 8, 8, 8, 8, 8, 6, 8, 8, 6, 8, 8, 8, 9, 28
+        ]
+      },
+      {
+        "id": 228755,
+        "names": {
+          "en": "Thermo Dragon",
+          "tw": "火之龍嘯",
+          "kr": "엘라 드래곤",
+          "fr": "Dragon thermique",
+          "de": "Thermo-Drache",
+          "es": "Termodragón"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 228756,
+        "names": {
+          "en": "Aqua Mist",
+          "tw": "水之迷霧",
+          "kr": "레이 미스트",
+          "fr": "Aquabrume",
+          "de": "Wassernebel",
+          "es": "Acuibruma"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          70, 10, 10, 10, 65
+        ]
+      },
+      {
+        "id": 228760,
+        "names": {
+          "en": "Anemo Wave",
+          "tw": "風之破浪",
+          "kr": "리그 웨이브",
+          "fr": "Anémovague",
+          "de": "Anemo-Welle",
+          "es": "Anemola"
+        },
+        "damage": "magic",
+        "base": 1450,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 228761,
+        "names": {
+          "en": "Terra Ghost",
+          "tw": "大地魂魄",
+          "kr": "루드 고스트",
+          "fr": "Terrafantôme",
+          "de": "Terra-Geist",
+          "es": "Terrafasma"
+        },
+        "damage": "magic",
+        "base": 1450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 228762,
+        "names": {
+          "en": "Thermo Largo",
+          "tw": "火之緩行",
+          "kr": "엘라 라고",
+          "fr": "Largo thermique",
+          "de": "Themo-Largo",
+          "es": "Largo ardiente"
+        },
+        "damage": "magic",
+        "base": 1450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 228763,
+        "names": {
+          "en": "Aqua Lord",
+          "tw": "水之主宰",
+          "kr": "레이 로드",
+          "fr": "Aquaseigneur",
+          "de": "Wasserherr",
+          "es": "Señor de las aguas"
+        },
+        "damage": "magic",
+        "base": 1450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          220
+        ]
+      },
+      {
+        "id": 508713,
+        "names": {
+          "en": "Eschatology",
+          "tw": "末世論",
+          "kr": "종말론",
+          "fr": "Eschatologie",
+          "de": "Eschatologie",
+          "es": "Escatología"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 331000207,
+        "names": {
+          "en": "Vierge's AERODs",
+          "tw": "處女座·艾阿多",
+          "kr": "비에르주 에어드",
+          "fr": "AERO de la Vierge",
+          "de": "Vierges AERODs",
+          "es": "DOE de Vierge"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          380
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 5,
+        "abilities": [
+          228743,
+          228744,
+          228745,
+          228746,
+          228751,
+          228752,
+          228753,
+          228754,
+          228755,
+          228756,
+          228760,
+          228761,
+          228762,
+          228763,
+          508713
+        ]
+      }
+    ]
   }
 ];

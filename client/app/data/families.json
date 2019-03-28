@@ -1600,6 +1600,22 @@
             },
             "offset": 16,
             "castTime": 8
+          },
+          {
+            "id": 707607,
+            "names": {
+              "en": "null + 1"
+            },
+            "offset": 16,
+            "castTime": 8
+          },
+          {
+            "id": 707608,
+            "names": {
+              "en": "null + 1"
+            },
+            "offset": 16,
+            "castTime": 8
           }
         ]
       },
@@ -2283,22 +2299,16 @@
         "id": 331000105,
         "names": {
           "en": "Fei",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "飛",
+          "kr": "페이"
         },
         "abilities": [
           {
             "id": 228736,
             "names": {
               "en": "Yamikei",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "超武技暗勁",
+              "kr": "초무예 암경"
             },
             "offset": 16,
             "castTime": 40
@@ -2309,22 +2319,18 @@
         "id": 331000405,
         "names": {
           "en": "Bart",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "巴特",
+          "kr": "발트"
         },
         "abilities": [
           {
             "id": 508732,
             "names": {
-              "en": "Justice",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "en": "Justice (Xenogears)",
+              "tw": "帝王制裁",
+              "kr": "제왕의 심판(Xenogears)",
+              "de": "Gerechtigkeit (Xenogears)",
+              "es": "Ecuanimidad (Xenogears)"
             },
             "offset": 16,
             "castTime": 40
@@ -4507,22 +4513,19 @@
         "id": 331000205,
         "names": {
           "en": "Elly",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "艾蕾",
+          "kr": "엘리"
         },
         "abilities": [
           {
             "id": 228752,
             "names": {
               "en": "Breakthrough",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "突透",
+              "kr": "브레이크 스루",
+              "fr": "Percée",
+              "de": "Durchbruch",
+              "es": "Progreso"
             },
             "offset": 16,
             "castTime": 40
@@ -5391,22 +5394,19 @@
         "id": 331000405,
         "names": {
           "en": "Bart",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "巴特",
+          "kr": "발트"
         },
         "abilities": [
           {
             "id": 228799,
             "names": {
               "en": "Prominence",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "卓越",
+              "kr": "홍염",
+              "fr": "Renommée",
+              "de": "Prominenz",
+              "es": "Prominencia"
             },
             "offset": 16,
             "castTime": 40
@@ -5977,22 +5977,16 @@
         "id": 331000105,
         "names": {
           "en": "Fei",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "飛",
+          "kr": "페이"
         },
         "abilities": [
           {
             "id": 228733,
             "names": {
               "en": "Fukei",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "超武技風勁",
+              "kr": "초무예 풍경"
             },
             "offset": 16,
             "castTime": 40
@@ -6108,22 +6102,16 @@
         "id": 331000105,
         "names": {
           "en": "Fei",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "飛",
+          "kr": "페이"
         },
         "abilities": [
           {
             "id": 228722,
             "names": {
               "en": "Hagan",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "武技破岩",
+              "kr": "무예 파암"
             },
             "offset": 8
           },
@@ -6131,11 +6119,8 @@
             "id": 228723,
             "names": {
               "en": "Ryujin",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "武技龍迅",
+              "kr": "무예 용신"
             },
             "offset": 8
           }
@@ -6552,6 +6537,20 @@
               "fr": "Art martial - Combo Tojin + 1",
               "de": "Kampfkunst - Salve des Kriegsgottes + 1",
               "es": "Artes marciales - Combo Tojin + 1"
+            },
+            "offset": 8
+          },
+          {
+            "id": 707609,
+            "names": {
+              "en": "null + 1"
+            },
+            "offset": 8
+          },
+          {
+            "id": 707610,
+            "names": {
+              "en": "null + 1"
             },
             "offset": 8
           }
@@ -7257,9 +7256,9 @@
       {
         "id": 304002600,
         "names": {
-          "en": "Masamune",
-          "tw": "正宗",
-          "kr": "마사무네"
+          "en": "Masamune (FFVII)",
+          "tw": "正宗(FFVII)",
+          "kr": "마사무네(FFVII)"
         },
         "abilities": [
           {
@@ -8155,22 +8154,21 @@
         "id": 331000304,
         "names": {
           "en": "Emeralda",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "艾美拉達",
+          "kr": "에메랄다",
+          "de": "Smaragda",
+          "es": "Esmeralda"
         },
         "abilities": [
           {
             "id": 228785,
             "names": {
               "en": "Tornado Hand",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "龍捲之手",
+              "kr": "토네이도 핸드",
+              "fr": "Main-tornade",
+              "de": "Tornado-Hand",
+              "es": "Mano huracanada"
             },
             "offset": 16,
             "castTime": 40
@@ -8181,22 +8179,19 @@
         "id": 331000405,
         "names": {
           "en": "Bart",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "巴特",
+          "kr": "발트"
         },
         "abilities": [
           {
             "id": 228801,
             "names": {
               "en": "Angel",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "天使",
+              "kr": "엔젤",
+              "fr": "Ange vengeur",
+              "de": "Engel",
+              "es": "Ángel"
             },
             "offset": 16,
             "castTime": 40
@@ -8451,6 +8446,27 @@
         ]
       },
       {
+        "id": 100013704,
+        "names": {
+          "en": null
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100018104,
         "names": {
           "en": "Theobald",
@@ -8536,22 +8552,21 @@
         "id": 331000304,
         "names": {
           "en": "Emeralda",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "艾美拉達",
+          "kr": "에메랄다",
+          "de": "Smaragda",
+          "es": "Esmeralda"
         },
         "abilities": [
           {
             "id": 228779,
             "names": {
               "en": "Aqua Dhaum",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "水之多姆",
+              "kr": "레이 돔",
+              "fr": "Aquadôme",
+              "de": "Wasser-Dharma",
+              "es": "Acuípula"
             },
             "offset": 16,
             "castTime": 40
@@ -8562,22 +8577,18 @@
         "id": 331000405,
         "names": {
           "en": "Bart",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "巴特",
+          "kr": "발트"
         },
         "abilities": [
           {
             "id": 228802,
             "names": {
-              "en": "Tornado",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "en": "Tornado (Xenogears)",
+              "tw": "龍捲颶風 (Xenogears)",
+              "kr": "토네이도 (Xenogears)",
+              "fr": "Tourbillon (Xenogears)",
+              "es": "Tifón (Xenogears)"
             },
             "offset": 16,
             "castTime": 40
@@ -8968,22 +8979,19 @@
         "id": 331000405,
         "names": {
           "en": "Bart",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "巴特",
+          "kr": "발트"
         },
         "abilities": [
           {
             "id": 228795,
             "names": {
               "en": "Bracer",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "頸縛",
+              "kr": "넥 소서",
+              "fr": "Fortifiant",
+              "de": "Verstärken",
+              "es": "Fortín"
             },
             "offset": 8
           }
@@ -9124,25 +9132,22 @@
         "id": 331000205,
         "names": {
           "en": "Elly",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "艾蕾",
+          "kr": "엘리"
         },
         "abilities": [
           {
             "id": 228760,
             "names": {
               "en": "Anemo Wave",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "風之破浪",
+              "kr": "리그 웨이브",
+              "fr": "Anémovague",
+              "de": "Anemo-Welle",
+              "es": "Anemola"
             },
             "offset": 16,
-            "castTime": 40
+            "castTime": 50
           }
         ]
       },
