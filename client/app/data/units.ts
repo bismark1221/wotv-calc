@@ -33459,5 +33459,669 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 228,
+    "names": {
+      "en": "Construct 8",
+      "tw": "勞動八號",
+      "kr": "노동 8호",
+      "fr": "Travailleur no 8",
+      "de": "Konstrukt 8",
+      "es": "Autómata 8"
+    },
+    "abilities": [
+      {
+        "id": 229200,
+        "names": {
+          "en": "Destroy",
+          "tw": "損毀",
+          "kr": "파괴하기",
+          "fr": "Détruire",
+          "de": "Zerstören",
+          "es": "Exterminación"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 229201,
+        "names": {
+          "en": "Compress",
+          "tw": "壓縮",
+          "kr": "압축하기",
+          "fr": "Aplatir",
+          "de": "Pressen",
+          "es": "Estrujamiento"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 229202,
+        "names": {
+          "en": "Dispose",
+          "tw": "處理",
+          "kr": "처리하기",
+          "fr": "Éliminer",
+          "de": "Entsorgen",
+          "es": "Exterminio"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 38,
+        "offset": 16,
+        "framesList": [
+          68
+        ]
+      },
+      {
+        "id": 229203,
+        "names": {
+          "en": "Crush",
+          "tw": "碾碎",
+          "kr": "분쇄하기",
+          "fr": "Broyer",
+          "de": "Zerschmettern",
+          "es": "Aplastamiento"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 35,
+        "offset": 16,
+        "framesList": [
+          67
+        ]
+      },
+      {
+        "id": 253001405,
+        "names": {
+          "en": "Dispose of Him",
+          "tw": "收拾掉他",
+          "kr": "저 녀석을 해치워라 포",
+          "fr": "Élimination",
+          "de": "Entsorge ihn!",
+          "es": "Eliminación"
+        },
+        "damage": "magic",
+        "base": 790,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          78, 10, 10, 10, 10, 10
+        ]
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "names": {
+      "en": "Reis",
+      "tw": "蕾潔",
+      "kr": "레제"
+    },
+    "abilities": [
+      {
+        "id": 229,
+        "names": {
+          "en": "Ice Breath (FFT)",
+          "tw": "寒冰吐息",
+          "kr": "아이스 브레스",
+          "fr": "Souffle glacial (FFT)",
+          "de": "Eisatem (FFT)",
+          "es": "Hálito frío (FFT)"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229181,
+        "names": {
+          "en": "Fire Breath (FFT)",
+          "tw": "烈火吐息",
+          "kr": "파이어 브레스",
+          "fr": "Souffle enflammé (FFT)",
+          "de": "Feueratem (FFT)",
+          "es": "Hálito de fuego (FFT)"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229182,
+        "names": {
+          "en": "Thunder Breath",
+          "tw": "雷電吐息",
+          "kr": "선더 브레스",
+          "fr": "Souffle électrique (FFT)",
+          "de": "Donneratem",
+          "es": "Hálito electrizante"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 253000706,
+        "names": {
+          "en": "Holy Breath",
+          "tw": "聖潔吐息",
+          "kr": "홀리 브레스",
+          "fr": "Souffle sacré",
+          "de": "Heiliger Atem",
+          "es": "Hálito sagrado"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 74
+          },
+          {
+            "type": "ice",
+            "value": 74
+          },
+          {
+            "type": "lightning",
+            "value": 74
+          }
+        ],
+        "framesList": [
+          110
+        ]
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "names": {
+      "en": "Beowulf",
+      "tw": "貝奧武甫",
+      "kr": "베오울프"
+    },
+    "abilities": [
+      {
+        "id": 229165,
+        "names": {
+          "en": "Hrunting",
+          "tw": "赫倫汀",
+          "kr": "흐룬팅"
+        },
+        "damage": "hybrid",
+        "base": 1800,
+        "hitDamage": [10,  10,  10,  10,  10,  10,  10,  30],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229166,
+        "names": {
+          "en": "Nægling",
+          "tw": "納格林",
+          "kr": "네일링",
+          "fr": "Næglind",
+          "es": "Næglind"
+        },
+        "damage": "hybrid",
+        "base": 1800,
+        "hitDamage": [6,  6,  6,  6,  6,  6,  6,  58],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 508921,
+        "names": {
+          "en": "Saber",
+          "tw": "劍擊",
+          "kr": "세이버",
+          "fr": "Sabre",
+          "de": "Säbel",
+          "es": "Sable"
+        },
+        "damage": "hybrid",
+        "base": 5400,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 253001007,
+        "names": {
+          "en": "Vengeance",
+          "tw": "衝擊！",
+          "kr": "쇼크!",
+          "fr": "Représailles",
+          "de": "Rache",
+          "es": "Venganza"
+        },
+        "damage": "hybrid",
+        "base": 3200,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          197
+        ]
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "names": {
+      "en": "High Seraph Ultima",
+      "tw": "聖天使阿爾蒂瑪",
+      "kr": "성천사 알테마",
+      "fr": "Ultima, le Grand Séraphin",
+      "de": "Cherub Ultima",
+      "es": "Ángel Artema"
+    },
+    "abilities": [
+      {
+        "id": 20440,
+        "names": {
+          "en": "Ultima",
+          "tw": "究極",
+          "kr": "알테마",
+          "es": "Artema"
+        },
+        "damage": "magic",
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "dualable": false,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          365
+        ]
+      },
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 20310,
+        "names": {
+          "en": "Thundaja",
+          "tw": "強雷電",
+          "kr": "선더쟈",
+          "fr": "Foudre max",
+          "de": "Blitzka",
+          "es": "Electro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 229121,
+        "names": {
+          "en": "Unholy Darkness",
+          "tw": "暗黑神聖",
+          "kr": "다크 홀리",
+          "fr": "Ténèbres impies",
+          "de": "Unheilige Dunkelheit",
+          "es": "Oscuridad impía"
+        },
+        "damage": "magic",
+        "base": 475,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "id": 229122,
+        "names": {
+          "en": "Nanoflare",
+          "tw": "毫微核爆",
+          "kr": "나노 플레어",
+          "fr": "Nanobrasier",
+          "es": "Nanollamarada"
+        },
+        "damage": "magic",
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 229123,
+        "names": {
+          "en": "Twister",
+          "tw": "颶風",
+          "kr": "허리케인",
+          "fr": "Autan",
+          "es": "Huracán"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 41,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 229124,
+        "names": {
+          "en": "Almagest",
+          "tw": "至高無上",
+          "kr": "알마게스트",
+          "fr": "Almageste",
+          "es": "Almagesto"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          },
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229125,
+        "names": {
+          "en": "Arcane Magicks - Ultima",
+          "tw": "究極魔法·究極",
+          "kr": "궁극 마법·알테마",
+          "fr": "Arcane magique - Ultima",
+          "de": "Arkanmagie - Ultima",
+          "es": "Encantamiento arcano - Artema"
+        },
+        "damage": "magic",
+        "base": 1850,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 508906,
+        "names": {
+          "en": "Grand Cross",
+          "tw": "大十字",
+          "kr": "그랜드 크로스",
+          "fr": "Croix suprême",
+          "de": "Riesenkreuz",
+          "es": "Cruz grandiosa"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "id": 253001307,
+        "names": {
+          "en": "Divine Ultima",
+          "tw": "完全究極",
+          "kr": "완전 알테마",
+          "fr": "Hécatombe",
+          "de": "Göttliche Ultima",
+          "es": "Artema divina"
+        },
+        "damage": "magic",
+        "base": 1350,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          560
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          229121,
+          229122,
+          229123,
+          229124,
+          229125,
+          229127,
+          229128,
+          229129,
+          229130,
+          508906
+        ]
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "names": {
+      "en": "Asura",
+      "tw": "阿修羅",
+      "kr": "아수라"
+    },
+    "abilities": [
+      {
+        "id": 11801,
+        "names": {
+          "en": "Infinite Cosmos (1)",
+          "tw": "三千大千世界 (1)",
+          "kr": "삼천대천세계 (1)",
+          "fr": "Cosmos infini (1)",
+          "de": "Unendlicher Kosmos (1)",
+          "es": "Cosmos infinito (1)"
+        },
+        "elements": [],
+        "dualable": false,
+        "base": 28000,
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      }
+    ]
   }
 ];

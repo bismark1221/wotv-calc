@@ -2204,6 +2204,51 @@
         ]
       },
       {
+        "id": 253001005,
+        "names": {
+          "en": "Beowulf",
+          "tw": "貝奧武甫",
+          "kr": "베오울프"
+        },
+        "abilities": [
+          {
+            "id": 229165,
+            "names": {
+              "en": "Hrunting",
+              "tw": "赫倫汀",
+              "kr": "흐룬팅"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 253001305,
+        "names": {
+          "en": "High Seraph Ultima",
+          "tw": "聖天使阿爾蒂瑪",
+          "kr": "성천사 알테마",
+          "fr": "Ultima, le Grand Séraphin",
+          "de": "Cherub Ultima",
+          "es": "Ángel Artema"
+        },
+        "abilities": [
+          {
+            "id": 229124,
+            "names": {
+              "en": "Almagest",
+              "tw": "至高無上",
+              "kr": "알마게스트",
+              "fr": "Almageste",
+              "es": "Almagesto"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 254001805,
         "names": {
           "en": "Machina",
@@ -6846,6 +6891,28 @@
         ]
       },
       {
+        "id": 253001005,
+        "names": {
+          "en": "Beowulf",
+          "tw": "貝奧武甫",
+          "kr": "베오울프"
+        },
+        "abilities": [
+          {
+            "id": 229166,
+            "names": {
+              "en": "Nægling",
+              "tw": "納格林",
+              "kr": "네일링",
+              "fr": "Næglind",
+              "es": "Næglind"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 302000905,
         "names": {
           "en": "Yun",
@@ -8106,6 +8173,54 @@
         ]
       },
       {
+        "id": 253001005,
+        "names": {
+          "en": "Beowulf",
+          "tw": "貝奧武甫",
+          "kr": "베오울프"
+        },
+        "abilities": [
+          {
+            "id": 508921,
+            "names": {
+              "en": "Saber",
+              "tw": "劍擊",
+              "kr": "세이버",
+              "fr": "Sabre",
+              "de": "Säbel",
+              "es": "Sable"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 253001305,
+        "names": {
+          "en": "High Seraph Ultima",
+          "tw": "聖天使阿爾蒂瑪",
+          "kr": "성천사 알테마",
+          "fr": "Ultima, le Grand Séraphin",
+          "de": "Cherub Ultima",
+          "es": "Ángel Artema"
+        },
+        "abilities": [
+          {
+            "id": 229123,
+            "names": {
+              "en": "Twister",
+              "tw": "颶風",
+              "kr": "허리케인",
+              "fr": "Autan",
+              "es": "Huracán"
+            },
+            "offset": 16,
+            "castTime": 41
+          }
+        ]
+      },
+      {
         "id": 254000905,
         "names": {
           "en": "Rem",
@@ -9125,6 +9240,32 @@
             },
             "offset": 16,
             "castTime": 50
+          }
+        ]
+      },
+      {
+        "id": 253001305,
+        "names": {
+          "en": "High Seraph Ultima",
+          "tw": "聖天使阿爾蒂瑪",
+          "kr": "성천사 알테마",
+          "fr": "Ultima, le Grand Séraphin",
+          "de": "Cherub Ultima",
+          "es": "Ángel Artema"
+        },
+        "abilities": [
+          {
+            "id": 229125,
+            "names": {
+              "en": "Arcane Magicks - Ultima",
+              "tw": "究極魔法·究極",
+              "kr": "궁극 마법·알테마",
+              "fr": "Arcane magique - Ultima",
+              "de": "Arkanmagie - Ultima",
+              "es": "Encantamiento arcano - Artema"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },

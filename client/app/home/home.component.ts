@@ -12,7 +12,7 @@ import { HttpClient } from "@angular/common/http";
 export class HomeComponent implements OnInit {
   lang = 'en';
   markdown = '';
-  updated = [227, 226, 225, 224, 223, 222];
+  updated = [231, 230, 229, 228, 232];
   units = [];
   youtubeId = null;
 
