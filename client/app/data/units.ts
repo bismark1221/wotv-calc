@@ -34022,7 +34022,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           20, 20, 20, 20, 20
         ],
-        "castTime": 40,
+        "castTime": 50,
         "dualable": false,
         "offset": 16,
         "framesList": [
