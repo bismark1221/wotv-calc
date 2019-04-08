@@ -191,15 +191,20 @@
     <p *ngIf="chainers.length + finishers.length > 1">
       <span *ngFor="let hit of firstHits; let j = index">
         <span *ngIf="j === 0">
-          Send unit {{ this.chain[hit.position].name }} ({{ hit.position + 1 }}) first
-          - {{ 'chain.label.averageChainModifier' | translate }} : {{ this.chain[hit.position].averageChainMultiplier | number : '1.2-2' }}
+          Send unit {{ chain[hit.position].name }} ({{ hit.position + 1 }}) first
         </span>
         <span *ngIf="j !== 0">
-          Send unit {{ this.chain[hit.position].name }} ({{ hit.position + 1 }}) at
+          Send unit {{ chain[hit.position].name }} ({{ hit.position + 1 }}) at
           {{ (firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap) | absolute }} frames
           ({{ (firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap) * 1 / 60 * 1000 | round | absolute }}ms)
-          - {{ 'chain.label.averageChainModifier' | translate }} : {{ this.chain[hit.position].averageChainMultiplier | number : '1.2-2' }}
         </span>
+          - <a class="pointer linkColor" (click)="showChainMod(hit.position)">{{ 'chain.label.averageChainModifier' | translate }} (total {{ chain[hit.position].averageChainMultiplier | number : '1.2-2' }})</a>
+          <div *ngFor="let abilityIndex of chain[hit.position].castNumber">
+            <span *ngIf="chain[hit.position].showChainMod && chain[hit.position].selectedAbilities[abilityIndex]">
+              {{ chain[hit.position].selectedAbilities[abilityIndex].name }} :
+              {{ chain[hit.position].selectedAbilities[abilityIndex].averageChainMultiplier | number : '1.2-2' }}
+            </span>
+          </div>
         <span *ngIf="j !== (firstHits.length - 1)"><br/></span>
       </span>
     </p>

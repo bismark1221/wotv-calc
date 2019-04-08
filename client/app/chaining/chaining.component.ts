@@ -90,7 +90,7 @@ export class ChainingComponent implements OnInit {
 
   ngOnInit(): void {
     for (let i = 0; i <= 5; i++) {
-      this.chain[i] = {id: 'unselect', selectedIds: []};
+      this.chain[i] = {id: 'unselect', selectedIds: [], showChainMod: false};
       this.selectedUnits[i] = '';
       this.idSelected[i] = 'unselect';
       this.idCreated[i] = 'unselect';
@@ -216,6 +216,7 @@ export class ChainingComponent implements OnInit {
     this.chain.forEach(unit => {
       if (unit.id !== 'unselect') {
         unit.activeRename = false;
+        unit.showChainMod = false;
         unit.selectedAbilities.forEach(ability => {
           ability.activeRename = false;
         });
@@ -689,20 +690,36 @@ export class ChainingComponent implements OnInit {
       this.calculateMaxFramesGap();
 
       let totalMultiplier = 0;
-      let unitMultiplier = [
-        {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}, {total: 0, nbHits: 0}
-      ];
+      let unitMultiplier = [];
       let multiplierList = this.chainService.getMultiplierList();
+      let totalHits = 0;
+
       multiplierList.forEach(multiplier => {
-        unitMultiplier[multiplier.unit].total += multiplier.multi;
-        unitMultiplier[multiplier.unit].nbHits += 1;
+        if (!unitMultiplier[multiplier.unit]) {
+          unitMultiplier[multiplier.unit] = {baseDamage: 0, totalDamage: 0, abilities: []};
+        }
+        if (!unitMultiplier[multiplier.unit].abilities[multiplier.ability]) {
+          unitMultiplier[multiplier.unit].abilities[multiplier.ability] = 0;
+        }
+
+        let damageHit = this.chain[multiplier.unit].selectedAbilities[multiplier.ability].base * (multiplier.weight / 100) * multiplier.multi;
+        unitMultiplier[multiplier.unit].totalDamage += damageHit;
+        unitMultiplier[multiplier.unit].abilities[multiplier.ability] += damageHit;
         totalMultiplier += multiplier.multi;
+        totalHits += 1;
       });
 
-      unitMultiplier.forEach((multi, index) => {
-        this.chain[index].averageChainMultiplier = multi.total / multi.nbHits;
+      unitMultiplier.forEach((unitMulti, indexUnit) => {
+        unitMulti.abilities.forEach((abilityMulti, indexAbility) => {
+          let dual = this.chain[indexUnit].dual && this.chain[indexUnit].selectedAbilities[indexAbility].dualable && this.chain[indexUnit].selectedAbilities.length === 1;
+          this.chain[indexUnit].selectedAbilities[indexAbility].averageChainMultiplier = (abilityMulti / this.chain[indexUnit].selectedAbilities[indexAbility].base) / (dual ? 2 : 1);
+          unitMulti.baseDamage += this.chain[indexUnit].selectedAbilities[indexAbility].base * (dual ? 2 : 1);
+        });
+
+        this.chain[indexUnit].averageChainMultiplier = unitMulti.totalDamage / unitMulti.baseDamage;
       });
-      this.averageChainMultiplier = totalMultiplier / multiplierList.length;
+
+      this.averageChainMultiplier = totalMultiplier / totalHits;
     }
   }
 
@@ -863,6 +880,10 @@ export class ChainingComponent implements OnInit {
     } else {
       return this.chain[unitPosition].possibleMultiple;
     }
+  }
+
+  showChainMod(unitPosition: number) {
+    this.chain[unitPosition].showChainMod = !this.chain[unitPosition].showChainMod;
   }
 
   // showResult(type: string) {

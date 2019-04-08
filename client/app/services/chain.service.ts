@@ -360,7 +360,7 @@ export class ChainService {
     this.hits[this.nbHits].combo = this.combo[this.combo.length - 1];
     let ability = this.hits[this.nbHits].ability;
     this.total = this.total + ((unit.selectedAbilities[ability].totalDamage * this.hits[this.nbHits].damage / 100) * this.multi);
-    this.multiList.push({unit: unit.index, multi: this.multi});
+    this.multiList.push({unit: unit.index, ability: ability, weight: this.hits[this.nbHits].damage, multi: this.multi});
   }
 
   private calculateModifierByElements(unit: any): number {

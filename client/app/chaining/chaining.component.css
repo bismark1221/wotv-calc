@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.linkColor {
+  color: #0275d8 !important;
+}
+
 .selectSlider {
   max-width: 550px;
   text-align: center;
