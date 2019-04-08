@@ -1186,7 +1186,8 @@ export const UNITS: any[] = [
           910289,
           910298,
           910294,
-          509320
+          509320,
+          509324
         ]
       }
     ]
@@ -34022,7 +34023,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           20, 20, 20, 20, 20
         ],
-        "castTime": 40,
+        "castTime": 50,
         "dualable": false,
         "offset": 16,
         "framesList": [
