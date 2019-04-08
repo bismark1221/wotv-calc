@@ -338,7 +338,7 @@ export class ChainingComponent implements OnInit {
     }
 
     ids.forEach((id, index) => {
-      this.chain[position].selectedAbilities[index] = this.chain[position].abilities[this.findPositionOfAbilityById(this.chain[position], id)];
+      this.chain[position].selectedAbilities[index] = JSON.parse(JSON.stringify(this.chain[position].abilities[this.findPositionOfAbilityById(this.chain[position], id)]));
       this.chain[position].selectedAbilities[index].activeRename = false;
     });
 
@@ -711,6 +711,7 @@ export class ChainingComponent implements OnInit {
 
       unitMultiplier.forEach((unitMulti, indexUnit) => {
         unitMulti.abilities.forEach((abilityMulti, indexAbility) => {
+          this.chain[indexUnit].selectedAbilities[indexAbility].averageChainMultiplier = 0;
           let dual = this.chain[indexUnit].dual && this.chain[indexUnit].selectedAbilities[indexAbility].dualable && this.chain[indexUnit].selectedAbilities.length === 1;
           this.chain[indexUnit].selectedAbilities[indexAbility].averageChainMultiplier = (abilityMulti / this.chain[indexUnit].selectedAbilities[indexAbility].base) / (dual ? 2 : 1);
           unitMulti.baseDamage += this.chain[indexUnit].selectedAbilities[indexAbility].base * (dual ? 2 : 1);
