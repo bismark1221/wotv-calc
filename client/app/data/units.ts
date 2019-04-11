@@ -33957,7 +33957,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
-        "castTime": 41,
+        "castTime": 40,
         "elements": [
           "wind"
         ],
@@ -34121,6 +34121,477 @@ export const UNITS: any[] = [
         "offset": 8,
         "framesList": [
           40
+        ]
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "names": {
+      "en": "Kyanos",
+      "tw": "青駭鳥",
+      "kr": "키아노스"
+    },
+    "abilities": [
+      {
+        "id": 229844,
+        "names": {
+          "en": "Raging Blade of Protection",
+          "tw": "滅陣護劍",
+          "kr": "멸진의 호검",
+          "fr": "Lame enragée de protection",
+          "de": "Rasende Klinge des Schutzes",
+          "es": "Hoja iracunda de la protección"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 20, 20
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229842,
+        "names": {
+          "en": "Gale Blade",
+          "tw": "劍風擊",
+          "kr": "검풍격",
+          "fr": "Glaive de rafale",
+          "de": "Sturmklinge",
+          "es": "Hoja huracanada"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229843,
+        "names": {
+          "en": "Raging Blade of Destruction",
+          "tw": "滅陣攻劍",
+          "kr": "멸진의 공검",
+          "fr": "Lame enragée de destruction",
+          "de": "Rasende Klinge der Zerstörung",
+          "es": "Hoja iracunda de la destrucción"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 20, 20
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229841,
+        "names": {
+          "en": "Storm Dagger",
+          "tw": "嵐壞劍",
+          "kr": "남괴검",
+          "fr": "Dague de tempête",
+          "de": "Sturmdolch",
+          "es": "Daga tempestuosa"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229845,
+        "names": {
+          "en": "Vengeful Blade of Domination",
+          "tw": "討仇霸劍",
+          "kr": "토구의 패검",
+          "fr": "Lame vengeresse de domination",
+          "de": "Rachsüchtige Klinge der Herrschaft",
+          "es": "Hoja vengativa del sometimiento"
+        },
+        "base": 320,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 20, 20
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 509240,
+        "names": {
+          "en": "Vertex Rampage",
+          "tw": "頂峰暴亂",
+          "kr": "광란의 싸움",
+          "fr": "Fureur déchaînée",
+          "de": "Gipfelraserei",
+          "es": "Estampida angular"
+        },
+        "base": 300,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+          38
+        ]
+      },
+      {
+        "id": 229840,
+        "names": {
+          "en": "Focal Rampage",
+          "tw": "戰鬥・暴亂",
+          "kr": "광란의 싸움",
+          "fr": "Fureur ciblée",
+          "de": "Gezielte Raserei",
+          "es": "Estampida focal"
+        },
+        "base": 250,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 100020706,
+        "names": {
+          "en": "Escalating Onslaught",
+          "tw": "升天猛襲斬",
+          "kr": "승천맹습참",
+          "fr": "Assaut effréné",
+          "de": "Eskalierender Frontalangriff",
+          "es": "Superacometida"
+        },
+        "base": 1000,
+        "hitDamage": [
+          10, 10, 10, 10, 30, 30
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          47, 18, 20, 45, 39, 35
+        ]
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "names": {
+      "en": "Crimson",
+      "tw": "深紅",
+      "kr": "크림슨",
+      "de": "Porphura"
+    },
+    "abilities": [
+      {
+        "id": 229825,
+        "names": {
+          "en": "Mist-Piercing Blade",
+          "tw": "霧消之劍",
+          "kr": "무소의 검",
+          "fr": "Lame perce-brume",
+          "de": "Nebelverwehende Klinge",
+          "es": "Hoja perforabruma"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 229824,
+        "names": {
+          "en": "Ice Riser",
+          "tw": "冰起",
+          "kr": "아이스 라이저",
+          "fr": "Montée des glaces",
+          "de": "Vereiser",
+          "es": "Elevación glacial"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229827,
+        "names": {
+          "en": "Cleansing Blade",
+          "tw": "清靜刃",
+          "kr": "청정인",
+          "fr": "Lame purificatrice",
+          "de": "Reinigende Klinge",
+          "es": "Hoja purificadora"
+        },
+        "base": 210,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229822,
+        "names": {
+          "en": "Combustion Blade",
+          "tw": "降炎之劍",
+          "kr": "강염의 검",
+          "fr": "Glaive incinérateur",
+          "de": "Entzündende Klinge",
+          "es": "Hoja calcinadora"
+        },
+        "base": 350,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229828,
+        "names": {
+          "en": "Great Slash Combo",
+          "tw": "大連斬",
+          "kr": "대연참",
+          "fr": "Entailles jumelles",
+          "de": "Große Hiebkombo",
+          "es": "Supercombo rebanador"
+        },
+        "base": 320,
+        "hitDamage": [50, 50],
+        "offset": 32,
+        "castTime": 24,
+        "framesList": [14, 42]
+      },
+      {
+        "id": 229823,
+        "names": {
+          "en": "Fire Riser",
+          "tw": "火起",
+          "kr": "파이어 라이저",
+          "fr": "Montée des flammes",
+          "de": "Brandstifter",
+          "es": "Elevación flamígera"
+        },
+        "base": 280,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229826,
+        "names": {
+          "en": "Exorcism Blade",
+          "tw": "退魔刃",
+          "kr": "퇴마인",
+          "fr": "Épée d'exorcisme",
+          "de": "Exorzismusklinge",
+          "es": "Hoja exorcista"
+        },
+        "base": 210,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229821,
+        "names": {
+          "en": "Slayer's Flame Blade",
+          "tw": "斬魔火劍",
+          "kr": "참마의 화검",
+          "fr": "Incandessabre du pourfendeur",
+          "de": "Flammenklinge des Schlächters",
+          "es": "Hoja flamígera del verdugo"
+        },
+        "base": 650,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229829,
+        "names": {
+          "en": "Noble Banishing Blade",
+          "tw": "碎魔剛劍",
+          "kr": "쇄마의 강검",
+          "fr": "Noble lame du bannissement",
+          "de": "Robuste Bannklinge",
+          "es": "Hoja noble exorcista"
+        },
+        "base": 380,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509231,
+        "names": {
+          "en": "Heatwave Formation Strike",
+          "tw": "火炎陣突",
+          "kr": "화염진돌",
+          "fr": "Frappe caniculaire",
+          "de": "Flächenbrandmanöver",
+          "es": "Golpe Ola de calor"
+        },
+        "base": 850,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 509232,
+        "names": {
+          "en": "Blizzard Formation Strike",
+          "tw": "冰嵐陣突",
+          "kr": "빙람진돌",
+          "fr": "Frappe polaire",
+          "de": "Schneesturmmanöver",
+          "es": "Golpe Ola de frío"
+        },
+        "base": 850,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100020607,
+        "names": {
+          "en": "Blade of Expulsion",
+          "tw": "復仇之劍",
+          "kr": "떨쳐내는 검",
+          "fr": "Lame d'expulsion",
+          "de": "Verjagende Klinge",
+          "es": "Hoja del destierro"
+        },
+        "base": 2600,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          106, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229821,
+          229822,
+          229823,
+          229824,
+          229825,
+          229826,
+          229827,
+          229828,
+          229829,
+          509231,
+          509232
         ]
       }
     ]

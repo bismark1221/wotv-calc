@@ -2106,6 +2106,56 @@
         ]
       },
       {
+        "id": 100020605,
+        "names": {
+          "en": "Crimson",
+          "tw": "深紅",
+          "kr": "크림슨",
+          "de": "Porphura"
+        },
+        "abilities": [
+          {
+            "id": 229824,
+            "names": {
+              "en": "Ice Riser",
+              "tw": "冰起",
+              "kr": "아이스 라이저",
+              "fr": "Montée des glaces",
+              "de": "Vereiser",
+              "es": "Elevación glacial"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229829,
+            "names": {
+              "en": "Noble Banishing Blade",
+              "tw": "碎魔剛劍",
+              "kr": "쇄마의 강검",
+              "fr": "Noble lame du bannissement",
+              "de": "Robuste Bannklinge",
+              "es": "Hoja noble exorcista"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 509232,
+            "names": {
+              "en": "Blizzard Formation Strike",
+              "tw": "冰嵐陣突",
+              "kr": "빙람진돌",
+              "fr": "Frappe polaire",
+              "de": "Schneesturmmanöver",
+              "es": "Golpe Ola de frío"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 207001005,
         "names": {
           "en": "Sephiroth",
@@ -2848,6 +2898,95 @@
               "es": "Conflagración ardiente"
             },
             "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100020605,
+        "names": {
+          "en": "Crimson",
+          "tw": "深紅",
+          "kr": "크림슨",
+          "de": "Porphura"
+        },
+        "abilities": [
+          {
+            "id": 229827,
+            "names": {
+              "en": "Cleansing Blade",
+              "tw": "清靜刃",
+              "kr": "청정인",
+              "fr": "Lame purificatrice",
+              "de": "Reinigende Klinge",
+              "es": "Hoja purificadora"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229822,
+            "names": {
+              "en": "Combustion Blade",
+              "tw": "降炎之劍",
+              "kr": "강염의 검",
+              "fr": "Glaive incinérateur",
+              "de": "Entzündende Klinge",
+              "es": "Hoja calcinadora"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229823,
+            "names": {
+              "en": "Fire Riser",
+              "tw": "火起",
+              "kr": "파이어 라이저",
+              "fr": "Montée des flammes",
+              "de": "Brandstifter",
+              "es": "Elevación flamígera"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229826,
+            "names": {
+              "en": "Exorcism Blade",
+              "tw": "退魔刃",
+              "kr": "퇴마인",
+              "fr": "Épée d'exorcisme",
+              "de": "Exorzismusklinge",
+              "es": "Hoja exorcista"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229821,
+            "names": {
+              "en": "Slayer's Flame Blade",
+              "tw": "斬魔火劍",
+              "kr": "참마의 화검",
+              "fr": "Incandessabre du pourfendeur",
+              "de": "Flammenklinge des Schlächters",
+              "es": "Hoja flamígera del verdugo"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 509231,
+            "names": {
+              "en": "Heatwave Formation Strike",
+              "tw": "火炎陣突",
+              "kr": "화염진돌",
+              "fr": "Frappe caniculaire",
+              "de": "Flächenbrandmanöver",
+              "es": "Golpe Ola de calor"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -3824,7 +3963,7 @@
               "kr": "전자동 사격",
               "fr": "Tir automatique total",
               "de": "Vollautomatisches Abfeuern",
-              "es": "Autodisparo máximo"
+              "es": "AutoDisparo máximo"
             },
             "offset": 16,
             "castTime": 40
@@ -6868,6 +7007,55 @@
         ]
       },
       {
+        "id": 100020704,
+        "names": {
+          "en": "Kyanos",
+          "tw": "青駭鳥",
+          "kr": "키아노스"
+        },
+        "abilities": [
+          {
+            "id": 229844,
+            "names": {
+              "en": "Raging Blade of Protection",
+              "tw": "滅陣護劍",
+              "kr": "멸진의 호검",
+              "fr": "Lame enragée de protection",
+              "de": "Rasende Klinge des Schutzes",
+              "es": "Hoja iracunda de la protección"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229843,
+            "names": {
+              "en": "Raging Blade of Destruction",
+              "tw": "滅陣攻劍",
+              "kr": "멸진의 공검",
+              "fr": "Lame enragée de destruction",
+              "de": "Rasende Klinge der Zerstörung",
+              "es": "Hoja iracunda de la destrucción"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229845,
+            "names": {
+              "en": "Vengeful Blade of Domination",
+              "tw": "討仇霸劍",
+              "kr": "토구의 패검",
+              "fr": "Lame vengeresse de domination",
+              "de": "Rachsüchtige Klinge der Herrschaft",
+              "es": "Hoja vengativa del sometimiento"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 215000705,
         "names": {
           "en": "Prompto",
@@ -7646,6 +7834,85 @@
     ]
   },
   {
+    "family": "42-10-10-10-10-10-10-10-10-10",
+    "units": [
+      {
+        "id": 100020704,
+        "names": {
+          "en": "Kyanos",
+          "tw": "青駭鳥",
+          "kr": "키아노스"
+        },
+        "abilities": [
+          {
+            "id": 229842,
+            "names": {
+              "en": "Gale Blade",
+              "tw": "劍風擊",
+              "kr": "검풍격",
+              "fr": "Glaive de rafale",
+              "de": "Sturmklinge",
+              "es": "Hoja huracanada"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229841,
+            "names": {
+              "en": "Storm Dagger",
+              "tw": "嵐壞劍",
+              "kr": "남괴검",
+              "fr": "Dague de tempête",
+              "de": "Sturmdolch",
+              "es": "Daga tempestuosa"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229840,
+            "names": {
+              "en": "Focal Rampage",
+              "tw": "戰鬥・暴亂",
+              "kr": "광란의 싸움",
+              "fr": "Fureur ciblée",
+              "de": "Gezielte Raserei",
+              "es": "Estampida focal"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 502070,
+            "names": {
+              "en": "Torrential Slash + 2",
+              "tw": "前後逆波斬 + 2",
+              "kr": "전후격파 베기 + 2",
+              "fr": "Entaille torrentielle + 2",
+              "de": "Reißender Schnitt + 2",
+              "es": "Tajo torrencial + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "202-10-10-10-10-10-10-10-20-8-8-8",
     "units": [
       {
@@ -8216,7 +8483,7 @@
               "es": "Huracán"
             },
             "offset": 16,
-            "castTime": 41
+            "castTime": 40
           }
         ]
       },
@@ -9265,7 +9532,7 @@
               "es": "Encantamiento arcano - Artema"
             },
             "offset": 16,
-            "castTime": 40
+            "castTime": 50
           }
         ]
       },
