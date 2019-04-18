@@ -11002,6 +11002,27 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        "id": 912329,
+        "names": {
+          "en": "Circular Saw + 2",
+          "tw": "圓盤鋸 + 2",
+          "kr": "서큘러 쏘우 + 2",
+          "fr": "Scie circulaire + 2",
+          "de": "Wirbelsäge + 2",
+          "es": "Sierra circular + 2"
+        },
+        "base": 500,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
         id: 221430,
         names: {
           en: "Gravity Well",
@@ -11020,6 +11041,31 @@ export const UNITS: any[] = [
         framesList: [110],
         offset: 8,
         base: 360
+      },
+      {
+        "id": 707535,
+        "names": {
+          "en": "Gravity Well + 2",
+          "tw": "引力波 + 2",
+          "kr": "어트랙트 웨이브 + 2",
+          "fr": "Vortex + 2",
+          "de": "Gravitationspulsator + 2",
+          "es": "Gravitón + 2"
+        },
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          110
+        ]
       },
       {
         id: 221390,
@@ -11052,6 +11098,27 @@ export const UNITS: any[] = [
         offset: 16,
         base: 200,
         ignore: 50
+      },
+      {
+        "id": 707529,
+        "names": {
+          "en": "Drillbreaker + 2",
+          "tw": "破壞鑽頭 + 2",
+          "kr": "드릴 브레이커 + 2",
+          "fr": "Foreuse + 2",
+          "de": "Perforator + 2",
+          "es": "Perforador + 2"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 104,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          114
+        ]
       },
       {
         "id": 508070,
@@ -12498,6 +12565,36 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        id: 55555,
+        names: {
+          en: "Flood + 2",
+          tw: "洪水 + 2",
+          kr: "플러드 + 2",
+          fr: "Inondation + 2",
+          de: "Flut + 2",
+          es: "Inundación + 2"
+        },
+        hitDamage: [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        castTime: 40,
+        damage: "magic",
+        elements: [
+          "water"
+        ],
+        debuffs: [
+          {
+            type: "lightning",
+            value: 50
+          }
+        ],
+        framesList: [133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+        offset: 16,
+        base: 400,
+        magicType: "black",
+        dualable: false
+      },
+      {
         "id": 20390,
         "names": {
           "en": "Tornado",
@@ -12560,6 +12657,38 @@ export const UNITS: any[] = [
         "offset": 16
       },
       {
+        "id": 508020111,
+        "names": {
+          "en": "Flare Fury + 2",
+          "tw": "T·核爆 + 2",
+          "kr": "T·플레어 + 2",
+          "fr": "S. Brasier + 2",
+          "de": "Flare-Wut + 2",
+          "es": "Fulgor T + 2"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "ignore": 25,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 120
+          }
+        ],
+        "framesList": [
+          240, 20, 20
+        ],
+        "offset": 16
+      },
+      {
         "id": 20760,
         "names": {
           "en": "Raging Water",
@@ -12608,7 +12737,7 @@ export const UNITS: any[] = [
         "offset": 8
       }
     ],
-    multipleBlack: 2
+    multipleBlack: 3
   },
   {
     id: 112,
@@ -13309,6 +13438,28 @@ export const UNITS: any[] = [
         base: 420
       },
       {
+        "id": 702520,
+        "names": {
+          "en": "Into Darkness + 2",
+          "tw": "黑暗降臨 + 2",
+          "kr": "어둠 속으로 + 2",
+          "fr": "Obscurité sans fin + 2",
+          "de": "Ins Dunkel + 2",
+          "es": "Oscuridad profunda + 2"
+        },
+        "base": 510,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "dark"
+        ],
+        "offset": 8,
+        "framesList": [
+          23
+        ]
+      },
+      {
         id: 3,
         names: {
           en: "Funeral Knife",
@@ -13325,6 +13476,26 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10, 10, 10, 10],
         offset: 16,
         base: 325
+      },
+      {
+        "id": 707435,
+        "names": {
+          "en": "Funeral Knife + 2",
+          "tw": "葬禮之刃 + 2",
+          "kr": "장례의 나이프 + 2",
+          "fr": "Couteau funéraire + 2",
+          "de": "Begräbnismesser + 2",
+          "es": "Cuchillo funerario + 2"
+        },
+        "base": 500,
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 23
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
       },
       {
         id: 4,
@@ -14320,6 +14491,21 @@ export const UNITS: any[] = [
         framesList: [78],
         offset: 16,
         base: 400
+      },
+      {
+        id: 224020111,
+        names: {
+          en: "Gear-up + 2",
+          tw: "換檔加速 + 2",
+          kr: "기어 상승 + 2",
+          fr: "Préparation + 2",
+          de: "Gang hochschalten + 2",
+          es: "Cambio de marcha + 2"
+        },
+        castTime: 38,
+        framesList: [78],
+        offset: 16,
+        base: 620
       },
       {
         id: 100013406,
@@ -15365,6 +15551,27 @@ export const UNITS: any[] = [
           0
         ],
         "offset": 16
+      },
+      {
+        "id": 912321,
+        "names": {
+          "en": "High Dragoon Dive + 2",
+          "tw": "龍騰 + 2",
+          "kr": "하이 드래곤 리프 + 2",
+          "fr": "Super saut de dragon + 2",
+          "de": "Hoher Drachensatz + 2",
+          "es": "Caída dracontina+ + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 16,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
       },
       {
         "id": 215000607,
@@ -34592,6 +34799,353 @@ export const UNITS: any[] = [
           229829,
           509231,
           509232
+        ]
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "names": {
+      "en": "Esther",
+      "tw": "艾斯德爾",
+      "kr": "에스더",
+      "fr": "Pâquerette",
+      "de": "Ostera"
+    },
+    "abilities": [
+      {
+        "id": 912164,
+        "names": {
+          "en": "Shock Flash",
+          "tw": "震撼閃光",
+          "kr": "충격파",
+          "fr": "Foudre de guerre",
+          "de": "Schockblitz",
+          "es": "Rayo eléctrico"
+        },
+        "base": 300,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        "castTime": 7,
+        "offset": 16,
+        "framesList": [
+          25, 10, 11, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912169,
+        "names": {
+          "en": "Shock Reflex",
+          "tw": "震撼反射",
+          "kr": "충격 반사",
+          "fr": "Réflexes éclair",
+          "de": "Schockreflex",
+          "es": "Reflejo electrizante"
+        },
+        "base": 240,
+        "hitDamage": [
+          4, 4, 4, 4, 4.333333333333334, 6.333333333333334, 6.666666666666668, 8, 8, 8, 8, 8.666666666666668, 12.666666666666668, 13.333333333333336
+        ],
+        "castTime": 54,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912173,
+        "names": {
+          "en": "Storm Brand",
+          "tw": "風暴烙印",
+          "kr": "폭풍 검",
+          "fr": "Signe des tempêtes",
+          "de": "Sturmzeichen",
+          "es": "Marca de tormenta"
+        },
+        "base": 280,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912192,
+        "names": {
+          "en": "Static Barrage",
+          "tw": "靜電彈幕",
+          "kr": "정적인 연발 사격",
+          "fr": "Barrage statique",
+          "de": "Statisches Sperrfeuer",
+          "es": "Ráfaga estática"
+        },
+        "base": 450,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912176,
+        "names": {
+          "en": "Storm Calling",
+          "tw": "風暴呼喊",
+          "kr": "폭풍 호출",
+          "fr": "Appel des tempêtes",
+          "de": "Sturmrufen",
+          "es": "Llamada a la tormenta"
+        },
+        "base": 430,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912180,
+        "names": {
+          "en": "Demagnetizing Strike",
+          "tw": "消磁衝擊",
+          "kr": "자기소거 타격",
+          "fr": "Frappe démagnétisante",
+          "de": "Entmagnetisierender Schlag",
+          "es": "Golpe desimantador"
+        },
+        "base": 350,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 16,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912189,
+        "names": {
+          "en": "Storm Clouds",
+          "tw": "風暴將至",
+          "kr": "먹구름",
+          "fr": "Nuages des tempêtes",
+          "de": "Sturmwolken",
+          "es": "Nubes de tormenta"
+        },
+        "base": 1100,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912190,
+        "names": {
+          "en": "Bolting Strike",
+          "tw": "雷電衝擊",
+          "kr": "번개같은 타격",
+          "fr": "Fulguro-frappe",
+          "de": "Flächenblitz",
+          "es": "Golpe relámpago"
+        },
+        "base": 400,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 401006807,
+        "names": {
+          "en": "Raikiri",
+          "tw": "雷切",
+          "kr": "라이키리"
+        },
+        "base": 1390,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 950000007,
+        "names": {
+          "en": "Absolute Raikiri + 1",
+          "tw": "神·雷切 + 1",
+          "kr": "궁극의 라이키리 + 1",
+          "fr": "Raikiri absolu + 1",
+          "de": "Ultimativer Raikiri + 1",
+          "es": "Raikiri fulminante + 1"
+        },
+        "base": 1590,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          912169,
+          912173,
+          912176,
+          912180,
+          912190,
+          912189
+        ]
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "names": {
+      "en": "Sylvie",
+      "tw": "西路比",
+      "kr": "실비"
+    },
+    "abilities": [
+      {
+        "id": 912309,
+        "names": {
+          "en": "Bunny Kick",
+          "tw": "兔子踢",
+          "kr": "토끼 발차기",
+          "fr": "Frappe du lapin",
+          "de": "Häschentritt",
+          "es": "Patada de conejo"
+        },
+        "base": 370,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912310,
+        "names": {
+          "en": "Mystical Egg",
+          "tw": "神秘彩蛋",
+          "kr": "신비의 달걀",
+          "fr": "Œuf mystique",
+          "de": "Mystisches Ei",
+          "es": "Huevo místico"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "dualable": false,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912311,
+        "names": {
+          "en": "Cotton Tail",
+          "tw": "棉絨尾巴",
+          "kr": "솜털 꼬리",
+          "fr": "Queue de coton",
+          "de": "Plüschschwanz",
+          "es": "Cola algodonada"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912312,
+        "names": {
+          "en": "Enchanted Egg",
+          "tw": "附魔彩蛋",
+          "kr": "요술 달걀",
+          "fr": "Œuf enchanté",
+          "de": "Verzaubertes Ei",
+          "es": "Huevo encantado"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          912309,
+          912310,
+          912311,
+          912312
         ]
       }
     ]
