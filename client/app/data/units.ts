@@ -35149,5 +35149,974 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 237,
+    "names": {
+      "en": "Billy",
+      "tw": "比利",
+      "kr": "빌리"
+    },
+    "abilities": [
+      {
+        "id": 229101,
+        "names": {
+          "en": "Adams Apple",
+          "tw": "亞當的蘋果",
+          "kr": "금단의 과실",
+          "fr": "Pomme d'Adam",
+          "de": "Adamsapfel",
+          "es": "Manzana de Adán"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 229102,
+        "names": {
+          "en": "Gunholic",
+          "tw": "槍械迷",
+          "kr": "건 홀릭",
+          "fr": "Tireur de génie",
+          "de": "Knarrenkuschler",
+          "es": "Adicto a las pistolas"
+        },
+        "base": 220,
+        "hitDamage": [
+          15, 15, 15.454545454545455, 54.54545454545455
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 10, 10, 50
+        ]
+      },
+      {
+        "id": 229103,
+        "names": {
+          "en": "Hell Blast",
+          "tw": "天堂保佑",
+          "kr": "지옥의 폭풍",
+          "fr": "Balle des limbes",
+          "de": "Höllische Explosion",
+          "es": "Explosión infernal"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 229108,
+        "names": {
+          "en": "Nut Crack",
+          "tw": "胡桃夾",
+          "kr": "넛 크랙",
+          "fr": "Tir broyeur",
+          "de": "Nussknacker",
+          "es": "Cascanueces"
+        },
+        "base": 270,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 508890,
+        "names": {
+          "en": "Pious Prayer",
+          "tw": "虔誠的祈禱",
+          "kr": "경건한 기도",
+          "fr": "Prière dévote",
+          "de": "Andächtiges Gebet",
+          "es": "Oración misericordiosa"
+        },
+        "base": 250,
+        "hitDamage": [
+          16, 16, 17, 17, 17, 17
+        ],
+        "castTime": 43,
+        "offset": 16,
+        "framesList": [
+          45, 15, 15, 15, 15, 37
+        ]
+      },
+      {
+        "id": 229109,
+        "names": {
+          "en": "Sky Walker",
+          "tw": "天行者",
+          "kr": "스카이 워커",
+          "fr": "Tir céleste",
+          "de": "Himmelsläufer",
+          "es": "Peregrino celeste"
+        },
+        "base": 300,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 10, 10, 10, 10, 18
+        ]
+      },
+      {
+        "id": 229114,
+        "names": {
+          "en": "Banfrau",
+          "tw": "跳躍連擊",
+          "kr": "반프라우",
+          "de": "Bannfrau"
+        },
+        "base": 380,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 10, 30, 20
+        ]
+      },
+      {
+        "id": 229115,
+        "names": {
+          "en": "Holy Gate",
+          "tw": "天堂之門",
+          "kr": "천국의 문",
+          "fr": "Porte sacrée",
+          "de": "Heiliges Tor",
+          "es": "Puerta sagrada"
+        },
+        "base": 350,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          122, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229116,
+        "names": {
+          "en": "True Dream",
+          "tw": "真實夢境",
+          "kr": "진정한 꿈",
+          "fr": "Rêve sincère",
+          "de": "Wahrer Traum",
+          "es": "Sueño verdadero"
+        },
+        "base": 420,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 331000906,
+        "names": {
+          "en": "Dear Friend",
+          "tw": "親愛的朋友",
+          "kr": "디어 프렌드",
+          "fr": "Fidèle camarade",
+          "de": "Mein lieber Freund",
+          "es": "Amigo del alma"
+        },
+        "base": 1000,
+        "hitDamage": [
+          15, 15, 15, 15, 15, 25
+        ],
+        "dualable": false,
+        "offset": 8,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          },
+          {
+            "type": "water",
+            "value": 80
+          },
+          {
+            "type": "wind",
+            "value": 80
+          },
+          {
+            "type": "earth",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          120, 10, 10, 10, 10, 40
+        ]
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "names": {
+      "en": "Citan",
+      "tw": "紫檀",
+      "kr": "시탄",
+      "es": "Citán"
+    },
+    "abilities": [
+      {
+        "id": 229043,
+        "names": {
+          "en": "Ukigumo",
+          "tw": "浮雲",
+          "kr": "부운"
+        },
+        "base": 280,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          18, 23, 35
+        ]
+      },
+      {
+        "id": 229044,
+        "names": {
+          "en": "Shinrai",
+          "tw": "震雷",
+          "kr": "진뢰"
+        },
+        "base": 230,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 12, 12, 12, 12, 22
+        ]
+      },
+      {
+        "id": 229045,
+        "names": {
+          "en": "Hakai",
+          "tw": "波壞",
+          "kr": "파괴"
+        },
+        "base": 180,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 16,
+        "offset": 16,
+        "framesList": [
+          18, 23, 35
+        ]
+      },
+      {
+        "id": 229046,
+        "names": {
+          "en": "Renken",
+          "tw": "連劍",
+          "kr": "연검"
+        },
+        "base": 400,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 229051,
+        "names": {
+          "en": "Willow Wind",
+          "tw": "風精ｰ柳ｰ",
+          "kr": "풍정 -버들-",
+          "fr": "Vent du saule",
+          "de": "Weidenwind",
+          "es": "Viento salguero"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229052,
+        "names": {
+          "en": "Rare Earth",
+          "tw": "地精ｰ崩ｰ",
+          "kr": "지정 -붕괴-",
+          "fr": "Terre raréfiée",
+          "de": "Erdbruch",
+          "es": "Tierra misteriosa"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 229053,
+        "names": {
+          "en": "Hell Fire",
+          "tw": "火精ｰ獄ｰ",
+          "kr": "화정 -지옥-",
+          "fr": "Feu des limbes",
+          "de": "Höllenfeuer",
+          "es": "Fuego infernal"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 229054,
+        "names": {
+          "en": "Tsunami Ice",
+          "tw": "水精ｰ裂ｰ",
+          "kr": "수정 -파열-",
+          "fr": "Raz-de-glacée",
+          "de": "Eistsunami",
+          "es": "Tsunami glaciar"
+        },
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229055,
+        "names": {
+          "en": "Ougi",
+          "tw": "奧義",
+          "kr": "오의"
+        },
+        "base": 500,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "offset": 8,
+        "framesList": [
+          2, 20, 20, 20
+        ]
+      },
+      {
+        "id": 508873,
+        "names": {
+          "en": "Zanretsu",
+          "tw": "烈斬",
+          "kr": "참열"
+        },
+        "base": 2000,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          82, 30
+        ]
+      },
+      {
+        "id": 229062,
+        "names": {
+          "en": "Amaoto",
+          "tw": "雨音",
+          "kr": "빗소리"
+        },
+        "base": 900,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 229063,
+        "names": {
+          "en": "Festive Wind",
+          "tw": "風精刀氣ｰ宴ｰ",
+          "kr": "풍정 도검기 -연회-",
+          "fr": "Vent festif",
+          "de": "Festlicher Wind",
+          "es": "Viento festivo"
+        },
+        "base": 875,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229064,
+        "names": {
+          "en": "Rumble Earth",
+          "tw": "地精刀氣ｰ轟ｰ",
+          "kr": "지정 도검기 -굉음-",
+          "fr": "Terre tremblante",
+          "de": "Erdgrollen",
+          "es": "Sacudida terrenal"
+        },
+        "base": 850,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 16,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 229065,
+        "names": {
+          "en": "Haze of Fire",
+          "tw": "火精刀氣ｰ朧ｰ",
+          "kr": "화정 도검기 -몽롱-",
+          "fr": "Brume de flammes",
+          "de": "Feuerschimmer",
+          "es": "Bruma abrasadora"
+        },
+        "base": 800,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          62, 20, 20
+        ]
+      },
+      {
+        "id": 229066,
+        "names": {
+          "en": "Crystal Water",
+          "tw": "水精刀氣ｰ鏡ｰ",
+          "kr": "수정 도검기 -거울-",
+          "fr": "Eau cristalline",
+          "de": "Kristallwasser",
+          "es": "Agua cristalina"
+        },
+        "base": 875,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 331000707,
+        "names": {
+          "en": "Arcane Combo",
+          "tw": "刀氣連擊",
+          "kr": "도검기 콤보",
+          "fr": "Combo des arcanes",
+          "de": "Arkane Kombo",
+          "es": "Combo arcano"
+        },
+        "base": 2600,
+        "hitDamage": [
+          7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          78, 43, 47, 91, 54, 27, 21, 21, 21, 21, 26, 104, 194
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229043,
+          229044,
+          229045,
+          229046,
+          229051,
+          229052,
+          229053,
+          229054,
+          229055,
+          229062,
+          229063,
+          229064,
+          229065,
+          229066,
+          508873
+        ]
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "names": {
+      "en": "Maria (Xenogears)",
+      "tw": "瑪利亞(Xenogears)",
+      "kr": "마리아(Xenogears)",
+      "es": "María (Xenogears)"
+    },
+    "abilities": [
+      {
+        "id": 229073,
+        "names": {
+          "en": "Robo Beam",
+          "tw": "機械射線",
+          "kr": "로봇 광선",
+          "fr": "Roborayon",
+          "de": "Robo-Strahl",
+          "es": "Rayo robótico"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 229074,
+        "names": {
+          "en": "Robo Missile",
+          "tw": "機器人飛彈",
+          "kr": "로봇 미사일",
+          "fr": "Robomissile",
+          "de": "Robo-Rakete",
+          "es": "Misil robótico"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          82, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229075,
+        "names": {
+          "en": "Robo Punch",
+          "tw": "機械重拳",
+          "kr": "로봇 펀치",
+          "fr": "Robopoing",
+          "de": "Robo-Schlag",
+          "es": "Puñetazo robótico"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 63,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 229076,
+        "names": {
+          "en": "Robo Kick",
+          "tw": "機械重踢",
+          "kr": "로봇 킥",
+          "fr": "Robohorion",
+          "de": "Robo-Tritt",
+          "es": "Patada robótica"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 229080,
+        "names": {
+          "en": "Gravity Fist",
+          "tw": "重力拳",
+          "kr": "중력장 펀치",
+          "fr": "Poing de gravité",
+          "de": "Graviton-Schlag",
+          "es": "Puño gravitatorio"
+        },
+        "damage": "magic",
+        "base": 2600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 63,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 229081,
+        "names": {
+          "en": "Head Dive",
+          "tw": "頭部衝擊",
+          "kr": "다이빙 헤딩",
+          "fr": "Tête plongeante",
+          "de": "Kopfwärts voran",
+          "es": "Chapuzón"
+        },
+        "base": 310,
+        "hitDamage": [
+          3.225806451612903
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 229082,
+        "names": {
+          "en": "Gravity Press",
+          "tw": "重力壓迫",
+          "kr": "중력장 프레스",
+          "fr": "Presse de gravité",
+          "de": "Graviton-Presse",
+          "es": "Prensa gravitatoria"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          50, 50
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          2, 8
+        ]
+      },
+      {
+        "id": 229083,
+        "names": {
+          "en": "Missile Pod",
+          "tw": "導彈輔助機",
+          "kr": "미사일 포드",
+          "fr": "Capsule de missiles",
+          "de": "Raketenpod",
+          "es": "Portamisiles"
+        },
+        "damage": "magic",
+        "base": 150,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 229084,
+        "names": {
+          "en": "Short-Range Graviton",
+          "tw": "短距離重力炮",
+          "kr": "단거리 중력장포",
+          "fr": "Graviton de courte portée",
+          "de": "Kurzstrecken-Graviton",
+          "es": "Gravitón de corto alcance"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229090,
+        "names": {
+          "en": "Iron Break",
+          "tw": "鋼鐵破壞",
+          "kr": "아이언 브레이크",
+          "fr": "Brisure de fer",
+          "de": "Eisenbrecher",
+          "es": "Fractura férrea"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 229091,
+        "names": {
+          "en": "Iron Storm",
+          "tw": "鋼鐵風暴",
+          "kr": "아이언 스톰",
+          "fr": "Tempête de fer",
+          "de": "Eisensturm",
+          "es": "Tormenta férrea"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          15, 15, 15, 15, 20, 20
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          2, 10, 10, 10, 20, 10
+        ]
+      },
+      {
+        "id": 229092,
+        "names": {
+          "en": "Fire Drive",
+          "tw": "火焰驅動",
+          "kr": "아이언 드라이브",
+          "fr": "Choc de flammes",
+          "de": "Feuerantrieb",
+          "es": "Ofensiva ardiente"
+        },
+        "damage": "magic",
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229093,
+        "names": {
+          "en": "Magneto",
+          "tw": "電磁吐息",
+          "kr": "마그네토 브레스",
+          "fr": "Magnétisme"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          12, 12, 12, 12, 13, 13, 13, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 508882,
+        "names": {
+          "en": "Maria Beat",
+          "tw": "瑪利亞打擊",
+          "kr": "마리아 비트",
+          "fr": "Talent de Maria",
+          "de": "Marias Rhythmus",
+          "es": "Al ritmo de María"
+        },
+        "damage": "magic",
+        "base": 1700,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 14
+        ]
+      },
+      {
+        "id": 331000807,
+        "names": {
+          "en": "Graviton Gun",
+          "tw": "重力砲",
+          "kr": "중력장포",
+          "fr": "Pistolet à graviton",
+          "de": "Graviton-Pistole",
+          "es": "Pistola-gravitón"
+        },
+        "damage": "magic",
+        "base": 3800,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          750
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229073,
+          229074,
+          229075,
+          229076,
+          229080,
+          229081,
+          229082,
+          229083,
+          229084,
+          229090,
+          229091,
+          229092,
+          229093,
+          508882
+        ]
+      }
+    ]
   }
 ];

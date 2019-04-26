@@ -589,6 +589,39 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401006805,
+        "names": {
+          "en": "Esther",
+          "tw": "艾斯德爾",
+          "kr": "에스더",
+          "fr": "Pâquerette",
+          "de": "Ostera"
+        },
+        "abilities": [
+          {
+            "id": 950000007,
+            "names": {
+              "en": "Absolute Raikiri + 1",
+              "tw": "神·雷切 + 1",
+              "kr": "궁극의 라이키리 + 1",
+              "fr": "Raikiri absolu + 1",
+              "de": "Ultimativer Raikiri + 1",
+              "es": "Raikiri fulminante + 1"
+            },
+            "offset": 8
+          },
+          {
+            "id": 401006807,
+            "names": {
+              "en": "Raikiri",
+              "tw": "雷切",
+              "kr": "라이키리"
+            },
+            "offset": 8
+          }
+        ]
       }
     ]
   },
@@ -1674,6 +1707,57 @@
     ]
   },
   {
+    "family": "35-5-5-5-5-5-5-5-5-5-5-5-5-5",
+    "units": [
+      {
+        "id": 401001205,
+        "names": {
+          "en": "A2"
+        },
+        "abilities": [
+          {
+            "id": 910303,
+            "names": {
+              "en": "Offensive Heal Combo",
+              "tw": "攻擊時回復HP連擊",
+              "kr": "공격 HP 회복 콤보",
+              "fr": "Combo offensivo-curatif",
+              "de": "Offensive Heilkombo",
+              "es": "Combo curativo-ofensivo"
+            },
+            "offset": 16,
+            "castTime": 39
+          }
+        ]
+      },
+      {
+        "id": 401006805,
+        "names": {
+          "en": "Esther",
+          "tw": "艾斯德爾",
+          "kr": "에스더",
+          "fr": "Pâquerette",
+          "de": "Ostera"
+        },
+        "abilities": [
+          {
+            "id": 912169,
+            "names": {
+              "en": "Shock Reflex + 1",
+              "tw": "震撼反射 + 1",
+              "kr": "충격 반사 + 1",
+              "fr": "Réflexes éclair + 1",
+              "de": "Schockreflex + 1",
+              "es": "Reflejo electrizante + 1"
+            },
+            "offset": 16,
+            "castTime": 54
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
     "units": [
       {
@@ -2436,22 +2520,46 @@
         "id": 331000705,
         "names": {
           "en": "Citan",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "紫檀",
+          "kr": "시탄",
+          "es": "Citán"
         },
         "abilities": [
+          {
+            "id": 229051,
+            "names": {
+              "en": "Willow Wind",
+              "tw": "風精ｰ柳ｰ",
+              "kr": "풍정 -버들-",
+              "fr": "Vent du saule",
+              "de": "Weidenwind",
+              "es": "Viento salguero"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
           {
             "id": 229054,
             "names": {
               "en": "Tsunami Ice",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "水精ｰ裂ｰ",
+              "kr": "수정 -파열-",
+              "fr": "Raz-de-glacée",
+              "de": "Eistsunami",
+              "es": "Tsunami glaciar"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229063,
+            "names": {
+              "en": "Festive Wind",
+              "tw": "風精刀氣ｰ宴ｰ",
+              "kr": "풍정 도검기 -연회-",
+              "fr": "Vent festif",
+              "de": "Festlicher Wind",
+              "es": "Viento festivo"
             },
             "offset": 16,
             "castTime": 40
@@ -2460,11 +2568,11 @@
             "id": 229066,
             "names": {
               "en": "Crystal Water",
-              "tw": "null",
-              "kr": "물의 거울",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "水精刀氣ｰ鏡ｰ",
+              "kr": "수정 도검기 -거울-",
+              "fr": "Eau cristalline",
+              "de": "Kristallwasser",
+              "es": "Agua cristalina"
             },
             "offset": 16,
             "castTime": 40
@@ -2474,23 +2582,21 @@
       {
         "id": 331000805,
         "names": {
-          "en": "Maria",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "en": "Maria (Xenogears)",
+          "tw": "瑪利亞(Xenogears)",
+          "kr": "마리아(Xenogears)",
+          "es": "María (Xenogears)"
         },
         "abilities": [
           {
             "id": 229092,
             "names": {
               "en": "Fire Drive",
-              "tw": "null",
+              "tw": "火焰驅動",
               "kr": "아이언 드라이브",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "fr": "Choc de flammes",
+              "de": "Feuerantrieb",
+              "es": "Ofensiva ardiente"
             },
             "offset": 16,
             "castTime": 40
@@ -2499,11 +2605,9 @@
             "id": 229093,
             "names": {
               "en": "Magneto",
-              "tw": "null",
-              "kr": "매그니토 프레스",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "電磁吐息",
+              "kr": "마그네토 브레스",
+              "fr": "Magnétisme"
             },
             "offset": 16,
             "castTime": 40
@@ -2623,6 +2727,172 @@
             },
             "offset": 16,
             "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006805,
+        "names": {
+          "en": "Esther",
+          "tw": "艾斯德爾",
+          "kr": "에스더",
+          "fr": "Pâquerette",
+          "de": "Ostera"
+        },
+        "abilities": [
+          {
+            "id": 912176,
+            "names": {
+              "en": "Storm Calling + 1",
+              "tw": "風暴呼喊 + 1",
+              "kr": "폭풍 호출 + 1",
+              "fr": "Appel des tempêtes + 1",
+              "de": "Sturmrufen + 1",
+              "es": "Llamada a la tormenta + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912189,
+            "names": {
+              "en": "Storm Clouds",
+              "tw": "風暴將至",
+              "kr": "먹구름",
+              "fr": "Nuages des tempêtes",
+              "de": "Sturmwolken",
+              "es": "Nubes de tormenta"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006905,
+        "names": {
+          "en": "Sylvie",
+          "tw": "西路比",
+          "kr": "실비"
+        },
+        "abilities": [
+          {
+            "id": 912311,
+            "names": {
+              "en": "Cotton Tail",
+              "tw": "棉絨尾巴",
+              "kr": "솜털 꼬리",
+              "fr": "Queue de coton",
+              "de": "Plüschschwanz",
+              "es": "Cola algodonada"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912312,
+            "names": {
+              "en": "Enchanted Egg",
+              "tw": "附魔彩蛋",
+              "kr": "요술 달걀",
+              "fr": "Œuf enchanté",
+              "de": "Verzaubertes Ei",
+              "es": "Huevo encantado"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-6-6-6-6-6-6-6-6",
+    "units": [
+      {
+        "id": 401006805,
+        "names": {
+          "en": "Esther",
+          "tw": "艾斯德爾",
+          "kr": "에스더",
+          "fr": "Pâquerette",
+          "de": "Ostera"
+        },
+        "abilities": [
+          {
+            "id": 912173,
+            "names": {
+              "en": "Storm Brand + 1",
+              "tw": "風暴烙印 + 1",
+              "kr": "폭풍 검 + 1",
+              "fr": "Signe des tempêtes + 1",
+              "de": "Sturmzeichen + 1",
+              "es": "Marca de tormenta + 1"
+            },
+            "offset": 16,
+            "castTime": 38
+          },
+          {
+            "id": 912180,
+            "names": {
+              "en": "Demagnetizing Strike + 1",
+              "tw": "消磁衝擊 + 1",
+              "kr": "자기소거 타격 + 1",
+              "fr": "Frappe démagnétisante + 1",
+              "de": "Entmagnetisierender Schlag + 1",
+              "es": "Golpe desimantador + 1"
+            },
+            "offset": 16,
+            "castTime": 38
+          },
+          {
+            "id": 912190,
+            "names": {
+              "en": "Bolting Strike + 1",
+              "tw": "雷電衝擊 + 1",
+              "kr": "번개같은 타격 + 1",
+              "fr": "Fulguro-frappe + 1",
+              "de": "Flächenblitz + 1",
+              "es": "Golpe relámpago + 1"
+            },
+            "offset": 16,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401006905,
+        "names": {
+          "en": "Sylvie",
+          "tw": "西路比",
+          "kr": "실비"
+        },
+        "abilities": [
+          {
+            "id": 912309,
+            "names": {
+              "en": "Bunny Kick",
+              "tw": "兔子踢",
+              "kr": "토끼 발차기",
+              "fr": "Frappe du lapin",
+              "de": "Häschentritt",
+              "es": "Patada de conejo"
+            },
+            "offset": 16,
+            "castTime": 38
+          },
+          {
+            "id": 912310,
+            "names": {
+              "en": "Mystical Egg",
+              "tw": "神秘彩蛋",
+              "kr": "신비의 달걀",
+              "fr": "Œuf mystique",
+              "de": "Mystisches Ei",
+              "es": "Huevo místico"
+            },
+            "offset": 16,
+            "castTime": 38
           }
         ]
       }
@@ -3711,6 +3981,31 @@
               "fr": "Arcane spéciale - Frappe du phénix vif",
               "de": "Spezialkünste - Flinker Phönixstreich",
               "es": "Artes especiales - Golpe rápido del fénix"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401006805,
+        "names": {
+          "en": "Esther",
+          "tw": "艾斯德爾",
+          "kr": "에스더",
+          "fr": "Pâquerette",
+          "de": "Ostera"
+        },
+        "abilities": [
+          {
+            "id": 912192,
+            "names": {
+              "en": "Static Barrage",
+              "tw": "靜電彈幕",
+              "kr": "정적인 연발 사격",
+              "fr": "Barrage statique",
+              "de": "Statisches Sperrfeuer",
+              "es": "Ráfaga estática"
             },
             "offset": 16,
             "castTime": 40
@@ -5030,22 +5325,17 @@
         "id": 331000705,
         "names": {
           "en": "Citan",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "紫檀",
+          "kr": "시탄",
+          "es": "Citán"
         },
         "abilities": [
           {
             "id": 229046,
             "names": {
               "en": "Renken",
-              "tw": "null",
-              "kr": "연검",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "連劍",
+              "kr": "연검"
             },
             "offset": 8
           }
@@ -5400,22 +5690,19 @@
         "id": 331000904,
         "names": {
           "en": "Billy",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "比利",
+          "kr": "빌리"
         },
         "abilities": [
           {
             "id": 229108,
             "names": {
               "en": "Nut Crack",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "胡桃夾",
+              "kr": "넛 크랙",
+              "fr": "Tir broyeur",
+              "de": "Nussknacker",
+              "es": "Cascanueces"
             },
             "offset": 16,
             "castTime": 40
@@ -6149,57 +6436,6 @@
             },
             "offset": 16,
             "castTime": 58
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "52-9-9-9-9-9-9-9-9-9-9-9-9-9",
-    "units": [
-      {
-        "id": 331000105,
-        "names": {
-          "en": "Fei",
-          "tw": "飛",
-          "kr": "페이"
-        },
-        "abilities": [
-          {
-            "id": 228733,
-            "names": {
-              "en": "Fukei",
-              "tw": "超武技風勁",
-              "kr": "초무예 풍경"
-            },
-            "offset": 16,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 331000705,
-        "names": {
-          "en": "Citan",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
-        },
-        "abilities": [
-          {
-            "id": 229051,
-            "names": {
-              "en": "Willow Wind",
-              "tw": "null",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
-            },
-            "offset": 16,
-            "castTime": 50
           }
         ]
       }
@@ -7007,6 +7243,30 @@
         ]
       },
       {
+        "id": 100012104,
+        "names": {
+          "en": "Emilia",
+          "tw": "埃米利亞",
+          "kr": "에밀리아",
+          "fr": "Émilia"
+        },
+        "abilities": [
+          {
+            "id": 707435,
+            "names": {
+              "en": "Funeral Knife + 2",
+              "tw": "葬禮之刃 + 2",
+              "kr": "장례의 나이프 + 2",
+              "fr": "Couteau funéraire + 2",
+              "de": "Begräbnismesser + 2",
+              "es": "Cuchillo funerario + 2"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100020704,
         "names": {
           "en": "Kyanos",
@@ -7072,6 +7332,32 @@
               "fr": "Scie circulaire",
               "de": "Wirbelsäge",
               "es": "Sierra circular"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912328,
+            "names": {
+              "en": "Circular Saw + 1",
+              "tw": "圓盤鋸 + 1",
+              "kr": "서큘러 쏘우 + 1",
+              "fr": "Scie circulaire + 1",
+              "de": "Wirbelsäge + 1",
+              "es": "Sierra circular + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912329,
+            "names": {
+              "en": "Circular Saw + 2",
+              "tw": "圓盤鋸 + 2",
+              "kr": "서큘러 쏘우 + 2",
+              "fr": "Scie circulaire + 2",
+              "de": "Wirbelsäge + 2",
+              "es": "Sierra circular + 2"
             },
             "offset": 16,
             "castTime": 40
@@ -7806,6 +8092,19 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 707434,
+            "names": {
+              "en": "Funeral Knife + 1",
+              "tw": "葬禮之刃 + 1",
+              "kr": "장례의 나이프 + 1",
+              "fr": "Couteau funéraire + 1",
+              "de": "Begräbnismesser + 1",
+              "es": "Cuchillo funerario + 1"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -8001,23 +8300,21 @@
       {
         "id": 331000805,
         "names": {
-          "en": "Maria",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "en": "Maria (Xenogears)",
+          "tw": "瑪利亞(Xenogears)",
+          "kr": "마리아(Xenogears)",
+          "es": "María (Xenogears)"
         },
         "abilities": [
           {
             "id": 229084,
             "names": {
-              "en": "Short-Range Graviton Gun",
-              "tw": "null",
-              "kr": "단거리 그래비톤포",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "en": "Short-Range Graviton",
+              "tw": "短距離重力炮",
+              "kr": "단거리 중력장포",
+              "fr": "Graviton de courte portée",
+              "de": "Kurzstrecken-Graviton",
+              "es": "Gravitón de corto alcance"
             },
             "offset": 16,
             "castTime": 40
@@ -8904,6 +9201,32 @@
             },
             "offset": 16,
             "castTime": 40
+          },
+          {
+            "id": 70434,
+            "names": {
+              "en": "Flood + 1",
+              "tw": "洪水 + 1",
+              "kr": "플러드 + 1",
+              "fr": "Inondation + 1",
+              "de": "Flut + 1",
+              "es": "Inundación + 1"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 70435,
+            "names": {
+              "en": "Flood + 2",
+              "tw": "洪水 + 2",
+              "kr": "플러드 + 2",
+              "fr": "Inondation + 2",
+              "de": "Flut + 2",
+              "es": "Inundación + 2"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -9383,22 +9706,17 @@
         "id": 331000705,
         "names": {
           "en": "Citan",
-          "tw": null,
-          "kr": null,
-          "fr": null,
-          "de": null,
-          "es": null
+          "tw": "紫檀",
+          "kr": "시탄",
+          "es": "Citán"
         },
         "abilities": [
           {
             "id": 229055,
             "names": {
               "en": "Ougi",
-              "tw": "null",
-              "kr": "오의",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
+              "tw": "奧義",
+              "kr": "오의"
             },
             "offset": 8
           }
