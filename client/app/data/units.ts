@@ -36118,5 +36118,523 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 240,
+    "names": {
+      "en": "Black Mage Golbez",
+      "tw": "漆黑魔道士高貝扎",
+      "kr": "칠흑의 마도사 골베자",
+      "fr": "Golbez mage noir",
+      "de": "Schwarzmagier Golbez",
+      "es": "Mago negro Golbez"
+    },
+    "abilities": [
+      {
+        "id": 20260,
+        "names": {
+          "en": "Bioga",
+          "tw": "劇毒化",
+          "kr": "바이오가",
+          "fr": "Toxine X",
+          "es": "Bio++"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 229442,
+        "names": {
+          "en": "Binding Cold",
+          "tw": "咒縛大冷氣",
+          "kr": "주박의 냉기",
+          "fr": "Chaînes glaciales",
+          "de": "Eisfessel",
+          "es": "Frío paralizador"
+        },
+        "damage": "magic",
+        "base": 900,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 79,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          230
+        ]
+      },
+      {
+        "id": 229444,
+        "names": {
+          "en": "Abyssal Scythe",
+          "tw": "深淵鐮刀",
+          "kr": "심연의 낫",
+          "fr": "Faux abyssale",
+          "de": "Abgrundsense",
+          "es": "Guadaña abismal"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 20310,
+        "names": {
+          "en": "Thundaja",
+          "tw": "強雷電",
+          "kr": "선더쟈",
+          "fr": "Foudre max",
+          "de": "Blitzka",
+          "es": "Electro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20350,
+        "names": {
+          "en": "Flare",
+          "tw": "核爆",
+          "kr": "플레어",
+          "fr": "Brasier",
+          "de": "Flamme",
+          "es": "Fulgor"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 30
+          }
+        ],
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 20430,
+        "names": {
+          "en": "Meteor",
+          "tw": "隕石",
+          "kr": "메테오",
+          "fr": "Météore",
+          "de": "Meteo",
+          "es": "Meteo"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "dualable": false,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          350
+        ]
+      },
+      {
+        "id": 509021,
+        "names": {
+          "en": "Black Fang",
+          "tw": "黑牙",
+          "kr": "검은 송곳니",
+          "fr": "Crocs sombres",
+          "de": "Schwarze Fänge",
+          "es": "Colmillo negro"
+        },
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 79,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          202
+        ]
+      },
+      {
+        "id": 509022,
+        "names": {
+          "en": "Jet-Black Fang",
+          "tw": "漆黑之牙",
+          "kr": "칠흑의 송곳니",
+          "fr": "Crocs de jais",
+          "de": "Rabenschwarze Fänge",
+          "es": "Colmillo azabache"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 79,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          202, 5, 5
+        ]
+      },
+      {
+        "id": 229446,
+        "names": {
+          "en": "Scarmiglione's Power",
+          "tw": "斯卡米留尼之力",
+          "kr": "스컬밀리오네의 힘",
+          "fr": "Pouvoir de Scarmiglione",
+          "de": "Scarmigliones Macht",
+          "es": "Poder de Scarmiglione"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 229447,
+        "names": {
+          "en": "Cagnazzo's Power",
+          "tw": "凱納槽之力",
+          "kr": "카이나초의 힘",
+          "fr": "Pouvoir de Cagnazzo",
+          "de": "Cagnazzos Macht",
+          "es": "Poder de Cagnazzo"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.1111111111111112, 88.88888888888889
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 229448,
+        "names": {
+          "en": "Barbariccia's Power",
+          "tw": "巴爾巴莉希亞之力",
+          "kr": "발바리시아의 힘",
+          "fr": "Pouvoir de Barbariccia",
+          "de": "Barbarizias Macht",
+          "es": "Poder de Barbariccia"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.7777777777777777, 88.88888888888889
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          50, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 20410,
+        "names": {
+          "en": "Impact",
+          "tw": "衝擊",
+          "kr": "임팩트",
+          "de": "Aufprall",
+          "es": "Impacto"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          290
+        ]
+      },
+      {
+        "id": 229449,
+        "names": {
+          "en": "Rubicante's Power",
+          "tw": "盧比坎特之力",
+          "kr": "루비칸테의 힘",
+          "fr": "Pouvoir de Rubicante",
+          "de": "Rubicantes Macht",
+          "es": "Poder de Rubicante"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          1.222222222222222, 1.222222222222222, 1.222222222222222, 1.222222222222222, 1.222222222222222, 1.222222222222222, 1.222222222222222, 1.222222222222222, 1.333333333333333, 88.88888888888889
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          52, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229451,
+        "names": {
+          "en": "Abyssal Quasar",
+          "tw": "深淵類星體",
+          "kr": "어비스 퀘이사",
+          "fr": "Quasar abyssal",
+          "de": "Abyssus-Nova",
+          "es": "Nova abismal"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          3.125, 3.125, 3.125, 3.125, 87.5
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 509024,
+        "names": {
+          "en": "Twin Meteor",
+          "tw": "W隕石",
+          "kr": "W메테오",
+          "fr": "Météore X",
+          "de": "Doppelmeteo",
+          "es": "Meteo dual"
+        },
+        "damage": "magic",
+        "base": 1800,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          141, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 204001707,
+        "names": {
+          "en": "Dark Abyss",
+          "tw": "深淵之暗",
+          "kr": "심연의 어둠",
+          "fr": "Abysse des ténèbres",
+          "de": "Dunkler Abgrund",
+          "es": "Abismo de tinieblas"
+        },
+        "damage": "magic",
+        "base": 1350,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          200
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          229442,
+          229444,
+          229446,
+          229447,
+          229448,
+          229449,
+          229451,
+          509021,
+          509022,
+          509024
+        ]
+      }
+    ]
   }
 ];

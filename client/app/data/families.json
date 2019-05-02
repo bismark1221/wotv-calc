@@ -9182,6 +9182,32 @@
         ]
       },
       {
+        "id": 204001705,
+        "names": {
+          "en": "Black Mage Golbez",
+          "tw": "漆黑魔道士高貝扎",
+          "kr": "칠흑의 마도사 골베자",
+          "fr": "Golbez mage noir",
+          "de": "Schwarzmagier Golbez",
+          "es": "Mago negro Golbez"
+        },
+        "abilities": [
+          {
+            "id": 229447,
+            "names": {
+              "en": "Cagnazzo's Power",
+              "tw": "凱納槽之力",
+              "kr": "카이나초의 힘",
+              "fr": "Pouvoir de Cagnazzo",
+              "de": "Cagnazzos Macht",
+              "es": "Poder de Cagnazzo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 210000405,
         "names": {
           "en": "Lulu",
@@ -9727,6 +9753,32 @@
   {
     "family": "52-20-20-20-20",
     "units": [
+      {
+        "id": 204001705,
+        "names": {
+          "en": "Black Mage Golbez",
+          "tw": "漆黑魔道士高貝扎",
+          "kr": "칠흑의 마도사 골베자",
+          "fr": "Golbez mage noir",
+          "de": "Schwarzmagier Golbez",
+          "es": "Mago negro Golbez"
+        },
+        "abilities": [
+          {
+            "id": 229451,
+            "names": {
+              "en": "Abyssal Quasar",
+              "tw": "深淵類星體",
+              "kr": "어비스 퀘이사",
+              "fr": "Quasar abyssal",
+              "de": "Abyssus-Nova",
+              "es": "Nova abismal"
+            },
+            "offset": 16,
+            "castTime": 50
+          }
+        ]
+      },
       {
         "id": 206000103,
         "names": {
