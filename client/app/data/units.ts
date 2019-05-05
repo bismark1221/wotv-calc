@@ -11384,7 +11384,8 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [70, 6, 6, 6, 6, 6, 6, 6],
-        offset: 86,
+        "castTime": 40,
+        "offset": 16,
         base: 1000
       },
       {
