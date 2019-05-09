@@ -18,6 +18,7 @@ export class Unit {
   multipleBlack: number = 1;
   multipleWhite: number = 1;
   multipleGreen: number = 1;
+  maxChainCap: number = 4;
 
   constructUnitFromJson(unit: Unit, translateService: TranslateService): void {
     this.id = unit.id;
@@ -41,6 +42,7 @@ export class Unit {
     this.multipleBlack = unit.multipleBlack ? unit.multipleBlack : this.multipleBlack;
     this.multipleWhite = unit.multipleWhite ? unit.multipleWhite : this.multipleWhite;
     this.multipleGreen = unit.multipleGreen ? unit.multipleGreen : this.multipleGreen;
+    this.maxChainCap = unit.maxChainCap ? unit.maxChainCap : this.maxChainCap;
   }
 
   getName(translateService: TranslateService): string {

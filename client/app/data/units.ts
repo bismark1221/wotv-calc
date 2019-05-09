@@ -36636,5 +36636,988 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 241,
+    "names": {
+      "en": "Gravey",
+      "tw": "格雷比",
+      "kr": "그레이비"
+    },
+    "abilities": [
+      {
+        "id": 229594,
+        "names": {
+          "en": "Overedge",
+          "tw": "終結之刃",
+          "kr": "오버 엣지",
+          "fr": "Au-delà",
+          "de": "Überhang",
+          "es": "Más allá de la frontera"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "id": 200350,
+        "names": {
+          "en": "Fireworks",
+          "tw": "霸彈",
+          "kr": "제압 탄환",
+          "fr": "Feux d'artifice",
+          "de": "Strahlenkugel",
+          "es": "Kiai total"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 25,
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "id": 229592,
+        "names": {
+          "en": "Killer Sword",
+          "tw": "殺戮之劍",
+          "kr": "킬러 소드",
+          "fr": "Épée létale",
+          "de": "Killerschwert",
+          "es": "Espada asesina"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 229593,
+        "names": {
+          "en": "Flame Slash (FFBE)",
+          "tw": "火焰斬擊",
+          "kr": "화염 베기(FFBE)",
+          "fr": "Coup enflammé (FFBE)",
+          "de": "Flammenhieb (FFBE)",
+          "es": "Estocada flamígera (FFBE)"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "fire"
+        ],
+        "offset": 8,
+        "framesList": [
+          7
+        ]
+      },
+      {
+        "id": 229591,
+        "names": {
+          "en": "Sacrificial Blade",
+          "tw": "刀鋒犧牲",
+          "kr": "번제의 검",
+          "fr": "Lame sacrificielle",
+          "de": "Opferklinge",
+          "es": "Hoja sacrificadora"
+        },
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          112
+        ]
+      },
+      {
+        "id": 229590,
+        "names": {
+          "en": "Burn Breaker",
+          "tw": "爆炎破壞者",
+          "kr": "번 브레이커",
+          "fr": "Brisebrûlure",
+          "de": "Brandbrecher",
+          "es": "Destrucción abrasiva"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 100020106,
+        "names": {
+          "en": "Snare Slash",
+          "tw": "奪搶抽打",
+          "kr": "올가미의 참격",
+          "fr": "Piège éblouissant",
+          "de": "Fallenbrecher",
+          "es": "Corte sorpresa"
+        },
+        "base": 840,
+        "hitDamage": [
+          20, 20, 20, 40
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          120, 10, 15, 23
+        ]
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "names": {
+      "en": "Tomoe",
+      "tw": "巴",
+      "kr": "토모에"
+    },
+    "abilities": [
+      {
+        "id": 229615,
+        "names": {
+          "en": "Guard Sniper",
+          "tw": "防衛·狙擊",
+          "kr": "가드 스나이퍼",
+          "fr": "Garde sniper",
+          "de": "Deckender Scharfschütze",
+          "es": "Guarda francotiradora"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          102
+        ]
+      },
+      {
+        "id": 229614,
+        "names": {
+          "en": "Attack Sniper",
+          "tw": "攻擊·狙擊",
+          "kr": "어택 스나이퍼",
+          "fr": "Snipassaut",
+          "de": "Offensiver Scharfschütze",
+          "es": "Ataque francotirador"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          102
+        ]
+      },
+      {
+        "id": 229611,
+        "names": {
+          "en": "Sniper Shot",
+          "tw": "狙擊射擊",
+          "kr": "스나이퍼 샷",
+          "fr": "Tir précis",
+          "de": "Heckenschuss",
+          "es": "Disparo de francotiradora"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          102
+        ]
+      },
+      {
+        "id": 229613,
+        "names": {
+          "en": "Fatal Shot",
+          "tw": "致命射擊",
+          "kr": "파탈 샷",
+          "fr": "Tir létal",
+          "de": "Tödlicher Schuss",
+          "es": "Tiro fatal"
+        },
+        "base": 675,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 229610,
+        "names": {
+          "en": "First Burst",
+          "tw": "首次爆破",
+          "kr": "퍼스트 버스트",
+          "fr": "Premier éclat",
+          "de": "Erster Streuschuss",
+          "es": "Primer estallido"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          125
+        ]
+      },
+      {
+        "id": 509120,
+        "names": {
+          "en": "Second Burst",
+          "tw": "二次爆破",
+          "kr": "세컨드 버스트",
+          "fr": "Second éclat",
+          "de": "Zweiter Streuschuss",
+          "es": "Segundo estallido"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          140
+        ]
+      },
+      {
+        "id": 509121,
+        "names": {
+          "en": "Lagoa Burst",
+          "tw": "拉戈亞爆破",
+          "kr": "라고아 버스트",
+          "fr": "Explo-Lagoa",
+          "de": "Lagoa-Sperrfeuer",
+          "es": "Estallido Lagoa"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          140
+        ]
+      },
+      {
+        "id": 100020206,
+        "names": {
+          "en": "Burst Sniper",
+          "tw": "爆破狙擊",
+          "kr": "버스트 스나이퍼",
+          "fr": "Snipéclat",
+          "de": "Sperrfeuer-Scharfschütze",
+          "es": "Francotiradora explosiva"
+        },
+        "base": 590,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          233
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 243,
+    "names": {
+      "en": "Akstar",
+      "tw": "阿克斯特",
+      "kr": "엑스타"
+    },
+    "abilities": [
+      {
+        "id": 200330,
+        "names": {
+          "en": "Fingersnap",
+          "tw": "醒夢",
+          "kr": "백일몽",
+          "fr": "Éveil",
+          "de": "Fieberwahn",
+          "es": "Agudeza"
+        },
+        "base": 110,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 229566,
+        "names": {
+          "en": "Polar Vortex - Frost",
+          "tw": "冰碎 ─凍─",
+          "kr": "빙쇄-얼음-",
+          "fr": "Vortex polaire - Gelure",
+          "de": "Polarwirbel - Frost",
+          "es": "Torbellino polar - Escarcha"
+        },
+        "base": 320,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229563,
+        "names": {
+          "en": "Mirror of Equity - Acuity",
+          "tw": "明鏡・銳",
+          "kr": "잔잔한 거울·예",
+          "fr": "Sérénité - Acuité",
+          "de": "Kata - Scharfsinn",
+          "es": "Tranquilidad - Agudeza"
+        },
+        "base": 300,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229562,
+        "names": {
+          "en": "Thirty Slash Combo",
+          "tw": "三十連斬",
+          "kr": "삼십연참",
+          "fr": "Trente entailles",
+          "de": "Dreißig-Hiebe-Kombo",
+          "es": "Triacontacombo rebanador"
+        },
+        "base": 450,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 229567,
+        "names": {
+          "en": "Blazing Heat - Ash",
+          "tw": "炎熱 ─灰─",
+          "kr": "염열-재-",
+          "fr": "Embrasement - Cendres",
+          "de": "Lodernde Hitze - Asche",
+          "es": "Ardor abrasador - Cenizas"
+        },
+        "base": 320,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229564,
+        "names": {
+          "en": "Mirror of Equity - Disorder",
+          "tw": "明鏡・亂",
+          "kr": "잔잔한 거울·란",
+          "fr": "Sérénité - Désordre",
+          "de": "Kata - Chaos",
+          "es": "Tranquilidad - Disturbio"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229565,
+        "names": {
+          "en": "Mirror of Equity - Supremacy",
+          "tw": "明鏡・霸",
+          "kr": "잔잔한 거울·패",
+          "fr": "Sérénité - Domination",
+          "de": "Kata - Übermacht",
+          "es": "Tranquilidad - Supremacía"
+        },
+        "base": 230,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229561,
+        "names": {
+          "en": "Absolute Mirror of Equity",
+          "tw": "極・明鏡",
+          "kr": "극·잔잔한 거울",
+          "fr": "Sérénité absolue",
+          "de": "Vollkommene Kata",
+          "es": "Tranquilidad total"
+        },
+        "base": 675,
+        "hitDamage": [
+          1.0370370370370372, 1.0370370370370372, 1.0370370370370372, 1.0370370370370372, 1.0370370370370372, 1.1111111111111112, 1.1111111111111112, 92.5925925925926
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509112,
+        "names": {
+          "en": "True Mirror of Equity",
+          "tw": "真・明鏡",
+          "kr": "진·잔잔한 거울",
+          "fr": "Véritable Sérénité",
+          "de": "Wahre Kata",
+          "es": "Tranquilidad verdadera"
+        },
+        "base": 650,
+        "hitDamage": [
+          3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.4615384615384612, 3.4615384615384612, 76.92307692307692
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229571,
+        "names": {
+          "en": "Mirror of Equity - Emptiness",
+          "tw": "明鏡・虛",
+          "kr": "잔잔한 거울·허",
+          "fr": "Sérénité absolue - Vide",
+          "de": "Kata - Leere",
+          "es": "Tranquilidad - Desolación"
+        },
+        "base": 230,
+        "hitDamage": [
+          3.4782608695652173, 3.4782608695652173, 3.695652173913044, 3.695652173913044, 3.695652173913044, 3.695652173913044, 78.26086956521739
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          },
+          {
+            "type": "ice",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 100020007,
+        "names": {
+          "en": "Subjection to Equity - Rainfall",
+          "tw": "必殺劍・雨曝",
+          "kr": "필살검·강우",
+          "fr": "Soumission à la Sérénité - Pluie torrentielle",
+          "de": "Kataunterwerfung - Regenschauer",
+          "es": "Tranquilidad subordinada - Diluvio"
+        },
+        "base": 1490,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 61
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229561,
+          229562,
+          229563,
+          229564,
+          229565,
+          229566,
+          229567,
+          229571,
+          509112
+        ]
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "names": {
+      "en": "Zeno of the Beta Star",
+      "tw": "二鬥星傑諾",
+      "kr": "이성투사 제노",
+      "fr": "Xeno de l'étoile Bêta",
+      "de": "Beta-Stern-Zeno",
+      "es": "Zeno de la estrella Beta"
+    },
+    "abilities": [
+      {
+        "id": 912337,
+        "names": {
+          "en": "Fingersnap",
+          "tw": "醒夢",
+          "kr": "성몽",
+          "fr": "Éveil",
+          "de": "Fieberwahn",
+          "es": "Agudeza"
+        },
+        "base": 110,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 912340,
+        "names": {
+          "en": "Mirror of Equity - Acuity",
+          "tw": "明鏡・銳",
+          "kr": "잔잔한 거울·예",
+          "fr": "Sérénité - Acuité",
+          "de": "Kata - Scharfsinn",
+          "es": "Tranquilidad - Agudeza"
+        },
+        "base": 300,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912341,
+        "names": {
+          "en": "Scorch",
+          "tw": "陽炎",
+          "kr": "양염",
+          "fr": "Brûlure",
+          "de": "Verbrennen",
+          "es": "Calcinación"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912346,
+        "names": {
+          "en": "Dismissal",
+          "tw": "斷動",
+          "kr": "단동",
+          "fr": "Interruption",
+          "de": "Immobilia",
+          "es": "Oportunidad"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "offset": 16,
+        "framesList": [
+          1
+        ]
+      },
+      {
+        "id": 912347,
+        "names": {
+          "en": "Blazing Heat - Ash",
+          "tw": "炎熱 ─灰─",
+          "kr": "염열-재-",
+          "fr": "Embrasement - Cendres",
+          "de": "Lodernde Hitze - Asche",
+          "es": "Ardor abrasador - Cenizas"
+        },
+        "base": 320,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 16,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 912349,
+        "names": {
+          "en": "Imminent Death",
+          "tw": "死亡迫近",
+          "kr": "다가오는 죽음",
+          "fr": "Mort imminente",
+          "de": "Bevorstehender Tod",
+          "es": "Muerte fulminante"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 912350,
+        "names": {
+          "en": "Firaga Slash",
+          "tw": "大火焰劍",
+          "kr": "파이가 검",
+          "fr": "Lame Feu X",
+          "de": "Feuga-Schnitt",
+          "es": "Corte Piro++"
+        },
+        "base": 300,
+        "hitDamage": [
+          4.666666666666667, 4.666666666666667, 4.666666666666667, 4.666666666666667, 4.666666666666667, 5.000000000000001, 5.000000000000001, 66.66666666666667
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912351,
+        "names": {
+          "en": "Mirror of Equity - Disorder",
+          "tw": "明鏡・亂",
+          "kr": "잔잔한 거울·란",
+          "fr": "Sérénité - Désordre",
+          "de": "Kata - Chaos",
+          "es": "Tranquilidad - Disturbio"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912353,
+        "names": {
+          "en": "Mirror of Equity - Supremacy",
+          "tw": "明鏡・霸",
+          "kr": "잔잔한 거울·패",
+          "fr": "Sérénité - Domination",
+          "de": "Kata - Übermacht",
+          "es": "Tranquilidad - Supremacía"
+        },
+        "base": 230,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912354,
+        "names": {
+          "en": "Absolute Mirror of Equity",
+          "tw": "極・明鏡",
+          "kr": "극·잔잔한 거울",
+          "fr": "Sérénité absolue",
+          "de": "Vollkommene Kata",
+          "es": "Tranquilidad total"
+        },
+        "base": 650,
+        "hitDamage": [
+          1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.153846153846154, 1.153846153846154, 92.3076923076923
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912357,
+        "names": {
+          "en": "Kaleido Slash",
+          "tw": "三十虹連斬",
+          "kr": "삼십홍연참",
+          "fr": "Tranche-kaléido",
+          "de": "Kaleidoschnitt",
+          "es": "Caleidocorte"
+        },
+        "base": 400,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 912358,
+        "names": {
+          "en": "Crimson Flash",
+          "tw": "紅閃",
+          "kr": "홍섬",
+          "fr": "Éclat pourpre",
+          "de": "Purpurner Blitz",
+          "es": "Destello carmesí"
+        },
+        "base": 400,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912370,
+        "names": {
+          "en": "True Mirror of Equity",
+          "tw": "真・明鏡",
+          "kr": "진·잔잔한 거울",
+          "fr": "Véritable Sérénité",
+          "de": "Wahre Kata",
+          "es": "Tranquilidad verdadera"
+        },
+        "base": 650,
+        "hitDamage": [
+          3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.4615384615384612, 3.4615384615384612, 76.92307692307692
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912371,
+        "names": {
+          "en": "Obliterating Mirror of Equity's Roar",
+          "tw": "絕·明鏡 ─咆哮─",
+          "kr": "절·잔잔한 거울-포효-",
+          "fr": "Rugissement de la Sérénité primordiale",
+          "de": "Gebrüll der Vernichtenden Kata",
+          "es": "Rugido de Tranquilidad fulminante"
+        },
+        "base": 1000,
+        "hitDamage": [
+          1.4, 1.4, 1.4, 1.4, 1.4, 1.5, 1.5, 90
+        ],
+        "castTime": 40,
+        "offset": 16,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 401007607,
+        "names": {
+          "en": "Subjection to Equity - Crimson",
+          "tw": "必殺劍·紅",
+          "kr": "필살검·진홍",
+          "fr": "Soumission à la Sérénité - Éclat carmin",
+          "de": "Kataunterwerfung - Purpur",
+          "es": "Tranquilidad subordinada - Carmesí"
+        },
+        "base": 1490,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 61
+        ],
+        "dualable": false,
+        "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          92, 17, 6, 6, 16, 6, 16, 6, 6, 16, 6, 16, 6, 20
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          912340,
+          912341,
+          912346,
+          912347,
+          912349,
+          912350,
+          912351,
+          912353,
+          912354,
+          912357,
+          912358,
+          912371,
+          912370
+        ]
+      }
+    ],
+    maxChainCap: 6
   }
 ];

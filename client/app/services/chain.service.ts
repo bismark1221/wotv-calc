@@ -342,12 +342,12 @@ export class ChainService {
     if (combo) {
       let elementsModifier = this.calculateModifierByElements(unit);
       this.multi += 0.1 + elementsModifier;
-      if (this.multi < 4 && this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
+      if (this.multi < unit.maxChainCap && this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
         this.multi += 0.3;
       }
 
-      if (this.multi > 4) {
-        this.multi = 4;
+      if (this.multi > unit.maxChainCap) {
+        this.multi = unit.maxChainCap;
       }
 
       this.combo[this.combo.length - 1]++;
