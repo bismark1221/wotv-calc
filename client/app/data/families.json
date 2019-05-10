@@ -1,5 +1,85 @@
 [
   {
+    "family": "70-0-0-6-6-6-6-6-6-6",
+    "units": [
+      {
+        "id": 100020005,
+        "names": {
+          "en": "Akstar",
+          "tw": "阿克斯特",
+          "kr": "엑스타"
+        },
+        "abilities": [
+          {
+            "id": 229563,
+            "names": {
+              "en": "Mirror of Equity - Acuity",
+              "tw": "明鏡・銳",
+              "kr": "잔잔한 거울·예",
+              "fr": "Sérénité - Acuité",
+              "de": "Kata - Scharfsinn",
+              "es": "Tranquilidad - Agudeza"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229564,
+            "names": {
+              "en": "Mirror of Equity - Disorder",
+              "tw": "明鏡・亂",
+              "kr": "잔잔한 거울·란",
+              "fr": "Sérénité - Désordre",
+              "de": "Kata - Chaos",
+              "es": "Tranquilidad - Disturbio"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007605,
+        "names": {
+          "en": "Zeno of the Beta Star",
+          "tw": "二鬥星傑諾",
+          "kr": "이성투사 제노",
+          "fr": "Xeno de l'étoile Bêta",
+          "de": "Beta-Stern-Zeno",
+          "es": "Zeno de la estrella Beta"
+        },
+        "abilities": [
+          {
+            "id": 912340,
+            "names": {
+              "en": "Mirror of Equity - Acuity",
+              "tw": "明鏡・銳",
+              "kr": "잔잔한 거울·예",
+              "fr": "Sérénité - Acuité",
+              "de": "Kata - Scharfsinn",
+              "es": "Tranquilidad - Agudeza"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912351,
+            "names": {
+              "en": "Mirror of Equity - Disorder",
+              "tw": "明鏡・亂",
+              "kr": "잔잔한 거울·란",
+              "fr": "Sérénité - Désordre",
+              "de": "Kata - Chaos",
+              "es": "Tranquilidad - Disturbio"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-3-3-3-3-3-3-3-3-3",
     "units": [
       {
@@ -414,6 +494,29 @@
         ]
       },
       {
+        "id": 100020005,
+        "names": {
+          "en": "Akstar",
+          "tw": "阿克斯特",
+          "kr": "엑스타"
+        },
+        "abilities": [
+          {
+            "id": 229562,
+            "names": {
+              "en": "Thirty Slash Combo",
+              "tw": "三十連斬",
+              "kr": "삼십연참",
+              "fr": "Trente entailles",
+              "de": "Dreißig-Hiebe-Kombo",
+              "es": "Triacontacombo rebanador"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004605,
         "names": {
           "en": "Malphasie",
@@ -620,6 +723,32 @@
               "kr": "라이키리"
             },
             "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 401007605,
+        "names": {
+          "en": "Zeno of the Beta Star",
+          "tw": "二鬥星傑諾",
+          "kr": "이성투사 제노",
+          "fr": "Xeno de l'étoile Bêta",
+          "de": "Beta-Stern-Zeno",
+          "es": "Zeno de la estrella Beta"
+        },
+        "abilities": [
+          {
+            "id": 912357,
+            "names": {
+              "en": "Kaleido Slash",
+              "tw": "三十虹連斬",
+              "kr": "삼십홍연참",
+              "fr": "Tranche-kaléido",
+              "de": "Kaleidoschnitt",
+              "es": "Caleidocorte"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       }
@@ -2190,6 +2319,55 @@
         ]
       },
       {
+        "id": 100020005,
+        "names": {
+          "en": "Akstar",
+          "tw": "阿克斯特",
+          "kr": "엑스타"
+        },
+        "abilities": [
+          {
+            "id": 229565,
+            "names": {
+              "en": "Mirror of Equity - Supremacy",
+              "tw": "明鏡・霸",
+              "kr": "잔잔한 거울·패",
+              "fr": "Sérénité - Domination",
+              "de": "Kata - Übermacht",
+              "es": "Tranquilidad - Supremacía"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229561,
+            "names": {
+              "en": "Absolute Mirror of Equity",
+              "tw": "極・明鏡",
+              "kr": "극·잔잔한 거울",
+              "fr": "Sérénité absolue",
+              "de": "Vollkommene Kata",
+              "es": "Tranquilidad total"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 509112,
+            "names": {
+              "en": "True Mirror of Equity",
+              "tw": "真・明鏡",
+              "kr": "진·잔잔한 거울",
+              "fr": "Véritable Sérénité",
+              "de": "Wahre Kata",
+              "es": "Tranquilidad verdadera"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100020605,
         "names": {
           "en": "Crimson",
@@ -2803,6 +2981,97 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401007605,
+        "names": {
+          "en": "Zeno of the Beta Star",
+          "tw": "二鬥星傑諾",
+          "kr": "이성투사 제노",
+          "fr": "Xeno de l'étoile Bêta",
+          "de": "Beta-Stern-Zeno",
+          "es": "Zeno de la estrella Beta"
+        },
+        "abilities": [
+          {
+            "id": 912341,
+            "names": {
+              "en": "Scorch",
+              "tw": "陽炎",
+              "kr": "양염",
+              "fr": "Brûlure",
+              "de": "Verbrennen",
+              "es": "Calcinación"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912350,
+            "names": {
+              "en": "Firaga Slash",
+              "tw": "大火焰劍",
+              "kr": "파이가 검",
+              "fr": "Lame Feu X",
+              "de": "Feuga-Schnitt",
+              "es": "Corte Piro++"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912353,
+            "names": {
+              "en": "Mirror of Equity - Supremacy",
+              "tw": "明鏡・霸",
+              "kr": "잔잔한 거울·패",
+              "fr": "Sérénité - Domination",
+              "de": "Kata - Übermacht",
+              "es": "Tranquilidad - Supremacía"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912354,
+            "names": {
+              "en": "Absolute Mirror of Equity",
+              "tw": "極・明鏡",
+              "kr": "극·잔잔한 거울",
+              "fr": "Sérénité absolue",
+              "de": "Vollkommene Kata",
+              "es": "Tranquilidad total"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912370,
+            "names": {
+              "en": "True Mirror of Equity",
+              "tw": "真・明鏡",
+              "kr": "진·잔잔한 거울",
+              "fr": "Véritable Sérénité",
+              "de": "Wahre Kata",
+              "es": "Tranquilidad verdadera"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 912371,
+            "names": {
+              "en": "Obliterating Mirror of Equity's Roar",
+              "tw": "絕·明鏡 ─咆哮─",
+              "kr": "절·잔잔한 거울-포효-",
+              "fr": "Rugissement de la Sérénité primordiale",
+              "de": "Gebrüll der Vernichtenden Kata",
+              "es": "Rugido de Tranquilidad fulminante"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -2890,6 +3159,32 @@
               "fr": "Œuf mystique",
               "de": "Mystisches Ei",
               "es": "Huevo místico"
+            },
+            "offset": 16,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401007605,
+        "names": {
+          "en": "Zeno of the Beta Star",
+          "tw": "二鬥星傑諾",
+          "kr": "이성투사 제노",
+          "fr": "Xeno de l'étoile Bêta",
+          "de": "Beta-Stern-Zeno",
+          "es": "Zeno de la estrella Beta"
+        },
+        "abilities": [
+          {
+            "id": 912358,
+            "names": {
+              "en": "Crimson Flash",
+              "tw": "紅閃",
+              "kr": "홍섬",
+              "fr": "Éclat pourpre",
+              "de": "Purpurner Blitz",
+              "es": "Destello carmesí"
             },
             "offset": 16,
             "castTime": 38
@@ -3168,6 +3463,29 @@
               "es": "Conflagración ardiente"
             },
             "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100020005,
+        "names": {
+          "en": "Akstar",
+          "tw": "阿克斯特",
+          "kr": "엑스타"
+        },
+        "abilities": [
+          {
+            "id": 229571,
+            "names": {
+              "en": "Mirror of Equity - Emptiness",
+              "tw": "明鏡・虛",
+              "kr": "잔잔한 거울·허",
+              "fr": "Sérénité absolue - Vide",
+              "de": "Kata - Leere",
+              "es": "Tranquilidad - Desolación"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -4006,6 +4324,73 @@
               "fr": "Barrage statique",
               "de": "Statisches Sperrfeuer",
               "es": "Ráfaga estática"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "70-7-5-7-7-7-7-10",
+    "units": [
+      {
+        "id": 100020005,
+        "names": {
+          "en": "Akstar",
+          "tw": "阿克斯特",
+          "kr": "엑스타"
+        },
+        "abilities": [
+          {
+            "id": 229566,
+            "names": {
+              "en": "Polar Vortex - Frost",
+              "tw": "冰碎 ─凍─",
+              "kr": "빙쇄-얼음-",
+              "fr": "Vortex polaire - Gelure",
+              "de": "Polarwirbel - Frost",
+              "es": "Torbellino polar - Escarcha"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229567,
+            "names": {
+              "en": "Blazing Heat - Ash",
+              "tw": "炎熱 ─灰─",
+              "kr": "염열-재-",
+              "fr": "Embrasement - Cendres",
+              "de": "Lodernde Hitze - Asche",
+              "es": "Ardor abrasador - Cenizas"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007605,
+        "names": {
+          "en": "Zeno of the Beta Star",
+          "tw": "二鬥星傑諾",
+          "kr": "이성투사 제노",
+          "fr": "Xeno de l'étoile Bêta",
+          "de": "Beta-Stern-Zeno",
+          "es": "Zeno de la estrella Beta"
+        },
+        "abilities": [
+          {
+            "id": 912347,
+            "names": {
+              "en": "Blazing Heat - Ash",
+              "tw": "炎熱 ─灰─",
+              "kr": "염열-재-",
+              "fr": "Embrasement - Cendres",
+              "de": "Lodernde Hitze - Asche",
+              "es": "Ardor abrasador - Cenizas"
             },
             "offset": 16,
             "castTime": 40
