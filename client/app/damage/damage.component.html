@@ -1,0 +1,106 @@
+<div class="row unit form-group">
+  <div class="chainParameters allSelectUnit" #chainDiv>
+    <div class=" verticalTop selectUnitZone marginUnit0 expandedSelecUnit autoMargin">
+      <div class="inlineBlock firstSelectLevel">
+        <label for="unit">{{ 'chain.label.unit' | translate }} {{ 0 }}</label>
+        <div>
+          <select2
+            [data]="observableUnits"
+            [value]="unit.id"
+            [position]="i"
+            [options]="select2Options"
+            (valueChanged)="onChangeUnit($event.value);"></select2>
+          <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && unit.id < 10000" />
+        </div>
+
+        <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop">
+          <hr class="selectHrWithBottomMargin"/>
+          <label for="unit_ability">{{ 'chain.label.ability' | translate }}</label>
+
+          <div *ngFor="let abilityIndex of unit.castNumber">
+            <select class="form-control" id="unit_ability_{{abilityIndex}}" [(ngModel)]="unit.selectedIds[abilityIndex]" (ngModelChange)="onChangeSkill(abilityIndex)">
+              <option *ngFor="let unitAbility of getAvailableAbilities(abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <div>
+          level : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.level">
+        </div>
+        <div>
+          base atk : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.baseATK">
+        </div>
+        <div>
+          base mag : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.baseMAG">
+        </div>
+        <div>
+          total atk : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.totalATK">
+        </div>
+        <div>
+          total mag : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.totalMAG">
+        </div>
+      </div>
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <div>
+          DW :
+          <select class="form-control" id="chainer_dual" [(ngModel)]="unit.dual">
+            <option [ngValue]="true">{{ 'chain.label.yes' | translate }}</option>
+            <option [ngValue]="false">{{ 'chain.label.no' | translate }}</option>
+          </select>
+        </div>
+        <div *ngFor="let weapon of unit.weapons; let i = index">
+          <div>
+            weapon {{ i + 1 }} atk : <input class="form-control" type="number" id="unit_level" [(ngModel)]="weapon.atk">
+          </div>
+          <div>Type</div>
+          <div>Variance Min</div>
+          <div>Variance Max</div>
+          <div>Elements</div>
+        </div>
+      </div>
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <div>
+          DW :
+          <select class="form-control" id="chainer_dual" [(ngModel)]="unit.dual">
+            <option [ngValue]="true">{{ 'chain.label.yes' | translate }}</option>
+            <option [ngValue]="false">{{ 'chain.label.no' | translate }}</option>
+          </select>
+        </div>
+        <div *ngFor="let weapon of unit.weapons; let i = index">
+          <div>
+            weapon {{ i + 1 }} atk : <input class="form-control" type="number" id="unit_level" [(ngModel)]="weapon.atk">
+          </div>
+          <div>Type</div>
+          <div>Variance Min</div>
+          <div>Variance Max</div>
+          <div>Elements</div>
+        </div>
+      </div>
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <div>Killer 1</div>
+        <div>Killer 2</div>
+        <div>Buff ATK</div>
+        <div>Buff MAG</div>
+        <div>Break DEF</div>
+        <div>Break SPR</div>
+        <div>Chain Mod ## AUTO CALCULATE ##</div>
+      </div>
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <div>Imperils</div>
+      </div>
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <div>DEF</div>
+        <div>SPR</div>
+        <div>Races</div>
+        <div>Resist Elem</div>
+      </div>
+    </div>
+  </div>
+</div>

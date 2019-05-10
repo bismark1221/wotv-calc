@@ -28,6 +28,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ChainingComponent } from './chaining/chaining.component';
 import { ChainingModalComponent } from './chaining-modal/chaining-modal.component';
 import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
+import { DamageComponent } from './damage/damage.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
 import { MacroComponent } from './macro/macro.component';
@@ -71,7 +72,8 @@ export function createTranslateLoader(http: HttpClient) {
     RequestsComponent,
     JsonComponent,
     FamiliesComponent,
-    ChainingModalComponent
+    ChainingModalComponent,
+    DamageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

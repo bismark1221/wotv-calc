@@ -10,6 +10,7 @@ import { HowToComponent } from './how-to/how-to.component';
 import { RequestsComponent } from './requests/requests.component';
 import { JsonComponent } from './json/json.component';
 import { FamiliesComponent } from './families/families.component';
+import { DamageComponent } from './damage/damage.component';
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const ROUTES: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },
   { path: 'how-to', component: HowToComponent },
+  { path: 'damage', component: DamageComponent },
   { path: 'json', component: JsonComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
