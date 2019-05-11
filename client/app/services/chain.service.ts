@@ -51,6 +51,7 @@ export class ChainService {
 
     this.units.forEach((unit, index) => {
       if (unit) {
+        unit.multi = 1;
         unit.framesGap = unit.framesGap ? unit.framesGap : 0;
         unit.index = index;
         unit.frames = this.calculateUnitHits(unit);
@@ -235,6 +236,7 @@ export class ChainService {
   private initializeChain() {
     this.nbHits = 0;
     this.multi = 1;
+    this.resetMulti();
     this.multiList = [];
     this.hits = [];
     this.lastElements = [];
@@ -340,19 +342,18 @@ export class ChainService {
 
   private calculateTotal(unit: any, combo: boolean): void {
     if (combo) {
+      let modifier = 0;
       let elementsModifier = this.calculateModifierByElements(unit);
-      this.multi += 0.1 + elementsModifier;
-      if (this.multi < unit.maxChainCap && this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
-        this.multi += 0.3;
+      modifier += 0.1 + elementsModifier;
+      if (this.hits[this.nbHits].hit === this.hits[this.nbHits - 1].hit) {
+        modifier += 0.3;
       }
 
-      if (this.multi > unit.maxChainCap) {
-        this.multi = unit.maxChainCap;
-      }
+      this.updateMulti(unit, modifier);
 
       this.combo[this.combo.length - 1]++;
     } else {
-      this.multi = 1;
+      this.resetMulti();
       this.combo.push(0);
     }
 
@@ -361,6 +362,29 @@ export class ChainService {
     let ability = this.hits[this.nbHits].ability;
     this.total = this.total + ((unit.selectedAbilities[ability].totalDamage * this.hits[this.nbHits].damage / 100) * this.multi);
     this.multiList.push({unit: unit.index, ability: ability, weight: this.hits[this.nbHits].damage, multi: this.multi});
+  }
+
+  private updateMulti(unit: any, modifier: any) {
+    this.units.forEach((unit, index) => {
+      if (unit) {
+        unit.multi += modifier;
+        if (unit.multi > unit.maxChainCap) {
+          unit.multi = unit.maxChainCap;
+        }
+      }
+    });
+
+    this.multi = unit.multi;
+  }
+
+  private resetMulti() {
+    this.units.forEach((unit, index) => {
+      if (unit) {
+        unit.multi = 1;
+      }
+    });
+
+    this.multi = 1;
   }
 
   private calculateModifierByElements(unit: any): number {
