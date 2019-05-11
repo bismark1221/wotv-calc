@@ -26,11 +26,31 @@
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
-        <div>
-          level : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.level">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="level">Level</label>
+          </div>
+          <select class="custom-select" id="level" [(ngModel)]="unit.level">
+            <option *ngFor="let lvl of levels">{{ lvl }}</option>
+          </select>
         </div>
+
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="base_atk">base atk</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Base ATK" aria-label="Base ATK" aria-describedby="base_atk" [(ngModel)]="unit.baseATK">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              Max Pot <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+          </div>
+        </div>
+        
+
         <div>
-          base atk : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.baseATK">
+           : <input class="form-control" type="number" id="unit_level" >
         </div>
         <div>
           base mag : <input class="form-control" type="number" id="unit_level" [(ngModel)]="unit.baseMAG">

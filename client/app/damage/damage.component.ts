@@ -32,6 +32,7 @@ export class DamageComponent implements OnInit {
   unit: any= {};
   createdUnits: any[] = [];
   multiAbilities: any = {};
+  levels: number[] = [];
   abilityTypes: string[] = ['chain', 'finish'];
   observableUnits: Array<Select2OptionData> = [];
   select2Options: Select2.Options = {
@@ -53,6 +54,8 @@ export class DamageComponent implements OnInit {
     private modalService: NgbModal,
     private navService: NavService,
   ) {
+    this.levels = Array(120).fill(1).map((x,i)=>i+1);
+
     this.getTranslation();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
