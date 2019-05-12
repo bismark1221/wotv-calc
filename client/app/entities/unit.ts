@@ -21,8 +21,58 @@ export class Unit {
   multipleGreen: number = 1;
   maxChainCap: number = 4;
   level: number = 120;
+  rarity = 7;
+  stats: {
+    atk: {
+      base : 0,
+      total : 0,
+      pot: true
+    },
+    mag: {
+      base : 0,
+      total : 0,
+      pot: true
+    }
+  }
+  dataStats: any = {
+    7: {
+      atk: {
+        baseMax : 0,
+        pot : 0,
+        baseReal : 0,
+        total : 0
+      },
+      mag: {
+        baseMax : 0,
+        pot : 0,
+        baseReal : 0,
+        total : 0
+      }
+    }
+  };
+  damageWeapons: any = [
+    {
+      elements: [],
+      type: '',
+      varianceMin: 100,
+      varianceMax: 100,
+      atk: 1
+    }
+  ];
+  killers: any = [];
+  buffs: any = {
+    atk: 0 ,
+    mag: 0
+  };
+  breaks: any = {
+    def: 0 ,
+    spr: 0
+  };
+  imbues = [];
+  lbDamage: number = 1;
+  jumpDamage: number = 1;
 
-  constructUnitFromJson(unit: Unit, translateService: TranslateService): void {
+  constructFromJson(unit: Unit, translateService: TranslateService, damage: boolean = false): void {
     this.id = unit.id ? unit.id : unit.dataId;
     this.names = unit.names;
     this.getName(translateService);
@@ -36,7 +86,7 @@ export class Unit {
     this.abilities = [];
     unit.abilities.forEach(dataAbility => {
       let ability = new Ability();
-      ability.constructAbilityFromJson(dataAbility, translateService);
+      ability.constructFromJson(dataAbility, translateService);
       this.abilities.push(ability);
     });
 
@@ -45,7 +95,19 @@ export class Unit {
     this.multipleWhite = unit.multipleWhite ? unit.multipleWhite : this.multipleWhite;
     this.multipleGreen = unit.multipleGreen ? unit.multipleGreen : this.multipleGreen;
     this.maxChainCap = unit.maxChainCap ? unit.maxChainCap : this.maxChainCap;
-    this.level = unit.level ? unit.level : this.level;
+
+    if (damage) {
+      this.level = unit.level ? unit.level : this.level;
+      this.damageWeapons = unit.damageWeapons ? unit.damageWeapons : this.damageWeapons;
+      this.stats = unit.stats ? unit.stats : this.stats;
+      this.dataStats = unit.dataStats ? unit.dataStats : this.dataStats;
+      this.killers = unit.killers ? unit.killers : this.killers;
+      this.buffs = unit.buffs ? unit.buffs : this.buffs;
+      this.imbues = unit.imbues ? unit.imbues : this.imbues;
+      this.lbDamage = unit.lbDamage ? unit.lbDamage : this.lbDamage;
+      this.jumpDamage = unit.jumpDamage ? unit.jumpDamage : this.jumpDamage;
+      this.breaks = unit.breaks ? unit.breaks : this.breaks;
+    }
   }
 
   getName(translateService: TranslateService): string {

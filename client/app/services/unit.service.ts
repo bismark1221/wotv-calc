@@ -19,6 +19,15 @@ export class UnitService {
   private ore = /^0/;
   private oFxNcL: any;
   private oFyNcL: any;
+  private levelRarity: any = {
+    1: {min: 1, max: 15},
+    2: {min: 1, max: 30},
+    3: {min: 1, max: 40},
+    4: {min: 1, max: 60},
+    5: {min: 1, max: 80},
+    6: {min: 1, max: 100},
+    7: {min: 100, max: 120},
+  }
 
   constructor(private translateService: TranslateService) {}
 
@@ -69,12 +78,16 @@ export class UnitService {
     return units;
   }
 
-  getUnits(): Unit[] {
+  getLevelByRarity(rarity: number) {
+    return this.levelRarity[rarity];
+  }
+
+  getUnits(damage: boolean = false): Unit[] {
     let units: Unit[] = [];
 
     UNITS.forEach(unitData => {
       let unit = new Unit();
-      unit.constructUnitFromJson(unitData, this.translateService);
+      unit.constructFromJson(unitData, this.translateService, damage);
       units.push(unit);
     });
 

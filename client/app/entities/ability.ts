@@ -28,7 +28,7 @@ export class Ability {
     max: 20
   }
 
-  constructAbilityFromJson(ability: Ability, translateService: TranslateService): void {
+  constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
     this.names = ability.names;
     this.getName(translateService);

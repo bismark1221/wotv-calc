@@ -11,6 +11,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { ChainingModalComponent } from '../chaining-modal/chaining-modal.component';
 
 import { Unit } from '../entities/unit';
+import { Monster } from '../entities/monster';
 import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
 import { ChainService } from '../services/chain.service';
@@ -28,8 +29,10 @@ export class DamageComponent implements OnInit {
   private positionIds: any = {};
   private positionIdsInChain: any = {};
   private units: Unit[];
+  private monsters: Monster[];
 
-  unit: any= {};
+  unit: any = {};
+  monster: any = {};
   createdUnits: any[] = [];
   multiAbilities: any = {};
   levels: number[] = [];
@@ -54,8 +57,6 @@ export class DamageComponent implements OnInit {
     private modalService: NgbModal,
     private navService: NavService,
   ) {
-    this.levels = Array(120).fill(1).map((x,i)=>i+1);
-
     this.getTranslation();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -66,6 +67,8 @@ export class DamageComponent implements OnInit {
 
   ngOnInit(): void {
     this.unit = {id: 'unselect', selectedIds: []};
+    this.monster = new Monster();
+    console.log(this.monster)
     this.onChangeUnit('unselect');
 
     this.getUnits();
@@ -82,7 +85,7 @@ export class DamageComponent implements OnInit {
   }
 
   private getUnits(): void {
-    this.units = this.unitService.getUnits();
+    this.units = this.unitService.getUnits(true);
     this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
     this.reloadList();
   }
@@ -367,14 +370,7 @@ export class DamageComponent implements OnInit {
   }
 
   prepareUnit() {
-    this.unit.weapons = [
-      {
-        atk: 0
-      },
-      {
-        atk: 0
-      }
-    ];
+    this.unit.dual = false;
   }
 
   onChangeUnit(unitId: any = 'unselect', abilitiesIds: number[] = [], launchChain: boolean = true) {
@@ -400,6 +396,7 @@ export class DamageComponent implements OnInit {
     if (launchChain) {
       this.onChangeChain();
     }
+    console.log(this.unit)
   }
 
   onChangeSkill(abilityPosition: any) {
@@ -429,7 +426,7 @@ export class DamageComponent implements OnInit {
   }
 
   selectUnit(unit: any, abilities: any, framesGaps: any, launchChain: boolean = true) {
-     this.unit = unit;
+    this.unit = unit;
     let selectedIds = [];
     abilities.forEach(ability => {
       selectedIds.push(ability.id);
@@ -443,5 +440,40 @@ export class DamageComponent implements OnInit {
     } else {
       return this.unit.possibleMultiple;
     }
+  }
+
+  onChangeDual() {
+    if (this.unit.dual) {
+      this.unit.damageWeapons[1] = {
+        elements: [],
+        type: '',
+        varianceMin: 100,
+        varianceMax: 100,
+        atk: 1
+      };
+    } else {
+      this.unit.damageWeapons.splice(1, 1);
+    }
+  }
+
+  onChangeLevel() {
+/*
+    "HP": [1582, 4793, 540, 270],
+
+    statProgression = [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100];
+
+    this.stats = {
+      hp: this.unit.stats.minStats.hp + b(
+        (this.unit.stats.maxStats.hp - this.unit.stats.minStats.hp) * statProgression[this._level - 101] / 100), */
+  }
+
+  onChangeRarity() {
+    this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.base + this.unit.dataStats[this.unit.rarity].atk.pot;
+    this.unit.stats.atk.pot = true;
+    this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity].mag.base + this.unit.dataStats[this.unit.rarity].mag.pot;
+    this.unit.stats.mag.pot = true;
+    this.unit.level = this.unitService.getLevelByRarity(this.unit.rarity).max
+    this.levels = Array(this.unit.level).fill(1).map((x,i)=>this.unitService.getLevelByRarity(this.unit.rarity).min + 1);
+    this.onChangeLevel();
   }
 }
