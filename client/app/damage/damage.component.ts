@@ -457,14 +457,20 @@ export class DamageComponent implements OnInit {
   }
 
   onChangeLevel() {
-/*
-    "HP": [1582, 4793, 540, 270],
+    statProgression = {
+      1: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
+      2: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
+      3: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
+      4: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
+      5: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
+      6: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
+      7: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]
+    };
 
-    statProgression = [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100];
-
-    this.stats = {
-      hp: this.unit.stats.minStats.hp + b(
-        (this.unit.stats.maxStats.hp - this.unit.stats.minStats.hp) * statProgression[this._level - 101] / 100), */
+    this.unit.stats.atk.base = this.unit.dataStats.atk.baseMin + (this.unit.dataStats.atk.baseMax - this.unit.dataStats.atk.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
+    this.unit.stats.mag.base = this.unit.dataStats.mag.baseMin + (this.unit.dataStats.mag.baseMax - this.unit.dataStats.mag.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
+    this.unit.stats.atk.total = this.unit.stats.atk.base + this.unit.stats.atk.pot ? this.unit.dataStats.atk.pot : 0;
+    this.unit.stats.mag.total = this.unit.stats.mag.base + this.unit.stats.mag.pot ? this.unit.dataStats.mag.pot : 0;
   }
 
   onChangeRarity() {

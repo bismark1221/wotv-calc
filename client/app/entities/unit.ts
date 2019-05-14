@@ -37,16 +37,14 @@ export class Unit {
   dataStats: any = {
     7: {
       atk: {
+        baseMin : 0,
         baseMax : 0,
         pot : 0,
-        baseReal : 0,
-        total : 0
       },
       mag: {
+        baseMin : 0,
         baseMax : 0,
         pot : 0,
-        baseReal : 0,
-        total : 0
       }
     }
   };
