@@ -220,6 +220,8 @@ export class DamageComponent implements OnInit {
     });
 
     this.updateMultiplePossibleAbilities();
+    this.unit.rarity = 7; ///@TODO GET MAX rarity
+    this.onChangeRarity();
   }
 
   private updateMultiplePossibleAbilities() {
@@ -342,10 +344,6 @@ export class DamageComponent implements OnInit {
     }
   }
 
-  prepareUnit() {
-    this.unit.dual = false;
-  }
-
   onChangeUnit(unitId: any = 'unselect', abilitiesIds: number[] = [], launchChain: boolean = true) {
     if (unitId === 'unselect') {
       this.unit = {
@@ -361,7 +359,6 @@ export class DamageComponent implements OnInit {
         this.unit = this.createdUnits.find(unit => unit.id === parseInt(unitId));
       }
 
-      this.prepareUnit();
       this.updateChangedUnit(abilitiesIds);
       this.unit = this.updateMultipleSkill(this.unit);
     }
@@ -429,8 +426,16 @@ export class DamageComponent implements OnInit {
     }
   }
 
+  onChangePot(type: string) {
+    if (this.unit.stats[type].maxPot) {
+      this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity][type].pot;
+    } else {
+      this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity][type].pot;
+    }
+  }
+
   onChangeLevel() {
-    statProgression = {
+    let statProgression = {
       1: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
       2: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
       3: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
@@ -440,19 +445,26 @@ export class DamageComponent implements OnInit {
       7: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]
     };
 
-    this.unit.stats.atk.base = this.unit.dataStats.atk.baseMin + (this.unit.dataStats.atk.baseMax - this.unit.dataStats.atk.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
-    this.unit.stats.mag.base = this.unit.dataStats.mag.baseMin + (this.unit.dataStats.mag.baseMax - this.unit.dataStats.mag.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
-    this.unit.stats.atk.total = this.unit.stats.atk.base + this.unit.stats.atk.pot ? this.unit.dataStats.atk.pot : 0;
-    this.unit.stats.mag.total = this.unit.stats.mag.base + this.unit.stats.mag.pot ? this.unit.dataStats.mag.pot : 0;
+    this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.baseMin + (this.unit.dataStats[this.unit.rarity].atk.baseMax - this.unit.dataStats[this.unit.rarity].atk.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
+    this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity].mag.baseMin + (this.unit.dataStats[this.unit.rarity].mag.baseMax - this.unit.dataStats[this.unit.rarity].mag.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
+    this.unit.stats.atk.potValue = this.unit.stats.atk.maxPot ? this.unit.dataStats[this.unit.rarity].atk.pot : 0;
+    this.unit.stats.mag.potValue = this.unit.stats.mag.maxPot ? this.unit.dataStats[this.unit.rarity].mag.pot : 0;
   }
 
   onChangeRarity() {
-    this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.base + this.unit.dataStats[this.unit.rarity].atk.pot;
-    this.unit.stats.atk.pot = true;
-    this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity].mag.base + this.unit.dataStats[this.unit.rarity].mag.pot;
-    this.unit.stats.mag.pot = true;
-    this.unit.level = this.unitService.getLevelByRarity(this.unit.rarity).max
-    this.levels = Array(this.unit.level).fill(1).map((x,i)=>this.unitService.getLevelByRarity(this.unit.rarity).min + 1);
+    console.log(this.unit.stats)
+    console.log(this.unit.dataStats[this.unit.rarity])
+    this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.baseMax;
+    this.unit.stats.atk.potValue = this.unit.dataStats[this.unit.rarity].atk.pot;
+    this.unit.stats.atk.maxPot = true;
+    this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity].mag.baseMax;
+    this.unit.stats.mag.potValue = this.unit.dataStats[this.unit.rarity].mag.pot;
+    this.unit.stats.mag.maxPot = true;
+
+    let levelsByRarity = this.unitService.getLevelsByRarity(this.unit.rarity);
+    this.unit.level = levelsByRarity.max
+    this.levels = Array(levelsByRarity.max - levelsByRarity.min + 1).fill(0).map((_, idx) => levelsByRarity.min + idx);
+
     this.onChangeLevel();
   }
 }

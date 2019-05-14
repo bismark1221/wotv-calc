@@ -28,9 +28,20 @@
       <div *ngIf="unit.id !== 'unselect'">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
+            <label class="input-group-text" for="rarity">Rarity</label>
+          </div>
+          <select class="custom-select" id="rarity" [(ngModel)]="unit.rarity" (ngModelChange)="onChangeRarity()">
+            <option >6</option>
+            <option >7</option>
+          </select>
+        </div>
+
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
             <label class="input-group-text" for="level">Level</label>
           </div>
-          <select class="custom-select" id="level" [(ngModel)]="unit.level">
+          <select class="custom-select" id="level" [(ngModel)]="unit.level" (ngModelChange)="onChangeLevel()">
             <option *ngFor="let lvl of levels">{{ lvl }}</option>
           </select>
         </div>
@@ -41,9 +52,10 @@
             <label class="input-group-text" for="base_atk">base atk</label>
           </div>
           <input type="text" class="form-control" placeholder="Base ATK" aria-label="Base ATK" aria-describedby="base_atk" [(ngModel)]="unit.stats.atk.base">
+          <input type="text" class="form-control" placeholder="Pot ATK" aria-label="Pot ATK" aria-describedby="pot_atk" [(ngModel)]="unit.stats.atk.potValue">
           <div class="input-group-append">
             <div class="input-group-text">
-              Max Pot <input type="checkbox" aria-label="Checkbox for following text input">
+              Max Pot <input type="checkbox" aria-label="Checkbox for following text input" [(ngModel)]="unit.stats.atk.maxPot" (ngModelChange)="onChangePot('atk')">
             </div>
           </div>
         </div>
@@ -54,9 +66,10 @@
             <label class="input-group-text" for="base_mag">base mag</label>
           </div>
           <input type="text" class="form-control" placeholder="Base MAG" aria-label="Base MAG" aria-describedby="base_mag" [(ngModel)]="unit.stats.mag.base">
+          <input type="text" class="form-control" placeholder="Pot MAG" aria-label="Pot MAG" aria-describedby="pot_mag" [(ngModel)]="unit.stats.mag.potValue">
           <div class="input-group-append">
             <div class="input-group-text">
-              Max Pot <input type="checkbox" aria-label="Checkbox for following text input">
+              Max Pot <input type="checkbox" aria-label="Checkbox for following text input" [(ngModel)]="unit.stats.mag.maxPot" (ngModelChange)="onChangePot('mag')">
             </div>
           </div>
         </div>
