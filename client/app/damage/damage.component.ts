@@ -84,7 +84,7 @@ export class DamageComponent implements OnInit {
     });
   }
 
-  private getUnits(): void {
+  private getUnits() {
     this.units = this.unitService.getUnits(true);
     this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
     this.reloadList();
@@ -160,33 +160,6 @@ export class DamageComponent implements OnInit {
     this.localStorageService.set('units', this.createdUnits);
   }
 
-  private findPositionOfAbility(unit: any, searchAbility: any) {
-    let i = 0;
-    let position = 0;
-    unit.abilities.forEach(ability => {
-      if (ability.name === searchAbility.name) {
-        position = i;
-      }
-      i++;
-    });
-
-    return position;
-  }
-
-  private findPositionOfAbilityById(unit: any, id: any) {
-    let i = 0;
-    let position = null;
-
-    unit.abilities.forEach(ability => {
-      if (ability.id === id) {
-        position = i;
-      }
-      i++;
-    });
-
-    return position;
-  }
-
   private reloadList() {
     this.sortUnits();
 
@@ -242,7 +215,7 @@ export class DamageComponent implements OnInit {
     }
 
     ids.forEach((id, index) => {
-      this.unit.selectedAbilities[index] = JSON.parse(JSON.stringify(this.unit.abilities[this.findPositionOfAbilityById(this.unit, id)]));
+      this.unit.selectedAbilities[index] = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, id)]));
       this.unit.selectedAbilities[index].activeRename = false;
     });
 
@@ -321,7 +294,7 @@ export class DamageComponent implements OnInit {
           castNumber = multiCast.count;
 
           multiCast.abilities.forEach(abilityId => {
-            let tempAbility = unit.abilities[this.findPositionOfAbilityById(unit, abilityId)];
+            let tempAbility = unit.abilities[this.unitService.findPositionOfAbilityById(unit, abilityId)];
             if (tempAbility) {
               unit.possibleMultiple.push(tempAbility);
             }
@@ -400,7 +373,7 @@ export class DamageComponent implements OnInit {
   }
 
   onChangeSkill(abilityPosition: any) {
-    let positionInList = this.findPositionOfAbilityById(this.unit, this.unit.selectedIds[abilityPosition]);
+    let positionInList = this.unitService.findPositionOfAbilityById(this.unit, this.unit.selectedIds[abilityPosition]);
     if (positionInList !== null) {
       let ability = JSON.parse(JSON.stringify(this.unit.abilities[positionInList]));
 

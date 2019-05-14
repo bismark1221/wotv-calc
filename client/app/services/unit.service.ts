@@ -102,4 +102,31 @@ export class UnitService {
 
     return this.units.find(unit => unit.id === id);
   }
+
+  findPositionOfAbility(unit: any, searchAbility: any) {
+    let i = 0;
+    let position = 0;
+    unit.abilities.forEach(ability => {
+      if (ability.name === searchAbility.name) {
+        position = i;
+      }
+      i++;
+    });
+
+    return position;
+  }
+
+  findPositionOfAbilityById(unit: any, id: any) {
+    let i = 0;
+    let position = null;
+
+    unit.abilities.forEach(ability => {
+      if (ability.id === id) {
+        position = i;
+      }
+      i++;
+    });
+
+    return position;
+  }
 }
