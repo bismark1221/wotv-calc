@@ -20,7 +20,7 @@ export const UNITS: any[] = [
         framesList: [22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -36,7 +36,7 @@ export const UNITS: any[] = [
         framesList: [22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 720
       },
       {
@@ -51,7 +51,7 @@ export const UNITS: any[] = [
         },
         framesList: [67, 10, 10, 10],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 180
       },
       {
@@ -66,7 +66,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50,
         elements: [
@@ -87,7 +87,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 800,
         "debuffs": [
           {
@@ -193,7 +193,7 @@ export const UNITS: any[] = [
         framesList: [70, 7, 5, 7, 7, 7, 7],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50,
         debuffs: [
@@ -216,7 +216,7 @@ export const UNITS: any[] = [
         framesList: [70, 7, 5, 7, 7, 7, 7],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 260,
         ignore: 50,
         debuffs: [
@@ -239,7 +239,7 @@ export const UNITS: any[] = [
         framesList: [42, 5, 5, 5, 5, 5],
         hitDamage: [15, 15, 15, 15, 20, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         elements: [
           "lightning"
@@ -348,7 +348,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 620,
         elements: [
           "wind",
@@ -370,7 +370,7 @@ export const UNITS: any[] = [
         framesList: [42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         hitDamage: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 940,
         elements: [
           "wind",
@@ -567,7 +567,7 @@ export const UNITS: any[] = [
         framesList: [70, 7, 5, 7, 7, 7, 7],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 50,
         debuffs: [
@@ -589,7 +589,7 @@ export const UNITS: any[] = [
         },
         framesList: [110],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 50,
         elements: [
@@ -613,7 +613,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 360,
         "ignore": 50,
         "debuffs": [
@@ -634,7 +634,7 @@ export const UNITS: any[] = [
           "es": "Filo tenebroso + 2"
         },
         castTime: 40,
-        offset: 16,
+        offset: 14,
         "elements": [
           "dark"
         ],
@@ -736,7 +736,7 @@ export const UNITS: any[] = [
         framesList: [42, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 1000,
       },
       {
@@ -781,7 +781,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8, 8, 9],
         hitDamage : [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
       },
       {
@@ -799,7 +799,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 40, 40, 40, 40],
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
@@ -814,7 +814,7 @@ export const UNITS: any[] = [
         },
         framesList: [42],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         debuffs: [
           {
@@ -835,7 +835,7 @@ export const UNITS: any[] = [
         },
         framesList: [80],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 999,
         dualable: false
       },
@@ -897,7 +897,7 @@ export const UNITS: any[] = [
         "framesList": [
           110, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 509314,
@@ -945,7 +945,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 509316,
@@ -968,7 +968,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 310000107,
@@ -1024,7 +1024,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 10, 10, 10, 10],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 180,
         ignore: 50
       },
@@ -1040,7 +1040,7 @@ export const UNITS: any[] = [
         },
         framesList: [80],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 999,
         dualable: false
       },
@@ -1099,7 +1099,7 @@ export const UNITS: any[] = [
         framesList: [42, 9, 9, 9, 9, 9, 5, 4, 9, 5],
         hitDamage: [12, 12, 8, 10, 10, 10, 10, 10, 9, 9],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 480,
       },
       {
@@ -1114,7 +1114,7 @@ export const UNITS: any[] = [
         },
         framesList: [42],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 750
       },
       {
@@ -1135,7 +1135,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 509324,
@@ -1155,7 +1155,7 @@ export const UNITS: any[] = [
         "framesList": [
           53
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401001207,
@@ -1244,7 +1244,7 @@ export const UNITS: any[] = [
         },
         framesList: [150],
         castTime: 75,
-        offset: 16,
+        offset: 14,
         base: 320,
         ignore: 25,
         damage: "magic",
@@ -1307,7 +1307,7 @@ export const UNITS: any[] = [
         },
         framesList: [70, 10, 10, 10, 10],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 160,
         ignore: 50,
         debuffs: [
@@ -1330,7 +1330,7 @@ export const UNITS: any[] = [
         framesList: [70, 7, 5, 7, 7, 7, 7],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50,
         debuffs: [
@@ -1362,7 +1362,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200
       },
       {
@@ -1377,7 +1377,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 350
       }
     ]
@@ -1402,7 +1402,7 @@ export const UNITS: any[] = [
         },
         framesList: [72, 10, 10, 10, 10, 10, 10, 10, 10, 10],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         ignore: 25,
         damage: "magic",
@@ -1421,7 +1421,7 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 270,
       },
       {
@@ -1441,7 +1441,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [72, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 25
       }
@@ -1468,7 +1468,7 @@ export const UNITS: any[] = [
         framesList: [47, 5, 5, 5, 5, 5, 5],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 270,
         elements: [
           "light",
@@ -1498,7 +1498,7 @@ export const UNITS: any[] = [
         framesList: [47, 5, 5, 5, 5, 5, 5],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 320,
         elements: [
           "light",
@@ -1564,7 +1564,7 @@ export const UNITS: any[] = [
         framesList: [140, 37, 38, 37, 38, 38, 37],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -1582,7 +1582,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 600,
         elements: [
           "dark"
@@ -1611,7 +1611,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -1643,7 +1643,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 275,
         "debuffs": [
           {
@@ -1699,7 +1699,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 17, 17, 17, 17, 17, 17, 18
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 850,
         "debuffs": [
           {
@@ -1730,7 +1730,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 760,
         "debuffs": [
           {
@@ -1873,7 +1873,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 1200,
         damage: "hybrid",
         debuffs: [
@@ -1920,7 +1920,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911631,
@@ -1968,7 +1968,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 302001407,
@@ -2082,7 +2082,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1
       },
       {
@@ -2108,7 +2108,7 @@ export const UNITS: any[] = [
           10,
           10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 550
       },
       {
@@ -2143,7 +2143,7 @@ export const UNITS: any[] = [
           7,
           7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 780
       },
       {
@@ -2175,7 +2175,7 @@ export const UNITS: any[] = [
           8,
           8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1520
       },
       {
@@ -2192,7 +2192,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 450,
         "debuffs": [
           {
@@ -2271,7 +2271,7 @@ export const UNITS: any[] = [
         framesList: [51, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50
       },
@@ -2288,7 +2288,7 @@ export const UNITS: any[] = [
         framesList: [42, 5, 5, 5, 5, 5],
         hitDamage: [15, 15, 15, 15, 20, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         elements: [
           "lightning"
@@ -2330,7 +2330,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [51, 9, 9, 9, 9, 9, 9, 9],
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 50
       },
@@ -2461,7 +2461,7 @@ export const UNITS: any[] = [
         framesList: [42, 9, 9, 9, 9, 9, 9],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "hybrid",
         elements: [
@@ -2486,7 +2486,7 @@ export const UNITS: any[] = [
         },
         framesList: [150],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 1600,
         damage: "hybrid"
       },
@@ -2508,7 +2508,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 37, 38, 37, 38, 38, 37
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 280,
         "ignore": 50
       },
@@ -2533,7 +2533,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 9, 9, 9, 9, 9, 9
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 850,
         "debuffs": [
           {
@@ -2564,7 +2564,7 @@ export const UNITS: any[] = [
         "framesList": [
           220
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100008207,
@@ -2618,7 +2618,7 @@ export const UNITS: any[] = [
           12, 13, 12, 13, 12, 13, 12, 13
         ],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 250,
         ignore: 25,
       },
@@ -2637,7 +2637,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 8, 8, 8, 8, 8, 6, 8],
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 25
       },
@@ -2677,7 +2677,7 @@ export const UNITS: any[] = [
         "framesList": [
           62
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1200,
         "debuffs": [
           {
@@ -2833,7 +2833,7 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 500,
       },
       {
@@ -2851,7 +2851,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 550
       },
       {
@@ -2869,7 +2869,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -2887,7 +2887,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -2904,7 +2904,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 700
       },
       {
@@ -3004,7 +3004,7 @@ export const UNITS: any[] = [
         framesList: [40, 25, 25, 25, 25, 25, 25, 25, 25],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         elements: [
           "fire"
@@ -3023,7 +3023,7 @@ export const UNITS: any[] = [
         framesList: [40, 13, 13, 13, 13, 13, 13, 13, 13],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         elements: [
           "ice"
@@ -3042,7 +3042,7 @@ export const UNITS: any[] = [
         framesList: [45, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         elements: [
           "lightning"
@@ -3061,7 +3061,7 @@ export const UNITS: any[] = [
         framesList: [40, 9, 9, 9, 9, 9, 9, 9, 9],
         hitDamage: [10, 10, 10, 10, 10, 10, 10, 10, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         elements: [
           "water"
@@ -3080,7 +3080,7 @@ export const UNITS: any[] = [
         framesList: [132, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         elements: [
           "water"
@@ -3110,7 +3110,7 @@ export const UNITS: any[] = [
         framesList: [140, 37, 38, 37, 38, 38, 37],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -3128,7 +3128,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 600,
         elements: [
           "water"
@@ -3147,7 +3147,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 910,
         elements: [
           "water"
@@ -3178,7 +3178,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -3208,7 +3208,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -3239,7 +3239,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 760,
         "debuffs": [
           {
@@ -3267,7 +3267,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 900,
         "debuffs": [
           {
@@ -3364,7 +3364,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 320
       },
       {
@@ -3393,7 +3393,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 450
       },
       {
@@ -3435,7 +3435,7 @@ export const UNITS: any[] = [
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 250,
         elements: [
           "wind"
@@ -3468,7 +3468,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [170],
-        offset: 16,
+        offset: 14,
         base: 600
       }
     ],
@@ -3497,7 +3497,7 @@ export const UNITS: any[] = [
         },
         framesList: [52, 20, 20, 20, 20],
         castTime: 50,
-        offset: 16,
+        offset: 14,
         base: 460,
         ignore: 50,
         damage: "magic",
@@ -3532,7 +3532,7 @@ export const UNITS: any[] = [
         framesList: [140, 37, 38, 37, 38, 38, 37],
         hitDamage: [10, 10, 10, 10, 10, 10, 40],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -3569,7 +3569,7 @@ export const UNITS: any[] = [
           20,
           20
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1400
       },
       {
@@ -3602,7 +3602,7 @@ export const UNITS: any[] = [
           20,
           20
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1400
       },
       {
@@ -3657,7 +3657,7 @@ export const UNITS: any[] = [
         framesList: [22, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [2, 12, 12, 12, 13, 13, 13, 13],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 270
       },
       {
@@ -3673,7 +3673,7 @@ export const UNITS: any[] = [
         framesList: [22, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [2, 12, 12, 12, 13, 13, 13, 13],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 400
       }
     ]
@@ -3712,7 +3712,7 @@ export const UNITS: any[] = [
         },
         framesList: [240],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 250,
         ignore: 50,
         elements : [
@@ -3741,7 +3741,7 @@ export const UNITS: any[] = [
         },
         framesList: [57, 24, 24, 24, 24, 24, 24, 24, 24, 24],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 940,
         elements: [
           "dark"
@@ -3761,7 +3761,7 @@ export const UNITS: any[] = [
         },
         framesList: [57, 24, 24, 24, 24, 24, 24, 24, 24, 24],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 1150,
         elements: [
           "dark"
@@ -3794,7 +3794,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 360
       },
       {
@@ -3810,7 +3810,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 450
       },
       {
@@ -3826,7 +3826,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8, 8],
         hitDamage: [14, 14, 14, 14, 14, 15, 15],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 777
       }
     ]
@@ -3855,7 +3855,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 380,
         elements: [
           "wind"
@@ -3874,7 +3874,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 380,
         elements: [
           "fire"
@@ -3893,7 +3893,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 380,
         elements: [
           "earth"
@@ -3912,7 +3912,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 380,
         elements: [
           "water"
@@ -3931,7 +3931,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -3947,7 +3947,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 220
       },
       {
@@ -3963,7 +3963,7 @@ export const UNITS: any[] = [
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
         hitDamage: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 520
       },
       {
@@ -3986,7 +3986,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400,
         "debuffs": [
           {
@@ -4015,7 +4015,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400,
         "debuffs": [
           {
@@ -4044,7 +4044,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400,
         "debuffs": [
           {
@@ -4073,7 +4073,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400,
         "debuffs": [
           {
@@ -4099,7 +4099,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 720
       },
       {
@@ -4119,7 +4119,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 880
       },
       {
@@ -4181,7 +4181,7 @@ export const UNITS: any[] = [
         },
         framesList: [90],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 250,
         ignore: 50
       },
@@ -4197,7 +4197,7 @@ export const UNITS: any[] = [
         },
         framesList: [90],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 500,
         ignore: 50
       },
@@ -4215,7 +4215,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 300,
         "ignore": 50
       },
@@ -4233,7 +4233,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 500,
         "ignore": 50
       },
@@ -4251,7 +4251,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 620,
         "ignore": 50
       },
@@ -4273,7 +4273,7 @@ export const UNITS: any[] = [
         "framesList": [
           47
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507641,
@@ -4296,7 +4296,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100008007,
@@ -4364,7 +4364,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 550
       },
       {
@@ -4571,7 +4571,7 @@ export const UNITS: any[] = [
         "framesList": [
           52
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507590,
@@ -4890,7 +4890,7 @@ export const UNITS: any[] = [
         "framesList": [
           140
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 260,
         "ignore": 50
       }
@@ -4916,7 +4916,7 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
       },
     ]
@@ -4943,7 +4943,7 @@ export const UNITS: any[] = [
         },
         framesList: [350],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 250,
         ignore: 25,
         damage: "magic",
@@ -4963,7 +4963,7 @@ export const UNITS: any[] = [
         framesList: [310, 20, 20],
         hitDamage: [33, 33, 34],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 25,
         damage: "magic",
@@ -4980,7 +4980,7 @@ export const UNITS: any[] = [
         },
         framesList: [365],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -4999,7 +4999,7 @@ export const UNITS: any[] = [
         },
         framesList: [170],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "magic",
         elements: [
@@ -5020,7 +5020,7 @@ export const UNITS: any[] = [
         },
         framesList: [170],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "magic",
         elements: [
@@ -5041,7 +5041,7 @@ export const UNITS: any[] = [
         },
         framesList: [190],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "magic",
         elements: [
@@ -5062,7 +5062,7 @@ export const UNITS: any[] = [
         },
         framesList: [150],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "magic",
         elements: [
@@ -5083,7 +5083,7 @@ export const UNITS: any[] = [
         },
         framesList: [240],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "magic",
         elements: [
@@ -5104,7 +5104,7 @@ export const UNITS: any[] = [
         },
         framesList: [210],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "magic",
         elements: [
@@ -5126,7 +5126,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8, 16],
         hitDamage: [14, 14, 15, 14, 14, 15, 14],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 140,
         ignore: 25
       },
@@ -5142,7 +5142,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 190,
         damage: "magic",
         magicType: "black",
@@ -5165,7 +5165,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [450],
-        offset: 16,
+        offset: 14,
         base: 230
       },
     ],
@@ -5298,7 +5298,7 @@ export const UNITS: any[] = [
         },
         framesList: [102],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50,
         elements : [
@@ -5330,7 +5330,7 @@ export const UNITS: any[] = [
         },
         framesList: [70],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 250,
         ignore: 35
       }
@@ -5356,7 +5356,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 450
       },
       {
@@ -5371,7 +5371,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 555
       }
     ]
@@ -5396,7 +5396,7 @@ export const UNITS: any[] = [
         },
         framesList: [270],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 50,
         elements: [
@@ -5422,7 +5422,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [270],
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 50
       },
@@ -5444,7 +5444,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401001107,
@@ -5615,7 +5615,7 @@ export const UNITS: any[] = [
         damage: "magic",
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 820
       },
       {
@@ -5631,7 +5631,7 @@ export const UNITS: any[] = [
         damage: "magic",
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 1060
       },
       {
@@ -5653,7 +5653,7 @@ export const UNITS: any[] = [
         "framesList": [
           30, 20, 20, 20, 20, 20, 20, 20, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20390,
@@ -5683,7 +5683,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20400,
@@ -5715,7 +5715,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 254000907,
@@ -5762,7 +5762,7 @@ export const UNITS: any[] = [
         },
         framesList: [130],
         castTime: 30,
-        offset: 16,
+        offset: 14,
         base: 650,
         damage: "magic",
         dualable: false
@@ -5779,7 +5779,7 @@ export const UNITS: any[] = [
         },
         framesList: [90],
         castTime: 30,
-        offset: 16,
+        offset: 14,
         base: 500,
         elements: [
           "water"
@@ -5822,7 +5822,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [90],
-        offset: 16,
+        offset: 14,
         base: 750
       },
       {
@@ -5839,7 +5839,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [130],
-        offset: 16,
+        offset: 14,
         base: 1050
       }
     ],
@@ -5903,7 +5903,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 240,
         ignore: 50
       },
@@ -5919,7 +5919,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 350,
         ignore: 50
       },
@@ -5937,7 +5937,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 300,
         "ignore": 50
       },
@@ -5955,7 +5955,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1500,
         "debuffs": [
           {
@@ -5994,7 +5994,7 @@ export const UNITS: any[] = [
         },
         framesList: [350],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 230,
         ignore: 50,
         damage: "magic",
@@ -6012,7 +6012,7 @@ export const UNITS: any[] = [
         },
         framesList: [80],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 2000,
         damage: "magic",
         elements : [
@@ -6032,7 +6032,7 @@ export const UNITS: any[] = [
         },
         framesList: [80],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 2500,
         damage: "magic",
         elements : [
@@ -6164,7 +6164,7 @@ export const UNITS: any[] = [
         "framesList": [
           42
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1300
       },
       {
@@ -6209,7 +6209,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 750,
         elements: [
           "dark"
@@ -6237,7 +6237,7 @@ export const UNITS: any[] = [
         },
         framesList: [110],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         ignore: 50,
         dualable: false,
@@ -6265,7 +6265,7 @@ export const UNITS: any[] = [
         },
         framesList: [70],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         damage: "hybrid"
       }
@@ -6292,7 +6292,7 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10],
         hitDamage: [16, 16, 17, 17, 17, 17],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -6308,7 +6308,7 @@ export const UNITS: any[] = [
         framesList: [50, 10, 10, 10, 10, 10],
         hitDamage: [16, 16, 17, 17, 17, 17],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200
       },
       {
@@ -6324,7 +6324,7 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 500
       },
       {
@@ -6340,7 +6340,7 @@ export const UNITS: any[] = [
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -6355,7 +6355,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -6370,7 +6370,7 @@ export const UNITS: any[] = [
         },
         framesList: [42, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -6414,7 +6414,7 @@ export const UNITS: any[] = [
         framesList: [50, 10, 10, 10, 10, 10, 10],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 180,
         ignore: 25,
         damage: "magic",
@@ -6443,7 +6443,7 @@ export const UNITS: any[] = [
         },
         framesList: [365],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 510,
         ignore: 25,
         damage: "magic",
@@ -6504,7 +6504,7 @@ export const UNITS: any[] = [
         "framesList": [
           62, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         id: 910526,
@@ -6590,7 +6590,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [150],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -6627,7 +6627,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 20, 20, 20, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401002007,
@@ -6722,7 +6722,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         id: 2,
@@ -6774,7 +6774,7 @@ export const UNITS: any[] = [
         framesList: [50, 8, 8, 8, 8, 8, 8],
         hitDamage: [14, 14, 14, 14, 14, 14, 16],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 600,
         damage: "magic",
         dualable: false,
@@ -7118,7 +7118,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        "offset": 16
+        "offset": 14,
       }
     ]
   },
@@ -7285,7 +7285,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227163,
@@ -7314,7 +7314,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227161,
@@ -7343,7 +7343,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227164,
@@ -7367,7 +7367,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100009107,
@@ -7422,7 +7422,7 @@ export const UNITS: any[] = [
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
         elements: [
           "wind"
@@ -7455,7 +7455,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [170],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -7470,7 +7470,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 1000,
         elements: [
           "wind",
@@ -7503,7 +7503,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911398,
@@ -7539,7 +7539,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 91014,
@@ -7565,7 +7565,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401001407,
@@ -7770,7 +7770,7 @@ export const UNITS: any[] = [
         "framesList": [
           75, 105
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507683,
@@ -7796,7 +7796,7 @@ export const UNITS: any[] = [
         "framesList": [
           125, 40, 55
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507684,
@@ -7822,7 +7822,7 @@ export const UNITS: any[] = [
         "framesList": [
           40, 55, 105, 40
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507685,
@@ -7848,7 +7848,7 @@ export const UNITS: any[] = [
         "framesList": [
           25, 155, 40, 55, 105
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507681,
@@ -7868,7 +7868,7 @@ export const UNITS: any[] = [
         "framesList": [
           72, 5, 5, 5, 5, 5
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 215000107,
@@ -7962,7 +7962,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [65],
-        offset: 16,
+        offset: 14,
         base: 180
       },
       {
@@ -8009,7 +8009,7 @@ export const UNITS: any[] = [
         "framesList": [
           28, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507980,
@@ -8035,7 +8035,7 @@ export const UNITS: any[] = [
         "framesList": [
           172
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507981,
@@ -8104,7 +8104,7 @@ export const UNITS: any[] = [
         framesList: [47, 10, 10, 10, 10, 10, 10, 10],
         hitDamage: [12, 12, 12, 12, 13, 13, 13, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 120,
         ignore: 50,
       },
@@ -8121,7 +8121,7 @@ export const UNITS: any[] = [
         framesList: [47, 10, 10, 10, 10, 10, 10, 10, 5, 10, 10, 10],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 180,
         ignore: 50,
       },
@@ -8188,7 +8188,7 @@ export const UNITS: any[] = [
           10,
           10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 275,
         "ignore": 50
       }
@@ -8214,7 +8214,7 @@ export const UNITS: any[] = [
         },
         framesList: [70, 40, 20, 30, 30],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 25,
         damage: "magic",
@@ -8233,7 +8233,7 @@ export const UNITS: any[] = [
         framesList: [160, 22, 21, 22, 23, 23, 22, 23],
         hitDamage: [12, 13, 12, 13, 12, 13, 12, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 275,
         elements: [
           "earth"
@@ -8272,7 +8272,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         id: 3,
@@ -8421,7 +8421,7 @@ export const UNITS: any[] = [
         framesList: [60, 8, 8, 9],
         hitDamage: [20, 25, 25, 30],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 160,
         ignore: 50,
         debuffs: [
@@ -8443,7 +8443,7 @@ export const UNITS: any[] = [
         },
         framesList: [62, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -8483,7 +8483,7 @@ export const UNITS: any[] = [
         },
         framesList: [150],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         damage: "magic",
         elements: [
@@ -8514,7 +8514,7 @@ export const UNITS: any[] = [
         },
         framesList: [70],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         damage: "magic",
         elements: [
@@ -8545,7 +8545,7 @@ export const UNITS: any[] = [
         },
         framesList: [180],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         damage: "magic",
         elements: [
@@ -8617,7 +8617,7 @@ export const UNITS: any[] = [
         },
         framesList: [49, 7, 7, 7, 7, 5, 7, 7, 7, 7],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 330,
         ignore: 25,
         damage: "magic",
@@ -8642,7 +8642,7 @@ export const UNITS: any[] = [
         framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 300,
         damage: "magic",
         elements: [
@@ -8663,7 +8663,7 @@ export const UNITS: any[] = [
         framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
         castTime: 20,
-        offset: 16,
+        offset: 14,
         base: 900,
         damage: "magic",
         elements: [
@@ -8683,7 +8683,7 @@ export const UNITS: any[] = [
         },
         framesList: [60, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         castTime: 36,
-        offset: 16,
+        offset: 14,
         base: 350,
         ignore: 50,
         damage: "magic",
@@ -8716,7 +8716,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20360,
@@ -8748,7 +8748,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401002607,
@@ -8812,7 +8812,7 @@ export const UNITS: any[] = [
         },
         framesList: [178, 6, 4, 3, 3],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         ignore: 25,
         damage: "magic",
@@ -8851,7 +8851,7 @@ export const UNITS: any[] = [
         "framesList": [
           170
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20390,
@@ -8881,7 +8881,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20300,
@@ -8907,7 +8907,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20360,
@@ -8939,7 +8939,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
-        "offset": 16
+        "offset": 14,
       }
     ],
     "multipleBlack": 3
@@ -8968,7 +8968,7 @@ export const UNITS: any[] = [
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         hitDamage: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 25,
         damage: "magic",
@@ -8999,7 +8999,7 @@ export const UNITS: any[] = [
         },
         framesList: [8, 6, 6, 6, 6],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 150,
         ignore: 30,
         damage: "magic",
@@ -9020,7 +9020,7 @@ export const UNITS: any[] = [
         },
         framesList: [8, 6, 6, 6, 6],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 150,
         damage: "magic",
         elements: [
@@ -9040,7 +9040,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 420,
         damage: "magic",
         elements: [
@@ -9061,7 +9061,7 @@ export const UNITS: any[] = [
         framesList: [46, 6, 6, 6, 6, 7],
         hitDamage: [16, 16, 16, 16, 16, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         damage: "magic",
         elements: [
@@ -9081,7 +9081,7 @@ export const UNITS: any[] = [
         },
         framesList: [110, 15],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 200,
         damage: "magic",
         type: "finish",
@@ -9124,7 +9124,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [110, 15],
-        offset: 16,
+        offset: 14,
         base: 250
       }
     ],
@@ -9160,7 +9160,7 @@ export const UNITS: any[] = [
         framesList: [46, 5, 5, 5, 5, 5],
         hitDamage: [16, 17, 16, 17, 17, 17],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         elements: [
           "light"
@@ -9179,7 +9179,7 @@ export const UNITS: any[] = [
         framesList: [46, 6, 6, 6, 6, 6],
         hitDamage: [16, 17, 16, 17, 17, 17],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400,
         elements: [
           "light"
@@ -9198,7 +9198,7 @@ export const UNITS: any[] = [
         framesList: [42, 8, 8, 8, 8, 8],
         hitDamage: [16, 17, 16, 17, 17, 17],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 450,
         elements: [
           "light"
@@ -9248,7 +9248,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 260,
         ignore: 50
       },
@@ -9265,7 +9265,7 @@ export const UNITS: any[] = [
         framesList: [46, 6, 6, 6, 6, 7],
         hitDamage: [16, 16, 16, 16, 16, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 220,
         elements: [
           "light"
@@ -9433,7 +9433,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -9483,7 +9483,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -9513,7 +9513,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -9543,7 +9543,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -9573,7 +9573,7 @@ export const UNITS: any[] = [
         "elements": [
           "dark"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "dark",
@@ -9600,7 +9600,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -9635,7 +9635,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -9829,7 +9829,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508001,
@@ -9850,7 +9850,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227561,
@@ -9871,7 +9871,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100011707,
@@ -9927,7 +9927,7 @@ export const UNITS: any[] = [
         framesList: [70, 24, 24, 24, 24, 24],
         hitDamage: [16, 16, 16, 16, 16, 20],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300,
         ignore: 25,
         damage: "magic",
@@ -9945,7 +9945,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 420,
         damage: "magic",
         elements: [
@@ -9965,7 +9965,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 600,
         damage: "magic",
         elements: [
@@ -10079,7 +10079,7 @@ export const UNITS: any[] = [
         },
         framesList: [85],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 350,
         ignore: 50
       },
@@ -10095,7 +10095,7 @@ export const UNITS: any[] = [
         },
         framesList: [100],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 700,
         ignore: 50
       },
@@ -10173,7 +10173,7 @@ export const UNITS: any[] = [
         "framesList": [
           37
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227502,
@@ -10194,7 +10194,7 @@ export const UNITS: any[] = [
         "framesList": [
           122
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 212000507,
@@ -10337,7 +10337,7 @@ export const UNITS: any[] = [
         },
         framesList: [150],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 1650,
         damage: "magic",
         elements: [
@@ -10440,7 +10440,7 @@ export const UNITS: any[] = [
         framesList: [38, 3, 2, 3, 4, 2, 4, 2, 3, 2],
         hitDamage: [8, 8, 9, 9, 10, 10, 10, 11, 12, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -10456,7 +10456,7 @@ export const UNITS: any[] = [
         framesList: [38, 3, 3, 3, 3, 3, 3, 3, 3, 3],
         hitDamage: [8, 8, 9, 9, 10, 10, 10, 11, 12, 13],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -10472,7 +10472,7 @@ export const UNITS: any[] = [
         framesList: [85, 4, 6, 5, 8],
         hitDamage: [17, 19, 20, 21, 23],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 185,
         ignore: 25,
         elements: [
@@ -10526,7 +10526,7 @@ export const UNITS: any[] = [
           4, 4, 4, 4, 4, 4, 4, 72
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
@@ -10547,7 +10547,7 @@ export const UNITS: any[] = [
           4, 4, 4, 4, 4, 4, 4, 72
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
@@ -10568,7 +10568,7 @@ export const UNITS: any[] = [
           5, 5, 6, 6, 7, 7, 9, 55
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -10616,7 +10616,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 500,
         elements: [
           "light"
@@ -10674,7 +10674,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [85],
-        offset: 16,
+        offset: 14,
         base: 275
       },
       {
@@ -10689,7 +10689,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [85],
-        offset: 16,
+        offset: 14,
         base: 275
       },
       {
@@ -10704,7 +10704,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [85],
-        offset: 16,
+        offset: 14,
         base: 275
       },
       {
@@ -10719,7 +10719,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [85],
-        offset: 16,
+        offset: 14,
         base: 275
       },
       {
@@ -10841,7 +10841,7 @@ export const UNITS: any[] = [
         ],
         castTime: 20,
         framesList: [82, 7, 7, 7, 7],
-        offset: 16,
+        offset: 14,
         base: 180,
         ignore: 25
       },
@@ -10860,7 +10860,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 20,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -10980,7 +10980,7 @@ export const UNITS: any[] = [
         castTime: 40,
         base: 220,
         framesList: [42, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        offset: 16
+        offset: 14
       },
       {
         id: 221420,
@@ -10997,7 +10997,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 225,
         ignore: 50
       },
@@ -11016,7 +11016,7 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 13, 13, 13, 13
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
@@ -11079,7 +11079,7 @@ export const UNITS: any[] = [
         },
         castTime: 104,
         framesList: [110],
-        offset: 16,
+        offset: 14,
         base: 250,
         ignore: 50
       },
@@ -11095,7 +11095,7 @@ export const UNITS: any[] = [
         },
         castTime: 104,
         framesList: [114],
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50
       },
@@ -11114,7 +11114,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 104,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           114
@@ -11158,7 +11158,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508074,
@@ -11178,7 +11178,7 @@ export const UNITS: any[] = [
         "framesList": [
           72
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508075,
@@ -11199,7 +11199,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508079,
@@ -11219,7 +11219,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 8, 8, 8, 8, 8, 8, 8, 8, 8, 30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 215000707,
@@ -11385,7 +11385,7 @@ export const UNITS: any[] = [
         ],
         framesList: [70, 6, 6, 6, 6, 6, 6, 6],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         base: 1000
       },
       {
@@ -11400,7 +11400,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [42],
-        offset: 16,
+        offset: 14,
         base: 265,
         ignore: 50
       },
@@ -11426,7 +11426,7 @@ export const UNITS: any[] = [
         "framesList": [
           124
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 209001107,
@@ -11499,7 +11499,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         framesList: [59, 8, 8, 8, 8, 8, 8, 8],
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -11521,7 +11521,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
-        offset: 16,
+        offset: 14,
         base: 700
       },
       {
@@ -11543,7 +11543,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         framesList: [120, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 425
       },
       {
@@ -11565,7 +11565,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         framesList: [160, 22, 21, 22, 23, 23, 22, 23],
-        offset: 16,
+        offset: 14,
         base: 425
       },
       {
@@ -11583,7 +11583,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 8, 8, 14, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 270
       },
       {
@@ -11629,7 +11629,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 250,
         dualable: false
       },
@@ -11646,7 +11646,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "magic",
         framesList: [20],
-        offset: 16,
+        offset: 14,
         base: 300,
         dualable: false
       },
@@ -11663,7 +11663,7 @@ export const UNITS: any[] = [
         castTime: 20,
         damage: "magic",
         framesList: [33],
-        offset: 16,
+        offset: 14,
         base: 500,
         dualable: false
       },
@@ -11680,7 +11680,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         framesList: [40],
-        offset: 16,
+        offset: 14,
         base: 120,
         dualable: false
       }
@@ -11712,7 +11712,7 @@ export const UNITS: any[] = [
         ],
         castTime: 60,
         framesList: [60, 6, 6, 6, 6, 6],
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -11763,7 +11763,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [60],
-        offset: 16,
+        offset: 14,
         base: 1050
       }
     ],
@@ -11792,7 +11792,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 8, 8, 8, 8, 8, 16],
-        offset: 16,
+        offset: 14,
         base: 160
       },
       {
@@ -11827,7 +11827,7 @@ export const UNITS: any[] = [
         ],
         castTime: 20,
         framesList: [60, 6, 6, 6, 6, 6],
-        offset: 16,
+        offset: 14,
         base: 220
       },
       {
@@ -12005,7 +12005,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 550
       },
       {
@@ -12024,7 +12024,7 @@ export const UNITS: any[] = [
           "water"
         ],
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 550
       },
       {
@@ -12043,7 +12043,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 550
       },
       {
@@ -12062,7 +12062,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 550
       },
       {
@@ -12081,7 +12081,7 @@ export const UNITS: any[] = [
           "light"
         ],
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 550
       },
       {
@@ -12272,7 +12272,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227611,
@@ -12297,7 +12297,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100012607,
@@ -12349,7 +12349,7 @@ export const UNITS: any[] = [
           "light"
         ],
         framesList: [190],
-        offset: 16,
+        offset: 14,
         base: 360,
         dualable: false
       },
@@ -12364,7 +12364,7 @@ export const UNITS: any[] = [
         },
         framesList: [120],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 600,
         elements: [
           "dark"
@@ -12382,7 +12382,7 @@ export const UNITS: any[] = [
         },
         framesList: [365],
         castTime: 40,
-        offset: 16,
+        offset: 14,
         base: 280,
         ignore: 50,
         damage: "magic",
@@ -12408,7 +12408,7 @@ export const UNITS: any[] = [
           "light"
         ],
         framesList: [162, 8, 8, 8, 8, 8, 8],
-        offset: 16,
+        offset: 14,
         base: 525,
         dualable: false
       },
@@ -12467,7 +12467,7 @@ export const UNITS: any[] = [
           "water"
         ],
         framesList: [190],
-        offset: 16,
+        offset: 14,
         base: 600,
         magicType: "black",
         dualable: false
@@ -12488,7 +12488,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         framesList: [150],
-        offset: 16,
+        offset: 14,
         base: 600,
         magicType: "black",
         dualable: false
@@ -12509,7 +12509,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         framesList: [210],
-        offset: 16,
+        offset: 14,
         base: 600,
         magicType: "black",
         dualable: false
@@ -12530,7 +12530,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         framesList: [240],
-        offset: 16,
+        offset: 14,
         base: 600,
         magicType: "black",
         dualable: false
@@ -12560,7 +12560,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
-        offset: 16,
+        offset: 14,
         base: 250,
         magicType: "black",
         dualable: false
@@ -12590,7 +12590,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
-        offset: 16,
+        offset: 14,
         base: 400,
         magicType: "black",
         dualable: false
@@ -12623,7 +12623,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508020,
@@ -12655,7 +12655,7 @@ export const UNITS: any[] = [
         "framesList": [
           240, 20, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508020111,
@@ -12687,7 +12687,7 @@ export const UNITS: any[] = [
         "framesList": [
           240, 20, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20760,
@@ -12713,7 +12713,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 210000407,
@@ -12761,7 +12761,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         framesList: [300],
-        offset: 16,
+        offset: 14,
         base: 900,
         dualable: false
       },
@@ -12778,7 +12778,7 @@ export const UNITS: any[] = [
         castTime: 40,
         damage: "magic",
         framesList: [285],
-        offset: 16,
+        offset: 14,
         base: 2000,
         dualable: false
       }
@@ -12815,7 +12815,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -12839,7 +12839,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20],
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -12983,7 +12983,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [210],
-        offset: 16,
+        offset: 14,
         base: 200
       },
       {
@@ -12998,7 +12998,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         framesList: [72],
-        offset: 16,
+        offset: 14,
         base: 320
       },
       {
@@ -13022,7 +13022,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [16, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 420
       },
       {
@@ -13038,7 +13038,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
@@ -13127,7 +13127,7 @@ export const UNITS: any[] = [
         ],
         castTime: 15,
         framesList: [15, 10, 10, 10, 10, 10, 66],
-        offset: 16,
+        offset: 14,
         base: 360
       },
       {
@@ -13162,7 +13162,7 @@ export const UNITS: any[] = [
         ],
         castTime: 14,
         framesList: [16, 21, 32, 29, 9, 24],
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
@@ -13180,7 +13180,7 @@ export const UNITS: any[] = [
         ],
         castTime: 14,
         framesList: [16, 21, 32, 29, 9, 24],
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
@@ -13195,7 +13195,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [160],
-        offset: 16,
+        offset: 14,
         base: 275,
         ignore: 50
       },
@@ -13214,7 +13214,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [92, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 50
       },
@@ -13325,7 +13325,7 @@ export const UNITS: any[] = [
           4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ]
@@ -13345,7 +13345,7 @@ export const UNITS: any[] = [
           30, 30, 40
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 20, 10
         ]
@@ -13365,7 +13365,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           160
@@ -13418,7 +13418,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
@@ -13475,7 +13475,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 325
       },
       {
@@ -13493,7 +13493,7 @@ export const UNITS: any[] = [
           11, 11, 11, 11, 11, 11, 11, 23
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -13540,7 +13540,7 @@ export const UNITS: any[] = [
         ],
         castTime: 12,
         framesList: [14, 28, 26, 23, 43],
-        offset: 16,
+        offset: 14,
         base: 180
       },
       {
@@ -13558,7 +13558,7 @@ export const UNITS: any[] = [
         ],
         castTime: 12,
         framesList: [14, 28, 26, 23, 43],
-        offset: 16,
+        offset: 14,
         base: 220
       },
       {
@@ -13582,7 +13582,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [42, 20, 30, 2],
-        offset: 16,
+        offset: 14,
         base: 270
       },
       {
@@ -13606,7 +13606,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [42, 20, 30, 2],
-        offset: 16,
+        offset: 14,
         base: 350
       },
       {
@@ -13641,7 +13641,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         framesList: [110],
-        offset: 16,
+        offset: 14,
         base: 190
       },
       {
@@ -13659,7 +13659,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         framesList: [110],
-        offset: 16,
+        offset: 14,
         base: 190
       },
       {
@@ -13677,7 +13677,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         framesList: [70],
-        offset: 16,
+        offset: 14,
         base: 190
       },
       {
@@ -13720,7 +13720,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 720
       },
       {
@@ -13822,7 +13822,7 @@ export const UNITS: any[] = [
         castTime: 32,
         debuff: [],
         framesList: [34, 26, 92],
-        offset: 16,
+        offset: 14,
         base: 225,
         ignore: 50
       },
@@ -13878,7 +13878,7 @@ export const UNITS: any[] = [
         ],
         debuff: [],
         framesList: [240],
-        offset: 16,
+        offset: 14,
         base: 2000,
         dualable: false
       },
@@ -13919,7 +13919,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 3000
       },
       {
@@ -13941,7 +13941,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 4400
       }
     ]
@@ -13984,7 +13984,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         framesList: [120],
-        offset: 16,
+        offset: 14,
         base: 650
       },
       {
@@ -14002,7 +14002,7 @@ export const UNITS: any[] = [
         ],
         castTime: 8,
         framesList: [22, 16, 37, 81],
-        offset: 16,
+        offset: 14,
         base: 750
       },
       {
@@ -14168,7 +14168,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [70, 7, 5, 7, 7, 7, 7],
-        offset: 16,
+        offset: 14,
         base: 680
       },
       {
@@ -14195,7 +14195,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [350],
-        offset: 16,
+        offset: 14,
         base: 180,
         ignore: 50
       },
@@ -14214,7 +14214,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-        offset: 16,
+        offset: 14,
         base: 700
       },
       {
@@ -14250,7 +14250,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 360,
         ignore: 50
       },
@@ -14272,7 +14272,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228053,
@@ -14292,7 +14292,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228051,
@@ -14312,7 +14312,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508320,
@@ -14332,7 +14332,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         id: 207001007,
@@ -14386,7 +14386,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [82, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 320,
         ignore: 25
       },
@@ -14407,7 +14407,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [120, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 320,
         ignore: 50
       },
@@ -14425,7 +14425,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [200],
-        offset: 16,
+        offset: 14,
         base: 660
       },
       {
@@ -14475,7 +14475,7 @@ export const UNITS: any[] = [
           }
         ],
         framesList: [68],
-        offset: 16,
+        offset: 14,
         base: 350
       },
       {
@@ -14490,7 +14490,7 @@ export const UNITS: any[] = [
         },
         castTime: 38,
         framesList: [78],
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -14505,7 +14505,7 @@ export const UNITS: any[] = [
         },
         castTime: 38,
         framesList: [78],
-        offset: 16,
+        offset: 14,
         base: 620
       },
       {
@@ -14570,7 +14570,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [92, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 200
       },
       {
@@ -14589,7 +14589,7 @@ export const UNITS: any[] = [
         castTime: 40,
         dualable: false,
         framesList: [42, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        offset: 16,
+        offset: 14,
         base: 320,
         ignore: 25
       },
@@ -14606,7 +14606,7 @@ export const UNITS: any[] = [
         castTime: 40,
         dualable: false,
         framesList: [425],
-        offset: 16,
+        offset: 14,
         base: 1200
       },
       {
@@ -14653,7 +14653,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [50, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 650
       },
       {
@@ -14673,7 +14673,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [80],
-        offset: 16,
+        offset: 14,
         base: 1150
       },
       {
@@ -14703,7 +14703,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [160, 22, 21, 22, 23, 23, 22, 23],
-        offset: 16,
+        offset: 14,
         base: 375
       },
       {
@@ -14731,7 +14731,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
-        offset: 16,
+        offset: 14,
         base: 350
       },
       {
@@ -14758,7 +14758,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [240],
-        offset: 16,
+        offset: 14,
         base: 330
       },
       {
@@ -14778,7 +14778,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [140],
-        offset: 16,
+        offset: 14,
         base: 1750
       },
       {
@@ -14796,7 +14796,7 @@ export const UNITS: any[] = [
         magicType: "black",
         dualable: false,
         framesList: [350],
-        offset: 16,
+        offset: 14,
         base: 350,
         ignore: 25
       },
@@ -14817,7 +14817,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [150],
-        offset: 16,
+        offset: 14,
         base: 1950
       },
       {
@@ -14837,7 +14837,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -15025,7 +15025,7 @@ export const UNITS: any[] = [
           40
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           46,
@@ -15154,7 +15154,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [170],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -15168,7 +15168,7 @@ export const UNITS: any[] = [
         damage: "magic",
         dualable: false,
         framesList: [147],
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 25
       },
@@ -15197,7 +15197,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
@@ -15267,7 +15267,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [240],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -15288,7 +15288,7 @@ export const UNITS: any[] = [
         ],
         dualable: false,
         framesList: [190],
-        offset: 16,
+        offset: 14,
         base: 600
       },
       {
@@ -15312,7 +15312,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -15344,7 +15344,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           110
         ]
@@ -15378,7 +15378,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [32, 20, 20, 20],
-        offset: 16,
+        offset: 14,
         base: 180
       },
       {
@@ -15396,7 +15396,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [70, 7, 5, 7, 7, 7, 7],
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -15447,7 +15447,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 16,
+        offset: 14,
         base: 210,
         ignore: 50
       },
@@ -15530,7 +15530,7 @@ export const UNITS: any[] = [
         "framesList": [
           0
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227622,
@@ -15551,7 +15551,7 @@ export const UNITS: any[] = [
         "framesList": [
           0
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 912321,
@@ -15568,7 +15568,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 10,
-        "offset": 16,
+        "offset": 14,
         "dualable": false,
         "framesList": [
           0
@@ -15627,7 +15627,7 @@ export const UNITS: any[] = [
         framesList: [
           122, 7, 7, 7, 7, 7, 7, 7, 17
         ],
-        offset: 16,
+        offset: 14,
         base: 140,
         debuffs: [
           {
@@ -15652,7 +15652,7 @@ export const UNITS: any[] = [
         framesList: [
           112, 6, 6, 6, 6
         ],
-        offset: 16,
+        offset: 14,
         base: 250
       },
       {
@@ -15677,7 +15677,7 @@ export const UNITS: any[] = [
         framesList: [
           72, 10, 10, 10, 10, 10, 10, 10
         ],
-        offset: 16,
+        offset: 14,
         base: 450
       },
       {
@@ -15696,7 +15696,7 @@ export const UNITS: any[] = [
         framesList: [
           150
         ],
-        offset: 16,
+        offset: 14,
         base: 300
       },
       {
@@ -15715,7 +15715,7 @@ export const UNITS: any[] = [
         framesList: [
           42, 8, 8, 8, 11
         ],
-        offset: 16,
+        offset: 14,
         base: 800,
         ignore: 25
       },
@@ -15764,7 +15764,7 @@ export const UNITS: any[] = [
         framesList: [
           145
         ],
-        offset: 16,
+        offset: 14,
         base: 150,
         ignore: 50
       },
@@ -15782,7 +15782,7 @@ export const UNITS: any[] = [
         framesList: [
           110
         ],
-        offset: 16,
+        offset: 14,
         base: 825
       },
       {
@@ -15799,7 +15799,7 @@ export const UNITS: any[] = [
         framesList: [
           135
         ],
-        offset: 16,
+        offset: 14,
         base: 1500
       },
       {
@@ -15816,7 +15816,7 @@ export const UNITS: any[] = [
         framesList: [
           135
         ],
-        offset: 16,
+        offset: 14,
         base: 2250
       },
       {
@@ -15833,7 +15833,7 @@ export const UNITS: any[] = [
         framesList: [
           275
         ],
-        offset: 16,
+        offset: 14,
         base: 2650
       },
       {
@@ -15900,7 +15900,7 @@ export const UNITS: any[] = [
         framesList: [
           70, 7, 5, 7, 7, 7, 7
         ],
-        offset: 16,
+        offset: 14,
         base: 480,
         debuffs: [
           {
@@ -15928,7 +15928,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           110
         ]
@@ -15948,7 +15948,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -15969,7 +15969,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -15995,7 +15995,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -16066,7 +16066,7 @@ export const UNITS: any[] = [
         framesList: [
           210
         ],
-        offset: 16,
+        offset: 14,
         base: 700
       },
       {
@@ -16089,7 +16089,7 @@ export const UNITS: any[] = [
         framesList: [
           150
         ],
-        offset: 16,
+        offset: 14,
         base: 700
       },
       {
@@ -16112,7 +16112,7 @@ export const UNITS: any[] = [
         framesList: [
           170
         ],
-        offset: 16,
+        offset: 14,
         base: 700
       },
       {
@@ -16135,7 +16135,7 @@ export const UNITS: any[] = [
         framesList: [
           240
         ],
-        offset: 16,
+        offset: 14,
         base: 800
       },
       {
@@ -16161,7 +16161,7 @@ export const UNITS: any[] = [
         framesList: [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
-        offset: 16,
+        offset: 14,
         base: 475,
         debuffs: [
           {
@@ -16190,7 +16190,7 @@ export const UNITS: any[] = [
         framesList: [
           250
         ],
-        offset: 16,
+        offset: 14,
         base: 1400
       },
       {
@@ -16212,7 +16212,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -16243,7 +16243,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -16310,7 +16310,7 @@ export const UNITS: any[] = [
         framesList: [
           110, 9, 9, 9, 9, 9, 9, 9, 9, 9
         ],
-        offset: 16,
+        offset: 14,
         base: 360
       },
       {
@@ -16334,7 +16334,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 360
       },
       {
@@ -16358,7 +16358,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 360
       },
       {
@@ -16428,7 +16428,7 @@ export const UNITS: any[] = [
         framesList: [
           42, 7, 7, 7, 7, 7, 7, 7
         ],
-        offset: 16,
+        offset: 14,
         base: 220
       },
       {
@@ -16448,7 +16448,7 @@ export const UNITS: any[] = [
         framesList: [
           142, 4
         ],
-        offset: 16,
+        offset: 14,
         base: 200,
         ignore: 25
       },
@@ -16527,7 +16527,7 @@ export const UNITS: any[] = [
         framesList: [
           52, 40, 40
         ],
-        offset: 16,
+        offset: 14,
         base: 400
       },
       {
@@ -16547,7 +16547,7 @@ export const UNITS: any[] = [
         framesList: [
           62, 8, 8, 8, 8
         ],
-        offset: 16,
+        offset: 14,
         base: 200,
         debuffs: [
           {
@@ -16573,7 +16573,7 @@ export const UNITS: any[] = [
         framesList: [
           42, 30, 7, 3, 4, 4, 7, 7, 7
         ],
-        offset: 16,
+        offset: 14,
         base: 350,
         ignore: 50
       },
@@ -16624,7 +16624,7 @@ export const UNITS: any[] = [
         "framesList": [
           17, 13, 17, 23, 35
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1250
       },
       {
@@ -16663,7 +16663,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 40, 40
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -16683,7 +16683,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 30, 7, 3, 4, 4, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 350,
         "ignore": 50
       },
@@ -16720,7 +16720,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -16740,7 +16740,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           110
         ]
@@ -16846,7 +16846,7 @@ export const UNITS: any[] = [
         "framesList": [
           60, 8, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -16871,7 +16871,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 30, 30, 30, 30, 30, 30
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 660
       },
       {
@@ -16915,7 +16915,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
         ]
@@ -16986,7 +16986,7 @@ export const UNITS: any[] = [
         "framesList": [
           190
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1000
       },
       {
@@ -17011,7 +17011,7 @@ export const UNITS: any[] = [
         "framesList": [
           100, 15, 15, 15, 15
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 500,
         "ignore": 25
       },
@@ -17037,7 +17037,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 15, 15, 15, 15
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "ignore": 25
       }
@@ -17113,7 +17113,7 @@ export const UNITS: any[] = [
           5,
           15
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 300
       },
       {
@@ -17154,7 +17154,7 @@ export const UNITS: any[] = [
           24,
           25
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -17207,7 +17207,7 @@ export const UNITS: any[] = [
         "framesList": [
           49
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 300
       },
       {
@@ -17243,7 +17243,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -17276,7 +17276,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -17317,7 +17317,7 @@ export const UNITS: any[] = [
           24,
           25
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -17407,7 +17407,7 @@ export const UNITS: any[] = [
           12,
           12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -17450,7 +17450,7 @@ export const UNITS: any[] = [
         "framesList": [
           540
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1000
       },
       {
@@ -17521,7 +17521,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 225,
         "debuffs": [
           {
@@ -17550,7 +17550,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 225,
         "debuffs": [
           {
@@ -17579,7 +17579,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 225,
         "debuffs": [
           {
@@ -17608,7 +17608,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 225,
         "debuffs": [
           {
@@ -17841,7 +17841,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "ignore": 50,
         "debuffs": [
@@ -17943,7 +17943,7 @@ export const UNITS: any[] = [
         "framesList": [
           60, 7, 7, 8, 7, 7, 8, 7, 7, 8, 7, 7, 8, 7, 7, 8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 500,
         "debuffs": [
           {
@@ -18037,7 +18037,7 @@ export const UNITS: any[] = [
         "framesList": [
           55, 10, 10, 10, 10, 10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 500,
         "debuffs": [
           {
@@ -18099,7 +18099,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -18119,7 +18119,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 200
       },
       {
@@ -18139,7 +18139,7 @@ export const UNITS: any[] = [
         "framesList": [
           40, 8, 8, 8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 150
       },
       {
@@ -18159,7 +18159,7 @@ export const UNITS: any[] = [
         "framesList": [
           40, 8, 8, 8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 200
       },
       {
@@ -18179,7 +18179,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "ignore": 25
       },
@@ -18245,7 +18245,7 @@ export const UNITS: any[] = [
         "framesList": [
           130
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -18262,7 +18262,7 @@ export const UNITS: any[] = [
         "framesList": [
           130
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -18297,7 +18297,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 650
       },
       {
@@ -18314,7 +18314,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1850,
         "debuffs": [
           {
@@ -18402,7 +18402,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 300
       },
       {
@@ -18421,7 +18421,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 350,
         "debuffs": [
           {
@@ -18460,7 +18460,7 @@ export const UNITS: any[] = [
         "framesList": [
           60
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 300
       },
       {
@@ -18477,7 +18477,7 @@ export const UNITS: any[] = [
         "framesList": [
           2
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1400
       },
       {
@@ -18525,7 +18525,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1200,
         "debuffs": [
           {
@@ -18655,7 +18655,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1125
       },
       {
@@ -18672,7 +18672,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 450,
         "ignore": 50
       },
@@ -18690,7 +18690,7 @@ export const UNITS: any[] = [
         "framesList": [
           52
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 450
       },
       {
@@ -18716,7 +18716,7 @@ export const UNITS: any[] = [
           5,
           5
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 750,
         "debuffs": [
           {
@@ -18742,7 +18742,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1800
       },
       {
@@ -18795,7 +18795,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 800
       },
       {
@@ -18818,7 +18818,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 810
       },
       {
@@ -18839,7 +18839,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 820
       },
       {
@@ -18862,7 +18862,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 830
       },
       {
@@ -18885,7 +18885,7 @@ export const UNITS: any[] = [
         "framesList": [
           130
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 840
       },
       {
@@ -18908,7 +18908,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 850
       },
       {
@@ -18931,7 +18931,7 @@ export const UNITS: any[] = [
         "framesList": [
           180
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1000
       },
       {
@@ -18954,7 +18954,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1005
       },
       {
@@ -18976,7 +18976,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1010
       },
       {
@@ -18999,7 +18999,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1015
       },
       {
@@ -19022,7 +19022,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1020
       },
       {
@@ -19045,7 +19045,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1025
       },
       {
@@ -19082,7 +19082,7 @@ export const UNITS: any[] = [
           7,
           7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1120,
         "debuffs": [
           {
@@ -19129,7 +19129,7 @@ export const UNITS: any[] = [
           8,
           8
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1100,
         "debuffs": [
           {
@@ -19161,7 +19161,7 @@ export const UNITS: any[] = [
         "framesList": [
           130
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 320
       },
       {
@@ -19182,7 +19182,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 120
       },
       {
@@ -19229,7 +19229,7 @@ export const UNITS: any[] = [
           10,
           10
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1080,
         "debuffs": [
           {
@@ -19262,7 +19262,7 @@ export const UNITS: any[] = [
         "framesList": [
           160
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 700,
         "debuffs": [
           {
@@ -19305,7 +19305,7 @@ export const UNITS: any[] = [
           7,
           7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1150,
         "debuffs": [
           {
@@ -19338,7 +19338,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 700,
         "debuffs": [
           {
@@ -19461,7 +19461,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 130
       },
       {
@@ -19482,7 +19482,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -19504,7 +19504,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 140
       },
       {
@@ -19541,7 +19541,7 @@ export const UNITS: any[] = [
         "framesList": [
           140
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 380
       },
       {
@@ -19558,7 +19558,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -19733,7 +19733,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 260
       },
       {
@@ -19750,7 +19750,7 @@ export const UNITS: any[] = [
         "framesList": [
           52
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250
       },
       {
@@ -19767,7 +19767,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250
       },
       {
@@ -19784,7 +19784,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250
       },
       {
@@ -19806,7 +19806,7 @@ export const UNITS: any[] = [
           45,
           20
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 320
       },
       {
@@ -19858,7 +19858,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 140
       },
       {
@@ -19875,7 +19875,7 @@ export const UNITS: any[] = [
         "framesList": [
           45
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 100,
         "ignore": 25
       },
@@ -19915,7 +19915,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -19937,7 +19937,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -19962,7 +19962,7 @@ export const UNITS: any[] = [
         "framesList": [
           55, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -19990,7 +19990,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -20007,7 +20007,7 @@ export const UNITS: any[] = [
         "framesList": [
           72
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 265,
         "ignore": 50
       },
@@ -20025,7 +20025,7 @@ export const UNITS: any[] = [
         "framesList": [
           170
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 650
       },
       {
@@ -20094,7 +20094,7 @@ export const UNITS: any[] = [
         "framesList": [
           47
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -20111,7 +20111,7 @@ export const UNITS: any[] = [
         "framesList": [
           45
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250
       },
       {
@@ -20128,7 +20128,7 @@ export const UNITS: any[] = [
         "framesList": [
           52
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 170
       },
       {
@@ -20148,7 +20148,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "ignore": 50
       },
@@ -20169,7 +20169,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1000,
         "debuffs": [
           {
@@ -20224,7 +20224,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 350,
         "debuffs": [
           {
@@ -20250,7 +20250,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 350,
         "debuffs": [
           {
@@ -20273,7 +20273,7 @@ export const UNITS: any[] = [
         "framesList": [
           22
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 210
       },
       {
@@ -20291,7 +20291,7 @@ export const UNITS: any[] = [
         "framesList": [
           140
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -20311,7 +20311,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 350
       },
       {
@@ -20331,7 +20331,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 410
       },
       {
@@ -20351,7 +20351,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 560,
         "ignore": 50,
         "debuffs": [
@@ -20426,7 +20426,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 200
       },
       {
@@ -20446,7 +20446,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 200
       },
       {
@@ -20469,7 +20469,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 460,
         "debuffs": [
           {
@@ -20498,7 +20498,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 460,
         "debuffs": [
           {
@@ -20557,7 +20557,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 500
       },
       {
@@ -20637,7 +20637,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -20660,7 +20660,7 @@ export const UNITS: any[] = [
         "framesList": [
           190
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -20682,7 +20682,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -20710,7 +20710,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -20742,7 +20742,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -20773,7 +20773,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 360
       },
       {
@@ -20798,7 +20798,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 360
       }
     ],
@@ -20847,7 +20847,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 200
       },
       {
@@ -20869,7 +20869,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -20888,7 +20888,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250,
         "debuffs": [
           {
@@ -20919,7 +20919,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 250
       }
     ],
@@ -20963,7 +20963,7 @@ export const UNITS: any[] = [
         "framesList": [
           95
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 260
       },
       {
@@ -20985,7 +20985,7 @@ export const UNITS: any[] = [
         "framesList": [
           130
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 260
       },
       {
@@ -21011,7 +21011,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 260
       },
       {
@@ -21036,7 +21036,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 260
       },
       {
@@ -21055,7 +21055,7 @@ export const UNITS: any[] = [
         "framesList": [
           6
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 425,
         "ignore": 50
       },
@@ -21136,7 +21136,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 900
       },
       {
@@ -21162,7 +21162,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -21184,7 +21184,7 @@ export const UNITS: any[] = [
         "framesList": [
           130
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 680
       },
       {
@@ -21206,7 +21206,7 @@ export const UNITS: any[] = [
         "framesList": [
           95
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 430
       }
     ],
@@ -21250,7 +21250,7 @@ export const UNITS: any[] = [
         "framesList": [
           140
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 180
       },
       {
@@ -21271,7 +21271,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -21292,7 +21292,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 400
       },
       {
@@ -21315,7 +21315,7 @@ export const UNITS: any[] = [
         "framesList": [
           170
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 600
       },
       {
@@ -21339,7 +21339,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 800,
         "debuffs": [
           {
@@ -21369,7 +21369,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 800,
         "debuffs": [
           {
@@ -21396,7 +21396,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1100
       },
       {
@@ -21417,7 +21417,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 800
       },
       {
@@ -21458,7 +21458,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1100
       },
       {
@@ -21482,7 +21482,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1100
       },
       {
@@ -21500,7 +21500,7 @@ export const UNITS: any[] = [
         "framesList": [
           72
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 2600
       },
       {
@@ -21546,7 +21546,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16,
+        "offset": 14,
         "base": 1600
       }
     ],
@@ -21699,7 +21699,7 @@ export const UNITS: any[] = [
         "framesList": [
           15, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227384,
@@ -21724,7 +21724,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507891,
@@ -21751,7 +21751,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 215001006,
@@ -21804,7 +21804,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227678,
@@ -21824,7 +21824,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227672,
@@ -21848,7 +21848,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100016706,
@@ -21901,7 +21901,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227653,
@@ -21926,7 +21926,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227650,
@@ -21948,7 +21948,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508095,
@@ -21970,7 +21970,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100016907,
@@ -22068,7 +22068,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911444,
@@ -22089,7 +22089,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911446,
@@ -22116,7 +22116,7 @@ export const UNITS: any[] = [
         "framesList": [
           290
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401000307,
@@ -22241,7 +22241,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911494,
@@ -22267,7 +22267,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401005907,
@@ -22329,7 +22329,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911518,
@@ -22350,7 +22350,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911519,
@@ -22370,7 +22370,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911520,
@@ -22414,7 +22414,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401006007,
@@ -22494,7 +22494,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227801,
@@ -22514,7 +22514,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227804,
@@ -22559,7 +22559,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227807,
@@ -22685,7 +22685,7 @@ export const UNITS: any[] = [
         "framesList": [
           42
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227783,
@@ -22705,7 +22705,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227786,
@@ -22744,7 +22744,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227789,
@@ -22770,7 +22770,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227792,
@@ -22878,7 +22878,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227764,
@@ -22900,7 +22900,7 @@ export const UNITS: any[] = [
         "framesList": [
           72, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227765,
@@ -22922,7 +22922,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 15, 15, 15, 15
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227769,
@@ -22953,7 +22953,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 15, 15, 15, 15
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227770,
@@ -22984,7 +22984,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 15, 15, 15, 15
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227771,
@@ -23009,7 +23009,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 30, 30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227774,
@@ -23052,7 +23052,7 @@ export const UNITS: any[] = [
         "framesList": [
           7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 330000207,
@@ -23118,7 +23118,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227734,
@@ -23138,7 +23138,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227735,
@@ -23177,7 +23177,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227738,
@@ -23197,7 +23197,7 @@ export const UNITS: any[] = [
         "framesList": [
           12, 8
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227743,
@@ -23217,7 +23217,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227747,
@@ -23248,7 +23248,7 @@ export const UNITS: any[] = [
         "framesList": [
           2, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227750,
@@ -23268,7 +23268,7 @@ export const UNITS: any[] = [
         "framesList": [
           38
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227751,
@@ -23291,7 +23291,7 @@ export const UNITS: any[] = [
         "framesList": [
           90, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227752,
@@ -23321,7 +23321,7 @@ export const UNITS: any[] = [
         "framesList": [
           26, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 330000107,
@@ -23389,7 +23389,7 @@ export const UNITS: any[] = [
         "framesList": [
           32, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228312,
@@ -23409,7 +23409,7 @@ export const UNITS: any[] = [
         "framesList": [
           4, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20220,
@@ -23435,7 +23435,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228311,
@@ -23455,7 +23455,7 @@ export const UNITS: any[] = [
         "framesList": [
           4, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228310,
@@ -23488,7 +23488,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508511,
@@ -23588,7 +23588,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228332,
@@ -23655,7 +23655,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228333,
@@ -23676,7 +23676,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20300,
@@ -23702,7 +23702,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508525,
@@ -23910,7 +23910,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911582,
@@ -23931,7 +23931,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911583,
@@ -23958,7 +23958,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911586,
@@ -23979,7 +23979,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 20, 20, 20, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911589,
@@ -24009,7 +24009,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401004807,
@@ -24110,7 +24110,7 @@ export const UNITS: any[] = [
         "framesList": [
           0
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911612,
@@ -24149,7 +24149,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911616,
@@ -24169,7 +24169,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911618,
@@ -24189,7 +24189,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911620,
@@ -24209,7 +24209,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401004707,
@@ -24278,7 +24278,7 @@ export const UNITS: any[] = [
           42,
           50
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 216080,
@@ -24351,7 +24351,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 507991,
@@ -24514,7 +24514,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 215030,
@@ -24529,7 +24529,7 @@ export const UNITS: any[] = [
         "base": 450,
         "hitDamage": [50, 50],
         "castTime": 100,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -24551,7 +24551,7 @@ export const UNITS: any[] = [
         "base": 600,
         "hitDamage": [50, 50],
         "castTime": 100,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -24581,7 +24581,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100009807,
@@ -24640,7 +24640,7 @@ export const UNITS: any[] = [
         "framesList": [
           34
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911643,
@@ -24660,7 +24660,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911645,
@@ -24681,7 +24681,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911651,
@@ -24702,7 +24702,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911654,
@@ -24723,7 +24723,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911657,
@@ -24753,7 +24753,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911665,
@@ -24778,7 +24778,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911660,
@@ -24863,7 +24863,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228417,
@@ -24883,7 +24883,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20340,
@@ -24909,7 +24909,7 @@ export const UNITS: any[] = [
         "framesList": [
           170
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228402,
@@ -24929,7 +24929,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228404,
@@ -24949,7 +24949,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508574,
@@ -25044,7 +25044,7 @@ export const UNITS: any[] = [
         "framesList": [
           65
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228425,
@@ -25064,7 +25064,7 @@ export const UNITS: any[] = [
         "framesList": [
           85
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228421,
@@ -25084,7 +25084,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228420,
@@ -25105,7 +25105,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508581,
@@ -25126,7 +25126,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100018006,
@@ -25187,7 +25187,7 @@ export const UNITS: any[] = [
         "framesList": [
           40, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20300,
@@ -25213,7 +25213,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20320,
@@ -25239,7 +25239,7 @@ export const UNITS: any[] = [
         "framesList": [
           190
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 20380,
@@ -25271,7 +25271,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228430,
@@ -25296,7 +25296,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       }
     ],
     "multipleBlack": 2,
@@ -25342,7 +25342,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911679,
@@ -25364,7 +25364,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911681,
@@ -25386,7 +25386,7 @@ export const UNITS: any[] = [
         "framesList": [
           30, 25
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911684,
@@ -25429,7 +25429,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401006307,
@@ -25499,7 +25499,7 @@ export const UNITS: any[] = [
         "framesList": [
           82
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911747,
@@ -25524,7 +25524,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911736,
@@ -25549,7 +25549,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 20, 20, 20, 20
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911741,
@@ -25620,7 +25620,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401006207,
@@ -25788,7 +25788,7 @@ export const UNITS: any[] = [
         "framesList": [
           10, 8, 9, 9
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911709,
@@ -25832,7 +25832,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911711,
@@ -25856,7 +25856,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911731,
@@ -25877,7 +25877,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911717,
@@ -25931,7 +25931,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 911725,
@@ -25955,7 +25955,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 401006107,
@@ -26046,7 +26046,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230844,
@@ -26066,7 +26066,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230845,
@@ -26086,7 +26086,7 @@ export const UNITS: any[] = [
         "framesList": [
           42
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230849,
@@ -26105,7 +26105,7 @@ export const UNITS: any[] = [
         "framesList": [
           57
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230850,
@@ -26125,7 +26125,7 @@ export const UNITS: any[] = [
         "framesList": [
           84, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230851,
@@ -26146,7 +26146,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230857,
@@ -26165,7 +26165,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230858,
@@ -26185,7 +26185,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 335000107,
@@ -26249,7 +26249,7 @@ export const UNITS: any[] = [
         "framesList": [
           6
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230863,
@@ -26269,7 +26269,7 @@ export const UNITS: any[] = [
         "framesList": [
           19, 26, 30, 30, 30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230864,
@@ -26309,7 +26309,7 @@ export const UNITS: any[] = [
         "framesList": [
           17
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230869,
@@ -26330,7 +26330,7 @@ export const UNITS: any[] = [
         "framesList": [
           19
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230870,
@@ -26351,7 +26351,7 @@ export const UNITS: any[] = [
         "framesList": [
           84, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230871,
@@ -26372,7 +26372,7 @@ export const UNITS: any[] = [
         "framesList": [
           19
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230872,
@@ -26393,7 +26393,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 509744,
@@ -26413,7 +26413,7 @@ export const UNITS: any[] = [
         "framesList": [
           19, 26, 30, 30, 30
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 509745,
@@ -26434,7 +26434,7 @@ export const UNITS: any[] = [
         "framesList": [
           19
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 230879,
@@ -26454,7 +26454,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 335000207,
@@ -26526,7 +26526,7 @@ export const UNITS: any[] = [
         "framesList": [
           125, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227875,
@@ -26546,7 +26546,7 @@ export const UNITS: any[] = [
         "framesList": [
           90, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 207000206,
@@ -26605,7 +26605,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 15, 15, 15, 15
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227850,
@@ -26628,7 +26628,7 @@ export const UNITS: any[] = [
         "framesList": [
           110, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227853,
@@ -26651,7 +26651,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 227852,
@@ -26710,7 +26710,7 @@ export const UNITS: any[] = [
         "framesList": [
           72
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 207000807,
@@ -26926,7 +26926,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 508161,
@@ -27047,7 +27047,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228653,
@@ -27125,7 +27125,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 228651,
@@ -27154,7 +27154,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 16
+        "offset": 14,
       },
       {
         "id": 100018506,
@@ -27206,7 +27206,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -27237,7 +27237,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -27268,7 +27268,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -27299,7 +27299,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -27378,7 +27378,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
         ]
@@ -27423,7 +27423,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           55
         ]
@@ -27448,7 +27448,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ]
@@ -27506,7 +27506,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 20, 20, 20, 20
         ]
@@ -27531,7 +27531,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 20, 20, 20, 20
         ]
@@ -27608,7 +27608,7 @@ export const UNITS: any[] = [
           16, 16, 17, 17, 17, 17
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -27634,7 +27634,7 @@ export const UNITS: any[] = [
           16, 16, 17, 17, 17, 17
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -27664,7 +27664,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -27688,7 +27688,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           50
         ]
@@ -27727,7 +27727,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           45
         ]
@@ -27818,7 +27818,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18
         ]
@@ -27838,7 +27838,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18
         ]
@@ -27858,7 +27858,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18
         ]
@@ -27878,7 +27878,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18
         ]
@@ -27917,7 +27917,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           68
         ]
@@ -27940,7 +27940,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -27969,7 +27969,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -28015,7 +28015,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42
         ]
@@ -28035,7 +28035,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           126
@@ -28123,7 +28123,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           100
@@ -28144,7 +28144,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           65
         ]
@@ -28185,7 +28185,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 66,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           66
@@ -28206,7 +28206,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           100
         ]
@@ -28226,7 +28226,7 @@ export const UNITS: any[] = [
           2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 83.33333333333331
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "debuffs": [
           {
@@ -28253,7 +28253,7 @@ export const UNITS: any[] = [
           2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.0769230769230766, 2.307692307692308, 76.92307692307692
         ],
         "castTime": 20,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ]
@@ -28273,7 +28273,7 @@ export const UNITS: any[] = [
           30, 70
         ],
         "castTime": 17,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18, 48
         ]
@@ -28292,7 +28292,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           290
@@ -28361,7 +28361,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           140
         ]
@@ -28386,7 +28386,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -28417,7 +28417,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -28448,7 +28448,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -28476,7 +28476,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           210
@@ -28502,7 +28502,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "light",
@@ -28534,7 +28534,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 41,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           450
@@ -28602,7 +28602,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 15,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           20
         ]
@@ -28622,7 +28622,7 @@ export const UNITS: any[] = [
         "hitDamage": [100],
         "castTime": 5,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -28678,7 +28678,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 15,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           60
         ]
@@ -28698,7 +28698,7 @@ export const UNITS: any[] = [
         "hitDamage": [100],
         "castTime": 5,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           60
         ]
@@ -28718,7 +28718,7 @@ export const UNITS: any[] = [
         "hitDamage": [100],
         "castTime": 15,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           60
         ]
@@ -28738,7 +28738,7 @@ export const UNITS: any[] = [
         "hitDamage": [100],
         "castTime": 20,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -28758,7 +28758,7 @@ export const UNITS: any[] = [
         "hitDamage": [100],
         "castTime": 10,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           60
         ]
@@ -28778,7 +28778,7 @@ export const UNITS: any[] = [
         "hitDamage": [100],
         "castTime": 10,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           60
         ]
@@ -28800,7 +28800,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 50,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 20, 20, 20, 20
         ]
@@ -28822,7 +28822,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -28844,7 +28844,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -28866,7 +28866,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -28888,7 +28888,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ]
@@ -28910,7 +28910,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           110, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
         ]
@@ -28957,7 +28957,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -28986,7 +28986,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -29015,7 +29015,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "lightning",
@@ -29045,7 +29045,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -29071,7 +29071,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -29092,7 +29092,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -29112,7 +29112,7 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 58
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
@@ -29134,7 +29134,7 @@ export const UNITS: any[] = [
           6, 6, 6, 6, 6, 6, 6, 58
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -29172,7 +29172,7 @@ export const UNITS: any[] = [
           41, 59
         ],
         "castTime": 20,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           64, 10
         ]
@@ -29192,7 +29192,7 @@ export const UNITS: any[] = [
           60, 40
         ],
         "castTime": 20,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           64, 10
         ]
@@ -29252,7 +29252,7 @@ export const UNITS: any[] = [
           2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 3.1325301204819276, 84.33734939759034
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
@@ -29274,7 +29274,7 @@ export const UNITS: any[] = [
           2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 2.5060240963855422, 3.1325301204819276, 84.33734939759034
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -29390,7 +29390,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -29455,7 +29455,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -29594,7 +29594,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -29639,7 +29639,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           50, 8, 8, 8, 8, 8
         ]
@@ -29663,7 +29663,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -29687,7 +29687,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ]
@@ -29708,7 +29708,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 47,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           49
         ]
@@ -29883,7 +29883,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -29908,7 +29908,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
@@ -29933,7 +29933,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -30008,7 +30008,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -30030,7 +30030,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "magicType": "black",
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -30056,7 +30056,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -30088,7 +30088,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -30114,7 +30114,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -30186,7 +30186,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ]
@@ -30206,7 +30206,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 42,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           44, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ]
@@ -30226,7 +30226,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ]
@@ -30246,7 +30246,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         "castTime": 2,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           44, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
@@ -30321,7 +30321,7 @@ export const UNITS: any[] = [
         "elements": [
           "dark"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           80
         ]
@@ -30356,7 +30356,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           45
         ]
@@ -30376,7 +30376,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 24,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           27
         ]
@@ -30396,7 +30396,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 25,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           27
         ]
@@ -30416,7 +30416,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 25,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "dark",
@@ -30442,7 +30442,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 25,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           27
         ]
@@ -30462,7 +30462,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 25,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42
         ]
@@ -30482,7 +30482,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 25,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           27
         ]
@@ -30500,7 +30500,7 @@ export const UNITS: any[] = [
         "base": 1700,
         "hitDamage": [100],
         "castTime": 1,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           227
         ]
@@ -30564,7 +30564,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -30584,7 +30584,7 @@ export const UNITS: any[] = [
           16, 16, 16, 16, 16, 20
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -30614,7 +30614,7 @@ export const UNITS: any[] = [
           16, 16, 16, 16, 16, 20
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 10, 10, 10, 10, 10,
           48
@@ -30638,7 +30638,7 @@ export const UNITS: any[] = [
         "elements": [
           "light"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -30661,7 +30661,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -30713,7 +30713,7 @@ export const UNITS: any[] = [
           33, 33, 34
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           42, 10, 10
@@ -30762,7 +30762,7 @@ export const UNITS: any[] = [
           14, 14, 15, 14, 14, 15, 14
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           42, 8, 8, 8, 8, 8, 16
@@ -30949,7 +30949,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -31146,7 +31146,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           180
         ]
@@ -31171,7 +31171,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           110
         ]
@@ -31197,7 +31197,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           170
         ]
@@ -31223,7 +31223,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           170
         ]
@@ -31268,7 +31268,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -31307,7 +31307,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42
         ]
@@ -31347,7 +31347,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           100
         ]
@@ -31367,7 +31367,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42
         ]
@@ -31387,7 +31387,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 20,
         "framesList": [
           50
@@ -31461,7 +31461,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 18,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           10
         ]
@@ -31521,7 +31521,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           20, 16
         ]
@@ -31541,7 +31541,7 @@ export const UNITS: any[] = [
           50, 50
         ],
         "castTime": 18,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           20, 16
         ]
@@ -31583,7 +31583,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           20, 16
         ]
@@ -31687,7 +31687,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           190
         ]
@@ -31713,7 +31713,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           170
         ]
@@ -31739,7 +31739,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -31765,7 +31765,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -31789,7 +31789,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ]
@@ -31813,7 +31813,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -31837,7 +31837,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           45
         ]
@@ -31861,7 +31861,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -31886,7 +31886,7 @@ export const UNITS: any[] = [
           "lightning",
           "light"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ]
@@ -31992,7 +31992,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           80
         ]
@@ -32013,7 +32013,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -32038,7 +32038,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -32063,7 +32063,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           100
         ]
@@ -32085,7 +32085,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -32256,7 +32256,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           60
         ]
@@ -32376,7 +32376,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           80
         ]
@@ -32401,7 +32401,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           200
         ]
@@ -32464,7 +32464,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -32489,7 +32489,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ]
@@ -32509,7 +32509,7 @@ export const UNITS: any[] = [
           25, 25, 25, 25
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           82, 20, 20, 20
         ]
@@ -32532,7 +32532,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -32651,7 +32651,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 19,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           21
         ]
@@ -32713,7 +32713,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           82, 8, 8, 8, 8, 8, 8, 8
         ]
@@ -32736,7 +32736,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -32765,7 +32765,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -32793,7 +32793,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ]
@@ -32812,7 +32812,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -32905,7 +32905,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 20,
         "framesList": [
           70
@@ -32975,7 +32975,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -32995,7 +32995,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           200
         ]
@@ -33015,7 +33015,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -33041,7 +33041,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -33067,7 +33067,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -33093,7 +33093,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -33119,7 +33119,7 @@ export const UNITS: any[] = [
         "elements": [
           "light"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "light",
@@ -33145,7 +33145,7 @@ export const UNITS: any[] = [
         "elements": [
           "dark"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "dark",
@@ -33254,7 +33254,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -33279,7 +33279,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10
         ]
@@ -33304,7 +33304,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           80
         ]
@@ -33329,7 +33329,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           145
         ]
@@ -33351,7 +33351,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           40, 10, 10, 10, 10
         ]
@@ -33373,7 +33373,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 8, 8, 8, 8, 8
         ]
@@ -33398,7 +33398,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -33429,7 +33429,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -33460,7 +33460,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -33491,7 +33491,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -33522,7 +33522,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 20, 20, 20, 20
         ]
@@ -33547,7 +33547,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           100
         ]
@@ -33572,7 +33572,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -33597,7 +33597,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           220
         ]
@@ -33619,7 +33619,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -33735,7 +33735,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 38,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           68
         ]
@@ -33755,7 +33755,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 35,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           67
         ]
@@ -33811,7 +33811,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -33836,7 +33836,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -33861,7 +33861,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -33926,7 +33926,7 @@ export const UNITS: any[] = [
         "base": 1800,
         "hitDamage": [10,  10,  10,  10,  10,  10,  10,  30],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -33944,7 +33944,7 @@ export const UNITS: any[] = [
         "base": 1800,
         "hitDamage": [6,  6,  6,  6,  6,  6,  6,  58],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -33965,7 +33965,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ]
@@ -34020,7 +34020,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "magicType": "black",
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           365
@@ -34047,7 +34047,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -34073,7 +34073,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -34099,7 +34099,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           240
         ]
@@ -34124,7 +34124,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           450
         ]
@@ -34145,7 +34145,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           240
@@ -34170,7 +34170,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -34197,7 +34197,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -34233,7 +34233,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 50,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 20, 20, 20, 20
         ]
@@ -34255,7 +34255,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           130
@@ -34356,7 +34356,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 20, 20
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -34376,7 +34376,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -34396,7 +34396,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 20, 20
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -34416,7 +34416,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -34442,7 +34442,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 20, 20
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -34462,7 +34462,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10, 10, 10,
@@ -34484,7 +34484,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10, 10, 10
@@ -34537,7 +34537,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42
         ]
@@ -34557,7 +34557,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -34578,7 +34578,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -34598,7 +34598,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -34640,7 +34640,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
@@ -34661,7 +34661,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -34684,7 +34684,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -34704,7 +34704,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -34725,7 +34725,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "debuffs": [
           {
@@ -34752,7 +34752,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "debuffs": [
           {
@@ -34829,7 +34829,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 15, 15
         ],
         "castTime": 7,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           25, 10, 11, 10, 10, 10, 10
         ]
@@ -34852,7 +34852,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
@@ -34876,7 +34876,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 6, 6, 6, 6, 6, 6, 6, 6
@@ -34897,7 +34897,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -34917,7 +34917,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -34937,7 +34937,7 @@ export const UNITS: any[] = [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "castTime": 38,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "debuffs": [
           {
@@ -34964,7 +34964,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -34984,7 +34984,7 @@ export const UNITS: any[] = [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "castTime": 38,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 6, 6, 6, 6, 6, 6, 6, 6
@@ -35067,7 +35067,7 @@ export const UNITS: any[] = [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "castTime": 38,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           42, 6, 6, 6, 6, 6, 6, 6, 6
@@ -35090,7 +35090,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 38,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           42, 6, 6, 6, 6, 6, 6, 6, 6
@@ -35111,7 +35111,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -35133,7 +35133,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -35231,7 +35231,7 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 13, 13, 13, 13
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 8, 8, 8, 8, 8, 8, 8
         ]
@@ -35251,7 +35251,7 @@ export const UNITS: any[] = [
           16, 16, 17, 17, 17, 17
         ],
         "castTime": 43,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           45, 15, 15, 15, 15, 37
         ]
@@ -35307,7 +35307,7 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -35398,7 +35398,7 @@ export const UNITS: any[] = [
           33, 33, 34
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18, 23, 35
         ]
@@ -35431,7 +35431,7 @@ export const UNITS: any[] = [
           33, 33, 34
         ],
         "castTime": 16,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           18, 23, 35
         ]
@@ -35470,7 +35470,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "wind",
@@ -35499,7 +35499,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "earth",
@@ -35528,7 +35528,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -35557,7 +35557,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -35596,7 +35596,7 @@ export const UNITS: any[] = [
           50, 50
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           82, 30
         ]
@@ -35613,7 +35613,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           65
         ]
@@ -35636,7 +35636,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -35659,7 +35659,7 @@ export const UNITS: any[] = [
         "elements": [
           "earth"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           100
         ]
@@ -35682,7 +35682,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           62, 20, 20
         ]
@@ -35705,7 +35705,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -35780,7 +35780,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           120
         ]
@@ -35802,7 +35802,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           82, 10, 10, 10, 10
         ]
@@ -35824,7 +35824,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 63,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           65
         ]
@@ -35846,7 +35846,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           50
         ]
@@ -35868,7 +35868,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 63,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           65
         ]
@@ -35931,7 +35931,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           82, 8, 8, 8, 8, 8, 8, 8
         ]
@@ -35953,7 +35953,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -36020,7 +36020,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -36043,7 +36043,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -36071,7 +36071,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 14
         ]
@@ -36151,7 +36151,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -36176,7 +36176,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           230
         ]
@@ -36201,7 +36201,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "dark",
@@ -36233,7 +36233,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -36259,7 +36259,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           240
         ]
@@ -36285,7 +36285,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           150
         ]
@@ -36311,7 +36311,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "water",
@@ -36340,7 +36340,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "magicType": "black",
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           350
@@ -36366,7 +36366,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "dark",
@@ -36397,7 +36397,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "dark",
@@ -36428,7 +36428,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -36453,7 +36453,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ]
@@ -36478,7 +36478,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           50, 10, 10, 10, 10, 10, 10, 10
         ]
@@ -36503,7 +36503,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           290
         ]
@@ -36528,7 +36528,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           52, 6, 6, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -36553,7 +36553,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           52, 20, 20, 20, 20
@@ -36579,7 +36579,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           141, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
@@ -36661,7 +36661,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           45
         ]
@@ -36681,7 +36681,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 25,
         "framesList": [
           130
@@ -36743,7 +36743,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           112
@@ -36764,7 +36764,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "debuffs": [
           {
@@ -36821,7 +36821,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           102
         ]
@@ -36841,7 +36841,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           102
         ]
@@ -36861,7 +36861,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           102
         ]
@@ -36881,7 +36881,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           100
         ]
@@ -36901,7 +36901,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           125
         ]
@@ -36921,7 +36921,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           140
@@ -36942,7 +36942,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           140
@@ -36995,7 +36995,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -37018,7 +37018,7 @@ export const UNITS: any[] = [
         "elements": [
           "ice"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -37038,7 +37038,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -37058,7 +37058,7 @@ export const UNITS: any[] = [
           3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ]
@@ -37081,7 +37081,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -37101,7 +37101,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -37121,7 +37121,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37142,7 +37142,7 @@ export const UNITS: any[] = [
           1.0370370370370372, 1.0370370370370372, 1.0370370370370372, 1.0370370370370372, 1.0370370370370372, 1.1111111111111112, 1.1111111111111112, 92.5925925925926
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37163,7 +37163,7 @@ export const UNITS: any[] = [
           3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.4615384615384612, 3.4615384615384612, 76.92307692307692
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37184,7 +37184,7 @@ export const UNITS: any[] = [
           3.4782608695652173, 3.4782608695652173, 3.695652173913044, 3.695652173913044, 3.695652173913044, 3.695652173913044, 78.26086956521739
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "debuffs": [
           {
@@ -37265,7 +37265,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -37285,7 +37285,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -37308,7 +37308,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -37334,7 +37334,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 15,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           1
         ]
@@ -37357,7 +37357,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ]
@@ -37383,7 +37383,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           210
         ]
@@ -37403,7 +37403,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70
         ]
@@ -37426,7 +37426,7 @@ export const UNITS: any[] = [
         "elements": [
           "fire"
         ],
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37447,7 +37447,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
@@ -37467,7 +37467,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37488,7 +37488,7 @@ export const UNITS: any[] = [
           1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.153846153846154, 1.153846153846154, 92.3076923076923
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37509,7 +37509,7 @@ export const UNITS: any[] = [
           3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ]
@@ -37529,7 +37529,7 @@ export const UNITS: any[] = [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "castTime": 38,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 6, 6, 6, 6, 6, 6, 6, 6
@@ -37550,7 +37550,7 @@ export const UNITS: any[] = [
           3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.4615384615384612, 3.4615384615384612, 76.92307692307692
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37571,7 +37571,7 @@ export const UNITS: any[] = [
           1.4, 1.4, 1.4, 1.4, 1.4, 1.5, 1.5, 90
         ],
         "castTime": 40,
-        "offset": 16,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
@@ -37620,5 +37620,1116 @@ export const UNITS: any[] = [
       }
     ],
     maxChainCap: 6
-  }
+  },
+  {
+  "id": 245,
+  "names": {
+    "en": "Yego",
+    "tw": "伊戈",
+    "kr": "이고"
+  },
+  "abilities": [
+    {
+      "id": 229412,
+      "names": {
+        "en": "Smash",
+        "tw": "猛擊",
+        "kr": "맹타",
+        "fr": "Fracas",
+        "de": "Niederschlagen",
+        "es": "Estragos"
+      },
+      "base": 350,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        44
+      ]
+    },
+    {
+      "id": 20240,
+      "names": {
+        "en": "Aeroga",
+        "tw": "大勁風",
+        "kr": "에어로가",
+        "fr": "Vent X",
+        "es": "Aero++"
+      },
+      "damage": "magic",
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "wind"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "framesList": [
+        110
+      ]
+    },
+    {
+      "id": 229414,
+      "names": {
+        "en": "Malboro Tentacle",
+        "tw": "毛爾波爾觸手",
+        "kr": "몰볼의 촉수",
+        "fr": "Tentacule de morbol",
+        "de": "Morbol-Tentakel",
+        "es": "Tentáculo molbol"
+      },
+      "base": 280,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        70
+      ]
+    },
+    {
+      "id": 229419,
+      "names": {
+        "en": "Wild Whip",
+        "tw": "狂野鞭打",
+        "kr": "맹렬한 채찍",
+        "fr": "Fouet sauvage",
+        "de": "Wilder Peitschenhieb",
+        "es": "Látigo salvaje"
+      },
+      "base": 480,
+      "hitDamage": [
+        33,
+        33,
+        34
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        45,
+        4,
+        4
+      ]
+    },
+    {
+      "id": 20330,
+      "names": {
+        "en": "Aeroja",
+        "tw": "強勁風",
+        "kr": "에어로쟈",
+        "fr": "Vent max",
+        "de": "Aeroka",
+        "es": "Aero+++"
+      },
+      "damage": "magic",
+      "base": 600,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "wind"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "framesList": [
+        170
+      ]
+    },
+    {
+      "id": 229420,
+      "names": {
+        "en": "Ground Whip",
+        "tw": "大地之鞭",
+        "kr": "대지의 채찍",
+        "fr": "Fouet tellurique",
+        "de": "Bodenpeitsche",
+        "es": "Látigo terrestre"
+      },
+      "base": 560,
+      "hitDamage": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        30
+      ],
+      "castTime": 40,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "debuffs": [
+        {
+          "type": "earth",
+          "value": 75
+        }
+      ],
+      "framesList": [
+        70,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": 229426,
+      "names": {
+        "en": "Brutal Whip",
+        "tw": "殘暴鞭",
+        "kr": "무자비한 채찍",
+        "fr": "Fouet brutal",
+        "de": "Brutale Peitsche",
+        "es": "Látigo brutal"
+      },
+      "base": 700,
+      "hitDamage": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        30
+      ],
+      "castTime": 40,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "debuffs": [
+        {
+          "type": "earth",
+          "value": 100
+        }
+      ],
+      "framesList": [
+        70,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": 509015,
+      "names": {
+        "en": "Toxic Whip",
+        "tw": "強毒鞭",
+        "kr": "맹독성 채찍 조이기",
+        "fr": "Fouet hyper venimeux",
+        "de": "Giftpeitsche",
+        "es": "Pongámonos serios"
+      },
+      "base": 1600,
+      "hitDamage": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        16,
+        24
+      ],
+      "castTime": 20,
+      "offset": 14,
+      "framesList": [
+        38,
+        15,
+        14,
+        24,
+        3,
+        13,
+        13,
+        44
+      ]
+    },
+    {
+      "id": 100019207,
+      "names": {
+        "en": "Malboro Bite",
+        "tw": "毛爾波爾咬",
+        "kr": "몰볼 바이트",
+        "fr": "Morsure de morbol",
+        "de": "Morbol-Biss",
+        "es": "Mordisco de molbol"
+      },
+      "base": 2600,
+      "hitDamage": [
+        100
+      ],
+      "dualable": false,
+      "offset": 8,
+      "framesList": [
+        156
+      ]
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 3,
+      "abilities": [
+        229412,
+        229413,
+        229414,
+        229418,
+        229419,
+        229420,
+        229425,
+        229426,
+        229427,
+        229428,
+        509010,
+        509015
+      ]
+    }
+  ]
+},
+{
+  "id": 248,
+  "names": {
+    "en": "Nagi",
+    "tw": "那岐",
+    "kr": "나기"
+  },
+  "abilities": [
+    {
+      "id": 229392,
+      "names": {
+        "en": "Water Projection",
+        "tw": "水影",
+        "kr": "수영",
+        "fr": "Projection aquatique",
+        "de": "Wasserprojektion",
+        "es": "Proyección acuosa"
+      },
+      "damage": "hybrid",
+      "base": 750,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "elements": [
+        "water"
+      ],
+      "offset": 14,
+      "framesList": [
+        190
+      ]
+    },
+    {
+      "id": 229393,
+      "names": {
+        "en": "Ice Splinters",
+        "tw": "冰粒",
+        "kr": "빙립",
+        "fr": "Échardes de glace",
+        "de": "Eissplitter",
+        "es": "Partículas de hielo"
+      },
+      "damage": "hybrid",
+      "base": 750,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "elements": [
+        "ice"
+      ],
+      "offset": 14,
+      "framesList": [
+        240
+      ]
+    },
+    {
+      "id": 229394,
+      "names": {
+        "en": "Yin-Yang Bind",
+        "tw": "陰陽影縫",
+        "kr": "음양의 그림자 묶기",
+        "fr": "Lien du Yin et Yang",
+        "de": "Ying-Yang Stickerei",
+        "es": "Amarre yin-yang"
+      },
+      "damage": "hybrid",
+      "base": 500,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 20,
+      "offset": 14,
+      "framesList": [
+        50
+      ]
+    },
+    {
+      "id": 229398,
+      "names": {
+        "en": "Poison Mist",
+        "tw": "毒霧",
+        "kr": "독안개",
+        "fr": "Brume empoisonnée",
+        "de": "Giftnebel",
+        "es": "Niebla venenosa"
+      },
+      "damage": "hybrid",
+      "base": 550,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        180
+      ]
+    },
+    {
+      "id": 229399,
+      "names": {
+        "en": "Brilliance",
+        "tw": "炫目",
+        "kr": "현요",
+        "fr": "Illumination",
+        "de": "Brillianz",
+        "es": "Resplandor"
+      },
+      "damage": "hybrid",
+      "base": 1650,
+      "hitDamage": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        16
+      ],
+      "castTime": 40,
+      "elements": [
+        "light"
+      ],
+      "offset": 14,
+      "debuffs": [
+        {
+          "type": "light",
+          "value": 100
+        }
+      ],
+      "framesList": [
+        70,
+        7,
+        5,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "id": 229400,
+      "names": {
+        "en": "Dark Spirits",
+        "tw": "幽暗",
+        "kr": "유암",
+        "fr": "Esprits obscurs",
+        "de": "Dunkle Geister",
+        "es": "Ánimos oscuros"
+      },
+      "damage": "hybrid",
+      "base": 1650,
+      "hitDamage": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        16
+      ],
+      "castTime": 40,
+      "elements": [
+        "dark"
+      ],
+      "offset": 14,
+      "debuffs": [
+        {
+          "type": "dark",
+          "value": 100
+        }
+      ],
+      "framesList": [
+        70,
+        7,
+        5,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "id": 229401,
+      "names": {
+        "en": "Dying Flora",
+        "tw": "瀕死之花",
+        "kr": "무성화",
+        "fr": "Fleur mourante",
+        "de": "Sterbende Pflanzen",
+        "es": "Flora moribunda"
+      },
+      "damage": "hybrid",
+      "base": 1100,
+      "hitDamage": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "debuffs": [
+        {
+          "type": "ice",
+          "value": 60
+        },
+        {
+          "type": "wind",
+          "value": 60
+        }
+      ],
+      "framesList": [
+        80,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": 229405,
+      "names": {
+        "en": "Projection - Dance of Darkness",
+        "tw": "投影·暗亂舞",
+        "kr": "투영·암난무",
+        "fr": "Projection - Danse des ténèbres",
+        "de": "Projektion - Tanz der Dunkelheit",
+        "es": "Proyección - Danza oscura"
+      },
+      "damage": "hybrid",
+      "base": 1750,
+      "hitDamage": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "castTime": 40,
+      "elements": [
+        "dark"
+      ],
+      "offset": 14,
+      "framesList": [
+        42,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": 509001,
+      "names": {
+        "en": "Projection - Dance of Destruction",
+        "tw": "投影·滅卻亂舞",
+        "kr": "투영·멸각난무",
+        "fr": "Projection - Danse de la destruction",
+        "de": "Projektion - Tanz der Zerstörung",
+        "es": "Proyección - Danza destructiva"
+      },
+      "damage": "hybrid",
+      "base": 2800,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "elements": [
+        "dark"
+      ],
+      "offset": 14,
+      "framesList": [
+        60
+      ]
+    },
+    {
+      "id": 100019107,
+      "names": {
+        "en": "Illusory Possession - Fox Fire",
+        "tw": "幻想憑依·狐火",
+        "kr": "환상빙의·여우불",
+        "fr": "Possession illusoire - Renard de feu",
+        "de": "Illusorische Besessenheit - Fuchslichter",
+        "es": "Posesión ilusoria - Fuego de zorro"
+      },
+      "damage": "hybrid",
+      "base": 3000,
+      "hitDamage": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        45
+      ],
+      "dualable": false,
+      "offset": 8,
+      "framesList": [
+        86,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        53,
+        143
+      ]
+    }
+  ]
+},
+{
+  "id": 247,
+  "names": {
+    "en": "Zolulu & Delulu",
+    "tw": "佐魯魯&德魯魯",
+    "kr": "조루루&데루루",
+    "es": "Zolulu y Delulu"
+  },
+  "abilities": [
+    {
+      "id": 229373,
+      "names": {
+        "en": "Disarm Target",
+        "tw": "解除武裝",
+        "kr": "무장 타겟",
+        "fr": "Désarmement - Arme",
+        "de": "Ziel entwaffnen",
+        "es": "Desarme"
+      },
+      "base": 200,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        87
+      ]
+    },
+    {
+      "id": 229374,
+      "names": {
+        "en": "Deshield Target",
+        "tw": "解除護盾",
+        "kr": "보호구 타겟",
+        "fr": "Désarmement - Bouclier",
+        "de": "Ziel abrüsten",
+        "es": "Desamparo"
+      },
+      "base": 200,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        87
+      ]
+    },
+    {
+      "id": 20210,
+      "names": {
+        "en": "Blizzaga",
+        "tw": "大暴雪",
+        "kr": "블리자가",
+        "fr": "Glace X",
+        "de": "Eisga",
+        "es": "Hielo++"
+      },
+      "damage": "magic",
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "framesList": [
+        150
+      ]
+    },
+    {
+      "id": 229378,
+      "names": {
+        "en": "Raging Bow",
+        "tw": "烈弓",
+        "kr": "분노의 화살",
+        "fr": "Arc enragé",
+        "de": "Tobender Bogen",
+        "es": "Arco furioso"
+      },
+      "base": 230,
+      "hitDamage": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        50,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": 229379,
+      "names": {
+        "en": "Straining Shot",
+        "tw": "滿弓射擊",
+        "kr": "전력 사격",
+        "fr": "Tir incapacitant",
+        "de": "Angespannter Schuss",
+        "es": "Tiro tensado"
+      },
+      "base": 340,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        80
+      ]
+    },
+    {
+      "id": 229382,
+      "names": {
+        "en": "Thunder Scheme",
+        "tw": "偽計的雷箭",
+        "kr": "속임수의 번개 화살",
+        "fr": "Plan électrique",
+        "de": "Donnerplan",
+        "es": "Plan relámpago"
+      },
+      "base": 280,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "elements": [
+        "lightning"
+      ],
+      "offset": 14,
+      "framesList": [
+        80
+      ]
+    },
+    {
+      "id": 100019306,
+      "names": {
+        "en": "Dirty Combination",
+        "tw": "骯髒連擊",
+        "kr": "더러운 협동 플레이",
+        "fr": "Combinaison fourbe",
+        "de": "Schmutzige Kombo",
+        "es": "Combinación turbia"
+      },
+      "base": 900,
+      "hitDamage": [
+        8,
+        8,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        29
+      ],
+      "dualable": false,
+      "offset": 8,
+      "framesList": [
+        75,
+        6,
+        5,
+        5,
+        5,
+        5,
+        7,
+        10,
+        7,
+        8,
+        9,
+        10,
+        11,
+        21
+      ]
+    }
+  ]
+},
+{
+  "id": 246,
+  "names": {
+    "en": "Galas",
+    "tw": "伽拉斯",
+    "kr": "갈라스"
+  },
+  "abilities": [
+    {
+      "id": 229351,
+      "names": {
+        "en": "Slash Down",
+        "tw": "落下斬擊",
+        "kr": "내려치기",
+        "fr": "Coup bas",
+        "de": "Fallschnitt",
+        "es": "Despedazar"
+      },
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "offset": 8,
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "id": 229352,
+      "names": {
+        "en": "Muscle Press",
+        "tw": "肌肉強壓",
+        "kr": "근육 압박",
+        "fr": "Pression musculaire",
+        "de": "Muskelpresse",
+        "es": "Presión muscular"
+      },
+      "base": 220,
+      "hitDamage": [
+        100
+      ],
+      "offset": 8,
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "id": 229353,
+      "names": {
+        "en": "Massive Cut",
+        "tw": "大切斷",
+        "kr": "대절단",
+        "fr": "Super coup",
+        "de": "Superschnitt",
+        "es": "Supercorte"
+      },
+      "base": 150,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "framesList": [
+        42
+      ]
+    },
+    {
+      "id": 229355,
+      "names": {
+        "en": "Power Rush",
+        "tw": "力量衝擊",
+        "kr": "힘의 돌진",
+        "fr": "Ruée de puissance",
+        "de": "Machtrausch",
+        "es": "Riada de poder"
+      },
+      "base": 260,
+      "hitDamage": [
+        10,
+        10,
+        10,
+        70
+      ],
+      "castTime": 29,
+      "offset": 14,
+      "framesList": [
+        31,
+        11,
+        12,
+        53
+      ]
+    },
+    {
+      "id": 229356,
+      "names": {
+        "en": "Hell's Fissure",
+        "tw": "地獄裂縫",
+        "kr": "지옥의 균열",
+        "fr": "Fissure infernale",
+        "de": "Höllenriss",
+        "es": "Grieta infernal"
+      },
+      "base": 200,
+      "hitDamage": [
+        100
+      ],
+      "elements": [
+        "earth"
+      ],
+      "offset": 8,
+      "framesList": [
+        107
+      ]
+    },
+    {
+      "id": 229357,
+      "names": {
+        "en": "Jab",
+        "tw": "根基",
+        "kr": "거센 찌르기",
+        "fr": "Prescription",
+        "de": "Kinnhaken",
+        "es": "Prescripción"
+      },
+      "base": 270,
+      "hitDamage": [
+        100
+      ],
+      "offset": 8,
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "id": 229360,
+      "names": {
+        "en": "Bloody Chopper",
+        "tw": "嗜血撕裂者",
+        "kr": "피의 흉검",
+        "fr": "Couperet sanglant",
+        "de": "Bluthacker",
+        "es": "Tajo sangriento"
+      },
+      "base": 120,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 29,
+      "offset": 14,
+      "framesList": [
+        140,
+        0
+      ]
+    },
+    {
+      "id": 229361,
+      "names": {
+        "en": "Ground Shake",
+        "tw": "大地震擊",
+        "kr": "대지 흔들기",
+        "fr": "Secousse violente",
+        "de": "Bodentremor",
+        "es": "Temblor de tierra"
+      },
+      "base": 250,
+      "hitDamage": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "castTime": 40,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "framesList": [
+        60,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "id": 100019405,
+      "names": {
+        "en": "Sparking Destroyer",
+        "tw": "破壞火花",
+        "kr": "섬광의 파괴자",
+        "fr": "Destructeur électrique",
+        "de": "Funkenschlagender Zerstörer",
+        "es": "Destructor chispeante"
+      },
+      "base": 800,
+      "hitDamage": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        52
+      ],
+      "dualable": false,
+      "offset": 8,
+      "framesList": [
+        139,
+        6,
+        12,
+        3,
+        6,
+        6,
+        8,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  ]
+}
 ];
