@@ -471,6 +471,29 @@
         ]
       },
       {
+        "id": 100019105,
+        "names": {
+          "en": "Nagi",
+          "tw": "那岐",
+          "kr": "나기"
+        },
+        "abilities": [
+          {
+            "id": 229405,
+            "names": {
+              "en": "Projection - Dance of Darkness",
+              "tw": "投影·暗亂舞",
+              "kr": "투영·암난무",
+              "fr": "Projection - Danse des ténèbres",
+              "de": "Projektion - Tanz der Dunkelheit",
+              "es": "Proyección - Danza oscura"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100019905,
         "names": {
           "en": "Karlette",
@@ -2259,7 +2282,7 @@
             "names": {
               "en": "Absolute Mirror of Equity + 1",
               "tw": "極·明鏡 + 1",
-              "kr": "극·명경 + 1",
+              "kr": "극·잔잔한 거울 + 1",
               "fr": "Sérénité absolue + 1",
               "de": "Vollkommene Kata + 1",
               "es": "Tranquilidad total + 1"
@@ -2272,10 +2295,46 @@
             "names": {
               "en": "Obliterating Mirror of Equity",
               "tw": "絕·明鏡",
-              "kr": "절·명경",
+              "kr": "절·잔잔한 거울",
               "fr": "Sérénité primordiale",
               "de": "Vernichtende Kata",
               "es": "Tranquilidad fulminante"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100019205,
+        "names": {
+          "en": "Yego",
+          "tw": "伊戈",
+          "kr": "이고"
+        },
+        "abilities": [
+          {
+            "id": 229420,
+            "names": {
+              "en": "Ground Whip",
+              "tw": "大地之鞭",
+              "kr": "대지의 채찍",
+              "fr": "Fouet tellurique",
+              "de": "Bodenpeitsche",
+              "es": "Látigo terrestre"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229426,
+            "names": {
+              "en": "Brutal Whip",
+              "tw": "殘暴鞭",
+              "kr": "무자비한 채찍",
+              "fr": "Fouet brutal",
+              "de": "Brutale Peitsche",
+              "es": "Látigo brutal"
             },
             "offset": 16,
             "castTime": 40
@@ -3463,6 +3522,42 @@
               "es": "Conflagración ardiente"
             },
             "offset": 8
+          }
+        ]
+      },
+      {
+        "id": 100019105,
+        "names": {
+          "en": "Nagi",
+          "tw": "那岐",
+          "kr": "나기"
+        },
+        "abilities": [
+          {
+            "id": 229399,
+            "names": {
+              "en": "Brilliance",
+              "tw": "炫目",
+              "kr": "현요",
+              "fr": "Illumination",
+              "de": "Brillianz",
+              "es": "Resplandor"
+            },
+            "offset": 16,
+            "castTime": 40
+          },
+          {
+            "id": 229400,
+            "names": {
+              "en": "Dark Spirits",
+              "tw": "幽暗",
+              "kr": "유암",
+              "fr": "Esprits obscurs",
+              "de": "Dunkle Geister",
+              "es": "Ánimos oscuros"
+            },
+            "offset": 16,
+            "castTime": 40
           }
         ]
       },
@@ -7067,6 +7162,61 @@
     ]
   },
   {
+    "family": "50-10-10-10-10",
+    "units": [
+      {
+        "id": 100019304,
+        "names": {
+          "en": "Zolulu & Delulu",
+          "tw": "佐魯魯&德魯魯",
+          "kr": "조루루&데루루",
+          "es": "Zolulu y Delulu"
+        },
+        "abilities": [
+          {
+            "id": 229378,
+            "names": {
+              "en": "Raging Bow",
+              "tw": "烈弓",
+              "kr": "분노의 화살",
+              "fr": "Arc enragé",
+              "de": "Tobender Bogen",
+              "es": "Arco furioso"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 204001505,
+        "names": {
+          "en": "Pure Summoner Rydia",
+          "tw": "無瑕召喚士莉迪亞",
+          "kr": "순수의 소환사 리디아",
+          "fr": "Rydia, pure invocatrice",
+          "de": "Reine Beschwörerin Rydia",
+          "es": "Rydia invocadora pura"
+        },
+        "abilities": [
+          {
+            "id": 223400,
+            "names": {
+              "en": "Eidolon Chocobo Kick",
+              "tw": "幻獸陸行鳥的踢腿",
+              "kr": "환수 초코보의 발차기",
+              "fr": "Éon : Coup de chocobo",
+              "de": "Beschwörbarer Chocobo: Tritt",
+              "es": "Eidolón: patada chocobo"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "190-10-10-10-10",
     "units": [
       {
@@ -8648,6 +8798,29 @@
   {
     "family": "80-10-10-10-10-10-10-10-10-10-10-10-10-10-10-10",
     "units": [
+      {
+        "id": 100019105,
+        "names": {
+          "en": "Nagi",
+          "tw": "那岐",
+          "kr": "나기"
+        },
+        "abilities": [
+          {
+            "id": 229401,
+            "names": {
+              "en": "Dying Flora",
+              "tw": "瀕死之花",
+              "kr": "무성화",
+              "fr": "Fleur mourante",
+              "de": "Sterbende Pflanzen",
+              "es": "Flora moribunda"
+            },
+            "offset": 16,
+            "castTime": 40
+          }
+        ]
+      },
       {
         "id": 310000105,
         "names": {

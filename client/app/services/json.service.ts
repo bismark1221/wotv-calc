@@ -542,12 +542,12 @@ export class JsonService {
   private updateOffset(unitId, id, ability) {
     if (this.ffbeChainUnits[unitId].abilities[id].castTime) {
       if (this.ffbeChainUnits[unitId].abilities[id].castTime === 0) {
-        this.ffbeChainUnits[unitId].abilities[id].offset = 8;
+        this.ffbeChainUnits[unitId].abilities[id].offset = 14;
       } else {
-        this.ffbeChainUnits[unitId].abilities[id].offset = 16;
+        this.ffbeChainUnits[unitId].abilities[id].offset = 14;
       }
     } else {
-      this.ffbeChainUnits[unitId].abilities[id].offset = 8;
+      this.ffbeChainUnits[unitId].abilities[id].offset = 14;
     }
   }
 
@@ -840,7 +840,7 @@ export class JsonService {
           }
 
           if (this.ffbeChainUnits[i].abilities[j].castTime === 0) {
-            delete this.ffbeChainUnits[i].abilities[j].castTime;
+            this.ffbeChainUnits[i].abilities[j].castTime = 10;
           }
         }
       }

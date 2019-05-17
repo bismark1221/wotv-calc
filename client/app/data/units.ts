@@ -897,7 +897,7 @@ export const UNITS: any[] = [
         "framesList": [
           110, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 509314,
@@ -945,7 +945,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 509316,
@@ -968,7 +968,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 310000107,
@@ -1135,7 +1135,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 509324,
@@ -1155,7 +1155,7 @@ export const UNITS: any[] = [
         "framesList": [
           53
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401001207,
@@ -1920,7 +1920,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911631,
@@ -1968,7 +1968,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 302001407,
@@ -2564,7 +2564,7 @@ export const UNITS: any[] = [
         "framesList": [
           220
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100008207,
@@ -4273,7 +4273,7 @@ export const UNITS: any[] = [
         "framesList": [
           47
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507641,
@@ -4296,7 +4296,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100008007,
@@ -4571,7 +4571,7 @@ export const UNITS: any[] = [
         "framesList": [
           52
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507590,
@@ -5444,7 +5444,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401001107,
@@ -5653,7 +5653,7 @@ export const UNITS: any[] = [
         "framesList": [
           30, 20, 20, 20, 20, 20, 20, 20, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20390,
@@ -5683,7 +5683,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20400,
@@ -5715,7 +5715,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 254000907,
@@ -6504,7 +6504,7 @@ export const UNITS: any[] = [
         "framesList": [
           62, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         id: 910526,
@@ -6627,7 +6627,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 20, 20, 20, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401002007,
@@ -6722,7 +6722,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         id: 2,
@@ -7118,7 +7118,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        "offset": 14,
+        "offset": 14
       }
     ]
   },
@@ -7285,7 +7285,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227163,
@@ -7314,7 +7314,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227161,
@@ -7343,7 +7343,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227164,
@@ -7367,7 +7367,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100009107,
@@ -7503,7 +7503,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911398,
@@ -7539,7 +7539,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 91014,
@@ -7565,7 +7565,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401001407,
@@ -7770,7 +7770,7 @@ export const UNITS: any[] = [
         "framesList": [
           75, 105
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507683,
@@ -7796,7 +7796,7 @@ export const UNITS: any[] = [
         "framesList": [
           125, 40, 55
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507684,
@@ -7822,7 +7822,7 @@ export const UNITS: any[] = [
         "framesList": [
           40, 55, 105, 40
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507685,
@@ -7848,7 +7848,7 @@ export const UNITS: any[] = [
         "framesList": [
           25, 155, 40, 55, 105
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507681,
@@ -7868,7 +7868,7 @@ export const UNITS: any[] = [
         "framesList": [
           72, 5, 5, 5, 5, 5
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 215000107,
@@ -8009,7 +8009,7 @@ export const UNITS: any[] = [
         "framesList": [
           28, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507980,
@@ -8035,7 +8035,7 @@ export const UNITS: any[] = [
         "framesList": [
           172
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507981,
@@ -8272,7 +8272,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         id: 3,
@@ -8716,7 +8716,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20360,
@@ -8748,7 +8748,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401002607,
@@ -8851,7 +8851,7 @@ export const UNITS: any[] = [
         "framesList": [
           170
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20390,
@@ -8881,7 +8881,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20300,
@@ -8907,7 +8907,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20360,
@@ -8939,7 +8939,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
-        "offset": 14,
+        "offset": 14
       }
     ],
     "multipleBlack": 3
@@ -9829,7 +9829,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508001,
@@ -9850,7 +9850,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227561,
@@ -9871,7 +9871,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100011707,
@@ -10173,7 +10173,7 @@ export const UNITS: any[] = [
         "framesList": [
           37
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227502,
@@ -10194,7 +10194,7 @@ export const UNITS: any[] = [
         "framesList": [
           122
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 212000507,
@@ -10319,7 +10319,7 @@ export const UNITS: any[] = [
           es: "Rebeldía veloz"
         },
         framesList: [167],
-        offset: 160,
+        offset: 140,
         base: 730,
         ignore: 25,
         damage: "magic",
@@ -11158,7 +11158,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508074,
@@ -11178,7 +11178,7 @@ export const UNITS: any[] = [
         "framesList": [
           72
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508075,
@@ -11199,7 +11199,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508079,
@@ -11219,7 +11219,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 8, 8, 8, 8, 8, 8, 8, 8, 8, 30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 215000707,
@@ -11426,7 +11426,7 @@ export const UNITS: any[] = [
         "framesList": [
           124
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 209001107,
@@ -12272,7 +12272,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227611,
@@ -12297,7 +12297,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100012607,
@@ -12623,7 +12623,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508020,
@@ -12655,7 +12655,7 @@ export const UNITS: any[] = [
         "framesList": [
           240, 20, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508020111,
@@ -12687,7 +12687,7 @@ export const UNITS: any[] = [
         "framesList": [
           240, 20, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20760,
@@ -12713,7 +12713,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 210000407,
@@ -14272,7 +14272,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228053,
@@ -14292,7 +14292,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228051,
@@ -14312,7 +14312,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508320,
@@ -14332,7 +14332,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         id: 207001007,
@@ -15530,7 +15530,7 @@ export const UNITS: any[] = [
         "framesList": [
           0
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227622,
@@ -15551,7 +15551,7 @@ export const UNITS: any[] = [
         "framesList": [
           0
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 912321,
@@ -21699,7 +21699,7 @@ export const UNITS: any[] = [
         "framesList": [
           15, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227384,
@@ -21724,7 +21724,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507891,
@@ -21751,7 +21751,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 215001006,
@@ -21804,7 +21804,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227678,
@@ -21824,7 +21824,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227672,
@@ -21848,7 +21848,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100016706,
@@ -21901,7 +21901,7 @@ export const UNITS: any[] = [
         "framesList": [
           90
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227653,
@@ -21926,7 +21926,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227650,
@@ -21948,7 +21948,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508095,
@@ -21970,7 +21970,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100016907,
@@ -22068,7 +22068,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911444,
@@ -22089,7 +22089,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911446,
@@ -22116,7 +22116,7 @@ export const UNITS: any[] = [
         "framesList": [
           290
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401000307,
@@ -22241,7 +22241,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911494,
@@ -22267,7 +22267,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401005907,
@@ -22329,7 +22329,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911518,
@@ -22350,7 +22350,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911519,
@@ -22370,7 +22370,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911520,
@@ -22414,7 +22414,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401006007,
@@ -22494,7 +22494,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227801,
@@ -22514,7 +22514,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227804,
@@ -22559,7 +22559,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227807,
@@ -22685,7 +22685,7 @@ export const UNITS: any[] = [
         "framesList": [
           42
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227783,
@@ -22705,7 +22705,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227786,
@@ -22744,7 +22744,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227789,
@@ -22770,7 +22770,7 @@ export const UNITS: any[] = [
         "framesList": [
           30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227792,
@@ -22878,7 +22878,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227764,
@@ -22900,7 +22900,7 @@ export const UNITS: any[] = [
         "framesList": [
           72, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227765,
@@ -22922,7 +22922,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 15, 15, 15, 15
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227769,
@@ -22953,7 +22953,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 15, 15, 15, 15
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227770,
@@ -22984,7 +22984,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 15, 15, 15, 15
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227771,
@@ -23009,7 +23009,7 @@ export const UNITS: any[] = [
         "framesList": [
           140, 30, 30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227774,
@@ -23052,7 +23052,7 @@ export const UNITS: any[] = [
         "framesList": [
           7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 330000207,
@@ -23118,7 +23118,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227734,
@@ -23138,7 +23138,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227735,
@@ -23177,7 +23177,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227738,
@@ -23197,7 +23197,7 @@ export const UNITS: any[] = [
         "framesList": [
           12, 8
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227743,
@@ -23217,7 +23217,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227747,
@@ -23248,7 +23248,7 @@ export const UNITS: any[] = [
         "framesList": [
           2, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227750,
@@ -23268,7 +23268,7 @@ export const UNITS: any[] = [
         "framesList": [
           38
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227751,
@@ -23291,7 +23291,7 @@ export const UNITS: any[] = [
         "framesList": [
           90, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227752,
@@ -23321,7 +23321,7 @@ export const UNITS: any[] = [
         "framesList": [
           26, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 330000107,
@@ -23389,7 +23389,7 @@ export const UNITS: any[] = [
         "framesList": [
           32, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228312,
@@ -23409,7 +23409,7 @@ export const UNITS: any[] = [
         "framesList": [
           4, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20220,
@@ -23435,7 +23435,7 @@ export const UNITS: any[] = [
         "framesList": [
           70
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228311,
@@ -23455,7 +23455,7 @@ export const UNITS: any[] = [
         "framesList": [
           4, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228310,
@@ -23488,7 +23488,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508511,
@@ -23588,7 +23588,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228332,
@@ -23655,7 +23655,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228333,
@@ -23676,7 +23676,7 @@ export const UNITS: any[] = [
         "framesList": [
           22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20300,
@@ -23702,7 +23702,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508525,
@@ -23910,7 +23910,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911582,
@@ -23931,7 +23931,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911583,
@@ -23958,7 +23958,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911586,
@@ -23979,7 +23979,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 20, 20, 20, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911589,
@@ -24009,7 +24009,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401004807,
@@ -24110,7 +24110,7 @@ export const UNITS: any[] = [
         "framesList": [
           0
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911612,
@@ -24149,7 +24149,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911616,
@@ -24169,7 +24169,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911618,
@@ -24189,7 +24189,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911620,
@@ -24209,7 +24209,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401004707,
@@ -24278,7 +24278,7 @@ export const UNITS: any[] = [
           42,
           50
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 216080,
@@ -24351,7 +24351,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 507991,
@@ -24514,7 +24514,7 @@ export const UNITS: any[] = [
         "framesList": [
           150
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 215030,
@@ -24581,7 +24581,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100009807,
@@ -24640,7 +24640,7 @@ export const UNITS: any[] = [
         "framesList": [
           34
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911643,
@@ -24660,7 +24660,7 @@ export const UNITS: any[] = [
         "framesList": [
           12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911645,
@@ -24681,7 +24681,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911651,
@@ -24702,7 +24702,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911654,
@@ -24723,7 +24723,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911657,
@@ -24753,7 +24753,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911665,
@@ -24778,7 +24778,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911660,
@@ -24863,7 +24863,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228417,
@@ -24883,7 +24883,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20340,
@@ -24909,7 +24909,7 @@ export const UNITS: any[] = [
         "framesList": [
           170
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228402,
@@ -24929,7 +24929,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228404,
@@ -24949,7 +24949,7 @@ export const UNITS: any[] = [
         "framesList": [
           92
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508574,
@@ -25044,7 +25044,7 @@ export const UNITS: any[] = [
         "framesList": [
           65
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228425,
@@ -25064,7 +25064,7 @@ export const UNITS: any[] = [
         "framesList": [
           85
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228421,
@@ -25084,7 +25084,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228420,
@@ -25105,7 +25105,7 @@ export const UNITS: any[] = [
         "framesList": [
           100
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508581,
@@ -25126,7 +25126,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100018006,
@@ -25187,7 +25187,7 @@ export const UNITS: any[] = [
         "framesList": [
           40, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20300,
@@ -25213,7 +25213,7 @@ export const UNITS: any[] = [
         "framesList": [
           240
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20320,
@@ -25239,7 +25239,7 @@ export const UNITS: any[] = [
         "framesList": [
           190
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 20380,
@@ -25271,7 +25271,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228430,
@@ -25296,7 +25296,7 @@ export const UNITS: any[] = [
         "framesList": [
           133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       }
     ],
     "multipleBlack": 2,
@@ -25342,7 +25342,7 @@ export const UNITS: any[] = [
         "framesList": [
           40
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911679,
@@ -25364,7 +25364,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911681,
@@ -25386,7 +25386,7 @@ export const UNITS: any[] = [
         "framesList": [
           30, 25
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911684,
@@ -25429,7 +25429,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401006307,
@@ -25499,7 +25499,7 @@ export const UNITS: any[] = [
         "framesList": [
           82
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911747,
@@ -25524,7 +25524,7 @@ export const UNITS: any[] = [
         "framesList": [
           160, 22, 21, 22, 23, 23, 22, 23
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911736,
@@ -25549,7 +25549,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 20, 20, 20, 20
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911741,
@@ -25620,7 +25620,7 @@ export const UNITS: any[] = [
         "framesList": [
           120
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401006207,
@@ -25788,7 +25788,7 @@ export const UNITS: any[] = [
         "framesList": [
           10, 8, 9, 9
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911709,
@@ -25832,7 +25832,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911711,
@@ -25856,7 +25856,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911731,
@@ -25877,7 +25877,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911717,
@@ -25931,7 +25931,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 911725,
@@ -25955,7 +25955,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 401006107,
@@ -26046,7 +26046,7 @@ export const UNITS: any[] = [
         "framesList": [
           80
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230844,
@@ -26066,7 +26066,7 @@ export const UNITS: any[] = [
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230845,
@@ -26086,7 +26086,7 @@ export const UNITS: any[] = [
         "framesList": [
           42
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230849,
@@ -26105,7 +26105,7 @@ export const UNITS: any[] = [
         "framesList": [
           57
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230850,
@@ -26125,7 +26125,7 @@ export const UNITS: any[] = [
         "framesList": [
           84, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230851,
@@ -26146,7 +26146,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230857,
@@ -26165,7 +26165,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 6, 6, 6, 6, 6, 6, 6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230858,
@@ -26185,7 +26185,7 @@ export const UNITS: any[] = [
         "framesList": [
           50
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 335000107,
@@ -26249,7 +26249,7 @@ export const UNITS: any[] = [
         "framesList": [
           6
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230863,
@@ -26269,7 +26269,7 @@ export const UNITS: any[] = [
         "framesList": [
           19, 26, 30, 30, 30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230864,
@@ -26309,7 +26309,7 @@ export const UNITS: any[] = [
         "framesList": [
           17
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230869,
@@ -26330,7 +26330,7 @@ export const UNITS: any[] = [
         "framesList": [
           19
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230870,
@@ -26351,7 +26351,7 @@ export const UNITS: any[] = [
         "framesList": [
           84, 8, 8, 8, 8, 8, 8, 8
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230871,
@@ -26372,7 +26372,7 @@ export const UNITS: any[] = [
         "framesList": [
           19
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230872,
@@ -26393,7 +26393,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 509744,
@@ -26413,7 +26413,7 @@ export const UNITS: any[] = [
         "framesList": [
           19, 26, 30, 30, 30
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 509745,
@@ -26434,7 +26434,7 @@ export const UNITS: any[] = [
         "framesList": [
           19
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 230879,
@@ -26454,7 +26454,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 335000207,
@@ -26526,7 +26526,7 @@ export const UNITS: any[] = [
         "framesList": [
           125, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227875,
@@ -26546,7 +26546,7 @@ export const UNITS: any[] = [
         "framesList": [
           90, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 207000206,
@@ -26605,7 +26605,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 15, 15, 15, 15
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227850,
@@ -26628,7 +26628,7 @@ export const UNITS: any[] = [
         "framesList": [
           110, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227853,
@@ -26651,7 +26651,7 @@ export const UNITS: any[] = [
         "framesList": [
           52, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 227852,
@@ -26710,7 +26710,7 @@ export const UNITS: any[] = [
         "framesList": [
           72
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 207000807,
@@ -26926,7 +26926,7 @@ export const UNITS: any[] = [
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 508161,
@@ -27047,7 +27047,7 @@ export const UNITS: any[] = [
         "framesList": [
           110
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228653,
@@ -27125,7 +27125,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 228651,
@@ -27154,7 +27154,7 @@ export const UNITS: any[] = [
         "framesList": [
           42, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
         ],
-        "offset": 14,
+        "offset": 14
       },
       {
         "id": 100018506,
