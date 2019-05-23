@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { UnitService } from './unit.service'
 
 @Injectable()
 export class JsonService {
@@ -57,7 +58,7 @@ export class JsonService {
     8: "default"
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private unitService: UnitService) {}
 
   private getUnits() {
     return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/units.json').toPromise();
@@ -169,6 +170,7 @@ export class JsonService {
 
   private formatJsons() {
     Object.keys(this.units).forEach(unitId => {
+      // let unitId = "100000102";
       let id = this.addUnit(this.units[unitId]);
 
       if (id !== null && this.units[unitId].skills) {
@@ -243,7 +245,13 @@ export class JsonService {
 
       this.ffbeChainUnits[id] = {
         dataId: dataId,
-        names: {},
+        names: {},,
+        rarity: {
+          min: unit.rarity_min,
+          max: unit.rarity_max,
+          value: unit.rarity_max
+        },
+        dataStats: {},
         abilities: []
       };
 
@@ -256,6 +264,22 @@ export class JsonService {
       } else {
         this.ffbeChainUnits[id].names.en = null;
       }
+
+      Object.keys(unit.entries).forEach(entryId => {
+        let entry = unit.entries[entryId];
+        this.ffbeChainUnits[id].dataStats[entry.rarity] = {
+          atk: {
+            baseMin: entry.stats.ATK[0],
+            baseMax: entry.stats.ATK[1],
+            pot: entry.stats.ATK[2],
+          },
+          mag: {
+            baseMin: entry.stats.MAG[0],
+            baseMax: entry.stats.MAG[1],
+            pot: entry.stats.MAG[2],
+          }
+        };
+      })
 
       this.isCollapsed.push(true);
 

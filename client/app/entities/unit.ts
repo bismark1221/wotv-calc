@@ -21,21 +21,12 @@ export class Unit {
   multipleGreen: number = 1;
   maxChainCap: number = 4;
   level: number = 120;
-  rarity: number = 7;
-  stats: any = {
-    atk: {
-      base : 0,
-      total : 0,
-      maxPot: true,
-      potValue: 0
-    },
-    mag: {
-      base : 0,
-      total : 0,
-      maxPot: true,
-      potValue: 0
-    }
-  }
+  rarity: any = {
+    min: 5,
+    max: 7,
+    value: 7
+  };
+  stats: any = {};
   dataStats: any = {
     7: {
       atk: {

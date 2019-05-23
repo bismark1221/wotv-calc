@@ -430,7 +430,7 @@ export class DamageComponent implements OnInit {
     if (this.unit.stats[type].maxPot) {
       this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity][type].pot;
     } else {
-      this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity][type].pot;
+      this.unit.stats[type].potValue = 0;
     }
   }
 
