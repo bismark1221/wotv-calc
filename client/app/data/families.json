@@ -20,7 +20,7 @@
               "de": "Kata - Scharfsinn",
               "es": "Tranquilidad - Agudeza"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -33,7 +33,7 @@
               "de": "Kata - Chaos",
               "es": "Tranquilidad - Disturbio"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -59,7 +59,7 @@
               "de": "Kata - Scharfsinn",
               "es": "Tranquilidad - Agudeza"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -72,7 +72,7 @@
               "de": "Kata - Chaos",
               "es": "Tranquilidad - Disturbio"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -100,7 +100,7 @@
               "de": "Rote Karte",
               "es": "Carta roja"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -113,7 +113,7 @@
               "de": "Rote Karte + 1",
               "es": "Carta roja + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -126,7 +126,7 @@
               "de": "Rote Karte + 2",
               "es": "Carta roja + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -149,7 +149,7 @@
               "de": "Wütender Vogel + 1",
               "es": "Pájaro enrabietado + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -162,7 +162,7 @@
               "de": "Wütender Vogel + 2",
               "es": "Pájaro enrabietado + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -189,7 +189,7 @@
               "fr": "Révolution",
               "es": "Rayo revolucionario"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -213,7 +213,7 @@
               "de": "Ist heute dein Glückstag, Punk?",
               "es": "¿Te sientes afortunado, zascandil?"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -241,7 +241,7 @@
               "de": "Zerstörerischer Stoß",
               "es": "Impulso destructor"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -264,7 +264,7 @@
               "de": "Zerstörungsstoß + 1",
               "es": "Estoque demoledor + 1"
             },
-            "offset": 8
+            "offset": 14
           },
           {
             "id": 401001707,
@@ -276,7 +276,7 @@
               "de": "Zerstörungsstoß",
               "es": "Estoque demoledor"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -303,7 +303,7 @@
               "de": "Koronastrahl",
               "es": "Rayo áureo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -316,7 +316,7 @@
               "de": "Koronastrahl + 1",
               "es": "Rayo áureo + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -342,7 +342,20 @@
               "de": "Rauschender Sturm",
               "es": "Explosión tormentosa"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912414,
+            "names": {
+              "en": "Burst Storm + 1",
+              "tw": "爆裂風暴 + 1",
+              "kr": "버스트 스톰 + 1",
+              "fr": "Tempête explosive + 1",
+              "de": "Rauschender Sturm + 1",
+              "es": "Explosión tormentosa + 1"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -370,7 +383,7 @@
               "de": "Lauffeuer + 2",
               "es": "Bioametralladora + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -393,7 +406,7 @@
               "de": "Koronastrahl + 2",
               "es": "Rayo áureo + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -416,7 +429,7 @@
               "de": "Sturmblitz",
               "es": "Destello tempestuoso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -439,7 +452,7 @@
               "de": "Sturmschwertmagie",
               "es": "Esgrimago tempestuoso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -452,7 +465,7 @@
               "de": "Sturmschwertmagie + 1",
               "es": "Esgrimago tempestuoso + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -465,7 +478,7 @@
               "de": "Sturmschwertmagie + 2",
               "es": "Esgrimago tempestuoso + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -488,7 +501,7 @@
               "de": "Projektion - Tanz der Dunkelheit",
               "es": "Proyección - Danza oscura"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -511,7 +524,7 @@
               "de": "Gnadenlos",
               "es": "Inmisericordia"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -534,7 +547,33 @@
               "de": "Dreißig-Hiebe-Kombo",
               "es": "Triacontacombo rebanador"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 204001505,
+        "names": {
+          "en": "Pure Summoner Rydia",
+          "tw": "無瑕召喚士莉迪亞",
+          "kr": "순수의 소환사 리디아",
+          "fr": "Rydia, pure invocatrice",
+          "de": "Reine Beschwörerin Rydia",
+          "es": "Rydia invocadora pura"
+        },
+        "abilities": [
+          {
+            "id": 912415,
+            "names": {
+              "en": "Burst Storm + 2",
+              "tw": "爆裂風暴 + 2",
+              "kr": "버스트 스톰 + 2",
+              "fr": "Tempête explosive + 2",
+              "de": "Rauschender Sturm + 2",
+              "es": "Explosión tormentosa + 2"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -557,7 +596,7 @@
               "de": "Teuflische Winde",
               "es": "Alas hostiles"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -570,7 +609,7 @@
               "de": "Turbulenz",
               "es": "Turbulencia"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -593,7 +632,7 @@
               "de": "Sicherheitssystem",
               "es": "Sistema de seguridad"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -616,7 +655,7 @@
               "de": "Serpenté - Mitternachtskuss",
               "es": "Serpenté - Beso de medianoche"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -639,7 +678,7 @@
               "de": "Trommelfeuer des Blutmondes",
               "es": "Ráfaga de la luna de sangre"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -664,7 +703,7 @@
               "de": "Salut - Klingensturm",
               "es": "Saludo - Tormenta de espadas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -688,7 +727,7 @@
               "de": "Blitz - Endlose Bestrafung",
               "es": "Destello - Castigo infinito"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -711,7 +750,7 @@
               "de": "Mondscheinwalzer",
               "es": "Vals del claro de luna"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -736,7 +775,7 @@
               "de": "Ultimativer Raikiri + 1",
               "es": "Raikiri fulminante + 1"
             },
-            "offset": 8
+            "offset": 14
           },
           {
             "id": 401006807,
@@ -745,7 +784,7 @@
               "tw": "雷切",
               "kr": "라이키리"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -770,7 +809,7 @@
               "de": "Kaleidoschnitt",
               "es": "Caleidocorte"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -798,7 +837,7 @@
               "de": "Auto-Armbrust",
               "es": "Ballesta automática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -821,7 +860,7 @@
               "de": "Auto-Armbrust",
               "es": "Ballesta automática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -844,7 +883,7 @@
               "de": "Auto-Armbrust",
               "es": "Ballesta automática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -867,7 +906,7 @@
               "de": "Auto-Armbrust",
               "es": "Ballesta automática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -890,7 +929,7 @@
               "de": "Auto-Armbrust",
               "es": "Ballesta automática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -916,7 +955,8 @@
               "de": "Speer aufladen",
               "es": "Cargar lanza"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 503930,
@@ -928,7 +968,8 @@
               "de": "R050: Speer",
               "es": "R050: Lanza"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -953,7 +994,7 @@
               "de": "Macht sie zu Fischfutter!",
               "es": "Echadlo a los peces"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
@@ -966,7 +1007,7 @@
               "de": "Macht sie zu Fischfutter! + 1",
               "es": "Echadlo a los peces + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -997,7 +1038,7 @@
               "de": "Heiliger Blitz",
               "es": "Descarga sagrada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1020,7 +1061,7 @@
               "de": "Heiliger Blitz",
               "es": "Descarga sagrada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1039,7 +1080,7 @@
               "en": "TESLA",
               "kr": "테슬라"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1067,7 +1108,7 @@
               "de": "Lehrling des Nördlichen Himmelstils",
               "es": "Aprendiz del cielo norteño"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1090,7 +1131,7 @@
               "de": "Lehrling des Nördlichen Himmelstils",
               "es": "Aprendiz del cielo norteño"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1118,7 +1159,7 @@
               "de": "Schwerttanz",
               "es": "Danza macabra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1141,7 +1182,7 @@
               "de": "Schwerttanz",
               "es": "Danza macabra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1172,7 +1213,7 @@
               "de": "Magiegeschütz",
               "es": "Cañón mágico"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -1194,7 +1235,7 @@
               "de": "Giga-Eisstrahl",
               "es": "Gigarrayo Hielo"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -1216,7 +1257,7 @@
               "de": "Giga-Feuerstrahl",
               "es": "Gigarrayo Piro"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -1244,7 +1285,7 @@
               "de": "Störung",
               "es": "Desorden"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -1257,7 +1298,7 @@
               "de": "Störung + 1",
               "es": "Desorden + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -1270,7 +1311,7 @@
               "de": "Störung + 2",
               "es": "Desorden + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1293,7 +1334,7 @@
               "de": "Kugelhagel",
               "es": "Gatillo fácil"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1316,7 +1357,8 @@
               "de": "Zekken - Eiskalter Schauer + 1",
               "es": "Zekken - Tromba de granizo + 1"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -1338,7 +1380,7 @@
               "de": "Aurora-Sturm",
               "es": "Tormenta del alba"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1362,7 +1404,7 @@
               "de": "Aurora-Sturm",
               "es": "Tormenta del alba"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1390,7 +1432,7 @@
               "de": "Angriffsrollen",
               "es": "Ruleta de chutes"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -1412,7 +1454,7 @@
               "de": "Himmlische Stase",
               "es": "Estasis celestial"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -1439,7 +1481,7 @@
               "de": "Flinker Gezeitenstreich",
               "es": "Ataque mareomotriz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
@@ -1452,7 +1494,7 @@
               "de": "Flinker Gezeitenstreich + 1",
               "es": "Ataque mareomotriz + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
@@ -1465,7 +1507,7 @@
               "de": "Flinker Gezeitenstreich + 2",
               "es": "Ataque mareomotriz + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1491,7 +1533,7 @@
               "de": "Mogry-Sperrfeuer + 2",
               "es": "Ráfaga moguri + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1514,7 +1556,7 @@
               "de": "Donnerspeer",
               "es": "Lanza de rayo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1537,7 +1579,7 @@
               "de": "Aquatische Schöpfung",
               "es": "Creación acuática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1555,27 +1597,27 @@
           {
             "id": 228052,
             "names": {
-              "en": "Consuming Light",
-              "tw": "蝕光",
-              "kr": "빛의 잠식",
-              "fr": "Éclipse de lumière",
-              "de": "Lichtfinsternis",
-              "es": "Eclipse luminoso"
+              "en": "Consuming Light + 2",
+              "tw": "蝕光 + 2",
+              "kr": "빛의 잠식 + 2",
+              "fr": "Éclipse de lumière + 2",
+              "de": "Lichtfinsternis + 2",
+              "es": "Eclipse luminoso + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
             "id": 228053,
             "names": {
-              "en": "Descent into Darkness",
-              "tw": "墮暗",
-              "kr": "암흑 타락",
-              "fr": "Descente aux ténèbres",
-              "de": "Sturz in die Finsternis",
-              "es": "Descenso a la Oscuridad"
+              "en": "Descent into Darkness + 2",
+              "tw": "墮暗 + 2",
+              "kr": "암흑 타락 + 2",
+              "fr": "Descente aux ténèbres + 2",
+              "de": "Sturz in die Finsternis + 2",
+              "es": "Descenso a la Oscuridad + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1598,7 +1640,7 @@
               "de": "Rapidschlag",
               "es": "Golpe rápido"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
@@ -1611,7 +1653,7 @@
               "de": "Rapidschlag + 1",
               "es": "Golpe rápido + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
@@ -1624,7 +1666,7 @@
               "de": "Rapidschlag + 2",
               "es": "Golpe rápido + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1648,7 +1690,7 @@
               "de": "Jekkt-Hieb",
               "es": "Acero caliente"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1671,7 +1713,7 @@
               "de": "Rüstungsdurchstoß",
               "es": "Perforarmaduras"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1694,7 +1736,7 @@
               "de": "Zekken - Regen im Zwielicht + 1",
               "es": "Zekken - Lluvia del crepúsculo + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           },
           {
@@ -1707,7 +1749,7 @@
               "de": "Zekken - Plötzlicher Niederschlag + 1",
               "es": "Zekken - Aguacero inesperado + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1730,7 +1772,8 @@
               "de": "Leuchtender Blitzschlag",
               "es": "Rayo cegador"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -1755,7 +1798,7 @@
               "de": "Macht sie zu Fischfutter! + 2",
               "es": "Echadlo a los peces + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -1776,30 +1819,27 @@
           {
             "id": 224660,
             "names": {
-              "en": "Martial Arts - Heaven Shift + 1",
-              "tw": "格鬥術·操氣天沖 + 1",
-              "kr": "격투술·조기천충 + 1",
-              "fr": "Art martial - Chang. céleste + 1",
-              "de": "Kampfkunst - Himmlischer Stoß + 1",
-              "es": "Artes marciales - Cambio celeste + 1"
+              "en": "Martial Arts - Heaven Shift + 2",
+              "tw": "格鬥術·操氣天衝 + 2",
+              "kr": "격투술·조기천충 + 2",
+              "fr": "Art martial - Chang. céleste + 2",
+              "de": "Kampfkunst - Himmlischer Stoß + 2",
+              "es": "Artes marciales - Cambio celeste + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 8
           },
           {
             "id": 707607,
             "names": {
-              "en": "null + 1"
+              "en": "Martial Arts - Heaven Shift + 2",
+              "tw": "格鬥術·操氣天沖 + 2",
+              "kr": "격투술·조기천충 + 2",
+              "fr": "Art martial - Chang. céleste + 2",
+              "de": "Kampfkunst - Himmlischer Stoß + 2",
+              "es": "Artes marciales - Cambio celeste + 2"
             },
-            "offset": 16,
-            "castTime": 8
-          },
-          {
-            "id": 707608,
-            "names": {
-              "en": "null + 1"
-            },
-            "offset": 16,
+            "offset": 14,
             "castTime": 8
           }
         ]
@@ -1825,7 +1865,7 @@
               "de": "Dunkeldurchstoß",
               "es": "Tiniebla penetrante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 8
           },
           {
@@ -1838,7 +1878,7 @@
               "de": "Wasserdurchstoß",
               "es": "Agua penetrante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 8
           },
           {
@@ -1851,7 +1891,46 @@
               "de": "Luftdurchstoß",
               "es": "Viento penetrante"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 8
+          },
+          {
+            "id": 707568,
+            "names": {
+              "en": "Piercing Air + 1",
+              "tw": "刺骨寒風 + 1",
+              "kr": "피어싱 에어 + 1",
+              "fr": "Vent perçant + 1",
+              "de": "Luftdurchstoß + 1",
+              "es": "Viento penetrante + 1"
+            },
+            "offset": 14,
+            "castTime": 8
+          },
+          {
+            "id": 707570,
+            "names": {
+              "en": "Piercing Aqua + 1",
+              "tw": "刺骨冰水 + 1",
+              "kr": "피어싱 아쿠아 + 1",
+              "fr": "Eau perçante + 1",
+              "de": "Wasserdurchstoß + 1",
+              "es": "Agua penetrante + 1"
+            },
+            "offset": 14,
+            "castTime": 8
+          },
+          {
+            "id": 707572,
+            "names": {
+              "en": "Piercing Darkness + 1",
+              "tw": "刺骨黑暗 + 1",
+              "kr": "피어싱 스크로 + 1",
+              "fr": "Ténèbres perçantes + 1",
+              "de": "Dunkeldurchstoß + 1",
+              "es": "Tiniebla penetrante + 1"
+            },
+            "offset": 14,
             "castTime": 8
           }
         ]
@@ -1877,7 +1956,7 @@
               "de": "Offensive Heilkombo",
               "es": "Combo curativo-ofensivo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 39
           }
         ]
@@ -1902,8 +1981,88 @@
               "de": "Schockreflex + 1",
               "es": "Reflejo electrizante + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 54
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "8-5-5-5-5-5-5-5-7-7-9-9-9-9-9-9",
+    "units": [
+      {
+        "id": 100013805,
+        "names": {
+          "en": "Lila",
+          "tw": "利拉",
+          "kr": "리라"
+        },
+        "abilities": [
+          {
+            "id": 707608,
+            "names": {
+              "en": "Martial Arts - Heaven Shift + 2",
+              "tw": "格鬥術·操氣天沖 + 2",
+              "kr": "격투술·조기천충 + 2",
+              "fr": "Art martial - Chang. céleste + 2",
+              "de": "Kampfkunst - Himmlischer Stoß + 2",
+              "es": "Artes marciales - Cambio celeste + 2"
+            },
+            "offset": 14,
+            "castTime": 8
+          }
+        ]
+      },
+      {
+        "id": 204001605,
+        "names": {
+          "en": "Atoning Dragoon Kain",
+          "tw": "極致龍騎士凱因",
+          "kr": "궁극의 용기사 카인",
+          "fr": "Kaïn, dragonnier repenti",
+          "de": "Sühnender Dragoner Kain",
+          "es": "Kain, dragontino redentor"
+        },
+        "abilities": [
+          {
+            "id": 707569,
+            "names": {
+              "en": "Piercing Air + 2",
+              "tw": "刺骨寒風 + 2",
+              "kr": "피어싱 에어 + 2",
+              "fr": "Vent perçant + 2",
+              "de": "Luftdurchstoß + 2",
+              "es": "Viento penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 8
+          },
+          {
+            "id": 707571,
+            "names": {
+              "en": "Piercing Aqua + 2",
+              "tw": "刺骨冰水 + 2",
+              "kr": "피어싱 아쿠아 + 2",
+              "fr": "Eau perçante + 2",
+              "de": "Wasserdurchstoß + 2",
+              "es": "Agua penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 8
+          },
+          {
+            "id": 707573,
+            "names": {
+              "en": "Piercing Darkness + 2",
+              "tw": "刺骨黑暗 + 2",
+              "kr": "피어싱 스크로 + 2",
+              "fr": "Ténèbres perçantes + 2",
+              "de": "Dunkeldurchstoß + 2",
+              "es": "Tiniebla penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 8
           }
         ]
       }
@@ -1933,7 +2092,8 @@
               "de": "Zwiebelschlag",
               "es": "Tajo Cebolla"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -1952,7 +2112,7 @@
               "tw": "手裏劍",
               "kr": "수리검"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -1983,7 +2143,7 @@
               "de": "Lauffeuer+",
               "es": "Bioametralladora+"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2006,7 +2166,7 @@
               "de": "Maschinengewehr",
               "es": "Dyne"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2034,7 +2194,7 @@
               "de": "Schildkrötenwurf",
               "es": "Lanzamiento de tortuga"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2060,7 +2220,7 @@
               "de": "Morgenstern",
               "es": "Estrella del alba"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2086,7 +2246,7 @@
               "de": "Aquatische Implosion",
               "es": "Implosión acuática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2112,7 +2272,8 @@
               "de": "Tornadoallee",
               "es": "Callejón huracanado"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -2142,7 +2303,8 @@
               "de": "Zerstäuber",
               "es": "Evaporizador"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -2167,7 +2329,8 @@
               "de": "Verbindung mit Jake",
               "es": "Unión con Jake"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -2197,7 +2360,7 @@
               "de": "Sturmgewehr",
               "es": "Rifle de asalto"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 60
           }
         ]
@@ -2220,7 +2383,7 @@
               "de": "Automatikpistolen",
               "es": "Pistolas automáticas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -2248,7 +2411,7 @@
               "de": "Klinge des Achtfachen Streichs",
               "es": "Hoja octaimpacto"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2261,7 +2424,7 @@
               "de": "Purpurrote Frostklinge",
               "es": "Filo gélido escarlata"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2287,7 +2450,7 @@
               "de": "Vollkommene Kata + 1",
               "es": "Tranquilidad total + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2300,7 +2463,7 @@
               "de": "Vernichtende Kata",
               "es": "Tranquilidad fulminante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2323,7 +2486,7 @@
               "de": "Bodenpeitsche",
               "es": "Látigo terrestre"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2336,7 +2499,7 @@
               "de": "Brutale Peitsche",
               "es": "Látigo brutal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2359,7 +2522,7 @@
               "de": "Luftige Schöpfung",
               "es": "Creación aérea"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2372,7 +2535,7 @@
               "de": "Kosmische Schöpfung",
               "es": "Creación eléctrica"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2395,7 +2558,7 @@
               "de": "Kata - Übermacht",
               "es": "Tranquilidad - Supremacía"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2408,7 +2571,7 @@
               "de": "Vollkommene Kata",
               "es": "Tranquilidad total"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2421,7 +2584,7 @@
               "de": "Wahre Kata",
               "es": "Tranquilidad verdadera"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2445,7 +2608,7 @@
               "de": "Vereiser",
               "es": "Elevación glacial"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2458,7 +2621,7 @@
               "de": "Robuste Bannklinge",
               "es": "Hoja noble exorcista"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2471,7 +2634,33 @@
               "de": "Schneesturmmanöver",
               "es": "Golpe Ola de frío"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 206002005,
+        "names": {
+          "en": "Monk Sabin of Kolts",
+          "tw": "科爾茲格鬥家馬修",
+          "kr": "콜츠의 격투가 매시",
+          "fr": "Sabin, moine de Kolts",
+          "de": "Mönch Sabin von Kolts",
+          "es": "Sabin, monje de Kolts"
+        },
+        "abilities": [
+          {
+            "id": 229977,
+            "names": {
+              "en": "Phantom Rush",
+              "tw": "夢幻鬥舞",
+              "kr": "몽환투무",
+              "fr": "Rixe évanescente",
+              "de": "Phantomstoß",
+              "es": "Estampida espectral"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2489,14 +2678,14 @@
           {
             "id": 228051,
             "names": {
-              "en": "Supremacy",
-              "tw": "震天動地",
-              "kr": "진천동지",
-              "fr": "Désastre",
-              "de": "Übermacht",
-              "es": "Inmanencia"
+              "en": "Supremacy + 2",
+              "tw": "震天動地 + 2",
+              "kr": "진천동지 + 2",
+              "fr": "Désastre + 2",
+              "de": "Übermacht + 2",
+              "es": "Inmanencia + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2520,7 +2709,7 @@
               "de": "Heiliges Schwert - Heilsbringer+ + 2",
               "es": "Ira santa - Portador del alba+ + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2533,7 +2722,7 @@
               "de": "Heiliges Schwert - Heilsbringer + 2",
               "es": "Ira santa - Portador del alba + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2556,7 +2745,7 @@
               "de": "Zerfressende Flamme",
               "es": "Llama lacerante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2569,7 +2758,7 @@
               "de": "Höllenwind",
               "es": "Tormenta infernal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2589,7 +2778,7 @@
               "tw": "赫倫汀",
               "kr": "흐룬팅"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2614,7 +2803,7 @@
               "fr": "Almageste",
               "es": "Almagesto"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2636,7 +2825,7 @@
               "fr": "Élément d'Eiger",
               "es": "Elemento de Eiger"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2659,7 +2848,7 @@
               "de": "Perfekte Treffer",
               "es": "Golpe perfecto"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2683,7 +2872,7 @@
               "de": "Schockwelle des Weißen Tigers",
               "es": "null"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2706,7 +2895,7 @@
               "de": "Verstärkter Schrotflintenschuss",
               "es": "Supertiroteo explosivo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2726,7 +2915,7 @@
               "tw": "超武技暗勁",
               "kr": "초무예 암경"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2748,7 +2937,7 @@
               "de": "Gerechtigkeit (Xenogears)",
               "es": "Ecuanimidad (Xenogears)"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2772,7 +2961,7 @@
               "de": "Weidenwind",
               "es": "Viento salguero"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2785,7 +2974,7 @@
               "de": "Eistsunami",
               "es": "Tsunami glaciar"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2798,7 +2987,7 @@
               "de": "Festlicher Wind",
               "es": "Viento festivo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2811,7 +3000,7 @@
               "de": "Kristallwasser",
               "es": "Agua cristalina"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2835,7 +3024,7 @@
               "de": "Feuerantrieb",
               "es": "Ofensiva ardiente"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -2846,7 +3035,7 @@
               "kr": "마그네토 브레스",
               "fr": "Magnétisme"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2868,7 +3057,7 @@
               "fr": "Arcanes",
               "es": "Último arcano"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2894,7 +3083,7 @@
               "de": "Spaltende Klinge",
               "es": "Corte de la equidad"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2915,7 +3104,7 @@
               "de": "Schweren Angriff vermeiden",
               "es": "Antiataque pesado"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2939,7 +3128,7 @@
               "de": "Blitz - Brillanz",
               "es": "Destello - Fulgor"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2962,7 +3151,7 @@
               "de": "Sturm der messerscharfen Blüten",
               "es": "Tormenta de pétalos filosos"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -2987,7 +3176,7 @@
               "de": "Sturmrufen + 1",
               "es": "Llamada a la tormenta + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3000,7 +3189,7 @@
               "de": "Sturmwolken",
               "es": "Nubes de tormenta"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3023,7 +3212,7 @@
               "de": "Plüschschwanz",
               "es": "Cola algodonada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3036,7 +3225,7 @@
               "de": "Verzaubertes Ei",
               "es": "Huevo encantado"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3062,7 +3251,7 @@
               "de": "Verbrennen",
               "es": "Calcinación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3075,7 +3264,7 @@
               "de": "Feuga-Schnitt",
               "es": "Corte Piro++"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3088,7 +3277,7 @@
               "de": "Kata - Übermacht",
               "es": "Tranquilidad - Supremacía"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3101,7 +3290,7 @@
               "de": "Vollkommene Kata",
               "es": "Tranquilidad total"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3114,7 +3303,7 @@
               "de": "Wahre Kata",
               "es": "Tranquilidad verdadera"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3127,7 +3316,7 @@
               "de": "Gebrüll der Vernichtenden Kata",
               "es": "Rugido de Tranquilidad fulminante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3157,7 +3346,7 @@
               "de": "Sturmzeichen + 1",
               "es": "Marca de tormenta + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 38
           },
           {
@@ -3170,7 +3359,7 @@
               "de": "Entmagnetisierender Schlag + 1",
               "es": "Golpe desimantador + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 38
           },
           {
@@ -3183,7 +3372,7 @@
               "de": "Flächenblitz + 1",
               "es": "Golpe relámpago + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 38
           }
         ]
@@ -3206,7 +3395,7 @@
               "de": "Häschentritt",
               "es": "Patada de conejo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 38
           },
           {
@@ -3219,7 +3408,7 @@
               "de": "Mystisches Ei",
               "es": "Huevo místico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 38
           }
         ]
@@ -3245,7 +3434,7 @@
               "de": "Purpurner Blitz",
               "es": "Destello carmesí"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 38
           }
         ]
@@ -3276,7 +3465,7 @@
               "de": "Dunkelstrafe",
               "es": "Castigo tenebroso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3289,7 +3478,7 @@
               "de": "Dunkelstrafe + 1",
               "es": "Castigo tenebroso + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3302,7 +3491,7 @@
               "de": "Dunkelstrafe + 2",
               "es": "Castigo tenebroso + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3325,7 +3514,7 @@
               "de": "Purpurazurklingen",
               "es": "Hojas azul enrojecido"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3338,7 +3527,7 @@
               "de": "Azurblaue Flammenklinge",
               "es": "Filo azurígneo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3361,7 +3550,7 @@
               "de": "Gebrüll des Schattendrachen + 1",
               "es": "Rugido del dragón de las sombras + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3387,7 +3576,7 @@
               "de": "Winter der Spirituellen Dunkelheit",
               "es": "Abandono invernal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3411,7 +3600,29 @@
               "kr": "비행 고도",
               "es": "Altitud"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912390,
+            "names": {
+              "en": "Flughöhe + 1",
+              "tw": "飛行高度 + 1",
+              "kr": "비행 고도 + 1",
+              "es": "Altitud + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912391,
+            "names": {
+              "en": "Flughöhe + 2",
+              "tw": "飛行高度 + 2",
+              "kr": "비행 고도 + 2",
+              "es": "Altitud + 2"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3436,7 +3647,7 @@
               "de": "Flammenklinge",
               "es": "Hoja llameante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3449,7 +3660,7 @@
               "de": "Voltklinge",
               "es": "Hoja de voltaje"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3462,7 +3673,7 @@
               "de": "Diener der Klinge",
               "es": "Esclavo de la espada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3475,7 +3686,7 @@
               "de": "Phantomklinge",
               "es": "Hoja fantasma"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3498,7 +3709,7 @@
               "de": "Sakralkatarakt",
               "es": "Flujo sagrado"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3521,7 +3732,7 @@
               "de": "Tobende Feuersbrunst",
               "es": "Conflagración ardiente"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -3543,7 +3754,7 @@
               "de": "Brillianz",
               "es": "Resplandor"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3556,7 +3767,7 @@
               "de": "Dunkle Geister",
               "es": "Ánimos oscuros"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3579,7 +3790,7 @@
               "de": "Kata - Leere",
               "es": "Tranquilidad - Desolación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3603,7 +3814,7 @@
               "de": "Reinigende Klinge",
               "es": "Hoja purificadora"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3616,7 +3827,7 @@
               "de": "Entzündende Klinge",
               "es": "Hoja calcinadora"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3629,7 +3840,7 @@
               "de": "Brandstifter",
               "es": "Elevación flamígera"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3642,7 +3853,7 @@
               "de": "Exorzismusklinge",
               "es": "Hoja exorcista"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3655,7 +3866,7 @@
               "de": "Flammenklinge des Schlächters",
               "es": "Hoja flamígera del verdugo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3668,7 +3879,7 @@
               "de": "Flächenbrandmanöver",
               "es": "Golpe Ola de calor"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3692,7 +3903,7 @@
               "de": "[Geheimtechnik] Exkalibur + 1",
               "es": "Arte secreto de la espada - Excalibur + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3704,7 +3915,7 @@
               "fr": "[Tech. secrète] Excalipur",
               "es": "Arte secreto de la espada - Excalipur"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3727,7 +3938,7 @@
               "de": "Himmelsfaust",
               "es": "Cielo final"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3745,14 +3956,40 @@
           {
             "id": 224520,
             "names": {
-              "en": "The Heavens Wept",
-              "tw": "天舞輪迴斬",
-              "kr": "천무윤회참",
-              "fr": "Affliction céleste",
-              "de": "Samsara-Spalter",
-              "es": "Furia transmigratoria"
+              "en": "The Heavens Wept + 2",
+              "tw": "天舞輪迴斬 + 2",
+              "kr": "천무윤회참 + 2",
+              "fr": "Affliction céleste + 2",
+              "de": "Samsara-Spalter + 2",
+              "es": "Furia transmigratoria + 2"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707586,
+            "names": {
+              "en": "The Heavens Wept + 2",
+              "tw": "天舞輪迴斬 + 2",
+              "kr": "천무윤회참 + 2",
+              "fr": "Affliction céleste + 2",
+              "de": "Samsara-Spalter + 2",
+              "es": "Furia transmigratoria + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707587,
+            "names": {
+              "en": "The Heavens Wept + 2",
+              "tw": "天舞輪迴斬 + 2",
+              "kr": "천무윤회참 + 2",
+              "fr": "Affliction céleste + 2",
+              "de": "Samsara-Spalter + 2",
+              "es": "Furia transmigratoria + 2"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3776,7 +4013,7 @@
               "de": "Jekkt-Rausch",
               "es": "Acometida de Jecht"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3800,7 +4037,7 @@
               "de": "Macht von Ifrit",
               "es": "Poder de Ifrit"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3813,7 +4050,7 @@
               "de": "Macht von Ixion",
               "es": "Poder de Ixion"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3826,7 +4063,7 @@
               "de": "Macht von Shiva",
               "es": "Poder de Shiva"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3852,7 +4089,7 @@
               "de": "Abschlußprüfung",
               "es": "Examen final"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3875,7 +4112,7 @@
               "de": "Göttliche Zerstörung + 2",
               "es": "Ruina divina + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3898,7 +4135,7 @@
               "de": "Göttliche Zerstörung",
               "es": "Ruina divina"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3911,7 +4148,7 @@
               "de": "Göttliche Zerstörung + 1",
               "es": "Ruina divina + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3924,7 +4161,7 @@
               "de": "Göttliche Zerstörung + 2",
               "es": "Ruina divina + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3947,7 +4184,7 @@
               "de": "Eisblumenblitz + 1",
               "es": "Pétalos helados + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -3960,7 +4197,7 @@
               "de": "Eisblumenblitz + 2",
               "es": "Pétalos helados + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -3983,7 +4220,7 @@
               "de": "Herrlicher Stoß",
               "es": "Impulso señorial"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4006,7 +4243,7 @@
               "de": "Perforieren",
               "es": "Estocada veloz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4029,7 +4266,7 @@
               "de": "Perforieren",
               "es": "Estocada veloz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4042,7 +4279,7 @@
               "de": "Kontinuummesser",
               "es": "Corte infinito"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4068,7 +4305,7 @@
               "de": "Sichelklinge",
               "es": "Hoja creciente"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4092,7 +4329,7 @@
               "de": "Rebellennachschub - Dionysus PLDS-H",
               "es": "Lanzamiento rebelde - Dionysus PLDS-H"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4115,7 +4352,7 @@
               "de": "Dunkler Sturzflug",
               "es": "Descenso tenebroso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4128,7 +4365,7 @@
               "de": "Wehender Sturzflug",
               "es": "Descenso aéreo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4151,7 +4388,7 @@
               "de": "Menschensplitter",
               "es": "Partehumanos"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4164,7 +4401,7 @@
               "de": "Dämonensplitter",
               "es": "Partedemonios"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4187,7 +4424,7 @@
               "de": "Himmel - Macht des Lichts",
               "es": "Hocicazo - Fuerza lumínica"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4213,7 +4450,7 @@
               "de": "Sommer - Ozeanwellen",
               "es": "Verano - Voluntad del océano"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4226,7 +4463,7 @@
               "de": "Sommer - Meereswinde",
               "es": "Verano - Voluntad de los mares"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4249,7 +4486,7 @@
               "de": "Energieverschmelzung",
               "es": "Fusión energética"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4262,7 +4499,7 @@
               "de": "Traumverschmelzung",
               "es": "Fusión onírica"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4285,7 +4522,7 @@
               "de": "Dämonisches Trommelfeuer",
               "es": "Ráfaga demoníaca"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4309,7 +4546,7 @@
               "de": "Blitz - Zorniger Glanz",
               "es": "Destello - Resplandor colérico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4332,7 +4569,7 @@
               "de": "Rauschender Flußstrom",
               "es": "Caudal impetuoso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4356,7 +4593,7 @@
               "de": "Weißer Tiger - Zerschmetternde Faust",
               "es": "Tigre blanco - Puño aplastante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4369,7 +4606,7 @@
               "de": "Blutroter Phönix - Verteidigungsstand",
               "es": "Fénix escarlata - Postura de defensa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4382,7 +4619,7 @@
               "de": "Spezialkünste - Wilder Tigerstreich",
               "es": "Artes especiales - Golpe salvaje del tigre"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4395,7 +4632,7 @@
               "de": "Spezialkünste - Flinker Phönixstreich",
               "es": "Artes especiales - Golpe rápido del fénix"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4420,7 +4657,7 @@
               "de": "Statisches Sperrfeuer",
               "es": "Ráfaga estática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4448,7 +4685,7 @@
               "de": "Polarwirbel - Frost",
               "es": "Torbellino polar - Escarcha"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4461,7 +4698,7 @@
               "de": "Lodernde Hitze - Asche",
               "es": "Ardor abrasador - Cenizas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4487,7 +4724,7 @@
               "de": "Lodernde Hitze - Asche",
               "es": "Ardor abrasador - Cenizas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4515,7 +4752,8 @@
               "de": "Sturmwindklinge + 1",
               "es": "Cuchilla veloz + 1"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -4538,7 +4776,8 @@
               "de": "null",
               "es": "null"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -4565,7 +4804,7 @@
               "de": "Eissplitter + 1",
               "es": "Fragmentos de hielo + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 20
           }
         ]
@@ -4591,7 +4830,7 @@
               "de": "Flächenbombe",
               "es": "Bombardeo de alfombra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4619,7 +4858,7 @@
               "de": "Donnernde Zwillingsklinge",
               "es": "Espada doble de alto voltaje"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4632,7 +4871,7 @@
               "de": "Gleißende Zwillingsklinge",
               "es": "Espada doble deslumbrante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4645,7 +4884,7 @@
               "de": "Stürmische Zwillingsklinge",
               "es": "Espada doble tempestuosa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4669,7 +4908,7 @@
               "de": "Gebremster Fall",
               "es": "Caída ralentizada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4694,7 +4933,7 @@
               "de": "Gnadenlose Klinge",
               "es": "Hoja implacable"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4717,7 +4956,7 @@
               "de": "Windschlag",
               "es": "Golpe de viento"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4740,7 +4979,7 @@
               "de": "Vollautomatisches Abfeuern",
               "es": "AutoDisparo máximo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4753,7 +4992,7 @@
               "de": "Kugelhagel",
               "es": "Ráfaga de balas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4776,7 +5015,7 @@
               "de": "Scheibenschneiden",
               "es": "Rebanar"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4799,7 +5038,7 @@
               "de": "Maschinengewehrschirm",
               "es": "Parametralletas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4812,7 +5051,7 @@
               "de": "Holde Schützin",
               "es": "Mi querida pistolera"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4838,7 +5077,7 @@
               "de": "Voller Klingenblitz",
               "es": "Tormenta de acero"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4851,7 +5090,8 @@
               "de": "Zwiebelschnitt",
               "es": "Corte cebolla"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 506850,
@@ -4863,7 +5103,7 @@
               "de": "Zwiebelschnitt",
               "es": "Corte cebolla"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4889,7 +5129,7 @@
               "de": "Voller Klingenblitz",
               "es": "Tormenta de acero"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -4902,7 +5142,7 @@
               "de": "Kleingehackt",
               "es": "Picadillo de enemigo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4920,14 +5160,14 @@
           {
             "id": 224530,
             "names": {
-              "en": "Aeolian Onslaught",
-              "tw": "一陣",
-              "kr": "일진",
-              "fr": "Charge éolienne",
-              "de": "Windböe",
-              "es": "Cortavientos"
+              "en": "Aeolian Onslaught + 2",
+              "tw": "一陣 + 2",
+              "kr": "일진 + 2",
+              "fr": "Charge éolienne + 2",
+              "de": "Windböe + 2",
+              "es": "Cortavientos + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4950,7 +5190,7 @@
               "de": "Blitzgewitter",
               "es": "Tormenta luminosa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4976,7 +5216,7 @@
               "de": "Multihieb",
               "es": "Multiestocada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -4999,7 +5239,8 @@
               "de": "null",
               "es": "null"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5022,7 +5263,7 @@
               "de": "Blitz - Blenden",
               "es": "Destello - Obnubilación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5048,7 +5289,8 @@
               "de": "Schockschlitzer",
               "es": "Estocada de choque"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -5075,7 +5317,7 @@
               "de": "Frostklinge, Flammenring",
               "es": "Hoja gélida, Anillo pírico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5088,7 +5330,7 @@
               "de": "Schattenklinge, Lichtring",
               "es": "Hoja umbrosa, Anillo refulgente"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5114,7 +5356,7 @@
               "de": "Windpracht",
               "es": "Esplendor de viento"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5127,7 +5369,7 @@
               "de": "Windpracht",
               "es": "Esplendor de viento"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5140,7 +5382,7 @@
               "de": "Feuerpracht",
               "es": "Esplendor de fuego"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5153,7 +5395,7 @@
               "de": "Feuerpracht",
               "es": "Esplendor de fuego"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5166,7 +5408,7 @@
               "de": "Wasserpracht",
               "es": "Esplendor de agua"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5179,7 +5421,7 @@
               "de": "Wasserpracht",
               "es": "Esplendor de agua"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5192,7 +5434,7 @@
               "de": "Erdpracht",
               "es": "Esplendor de tierra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5205,7 +5447,7 @@
               "de": "Erdpracht",
               "es": "Esplendor de tierra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5218,7 +5460,7 @@
               "de": "Windpracht + 1",
               "es": "Esplendor de viento + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5231,7 +5473,7 @@
               "de": "Windpracht + 1",
               "es": "Esplendor de viento + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5244,7 +5486,7 @@
               "de": "Feuerpracht + 1",
               "es": "Esplendor de fuego + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5257,7 +5499,7 @@
               "de": "Feuerpracht + 1",
               "es": "Esplendor de fuego + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5270,7 +5512,7 @@
               "de": "Wasserpracht + 1",
               "es": "Esplendor de agua + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5283,7 +5525,7 @@
               "de": "Wasserpracht + 1",
               "es": "Esplendor de agua + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5296,7 +5538,7 @@
               "de": "Erdpracht + 1",
               "es": "Esplendor de tierra + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5309,59 +5551,8 @@
               "de": "Erdpracht + 1",
               "es": "Esplendor de tierra + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "60-8-8-8",
-    "units": [
-      {
-        "id": 306000503,
-        "names": {
-          "en": "Golem",
-          "tw": "巨像兵",
-          "kr": "골렘",
-          "es": "Gólem"
-        },
-        "abilities": [
-          {
-            "id": 205840,
-            "names": {
-              "en": "Multifists",
-              "tw": "爆裂拳",
-              "kr": "폭렬권",
-              "fr": "Multipoing",
-              "de": "Faustwirbel",
-              "es": "Multipuñetazo"
-            },
-            "offset": 8
-          }
-        ]
-      },
-      {
-        "id": 306001005,
-        "names": {
-          "en": "Marquis de Léon",
-          "tw": "獅王",
-          "kr": "킹 레오",
-          "fr": "Lord Lionel"
-        },
-        "abilities": [
-          {
-            "id": 205840,
-            "names": {
-              "en": "Multifists",
-              "tw": "爆裂拳",
-              "kr": "폭렬권",
-              "fr": "Multipoing",
-              "de": "Faustwirbel",
-              "es": "Multipuñetazo"
-            },
-            "offset": 8
           }
         ]
       }
@@ -5388,7 +5579,8 @@
               "de": "Drachensturz",
               "es": "Descenso del draco"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5410,7 +5602,21 @@
               "de": "Kompromissloser Nahkampf",
               "es": "Reyerta total"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707576,
+            "names": {
+              "en": "All-out Scuffle + 1",
+              "tw": "全力格鬥 + 1",
+              "kr": "전력 격투 + 1",
+              "fr": "Rixe totale + 1",
+              "de": "Kompromissloser Nahkampf + 1",
+              "es": "Reyerta total + 1"
+            },
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -5437,7 +5643,7 @@
               "de": "Kunai-Regen",
               "es": "Lluvia de kunai"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5450,7 +5656,7 @@
               "de": "Kunai-Regen + 1",
               "es": "Lluvia de kunai + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -5463,7 +5669,7 @@
               "de": "Kunai-Regen + 2",
               "es": "Lluvia de kunai + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5486,7 +5692,7 @@
               "de": "Durchbruch",
               "es": "Progreso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5509,7 +5715,7 @@
               "de": "Leuchthieb",
               "es": "Golpe de luz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5537,7 +5743,7 @@
               "de": "Erdspaltenvermeidung",
               "es": "Evasión partetierras"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5560,7 +5766,7 @@
               "de": "Erdspaltenvermeidung",
               "es": "Evasión partetierras"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5588,7 +5794,8 @@
               "de": "Ramme + 2",
               "es": "Martinete + 2"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5610,7 +5817,8 @@
               "de": "Erdzerschmetterer",
               "es": "Hoja sacudetierra"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 707446,
@@ -5622,7 +5830,8 @@
               "de": "Erdzerschmetterer + 1",
               "es": "Hoja sacudetierra + 1"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 707447,
@@ -5634,7 +5843,8 @@
               "de": "Erdzerschmetterer + 2",
               "es": "Hoja sacudetierra + 2"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5656,7 +5866,8 @@
               "de": "Gewaltschweif",
               "es": "Cola violenta"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 507514,
@@ -5668,7 +5879,8 @@
               "de": "Gewaltschweif",
               "es": "Cola violenta"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5692,7 +5904,8 @@
               "de": "Erdsturmklinge",
               "es": "Hoja de la tormenta de arena"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 508380,
@@ -5704,7 +5917,8 @@
               "de": "Erdsturmklinge",
               "es": "Hoja de la tormenta de arena"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5726,7 +5940,8 @@
               "de": "Erdgebunden",
               "es": "Vínculo terrenal"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5749,7 +5964,31 @@
               "de": "Grab tief, lali!",
               "es": "¡Cavar, cavar, cavar, lalá!"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
+          }
+        ]
+      },
+      {
+        "id": 204000704,
+        "names": {
+          "en": "Yang",
+          "tw": "楊",
+          "kr": "얀"
+        },
+        "abilities": [
+          {
+            "id": 707577,
+            "names": {
+              "en": "All-out Scuffle + 2",
+              "tw": "全力格鬥 + 2",
+              "kr": "전력 격투 + 2",
+              "fr": "Rixe totale + 2",
+              "de": "Kompromissloser Nahkampf + 2",
+              "es": "Reyerta total + 2"
+            },
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5774,7 +6013,8 @@
               "de": "Schallsturm",
               "es": "Siroco sónico"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5796,7 +6036,7 @@
               "de": "Durchbohrung",
               "es": "Zambullida"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 1
           }
         ]
@@ -5817,7 +6057,8 @@
               "tw": "連劍",
               "kr": "연검"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5842,7 +6083,8 @@
               "de": "Dampframmenabgang",
               "es": "Golpe aplastante"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -5864,7 +6106,8 @@
               "de": "Offene Wunde",
               "es": "Heridas abiertas"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -5891,7 +6134,7 @@
               "de": "Spezialhammer",
               "es": "Martillo especial"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5914,7 +6157,7 @@
               "de": "Kettensäge",
               "es": "Motosierra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5938,7 +6181,7 @@
               "de": "Spezialhammer",
               "es": "Martillo especial"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5961,7 +6204,7 @@
               "de": "Kettensäge",
               "es": "Motosierra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -5987,7 +6230,7 @@
               "de": "Kettensäge",
               "es": "Motosierra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6000,7 +6243,7 @@
               "de": "Kettensäge + 1",
               "es": "Motosierra + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6013,7 +6256,7 @@
               "de": "Kettensäge + 2",
               "es": "Motosierra + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6036,7 +6279,7 @@
               "de": "Vollautomatikflinte",
               "es": "Escopeta automática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6059,7 +6302,7 @@
               "de": "Ich kümmer mich drum!",
               "es": "¡Yo me encargo!"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6087,7 +6330,7 @@
               "de": "Gefährliche Rose",
               "es": "Rosa peligrosa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6112,7 +6355,7 @@
               "de": "Kostenlose Energie",
               "es": "Energía libre"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6125,7 +6368,7 @@
               "de": "Kostenlose Energie + 1",
               "es": "Energía libre + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6138,7 +6381,7 @@
               "de": "Kostenlose Energie + 2",
               "es": "Energía libre + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6161,7 +6404,7 @@
               "de": "null",
               "es": "null"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6184,7 +6427,7 @@
               "de": "Nussknacker",
               "es": "Cascanueces"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6210,7 +6453,7 @@
               "de": "Regenbogenpeitsche",
               "es": "Látigo arcoíris"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6238,7 +6481,7 @@
               "de": "Wahrer Flammenschlag des Purgatoriums + 1",
               "es": "Tajo fulminante del purgatorio + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6251,7 +6494,7 @@
               "de": "Flammenschlag des Purgatoriums + 2",
               "es": "Tajo ígneo del purgatorio + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6274,7 +6517,7 @@
               "de": "Königsgleve",
               "es": "Glaive real"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6287,7 +6530,7 @@
               "de": "Königsgleve + 1",
               "es": "Glaive real + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6300,7 +6543,7 @@
               "de": "Königsgleve + 2",
               "es": "Glaive real + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6323,7 +6566,7 @@
               "de": "Flammende Kombo + 1",
               "es": "Combo ígneo + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6336,7 +6579,7 @@
               "de": "Flammende Kombo + 2",
               "es": "Combo ígneo + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6359,7 +6602,7 @@
               "de": "Prominenz",
               "es": "Prominencia"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6382,7 +6625,7 @@
               "de": "Serpenté - Peitschenhieb der Abenddämmerung",
               "es": "Serpenté - Látigo crepuscular"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6395,7 +6638,7 @@
               "de": "Serpenté - Peitschenhieb der Morgendämmerung",
               "es": "Serpenté - Látigo del alba"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6418,7 +6661,7 @@
               "de": "Zerschmetterndes Trommelfeuer",
               "es": "Ráfaga demoledora"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6446,7 +6689,7 @@
               "de": "Meteorregen",
               "es": "Lluvia meteorito"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 4
           }
         ]
@@ -6469,7 +6712,7 @@
               "de": "Wellenschub",
               "es": "Oleada Mágica"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 4
           }
         ]
@@ -6492,7 +6735,7 @@
               "de": "Meteoregen",
               "es": "Lluvia de meteoros"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 4
           }
         ]
@@ -6520,7 +6763,8 @@
               "de": "Schwertmagie - Flammendrohung",
               "es": "Esgrimago - Amenaza ígnea"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 220710,
@@ -6532,7 +6776,8 @@
               "de": "Schwertmagie - Stille Wasser",
               "es": "Esgrimago - Aguas calmadas"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 220720,
@@ -6544,7 +6789,8 @@
               "de": "Schwertmagie - Brüllender Donner",
               "es": "Esgrimago - Trueno rugidor"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 220730,
@@ -6556,7 +6802,8 @@
               "de": "Schwertmagie - Sturmwind",
               "es": "Esgrimago - Tormenta eólica"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 220740,
@@ -6568,7 +6815,8 @@
               "de": "Schwertmagie - Glitzerndes Licht",
               "es": "Esgrimago - Luz destellante"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -6593,7 +6841,8 @@
               "de": "Wirbelschnitt",
               "es": "Corte torbellino"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -6615,7 +6864,8 @@
               "de": "Chaosblüten",
               "es": "Flores del caos"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -6645,7 +6895,8 @@
               "de": "Tobende Feuersbrunst",
               "es": "Furia infernal"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -6670,7 +6921,8 @@
               "de": "Tobende Feuersbrunst",
               "es": "Furia infernal"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -6697,7 +6949,7 @@
               "de": "Tigerklauenfaust",
               "es": "Puño garra de tigre"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -6710,7 +6962,7 @@
               "de": "Drachentritt",
               "es": "Patada dragón"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6733,7 +6985,7 @@
               "de": "Klingengefängnis",
               "es": "Prisión de cuchillas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6761,7 +7013,7 @@
               "de": "Chaoswelle + 1",
               "es": "Ola caótica + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6774,7 +7026,7 @@
               "de": "Chaoswelle + 2",
               "es": "Ola caótica + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           }
         ]
@@ -6800,7 +7052,7 @@
               "de": "Chaoswelle + 2",
               "es": "Ola caótica + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6813,7 +7065,7 @@
               "de": "Chaoswelle erwacht + 2",
               "es": "Ola caótica - Haz + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6826,7 +7078,7 @@
               "de": "Chaoswelle + 1",
               "es": "Ola caótica + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6839,7 +7091,7 @@
               "de": "Chaoswelle + 2",
               "es": "Ola caótica + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6852,7 +7104,7 @@
               "de": "Chaoswelle erwacht + 2",
               "es": "Ola caótica - Haz + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6865,7 +7117,7 @@
               "de": "Chaoswelle erwacht + 2",
               "es": "Ola caótica - Haz + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           }
         ]
@@ -6888,7 +7140,7 @@
               "de": "Schneebegräbnis + 2",
               "es": "Entierro de nieve + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6901,7 +7153,7 @@
               "de": "Schneebegräbnis + 2",
               "es": "Entierro de nieve + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           },
           {
@@ -6914,7 +7166,7 @@
               "de": "Schneebegräbnis + 2",
               "es": "Entierro de nieve + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 58
           }
         ]
@@ -6942,7 +7194,7 @@
               "de": "Anti-Insekten-Kata",
               "es": "Postura antiinsectos"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6966,7 +7218,7 @@
               "de": "[Geheimtechnik] Kotetsu",
               "es": "Arte secreto de la espada - Kotetsu"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -6994,7 +7246,8 @@
               "de": "Blutrote Zweiteilung",
               "es": "División sanguinolenta"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -7013,7 +7266,8 @@
               "tw": "武技破岩",
               "kr": "무예 파암"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 228723,
@@ -7022,7 +7276,8 @@
               "tw": "武技龍迅",
               "kr": "무예 용신"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -7049,7 +7304,8 @@
               "de": "Lichtklingentanz",
               "es": "Baile de hoja lumínica"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 216740,
@@ -7061,7 +7317,7 @@
               "de": "Schneetanz",
               "es": "Baile de la nieve"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 43
           }
         ]
@@ -7087,7 +7343,7 @@
               "de": "Teuflischer Blitzschlag",
               "es": "Golpe malvado"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7115,7 +7371,7 @@
               "de": "Torpedo-Kata",
               "es": "Formación torpedo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7141,7 +7397,7 @@
               "de": "Flinke Klinge",
               "es": "Hoja veloz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 43
           },
           {
@@ -7154,7 +7410,7 @@
               "de": "Flinke Klinge",
               "es": "Hoja veloz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 43
           }
         ]
@@ -7183,7 +7439,7 @@
               "de": "Tobender Bogen",
               "es": "Arco furioso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7209,7 +7465,7 @@
               "de": "Beschwörbarer Chocobo: Tritt",
               "es": "Eidolón: patada chocobo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7237,7 +7493,7 @@
               "de": "Tanz des Phönix",
               "es": "Baile del fénix"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -7259,7 +7515,7 @@
               "de": "Tanz des Phönix",
               "es": "Baile del fénix"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -7286,7 +7542,7 @@
               "de": "Solider Schlag",
               "es": "Puñetazo firme"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7309,7 +7565,7 @@
               "de": "Opferflamme",
               "es": "Llama sacrificadora"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7332,7 +7588,7 @@
               "de": "Hellebardentanz",
               "es": "Danza de alabarda"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7345,7 +7601,7 @@
               "de": "Hellebardentanz + 1",
               "es": "Danza de alabarda + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7358,7 +7614,7 @@
               "de": "Hellebardentanz + 2",
               "es": "Danza de alabarda + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7384,7 +7640,8 @@
               "de": "Flammenangriff",
               "es": "Asalto flamígero"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 222910,
@@ -7396,7 +7653,8 @@
               "de": "Eisangriff",
               "es": "Asalto gélido"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 222920,
@@ -7408,7 +7666,8 @@
               "de": "Elektroangriff",
               "es": "Asalto eléctrico"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 222930,
@@ -7420,7 +7679,8 @@
               "de": "Lichtangriff",
               "es": "Asalto luminoso"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -7447,7 +7707,8 @@
               "de": "Schallwelle",
               "es": "Estallido sónico"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 703570,
@@ -7459,7 +7720,8 @@
               "de": "Schallwelle + 1",
               "es": "Estallido sónico + 1"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 703580,
@@ -7471,7 +7733,8 @@
               "de": "Schallwelle + 2",
               "es": "Estallido sónico + 2"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -7486,28 +7749,28 @@
           {
             "id": 224680,
             "names": {
-              "en": "Martial Arts - Tojin Combo + 1",
-              "tw": "格鬥術·鬥神連擊 + 1",
-              "kr": "격투술·투신연격 + 1",
-              "fr": "Art martial - Combo Tojin + 1",
-              "de": "Kampfkunst - Salve des Kriegsgottes + 1",
-              "es": "Artes marciales - Combo Tojin + 1"
+              "en": "Martial Arts - Tojin Combo + 2",
+              "tw": "格鬥術·鬥神連擊 + 2",
+              "kr": "격투술·투신연격 + 2",
+              "fr": "Art martial - Combo Tojin + 2",
+              "de": "Kampfkunst - Salve des Kriegsgottes + 2",
+              "es": "Artes marciales - Combo Tojin + 2"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           },
           {
             "id": 707609,
             "names": {
-              "en": "null + 1"
+              "en": "Martial Arts - Tojin Combo + 2",
+              "tw": "格鬥術·鬥神連擊 + 2",
+              "kr": "격투술·투신연격 + 2",
+              "fr": "Art martial - Combo Tojin + 2",
+              "de": "Kampfkunst - Salve des Kriegsgottes + 2",
+              "es": "Artes marciales - Combo Tojin + 2"
             },
-            "offset": 8
-          },
-          {
-            "id": 707610,
-            "names": {
-              "en": "null + 1"
-            },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -7534,7 +7797,7 @@
               "de": "Aquatische Philosophie",
               "es": "Filosofía acuática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7558,7 +7821,7 @@
               "de": "Besenkunst - Und fort mit dir.",
               "es": "Arte de limpieza - Allá vas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7571,7 +7834,7 @@
               "de": "Scharlachstich",
               "es": "Puntada escarlata"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7599,7 +7862,7 @@
               "de": "Gewitterschlag-Kata",
               "es": "Electrogolpe firme"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7612,7 +7875,7 @@
               "de": "Gewitterschlag-Kata + 1",
               "es": "Electrogolpe firme + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7635,7 +7898,7 @@
               "de": "Schwert der Könige",
               "es": "Espada de reyes"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7658,7 +7921,7 @@
               "de": "Patriotischer Hieb",
               "es": "Corte patriótico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7682,7 +7945,7 @@
               "de": "Mystischer Stoß",
               "es": "Estoque místico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 42
           },
           {
@@ -7695,7 +7958,7 @@
               "de": "Mystischer Stoß",
               "es": "Estoque místico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 42
           }
         ]
@@ -7723,7 +7986,7 @@
               "de": "Wolfsklauenfaust + 2",
               "es": "Puño garra de lobo + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7736,7 +7999,7 @@
               "de": "Falkentritt + 2",
               "es": "Patada halcón + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7759,7 +8022,7 @@
               "de": "Wahre Gewitterschlag-Kata + 1",
               "es": "Azote fulminante del trueno + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7772,7 +8035,7 @@
               "de": "Gewitterschlag-Kata + 2",
               "es": "Electrogolpe firme + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7796,7 +8059,7 @@
               "de": "Begräbnismesser + 2",
               "es": "Cuchillo funerario + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7819,7 +8082,7 @@
               "de": "Rasende Klinge des Schutzes",
               "es": "Hoja iracunda de la protección"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7832,7 +8095,7 @@
               "de": "Rasende Klinge der Zerstörung",
               "es": "Hoja iracunda de la destrucción"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7845,7 +8108,32 @@
               "de": "Rachsüchtige Klinge der Herrschaft",
               "es": "Hoja vengativa del sometimiento"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207001005,
+        "names": {
+          "en": "Sephiroth",
+          "tw": "賽菲羅斯",
+          "kr": "세피로스",
+          "fr": "Séphiroth",
+          "es": "Sefirot"
+        },
+        "abilities": [
+          {
+            "id": 224570,
+            "names": {
+              "en": "Octaslash + 2",
+              "tw": "八刀一閃 + 2",
+              "kr": "팔도일섬 + 2",
+              "fr": "Octofrappe + 2",
+              "de": "Achtstreich + 2",
+              "es": "Octacorte + 2"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7868,7 +8156,7 @@
               "de": "Wirbelsäge",
               "es": "Sierra circular"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7881,7 +8169,7 @@
               "de": "Wirbelsäge + 1",
               "es": "Sierra circular + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7894,7 +8182,7 @@
               "de": "Wirbelsäge + 2",
               "es": "Sierra circular + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7916,7 +8204,7 @@
               "fr": "Næglind",
               "es": "Næglind"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7939,7 +8227,7 @@
               "de": "Multi-Sperrfeuer+",
               "es": "Fuego múltiple+"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -7952,7 +8240,7 @@
               "de": "Multi-Sperrfeuer",
               "es": "Fuego múltiple"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7975,7 +8263,7 @@
               "de": "Blumiger Überfall",
               "es": "Asalto floral"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -7998,7 +8286,7 @@
               "de": "Racheklinge",
               "es": "Hoja de la venganza"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8022,7 +8310,7 @@
               "de": "Mystischer Überfall",
               "es": "Asalto místico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8035,7 +8323,7 @@
               "de": "Mystischer Stoß + 1",
               "es": "Estoque místico + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8048,7 +8336,7 @@
               "de": "Mystischer Stoß + 1",
               "es": "Estoque místico + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8061,7 +8349,7 @@
               "de": "Mystischer Stoß + 2",
               "es": "Estoque místico + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8074,7 +8362,7 @@
               "de": "Mystischer Blitz + 2",
               "es": "Centella mística + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8087,7 +8375,7 @@
               "de": "Mystischer Stoß + 2",
               "es": "Estoque místico + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8110,7 +8398,7 @@
               "de": "Heiliger Hieb + 2",
               "es": "Golpe sagrado + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8134,7 +8422,7 @@
               "de": "Chaotisches Anvisieren",
               "es": "Objeto caótico dirigido"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8157,7 +8445,7 @@
               "de": "Blutopfer",
               "es": "Sacrificio de sangre"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8180,7 +8468,7 @@
               "de": "Himmel - Strafstups",
               "es": "Cielo - Toque de penitencia"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8203,7 +8491,7 @@
               "de": "Volles Augmentierungspotenzial",
               "es": "Potencial máximo de aumentos"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8226,7 +8514,7 @@
               "de": "Durchschießendes Trommelfeuer",
               "es": "Ráfaga penetrante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8251,7 +8539,7 @@
               "de": "Salut - Fackelbeleuchtung",
               "es": "Saludo - Antorcha encendida"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8264,7 +8552,7 @@
               "de": "Salut - Umgebungspatrouille",
               "es": "Saludo - Ronda de valoración"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8287,7 +8575,7 @@
               "de": "Sengender Phönix",
               "es": "Fénix llameante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8311,7 +8599,7 @@
               "de": "Weißer Tiger - Durchstoßende Kralle",
               "es": "Tigre blanco - Garra lacerante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8324,7 +8612,7 @@
               "de": "Blutroter Phönix - Brennender Streich",
               "es": "Fénix escarlata - Golpe calcinante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8347,7 +8635,7 @@
               "de": "Achtstreich",
               "es": "Octacorte"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8369,7 +8657,7 @@
               "de": "R020: Illusion",
               "es": "R020: Espejismo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8397,7 +8685,7 @@
               "de": "Hundert Stöße",
               "es": "Cien estoques"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8423,7 +8711,7 @@
               "de": "Todesbogen",
               "es": "Arco de la perdición"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8436,7 +8724,7 @@
               "de": "Todesbogen",
               "es": "Arco de la perdición"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8467,7 +8755,7 @@
               "de": "Sonnenstrahl",
               "es": "Rayo solar"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8493,7 +8781,7 @@
               "de": "Tödliches Sperrfeuer",
               "es": "Ráfaga mortal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8519,7 +8807,33 @@
               "de": "Verbindung mit Lid",
               "es": "Unión con Lid"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 206001905,
+        "names": {
+          "en": "King Edgar of Figaro",
+          "tw": "費加羅國王埃德加",
+          "kr": "피가로의 왕 에드가",
+          "fr": "Edgar, roi de Figaro",
+          "de": "König Edgar von Figaro",
+          "es": "Edgar, rey de Fígaro"
+        },
+        "abilities": [
+          {
+            "id": 509283,
+            "names": {
+              "en": "Corona Beam",
+              "tw": "日冕射線",
+              "kr": "빛무리 광선",
+              "fr": "Rayon coronaire",
+              "de": "Korona-Strahl",
+              "es": "Haz de corona"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8547,7 +8861,7 @@
               "de": "Erdspaltenvermeidung 2",
               "es": "Evasión partetierra II"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8560,7 +8874,7 @@
               "de": "Erdspaltenvermeidung 2 + 1",
               "es": "Evasión partetierra II + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8583,7 +8897,7 @@
               "de": "Erdspaltenvermeidung 2",
               "es": "Evasión partetierra II"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8596,7 +8910,7 @@
               "de": "Erdspaltenvermeidung 2 + 1",
               "es": "Evasión partetierra II + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8625,7 +8939,7 @@
               "de": "Begräbnismesser",
               "es": "Cuchillo funerario"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8638,7 +8952,7 @@
               "de": "Begräbnismesser + 1",
               "es": "Cuchillo funerario + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8661,7 +8975,8 @@
               "de": "Sprengzünder",
               "es": "Explosivo"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -8688,7 +9003,7 @@
               "de": "Sturmklinge",
               "es": "Hoja huracanada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8701,7 +9016,7 @@
               "de": "Sturmdolch",
               "es": "Daga tempestuosa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8714,7 +9029,7 @@
               "de": "Gezielte Raserei",
               "es": "Estampida focal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8739,7 +9054,98 @@
               "de": "Reißender Schnitt + 2",
               "es": "Tajo torrencial + 2"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "110-10-10-10-10-10-10-10-10-10",
+    "units": [
+      {
+        "id": 206001905,
+        "names": {
+          "en": "King Edgar of Figaro",
+          "tw": "費加羅國王埃德加",
+          "kr": "피가로의 왕 에드가",
+          "fr": "Edgar, roi de Figaro",
+          "de": "König Edgar von Figaro",
+          "es": "Edgar, rey de Fígaro"
+        },
+        "abilities": [
+          {
+            "id": 229945,
+            "names": {
+              "en": "Chainsaw (FFVI)",
+              "tw": "回轉電鋸",
+              "kr": "회전톱",
+              "fr": "Tronçonneuse",
+              "de": "Kettensäge (FFVI)",
+              "es": "Sierra mecánica (FFVI)"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 206002005,
+        "names": {
+          "en": "Monk Sabin of Kolts",
+          "tw": "科爾茲格鬥家馬修",
+          "kr": "콜츠의 격투가 매시",
+          "fr": "Sabin, moine de Kolts",
+          "de": "Mönch Sabin von Kolts",
+          "es": "Sabin, monje de Kolts"
+        },
+        "abilities": [
+          {
+            "id": 229973,
+            "names": {
+              "en": "Rising Phoenix",
+              "tw": "鳳凰之舞",
+              "kr": "봉황의 춤",
+              "fr": "Danse du Phénix",
+              "de": "Phönixtanz",
+              "es": "Vuelo del Fénix"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229974,
+            "names": {
+              "en": "Razor Gale",
+              "tw": "真空波",
+              "kr": "진공파",
+              "fr": "Vague de vide",
+              "de": "Klingensturm",
+              "es": "Ráfaga lacerante"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 310000105,
+        "names": {
+          "en": "2B"
+        },
+        "abilities": [
+          {
+            "id": 509313,
+            "names": {
+              "en": "True Charge Spear",
+              "tw": "真·充能矛",
+              "kr": "진·차지 스피어",
+              "fr": "Lance à charge véritable",
+              "de": "Wahrer geladener Speer",
+              "es": "Lanza cargada de la verdad"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8767,7 +9173,7 @@
               "de": "Ätherischer Zeitknall",
               "es": "Explosión temporal etérea"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -8789,7 +9195,7 @@
               "de": "Ätherknall",
               "es": "Explosión etérea"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -8816,7 +9222,7 @@
               "de": "Sterbende Pflanzen",
               "es": "Flora moribunda"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8837,7 +9243,7 @@
               "de": "YoRHa Klingentanz",
               "es": "Danza de la espada de YoRHa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8850,7 +9256,7 @@
               "de": "YoRHa Massakertanz",
               "es": "Danza de la hecatombe de YoRHa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8874,7 +9280,7 @@
               "de": "Kurzstrecken-Graviton",
               "es": "Gravitón de corto alcance"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8897,7 +9303,7 @@
               "de": "Streich des Blutmagiers",
               "es": "Golpe de hemomante"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8922,7 +9328,7 @@
               "de": "Glutschwert-Raserei",
               "es": "Frenesí incandescente"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -8935,7 +9341,7 @@
               "de": "Holzschwert-Raserei",
               "es": "Furor de espadas de madera"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -8966,7 +9372,7 @@
               "de": "Höllischer Richtspruch",
               "es": "Juicio infernal"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -8991,7 +9397,7 @@
               "de": "Höllenwasser + 1",
               "es": "Aguas infernales + 1"
             },
-            "offset": 8
+            "offset": 14
           },
           {
             "id": 100007207,
@@ -9003,7 +9409,7 @@
               "de": "Höllenwasser",
               "es": "Aguas infernales"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -9031,7 +9437,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9044,7 +9450,7 @@
               "de": "Heftiger Nordwind",
               "es": "Ventisca boreal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9068,7 +9474,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9081,7 +9487,7 @@
               "de": "Heftiger Nordwind",
               "es": "Ventisca boreal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9104,7 +9510,7 @@
               "de": "Wirbelwindvermeidung 2 + 2",
               "es": "Evasión del remolino II + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9125,7 +9531,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9146,7 +9552,29 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 70440,
+            "names": {
+              "en": "Tornado + 1",
+              "tw": "龍捲風 + 1",
+              "kr": "토네이도 + 1",
+              "fr": "Tornade + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 70441,
+            "names": {
+              "en": "Tornado + 2",
+              "tw": "龍捲風 + 2",
+              "kr": "토네이도 + 2",
+              "fr": "Tornade + 2"
+            },
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9171,7 +9599,7 @@
               "de": "Schneesturm",
               "es": "Tormenta de nieve"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9182,7 +9610,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9206,7 +9634,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9225,7 +9653,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9247,7 +9675,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9268,7 +9696,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9289,7 +9717,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9312,7 +9740,7 @@
               "de": "Säbel",
               "es": "Sable"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9337,7 +9765,7 @@
               "fr": "Autan",
               "es": "Huracán"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9358,7 +9786,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9382,7 +9810,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9407,7 +9835,7 @@
               "de": "Tornado-Hand",
               "es": "Mano huracanada"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9430,7 +9858,7 @@
               "de": "Engel",
               "es": "Ángel"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9453,7 +9881,7 @@
               "de": "Orkanstoß",
               "es": "Pulso Huracanado"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9475,7 +9903,7 @@
               "kr": "토네이도",
               "fr": "Tornade"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9488,7 +9916,7 @@
               "de": "Sturmaugenmauer",
               "es": "Muro tempestuoso"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9511,7 +9939,7 @@
               "de": "Tausend Flügel+",
               "es": "Miles de alas+"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9524,7 +9952,7 @@
               "de": "Tausend Flügel",
               "es": "Miles de alas"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9537,7 +9965,7 @@
               "de": "Dröhnender Sturm",
               "es": "Tormenta torrencial"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9560,7 +9988,7 @@
               "de": "Taifun-Explosivsystem",
               "es": "Sistema de explosiones Typhoon"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9584,7 +10012,7 @@
               "de": "Befehl - Showtime",
               "es": "Orden - Comienza el espectáculo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9610,7 +10038,7 @@
               "de": "Eisiger Sturmwind",
               "es": "Huracán gélido"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9641,7 +10069,7 @@
               "de": "Flut",
               "es": "Inundación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9651,7 +10079,7 @@
               "tw": "海洋之怒",
               "kr": "바다의 분노"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9677,7 +10105,7 @@
               "de": "Flut",
               "es": "Inundación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9698,7 +10126,7 @@
               "de": "Flut",
               "es": "Inundación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9721,7 +10149,7 @@
               "de": "Flut",
               "es": "Inundación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9734,7 +10162,7 @@
               "de": "Aquatische Autorität",
               "es": "Autoridad acuática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9760,7 +10188,7 @@
               "de": "Cagnazzos Macht",
               "es": "Poder de Cagnazzo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9783,7 +10211,7 @@
               "de": "Flut",
               "es": "Inundación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9796,7 +10224,7 @@
               "de": "Flut + 1",
               "es": "Inundación + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9809,7 +10237,7 @@
               "de": "Flut + 2",
               "es": "Inundación + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9832,7 +10260,7 @@
               "de": "Flutwelle + 2",
               "es": "Ola sísmica + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9857,7 +10285,7 @@
               "de": "Wasser-Dharma",
               "es": "Acuípula"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9879,7 +10307,7 @@
               "fr": "Tourbillon (Xenogears)",
               "es": "Tifón (Xenogears)"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9903,7 +10331,7 @@
               "de": "Weissagung - Omen der Flut",
               "es": "Predicción - Presagio torrencial"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9916,7 +10344,7 @@
               "de": "Regenguss",
               "es": "Aguacero"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9929,7 +10357,7 @@
               "de": "Weissagung - Regenguss",
               "es": "Predicción - Aguacero"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9955,7 +10383,7 @@
               "de": "Flut",
               "es": "Inundación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -9968,7 +10396,7 @@
               "de": "Taucher - Untertauchen",
               "es": "Buceo - Inmersión"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -9994,8 +10422,61 @@
               "de": "Aqua - Wellenparty",
               "es": "Aqua - Equipo mareomotriz"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "60-14-14-14",
+    "units": [
+      {
+        "id": 306000503,
+        "names": {
+          "en": "Golem",
+          "tw": "巨像兵",
+          "kr": "골렘",
+          "es": "Gólem"
+        },
+        "abilities": [
+          {
+            "id": 205840,
+            "names": {
+              "en": "Multifists",
+              "tw": "爆裂拳",
+              "kr": "폭렬권",
+              "fr": "Multipoing",
+              "de": "Faustwirbel",
+              "es": "Multipuñetazo"
+            },
+            "offset": 14,
+            "castTime": 10
+          }
+        ]
+      },
+      {
+        "id": 306001005,
+        "names": {
+          "en": "Marquis de Léon",
+          "tw": "獅王",
+          "kr": "킹 레오",
+          "fr": "Lord Lionel"
+        },
+        "abilities": [
+          {
+            "id": 205840,
+            "names": {
+              "en": "Multifists",
+              "tw": "爆裂拳",
+              "kr": "폭렬권",
+              "fr": "Multipoing",
+              "de": "Faustwirbel",
+              "es": "Multipuñetazo"
+            },
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -10022,7 +10503,7 @@
               "de": "Frost",
               "es": "Congelación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10048,7 +10529,7 @@
               "de": "Frost",
               "es": "Congelación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10071,7 +10552,7 @@
               "de": "Frost",
               "es": "Congelación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10097,7 +10578,7 @@
               "de": "Taucher - Regelation",
               "es": "Buceo - Regelación"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10120,7 +10601,7 @@
               "de": "Tiefgefrieren",
               "es": "Hipotermia total"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10151,7 +10632,8 @@
               "de": "Dunkelklinge der Rache",
               "es": "Alfanje del rencor"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -10168,14 +10650,15 @@
           {
             "id": 224540,
             "names": {
-              "en": "Heaven's Light",
-              "tw": "天照",
-              "kr": "천국의 빛",
-              "fr": "Lumière des cieux",
-              "de": "Himmelslicht",
-              "es": "Luz del cielo"
+              "en": "Heaven's Light + 2",
+              "tw": "天照 + 2",
+              "kr": "천국의 빛 + 2",
+              "fr": "Lumière des cieux + 2",
+              "de": "Himmelslicht + 2",
+              "es": "Luz del cielo + 2"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -10205,7 +10688,7 @@
               "de": "Aquagefängnis",
               "es": "Prisión acuática"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -10218,7 +10701,7 @@
               "de": "Aquagefängnis + 1",
               "es": "Prisión acuática + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -10231,7 +10714,7 @@
               "de": "Aquagefängnis + 2",
               "es": "Prisión acuática + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10254,7 +10737,7 @@
               "de": "Wahnsinnstanz",
               "es": "Danza loca"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10282,7 +10765,8 @@
               "de": "Verstärken",
               "es": "Fortín"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       },
@@ -10302,7 +10786,8 @@
               "tw": "奧義",
               "kr": "오의"
             },
-            "offset": 8
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -10332,7 +10817,7 @@
               "de": "Abyssus-Nova",
               "es": "Nova abismal"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10355,7 +10840,7 @@
               "de": "Chaoswelle",
               "es": "Ola caótica"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10381,7 +10866,7 @@
               "de": "Chaoswelle + 2",
               "es": "Ola caótica + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           },
           {
@@ -10394,7 +10879,7 @@
               "de": "Chaosdunkelheit",
               "es": "Oscuridad caótica"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           },
           {
@@ -10407,7 +10892,7 @@
               "de": "Chaosflammen",
               "es": "Fulgor caótico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           },
           {
@@ -10420,7 +10905,7 @@
               "de": "Chaoswelle + 1",
               "es": "Ola caótica + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           },
           {
@@ -10433,7 +10918,7 @@
               "de": "Chaoswelle + 2",
               "es": "Ola caótica + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10459,7 +10944,7 @@
               "de": "Arkanmagie - Ultima",
               "es": "Encantamiento arcano - Artema"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10482,7 +10967,7 @@
               "de": "Anemo-Welle",
               "es": "Anemola"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10508,7 +10993,7 @@
               "de": "Grimm - Schauerliche Welle",
               "es": "Parca - Ola de Eldritch"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10531,7 +11016,7 @@
               "de": "Himmel - Bist frei von Schuld",
               "es": "Cielo - Sin culpa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10554,7 +11039,7 @@
               "de": "Formel - Tobendes Feuer",
               "es": "Fórmula - Fuego implacable"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10577,7 +11062,7 @@
               "de": "Ifritschwert",
               "es": "Espada Ifrit"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           },
           {
@@ -10590,7 +11075,7 @@
               "de": "Räuberischer Freund",
               "es": "Diablillos voraces"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10613,7 +11098,7 @@
               "de": "Tanz der Schmetterlinge",
               "es": "Danza de la mariposa"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 50
           }
         ]
@@ -10644,7 +11129,7 @@
               "de": "Beben",
               "es": "Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10667,7 +11152,7 @@
               "de": "Erdspaltenvermeidung 2 + 2",
               "es": "Evasión partetierra II + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10690,7 +11175,7 @@
               "de": "Beben",
               "es": "Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -10703,7 +11188,7 @@
               "de": "Beben + 1",
               "es": "Seísmo + 1"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -10716,7 +11201,7 @@
               "de": "Beben + 2",
               "es": "Seísmo + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10739,7 +11224,7 @@
               "de": "Erdspaltenvermeidung 2 + 2",
               "es": "Evasión partetierra II + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10762,7 +11247,7 @@
               "de": "Beben",
               "es": "Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10785,7 +11270,7 @@
               "de": "Beben",
               "es": "Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10811,7 +11296,7 @@
               "de": "Beben",
               "es": "Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10834,7 +11319,7 @@
               "de": "Beben",
               "es": "Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10858,7 +11343,7 @@
               "de": "Weissagung - Omen des Zyklons",
               "es": "Predicción - Presagio ciclónico"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -10871,7 +11356,7 @@
               "de": "Sandsturm",
               "es": "Tormenta de arena"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           },
           {
@@ -10884,7 +11369,7 @@
               "de": "Weissagung - Sandsturm",
               "es": "Predicción - Tormenta de arena"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10907,7 +11392,7 @@
               "de": "Formel - Bebende Erde",
               "es": "Fórmula - Seísmo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10931,7 +11416,7 @@
               "de": "Befehl - Bassexplosion",
               "es": "Orden - Explosión de bajo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10954,7 +11439,7 @@
               "de": "Steinregen",
               "es": "Lluvia de piedra"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -10985,7 +11470,7 @@
               "de": "Mechanischer Ausfall",
               "es": "Mecadesfile"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -11010,7 +11495,7 @@
               "de": "Mechanischer Ausfall",
               "es": "Mecadesfile"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -11037,7 +11522,7 @@
               "de": "Vertikaler Luftschlag",
               "es": "Asalto aéreo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11060,7 +11545,7 @@
               "de": "Vertikaler Luftschlag",
               "es": "Asalto aéreo"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11088,7 +11573,7 @@
               "de": "Mechanischer Ausfall",
               "es": "Mecadesfile"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -11113,7 +11598,7 @@
               "de": "Lids Sommerspezial",
               "es": "Envío veraniego de Lid"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }
@@ -11141,7 +11626,7 @@
               "kr": "알테마 + 2",
               "es": "Artema + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11165,7 +11650,7 @@
               "kr": "알테마 + 2",
               "es": "Artema + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11189,7 +11674,7 @@
               "kr": "알테마 + 2",
               "es": "Artema + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11213,7 +11698,7 @@
               "kr": "알테마 + 2",
               "es": "Artema + 2"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11241,7 +11726,7 @@
               "de": "Einschießen",
               "es": "Puerta a las profundidades"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11264,7 +11749,7 @@
               "de": "Einschießen",
               "es": "Puerta a las profundidades"
             },
-            "offset": 16,
+            "offset": 14,
             "castTime": 40
           }
         ]
@@ -11292,7 +11777,7 @@
               "de": "Fataler Aufprall",
               "es": "Impacto fatal"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       },
@@ -11317,7 +11802,7 @@
               "de": "Direkter Aufprall",
               "es": "Impacto a bocajarro"
             },
-            "offset": 8
+            "offset": 14
           }
         ]
       }

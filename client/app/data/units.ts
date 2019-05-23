@@ -13045,6 +13045,25 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912391,
+        "names": {
+          "en": "Flughöhe + 2",
+          "tw": "飛行高度 + 2",
+          "kr": "비행 고도 + 2",
+          "es": "Altitud + 2"
+        },
+        "base": 500,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
         "id": 100013307,
         "names": {
           "en": "Kaiser Verteidiger",
@@ -13096,7 +13115,8 @@ export const UNITS: any[] = [
           3,
           4,
           5,
-          228003
+          228003,
+          912391
         ]
       }
     ]
@@ -13973,6 +13993,27 @@ export const UNITS: any[] = [
         base: 1000
       },
       {
+        "id": 707608,
+        "names": {
+          "en": "Martial Arts - Heaven Shift + 2",
+          "tw": "格鬥術·操氣天沖 + 2",
+          "kr": "격투술·조기천충 + 2",
+          "fr": "Art martial - Chang. céleste + 2",
+          "de": "Kampfkunst - Himmlischer Stoß + 2",
+          "es": "Artes marciales - Cambio celeste + 2"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 8, 8, 8, 8, 8, 10
+        ],
+        "castTime": 8,
+        "offset": 14,
+        "framesList": [
+          8, 5, 5, 5, 5, 5, 5, 5, 7, 7, 9, 9, 9, 9, 9, 9
+        ]
+      },
+      {
         id: 224650,
         names: {
           en: "Martial Arts - Overthrow",
@@ -14023,6 +14064,26 @@ export const UNITS: any[] = [
         offset: 32,
         base: 520
       },
+      {
+        "id": 707610,
+        "names": {
+          "en": "Martial Arts - Tojin Combo + 2",
+          "tw": "格鬥術·鬥神連擊 + 2",
+          "kr": "격투술·투신연격 + 2",
+          "fr": "Art martial - Combo Tojin + 2",
+          "de": "Kampfkunst - Salve des Kriegsgottes + 2",
+          "es": "Artes marciales - Combo Tojin + 2"
+        },
+        "base": 1400,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 55
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },,
       {
         "id": 508330,
         "names": {
@@ -14170,6 +14231,34 @@ export const UNITS: any[] = [
         framesList: [70, 7, 5, 7, 7, 7, 7],
         offset: 14,
         base: 680
+      },
+      {
+        id: 111224520,
+        names: {
+          en: "The Heavens Wept + 2",
+          tw: "天舞輪迴斬 + 2",
+          kr: "천무윤회참 + 2",
+          fr: "Affliction céleste + 2",
+          de: "Samsara-Spalter + 2",
+          es: "Furia transmigratoria + 2"
+        },
+        hitDamage: [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        castTime: 40,
+        debuffs: [
+          {
+            type: "light",
+            value: 60
+          },
+          {
+            type: "dark",
+            value: 60
+          }
+        ],
+        framesList: [70, 7, 5, 7, 7, 7, 7],
+        offset: 14,
+        base: 900
       },
       {
         id: 224550,
@@ -14335,6 +14424,26 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 111508320,
+        "names": {
+          "en": "Tragic End + 2",
+          "tw": "悲慘終結 + 2",
+          "kr": "비극적 결말 + 2",
+          "fr": "Fin tragique + 2",
+          "de": "Tragisches Ende + 2",
+          "es": "Final trágico + 2"
+        },
+        "base": 2800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "framesList": [
+          120
+        ],
+        "offset": 14
+      },
+      {
         id: 207001007,
         names: {
           en: "One-Winged Angel",
@@ -14358,6 +14467,22 @@ export const UNITS: any[] = [
         framesList: [220],
         base: 1150,
         ignore: 50
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          224520,
+          111224520,
+          224530,
+          224540,
+          224510,
+          224570,
+          228052,
+          228053,
+          228051,
+        ]
       }
     ]
   },
@@ -14782,6 +14907,31 @@ export const UNITS: any[] = [
         base: 1750
       },
       {
+        "id": 707565,
+        "names": {
+          "en": "Eidolon Mindflayer's Chant + 2",
+          "tw": "幻獸奪心魔的詠唱 + 2",
+          "kr": "환수 마인드 플레어의 영창 + 2",
+          "fr": "Éon : Chant de Psychopolype + 2",
+          "de": "Beschwörbarer Gedankenschinder: Intonation + 2",
+          "es": "Eidolón: canto del mentalis + 2"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          140
+        ]
+      },
+      {
         id: 20430,
         names: {
           en: "Meteor",
@@ -14821,6 +14971,31 @@ export const UNITS: any[] = [
         base: 1950
       },
       {
+        "id": 912406,
+        "names": {
+          "en": "Eidolon Bomb Explosion + 2",
+          "tw": "幻獸炸彈的自爆 + 2",
+          "kr": "환수 봄의 자폭 + 2",
+          "fr": "Éon : Explosion de Bombo + 2",
+          "de": "Beschwörbarer Bomber: Explosion + 2",
+          "es": "Eidolón: explosión bom + 2"
+        },
+        "damage": "magic",
+        "base": 2500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
         "id": 508281,
         "names": {
           "en": "Burst Storm",
@@ -14857,6 +15032,42 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912415,
+        "names": {
+          "en": "Burst Storm + 2",
+          "tw": "爆裂風暴 + 2",
+          "kr": "버스트 스톰 + 2",
+          "fr": "Tempête explosive + 2",
+          "de": "Rauschender Sturm + 2",
+          "es": "Explosión tormentosa + 2"
+        },
+        "damage": "magic",
+        "base": 2400,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "wind",
+            "value": 100
+          },
+          {
+            "type": "earth",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
         "id": 204001507,
         "names": {
           "en": "Mist Dragon Breath",
@@ -14878,14 +15089,15 @@ export const UNITS: any[] = [
         ]
       }
     ],
-    multipleBlack: 2,
+    multipleBlack: 3,
     "multiCasts": [
       {
         "count": 2,
         "abilities": [
           223400,
           223420,
-          223430
+          223430,
+          707565
         ]
       }
     ]
@@ -14925,6 +15137,32 @@ export const UNITS: any[] = [
         base: 600
       },
       {
+        "id": 707573,
+        "names": {
+          "en": "Piercing Darkness + 2",
+          "tw": "刺骨黑暗 + 2",
+          "kr": "피어싱 스크로 + 2",
+          "fr": "Ténèbres perçantes + 2",
+          "de": "Dunkeldurchstoß + 2",
+          "es": "Tiniebla penetrante + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 8, 8, 8, 8, 8, 10
+        ],
+        "castTime": 8,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          8, 5, 5, 5, 5, 5, 5, 5, 7, 7, 9, 9, 9, 9, 9, 9
+        ]
+      },
+      {
         id: 223490,
         names: {
           en: "Piercing Aqua",
@@ -14948,6 +15186,32 @@ export const UNITS: any[] = [
         base: 600
       },
       {
+        "id": 707571,
+        "names": {
+          "en": "Piercing Aqua + 2",
+          "tw": "刺骨冰水 + 2",
+          "kr": "피어싱 아쿠아 + 2",
+          "fr": "Eau perçante + 2",
+          "de": "Wasserdurchstoß + 2",
+          "es": "Agua penetrante + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 8, 8, 8, 8, 8, 10
+        ],
+        "castTime": 8,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          8, 5, 5, 5, 5, 5, 5, 5, 7, 7, 9, 9, 9, 9, 9, 9
+        ]
+      },
+      {
         id: 223480,
         names: {
           en: "Piercing Air",
@@ -14969,6 +15233,32 @@ export const UNITS: any[] = [
         framesList: [2, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
         offset: 8,
         base: 600
+      },
+      {
+        "id": 707569,
+        "names": {
+          "en": "Piercing Air + 2",
+          "tw": "刺骨寒風 + 2",
+          "kr": "피어싱 에어 + 2",
+          "fr": "Vent perçant + 2",
+          "de": "Luftdurchstoß + 2",
+          "es": "Viento penetrante + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 8, 8, 8, 8, 8, 10
+        ],
+        "castTime": 8,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          8, 5, 5, 5, 5, 5, 5, 5, 7, 7, 9, 9, 9, 9, 9, 9
+        ]
       },
       {
         id: 223470,
@@ -15009,6 +15299,27 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912402,
+        "names": {
+          "en": "Dragon Raid+ + 2",
+          "tw": "龍之劍改 + 2",
+          "kr": "개량형 드래곤 레이드 + 2",
+          "fr": "Raid de dragon + + 2",
+          "de": "Drachenangriff+ + 2",
+          "es": "Ataque dragón + 2"
+        },
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
         "id": 508290,
         "names": {
           "en": "Piercing Dead",
@@ -15020,17 +15331,13 @@ export const UNITS: any[] = [
         },
         "base": 1000,
         "hitDamage": [
-          30,
-          30,
-          40
+          30, 30, 40
         ],
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
         "framesList": [
-          46,
-          10,
-          10
+          46, 10, 10
         ]
       },
       {
@@ -15073,6 +15380,21 @@ export const UNITS: any[] = [
           182
         ]
       }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          223480,
+          223490,
+          223500,
+          707569,
+          707571,
+          707573,
+          223470,
+          508290
+        ]
+      }
     ]
   },
   {
@@ -15102,6 +15424,27 @@ export const UNITS: any[] = [
         ignore: 50
       },
       {
+        "id": 707577,
+        "names": {
+          "en": "All-out Scuffle + 2",
+          "tw": "全力格鬥 + 2",
+          "kr": "전력 격투 + 2",
+          "fr": "Rixe totale + 2",
+          "de": "Kompromissloser Nahkampf + 2",
+          "es": "Reyerta total + 2"
+        },
+        "base": 250,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 15, 15
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
         id: 204000706,
         names: {
           en: "Happo Ranbu",
@@ -15123,7 +15466,8 @@ export const UNITS: any[] = [
       {
         count: 2,
         abilities: [
-          223790
+          223790,
+          707577
         ]
       }
     ]
@@ -15199,6 +15543,36 @@ export const UNITS: any[] = [
         framesList: [80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
         offset: 14,
         base: 250
+      },
+      {
+        "id": 70441,
+        "names": {
+          "en": "Tornado + 2",
+          "tw": "龍捲風 + 2",
+          "kr": "토네이도 + 2",
+          "fr": "Tornade + 2"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
       },
       {
         id: 100014106,
@@ -37622,1114 +37996,1317 @@ export const UNITS: any[] = [
     maxChainCap: 6
   },
   {
-  "id": 245,
-  "names": {
-    "en": "Yego",
-    "tw": "伊戈",
-    "kr": "이고"
-  },
-  "abilities": [
-    {
-      "id": 229412,
-      "names": {
-        "en": "Smash",
-        "tw": "猛擊",
-        "kr": "맹타",
-        "fr": "Fracas",
-        "de": "Niederschlagen",
-        "es": "Estragos"
-      },
-      "base": 350,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        44
-      ]
+    "id": 245,
+    "names": {
+      "en": "Yego",
+      "tw": "伊戈",
+      "kr": "이고"
     },
-    {
-      "id": 20240,
-      "names": {
-        "en": "Aeroga",
-        "tw": "大勁風",
-        "kr": "에어로가",
-        "fr": "Vent X",
-        "es": "Aero++"
-      },
-      "damage": "magic",
-      "base": 180,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "magicType": "black",
-      "elements": [
-        "wind"
-      ],
-      "dualable": false,
-      "offset": 14,
-      "framesList": [
-        110
-      ]
-    },
-    {
-      "id": 229414,
-      "names": {
-        "en": "Malboro Tentacle",
-        "tw": "毛爾波爾觸手",
-        "kr": "몰볼의 촉수",
-        "fr": "Tentacule de morbol",
-        "de": "Morbol-Tentakel",
-        "es": "Tentáculo molbol"
-      },
-      "base": 280,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        70
-      ]
-    },
-    {
-      "id": 229419,
-      "names": {
-        "en": "Wild Whip",
-        "tw": "狂野鞭打",
-        "kr": "맹렬한 채찍",
-        "fr": "Fouet sauvage",
-        "de": "Wilder Peitschenhieb",
-        "es": "Látigo salvaje"
-      },
-      "base": 480,
-      "hitDamage": [
-        33,
-        33,
-        34
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        45,
-        4,
-        4
-      ]
-    },
-    {
-      "id": 20330,
-      "names": {
-        "en": "Aeroja",
-        "tw": "強勁風",
-        "kr": "에어로쟈",
-        "fr": "Vent max",
-        "de": "Aeroka",
-        "es": "Aero+++"
-      },
-      "damage": "magic",
-      "base": 600,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "magicType": "black",
-      "elements": [
-        "wind"
-      ],
-      "dualable": false,
-      "offset": 14,
-      "framesList": [
-        170
-      ]
-    },
-    {
-      "id": 229420,
-      "names": {
-        "en": "Ground Whip",
-        "tw": "大地之鞭",
-        "kr": "대지의 채찍",
-        "fr": "Fouet tellurique",
-        "de": "Bodenpeitsche",
-        "es": "Látigo terrestre"
-      },
-      "base": 560,
-      "hitDamage": [
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        30
-      ],
-      "castTime": 40,
-      "elements": [
-        "earth"
-      ],
-      "offset": 14,
-      "debuffs": [
-        {
-          "type": "earth",
-          "value": 75
-        }
-      ],
-      "framesList": [
-        70,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6
-      ]
-    },
-    {
-      "id": 229426,
-      "names": {
-        "en": "Brutal Whip",
-        "tw": "殘暴鞭",
-        "kr": "무자비한 채찍",
-        "fr": "Fouet brutal",
-        "de": "Brutale Peitsche",
-        "es": "Látigo brutal"
-      },
-      "base": 700,
-      "hitDamage": [
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        30
-      ],
-      "castTime": 40,
-      "elements": [
-        "earth"
-      ],
-      "offset": 14,
-      "debuffs": [
-        {
-          "type": "earth",
-          "value": 100
-        }
-      ],
-      "framesList": [
-        70,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6
-      ]
-    },
-    {
-      "id": 509015,
-      "names": {
-        "en": "Toxic Whip",
-        "tw": "強毒鞭",
-        "kr": "맹독성 채찍 조이기",
-        "fr": "Fouet hyper venimeux",
-        "de": "Giftpeitsche",
-        "es": "Pongámonos serios"
-      },
-      "base": 1600,
-      "hitDamage": [
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        16,
-        24
-      ],
-      "castTime": 20,
-      "offset": 14,
-      "framesList": [
-        38,
-        15,
-        14,
-        24,
-        3,
-        13,
-        13,
-        44
-      ]
-    },
-    {
-      "id": 100019207,
-      "names": {
-        "en": "Malboro Bite",
-        "tw": "毛爾波爾咬",
-        "kr": "몰볼 바이트",
-        "fr": "Morsure de morbol",
-        "de": "Morbol-Biss",
-        "es": "Mordisco de molbol"
-      },
-      "base": 2600,
-      "hitDamage": [
-        100
-      ],
-      "dualable": false,
-      "offset": 8,
-      "framesList": [
-        156
-      ]
-    }
-  ],
-  "multiCasts": [
-    {
-      "count": 3,
-      "abilities": [
-        229412,
-        229413,
-        229414,
-        229418,
-        229419,
-        229420,
-        229425,
-        229426,
-        229427,
-        229428,
-        509010,
-        509015
-      ]
-    }
-  ]
-},
-{
-  "id": 248,
-  "names": {
-    "en": "Nagi",
-    "tw": "那岐",
-    "kr": "나기"
-  },
-  "abilities": [
-    {
-      "id": 229392,
-      "names": {
-        "en": "Water Projection",
-        "tw": "水影",
-        "kr": "수영",
-        "fr": "Projection aquatique",
-        "de": "Wasserprojektion",
-        "es": "Proyección acuosa"
-      },
-      "damage": "hybrid",
-      "base": 750,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "elements": [
-        "water"
-      ],
-      "offset": 14,
-      "framesList": [
-        190
-      ]
-    },
-    {
-      "id": 229393,
-      "names": {
-        "en": "Ice Splinters",
-        "tw": "冰粒",
-        "kr": "빙립",
-        "fr": "Échardes de glace",
-        "de": "Eissplitter",
-        "es": "Partículas de hielo"
-      },
-      "damage": "hybrid",
-      "base": 750,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "elements": [
-        "ice"
-      ],
-      "offset": 14,
-      "framesList": [
-        240
-      ]
-    },
-    {
-      "id": 229394,
-      "names": {
-        "en": "Yin-Yang Bind",
-        "tw": "陰陽影縫",
-        "kr": "음양의 그림자 묶기",
-        "fr": "Lien du Yin et Yang",
-        "de": "Ying-Yang Stickerei",
-        "es": "Amarre yin-yang"
-      },
-      "damage": "hybrid",
-      "base": 500,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 20,
-      "offset": 14,
-      "framesList": [
-        50
-      ]
-    },
-    {
-      "id": 229398,
-      "names": {
-        "en": "Poison Mist",
-        "tw": "毒霧",
-        "kr": "독안개",
-        "fr": "Brume empoisonnée",
-        "de": "Giftnebel",
-        "es": "Niebla venenosa"
-      },
-      "damage": "hybrid",
-      "base": 550,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        180
-      ]
-    },
-    {
-      "id": 229399,
-      "names": {
-        "en": "Brilliance",
-        "tw": "炫目",
-        "kr": "현요",
-        "fr": "Illumination",
-        "de": "Brillianz",
-        "es": "Resplandor"
-      },
-      "damage": "hybrid",
-      "base": 1650,
-      "hitDamage": [
-        14,
-        14,
-        14,
-        14,
-        14,
-        14,
-        16
-      ],
-      "castTime": 40,
-      "elements": [
-        "light"
-      ],
-      "offset": 14,
-      "debuffs": [
-        {
-          "type": "light",
-          "value": 100
-        }
-      ],
-      "framesList": [
-        70,
-        7,
-        5,
-        7,
-        7,
-        7,
-        7
-      ]
-    },
-    {
-      "id": 229400,
-      "names": {
-        "en": "Dark Spirits",
-        "tw": "幽暗",
-        "kr": "유암",
-        "fr": "Esprits obscurs",
-        "de": "Dunkle Geister",
-        "es": "Ánimos oscuros"
-      },
-      "damage": "hybrid",
-      "base": 1650,
-      "hitDamage": [
-        14,
-        14,
-        14,
-        14,
-        14,
-        14,
-        16
-      ],
-      "castTime": 40,
-      "elements": [
-        "dark"
-      ],
-      "offset": 14,
-      "debuffs": [
-        {
-          "type": "dark",
-          "value": 100
-        }
-      ],
-      "framesList": [
-        70,
-        7,
-        5,
-        7,
-        7,
-        7,
-        7
-      ]
-    },
-    {
-      "id": 229401,
-      "names": {
-        "en": "Dying Flora",
-        "tw": "瀕死之花",
-        "kr": "무성화",
-        "fr": "Fleur mourante",
-        "de": "Sterbende Pflanzen",
-        "es": "Flora moribunda"
-      },
-      "damage": "hybrid",
-      "base": 1100,
-      "hitDamage": [
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        10
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "debuffs": [
-        {
-          "type": "ice",
-          "value": 60
+    "abilities": [
+      {
+        "id": 229412,
+        "names": {
+          "en": "Smash",
+          "tw": "猛擊",
+          "kr": "맹타",
+          "fr": "Fracas",
+          "de": "Niederschlagen",
+          "es": "Estragos"
         },
-        {
-          "type": "wind",
-          "value": 60
-        }
-      ],
-      "framesList": [
-        80,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10
-      ]
-    },
-    {
-      "id": 229405,
-      "names": {
-        "en": "Projection - Dance of Darkness",
-        "tw": "投影·暗亂舞",
-        "kr": "투영·암난무",
-        "fr": "Projection - Danse des ténèbres",
-        "de": "Projektion - Tanz der Dunkelheit",
-        "es": "Proyección - Danza oscura"
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          44
+        ]
       },
-      "damage": "hybrid",
-      "base": 1750,
-      "hitDamage": [
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4
-      ],
-      "castTime": 40,
-      "elements": [
-        "dark"
-      ],
-      "offset": 14,
-      "framesList": [
-        42,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4
-      ]
-    },
-    {
-      "id": 509001,
-      "names": {
-        "en": "Projection - Dance of Destruction",
-        "tw": "投影·滅卻亂舞",
-        "kr": "투영·멸각난무",
-        "fr": "Projection - Danse de la destruction",
-        "de": "Projektion - Tanz der Zerstörung",
-        "es": "Proyección - Danza destructiva"
+      {
+        "id": 20240,
+        "names": {
+          "en": "Aeroga",
+          "tw": "大勁風",
+          "kr": "에어로가",
+          "fr": "Vent X",
+          "es": "Aero++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
       },
-      "damage": "hybrid",
-      "base": 2800,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "elements": [
-        "dark"
-      ],
-      "offset": 14,
-      "framesList": [
-        60
-      ]
-    },
-    {
-      "id": 100019107,
-      "names": {
-        "en": "Illusory Possession - Fox Fire",
-        "tw": "幻想憑依·狐火",
-        "kr": "환상빙의·여우불",
-        "fr": "Possession illusoire - Renard de feu",
-        "de": "Illusorische Besessenheit - Fuchslichter",
-        "es": "Posesión ilusoria - Fuego de zorro"
+      {
+        "id": 229414,
+        "names": {
+          "en": "Malboro Tentacle",
+          "tw": "毛爾波爾觸手",
+          "kr": "몰볼의 촉수",
+          "fr": "Tentacule de morbol",
+          "de": "Morbol-Tentakel",
+          "es": "Tentáculo molbol"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70
+        ]
       },
-      "damage": "hybrid",
-      "base": 3000,
-      "hitDamage": [
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        45
-      ],
-      "dualable": false,
-      "offset": 8,
-      "framesList": [
-        86,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        53,
-        143
-      ]
-    }
-  ]
-},
-{
-  "id": 247,
-  "names": {
-    "en": "Zolulu & Delulu",
-    "tw": "佐魯魯&德魯魯",
-    "kr": "조루루&데루루",
-    "es": "Zolulu y Delulu"
+      {
+        "id": 229419,
+        "names": {
+          "en": "Wild Whip",
+          "tw": "狂野鞭打",
+          "kr": "맹렬한 채찍",
+          "fr": "Fouet sauvage",
+          "de": "Wilder Peitschenhieb",
+          "es": "Látigo salvaje"
+        },
+        "base": 480,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          45, 4, 4
+        ]
+      },
+      {
+        "id": 20330,
+        "names": {
+          "en": "Aeroja",
+          "tw": "強勁風",
+          "kr": "에어로쟈",
+          "fr": "Vent max",
+          "de": "Aeroka",
+          "es": "Aero+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          170
+        ]
+      },
+      {
+        "id": 229420,
+        "names": {
+          "en": "Ground Whip",
+          "tw": "大地之鞭",
+          "kr": "대지의 채찍",
+          "fr": "Fouet tellurique",
+          "de": "Bodenpeitsche",
+          "es": "Látigo terrestre"
+        },
+        "base": 560,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229426,
+        "names": {
+          "en": "Brutal Whip",
+          "tw": "殘暴鞭",
+          "kr": "무자비한 채찍",
+          "fr": "Fouet brutal",
+          "de": "Brutale Peitsche",
+          "es": "Látigo brutal"
+        },
+        "base": 700,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509015,
+        "names": {
+          "en": "Toxic Whip",
+          "tw": "強毒鞭",
+          "kr": "맹독성 채찍 조이기",
+          "fr": "Fouet hyper venimeux",
+          "de": "Giftpeitsche",
+          "es": "Pongámonos serios"
+        },
+        "base": 1600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 16, 24
+        ],
+        "castTime": 20,
+        "offset": 14,
+        "framesList": [
+          38, 15, 14, 24, 3, 13, 13, 44
+        ]
+      },
+      {
+        "id": 100019207,
+        "names": {
+          "en": "Malboro Bite",
+          "tw": "毛爾波爾咬",
+          "kr": "몰볼 바이트",
+          "fr": "Morsure de morbol",
+          "de": "Morbol-Biss",
+          "es": "Mordisco de molbol"
+        },
+        "base": 2600,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          156
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229412,
+          229413,
+          229414,
+          229418,
+          229419,
+          229420,
+          229425,
+          229426,
+          229427,
+          229428,
+          509010,
+          509015
+        ]
+      }
+    ]
   },
-  "abilities": [
-    {
-      "id": 229373,
-      "names": {
-        "en": "Disarm Target",
-        "tw": "解除武裝",
-        "kr": "무장 타겟",
-        "fr": "Désarmement - Arme",
-        "de": "Ziel entwaffnen",
-        "es": "Desarme"
-      },
-      "base": 200,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        87
-      ]
+  {
+    "id": 248,
+    "names": {
+      "en": "Nagi",
+      "tw": "那岐",
+      "kr": "나기"
     },
-    {
-      "id": 229374,
-      "names": {
-        "en": "Deshield Target",
-        "tw": "解除護盾",
-        "kr": "보호구 타겟",
-        "fr": "Désarmement - Bouclier",
-        "de": "Ziel abrüsten",
-        "es": "Desamparo"
+    "abilities": [
+      {
+        "id": 229392,
+        "names": {
+          "en": "Water Projection",
+          "tw": "水影",
+          "kr": "수영",
+          "fr": "Projection aquatique",
+          "de": "Wasserprojektion",
+          "es": "Proyección acuosa"
+        },
+        "damage": "hybrid",
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "framesList": [
+          190
+        ]
       },
-      "base": 200,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        87
-      ]
-    },
-    {
-      "id": 20210,
-      "names": {
-        "en": "Blizzaga",
-        "tw": "大暴雪",
-        "kr": "블리자가",
-        "fr": "Glace X",
-        "de": "Eisga",
-        "es": "Hielo++"
+      {
+        "id": 229393,
+        "names": {
+          "en": "Ice Splinters",
+          "tw": "冰粒",
+          "kr": "빙립",
+          "fr": "Échardes de glace",
+          "de": "Eissplitter",
+          "es": "Partículas de hielo"
+        },
+        "damage": "hybrid",
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "framesList": [
+          240
+        ]
       },
-      "damage": "magic",
-      "base": 180,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "magicType": "black",
-      "elements": [
-        "ice"
-      ],
-      "dualable": false,
-      "offset": 14,
-      "framesList": [
-        150
-      ]
-    },
-    {
-      "id": 229378,
-      "names": {
-        "en": "Raging Bow",
-        "tw": "烈弓",
-        "kr": "분노의 화살",
-        "fr": "Arc enragé",
-        "de": "Tobender Bogen",
-        "es": "Arco furioso"
+      {
+        "id": 229394,
+        "names": {
+          "en": "Yin-Yang Bind",
+          "tw": "陰陽影縫",
+          "kr": "음양의 그림자 묶기",
+          "fr": "Lien du Yin et Yang",
+          "de": "Ying-Yang Stickerei",
+          "es": "Amarre yin-yang"
+        },
+        "damage": "hybrid",
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 20,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
       },
-      "base": 230,
-      "hitDamage": [
-        20,
-        20,
-        20,
-        20,
-        20
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        50,
-        10,
-        10,
-        10,
-        10
-      ]
-    },
-    {
-      "id": 229379,
-      "names": {
-        "en": "Straining Shot",
-        "tw": "滿弓射擊",
-        "kr": "전력 사격",
-        "fr": "Tir incapacitant",
-        "de": "Angespannter Schuss",
-        "es": "Tiro tensado"
+      {
+        "id": 229398,
+        "names": {
+          "en": "Poison Mist",
+          "tw": "毒霧",
+          "kr": "독안개",
+          "fr": "Brume empoisonnée",
+          "de": "Giftnebel",
+          "es": "Niebla venenosa"
+        },
+        "damage": "hybrid",
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          180
+        ]
       },
-      "base": 340,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        80
-      ]
-    },
-    {
-      "id": 229382,
-      "names": {
-        "en": "Thunder Scheme",
-        "tw": "偽計的雷箭",
-        "kr": "속임수의 번개 화살",
-        "fr": "Plan électrique",
-        "de": "Donnerplan",
-        "es": "Plan relámpago"
+      {
+        "id": 229399,
+        "names": {
+          "en": "Brilliance",
+          "tw": "炫目",
+          "kr": "현요",
+          "fr": "Illumination",
+          "de": "Brillianz",
+          "es": "Resplandor"
+        },
+        "damage": "hybrid",
+        "base": 1650,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
       },
-      "base": 280,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "elements": [
-        "lightning"
-      ],
-      "offset": 14,
-      "framesList": [
-        80
-      ]
-    },
-    {
-      "id": 100019306,
-      "names": {
-        "en": "Dirty Combination",
-        "tw": "骯髒連擊",
-        "kr": "더러운 협동 플레이",
-        "fr": "Combinaison fourbe",
-        "de": "Schmutzige Kombo",
-        "es": "Combinación turbia"
+      {
+        "id": 229400,
+        "names": {
+          "en": "Dark Spirits",
+          "tw": "幽暗",
+          "kr": "유암",
+          "fr": "Esprits obscurs",
+          "de": "Dunkle Geister",
+          "es": "Ánimos oscuros"
+        },
+        "damage": "hybrid",
+        "base": 1650,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
       },
-      "base": 900,
-      "hitDamage": [
-        8,
-        8,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        29
-      ],
-      "dualable": false,
-      "offset": 8,
-      "framesList": [
-        75,
-        6,
-        5,
-        5,
-        5,
-        5,
-        7,
-        10,
-        7,
-        8,
-        9,
-        10,
-        11,
-        21
-      ]
-    }
-  ]
-},
-{
-  "id": 246,
-  "names": {
-    "en": "Galas",
-    "tw": "伽拉斯",
-    "kr": "갈라스"
+      {
+        "id": 229401,
+        "names": {
+          "en": "Dying Flora",
+          "tw": "瀕死之花",
+          "kr": "무성화",
+          "fr": "Fleur mourante",
+          "de": "Sterbende Pflanzen",
+          "es": "Flora moribunda"
+        },
+        "damage": "hybrid",
+        "base": 1100,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 60
+          },
+          {
+            "type": "wind",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229405,
+        "names": {
+          "en": "Projection - Dance of Darkness",
+          "tw": "投影·暗亂舞",
+          "kr": "투영·암난무",
+          "fr": "Projection - Danse des ténèbres",
+          "de": "Projektion - Tanz der Dunkelheit",
+          "es": "Proyección - Danza oscura"
+        },
+        "damage": "hybrid",
+        "base": 1750,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 509001,
+        "names": {
+          "en": "Projection - Dance of Destruction",
+          "tw": "投影·滅卻亂舞",
+          "kr": "투영·멸각난무",
+          "fr": "Projection - Danse de la destruction",
+          "de": "Projektion - Tanz der Zerstörung",
+          "es": "Proyección - Danza destructiva"
+        },
+        "damage": "hybrid",
+        "base": 2800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 100019107,
+        "names": {
+          "en": "Illusory Possession - Fox Fire",
+          "tw": "幻想憑依·狐火",
+          "kr": "환상빙의·여우불",
+          "fr": "Possession illusoire - Renard de feu",
+          "de": "Illusorische Besessenheit - Fuchslichter",
+          "es": "Posesión ilusoria - Fuego de zorro"
+        },
+        "damage": "hybrid",
+        "base": 3000,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 45
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          86, 10, 10, 10, 10, 10, 10, 10, 10, 10, 53, 143
+        ]
+      }
+    ]
   },
-  "abilities": [
-    {
-      "id": 229351,
-      "names": {
-        "en": "Slash Down",
-        "tw": "落下斬擊",
-        "kr": "내려치기",
-        "fr": "Coup bas",
-        "de": "Fallschnitt",
-        "es": "Despedazar"
-      },
-      "base": 180,
-      "hitDamage": [
-        100
-      ],
-      "offset": 8,
-      "framesList": [
-        2
-      ]
+  {
+    "id": 247,
+    "names": {
+      "en": "Zolulu & Delulu",
+      "tw": "佐魯魯&德魯魯",
+      "kr": "조루루&데루루",
+      "es": "Zolulu y Delulu"
     },
-    {
-      "id": 229352,
-      "names": {
-        "en": "Muscle Press",
-        "tw": "肌肉強壓",
-        "kr": "근육 압박",
-        "fr": "Pression musculaire",
-        "de": "Muskelpresse",
-        "es": "Presión muscular"
+    "abilities": [
+      {
+        "id": 229373,
+        "names": {
+          "en": "Disarm Target",
+          "tw": "解除武裝",
+          "kr": "무장 타겟",
+          "fr": "Désarmement - Arme",
+          "de": "Ziel entwaffnen",
+          "es": "Desarme"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          87
+        ]
       },
-      "base": 220,
-      "hitDamage": [
-        100
-      ],
-      "offset": 8,
-      "framesList": [
-        2
-      ]
+      {
+        "id": 229374,
+        "names": {
+          "en": "Deshield Target",
+          "tw": "解除護盾",
+          "kr": "보호구 타겟",
+          "fr": "Désarmement - Bouclier",
+          "de": "Ziel abrüsten",
+          "es": "Desamparo"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          87
+        ]
+      },
+      {
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 229378,
+        "names": {
+          "en": "Raging Bow",
+          "tw": "烈弓",
+          "kr": "분노의 화살",
+          "fr": "Arc enragé",
+          "de": "Tobender Bogen",
+          "es": "Arco furioso"
+        },
+        "base": 230,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          50, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229379,
+        "names": {
+          "en": "Straining Shot",
+          "tw": "滿弓射擊",
+          "kr": "전력 사격",
+          "fr": "Tir incapacitant",
+          "de": "Angespannter Schuss",
+          "es": "Tiro tensado"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 229382,
+        "names": {
+          "en": "Thunder Scheme",
+          "tw": "偽計的雷箭",
+          "kr": "속임수의 번개 화살",
+          "fr": "Plan électrique",
+          "de": "Donnerplan",
+          "es": "Plan relámpago"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 100019306,
+        "names": {
+          "en": "Dirty Combination",
+          "tw": "骯髒連擊",
+          "kr": "더러운 협동 플레이",
+          "fr": "Combinaison fourbe",
+          "de": "Schmutzige Kombo",
+          "es": "Combinación turbia"
+        },
+        "base": 900,
+        "hitDamage": [
+          8, 8, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 29
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          75, 6, 5, 5, 5, 5, 7, 10, 7, 8, 9, 10, 11, 21
+        ]
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "names": {
+      "en": "Galas",
+      "tw": "伽拉斯",
+      "kr": "갈라스"
     },
-    {
-      "id": 229353,
-      "names": {
-        "en": "Massive Cut",
-        "tw": "大切斷",
-        "kr": "대절단",
-        "fr": "Super coup",
-        "de": "Superschnitt",
-        "es": "Supercorte"
+    "abilities": [
+      {
+        "id": 229351,
+        "names": {
+          "en": "Slash Down",
+          "tw": "落下斬擊",
+          "kr": "내려치기",
+          "fr": "Coup bas",
+          "de": "Fallschnitt",
+          "es": "Despedazar"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
       },
-      "base": 150,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 40,
-      "offset": 14,
-      "framesList": [
-        42
-      ]
+      {
+        "id": 229352,
+        "names": {
+          "en": "Muscle Press",
+          "tw": "肌肉強壓",
+          "kr": "근육 압박",
+          "fr": "Pression musculaire",
+          "de": "Muskelpresse",
+          "es": "Presión muscular"
+        },
+        "base": 220,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 229353,
+        "names": {
+          "en": "Massive Cut",
+          "tw": "大切斷",
+          "kr": "대절단",
+          "fr": "Super coup",
+          "de": "Superschnitt",
+          "es": "Supercorte"
+        },
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 229355,
+        "names": {
+          "en": "Power Rush",
+          "tw": "力量衝擊",
+          "kr": "힘의 돌진",
+          "fr": "Ruée de puissance",
+          "de": "Machtrausch",
+          "es": "Riada de poder"
+        },
+        "base": 260,
+        "hitDamage": [
+          10, 10, 10, 70
+        ],
+        "castTime": 29,
+        "offset": 14,
+        "framesList": [
+          31, 11, 12, 53
+        ]
+      },
+      {
+        "id": 229356,
+        "names": {
+          "en": "Hell's Fissure",
+          "tw": "地獄裂縫",
+          "kr": "지옥의 균열",
+          "fr": "Fissure infernale",
+          "de": "Höllenriss",
+          "es": "Grieta infernal"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "elements": [
+          "earth"
+        ],
+        "offset": 8,
+        "framesList": [
+          107
+        ]
+      },
+      {
+        "id": 229357,
+        "names": {
+          "en": "Jab",
+          "tw": "根基",
+          "kr": "거센 찌르기",
+          "fr": "Prescription",
+          "de": "Kinnhaken",
+          "es": "Prescripción"
+        },
+        "base": 270,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 229360,
+        "names": {
+          "en": "Bloody Chopper",
+          "tw": "嗜血撕裂者",
+          "kr": "피의 흉검",
+          "fr": "Couperet sanglant",
+          "de": "Bluthacker",
+          "es": "Tajo sangriento"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 29,
+        "offset": 14,
+        "framesList": [
+          140
+        ]
+      },
+      {
+        "id": 229361,
+        "names": {
+          "en": "Ground Shake",
+          "tw": "大地震擊",
+          "kr": "대지 흔들기",
+          "fr": "Secousse violente",
+          "de": "Bodentremor",
+          "es": "Temblor de tierra"
+        },
+        "base": 250,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "framesList": [
+          60, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 100019405,
+        "names": {
+          "en": "Sparking Destroyer",
+          "tw": "破壞火花",
+          "kr": "섬광의 파괴자",
+          "fr": "Destructeur électrique",
+          "de": "Funkenschlagender Zerstörer",
+          "es": "Destructor chispeante"
+        },
+        "base": 800,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 52
+        ],
+        "dualable": false,
+        "offset": 8,
+        "framesList": [
+          139, 6, 12, 3, 6, 6, 8, 10, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "names": {
+      "en": "King Edgar of Figaro",
+      "tw": "費加羅國王埃德加",
+      "kr": "피가로의 왕 에드가",
+      "fr": "Edgar, roi de Figaro",
+      "de": "König Edgar von Figaro",
+      "es": "Edgar, rey de Fígaro"
     },
-    {
-      "id": 229355,
-      "names": {
-        "en": "Power Rush",
-        "tw": "力量衝擊",
-        "kr": "힘의 돌진",
-        "fr": "Ruée de puissance",
-        "de": "Machtrausch",
-        "es": "Riada de poder"
+    "abilities": [
+      {
+        "id": 229940,
+        "names": {
+          "en": "Auto Crossbow (FFVI)",
+          "tw": "自動弩",
+          "kr": "자동 석궁",
+          "fr": "Arbalète à rafales",
+          "de": "Auto-Armbrust (FFVI)",
+          "es": "Autoballesta (FFVI)"
+        },
+        "base": 180,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 5, 5, 5, 5
+        ]
       },
-      "base": 260,
-      "hitDamage": [
-        10,
-        10,
-        10,
-        70
-      ],
-      "castTime": 29,
-      "offset": 14,
-      "framesList": [
-        31,
-        11,
-        12,
-        53
-      ]
+      {
+        "id": 229943,
+        "names": {
+          "en": "Flash (FFVI)",
+          "tw": "強光照射器",
+          "kr": "태양 광선",
+          "fr": "Flash",
+          "de": "Gleißer (FFVI)"
+        },
+        "base": 300,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          60, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229944,
+        "names": {
+          "en": "Drill (FFVI)",
+          "tw": "鑽頭",
+          "kr": "드릴",
+          "fr": "Foreuse",
+          "de": "Bohrer (FFVI)",
+          "es": "Taladro (FFVI)"
+        },
+        "base": 240,
+        "hitDamage": [
+          5, 95
+        ],
+        "castTime": 18,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          20, 127
+        ]
+      },
+      {
+        "id": 229945,
+        "names": {
+          "en": "Chainsaw (FFVI)",
+          "tw": "回轉電鋸",
+          "kr": "회전톱",
+          "fr": "Tronçonneuse",
+          "de": "Kettensäge (FFVI)",
+          "es": "Sierra mecánica (FFVI)"
+        },
+        "base": 480,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229948,
+        "names": {
+          "en": "Air Anchor",
+          "tw": "空氣錨",
+          "kr": "에어 앵커",
+          "fr": "Ancreur aérien",
+          "de": "Luftanker",
+          "es": "Ancla aérea"
+        },
+        "base": 420,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          72, 10, 10
+        ]
+      },
+      {
+        "id": 509287,
+        "names": {
+          "en": "Royal Shock",
+          "tw": "王族衝擊",
+          "kr": "고귀한 타격",
+          "fr": "Choc royal",
+          "de": "Königsschock",
+          "es": "Impacto magno"
+        },
+        "base": 1750,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 509283,
+        "names": {
+          "en": "Corona Beam",
+          "tw": "日冕射線",
+          "kr": "빛무리 광선",
+          "fr": "Rayon coronaire",
+          "de": "Korona-Strahl",
+          "es": "Haz de corona"
+        },
+        "base": 400,
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 23
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          92, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 509284,
+        "names": {
+          "en": "Trifecta Drill",
+          "tw": "三連鑽頭",
+          "kr": "3종 효과 드릴",
+          "fr": "Foreuse à triple effet",
+          "de": "Trifecta-Bohrer",
+          "es": "Perforación triple"
+        },
+        "base": 540,
+        "hitDamage": [
+          1.666666666666667, 31.66666666666667, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "earth",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          20, 46, 42, 35
+        ]
+      },
+      {
+        "id": 206001907,
+        "names": {
+          "en": "Glory of Figaro",
+          "tw": "費加羅的榮光",
+          "kr": "피가로의 영광",
+          "fr": "Splendeur de Figaro",
+          "de": "Figaros Glanz",
+          "es": "Esplendor de Fígaro"
+        },
+        "base": 2200,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          233, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          229940,
+          229943,
+          229944,
+          229945,
+          229948,
+          509283,
+          509284,
+          509287
+        ]
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "names": {
+      "en": "Monk Sabin of Kolts",
+      "tw": "科爾茲格鬥家馬修",
+      "kr": "콜츠의 격투가 매시",
+      "fr": "Sabin, moine de Kolts",
+      "de": "Mönch Sabin von Kolts",
+      "es": "Sabin, monje de Kolts"
     },
-    {
-      "id": 229356,
-      "names": {
-        "en": "Hell's Fissure",
-        "tw": "地獄裂縫",
-        "kr": "지옥의 균열",
-        "fr": "Fissure infernale",
-        "de": "Höllenriss",
-        "es": "Grieta infernal"
+    "abilities": [
+      {
+        "id": 200200,
+        "names": {
+          "en": "Kick",
+          "tw": "踢擊",
+          "kr": "발차기",
+          "fr": "Coup de pied",
+          "de": "Tritt",
+          "es": "Puntapié"
+        },
+        "base": 110,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 3, 3
+        ]
       },
-      "base": 200,
-      "hitDamage": [
-        100
-      ],
-      "elements": [
-        "earth"
-      ],
-      "offset": 8,
-      "framesList": [
-        107
-      ]
-    },
-    {
-      "id": 229357,
-      "names": {
-        "en": "Jab",
-        "tw": "根基",
-        "kr": "거센 찌르기",
-        "fr": "Prescription",
-        "de": "Kinnhaken",
-        "es": "Prescripción"
+      {
+        "id": 229970,
+        "names": {
+          "en": "Raging Fist (FFVI)",
+          "tw": "爆裂拳",
+          "kr": "폭렬권",
+          "fr": "Poing foudroyant",
+          "de": "Faustwirbel (FFVI)",
+          "es": "Puños de ira (FFVI)"
+        },
+        "base": 300,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 3,
+        "offset": 14,
+        "framesList": [
+          5, 9, 18, 30, 16
+        ]
       },
-      "base": 270,
-      "hitDamage": [
-        100
-      ],
-      "offset": 8,
-      "framesList": [
-        2
-      ]
-    },
-    {
-      "id": 229360,
-      "names": {
-        "en": "Bloody Chopper",
-        "tw": "嗜血撕裂者",
-        "kr": "피의 흉검",
-        "fr": "Couperet sanglant",
-        "de": "Bluthacker",
-        "es": "Tajo sangriento"
+      {
+        "id": 229971,
+        "names": {
+          "en": "Aura Cannon (FFVI)",
+          "tw": "靈氣炮",
+          "kr": "아우라 포격",
+          "fr": "Rayon d'aura",
+          "de": "Aura-Kanone (FFVI)",
+          "es": "Cañón de aura (FFVI)"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "framesList": [
+          80
+        ]
       },
-      "base": 120,
-      "hitDamage": [
-        100
-      ],
-      "castTime": 29,
-      "offset": 14,
-      "framesList": [
-        140,
-        0
-      ]
-    },
-    {
-      "id": 229361,
-      "names": {
-        "en": "Ground Shake",
-        "tw": "大地震擊",
-        "kr": "대지 흔들기",
-        "fr": "Secousse violente",
-        "de": "Bodentremor",
-        "es": "Temblor de tierra"
+      {
+        "id": 229972,
+        "names": {
+          "en": "Meteor Strike (FFVI)",
+          "tw": "隕石撞擊",
+          "kr": "메테오 스트라이크",
+          "fr": "Chute du météore",
+          "de": "Meteorit (FFVI)",
+          "es": "Impacto Meteo (FFVI)"
+        },
+        "base": 275,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          20
+        ]
       },
-      "base": 250,
-      "hitDamage": [
-        20,
-        20,
-        20,
-        20,
-        20
-      ],
-      "castTime": 40,
-      "elements": [
-        "earth"
-      ],
-      "offset": 14,
-      "framesList": [
-        60,
-        8,
-        8,
-        8,
-        8
-      ]
-    },
-    {
-      "id": 100019405,
-      "names": {
-        "en": "Sparking Destroyer",
-        "tw": "破壞火花",
-        "kr": "섬광의 파괴자",
-        "fr": "Destructeur électrique",
-        "de": "Funkenschlagender Zerstörer",
-        "es": "Destructor chispeante"
+      {
+        "id": 229973,
+        "names": {
+          "en": "Rising Phoenix",
+          "tw": "鳳凰之舞",
+          "kr": "봉황의 춤",
+          "fr": "Danse du Phénix",
+          "de": "Phönixtanz",
+          "es": "Vuelo del Fénix"
+        },
+        "base": 320,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
       },
-      "base": 800,
-      "hitDamage": [
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        52
-      ],
-      "dualable": false,
-      "offset": 8,
-      "framesList": [
-        139,
-        6,
-        12,
-        3,
-        6,
-        6,
-        8,
-        10,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6
-      ]
-    }
-  ]
-}
+      {
+        "id": 229974,
+        "names": {
+          "en": "Razor Gale",
+          "tw": "真空波",
+          "kr": "진공파",
+          "fr": "Vague de vide",
+          "de": "Klingensturm",
+          "es": "Ráfaga lacerante"
+        },
+        "base": 320,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229977,
+        "names": {
+          "en": "Phantom Rush",
+          "tw": "夢幻鬥舞",
+          "kr": "몽환투무",
+          "fr": "Rixe évanescente",
+          "de": "Phantomstoß",
+          "es": "Estampida espectral"
+        },
+        "base": 300,
+        "hitDamage": [
+          1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.2500000000000002, 1.2500000000000002, 91.66666666666669
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509302,
+        "names": {
+          "en": "Tiger Break",
+          "tw": "猛虎破",
+          "kr": "타이거 브레이크",
+          "fr": "Élan du tigre",
+          "de": "Steintiger",
+          "es": "Descarga del tigre"
+        },
+        "base": 1500,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          2, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 206002007,
+        "names": {
+          "en": "Duncan Combo",
+          "tw": "鄧肯·協作",
+          "kr": "던컨 콤비네이션",
+          "fr": "Combo de Duncan",
+          "de": "Duncans Kombo",
+          "es": "Combo de Duncan"
+        },
+        "base": 1750,
+        "hitDamage": [
+          1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          55, 3, 3, 3, 3, 3, 3, 3, 3, 67, 3, 3, 3, 3, 4, 4, 68, 6, 6, 6, 73, 34, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          200200,
+          229970,
+          229971,
+          229972,
+          229973,
+          229974,
+          229977,
+          509302
+        ]
+      }
+    ]
+  }
 ];
