@@ -524,7 +524,7 @@ export class JsonService {
     // magic damage with EVO damage : [2, 1, 124, [0, 0, 0, 0, 0, 0, 0, 900, 900, [50,  50]]
     find = this.findEffect(rawEffect, [124]);
     if (find) {
-      find.damage = find.effect[7];
+      find.damage = (find.effect[7] + find.effect[8]) / 2;
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
       return find;
     }

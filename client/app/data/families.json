@@ -39,6 +39,32 @@
         ]
       },
       {
+        "id": 100020905,
+        "names": {
+          "en": "Summer Folka & Citra",
+          "tw": "夏日芙爾卡&希特拉",
+          "kr": "여름의 폴카&시트라",
+          "fr": "Folka & Citra en maillot",
+          "de": "Sommer-Folka & -Citra",
+          "es": "Folka y Citra veraniegas"
+        },
+        "abilities": [
+          {
+            "id": 230070,
+            "names": {
+              "en": "High Tide Spirit",
+              "tw": "沙灘召喚士",
+              "kr": "영혼의 만조",
+              "fr": "Esprit de la marée haute",
+              "de": "Geist der Flut",
+              "es": "Espíritu de pleamar"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401007605,
         "names": {
           "en": "Zeno of the Beta Star",
@@ -546,6 +572,58 @@
               "fr": "Trente entailles",
               "de": "Dreißig-Hiebe-Kombo",
               "es": "Triacontacombo rebanador"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100020505,
+        "names": {
+          "en": "Summer Fina & Lid",
+          "tw": "夏日菲娜&里德",
+          "kr": "여름의 피나&리드",
+          "fr": "Fina & Lid en maillot",
+          "de": "Sommer-Fina & -Lid",
+          "es": "Fina y Lid veraniegas"
+        },
+        "abilities": [
+          {
+            "id": 509210,
+            "names": {
+              "en": "Water Splash",
+              "tw": "水花飛濺",
+              "kr": "살수",
+              "fr": "Éclaboussures d'eau",
+              "de": "Wasserspritzer",
+              "es": "Salpicadura de agua"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100020905,
+        "names": {
+          "en": "Summer Folka & Citra",
+          "tw": "夏日芙爾卡&希特拉",
+          "kr": "여름의 폴카&시트라",
+          "fr": "Folka & Citra en maillot",
+          "de": "Sommer-Folka & -Citra",
+          "es": "Folka y Citra veraniegas"
+        },
+        "abilities": [
+          {
+            "id": 509210,
+            "names": {
+              "en": "Water Splash",
+              "tw": "水花飛濺",
+              "kr": "살수",
+              "fr": "Éclaboussures d'eau",
+              "de": "Wasserspritzer",
+              "es": "Salpicadura de agua"
             },
             "offset": 14,
             "castTime": 40
@@ -1989,86 +2067,6 @@
     ]
   },
   {
-    "family": "8-5-5-5-5-5-5-5-7-7-9-9-9-9-9-9",
-    "units": [
-      {
-        "id": 100013805,
-        "names": {
-          "en": "Lila",
-          "tw": "利拉",
-          "kr": "리라"
-        },
-        "abilities": [
-          {
-            "id": 707608,
-            "names": {
-              "en": "Martial Arts - Heaven Shift + 2",
-              "tw": "格鬥術·操氣天沖 + 2",
-              "kr": "격투술·조기천충 + 2",
-              "fr": "Art martial - Chang. céleste + 2",
-              "de": "Kampfkunst - Himmlischer Stoß + 2",
-              "es": "Artes marciales - Cambio celeste + 2"
-            },
-            "offset": 14,
-            "castTime": 8
-          }
-        ]
-      },
-      {
-        "id": 204001605,
-        "names": {
-          "en": "Atoning Dragoon Kain",
-          "tw": "極致龍騎士凱因",
-          "kr": "궁극의 용기사 카인",
-          "fr": "Kaïn, dragonnier repenti",
-          "de": "Sühnender Dragoner Kain",
-          "es": "Kain, dragontino redentor"
-        },
-        "abilities": [
-          {
-            "id": 707569,
-            "names": {
-              "en": "Piercing Air + 2",
-              "tw": "刺骨寒風 + 2",
-              "kr": "피어싱 에어 + 2",
-              "fr": "Vent perçant + 2",
-              "de": "Luftdurchstoß + 2",
-              "es": "Viento penetrante + 2"
-            },
-            "offset": 14,
-            "castTime": 8
-          },
-          {
-            "id": 707571,
-            "names": {
-              "en": "Piercing Aqua + 2",
-              "tw": "刺骨冰水 + 2",
-              "kr": "피어싱 아쿠아 + 2",
-              "fr": "Eau perçante + 2",
-              "de": "Wasserdurchstoß + 2",
-              "es": "Agua penetrante + 2"
-            },
-            "offset": 14,
-            "castTime": 8
-          },
-          {
-            "id": 707573,
-            "names": {
-              "en": "Piercing Darkness + 2",
-              "tw": "刺骨黑暗 + 2",
-              "kr": "피어싱 스크로 + 2",
-              "fr": "Ténèbres perçantes + 2",
-              "de": "Dunkeldurchstoß + 2",
-              "es": "Tiniebla penetrante + 2"
-            },
-            "offset": 14,
-            "castTime": 8
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "42-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
     "units": [
       {
@@ -2633,6 +2631,45 @@
               "fr": "Frappe polaire",
               "de": "Schneesturmmanöver",
               "es": "Golpe Ola de frío"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100020905,
+        "names": {
+          "en": "Summer Folka & Citra",
+          "tw": "夏日芙爾卡&希特拉",
+          "kr": "여름의 폴카&시트라",
+          "fr": "Folka & Citra en maillot",
+          "de": "Sommer-Folka & -Citra",
+          "es": "Folka y Citra veraniegas"
+        },
+        "abilities": [
+          {
+            "id": 230063,
+            "names": {
+              "en": "Summon - Sunshine",
+              "tw": "日光召喚",
+              "kr": "소환·햇살",
+              "fr": "Invocation - Rayon de soleil",
+              "de": "Beschwörung - Sonnenschein",
+              "es": "Invocación - Rayos de sol"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230062,
+            "names": {
+              "en": "Summon - Waves",
+              "tw": "波濤召喚",
+              "kr": "소환·파도",
+              "fr": "Invocation - Vagues",
+              "de": "Beschwörung - Wellen",
+              "es": "Invocación - Olas"
             },
             "offset": 14,
             "castTime": 40
@@ -3436,6 +3473,133 @@
             },
             "offset": 14,
             "castTime": 38
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-7-7-7-7",
+    "units": [
+      {
+        "id": 208000105,
+        "names": {
+          "en": "Squall",
+          "tw": "斯考爾",
+          "kr": "스퀄"
+        },
+        "abilities": [
+          {
+            "id": 226624,
+            "names": {
+              "en": "Flame Barret",
+              "tw": "烈焰子彈",
+              "kr": "플레임 바렛",
+              "fr": "Barillet flammes",
+              "de": "Flammenbarrett",
+              "es": "Broche de fuego"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 226626,
+            "names": {
+              "en": "Wind Barret",
+              "tw": "疾風子彈",
+              "kr": "윈드 바렛",
+              "fr": "Barillet vent",
+              "de": "Windbarrett",
+              "es": "Broche de viento"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 226625,
+            "names": {
+              "en": "Thunder Barret",
+              "tw": "迅雷子彈",
+              "kr": "선더 바렛",
+              "fr": "Barillet tonnerre",
+              "de": "Donnerbarrett",
+              "es": "Broche de rayo"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 226627,
+            "names": {
+              "en": "Light Barret",
+              "tw": "閃光子彈",
+              "kr": "라이트 바렛",
+              "fr": "Barillet lumière",
+              "de": "Lichtbarrett",
+              "es": "Broche de luz"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 257000305,
+        "names": {
+          "en": null
+        },
+        "abilities": [
+          {
+            "id": 226624,
+            "names": {
+              "en": "Flame Barret",
+              "tw": "烈焰子彈",
+              "kr": "플레임 바렛",
+              "fr": "Barillet flammes",
+              "de": "Flammenbarrett",
+              "es": "Broche de fuego"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 226626,
+            "names": {
+              "en": "Wind Barret",
+              "tw": "疾風子彈",
+              "kr": "윈드 바렛",
+              "fr": "Barillet vent",
+              "de": "Windbarrett",
+              "es": "Broche de viento"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 226627,
+            "names": {
+              "en": "Light Barret",
+              "tw": "閃光子彈",
+              "kr": "라이트 바렛",
+              "fr": "Barillet lumière",
+              "de": "Lichtbarrett",
+              "es": "Broche de luz"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 226625,
+            "names": {
+              "en": "Thunder Barret",
+              "tw": "迅雷子彈",
+              "kr": "선더 바렛",
+              "fr": "Barillet tonnerre",
+              "de": "Donnerbarrett",
+              "es": "Broche de rayo"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       }
@@ -9065,6 +9229,29 @@
     "family": "110-10-10-10-10-10-10-10-10-10",
     "units": [
       {
+        "id": 100013805,
+        "names": {
+          "en": "Lila",
+          "tw": "利拉",
+          "kr": "리라"
+        },
+        "abilities": [
+          {
+            "id": 707610,
+            "names": {
+              "en": "Martial Arts - Tojin Combo + 2",
+              "tw": "格鬥術·鬥神連擊 + 2",
+              "kr": "격투술·투신연격 + 2",
+              "fr": "Art martial - Combo Tojin + 2",
+              "de": "Kampfkunst - Salve des Kriegsgottes + 2",
+              "es": "Artes marciales - Combo Tojin + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 206001905,
         "names": {
           "en": "King Edgar of Figaro",
@@ -9080,7 +9267,7 @@
             "names": {
               "en": "Chainsaw (FFVI)",
               "tw": "回轉電鋸",
-              "kr": "회전톱",
+              "kr": "회전톱(FFVI)",
               "fr": "Tronçonneuse",
               "de": "Kettensäge (FFVI)",
               "es": "Sierra mecánica (FFVI)"
@@ -9205,6 +9392,29 @@
     "family": "80-10-10-10-10-10-10-10-10-10-10-10-10-10-10-10",
     "units": [
       {
+        "id": 100013805,
+        "names": {
+          "en": "Lila",
+          "tw": "利拉",
+          "kr": "리라"
+        },
+        "abilities": [
+          {
+            "id": 707608,
+            "names": {
+              "en": "Martial Arts - Heaven Shift + 2",
+              "tw": "格鬥術·操氣天沖 + 2",
+              "kr": "격투술·조기천충 + 2",
+              "fr": "Art martial - Chang. céleste + 2",
+              "de": "Kampfkunst - Himmlischer Stoß + 2",
+              "es": "Artes marciales - Cambio celeste + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100019105,
         "names": {
           "en": "Nagi",
@@ -9221,6 +9431,58 @@
               "fr": "Fleur mourante",
               "de": "Sterbende Pflanzen",
               "es": "Flora moribunda"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 204001605,
+        "names": {
+          "en": "Atoning Dragoon Kain",
+          "tw": "極致龍騎士凱因",
+          "kr": "궁극의 용기사 카인",
+          "fr": "Kaïn, dragonnier repenti",
+          "de": "Sühnender Dragoner Kain",
+          "es": "Kain, dragontino redentor"
+        },
+        "abilities": [
+          {
+            "id": 707569,
+            "names": {
+              "en": "Piercing Air + 2",
+              "tw": "刺骨寒風 + 2",
+              "kr": "피어싱 에어 + 2",
+              "fr": "Vent perçant + 2",
+              "de": "Luftdurchstoß + 2",
+              "es": "Viento penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707571,
+            "names": {
+              "en": "Piercing Aqua + 2",
+              "tw": "刺骨冰水 + 2",
+              "kr": "피어싱 아쿠아 + 2",
+              "fr": "Eau perçante + 2",
+              "de": "Wasserdurchstoß + 2",
+              "es": "Agua penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707573,
+            "names": {
+              "en": "Piercing Darkness + 2",
+              "tw": "刺骨黑暗 + 2",
+              "kr": "피어싱 스크로 + 2",
+              "fr": "Ténèbres perçantes + 2",
+              "de": "Dunkeldurchstoß + 2",
+              "es": "Tiniebla penetrante + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -9641,6 +9903,25 @@
       },
       {
         "id": 204001904,
+        "names": {
+          "en": null
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 205001305,
         "names": {
           "en": null
         },
@@ -10491,6 +10772,27 @@
           "en": "Mediena",
           "tw": "美迪愛娜",
           "kr": "메디아나"
+        },
+        "abilities": [
+          {
+            "id": 20360,
+            "names": {
+              "en": "Freeze",
+              "tw": "冰結",
+              "kr": "프리즈",
+              "fr": "Gel",
+              "de": "Frost",
+              "es": "Congelación"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100022404,
+        "names": {
+          "en": null
         },
         "abilities": [
           {

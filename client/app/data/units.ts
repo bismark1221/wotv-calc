@@ -39308,5 +39308,263 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 251,
+    "names": {
+      "en": "Summer Fina & Lid",
+      "tw": "夏日菲娜&里德",
+      "kr": "여름의 피나&리드",
+      "fr": "Fina & Lid en maillot",
+      "de": "Sommer-Fina & -Lid",
+      "es": "Fina y Lid veraniegas"
+    },
+    "abilities": [
+      {
+        "id": 223860,
+        "names": {
+          "en": "Arms Dissolver",
+          "tw": "武裝溶解",
+          "kr": "무력 용해",
+          "fr": "Dissoudre armes",
+          "de": "Waffenauflöser",
+          "es": "Disolvente de armas"
+        },
+        "base": 100,
+        "hitDamage": [
+          20, 80
+        ],
+        "castTime": 32,
+        "offset": 14,
+        "framesList": [
+          34, 98
+        ]
+      },
+      {
+        "id": 223870,
+        "names": {
+          "en": "Barrier Dissolver",
+          "tw": "屏障溶解",
+          "kr": "장벽 용해",
+          "fr": "Dissoudre barrière",
+          "de": "Barrierenauflöser",
+          "es": "Disolvente de barreras"
+        },
+        "base": 100,
+        "hitDamage": [
+          20, 80
+        ],
+        "castTime": 32,
+        "offset": 14,
+        "framesList": [
+          34, 98
+        ]
+      },
+      {
+        "id": 509210,
+        "names": {
+          "en": "Water Splash",
+          "tw": "水花飛濺",
+          "kr": "살수",
+          "fr": "Éclaboussures d'eau",
+          "de": "Wasserspritzer",
+          "es": "Salpicadura de agua"
+        },
+        "base": 200,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "names": {
+      "en": "Summer Folka & Citra",
+      "tw": "夏日芙爾卡&希特拉",
+      "kr": "여름의 폴카&시트라",
+      "fr": "Folka & Citra en maillot",
+      "de": "Sommer-Folka & -Citra",
+      "es": "Folka y Citra veraniegas"
+    },
+    "abilities": [
+      {
+        "id": 230063,
+        "names": {
+          "en": "Summon - Sunshine",
+          "tw": "日光召喚",
+          "kr": "소환·햇살",
+          "fr": "Invocation - Rayon de soleil",
+          "de": "Beschwörung - Sonnenschein",
+          "es": "Invocación - Rayos de sol"
+        },
+        "damage": "magic",
+        "base": 1050,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.285714285714286, 85.71428571428571
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230062,
+        "names": {
+          "en": "Summon - Waves",
+          "tw": "波濤召喚",
+          "kr": "소환·파도",
+          "fr": "Invocation - Vagues",
+          "de": "Beschwörung - Wellen",
+          "es": "Invocación - Olas"
+        },
+        "damage": "magic",
+        "base": 1050,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.285714285714286, 85.71428571428571
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509210,
+        "names": {
+          "en": "Water Splash",
+          "tw": "水花飛濺",
+          "kr": "살수",
+          "fr": "Éclaboussures d'eau",
+          "de": "Wasserspritzer",
+          "es": "Salpicadura de agua"
+        },
+        "base": 200,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 509351,
+        "names": {
+          "en": "Summon - Sparkling Waves",
+          "tw": "閃光波濤召喚",
+          "kr": "해변 별장에서의 휴식",
+          "fr": "Invocation - Vagues étincelantes",
+          "de": "Beschwörung - Funkelnde Wellen",
+          "es": "Invocación - Olas espumosas"
+        },
+        "damage": "magic",
+        "base": 2150,
+        "hitDamage": [
+          2.604651162790698, 2.604651162790698, 2.604651162790698, 2.604651162790698, 2.604651162790698, 2.604651162790698, 2.9767441860465116, 81.3953488372093
+        ],
+        "castTime": 40,
+        "elements": [
+          "water",
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230070,
+        "names": {
+          "en": "High Tide Spirit",
+          "tw": "沙灘召喚士",
+          "kr": "영혼의 만조",
+          "fr": "Esprit de la marée haute",
+          "de": "Geist der Flut",
+          "es": "Espíritu de pleamar"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.666666666666667, 83.33333333333331
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100020907,
+        "names": {
+          "en": "Fun in the Sun",
+          "tw": "女士們的夏日假期",
+          "kr": "숙녀들의 여름 휴가",
+          "fr": "S'amuser sous le soleil",
+          "de": "Spaß in der Sonne",
+          "es": "Diversión bajo el sol"
+        },
+        "damage": "magic",
+        "base": 3000,
+        "hitDamage": [
+          20, 20, 60
+        ],
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          64, 46, 146
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230062,
+          230063,
+          230070,
+          509351
+        ]
+      }
+    ]
   }
 ];
