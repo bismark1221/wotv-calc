@@ -39568,7 +39568,7 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "id": 100021504,
+    "id": 253,
     "names": {
       "en": "Amber",
       "tw": "安伯",
@@ -39725,7 +39725,7 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "id": 100013704,
+    "id": 254,
     "names": {
       "en": "Vesvia",
       "tw": "貝絲比亞",
@@ -39909,7 +39909,7 @@ export const UNITS: any[] = [
     "multipleBlack": 2
   },
   {
-    "id": 100017505,
+    "id": 255,
     "names": {
       "en": "Regina",
       "tw": "雷吉娜",
