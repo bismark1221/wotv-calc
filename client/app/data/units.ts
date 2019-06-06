@@ -39956,7 +39956,10 @@ export const UNITS: any[] = [
         "ignore": 50,
         "framesList": [
           118, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
-        ]
+        ],
+        range: {
+          min: -132
+        }
       }
     ],
     "multiCasts": [
