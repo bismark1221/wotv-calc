@@ -39566,5 +39566,406 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 100021504,
+    "names": {
+      "en": "Amber",
+      "tw": "安伯",
+      "kr": "앰버",
+      "fr": "Ambre",
+      "es": "Ámbar"
+    },
+    "abilities": [
+      {
+        "id": 200200,
+        "names": {
+          "en": "Kick",
+          "tw": "踢擊",
+          "kr": "발차기",
+          "fr": "Coup de pied",
+          "de": "Tritt",
+          "es": "Puntapié"
+        },
+        "base": 110,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 3, 3
+        ]
+      },
+      {
+        "id": 200230,
+        "names": {
+          "en": "Raging Fist",
+          "tw": "爆裂拳",
+          "kr": "폭렬권",
+          "fr": "Poing foudroyant",
+          "de": "Faustwirbel",
+          "es": "Puños de ira"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 25,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 230111,
+        "names": {
+          "en": "Spiritual Vis",
+          "tw": "精神之睿智",
+          "kr": "정신의 비스",
+          "fr": "Vis spiritus",
+          "de": "Wies-Psyche",
+          "es": "Vis espiritual"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 89,
+        "offset": 14,
+        "framesList": [
+          91
+        ]
+      },
+      {
+        "id": 509371,
+        "names": {
+          "en": "Dispiriting Palm",
+          "tw": "崩心掌打",
+          "kr": "붕심장타",
+          "fr": "Paumes accablantes",
+          "de": "Entmutigender Handballenschlag",
+          "es": "Bofetón desmoralizador"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          5
+        ]
+      },
+      {
+        "id": 230110,
+        "names": {
+          "en": "Fortis Attack",
+          "tw": "攻擊之強力",
+          "kr": "공격의 포르티스",
+          "fr": "Fortis offensae",
+          "de": "Fortis-Angriff",
+          "es": "Fortis offensa"
+        },
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 89,
+        "offset": 14,
+        "framesList": [
+          91
+        ]
+      },
+      {
+        "id": 509370,
+        "names": {
+          "en": "Demolishing Fists",
+          "tw": "破防拳突",
+          "kr": "괴호권돌",
+          "fr": "Poings dévastateurs",
+          "de": "Demolierende Fäuste",
+          "es": "Puño demoledor"
+        },
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          5
+        ]
+      },
+      {
+        "id": 100021506,
+        "names": {
+          "en": "Crush the Opposition",
+          "tw": "破敵陣前",
+          "kr": "적대력 분쇄",
+          "fr": "Opposition anéantie",
+          "de": "Feindesdemolierung",
+          "es": "Pulverización antagonista"
+        },
+        "base": 650,
+        "hitDamage": [
+          30, 70
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          67, 100
+        ]
+      }
+    ]
+  },
+  {
+    "id": 100013704,
+    "names": {
+      "en": "Vesvia",
+      "tw": "貝絲比亞",
+      "kr": "베스비아"
+    },
+    "abilities": [
+      {
+        "id": 20230,
+        "names": {
+          "en": "Waterga",
+          "tw": "大流水",
+          "kr": "워터가",
+          "fr": "Eau X",
+          "de": "Aquaga",
+          "es": "Aqua++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 20320,
+        "names": {
+          "en": "Waterja",
+          "tw": "強流水",
+          "kr": "워터쟈",
+          "fr": "Eau max",
+          "de": "Aquaka",
+          "es": "Aqua+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          190
+        ]
+      },
+      {
+        "id": 230101,
+        "names": {
+          "en": "Great Cataract",
+          "tw": "大奔流",
+          "kr": "그레이트 캐터랙트",
+          "fr": "Grande cataracte",
+          "de": "Großer Katarakt",
+          "es": "Supercatarata"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          52, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 20380,
+        "names": {
+          "en": "Flood",
+          "tw": "洪水",
+          "kr": "플러드",
+          "fr": "Inondation",
+          "de": "Flut",
+          "es": "Inundación"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 230100,
+        "names": {
+          "en": "Aqua Slicer",
+          "tw": "水刃",
+          "kr": "아쿠아 슬라이서",
+          "fr": "Aquatrancheuse",
+          "de": "Wasserschneider",
+          "es": "Parteaguas"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          52, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 100013706,
+        "names": {
+          "en": "Waterfall",
+          "tw": "大瀑布",
+          "kr": "폭포수",
+          "fr": "Cascade",
+          "de": "Wasserfall",
+          "es": "Catarata"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 85
+          }
+        ],
+        "framesList": [
+          6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 64
+        ]
+      }
+    ],
+    "multipleBlack": 2
+  },
+  {
+    "id": 100017505,
+    "names": {
+      "en": "Regina",
+      "tw": "雷吉娜",
+      "kr": "레지나"
+    },
+    "abilities": [
+      {
+        "id": 230081,
+        "names": {
+          "en": "Regina Cannon",
+          "tw": "雷吉娜加農砲",
+          "kr": "레지나 캐논",
+          "fr": "Regina-canon",
+          "de": "Regina-Kanone",
+          "es": "Cañón Regina"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 100017507,
+        "names": {
+          "en": "Enemy Eradication",
+          "tw": "滅盡前敵",
+          "kr": "대적 제거",
+          "fr": "Décimation",
+          "de": "Gegnereleminierung",
+          "es": "Erradicación enemiga"
+        },
+        "base": 1600,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 78
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          118, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 5,
+        "abilities": [
+          230081
+        ]
+      }
+    ]
   }
 ];

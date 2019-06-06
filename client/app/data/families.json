@@ -1,111 +1,5 @@
 [
   {
-    "family": "70-0-0-6-6-6-6-6-6-6",
-    "units": [
-      {
-        "id": 100020005,
-        "names": {
-          "en": "Akstar",
-          "tw": "阿克斯特",
-          "kr": "엑스타"
-        },
-        "abilities": [
-          {
-            "id": 229563,
-            "names": {
-              "en": "Mirror of Equity - Acuity",
-              "tw": "明鏡・銳",
-              "kr": "잔잔한 거울·예",
-              "fr": "Sérénité - Acuité",
-              "de": "Kata - Scharfsinn",
-              "es": "Tranquilidad - Agudeza"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 229564,
-            "names": {
-              "en": "Mirror of Equity - Disorder",
-              "tw": "明鏡・亂",
-              "kr": "잔잔한 거울·란",
-              "fr": "Sérénité - Désordre",
-              "de": "Kata - Chaos",
-              "es": "Tranquilidad - Disturbio"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100020905,
-        "names": {
-          "en": "Summer Folka & Citra",
-          "tw": "夏日芙爾卡&希特拉",
-          "kr": "여름의 폴카&시트라",
-          "fr": "Folka & Citra en maillot",
-          "de": "Sommer-Folka & -Citra",
-          "es": "Folka y Citra veraniegas"
-        },
-        "abilities": [
-          {
-            "id": 230070,
-            "names": {
-              "en": "High Tide Spirit",
-              "tw": "沙灘召喚士",
-              "kr": "영혼의 만조",
-              "fr": "Esprit de la marée haute",
-              "de": "Geist der Flut",
-              "es": "Espíritu de pleamar"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 401007605,
-        "names": {
-          "en": "Zeno of the Beta Star",
-          "tw": "二鬥星傑諾",
-          "kr": "이성투사 제노",
-          "fr": "Xeno de l'étoile Bêta",
-          "de": "Beta-Stern-Zeno",
-          "es": "Zeno de la estrella Beta"
-        },
-        "abilities": [
-          {
-            "id": 912340,
-            "names": {
-              "en": "Mirror of Equity - Acuity",
-              "tw": "明鏡・銳",
-              "kr": "잔잔한 거울·예",
-              "fr": "Sérénité - Acuité",
-              "de": "Kata - Scharfsinn",
-              "es": "Tranquilidad - Agudeza"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 912351,
-            "names": {
-              "en": "Mirror of Equity - Disorder",
-              "tw": "明鏡・亂",
-              "kr": "잔잔한 거울·란",
-              "fr": "Sérénité - Désordre",
-              "de": "Kata - Chaos",
-              "es": "Tranquilidad - Disturbio"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
     "family": "42-3-3-3-3-3-3-3-3-3",
     "units": [
       {
@@ -2584,6 +2478,32 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 229563,
+            "names": {
+              "en": "Mirror of Equity - Acuity",
+              "tw": "明鏡・銳",
+              "kr": "잔잔한 거울·예",
+              "fr": "Sérénité - Acuité",
+              "de": "Kata - Scharfsinn",
+              "es": "Tranquilidad - Agudeza"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229564,
+            "names": {
+              "en": "Mirror of Equity - Disorder",
+              "tw": "明鏡・亂",
+              "kr": "잔잔한 거울·란",
+              "fr": "Sérénité - Désordre",
+              "de": "Kata - Chaos",
+              "es": "Tranquilidad - Disturbio"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -2670,6 +2590,19 @@
               "fr": "Invocation - Vagues",
               "de": "Beschwörung - Wellen",
               "es": "Invocación - Olas"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230070,
+            "names": {
+              "en": "High Tide Spirit",
+              "tw": "沙灘召喚士",
+              "kr": "영혼의 만조",
+              "fr": "Esprit de la marée haute",
+              "de": "Geist der Flut",
+              "es": "Espíritu de pleamar"
             },
             "offset": 14,
             "castTime": 40
@@ -3352,6 +3285,32 @@
               "fr": "Rugissement de la Sérénité primordiale",
               "de": "Gebrüll der Vernichtenden Kata",
               "es": "Rugido de Tranquilidad fulminante"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912340,
+            "names": {
+              "en": "Mirror of Equity - Acuity",
+              "tw": "明鏡・銳",
+              "kr": "잔잔한 거울·예",
+              "fr": "Sérénité - Acuité",
+              "de": "Kata - Scharfsinn",
+              "es": "Tranquilidad - Agudeza"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912351,
+            "names": {
+              "en": "Mirror of Equity - Disorder",
+              "tw": "明鏡・亂",
+              "kr": "잔잔한 거울·란",
+              "fr": "Sérénité - Désordre",
+              "de": "Kata - Chaos",
+              "es": "Tranquilidad - Disturbio"
             },
             "offset": 14,
             "castTime": 40
@@ -10394,7 +10353,9 @@
       {
         "id": 100013704,
         "names": {
-          "en": null
+          "en": "Vesvia",
+          "tw": "貝絲比亞",
+          "kr": "베스비아"
         },
         "abilities": [
           {
