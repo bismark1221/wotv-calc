@@ -39970,5 +39970,971 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 256,
+    "names": {
+      "en": "Immortal Flame Katy",
+      "tw": "不朽之焰凱蒂",
+      "kr": "불멸의 화염 케이티",
+      "fr": "Katy flamme immortelle",
+      "de": "Unvergängliche Flamme Katy",
+      "es": "Katy llama inmortal"
+    },
+    "abilities": [
+      {
+        "id": 20200,
+        "names": {
+          "en": "Firaga",
+          "tw": "大火焰",
+          "kr": "파이가",
+          "fr": "Feu X",
+          "de": "Feuga",
+          "es": "Piro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20220,
+        "names": {
+          "en": "Thundaga",
+          "tw": "大雷電",
+          "kr": "선더가",
+          "fr": "Foudre X",
+          "de": "Blitzga",
+          "es": "Electro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 912231,
+        "names": {
+          "en": "Fortune - Bad Luck",
+          "tw": "運氣 - 厄運纏身",
+          "kr": "행운·불운",
+          "fr": "Chance - Mauvais œil",
+          "de": "Glück - Unglück",
+          "es": "Ventura - Mala suerte"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "id": 20230,
+        "names": {
+          "en": "Waterga",
+          "tw": "大流水",
+          "kr": "워터가",
+          "fr": "Eau X",
+          "de": "Aquaga",
+          "es": "Aqua++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 912232,
+        "names": {
+          "en": "Celestial Alignment",
+          "tw": "星斗連珠",
+          "kr": "천공의 정렬",
+          "fr": "Alignement céleste",
+          "de": "Himmelsausrichtung",
+          "es": "Alineación celestial"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 912235,
+        "names": {
+          "en": "Fortune - Luck of the Draw",
+          "tw": "命運 - 聽天由命",
+          "kr": "행운·복불복",
+          "fr": "Chance - Aléas du destin",
+          "de": "Glück - Losglück",
+          "es": "Ventura - Cuestión de suerte"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 20510,
+        "names": {
+          "en": "Astral Blizzard",
+          "tw": "靈極冰",
+          "kr": "저승의 냉기",
+          "fr": "Glace ombrale",
+          "de": "Astralschneesturm",
+          "es": "Ventisca astral"
+        },
+        "damage": "magic",
+        "base": 80,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "id": 20350,
+        "names": {
+          "en": "Flare",
+          "tw": "核爆",
+          "kr": "플레어",
+          "fr": "Brasier",
+          "de": "Flamme",
+          "es": "Fulgor"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 30
+          }
+        ],
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 912242,
+        "names": {
+          "en": "Fortune - Tough Luck",
+          "tw": "命運 - 旦夕禍福",
+          "kr": "행운·박복",
+          "fr": "Chance - Pas de bol",
+          "de": "Glück - Pech",
+          "es": "Ventura - Mala pata"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 20310,
+        "names": {
+          "en": "Thundaja",
+          "tw": "強雷電",
+          "kr": "선더쟈",
+          "fr": "Foudre max",
+          "de": "Blitzka",
+          "es": "Electro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20550,
+        "names": {
+          "en": "Raging Ice",
+          "tw": "烈冰",
+          "kr": "조블리자",
+          "fr": "Glace rageuse",
+          "de": "Wütendes Eis",
+          "es": "Hielo furibundo"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          250
+        ]
+      },
+      {
+        "id": 20760,
+        "names": {
+          "en": "Raging Water",
+          "tw": "狂水",
+          "kr": "조워터",
+          "fr": "Flots déchaînés",
+          "de": "Reißender Strom",
+          "es": "Aguas enfurecidas"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 912245,
+        "names": {
+          "en": "Fortune - Anyone's Call",
+          "tw": "命運 - 人人平等",
+          "kr": "행운·예측 불가",
+          "fr": "Chance - Les jeux sont faits",
+          "de": "Glück - Ergreifbar für Jeden",
+          "es": "Ventura - La cosa está reñida"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 20390,
+        "names": {
+          "en": "Tornado",
+          "tw": "龍捲風",
+          "kr": "토네이도",
+          "fr": "Tornade"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 20400,
+        "names": {
+          "en": "Quake",
+          "tw": "地槌",
+          "kr": "퀘이크",
+          "fr": "Séisme",
+          "de": "Beben",
+          "es": "Seísmo"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "id": 20380,
+        "names": {
+          "en": "Flood",
+          "tw": "洪水",
+          "kr": "플러드",
+          "fr": "Inondation",
+          "de": "Flut",
+          "es": "Inundación"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "id": 20360,
+        "names": {
+          "en": "Freeze",
+          "tw": "冰結",
+          "kr": "프리즈",
+          "fr": "Gel",
+          "de": "Frost",
+          "es": "Congelación"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ]
+      },
+      {
+        "id": 912253,
+        "names": {
+          "en": "Jackpot",
+          "tw": "中大獎",
+          "kr": "잭팟",
+          "fr": "Numéro gagnant",
+          "es": "Premio gordo"
+        },
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912257,
+        "names": {
+          "en": "Fortune - Out of Luck",
+          "tw": "命運 - 時運不濟",
+          "kr": "행운·쪽박",
+          "fr": "Chance - Les dés sont jetés",
+          "de": "Glück - Glückvergessen",
+          "es": "Ventura - La cosa está mala"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 401007307,
+        "names": {
+          "en": "Enchanting Melody",
+          "tw": "嫵媚旋律",
+          "kr": "고혹의 멜로디",
+          "fr": "Mélodie enchanteresse",
+          "de": "Entzückende Melodie",
+          "es": "Melodía hipnotizadora"
+        },
+        "damage": "magic",
+        "base": 1180,
+        "hitDamage": [
+          5, 5, 10, 10, 10, 20, 20, 20
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          82, 8, 8, 8, 8, 8, 8, 8
+        ]
+      }
+    ],
+    "multipleBlack": 3,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          912231,
+          912235,
+          912242,
+          912245,
+          912257
+        ]
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "names": {
+      "en": "Aerith",
+      "tw": "艾莉絲",
+      "kr": "에어리스",
+      "es": "Aeris"
+    },
+    "abilities": [
+      {
+        "id": 10060,
+        "names": {
+          "en": "Banish",
+          "tw": "放逐",
+          "kr": "배니시",
+          "fr": "Bannissement",
+          "de": "Verbannung",
+          "es": "Tenue"
+        },
+        "damage": "magic",
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 10170,
+        "names": {
+          "en": "Banishga",
+          "tw": "強放逐",
+          "kr": "배니시가",
+          "fr": "Bannissement X",
+          "de": "Exkommunikation",
+          "es": "Tenue++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 10210,
+        "names": {
+          "en": "Holy",
+          "tw": "神聖",
+          "kr": "홀리",
+          "fr": "Sidéral",
+          "de": "Sanctus",
+          "es": "Sanctus"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "id": 509191,
+        "names": {
+          "en": "Ancient Holy",
+          "tw": "遠古聖光",
+          "kr": "에인션트 홀리",
+          "fr": "Sacre des Anciens",
+          "de": "Ur-Sanctus",
+          "es": "Sanctus antiguo"
+        },
+        "damage": "magic",
+        "base": 3000,
+        "hitDamage": [],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          260
+        ]
+      }
+    ],
+    "multipleWhite": 2,
+    "multipleBlack": 2,
+    "multipleGreen": 2
+  },
+  {
+    "id": 258,
+    "names": {
+      "en": "Red XIII",
+      "tw": "赤紅XIII",
+      "kr": "레드XIII",
+      "fr": "Rouge XIII"
+    },
+    "abilities": [
+      {
+        "id": 229780,
+        "names": {
+          "en": "Sled Fang",
+          "tw": "雪橇尖牙",
+          "kr": "슬레드 팡",
+          "fr": "Coups de griffe",
+          "de": "Sled-Zahn",
+          "es": "Colmillo trineo"
+        },
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 229782,
+        "names": {
+          "en": "Blood Fang",
+          "tw": "血色尖牙",
+          "kr": "블러드 팡",
+          "fr": "Dent de sang",
+          "de": "Blutzahn",
+          "es": "Colmillo sangrante"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "id": 229783,
+        "names": {
+          "en": "Stardust Ray",
+          "tw": "星辰射線",
+          "kr": "스타더스트 레이",
+          "fr": "Rayons d'étoiles",
+          "de": "Sternenstaubstrahl",
+          "es": "Rayo estelar"
+        },
+        "base": 200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229784,
+        "names": {
+          "en": "Howling Moon",
+          "tw": "月夜狼嚎",
+          "kr": "하울링 문",
+          "fr": "Lune hurlante",
+          "de": "Heulender Mond",
+          "es": "Luna aullando"
+        },
+        "base": 360,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 229786,
+        "names": {
+          "en": "Blaze Charge",
+          "tw": "烈焰蓄力",
+          "kr": "블레이즈 차지",
+          "fr": "Charge enflammée",
+          "de": "Flammenstürmer",
+          "es": "Embestida llameante"
+        },
+        "base": 200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229787,
+        "names": {
+          "en": "Storm Charge",
+          "tw": "風暴蓄力",
+          "kr": "스톰 차지",
+          "fr": "Charge foudroyante",
+          "de": "Orkanstürmer",
+          "es": "Embestida tempestuosa"
+        },
+        "base": 200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229788,
+        "names": {
+          "en": "Shadow Charge",
+          "tw": "暗影蓄力",
+          "kr": "섀도우 차지",
+          "fr": "Charge ténébreuse",
+          "de": "Schattenstürmer",
+          "es": "Embestida umbrosa"
+        },
+        "base": 200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229785,
+        "names": {
+          "en": "Earth Rave",
+          "tw": "大地咆哮",
+          "kr": "어스 레이브",
+          "fr": "Tempête tellurique",
+          "de": "Erdangriff",
+          "es": "Tempestad"
+        },
+        "base": 1400,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 509201,
+        "names": {
+          "en": "Spirit of Seto",
+          "tw": "賽特的精神",
+          "kr": "세토의 영혼",
+          "fr": "Esprit de Seto",
+          "de": "Setos Geist",
+          "es": "Espíritu de Seto"
+        },
+        "base": 2400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 207000507,
+        "names": {
+          "en": "Cosmo Memory",
+          "tw": "宇宙的記憶",
+          "kr": "코스모 메모리",
+          "fr": "Mémoire Cosmos",
+          "de": "Kosmogedächtnis",
+          "es": "Memoria cósmica"
+        },
+        "base": 790,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "wind",
+            "value": 100
+          },
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          440
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229780,
+          229782,
+          229783,
+          229784,
+          229785,
+          229786,
+          229787,
+          229788,
+          509201
+        ]
+      }
+    ]
   }
 ];

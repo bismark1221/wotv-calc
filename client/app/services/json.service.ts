@@ -368,7 +368,7 @@ export class JsonService {
     for (let i = 0; i < frames.length; i++) {
       if (i === 0) {
         framesList.push(frames[i]);
-      } else {
+      } else if (frames[i] - frames[i - 1] !== 0) {
         framesList.push(Math.abs(frames[i] - frames[i - 1]));
       }
     }

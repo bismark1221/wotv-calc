@@ -551,6 +551,32 @@
         ]
       },
       {
+        "id": 206001905,
+        "names": {
+          "en": "King Edgar of Figaro",
+          "tw": "費加羅國王埃德加",
+          "kr": "피가로의 왕 에드가",
+          "fr": "Edgar, roi de Figaro",
+          "de": "König Edgar von Figaro",
+          "es": "Edgar, rey de Fígaro"
+        },
+        "abilities": [
+          {
+            "id": 509287,
+            "names": {
+              "en": "Royal Shock",
+              "tw": "王族衝擊",
+              "kr": "고귀한 타격",
+              "fr": "Choc royal",
+              "de": "Königsschock",
+              "es": "Impacto magno"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004605,
         "names": {
           "en": "Malphasie",
@@ -2441,6 +2467,32 @@
         },
         "abilities": [
           {
+            "id": 229563,
+            "names": {
+              "en": "Mirror of Equity - Acuity",
+              "tw": "明鏡・銳",
+              "kr": "잔잔한 거울·예",
+              "fr": "Sérénité - Acuité",
+              "de": "Kata - Scharfsinn",
+              "es": "Tranquilidad - Agudeza"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229564,
+            "names": {
+              "en": "Mirror of Equity - Disorder",
+              "tw": "明鏡・亂",
+              "kr": "잔잔한 거울·란",
+              "fr": "Sérénité - Désordre",
+              "de": "Kata - Chaos",
+              "es": "Tranquilidad - Disturbio"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 229565,
             "names": {
               "en": "Mirror of Equity - Supremacy",
@@ -2475,32 +2527,6 @@
               "fr": "Véritable Sérénité",
               "de": "Wahre Kata",
               "es": "Tranquilidad verdadera"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 229563,
-            "names": {
-              "en": "Mirror of Equity - Acuity",
-              "tw": "明鏡・銳",
-              "kr": "잔잔한 거울·예",
-              "fr": "Sérénité - Acuité",
-              "de": "Kata - Scharfsinn",
-              "es": "Tranquilidad - Agudeza"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 229564,
-            "names": {
-              "en": "Mirror of Equity - Disorder",
-              "tw": "明鏡・亂",
-              "kr": "잔잔한 거울·란",
-              "fr": "Sérénité - Désordre",
-              "de": "Kata - Chaos",
-              "es": "Tranquilidad - Disturbio"
             },
             "offset": 14,
             "castTime": 40
@@ -3212,6 +3238,19 @@
         },
         "abilities": [
           {
+            "id": 912340,
+            "names": {
+              "en": "Mirror of Equity - Acuity",
+              "tw": "明鏡・銳",
+              "kr": "잔잔한 거울·예",
+              "fr": "Sérénité - Acuité",
+              "de": "Kata - Scharfsinn",
+              "es": "Tranquilidad - Agudeza"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 912341,
             "names": {
               "en": "Scorch",
@@ -3233,6 +3272,19 @@
               "fr": "Lame Feu X",
               "de": "Feuga-Schnitt",
               "es": "Corte Piro++"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912351,
+            "names": {
+              "en": "Mirror of Equity - Disorder",
+              "tw": "明鏡・亂",
+              "kr": "잔잔한 거울·란",
+              "fr": "Sérénité - Désordre",
+              "de": "Kata - Chaos",
+              "es": "Tranquilidad - Disturbio"
             },
             "offset": 14,
             "castTime": 40
@@ -3285,32 +3337,6 @@
               "fr": "Rugissement de la Sérénité primordiale",
               "de": "Gebrüll der Vernichtenden Kata",
               "es": "Rugido de Tranquilidad fulminante"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 912340,
-            "names": {
-              "en": "Mirror of Equity - Acuity",
-              "tw": "明鏡・銳",
-              "kr": "잔잔한 거울·예",
-              "fr": "Sérénité - Acuité",
-              "de": "Kata - Scharfsinn",
-              "es": "Tranquilidad - Agudeza"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 912351,
-            "names": {
-              "en": "Mirror of Equity - Disorder",
-              "tw": "明鏡・亂",
-              "kr": "잔잔한 거울·란",
-              "fr": "Sérénité - Désordre",
-              "de": "Kata - Chaos",
-              "es": "Tranquilidad - Disturbio"
             },
             "offset": 14,
             "castTime": 40
@@ -5600,6 +5626,32 @@
             "castTime": 40
           },
           {
+            "id": 507296,
+            "names": {
+              "en": "Splendor of the Wind + 2",
+              "tw": "風之光輝 + 2",
+              "kr": "바람의 인도 + 2",
+              "fr": "Splendeur du vent + 2",
+              "de": "Windpracht + 2",
+              "es": "Esplendor de viento + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 507308,
+            "names": {
+              "en": "Splendor of the Wind + 2",
+              "tw": "風之光輝 + 2",
+              "kr": "바람의 인도 + 2",
+              "fr": "Splendeur du vent + 2",
+              "de": "Windpracht + 2",
+              "es": "Esplendor de viento + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 507297,
             "names": {
               "en": "Splendor of the Fire + 1",
@@ -5621,6 +5673,32 @@
               "fr": "Splendeur du feu + 1",
               "de": "Feuerpracht + 1",
               "es": "Esplendor de fuego + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 507298,
+            "names": {
+              "en": "Splendor of the Fire + 2",
+              "tw": "火之光輝 + 2",
+              "kr": "불꽃의 인도 + 2",
+              "fr": "Splendeur du feu + 2",
+              "de": "Feuerpracht + 2",
+              "es": "Esplendor de fuego + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 507310,
+            "names": {
+              "en": "Splendor of the Fire + 2",
+              "tw": "火之光輝 + 2",
+              "kr": "불꽃의 인도 + 2",
+              "fr": "Splendeur du feu + 2",
+              "de": "Feuerpracht + 2",
+              "es": "Esplendor de fuego + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -5652,6 +5730,32 @@
             "castTime": 40
           },
           {
+            "id": 507300,
+            "names": {
+              "en": "Splendor of the Water + 2",
+              "tw": "水之光輝 + 2",
+              "kr": "물의 인도 + 2",
+              "fr": "Splendeur de l'eau + 2",
+              "de": "Wasserpracht + 2",
+              "es": "Esplendor de agua + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 507312,
+            "names": {
+              "en": "Splendor of the Water + 2",
+              "tw": "水之光輝 + 2",
+              "kr": "물의 인도 + 2",
+              "fr": "Splendeur de l'eau + 2",
+              "de": "Wasserpracht + 2",
+              "es": "Esplendor de agua + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 507301,
             "names": {
               "en": "Splendor of the Earth + 1",
@@ -5673,6 +5777,83 @@
               "fr": "Splendeur de la terre + 1",
               "de": "Erdpracht + 1",
               "es": "Esplendor de tierra + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 507302,
+            "names": {
+              "en": "Splendor of the Earth + 2",
+              "tw": "土之光輝 + 2",
+              "kr": "땅의 인도 + 2",
+              "fr": "Splendeur de la terre + 2",
+              "de": "Erdpracht + 2",
+              "es": "Esplendor de tierra + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 507314,
+            "names": {
+              "en": "Splendor of the Earth + 2",
+              "tw": "土之光輝 + 2",
+              "kr": "땅의 인도 + 2",
+              "fr": "Splendeur de la terre + 2",
+              "de": "Erdpracht + 2",
+              "es": "Esplendor de tierra + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "70-7-5-7-7-7-7-14-7-5-7-7-7-7",
+    "units": [
+      {
+        "id": 100016905,
+        "names": {
+          "en": "Citra",
+          "tw": "希特拉",
+          "kr": "시트라"
+        },
+        "abilities": [
+          {
+            "id": 227653,
+            "names": {
+              "en": "Holy Mind",
+              "tw": "精神聖域",
+              "kr": "성스러운 축복",
+              "fr": "Saint Esprit",
+              "de": "Heiliger Geist",
+              "es": "Mente sagrada"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 317000105,
+        "names": {
+          "en": "Rena",
+          "tw": "蕾娜",
+          "kr": "레나"
+        },
+        "abilities": [
+          {
+            "id": 911907,
+            "names": {
+              "en": "Light Cross",
+              "tw": "交叉光芒",
+              "kr": "빛의 십자가",
+              "fr": "Croix de lumière",
+              "de": "Lichtkreuz",
+              "es": "Cruz luminosa"
             },
             "offset": 14,
             "castTime": 40
@@ -6786,6 +6967,31 @@
             },
             "offset": 14,
             "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007305,
+        "names": {
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 401007307,
+            "names": {
+              "en": "Enchanting Melody",
+              "tw": "嫵媚旋律",
+              "kr": "고혹의 멜로디",
+              "fr": "Mélodie enchanteresse",
+              "de": "Entzückende Melodie",
+              "es": "Melodía hipnotizadora"
+            },
+            "offset": 14
           }
         ]
       }
@@ -8424,6 +8630,19 @@
         },
         "abilities": [
           {
+            "id": 911321,
+            "names": {
+              "en": "Crimson Raid",
+              "tw": "深紅爆擊",
+              "kr": "진홍의 폭격",
+              "fr": "Descente rouge",
+              "de": "Blutroter Raubzug",
+              "es": "Invasión carmesí"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 911322,
             "names": {
               "en": "Mystic Assault",
@@ -9269,6 +9488,95 @@
               "fr": "Vague de vide",
               "de": "Klingensturm",
               "es": "Ráfaga lacerante"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207000505,
+        "names": {
+          "en": "Red XIII",
+          "tw": "赤紅XIII",
+          "kr": "레드XIII",
+          "fr": "Rouge XIII"
+        },
+        "abilities": [
+          {
+            "id": 229783,
+            "names": {
+              "en": "Stardust Ray",
+              "tw": "星辰射線",
+              "kr": "스타더스트 레이",
+              "fr": "Rayons d'étoiles",
+              "de": "Sternenstaubstrahl",
+              "es": "Rayo estelar"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229786,
+            "names": {
+              "en": "Blaze Charge",
+              "tw": "烈焰蓄力",
+              "kr": "블레이즈 차지",
+              "fr": "Charge enflammée",
+              "de": "Flammenstürmer",
+              "es": "Embestida llameante"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229787,
+            "names": {
+              "en": "Storm Charge",
+              "tw": "風暴蓄力",
+              "kr": "스톰 차지",
+              "fr": "Charge foudroyante",
+              "de": "Orkanstürmer",
+              "es": "Embestida tempestuosa"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229788,
+            "names": {
+              "en": "Shadow Charge",
+              "tw": "暗影蓄力",
+              "kr": "섀도우 차지",
+              "fr": "Charge ténébreuse",
+              "de": "Schattenstürmer",
+              "es": "Embestida umbrosa"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229785,
+            "names": {
+              "en": "Earth Rave",
+              "tw": "大地咆哮",
+              "kr": "어스 레이브",
+              "fr": "Tempête tellurique",
+              "de": "Erdangriff",
+              "es": "Tempestad"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509201,
+            "names": {
+              "en": "Spirit of Seto",
+              "tw": "賽特的精神",
+              "kr": "세토의 영혼",
+              "fr": "Esprit de Seto",
+              "de": "Setos Geist",
+              "es": "Espíritu de Seto"
             },
             "offset": 14,
             "castTime": 40
@@ -10258,6 +10566,30 @@
         ]
       },
       {
+        "id": 401007305,
+        "names": {
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 504217610,
         "names": {
           "en": "Frozen Hurricane",
@@ -10668,6 +11000,32 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401007305,
+        "names": {
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -10863,6 +11221,32 @@
               "fr": "Surgélation",
               "de": "Tiefgefrieren",
               "es": "Hipotermia total"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007305,
+        "names": {
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 20360,
+            "names": {
+              "en": "Freeze",
+              "tw": "冰結",
+              "kr": "프리즈",
+              "fr": "Gel",
+              "de": "Frost",
+              "es": "Congelación"
             },
             "offset": 14,
             "castTime": 40
@@ -11365,6 +11749,58 @@
             "castTime": 50
           }
         ]
+      },
+      {
+        "id": 401007305,
+        "names": {
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 912255,
+            "names": {
+              "en": "Fortune - Out of Luck",
+              "tw": "命運 - 時運不濟",
+              "kr": "행운·쪽박",
+              "fr": "Chance - Les dés sont jetés",
+              "de": "Glück - Glückvergessen",
+              "es": "Ventura - La cosa está mala"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 912256,
+            "names": {
+              "en": "Fortune - Out of Luck",
+              "tw": "命運 - 時運不濟",
+              "kr": "행운·쪽박",
+              "fr": "Chance - Les dés sont jetés",
+              "de": "Glück - Glückvergessen",
+              "es": "Ventura - La cosa está mala"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 912257,
+            "names": {
+              "en": "Fortune - Out of Luck",
+              "tw": "命運 - 時運不濟",
+              "kr": "행운·쪽박",
+              "fr": "Chance - Les dés sont jetés",
+              "de": "Glück - Glückvergessen",
+              "es": "Ventura - La cosa está mala"
+            },
+            "offset": 14,
+            "castTime": 50
+          }
+        ]
       }
     ]
   },
@@ -11701,6 +12137,32 @@
               "fr": "Pluie de pierres",
               "de": "Steinregen",
               "es": "Lluvia de piedra"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007305,
+        "names": {
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 20400,
+            "names": {
+              "en": "Quake",
+              "tw": "地槌",
+              "kr": "퀘이크",
+              "fr": "Séisme",
+              "de": "Beben",
+              "es": "Seísmo"
             },
             "offset": 14,
             "castTime": 40
