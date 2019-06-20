@@ -2735,53 +2735,435 @@ export const UNITS: any[] = [
     ]
   },
   {
-    id: 23,
-    names: {
-      en: "Randi",
-      fr: "Randy",
-      tw: "蘭迪",
-      kr: "랜디",
-      es: "Randy"
+    "id": 23,
+    "names": {
+      "en": "Randi",
+      "tw": "蘭迪",
+      "kr": "랜디",
+      "fr": "Randy",
+      "es": "Randy"
     },
-    abilities: [
+    "abilities": [
       {
-        id: 1,
-        names: {
-          en: "Whirlwind Slash",
-          tw: "旋風三段斬",
-          kr: "질풍 삼단 베기",
-          fr: "Entaille tourbillonnante",
-          de: "Wirbelwindschnitt",
-          es: "Tajo torbellino"
+        "id": 200430,
+        "names": {
+          "en": "Ending Blow",
+          "tw": "必殺",
+          "kr": "필살",
+          "fr": "Coup fatal",
+          "de": "Vernichtungsschlag",
+          "es": "Golpe de gracia"
         },
-        hitDamage: [50, 50],
-        debuffs: [
-          {
-            type: "wind",
-            value: 50
-          }
+        "base": 150,
+        "hitDamage": [
+          100
         ],
-        framesList: [17, 26],
-        offset: 8,
-        base: 700
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70
+        ]
       },
       {
-        id: 2,
-        names: {
-          en: "Torrential Slash",
-          tw: "前後逆波斬",
-          kr: "전후격파 베기",
-          fr: "Entaille torrentielle",
-          de: "Reißender Schnitt",
-          es: "Tajo torrencial"
+        "id": 203450,
+        "names": {
+          "en": "Slice Thrice",
+          "tw": "三段斬",
+          "kr": "삼단 베기",
+          "fr": "Triple entaille",
+          "de": "Dreifachhieb",
+          "es": "Sablazo triple"
         },
-        hitDamage: [
+        "base": 215,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 702220,
+        "names": {
+          "en": "Slice Thrice + 2",
+          "tw": "三段斬 + 2",
+          "kr": "삼단 베기 + 2",
+          "fr": "Triple entaille + 2",
+          "de": "Dreifachhieb + 2",
+          "es": "Sablazo triple + 2"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 508452,
+        "names": {
+          "en": "Five-Stage Frenzy",
+          "tw": "狂亂五段刺",
+          "kr": "광란의 5단 찌르기",
+          "fr": "Frénésie à cinq temps",
+          "de": "Fünfstufiger Tollwutschlag",
+          "es": "Frenesí pentafásico"
+        },
+        "base": 2400,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 10, 10, 10, 10, 78
+        ]
+      },
+      {
+        "id": 508453,
+        "names": {
+          "en": "Drilling Slash",
+          "tw": "螺旋斬",
+          "kr": "나선참",
+          "fr": "Torpillo-lance",
+          "de": "Spiralhieb",
+          "es": "Corte de taladro"
+        },
+        "base": 2000,
+        "hitDamage": [
+          2.8, 2.8, 2.8, 2.8, 2.8, 2.8, 3.2, 80
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 228240,
+        "names": {
+          "en": "Power of Undine",
+          "tw": "溫蒂尼之力",
+          "kr": "운디네의 힘",
+          "fr": "Pouvoir d'Ondine",
+          "de": "Kraft von Undine",
+          "es": "Poder de Ondina"
+        },
+        "base": 800,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 228241,
+        "names": {
+          "en": "Power of Gnome",
+          "tw": "諾姆之力",
+          "kr": "노움의 힘",
+          "fr": "Pouvoir de Gnome",
+          "de": "Kraft von Gnom",
+          "es": "Poder de Duende"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 228242,
+        "names": {
+          "en": "Power of Sylphid",
+          "tw": "吉恩之力",
+          "kr": "진의 힘",
+          "fr": "Pouvoir de Sylphide",
+          "de": "Kraft von Dschinn",
+          "es": "Poder de Céfiro"
+        },
+        "base": 800,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 228243,
+        "names": {
+          "en": "Power of Salamando",
+          "tw": "火焰蜥蜴之力",
+          "kr": "살라만더의 힘",
+          "fr": "Pouvoir d'Athanor",
+          "de": "Kraft von Salamander",
+          "es": "Poder de Salamandra"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 508450,
+        "names": {
+          "en": "Mana Strike",
+          "tw": "瑪娜的一擊",
+          "kr": "마나의 일격",
+          "fr": "Frappe de Mana",
+          "de": "Mana-Schlag",
+          "es": "Golpe de Mana"
+        },
+        "base": 1700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          52
+        ]
+      },
+      {
+        "id": 228244,
+        "names": {
+          "en": "Power of Shade",
+          "tw": "陰影之力",
+          "kr": "셰이드의 힘",
+          "fr": "Pouvoir d'Ombre",
+          "de": "Kraft von Umbra",
+          "es": "Poder de Umbra"
+        },
+        "base": 800,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 228245,
+        "names": {
+          "en": "Power of Lumina",
+          "tw": "離子電之力",
+          "kr": "윌오위스프의 힘",
+          "fr": "Pouvoir de Lumina",
+          "de": "Kraft von Puck",
+          "es": "Poder de Lúmina"
+        },
+        "base": 800,
+        "hitDamage": [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        castTime: 40,
-        framesList: [42, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-        offset: 26,
-        base: 700
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 228246,
+        "names": {
+          "en": "Power of Luna",
+          "tw": "月之力",
+          "kr": "루나의 힘",
+          "fr": "Pouvoir de Luna",
+          "de": "Kraft von Selene",
+          "es": "Poder de Astro"
+        },
+        "base": 80,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 502050,
+        "names": {
+          "en": "Swinging Slash + 2",
+          "tw": "迴旋斬 + 2",
+          "kr": "대차륜 베기 + 2",
+          "fr": "Entaille oscillante + 2",
+          "de": "Schwingender Schnitt + 2",
+          "es": "Tajo espiral + 2"
+        },
+        "base": 480,
+        "hitDamage": [
+          16.666666666666668, 16.666666666666668, 16.666666666666668, 16.666666666666668, 16.666666666666668, 16.666666666666668
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 4, 10, 4, 10, 4
+        ]
+      },
+      {
+        "id": 502060,
+        "names": {
+          "en": "Whirlwind Slash + 2",
+          "tw": "旋風三段斬 + 2",
+          "kr": "질풍 삼단 베기 + 2",
+          "fr": "Entaille tourbillonnante + 2",
+          "de": "Wirbelwindschnitt + 2",
+          "es": "Tajo torbellino + 2"
+        },
+        "base": 700,
+        "hitDamage": [30, 30, 40],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [12, 27, 72]
+      },
+      {
+        "id": 502070,
+        "names": {
+          "en": "Torrential Slash + 2",
+          "tw": "前後逆波斬 + 2",
+          "kr": "전후격파 베기 + 2",
+          "fr": "Entaille torrentielle + 2",
+          "de": "Reißender Schnitt + 2",
+          "es": "Tajo torrencial + 2"
+        },
+        "base": 700,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 304000107,
+        "names": {
+          "en": "Torpedo Slash",
+          "tw": "魚雷旋風斬",
+          "kr": "어뢰선풍참",
+          "fr": "Tourbillo-lame",
+          "de": "Torpedowirbel",
+          "es": "Corte torpedo"
+        },
+        "base": 1450,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          228240,
+          228241,
+          228242,
+          228243,
+          228244,
+          228245,
+          228246,
+          228247,
+          228248,
+          228249,
+          228250,
+          203450,
+          702210,
+          702220,
+          203460,
+          502050,
+          502060,
+          502070
+        ]
       }
     ]
   },
@@ -16545,6 +16927,38 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 70439,
+        "names": {
+          "en": "Freeze + 2",
+          "tw": "冰結 + 2",
+          "kr": "프리즈 + 2",
+          "fr": "Gel + 2",
+          "de": "Frost + 2",
+          "es": "Congelación + 2"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ]
+      },
+      {
         id: 20550,
         names: {
           "en": "Raging Ice",
@@ -16566,6 +16980,32 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 1400
+      },
+      {
+        "id": 70437,
+        "names": {
+          "en": "Raging Ice + 2",
+          "tw": "烈冰 + 2",
+          "kr": "조블리자 + 2",
+          "fr": "Glace rageuse + 2",
+          "de": "Wütendes Eis + 2",
+          "es": "Hielo furibundo + 2"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
         "id": 20390,
@@ -17475,17 +17915,11 @@ export const UNITS: any[] = [
           "es": "Lluvia de puños"
         },
         "hitDamage": [
-          20,
-          20,
-          20,
-          40
+          20, 20, 20, 40
         ],
         "castTime": 22,
         "framesList": [
-          24,
-          5,
-          5,
-          15
+          24, 5, 5, 15
         ],
         "offset": 14,
         "base": 300
@@ -17748,18 +18182,7 @@ export const UNITS: any[] = [
         },
         "damage": "magic",
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          12
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
         "magicType": "black",
@@ -17768,18 +18191,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "framesList": [
-          80,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ],
         "offset": 14,
         "base": 250,
@@ -17807,6 +18219,28 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 2850
+      },
+      {
+        "id": 707653,
+        "names": {
+          "en": "Angelo Tackle + 2",
+          "tw": "安傑洛擒敵 + 2",
+          "kr": "안젤로 태클 + 2",
+          "fr": "Angel Boxer + 2",
+          "de": "Angel-Tackle + 2",
+          "es": "Placaje de Ángelo + 2"
+        },
+        "damage": "magic",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          7
+        ]
       },
       {
         id: 20560,
@@ -17839,25 +18273,11 @@ export const UNITS: any[] = [
         },
         "damage": "hybrid",
         "hitDamage": [
-          10,
-          10,
-          10,
-          10,
-          10,
-          10,
-          10,
-          30
+          10, 10, 10, 10, 10, 10, 10, 30
         ],
         "dualable": false,
         "framesList": [
-          135,
-          44,
-          24,
-          15,
-          15,
-          14,
-          11,
-          62
+          135, 44, 24, 15, 15, 14, 11, 62
         ],
         "offset": 8,
         "base": 2290
@@ -17865,7 +18285,16 @@ export const UNITS: any[] = [
     ],
     multipleBlack : 3,
     multipleWhite : 3,
-    multipleGreen : 3
+    multipleGreen : 3,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          226644,
+          707653
+        ]
+      }
+    ]
   },
   {
     id: 148,
@@ -17905,6 +18334,35 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707667,
+        "names": {
+          "en": "Flame Barret + 2",
+          "tw": "烈焰子彈 + 2",
+          "kr": "플레임 바렛 + 2",
+          "fr": "Barillet flammes + 2",
+          "de": "Flammenbarrett + 2",
+          "es": "Broche de fuego + 2"
+        },
+        "base": 325,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 65
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
         id: 226626,
         "names": {
           "en": "Wind Barret",
@@ -17931,6 +18389,49 @@ export const UNITS: any[] = [
             "type": "wind",
             "value": 60
           }
+        ]
+      },
+      {
+        "id": 912434,
+        "names": {
+          "en": "Wind Barret + 2",
+          "tw": "疾風子彈 + 2",
+          "kr": "윈드 바렛 + 2",
+          "fr": "Barillet vent + 2",
+          "de": "Windbarrett + 2",
+          "es": "Broche de viento + 2"
+        },
+        "base": 325,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          65
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
@@ -17963,6 +18464,49 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912432,
+        "names": {
+          "en": "Thunder Barret + 2",
+          "tw": "迅雷子彈 + 2",
+          "kr": "선더 바렛 + 2",
+          "fr": "Barillet tonnerre + 2",
+          "de": "Donnerbarrett + 2",
+          "es": "Broche de rayo + 2"
+        },
+        "base": 325,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          65
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
         id: 226627,
         "names": {
           "en": "Light Barret",
@@ -17992,6 +18536,49 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912436,
+        "names": {
+          "en": "Light Barret + 2",
+          "tw": "閃光子彈 + 2",
+          "kr": "라이트 바렛 + 2",
+          "fr": "Barillet lumière + 2",
+          "de": "Lichtbarrett + 2",
+          "es": "Broche de luz + 2"
+        },
+        "base": 325,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          65
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
         id: 226622,
         "names": {
           "en": "Blasting Zone",
@@ -18007,6 +18594,27 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 200,
         "ignore": 50
+      },
+      {
+        "id": 707669,
+        "names": {
+          "en": "Blasting Zone + 2",
+          "tw": "燃燒領域 + 2",
+          "kr": "블래스팅 존 + 2",
+          "fr": "Déflagration + 2",
+          "de": "Blast-Zone + 2",
+          "es": "Guillotina cósmica + 2"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          40
+        ]
       },
       {
         id: 911245,
@@ -18029,6 +18637,29 @@ export const UNITS: any[] = [
         "offset": 86,
         "base": 300,
         "ignore": 50
+      },
+      {
+        "id": 509341,
+        "names": {
+          "en": "Keen Edge+ + 2",
+          "tw": "利刃·改 + 2",
+          "kr": "개량형 킨 엣지 + 2",
+          "fr": "Tranchant acéré + + 2",
+          "de": "Kühne Schneide+ + 2",
+          "es": "Filo acerado+ + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          2,
+          15
+        ]
       },
       {
         id: 208000107,
@@ -18061,7 +18692,13 @@ export const UNITS: any[] = [
           226624,
           226625,
           226626,
-          226627
+          226627,
+          509341,
+          707669,
+          707667,
+          912432,
+          912434,
+          912436
         ]
       }
     ]
@@ -40933,6 +41570,576 @@ export const UNITS: any[] = [
           229787,
           229788,
           509201
+        ]
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "names": {
+      "en": "Flammie",
+      "tw": "弗拉米",
+      "kr": "플래미",
+      "de": "Flämmchen"
+    },
+    "abilities": [
+      {
+        "id": 228212,
+        "names": {
+          "en": "Claw Sharpener",
+          "tw": "磨爪",
+          "kr": "발톱 갈기",
+          "fr": "Taille-griffe",
+          "de": "Krallenschärfer",
+          "es": "Afilagarras"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 228210,
+        "names": {
+          "en": "White Dragon's Influence",
+          "tw": "白龍引誘",
+          "kr": "백룡의 유인",
+          "fr": "Appel du dragon blanc",
+          "de": "Bann des Weißen Drachen",
+          "es": "Influencia del dragón blanco"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 228216,
+        "names": {
+          "en": "Sword Gnaw",
+          "tw": "咬劍",
+          "kr": "검 물어뜯기",
+          "fr": "Ronge-épée",
+          "de": "Schwertnager",
+          "es": "Mordisco de acero"
+        },
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "dualable": false,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 228217,
+        "names": {
+          "en": "Staff Gnaw",
+          "tw": "咬杖",
+          "kr": "지팡이 물어뜯기",
+          "fr": "Ronge-bâton",
+          "de": "Stabnager",
+          "es": "Mordisco de bastón"
+        },
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "dualable": false,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 508442,
+        "names": {
+          "en": "White Dragon's Roar",
+          "tw": "白龍咆哮",
+          "kr": "백룡의 포효",
+          "fr": "Rugissement du dragon blanc",
+          "de": "Ruf des Weißen Drachen",
+          "es": "Rugido de dragón blanco"
+        },
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "dualable": false,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 228222,
+        "names": {
+          "en": "Claw Cleaver",
+          "tw": "爪裂",
+          "kr": "발톱 갈기",
+          "fr": "Lacération",
+          "de": "Krallenfetzer",
+          "es": "Garra rebanadora"
+        },
+        "base": 225,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          228210,
+          228212,
+          228222
+        ]
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "names": {
+      "en": "Vagrant Knight Rain",
+      "tw": "彷徨騎士雷因",
+      "kr": "방황의 기사 레인",
+      "fr": "Rain, chevalier vagabond",
+      "de": "Wandernder Ritter Rain",
+      "es": "Rain caballero mendicante"
+    },
+    "abilities": [
+      {
+        "id": 20200,
+        "names": {
+          "en": "Firaga",
+          "tw": "大火焰",
+          "kr": "파이가",
+          "fr": "Feu X",
+          "de": "Feuga",
+          "es": "Piro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20250,
+        "names": {
+          "en": "Stonga",
+          "tw": "大落石",
+          "kr": "스톤가",
+          "fr": "Terre X",
+          "de": "Terraga",
+          "es": "Piedra++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          180
+        ]
+      },
+      {
+        "id": 226392,
+        "names": {
+          "en": "Undermine+",
+          "tw": "破壞改",
+          "kr": "개량형 사기 꺾기",
+          "fr": "Saper +",
+          "de": "Unterhöhlen+",
+          "es": "Debilitar+"
+        },
+        "base": 170,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 13,
+        "offset": 14,
+        "framesList": [
+          15,
+          27
+        ]
+      },
+      {
+        "id": 707387,
+        "names": {
+          "en": "Undermine+ + 2",
+          "tw": "破壞改 + 2",
+          "kr": "개량형 사기 꺾기 + 2",
+          "fr": "Saper + + 2",
+          "de": "Unterhöhlen+ + 2",
+          "es": "Debilitar+ + 2"
+        },
+        "base": 170,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 13,
+        "offset": 14,
+        "framesList": [
+          15,
+          27
+        ]
+      },
+      {
+        "id": 226397,
+        "names": {
+          "en": "Bond with Lid",
+          "tw": "與里德的羈絆",
+          "kr": "리드와의 인연",
+          "fr": "Lien avec Lid",
+          "de": "Verbindung mit Lid",
+          "es": "Unión con Lid"
+        },
+        "base": 140,
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 23
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          92, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 226399,
+        "names": {
+          "en": "Bond with Jake",
+          "tw": "與傑科的羈絆",
+          "kr": "제이크와의 인연",
+          "fr": "Lien avec Jake",
+          "de": "Verbindung mit Jake",
+          "es": "Unión con Jake"
+        },
+        "base": 140,
+        "hitDamage": [
+          16, 16, 16, 16, 17, 19
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          46, 6, 6, 6, 6, 13
+        ]
+      },
+      {
+        "id": 226398,
+        "names": {
+          "en": "Bond with Nichol",
+          "tw": "與尼科爾的羈絆",
+          "kr": "니콜과의 인연",
+          "fr": "Lien avec Nichol",
+          "de": "Verbindung mit Nichol",
+          "es": "Unión con Nichol"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          190
+        ]
+      },
+      {
+        "id": 226390,
+        "names": {
+          "en": "Mirror of Heaven",
+          "tw": "明鏡·空",
+          "kr": "잔잔한 거울·공",
+          "fr": "Sérénité - Paradis",
+          "de": "Kata - Himmel",
+          "es": "Tranquilidad - Cielo"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 226395,
+        "names": {
+          "en": "Bond with Lasswell",
+          "tw": "與拉斯韋爾的羈絆",
+          "kr": "라스웰과의 인연",
+          "fr": "Lien avec Lasswell",
+          "de": "Verbindung mit Lasswell",
+          "es": "Unión con Lasswell"
+        },
+        "base": 320,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 80,
+        "elements": [
+          "ice",
+          "wind"
+        ],
+        "offset": 28,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 30
+          },
+          {
+            "type": "wind",
+            "value": 30
+          }
+        ],
+        "framesList": [
+          100,
+          54
+        ]
+      },
+      {
+        "id": 226396,
+        "names": {
+          "en": "Bond with Fina",
+          "tw": "與菲娜的羈絆",
+          "kr": "피나와의 인연",
+          "fr": "Lien avec Fina",
+          "de": "Verbindung mit Fina",
+          "es": "Unión con Fina"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          140
+        ]
+      },
+      {
+        "id": 226400,
+        "names": {
+          "en": "Bond with Sakura",
+          "tw": "與櫻的羈絆",
+          "kr": "사쿠라와의 인연",
+          "fr": "Lien avec Sakura",
+          "de": "Verbindung mit Sakura",
+          "es": "Unión con Sakura"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 226401,
+        "names": {
+          "en": "Bond with Dark Fina",
+          "tw": "與魔人菲娜的羈絆",
+          "kr": "마인 피나와의 인연",
+          "fr": "Lien avec Fina obscure",
+          "de": "Verbindung mit Dunkel-Fina",
+          "es": "Unión con Fina oscura"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 226391,
+        "names": {
+          "en": "D Rising Lava",
+          "tw": "D·灼熱熔岩",
+          "kr": "D·차오르는 용암",
+          "fr": "Lave ascendante",
+          "de": "Wütende Lava",
+          "es": "Lava alta"
+        },
+        "base": 450,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 10,
+        "elements": [
+          "fire",
+          "earth"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 30
+          },
+          {
+            "type": "earth",
+            "value": 30
+          }
+        ],
+        "framesList": [
+          15,
+          23
+        ]
+      },
+      {
+        "id": 707383,
+        "names": {
+          "en": "D Rising Lava + 2",
+          "tw": "D·灼熱熔岩 + 2",
+          "kr": "D·차오르는 용암 + 2",
+          "fr": "Lave ascendante + 2",
+          "de": "Wütende Lava + 2",
+          "es": "Lava alta + 2"
+        },
+        "base": 750,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 10,
+        "elements": [
+          "fire",
+          "earth"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          },
+          {
+            "type": "earth",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          15,
+          23
+        ]
+      },
+      {
+        "id": 100015006,
+        "names": {
+          "en": "Strength of the Heart",
+          "tw": "思念之力",
+          "kr": "마음의 힘",
+          "fr": "Force des sentiments",
+          "de": "Kraft der Empfindung",
+          "es": "Fuerza cardiaca"
+        },
+        "base": 1000,
+        "hitDamage": [
+          9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          71, 69, 57, 10, 10, 25, 57, 30, 124, 28, 38
         ]
       }
     ]

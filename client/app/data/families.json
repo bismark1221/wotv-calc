@@ -577,6 +577,66 @@
         ]
       },
       {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 900000257,
+            "names": {
+              "en": "Torpedo Slash + 1",
+              "tw": "魚雷旋風斬 + 1",
+              "kr": "어뢰선풍참 + 1",
+              "fr": "Tourbillo-lame + 1",
+              "de": "Torpedowirbel + 1",
+              "es": "Corte torpedo + 1"
+            },
+            "offset": 14
+          },
+          {
+            "id": 304000107,
+            "names": {
+              "en": "Torpedo Slash",
+              "tw": "魚雷旋風斬",
+              "kr": "어뢰선풍참",
+              "fr": "Tourbillo-lame",
+              "de": "Torpedowirbel",
+              "es": "Corte torpedo"
+            },
+            "offset": 14
+          }
+        ]
+      },
+      {
+        "id": 304000405,
+        "names": {
+          "en": "Flammie",
+          "tw": "弗拉米",
+          "kr": "플래미",
+          "de": "Flämmchen"
+        },
+        "abilities": [
+          {
+            "id": 228222,
+            "names": {
+              "en": "Claw Cleaver",
+              "tw": "爪裂",
+              "kr": "발톱 갈기",
+              "fr": "Lacération",
+              "de": "Krallenfetzer",
+              "es": "Garra rebanadora"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401004605,
         "names": {
           "en": "Malphasie",
@@ -1384,6 +1444,31 @@
         ]
       },
       {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 228245,
+            "names": {
+              "en": "Power of Lumina",
+              "tw": "離子電之力",
+              "kr": "윌오위스프의 힘",
+              "fr": "Pouvoir de Lumina",
+              "de": "Kraft von Puck",
+              "es": "Poder de Lúmina"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401006405,
         "names": {
           "en": "Aurora Fryevia",
@@ -1453,6 +1538,121 @@
               "es": "Estasis celestial"
             },
             "offset": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "40-5-5-5-5-5-5-5-5-5-5",
+    "units": [
+      {
+        "id": 100014005,
+        "names": {
+          "en": "Mediena",
+          "tw": "美迪愛娜",
+          "kr": "메디아나"
+        },
+        "abilities": [
+          {
+            "id": 70436,
+            "names": {
+              "en": "Raging Ice + 1",
+              "tw": "烈冰 + 1",
+              "kr": "조블리자 + 1",
+              "fr": "Glace rageuse + 1",
+              "de": "Wütendes Eis + 1",
+              "es": "Hielo furibundo + 1"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 70437,
+            "names": {
+              "en": "Raging Ice + 2",
+              "tw": "烈冰 + 2",
+              "kr": "조블리자 + 2",
+              "fr": "Glace rageuse + 2",
+              "de": "Wütendes Eis + 2",
+              "es": "Hielo furibundo + 2"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 228244,
+            "names": {
+              "en": "Power of Shade",
+              "tw": "陰影之力",
+              "kr": "셰이드의 힘",
+              "fr": "Pouvoir d'Ombre",
+              "de": "Kraft von Umbra",
+              "es": "Poder de Umbra"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
+        "id": 401002605,
+        "names": {
+          "en": "Christine",
+          "tw": "克莉絲汀",
+          "kr": "크리스틴"
+        },
+        "abilities": [
+          {
+            "id": 910652,
+            "names": {
+              "en": "Absolute Zero + 2",
+              "tw": "極限零凍 + 2",
+              "kr": "절대영도 + 2",
+              "fr": "Zéro absolu + 2",
+              "de": "Absoluter Nullpunkt + 2",
+              "es": "Cero absoluto + 2"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 911790,
+            "names": {
+              "en": "Absolute Zero + 2",
+              "tw": "極限零凍 + 2",
+              "kr": "절대영도 + 2",
+              "fr": "Zéro absolu + 2",
+              "de": "Absoluter Nullpunkt + 2",
+              "es": "Cero absoluto + 2"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 911791,
+            "names": {
+              "en": "Absolute Zero + 2",
+              "tw": "極限零凍 + 2",
+              "kr": "절대영도 + 2",
+              "fr": "Zéro absolu + 2",
+              "de": "Absoluter Nullpunkt + 2",
+              "es": "Cero absoluto + 2"
+            },
+            "offset": 14,
+            "castTime": 39
           }
         ]
       }
@@ -2687,6 +2887,68 @@
         ]
       },
       {
+        "id": 208000105,
+        "names": {
+          "en": "Squall",
+          "tw": "斯考爾",
+          "kr": "스퀄"
+        },
+        "abilities": [
+          {
+            "id": 707667,
+            "names": {
+              "en": "Flame Barret + 2",
+              "tw": "烈焰子彈 + 2",
+              "kr": "플레임 바렛 + 2",
+              "fr": "Barillet flammes + 2",
+              "de": "Flammenbarrett + 2",
+              "es": "Broche de fuego + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912432,
+            "names": {
+              "en": "Thunder Barret + 2",
+              "tw": "迅雷子彈 + 2",
+              "kr": "선더 바렛 + 2",
+              "fr": "Barillet tonnerre + 2",
+              "de": "Donnerbarrett + 2",
+              "es": "Broche de rayo + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912434,
+            "names": {
+              "en": "Wind Barret + 2",
+              "tw": "疾風子彈 + 2",
+              "kr": "윈드 바렛 + 2",
+              "fr": "Barillet vent + 2",
+              "de": "Windbarrett + 2",
+              "es": "Broche de viento + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912436,
+            "names": {
+              "en": "Light Barret + 2",
+              "tw": "閃光子彈 + 2",
+              "kr": "라이트 바렛 + 2",
+              "fr": "Barillet lumière + 2",
+              "de": "Lichtbarrett + 2",
+              "es": "Broche de luz + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 209001105,
         "names": {
           "en": "Beatrix",
@@ -2843,6 +3105,57 @@
               "fr": "Enchaînement parfait",
               "de": "Perfekte Treffer",
               "es": "Golpe perfecto"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 508453,
+            "names": {
+              "en": "Drilling Slash",
+              "tw": "螺旋斬",
+              "kr": "나선참",
+              "fr": "Torpillo-lance",
+              "de": "Spiralhieb",
+              "es": "Corte de taladro"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 228241,
+            "names": {
+              "en": "Power of Gnome",
+              "tw": "諾姆之力",
+              "kr": "노움의 힘",
+              "fr": "Pouvoir de Gnome",
+              "de": "Kraft von Gnom",
+              "es": "Poder de Duende"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 228243,
+            "names": {
+              "en": "Power of Salamando",
+              "tw": "火焰蜥蜴之力",
+              "kr": "살라만더의 힘",
+              "fr": "Pouvoir d'Athanor",
+              "de": "Kraft von Salamander",
+              "es": "Poder de Salamandra"
             },
             "offset": 14,
             "castTime": 40
@@ -3349,6 +3662,44 @@
     "family": "42-6-6-6-6-6-6-6-6",
     "units": [
       {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 228240,
+            "names": {
+              "en": "Power of Undine",
+              "tw": "溫蒂尼之力",
+              "kr": "운디네의 힘",
+              "fr": "Pouvoir d'Ondine",
+              "de": "Kraft von Undine",
+              "es": "Poder de Ondina"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 228242,
+            "names": {
+              "en": "Power of Sylphid",
+              "tw": "吉恩之力",
+              "kr": "진의 힘",
+              "fr": "Pouvoir de Sylphide",
+              "de": "Kraft von Dschinn",
+              "es": "Poder de Céfiro"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
         "id": 401006805,
         "names": {
           "en": "Esther",
@@ -3522,6 +3873,58 @@
               "fr": "Barillet lumière",
               "de": "Lichtbarrett",
               "es": "Broche de luz"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707666,
+            "names": {
+              "en": "Flame Barret + 1",
+              "tw": "烈焰子彈 + 1",
+              "kr": "플레임 바렛 + 1",
+              "fr": "Barillet flammes + 1",
+              "de": "Flammenbarrett + 1",
+              "es": "Broche de fuego + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912431,
+            "names": {
+              "en": "Thunder Barret + 1",
+              "tw": "迅雷子彈 + 1",
+              "kr": "선더 바렛 + 1",
+              "fr": "Barillet tonnerre + 1",
+              "de": "Donnerbarrett + 1",
+              "es": "Broche de rayo + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912433,
+            "names": {
+              "en": "Wind Barret + 1",
+              "tw": "疾風子彈 + 1",
+              "kr": "윈드 바렛 + 1",
+              "fr": "Barillet vent + 1",
+              "de": "Windbarrett + 1",
+              "es": "Broche de viento + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912435,
+            "names": {
+              "en": "Light Barret + 1",
+              "tw": "閃光子彈 + 1",
+              "kr": "라이트 바렛 + 1",
+              "fr": "Barillet lumière + 1",
+              "de": "Lichtbarrett + 1",
+              "es": "Broche de luz + 1"
             },
             "offset": 14,
             "castTime": 40
@@ -11102,6 +11505,32 @@
               "fr": "Gel",
               "de": "Frost",
               "es": "Congelación"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 70438,
+            "names": {
+              "en": "Freeze + 1",
+              "tw": "冰結 + 1",
+              "kr": "프리즈 + 1",
+              "fr": "Gel + 1",
+              "de": "Frost + 1",
+              "es": "Congelación + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 70439,
+            "names": {
+              "en": "Freeze + 2",
+              "tw": "冰結 + 2",
+              "kr": "프리즈 + 2",
+              "fr": "Gel + 2",
+              "de": "Frost + 2",
+              "es": "Congelación + 2"
             },
             "offset": 14,
             "castTime": 40
