@@ -2821,7 +2821,7 @@ export const UNITS: any[] = [
         "castTime": 10,
         "offset": 14,
         "framesList": [
-          2, 10, 10, 10, 10, 78
+          2, 10, 10, 10, 10
         ]
       },
       {
@@ -3162,7 +3162,10 @@ export const UNITS: any[] = [
           203460,
           502050,
           502060,
-          502070
+          502070,
+          508452,
+          508453,
+          508450
         ]
       }
     ]
@@ -18403,14 +18406,7 @@ export const UNITS: any[] = [
         },
         "base": 325,
         "hitDamage": [
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          65
+          5, 5, 5, 5, 5, 5, 5, 65
         ],
         "castTime": 40,
         "elements": [
@@ -18424,14 +18420,7 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          70,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6
+          70, 6, 6, 6, 6, 6, 6, 6
         ]
       },
       {
@@ -18475,14 +18464,7 @@ export const UNITS: any[] = [
         },
         "base": 325,
         "hitDamage": [
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          65
+          5, 5, 5, 5, 5, 5, 5, 65
         ],
         "castTime": 40,
         "elements": [
@@ -18496,14 +18478,7 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          70,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6
+          70, 6, 6, 6, 6, 6, 6, 6
         ]
       },
       {
@@ -18547,14 +18522,7 @@ export const UNITS: any[] = [
         },
         "base": 325,
         "hitDamage": [
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          65
+          5, 5, 5, 5, 5, 5, 5, 65
         ],
         "castTime": 40,
         "elements": [
@@ -18568,14 +18536,7 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          70,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6,
-          6
+          70, 6, 6, 6, 6, 6, 6, 6
         ]
       },
       {
@@ -18627,16 +18588,37 @@ export const UNITS: any[] = [
           "es": "Filo acerado"
         },
         "hitDamage": [
-          50,
-          50
+          50, 50
         ],
         "framesList": [
-          2,
-          10
+          2, 10
         ],
         "offset": 86,
         "base": 300,
         "ignore": 50
+      },
+      {
+        "id": 509340,
+        "names": {
+          "en": "Keen Edge + 2",
+          "tw": "利刃·改 + 2",
+          "kr": "개량형 킨 엣지 + 2",
+          "fr": "Tranchant acéré + 2",
+          "de": "Kühne Schneide + 2",
+          "es": "Filo acerado + 2"
+        },
+        "base": 600,
+        "hitDamage": [
+          50,
+          50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          2,
+          10
+        ]
       },
       {
         "id": 509341,
@@ -18698,7 +18680,9 @@ export const UNITS: any[] = [
           707667,
           912432,
           912434,
-          912436
+          912436,
+          509340,
+          707667
         ]
       }
     ]
