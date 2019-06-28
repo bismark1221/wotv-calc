@@ -42127,5 +42127,878 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 261,
+    "names": {
+      "en": "Chocobo Rain",
+      "tw": "雷因&陸行鳥",
+      "kr": "레인&초코보",
+      "fr": "Rain à dos de chocobo",
+      "de": "Chocobo-Rain",
+      "es": "Rain en chocobo"
+    },
+    "abilities": [
+      {
+        "id": 230152,
+        "names": {
+          "en": "ChocoFire",
+          "tw": "陸行鳥火焰",
+          "kr": "초코 파이어",
+          "fr": "Choco-feu",
+          "de": "Choco-Feuer",
+          "es": "Chocofuego"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 230157,
+        "names": {
+          "en": "ChocoStone",
+          "tw": "陸行鳥落石",
+          "kr": "초코 스톤",
+          "fr": "Choco-terre",
+          "de": "Choco-Stein",
+          "es": "Chocopetra"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 226392,
+        "names": {
+          "en": "Undermine+",
+          "tw": "破壞改",
+          "kr": "개량형 사기 꺾기",
+          "fr": "Saper +",
+          "de": "Unterhöhlen+",
+          "es": "Debilitar+"
+        },
+        "base": 170,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 13,
+        "offset": 14,
+        "framesList": [
+          15, 27
+        ]
+      },
+      {
+        "id": 20200,
+        "names": {
+          "en": "Firaga",
+          "tw": "大火焰",
+          "kr": "파이가",
+          "fr": "Feu X",
+          "de": "Feuga",
+          "es": "Piro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20250,
+        "names": {
+          "en": "Stonga",
+          "tw": "大落石",
+          "kr": "스톤가",
+          "fr": "Terre X",
+          "de": "Terraga",
+          "es": "Piedra++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          180
+        ]
+      },
+      {
+        "id": 230153,
+        "names": {
+          "en": "ChocoBlizzard",
+          "tw": "陸行鳥暴雪",
+          "kr": "초코 블리자드",
+          "fr": "Choco-glace",
+          "de": "Choco-Blizzard",
+          "es": "Chocohielo"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "id": 230155,
+        "names": {
+          "en": "ChocoWater",
+          "tw": "陸行鳥流水",
+          "kr": "초코 워터",
+          "fr": "Choco-eau",
+          "de": "Choco-Wasser",
+          "es": "Chocoagua"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 230154,
+        "names": {
+          "en": "ChocoThunder",
+          "tw": "陸行鳥雷電",
+          "kr": "초코 선더",
+          "fr": "Choco-foudre",
+          "de": "Choco-Donner",
+          "es": "Chocorayo"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 230156,
+        "names": {
+          "en": "ChocoAero",
+          "tw": "陸行鳥勁風",
+          "kr": "초코 에어로",
+          "fr": "Choco-vent",
+          "de": "Choco-Aero",
+          "es": "Chocoaero"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 230151,
+        "names": {
+          "en": "Riding Lava",
+          "tw": "熔岩騎乘",
+          "kr": "달리는 용암",
+          "fr": "Traversée de lave",
+          "de": "Heißer Lava-Ritt",
+          "es": "Camino de lava"
+        },
+        "base": 320,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 10,
+        "elements": [
+          "fire",
+          "earth"
+        ],
+        "offset": 14,
+        "framesList": [
+          22, 20, 20, 20
+        ]
+      },
+      {
+        "id": 230158,
+        "names": {
+          "en": "ChocoBanish",
+          "tw": "陸行鳥放逐",
+          "kr": "초코 배니시",
+          "fr": "Choco-bannissement",
+          "de": "Choco-Bann",
+          "es": "Chocoexilio"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 230159,
+        "names": {
+          "en": "ChocoDark",
+          "tw": "陸行鳥暗黑",
+          "kr": "초코 다크",
+          "fr": "Choco-ténèbres",
+          "de": "Choco-Dunkel",
+          "es": "Chocoscuridad"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 40
+          }
+        ],
+        "framesList": [
+          160
+        ]
+      },
+      {
+        "id": 509391,
+        "names": {
+          "en": "ChocoComet",
+          "tw": "陸行鳥彗星",
+          "kr": "초코멧",
+          "fr": "Choco-comète",
+          "de": "Choco-Komet",
+          "es": "Chococometa"
+        },
+        "base": 250,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 509392,
+        "names": {
+          "en": "ChocoFlare",
+          "tw": "陸行鳥核爆",
+          "kr": "초코 플레어",
+          "fr": "Choco-brasier",
+          "de": "Choco-Flackern",
+          "es": "Chocofulgor"
+        },
+        "base": 350,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "id": 509393,
+        "names": {
+          "en": "ChocoHoly",
+          "tw": "陸行鳥神聖",
+          "kr": "초코 홀리",
+          "fr": "Choco-sidéral",
+          "de": "Choco-Weihe",
+          "es": "Chocosanctus"
+        },
+        "base": 360,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "id": 100021306,
+        "names": {
+          "en": "Chocobo Rush!",
+          "tw": "陸行鳥衝刺！",
+          "kr": "초코보 러쉬!",
+          "fr": "Choco-ruée !",
+          "de": "Chocobo-Rausch!",
+          "es": "¡Chocobocarga!"
+        },
+        "base": 740,
+        "hitDamage": [
+          3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230152,
+          230153,
+          230154,
+          230155,
+          230156,
+          230157,
+          230158,
+          230159,
+          509391,
+          509392,
+          509393
+        ]
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "names": {
+      "en": "Kimono Ayaka",
+      "tw": "正裝彩花",
+      "kr": "기모노 아야카",
+      "fr": "Ayaka en kimono",
+      "de": "Kimono-Ayaka",
+      "es": "Ayaka con kimono"
+    },
+    "abilities": [
+      {
+        "id": 230252,
+        "names": {
+          "en": "Crimson Rondo",
+          "tw": "紅之圓舞",
+          "kr": "진홍의 윤무",
+          "fr": "Ronde pourpre",
+          "de": "Purpurreigen",
+          "es": "Rondó carmesí"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "id": 230253,
+        "names": {
+          "en": "Raging Parasol",
+          "tw": "暴傘",
+          "kr": "폭렬의 우산",
+          "fr": "Ombrelle folle",
+          "de": "Tobender Sonnenschirm",
+          "es": "Sombrilla violenta"
+        },
+        "damage": "magic",
+        "base": 220,
+        "hitDamage": [
+          16, 16, 16, 16, 16, 20
+        ],
+        "castTime": 30,
+        "offset": 14,
+        "framesList": [
+          32, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 230254,
+        "names": {
+          "en": "Chaotic Parasol",
+          "tw": "亂傘",
+          "kr": "혼란의 우산",
+          "fr": "Ombrelle du chaos",
+          "de": "Turbulenter Sonnenschirm",
+          "es": "Sombrilla caótica"
+        },
+        "damage": "magic",
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 230259,
+        "names": {
+          "en": "Introduction - Crashing Waterfalls",
+          "tw": "序之舞·落瀧",
+          "kr": "서의 춤·낙롱",
+          "fr": "Prélude - Cascades tonitruantes",
+          "de": "Auftakt - Krachender Wasserfall",
+          "es": "Introducción - Cascada torrencial"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509441,
+        "names": {
+          "en": "Progression - Wild Spirit",
+          "tw": "破之舞·荒魂",
+          "kr": "파의 춤·황혼",
+          "fr": "Interlude - Âme troublée",
+          "de": "Intermezzo - Wilder Geist",
+          "es": "Progresión - Espíritu salvaje"
+        },
+        "damage": "magic",
+        "base": 780,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509442,
+        "names": {
+          "en": "Climax - Scarlet Kagura",
+          "tw": "急之舞·緋神樂",
+          "kr": "급의 춤·붉은 카구라",
+          "fr": "Apogée - Kagura écarlate",
+          "de": "Klimax - Purpur-Kagura",
+          "es": "Clímax - Kagura escarlata"
+        },
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509445,
+        "names": {
+          "en": "Finale - Transcending Heaven",
+          "tw": "終舞·越天",
+          "kr": "종무·월천",
+          "fr": "Grand final - Paradis transcendant",
+          "de": "Finale - Überschreitung des Himmels",
+          "es": "Final - Trascendencia divina"
+        },
+        "damage": "magic",
+        "base": 2800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230268,
+        "names": {
+          "en": "Dance of the Blazing Flower",
+          "tw": "華焰之樂",
+          "kr": "화염의 유희",
+          "fr": "Danse de la fleur de feu",
+          "de": "Tanz der flammenden Blüten",
+          "es": "Danza de la flor llameante"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230269,
+        "names": {
+          "en": "Dance of the White Lotus",
+          "tw": "白蓉之樂",
+          "kr": "백련의 유희",
+          "fr": "Danse du lotus blanc",
+          "de": "Tanz des weißen Lotus",
+          "es": "Danza del loto blanco"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 100021907,
+        "names": {
+          "en": "Dance of Radiant Fortune",
+          "tw": "吉祥煌爛之舞",
+          "kr": "길상황란의 춤",
+          "fr": "Danse de la prospérité radieuse",
+          "de": "Tanz des glänzenden Omens",
+          "es": "Danza de fortuna radiante"
+        },
+        "damage": "magic",
+        "base": 3100,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 14, 20, 20, 20
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          88, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230252,
+          230253,
+          230254,
+          230259,
+          230268,
+          230269,
+          509441,
+          509442,
+          509445
+        ]
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "names": {
+      "en": "Dressy Aileen",
+      "tw": "裙裝艾琳",
+      "kr": "드레스업 아이린",
+      "fr": "Aileen en robe de soirée",
+      "de": "Schicke Aileen",
+      "es": "Aileen elegante"
+    },
+    "abilities": [
+      {
+        "id": 230283,
+        "names": {
+          "en": "Piledriver Shot",
+          "tw": "打樁射擊",
+          "kr": "파일 샷",
+          "fr": "Tir marteau-pilon",
+          "de": "Rammschuß",
+          "es": "Disparo de martillo"
+        },
+        "base": 250,
+        "hitDamage": [
+          2.6, 2.6, 2.6, 2.6, 2.6, 2.6, 4.4, 80
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230284,
+        "names": {
+          "en": "Ground Work II",
+          "tw": "土地工程II",
+          "kr": "점토 작업II",
+          "fr": "Fondation II",
+          "de": "Fundament II",
+          "es": "Cimentación II"
+        },
+        "base": 175,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.285714285714286, 85.71428571428571
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230285,
+        "names": {
+          "en": "Bullet Dance",
+          "tw": "子彈之舞",
+          "kr": "불릿 댄스",
+          "fr": "Danse de balles",
+          "de": "Kugeltanz",
+          "es": "Danza de balas"
+        },
+        "base": 180,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          16, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 230288,
+        "names": {
+          "en": "Back Whisk",
+          "tw": "後退拂步",
+          "kr": "백 휘스크",
+          "fr": "Pas de change",
+          "de": "Rückseitiger Wischer",
+          "es": "Sacudida trasera"
+        },
+        "base": 230,
+        "hitDamage": [
+          3.043478260869565, 3.043478260869565, 3.043478260869565, 3.043478260869565, 3.043478260869565, 3.043478260869565, 3.4782608695652173, 78.26086956521739
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230287,
+        "names": {
+          "en": "Double Reverse Spin",
+          "tw": "雙重回轉",
+          "kr": "더블 리버스 스핀",
+          "fr": "Tour impétueux",
+          "de": "Doppelte Rückwärtsdrehung",
+          "es": "Doble revés"
+        },
+        "base": 300,
+        "hitDamage": [
+          2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.666666666666667, 83.33333333333331
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230290,
+        "names": {
+          "en": "Light Work",
+          "tw": "光作業",
+          "kr": "간편 작업",
+          "fr": "Éclairage",
+          "de": "Lichterwerk",
+          "es": "Trabajo ligero"
+        },
+        "base": 175,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.285714285714286, 85.71428571428571
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100022007,
+        "names": {
+          "en": "Fascinating Impact",
+          "tw": "魅力衝擊",
+          "kr": "유려한 파장",
+          "fr": "Impact fascinant",
+          "de": "Faszinierende Wirkung",
+          "es": "Impacto fascinante"
+        },
+        "base": 1450,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          222
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          230283,
+          230284,
+          230285,
+          230287,
+          230288,
+          230290,
+        ]
+      }
+    ]
   }
 ];

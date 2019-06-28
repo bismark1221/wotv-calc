@@ -2836,6 +2836,162 @@
         ]
       },
       {
+        "id": 100021905,
+        "names": {
+          "en": "Kimono Ayaka",
+          "tw": "正裝彩花",
+          "kr": "기모노 아야카",
+          "fr": "Ayaka en kimono",
+          "de": "Kimono-Ayaka",
+          "es": "Ayaka con kimono"
+        },
+        "abilities": [
+          {
+            "id": 230259,
+            "names": {
+              "en": "Introduction - Crashing Waterfalls",
+              "tw": "序之舞·落瀧",
+              "kr": "서의 춤·낙롱",
+              "fr": "Prélude - Cascades tonitruantes",
+              "de": "Auftakt - Krachender Wasserfall",
+              "es": "Introducción - Cascada torrencial"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509441,
+            "names": {
+              "en": "Progression - Wild Spirit",
+              "tw": "破之舞·荒魂",
+              "kr": "파의 춤·황혼",
+              "fr": "Interlude - Âme troublée",
+              "de": "Intermezzo - Wilder Geist",
+              "es": "Progresión - Espíritu salvaje"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509442,
+            "names": {
+              "en": "Climax - Scarlet Kagura",
+              "tw": "急之舞·緋神樂",
+              "kr": "급의 춤·붉은 카구라",
+              "fr": "Apogée - Kagura écarlate",
+              "de": "Klimax - Purpur-Kagura",
+              "es": "Clímax - Kagura escarlata"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509445,
+            "names": {
+              "en": "Finale - Transcending Heaven",
+              "tw": "終舞·越天",
+              "kr": "종무·월천",
+              "fr": "Grand final - Paradis transcendant",
+              "de": "Finale - Überschreitung des Himmels",
+              "es": "Final - Trascendencia divina"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230268,
+            "names": {
+              "en": "Dance of the Blazing Flower",
+              "tw": "華焰之樂",
+              "kr": "화염의 유희",
+              "fr": "Danse de la fleur de feu",
+              "de": "Tanz der flammenden Blüten",
+              "es": "Danza de la flor llameante"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100022005,
+        "names": {
+          "en": "Dressy Aileen",
+          "tw": "裙裝艾琳",
+          "kr": "드레스업 아이린",
+          "fr": "Aileen en robe de soirée",
+          "de": "Schicke Aileen",
+          "es": "Aileen elegante"
+        },
+        "abilities": [
+          {
+            "id": 230283,
+            "names": {
+              "en": "Piledriver Shot",
+              "tw": "打樁射擊",
+              "kr": "파일 샷",
+              "fr": "Tir marteau-pilon",
+              "de": "Rammschuß",
+              "es": "Disparo de martillo"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230284,
+            "names": {
+              "en": "Ground Work II",
+              "tw": "土地工程II",
+              "kr": "점토 작업II",
+              "fr": "Fondation II",
+              "de": "Fundament II",
+              "es": "Cimentación II"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230288,
+            "names": {
+              "en": "Back Whisk",
+              "tw": "後退拂步",
+              "kr": "백 휘스크",
+              "fr": "Pas de change",
+              "de": "Rückseitiger Wischer",
+              "es": "Sacudida trasera"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230287,
+            "names": {
+              "en": "Double Reverse Spin",
+              "tw": "雙重回轉",
+              "kr": "더블 리버스 스핀",
+              "fr": "Tour impétueux",
+              "de": "Doppelte Rückwärtsdrehung",
+              "es": "Doble revés"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230290,
+            "names": {
+              "en": "Light Work",
+              "tw": "光作業",
+              "kr": "간편 작업",
+              "fr": "Éclairage",
+              "de": "Lichterwerk",
+              "es": "Trabajo ligero"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 206002005,
         "names": {
           "en": "Monk Sabin of Kolts",
@@ -9826,6 +9982,58 @@
               "fr": "Art martial - Combo Tojin + 2",
               "de": "Kampfkunst - Salve des Kriegsgottes + 2",
               "es": "Artes marciales - Combo Tojin + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100021304,
+        "names": {
+          "en": "Chocobo Rain",
+          "tw": "雷因&陸行鳥",
+          "kr": "레인&초코보",
+          "fr": "Rain à dos de chocobo",
+          "de": "Chocobo-Rain",
+          "es": "Rain en chocobo"
+        },
+        "abilities": [
+          {
+            "id": 509391,
+            "names": {
+              "en": "ChocoComet",
+              "tw": "陸行鳥彗星",
+              "kr": "초코멧",
+              "fr": "Choco-comète",
+              "de": "Choco-Komet",
+              "es": "Chococometa"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100021905,
+        "names": {
+          "en": "Kimono Ayaka",
+          "tw": "正裝彩花",
+          "kr": "기모노 아야카",
+          "fr": "Ayaka en kimono",
+          "de": "Kimono-Ayaka",
+          "es": "Ayaka con kimono"
+        },
+        "abilities": [
+          {
+            "id": 230269,
+            "names": {
+              "en": "Dance of the White Lotus",
+              "tw": "白蓉之樂",
+              "kr": "백련의 유희",
+              "fr": "Danse du lotus blanc",
+              "de": "Tanz des weißen Lotus",
+              "es": "Danza del loto blanco"
             },
             "offset": 14,
             "castTime": 40
