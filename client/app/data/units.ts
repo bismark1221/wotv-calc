@@ -21950,16 +21950,19 @@ export const UNITS: any[] = [
           "es": "Predicción - Presagio abrasador"
         },
         "damage": "magic",
-        "castTime": 40,
+        "base": 600,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
         "elements": [
           "fire"
         ],
         "dualable": false,
-        "framesList": [
-          95
-        ],
         "offset": 14,
-        "base": 260
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
         "id": 911354,
@@ -21972,16 +21975,19 @@ export const UNITS: any[] = [
           "es": "Predicción - Presagio helado"
         },
         "damage": "magic",
-        "castTime": 40,
+        "base": 600,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
         "elements": [
           "ice"
         ],
         "dualable": false,
-        "framesList": [
-          130
-        ],
         "offset": 14,
-        "base": 260
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
         "id": 911355,
@@ -21994,20 +22000,44 @@ export const UNITS: any[] = [
           "es": "Predicción - Presagio ciclónico"
         },
         "damage": "magic",
+        "base": 600,
         "hitDamage": [
-          12, 13, 12, 13, 12, 13, 12, 13
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "elements": [
-          "wind",
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912629,
+        "names": {
+          "en": "Predict - Cataclysmic Omen",
+          "tw": "預言 - 災難徵兆",
+          "kr": "예측·격변의 징조",
+          "fr": "Présage - Augure cataclysmique",
+          "de": "Weissagung - Kataklysmisches Omen",
+          "es": "Predicción - Presagio cataclísmico"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
           "earth"
         ],
         "dualable": false,
-        "framesList": [
-          160, 22, 21, 22, 23, 23, 22, 23
-        ],
         "offset": 14,
-        "base": 260
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
       },
       {
         "id": 911356,
@@ -22020,93 +22050,18 @@ export const UNITS: any[] = [
           "es": "Predicción - Presagio torrencial"
         },
         "damage": "magic",
+        "base": 600,
         "hitDamage": [
-          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "elements": [
           "water"
         ],
         "dualable": false,
-        "framesList": [
-          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
-        ],
         "offset": 14,
-        "base": 260
-      },
-      {
-        "id": 911360,
-        "names": {
-          "en": "Predict - Rapture",
-          "tw": "預言-喜樂",
-          "kr": "예측·황홀감",
-          "fr": "Présage - Ascension",
-          "de": "Weissagung - Entrückung",
-          "es": "Predicción - Éxtasis"
-        },
-        "damage": "magic",
-        "castTime": 4,
-        "dualable": false,
         "framesList": [
-          6
-        ],
-        "offset": 14,
-        "base": 425,
-        "ignore": 50
-      },
-      {
-        "id": 401004407,
-        "names": {
-          "en": "Premonition",
-          "tw": "徵兆",
-          "kr": "불길한 예감",
-          "fr": "Prémonition",
-          "de": "Vorahnung",
-          "es": "Premonición"
-        },
-        "damage": "magic",
-        "hitDamage": [
-          25, 25, 25, 25
-        ],
-        "dualable": false,
-        "framesList": [
-          40, 40, 40, 50
-        ],
-        "offset": 8,
-        "base": 2400,
-        "debuffs": [
-          {
-            "type": "fire",
-            "value": 60
-          },
-          {
-            "type": "ice",
-            "value": 60
-          },
-          {
-            "type": "lightning",
-            "value": 60
-          },
-          {
-            "type": "water",
-            "value": 60
-          },
-          {
-            "type": "wind",
-            "value": 60
-          },
-          {
-            "type": "earth",
-            "value": 60
-          },
-          {
-            "type": "light",
-            "value": 60
-          },
-          {
-            "type": "dark",
-            "value": 60
-          }
+          42, 6, 6, 6, 6, 6, 6, 6, 6
         ]
       },
       {
@@ -22120,19 +22075,19 @@ export const UNITS: any[] = [
           "es": "Predicción - Aguacero"
         },
         "damage": "magic",
+        "base": 1200,
         "hitDamage": [
-          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "elements": [
           "water"
         ],
         "dualable": false,
-        "framesList": [
-          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
-        ],
         "offset": 14,
-        "base": 900
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911374,
@@ -22145,20 +22100,19 @@ export const UNITS: any[] = [
           "es": "Predicción - Tormenta de arena"
         },
         "damage": "magic",
+        "base": 1200,
         "hitDamage": [
-          12, 13, 12, 13, 12, 13, 12, 13
+          20, 20, 20, 20, 20
         ],
-        "castTime": 40,
+        "castTime": 50,
         "elements": [
-          "wind",
           "earth"
         ],
         "dualable": false,
-        "framesList": [
-          160, 22, 21, 22, 23, 23, 22, 23
-        ],
         "offset": 14,
-        "base": 600
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
       },
       {
         "id": 911375,
@@ -22171,16 +22125,19 @@ export const UNITS: any[] = [
           "es": "Predicción - Destello helado"
         },
         "damage": "magic",
-        "castTime": 40,
+        "base": 1200,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
         "elements": [
           "ice"
         ],
         "dualable": false,
-        "framesList": [
-          130
-        ],
         "offset": 14,
-        "base": 680
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
         "id": 911376,
@@ -22193,16 +22150,141 @@ export const UNITS: any[] = [
           "es": "Predicción - Ola de calor"
         },
         "damage": "magic",
-        "castTime": 95,
+        "base": 1200,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
         "elements": [
           "fire"
         ],
         "dualable": false,
-        "framesList": [
-          95
-        ],
         "offset": 14,
-        "base": 430
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912630,
+        "names": {
+          "en": "Predict - Dust Devil",
+          "tw": "預言 - 旋風",
+          "kr": "예측·회오리 바람",
+          "fr": "Présage - Poussière démoniaque",
+          "de": "Weissagung - Staubteufel",
+          "es": "Predicción - Demonio polvoriento"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 911360,
+        "names": {
+          "en": "Predict - Rapture",
+          "tw": "預言-喜樂",
+          "kr": "예측·황홀감",
+          "fr": "Présage - Ascension",
+          "de": "Weissagung - Entrückung",
+          "es": "Predicción - Éxtasis"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 911366,
+        "names": {
+          "en": "Ouroboros",
+          "tw": "銜尾蛇",
+          "kr": "우로보로스"
+        },
+        "damage": "magic",
+        "base": 4000,
+        "hitDamage": [100],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "id": 401004407,
+        "names": {
+          "en": "Premonition",
+          "tw": "徵兆",
+          "kr": "불길한 예감",
+          "fr": "Prémonition",
+          "de": "Vorahnung",
+          "es": "Premonición"
+        },
+        "damage": "magic",
+        "base": 3200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 23
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          },
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "wind",
+            "value": 100
+          },
+          {
+            "type": "earth",
+            "value": 100
+          },
+          {
+            "type": "lightning",
+            "value": 60
+          },
+          {
+            "type": "light",
+            "value": 60
+          },
+          {
+            "type": "dark",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       }
     ],
     "multiCasts": [
@@ -22212,12 +22294,15 @@ export const UNITS: any[] = [
           911353,
           911354,
           911355,
+          912629,
           911356,
-          911360,
           911373,
           911374,
           911375,
-          911376
+          911376,
+          912630,
+          911360,
+          911366
         ]
       }
     ]
@@ -22231,6 +22316,56 @@ export const UNITS: any[] = [
     },
     "abilities": [
       {
+        "id": 20240,
+        "names": {
+          "en": "Aeroga",
+          "tw": "大勁風",
+          "kr": "에어로가",
+          "fr": "Vent X",
+          "es": "Aero++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 20260,
+        "names": {
+          "en": "Bioga",
+          "tw": "劇毒化",
+          "kr": "바이오가",
+          "fr": "Toxine X",
+          "es": "Bio++"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          210
+        ]
+      },
+      {
         "id": 911326,
         "names": {
           "en": "Swooping Strike",
@@ -22241,12 +22376,41 @@ export const UNITS: any[] = [
           "es": "Golpe en picado"
         },
         "damage": "hybrid",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
         "castTime": 40,
+        "offset": 14,
         "framesList": [
           140
+        ]
+      },
+      {
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
         ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
         "offset": 14,
-        "base": 180
+        "framesList": [
+          150
+        ]
       },
       {
         "id": 911328,
@@ -22259,15 +22423,18 @@ export const UNITS: any[] = [
           "es": "Golpe amenazante"
         },
         "damage": "hybrid",
+        "base": 1200,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
         "castTime": 40,
         "elements": [
           "dark"
         ],
-        "framesList": [
-          80
-        ],
         "offset": 14,
-        "base": 400
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
       },
       {
         "id": 911329,
@@ -22280,15 +22447,18 @@ export const UNITS: any[] = [
           "es": "Golpe volador"
         },
         "damage": "hybrid",
+        "base": 1200,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
         "castTime": 40,
         "elements": [
           "wind"
         ],
-        "framesList": [
-          110
-        ],
         "offset": 14,
-        "base": 400
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
       },
       {
         "id": 20330,
@@ -22301,17 +22471,20 @@ export const UNITS: any[] = [
           "es": "Aero+++"
         },
         "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
         "castTime": 40,
         "magicType": "black",
         "elements": [
           "wind"
         ],
         "dualable": false,
+        "offset": 14,
         "framesList": [
           170
-        ],
-        "offset": 14,
-        "base": 600
+        ]
       },
       {
         "id": 911335,
@@ -22324,23 +22497,23 @@ export const UNITS: any[] = [
           "es": "Descenso tenebroso"
         },
         "damage": "hybrid",
+        "base": 1800,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "elements": [
           "dark"
         ],
-        "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ],
         "offset": 14,
-        "base": 800,
         "debuffs": [
           {
             "type": "dark",
-            "value": 50
+            "value": 75
           }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
         ]
       },
       {
@@ -22354,23 +22527,44 @@ export const UNITS: any[] = [
           "es": "Descenso aéreo"
         },
         "damage": "hybrid",
+        "base": 1800,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "elements": [
           "wind"
         ],
-        "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ],
         "offset": 14,
-        "base": 800,
         "debuffs": [
           {
             "type": "wind",
-            "value": 50
+            "value": 75
           }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 911340,
+        "names": {
+          "en": "Thousand Wings",
+          "tw": "千之羽",
+          "kr": "천 개의 깃털",
+          "fr": "Mille et une ailes",
+          "de": "Tausend Flügel",
+          "es": "Miles de alas"
+        },
+        "damage": "hybrid",
+        "base": 1800,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
         ]
       },
       {
@@ -22384,53 +22578,15 @@ export const UNITS: any[] = [
           "es": "Miles de alas+"
         },
         "damage": "hybrid",
+        "base": 2400,
         "hitDamage": [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 40,
+        "offset": 14,
         "framesList": [
           80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
-        ],
-        "offset": 14,
-        "base": 1100
-      },
-      {
-        "id": 911340,
-        "names": {
-          "en": "Thousand Wings",
-          "tw": "千之羽",
-          "kr": "천 개의 깃털",
-          "fr": "Mille et une ailes",
-          "de": "Tausend Flügel",
-          "es": "Miles de alas"
-        },
-        "damage": "hybrid",
-        "hitDamage": [
-          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
-        ],
-        "castTime": 40,
-        "framesList": [
-          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
-        ],
-        "offset": 14,
-        "base": 800
-      },
-      {
-        "id": 911343,
-        "names": {
-          "en": "Vengeful Sky",
-          "tw": "復仇之空",
-          "kr": "복수의 하늘",
-          "fr": "Ciel vengeur",
-          "de": "Rachsüchtiger Himmel",
-          "es": "Cielo vengativo"
-        },
-        "damage": "hybrid",
-        "framesList": [
-          40
-        ],
-        "offset": 8,
-        "base": 400
+        ]
       },
       {
         "id": 911345,
@@ -22443,6 +22599,7 @@ export const UNITS: any[] = [
           "es": "Alas hostiles"
         },
         "damage": "hybrid",
+        "base": 2400,
         "hitDamage": [
           3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
@@ -22450,11 +22607,10 @@ export const UNITS: any[] = [
         "elements": [
           "dark"
         ],
+        "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
-        ],
-        "offset": 14,
-        "base": 1100
+        ]
       },
       {
         "id": 911346,
@@ -22467,6 +22623,7 @@ export const UNITS: any[] = [
           "es": "Turbulencia"
         },
         "damage": "hybrid",
+        "base": 2400,
         "hitDamage": [
           3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
@@ -22474,11 +22631,31 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
+        "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 912623,
+        "names": {
+          "en": "Turmoil",
+          "tw": "騷亂",
+          "kr": "소동",
+          "fr": "Agitation",
+          "de": "Tumult",
+          "es": "Revuelo"
+        },
+        "damage": "hybrid",
+        "base": 2400,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
+        "castTime": 38,
         "offset": 14,
-        "base": 1100
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911348,
@@ -22491,33 +22668,15 @@ export const UNITS: any[] = [
           "es": "Ultrarrencor"
         },
         "damage": "hybrid",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
         "castTime": 40,
+        "offset": 14,
         "framesList": [
           72
-        ],
-        "offset": 14,
-        "base": 2600
-      },
-      {
-        "id": 401004607,
-        "names": {
-          "en": "Murderous Intent",
-          "tw": "殺意",
-          "kr": "살의",
-          "fr": "Desseins meurtriers",
-          "de": "Mordlust",
-          "es": "Intento asesino"
-        },
-        "damage": "hybrid",
-        "hitDamage": [
-          30, 30, 40
-        ],
-        "dualable": false,
-        "framesList": [
-          155, 45, 20
-        ],
-        "offset": 8,
-        "base": 2720
+        ]
       },
       {
         "id": 911384,
@@ -22530,24 +22689,88 @@ export const UNITS: any[] = [
           "es": "Tormenta torrencial"
         },
         "damage": "hybrid",
+        "base": 5400,
         "hitDamage": [
-          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "elements": [
-          "wind",
-          "dark"
-        ],
-        "framesList": [
-          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+          "wind"
         ],
         "offset": 14,
-        "base": 1600
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912626,
+        "names": {
+          "en": "Soaring Shadows",
+          "tw": "上升之影",
+          "kr": "활공하는 그림자",
+          "fr": "Ténèbres galopantes",
+          "de": "Rauschende Schatten",
+          "es": "Sombras flotantes"
+        },
+        "damage": "hybrid",
+        "base": 5400,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 401004607,
+        "names": {
+          "en": "Murderous Intent",
+          "tw": "殺意",
+          "kr": "살의",
+          "fr": "Desseins meurtriers",
+          "de": "Mordlust",
+          "es": "Intento asesino"
+        },
+        "damage": "hybrid",
+        "base": 3400,
+        "hitDamage": [
+          10,  10,  10,  10,  10,  10,  10,  10,  10,  10
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
       }
     ],
     "multipleBlack": 2,
     "multipleWhite": 2,
-    "multipleGreen": 2
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911326,
+          911328,
+          911329,
+          911335,
+          911336,
+          911340,
+          911341,
+          911345,
+          911346,
+          912623,
+          912626,
+          911384,
+          911348
+        ]
+      }
+    ]
   },
   {
     "id": 170,
@@ -24860,10 +25083,11 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "castTime": 10,
+        "offset": 14,
         "framesList": [
           40
-        ],
-        "offset": 8
+        ]
       },
       {
         "id": 911569,
@@ -24880,10 +25104,11 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "castTime": 10,
+        "offset": 14,
         "framesList": [
           40
-        ],
-        "offset": 8
+        ]
       },
       {
         "id": 911580,
@@ -24896,16 +25121,16 @@ export const UNITS: any[] = [
           "es": "Cielo - Toque de penitencia"
         },
         "damage": "magic",
-        "base": 250,
+        "base": 400,
         "hitDamage": [
           6, 6, 6, 6, 6, 6, 6, 58
         ],
         "castTime": 40,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
-        ],
-        "offset": 14
+        ]
       },
       {
         "id": 911582,
@@ -24918,15 +25143,15 @@ export const UNITS: any[] = [
           "es": "Cielo - Juicio"
         },
         "damage": "magic",
-        "base": 840,
+        "base": 900,
         "hitDamage": [
-          100
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
+        "offset": 14,
         "framesList": [
-          40
-        ],
-        "offset": 14
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911583,
@@ -24941,19 +25166,22 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 480,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
         "debuffs": [
           {
             "type": "light",
-            "value": 60
+            "value": 80
           }
         ],
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ],
-        "offset": 14
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
         "id": 911586,
@@ -24966,18 +25194,18 @@ export const UNITS: any[] = [
           "es": "Cielo - Sin culpa"
         },
         "damage": "magic",
-        "base": 1050,
+        "base": 1200,
         "hitDamage": [
           20, 20, 20, 20, 20
         ],
         "castTime": 50,
+        "offset": 14,
         "framesList": [
           52, 20, 20, 20, 20
-        ],
-        "offset": 14
+        ]
       },
       {
-        "id": 911589,
+        "id": 911590,
         "names": {
           "en": "Born to Die - Heaven Mode",
           "tw": "生來而亡-天堂模式",
@@ -24989,12 +25217,13 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1200,
         "hitDamage": [
-          100
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "castTime": 40,
         "elements": [
           "light"
         ],
+        "offset": 14,
         "debuffs": [
           {
             "type": "light",
@@ -25002,9 +25231,8 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          40
-        ],
-        "offset": 14
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
         "id": 401004807,
@@ -25022,13 +25250,25 @@ export const UNITS: any[] = [
           100
         ],
         "dualable": false,
+        "offset": 14,
         "framesList": [
           130
-        ],
-        "offset": 8
+        ]
       }
     ],
     "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          911568,
+          911569,
+          911580,
+          911582,
+          911583,
+          911586,
+          911590
+        ]
+      },
       {
         "count": 3,
         "abilities": [
@@ -25036,7 +25276,7 @@ export const UNITS: any[] = [
           911582,
           911583,
           911586,
-          911589
+          911590
         ]
       }
     ]
@@ -25063,10 +25303,11 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "castTime": 10,
+        "offset": 14,
         "framesList": [
           0
-        ],
-        "offset": 8
+        ]
       },
       {
         "id": 911602,
@@ -25078,34 +25319,91 @@ export const UNITS: any[] = [
           "de": "Aufreißer",
           "es": "Abrelotodo"
         },
-        "base": 350,
+        "base": 400,
         "hitDamage": [
-          100
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 75
+          },
+          {
+            "type": "dark",
+            "value": 75
+          }
         ],
         "framesList": [
-          0
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912611,
+        "names": {
+          "en": "Cocytus Blade",
+          "tw": "冥河斬",
+          "kr": "코키투스의 검",
+          "fr": "Épée du Cocyte",
+          "de": "Cocytusklinge",
+          "es": "Espada del Cocito"
+        },
+        "base": 350,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "offset": 8
+        "castTime": 38,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912612,
+        "names": {
+          "en": "Hades Blade",
+          "tw": "冥王斬",
+          "kr": "하데스의 검",
+          "fr": "Épée d'Hadès",
+          "de": "Hadesklinge",
+          "es": "Espada del Hades"
+        },
+        "base": 350,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911608,
         "names": {
           "en": "Vengeful Blade",
           "tw": "報復之刃",
-          "kr": "복수의 칼날",
+          "kr": "보복의 칼날",
           "fr": "Lame vengeresse",
           "de": "Racheklinge",
           "es": "Hoja vengativa"
         },
         "base": 300,
         "hitDamage": [
-          100
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ],
-        "castTime": 30,
+        "castTime": 40,
+        "offset": 14,
         "framesList": [
-          0
-        ],
-        "offset": 14
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
       },
       {
         "id": 911612,
@@ -25121,10 +25419,11 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "castTime": 10,
+        "offset": 14,
         "framesList": [
           40
-        ],
-        "offset": 8
+        ]
       },
       {
         "id": 911615,
@@ -25136,15 +25435,15 @@ export const UNITS: any[] = [
           "de": "Menschensplitter",
           "es": "Partehumanos"
         },
-        "base": 480,
+        "base": 550,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
+        "offset": 14,
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ],
-        "offset": 14
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911616,
@@ -25156,15 +25455,75 @@ export const UNITS: any[] = [
           "de": "Dämonensplitter",
           "es": "Partedemonios"
         },
-        "base": 480,
+        "base": 550,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
+        "offset": 14,
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912616,
+        "names": {
+          "en": "Blood Flash",
+          "tw": "血色一閃",
+          "kr": "핏빛 섬광",
+          "fr": "Éclair de sang",
+          "de": "Blutiger Blitz",
+          "es": "Destello sanguinario"
+        },
+        "base": 1000,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "offset": 14
+        "castTime": 38,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912615,
+        "names": {
+          "en": "Blood Dance",
+          "tw": "血色舞步",
+          "kr": "핏빛 춤",
+          "fr": "Danse du sang",
+          "de": "Blutiger Tanz",
+          "es": "Danza sanguinaria"
+        },
+        "base": 1000,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912614,
+        "names": {
+          "en": "Hemomancer's Blade",
+          "tw": "血巫師斬",
+          "kr": "헤모맨서의 검",
+          "fr": "Épée d'hémomancie",
+          "de": "Blutmagierklinge",
+          "es": "Espada de hemomante"
+        },
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          1
+        ]
       },
       {
         "id": 911618,
@@ -25176,15 +25535,15 @@ export const UNITS: any[] = [
           "de": "Blutopfer",
           "es": "Sacrificio de sangre"
         },
-        "base": 430,
+        "base": 750,
         "hitDamage": [
           6, 6, 6, 6, 6, 6, 6, 58
         ],
         "castTime": 40,
+        "offset": 14,
         "framesList": [
           42, 10, 10, 10, 10, 10, 10, 10
-        ],
-        "offset": 14
+        ]
       },
       {
         "id": 911620,
@@ -25196,15 +25555,16 @@ export const UNITS: any[] = [
           "de": "Streich des Blutmagiers",
           "es": "Golpe de hemomante"
         },
-        "base": 1250,
+        "base": 1000,
         "hitDamage": [
-          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+          2.4, 2.4, 2.4, 2.4, 2.4, 2.4, 2.4, 2.4, 80
         ],
-        "castTime": 40,
+        "castTime": 38,
+        "offset": 14,
+        "ignore": 50,
         "framesList": [
-          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
-        ],
-        "offset": 14
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 401004707,
@@ -25216,18 +25576,16 @@ export const UNITS: any[] = [
           "de": "Der Durst",
           "es": "Sed intensa"
         },
-        "base": 945,
+        "base": 1550,
         "hitDamage": [
-          68.25396825396825,
-          31.74603174603175
+          80.64516129032258, 19.35483870967742
         ],
         "dualable": false,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
-          190,
-          20
-        ],
-        "offset": 8
+          190, 20
+        ]
       }
     ],
     "multiCasts": [
@@ -25240,7 +25598,13 @@ export const UNITS: any[] = [
           911612,
           911615,
           911616,
-          911618
+          911618,
+          912611,
+          912612,
+          912615,
+          912616,
+          912614,
+          911620
         ]
       }
     ]
@@ -30583,15 +30947,14 @@ export const UNITS: any[] = [
           "es": "¡A luchar!"
         },
         "damage": "magic",
-        "base": 180,
+        "base": 450,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
-        "dualable": false,
+        "castTime": 38,
         "offset": 14,
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
+          42, 6, 6, 6, 6, 6, 6, 6, 6
         ]
       }
     ],
@@ -42997,6 +43360,664 @@ export const UNITS: any[] = [
           230287,
           230288,
           230290,
+        ]
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "names": {
+      "en": "Shepard",
+      "tw": "謝帕德",
+      "kr": "셰퍼드"
+    },
+    "abilities": [
+      {
+        "id": 230221,
+        "names": {
+          "en": "Sharp Strike",
+          "tw": "銳利打擊",
+          "kr": "샤프 스트라이크",
+          "fr": "Frappe aigue",
+          "de": "Scharfer Streich",
+          "es": "Golpe cortante"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 57,
+        "offset": 14,
+        "framesList": [
+          59
+        ]
+      },
+      {
+        "id": 230222,
+        "names": {
+          "en": "Wide Impact",
+          "tw": "巨型衝擊",
+          "kr": "와이드 임팩트",
+          "fr": "Large impact",
+          "de": "Massiver Einschlag",
+          "es": "Gran impacto"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "id": 230225,
+        "names": {
+          "en": "Mind Recharge",
+          "tw": "精神蓄力",
+          "kr": "마인드 차지",
+          "fr": "Recharge mentale",
+          "de": "Geistladung",
+          "es": "Recarga mental"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 230226,
+        "names": {
+          "en": "Machine Gun Sting",
+          "tw": "機槍刺擊",
+          "kr": "머신건 발사",
+          "fr": "Baïonnette automatique",
+          "de": "Beißendes Maschinengewehr",
+          "es": "Metralleta punzante"
+        },
+        "damage": "magic",
+        "base": 270,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230229,
+        "names": {
+          "en": "Shattered Field",
+          "tw": "粉碎領域",
+          "kr": "브로큰 필드",
+          "fr": "Terrain brisé",
+          "de": "Zersprungenes Feld",
+          "es": "Campo asolado"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 230230,
+        "names": {
+          "en": "Sound Mind",
+          "tw": "精神之音",
+          "kr": "사운드 마인드",
+          "fr": "Esprit sain",
+          "de": "Gesunder Geist",
+          "es": "Mente sana"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 230231,
+        "names": {
+          "en": "Multi-Slicer",
+          "tw": "多重切割",
+          "kr": "멀티 슬라이서",
+          "fr": "Multi-entailles",
+          "de": "Multi-Schlitzer",
+          "es": "Milcisuras"
+        },
+        "damage": "magic",
+        "base": 320,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100021805,
+        "names": {
+          "en": "Attack and Recover",
+          "tw": "攻擊與恢復",
+          "kr": "어택 앤 리커버",
+          "fr": "Attaque et récupération",
+          "de": "Angriff und Rückzug",
+          "es": "Ataque y recuperación"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "names": {
+      "en": "Friese",
+      "tw": "弗莉塞",
+      "kr": "프리제"
+    },
+    "abilities": [
+      {
+        "id": 20050,
+        "names": {
+          "en": "Aero",
+          "tw": "勁風",
+          "kr": "에어로",
+          "fr": "Vent"
+        },
+        "damage": "magic",
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 230201,
+        "names": {
+          "en": "Gust Blade",
+          "tw": "疾風劍",
+          "kr": "돌풍검",
+          "fr": "Tempestelame",
+          "de": "Klingenböe",
+          "es": "Hoja torbellino"
+        },
+        "base": 220,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 80,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          87
+        ]
+      },
+      {
+        "id": 230202,
+        "names": {
+          "en": "Power Snatch",
+          "tw": "力量奪取",
+          "kr": "힘의 강탈",
+          "fr": "Capture de puissance",
+          "de": "Kraftschnapper",
+          "es": "Atrapapoder"
+        },
+        "base": 200,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "id": 230203,
+        "names": {
+          "en": "Magic Snatch",
+          "tw": "魔力奪取",
+          "kr": "마법 강탈",
+          "fr": "Capture de magie",
+          "de": "Zauberschnapper",
+          "es": "Atrapamagia"
+        },
+        "base": 200,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "id": 20120,
+        "names": {
+          "en": "Aerora",
+          "tw": "中勁風",
+          "kr": "에어로라",
+          "fr": "Vent +",
+          "es": "Aero+"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 230206,
+        "names": {
+          "en": "Guard Snatch",
+          "tw": "防禦奪取",
+          "kr": "방어 강탈",
+          "fr": "Capture de garde",
+          "de": "Schutzschnapper",
+          "es": "Atrapaescolta"
+        },
+        "base": 200,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "id": 230207,
+        "names": {
+          "en": "Mind Snatch",
+          "tw": "精神奪取",
+          "kr": "정신 강탈",
+          "fr": "Capture d'esprit",
+          "de": "Gedankenschnapper",
+          "es": "Atrapamente"
+        },
+        "base": 200,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "id": 230210,
+        "names": {
+          "en": "Wind Snatch",
+          "tw": "疾風奪取",
+          "kr": "바람 강탈",
+          "fr": "Capture de vent",
+          "de": "Windschnapper",
+          "es": "Atrapaviento"
+        },
+        "base": 420,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          22
+        ]
+      },
+      {
+        "id": 20240,
+        "names": {
+          "en": "Aeroga",
+          "tw": "大勁風",
+          "kr": "에어로가",
+          "fr": "Vent X",
+          "es": "Aero++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 230211,
+        "names": {
+          "en": "Double Hit",
+          "tw": "雙重打擊",
+          "kr": "더블 스트라이크",
+          "fr": "Touche double",
+          "de": "Doppeltreffer",
+          "es": "Impacto doble"
+        },
+        "base": 400,
+        "hitDamage": [
+          15, 15, 20, 15, 15, 20
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          12, 12, 2, 12, 44, 14
+        ]
+      },
+      {
+        "id": 230212,
+        "names": {
+          "en": "Charge Blast",
+          "tw": "蓄力衝擊",
+          "kr": "차지 블래스트",
+          "fr": "Charge explosive",
+          "de": "Ladesprengung",
+          "es": "Carga explosiva"
+        },
+        "base": 650,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 100022106,
+        "names": {
+          "en": "Storm Blade",
+          "tw": "暴風劍",
+          "kr": "폭풍검",
+          "fr": "Tempête de lames",
+          "de": "Sturmklinge",
+          "es": "Hoja tempestuosa"
+        },
+        "base": 1050,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 40
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          18, 30, 14, 10, 16, 42
+        ]
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "names": {
+      "en": "Sacred Shield Charlotte",
+      "tw": "聖盾騎士夏洛特",
+      "kr": "신성한 방패의 샤를로트",
+      "fr": "Charlotte, égide angélique",
+      "de": "Charlotte vom Heiligen Schild",
+      "es": "Charlotte del Escudo Sagrado"
+    },
+    "abilities": [
+      {
+        "id": 230183,
+        "names": {
+          "en": "Holy Slash",
+          "tw": "神聖斬擊",
+          "kr": "신성한 참격",
+          "fr": "Tranche-lumière",
+          "de": "Heiliger Schlitzer",
+          "es": "Corte sagrado"
+        },
+        "base": 230,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 230184,
+        "names": {
+          "en": "Ice Slash",
+          "tw": "寒冰斬擊",
+          "kr": "빙결의 참격",
+          "fr": "Tranche-glace",
+          "de": "Eisiger Schlitzer",
+          "es": "Corte gélido"
+        },
+        "base": 230,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 230189,
+        "names": {
+          "en": "Mental Strike",
+          "tw": "精神打擊",
+          "kr": "멘탈 스트라이크",
+          "fr": "Frappe psychique",
+          "de": "Mentaler Schlag",
+          "es": "Golpe mental"
+        },
+        "base": 270,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 230190,
+        "names": {
+          "en": "Magic Strike",
+          "tw": "魔力打擊",
+          "kr": "매직 스트라이크",
+          "fr": "Coup magique",
+          "de": "Magischer Schlag",
+          "es": "Golpe mágico"
+        },
+        "base": 270,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "id": 509432,
+        "names": {
+          "en": "Divine Punishment",
+          "tw": "神聖制裁",
+          "kr": "신성한 처벌",
+          "fr": "Châtiment sacré",
+          "de": "Göttliche Strafe",
+          "es": "Castigo celestial"
+        },
+        "damage": "magic",
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 509433,
+        "names": {
+          "en": "Freezing Punishment",
+          "tw": "冰凍制裁",
+          "kr": "결빙의 처벌",
+          "fr": "Châtiment glacial",
+          "de": "Frostige Strafe",
+          "es": "Castigo glacial"
+        },
+        "damage": "magic",
+        "base": 750,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 230197,
+        "names": {
+          "en": "Knight's Luminous Blade",
+          "tw": "誠光騎士劍",
+          "kr": "성광의 기사검",
+          "fr": "Lumilame de chevalier",
+          "de": "Strahlendes Ritterschwert",
+          "es": "Caballero de la Espada Luminosa"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 230198,
+        "names": {
+          "en": "Knight's Glacial Blade",
+          "tw": "冰晶騎士劍",
+          "kr": "빙결의 기사검",
+          "fr": "Glacilame de chevalier",
+          "de": "Eisiges Ritterschwert",
+          "es": "Caballero de la Espada Glacial"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ]
       }
     ]

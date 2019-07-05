@@ -525,6 +525,45 @@
         ]
       },
       {
+        "id": 100021705,
+        "names": {
+          "en": "Sacred Shield Charlotte",
+          "tw": "聖盾騎士夏洛特",
+          "kr": "신성한 방패의 샤를로트",
+          "fr": "Charlotte, égide angélique",
+          "de": "Charlotte vom Heiligen Schild",
+          "es": "Charlotte del Escudo Sagrado"
+        },
+        "abilities": [
+          {
+            "id": 230197,
+            "names": {
+              "en": "Knight's Luminous Blade",
+              "tw": "誠光騎士劍",
+              "kr": "성광의 기사검",
+              "fr": "Lumilame de chevalier",
+              "de": "Strahlendes Ritterschwert",
+              "es": "Caballero de la Espada Luminosa"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230198,
+            "names": {
+              "en": "Knight's Glacial Blade",
+              "tw": "冰晶騎士劍",
+              "kr": "빙결의 기사검",
+              "fr": "Glacilame de chevalier",
+              "de": "Eisiges Ritterschwert",
+              "es": "Caballero de la Espada Glacial"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 204001505,
         "names": {
           "en": "Pure Summoner Rydia",
@@ -666,6 +705,29 @@
               "fr": "Hourvari",
               "de": "Turbulenz",
               "es": "Turbulencia"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004705,
+        "names": {
+          "en": "Ellesperis",
+          "tw": "艾莉絲珮芮絲",
+          "kr": "엘레스페리스"
+        },
+        "abilities": [
+          {
+            "id": 911608,
+            "names": {
+              "en": "Vengeful Blade",
+              "tw": "報復之刃",
+              "kr": "보복의 칼날",
+              "fr": "Lame vengeresse",
+              "de": "Racheklinge",
+              "es": "Hoja vengativa"
             },
             "offset": 14,
             "castTime": 40
@@ -1375,6 +1437,45 @@
         ]
       },
       {
+        "id": 100021705,
+        "names": {
+          "en": "Sacred Shield Charlotte",
+          "tw": "聖盾騎士夏洛特",
+          "kr": "신성한 방패의 샤를로트",
+          "fr": "Charlotte, égide angélique",
+          "de": "Charlotte vom Heiligen Schild",
+          "es": "Charlotte del Escudo Sagrado"
+        },
+        "abilities": [
+          {
+            "id": 230183,
+            "names": {
+              "en": "Holy Slash",
+              "tw": "神聖斬擊",
+              "kr": "신성한 참격",
+              "fr": "Tranche-lumière",
+              "de": "Heiliger Schlitzer",
+              "es": "Corte sagrado"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509432,
+            "names": {
+              "en": "Divine Punishment",
+              "tw": "神聖制裁",
+              "kr": "신성한 처벌",
+              "fr": "Châtiment sacré",
+              "de": "Göttliche Strafe",
+              "es": "Castigo celestial"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 215000705,
         "names": {
           "en": "Prompto",
@@ -1462,6 +1563,66 @@
               "fr": "Pouvoir de Lumina",
               "de": "Kraft von Puck",
               "es": "Poder de Lúmina"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004405,
+        "names": {
+          "en": "Circe",
+          "tw": "瑟希",
+          "kr": "서스",
+          "fr": "Circé"
+        },
+        "abilities": [
+          {
+            "id": 911360,
+            "names": {
+              "en": "Predict - Rapture",
+              "tw": "預言-喜樂",
+              "kr": "예측·황홀감",
+              "fr": "Présage - Ascension",
+              "de": "Weissagung - Entrückung",
+              "es": "Predicción - Éxtasis"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401004805,
+        "names": {
+          "en": "Beryl",
+          "tw": "貝利爾",
+          "kr": "베릴"
+        },
+        "abilities": [
+          {
+            "id": 911583,
+            "names": {
+              "en": "Heaven - Force of Light",
+              "tw": "天堂-光之力",
+              "kr": "천국·빛의 힘",
+              "fr": "Paradis - Force de lumière",
+              "de": "Himmel - Macht des Lichts",
+              "es": "Hocicazo - Fuerza lumínica"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 911590,
+            "names": {
+              "en": "Born to Die - Heaven Mode",
+              "tw": "生來而亡-天堂模式",
+              "kr": "본 투 다이·천국 모드",
+              "fr": "Né pour mourir - Mode paradisiaque",
+              "de": "Geboren zu Sterben - Himmelmodus",
+              "es": "Nacido para morir - Modo celestial"
             },
             "offset": 14,
             "castTime": 40
@@ -1583,6 +1744,45 @@
         ]
       },
       {
+        "id": 100021705,
+        "names": {
+          "en": "Sacred Shield Charlotte",
+          "tw": "聖盾騎士夏洛特",
+          "kr": "신성한 방패의 샤를로트",
+          "fr": "Charlotte, égide angélique",
+          "de": "Charlotte vom Heiligen Schild",
+          "es": "Charlotte del Escudo Sagrado"
+        },
+        "abilities": [
+          {
+            "id": 230184,
+            "names": {
+              "en": "Ice Slash",
+              "tw": "寒冰斬擊",
+              "kr": "빙결의 참격",
+              "fr": "Tranche-glace",
+              "de": "Eisiger Schlitzer",
+              "es": "Corte gélido"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 509433,
+            "names": {
+              "en": "Freezing Punishment",
+              "tw": "冰凍制裁",
+              "kr": "결빙의 처벌",
+              "fr": "Châtiment glacial",
+              "de": "Frostige Strafe",
+              "es": "Castigo glacial"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
         "id": 304000105,
         "names": {
           "en": "Randi",
@@ -1650,6 +1850,69 @@
               "fr": "Zéro absolu + 2",
               "de": "Absoluter Nullpunkt + 2",
               "es": "Cero absoluto + 2"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
+        "id": 401004405,
+        "names": {
+          "en": "Circe",
+          "tw": "瑟希",
+          "kr": "서스",
+          "fr": "Circé"
+        },
+        "abilities": [
+          {
+            "id": 911353,
+            "names": {
+              "en": "Predict - Blazing Omen",
+              "tw": "預言-炙熱預兆",
+              "kr": "예측·화재의 징조",
+              "fr": "Présage - Augure ardent",
+              "de": "Weissaung - Omen der Glut",
+              "es": "Predicción - Presagio abrasador"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 911354,
+            "names": {
+              "en": "Predict - Freezing Omen",
+              "tw": "預言-凍結預兆",
+              "kr": "예측·빙결의 징조",
+              "fr": "Présage - Augure glacial",
+              "de": "Weissagung - Omen des Frosts",
+              "es": "Predicción - Presagio helado"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 911375,
+            "names": {
+              "en": "Predict - Flash-freeze",
+              "tw": "預言 - 急凍",
+              "kr": "예측·급속 냉동",
+              "fr": "Présage - Blizzard",
+              "de": "Weissagung - Schockfrost",
+              "es": "Predicción - Destello helado"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 911376,
+            "names": {
+              "en": "Predict - Heat Wave",
+              "tw": "預言 - 熱浪",
+              "kr": "예측·열파",
+              "fr": "Présage - Canicule",
+              "de": "Weissagung - Hitzewelle",
+              "es": "Predicción - Ola de calor"
             },
             "offset": 14,
             "castTime": 39
@@ -2536,7 +2799,7 @@
             "id": 508351,
             "names": {
               "en": "Crimson Frost Edge",
-              "tw": "破炎蒼劍",
+              "tw": "裂冰緋劍",
               "kr": "열빙의 비검",
               "fr": "Lame de glace écarlate",
               "de": "Purpurrote Frostklinge",
@@ -2829,6 +3092,42 @@
               "fr": "Esprit de la marée haute",
               "de": "Geist der Flut",
               "es": "Espíritu de pleamar"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100021803,
+        "names": {
+          "en": "Shepard",
+          "tw": "謝帕德",
+          "kr": "셰퍼드"
+        },
+        "abilities": [
+          {
+            "id": 230226,
+            "names": {
+              "en": "Machine Gun Sting",
+              "tw": "機槍刺擊",
+              "kr": "머신건 발사",
+              "fr": "Baïonnette automatique",
+              "de": "Beißendes Maschinengewehr",
+              "es": "Metralleta punzante"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230231,
+            "names": {
+              "en": "Multi-Slicer",
+              "tw": "多重切割",
+              "kr": "멀티 슬라이서",
+              "fr": "Multi-entailles",
+              "de": "Multi-Schlitzer",
+              "es": "Milcisuras"
             },
             "offset": 14,
             "castTime": 40
@@ -3856,6 +4155,281 @@
         ]
       },
       {
+        "id": 401004405,
+        "names": {
+          "en": "Circe",
+          "tw": "瑟希",
+          "kr": "서스",
+          "fr": "Circé"
+        },
+        "abilities": [
+          {
+            "id": 911355,
+            "names": {
+              "en": "Predict - Cyclonic Omen",
+              "tw": "預言-風旋預兆",
+              "kr": "예측·선풍의 징조",
+              "fr": "Présage - Augure tempétueux",
+              "de": "Weissagung - Omen des Zyklons",
+              "es": "Predicción - Presagio ciclónico"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911356,
+            "names": {
+              "en": "Predict - Torrential Omen",
+              "tw": "預言-滂沱預兆",
+              "kr": "예측·홍수의 징조",
+              "fr": "Présage - Augure torrentiel",
+              "de": "Weissagung - Omen der Flut",
+              "es": "Predicción - Presagio torrencial"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911373,
+            "names": {
+              "en": "Predict - Downpour",
+              "tw": "預言 - 暴雨",
+              "kr": "예측·폭우",
+              "fr": "Présage - Averse",
+              "de": "Weissagung - Regenguss",
+              "es": "Predicción - Aguacero"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912630,
+            "names": {
+              "en": "Predict - Dust Devil",
+              "tw": "預言 - 旋風",
+              "kr": "예측·회오리 바람",
+              "fr": "Présage - Poussière démoniaque",
+              "de": "Weissagung - Staubteufel",
+              "es": "Predicción - Demonio polvoriento"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401004605,
+        "names": {
+          "en": "Malphasie",
+          "tw": "瑪爾菲希",
+          "kr": "멜파지"
+        },
+        "abilities": [
+          {
+            "id": 911335,
+            "names": {
+              "en": "Tenebrous Dive",
+              "tw": "黑暗潛躍",
+              "kr": "암흑 침강",
+              "fr": "Plongeon ténébreux",
+              "de": "Dunkler Sturzflug",
+              "es": "Descenso tenebroso"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911336,
+            "names": {
+              "en": "Aerial Dive",
+              "tw": "空中潛躍",
+              "kr": "공중 침강",
+              "fr": "Plongeon aérien",
+              "de": "Wehender Sturzflug",
+              "es": "Descenso aéreo"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912623,
+            "names": {
+              "en": "Turmoil",
+              "tw": "騷亂",
+              "kr": "소동",
+              "fr": "Agitation",
+              "de": "Tumult",
+              "es": "Revuelo"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911384,
+            "names": {
+              "en": "Raucous Storm",
+              "tw": "嘶吼風暴",
+              "kr": "거센 폭풍",
+              "fr": "Orage retentissant",
+              "de": "Dröhnender Sturm",
+              "es": "Tormenta torrencial"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912626,
+            "names": {
+              "en": "Soaring Shadows",
+              "tw": "上升之影",
+              "kr": "활공하는 그림자",
+              "fr": "Ténèbres galopantes",
+              "de": "Rauschende Schatten",
+              "es": "Sombras flotantes"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401004705,
+        "names": {
+          "en": "Ellesperis",
+          "tw": "艾莉絲珮芮絲",
+          "kr": "엘레스페리스"
+        },
+        "abilities": [
+          {
+            "id": 911602,
+            "names": {
+              "en": "Open You Up",
+              "tw": "空門大開",
+              "kr": "마음을 열어라",
+              "fr": "Ouvrez grand",
+              "de": "Aufreißer",
+              "es": "Abrelotodo"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912611,
+            "names": {
+              "en": "Cocytus Blade",
+              "tw": "冥河斬",
+              "kr": "코키투스의 검",
+              "fr": "Épée du Cocyte",
+              "de": "Cocytusklinge",
+              "es": "Espada del Cocito"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912612,
+            "names": {
+              "en": "Hades Blade",
+              "tw": "冥王斬",
+              "kr": "하데스의 검",
+              "fr": "Épée d'Hadès",
+              "de": "Hadesklinge",
+              "es": "Espada del Hades"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911615,
+            "names": {
+              "en": "Human Splitter",
+              "tw": "人類綻裂者",
+              "kr": "인간 분열",
+              "fr": "Fléau d'humain",
+              "de": "Menschensplitter",
+              "es": "Partehumanos"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911616,
+            "names": {
+              "en": "Demon Splitter",
+              "tw": "惡魔綻裂者",
+              "kr": "악마 분열",
+              "fr": "Fléau de démon",
+              "de": "Dämonensplitter",
+              "es": "Partedemonios"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912616,
+            "names": {
+              "en": "Blood Flash",
+              "tw": "血色一閃",
+              "kr": "핏빛 섬광",
+              "fr": "Éclair de sang",
+              "de": "Blutiger Blitz",
+              "es": "Destello sanguinario"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912615,
+            "names": {
+              "en": "Blood Dance",
+              "tw": "血色舞步",
+              "kr": "핏빛 춤",
+              "fr": "Danse du sang",
+              "de": "Blutiger Tanz",
+              "es": "Danza sanguinaria"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 911620,
+            "names": {
+              "en": "Hemomancer's Strike",
+              "tw": "血巫師之擊",
+              "kr": "헤모맨서의 타격",
+              "fr": "Frappe d'hémomancienne",
+              "de": "Streich des Blutmagiers",
+              "es": "Golpe de hemomante"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401004805,
+        "names": {
+          "en": "Beryl",
+          "tw": "貝利爾",
+          "kr": "베릴"
+        },
+        "abilities": [
+          {
+            "id": 911582,
+            "names": {
+              "en": "Heaven - Judgement",
+              "tw": "天堂-審判",
+              "kr": "천국·심판",
+              "fr": "Paradis - Jugement",
+              "de": "Himmel - Urteil",
+              "es": "Cielo - Juicio"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
         "id": 401006805,
         "names": {
           "en": "Esther",
@@ -4229,7 +4803,7 @@
             "id": 508350,
             "names": {
               "en": "Azure Flame Edge",
-              "tw": "八連刃",
+              "tw": "破炎蒼劍",
               "kr": "파염의 창검",
               "fr": "Lame de flamme azur",
               "de": "Azurblaue Flammenklinge",
@@ -4617,10 +5191,11 @@
           {
             "id": 227481,
             "names": {
-              "en": "[Geheimtechnik] Exkalibuh",
+              "en": "Secret Sword Art - Excalipoor",
               "tw": "【秘劍】石中劍",
               "kr": "[비검] 엑스칼리파",
               "fr": "[Tech. secrète] Excalipur",
+              "de": "[Geheimtechnik] Exkalibuh",
               "es": "Arte secreto de la espada - Excalipur"
             },
             "offset": 14,
@@ -5051,86 +5626,40 @@
         },
         "abilities": [
           {
-            "id": 911335,
+            "id": 911328,
             "names": {
-              "en": "Tenebrous Dive",
-              "tw": "黑暗潛躍",
-              "kr": "암흑 침강",
-              "fr": "Plongeon ténébreux",
-              "de": "Dunkler Sturzflug",
-              "es": "Descenso tenebroso"
+              "en": "Menacing Strike",
+              "tw": "威脅猛擊",
+              "kr": "위협적 공격",
+              "fr": "Frappe menaçante",
+              "de": "Bedrohender Streich",
+              "es": "Golpe amenazante"
             },
             "offset": 14,
             "castTime": 40
           },
           {
-            "id": 911336,
+            "id": 911329,
             "names": {
-              "en": "Aerial Dive",
-              "tw": "空中潛躍",
-              "kr": "공중 침강",
-              "fr": "Plongeon aérien",
-              "de": "Wehender Sturzflug",
-              "es": "Descenso aéreo"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 401004705,
-        "names": {
-          "en": "Ellesperis",
-          "tw": "艾莉絲珮芮絲",
-          "kr": "엘레스페리스"
-        },
-        "abilities": [
-          {
-            "id": 911615,
-            "names": {
-              "en": "Human Splitter",
-              "tw": "人類綻裂者",
-              "kr": "인간 분열",
-              "fr": "Fléau d'humain",
-              "de": "Menschensplitter",
-              "es": "Partehumanos"
+              "en": "Flying Strike",
+              "tw": "飛行猛擊",
+              "kr": "비행 공격",
+              "fr": "Frappe aérienne",
+              "de": "Flugstreich",
+              "es": "Golpe volador"
             },
             "offset": 14,
             "castTime": 40
           },
           {
-            "id": 911616,
+            "id": 911343,
             "names": {
-              "en": "Demon Splitter",
-              "tw": "惡魔綻裂者",
-              "kr": "악마 분열",
-              "fr": "Fléau de démon",
-              "de": "Dämonensplitter",
-              "es": "Partedemonios"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 401004805,
-        "names": {
-          "en": "Beryl",
-          "tw": "貝利爾",
-          "kr": "베릴"
-        },
-        "abilities": [
-          {
-            "id": 911583,
-            "names": {
-              "en": "Heaven - Force of Light",
-              "tw": "天堂-光之力",
-              "kr": "천국·빛의 힘",
-              "fr": "Paradis - Force de lumière",
-              "de": "Himmel - Macht des Lichts",
-              "es": "Hocicazo - Fuerza lumínica"
+              "en": "Vengeful Sky",
+              "tw": "復仇之空",
+              "kr": "복수의 하늘",
+              "fr": "Ciel vengeur",
+              "de": "Rachsüchtiger Himmel",
+              "es": "Cielo vengativo"
             },
             "offset": 14,
             "castTime": 40
@@ -10214,6 +10743,28 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401004605,
+        "names": {
+          "en": "Malphasie",
+          "tw": "瑪爾菲希",
+          "kr": "멜파지"
+        },
+        "abilities": [
+          {
+            "id": 401004607,
+            "names": {
+              "en": "Murderous Intent",
+              "tw": "殺意",
+              "kr": "살의",
+              "fr": "Desseins meurtriers",
+              "de": "Mordlust",
+              "es": "Intento asesino"
+            },
+            "offset": 14
+          }
+        ]
       }
     ]
   },
@@ -10419,29 +10970,6 @@
               "fr": "Graviton de courte portée",
               "de": "Kurzstrecken-Graviton",
               "es": "Gravitón de corto alcance"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 401004705,
-        "names": {
-          "en": "Ellesperis",
-          "tw": "艾莉絲珮芮絲",
-          "kr": "엘레스페리스"
-        },
-        "abilities": [
-          {
-            "id": 911620,
-            "names": {
-              "en": "Hemomancer's Strike",
-              "tw": "血巫師之擊",
-              "kr": "헤모맨서의 타격",
-              "fr": "Frappe d'hémomancienne",
-              "de": "Streich des Blutmagiers",
-              "es": "Golpe de hemomante"
             },
             "offset": 14,
             "castTime": 40
@@ -11113,19 +11641,6 @@
             },
             "offset": 14,
             "castTime": 40
-          },
-          {
-            "id": 911384,
-            "names": {
-              "en": "Raucous Storm",
-              "tw": "嘶吼風暴",
-              "kr": "거센 폭풍",
-              "fr": "Orage retentissant",
-              "de": "Dröhnender Sturm",
-              "es": "Tormenta torrencial"
-            },
-            "offset": 14,
-            "castTime": 40
           }
         ]
       },
@@ -11491,56 +12006,6 @@
               "kr": "토네이도 (Xenogears)",
               "fr": "Tourbillon (Xenogears)",
               "es": "Tifón (Xenogears)"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 401004405,
-        "names": {
-          "en": "Circe",
-          "tw": "瑟希",
-          "kr": "서스",
-          "fr": "Circé"
-        },
-        "abilities": [
-          {
-            "id": 911356,
-            "names": {
-              "en": "Predict - Torrential Omen",
-              "tw": "預言-滂沱預兆",
-              "kr": "예측·홍수의 징조",
-              "fr": "Présage - Augure torrentiel",
-              "de": "Weissagung - Omen der Flut",
-              "es": "Predicción - Presagio torrencial"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 911369,
-            "names": {
-              "en": "Downpour",
-              "tw": "暴雨",
-              "kr": "폭우",
-              "fr": "Averse",
-              "de": "Regenguss",
-              "es": "Aguacero"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 911373,
-            "names": {
-              "en": "Predict - Downpour",
-              "tw": "預言 - 暴雨",
-              "kr": "예측·폭우",
-              "fr": "Présage - Averse",
-              "de": "Weissagung - Regenguss",
-              "es": "Predicción - Aguacero"
             },
             "offset": 14,
             "castTime": 40
@@ -12283,6 +12748,43 @@
         ]
       },
       {
+        "id": 401004405,
+        "names": {
+          "en": "Circe",
+          "tw": "瑟希",
+          "kr": "서스",
+          "fr": "Circé"
+        },
+        "abilities": [
+          {
+            "id": 912629,
+            "names": {
+              "en": "Predict - Cataclysmic Omen",
+              "tw": "預言 - 災難徵兆",
+              "kr": "예측·격변의 징조",
+              "fr": "Présage - Augure cataclysmique",
+              "de": "Weissagung - Kataklysmisches Omen",
+              "es": "Predicción - Presagio cataclísmico"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 911374,
+            "names": {
+              "en": "Predict - Sandstorm",
+              "tw": "預言 - 沙暴",
+              "kr": "예측·모래 폭풍",
+              "fr": "Présage - Sirocco",
+              "de": "Weissagung - Sandsturm",
+              "es": "Predicción - Tormenta de arena"
+            },
+            "offset": 14,
+            "castTime": 50
+          }
+        ]
+      },
+      {
         "id": 401004805,
         "names": {
           "en": "Beryl",
@@ -12654,56 +13156,6 @@
               "fr": "Séisme",
               "de": "Beben",
               "es": "Seísmo"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 401004405,
-        "names": {
-          "en": "Circe",
-          "tw": "瑟希",
-          "kr": "서스",
-          "fr": "Circé"
-        },
-        "abilities": [
-          {
-            "id": 911355,
-            "names": {
-              "en": "Predict - Cyclonic Omen",
-              "tw": "預言-風旋預兆",
-              "kr": "예측·선풍의 징조",
-              "fr": "Présage - Augure tempétueux",
-              "de": "Weissagung - Omen des Zyklons",
-              "es": "Predicción - Presagio ciclónico"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 911370,
-            "names": {
-              "en": "Sandstorm",
-              "tw": "沙暴",
-              "kr": "모래 폭풍",
-              "fr": "Sirocco",
-              "de": "Sandsturm",
-              "es": "Tormenta de arena"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 911374,
-            "names": {
-              "en": "Predict - Sandstorm",
-              "tw": "預言 - 沙暴",
-              "kr": "예측·모래 폭풍",
-              "fr": "Présage - Sirocco",
-              "de": "Weissagung - Sandsturm",
-              "es": "Predicción - Tormenta de arena"
             },
             "offset": 14,
             "castTime": 40
