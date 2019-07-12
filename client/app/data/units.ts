@@ -521,6 +521,33 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 800002,
+        "names": {
+          "en": "Type-A Screwdriver",
+          "tw": "A式螺絲起子",
+          "kr": "A식 스크류 드라이버",
+          "fr": "Tournevis de type A",
+          "de": "Erstklassiger Schraubenzieher",
+          "es": "Destornillador tipo A"
+        },
+        "base": 275,
+        "hitDamage": [
+          1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0909090909090908, 90.9090909090909
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
         "id": 100005907,
         "names": {
           "en": "Fatal Impact",
@@ -22770,7 +22797,8 @@ export const UNITS: any[] = [
           911348
         ]
       }
-    ]
+    ],
+    maxChainCap: 6
   },
   {
     "id": 170,
@@ -44018,6 +44046,633 @@ export const UNITS: any[] = [
         "offset": 14,
         "framesList": [
           42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "names": {
+      "en": "Yuffie",
+      "tw": "尤菲",
+      "kr": "유피"
+    },
+    "abilities": [
+      {
+        "id": 229902,
+        "names": {
+          "en": "Greased Lightning (FFVII)",
+          "tw": "疾風迅雷 (FFVII)",
+          "kr": "질풍신뢰 (FFVII)",
+          "fr": "Éclair d'huile",
+          "de": "Geölter Blitz (FFVII)",
+          "es": "Relámpago engrasado"
+        },
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          4
+        ]
+      },
+      {
+        "id": 229903,
+        "names": {
+          "en": "Landscaper",
+          "tw": "拔山蓋世",
+          "kr": "발산개세",
+          "fr": "Gratte-terre",
+          "de": "Erdgefahr",
+          "es": "Rascacielos"
+        },
+        "base": 220,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 229904,
+        "names": {
+          "en": "Sense",
+          "tw": "識破",
+          "kr": "꿰뚫어보기",
+          "fr": "Sentir",
+          "de": "Erkennen",
+          "es": "Sentido"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 229909,
+        "names": {
+          "en": "Katon - Battle Fire",
+          "tw": "火遁·炎陣",
+          "kr": "화둔·염진",
+          "fr": "Katon - Feu de guerre",
+          "de": "Katon – Schlachtenfeuer",
+          "es": "Katon - Fuego bélico"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229910,
+        "names": {
+          "en": "Suiton - Snow Flower",
+          "tw": "冰遁·雪華",
+          "kr": "빙둔·설진",
+          "fr": "Suiton - Fleur de neige",
+          "de": "Suiton – Schneeblüte",
+          "es": "Suiton - Flor invernal"
+        },
+        "base": 450,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229911,
+        "names": {
+          "en": "Raiton - Roaring Thunder",
+          "tw": "雷遁·轟雷",
+          "kr": "뇌둔·굉뢰",
+          "fr": "Raiton - Tonnerre assourdissant",
+          "de": "Raiton – Ohrenbetäubender Donner",
+          "es": "Raiton - Trueno ensordecedor"
+        },
+        "base": 450,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 229912,
+        "names": {
+          "en": "Bloodfest",
+          "tw": "血祭",
+          "kr": "피의 축제",
+          "fr": "Buffet sanglant",
+          "de": "Blutfest",
+          "es": "Carnicería"
+        },
+        "base": 580,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 509272,
+        "names": {
+          "en": "Super Throw",
+          "tw": "全力投擲",
+          "kr": "전력 투척",
+          "fr": "Super-lancer",
+          "de": "Superwurf",
+          "es": "Lanzamiento perfecto"
+        },
+        "base": 2100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          27
+        ]
+      },
+      {
+        "id": 509273,
+        "names": {
+          "en": "Slashing Dance",
+          "tw": "斬擊之舞",
+          "kr": "깎기깎기춤",
+          "fr": "Danse déchirante",
+          "de": "Tanz der Tausend Schnitte",
+          "es": "Baile fulminante"
+        },
+        "base": 1600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229918,
+        "names": {
+          "en": "Ultimate Katon - Destructive Flame",
+          "tw": "極火遁·劫火灼滅",
+          "kr": "극화둔·겁화작멸",
+          "fr": "Katon ultime - Flamme destructrice",
+          "de": "Ultimatives Katon – Vernichtende Flamme",
+          "es": "Katon definitivo - Llamas abrasadoras"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229919,
+        "names": {
+          "en": "Ultimate Suiton - Crushing Ice",
+          "tw": "極冰遁·冰晶崩壞",
+          "kr": "극빙둔·빙정붕괴",
+          "fr": "Suiton ultime - Glace écrasante",
+          "de": "Ultimatives Suiton – Erdrückendes Eis",
+          "es": "Suiton definitivo - Hielo aplastante"
+        },
+        "base": 800,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 229920,
+        "names": {
+          "en": "Ultimate Raiton - Shock Wave",
+          "tw": "極雷遁·雷神衝波",
+          "kr": "극뇌둔·뇌신충파",
+          "fr": "Raiton ultime - Onde de choc",
+          "de": "Ultimatives Raiton – Schockwelle",
+          "es": "Raiton definitivo - Onda de choque"
+        },
+        "base": 800,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 509274,
+        "names": {
+          "en": "Gauntlet",
+          "tw": "鎧袖一觸",
+          "kr": "개수일촉",
+          "fr": "Gantelet",
+          "de": "Panzerhandschuh",
+          "es": "Guante"
+        },
+        "base": 1800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 207000607,
+        "names": {
+          "en": "All Creation",
+          "tw": "森羅萬象",
+          "kr": "삼라만상",
+          "fr": "Toute la création",
+          "de": "Gesamtschaffung",
+          "es": "Toda creación"
+        },
+        "base": 1900,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          203, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          229902,
+          229903,
+          229904,
+          229909,
+          229910,
+          229911,
+          229912,
+          509272,
+          509273,
+          229918,
+          229919,
+          229920,
+          509274
+        ]
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "names": {
+      "en": "Zack",
+      "tw": "扎克斯",
+      "kr": "잭스"
+    },
+    "abilities": [
+      {
+        "id": 229881,
+        "names": {
+          "en": "High Braver",
+          "tw": "勇氣十足",
+          "kr": "하이 브레이버",
+          "fr": "Bravoure suprême",
+          "de": "Heroischer Mutangriff",
+          "es": "Gran valentía"
+        },
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 47,
+        "offset": 14,
+        "framesList": [
+          49
+        ]
+      },
+      {
+        "id": 229882,
+        "names": {
+          "en": "Assault Twister",
+          "tw": "旋轉攻擊",
+          "kr": "회피 공격",
+          "fr": "Cyclone Assaut",
+          "de": "Wirbelattacke",
+          "es": "Ciclón voraz"
+        },
+        "base": 420,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 94,
+        "offset": 28,
+        "framesList": [
+          57, 10, 10, 10, 10, 21, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229883,
+        "names": {
+          "en": "Death Twister",
+          "tw": "死亡龍捲風",
+          "kr": "데스 턴",
+          "fr": "Cyclone Faucheuse",
+          "de": "Todes-Wirbel",
+          "es": "Tornado Muerte"
+        },
+        "base": 270,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 30,
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 229884,
+        "names": {
+          "en": "Octaslash",
+          "tw": "八刀一閃",
+          "kr": "팔도일섬",
+          "fr": "Octofrappe ultime",
+          "de": "Achtstreich",
+          "es": "Octacorte definitivo"
+        },
+        "base": 250,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 229888,
+        "names": {
+          "en": "Air Strike",
+          "tw": "空擊",
+          "kr": "에어 스트라이크",
+          "fr": "Frappe aérienne",
+          "de": "Luftschlag",
+          "es": "Ataque aéreo"
+        },
+        "base": 360,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 229889,
+        "names": {
+          "en": "Meteor Shots",
+          "tw": "隕石射擊",
+          "kr": "메테오 샷",
+          "fr": "Frappe météorite",
+          "de": "Meteorschauer",
+          "es": "Tormenta astral"
+        },
+        "base": 410,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 4,
+        "offset": 14,
+        "framesList": [
+          84, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "id": 229890,
+        "names": {
+          "en": "Chocobo Stomp",
+          "tw": "陸行鳥踢",
+          "kr": "초코보 킥",
+          "fr": "Frappe chocobo",
+          "de": "Chocobo-Tritt",
+          "es": "Patada chocobo"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          5
+        ]
+      },
+      {
+        "id": 229891,
+        "names": {
+          "en": "Vital Slash",
+          "tw": "要害斬擊",
+          "kr": "급소 베기",
+          "fr": "Frappe vitale",
+          "de": "Achilleshieb",
+          "es": "Corte vital"
+        },
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 47,
+        "offset": 14,
+        "framesList": [
+          49
+        ]
+      },
+      {
+        "id": 509264,
+        "names": {
+          "en": "Engraved Hero",
+          "tw": "銘刻於心的英雄",
+          "kr": "각인된 영웅",
+          "fr": "Héros immortalisé",
+          "de": "Zeug zum Helden",
+          "es": "Héroe consagrado"
+        },
+        "base": 3000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          89
+        ]
+      },
+      {
+        "id": 509265,
+        "names": {
+          "en": "Rush Assault",
+          "tw": "猛衝",
+          "kr": "하드 러쉬",
+          "fr": "Assaut explosif",
+          "de": "Sturmangriff",
+          "es": "Acometida"
+        },
+        "base": 1800,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 80
+          },
+          {
+            "type": "ice",
+            "value": 80
+          },
+          {
+            "type": "lightning",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 207001107,
+        "names": {
+          "en": "Chainstrike",
+          "tw": "連續斬",
+          "kr": "연속참",
+          "fr": "Enchaînement tranchant",
+          "de": "Schwertkombo",
+          "es": "Corte en cadena"
+        },
+        "base": 4500,
+        "hitDamage": [
+          10, 10, 10, 10, 60
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          96, 8, 48, 8, 54
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          229881,
+          229882,
+          229883,
+          229884,
+          229888,
+          229889,
+          229890,
+          229891,
+          509264,
+          509265
         ]
       }
     ]

@@ -616,6 +616,29 @@
         ]
       },
       {
+        "id": 207000605,
+        "names": {
+          "en": "Yuffie",
+          "tw": "尤菲",
+          "kr": "유피"
+        },
+        "abilities": [
+          {
+            "id": 229920,
+            "names": {
+              "en": "Ultimate Raiton - Shock Wave",
+              "tw": "極雷遁·雷神衝波",
+              "kr": "극뇌둔·뇌신충파",
+              "fr": "Raiton ultime - Onde de choc",
+              "de": "Ultimatives Raiton – Schockwelle",
+              "es": "Raiton definitivo - Onda de choque"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 304000105,
         "names": {
           "en": "Randi",
@@ -4117,6 +4140,29 @@
     "family": "42-6-6-6-6-6-6-6-6",
     "units": [
       {
+        "id": 207000605,
+        "names": {
+          "en": "Yuffie",
+          "tw": "尤菲",
+          "kr": "유피"
+        },
+        "abilities": [
+          {
+            "id": 229919,
+            "names": {
+              "en": "Ultimate Suiton - Crushing Ice",
+              "tw": "極冰遁·冰晶崩壞",
+              "kr": "극빙둔·빙정붕괴",
+              "fr": "Suiton ultime - Glace écrasante",
+              "de": "Ultimatives Suiton – Erdrückendes Eis",
+              "es": "Suiton definitivo - Hielo aplastante"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
         "id": 304000105,
         "names": {
           "en": "Randi",
@@ -5271,6 +5317,29 @@
               "fr": "Affliction céleste + 2",
               "de": "Samsara-Spalter + 2",
               "es": "Furia transmigratoria + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207001105,
+        "names": {
+          "en": "Zack",
+          "tw": "扎克斯",
+          "kr": "잭스"
+        },
+        "abilities": [
+          {
+            "id": 229888,
+            "names": {
+              "en": "Air Strike",
+              "tw": "空擊",
+              "kr": "에어 스트라이크",
+              "fr": "Frappe aérienne",
+              "de": "Luftschlag",
+              "es": "Ataque aéreo"
             },
             "offset": 14,
             "castTime": 40
@@ -8112,6 +8181,29 @@
         ]
       },
       {
+        "id": 207001105,
+        "names": {
+          "en": "Zack",
+          "tw": "扎克斯",
+          "kr": "잭스"
+        },
+        "abilities": [
+          {
+            "id": 229889,
+            "names": {
+              "en": "Meteor Shots",
+              "tw": "隕石射擊",
+              "kr": "메테오 샷",
+              "fr": "Frappe météorite",
+              "de": "Meteorschauer",
+              "es": "Tormenta astral"
+            },
+            "offset": 14,
+            "castTime": 4
+          }
+        ]
+      },
+      {
         "id": 335000105,
         "names": {
           "en": "Sora",
@@ -9556,6 +9648,29 @@
         ]
       },
       {
+        "id": 207001105,
+        "names": {
+          "en": "Zack",
+          "tw": "扎克斯",
+          "kr": "잭스"
+        },
+        "abilities": [
+          {
+            "id": 229884,
+            "names": {
+              "en": "Octaslash",
+              "tw": "八刀一閃",
+              "kr": "팔도일섬",
+              "fr": "Octofrappe ultime",
+              "de": "Achtstreich",
+              "es": "Octacorte definitivo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 215000705,
         "names": {
           "en": "Prompto",
@@ -10495,6 +10610,29 @@
     "family": "110-10-10-10-10-10-10-10-10-10",
     "units": [
       {
+        "id": 100005905,
+        "names": {
+          "en": "Aileen",
+          "tw": "艾琳",
+          "kr": "아이린"
+        },
+        "abilities": [
+          {
+            "id": 800002,
+            "names": {
+              "en": "Type-A Screwdriver",
+              "tw": "A式螺絲起子",
+              "kr": "A식 스크류 드라이버",
+              "fr": "Tournevis de type A",
+              "de": "Erstklassiger Schraubenzieher",
+              "es": "Destornillador tipo A"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100013805,
         "names": {
           "en": "Lila",
@@ -10724,6 +10862,81 @@
         ]
       },
       {
+        "id": 207000605,
+        "names": {
+          "en": "Yuffie",
+          "tw": "尤菲",
+          "kr": "유피"
+        },
+        "abilities": [
+          {
+            "id": 229909,
+            "names": {
+              "en": "Katon - Battle Fire",
+              "tw": "火遁·炎陣",
+              "kr": "화둔·염진",
+              "fr": "Katon - Feu de guerre",
+              "de": "Katon – Schlachtenfeuer",
+              "es": "Katon - Fuego bélico"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229912,
+            "names": {
+              "en": "Bloodfest",
+              "tw": "血祭",
+              "kr": "피의 축제",
+              "fr": "Buffet sanglant",
+              "de": "Blutfest",
+              "es": "Carnicería"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509273,
+            "names": {
+              "en": "Slashing Dance",
+              "tw": "斬擊之舞",
+              "kr": "깎기깎기춤",
+              "fr": "Danse déchirante",
+              "de": "Tanz der Tausend Schnitte",
+              "es": "Baile fulminante"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229918,
+            "names": {
+              "en": "Ultimate Katon - Destructive Flame",
+              "tw": "極火遁·劫火灼滅",
+              "kr": "극화둔·겁화작멸",
+              "fr": "Katon ultime - Flamme destructrice",
+              "de": "Ultimatives Katon – Vernichtende Flamme",
+              "es": "Katon definitivo - Llamas abrasadoras"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509274,
+            "names": {
+              "en": "Gauntlet",
+              "tw": "鎧袖一觸",
+              "kr": "개수일촉",
+              "fr": "Gantelet",
+              "de": "Panzerhandschuh",
+              "es": "Guante"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 310000105,
         "names": {
           "en": "2B"
@@ -10912,6 +11125,29 @@
               "fr": "Ténèbres perçantes + 2",
               "de": "Dunkeldurchstoß + 2",
               "es": "Tiniebla penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207001105,
+        "names": {
+          "en": "Zack",
+          "tw": "扎克斯",
+          "kr": "잭스"
+        },
+        "abilities": [
+          {
+            "id": 509265,
+            "names": {
+              "en": "Rush Assault",
+              "tw": "猛衝",
+              "kr": "하드 러쉬",
+              "fr": "Assaut explosif",
+              "de": "Sturmangriff",
+              "es": "Acometida"
             },
             "offset": 14,
             "castTime": 40
