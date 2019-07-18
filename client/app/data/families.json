@@ -956,6 +956,29 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401008405,
+        "names": {
+          "en": "Elena",
+          "tw": "艾琳娜",
+          "kr": "엘레나"
+        },
+        "abilities": [
+          {
+            "id": 912571,
+            "names": {
+              "en": "Blade of the Dawn",
+              "tw": "拂曉之刃",
+              "kr": "새벽의 칼날",
+              "fr": "Lame de l'aube",
+              "de": "Klinge der Morgendämmerung",
+              "es": "Hoja del amanecer"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -1557,7 +1580,7 @@
             "names": {
               "en": "Aurora Storm",
               "tw": "極光風暴",
-              "kr": "극광의 폭풍",
+              "kr": "극광의 태풍",
               "fr": "Tempête de l'Aurore",
               "de": "Aurora-Sturm",
               "es": "Tormenta del alba"
@@ -1666,10 +1689,56 @@
             "names": {
               "en": "Aurora Storm",
               "tw": "極光風暴",
-              "kr": "극광의 폭풍",
+              "kr": "극광의 태풍",
               "fr": "Tempête de l'Aurore",
               "de": "Aurora-Sturm",
               "es": "Tormenta del alba"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007005,
+        "names": {
+          "en": "Morgana",
+          "tw": "莫甘娜",
+          "kr": "모르가나"
+        },
+        "abilities": [
+          {
+            "id": 912671,
+            "names": {
+              "en": "Bursting Luminosity",
+              "tw": "煌煌爆散",
+              "kr": "황황폭산",
+              "fr": "Luminosité perçante",
+              "de": "Berstender Schein",
+              "es": "Luminosidad penetrante"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401008405,
+        "names": {
+          "en": "Elena",
+          "tw": "艾琳娜",
+          "kr": "엘레나"
+        },
+        "abilities": [
+          {
+            "id": 912570,
+            "names": {
+              "en": "Aurora Tempest",
+              "tw": "極光之嵐",
+              "kr": "극광의 폭풍",
+              "fr": "Ouragan de l'Aurore",
+              "de": "Aurorasturm",
+              "es": "Albor tempestuoso"
             },
             "offset": 14,
             "castTime": 40
@@ -1936,6 +2005,94 @@
               "fr": "Présage - Canicule",
               "de": "Weissagung - Hitzewelle",
               "es": "Predicción - Ola de calor"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
+        "id": 401007005,
+        "names": {
+          "en": "Morgana",
+          "tw": "莫甘娜",
+          "kr": "모르가나"
+        },
+        "abilities": [
+          {
+            "id": 912636,
+            "names": {
+              "en": "Glacial Needles",
+              "tw": "冰川針刺",
+              "kr": "혹한의 바늘",
+              "fr": "Aiguilles de givre",
+              "de": "Gletschernadeln",
+              "es": "Agujas glaciales"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912639,
+            "names": {
+              "en": "Halo Beam",
+              "tw": "日輪之輝",
+              "kr": "일륜의 빛",
+              "fr": "Faisceau auréolé",
+              "de": "Sonnenglanz",
+              "es": "Haz aureolar"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912642,
+            "names": {
+              "en": "Glistening Ice",
+              "tw": "煌冰",
+              "kr": "황빙",
+              "fr": "Glace chatoyante",
+              "de": "Glitzerndes Eis",
+              "es": "Destello refulgente"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912647,
+            "names": {
+              "en": "Crystallized Spikes",
+              "tw": "水晶尖刺",
+              "kr": "크리스탈의 번개",
+              "fr": "Pics cristallisés",
+              "de": "Kristallisierte Stacheln",
+              "es": "Estacas cristalizadas"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912651,
+            "names": {
+              "en": "Holy Radiance",
+              "tw": "神聖煥光",
+              "kr": "성스러운 빛",
+              "fr": "Sainte radiance",
+              "de": "Heiligenschein",
+              "es": "Resplandor santo"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912670,
+            "names": {
+              "en": "Unstable Energy",
+              "tw": "不安定的能量",
+              "kr": "불안정한 에너지",
+              "fr": "Énergie instable",
+              "de": "Instabile Energie",
+              "es": "Energía inestable"
             },
             "offset": 14,
             "castTime": 39
@@ -2518,6 +2675,57 @@
             },
             "offset": 14,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "28-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5",
+    "units": [
+      {
+        "id": 100016205,
+        "names": {
+          "en": "Hyoh",
+          "tw": "獵豹",
+          "kr": "효우",
+          "de": "Hyou",
+          "es": "Hyou"
+        },
+        "abilities": [
+          {
+            "id": 100016207,
+            "names": {
+              "en": "Extreme Nova",
+              "tw": "終極新星",
+              "kr": "극한의 광휘",
+              "fr": "Nova extrême",
+              "de": "Extremnova",
+              "es": "Nova extrema"
+            },
+            "offset": 14
+          }
+        ]
+      },
+      {
+        "id": 401008405,
+        "names": {
+          "en": "Elena",
+          "tw": "艾琳娜",
+          "kr": "엘레나"
+        },
+        "abilities": [
+          {
+            "id": 401008407,
+            "names": {
+              "en": "Light of Salvation",
+              "tw": "救贖之光",
+              "kr": "빛의 구원",
+              "fr": "Lumière du salut",
+              "de": "Licht der Erlösung",
+              "es": "Luz de la salvación"
+            },
+            "offset": 14
           }
         ]
       }
@@ -4563,6 +4771,29 @@
         ]
       },
       {
+        "id": 401007005,
+        "names": {
+          "en": "Morgana",
+          "tw": "莫甘娜",
+          "kr": "모르가나"
+        },
+        "abilities": [
+          {
+            "id": 912672,
+            "names": {
+              "en": "Spectral Cutter",
+              "tw": "幽魂切割",
+              "kr": "스펙트럴 커터",
+              "fr": "Tranchant spectral",
+              "de": "Spektralschneider",
+              "es": "Filo espectral"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
         "id": 401007605,
         "names": {
           "en": "Zeno of the Beta Star",
@@ -4582,6 +4813,29 @@
               "fr": "Éclat pourpre",
               "de": "Purpurner Blitz",
               "es": "Destello carmesí"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401008405,
+        "names": {
+          "en": "Elena",
+          "tw": "艾琳娜",
+          "kr": "엘레나"
+        },
+        "abilities": [
+          {
+            "id": 912569,
+            "names": {
+              "en": "Blade of Crystal",
+              "tw": "水晶之刃",
+              "kr": "크리스탈의 칼날",
+              "fr": "Lame de cristal",
+              "de": "Kristallschwert",
+              "es": "Hoja de cristal"
             },
             "offset": 14,
             "castTime": 38
@@ -10978,6 +11232,29 @@
             "offset": 14
           }
         ]
+      },
+      {
+        "id": 401008405,
+        "names": {
+          "en": "Elena",
+          "tw": "艾琳娜",
+          "kr": "엘레나"
+        },
+        "abilities": [
+          {
+            "id": 912572,
+            "names": {
+              "en": "Blade of the Heavens",
+              "tw": "天風之刃",
+              "kr": "천풍의 칼날",
+              "fr": "Lame des cieux",
+              "de": "Klinge der Himmelswinde",
+              "es": "Hoja de los cielos"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -13119,6 +13396,81 @@
               "fr": "Danse du papillon",
               "de": "Tanz der Schmetterlinge",
               "es": "Danza de la mariposa"
+            },
+            "offset": 14,
+            "castTime": 50
+          }
+        ]
+      },
+      {
+        "id": 401007005,
+        "names": {
+          "en": "Morgana",
+          "tw": "莫甘娜",
+          "kr": "모르가나"
+        },
+        "abilities": [
+          {
+            "id": 912637,
+            "names": {
+              "en": "Storm Winds",
+              "tw": "暴風呼嘯",
+              "kr": "폭풍",
+              "fr": "Vent foudroyant",
+              "de": "Stürmischer Wind",
+              "es": "Viento tempestuoso"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 912640,
+            "names": {
+              "en": "Void Blast",
+              "tw": "虛無陣風",
+              "kr": "허무의 질풍",
+              "fr": "Rayon du néant",
+              "de": "Hauch des Abgrunds",
+              "es": "Azote sombrío"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 912646,
+            "names": {
+              "en": "Arcane Chaos",
+              "tw": "失控的魔術",
+              "kr": "폭주하는 마술",
+              "fr": "Chaos des arcanes",
+              "de": "Arkanes Chaos",
+              "es": "Caos arcano"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 912649,
+            "names": {
+              "en": "Storm Gale",
+              "tw": "颶風呼嘯",
+              "kr": "돌풍",
+              "fr": "Bise tempétueuse",
+              "de": "Sturmwinde",
+              "es": "Ráfaga tormentosa"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 912655,
+            "names": {
+              "en": "Shadow Wail",
+              "tw": "歎息之影",
+              "kr": "비탄의 그림자",
+              "fr": "Plainte des ombres",
+              "de": "Schattenklage",
+              "es": "Lamento umbroso"
             },
             "offset": 14,
             "castTime": 50

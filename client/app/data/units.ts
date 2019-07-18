@@ -44676,5 +44676,659 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 269,
+    "names": {
+      "en": "Morgana",
+      "tw": "莫甘娜",
+      "kr": "모르가나"
+    },
+    "abilities": [
+      {
+        "id": 912636,
+        "names": {
+          "en": "Glacial Needles",
+          "tw": "冰川針刺",
+          "kr": "혹한의 바늘",
+          "fr": "Aiguilles de givre",
+          "de": "Gletschernadeln",
+          "es": "Agujas glaciales"
+        },
+        "damage": "magic",
+        "base": 170,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912637,
+        "names": {
+          "en": "Storm Winds",
+          "tw": "暴風呼嘯",
+          "kr": "폭풍",
+          "fr": "Vent foudroyant",
+          "de": "Stürmischer Wind",
+          "es": "Viento tempestuoso"
+        },
+        "damage": "magic",
+        "base": 340,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912639,
+        "names": {
+          "en": "Halo Beam",
+          "tw": "日輪之輝",
+          "kr": "일륜의 빛",
+          "fr": "Faisceau auréolé",
+          "de": "Sonnenglanz",
+          "es": "Haz aureolar"
+        },
+        "damage": "magic",
+        "base": 170,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912640,
+        "names": {
+          "en": "Void Blast",
+          "tw": "虛無陣風",
+          "kr": "허무의 질풍",
+          "fr": "Rayon du néant",
+          "de": "Hauch des Abgrunds",
+          "es": "Azote sombrío"
+        },
+        "damage": "magic",
+        "base": 340,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912642,
+        "names": {
+          "en": "Glistening Ice",
+          "tw": "煌冰",
+          "kr": "황빙",
+          "fr": "Glace chatoyante",
+          "de": "Glitzerndes Eis",
+          "es": "Destello refulgente"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "ice",
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912646,
+        "names": {
+          "en": "Arcane Chaos",
+          "tw": "失控的魔術",
+          "kr": "폭주하는 마술",
+          "fr": "Chaos des arcanes",
+          "de": "Arkanes Chaos",
+          "es": "Caos arcano"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912647,
+        "names": {
+          "en": "Crystallized Spikes",
+          "tw": "水晶尖刺",
+          "kr": "크리스탈의 번개",
+          "fr": "Pics cristallisés",
+          "de": "Kristallisierte Stacheln",
+          "es": "Estacas cristalizadas"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912649,
+        "names": {
+          "en": "Storm Gale",
+          "tw": "颶風呼嘯",
+          "kr": "돌풍",
+          "fr": "Bise tempétueuse",
+          "de": "Sturmwinde",
+          "es": "Ráfaga tormentosa"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912651,
+        "names": {
+          "en": "Holy Radiance",
+          "tw": "神聖煥光",
+          "kr": "성스러운 빛",
+          "fr": "Sainte radiance",
+          "de": "Heiligenschein",
+          "es": "Resplandor santo"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912655,
+        "names": {
+          "en": "Shadow Wail",
+          "tw": "歎息之影",
+          "kr": "비탄의 그림자",
+          "fr": "Plainte des ombres",
+          "de": "Schattenklage",
+          "es": "Lamento umbroso"
+        },
+        "damage": "magic",
+        "base": 200,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912670,
+        "names": {
+          "en": "Unstable Energy",
+          "tw": "不安定的能量",
+          "kr": "불안정한 에너지",
+          "fr": "Énergie instable",
+          "de": "Instabile Energie",
+          "es": "Energía inestable"
+        },
+        "damage": "magic",
+        "base": 1250,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912671,
+        "names": {
+          "en": "Bursting Luminosity",
+          "tw": "煌煌爆散",
+          "kr": "황황폭산",
+          "fr": "Luminosité perçante",
+          "de": "Berstender Schein",
+          "es": "Luminosidad penetrante"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912672,
+        "names": {
+          "en": "Spectral Cutter",
+          "tw": "幽魂切割",
+          "kr": "스펙트럴 커터",
+          "fr": "Tranchant spectral",
+          "de": "Spektralschneider",
+          "es": "Filo espectral"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 401007007,
+        "names": {
+          "en": "Arcane Explosion",
+          "tw": "魔術大解放",
+          "kr": "마술 대해방",
+          "fr": "Explosion des arcanes",
+          "de": "Arkane Explosion",
+          "es": "Explosión arcana"
+        },
+        "damage": "magic",
+        "base": 1750,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          160
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          912636,
+          912637,
+          912639,
+          912640,
+          912642,
+          912646,
+          912647,
+          912649,
+          912651,
+          912655,
+          912671,
+          912672,
+          912670
+        ]
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "names": {
+      "en": "Elena",
+      "tw": "艾琳娜",
+      "kr": "엘레나"
+    },
+    "abilities": [
+      {
+        "id": 912569,
+        "names": {
+          "en": "Blade of Crystal",
+          "tw": "水晶之刃",
+          "kr": "크리스탈의 칼날",
+          "fr": "Lame de cristal",
+          "de": "Kristallschwert",
+          "es": "Hoja de cristal"
+        },
+        "damage": "hybrid",
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912592,
+        "names": {
+          "en": "Purifying Slash",
+          "tw": "淨化斬擊",
+          "kr": "정화의 참격",
+          "fr": "Taillade purificatrice",
+          "de": "Reinigender Streich",
+          "es": "Corte purificador"
+        },
+        "damage": "hybrid",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "id": 912571,
+        "names": {
+          "en": "Blade of the Dawn",
+          "tw": "拂曉之刃",
+          "kr": "새벽의 칼날",
+          "fr": "Lame de l'aube",
+          "de": "Klinge der Morgendämmerung",
+          "es": "Hoja del amanecer"
+        },
+        "damage": "hybrid",
+        "base": 800,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 912572,
+        "names": {
+          "en": "Blade of the Heavens",
+          "tw": "天風之刃",
+          "kr": "천풍의 칼날",
+          "fr": "Lame des cieux",
+          "de": "Klinge der Himmelswinde",
+          "es": "Hoja de los cielos"
+        },
+        "damage": "hybrid",
+        "base": 1500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912570,
+        "names": {
+          "en": "Aurora Tempest",
+          "tw": "極光之嵐",
+          "kr": "극광의 폭풍",
+          "fr": "Ouragan de l'Aurore",
+          "de": "Aurorasturm",
+          "es": "Albor tempestuoso"
+        },
+        "damage": "hybrid",
+        "base": 1800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice",
+          "light"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 50
+          },
+          {
+            "type": "light",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912593,
+        "names": {
+          "en": "Aurora - Valor",
+          "tw": "極光 - 勇氣",
+          "kr": "극광·용기",
+          "fr": "Aurore - Valeur",
+          "de": "Aurora - Tapferkeit",
+          "es": "Aurora - Valor"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },,
+      {
+        "id": 912594,
+        "names": {
+          "en": "Aurora - Radiant Might",
+          "tw": "極光 - 燦爛之力",
+          "kr": "극광·빛나는 힘",
+          "fr": "Aurore - Puissance étincelante",
+          "de": "Aurora - Strahlende Macht",
+          "es": "Aurora - Poder cegador"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },,
+      {
+        "id": 912595,
+        "names": {
+          "en": "Blossom - Vigilance",
+          "tw": "冰華 - 防衛",
+          "kr": "빙화·방위",
+          "fr": "Floraison - Vigilance",
+          "de": "Blüte - Wachsamkeit",
+          "es": "Floración - Vigilancia"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },,
+      {
+        "id": 912596,
+        "names": {
+          "en": "Blossom - Frost Hedge",
+          "tw": "冰華 - 防冰壁",
+          "kr": "빙화·방빙벽",
+          "fr": "Floraison - Ronces de givre",
+          "de": "Blüte - Frosthecke",
+          "es": "Floración - Escarcha protectora"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          20
+        ]
+      },,
+      {
+        "id": 401008407,
+        "names": {
+          "en": "Light of Salvation",
+          "tw": "救贖之光",
+          "kr": "빛의 구원",
+          "fr": "Lumière du salut",
+          "de": "Licht der Erlösung",
+          "es": "Luz de la salvación"
+        },
+        "damage": "hybrid",
+        "base": 4500,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 13
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          28, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          912569,
+          912592,
+          912571,
+          912572,
+          912570,
+          912593,
+          912594,
+          912595,
+          912596
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          912569,
+          912592,
+          912571,
+          912572,
+          912570
+        ]
+      }
+    ]
   }
 ];
