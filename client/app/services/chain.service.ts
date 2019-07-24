@@ -294,9 +294,13 @@ export class ChainService {
       minIndex = -1;
       this.chainers.forEach((unit, index) => {
         if (unit.frames.length > nbCombo[index] &&
-          (index === 0
-            || unit.frames[nbCombo[index]].frame < minFrame
-            || (unit.frames[nbCombo[index]].frame === minFrame && minIndex > index))
+          (unit.frames[nbCombo[index]].frame < minFrame
+            || (
+              unit.frames[nbCombo[index]].frame === minFrame
+              && index > minIndex
+              && this.chainers[index].selectedAbilities[0].framesList[0] + this.chainers[index].framesGap < this.chainers[minIndex].selectedAbilities[0].framesList[0] + this.chainers[minIndex].framesGap
+            )
+          )
         ) {
           minFrame = unit.frames[nbCombo[index]].frame;
           minIndex = index;
