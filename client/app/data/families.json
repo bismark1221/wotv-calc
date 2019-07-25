@@ -1483,6 +1483,58 @@
         ]
       },
       {
+        "id": 100011805,
+        "names": {
+          "en": "Lotus Mage Fina",
+          "tw": "白蓮魔道士菲娜",
+          "kr": "백련의 마도사 피나",
+          "fr": "Fina, mage du lotus",
+          "de": "Lotusmagierin Fina",
+          "es": "Fina maga del loto"
+        },
+        "abilities": [
+          {
+            "id": 707746,
+            "names": {
+              "en": "Sacred Burst + 2",
+              "tw": "神聖爆發 + 2",
+              "kr": "거룩한 폭발 + 2",
+              "fr": "Éclat sacré + 2",
+              "de": "Heilige Salve + 2",
+              "es": "Estallido sacro + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100012405,
+        "names": {
+          "en": "Blossom Sage Sakura",
+          "tw": "櫻雲賢者櫻",
+          "kr": "벚꽃의 현자 사쿠라",
+          "fr": "Sakura sage des fleurs",
+          "de": "Blütenmagierin Sakura",
+          "es": "Sakura sabia floreciente"
+        },
+        "abilities": [
+          {
+            "id": 912725,
+            "names": {
+              "en": "Quick Light Blade + 2",
+              "tw": "迅・光之刃 + 2",
+              "kr": "신속·빛의 검 + 2",
+              "fr": "Lame lumineuse rapide + 2",
+              "de": "Schnelle Lichtklinge + 2",
+              "es": "Hoz de luz veloz + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100021705,
         "names": {
           "en": "Sacred Shield Charlotte",
@@ -1515,6 +1567,27 @@
               "fr": "Châtiment sacré",
               "de": "Göttliche Strafe",
               "es": "Castigo celestial"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100022705,
+        "names": {
+          "en": null
+        },
+        "abilities": [
+          {
+            "id": 208690,
+            "names": {
+              "en": "Disorder",
+              "tw": "無序亂射",
+              "kr": "난동",
+              "fr": "Désordre",
+              "de": "Störung",
+              "es": "Desorden"
             },
             "offset": 14,
             "castTime": 40
@@ -1723,6 +1796,29 @@
         ]
       },
       {
+        "id": 401007705,
+        "names": {
+          "en": "Rivera",
+          "tw": "莉薇拉",
+          "kr": "리베라"
+        },
+        "abilities": [
+          {
+            "id": 912540,
+            "names": {
+              "en": "Chorus",
+              "tw": "和聲",
+              "kr": "코러스",
+              "fr": "Chœur",
+              "de": "Refrain",
+              "es": "Estribillo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401008405,
         "names": {
           "en": "Elena",
@@ -1799,6 +1895,32 @@
   {
     "family": "40-5-5-5-5-5-5-5-5-5-5",
     "units": [
+      {
+        "id": 100012405,
+        "names": {
+          "en": "Blossom Sage Sakura",
+          "tw": "櫻雲賢者櫻",
+          "kr": "벚꽃의 현자 사쿠라",
+          "fr": "Sakura sage des fleurs",
+          "de": "Blütenmagierin Sakura",
+          "es": "Sakura sabia floreciente"
+        },
+        "abilities": [
+          {
+            "id": 912727,
+            "names": {
+              "en": "Quick Dark Blade + 2",
+              "tw": "迅・暗之刃 + 2",
+              "kr": "신속·어둠의 검 + 2",
+              "fr": "Lame obscure rapide + 2",
+              "de": "Schnelle Dunkelklinge + 2",
+              "es": "Hoja oscura veloz + 2"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
       {
         "id": 100014005,
         "names": {
@@ -2093,6 +2215,94 @@
               "fr": "Énergie instable",
               "de": "Instabile Energie",
               "es": "Energía inestable"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
+        "id": 401007705,
+        "names": {
+          "en": "Rivera",
+          "tw": "莉薇拉",
+          "kr": "리베라"
+        },
+        "abilities": [
+          {
+            "id": 912511,
+            "names": {
+              "en": "Sound Amplifier",
+              "tw": "聲音增幅器",
+              "kr": "음향 증폭",
+              "fr": "Amplificateur",
+              "de": "Soundverstärker",
+              "es": "Amplificador de sonido"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912520,
+            "names": {
+              "en": "Watchful Ensemble",
+              "tw": "纖細合奏",
+              "kr": "섬세한 앙상블",
+              "fr": "Ensemble attentif",
+              "de": "Wachsames Ensemble",
+              "es": "Grupo atento"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912526,
+            "names": {
+              "en": "Impish Nocturne",
+              "tw": "調皮夜曲",
+              "kr": "장난스러운 녹턴",
+              "fr": "Nocturne espiègle",
+              "de": "Teuflische Nokturne",
+              "es": "Travieso nocturno"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912532,
+            "names": {
+              "en": "Rhapsody of the Wild",
+              "tw": "野性狂想曲",
+              "kr": "야성의 랩소디",
+              "fr": "Rapsodie de la faune",
+              "de": "Rhapsodie der Wildnis",
+              "es": "Rapsodia salvaje"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912536,
+            "names": {
+              "en": "Funeral March",
+              "tw": "葬送進行曲",
+              "kr": "장송 행진곡",
+              "fr": "Marche funéraire",
+              "de": "Trauermarsch",
+              "es": "Marcha fúnebre"
+            },
+            "offset": 14,
+            "castTime": 39
+          },
+          {
+            "id": 912558,
+            "names": {
+              "en": "Raise the Tempo",
+              "tw": "加快節奏",
+              "kr": "템포 업",
+              "fr": "Tempo accéléré",
+              "de": "Tempo hoch!",
+              "es": "Tempo acelerado"
             },
             "offset": 14,
             "castTime": 39
@@ -2748,12 +2958,12 @@
           {
             "id": 506190,
             "names": {
-              "en": "Running Fire+",
-              "tw": "牙式連發火槍·改",
-              "kr": "개량형 아식연발총",
-              "fr": "Tirs nourris +",
-              "de": "Lauffeuer+",
-              "es": "Bioametralladora+"
+              "en": "Running Fire+ + 2",
+              "tw": "牙式連發火槍·改 + 2",
+              "kr": "개량형 아식연발총 + 2",
+              "fr": "Tirs nourris + + 2",
+              "de": "Lauffeuer+ + 2",
+              "es": "Bioametralladora+ + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -3055,12 +3265,12 @@
           {
             "id": 508001,
             "names": {
-              "en": "Absolute Mirror of Equity + 1",
-              "tw": "極·明鏡 + 1",
-              "kr": "극·잔잔한 거울 + 1",
-              "fr": "Sérénité absolue + 1",
-              "de": "Vollkommene Kata + 1",
-              "es": "Tranquilidad total + 1"
+              "en": "Absolute Mirror of Equity + 2",
+              "tw": "極·明鏡 + 2",
+              "kr": "극·잔잔한 거울 + 2",
+              "fr": "Sérénité absolue + 2",
+              "de": "Vollkommene Kata + 2",
+              "es": "Tranquilidad total + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -3074,6 +3284,32 @@
               "fr": "Sérénité primordiale",
               "de": "Vernichtende Kata",
               "es": "Tranquilidad fulminante"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707725,
+            "names": {
+              "en": "Obliterating Mirror of Equity + 1",
+              "tw": "絕·明鏡 + 1",
+              "kr": "절·잔잔한 거울 + 1",
+              "fr": "Sérénité primordiale + 1",
+              "de": "Vernichtende Kata + 1",
+              "es": "Tranquilidad fulminante + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707726,
+            "names": {
+              "en": "Obliterating Mirror of Equity + 2",
+              "tw": "絕·明鏡 + 2",
+              "kr": "절·잔잔한 거울 + 2",
+              "fr": "Sérénité primordiale + 2",
+              "de": "Vernichtende Kata + 2",
+              "es": "Tranquilidad fulminante + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -4348,6 +4584,32 @@
     "family": "42-6-6-6-6-6-6-6-6",
     "units": [
       {
+        "id": 100012405,
+        "names": {
+          "en": "Blossom Sage Sakura",
+          "tw": "櫻雲賢者櫻",
+          "kr": "벚꽃의 현자 사쿠라",
+          "fr": "Sakura sage des fleurs",
+          "de": "Blütenmagierin Sakura",
+          "es": "Sakura sabia floreciente"
+        },
+        "abilities": [
+          {
+            "id": 912723,
+            "names": {
+              "en": "Quick Shock Blade + 2",
+              "tw": "迅・雷之刃 + 2",
+              "kr": "신속·번개의 검 + 2",
+              "fr": "Lame électrique rapide + 2",
+              "de": "Schnelle Schockklinge + 2",
+              "es": "Hoja de choque veloz + 2"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
         "id": 207000605,
         "names": {
           "en": "Yuffie",
@@ -4813,6 +5075,42 @@
               "fr": "Éclat pourpre",
               "de": "Purpurner Blitz",
               "es": "Destello carmesí"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401007705,
+        "names": {
+          "en": "Rivera",
+          "tw": "莉薇拉",
+          "kr": "리베라"
+        },
+        "abilities": [
+          {
+            "id": 912529,
+            "names": {
+              "en": "Acoustic Echo",
+              "tw": "音響回聲",
+              "kr": "음향 반향",
+              "fr": "Écho acoustique",
+              "de": "Akustisches Echo",
+              "es": "Eco"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 912528,
+            "names": {
+              "en": "Acoustic Echo",
+              "tw": "音響回聲",
+              "kr": "음향 반향",
+              "fr": "Écho acoustique",
+              "de": "Akustisches Echo",
+              "es": "Eco"
             },
             "offset": 14,
             "castTime": 38
@@ -9444,6 +9742,110 @@
             },
             "offset": 14,
             "castTime": 10
+          },
+          {
+            "id": 707749,
+            "names": {
+              "en": "Flame Assault + 1",
+              "tw": "灼炎攻擊 + 1",
+              "kr": "화염 공격 + 1",
+              "fr": "Assaut enflammé + 1",
+              "de": "Flammenangriff + 1",
+              "es": "Asalto flamígero + 1"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707750,
+            "names": {
+              "en": "Flame Assault + 2",
+              "tw": "灼炎攻擊 + 2",
+              "kr": "화염 공격 + 2",
+              "fr": "Assaut enflammé + 2",
+              "de": "Flammenangriff + 2",
+              "es": "Asalto flamígero + 2"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707751,
+            "names": {
+              "en": "Ice Assault + 1",
+              "tw": "寒冰攻擊 + 1",
+              "kr": "빙설 공격 + 1",
+              "fr": "Assaut glacé + 1",
+              "de": "Eisangriff + 1",
+              "es": "Asalto gélido + 1"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707752,
+            "names": {
+              "en": "Ice Assault + 2",
+              "tw": "寒冰攻擊 + 2",
+              "kr": "빙설 공격 + 2",
+              "fr": "Assaut glacé + 2",
+              "de": "Eisangriff + 2",
+              "es": "Asalto gélido + 2"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707753,
+            "names": {
+              "en": "Electro Assault + 1",
+              "tw": "雷電攻擊 + 1",
+              "kr": "전격 공격 + 1",
+              "fr": "Assaut électrique + 1",
+              "de": "Elektroangriff + 1",
+              "es": "Asalto eléctrico + 1"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707754,
+            "names": {
+              "en": "Electro Assault + 2",
+              "tw": "雷電攻擊 + 2",
+              "kr": "전격 공격 + 2",
+              "fr": "Assaut électrique + 2",
+              "de": "Elektroangriff + 2",
+              "es": "Asalto eléctrico + 2"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707755,
+            "names": {
+              "en": "Light Assault + 1",
+              "tw": "閃光攻擊 + 1",
+              "kr": "광선 공격 + 1",
+              "fr": "Assaut lumineux + 1",
+              "de": "Lichtangriff + 1",
+              "es": "Asalto luminoso + 1"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 707756,
+            "names": {
+              "en": "Light Assault + 2",
+              "tw": "閃光攻擊 + 2",
+              "kr": "광선 공격 + 2",
+              "fr": "Assaut lumineux + 2",
+              "de": "Lichtangriff + 2",
+              "es": "Asalto luminoso + 2"
+            },
+            "offset": 14,
+            "castTime": 10
           }
         ]
       }
@@ -10556,6 +10958,32 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 912705,
+            "names": {
+              "en": "Sunlight Beam + 1",
+              "tw": "太陽光束 + 1",
+              "kr": "선 라이트 빔 + 1",
+              "fr": "Rayon du soleil + 1",
+              "de": "Sonnenstrahl + 1",
+              "es": "Rayo solar + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912706,
+            "names": {
+              "en": "Sunlight Beam + 2",
+              "tw": "太陽光束 + 2",
+              "kr": "선 라이트 빔 + 2",
+              "fr": "Rayon du soleil + 2",
+              "de": "Sonnenstrahl + 2",
+              "es": "Rayo solar + 2"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -10573,12 +11001,12 @@
           {
             "id": 505790,
             "names": {
-              "en": "Fatal Barrage",
-              "tw": "致命火力",
-              "kr": "치명적 사격",
-              "fr": "Barrage fatal",
-              "de": "Tödliches Sperrfeuer",
-              "es": "Ráfaga mortal"
+              "en": "Fatal Barrage + 2",
+              "tw": "致命火力 + 2",
+              "kr": "치명적 사격 + 2",
+              "fr": "Barrage fatal + 2",
+              "de": "Tödliches Sperrfeuer + 2",
+              "es": "Ráfaga mortal + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -10750,6 +11178,27 @@
               "fr": "Couteau funéraire + 1",
               "de": "Begräbnismesser + 1",
               "es": "Cuchillo funerario + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100022705,
+        "names": {
+          "en": null
+        },
+        "abilities": [
+          {
+            "id": 223130,
+            "names": {
+              "en": "Funeral Knife",
+              "tw": "葬禮之刃",
+              "kr": "장례의 나이프",
+              "fr": "Couteau funéraire",
+              "de": "Begräbnismesser",
+              "es": "Cuchillo funerario"
             },
             "offset": 14,
             "castTime": 40

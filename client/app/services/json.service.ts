@@ -234,6 +234,9 @@ export class JsonService {
 
     this.updateOffset(unitId, id, ability);
     this.checkEffects(unitId, id, ability, dataId, level);
+
+    if (dataId === 912511 || dataId === 912511)
+      console.log(ability)
   }
 
   private checkEffects(unitId, id, ability, dataId, level = 0) {
@@ -255,7 +258,7 @@ export class JsonService {
         for(let i = 1; i <= find.combo; i++) {
           this.ffbeChainUnits[unitId].abilities[id].base += find.damage;
           find.index = index;
-          find.hitDamage = ability.attack_damage[index];
+          find.hitDamage = ability.attack_damage[index] ? ability.attack_damage[index] : ability.attack_damage[0];
           damageEffects.push(find);
         };
       }
@@ -291,6 +294,10 @@ export class JsonService {
     find = this.findEffect(rawEffect, [99]);
     if (find) {
       for (let i = 2; i < find.effect.length; i++) {
+
+        if (find.effect[i] === 912511 || find.effect[i] === 912510)
+          console.log("FIND : " + find.effect[i])
+
         if (find.effect[i] !== 2) {
           this.addSkill(unitId, this.skills[find.effect[i]], find.effect[i], level);
         }
@@ -497,7 +504,7 @@ export class JsonService {
       return find;
     }
 
-    find = this.findEffect(rawEffect, [70]);
+    find = this.findEffect(rawEffect, [70, 105]);
     if (find) {
       find.damage = find.effect[2];
       this.ffbeChainUnits[unitId].abilities[id].ignore = Math.abs(find.effect[3]);
@@ -698,25 +705,27 @@ export class JsonService {
   private addSummon(summon, summonId) {
     let id = this.ffbeChainUnits.length;
 
-    this.ffbeChainUnits[id] = {
-      dataId: Number(summonId),
-      names: {
-        en: summon.names[0]
-      },
-      abilities: []
-    };
+    if (summon.names) {
+      this.ffbeChainUnits[id] = {
+        dataId: Number(summonId),
+        names: {
+          en: summon.names[0]
+        },
+        abilities: []
+      };
 
-    ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
-      if (summon.names[index + 1] !== this.ffbeChainUnits[id].names.en) {
-        this.ffbeChainUnits[id].names[lang] = summon.names[index + 1];
-      }
-    });
+      ['tw', 'kr', 'fr', 'de', 'es'].forEach((lang, index) => {
+        if (summon.names[index + 1] !== this.ffbeChainUnits[id].names.en) {
+          this.ffbeChainUnits[id].names[lang] = summon.names[index + 1];
+        }
+      });
 
-    Object.keys(summon.skill).forEach(skillId => {
-      this.addSummonSkill(id, summon.skill[skillId], skillId);
-    });
+      Object.keys(summon.skill).forEach(skillId => {
+        this.addSummonSkill(id, summon.skill[skillId], skillId);
+      });
 
-    this.isCollapsed.push(true);
+      this.isCollapsed.push(true);
+    }
   }
 
   private addSummonSkill(summonId, ability, dataId) {

@@ -8757,8 +8757,8 @@ export const UNITS: any[] = [
         },
         framesList: [84, 8, 8, 8, 8, 8, 8, 8],
         hitDamage: [12, 12, 12, 12, 12, 12, 12, 16],
-        castTime: 4,
-        offset: 66,
+        "castTime": 4,
+        "offset": 14,
         base: 210,
         ignore: 50
       },
@@ -9053,7 +9053,7 @@ export const UNITS: any[] = [
         },
         framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-        castTime: 20,
+        castTime: 39,
         offset: 14,
         base: 300,
         damage: "magic",
@@ -9074,7 +9074,7 @@ export const UNITS: any[] = [
         },
         framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
         hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-        castTime: 20,
+        castTime: 39,
         offset: 14,
         base: 900,
         damage: "magic",
@@ -10315,8 +10315,78 @@ export const UNITS: any[] = [
           28
         ],
         "offset": 8
+      },
+      {
+        "id": 1508001,
+        "names": {
+          "en": "Mirror of Equity - Concentration II",
+          "tw": "明鏡·一到 II",
+          "kr": "잔잔한 거울·일도 II",
+          "fr": "Sérénité - Concentration II",
+          "de": "Kata - Konzentration II",
+          "es": "Tranquilidad - Concentración II"
+        },
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 707726,
+        "names": {
+          "en": "Obliterating Mirror of Equity + 2",
+          "tw": "絕·明鏡 + 2",
+          "kr": "절·잔잔한 거울 + 2",
+          "fr": "Sérénité primordiale + 2",
+          "de": "Vernichtende Kata + 2",
+          "es": "Tranquilidad fulminante + 2"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 707732,
+        "names": {
+          "en": "Blade Flash - Awakened + 2",
+          "tw": "紫電一閃·醒 + 2",
+          "kr": "자전일섬·각성 + 2",
+          "fr": "Flash pourpre - Éveillé + 2",
+          "de": "Flimmerklinge - Erwacht + 2",
+          "es": "Rayo púrpura - Haz + 2"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 110
+          }
+        ],
+        "framesList": [
+          30
+        ]
       }
-    ]
+    ],
+    maxChainCap: 6
   },
   {
     id: 96,
@@ -12825,6 +12895,31 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        "id": 707746,
+        "names": {
+          "en": "Sacred Burst + 2",
+          "tw": "神聖爆發 + 2",
+          "kr": "거룩한 폭발 + 2",
+          "fr": "Éclat sacré + 2",
+          "de": "Heilige Salve + 2",
+          "es": "Estallido sacro + 2"
+        },
+        "damage": "magic",
+        "base": 820,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
         id: 5,
         names: {
           en: "Judgment Cross",
@@ -12853,7 +12948,18 @@ export const UNITS: any[] = [
         dualable: false
       }
     ],
-    multipleBlack: 2
+    multipleBlack: 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          1,
+          2,
+          221060,
+          707746
+        ]
+      }
+    ]
   },
   {
     id: 111,
@@ -13804,6 +13910,110 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707750,
+        "names": {
+          "en": "Flame Assault + 2",
+          "tw": "灼炎攻擊 + 2",
+          "kr": "화염 공격 + 2",
+          "fr": "Assaut enflammé + 2",
+          "de": "Flammenangriff + 2",
+          "es": "Asalto flamígero + 2"
+        },
+        "base": 100,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 707752,
+        "names": {
+          "en": "Ice Assault + 2",
+          "tw": "寒冰攻擊 + 2",
+          "kr": "빙설 공격 + 2",
+          "fr": "Assaut glacé + 2",
+          "de": "Eisangriff + 2",
+          "es": "Asalto gélido + 2"
+        },
+        "base": 100,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 707754,
+        "names": {
+          "en": "Electro Assault + 2",
+          "tw": "雷電攻擊 + 2",
+          "kr": "전격 공격 + 2",
+          "fr": "Assaut électrique + 2",
+          "de": "Elektroangriff + 2",
+          "es": "Asalto eléctrico + 2"
+        },
+        "base": 100,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 707756,
+        "names": {
+          "en": "Light Assault + 2",
+          "tw": "閃光攻擊 + 2",
+          "kr": "광선 공격 + 2",
+          "fr": "Assaut lumineux + 2",
+          "de": "Lichtangriff + 2",
+          "es": "Asalto luminoso + 2"
+        },
+        "base": 100,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 90
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10
+        ]
+      },
+      {
         "id": 100012007,
         "names": {
           "en": "AL Type Light Particle Beam",
@@ -13822,6 +14032,30 @@ export const UNITS: any[] = [
         "ignore": 50,
         "framesList": [
           150
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          227992,
+          227993,
+          508263,
+          707750,
+          707752,
+          707754,
+          707756
         ]
       }
     ]
@@ -42498,6 +42732,26 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 800049,
+        "names": {
+          "en": "Glowing Ray II",
+          "tw": "增長射線 II",
+          "kr": "타오르는 불빛 II",
+          "fr": "Rayon éclatant II",
+          "de": "Leuchtender Strahl II",
+          "es": "Rayo cegador II"
+        },
+        "base": 240,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          60, 68, 76
+        ]
+      },
+      {
         "id": 100015006,
         "names": {
           "en": "Strength of the Heart",
@@ -45327,6 +45581,277 @@ export const UNITS: any[] = [
           912571,
           912572,
           912570
+        ]
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "names": {
+      "en": "Rivera",
+      "tw": "莉薇拉",
+      "kr": "리베라"
+    },
+    "abilities": [
+      {
+        "id": 912506,
+        "names": {
+          "en": "Overture",
+          "tw": "序曲",
+          "kr": "서곡",
+          "fr": "Ouverture",
+          "es": "Obertura"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [20, 40, 40],
+        "castTime": 68,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          93, 5, 5
+        ]
+      },
+      {
+        "id": 912511,
+        "names": {
+          "en": "Sound Amplifier",
+          "tw": "聲音增幅器",
+          "kr": "음향 증폭",
+          "fr": "Amplificateur",
+          "de": "Soundverstärker",
+          "es": "Amplificador de sonido"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [8,  8,  8,  8,  9,  9,  9,  10,  10,  10,  11],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912520,
+        "names": {
+          "en": "Watchful Ensemble",
+          "tw": "纖細合奏",
+          "kr": "섬세한 앙상블",
+          "fr": "Ensemble attentif",
+          "de": "Wachsames Ensemble",
+          "es": "Grupo atento"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 10210,
+        "names": {
+          "en": "Holy",
+          "tw": "神聖",
+          "kr": "홀리",
+          "fr": "Sidéral",
+          "de": "Sanctus",
+          "es": "Sanctus"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "id": 912526,
+        "names": {
+          "en": "Impish Nocturne",
+          "tw": "調皮夜曲",
+          "kr": "장난스러운 녹턴",
+          "fr": "Nocturne espiègle",
+          "de": "Teuflische Nokturne",
+          "es": "Travieso nocturno"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912529,
+        "names": {
+          "en": "Acoustic Echo",
+          "tw": "音響回聲",
+          "kr": "음향 반향",
+          "fr": "Écho acoustique",
+          "de": "Akustisches Echo",
+          "es": "Eco"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912532,
+        "names": {
+          "en": "Rhapsody of the Wild",
+          "tw": "野性狂想曲",
+          "kr": "야성의 랩소디",
+          "fr": "Rapsodie de la faune",
+          "de": "Rhapsodie der Wildnis",
+          "es": "Rapsodia salvaje"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912536,
+        "names": {
+          "en": "Funeral March",
+          "tw": "葬送進行曲",
+          "kr": "장송 행진곡",
+          "fr": "Marche funéraire",
+          "de": "Trauermarsch",
+          "es": "Marcha fúnebre"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912540,
+        "names": {
+          "en": "Chorus",
+          "tw": "和聲",
+          "kr": "코러스",
+          "fr": "Chœur",
+          "de": "Refrain",
+          "es": "Estribillo"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912558,
+        "names": {
+          "en": "Raise the Tempo",
+          "tw": "加快節奏",
+          "kr": "템포 업",
+          "fr": "Tempo accéléré",
+          "de": "Tempo hoch!",
+          "es": "Tempo acelerado"
+        },
+        "damage": "magic",
+        "base": 460,
+        "hitDamage": [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": null,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          912506,
+          912511,
+          912520,
+          912526,
+          912529,
+          912532,
+          912536,
+          912540,
+          912558
         ]
       }
     ]
