@@ -10890,6 +10890,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "castTime": 10,
         "elements": [
           "lightning"
         ],
@@ -10903,7 +10904,7 @@ export const UNITS: any[] = [
         "framesList": [
           10
         ],
-        "offset": 8
+        "offset": 14,
       },
       {
         "id": 912723,
