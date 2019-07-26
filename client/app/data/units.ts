@@ -10808,14 +10808,37 @@ export const UNITS: any[] = [
         dualable: false
       },
       {
+        "id": 707734,
+        "names": {
+          "en": "Quick Rebel Intention + 2",
+          "tw": "迅・反叛之意 + 2",
+          "kr": "신속·반역의 결심 + 2",
+          "fr": "Rébellion instantanée + 2",
+          "de": "Schneller Rebellenplan + 2",
+          "es": "Rebeldía veloz + 2"
+        },
+        "damage": "magic",
+        "base": 850,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          167
+        ]
+      },
+      {
         id: 219320,
         names: {
-          en: "Quick Final Thunder (Max)",
-          tw: "迅・終焉轟雷 (Max)",
-          kr: "신속·종말의 뇌락 (Max)",
-          fr: "Éclair final rapide (Max)",
-          de: "Schneller letzter Donner (Max)",
-          es: "Trueno final veloz (Max)"
+          en: "Quick Final Thunder",
+          tw: "迅・終焉轟雷",
+          kr: "신속·종말의 뇌락",
+          fr: "Éclair final rapide",
+          de: "Schneller letzter Donner",
+          es: "Trueno final veloz"
         },
         framesList: [150],
         castTime: 40,
@@ -10826,6 +10849,31 @@ export const UNITS: any[] = [
           "lightning"
         ],
         dualable: false
+      },
+      {
+        "id": 707736,
+        "names": {
+          "en": "Quick Final Thunder + 2",
+          "tw": "迅・終焉轟雷 + 2",
+          "kr": "신속·종말의 뇌락 + 2",
+          "fr": "Éclair final rapide + 2",
+          "de": "Schneller letzter Donner + 2",
+          "es": "Trueno final veloz + 2"
+        },
+        "damage": "magic",
+        "base": 2500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
       },
       {
         "id": 219360,
@@ -10858,6 +10906,130 @@ export const UNITS: any[] = [
         "offset": 8
       },
       {
+        "id": 912723,
+        "names": {
+          "en": "Quick Shock Blade + 2",
+          "tw": "迅・雷之刃 + 2",
+          "kr": "신속·번개의 검 + 2",
+          "fr": "Lame électrique rapide + 2",
+          "de": "Schnelle Schockklinge + 2",
+          "es": "Hoja de choque veloz + 2"
+        },
+        "damage": "magic",
+        "base": 720,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912727,
+        "names": {
+          "en": "Quick Dark Blade + 2",
+          "tw": "迅・暗之刃 + 2",
+          "kr": "신속·어둠의 검 + 2",
+          "fr": "Lame obscure rapide + 2",
+          "de": "Schnelle Dunkelklinge + 2",
+          "es": "Hoja oscura veloz + 2"
+        },
+        "damage": "magic",
+        "base": 720,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912725,
+        "names": {
+          "en": "Quick Light Blade + 2",
+          "tw": "迅・光之刃 + 2",
+          "kr": "신속·빛의 검 + 2",
+          "fr": "Lame lumineuse rapide + 2",
+          "de": "Schnelle Lichtklinge + 2",
+          "es": "Hoz de luz veloz + 2"
+        },
+        "damage": "magic",
+        "base": 720,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 1912725,
+        "names": {
+          "en": "Blossoming Thunder II",
+          "tw": "櫻雷 II",
+          "kr": "벚꽃 우레 II",
+          "fr": "Foudre florissante II",
+          "de": "Blütendonner II",
+          "es": "Rayo en flor II"
+        },
+        "damage": "magic",
+        "base": 160,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
         "id": 100012407,
         "names": {
           "en": "Eternal Ray",
@@ -10881,22 +11053,30 @@ export const UNITS: any[] = [
     ],
     multiCasts: [
       {
-        count: 2,
+        count: 3,
         abilities: [
-          219320,
           219330,
           219340,
           219350,
+          219490,
+          707734,
+          219320,
+          707736,
           219360,
-          219490
+          912723,
+          912727,
+          912725,
+          1912725
         ]
       },
       {
         "count": 5,
         "abilities": [
-          219320,
           219330,
-          219360
+          219320,
+          707736,
+          219360,
+          912723
         ]
       }
     ]
@@ -42748,7 +42928,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "framesList": [
-          60, 68, 76
+          60, 8, 8
         ]
       },
       {
