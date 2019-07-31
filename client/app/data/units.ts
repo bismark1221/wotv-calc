@@ -46036,5 +46036,703 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 272,
+    "names": {
+      "en": "Neverending Hope",
+      "tw": "未來希望霍普",
+      "kr": "미래를 향하는 호프",
+      "fr": "Hope, espoir infini",
+      "de": "Unbeirrbarer Hope",
+      "es": "Hope eterno"
+    },
+    "abilities": [
+      {
+        "id": 230418,
+        "names": {
+          "en": "Purification",
+          "tw": "易如反掌",
+          "kr": "개수일촉",
+          "de": "Purifikationsfeuer",
+          "es": "Ráfaga"
+        },
+        "damage": "magic",
+        "base": 260,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          45, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230419,
+        "names": {
+          "en": "Earthquake",
+          "tw": "地震",
+          "kr": "어스퀘이크",
+          "fr": "Chocs sismiques",
+          "de": "Erdbeben",
+          "es": "Terremoto"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "id": 230421,
+        "names": {
+          "en": "Retributive Blast",
+          "tw": "天罰",
+          "kr": "천벌",
+          "fr": "Châtiment céleste",
+          "de": "Allgütige Sanktion",
+          "es": "Castigo divino"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509532,
+        "names": {
+          "en": "Last Resort",
+          "tw": "最後樂園",
+          "kr": "라스트 리조트",
+          "fr": "Dernier atout",
+          "de": "Bombenhagel",
+          "es": "Último recurso"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 213001107,
+        "names": {
+          "en": "Divine Judgment",
+          "tw": "神聖審判",
+          "kr": "성스러운 심판",
+          "fr": "Jugement divin",
+          "de": "Jüngstes Gericht",
+          "es": "Veredicto final"
+        },
+        "damage": "magic",
+        "base": 1525,
+        "hitDamage": [
+          10, 10, 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 47
+        ],
+        "elements": [
+          "fire",
+          "ice",
+          "lightning",
+          "water",
+          "wind",
+          "earth",
+          "light",
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          },
+          {
+            "type": "lightning",
+            "value": 100
+          },
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "wind",
+            "value": 100
+          },
+          {
+            "type": "earth",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          },
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          145, 44, 70, 20, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 30, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 148
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230418,
+          230419,
+          230421,
+          509532
+        ]
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "names": {
+      "en": "Radiant Lightning",
+      "tw": "輝煌閃耀雷光",
+      "kr": "섬광의 라이트닝",
+      "fr": "Lightning, éclair éblouissant",
+      "de": "Strahlende Lightning",
+      "es": "Lightning deslumbrante"
+    },
+    "abilities": [
+      {
+        "id": 230380,
+        "names": {
+          "en": "Flourish of Steel",
+          "tw": "連閃",
+          "kr": "연섬",
+          "fr": "Tornade d'acier",
+          "de": "Klingenreigen",
+          "es": "Lluvia de acero"
+        },
+        "base": 400,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 18,
+        "offset": 14,
+        "framesList": [
+          2, 6, 6, 6
+        ]
+      },
+      {
+        "id": 20220,
+        "names": {
+          "en": "Thundaga",
+          "tw": "大雷電",
+          "kr": "선더가",
+          "fr": "Foudre X",
+          "de": "Blitzga",
+          "es": "Electro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 509508,
+        "names": {
+          "en": "Sparkstrike II",
+          "tw": "電火猛攻II",
+          "kr": "스파크 블로우II",
+          "fr": "Électro-impact II",
+          "de": "Elektroschlag II",
+          "es": "Golpe fulmíneo II"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 509510,
+        "names": {
+          "en": "Sparkstrike II+",
+          "tw": "電火猛攻II+",
+          "kr": "스파크 블로우II+",
+          "fr": "Électro-impact II +",
+          "de": "Elektroschlag II+",
+          "es": "Golpe fulmíneo II+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 230382,
+        "names": {
+          "en": "Seismic Strike",
+          "tw": "烈破",
+          "kr": "열파",
+          "fr": "Spirale sismique",
+          "de": "Blütenstreich",
+          "es": "Sablazo circular"
+        },
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "offset": 14,
+        "framesList": [
+          24,
+          66
+        ]
+      },
+      {
+        "id": 509500,
+        "names": {
+          "en": "Flamestrike II",
+          "tw": "火舌猛攻II",
+          "kr": "플레임 블로우II",
+          "fr": "Pyro-impact II",
+          "de": "Feuerschlag II",
+          "es": "Golpe ardiente II"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 509502,
+        "names": {
+          "en": "Flamestrike II+",
+          "tw": "火舌猛攻II+",
+          "kr": "플레임 블로우II+",
+          "fr": "Pyro-impact II +",
+          "de": "Feuerschlag II+",
+          "es": "Golpe ardiente II+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 509504,
+        "names": {
+          "en": "Froststrike II",
+          "tw": "冰霜猛攻II",
+          "kr": "프로스트 블로우II",
+          "fr": "Cryo-impact II",
+          "de": "Frostschlag II",
+          "es": "Golpe gélido II"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 509506,
+        "names": {
+          "en": "Froststrike II+",
+          "tw": "冰霜猛攻II+",
+          "kr": "프로스트 블로우II+",
+          "fr": "Cryo-impact II +",
+          "de": "Frostschlag II+",
+          "es": "Golpe gélido II+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 509512,
+        "names": {
+          "en": "Aquastrike II",
+          "tw": "波濤猛攻II",
+          "kr": "웨이브 블로우II",
+          "fr": "Hydro-impact II",
+          "de": "Hydroschlag II",
+          "es": "Golpe acuoso II"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 509514,
+        "names": {
+          "en": "Aquastrike II+",
+          "tw": "波濤猛攻II+",
+          "kr": "웨이브 블로우II+",
+          "fr": "Hydro-impact II +",
+          "de": "Hydroschlag II+",
+          "es": "Golpe acuoso II+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "framesList": [
+          32
+        ]
+      },
+      {
+        "id": 230383,
+        "names": {
+          "en": "Crushing Blow+",
+          "tw": "絕影·改",
+          "kr": "개량형 절영",
+          "fr": "Charge éclair +",
+          "de": "Blütenspleißer+",
+          "es": "Arremetida+"
+        },
+        "base": 250,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230381,
+        "names": {
+          "en": "Skyward Swing",
+          "tw": "天臨",
+          "kr": "천림",
+          "fr": "Ascension",
+          "de": "Blütenrausch",
+          "es": "Torbellino"
+        },
+        "base": 450,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 230384,
+        "names": {
+          "en": "Stormblade",
+          "tw": "轟劍",
+          "kr": "굉검",
+          "fr": "Lames grondantes",
+          "de": "Donnerkeil",
+          "es": "Sablazo"
+        },
+        "base": 275,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          14
+        ]
+      },
+      {
+        "id": 230385,
+        "names": {
+          "en": "Thunderfall+",
+          "tw": "天鳴萬雷·改",
+          "kr": "개량형 하늘을 울리는 천둥소리",
+          "fr": "Foudres divines +",
+          "de": "Donnerfall+",
+          "es": "Vórtice+"
+        },
+        "base": 270,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230386,
+        "names": {
+          "en": "Razor Gale",
+          "tw": "真空破",
+          "kr": "진공파",
+          "fr": "Onde de choc",
+          "de": "Klingensturm",
+          "es": "Onda de vacío"
+        },
+        "base": 500,
+        "hitDamage": [
+          1.4, 1.4, 1.4, 1.4, 1.4, 1.5, 1.5, 90
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 120
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 507240,
+        "names": {
+          "en": "Lightning Strike",
+          "tw": "雷光斬",
+          "kr": "뇌광참",
+          "fr": "Lames foudroyantes",
+          "de": "Donnerspalter",
+          "es": "Corte fulmíneo"
+        },
+        "base": 1100,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "id": 230387,
+        "names": {
+          "en": "Relentless Assault",
+          "tw": "猛襲強攻",
+          "kr": "러쉬 어설트",
+          "fr": "Assaut furieux",
+          "de": "Blitzschlag",
+          "es": "Ataque implacable"
+        },
+        "base": 300,
+        "hitDamage": [
+          2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.5000000000000004, 2.5000000000000004, 83.33333333333331
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509520,
+        "names": {
+          "en": "Army of One",
+          "tw": "王牌驅散",
+          "kr": "신 드라이브",
+          "fr": "Combo éclair",
+          "de": "Raserei",
+          "es": "Andanada"
+        },
+        "base": 800,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 213001007,
+        "names": {
+          "en": "Zantetsuken",
+          "tw": "斬鐵劍",
+          "kr": "참철검",
+          "es": "Sable justiciero (FFXIII)"
+        },
+        "base": 1085,
+        "hitDamage": [
+          3, 3, 4, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 120
+          }
+        ],
+        "framesList": [
+          48, 14, 29, 8, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230380,
+          509508,
+          509510,
+          230382,
+          509500,
+          509502,
+          509504,
+          509506,
+          509512,
+          509514,
+          230383,
+          230381,
+          230384,
+          230385,
+          230386,
+          507240,
+          230387,
+          509520
+        ]
+      }
+    ]
   }
 ];

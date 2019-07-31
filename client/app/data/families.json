@@ -639,6 +639,45 @@
         ]
       },
       {
+        "id": 213001005,
+        "names": {
+          "en": "Radiant Lightning",
+          "tw": "輝煌閃耀雷光",
+          "kr": "섬광의 라이트닝",
+          "fr": "Lightning, éclair éblouissant",
+          "de": "Strahlende Lightning",
+          "es": "Lightning deslumbrante"
+        },
+        "abilities": [
+          {
+            "id": 230381,
+            "names": {
+              "en": "Skyward Swing",
+              "tw": "天臨",
+              "kr": "천림",
+              "fr": "Ascension",
+              "de": "Blütenrausch",
+              "es": "Torbellino"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509520,
+            "names": {
+              "en": "Army of One",
+              "tw": "王牌驅散",
+              "kr": "신 드라이브",
+              "fr": "Combo éclair",
+              "de": "Raserei",
+              "es": "Andanada"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 304000105,
         "names": {
           "en": "Randi",
@@ -3313,6 +3352,45 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 950021,
+            "names": {
+              "en": "Mirror of Equity - Concentration",
+              "tw": "明鏡·一到",
+              "kr": "잔잔한 거울·일도",
+              "fr": "Sérénité - Concentration",
+              "de": "Kata - Konzentration",
+              "es": "Tranquilidad - Concentración"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950022,
+            "names": {
+              "en": "Mirror of Equity - Concentration I",
+              "tw": "明鏡·一到 I",
+              "kr": "잔잔한 거울·일도 I",
+              "fr": "Sérénité - Concentration I",
+              "de": "Kata - Konzentration I",
+              "es": "Tranquilidad - Concentración I"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 800035,
+            "names": {
+              "en": "Mirror of Equity - Concentration II",
+              "tw": "明鏡·一到 II",
+              "kr": "잔잔한 거울·일도 II",
+              "fr": "Sérénité - Concentration II",
+              "de": "Kata - Konzentration II",
+              "es": "Tranquilidad - Concentración II"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -3937,6 +4015,97 @@
               "fr": "Ouragan infernal",
               "de": "Höllenwind",
               "es": "Tormenta infernal"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 213001005,
+        "names": {
+          "en": "Radiant Lightning",
+          "tw": "輝煌閃耀雷光",
+          "kr": "섬광의 라이트닝",
+          "fr": "Lightning, éclair éblouissant",
+          "de": "Strahlende Lightning",
+          "es": "Lightning deslumbrante"
+        },
+        "abilities": [
+          {
+            "id": 230385,
+            "names": {
+              "en": "Thunderfall+",
+              "tw": "天鳴萬雷·改",
+              "kr": "개량형 하늘을 울리는 천둥소리",
+              "fr": "Foudres divines +",
+              "de": "Donnerfall+",
+              "es": "Vórtice+"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230386,
+            "names": {
+              "en": "Razor Gale",
+              "tw": "真空破",
+              "kr": "진공파",
+              "fr": "Onde de choc",
+              "de": "Klingensturm",
+              "es": "Onda de vacío"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230387,
+            "names": {
+              "en": "Relentless Assault",
+              "tw": "猛襲強攻",
+              "kr": "러쉬 어설트",
+              "fr": "Assaut furieux",
+              "de": "Blitzschlag",
+              "es": "Ataque implacable"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 213001105,
+        "names": {
+          "en": "Neverending Hope",
+          "tw": "未來希望霍普",
+          "kr": "미래를 향하는 호프",
+          "fr": "Hope, espoir infini",
+          "de": "Unbeirrbarer Hope",
+          "es": "Hope eterno"
+        },
+        "abilities": [
+          {
+            "id": 230421,
+            "names": {
+              "en": "Retributive Blast",
+              "tw": "天罰",
+              "kr": "천벌",
+              "fr": "Châtiment céleste",
+              "de": "Allgütige Sanktion",
+              "es": "Castigo divino"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509532,
+            "names": {
+              "en": "Last Resort",
+              "tw": "最後樂園",
+              "kr": "라스트 리조트",
+              "fr": "Dernier atout",
+              "de": "Bombenhagel",
+              "es": "Último recurso"
             },
             "offset": 14,
             "castTime": 40
@@ -4626,6 +4795,32 @@
               "fr": "Suiton ultime - Glace écrasante",
               "de": "Ultimatives Suiton – Erdrückendes Eis",
               "es": "Suiton definitivo - Hielo aplastante"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 213001005,
+        "names": {
+          "en": "Radiant Lightning",
+          "tw": "輝煌閃耀雷光",
+          "kr": "섬광의 라이트닝",
+          "fr": "Lightning, éclair éblouissant",
+          "de": "Strahlende Lightning",
+          "es": "Lightning deslumbrante"
+        },
+        "abilities": [
+          {
+            "id": 230383,
+            "names": {
+              "en": "Crushing Blow+",
+              "tw": "絕影·改",
+              "kr": "개량형 절영",
+              "fr": "Charge éclair +",
+              "de": "Blütenspleißer+",
+              "es": "Arremetida+"
             },
             "offset": 14,
             "castTime": 38
@@ -11760,6 +11955,58 @@
     "family": "80-10-10-10-10-10-10-10-10-10-10-10-10-10-10-10",
     "units": [
       {
+        "id": 100012405,
+        "names": {
+          "en": "Blossom Sage Sakura",
+          "tw": "櫻雲賢者櫻",
+          "kr": "벚꽃의 현자 사쿠라",
+          "fr": "Sakura sage des fleurs",
+          "de": "Blütenmagierin Sakura",
+          "es": "Sakura sabia floreciente"
+        },
+        "abilities": [
+          {
+            "id": 950039,
+            "names": {
+              "en": "Blossoming Thunder",
+              "tw": "櫻雷",
+              "kr": "벚꽃 우레",
+              "fr": "Foudre florissante",
+              "de": "Blütendonner",
+              "es": "Rayo en flor"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950040,
+            "names": {
+              "en": "Blossoming Thunder I",
+              "tw": "櫻雷 I",
+              "kr": "벚꽃 우레 I",
+              "fr": "Foudre florissante I",
+              "de": "Blütendonner I",
+              "es": "Rayo en flor I"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509856,
+            "names": {
+              "en": "Blossoming Thunder",
+              "tw": "櫻雷",
+              "kr": "벚꽃 우레",
+              "fr": "Foudre florissante",
+              "de": "Blütendonner",
+              "es": "Rayo en flor"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100013805,
         "names": {
           "en": "Lila",
@@ -14170,6 +14417,32 @@
               "fr": "Séisme",
               "de": "Beben",
               "es": "Seísmo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 213001105,
+        "names": {
+          "en": "Neverending Hope",
+          "tw": "未來希望霍普",
+          "kr": "미래를 향하는 호프",
+          "fr": "Hope, espoir infini",
+          "de": "Unbeirrbarer Hope",
+          "es": "Hope eterno"
+        },
+        "abilities": [
+          {
+            "id": 230419,
+            "names": {
+              "en": "Earthquake",
+              "tw": "地震",
+              "kr": "어스퀘이크",
+              "fr": "Chocs sismiques",
+              "de": "Erdbeben",
+              "es": "Terremoto"
             },
             "offset": 14,
             "castTime": 40
