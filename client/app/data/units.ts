@@ -46350,8 +46350,7 @@ export const UNITS: any[] = [
         "castTime": 12,
         "offset": 14,
         "framesList": [
-          24,
-          66
+          24
         ]
       },
       {
