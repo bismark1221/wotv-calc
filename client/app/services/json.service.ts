@@ -13,6 +13,7 @@ export class JsonService {
   upgrades = {};
   materias = {};
   equipments = {};
+  latentSkills = {};
   minimumHit = 1;
   debuffElement = [
     'fire',
@@ -137,7 +138,7 @@ export class JsonService {
         if (unitIndex) {
           this.addSkill(unitIndex, this.skills[this.latentSkills[latentSkillId].skill_id], this.latentSkills[latentSkillId].skill_id);
         }
-      });
+      }); //console
     });
 
     Object.keys(this.summons).forEach(summonId => {
