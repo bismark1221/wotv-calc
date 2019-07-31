@@ -74,6 +74,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/materia.json').toPromise();
   }
 
+  private getLatentSkills() {
+    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/unit_latent_skills.json').toPromise();
+  }
+
   getJsons(): Promise<any[]> {
     return Promise.all([
       this.getUnits(),
@@ -82,7 +86,8 @@ export class JsonService {
       this.getSummons(),
       this.getUpgrades(),
       this.getEquipments(),
-      this.getMaterias()
+      this.getMaterias(),
+      this.getLatentSkills()
     ]).then(responses => {
       this.units = responses[0];
       this.skills = responses[1];
@@ -91,6 +96,7 @@ export class JsonService {
       this.upgrades = responses[4];
       this.equipments = responses[5];
       this.materias = responses[6];
+      this.latentSkills = responses[7];
 
       this.formatJsons();
 
@@ -121,6 +127,15 @@ export class JsonService {
         let unitIndex = this.getUnitIdFromDataId(unitId);
         if (unitIndex) {
           this.addSkill(unitIndex, this.skills[this.upgrades[upgradeId].skill_id_new], this.upgrades[upgradeId].skill_id_new, this.getUpgradeLevel(unitId, upgradeId));
+        }
+      });
+    });
+
+    Object.keys(this.latentSkills).forEach(latentSkillId => {
+      this.latentSkills[latentSkillId].units.forEach(unitId => {
+        let unitIndex = this.getUnitIdFromDataId(unitId);
+        if (unitIndex) {
+          this.addSkill(unitIndex, this.skills[this.latentSkills[latentSkillId].skill_id], this.latentSkills[latentSkillId].skill_id);
         }
       });
     });
@@ -234,9 +249,6 @@ export class JsonService {
 
     this.updateOffset(unitId, id, ability);
     this.checkEffects(unitId, id, ability, dataId, level);
-
-    if (dataId === 912511 || dataId === 912511)
-      console.log(ability)
   }
 
   private checkEffects(unitId, id, ability, dataId, level = 0) {
@@ -294,10 +306,6 @@ export class JsonService {
     find = this.findEffect(rawEffect, [99]);
     if (find) {
       for (let i = 2; i < find.effect.length; i++) {
-
-        if (find.effect[i] === 912511 || find.effect[i] === 912510)
-          console.log("FIND : " + find.effect[i])
-
         if (find.effect[i] !== 2) {
           this.addSkill(unitId, this.skills[find.effect[i]], find.effect[i], level);
         }
@@ -849,7 +857,12 @@ export class JsonService {
           }
 
           if (this.ffbeChainUnits[i].abilities[j].castTime === 0) {
-            this.ffbeChainUnits[i].abilities[j].castTime = 10;
+
+            if (this.ffbeChainUnits[i].abilities[j].magicType) {
+              this.ffbeChainUnits[i].abilities[j].castTime = 40;
+            } else {
+              this.ffbeChainUnits[i].abilities[j].castTime = 10;
+            }
           }
         }
       }
