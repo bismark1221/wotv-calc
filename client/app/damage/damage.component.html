@@ -26,6 +26,9 @@
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
+        <h2>Unit stats</h2>
+
+
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="rarity">Rarity</label>
@@ -36,15 +39,6 @@
           </select>
         </div>
 
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="level">Level</label>
-          </div>
-          <select class="custom-select" id="level" [(ngModel)]="unit.level" (ngModelChange)="onChangeLevel()">
-            <option *ngFor="let lvl of levels">{{ lvl }}</option>
-          </select>
-        </div>
 
 
         <div class="input-group mb-3">
@@ -102,6 +96,11 @@
         </div>
 
         <div *ngFor="let weapon of unit.damageWeapons; let i = index">
+
+
+          <h2>Weapon {{ i + 1 }}</h2>
+
+
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <label class="input-group-text" for="weapon{{i}}_atk">atk</label>
@@ -113,9 +112,8 @@
             <div class="input-group-prepend">
               <label class="input-group-text" for="weapon{{i}}_type">Type</label>
             </div>
-            <select class="form-control" id="weapon{{i}}_type" [(ngModel)]="unit.damageWeapons[i].type">
-              <option [ngValue]="AAA">AAA</option>
-              <option [ngValue]="BBB">BBB</option>
+            <select class="form-control" id="weapon{{i}}_type" [(ngModel)]="unit.damageWeapons[i].type" (ngModelChange)="onChangeWeapon(i)">
+              <option *ngFor="let weaponType of objectKeys(weaponTypes)" [ngValue]="weaponType">{{ weaponType }}</option>
             </select>
           </div>
 
@@ -134,30 +132,23 @@
           </div>
 
           <div>Elements</div>
-          <div class="btn-group mr-2" role="group" aria-label="First group">
-            <label class="btn btn-primary active">
-              <input type="checkbox" aria-label="Checkbox for following text input">AAA
-            </label>
-            <label class="btn btn-primary">
-              <input type="checkbox" aria-label="Checkbox for following text input">BBB
-            </label>
-            <label class="btn btn-primary">
-              <input type="checkbox" aria-label="Checkbox for following text input">CCC
+          <div class="btn-group mr-2" role="group">
+            <label class="btn btn-primary" *ngFor="let element of elements">
+              <input type="checkbox" (click)="onChangeWeaponElement(element.id, i);">{{ element.name }}
             </label>
           </div>
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
-        <div>
-          Killers
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <label class="input-group-text" for="killer_human">Human killer</label>
-            </div>
-            <input type="text" class="form-control" placeholder="killer_human" aria-label="killer_human" aria-describedby="killer_human">
-          </div>
-        </div>
+        <h2> Killers + Buffs + Break + Imperil (total passif + buff) </h2>
 
+        <div class="input-group mb-3" *ngFor="let race of races">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="weapon{{i}}_variance_min">{{ race }} killer</label>
+          </div>
+          <input type="text" class="form-control" placeholder="{{race}} killer passive" [(ngModel)]="unit.killers[race].passive">
+          <input type="text" class="form-control" placeholder="{{race}} killer buff" [(ngModel)]="unit.killers[race].buff">
+        </div>
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -166,38 +157,11 @@
           <input type="text" class="form-control" placeholder="buff_atk" aria-label="buff_atk" aria-describedby="buff_atk" [(ngModel)]="unit.buffs.atk">
         </div>
 
-
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="buff_atk">Buff MAG</label>
           </div>
           <input type="text" class="form-control" placeholder="buff_mag" aria-label="buff_mag" aria-describedby="buff_mag" [(ngModel)]="unit.buffs.mag">
-        </div>
-
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="buff_atk">Break DEF</label>
-          </div>
-          <input type="text" class="form-control" placeholder="break_def" aria-label="break_def" aria-describedby="break_def" [(ngModel)]="unit.breaks.def">
-        </div>
-
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="buff_atk">Break SPR</label>
-          </div>
-          <input type="text" class="form-control" placeholder="break_spr" aria-label="break_spr" aria-describedby="break_spr" [(ngModel)]="unit.breaks.spr">
-        </div>
-      </div>
-
-      <div *ngIf="unit.id !== 'unselect'">
-        <div>Imperils</div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="imperil_water">Water</label>
-          </div>
-          <input type="text" class="form-control" placeholder="imperil_water" aria-label="imperil_water" aria-describedby="imperil_water">
         </div>
       </div>
 
@@ -207,38 +171,45 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="buff_atk">Monster DEF</label>
           </div>
-          <input type="text" class="form-control" placeholder="monster_def" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="unit.stats.def">
+          <input type="text" class="form-control" placeholder="monster_def" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def">
         </div>
-
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="buff_atk">Monster SPR</label>
           </div>
-          <input type="text" class="form-control" placeholder="monster_spr" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="unit.stats.spr">
+          <input type="text" class="form-control" placeholder="monster_spr" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr">
         </div>
 
-
-        <div>Races</div>
-        <div class="btn-group mr-2" role="group" aria-label="First group">
-          <label class="btn btn-primary active">
-            <input type="checkbox" aria-label="Checkbox for following text input">AAA
-          </label>
-          <label class="btn btn-primary">
-            <input type="checkbox" aria-label="Checkbox for following text input">BBB
-          </label>
-          <label class="btn btn-primary">
-            <input type="checkbox" aria-label="Checkbox for following text input">CCC
-          </label>
-        </div>
-
-
-        <div>Resist Elem</div>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="resist_water">Water</label>
+            <label class="input-group-text" for="buff_atk">Break DEF</label>
           </div>
-          <input type="text" class="form-control" placeholder="resist_water" aria-label="resist_water" aria-describedby="resist_water">
+          <input type="text" class="form-control" placeholder="break_def" aria-label="break_def" aria-describedby="break_def" [(ngModel)]="unit.breaks.def">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="buff_atk">Break SPR</label>
+          </div>
+          <input type="text" class="form-control" placeholder="break_spr" aria-label="break_spr" aria-describedby="break_spr" [(ngModel)]="unit.breaks.spr">
+        </div>
+
+        <div>Races</div>
+
+        <div class="btn-group mr-2" role="group">
+          <label class="btn btn-primary" *ngFor="let race of races">
+            <input type="checkbox" (click)="onMonsterRace(race);">{{ race }}
+          </label>
+        </div>
+
+        <div>Resist Elem + Imperil</div>
+        <div class="input-group mb-3" *ngFor="let element of elements">
+          <div class="input-group-prepend">
+            <label class="input-group-text">{{ element.name }}</label>
+          </div>
+          <input type="text" class="form-control" placeholder="{{element.id}} resistance" [(ngModel)]="monster.resistances[element.id]">
+          <input type="text" class="form-control" placeholder="{{element.id}} imperil" [(ngModel)]="unit.imperils[element.id]">
         </div>
       </div>
     </div>

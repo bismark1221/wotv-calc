@@ -1,7 +1,4 @@
 import { Injectable } from '@angular/core';
-
-
-
 import { ELEMENTS } from '../data/elements';
 
 @Injectable()

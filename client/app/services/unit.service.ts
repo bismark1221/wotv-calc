@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 
-
-
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
@@ -20,13 +18,13 @@ export class UnitService {
   private oFxNcL: any;
   private oFyNcL: any;
   private levelsRarity: any = {
-    1: {min: 1, max: 15},
-    2: {min: 1, max: 30},
-    3: {min: 1, max: 40},
-    4: {min: 1, max: 60},
-    5: {min: 1, max: 80},
-    6: {min: 1, max: 100},
-    7: {min: 101, max: 120},
+    1: 15,
+    2: 30,
+    3: 40,
+    4: 60,
+    5: 80,
+    6: 100,
+    7: 120
   }
 
   constructor(private translateService: TranslateService) {}

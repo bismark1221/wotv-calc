@@ -17,7 +17,9 @@ import { UnitService } from '../services/unit.service';
 import { ChainService } from '../services/chain.service';
 import { FindBestService } from '../services/find-best.service';
 import { NavService } from '../services/nav.service';
-
+import { WeaponService } from '../services/weapon.service';
+import { ElementsService } from '../services/elements.service';
+import { RaceService } from '../services/race.service';
 
 @Component({
   selector: 'app-chaining',
@@ -31,11 +33,14 @@ export class DamageComponent implements OnInit {
   private units: Unit[];
   private monsters: Monster[];
 
+  objectKeys = Object.keys;
   unit: any = {};
   monster: any = {};
   createdUnits: any[] = [];
   multiAbilities: any = {};
-  levels: number[] = [];
+  weaponTypes: any = {};
+  races: string[] = [];
+  elements: any[] = [];
   abilityTypes: string[] = ['chain', 'finish'];
   observableUnits: Array<Select2OptionData> = [];
   select2Options: Select2.Options = {
@@ -56,6 +61,9 @@ export class DamageComponent implements OnInit {
     private translateService: TranslateService,
     private modalService: NgbModal,
     private navService: NavService,
+    private weaponService: WeaponService,
+    private elementsService: ElementsService,
+    private raceService: RaceService
   ) {
     this.getTranslation();
 
@@ -72,6 +80,10 @@ export class DamageComponent implements OnInit {
     this.onChangeUnit('unselect');
 
     this.getUnits();
+    this.getElements();
+    this.weaponTypes = this.weaponService.getWeaponTypes();
+    this.races = this.raceService.getRaces();
+    // console.log(this.races)
   }
 
   private getTranslation() {
@@ -81,6 +93,17 @@ export class DamageComponent implements OnInit {
 
     this.translateService.get('chain.label.my-units').subscribe((res: string) => {
       this.labels.myunits = res;
+    });
+  }
+
+  private getElements(): void {
+    let multiElements = this.elementsService.getElements();
+    multiElements.splice(0, 1);
+
+    multiElements.forEach(element => {
+      this.translateService.get('elements.' + element).subscribe((res: string) => {
+        this.elements.push({id: element, name: res});
+      });
     });
   }
 
@@ -221,7 +244,20 @@ export class DamageComponent implements OnInit {
 
     this.updateMultiplePossibleAbilities();
     this.unit.rarity = 7; ///@TODO GET MAX rarity
+    this.unit.damageWeapons[0].type = "noWeapon";
+    this.unit.killers = {};
+    this.unit.imperils = {};
+    this.races.forEach(race => {
+      this.unit.killers[race] = {
+        passive: 0,
+        buff: 0
+      }
+    });
+    this.elements.forEach(element => {
+      this.unit.imperils[element] = 0;
+    });
     this.onChangeRarity();
+    this.onChangeDual();
   }
 
   private updateMultiplePossibleAbilities() {
@@ -416,9 +452,9 @@ export class DamageComponent implements OnInit {
     if (this.unit.dual) {
       this.unit.damageWeapons[1] = {
         elements: [],
-        type: '',
-        varianceMin: 100,
-        varianceMax: 100,
+        type: "noWeapon",
+        varianceMin: this.weaponTypes["noWeapon"].varianceMin,
+        varianceMax: this.weaponTypes["noWeapon"].varianceMax,
         atk: 1
       };
     } else {
@@ -435,23 +471,18 @@ export class DamageComponent implements OnInit {
   }
 
   onChangeLevel() {
-    let statProgression = {
-      1: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
-      2: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
-      3: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
-      4: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
-      5: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
-      6: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100],
-      7: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]
-    };
-
-    this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.baseMin + (this.unit.dataStats[this.unit.rarity].atk.baseMax - this.unit.dataStats[this.unit.rarity].atk.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
-    this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity].mag.baseMin + (this.unit.dataStats[this.unit.rarity].mag.baseMax - this.unit.dataStats[this.unit.rarity].mag.baseMin) * statProgression[this.unit.rarity][this.unit.level - 101] / 100;
+    this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.baseMin + (this.unit.dataStats[this.unit.rarity].atk.baseMax - this.unit.dataStats[this.unit.rarity].atk.baseMin);
+    this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity].mag.baseMin + (this.unit.dataStats[this.unit.rarity].mag.baseMax - this.unit.dataStats[this.unit.rarity].mag.baseMin);
     this.unit.stats.atk.potValue = this.unit.stats.atk.maxPot ? this.unit.dataStats[this.unit.rarity].atk.pot : 0;
     this.unit.stats.mag.potValue = this.unit.stats.mag.maxPot ? this.unit.dataStats[this.unit.rarity].mag.pot : 0;
   }
 
   onChangeRarity() {
+    this.unit.stats = {
+      atk: {},
+      mag: {}
+    };
+
     console.log(this.unit.stats)
     console.log(this.unit.dataStats[this.unit.rarity])
     this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity].atk.baseMax;
@@ -461,10 +492,31 @@ export class DamageComponent implements OnInit {
     this.unit.stats.mag.potValue = this.unit.dataStats[this.unit.rarity].mag.pot;
     this.unit.stats.mag.maxPot = true;
 
-    let levelsByRarity = this.unitService.getLevelsByRarity(this.unit.rarity);
-    this.unit.level = levelsByRarity.max
-    this.levels = Array(levelsByRarity.max - levelsByRarity.min + 1).fill(0).map((_, idx) => levelsByRarity.min + idx);
+    this.unit.level = this.unitService.getLevelsByRarity(this.unit.rarity);
 
     this.onChangeLevel();
+  }
+
+  onChangeWeapon(index: number) {
+    this.unit.damageWeapons[index].varianceMin = this.weaponTypes[this.unit.damageWeapons[index].type].varianceMin;
+    this.unit.damageWeapons[index].varianceMax = this.weaponTypes[this.unit.damageWeapons[index].type].varianceMax;
+  }
+
+  onChangeWeaponElement(element: string, index: number) {
+    let indexElement = this.unit.damageWeapons[index].elements.indexOf(element, 0);
+    if (indexElement > -1) {
+      this.unit.damageWeapons[index].elements.splice(indexElement, 1);
+    } else {
+      this.unit.damageWeapons[index].elements.push(element);
+    }
+  }
+
+  onMonsterRace(race: string) {
+    let indexRace = this.monster.races.indexOf(race, 0);
+    if (indexRace > -1) {
+      this.monster.races.splice(indexRace, 1);
+    } else {
+      this.monster.races.push(race);
+    }
   }
 }

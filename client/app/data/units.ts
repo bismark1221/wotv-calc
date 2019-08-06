@@ -6,49 +6,6 @@ export const UNITS: any[] = [
       tw: "提達",
       kr: "프리오닐"
     },
-    "rarity": {
-      "min": 5,
-      "max": 7,
-      "value": 7
-    },
-    "dataStats": {
-      "5": {
-        "atk": {
-          "baseMin": 39,
-          "baseMax": 118,
-          "pot": 20
-        },
-        "mag": {
-          "baseMin": 31,
-          "baseMax": 93,
-          "pot": 20
-        }
-      },
-      "6": {
-        "atk": {
-          "baseMin": 51,
-          "baseMax": 154,
-          "pot": 30
-        },
-        "mag": {
-          "baseMin": 40,
-          "baseMax": 121,
-          "pot": 30
-        }
-      },
-      "7": {
-        "atk": {
-          "baseMin": 64,
-          "baseMax": 194,
-          "pot": 50
-        },
-        "mag": {
-          "baseMin": 52,
-          "baseMax": 157,
-          "pot": 50
-        }
-      }
-    },
     abilities: [
       {
         id: 1,
@@ -791,6 +748,49 @@ export const UNITS: any[] = [
     id: 7,
     names: {
       en: "2B"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7,
+      "value": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "baseMin": 39,
+          "baseMax": 118,
+          "pot": 20
+        },
+        "mag": {
+          "baseMin": 31,
+          "baseMax": 93,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "baseMin": 51,
+          "baseMax": 154,
+          "pot": 30
+        },
+        "mag": {
+          "baseMin": 40,
+          "baseMax": 121,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "baseMin": 64,
+          "baseMax": 194,
+          "pot": 50
+        },
+        "mag": {
+          "baseMin": 52,
+          "baseMax": 157,
+          "pot": 50
+        }
+      }
     },
     abilities: [
       {

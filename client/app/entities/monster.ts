@@ -11,7 +11,7 @@ export class Monster {
     spr: 1
   };
   races: any = [];
-  imperils: any = {
+  resistances: any = {
     'dark' : 0,
     'earth' : 0,
     'fire' : 0,
@@ -29,7 +29,7 @@ export class Monster {
 
     this.stats = monster.stats ? monster.stats : this.stats;
     this.races = monster.races ? monster.races : this.races;
-    this.imperils = monster.imperils ? monster.imperils : this.imperils;
+    this.resistances = monster.resistances ? monster.resistances : this.resistances;
   }
 
   getName(translateService: TranslateService): string {

@@ -45,6 +45,8 @@ import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
 import { MonsterService } from './services/monster.service';
+import { WeaponService } from './services/weapon.service';
+import { RaceService } from './services/race.service';
 
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AbsolutePipe } from './pipes/absolute.pipe';
@@ -111,7 +113,9 @@ export function createTranslateLoader(http: HttpClient) {
     FindBestService,
     NavService,
     JsonService,
-    MonsterService
+    MonsterService,
+    WeaponService,
+    RaceService,
   ],
   bootstrap: [
     AppComponent

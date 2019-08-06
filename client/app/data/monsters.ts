@@ -8,5 +8,23 @@ export const MONSTERS: any[] = [
       tw: "MonsterTW",
       kr: "MonsterKR"
     },
+    breaks: {
+      def: true,
+      spr: true
+    },
+    stats: {
+      def: {
+        breakable: 2000,
+        unbreakable: 500
+      },
+      spr: {
+        breakable: 5000,
+        unbreakable: 1000
+      },
+    },
+    race: [
+      "human",
+      "demon"
+    ]
   }
 ]
