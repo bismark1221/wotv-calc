@@ -21,7 +21,7 @@ export class Ability {
 
   framesList?: any[] = [0];
   elements?: string[] = [];
-  debuffs?: any[] = [];
+  imperils?: any[] = [];
   hitDamage?: any[] = [];
   range?: any = {
     min: 0,
@@ -41,7 +41,7 @@ export class Ability {
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
     this.dualable = typeof ability.dualable == 'boolean' ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
-    this.debuffs = ability.debuffs ? ability.debuffs : this.debuffs;
+    this.imperils = ability.imperils ? ability.imperils : this.imperils;
 
     if (ability.type) {
       this.type = ability.type;

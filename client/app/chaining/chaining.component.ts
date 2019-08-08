@@ -183,11 +183,11 @@ export class ChainingComponent implements OnInit {
           }
         }
 
-        if (!ability.debuffs) {
-          ability.debuffs = [];
+        if (!ability.imperils) {
+          ability.imperils = [];
           if (ability.debuff) {
-            Object.keys(ability.debuff).forEach(debuffIndex => {
-              ability.debuffs.push({type: debuffIndex, value: ability.debuff[debuffIndex]});
+            Object.keys(ability.debuff).forEach(imperilIndex => {
+              ability.imperils.push({type: imperilIndex, value: ability.debuff[imperilIndex]});
             });
           }
         }

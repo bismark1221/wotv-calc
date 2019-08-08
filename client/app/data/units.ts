@@ -89,7 +89,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 800,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 65
@@ -115,7 +115,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -196,7 +196,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 200,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -219,7 +219,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 260,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -491,7 +491,7 @@ export const UNITS: any[] = [
         offset: 36,
         base: 320,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 50
@@ -513,7 +513,7 @@ export const UNITS: any[] = [
         offset: 36,
         base: 370,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 75
@@ -537,7 +537,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 80
@@ -597,7 +597,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 300,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 50
@@ -643,7 +643,7 @@ export const UNITS: any[] = [
         "offset": 14,
         "base": 360,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -685,7 +685,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 65
@@ -757,37 +757,31 @@ export const UNITS: any[] = [
     "dataStats": {
       "5": {
         "atk": {
-          "baseMin": 39,
-          "baseMax": 118,
+          "base": 118,
           "pot": 20
         },
         "mag": {
-          "baseMin": 31,
-          "baseMax": 93,
+          "base": 93,
           "pot": 20
         }
       },
       "6": {
         "atk": {
-          "baseMin": 51,
-          "baseMax": 154,
+          "base": 154,
           "pot": 30
         },
         "mag": {
-          "baseMin": 40,
-          "baseMax": 121,
+          "base": 121,
           "pot": 30
         }
       },
       "7": {
         "atk": {
-          "baseMin": 64,
-          "baseMax": 194,
+          "base": 194,
           "pot": 50
         },
         "mag": {
-          "baseMin": 52,
-          "baseMax": 157,
+          "base": 157,
           "pot": 50
         }
       }
@@ -886,7 +880,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 14,
         base: 400,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 65
@@ -983,7 +977,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -1015,7 +1009,8 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14
+        "offset": 14,
+        "canDualSkill": false
       },
       {
         "id": 509316,
@@ -1285,7 +1280,7 @@ export const UNITS: any[] = [
         offset: 46,
         base: 560,
         ignore: 25,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 75,
@@ -1380,7 +1375,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 160,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -1403,7 +1398,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 200,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -1544,7 +1539,7 @@ export const UNITS: any[] = [
           "light",
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -1574,7 +1569,7 @@ export const UNITS: any[] = [
           "light",
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -1683,7 +1678,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -1715,7 +1710,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 275,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -1771,7 +1766,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -1802,7 +1797,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 760,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -1903,7 +1898,7 @@ export const UNITS: any[] = [
         offset: 22,
         base: 1000,
         damage: "hybrid",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -1946,7 +1941,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 1200,
         damage: "hybrid",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 75
@@ -2264,7 +2259,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 450,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -2378,7 +2373,7 @@ export const UNITS: any[] = [
         offset: 40,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -2498,7 +2493,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1600,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 100
@@ -2537,7 +2532,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -2605,7 +2600,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 65
@@ -2749,7 +2744,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -2933,7 +2928,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -2962,7 +2957,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -2991,7 +2986,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -3020,7 +3015,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -3069,7 +3064,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -3098,7 +3093,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 50
@@ -3162,7 +3157,7 @@ export const UNITS: any[] = [
         "hitDamage": [30, 30, 40],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -3559,8 +3554,8 @@ export const UNITS: any[] = [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "dualable": false,
-        "offset": 14,
-        "debuffs": [
+        "offset": 8,
+        "imperils": [
           {
             "type": "fire",
             "value": 104
@@ -3787,7 +3782,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -3817,7 +3812,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -3848,7 +3843,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 760,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -3876,7 +3871,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 900,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 60
@@ -4047,7 +4042,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -4595,7 +4590,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -4624,7 +4619,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -4653,7 +4648,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -4682,7 +4677,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -5125,7 +5120,7 @@ export const UNITS: any[] = [
         "base": 500,
         "ignore": 50,
         offset: 66,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 40
@@ -5240,7 +5235,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -5305,7 +5300,7 @@ export const UNITS: any[] = [
         offset: 26,
         base: 220,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -5381,7 +5376,7 @@ export const UNITS: any[] = [
         "offset": 26,
         "base": 325,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -5429,7 +5424,7 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 800,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -5472,7 +5467,7 @@ export const UNITS: any[] = [
         offset: 26,
         base: 200,
         ignore: 25,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -6153,7 +6148,7 @@ export const UNITS: any[] = [
         "framesList": [
           142
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 74
@@ -6281,7 +6276,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -6313,7 +6308,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -6564,7 +6559,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1500,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -6645,7 +6640,7 @@ export const UNITS: any[] = [
         elements : [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -6676,7 +6671,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -6750,7 +6745,7 @@ export const UNITS: any[] = [
         elements: [
           "dark"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 100
@@ -7324,7 +7319,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 80
@@ -7462,7 +7457,7 @@ export const UNITS: any[] = [
         castTime: 20,
         offset: 14,
         base: 350,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -7484,7 +7479,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 20,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -7512,7 +7507,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 74
@@ -8047,7 +8042,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 65
@@ -8076,7 +8071,7 @@ export const UNITS: any[] = [
         "elements": [
           "light"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 65
@@ -8105,7 +8100,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 65
@@ -8156,7 +8151,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 79
@@ -8198,7 +8193,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -8297,7 +8292,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 120
@@ -8359,7 +8354,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 104
@@ -8686,7 +8681,7 @@ export const UNITS: any[] = [
         offset: 66,
         base: 200,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -8708,7 +8703,7 @@ export const UNITS: any[] = [
         offset: 66,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 75
@@ -8726,7 +8721,7 @@ export const UNITS: any[] = [
           es: "Caída del dragón"
         },
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -8771,7 +8766,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 26,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 70
@@ -8797,7 +8792,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 10,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -8912,7 +8907,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 72
@@ -9034,7 +9029,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 65
@@ -9195,7 +9190,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 160,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -9264,7 +9259,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        imperils: [
           {
             "type": "fire",
             "value": 75
@@ -9308,7 +9303,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        imperils: [
           {
             "type": "lightning",
             "value": 75
@@ -9352,7 +9347,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        imperils: [
           {
             "type": "wind",
             "value": 75
@@ -9746,7 +9741,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -9870,7 +9865,7 @@ export const UNITS: any[] = [
         elements: [
           "ice"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -9923,7 +9918,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -9981,7 +9976,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -10136,7 +10131,7 @@ export const UNITS: any[] = [
         base: 200,
         damage: "magic",
         type: "finish",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50,
@@ -10163,7 +10158,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 75
@@ -10268,7 +10263,7 @@ export const UNITS: any[] = [
         framesList: [46, 6, 6, 6, 6, 6],
         hitDamage: [16, 17, 16, 17, 17, 17],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -10292,7 +10287,7 @@ export const UNITS: any[] = [
           6, 6, 7, 7, 8, 8, 8, 50
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -10485,7 +10480,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -10535,7 +10530,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -10565,7 +10560,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -10595,7 +10590,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -10625,7 +10620,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -10652,7 +10647,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -10687,7 +10682,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 90
@@ -10807,7 +10802,7 @@ export const UNITS: any[] = [
         elements: [
           "ice"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -10830,7 +10825,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -10867,7 +10862,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -10940,7 +10935,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -11014,7 +11009,7 @@ export const UNITS: any[] = [
         "castTime": 10,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 110
@@ -11118,7 +11113,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 60
@@ -11139,7 +11134,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 60
@@ -11160,7 +11155,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 60
@@ -11181,7 +11176,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 60
@@ -11273,7 +11268,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 32,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 110
@@ -11369,7 +11364,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -11395,7 +11390,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -11421,7 +11416,7 @@ export const UNITS: any[] = [
         elements: [
           "dark"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 50
@@ -11534,7 +11529,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -11566,7 +11561,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 80
@@ -11597,7 +11592,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 80
@@ -11628,7 +11623,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 80
@@ -11659,7 +11654,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -11780,7 +11775,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 30
@@ -11806,7 +11801,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -11923,7 +11918,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -12081,7 +12076,7 @@ export const UNITS: any[] = [
           es: "Tiro de ceniza"
         },
         castTime: 60,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -12102,7 +12097,7 @@ export const UNITS: any[] = [
           es: "Tiro de ceniza + 2"
         },
         castTime: 60,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 75
@@ -12163,7 +12158,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 20,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -12231,7 +12226,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 90
@@ -12334,7 +12329,7 @@ export const UNITS: any[] = [
           de: "Gravitationspulsator",
           es: "Gravitón"
         },
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 60
@@ -12359,7 +12354,7 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -12656,7 +12651,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -12679,7 +12674,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -13403,7 +13398,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -13430,7 +13425,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -13457,7 +13452,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -13484,7 +13479,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -13511,7 +13506,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -13753,7 +13748,7 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         damage: "magic",
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 75,
@@ -13891,7 +13886,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -13921,7 +13916,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -13952,7 +13947,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -13984,7 +13979,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 25,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -14016,7 +14011,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 25,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 120
@@ -14146,7 +14141,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 20,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -14170,7 +14165,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 20,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 65
@@ -14193,7 +14188,7 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 50
@@ -14216,7 +14211,7 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 65
@@ -14239,7 +14234,7 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 74,
@@ -14314,7 +14309,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -14353,7 +14348,7 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 12, 12, 12, 16
         ],
         castTime: 14,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 60
@@ -14589,7 +14584,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -14612,7 +14607,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -14635,7 +14630,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -14658,7 +14653,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -14745,7 +14740,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 90
@@ -14771,7 +14766,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 90
@@ -14797,7 +14792,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 90
@@ -14823,7 +14818,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 90
@@ -15061,7 +15056,7 @@ export const UNITS: any[] = [
           20, 20, 30, 30
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 20
@@ -15085,7 +15080,7 @@ export const UNITS: any[] = [
           20, 20, 30, 30
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 75
@@ -15184,7 +15179,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1100,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -15306,7 +15301,6 @@ export const UNITS: any[] = [
           20, 20, 60
         ],
         castTime: 32,
-        debuff: [],
         framesList: [34, 26, 92],
         offset: 14,
         base: 225,
@@ -15329,7 +15323,6 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: [],
         framesList: [95, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 14],
         base: 610,
         dualable: false
@@ -15362,7 +15355,6 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: [],
         framesList: [240],
         offset: 14,
         base: 2000,
@@ -15381,7 +15373,6 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        debuff: [],
         framesList: [149, 9, 9, 9, 9],
         base: 390,
         dualable: false
@@ -15684,7 +15675,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 60
@@ -15712,7 +15703,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 60
@@ -15738,7 +15729,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         damage: "magic",
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 70
@@ -15919,7 +15910,7 @@ export const UNITS: any[] = [
           de: "Einflügliger Engel",
           es: "Fulgor seráfico"
         },
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 100
@@ -16059,7 +16050,7 @@ export const UNITS: any[] = [
           es: "Combustión súbita"
         },
         castTime: 48,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -16115,7 +16106,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 84
@@ -16286,7 +16277,7 @@ export const UNITS: any[] = [
         elements: [
           "earth"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 50
@@ -16314,7 +16305,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -16341,7 +16332,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 30
@@ -16479,7 +16470,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 75
@@ -16515,7 +16506,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -16592,7 +16583,7 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 50
@@ -16618,7 +16609,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 8,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 90
@@ -16641,7 +16632,7 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -16667,7 +16658,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 8,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 90
@@ -16690,7 +16681,7 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -16716,7 +16707,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 8,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 90
@@ -16999,7 +16990,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -17030,7 +17021,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 65
@@ -17153,7 +17144,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -17469,7 +17460,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 140,
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 60
@@ -17742,7 +17733,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 480,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 60
@@ -17810,7 +17801,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -17836,7 +17827,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -17862,7 +17853,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -18003,7 +17994,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 475,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -18032,7 +18023,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 90
@@ -18111,7 +18102,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -18142,7 +18133,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -18447,7 +18438,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 200,
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -18663,7 +18654,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -18970,7 +18961,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 65
@@ -19279,7 +19270,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -19410,7 +19401,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -19436,7 +19427,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -19468,7 +19459,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -19494,7 +19485,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -19526,7 +19517,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -19552,7 +19543,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -19584,7 +19575,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -19610,7 +19601,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 75
@@ -19811,7 +19802,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1100,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 120
@@ -19920,7 +19911,7 @@ export const UNITS: any[] = [
         "offset": 14,
         "base": 250,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -19968,7 +19959,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -20021,7 +20012,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 500,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -20115,7 +20106,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 500,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -20141,7 +20132,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1080,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 84
@@ -20392,7 +20383,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -20414,7 +20405,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -20499,7 +20490,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -20574,7 +20565,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -20603,7 +20594,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -20643,7 +20634,7 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 1040,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -20794,7 +20785,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 750,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -21160,7 +21151,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1120,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -21207,7 +21198,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1100,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -21307,7 +21298,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1080,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -21340,7 +21331,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 700,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -21383,7 +21374,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1150,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -21416,7 +21407,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 700,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -21456,7 +21447,7 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 1200,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -22040,7 +22031,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -22247,7 +22238,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1000,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -22302,7 +22293,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -22328,7 +22319,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -22430,7 +22421,7 @@ export const UNITS: any[] = [
         "offset": 14,
         "base": 560,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -22650,7 +22641,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -22845,7 +22836,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -22873,7 +22864,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -22905,7 +22896,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -23051,7 +23042,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -23414,7 +23405,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -23672,7 +23663,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 75
@@ -23702,7 +23693,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -24006,7 +23997,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -24037,7 +24028,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -24100,7 +24091,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -24127,7 +24118,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 70
@@ -24373,7 +24364,7 @@ export const UNITS: any[] = [
           100
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -24492,7 +24483,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 70
@@ -24565,7 +24556,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 60
@@ -24596,7 +24587,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -24935,7 +24926,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 10,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -25146,7 +25137,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 28,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -25329,7 +25320,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -25360,7 +25351,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -25620,7 +25611,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 1,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -25693,7 +25684,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         "castTime": 5,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -25856,7 +25847,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -26127,7 +26118,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -26199,7 +26190,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -26340,7 +26331,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 80
@@ -26391,7 +26382,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -26492,7 +26483,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 38,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 75
@@ -27056,7 +27047,7 @@ export const UNITS: any[] = [
         "hitDamage": [50, 50],
         "castTime": 100,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -27078,7 +27069,7 @@ export const UNITS: any[] = [
         "hitDamage": [50, 50],
         "castTime": 100,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 75
@@ -27270,7 +27261,7 @@ export const UNITS: any[] = [
         "elements": [
           "light"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -27491,7 +27482,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           14, 14, 14, 14, 14, 15, 15
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 100
@@ -27704,7 +27695,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -27788,7 +27779,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -28016,7 +28007,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -28218,7 +28209,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -28244,7 +28235,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -28420,7 +28411,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -28499,7 +28490,7 @@ export const UNITS: any[] = [
           7, 6, 7, 7, 7, 6, 7, 6, 7, 6, 7, 7, 7, 6, 7
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -29384,7 +29375,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 60
@@ -29508,7 +29499,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 25, 40
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -29534,7 +29525,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 25, 40
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -29609,7 +29600,7 @@ export const UNITS: any[] = [
           100
         ],
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -29642,7 +29633,7 @@ export const UNITS: any[] = [
         "elements": [
           "ice"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -29671,7 +29662,7 @@ export const UNITS: any[] = [
         "elements": [
           "dark"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 70
@@ -29733,7 +29724,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -29764,7 +29755,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -29795,7 +29786,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -29826,7 +29817,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -29998,7 +29989,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -30080,7 +30071,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -30135,7 +30126,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -30161,7 +30152,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -30467,7 +30458,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -30496,7 +30487,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -30584,7 +30575,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 79
@@ -30754,7 +30745,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 75
@@ -30913,7 +30904,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -30944,7 +30935,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -30975,7 +30966,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -31029,7 +31020,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 40
@@ -31149,7 +31140,7 @@ export const UNITS: any[] = [
         "castTime": 5,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -31484,7 +31475,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -31513,7 +31504,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -31542,7 +31533,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -31572,7 +31563,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -32002,7 +31993,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -32257,7 +32248,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -32286,7 +32277,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -32315,7 +32306,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -32344,7 +32335,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -32459,7 +32450,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -32489,7 +32480,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 89
@@ -32582,7 +32573,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 30
@@ -32640,7 +32631,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -32670,7 +32661,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -32793,7 +32784,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -32942,7 +32933,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 25,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 60
@@ -33110,7 +33101,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -33262,7 +33253,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 36,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -33311,7 +33302,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 36,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -33366,7 +33357,7 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -33392,7 +33383,7 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 100
@@ -33794,7 +33785,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -34128,7 +34119,7 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -34453,7 +34444,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -35058,7 +35049,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -35262,7 +35253,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -35291,7 +35282,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -35541,7 +35532,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -35567,7 +35558,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -35593,7 +35584,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -35619,7 +35610,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -35645,7 +35636,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 50
@@ -35671,7 +35662,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -35697,7 +35688,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -35924,7 +35915,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -35955,7 +35946,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -35986,7 +35977,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -36017,7 +36008,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 60
@@ -36412,7 +36403,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 74
@@ -36696,7 +36687,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -36723,7 +36714,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -36942,7 +36933,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -37124,7 +37115,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -37252,7 +37243,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -37279,7 +37270,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -37464,7 +37455,7 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -37833,7 +37824,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -37878,7 +37869,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -37996,7 +37987,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -38025,7 +38016,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -38054,7 +38045,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -38083,7 +38074,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -38569,7 +38560,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -38727,7 +38718,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 60
@@ -38837,7 +38828,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 30
@@ -38892,7 +38883,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 75
@@ -38923,7 +38914,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -39131,7 +39122,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -39291,7 +39282,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -39711,7 +39702,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -39834,7 +39825,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -40284,7 +40275,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 75
@@ -40313,7 +40304,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 100
@@ -40502,7 +40493,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -40532,7 +40523,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -40559,7 +40550,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -41045,7 +41036,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 50
@@ -41156,7 +41147,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 75
@@ -41183,7 +41174,7 @@ export const UNITS: any[] = [
         "castTime": 10,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -41691,7 +41682,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -41983,7 +41974,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -42015,7 +42006,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -42046,7 +42037,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 85
@@ -42350,7 +42341,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 30
@@ -42528,7 +42519,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -42560,7 +42551,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -42592,7 +42583,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -42624,7 +42615,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -42821,7 +42812,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -43052,7 +43043,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -43195,7 +43186,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 100
@@ -43410,7 +43401,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 40
@@ -43462,7 +43453,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 28,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 30
@@ -43523,7 +43514,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 40
@@ -43554,7 +43545,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 40
@@ -43585,7 +43576,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 30
@@ -43621,7 +43612,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -43708,7 +43699,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 40
@@ -43737,7 +43728,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 40
@@ -43838,7 +43829,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 40
@@ -43867,7 +43858,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 40
@@ -43896,7 +43887,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 40
@@ -43925,7 +43916,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 40
@@ -43978,7 +43969,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 40
@@ -44007,7 +43998,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 40
@@ -44395,7 +44386,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 75
@@ -44905,7 +44896,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -45029,7 +45020,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -45055,7 +45046,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 39,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -45122,7 +45113,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 80
@@ -45149,7 +45140,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 39,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 80
@@ -45296,7 +45287,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -45325,7 +45316,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -45354,7 +45345,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -45443,7 +45434,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -45472,7 +45463,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 80
@@ -45501,7 +45492,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 80
@@ -45779,7 +45770,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -45866,7 +45857,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 65
@@ -45897,7 +45888,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 65
@@ -45929,7 +45920,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 65
@@ -45960,7 +45951,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 65
@@ -46237,9 +46228,84 @@ export const UNITS: any[] = [
       "tw": "艾琳娜",
       "kr": "엘레나"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 122,
+          "pot": 20
+        },
+        "mag": {
+          "base": 122,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 158,
+          "pot": 30
+        },
+        "mag": {
+          "base": 158,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 205,
+          "pot": 50
+        },
+        "mag": {
+          "base": 205,
+          "pot": 50
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912569,
+        "dataId": 912591,
+        "names": {
+          "en": "Battle Insight",
+          "tw": "戰鬥洞察力",
+          "kr": "싸움의 통찰력",
+          "fr": "Instinct de guerre",
+          "de": "Kampferkenntnis",
+          "es": "Instinto guerrero"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 55,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "dataId": 912569,
         "names": {
           "en": "Blade of Crystal",
           "tw": "水晶之刃",
@@ -46260,7 +46326,7 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912592,
+        "dataId": 912592,
         "names": {
           "en": "Purifying Slash",
           "tw": "淨化斬擊",
@@ -46281,7 +46347,67 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912571,
+        "dataId": 912573,
+        "names": {
+          "en": "Aquatic Enervation",
+          "tw": "水屬性弱體",
+          "kr": "물속성 약체화",
+          "fr": "Exaltation aquatique",
+          "de": "Wasserschwächung",
+          "es": "Prisión acuosa"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "water",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912574,
+        "names": {
+          "en": "Electrifying Enervation",
+          "tw": "雷屬性弱體",
+          "kr": "번개속성 약체화",
+          "fr": "Exaltation électrisante",
+          "de": "Elektroschwächung",
+          "es": "Prisión electrizante"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912571,
         "names": {
           "en": "Blade of the Dawn",
           "tw": "拂曉之刃",
@@ -46302,7 +46428,208 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912572,
+        "dataId": 912577,
+        "names": {
+          "en": "Blossom - Vigilance",
+          "tw": "冰華 - 防衛",
+          "kr": "빙화·방위",
+          "fr": "Floraison - Vigilance",
+          "de": "Blüte - Wachsamkeit",
+          "es": "Floración - Vigilancia"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "boostModifiers": [
+          {
+            "id": 912578,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912577
+          }
+        ],
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "dataId": 912578,
+        "names": {
+          "en": "Blossom - Frost Hedge",
+          "tw": "冰華 - 防冰壁",
+          "kr": "빙화·방빙벽",
+          "fr": "Floraison - Ronces de givre",
+          "de": "Blüte - Frosthecke",
+          "es": "Floración - Escarcha protectora"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912572,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912571,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912570,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912577,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912578,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          }
+        ],
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "dataId": 912580,
+        "names": {
+          "en": "Aurora - Valor",
+          "tw": "極光 - 勇氣",
+          "kr": "극광·용기",
+          "fr": "Aurore - Valeur",
+          "de": "Aurora - Tapferkeit"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 135,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 135,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912581,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912580
+          }
+        ],
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "dataId": 912581,
+        "names": {
+          "en": "Aurora - Radiant Might",
+          "tw": "極光 - 燦爛之力",
+          "kr": "극광·빛나는 힘",
+          "fr": "Aurore - Puissance étincelante",
+          "de": "Aurora - Strahlende Macht",
+          "es": "Aurora - Poder cegador"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "light",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912572,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912571,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912570,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912580,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912581,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "dataId": 912572,
         "names": {
           "en": "Blade of the Heavens",
           "tw": "天風之刃",
@@ -46323,7 +46650,67 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912570,
+        "dataId": 912575,
+        "names": {
+          "en": "Freezing Enervation",
+          "tw": "冰屬性弱體",
+          "kr": "얼음속성 약체화",
+          "fr": "Exaltation givrante",
+          "de": "Frostschwächung",
+          "es": "Prisión congelante"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912576,
+        "names": {
+          "en": "Luminous Enervation",
+          "tw": "光屬性弱體",
+          "kr": "빛속성 약체화",
+          "fr": "Exaltation lumineuse",
+          "de": "Leuchtschwächung",
+          "es": "Prisión luminosa"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "light",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912570,
         "names": {
           "en": "Aurora Tempest",
           "tw": "極光之嵐",
@@ -46343,14 +46730,16 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
-            "value": 50
+            "value": 50,
+            "turn": 3
           },
           {
             "type": "light",
-            "value": 50
+            "value": 50,
+            "turn": 3
           }
         ],
         "framesList": [
@@ -46358,91 +46747,141 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912593,
+        "dataId": 912584,
         "names": {
-          "en": "Aurora - Valor",
-          "tw": "極光 - 勇氣",
-          "kr": "극광·용기",
-          "fr": "Aurore - Valeur",
-          "de": "Aurora - Tapferkeit",
-          "es": "Aurora - Valor"
+          "en": "Way of the Blossom",
+          "tw": "冰華之道",
+          "kr": "빙화의 길",
+          "fr": "Voie de la floraison",
+          "de": "Pfad der Blüte",
+          "es": "El camino de la floración"
         },
-        "damage": "hybrid",
-        "base": 1000,
-        "hitDamage": [
-          100
-        ],
+        "canDualSkill": false,
         "castTime": 10,
+        "dualable": false,
         "offset": 14,
-        "framesList": [
-          50
-        ]
-      },,
-      {
-        "id": 912594,
-        "names": {
-          "en": "Aurora - Radiant Might",
-          "tw": "極光 - 燦爛之力",
-          "kr": "극광·빛나는 힘",
-          "fr": "Aurore - Puissance étincelante",
-          "de": "Aurora - Strahlende Macht",
-          "es": "Aurora - Poder cegador"
-        },
-        "damage": "hybrid",
-        "base": 1000,
-        "hitDamage": [
-          100
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 75,
+            "turn": 3
+          }
         ],
-        "castTime": 40,
-        "offset": 14,
-        "framesList": [
-          80
-        ]
-      },,
-      {
-        "id": 912595,
-        "names": {
-          "en": "Blossom - Vigilance",
-          "tw": "冰華 - 防衛",
-          "kr": "빙화·방위",
-          "fr": "Floraison - Vigilance",
-          "de": "Blüte - Wachsamkeit",
-          "es": "Floración - Vigilancia"
-        },
-        "damage": "hybrid",
-        "base": 1000,
-        "hitDamage": [
-          100
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912577,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912578,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          }
         ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912586,
+        "names": {
+          "en": "Way of the Aurora",
+          "tw": "極光之道",
+          "kr": "극광의 길",
+          "fr": "Voie de l'aurore",
+          "de": "Pfad der Aurora",
+          "es": "El camino de la aurora"
+        },
+        "canDualSkill": false,
         "castTime": 10,
+        "dualable": false,
         "offset": 14,
-        "framesList": [
-          50
-        ]
-      },,
-      {
-        "id": 912596,
-        "names": {
-          "en": "Blossom - Frost Hedge",
-          "tw": "冰華 - 防冰壁",
-          "kr": "빙화·방빙벽",
-          "fr": "Floraison - Ronces de givre",
-          "de": "Blüte - Frosthecke",
-          "es": "Floración - Escarcha protectora"
-        },
-        "damage": "hybrid",
-        "base": 1000,
-        "hitDamage": [
-          100
+        "imperils": [
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 3
+          }
         ],
-        "castTime": 40,
-        "offset": 14,
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912580,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912581,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          }
+        ],
         "framesList": [
-          20
+          0
         ]
-      },,
+      },
       {
-        "id": 401008407,
+        "dataId": 912588,
+        "names": {
+          "en": "Celestial Guidance",
+          "tw": "天空指引",
+          "kr": "천상의 길잡이",
+          "fr": "Autorité céleste",
+          "de": "Himmlische Unterweisung",
+          "es": "Guía celeste"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 75,
+            "turn": 3
+          },
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912570,
+            "value": 600,
+            "turn": 3,
+            "uniqueIdentifier": 912587
+          },
+          {
+            "id": 911665,
+            "value": 900,
+            "turn": 3,
+            "uniqueIdentifier": 912588
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 401008407,
         "names": {
           "en": "Light of Salvation",
           "tw": "救贖之光",
@@ -46458,6 +46897,78 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912577,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912578,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912580,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912581,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912571,
+            "value": 1000,
+            "turn": 3,
+            "uniqueIdentifier": 401008406
+          },
+          {
+            "id": 912572,
+            "value": 1000,
+            "turn": 3,
+            "uniqueIdentifier": 401008406
+          },
+          {
+            "id": 912570,
+            "value": 1000,
+            "turn": 3,
+            "uniqueIdentifier": 401008406
+          }
+        ],
         "framesList": [
           28, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ]
@@ -46467,26 +46978,93 @@ export const UNITS: any[] = [
       {
         "count": 2,
         "abilities": [
-          912569,
           912592,
+          912573,
+          912574,
+          912575,
+          912576,
+          912569,
           912571,
           912572,
           912570,
-          912593,
-          912594,
-          912595,
-          912596
+          912567,
+          912568,
+          912591,
+          912589,
+          912590,
+          912583,
+          912585,
+          912587,
+          912577,
+          912578,
+          912579,
+          912580,
+          912581,
+          912582
         ]
       },
       {
         "count": 3,
         "abilities": [
-          912569,
           912592,
+          912573,
+          912574,
+          912575,
+          912576,
+          912569,
           912571,
           912572,
-          912570
+          912570,
+          912567,
+          912568
         ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 912569,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912571,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912570,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912572,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912592,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912577,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912578,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912580,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912581,
+        "value": 800,
+        "rarity": 7
       }
     ]
   },
@@ -46814,7 +47392,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 75
@@ -46900,7 +47478,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -47232,7 +47810,7 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -47302,7 +47880,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 80
@@ -47328,7 +47906,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 120
@@ -47354,7 +47932,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -47421,7 +47999,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 120

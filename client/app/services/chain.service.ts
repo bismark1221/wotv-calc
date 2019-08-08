@@ -61,7 +61,7 @@ export class ChainService {
     });
 
     this.getElements();
-    this.calculateDebuffModifier();
+    this.calculateImperilModifier();
     this.calculateTotalDamage();
 
     this.result.modifier = this.calculateChain();
@@ -156,7 +156,7 @@ export class ChainService {
     });
   }
 
-  private calculateDebuffModifier() {
+  private calculateImperilModifier() {
     this.modifierElements = [];
     this.elements.forEach(element => {
       let modifier = 1;
@@ -164,9 +164,9 @@ export class ChainService {
       this.units.forEach(unit => {
         if (unit) {
           unit.selectedAbilities.forEach(ability => {
-            let debuff = this.getDebuff(ability, element);
-            if (unit && debuff && debuff / 100 + 1 > modifier) {
-              modifier = debuff / 100 + 1;
+            let imperil = this.getImperil(ability, element);
+            if (unit && imperil && imperil / 100 + 1 > modifier) {
+              modifier = imperil / 100 + 1;
             }
           });
         }
@@ -176,16 +176,16 @@ export class ChainService {
     });
   }
 
-  private getDebuff(ability: any, element: string) {
-    let debuffValue = null;
-    ability.debuffs.forEach(debuff => {
-      if (debuff.type == element) {
-        debuffValue = debuff.value;
+  private getImperil(ability: any, element: string) {
+    let imperilValue = null;
+    ability.imperils.forEach(imperil => {
+      if (imperil.type == element) {
+        imperilValue = imperil.value;
         return;
       }
     });
 
-    return debuffValue;
+    return imperilValue;
   }
 
   private calculateTotalDamage() {

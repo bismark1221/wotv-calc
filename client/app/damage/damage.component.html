@@ -33,8 +33,8 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="rarity">Rarity</label>
           </div>
-          <select class="custom-select" id="rarity" [(ngModel)]="unit.rarity" (ngModelChange)="onChangeRarity()">
-            <option >6</option>
+          <select class="custom-select" id="rarity" [(ngModel)]="unit.rarity.value" (ngModelChange)="onChangeRarity()">
+            <option *ngFor="let rarity of availableRarities">{{ rarity }}</option>
             <option >7</option>
           </select>
         </div>
@@ -85,16 +85,6 @@
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="dual">DW</label>
-          </div>
-          <select class="form-control" id="dual" [(ngModel)]="unit.dual" (ngModelChange)="onChangeDual()">
-            <option [ngValue]="false">No</option>
-            <option [ngValue]="true">Yes</option>
-          </select>
-        </div>
-
         <div *ngFor="let weapon of unit.damageWeapons; let i = index">
 
 
@@ -140,7 +130,7 @@
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
-        <h2> Killers + Buffs + Break + Imperil (total passif + buff) </h2>
+        <h2> Killers + Buffs (total passif + buff) </h2>
 
         <div class="input-group mb-3" *ngFor="let race of races">
           <div class="input-group-prepend">
@@ -166,7 +156,7 @@
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
-        ################# MONSTER ###################
+        <h2>MONSTER</h2>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="buff_atk">Monster DEF</label>
