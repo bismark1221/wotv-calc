@@ -171,9 +171,6 @@ export class ChainingModalComponent implements OnInit {
       this.unit.castNumber = [];
       for (let i = 0; i < castNumber; i++) {
         this.unit.castNumber.push(i);
-        if (i > 0) {
-
-        }
       }
 
       if (autoAssign) {

@@ -20,6 +20,7 @@ import { NavService } from '../services/nav.service';
 import { WeaponService } from '../services/weapon.service';
 import { ElementsService } from '../services/elements.service';
 import { RaceService } from '../services/race.service';
+import { DamageService } from '../services/damage.service';
 
 @Component({
   selector: 'app-chaining',
@@ -34,6 +35,7 @@ export class DamageComponent implements OnInit {
   private monsters: Monster[];
 
   availableRarities = [];
+  rounds = [];
   objectKeys = Object.keys;
   unit: any = {};
   monster: any = {};
@@ -64,7 +66,8 @@ export class DamageComponent implements OnInit {
     private navService: NavService,
     private weaponService: WeaponService,
     private elementsService: ElementsService,
-    private raceService: RaceService
+    private raceService: RaceService,
+    private damageService: DamageService
   ) {
     this.getTranslation();
 
@@ -77,6 +80,7 @@ export class DamageComponent implements OnInit {
   ngOnInit(): void {
     this.unit = {id: 'unselect', selectedIds: []};
     this.monster = new Monster();
+    console.log("MONSTER")
     console.log(this.monster)
     this.onChangeUnit('unselect');
 
@@ -84,7 +88,6 @@ export class DamageComponent implements OnInit {
     this.getElements();
     this.weaponTypes = this.weaponService.getWeaponTypes();
     this.races = this.raceService.getRaces();
-    // console.log(this.races)
   }
 
   private getTranslation() {
@@ -172,18 +175,6 @@ export class DamageComponent implements OnInit {
     });
   }
 
-  private localSaveUnits() {
-    if (this.unit.id !== 'unselect') {
-      this.unit.activeRename = false;
-      this.unit.showChainMod = false;
-      this.unit.selectedAbilities.forEach(ability => {
-        ability.activeRename = false;
-      });
-    }
-    this.sortUnits();
-    this.localStorageService.set('units', this.createdUnits);
-  }
-
   private reloadList() {
     this.sortUnits();
 
@@ -226,24 +217,9 @@ export class DamageComponent implements OnInit {
     delete this.observableUnits[0].children;
   }
 
-  private updateChangedUnit(abilitiesIds: any = []) {
+  private updateChangedUnit() {
     this.unit = JSON.parse(JSON.stringify(this.unit));
-    let ids = JSON.parse(JSON.stringify(abilitiesIds));
 
-    this.unit.selectedAbilities = [];
-    this.unit.selectedIds = ids;
-
-    if (ids.length === 0) {
-      ids.push(this.unit.abilities[0].id)
-      this.unit.selectedIds = [ids[0]];
-    }
-
-    ids.forEach((id, index) => {
-      this.unit.selectedAbilities[index] = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, id)]));
-      this.unit.selectedAbilities[index].activeRename = false;
-    });
-
-    this.updateMultiplePossibleAbilities();
     for (let i = this.unit.rarity.min; i < this.unit.rarity.max; i++) {
       this.availableRarities.push(i);
     }
@@ -259,6 +235,9 @@ export class DamageComponent implements OnInit {
       this.unit.imperils[element] = 0;
     });
     this.onChangeRarity();
+
+    this.rounds = [];
+    this.addRound();
   }
 
   private updateMultiplePossibleAbilities() {
@@ -278,110 +257,7 @@ export class DamageComponent implements OnInit {
     }
   }
 
-  private updateMultipleSkill(unit: any, autoAssign: boolean = true): any {
-    if (unit.id !== 'unselect' && unit.selectedAbilities && unit.selectedAbilities[0]) {
-      unit.possibleMultiple = [{id: 0}];
-      let castNumber = 1;
-      let ability = unit.selectedAbilities[0];
-
-      if (ability.magicType) {
-        if (unit.multipleBlack > 1) {
-          unit = this.multipleMagic("black", unit);
-          castNumber = unit.multipleBlack;
-        }
-        if (unit.multipleWhite > 1) {
-          unit = this.multipleMagic("white", unit);
-          castNumber = castNumber < unit.multipleWhite ? unit.multipleWhite : castNumber;
-        }
-      } else {
-        castNumber = this.multipleAbility(unit);
-      }
-
-      unit.castNumber = [];
-      for (let i = 0; i < castNumber; i++) {
-        unit.castNumber.push(i);
-        if (i > 0) {
-
-        }
-      }
-
-      if (autoAssign) {
-        unit = this.assignMultipleSkill(unit);
-      }
-    }
-
-    return unit;
-  }
-
-  private multipleMagic(magicType: string, unit: any): any {
-    unit.abilities.forEach(ability => {
-      if (ability.magicType && ability.magicType === magicType) {
-        unit.possibleMultiple.push(ability);
-      }
-    });
-
-    return unit;
-  }
-
-  private multipleAbility(unit: any) :number {
-    let ability = unit.selectedAbilities[0];
-    let castNumber = 1;
-
-    unit.multiCasts.forEach(multiCast => {
-      if (castNumber <= multiCast.count) {
-        if (multiCast.abilities.indexOf(ability.id) !== -1) {
-          castNumber = multiCast.count;
-
-          multiCast.abilities.forEach(abilityId => {
-            let tempAbility = unit.abilities[this.unitService.findPositionOfAbilityById(unit, abilityId)];
-            if (tempAbility) {
-              unit.possibleMultiple.push(tempAbility);
-            }
-          });
-        }
-      }
-    });
-
-    return castNumber;
-  }
-
-  private assignMultipleSkill(unit: any) {
-    let ability = unit.selectedAbilities[0];
-
-    for(let i = 1; i < unit.castNumber.length; i++) {
-      if (!unit.selectedIds[i]) {
-        unit.selectedIds[i] = ability.id;
-        unit.selectedAbilities[i] = JSON.parse(JSON.stringify(ability));
-      }
-    }
-
-    return unit;
-  }
-
-  private isFirstAbilityMultiple() :number {
-    let ability = this.unit.selectedAbilities[0]
-    if (this.unit.multiCasts[ability.id]) {
-      return this.unit.multiCasts[ability.id]
-    } else if (ability.magicType) {
-      let possibleMultiple = 1;
-      if (ability.magicType === "black" && this.unit.multipleBlack > 1) {
-        possibleMultiple = this.unit.multipleBlack;
-      } else if (ability.magicType === "white" && this.unit.multipleWhite > 1) {
-        possibleMultiple = this.unit.multipleBlack;
-      }
-      return possibleMultiple;
-    } else {
-      return 1;
-    }
-  }
-
-  unselectUnit() {
-    if (this.unit.id !== 'unselect') {
-      this.onChangeUnit('unselect');
-    }
-  }
-
-  onChangeUnit(unitId: any = 'unselect', abilitiesIds: number[] = [], launchChain: boolean = true) {
+  onChangeUnit(unitId: any = 'unselect') {
     if (unitId === 'unselect') {
       this.unit = {
         id: 'unselect',
@@ -396,57 +272,10 @@ export class DamageComponent implements OnInit {
         this.unit = this.createdUnits.find(unit => unit.id === parseInt(unitId));
       }
 
-      this.updateChangedUnit(abilitiesIds);
-      this.unit = this.updateMultipleSkill(this.unit);
+      this.updateChangedUnit();
     }
-
-    if (launchChain) {
-      this.onChangeChain();
-    }
+    console.log("UNIT")
     console.log(this.unit)
-  }
-
-  onChangeSkill(abilityPosition: any) {
-    let positionInList = this.unitService.findPositionOfAbilityById(this.unit, this.unit.selectedIds[abilityPosition]);
-    if (positionInList !== null) {
-      let ability = JSON.parse(JSON.stringify(this.unit.abilities[positionInList]));
-
-      if (abilityPosition === 0) {
-        this.unit.selectedAbilities = [ability];
-        this.unit.selectedIds = [this.unit.selectedIds[0]];
-        this.unit = this.updateMultipleSkill(this.unit);
-      } else {
-        this.unit.selectedAbilities[abilityPosition] = ability;
-      }
-    } else {
-      for (let i = this.unit.castNumber.length; i >= abilityPosition; i--) {
-        this.unit.selectedIds.splice(i, 1);
-        this.unit.selectedAbilities.splice(i, 1);
-      }
-    }
-
-    this.onChangeChain();
-  }
-
-  onChangeChain(): void {
-    console.log("chain change")
-  }
-
-  selectUnit(unit: any, abilities: any, framesGaps: any, launchChain: boolean = true) {
-    this.unit = unit;
-    let selectedIds = [];
-    abilities.forEach(ability => {
-      selectedIds.push(ability.id);
-    })
-    this.onChangeUnit(unit.id, selectedIds, launchChain);
-  }
-
-  getAvailableAbilities(abilityPosition: number) {
-    if (this.unit.selectedAbilities.length === 0 || abilityPosition === 0) {
-      return this.unit.abilities;
-    } else {
-      return this.unit.possibleMultiple;
-    }
   }
 
   onChangePot(type: string) {
@@ -470,8 +299,6 @@ export class DamageComponent implements OnInit {
       mag: {}
     };
 
-    console.log(this.unit.stats)
-    console.log(this.unit.dataStats[this.unit.rarity.value])
     this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity.value].atk.base;
     this.unit.stats.atk.potValue = this.unit.dataStats[this.unit.rarity.value].atk.pot;
     this.unit.stats.atk.maxPot = true;
@@ -506,4 +333,178 @@ export class DamageComponent implements OnInit {
       this.monster.races.push(race);
     }
   }
+
+  addRound() {
+    console.log("===== ADD ROUNDS =====")
+
+    this.rounds.push({
+      availableAbilities: [],
+      selectedAbilities: [],
+      castNumber: [0]
+    });
+
+
+    console.log(this.damageService.calculateTotalDamage(this.unit, this.monster, this.rounds))
+
+    /*
+
+    let ids = JSON.parse(JSON.stringify(abilitiesIds));
+
+    this.unit.selectedAbilities = [];
+    this.unit.selectedIds = ids;
+
+    if (ids.length === 0) {
+      ids.push(this.unit.abilities[0].id)
+      this.unit.selectedIds = [ids[0]];
+    }
+
+    ids.forEach((id, index) => {
+      this.unit.selectedAbilities[index] = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, id)]));
+      this.unit.selectedAbilities[index].activeRename = false;
+    });
+
+    this.updateMultiplePossibleAbilities();
+
+
+    */
+  }
+
+  getAvailableAbilities(roundIndex: number, abilityPosition: number) {
+    if (this.rounds[roundIndex].selectedAbilities.length === 0 || abilityPosition === 0) {
+      return this.unit.abilities;
+    } else {
+      this.updateMultipleSkill(roundIndex);
+
+      let abilities = this.rounds[roundIndex].availableAbilities;
+      let ability = null;
+      // console.log("######")
+      // console.log(JSON.parse(JSON.stringify(this.rounds)))
+
+      this.rounds[roundIndex].selectedAbilities.forEach(abilityId => {
+        ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
+        if (ability.canDualSkill === false) {
+          abilities.splice(this.rounds[roundIndex].availableAbilities.findIndex(x => x === ability.id), 1);
+        }
+      });
+      // console.log(JSON.parse(JSON.stringify(this.rounds)))
+
+      return abilities;
+    }
+  }
+
+  private updateMultipleSkill(roundIndex: number, autoAssign: boolean = true): any {
+    this.rounds[roundIndex].availableAbilities = [];
+
+    let castNumber = 1;
+    let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, this.rounds[roundIndex].selectedAbilities[0])];
+
+    if (ability.magicType) {
+      if (this.unit.multipleBlack > 1) {
+        this.multipleMagic("black", roundIndex);
+        castNumber = this.unit.multipleBlack;
+      }
+      if (this.unit.multipleWhite > 1) {
+        this.multipleMagic("white", roundIndex);
+        castNumber = castNumber < this.unit.multipleWhite ? this.unit.multipleWhite : castNumber;
+      }
+    } else {
+      castNumber = this.multipleAbility(roundIndex);
+    }
+
+    this.rounds[roundIndex].castNumber = [];
+    for (let i = 0; i < castNumber; i++) {
+      this.rounds[roundIndex].castNumber.push(i);
+    }
+
+    if (autoAssign) {
+      this.assignMultipleSkill(roundIndex);
+    }
+  }
+
+  private multipleMagic(magicType: string, roundIndex: number): any {
+    this.unit.abilities.forEach(ability => {
+      if (ability.magicType && ability.magicType === magicType) {
+        this.rounds[roundIndex].availableAbilities.push(ability);
+      }
+    });
+  }
+
+  private multipleAbility(roundIndex: number) :number {
+    let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, this.rounds[roundIndex].selectedAbilities[0])]
+    let castNumber = 1;
+
+    this.unit.multiCasts.forEach(multiCast => {
+      if (castNumber <= multiCast.count) {
+        if (multiCast.abilities.indexOf(ability.id) !== -1) {
+          castNumber = multiCast.count;
+
+          multiCast.abilities.forEach(abilityId => {
+            let tempAbility = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
+            if (tempAbility) {
+              this.rounds[roundIndex].availableAbilities.push(tempAbility);
+            }
+          });
+        }
+      }
+    });
+
+    return castNumber;
+  }
+
+  private assignMultipleSkill(roundIndex: number) {
+    let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, this.rounds[roundIndex].selectedAbilities[0])];
+
+    for(let i = 1; i < this.rounds[roundIndex].castNumber.length; i++) {
+      if (!this.rounds[roundIndex].selectedAbilities[i]) {
+        this.rounds[roundIndex].selectedAbilities[i] = ability.id;
+      }
+    }
+  }
+
+  onChangeSkill(roundIndex: number, abilityPosition: any) {
+    let positionInList = this.unitService.findPositionOfAbilityById(this.unit, this.rounds[roundIndex].selectedAbilities[abilityPosition]);
+    if (positionInList !== null) {
+      let ability = JSON.parse(JSON.stringify(this.unit.abilities[positionInList]));
+
+      if (abilityPosition === 0) {
+        this.rounds[roundIndex].selectedAbilities = [ability.id];
+        this.updateMultipleSkill(roundIndex);
+      } else {
+        this.rounds[roundIndex].selectedAbilities[abilityPosition] = ability.id;
+      }
+    } else {
+      for (let i = this.rounds[roundIndex].castNumber.length; i >= abilityPosition; i--) {
+        this.rounds[roundIndex].selectedAbilities.splice(i, 1);
+      }
+    }
+
+    this.onChangeChain(roundIndex);
+  }
+
+  onChangeChain(roundIndex: number): void {
+    // console.log("chain change")
+
+    this.calculateTotalDamage();
+  }
+
+  calculateTotalDamage() {
+    console.log(this.damageService.calculateTotalDamage(this.unit, this.monster, this.rounds));
+  }
+
+  // private isFirstAbilityMultiple() :number {
+  //   let ability = this.unit.selectedAbilities[0]
+  //   if (this.unit.multiCasts[ability.id]) {
+  //     return this.unit.multiCasts[ability.id]
+  //   } else if (ability.magicType) {
+  //     let possibleMultiple = 1;
+  //     if (ability.magicType === "black" && this.unit.multipleBlack > 1) {
+  //       possibleMultiple = this.unit.multipleBlack;
+  //     } else if (ability.magicType === "white" && this.unit.multipleWhite > 1) {
+  //       possibleMultiple = this.unit.multipleBlack;
+  //     }
+  //     return possibleMultiple;
+  //   } else {
+  //     return 1;
+  //   }
+  // }
 }

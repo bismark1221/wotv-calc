@@ -407,6 +407,7 @@ export class JsonService {
       this.updateBuffs(effect, unitId, id);
       this.updateImbues(effect, unitId, id);
       this.updateBoostModifier(effect, unitId, id, rarity);
+      this.updateChainCapModifier(effect, unitId, id, rarity);
     });
 
     this.calculateDamage(damageEffects, unitId, id, ability);
@@ -835,6 +836,14 @@ export class JsonService {
     }
   }
 
+  private updateChainCapModifier(rawEffect, unitId, id, rarity) {
+    find = this.findEffect(rawEffect, [81]);
+
+    if (find) {
+      this.ffbeChainUnits[unitId].maxChainCap = 6;
+    }
+  }
+
   private isMultipleCastAbility(rawEffect, unitId) {
     // ==> full dualcast ==> "effects_raw": [0, 3, 45, ["none"]]
     let find = this.findEffect(rawEffect, [45]);
@@ -1121,6 +1130,7 @@ export class JsonService {
           && !this.ffbeChainUnits[i].abilities[j].imperils
           && !this.ffbeChainUnits[i].abilities[j].buffs
           && !this.ffbeChainUnits[i].abilities[j].imbues
+          && !this.ffbeChainUnits[i].abilities[j].boostModifiers
         ) {
           this.ffbeChainUnits[i].abilities.splice(j, 1);
         } else  {

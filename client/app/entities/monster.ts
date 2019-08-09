@@ -7,8 +7,8 @@ export class Monster {
   };
   name: string = 'My Monster';
   stats: any = {
-    def: 1,
-    spr: 1
+    def: 193,
+    spr: 500
   };
   races: any = [];
   resistances: any = {

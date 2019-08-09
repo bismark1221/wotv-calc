@@ -12,17 +12,6 @@
             (valueChanged)="onChangeUnit($event.value);"></select2>
           <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && unit.id < 10000" />
         </div>
-
-        <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop">
-          <hr class="selectHrWithBottomMargin"/>
-          <label for="unit_ability">{{ 'chain.label.ability' | translate }}</label>
-
-          <div *ngFor="let abilityIndex of unit.castNumber">
-            <select class="form-control" id="unit_ability_{{abilityIndex}}" [(ngModel)]="unit.selectedIds[abilityIndex]" (ngModelChange)="onChangeSkill(abilityIndex)">
-              <option *ngFor="let unitAbility of getAvailableAbilities(abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
-            </select>
-          </div>
-        </div>
       </div>
 
       <div *ngIf="unit.id !== 'unselect'">
@@ -202,6 +191,35 @@
           <input type="text" class="form-control" placeholder="{{element.id}} imperil" [(ngModel)]="unit.imperils[element.id]">
         </div>
       </div>
+
+
+
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <h2>Rounds</h2>
+        <div *ngFor="let round of rounds; let roundIndex = index">
+
+
+
+          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop">
+            <label for="unit_ability">Round {{ roundIndex + 1 }}</label>
+
+            <div *ngFor="let abilityIndex of round.castNumber">
+              <select class="form-control" id="unit_ability_{{abilityIndex}}" [(ngModel)]="round.selectedAbilities[abilityIndex]" (ngModelChange)="onChangeSkill(roundIndex, abilityIndex)">
+                <option *ngFor="let unitAbility of getAvailableAbilities(roundIndex, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
+              </select>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="selectRightZoneTwoThirdDividedInThird">
+          <button class="btn btn-secondary fullWidth" type="button" (click)="addRound()">Add round</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

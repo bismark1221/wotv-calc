@@ -46881,6 +46881,92 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "dataId": 912568,
+        "names": {
+          "en": "Aurora Arts",
+          "tw": "極光劍技",
+          "kr": "극광 검기",
+          "fr": "Arts de l'aurore",
+          "de": "Aurorakunst",
+          "es": "Arte albo"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912571,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912572,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912570,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912567,
+        "names": {
+          "en": "Blossom Arts",
+          "tw": "冰華劍技",
+          "kr": "빙화 검기",
+          "fr": "Arts florissants",
+          "de": "Blütenkunst",
+          "es": "Arte floral"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912571,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912572,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912570,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
         "dataId": 401008407,
         "names": {
           "en": "Light of Salvation",
@@ -47000,7 +47086,10 @@ export const UNITS: any[] = [
           912579,
           912580,
           912581,
-          912582
+          912582,
+          912584,
+          912586,
+          912588
         ]
       },
       {
