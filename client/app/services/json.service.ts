@@ -63,7 +63,23 @@ export class JsonService {
     "def",
     "mag",
     "spr"
-  ]
+  ];
+
+  killerRaces = [
+    "",
+    "beast",
+    "bird",
+    "aquatic",
+    "demon",
+    "human",
+    "machine",
+    "dragon",
+    "undead",
+    "insect",
+    "stone",
+    "plant",
+    "spirit"
+  ];
 
   constructor(private http: HttpClient, private unitService: UnitService) {}
 
@@ -407,6 +423,7 @@ export class JsonService {
       this.updateBuffs(effect, unitId, id);
       this.updateImbues(effect, unitId, id);
       this.updateBoostModifier(effect, unitId, id, rarity);
+      this.updateKillers(effect, unitId, id, rarity);
       this.updateChainCapModifier(effect, unitId, id, rarity);
     });
 
@@ -836,8 +853,68 @@ export class JsonService {
     }
   }
 
+  private updateKillers(rawEffect, unitId, id, rarity) {
+    //0, 3, 92, [[1,  100], [6,  100], -1, -1, -1, -1, -1, -1, 5, 1
+    let find = this.findEffect(rawEffect, [92]);
+
+    if (find) {
+      if (!this.ffbeChainUnits[unitId].abilities[id].killers) {
+        this.ffbeChainUnits[unitId].abilities[id].killers = [];
+      }
+
+      for (let i = 0; i <= 7; i++) {
+        this.ffbeChainUnits[unitId].abilities[id].killers.push({
+          race: this.killerRaces[find.effect[i][0]],
+          physic: find.effect[i][1],
+          magic: 0,
+          turn: find.effect[8]
+        });
+      }
+    }
+
+    //0, 3, 93, [[5,  100], -1, -1, -1, -1, -1, -1, -1, 2, 1]
+    find = this.findEffect(rawEffect, [92]);
+
+    if (find) {
+      if (!this.ffbeChainUnits[unitId].abilities[id].killers) {
+        this.ffbeChainUnits[unitId].abilities[id].killers = [];
+      }
+
+      for (let i = 0; i <= 7; i++) {
+        this.ffbeChainUnits[unitId].abilities[id].killers.push({
+          race: this.killerRaces[find.effect[i][0]],
+          physic: 0,
+          magic: find.effect[i][1],
+          turn: find.effect[8]
+        });
+      }
+    }
+
+    //[0, 3, 11, [4,  50,  50]
+    find = this.findEffect(rawEffect, [11]);
+
+    if (find) {
+      if (!this.ffbeChainUnits[unitId].passiveKillers) {
+        this.ffbeChainUnits[unitId].passiveKillers = [];
+      }
+
+      this.ffbeChainUnits[unitId].passiveKillers.push({
+        race: this.killerRaces[find.effect[0]],
+        physic: find.effect[1],
+        magic: find.effect[2],
+        rarity: rarity
+      });
+
+      if (this.ffbeChainUnits[unitId].names.en === "Elena") {
+        console.log("FIND KILLER")
+        console.log(find.effect)
+        console.log(this.ffbeChainUnits[unitId].passiveKillers)
+      }
+    }
+  }
+
   private updateChainCapModifier(rawEffect, unitId, id, rarity) {
-    find = this.findEffect(rawEffect, [81]);
+    let find = this.findEffect(rawEffect, [81]);
 
     if (find) {
       this.ffbeChainUnits[unitId].maxChainCap = 6;
@@ -1131,6 +1208,7 @@ export class JsonService {
           && !this.ffbeChainUnits[i].abilities[j].buffs
           && !this.ffbeChainUnits[i].abilities[j].imbues
           && !this.ffbeChainUnits[i].abilities[j].boostModifiers
+          && !this.ffbeChainUnits[i].abilities[j].killers
         ) {
           this.ffbeChainUnits[i].abilities.splice(j, 1);
         } else  {

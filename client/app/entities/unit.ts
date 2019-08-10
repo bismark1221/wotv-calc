@@ -66,6 +66,7 @@ export class Unit {
   };
   imbues = [];
   passiveBoostModifiers = [];
+  passiveKillers = [];
   lbDamage: number = 1;
   jumpDamage: number = 1;
   canDualSkill: boolean = true;
@@ -109,6 +110,7 @@ export class Unit {
       this.rarity = unit.rarity ? unit.rarity : this.rarity;
       this.rarity.value = unit.rarity && unit.rarity.value ? unit.rarity.value : this.rarity.max;
       this.passiveBoostModifiers = unit.passiveBoostModifiers ? unit.passiveBoostModifiers : this.passiveBoostModifiers;
+      this.passiveKillers = unit.passiveKillers ? unit.passiveKillers : this.passiveKillers;
     }
   }
 

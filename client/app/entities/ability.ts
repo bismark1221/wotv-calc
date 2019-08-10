@@ -28,6 +28,9 @@ export class Ability {
     min: 0,
     max: 20
   }
+  breaks? = [];
+  buffs? = [];
+  killers? = [];
 
   constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
@@ -44,6 +47,9 @@ export class Ability {
     this.elements = ability.elements ? ability.elements : this.elements;
     this.imperils = ability.imperils ? ability.imperils : this.imperils;
     this.boostModifiers = ability.boostModifiers ? ability.boostModifiers : this.boostModifiers;
+    this.breaks = ability.breaks ? ability.breaks : this.breaks;
+    this.buffs = ability.buffs ? ability.buffs : this.buffs;
+    this.killers = ability.killers ? ability.killers : this.killers;
 
     if (ability.type) {
       this.type = ability.type;

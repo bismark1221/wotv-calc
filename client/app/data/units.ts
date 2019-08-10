@@ -47155,6 +47155,20 @@ export const UNITS: any[] = [
         "value": 800,
         "rarity": 7
       }
+    ],
+    "passiveKillers": [
+      {
+        "race": "demon",
+        "physic": 50,
+        "magic": 50,
+        "rarity": 6
+      },
+      {
+        "race": "human",
+        "physic": 50,
+        "magic": 50,
+        "rarity": 6
+      }
     ]
   },
   {

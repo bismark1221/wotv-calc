@@ -55,7 +55,8 @@ export class DamageService {
   constructor(private unitService: UnitService) {}
 
   calculateTotalDamage(unit, monster, rounds) {
-    this.result = {};
+    this.result = {unit: {}, monster: {}, damage: {}};
+
     unit = JSON.parse(JSON.stringify(unit));
 
     this.unit.atk.total = unit.stats.atk.total ? unit.stats.atk.total : unit.stats.atk.base + unit.stats.atk.potValue;
@@ -227,12 +228,36 @@ export class DamageService {
 
 
   private addBreaks(ability) {
+    ability.breaks.forEach(newBreak => {
+      let alreadyBreak = false;
+      this.monster.breaks.abilities.forEach(oldBreak => {
+        if (newBreak.value === oldBreak.value) {
+          alreadyBreak = true;
+          oldBreak.turn = newBreak.turn;
+        }
+      });
 
+      if (!alreadyBreak) {
+        this.monster.breaks.abilities.push(JSON.parse(JSON.stringify(newBreak)));
+      }
+    });
   };
 
 
   private addBuffs(ability) {
+    ability.buffs.forEach(newBuff => {
+      let alreadyBuff = false;
+      this.unit.buffs.abilities.forEach(oldBuff => {
+        if (newBuff.value === oldBuff.value) {
+          alreadyBuff = true;
+          oldBuff.turn = newBuff.turn;
+        }
+      });
 
+      if (!alreadyBuff) {
+        this.unit.buffs.abilities.push(JSON.parse(JSON.stringify(newBuff)));
+      }
+    });
   };
 
 
@@ -253,16 +278,19 @@ export class DamageService {
   };
 
   private reduceTurns() {
-    let boostToRemove = [];
-    this.unit.boostModifier.forEach((boost, boostIndex) => {
-      boost.turn -= 1;
-      if (boost.turn === 0) {
-        boostToRemove.unshift(boostIndex);
-      }
-    })
+    let TypesToRemove = ["breaks", "buffs", "boostModifier"];
+    TypesToRemove.forEach(type => {
+      let elementToRemove = [];
+      this.unit[type].forEach((element, elementIndex) => {
+        element.turn -= 1;
+        if (element.turn === 0) {
+          elementToRemove.unshift(elementIndex);
+        }
+      })
 
-    boostToRemove.forEach(boostIndex => {
-      this.unit.boostModifier.splice(boostIndex, 1);
+      elementToRemove.forEach(elementIndex => {
+        this.unit[type].splice(elementIndex, 1);
+      });
     });
   }
 
