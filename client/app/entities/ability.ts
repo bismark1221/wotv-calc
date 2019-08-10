@@ -22,6 +22,7 @@ export class Ability {
   framesList?: any[] = [0];
   elements?: string[] = [];
   imperils?: any[] = [];
+  boostModifiers?: any[] = [];
   hitDamage?: any[] = [];
   range?: any = {
     min: 0,
@@ -42,6 +43,7 @@ export class Ability {
     this.dualable = typeof ability.dualable == 'boolean' ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
     this.imperils = ability.imperils ? ability.imperils : this.imperils;
+    this.boostModifiers = ability.boostModifiers ? ability.boostModifiers : this.boostModifiers;
 
     if (ability.type) {
       this.type = ability.type;

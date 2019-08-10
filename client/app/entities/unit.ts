@@ -65,6 +65,7 @@ export class Unit {
     spr: 0
   };
   imbues = [];
+  passiveBoostModifiers = [];
   lbDamage: number = 1;
   jumpDamage: number = 1;
   canDualSkill: boolean = true;
@@ -107,6 +108,7 @@ export class Unit {
       this.breaks = unit.breaks ? unit.breaks : this.breaks;
       this.rarity = unit.rarity ? unit.rarity : this.rarity;
       this.rarity.value = unit.rarity && unit.rarity.value ? unit.rarity.value : this.rarity.max;
+      this.passiveBoostModifiers = unit.passiveBoostModifiers ? unit.passiveBoostModifiers : this.passiveBoostModifiers;
     }
   }
 

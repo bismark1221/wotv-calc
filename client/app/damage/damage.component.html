@@ -14,6 +14,39 @@
         </div>
       </div>
 
+
+
+
+      <div *ngIf="unit.id !== 'unselect'">
+        <h2>Rounds</h2>
+        <div *ngFor="let round of rounds; let roundIndex = index">
+
+
+
+          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop">
+            <label for="unit_ability">Round {{ roundIndex + 1 }}</label>
+
+            <div *ngFor="let abilityIndex of round.castNumber">
+              <select class="form-control" id="unit_ability_{{abilityIndex}}" [(ngModel)]="round.selectedAbilities[abilityIndex]" (ngModelChange)="onChangeSkill(roundIndex, abilityIndex)">
+                <option *ngFor="let unitAbility of getAvailableAbilities(roundIndex, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
+              </select>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="selectRightZoneTwoThirdDividedInThird">
+          <button class="btn btn-secondary fullWidth" type="button" (click)="addRound()">Add round</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
       <div *ngIf="unit.id !== 'unselect'">
         <h2>Unit stats</h2>
 
@@ -192,34 +225,5 @@
         </div>
       </div>
 
-
-
-
-      <div *ngIf="unit.id !== 'unselect'">
-        <h2>Rounds</h2>
-        <div *ngFor="let round of rounds; let roundIndex = index">
-
-
-
-          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop">
-            <label for="unit_ability">Round {{ roundIndex + 1 }}</label>
-
-            <div *ngFor="let abilityIndex of round.castNumber">
-              <select class="form-control" id="unit_ability_{{abilityIndex}}" [(ngModel)]="round.selectedAbilities[abilityIndex]" (ngModelChange)="onChangeSkill(roundIndex, abilityIndex)">
-                <option *ngFor="let unitAbility of getAvailableAbilities(roundIndex, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
-              </select>
-            </div>
-          </div>
-
-
-
-        </div>
-
-        <div class="selectRightZoneTwoThirdDividedInThird">
-          <button class="btn btn-secondary fullWidth" type="button" (click)="addRound()">Add round</button>
-        </div>
-      </div>
-
-    </div>
   </div>
 </div>
