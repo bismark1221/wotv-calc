@@ -24,6 +24,10 @@ export class DamageService {
       passive: {},
       abilities: []
     },
+    imperils: {
+      passive: {},
+      abilities: []
+    },
     imbues: {
       passive: [],
       abilities: []
@@ -53,7 +57,8 @@ export class DamageService {
       },
       abilities: []
     },
-    races: []
+    races: [],
+    resistances: []
   };
 
   result = {
@@ -87,6 +92,7 @@ export class DamageService {
     this.monster.breaks.passive.def = unit.breaks.def;
     this.monster.breaks.passive.spr = unit.breaks.spr;
     this.monster.races = monster.races;
+    this.monster.resistances = monster.resistances;
 
     this.unit.dualWield = unit.damageWeapons[0].type === "noWeapon" || unit.damageWeapons[1].type === "noWeapon" ? false : true;
     this.unit.weapons = unit.damageWeapons;
@@ -99,6 +105,7 @@ export class DamageService {
     this.updatePassiveKillers(unit);
     this.updatePassiveModifiers(unit);
     this.updatePassiveImbues(unit);
+    this.updatePassiveImperils(unit);
 
     this.calculateDamage(rounds);
 
@@ -112,8 +119,7 @@ export class DamageService {
     for (let i =0; i <2; i++) {
       if (unit.damageWeapons[i].type !== "noWeapon") {
         unit.damageWeapons[i].elements.forEach(element => {
-          let indexElement = this.unit.imbues.passive.indexOf(element, 0);
-          if (indexElement === -1) {
+          if (this.unit.imbues.passive.indexOf(element, 0) === -1) {
             this.unit.imbues.passive.push(element);
           }
         });
@@ -136,6 +142,15 @@ export class DamageService {
         }
       }
     })
+  };
+
+  private updatePassiveImperils(unit) {
+    this.unit.imperils.passive = {};
+    Object.keys(unit.imperils).forEach(element => {
+      if (!this.unit.imperils.passive[element]) {
+        this.unit.imperils.passive[element] = unit.imperils[element];
+      }
+    });
   };
 
   private updatePassiveModifiers(unit) {
@@ -183,30 +198,23 @@ export class DamageService {
             atk = this.getRealUnitStat("atk");
           }
 
-          ability.elementResistances = 1;
+
+
           let jumpDamage = 1;
+          let lbDamage = 1;
+
+
+
+          let elementResistances = this.getElementResistances(ability, "physic");
           let modifier = this.getRealModifier(ability);
 
           let atkDamage = atk / (this.getRealMonsterStat("def") * ((100 - ability.ignore) / 100))
-            * modifier * this.unit.levelCorrection * (this.unit.weapons[0].varianceMin / 100) * round.chainMod[abilityIndex] * this.getRealKiller("physic") * jumpDamage * ability.elementResistances;
+            * modifier * this.unit.levelCorrection * (this.unit.weapons[0].varianceMin / 100) * round.chainMod[abilityIndex] * this.getRealKiller("physic") * jumpDamage * elementResistances;
 
           let magDamage = this.getRealUnitStat("mag") / (this.getRealMonsterStat("spr") * ((100 - ability.ignore) / 100))
-            * modifier * this.unit.levelCorrection * round.chainMod[abilityIndex] * this.getRealKiller("magic") * ability.elementResistances;
+            * modifier * this.unit.levelCorrection * round.chainMod[abilityIndex] * this.getRealKiller("magic") * elementResistances;
 
-          // console.log("atk : " + atk)
-          // console.log("this.monster.def.real : " + this.monster.def.real)
-          // console.log("ability.ignore : " + ability.ignore)
-          // console.log("ability.base : " + ability.base)
-          // console.log("this.unit.levelCorrection : " + this.unit.levelCorrection)
-          // console.log("this.unit.weapons[0].varianceMin : " + this.unit.weapons[0].varianceMin)
-          // console.log("ability.chainMod : " + ability.chainMod)
-          // console.log("killerPourcentage : " + killerPourcentage)
-          // console.log("jumpDamage : " + jumpDamage)
-          // console.log("ability.elementResistances : " + ability.elementResistances)
-          // console.log("RESULT ATK : " + atkDamage)
-          // console.log("RESULT MAG : " + magDamage)
-
-          this.result.damage[roundIndex].abilities.push((atkDamage + magDamage) / 2 * 0.85);
+          this.result.damage[roundIndex].abilities.push((atkDamage + magDamage) / 2);
         }
 
         this.finalizeAbility(ability);
@@ -277,11 +285,57 @@ export class DamageService {
     return killer;
   }
 
+  private getElementResistances(ability, type) {
+    let elementResistance = 1;
+
+    let unitElements = ability.elements;
+
+    if (type === "physic"){
+      this.unit.imbues.passive.forEach(element => {
+        if (unitElements.indexOf(element, 0) === -1) {
+          unitElements.push(element);
+        }
+      });
+
+      this.unit.imbues.abilities.forEach(element => {
+        if (unitElements.indexOf(element.element, 0) === -1) {
+          unitElements.push(element.element);
+        }
+      });
+    }
+
+    unitElements.forEach(element => {
+      let resistance = this.monster.resistances[element] ? this.monster.resistances[element] : 0;
+      let unitImperil = 0;
+
+      if (this.unit.imperils.passive[element]) {
+        unitImperil = this.unit.imperils.passive[element];
+      }
+
+      this.unit.imperils.abilities.forEach(imperil => {
+        if (imperil.type === element && unitImperil < imperil.value) {
+          unitImperil = imperil.value
+        }
+      });
+      resistance -= unitImperil;
+
+      elementResistance += (-resistance / unitElements.length) / 100;
+    });
+
+    return elementResistance;
+  }
+
+
+/// 50 - 100 = -50 ==> 50
+/// 50 - 25 = 25 ==> -25
+
   private initializeAbility(ability) {
     this.addBreaks(ability);
     this.addBuffs(ability);
     this.addModifierBoosts(ability);
     this.addKillers(ability);
+    this.addImbues(ability);
+    this.addImperils(ability);
   }
 
   private finalizeAbility(ability) {
@@ -327,7 +381,7 @@ export class DamageService {
         this.unit.buffs.abilities.push(JSON.parse(JSON.stringify(newBuff)));
       }
     });
-  };
+  }
 
 
   private addKillers(ability) {
@@ -344,7 +398,7 @@ export class DamageService {
         this.unit.killers.abilities.push(JSON.parse(JSON.stringify(newKiller)));
       }
     });
-  };
+  }
 
 
   private addModifierBoosts(ability) {
@@ -361,7 +415,42 @@ export class DamageService {
         this.unit.boostModifier.push(JSON.parse(JSON.stringify(newBoost)));
       }
     });
-  };
+  }
+
+
+  private addImbues(ability) {
+    ability.imbues.forEach(newImbue => {
+      let alreadyImbue = false;
+      this.unit.imbues.abilities.forEach(oldImbue => {
+        if (newImbue.type === oldImbue.type) {
+          alreadyImbue = true;
+          oldImbue.turn = newImbue.turn;
+        }
+      });
+
+      if (!alreadyImbue) {
+        this.unit.imbues.abilities.push(JSON.parse(JSON.stringify(newImbue)));
+      }
+    });
+  }
+
+
+  private addImperils(ability) {
+    ability.imperils.forEach(newImperil => {
+      let alreadyImperil = false;
+      this.unit.imperils.abilities.forEach(oldImperil => {
+        if (newImperil.type === oldImperil.type && newImperil.value === oldImperil.value) {
+          alreadyImperil = true;
+          oldImperil.turn = newImperil.turn;
+        }
+      });
+
+      if (!alreadyImperil) {
+        this.unit.imperils.abilities.push(JSON.parse(JSON.stringify(newImperil)));
+      }
+    });
+  }
+
 
   private reduceTurns() {
     let TypesToRemove = [["monster", "breaks"], ["unit", "buffs"], ["unit", "killers"]];

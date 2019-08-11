@@ -64,12 +64,8 @@ export class Unit {
     def: 0 ,
     spr: 0
   };
-  imbues = [];
   passiveBoostModifiers = [];
   passiveKillers = [];
-  lbDamage: number = 1;
-  jumpDamage: number = 1;
-  canDualSkill: boolean = true;
 
   constructFromJson(unit: Unit, translateService: TranslateService, damage: boolean = false): void {
     this.id = unit.id ? unit.id : unit.dataId;
@@ -94,7 +90,6 @@ export class Unit {
     this.multipleWhite = unit.multipleWhite ? unit.multipleWhite : this.multipleWhite;
     this.multipleGreen = unit.multipleGreen ? unit.multipleGreen : this.multipleGreen;
     this.maxChainCap = unit.maxChainCap ? unit.maxChainCap : this.maxChainCap;
-    this.canDualSkill = typeof unit.dual == 'boolean' ? unit.canDualSkill : this.canDualSkill;
 
     if (damage) {
       this.level = unit.level ? unit.level : this.level;
@@ -103,9 +98,6 @@ export class Unit {
       this.dataStats = unit.dataStats ? unit.dataStats : this.dataStats;
       this.killers = unit.killers ? unit.killers : this.killers;
       this.buffs = unit.buffs ? unit.buffs : this.buffs;
-      this.imbues = unit.imbues ? unit.imbues : this.imbues;
-      this.lbDamage = unit.lbDamage ? unit.lbDamage : this.lbDamage;
-      this.jumpDamage = unit.jumpDamage ? unit.jumpDamage : this.jumpDamage;
       this.breaks = unit.breaks ? unit.breaks : this.breaks;
       this.rarity = unit.rarity ? unit.rarity : this.rarity;
       this.rarity.value = unit.rarity && unit.rarity.value ? unit.rarity.value : this.rarity.max;

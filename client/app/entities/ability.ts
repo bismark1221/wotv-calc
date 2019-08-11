@@ -31,6 +31,10 @@ export class Ability {
   breaks? = [];
   buffs? = [];
   killers? = [];
+  imbues? = [];
+  lbDamage?: number = 0;
+  jumpDamage?: number = 0;
+  canDualSkill?: boolean = true;
 
   constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
@@ -50,6 +54,10 @@ export class Ability {
     this.breaks = ability.breaks ? ability.breaks : this.breaks;
     this.buffs = ability.buffs ? ability.buffs : this.buffs;
     this.killers = ability.killers ? ability.killers : this.killers;
+    this.lbDamage = ability.lbDamage ? ability.lbDamage : this.lbDamage;
+    this.jumpDamage = ability.jumpDamage ? ability.jumpDamage : this.jumpDamage;
+    this.canDualSkill = typeof ability.canDualSkill == 'boolean' ? ability.canDualSkill : this.canDualSkill;
+    this.imbues = ability.imbues ? ability.imbues : this.imbues;
 
     if (ability.type) {
       this.type = ability.type;

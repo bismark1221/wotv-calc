@@ -231,9 +231,6 @@ export class DamageComponent implements OnInit {
         buff: 0
       }
     });
-    this.elements.forEach(element => {
-      this.unit.imperils[element] = 0;
-    });
     this.onChangeRarity();
 
     this.rounds = [];
