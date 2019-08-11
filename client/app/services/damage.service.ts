@@ -24,6 +24,10 @@ export class DamageService {
       passive: {},
       abilities: []
     },
+    imbues: {
+      passive: [],
+      abilities: []
+    },
     levelCorrection: 1,
     abilities: [],
     rarity: 7,
@@ -89,12 +93,12 @@ export class DamageService {
 
     this.unit.abilities = unit.abilities;
 
-
     // Maths !!!
     this.unit.levelCorrection = 1 + unit.level / 100;
 
     this.updatePassiveKillers(unit);
     this.updatePassiveModifiers(unit);
+    this.updatePassiveImbues(unit);
 
     this.calculateDamage(rounds);
 
@@ -102,6 +106,19 @@ export class DamageService {
     this.result.monster = this.monster
 
     return this.result;
+  }
+
+  private updatePassiveImbues(unit) {
+    for (let i =0; i <2; i++) {
+      if (unit.damageWeapons[i].type !== "noWeapon") {
+        unit.damageWeapons[i].elements.forEach(element => {
+          let indexElement = this.unit.imbues.passive.indexOf(element, 0);
+          if (indexElement === -1) {
+            this.unit.imbues.passive.push(element);
+          }
+        });
+      }
+    }
   }
 
   private updatePassiveKillers(unit) {
