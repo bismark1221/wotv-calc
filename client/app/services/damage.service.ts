@@ -19,9 +19,12 @@ export class DamageService {
       passive: {},
       abilities: []
     },
+    killers: {
+      passive: {},
+      abilities: []
+    },
     levelCorrection: 1,
     abilities: [],
-    passiveBoostModifiers: [],
     rarity: 7,
     dualWield: false,
     weapons: [],
@@ -43,7 +46,8 @@ export class DamageService {
         spr: 0
       },
       abilities: []
-    }
+    },
+    races: []
   };
 
   result = {
@@ -72,18 +76,19 @@ export class DamageService {
     this.monster.spr.base = monster.stats.spr;
     this.monster.breaks.passive.def = unit.breaks.def;
     this.monster.breaks.passive.spr = unit.breaks.spr;
+    this.monster.races = monster.races;
 
     this.unit.dualWield = unit.damageWeapons[0].type === "noWeapon" || unit.damageWeapons[1].type === "noWeapon" ? false : true;
     this.unit.weapons = unit.damageWeapons;
 
     this.unit.abilities = unit.abilities;
-    this.unit.passiveBoostModifiers = unit.passiveBoostModifiers ? unit.passiveBoostModifiers : [];
 
 
     // Maths !!!
     this.unit.levelCorrection = 1 + unit.level / 100;
 
-    this.updatePassiveModifier();
+    this.updatePassiveKillers(unit);
+    this.updatePassiveModifiers(unit);
 
     this.calculateDamage(rounds);
 
@@ -93,8 +98,25 @@ export class DamageService {
     return this.result;
   }
 
-  private updatePassiveModifier() {
-    this.unit.passiveBoostModifiers.forEach(boost => {
+  private updatePassiveKillers(unit) {
+    this.unit.killers.passive = {};
+    unit.passiveKillers.forEach(killer => {
+      if (this.unit.rarity >= killer.rarity) {
+        if (!this.unit.killers.passive[killer.race]) {
+          this.unit.killers.passive[killer.race] = {
+            physic: killer.physic,
+            magic: killer.magic
+          }
+        } else {
+          this.unit.killers.passive[killer.race].physic += killer.physic;
+          this.unit.killers.passive[killer.race].magic += killer.magic;
+        }
+      }
+    })
+  };
+
+  private updatePassiveModifiers(unit) {
+    unit.passiveBoostModifiers.forEach(boost => {
       if (this.unit.rarity >= boost.rarity) {
         this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, boost.id)].base += boost.value;
       }
@@ -138,14 +160,14 @@ export class DamageService {
 
           ability.chainMod = 1;
           ability.elementResistances = 1;
-          let killerPourcentage = 1;
           let jumpDamage = 1;
+          let modifier = this.getRealModifier(ability);
 
           let atkDamage = atk / (this.getRealMonsterStat("def") * ((100 - ability.ignore) / 100))
-            * this.getRealModifier(ability) * this.unit.levelCorrection * (this.unit.weapons[0].varianceMin / 100) * ability.chainMod * killerPourcentage * jumpDamage * ability.elementResistances;
+            * modifier * this.unit.levelCorrection * (this.unit.weapons[0].varianceMin / 100) * ability.chainMod * this.getRealKiller("physic") * jumpDamage * ability.elementResistances;
 
           let magDamage = this.getRealUnitStat("mag") / (this.getRealMonsterStat("spr") * ((100 - ability.ignore) / 100))
-            * this.getRealModifier(ability) * this.unit.levelCorrection * ability.chainMod * killerPourcentage * ability.elementResistances;
+            * modifier * this.unit.levelCorrection * ability.chainMod * this.getRealKiller("magic") * ability.elementResistances;
 
           // console.log("atk : " + atk)
           // console.log("this.monster.def.real : " + this.monster.def.real)
@@ -209,10 +231,28 @@ export class DamageService {
     return this.monster[type].base * ((100 - bestBreak) / 100);
   }
 
+  private getRealKiller(type) {
+    let killer = 1;
+    this.monster.races.forEach(race => {
+      console.log(this.unit.killers.passive[race])
+      if (this.unit.killers.passive[race]) {
+        killer += (this.unit.killers.passive[race][type] / 100) / this.monster.races.length;
+      }
+    });
+
+    console.log("!!!!! TODO GET ABILITIY KILLER !!!!!")
+
+    console.log("killers")
+    console.log(killer)
+
+    return killer;
+  }
+
   private initializeAbility(ability) {
     this.addBreaks(ability);
     this.addBuffs(ability);
     this.addModifierBoosts(ability);
+    this.addKillers(ability);
   }
 
   private finalizeAbility(ability) {
@@ -261,6 +301,23 @@ export class DamageService {
   };
 
 
+  private addKillers(ability) {
+    ability.killers.forEach(newKiller => {
+      let alreadyKiller = false;
+      this.unit.killers.abilities.forEach(oldKiller => {
+        if (newKiller.race === newKiller.race && (newKiller.physic === oldKiller.physic || newKiller.magic === oldKiller.magic)) {
+          alreadyKiller = true;
+          oldKiller.turn = newKiller.turn;
+        }
+      });
+
+      if (!alreadyKiller) {
+        this.unit.killers.abilities.push(JSON.parse(JSON.stringify(newKiller)));
+      }
+    });
+  };
+
+
   private addModifierBoosts(ability) {
     ability.boostModifiers.forEach(newBoost => {
       let alreadyBoosted = false;
@@ -278,10 +335,10 @@ export class DamageService {
   };
 
   private reduceTurns() {
-    let TypesToRemove = ["breaks", "buffs", "boostModifier"];
+    let TypesToRemove = [["monster", "breaks"], ["unit", "buffs"], ["unit", "killers"]];
     TypesToRemove.forEach(type => {
       let elementToRemove = [];
-      this.unit[type].forEach((element, elementIndex) => {
+      this[type[0]][type[1]].abilities.forEach((element, elementIndex) => {
         element.turn -= 1;
         if (element.turn === 0) {
           elementToRemove.unshift(elementIndex);
@@ -289,8 +346,20 @@ export class DamageService {
       })
 
       elementToRemove.forEach(elementIndex => {
-        this.unit[type].splice(elementIndex, 1);
+        this[type[0]][type[1]].abilities.splice(elementIndex, 1);
       });
+    });
+
+    let elementToRemove = [];
+    this.unit.boostModifier.forEach((element, elementIndex) => {
+      element.turn -= 1;
+      if (element.turn === 0) {
+        elementToRemove.unshift(elementIndex);
+      }
+    })
+
+    elementToRemove.forEach(elementIndex => {
+      this.unit.boostModifier.splice(elementIndex, 1);
     });
   }
 

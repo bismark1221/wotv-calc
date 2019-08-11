@@ -863,17 +863,19 @@ export class JsonService {
       }
 
       for (let i = 0; i <= 7; i++) {
-        this.ffbeChainUnits[unitId].abilities[id].killers.push({
-          race: this.killerRaces[find.effect[i][0]],
-          physic: find.effect[i][1],
-          magic: 0,
-          turn: find.effect[8]
-        });
+        if (find.effect[i][1] > 0) {
+          this.ffbeChainUnits[unitId].abilities[id].killers.push({
+            race: this.killerRaces[find.effect[i][0]],
+            physic: find.effect[i][1],
+            magic: 0,
+            turn: find.effect[8]
+          });
+        }
       }
     }
 
     //0, 3, 93, [[5,  100], -1, -1, -1, -1, -1, -1, -1, 2, 1]
-    find = this.findEffect(rawEffect, [92]);
+    find = this.findEffect(rawEffect, [93]);
 
     if (find) {
       if (!this.ffbeChainUnits[unitId].abilities[id].killers) {
@@ -881,12 +883,14 @@ export class JsonService {
       }
 
       for (let i = 0; i <= 7; i++) {
-        this.ffbeChainUnits[unitId].abilities[id].killers.push({
-          race: this.killerRaces[find.effect[i][0]],
-          physic: 0,
-          magic: find.effect[i][1],
-          turn: find.effect[8]
-        });
+        if (find.effect[i][1] > 0) {
+          this.ffbeChainUnits[unitId].abilities[id].killers.push({
+            race: this.killerRaces[find.effect[i][0]],
+            physic: 0,
+            magic: find.effect[i][1],
+            turn: find.effect[8]
+          });
+        }
       }
     }
 
@@ -904,12 +908,6 @@ export class JsonService {
         magic: find.effect[2],
         rarity: rarity
       });
-
-      if (this.ffbeChainUnits[unitId].names.en === "Elena") {
-        console.log("FIND KILLER")
-        console.log(find.effect)
-        console.log(this.ffbeChainUnits[unitId].passiveKillers)
-      }
     }
   }
 
