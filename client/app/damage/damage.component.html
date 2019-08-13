@@ -7,7 +7,7 @@
           <select2
             [data]="observableUnits"
             [value]="unit.id"
-            [position]="i"
+            [position]="0"
             [options]="select2Options"
             (valueChanged)="onChangeUnit($event.value);"></select2>
           <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && unit.id < 10000" />

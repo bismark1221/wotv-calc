@@ -37329,9 +37329,45 @@ export const UNITS: any[] = [
       "fr": "Pâquerette",
       "de": "Ostera"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 24
+        },
+        "mag": {
+          "base": 96,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 159,
+          "pot": 34
+        },
+        "mag": {
+          "base": 124,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 65
+        },
+        "mag": {
+          "base": 161,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912164,
+        "dataId": 912164,
         "names": {
           "en": "Shock Flash",
           "tw": "震撼閃光",
@@ -37342,64 +37378,226 @@ export const UNITS: any[] = [
         },
         "base": 300,
         "hitDamage": [
-          14, 14, 14, 14, 14, 15, 15
+          14,
+          14,
+          14,
+          14,
+          14,
+          15,
+          15
         ],
         "castTime": 7,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          25, 10, 11, 10, 10, 10, 10
+          25,
+          10,
+          11,
+          10,
+          10,
+          10,
+          10
         ]
       },
       {
-        "id": 912169,
+        "dataId": 912166,
         "names": {
-          "en": "Shock Reflex",
-          "tw": "震撼反射",
-          "kr": "충격 반사",
-          "fr": "Réflexes éclair",
-          "de": "Schockreflex",
-          "es": "Reflejo electrizante"
+          "en": "Shatter Arms + 1",
+          "tw": "粉碎武裝 + 1",
+          "kr": "무기 분쇄 + 1",
+          "fr": "Fracasse-arme + 1",
+          "de": "Waffen zerschmettern + 1",
+          "es": "Quebrantabrazos + 1"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 50,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "dataId": 912167,
+        "names": {
+          "en": "Shatter Guard + 1",
+          "tw": "粉碎防禦 + 1",
+          "kr": "방어구 분쇄 + 1",
+          "fr": "Fracasse-garde + 1",
+          "de": "Schilde zerschmettern + 1",
+          "es": "Quebrantaguardia + 1"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "dataId": 912169,
+        "names": {
+          "en": "Shock Reflex + 1",
+          "tw": "震撼反射 + 1",
+          "kr": "충격 반사 + 1",
+          "fr": "Réflexes éclair + 1",
+          "de": "Schockreflex + 1",
+          "es": "Reflejo electrizante + 1"
         },
         "base": 240,
         "hitDamage": [
-          4, 4, 4, 4, 4.333333333333334, 6.333333333333334, 6.666666666666668, 8, 8, 8, 8, 8.666666666666668, 12.666666666666668, 13.333333333333336
+          4,
+          4,
+          4,
+          4,
+          4.333333333333334,
+          6.333333333333334,
+          6.666666666666668,
+          8,
+          8,
+          8,
+          8,
+          8.666666666666668,
+          12.666666666666668,
+          13.333333333333336
         ],
         "castTime": 54,
         "elements": [
           "lightning"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          35,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912173,
+        "dataId": 912171,
         "names": {
-          "en": "Storm Brand",
-          "tw": "風暴烙印",
-          "kr": "폭풍 검",
-          "fr": "Signe des tempêtes",
-          "de": "Sturmzeichen",
-          "es": "Marca de tormenta"
+          "en": "Charged Protection",
+          "tw": "充能守護",
+          "kr": "방어 충전",
+          "fr": "Charge protectrice",
+          "de": "Geladener Schutz",
+          "es": "Protección recargada"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912173,
+        "names": {
+          "en": "Storm Brand + 1",
+          "tw": "風暴烙印 + 1",
+          "kr": "폭풍 검 + 1",
+          "fr": "Signe des tempêtes + 1",
+          "de": "Sturmzeichen + 1",
+          "es": "Marca de tormenta + 1"
         },
         "base": 280,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "elements": [
           "lightning"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
         "ignore": 50,
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912192,
+        "dataId": 912192,
         "names": {
           "en": "Static Barrage",
           "tw": "靜電彈幕",
@@ -37408,65 +37606,230 @@ export const UNITS: any[] = [
           "de": "Statisches Sperrfeuer",
           "es": "Ráfaga estática"
         },
-        "base": 450,
+        "base": 300,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          16
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 50,
+            "turn": 1
+          },
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 1
+          },
+          {
+            "stat": "mag",
+            "value": 50,
+            "turn": 1
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 1
+          }
+        ],
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
+          70,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7
         ]
       },
       {
-        "id": 912176,
+        "dataId": 912176,
         "names": {
-          "en": "Storm Calling",
-          "tw": "風暴呼喊",
-          "kr": "폭풍 호출",
-          "fr": "Appel des tempêtes",
-          "de": "Sturmrufen",
-          "es": "Llamada a la tormenta"
+          "en": "Storm Calling + 1",
+          "tw": "風暴呼喊 + 1",
+          "kr": "폭풍 호출 + 1",
+          "fr": "Appel des tempêtes + 1",
+          "de": "Sturmrufen + 1",
+          "es": "Llamada a la tormenta + 1"
         },
         "base": 430,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912180,
+        "dataId": 912180,
         "names": {
-          "en": "Demagnetizing Strike",
-          "tw": "消磁衝擊",
-          "kr": "자기소거 타격",
-          "fr": "Frappe démagnétisante",
-          "de": "Entmagnetisierender Schlag",
-          "es": "Golpe desimantador"
+          "en": "Demagnetizing Strike + 1",
+          "tw": "消磁衝擊 + 1",
+          "kr": "자기소거 타격 + 1",
+          "fr": "Frappe démagnétisante + 1",
+          "de": "Entmagnetisierender Schlag + 1",
+          "es": "Golpe desimantador + 1"
         },
         "base": 350,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
         "ignore": 50,
         "imperils": [
           {
             "type": "lightning",
-            "value": 75
+            "value": 75,
+            "turn": 3
           }
         ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912189,
+        "dataId": 912184,
+        "names": {
+          "en": "Combat Overdrive + 1",
+          "tw": "戰鬥超載 + 1",
+          "kr": "전투 혹사 + 1",
+          "fr": "Surtension de combat + 1",
+          "de": "Kampfüberladung + 1",
+          "es": "Superdirecta bélica + 1"
+        },
+        "castTime": 55,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912173,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          },
+          {
+            "id": 912176,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          },
+          {
+            "id": 912180,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          },
+          {
+            "id": 912192,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          }
+        ],
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "dataId": 912187,
+        "names": {
+          "en": "Shock Embrace",
+          "tw": "震撼之擁",
+          "kr": "충격 수용",
+          "fr": "Vague électromagnétique",
+          "de": "Schockende Umarmung",
+          "es": "Abrazo electrizante"
+        },
+        "canDualSkill": false,
+        "castTime": 5,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 100,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912189,
         "names": {
           "en": "Storm Clouds",
           "tw": "風暴將至",
@@ -37477,55 +37840,91 @@ export const UNITS: any[] = [
         },
         "base": 1100,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
+        "canDualSkill": false,
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912176,
+            "value": 300,
+            "turn": 2,
+            "uniqueIdentifier": 912189
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912190,
+        "dataId": 912190,
         "names": {
-          "en": "Bolting Strike",
-          "tw": "雷電衝擊",
-          "kr": "번개같은 타격",
-          "fr": "Fulguro-frappe",
-          "de": "Flächenblitz",
-          "es": "Golpe relámpago"
+          "en": "Bolting Strike + 1",
+          "tw": "雷電衝擊 + 1",
+          "kr": "번개같은 타격 + 1",
+          "fr": "Fulguro-frappe + 1",
+          "de": "Flächenblitz + 1",
+          "es": "Golpe relámpago + 1"
         },
         "base": 400,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
-        "ignore": 50,
-        "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
-        ]
-      },
-      {
-        "id": 401006807,
-        "names": {
-          "en": "Raikiri",
-          "tw": "雷切",
-          "kr": "라이키리"
-        },
-        "base": 1390,
-        "hitDamage": [
-          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+        "effectOrder": [
+          "damage",
+          "break"
         ],
-        "dualable": false,
-        "offset": 8,
         "ignore": 50,
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 5
+          }
+        ],
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 950000007,
+        "dataId": 950000007,
         "names": {
           "en": "Absolute Raikiri + 1",
           "tw": "神·雷切 + 1",
@@ -37534,26 +37933,255 @@ export const UNITS: any[] = [
           "de": "Ultimativer Raikiri + 1",
           "es": "Raikiri fulminante + 1"
         },
-        "base": 1590,
+        "base": 1400,
         "hitDamage": [
-          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          9,
+          9,
+          10
         ],
         "dualable": false,
-        "offset": 8,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "ignore": 50,
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "dataId": 912197,
+        "names": {
+          "en": "Absolute Tempest Shift + 1",
+          "tw": "極致風暴轉換 + 1",
+          "kr": "순폭풍의 움직임 + 1",
+          "fr": "Conversion tempétueuse absolue + 1",
+          "de": "Absoluter Sturmwechsel + 1",
+          "es": "Supercambio tempestuoso + 1"
+        },
+        "base": 1500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "dataId": 401006807,
+        "names": {
+          "en": "Raikiri",
+          "tw": "雷切",
+          "kr": "라이키리"
+        },
+        "base": 1400,
+        "hitDamage": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          9,
+          9,
+          10
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ]
+      },
+      {
+        "dataId": 912196,
+        "names": {
+          "en": "Tempest Shift",
+          "tw": "風暴轉換",
+          "kr": "폭풍의 움직임",
+          "fr": "Conversion tempétueuse",
+          "de": "Sturmwechsel",
+          "es": "Cambio tempestuoso"
+        },
+        "base": 1500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          10
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": [
+          100,
+          100
+        ],
+        "magic": [
+          0,
+          0
+        ],
+        "rarity": 5
+      },
+      {
+        "physic": [
+          50,
+          50
+        ],
+        "magic": [
+          0,
+          0
+        ],
+        "rarity": 7
       }
     ],
     "multiCasts": [
       {
         "count": 3,
         "abilities": [
+          912166,
+          912167,
           912169,
           912173,
           912176,
           912180,
+          912184,
+          912186,
+          912188,
           912190,
           912189
         ]
@@ -37567,9 +38195,173 @@ export const UNITS: any[] = [
       "tw": "西路比",
       "kr": "실비"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 61,
+          "pot": 16
+        },
+        "mag": {
+          "base": 92,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 79,
+          "pot": 26
+        },
+        "mag": {
+          "base": 119,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 102,
+          "pot": 40
+        },
+        "mag": {
+          "base": 154,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912309,
+        "dataId": 912270,
+        "names": {
+          "en": "Withering Arms",
+          "tw": "凋零武裝",
+          "kr": "공격 쇠락",
+          "fr": "Panne de courant",
+          "de": "Rostende Waffen",
+          "es": "Machacabrazos"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912272,
+        "names": {
+          "en": "Withering Guard",
+          "tw": "凋零防禦",
+          "kr": "수비 쇠락",
+          "fr": "Baisse de tension",
+          "de": "Rostende Schilde",
+          "es": "Machacaguardia"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912276,
+        "names": {
+          "en": "Growing Offense",
+          "tw": "攻魔增長",
+          "kr": "공격진 성장",
+          "fr": "Croissance offensive",
+          "de": "Wachsende Offensive",
+          "es": "Superofensiva"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 120,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912277,
+        "names": {
+          "en": "Growing Defense",
+          "tw": "防精增長",
+          "kr": "방어진 성장",
+          "fr": "Défense offensive",
+          "de": "Wachsende Defensive",
+          "es": "Superdefensiva"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 120,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912309,
         "names": {
           "en": "Bunny Kick",
           "tw": "兔子踢",
@@ -37580,17 +38372,36 @@ export const UNITS: any[] = [
         },
         "base": 370,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 25,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912310,
+        "dataId": 912310,
         "names": {
           "en": "Mystical Egg",
           "tw": "神秘彩蛋",
@@ -37602,18 +38413,37 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 420,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 25,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912311,
+        "dataId": 912311,
         "names": {
           "en": "Cotton Tail",
           "tw": "棉絨尾巴",
@@ -37624,16 +38454,33 @@ export const UNITS: any[] = [
         },
         "base": 450,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912312,
+        "dataId": 912312,
         "names": {
           "en": "Enchanted Egg",
           "tw": "附魔彩蛋",
@@ -37645,13 +38492,332 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 500,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912281,
+        "names": {
+          "en": "Bolt Egg",
+          "tw": "雷電彩蛋",
+          "kr": "번개의 달걀",
+          "fr": "Œuf foudroyant",
+          "de": "Blitzei",
+          "es": "Huelámpago"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912282,
+        "names": {
+          "en": "Gravel Egg",
+          "tw": "砂礫彩蛋",
+          "kr": "자갈 달걀",
+          "fr": "Œuf sismique",
+          "de": "Schotterei",
+          "es": "Hueviterra"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "earth",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912284,
+        "names": {
+          "en": "Glitter Egg",
+          "tw": "閃爍彩蛋",
+          "kr": "반짝이는 달걀",
+          "fr": "Œuf étincelant",
+          "de": "Glitterei",
+          "es": "Huevrillo"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912285,
+        "names": {
+          "en": "Let me help!",
+          "tw": "我來幫忙！",
+          "kr": "도와드릴게요!",
+          "fr": "Besoin d'un coup de main ?",
+          "de": "Lass mich helfen!",
+          "es": "¿Te echo una mano?"
+        },
+        "base": 2000,
+        "hitDamage": [],
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912295,
+        "names": {
+          "en": "All pinned up!",
+          "tw": "濃妝艷抹",
+          "kr": "치장하기",
+          "fr": "Coquille de diamant",
+          "de": "Schön angezogen",
+          "es": "Arreglarse es de guapas"
+        },
+        "base": 0,
+        "hitDamage": [],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 20,
+            "turn": 20
+          },
+          {
+            "stat": "def",
+            "value": 20,
+            "turn": 20
+          },
+          {
+            "stat": "mag",
+            "value": 20,
+            "turn": 20
+          },
+          {
+            "stat": "spr",
+            "value": 20,
+            "turn": 20
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912301,
+        "names": {
+          "en": "Hop into battle!",
+          "tw": "跳跳征戰！",
+          "kr": "싸움꾼 토끼 친구!",
+          "fr": "Un saut en combat !",
+          "de": "In den Kampf gehüpft!",
+          "es": "¡Brincando a la batalla!"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912303,
+        "names": {
+          "en": "Hop to the rescue!",
+          "tw": "跳跳救援！",
+          "kr": "도우미 토끼 친구!",
+          "fr": "Un saut en défense !",
+          "de": "Zur Rettung gehüpft!",
+          "es": "¡Brincando al rescate!"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912305,
+        "names": {
+          "en": "Marian, watch over me!",
+          "tw": "瑪麗安，請看好吧！",
+          "kr": "지켜봐줘, 마리안!",
+          "fr": "Marianne, protège-moi !",
+          "de": "Marian, pass auf mich auf!",
+          "es": "¡Marián, vela por mí!"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 170,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912307,
+        "names": {
+          "en": "A Paladin's Duty",
+          "tw": "聖騎士的義務",
+          "kr": "팔라딘의 의무",
+          "fr": "Devoir de paladin",
+          "de": "Pflicht eines Paladins",
+          "es": "Deber de paladín"
+        },
+        "base": 3000,
+        "hitDamage": [],
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0
         ]
       }
     ],
@@ -37663,6 +38829,36 @@ export const UNITS: any[] = [
           912310,
           912311,
           912312
+        ]
+      },
+
+      {
+        "count": 3,
+        "abilities": [
+          912269,
+          912270,
+          912272,
+          912273,
+          912274,
+          912275,
+          912276,
+          912277,
+          912278,
+          912279,
+          912281,
+          912282,
+          912284,
+          912285,
+          912286,
+          912287,
+          912288,
+          912290,
+          912291,
+          912292,
+          912300,
+          912302,
+          912304,
+          912306
         ]
       }
     ]
@@ -39765,13 +40961,76 @@ export const UNITS: any[] = [
       "de": "Beta-Stern-Zeno",
       "es": "Zeno de la estrella Beta"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 24
+        },
+        "mag": {
+          "base": 96,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 159,
+          "pot": 34
+        },
+        "mag": {
+          "base": 126,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 65
+        },
+        "mag": {
+          "base": 164,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912337,
+        "dataId": 912336,
+        "names": {
+          "en": "Cold Blood - Flint",
+          "tw": "殘忍 ─石火─",
+          "kr": "무참-석화-",
+          "fr": "Sang froid - Silex",
+          "de": "Kaltblütig - Funke",
+          "es": "Sangre fría - Sílex"
+        },
+        "castTime": 25,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 75,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "dataId": 200330,
         "names": {
           "en": "Fingersnap",
           "tw": "醒夢",
-          "kr": "성몽",
+          "kr": "백일몽",
           "fr": "Éveil",
           "de": "Fieberwahn",
           "es": "Agudeza"
@@ -39782,12 +41041,35 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           70
         ]
       },
       {
-        "id": 912340,
+        "dataId": 912338,
+        "names": {
+          "en": "Dual Slash",
+          "tw": "二連斬",
+          "kr": "이연참",
+          "fr": "Double entaille",
+          "de": "Doppelschnitt",
+          "es": "Sablazo doble"
+        },
+        "base": 320,
+        "hitDamage": [],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912340,
         "names": {
           "en": "Mirror of Equity - Acuity",
           "tw": "明鏡・銳",
@@ -39798,16 +41080,72 @@ export const UNITS: any[] = [
         },
         "base": 300,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912351,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912353,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912354,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912370,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912371,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912341,
+        "dataId": 912341,
         "names": {
           "en": "Scorch",
           "tw": "陽炎",
@@ -39818,25 +41156,44 @@ export const UNITS: any[] = [
         },
         "base": 450,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
         "imperils": [
           {
             "type": "fire",
-            "value": 100
+            "value": 100,
+            "turn": 5
           }
         ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912346,
+        "dataId": 912346,
         "names": {
           "en": "Dismissal",
           "tw": "斷動",
@@ -39851,12 +41208,15 @@ export const UNITS: any[] = [
         ],
         "castTime": 15,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           1
         ]
       },
       {
-        "id": 912347,
+        "dataId": 912347,
         "names": {
           "en": "Blazing Heat - Ash",
           "tw": "炎熱 ─灰─",
@@ -39867,19 +41227,42 @@ export const UNITS: any[] = [
         },
         "base": 320,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          16
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
+          70,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7,
+          10
         ]
       },
       {
-        "id": 20290,
+        "dataId": 20290,
         "names": {
           "en": "Firaja",
           "tw": "強火焰",
@@ -39900,12 +41283,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           210
         ]
       },
       {
-        "id": 912349,
+        "dataId": 912349,
         "names": {
           "en": "Imminent Death",
           "tw": "死亡迫近",
@@ -39920,12 +41306,15 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           70
         ]
       },
       {
-        "id": 912350,
+        "dataId": 912350,
         "names": {
           "en": "Firaga Slash",
           "tw": "大火焰劍",
@@ -39936,20 +41325,45 @@ export const UNITS: any[] = [
         },
         "base": 300,
         "hitDamage": [
-          4.666666666666667, 4.666666666666667, 4.666666666666667, 4.666666666666667, 4.666666666666667, 5.000000000000001, 5.000000000000001, 66.66666666666667
+          4.666666666666667,
+          4.666666666666667,
+          4.666666666666667,
+          4.666666666666667,
+          4.666666666666667,
+          5.000000000000001,
+          5.000000000000001,
+          66.66666666666667
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imbue"
+        ],
         "ignore": 50,
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912351,
+        "dataId": 912351,
         "names": {
           "en": "Mirror of Equity - Disorder",
           "tw": "明鏡・亂",
@@ -39960,16 +41374,72 @@ export const UNITS: any[] = [
         },
         "base": 280,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912351,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912353,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912354,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912370,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912371,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912353,
+        "dataId": 912353,
         "names": {
           "en": "Mirror of Equity - Supremacy",
           "tw": "明鏡・霸",
@@ -39980,17 +41450,42 @@ export const UNITS: any[] = [
         },
         "base": 230,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
         "ignore": 50,
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 5
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912354,
+        "dataId": 912354,
         "names": {
           "en": "Absolute Mirror of Equity",
           "tw": "極・明鏡",
@@ -40001,17 +41496,35 @@ export const UNITS: any[] = [
         },
         "base": 650,
         "hitDamage": [
-          1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.153846153846154, 1.153846153846154, 92.3076923076923
+          1.0769230769230769,
+          1.0769230769230769,
+          1.0769230769230769,
+          1.0769230769230769,
+          1.0769230769230769,
+          1.153846153846154,
+          1.153846153846154,
+          92.3076923076923
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912357,
+        "dataId": 912357,
         "names": {
           "en": "Kaleido Slash",
           "tw": "三十虹連斬",
@@ -40022,16 +41535,77 @@ export const UNITS: any[] = [
         },
         "base": 400,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ]
       },
       {
-        "id": 912358,
+        "dataId": 912358,
         "names": {
           "en": "Crimson Flash",
           "tw": "紅閃",
@@ -40042,17 +41616,135 @@ export const UNITS: any[] = [
         },
         "base": 400,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912370,
+        "dataId": 912361,
+        "names": {
+          "en": "Seeing Red",
+          "tw": "赤甲能量",
+          "kr": "적갑능량",
+          "fr": "Vision rougeâtre",
+          "de": "Rotsehen",
+          "es": "Visión carmesí"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "dataId": 912367,
+        "names": {
+          "en": "Perfect Void",
+          "tw": "完全虛無境地",
+          "kr": "완전한 무의 경지",
+          "fr": "Néant impérieux",
+          "de": "Perfekte Leere",
+          "es": "Vacío perfecto"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 10
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912351,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912353,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912354,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912370,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912371,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "dataId": 912370,
         "names": {
           "en": "True Mirror of Equity",
           "tw": "真・明鏡",
@@ -40063,17 +41755,75 @@ export const UNITS: any[] = [
         },
         "base": 650,
         "hitDamage": [
-          3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.4615384615384612, 3.4615384615384612, 76.92307692307692
+          3.230769230769231,
+          3.230769230769231,
+          3.230769230769231,
+          3.230769230769231,
+          3.230769230769231,
+          3.4615384615384612,
+          3.4615384615384612,
+          76.92307692307692
         ],
+        "canDualSkill": false,
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "boostModifier"
+        ],
         "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912351,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912353,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912354,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912370,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912371,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912371,
+        "dataId": 912371,
         "names": {
           "en": "Obliterating Mirror of Equity's Roar",
           "tw": "絕·明鏡 ─咆哮─",
@@ -40084,17 +41834,35 @@ export const UNITS: any[] = [
         },
         "base": 1000,
         "hitDamage": [
-          1.4, 1.4, 1.4, 1.4, 1.4, 1.5, 1.5, 90
+          1.4,
+          1.4,
+          1.4,
+          1.4,
+          1.4,
+          1.5,
+          1.5,
+          90
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 401007607,
+        "dataId": 401007607,
         "names": {
           "en": "Subjection to Equity - Crimson",
           "tw": "必殺劍·紅",
@@ -40105,13 +41873,64 @@ export const UNITS: any[] = [
         },
         "base": 1490,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 61
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          61
         ],
         "dualable": false,
-        "offset": 8,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier",
+          "boostModifier"
+        ],
         "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 912354,
+            "value": 300,
+            "turn": 4,
+            "uniqueIdentifier": 1117
+          },
+          {
+            "id": 912371,
+            "value": 300,
+            "turn": 4,
+            "uniqueIdentifier": 1117
+          },
+          {
+            "id": 912370,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1118
+          }
+        ],
         "framesList": [
-          92, 17, 6, 6, 16, 6, 16, 6, 6, 16, 6, 16, 6, 20
+          92,
+          17,
+          6,
+          6,
+          16,
+          6,
+          16,
+          6,
+          6,
+          16,
+          6,
+          16,
+          6,
+          20
         ]
       }
     ],
@@ -40119,6 +41938,7 @@ export const UNITS: any[] = [
       {
         "count": 3,
         "abilities": [
+          912336,
           912340,
           912341,
           912346,
@@ -40130,6 +41950,8 @@ export const UNITS: any[] = [
           912354,
           912357,
           912358,
+          912366,
+          912369,
           912371,
           912370
         ]
