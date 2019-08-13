@@ -46266,6 +46266,32 @@ export const UNITS: any[] = [
     },
     "abilities": [
       {
+        "dataId": 912593,
+        "names": {
+          "en": "Unrivaled Swordsmanship",
+          "tw": "無敵劍技",
+          "kr": "무적 검기",
+          "fr": "Épéiste incomparable",
+          "de": "Unübertroffene Schwertkunst",
+          "es": "Esgrima inigualable"
+        },
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 20,
+            "turn": 0
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
         "dataId": 912591,
         "names": {
           "en": "Battle Insight",
@@ -46278,6 +46304,9 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
         "breaks": [
           {
             "stat": "atk",
@@ -46317,12 +46346,31 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 1200,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
@@ -46342,6 +46390,9 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           20
         ]
@@ -46359,6 +46410,10 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
         "imperils": [
           {
             "type": "water",
@@ -46389,6 +46444,10 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
         "imperils": [
           {
             "type": "lightning",
@@ -46419,12 +46478,178 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 800,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "dataId": 912568,
+        "names": {
+          "en": "Aurora Arts",
+          "tw": "極光劍技",
+          "kr": "극광 검기",
+          "fr": "Arts de l'aurore",
+          "de": "Aurorakunst",
+          "es": "Arte albo"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 10
+          },
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 10
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912571,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912572,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912570,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912567,
+        "names": {
+          "en": "Blossom Arts",
+          "tw": "冰華劍技",
+          "kr": "빙화 검기",
+          "fr": "Arts florissants",
+          "de": "Blütenkunst",
+          "es": "Arte floral"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912571,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912572,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912570,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          }
+        ],
+        "framesList": [
+          0
         ]
       },
       {
@@ -46444,6 +46669,10 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
         "boostModifiers": [
           {
             "id": 912578,
@@ -46473,6 +46702,11 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "boostModifier"
+        ],
         "imperils": [
           {
             "type": "ice",
@@ -46538,6 +46772,11 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff",
+          "boostModifier"
+        ],
         "buffs": [
           {
             "stat": "atk",
@@ -46579,6 +46818,11 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "boostModifier"
+        ],
         "imperils": [
           {
             "type": "light",
@@ -46641,12 +46885,33 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 1500,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          110,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ]
       },
       {
@@ -46662,6 +46927,10 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
         "imperils": [
           {
             "type": "ice",
@@ -46692,6 +46961,10 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
         "imperils": [
           {
             "type": "light",
@@ -46722,7 +46995,16 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 1800,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ],
         "castTime": 40,
         "elements": [
@@ -46730,6 +47012,10 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
         "imperils": [
           {
             "type": "ice",
@@ -46743,7 +47029,16 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          42,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
@@ -46760,6 +47055,10 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "boostModifier"
+        ],
         "imperils": [
           {
             "type": "ice",
@@ -46805,10 +47104,27 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "buff",
+          "boostModifier"
+        ],
         "imperils": [
           {
             "type": "light",
             "value": 75,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 250,
             "turn": 3
           }
         ],
@@ -46850,6 +47166,11 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "boostModifier",
+          "boostModifier"
+        ],
         "imperils": [
           {
             "type": "ice",
@@ -46881,92 +47202,6 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 912568,
-        "names": {
-          "en": "Aurora Arts",
-          "tw": "極光劍技",
-          "kr": "극광 검기",
-          "fr": "Arts de l'aurore",
-          "de": "Aurorakunst",
-          "es": "Arte albo"
-        },
-        "castTime": 10,
-        "dualable": false,
-        "offset": 14,
-        "boostModifiers": [
-          {
-            "id": 912569,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          },
-          {
-            "id": 912571,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          },
-          {
-            "id": 912572,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          },
-          {
-            "id": 912570,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          }
-        ],
-        "framesList": [
-          0
-        ]
-      },
-      {
-        "dataId": 912567,
-        "names": {
-          "en": "Blossom Arts",
-          "tw": "冰華劍技",
-          "kr": "빙화 검기",
-          "fr": "Arts florissants",
-          "de": "Blütenkunst",
-          "es": "Arte floral"
-        },
-        "castTime": 10,
-        "dualable": false,
-        "offset": 14,
-        "boostModifiers": [
-          {
-            "id": 912569,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          },
-          {
-            "id": 912571,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          },
-          {
-            "id": 912572,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          },
-          {
-            "id": 912570,
-            "value": 400,
-            "turn": 9999,
-            "uniqueIdentifier": 912567
-          }
-        ],
-        "framesList": [
-          0
-        ]
-      },
-      {
         "dataId": 401008407,
         "names": {
           "en": "Light of Salvation",
@@ -46979,10 +47214,45 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 4500,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 13
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          13
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff",
+          "boostModifier",
+          "boostModifier"
+        ],
         "buffs": [
           {
             "stat": "atk",
@@ -47056,7 +47326,36 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          28, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          28,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       }
     ],

@@ -1,7 +1,7 @@
 <div class="row unit form-group">
   <div class="chainParameters allSelectUnit" #chainDiv>
     <div class=" verticalTop selectUnitZone marginUnit0 expandedSelecUnit autoMargin">
-      <div class="inlineBlock firstSelectLevel">
+      <div class="inlineBlock firstSelectLevel" style="margin-left: 150px; margin-right: 150px;">
         <label for="unit">{{ 'chain.label.unit' | translate }} {{ 0 }}</label>
         <div>
           <select2
@@ -17,12 +17,9 @@
 
 
 
-      <div *ngIf="unit.id !== 'unselect'">
+      <div *ngIf="unit.id !== 'unselect'" style="width: 50%; display: inline-block;">
         <h2>Rounds</h2>
         <div *ngFor="let round of rounds; let roundIndex = index">
-
-
-
           <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop">
             <label for="unit_ability">Round {{ roundIndex + 1 }}</label>
 
@@ -32,9 +29,6 @@
               </select>
             </div>
           </div>
-
-
-
         </div>
 
         <div class="selectRightZoneTwoThirdDividedInThird">
@@ -42,8 +36,79 @@
         </div>
       </div>
 
-    </div>
+      <div *ngIf="unit.id !== 'unselect'" style="width: 50%; display: inline-block; vertical-align: top;">
+        <h2>Result</h2>
 
+        <div class="selectRightZoneTwoThirdDividedInThird">
+          <button class="btn btn-secondary fullWidth" type="button" (click)="calculateTotalDamage()">Re-calculate</button>
+        </div>
+
+        <div *ngIf="result.summary" class="selectRightZoneTwoThirdDividedInThird" style="width: 100%">
+          <table style="width: 100%">
+            <tr>
+              <td style="width: 50%">
+                By ability
+              </td>
+              <td style="width: 50%">
+                Total
+              </td>
+            </tr>
+            <tr *ngFor="let round of result.summary; let roundIndex = index" style="border-top: 1px solid black;">
+              <td>
+                <div *ngFor="let ability of result.damage[roundIndex].abilities; let abilityIndex = index">
+                  N°{{ abilityIndex}}: {{ ability | number : '1.0-0' }}
+                </div>
+              </td>
+              <td>
+                {{ result.damage[roundIndex].total | number : '1.0-0' }}
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div  *ngIf="result.summary" class="selectRightZoneTwoThirdDividedInThird" style="width: 100%">
+          <h5>Full summary</h5>
+          <div *ngFor="let round of result.summary; let roundIndex = index" style="border-top: 1px solid black;">
+            <div *ngFor="let ability of round; let abilityIndex = index">
+              N°{{ abilityIndex}}
+              <div *ngFor="let effect of ability">
+                <div *ngIf="effect.type === 'imperil'">
+                  Imperil {{ effect.value.element }} : {{ effect.value.value }}%
+                </div>
+
+                <div *ngIf="effect.type === 'buff'">
+                  Buff {{ effect.value.stat }} : {{ effect.value.value }}%
+                </div>
+
+                <div *ngIf="effect.type === 'break'">
+                  Break {{ effect.value.stat }} : {{ effect.value.value }}%
+                </div>
+
+                <div *ngIf="effect.type === 'modifierBoost'">
+                  Boost {{ unit.abilities[unitService.findPositionOfAbilityById(unit, effect.value.abilityId)].names.en }} : +{{ effect.value.value }}%
+                </div>
+
+                <div *ngIf="effect.type === 'imbue'">
+                  Imbue {{ effect.value.element }}
+                </div>
+
+                <div *ngIf="effect.type === 'damage'">
+                  Damage {{ effect.value.type }} : {{ effect.value.value | number : '1.0-0' }}<br />
+                  Break def : {{ effect.value.bestBreaks.def }}%, spr : {{ effect.value.bestBreaks.spr }}%<br />
+                  Buff atk : {{ effect.value.bestBuffs.atk }}%, mag : {{ effect.value.bestBuffs.mag }}%<br />
+                  Damage elements :
+                    <span *ngFor="let element of effect.value.damageElements">{{ element }}, </span><br />
+                  Element resistances :
+                    <span *ngFor="let element of objectKeys(effect.value.elementResistances)">{{ element }} : {{ effect.value.elementResistances[element] }}%, </span><br />
+                  Killers :
+                    <span *ngFor="let race of objectKeys(effect.value.killers)">{{ race }} : {{ effect.value.killers[race] }}%, </span><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

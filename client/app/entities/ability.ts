@@ -32,6 +32,7 @@ export class Ability {
   buffs? = [];
   killers? = [];
   imbues? = [];
+  effectOrder? = [];
   lbDamage?: number = 0;
   jumpDamage?: number = 0;
   canDualSkill?: boolean = true;
@@ -58,6 +59,7 @@ export class Ability {
     this.jumpDamage = ability.jumpDamage ? ability.jumpDamage : this.jumpDamage;
     this.canDualSkill = typeof ability.canDualSkill == 'boolean' ? ability.canDualSkill : this.canDualSkill;
     this.imbues = ability.imbues ? ability.imbues : this.imbues;
+    this.effectOrder = ability.effectOrder ? ability.effectOrder : this.effectOrder;
 
     if (ability.type) {
       this.type = ability.type;

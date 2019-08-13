@@ -76,6 +76,7 @@ export class ChainService {
     let unitHits = [];
     let countFrames = unit.framesGap;
     let startFrames = unit.framesGap;
+    let nbAbilities = unit.selectedAbilities.length;
 
     unit.multiAbilities = false;
 
@@ -97,7 +98,7 @@ export class ChainService {
         unitHits.push({frame: countFrames, type: index, damage: ability.hitDamage[i], abilityIndex: index});
       });
 
-      if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
+      if (unit.dual && ability.dualable && nbAbilities === 1) {
         unit.multiAbilities = true;
         countFrames = startFrames + ability.offset + ability.castTime;
         ability.framesList.forEach((hit, i) => {
@@ -110,7 +111,7 @@ export class ChainService {
       }
     });
 
-    if (unit.selectedAbilities.length > 1) {
+    if (nbAbilities > 1) {
       unit.multiAbilities = true;
     }
 

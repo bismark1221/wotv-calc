@@ -36,6 +36,7 @@ export class DamageComponent implements OnInit {
 
   availableRarities = [];
   rounds = [];
+  result = {};
   objectKeys = Object.keys;
   unit: any = {};
   monster: any = {};
@@ -78,10 +79,8 @@ export class DamageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.unit = {id: 'unselect', selectedIds: []};
+    this.unit = {id: 'unselect'};
     this.monster = new Monster();
-    console.log("MONSTER")
-    console.log(this.monster)
     this.onChangeUnit('unselect');
 
     this.getUnits();
@@ -258,9 +257,7 @@ export class DamageComponent implements OnInit {
     if (unitId === 'unselect') {
       this.unit = {
         id: 'unselect',
-        framesGap: 0,
-        selectedIds: [],
-        selectedAbilities: []
+        framesGap: 0
       };
     } else if (this.unit.id !== unitId) {
       if (unitId < 10000) {
@@ -271,8 +268,6 @@ export class DamageComponent implements OnInit {
 
       this.updateChangedUnit();
     }
-    console.log("UNIT")
-    console.log(this.unit)
   }
 
   onChangePot(type: string) {
@@ -340,30 +335,7 @@ export class DamageComponent implements OnInit {
       castNumber: [0]
     });
 
-
-    console.log(this.damageService.calculateTotalDamage(this.unit, this.monster, this.rounds))
-
-    /*
-
-    let ids = JSON.parse(JSON.stringify(abilitiesIds));
-
-    this.unit.selectedAbilities = [];
-    this.unit.selectedIds = ids;
-
-    if (ids.length === 0) {
-      ids.push(this.unit.abilities[0].id)
-      this.unit.selectedIds = [ids[0]];
-    }
-
-    ids.forEach((id, index) => {
-      this.unit.selectedAbilities[index] = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, id)]));
-      this.unit.selectedAbilities[index].activeRename = false;
-    });
-
-    this.updateMultiplePossibleAbilities();
-
-
-    */
+    this.calculateTotalDamage();
   }
 
   getAvailableAbilities(roundIndex: number, abilityPosition: number) {
@@ -374,8 +346,6 @@ export class DamageComponent implements OnInit {
 
       let abilities = this.rounds[roundIndex].availableAbilities;
       let ability = null;
-      // console.log("######")
-      // console.log(JSON.parse(JSON.stringify(this.rounds)))
 
       this.rounds[roundIndex].selectedAbilities.forEach(abilityId => {
         ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
@@ -383,7 +353,6 @@ export class DamageComponent implements OnInit {
           abilities.splice(this.rounds[roundIndex].availableAbilities.findIndex(x => x === ability.id), 1);
         }
       });
-      // console.log(JSON.parse(JSON.stringify(this.rounds)))
 
       return abilities;
     }
@@ -452,7 +421,7 @@ export class DamageComponent implements OnInit {
     let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, this.rounds[roundIndex].selectedAbilities[0])];
 
     for(let i = 1; i < this.rounds[roundIndex].castNumber.length; i++) {
-      if (!this.rounds[roundIndex].selectedAbilities[i]) {
+      if (!this.rounds[roundIndex].selectedAbilities[i] && ability.canDualSkill) {
         this.rounds[roundIndex].selectedAbilities[i] = ability.id;
       }
     }
@@ -485,7 +454,16 @@ export class DamageComponent implements OnInit {
   }
 
   calculateTotalDamage() {
-    console.log(this.damageService.calculateTotalDamage(this.unit, this.monster, this.rounds));
+    this.result = this.damageService.calculateTotalDamage(this.unit, this.monster, this.rounds);
+
+    console.log("UNIT :")
+    console.log(this.unit)
+    console.log("MONSTER :")
+    console.log(this.monster)
+    console.log("ROUNDS :");
+    console.log(this.rounds);
+    console.log("RESULT :");
+    console.log(this.result);
   }
 
   // private isFirstAbilityMultiple() :number {
