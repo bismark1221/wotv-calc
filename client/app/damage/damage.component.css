@@ -60,16 +60,6 @@
   margin-right: 30px;
 }
 
-.chainParameters {
-  margin-top: 20px;
-  margin: auto;
-}
-
-.unit {
-  max-width: 1030px;
-  margin: auto;
-}
-
 .unitImg {
   height: 100px;
   margin-top: 10px;
@@ -78,16 +68,6 @@
 .selectUnit1 {
   color: #848b8e;;
   font-size: 4em;
-}
-
-.selectUnitZone {
-  width: 250px;
-  min-height: 142px;
-  text-align: center;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .25rem;
-  padding: 10px;
-  position: relative;
 }
 
 .btnDelete {
@@ -329,12 +309,31 @@ nouislider {
   display: inline-block;
 }
 
-.allSelectUnit {
+.damageZone {
+  max-width: 1030px;
   text-align: center;
+  margin-top: 20px;
+  margin: auto;
 }
 
-.expandedSelecUnit {
-  width: 1004px;
+.unitZone {
+  width: 500px;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  padding: 10px;
+  position: relative;
+}
+
+.summaryZone {
+  width: 500px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  padding: 10px;
+  position: relative;
 }
 
 .marginUnit0 {
@@ -395,7 +394,11 @@ nouislider {
     display: block;
   }
 
-  .expandedSelecUnit {
+  .unitZone {
+    width: 792px;
+  }
+
+  .summaryZone {
     width: 792px;
   }
 
@@ -417,7 +420,7 @@ nouislider {
     display: block;
   }
 
-  .allSelectUnit {
+  .damageZone {
     width: 542px;
   }
 
@@ -425,7 +428,11 @@ nouislider {
     width: 500px;
   }
 
-  .expandedSelecUnit {
+  .unitZone {
+    width: 522px !important;
+  }
+
+  .summaryZone {
     width: 522px !important;
   }
 
@@ -520,17 +527,16 @@ nouislider {
     display: none;
   }
 
-  .allSelectUnit {
+  .damageZone {
     width: 250px
   }
 
-  .expandedSelecUnit {
+  .unitZone {
     width: 250px !important;
   }
 
-  .selectUnitZone {
-    margin: 0 0 10px;
-    width: 250px;
+  .summaryZone {
+    width: 250px !important;
   }
 
   .framesButtons {
@@ -675,4 +681,64 @@ nouislider {
   .btnAddImperil {
     width: 227px;
   }
+}
+
+
+
+
+/* ------- */
+.elementSelected {
+  background-color: #6c757d;
+}
+
+.imageResistance {
+  width: 36px;
+}
+
+.divResistance {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #b0c4de;
+}
+
+.selectedStar {
+  color: #1e90ff;
+}
+
+.unselectableStar {
+  color: black;
+}
+
+.selectedStar.unselectableStar {
+  color: black;
+}
+
+.imgWeaponElement {
+  width: 36px;
+}
+
+.divWeaponElement {
+  padding: 4px 10px 4px 10px;
+}
+
+.inputBreak {
+  background: url(assets/damage/arrow_down_grey.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  background-position: 5px 8px;
+}
+
+.inputBuff {
+  background: url(assets/damage/arrow_up_grey.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  background-position: 5px 8px;
 }

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Select2OptionData } from '../select2/select2.interface';
 import { Angulartics2 } from 'angulartics2';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
 import { Observable } from 'rxjs';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
@@ -63,7 +63,7 @@ export class DamageComponent implements OnInit {
     private localStorageService: LocalStorageService,
     private angulartics: Angulartics2,
     private translateService: TranslateService,
-    private modalService: NgbModal,
+    private ratingService: NgbRatingConfig,
     private navService: NavService,
     private weaponService: WeaponService,
     private elementsService: ElementsService,
@@ -100,8 +100,7 @@ export class DamageComponent implements OnInit {
   }
 
   private getElements(): void {
-    let multiElements = this.elementsService.getElements();
-    multiElements.splice(0, 1);
+    let multiElements = this.elementsService.getGameOrderElements();
 
     multiElements.forEach(element => {
       this.translateService.get('elements.' + element).subscribe((res: string) => {
@@ -219,6 +218,8 @@ export class DamageComponent implements OnInit {
   private updateChangedUnit() {
     this.unit = JSON.parse(JSON.stringify(this.unit));
 
+    this.ratingService.max = this.unit.rarity.max;
+
     for (let i = this.unit.rarity.min; i < this.unit.rarity.max; i++) {
       this.availableRarities.push(i);
     }
@@ -285,7 +286,15 @@ export class DamageComponent implements OnInit {
     this.unit.stats.mag.potValue = this.unit.stats.mag.maxPot ? this.unit.dataStats[this.unit.rarity.value].mag.pot : 0;
   }
 
-  onChangeRarity() {
+  onChangeRarity(rarity = -1) {
+    if (rarity !== -1) {
+      if (rarity < this.unit.rarity.min) {
+        this.unit.rarity.value = this.unit.rarity.min;
+      } else {
+        this.unit.rarity.value = rarity;
+      }
+    }
+
     this.unit.stats = {
       atk: {},
       mag: {}
@@ -309,12 +318,24 @@ export class DamageComponent implements OnInit {
   }
 
   onChangeWeaponElement(element: string, index: number) {
+    console.log(element)
     let indexElement = this.unit.damageWeapons[index].elements.indexOf(element, 0);
     if (indexElement > -1) {
       this.unit.damageWeapons[index].elements.splice(indexElement, 1);
     } else {
       this.unit.damageWeapons[index].elements.push(element);
     }
+  }
+
+  isElementOnWeapon(element: string, index: number) {
+    let find = false;
+    this.unit.damageWeapons[index].elements.forEach(weaponElement => {
+      if (weaponElement === element) {
+        find = true;
+      }
+    })
+
+    return find;
   }
 
   onMonsterRace(race: string) {
@@ -464,6 +485,18 @@ export class DamageComponent implements OnInit {
     console.log(this.rounds);
     console.log("RESULT :");
     console.log(this.result);
+  }
+
+  getPassiveKiller(race) {
+    let killer = 0;
+
+    this.unit.passiveKillers.forEach(unitKiller => {
+      if (unitKiller.race === race) {
+        killer = unitKiller.physic;
+      }
+    });
+
+    return killer;
   }
 
   // private isFirstAbilityMultiple() :number {
