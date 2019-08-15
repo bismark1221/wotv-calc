@@ -46733,5 +46733,922 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "id": 274,
+    "names": {
+      "en": "Tsukiko",
+      "tw": "月子",
+      "kr": "츠키코"
+    },
+    "abilities": [
+      {
+        "id": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "id": 20320,
+        "names": {
+          "en": "Waterja",
+          "tw": "強流水",
+          "kr": "워터쟈",
+          "fr": "Eau max",
+          "de": "Aquaka",
+          "es": "Aqua+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          190
+        ]
+      },
+      {
+        "id": 10170,
+        "names": {
+          "en": "Banishga",
+          "tw": "強放逐",
+          "kr": "배니시가",
+          "fr": "Bannissement X",
+          "de": "Exkommunikation",
+          "es": "Tenue++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 912744,
+        "names": {
+          "en": "Spirit Fire - Fox's Might",
+          "tw": "魂炎 - 稻荷奮迅",
+          "kr": "혼염·여우 분신",
+          "fr": "Feu spirituel - Puissance du renard",
+          "de": "Geisterfeuer - Fuchsgrimm",
+          "es": "Fuego espiritual - Fuerza vulpina"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912743,
+        "names": {
+          "en": "Spirit Fire - Fox's Might+",
+          "tw": "魂炎 - 稻荷奮迅 弐",
+          "kr": "혼염·여우 분신 2식",
+          "fr": "Feu spirituel - Puissance du renard +",
+          "de": "Geisterfeuer - Fuchsgrimm+",
+          "es": "Fuego espiritual - Fuerza vulpina+"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 912747,
+        "names": {
+          "en": "Spirit Fire - Fox's Desire",
+          "tw": "魂炎 - 稻荷所望",
+          "kr": "혼염·여우 소망",
+          "fr": "Feu spirituel - Désir du renard",
+          "de": "Geisterfeuer - Fuchswunsch",
+          "es": "Fuego espiritual - Deseo vulpino"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912746,
+        "names": {
+          "en": "Spirit Fire - Fox's Desire+",
+          "tw": "魂炎 - 稻荷所望 弐",
+          "kr": "혼염·여우 소망 2식",
+          "fr": "Feu spirituel - Désir du renard +",
+          "de": "Geisterfeuer - Fuchswunsch+",
+          "es": "Fuego espiritual - Deseo vulpino+"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 912751,
+        "names": {
+          "en": "Spirit Fire - Mandala",
+          "tw": "魂炎 - 四門",
+          "kr": "혼염·사문",
+          "fr": "Feu spirituel - Mandala",
+          "de": "Geisterfeuer - Mandala",
+          "es": "Fuego espiritual - Mandala"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          },
+          {
+            "type": "water",
+            "value": 75
+          },
+          {
+            "type": "light",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912750,
+        "names": {
+          "en": "Spirit Fire - Mandala+",
+          "tw": "魂炎 - 四門 弐",
+          "kr": "혼염·사문 2식",
+          "fr": "Feu spirituel - Mandala +",
+          "de": "Geisterfeuer - Mandala+",
+          "es": "Fuego espiritual - Mandala+"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 912756,
+        "names": {
+          "en": "Spirit Fire - Fox's Wrath",
+          "tw": "魂炎 - 稻荷的憤怒",
+          "kr": "혼염·여우의 분노",
+          "fr": "Feu spirituel - Colère du renard",
+          "de": "Geisterfeuer - Fuchszorn",
+          "es": "Fuego espiritual - Ira vulpina"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912755,
+        "names": {
+          "en": "Spirit Fire - Fox's Wrath+",
+          "tw": "魂炎 - 稻荷的憤怒 弐",
+          "kr": "혼염·여우의 분노 2식",
+          "fr": "Feu spirituel - Colère du renard +",
+          "de": "Geisterfeuer - Fuchszorn+",
+          "es": "Fuego espiritual - Ira vulpina+"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 912759,
+        "names": {
+          "en": "Spirit Fire - Fox's Fury",
+          "tw": "魂炎 - 狂怒",
+          "kr": "혼염·격분",
+          "fr": "Feu spirituel - Fureur du renard",
+          "de": "Geisterfeuer - Fuchsrage",
+          "es": "Fuego espiritual - Furia vulpina"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912758,
+        "names": {
+          "en": "Spirit Fire - Fox's Fury+",
+          "tw": "魂炎 - 狂怒 弐",
+          "kr": "혼염·격분 2식",
+          "fr": "Feu spirituel - Fureur du renard +",
+          "de": "Geisterfeuer - Fuchsrage+",
+          "es": "Fuego espiritual - Furia vulpina+"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "id": 912763,
+        "names": {
+          "en": "Spirit Fire - Fox Flame",
+          "tw": "魂炎 - 狐火",
+          "kr": "혼염·여우불",
+          "fr": "Feu spirituel - Renard des flammes",
+          "de": "Geisterfeuer - Fuchsflamme",
+          "es": "Fuego espiritual - Llama vulpina"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912764,
+        "names": {
+          "en": "Spirit Fire - Fox Orb",
+          "tw": "魂炎 - 狐珠",
+          "kr": "혼염·여우 구슬",
+          "fr": "Feu spirituel - Orbe du renard",
+          "de": "Geisterfeuer - Fuchskugel",
+          "es": "Fuego espiritual - Orbe vulpino"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912765,
+        "names": {
+          "en": "Spirit Fire - Fox Torrent",
+          "tw": "魂炎 - 狐流",
+          "kr": "혼염·여우 급류",
+          "fr": "Feu spirituel - Torrent du renard",
+          "de": "Geisterfeuer - Fuchsstrom",
+          "es": "Fuego espiritual - Torrente vulpino"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912769,
+        "names": {
+          "en": "Spirit Fire - Purging Pyre",
+          "tw": "魂炎 - 肅清之薪",
+          "kr": "혼염·숙청의 장작",
+          "fr": "Feu spirituel - Bûcher purifiant",
+          "de": "Geisterfeuer - Feuerbestattung",
+          "es": "Fuego espiritual - Pira purgadora"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912770,
+        "names": {
+          "en": "Spirit Fire - Fervent Prayer",
+          "tw": "魂炎 - 強烈願望",
+          "kr": "혼염·굳센 기도",
+          "fr": "Feu spirituel - Prière ardente",
+          "de": "Geisterfeuer - Glühendes Gebet",
+          "es": "Fuego espiritual - Oración ferviente"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912771,
+        "names": {
+          "en": "Spirit Fire - Purifying Water",
+          "tw": "魂炎 - 淨水",
+          "kr": "혼염·정수",
+          "fr": "Feu spirituel - Eau purificatrice",
+          "de": "Geisterfeuer - Reinigendes Wasser",
+          "es": "Fuego espiritual - Agua purificadora"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912738,
+        "names": {
+          "en": "Spirit Fire - Fox Claw",
+          "tw": "魂炎 - 狐爪",
+          "kr": "혼염·여우 발톱",
+          "fr": "Feu spirituel - Griffe de renard",
+          "de": "Geisterfeuer - Fuchskralle",
+          "es": "Fuego espiritual - Garra vulpina"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912793,
+        "names": {
+          "en": "Vixen's Fire - Ninth Tail",
+          "tw": "狐火 - 九尾",
+          "kr": "여우불·구미",
+          "fr": "Renard de feu - Dernière queue",
+          "de": "Fähenfeuer - Letzter Schweif",
+          "es": "Fuego vulpino - Novena cola"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 401007107,
+        "names": {
+          "en": "Houki Poki",
+          "tw": "不疼不疼",
+          "kr": "수리수리 마수리",
+          "fr": "C'est la danse des chocobos",
+          "de": "Heile, heile Segen",
+          "es": "Que llueva, que llueva"
+        },
+        "damage": "magic",
+        "base": 1800,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "elements": [
+          "water",
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          166, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          912738,
+          912743,
+          912744,
+          912746,
+          912747,
+          912750,
+          912751,
+          912753,
+          912755,
+          912756,
+          912758,
+          912759,
+          912763,
+          912764,
+          912765,
+          912769,
+          912770,
+          912771,
+          912772,
+          912775,
+          912774
+        ]
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "names": {
+      "en": "Kaito",
+      "tw": "海斗",
+      "kr": "카이토"
+    },
+    "abilities": [
+      {
+        "id": 912801,
+        "names": {
+          "en": "Low Tide",
+          "tw": "退汐",
+          "kr": "썰물",
+          "fr": "Marée basse",
+          "de": "Niedrigwasser",
+          "es": "Bajamar"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "offset": 14,
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "id": 912803,
+        "names": {
+          "en": "Paralyzing Sediment",
+          "tw": "麻痺底泥",
+          "kr": "마비 진흙의 도검",
+          "fr": "Sédiments paralysants",
+          "de": "Lähmende Ablagerungen",
+          "es": "Sedimento paralizador"
+        },
+        "base": 150,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912804,
+        "names": {
+          "en": "Sea Sweeper",
+          "tw": "海塵一掃",
+          "kr": "바다 먼지 일소",
+          "fr": "Balayeur des mers",
+          "de": "Meeresfeger",
+          "es": "Barrendero de los mares"
+        },
+        "base": 150,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912807,
+        "names": {
+          "en": "Liquid Infusion",
+          "tw": "液體注入",
+          "kr": "액체 주입",
+          "fr": "Infusion liquide",
+          "de": "Flüssiger Aufguss",
+          "es": "Infusión líquida"
+        },
+        "base": 200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912810,
+        "names": {
+          "en": "Neap Tide",
+          "tw": "下弦之汐",
+          "kr": "하현의 조류",
+          "fr": "Petite marée",
+          "de": "Nippflut",
+          "es": "Marea muerta"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 24,
+        "offset": 14,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 912812,
+        "names": {
+          "en": "High Tide",
+          "tw": "漲汐",
+          "kr": "만조",
+          "fr": "Marée haute",
+          "de": "Hochwasser",
+          "es": "Pleamar"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 49,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 912811,
+        "names": {
+          "en": "Rip Tide",
+          "tw": "汐衝",
+          "kr": "격랑",
+          "fr": "Courant sagittal",
+          "de": "Kabbelwelle",
+          "es": "Marea desenfrenada"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 912818,
+        "names": {
+          "en": "Deep Submersion",
+          "tw": "深水之底",
+          "kr": "깊은 물 속",
+          "fr": "Immersion profonde",
+          "de": "Tieftauchen",
+          "es": "Inmersión profunda"
+        },
+        "base": 250,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912823,
+        "names": {
+          "en": "Flooded Village",
+          "tw": "水沒",
+          "kr": "수몰",
+          "fr": "Village inondé",
+          "de": "Überschwemmtes Dorf",
+          "es": "Aldea inundada"
+        },
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912824,
+        "names": {
+          "en": "Inundated Garden",
+          "tw": "浸水",
+          "kr": "침수",
+          "fr": "Jardin englouti",
+          "de": "Überfluteter Garten",
+          "es": "Jardín inundado"
+        },
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912825,
+        "names": {
+          "en": "Sinking Nest",
+          "tw": "沉沒",
+          "kr": "침몰",
+          "fr": "Antre naufragé",
+          "de": "Versinken",
+          "es": "Nido náufrago"
+        },
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912829,
+        "names": {
+          "en": "Devastating Tsunami",
+          "tw": "破壞性海嘯",
+          "kr": "파괴의 해일",
+          "fr": "Tsunami dévastateur",
+          "de": "Verheerender Tsunami",
+          "es": "Tsunami devastador"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 15,
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 401008507,
+        "names": {
+          "en": "The Great Wave",
+          "tw": "大型海嘯",
+          "kr": "대해일",
+          "fr": "La grande vague",
+          "de": "Riesenwelle",
+          "es": "Ola gigante"
+        },
+        "base": 800,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          93, 4, 2, 2, 2
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          912800,
+          912801,
+          912803,
+          912804,
+          912807,
+          912808,
+          912810,
+          912811,
+          912812,
+          912813,
+          912814,
+          912818,
+          912822,
+          912823,
+          912824,
+          912825,
+          912826,
+          912828,
+          912829
+        ]
+      }
+    ]
   }
 ];
