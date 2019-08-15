@@ -691,8 +691,7 @@ export const UNITS: any[] = [
             "value": 65
           }
         ],
-        "framesList": [
-          0, 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6
+        "framesList": [ 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6
         ],
         "offset": 8
       },
@@ -5094,8 +5093,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           30, 30, 40
         ],
-        "framesList": [
-          0, 30, 30
+        "framesList": [ 30, 30
         ],
         "base": 250,
         "ignore": 50,
@@ -15575,8 +15573,7 @@ export const UNITS: any[] = [
           25, 25, 25, 25
         ],
         "offset": 8,
-        "framesList": [
-          0, 5, 5, 5
+        "framesList": [ 5, 5, 5
         ]
       },
       {
@@ -38152,7 +38149,6 @@ export const UNITS: any[] = [
           100
         ],
         "magic": [
-          0,
           0
         ],
         "rarity": 5
@@ -38163,7 +38159,6 @@ export const UNITS: any[] = [
           50
         ],
         "magic": [
-          0,
           0
         ],
         "rarity": 7
@@ -50261,15 +50256,51 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "id": 274,
+    "dataId": 274,
     "names": {
       "en": "Tsukiko",
       "tw": "月子",
       "kr": "츠키코"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 81,
+          "pot": 16
+        },
+        "mag": {
+          "base": 129,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 105,
+          "pot": 26
+        },
+        "mag": {
+          "base": 167,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 136,
+          "pot": 40
+        },
+        "mag": {
+          "base": 219,
+          "pot": 65
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 20290,
+        "dataId": 20290,
         "names": {
           "en": "Firaja",
           "tw": "強火焰",
@@ -50290,12 +50321,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           210
         ]
       },
       {
-        "id": 20320,
+        "dataId": 20320,
         "names": {
           "en": "Waterja",
           "tw": "強流水",
@@ -50316,12 +50350,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           190
         ]
       },
       {
-        "id": 10170,
+        "dataId": 10170,
         "names": {
           "en": "Banishga",
           "tw": "強放逐",
@@ -50342,34 +50379,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           65
         ]
       },
       {
-        "id": 912744,
-        "names": {
-          "en": "Spirit Fire - Fox's Might",
-          "tw": "魂炎 - 稻荷奮迅",
-          "kr": "혼염·여우 분신",
-          "fr": "Feu spirituel - Puissance du renard",
-          "de": "Geisterfeuer - Fuchsgrimm",
-          "es": "Fuego espiritual - Fuerza vulpina"
-        },
-        "damage": "magic",
-        "base": 700,
-        "hitDamage": [
-          100
-        ],
-        "castTime": 10,
-        "dualable": false,
-        "offset": 14,
-        "framesList": [
-          60
-        ]
-      },
-      {
-        "id": 912743,
+        "dataId": 912743,
         "names": {
           "en": "Spirit Fire - Fox's Might+",
           "tw": "魂炎 - 稻荷奮迅 弐",
@@ -50386,19 +50404,30 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912747,
+        "dataId": 912744,
         "names": {
-          "en": "Spirit Fire - Fox's Desire",
-          "tw": "魂炎 - 稻荷所望",
-          "kr": "혼염·여우 소망",
-          "fr": "Feu spirituel - Désir du renard",
-          "de": "Geisterfeuer - Fuchswunsch",
-          "es": "Fuego espiritual - Deseo vulpino"
+          "en": "Spirit Fire - Fox's Might",
+          "tw": "魂炎 - 稻荷奮迅",
+          "kr": "혼염·여우 분신",
+          "fr": "Feu spirituel - Puissance du renard",
+          "de": "Geisterfeuer - Fuchsgrimm",
+          "es": "Fuego espiritual - Fuerza vulpina"
         },
         "damage": "magic",
         "base": 700,
@@ -50408,12 +50437,23 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 60,
+            "turn": 3
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912746,
+        "dataId": 912746,
         "names": {
           "en": "Spirit Fire - Fox's Desire+",
           "tw": "魂炎 - 稻荷所望 弐",
@@ -50430,19 +50470,29 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
-      {
-        "id": 912751,
+        "dataId": 912747,
         "names": {
-          "en": "Spirit Fire - Mandala",
-          "tw": "魂炎 - 四門",
-          "kr": "혼염·사문",
-          "fr": "Feu spirituel - Mandala",
-          "de": "Geisterfeuer - Mandala",
-          "es": "Fuego espiritual - Mandala"
+          "en": "Spirit Fire - Fox's Desire",
+          "tw": "魂炎 - 稻荷所望",
+          "kr": "혼염·여우 소망",
+          "fr": "Feu spirituel - Désir du renard",
+          "de": "Geisterfeuer - Fuchswunsch",
+          "es": "Fuego espiritual - Deseo vulpino"
         },
         "damage": "magic",
         "base": 700,
@@ -50452,18 +50502,15 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
           {
-            "type": "fire",
-            "value": 75
-          },
-          {
-            "type": "water",
-            "value": 75
-          },
-          {
-            "type": "light",
-            "value": 75
+            "stat": "mag",
+            "value": 60,
+            "turn": 3
           }
         ],
         "framesList": [
@@ -50471,7 +50518,44 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912750,
+        "dataId": 912778,
+        "names": {
+          "en": "Divine Retribution",
+          "tw": "天之報復",
+          "kr": "하늘의 복수",
+          "fr": "Rétribution divine",
+          "de": "Himmlische Vergeltung",
+          "es": "Represalia divina"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "type": "water",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "type": "light",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912750,
         "names": {
           "en": "Spirit Fire - Mandala+",
           "tw": "魂炎 - 四門 弐",
@@ -50488,18 +50572,25 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
           {
             "type": "fire",
-            "value": 100
+            "value": 100,
+            "turn": 5
           },
           {
             "type": "water",
-            "value": 100
+            "value": 100,
+            "turn": 5
           },
           {
             "type": "light",
-            "value": 100
+            "value": 100,
+            "turn": 5
           }
         ],
         "framesList": [
@@ -50507,14 +50598,14 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912756,
+        "dataId": 912751,
         "names": {
-          "en": "Spirit Fire - Fox's Wrath",
-          "tw": "魂炎 - 稻荷的憤怒",
-          "kr": "혼염·여우의 분노",
-          "fr": "Feu spirituel - Colère du renard",
-          "de": "Geisterfeuer - Fuchszorn",
-          "es": "Fuego espiritual - Ira vulpina"
+          "en": "Spirit Fire - Mandala",
+          "tw": "魂炎 - 四門",
+          "kr": "혼염·사문",
+          "fr": "Feu spirituel - Mandala",
+          "de": "Geisterfeuer - Mandala",
+          "es": "Fuego espiritual - Mandala"
         },
         "damage": "magic",
         "base": 700,
@@ -50524,12 +50615,33 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 75,
+            "turn": 5
+          },
+          {
+            "type": "water",
+            "value": 75,
+            "turn": 5
+          },
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 5
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912755,
+        "dataId": 912755,
         "names": {
           "en": "Spirit Fire - Fox's Wrath+",
           "tw": "魂炎 - 稻荷的憤怒 弐",
@@ -50546,19 +50658,30 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912759,
+        "dataId": 912756,
         "names": {
-          "en": "Spirit Fire - Fox's Fury",
-          "tw": "魂炎 - 狂怒",
-          "kr": "혼염·격분",
-          "fr": "Feu spirituel - Fureur du renard",
-          "de": "Geisterfeuer - Fuchsrage",
-          "es": "Fuego espiritual - Furia vulpina"
+          "en": "Spirit Fire - Fox's Wrath",
+          "tw": "魂炎 - 稻荷的憤怒",
+          "kr": "혼염·여우의 분노",
+          "fr": "Feu spirituel - Colère du renard",
+          "de": "Geisterfeuer - Fuchszorn",
+          "es": "Fuego espiritual - Ira vulpina"
         },
         "damage": "magic",
         "base": 700,
@@ -50568,12 +50691,23 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912758,
+        "dataId": 912758,
         "names": {
           "en": "Spirit Fire - Fox's Fury+",
           "tw": "魂炎 - 狂怒 弐",
@@ -50590,12 +50724,56 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912763,
+        "dataId": 912759,
+        "names": {
+          "en": "Spirit Fire - Fox's Fury",
+          "tw": "魂炎 - 狂怒",
+          "kr": "혼염·격분",
+          "fr": "Feu spirituel - Fureur du renard",
+          "de": "Geisterfeuer - Fuchsrage",
+          "es": "Fuego espiritual - Furia vulpina"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "dataId": 912763,
         "names": {
           "en": "Spirit Fire - Fox Flame",
           "tw": "魂炎 - 狐火",
@@ -50607,7 +50785,11 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          20, 20, 20, 20, 20
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "castTime": 50,
         "elements": [
@@ -50615,12 +50797,19 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          52, 20, 20, 20, 20
+          52,
+          20,
+          20,
+          20,
+          20
         ]
       },
       {
-        "id": 912764,
+        "dataId": 912764,
         "names": {
           "en": "Spirit Fire - Fox Orb",
           "tw": "魂炎 - 狐珠",
@@ -50632,7 +50821,17 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "elements": [
@@ -50640,12 +50839,25 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912765,
+        "dataId": 912765,
         "names": {
           "en": "Spirit Fire - Fox Torrent",
           "tw": "魂炎 - 狐流",
@@ -50657,7 +50869,15 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "elements": [
@@ -50665,12 +50885,23 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912769,
+        "dataId": 912769,
         "names": {
           "en": "Spirit Fire - Purging Pyre",
           "tw": "魂炎 - 肅清之薪",
@@ -50682,7 +50913,11 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 650,
         "hitDamage": [
-          20, 20, 20, 20, 20
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "castTime": 50,
         "elements": [
@@ -50690,18 +50925,35 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "imperil",
+          "damage",
+          "break"
+        ],
+        "imperils": [
           {
             "type": "fire",
-            "value": 100
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 5
           }
         ],
         "framesList": [
-          52, 20, 20, 20, 20
+          52,
+          20,
+          20,
+          20,
+          20
         ]
       },
       {
-        "id": 912770,
+        "dataId": 912770,
         "names": {
           "en": "Spirit Fire - Fervent Prayer",
           "tw": "魂炎 - 強烈願望",
@@ -50713,7 +50965,17 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 650,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "elements": [
@@ -50721,18 +50983,41 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "imperil",
+          "damage",
+          "break"
+        ],
+        "imperils": [
           {
             "type": "light",
-            "value": 100
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 5
           }
         ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912771,
+        "dataId": 912771,
         "names": {
           "en": "Spirit Fire - Purifying Water",
           "tw": "魂炎 - 淨水",
@@ -50744,7 +51029,15 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 650,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "elements": [
@@ -50752,18 +51045,87 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "imperil",
+          "damage",
+          "break"
+        ],
+        "imperils": [
           {
             "type": "water",
-            "value": 100
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 65,
+            "turn": 5
           }
         ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912738,
+        "dataId": 912773,
+        "names": {
+          "en": "Spirit Fire - Exorcism",
+          "tw": "魂炎 - 退魔",
+          "kr": "혼염·퇴마",
+          "fr": "Feu spirituel - Exorcisme",
+          "de": "Geisterfeuer - Exorzismus",
+          "es": "Fuego espiritual - Exorcismo"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "killer"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 5
+          }
+        ],
+        "killers": [
+          {
+            "race": "demon",
+            "physic": 0,
+            "magic": 75,
+            "turn": 5
+          },
+          {
+            "race": "undead",
+            "physic": 0,
+            "magic": 75,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912738,
         "names": {
           "en": "Spirit Fire - Fox Claw",
           "tw": "魂炎 - 狐爪",
@@ -50775,17 +51137,440 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912793,
+        "dataId": 912785,
+        "names": {
+          "en": "Vixen's Fire - First Tail",
+          "tw": "狐火 - 一尾",
+          "kr": "여우불·일미",
+          "fr": "Renard de feu - Première queue",
+          "de": "Fähenfeuer - Erster Schweif",
+          "es": "Fuego vulpino - Primera cola"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 220,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912786,
+        "names": {
+          "en": "Vixen's Fire - Second Tail",
+          "tw": "狐火 - 二尾",
+          "kr": "여우불·이미",
+          "fr": "Renard de feu - Deuxième queue",
+          "de": "Fähenfeuer - Zweiter Schweif",
+          "es": "Fuego vulpino - Segunda cola"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 230,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912787,
+        "names": {
+          "en": "Vixen's Fire - Third Tail",
+          "tw": "狐火 - 三尾",
+          "kr": "여우불·삼미",
+          "fr": "Renard de feu - Troisième queue",
+          "de": "Fähenfeuer - Dritter Schweif",
+          "es": "Fuego vulpino - Tercera cola"
+        },
+        "damage": "magic",
+        "base": 1300,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 240,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912788,
+        "names": {
+          "en": "Vixen's Fire - Fourth Tail",
+          "tw": "狐火 - 四尾",
+          "kr": "여우불·사미",
+          "fr": "Renard de feu - Quatrième queue",
+          "de": "Fähenfeuer - Vierter Schweif",
+          "es": "Fuego vulpino - Cuarta cola"
+        },
+        "damage": "magic",
+        "base": 1400,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912789,
+        "names": {
+          "en": "Vixen's Fire - Fifth Tail",
+          "tw": "狐火 - 五尾",
+          "kr": "여우불·오미",
+          "fr": "Renard de feu - Cinquième queue",
+          "de": "Fähenfeuer - Fünfter Schweif",
+          "es": "Fuego vulpino - Quinta cola"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 260,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912790,
+        "names": {
+          "en": "Vixen's Fire - Sixth Tail",
+          "tw": "狐火 - 六尾",
+          "kr": "여우불·육미",
+          "fr": "Renard de feu - Sixième queue",
+          "de": "Fähenfeuer - Sechster Schweif",
+          "es": "Fuego vulpino - Sexta cola"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 270,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912791,
+        "names": {
+          "en": "Vixen's Fire - Seventh Tail",
+          "tw": "狐火 - 七尾",
+          "kr": "여우불·칠미",
+          "fr": "Renard de feu - Septième queue",
+          "de": "Fähenfeuer - Siebter Schweif",
+          "es": "Fuego vulpino - Séptima cola"
+        },
+        "damage": "magic",
+        "base": 1700,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 280,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912792,
+        "names": {
+          "en": "Vixen's Fire - Eighth Tail",
+          "tw": "狐火 - 八尾",
+          "kr": "여우불·팔미",
+          "fr": "Renard de feu - Huitième queue",
+          "de": "Fähenfeuer - Achter Schweif",
+          "es": "Fuego vulpino - Octava cola"
+        },
+        "damage": "magic",
+        "base": 1800,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 290,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912793,
         "names": {
           "en": "Vixen's Fire - Ninth Tail",
           "tw": "狐火 - 九尾",
@@ -50797,18 +51582,45 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 2000,
         "hitDamage": [
-          1, 1, 1, 1, 1, 1, 1, 1, 92
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
         ],
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 300,
+            "turn": 3
+          }
+        ],
         "ignore": 50,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 401007107,
+        "dataId": 401007107,
         "names": {
           "en": "Houki Poki",
           "tw": "不疼不疼",
@@ -50820,7 +51632,17 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1800,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "elements": [
           "water",
@@ -50828,15 +51650,38 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          166, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          166,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       }
     ],
     "multipleBlack": 2,
     "multipleWhite": 2,
     "multipleGreen": 2,
+    "passiveKillers": [
+      {
+        "physic": 0,
+        "magic": [
+          25,
+          25
+        ],
+        "rarity": 6
+      }
+    ],
     "multiCasts": [
       {
         "count": 4,
@@ -50867,15 +51712,83 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "id": 275,
+    "dataId": 275,
     "names": {
       "en": "Kaito",
       "tw": "海斗",
       "kr": "카이토"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 127,
+          "pot": 24
+        },
+        "mag": {
+          "base": 83,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 165,
+          "pot": 34
+        },
+        "mag": {
+          "base": 109,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 214,
+          "pot": 65
+        },
+        "mag": {
+          "base": 142,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912801,
+        "dataId": 912800,
+        "names": {
+          "en": "Sounds of the Ocean",
+          "tw": "漣之聲",
+          "kr": "잔물결 소리",
+          "fr": "Sons de l'océan",
+          "de": "Ozeanklänge",
+          "es": "Sonidos del océano"
+        },
+        "castTime": 70,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912801,
         "names": {
           "en": "Low Tide",
           "tw": "退汐",
@@ -50890,12 +51803,44 @@ export const UNITS: any[] = [
         ],
         "castTime": 15,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           45
         ]
       },
       {
-        "id": 912803,
+        "dataId": 912802,
+        "names": {
+          "en": "Salty Breeze",
+          "tw": "汐風",
+          "kr": "바닷바람",
+          "fr": "Brise salée",
+          "de": "Salzige Brise",
+          "es": "Brisa salada"
+        },
+        "base": 0,
+        "hitDamage": [],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 25,
+            "turn": 25
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912803,
         "names": {
           "en": "Paralyzing Sediment",
           "tw": "麻痺底泥",
@@ -50910,12 +51855,23 @@ export const UNITS: any[] = [
         ],
         "castTime": 34,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 100,
+            "turn": 3
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912804,
+        "dataId": 912804,
         "names": {
           "en": "Sea Sweeper",
           "tw": "海塵一掃",
@@ -50926,16 +51882,39 @@ export const UNITS: any[] = [
         },
         "base": 150,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912807,
+        "dataId": 912807,
         "names": {
           "en": "Liquid Infusion",
           "tw": "液體注入",
@@ -50946,16 +51925,42 @@ export const UNITS: any[] = [
         },
         "base": 200,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912810,
+        "dataId": 912810,
         "names": {
           "en": "Neap Tide",
           "tw": "下弦之汐",
@@ -50970,12 +51975,15 @@ export const UNITS: any[] = [
         ],
         "castTime": 24,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           30
         ]
       },
       {
-        "id": 912812,
+        "dataId": 912812,
         "names": {
           "en": "High Tide",
           "tw": "漲汐",
@@ -50990,13 +51998,16 @@ export const UNITS: any[] = [
         ],
         "castTime": 49,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
           30
         ]
       },
       {
-        "id": 912811,
+        "dataId": 912811,
         "names": {
           "en": "Rip Tide",
           "tw": "汐衝",
@@ -51011,13 +52022,45 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
           30
         ]
       },
       {
-        "id": 912818,
+        "dataId": 912817,
+        "names": {
+          "en": "Below the Surface",
+          "tw": "水面下的鬥志",
+          "kr": "물밑의 투지",
+          "fr": "Sous la surface",
+          "de": "Unter der Wasseroberfläche",
+          "es": "Bajo la superficie"
+        },
+        "base": 0,
+        "hitDamage": [],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 25,
+            "turn": 0
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912818,
         "names": {
           "en": "Deep Submersion",
           "tw": "深水之底",
@@ -51028,17 +52071,38 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          110,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ]
       },
       {
-        "id": 912823,
+        "dataId": 912823,
         "names": {
           "en": "Flooded Village",
           "tw": "水沒",
@@ -51049,16 +52113,48 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "human",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912824,
+        "dataId": 912824,
         "names": {
           "en": "Inundated Garden",
           "tw": "浸水",
@@ -51069,16 +52165,48 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912825,
+        "dataId": 912825,
         "names": {
           "en": "Sinking Nest",
           "tw": "沉沒",
@@ -51089,16 +52217,48 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "demon",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912829,
+        "dataId": 912829,
         "names": {
           "en": "Devastating Tsunami",
           "tw": "破壞性海嘯",
@@ -51111,16 +52271,29 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "canDualSkill": false,
         "castTime": 15,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 5
+          }
+        ],
         "ignore": 50,
         "framesList": [
-          70
+          70,
+          50
         ]
       },
       {
-        "id": 401008507,
+        "dataId": 401008507,
         "names": {
           "en": "The Great Wave",
           "tw": "大型海嘯",
@@ -51131,23 +52304,66 @@ export const UNITS: any[] = [
         },
         "base": 800,
         "hitDamage": [
-          20, 20, 20, 20, 20
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "elements": [
           "water"
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "break",
+          "imperil",
+          "damage"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 5
+          }
+        ],
+        "imperils": [
           {
             "type": "water",
-            "value": 100
+            "value": 100,
+            "turn": 5
           }
         ],
         "ignore": 50,
         "framesList": [
-          93, 4, 2, 2, 2
+          93,
+          4,
+          2,
+          2,
+          2
         ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": 25,
+        "magic": 0,
+        "rarity": 5
+      },
+      {
+        "physic": 50,
+        "magic": 0,
+        "rarity": 6
+      },
+      {
+        "physic": 25,
+        "magic": 0,
+        "rarity": 7
       }
     ],
     "multiCasts": [
@@ -51174,7 +52390,6 @@ export const UNITS: any[] = [
           912828,
           912829
         ]
-      }
     ]
   },
   {
@@ -52187,6 +53402,38 @@ export const UNITS: any[] = [
           509789,
           509796
         ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 912811,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912812,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912813,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912814,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912801,
+        "value": 300,
+        "rarity": 7
+      },
+      {
+        "id": 912810,
+        "value": 300,
+        "rarity": 7
       }
     ]
   }
