@@ -692,10 +692,21 @@ nouislider {
 }
 
 .imageResistance {
-  width: 36px;
+  height: 36px;
 }
 
 .divResistance {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.imagePassiveKiller {
+  height: 36px;
+}
+
+.divPassiveKiller {
   padding-bottom: 0px;
   padding-top: 0px;
   padding-right: 8px;
@@ -725,6 +736,26 @@ nouislider {
 
 .divWeaponElement {
   padding: 4px 10px 4px 10px;
+}
+
+.btn-group>.divMonsterRaceFirstRow:first-child {
+  border-bottom-left-radius: 0;
+}
+
+.btn-group>.divMonsterRaceFirstRow:last-child {
+  border-bottom-right-radius: 0;
+}
+
+.btn-group>.divMonsterRaceFirstRow {
+  border-bottom: 0;
+}
+
+.btn-group>.divMonsterRaceSecondRow:first-child {
+  border-top-left-radius: 0;
+}
+
+.btn-group>.divMonsterRaceSecondRow:last-child {
+  border-top-right-radius: 0;
 }
 
 .inputBreak {

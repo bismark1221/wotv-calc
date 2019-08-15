@@ -125,7 +125,7 @@
 
         <div class="input-group mb-3" *ngFor="let race of races">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="weapon{{i}}_variance_min">{{ race }} killer</label>
+            <div class="input-group-text divPassiveKiller"><img class="imagePassiveKiller" src="assets/killers/{{race}}_physic.png" /><img class="imagePassiveKiller" src="assets/killers/{{race}}_magic.png" /></div>
           </div>
           <input type="text" class="form-control" placeholder="{{race}} killer passive" value="{{getPassiveKiller(race)}}" disabled>
           <input type="text" class="form-control inputBuff" placeholder="{{race}} killer buff" [(ngModel)]="unit.killers[race].buff">
@@ -149,9 +149,9 @@
             <label class="input-group-text" for="buff_atk">Buff MAG</label>
           </div>
           <input type="text" class="form-control inputBuff" placeholder="buff_mag" aria-label="buff_mag" aria-describedby="buff_mag" [(ngModel)]="unit.buffs.mag">
-        </div>
-        <div class="input-group-append">
-          <span class="input-group-text">%</span>
+          <div class="input-group-append">
+            <span class="input-group-text">%</span>
+          </div>
         </div>
       </div>
 
@@ -181,10 +181,10 @@
 
         <div>Races</div>
 
-        <div class="btn-group mr-2" role="group">
-          <label class="btn btn-primary" *ngFor="let race of races">
-            <input type="checkbox" (click)="onMonsterRace(race);">{{ race }}
-          </label>
+        <div class="btn-group mr-2" role="group" *ngFor="let i of [[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]]">
+          <div class="btn btn-secondary" *ngFor="let raceIndex of i" [ngClass]="{'elementSelected': isRaceOnMonster(races[raceIndex]), 'divMonsterRaceFirstRow': raceIndex < 6, 'divMonsterRaceSecondRow': raceIndex >= 6}" (click)="onMonsterRace(races[raceIndex]);">
+            <img class="imgWeaponElement" src="assets/races/{{ races[raceIndex] }}.png" />
+          </div>
         </div>
 
         <div>Resist Elem + Imperil</div>

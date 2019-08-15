@@ -347,6 +347,17 @@ export class DamageComponent implements OnInit {
     }
   }
 
+  isRaceOnMonster(race: string) {
+    let find = false;
+    this.monster.races.forEach(monsterRace => {
+      if (monsterRace === race) {
+        find = true;
+      }
+    })
+
+    return find;
+  }
+
   addRound() {
     console.log("===== ADD ROUNDS =====")
 

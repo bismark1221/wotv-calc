@@ -22,9 +22,6 @@ export const MONSTERS: any[] = [
         unbreakable: 1000
       },
     },
-    race: [
-      "human",
-      "demon"
-    ]
+    race: []
   }
 ]
