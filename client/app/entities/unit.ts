@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class Unit {
   id: number;
+  dataId?;
   type: string = 'chain';
   abilities: Ability[] = [new Ability()];
   dual?: boolean = true;
@@ -21,7 +22,7 @@ export class Unit {
   maxChainCap: number = 4;
 
   constructUnitFromJson(unit: Unit, translateService: TranslateService): void {
-    this.id = unit.id;
+    this.id = unit.id ? unit.id : unit.dataId;
     this.names = unit.names;
     this.getName(translateService);
     this.type = unit.type ? unit.type : this.type;
