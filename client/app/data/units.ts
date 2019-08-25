@@ -3233,74 +3233,191 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
-        names: {
-          en: "Mystic Thrust",
-          fr: "Coup mystique",
-          tw: "神秘衝擊",
-          kr: "마법 찌르기",
-          de: "Mystischer Stoß",
-          es: "Estoque místico"
+        "id": 200270,
+        "names": {
+          "en": "Lance",
+          "tw": "龍劍",
+          "kr": "용권",
+          "fr": "Transpercer",
+          "de": "Lanze",
+          "es": "Alma de dragón"
         },
-        framesList: [42, 10, 10, 10, 10, 10, 10],
-        hitDamage: [14, 14, 15, 14, 14, 15, 14],
-        castTime: 40,
-        offset: 14,
-        base: 500,
+        "base": 80,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          120
+        ]
       },
       {
-        id: 911067,
-        names: {
-          en: "Mystic Thrust +1",
-          tw: "神秘衝擊 +1",
-          kr: "마법 찌르기 +1",
-          fr: "Coup mystique +1",
-          de: "Mystischer Stoß +1",
-          es: "Estoque místico +1"
+        "id": 912882,
+        "names": {
+          "en": "Siphon Lance",
+          "tw": "攝魔長槍",
+          "kr": "흡수의 창",
+          "fr": "Lance siphon",
+          "de": "Soglanze",
+          "es": "Lanza sifón"
         },
-        hitDamage: [
-          10, 10, 10, 10, 10, 10, 10, 30
+        "base": 380,
+        "hitDamage": [
+          9.473684210526315, 9.473684210526315, 9.473684210526315, 9.473684210526315, 10.263157894736842, 15, 15.789473684210526, 2.5263157894736845, 2.5263157894736845, 2.5263157894736845, 2.5263157894736845, 2.7368421052631584, 4, 4.210526315789474
         ],
-        castTime: 40,
-        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 14,
-        base: 550
+        "castTime": 39,
+        "offset": 14,
+        "framesList": [
+          35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
-        id: 911069,
-        names: {
-          en: "Mystic Thrust +2",
-          tw: "神秘衝擊 +2",
-          kr: "마법 찌르기 +2",
-          fr: "Coup mystique +2",
-          de: "Mystischer Stoß +2",
-          es: "Estoque místico +2"
+        "id": 912884,
+        "names": {
+          "en": "Raging Thrust",
+          "tw": "猛刺",
+          "kr": "분노의 찌르기",
+          "fr": "Coup de rage",
+          "de": "Zornesstoß",
+          "es": "Estoque colérico"
         },
-        hitDamage: [
-          10, 10, 10, 10, 10, 10, 10, 30
+        "base": 1200,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
         ],
-        castTime: 40,
-        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 14,
-        base: 600
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
       },
       {
-        id: 911070,
-        names: {
-          en: "Mystic Blitz +2",
-          tw: "神秘閃擊 +2",
-          kr: "마법 공습 +2",
-          fr: "Raid mystique +2",
-          de: "Mystischer Blitz +2",
-          es: "Centella mística +2"
+        "id": 910204,
+        "names": {
+          "en": "Lightning Breath",
+          "tw": "雷霆吐息",
+          "kr": "번개의 숨결",
+          "fr": "Souffle électrique",
+          "de": "Blitzatem",
+          "es": "Hálito eléctrico"
         },
-        hitDamage: [
-          10, 10, 10, 10, 10, 10, 10, 30
+        "base": 600,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        castTime: 40,
-        framesList: [42, 10, 10, 10, 10, 10, 10, 10],
-        offset: 14,
-        base: 600
+        "castTime": 38,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "lightning",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 910203,
+        "names": {
+          "en": "Ice Breath",
+          "tw": "寒冰吐息",
+          "kr": "얼음의 숨결",
+          "fr": "Souffle glacial",
+          "de": "Eisatem",
+          "es": "Hálito helado"
+        },
+        "base": 600,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 910205,
+        "names": {
+          "en": "Fire Breath",
+          "tw": "爆炎吐息",
+          "kr": "불꽃의 숨결",
+          "fr": "Souffle brûlant",
+          "de": "Feueratem",
+          "es": "Hálito ígneo"
+        },
+        "base": 600,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 912889,
+        "names": {
+          "en": "Mystic Thrust",
+          "tw": "神秘衝擊",
+          "kr": "마법 찌르기",
+          "fr": "Coup mystique",
+          "de": "Mystischer Stoß",
+          "es": "Estoque místico"
+        },
+        "base": 2400,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912893,
+        "names": {
+          "en": "Mystic Assault",
+          "tw": "神秘突擊",
+          "kr": "신비로운 돌격",
+          "fr": "Assaut mystique",
+          "de": "Mystischer Überfall",
+          "es": "Asalto místico"
+        },
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911321,
@@ -3312,12 +3429,15 @@ export const UNITS: any[] = [
           "de": "Blutroter Raubzug",
           "es": "Invasión carmesí"
         },
-        "castTime": 20,
-        "framesList": [
-          100
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
+        "castTime": 40,
         "offset": 14,
-        "base": 700
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911323,
@@ -3329,15 +3449,57 @@ export const UNITS: any[] = [
           "de": "Rote Rache",
           "es": "Venganza escarlata"
         },
-        "base": 470,
-        dualable: false,
+        "base": 500,
         "hitDamage": [
           100
         ],
+        "castTime": 10,
+        "offset": 14,
         "framesList": [
           0
+        ]
+      },
+      {
+        "id": 912896,
+        "names": {
+          "en": "Spiral Thrust",
+          "tw": "螺旋衝擊",
+          "kr": "나선의 찌르기",
+          "fr": "Coup en spirale",
+          "de": "Spiralstoß",
+          "es": "Estoque espiral"
+        },
+        "base": 650,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
         ],
-        "offset": 8
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912898,
+        "names": {
+          "en": "Rain of Spears",
+          "tw": "暴雨之槍",
+          "kr": "쏟아지는 창",
+          "fr": "Nuée de lances",
+          "de": "Speerschauer",
+          "es": "Lluvia de lanzas"
+        },
+        "base": 750,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
       },
       {
         "id": 401001707,
@@ -3349,35 +3511,12 @@ export const UNITS: any[] = [
           "de": "Zerstörungsstoß",
           "es": "Estoque demoledor"
         },
+        "base": 3000,
         "hitDamage": [
-          8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 10
+          7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "dualable": false,
-        "framesList": [
-          147, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
-        ],
-        "offset": 8,
-        "base": 1400
-      },
-      {
-        "id": 950000002,
-        "names": {
-          "en": "Destructive Thrust + 1",
-          "tw": "破壞衝擊 + 1",
-          "kr": "파괴의 찌르기 + 1",
-          "fr": "Coup destructeur + 1",
-          "de": "Zerstörungsstoß + 1",
-          "es": "Estoque demoledor + 1"
-        },
-        "hitDamage": [
-          8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 10
-        ],
-        "dualable": false,
-        "framesList": [
-          147, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
-        ],
-        "offset": 8,
-        "base": 1400,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -3391,6 +3530,19 @@ export const UNITS: any[] = [
             "type": "lightning",
             "value": 104
           }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          910203,
+          910204,
+          910205
         ]
       }
     ]
@@ -6877,133 +7029,236 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 910520,
-        names: {
-          en: "Grim - Soul Barrage",
-          fr: "Obscurité - Barrage spectral",
-          tw: "冷血 - 靈魂彈幕",
-          kr: "사신·영혼 난사",
-          de: "Grimm - Seelensperre",
-          es: "Parca - Ráfaga de alma"
-        },
-        framesList: [62, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-        hitDamage: [5, 5, 5, 7, 7, 8, 9, 9, 10, 35],
-        castTime: 30,
-        offset: 26,
-        base: 300,
-        ignore: 50,
-        damage: "magic",
-        dualable: false
-      },
-      {
-        "id": 911453,
+        "id": 20100,
         "names": {
-          "en": "Grim - Soul Barrage + 2",
-          "tw": "冷血 - 靈魂彈幕 + 2",
-          "kr": "사신·영혼 난사 + 2",
-          "fr": "Obscurité - Barrage spectral + 2",
-          "de": "Grimm - Seelensperre + 2",
-          "es": "Parca - Ráfaga de alma + 2"
+          "en": "Thundara",
+          "tw": "中雷電",
+          "kr": "선더라",
+          "fr": "Foudre +",
+          "de": "Blitzra",
+          "es": "Electro+"
         },
         "damage": "magic",
-        "base": 400,
+        "base": 140,
         "hitDamage": [
-          5, 5, 5, 7, 7, 8, 9, 9, 10, 35
+          100
         ],
-        "castTime": 30,
-        "dualable": false,
-        "ignore": 50,
-        "framesList": [
-          62, 10, 10, 10, 10, 10, 10, 10, 10, 10
-        ],
-        "offset": 14
-      },
-      {
-        id: 910526,
-        names: {
-          en: "Grim - Eldritch Flames",
-          fr: "Obscurité - Flammes surnaturelles",
-          tw: "冷血 - 鬼火",
-          kr: "사신·오싹한 불꽃",
-          de: "Grimm - Unirdische Flammen",
-          es: "Parca - Llama de Eldritch"
-        },
-        framesList: [110, 10, 10, 10, 10],
-        hitDamage: [10, 10, 15, 15, 50],
-        offset: 56,
-        base: 400,
-        damage: "magic",
-        elements : [
-          "dark",
-          "fire"
-        ],
-        debuffs : [
-          {
-            type: "dark",
-            value: 50
-          },
-          {
-            type: "fire",
-            value: 50
-          }
-        ],
-        dualable: false
-      },
-      {
-        "id": 911451,
-        "names": {
-          "en": "Grim - Eldritch Flames + 2",
-          "tw": "冷血 - 鬼火 + 2",
-          "kr": "사신·오싹한 불꽃 + 2",
-          "fr": "Obscurité - Flammes surnaturelles + 2",
-          "de": "Grimm - Unirdische Flammen + 2",
-          "es": "Parca - Llama de Eldritch + 2"
-        },
-        "damage": "magic",
-        "base": 500,
-        "hitDamage": [
-          10, 10, 15, 15, 50
-        ],
+        "castTime": 40,
+        "magicType": "black",
         "elements": [
-          "fire",
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 20220,
+        "names": {
+          "en": "Thundaga",
+          "tw": "大雷電",
+          "kr": "선더가",
+          "fr": "Foudre X",
+          "de": "Blitzga",
+          "es": "Electro++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 910514,
+        "names": {
+          "en": "Grim - Shock Blade",
+          "tw": "冷血 - 雷刃",
+          "kr": "사신·번개의 칼날",
+          "fr": "Obscurité - Lame impactante",
+          "de": "Grimm - Schockklinge",
+          "es": "Parca - Hoja eléctrica"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 910515,
+        "names": {
+          "en": "Grim - Light Blade",
+          "tw": "冷血 - 光刃",
+          "kr": "사신·빛의 칼날",
+          "fr": "Obscurité - Lame lumineuse",
+          "de": "Grimm - Lichtklinge",
+          "es": "Parca - Hoja luminosa"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 910516,
+        "names": {
+          "en": "Grim - Dark Blade",
+          "tw": "冷血 - 暗刃",
+          "kr": "사신·어둠의 칼날",
+          "fr": "Obscurité - Lame obscure",
+          "de": "Grimm - Dunkelklinge",
+          "es": "Parca - Hoja tenebrosa"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
           "dark"
         ],
         "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 910517,
+        "names": {
+          "en": "Grim - Fire Blade",
+          "tw": "冷血 - 火刃",
+          "kr": "사신·불꽃의 칼날",
+          "fr": "Obscurité - Lame de feu",
+          "de": "Grimm - Feuerklinge",
+          "es": "Parca - Hoja ígnea"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912903,
+        "names": {
+          "en": "Grim - Soul Barrage",
+          "tw": "冷血 - 靈魂彈幕",
+          "kr": "사신·영혼 난사",
+          "fr": "Obscurité - Barrage spectral",
+          "de": "Grimm - Seelensperre",
+          "es": "Parca - Ráfaga de alma"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          5, 5, 5, 7, 7, 8, 9, 9, 10, 35
+        ],
+        "castTime": 39,
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          62, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 20310,
+        "names": {
+          "en": "Thundaja",
+          "tw": "強雷電",
+          "kr": "선더쟈",
+          "fr": "Foudre max",
+          "de": "Blitzka",
+          "es": "Electro+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "lightning"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 912904,
+        "names": {
+          "en": "Grim - Eldritch Flames",
+          "tw": "冷血 - 鬼火",
+          "kr": "사신·오싹한 불꽃",
+          "fr": "Obscurité - Flammes surnaturelles",
+          "de": "Grimm - Unirdische Flammen",
+          "es": "Parca - Llama de Eldritch"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
-            "value": 65
-          },
-          {
-            "type": "dark",
-            "value": 65
+            "value": 80
           }
         ],
         "framesList": [
-          110, 10, 10, 10, 10
-        ],
-        "offset": 8
-      },
-      {
-        id: 20310,
-        names: {
-          en: "Thundaja",
-          tw: "強雷電",
-          kr: "선더쟈",
-          fr: "Foudre max",
-          de: "Blitzka",
-          es: "Electro+++"
-        },
-        castTime: 40,
-        damage: "magic",
-        magicType: "black",
-        elements: [
-          "lightning"
-        ],
-        dualable: false,
-        framesList: [150],
-        offset: 14,
-        base: 600
+          52, 20, 20, 20, 20
+        ]
       },
       {
         "id": 911459,
@@ -7022,24 +7277,69 @@ export const UNITS: any[] = [
         ],
         "castTime": 50,
         "elements": [
-          "fire",
           "dark"
         ],
         "dualable": false,
+        "offset": 14,
         "debuffs": [
           {
-            "type": "fire",
-            "value": 50
-          },
-          {
             "type": "dark",
-            "value": 50
+            "value": 80
           }
         ],
         "framesList": [
           52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912907,
+        "names": {
+          "en": "Grim - Specter Flames",
+          "tw": "冷血 - 魂火",
+          "kr": "사신·망령의 화염",
+          "fr": "Obscurité - Flammes sépulcrales",
+          "de": "Grimm - Geisterflammen",
+          "es": "Parca - Llamas espectrales"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          20, 20, 20, 20, 20
         ],
-        "offset": 14
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912908,
+        "names": {
+          "en": "Grim - Specter Wave",
+          "tw": "冷血 - 魂盪",
+          "kr": "사신·망령의 파동",
+          "fr": "Obscurité - Onde sépulcrale",
+          "de": "Grimm - Geisterwelle",
+          "es": "Parca - Ola espectral"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
       },
       {
         "id": 401002007,
@@ -7052,15 +7352,25 @@ export const UNITS: any[] = [
           "es": "Furia fantasma"
         },
         "damage": "magic",
-        "base": 1110,
+        "base": 3000,
         "hitDamage": [
           5, 7, 8, 9, 10, 11, 12, 13, 25
         ],
         "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
         "framesList": [
           62, 4, 4, 4, 4, 4, 4, 4, 30
-        ],
-        "offset": 8
+        ]
       }
     ],
     "multipleBlack": 2,
@@ -7068,11 +7378,17 @@ export const UNITS: any[] = [
       {
         "count": 3,
         "abilities": [
-          910520,
-          910526,
+          910514,
+          910515,
+          910516,
+          910517,
+          910522,
+          912903,
+          912904,
           911459,
-          911453,
-          911451
+          912907,
+          912908,
+          912909
         ]
       }
     ]
@@ -8884,97 +9200,180 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 910610,
-        names: {
-          en: "Jinx - Emberfrost Brew",
-          tw: "惡兆 - 烈火將至",
-          kr: "징크스 - 불의 양조",
-          fr: "Maléfice - Braise gelée",
-          de: "Verhexen - Eisbrand-Gebräu",
-          es: "Gafe - Mezcolanza feroz"
+        "id": 910610,
+        "names": {
+          "en": "Jinx - Emberfrost Brew",
+          "tw": "惡兆 - 烈火將至",
+          "kr": "징크스 - 불의 양조",
+          "fr": "Maléfice - Braise gelée",
+          "de": "Verhexen - Eisbrand-Gebräu",
+          "es": "Gafe - Mezcolanza feroz"
         },
-        framesList: [150],
-        castTime: 40,
-        offset: 14,
-        base: 400,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
           "fire",
           "ice"
         ],
-        debuffs: [
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
           {
-            type: "fire",
-            value: 50,
+            "type": "fire",
+            "value": 75
           },
           {
-            type: "ice",
-            value: 50,
+            "type": "ice",
+            "value": 75
+          },
+          {
+            "type": "fire",
+            "value": 50
+          },
+          {
+            "type": "ice",
+            "value": 50
           }
         ],
-        dualable: false
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
-        id: 910611,
-        names: {
-          en: "Jinx - Geysershock Brew",
-          tw: "惡兆 - 暴雪將至",
-          kr: "징크스 - 눈보라의 양조",
-          fr: "Maléfice - Geyser électrique",
-          de: "Verhexen - Sprudelschock-Gebräu",
-          es: "Gafe - Mezcolanza tormentosa"
+        "id": 910611,
+        "names": {
+          "en": "Jinx - Geysershock Brew",
+          "tw": "惡兆 - 暴雪將至",
+          "kr": "징크스 - 눈보라의 양조",
+          "fr": "Maléfice - Geyser électrique",
+          "de": "Verhexen - Sprudelschock-Gebräu",
+          "es": "Gafe - Mezcolanza tormentosa"
         },
-        framesList: [70],
-        castTime: 40,
-        offset: 14,
-        base: 400,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
           "lightning",
           "water"
         ],
-        debuffs: [
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
           {
-            type: "lightning",
-            value: 50,
+            "type": "lightning",
+            "value": 75
           },
           {
-            type: "water",
-            value: 50,
+            "type": "water",
+            "value": 75
+          },
+          {
+            "type": "lightning",
+            "value": 50
+          },
+          {
+            "type": "water",
+            "value": 50
           }
         ],
-        dualable: false
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
-        id: 910613,
-        names: {
-          en: "Jinx - Cycloseismic Brew",
-          tw: "惡兆 - 泥流將至",
-          kr: "징크스 - 진흙의 양조",
-          fr: "Maléfice - Cycloséisme",
-          de: "Verhexen - Schlammböel-Gebräu",
-          es: "Gafe - Mezcolanza turbia"
+        "id": 910613,
+        "names": {
+          "en": "Jinx - Cycloseismic Brew",
+          "tw": "惡兆 - 泥流將至",
+          "kr": "징크스 - 진흙의 양조",
+          "fr": "Maléfice - Cycloséisme",
+          "de": "Verhexen - Schlammböel-Gebräu",
+          "es": "Gafe - Mezcolanza turbia"
         },
-        framesList: [180],
-        castTime: 40,
-        offset: 14,
-        base: 400,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
           "wind",
           "earth"
         ],
-        debuffs: [
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
           {
-            type: "wind",
-            value: 50,
+            "type": "wind",
+            "value": 75
           },
           {
-            type: "earth",
-            value: 50,
+            "type": "earth",
+            "value": 75
+          },
+          {
+            "type": "wind",
+            "value": 50
+          },
+          {
+            "type": "earth",
+            "value": 50
           }
         ],
-        dualable: false
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912869,
+        "names": {
+          "en": "Jinx - Eventide Brew",
+          "tw": "惡兆 - 黃昏將至",
+          "kr": "징크스 - 밤의 양조",
+          "fr": "Maléfice - Mélange vespéral",
+          "de": "Verhexen - Abendgebräu",
+          "es": "Gafe - Mezcolanza tardía"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "light",
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 75
+          },
+          {
+            "type": "dark",
+            "value": 75
+          },
+          {
+            "type": "light",
+            "value": 50
+          },
+          {
+            "type": "dark",
+            "value": 50
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 401002707,
@@ -8987,24 +9386,79 @@ export const UNITS: any[] = [
           "es": "Mambo extraño"
         },
         "damage": "magic",
-        "base": 1490,
+        "base": 2200,
         "hitDamage": [
-          100
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
         ],
         "dualable": false,
-        "framesList": [
-          400
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          },
+          {
+            "type": "lightning",
+            "value": 100
+          },
+          {
+            "type": "water",
+            "value": 100
+          },
+          {
+            "type": "wind",
+            "value": 100
+          },
+          {
+            "type": "earth",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          },
+          {
+            "type": "dark",
+            "value": 100
+          }
         ],
-        "offset": 8
+        "framesList": [
+          141, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
       }
     ],
-    multiCasts: [
+    "multiCasts": [
       {
-        count: 2,
-        abilities: [
+        "count": 2,
+        "abilities": [
+          910607,
+          912870,
+          912871,
           910610,
           910611,
-          910613
+          910618,
+          910613,
+          912873,
+          912874,
+          910622,
+          912902,
+          911820,
+          911822,
+          911825,
+          911826,
+          912869,
+          912872,
+          912875,
+          912876,
+          912880,
+          911817,
+          911824,
+          910625,
+          912877
         ]
       }
     ]
@@ -9018,91 +9472,188 @@ export const UNITS: any[] = [
     },
     abilities: [
       {
-        id: 1,
-        names: {
-          en: "Ice Shards",
-          tw: "寒冰碎片",
-          kr: "얼음 조각",
-          fr: "Fragment de glace",
-          de: "Eissplitter",
-          es: "Fragmentos de hielo"
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
         },
-        framesList: [49, 7, 7, 7, 7, 5, 7, 7, 7, 7],
-        castTime: 20,
-        offset: 14,
-        base: 330,
-        ignore: 25,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
           "ice"
         ],
-        dualable: false,
-        range: {
-          min: -10
-        }
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
       },
       {
-        id: 910652,
-        names: {
-          en: "Absolute Zero",
-          tw: "極限零凍",
-          kr: "절대영도",
-          fr: "Zéro absolu",
-          de: "Absoluter Nullpunkt",
-          es: "Cero absoluto"
+        "id": 910640,
+        "names": {
+          "en": "Frost Nova",
+          "tw": "冰霜新星",
+          "kr": "얼음 회오리",
+          "fr": "Nova gelée",
+          "de": "Frostnova",
+          "es": "Nova gélida"
         },
-        framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-        castTime: 39,
-        offset: 14,
-        base: 300,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 540,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
           "ice"
         ],
-        dualable: false
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
-        id: 910653,
-        names: {
-          en: "Absolute Zero (Max)",
-          tw: "極限零凍 (Max)",
-          kr: "절대영도 (Max)",
-          fr: "Zéro absolu (Max)",
-          de: "Absoluter Nullpunkt (Max)",
-          es: "Cero absoluto (Max)"
+        "id": 910643,
+        "names": {
+          "en": "Ice Shards",
+          "tw": "寒冰碎片",
+          "kr": "얼음 조각",
+          "fr": "Fragment de glace",
+          "de": "Eissplitter",
+          "es": "Fragmentos de hielo"
         },
-        framesList: [40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        hitDamage: [8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-        castTime: 39,
-        offset: 14,
-        base: 900,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
           "ice"
         ],
-        dualable: false
+        "dualable": false,
+        "offset": 14,
+        "ignore": 25,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
       },
       {
-        id: 910654,
-        names: {
-          en: "Snow Burial",
-          tw: "冰雪葬",
-          kr: "설장",
-          fr: "Cercueil de neige",
-          de: "Schneebegräbnis",
-          es: "Entierro de nieve"
+        "id": 910651,
+        "names": {
+          "en": "Glacial Storm",
+          "tw": "冰川風暴",
+          "kr": "혹한의 바람",
+          "fr": "Tempête glaciale",
+          "de": "Eisiger Sturm",
+          "es": "Tormenta glacial"
         },
-        framesList: [60, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-        castTime: 36,
-        offset: 14,
-        base: 350,
-        ignore: 50,
-        damage: "magic",
-        elements: [
+        "damage": "magic",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
           "ice"
         ],
-        dualable: false
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "id": 912854,
+        "names": {
+          "en": "Absolute Zero",
+          "tw": "極限零凍",
+          "kr": "절대영도",
+          "fr": "Zéro absolu",
+          "de": "Absoluter Nullpunkt",
+          "es": "Cero absoluto"
+        },
+        "damage": "magic",
+        "base": 1300,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "id": 912855,
+        "names": {
+          "en": "Snow Burial",
+          "tw": "冰雪葬",
+          "kr": "설장",
+          "fr": "Cercueil de neige",
+          "de": "Schneebegräbnis",
+          "es": "Entierro de nieve"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912860,
+        "names": {
+          "en": "Cold Snap",
+          "tw": "寒流",
+          "kr": "혹한",
+          "fr": "Vague de froid",
+          "de": "Beißende Kälte",
+          "es": "Ola glacial"
+        },
+        "damage": "magic",
+        "base": 2500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          40
+        ]
       },
       {
         "id": 20300,
@@ -9125,10 +9676,10 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
+        "offset": 14,
         "framesList": [
           240
-        ],
-        "offset": 14
+        ]
       },
       {
         "id": 20360,
@@ -9151,6 +9702,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
+        "offset": 14,
         "debuffs": [
           {
             "type": "ice",
@@ -9159,8 +9711,33 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           140, 14, 14, 14, 14, 14, 15, 15
+        ]
+      },
+      {
+        "id": 912863,
+        "names": {
+          "en": "Piercing Chill",
+          "tw": "刺骨寒意",
+          "kr": "날카로운 냉기",
+          "fr": "Froid mordant",
+          "de": "Stechende Kälte",
+          "es": "Frío penetrante"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          100
         ],
-        "offset": 14
+        "castTime": 10,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          40
+        ]
       },
       {
         "id": 401002607,
@@ -9173,7 +9750,7 @@ export const UNITS: any[] = [
           "es": "Furia polar"
         },
         "damage": "magic",
-        "base": 1290,
+        "base": 3400,
         "hitDamage": [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
@@ -9181,19 +9758,38 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
         "framesList": [
           80, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
-        ],
-        "offset": 8
+        ]
       }
     ],
-    multiCasts: [
+    "multiCasts": [
       {
-        count: 4,
-        abilities: [
-          910652,
-          910653,
-          910654
+        "count": 4,
+        "abilities": [
+          910645,
+          910646,
+          911801,
+          910640,
+          910641,
+          910642,
+          910643,
+          910651,
+          912854,
+          912855,
+          912860,
+          911799,
+          911802,
+          912861,
+          912863,
+          912892
         ]
       }
     ],
@@ -21859,12 +22455,86 @@ export const UNITS: any[] = [
           "de": "Sommer - Wellenspritzer",
           "es": "Verano - Salpicón de las mareas"
         },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
         "castTime": 40,
+        "offset": 14,
         "framesList": [
           70
+        ]
+      },
+      {
+        "id": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
         ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
         "offset": 14,
-        "base": 200
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "id": 20240,
+        "names": {
+          "en": "Aeroga",
+          "tw": "大勁風",
+          "kr": "에어로가",
+          "fr": "Vent X",
+          "es": "Aero++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 912848,
+        "names": {
+          "en": "Summer - Radiant Sun",
+          "tw": "夏日 - 陽光四射",
+          "kr": "여름·빛나는 태양",
+          "fr": "Été - Soleil radieux",
+          "de": "Sommer - Strahlende Sonne",
+          "es": "Verano - Sol radiante"
+        },
+        "base": 200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911272,
@@ -21876,43 +22546,17 @@ export const UNITS: any[] = [
           "de": "Sommer - Meeresbrise",
           "es": "Verano - Brisa marina"
         },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
         "castTime": 40,
         "elements": [
           "wind"
         ],
+        "offset": 14,
         "framesList": [
           70
-        ],
-        "offset": 14,
-        "base": 200
-      },
-      {
-        "id": 911279,
-        "names": {
-          "en": "Summer - Waves of the Ocean",
-          "tw": "夏日 - 海洋波浪",
-          "kr": "여름·파도",
-          "fr": "Été - Vagues océaniques",
-          "de": "Sommer - Ozeanwellen",
-          "es": "Verano - Voluntad del océano"
-        },
-        "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
-        ],
-        "castTime": 40,
-        "elements": [
-          "water"
-        ],
-        "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ],
-        "offset": 14,
-        "base": 460,
-        "debuffs": [
-          {
-            "type": "water",
-            "value": 60
-          }
         ]
       },
       {
@@ -21925,23 +22569,52 @@ export const UNITS: any[] = [
           "de": "Sommer - Meereswinde",
           "es": "Verano - Voluntad de los mares"
         },
+        "base": 600,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
         "elements": [
           "wind"
         ],
-        "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ],
         "offset": 14,
-        "base": 460,
         "debuffs": [
           {
             "type": "wind",
-            "value": 60
+            "value": 100
           }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 911279,
+        "names": {
+          "en": "Summer - Waves of the Ocean",
+          "tw": "夏日 - 海洋波浪",
+          "kr": "여름·파도",
+          "fr": "Été - Vagues océaniques",
+          "de": "Sommer - Ozeanwellen",
+          "es": "Verano - Voluntad del océano"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "water",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
         ]
       },
       {
@@ -21954,14 +22627,18 @@ export const UNITS: any[] = [
           "de": "Sommer - Ozeanspalter",
           "es": "Verano - Rompeocéanos"
         },
+        "base": 540,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
         "elements": [
           "water"
         ],
+        "offset": 14,
         "framesList": [
-          70
-        ],
-        "offset": 8,
-        "base": 540
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911286,
@@ -21973,29 +22650,37 @@ export const UNITS: any[] = [
           "de": "Sommer - Showdown",
           "es": "Verano - Enfrentamiento"
         },
-        "framesList": [
-          70
+        "base": 3000,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
         ],
-        "offset": 8,
-        "base": 1200
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 911288,
         "names": {
-          "en": "Enriched Mind",
-          "tw": "充實心靈",
-          "kr": "풍부한 지식",
-          "fr": "Esprit enrichi",
-          "de": "Reicherer Geist",
-          "es": "Mente enriquecida"
+          "en": "Summer - Enriched Mind",
+          "tw": "夏日 - 充實心靈",
+          "kr": "여름·풍부한 지식",
+          "fr": "Été - Esprit enrichi",
+          "de": "Sommer - Reicherer Geist",
+          "es": "Verano - Mente enriquecida"
         },
+        "base": 1000,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
         "castTime": 40,
         "dualable": false,
-        "framesList": [
-          120
-        ],
         "offset": 14,
-        "base": 500
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 401005307,
@@ -22007,26 +22692,14 @@ export const UNITS: any[] = [
           "de": "Hai-Welle",
           "es": "Ola de tiburón"
         },
+        "base": 2200,
         "hitDamage": [
-          50,
-          50
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
         ],
         "dualable": false,
+        "offset": 14,
         "framesList": [
-          125,
-          80
-        ],
-        "offset": 8,
-        "base": 1290,
-        "debuffs": [
-          {
-            "type": "water",
-            "value": 100
-          },
-          {
-            "type": "wind",
-            "value": 100
-          }
+          70, 6, 6, 6, 6, 6, 6, 6, 14, 6, 6, 6, 6, 6, 6, 6
         ]
       }
     ],
@@ -22035,10 +22708,18 @@ export const UNITS: any[] = [
         "count": 3,
         "abilities": [
           911269,
+          911270,
           911272,
+          911273,
           911278,
           911279,
-          911280
+          911280,
+          911283,
+          911285,
+          911287,
+          912848,
+          911286,
+          911288
         ]
       }
     ]
@@ -47647,6 +48328,1019 @@ export const UNITS: any[] = [
           912826,
           912828,
           912829
+        ]
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "names": {
+      "en": "Tressa",
+      "tw": "特蕾莎",
+      "kr": "트레사"
+    },
+    "abilities": [
+      {
+        "id": 229702,
+        "names": {
+          "en": "Tradewinds",
+          "tw": "呼風",
+          "kr": "바람 부르기",
+          "fr": "Souffle mercantile",
+          "de": "Passat",
+          "es": "Alisios"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 229705,
+        "names": {
+          "en": "Trade Tempest",
+          "tw": "大呼風",
+          "kr": "태풍 부르기",
+          "fr": "Tornade mercantile",
+          "de": "Passatsturm",
+          "es": "Furia comercial"
+        },
+        "base": 160,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 509171,
+        "names": {
+          "en": "Trade Tempest+",
+          "tw": "大呼風·增幅",
+          "kr": "태풍 부르기·부스트",
+          "fr": "Tornade mercantile +",
+          "de": "Passatsturm+",
+          "es": "Furia comercial+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 60
+          }
+        ],
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "id": 334000405,
+        "names": {
+          "en": "Hired Help",
+          "tw": "召喚傭兵",
+          "kr": "용병 부르기",
+          "fr": "Acolyte",
+          "de": "Angeheuerte Hilfe",
+          "es": "Ayuda pagada"
+        },
+        "base": 750,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          136
+        ]
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "names": {
+      "en": "Therion",
+      "tw": "泰里翁",
+      "kr": "테리온",
+      "fr": "Thérion"
+    },
+    "abilities": [
+      {
+        "id": 229681,
+        "names": {
+          "en": "Wildfire",
+          "tw": "鬼火",
+          "kr": "도깨비불",
+          "fr": "Embrasement",
+          "de": "Lauffeuer",
+          "es": "Fuego salvaje"
+        },
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 229682,
+        "names": {
+          "en": "Shackle Foe",
+          "tw": "蝙蝠",
+          "kr": "박쥐",
+          "fr": "Piège de la noctule",
+          "de": "Fledermausfesseln",
+          "es": "Bridas vampiro"
+        },
+        "base": 160,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 229683,
+        "names": {
+          "en": "Armor Corrosive",
+          "tw": "貓頭鷹",
+          "kr": "올빼미",
+          "fr": "Vitriol du hibou",
+          "de": "Eulensäure",
+          "es": "Ácido de búho"
+        },
+        "base": 160,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 912712,
+        "names": {
+          "en": "Steal",
+          "tw": "盜取",
+          "kr": "훔치기",
+          "fr": "Voler",
+          "de": "Stehlen",
+          "es": "Robar"
+        },
+        "base": 160,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          30
+        ]
+      },
+      {
+        "id": 229686,
+        "names": {
+          "en": "HP Thief",
+          "tw": "吸血匕首",
+          "kr": "라이프 스틸 대거",
+          "fr": "Vol de PV",
+          "de": "GP-Dieb",
+          "es": "Ladrón de PV"
+        },
+        "base": 360,
+        "hitDamage": [
+          66.66666666666667, 33.333333333333336
+        ],
+        "castTime": 12,
+        "offset": 14,
+        "framesList": [
+          14, 20
+        ]
+      },
+      {
+        "id": 229687,
+        "names": {
+          "en": "Steal MP",
+          "tw": "吸血匕首",
+          "kr": "매직 스틸 대거",
+          "fr": "Vol de PM",
+          "de": "MP stehlen",
+          "es": "Robo de PM"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 12,
+        "offset": 14,
+        "framesList": [
+          14
+        ]
+      },
+      {
+        "id": 509161,
+        "names": {
+          "en": "Wildfire+",
+          "tw": "鬼火·增幅",
+          "kr": "도깨비불·부스트",
+          "fr": "Embrasement +",
+          "de": "Lauffeuer+",
+          "es": "Fuego salvaje+"
+        },
+        "base": 460,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "id": 509162,
+        "names": {
+          "en": "Shackle Foe+",
+          "tw": "蝙蝠·增幅",
+          "kr": "박쥐·부스트",
+          "fr": "Piège de la noctule +",
+          "de": "Fledermausfesseln+",
+          "es": "Bridas vampiro+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 509163,
+        "names": {
+          "en": "Armor Corrosive+",
+          "tw": "貓頭鷹·增幅",
+          "kr": "올빼미·부스트",
+          "fr": "Vitriol du hibou +",
+          "de": "Eulensäure+",
+          "es": "Ácido de búho+"
+        },
+        "base": 240,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "id": 334000306,
+        "names": {
+          "en": "Leaping Thief",
+          "tw": "盜賊飛躍",
+          "kr": "리프 로버",
+          "fr": "Monte-en-l'air",
+          "de": "Hervorspringender Dieb",
+          "es": "Ladrón escurridizo"
+        },
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          82
+        ]
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "names": {
+      "en": "Primrose",
+      "tw": "普里姆蘿潔",
+      "kr": "프림로제"
+    },
+    "abilities": [
+      {
+        "id": 229643,
+        "names": {
+          "en": "Moonlight Waltz",
+          "tw": "月夜之詩",
+          "kr": "달밤의 시",
+          "fr": "Valse nocturne",
+          "de": "Mondlichtwalzer",
+          "es": "Vals de la luna"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 65
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 229653,
+        "names": {
+          "en": "Night Ode",
+          "tw": "闇夜之詩",
+          "kr": "암야의 시",
+          "fr": "Ode de minuit",
+          "de": "Nacht-Ode",
+          "es": "Oda nocturna"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 55
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 912799,
+        "names": {
+          "en": "A monster was summoned forth! Exploding Fist",
+          "tw": "呼喚魔物的　爆炸之拳",
+          "kr": "마물을 불러낸 폭발하는 주먹",
+          "fr": "Un monstre a été invoqué ! Coup de poing explosif",
+          "de": "Ein Monster wurde herbeigerufen! Explodierende Faust",
+          "es": "¡Se ha invocado a un monstruo! Puño explosivo"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "id": 509139,
+        "names": {
+          "en": "Moonlight Waltz+",
+          "tw": "月夜之詩·增幅",
+          "kr": "달밤의 시·부스트",
+          "fr": "Valse nocturne +",
+          "de": "Mondlichtwalzer+",
+          "es": "Vals de la luna+"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          50, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 509141,
+        "names": {
+          "en": "Night Ode+",
+          "tw": "闇夜之詩·增幅",
+          "kr": "암야의 시·부스트",
+          "fr": "Ode de minuit +",
+          "de": "Nacht-Ode+",
+          "es": "Oda nocturna+"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "dark",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          509139,
+          509141,
+          229653,
+          229643
+        ]
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "names": {
+      "en": "Olberic",
+      "tw": "歐爾貝克",
+      "kr": "올베릭"
+    },
+    "abilities": [
+      {
+        "id": 229664,
+        "names": {
+          "en": "Level Slash",
+          "tw": "橫一字斬",
+          "kr": "가로 일자 베기",
+          "fr": "Taillade horizontale",
+          "de": "Horizontalhieb",
+          "es": "Tajo de nivel"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          44
+        ]
+      },
+      {
+        "id": 229669,
+        "names": {
+          "en": "Cross Strike",
+          "tw": "十字斬",
+          "kr": "십자 베기",
+          "fr": "Frappe croisée",
+          "de": "Kreuzschlag",
+          "es": "Golpe cruzado"
+        },
+        "base": 260,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          18, 27
+        ]
+      },
+      {
+        "id": 229670,
+        "names": {
+          "en": "Spearhead",
+          "tw": "一番槍",
+          "kr": "제일창",
+          "fr": "Fer de lance",
+          "de": "Speerspitze",
+          "es": "Cabeza de lanza"
+        },
+        "base": 420,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 509154,
+        "names": {
+          "en": "Level Slash+",
+          "tw": "橫一字斬·增幅",
+          "kr": "가로 일자 베기·부스트",
+          "fr": "Taillade horizontale +",
+          "de": "Horizontalhieb+",
+          "es": "Tajo de nivel+"
+        },
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          44
+        ]
+      },
+      {
+        "id": 509155,
+        "names": {
+          "en": "Cross Strike+",
+          "tw": "十字斬·增幅",
+          "kr": "십자 베기·부스트",
+          "fr": "Frappe croisée +",
+          "de": "Kreuzschlag+",
+          "es": "Golpe cruzado+"
+        },
+        "base": 520,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          18, 27
+        ]
+      },
+      {
+        "id": 509156,
+        "names": {
+          "en": "Spearhead+",
+          "tw": "一番槍·增幅",
+          "kr": "제일창·부스트",
+          "fr": "Fer de lance +",
+          "de": "Speerspitze+",
+          "es": "Cabeza de lanza+"
+        },
+        "base": 670,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 80
+          },
+          {
+            "type": "earth",
+            "value": 80
+          }
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 229675,
+        "names": {
+          "en": "Thousand Spears",
+          "tw": "千枝槍",
+          "kr": "천 자루의 창",
+          "fr": "Volée de lances",
+          "de": "Tausend Speere",
+          "es": "Mil lanzas"
+        },
+        "base": 720,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42
+        ]
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "names": {
+      "en": "Kimono Fina",
+      "tw": "正裝菲娜",
+      "kr": "기모노 피나",
+      "fr": "Fina en kimono",
+      "de": "Kimono-Fina",
+      "es": "Fina con kimono"
+    },
+    "abilities": [
+      {
+        "id": 230930,
+        "names": {
+          "en": "Arrows of Healing",
+          "tw": "煌癒之三矢",
+          "kr": "쾌유의 세 화살",
+          "fr": "Flèches de guérison",
+          "de": "Pfeile der Heilung",
+          "es": "Flechas curativas"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          33.333333333333336, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          84, 38, 20
+        ]
+      },
+      {
+        "id": 230931,
+        "names": {
+          "en": "Arrows of Restoration",
+          "tw": "魔溢之三矢",
+          "kr": "마일의 세 화살",
+          "fr": "Flèches de restauration",
+          "de": "Pfeile überfließender Magie",
+          "es": "Flechas reparadoras"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          33.333333333333336, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          84, 20, 18
+        ]
+      },
+      {
+        "id": 230935,
+        "names": {
+          "en": "Sunbeam - Ice",
+          "tw": "陽光・冰",
+          "kr": "태양광·얼음",
+          "fr": "Rayon solaire - Glace",
+          "de": "Sonnenstrahl - Eis",
+          "es": "Rayo de sol - Hielo"
+        },
+        "damage": "magic",
+        "base": 380,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 230937,
+        "names": {
+          "en": "Sunbeam - Light",
+          "tw": "陽光・光",
+          "kr": "태양광·빛",
+          "fr": "Rayon solaire - Lumière",
+          "de": "Sonnenstrahl - Licht",
+          "es": "Rayo de sol - Luz"
+        },
+        "damage": "magic",
+        "base": 380,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "light",
+            "value": 75
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 230932,
+        "names": {
+          "en": "Raining Arrows",
+          "tw": "時雨矢",
+          "kr": "시우의 화살",
+          "fr": "Pluie de flèches",
+          "de": "Regenpfeil",
+          "es": "Chaparrón de flechas"
+        },
+        "damage": "magic",
+        "base": 450,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "id": 230936,
+        "names": {
+          "en": "Flash - Ice",
+          "tw": "閃光・冰",
+          "kr": "섬광·얼음",
+          "fr": "Flash - Glace",
+          "de": "Blitz - Eis",
+          "es": "Destello - Hielo"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 230938,
+        "names": {
+          "en": "Flash - Light",
+          "tw": "閃光・光",
+          "kr": "섬광·빛",
+          "fr": "Flash - Lumière",
+          "de": "Blitz - Licht",
+          "es": "Destello - Luz"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 230934,
+        "names": {
+          "en": "Arrowhead",
+          "tw": "鋒矢",
+          "kr": "봉시",
+          "fr": "Pointe de flèche",
+          "de": "Pfeilspitze",
+          "es": "Punta de flecha"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          84, 4
+        ]
+      },
+      {
+        "id": 509795,
+        "names": {
+          "en": "Consecutive Bullseye",
+          "tw": "雅矢皆中",
+          "kr": "백발백중",
+          "fr": "En plein dans le mille",
+          "de": "Jeder Pfeil ein Treffer",
+          "es": "Blanco consecutivo"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          33.333333333333336, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          84, 20, 20
+        ]
+      },
+      {
+        "id": 509788,
+        "names": {
+          "en": "Phosphorescence - Ice",
+          "tw": "燐光・冰",
+          "kr": "인광·얼음",
+          "fr": "Phosphorescence - Glace",
+          "de": "Phosphoreszenz - Eis",
+          "es": "Fosforescencia - Hielo"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          7.6923076923076925, 7.6923076923076925, 7.6923076923076925, 7.6923076923076925, 69.23076923076923
+        ],
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 509789,
+        "names": {
+          "en": "Phosphorescence - Light",
+          "tw": "燐光・光",
+          "kr": "인광·빛",
+          "fr": "Phosphorescence - Lumière",
+          "de": "Phosphoreszenz - Licht",
+          "es": "Fosforescencia - Luz"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          7.6923076923076925, 7.6923076923076925, 7.6923076923076925, 7.6923076923076925, 69.23076923076923
+        ],
+        "castTime": 50,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "id": 509796,
+        "names": {
+          "en": "Arrow of Light",
+          "tw": "光芒一矢",
+          "kr": "광망의 화살",
+          "fr": "Flèche de lumière",
+          "de": "Lichtstrahlpfeil",
+          "es": "Flecha de luz"
+        },
+        "damage": "magic",
+        "base": 2000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 100024307,
+        "names": {
+          "en": "Lotus Arrow",
+          "tw": "白蓮一矢",
+          "kr": "백련의 화살",
+          "fr": "Flèche du lotus",
+          "de": "Lotuspfeil",
+          "es": "Flecha de loto"
+        },
+        "damage": "magic",
+        "base": 3450,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 100
+          },
+          {
+            "type": "light",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          266
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 4,
+        "abilities": [
+          230930,
+          230931,
+          230932,
+          230934,
+          230935,
+          230936,
+          230937,
+          230938,
+          230940,
+          230941,
+          230942,
+          230943,
+          509795,
+          509788,
+          509789,
+          509796
         ]
       }
     ]

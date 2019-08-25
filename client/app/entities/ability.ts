@@ -2,6 +2,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class Ability {
   id: number = 1;
+  dataId?;
   names: any = {
     en: 'New ability'
   };
@@ -28,7 +29,7 @@ export class Ability {
   }
 
   constructAbilityFromJson(ability: Ability, translateService: TranslateService): void {
-    this.id = ability.id;
+    this.id = ability.id ? ability.id : ability.dataId;
     this.names = ability.names;
     this.getName(translateService);
     this.base = ability.base;
