@@ -193,7 +193,6 @@ export class JsonService {
 
   private formatJsons() {
     Object.keys(this.units).forEach(unitId => {
-      // let unitId = "100000102";
       let id = this.addUnit(this.units[unitId]);
 
       if (id !== null && this.units[unitId].skills) {
@@ -287,7 +286,7 @@ export class JsonService {
 
       this.ffbeChainUnits[id] = {
         dataId: dataId,
-        names: {},,
+        names: {},
         rarity: {
           min: unit.rarity_min,
           max: unit.rarity_max
@@ -486,7 +485,7 @@ export class JsonService {
     // [0, 3, 50, [30,  3,  910947,  1]]
     find = this.findEffect(rawEffect, [50]);
     if (find) {
-      this.addSkill(unitId, this.getSkill(find.effect[2]), find.effect[2], rarity level);
+      this.addSkill(unitId, this.getSkill(find.effect[2]), find.effect[2], rarity, level);
     }
 
     // Random use skill : [2, 1, 29, [[504100,  30], [504110,  30], [504120,  40], [0,  0], [0,  0]]]

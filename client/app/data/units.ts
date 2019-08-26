@@ -50485,6 +50485,7 @@ export const UNITS: any[] = [
           50
         ]
       },
+      {
         "dataId": 912747,
         "names": {
           "en": "Spirit Fire - Fox's Desire",
@@ -52390,6 +52391,7 @@ export const UNITS: any[] = [
           912828,
           912829
         ]
+      }
     ]
   },
   {
