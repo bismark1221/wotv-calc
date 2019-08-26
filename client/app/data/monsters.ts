@@ -400,7 +400,7 @@ export const MONSTERS: any[] = [
     type: "indignant"
   },
   {
-    id: 96,
+    id: 15,
     names:{
       en: "Greater Demon lv. 99"
     },
@@ -415,6 +415,10 @@ export const MONSTERS: any[] = [
     races:[
       "demon"
     ],
+    resistances: {
+      light: -50,
+      dark: 100
+    },
     breaks: {
       def: false,
       spr: false
@@ -422,12 +426,15 @@ export const MONSTERS: any[] = [
     type: "indignant"
   },
   {
-    id: 15,
+    id: 16,
     names:{
       en: "Intangir"
     },
     stats: {
       def: {
+        breakable: 80
+      },
+      spr: {
         breakable: 35
       }
     },
@@ -441,12 +448,15 @@ export const MONSTERS: any[] = [
     type: "indignant"
   },
   {
-    id: 16,
+    id: 17,
     names:{
       en: "Brachiosaur"
     },
     stats: {
       def: {
+        breakable: 560
+      },
+      spr: {
         breakable: 448
       },
     },
@@ -463,12 +473,15 @@ export const MONSTERS: any[] = [
     type: "indignant"
   },
   {
-    id: 17,
+    id: 18,
     names:{
       en: "Demon Chimera"
     },
     stats: {
       def: {
+        breakable: 400
+      },
+      spr: {
         breakable: 352
       },
     },
@@ -489,13 +502,13 @@ export const MONSTERS: any[] = [
     type: "indignant"
   },
   {
-    id: 18,
+    id: 19,
     names:{
-      en: "White Dragon+"
+      en: "White Dragon"
     },
     stats: {
       def: {
-        breakable:375
+        breakable: 375
       },
       spr: {
         breakable: 330
@@ -515,14 +528,19 @@ export const MONSTERS: any[] = [
     type: "indignant"
   },
   {
-    id: 19,
+    id: 20,
     names:{
       en: "Dark Shiva"
     },
     stats: {
       def: {
-        breakable: 30 ,spr:2000,"spr%":30
+        breakable: 200,
+        unbreakable: 60
       },
+      spr: {
+        breakable: 2000,
+        unbreakable: 600
+      }
     },
     races:[
       "human"
@@ -535,17 +553,23 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 20,
+    id: 21,
     names:{
       en: "Dark Golem"
     },
     stats: {
       def: {
-        breakable: 30 ,spr:100,"spr%":30
+        breakable: 600,
+        unbreakable: 180
       },
+      spr: {
+        breakable: 100,
+        unbreakable: 30
+      }
     },
     races:[
       "stone"
@@ -558,16 +582,22 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: false
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 21,
+    id: 22,
     names:{
       en: "Calcabrina"
     },
     stats: {
       def: {
-        breakable: 2000
+        breakable: 100,
+        unbreakable: 30
+      },
+      spr: {
+        breakable: 2000,
+        unbreakable: 600
       }
     },
     races:[
@@ -577,15 +607,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 22,
+    id: 23,
     names:{
       en: "Calca"
     },
     stats: {
       def: {
+        breakable: 2000
+      },
+      spr: {
         breakable: 150
       }
     },
@@ -596,17 +630,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 23,
+    id: 24,
     names:{
       en: "Brina"
     },
     stats: {
       def: {
-        breakable: 150
+        breakable: 2000
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "demon",
@@ -615,15 +653,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 24,
+    id: 25,
     names:{
       en: "Great Malboro"
     },
     stats: {
       def: {
+        breakable: 2000
+      },
+      spr: {
         breakable: 200
       },
     },
@@ -641,15 +683,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 25,
+    id: 26,
     names:{
       en: "Malboro Queen"
     },
     stats: {
       def: {
+        breakable: 200
+      },
+      spr: {
         breakable: 2000
       },
     },
@@ -667,15 +713,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 26,
+    id: 27,
     names:{
       en: "Omega"
     },
     stats: {
       def: {
+        breakable: 250
+      },
+      spr: {
         breakable: 150
       },
     },
@@ -695,15 +745,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 27,
+    id: 28,
     names:{
       en: "Mom Bomb"
     },
     stats: {
       def: {
+        breakable: 60
+      },
+      spr: {
         breakable: 60
       }
     },
@@ -722,15 +776,19 @@ export const MONSTERS: any[] = [
     breaks: {
      def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 28,
+    id: 29,
     names:{
       en: "Dad Bomb"
     },
     stats: {
       def: {
+        breakable: 60
+      },
+      spr: {
         breakable: 60
       },
     },
@@ -750,15 +808,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 29,
+    id: 30,
     names:{
       en: "Iron Giant"
     },
     stats: {
       def: {
+        breakable: 300
+      },
+      spr: {
         breakable: 35
       },
     },
@@ -768,16 +830,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 30,
+    id: 31,
     names:{
       en: "Elafikeras"
     },
     stats: {
       def: {
-        breakable: 45, "mag":500, spr:15,
+        breakable: 45
+      },
+      spr: {
+        breakable: 15,
       }
     },
     races: [
@@ -791,16 +857,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "fallen"
   },
   {
-    id: 31,
+    id: 32,
     names:{
       en: "Glacial"
     },
     stats: {
       def: {
-        breakable: 15, "mag":450, spr:15
+        breakable: 15
+      },
+      spr: {
+        breakable: 15
       }
     },
     races: [
@@ -811,29 +881,12 @@ export const MONSTERS: any[] = [
       fire: -1000,
       ice: 300,
       water: 300
-      },"special":["Resistant to ATK/DEF/SPR break (50%)"]},
-  {
-    id: 32,
-    names:{
-      en: "Glacon"
-    },
-    stats: {
-      def: {
-        breakable: 3, "mag":400, spr:15
-      }
-    },
-    races: [
-      "spirit"
-    ],
-    resistances: {
-      fire: -1000,
-      ice: 300,
-      water: 300
     },
     breaks: {
-      def: true,
-      spr: true
-    }
+      def: false,
+      spr: false
+    },
+    type: "fallen"
   },
   {
     id: 33,
@@ -842,13 +895,21 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 199, "mag":450, spr:150
+        breakable: 999
+      },
+      spr: {
+        breakable: 150
       }
     },
     races: [
       "demon",
       "spirit"
-    ]
+    ],
+    breaks: {
+      def: false,
+      spr: false
+    },
+    type: "fallen"
   },
   {
     id: 34,
@@ -857,7 +918,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 20000, "mag":405, spr:20000
+        breakable: 20000
+      },
+      spr: {
+        breakable: 20000,
       }
     },
     races: [
@@ -871,7 +935,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 35,
@@ -880,7 +945,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 175, "mag":400, spr:175
+        breakable: 175
+      },
+      spr: {
+        breakable: 175
       }
     },
     races: [
@@ -890,7 +958,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 36,
@@ -899,7 +968,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 150, "mag":400, spr:150
+        breakable: 150
+      },
+      spr: {
+        breakable: 150
       }
     },
     races: [
@@ -914,7 +986,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 37,
@@ -923,7 +996,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 150, "mag":400, spr:150
+        breakable: 150
+      },
+      spr: {
+        breakable: 150
       }
     },
     races: [
@@ -939,7 +1015,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 38,
@@ -948,7 +1025,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 150, "mag":400, spr:150
+        breakable: 150
+      },
+      spr: {
+        breakable: 150
       }
     },
     races: [
@@ -964,7 +1044,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 39,
@@ -973,7 +1054,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 450, "mag":400, spr:120
+        breakable: 450
+      },
+      spr: {
+        breakable: 120
       }
     },
     races: [
@@ -987,7 +1071,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 40,
@@ -996,7 +1081,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 600, "mag":300, spr:120
+        breakable: 600
+      },
+      spr: {
+        breakable: 120
       }
     },
     races: [
@@ -1010,7 +1098,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 41,
@@ -1019,7 +1108,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 100, "mag":250, spr:600
+        breakable: 300
+      },
+      spr: {
+        breakable: 600
       }
     },
     races: [
@@ -1029,7 +1121,8 @@ export const MONSTERS: any[] = [
       fire: 200,
       ice: -50,
       water: -50
-    }
+    },
+    type: "fallen"
   },
   {
     id: 42,
@@ -1038,7 +1131,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 10, "mag":300, spr:50
+        breakable: 50
+      },
+      spr: {
+        breakable: 50
       }
     },
     races: [
@@ -1053,7 +1149,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 43,
@@ -1062,7 +1159,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 180, "mag":455, spr:205
+        breakable: 280
+      },
+      spr: {
+        breakable: 205
       }
     },
     races: [
@@ -1077,7 +1177,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 44,
@@ -1086,7 +1187,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable: 180, "mag":455, spr:205
+        breakable: 280
+      },
+      spr: {
+        breakable: 205
       }
     },
     races: [
@@ -1100,7 +1204,8 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 45,
@@ -1109,7 +1214,10 @@ export const MONSTERS: any[] = [
     },
     stats: {
       def: {
-        breakable:  170, "mag":345, spr:240
+        breakable: 270
+      },
+      spr: {
+        breakable: 240
       }
     },
     races: [
@@ -1126,144 +1234,23 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "fallen"
   },
   {
     id: 46,
-    names:{
-      en: "2-Headed Dragon"
-    },
-    stats: {
-      def: {
-        breakable:  15, "mag":260, spr:125
-      }
-    },
-    races: [
-      "dragon"
-    ],
-    resistances: {
-      fire: 50,
-      lightning: 50,
-      water: 50,
-      wind: 50,
-      earth: 50,
-      light: 50,
-      dark: 80
-    },
-    breaks: {
-      def: true,
-      spr: true
-    }
-  },
-  {
-    id: 47,
-    names:{
-      en: "Antenolla A (Flower)"
-    },
-    stats: {
-      def: {
-        breakable: 10, "mag":280, spr:120
-      }
-    },
-    races: [
-      "plant"
-    ],
-    resistances: {
-      fire: 100,
-      ice: 100,
-      water: 100,
-      wind: -50
-    },
-    breaks: {
-      def: true,
-      spr: true
-    }
-  },
-  {
-    id: 48,
-    names:{
-      en: "Antenolla B (Ivy)"
-    },
-    stats: {
-      def: {
-        breakable: 10, "mag":25, spr:120
-      }
-    },
-    races: [
-      "plant"
-    ],
-    resistances: {
-      ice: 100,
-      lightning: 100,
-      water: -50,
-      wind: 100,
-      dark: -50
-    },
-    breaks: {
-      def: true,
-      spr: true
-    }
-  },
-  {
-    id: 49,
-    names:{
-      en: "Antenolla C (Root)"
-    },
-    stats: {
-      def: {
-        breakable: 10, "mag":250, spr:120
-      }
-    },
-    races: [
-      "plant"
-    ],
-    resistances: {
-      fire: 100,
-      lightning: 100,
-      water: 100,
-      wind: 100,
-      earth: -50
-    },
-    breaks: {
-      def: true,
-      spr: true
-    }
-  },
-  {
-    id: 50,
-    names:{
-      en: "Antenolla D (Leaves)"
-    },
-    stats: {
-      def: {
-        breakable: 10, "mag":250, spr:120
-      }
-    },
-    races: [
-      "plant"
-    ],
-    resistances: {
-      fire: 100,
-      ice: 100,
-      lightning: 100,
-      water: 100,
-      wind: 100,
-      earth: -50
-    },
-    breaks: {
-      def: true,
-      spr: true
-    }
-  },
-  {
-    id: 51,
     names:{
       en: "Warden Welter"
     },
     stats: {
       def: {
-        breakable: 50,"mag":600, "mag%":50 ,spr:300,"spr%":50
+        breakable: 500,
+        unbreakable: 250
       },
+      spr: {
+        breakable: 300,
+        unbreakable: 150
+      }
     },
     races:[
       "demon",
@@ -1276,17 +1263,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 52,
+    id: 47,
     names:{
       en: "Nunki"
     },
     stats: {
       def: {
-        breakable: 0,"mag":950, "mag%":0 ,spr:1400,"spr%":0
+        breakable: 1400
       },
+      spr: {
+        breakable: 1400
+      }
     },
     races:[
       "human",
@@ -1295,17 +1286,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 53,
+    id: 48,
     names:{
       en: "Dabih"
     },
     stats: {
       def: {
-        breakable: 0,"mag":950, "mag%":0 ,spr:200,"spr%":0
+        breakable: 200
       },
+      spr: {
+        breakable: 200
+      }
     },
     races:[
       "human",
@@ -1320,17 +1315,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 54,
+    id: 49,
     names:{
       en: "Dabih Cultist A"
     },
     stats: {
       def: {
-        breakable: 0,"mag":700, "mag%":0 ,spr:150,"spr%":0
+        breakable: 1200
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "human",
@@ -1349,17 +1348,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 55,
+    id: 50,
     names:{
       en: "Dabih Shaman A"
     },
     stats: {
       def: {
-        breakable: 0,"mag":700, "mag%":0 ,spr:1200,"spr%":0
+        breakable: 200
       },
+      spr: {
+        breakable: 1200
+      }
     },
     races:[
       "human",
@@ -1378,17 +1381,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 56,
+    id: 51,
     names:{
       en: "Dabih Cultist B"
     },
     stats: {
       def: {
-        breakable: 0,"mag":700, "mag%":0 ,spr:150,"spr%":0
+        breakable: 1200
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "human",
@@ -1407,17 +1414,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 57,
+    id: 52,
     names:{
       en: "Dabih Shaman B"
     },
     stats: {
       def: {
-        breakable: 0,"mag":700, "mag%":0 ,spr:1200,"spr%":0
+        breakable: 200
       },
+      spr: {
+        breakable: 1200
+      }
     },
     races:[
       "human",
@@ -1436,17 +1447,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 58,
+    id: 53,
     names:{
       en: "Sadalsuud"
     },
     stats: {
       def: {
-        breakable: 0,"mag":1000, "mag%":0 ,spr:550,"spr%":0
+        breakable: 550
       },
+      spr: {
+        breakable: 550
+      }
     },
     races:[
       "bird",
@@ -1465,17 +1480,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 59,
+    id: 54,
     names:{
       en: "Red Wing"
     },
     stats: {
       def: {
-        breakable: 0,"mag":500, "mag%":0 ,spr:150,"spr%":0
+        breakable: 1200
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "bird",
@@ -1487,17 +1506,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 60,
+    id: 55,
     names:{
       en: "Orange Wing"
     },
     stats: {
       def: {
-        breakable: 0,"mag":500, "mag%":0 ,spr:150,"spr%":0
+        breakable: 1200
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "bird",
@@ -1509,17 +1532,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 61,
+    id: 56,
     names:{
       en: "Blue Wing"
     },
     stats: {
       def: {
-        breakable: 0,"mag":500, "mag%":0 ,spr:150,"spr%":0
+        breakable: 1200
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "bird",
@@ -1531,17 +1558,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 62,
+    id: 57,
     names:{
       en: "Green Wing"
     },
     stats: {
       def: {
-        breakable: 0,"mag":500, "mag%":0 ,spr:150,"spr%":0
+        breakable: 1200
       },
+      spr: {
+        breakable: 150
+      }
     },
     races:[
       "bird",
@@ -1553,17 +1584,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 63,
+    id: 58,
     names:{
       en: "Alpherg"
     },
     stats: {
       def: {
-        breakable: 0,"mag":500, "mag%":50 ,spr:300,"spr%":0
+        breakable: 500
       },
+      spr: {
+        breakable: 300
+      }
     },
     races:[
       "aquatic",
@@ -1577,10 +1612,11 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 64,
+    id: 59,
     names:{
       en: "Shaula"
     },
@@ -1588,6 +1624,9 @@ export const MONSTERS: any[] = [
       def: {
         breakable: 300
       },
+      spr: {
+        breakable: 300
+      }
     },
     races:[
       "bug",
@@ -1596,10 +1635,11 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 65,
+    id: 60,
     names:{
       en: "Shaula's Right Arm"
     },
@@ -1607,6 +1647,9 @@ export const MONSTERS: any[] = [
       def: {
         breakable: 300
       },
+      spr: {
+        breakable: 300
+      }
     },
     races:[
       "bug",
@@ -1615,10 +1658,11 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 66,
+    id: 61,
     names:{
       en: "Shaula's Left Arm"
     },
@@ -1626,6 +1670,9 @@ export const MONSTERS: any[] = [
       def: {
         breakable: 300
       },
+      spr: {
+        breakable: 300
+      }
     },
     races:[
       "bug",
@@ -1634,10 +1681,11 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 67,
+    id: 62,
     names:{
       en: "Brachium"
     },
@@ -1645,6 +1693,9 @@ export const MONSTERS: any[] = [
       def: {
         breakable: 300
       },
+      spr: {
+        breakable: 300
+      }
     },
     races:[
       "demon",
@@ -1656,17 +1707,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 68,
+    id: 63,
     names:{
       en: "Vindemiatrix"
     },
     stats: {
       def: {
-        breakable: 240
+        breakable: 340
       },
+      spr: {
+        breakable: 240
+      }
     },
     races:[
       "beast",
@@ -1678,17 +1733,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 69,
+    id: 64,
     names:{
       en: "Aldhafera"
     },
     stats: {
       def: {
-        breakable: 350
+        breakable: 340
       },
+      spr: {
+        breakable: 350
+      }
     },
     races:[
       "beast",
@@ -1697,17 +1756,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 70,
+    id: 65,
     names:{
       en: "Tegmine"
     },
     stats: {
       def: {
-        breakable: 240
+        breakable: 400
       },
+      spr: {
+        breakable: 240
+      }
     },
     races:[
       "stone",
@@ -1726,17 +1789,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 71,
+    id: 66,
     names:{
       en: "Alhena"
     },
     stats: {
       def: {
-        breakable: 120
+        breakable: 170
       },
+      spr: {
+        breakable: 120
+      }
     },
     races:[
       "human",
@@ -1745,16 +1812,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 72,
+    id: 67,
     names:{
       en: "Elnath"
     },
     stats: {
       def: {
-        breakable: 170, "mag":700, spr:120
+        breakable: 170
+      },
+      spr: {
+        breakable: 120
       }
     },
     races: [
@@ -1767,16 +1838,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 73,
+    id: 68,
     names:{
       en: "Elnath - Left Arm"
     },
     stats: {
       def: {
-        breakable: 199, "mag":500, spr:75
+        breakable: 999
+      },
+      spr: {
+        breakable: 75
       }
     },
     races: [
@@ -1789,16 +1864,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 74,
+    id: 69,
     names:{
       en: "Elnath - Right Arm"
     },
     stats: {
       def: {
-        breakable: 130, "mag":500, spr:999
+        breakable: 130
+      },
+      spr: {
+        breakable: 999
       }
     },
     races: [
@@ -1811,16 +1890,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 75,
+    id: 70,
     names:{
       en: "Sheratan"
     },
     stats: {
       def: {
-        breakable: 170, "mag":700, spr:120
+        breakable: 170
+      },
+      spr: {
+        breakable: 120
       }
     },
     races: [
@@ -1834,16 +1917,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "arms"
   },
   {
-    id: 76,
+    id: 71,
     names:{
       en: "Fruit of Tenacity"
     },
     stats: {
       def: {
-        breakable: 130, "mag":500, spr:75
+        breakable: 130
+      },
+      spr: {
+        breakable: 75
       }
     },
     races: [
@@ -1856,16 +1943,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 77,
+    id: 72,
     names:{
       en: "Fruit of Anger"
     },
     stats: {
       def: {
-        breakable: 130, "mag":500, spr:75
+        breakable: 130
+      },
+      spr: {
+        breakable: 75
       }
     },
     races: [
@@ -1878,15 +1969,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "arms"
   },
   {
-    id: 78,
+    id: 73,
     names:{
       en: "Asura"
     },
     stats: {
       def: {
+        breakable: 100
+      },
+      spr: {
         breakable: 100
       },
     },
@@ -1896,15 +1991,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "esper"
   },
   {
-    id: 79,
+    id: 74,
     names:{
       en: "Anime 2*"
     },
     stats: {
       def: {
+        breakable: 100
+      },
+      spr: {
         breakable: 100
       },
     },
@@ -1920,15 +2019,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "esper"
   },
   {
-    id: 80,
+    id: 75,
     names:{
       en: "Alexander 3*"
     },
     stats: {
       def: {
+        breakable: 100
+      },
+      spr: {
         breakable: 100
       },
     },
@@ -1944,15 +2047,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "esper"
   },
   {
-    id: 81,
+    id: 76,
     names:{
       en: "Phoenix 3*"
     },
     stats: {
       def: {
+        breakable: 100
+      },
+      spr: {
         breakable: 100
       },
     },
@@ -1968,15 +2075,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 82,
+    id: 77,
     names:{
       en: "Leviathan 3★"
     },
     stats: {
       def: {
+        breakable: 250
+      },
+      spr: {
         breakable: 250
       },
     },
@@ -1990,15 +2101,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 83,
+    id: 78,
     names:{
       en: "Odin 3★"
     },
     stats: {
       def: {
+        breakable: 350
+      },
+      spr: {
         breakable: 300
       },
     },
@@ -2011,15 +2126,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 84,
+    id: 79,
     names:{
       en: "Diabolos 3★"
     },
     stats: {
       def: {
+        breakable: 170
+      },
+      spr: {
         breakable: 30
       },
     },
@@ -2033,16 +2152,20 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: false
-    }
+    },
+    type: "esper"
   },
   {
-    id: 85,
+    id: 80,
     names:{
       en: "Tetra Sylphid 3★"
     },
     stats: {
       def: {
-        breakable: 700
+        breakable: 50
+      },
+      spr: {
+        breakable: 25
       },
     },
     races:[
@@ -2055,15 +2178,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: false
-    }
+    },
+    type: "esper"
   },
   {
-    id: 86,
+    id: 81,
     names:{
       en: "Carbuncle 3★"
     },
     stats: {
       def: {
+        breakable: 9999
+      },
+      spr: {
         breakable: 3000
       },
     },
@@ -2077,15 +2204,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 87,
+    id: 82,
     names:{
       en: "Golem 3★"
     },
     stats: {
       def: {
+        breakable: 100
+      },
+      spr: {
         breakable: 25
       },
     },
@@ -2099,15 +2230,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 88,
+    id: 83,
     names:{
       en: "Ramuh 3★"
     },
     stats: {
       def: {
+        breakable: 30
+      },
+      spr: {
         breakable: 30
       },
     },
@@ -2121,15 +2256,19 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: false
-    }
+    },
+    type: "esper"
   },
   {
-    id: 89,
+    id: 84,
     names:{
       en: "Shiva 3★"
     },
     stats: {
       def: {
+        breakable: 30
+      },
+      spr: {
         breakable: 30
       },
     },
@@ -2143,17 +2282,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 90,
+    id: 85,
     names:{
       en: "Ifrit 3★"
     },
     stats: {
       def: {
-        breakable: 10, "mag":550, spr:30
-      }
+        breakable: 30
+      },
+      spr: {
+        breakable: 30
+      },
     },
     races: [
       "beast"
@@ -2165,17 +2308,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 91,
+    id: 86,
     names:{
       en: "Siren 3★"
     },
     stats: {
       def: {
-        breakable: 150, "mag":340, spr:220
-      }
+        breakable: 250
+      },
+      spr: {
+        breakable: 220
+      },
     },
     races: [
       "bird"
@@ -2187,17 +2334,21 @@ export const MONSTERS: any[] = [
     breaks: {
       def: true,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 92,
+    id: 87,
     names:{
       en: "Bahamut"
     },
     stats: {
       def: {
-        breakable: 10, "mag":760, spr:25
-      }
+        breakable: 50
+      },
+      spr: {
+        breakable: 25
+      },
     },
     races: [
       "dragon"
@@ -2215,16 +2366,22 @@ export const MONSTERS: any[] = [
     breaks: {
       def: false,
       spr: true
-    }
+    },
+    type: "esper"
   },
   {
-    id: 93,
+    id: 88,
     names:{
       en: "Bennu"
     },
     stats: {
       def: {
-        breakable: 63, "def%":50, "mag":720, "mag%":50, spr:48, "spr%":50
+        breakable: 63,
+        unbreakable: 31
+      },
+      spr: {
+        breakable: 48,
+        unbreakable: 24
       },
     },
     races:[
@@ -2237,14 +2394,17 @@ export const MONSTERS: any[] = [
     type: "madam"
   },
   {
-    id: 94,
+    id: 89,
     names:{
       en: "Undine"
     },
     stats: {
       def: {
-        breakable: 15, "mag":699, spr:44
-      }
+        breakable: 55
+      },
+      spr: {
+        breakable: 44
+      },
     },
     races: [
       "spirit"
@@ -2260,13 +2420,41 @@ export const MONSTERS: any[] = [
     type: "madam"
   },
   {
-    id: 95,
+    id: 90,
+    names:{
+      en: "Delanbo"
+    },
+    stats: {
+      def: {
+        breakable: 100
+      },
+      spr: {
+        breakable: 100
+      },
+    },
+    races: [
+      "human"
+    ],
+    resistances: {
+      lightning: 300
+    },
+    breaks: {
+      def: true,
+      spr: true
+    },
+    type: "madam"
+  },
+  {
+    id: 91,
     names:{
       en: "Abominable Wooden Soldier"
     },
     stats: {
       def: {
-        breakable: 15, "mag":1, spr:25
+        breakable: 25
+      },
+      spr: {
+        breakable: 25
       }
     },
     races: [
@@ -2276,6 +2464,6 @@ export const MONSTERS: any[] = [
       def: false,
       spr: false
     },
-    type: "madam"
+    type: "wooden"
   }
 ]
