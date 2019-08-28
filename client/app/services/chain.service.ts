@@ -81,7 +81,7 @@ export class ChainService {
 
     unit.selectedAbilities.forEach((ability, index) => {
       if (index > 0) {
-        startFrames += ability.offset + ability.castTime;
+        startFrames += unit.selectedAbilities[index - 1].offset + unit.selectedAbilities[index - 1].castTime;
         countFrames = startFrames;
       }
 
