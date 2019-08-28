@@ -14,6 +14,7 @@ import { Unit } from '../entities/unit';
 import { Monster } from '../entities/monster';
 import { Ability } from '../entities/ability';
 import { UnitService } from '../services/unit.service';
+import { MonsterService } from '../services/monster.service';
 import { ChainService } from '../services/chain.service';
 import { FindBestService } from '../services/find-best.service';
 import { NavService } from '../services/nav.service';
@@ -47,6 +48,7 @@ export class DamageComponent implements OnInit {
   elements: any[] = [];
   abilityTypes: string[] = ['chain', 'finish'];
   observableUnits: Array<Select2OptionData> = [];
+  observableMonsters: Array<Select2OptionData> = [];
   select2Options: Select2.Options = {
     theme: 'bootstrap'
   }
@@ -58,6 +60,7 @@ export class DamageComponent implements OnInit {
 
   constructor(
     private unitService: UnitService,
+    private monsterService: MonsterService,
     private chainService: ChainService,
     private findBestService: FindBestService,
     private localStorageService: LocalStorageService,
@@ -74,7 +77,8 @@ export class DamageComponent implements OnInit {
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getTranslation();
-      this.reloadList();
+      this.reloadUnitList();
+      this.reloadMonsterList();
     });
   }
 
@@ -84,9 +88,11 @@ export class DamageComponent implements OnInit {
     this.onChangeUnit('unselect');
 
     this.getUnits();
+    this.getMonsters();
     this.getElements();
     this.weaponTypes = this.weaponService.getWeaponTypes();
     this.races = this.raceService.getRaces();
+    this.onChangeMonster();
   }
 
   private getTranslation() {
@@ -112,7 +118,12 @@ export class DamageComponent implements OnInit {
   private getUnits() {
     this.units = this.unitService.getUnits(true);
     this.createdUnits = this.localStorageService.get<any[]>('units') ? this.localStorageService.get<any[]>('units') : [];
-    this.reloadList();
+    this.reloadUnitList();
+  }
+
+  private getMonsters() {
+    this.monsters = this.monsterService.getMonsters();
+    this.reloadMonsterList();
   }
 
   private sortUnits() {
@@ -173,7 +184,76 @@ export class DamageComponent implements OnInit {
     });
   }
 
-  private reloadList() {
+  private reloadMonsterList() {
+    this.monsterService.sort(this.monsters, this.translateService);
+
+    let typeTable = {
+      'vengeful': 1,
+      'indignant': 2,
+      'fallen': 3,
+      'arms': 4,
+      'esper': 5,
+      'madam': 6
+    }
+
+    this.observableMonsters = [
+      {
+        id: 'unselect',
+        text: this.labels.units,
+        children: []
+      },
+      {
+        id: 'vengeful',
+        text: 'vengeful',
+        children: []
+      },
+      {
+        id: 'indignant',
+        text: 'indignant',
+        children: []
+      },
+      {
+        id: 'fallen',
+        text: 'fallen',
+        children: []
+      },
+      {
+        id: 'arms',
+        text: 'arms',
+        children: []
+      },
+      {
+        id: 'esper',
+        text: 'esper',
+        children: []
+      },
+      {
+        id: 'madam',
+        text: 'madam',
+        children: []
+      }
+    ];
+
+    this.monsters.forEach(monster => {
+
+      if (monster.type === "wooden") {
+        this.observableMonsters[0] = {
+          id:  monster.id.toString(),
+          text: monster.getName(this.translateService)
+        }
+      } else {
+        this.observableMonsters[typeTable[monster.type]].children.push({
+          id: monster.id.toString(),
+          text: monster.getName(this.translateService)
+        });
+      }
+    });
+
+    delete this.observableMonsters[0].children;
+  }
+
+
+  private reloadUnitList() {
     this.sortUnits();
 
     this.observableUnits = [
@@ -271,6 +351,10 @@ export class DamageComponent implements OnInit {
     }
   }
 
+  onChangeMonster(monsterId: any = '0') {
+    this.monster = JSON.parse(JSON.stringify(this.monsterService.getMonster(parseInt(monsterId))));
+  }
+
   onChangePot(type: string) {
     if (this.unit.stats[type].maxPot) {
       this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity.value][type].pot;
@@ -318,7 +402,6 @@ export class DamageComponent implements OnInit {
   }
 
   onChangeWeaponElement(element: string, index: number) {
-    console.log(element)
     let indexElement = this.unit.damageWeapons[index].elements.indexOf(element, 0);
     if (indexElement > -1) {
       this.unit.damageWeapons[index].elements.splice(indexElement, 1);

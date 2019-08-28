@@ -43,11 +43,13 @@ export class DamageService {
 
   monster = {
     def: {
-      base: 0,
+      breakable: 0,
+      unbreakable: 0,
       real: 0
     },
     spr: {
-      base: 0,
+      breakable: 0,
+      unbreakable: 0,
       real: 0
     },
     breaks: {
@@ -105,8 +107,10 @@ export class DamageService {
     this.unit.rarity = unit.rarity.value;
     this.unit.maxChainCap = unit.maxChainCap;
 
-    this.monster.def.base = monster.stats.def;
-    this.monster.spr.base = monster.stats.spr;
+    this.monster.def.breakable = monster.stats.def.breakable;
+    this.monster.def.unbreakable = monster.stats.def.unbreakable;
+    this.monster.spr.breakable = monster.stats.spr.breakable;
+    this.monster.spr.unbreakable = monster.stats.spr.unbreakable;
     this.monster.breaks.passive.def = unit.breaks.def;
     this.monster.breaks.passive.spr = unit.breaks.spr;
     this.monster.races = monster.races;
@@ -348,9 +352,9 @@ export class DamageService {
     });
 
     // console.log("MONSTER STAT")
-    // console.log(type + " : " + this.monster[type].base * ((100 - bestBreak) / 100))
+    // console.log(this.monster[type].unbreakable + this.monster[type].breakable * ((100 - this.bestBreaks[type]) / 100))
 
-    return this.monster[type].base * ((100 - this.bestBreaks[type]) / 100);
+    return this.monster[type].unbreakable + this.monster[type].breakable * ((100 - this.bestBreaks[type]) / 100);
   }
 
   private getRealKiller(type) {

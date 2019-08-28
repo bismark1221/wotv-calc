@@ -157,11 +157,18 @@
 
       <div *ngIf="unit.id !== 'unselect'">
         <h2>MONSTER</h2>
+        <select2
+          [data]="observableMonsters"
+          [value]="monster.id"
+          [position]="0"
+          [options]="select2Options"
+          (valueChanged)="onChangeMonster($event.value);"></select2>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="buff_atk">Monster DEF</label>
+            <label class="input-group-text">Monster DEF</label>
           </div>
-          <input type="text" class="form-control" placeholder="monster_def" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def">
+          <input type="text" class="form-control" placeholder="breakable" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def.breakable">
+          <input type="text" class="form-control" placeholder="unbreakable" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def.unbreakable">
           <input type="text" class="form-control inputBreak" placeholder="break_def" aria-label="break_def" aria-describedby="break_def" [(ngModel)]="unit.breaks.def">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
@@ -170,9 +177,10 @@
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="buff_atk">Monster SPR</label>
+            <label class="input-group-text">Monster SPR</label>
           </div>
-          <input type="text" class="form-control" placeholder="monster_spr" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr">
+          <input type="text" class="form-control" placeholder="breakable" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr.breakable">
+          <input type="text" class="form-control" placeholder="unbreakable" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr.unbreakable">
           <input type="text" class="form-control inputBreak" placeholder="break_spr" aria-label="break_spr" aria-describedby="break_spr" [(ngModel)]="unit.breaks.spr">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
