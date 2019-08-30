@@ -80,9 +80,11 @@ export class Unit {
 
     this.abilities = [];
     unit.abilities.forEach(dataAbility => {
-      let ability = new Ability();
-      ability.constructFromJson(dataAbility, translateService);
-      this.abilities.push(ability);
+      if (damage || (dataAbility.base && dataAbility.base > 0)) {
+        let ability = new Ability();
+        ability.constructFromJson(dataAbility, translateService);
+        this.abilities.push(ability);
+      }
     });
 
     this.multiCasts = unit.multiCasts ? unit.multiCasts : this.multiCasts;

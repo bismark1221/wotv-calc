@@ -39001,28 +39001,6 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 912285,
-        "names": {
-          "en": "Let me help!",
-          "tw": "我來幫忙！",
-          "kr": "도와드릴게요!",
-          "fr": "Besoin d'un coup de main ?",
-          "de": "Lass mich helfen!",
-          "es": "¿Te echo una mano?"
-        },
-        "base": 2000,
-        "hitDamage": [],
-        "castTime": 20,
-        "dualable": false,
-        "offset": 14,
-        "effectOrder": [
-          "damage"
-        ],
-        "framesList": [
-          0
-        ]
-      },
-      {
         "dataId": 912295,
         "names": {
           "en": "All pinned up!",
@@ -39196,29 +39174,6 @@ export const UNITS: any[] = [
             "value": 170,
             "turn": 5
           }
-        ],
-        "framesList": [
-          0
-        ]
-      },
-      {
-        "dataId": 912307,
-        "names": {
-          "en": "A Paladin's Duty",
-          "tw": "聖騎士的義務",
-          "kr": "팔라딘의 의무",
-          "fr": "Devoir de paladin",
-          "de": "Pflicht eines Paladins",
-          "es": "Deber de paladín"
-        },
-        "base": 3000,
-        "hitDamage": [],
-        "canDualSkill": false,
-        "castTime": 20,
-        "dualable": false,
-        "offset": 14,
-        "effectOrder": [
-          "damage"
         ],
         "framesList": [
           0
