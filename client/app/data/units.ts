@@ -17742,6 +17742,36 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707788,
+        "names": {
+          "en": "Blades of Azure Crimson + 2",
+          "tw": "緋蒼之劍 + 2",
+          "kr": "비창의 검 + 2",
+          "fr": "Lames azur carmin + 2",
+          "de": "Purpurazurklingen + 2",
+          "es": "Hojas azul enrojecido + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
         "id": 228080,
         "names": {
           "en": "Sword of Ares",
@@ -17783,6 +17813,27 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707784,
+        "names": {
+          "en": "Octostrike Blade + 2",
+          "tw": "八連刃 + 2",
+          "kr": "팔연검 + 2",
+          "fr": "Lame octimpact + 2",
+          "de": "Klinge des Achtfachen Streichs + 2",
+          "es": "Hoja octaimpacto + 2"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
         "id": 508350,
         "names": {
           "en": "Azure Flame Edge",
@@ -17802,6 +17853,35 @@ export const UNITS: any[] = [
           {
             "type": "fire",
             "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912916,
+        "names": {
+          "en": "Azure Flame Edge + 2",
+          "tw": "破炎蒼劍 + 2",
+          "kr": "파염의 창검 + 2",
+          "fr": "Lame de flamme azur + 2",
+          "de": "Azurblaue Flammenklinge + 2",
+          "es": "Filo azurígneo + 2"
+        },
+        "base": 1450,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 110
           }
         ],
         "framesList": [
@@ -17835,6 +17915,35 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 912920,
+        "names": {
+          "en": "Crimson Frost Edge + 2",
+          "tw": "裂冰緋劍 + 2",
+          "kr": "열빙의 비검 + 2",
+          "fr": "Lame de glace écarlate + 2",
+          "de": "Purpurrote Frostklinge + 2",
+          "es": "Filo gélido escarlata + 2"
+        },
+        "base": 1450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 110
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },,
+      {
         "id": 100010007,
         "names": {
           "en": "Darkness Purging Blades of Azure Crimson",
@@ -17851,6 +17960,36 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "imperils": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          22, 10, 10, 10, 10, 10, 13
+        ]
+      },
+      {
+        "id": 900000330,
+        "names": {
+          "en": "Darkness Purging Blades of Azure Crimson + 1",
+          "tw": "斬暗緋蒼之劍 + 1",
+          "kr": "어둠을 떨치는 비창의 검 + 1",
+          "fr": "Lames azur carmin briseuses de ténèbres + 1",
+          "de": "Dunkelheit bannende Purpurazurklingen + 1",
+          "es": "Hojas azul enrojecido de oscuridad purgadora + 1"
+        },
+        "base": 2100,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
           {
             "type": "fire",
             "value": 100
@@ -24302,6 +24441,31 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 707794,
+        "names": {
+          "en": "Holy Mind + 2",
+          "tw": "精神聖域 + 2",
+          "kr": "성스러운 축복 + 2",
+          "fr": "Saint Esprit + 2",
+          "de": "Heiliger Geist + 2",
+          "es": "Mente sagrada + 2"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
         "id": 227650,
         "names": {
           "en": "Evocation - Light of Ruin",
@@ -24324,6 +24488,28 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 707792,
+        "names": {
+          "en": "Evocation - Light of Ruin + 2",
+          "tw": "喚起·滅光 + 2",
+          "kr": "환기·멸광 + 2",
+          "fr": "Appel - Lumière de la destruction + 2",
+          "de": "Rufen - Licht des Untergangs + 2",
+          "es": "Invocación - Luz ruinosa + 2"
+        },
+        "damage": "magic",
+        "base": 3500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
+      },
+      {
         "id": 508095,
         "names": {
           "en": "Evocation - Fierce Light of Supremacy",
@@ -24344,6 +24530,28 @@ export const UNITS: any[] = [
           150
         ],
         "offset": 14
+      },
+      {
+        "id": 509412,
+        "names": {
+          "en": "Evocation - Fierce Light of Supremacy + 2",
+          "tw": "喚起·絕霸光 + 2",
+          "kr": "환기·절패광 + 2",
+          "fr": "Appel - Lum. de la domination absolue + 2",
+          "de": "Rufen - Licht der absoluten Übermacht + 2",
+          "es": "Invocación - Luz feroz de la supremacía + 2"
+        },
+        "damage": "magic",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
       },
       {
         "id": 100016907,
@@ -24403,10 +24611,14 @@ export const UNITS: any[] = [
     ],
     "multiCasts": [
       {
-        "count": 2,
+        "count": 3,
         "abilities": [
           227650,
-          227652
+          227652,
+          227653,
+          707794,
+          707792,
+          509412
         ]
       }
     ]
@@ -27400,6 +27612,46 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 912945,
+        "names": {
+          "en": "Dangerous Rose + 1",
+          "tw": "D·危險玫瑰 + 1",
+          "kr": "D·위험한 장미 + 1",
+          "fr": "Rose dangereuse + 1",
+          "de": "Gefährliche Rose + 1",
+          "es": "Rosa peligrosa + 1"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912946,
+        "names": {
+          "en": "Dangerous Rose + 2",
+          "tw": "D·危險玫瑰 + 2",
+          "kr": "D·위험한 장미 + 2",
+          "fr": "Rose dangereuse + 2",
+          "de": "Gefährliche Rose + 2",
+          "es": "Rosa peligrosa + 2"
+        },
+        "base": 280,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
         "id": 20340,
         "names": {
           "en": "Stonja",
@@ -27466,6 +27718,26 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 707806,
+        "names": {
+          "en": "Full Break Charm + 2",
+          "tw": "D·身心潰擊魅惑 + 2",
+          "kr": "D·풀 브레이크적 매혹 + 2",
+          "fr": "Charme dévastateur + 2",
+          "de": "Vernichtender Charme + 2",
+          "es": "Embrujo rompetodo + 2"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          92
+        ]
+      },
+      {
         "id": 508574,
         "names": {
           "en": "Earthbound",
@@ -27489,6 +27761,32 @@ export const UNITS: any[] = [
           2, 8, 8, 8, 8, 8, 8
         ],
         "offset": 8
+      },
+      {
+        "id": 912954,
+        "names": {
+          "en": "Earthbound + 2",
+          "tw": "地縛 + 2",
+          "kr": "지상의 속박 + 2",
+          "fr": "Terre-à-terre + 2",
+          "de": "Erdgebunden + 2",
+          "es": "Vínculo terrenal + 2"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 100017907,
@@ -32001,6 +32299,33 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707812,
+        "names": {
+          "en": "Crush Stamp + 2",
+          "tw": "粉碎踩踏 + 2",
+          "kr": "크러쉬 스탬프 + 2",
+          "fr": "Pilon écrasant + 2",
+          "de": "Zerschmetternder Stampfer + 2",
+          "es": "Pisotón aplastante + 2"
+        },
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 110
+          }
+        ],
+        "framesList": [
+          17
+        ]
+      },
+      {
         "id": 228965,
         "names": {
           "en": "Critical Stamp",
@@ -32020,6 +32345,26 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707810,
+        "names": {
+          "en": "Critical Stamp + 2",
+          "tw": "致命踩踏 + 2",
+          "kr": "크리티컬 스탬프 + 2",
+          "fr": "Pilon critique + 2",
+          "de": "Kritischer Stampfer + 2",
+          "es": "Pisotón crítico + 2"
+        },
+        "base": 1875,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2
+        ]
+      },
+      {
         "id": 508791,
         "names": {
           "en": "Full Burst Stamp",
@@ -32034,6 +32379,27 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          17
+        ]
+      },
+      {
+        "id": 912938,
+        "names": {
+          "en": "Full Burst Stamp + 2",
+          "tw": "全爆裂踩踏 + 2",
+          "kr": "풀 버스트 스탬프 + 2",
+          "fr": "Pilon éclatant absolu + 2",
+          "de": "Voller Doppelstampfer + 2",
+          "es": "Pisotón superexplosivo + 2"
+        },
+        "base": 950,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           17
@@ -32078,7 +32444,10 @@ export const UNITS: any[] = [
           228969,
           228970,
           228971,
-          228972
+          228972,
+          707812,
+          707810,
+          912938
         ]
       }
     ]
@@ -33412,6 +33781,26 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 1508946,
+        "names": {
+          "en": "Spineshatter Dive 0+ +2",
+          "tw": "破碎衝零式·改 +2",
+          "kr": "개량형 척추 강타 0식 +2",
+          "fr": "Piqué brise-échine style 0 + +2",
+          "de": "Zerschmetternder Sturzflug 0+ +2",
+          "es": "Rompespaldas 0+ +2"
+        },
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
         "id": 508947,
         "names": {
           "en": "True Spineshatter Dive 0",
@@ -33422,6 +33811,26 @@ export const UNITS: any[] = [
           "es": "Rompespaldas 0 mortal"
         },
         "base": 1850,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 1508947,
+        "names": {
+          "en": "True Spineshatter Dive 0 +2",
+          "tw": "真破碎衝零式 +2",
+          "kr": "진 척추 강타 0식 +2",
+          "fr": "Piqué brise-échine style 0 absolu +2",
+          "de": "Wahrer Zerschmetternder Sturzflug 0+ +2",
+          "es": "Rompespaldas 0 mortal +2"
+        },
+        "base": 4000,
         "hitDamage": [
           100
         ],
@@ -53436,6 +53845,588 @@ export const UNITS: any[] = [
         "id": 912810,
         "value": 300,
         "rarity": 7
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "names": {
+      "en": "Atlie",
+      "tw": "艾特莉",
+      "kr": "아틀리"
+    },
+    "abilities": [
+      {
+        "id": 230720,
+        "names": {
+          "en": "Whirl Around",
+          "tw": "旋轉劍擊",
+          "kr": "회오리치기",
+          "fr": "Tournoiement",
+          "de": "Umherwirbeln",
+          "es": "Remolino"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "offset": 14,
+        "framesList": [
+          36
+        ]
+      },
+      {
+        "id": 230723,
+        "names": {
+          "en": "Sword Impact",
+          "tw": "劍之衝擊",
+          "kr": "소드 임팩트",
+          "fr": "Impact d'épée",
+          "de": "Schwertaufschlag",
+          "es": "Impacto de acero"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "offset": 14,
+        "framesList": [
+          36
+        ]
+      },
+      {
+        "id": 20120,
+        "names": {
+          "en": "Aerora",
+          "tw": "中勁風",
+          "kr": "에어로라",
+          "fr": "Vent +",
+          "es": "Aero+"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 230721,
+        "names": {
+          "en": "Wind Apprentice",
+          "tw": "新生之風",
+          "kr": "바람의 견습생",
+          "fr": "Apprentie du vent",
+          "de": "Windlehrling",
+          "es": "Aprendiz del viento"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 14,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          36
+        ]
+      },
+      {
+        "id": 230725,
+        "names": {
+          "en": "Leafy Wind",
+          "tw": "風葉",
+          "kr": "무성한 바람",
+          "fr": "Vent sylvestre",
+          "de": "Laub im Wind",
+          "es": "Viento arbolado"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          39
+        ]
+      },
+      {
+        "id": 230722,
+        "names": {
+          "en": "Wind Prison",
+          "tw": "風之牢獄",
+          "kr": "바람의 감옥",
+          "fr": "Prison de vent",
+          "de": "Windgefängnis",
+          "es": "Prisión de viento"
+        },
+        "base": 420,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100023406,
+        "names": {
+          "en": "Aggressive Wind",
+          "tw": "攻擊颶風",
+          "kr": "호투의 바람",
+          "fr": "Vent agressif",
+          "de": "Aggressiver Wind",
+          "es": "Viento agresivo"
+        },
+        "base": 840,
+        "hitDamage": [
+          7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 74
+          }
+        ],
+        "framesList": [
+          66, 11, 26, 10, 29, 10, 18, 5, 45, 5, 5, 5, 5
+        ]
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "names": {
+      "en": "Tessen",
+      "tw": "哲泉",
+      "kr": "테센"
+    },
+    "abilities": [
+      {
+        "id": 230731,
+        "names": {
+          "en": "Hunting the Hunted",
+          "tw": "獅子搏兔",
+          "kr": "사자박토",
+          "fr": "Chasse-proie",
+          "de": "Kanonenjagd auf Spatzen",
+          "es": "Cazapresas"
+        },
+        "base": 120,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 25,
+        "offset": 14,
+        "framesList": [
+          27, 23
+        ]
+      },
+      {
+        "id": 230732,
+        "names": {
+          "en": "Breaking the Broken",
+          "tw": "粉骨碎心",
+          "kr": "분골쇄심",
+          "fr": "Brise-rompu",
+          "de": "Äußerste Anstrengung",
+          "es": "Rompedestrozos"
+        },
+        "base": 120,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 25,
+        "offset": 14,
+        "framesList": [
+          27, 23
+        ]
+      },
+      {
+        "id": 230730,
+        "names": {
+          "en": "Vehement Blow",
+          "tw": "剛瞬烈打",
+          "kr": "강순열타",
+          "fr": "Choc furieux",
+          "de": "Vehementer Schlag",
+          "es": "Golpe violento"
+        },
+        "base": 320,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "offset": 14,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ]
+      },
+      {
+        "id": 100023505,
+        "names": {
+          "en": "Heaven's Vengeance",
+          "tw": "天網恢恢",
+          "kr": "천망회회",
+          "fr": "Vengeance céleste",
+          "de": "Rache des Himmels",
+          "es": "Venganza celestial"
+        },
+        "base": 395,
+        "hitDamage": [
+          20, 20, 60
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          60, 23, 59
+        ]
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "names": {
+      "en": "Warrior of Light Bartz",
+      "tw": "光之戰士巴茲",
+      "kr": "빛의 전사 버츠",
+      "fr": "Bartz, Guerrier de la Lumière",
+      "de": "Krieger des Lichts Bartz",
+      "es": "Guerrero de la Luz Bartz"
+    },
+    "abilities": [
+      {
+        "id": 230661,
+        "names": {
+          "en": "Geomancer: Wind Slash",
+          "tw": "風水士：鎌鼬",
+          "kr": "풍수사: 칼날 돌풍",
+          "fr": "Géomancien : Rafale cinglante",
+          "de": "Geomant: Windschwert",
+          "es": "Geomante: Ventolera"
+        },
+        "base": 360,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          47, 20
+        ]
+      },
+      {
+        "id": 230665,
+        "names": {
+          "en": "Mystic Knight: Hurricane Tomahawk",
+          "tw": "魔法劍士：颶風斧",
+          "kr": "마법검사: 허리케인 토마호크",
+          "fr": "Chevalier mage : Ouragan-Tomahawk",
+          "de": "Paladin: Orkan-Tomahawk",
+          "es": "Señor místico: Tomahawk huracán"
+        },
+        "base": 450,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230666,
+        "names": {
+          "en": "Gladiator: Bladeblitz",
+          "tw": "劍鬥士：全斬",
+          "kr": "검투사: 전방위 베기",
+          "fr": "Gladiateur : Combos",
+          "de": "Gladiator: Klingenblitz",
+          "es": "Gladiador: Relámpago de acero"
+        },
+        "base": 850,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 230664,
+        "names": {
+          "en": "Dancer: Sword Dance",
+          "tw": "舞者：劍之舞",
+          "kr": "무용수: 칼춤",
+          "fr": "Danseur : Danse du sabre",
+          "de": "Tänzer: Schwerttanz",
+          "es": "Bailarín: Danza de la espada"
+        },
+        "base": 550,
+        "hitDamage": [
+          2.5454545454545454, 2.5454545454545454, 2.5454545454545454, 2.5454545454545454, 2.5454545454545454, 2.7272727272727275, 2.7272727272727275, 81.81818181818181
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 120
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509623,
+        "names": {
+          "en": "Dual Spellblade",
+          "tw": "魔法劍二刀流",
+          "kr": "마법검 이도류",
+          "fr": "Magilame ambidextre",
+          "de": "Doppel-Klingenmagier",
+          "es": "Hoja embrujada doble"
+        },
+        "base": 750,
+        "hitDamage": [
+          1.866666666666667, 1.866666666666667, 1.866666666666667, 1.866666666666667, 1.866666666666667, 2, 2, 86.66666666666669
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509624,
+        "names": {
+          "en": "Brave Blade (FFV)",
+          "tw": "勇者利劍(FFV)",
+          "kr": "브레이브 블레이드(FFV)",
+          "fr": "Lame des braves (FFV)",
+          "de": "Mutklinge (FFV)",
+          "es": "Hoja valiente (FFV)"
+        },
+        "base": 575,
+        "hitDamage": [
+          1.0869565217391304, 1.0869565217391304, 1.0869565217391304, 1.0869565217391304, 2.608695652173913, 2.608695652173913, 3.4782608695652173, 86.95652173913044
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 205001107,
+        "names": {
+          "en": "Blades of Legend",
+          "tw": "全部的傳說之劍",
+          "kr": "모든 전설의 검",
+          "fr": "Lames de légende",
+          "de": "Die Zwölf Sagenklingen",
+          "es": "Espadas legendarias"
+        },
+        "base": 2170,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          172
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230660,
+          230661,
+          230662,
+          230663,
+          230664,
+          230665,
+          230666,
+          230667,
+          800027
+        ]
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "names": {
+      "en": "Warrior of Light Lenna",
+      "tw": "光之戰士蕾娜",
+      "kr": "빛의 전사 레나",
+      "fr": "Lenna, Guerrière de la Lumière",
+      "de": "Kriegerin des Lichts Lenna",
+      "es": "Guerrera de la Luz Lenna"
+    },
+    "abilities": [
+      {
+        "id": 10170,
+        "names": {
+          "en": "Banishga",
+          "tw": "強放逐",
+          "kr": "배니시가",
+          "fr": "Bannissement X",
+          "de": "Exkommunikation",
+          "es": "Tenue++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 10210,
+        "names": {
+          "en": "Holy",
+          "tw": "神聖",
+          "kr": "홀리",
+          "fr": "Sidéral",
+          "de": "Sanctus",
+          "es": "Sanctus"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          450
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230690,
+          230691,
+          230692,
+          230693,
+          230695,
+          230696,
+          230697,
+          230698,
+          230701,
+          230703,
+          800029
+        ]
+      }
+    ],
+    "multipleWhite": 3,
+    "multipleBlack": 3,
+    "multipleGreen": 3
+  },
+  {
+    "id": 285,
+    "names": {
+      "en": "Kokuryu"
+    },
+    "abilities": [
+      {
+        "id": 11901,
+        "names": {
+          "en": "Supreme Dragon Torrent (1)",
+          "tw": "尊龍奔流 (1)",
+          "kr": "위대한 용의 격류 (1)",
+          "fr": "Torrent du dragon suprême (1)",
+          "de": "Höchster Drachenstrom (1)",
+          "es": "Torrente del dragón supremo (1)"
+        },
+        "castTime": 10,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "base": 28000,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 11902,
+        "names": {
+          "en": "Supreme Dragon Torrent (2)",
+          "tw": "尊龍奔流 (2)",
+          "kr": "위대한 용의 격류 (2)",
+          "fr": "Torrent du dragon suprême (2)",
+          "de": "Höchster Drachenstrom (2)",
+          "es": "Torrente del dragón supremo (2)"
+        },
+        "castTime": 10,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "base": 38000,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
       }
     ]
   }

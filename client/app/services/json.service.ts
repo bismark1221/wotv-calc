@@ -302,7 +302,7 @@ export class JsonService {
           }
         });
       } else {
-        this.ffbeChainUnits[id].names.en = null;
+        this.ffbeChainUnits[id].names.en = dataId;
       }
 
       Object.keys(unit.entries).forEach(entryId => {
@@ -1072,7 +1072,7 @@ export class JsonService {
 
   private getNames(abilityId, level = 0, lb = false) {
     let formattedNames = {
-      en: "unknown ability name"
+      en: "unknown ability name -- " + abilityId
     };
     let names = null;
 
@@ -1116,7 +1116,7 @@ export class JsonService {
     });
 
     if (this.ffbeChainUnits[id].names === {}) {
-      this.ffbeChainUnits[id].names.en = "unknown summon name";
+      this.ffbeChainUnits[id].names.en = "unknown summon name -- " + summonId;
     }
 
     if (summon.skill) {
