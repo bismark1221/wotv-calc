@@ -284,6 +284,7 @@ export class ChainService {
 
   private calculateHitterOrder() {
     let minIndex = 0;
+    let minType = -1;
     let lastHitter = 0;
     let nbCombo = JSON.parse(JSON.stringify(this.nbCombo));
     nbCombo[-1] = 0;
@@ -292,6 +293,7 @@ export class ChainService {
     while (minIndex !== -1) {
       let minFrame = 10000;
       minIndex = -1;
+      minType = -1;
       this.chainers.forEach((unit, index) => {
         if (unit.frames.length > nbCombo[index] &&
           (unit.frames[nbCombo[index]].frame < minFrame
@@ -299,11 +301,17 @@ export class ChainService {
               unit.frames[nbCombo[index]].frame === minFrame
               && index > minIndex
               && this.chainers[index].selectedAbilities[0].framesList[0] + this.chainers[index].framesGap < this.chainers[minIndex].selectedAbilities[0].framesList[0] + this.chainers[minIndex].framesGap
+              && unit.frames[nbCombo[index]].type <= minType
+            )
+            || (
+              unit.frames[nbCombo[index]].frame === minFrame
+              && unit.frames[nbCombo[index]].type < minType
             )
           )
         ) {
           minFrame = unit.frames[nbCombo[index]].frame;
           minIndex = index;
+          minType = unit.frames[nbCombo[index]].type;
         }
       });
 
