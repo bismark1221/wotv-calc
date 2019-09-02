@@ -9,7 +9,6 @@
           [position]="0"
           [options]="select2Options"
           (valueChanged)="onChangeUnit($event.value);"></select2>
-        <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && unit.id < 10000" />
       </div>
     </div>
 
@@ -33,9 +32,10 @@
         <input type="text" class="form-control" placeholder="Base ATK" aria-label="Base ATK" aria-describedby="base_atk" [(ngModel)]="unit.stats.atk.base" disabled>
         <input type="text" class="form-control" placeholder="Pot ATK" aria-label="Pot ATK" aria-describedby="pot_atk" [(ngModel)]="unit.stats.atk.potValue">
         <div class="input-group-append">
-          <div class="input-group-text">
-            Max Pot <input type="checkbox" aria-label="Checkbox for following text input" [(ngModel)]="unit.stats.atk.maxPot" (ngModelChange)="onChangePot('atk')">
-          </div>
+          <button class="btn btn-secondary buttonPot" (click)="onChangePot('atk')">
+            <img class="imgPot" src="assets/damage/{{ unit.stats.atk.potted }}_atk.png" />
+            <span class="textPot">Pots</span>
+          </button>
         </div>
       </div>
 
@@ -47,9 +47,10 @@
         <input type="text" class="form-control" placeholder="Base MAG" aria-label="Base MAG" aria-describedby="base_mag" [(ngModel)]="unit.stats.mag.base" disabled>
         <input type="text" class="form-control" placeholder="Pot MAG" aria-label="Pot MAG" aria-describedby="pot_mag" [(ngModel)]="unit.stats.mag.potValue">
         <div class="input-group-append">
-          <div class="input-group-text">
-            Max Pot <input type="checkbox" aria-label="Checkbox for following text input" [(ngModel)]="unit.stats.mag.maxPot" (ngModelChange)="onChangePot('mag')">
-          </div>
+          <button class="btn btn-secondary buttonPot" (click)="onChangePot('mag')">
+            <img class="imgPot" src="assets/damage/{{ unit.stats.mag.potted }}_mag.png" />
+            <span class="textPot">Pots</span>
+          </button>
         </div>
       </div>
 
@@ -217,6 +218,9 @@
 
   <!-- Select Round + Summary -->
   <div  class="summaryZone">
+    <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && unit.id < 10000" />
+    <img class="vsImg" src='assets/damage/versus.png' *ngIf="unit.id !== 'unselect'" />
+    <img class="unitImg" src='assets/monsters/{{ monster.id }}.png' *ngIf="unit.id !== 'unselect'" />
     <div *ngIf="unit.id !== 'unselect'">
       <h2>Rounds</h2>
       <div *ngFor="let round of rounds; let roundIndex = index">

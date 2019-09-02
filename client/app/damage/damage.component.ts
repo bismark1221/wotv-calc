@@ -356,18 +356,25 @@ export class DamageComponent implements OnInit {
   }
 
   onChangePot(type: string) {
-    if (this.unit.stats[type].maxPot) {
+    if (this.unit.stats[type].potted === "none") {
       this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity.value][type].pot;
+      this.unit.stats[type].potted = "pot";
+    } else if (this.unit.stats[type].potted === "pot") {
+      this.unit.stats[type].potValue = this.unit.dataStats[this.unit.rarity.value][type].pot * 1.5;
+      this.unit.stats[type].potted = "door"
     } else {
       this.unit.stats[type].potValue = 0;
+      this.unit.stats[type].potted = "none"
     }
   }
 
   onChangeLevel() {
     this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity.value].atk.base;
     this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity.value].mag.base;
-    this.unit.stats.atk.potValue = this.unit.stats.atk.maxPot ? this.unit.dataStats[this.unit.rarity.value].atk.pot : 0;
-    this.unit.stats.mag.potValue = this.unit.stats.mag.maxPot ? this.unit.dataStats[this.unit.rarity.value].mag.pot : 0;
+    this.unit.stats.atk.potValue = this.unit.dataStats[this.unit.rarity.value].atk.pot;
+    this.unit.stats.mag.potValue = this.unit.dataStats[this.unit.rarity.value].mag.pot;
+    this.unit.stats.atk.potted = "pot";
+    this.unit.stats.mag.potted = "pot";
   }
 
   onChangeRarity(rarity = -1) {
@@ -385,11 +392,11 @@ export class DamageComponent implements OnInit {
     };
 
     this.unit.stats.atk.base = this.unit.dataStats[this.unit.rarity.value].atk.base;
-    this.unit.stats.atk.potValue = this.unit.dataStats[this.unit.rarity.value].atk.pot;
-    this.unit.stats.atk.maxPot = true;
+    this.unit.stats.atk.potValue = this.unit.dataStats[this.unit.rarity.value].atk.pot * 1.5;
+    this.unit.stats.atk.potted = "door";
     this.unit.stats.mag.base = this.unit.dataStats[this.unit.rarity.value].mag.base;
-    this.unit.stats.mag.potValue = this.unit.dataStats[this.unit.rarity.value].mag.pot;
-    this.unit.stats.mag.maxPot = true;
+    this.unit.stats.mag.potValue = this.unit.dataStats[this.unit.rarity.value].mag.pot * 1.5;
+    this.unit.stats.mag.potted = "door";
 
     this.unit.level = this.unitService.getLevelsByRarity(this.unit.rarity.value);
 

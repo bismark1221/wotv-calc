@@ -65,6 +65,11 @@
   margin-top: 10px;
 }
 
+.vsImg {
+  height: 40px;
+  margin-top: 10px;
+}
+
 .selectUnit1 {
   color: #848b8e;;
   font-size: 4em;
@@ -772,4 +777,17 @@ nouislider {
   background-size: 20px 20px;
   padding-left: 30px;
   background-position: 5px 8px;
+}
+
+.imgPot {
+  height: 36px;
+  width: 36px;
+}
+
+.buttonPot {
+  padding: 0;
+}
+
+.textPot {
+  padding: 6px;
 }
