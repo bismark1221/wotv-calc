@@ -20,8 +20,54 @@ export class Unit {
   multipleWhite: number = 1;
   multipleGreen: number = 1;
   maxChainCap: number = 4;
+  level: number = 120;
+  rarity: any = {
+    min: 5,
+    max: 7,
+    value: 7
+  };
+  stats: any = {};
+  dataStats: any = {
+    7: {
+      atk: {
+        base: 0,
+        pot: 0,
+      },
+      mag: {
+        base: 0,
+        pot: 0,
+      }
+    }
+  };
+  damageWeapons: any = [
+    {
+      elements: [],
+      type: 'noWeapon',
+      varianceMin: 100,
+      varianceMax: 100,
+      atk: 0
+    },
+    {
+      elements: [],
+      type: 'noWeapon',
+      varianceMin: 100,
+      varianceMax: 100,
+      atk: 0
+    }
+  ];
+  killers: any = [];
+  buffs: any = {
+    atk: 0 ,
+    mag: 0
+  };
+  breaks: any = {
+    def: 0 ,
+    spr: 0
+  };
+  passiveBoostModifiers = [];
+  passiveKillers = [];
 
-  constructUnitFromJson(unit: Unit, translateService: TranslateService): void {
+  constructFromJson(unit: Unit, translateService: TranslateService, damage: boolean = false): void {
     this.id = unit.id ? unit.id : unit.dataId;
     this.names = unit.names;
     this.getName(translateService);
@@ -34,9 +80,11 @@ export class Unit {
 
     this.abilities = [];
     unit.abilities.forEach(dataAbility => {
-      let ability = new Ability();
-      ability.constructAbilityFromJson(dataAbility, translateService);
-      this.abilities.push(ability);
+      if (damage || (dataAbility.base && dataAbility.base > 0)) {
+        let ability = new Ability();
+        ability.constructFromJson(dataAbility, translateService);
+        this.abilities.push(ability);
+      }
     });
 
     this.multiCasts = unit.multiCasts ? unit.multiCasts : this.multiCasts;
@@ -44,6 +92,20 @@ export class Unit {
     this.multipleWhite = unit.multipleWhite ? unit.multipleWhite : this.multipleWhite;
     this.multipleGreen = unit.multipleGreen ? unit.multipleGreen : this.multipleGreen;
     this.maxChainCap = unit.maxChainCap ? unit.maxChainCap : this.maxChainCap;
+
+    if (damage) {
+      this.level = unit.level ? unit.level : this.level;
+      this.damageWeapons = unit.damageWeapons ? unit.damageWeapons : this.damageWeapons;
+      this.stats = unit.stats ? unit.stats : this.stats;
+      this.dataStats = unit.dataStats ? unit.dataStats : this.dataStats;
+      this.killers = unit.killers ? unit.killers : this.killers;
+      this.buffs = unit.buffs ? unit.buffs : this.buffs;
+      this.breaks = unit.breaks ? unit.breaks : this.breaks;
+      this.rarity = unit.rarity ? unit.rarity : this.rarity;
+      this.rarity.value = unit.rarity && unit.rarity.value ? unit.rarity.value : this.rarity.max;
+      this.passiveBoostModifiers = unit.passiveBoostModifiers ? unit.passiveBoostModifiers : this.passiveBoostModifiers;
+      this.passiveKillers = unit.passiveKillers ? unit.passiveKillers : this.passiveKillers;
+    }
   }
 
   getName(translateService: TranslateService): string {

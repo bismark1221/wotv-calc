@@ -9,3 +9,14 @@ export const ELEMENTS: string[] = [
   'water',
   'wind'
 ];
+
+export const GAME_ORDER_ELEMENTS: string[] = [
+  'fire',
+  'ice',
+  'lightning',
+  'water',
+  'wind',
+  'earth',
+  'light',
+  'dark'
+];

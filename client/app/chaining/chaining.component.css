@@ -173,7 +173,7 @@
   display: inline-block;
 }
 
-.btnAddDebuff {
+.btnAddImperil {
   width: 710px;
 }
 
@@ -336,7 +336,7 @@ nouislider {
   display: none;
 }
 
-.mobileSeparatorSelectDebuff {
+.mobileSeparatorSelectImperil {
   display: none;
 }
 
@@ -471,7 +471,7 @@ nouislider {
     width: 792px;
   }
 
-  .divAddDebuff {
+  .divAddImperil {
     margin-right: 20px;
   }
 }
@@ -569,11 +569,11 @@ nouislider {
     width: 274px;
   }
 
-  .divAddDebuff {
+  .divAddImperil {
     margin: 0;
   }
 
-  .btnAddDebuff {
+  .btnAddImperil {
     width: 490px;
   }
 }
@@ -684,7 +684,7 @@ nouislider {
     text-align: left;
   }
 
-  .btnAddDebuff {
+  .btnAddImperil {
     margin-top: 10px;
   }
 
@@ -700,7 +700,7 @@ nouislider {
     margin-top: 10px;
   }
 
-  .mobileSeparatorSelectDebuff {
+  .mobileSeparatorSelectImperil {
     margin-top: 20px;
     display: block;
     margin-bottom: 0;
@@ -744,7 +744,7 @@ nouislider {
     padding-right: 0;
   }
 
-  .btnAddDebuff {
+  .btnAddImperil {
     width: 227px;
   }
 }

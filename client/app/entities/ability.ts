@@ -21,14 +21,23 @@ export class Ability {
 
   framesList?: any[] = [0];
   elements?: string[] = [];
-  debuffs?: any[] = [];
+  imperils?: any[] = [];
+  boostModifiers?: any[] = [];
   hitDamage?: any[] = [];
   range?: any = {
     min: 0,
     max: 20
   }
+  breaks? = [];
+  buffs? = [];
+  killers? = [];
+  imbues? = [];
+  effectOrder? = [];
+  lbDamage?: number = 0;
+  jumpDamage?: number = 0;
+  canDualSkill?: boolean = true;
 
-  constructAbilityFromJson(ability: Ability, translateService: TranslateService): void {
+  constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
     this.names = ability.names;
     this.getName(translateService);
@@ -41,7 +50,16 @@ export class Ability {
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
     this.dualable = typeof ability.dualable == 'boolean' ? ability.dualable : this.dualable;
     this.elements = ability.elements ? ability.elements : this.elements;
-    this.debuffs = ability.debuffs ? ability.debuffs : this.debuffs;
+    this.imperils = ability.imperils ? ability.imperils : this.imperils;
+    this.boostModifiers = ability.boostModifiers ? ability.boostModifiers : this.boostModifiers;
+    this.breaks = ability.breaks ? ability.breaks : this.breaks;
+    this.buffs = ability.buffs ? ability.buffs : this.buffs;
+    this.killers = ability.killers ? ability.killers : this.killers;
+    this.lbDamage = ability.lbDamage ? ability.lbDamage : this.lbDamage;
+    this.jumpDamage = ability.jumpDamage ? ability.jumpDamage : this.jumpDamage;
+    this.canDualSkill = typeof ability.canDualSkill == 'boolean' ? ability.canDualSkill : this.canDualSkill;
+    this.imbues = ability.imbues ? ability.imbues : this.imbues;
+    this.effectOrder = ability.effectOrder ? ability.effectOrder : this.effectOrder;
 
     if (ability.type) {
       this.type = ability.type;

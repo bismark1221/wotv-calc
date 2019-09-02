@@ -28,6 +28,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ChainingComponent } from './chaining/chaining.component';
 import { ChainingModalComponent } from './chaining-modal/chaining-modal.component';
 import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
+import { DamageComponent } from './damage/damage.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
 import { MacroComponent } from './macro/macro.component';
@@ -43,6 +44,10 @@ import { FindBestService } from './services/find-best.service';
 import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
+import { MonsterService } from './services/monster.service';
+import { WeaponService } from './services/weapon.service';
+import { RaceService } from './services/race.service';
+import { DamageService } from './services/damage.service';
 
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AbsolutePipe } from './pipes/absolute.pipe';
@@ -71,7 +76,8 @@ export function createTranslateLoader(http: HttpClient) {
     RequestsComponent,
     JsonComponent,
     FamiliesComponent,
-    ChainingModalComponent
+    ChainingModalComponent,
+    DamageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -107,7 +113,11 @@ export function createTranslateLoader(http: HttpClient) {
     BackService,
     FindBestService,
     NavService,
-    JsonService
+    JsonService,
+    MonsterService,
+    WeaponService,
+    RaceService,
+    DamageService
   ],
   bootstrap: [
     AppComponent

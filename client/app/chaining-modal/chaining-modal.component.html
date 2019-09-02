@@ -203,29 +203,29 @@
           </div>
 
           <div class="selectRightZoneBox littleMarginTop">
-            <hr class="mobileSeparatorSelectDebuff"/>
-            <div class="divAddDebuff">
-              <button class="btn btn-secondary btnAddDebuff" type="button" (click)="addDebuff(abilityIndex)">{{ 'chain.button.addDebuff' | translate }}</button>
+            <hr class="mobileSeparatorSelectImperil"/>
+            <div class="divAddImperil">
+              <button class="btn btn-secondary btnAddImperil" type="button" (click)="addImperil(abilityIndex)">{{ 'chain.button.addImperil' | translate }}</button>
             </div>
-            <div *ngFor="let debuff of ability.debuffs; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
-              <hr class="mobileSeparatorSelectDebuff tabletNoMarginTop"/>
+            <div *ngFor="let imperil of ability.imperils; let j = index" class="selectRightZoneDividedTwo littleMarginTop">
+              <hr class="mobileSeparatorSelectImperil tabletNoMarginTop"/>
               <div class="selectRightZoneTwoDividedThree">
-                <label for="ability_{{abilityIndex}}_debuff{{j}}_type">{{ 'chain.label.element' | translate }} {{j + 1}}</label>
-                <select class="form-control" id="ability_{{abilityIndex}}_debuff{{j}}_type" [(ngModel)]="ability.debuffs[j].type">
+                <label for="ability_{{abilityIndex}}_imperil{{j}}_type">{{ 'chain.label.element' | translate }} {{j + 1}}</label>
+                <select class="form-control" id="ability_{{abilityIndex}}_imperil{{j}}_type" [(ngModel)]="ability.imperils[j].type">
                   <option *ngFor="let element of requiredElements" [ngValue]="element">{{ 'elements.' + element | translate }}</option>
                 </select>
               </div>
               <div class="selectRightZoneTwoDividedThree">
-                <label for="ability_{{abilityIndex}}_debuff{{j}}_value">{{ 'chain.label.value' | translate }} {{j + 1}}</label>
+                <label for="ability_{{abilityIndex}}_imperil{{j}}_value">{{ 'chain.label.value' | translate }} {{j + 1}}</label>
                 <div class="input-group">
-                  <input class="form-control" type="number" id="ability_{{abilityIndex}}_debuff{{j}}_value" [(ngModel)]="ability.debuffs[j].value">
+                  <input class="form-control" type="number" id="ability_{{abilityIndex}}_imperil{{j}}_value" [(ngModel)]="ability.imperils[j].value">
                   <div class="input-group-append">
                     <span class="input-group-text" id="unit_base_percent">%</span>
                   </div>
                 </div>
               </div>
               <div class="selectRightZoneTwoDividedThree">
-                <button class="btn btn-secondary fullWidth" type="button" (click)="removeDebuff(abilityIndex, j)">{{ 'chain.button.remove' | translate }}</button>
+                <button class="btn btn-secondary fullWidth" type="button" (click)="removeImperil(abilityIndex, j)">{{ 'chain.button.remove' | translate }}</button>
               </div>
             </div>
           </div>
