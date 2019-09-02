@@ -61,7 +61,7 @@ export class ChainService {
     });
 
     this.getElements();
-    this.calculateDebuffModifier();
+    this.calculateImperilModifier();
     this.calculateTotalDamage();
 
     this.result.modifier = this.calculateChain();
@@ -76,6 +76,7 @@ export class ChainService {
     let unitHits = [];
     let countFrames = unit.framesGap;
     let startFrames = unit.framesGap;
+    let nbAbilities = unit.selectedAbilities.length;
 
     unit.multiAbilities = false;
 
@@ -97,7 +98,7 @@ export class ChainService {
         unitHits.push({frame: countFrames, type: index, damage: ability.hitDamage[i], abilityIndex: index});
       });
 
-      if (unit.dual && ability.dualable && unit.selectedAbilities.length === 1) {
+      if (unit.dual && ability.dualable && nbAbilities === 1) {
         unit.multiAbilities = true;
         countFrames = startFrames + ability.offset + ability.castTime;
         ability.framesList.forEach((hit, i) => {
@@ -110,7 +111,7 @@ export class ChainService {
       }
     });
 
-    if (unit.selectedAbilities.length > 1) {
+    if (nbAbilities > 1) {
       unit.multiAbilities = true;
     }
 
@@ -156,7 +157,7 @@ export class ChainService {
     });
   }
 
-  private calculateDebuffModifier() {
+  private calculateImperilModifier() {
     this.modifierElements = [];
     this.elements.forEach(element => {
       let modifier = 1;
@@ -164,9 +165,9 @@ export class ChainService {
       this.units.forEach(unit => {
         if (unit) {
           unit.selectedAbilities.forEach(ability => {
-            let debuff = this.getDebuff(ability, element);
-            if (unit && debuff && debuff / 100 + 1 > modifier) {
-              modifier = debuff / 100 + 1;
+            let imperil = this.getImperil(ability, element);
+            if (unit && imperil && imperil / 100 + 1 > modifier) {
+              modifier = imperil / 100 + 1;
             }
           });
         }
@@ -176,16 +177,16 @@ export class ChainService {
     });
   }
 
-  private getDebuff(ability: any, element: string) {
-    let debuffValue = null;
-    ability.debuffs.forEach(debuff => {
-      if (debuff.type == element) {
-        debuffValue = debuff.value;
+  private getImperil(ability: any, element: string) {
+    let imperilValue = null;
+    ability.imperils.forEach(imperil => {
+      if (imperil.type == element) {
+        imperilValue = imperil.value;
         return;
       }
     });
 
-    return debuffValue;
+    return imperilValue;
   }
 
   private calculateTotalDamage() {
@@ -284,6 +285,7 @@ export class ChainService {
 
   private calculateHitterOrder() {
     let minIndex = 0;
+    let minType = -1;
     let lastHitter = 0;
     let nbCombo = JSON.parse(JSON.stringify(this.nbCombo));
     nbCombo[-1] = 0;
@@ -292,6 +294,7 @@ export class ChainService {
     while (minIndex !== -1) {
       let minFrame = 10000;
       minIndex = -1;
+      minType = -1;
       this.chainers.forEach((unit, index) => {
         if (unit.frames.length > nbCombo[index] &&
           (unit.frames[nbCombo[index]].frame < minFrame
@@ -299,11 +302,17 @@ export class ChainService {
               unit.frames[nbCombo[index]].frame === minFrame
               && index > minIndex
               && this.chainers[index].selectedAbilities[0].framesList[0] + this.chainers[index].framesGap < this.chainers[minIndex].selectedAbilities[0].framesList[0] + this.chainers[minIndex].framesGap
+              && unit.frames[nbCombo[index]].type <= minType
+            )
+            || (
+              unit.frames[nbCombo[index]].frame === minFrame
+              && unit.frames[nbCombo[index]].type < minType
             )
           )
         ) {
           minFrame = unit.frames[nbCombo[index]].frame;
           minIndex = index;
+          minType = unit.frames[nbCombo[index]].type;
         }
       });
 

@@ -44,7 +44,7 @@ export class BackService {
             base: unit.ability.base,
             castTime: unit.ability.castTime,
             damage: unit.ability.damage,
-            debuff: unit.ability.debuff,
+            imperils: unit.ability.imperils,
             dualable: unit.ability.dualable,
             elements: unit.ability.elements,
             framesList: unit.ability.framesList,

@@ -99,7 +99,7 @@ export class FindBestService {
 
       this.findMinFrames();
       this.getElements();
-      this.calculateDebuffModifier();
+      this.calculateImperilModifier();
       this.calculateTotalDamage();
       this.calculateAllPossibleFrames('chainers', 0);
 
@@ -216,7 +216,7 @@ export class FindBestService {
     });
   }
 
-  private calculateDebuffModifier() {
+  private calculateImperilModifier() {
     this.modifierElements = [];
     this.elements.forEach(element => {
       let modifier = 1;
@@ -224,9 +224,9 @@ export class FindBestService {
       this.units.forEach(unit => {
         if (unit) {
           unit.selectedAbilities.forEach(ability => {
-            let debuff = this.getDebuff(ability, element);
-            if (unit && debuff && debuff / 100 + 1 > modifier) {
-              modifier = debuff / 100 + 1;
+            let imperil = this.getImperil(ability, element);
+            if (unit && imperil && imperil / 100 + 1 > modifier) {
+              modifier = imperil / 100 + 1;
             }
           });
         }
@@ -236,16 +236,16 @@ export class FindBestService {
     });
   }
 
-  private getDebuff(ability: any, element: string) {
-    let debuffValue = null;
-    ability.debuffs.forEach(debuff => {
-      if (debuff.type == element) {
-        debuffValue = debuff.value;
+  private getImperil(ability: any, element: string) {
+    let imperilValue = null;
+    ability.imperils.forEach(imperil => {
+      if (imperil.type == element) {
+        imperilValue = imperil.value;
         return;
       }
     });
 
-    return debuffValue;
+    return imperilValue;
   }
 
   private calculateTotalDamage() {

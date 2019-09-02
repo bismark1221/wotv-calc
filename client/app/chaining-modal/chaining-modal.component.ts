@@ -171,9 +171,6 @@ export class ChainingModalComponent implements OnInit {
       this.unit.castNumber = [];
       for (let i = 0; i < castNumber; i++) {
         this.unit.castNumber.push(i);
-        if (i > 0) {
-
-        }
       }
 
       if (autoAssign) {
@@ -243,12 +240,12 @@ export class ChainingModalComponent implements OnInit {
     }
   }
 
-  addDebuff(abilityPosition: number) {
-    this.getAbility(abilityPosition).debuffs.push({type: 'dark', value: 1});
+  addImperil(abilityPosition: number) {
+    this.getAbility(abilityPosition).imperils.push({type: 'dark', value: 1});
   }
 
-  removeDebuff(abilityPosition: number, debuff: number) {
-    this.getAbility(abilityPosition).debuffs.splice(debuff, 1);
+  removeImperil(abilityPosition: number, imperil: number) {
+    this.getAbility(abilityPosition).imperils.splice(imperil, 1);
   }
 
   onChangeDual() {

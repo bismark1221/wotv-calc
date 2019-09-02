@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 
-
-
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
@@ -19,6 +17,15 @@ export class UnitService {
   private ore = /^0/;
   private oFxNcL: any;
   private oFyNcL: any;
+  private levelsRarity: any = {
+    1: 15,
+    2: 30,
+    3: 40,
+    4: 60,
+    5: 80,
+    6: 100,
+    7: 120
+  }
 
   constructor(private translateService: TranslateService) {}
 
@@ -69,12 +76,16 @@ export class UnitService {
     return units;
   }
 
-  getUnits(): Unit[] {
+  getLevelsByRarity(rarity: number) {
+    return this.levelsRarity[rarity];
+  }
+
+  getUnits(damage: boolean = false): Unit[] {
     let units: Unit[] = [];
 
     UNITS.forEach(unitData => {
       let unit = new Unit();
-      unit.constructUnitFromJson(unitData, this.translateService);
+      unit.constructFromJson(unitData, this.translateService, damage);
       units.push(unit);
     });
 
@@ -88,5 +99,32 @@ export class UnitService {
     }
 
     return this.units.find(unit => unit.id === id);
+  }
+
+  findPositionOfAbility(unit: any, searchAbility: any) {
+    let i = 0;
+    let position = 0;
+    unit.abilities.forEach(ability => {
+      if (ability.name === searchAbility.name) {
+        position = i;
+      }
+      i++;
+    });
+
+    return position;
+  }
+
+  findPositionOfAbilityById(unit: any, id: any) {
+    let i = 0;
+    let position = null;
+
+    unit.abilities.forEach(ability => {
+      if (ability.id === id) {
+        position = i;
+      }
+      i++;
+    });
+
+    return position;
   }
 }

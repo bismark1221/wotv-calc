@@ -89,7 +89,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 800,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 65
@@ -115,7 +115,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -196,7 +196,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 200,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -219,7 +219,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 260,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -491,7 +491,7 @@ export const UNITS: any[] = [
         offset: 36,
         base: 320,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 50
@@ -513,7 +513,7 @@ export const UNITS: any[] = [
         offset: 36,
         base: 370,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 75
@@ -537,7 +537,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 80
@@ -597,7 +597,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 300,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 50
@@ -643,7 +643,7 @@ export const UNITS: any[] = [
         "offset": 14,
         "base": 360,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -685,14 +685,13 @@ export const UNITS: any[] = [
         "hitDamage": [
           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 65
           }
         ],
-        "framesList": [
-          0, 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6
+        "framesList": [ 14, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 6
         ],
         "offset": 8
       },
@@ -748,6 +747,43 @@ export const UNITS: any[] = [
     id: 7,
     names: {
       en: "2B"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7,
+      "value": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 118,
+          "pot": 20
+        },
+        "mag": {
+          "base": 93,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 154,
+          "pot": 30
+        },
+        "mag": {
+          "base": 121,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 194,
+          "pot": 50
+        },
+        "mag": {
+          "base": 157,
+          "pot": 50
+        }
+      }
     },
     abilities: [
       {
@@ -843,7 +879,7 @@ export const UNITS: any[] = [
         castTime: 40,
         offset: 14,
         base: 400,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 65
@@ -940,7 +976,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -972,7 +1008,8 @@ export const UNITS: any[] = [
         "framesList": [
           80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
-        "offset": 14
+        "offset": 14,
+        "canDualSkill": false
       },
       {
         "id": 509316,
@@ -1242,7 +1279,7 @@ export const UNITS: any[] = [
         offset: 46,
         base: 560,
         ignore: 25,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 75,
@@ -1337,7 +1374,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 160,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -1360,7 +1397,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 200,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -1501,7 +1538,7 @@ export const UNITS: any[] = [
           "light",
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -1531,7 +1568,7 @@ export const UNITS: any[] = [
           "light",
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -1640,7 +1677,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -1672,7 +1709,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 275,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -1728,7 +1765,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -1759,7 +1796,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 760,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -1860,7 +1897,7 @@ export const UNITS: any[] = [
         offset: 22,
         base: 1000,
         damage: "hybrid",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -1903,7 +1940,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 1200,
         damage: "hybrid",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 75
@@ -2221,7 +2258,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 450,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -2335,7 +2372,7 @@ export const UNITS: any[] = [
         offset: 40,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -2455,7 +2492,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1600,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 100
@@ -2494,7 +2531,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -2562,7 +2599,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 65
@@ -2706,7 +2743,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -2890,7 +2927,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -2919,7 +2956,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -2948,7 +2985,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -2977,7 +3014,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -3026,7 +3063,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -3055,7 +3092,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 50
@@ -3119,7 +3156,7 @@ export const UNITS: any[] = [
         "hitDamage": [30, 30, 40],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -3516,8 +3553,8 @@ export const UNITS: any[] = [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
         "dualable": false,
-        "offset": 14,
-        "debuffs": [
+        "offset": 8,
+        "imperils": [
           {
             "type": "fire",
             "value": 104
@@ -3744,7 +3781,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -3774,7 +3811,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -3805,7 +3842,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 760,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -3833,7 +3870,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 900,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 60
@@ -4004,7 +4041,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -4552,7 +4589,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -4581,7 +4618,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -4610,7 +4647,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -4639,7 +4676,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -5056,8 +5093,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           30, 30, 40
         ],
-        "framesList": [
-          0, 30, 30
+        "framesList": [ 30, 30
         ],
         "base": 250,
         "ignore": 50,
@@ -5082,7 +5118,7 @@ export const UNITS: any[] = [
         "base": 500,
         "ignore": 50,
         offset: 66,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 40
@@ -5197,7 +5233,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -5262,7 +5298,7 @@ export const UNITS: any[] = [
         offset: 26,
         base: 220,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -5338,7 +5374,7 @@ export const UNITS: any[] = [
         "offset": 26,
         "base": 325,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -5386,7 +5422,7 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 800,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -5429,7 +5465,7 @@ export const UNITS: any[] = [
         offset: 26,
         base: 200,
         ignore: 25,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -6110,7 +6146,7 @@ export const UNITS: any[] = [
         "framesList": [
           142
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 74
@@ -6238,7 +6274,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -6270,7 +6306,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -6521,7 +6557,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1500,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -6602,7 +6638,7 @@ export const UNITS: any[] = [
         elements : [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -6633,7 +6669,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -6707,7 +6743,7 @@ export const UNITS: any[] = [
         elements: [
           "dark"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 100
@@ -7281,7 +7317,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 80
@@ -7419,7 +7455,7 @@ export const UNITS: any[] = [
         castTime: 20,
         offset: 14,
         base: 350,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -7441,7 +7477,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 20,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -7469,7 +7505,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 74
@@ -8004,7 +8040,7 @@ export const UNITS: any[] = [
         "elements": [
           "lightning"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 65
@@ -8033,7 +8069,7 @@ export const UNITS: any[] = [
         "elements": [
           "light"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 65
@@ -8062,7 +8098,7 @@ export const UNITS: any[] = [
         "elements": [
           "wind"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 65
@@ -8113,7 +8149,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 79
@@ -8155,7 +8191,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -8254,7 +8290,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 120
@@ -8316,7 +8352,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 104
@@ -8643,7 +8679,7 @@ export const UNITS: any[] = [
         offset: 66,
         base: 200,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -8665,7 +8701,7 @@ export const UNITS: any[] = [
         offset: 66,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 75
@@ -8683,7 +8719,7 @@ export const UNITS: any[] = [
           es: "Caída del dragón"
         },
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -8728,7 +8764,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         "castTime": 26,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 70
@@ -8754,7 +8790,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 10,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -8869,7 +8905,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 72
@@ -8991,7 +9027,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 65
@@ -9152,7 +9188,7 @@ export const UNITS: any[] = [
         offset: 14,
         base: 160,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -9221,7 +9257,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        imperils: [
           {
             "type": "fire",
             "value": 75
@@ -9265,7 +9301,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        imperils: [
           {
             "type": "lightning",
             "value": 75
@@ -9309,7 +9345,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        imperils: [
           {
             "type": "wind",
             "value": 75
@@ -9703,7 +9739,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -9827,7 +9863,7 @@ export const UNITS: any[] = [
         elements: [
           "ice"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -9880,7 +9916,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -9938,7 +9974,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -10093,7 +10129,7 @@ export const UNITS: any[] = [
         base: 200,
         damage: "magic",
         type: "finish",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50,
@@ -10120,7 +10156,7 @@ export const UNITS: any[] = [
         ],
         castTime: 40,
         damage: "magic",
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 75
@@ -10225,7 +10261,7 @@ export const UNITS: any[] = [
         framesList: [46, 6, 6, 6, 6, 6],
         hitDamage: [16, 17, 16, 17, 17, 17],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -10249,7 +10285,7 @@ export const UNITS: any[] = [
           6, 6, 7, 7, 8, 8, 8, 50
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -10442,7 +10478,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -10492,7 +10528,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -10522,7 +10558,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -10552,7 +10588,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -10582,7 +10618,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -10609,7 +10645,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -10644,7 +10680,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 90
@@ -10764,7 +10800,7 @@ export const UNITS: any[] = [
         elements: [
           "ice"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -10787,7 +10823,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -10824,7 +10860,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         "castTime": 40,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -10897,7 +10933,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -10971,7 +11007,7 @@ export const UNITS: any[] = [
         "castTime": 10,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 110
@@ -11075,7 +11111,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 60
@@ -11096,7 +11132,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 60
@@ -11117,7 +11153,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 60
@@ -11138,7 +11174,7 @@ export const UNITS: any[] = [
         offset: 8,
         base: 250,
         ignore: 50,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 60
@@ -11230,7 +11266,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 32,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 110
@@ -11326,7 +11362,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -11352,7 +11388,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -11378,7 +11414,7 @@ export const UNITS: any[] = [
         elements: [
           "dark"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 50
@@ -11491,7 +11527,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -11523,7 +11559,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 80
@@ -11554,7 +11590,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 80
@@ -11585,7 +11621,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 80
@@ -11616,7 +11652,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -11737,7 +11773,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 30
@@ -11763,7 +11799,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -11880,7 +11916,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50,
@@ -12038,7 +12074,7 @@ export const UNITS: any[] = [
           es: "Tiro de ceniza"
         },
         castTime: 60,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -12059,7 +12095,7 @@ export const UNITS: any[] = [
           es: "Tiro de ceniza + 2"
         },
         castTime: 60,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 75
@@ -12120,7 +12156,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 20,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -12188,7 +12224,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 90
@@ -12291,7 +12327,7 @@ export const UNITS: any[] = [
           de: "Gravitationspulsator",
           es: "Gravitón"
         },
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 60
@@ -12316,7 +12352,7 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -12613,7 +12649,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -12636,7 +12672,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -13360,7 +13396,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -13387,7 +13423,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -13414,7 +13450,7 @@ export const UNITS: any[] = [
         elements: [
           "lightning"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -13441,7 +13477,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -13468,7 +13504,7 @@ export const UNITS: any[] = [
         elements: [
           "light"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -13710,7 +13746,7 @@ export const UNITS: any[] = [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
         damage: "magic",
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 75,
@@ -13848,7 +13884,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -13878,7 +13914,7 @@ export const UNITS: any[] = [
         elements: [
           "water"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -13909,7 +13945,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -13941,7 +13977,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 25,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -13973,7 +14009,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 25,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 120
@@ -14103,7 +14139,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 20,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -14127,7 +14163,7 @@ export const UNITS: any[] = [
           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
         ],
         castTime: 20,
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 65
@@ -14150,7 +14186,7 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 50
@@ -14173,7 +14209,7 @@ export const UNITS: any[] = [
         hitDamage: [
           14, 14, 14, 14, 14, 15, 15
         ],
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 65
@@ -14196,7 +14232,7 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 74,
@@ -14271,7 +14307,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -14310,7 +14346,7 @@ export const UNITS: any[] = [
           12, 12, 12, 12, 12, 12, 12, 16
         ],
         castTime: 14,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 60
@@ -14546,7 +14582,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -14569,7 +14605,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -14592,7 +14628,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 50
@@ -14615,7 +14651,7 @@ export const UNITS: any[] = [
         hitDamage: [
           10, 10, 10, 10, 10, 50
         ],
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 50
@@ -14702,7 +14738,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 90
@@ -14728,7 +14764,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 90
@@ -14754,7 +14790,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 90
@@ -14780,7 +14816,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 90
@@ -15018,7 +15054,7 @@ export const UNITS: any[] = [
           20, 20, 30, 30
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 20
@@ -15042,7 +15078,7 @@ export const UNITS: any[] = [
           20, 20, 30, 30
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "lightning",
             value: 75
@@ -15141,7 +15177,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1100,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -15263,7 +15299,6 @@ export const UNITS: any[] = [
           20, 20, 60
         ],
         castTime: 32,
-        debuff: [],
         framesList: [34, 26, 92],
         offset: 14,
         base: 225,
@@ -15286,7 +15321,6 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: [],
         framesList: [95, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 14],
         base: 610,
         dualable: false
@@ -15319,7 +15353,6 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuff: [],
         framesList: [240],
         offset: 14,
         base: 2000,
@@ -15338,7 +15371,6 @@ export const UNITS: any[] = [
         hitDamage: [
           20, 20, 20, 20, 20
         ],
-        debuff: [],
         framesList: [149, 9, 9, 9, 9],
         base: 390,
         dualable: false
@@ -15541,8 +15573,7 @@ export const UNITS: any[] = [
           25, 25, 25, 25
         ],
         "offset": 8,
-        "framesList": [
-          0, 5, 5, 5
+        "framesList": [ 5, 5, 5
         ]
       },
       {
@@ -15641,7 +15672,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 60
@@ -15669,7 +15700,7 @@ export const UNITS: any[] = [
           14, 14, 14, 14, 14, 14, 16
         ],
         castTime: 40,
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 60
@@ -15695,7 +15726,7 @@ export const UNITS: any[] = [
         },
         castTime: 40,
         damage: "magic",
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 70
@@ -15876,7 +15907,7 @@ export const UNITS: any[] = [
           de: "Einflügliger Engel",
           es: "Fulgor seráfico"
         },
-        debuffs: [
+        imperils: [
           {
             type: "light",
             value: 100
@@ -16016,7 +16047,7 @@ export const UNITS: any[] = [
           es: "Combustión súbita"
         },
         castTime: 48,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 50
@@ -16072,7 +16103,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 84
@@ -16243,7 +16274,7 @@ export const UNITS: any[] = [
         elements: [
           "earth"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "earth",
             value: 50
@@ -16271,7 +16302,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -16298,7 +16329,7 @@ export const UNITS: any[] = [
         elements: [
           "fire"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 30
@@ -16436,7 +16467,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 75
@@ -16472,7 +16503,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -16549,7 +16580,7 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        debuffs: [
+        imperils: [
           {
             type: "dark",
             value: 50
@@ -16575,7 +16606,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 8,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 90
@@ -16598,7 +16629,7 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        debuffs: [
+        imperils: [
           {
             type: "water",
             value: 50
@@ -16624,7 +16655,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 8,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 90
@@ -16647,7 +16678,7 @@ export const UNITS: any[] = [
         hitDamage: [
           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -16673,7 +16704,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 8,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 90
@@ -16956,7 +16987,7 @@ export const UNITS: any[] = [
         elements: [
           "wind"
         ],
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -16987,7 +17018,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 65
@@ -17110,7 +17141,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -17426,7 +17457,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 140,
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 60
@@ -17699,7 +17730,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 480,
-        debuffs: [
+        imperils: [
           {
             type: "fire",
             value: 60
@@ -17708,6 +17739,36 @@ export const UNITS: any[] = [
             type: "ice",
             value: 60
           }
+        ]
+      },
+      {
+        "id": 707788,
+        "names": {
+          "en": "Blades of Azure Crimson + 2",
+          "tw": "緋蒼之劍 + 2",
+          "kr": "비창의 검 + 2",
+          "fr": "Lames azur carmin + 2",
+          "de": "Purpurazurklingen + 2",
+          "es": "Hojas azul enrojecido + 2"
+        },
+        "base": 1000,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
         ]
       },
       {
@@ -17752,6 +17813,27 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707784,
+        "names": {
+          "en": "Octostrike Blade + 2",
+          "tw": "八連刃 + 2",
+          "kr": "팔연검 + 2",
+          "fr": "Lame octimpact + 2",
+          "de": "Klinge des Achtfachen Streichs + 2",
+          "es": "Hoja octaimpacto + 2"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
         "id": 508350,
         "names": {
           "en": "Azure Flame Edge",
@@ -17767,10 +17849,39 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "id": 912916,
+        "names": {
+          "en": "Azure Flame Edge + 2",
+          "tw": "破炎蒼劍 + 2",
+          "kr": "파염의 창검 + 2",
+          "fr": "Lame de flamme azur + 2",
+          "de": "Azurblaue Flammenklinge + 2",
+          "es": "Filo azurígneo + 2"
+        },
+        "base": 1450,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 110
           }
         ],
         "framesList": [
@@ -17793,7 +17904,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -17803,6 +17914,35 @@ export const UNITS: any[] = [
           70, 6, 6, 6, 6, 6, 6, 6
         ]
       },
+      {
+        "id": 912920,
+        "names": {
+          "en": "Crimson Frost Edge + 2",
+          "tw": "裂冰緋劍 + 2",
+          "kr": "열빙의 비검 + 2",
+          "fr": "Lame de glace écarlate + 2",
+          "de": "Purpurrote Frostklinge + 2",
+          "es": "Filo gélido escarlata + 2"
+        },
+        "base": 1450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "ice",
+            "value": 110
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },,
       {
         "id": 100010007,
         "names": {
@@ -17819,6 +17959,36 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100
+          },
+          {
+            "type": "ice",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          22, 10, 10, 10, 10, 10, 13
+        ]
+      },
+      {
+        "id": 900000330,
+        "names": {
+          "en": "Darkness Purging Blades of Azure Crimson + 1",
+          "tw": "斬暗緋蒼之劍 + 1",
+          "kr": "어둠을 떨치는 비창의 검 + 1",
+          "fr": "Lames azur carmin briseuses de ténèbres + 1",
+          "de": "Dunkelheit bannende Purpurazurklingen + 1",
+          "es": "Hojas azul enrojecido de oscuridad purgadora + 1"
+        },
+        "base": 2100,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "dualable": false,
+        "offset": 14,
         "debuffs": [
           {
             "type": "fire",
@@ -17960,7 +18130,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 475,
-        debuffs: [
+        imperils: [
           {
             type: "ice",
             value: 50
@@ -17989,7 +18159,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 90
@@ -18068,7 +18238,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -18099,7 +18269,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -18404,7 +18574,7 @@ export const UNITS: any[] = [
         ],
         offset: 14,
         base: 200,
-        debuffs: [
+        imperils: [
           {
             type: "wind",
             value: 50
@@ -18620,7 +18790,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -18927,7 +19097,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 400,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 65
@@ -19236,7 +19406,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -19367,7 +19537,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -19393,7 +19563,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -19425,7 +19595,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -19451,7 +19621,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -19483,7 +19653,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -19509,7 +19679,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -19541,7 +19711,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 225,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -19567,7 +19737,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 75
@@ -19768,7 +19938,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1100,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 120
@@ -19877,7 +20047,7 @@ export const UNITS: any[] = [
         "offset": 14,
         "base": 250,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -19925,7 +20095,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -19978,7 +20148,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 500,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -20072,7 +20242,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 500,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -20098,7 +20268,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1080,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 84
@@ -20349,7 +20519,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -20371,7 +20541,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1850,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -20456,7 +20626,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -20531,7 +20701,7 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -20560,7 +20730,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1200,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -20600,7 +20770,7 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 1040,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -20751,7 +20921,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 750,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -21117,7 +21287,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1120,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -21164,7 +21334,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1100,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -21264,7 +21434,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1080,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -21297,7 +21467,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 700,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -21340,7 +21510,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1150,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -21373,7 +21543,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 700,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -21413,7 +21583,7 @@ export const UNITS: any[] = [
         "offset": 8,
         "base": 1200,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -21997,7 +22167,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -22204,7 +22374,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 1000,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -22259,7 +22429,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -22285,7 +22455,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 350,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -22387,7 +22557,7 @@ export const UNITS: any[] = [
         "offset": 14,
         "base": 560,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -22607,7 +22777,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -22802,7 +22972,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -22830,7 +23000,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -22862,7 +23032,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -23008,7 +23178,7 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "base": 250,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -23371,7 +23541,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -23629,7 +23799,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 75
@@ -23659,7 +23829,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -23963,7 +24133,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -23994,7 +24164,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -24057,7 +24227,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -24084,7 +24254,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 70
@@ -24271,6 +24441,31 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 707794,
+        "names": {
+          "en": "Holy Mind + 2",
+          "tw": "精神聖域 + 2",
+          "kr": "성스러운 축복 + 2",
+          "fr": "Saint Esprit + 2",
+          "de": "Heiliger Geist + 2",
+          "es": "Mente sagrada + 2"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7, 14, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
         "id": 227650,
         "names": {
           "en": "Evocation - Light of Ruin",
@@ -24291,6 +24486,28 @@ export const UNITS: any[] = [
           110
         ],
         "offset": 14
+      },
+      {
+        "id": 707792,
+        "names": {
+          "en": "Evocation - Light of Ruin + 2",
+          "tw": "喚起·滅光 + 2",
+          "kr": "환기·멸광 + 2",
+          "fr": "Appel - Lumière de la destruction + 2",
+          "de": "Rufen - Licht des Untergangs + 2",
+          "es": "Invocación - Luz ruinosa + 2"
+        },
+        "damage": "magic",
+        "base": 3500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          110
+        ]
       },
       {
         "id": 508095,
@@ -24315,6 +24532,28 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 509412,
+        "names": {
+          "en": "Evocation - Fierce Light of Supremacy + 2",
+          "tw": "喚起·絕霸光 + 2",
+          "kr": "환기·절패광 + 2",
+          "fr": "Appel - Lum. de la domination absolue + 2",
+          "de": "Rufen - Licht der absoluten Übermacht + 2",
+          "es": "Invocación - Luz feroz de la supremacía + 2"
+        },
+        "damage": "magic",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          150
+        ]
+      },
+      {
         "id": 100016907,
         "names": {
           "en": "Gleam of Reverie",
@@ -24330,7 +24569,7 @@ export const UNITS: any[] = [
           100
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -24372,10 +24611,14 @@ export const UNITS: any[] = [
     ],
     "multiCasts": [
       {
-        "count": 2,
+        "count": 3,
         "abilities": [
           227650,
-          227652
+          227652,
+          227653,
+          707794,
+          707792,
+          509412
         ]
       }
     ]
@@ -24449,7 +24692,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 40,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 70
@@ -24522,7 +24765,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 60
@@ -24553,7 +24796,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -24892,7 +25135,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 10,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -25103,7 +25346,7 @@ export const UNITS: any[] = [
           100
         ],
         "castTime": 28,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -25286,7 +25529,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -25317,7 +25560,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -25577,7 +25820,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 1,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -25650,7 +25893,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ],
         "castTime": 5,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -25813,7 +26056,7 @@ export const UNITS: any[] = [
           10, 10, 10, 10, 10, 10, 10, 30
         ],
         "castTime": 40,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -26084,7 +26327,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -26156,7 +26399,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -26297,7 +26540,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 80
@@ -26348,7 +26591,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -26449,7 +26692,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 38,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 75
@@ -27013,7 +27256,7 @@ export const UNITS: any[] = [
         "hitDamage": [50, 50],
         "castTime": 100,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -27035,7 +27278,7 @@ export const UNITS: any[] = [
         "hitDamage": [50, 50],
         "castTime": 100,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 75
@@ -27227,7 +27470,7 @@ export const UNITS: any[] = [
         "elements": [
           "light"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -27369,6 +27612,46 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 912945,
+        "names": {
+          "en": "Dangerous Rose + 1",
+          "tw": "D·危險玫瑰 + 1",
+          "kr": "D·위험한 장미 + 1",
+          "fr": "Rose dangereuse + 1",
+          "de": "Gefährliche Rose + 1",
+          "es": "Rosa peligrosa + 1"
+        },
+        "base": 280,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 912946,
+        "names": {
+          "en": "Dangerous Rose + 2",
+          "tw": "D·危險玫瑰 + 2",
+          "kr": "D·위험한 장미 + 2",
+          "fr": "Rose dangereuse + 2",
+          "de": "Gefährliche Rose + 2",
+          "es": "Rosa peligrosa + 2"
+        },
+        "base": 280,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
         "id": 20340,
         "names": {
           "en": "Stonja",
@@ -27435,6 +27718,26 @@ export const UNITS: any[] = [
         "offset": 14
       },
       {
+        "id": 707806,
+        "names": {
+          "en": "Full Break Charm + 2",
+          "tw": "D·身心潰擊魅惑 + 2",
+          "kr": "D·풀 브레이크적 매혹 + 2",
+          "fr": "Charme dévastateur + 2",
+          "de": "Vernichtender Charme + 2",
+          "es": "Embrujo rompetodo + 2"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          92
+        ]
+      },
+      {
         "id": 508574,
         "names": {
           "en": "Earthbound",
@@ -27448,7 +27751,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           14, 14, 14, 14, 14, 15, 15
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 100
@@ -27458,6 +27761,32 @@ export const UNITS: any[] = [
           2, 8, 8, 8, 8, 8, 8
         ],
         "offset": 8
+      },
+      {
+        "id": 912954,
+        "names": {
+          "en": "Earthbound + 2",
+          "tw": "地縛 + 2",
+          "kr": "지상의 속박 + 2",
+          "fr": "Terre-à-terre + 2",
+          "de": "Erdgebunden + 2",
+          "es": "Vínculo terrenal + 2"
+        },
+        "base": 600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "earth",
+            "value": 100
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
       },
       {
         "id": 100017907,
@@ -27661,7 +27990,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -27745,7 +28074,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -27973,7 +28302,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -28175,7 +28504,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -28201,7 +28530,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -28377,7 +28706,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -28456,7 +28785,7 @@ export const UNITS: any[] = [
           7, 6, 7, 7, 7, 6, 7, 6, 7, 6, 7, 7, 7, 6, 7
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -29341,7 +29670,7 @@ export const UNITS: any[] = [
         "elements": [
           "water"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 60
@@ -29465,7 +29794,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 25, 40
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -29491,7 +29820,7 @@ export const UNITS: any[] = [
           5, 5, 5, 5, 5, 5, 5, 25, 40
         ],
         "dualable": false,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -29566,7 +29895,7 @@ export const UNITS: any[] = [
           100
         ],
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -29599,7 +29928,7 @@ export const UNITS: any[] = [
         "elements": [
           "ice"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -29628,7 +29957,7 @@ export const UNITS: any[] = [
         "elements": [
           "dark"
         ],
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 70
@@ -29690,7 +30019,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -29721,7 +30050,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -29752,7 +30081,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -29783,7 +30112,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -29955,7 +30284,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -30037,7 +30366,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -30092,7 +30421,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -30118,7 +30447,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -30424,7 +30753,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -30453,7 +30782,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -30541,7 +30870,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 79
@@ -30711,7 +31040,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 75
@@ -30870,7 +31199,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -30901,7 +31230,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -30932,7 +31261,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -30986,7 +31315,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 40
@@ -31106,7 +31435,7 @@ export const UNITS: any[] = [
         "castTime": 5,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 70
@@ -31441,7 +31770,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -31470,7 +31799,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -31499,7 +31828,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -31529,7 +31858,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -31959,10 +32288,37 @@ export const UNITS: any[] = [
         ],
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
+          }
+        ],
+        "framesList": [
+          17
+        ]
+      },
+      {
+        "id": 707812,
+        "names": {
+          "en": "Crush Stamp + 2",
+          "tw": "粉碎踩踏 + 2",
+          "kr": "크러쉬 스탬프 + 2",
+          "fr": "Pilon écrasant + 2",
+          "de": "Zerschmetternder Stampfer + 2",
+          "es": "Pisotón aplastante + 2"
+        },
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "ignore": 50,
+        "debuffs": [
+          {
+            "type": "fire",
+            "value": 110
           }
         ],
         "framesList": [
@@ -31989,6 +32345,26 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 707810,
+        "names": {
+          "en": "Critical Stamp + 2",
+          "tw": "致命踩踏 + 2",
+          "kr": "크리티컬 스탬프 + 2",
+          "fr": "Pilon critique + 2",
+          "de": "Kritischer Stampfer + 2",
+          "es": "Pisotón crítico + 2"
+        },
+        "base": 1875,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "framesList": [
+          2
+        ]
+      },
+      {
         "id": 508791,
         "names": {
           "en": "Full Burst Stamp",
@@ -32003,6 +32379,27 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
+        "ignore": 50,
+        "framesList": [
+          17
+        ]
+      },
+      {
+        "id": 912938,
+        "names": {
+          "en": "Full Burst Stamp + 2",
+          "tw": "全爆裂踩踏 + 2",
+          "kr": "풀 버스트 스탬프 + 2",
+          "fr": "Pilon éclatant absolu + 2",
+          "de": "Voller Doppelstampfer + 2",
+          "es": "Pisotón superexplosivo + 2"
+        },
+        "base": 950,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
         "ignore": 50,
         "framesList": [
           17
@@ -32047,7 +32444,10 @@ export const UNITS: any[] = [
           228969,
           228970,
           228971,
-          228972
+          228972,
+          707812,
+          707810,
+          912938
         ]
       }
     ]
@@ -32214,7 +32614,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -32243,7 +32643,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -32272,7 +32672,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -32301,7 +32701,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -32416,7 +32816,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -32446,7 +32846,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 89
@@ -32539,7 +32939,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 30
@@ -32597,7 +32997,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -32627,7 +33027,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -32750,7 +33150,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -32899,7 +33299,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 25,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 60
@@ -33067,7 +33467,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -33219,7 +33619,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 36,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -33268,7 +33668,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 36,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -33323,7 +33723,7 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -33349,7 +33749,7 @@ export const UNITS: any[] = [
           100
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 100
@@ -33381,6 +33781,26 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "id": 1508946,
+        "names": {
+          "en": "Spineshatter Dive 0+ +2",
+          "tw": "破碎衝零式·改 +2",
+          "kr": "개량형 척추 강타 0식 +2",
+          "fr": "Piqué brise-échine style 0 + +2",
+          "de": "Zerschmetternder Sturzflug 0+ +2",
+          "es": "Rompespaldas 0+ +2"
+        },
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
         "id": 508947,
         "names": {
           "en": "True Spineshatter Dive 0",
@@ -33391,6 +33811,26 @@ export const UNITS: any[] = [
           "es": "Rompespaldas 0 mortal"
         },
         "base": 1850,
+        "hitDamage": [
+          100
+        ],
+        "offset": 8,
+        "dualable": false,
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "id": 1508947,
+        "names": {
+          "en": "True Spineshatter Dive 0 +2",
+          "tw": "真破碎衝零式 +2",
+          "kr": "진 척추 강타 0식 +2",
+          "fr": "Piqué brise-échine style 0 absolu +2",
+          "de": "Wahrer Zerschmetternder Sturzflug 0+ +2",
+          "es": "Rompespaldas 0 mortal +2"
+        },
+        "base": 4000,
         "hitDamage": [
           100
         ],
@@ -33751,7 +34191,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -34085,7 +34525,7 @@ export const UNITS: any[] = [
           20, 20, 20, 20, 20
         ],
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -34410,7 +34850,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -35015,7 +35455,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -35219,7 +35659,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -35248,7 +35688,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -35498,7 +35938,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -35524,7 +35964,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -35550,7 +35990,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -35576,7 +36016,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -35602,7 +36042,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 50
@@ -35628,7 +36068,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 50
@@ -35654,7 +36094,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -35881,7 +36321,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 60
@@ -35912,7 +36352,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -35943,7 +36383,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -35974,7 +36414,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 60
@@ -36369,7 +36809,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 74
@@ -36653,7 +37093,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 75
@@ -36680,7 +37120,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -36899,7 +37339,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -37081,7 +37521,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -37209,7 +37649,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -37236,7 +37676,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 100
@@ -37295,9 +37735,45 @@ export const UNITS: any[] = [
       "fr": "Pâquerette",
       "de": "Ostera"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 24
+        },
+        "mag": {
+          "base": 96,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 159,
+          "pot": 34
+        },
+        "mag": {
+          "base": 124,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 65
+        },
+        "mag": {
+          "base": 161,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912164,
+        "dataId": 912164,
         "names": {
           "en": "Shock Flash",
           "tw": "震撼閃光",
@@ -37308,64 +37784,226 @@ export const UNITS: any[] = [
         },
         "base": 300,
         "hitDamage": [
-          14, 14, 14, 14, 14, 15, 15
+          14,
+          14,
+          14,
+          14,
+          14,
+          15,
+          15
         ],
         "castTime": 7,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          25, 10, 11, 10, 10, 10, 10
+          25,
+          10,
+          11,
+          10,
+          10,
+          10,
+          10
         ]
       },
       {
-        "id": 912169,
+        "dataId": 912166,
         "names": {
-          "en": "Shock Reflex",
-          "tw": "震撼反射",
-          "kr": "충격 반사",
-          "fr": "Réflexes éclair",
-          "de": "Schockreflex",
-          "es": "Reflejo electrizante"
+          "en": "Shatter Arms + 1",
+          "tw": "粉碎武裝 + 1",
+          "kr": "무기 분쇄 + 1",
+          "fr": "Fracasse-arme + 1",
+          "de": "Waffen zerschmettern + 1",
+          "es": "Quebrantabrazos + 1"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 50,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "dataId": 912167,
+        "names": {
+          "en": "Shatter Guard + 1",
+          "tw": "粉碎防禦 + 1",
+          "kr": "방어구 분쇄 + 1",
+          "fr": "Fracasse-garde + 1",
+          "de": "Schilde zerschmettern + 1",
+          "es": "Quebrantaguardia + 1"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "dataId": 912169,
+        "names": {
+          "en": "Shock Reflex + 1",
+          "tw": "震撼反射 + 1",
+          "kr": "충격 반사 + 1",
+          "fr": "Réflexes éclair + 1",
+          "de": "Schockreflex + 1",
+          "es": "Reflejo electrizante + 1"
         },
         "base": 240,
         "hitDamage": [
-          4, 4, 4, 4, 4.333333333333334, 6.333333333333334, 6.666666666666668, 8, 8, 8, 8, 8.666666666666668, 12.666666666666668, 13.333333333333336
+          4,
+          4,
+          4,
+          4,
+          4.333333333333334,
+          6.333333333333334,
+          6.666666666666668,
+          8,
+          8,
+          8,
+          8,
+          8.666666666666668,
+          12.666666666666668,
+          13.333333333333336
         ],
         "castTime": 54,
         "elements": [
           "lightning"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          35,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912173,
+        "dataId": 912171,
         "names": {
-          "en": "Storm Brand",
-          "tw": "風暴烙印",
-          "kr": "폭풍 검",
-          "fr": "Signe des tempêtes",
-          "de": "Sturmzeichen",
-          "es": "Marca de tormenta"
+          "en": "Charged Protection",
+          "tw": "充能守護",
+          "kr": "방어 충전",
+          "fr": "Charge protectrice",
+          "de": "Geladener Schutz",
+          "es": "Protección recargada"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912173,
+        "names": {
+          "en": "Storm Brand + 1",
+          "tw": "風暴烙印 + 1",
+          "kr": "폭풍 검 + 1",
+          "fr": "Signe des tempêtes + 1",
+          "de": "Sturmzeichen + 1",
+          "es": "Marca de tormenta + 1"
         },
         "base": 280,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "elements": [
           "lightning"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
         "ignore": 50,
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912192,
+        "dataId": 912192,
         "names": {
           "en": "Static Barrage",
           "tw": "靜電彈幕",
@@ -37374,65 +38012,230 @@ export const UNITS: any[] = [
           "de": "Statisches Sperrfeuer",
           "es": "Ráfaga estática"
         },
-        "base": 450,
+        "base": 300,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          16
         ],
         "castTime": 40,
         "offset": 14,
-        "framesList": [
-          70, 7, 5, 7, 7, 7, 7
-        ]
-      },
-      {
-        "id": 912176,
-        "names": {
-          "en": "Storm Calling",
-          "tw": "風暴呼喊",
-          "kr": "폭풍 호출",
-          "fr": "Appel des tempêtes",
-          "de": "Sturmrufen",
-          "es": "Llamada a la tormenta"
-        },
-        "base": 430,
-        "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+        "effectOrder": [
+          "damage",
+          "break"
         ],
-        "castTime": 40,
-        "offset": 14,
-        "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
-        ]
-      },
-      {
-        "id": 912180,
-        "names": {
-          "en": "Demagnetizing Strike",
-          "tw": "消磁衝擊",
-          "kr": "자기소거 타격",
-          "fr": "Frappe démagnétisante",
-          "de": "Entmagnetisierender Schlag",
-          "es": "Golpe desimantador"
-        },
-        "base": 350,
-        "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
-        ],
-        "castTime": 38,
-        "offset": 14,
-        "ignore": 50,
-        "debuffs": [
+        "breaks": [
           {
-            "type": "lightning",
-            "value": 75
+            "stat": "atk",
+            "value": 50,
+            "turn": 1
+          },
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 1
+          },
+          {
+            "stat": "mag",
+            "value": 50,
+            "turn": 1
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 1
           }
         ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          70,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7
         ]
       },
       {
-        "id": 912189,
+        "dataId": 912176,
+        "names": {
+          "en": "Storm Calling + 1",
+          "tw": "風暴呼喊 + 1",
+          "kr": "폭풍 호출 + 1",
+          "fr": "Appel des tempêtes + 1",
+          "de": "Sturmrufen + 1",
+          "es": "Llamada a la tormenta + 1"
+        },
+        "base": 430,
+        "hitDamage": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912180,
+        "names": {
+          "en": "Demagnetizing Strike + 1",
+          "tw": "消磁衝擊 + 1",
+          "kr": "자기소거 타격 + 1",
+          "fr": "Frappe démagnétisante + 1",
+          "de": "Entmagnetisierender Schlag + 1",
+          "es": "Golpe desimantador + 1"
+        },
+        "base": 350,
+        "hitDamage": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912184,
+        "names": {
+          "en": "Combat Overdrive + 1",
+          "tw": "戰鬥超載 + 1",
+          "kr": "전투 혹사 + 1",
+          "fr": "Surtension de combat + 1",
+          "de": "Kampfüberladung + 1",
+          "es": "Superdirecta bélica + 1"
+        },
+        "castTime": 55,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912173,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          },
+          {
+            "id": 912176,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          },
+          {
+            "id": 912180,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          },
+          {
+            "id": 912192,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 912184
+          }
+        ],
+        "framesList": [
+          20
+        ]
+      },
+      {
+        "dataId": 912187,
+        "names": {
+          "en": "Shock Embrace",
+          "tw": "震撼之擁",
+          "kr": "충격 수용",
+          "fr": "Vague électromagnétique",
+          "de": "Schockende Umarmung",
+          "es": "Abrazo electrizante"
+        },
+        "canDualSkill": false,
+        "castTime": 5,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 100,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912189,
         "names": {
           "en": "Storm Clouds",
           "tw": "風暴將至",
@@ -37443,55 +38246,91 @@ export const UNITS: any[] = [
         },
         "base": 1100,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
+        "canDualSkill": false,
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912176,
+            "value": 300,
+            "turn": 2,
+            "uniqueIdentifier": 912189
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912190,
+        "dataId": 912190,
         "names": {
-          "en": "Bolting Strike",
-          "tw": "雷電衝擊",
-          "kr": "번개같은 타격",
-          "fr": "Fulguro-frappe",
-          "de": "Flächenblitz",
-          "es": "Golpe relámpago"
+          "en": "Bolting Strike + 1",
+          "tw": "雷電衝擊 + 1",
+          "kr": "번개같은 타격 + 1",
+          "fr": "Fulguro-frappe + 1",
+          "de": "Flächenblitz + 1",
+          "es": "Golpe relámpago + 1"
         },
         "base": 400,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
-        "ignore": 50,
-        "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
-        ]
-      },
-      {
-        "id": 401006807,
-        "names": {
-          "en": "Raikiri",
-          "tw": "雷切",
-          "kr": "라이키리"
-        },
-        "base": 1390,
-        "hitDamage": [
-          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+        "effectOrder": [
+          "damage",
+          "break"
         ],
-        "dualable": false,
-        "offset": 8,
         "ignore": 50,
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 5
+          }
+        ],
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 950000007,
+        "dataId": 950000007,
         "names": {
           "en": "Absolute Raikiri + 1",
           "tw": "神·雷切 + 1",
@@ -37500,26 +38339,253 @@ export const UNITS: any[] = [
           "de": "Ultimativer Raikiri + 1",
           "es": "Raikiri fulminante + 1"
         },
-        "base": 1590,
+        "base": 1400,
         "hitDamage": [
-          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 9, 9, 10
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          9,
+          9,
+          10
         ],
         "dualable": false,
-        "offset": 8,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "ignore": 50,
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "dataId": 912197,
+        "names": {
+          "en": "Absolute Tempest Shift + 1",
+          "tw": "極致風暴轉換 + 1",
+          "kr": "순폭풍의 움직임 + 1",
+          "fr": "Conversion tempétueuse absolue + 1",
+          "de": "Absoluter Sturmwechsel + 1",
+          "es": "Supercambio tempestuoso + 1"
+        },
+        "base": 1500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      {
+        "dataId": 401006807,
+        "names": {
+          "en": "Raikiri",
+          "tw": "雷切",
+          "kr": "라이키리"
+        },
+        "base": 1400,
+        "hitDamage": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          9,
+          9,
+          10
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ]
+      },
+      {
+        "dataId": 912196,
+        "names": {
+          "en": "Tempest Shift",
+          "tw": "風暴轉換",
+          "kr": "폭풍의 움직임",
+          "fr": "Conversion tempétueuse",
+          "de": "Sturmwechsel",
+          "es": "Cambio tempestuoso"
+        },
+        "base": 1500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          10
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": [
+          100,
+          100
+        ],
+        "magic": [
+          0
+        ],
+        "rarity": 5
+      },
+      {
+        "physic": [
+          50,
+          50
+        ],
+        "magic": [
+          0
+        ],
+        "rarity": 7
       }
     ],
     "multiCasts": [
       {
         "count": 3,
         "abilities": [
+          912166,
+          912167,
           912169,
           912173,
           912176,
           912180,
+          912184,
+          912186,
+          912188,
           912190,
           912189
         ]
@@ -37533,9 +38599,173 @@ export const UNITS: any[] = [
       "tw": "西路比",
       "kr": "실비"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 61,
+          "pot": 16
+        },
+        "mag": {
+          "base": 92,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 79,
+          "pot": 26
+        },
+        "mag": {
+          "base": 119,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 102,
+          "pot": 40
+        },
+        "mag": {
+          "base": 154,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912309,
+        "dataId": 912270,
+        "names": {
+          "en": "Withering Arms",
+          "tw": "凋零武裝",
+          "kr": "공격 쇠락",
+          "fr": "Panne de courant",
+          "de": "Rostende Waffen",
+          "es": "Machacabrazos"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912272,
+        "names": {
+          "en": "Withering Guard",
+          "tw": "凋零防禦",
+          "kr": "수비 쇠락",
+          "fr": "Baisse de tension",
+          "de": "Rostende Schilde",
+          "es": "Machacaguardia"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912276,
+        "names": {
+          "en": "Growing Offense",
+          "tw": "攻魔增長",
+          "kr": "공격진 성장",
+          "fr": "Croissance offensive",
+          "de": "Wachsende Offensive",
+          "es": "Superofensiva"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 120,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912277,
+        "names": {
+          "en": "Growing Defense",
+          "tw": "防精增長",
+          "kr": "방어진 성장",
+          "fr": "Défense offensive",
+          "de": "Wachsende Defensive",
+          "es": "Superdefensiva"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 120,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912309,
         "names": {
           "en": "Bunny Kick",
           "tw": "兔子踢",
@@ -37546,17 +38776,36 @@ export const UNITS: any[] = [
         },
         "base": 370,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 25,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912310,
+        "dataId": 912310,
         "names": {
           "en": "Mystical Egg",
           "tw": "神秘彩蛋",
@@ -37568,18 +38817,37 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 420,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 25,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912311,
+        "dataId": 912311,
         "names": {
           "en": "Cotton Tail",
           "tw": "棉絨尾巴",
@@ -37590,16 +38858,33 @@ export const UNITS: any[] = [
         },
         "base": 450,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912312,
+        "dataId": 912312,
         "names": {
           "en": "Enchanted Egg",
           "tw": "附魔彩蛋",
@@ -37611,13 +38896,287 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 500,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912281,
+        "names": {
+          "en": "Bolt Egg",
+          "tw": "雷電彩蛋",
+          "kr": "번개의 달걀",
+          "fr": "Œuf foudroyant",
+          "de": "Blitzei",
+          "es": "Huelámpago"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912282,
+        "names": {
+          "en": "Gravel Egg",
+          "tw": "砂礫彩蛋",
+          "kr": "자갈 달걀",
+          "fr": "Œuf sismique",
+          "de": "Schotterei",
+          "es": "Hueviterra"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "earth",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912284,
+        "names": {
+          "en": "Glitter Egg",
+          "tw": "閃爍彩蛋",
+          "kr": "반짝이는 달걀",
+          "fr": "Œuf étincelant",
+          "de": "Glitterei",
+          "es": "Huevrillo"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912295,
+        "names": {
+          "en": "All pinned up!",
+          "tw": "濃妝艷抹",
+          "kr": "치장하기",
+          "fr": "Coquille de diamant",
+          "de": "Schön angezogen",
+          "es": "Arreglarse es de guapas"
+        },
+        "base": 0,
+        "hitDamage": [],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 20,
+            "turn": 20
+          },
+          {
+            "stat": "def",
+            "value": 20,
+            "turn": 20
+          },
+          {
+            "stat": "mag",
+            "value": 20,
+            "turn": 20
+          },
+          {
+            "stat": "spr",
+            "value": 20,
+            "turn": 20
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912301,
+        "names": {
+          "en": "Hop into battle!",
+          "tw": "跳跳征戰！",
+          "kr": "싸움꾼 토끼 친구!",
+          "fr": "Un saut en combat !",
+          "de": "In den Kampf gehüpft!",
+          "es": "¡Brincando a la batalla!"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912303,
+        "names": {
+          "en": "Hop to the rescue!",
+          "tw": "跳跳救援！",
+          "kr": "도우미 토끼 친구!",
+          "fr": "Un saut en défense !",
+          "de": "Zur Rettung gehüpft!",
+          "es": "¡Brincando al rescate!"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912305,
+        "names": {
+          "en": "Marian, watch over me!",
+          "tw": "瑪麗安，請看好吧！",
+          "kr": "지켜봐줘, 마리안!",
+          "fr": "Marianne, protège-moi !",
+          "de": "Marian, pass auf mich auf!",
+          "es": "¡Marián, vela por mí!"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 170,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
         ]
       }
     ],
@@ -37629,6 +39188,36 @@ export const UNITS: any[] = [
           912310,
           912311,
           912312
+        ]
+      },
+
+      {
+        "count": 3,
+        "abilities": [
+          912269,
+          912270,
+          912272,
+          912273,
+          912274,
+          912275,
+          912276,
+          912277,
+          912278,
+          912279,
+          912281,
+          912282,
+          912284,
+          912285,
+          912286,
+          912287,
+          912288,
+          912290,
+          912291,
+          912292,
+          912300,
+          912302,
+          912304,
+          912306
         ]
       }
     ]
@@ -37790,7 +39379,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 60
@@ -37835,7 +39424,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 8,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -37953,7 +39542,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -37982,7 +39571,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -38011,7 +39600,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -38040,7 +39629,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -38526,7 +40115,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -38684,7 +40273,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 60
@@ -38794,7 +40383,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 30
@@ -38849,7 +40438,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 75
@@ -38880,7 +40469,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -39088,7 +40677,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 8,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -39248,7 +40837,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 50
@@ -39668,7 +41257,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -39731,13 +41320,76 @@ export const UNITS: any[] = [
       "de": "Beta-Stern-Zeno",
       "es": "Zeno de la estrella Beta"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 24
+        },
+        "mag": {
+          "base": 96,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 159,
+          "pot": 34
+        },
+        "mag": {
+          "base": 126,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 65
+        },
+        "mag": {
+          "base": 164,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912337,
+        "dataId": 912336,
+        "names": {
+          "en": "Cold Blood - Flint",
+          "tw": "殘忍 ─石火─",
+          "kr": "무참-석화-",
+          "fr": "Sang froid - Silex",
+          "de": "Kaltblütig - Funke",
+          "es": "Sangre fría - Sílex"
+        },
+        "castTime": 25,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 75,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "dataId": 200330,
         "names": {
           "en": "Fingersnap",
           "tw": "醒夢",
-          "kr": "성몽",
+          "kr": "백일몽",
           "fr": "Éveil",
           "de": "Fieberwahn",
           "es": "Agudeza"
@@ -39748,12 +41400,35 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           70
         ]
       },
       {
-        "id": 912340,
+        "dataId": 912338,
+        "names": {
+          "en": "Dual Slash",
+          "tw": "二連斬",
+          "kr": "이연참",
+          "fr": "Double entaille",
+          "de": "Doppelschnitt",
+          "es": "Sablazo doble"
+        },
+        "base": 320,
+        "hitDamage": [],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912340,
         "names": {
           "en": "Mirror of Equity - Acuity",
           "tw": "明鏡・銳",
@@ -39764,16 +41439,72 @@ export const UNITS: any[] = [
         },
         "base": 300,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912351,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912353,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912354,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912370,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          },
+          {
+            "id": 912371,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1113
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912341,
+        "dataId": 912341,
         "names": {
           "en": "Scorch",
           "tw": "陽炎",
@@ -39784,25 +41515,44 @@ export const UNITS: any[] = [
         },
         "base": 450,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
           {
             "type": "fire",
-            "value": 100
+            "value": 100,
+            "turn": 5
           }
         ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912346,
+        "dataId": 912346,
         "names": {
           "en": "Dismissal",
           "tw": "斷動",
@@ -39817,12 +41567,15 @@ export const UNITS: any[] = [
         ],
         "castTime": 15,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           1
         ]
       },
       {
-        "id": 912347,
+        "dataId": 912347,
         "names": {
           "en": "Blazing Heat - Ash",
           "tw": "炎熱 ─灰─",
@@ -39833,19 +41586,42 @@ export const UNITS: any[] = [
         },
         "base": 320,
         "hitDamage": [
-          14, 14, 14, 14, 14, 14, 16
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          16
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          70, 7, 5, 7, 7, 7, 7
+          70,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7,
+          10
         ]
       },
       {
-        "id": 20290,
+        "dataId": 20290,
         "names": {
           "en": "Firaja",
           "tw": "強火焰",
@@ -39866,12 +41642,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           210
         ]
       },
       {
-        "id": 912349,
+        "dataId": 912349,
         "names": {
           "en": "Imminent Death",
           "tw": "死亡迫近",
@@ -39886,12 +41665,15 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           70
         ]
       },
       {
-        "id": 912350,
+        "dataId": 912350,
         "names": {
           "en": "Firaga Slash",
           "tw": "大火焰劍",
@@ -39902,20 +41684,45 @@ export const UNITS: any[] = [
         },
         "base": 300,
         "hitDamage": [
-          4.666666666666667, 4.666666666666667, 4.666666666666667, 4.666666666666667, 4.666666666666667, 5.000000000000001, 5.000000000000001, 66.66666666666667
+          4.666666666666667,
+          4.666666666666667,
+          4.666666666666667,
+          4.666666666666667,
+          4.666666666666667,
+          5.000000000000001,
+          5.000000000000001,
+          66.66666666666667
         ],
         "castTime": 40,
         "elements": [
           "fire"
         ],
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imbue"
+        ],
         "ignore": 50,
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912351,
+        "dataId": 912351,
         "names": {
           "en": "Mirror of Equity - Disorder",
           "tw": "明鏡・亂",
@@ -39926,16 +41733,72 @@ export const UNITS: any[] = [
         },
         "base": 280,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912351,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912353,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912354,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912370,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          },
+          {
+            "id": 912371,
+            "value": 25,
+            "turn": 5,
+            "uniqueIdentifier": 1114
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912353,
+        "dataId": 912353,
         "names": {
           "en": "Mirror of Equity - Supremacy",
           "tw": "明鏡・霸",
@@ -39946,17 +41809,42 @@ export const UNITS: any[] = [
         },
         "base": 230,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 30
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
         "ignore": 50,
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 5
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912354,
+        "dataId": 912354,
         "names": {
           "en": "Absolute Mirror of Equity",
           "tw": "極・明鏡",
@@ -39967,17 +41855,35 @@ export const UNITS: any[] = [
         },
         "base": 650,
         "hitDamage": [
-          1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.0769230769230769, 1.153846153846154, 1.153846153846154, 92.3076923076923
+          1.0769230769230769,
+          1.0769230769230769,
+          1.0769230769230769,
+          1.0769230769230769,
+          1.0769230769230769,
+          1.153846153846154,
+          1.153846153846154,
+          92.3076923076923
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912357,
+        "dataId": 912357,
         "names": {
           "en": "Kaleido Slash",
           "tw": "三十虹連斬",
@@ -39988,16 +41894,77 @@ export const UNITS: any[] = [
         },
         "base": 400,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ]
       },
       {
-        "id": 912358,
+        "dataId": 912358,
         "names": {
           "en": "Crimson Flash",
           "tw": "紅閃",
@@ -40008,17 +41975,135 @@ export const UNITS: any[] = [
         },
         "base": 400,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912370,
+        "dataId": 912361,
+        "names": {
+          "en": "Seeing Red",
+          "tw": "赤甲能量",
+          "kr": "적갑능량",
+          "fr": "Vision rougeâtre",
+          "de": "Rotsehen",
+          "es": "Visión carmesí"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "dataId": 912367,
+        "names": {
+          "en": "Perfect Void",
+          "tw": "完全虛無境地",
+          "kr": "완전한 무의 경지",
+          "fr": "Néant impérieux",
+          "de": "Perfekte Leere",
+          "es": "Vacío perfecto"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 10
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912351,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912353,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912354,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912370,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          },
+          {
+            "id": 912371,
+            "value": 100,
+            "turn": 10,
+            "uniqueIdentifier": 1115
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "dataId": 912370,
         "names": {
           "en": "True Mirror of Equity",
           "tw": "真・明鏡",
@@ -40029,17 +42114,75 @@ export const UNITS: any[] = [
         },
         "base": 650,
         "hitDamage": [
-          3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.230769230769231, 3.4615384615384612, 3.4615384615384612, 76.92307692307692
+          3.230769230769231,
+          3.230769230769231,
+          3.230769230769231,
+          3.230769230769231,
+          3.230769230769231,
+          3.4615384615384612,
+          3.4615384615384612,
+          76.92307692307692
         ],
+        "canDualSkill": false,
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "boostModifier"
+        ],
         "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 912340,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912351,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912353,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912354,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912370,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          },
+          {
+            "id": 912371,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1116
+          }
+        ],
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912371,
+        "dataId": 912371,
         "names": {
           "en": "Obliterating Mirror of Equity's Roar",
           "tw": "絕·明鏡 ─咆哮─",
@@ -40050,17 +42193,35 @@ export const UNITS: any[] = [
         },
         "base": 1000,
         "hitDamage": [
-          1.4, 1.4, 1.4, 1.4, 1.4, 1.5, 1.5, 90
+          1.4,
+          1.4,
+          1.4,
+          1.4,
+          1.4,
+          1.5,
+          1.5,
+          90
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6
+          70,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 401007607,
+        "dataId": 401007607,
         "names": {
           "en": "Subjection to Equity - Crimson",
           "tw": "必殺劍·紅",
@@ -40071,13 +42232,64 @@ export const UNITS: any[] = [
         },
         "base": 1490,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 61
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          61
         ],
         "dualable": false,
-        "offset": 8,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier",
+          "boostModifier"
+        ],
         "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 912354,
+            "value": 300,
+            "turn": 4,
+            "uniqueIdentifier": 1117
+          },
+          {
+            "id": 912371,
+            "value": 300,
+            "turn": 4,
+            "uniqueIdentifier": 1117
+          },
+          {
+            "id": 912370,
+            "value": 150,
+            "turn": 4,
+            "uniqueIdentifier": 1118
+          }
+        ],
         "framesList": [
-          92, 17, 6, 6, 16, 6, 16, 6, 6, 16, 6, 16, 6, 20
+          92,
+          17,
+          6,
+          6,
+          16,
+          6,
+          16,
+          6,
+          6,
+          16,
+          6,
+          16,
+          6,
+          20
         ]
       }
     ],
@@ -40085,6 +42297,7 @@ export const UNITS: any[] = [
       {
         "count": 3,
         "abilities": [
+          912336,
           912340,
           912341,
           912346,
@@ -40096,6 +42309,8 @@ export const UNITS: any[] = [
           912354,
           912357,
           912358,
+          912366,
+          912369,
           912371,
           912370
         ]
@@ -40241,7 +42456,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 75
@@ -40270,7 +42485,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 100
@@ -40459,7 +42674,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -40489,7 +42704,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 100
@@ -40516,7 +42731,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -41002,7 +43217,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 50
@@ -41113,7 +43328,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 75
@@ -41140,7 +43355,7 @@ export const UNITS: any[] = [
         "castTime": 10,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -41648,7 +43863,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 100
@@ -41940,7 +44155,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -41972,7 +44187,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 50
@@ -42003,7 +44218,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 85
@@ -42307,7 +44522,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 30
@@ -42485,7 +44700,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -42517,7 +44732,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 50
@@ -42549,7 +44764,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 50
@@ -42581,7 +44796,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 50
@@ -42778,7 +44993,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 100
@@ -43009,7 +45224,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -43152,7 +45367,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 100
@@ -43367,7 +45582,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 40
@@ -43419,7 +45634,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 28,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 30
@@ -43480,7 +45695,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 40
@@ -43511,7 +45726,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 40
@@ -43542,7 +45757,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 30
@@ -43578,7 +45793,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 75
@@ -43665,7 +45880,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 40
@@ -43694,7 +45909,7 @@ export const UNITS: any[] = [
           "earth"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 40
@@ -43795,7 +46010,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 40
@@ -43824,7 +46039,7 @@ export const UNITS: any[] = [
           "water"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "water",
             "value": 40
@@ -43853,7 +46068,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 40
@@ -43882,7 +46097,7 @@ export const UNITS: any[] = [
           "wind"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 40
@@ -43935,7 +46150,7 @@ export const UNITS: any[] = [
           "light"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 40
@@ -43964,7 +46179,7 @@ export const UNITS: any[] = [
           "dark"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 40
@@ -44352,7 +46567,7 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 75
@@ -44862,7 +47077,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 50
@@ -44986,7 +47201,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 60
@@ -45012,7 +47227,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 39,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -45079,7 +47294,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 80
@@ -45106,7 +47321,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 39,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 80
@@ -45253,7 +47468,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 60
@@ -45282,7 +47497,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 60
@@ -45311,7 +47526,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 60
@@ -45400,7 +47615,7 @@ export const UNITS: any[] = [
           "fire"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -45429,7 +47644,7 @@ export const UNITS: any[] = [
           "ice"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 80
@@ -45458,7 +47673,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 80
@@ -45736,7 +47951,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 80
@@ -45823,7 +48038,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "ice",
             "value": 65
@@ -45854,7 +48069,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "wind",
             "value": 65
@@ -45886,7 +48101,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "light",
             "value": 65
@@ -45917,7 +48132,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "dark",
             "value": 65
@@ -46194,9 +48409,113 @@ export const UNITS: any[] = [
       "tw": "艾琳娜",
       "kr": "엘레나"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 122,
+          "pot": 20
+        },
+        "mag": {
+          "base": 122,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 158,
+          "pot": 30
+        },
+        "mag": {
+          "base": 158,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 205,
+          "pot": 50
+        },
+        "mag": {
+          "base": 205,
+          "pot": 50
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912569,
+        "dataId": 912593,
+        "names": {
+          "en": "Unrivaled Swordsmanship",
+          "tw": "無敵劍技",
+          "kr": "무적 검기",
+          "fr": "Épéiste incomparable",
+          "de": "Unübertroffene Schwertkunst",
+          "es": "Esgrima inigualable"
+        },
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 20,
+            "turn": 0
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912591,
+        "names": {
+          "en": "Battle Insight",
+          "tw": "戰鬥洞察力",
+          "kr": "싸움의 통찰력",
+          "fr": "Instinct de guerre",
+          "de": "Kampferkenntnis",
+          "es": "Instinto guerrero"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 55,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "dataId": 912569,
         "names": {
           "en": "Blade of Crystal",
           "tw": "水晶之刃",
@@ -46208,16 +48527,35 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 1200,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912592,
+        "dataId": 912592,
         "names": {
           "en": "Purifying Slash",
           "tw": "淨化斬擊",
@@ -46233,12 +48571,83 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           20
         ]
       },
       {
-        "id": 912571,
+        "dataId": 912573,
+        "names": {
+          "en": "Aquatic Enervation",
+          "tw": "水屬性弱體",
+          "kr": "물속성 약체화",
+          "fr": "Exaltation aquatique",
+          "de": "Wasserschwächung",
+          "es": "Prisión acuosa"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "water",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912574,
+        "names": {
+          "en": "Electrifying Enervation",
+          "tw": "雷屬性弱體",
+          "kr": "번개속성 약체화",
+          "fr": "Exaltation électrisante",
+          "de": "Elektroschwächung",
+          "es": "Prisión electrizante"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "lightning",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912571,
         "names": {
           "en": "Blade of the Dawn",
           "tw": "拂曉之刃",
@@ -46250,114 +48659,182 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 800,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+          42,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
         ]
       },
       {
-        "id": 912572,
+        "dataId": 912568,
         "names": {
-          "en": "Blade of the Heavens",
-          "tw": "天風之刃",
-          "kr": "천풍의 칼날",
-          "fr": "Lame des cieux",
-          "de": "Klinge der Himmelswinde",
-          "es": "Hoja de los cielos"
+          "en": "Aurora Arts",
+          "tw": "極光劍技",
+          "kr": "극광 검기",
+          "fr": "Arts de l'aurore",
+          "de": "Aurorakunst",
+          "es": "Arte albo"
         },
-        "damage": "hybrid",
-        "base": 1500,
-        "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
-        ],
-        "castTime": 40,
+        "castTime": 10,
+        "dualable": false,
         "offset": 14,
-        "framesList": [
-          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
-        ]
-      },
-      {
-        "id": 912570,
-        "names": {
-          "en": "Aurora Tempest",
-          "tw": "極光之嵐",
-          "kr": "극광의 폭풍",
-          "fr": "Ouragan de l'Aurore",
-          "de": "Aurorasturm",
-          "es": "Albor tempestuoso"
-        },
-        "damage": "hybrid",
-        "base": 1800,
-        "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        "effectOrder": [
+          "buff",
+          "boostModifier"
         ],
-        "castTime": 40,
-        "elements": [
-          "ice",
-          "light"
-        ],
-        "offset": 14,
-        "debuffs": [
+        "buffs": [
           {
-            "type": "ice",
-            "value": 50
+            "stat": "atk",
+            "value": 150,
+            "turn": 10
           },
           {
-            "type": "light",
-            "value": 50
+            "stat": "mag",
+            "value": 150,
+            "turn": 10
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912571,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912572,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912570,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
           }
         ],
         "framesList": [
-          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          0
         ]
       },
       {
-        "id": 912593,
+        "dataId": 912567,
         "names": {
-          "en": "Aurora - Valor",
-          "tw": "極光 - 勇氣",
-          "kr": "극광·용기",
-          "fr": "Aurore - Valeur",
-          "de": "Aurora - Tapferkeit",
-          "es": "Aurora - Valor"
+          "en": "Blossom Arts",
+          "tw": "冰華劍技",
+          "kr": "빙화 검기",
+          "fr": "Arts florissants",
+          "de": "Blütenkunst",
+          "es": "Arte floral"
         },
-        "damage": "hybrid",
-        "base": 1000,
-        "hitDamage": [
-          100
-        ],
         "castTime": 10,
+        "dualable": false,
         "offset": 14,
-        "framesList": [
-          50
-        ]
-      },,
-      {
-        "id": 912594,
-        "names": {
-          "en": "Aurora - Radiant Might",
-          "tw": "極光 - 燦爛之力",
-          "kr": "극광·빛나는 힘",
-          "fr": "Aurore - Puissance étincelante",
-          "de": "Aurora - Strahlende Macht",
-          "es": "Aurora - Poder cegador"
-        },
-        "damage": "hybrid",
-        "base": 1000,
-        "hitDamage": [
-          100
+        "effectOrder": [
+          "boostModifier"
         ],
-        "castTime": 40,
-        "offset": 14,
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912571,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912572,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          },
+          {
+            "id": 912570,
+            "value": 400,
+            "turn": 9999,
+            "uniqueIdentifier": 912567
+          }
+        ],
         "framesList": [
-          80
+          0
         ]
-      },,
+      },
       {
-        "id": 912595,
+        "dataId": 912577,
         "names": {
           "en": "Blossom - Vigilance",
           "tw": "冰華 - 防衛",
@@ -46373,12 +48850,24 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912578,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912577
+          }
+        ],
         "framesList": [
           50
         ]
-      },,
+      },
       {
-        "id": 912596,
+        "dataId": 912578,
         "names": {
           "en": "Blossom - Frost Hedge",
           "tw": "冰華 - 防冰壁",
@@ -46394,12 +48883,507 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912572,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912571,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912570,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912577,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          },
+          {
+            "id": 912578,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912578
+          }
+        ],
         "framesList": [
-          20
+          50
         ]
-      },,
+      },
       {
-        "id": 401008407,
+        "dataId": 912580,
+        "names": {
+          "en": "Aurora - Valor",
+          "tw": "極光 - 勇氣",
+          "kr": "극광·용기",
+          "fr": "Aurore - Valeur",
+          "de": "Aurora - Tapferkeit"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 135,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 135,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912581,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912580
+          }
+        ],
+        "framesList": [
+          50
+        ]
+      },
+      {
+        "dataId": 912581,
+        "names": {
+          "en": "Aurora - Radiant Might",
+          "tw": "極光 - 燦爛之力",
+          "kr": "극광·빛나는 힘",
+          "fr": "Aurore - Puissance étincelante",
+          "de": "Aurora - Strahlende Macht",
+          "es": "Aurora - Poder cegador"
+        },
+        "damage": "hybrid",
+        "base": 1000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912572,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912571,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912570,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912580,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          },
+          {
+            "id": 912581,
+            "value": 600,
+            "turn": 2,
+            "uniqueIdentifier": 912581
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "dataId": 912572,
+        "names": {
+          "en": "Blade of the Heavens",
+          "tw": "天風之刃",
+          "kr": "천풍의 칼날",
+          "fr": "Lame des cieux",
+          "de": "Klinge der Himmelswinde",
+          "es": "Hoja de los cielos"
+        },
+        "damage": "hybrid",
+        "base": 1500,
+        "hitDamage": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "dataId": 912575,
+        "names": {
+          "en": "Freezing Enervation",
+          "tw": "冰屬性弱體",
+          "kr": "얼음속성 약체화",
+          "fr": "Exaltation givrante",
+          "de": "Frostschwächung",
+          "es": "Prisión congelante"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912576,
+        "names": {
+          "en": "Luminous Enervation",
+          "tw": "光屬性弱體",
+          "kr": "빛속성 약체화",
+          "fr": "Exaltation lumineuse",
+          "de": "Leuchtschwächung",
+          "es": "Prisión luminosa"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 50,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912570,
+        "names": {
+          "en": "Aurora Tempest",
+          "tw": "極光之嵐",
+          "kr": "극광의 폭풍",
+          "fr": "Ouragan de l'Aurore",
+          "de": "Aurorasturm",
+          "es": "Albor tempestuoso"
+        },
+        "damage": "hybrid",
+        "base": 1800,
+        "hitDamage": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice",
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 50,
+            "turn": 3
+          },
+          {
+            "type": "light",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "dataId": 912584,
+        "names": {
+          "en": "Way of the Blossom",
+          "tw": "冰華之道",
+          "kr": "빙화의 길",
+          "fr": "Voie de la floraison",
+          "de": "Pfad der Blüte",
+          "es": "El camino de la floración"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912577,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912578,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912586,
+        "names": {
+          "en": "Way of the Aurora",
+          "tw": "極光之道",
+          "kr": "극광의 길",
+          "fr": "Voie de l'aurore",
+          "de": "Pfad der Aurora",
+          "es": "El camino de la aurora"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "buff",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912580,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          },
+          {
+            "id": 912581,
+            "value": 800,
+            "turn": 4,
+            "uniqueIdentifier": 912584
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912588,
+        "names": {
+          "en": "Celestial Guidance",
+          "tw": "天空指引",
+          "kr": "천상의 길잡이",
+          "fr": "Autorité céleste",
+          "de": "Himmlische Unterweisung",
+          "es": "Guía celeste"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "boostModifier",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 75,
+            "turn": 3
+          },
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912570,
+            "value": 600,
+            "turn": 3,
+            "uniqueIdentifier": 912587
+          },
+          {
+            "id": 911665,
+            "value": 900,
+            "turn": 3,
+            "uniqueIdentifier": 912588
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 401008407,
         "names": {
           "en": "Light of Salvation",
           "tw": "救贖之光",
@@ -46411,12 +49395,148 @@ export const UNITS: any[] = [
         "damage": "hybrid",
         "base": 4500,
         "hitDamage": [
-          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 13
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          13
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff",
+          "boostModifier",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912569,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912577,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912578,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912580,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912581,
+            "value": 1800,
+            "turn": 3,
+            "uniqueIdentifier": 401008405
+          },
+          {
+            "id": 912571,
+            "value": 1000,
+            "turn": 3,
+            "uniqueIdentifier": 401008406
+          },
+          {
+            "id": 912572,
+            "value": 1000,
+            "turn": 3,
+            "uniqueIdentifier": 401008406
+          },
+          {
+            "id": 912570,
+            "value": 1000,
+            "turn": 3,
+            "uniqueIdentifier": 401008406
+          }
+        ],
         "framesList": [
-          28, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          28,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       }
     ],
@@ -46424,26 +49544,110 @@ export const UNITS: any[] = [
       {
         "count": 2,
         "abilities": [
-          912569,
           912592,
+          912573,
+          912574,
+          912575,
+          912576,
+          912569,
           912571,
           912572,
           912570,
-          912593,
-          912594,
-          912595,
-          912596
+          912567,
+          912568,
+          912591,
+          912589,
+          912590,
+          912583,
+          912585,
+          912587,
+          912577,
+          912578,
+          912579,
+          912580,
+          912581,
+          912582,
+          912584,
+          912586,
+          912588
         ]
       },
       {
         "count": 3,
         "abilities": [
-          912569,
           912592,
+          912573,
+          912574,
+          912575,
+          912576,
+          912569,
           912571,
           912572,
-          912570
+          912570,
+          912567,
+          912568
         ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 912569,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912571,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912570,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912572,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912592,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912577,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912578,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912580,
+        "value": 800,
+        "rarity": 7
+      },
+      {
+        "id": 912581,
+        "value": 800,
+        "rarity": 7
+      }
+    ],
+    "passiveKillers": [
+      {
+        "race": "demon",
+        "physic": 50,
+        "magic": 50,
+        "rarity": 6
+      },
+      {
+        "race": "human",
+        "physic": 50,
+        "magic": 50,
+        "rarity": 6
       }
     ]
   },
@@ -46771,7 +49975,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "earth",
             "value": 75
@@ -46857,7 +50061,7 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "fire",
             "value": 100
@@ -47189,7 +50393,7 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 75
@@ -47259,7 +50463,7 @@ export const UNITS: any[] = [
           "lightning"
         ],
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 80
@@ -47285,7 +50489,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 120
@@ -47311,7 +50515,7 @@ export const UNITS: any[] = [
         ],
         "castTime": 10,
         "offset": 14,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 100
@@ -47378,7 +50582,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "ignore": 50,
-        "debuffs": [
+        "imperils": [
           {
             "type": "lightning",
             "value": 120
@@ -47416,15 +50620,51 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "id": 274,
+    "dataId": 274,
     "names": {
       "en": "Tsukiko",
       "tw": "月子",
       "kr": "츠키코"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 81,
+          "pot": 16
+        },
+        "mag": {
+          "base": 129,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 105,
+          "pot": 26
+        },
+        "mag": {
+          "base": 167,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 136,
+          "pot": 40
+        },
+        "mag": {
+          "base": 219,
+          "pot": 65
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 20290,
+        "dataId": 20290,
         "names": {
           "en": "Firaja",
           "tw": "強火焰",
@@ -47445,12 +50685,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           210
         ]
       },
       {
-        "id": 20320,
+        "dataId": 20320,
         "names": {
           "en": "Waterja",
           "tw": "強流水",
@@ -47471,12 +50714,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           190
         ]
       },
       {
-        "id": 10170,
+        "dataId": 10170,
         "names": {
           "en": "Banishga",
           "tw": "強放逐",
@@ -47497,34 +50743,15 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           65
         ]
       },
       {
-        "id": 912744,
-        "names": {
-          "en": "Spirit Fire - Fox's Might",
-          "tw": "魂炎 - 稻荷奮迅",
-          "kr": "혼염·여우 분신",
-          "fr": "Feu spirituel - Puissance du renard",
-          "de": "Geisterfeuer - Fuchsgrimm",
-          "es": "Fuego espiritual - Fuerza vulpina"
-        },
-        "damage": "magic",
-        "base": 700,
-        "hitDamage": [
-          100
-        ],
-        "castTime": 10,
-        "dualable": false,
-        "offset": 14,
-        "framesList": [
-          60
-        ]
-      },
-      {
-        "id": 912743,
+        "dataId": 912743,
         "names": {
           "en": "Spirit Fire - Fox's Might+",
           "tw": "魂炎 - 稻荷奮迅 弐",
@@ -47541,19 +50768,30 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912747,
+        "dataId": 912744,
         "names": {
-          "en": "Spirit Fire - Fox's Desire",
-          "tw": "魂炎 - 稻荷所望",
-          "kr": "혼염·여우 소망",
-          "fr": "Feu spirituel - Désir du renard",
-          "de": "Geisterfeuer - Fuchswunsch",
-          "es": "Fuego espiritual - Deseo vulpino"
+          "en": "Spirit Fire - Fox's Might",
+          "tw": "魂炎 - 稻荷奮迅",
+          "kr": "혼염·여우 분신",
+          "fr": "Feu spirituel - Puissance du renard",
+          "de": "Geisterfeuer - Fuchsgrimm",
+          "es": "Fuego espiritual - Fuerza vulpina"
         },
         "damage": "magic",
         "base": 700,
@@ -47563,12 +50801,23 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 60,
+            "turn": 3
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912746,
+        "dataId": 912746,
         "names": {
           "en": "Spirit Fire - Fox's Desire+",
           "tw": "魂炎 - 稻荷所望 弐",
@@ -47585,19 +50834,30 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912751,
+        "dataId": 912747,
         "names": {
-          "en": "Spirit Fire - Mandala",
-          "tw": "魂炎 - 四門",
-          "kr": "혼염·사문",
-          "fr": "Feu spirituel - Mandala",
-          "de": "Geisterfeuer - Mandala",
-          "es": "Fuego espiritual - Mandala"
+          "en": "Spirit Fire - Fox's Desire",
+          "tw": "魂炎 - 稻荷所望",
+          "kr": "혼염·여우 소망",
+          "fr": "Feu spirituel - Désir du renard",
+          "de": "Geisterfeuer - Fuchswunsch",
+          "es": "Fuego espiritual - Deseo vulpino"
         },
         "damage": "magic",
         "base": 700,
@@ -47607,18 +50867,15 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
           {
-            "type": "fire",
-            "value": 75
-          },
-          {
-            "type": "water",
-            "value": 75
-          },
-          {
-            "type": "light",
-            "value": 75
+            "stat": "mag",
+            "value": 60,
+            "turn": 3
           }
         ],
         "framesList": [
@@ -47626,7 +50883,44 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912750,
+        "dataId": 912778,
+        "names": {
+          "en": "Divine Retribution",
+          "tw": "天之報復",
+          "kr": "하늘의 복수",
+          "fr": "Rétribution divine",
+          "de": "Himmlische Vergeltung",
+          "es": "Represalia divina"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "type": "water",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "type": "light",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912750,
         "names": {
           "en": "Spirit Fire - Mandala+",
           "tw": "魂炎 - 四門 弐",
@@ -47643,18 +50937,25 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
           {
             "type": "fire",
-            "value": 100
+            "value": 100,
+            "turn": 5
           },
           {
             "type": "water",
-            "value": 100
+            "value": 100,
+            "turn": 5
           },
           {
             "type": "light",
-            "value": 100
+            "value": 100,
+            "turn": 5
           }
         ],
         "framesList": [
@@ -47662,14 +50963,14 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "id": 912756,
+        "dataId": 912751,
         "names": {
-          "en": "Spirit Fire - Fox's Wrath",
-          "tw": "魂炎 - 稻荷的憤怒",
-          "kr": "혼염·여우의 분노",
-          "fr": "Feu spirituel - Colère du renard",
-          "de": "Geisterfeuer - Fuchszorn",
-          "es": "Fuego espiritual - Ira vulpina"
+          "en": "Spirit Fire - Mandala",
+          "tw": "魂炎 - 四門",
+          "kr": "혼염·사문",
+          "fr": "Feu spirituel - Mandala",
+          "de": "Geisterfeuer - Mandala",
+          "es": "Fuego espiritual - Mandala"
         },
         "damage": "magic",
         "base": 700,
@@ -47679,12 +50980,33 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 75,
+            "turn": 5
+          },
+          {
+            "type": "water",
+            "value": 75,
+            "turn": 5
+          },
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 5
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912755,
+        "dataId": 912755,
         "names": {
           "en": "Spirit Fire - Fox's Wrath+",
           "tw": "魂炎 - 稻荷的憤怒 弐",
@@ -47701,19 +51023,30 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912759,
+        "dataId": 912756,
         "names": {
-          "en": "Spirit Fire - Fox's Fury",
-          "tw": "魂炎 - 狂怒",
-          "kr": "혼염·격분",
-          "fr": "Feu spirituel - Fureur du renard",
-          "de": "Geisterfeuer - Fuchsrage",
-          "es": "Fuego espiritual - Furia vulpina"
+          "en": "Spirit Fire - Fox's Wrath",
+          "tw": "魂炎 - 稻荷的憤怒",
+          "kr": "혼염·여우의 분노",
+          "fr": "Feu spirituel - Colère du renard",
+          "de": "Geisterfeuer - Fuchszorn",
+          "es": "Fuego espiritual - Ira vulpina"
         },
         "damage": "magic",
         "base": 700,
@@ -47723,12 +51056,23 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912758,
+        "dataId": 912758,
         "names": {
           "en": "Spirit Fire - Fox's Fury+",
           "tw": "魂炎 - 狂怒 弐",
@@ -47745,12 +51089,56 @@ export const UNITS: any[] = [
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 75,
+            "turn": 3
+          }
+        ],
         "framesList": [
           50
         ]
       },
       {
-        "id": 912763,
+        "dataId": 912759,
+        "names": {
+          "en": "Spirit Fire - Fox's Fury",
+          "tw": "魂炎 - 狂怒",
+          "kr": "혼염·격분",
+          "fr": "Feu spirituel - Fureur du renard",
+          "de": "Geisterfeuer - Fuchsrage",
+          "es": "Fuego espiritual - Furia vulpina"
+        },
+        "damage": "magic",
+        "base": 700,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "dataId": 912763,
         "names": {
           "en": "Spirit Fire - Fox Flame",
           "tw": "魂炎 - 狐火",
@@ -47762,7 +51150,11 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          20, 20, 20, 20, 20
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "castTime": 50,
         "elements": [
@@ -47770,12 +51162,19 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          52, 20, 20, 20, 20
+          52,
+          20,
+          20,
+          20,
+          20
         ]
       },
       {
-        "id": 912764,
+        "dataId": 912764,
         "names": {
           "en": "Spirit Fire - Fox Orb",
           "tw": "魂炎 - 狐珠",
@@ -47787,7 +51186,17 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "elements": [
@@ -47795,12 +51204,25 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912765,
+        "dataId": 912765,
         "names": {
           "en": "Spirit Fire - Fox Torrent",
           "tw": "魂炎 - 狐流",
@@ -47812,7 +51234,15 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "elements": [
@@ -47820,12 +51250,23 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912769,
+        "dataId": 912769,
         "names": {
           "en": "Spirit Fire - Purging Pyre",
           "tw": "魂炎 - 肅清之薪",
@@ -47837,7 +51278,11 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 650,
         "hitDamage": [
-          20, 20, 20, 20, 20
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "castTime": 50,
         "elements": [
@@ -47845,18 +51290,35 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "imperil",
+          "damage",
+          "break"
+        ],
+        "imperils": [
           {
             "type": "fire",
-            "value": 100
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 5
           }
         ],
         "framesList": [
-          52, 20, 20, 20, 20
+          52,
+          20,
+          20,
+          20,
+          20
         ]
       },
       {
-        "id": 912770,
+        "dataId": 912770,
         "names": {
           "en": "Spirit Fire - Fervent Prayer",
           "tw": "魂炎 - 強烈願望",
@@ -47868,7 +51330,17 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 650,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "elements": [
@@ -47876,18 +51348,41 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "imperil",
+          "damage",
+          "break"
+        ],
+        "imperils": [
           {
             "type": "light",
-            "value": 100
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 5
           }
         ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912771,
+        "dataId": 912771,
         "names": {
           "en": "Spirit Fire - Purifying Water",
           "tw": "魂炎 - 淨水",
@@ -47899,7 +51394,15 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 650,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "elements": [
@@ -47907,18 +51410,87 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "imperil",
+          "damage",
+          "break"
+        ],
+        "imperils": [
           {
             "type": "water",
-            "value": 100
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 65,
+            "turn": 5
           }
         ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912738,
+        "dataId": 912773,
+        "names": {
+          "en": "Spirit Fire - Exorcism",
+          "tw": "魂炎 - 退魔",
+          "kr": "혼염·퇴마",
+          "fr": "Feu spirituel - Exorcisme",
+          "de": "Geisterfeuer - Exorzismus",
+          "es": "Fuego espiritual - Exorcismo"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "killer"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 5
+          }
+        ],
+        "killers": [
+          {
+            "race": "demon",
+            "physic": 0,
+            "magic": 75,
+            "turn": 5
+          },
+          {
+            "race": "undead",
+            "physic": 0,
+            "magic": 75,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912738,
         "names": {
           "en": "Spirit Fire - Fox Claw",
           "tw": "魂炎 - 狐爪",
@@ -47930,17 +51502,440 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912793,
+        "dataId": 912785,
+        "names": {
+          "en": "Vixen's Fire - First Tail",
+          "tw": "狐火 - 一尾",
+          "kr": "여우불·일미",
+          "fr": "Renard de feu - Première queue",
+          "de": "Fähenfeuer - Erster Schweif",
+          "es": "Fuego vulpino - Primera cola"
+        },
+        "damage": "magic",
+        "base": 1100,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 220,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912786,
+        "names": {
+          "en": "Vixen's Fire - Second Tail",
+          "tw": "狐火 - 二尾",
+          "kr": "여우불·이미",
+          "fr": "Renard de feu - Deuxième queue",
+          "de": "Fähenfeuer - Zweiter Schweif",
+          "es": "Fuego vulpino - Segunda cola"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 230,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912787,
+        "names": {
+          "en": "Vixen's Fire - Third Tail",
+          "tw": "狐火 - 三尾",
+          "kr": "여우불·삼미",
+          "fr": "Renard de feu - Troisième queue",
+          "de": "Fähenfeuer - Dritter Schweif",
+          "es": "Fuego vulpino - Tercera cola"
+        },
+        "damage": "magic",
+        "base": 1300,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 240,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912788,
+        "names": {
+          "en": "Vixen's Fire - Fourth Tail",
+          "tw": "狐火 - 四尾",
+          "kr": "여우불·사미",
+          "fr": "Renard de feu - Quatrième queue",
+          "de": "Fähenfeuer - Vierter Schweif",
+          "es": "Fuego vulpino - Cuarta cola"
+        },
+        "damage": "magic",
+        "base": 1400,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912789,
+        "names": {
+          "en": "Vixen's Fire - Fifth Tail",
+          "tw": "狐火 - 五尾",
+          "kr": "여우불·오미",
+          "fr": "Renard de feu - Cinquième queue",
+          "de": "Fähenfeuer - Fünfter Schweif",
+          "es": "Fuego vulpino - Quinta cola"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 260,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912790,
+        "names": {
+          "en": "Vixen's Fire - Sixth Tail",
+          "tw": "狐火 - 六尾",
+          "kr": "여우불·육미",
+          "fr": "Renard de feu - Sixième queue",
+          "de": "Fähenfeuer - Sechster Schweif",
+          "es": "Fuego vulpino - Sexta cola"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 270,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912791,
+        "names": {
+          "en": "Vixen's Fire - Seventh Tail",
+          "tw": "狐火 - 七尾",
+          "kr": "여우불·칠미",
+          "fr": "Renard de feu - Septième queue",
+          "de": "Fähenfeuer - Siebter Schweif",
+          "es": "Fuego vulpino - Séptima cola"
+        },
+        "damage": "magic",
+        "base": 1700,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 280,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912792,
+        "names": {
+          "en": "Vixen's Fire - Eighth Tail",
+          "tw": "狐火 - 八尾",
+          "kr": "여우불·팔미",
+          "fr": "Renard de feu - Huitième queue",
+          "de": "Fähenfeuer - Achter Schweif",
+          "es": "Fuego vulpino - Octava cola"
+        },
+        "damage": "magic",
+        "base": 1800,
+        "hitDamage": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 290,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "dataId": 912793,
         "names": {
           "en": "Vixen's Fire - Ninth Tail",
           "tw": "狐火 - 九尾",
@@ -47952,18 +51947,45 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 2000,
         "hitDamage": [
-          1, 1, 1, 1, 1, 1, 1, 1, 92
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          92
         ],
         "castTime": 10,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 300,
+            "turn": 3
+          }
+        ],
         "ignore": 50,
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 401007107,
+        "dataId": 401007107,
         "names": {
           "en": "Houki Poki",
           "tw": "不疼不疼",
@@ -47975,7 +51997,17 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1800,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "elements": [
           "water",
@@ -47983,15 +52015,38 @@ export const UNITS: any[] = [
         ],
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          166, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          166,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       }
     ],
     "multipleBlack": 2,
     "multipleWhite": 2,
     "multipleGreen": 2,
+    "passiveKillers": [
+      {
+        "physic": 0,
+        "magic": [
+          25,
+          25
+        ],
+        "rarity": 6
+      }
+    ],
     "multiCasts": [
       {
         "count": 4,
@@ -48022,15 +52077,83 @@ export const UNITS: any[] = [
     ]
   },
   {
-    "id": 275,
+    "dataId": 275,
     "names": {
       "en": "Kaito",
       "tw": "海斗",
       "kr": "카이토"
     },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 127,
+          "pot": 24
+        },
+        "mag": {
+          "base": 83,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 165,
+          "pot": 34
+        },
+        "mag": {
+          "base": 109,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 214,
+          "pot": 65
+        },
+        "mag": {
+          "base": 142,
+          "pot": 40
+        }
+      }
+    },
     "abilities": [
       {
-        "id": 912801,
+        "dataId": 912800,
+        "names": {
+          "en": "Sounds of the Ocean",
+          "tw": "漣之聲",
+          "kr": "잔물결 소리",
+          "fr": "Sons de l'océan",
+          "de": "Ozeanklänge",
+          "es": "Sonidos del océano"
+        },
+        "castTime": 70,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912801,
         "names": {
           "en": "Low Tide",
           "tw": "退汐",
@@ -48045,12 +52168,44 @@ export const UNITS: any[] = [
         ],
         "castTime": 15,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           45
         ]
       },
       {
-        "id": 912803,
+        "dataId": 912802,
+        "names": {
+          "en": "Salty Breeze",
+          "tw": "汐風",
+          "kr": "바닷바람",
+          "fr": "Brise salée",
+          "de": "Salzige Brise",
+          "es": "Brisa salada"
+        },
+        "base": 0,
+        "hitDamage": [],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 25,
+            "turn": 25
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912803,
         "names": {
           "en": "Paralyzing Sediment",
           "tw": "麻痺底泥",
@@ -48065,12 +52220,23 @@ export const UNITS: any[] = [
         ],
         "castTime": 34,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 100,
+            "turn": 3
+          }
+        ],
         "framesList": [
           60
         ]
       },
       {
-        "id": 912804,
+        "dataId": 912804,
         "names": {
           "en": "Sea Sweeper",
           "tw": "海塵一掃",
@@ -48081,16 +52247,39 @@ export const UNITS: any[] = [
         },
         "base": 150,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912807,
+        "dataId": 912807,
         "names": {
           "en": "Liquid Infusion",
           "tw": "液體注入",
@@ -48101,16 +52290,42 @@ export const UNITS: any[] = [
         },
         "base": 200,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          44
         ],
         "castTime": 38,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 5
+          }
+        ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          42,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
         ]
       },
       {
-        "id": 912810,
+        "dataId": 912810,
         "names": {
           "en": "Neap Tide",
           "tw": "下弦之汐",
@@ -48125,12 +52340,15 @@ export const UNITS: any[] = [
         ],
         "castTime": 24,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "framesList": [
           30
         ]
       },
       {
-        "id": 912812,
+        "dataId": 912812,
         "names": {
           "en": "High Tide",
           "tw": "漲汐",
@@ -48145,13 +52363,16 @@ export const UNITS: any[] = [
         ],
         "castTime": 49,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
           30
         ]
       },
       {
-        "id": 912811,
+        "dataId": 912811,
         "names": {
           "en": "Rip Tide",
           "tw": "汐衝",
@@ -48166,13 +52387,45 @@ export const UNITS: any[] = [
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
           30
         ]
       },
       {
-        "id": 912818,
+        "dataId": 912817,
+        "names": {
+          "en": "Below the Surface",
+          "tw": "水面下的鬥志",
+          "kr": "물밑의 투지",
+          "fr": "Sous la surface",
+          "de": "Unter der Wasseroberfläche",
+          "es": "Bajo la superficie"
+        },
+        "base": 0,
+        "hitDamage": [],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 25,
+            "turn": 0
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 912818,
         "names": {
           "en": "Deep Submersion",
           "tw": "深水之底",
@@ -48183,17 +52436,38 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ],
         "castTime": 40,
         "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
         "ignore": 50,
         "framesList": [
-          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+          110,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
         ]
       },
       {
-        "id": 912823,
+        "dataId": 912823,
         "names": {
           "en": "Flooded Village",
           "tw": "水沒",
@@ -48204,16 +52478,48 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "human",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912824,
+        "dataId": 912824,
         "names": {
           "en": "Inundated Garden",
           "tw": "浸水",
@@ -48224,16 +52530,48 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912825,
+        "dataId": 912825,
         "names": {
           "en": "Sinking Nest",
           "tw": "沉沒",
@@ -48244,16 +52582,48 @@ export const UNITS: any[] = [
         },
         "base": 250,
         "hitDamage": [
-          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11
         ],
         "castTime": 39,
         "offset": 14,
+        "effectOrder": [
+          "damage",
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "demon",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
         "framesList": [
-          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+          40,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
         ]
       },
       {
-        "id": 912829,
+        "dataId": 912829,
         "names": {
           "en": "Devastating Tsunami",
           "tw": "破壞性海嘯",
@@ -48266,16 +52636,29 @@ export const UNITS: any[] = [
         "hitDamage": [
           100
         ],
+        "canDualSkill": false,
         "castTime": 15,
         "dualable": false,
         "offset": 14,
+        "effectOrder": [
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 5
+          }
+        ],
         "ignore": 50,
         "framesList": [
-          70
+          70,
+          50
         ]
       },
       {
-        "id": 401008507,
+        "dataId": 401008507,
         "names": {
           "en": "The Great Wave",
           "tw": "大型海嘯",
@@ -48286,23 +52669,66 @@ export const UNITS: any[] = [
         },
         "base": 800,
         "hitDamage": [
-          20, 20, 20, 20, 20
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "elements": [
           "water"
         ],
         "dualable": false,
         "offset": 14,
-        "debuffs": [
+        "effectOrder": [
+          "break",
+          "imperil",
+          "damage"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 5
+          }
+        ],
+        "imperils": [
           {
             "type": "water",
-            "value": 100
+            "value": 100,
+            "turn": 5
           }
         ],
         "ignore": 50,
         "framesList": [
-          93, 4, 2, 2, 2
+          93,
+          4,
+          2,
+          2,
+          2
         ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": 25,
+        "magic": 0,
+        "rarity": 5
+      },
+      {
+        "physic": 50,
+        "magic": 0,
+        "rarity": 6
+      },
+      {
+        "physic": 25,
+        "magic": 0,
+        "rarity": 7
       }
     ],
     "multiCasts": [
@@ -49341,6 +53767,620 @@ export const UNITS: any[] = [
           509788,
           509789,
           509796
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 912811,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912812,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912813,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912814,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 912801,
+        "value": 300,
+        "rarity": 7
+      },
+      {
+        "id": 912810,
+        "value": 300,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "names": {
+      "en": "Atlie",
+      "tw": "艾特莉",
+      "kr": "아틀리"
+    },
+    "abilities": [
+      {
+        "id": 230720,
+        "names": {
+          "en": "Whirl Around",
+          "tw": "旋轉劍擊",
+          "kr": "회오리치기",
+          "fr": "Tournoiement",
+          "de": "Umherwirbeln",
+          "es": "Remolino"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "offset": 14,
+        "framesList": [
+          36
+        ]
+      },
+      {
+        "id": 230723,
+        "names": {
+          "en": "Sword Impact",
+          "tw": "劍之衝擊",
+          "kr": "소드 임팩트",
+          "fr": "Impact d'épée",
+          "de": "Schwertaufschlag",
+          "es": "Impacto de acero"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "offset": 14,
+        "framesList": [
+          36
+        ]
+      },
+      {
+        "id": 20120,
+        "names": {
+          "en": "Aerora",
+          "tw": "中勁風",
+          "kr": "에어로라",
+          "fr": "Vent +",
+          "es": "Aero+"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "id": 230721,
+        "names": {
+          "en": "Wind Apprentice",
+          "tw": "新生之風",
+          "kr": "바람의 견습생",
+          "fr": "Apprentie du vent",
+          "de": "Windlehrling",
+          "es": "Aprendiz del viento"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 14,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          36
+        ]
+      },
+      {
+        "id": 230725,
+        "names": {
+          "en": "Leafy Wind",
+          "tw": "風葉",
+          "kr": "무성한 바람",
+          "fr": "Vent sylvestre",
+          "de": "Laub im Wind",
+          "es": "Viento arbolado"
+        },
+        "base": 120,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 34,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          39
+        ]
+      },
+      {
+        "id": 230722,
+        "names": {
+          "en": "Wind Prison",
+          "tw": "風之牢獄",
+          "kr": "바람의 감옥",
+          "fr": "Prison de vent",
+          "de": "Windgefängnis",
+          "es": "Prisión de viento"
+        },
+        "base": 420,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 100023406,
+        "names": {
+          "en": "Aggressive Wind",
+          "tw": "攻擊颶風",
+          "kr": "호투의 바람",
+          "fr": "Vent agressif",
+          "de": "Aggressiver Wind",
+          "es": "Viento agresivo"
+        },
+        "base": 840,
+        "hitDamage": [
+          7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ],
+        "dualable": false,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 74
+          }
+        ],
+        "framesList": [
+          66, 11, 26, 10, 29, 10, 18, 5, 45, 5, 5, 5, 5
+        ]
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "names": {
+      "en": "Tessen",
+      "tw": "哲泉",
+      "kr": "테센"
+    },
+    "abilities": [
+      {
+        "id": 230731,
+        "names": {
+          "en": "Hunting the Hunted",
+          "tw": "獅子搏兔",
+          "kr": "사자박토",
+          "fr": "Chasse-proie",
+          "de": "Kanonenjagd auf Spatzen",
+          "es": "Cazapresas"
+        },
+        "base": 120,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 25,
+        "offset": 14,
+        "framesList": [
+          27, 23
+        ]
+      },
+      {
+        "id": 230732,
+        "names": {
+          "en": "Breaking the Broken",
+          "tw": "粉骨碎心",
+          "kr": "분골쇄심",
+          "fr": "Brise-rompu",
+          "de": "Äußerste Anstrengung",
+          "es": "Rompedestrozos"
+        },
+        "base": 120,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 25,
+        "offset": 14,
+        "framesList": [
+          27, 23
+        ]
+      },
+      {
+        "id": 230730,
+        "names": {
+          "en": "Vehement Blow",
+          "tw": "剛瞬烈打",
+          "kr": "강순열타",
+          "fr": "Choc furieux",
+          "de": "Vehementer Schlag",
+          "es": "Golpe violento"
+        },
+        "base": 320,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 20,
+        "offset": 14,
+        "framesList": [
+          22, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 20
+        ]
+      },
+      {
+        "id": 100023505,
+        "names": {
+          "en": "Heaven's Vengeance",
+          "tw": "天網恢恢",
+          "kr": "천망회회",
+          "fr": "Vengeance céleste",
+          "de": "Rache des Himmels",
+          "es": "Venganza celestial"
+        },
+        "base": 395,
+        "hitDamage": [
+          20, 20, 60
+        ],
+        "dualable": false,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          60, 23, 59
+        ]
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "names": {
+      "en": "Warrior of Light Bartz",
+      "tw": "光之戰士巴茲",
+      "kr": "빛의 전사 버츠",
+      "fr": "Bartz, Guerrier de la Lumière",
+      "de": "Krieger des Lichts Bartz",
+      "es": "Guerrero de la Luz Bartz"
+    },
+    "abilities": [
+      {
+        "id": 230661,
+        "names": {
+          "en": "Geomancer: Wind Slash",
+          "tw": "風水士：鎌鼬",
+          "kr": "풍수사: 칼날 돌풍",
+          "fr": "Géomancien : Rafale cinglante",
+          "de": "Geomant: Windschwert",
+          "es": "Geomante: Ventolera"
+        },
+        "base": 360,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          47, 20
+        ]
+      },
+      {
+        "id": 230665,
+        "names": {
+          "en": "Mystic Knight: Hurricane Tomahawk",
+          "tw": "魔法劍士：颶風斧",
+          "kr": "마법검사: 허리케인 토마호크",
+          "fr": "Chevalier mage : Ouragan-Tomahawk",
+          "de": "Paladin: Orkan-Tomahawk",
+          "es": "Señor místico: Tomahawk huracán"
+        },
+        "base": 450,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 230666,
+        "names": {
+          "en": "Gladiator: Bladeblitz",
+          "tw": "劍鬥士：全斬",
+          "kr": "검투사: 전방위 베기",
+          "fr": "Gladiateur : Combos",
+          "de": "Gladiator: Klingenblitz",
+          "es": "Gladiador: Relámpago de acero"
+        },
+        "base": 850,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "id": 230664,
+        "names": {
+          "en": "Dancer: Sword Dance",
+          "tw": "舞者：劍之舞",
+          "kr": "무용수: 칼춤",
+          "fr": "Danseur : Danse du sabre",
+          "de": "Tänzer: Schwerttanz",
+          "es": "Bailarín: Danza de la espada"
+        },
+        "base": 550,
+        "hitDamage": [
+          2.5454545454545454, 2.5454545454545454, 2.5454545454545454, 2.5454545454545454, 2.5454545454545454, 2.7272727272727275, 2.7272727272727275, 81.81818181818181
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "debuffs": [
+          {
+            "type": "wind",
+            "value": 120
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509623,
+        "names": {
+          "en": "Dual Spellblade",
+          "tw": "魔法劍二刀流",
+          "kr": "마법검 이도류",
+          "fr": "Magilame ambidextre",
+          "de": "Doppel-Klingenmagier",
+          "es": "Hoja embrujada doble"
+        },
+        "base": 750,
+        "hitDamage": [
+          1.866666666666667, 1.866666666666667, 1.866666666666667, 1.866666666666667, 1.866666666666667, 2, 2, 86.66666666666669
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 509624,
+        "names": {
+          "en": "Brave Blade (FFV)",
+          "tw": "勇者利劍(FFV)",
+          "kr": "브레이브 블레이드(FFV)",
+          "fr": "Lame des braves (FFV)",
+          "de": "Mutklinge (FFV)",
+          "es": "Hoja valiente (FFV)"
+        },
+        "base": 575,
+        "hitDamage": [
+          1.0869565217391304, 1.0869565217391304, 1.0869565217391304, 1.0869565217391304, 2.608695652173913, 2.608695652173913, 3.4782608695652173, 86.95652173913044
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "id": 205001107,
+        "names": {
+          "en": "Blades of Legend",
+          "tw": "全部的傳說之劍",
+          "kr": "모든 전설의 검",
+          "fr": "Lames de légende",
+          "de": "Die Zwölf Sagenklingen",
+          "es": "Espadas legendarias"
+        },
+        "base": 2170,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          172
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230660,
+          230661,
+          230662,
+          230663,
+          230664,
+          230665,
+          230666,
+          230667,
+          800027
+        ]
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "names": {
+      "en": "Warrior of Light Lenna",
+      "tw": "光之戰士蕾娜",
+      "kr": "빛의 전사 레나",
+      "fr": "Lenna, Guerrière de la Lumière",
+      "de": "Kriegerin des Lichts Lenna",
+      "es": "Guerrera de la Luz Lenna"
+    },
+    "abilities": [
+      {
+        "id": 10170,
+        "names": {
+          "en": "Banishga",
+          "tw": "強放逐",
+          "kr": "배니시가",
+          "fr": "Bannissement X",
+          "de": "Exkommunikation",
+          "es": "Tenue++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          65
+        ]
+      },
+      {
+        "id": 10210,
+        "names": {
+          "en": "Holy",
+          "tw": "神聖",
+          "kr": "홀리",
+          "fr": "Sidéral",
+          "de": "Sanctus",
+          "es": "Sanctus"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "framesList": [
+          450
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230690,
+          230691,
+          230692,
+          230693,
+          230695,
+          230696,
+          230697,
+          230698,
+          230701,
+          230703,
+          800029
+        ]
+      }
+    ],
+    "multipleWhite": 3,
+    "multipleBlack": 3,
+    "multipleGreen": 3
+  },
+  {
+    "id": 285,
+    "names": {
+      "en": "Kokuryu"
+    },
+    "abilities": [
+      {
+        "id": 11901,
+        "names": {
+          "en": "Supreme Dragon Torrent (1)",
+          "tw": "尊龍奔流 (1)",
+          "kr": "위대한 용의 격류 (1)",
+          "fr": "Torrent du dragon suprême (1)",
+          "de": "Höchster Drachenstrom (1)",
+          "es": "Torrente del dragón supremo (1)"
+        },
+        "castTime": 10,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "base": 28000,
+        "offset": 14,
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "id": 11902,
+        "names": {
+          "en": "Supreme Dragon Torrent (2)",
+          "tw": "尊龍奔流 (2)",
+          "kr": "위대한 용의 격류 (2)",
+          "fr": "Torrent du dragon suprême (2)",
+          "de": "Höchster Drachenstrom (2)",
+          "es": "Torrente del dragón supremo (2)"
+        },
+        "castTime": 10,
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "base": 38000,
+        "offset": 14,
+        "framesList": [
+          80
         ]
       }
     ]
