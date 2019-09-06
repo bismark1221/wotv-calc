@@ -36,6 +36,9 @@ export class Ability {
   lbDamage?: number = 0;
   jumpDamage?: number = 0;
   canDualSkill?: boolean = true;
+  jump?;
+  delayAttack?;
+  dot?;
 
   constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
@@ -81,6 +84,18 @@ export class Ability {
       this.framesList.forEach(hit => {
         this.hitDamage.push(100 / this.framesList.length);
       });
+    }
+
+    if (ability.jump) {
+      this.jump = ability.jump;
+    }
+
+    if (ability.delayAttack) {
+      this.delayAttack = ability.delayAttack;
+    }
+
+    if (ability.dot) {
+      this.dot = ability.dot;
     }
   }
 

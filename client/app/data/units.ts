@@ -3470,7 +3470,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           7, 7, 7, 7, 7, 7, 7, 7, 44
         ],
-        "castTime": 40,
+        "castTime": 38,
         "offset": 14,
         "framesList": [
           42, 6, 6, 6, 6, 6, 6, 6, 6
@@ -7231,7 +7231,7 @@ export const UNITS: any[] = [
         "hitDamage": [
           5, 5, 5, 7, 7, 8, 9, 9, 10, 35
         ],
-        "castTime": 39,
+        "castTime": 41,
         "dualable": false,
         "offset": 14,
         "ignore": 50,
@@ -22869,7 +22869,7 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "framesList": [
-          70, 6, 6, 6, 6, 6, 6, 6, 14, 6, 6, 6, 6, 6, 6, 6
+          70, 6, 6, 6, 6, 6, 6, 6, 12, 6, 6, 6, 6, 6, 6, 6
         ]
       }
     ],

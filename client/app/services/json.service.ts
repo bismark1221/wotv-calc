@@ -413,9 +413,17 @@ export class JsonService {
             }
           }
 
-          damageEffects.push(find);
+          if (dataId == "912891") {
+            console.log(find)
+            console.log(find.type !== "jump" && find.type !== "delayAttack" && find.type !== "dot")
+          }
+
+          if (find.type !== "jump" && find.type !== "delayAttack" && find.type !== "dot") {
+            damageEffects.push(find);
+          }
         };
-        this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "damage";
+
+        this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = find.type ? find.type : "damage";
       }
 
       this.unlockSkill(effect, unitId, rarity, level);
@@ -591,11 +599,50 @@ export class JsonService {
       return find;
     }
 
-    find = this.findEffect(rawEffect, [134]);
+    find = this.findEffect(rawEffect, [134]); // Timed jump
     if (find) {
-      find.damage = find.effect[4];
-      this.ffbeChainUnits[unitId].abilities[id].dualable = false;
-      this.ffbeChainUnits[unitId].abilities[id].damage = "physic";
+      this.ffbeChainUnits[unitId].abilities[id].jump = {
+        type: 'timed',
+        round: find.effect[3],
+        base: find.effect[4],
+        damageType: "physic"
+      };
+      find.type = "jump";
+      return find;
+    }
+
+    find = this.findEffect(rawEffect, [52]); // auto jump
+    if (find) {
+      this.ffbeChainUnits[unitId].abilities[id].jump = {
+        type: 'auto',
+        round: find.effect[3],
+        base: find.effect[4],
+        damageType: "physic"
+      };
+      find.type = "jump";
+      return find;
+    }
+
+    find = this.findEffect(rawEffect, [13]); // delay attack
+    if (find) {
+      this.ffbeChainUnits[unitId].abilities[id].delayAttack = {
+        type: 'auto',
+        round: find.effect[3],
+        base: find.effect[5],
+        damageType: "physic"
+      };
+      find.type = "delayAttack";
+      return find;
+    }
+
+    find = this.findEffect(rawEffect, [13]); // DoT
+    if (find) {
+      this.ffbeChainUnits[unitId].abilities[id].dot = {
+        rounds: find.effect[4],
+        base: find.effect[2],
+        damageType: "physic"
+      };
+      find.type = "dot";
       return find;
     }
 
@@ -1252,6 +1299,9 @@ export class JsonService {
           && !this.ffbeChainUnits[i].abilities[j].imbues
           && !this.ffbeChainUnits[i].abilities[j].boostModifiers
           && !this.ffbeChainUnits[i].abilities[j].killers
+          && !this.ffbeChainUnits[i].abilities[j].jump
+          && !this.ffbeChainUnits[i].abilities[j].delayAttack
+          && !this.ffbeChainUnits[i].abilities[j].dot
         ) {
           this.ffbeChainUnits[i].abilities.splice(j, 1);
         } else  {
