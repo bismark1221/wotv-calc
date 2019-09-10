@@ -201,34 +201,36 @@ export class DamageService {
         let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
         let alreadyKiller = false;
 
-        ability.effectOrder.forEach(effect => {
-          switch (effect) {
-            case "damage":
-              this.manageDamage(ability, round, abilityIndex, roundIndex, abilitiesBeforeDualWield);
-              break;
-            case "break":
-              this.addBreaks(ability, abilityIndex, roundIndex);
-              break;
-            case "buff":
-              this.addBuffs(ability, abilityIndex, roundIndex);
-              break;
-            case "imbue":
-              this.addImbues(ability, abilityIndex, roundIndex);
-              break;
-            case "imperil":
-              this.addImperils(ability, abilityIndex, roundIndex);
-              break;
-            case "boostModifier":
-              this.addModifierBoosts(ability, abilityIndex, roundIndex);
-              break;
-            case "killer":
-              if (!alreadyKiller) {
-                this.addKillers(ability, abilityIndex, roundIndex);
-                alreadyKiller = true;
-              }
-              break;
-          }
-        });
+        if (ability) {
+          ability.effectOrder.forEach(effect => {
+            switch (effect) {
+              case "damage":
+                this.manageDamage(ability, round, abilityIndex, roundIndex, abilitiesBeforeDualWield);
+                break;
+              case "break":
+                this.addBreaks(ability, abilityIndex, roundIndex);
+                break;
+              case "buff":
+                this.addBuffs(ability, abilityIndex, roundIndex);
+                break;
+              case "imbue":
+                this.addImbues(ability, abilityIndex, roundIndex);
+                break;
+              case "imperil":
+                this.addImperils(ability, abilityIndex, roundIndex);
+                break;
+              case "boostModifier":
+                this.addModifierBoosts(ability, abilityIndex, roundIndex);
+                break;
+              case "killer":
+                if (!alreadyKiller) {
+                  this.addKillers(ability, abilityIndex, roundIndex);
+                  alreadyKiller = true;
+                }
+                break;
+            }
+          });
+        }
       });
 
       this.finalizeRound();

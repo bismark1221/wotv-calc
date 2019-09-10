@@ -448,20 +448,44 @@ export class DamageComponent implements OnInit {
     return find;
   }
 
-  addRound() {
-    console.log("===== ADD ROUNDS =====")
-
-    this.rounds.push({
+  addRound(roundIndex = -1, land = false) {
+    let round = {
       availableAbilities: [],
       selectedAbilities: [],
-      castNumber: [0]
-    });
+      castNumber: [0],
+      land: land
+    };
+
+    if (roundIndex > -1 && roundIndex <= this.rounds.length - 1) {
+      this.rounds.splice(roundIndex, 0, round);
+    } else {
+      this.rounds.push(round);
+    }
 
     this.calculateTotalDamage();
   }
 
   getAvailableAbilities(roundIndex: number, abilityPosition: number) {
-    if (this.rounds[roundIndex].selectedAbilities.length === 0 || abilityPosition === 0) {
+    if (this.rounds[roundIndex].land) {
+      let lastJump = this.getLastJump(roundIndex);
+      let landAbility = {
+        id: 0,
+        names: lastJump.names,
+        name: null
+      };
+
+      let flyOrLand = "fly";
+      if (!this.rounds[roundIndex + 1] || !this.rounds[roundIndex + 1].land) {
+        flyOrLand = "land"
+      }
+
+      landAbility.name = flyOrLand + " - " + lastJump.name;
+      Object.keys(landAbility.names).forEach(lang => {
+        landAbility.names[lang] = flyOrLand + " - " + landAbility.names[lang];
+      });
+
+      return [landAbility];
+    } else if (this.rounds[roundIndex].selectedAbilities.length === 0 || abilityPosition === 0) {
       return this.unit.abilities;
     } else {
       this.updateMultipleSkill(roundIndex);
@@ -478,6 +502,23 @@ export class DamageComponent implements OnInit {
 
       return abilities;
     }
+  }
+
+  private getLastJump(roundIndex: number) {
+    let jump = null;
+    let i = 1;
+
+    while (jump == null && roundIndex - i >= 0) {
+      this.rounds[roundIndex - i].selectedAbilities.forEach(abilityId => {
+        let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
+        if (ability && ability.jump) {
+          jump = ability;
+        }
+      })
+      i++;
+    }
+
+    return jump;
   }
 
   private updateMultipleSkill(roundIndex: number, autoAssign: boolean = true): any {
@@ -566,7 +607,39 @@ export class DamageComponent implements OnInit {
       }
     }
 
+    this.verifyJumpRound(roundIndex);
     this.onChangeChain(roundIndex);
+  }
+
+  private verifyJumpRound(roundIndex: number) {
+    let jumpRounds = 0;
+    let roundToRemove = [];
+
+    this.rounds[roundIndex].selectedAbilities.forEach(abilityId => {
+      let positionInList = this.unitService.findPositionOfAbilityById(this.unit, abilityId);
+      if (this.unit.abilities[positionInList].jump) {
+        jumpRounds = this.unit.abilities[positionInList].jump.round;
+      }
+    });
+
+    if (jumpRounds === 0) {
+      let i = 1;
+      while (this.rounds[roundIndex + i] && this.rounds[roundIndex + i].land) {
+        roundToRemove.push(roundIndex + i);
+        i++;
+      }
+
+      for (let i = roundToRemove.length - 1; i >= 0; i--) {
+        this.rounds.splice(roundToRemove[i], 1);
+      }
+    } else {
+      for (let i = 1; i <= jumpRounds; i++){
+        if (!this.rounds[roundIndex + i] || !this.rounds[roundIndex + i].land) {
+          this.addRound(roundIndex + i, true);
+          this.rounds[roundIndex + i].selectedAbilities = [0];
+        }
+      }
+    }
   }
 
   onChangeChain(roundIndex: number): void {
@@ -576,6 +649,8 @@ export class DamageComponent implements OnInit {
   }
 
   calculateTotalDamage() {
+    console.log(this.unit)
+    console.log(this.rounds)
     this.result = this.damageService.calculateTotalDamage(this.unit, this.monster, this.rounds);
 
     console.log("UNIT :")

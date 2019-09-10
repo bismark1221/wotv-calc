@@ -3539,6 +3539,79 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "dataId": 912891,
+        "names": {
+          "en": "Death Crimson",
+          "tw": "深紅死襲",
+          "kr": "진홍빛 죽음",
+          "fr": "Mort carmin",
+          "de": "Purpurner Tod",
+          "es": "Muerte escarlata"
+        },
+        "offset": 14,
+        "effectOrder": [
+          "delayAttack",
+          "jump"
+        ],
+        "delayAttack": {
+          "type": "auto",
+          "round": 1,
+          "base": 1150,
+          "damageType": "physic",
+          "hitDamage": [
+            7, 7, 7, 7, 7, 7, 7, 7, 44
+          ],
+          "framesList": [
+            42, 6, 6, 6, 6, 6, 6, 6, 6
+          ]
+        },
+        "jump": {
+          "type": "timed",
+          "round": 1,
+          "base": 150,
+          "damageType": "physic",
+          "hitDamage": [
+            100
+          ],
+          "framesList": [
+            0
+          ]
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 91289112,
+        "names": {
+          "en": "GIGA Death Crimson",
+          "tw": "深紅死襲",
+          "kr": "진홍빛 죽음",
+          "fr": "Mort carmin",
+          "de": "Purpurner Tod",
+          "es": "Muerte escarlata"
+        },
+        "offset": 14,
+        "effectOrder": [
+          "jump"
+        ],
+        "jump": {
+          "type": "timed",
+          "round": 3,
+          "base": 150,
+          "damageType": "physic",
+          "hitDamage": [
+            100
+          ],
+          "framesList": [
+            0
+          ]
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
         "id": 401001707,
         "names": {
           "en": "Destructive Thrust",

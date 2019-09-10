@@ -386,6 +386,8 @@ export class JsonService {
   private checkEffects(unitId, id, ability, dataId, rarity, level = 0) {
     let damageEffects = [];
     let effects = [];
+    let hitEffect = 0;
+
     if (ability.effects_raw) {
       effects = ability.effects_raw;
     } else if (ability.levels) {
@@ -395,35 +397,43 @@ export class JsonService {
     this.ffbeChainUnits[unitId].abilities[id].effectOrder = [];
 
     effects.forEach((effect, index) => {
-      let find = this.updateDamage(effect, unitId, id);
-      if (find) {
-        if (!find.combo) {
-          find.combo = 1;
-        }
+      if (ability.type !== "PASSIVE") {
+        let find = this.updateDamage(effect, unitId, id);
+        if (find) {
+          if (!find.combo) {
+            find.combo = 1;
+          }
 
-        for(let i = 1; i <= find.combo; i++) {
-          this.ffbeChainUnits[unitId].abilities[id].base += find.damage;
-          find.index = index;
+          for(let i = 1; i <= find.combo; i++) {
+            this.ffbeChainUnits[unitId].abilities[id].base += find.damage;
+            find.index = index;
 
-          if (ability.attack_damage) {
-            if (ability.attack_damage[index]) {
-              find.hitDamage =  ability.attack_damage[index]
-            } else if (ability.attack_damage[0]) {
-              find.hitDamage =  ability.attack_damage[0]
+            if (find.type !== "jump" && find.type !== "delayAttack" && find.type !== "dot") {
+              find.hitDamage = ability.attack_damage[hitEffect];
+              damageEffects.push(find);
+            } else {
+              this.ffbeChainUnits[unitId].abilities[id][find.type].hitDamage = ability.attack_damage[hitEffect];
+
+              if ((find.type === "jump" || find.type === "delayAttack") && ability.attack_frames[hitEffect]) {
+                let frames = ability.attack_frames[hitEffect].sort((n1, n2) => n1 - n2);
+                let framesList = [];
+
+                for (let i = 0; i < frames.length; i++) {
+                  if (i === 0) {
+                    framesList.push(frames[i]);
+                  } else if (frames[i] - frames[i - 1] !== 0) {
+                    framesList.push(Math.abs(frames[i] - frames[i - 1]));
+                  }
+                }
+
+                this.ffbeChainUnits[unitId].abilities[id][find.type].framesList = framesList;
+              }
             }
-          }
+          };
 
-          if (dataId == "912891") {
-            console.log(find)
-            console.log(find.type !== "jump" && find.type !== "delayAttack" && find.type !== "dot")
-          }
-
-          if (find.type !== "jump" && find.type !== "delayAttack" && find.type !== "dot") {
-            damageEffects.push(find);
-          }
-        };
-
-        this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = find.type ? find.type : "damage";
+          hitEffect++;
+          this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = find.type ? find.type : "damage";
+        }
       }
 
       this.unlockSkill(effect, unitId, rarity, level);
@@ -523,40 +533,44 @@ export class JsonService {
   }
 
   private updateFrames(effects, unitId, id, ability) {
-    let framesList = [];
-    let frames = [];
     let combo = 1
-    let frameBetweenCombo = 0;
 
-    effects.forEach(effect => {
-      if (effect.combo > 1) {
-        combo = effect.combo;
-      }
-    });
+    if (effects && effects.length > 0) {
+      let framesList = [];
+      let frames = [];
+      let frameBetweenCombo = 0;
 
-    if (ability.attack_frames) {
-      for (let i = 1; i <= combo; i++) {
-        ability.attack_frames.forEach(attackFrame => {
-          attackFrame.forEach(frame => {
-            frames.push(frame + frameBetweenCombo);
+      effects.forEach(effect => {
+        if (effect.combo > 1) {
+          combo = effect.combo;
+        }
+      });
+
+      if (ability.attack_frames) {
+        for (let i = 1; i <= combo; i++) {
+          ability.attack_frames.forEach(attackFrame => {
+            attackFrame.forEach(frame => {
+              frames.push(frame + frameBetweenCombo);
+            });
           });
-        });
 
-        frameBetweenCombo += this.ffbeChainUnits[unitId].abilities[id].castTime + this.ffbeChainUnits[unitId].abilities[id].offset;
+          frameBetweenCombo += this.ffbeChainUnits[unitId].abilities[id].castTime + this.ffbeChainUnits[unitId].abilities[id].offset;
+        }
       }
+
+      frames = frames.sort((n1, n2) => n1 - n2);
+
+      for (let i = 0; i < frames.length; i++) {
+        if (i === 0) {
+          framesList.push(frames[i]);
+        } else if (frames[i] - frames[i - 1] !== 0) {
+          framesList.push(Math.abs(frames[i] - frames[i - 1]));
+        }
+      }
+
+      this.ffbeChainUnits[unitId].abilities[id].framesList = framesList;
     }
 
-    frames = frames.sort((n1, n2) => n1 - n2);
-
-    for (let i = 0; i < frames.length; i++) {
-      if (i === 0) {
-        framesList.push(frames[i]);
-      } else if (frames[i] - frames[i - 1] !== 0) {
-        framesList.push(Math.abs(frames[i] - frames[i - 1]));
-      }
-    }
-
-    this.ffbeChainUnits[unitId].abilities[id].framesList = framesList;
     if (this.ffbeChainUnits[unitId].abilities[id].castTime) {
       this.ffbeChainUnits[unitId].abilities[id].castTime = this.ffbeChainUnits[unitId].abilities[id].castTime * combo;
       this.ffbeChainUnits[unitId].abilities[id].offset = this.ffbeChainUnits[unitId].abilities[id].offset * combo;
@@ -1323,7 +1337,9 @@ export class JsonService {
             }
           }
 
-          if (this.ffbeChainUnits[i].abilities[j].framesList.length === 0) {
+          if (!this.ffbeChainUnits[i].abilities[j].framesList || this.ffbeChainUnits[i].abilities[j].framesList.length === 0) {
+            this.ffbeChainUnits[i].abilities[j].framesList = [0];
+          } else if (this.ffbeChainUnits[i].abilities[j].framesList.length === 0) {
             this.ffbeChainUnits[i].abilities[j].framesList.push(0);
           }
         }
