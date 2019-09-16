@@ -51223,11 +51223,7 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          20,
-          20,
-          20,
-          20,
-          20
+          20, 20, 20, 20, 20
         ],
         "castTime": 50,
         "elements": [
@@ -51239,11 +51235,7 @@ export const UNITS: any[] = [
           "damage"
         ],
         "framesList": [
-          52,
-          20,
-          20,
-          20,
-          20
+          52, 20, 20, 20, 20
         ]
       },
       {
@@ -51259,17 +51251,7 @@ export const UNITS: any[] = [
         "damage": "magic",
         "base": 1100,
         "hitDamage": [
-          8,
-          8,
-          8,
-          8,
-          9,
-          9,
-          9,
-          10,
-          10,
-          10,
-          11
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
         ],
         "castTime": 39,
         "elements": [
@@ -51281,17 +51263,7 @@ export const UNITS: any[] = [
           "damage"
         ],
         "framesList": [
-          40,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
         ]
       },
       {
@@ -54454,6 +54426,1097 @@ export const UNITS: any[] = [
         "offset": 14,
         "framesList": [
           80
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 286,
+    "names": {
+      "en": "Heliarc",
+      "tw": "赫利亞克",
+      "kr": "헬리악",
+      "fr": "Héliarque",
+      "de": "Heliark",
+      "es": "Heliarco"
+    },
+    "rarity": {
+      "min": 4,
+      "max": 6
+    },
+    "dataStats": {
+      "4": {
+        "atk": {
+          "base": 58,
+          "pot": 14
+        },
+        "mag": {
+          "base": 98,
+          "pot": 18
+        }
+      },
+      "5": {
+        "atk": {
+          "base": 76,
+          "pot": 16
+        },
+        "mag": {
+          "base": 128,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 100,
+          "pot": 26
+        },
+        "mag": {
+          "base": 167,
+          "pot": 34
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 230500,
+        "names": {
+          "en": "Ice Blast",
+          "tw": "寒冰衝擊",
+          "kr": "블래스트 아이스",
+          "fr": "Coup de froid",
+          "de": "Kältehauch",
+          "es": "Estallido helado"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 20090,
+        "names": {
+          "en": "Blizzara",
+          "tw": "中暴雪",
+          "kr": "블리자라",
+          "fr": "Glace +",
+          "de": "Eisra",
+          "es": "Hielo+"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          145
+        ]
+      },
+      {
+        "dataId": 20210,
+        "names": {
+          "en": "Blizzaga",
+          "tw": "大暴雪",
+          "kr": "블리자가",
+          "fr": "Glace X",
+          "de": "Eisga",
+          "es": "Hielo++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "dataId": 20300,
+        "names": {
+          "en": "Blizzaja",
+          "tw": "強暴雪",
+          "kr": "블리자쟈",
+          "fr": "Glace max",
+          "de": "Eiska",
+          "es": "Hielo+++"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          240
+        ]
+      },
+      {
+        "dataId": 230502,
+        "names": {
+          "en": "Defrost",
+          "tw": "解凍",
+          "kr": "해동",
+          "fr": "Dégel",
+          "de": "Auftauen",
+          "es": "Descongelar"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230503,
+        "names": {
+          "en": "Freezing Energy",
+          "tw": "冰凍能量",
+          "kr": "결빙 에너지",
+          "fr": "Énergie givrante",
+          "de": "Frostenergie",
+          "es": "Energía gélida"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230504,
+        "names": {
+          "en": "Undercooling",
+          "tw": "過度冷卻",
+          "kr": "과냉각",
+          "fr": "Réfrigération",
+          "de": "Unterkühlung",
+          "es": "Refrigeración"
+        },
+        "damage": "magic",
+        "base": 690,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230505,
+        "names": {
+          "en": "Frozen Dust",
+          "tw": "冰雪塵埃",
+          "kr": "아이스 더스트",
+          "fr": "Poudre gelée",
+          "de": "Froststaub",
+          "es": "Polvo helado"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 58
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 20360,
+        "names": {
+          "en": "Freeze",
+          "tw": "冰結",
+          "kr": "프리즈",
+          "fr": "Gel",
+          "de": "Frost",
+          "es": "Congelación"
+        },
+        "damage": "magic",
+        "base": 275,
+        "hitDamage": [
+          5, 5, 5, 10, 10, 10, 15, 40
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          140, 14, 14, 14, 14, 14, 15, 15
+        ]
+      },
+      {
+        "dataId": 100022406,
+        "names": {
+          "en": "Growing Ice",
+          "tw": "冰結增長",
+          "kr": "얼음 증대",
+          "fr": "Glace croissante",
+          "de": "Eiswuchs",
+          "es": "Hielo creciente"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          37.5, 62.5
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          238, 4
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230500,
+          230502,
+          230503,
+          230504,
+          230505
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 287,
+    "names": {
+      "en": "Sol",
+      "tw": "索菲拉",
+      "kr": "솔",
+      "es": "Solfuego"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 77,
+          "pot": 16
+        },
+        "mag": {
+          "base": 130,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 101,
+          "pot": 26
+        },
+        "mag": {
+          "base": 169,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 132,
+          "pot": 40
+        },
+        "mag": {
+          "base": 220,
+          "pot": 65
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 230470,
+        "names": {
+          "en": "Extra Charge",
+          "tw": "特別蓄力",
+          "kr": "엑스트라 차지",
+          "fr": "Double charge",
+          "de": "Extraladung",
+          "es": "Carga extra"
+        },
+        "castTime": 70,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 230471,
+        "names": {
+          "en": "Mangled Mind",
+          "tw": "精神刮傷",
+          "kr": "정신 훼손",
+          "fr": "Esprit embrouillé",
+          "de": "Geschundener Geist",
+          "es": "Mente maltratada"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230472,
+        "names": {
+          "en": "Obliterating Darkness",
+          "tw": "毀滅之暗",
+          "kr": "멸망의 어둠",
+          "fr": "Ténèbres dévastatrices",
+          "de": "Vernichtende Dunkelheit",
+          "es": "Oscuridad devastadora"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230473,
+        "names": {
+          "en": "Soul Suction",
+          "tw": "靈魂吸取",
+          "kr": "영혼 흡입",
+          "fr": "Sangsue d'âme",
+          "de": "Seelenentzug",
+          "es": "Succión de almas"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 508880,
+        "names": {
+          "en": "Seibzehn's Protection",
+          "tw": "塞布澤恩的加護",
+          "kr": "지프첸의 가호",
+          "fr": "Protection de Seibzehn",
+          "de": "Siebzehns Schutz",
+          "es": "Protección de Seibzehn"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 100,
+            "turn": 99999
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 20440,
+        "names": {
+          "en": "Ultima",
+          "tw": "究極",
+          "kr": "알테마",
+          "es": "Artema"
+        },
+        "damage": "magic",
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 25,
+        "framesList": [
+          365
+        ]
+      },
+      {
+        "dataId": 10210,
+        "names": {
+          "en": "Holy",
+          "tw": "神聖",
+          "kr": "홀리",
+          "fr": "Sidéral",
+          "de": "Sanctus",
+          "es": "Sanctus"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "dataId": 230474,
+        "names": {
+          "en": "Obliterating Light",
+          "tw": "毀滅之光",
+          "kr": "멸망의 빛",
+          "fr": "Lumière dévastatrice",
+          "de": "Vernichtendes Licht",
+          "es": "Luz devastadora"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230495,
+        "names": {
+          "en": "Obliterating Flame",
+          "tw": "毀滅之火",
+          "kr": "멸망의 불",
+          "fr": "Feu dévastateur",
+          "de": "Vernichtende Flamme",
+          "es": "Fuego devastador"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230476,
+        "names": {
+          "en": "Devastation",
+          "tw": "毁壞",
+          "kr": "파멸",
+          "fr": "Désolation",
+          "de": "Destruktion",
+          "es": "Devastación"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 230477,
+        "names": {
+          "en": "Offering",
+          "tw": "祭品",
+          "kr": "제물",
+          "fr": "Offrande",
+          "de": "Opfergabe",
+          "es": "Ofrenda"
+        },
+        "castTime": 100,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 180,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 230479,
+        "names": {
+          "en": "Solar Divinity",
+          "tw": "太陽女神",
+          "kr": "신성한 태양",
+          "fr": "Soleil divin",
+          "de": "Solare Göttlichkeit",
+          "es": "Divinidad solar"
+        },
+        "damage": "magic",
+        "base": 1650,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230480,
+        "names": {
+          "en": "Execution",
+          "tw": "處決",
+          "kr": "처형",
+          "fr": "Exécution",
+          "de": "Exekution",
+          "es": "Ejecución"
+        },
+        "damage": "magic",
+        "base": 1650,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230481,
+        "names": {
+          "en": "Path to Destruction",
+          "tw": "毀滅之道",
+          "kr": "멸망으로 향하는 길",
+          "fr": "La voie de la dévastation",
+          "de": "Der Weg zur Vernichtung",
+          "es": "Camino a la destrucción"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 230496,
+        "names": {
+          "en": "Deflagrating Heat",
+          "tw": "速燃",
+          "kr": "열기 배출",
+          "fr": "Chaleur destructrice",
+          "de": "Destruktive Hitze",
+          "es": "Fogonazo abrasador"
+        },
+        "damage": "magic",
+        "base": 1650,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 509564,
+        "names": {
+          "en": "Sage's Wisdom",
+          "tw": "賢者智慧",
+          "kr": "현자의 지혜",
+          "fr": "Sagesse du philosophe",
+          "de": "Weisheit des Wissenden",
+          "es": "La sabiduría del sabio"
+        },
+        "canDualSkill": false,
+        "castTime": 90,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "buff"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100,
+            "turn": 4
+          },
+          {
+            "type": "light",
+            "value": 100,
+            "turn": 4
+          },
+          {
+            "type": "dark",
+            "value": 100,
+            "turn": 4
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 509565,
+        "names": {
+          "en": "Chaotic Nova",
+          "tw": "混沌新星",
+          "kr": "혼돈의 신성",
+          "fr": "Nova du chaos",
+          "de": "Chaosnova",
+          "es": "Nova caótica"
+        },
+        "damage": "magic",
+        "base": 1800,
+        "hitDamage": [
+          4.166666666666667, 4.166666666666667, 4.166666666666667, 4.166666666666667, 83.33333333333331
+        ],
+        "canDualSkill": false,
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 509566,
+        "names": {
+          "en": "Power of Chaos",
+          "tw": "混沌之力",
+          "kr": "혼돈의 힘",
+          "fr": "Le pouvoir du chaos",
+          "de": "Macht des Chaos",
+          "es": "Poder del caos"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 1
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 230476,
+            "value": 1750,
+            "turn": 1,
+            "uniqueIdentifier": 1218
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 100022307,
+        "names": {
+          "en": "Chaotic Darkness",
+          "tw": "混沌之暗",
+          "kr": "혼돈의 어둠",
+          "fr": "Obscurité chaotique",
+          "de": "Chaotische Dunkelheit",
+          "es": "Oscuridad Caótica"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 18
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          319, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230470,
+          230471,
+          230472,
+          230473,
+          230474,
+          230475,
+          230476,
+          230477,
+          230479,
+          230480,
+          230481,
+          230482,
+          230483,
+          230487,
+          230495,
+          230496,
+          509564,
+          509565
+        ]
+      },
+      {
+        "count": 5,
+        "abilities": [
+          230470,
+          230471,
+          230472,
+          230473,
+          230474,
+          230475,
+          230476,
+          230477,
+          230479,
+          230480,
+          230481,
+          230482,
+          230483,
+          230487,
+          230495,
+          230496,
+          509564,
+          509565
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          230470,
+          230471,
+          230472,
+          230473,
+          230474,
+          230475,
+          230476,
+          230477,
+          230479,
+          230480,
+          230481,
+          230482,
+          230483,
+          230487,
+          230495,
+          230496,
+          509564,
+          509565
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          230470,
+          230471,
+          230472,
+          230473,
+          230474,
+          230475,
+          230476,
+          230477,
+          230479,
+          230480,
+          230481,
+          230482,
+          230483,
+          230487,
+          230495,
+          230496,
+          509564,
+          509565
         ]
       }
     ]

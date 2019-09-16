@@ -524,22 +524,6 @@
         ]
       },
       {
-        "id": 100022305,
-        "names": {
-          "en": 100022305
-        },
-        "abilities": [
-          {
-            "id": 230476,
-            "names": {
-              "en": "unknown ability name -- 230476"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
         "id": 100024305,
         "names": {
           "en": "Kimono Fina",
@@ -2137,6 +2121,30 @@
         ]
       },
       {
+        "id": 100022305,
+        "names": {
+          "en": "Sol",
+          "tw": "索菲拉",
+          "kr": "솔",
+          "es": "Solfuego"
+        },
+        "abilities": [
+          {
+            "id": 230476,
+            "names": {
+              "en": "Devastation",
+              "tw": "毁壞",
+              "kr": "파멸",
+              "fr": "Désolation",
+              "de": "Destruktion",
+              "es": "Devastación"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
         "id": 304000105,
         "names": {
           "en": "Randi",
@@ -3142,30 +3150,6 @@
               "fr": "Combo offensivo-curatif",
               "de": "Offensive Heilkombo",
               "es": "Combo curativo-ofensivo"
-            },
-            "offset": 14,
-            "castTime": 39
-          }
-        ]
-      },
-      {
-        "id": 401001705,
-        "names": {
-          "en": "Reberta",
-          "tw": "蕾貝爾塔",
-          "kr": "리베르타",
-          "fr": "Réberta"
-        },
-        "abilities": [
-          {
-            "id": 912882,
-            "names": {
-              "en": "Siphon Lance",
-              "tw": "攝魔長槍",
-              "kr": "흡수의 창",
-              "fr": "Lance siphon",
-              "de": "Soglanze",
-              "es": "Lanza sifón"
             },
             "offset": 14,
             "castTime": 39
@@ -5571,7 +5555,7 @@
               "es": "Invasión carmesí"
             },
             "offset": 14,
-            "castTime": 40
+            "castTime": 38
           }
         ]
       },
@@ -5595,42 +5579,6 @@
               "fr": "Obscurité - Lame impactante",
               "de": "Grimm - Schockklinge",
               "es": "Parca - Hoja eléctrica"
-            },
-            "offset": 14,
-            "castTime": 38
-          }
-        ]
-      },
-      {
-        "id": 401002605,
-        "names": {
-          "en": "Christine",
-          "tw": "克莉絲汀",
-          "kr": "크리스틴"
-        },
-        "abilities": [
-          {
-            "id": 912893,
-            "names": {
-              "en": "Mystic Assault",
-              "tw": "神秘突擊",
-              "kr": "신비로운 돌격",
-              "fr": "Assaut mystique",
-              "de": "Mystischer Überfall",
-              "es": "Asalto místico"
-            },
-            "offset": 14,
-            "castTime": 38
-          },
-          {
-            "id": 912894,
-            "names": {
-              "en": "Mystic Assault",
-              "tw": "神秘突擊",
-              "kr": "신비로운 돌격",
-              "fr": "Assaut mystique",
-              "de": "Mystischer Überfall",
-              "es": "Asalto místico"
             },
             "offset": 14,
             "castTime": 38
@@ -7498,6 +7446,19 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 912896,
+            "names": {
+              "en": "Spiral Thrust",
+              "tw": "螺旋衝擊",
+              "kr": "나선의 찌르기",
+              "fr": "Coup en spirale",
+              "de": "Spiralstoß",
+              "es": "Estoque espiral"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -7864,6 +7825,29 @@
         ]
       },
       {
+        "id": 309000304,
+        "names": {
+          "en": "Harid",
+          "tw": "哈利德",
+          "kr": "해리드"
+        },
+        "abilities": [
+          {
+            "id": 502510,
+            "names": {
+              "en": "Samidare Slash",
+              "tw": "五月雨斬",
+              "kr": "사미다레 베기",
+              "fr": "Entaille Samidare",
+              "de": "Samidare-Hieb",
+              "es": "Tajo Samidare"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 312000305,
         "names": {
           "en": "Kevin",
@@ -7881,6 +7865,58 @@
               "fr": "null",
               "de": "null",
               "es": "null"
+            },
+            "offset": 14,
+            "castTime": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-7-7-7-7-7-7-7-7-7",
+    "units": [
+      {
+        "id": 306001005,
+        "names": {
+          "en": "Marquis de Léon",
+          "tw": "獅王",
+          "kr": "킹 레오",
+          "fr": "Lord Lionel"
+        },
+        "abilities": [
+          {
+            "id": 227003,
+            "names": {
+              "en": "Wild Animaul",
+              "tw": "慈悲斬",
+              "kr": "메타 베기",
+              "fr": "Coupe sauvage",
+              "de": "Zerschnitzeln",
+              "es": "Fauna salvaje"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 309000304,
+        "names": {
+          "en": "Harid",
+          "tw": "哈利德",
+          "kr": "해리드"
+        },
+        "abilities": [
+          {
+            "id": 502520,
+            "names": {
+              "en": "Samidare Slash",
+              "tw": "五月雨斬",
+              "kr": "사미다레 베기",
+              "fr": "Entaille Samidare",
+              "de": "Samidare-Hieb",
+              "es": "Tajo Samidare"
             },
             "offset": 14,
             "castTime": 10
@@ -11510,13 +11546,23 @@
       {
         "id": 100022404,
         "names": {
-          "en": 100022404
+          "en": "Heliarc",
+          "tw": "赫利亞克",
+          "kr": "헬리악",
+          "fr": "Héliarque",
+          "de": "Heliark",
+          "es": "Heliarco"
         },
         "abilities": [
           {
             "id": 230500,
             "names": {
-              "en": "unknown ability name -- 230500"
+              "en": "Ice Blast",
+              "tw": "寒冰衝擊",
+              "kr": "블래스트 아이스",
+              "fr": "Coup de froid",
+              "de": "Kältehauch",
+              "es": "Estallido helado"
             },
             "offset": 14,
             "castTime": 40
@@ -11524,7 +11570,12 @@
           {
             "id": 230502,
             "names": {
-              "en": "unknown ability name -- 230502"
+              "en": "Defrost",
+              "tw": "解凍",
+              "kr": "해동",
+              "fr": "Dégel",
+              "de": "Auftauen",
+              "es": "Descongelar"
             },
             "offset": 14,
             "castTime": 40
@@ -11532,7 +11583,12 @@
           {
             "id": 230503,
             "names": {
-              "en": "unknown ability name -- 230503"
+              "en": "Freezing Energy",
+              "tw": "冰凍能量",
+              "kr": "결빙 에너지",
+              "fr": "Énergie givrante",
+              "de": "Frostenergie",
+              "es": "Energía gélida"
             },
             "offset": 14,
             "castTime": 40
@@ -11540,7 +11596,12 @@
           {
             "id": 230504,
             "names": {
-              "en": "unknown ability name -- 230504"
+              "en": "Undercooling",
+              "tw": "過度冷卻",
+              "kr": "과냉각",
+              "fr": "Réfrigération",
+              "de": "Unterkühlung",
+              "es": "Refrigeración"
             },
             "offset": 14,
             "castTime": 40
@@ -11548,7 +11609,12 @@
           {
             "id": 230505,
             "names": {
-              "en": "unknown ability name -- 230505"
+              "en": "Frozen Dust",
+              "tw": "冰雪塵埃",
+              "kr": "아이스 더스트",
+              "fr": "Poudre gelée",
+              "de": "Froststaub",
+              "es": "Polvo helado"
             },
             "offset": 14,
             "castTime": 40
@@ -13075,25 +13141,25 @@
             "castTime": 40
           },
           {
-            "id": 230357,
-            "names": {
-              "en": "unknown ability name -- 230357"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 230359,
-            "names": {
-              "en": "unknown ability name -- 230359"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
             "id": 509482,
             "names": {
               "en": "unknown ability name -- 509482"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509486,
+            "names": {
+              "en": "unknown ability name -- 509486"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509489,
+            "names": {
+              "en": "unknown ability name -- 509489"
             },
             "offset": 14,
             "castTime": 40
@@ -13115,17 +13181,17 @@
             "castTime": 40
           },
           {
-            "id": 509486,
+            "id": 230357,
             "names": {
-              "en": "unknown ability name -- 509486"
+              "en": "unknown ability name -- 230357"
             },
             "offset": 14,
             "castTime": 40
           },
           {
-            "id": 509489,
+            "id": 230359,
             "names": {
-              "en": "unknown ability name -- 509489"
+              "en": "unknown ability name -- 230359"
             },
             "offset": 14,
             "castTime": 40
@@ -14897,7 +14963,12 @@
       {
         "id": 100022404,
         "names": {
-          "en": 100022404
+          "en": "Heliarc",
+          "tw": "赫利亞克",
+          "kr": "헬리악",
+          "fr": "Héliarque",
+          "de": "Heliark",
+          "es": "Heliarco"
         },
         "abilities": [
           {
@@ -15232,13 +15303,21 @@
       {
         "id": 100022305,
         "names": {
-          "en": 100022305
+          "en": "Sol",
+          "tw": "索菲拉",
+          "kr": "솔",
+          "es": "Solfuego"
         },
         "abilities": [
           {
             "id": 230471,
             "names": {
-              "en": "unknown ability name -- 230471"
+              "en": "Mangled Mind",
+              "tw": "精神刮傷",
+              "kr": "정신 훼손",
+              "fr": "Esprit embrouillé",
+              "de": "Geschundener Geist",
+              "es": "Mente maltratada"
             },
             "offset": 14,
             "castTime": 50
@@ -15246,7 +15325,12 @@
           {
             "id": 230472,
             "names": {
-              "en": "unknown ability name -- 230472"
+              "en": "Obliterating Darkness",
+              "tw": "毀滅之暗",
+              "kr": "멸망의 어둠",
+              "fr": "Ténèbres dévastatrices",
+              "de": "Vernichtende Dunkelheit",
+              "es": "Oscuridad devastadora"
             },
             "offset": 14,
             "castTime": 50
@@ -15254,7 +15338,12 @@
           {
             "id": 230473,
             "names": {
-              "en": "unknown ability name -- 230473"
+              "en": "Soul Suction",
+              "tw": "靈魂吸取",
+              "kr": "영혼 흡입",
+              "fr": "Sangsue d'âme",
+              "de": "Seelenentzug",
+              "es": "Succión de almas"
             },
             "offset": 14,
             "castTime": 50
@@ -15262,7 +15351,12 @@
           {
             "id": 230474,
             "names": {
-              "en": "unknown ability name -- 230474"
+              "en": "Obliterating Light",
+              "tw": "毀滅之光",
+              "kr": "멸망의 빛",
+              "fr": "Lumière dévastatrice",
+              "de": "Vernichtendes Licht",
+              "es": "Luz devastadora"
             },
             "offset": 14,
             "castTime": 50
@@ -15270,7 +15364,12 @@
           {
             "id": 230495,
             "names": {
-              "en": "unknown ability name -- 230495"
+              "en": "Obliterating Flame",
+              "tw": "毀滅之火",
+              "kr": "멸망의 불",
+              "fr": "Feu dévastateur",
+              "de": "Vernichtende Flamme",
+              "es": "Fuego devastador"
             },
             "offset": 14,
             "castTime": 50
@@ -15278,7 +15377,12 @@
           {
             "id": 230479,
             "names": {
-              "en": "unknown ability name -- 230479"
+              "en": "Solar Divinity",
+              "tw": "太陽女神",
+              "kr": "신성한 태양",
+              "fr": "Soleil divin",
+              "de": "Solare Göttlichkeit",
+              "es": "Divinidad solar"
             },
             "offset": 14,
             "castTime": 50
@@ -15286,7 +15390,12 @@
           {
             "id": 230480,
             "names": {
-              "en": "unknown ability name -- 230480"
+              "en": "Execution",
+              "tw": "處決",
+              "kr": "처형",
+              "fr": "Exécution",
+              "de": "Exekution",
+              "es": "Ejecución"
             },
             "offset": 14,
             "castTime": 50
@@ -15294,7 +15403,25 @@
           {
             "id": 230481,
             "names": {
-              "en": "unknown ability name -- 230481"
+              "en": "Path to Destruction",
+              "tw": "毀滅之道",
+              "kr": "멸망으로 향하는 길",
+              "fr": "La voie de la dévastation",
+              "de": "Der Weg zur Vernichtung",
+              "es": "Camino a la destrucción"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 230496,
+            "names": {
+              "en": "Deflagrating Heat",
+              "tw": "速燃",
+              "kr": "열기 배출",
+              "fr": "Chaleur destructrice",
+              "de": "Destruktive Hitze",
+              "es": "Fogonazo abrasador"
             },
             "offset": 14,
             "castTime": 50
@@ -15302,15 +15429,12 @@
           {
             "id": 509565,
             "names": {
-              "en": "unknown ability name -- 509565"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 230496,
-            "names": {
-              "en": "unknown ability name -- 230496"
+              "en": "Chaotic Nova",
+              "tw": "混沌新星",
+              "kr": "혼돈의 신성",
+              "fr": "Nova du chaos",
+              "de": "Chaosnova",
+              "es": "Nova caótica"
             },
             "offset": 14,
             "castTime": 50
@@ -15546,32 +15670,6 @@
             "castTime": 50
           },
           {
-            "id": 226852,
-            "names": {
-              "en": "Chaos Dark",
-              "tw": "混沌黑暗",
-              "kr": "혼돈의 어둠",
-              "fr": "Ténèbres chaotiques",
-              "de": "Chaosdunkelheit",
-              "es": "Oscuridad caótica"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 226853,
-            "names": {
-              "en": "Chaos Flare",
-              "tw": "混沌核爆",
-              "kr": "혼돈의 불꽃",
-              "fr": "Brasier chaotique",
-              "de": "Chaosflammen",
-              "es": "Fulgor caótico"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
             "id": 704490,
             "names": {
               "en": "Chaos Wave + 1",
@@ -15593,6 +15691,32 @@
               "fr": "Onde chaotique + 2",
               "de": "Chaoswelle + 2",
               "es": "Ola caótica + 2"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 226852,
+            "names": {
+              "en": "Chaos Dark",
+              "tw": "混沌黑暗",
+              "kr": "혼돈의 어둠",
+              "fr": "Ténèbres chaotiques",
+              "de": "Chaosdunkelheit",
+              "es": "Oscuridad caótica"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 226853,
+            "names": {
+              "en": "Chaos Flare",
+              "tw": "混沌核爆",
+              "kr": "혼돈의 불꽃",
+              "fr": "Brasier chaotique",
+              "de": "Chaosflammen",
+              "es": "Fulgor caótico"
             },
             "offset": 14,
             "castTime": 50

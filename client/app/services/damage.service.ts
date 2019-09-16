@@ -38,7 +38,10 @@ export class DamageService {
     dualWield: false,
     weapons: [],
     boostModifier: [],
-    maxChainCap: 4
+    maxChainCap: 4,
+    dots: [],
+    delayAttack: {},
+    jump: {}
   };
 
   monster = {
@@ -89,6 +92,11 @@ export class DamageService {
   ) {}
 
   calculateTotalDamage(unit, monster, rounds) {
+
+    console.log("RECEIVE IN SERVICE")
+    console.log(unit)
+    console.log(rounds)
+
     this.result = {unit: {}, monster: {}, damage: [], summary: []};
     this.bestBreaks = {def: 0, spr: 0};
     this.bestBuffs = {atk: 0, mag: 0};
@@ -198,10 +206,11 @@ export class DamageService {
 
       round.selectedAbilities.forEach((abilityId, abilityIndex) => {
         this.result.summary[roundIndex][abilityIndex] = [];
-        let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
-        let alreadyKiller = false;
 
-        if (ability) {
+        if (abilityId !== 0) {
+          let ability = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)];
+          let alreadyKiller = false;
+
           ability.effectOrder.forEach(effect => {
             switch (effect) {
               case "damage":
@@ -228,8 +237,23 @@ export class DamageService {
                   alreadyKiller = true;
                 }
                 break;
+              case "jump":
+                console.log("TODO DAMAGE SERVICE -- jump");
+                this.addJump(ability, abilityIndex, roundIndex);
+                break;
+              case "delayAttack":
+                console.log("TODO DAMAGE SERVICE -- delayAttack");
+                this.addDelayAttack(ability, abilityIndex, roundIndex);
+                break;
+              case "dot":
+                console.log("TODO DAMAGE SERVICE -- dot");
+
+                break;
             }
           });
+        } else {
+          console.log("NONE STANDARD ABILITY")
+          this.manageJump();
         }
       });
 
@@ -304,12 +328,16 @@ export class DamageService {
     });
   }
 
+  private manageJump() {
+
+  }
+
   private manageDualWield(round) {
     if (this.unit.dualWield) {
       let firstAbilityId = round.selectedAbilities[0];
       let ability = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, firstAbilityId)]));
 
-      if (round.selectedAbilities.length === 1 && ability.dualable) {
+      if (round.selectedAbilities.length === 1 && ability && ability.dualable) {
         round.selectedAbilities.push(round.selectedAbilities[0]);
       }
     }
@@ -444,6 +472,22 @@ export class DamageService {
     // console.log(JSON.parse(JSON.stringify(this.unit)))
     // console.log("<===========>")
   }
+
+
+  private addJump(ability, abilityIndex, roundIndex) {
+    this.unit.jump = ability.jump;
+    this.result.summary[roundIndex][abilityIndex].push({
+      type: "jump"
+    });
+  };
+
+
+  private addDelayAttack(ability, abilityIndex, roundIndex) {
+    this.unit.delayAttack = ability.delayAttack;
+    this.result.summary[roundIndex][abilityIndex].push({
+      type: "delayAttack"
+    });
+  };
 
 
   private addBreaks(ability, abilityIndex, roundIndex) {
