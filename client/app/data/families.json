@@ -760,6 +760,53 @@
         ]
       },
       {
+        "id": 335000305,
+        "names": {
+          "en": "Sephiroth (KH)",
+          "tw": "賽菲羅斯(KH)",
+          "kr": "세피로스(KH)",
+          "fr": "Séphiroth (KH)"
+        },
+        "abilities": [
+          {
+            "id": 232977,
+            "names": {
+              "en": "Life-Taker",
+              "tw": "不命",
+              "kr": "불명",
+              "fr": "Voleur de vie",
+              "de": "Lebensnehmer",
+              "es": "Quitavidas"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 335000405,
+        "names": {
+          "en": "Riku",
+          "tw": "里克",
+          "kr": "리쿠"
+        },
+        "abilities": [
+          {
+            "id": 232953,
+            "names": {
+              "en": "Spinning Slash",
+              "tw": "回轉揮擊",
+              "kr": "회전 베기",
+              "fr": "Entaille-tourbillon",
+              "de": "Drehschlitzer",
+              "es": "Corte giratorio"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401001705,
         "names": {
           "en": "Reberta",
@@ -4977,6 +5024,79 @@
         ]
       },
       {
+        "id": 335000405,
+        "names": {
+          "en": "Riku",
+          "tw": "里克",
+          "kr": "리쿠"
+        },
+        "abilities": [
+          {
+            "id": 232952,
+            "names": {
+              "en": "Dark Break",
+              "tw": "黑暗破",
+              "kr": "다크 브레이크",
+              "de": "Sinistra-Hieb",
+              "es": "Golpe tenebroso"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 232954,
+            "names": {
+              "en": "Dark Firaga",
+              "tw": "黑暗大火焰",
+              "kr": "다크 파이가",
+              "fr": "Dark Brasier X",
+              "de": "Sinistra-Feuga",
+              "es": "Nigro Piro++"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 232955,
+            "names": {
+              "en": "Darkhand",
+              "tw": "黑暗之手",
+              "kr": "다크 핸드",
+              "fr": "Brise-casque ténébreux",
+              "de": "Sinistra-Hand",
+              "es": "Tinieblas"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 232957,
+            "names": {
+              "en": "Dark Maelstrom",
+              "tw": "黑暗大漩渦",
+              "kr": "다크 마엘스트롬",
+              "fr": "Dark Maëlstrom",
+              "de": "Sinistra-Mahlstrom",
+              "es": "Vorágine umbría"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 510713,
+            "names": {
+              "en": "Dark Aura",
+              "tw": "黑暗衝擊",
+              "kr": "다크 오라",
+              "de": "Sinistra-Aura",
+              "es": "Razia tenebrosa"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401000305,
         "names": {
           "en": "Dracu Lasswell",
@@ -5464,6 +5584,30 @@
               "fr": "Pouvoir de Sylphide",
               "de": "Kraft von Dschinn",
               "es": "Poder de Céfiro"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 335000305,
+        "names": {
+          "en": "Sephiroth (KH)",
+          "tw": "賽菲羅斯(KH)",
+          "kr": "세피로스(KH)",
+          "fr": "Séphiroth (KH)"
+        },
+        "abilities": [
+          {
+            "id": 232970,
+            "names": {
+              "en": "Vanisher",
+              "tw": "霧散",
+              "kr": "무산",
+              "fr": "Destructeur",
+              "de": "Zersetzer",
+              "es": "Desvanecedor"
             },
             "offset": 14,
             "castTime": 38
@@ -6036,6 +6180,45 @@
               "fr": "Feu spirituel - Eau purificatrice",
               "de": "Geisterfeuer - Reinigendes Wasser",
               "es": "Fuego espiritual - Agua purificadora"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
+        },
+        "abilities": [
+          {
+            "id": 913002,
+            "names": {
+              "en": "Directive - Crossed Wires+",
+              "tw": "指令-電纜交錯+",
+              "kr": "지령·개량형 혼선+",
+              "fr": "Instruction - Fils croisés +",
+              "de": "Direktive - Gekreuzte Kabel+",
+              "es": "Directriz - Cruce de cables+"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913003,
+            "names": {
+              "en": "Directive - Crossed Wires",
+              "tw": "指令-電纜交錯",
+              "kr": "지령·혼선",
+              "fr": "Instruction - Fils croisés",
+              "de": "Direktive - Gekreuzte Kabel",
+              "es": "Directriz - Cruce de cables"
             },
             "offset": 14,
             "castTime": 38
@@ -7380,6 +7563,69 @@
               "fr": "Continuum",
               "de": "Kontinuummesser",
               "es": "Corte infinito"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 335000305,
+        "names": {
+          "en": "Sephiroth (KH)",
+          "tw": "賽菲羅斯(KH)",
+          "kr": "세피로스(KH)",
+          "fr": "Séphiroth (KH)"
+        },
+        "abilities": [
+          {
+            "id": 232975,
+            "names": {
+              "en": "Descent into Darkness",
+              "tw": "墮暗",
+              "kr": "암흑 타락",
+              "fr": "Descente aux ténèbres",
+              "de": "Sturz in die Finsternis",
+              "es": "Descenso a la oscuridad"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 232976,
+            "names": {
+              "en": "Consuming Light",
+              "tw": "蝕光",
+              "kr": "빛의 잠식",
+              "fr": "Éclipse de lumière",
+              "de": "Lichtfinsternis",
+              "es": "Eclipse luminoso"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 232973,
+            "names": {
+              "en": "Engulfing Duality",
+              "tw": "弐旋暗明",
+              "kr": "이선암명",
+              "fr": "Dualité envahissante",
+              "de": "Zwei Seiten einer Medaille",
+              "es": "Dualidad integral"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 232982,
+            "names": {
+              "en": "Dark Blessing",
+              "tw": "黑色祝福",
+              "kr": "어둠의 축복",
+              "fr": "Bénédiction obscure",
+              "de": "Dunkler Segen",
+              "es": "Bendición oscura"
             },
             "offset": 14,
             "castTime": 40
@@ -11800,6 +12046,30 @@
         ]
       },
       {
+        "id": 335000305,
+        "names": {
+          "en": "Sephiroth (KH)",
+          "tw": "賽菲羅斯(KH)",
+          "kr": "세피로스(KH)",
+          "fr": "Séphiroth (KH)"
+        },
+        "abilities": [
+          {
+            "id": 232980,
+            "names": {
+              "en": "Octaslash",
+              "tw": "八刀一閃",
+              "kr": "팔도일섬",
+              "fr": "Octofrappe ultime",
+              "de": "Achtstreich",
+              "es": "Octacorte definitivo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401001105,
         "names": {
           "en": "Zargabaath",
@@ -13268,6 +13538,45 @@
         ]
       },
       {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
+        },
+        "abilities": [
+          {
+            "id": 913005,
+            "names": {
+              "en": "Directive - Offensive Measures+",
+              "tw": "指令-進攻計畫+",
+              "kr": "지령·개량형 공세 조치+",
+              "fr": "Instruction - Mesures offensives +",
+              "de": "Direktive - Offensivmaßnahmen",
+              "es": "Directriz - Medidas ofensivas+"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913006,
+            "names": {
+              "en": "Directive - Offensive Measures",
+              "tw": "指令-進攻計畫",
+              "kr": "지령·공세 조치",
+              "fr": "Instruction - Mesures offensives",
+              "de": "Direktive - Offensivmaßnahmen",
+              "es": "Directriz - Medidas ofensivas"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401008405,
         "names": {
           "en": "Elena",
@@ -14474,6 +14783,30 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
+        },
+        "abilities": [
+          {
+            "id": 20390,
+            "names": {
+              "en": "Tornado",
+              "tw": "龍捲風",
+              "kr": "토네이도",
+              "fr": "Tornade"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -14852,6 +15185,32 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -15093,6 +15452,32 @@
           "fr": "Katy flamme immortelle",
           "de": "Unvergängliche Flamme Katy",
           "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 20360,
+            "names": {
+              "en": "Freeze",
+              "tw": "冰結",
+              "kr": "프리즈",
+              "fr": "Gel",
+              "de": "Frost",
+              "es": "Congelación"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
         },
         "abilities": [
           {
@@ -16361,6 +16746,97 @@
             "castTime": 50
           }
         ]
+      },
+      {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
+        },
+        "abilities": [
+          {
+            "id": 913008,
+            "names": {
+              "en": "Directive - Combative Measures+",
+              "tw": "指令-戰鬥計畫+",
+              "kr": "지령·개량형 전투 조치+",
+              "fr": "Instruction - Mesures de combat +",
+              "de": "Direktive - Kampfmaßnahmen+",
+              "es": "Directriz - Medidas combativas+"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 913009,
+            "names": {
+              "en": "Directive - Combative Measures",
+              "tw": "指令-戰鬥計畫",
+              "kr": "지령·전투 조치",
+              "fr": "Instruction - Mesures de combat",
+              "de": "Direktive - Kampfmaßnahmen",
+              "es": "Directriz - Medidas combativas"
+            },
+            "offset": 14,
+            "castTime": 50
+          }
+        ]
+      },
+      {
+        "id": 401007505,
+        "names": {
+          "en": "Lovely Katy",
+          "tw": "可愛凱蒂",
+          "kr": "러블리 케이티",
+          "fr": "Adorable Katy",
+          "de": "Reizende Katy",
+          "es": "Katy amorosa"
+        },
+        "abilities": [
+          {
+            "id": 912969,
+            "names": {
+              "en": "Devotion - Give and Receive",
+              "tw": "奉獻-施與受",
+              "kr": "헌신·주고 받기",
+              "fr": "Dévotion - Donner et recevoir",
+              "de": "Hingabe - Geben und Nehmen",
+              "es": "Devoción - Dar y recibir"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912968,
+            "names": {
+              "en": "Devotion - Intervention",
+              "tw": "奉獻-干預",
+              "kr": "헌신·조정",
+              "fr": "Dévotion - Intervention",
+              "de": "Hingabe - Intervention",
+              "es": "Devoción - Intervención"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912967,
+            "names": {
+              "en": "Devotion - Arbitration",
+              "tw": "奉獻-仲裁",
+              "kr": "헌신·중재",
+              "fr": "Dévotion - Entremise",
+              "de": "Hingabe - Schlichtung",
+              "es": "Devoción - Arbitraje"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -16704,6 +17180,32 @@
           "fr": "Katy flamme immortelle",
           "de": "Unvergängliche Flamme Katy",
           "es": "Katy llama inmortal"
+        },
+        "abilities": [
+          {
+            "id": 20400,
+            "names": {
+              "en": "Quake",
+              "tw": "地槌",
+              "kr": "퀘이크",
+              "fr": "Séisme",
+              "de": "Beben",
+              "es": "Seísmo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007405,
+        "names": {
+          "en": "A.I. Katy",
+          "tw": "A.I. 凱蒂",
+          "kr": "A.I. 케이티",
+          "fr": "Katy I.A.",
+          "de": "KI Katy",
+          "es": "Katy IA"
         },
         "abilities": [
           {

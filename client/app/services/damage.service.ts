@@ -41,7 +41,15 @@ export class DamageService {
     maxChainCap: 4,
     dots: [],
     delayAttack: {},
-    jump: {}
+    jump: {
+      round: 0,
+      damage: "physic",
+      damageType: null,
+      id: null,
+      elements: null,
+      imperils: null,
+      ignore: null
+    }
   };
 
   monster = {
@@ -212,6 +220,7 @@ export class DamageService {
           let alreadyKiller = false;
 
           ability.effectOrder.forEach(effect => {
+            console.log("TODO DAMAGE SERVICE -- " + effect)
             switch (effect) {
               case "damage":
                 this.manageDamage(ability, round, abilityIndex, roundIndex, abilitiesBeforeDualWield);
@@ -238,22 +247,20 @@ export class DamageService {
                 }
                 break;
               case "jump":
-                console.log("TODO DAMAGE SERVICE -- jump");
+                ;
                 this.addJump(ability, abilityIndex, roundIndex);
                 break;
               case "delayAttack":
-                console.log("TODO DAMAGE SERVICE -- delayAttack");
                 this.addDelayAttack(ability, abilityIndex, roundIndex);
                 break;
               case "dot":
-                console.log("TODO DAMAGE SERVICE -- dot");
 
                 break;
             }
           });
         } else {
           console.log("NONE STANDARD ABILITY")
-          this.manageJump();
+          this.manageJump(round, roundIndex);
         }
       });
 
@@ -294,19 +301,33 @@ export class DamageService {
 
     if (ability.damage === "physic") {
       totalDamage = stats.atk / (stats.def * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * round.chainMod[abilityIndex] * killers.physic * jumpDamage * elementResistances.physic;
+        * modifier * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * killers.physic * jumpDamage * elementResistances.physic;
     } else if (ability.damage === "magic") {
       totalDamage = stats.mag / (stats.spr * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * round.chainMod[abilityIndex] * killers.magic * elementResistances.physic;
+        * modifier * this.unit.levelCorrection * killers.magic * elementResistances.magic;
     } else {
       let atkDamage = stats.atk / (stats.def * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * round.chainMod[abilityIndex] * killers.physic * jumpDamage * elementResistances.physic;
+        * modifier * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * killers.physic * jumpDamage * elementResistances.physic;
 
       let magDamage = stats.mag / (stats.spr * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * round.chainMod[abilityIndex] * killers.magic * elementResistances.physic;
+        * modifier * this.unit.levelCorrection * killers.magic * elementResistances.magic;
 
       totalDamage = (atkDamage + magDamage) / 2;
     }
+
+    console.log("##### RESULT DAMAGE #####")
+    console.log(stats.atk)
+    console.log(stats.def)
+    console.log(ability.ignore)
+    console.log(modifier)
+    console.log(this.unit.levelCorrection)
+    console.log(this.unit.weapons[0].varianceMin)
+    console.log(this.unit.weapons[0].varianceMax)
+    console.log(killers.physic)
+    console.log(jumpDamage)
+    console.log(elementResistances.physic)
+    console.log(totalDamage)
+    console.log("##### END DAMAGE #####")
 
     totalDamage = totalDamage > 0 ? totalDamage : 0;
     this.result.damage[roundIndex].abilities.push(totalDamage);
@@ -328,8 +349,32 @@ export class DamageService {
     });
   }
 
-  private manageJump() {
+  private manageJump(round, roundIndex) {
+    console.log(this.unit.jump)
+    this.unit.jump.round -= 1;
+    if (this.unit.jump.round === 0) {
+      this.unit.jump.damage = this.unit.jump.damageType;
+      this.unit.jump.id = 0;
+      this.unit.jump.elements = [];
+      this.unit.jump.imperils = [];
+      this.unit.jump.ignore = 0;
+      this.removePreviousJumpFromAbitilies();
+      this.unit.abilities.push(this.unit.jump);
+      this.manageDamage(this.unit.jump, round, 0, roundIndex, [JSON.parse(JSON.stringify(this.unit.jump))]);
+      console.log("LAND !!!!")
+    } else {
+      console.log("FLYING !!!!")
+    }
+  }
 
+  private removePreviousJumpFromAbitilies() {
+    let indexToRemove = null;
+    this.unit.abilities.forEach((ability, index) => {
+      if (ability.id === 0) {
+        indexToRemove = index;
+      }
+    });
+    this.unit.abilities.splice(indexToRemove, 1);
   }
 
   private manageDualWield(round) {
@@ -714,8 +759,9 @@ export class DamageService {
       });
     });
 
-    // console.log("== Get Chain Mod ==")
-    // console.log(round)
+    console.log("== Get Chain Mod ==")
+    console.log(unitMultiplier)
+    console.log(round.chainMod)
 
     return unitMultiplier[1][abilityIndex];
   }
