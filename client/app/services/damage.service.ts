@@ -48,7 +48,10 @@ export class DamageService {
       id: null,
       elements: null,
       imperils: null,
-      ignore: null
+      ignore: null,
+      type: null,
+      jumpType: null,
+      framesList: null
     }
   };
 
@@ -269,9 +272,9 @@ export class DamageService {
   }
 
   private manageDamage(ability, round, abilityIndex, roundIndex, abilitiesBeforeDualWield) {
-    let modifier = this.getChainMod(round, abilityIndex, roundIndex);
+    let chainMod = this.getChainMod(round, abilityIndex);
     let stats = {
-      atk: 0,
+      atk: this.getRealUnitStat("atk"),
       mag: this.getRealUnitStat("mag"),
       def: this.getRealMonsterStat("def"),
       spr: this.getRealMonsterStat("spr")
@@ -281,8 +284,6 @@ export class DamageService {
 
     if (this.unit.dualWield && abilitiesBeforeDualWield.length === 1 && round.selectedAbilities.length === 2) {
       stats.atk = this.getRealUnitStat("atk", abilityIndex)
-    } else {
-      stats.atk = this.getRealUnitStat("atk");
     }
 
     let jumpDamage = 1;
@@ -299,18 +300,20 @@ export class DamageService {
 
     let totalDamage = 0;
 
+    let modifier = this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, round.selectedAbilities[abilityIndex])].base;
+
     if (ability.damage === "physic") {
       totalDamage = stats.atk / (stats.def * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * killers.physic * jumpDamage * elementResistances.physic;
+        * modifier * chainMod * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * killers.physic * jumpDamage * elementResistances.physic;
     } else if (ability.damage === "magic") {
       totalDamage = stats.mag / (stats.spr * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * killers.magic * elementResistances.magic;
+        * modifier * chainMod * this.unit.levelCorrection * killers.magic * elementResistances.magic;
     } else {
       let atkDamage = stats.atk / (stats.def * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * killers.physic * jumpDamage * elementResistances.physic;
+        * modifier * chainMod * this.unit.levelCorrection * ((this.unit.weapons[0].varianceMin + this.unit.weapons[0].varianceMax) / 2 / 100) * killers.physic * jumpDamage * elementResistances.physic;
 
       let magDamage = stats.mag / (stats.spr * ((100 - ability.ignore) / 100))
-        * modifier * this.unit.levelCorrection * killers.magic * elementResistances.magic;
+        * modifier * chainMod * this.unit.levelCorrection * killers.magic * elementResistances.magic;
 
       totalDamage = (atkDamage + magDamage) / 2;
     }
@@ -319,7 +322,8 @@ export class DamageService {
     console.log(stats.atk)
     console.log(stats.def)
     console.log(ability.ignore)
-    console.log(modifier)
+    console.log("modifier : " + modifier)
+    console.log("chainMod : " + chainMod)
     console.log(this.unit.levelCorrection)
     console.log(this.unit.weapons[0].varianceMin)
     console.log(this.unit.weapons[0].varianceMax)
@@ -358,6 +362,8 @@ export class DamageService {
       this.unit.jump.elements = [];
       this.unit.jump.imperils = [];
       this.unit.jump.ignore = 0;
+      this.unit.jump.jumpType = this.unit.jump.type;
+      this.unit.jump.type = this.unit.jump.framesList.length >= 3 ? 'chain' : 'finish';
       this.removePreviousJumpFromAbitilies();
       this.unit.abilities.push(this.unit.jump);
       this.manageDamage(this.unit.jump, round, 0, roundIndex, [JSON.parse(JSON.stringify(this.unit.jump))]);
@@ -716,54 +722,76 @@ export class DamageService {
 
 
   private getChainMod(round, abilityIndex, spark = false) {
-    this.chainService.units[0] = this.unit;
-    this.chainService.units[0].framesGap = 0;
-    this.chainService.units[0].selectedAbilities = [];
-    round.selectedAbilities.forEach((abilityId, indexRoundAbility) => {
-      let ability = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)]));
-      if (indexRoundAbility === abilityIndex) {
-        ability.base = this.getRealModifier(ability);
+    if (!round.chainMod) {
+      this.chainService.units[0] = this.unit;
+      this.chainService.units[0].framesGap = 0;
+      this.chainService.units[0].selectedAbilities = [];
+      let isChain = false;
+
+      round.selectedAbilities.forEach((abilityId, indexRoundAbility) => {
+        let ability = JSON.parse(JSON.stringify(this.unit.abilities[this.unitService.findPositionOfAbilityById(this.unit, abilityId)]));
+        if (indexRoundAbility === abilityIndex) {
+          ability.base = this.getRealModifier(ability);
+        }
+        this.chainService.units[0].selectedAbilities.push(ability);
+        if (ability.type === "chain") {
+          isChain = true;
+        }
+      });
+
+      round.chainMod = [];
+
+      console.log("@@@@&&&@&@&@&@&@&@&@&@")
+      console.log(this.chainService.units[0].selectedAbilities)
+      console.log("@@@@&&&@&@&@&@&@&@&@&@")
+
+      if (!isChain) {
+        if (this.chainService.units[0].selectedAbilities.length === 1 && this.chainService.units[0].selectedAbilities[0].jumpType && this.chainService.units[0].selectedAbilities.jumpType === "auto") {
+          round.chainMod[0] = 1;
+        } else {
+          this.chainService.units[0].selectedAbilities.forEach((ability, index) => {
+            round.chainMod[index] = 4;
+          });
+        }
+      } else {
+        this.chainService.units[1] = JSON.parse(JSON.stringify(this.chainService.units[0]));
+
+        if (!spark) {
+          this.chainService.units[1].framesGap = 1;
+        }
+
+        this.chainService.getChain();
+
+        let unitMultiplier = [];
+        let multiplierList = this.chainService.getMultiplierList();
+
+        multiplierList.forEach(multiplier => {
+          if (!unitMultiplier[multiplier.unit]) {
+            unitMultiplier[multiplier.unit] = [];
+          }
+          if (!unitMultiplier[multiplier.unit][multiplier.ability]) {
+            unitMultiplier[multiplier.unit][multiplier.ability] = 0;
+          }
+
+          let damageHit = this.chainService.units[0].selectedAbilities[multiplier.ability].base * (multiplier.weight / 100) * multiplier.multi;
+          unitMultiplier[multiplier.unit][multiplier.ability] += damageHit;
+        });
+
+        unitMultiplier.forEach((unitMulti, indexUnit) => {
+          unitMulti.forEach((abilityMulti, indexAbility) => {
+            let ability = this.chainService.units[0].selectedAbilities[indexAbility];
+            round.chainMod[indexAbility] = abilityMulti / ability.base;
+          });
+        });
+
+        console.log("== Get Chain Mod ==")
+        console.log(multiplierList)
+        console.log(unitMultiplier)
+        console.log(round.chainMod)
       }
-      this.chainService.units[0].selectedAbilities.push(ability)
-    });
-
-    this.chainService.units[1] = JSON.parse(JSON.stringify(this.chainService.units[0]));
-
-    if (!spark) {
-      this.chainService.units[1].framesGap = 1;
     }
 
-    this.chainService.getChain();
-
-    let unitMultiplier = [];
-    let multiplierList = this.chainService.getMultiplierList();
-
-    multiplierList.forEach(multiplier => {
-      if (!unitMultiplier[multiplier.unit]) {
-        unitMultiplier[multiplier.unit] = [];
-      }
-      if (!unitMultiplier[multiplier.unit][multiplier.ability]) {
-        unitMultiplier[multiplier.unit][multiplier.ability] = 0;
-      }
-
-      let damageHit = this.chainService.units[0].selectedAbilities[multiplier.ability].base * (multiplier.weight / 100) * multiplier.multi;
-      unitMultiplier[multiplier.unit][multiplier.ability] += damageHit;
-    });
-
-    round.chainMod = [];
-
-    unitMultiplier.forEach((unitMulti, indexUnit) => {
-      unitMulti.forEach((abilityMulti, indexAbility) => {
-        let ability = this.chainService.units[0].selectedAbilities[indexAbility];
-        round.chainMod[indexAbility] = abilityMulti / ability.base;
-      });
-    });
-
-    console.log("== Get Chain Mod ==")
-    console.log(unitMultiplier)
-    console.log(round.chainMod)
-
-    return unitMultiplier[1][abilityIndex];
+    return round.chainMod[abilityIndex];
   }
 
 
