@@ -29,8 +29,8 @@
         <div class="input-group-prepend">
           <label class="input-group-text" for="base_atk">base atk</label>
         </div>
-        <input type="text" class="form-control" placeholder="Base ATK" aria-label="Base ATK" aria-describedby="base_atk" [(ngModel)]="unit.stats.atk.base" disabled>
-        <input type="text" class="form-control" placeholder="Pot ATK" aria-label="Pot ATK" aria-describedby="pot_atk" [(ngModel)]="unit.stats.atk.potValue">
+        <input type="number" class="form-control" placeholder="Base ATK" aria-label="Base ATK" aria-describedby="base_atk" [(ngModel)]="unit.stats.atk.base" disabled>
+        <input type="number" class="form-control" placeholder="Pot ATK" aria-label="Pot ATK" aria-describedby="pot_atk" [(ngModel)]="unit.stats.atk.potValue">
         <div class="input-group-append">
           <button class="btn btn-secondary buttonPot" (click)="onChangePot('atk')">
             <img class="imgPot" src="assets/damage/{{ unit.stats.atk.potted }}_atk.png" />
@@ -44,8 +44,8 @@
         <div class="input-group-prepend">
           <label class="input-group-text" for="base_mag">base mag</label>
         </div>
-        <input type="text" class="form-control" placeholder="Base MAG" aria-label="Base MAG" aria-describedby="base_mag" [(ngModel)]="unit.stats.mag.base" disabled>
-        <input type="text" class="form-control" placeholder="Pot MAG" aria-label="Pot MAG" aria-describedby="pot_mag" [(ngModel)]="unit.stats.mag.potValue">
+        <input type="number" class="form-control" placeholder="Base MAG" aria-label="Base MAG" aria-describedby="base_mag" [(ngModel)]="unit.stats.mag.base" disabled>
+        <input type="number" class="form-control" placeholder="Pot MAG" aria-label="Pot MAG" aria-describedby="pot_mag" [(ngModel)]="unit.stats.mag.potValue">
         <div class="input-group-append">
           <button class="btn btn-secondary buttonPot" (click)="onChangePot('mag')">
             <img class="imgPot" src="assets/damage/{{ unit.stats.mag.potted }}_mag.png" />
@@ -59,14 +59,14 @@
         <div class="input-group-prepend">
           <label class="input-group-text" for="total_atk">total atk</label>
         </div>
-        <input type="text" class="form-control" placeholder="Total ATK" aria-label="Total ATK" aria-describedby="total_atk" [(ngModel)]="unit.stats.atk.total">
+        <input type="number" class="form-control" placeholder="Total ATK" aria-label="Total ATK" aria-describedby="total_atk" [(ngModel)]="unit.stats.atk.total">
       </div>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <label class="input-group-text" for="total_mag">total mag</label>
         </div>
-        <input type="text" class="form-control" placeholder="Total MAG" aria-label="Total MAG" aria-describedby="total_mag" [(ngModel)]="unit.stats.mag.total">
+        <input type="number" class="form-control" placeholder="Total MAG" aria-label="Total MAG" aria-describedby="total_mag" [(ngModel)]="unit.stats.mag.total">
       </div>
     </div>
 
@@ -81,7 +81,7 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="weapon{{i}}_atk">atk</label>
           </div>
-          <input type="text" class="form-control" placeholder="ATK" aria-label="ATK" aria-describedby="atk" [(ngModel)]="unit.damageWeapons[i].atk">
+          <input type="number" class="form-control" placeholder="ATK" aria-label="ATK" aria-describedby="atk" [(ngModel)]="unit.damageWeapons[i].atk">
         </div>
 
         <div class="input-group mb-3">
@@ -97,7 +97,7 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="weapon{{i}}_variance_min">Variance min</label>
           </div>
-          <input type="text" class="form-control" placeholder="Variance Min" aria-label="Variance Min" aria-describedby="atk" [(ngModel)]="unit.damageWeapons[i].varianceMin">
+          <input type="number" class="form-control" placeholder="Variance Min" aria-label="Variance Min" aria-describedby="atk" [(ngModel)]="unit.damageWeapons[i].varianceMin">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -107,7 +107,7 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="weapon{{i}}_variance_max">Variance max</label>
           </div>
-          <input type="text" class="form-control" placeholder="Variance Max" aria-label="Variance Max" aria-describedby="atk" [(ngModel)]="unit.damageWeapons[i].varianceMax">
+          <input type="number" class="form-control" placeholder="Variance Max" aria-label="Variance Max" aria-describedby="atk" [(ngModel)]="unit.damageWeapons[i].varianceMax">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -128,8 +128,8 @@
           <div class="input-group-prepend">
             <div class="input-group-text divPassiveKiller"><img class="imagePassiveKiller" src="assets/killers/{{race}}_physic.png" /><img class="imagePassiveKiller" src="assets/killers/{{race}}_magic.png" /></div>
           </div>
-          <input type="text" class="form-control" placeholder="{{race}} killer passive" value="{{getPassiveKiller(race)}}" disabled>
-          <input type="text" class="form-control inputBuff" placeholder="{{race}} killer buff" [(ngModel)]="unit.killers[race].buff">
+          <input type="number" class="form-control" placeholder="{{race}} killer passive" value="{{getPassiveKiller(race)}}" disabled>
+          <input type="number" class="form-control inputBuff" placeholder="{{race}} killer buff" [(ngModel)]="unit.killers[race].buff">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -139,7 +139,7 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="buff_atk">Buff ATK</label>
           </div>
-          <input type="text" class="form-control inputBuff" placeholder="buff_atk" aria-label="buff_atk" aria-describedby="buff_atk" [(ngModel)]="unit.buffs.atk">
+          <input type="number" class="form-control inputBuff" placeholder="buff_atk" aria-label="buff_atk" aria-describedby="buff_atk" [(ngModel)]="unit.buffs.atk">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -149,7 +149,7 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="buff_atk">Buff MAG</label>
           </div>
-          <input type="text" class="form-control inputBuff" placeholder="buff_mag" aria-label="buff_mag" aria-describedby="buff_mag" [(ngModel)]="unit.buffs.mag">
+          <input type="number" class="form-control inputBuff" placeholder="buff_mag" aria-label="buff_mag" aria-describedby="buff_mag" [(ngModel)]="unit.buffs.mag">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -168,9 +168,9 @@
           <div class="input-group-prepend">
             <label class="input-group-text">Monster DEF</label>
           </div>
-          <input type="text" class="form-control" placeholder="breakable" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def.breakable">
-          <input type="text" class="form-control" placeholder="unbreakable" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def.unbreakable">
-          <input type="text" class="form-control inputBreak" placeholder="break_def" aria-label="break_def" aria-describedby="break_def" [(ngModel)]="unit.breaks.def">
+          <input type="number" class="form-control" placeholder="breakable" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def.breakable">
+          <input type="number" class="form-control" placeholder="unbreakable" aria-label="monster_def" aria-describedby="monster_def" [(ngModel)]="monster.stats.def.unbreakable">
+          <input type="number" class="form-control inputBreak" placeholder="break_def" aria-label="break_def" aria-describedby="break_def" [(ngModel)]="unit.breaks.def">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -180,9 +180,9 @@
           <div class="input-group-prepend">
             <label class="input-group-text">Monster SPR</label>
           </div>
-          <input type="text" class="form-control" placeholder="breakable" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr.breakable">
-          <input type="text" class="form-control" placeholder="unbreakable" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr.unbreakable">
-          <input type="text" class="form-control inputBreak" placeholder="break_spr" aria-label="break_spr" aria-describedby="break_spr" [(ngModel)]="unit.breaks.spr">
+          <input type="number" class="form-control" placeholder="breakable" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr.breakable">
+          <input type="number" class="form-control" placeholder="unbreakable" aria-label="monster_spr" aria-describedby="monster_spr"[(ngModel)]="monster.stats.spr.unbreakable">
+          <input type="number" class="form-control inputBreak" placeholder="break_spr" aria-label="break_spr" aria-describedby="break_spr" [(ngModel)]="unit.breaks.spr">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -201,8 +201,8 @@
           <div class="input-group-prepend">
             <label class="input-group-text divResistance"><img class="imageResistance" src="assets/resistances/{{ element.name }}.png" /></label>
           </div>
-          <input type="text" class="form-control" placeholder="{{element.id}} resistance" [(ngModel)]="monster.resistances[element.id]">
-          <input type="text" class="form-control inputBreak" placeholder="{{element.id}} imperil" [(ngModel)]="unit.imperils[element.id]">
+          <input type="number" class="form-control" placeholder="{{element.id}} resistance" [(ngModel)]="monster.resistances[element.id]">
+          <input type="number" class="form-control inputBreak" placeholder="{{element.id}} imperil" [(ngModel)]="unit.imperils[element.id]">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>
@@ -288,7 +288,7 @@
                 Break {{ effect.value.stat }} : {{ effect.value.value }}%
               </div>
 
-              <div *ngIf="effect.type === 'modifierBoost'">
+              <div *ngIf="effect.type === 'modifierBoost' && unit.abilities[unitService.findPositionOfAbilityById(unit, effect.value.abilityId)]">
                 Boost {{ unit.abilities[unitService.findPositionOfAbilityById(unit, effect.value.abilityId)].names.en }} : +{{ effect.value.value }}%
               </div>
 

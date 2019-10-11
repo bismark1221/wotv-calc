@@ -4609,6 +4609,58 @@
         ]
       },
       {
+        "id": 205001005,
+        "names": {
+          "en": "Warrior of Dawn Galuf",
+          "tw": "曉之四戰士加拉夫",
+          "kr": "새벽의 전사 가라프",
+          "fr": "Galuf, Guerrier de l'Aube",
+          "de": "Krieger der Morgendämmerung Galuf",
+          "es": "Guerrero del Alba Galuf"
+        },
+        "abilities": [
+          {
+            "id": 230638,
+            "names": {
+              "en": "Roaring Blade",
+              "tw": "猛火之劍",
+              "kr": "맹화의 검",
+              "fr": "Lame rugissante",
+              "de": "Lodernde Klinge",
+              "es": "Hoja ardiente"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230639,
+            "names": {
+              "en": "Brilliant Blade",
+              "tw": "光彩之劍",
+              "kr": "광채의 검",
+              "fr": "Lame étincelante",
+              "de": "Funkelnde Klinge",
+              "es": "Hoja fulgurante"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230648,
+            "names": {
+              "en": "Blast to the Past",
+              "tw": "擊別過去",
+              "kr": "과거를 향한 일격",
+              "fr": "Prélude au futur",
+              "de": "Stoß in die Vergangenheit",
+              "es": "Sacudida al pasado"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 205001105,
         "names": {
           "en": "Warrior of Light Bartz",
@@ -7000,6 +7052,32 @@
               "fr": "Météore X",
               "de": "Doppelmeteo",
               "es": "Meteo dual"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 205000905,
+        "names": {
+          "en": "Dark Mage Exdeath",
+          "tw": "暗黑魔道士艾克斯迪司",
+          "kr": "암흑 마도사 엑스데스",
+          "fr": "Exdeath, Mage obscur",
+          "de": "Dunkelmagier Exdeath",
+          "es": "Mago oscuro Exdeath"
+        },
+        "abilities": [
+          {
+            "id": 509605,
+            "names": {
+              "en": "Ex-Meteor",
+              "tw": "艾克斯隕石",
+              "kr": "엑스 메테오",
+              "fr": "Météore EX",
+              "de": "Ex-Meteo",
+              "es": "Exmeteo"
             },
             "offset": 14,
             "castTime": 40
@@ -10853,38 +10931,6 @@
         ]
       },
       {
-        "id": 205001005,
-        "names": {
-          "en": 205001005
-        },
-        "abilities": [
-          {
-            "id": 230638,
-            "names": {
-              "en": "unknown ability name -- 230638"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 230639,
-            "names": {
-              "en": "unknown ability name -- 230639"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 230648,
-            "names": {
-              "en": "unknown ability name -- 230648"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
         "id": 215001105,
         "names": {
           "en": "Nyx",
@@ -14158,6 +14204,136 @@
         ]
       },
       {
+        "id": 205001305,
+        "names": {
+          "en": "Warrior of Light Krile",
+          "tw": "光之戰士可露兒",
+          "kr": "빛의 전사 쿠루루",
+          "fr": "Krile, Guerrière de la Lumière",
+          "de": "Kriegerin des Lichts Krile",
+          "es": "Guerrera de la Luz Krile"
+        },
+        "abilities": [
+          {
+            "id": 230573,
+            "names": {
+              "en": "Soft Thunder",
+              "tw": "弱雷電",
+              "kr": "소프트 선더",
+              "fr": "Foudre tranquille",
+              "de": "Sanfter Blitz",
+              "es": "Electro suave"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230574,
+            "names": {
+              "en": "Soft Aero",
+              "tw": "弱勁風",
+              "kr": "소프트 에어로",
+              "fr": "Vent tranquille",
+              "de": "Sanftes Aero",
+              "es": "Aero suave"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230583,
+            "names": {
+              "en": "Mighty Thunder",
+              "tw": "強力雷電",
+              "kr": "마이티 선더",
+              "fr": "Foudre brutale",
+              "de": "Gewaltiger Blitz",
+              "es": "Electro potente"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230584,
+            "names": {
+              "en": "Mighty Aero",
+              "tw": "強力勁風",
+              "kr": "마이티 에어로",
+              "fr": "Vent brutal",
+              "de": "Gewaltiges Aero",
+              "es": "Aero potente"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230592,
+            "names": {
+              "en": "Furious Thunder",
+              "tw": "激怒雷電",
+              "kr": "퓨리어스 선더",
+              "fr": "Foudre furieuse",
+              "de": "Rasender Blitz",
+              "es": "Electro furioso"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 230593,
+            "names": {
+              "en": "Furious Aero",
+              "tw": "激怒勁風",
+              "kr": "퓨리어스 에어로",
+              "fr": "Vent furieux",
+              "de": "Rasendes Aero",
+              "es": "Aero furioso"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 800021,
+            "names": {
+              "en": "Wind Drake's Insight II",
+              "tw": "飛龍閃爍 II",
+              "kr": "비룡의 섬광 II",
+              "fr": "Perspicacité du dragon du vent II",
+              "de": "Geistesblitz des Winddrachen II",
+              "es": "Perspicacia del dragón de viento II"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950097,
+            "names": {
+              "en": "Wind Drake's Insight",
+              "tw": "飛龍閃爍",
+              "kr": "비룡의 섬광",
+              "fr": "Perspicacité du dragon du vent",
+              "de": "Geistesblitz des Winddrachen",
+              "es": "Perspicacia del dragón de viento"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950098,
+            "names": {
+              "en": "Wind Drake's Insight I",
+              "tw": "飛龍閃爍 I",
+              "kr": "비룡의 섬광 I",
+              "fr": "Perspicacité du dragon du vent I",
+              "de": "Geistesblitz des Winddrachen I",
+              "es": "Perspicacia del dragón de viento I"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 206001905,
         "names": {
           "en": "King Edgar of Figaro",
@@ -15011,30 +15187,6 @@
         ]
       },
       {
-        "id": 205001305,
-        "names": {
-          "en": 205001305
-        },
-        "abilities": [
-          {
-            "id": 230583,
-            "names": {
-              "en": "unknown ability name -- 230583"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 230592,
-            "names": {
-              "en": "unknown ability name -- 230592"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
         "id": 207001105,
         "names": {
           "en": "Zack",
@@ -15503,25 +15655,14 @@
       {
         "id": 205001305,
         "names": {
-          "en": 205001305
+          "en": "Warrior of Light Krile",
+          "tw": "光之戰士可露兒",
+          "kr": "빛의 전사 쿠루루",
+          "fr": "Krile, Guerrière de la Lumière",
+          "de": "Kriegerin des Lichts Krile",
+          "es": "Guerrera de la Luz Krile"
         },
         "abilities": [
-          {
-            "id": 230584,
-            "names": {
-              "en": "unknown ability name -- 230584"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 230593,
-            "names": {
-              "en": "unknown ability name -- 230593"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
           {
             "id": 20390,
             "names": {
@@ -17441,21 +17582,23 @@
       {
         "id": 205000905,
         "names": {
-          "en": 205000905
+          "en": "Dark Mage Exdeath",
+          "tw": "暗黑魔道士艾克斯迪司",
+          "kr": "암흑 마도사 엑스데스",
+          "fr": "Exdeath, Mage obscur",
+          "de": "Dunkelmagier Exdeath",
+          "es": "Mago oscuro Exdeath"
         },
         "abilities": [
           {
-            "id": 800023,
+            "id": 230610,
             "names": {
-              "en": "unknown ability name -- 800023"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 230612,
-            "names": {
-              "en": "unknown ability name -- 230612"
+              "en": "Aero Spark",
+              "tw": "勁風火花",
+              "kr": "에어로 스파크",
+              "fr": "Étincelle de vent",
+              "de": "Aero-Funken",
+              "es": "Aerochispa"
             },
             "offset": 14,
             "castTime": 50
@@ -17463,15 +17606,25 @@
           {
             "id": 230611,
             "names": {
-              "en": "unknown ability name -- 230611"
+              "en": "Earth Tomb",
+              "tw": "大地重壓",
+              "kr": "어스 글레이브",
+              "fr": "Tombe de terre",
+              "de": "Erdgrab",
+              "es": "Tumba telúrica"
             },
             "offset": 14,
             "castTime": 50
           },
           {
-            "id": 230610,
+            "id": 230612,
             "names": {
-              "en": "unknown ability name -- 230610"
+              "en": "Dark Swallow",
+              "tw": "暗黑吞噬",
+              "kr": "다크 스왈로우",
+              "fr": "Ténèbres dévorantes",
+              "de": "Dunkelschlinger",
+              "es": "Tinieblas voraces"
             },
             "offset": 14,
             "castTime": 50
@@ -17479,7 +17632,12 @@
           {
             "id": 230620,
             "names": {
-              "en": "unknown ability name -- 230620"
+              "en": "Aero Gust",
+              "tw": "勁風強襲",
+              "kr": "에어로 거스트",
+              "fr": "Aérolacération",
+              "de": "Aero-Böe",
+              "es": "Aerorráfaga"
             },
             "offset": 14,
             "castTime": 50
@@ -17487,7 +17645,12 @@
           {
             "id": 230621,
             "names": {
-              "en": "unknown ability name -- 230621"
+              "en": "Earth Stab",
+              "tw": "大地突刺",
+              "kr": "어스 스탭",
+              "fr": "Empalement tellurique",
+              "de": "Erdstich",
+              "es": "Cuchillada telúrica"
             },
             "offset": 14,
             "castTime": 50
@@ -17495,7 +17658,76 @@
           {
             "id": 230622,
             "names": {
-              "en": "unknown ability name -- 230622"
+              "en": "Dark Ruin",
+              "tw": "暗黑符文",
+              "kr": "다크 루인",
+              "fr": "Ruine obscure",
+              "de": "Finstere Ruine",
+              "es": "Ruina oscura"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 509603,
+            "names": {
+              "en": "Ex-Flare",
+              "tw": "艾克斯核爆",
+              "kr": "엑스 플레어",
+              "fr": "Brasier EX",
+              "es": "Exfulgor"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 509606,
+            "names": {
+              "en": "Complete Void",
+              "tw": "將一切歸於虛無",
+              "kr": "모든 것을 무로",
+              "fr": "Néant absolu",
+              "de": "Absolutes Nichts",
+              "es": "Vacío absoluto"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 800023,
+            "names": {
+              "en": "Void Wave II",
+              "tw": "虛無波動 II",
+              "kr": "무의 파동 II",
+              "fr": "Vague du Néant II",
+              "de": "Welle des Nichts II",
+              "es": "Ola de Vacío II"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 950107,
+            "names": {
+              "en": "Void Wave",
+              "tw": "虛無波動",
+              "kr": "무의 파동",
+              "fr": "Vague du Néant",
+              "de": "Welle des Nichts",
+              "es": "Ola de Vacío"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 950108,
+            "names": {
+              "en": "Void Wave I",
+              "tw": "虛無波動 I",
+              "kr": "무의 파동 I",
+              "fr": "Vague du Néant I",
+              "de": "Welle des Nichts I",
+              "es": "Ola de Vacío I"
             },
             "offset": 14,
             "castTime": 50

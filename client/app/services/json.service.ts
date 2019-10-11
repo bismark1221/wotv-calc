@@ -379,6 +379,10 @@ export class JsonService {
       this.ffbeChainUnits[unitId].abilities[id].dualable = false;
     }
 
+    if (lb) {
+      this.ffbeChainUnits[unitId].abilities[id].isLB = true;
+    }
+
     this.updateOffset(unitId, id, ability);
     this.checkEffects(unitId, id, ability, dataId, rarity, level);
   }
@@ -446,6 +450,7 @@ export class JsonService {
       this.updateImbues(effect, unitId, id, index);
       this.updateBoostModifier(effect, unitId, id, index, rarity);
       this.updateKillers(effect, unitId, id, index, rarity);
+      this.updateLBDamage(effect, unitId, id, index, rarity);
     });
 
     let effectOrder = [];
@@ -951,6 +956,38 @@ export class JsonService {
           value: find.effect[3],
           rarity: rarity
         });
+      });
+    }
+  }
+
+  private updateLBDamage(rawEffect, unitId, id, index, rarity) {
+    //[0, 3, 120, [40,  3,  1,  1]]
+    let find = this.findEffect(rawEffect, [120]);
+
+    if (find) {
+      if (!this.ffbeChainUnits[unitId].abilities[id].boostLB) {
+        this.ffbeChainUnits[unitId].abilities[id].boostLB = [];
+      }
+
+      this.ffbeChainUnits[unitId].abilities[id].boostLB.push({
+        value: find.effect[0],
+        turn: find.effect[1]
+      });
+
+      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "boostLB";
+    }
+
+    //[0, 3, 68, [25]]]
+    find = this.findEffect(rawEffect, [68]);
+
+    if (find) {
+      if (!this.ffbeChainUnits[unitId].passiveLBDamage) {
+        this.ffbeChainUnits[unitId].passiveLBDamage = [];
+      }
+
+      this.ffbeChainUnits[unitId].passiveLBDamage.push({
+        value: find.effect[0],
+        rarity: rarity
       });
     }
   }

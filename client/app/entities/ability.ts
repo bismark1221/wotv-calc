@@ -18,11 +18,13 @@ export class Ability {
   base: number = 0;
 
   dualable?: boolean = true;
+  isLB?: boolean = false;
 
   framesList?: any[] = [0];
   elements?: string[] = [];
   imperils?: any[] = [];
   boostModifiers?: any[] = [];
+  boostLB?: any[] = [];
   hitDamage?: any[] = [];
   range?: any = {
     min: 0,
@@ -52,9 +54,11 @@ export class Ability {
 
     this.ignore = ability.ignore ? ability.ignore : this.ignore;
     this.dualable = typeof ability.dualable == 'boolean' ? ability.dualable : this.dualable;
+    this.isLB = typeof ability.isLB == 'boolean' ? ability.isLB : this.isLB;
     this.elements = ability.elements ? ability.elements : this.elements;
     this.imperils = ability.imperils ? ability.imperils : this.imperils;
     this.boostModifiers = ability.boostModifiers ? ability.boostModifiers : this.boostModifiers;
+    this.boostLB = ability.boostLB ? ability.boostLB : this.boostLB;
     this.breaks = ability.breaks ? ability.breaks : this.breaks;
     this.buffs = ability.buffs ? ability.buffs : this.buffs;
     this.killers = ability.killers ? ability.killers : this.killers;

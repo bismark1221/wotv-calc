@@ -658,12 +658,15 @@ export class ChainingComponent implements OnInit {
 
     modalRef.componentInstance.unit = this.chain[position];
 
-    modalRef.componentInstance.passEntry.subscribe((receivedEntry) => {
+    modalRef.result.then((result) => {
       this.viewOptions = -1;
       this.navService.updateMenu(false);
-      this.chain[position] = receivedEntry;
       this.saveUnit(position);
-    })
+    }, (reason) => {
+      this.viewOptions = -1;
+      this.navService.updateMenu(false);
+      this.saveUnit(position);
+    });
 
     this.angulartics.eventTrack.next({ action: 'showOptions', properties: { category: 'chain' }});
   }

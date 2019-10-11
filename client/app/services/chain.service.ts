@@ -69,6 +69,9 @@ export class ChainService {
 
     this.hitsDataSubject.next(this.hits);
     this.unitsDataSubject.next(this.units);
+
+    console.log("CHAIN CHAIN CHAIN")
+    console.log(this.units)
   }
 
   // Once Upon A Time
@@ -137,7 +140,7 @@ export class ChainService {
         let elements = [];
 
         unit.selectedAbilities.forEach(ability => {
-          if (ability.damage === 'physic') {
+          if (ability.damage !== 'magic') {
             unit.weapons.forEach(weapon => {
               if (weapon !== '' && elements.findIndex(x => x === weapon) === -1) {
                 elements.push(weapon);

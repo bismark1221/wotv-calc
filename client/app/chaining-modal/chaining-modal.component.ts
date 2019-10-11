@@ -452,7 +452,6 @@ export class ChainingModalComponent implements OnInit {
   }
 
   close() {
-    this.passEntry.emit(this.unit);
     this.activeModal.close();
   }
 }

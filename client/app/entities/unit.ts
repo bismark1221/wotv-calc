@@ -65,6 +65,7 @@ export class Unit {
     spr: 0
   };
   passiveBoostModifiers = [];
+  passiveLBDamage = [];
   passiveKillers = [];
 
   constructFromJson(unit: Unit, translateService: TranslateService, damage: boolean = false): void {
@@ -105,6 +106,7 @@ export class Unit {
       this.rarity.value = unit.rarity && unit.rarity.value ? unit.rarity.value : this.rarity.max;
       this.passiveBoostModifiers = unit.passiveBoostModifiers ? unit.passiveBoostModifiers : this.passiveBoostModifiers;
       this.passiveKillers = unit.passiveKillers ? unit.passiveKillers : this.passiveKillers;
+      this.passiveLBDamage = unit.passiveLBDamage ? unit.passiveLBDamage : this.passiveLBDamage;
     }
   }
 
