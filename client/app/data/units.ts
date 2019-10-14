@@ -3659,7 +3659,7 @@ export const UNITS: any[] = [
         },
         "base": 3000,
         "hitDamage": [
-          7, 7, 7, 7, 7, 7, 7, 7, 44
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 10
         ],
         "dualable": false,
         "offset": 8,
@@ -3678,7 +3678,7 @@ export const UNITS: any[] = [
           }
         ],
         "framesList": [
-          42, 6, 6, 6, 6, 6, 6, 6, 6
+          147, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
         ]
       }
     ],
