@@ -41,6 +41,7 @@ export class Ability {
   jump?;
   delayAttack?;
   dot?;
+  consecutive?;
 
   constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
@@ -100,6 +101,10 @@ export class Ability {
 
     if (ability.dot) {
       this.dot = ability.dot;
+    }
+
+    if (ability.consecutive) {
+      this.consecutive = ability.consecutive;
     }
   }
 

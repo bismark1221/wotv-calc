@@ -49823,8 +49823,7 @@ export const UNITS: any[] = [
         "effectOrder": [
           "imperil",
           "boostModifier",
-          "boostModifier",
-          "boostLB"
+          "boostModifier"
         ],
         "imperils": [
           {
@@ -49854,12 +49853,6 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           0
-        ],
-        "boostLB": [
-          {
-            "value": 50,
-            "turn": 2
-          }
         ]
       },
       {
@@ -62669,93 +62662,6 @@ export const UNITS: any[] = [
         ]
       },
       {
-        "dataId": 20210,
-        "names": {
-          "en": "Blizzaga",
-          "tw": "大暴雪",
-          "kr": "블리자가",
-          "fr": "Glace X",
-          "de": "Eisga",
-          "es": "Hielo++"
-        },
-        "damage": "magic",
-        "base": 180,
-        "hitDamage": [
-          100
-        ],
-        "castTime": 40,
-        "magicType": "black",
-        "elements": [
-          "ice"
-        ],
-        "dualable": false,
-        "offset": 14,
-        "effectOrder": [
-          "damage"
-        ],
-        "framesList": [
-          150
-        ]
-      },
-      {
-        "dataId": 20220,
-        "names": {
-          "en": "Thundaga",
-          "tw": "大雷電",
-          "kr": "선더가",
-          "fr": "Foudre X",
-          "de": "Blitzga",
-          "es": "Electro++"
-        },
-        "damage": "magic",
-        "base": 180,
-        "hitDamage": [
-          100
-        ],
-        "castTime": 40,
-        "magicType": "black",
-        "elements": [
-          "lightning"
-        ],
-        "dualable": false,
-        "offset": 14,
-        "effectOrder": [
-          "damage"
-        ],
-        "framesList": [
-          70
-        ]
-      },
-      {
-        "dataId": 20200,
-        "names": {
-          "en": "Firaga",
-          "tw": "大火焰",
-          "kr": "파이가",
-          "fr": "Feu X",
-          "de": "Feuga",
-          "es": "Piro++"
-        },
-        "damage": "magic",
-        "base": 180,
-        "hitDamage": [
-          100
-        ],
-        "castTime": 40,
-        "magicType": "black",
-        "elements": [
-          "fire"
-        ],
-        "dualable": false,
-        "offset": 14,
-        "effectOrder": [
-          "damage"
-        ],
-        "framesList": [
-          150
-        ]
-      },
-      {
         "dataId": 230606,
         "names": {
           "en": "Void Impact",
@@ -62945,33 +62851,6 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           76, 43
-        ]
-      },
-      {
-        "dataId": 20430,
-        "names": {
-          "en": "Meteor",
-          "tw": "隕石",
-          "kr": "메테오",
-          "fr": "Météore",
-          "de": "Meteo",
-          "es": "Meteo"
-        },
-        "damage": "magic",
-        "base": 250,
-        "hitDamage": [
-          100
-        ],
-        "castTime": 40,
-        "magicType": "black",
-        "dualable": false,
-        "offset": 14,
-        "effectOrder": [
-          "damage"
-        ],
-        "ignore": 25,
-        "framesList": [
-          350
         ]
       },
       {
@@ -64712,7 +64591,12 @@ export const UNITS: any[] = [
           "es": "Electro furioso"
         },
         "damage": "magic",
-        "base": 2000,
+        "base": 800,
+        "consecutive" : {
+          "turns": 4,
+          "value": 300,
+          "max": 2000
+        },
         "hitDamage": [
           10, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],

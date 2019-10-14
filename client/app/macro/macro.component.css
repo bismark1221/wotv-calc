@@ -30,6 +30,11 @@
   text-align: center;
 }
 
+.bluestack_macro {
+  width: 600px;
+  text-align: center;
+}
+
 .littleMarginTop {
   margin-top: 10px;
 }
@@ -105,18 +110,26 @@
   .memu_macro {
     width: 300px;
   }
+
+  .bluestack_macro {
+    width: 300px;
+  }
 }
 
 @media (max-width: 380px) {
-  .memu_macro {
-    width: 250px;
-  }
-
   .nox_macro {
     width: 250px;
   }
 
   .ld_macro {
+    width: 250px;
+  }
+
+  .memu_macro {
+    width: 250px;
+  }
+
+  .bluestack_macro {
     width: 250px;
   }
 }

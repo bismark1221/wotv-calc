@@ -102,6 +102,10 @@ export class DamageService {
   bestKillers = {};
   rounds = [];
 
+  lastConsecutive = {
+    id: 0,
+    turns: 0
+  };
 
   constructor(
     private unitService: UnitService,
@@ -200,6 +204,11 @@ export class DamageService {
     this.bestBuffs = {
       atk: 0,
       mag: 0
+    };
+
+    this.lastConsecutive = {
+      id: 0,
+      turns: 0
     };
 
     this.bestElementResistances = {};
@@ -438,7 +447,7 @@ export class DamageService {
     }
 
     totalDamage *= finalVariance;
-    totalDamage /+ 100;
+    totalDamage /= 100;
 
 
     // console.log("##### RESULT DAMAGE #####")
@@ -538,6 +547,22 @@ export class DamageService {
       });
       modifier *= boostValue;
     } else {
+      if (ability.consecutive) {
+        if (this.lastConsecutive.id !== ability.id) {
+          this.lastConsecutive = {
+            "id": ability.id,
+            "turns": 0
+          }
+        }
+
+        if (this.lastConsecutive.turns <= ability.consecutive.turns) {
+          this.lastConsecutive.turns += 1;
+        }
+        console.log("consecutive damage : " + (ability.consecutive.value * this.lastConsecutive.turns))
+
+        modifier += ability.consecutive.value * this.lastConsecutive.turns;
+      }
+
       this.unit.boostModifier.forEach(boost => {
         if (boost.id === ability.id) {
           modifier += boost.value;
@@ -545,6 +570,8 @@ export class DamageService {
         }
       });
     }
+
+    console.log("total : " + modifier)
 
     return modifier;
   }

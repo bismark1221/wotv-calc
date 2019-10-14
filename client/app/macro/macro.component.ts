@@ -15,11 +15,13 @@ export class MacroComponent implements OnInit {
   memu6: string = '';
   nox: string = '';
   ld: string = '';
+  bluestack: string = '';
   openedMacro: string = 'memu';
   emulatorList: string[] = [
     'memu',
     'nox',
-    'ld'
+    'ld',
+    'bluestack'
   ]
 
   constructor(private chainService: ChainService) { }
@@ -49,6 +51,7 @@ export class MacroComponent implements OnInit {
     this.nox = '';
     this.ld = `{
     "operations": [`;
+    this.bluestack = `[`;
 
     let firstHits = this.chainService.calculateFramesDiffForFirstHits();
     let lastFrame = 0;
@@ -58,6 +61,10 @@ export class MacroComponent implements OnInit {
       this.addMacroHit(frame * 1 / 60 * 1000, hit.position, index);
       lastFrame = frame;
     });
+
+    this.bluestack += `
+    ]`;
+
     this.ld += `
     ],
     "recordInfo": {
@@ -79,7 +86,9 @@ export class MacroComponent implements OnInit {
     let memuMilliseconds: number = 1000;
     let noxMilliseconds: number = 1;
     let ldMilliseconds: number = 1;
+    let bluestackMilliseconds: number = 1;
     let memuSeparator: number = 100;
+    let bluestacSeparator: number = 100;
     let noxSeparator: number = 1;
 
     let positions = [
@@ -284,6 +293,104 @@ export class MacroComponent implements OnInit {
                     "state": 0
                 }
             ]
+        }`;
+
+    let bluestackPosisions = [
+      [
+        {
+          width: "25.0",
+          height: "66.0"
+        },
+        {
+          width: "25.0",
+          height: "76.0"
+        },
+        {
+          width: "25.0",
+          height: "86.0"
+        },
+        {
+          width: "73.0",
+          height: "66.0"
+        },
+        {
+          width: "73.0",
+          height: "76.0"
+        },
+        {
+          width: "73.0",
+          height: "86.0"
+        }
+      ],
+      [
+        {
+          width: "25.0",
+          height: "66.0"
+        },
+        {
+          width: "25.0",
+          height: "76.0"
+        },
+        {
+          width: "25.0",
+          height: "86.0"
+        },
+        {
+          width: "73.0",
+          height: "66.0"
+        },
+        {
+          width: "73.0",
+          height: "76.0"
+        },
+        {
+          width: "73.0",
+          height: "86.0"
+        }
+      ],
+      [
+        {
+          width: "25.0",
+          height: "66.0"
+        },
+        {
+          width: "25.0",
+          height: "76.0"
+        },
+        {
+          width: "25.0",
+          height: "86.0"
+        },
+        {
+          width: "73.0",
+          height: "66.0"
+        },
+        {
+          width: "73.0",
+          height: "76.0"
+        },
+        {
+          width: "73.0",
+          height: "86.0"
+        }
+      ]
+    ];
+
+    this.bluestack += index !== 0 ? ',' : '';
+    this.bluestack +=`
+        {
+            "Timestamp": ` + String(bluestacSeparator + Math.round(bluestackMilliseconds * frame)) + `,
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "X": ` + bluestackPosisions[positionRatio][position].width + `,
+            "Y": ` + bluestackPosisions[positionRatio][position].height + `
+        },
+        {
+            "Timestamp": ` + String(bluestacSeparator + Math.round(bluestackMilliseconds * frame)) + `,
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "X": ` + bluestackPosisions[positionRatio][position].width + `,
+            "Y": ` + bluestackPosisions[positionRatio][position].height + `
         }`;
   }
 }

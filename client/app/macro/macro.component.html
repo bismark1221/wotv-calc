@@ -64,5 +64,14 @@
         </span>
       </div>
     </div>
+    <div class="result_macro bluestack_macro littleMarginTop" *ngIf="openedMacro == 'bluestack'">
+      <label for="macro_bluestack">{{ 'macro.bluestack' | translate }}</label>
+      <div class="input-group macro_input_group">
+        <textarea class="form-control macro_text" rows="13" id="macro_bluestack" #macro_bluestack [(ngModel)]="bluestack"></textarea>
+        <span class="input-group-addon">
+          <button class="btn btn-secondary copy_button" [ngxClipboard]="macro_bluestack">{{ 'macro.copy' | translate }}</button>
+        </span>
+      </div>
+    </div>
   </div>
 </div>

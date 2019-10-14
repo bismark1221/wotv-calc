@@ -1,6 +1,26 @@
-export const MONSTERS: any[] = [,
+export const MONSTERS: any[] = [
   {
     id: 0,
+    names:{
+      en: "Calculator"
+    },
+    stats: {
+      def: {
+        breakable: 1
+      },
+      spr: {
+        breakable: 1
+      }
+    },
+    races: [],
+    breaks: {
+      def: true,
+      spr: true
+    },
+    type: "wooden"
+  },
+  {
+    id: 1,
     names:{
       en: "Abominable Wooden Soldier"
     },
@@ -22,7 +42,7 @@ export const MONSTERS: any[] = [,
     type: "wooden"
   },
   {
-    id: 1,
+    id: 100,
     names: {
       en: "Eggsecutioner Eggstraordinaire"
     },

@@ -757,7 +757,11 @@ export class JsonService {
     // magic with upgrade : [2, 1, 72, [0,  0,  150,  100,  100,  5]]
     find = this.findEffect(rawEffect, [72]);
     if (find) {
-      find.damage = find.effect[2] + find.effect[4] * find.effect[5];
+      find.damage = find.effect[2];
+      this.ffbeChainUnits[unitId].abilities[id].consecutive = {
+        "turns": find.effect[5],
+        "value": find.effect[4]
+      };
       this.ffbeChainUnits[unitId].abilities[id].damage = "magic";
       return find;
     }
