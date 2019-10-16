@@ -3691,7 +3691,8 @@ export const UNITS: any[] = [
           910205
         ]
       }
-    ]
+    ],
+    maxChainCap: 6
   },
   {
     id: 26,
