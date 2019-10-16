@@ -51040,7 +51040,8 @@ export const UNITS: any[] = [
           509520
         ]
       }
-    ]
+    ],
+    maxChainCap: 6
   },
   {
     "dataId": 274,
