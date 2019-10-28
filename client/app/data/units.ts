@@ -64877,5 +64877,2850 @@ export const UNITS: any[] = [
         "rarity": 5
       }
     ]
+  },
+  {
+    "dataId": 301,
+    "names": {
+      "en": "Chocobo Fina",
+      "tw": "菲娜&陸行鳥",
+      "kr": "초코보&피나",
+      "fr": "Fina à dos de chocobo",
+      "de": "Chocobo-Fina",
+      "es": "Fina en chocobo"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 89,
+          "pot": 16
+        },
+        "mag": {
+          "base": 99,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 116,
+          "pot": 26
+        },
+        "mag": {
+          "base": 129,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 152,
+          "pot": 40
+        },
+        "mag": {
+          "base": 168,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 230740,
+        "names": {
+          "en": "Choco Dash - Wind",
+          "tw": "陸行鳥衝擊·風",
+          "kr": "초코 대쉬·바람",
+          "fr": "Choco-bond - Vent",
+          "de": "Choco-Sprint - Wind",
+          "es": "Chocobogalope - Viento"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.285714285714286, 85.71428571428571
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "wind",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230741,
+        "names": {
+          "en": "Burst - MP Regen",
+          "tw": "爆裂·MP再生",
+          "kr": "버스트·MP 리제네",
+          "fr": "Éclat - Régénération de PM",
+          "de": "Einschlag - MP-Regena",
+          "es": "Descarga - Recuperación de PM"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230742,
+        "names": {
+          "en": "Regen Shot",
+          "tw": "射擊·再生",
+          "kr": "슛·리제네",
+          "fr": "Tir de régénération",
+          "de": "Regena-Schuss",
+          "es": "Disparo revitalia"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230743,
+        "names": {
+          "en": "Limit Ray",
+          "tw": "極限光束",
+          "kr": "리미트 레이",
+          "fr": "Rayon de limite",
+          "de": "Limitstrahl",
+          "es": "Rayo límite"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230745,
+        "names": {
+          "en": "Choco Dash - Light",
+          "tw": "陸行鳥衝擊·光",
+          "kr": "초코 대쉬·빛",
+          "fr": "Choco-bond - Lumière",
+          "de": "Choco-Sprint - Licht",
+          "es": "Chocobogalope - Luz"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.285714285714286, 85.71428571428571
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230746,
+        "names": {
+          "en": "Super Choco Dash",
+          "tw": "超級陸行鳥衝擊",
+          "kr": "슈퍼 초코 대쉬",
+          "fr": "Choco-bond amélioré",
+          "de": "Super Choco-Sprint",
+          "es": "Chocobogalope+"
+        },
+        "damage": "magic",
+        "base": 750,
+        "hitDamage": [
+          2.8, 2.8, 2.8, 2.8, 2.8, 2.8, 3.2, 80
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230750,
+        "names": {
+          "en": "Spiritual Meditation",
+          "tw": "冥思",
+          "kr": "묵상",
+          "fr": "Méditation spirituelle",
+          "de": "Mentales Meditieren",
+          "es": "Meditación espiritual"
+        },
+        "damage": "magic",
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 509663,
+        "names": {
+          "en": "Choco Reraise",
+          "tw": "陸行鳥重生",
+          "kr": "초코 리레이즈",
+          "fr": "Choco-auréole",
+          "de": "Choco-Auferstehung",
+          "es": "Chocoautolázaro"
+        },
+        "damage": "magic",
+        "base": 2800,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 4, 4.571428571428572, 71.42857142857143
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 100022207,
+        "names": {
+          "en": "ChocoMeteor",
+          "tw": "陸行鳥隕石",
+          "kr": "초코 메테오",
+          "fr": "Choco-météore",
+          "de": "Choco-Meteo",
+          "es": "Chocometeo"
+        },
+        "damage": "magic",
+        "base": 3100,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 230740,
+            "value": 900,
+            "turn": 4,
+            "uniqueIdentifier": 11168
+          },
+          {
+            "id": 230745,
+            "value": 900,
+            "turn": 4,
+            "uniqueIdentifier": 11168
+          },
+          {
+            "id": 230746,
+            "value": 900,
+            "turn": 4,
+            "uniqueIdentifier": 11168
+          },
+          {
+            "id": 230750,
+            "value": 900,
+            "turn": 4,
+            "uniqueIdentifier": 11168
+          },
+          {
+            "id": 509663,
+            "value": 900,
+            "turn": 4,
+            "uniqueIdentifier": 11168
+          }
+        ],
+        "framesList": [
+          138, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 509859,
+        "names": {
+          "en": "Chocobo Fever! II",
+          "tw": "陸行鳥狂熱！II",
+          "kr": "초코보 피버! II",
+          "fr": "Choco-fièvre ! II",
+          "de": "Chocobo-Fieber! II",
+          "es": "¡Frenesí chocobo! II"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "boostLB",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 230746,
+            "value": 300,
+            "turn": 10,
+            "uniqueIdentifier": 1414
+          }
+        ],
+        "boostLB": [
+          {
+            "value": 75,
+            "turn": 10
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 10
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230740,
+          230741,
+          230742,
+          230743,
+          230744,
+          230745,
+          230746,
+          230747,
+          230749,
+          230750,
+          950111,
+          950112,
+          800053,
+          230751,
+          230752,
+          509663
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          230740,
+          230741,
+          230742,
+          230743,
+          230744,
+          230745,
+          230746,
+          230747,
+          230749,
+          230750,
+          950111,
+          950112,
+          800053,
+          230751,
+          230752,
+          509663
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 230740,
+        "value": 200,
+        "rarity": 7
+      },
+      {
+        "id": 230745,
+        "value": 200,
+        "rarity": 7
+      },
+      {
+        "id": 230746,
+        "value": 200,
+        "rarity": 7
+      },
+      {
+        "id": 230750,
+        "value": 200,
+        "rarity": 7
+      },
+      {
+        "id": 509663,
+        "value": 200,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 302,
+    "names": {
+      "en": "Karten",
+      "tw": "卡爾頓",
+      "kr": "카튼",
+      "de": "Karsten"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 24
+        },
+        "mag": {
+          "base": 85,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 161,
+          "pot": 34
+        },
+        "mag": {
+          "base": 110,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 210,
+          "pot": 65
+        },
+        "mag": {
+          "base": 143,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 913184,
+        "names": {
+          "en": "Full Moon - Bestial Wrath",
+          "tw": "滿月 - 獸性之怒",
+          "kr": "만월·야성의 분노",
+          "fr": "Pleine lune - Colère bestiale",
+          "de": "Vollmond - Bestialischer Zorn",
+          "es": "Luna llena - Ira bestial"
+        },
+        "base": 250,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913185,
+        "names": {
+          "en": "Full Moon - Bestial Wrath + 1",
+          "tw": "滿月 - 獸性之怒 + 1",
+          "kr": "만월·야성의 분노 + 1",
+          "fr": "Pleine lune - Colère bestiale + 1",
+          "de": "Vollmond - Bestialischer Zorn + 1",
+          "es": "Luna llena - Ira bestial + 1"
+        },
+        "base": 350,
+        "hitDamage": [
+          1.7142857142857144, 1.7142857142857144, 1.7142857142857144, 1.7142857142857144, 1.7142857142857144, 1.7142857142857144, 2, 2, 85.71428571428571
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913188,
+        "names": {
+          "en": "Full Moon - Bestial Slash",
+          "tw": "滿月 - 獸斬",
+          "kr": "만월·야수의 참격",
+          "fr": "Pleine lune - Taillade bestiale",
+          "de": "Vollmond - Bestialischer Schlitzer",
+          "es": "Luna llena - Sablazo bestial"
+        },
+        "base": 240,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913189,
+        "names": {
+          "en": "Full Moon - Bestial Slash + 1",
+          "tw": "滿月 - 獸斬 + 1",
+          "kr": "만월·야수의 참격 + 1",
+          "fr": "Pleine lune - Taillade bestiale + 1",
+          "de": "Vollmond - Bestialischer Schlitzer + 1",
+          "es": "Luna llena - Sablazo bestial + 1"
+        },
+        "base": 200,
+        "hitDamage": [
+          1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.75, 1.75, 87.5
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913190,
+        "names": {
+          "en": "Full Moon - Ravenous Appetite",
+          "tw": "滿月 - 貪食",
+          "kr": "만월·탐식",
+          "fr": "Pleine lune - Appétit vorace",
+          "de": "Vollmond - Unersättlicher Hunger",
+          "es": "Luna llena - Apetito voraz"
+        },
+        "base": 280,
+        "hitDamage": [
+          8.571428571428571, 8.571428571428571, 8.571428571428571, 8.571428571428571, 9.285714285714285, 13.571428571428571, 14.285714285714286, 3.428571428571429, 3.428571428571429, 3.428571428571429, 3.428571428571429, 3.7142857142857144, 5.428571428571429, 5.714285714285714
+        ],
+        "castTime": 54,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          35, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 913195,
+        "names": {
+          "en": "Full Moon - Shadow Fire",
+          "tw": "滿月 - 影火",
+          "kr": "만월·그림자의 화염",
+          "fr": "Pleine lune - Feu de l'Ombre",
+          "de": "Vollmond - Schattenfeuer",
+          "es": "Luna llena - Fuego sombrío"
+        },
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913196,
+        "names": {
+          "en": "Full Moon - Shadow Fire + 1",
+          "tw": "滿月 - 影火 + 1",
+          "kr": "만월·그림자의 화염 + 1",
+          "fr": "Pleine lune - Feu de l'Ombre + 1",
+          "de": "Vollmond - Schattenfeuer + 1",
+          "es": "Luna llena - Fuego sombrío + 1"
+        },
+        "base": 450,
+        "hitDamage": [
+          1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.5555555555555554, 1.7777777777777777, 88.88888888888889
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913199,
+        "names": {
+          "en": "Full Moon - Terrifying Howl",
+          "tw": "滿月 - 恐怖咆哮",
+          "kr": "만월·공포의 포효",
+          "fr": "Pleine lune - Hurlement terrifiant",
+          "de": "Vollmond - Entsetzliches Geheul",
+          "es": "Luna llena - Ahullido terrorífico"
+        },
+        "base": 300,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913200,
+        "names": {
+          "en": "Full Moon - Terrifying Howl + 1",
+          "tw": "滿月 - 恐怖咆哮 + 1",
+          "kr": "만월·공포의 포효 + 1",
+          "fr": "Pleine lune - Hurlement terrifiant + 1",
+          "de": "Vollmond - Entsetzliches Geheul + 1",
+          "es": "Luna llena - Ahullido terrorífico + 1"
+        },
+        "base": 300,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.3333333333333335, 2.3333333333333335, 83.33333333333331
+        ],
+        "castTime": 38,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913203,
+        "names": {
+          "en": "Primal Reflexes",
+          "tw": "反擊的直覺",
+          "kr": "반격의 직감",
+          "fr": "Réflexes primaires",
+          "de": "Urreflexe",
+          "es": "Reflejos primarios"
+        },
+        "base": 400,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913214,
+            "value": 100,
+            "turn": 3,
+            "uniqueIdentifier": 913203
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913205,
+        "names": {
+          "en": "Full Moon - Cursed Blood",
+          "tw": "滿月 - 詛咒之血",
+          "kr": "만월·저주받은 피",
+          "fr": "Pleine lune - Sang maudit",
+          "de": "Vollmond - Verfluchtes Blut",
+          "es": "Luna llena - Sangre maldita"
+        },
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "damage"
+        ],
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913207,
+        "names": {
+          "en": "Full Moon - Frenzy",
+          "tw": "滿月 - 狂亂",
+          "kr": "만월·광란",
+          "fr": "Pleine lune - Frénésie",
+          "de": "Vollmond - Rausch",
+          "es": "Luna llena - Frenesí"
+        },
+        "base": 450,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "dataId": 913208,
+        "names": {
+          "en": "Full Moon - Frenzy + 1",
+          "tw": "滿月 - 狂亂 + 1",
+          "kr": "만월·광란 + 1",
+          "fr": "Pleine lune - Frénésie + 1",
+          "de": "Vollmond - Rausch + 1",
+          "es": "Luna llena - Frenesí + 1"
+        },
+        "base": 550,
+        "hitDamage": [
+          0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.2727272727272727, 0.36363636363636365, 0.36363636363636365, 0.36363636363636365, 0.36363636363636365, 0.36363636363636365, 0.4545454545454546, 0.4545454545454546, 0.4545454545454546, 0.4545454545454546, 90.9090909090909
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "dataId": 913210,
+        "names": {
+          "en": "Full Moon - Dark Side",
+          "tw": "滿月 - 黑暗面",
+          "kr": "만월·암흑면",
+          "fr": "Pleine lune - Côté obscur",
+          "de": "Vollmond - Dunkle Seite",
+          "es": "Luna llena - Lado oscuro"
+        },
+        "base": 300,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "ignore": 50,
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913211,
+        "names": {
+          "en": "Full Moon - Dark Side + 1",
+          "tw": "滿月 - 黑暗面 + 1",
+          "kr": "만월·암흑면 + 1",
+          "fr": "Pleine lune - Côté obscur + 1",
+          "de": "Vollmond - Dunkle Seite + 1",
+          "es": "Luna llena - Lado oscuro + 1"
+        },
+        "base": 300,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.3333333333333335, 2.3333333333333335, 83.33333333333331
+        ],
+        "castTime": 38,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imbue"
+        ],
+        "ignore": 50,
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913213,
+        "names": {
+          "en": "Blood Cleanse",
+          "tw": "血清",
+          "kr": "혈청",
+          "fr": "Purge de sang",
+          "de": "Blutsäuberung",
+          "es": "Purificación de sangre"
+        },
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913214,
+        "names": {
+          "en": "Full Moon - Bestial Barrage",
+          "tw": "滿月 - 野獸連擊",
+          "kr": "만월·야수의 연격",
+          "fr": "Pleine lune - Déluge bestial",
+          "de": "Vollmond - Bestialische Komboattacke",
+          "es": "Luna llena - Golpes bestiales"
+        },
+        "base": 800,
+        "hitDamage": [
+          0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.875, 0.875, 93.75
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913220,
+        "names": {
+          "en": "Full Moon - Crimson Blitz",
+          "tw": "滿月 - 深紅猛爆",
+          "kr": "만월·심홍의 맹폭",
+          "fr": "Pleine lune - Assaut carmin",
+          "de": "Vollmond - Purpurner Bombenhagel",
+          "es": "Luna llena - Bombardeo carmesí"
+        },
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "canDualSkill": false,
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913214,
+            "value": 200,
+            "turn": 4,
+            "uniqueIdentifier": 913220
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913223,
+        "names": {
+          "en": "Full Moon - Wild Slash",
+          "tw": "滿月 - 野性斬擊",
+          "kr": "만월·야생의 참격",
+          "fr": "Pleine lune - Entaille féroce",
+          "de": "Vollmond - Wilder Schlitzer",
+          "es": "Luna llena - Sablazo feroz"
+        },
+        "base": 500,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 913214,
+            "value": 200,
+            "turn": 3,
+            "uniqueIdentifier": 913223
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913225,
+        "names": {
+          "en": "Full Moon - Savage Awakening",
+          "tw": "滿月 - 野性覺醒",
+          "kr": "만월·야성의 자각",
+          "fr": "Pleine lune - Éveil sauvage",
+          "de": "Vollmond - Wildes Erwachen",
+          "es": "Luna llena - Despertar salvaje"
+        },
+        "base": 1000,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "canDualSkill": false,
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913214,
+            "value": 200,
+            "turn": 4,
+            "uniqueIdentifier": 913225
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913222,
+        "names": {
+          "en": "Frenzied Rampage",
+          "tw": "狂亂猛進",
+          "kr": "광란의 맹진",
+          "fr": "Massacre frénétique",
+          "de": "Wahnsinnige Raserei",
+          "es": "Masacre frenética"
+        },
+        "base": 9900,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 71
+        ],
+        "canDualSkill": false,
+        "dualable": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "dataId": 913181,
+        "names": {
+          "en": "Lunar Basher",
+          "tw": "月擊",
+          "kr": "달빛의 폭주",
+          "fr": "Lune fracassante",
+          "de": "Lunare Raserei",
+          "es": "Rompelunas"
+        },
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "dataId": 401007207,
+        "names": {
+          "en": "Moonlit Strike",
+          "tw": "月光閃擊",
+          "kr": "월광의 섬격",
+          "fr": "Frappe de la pleine lune",
+          "de": "Mondheller Schlag",
+          "es": "Golpe de luz lunar"
+        },
+        "base": 1750,
+        "hitDamage": [
+          20, 20, 60
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 300,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          70, 40, 60
+        ]
+      },
+      {
+        "dataId": 950000009,
+        "names": {
+          "en": "Moonlit Strike + 1",
+          "tw": "月光閃擊 + 1",
+          "kr": "월광의 섬격 + 1",
+          "fr": "Frappe de la pleine lune + 1",
+          "de": "Mondheller Schlag + 1",
+          "es": "Golpe de luz lunar + 1"
+        },
+        "base": 2200,
+        "hitDamage": [
+          20, 20, 60
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 300,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          70, 40, 60
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": [
+          50,
+          50,
+          50
+        ],
+        "magic": [
+          0,
+          0,
+          0
+        ],
+        "rarity": 5
+      },
+      {
+        "physic": [
+          50,
+          50,
+          50
+        ],
+        "magic": [
+          0,
+          0,
+          0
+        ],
+        "rarity": 7
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          913184,
+          913185,
+          913188,
+          913189,
+          913190,
+          913193,
+          913195,
+          913196,
+          913199,
+          913200,
+          913205,
+          913207,
+          913208,
+          913210,
+          913211,
+          913214,
+          913219,
+          913223,
+          913224,
+          913220,
+          913223,
+          913225
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          913184,
+          913185,
+          913188,
+          913189,
+          913190,
+          913193,
+          913195,
+          913196,
+          913199,
+          913200,
+          913205,
+          913207,
+          913208,
+          913210,
+          913211,
+          913214,
+          913219,
+          913223,
+          913224,
+          913220,
+          913223,
+          913225
+        ]
+      }
+    ],
+    "maxChainCap": 6,
+    "passiveLBDamage": [
+      {
+        "value": 1,
+        "rarity": 7
+      },
+      {
+        "value": 1,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 303,
+    "names": {
+      "en": "Godrea",
+      "tw": "高德拉",
+      "kr": "가드레아",
+      "fr": "Godréa"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 121,
+          "pot": 24
+        },
+        "mag": {
+          "base": 93,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 157,
+          "pot": 34
+        },
+        "mag": {
+          "base": 121,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 205,
+          "pot": 65
+        },
+        "mag": {
+          "base": 158,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 913142,
+        "names": {
+          "en": "Charge - Photon Laser",
+          "tw": "充填 - 光子射線",
+          "kr": "충전·광양자 광선",
+          "fr": "Charge - Laser à photons",
+          "de": "Aufladen - Photonenlaser",
+          "es": "Recarga - Láser de fotones"
+        },
+        "base": 200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 20,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          1
+        ]
+      },
+      {
+        "dataId": 913143,
+        "names": {
+          "en": "Charge - Plasma Laser",
+          "tw": "充填 - 等離子射線",
+          "kr": "충전·혈장 광선",
+          "fr": "Charge - Laser à plasma",
+          "de": "Aufladen - Plasmalaser",
+          "es": "Recarga - Láser de plasma"
+        },
+        "base": 300,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913158,
+        "names": {
+          "en": "Activate - H-66 Radar",
+          "tw": "啟動 - H-66 探測器",
+          "kr": "기동·H-66 레이더",
+          "fr": "Activation - Radar H-66",
+          "de": "Aktivieren - Radar H-66",
+          "es": "Activación - Radar H-66"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 100,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 100,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 100,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 100,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913144,
+        "names": {
+          "en": "Charge - Radioactive Laser",
+          "tw": "充填 - 放射射線",
+          "kr": "충전·방사성 광선",
+          "fr": "Charge - Laser radioactif",
+          "de": "Aufladen - Radioaktiver Laser",
+          "es": "Recarga - Láser radiactivo"
+        },
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 913145,
+        "names": {
+          "en": "Charge - Ultraviolet Laser",
+          "tw": "充填 - 紫外射線",
+          "kr": "충전·UV 광선",
+          "fr": "Charge - Laser à ultraviolets",
+          "de": "Aufladen - UV-Laser",
+          "es": "Recarga - Láser ultravioleta"
+        },
+        "base": 750,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913146,
+        "names": {
+          "en": "Charge - Nitrogen Laser",
+          "tw": "充填 - 氮氣射線",
+          "kr": "충전·질소 광선",
+          "fr": "Charge - Laser azoté",
+          "de": "Aufladen - Stickstofflaser",
+          "es": "Recarga - Láser de nitrógeno"
+        },
+        "base": 750,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 913147,
+        "names": {
+          "en": "Charge - Ionic Laser",
+          "tw": "充填 - 離子射線",
+          "kr": "충전·이온 광선",
+          "fr": "Charge - Laser ionique",
+          "de": "Aufladen - Ionenlaser",
+          "es": "Recarga - Láser iónico"
+        },
+        "base": 750,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 50,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 913148,
+        "names": {
+          "en": "Charge - Excimer Laser",
+          "tw": "充填 - 准分子射線",
+          "kr": "충전·이합체 광선",
+          "fr": "Charge - Laser à excimère",
+          "de": "Aufladen - Excimerlaser",
+          "es": "Recarga - Láser excímero"
+        },
+        "base": 750,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913150,
+        "names": {
+          "en": "Activate - Photonised Radioactive Cartridge",
+          "tw": "啟動 - P.放射彈藥筒",
+          "kr": "기동·광양자 방사선 카트리지",
+          "fr": "Activation - Cartouche radioactive photonée",
+          "de": "Aktivieren - Photonisierte radioaktive Patrone",
+          "es": "Activación - Cartucho radiactivo fotonizado"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "killer",
+          "killer",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          }
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "undead",
+            "physic": 0,
+            "magic": 50,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913151,
+        "names": {
+          "en": "Activate - Radioactive Cartridge",
+          "tw": "啟動 - 放射彈藥筒",
+          "kr": "기동·방사성 카트리지",
+          "fr": "Activation - Cartouche radioactive",
+          "de": "Aktivieren - Radioaktive Patrone",
+          "es": "Activación - Cartucho radiactivo"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer",
+          "buff"
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 130,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913153,
+        "names": {
+          "en": "Activate - Photonised Ultraviolet Cartridge",
+          "tw": "啟動 - P.紫外彈藥筒",
+          "kr": "기동·광양자 UV 카트리지",
+          "fr": "Activation - Cartouche à ultraviolets photonée",
+          "de": "Aktivieren - Photonisierte UV-Patrone",
+          "es": "Activación - Cartucho ultravioleta fotonizado"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "killer",
+          "killer",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913149
+          }
+        ],
+        "killers": [
+          {
+            "race": "spirit",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "spirit",
+            "physic": 0,
+            "magic": 50,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913154,
+        "names": {
+          "en": "Activate - Ultraviolet Cartridge",
+          "tw": "啟動 - 紫外彈藥筒",
+          "kr": "기동·UV 카트리지",
+          "fr": "Activation - Cartouche à ultraviolets",
+          "de": "Aktivieren - UV-Patrone",
+          "es": "Activación - Cartucho ultravioleta"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer",
+          "buff"
+        ],
+        "killers": [
+          {
+            "race": "spirit",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913155,
+        "names": {
+          "en": "Activate - Nitrogen Cartridge",
+          "tw": "啟動 - 氮氣彈藥筒",
+          "kr": "기동·질소 카트리지",
+          "fr": "Activation - Cartouche azotée",
+          "de": "Aktivieren - Stickstoffpatrone",
+          "es": "Activación - Cartucho de nitrógeno"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913156,
+        "names": {
+          "en": "Activate - Ionic Cartridge",
+          "tw": "啟動 - 離子彈藥筒",
+          "kr": "기동·이온 카트리지",
+          "fr": "Activation - Cartouche ionique",
+          "de": "Aktivieren - Ionenpatrone",
+          "es": "Activación - Cartucho iónico"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913157,
+        "names": {
+          "en": "Activate - Excimer Cartridge",
+          "tw": "啟動 - 准分子彈藥筒",
+          "kr": "기동·이합체 카트리지",
+          "fr": "Activation - Cartouche à excimère",
+          "de": "Aktivieren - Excimerpatrone",
+          "es": "Activación - Cartucho excímero"
+        },
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "imbue",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "water",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913155
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913169,
+        "names": {
+          "en": "Photonisation - Preliminary Phase",
+          "tw": "光子化 - 準備階段",
+          "kr": "광양자화·준비 단계",
+          "fr": "Photonisation - Phase préliminaire",
+          "de": "Photonisierung - Vorphase",
+          "es": "Fotonización - Fase previa"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913143,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913144,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913145,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913146,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913147,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913148,
+            "value": 100,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 1
+          },
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913170,
+        "names": {
+          "en": "Photonisation - Alpha Phase",
+          "tw": "光子化 - α階段",
+          "kr": "광양자화·알파 단계",
+          "fr": "Photonisation - Phase alpha",
+          "de": "Photonisierung - Alpha-Phase",
+          "es": "Fotonización - Fase alfa"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913143,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913144,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913145,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913146,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913147,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913148,
+            "value": 150,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 140,
+            "turn": 1
+          },
+          {
+            "stat": "def",
+            "value": 140,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913171,
+        "names": {
+          "en": "Photonisation - Beta Phase",
+          "tw": "光子化 - β階段",
+          "kr": "광양자화·베타 단계",
+          "fr": "Photonisation - Phase bêta",
+          "de": "Photonisierung - Beta-Phase",
+          "es": "Fotonización - Fase beta"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 1
+          },
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913172,
+        "names": {
+          "en": "Photonisation - Final Phase",
+          "tw": "光子化 - 最終階段",
+          "kr": "광양자화·최종 단계",
+          "fr": "Photonisation - Phase finale",
+          "de": "Photonisierung - Endphase",
+          "es": "Fotonización - Fase final"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913143,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913144,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913145,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913146,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913147,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          },
+          {
+            "id": 913148,
+            "value": 250,
+            "turn": 1,
+            "uniqueIdentifier": 913169
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 160,
+            "turn": 1
+          },
+          {
+            "stat": "def",
+            "value": 160,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913173,
+        "names": {
+          "en": "Photonisation - Residual Phase",
+          "tw": "光子化 - 剩餘階段",
+          "kr": "광양자화·잔여 단계",
+          "fr": "Photonisation - Phase résiduelle",
+          "de": "Photonisierung - Restphase",
+          "es": "Fotonización - Fase residual"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier",
+          "buff"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          },
+          {
+            "id": 913143,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          },
+          {
+            "id": 913144,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          },
+          {
+            "id": 913145,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          },
+          {
+            "id": 913146,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          },
+          {
+            "id": 913147,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          },
+          {
+            "id": 913148,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 913173
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 170,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 170,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913135,
+        "names": {
+          "en": "Activate - GE-98 Photon Cartridge",
+          "tw": "啟動 - GE-98 光子彈藥筒",
+          "kr": "기동·GE-98 광양자 카트리지",
+          "fr": "Activation - Cartouche à photons GE-98",
+          "de": "Aktivieren - Photonenpatrone GE-98",
+          "es": "Activación - Cartucho de fotones GE-98"
+        },
+        "canDualSkill": false,
+        "castTime": 20,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "killer"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 4
+          }
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 75,
+            "magic": 0,
+            "turn": 4
+          },
+          {
+            "race": "spirit",
+            "physic": 75,
+            "magic": 0,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913137,
+        "names": {
+          "en": "Activate - Photonised Nitrogen Cartridge",
+          "tw": "啟動 - P.氮氣彈藥筒",
+          "kr": "기동·광양자 질소 카트리지",
+          "fr": "Activation - Cartouche azotée photonée",
+          "de": "Aktivieren - Photonisierte Stickstoffpatrone",
+          "es": "Activación - Cartucho de nitrógeno fotonizado"
+        },
+        "canDualSkill": false,
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imbue",
+          "boostModifier"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 3
+          },
+          {
+            "element": "ice",
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913143,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913144,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913145,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913146,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913147,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913148,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913139,
+        "names": {
+          "en": "Activate - Photonised Ionic Cartridge",
+          "tw": "啟動 - P.離子彈藥筒",
+          "kr": "기동·광양자 이온 카트리지",
+          "fr": "Activation - Cartouche ionique photonée",
+          "de": "Aktivieren - Photonisierte Ionenpatrone",
+          "es": "Activación - Cartucho iónico fotonizado"
+        },
+        "canDualSkill": false,
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imbue",
+          "boostModifier"
+        ],
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 3
+          },
+          {
+            "element": "dark",
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913143,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913144,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913145,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913146,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913147,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913148,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913141,
+        "names": {
+          "en": "Activate - Photonised Excimer Cartridge",
+          "tw": "啟動 - P.准分子彈藥筒",
+          "kr": "기동·광양자 이합체 카트리지",
+          "fr": "Activation - Cartouche à excimère photonée",
+          "de": "Aktivieren - Photonisierte Excimerpatrone",
+          "es": "Activación - Cartucho excímero fotonizado"
+        },
+        "canDualSkill": false,
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imbue",
+          "boostModifier"
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 3
+          },
+          {
+            "element": "water",
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913142,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913143,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913144,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913145,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913146,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913147,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          },
+          {
+            "id": 913148,
+            "value": 300,
+            "turn": 9999,
+            "uniqueIdentifier": 913137
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 401008607,
+        "names": {
+          "en": "Ectoplasm Extermination",
+          "tw": "靈異獵手",
+          "kr": "심령 퇴치",
+          "fr": "Extermination ectoplasmique",
+          "de": "Ektoplasma-Vernichtung",
+          "es": "Exterminio de ectoplasma"
+        },
+        "base": 2500,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 120,
+            "turn": 5
+          },
+          {
+            "type": "water",
+            "value": 120,
+            "turn": 5
+          },
+          {
+            "type": "dark",
+            "value": 120,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          164, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 3, 2
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": [
+          25,
+          25
+        ],
+        "magic": [
+          0,
+          0
+        ],
+        "rarity": 6
+      },
+      {
+        "physic": [
+          75,
+          75
+        ],
+        "magic": [
+          0,
+          0
+        ],
+        "rarity": 7
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          913142,
+          913143,
+          913144,
+          913145,
+          913146,
+          913147,
+          913148,
+          913158,
+          913150,
+          913151,
+          913153,
+          913154,
+          913155,
+          913156,
+          913157,
+          913160,
+          913134,
+          913136,
+          913138,
+          913140,
+          913135,
+          913137,
+          913139,
+          913141
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          913142,
+          913143,
+          913144,
+          913145,
+          913146,
+          913147,
+          913148
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          913142,
+          913143,
+          913144,
+          913145,
+          913146,
+          913147,
+          913148,
+          913158,
+          913150,
+          913151,
+          913153,
+          913154,
+          913155,
+          913156,
+          913157,
+          913160,
+          913134,
+          913136,
+          913138,
+          913140,
+          913135,
+          913137,
+          913139,
+          913141
+        ]
+      }
+    ]
   }
 ];
