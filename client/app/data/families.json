@@ -945,6 +945,32 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 913270,
+            "names": {
+              "en": "Serpenté - Kiss of Midnight + 1",
+              "tw": "蛇蠍・午夜之吻 + 1",
+              "kr": "뱀여인·반야의 키스 + 1",
+              "fr": "Serpenté - Baiser de minuit + 1",
+              "de": "Serpenté - Mitternachtskuss + 1",
+              "es": "Serpenté - Beso de medianoche + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913271,
+            "names": {
+              "en": "Serpenté - Kiss of Midnight + 2",
+              "tw": "蛇蠍・午夜之吻 + 2",
+              "kr": "뱀여인·반야의 키스 + 2",
+              "fr": "Serpenté - Baiser de minuit + 2",
+              "de": "Serpenté - Mitternachtskuss + 2",
+              "es": "Serpenté - Beso de medianoche + 2"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -1073,6 +1099,43 @@
               "kr": "라이키리"
             },
             "offset": 14
+          }
+        ]
+      },
+      {
+        "id": 401007205,
+        "names": {
+          "en": "Karten",
+          "tw": "卡爾頓",
+          "kr": "카튼",
+          "de": "Karsten"
+        },
+        "abilities": [
+          {
+            "id": 913207,
+            "names": {
+              "en": "Full Moon - Frenzy + 1",
+              "tw": "滿月 - 狂亂 + 1",
+              "kr": "만월·광란 + 1",
+              "fr": "Pleine lune - Frénésie + 1",
+              "de": "Vollmond - Rausch + 1",
+              "es": "Luna llena - Frenesí + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913222,
+            "names": {
+              "en": "Frenzied Rampage",
+              "tw": "狂亂猛進",
+              "kr": "광란의 맹진",
+              "fr": "Massacre frénétique",
+              "de": "Wahnsinnige Raserei",
+              "es": "Masacre frenética"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -2037,6 +2100,30 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913144,
+            "names": {
+              "en": "Charge - Radioactive Laser",
+              "tw": "充填 - 放射射線",
+              "kr": "충전·방사성 광선",
+              "fr": "Charge - Laser radioactif",
+              "de": "Aufladen - Radioaktiver Laser",
+              "es": "Recarga - Láser radiactivo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -2819,6 +2906,30 @@
             "castTime": 39
           }
         ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913146,
+            "names": {
+              "en": "Charge - Nitrogen Laser",
+              "tw": "充填 - 氮氣射線",
+              "kr": "충전·질소 광선",
+              "fr": "Charge - Laser azoté",
+              "de": "Aufladen - Stickstofflaser",
+              "es": "Recarga - Láser de nitrógeno"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
       }
     ]
   },
@@ -3383,6 +3494,30 @@
             "castTime": 54
           }
         ]
+      },
+      {
+        "id": 401007205,
+        "names": {
+          "en": "Karten",
+          "tw": "卡爾頓",
+          "kr": "카튼",
+          "de": "Karsten"
+        },
+        "abilities": [
+          {
+            "id": 913190,
+            "names": {
+              "en": "Full Moon - Ravenous Appetite + 1",
+              "tw": "滿月 - 貪食 + 1",
+              "kr": "만월·탐식 + 1",
+              "fr": "Pleine lune - Appétit vorace + 1",
+              "de": "Vollmond - Unersättlicher Hunger + 1",
+              "es": "Luna llena - Apetito voraz + 1"
+            },
+            "offset": 14,
+            "castTime": 54
+          }
+        ]
       }
     ]
   },
@@ -3461,26 +3596,53 @@
               "es": "Nova extrema"
             },
             "offset": 14
+          },
+          {
+            "id": 950000012,
+            "names": {
+              "en": "Extreme Nova+ + 1",
+              "tw": "終極新星改 + 1",
+              "kr": "개량형 극한의 광휘 + 1",
+              "fr": "Nova extrême+ + 1",
+              "de": "Extremnova+ + 1",
+              "es": "Nova extrema+ + 1"
+            },
+            "offset": 14
           }
         ]
       },
       {
         "id": 100023205,
         "names": {
-          "en": 100023205
+          "en": "Aldore King Rain",
+          "tw": "阿爾多爾王雷因",
+          "kr": "알도르의 왕 레인",
+          "fr": "Rain, roi d'Aldore",
+          "de": "König Rain von Aldore",
+          "es": "Rain, rey de Aldore"
         },
         "abilities": [
           {
             "id": 900000337,
             "names": {
-              "en": "unknown ability name -- 900000337"
+              "en": "Crimson Nova + 1",
+              "tw": "深紅新星 + 1",
+              "kr": "크림슨 노바 + 1",
+              "fr": "Nova carmin + 1",
+              "de": "Purpurnova + 1",
+              "es": "Nova carmesí + 1"
             },
             "offset": 14
           },
           {
             "id": 100023207,
             "names": {
-              "en": "unknown ability name -- 100023207"
+              "en": "Crimson Nova",
+              "tw": "深紅新星",
+              "kr": "크림슨 노바",
+              "fr": "Nova carmin",
+              "de": "Purpurnova",
+              "es": "Nova carmesí"
             },
             "offset": 14
           }
@@ -3864,6 +4026,31 @@
               "fr": "Sérénité - Concentration II",
               "de": "Kata - Konzentration II",
               "es": "Tranquilidad - Concentración II"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 100016205,
+        "names": {
+          "en": "Hyoh",
+          "tw": "獵豹",
+          "kr": "효우",
+          "de": "Hyou",
+          "es": "Hyou"
+        },
+        "abilities": [
+          {
+            "id": 913336,
+            "names": {
+              "en": "Ruthless Blade + 2",
+              "tw": "冷酷劍刃 + 2",
+              "kr": "루슬리스 블레이드 + 2",
+              "fr": "Lame implacable + 2",
+              "de": "Gnadenlose Klinge + 2",
+              "es": "Hoja implacable + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -4337,13 +4524,23 @@
       {
         "id": 100022205,
         "names": {
-          "en": 100022205
+          "en": "Chocobo Fina",
+          "tw": "菲娜&陸行鳥",
+          "kr": "초코보&피나",
+          "fr": "Fina à dos de chocobo",
+          "de": "Chocobo-Fina",
+          "es": "Fina en chocobo"
         },
         "abilities": [
           {
             "id": 230740,
             "names": {
-              "en": "unknown ability name -- 230740"
+              "en": "Choco Dash - Wind",
+              "tw": "陸行鳥衝擊·風",
+              "kr": "초코 대쉬·바람",
+              "fr": "Choco-bond - Vent",
+              "de": "Choco-Sprint - Wind",
+              "es": "Chocobogalope - Viento"
             },
             "offset": 14,
             "castTime": 40
@@ -4351,7 +4548,12 @@
           {
             "id": 230741,
             "names": {
-              "en": "unknown ability name -- 230741"
+              "en": "Burst - MP Regen",
+              "tw": "爆裂·MP再生",
+              "kr": "버스트·MP 리제네",
+              "fr": "Éclat - Régénération de PM",
+              "de": "Einschlag - MP-Regena",
+              "es": "Descarga - Recuperación de PM"
             },
             "offset": 14,
             "castTime": 40
@@ -4359,7 +4561,12 @@
           {
             "id": 230742,
             "names": {
-              "en": "unknown ability name -- 230742"
+              "en": "Regen Shot",
+              "tw": "射擊·再生",
+              "kr": "슛·리제네",
+              "fr": "Tir de régénération",
+              "de": "Regena-Schuss",
+              "es": "Disparo revitalia"
             },
             "offset": 14,
             "castTime": 40
@@ -4367,7 +4574,12 @@
           {
             "id": 230743,
             "names": {
-              "en": "unknown ability name -- 230743"
+              "en": "Limit Ray",
+              "tw": "極限光束",
+              "kr": "리미트 레이",
+              "fr": "Rayon de limite",
+              "de": "Limitstrahl",
+              "es": "Rayo límite"
             },
             "offset": 14,
             "castTime": 40
@@ -4375,7 +4587,12 @@
           {
             "id": 230745,
             "names": {
-              "en": "unknown ability name -- 230745"
+              "en": "Choco Dash - Light",
+              "tw": "陸行鳥衝擊·光",
+              "kr": "초코 대쉬·빛",
+              "fr": "Choco-bond - Lumière",
+              "de": "Choco-Sprint - Licht",
+              "es": "Chocobogalope - Luz"
             },
             "offset": 14,
             "castTime": 40
@@ -4383,7 +4600,12 @@
           {
             "id": 230746,
             "names": {
-              "en": "unknown ability name -- 230746"
+              "en": "Super Choco Dash",
+              "tw": "超級陸行鳥衝擊",
+              "kr": "슈퍼 초코 대쉬",
+              "fr": "Choco-bond amélioré",
+              "de": "Super Choco-Sprint",
+              "es": "Chocobogalope+"
             },
             "offset": 14,
             "castTime": 40
@@ -4391,7 +4613,12 @@
           {
             "id": 230750,
             "names": {
-              "en": "unknown ability name -- 230750"
+              "en": "Spiritual Meditation",
+              "tw": "冥思",
+              "kr": "묵상",
+              "fr": "Méditation spirituelle",
+              "de": "Mentales Meditieren",
+              "es": "Meditación espiritual"
             },
             "offset": 14,
             "castTime": 40
@@ -4399,7 +4626,12 @@
           {
             "id": 509663,
             "names": {
-              "en": "unknown ability name -- 509663"
+              "en": "Choco Reraise",
+              "tw": "陸行鳥重生",
+              "kr": "초코 리레이즈",
+              "fr": "Choco-auréole",
+              "de": "Choco-Auferstehung",
+              "es": "Chocoautolázaro"
             },
             "offset": 14,
             "castTime": 40
@@ -5860,6 +6092,30 @@
         ]
       },
       {
+        "id": 401007205,
+        "names": {
+          "en": "Karten",
+          "tw": "卡爾頓",
+          "kr": "카튼",
+          "de": "Karsten"
+        },
+        "abilities": [
+          {
+            "id": 913195,
+            "names": {
+              "en": "Full Moon - Shadow Fire + 1",
+              "tw": "滿月 - 影火 + 1",
+              "kr": "만월·그림자의 화염 + 1",
+              "fr": "Pleine lune - Feu de l'Ombre + 1",
+              "de": "Vollmond - Schattenfeuer + 1",
+              "es": "Luna llena - Fuego sombrío + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401007605,
         "names": {
           "en": "Zeno of the Beta Star",
@@ -5970,6 +6226,30 @@
               "fr": "Rugissement de la Sérénité primordiale",
               "de": "Gebrüll der Vernichtenden Kata",
               "es": "Rugido de Tranquilidad fulminante"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913148,
+            "names": {
+              "en": "Charge - Excimer Laser",
+              "tw": "充填 - 准分子射線",
+              "kr": "충전·이합체 광선",
+              "fr": "Charge - Laser à excimère",
+              "de": "Aufladen - Excimerlaser",
+              "es": "Recarga - Láser excímero"
             },
             "offset": 14,
             "castTime": 40
@@ -6735,6 +7015,91 @@
         ]
       },
       {
+        "id": 401005905,
+        "names": {
+          "en": "Lilith",
+          "tw": "莉莉絲",
+          "kr": "릴리스"
+        },
+        "abilities": [
+          {
+            "id": 913266,
+            "names": {
+              "en": "Serpenté - Dusk Lash + 1",
+              "tw": "蛇蠍・黃昏鞭擊 + 1",
+              "kr": "뱀여인·황혼의 채찍질 + 1",
+              "fr": "Serpenté - Fouet du crépuscule + 1",
+              "de": "Serpenté - Peitschenhieb der Abenddämmerung + 1",
+              "es": "Serpenté - Látigo crepuscular + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913267,
+            "names": {
+              "en": "Serpenté - Dusk Lash + 2",
+              "tw": "蛇蠍・黃昏鞭擊 + 2",
+              "kr": "뱀여인·황혼의 채찍질 + 2",
+              "fr": "Serpenté - Fouet du crépuscule + 2",
+              "de": "Serpenté - Peitschenhieb der Abenddämmerung + 2",
+              "es": "Serpenté - Látigo crepuscular + 2"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913268,
+            "names": {
+              "en": "Serpenté - Dawn Lash + 1",
+              "tw": "蛇蠍・黎明鞭擊 + 1",
+              "kr": "뱀여인·새벽의 채찍질 + 1",
+              "fr": "Serpenté - Fouet de l'aube + 1",
+              "de": "Serpenté - Peitschenhieb der Morgendämmerung + 1",
+              "es": "Serpenté - Látigo del alba + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913269,
+            "names": {
+              "en": "Serpenté - Dawn Lash + 2",
+              "tw": "蛇蠍・黎明鞭擊 + 2",
+              "kr": "뱀여인·새벽의 채찍질 + 2",
+              "fr": "Serpenté - Fouet de l'aube + 2",
+              "de": "Serpenté - Peitschenhieb der Morgendämmerung + 2",
+              "es": "Serpenté - Látigo del alba + 2"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401006005,
+        "names": {
+          "en": "Lucius",
+          "tw": "路西亞斯",
+          "kr": "루시우스"
+        },
+        "abilities": [
+          {
+            "id": 913285,
+            "names": {
+              "en": "Crushing Barrage + 2",
+              "tw": "粉碎彈幕 + 2",
+              "kr": "분쇄의 탄막 + 2",
+              "fr": "Rafale écrasante + 2",
+              "de": "Zerschmetterndes Trommelfeuer + 2",
+              "es": "Ráfaga demoledora + 2"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
         "id": 401006805,
         "names": {
           "en": "Esther",
@@ -6874,6 +7239,108 @@
               "fr": "Feu spirituel - Eau purificatrice",
               "de": "Geisterfeuer - Reinigendes Wasser",
               "es": "Fuego espiritual - Agua purificadora"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401007205,
+        "names": {
+          "en": "Karten",
+          "tw": "卡爾頓",
+          "kr": "카튼",
+          "de": "Karsten"
+        },
+        "abilities": [
+          {
+            "id": 913184,
+            "names": {
+              "en": "Full Moon - Bestial Wrath + 1",
+              "tw": "滿月 - 獸性之怒 + 1",
+              "kr": "만월·야성의 분노 + 1",
+              "fr": "Pleine lune - Colère bestiale + 1",
+              "de": "Vollmond - Bestialischer Zorn + 1",
+              "es": "Luna llena - Ira bestial + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913188,
+            "names": {
+              "en": "Full Moon - Bestial Slash + 1",
+              "tw": "滿月 - 獸斬 + 1",
+              "kr": "만월·야수의 참격 + 1",
+              "fr": "Pleine lune - Taillade bestiale + 1",
+              "de": "Vollmond - Bestialischer Schlitzer + 1",
+              "es": "Luna llena - Sablazo bestial + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913199,
+            "names": {
+              "en": "Full Moon - Terrifying Howl + 1",
+              "tw": "滿月 - 恐怖咆哮 + 1",
+              "kr": "만월·공포의 포효 + 1",
+              "fr": "Pleine lune - Hurlement terrifiant + 1",
+              "de": "Vollmond - Entsetzliches Geheul + 1",
+              "es": "Luna llena - Ahullido terrorífico + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913210,
+            "names": {
+              "en": "Full Moon - Dark Side + 1",
+              "tw": "滿月 - 黑暗面 + 1",
+              "kr": "만월·암흑면 + 1",
+              "fr": "Pleine lune - Côté obscur + 1",
+              "de": "Vollmond - Dunkle Seite + 1",
+              "es": "Luna llena - Lado oscuro + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913214,
+            "names": {
+              "en": "Full Moon - Bestial Barrage + 1",
+              "tw": "滿月 - 野獸連擊 + 1",
+              "kr": "만월·야수의 연격 + 1",
+              "fr": "Pleine lune - Déluge bestial + 1",
+              "de": "Vollmond - Bestialische Komboattacke + 1",
+              "es": "Luna llena - Golpes bestiales + 1"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913220,
+            "names": {
+              "en": "Full Moon - Crimson Blitz",
+              "tw": "滿月 - 深紅猛爆",
+              "kr": "만월·심홍의 맹폭",
+              "fr": "Pleine lune - Assaut carmin",
+              "de": "Vollmond - Purpurner Bombenhagel",
+              "es": "Luna llena - Bombardeo carmesí"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913223,
+            "names": {
+              "en": "Full Moon - Wild Slash + 1",
+              "tw": "滿月 - 野性斬擊 + 1",
+              "kr": "만월·야생의 참격 + 1",
+              "fr": "Pleine lune - Entaille féroce + 1",
+              "de": "Vollmond - Wilder Schlitzer + 1",
+              "es": "Luna llena - Sablazo feroz + 1"
             },
             "offset": 14,
             "castTime": 38
@@ -7021,6 +7488,30 @@
               "fr": "Infusion liquide",
               "de": "Flüssiger Aufguss",
               "es": "Infusión líquida"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913145,
+            "names": {
+              "en": "Charge - Ultraviolet Laser",
+              "tw": "充填 - 紫外射線",
+              "kr": "충전·UV 광선",
+              "fr": "Charge - Laser à ultraviolets",
+              "de": "Aufladen - UV-Laser",
+              "es": "Recarga - Láser ultravioleta"
             },
             "offset": 14,
             "castTime": 38
@@ -7574,12 +8065,12 @@
           {
             "id": 227282,
             "names": {
-              "en": "Flame Blade",
-              "tw": "烈焰劍",
-              "kr": "플레임 블레이드",
-              "fr": "Lame enflammée",
-              "de": "Flammenklinge",
-              "es": "Hoja llameante"
+              "en": "Flame Blade + 2",
+              "tw": "烈焰劍 + 2",
+              "kr": "플레임 블레이드 + 2",
+              "fr": "Lame enflammée + 2",
+              "de": "Flammenklinge + 2",
+              "es": "Hoja llameante + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -7587,12 +8078,12 @@
           {
             "id": 227283,
             "names": {
-              "en": "Voltage Blade",
-              "tw": "伏特劍",
-              "kr": "볼트 블레이드",
-              "fr": "Lame électrisante",
-              "de": "Voltklinge",
-              "es": "Hoja de voltaje"
+              "en": "Voltage Blade + 2",
+              "tw": "伏特劍 + 2",
+              "kr": "볼트 블레이드 + 2",
+              "fr": "Lame électrisante + 2",
+              "de": "Voltklinge + 2",
+              "es": "Hoja de voltaje + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -7600,12 +8091,12 @@
           {
             "id": 227280,
             "names": {
-              "en": "Servant of the Blade",
-              "tw": "劍奴",
-              "kr": "블레이드 슬레이브",
-              "fr": "Serviteur de l'épée",
-              "de": "Diener der Klinge",
-              "es": "Esclavo de la espada"
+              "en": "Servant of the Blade + 2",
+              "tw": "劍奴 + 2",
+              "kr": "블레이드 슬레이브 + 2",
+              "fr": "Serviteur de l'épée + 2",
+              "de": "Diener der Klinge + 2",
+              "es": "Esclavo de la espada + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -7619,6 +8110,84 @@
               "fr": "Lame fantôme",
               "de": "Phantomklinge",
               "es": "Hoja fantasma"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707895,
+            "names": {
+              "en": "Servant of the Blade + 2",
+              "tw": "劍奴 + 2",
+              "kr": "블레이드 슬레이브 + 2",
+              "fr": "Serviteur de l'épée + 2",
+              "de": "Diener der Klinge + 2",
+              "es": "Esclavo de la espada + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707896,
+            "names": {
+              "en": "Servant of the Blade + 2",
+              "tw": "劍奴 + 2",
+              "kr": "블레이드 슬레이브 + 2",
+              "fr": "Serviteur de l'épée + 2",
+              "de": "Diener der Klinge + 2",
+              "es": "Esclavo de la espada + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707897,
+            "names": {
+              "en": "Flame Blade + 2",
+              "tw": "烈焰劍 + 2",
+              "kr": "플레임 블레이드 + 2",
+              "fr": "Lame enflammée + 2",
+              "de": "Flammenklinge + 2",
+              "es": "Hoja llameante + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707898,
+            "names": {
+              "en": "Flame Blade + 2",
+              "tw": "烈焰劍 + 2",
+              "kr": "플레임 블레이드 + 2",
+              "fr": "Lame enflammée + 2",
+              "de": "Flammenklinge + 2",
+              "es": "Hoja llameante + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707899,
+            "names": {
+              "en": "Voltage Blade + 2",
+              "tw": "伏特劍 + 2",
+              "kr": "볼트 블레이드 + 2",
+              "fr": "Lame électrisante + 2",
+              "de": "Voltklinge + 2",
+              "es": "Hoja de voltaje + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 707900,
+            "names": {
+              "en": "Voltage Blade + 2",
+              "tw": "伏特劍 + 2",
+              "kr": "볼트 블레이드 + 2",
+              "fr": "Lame électrisante + 2",
+              "de": "Voltklinge + 2",
+              "es": "Hoja de voltaje + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -8706,6 +9275,84 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 913256,
+            "names": {
+              "en": "Serpenté - Kiss of Dusk + 1",
+              "tw": "蛇蠍・黃昏之吻 + 1",
+              "kr": "뱀여인·황혼의 키스 + 1",
+              "fr": "Serpenté - Baiser du crépuscule + 1",
+              "de": "Serpenté - Kuss der Abenddämmerung + 1",
+              "es": "Serpenté - Beso crepuscular + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913257,
+            "names": {
+              "en": "Serpenté - Kiss of Dusk + 2",
+              "tw": "蛇蠍・黃昏之吻 + 2",
+              "kr": "뱀여인·황혼의 키스 + 2",
+              "fr": "Serpenté - Baiser du crépuscule + 2",
+              "de": "Serpenté - Kuss der Abenddämmerung + 2",
+              "es": "Serpenté - Beso crepuscular + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913258,
+            "names": {
+              "en": "Serpenté - Kiss of Dawn + 1",
+              "tw": "蛇蠍・黎明之吻 + 1",
+              "kr": "뱀여인·새벽의 키스 + 1",
+              "fr": "Serpenté - Baiser de l'aube + 1",
+              "de": "Serpenté - Kuss der Morgendämmerung + 1",
+              "es": "Serpenté - Beso del alba + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913259,
+            "names": {
+              "en": "Serpenté - Kiss of Dawn + 2",
+              "tw": "蛇蠍・黎明之吻 + 2",
+              "kr": "뱀여인·새벽의 키스 + 2",
+              "fr": "Serpenté - Baiser de l'aube + 2",
+              "de": "Serpenté - Kuss der Morgendämmerung + 2",
+              "es": "Serpenté - Beso del alba + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913274,
+            "names": {
+              "en": "Dream Melding + 1",
+              "tw": "夢境融合 + 1",
+              "kr": "망상의 융합 + 1",
+              "fr": "Fusion onirique + 1",
+              "de": "Traumverschmelzung + 1",
+              "es": "Fusión onírica + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913275,
+            "names": {
+              "en": "Dream Melding + 2",
+              "tw": "夢境融合 + 2",
+              "kr": "망상의 융합 + 2",
+              "fr": "Fusion onirique + 2",
+              "de": "Traumverschmelzung + 2",
+              "es": "Fusión onírica + 2"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -8726,6 +9373,123 @@
               "fr": "Rafale démoniaque",
               "de": "Dämonisches Trommelfeuer",
               "es": "Ráfaga demoníaca"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913277,
+            "names": {
+              "en": "Dusk Barrage + 2",
+              "tw": "黃昏彈幕 + 2",
+              "kr": "황혼의 탄막 + 2",
+              "fr": "Rafale du crépuscule + 2",
+              "de": "Trommelfeuer der Abenddämmerung + 2",
+              "es": "Ráfaga crepuscular + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913279,
+            "names": {
+              "en": "Dawn Barrage + 2",
+              "tw": "黎明彈幕 + 2",
+              "kr": "새벽의 탄막 + 2",
+              "fr": "Rafale de l'aube + 2",
+              "de": "Trommelfeuer der Morgendämmerung + 2",
+              "es": "Ráfaga del alba + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913297,
+            "names": {
+              "en": "Demonic Barrage + 1",
+              "tw": "惡魔彈幕 + 1",
+              "kr": "악마의 탄막 + 1",
+              "fr": "Rafale démoniaque + 1",
+              "de": "Dämonisches Trommelfeuer + 1",
+              "es": "Ráfaga demoníaca + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913298,
+            "names": {
+              "en": "Demonic Barrage + 2",
+              "tw": "惡魔彈幕 + 2",
+              "kr": "악마의 탄막 + 2",
+              "fr": "Rafale démoniaque + 2",
+              "de": "Dämonisches Trommelfeuer + 2",
+              "es": "Ráfaga demoníaca + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913281,
+            "names": {
+              "en": "Piercing Barrage + 2",
+              "tw": "貫通彈幕 + 2",
+              "kr": "관통의 탄막 + 2",
+              "fr": "Rafale pénétrante + 2",
+              "de": "Durchschießendes Trommelfeuer + 2",
+              "es": "Ráfaga penetrante + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913283,
+            "names": {
+              "en": "Cleaving Barrage + 2",
+              "tw": "分裂彈幕 + 2",
+              "kr": "절삭의 탄막 + 2",
+              "fr": "Rafale clivante + 2",
+              "de": "Spaltendes Trommelfeuer + 2",
+              "es": "Ráfaga rompedora + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950139,
+            "names": {
+              "en": "Midnight Corruption",
+              "tw": "午夜墮落",
+              "kr": "한밤의 타락",
+              "fr": "Corruption nocturne",
+              "de": "Korrupte Mitternacht",
+              "es": "Corrupción nocturna"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950141,
+            "names": {
+              "en": "Midnight Corruption I",
+              "tw": "午夜墮落 I",
+              "kr": "한밤의 타락 I",
+              "fr": "Corruption nocturne I",
+              "de": "Korrupte Mitternacht I",
+              "es": "Corrupción nocturna I"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950143,
+            "names": {
+              "en": "Midnight Corruption II",
+              "tw": "午夜墮落 II",
+              "kr": "한밤의 타락 II",
+              "fr": "Corruption nocturne II",
+              "de": "Korrupte Mitternacht II",
+              "es": "Corrupción nocturna II"
             },
             "offset": 14,
             "castTime": 40
@@ -8861,6 +9625,54 @@
               "fr": "Barrage statique",
               "de": "Statisches Sperrfeuer",
               "es": "Ráfaga estática"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401007205,
+        "names": {
+          "en": "Karten",
+          "tw": "卡爾頓",
+          "kr": "카튼",
+          "de": "Karsten"
+        },
+        "abilities": [
+          {
+            "id": 913203,
+            "names": {
+              "en": "Primal Reflexes",
+              "tw": "反擊的直覺",
+              "kr": "반격의 직감",
+              "fr": "Réflexes primaires",
+              "de": "Urreflexe",
+              "es": "Reflejos primarios"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913143,
+            "names": {
+              "en": "Charge - Plasma Laser",
+              "tw": "充填 - 等離子射線",
+              "kr": "충전·혈장 광선",
+              "fr": "Charge - Laser à plasma",
+              "de": "Aufladen - Plasmalaser",
+              "es": "Recarga - Láser de plasma"
             },
             "offset": 14,
             "castTime": 40
@@ -9152,12 +9964,25 @@
           {
             "id": 227281,
             "names": {
-              "en": "Ruthless Blade",
-              "tw": "冷酷劍刃",
-              "kr": "루슬리스 블레이드",
-              "fr": "Lame implacable",
-              "de": "Gnadenlose Klinge",
-              "es": "Hoja implacable"
+              "en": "Ruthless Blade + 2",
+              "tw": "冷酷劍刃 + 2",
+              "kr": "루슬리스 블레이드 + 2",
+              "fr": "Lame implacable + 2",
+              "de": "Gnadenlose Klinge + 2",
+              "es": "Hoja implacable + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913335,
+            "names": {
+              "en": "Ruthless Blade + 2",
+              "tw": "冷酷劍刃 + 2",
+              "kr": "루슬리스 블레이드 + 2",
+              "fr": "Lame implacable + 2",
+              "de": "Gnadenlose Klinge + 2",
+              "es": "Hoja implacable + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -9217,6 +10042,32 @@
               "fr": "Mur de balles",
               "de": "Kugelhagel",
               "es": "Ráfaga de balas"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913330,
+            "names": {
+              "en": "Bullet Barrage + 1",
+              "tw": "彈幕射擊 + 1",
+              "kr": "탄막 사격 + 1",
+              "fr": "Mur de balles + 1",
+              "de": "Kugelhagel + 1",
+              "es": "Ráfaga de balas + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913331,
+            "names": {
+              "en": "Bullet Barrage + 2",
+              "tw": "彈幕射擊 + 2",
+              "kr": "탄막 사격 + 2",
+              "fr": "Mur de balles + 2",
+              "de": "Kugelhagel + 2",
+              "es": "Ráfaga de balas + 2"
             },
             "offset": 14,
             "castTime": 40
@@ -11094,6 +11945,19 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 913284,
+            "names": {
+              "en": "Crushing Barrage + 1",
+              "tw": "粉碎彈幕 + 1",
+              "kr": "분쇄의 탄막 + 1",
+              "fr": "Rafale écrasante + 1",
+              "de": "Zerschmetterndes Trommelfeuer + 1",
+              "es": "Ráfaga demoledora + 1"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -11466,187 +12330,6 @@
             },
             "offset": 14,
             "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "60-8-8-8-8-8-8-8-8-8",
-    "units": [
-      {
-        "id": 206000103,
-        "names": {
-          "en": "Terra",
-          "tw": "蒂娜",
-          "kr": "티나"
-        },
-        "abilities": [
-          {
-            "id": 504360,
-            "names": {
-              "en": "Chaos Wave + 1",
-              "tw": "混沌波動 + 1",
-              "kr": "혼돈의 파동 + 1",
-              "fr": "Onde chaotique + 1",
-              "de": "Chaoswelle + 1",
-              "es": "Ola caótica + 1"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 504370,
-            "names": {
-              "en": "Chaos Wave + 2",
-              "tw": "混沌波動 + 2",
-              "kr": "혼돈의 파동 + 2",
-              "fr": "Onde chaotique + 2",
-              "de": "Chaoswelle + 2",
-              "es": "Ola caótica + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          }
-        ]
-      },
-      {
-        "id": 206000125,
-        "names": {
-          "en": "Trance Terra",
-          "tw": "入神蒂娜",
-          "kr": "트랜스 티나",
-          "fr": "Terra en transe",
-          "de": "Trance-Terra",
-          "es": "Terra en trance"
-        },
-        "abilities": [
-          {
-            "id": 500590,
-            "names": {
-              "en": "Chaos Wave + 2",
-              "tw": "混沌波動 + 2",
-              "kr": "혼돈의 파동 + 2",
-              "fr": "Onde chaotique + 2",
-              "de": "Chaoswelle + 2",
-              "es": "Ola caótica + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 704520,
-            "names": {
-              "en": "Chaos Wave Awakened + 2",
-              "tw": "覺醒混沌波動 + 2",
-              "kr": "각성·혼돈의 파동 + 2",
-              "fr": "Onde chaotique - Év. + 2",
-              "de": "Chaoswelle erwacht + 2",
-              "es": "Ola caótica - Haz + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 704500,
-            "names": {
-              "en": "Chaos Wave + 1",
-              "tw": "混沌波動 + 1",
-              "kr": "혼돈의 파동 + 1",
-              "fr": "Onde chaotique + 1",
-              "de": "Chaoswelle + 1",
-              "es": "Ola caótica + 1"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 704680,
-            "names": {
-              "en": "Chaos Wave + 2",
-              "tw": "混沌波動 + 2",
-              "kr": "혼돈의 파동 + 2",
-              "fr": "Onde chaotique + 2",
-              "de": "Chaoswelle + 2",
-              "es": "Ola caótica + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 704690,
-            "names": {
-              "en": "Chaos Wave Awakened + 2",
-              "tw": "覺醒混沌波動 + 2",
-              "kr": "각성·혼돈의 파동 + 2",
-              "fr": "Onde chaotique - Év. + 2",
-              "de": "Chaoswelle erwacht + 2",
-              "es": "Ola caótica - Haz + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 704700,
-            "names": {
-              "en": "Chaos Wave Awakened + 2",
-              "tw": "覺醒混沌波動 + 2",
-              "kr": "각성·혼돈의 파동 + 2",
-              "fr": "Onde chaotique - Év. + 2",
-              "de": "Chaoswelle erwacht + 2",
-              "es": "Ola caótica - Haz + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          }
-        ]
-      },
-      {
-        "id": 401002605,
-        "names": {
-          "en": "Christine",
-          "tw": "克莉絲汀",
-          "kr": "크리스틴"
-        },
-        "abilities": [
-          {
-            "id": 911794,
-            "names": {
-              "en": "Snow Burial + 2",
-              "tw": "冰雪葬 + 2",
-              "kr": "설장 + 2",
-              "fr": "Cercueil de neige + 2",
-              "de": "Schneebegräbnis + 2",
-              "es": "Entierro de nieve + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 910654,
-            "names": {
-              "en": "Snow Burial + 2",
-              "tw": "冰雪葬 + 2",
-              "kr": "설장 + 2",
-              "fr": "Cercueil de neige + 2",
-              "de": "Schneebegräbnis + 2",
-              "es": "Entierro de nieve + 2"
-            },
-            "offset": 14,
-            "castTime": 58
-          },
-          {
-            "id": 911795,
-            "names": {
-              "en": "Snow Burial + 2",
-              "tw": "冰雪葬 + 2",
-              "kr": "설장 + 2",
-              "fr": "Cercueil de neige + 2",
-              "de": "Schneebegräbnis + 2",
-              "es": "Entierro de nieve + 2"
-            },
-            "offset": 14,
-            "castTime": 58
           }
         ]
       }
@@ -13190,6 +13873,19 @@
             },
             "offset": 14,
             "castTime": 40
+          },
+          {
+            "id": 913280,
+            "names": {
+              "en": "Piercing Barrage + 1",
+              "tw": "貫通彈幕 + 1",
+              "kr": "관통의 탄막 + 1",
+              "fr": "Rafale pénétrante + 1",
+              "de": "Durchschießendes Trommelfeuer + 1",
+              "es": "Ráfaga penetrante + 1"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       },
@@ -13829,6 +14525,57 @@
         ]
       },
       {
+        "id": 100016205,
+        "names": {
+          "en": "Hyoh",
+          "tw": "獵豹",
+          "kr": "효우",
+          "de": "Hyou",
+          "es": "Hyou"
+        },
+        "abilities": [
+          {
+            "id": 950147,
+            "names": {
+              "en": "Blade of Despair + 2",
+              "tw": "絕望之劍 + 2",
+              "kr": "블레이드 디스페어 + 2",
+              "fr": "Lame du désespoir + 2",
+              "de": "Klinge der Verzweiflung + 2",
+              "es": "Hoja de la desesperación + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 950148,
+            "names": {
+              "en": "Blade of Despair I + 2",
+              "tw": "絕望之劍I + 2",
+              "kr": "블레이드 디스페어 I + 2",
+              "fr": "Lame du désespoir I + 2",
+              "de": "Klinge der Verzweiflung I + 2",
+              "es": "Hoja de la desesperación I + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 800351,
+            "names": {
+              "en": "Blade of Despair II + 2",
+              "tw": "絕望之劍II + 2",
+              "kr": "블레이드 디스페어 II + 2",
+              "fr": "Lame du désespoir II + 2",
+              "de": "Klinge der Verzweiflung II + 2",
+              "es": "Hoja de la desesperación II + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100017905,
         "names": {
           "en": "Sieghard",
@@ -13930,13 +14677,36 @@
       {
         "id": 100023205,
         "names": {
-          "en": 100023205
+          "en": "Aldore King Rain",
+          "tw": "阿爾多爾王雷因",
+          "kr": "알도르의 왕 레인",
+          "fr": "Rain, roi d'Aldore",
+          "de": "König Rain von Aldore",
+          "es": "Rain, rey de Aldore"
         },
         "abilities": [
           {
+            "id": 510081,
+            "names": {
+              "en": "Extra Saber",
+              "tw": "特級劍",
+              "kr": "엑스트라 세이버",
+              "fr": "Écho de sabre",
+              "de": "Zusatzssäbel",
+              "es": "Sable adicional"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 231394,
             "names": {
-              "en": "unknown ability name -- 231394"
+              "en": "Force Saber",
+              "tw": "力量劍",
+              "kr": "포스 세이버",
+              "fr": "Sabre de force",
+              "de": "Kraftsäbel",
+              "es": "Sable de fuerza"
             },
             "offset": 14,
             "castTime": 40
@@ -13944,7 +14714,12 @@
           {
             "id": 231395,
             "names": {
-              "en": "unknown ability name -- 231395"
+              "en": "Blaze Saber",
+              "tw": "烈火劍",
+              "kr": "블레이즈 세이버",
+              "fr": "Sabre ardent",
+              "de": "Brandsäbel",
+              "es": "Sable ardiente"
             },
             "offset": 14,
             "castTime": 40
@@ -13952,7 +14727,12 @@
           {
             "id": 231396,
             "names": {
-              "en": "unknown ability name -- 231396"
+              "en": "Earth Saber",
+              "tw": "沙土劍",
+              "kr": "어스 세이버",
+              "fr": "Sabre de terre",
+              "de": "Erdsäbel",
+              "es": "Sable terrestre"
             },
             "offset": 14,
             "castTime": 40
@@ -13960,7 +14740,12 @@
           {
             "id": 231397,
             "names": {
-              "en": "unknown ability name -- 231397"
+              "en": "Spark Saber",
+              "tw": "閃雷劍",
+              "kr": "스파크 세이버",
+              "fr": "Sabre foudroyant",
+              "de": "Funkensäbel",
+              "es": "Sable chispeante"
             },
             "offset": 14,
             "castTime": 40
@@ -13968,7 +14753,12 @@
           {
             "id": 231400,
             "names": {
-              "en": "unknown ability name -- 231400"
+              "en": "Grandshelt Saber",
+              "tw": "格蘭謝爾特之劍",
+              "kr": "그랑셸트 세이버",
+              "fr": "Sabre de Grandshelt",
+              "de": "Grandshelt-Säbel",
+              "es": "Sable de Grandshelt"
             },
             "offset": 14,
             "castTime": 40
@@ -13976,7 +14766,12 @@
           {
             "id": 510063,
             "names": {
-              "en": "unknown ability name -- 510063"
+              "en": "Royal Saber",
+              "tw": "王室之劍",
+              "kr": "로얄 세이버",
+              "fr": "Sabre royal",
+              "de": "Prachtsäbel",
+              "es": "Sable real"
             },
             "offset": 14,
             "castTime": 40
@@ -13984,15 +14779,12 @@
           {
             "id": 510064,
             "names": {
-              "en": "unknown ability name -- 510064"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 510081,
-            "names": {
-              "en": "unknown ability name -- 510081"
+              "en": "King's Saber",
+              "tw": "國王之劍",
+              "kr": "킹 세이버",
+              "fr": "Sabre du roi",
+              "de": "Königssäbel",
+              "es": "Sable del rey"
             },
             "offset": 14,
             "castTime": 40
@@ -14441,13 +15233,62 @@
       {
         "id": 206002405,
         "names": {
-          "en": 206002405
+          "en": "Assassin Shadow",
+          "tw": "暗殺者暗影",
+          "kr": "어쌔신 섀도우",
+          "fr": "Shadow assassin",
+          "de": "Assassine Shadow",
+          "es": "Asesino Shadow"
         },
         "abilities": [
           {
+            "id": 800067,
+            "names": {
+              "en": "Lingering Assassin's Blade",
+              "tw": "遲殺刃",
+              "kr": "지살인",
+              "fr": "Lame persistante d'assassin",
+              "de": "Beharrliche Assassinenklinge",
+              "es": "Hoja de muerte lenta"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 231085,
             "names": {
-              "en": "unknown ability name -- 231085"
+              "en": "Whirling Assassin's Blade",
+              "tw": "殺刃旋",
+              "kr": "살인선",
+              "fr": "Lame tournoyante d'assassin",
+              "de": "Wirbelnde Assassinenklinge",
+              "es": "Hoja huracanada de asesino"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 231092,
+            "names": {
+              "en": "Secret Art of Darkness",
+              "tw": "暗之秘陣",
+              "kr": "어둠의 비진",
+              "fr": "Art secret des ténèbres",
+              "de": "Geheimkunst der Dunkelheit",
+              "es": "Arte secreto de la oscuridad"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 231093,
+            "names": {
+              "en": "Secret Art of Wind",
+              "tw": "風之秘陣",
+              "kr": "바람의 비진",
+              "fr": "Art secret du vent",
+              "de": "Geheimkunst des Windes",
+              "es": "Arte secreto del viento"
             },
             "offset": 14,
             "castTime": 40
@@ -14455,7 +15296,12 @@
           {
             "id": 509881,
             "names": {
-              "en": "unknown ability name -- 509881"
+              "en": "Takedown (FFVI)",
+              "tw": "獵犬阻截(FFVI)",
+              "kr": "사냥개 돌진(FFVI)",
+              "fr": "Riposte canine (FFVI)",
+              "de": "Tackle (FFVI)",
+              "es": "Derribo (FFVI)"
             },
             "offset": 14,
             "castTime": 40
@@ -14463,7 +15309,12 @@
           {
             "id": 509882,
             "names": {
-              "en": "unknown ability name -- 509882"
+              "en": "Wild Fang",
+              "tw": "狂野尖牙",
+              "kr": "야성의 송곳니",
+              "fr": "Crocs sauvages",
+              "de": "Wilder Fangzahn",
+              "es": "Colmillo salvaje"
             },
             "offset": 14,
             "castTime": 40
@@ -14471,7 +15322,12 @@
           {
             "id": 231099,
             "names": {
-              "en": "unknown ability name -- 231099"
+              "en": "Shadow Dart",
+              "tw": "影遁",
+              "kr": "영둔",
+              "fr": "Fléchette d'ombre",
+              "de": "Schatten-Dart",
+              "es": "Dardo oscuro"
             },
             "offset": 14,
             "castTime": 40
@@ -14479,7 +15335,12 @@
           {
             "id": 231100,
             "names": {
-              "en": "unknown ability name -- 231100"
+              "en": "Storm Dart",
+              "tw": "嵐遁",
+              "kr": "풍둔",
+              "fr": "Fléchette de tempête",
+              "de": "Sturm-Dart",
+              "es": "Dardo tempestuoso"
             },
             "offset": 14,
             "castTime": 40
@@ -16196,19 +17057,6 @@
             },
             "offset": 14,
             "castTime": 40
-          },
-          {
-            "id": 228430,
-            "names": {
-              "en": "Aqua Authority",
-              "tw": "水之權能",
-              "kr": "물의 권세",
-              "fr": "Autorité aquatique",
-              "de": "Aquatische Autorität",
-              "es": "Autoridad acuática"
-            },
-            "offset": 14,
-            "castTime": 40
           }
         ]
       },
@@ -17894,53 +18742,62 @@
       {
         "id": 206002305,
         "names": {
-          "en": 206002305
+          "en": "Archmage Kefka",
+          "tw": "大魔導士凱夫卡",
+          "kr": "대마도사 케프카",
+          "fr": "Kefka archimage",
+          "de": "Erzmagier Kefka",
+          "es": "Archimago Kefka"
         },
         "abilities": [
           {
-            "id": 231118,
+            "id": 231112,
             "names": {
-              "en": "unknown ability name -- 231118"
+              "en": "Ridiculing Ice",
+              "tw": "冰之嘲笑",
+              "kr": "아이스 리디큘",
+              "fr": "Moquerie glaçante",
+              "de": "Spottendes Eis",
+              "es": "Burla gélida"
             },
             "offset": 14,
             "castTime": 50
           },
           {
-            "id": 231119,
+            "id": 231113,
             "names": {
-              "en": "unknown ability name -- 231119"
+              "en": "Ridiculing Thunder",
+              "tw": "雷之嘲笑",
+              "kr": "선더 리디큘",
+              "fr": "Moquerie foudroyante",
+              "de": "Spottender Donner",
+              "es": "Burla relampagueante"
             },
             "offset": 14,
             "castTime": 50
           },
           {
-            "id": 231120,
+            "id": 231114,
             "names": {
-              "en": "unknown ability name -- 231120"
+              "en": "Ridiculing Dark",
+              "tw": "暗之嘲笑",
+              "kr": "다크 리디큘",
+              "fr": "Moquerie obscure",
+              "de": "Spottender Dunkelheit",
+              "es": "Burla oscura"
             },
             "offset": 14,
             "castTime": 50
           },
           {
-            "id": 231128,
+            "id": 913287,
             "names": {
-              "en": "unknown ability name -- 231128"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 231129,
-            "names": {
-              "en": "unknown ability name -- 231129"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 231130,
-            "names": {
-              "en": "unknown ability name -- 231130"
+              "en": "Hyperdrive",
+              "tw": "超驅動",
+              "kr": "하이퍼드라이브",
+              "fr": "Colonne de feu",
+              "de": "Hyperantrieb",
+              "es": "Hiperdescarga"
             },
             "offset": 14,
             "castTime": 50
@@ -18771,6 +19628,266 @@
             "castTime": 50
           }
         ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913147,
+            "names": {
+              "en": "Charge - Ionic Laser",
+              "tw": "充填 - 離子射線",
+              "kr": "충전·이온 광선",
+              "fr": "Charge - Laser ionique",
+              "de": "Aufladen - Ionenlaser",
+              "es": "Recarga - Láser iónico"
+            },
+            "offset": 14,
+            "castTime": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "42-20-20-20-20-20-20-20",
+    "units": [
+      {
+        "id": 206000103,
+        "names": {
+          "en": "Terra",
+          "tw": "蒂娜",
+          "kr": "티나"
+        },
+        "abilities": [
+          {
+            "id": 504360,
+            "names": {
+              "en": "Chaos Wave + 1",
+              "tw": "混沌波動 + 1",
+              "kr": "혼돈의 파동 + 1",
+              "fr": "Onde chaotique + 1",
+              "de": "Chaoswelle + 1",
+              "es": "Ola caótica + 1"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 504370,
+            "names": {
+              "en": "Chaos Wave + 2",
+              "tw": "混沌波動 + 2",
+              "kr": "혼돈의 파동 + 2",
+              "fr": "Onde chaotique + 2",
+              "de": "Chaoswelle + 2",
+              "es": "Ola caótica + 2"
+            },
+            "offset": 14,
+            "castTime": 76
+          }
+        ]
+      },
+      {
+        "id": 206000125,
+        "names": {
+          "en": "Trance Terra",
+          "tw": "入神蒂娜",
+          "kr": "트랜스 티나",
+          "fr": "Terra en transe",
+          "de": "Trance-Terra",
+          "es": "Terra en trance"
+        },
+        "abilities": [
+          {
+            "id": 500590,
+            "names": {
+              "en": "Chaos Wave + 2",
+              "tw": "混沌波動 + 2",
+              "kr": "혼돈의 파동 + 2",
+              "fr": "Onde chaotique + 2",
+              "de": "Chaoswelle + 2",
+              "es": "Ola caótica + 2"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 704520,
+            "names": {
+              "en": "Chaos Wave Awakened + 2",
+              "tw": "覺醒混沌波動 + 2",
+              "kr": "각성·혼돈의 파동 + 2",
+              "fr": "Onde chaotique - Év. + 2",
+              "de": "Chaoswelle erwacht + 2",
+              "es": "Ola caótica - Haz + 2"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 704500,
+            "names": {
+              "en": "Chaos Wave + 1",
+              "tw": "混沌波動 + 1",
+              "kr": "혼돈의 파동 + 1",
+              "fr": "Onde chaotique + 1",
+              "de": "Chaoswelle + 1",
+              "es": "Ola caótica + 1"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 704680,
+            "names": {
+              "en": "Chaos Wave + 2",
+              "tw": "混沌波動 + 2",
+              "kr": "혼돈의 파동 + 2",
+              "fr": "Onde chaotique + 2",
+              "de": "Chaoswelle + 2",
+              "es": "Ola caótica + 2"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 704690,
+            "names": {
+              "en": "Chaos Wave Awakened + 2",
+              "tw": "覺醒混沌波動 + 2",
+              "kr": "각성·혼돈의 파동 + 2",
+              "fr": "Onde chaotique - Év. + 2",
+              "de": "Chaoswelle erwacht + 2",
+              "es": "Ola caótica - Haz + 2"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 704700,
+            "names": {
+              "en": "Chaos Wave Awakened + 2",
+              "tw": "覺醒混沌波動 + 2",
+              "kr": "각성·혼돈의 파동 + 2",
+              "fr": "Onde chaotique - Év. + 2",
+              "de": "Chaoswelle erwacht + 2",
+              "es": "Ola caótica - Haz + 2"
+            },
+            "offset": 14,
+            "castTime": 76
+          }
+        ]
+      },
+      {
+        "id": 206002305,
+        "names": {
+          "en": "Archmage Kefka",
+          "tw": "大魔導士凱夫卡",
+          "kr": "대마도사 케프카",
+          "fr": "Kefka archimage",
+          "de": "Erzmagier Kefka",
+          "es": "Archimago Kefka"
+        },
+        "abilities": [
+          {
+            "id": 231118,
+            "names": {
+              "en": "Guffawing Ice",
+              "tw": "冰之狂笑",
+              "kr": "아이스 가포",
+              "fr": "Ricanement glaçant",
+              "de": "Feixendes Eis",
+              "es": "Carcajada gélida"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231119,
+            "names": {
+              "en": "Guffawing Thunder",
+              "tw": "雷之狂笑",
+              "kr": "선더 가포",
+              "fr": "Ricanement foudroyant",
+              "de": "Feixender Donner",
+              "es": "Carcajada relampagueante"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231120,
+            "names": {
+              "en": "Guffawing Dark",
+              "tw": "暗之狂笑",
+              "kr": "다크 가포",
+              "fr": "Ricanement obscur",
+              "de": "Feixender Dunkelheit",
+              "es": "Carcajada oscura"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231123,
+            "names": {
+              "en": "Hyperdrive+",
+              "tw": "超驅動·改",
+              "kr": "개량형 하이퍼드라이브",
+              "fr": "Colonne de feu +",
+              "de": "Hyperantrieb+",
+              "es": "Hiperdescarga+"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231128,
+            "names": {
+              "en": "Frenzied Ice",
+              "tw": "冰之狂暴",
+              "kr": "아이스 프렌지",
+              "fr": "Frénésie glaçante",
+              "de": "Frenetisches Eis",
+              "es": "Frenesí gélido"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231129,
+            "names": {
+              "en": "Frenzied Thunder",
+              "tw": "雷之狂暴",
+              "kr": "선더 프렌지",
+              "fr": "Frénésie foudroyante",
+              "de": "Frenetischer Donner",
+              "es": "Frenesí relampagueante"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231130,
+            "names": {
+              "en": "Frenzied Dark",
+              "tw": "暗之狂暴",
+              "kr": "다크 프렌지",
+              "fr": "Frénésie obscure",
+              "de": "Frenetische Dunkelheit",
+              "es": "Frenesí oscuro"
+            },
+            "offset": 14,
+            "castTime": 76
+          }
+        ]
       }
     ]
   },
@@ -19480,6 +20597,162 @@
             },
             "offset": 14,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "0-42-6-6-6-6-6-6-6-6",
+    "units": [
+      {
+        "id": 401007105,
+        "names": {
+          "en": "Tsukiko",
+          "tw": "月子",
+          "kr": "츠키코"
+        },
+        "abilities": [
+          {
+            "id": 912785,
+            "names": {
+              "en": "Vixen's Fire - First Tail",
+              "tw": "狐火 - 一尾",
+              "kr": "여우불·일미",
+              "fr": "Renard de feu - Première queue",
+              "de": "Fähenfeuer - Erster Schweif",
+              "es": "Fuego vulpino - Primera cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912786,
+            "names": {
+              "en": "Vixen's Fire - Second Tail",
+              "tw": "狐火 - 二尾",
+              "kr": "여우불·이미",
+              "fr": "Renard de feu - Deuxième queue",
+              "de": "Fähenfeuer - Zweiter Schweif",
+              "es": "Fuego vulpino - Segunda cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912787,
+            "names": {
+              "en": "Vixen's Fire - Third Tail",
+              "tw": "狐火 - 三尾",
+              "kr": "여우불·삼미",
+              "fr": "Renard de feu - Troisième queue",
+              "de": "Fähenfeuer - Dritter Schweif",
+              "es": "Fuego vulpino - Tercera cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912788,
+            "names": {
+              "en": "Vixen's Fire - Fourth Tail",
+              "tw": "狐火 - 四尾",
+              "kr": "여우불·사미",
+              "fr": "Renard de feu - Quatrième queue",
+              "de": "Fähenfeuer - Vierter Schweif",
+              "es": "Fuego vulpino - Cuarta cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912789,
+            "names": {
+              "en": "Vixen's Fire - Fifth Tail",
+              "tw": "狐火 - 五尾",
+              "kr": "여우불·오미",
+              "fr": "Renard de feu - Cinquième queue",
+              "de": "Fähenfeuer - Fünfter Schweif",
+              "es": "Fuego vulpino - Quinta cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912790,
+            "names": {
+              "en": "Vixen's Fire - Sixth Tail",
+              "tw": "狐火 - 六尾",
+              "kr": "여우불·육미",
+              "fr": "Renard de feu - Sixième queue",
+              "de": "Fähenfeuer - Sechster Schweif",
+              "es": "Fuego vulpino - Sexta cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912791,
+            "names": {
+              "en": "Vixen's Fire - Seventh Tail",
+              "tw": "狐火 - 七尾",
+              "kr": "여우불·칠미",
+              "fr": "Renard de feu - Septième queue",
+              "de": "Fähenfeuer - Siebter Schweif",
+              "es": "Fuego vulpino - Séptima cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912792,
+            "names": {
+              "en": "Vixen's Fire - Eighth Tail",
+              "tw": "狐火 - 八尾",
+              "kr": "여우불·팔미",
+              "fr": "Renard de feu - Huitième queue",
+              "de": "Fähenfeuer - Achter Schweif",
+              "es": "Fuego vulpino - Octava cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 912793,
+            "names": {
+              "en": "Vixen's Fire - Ninth Tail",
+              "tw": "狐火 - 九尾",
+              "kr": "여우불·구미",
+              "fr": "Renard de feu - Dernière queue",
+              "de": "Fähenfeuer - Letzter Schweif",
+              "es": "Fuego vulpino - Novena cola"
+            },
+            "offset": 14,
+            "castTime": 10
+          }
+        ]
+      },
+      {
+        "id": 401007205,
+        "names": {
+          "en": "Karten",
+          "tw": "卡爾頓",
+          "kr": "카튼",
+          "de": "Karsten"
+        },
+        "abilities": [
+          {
+            "id": 913225,
+            "names": {
+              "en": "Full Moon - Savage Awakening",
+              "tw": "滿月 - 野性覺醒",
+              "kr": "만월·야성의 자각",
+              "fr": "Pleine lune - Éveil sauvage",
+              "de": "Vollmond - Wildes Erwachen",
+              "es": "Luna llena - Despertar salvaje"
+            },
+            "offset": 14,
+            "castTime": 38
           }
         ]
       }
