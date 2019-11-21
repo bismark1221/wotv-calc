@@ -42,6 +42,8 @@ export class Ability {
   delayAttack?;
   dot?;
   consecutive?;
+  unlockBy?;
+  cooldown?;
 
   constructFromJson(ability: Ability, translateService: TranslateService): void {
     this.id = ability.id ? ability.id : ability.dataId;
@@ -68,6 +70,8 @@ export class Ability {
     this.canDualSkill = typeof ability.canDualSkill == 'boolean' ? ability.canDualSkill : this.canDualSkill;
     this.imbues = ability.imbues ? ability.imbues : this.imbues;
     this.effectOrder = ability.effectOrder ? ability.effectOrder : this.effectOrder;
+    this.unlockBy = ability.unlockBy ? ability.unlockBy : this.unlockBy;
+    this.cooldown = ability.cooldown ? ability.cooldown : this.cooldown;
 
     if (ability.type) {
       this.type = ability.type;

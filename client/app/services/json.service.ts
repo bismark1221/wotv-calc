@@ -328,63 +328,69 @@ export class JsonService {
   }
 
   private addSkill(unitId, ability, dataId, rarity, level = 0, lb = false, canDualSkill = true) {
-    let exist = false;
+    let returnSkill = null;
     this.ffbeChainUnits[unitId].abilities.forEach(skill => {
       if (skill.dataId == dataId) {
-        exist = true;
         if (level > 0) {
           skill.names = this.getNames(dataId, level, lb);
         }
+        returnSkill = skill;
       }
-    })
+    });
 
-    if (exist || !ability) {
+    if (!ability) {
       return;
     }
 
-    let id = this.ffbeChainUnits[unitId].abilities.length;
+    if (returnSkill === null) {
+      let id = this.ffbeChainUnits[unitId].abilities.length;
 
-    this.ffbeChainUnits[unitId].abilities[id] = {
-      dataId: Number(dataId),
-      names: this.getNames(dataId, level, lb),
-      damage: null,
-      base: 0,
-      hitDamage: []
-      // move: this.moveTypes[ability.move_type],
-      // motion : this.motionTypes[ability.motion_type]
-    };
+      this.ffbeChainUnits[unitId].abilities[id] = {
+        dataId: Number(dataId),
+        names: this.getNames(dataId, level, lb),
+        damage: null,
+        base: 0,
+        hitDamage: []
+        // move: this.moveTypes[ability.move_type],
+        // motion : this.motionTypes[ability.motion_type]
+      };
 
-    if (!canDualSkill) {
-      this.ffbeChainUnits[unitId].abilities[id].canDualSkill = false;
+      if (!canDualSkill) {
+        this.ffbeChainUnits[unitId].abilities[id].canDualSkill = false;
+      }
+
+      if (!lb && ability.effect_frames) {
+        this.ffbeChainUnits[unitId].abilities[id].castTime = ability.effect_frames[0][0];
+      }
+
+      if (ability.magic_type) {
+        this.ffbeChainUnits[unitId].abilities[id].magicType = ability.magic_type.toLowerCase();
+      }
+
+      if (ability.element_inflict) {
+        ability.element_inflict.forEach(element => {
+          if (!this.ffbeChainUnits[unitId].abilities[id].elements) {
+            this.ffbeChainUnits[unitId].abilities[id].elements = [];
+          }
+          this.ffbeChainUnits[unitId].abilities[id].elements.push(element.toLowerCase());
+        });
+      }
+
+      if (!(ability.type === "ABILITY" && (ability.attack_type === "Physical" || ability.attack_type === "Hybrid"))) {
+        this.ffbeChainUnits[unitId].abilities[id].dualable = false;
+      }
+
+      if (lb) {
+        this.ffbeChainUnits[unitId].abilities[id].isLB = true;
+      }
+
+      this.updateOffset(unitId, id, ability);
+      this.checkEffects(unitId, id, ability, dataId, rarity, level);
+
+      returnSkill = this.ffbeChainUnits[unitId].abilities[id];
     }
 
-    if (!lb && ability.effect_frames) {
-      this.ffbeChainUnits[unitId].abilities[id].castTime = ability.effect_frames[0][0];
-    }
-
-    if (ability.magic_type) {
-      this.ffbeChainUnits[unitId].abilities[id].magicType = ability.magic_type.toLowerCase();
-    }
-
-    if (ability.element_inflict) {
-      ability.element_inflict.forEach(element => {
-        if (!this.ffbeChainUnits[unitId].abilities[id].elements) {
-          this.ffbeChainUnits[unitId].abilities[id].elements = [];
-        }
-        this.ffbeChainUnits[unitId].abilities[id].elements.push(element.toLowerCase());
-      });
-    }
-
-    if (!(ability.type === "ABILITY" && (ability.attack_type === "Physical" || ability.attack_type === "Hybrid"))) {
-      this.ffbeChainUnits[unitId].abilities[id].dualable = false;
-    }
-
-    if (lb) {
-      this.ffbeChainUnits[unitId].abilities[id].isLB = true;
-    }
-
-    this.updateOffset(unitId, id, ability);
-    this.checkEffects(unitId, id, ability, dataId, rarity, level);
+    return returnSkill;
   }
 
   private checkEffects(unitId, id, ability, dataId, rarity, level = 0) {
@@ -438,16 +444,17 @@ export class JsonService {
           hitEffect++;
           this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = find.type ? find.type : "damage";
         }
+
+        this.updateBuffs(effect, unitId, id, index);
+        this.updateBreaks(effect, unitId, id, index);
+        this.updateImperils(effect, unitId, id, index);
+        this.updateImbues(effect, unitId, id, index);
       }
 
-      this.unlockSkill(effect, unitId, rarity, level);
+      this.unlockSkill(effect, unitId, rarity, dataId, level);
       this.isMultipleCastAbility(effect, unitId);
       this.updateChainCapModifier(effect, unitId, id, rarity);
 
-      this.updateImperils(effect, unitId, id, index);
-      this.updateBreaks(effect, unitId, id, index);
-      this.updateBuffs(effect, unitId, id, index);
-      this.updateImbues(effect, unitId, id, index);
       this.updateBoostModifier(effect, unitId, id, index, rarity);
       this.updateKillers(effect, unitId, id, index, rarity);
       this.updateLBDamage(effect, unitId, id, index, rarity);
@@ -467,18 +474,20 @@ export class JsonService {
     return;
   }
 
+  private unlockSkill(rawEffect, unitId, rarity, dataId, level = 0) {
+    let newSkill = null;
+    let unlockTurns = 0;
 
-  private unlockSkill(rawEffect, unitId, rarity, level = 0) {
-    // gagne l'accès à un spell qui donne 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
+    // unlock X-Cast 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
     let find = this.findEffect(rawEffect, [98]);
     if (find) {
-      if (Array.isArray(find.effect[3])) {
-        find.effect[3].forEach(skillId => {
-          this.addSkill(unitId, this.getSkill(skillId), skillId, rarity, level);
-        });
-      } else if (this.getSkill(find.effect[3])) {
-        this.addSkill(unitId, this.getSkill(find.effect[3]), find.effect[3], rarity, level);
-      }
+      // if (Array.isArray(find.effect[3])) { => Just to be sure every spell are in the character, let's try whithout it
+      //   find.effect[3].forEach(skillId => {
+      //     this.addSkill(unitId, this.getSkill(skillId), skillId, rarity, null, level);
+      //   });
+      // } else if (this.getSkill(find.effect[3])) {
+      //   this.addSkill(unitId, this.getSkill(find.effect[3]), find.effect[3], rarity, null, level);
+      // }
 
       this.addSkill(unitId, this.getSkill(find.effect[1]), find.effect[1], rarity, level);
     }
@@ -486,11 +495,17 @@ export class JsonService {
     // [1, 1, 99, [[2,  2], [503890,  503910], 2, 503900, 2, 503890]]
     find = this.findEffect(rawEffect, [99]);
     if (find) {
-      for (let i = 2; i < find.effect.length; i++) {
-        if (find.effect[i] !== 2) {
-          this.addSkill(unitId, this.getSkill(find.effect[i]), find.effect[i], rarity, level);
-        }
+      newSkill = this.addSkill(unitId, this.getSkill(find.effect[3]), find.effect[3], rarity, level);
+
+      if (Array.isArray(find.effect[1])) {
+        find.effect[1].forEach(skillId => {
+          this.updateMethodUnlockSkill(newSkill, skillId, 1, 1, find.effect[5]);
+        });
+      } else {
+        this.updateMethodUnlockSkill(newSkill, find.effect[1], 1, 1, find.effect[5]);
       }
+
+      this.addSkill(unitId, this.getSkill(find.effect[5]), find.effect[5], rarity, level);
     }
 
     // [1, 3, 100, [[2,  2,  2], [502050,  502060,  502070], 99999, 4, 1]]
@@ -498,18 +513,20 @@ export class JsonService {
     if (find) {
       if (Array.isArray(find.effect[1])) {
         find.effect[1].forEach(skillId => {
-          this.addSkill(unitId, this.getSkill(skillId), skillId, rarity, level);
+          newSkill = this.addSkill(unitId, this.getSkill(skillId), skillId, rarity, level);
+          this.updateMethodUnlockSkill(newSkill, dataId, find.effect[3]);
         });
       } else {
-        this.addSkill(unitId, this.getSkill(find.effect[1]), find.effect[1], rarity, level);
+        newSkill = this.addSkill(unitId, this.getSkill(find.effect[1]), find.effect[1], rarity, level);
+        this.updateMethodUnlockSkill(newSkill, dataId, find.effect[3]);
       }
     }
 
-    // [0, 3, 50, [30,  3,  910947,  1]]
-    find = this.findEffect(rawEffect, [50]);
-    if (find) {
-      this.addSkill(unitId, this.getSkill(find.effect[2]), find.effect[2], rarity, level);
-    }
+    // [0, 3, 50, [30,  3,  910947,  1]] ==> Counters
+    // find = this.findEffect(rawEffect, [50]);
+    // if (find) {
+    //   this.addSkill(unitId, this.getSkill(find.effect[2]), find.effect[2], rarity, level);
+    // }
 
     // Random use skill : [2, 1, 29, [[504100,  30], [504110,  30], [504120,  40], [0,  0], [0,  0]]]
     find = this.findEffect(rawEffect, [29]);
@@ -521,19 +538,45 @@ export class JsonService {
       }
     }
 
-    find = this.findEffect(rawEffect, [130]);
-    if (find) {
-      this.addSkill(unitId, this.getSkill(find.effect[0]), find.effect[0], rarity, level, false, false);
-    }
-
+    // 132 => autocast next turn
+    // 56 => autocast start battle
     find = this.findEffect(rawEffect, [132, 56]);
     if (find) {
       this.addSkill(unitId, this.getSkill(find.effect[0]), find.effect[0], rarity, level);
     }
 
+    // LB upgrade
     find = this.findEffect(rawEffect, [72]);
     if (find) {
       this.addSkill(unitId, this.lbs[find.effect[0]], find.effect[0], this.units[this.ffbeChainUnits[unitId].dataId].rarity_max, 1, true);
+    }
+
+    // Cooldown : 0, 3, 130, [911493, 0, [2,  0], 1]
+    find = this.findEffect(rawEffect, [130]);
+    if (find) {
+      newSkill = this.addSkill(unitId, this.getSkill(find.effect[0]), find.effect[0], rarity, level, false, false);
+      this.manageCooldown(newSkill, find.effect[2]);
+    }
+  }
+
+  private updateMethodUnlockSkill(skill, dataId, turns, nbUse = null, insteadOf = null) {
+    if (!skill.unlockBy) {
+      skill.unlockBy = {};
+    }
+
+    skill.unlockBy[dataId] = {
+      turns: turns,
+      nbUse: nbUse,
+      insteadOf: insteadOf
+    }
+  }
+
+  private manageCooldown(skill, turns) {
+    if (skill) {
+      skill.cooldown = {
+        unlock: turns[0] - turns[1] + 1,
+        wait: turns[0] + 1
+      };
     }
   }
 
@@ -817,7 +860,7 @@ export class JsonService {
   private updateBuffs(rawEffect, unitId, id, index) {
     // "Increase ATK and MAG by 120% for 3 turns to all allies",
     // "effects_raw": [[2, 2, 3, [120,  0,  120,  0,  3,  1,  0]]
-    let find = this.findEffect(rawEffect, [3], 2);
+    let find = this.findEffect(rawEffect, [3]);
 
     if (find) {
       for (let i = 0; i < 4; i++) {
@@ -1357,6 +1400,8 @@ export class JsonService {
           && !this.ffbeChainUnits[i].abilities[j].jump
           && !this.ffbeChainUnits[i].abilities[j].delayAttack
           && !this.ffbeChainUnits[i].abilities[j].dot
+          && !this.ffbeChainUnits[i].abilities[j].boostLB
+          && !this.ffbeChainUnits[i].abilities[j].passiveLBDamage
         ) {
           this.ffbeChainUnits[i].abilities.splice(j, 1);
         } else  {

@@ -70,8 +70,8 @@ export class ChainService {
     this.hitsDataSubject.next(this.hits);
     this.unitsDataSubject.next(this.units);
 
-    console.log("CHAIN CHAIN CHAIN")
-    console.log(this.units)
+    // console.log("CHAIN CHAIN CHAIN")
+    // console.log(this.units)
   }
 
   // Once Upon A Time
