@@ -26,7 +26,7 @@ import { NavService } from '../services/nav.service';
   styleUrls: ['./chaining.component.css']
 })
 export class ChainingComponent implements OnInit {
-  private lastCreatedId: number = 10000;
+  private lastCreatedId: number = 1000000000;
   private positionIds: any = {};
   private positionIdsInChain: any = {};
   private units: Unit[];
@@ -168,6 +168,8 @@ export class ChainingComponent implements OnInit {
           abilities: []
         }];
       }
+
+      unit.selfCreated = true;
 
       // Needed to correct old createdUnits
       unit.abilities.forEach((ability, abilityIndex) => {
@@ -526,7 +528,7 @@ export class ChainingComponent implements OnInit {
   }
 
   saveUnit(position: number) {
-    if (!this.chain[position].id || this.chain[position].id > 10000) {
+    if (!this.chain[position].id || this.chain[position].selfCreated) {
       let positionCreated = this.positionIds[this.chain[position].id];
       if (positionCreated >= 0) {
         this.createdUnits[positionCreated] = this.chain[position];
@@ -568,9 +570,8 @@ export class ChainingComponent implements OnInit {
     let id = this.duplicatePosition[position];
     let unit;
 
-    if (id < 10000) {
-      unit = this.unitService.getUnit(this.duplicatePosition[position]);
-    } else {
+    unit = this.unitService.getUnit(id);
+    if (unit === undefined) {
       unit = this.createdUnits.find(unit => unit.id === id);
     }
 
@@ -607,9 +608,9 @@ export class ChainingComponent implements OnInit {
       this.chainService.units[position] = null;
     } else if (this.chain[position].id !== unitId) {
       this.viewBestChainers = -1;
-      if (unitId < 10000) {
-        this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
-      } else if (unitId >= 10000) {
+
+      this.selectedUnits[position] = this.unitService.getUnit(parseInt(unitId));
+      if (this.selectedUnits[position] === undefined) {
         this.selectedUnits[position] = this.createdUnits.find(unit => unit.id === parseInt(unitId));
       }
 

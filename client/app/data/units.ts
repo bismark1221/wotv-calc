@@ -79725,5 +79725,869 @@ export const UNITS: any[] = [
         "rarity": 7
       }
     ]
+  },
+  {
+    "dataId": 100022904,
+    "names": {
+      "en": "Juraga of the Nu Star",
+      "tw": "十三鬥星玖拉迦",
+      "kr": "십삼성투사 쥬라가",
+      "fr": "Juraga de l'étoile Nu",
+      "de": "Nu-Stern-Juraga",
+      "es": "Juraga de la estrella Nu"
+    },
+    "rarity": {
+      "min": 4,
+      "max": 6
+    },
+    "dataStats": {
+      "4": {
+        "atk": {
+          "base": 75,
+          "pot": 16
+        },
+        "mag": {
+          "base": 70,
+          "pot": 16
+        }
+      },
+      "5": {
+        "atk": {
+          "base": 98,
+          "pot": 20
+        },
+        "mag": {
+          "base": 92,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 128,
+          "pot": 30
+        },
+        "mag": {
+          "base": 120,
+          "pot": 30
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 230800,
+        "names": {
+          "en": "Windshroud Fang",
+          "tw": "纏風牙",
+          "kr": "바람 장막의 송곳니",
+          "fr": "Croc de Voilevent",
+          "de": "Windumwehte Fangzähne",
+          "es": "Colmillo guardavientos"
+        },
+        "base": 180,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "wind",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "dataId": 230801,
+        "names": {
+          "en": "Windbreaker Claw",
+          "tw": "壊風爪",
+          "kr": "괴풍조",
+          "fr": "Griffe brise-vent",
+          "de": "Windbrecherkrallen",
+          "es": "Garra rompevientos"
+        },
+        "base": 210,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "wind",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "dataId": 230802,
+        "names": {
+          "en": "Watershroud Fang",
+          "tw": "纏水牙",
+          "kr": "물 장막의 송곳니",
+          "fr": "Croc de Voilevague",
+          "de": "Wasserumströmte Fangzähne",
+          "es": "Colmillo guardaolas"
+        },
+        "base": 180,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "dataId": 230803,
+        "names": {
+          "en": "Waterbreaker Claw",
+          "tw": "崩水爪",
+          "kr": "붕수조",
+          "fr": "Griffe brise-vague",
+          "de": "Wasserbrecherkrallen",
+          "es": "Garra rompeolas"
+        },
+        "base": 210,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "water",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2, 10, 10
+        ]
+      },
+      {
+        "dataId": 230805,
+        "names": {
+          "en": "Hurricane Blade",
+          "tw": "疾風連刃",
+          "kr": "질풍연인",
+          "fr": "Lame cyclonique",
+          "de": "Tornadoklinge",
+          "es": "Hoja ciclónica"
+        },
+        "base": 320,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 5,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0, 5
+        ]
+      },
+      {
+        "dataId": 230806,
+        "names": {
+          "en": "Shadow Claw Strike",
+          "tw": "影爪撃",
+          "kr": "영조격",
+          "fr": "Griffes d'ombre",
+          "de": "Schattenkrallenstreich",
+          "es": "Garras umbrosas"
+        },
+        "base": 180,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          79, 10, 10
+        ]
+      },
+      {
+        "dataId": 230807,
+        "names": {
+          "en": "Beast King Fangs",
+          "tw": "獸王雙牙",
+          "kr": "수왕쌍아",
+          "fr": "Crocs du roi des bêtes",
+          "de": "Fangzähne des Bestienkönigs",
+          "es": "Colmillos del rey bestia"
+        },
+        "base": 250,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 100022906,
+        "names": {
+          "en": "Bladeless Omnistrike",
+          "tw": "縱橫無刃",
+          "kr": "종횡무인",
+          "fr": "Omnifrappe bestiale",
+          "de": "Klingenloser Omnischlag",
+          "es": "Desarme omnidireccional"
+        },
+        "base": 1000,
+        "hitDamage": [
+          4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "water",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "type": "wind",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          38, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          230807
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 100022805,
+    "names": {
+      "en": "Physalis",
+      "tw": "法伊薩利斯",
+      "kr": "파이사리스"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 24
+        },
+        "mag": {
+          "base": 88,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 160,
+          "pot": 34
+        },
+        "mag": {
+          "base": 115,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 208,
+          "pot": 65
+        },
+        "mag": {
+          "base": 150,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 230780,
+        "names": {
+          "en": "Tetrashot",
+          "tw": "四方射擊",
+          "kr": "테트라 샷",
+          "fr": "Tétratir",
+          "de": "Tetraschuss",
+          "es": "Tetratiro"
+        },
+        "base": 400,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "damage",
+          "damage"
+        ],
+        "framesList": [
+          42, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230781,
+        "names": {
+          "en": "Frozen Bullet",
+          "tw": "霜凍子彈",
+          "kr": "프로즌 불릿",
+          "fr": "Tir de gel",
+          "de": "Gefrorene Kugel",
+          "es": "Bala congelada"
+        },
+        "base": 270,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230782,
+        "names": {
+          "en": "Short-Range Ice Charger",
+          "tw": "局部冰能放出",
+          "kr": "국소 냉각 충전",
+          "fr": "Chargeur de glace à courte portée",
+          "de": "Kurzstrecken-Eisladung",
+          "es": "Cargador de hielo de corto alcance"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 509702,
+        "names": {
+          "en": "F-Type Strongest Ice Shot+",
+          "tw": "F型最強冰彈 改",
+          "kr": "개량형 F형 최강 냉동탄",
+          "fr": "Tir de glace ultrapuissant de type F",
+          "de": "Stärkste Eiskugel Typ F+",
+          "es": "Tiro de hielo ultrapotente de tipo F"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 2
+        }
+      },
+      {
+        "dataId": 230785,
+        "names": {
+          "en": "Moog Whirl",
+          "tw": "回轉古利攻擊",
+          "kr": "빙글빙글 구리 어택",
+          "fr": "Tornade de Moog",
+          "de": "Whirlmog",
+          "es": "Mogurremolino"
+        },
+        "base": 210,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230786,
+        "names": {
+          "en": "Honeycomb Shot",
+          "tw": "射下蜂巢",
+          "kr": "벌집 쏘기",
+          "fr": "Tir alvéolaire",
+          "de": "Bienenwabenschuss",
+          "es": "Tiro avispero"
+        },
+        "base": 275,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230789,
+        "names": {
+          "en": "Armored Anti-Ice Grenade",
+          "tw": "防冰裝甲破壞彈",
+          "kr": "방빙장갑 파괴탄",
+          "fr": "Grenade renforcée anti-glace",
+          "de": "Anti-Eis-Panzergranate",
+          "es": "Granada blindada antihielo"
+        },
+        "base": 500,
+        "hitDamage": [
+          1.4, 1.4, 1.4, 1.4, 1.4, 1.4, 1.6, 90
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 120,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 230792,
+        "names": {
+          "en": "Premium Physalis Bullet",
+          "tw": "法伊薩利斯優質彈",
+          "kr": "프리미엄 파이사리스탄",
+          "fr": "Balle Physalis premium",
+          "de": "Premium-Physalis-Kugel",
+          "es": "Superbala physalística"
+        },
+        "base": 300,
+        "hitDamage": [
+          2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.666666666666667, 83.33333333333331
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 509709,
+        "names": {
+          "en": "Speed Type",
+          "tw": "速度型態",
+          "kr": "타입·스피드",
+          "fr": "Type Vitesse",
+          "de": "Geschwindigkeitsmodus",
+          "es": "Modo Velocidad"
+        },
+        "base": 500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "break",
+          "buff",
+          "damage",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 9999
+          },
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 9999
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 230789,
+            "value": 50,
+            "turn": 9999,
+            "uniqueIdentifier": 509709
+          },
+          {
+            "id": 230792,
+            "value": 50,
+            "turn": 9999,
+            "uniqueIdentifier": 509709
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5
+        }
+      },
+      {
+        "dataId": 509701,
+        "names": {
+          "en": "Wide-Range Ice Charger",
+          "tw": "廣域冰能放出",
+          "kr": "광역 냉각 충전",
+          "fr": "Chargeur de glace à longue portée",
+          "de": "Langstrecken-Eisladung",
+          "es": "Cargador de hielo de largo alcance"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 2
+          }
+        ],
+        "unlockBy": {
+          "509709": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 509710,
+        "names": {
+          "en": "Hunting Type",
+          "tw": "狩獵型態",
+          "kr": "타입·헌팅",
+          "fr": "Type Chasse",
+          "de": "Jagdmodus",
+          "es": "Modo Caza"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 509702,
+            "value": 1000,
+            "turn": 2,
+            "uniqueIdentifier": 11301
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 8
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 230788,
+        "names": {
+          "en": "Friendship Technique -Scary Present-",
+          "tw": "友人作戰-恐怖禮物-",
+          "kr": "친구 작전·무시무시한 선물",
+          "fr": "Technique amicale - Cadeau effrayant",
+          "de": "Freundschaftstechnik",
+          "es": "Técnica amistosa: regalo espeluznante"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 230787,
+        "names": {
+          "en": "Lots of Training",
+          "tw": "加倍鍛鍊",
+          "kr": "잔뜩 단련하기",
+          "fr": "Entraînement intensif",
+          "de": "Unermüdliches Training",
+          "es": "Entrenamiento exhaustivo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 5
+          },
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 230789,
+            "value": 50,
+            "turn": 5,
+            "uniqueIdentifier": 11172
+          },
+          {
+            "id": 230792,
+            "value": 50,
+            "turn": 5,
+            "uniqueIdentifier": 11172
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 100022807,
+        "names": {
+          "en": "Shower of Bullets",
+          "tw": "槍林彈雨",
+          "kr": "샤워 오브 불릿",
+          "fr": "Averse de balles",
+          "de": "Kugelregen",
+          "es": "Tromba de balas"
+        },
+        "base": 1135,
+        "hitDamage": [
+          0.6079295154185023, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.9118942731277534, 0.6079295154185023, 0.6079295154185023, 0.9118942731277534, 0.9118942731277534, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 0.6079295154185023, 69.60352422907489
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "damage",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 230781,
+            "value": 200,
+            "turn": 4,
+            "uniqueIdentifier": 11183
+          },
+          {
+            "id": 230789,
+            "value": 200,
+            "turn": 4,
+            "uniqueIdentifier": 11183
+          },
+          {
+            "id": 230792,
+            "value": 200,
+            "turn": 4,
+            "uniqueIdentifier": 11183
+          }
+        ],
+        "framesList": [
+          148, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          230782,
+          509701,
+          230783,
+          230787,
+          230788,
+          230780,
+          230781,
+          230785,
+          230786,
+          230789,
+          230792,
+          230790,
+          230791,
+          509702,
+          509709,
+          509710
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          230782,
+          509701,
+          230783,
+          230787,
+          230788,
+          230792,
+          509702
+        ]
+      }
+    ],
+    "maxChainCap": 6,
+    "passiveBoostModifiers": [
+      {
+        "id": 230789,
+        "value": 150,
+        "rarity": 7
+      },
+      {
+        "id": 230792,
+        "value": 150,
+        "rarity": 7
+      },
+      {
+        "id": 230789,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 230792,
+        "value": 100,
+        "rarity": 7
+      }
+    ]
   }
 ];

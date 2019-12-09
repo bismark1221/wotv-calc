@@ -72,12 +72,12 @@
           </div>
 
           <diV class="buttonsAbility">
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="unit.id > 10000 && !getActiveRename(abilityIndex)">
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="unit.selfCreated && !getActiveRename(abilityIndex)">
               <label class="emptyLabel">&nbsp;</label>
               <button class="btn btn-secondary fullWidth" type="button" (click)="renameAbility(abilityIndex)">{{ 'chain.button.renameAbility' | translate }}</button>
             </div>
 
-            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="unit.id > 10000 && getActiveRename(abilityIndex)">
+            <div class="selectRightZoneTwoThirdDividedInThird" *ngIf="unit.selfCreated && getActiveRename(abilityIndex)">
               <label class="emptyLabel">&nbsp;</label>
               <button class="btn btn-secondary fullWidth" type="button">{{ 'chain.button.saveAbility' | translate }}</button>
             </div>

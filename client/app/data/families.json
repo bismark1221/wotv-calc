@@ -4850,13 +4850,20 @@
       {
         "id": 100022805,
         "names": {
-          "en": 100022805
+          "en": "Physalis",
+          "tw": "法伊薩利斯",
+          "kr": "파이사리스"
         },
         "abilities": [
           {
             "id": 230781,
             "names": {
-              "en": "unknown ability name -- 230781"
+              "en": "Frozen Bullet",
+              "tw": "霜凍子彈",
+              "kr": "프로즌 불릿",
+              "fr": "Tir de gel",
+              "de": "Gefrorene Kugel",
+              "es": "Bala congelada"
             },
             "offset": 14,
             "castTime": 40
@@ -4864,7 +4871,12 @@
           {
             "id": 230789,
             "names": {
-              "en": "unknown ability name -- 230789"
+              "en": "Armored Anti-Ice Grenade",
+              "tw": "防冰裝甲破壞彈",
+              "kr": "방빙장갑 파괴탄",
+              "fr": "Grenade renforcée anti-glace",
+              "de": "Anti-Eis-Panzergranate",
+              "es": "Granada blindada antihielo"
             },
             "offset": 14,
             "castTime": 40
@@ -4872,7 +4884,25 @@
           {
             "id": 230792,
             "names": {
-              "en": "unknown ability name -- 230792"
+              "en": "Premium Physalis Bullet",
+              "tw": "法伊薩利斯優質彈",
+              "kr": "프리미엄 파이사리스탄",
+              "fr": "Balle Physalis premium",
+              "de": "Premium-Physalis-Kugel",
+              "es": "Superbala physalística"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509709,
+            "names": {
+              "en": "Speed Type",
+              "tw": "速度型態",
+              "kr": "타입·스피드",
+              "fr": "Type Vitesse",
+              "de": "Geschwindigkeitsmodus",
+              "es": "Modo Velocidad"
             },
             "offset": 14,
             "castTime": 40
@@ -9400,13 +9430,23 @@
       {
         "id": 100022904,
         "names": {
-          "en": 100022904
+          "en": "Juraga of the Nu Star",
+          "tw": "十三鬥星玖拉迦",
+          "kr": "십삼성투사 쥬라가",
+          "fr": "Juraga de l'étoile Nu",
+          "de": "Nu-Stern-Juraga",
+          "es": "Juraga de la estrella Nu"
         },
         "abilities": [
           {
             "id": 230807,
             "names": {
-              "en": "unknown ability name -- 230807"
+              "en": "Beast King Fangs",
+              "tw": "獸王雙牙",
+              "kr": "수왕쌍아",
+              "fr": "Crocs du roi des bêtes",
+              "de": "Fangzähne des Bestienkönigs",
+              "es": "Colmillos del rey bestia"
             },
             "offset": 14,
             "castTime": 40
@@ -13254,13 +13294,20 @@
       {
         "id": 100022805,
         "names": {
-          "en": 100022805
+          "en": "Physalis",
+          "tw": "法伊薩利斯",
+          "kr": "파이사리스"
         },
         "abilities": [
           {
             "id": 230780,
             "names": {
-              "en": "unknown ability name -- 230780"
+              "en": "Tetrashot",
+              "tw": "四方射擊",
+              "kr": "테트라 샷",
+              "fr": "Tétratir",
+              "de": "Tetraschuss",
+              "es": "Tetratiro"
             },
             "offset": 14,
             "castTime": 40
@@ -15514,6 +15561,29 @@
         ]
       },
       {
+        "id": 100022805,
+        "names": {
+          "en": "Physalis",
+          "tw": "法伊薩利斯",
+          "kr": "파이사리스"
+        },
+        "abilities": [
+          {
+            "id": 230786,
+            "names": {
+              "en": "Honeycomb Shot",
+              "tw": "射下蜂巢",
+              "kr": "벌집 쏘기",
+              "fr": "Tir alvéolaire",
+              "de": "Bienenwabenschuss",
+              "es": "Tiro avispero"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 100023205,
         "names": {
           "en": "Aldore King Rain",
@@ -17106,22 +17176,6 @@
             "id": 509754,
             "names": {
               "en": "unknown ability name -- 509754"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 100022805,
-        "names": {
-          "en": 100022805
-        },
-        "abilities": [
-          {
-            "id": 230786,
-            "names": {
-              "en": "unknown ability name -- 230786"
             },
             "offset": 14,
             "castTime": 40

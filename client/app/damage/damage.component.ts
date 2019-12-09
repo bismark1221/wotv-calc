@@ -29,7 +29,7 @@ import { DamageService } from '../services/damage.service';
   styleUrls: ['./damage.component.css']
 })
 export class DamageComponent implements OnInit {
-  private lastCreatedId: number = 10000;
+  private lastCreatedId: number = 100000000;
   private positionIds: any = {};
   private positionIdsInChain: any = {};
   private units: Unit[];
@@ -133,6 +133,8 @@ export class DamageComponent implements OnInit {
     this.createdUnits.forEach((unit, index) => {
       this.lastCreatedId = unit.id >= this.lastCreatedId ? unit.id : this.lastCreatedId;
       this.positionIds[unit.id] = index;
+
+      unit.selfCreated = true;
 
       if (!unit.multiCasts) {
         unit.multiCasts = [{
@@ -341,9 +343,8 @@ export class DamageComponent implements OnInit {
         framesGap: 0
       };
     } else if (this.unit.id !== unitId) {
-      if (unitId < 10000) {
-        this.unit = this.unitService.getUnit(parseInt(unitId));
-      } else if (unitId >= 10000) {
+      this.unit = this.unitService.getUnit(parseInt(unitId));
+      if (this.unit === undefined) {
         this.unit = this.createdUnits.find(unit => unit.id === parseInt(unitId));
       }
 

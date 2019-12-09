@@ -218,7 +218,7 @@
 
   <!-- Select Round + Summary -->
   <div  class="summaryZone">
-    <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && unit.id < 10000" />
+    <img class="unitImg" src='assets/units/{{ unit.id }}.png' *ngIf="unit.id !== 'unselect' && !unit.selfCreated" />
     <img class="vsImg" src='assets/damage/versus.png' *ngIf="unit.id !== 'unselect'" />
     <img class="unitImg" src='assets/monsters/{{ monster.id }}.png' *ngIf="unit.id !== 'unselect'" />
     <div *ngIf="unit.id !== 'unselect'">

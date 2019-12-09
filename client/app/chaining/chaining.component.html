@@ -16,10 +16,10 @@
               [position]="i"
               [options]="select2Options"
               (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-            <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect' && chain[i].id < 10000" />
+            <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect' && !chain[i].selfCreated" />
           </div>
 
-          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].id > 10000 && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
+          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].selfCreated && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
             <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">
               {{ 'chain.button.rename' | translate }}
             </button>
@@ -36,7 +36,7 @@
             </button>
           </div>
 
-          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].id > 10000">
+          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].selfCreated">
             <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">
               {{ 'chain.button.removeUnit' | translate }}
             </button>
