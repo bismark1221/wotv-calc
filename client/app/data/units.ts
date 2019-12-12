@@ -22944,7 +22944,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -22968,7 +22967,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -22992,7 +22990,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -23017,7 +23014,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -23043,7 +23039,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "imperil"
         ],
@@ -23117,7 +23112,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -28017,7 +28011,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imperil"
         ],
         "imperils": [
@@ -31271,7 +31264,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -31338,7 +31330,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -31748,7 +31739,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -31849,7 +31839,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -40507,7 +40496,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -44303,7 +44291,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imbue"
         ],
         "ignore": 50,
@@ -44470,7 +44457,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -44731,7 +44717,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "boostModifier"
         ],
         "ignore": 50,
@@ -44808,7 +44793,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -57253,7 +57237,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -57833,7 +57816,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -58292,7 +58274,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -58691,7 +58672,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -58747,7 +58727,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -60475,7 +60454,6 @@ export const UNITS: any[] = [
         "effectOrder": [
           "break",
           "buff",
-          "damage",
           "damage"
         ],
         "breaks": [
@@ -60949,8 +60927,6 @@ export const UNITS: any[] = [
         "castTime": 30,
         "offset": 14,
         "effectOrder": [
-          "damage",
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -60974,7 +60950,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -61044,7 +61019,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "boostModifier"
         ],
         "ignore": 50,
@@ -61077,7 +61051,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -61106,7 +61079,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "boostModifier"
         ],
@@ -61611,7 +61583,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -61640,7 +61611,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -61666,7 +61636,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -61696,7 +61665,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -62284,7 +62252,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -62313,7 +62280,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -62794,7 +62760,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imperil"
         ],
         "imperils": [
@@ -63023,8 +62988,6 @@ export const UNITS: any[] = [
         "castTime": 20,
         "offset": 14,
         "effectOrder": [
-          "damage",
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -63413,7 +63376,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -63438,7 +63400,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "boostModifier"
         ],
@@ -63474,7 +63435,6 @@ export const UNITS: any[] = [
         "effectOrder": [
           "break",
           "killer",
-          "damage",
           "damage"
         ],
         "killers": [
@@ -63518,8 +63478,6 @@ export const UNITS: any[] = [
         "castTime": 10,
         "offset": 14,
         "effectOrder": [
-          "damage",
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -63625,7 +63583,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -63650,7 +63607,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -63675,7 +63631,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -64033,7 +63988,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -64214,7 +64168,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imperil"
         ],
         "imperils": [
@@ -64307,7 +64260,6 @@ export const UNITS: any[] = [
         "effectOrder": [
           "imperil",
           "buff",
-          "damage",
           "damage"
         ],
         "imperils": [
@@ -64345,7 +64297,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "boostModifier"
         ],
@@ -67073,7 +67024,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imbue"
         ],
         "imbues": [
@@ -67177,7 +67127,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imbue"
         ],
         "imbues": [
@@ -67208,7 +67157,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -67266,7 +67214,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -67542,7 +67489,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "buff"
         ],
         "buffs": [
@@ -67597,7 +67543,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -67622,7 +67567,6 @@ export const UNITS: any[] = [
         "castTime": 54,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -67677,7 +67621,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -67739,7 +67682,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "imperil"
         ],
@@ -67857,7 +67799,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -67919,7 +67860,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imbue"
         ],
         "ignore": 50,
@@ -67973,7 +67913,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -72022,7 +71961,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -72305,7 +72243,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -72331,7 +72268,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -72357,7 +72293,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -72935,7 +72870,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imperil"
         ],
         "imperils": [
@@ -73041,7 +72975,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "boostModifier"
         ],
@@ -73703,7 +73636,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -73736,7 +73668,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -73769,7 +73700,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -73802,7 +73732,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -73913,7 +73842,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "imperil",
           "boostModifier"
@@ -74422,7 +74350,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -74496,7 +74423,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "break",
-          "damage",
           "damage"
         ],
         "breaks": [
@@ -74779,7 +74705,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -74943,37 +74868,18 @@ export const UNITS: any[] = [
         },
         "base": 1500,
         "hitDamage": [
-          5.555556,
-          5.555556,
-          5.555556,
-          5.555556,
-          5.555556,
-          5.555556,
-          5.555556,
-          5.555556,
-          5.555557,
-          50
+          5.555556, 5.555556, 5.555556, 5.555556, 5.555556, 5.555556, 5.555556, 5.555556, 5.555557, 50
         ],
         "canDualSkill": false,
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
           "break",
-          "damage",
           "damage"
         ],
         "ignore": 50,
         "framesList": [
-          110,
-          10,
-          10,
-          10,
-          10,
-          10,
-          10,
-          10,
-          10,
-          10
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
         ],
         "cooldown": {
           "unlock": 3,
@@ -76422,7 +76328,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "boostModifier"
         ],
         "boostModifiers": [
@@ -76454,7 +76359,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "boostModifier"
         ],
@@ -76547,7 +76451,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -76602,7 +76505,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -77067,7 +76969,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "boostModifier"
         ],
         "boostModifiers": [
@@ -77178,7 +77079,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -77266,7 +77166,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "imperil",
-          "damage",
           "damage"
         ],
         "imperils": [
@@ -77307,7 +77206,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "imperil",
-          "damage",
           "damage"
         ],
         "imperils": [
@@ -77348,7 +77246,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "imperil",
-          "damage",
           "damage"
         ],
         "imperils": [
@@ -77442,7 +77339,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -77480,7 +77376,6 @@ export const UNITS: any[] = [
         "effectOrder": [
           "damage",
           "imperil",
-          "killer",
           "killer"
         ],
         "imperils": [
@@ -77700,7 +77595,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imbue"
         ],
         "imbues": [
@@ -77733,7 +77627,6 @@ export const UNITS: any[] = [
         ],
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage",
           "imbue"
         ],
@@ -77798,7 +77691,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -77822,7 +77714,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -77846,7 +77737,6 @@ export const UNITS: any[] = [
         "castTime": 38,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -79219,7 +79109,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -79356,7 +79245,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -79389,7 +79277,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -79422,7 +79309,6 @@ export const UNITS: any[] = [
         "dualable": false,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "consecutive": {
@@ -80073,9 +79959,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
-          "damage",
-          "damage",
           "damage"
         ],
         "framesList": [
@@ -80247,7 +80130,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "imperil"
         ],
         "imperils": [
@@ -80278,7 +80160,6 @@ export const UNITS: any[] = [
         "castTime": 40,
         "offset": 14,
         "effectOrder": [
-          "damage",
           "damage"
         ],
         "ignore": 50,
@@ -80502,7 +80383,6 @@ export const UNITS: any[] = [
         "offset": 14,
         "effectOrder": [
           "damage",
-          "damage",
           "boostModifier"
         ],
         "ignore": 50,
@@ -80586,6 +80466,2208 @@ export const UNITS: any[] = [
       {
         "id": 230792,
         "value": 100,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 215002804,
+    "names": {
+      "en": "Kenny Crow",
+      "tw": "肯尼‧克洛",
+      "kr": "케니 크로우",
+      "es": "Kenny Cuervo"
+    },
+    "rarity": {
+      "min": 4,
+      "max": 6
+    },
+    "dataStats": {
+      "4": {
+        "atk": {
+          "base": 93,
+          "pot": 18
+        },
+        "mag": {
+          "base": 55,
+          "pot": 14
+        }
+      },
+      "5": {
+        "atk": {
+          "base": 120,
+          "pot": 24
+        },
+        "mag": {
+          "base": 71,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 156,
+          "pot": 34
+        },
+        "mag": {
+          "base": 92,
+          "pot": 26
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 800205,
+        "names": {
+          "en": "Warp Salmon",
+          "tw": "變移召喚",
+          "kr": "시프트 살몬",
+          "fr": "Saumon éclipse",
+          "de": "Warp-Lachs",
+          "es": "Lux Piscis"
+        },
+        "base": 320,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 42,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          44, 9, 24
+        ]
+      },
+      {
+        "dataId": 231822,
+        "names": {
+          "en": "Nebula Salmon",
+          "tw": "涅布拉鮭",
+          "kr": "네브라 연어",
+          "fr": "Saumon de Nebula",
+          "de": "Nebellachs",
+          "es": "Salmón de La Nébula"
+        },
+        "base": 280,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 42,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          44, 9, 24
+        ]
+      },
+      {
+        "dataId": 231823,
+        "names": {
+          "en": "Wennath Salmon",
+          "tw": "威拿斯鮭",
+          "kr": "웨나스 연어",
+          "fr": "Saumon de Wennath",
+          "de": "Wennas-Lachs",
+          "es": "Salmón del Wennath"
+        },
+        "base": 120,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 42,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 30,
+            "turn": 2
+          },
+          {
+            "stat": "mag",
+            "value": 30,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          44, 9, 24
+        ]
+      },
+      {
+        "dataId": 231826,
+        "names": {
+          "en": "Salmon Blade",
+          "tw": "鮭魚劍",
+          "kr": "살몬 소드",
+          "fr": "Lame saumon",
+          "de": "Lachsschwert",
+          "es": "Espada salmón"
+        },
+        "base": 230,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 42,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          44, 9, 24
+        ]
+      },
+      {
+        "dataId": 231827,
+        "names": {
+          "en": "Feathered Foe",
+          "tw": "飛翔術",
+          "kr": "비상의 술",
+          "fr": "L'emplumé",
+          "de": "Gefiederter Feind",
+          "es": "Enemigo emplumado"
+        },
+        "base": 260,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 231830,
+        "names": {
+          "en": "A Forced Taste of Jetty's",
+          "tw": "強制試飲傑蒂礦泉水",
+          "kr": "강제로 젯티스 먹이기",
+          "fr": "Une gorgée forcée de Jetty's",
+          "de": "Eine Ladung Jettys",
+          "es": "Trago forzado de Jetty's"
+        },
+        "base": 200,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 42,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 30,
+            "turn": 2
+          },
+          {
+            "stat": "def",
+            "value": 30,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          44, 9, 24
+        ]
+      },
+      {
+        "dataId": 510240,
+        "names": {
+          "en": "Blazing Wings of Blue and White",
+          "tw": "青白色火焰之翼",
+          "kr": "창백한 불꽃의 날개",
+          "fr": "Embrasement des ailes bleu et blanc",
+          "de": "Weißblaue Flammenflügel",
+          "es": "Alas de llamas azules y blancas"
+        },
+        "base": 400,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 30,
+            "turn": 2
+          },
+          {
+            "stat": "def",
+            "value": 30,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          2
+        ],
+        "unlockBy": {
+          "231830": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "215002806": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510241,
+        "names": {
+          "en": "Soar! Kenny Wing!",
+          "tw": "輕快！肯尼之翼",
+          "kr": "경쾌! 케니 윙",
+          "fr": "Libération ! Aile de Kenny !",
+          "de": "Sturzflug! Kennyflügel!!!",
+          "es": "¡Elevación! ¡Alas de Kenny!"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 80,
+            "turn": 2
+          },
+          {
+            "stat": "def",
+            "value": 80,
+            "turn": 2
+          },
+          {
+            "stat": "mag",
+            "value": 80,
+            "turn": 2
+          },
+          {
+            "stat": "spr",
+            "value": 80,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510242,
+        "names": {
+          "en": "Activate! Kenny Storm!",
+          "tw": "發動！肯尼颶風",
+          "kr": "발동! 케니 스톰",
+          "fr": "Activation ! Tornade de Kenny",
+          "de": "Aktivierung! Kennysturm!!!",
+          "es": "¡Activación! ¡Tormenta Kenny!"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 50,
+            "turn": 2
+          },
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510243,
+        "names": {
+          "en": "CAW kids, it's Kenny Crow!",
+          "tw": "你好，我是肯尼‧克洛",
+          "kr": "반가워, 케니 크로우야",
+          "fr": "Croâ les enfants ! C'est Kenny Crow !",
+          "de": "Hallo aucht! Ich bin's, Kenny Crow!",
+          "es": "¡Hola, niños y niñas, soy Kenny Cuervo!"
+        },
+        "base": 500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 120,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          82
+        ]
+      },
+      {
+        "dataId": 215002806,
+        "names": {
+          "en": "Salmiger",
+          "tw": "幻影鮭魚",
+          "kr": "팬텀 살몬",
+          "fr": "Fantomon",
+          "de": "Spektralachs",
+          "es": "Coro salmonal"
+        },
+        "base": 1300,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 20
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 90,
+            "turn": 2
+          },
+          {
+            "stat": "def",
+            "value": 90,
+            "turn": 2
+          },
+          {
+            "stat": "mag",
+            "value": 90,
+            "turn": 2
+          },
+          {
+            "stat": "spr",
+            "value": 90,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          114, 5, 5, 5, 5, 5, 27, 6, 6
+        ]
+      }
+    ],
+    "passiveLBDamage": [
+      {
+        "value": 30,
+        "rarity": 4
+      }
+    ]
+  },
+  {
+    "dataId": 215002005,
+    "names": {
+      "en": "Crown Prince Noctis",
+      "tw": "諾克提斯王子",
+      "kr": "녹티스 왕자",
+      "fr": "Noctis, prince couronné",
+      "de": "Kronprinz Noctis",
+      "es": "Príncipe Noctis"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 123,
+          "pot": 20
+        },
+        "mag": {
+          "base": 118,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 159,
+          "pot": 30
+        },
+        "mag": {
+          "base": 153,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 50
+        },
+        "mag": {
+          "base": 198,
+          "pot": 50
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 231865,
+        "names": {
+          "en": "Plunge",
+          "tw": "變移突襲",
+          "kr": "시프트 어설트",
+          "fr": "Éclipse violente",
+          "de": "Sturmangriff-Warp",
+          "es": "Lux Violenta"
+        },
+        "base": 380,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 36,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          59, 10, 11, 24
+        ]
+      },
+      {
+        "dataId": 231870,
+        "names": {
+          "en": "Protection of the Lineage - Fire",
+          "tw": "歷代王的守護・火",
+          "kr": "역대 왕의 가호·불",
+          "fr": "Protection de la lignée - Feu",
+          "de": "Beistand der Königslinie - Feuer",
+          "es": "Protección de los reyes de antaño - Fuego"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 100,
+            "turn": 3,
+            "uniqueIdentifier": 111018
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231871,
+        "names": {
+          "en": "Protection of the Lineage - Ice",
+          "tw": "歷代王的守護・冰",
+          "kr": "역대 왕의 가호·얼음",
+          "fr": "Protection de la lignée - Glace",
+          "de": "Beistand der Königslinie - Eis",
+          "es": "Protección de los reyes de antaño - Hielo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 100,
+            "turn": 3,
+            "uniqueIdentifier": 111018
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231872,
+        "names": {
+          "en": "Protection of the Lineage - Lightning",
+          "tw": "歷代王的守護・雷",
+          "kr": "역대 왕의 가호·번개",
+          "fr": "Protection de la lignée - Lumière",
+          "de": "Beistand der Königslinie - Blitz",
+          "es": "Protección de los reyes de antaño - Rayo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 100,
+            "turn": 3,
+            "uniqueIdentifier": 111018
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231873,
+        "names": {
+          "en": "Point-Blank Warp-Strike+",
+          "tw": "零距離變移破解改",
+          "kr": "개량형 영거리 시프트 브레이크",
+          "fr": "Assauts éclipse critiques +",
+          "de": "Direkt-Warp+",
+          "es": "Quemarropa+"
+        },
+        "base": 600,
+        "hitDamage": [
+          91.66666666666669, 2.5000000000000004, 2.5000000000000004, 3.333333333333334
+        ],
+        "castTime": 36,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break",
+          "boostLB"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "boostLB": [
+          {
+            "value": 150,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          59, 10, 11, 24
+        ],
+        "unlockBy": {
+          "507682": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "507683": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "507684": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "507685": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510262,
+        "names": {
+          "en": "True King Awakened",
+          "tw": "真王的覺醒",
+          "kr": "진정한 왕의 각성",
+          "fr": "Éveil du véritable roi",
+          "de": "Erwachen des wahren Königs",
+          "es": "Despertar del Entronado"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 231879
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510263,
+        "names": {
+          "en": "Awakened Armiger+",
+          "tw": "覺醒幻影劍改",
+          "kr": "개량형 각성 팬텀 소드",
+          "fr": "Arsenal fantôme éveillé +",
+          "de": "Erwachte Königswaffen+",
+          "es": "Coro espectral despertado+"
+        },
+        "base": 4000,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5, 2, 2, 2, 2, 2, 2.5
+        ],
+        "castTime": 320,
+        "offset": 112,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          72, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5
+        ],
+        "unlockBy": {
+          "510262": {
+            "turns": 4,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 507682,
+        "names": {
+          "en": "Quintcast III (1)",
+          "tw": "無盡華爾滋 (1)",
+          "kr": "엔드리스 왈츠 (1)",
+          "fr": "Arcane quintuple III (1)",
+          "de": "Ars Quintae III (1)",
+          "es": "Elementia++ V (1)"
+        },
+        "damage": "hybrid",
+        "base": 600,
+        "hitDamage": [
+          50, 50
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          75, 105
+        ]
+      },
+      {
+        "dataId": 507683,
+        "names": {
+          "en": "Quintcast III (2)",
+          "tw": "無盡華爾滋 (2)",
+          "kr": "엔드리스 왈츠 (2)",
+          "fr": "Arcane quintuple III (2)",
+          "de": "Ars Quintae III (2)",
+          "es": "Elementia++ V (2)"
+        },
+        "damage": "hybrid",
+        "base": 750,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "ice",
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          125, 40, 55
+        ]
+      },
+      {
+        "dataId": 507684,
+        "names": {
+          "en": "Quintcast III (3)",
+          "tw": "無盡華爾滋 (3)",
+          "kr": "엔드리스 왈츠 (3)",
+          "fr": "Arcane quintuple III (3)",
+          "de": "Ars Quintae III (3)",
+          "es": "Elementia++ V (3)"
+        },
+        "damage": "hybrid",
+        "base": 900,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "ice",
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          40, 55, 105, 40
+        ]
+      },
+      {
+        "dataId": 507685,
+        "names": {
+          "en": "Quintcast III (4)",
+          "tw": "無盡華爾滋 (4)",
+          "kr": "엔드리스 왈츠 (4)",
+          "fr": "Arcane quintuple III (4)",
+          "de": "Ars Quintae III (4)",
+          "es": "Elementia++ V (4)"
+        },
+        "damage": "hybrid",
+        "base": 1050,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "ice",
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          25, 155, 40, 55, 105
+        ]
+      },
+      {
+        "dataId": 231883,
+        "names": {
+          "en": "Star of the Rogue (Crown Prince Noctis)",
+          "tw": "伏龍王投劍【諾克提斯王子】",
+          "kr": "복룡왕의 투검[녹티스 왕자]",
+          "fr": "Shurikens du Dragon (Noctis, prince couronné)",
+          "de": "Stern des Unbarmherzigen (Kronprinz Noctis)",
+          "es": "Fukuryu (Príncipe Noctis)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer",
+          "boostModifier"
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 100,
+            "magic": 0,
+            "turn": 2
+          },
+          {
+            "race": "undead",
+            "physic": 0,
+            "magic": 100,
+            "turn": 2
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 950,
+            "turn": 1,
+            "uniqueIdentifier": 111022
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231885,
+        "names": {
+          "en": "Scepter of the Pious (Crown Prince Noctis)",
+          "tw": "聖王杖【諾克提斯王子】",
+          "kr": "성왕의 지팡이[녹티스 왕자]",
+          "fr": "Sceptre du Saint (Noctis, prince couronné)",
+          "de": "Stab des Frommen (Kronprinz Noctis)",
+          "es": "Bautista (Príncipe Noctis)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer",
+          "boostModifier"
+        ],
+        "killers": [
+          {
+            "race": "spirit",
+            "physic": 100,
+            "magic": 0,
+            "turn": 2
+          },
+          {
+            "race": "spirit",
+            "physic": 0,
+            "magic": 100,
+            "turn": 2
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 950,
+            "turn": 1,
+            "uniqueIdentifier": 111024
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231884,
+        "names": {
+          "en": "Sword of the Tall (Crown Prince Noctis)",
+          "tw": "霸王大劍【諾克提斯王子】",
+          "kr": "패왕의 대검[녹티스 왕자]",
+          "fr": "Épée du Conquérant (Noctis, prince couronné)",
+          "de": "Schwert des Gewaltigen (Kronprinz Noctis)",
+          "es": "Goliat (Príncipe Noctis)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break",
+          "killer",
+          "boostModifier"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 2
+          }
+        ],
+        "killers": [
+          {
+            "race": "human",
+            "physic": 150,
+            "magic": 0,
+            "turn": 2
+          },
+          {
+            "race": "human",
+            "physic": 0,
+            "magic": 150,
+            "turn": 2
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 950,
+            "turn": 1,
+            "uniqueIdentifier": 111023
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231882,
+        "names": {
+          "en": "Blade of the Mystic (Crown Prince Noctis)",
+          "tw": "夜叉王刀劍【諾克提斯王子】",
+          "kr": "야차왕의 도검[녹티스 왕자]",
+          "fr": "Sabre du Mystique (Noctis, prince couronné)",
+          "de": "Schwert des Mystikers (Kronprinz Noctis)",
+          "es": "Iaksa (Príncipe Noctis)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 2
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 950,
+            "turn": 1,
+            "uniqueIdentifier": 111021
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231881,
+        "names": {
+          "en": "Axe of the Conqueror (Crown Prince Noctis)",
+          "tw": "修羅王之刃【諾克提斯王子】",
+          "kr": "수라왕의 칼날[녹티스 왕자]",
+          "fr": "Hallebarde de l'Acharné (Noctis, prince couronné)",
+          "de": "Klinge des Eroberers (Kronprinz Noctis)",
+          "es": "Deva (Príncipe Noctis)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break",
+          "killer",
+          "boostModifier"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 2
+          }
+        ],
+        "killers": [
+          {
+            "race": "demon",
+            "physic": 150,
+            "magic": 0,
+            "turn": 2
+          },
+          {
+            "race": "demon",
+            "physic": 0,
+            "magic": 150,
+            "turn": 2
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 950,
+            "turn": 1,
+            "uniqueIdentifier": 111020
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231880,
+        "names": {
+          "en": "Sword of the Wise (Crown Prince Noctis)",
+          "tw": "賢王劍【諾克提斯王子】",
+          "kr": "현왕의 검[녹티스 왕자]",
+          "fr": "Glaive du Sage (Noctis, prince couronné)",
+          "de": "Schwert der Weisen (Kronprinz Noctis)",
+          "es": "Salomón (Príncipe Noctis)"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 2
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 2
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231873,
+            "value": 950,
+            "turn": 1,
+            "uniqueIdentifier": 111019
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 215002007,
+        "names": {
+          "en": "Armiger Unleashed",
+          "tw": "真・幻影劍",
+          "kr": "진·팬텀 소드",
+          "fr": "Arsenal fantôme suprême",
+          "de": "Königswaffen EX",
+          "es": "Coro espectral arcano"
+        },
+        "base": 1850,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 4, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          2, 8, 8, 8, 8, 8, 8, 8, 8, 67, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": 50,
+        "magic": 50,
+        "rarity": 6
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          231865,
+          231866,
+          231870,
+          231871,
+          231872,
+          231873,
+          231879,
+          231880,
+          231881,
+          231882,
+          231883,
+          231884,
+          231885,
+          800171,
+          510400,
+          510262
+        ]
+      },
+      {
+        "count": 5,
+        "abilities": [
+          231865,
+          231866,
+          231870,
+          231871,
+          231872,
+          231873,
+          231879,
+          231880,
+          231881,
+          231882,
+          231883,
+          231884,
+          231885,
+          510263,
+          510262
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 501620,
+        "value": 1000,
+        "rarity": 7
+      },
+      {
+        "id": 507682,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 507683,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 507684,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 507685,
+        "value": 500,
+        "rarity": 7
+      },
+      {
+        "id": 510263,
+        "value": 500,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 215002105,
+    "names": {
+      "en": "Lunafreya",
+      "tw": "露娜弗蕾亞",
+      "kr": "루나프레나"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 76,
+          "pot": 20
+        },
+        "mag": {
+          "base": 118,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 98,
+          "pot": 30
+        },
+        "mag": {
+          "base": 153,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 127,
+          "pot": 50
+        },
+        "mag": {
+          "base": 198,
+          "pot": 50
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 510401,
+        "names": {
+          "en": "Covenant of the Hydraean",
+          "tw": "水神的誓約",
+          "kr": "수신의 서약",
+          "fr": "Contrat avec l'hydréenne",
+          "de": "Leviathans Schwur",
+          "es": "Ritual de Leviatán"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imperil"
+        ],
+        "imbues": [
+          {
+            "element": "water",
+            "turn": 3
+          }
+        ],
+        "imperils": [
+          {
+            "type": "water",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 4,
+          "unlockId": 800173
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 20230,
+        "names": {
+          "en": "Waterga",
+          "tw": "大流水",
+          "kr": "워터가",
+          "fr": "Eau X",
+          "de": "Aquaga",
+          "es": "Aqua++"
+        },
+        "damage": "magic",
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110
+        ]
+      },
+      {
+        "dataId": 231899,
+        "names": {
+          "en": "Light of Purity",
+          "tw": "清廉之光",
+          "kr": "청렴의 빛",
+          "fr": "Lumière de purification",
+          "de": "Licht der Reinheit",
+          "es": "Luz de pureza"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 130,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 20320,
+        "names": {
+          "en": "Waterja",
+          "tw": "強流水",
+          "kr": "워터쟈",
+          "fr": "Eau max",
+          "de": "Aquaka",
+          "es": "Aqua+++"
+        },
+        "damage": "magic",
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 5,
+          "value": 100
+        },
+        "framesList": [
+          190
+        ]
+      },
+      {
+        "dataId": 231901,
+        "names": {
+          "en": "Light of Aid",
+          "tw": "支援之光",
+          "kr": "지원의 빛",
+          "fr": "Lumière de soutien",
+          "de": "Licht der Hilfe",
+          "es": "Luz de auxilio"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "aquatic",
+            "physic": 30,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "aquatic",
+            "physic": 0,
+            "magic": 30,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510273,
+        "names": {
+          "en": "Benevolence of the Gods",
+          "tw": "諸神的慈悲",
+          "kr": "신들의 자비",
+          "fr": "Bienfaisance des dieux",
+          "de": "Gnade der Götter",
+          "es": "Benevolencia de la Sideralia"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostLB"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 180,
+            "turn": 4
+          },
+          {
+            "stat": "def",
+            "value": 180,
+            "turn": 4
+          },
+          {
+            "stat": "mag",
+            "value": 180,
+            "turn": 4
+          },
+          {
+            "stat": "spr",
+            "value": 180,
+            "turn": 4
+          }
+        ],
+        "boostLB": [
+          {
+            "value": 50,
+            "turn": 4
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 231906
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510274,
+        "names": {
+          "en": "Glacian Shiva's Protection",
+          "tw": "冰神濕婆的守護",
+          "kr": "얼음신 시바의 수호",
+          "fr": "Protection de Shiva la Glacéenne",
+          "de": "Shivas Diamantprotektion",
+          "es": "Protección de Shiva, la Sidérea del Hielo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "unlockBy": {
+          "510273": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510275,
+        "names": {
+          "en": "Fulgurian Ramuh's Protection",
+          "tw": "雷神拉姆的守護",
+          "kr": "뇌신 라무의 수호",
+          "fr": "Protection de Ramuh le Fulguréen",
+          "de": "Ramuhs Blitzprotektion",
+          "es": "Protección de Lamú, el Sidéreo del Rayo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "unlockBy": {
+          "510273": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510276,
+        "names": {
+          "en": "Hydraean Leviathan's Protection",
+          "tw": "水神利維坦的守護",
+          "kr": "수신 리바이어선의 수호",
+          "fr": "Protection de Léviathan l'Hydréenne",
+          "de": "Leviathans Wasserprotektion",
+          "es": "Protección de Leviatán, la Sidérea de las Aguas"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "water",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "unlockBy": {
+          "510273": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510277,
+        "names": {
+          "en": "Archaean Titan's Protection",
+          "tw": "巨神泰坦的守護",
+          "kr": "거신 타이탄의 수호",
+          "fr": "Protection de Titan l'Archéen",
+          "de": "Titans Riesenprotektion",
+          "es": "Protección de Titán, el Sidéreo de la Tierra"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "earth",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "unlockBy": {
+          "510273": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510278,
+        "names": {
+          "en": "Trident of the Oracle (Lunafreya)",
+          "tw": "神使逆矛【露娜弗蕾亞】",
+          "kr": "칸나기의 역모[루나프레나]",
+          "fr": "Trident de l'Oracle (Lunafreya)",
+          "de": "Dreizack der Kannagi (Lunafreya)",
+          "es": "Vajra (Lunafreya)"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "aquatic",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "aquatic",
+            "physic": 0,
+            "magic": 50,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 4,
+          "unlockId": 231907
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 20380,
+        "names": {
+          "en": "Flood",
+          "tw": "洪水",
+          "kr": "플러드",
+          "fr": "Inondation",
+          "de": "Flut",
+          "es": "Inundación"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "water"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "lightning",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "dataId": 215002107,
+        "names": {
+          "en": "Power of the Gods",
+          "tw": "諸神之力",
+          "kr": "신들의 힘",
+          "fr": "Pouvoir des dieux",
+          "de": "Kraft der Götter",
+          "es": "Poder de la Sideralia"
+        },
+        "damage": "magic",
+        "base": 2400,
+        "hitDamage": [
+          10, 10, 10, 20, 50
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          90, 66, 60, 72, 262
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          231893,
+          231894,
+          231895,
+          231899,
+          231900,
+          231901,
+          231902,
+          231906,
+          231907,
+          231908,
+          510274,
+          510275,
+          510276,
+          510277,
+          800173,
+          510401,
+          510273,
+          510278,
+          510279
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 215002605,
+    "names": {
+      "en": "Gentiana",
+      "tw": "肯提亞娜",
+      "kr": "겐티아나"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 91,
+          "pot": 16
+        },
+        "mag": {
+          "base": 124,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 118,
+          "pot": 26
+        },
+        "mag": {
+          "base": 161,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 153,
+          "pot": 40
+        },
+        "mag": {
+          "base": 209,
+          "pot": 65
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 510402,
+        "names": {
+          "en": "Infinite Icebreaker",
+          "tw": "無限碎冰",
+          "kr": "무한쇄빙",
+          "fr": "Brise-glace infini",
+          "de": "Unendlicher Eisbrecher",
+          "es": "Rompehielo infinito"
+        },
+        "damage": "magic",
+        "base": 3200,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "canDualSkill": false,
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 110,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 4,
+          "unlockId": 800175
+        }
+      },
+      {
+        "dataId": 231842,
+        "names": {
+          "en": "Breath of the Glacian",
+          "tw": "冰神的吐息",
+          "kr": "얼음신의 숨결",
+          "fr": "Un accueil glacial",
+          "de": "Atem der Eisgöttin",
+          "es": "Arrecia la ventisca"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "dataId": 231843,
+        "names": {
+          "en": "Frozen Flurry",
+          "tw": "冰雪花",
+          "kr": "빙설화",
+          "fr": "Bourrasque gelée",
+          "de": "Eisblumensturm",
+          "es": "Ráfaga helada"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 231847,
+        "names": {
+          "en": "Ice Dance",
+          "tw": "結冰亂舞",
+          "kr": "결빙난무",
+          "fr": "Danse des glaces",
+          "de": "Eiszapfentanz",
+          "es": "Danza glacial"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 8, 8, 8, 8, 8, 8, 8, 8, 8
+        ]
+      },
+      {
+        "dataId": 231848,
+        "names": {
+          "en": "Frozen Fractals",
+          "tw": "冰晶繚亂",
+          "kr": "빙정요란",
+          "fr": "Fractales gelées",
+          "de": "Gefrorene Blütenblätter",
+          "es": "Fractales helados"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 7,
+          "value": 250
+        },
+        "framesList": [
+          52, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 231853,
+        "names": {
+          "en": "Absolute Freeze",
+          "tw": "絶對凍結",
+          "kr": "절대동결",
+          "fr": "Gel absolu",
+          "de": "Vollständige Vereisung",
+          "es": "Congelación total"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          280
+        ]
+      },
+      {
+        "dataId": 510253,
+        "names": {
+          "en": "Snow-Covered",
+          "tw": "雪色妝容",
+          "kr": "설화장",
+          "fr": "Couvre-neige",
+          "de": "Schneebedeckung",
+          "es": "Manto de nieve"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "buff"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 231854
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510255,
+        "names": {
+          "en": "Glacial Kiss",
+          "tw": "冰之吻",
+          "kr": "얼음의 입맞춤",
+          "fr": "Baiser glacial",
+          "de": "Frostkuss",
+          "es": "Beso glacial"
+        },
+        "damage": "magic",
+        "base": 2400,
+        "hitDamage": [
+          5, 5, 5, 5, 80
+        ],
+        "canDualSkill": false,
+        "castTime": 50,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          52, 20, 20, 20, 20
+        ],
+        "cooldown": {
+          "unlock": 4,
+          "wait": 4,
+          "unlockId": 231855
+        }
+      },
+      {
+        "dataId": 215002607,
+        "names": {
+          "en": "Diamond Dust",
+          "tw": "鑽石星辰",
+          "kr": "다이아몬드 더스트",
+          "fr": "Poussière de diamant",
+          "de": "Diamantenstaub",
+          "es": "Polvo de diamantes"
+        },
+        "damage": "magic",
+        "base": 3000,
+        "hitDamage": [
+          5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          229, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          231842,
+          231843,
+          231846,
+          231847,
+          231848,
+          231852,
+          231853,
+          231854,
+          231855,
+          800175,
+          510402,
+          510252,
+          510253,
+          510255
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          231842,
+          231843,
+          231846,
+          231847,
+          231848,
+          231852,
+          231853,
+          231854,
+          231855,
+          800175,
+          510402,
+          510252,
+          510253,
+          510255
+        ]
+      }
+    ],
+    "passiveLBDamage": [
+      {
+        "value": 30,
         "rarity": 7
       }
     ]

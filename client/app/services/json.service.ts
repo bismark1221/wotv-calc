@@ -243,6 +243,7 @@ export class JsonService {
       }
     });
 
+    this.updateCooldownMulticast();
     this.filterRealUsableSkills();
   }
 
@@ -329,6 +330,7 @@ export class JsonService {
 
   private addSkill(unitId, ability, dataId, rarity, level = 0, lb = false, canDualSkill = true) {
     let returnSkill = null;
+
     this.ffbeChainUnits[unitId].abilities.forEach(skill => {
       if (skill.dataId == dataId) {
         if (level > 0) {
@@ -406,6 +408,8 @@ export class JsonService {
 
     this.ffbeChainUnits[unitId].abilities[id].effectOrder = [];
 
+    let countEffects = effects.length;
+
     effects.forEach((effect, index) => {
       if (ability.type !== "PASSIVE") {
         let find = this.updateDamage(effect, unitId, id);
@@ -419,13 +423,14 @@ export class JsonService {
             find.index = index;
 
             if (find.type !== "jump" && find.type !== "delayAttack" && find.type !== "dot") {
-              find.hitDamage = ability.attack_damage[hitEffect];
+              find.hitDamage = ability.attack_damage[countEffects > ability.attack_damage.length ? hitEffect : index];
+              find.frames = ability.attack_frames[countEffects > ability.attack_frames.length ? hitEffect : index];
               damageEffects.push(find);
             } else {
-              this.ffbeChainUnits[unitId].abilities[id][find.type].hitDamage = ability.attack_damage[hitEffect];
+              this.ffbeChainUnits[unitId].abilities[id][find.type].hitDamage = ability.attack_damage[countEffects > ability.attack_damage.length ? hitEffect : index];
 
-              if ((find.type === "jump" || find.type === "delayAttack") && ability.attack_frames[hitEffect]) {
-                let frames = ability.attack_frames[hitEffect].sort((n1, n2) => n1 - n2);
+              if ((find.type === "jump" || find.type === "delayAttack") && ability.attack_frames[countEffects > ability.attack_frames.length ? hitEffect : index]) {
+                let frames = ability.attack_frames[countEffects > ability.attack_frames.length ? hitEffect : index].sort((n1, n2) => n1 - n2);
                 let framesList = [];
 
                 for (let i = 0; i < frames.length; i++) {
@@ -442,7 +447,7 @@ export class JsonService {
           };
 
           hitEffect++;
-          this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = find.type ? find.type : "damage";
+          this.addOrderEffect(unitId, id, index, find.type ? find.type : "damage");
         }
 
         this.updateBuffs(effect, unitId, id, index);
@@ -474,6 +479,31 @@ export class JsonService {
     return;
   }
 
+  private updateCooldownMulticast() {
+    this.ffbeChainUnits.forEach((unit, unitIndex) => {
+      unit.abilities.forEach(ability => {
+        if (ability.cooldown && unit.multiCasts) {
+          unit.multiCasts.forEach((multiCast, multiCastIndex) => {
+            let addAbility = null;
+            multiCast.abilities.forEach(abilityId => {
+              if (addAbility === null && abilityId == ability.cooldown.unlockId) {
+                addAbility = true;
+              }
+
+              if (abilityId == ability.dataId) {
+                addAbility = false;
+              }
+            });
+
+            if (addAbility) {
+              this.ffbeChainUnits[unitIndex].multiCasts[multiCastIndex].abilities.push(ability.dataId);
+            }
+          });
+        }
+      });
+    });
+  }
+
   private unlockSkill(rawEffect, unitId, rarity, dataId, level = 0) {
     let newSkill = null;
     let unlockTurns = 0;
@@ -481,14 +511,6 @@ export class JsonService {
     // unlock X-Cast 5 cast : [0, 3, 98, [5,  704330,  -1,  704320,  2,  1,  0]]
     let find = this.findEffect(rawEffect, [98]);
     if (find) {
-      // if (Array.isArray(find.effect[3])) { => Just to be sure every spell are in the character, let's try whithout it
-      //   find.effect[3].forEach(skillId => {
-      //     this.addSkill(unitId, this.getSkill(skillId), skillId, rarity, null, level);
-      //   });
-      // } else if (this.getSkill(find.effect[3])) {
-      //   this.addSkill(unitId, this.getSkill(find.effect[3]), find.effect[3], rarity, null, level);
-      // }
-
       this.addSkill(unitId, this.getSkill(find.effect[1]), find.effect[1], rarity, level);
     }
 
@@ -546,7 +568,7 @@ export class JsonService {
     }
 
     // LB upgrade
-    find = this.findEffect(rawEffect, [72]);
+    find = this.findEffect(rawEffect, [72, 80]);
     if (find) {
       this.addSkill(unitId, this.lbs[find.effect[0]], find.effect[0], this.units[this.ffbeChainUnits[unitId].dataId].rarity_max, 1, true);
     }
@@ -555,7 +577,7 @@ export class JsonService {
     find = this.findEffect(rawEffect, [130]);
     if (find) {
       newSkill = this.addSkill(unitId, this.getSkill(find.effect[0]), find.effect[0], rarity, level, false, false);
-      this.manageCooldown(newSkill, find.effect[2]);
+      this.manageCooldown(newSkill, find.effect[2], dataId);
     }
   }
 
@@ -571,11 +593,12 @@ export class JsonService {
     }
   }
 
-  private manageCooldown(skill, turns) {
+  private manageCooldown(skill, turns, dataId) {
     if (skill) {
       skill.cooldown = {
         unlock: turns[0] - turns[1] + 1,
-        wait: turns[0] + 1
+        wait: turns[0] + 1,
+        unlockId : dataId
       };
     }
   }
@@ -584,6 +607,7 @@ export class JsonService {
     let combo = 1
 
     if (effects && effects.length > 0) {
+      let allFrames = [];
       let framesList = [];
       let frames = [];
       let frameBetweenCombo = 0;
@@ -592,18 +616,20 @@ export class JsonService {
         if (effect.combo > 1) {
           combo = effect.combo;
         }
+
+        if (effect.frames) {
+          effect.frames.forEach(frame => {
+            allFrames.push(frame);
+          });
+        }
       });
 
-      if (ability.attack_frames) {
-        for (let i = 1; i <= combo; i++) {
-          ability.attack_frames.forEach(attackFrame => {
-            attackFrame.forEach(frame => {
-              frames.push(frame + frameBetweenCombo);
-            });
-          });
+      for (let i = 1; i <= combo; i++) {
+        allFrames.forEach(frame => {
+          frames.push(frame + frameBetweenCombo);
+        });
 
-          frameBetweenCombo += this.ffbeChainUnits[unitId].abilities[id].castTime + this.ffbeChainUnits[unitId].abilities[id].offset;
-        }
+        frameBetweenCombo += this.ffbeChainUnits[unitId].abilities[id].castTime + this.ffbeChainUnits[unitId].abilities[id].offset;
       }
 
       frames = frames.sort((n1, n2) => n1 - n2);
@@ -853,7 +879,7 @@ export class JsonService {
         }
       }
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "break";
+      this.addOrderEffect(unitId, id, index, "break");
     }
   }
 
@@ -877,27 +903,7 @@ export class JsonService {
         }
       }
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "buff";
-    }
-
-    // 0, 3, 3, [250,  0,  250,  0,  3,  1,  0]
-    find = this.findEffect(rawEffect, [3], 3);
-    if (find) {
-      for (let i = 0; i < 4; i++) {
-        if (find.effect[i] !== 0) {
-          if (!this.ffbeChainUnits[unitId].abilities[id].buffs) {
-            this.ffbeChainUnits[unitId].abilities[id].buffs = [];
-          }
-
-          this.ffbeChainUnits[unitId].abilities[id].buffs.push({
-            stat: this.stats[i],
-            value: Math.abs(find.effect[i]),
-            turn: find.effect[4]
-          });
-        }
-      }
-
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "buff";
+      this.addOrderEffect(unitId, id, index, "buff");
     }
   }
 
@@ -917,7 +923,7 @@ export class JsonService {
         }
       }
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "imbue";
+      this.addOrderEffect(unitId, id, index, "imbue");
     }
   }
 
@@ -953,7 +959,7 @@ export class JsonService {
         }
       }
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "imperil";
+      this.addOrderEffect(unitId, id, index, "imperil");
     }
   }
 
@@ -980,7 +986,7 @@ export class JsonService {
         });
       });
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "boostModifier";
+      this.addOrderEffect(unitId, id, index, "boostModifier");
     }
 
     //[0, 3, 73, [[912569,  912571,  912570,  912572,  912592,  912577,  912578,  912580,  912581], 0, 0, 800]]
@@ -1021,7 +1027,7 @@ export class JsonService {
         turn: find.effect[1]
       });
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "boostLB";
+      this.addOrderEffect(unitId, id, index, "boostLB");
     }
 
     //[0, 3, 68, [25]]]
@@ -1059,7 +1065,7 @@ export class JsonService {
         }
       }
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "killer";
+      this.addOrderEffect(unitId, id, index, "killer");
     }
 
     //0, 3, 93, [[5,  100], -1, -1, -1, -1, -1, -1, -1, 2, 1]
@@ -1081,7 +1087,7 @@ export class JsonService {
         }
       }
 
-      this.ffbeChainUnits[unitId].abilities[id].effectOrder[index] = "killer";
+      this.addOrderEffect(unitId, id, index, "killer");
     }
 
     //[0, 3, 11, [4,  50,  50]
@@ -1141,8 +1147,8 @@ export class JsonService {
         this.ffbeChainUnits[unitId].multipleWhite = !this.ffbeChainUnits[unitId].multipleWhite || 3 >= this.ffbeChainUnits[unitId].multipleWhite ? 3 : this.ffbeChainUnits[unitId].multipleWhite;
         this.ffbeChainUnits[unitId].multipleGreen = !this.ffbeChainUnits[unitId].multipleGreen || 3 >= this.ffbeChainUnits[unitId].multipleGreen ? 3 : this.ffbeChainUnits[unitId].multipleGreen;
       } else {
-        console.log("effect not known ==> ");
-        console.log(rawEffect);
+        // console.log("effect not known ==> ");
+        // console.log(rawEffect);
       }
     }
 
@@ -1324,6 +1330,12 @@ export class JsonService {
     this.ffbeChainUnits[summonId].abilities[id].base = base;
     this.updateOffset(summonId, id, ability);
     this.updateFrames([{combo:1}], summonId, id, ability);
+  }
+
+  private addOrderEffect(unitId, abilityId, effectIndex, type) {
+    if (this.ffbeChainUnits[unitId].abilities[abilityId].effectOrder.indexOf(type) === -1) {
+      this.ffbeChainUnits[unitId].abilities[abilityId].effectOrder[effectIndex] = type;
+    }
   }
 
   private getUnitIdFromDataId(dataId) {

@@ -140,6 +140,57 @@
     ]
   },
   {
+    "family": "147-4-4-4-4-4-4-4-4-4-4-4",
+    "units": [
+      {
+        "id": 100014405,
+        "names": {
+          "en": "Reberta (JP)",
+          "tw": "蕾貝爾塔 (JP)",
+          "kr": "리베르타 (JP)",
+          "fr": "Réberta (JP)"
+        },
+        "abilities": [
+          {
+            "id": 100014406,
+            "names": {
+              "en": "Destructive Thrust",
+              "tw": "毀滅突擊",
+              "kr": "파괴의 찌르기",
+              "fr": "Pulsion destructrice",
+              "de": "Zerstörerischer Stoß",
+              "es": "Impulso destructor"
+            },
+            "offset": 14
+          }
+        ]
+      },
+      {
+        "id": 401001705,
+        "names": {
+          "en": "Reberta",
+          "tw": "蕾貝爾塔",
+          "kr": "리베르타",
+          "fr": "Réberta"
+        },
+        "abilities": [
+          {
+            "id": 401001707,
+            "names": {
+              "en": "Destructive Thrust",
+              "tw": "破壞衝擊",
+              "kr": "파괴의 찌르기",
+              "fr": "Coup destructeur",
+              "de": "Zerstörungsstoß",
+              "es": "Estoque demoledor"
+            },
+            "offset": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
     "family": "42-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4",
     "units": [
       {
@@ -609,6 +660,19 @@
           "kr": "유피"
         },
         "abilities": [
+          {
+            "id": 229911,
+            "names": {
+              "en": "Raiton - Roaring Thunder",
+              "tw": "雷遁·轟雷",
+              "kr": "뇌둔·굉뢰",
+              "fr": "Raiton - Tonnerre assourdissant",
+              "de": "Raiton – Ohrenbetäubender Donner",
+              "es": "Raiton - Trueno ensordecedor"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
           {
             "id": 229920,
             "names": {
@@ -1148,6 +1212,19 @@
         },
         "abilities": [
           {
+            "id": 913208,
+            "names": {
+              "en": "Full Moon - Frenzy",
+              "tw": "滿月 - 狂亂",
+              "kr": "만월·광란",
+              "fr": "Pleine lune - Frénésie",
+              "de": "Vollmond - Rausch",
+              "es": "Luna llena - Frenesí"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 913207,
             "names": {
               "en": "Full Moon - Frenzy",
@@ -1238,6 +1315,18 @@
           "es": "Operario Zyrus"
         },
         "abilities": [
+          {
+            "id": 950000013,
+            "names": {
+              "en": "Mission Completed + 1",
+              "tw": "任務完成 + 1",
+              "kr": "임무 완료 + 1",
+              "fr": "Mission terminée + 1",
+              "de": "Mission abgeschlossen + 1",
+              "es": "Misión cumplida + 1"
+            },
+            "offset": 14
+          },
           {
             "id": 401008207,
             "names": {
@@ -1366,6 +1455,32 @@
               "fr": "Arbalète automatique",
               "de": "Auto-Armbrust",
               "es": "Ballesta automática"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 206001905,
+        "names": {
+          "en": "King Edgar of Figaro",
+          "tw": "費加羅國王埃德加",
+          "kr": "피가로의 왕 에드가",
+          "fr": "Edgar, roi de Figaro",
+          "de": "König Edgar von Figaro",
+          "es": "Edgar, rey de Fígaro"
+        },
+        "abilities": [
+          {
+            "id": 229940,
+            "names": {
+              "en": "Auto Crossbow (FFVI)",
+              "tw": "自動弩",
+              "kr": "자동 석궁(FFVI)",
+              "fr": "Arbalète à rafales",
+              "de": "Auto-Armbrust (FFVI)",
+              "es": "Autoballesta (FFVI)"
             },
             "offset": 14,
             "castTime": 40
@@ -3388,6 +3503,29 @@
         ]
       },
       {
+        "id": 213000105,
+        "names": {
+          "en": "Lightning",
+          "tw": "雷光",
+          "kr": "라이트닝"
+        },
+        "abilities": [
+          {
+            "id": 226682,
+            "names": {
+              "en": "Endless Army",
+              "tw": "無盡驅散",
+              "kr": "엔드리스 드라이브",
+              "fr": "Symbiose infinie",
+              "de": "Infinitmorph",
+              "es": "Empatía infinita"
+            },
+            "offset": 14,
+            "castTime": 20
+          }
+        ]
+      },
+      {
         "id": 254000205,
         "names": {
           "en": "Queen",
@@ -3680,6 +3818,30 @@
         ]
       },
       {
+        "id": 401001705,
+        "names": {
+          "en": "Reberta",
+          "tw": "蕾貝爾塔",
+          "kr": "리베르타",
+          "fr": "Réberta"
+        },
+        "abilities": [
+          {
+            "id": 912882,
+            "names": {
+              "en": "Siphon Lance",
+              "tw": "攝魔長槍",
+              "kr": "흡수의 창",
+              "fr": "Lance siphon",
+              "de": "Soglanze",
+              "es": "Lanza sifón"
+            },
+            "offset": 14,
+            "castTime": 39
+          }
+        ]
+      },
+      {
         "id": 401006805,
         "names": {
           "en": "Esther",
@@ -3930,6 +4092,60 @@
             },
             "offset": 14,
             "castTime": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "72-5-5-5-5-5-29-5-5-5-5-5-29-5-5-5-5-5-29-5-5-5-5-5-29-5-5-5-5-5-29-5-5-5-5-5-29-5-5-5-5-5-29-5-5-5-5-5",
+    "units": [
+      {
+        "id": 215000105,
+        "names": {
+          "en": "Noctis",
+          "tw": "諾克提斯",
+          "kr": "녹티스"
+        },
+        "abilities": [
+          {
+            "id": 507681,
+            "names": {
+              "en": "Armiger Wakes",
+              "tw": "覺醒幻影劍",
+              "kr": "각성 팬텀 소드",
+              "fr": "Arsenal fantôme éveillé",
+              "de": "Erwachte Königswaffen",
+              "es": "Despertar del coro espectral"
+            },
+            "offset": 112,
+            "castTime": 320
+          }
+        ]
+      },
+      {
+        "id": 215002005,
+        "names": {
+          "en": "Crown Prince Noctis",
+          "tw": "諾克提斯王子",
+          "kr": "녹티스 왕자",
+          "fr": "Noctis, prince couronné",
+          "de": "Kronprinz Noctis",
+          "es": "Príncipe Noctis"
+        },
+        "abilities": [
+          {
+            "id": 510263,
+            "names": {
+              "en": "Awakened Armiger+",
+              "tw": "覺醒幻影劍改",
+              "kr": "개량형 각성 팬텀 소드",
+              "fr": "Arsenal fantôme éveillé +",
+              "de": "Erwachte Königswaffen+",
+              "es": "Coro espectral despertado+"
+            },
+            "offset": 112,
+            "castTime": 320
           }
         ]
       }
@@ -4524,6 +4740,19 @@
             "castTime": 40
           },
           {
+            "id": 509351,
+            "names": {
+              "en": "Summon - Sparkling Waves",
+              "tw": "閃光波濤召喚",
+              "kr": "해변 별장에서의 휴식",
+              "fr": "Invocation - Vagues étincelantes",
+              "de": "Beschwörung - Funkelnde Wellen",
+              "es": "Invocación - Olas espumosas"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 230070,
             "names": {
               "en": "High Tide Spirit",
@@ -4869,6 +5098,19 @@
             "castTime": 40
           },
           {
+            "id": 230785,
+            "names": {
+              "en": "Moog Whirl",
+              "tw": "回轉古利攻擊",
+              "kr": "빙글빙글 구리 어택",
+              "fr": "Tornade de Moog",
+              "de": "Whirlmog",
+              "es": "Mogurremolino"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 230789,
             "names": {
               "en": "Armored Anti-Ice Grenade",
@@ -5034,6 +5276,19 @@
               "fr": "Charge du chevalier noir",
               "de": "Dunkelladung",
               "es": "Arremetida del Caballero Negro"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 509923,
+            "names": {
+              "en": "Dark Servant's Blade",
+              "tw": "暗影僕從之劍",
+              "kr": "영종의 검",
+              "fr": "Lame du serviteur des ténèbres",
+              "de": "Klinge des Dunklen Gefolgsmanns",
+              "es": "Hoja del sirviente oscuro"
             },
             "offset": 14,
             "castTime": 40
@@ -6433,6 +6688,19 @@
         },
         "abilities": [
           {
+            "id": 913196,
+            "names": {
+              "en": "Full Moon - Shadow Fire",
+              "tw": "滿月 - 影火",
+              "kr": "만월·그림자의 화염",
+              "fr": "Pleine lune - Feu de l'Ombre",
+              "de": "Vollmond - Schattenfeuer",
+              "es": "Luna llena - Fuego sombrío"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 913195,
             "names": {
               "en": "Full Moon - Shadow Fire",
@@ -6676,6 +6944,19 @@
           "kr": "유피"
         },
         "abilities": [
+          {
+            "id": 229910,
+            "names": {
+              "en": "Suiton - Snow Flower",
+              "tw": "冰遁·雪華",
+              "kr": "빙둔·설진",
+              "fr": "Suiton - Fleur de neige",
+              "de": "Suiton – Schneeblüte",
+              "es": "Suiton - Flor invernal"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
           {
             "id": 229919,
             "names": {
@@ -7029,6 +7310,19 @@
             },
             "offset": 14,
             "castTime": 38
+          },
+          {
+            "id": 510780,
+            "names": {
+              "en": "Fatal Flash",
+              "tw": "心眼一閃",
+              "kr": "심안일섬",
+              "fr": "Lame fatale",
+              "de": "Schneller Stich",
+              "es": "Despliegue fugaz"
+            },
+            "offset": 14,
+            "castTime": 38
           }
         ]
       },
@@ -7285,6 +7579,45 @@
             },
             "offset": 14,
             "castTime": 38
+          },
+          {
+            "id": 511116,
+            "names": {
+              "en": "Hand of God",
+              "tw": "天神猛擊",
+              "kr": "갓 스매시",
+              "fr": "Main de dieu",
+              "de": "Hand Gottes",
+              "es": "Mano de Dios"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 511117,
+            "names": {
+              "en": "Air Raiser",
+              "tw": "旋風上鉤拳",
+              "kr": "사이클론 어퍼컷",
+              "fr": "Appel d'air",
+              "de": "Hurrikanhaken",
+              "es": "Gancho ciclón"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 511118,
+            "names": {
+              "en": "Kazammle",
+              "tw": "德爾瑪頓",
+              "kr": "도르마돈",
+              "fr": "Gigaélec",
+              "de": "Garutz",
+              "es": "Superrayo"
+            },
+            "offset": 14,
+            "castTime": 38
           }
         ]
       },
@@ -7496,6 +7829,29 @@
               "fr": "Présage - Poussière démoniaque",
               "de": "Weissagung - Staubteufel",
               "es": "Predicción - Demonio polvoriento"
+            },
+            "offset": 14,
+            "castTime": 38
+          }
+        ]
+      },
+      {
+        "id": 401004505,
+        "names": {
+          "en": "Myra",
+          "tw": "米菈",
+          "kr": "마이라"
+        },
+        "abilities": [
+          {
+            "id": 912091,
+            "names": {
+              "en": "Fighting!",
+              "tw": "加油！",
+              "kr": "파이팅!",
+              "fr": "Je fonce !",
+              "de": "Toi toi toi!",
+              "es": "¡A luchar!"
             },
             "offset": 14,
             "castTime": 38
@@ -7981,6 +8337,19 @@
         },
         "abilities": [
           {
+            "id": 913185,
+            "names": {
+              "en": "Full Moon - Bestial Wrath",
+              "tw": "滿月 - 獸性之怒",
+              "kr": "만월·야성의 분노",
+              "fr": "Pleine lune - Colère bestiale",
+              "de": "Vollmond - Bestialischer Zorn",
+              "es": "Luna llena - Ira bestial"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
             "id": 913184,
             "names": {
               "en": "Full Moon - Bestial Wrath",
@@ -7989,6 +8358,19 @@
               "fr": "Pleine lune - Colère bestiale",
               "de": "Vollmond - Bestialischer Zorn",
               "es": "Luna llena - Ira bestial"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913189,
+            "names": {
+              "en": "Full Moon - Bestial Slash",
+              "tw": "滿月 - 獸斬",
+              "kr": "만월·야수의 참격",
+              "fr": "Pleine lune - Taillade bestiale",
+              "de": "Vollmond - Bestialischer Schlitzer",
+              "es": "Luna llena - Sablazo bestial"
             },
             "offset": 14,
             "castTime": 38
@@ -8007,6 +8389,19 @@
             "castTime": 38
           },
           {
+            "id": 913200,
+            "names": {
+              "en": "Full Moon - Terrifying Howl",
+              "tw": "滿月 - 恐怖咆哮",
+              "kr": "만월·공포의 포효",
+              "fr": "Pleine lune - Hurlement terrifiant",
+              "de": "Vollmond - Entsetzliches Geheul",
+              "es": "Luna llena - Ahullido terrorífico"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
             "id": 913199,
             "names": {
               "en": "Full Moon - Terrifying Howl",
@@ -8015,6 +8410,19 @@
               "fr": "Pleine lune - Hurlement terrifiant",
               "de": "Vollmond - Entsetzliches Geheul",
               "es": "Luna llena - Ahullido terrorífico"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913211,
+            "names": {
+              "en": "Full Moon - Dark Side",
+              "tw": "滿月 - 黑暗面",
+              "kr": "만월·암흑면",
+              "fr": "Pleine lune - Côté obscur",
+              "de": "Vollmond - Dunkle Seite",
+              "es": "Luna llena - Lado oscuro"
             },
             "offset": 14,
             "castTime": 38
@@ -8067,6 +8475,19 @@
               "fr": "Pleine lune - Entaille féroce",
               "de": "Vollmond - Wilder Schlitzer",
               "es": "Luna llena - Sablazo feroz"
+            },
+            "offset": 14,
+            "castTime": 38
+          },
+          {
+            "id": 913225,
+            "names": {
+              "en": "Full Moon - Savage Awakening",
+              "tw": "滿月 - 野性覺醒",
+              "kr": "만월·야성의 자각",
+              "fr": "Pleine lune - Éveil sauvage",
+              "de": "Vollmond - Wildes Erwachen",
+              "es": "Luna llena - Despertar salvaje"
             },
             "offset": 14,
             "castTime": 38
@@ -8432,74 +8853,6 @@
               "fr": "Charge - Laser à ultraviolets",
               "de": "Aufladen - UV-Laser",
               "es": "Recarga - Láser ultravioleta"
-            },
-            "offset": 14,
-            "castTime": 38
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-6-6-6-6-6-6-6-6-110",
-    "units": [
-      {
-        "id": 337000405,
-        "names": {
-          "en": "Erik",
-          "tw": "卡繆",
-          "kr": "카뮈",
-          "fr": "Érik"
-        },
-        "abilities": [
-          {
-            "id": 510780,
-            "names": {
-              "en": "Fatal Flash",
-              "tw": "心眼一閃",
-              "kr": "심안일섬",
-              "fr": "Lame fatale",
-              "de": "Schneller Stich",
-              "es": "Despliegue fugaz"
-            },
-            "offset": 14,
-            "castTime": 38
-          }
-        ]
-      },
-      {
-        "id": 337001305,
-        "names": {
-          "en": "Rab",
-          "tw": "羅",
-          "kr": "로우",
-          "fr": "Théo",
-          "de": "Bodo",
-          "es": "Rob"
-        },
-        "abilities": [
-          {
-            "id": 511116,
-            "names": {
-              "en": "Hand of God",
-              "tw": "天神猛擊",
-              "kr": "갓 스매시",
-              "fr": "Main de dieu",
-              "de": "Hand Gottes",
-              "es": "Mano de Dios"
-            },
-            "offset": 14,
-            "castTime": 38
-          },
-          {
-            "id": 511117,
-            "names": {
-              "en": "Air Raiser",
-              "tw": "旋風上鉤拳",
-              "kr": "사이클론 어퍼컷",
-              "fr": "Appel d'air",
-              "de": "Hurrikanhaken",
-              "es": "Gancho ciclón"
             },
             "offset": 14,
             "castTime": 38
@@ -9323,6 +9676,32 @@
           "kr": "엑스타"
         },
         "abilities": [
+          {
+            "id": 229566,
+            "names": {
+              "en": "Polar Vortex - Frost",
+              "tw": "冰碎 ─凍─",
+              "kr": "빙쇄-얼음-",
+              "fr": "Vortex polaire - Gelure",
+              "de": "Polarwirbel - Frost",
+              "es": "Torbellino polar - Escarcha"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 229567,
+            "names": {
+              "en": "Blazing Heat - Ash",
+              "tw": "炎熱 ─灰─",
+              "kr": "염열-재-",
+              "fr": "Embrasement - Cendres",
+              "de": "Lodernde Hitze - Asche",
+              "es": "Ardor abrasador - Cenizas"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
           {
             "id": 229571,
             "names": {
@@ -10409,6 +10788,45 @@
             "castTime": 40
           },
           {
+            "id": 913311,
+            "names": {
+              "en": "Immortal Demon + 1",
+              "tw": "不死惡魔 + 1",
+              "kr": "불사의 악마 + 1",
+              "fr": "Démon immortel + 1",
+              "de": "Unsterblicher Dämon + 1",
+              "es": "Inmortalidad demoníaca + 1"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913312,
+            "names": {
+              "en": "Immortal Demon + 2",
+              "tw": "不死惡魔 + 2",
+              "kr": "불사의 악마 + 2",
+              "fr": "Démon immortel + 2",
+              "de": "Unsterblicher Dämon + 2",
+              "es": "Inmortalidad demoníaca + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 913294,
+            "names": {
+              "en": "Aggressive Presence + 2",
+              "tw": "侵略氣息 + 2",
+              "kr": "공세의 기운 + 2",
+              "fr": "Présence agressive + 2",
+              "de": "Aggressive Aura + 2",
+              "es": "Violencia + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 950139,
             "names": {
               "en": "Midnight Corruption",
@@ -10586,64 +11004,24 @@
         ]
       },
       {
-        "id": 401008605,
+        "id": 401007305,
         "names": {
-          "en": "Godrea",
-          "tw": "高德拉",
-          "kr": "가드레아",
-          "fr": "Godréa"
+          "en": "Immortal Flame Katy",
+          "tw": "不朽之焰凱蒂",
+          "kr": "불멸의 화염 케이티",
+          "fr": "Katy flamme immortelle",
+          "de": "Unvergängliche Flamme Katy",
+          "es": "Katy llama inmortal"
         },
         "abilities": [
           {
-            "id": 913143,
+            "id": 912253,
             "names": {
-              "en": "Charge - Plasma Laser",
-              "tw": "充填 - 等離子射線",
-              "kr": "충전·혈장 광선",
-              "fr": "Charge - Laser à plasma",
-              "de": "Aufladen - Plasmalaser",
-              "es": "Recarga - Láser de plasma"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "70-7-5-7-7-7-7-10",
-    "units": [
-      {
-        "id": 100020005,
-        "names": {
-          "en": "Akstar",
-          "tw": "阿克斯特",
-          "kr": "엑스타"
-        },
-        "abilities": [
-          {
-            "id": 229566,
-            "names": {
-              "en": "Polar Vortex - Frost",
-              "tw": "冰碎 ─凍─",
-              "kr": "빙쇄-얼음-",
-              "fr": "Vortex polaire - Gelure",
-              "de": "Polarwirbel - Frost",
-              "es": "Torbellino polar - Escarcha"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 229567,
-            "names": {
-              "en": "Blazing Heat - Ash",
-              "tw": "炎熱 ─灰─",
-              "kr": "염열-재-",
-              "fr": "Embrasement - Cendres",
-              "de": "Lodernde Hitze - Asche",
-              "es": "Ardor abrasador - Cenizas"
+              "en": "Jackpot",
+              "tw": "中大獎",
+              "kr": "잭팟",
+              "fr": "Numéro gagnant",
+              "es": "Premio gordo"
             },
             "offset": 14,
             "castTime": 40
@@ -10670,6 +11048,30 @@
               "fr": "Embrasement - Cendres",
               "de": "Lodernde Hitze - Asche",
               "es": "Ardor abrasador - Cenizas"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 401008605,
+        "names": {
+          "en": "Godrea",
+          "tw": "高德拉",
+          "kr": "가드레아",
+          "fr": "Godréa"
+        },
+        "abilities": [
+          {
+            "id": 913143,
+            "names": {
+              "en": "Charge - Plasma Laser",
+              "tw": "充填 - 等離子射線",
+              "kr": "충전·혈장 광선",
+              "fr": "Charge - Laser à plasma",
+              "de": "Aufladen - Plasmalaser",
+              "es": "Recarga - Láser de plasma"
             },
             "offset": 14,
             "castTime": 40
@@ -11064,223 +11466,6 @@
         ]
       },
       {
-        "id": 203000105,
-        "names": {
-          "en": "Onion Knight",
-          "tw": "洋蔥劍士",
-          "kr": "양파 검사",
-          "fr": "Chevalier Oignon",
-          "de": "Zwiebelritter",
-          "es": "Caballero Cebolla"
-        },
-        "abilities": [
-          {
-            "id": 211420,
-            "names": {
-              "en": "Full Speed Bladeblitz",
-              "tw": "全速全斬",
-              "kr": "전속 전방위 베기",
-              "fr": "Lame éclair rapide",
-              "de": "Voller Klingenblitz",
-              "es": "Tormenta de acero"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 506840,
-            "names": {
-              "en": "Onion Slice",
-              "tw": "洋蔥刺",
-              "kr": "양파 슬라이스",
-              "fr": "Tranche-oignon",
-              "de": "Zwiebelschnitt",
-              "es": "Corte cebolla"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 506850,
-            "names": {
-              "en": "Onion Slice",
-              "tw": "洋蔥刺",
-              "kr": "양파 슬라이스",
-              "fr": "Tranche-oignon",
-              "de": "Zwiebelschnitt",
-              "es": "Corte cebolla"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 203001305,
-        "names": {
-          "en": "Onion Knight Refia",
-          "tw": "洋蔥劍士蕾菲亞",
-          "kr": "양파 검사 레피아",
-          "fr": "Refia, chevalier oignon",
-          "de": "Zwiebelritter Refia",
-          "es": "Refia, Caballero Cebolla"
-        },
-        "abilities": [
-          {
-            "id": 211420,
-            "names": {
-              "en": "Full Speed Bladeblitz",
-              "tw": "全速全斬",
-              "kr": "전속 전방위 베기",
-              "fr": "Lame éclair rapide",
-              "de": "Voller Klingenblitz",
-              "es": "Tormenta de acero"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 508620,
-            "names": {
-              "en": "Hacked to Pieces",
-              "tw": "切碎",
-              "kr": "산산조각 내기",
-              "fr": "En mille morceaux",
-              "de": "Kleingehackt",
-              "es": "Picadillo de enemigo"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 207001005,
-        "names": {
-          "en": "Sephiroth",
-          "tw": "賽菲羅斯",
-          "kr": "세피로스",
-          "fr": "Séphiroth",
-          "es": "Sefirot"
-        },
-        "abilities": [
-          {
-            "id": 224530,
-            "names": {
-              "en": "Aeolian Onslaught",
-              "tw": "一陣",
-              "kr": "일진",
-              "fr": "Charge éolienne",
-              "de": "Windböe",
-              "es": "Cortavientos"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 306000905,
-        "names": {
-          "en": "Estark",
-          "tw": "艾斯塔克",
-          "kr": "에스타크"
-        },
-        "abilities": [
-          {
-            "id": 507531,
-            "names": {
-              "en": "Lightning Storm",
-              "tw": "地獄雷打",
-              "kr": "지고 스파크",
-              "fr": "Lame choc",
-              "de": "Blitzgewitter",
-              "es": "Tormenta luminosa"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 306001104,
-        "names": {
-          "en": "Überkilling Machine",
-          "tw": "殺戮魔神",
-          "kr": "킬러 마징가",
-          "fr": "Mékanocinglé",
-          "de": "Obertodmaschine",
-          "es": "Máquina supermortal"
-        },
-        "abilities": [
-          {
-            "id": 227051,
-            "names": {
-              "en": "Multislash",
-              "tw": "暴雨斬",
-              "kr": "장대비 베기",
-              "fr": "Multi-lame",
-              "de": "Multihieb",
-              "es": "Multiestocada"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      },
-      {
-        "id": 312000105,
-        "names": {
-          "en": "Lise",
-          "tw": "麗絲",
-          "kr": "리스"
-        },
-        "abilities": [
-          {
-            "id": 228271,
-            "names": {
-              "en": "100 Petals Dance",
-              "tw": "百花亂舞",
-              "kr": "null",
-              "fr": "null",
-              "de": "null",
-              "es": "null"
-            },
-            "offset": 14,
-            "castTime": 10
-          }
-        ]
-      },
-      {
-        "id": 401006405,
-        "names": {
-          "en": "Aurora Fryevia",
-          "tw": "極光弗雷比亞",
-          "kr": "오로라 프레이비아",
-          "fr": "Fryevia de l'Aurore"
-        },
-        "abilities": [
-          {
-            "id": 911651,
-            "names": {
-              "en": "Flash - Dazzle",
-              "tw": "閃光・奪目",
-              "kr": "섬광·황홀",
-              "fr": "Flash - Reflet",
-              "de": "Blitz - Blenden",
-              "es": "Destello - Obnubilación"
-            },
-            "offset": 14,
-            "castTime": 40
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "family": "42-7-7-7-7-7-7-7-7-7-7-7-1",
-    "units": [
-      {
         "id": 100018504,
         "names": {
           "en": "Yubel",
@@ -11380,6 +11565,19 @@
             "castTime": 40
           },
           {
+            "id": 211420,
+            "names": {
+              "en": "Full Speed Bladeblitz",
+              "tw": "全速全斬",
+              "kr": "전속 전방위 베기",
+              "fr": "Lame éclair rapide",
+              "de": "Voller Klingenblitz",
+              "es": "Tormenta de acero"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 507293,
             "names": {
               "en": "Splendor of the Water",
@@ -11427,6 +11625,32 @@
               "fr": "Splendeur de la terre",
               "de": "Erdpracht",
               "es": "Esplendor de tierra"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 506840,
+            "names": {
+              "en": "Onion Slice",
+              "tw": "洋蔥刺",
+              "kr": "양파 슬라이스",
+              "fr": "Tranche-oignon",
+              "de": "Zwiebelschnitt",
+              "es": "Corte cebolla"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
+          {
+            "id": 506850,
+            "names": {
+              "en": "Onion Slice",
+              "tw": "洋蔥刺",
+              "kr": "양파 슬라이스",
+              "fr": "Tranche-oignon",
+              "de": "Zwiebelschnitt",
+              "es": "Corte cebolla"
             },
             "offset": 14,
             "castTime": 40
@@ -11635,6 +11859,166 @@
               "fr": "Splendeur de la terre + 2",
               "de": "Erdpracht + 2",
               "es": "Esplendor de tierra + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 203001305,
+        "names": {
+          "en": "Onion Knight Refia",
+          "tw": "洋蔥劍士蕾菲亞",
+          "kr": "양파 검사 레피아",
+          "fr": "Refia, chevalier oignon",
+          "de": "Zwiebelritter Refia",
+          "es": "Refia, Caballero Cebolla"
+        },
+        "abilities": [
+          {
+            "id": 211420,
+            "names": {
+              "en": "Full Speed Bladeblitz",
+              "tw": "全速全斬",
+              "kr": "전속 전방위 베기",
+              "fr": "Lame éclair rapide",
+              "de": "Voller Klingenblitz",
+              "es": "Tormenta de acero"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 508620,
+            "names": {
+              "en": "Hacked to Pieces",
+              "tw": "切碎",
+              "kr": "산산조각 내기",
+              "fr": "En mille morceaux",
+              "de": "Kleingehackt",
+              "es": "Picadillo de enemigo"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 207001005,
+        "names": {
+          "en": "Sephiroth",
+          "tw": "賽菲羅斯",
+          "kr": "세피로스",
+          "fr": "Séphiroth",
+          "es": "Sefirot"
+        },
+        "abilities": [
+          {
+            "id": 224530,
+            "names": {
+              "en": "Aeolian Onslaught",
+              "tw": "一陣",
+              "kr": "일진",
+              "fr": "Charge éolienne",
+              "de": "Windböe",
+              "es": "Cortavientos"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 306000905,
+        "names": {
+          "en": "Estark",
+          "tw": "艾斯塔克",
+          "kr": "에스타크"
+        },
+        "abilities": [
+          {
+            "id": 507531,
+            "names": {
+              "en": "Lightning Storm",
+              "tw": "地獄雷打",
+              "kr": "지고 스파크",
+              "fr": "Lame choc",
+              "de": "Blitzgewitter",
+              "es": "Tormenta luminosa"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 306001104,
+        "names": {
+          "en": "Überkilling Machine",
+          "tw": "殺戮魔神",
+          "kr": "킬러 마징가",
+          "fr": "Mékanocinglé",
+          "de": "Obertodmaschine",
+          "es": "Máquina supermortal"
+        },
+        "abilities": [
+          {
+            "id": 227051,
+            "names": {
+              "en": "Multislash",
+              "tw": "暴雨斬",
+              "kr": "장대비 베기",
+              "fr": "Multi-lame",
+              "de": "Multihieb",
+              "es": "Multiestocada"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 312000105,
+        "names": {
+          "en": "Lise",
+          "tw": "麗絲",
+          "kr": "리스"
+        },
+        "abilities": [
+          {
+            "id": 228271,
+            "names": {
+              "en": "100 Petals Dance",
+              "tw": "百花亂舞",
+              "kr": "null",
+              "fr": "null",
+              "de": "null",
+              "es": "null"
+            },
+            "offset": 14,
+            "castTime": 10
+          }
+        ]
+      },
+      {
+        "id": 401006405,
+        "names": {
+          "en": "Aurora Fryevia",
+          "tw": "極光弗雷比亞",
+          "kr": "오로라 프레이비아",
+          "fr": "Fryevia de l'Aurore"
+        },
+        "abilities": [
+          {
+            "id": 911651,
+            "names": {
+              "en": "Flash - Dazzle",
+              "tw": "閃光・奪目",
+              "kr": "섬광·황홀",
+              "fr": "Flash - Reflet",
+              "de": "Blitz - Blenden",
+              "es": "Destello - Obnubilación"
             },
             "offset": 14,
             "castTime": 40
@@ -12192,6 +12576,19 @@
           "de": "Naglfar"
         },
         "abilities": [
+          {
+            "id": 229311,
+            "names": {
+              "en": "Dig it up, lali!",
+              "tw": "挖起來啦哩！",
+              "kr": "캐내자라리!",
+              "fr": "On refait surface !",
+              "de": "Zu Tage, lali!",
+              "es": "¡Y después a excavar!"
+            },
+            "offset": 14,
+            "castTime": 10
+          },
           {
             "id": 229310,
             "names": {
@@ -12820,6 +13217,30 @@
         ]
       },
       {
+        "id": 331000805,
+        "names": {
+          "en": "Maria (Xenogears)",
+          "tw": "瑪利亞(Xenogears)",
+          "kr": "마리아(Xenogears)",
+          "es": "María (Xenogears)"
+        },
+        "abilities": [
+          {
+            "id": 229083,
+            "names": {
+              "en": "Missile Pod",
+              "tw": "導彈輔助機",
+              "kr": "미사일 포드",
+              "fr": "Capsule de missiles",
+              "de": "Raketenpod",
+              "es": "Portamisiles"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
         "id": 401005905,
         "names": {
           "en": "Lilith",
@@ -13262,6 +13683,29 @@
             "castTime": 40
           }
         ]
+      },
+      {
+        "id": 215002605,
+        "names": {
+          "en": "Gentiana",
+          "tw": "肯提亞娜",
+          "kr": "겐티아나"
+        },
+        "abilities": [
+          {
+            "id": 231847,
+            "names": {
+              "en": "Ice Dance",
+              "tw": "結冰亂舞",
+              "kr": "결빙난무",
+              "fr": "Danse des glaces",
+              "de": "Eiszapfentanz",
+              "es": "Danza glacial"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
       }
     ]
   },
@@ -13360,6 +13804,31 @@
               "fr": "Division sanglante",
               "de": "Blutrote Zweiteilung",
               "es": "División sanguinolenta"
+            },
+            "offset": 14,
+            "castTime": 10
+          }
+        ]
+      },
+      {
+        "id": 304000105,
+        "names": {
+          "en": "Randi",
+          "tw": "蘭迪",
+          "kr": "랜디",
+          "fr": "Randy",
+          "es": "Randy"
+        },
+        "abilities": [
+          {
+            "id": 508452,
+            "names": {
+              "en": "Five-Stage Frenzy",
+              "tw": "狂亂五段刺",
+              "kr": "광란의 5단 찌르기",
+              "fr": "Frénésie à cinq temps",
+              "de": "Fünfstufiger Tollwutschlag",
+              "es": "Frenesí pentafásico"
             },
             "offset": 14,
             "castTime": 10
@@ -15330,6 +15799,19 @@
             "castTime": 40
           },
           {
+            "id": 509240,
+            "names": {
+              "en": "Vertex Rampage",
+              "tw": "頂峰暴亂",
+              "kr": "광란의 싸움",
+              "fr": "Fureur déchaînée",
+              "de": "Gipfelraserei",
+              "es": "Estampida angular"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 229840,
             "names": {
               "en": "Focal Rampage",
@@ -15338,6 +15820,30 @@
               "fr": "Fureur ciblée",
               "de": "Gezielte Raserei",
               "es": "Estampida focal"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 215002804,
+        "names": {
+          "en": "Kenny Crow",
+          "tw": "肯尼‧克洛",
+          "kr": "케니 크로우",
+          "es": "Kenny Cuervo"
+        },
+        "abilities": [
+          {
+            "id": 231827,
+            "names": {
+              "en": "Feathered Foe",
+              "tw": "飛翔術",
+              "kr": "비상의 술",
+              "fr": "L'emplumé",
+              "de": "Gefiederter Feind",
+              "es": "Enemigo emplumado"
             },
             "offset": 14,
             "castTime": 40
@@ -15859,19 +16365,6 @@
               "fr": "Rose ensanglantée",
               "de": "Blutige Rose",
               "es": "Rosa sangrienta"
-            },
-            "offset": 14,
-            "castTime": 40
-          },
-          {
-            "id": 509912,
-            "names": {
-              "en": "Saber of Adversity",
-              "tw": "逆境之刃",
-              "kr": "애드버시티 세이버",
-              "fr": "Sabre de l'adversité",
-              "de": "Säbel der Not",
-              "es": "Sable de la adversidad"
             },
             "offset": 14,
             "castTime": 40
@@ -18140,6 +18633,45 @@
         },
         "abilities": [
           {
+            "id": 912245,
+            "names": {
+              "en": "Fortune - Anyone's Call",
+              "tw": "命運 - 人人平等",
+              "kr": "행운·예측 불가",
+              "fr": "Chance - Les jeux sont faits",
+              "de": "Glück - Ergreifbar für Jeden",
+              "es": "Ventura - La cosa está reñida"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912246,
+            "names": {
+              "en": "Fortune - Anyone's Call",
+              "tw": "命運 - 人人平等",
+              "kr": "행운·예측 불가",
+              "fr": "Chance - Les jeux sont faits",
+              "de": "Glück - Ergreifbar für Jeden",
+              "es": "Ventura - La cosa está reñida"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
+            "id": 912247,
+            "names": {
+              "en": "Fortune - Anyone's Call",
+              "tw": "命運 - 人人平等",
+              "kr": "행운·예측 불가",
+              "fr": "Chance - Les jeux sont faits",
+              "de": "Glück - Ergreifbar für Jeden",
+              "es": "Ventura - La cosa está reñida"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 20390,
             "names": {
               "en": "Tornado",
@@ -18455,6 +18987,29 @@
               "fr": "Tsunami + 2",
               "de": "Flutwelle + 2",
               "es": "Ola sísmica + 2"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 215002105,
+        "names": {
+          "en": "Lunafreya",
+          "tw": "露娜弗蕾亞",
+          "kr": "루나프레나"
+        },
+        "abilities": [
+          {
+            "id": 20380,
+            "names": {
+              "en": "Flood",
+              "tw": "洪水",
+              "kr": "플러드",
+              "fr": "Inondation",
+              "de": "Flut",
+              "es": "Inundación"
             },
             "offset": 14,
             "castTime": 40
@@ -20130,6 +20685,68 @@
         ]
       },
       {
+        "id": 215002605,
+        "names": {
+          "en": "Gentiana",
+          "tw": "肯提亞娜",
+          "kr": "겐티아나"
+        },
+        "abilities": [
+          {
+            "id": 510402,
+            "names": {
+              "en": "Infinite Icebreaker",
+              "tw": "無限碎冰",
+              "kr": "무한쇄빙",
+              "fr": "Brise-glace infini",
+              "de": "Unendlicher Eisbrecher",
+              "es": "Rompehielo infinito"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 231843,
+            "names": {
+              "en": "Frozen Flurry",
+              "tw": "冰雪花",
+              "kr": "빙설화",
+              "fr": "Bourrasque gelée",
+              "de": "Eisblumensturm",
+              "es": "Ráfaga helada"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 231848,
+            "names": {
+              "en": "Frozen Fractals",
+              "tw": "冰晶繚亂",
+              "kr": "빙정요란",
+              "fr": "Fractales gelées",
+              "de": "Gefrorene Blütenblätter",
+              "es": "Fractales helados"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 510255,
+            "names": {
+              "en": "Glacial Kiss",
+              "tw": "冰之吻",
+              "kr": "얼음의 입맞춤",
+              "fr": "Baiser glacial",
+              "de": "Frostkuss",
+              "es": "Beso glacial"
+            },
+            "offset": 14,
+            "castTime": 50
+          }
+        ]
+      },
+      {
         "id": 253001305,
         "names": {
           "en": "High Seraph Ultima",
@@ -20208,6 +20825,32 @@
               "fr": "Ode de minuit",
               "de": "Nacht-Ode",
               "es": "Oda nocturna"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 509139,
+            "names": {
+              "en": "Moonlight Waltz+",
+              "tw": "月夜之詩·增幅",
+              "kr": "달밤의 시·부스트",
+              "fr": "Valse nocturne +",
+              "de": "Mondlichtwalzer+",
+              "es": "Vals de la luna+"
+            },
+            "offset": 14,
+            "castTime": 50
+          },
+          {
+            "id": 509141,
+            "names": {
+              "en": "Night Ode+",
+              "tw": "闇夜之詩·增幅",
+              "kr": "암야의 시·부스트",
+              "fr": "Ode de minuit +",
+              "de": "Nacht-Ode+",
+              "es": "Oda nocturna+"
             },
             "offset": 14,
             "castTime": 50
@@ -21027,6 +21670,19 @@
               "fr": "Lueur chaotique",
               "de": "Chaoslicht",
               "es": "Luz caótica"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 509811,
+            "names": {
+              "en": "Riot Blade",
+              "tw": "真空斬",
+              "kr": "폭도의 검격",
+              "fr": "Lame rebelle",
+              "de": "Tumultschwert",
+              "es": "Hoja letal"
             },
             "offset": 14,
             "castTime": 76
@@ -21903,156 +22559,54 @@
     ]
   },
   {
-    "family": "0-42-6-6-6-6-6-6-6-6",
+    "family": "40-55-105-40",
     "units": [
       {
-        "id": 401007105,
+        "id": 215000105,
         "names": {
-          "en": "Tsukiko",
-          "tw": "月子",
-          "kr": "츠키코"
+          "en": "Noctis",
+          "tw": "諾克提斯",
+          "kr": "녹티스"
         },
         "abilities": [
           {
-            "id": 912785,
+            "id": 507684,
             "names": {
-              "en": "Vixen's Fire - First Tail",
-              "tw": "狐火 - 一尾",
-              "kr": "여우불·일미",
-              "fr": "Renard de feu - Première queue",
-              "de": "Fähenfeuer - Erster Schweif",
-              "es": "Fuego vulpino - Primera cola"
+              "en": "Quintcast III",
+              "tw": "無盡華爾滋",
+              "kr": "엔드리스 왈츠",
+              "fr": "Arcane quintuple III",
+              "de": "Ars Quintae III",
+              "es": "Elementia++ V"
             },
             "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912786,
-            "names": {
-              "en": "Vixen's Fire - Second Tail",
-              "tw": "狐火 - 二尾",
-              "kr": "여우불·이미",
-              "fr": "Renard de feu - Deuxième queue",
-              "de": "Fähenfeuer - Zweiter Schweif",
-              "es": "Fuego vulpino - Segunda cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912787,
-            "names": {
-              "en": "Vixen's Fire - Third Tail",
-              "tw": "狐火 - 三尾",
-              "kr": "여우불·삼미",
-              "fr": "Renard de feu - Troisième queue",
-              "de": "Fähenfeuer - Dritter Schweif",
-              "es": "Fuego vulpino - Tercera cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912788,
-            "names": {
-              "en": "Vixen's Fire - Fourth Tail",
-              "tw": "狐火 - 四尾",
-              "kr": "여우불·사미",
-              "fr": "Renard de feu - Quatrième queue",
-              "de": "Fähenfeuer - Vierter Schweif",
-              "es": "Fuego vulpino - Cuarta cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912789,
-            "names": {
-              "en": "Vixen's Fire - Fifth Tail",
-              "tw": "狐火 - 五尾",
-              "kr": "여우불·오미",
-              "fr": "Renard de feu - Cinquième queue",
-              "de": "Fähenfeuer - Fünfter Schweif",
-              "es": "Fuego vulpino - Quinta cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912790,
-            "names": {
-              "en": "Vixen's Fire - Sixth Tail",
-              "tw": "狐火 - 六尾",
-              "kr": "여우불·육미",
-              "fr": "Renard de feu - Sixième queue",
-              "de": "Fähenfeuer - Sechster Schweif",
-              "es": "Fuego vulpino - Sexta cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912791,
-            "names": {
-              "en": "Vixen's Fire - Seventh Tail",
-              "tw": "狐火 - 七尾",
-              "kr": "여우불·칠미",
-              "fr": "Renard de feu - Septième queue",
-              "de": "Fähenfeuer - Siebter Schweif",
-              "es": "Fuego vulpino - Séptima cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912792,
-            "names": {
-              "en": "Vixen's Fire - Eighth Tail",
-              "tw": "狐火 - 八尾",
-              "kr": "여우불·팔미",
-              "fr": "Renard de feu - Huitième queue",
-              "de": "Fähenfeuer - Achter Schweif",
-              "es": "Fuego vulpino - Octava cola"
-            },
-            "offset": 14,
-            "castTime": 10
-          },
-          {
-            "id": 912793,
-            "names": {
-              "en": "Vixen's Fire - Ninth Tail",
-              "tw": "狐火 - 九尾",
-              "kr": "여우불·구미",
-              "fr": "Renard de feu - Dernière queue",
-              "de": "Fähenfeuer - Letzter Schweif",
-              "es": "Fuego vulpino - Novena cola"
-            },
-            "offset": 14,
-            "castTime": 10
+            "castTime": 40
           }
         ]
       },
       {
-        "id": 401007205,
+        "id": 215002005,
         "names": {
-          "en": "Karten",
-          "tw": "卡爾頓",
-          "kr": "카튼",
-          "de": "Karsten"
+          "en": "Crown Prince Noctis",
+          "tw": "諾克提斯王子",
+          "kr": "녹티스 왕자",
+          "fr": "Noctis, prince couronné",
+          "de": "Kronprinz Noctis",
+          "es": "Príncipe Noctis"
         },
         "abilities": [
           {
-            "id": 913225,
+            "id": 507684,
             "names": {
-              "en": "Full Moon - Savage Awakening",
-              "tw": "滿月 - 野性覺醒",
-              "kr": "만월·야성의 자각",
-              "fr": "Pleine lune - Éveil sauvage",
-              "de": "Vollmond - Wildes Erwachen",
-              "es": "Luna llena - Despertar salvaje"
+              "en": "Quintcast III",
+              "tw": "無盡華爾滋",
+              "kr": "엔드리스 왈츠",
+              "fr": "Arcane quintuple III",
+              "de": "Ars Quintae III",
+              "es": "Elementia++ V"
             },
             "offset": 14,
-            "castTime": 38
+            "castTime": 40
           }
         ]
       }
@@ -22105,6 +22659,60 @@
               "es": "Impacto a bocajarro"
             },
             "offset": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "family": "25-155-40-55-105",
+    "units": [
+      {
+        "id": 215000105,
+        "names": {
+          "en": "Noctis",
+          "tw": "諾克提斯",
+          "kr": "녹티스"
+        },
+        "abilities": [
+          {
+            "id": 507685,
+            "names": {
+              "en": "Quintcast III",
+              "tw": "無盡華爾滋",
+              "kr": "엔드리스 왈츠",
+              "fr": "Arcane quintuple III",
+              "de": "Ars Quintae III",
+              "es": "Elementia++ V"
+            },
+            "offset": 14,
+            "castTime": 40
+          }
+        ]
+      },
+      {
+        "id": 215002005,
+        "names": {
+          "en": "Crown Prince Noctis",
+          "tw": "諾克提斯王子",
+          "kr": "녹티스 왕자",
+          "fr": "Noctis, prince couronné",
+          "de": "Kronprinz Noctis",
+          "es": "Príncipe Noctis"
+        },
+        "abilities": [
+          {
+            "id": 507685,
+            "names": {
+              "en": "Quintcast III",
+              "tw": "無盡華爾滋",
+              "kr": "엔드리스 왈츠",
+              "fr": "Arcane quintuple III",
+              "de": "Ars Quintae III",
+              "es": "Elementia++ V"
+            },
+            "offset": 14,
+            "castTime": 40
           }
         ]
       }
