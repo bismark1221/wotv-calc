@@ -81,7 +81,7 @@ export class Unit {
 
     this.abilities = [];
     unit.abilities.forEach(dataAbility => {
-      if (damage || (dataAbility.base && dataAbility.base > 0)) {
+      if (damage || (dataAbility.hasOwnProperty('base') && dataAbility.base >= 0)) {
         let ability = new Ability();
         ability.constructFromJson(dataAbility, translateService);
         this.abilities.push(ability);

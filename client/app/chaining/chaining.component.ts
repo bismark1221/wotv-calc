@@ -880,11 +880,24 @@ export class ChainingComponent implements OnInit {
   }
 
   getAvailableAbilities(unitPosition: number, abilityPosition: number) {
+    let abilities = null;
+    let ability = null;
     if (this.chain[unitPosition].selectedAbilities.length === 0 || abilityPosition === 0) {
-      return this.chain[unitPosition].abilities;
+      abilities = JSON.parse(JSON.stringify(this.chain[unitPosition].abilities));
     } else {
-      return this.chain[unitPosition].possibleMultiple;
+      abilities = JSON.parse(JSON.stringify(this.chain[unitPosition].possibleMultiple));
+
+      // this.chain[unitPosition].selectedAbilities.forEach(selectedAbility => {
+      //   ability = this.chain[unitPosition].abilities[this.unitService.findPositionOfAbilityById(this.chain[unitPosition], selectedAbility.id)];
+      //   if (ability.canDualSkill === false) {
+      //     console.log("Remove skill -- " + ability.names.en)
+      //     abilities.splice(abilities.findIndex(x => x === ability.id), 1);
+      //     console.log(JSON.parse(JSON.stringify(abilities)))
+      //   }
+      // });
     }
+
+    return abilities;
   }
 
   showChainMod(unitPosition: number) {

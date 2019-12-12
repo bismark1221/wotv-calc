@@ -81353,6 +81353,8 @@ export const UNITS: any[] = [
           "de": "Stern des Unbarmherzigen (Kronprinz Noctis)",
           "es": "Fukuryu (Príncipe Noctis)"
         },
+        "canDualSkill": false,
+        base: 0,
         "castTime": 40,
         "dualable": false,
         "offset": 14,
@@ -81396,6 +81398,8 @@ export const UNITS: any[] = [
           "de": "Stab des Frommen (Kronprinz Noctis)",
           "es": "Bautista (Príncipe Noctis)"
         },
+        "canDualSkill": false,
+        base: 0,
         "castTime": 40,
         "dualable": false,
         "offset": 14,
@@ -81439,6 +81443,8 @@ export const UNITS: any[] = [
           "de": "Schwert des Gewaltigen (Kronprinz Noctis)",
           "es": "Goliat (Príncipe Noctis)"
         },
+        "canDualSkill": false,
+        base: 0,
         "castTime": 40,
         "dualable": false,
         "offset": 14,
@@ -81490,6 +81496,8 @@ export const UNITS: any[] = [
           "de": "Schwert des Mystikers (Kronprinz Noctis)",
           "es": "Iaksa (Príncipe Noctis)"
         },
+        "canDualSkill": false,
+        base: 0,
         "castTime": 40,
         "dualable": false,
         "offset": 14,
@@ -81526,6 +81534,8 @@ export const UNITS: any[] = [
           "de": "Klinge des Eroberers (Kronprinz Noctis)",
           "es": "Deva (Príncipe Noctis)"
         },
+        "canDualSkill": false,
+        base: 0,
         "castTime": 40,
         "dualable": false,
         "offset": 14,
@@ -81577,6 +81587,8 @@ export const UNITS: any[] = [
           "de": "Schwert der Weisen (Kronprinz Noctis)",
           "es": "Salomón (Príncipe Noctis)"
         },
+        "canDualSkill": false,
+        base: 0,
         "castTime": 40,
         "dualable": false,
         "offset": 14,
