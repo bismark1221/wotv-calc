@@ -81643,7 +81643,10 @@ export const UNITS: any[] = [
         "ignore": 50,
         "framesList": [
           2, 8, 8, 8, 8, 8, 8, 8, 8, 67, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
-        ]
+        ],
+        range: {
+          min: -360
+        }
       }
     ],
     "passiveKillers": [
