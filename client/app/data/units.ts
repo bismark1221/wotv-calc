@@ -81109,6 +81109,9 @@ export const UNITS: any[] = [
             "nbUse": null,
             "insteadOf": null
           }
+        },
+        range: {
+          min: -360
         }
       },
       {
@@ -81215,7 +81218,10 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           75, 105
-        ]
+        ],
+        range: {
+          min: -360
+        }
       },
       {
         "dataId": 507683,
@@ -81257,7 +81263,10 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           125, 40, 55
-        ]
+        ],
+        range: {
+          min: -360
+        }
       },
       {
         "dataId": 507684,
@@ -81299,7 +81308,10 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           40, 55, 105, 40
-        ]
+        ],
+        range: {
+          min: -360
+        }
       },
       {
         "dataId": 507685,
@@ -81341,7 +81353,10 @@ export const UNITS: any[] = [
         ],
         "framesList": [
           25, 155, 40, 55, 105
-        ]
+        ],
+        range: {
+          min: -360
+        }
       },
       {
         "dataId": 231883,
