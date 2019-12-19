@@ -82701,5 +82701,1915 @@ export const UNITS: any[] = [
         "rarity": 7
       }
     ]
+  },
+  {
+    "dataId": 100022705,
+    "names": {
+      "en": "Holy Night Amelia & Emilia",
+      "tw": "聖夜艾美利亞&埃米利亞",
+      "kr": "성야의 아멜리아&에밀리아",
+      "fr": "Amélia et Émilia des Nuits d'hiver",
+      "de": "Winternacht-Amelia & -Emilia",
+      "es": "Amelia y Emilia invernales"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 121,
+          "pot": 20
+        },
+        "mag": {
+          "base": 96,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 157,
+          "pot": 30
+        },
+        "mag": {
+          "base": 124,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 204,
+          "pot": 50
+        },
+        "mag": {
+          "base": 161,
+          "pot": 50
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 230882,
+        "names": {
+          "en": "Jingle Blade",
+          "tw": "叮噹匕首",
+          "kr": "징글 나이프",
+          "fr": "Lame d'hiver",
+          "de": "Glöckchen-Klinge",
+          "es": "Hacia Belén va una espada, rin, rin"
+        },
+        "base": 450,
+        "hitDamage": [
+          33.333333333333336, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 120,
+        "offset": 42,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          60, 54, 54
+        ]
+      },
+      {
+        "dataId": 230883,
+        "names": {
+          "en": "Halting Knife",
+          "tw": "驚訝匕首",
+          "kr": "깜짝 나이프",
+          "fr": "Dague ravageuse",
+          "de": "Überraschungsmesser",
+          "es": "Tajo por sorpresa"
+        },
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          60
+        ]
+      },
+      {
+        "dataId": 230884,
+        "names": {
+          "en": "Missiletoe - ATK",
+          "tw": "祝福彈·攻",
+          "kr": "총탄 선물·공격력",
+          "fr": "Guitrailleuse - ATT",
+          "de": "Geschenkgeschoss - ANG",
+          "es": "Tiro muérdago - ATQ"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          72
+        ]
+      },
+      {
+        "dataId": 230885,
+        "names": {
+          "en": "Missiletoe - DEF",
+          "tw": "祝福彈·防",
+          "kr": "총탄 선물·방어력",
+          "fr": "Guitrailleuse - DEF",
+          "de": "Geschenkgeschoss - ABW",
+          "es": "Tiro muérdago - DEF"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          72
+        ]
+      },
+      {
+        "dataId": 230887,
+        "names": {
+          "en": "Missiletoe - SPR",
+          "tw": "祝福彈·精",
+          "kr": "총탄 선물·정신력",
+          "fr": "Guitrailleuse - PSY",
+          "de": "Geschenkgeschoss - PSY",
+          "es": "Tiro muérdago - ESP"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          72
+        ]
+      },
+      {
+        "dataId": 230886,
+        "names": {
+          "en": "Missiletoe - MAG",
+          "tw": "祝福彈·魔",
+          "kr": "총탄 선물·마력",
+          "fr": "Guitrailleuse - MAGIE",
+          "de": "Geschenkgeschoss - MAG",
+          "es": "Tiro muérdago - MAG"
+        },
+        "base": 340,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 65,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          72
+        ]
+      },
+      {
+        "dataId": 223120,
+        "names": {
+          "en": "Cruel Knife",
+          "tw": "殘酷之刃",
+          "kr": "참혹의 나이프",
+          "fr": "Couteau cruel",
+          "de": "Grausames Messer",
+          "es": "Cuchillo cruel"
+        },
+        "base": 250,
+        "hitDamage": [
+          30, 30, 40
+        ],
+        "castTime": 48,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          50, 10, 10
+        ]
+      },
+      {
+        "dataId": 208710,
+        "names": {
+          "en": "Ricochet",
+          "tw": "反彈射擊",
+          "kr": "도비탄",
+          "de": "Querschläger",
+          "es": "Rebote"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 91,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          93
+        ]
+      },
+      {
+        "dataId": 230891,
+        "names": {
+          "en": "Winter's Edge",
+          "tw": "冬之刃",
+          "kr": "윈터 엣지",
+          "fr": "Givre d'hiver",
+          "de": "Winterschneide",
+          "es": "Filo del invierno"
+        },
+        "base": 320,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 80,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230892,
+        "names": {
+          "en": "Starry Edge",
+          "tw": "閃耀匕首",
+          "kr": "샤인 나이프",
+          "fr": "Tranchant étoilé",
+          "de": "Sternenschneide",
+          "es": "Filo estrellado"
+        },
+        "base": 320,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230893,
+        "names": {
+          "en": "Wintertime",
+          "tw": "冬日時光",
+          "kr": "윈터 타임",
+          "fr": "L'Hivernale",
+          "de": "Winterzeit",
+          "es": "Periodo invernal"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "dataId": 230894,
+        "names": {
+          "en": "Winter Star",
+          "tw": "閃耀時光",
+          "kr": "샤인 타임",
+          "fr": "Astre d'hiver",
+          "de": "Winterstern",
+          "es": "Estrella invernal"
+        },
+        "base": 550,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "dataId": 223130,
+        "names": {
+          "en": "Funeral Knife",
+          "tw": "葬禮之刃",
+          "kr": "장례의 나이프",
+          "fr": "Couteau funéraire",
+          "de": "Begräbnismesser",
+          "es": "Cuchillo funerario"
+        },
+        "base": 325,
+        "hitDamage": [
+          11, 11, 11, 11, 11, 11, 11, 11, 12
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 208690,
+        "names": {
+          "en": "Disorder",
+          "tw": "無序亂射",
+          "kr": "난동",
+          "fr": "Désordre",
+          "de": "Störung",
+          "es": "Desorden"
+        },
+        "base": 200,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 230895,
+        "names": {
+          "en": "Sisters' Rage",
+          "tw": "姐妹猛攻",
+          "kr": "자매의 분노",
+          "fr": "Rage jumelée",
+          "de": "Zorn der Schwestern",
+          "es": "Ira de las gemelas"
+        },
+        "base": 1200,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 230901,
+        "names": {
+          "en": "Snow Melter",
+          "tw": "融雪匕首",
+          "kr": "해빙의 나이프",
+          "fr": "Fonde-neige",
+          "de": "Schneeschmelze",
+          "es": "Derritenieve"
+        },
+        "base": 800,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "dataId": 230902,
+        "names": {
+          "en": "Starshine",
+          "tw": "星光匕首",
+          "kr": "별빛의 나이프",
+          "fr": "Éclat stellaire",
+          "de": "Sternenfunkeln",
+          "es": "Tajo estelar"
+        },
+        "base": 900,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "dataId": 509752,
+        "names": {
+          "en": "Holiday Blast",
+          "tw": "冬日假期炸裂彈",
+          "kr": "겨울 축제의 총탄",
+          "fr": "Explosion festive",
+          "de": "Festliche Munition",
+          "es": "Explosión festiva"
+        },
+        "base": 2200,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 230895,
+            "value": 650,
+            "turn": 2,
+            "uniqueIdentifier": 11187
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "cooldown": {
+          "unlock": 3,
+          "wait": 3,
+          "unlockId": 230903
+        }
+      },
+      {
+        "dataId": 509754,
+        "names": {
+          "en": "Twins' Box of Tricks",
+          "tw": "雙子姐妹的惡作劇盒",
+          "kr": "쌍둥이 자매의 깜짝 상자",
+          "fr": "Les mille et un tours des jumelles",
+          "de": "Zauberkasten der Zwillingsschwestern",
+          "es": "Caja sorpresa de las gemelas"
+        },
+        "base": 1200,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 100022707,
+        "names": {
+          "en": "A Gift For You",
+          "tw": "獻給你的禮物",
+          "kr": "당신을 위한 선물",
+          "fr": "Pour toi !",
+          "de": "Geschenk für Dich",
+          "es": "Este regalo es para ti"
+        },
+        "base": 2200,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 25
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 70,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          106, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 223
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "race": "human",
+        "physic": 50,
+        "magic": 0,
+        "rarity": 5
+      },
+      {
+        "race": "human",
+        "physic": 50,
+        "magic": 0,
+        "rarity": 6
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          223120,
+          223130,
+          230882,
+          230883,
+          230891,
+          230892,
+          230893,
+          230894,
+          230895,
+          230901,
+          230902,
+          230904,
+          208690,
+          208710,
+          230884,
+          230885,
+          230886,
+          230887,
+          230903,
+          509752
+        ]
+      }
+    ],
+    "maxChainCap": 6,
+    "passiveBoostModifiers": [
+      {
+        "id": 230895,
+        "value": 550,
+        "rarity": 7
+      },
+      {
+        "id": 230901,
+        "value": 250,
+        "rarity": 7
+      },
+      {
+        "id": 230902,
+        "value": 250,
+        "rarity": 7
+      },
+      {
+        "id": 208690,
+        "value": 400,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 401005705,
+    "names": {
+      "en": "Lucas",
+      "tw": "盧卡斯",
+      "kr": "루카스"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 98,
+          "pot": 16
+        },
+        "mag": {
+          "base": 79,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 128,
+          "pot": 26
+        },
+        "mag": {
+          "base": 103,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 167,
+          "pot": 40
+        },
+        "mag": {
+          "base": 135,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 913537,
+        "names": {
+          "en": "Defensive Booster",
+          "tw": "防禦性推進",
+          "kr": "방어 부스터",
+          "fr": "Amplificateur défensif",
+          "de": "Defensiver Schub",
+          "es": "Refuerzo defensivo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 120,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 55,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913539,
+        "names": {
+          "en": "Offensive Booster",
+          "tw": "攻擊性推進",
+          "kr": "공격 부스터",
+          "fr": "Amplificateur offensif",
+          "de": "Offensiver Schub",
+          "es": "Refuerzo ofensivo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 120,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 55,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 55,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913542,
+        "names": {
+          "en": "Guardian Fire",
+          "tw": "守護者烈焰",
+          "kr": "수호자의 불",
+          "fr": "Feu de garde",
+          "de": "Wächterfeuer",
+          "es": "Fuego guardián"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 3
+          },
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913544,
+        "names": {
+          "en": "Guardian Ice",
+          "tw": "守護者寒冰",
+          "kr": "수호자의 얼음",
+          "fr": "Glace protectrice",
+          "de": "Wächtereis",
+          "es": "Hielo guardián"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 3
+          },
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913547,
+        "names": {
+          "en": "Guardian Wind",
+          "tw": "守護者疾風",
+          "kr": "수호자의 바람",
+          "fr": "Vent protecteur",
+          "de": "Wächterwind",
+          "es": "Viento guardián"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "wind",
+            "turn": 3
+          },
+          {
+            "element": "wind",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913552,
+        "names": {
+          "en": "Magical Refuge",
+          "tw": "魔法避難所",
+          "kr": "마법 피난처",
+          "fr": "Refuge magique",
+          "de": "Magische Zuflucht",
+          "es": "Refugio mágico"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 4
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913556,
+        "names": {
+          "en": "Flurry Cannon",
+          "tw": "極速加農砲",
+          "kr": "질풍의 대포",
+          "fr": "Canon-rafale",
+          "de": "Windstoßkanone",
+          "es": "Cañón de nieve"
+        },
+        "damage": "magic",
+        "base": 800,
+        "hitDamage": [
+          8, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11
+        ],
+        "castTime": 39,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 913566,
+        "names": {
+          "en": "Augmented Control",
+          "tw": "控制強化",
+          "kr": "증강 제어",
+          "fr": "Contrôle augmenté",
+          "de": "Gesteigerte Kontrolle",
+          "es": "Control aumentado"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913546,
+            "value": 600,
+            "turn": 3,
+            "uniqueIdentifier": 913566
+          },
+          {
+            "id": 913550,
+            "value": 600,
+            "turn": 3,
+            "uniqueIdentifier": 913566
+          },
+          {
+            "id": 913556,
+            "value": 600,
+            "turn": 3,
+            "uniqueIdentifier": 913566
+          },
+          {
+            "id": 913571,
+            "value": 600,
+            "turn": 3,
+            "uniqueIdentifier": 913566
+          }
+        ],
+        "cooldown": {
+          "unlock": 3,
+          "wait": 3,
+          "unlockId": 913565
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913573,
+        "names": {
+          "en": "Gift of Fire",
+          "tw": "火之贈禮",
+          "kr": "불의 선물",
+          "fr": "Cadeau de feu",
+          "de": "Gabe des Feuers",
+          "es": "Regalo de fuego"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imperil"
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 1
+          }
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 120,
+            "turn": 1
+          }
+        ],
+        "unlockBy": {
+          "913568": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913574,
+        "names": {
+          "en": "Gift of Ice",
+          "tw": "冰之贈禮",
+          "kr": "얼음의 선물",
+          "fr": "Cadeau de glace",
+          "de": "Gabe des Frosts",
+          "es": "Regalo de hielo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imperil"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 1
+          }
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 120,
+            "turn": 1
+          }
+        ],
+        "unlockBy": {
+          "913568": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913575,
+        "names": {
+          "en": "Gift of Wind",
+          "tw": "風之贈禮",
+          "kr": "바람의 선물",
+          "fr": "Cadeau de vent",
+          "de": "Gabe des Windes",
+          "es": "Regalo de viento"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue",
+          "imperil"
+        ],
+        "imbues": [
+          {
+            "element": "wind",
+            "turn": 1
+          }
+        ],
+        "imperils": [
+          {
+            "type": "wind",
+            "value": 120,
+            "turn": 1
+          }
+        ],
+        "unlockBy": {
+          "913568": {
+            "turns": 2,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      }
+    ],
+    "multipleWhite": 2,
+    "multipleBlack": 2,
+    "multipleGreen": 2,
+    "passiveKillers": [
+      {
+        "physic": 0,
+        "rarity": 5
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          913534,
+          913537,
+          913539,
+          913540,
+          913542,
+          913544,
+          913547,
+          913553,
+          913554,
+          913556,
+          913563,
+          913565,
+          913567,
+          913564,
+          913566,
+          913568
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          913534,
+          913537,
+          913539,
+          913540,
+          913542,
+          913544,
+          913547,
+          913553,
+          913554,
+          913556,
+          913563,
+          913565,
+          913567,
+          913564,
+          913566,
+          913568
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 401008305,
+    "names": {
+      "en": "Levinson",
+      "tw": "萊文森",
+      "kr": "레빈슨"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 117,
+          "pot": 20
+        },
+        "mag": {
+          "base": 117,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 153,
+          "pot": 30
+        },
+        "mag": {
+          "base": 153,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 200,
+          "pot": 50
+        },
+        "mag": {
+          "base": 200,
+          "pot": 50
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 913585,
+        "names": {
+          "en": "Be Merry",
+          "tw": "歡樂滿滿",
+          "kr": "즐겨봐!",
+          "fr": "Soyez joyeux",
+          "de": "Sei munter",
+          "es": "Sé feliz"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913590,
+        "names": {
+          "en": "Bag O' Toys - Toy Soldier",
+          "tw": "裝滿玩具的袋子 - 玩具士兵",
+          "kr": "선물 자루·장난감 병정",
+          "fr": "Sac à jouets - Soldat de plomb",
+          "de": "Sack voller Geschenke - Spielzeugsoldat",
+          "es": "Saco de juguetes - Soldado de juguete"
+        },
+        "base": 300,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913592,
+        "names": {
+          "en": "Bag O' Toys - Sparklers",
+          "tw": "裝滿玩具的袋子 - 煙火",
+          "kr": "선물 자루·폭죽",
+          "fr": "Sac à jouets - Cierges magiques",
+          "de": "Sack voller Geschenke - Wunderkerzen",
+          "es": "Saco de juguetes - Cohetes"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 44
+        ],
+        "castTime": 76,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 913593,
+        "names": {
+          "en": "Bag O' Toys - Freeze Ray",
+          "tw": "裝滿玩具的袋子 - 冷凍雷射",
+          "kr": "선물 자루·냉동빔",
+          "fr": "Sac à jouets - Rayon glacé",
+          "de": "Sack voller Geschenke - Froststrahl",
+          "es": "Saco de juguetes - Rayo congelador"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 44
+        ],
+        "castTime": 76,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 913594,
+        "names": {
+          "en": "Ornaments - Snow Globe",
+          "tw": "飾品 - 雪景球",
+          "kr": "장식·스노우볼",
+          "fr": "Décorations - Boule à neige",
+          "de": "Dekoration - Schneekugel",
+          "es": "Adornos - Domo de nieve"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913595,
+        "names": {
+          "en": "Ornaments - Lit Candle",
+          "tw": "飾品 - 微光蠟燭",
+          "kr": "장식·촛불 켜기",
+          "fr": "Décorations - Bougie allumée",
+          "de": "Dekoration - Brennende Kerze",
+          "es": "Adornos - Vela encendida"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913596,
+        "names": {
+          "en": "Ornaments - Jingle Bells",
+          "tw": "飾品 - 響亮鈴鐺",
+          "kr": "장식·징글벨",
+          "fr": "Décorations - Petites clochettes",
+          "de": "Dekoration - Klingelglocken",
+          "es": "Adornos - Cascabeles"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "wind",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913597,
+        "names": {
+          "en": "Ornaments - Decorated Tree",
+          "tw": "飾品 - 盛裝大樹",
+          "kr": "장식·트리 장식",
+          "fr": "Décoration - Mon beau sapin",
+          "de": "Dekoration - Geschmückter Baum",
+          "es": "Adornos - Árbol decorado"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "earth",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913591,
+        "names": {
+          "en": "Bag O' Toys - Flurry of Candy",
+          "tw": "裝滿玩具的袋子 - 糖果包",
+          "kr": "선물 자루·사탕 무더기",
+          "fr": "Sac à jouets - Myriade de bonbons",
+          "de": "Sack voller Geschenke - Süßigkeitensalve",
+          "es": "Saco de juguetes - Oleada de dulces"
+        },
+        "damage": "hybrid",
+        "base": 2600,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "dataId": 913589,
+        "names": {
+          "en": "Bag O' Toys - Toy Army",
+          "tw": "裝滿玩具的袋子 - 玩具軍隊",
+          "kr": "선물 자루·장난감 군대",
+          "fr": "Sac à jouets - Armée de jouets",
+          "de": "Sack voller Geschenke - Spielzeugarmee",
+          "es": "Saco de juguetes - Ejército de juguetes"
+        },
+        "damage": "hybrid",
+        "base": 3100,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913581,
+        "names": {
+          "en": "Packed with Presents",
+          "tw": "滿滿的禮物",
+          "kr": "선물이 한가득",
+          "fr": "Cascade de cadeaux",
+          "de": "Vollgepackt mit Geschenken",
+          "es": "Cargadito de juguetes"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 913589,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 913581
+          },
+          {
+            "id": 913591,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 913581
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 913580
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913583,
+        "names": {
+          "en": "Checking It Twice",
+          "tw": "2次確認",
+          "kr": "다시 확인",
+          "fr": "Sage ou pas sage ?",
+          "de": "Zweimal nachgeschaut",
+          "es": "Doble comprobación"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100,
+            "turn": 5
+          },
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 5
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 913582
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913587,
+        "names": {
+          "en": "Reveal Naughty List",
+          "tw": "公布小淘氣列表",
+          "kr": "누가 나쁜 아이인지",
+          "fr": "Verdict : pas sage",
+          "de": "Wer war ungezogen?",
+          "es": "Lista de niños malos"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "killer"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 120,
+            "turn": 5
+          },
+          {
+            "type": "ice",
+            "value": 120,
+            "turn": 5
+          }
+        ],
+        "killers": [
+          {
+            "race": "undead",
+            "physic": 25,
+            "magic": 0,
+            "turn": 5
+          },
+          {
+            "race": "human",
+            "physic": 25,
+            "magic": 0,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "913583": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913588,
+        "names": {
+          "en": "Reveal Nice List",
+          "tw": "公布乖寶寶列表",
+          "kr": "누가 착한 아이인지",
+          "fr": "Verdict : sage",
+          "de": "Wer war brav?",
+          "es": "Lista de niños buenos"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 74,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 74,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "913583": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913579,
+        "names": {
+          "en": "This Calls for a War!",
+          "tw": "戰鬥的序幕拉開了！",
+          "kr": "전장이 부른다!",
+          "fr": "C'est la guerre !",
+          "de": "Das ruft nach einer Schlacht!",
+          "es": "¡Esto es la guerra!"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 2
+          },
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 2
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 2
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913600,
+        "names": {
+          "en": "Snowball Fight!",
+          "tw": "雪球大戰！",
+          "kr": "눈싸움이다!",
+          "fr": "Bataille de boules de neige !",
+          "de": "Schneeballschlacht!",
+          "es": "¡Guerra de bolas de nieve!"
+        },
+        "base": 10,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          0
+        ],
+        "unlockBy": {
+          "913579": {
+            "turns": 9999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 950000017,
+        "names": {
+          "en": "Toys for Everyone! + 1",
+          "tw": "給大家的玩具！ + 1",
+          "kr": "모두의 장난감이야! + 1",
+          "fr": "Des jouets par milliers ! + 1",
+          "de": "Spielsachen für alle! + 1",
+          "es": "¡Juguetes para todos! + 1"
+        },
+        "damage": "magic",
+        "base": 6000,
+        "hitDamage": [
+          5, 5, 5, 5, 30, 5, 5, 5, 5, 30
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913590,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 401005705
+          },
+          {
+            "id": 913592,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 401005705
+          },
+          {
+            "id": 913593,
+            "value": 200,
+            "turn": 9999,
+            "uniqueIdentifier": 401005705
+          },
+          {
+            "id": 913591,
+            "value": 2000,
+            "turn": 9999,
+            "uniqueIdentifier": 401005706
+          },
+          {
+            "id": 913589,
+            "value": 2000,
+            "turn": 9999,
+            "uniqueIdentifier": 401005706
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": [
+          50,
+          50
+        ],
+        "magic": [
+          50,
+          50
+        ],
+        "rarity": 6
+      },
+      {
+        "physic": [
+          50,
+          50
+        ],
+        "magic": [
+          50,
+          50
+        ],
+        "rarity": 7
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          913585,
+          913586,
+          913590,
+          913592,
+          913593,
+          913594,
+          913595,
+          913596,
+          913597,
+          913598,
+          913591,
+          913589,
+          913580,
+          913582,
+          913579,
+          913587,
+          913588,
+          913581,
+          913583
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          913585,
+          913586,
+          913590,
+          913592,
+          913593,
+          913594,
+          913595,
+          913596,
+          913597,
+          913598,
+          913591,
+          913589,
+          913580,
+          913582,
+          913579,
+          913587,
+          913588,
+          913581,
+          913583
+        ]
+      }
+    ]
   }
 ];
