@@ -9675,6 +9675,39 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "dataId": 950198,
+        "names": {
+          "en": "Soul Surge II",
+          "tw": "靈魂翻湧II",
+          "kr": "영혼 쇄도 II",
+          "fr": "Déferlement surnaturel II",
+          "de": "Seelenentladung II",
+          "es": "Aluvión espiritual II"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 4
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 4,
+          "unlockId": 950197
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
         "id": 401002707,
         "names": {
           "en": "Mambo Hodge-podge",
@@ -9757,7 +9790,8 @@ export const UNITS: any[] = [
           911817,
           911824,
           910625,
-          912877
+          912877,
+          950198
         ]
       }
     ]
@@ -10039,6 +10073,46 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "dataId": 950189,
+        "names": {
+          "en": "Arctic Blitz II",
+          "tw": "極地突襲II",
+          "kr": "극지의 공습 II",
+          "fr": "Raid arctique II",
+          "de": "Arktisblitz II",
+          "es": "Ráfaga ártica II"
+        },
+        "damage": "magic",
+        "base": 550,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 44
+        ],
+        "castTime": 76,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "consecutive": {
+          "turns": 5,
+          "value": 250
+        },
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ]
+      },
+      {
         "id": 401002607,
         "names": {
           "en": "Snowbear Rampage",
@@ -10088,7 +10162,8 @@ export const UNITS: any[] = [
           911802,
           912861,
           912863,
-          912892
+          912892,
+          950189
         ]
       }
     ],
@@ -10247,9 +10322,223 @@ export const UNITS: any[] = [
           140, 14, 14, 14, 14, 14, 15, 15
         ],
         "offset": 14
+      },
+      {
+        "dataId": 950174,
+        "names": {
+          "en": "Whiteout",
+          "tw": "白閃",
+          "kr": "화이트아웃",
+          "fr": "Oblitération",
+          "de": "Schneeblindheit",
+          "es": "Nevadón"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 50
+        ],
+        "castTime": 39,
+        "elements": [
+          "ice"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 5,
+          "value": 200
+        },
+        "framesList": [
+          40, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+        ],
+        "unlockBy": {
+          "950173": {
+            "turns": 9999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 950175,
+        "names": {
+          "en": "Aero-Storm",
+          "tw": "蒼穹風暴",
+          "kr": "에어로 스톰",
+          "fr": "Fracas aérien",
+          "de": "Aerosturm",
+          "es": "Aerotormenta"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 8, 50
+        ],
+        "castTime": 76,
+        "elements": [
+          "wind"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 5,
+          "value": 200
+        },
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ],
+        "unlockBy": {
+          "950173": {
+            "turns": 9999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 950182,
+        "names": {
+          "en": "Imminent Storm II",
+          "tw": "風暴將臨II",
+          "kr": "임박한 폭풍 II",
+          "fr": "Tempête imminente II",
+          "de": "Sturmwarnung II",
+          "es": "Tormenta inminente II"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 4
+          },
+          {
+            "type": "wind",
+            "value": 100,
+            "turn": 4
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 910068,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910771,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910772,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910043,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910767,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910768,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910069,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910773,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910774,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910044,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910769,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          },
+          {
+            "id": 910770,
+            "value": 1000,
+            "turn": 5,
+            "uniqueIdentifier": 950182
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 950181
+        },
+        "framesList": [
+          0
+        ]
       }
     ],
-    "multipleBlack": 3
+    "multipleBlack": 3,
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          910034,
+          910036,
+          910040,
+          910711,
+          910712,
+          911775,
+          911783,
+          950174,
+          950175,
+          950177,
+          950179,
+          950181,
+          911784,
+          950178,
+          950180,
+          950182
+        ]
+      }
+    ]
   },
   {
     id: 90,
