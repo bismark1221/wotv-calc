@@ -5270,13 +5270,23 @@
       {
         "id": 201000505,
         "names": {
-          "en": 201000505
+          "en": "Immortal Knight Garland",
+          "tw": "輪迴騎士加蘭德",
+          "kr": "윤회의 기사 가란드",
+          "fr": "Garland, chevalier immortel",
+          "de": "Ritter der Ewigkeit Garland",
+          "es": "Garland, caballero inmortal"
         },
         "abilities": [
           {
             "id": 231345,
             "names": {
-              "en": "unknown ability name -- 231345"
+              "en": "Rumbling Darkness",
+              "tw": "黑暗鳴動",
+              "kr": "진동하는 어둠",
+              "fr": "Ténèbres grondantes",
+              "de": "Polternde Dunkelheit",
+              "es": "Oscuridad atronadora"
             },
             "offset": 14,
             "castTime": 40
@@ -5284,7 +5294,12 @@
           {
             "id": 231349,
             "names": {
-              "en": "unknown ability name -- 231349"
+              "en": "Chaos Impact",
+              "tw": "混沌衝擊",
+              "kr": "카오스 임팩트",
+              "fr": "Impact du chaos",
+              "de": "Chaoserschütterung",
+              "es": "Impacto caótico"
             },
             "offset": 14,
             "castTime": 40
@@ -5292,7 +5307,12 @@
           {
             "id": 510044,
             "names": {
-              "en": "unknown ability name -- 510044"
+              "en": "Revenge of Chaos",
+              "tw": "混沌復仇",
+              "kr": "리벤지 오브 카오스",
+              "fr": "Vengeance du chaos",
+              "de": "Chaos' Rache",
+              "es": "Venganza del caos"
             },
             "offset": 14,
             "castTime": 40
@@ -5300,7 +5320,12 @@
           {
             "id": 510045,
             "names": {
-              "en": "unknown ability name -- 510045"
+              "en": "Chaos Slicer",
+              "tw": "混沌切割",
+              "kr": "카오스 슬라이서",
+              "fr": "Trancheur du chaos",
+              "de": "Chaos-Schlitzer",
+              "es": "Rebanador caótico"
             },
             "offset": 14,
             "castTime": 40
@@ -9951,13 +9976,36 @@
       {
         "id": 201000405,
         "names": {
-          "en": 201000405
+          "en": "Awakened Warrior of Light",
+          "tw": "覺醒光之戰士",
+          "kr": "워리어 오브 라이트",
+          "fr": "Guerrier de la Lumière éveillé",
+          "de": "Erweckter Krieger des Lichts",
+          "es": "Guerrero de la Luz despertado"
         },
         "abilities": [
           {
+            "id": 800126,
+            "names": {
+              "en": "Guardian's Wall of Light",
+              "tw": "守護者的光壁",
+              "kr": "수호자의 광벽",
+              "fr": "Mur lumineux du gardien",
+              "de": "Lichtmauer des Wächters",
+              "es": "Muro de luz del guardián"
+            },
+            "offset": 14,
+            "castTime": 40
+          },
+          {
             "id": 231310,
             "names": {
-              "en": "unknown ability name -- 231310"
+              "en": "Sacred Wave",
+              "tw": "神聖浪潮",
+              "kr": "세이크리드 웨이브",
+              "fr": "Onde sacrée",
+              "de": "Heilige Welle",
+              "es": "Ola sagrada"
             },
             "offset": 14,
             "castTime": 40
@@ -16352,13 +16400,23 @@
       {
         "id": 201000405,
         "names": {
-          "en": 201000405
+          "en": "Awakened Warrior of Light",
+          "tw": "覺醒光之戰士",
+          "kr": "워리어 오브 라이트",
+          "fr": "Guerrier de la Lumière éveillé",
+          "de": "Erweckter Krieger des Lichts",
+          "es": "Guerrero de la Luz despertado"
         },
         "abilities": [
           {
             "id": 510024,
             "names": {
-              "en": "unknown ability name -- 510024"
+              "en": "Blade of Bonds",
+              "tw": "維繫羈絆的守護之劍",
+              "kr": "인연을 잇는 수호검",
+              "fr": "Lame des liens",
+              "de": "Klinge der Bande",
+              "es": "Espada de los vínculos"
             },
             "offset": 14,
             "castTime": 40
@@ -16366,7 +16424,12 @@
           {
             "id": 510023,
             "names": {
-              "en": "unknown ability name -- 510023"
+              "en": "Protective Blade",
+              "tw": "戰士守護劍",
+              "kr": "전사의 수호검",
+              "fr": "Lame de protection",
+              "de": "Schützende Klinge",
+              "es": "Espada del guerrero"
             },
             "offset": 14,
             "castTime": 40
@@ -16374,7 +16437,12 @@
           {
             "id": 510029,
             "names": {
-              "en": "unknown ability name -- 510029"
+              "en": "Holy Bravery",
+              "tw": "勇氣神聖",
+              "kr": "브레이브 홀리",
+              "fr": "Courage sacré",
+              "de": "Sanctus des Mutes",
+              "es": "Valor sagrado"
             },
             "offset": 14,
             "castTime": 40
@@ -16384,13 +16452,23 @@
       {
         "id": 201000505,
         "names": {
-          "en": 201000505
+          "en": "Immortal Knight Garland",
+          "tw": "輪迴騎士加蘭德",
+          "kr": "윤회의 기사 가란드",
+          "fr": "Garland, chevalier immortel",
+          "de": "Ritter der Ewigkeit Garland",
+          "es": "Garland, caballero inmortal"
         },
         "abilities": [
           {
             "id": 231341,
             "names": {
-              "en": "unknown ability name -- 231341"
+              "en": "Fiend of Fire - Blaze",
+              "tw": "火之混沌·烈焰",
+              "kr": "불의 카오스·불꽃",
+              "fr": "Démon du feu - Flammes",
+              "de": "Dämon der Flammen - Lohe",
+              "es": "Demonio del fuego - Llamarada"
             },
             "offset": 14,
             "castTime": 40
@@ -17880,13 +17958,21 @@
       {
         "id": 100023305,
         "names": {
-          "en": 100023305
+          "en": "White Lily Dark Fina",
+          "tw": "白百合魔人菲娜",
+          "kr": "백합꽃의 마인 피나",
+          "fr": "Fina obscure au lys blanc",
+          "de": "Weißlilien-Dunkelfina",
+          "es": "Fina oscura con lirio blanco"
         },
         "abilities": [
           {
             "id": 509954,
             "names": {
-              "en": "unknown ability name -- 509954"
+              "en": "Femme Fatale",
+              "tw": "魔性之女",
+              "kr": "팜므 파탈",
+              "fr": "Femme fatale"
             },
             "offset": 14,
             "castTime": 40
@@ -18345,13 +18431,23 @@
       {
         "id": 201000505,
         "names": {
-          "en": 201000505
+          "en": "Immortal Knight Garland",
+          "tw": "輪迴騎士加蘭德",
+          "kr": "윤회의 기사 가란드",
+          "fr": "Garland, chevalier immortel",
+          "de": "Ritter der Ewigkeit Garland",
+          "es": "Garland, caballero inmortal"
         },
         "abilities": [
           {
             "id": 231343,
             "names": {
-              "en": "unknown ability name -- 231343"
+              "en": "Fiend of Wind - Cyclone",
+              "tw": "風之混沌·龍捲",
+              "kr": "바람의 카오스·회오리",
+              "fr": "Démon du vent - Cyclone",
+              "de": "Dämon des Windes - Zyklon",
+              "es": "Demonio del viento - Ciclón"
             },
             "offset": 14,
             "castTime": 40
@@ -19068,13 +19164,23 @@
       {
         "id": 201000505,
         "names": {
-          "en": 201000505
+          "en": "Immortal Knight Garland",
+          "tw": "輪迴騎士加蘭德",
+          "kr": "윤회의 기사 가란드",
+          "fr": "Garland, chevalier immortel",
+          "de": "Ritter der Ewigkeit Garland",
+          "es": "Garland, caballero inmortal"
         },
         "abilities": [
           {
             "id": 231342,
             "names": {
-              "en": "unknown ability name -- 231342"
+              "en": "Fiend of Water - Tsunami",
+              "tw": "水之混沌·海嘯",
+              "kr": "물의 카오스·해일",
+              "fr": "Démon de l'eau - Tsunami",
+              "de": "Dämon des Wassers - Tsunami",
+              "es": "Demonio del agua - Tsunami"
             },
             "offset": 14,
             "castTime": 40
@@ -20059,13 +20165,23 @@
       {
         "id": 100023305,
         "names": {
-          "en": 100023305
+          "en": "White Lily Dark Fina",
+          "tw": "白百合魔人菲娜",
+          "kr": "백합꽃의 마인 피나",
+          "fr": "Fina obscure au lys blanc",
+          "de": "Weißlilien-Dunkelfina",
+          "es": "Fina oscura con lirio blanco"
         },
         "abilities": [
           {
             "id": 231213,
             "names": {
-              "en": "unknown ability name -- 231213"
+              "en": "Origin's Fire",
+              "tw": "原初之火",
+              "kr": "오리진 파이어",
+              "fr": "Feu d'origine",
+              "de": "Ursprungsfeuer",
+              "es": "Fuego de origen"
             },
             "offset": 14,
             "castTime": 50
@@ -20073,7 +20189,12 @@
           {
             "id": 231214,
             "names": {
-              "en": "unknown ability name -- 231214"
+              "en": "Origin's Stone",
+              "tw": "原初之石",
+              "kr": "오리진 스톤",
+              "fr": "Pierre d'origine",
+              "de": "Ursprungsstein",
+              "es": "Piedra de origen"
             },
             "offset": 14,
             "castTime": 50
@@ -20081,15 +20202,12 @@
           {
             "id": 231215,
             "names": {
-              "en": "unknown ability name -- 231215"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 231216,
-            "names": {
-              "en": "unknown ability name -- 231216"
+              "en": "Origin's Dark",
+              "tw": "原初之暗",
+              "kr": "오리진 다크",
+              "fr": "Ténèbres d'origine",
+              "de": "Ursprungsdunkel",
+              "es": "Oscuridad de origen"
             },
             "offset": 14,
             "castTime": 50
@@ -20097,31 +20215,12 @@
           {
             "id": 231217,
             "names": {
-              "en": "unknown ability name -- 231217"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 231222,
-            "names": {
-              "en": "unknown ability name -- 231222"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 231223,
-            "names": {
-              "en": "unknown ability name -- 231223"
-            },
-            "offset": 14,
-            "castTime": 50
-          },
-          {
-            "id": 231224,
-            "names": {
-              "en": "unknown ability name -- 231224"
+              "en": "Grim Wonder",
+              "tw": "冷酷神跡",
+              "kr": "잔혹한 기적",
+              "fr": "Émerveillement sombre",
+              "de": "Grimmiges Wunder",
+              "es": "Sorpresa sombría"
             },
             "offset": 14,
             "castTime": 50
@@ -21713,6 +21812,71 @@
     "family": "42-20-20-20-20-20-20-20",
     "units": [
       {
+        "id": 100023305,
+        "names": {
+          "en": "White Lily Dark Fina",
+          "tw": "白百合魔人菲娜",
+          "kr": "백합꽃의 마인 피나",
+          "fr": "Fina obscure au lys blanc",
+          "de": "Weißlilien-Dunkelfina",
+          "es": "Fina oscura con lirio blanco"
+        },
+        "abilities": [
+          {
+            "id": 231216,
+            "names": {
+              "en": "Doom Impact",
+              "tw": "毀滅衝擊",
+              "kr": "둠 임팩트",
+              "fr": "Impact négatif",
+              "de": "Verhängnisvoller Aufprall",
+              "es": "Impacto calamitoso"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231223,
+            "names": {
+              "en": "Brown Demise",
+              "tw": "深棕死亡",
+              "kr": "종말의 갈색빛",
+              "fr": "Trépas marron",
+              "de": "Brauner Untergang",
+              "es": "Perdición marrón"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231224,
+            "names": {
+              "en": "Black Demise",
+              "tw": "至黑死亡",
+              "kr": "종말의 검은빛",
+              "fr": "Trépas noir",
+              "de": "Schwarzer Untergang",
+              "es": "Perdición negra"
+            },
+            "offset": 14,
+            "castTime": 76
+          },
+          {
+            "id": 231222,
+            "names": {
+              "en": "Red Demise",
+              "tw": "赤紅死亡",
+              "kr": "종말의 붉은빛",
+              "fr": "Trépas rouge",
+              "de": "Roter Untergang",
+              "es": "Perdición roja"
+            },
+            "offset": 14,
+            "castTime": 76
+          }
+        ]
+      },
+      {
         "id": 206000103,
         "names": {
           "en": "Terra",
@@ -22310,13 +22474,23 @@
       {
         "id": 201000505,
         "names": {
-          "en": 201000505
+          "en": "Immortal Knight Garland",
+          "tw": "輪迴騎士加蘭德",
+          "kr": "윤회의 기사 가란드",
+          "fr": "Garland, chevalier immortel",
+          "de": "Ritter der Ewigkeit Garland",
+          "es": "Garland, caballero inmortal"
         },
         "abilities": [
           {
             "id": 231344,
             "names": {
-              "en": "unknown ability name -- 231344"
+              "en": "Fiend of Earth - Earthquake",
+              "tw": "土之混沌·地震",
+              "kr": "땅의 카오스·지진",
+              "fr": "Démon de la terre - Commotion",
+              "de": "Dämon der Erde - Erdbeben",
+              "es": "Demonio de la tierra - Terremoto"
             },
             "offset": 14,
             "castTime": 40

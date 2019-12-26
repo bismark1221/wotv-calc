@@ -84900,5 +84900,948 @@ export const UNITS: any[] = [
         ]
       }
     ]
+  },
+  {
+    "dataId": 100023305,
+    "names": {
+      "en": "White Lily Dark Fina",
+      "tw": "白百合魔人菲娜",
+      "kr": "백합꽃의 마인 피나",
+      "fr": "Fina obscure au lys blanc",
+      "de": "Weißlilien-Dunkelfina",
+      "es": "Fina oscura con lirio blanco"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 96,
+          "pot": 16
+        },
+        "mag": {
+          "base": 130,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 124,
+          "pot": 26
+        },
+        "mag": {
+          "base": 169,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 161,
+          "pot": 40
+        },
+        "mag": {
+          "base": 220,
+          "pot": 65
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 509955,
+        "names": {
+          "en": "Dystopia Reborn",
+          "tw": "新生敵托邦",
+          "kr": "신생 디스토피아",
+          "fr": "Renaissance contre-utopie",
+          "de": "Wiederkehrende Dystopie",
+          "es": "Renacimiento distópico"
+        },
+        "damage": "magic",
+        "base": 3500,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          250
+        ],
+        "unlockBy": {
+          "509954": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "509990": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 231207,
+        "names": {
+          "en": "Dysphoria",
+          "tw": "躁動",
+          "kr": "불쾌감",
+          "fr": "Dysphorie",
+          "de": "Unbehagen",
+          "es": "Disforia"
+        },
+        "damage": "magic",
+        "base": 380,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire",
+          "earth",
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          120
+        ]
+      },
+      {
+        "dataId": 20260,
+        "names": {
+          "en": "Bioga",
+          "tw": "劇毒化",
+          "kr": "바이오가",
+          "fr": "Toxine X",
+          "es": "Bio++"
+        },
+        "damage": "magic",
+        "base": 140,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "dataId": 231208,
+        "names": {
+          "en": "Power of the Earth Crystal",
+          "tw": "土之水晶之力",
+          "kr": "땅의 크리스탈의 힘",
+          "fr": "Pouvoir du cristal de la terre",
+          "de": "Macht des Erdkristalls",
+          "es": "Poder del Cristal de la Tierra"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 100,
+            "turn": 4
+          },
+          {
+            "stat": "spr",
+            "value": 100,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231213,
+        "names": {
+          "en": "Origin's Fire",
+          "tw": "原初之火",
+          "kr": "오리진 파이어",
+          "fr": "Feu d'origine",
+          "de": "Ursprungsfeuer",
+          "es": "Fuego de origen"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          80
+        ],
+        "castTime": 50,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 80,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          52,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 231214,
+        "names": {
+          "en": "Origin's Stone",
+          "tw": "原初之石",
+          "kr": "오리진 스톤",
+          "fr": "Pierre d'origine",
+          "de": "Ursprungsstein",
+          "es": "Piedra de origen"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          80
+        ],
+        "castTime": 50,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "earth",
+            "value": 80,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          52,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 231215,
+        "names": {
+          "en": "Origin's Dark",
+          "tw": "原初之暗",
+          "kr": "오리진 다크",
+          "fr": "Ténèbres d'origine",
+          "de": "Ursprungsdunkel",
+          "es": "Oscuridad de origen"
+        },
+        "damage": "magic",
+        "base": 350,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          80
+        ],
+        "castTime": 50,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 80,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          52,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 20290,
+        "names": {
+          "en": "Firaja",
+          "tw": "強火焰",
+          "kr": "파이자",
+          "fr": "Feu max",
+          "de": "Feuka",
+          "es": "Piro+++"
+        },
+        "damage": "magic",
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 5,
+          "value": 100
+        },
+        "framesList": [
+          210
+        ]
+      },
+      {
+        "dataId": 20340,
+        "names": {
+          "en": "Stonja",
+          "tw": "強落石",
+          "kr": "스톤쟈",
+          "fr": "Terre max",
+          "de": "Terraka",
+          "es": "Piedra+++"
+        },
+        "damage": "magic",
+        "base": 100,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 5,
+          "value": 100
+        },
+        "framesList": [
+          170
+        ]
+      },
+      {
+        "dataId": 20440,
+        "names": {
+          "en": "Ultima",
+          "tw": "究極",
+          "kr": "알테마",
+          "es": "Artema"
+        },
+        "damage": "magic",
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "black",
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 25,
+        "framesList": [
+          365
+        ]
+      },
+      {
+        "dataId": 231216,
+        "names": {
+          "en": "Doom Impact",
+          "tw": "毀滅衝擊",
+          "kr": "둠 임팩트",
+          "fr": "Impact négatif",
+          "de": "Verhängnisvoller Aufprall",
+          "es": "Impacto calamitoso"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          44
+        ],
+        "castTime": 76,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 231213,
+            "value": 100,
+            "turn": 4,
+            "uniqueIdentifier": 1221
+          },
+          {
+            "id": 231214,
+            "value": 100,
+            "turn": 4,
+            "uniqueIdentifier": 1221
+          },
+          {
+            "id": 231215,
+            "value": 100,
+            "turn": 4,
+            "uniqueIdentifier": 1221
+          },
+          {
+            "id": 231216,
+            "value": 100,
+            "turn": 4,
+            "uniqueIdentifier": 1221
+          },
+          {
+            "id": 231217,
+            "value": 100,
+            "turn": 4,
+            "uniqueIdentifier": 1221
+          },
+          {
+            "id": 231222,
+            "value": 400,
+            "turn": 4,
+            "uniqueIdentifier": 1222
+          },
+          {
+            "id": 231223,
+            "value": 400,
+            "turn": 4,
+            "uniqueIdentifier": 1222
+          },
+          {
+            "id": 231224,
+            "value": 400,
+            "turn": 4,
+            "uniqueIdentifier": 1222
+          }
+        ],
+        "framesList": [
+          42,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 231217,
+        "names": {
+          "en": "Grim Wonder",
+          "tw": "冷酷神跡",
+          "kr": "잔혹한 기적",
+          "fr": "Émerveillement sombre",
+          "de": "Grimmiges Wunder",
+          "es": "Sorpresa sombría"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          5,
+          5,
+          5,
+          5,
+          80
+        ],
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 7,
+          "value": 300
+        },
+        "framesList": [
+          52,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 231223,
+        "names": {
+          "en": "Brown Demise",
+          "tw": "深棕死亡",
+          "kr": "종말의 갈색빛",
+          "fr": "Trépas marron",
+          "de": "Brauner Untergang",
+          "es": "Perdición marrón"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          44
+        ],
+        "castTime": 76,
+        "elements": [
+          "earth"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 7,
+          "value": 250
+        },
+        "framesList": [
+          42,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 231224,
+        "names": {
+          "en": "Black Demise",
+          "tw": "至黑死亡",
+          "kr": "종말의 검은빛",
+          "fr": "Trépas noir",
+          "de": "Schwarzer Untergang",
+          "es": "Perdición negra"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          44
+        ],
+        "castTime": 76,
+        "elements": [
+          "dark"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 7,
+          "value": 250
+        },
+        "framesList": [
+          42,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 231222,
+        "names": {
+          "en": "Red Demise",
+          "tw": "赤紅死亡",
+          "kr": "종말의 붉은빛",
+          "fr": "Trépas rouge",
+          "de": "Roter Untergang",
+          "es": "Perdición roja"
+        },
+        "damage": "magic",
+        "base": 250,
+        "hitDamage": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          44
+        ],
+        "castTime": 76,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 7,
+          "value": 250
+        },
+        "framesList": [
+          42,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "dataId": 509952,
+        "names": {
+          "en": "End of Paradise",
+          "tw": "樂園終焉",
+          "kr": "낙원의 끝",
+          "fr": "Fin du paradis",
+          "de": "Am Ende des Paradieses",
+          "es": "Fin del paraíso"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "buff"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 120,
+            "turn": 5
+          },
+          {
+            "type": "earth",
+            "value": 120,
+            "turn": 5
+          },
+          {
+            "type": "dark",
+            "value": 120,
+            "turn": 5
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 231225
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 509954,
+        "names": {
+          "en": "Femme Fatale",
+          "tw": "魔性之女",
+          "kr": "팜므 파탈",
+          "fr": "Femme fatale"
+        },
+        "damage": "magic",
+        "base": 2400,
+        "hitDamage": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          10
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          80,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "cooldown": {
+          "unlock": 4,
+          "wait": 4,
+          "unlockId": 231226
+        }
+      },
+      {
+        "dataId": 100023307,
+        "names": {
+          "en": "Empress' Judgment",
+          "tw": "女皇裁決",
+          "kr": "여제의 심판",
+          "fr": "Jugement de l'Impératrice",
+          "de": "Urteil der Kaiserin",
+          "es": "Juicio de la emperatriz"
+        },
+        "damage": "magic",
+        "base": 2600,
+        "hitDamage": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          30
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 120,
+            "turn": 2
+          },
+          {
+            "type": "earth",
+            "value": 120,
+            "turn": 2
+          },
+          {
+            "type": "dark",
+            "value": 120,
+            "turn": 2
+          }
+        ],
+        "framesList": [
+          44,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          231207,
+          231208,
+          231213,
+          231214,
+          231215,
+          231216,
+          231217,
+          231222,
+          231223,
+          231224,
+          231225,
+          231226,
+          509955,
+          800081,
+          509990,
+          509952,
+          509954
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          231207,
+          231208,
+          231213,
+          231214,
+          231215,
+          231216,
+          231217,
+          231222,
+          231223,
+          231224,
+          231225,
+          231226,
+          509955,
+          800081,
+          509990,
+          509952,
+          509954
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          231207,
+          231208,
+          231213,
+          231214,
+          231215,
+          231216,
+          231217,
+          231222,
+          231223,
+          231224,
+          231225,
+          231226,
+          509955,
+          800081,
+          509990,
+          509952,
+          509954
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 231213,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231214,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231215,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231216,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231217,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231222,
+        "value": 300,
+        "rarity": 7
+      },
+      {
+        "id": 231223,
+        "value": 300,
+        "rarity": 7
+      },
+      {
+        "id": 231224,
+        "value": 300,
+        "rarity": 7
+      }
+    ]
   }
 ];
