@@ -85843,5 +85843,1167 @@ export const UNITS: any[] = [
         "rarity": 7
       }
     ]
+  },
+  {
+    "dataId": 201000505,
+    "names": {
+      "en": "Immortal Knight Garland",
+      "tw": "輪迴騎士加蘭德",
+      "kr": "윤회의 기사 가란드",
+      "fr": "Garland, chevalier immortel",
+      "de": "Ritter der Ewigkeit Garland",
+      "es": "Garland, caballero inmortal"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 121,
+          "pot": 24
+        },
+        "mag": {
+          "base": 83,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 158,
+          "pot": 34
+        },
+        "mag": {
+          "base": 109,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 65
+        },
+        "mag": {
+          "base": 142,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 510180,
+        "names": {
+          "en": "Chaos Regeneration",
+          "tw": "混沌再生",
+          "kr": "재생하는 혼돈",
+          "fr": "Régénération du chaos",
+          "de": "Chaos-Regeneration",
+          "es": "Regenaración caótica"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 510044,
+            "value": 100,
+            "turn": 3,
+            "uniqueIdentifier": 12120
+          },
+          {
+            "id": 510045,
+            "value": 200,
+            "turn": 3,
+            "uniqueIdentifier": 12121
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 4,
+          "unlockId": 800124
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 231344,
+        "names": {
+          "en": "Fiend of Earth - Earthquake",
+          "tw": "土之混沌·地震",
+          "kr": "땅의 카오스·지진",
+          "fr": "Démon de la terre - Commotion",
+          "de": "Dämon der Erde - Erdbeben",
+          "es": "Demonio de la tierra - Terremoto"
+        },
+        "base": 360,
+        "hitDamage": [
+          12, 13, 12, 13, 12, 13, 12, 13
+        ],
+        "castTime": 40,
+        "elements": [
+          "earth"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          160, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "dataId": 231341,
+        "names": {
+          "en": "Fiend of Fire - Blaze",
+          "tw": "火之混沌·烈焰",
+          "kr": "불의 카오스·불꽃",
+          "fr": "Démon du feu - Flammes",
+          "de": "Dämon der Flammen - Lohe",
+          "es": "Demonio del fuego - Llamarada"
+        },
+        "base": 360,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 231342,
+        "names": {
+          "en": "Fiend of Water - Tsunami",
+          "tw": "水之混沌·海嘯",
+          "kr": "물의 카오스·해일",
+          "fr": "Démon de l'eau - Tsunami",
+          "de": "Dämon des Wassers - Tsunami",
+          "es": "Demonio del agua - Tsunami"
+        },
+        "base": 360,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          133, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "dataId": 231343,
+        "names": {
+          "en": "Fiend of Wind - Cyclone",
+          "tw": "風之混沌·龍捲",
+          "kr": "바람의 카오스·회오리",
+          "fr": "Démon du vent - Cyclone",
+          "de": "Dämon des Windes - Zyklon",
+          "es": "Demonio del viento - Ciclón"
+        },
+        "base": 360,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "dataId": 231340,
+        "names": {
+          "en": "Dark Spiral+",
+          "tw": "黑暗旋渦改",
+          "kr": "개량형 다크 스파이럴",
+          "fr": "Spirale obscure+",
+          "de": "Dunkelspirale",
+          "es": "Espiral oscura+"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 21,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 75,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          130
+        ]
+      },
+      {
+        "dataId": 231346,
+        "names": {
+          "en": "Paralysis Chain",
+          "tw": "麻痹鎖鏈",
+          "kr": "마비의 체인",
+          "fr": "Chaîne paralysante",
+          "de": "Kettenlähmung",
+          "es": "Cadena parálisis"
+        },
+        "base": 300,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 94,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          96
+        ]
+      },
+      {
+        "dataId": 231345,
+        "names": {
+          "en": "Rumbling Darkness",
+          "tw": "黑暗鳴動",
+          "kr": "진동하는 어둠",
+          "fr": "Ténèbres grondantes",
+          "de": "Polternde Dunkelheit",
+          "es": "Oscuridad atronadora"
+        },
+        "base": 480,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "buff",
+          "imbue"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 100,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 231347,
+        "names": {
+          "en": "Thundaga",
+          "tw": "暴雷",
+          "kr": "선가",
+          "fr": "FoudreX",
+          "de": "Blitzga",
+          "es": "Electro++"
+        },
+        "base": 750,
+        "hitDamage": [
+          33.333333333333336, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          60, 40, 40
+        ]
+      },
+      {
+        "dataId": 231348,
+        "names": {
+          "en": "Flare",
+          "tw": "核爆",
+          "kr": "플레어",
+          "fr": "Atomnium",
+          "es": "Fulgor"
+        },
+        "base": 750,
+        "hitDamage": [
+          33.333333333333336, 33.333333333333336, 33.333333333333336
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          224, 8, 8
+        ]
+      },
+      {
+        "dataId": 231349,
+        "names": {
+          "en": "Chaos Impact",
+          "tw": "混沌衝擊",
+          "kr": "카오스 임팩트",
+          "fr": "Impact du chaos",
+          "de": "Chaoserschütterung",
+          "es": "Impacto caótico"
+        },
+        "base": 650,
+        "hitDamage": [
+          2.1538461538461537, 2.1538461538461537, 2.1538461538461537, 2.1538461538461537, 2.1538461538461537, 2.1538461538461537, 2.4615384615384617, 84.61538461538461
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 510042,
+        "names": {
+          "en": "Emergence of Chaos",
+          "tw": "混沌胎動",
+          "kr": "카오스의 태동",
+          "fr": "Émergence du chaos",
+          "de": "Chaos' Auftauchen",
+          "es": "Emersión caótica"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 5
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 231351
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510044,
+        "names": {
+          "en": "Revenge of Chaos",
+          "tw": "混沌復仇",
+          "kr": "리벤지 오브 카오스",
+          "fr": "Vengeance du chaos",
+          "de": "Chaos' Rache",
+          "es": "Venganza del caos"
+        },
+        "base": 600,
+        "hitDamage": [
+          2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.3333333333333335, 2.666666666666667, 83.33333333333331
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "cooldown": {
+          "unlock": 3,
+          "wait": 3,
+          "unlockId": 231353
+        }
+      },
+      {
+        "dataId": 510043,
+        "names": {
+          "en": "Chains of Rebirth",
+          "tw": "輪迴之鎖",
+          "kr": "윤회의 사슬",
+          "fr": "Chaînes de renaissance",
+          "de": "Ketten der Ewigkeit",
+          "es": "Cadenas del renacer"
+        },
+        "canDualSkill": false,
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 20,
+          "unlockId": 231352
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 201000507,
+        "names": {
+          "en": "True Soul of Chaos",
+          "tw": "真·混沌之靈",
+          "kr": "진·혼돈의 영혼",
+          "fr": "Véritable âme de Chaos",
+          "de": "Wahrer Chaosgeist",
+          "es": "Alma de caos verdadera"
+        },
+        "base": 2000,
+        "hitDamage": [
+          100
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "break",
+          "boostLB",
+          "damage"
+        ],
+        "boostLB": [
+          {
+            "value": 50,
+            "turn": 1
+          }
+        ],
+        "ignore": 50,
+        "framesList": [
+          300
+        ]
+      },
+      {
+        "dataId": 510045,
+        "names": {
+          "en": "Chaos Slicer",
+          "tw": "混沌切割",
+          "kr": "카오스 슬라이서",
+          "fr": "Trancheur du chaos",
+          "de": "Chaos-Schlitzer",
+          "es": "Rebanador caótico"
+        },
+        "base": 950,
+        "hitDamage": [
+          2.947368421052632, 2.947368421052632, 2.947368421052632, 2.947368421052632, 2.947368421052632, 2.947368421052632, 3.368421052631579, 78.94736842105263
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "201000507": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      }
+    ],
+    "passiveKillers": [
+      {
+        "race": "human",
+        "physic": 50,
+        "magic": 0,
+        "rarity": 5
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          231340,
+          231341,
+          231342,
+          231343,
+          231344,
+          231345,
+          231346,
+          231347,
+          231348,
+          231349,
+          231353,
+          510045,
+          800124,
+          510180,
+          510044
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          231340,
+          231341,
+          231342,
+          231343,
+          231344,
+          231345,
+          231346,
+          231347,
+          231348,
+          231349,
+          231353,
+          510045,
+          800124,
+          510180,
+          510044
+        ]
+      }
+    ],
+    "passiveLBDamage": [
+      {
+        "value": 50,
+        "rarity": 7
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 231340,
+        "value": 50,
+        "rarity": 7
+      },
+      {
+        "id": 231346,
+        "value": 50,
+        "rarity": 7
+      },
+      {
+        "id": 231347,
+        "value": 50,
+        "rarity": 7
+      },
+      {
+        "id": 231348,
+        "value": 50,
+        "rarity": 7
+      },
+      {
+        "id": 510044,
+        "value": 50,
+        "rarity": 7
+      },
+      {
+        "id": 231341,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231342,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231343,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231344,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231345,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 231349,
+        "value": 100,
+        "rarity": 7
+      },
+      {
+        "id": 510045,
+        "value": 100,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 201000405,
+    "names": {
+      "en": "Awakened Warrior of Light",
+      "tw": "覺醒光之戰士",
+      "kr": "워리어 오브 라이트",
+      "fr": "Guerrier de la Lumière éveillé",
+      "de": "Erweckter Krieger des Lichts",
+      "es": "Guerrero de la Luz despertado"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 99,
+          "pot": 16
+        },
+        "mag": {
+          "base": 89,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 129,
+          "pot": 26
+        },
+        "mag": {
+          "base": 116,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 168,
+          "pot": 40
+        },
+        "mag": {
+          "base": 151,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 800126,
+        "names": {
+          "en": "Guardian's Wall of Light",
+          "tw": "守護者的光壁",
+          "kr": "수호자의 광벽",
+          "fr": "Mur lumineux du gardien",
+          "de": "Lichtmauer des Wächters",
+          "es": "Muro de luz del guardián"
+        },
+        "base": 380,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 231318,
+        "names": {
+          "en": "Vanguard Glaive",
+          "tw": "葬送先鋒",
+          "kr": "뱅가드 글레이브",
+          "fr": "Glaive d'avant-garde",
+          "de": "Gleve der Vorhut",
+          "es": "Guja de vanguardia"
+        },
+        "base": 300,
+        "hitDamage": [
+          25, 25, 16.5, 16.5, 17
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          22, 13, 31, 24, 47
+        ]
+      },
+      {
+        "dataId": 231311,
+        "names": {
+          "en": "Buckler Blow",
+          "tw": "盾牌衝擊",
+          "kr": "버클러 블로우",
+          "fr": "Coup de pavois",
+          "de": "Bucklerstoß",
+          "es": "Impacto escudo"
+        },
+        "base": 450,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "dataId": 510021,
+        "names": {
+          "en": "Guard Strike",
+          "tw": "防禦強擊",
+          "kr": "가드 스트라이크",
+          "fr": "Frappe défensive",
+          "de": "Abwehrstreich",
+          "es": "Golpe defensivo"
+        },
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "dataId": 510022,
+        "names": {
+          "en": "Sequent Strike",
+          "tw": "連續衝擊",
+          "kr": "시퀸트 스트라이크",
+          "fr": "Frappe successive",
+          "de": "Folgestreich",
+          "es": "Golpe secuencial"
+        },
+        "base": 320,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          2
+        ],
+        "unlockBy": {
+          "231318": {
+            "turns": 1,
+            "nbUse": 1,
+            "insteadOf": 510021
+          }
+        }
+      },
+      {
+        "dataId": 231310,
+        "names": {
+          "en": "Sacred Wave",
+          "tw": "神聖浪潮",
+          "kr": "세이크리드 웨이브",
+          "fr": "Onde sacrée",
+          "de": "Heilige Welle",
+          "es": "Ola sagrada"
+        },
+        "base": 360,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 231316,
+        "names": {
+          "en": "Deterrent Sword",
+          "tw": "抑止劍",
+          "kr": "억제의 검",
+          "fr": "Épée de dissuasion",
+          "de": "Abschreckendes Schwert",
+          "es": "Espada disuasoria"
+        },
+        "base": 150,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 135,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 60,
+            "turn": 4
+          },
+          {
+            "stat": "mag",
+            "value": 60,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          22, 13, 31, 24, 47
+        ]
+      },
+      {
+        "dataId": 510023,
+        "names": {
+          "en": "Protective Blade",
+          "tw": "戰士守護劍",
+          "kr": "전사의 수호검",
+          "fr": "Lame de protection",
+          "de": "Schützende Klinge",
+          "es": "Espada del guerrero"
+        },
+        "base": 520,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 510024,
+        "names": {
+          "en": "Blade of Bonds",
+          "tw": "維繫羈絆的守護之劍",
+          "kr": "인연을 잇는 수호검",
+          "fr": "Lame des liens",
+          "de": "Klinge der Bande",
+          "es": "Espada de los vínculos"
+        },
+        "base": 520,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "unlockBy": {
+          "510022": {
+            "turns": 1,
+            "nbUse": 1,
+            "insteadOf": 510023
+          }
+        }
+      },
+      {
+        "dataId": 510027,
+        "names": {
+          "en": "None can extinguish the light within us!",
+          "tw": "我們的光芒不會消散",
+          "kr": "우리의 빛을 꺼뜨리진 못해!",
+          "fr": "Personne ne peut étouffer la lumière en nous.",
+          "de": "Niemand kann das Licht in uns erlöschen!",
+          "es": "¡Nadie puede apagar nuestra luz!"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 4
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 4
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 231323
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510029,
+        "names": {
+          "en": "Holy Bravery",
+          "tw": "勇氣神聖",
+          "kr": "브레이브 홀리",
+          "fr": "Courage sacré",
+          "de": "Sanctus des Mutes",
+          "es": "Valor sagrado"
+        },
+        "base": 3000,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "damage"
+        ],
+        "imperils": [
+          {
+            "type": "light",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ],
+        "cooldown": {
+          "unlock": 4,
+          "wait": 4,
+          "unlockId": 231325
+        }
+      },
+      {
+        "dataId": 510026,
+        "names": {
+          "en": "Invincible Shield",
+          "tw": "無敵護盾",
+          "kr": "인빈시블 실드",
+          "fr": "Bouclier invincible",
+          "de": "Unzerstörbarer Schild",
+          "es": "Escudo invencible"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 10,
+          "unlockId": 231322
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 201000407,
+        "names": {
+          "en": "Crystal Braver",
+          "tw": "水晶勇者",
+          "kr": "크리스탈 브레이버",
+          "fr": "Bravoure de cristal",
+          "de": "Mut des Kristalls",
+          "es": "Bravura de cristal"
+        },
+        "base": 2350,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 10, 20
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "break",
+          "buff",
+          "damage"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 250,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          10, 4, 4, 4, 5, 5, 5, 5, 3
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 10170,
+        "value": 200,
+        "rarity": 5
+      },
+      {
+        "id": 10210,
+        "value": 200,
+        "rarity": 5
+      },
+      {
+        "id": 10290,
+        "value": 200,
+        "rarity": 5
+      }
+    ],
+    "passiveKillers": [
+      {
+        "race": "spirit",
+        "physic": 50,
+        "magic": 0,
+        "rarity": 5
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          231310,
+          231311,
+          231316,
+          231317,
+          231318,
+          510021,
+          510022,
+          510023,
+          510024,
+          800126
+        ]
+      }
+    ]
   }
 ];
