@@ -8208,6 +8208,23 @@ export const UNITS: any[] = [
         base: 30000,
         damage: "magic",
         dualable: false
+      },
+      {
+        "dataId": 11502,
+        "names": {
+          "en": "Megaflare (2)",
+          "tw": "百萬核爆 (2)",
+          "kr": "메가플레어 (2)",
+          "fr": "MégaBrasier (2)",
+          "de": "Megaflamme (2)",
+          "es": "Megafulgor (2)"
+        },
+        "dualable": false,
+        "damage": "magic",
+        "base": 250000,
+        "framesList": [
+          210
+        ]
       }
     ]
   },
@@ -12421,6 +12438,119 @@ export const UNITS: any[] = [
         ]
       },
       {
+        "dataId": 950210,
+        "names": {
+          "en": "Desire to Protect II",
+          "tw": "渴望守護II",
+          "kr": "수호의 의지 II",
+          "fr": "Élan protecteur II",
+          "de": "Schutzdrang II",
+          "es": "Afán protector II"
+        },
+        "canDualSkill": false,
+        "castTime": 41,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 910076,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950205
+          },
+          {
+            "id": 910922,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950205
+          },
+          {
+            "id": 910923,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950205
+          },
+          {
+            "id": 912018,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950205
+          },
+          {
+            "id": 912017,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950205
+          },
+          {
+            "id": 950211,
+            "value": 1200,
+            "turn": 5,
+            "uniqueIdentifier": 950207
+          },
+          {
+            "id": 950212,
+            "value": 1200,
+            "turn": 5,
+            "uniqueIdentifier": 950207
+          },
+          {
+            "id": 950213,
+            "value": 1200,
+            "turn": 5,
+            "uniqueIdentifier": 950207
+          },
+          {
+            "id": 912023,
+            "value": 1800,
+            "turn": 5,
+            "uniqueIdentifier": 950209
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 950209
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 950213,
+        "names": {
+          "en": "Frenzied Strikes II",
+          "tw": "狂暴猛擊II",
+          "kr": "맹타격 II",
+          "fr": "Coups déchaînés II",
+          "de": "Frenetische Schläge II",
+          "es": "Golpes frenéticos II"
+        },
+        "base": 2000,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
         "id": 302000907,
         "names": {
           "en": "Golden Talisman",
@@ -12754,6 +12884,46 @@ export const UNITS: any[] = [
         "ignore": 50,
         "framesList": [
           15, 36
+        ]
+      },
+      {
+        "dataId": 950227,
+        "names": {
+          "en": "Precise Aim II",
+          "tw": "精準鎖定II",
+          "kr": "정밀 조준 II",
+          "fr": "Œil vif II",
+          "de": "Präzises Zielen II",
+          "es": "Puntería certera II"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostLB"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 3
+          }
+        ],
+        "boostLB": [
+          {
+            "value": 200,
+            "turn": 2
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 950226
+        },
+        "framesList": [
+          0
         ]
       },
       {
@@ -34970,6 +35140,214 @@ export const UNITS: any[] = [
         "offset": 14,
         "framesList": [
           70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913821,
+        "names": {
+          "en": "White Tiger - Shattering Fist + 2",
+          "tw": "白虎式 - 破碎拳 + 2",
+          "kr": "백호술·파쇄권 + 2",
+          "fr": "Tigre blanc - Poing fracassant + 2",
+          "de": "Weißer Tiger - Zerschmetternde Faust + 2",
+          "es": "Tigre blanco - Puño aplastante + 2"
+        },
+        "base": 1470,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break",
+          "buff"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913823,
+        "names": {
+          "en": "Blood Phoenix - Defensive Stance + 2",
+          "tw": "朱雀式 - 防禦法 + 2",
+          "kr": "주작술·방어법 + 2",
+          "fr": "Phénix de sang - Posture défensive + 2",
+          "de": "Blutroter Phönix - Verteidigungsstand + 2",
+          "es": "Fénix escarlata - Postura de defensa + 2"
+        },
+        "damage": "magic",
+        "base": 1870,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break",
+          "buff"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913827,
+        "names": {
+          "en": "Special Arts - Saint's Boost + 2",
+          "tw": "特別式 - 聖人後援 + 2",
+          "kr": "특별술·성인의 후원 + 2",
+          "fr": "Arcane spécial - Élévation du saint + 2",
+          "de": "Spezialkünste - Schub des Heiligen + 2",
+          "es": "Artes especiales - Estímulo santo + 2"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 912060,
+            "value": 150,
+            "turn": 5,
+            "uniqueIdentifier": 912065
+          },
+          {
+            "id": 912071,
+            "value": 150,
+            "turn": 5,
+            "uniqueIdentifier": 912065
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 913825
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 950260,
+        "names": {
+          "en": "Tiger & Phoenix Stance II",
+          "tw": "虎鳳之形II",
+          "kr": "호작의 자세 II",
+          "fr": "Posture du tigre et du phénix II",
+          "de": "Tiger-und-Phönix-Stellung II",
+          "es": "Postura del tigre y el fénix II"
+        },
+        "canDualSkill": false,
+        "castTime": 120,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 912047,
+            "value": 300,
+            "turn": 5,
+            "uniqueIdentifier": 950260
+          },
+          {
+            "id": 912050,
+            "value": 300,
+            "turn": 5,
+            "uniqueIdentifier": 950260
+          },
+          {
+            "id": 913820,
+            "value": 300,
+            "turn": 5,
+            "uniqueIdentifier": 950260
+          },
+          {
+            "id": 913821,
+            "value": 300,
+            "turn": 5,
+            "uniqueIdentifier": 950260
+          },
+          {
+            "id": 912048,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950258
+          },
+          {
+            "id": 912051,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950258
+          },
+          {
+            "id": 913822,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950258
+          },
+          {
+            "id": 913823,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 950258
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 950259
+        },
+        "framesList": [
+          0
         ]
       },
       {
@@ -87003,6 +87381,5101 @@ export const UNITS: any[] = [
           510024,
           800126
         ]
+      }
+    ]
+  },
+  {
+    "dataId": 215000805,
+    "names": {
+      "en": "Ardyn",
+      "tw": "亞丹",
+      "kr": "아덴"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 121,
+          "pot": 24
+        },
+        "mag": {
+          "base": 94,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 158,
+          "pot": 34
+        },
+        "mag": {
+          "base": 123,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 206,
+          "pot": 65
+        },
+        "mag": {
+          "base": 161,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 211760,
+        "names": {
+          "en": "Warp Strike",
+          "tw": "變移破解",
+          "kr": "시프트 브레이크",
+          "fr": "Assaut éclipse",
+          "de": "Warp-Angriff",
+          "es": "Lux Impetus"
+        },
+        "base": 250,
+        "hitDamage": [100],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 45,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 45,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          40
+        ]
+      },
+      {
+        "dataId": 800177,
+        "names": {
+          "en": "Red Armiger",
+          "tw": "赤紅・幻影劍",
+          "kr": "레드 팬텀 소드",
+          "fr": "Arsenal fantôme rouge",
+          "de": "Rote Königswaffen",
+          "es": "Coro espectral rojo"
+        },
+        "base": 3150,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 232054,
+            "value": 250,
+            "turn": 3,
+            "uniqueIdentifier": 111036
+          },
+          {
+            "id": 232060,
+            "value": 350,
+            "turn": 3,
+            "uniqueIdentifier": 111037
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232040,
+        "names": {
+          "en": "Dark Tornado",
+          "tw": "黑暗龍捲",
+          "kr": "다크 토네이도",
+          "fr": "Tornade nébuleuse",
+          "de": "Dunkler Tornado",
+          "es": "Tornado turbio"
+        },
+        "base": 280,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "dark",
+            "value": 80,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          80, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+        ]
+      },
+      {
+        "dataId": 232041,
+        "names": {
+          "en": "Ifrit: Firaga",
+          "tw": "伊弗利特：大火焰",
+          "kr": "이프리트: 파이가",
+          "fr": "Ifrit : Feu X",
+          "de": "Ifrit: Feuga",
+          "es": "Ifrit: Piro++"
+        },
+        "base": 280,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 80,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "dataId": 232042,
+        "names": {
+          "en": "Cerberus-0",
+          "tw": "地獄三頭犬：試作品",
+          "kr": "케르베로스: 프로토타입",
+          "de": "Kerberos-Prototyp",
+          "es": "Cerbero Cero"
+        },
+        "base": 250,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232043,
+        "names": {
+          "en": "Element Firaga",
+          "tw": "大火焰元素",
+          "kr": "엘리먼트 파이가",
+          "fr": "Élément : Feu X",
+          "de": "Element Feuga",
+          "es": "Elemento Piro++"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "dataId": 232044,
+        "names": {
+          "en": "Element Thundaga",
+          "tw": "大雷電元素",
+          "kr": "엘리먼트 선더가",
+          "fr": "Élément : Foudre X",
+          "de": "Element Blitzga",
+          "es": "Elemento Electro++"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "lightning"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "dataId": 232045,
+        "names": {
+          "en": "Element Blizzaga",
+          "tw": "大暴雪元素",
+          "kr": "엘리먼트 블리자가",
+          "fr": "Élément : Glace X",
+          "de": "Element Eisga",
+          "es": "Elemento Hielo++"
+        },
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          150
+        ]
+      },
+      {
+        "dataId": 510345,
+        "names": {
+          "en": "Daemonification - Physical",
+          "tw": "屍骸化・攻防",
+          "kr": "시해화·공방",
+          "fr": "Dæmonification - Physique",
+          "de": "Mutationsangriff - Physisch",
+          "es": "Cadentamiento - Físico"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 74,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 74,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510347,
+        "names": {
+          "en": "Daemonification - Magic",
+          "tw": "屍骸化・魔精",
+          "kr": "시해화·마정",
+          "fr": "Dæmonification - Magique",
+          "de": "Mutationsangriff - Magisch",
+          "es": "Cadentamiento - Mágico"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 74,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 74,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232052,
+        "names": {
+          "en": "Ifrit: Meteor Strike",
+          "tw": "伊弗利特：隕石撞擊",
+          "kr": "이프리트: 메테오 스트라이크",
+          "fr": "Ifrit : frappe de météore",
+          "de": "Ifrit: Meteorit",
+          "es": "Ifrit: Meteorito ardiente"
+        },
+        "base": 325,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "ignore": 50,
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232053,
+        "names": {
+          "en": "Adagium Pulse",
+          "tw": "阿達吉烏姆的波動",
+          "kr": "아다기움의 파동",
+          "fr": "Onde de l'Adagium",
+          "de": "Puls des Adagiums",
+          "es": "Onda del Adagium"
+        },
+        "base": 325,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "ignore": 50,
+        "imbues": [
+          {
+            "element": "dark",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232054,
+        "names": {
+          "en": "Rakshasa Blade",
+          "tw": "羅剎之劍",
+          "kr": "나찰의 검",
+          "fr": "Lame de Rakshasa",
+          "de": "Rakshasa",
+          "es": "Ráksasa"
+        },
+        "base": 2700,
+        "hitDamage": [
+          2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 2.666666666666667, 3.333333333333334
+        ],
+        "castTime": 240,
+        "offset": 84,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          72, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5, 29, 5, 5, 5, 5, 5
+        ]
+      },
+      {
+        "dataId": 232060,
+        "names": {
+          "en": "Warp-Strike: Pain",
+          "tw": "位移破擊・痛苦",
+          "kr": "시프트 브레이크·페인",
+          "fr": "Assaut éclipse : douleur",
+          "de": "Warp-Angriff: Schmerz",
+          "es": "Lux Impetus: Dolor"
+        },
+        "base": 3150,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232063,
+        "names": {
+          "en": "Spectral Charge",
+          "tw": "幻影齒輪蓄力",
+          "kr": "팬덤 기어 차지",
+          "fr": "Recharge fantôme",
+          "de": "Spektral-Ladung",
+          "es": "Carga espectral"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 232054,
+            "value": 450,
+            "turn": 5,
+            "uniqueIdentifier": 111034
+          },
+          {
+            "id": 232060,
+            "value": 750,
+            "turn": 5,
+            "uniqueIdentifier": 111035
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510357,
+        "names": {
+          "en": "Overkill",
+          "tw": "凌駕死亡",
+          "kr": "오버 데스",
+          "fr": "Agonie",
+          "de": "Todeskampf",
+          "es": "Ira"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 250,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 250,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 8,
+          "unlockId": 232064
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510355,
+        "names": {
+          "en": "Flames of Rage",
+          "tw": "憤怒之炎",
+          "kr": "분노의 화염",
+          "fr": "Fureur des flammes",
+          "de": "Höllenfeuer",
+          "es": "Llamas de la furia"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "imperil"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100,
+            "turn": 3
+          },
+          {
+            "type": "dark",
+            "value": 120,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 232061
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510351,
+        "names": {
+          "en": "Rising Phantom - Physical",
+          "tw": "幻影提升・攻防",
+          "kr": "팬텀 라이즈·공방",
+          "fr": "Annihilation - Physique",
+          "de": "Phantomaufstieg - Physisch",
+          "es": "Alzada espectral - Físico"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 74,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 74,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510353,
+        "names": {
+          "en": "Rising Phantom - Magic",
+          "tw": "幻影提升・魔精",
+          "kr": "팬텀 라이즈·마정",
+          "fr": "Annihilation - Magique",
+          "de": "Phantomaufstieg - Magisch",
+          "es": "Alzada espectral - Mágico"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 74,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 74,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 215000807,
+        "names": {
+          "en": "Royal Retribution",
+          "tw": "幻影・誤導",
+          "kr": "팬텀 디스트럭션",
+          "fr": "Rétribution royale",
+          "de": "Spektralschatten",
+          "es": "Edicto espectral"
+        },
+        "base": 1800,
+        "hitDamage": [
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 20, 20, 33
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "ignore": 50,
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100,
+            "turn": 3
+          },
+          {
+            "type": "dark",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          53, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 232041,
+        "value": 200,
+        "rarity": 6
+      },
+      {
+        "id": 232052,
+        "value": 200,
+        "rarity": 6
+      },
+      {
+        "id": 232060,
+        "value": 200,
+        "rarity": 7
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          211760,
+          232040,
+          232041,
+          232042,
+          232052,
+          232053,
+          232054,
+          232060,
+          232061,
+          232062,
+          232063,
+          232064,
+          501620,
+          510342,
+          510343,
+          510348,
+          510349,
+          800177,
+          510357,
+          510355,
+          510356
+        ]
+      }
+    ],
+    "maxChainCap": 6
+  },
+  {
+    "dataId": 215002705,
+    "names": {
+      "en": "Regis",
+      "tw": "雷吉斯",
+      "kr": "레기스"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 80,
+          "pot": 20
+        },
+        "mag": {
+          "base": 115,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 105,
+          "pot": 30
+        },
+        "mag": {
+          "base": 150,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 137,
+          "pot": 50
+        },
+        "mag": {
+          "base": 195,
+          "pot": 50
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 232072,
+        "names": {
+          "en": "Revival Attack",
+          "tw": "攻擊復甦",
+          "kr": "어택 리바이브",
+          "fr": "Offensive curative",
+          "de": "Angriffskur",
+          "es": "Resurgimiento ofensivo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232073,
+        "names": {
+          "en": "Revival Defense",
+          "tw": "防禦復甦",
+          "kr": "디펜스 리바이브",
+          "fr": "Défense revigorante",
+          "de": "Abwehrkur",
+          "es": "Resurgimiento defensivo"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232078,
+        "names": {
+          "en": "Bonds of Battle",
+          "tw": "戰鬥之絆",
+          "kr": "본드 오브 배틀",
+          "fr": "Liens des guerriers",
+          "de": "Kampfbindung",
+          "es": "Camaradería"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510360,
+        "names": {
+          "en": "Light Glaive",
+          "tw": "微光闊劍",
+          "kr": "라이트 글레이브",
+          "fr": "Glaive de lumière",
+          "de": "Lichtgleve",
+          "es": "Glaives de luz"
+        },
+        "base": 50,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "unlockBy": {
+          "232078": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 232079,
+        "names": {
+          "en": "Majestic Wall",
+          "tw": "磅礡之壁",
+          "kr": "마제스티 월",
+          "fr": "Rempart majestueux",
+          "de": "Majestätischer Wall",
+          "es": "Muro mayestático"
+        },
+        "base": 210,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 510363,
+        "names": {
+          "en": "Clarus' Support",
+          "tw": "克拉魯斯的援護",
+          "kr": "클라루스의 엄호",
+          "fr": "Soutien de Clarus",
+          "de": "Clarus' Unterstützung",
+          "es": "Apoyo de Clarus"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 232085
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510364,
+        "names": {
+          "en": "Lucent Glaive",
+          "tw": "光明闊劍",
+          "kr": "루센트 글레이브",
+          "fr": "Glaive lumineux",
+          "de": "Gleißgleve",
+          "es": "Glaives luminosos"
+        },
+        "base": 50,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "unlockBy": {
+          "510363": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 232083,
+        "names": {
+          "en": "Ring of the Lucii [Regis]",
+          "tw": "光輝之戒【雷吉斯】",
+          "kr": "광요의 반지[레기스]",
+          "fr": "Anneau des Lucii [Regis]",
+          "de": "Ring der Lucis [Regis]",
+          "es": "Sello de la Luz (Regis)"
+        },
+        "base": 350,
+        "hitDamage": [
+          3.142857142857143, 3.142857142857143, 3.142857142857143, 3.142857142857143, 3.142857142857143, 3.142857142857143, 3.142857142857143, 3.142857142857143, 3.428571428571429, 71.42857142857143
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 510366,
+        "names": {
+          "en": "The Power of Kings",
+          "tw": "歷代王之力",
+          "kr": "역대 왕의 힘",
+          "fr": "Le pouvoir des rois",
+          "de": "Kraft der Könige",
+          "es": "Los reyes de antaño"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "demon",
+            "physic": 75,
+            "magic": 0,
+            "turn": 4
+          },
+          {
+            "race": "human",
+            "physic": 75,
+            "magic": 0,
+            "turn": 4
+          },
+          {
+            "race": "undead",
+            "physic": 75,
+            "magic": 0,
+            "turn": 4
+          },
+          {
+            "race": "spirit",
+            "physic": 75,
+            "magic": 0,
+            "turn": 4
+          },
+          {
+            "race": "demon",
+            "physic": 0,
+            "magic": 75,
+            "turn": 4
+          },
+          {
+            "race": "human",
+            "physic": 0,
+            "magic": 75,
+            "turn": 4
+          },
+          {
+            "race": "undead",
+            "physic": 0,
+            "magic": 75,
+            "turn": 4
+          },
+          {
+            "race": "spirit",
+            "physic": 0,
+            "magic": 75,
+            "turn": 4
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 232087
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 215002707,
+        "names": {
+          "en": "Regis' Armiger",
+          "tw": "雷吉斯・幻影劍",
+          "kr": "레기스·팬텀 소드",
+          "fr": "Arsenal fantôme de Regis",
+          "de": "Regis' Königswaffen",
+          "es": "Coro espectral de Regis"
+        },
+        "base": 2100,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          76, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          232070,
+          232071,
+          232072,
+          232073,
+          232076,
+          232077,
+          232078,
+          232079,
+          232083,
+          232085,
+          232086,
+          232087,
+          510360,
+          510364,
+          800179,
+          510363,
+          510365,
+          510366
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 401008705,
+    "names": {
+      "en": "Emperor Foo",
+      "tw": "帝王符",
+      "kr": "푸 황제",
+      "fr": "Empereur Foo",
+      "de": "Kaiser Fu",
+      "es": "Emperador Fu"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 51,
+          "pot": 20
+        },
+        "mag": {
+          "base": 128,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 67,
+          "pot": 30
+        },
+        "mag": {
+          "base": 167,
+          "pot": 30
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 88,
+          "pot": 50
+        },
+        "mag": {
+          "base": 218,
+          "pot": 50
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 913646,
+        "names": {
+          "en": "Strategy - Advanced Square Formation",
+          "tw": "兵法 - 方陣.改",
+          "kr": "병법·개량형 사방진",
+          "fr": "Stratégie - Formation cubique avancée",
+          "de": "Strategie - Erweiterte Quadratformation",
+          "es": "Estrategia - Formación cuadrilátera avanzada"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 180,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "913627": {
+            "turns": 1,
+            "nbUse": 1,
+            "insteadOf": 913645
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913645,
+        "names": {
+          "en": "Strategy - Square Formation",
+          "tw": "兵法 - 方陣",
+          "kr": "병법·사방진",
+          "fr": "Stratégie - Formation cubique",
+          "de": "Strategie - Quadratformation",
+          "es": "Estrategia - Formación cuadrilátera"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913649,
+        "names": {
+          "en": "Strategy - Advanced Wedge Formation",
+          "tw": "兵法 - 楔形陣.改",
+          "kr": "병법·개량형 설형진",
+          "fr": "Stratégie - Formation en coin avancée",
+          "de": "Strategie - Erweiterte Keilformation",
+          "es": "Estrategia - Formación en cuña avanzada"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 180,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "913627": {
+            "turns": 1,
+            "nbUse": 1,
+            "insteadOf": 913648
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913648,
+        "names": {
+          "en": "Strategy - Wedge Formation",
+          "tw": "兵法 - 楔形陣",
+          "kr": "병법·설형진",
+          "fr": "Stratégie - Formation en coin",
+          "de": "Strategie - Keilformation",
+          "es": "Estrategia - Formación en cuña"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913638,
+        "names": {
+          "en": "Summons - Qilin Rage",
+          "tw": "召集 - 麒麟之怒",
+          "kr": "소환·기린의 분노",
+          "fr": "Invocations - Rage du Qilin",
+          "de": "Herbeirufen - Qilin-Rage",
+          "es": "Invocación - Ira de Qilin"
+        },
+        "damage": "magic",
+        "base": 440,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 44
+        ],
+        "castTime": 76,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 913652,
+        "names": {
+          "en": "Strategy - Advanced Hook Formation",
+          "tw": "兵法 - 鉤形陣.改",
+          "kr": "병법·개량형 구형진",
+          "fr": "Stratégie - Formation en hameçon avancée",
+          "de": "Strategie - Erweiterte Hakenformation",
+          "es": "Estrategia - Formación en garfio avanzada"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 180,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "913627": {
+            "turns": 1,
+            "nbUse": 1,
+            "insteadOf": 913651
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913651,
+        "names": {
+          "en": "Strategy - Hook Formation",
+          "tw": "兵法 - 鉤形陣",
+          "kr": "병법·구형진",
+          "fr": "Stratégie - Formation en hameçon",
+          "de": "Strategie - Hakenformation",
+          "es": "Estrategia - Formación en garfio"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 60,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913655,
+        "names": {
+          "en": "Strategy - Advanced Circle Formation",
+          "tw": "兵法 - 圓陣.改",
+          "kr": "병법·개량형 회형진",
+          "fr": "Stratégie - Formation en cercle avancée",
+          "de": "Strategie - Erweiterte Kreisformation",
+          "es": "Estrategia - Formación circular avanzada"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 180,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "913627": {
+            "turns": 1,
+            "nbUse": 1,
+            "insteadOf": 913654
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913654,
+        "names": {
+          "en": "Strategy - Circle Formation",
+          "tw": "兵法 - 圓陣",
+          "kr": "병법·회형진",
+          "fr": "Stratégie - Formation en cercle",
+          "de": "Strategie - Kreisformation",
+          "es": "Estrategia - Formación circular"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "break"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 5
+          }
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 60,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913659,
+        "names": {
+          "en": "Strategy - War Cry",
+          "tw": "兵法 - 戰吼",
+          "kr": "병법·전장의 함성",
+          "fr": "Stratégie - Cri de guerre",
+          "de": "Strategie - Kampfschrei",
+          "es": "Estrategia - Grito de guerra"
+        },
+        "castTime": 50,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "beast",
+            "physic": 30,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "human",
+            "physic": 30,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "beast",
+            "physic": 0,
+            "magic": 30,
+            "turn": 3
+          },
+          {
+            "race": "human",
+            "physic": 0,
+            "magic": 30,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913656,
+        "names": {
+          "en": "Strategy - Snake Formation",
+          "tw": "兵法 - 錐形陣",
+          "kr": "병법·독사형진",
+          "fr": "Stratégie - Formation en serpent",
+          "de": "Strategie - Schlangenformation",
+          "es": "Estrategia - Formación serpiente"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913657,
+        "names": {
+          "en": "Strategy - Arrow Formation",
+          "tw": "兵法 - 箭尖陣",
+          "kr": "병법·시형진",
+          "fr": "Stratégie - Formation en flèche",
+          "de": "Strategie - Pfeilformation",
+          "es": "Estrategia - Formación flecha"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 150,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913658,
+        "names": {
+          "en": "Strategy - Five Fold Formation",
+          "tw": "兵法 - 五陣",
+          "kr": "병법·오중방진",
+          "fr": "Stratégie - Formation quintuple",
+          "de": "Strategie - Fünffach-Formation",
+          "es": "Estrategia - Formación quíntuple"
+        },
+        "castTime": 1,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 65,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913639,
+        "names": {
+          "en": "Summons - Qilin Fury",
+          "tw": "召集 - 麒麟激憤",
+          "kr": "소환·기린의 격노",
+          "fr": "Invocations - Fureur du Qilin",
+          "de": "Herbeirufen - Qilin-Zorn",
+          "es": "Invocación - Furia de Qilin"
+        },
+        "damage": "magic",
+        "base": 880,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 70,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913636,
+        "names": {
+          "en": "Summons - Loyal Guardians",
+          "tw": "召集 - 忠誠侍衛",
+          "kr": "소환·친위대",
+          "fr": "Invocations - Gardiens loyaux",
+          "de": "Herbeirufen - Treue Wächter",
+          "es": "Invocación - Guardias leales"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          100
+        ],
+        "canDualSkill": false,
+        "castTime": 1,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          150
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 3,
+          "unlockId": 913635
+        }
+      },
+      {
+        "dataId": 913637,
+        "names": {
+          "en": "Summons - Qilin Execution",
+          "tw": "召集 - 麒麟誅罰",
+          "kr": "소환·기린의 징벌",
+          "fr": "Invocations - Exécution du Qilin",
+          "de": "Herbeirufen - Qilin-Exekution",
+          "es": "Invocación - Sentencia de Qilin"
+        },
+        "damage": "magic",
+        "base": 2050,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 1,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          50
+        ],
+        "unlockBy": {
+          "913628": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 401008707,
+        "names": {
+          "en": "Borrowing the East Wind",
+          "tw": "借東風",
+          "kr": "동풍을 타고",
+          "fr": "S'approprier le vent d'Est",
+          "de": "Den Ostwind im Rücken",
+          "es": "Conquista del viento del este"
+        },
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 200,
+            "turn": 5
+          },
+          {
+            "stat": "def",
+            "value": 200,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 200,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          913645,
+          913646,
+          913648,
+          913649,
+          913651,
+          913652,
+          913654,
+          913655,
+          913656,
+          913657,
+          913658,
+          913659,
+          913627,
+          913629,
+          913631,
+          913635,
+          913637,
+          913638,
+          913639,
+          913640,
+          913641,
+          913642,
+          913643,
+          913630,
+          913632,
+          913636,
+          913628
+        ]
+      },
+      {
+        "count": 3,
+        "abilities": [
+          913645,
+          913646,
+          913648,
+          913649,
+          913651,
+          913652,
+          913654,
+          913655,
+          913656,
+          913657,
+          913658,
+          913659,
+          913627,
+          913629,
+          913631,
+          913630,
+          913632,
+          913628
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 401008805,
+    "names": {
+      "en": "Xuan Wu & Qing Long",
+      "tw": "玄武&青龍",
+      "kr": "현무와 청룡",
+      "fr": "Xuan Wu et Qing Long",
+      "es": "Xuan Wu y Qing Long"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 113,
+          "pot": 16
+        },
+        "mag": {
+          "base": 92,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 146,
+          "pot": 26
+        },
+        "mag": {
+          "base": 119,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 189,
+          "pot": 40
+        },
+        "mag": {
+          "base": 154,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 913681,
+        "names": {
+          "en": "Black Tortoise - Chi Strike",
+          "tw": "玄武式 - 極限拳",
+          "kr": "현무술·기극권",
+          "fr": "Tortue noire - Frappe de chi",
+          "de": "Schwarze Schildkröte - Chi-Stoß",
+          "es": "Tortuga negra - Golpe de chi"
+        },
+        "castTime": 10,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913683,
+        "names": {
+          "en": "Azure Dragon - Enervating Acupoint",
+          "tw": "青龍式 - 經絡破壞",
+          "kr": "청룡술·약화혈도",
+          "fr": "Dragon azuré - Acupuncture affaiblissante",
+          "de": "Blauer Drache - Zerstörung des Chi-Stroms",
+          "es": "Dragón celeste - Acupuntura agotadora"
+        },
+        "damage": "magic",
+        "base": 600,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913689,
+        "names": {
+          "en": "Element Arts - Avalanche Kick",
+          "tw": "五行式 - 雪崩腳",
+          "kr": "속성술·설붕축",
+          "fr": "Arcane élémentaire - Frappes avec le pied",
+          "de": "Elementarkünste - Lawinentritt",
+          "es": "Artes elementales - Patada arrolladora"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 70,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 80,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913692,
+        "names": {
+          "en": "Element Arts - Whirlpool Kick",
+          "tw": "五行式 - 漩渦踢",
+          "kr": "속성술·와류축",
+          "fr": "Arcane élémentaire - Frappes circulaires",
+          "de": "Elementarkünste - Strudeltritt",
+          "es": "Artes elementales - Patada torbellino"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 12
+        ],
+        "castTime": 70,
+        "elements": [
+          "water"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "water",
+            "value": 80,
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 913694,
+        "names": {
+          "en": "Element Arts - Inferno Fist",
+          "tw": "五行式 - 火焰拳",
+          "kr": "속성술·열화권",
+          "fr": "Arcane élémentaire - Poing inferno",
+          "de": "Elementarkünste - Infernofaust",
+          "es": "Artes elementales - Puño infernal"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 80,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913695,
+        "names": {
+          "en": "Element Arts - Whirlwind Kick",
+          "tw": "五行式 - 旋風踢",
+          "kr": "속성술·선풍축",
+          "fr": "Arcane élémentaire - Frappe tourbillonnante",
+          "de": "Elementarkünste - Tornadotritt",
+          "es": "Artes elementales - Patada centrífuga"
+        },
+        "damage": "magic",
+        "base": 650,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "elements": [
+          "wind"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "imbue"
+        ],
+        "imperils": [
+          {
+            "type": "wind",
+            "value": 80,
+            "turn": 5
+          }
+        ],
+        "imbues": [
+          {
+            "element": "wind",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 913701,
+        "names": {
+          "en": "Enlightened Spirit",
+          "tw": "天賜之魂",
+          "kr": "깨우친 영혼",
+          "fr": "Esprit étincelant",
+          "de": "Erleuchteter Geist",
+          "es": "Espíritu cultivado"
+        },
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913683,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913689,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913692,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913694,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913695,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913703,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913712,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          },
+          {
+            "id": 913714,
+            "value": 300,
+            "turn": 1,
+            "uniqueIdentifier": 913701
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913703,
+        "names": {
+          "en": "Azure Dragon - Fatal Acupoint",
+          "tw": "青龍式 - 經絡突刺",
+          "kr": "청룡술·사혈도",
+          "fr": "Dragon azuré - Acupuncture fatale",
+          "de": "Blauer Drache - Tödlicher Druckpunktstoß",
+          "es": "Dragón celeste - Acupuntura letal"
+        },
+        "damage": "magic",
+        "base": 3200,
+        "hitDamage": [
+          1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.75, 1.75, 87.5
+        ],
+        "canDualSkill": false,
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "killer",
+          "damage"
+        ],
+        "killers": [
+          {
+            "race": "beast",
+            "physic": 100,
+            "magic": 0,
+            "turn": 1
+          },
+          {
+            "race": "human",
+            "physic": 100,
+            "magic": 0,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "cooldown": {
+          "unlock": 2,
+          "wait": 2,
+          "unlockId": 913702
+        }
+      },
+      {
+        "dataId": 913705,
+        "names": {
+          "en": "Special Arts - Azure Dragon Style",
+          "tw": "特別式 - 青龍道",
+          "kr": "특별술·청룡식",
+          "fr": "Arcane spécial - Dragon azuré",
+          "de": "Besondere Künste - Stil des Blauen Drachen",
+          "es": "Artes especiales - Estilo dragón celeste"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break",
+          "buff"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 5
+          }
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 913704
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 913712,
+        "names": {
+          "en": "Azure Dragon - Enhanced Chi",
+          "tw": "青龍式 - 爆氣點穴",
+          "kr": "청룡술·강기",
+          "fr": "Dragon azuré - Chi amélioré",
+          "de": "Blauer Drache - Erhöhtes Chi",
+          "es": "Dragón celeste - Aumento del chi"
+        },
+        "damage": "magic",
+        "base": 1200,
+        "hitDamage": [
+          7, 7, 7, 7, 7, 7, 7, 7, 44
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 913683,
+            "value": 800,
+            "turn": 3,
+            "uniqueIdentifier": 913712
+          },
+          {
+            "id": 913703,
+            "value": 800,
+            "turn": 3,
+            "uniqueIdentifier": 913712
+          },
+          {
+            "id": 913712,
+            "value": 800,
+            "turn": 3,
+            "uniqueIdentifier": 913712
+          },
+          {
+            "id": 913714,
+            "value": 800,
+            "turn": 3,
+            "uniqueIdentifier": 913712
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "913705": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "401008807": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 913714,
+        "names": {
+          "en": "Azure Dragon - Debilitating Acupoint",
+          "tw": "青龍式 - 化陽點穴",
+          "kr": "청룡술·저하혈도",
+          "fr": "Dragon azuré - Acupuncture paralysante",
+          "de": "Blauer Drache - Schwächender Druckpunkt",
+          "es": "Dragón celeste - Acupuntura debilitante"
+        },
+        "damage": "magic",
+        "base": 1600,
+        "hitDamage": [
+          1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.75, 1.75, 87.5
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "imperil",
+          "damage"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100,
+            "turn": 3
+          },
+          {
+            "type": "wind",
+            "value": 100,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "913705": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "401008807": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 913706,
+        "names": {
+          "en": "Special Arts - Palm Strike",
+          "tw": "特別式 - 掌擊",
+          "kr": "특별술·장공파",
+          "fr": "Arcane spécial - Frappe au poing",
+          "de": "Besondere Künste - Handflächenstoß",
+          "es": "Artes especiales - Golpe de palma"
+        },
+        "damage": "magic",
+        "base": 6000,
+        "hitDamage": [
+          2, 2, 2, 2, 2, 2, 2.3333333333333335, 2.3333333333333335, 83.33333333333331
+        ],
+        "castTime": 38,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 401008807,
+        "names": {
+          "en": "Tai Chi Strike",
+          "tw": "太極拳",
+          "kr": "태극권",
+          "fr": "Frappe de Tai Chi",
+          "de": "Tai-Chi-Stoß",
+          "es": "Golpe de taichí"
+        },
+        "damage": "magic",
+        "base": 3600,
+        "hitDamage": [
+          12, 12, 12, 12, 12, 12, 12, 16
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          95, 5, 5, 5, 5, 5, 5, 5
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          913679,
+          913681,
+          913683,
+          913689,
+          913690,
+          913692,
+          913694,
+          913695,
+          913699,
+          913702,
+          913704,
+          913706,
+          913712,
+          913713,
+          913714,
+          913703,
+          913705
+        ]
+      }
+    ],
+    "passiveKillers": [
+      {
+        "physic": [
+          75,
+          75
+        ],
+        "magic": [
+          0,
+          0
+        ],
+        "rarity": 6
+      },
+      {
+        "physic": [
+          50,
+          50
+        ],
+        "magic": [
+          0,
+          0
+        ],
+        "rarity": 7
+      }
+    ],
+    "maxChainCap": 6
+  },
+  {
+    "dataId": 100025705,
+    "names": {
+      "en": "Blue Mage Fina",
+      "tw": "青魔道士菲娜",
+      "kr": "청마도사 피나",
+      "fr": "Fina mage bleu",
+      "de": "Blaumagierin Fina",
+      "es": "Fina maga azul"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 6
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 86,
+          "pot": 20
+        },
+        "mag": {
+          "base": 123,
+          "pot": 20
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 112,
+          "pot": 30
+        },
+        "mag": {
+          "base": 160,
+          "pot": 30
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 232213,
+        "names": {
+          "en": "Calming Strike",
+          "tw": "冷卻攻擊",
+          "kr": "평정의 일격",
+          "fr": "Frappe conciliante",
+          "de": "Beruhigender Schlag",
+          "es": "Golpe tranquilizante"
+        },
+        "damage": "magic",
+        "base": 360,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          100
+        ]
+      },
+      {
+        "dataId": 232392,
+        "names": {
+          "en": "Increase Magic",
+          "tw": "魔力增長",
+          "kr": "마력 증가",
+          "fr": "Magie augmentée",
+          "de": "Gesteigerte Magie",
+          "es": "Aumento de magia"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "spr",
+            "value": 150,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232393,
+        "names": {
+          "en": "Black Elemental Veil",
+          "tw": "漆黒的元素薄紗",
+          "kr": "칠흑의 엘리멘탈 베일",
+          "fr": "Voile élémentaire noir",
+          "de": "Schwarzer Elementarschleier",
+          "es": "Velo elemental negro"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 130,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232394,
+        "names": {
+          "en": "White Elemental Veil",
+          "tw": "輝白的元素薄紗",
+          "kr": "휘백의 엘리멘탈 베일",
+          "fr": "Voile élémentaire blanc",
+          "de": "Weißer Elementarschleier",
+          "es": "Velo elemental blanco"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 130,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 130,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 100025706,
+        "names": {
+          "en": "Blue Judgment",
+          "tw": "青之審判",
+          "kr": "푸른 정의",
+          "fr": "Jugement bleu",
+          "de": "Blaues Urteil",
+          "es": "Juicio azul"
+        },
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 190,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 190,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      }
+    ],
+    "multipleBlack": 2,
+    "multipleWhite": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          232210,
+          232211,
+          232212,
+          232213,
+          232390,
+          232391,
+          232392,
+          232393,
+          232394
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 204002205,
+    "names": {
+      "en": "Paladin Cecil",
+      "tw": "聖騎士塞西爾",
+      "kr": "성기사 세실",
+      "fr": "Cécil le paladin",
+      "es": "Cecil paladín"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 97,
+          "pot": 16
+        },
+        "mag": {
+          "base": 77,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 127,
+          "pot": 26
+        },
+        "mag": {
+          "base": 101,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 166,
+          "pot": 40
+        },
+        "mag": {
+          "base": 132,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 232181,
+        "names": {
+          "en": "Moonlightbringer",
+          "tw": "月光使者",
+          "kr": "문라이트 브링거",
+          "fr": "Porteur du clair de lune",
+          "de": "Mondlichtbote",
+          "es": "Portador de luz de luna"
+        },
+        "damage": "magic",
+        "base": 480,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232182,
+        "names": {
+          "en": "Saint Breaker",
+          "tw": "神聖破壞者",
+          "kr": "세인트 브레이커",
+          "fr": "Impact sacré",
+          "de": "Heiligenbrecher",
+          "es": "Rompesantos"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "stat": "def",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "stat": "mag",
+            "value": 60,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 60,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "dataId": 232184,
+        "names": {
+          "en": "Shadowbringer",
+          "tw": "暗影使者",
+          "kr": "섀도우 브링거",
+          "fr": "Percée ombreuse",
+          "de": "Schattenbote",
+          "es": "Portador de sombras"
+        },
+        "damage": "magic",
+        "base": 480,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 73
+        ],
+        "castTime": 40,
+        "elements": [
+          "dark"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          110, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 510448,
+        "names": {
+          "en": "Light Defense",
+          "tw": "光之防護",
+          "kr": "라이트 디펜서",
+          "fr": "Défense de lumière",
+          "de": "Licht-Verteidigung",
+          "es": "Defensa luminosa"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "def",
+            "value": 180,
+            "turn": 5
+          },
+          {
+            "stat": "spr",
+            "value": 180,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "510443": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "510459": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510449,
+        "names": {
+          "en": "Paladin's Blade - ATK",
+          "tw": "聖騎士之劍·攻",
+          "kr": "성기사의 검·공격",
+          "fr": "Lame de paladin - ATT",
+          "de": "Paladinklinge - ANG",
+          "es": "Hoja de paladín - ATQ"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "atk",
+            "value": 65,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "unlockBy": {
+          "510443": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "510459": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510450,
+        "names": {
+          "en": "Paladin's Blade - MAG",
+          "tw": "聖騎士之劍·魔",
+          "kr": "성기사의 검·마법",
+          "fr": "Lame de paladin - MAGIE",
+          "de": "Paladinklinge - MAG",
+          "es": "Hoja de paladín - MAG"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "mag",
+            "value": 65,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "unlockBy": {
+          "510443": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "510459": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510456,
+        "names": {
+          "en": "Dark Attack",
+          "tw": "暗之進攻",
+          "kr": "다크 어태커",
+          "fr": "Attaque de ténèbres",
+          "de": "Dunkel-Angriff",
+          "es": "Ataque oscuro"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 180,
+            "turn": 5
+          },
+          {
+            "stat": "mag",
+            "value": 180,
+            "turn": 5
+          }
+        ],
+        "unlockBy": {
+          "510451": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510457,
+        "names": {
+          "en": "Dark Knight's Blade - DEF",
+          "tw": "暗黑騎士之劍·防",
+          "kr": "암흑기사의 검·방어",
+          "fr": "Lame de chevalier noir - DEF",
+          "de": "Dunkelritter-Klinge - ABW",
+          "es": "Hoja de caballero oscuro - DEF"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 65,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "unlockBy": {
+          "510451": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510458,
+        "names": {
+          "en": "Dark Knight's Blade - SPR",
+          "tw": "暗黑騎士之劍·精",
+          "kr": "암흑기사의 검·정신",
+          "fr": "Lame de chevalier noir - PSY",
+          "de": "Dunkelritter-Klinge - PSY",
+          "es": "Hoja de caballero oscuro - ESP"
+        },
+        "damage": "magic",
+        "base": 210,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 1
+          }
+        ],
+        "framesList": [
+          60
+        ],
+        "unlockBy": {
+          "510451": {
+            "turns": 99999,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510441,
+        "names": {
+          "en": "Sacred Aura",
+          "tw": "聖潔靈氣",
+          "kr": "세이크리드 아우라",
+          "fr": "Aura sacrée",
+          "de": "Heilige Aura",
+          "es": "Aura sagrada"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "light",
+            "turn": 2
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 6,
+          "unlockId": 232186
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 204002207,
+        "names": {
+          "en": "Knight of Duality",
+          "tw": "雙面騎士",
+          "kr": "듀얼리티 나이트",
+          "fr": "Chevalier aux deux destins",
+          "de": "Ritter der Dualität",
+          "es": "Caballero dual"
+        },
+        "damage": "magic",
+        "base": 2400,
+        "hitDamage": [
+          30,
+          30,
+          40
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42,
+          10,
+          10
+        ]
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          232180,
+          232181,
+          232182,
+          232183,
+          232184,
+          232185,
+          232186,
+          510445,
+          510446,
+          510447,
+          510448,
+          510449,
+          510450,
+          510451,
+          510453,
+          510454,
+          510455,
+          510456,
+          510457,
+          510458,
+          510459,
+          800207,
+          510520,
+          510440,
+          510441
+        ]
+      },
+      {
+        "count": 2,
+        "abilities": [
+          232180,
+          232181,
+          232182,
+          232183,
+          232184,
+          232185,
+          232186,
+          510445,
+          510446,
+          510447,
+          510448,
+          510449,
+          510450,
+          510451,
+          510453,
+          510454,
+          510455,
+          510456,
+          510457,
+          510458,
+          510459,
+          800207,
+          510520,
+          510440,
+          510441
+        ]
+      }
+    ]
+  },
+  {
+    "dataId": 204002405,
+    "names": {
+      "en": "White Mage Rosa",
+      "tw": "白魔道士羅莎",
+      "kr": "백마도사 로자",
+      "fr": "Rosa le mage blanc",
+      "de": "Weißmagierin Rosa",
+      "es": "Rosa maga blanca"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 92,
+          "pot": 16
+        },
+        "mag": {
+          "base": 116,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 120,
+          "pot": 26
+        },
+        "mag": {
+          "base": 152,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 156,
+          "pot": 40
+        },
+        "mag": {
+          "base": 198,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 800211,
+        "names": {
+          "en": "Glorious Rain of Arrows",
+          "tw": "光明連矢",
+          "kr": "광명의 연속 화살",
+          "fr": "Glorieux déluge de flèches",
+          "de": "Strahlender Pfeilregen",
+          "es": "Lluvia pertinaz de flechas"
+        },
+        "base": 1400,
+        "hitDamage": [
+          6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ]
+      },
+      {
+        "dataId": 232120,
+        "names": {
+          "en": "True Mystic Charge Shot",
+          "tw": "真·神秘的蓄力射擊",
+          "kr": "진·미스틱 챠지 샷",
+          "fr": "Tir chargé mystique X",
+          "de": "Wahrer Mystischer Geladener Schuss",
+          "es": "Tiro místico cargado verdadero"
+        },
+        "damage": "magic",
+        "base": 525,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 18,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          45
+        ]
+      },
+      {
+        "dataId": 232122,
+        "names": {
+          "en": "Prayer of Extermination",
+          "tw": "魔滅祈禱",
+          "kr": "마멸의 기도",
+          "fr": "Prière d'extermination",
+          "de": "Gebet der Auslöschung",
+          "es": "Rezo destructor"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42
+        ]
+      },
+      {
+        "dataId": 232123,
+        "names": {
+          "en": "Sure Aim",
+          "tw": "瞄準目標",
+          "kr": "정확한 겨냥",
+          "fr": "Visée précise",
+          "de": "Zielsicher",
+          "es": "Puntería impecable"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "killer"
+        ],
+        "killers": [
+          {
+            "race": "bird",
+            "physic": 50,
+            "magic": 0,
+            "turn": 3
+          },
+          {
+            "race": "bird",
+            "physic": 0,
+            "magic": 50,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 10210,
+        "names": {
+          "en": "Holy",
+          "tw": "神聖",
+          "kr": "홀리",
+          "fr": "Sidéral",
+          "de": "Sanctus",
+          "es": "Sanctus"
+        },
+        "damage": "magic",
+        "base": 230,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "magicType": "white",
+        "elements": [
+          "light"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          450
+        ]
+      },
+      {
+        "dataId": 510412,
+        "names": {
+          "en": "Moonlight",
+          "tw": "月光",
+          "kr": "문라이트",
+          "fr": "Clair de lune",
+          "de": "Mondlicht",
+          "es": "Luz de luna"
+        },
+        "damage": "magic",
+        "base": 4000,
+        "hitDamage": [
+          100
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "elements": [
+          "light"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          142
+        ],
+        "cooldown": {
+          "unlock": 4,
+          "wait": 4,
+          "unlockId": 232127
+        }
+      },
+      {
+        "dataId": 232128,
+        "names": {
+          "en": "Radiant Arrows",
+          "tw": "光輝連矢",
+          "kr": "빛의 연사",
+          "fr": "Flèches radieuses",
+          "de": "Strahlende Pfeile",
+          "es": "Flechas brillantes"
+        },
+        "base": 4000,
+        "hitDamage": [
+          3.75, 3.75, 5, 3.75, 3.75, 5, 3.75, 3.75, 5, 3.75, 3.75, 5, 3.75, 3.75, 5, 3.75, 3.75, 5, 3.75, 3.75, 5, 3.75, 3.75, 5
+        ],
+        "castTime": 320,
+        "offset": 112,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          60, 10, 10, 34, 10, 10, 34, 10, 10, 34, 10, 10, 34, 10, 10, 34, 10, 10, 34, 10, 10, 34, 10, 10
+        ]
+      },
+      {
+        "dataId": 204002407,
+        "names": {
+          "en": "True Miracle of Baron",
+          "tw": "真·巴隆奇蹟",
+          "kr": "진·바론의 기적",
+          "fr": "Véritable miracle de Baron",
+          "de": "Das wahre Wunder von Baron",
+          "es": "Milagro de Baronia verdadero"
+        },
+        "damage": "magic",
+        "base": 2100,
+        "hitDamage": [
+          25, 25, 25, 25
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          140, 10, 10, 10
+        ]
+      }
+    ],
+    "multipleWhite": 2,
+    "multipleBlack": 2,
+    "multipleGreen": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          232120,
+          232121,
+          232122,
+          232123,
+          232124,
+          232126,
+          232127,
+          232128,
+          800211,
+          510411,
+          510412
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 232120,
+        "value": 1000,
+        "rarity": 7
+      },
+      {
+        "id": 232122,
+        "value": 1000,
+        "rarity": 7
+      },
+      {
+        "id": 232128,
+        "value": 500,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 204002605,
+    "names": {
+      "en": "Palom & Porom",
+      "tw": "帕羅姆&普羅姆",
+      "kr": "파롬＆포롬",
+      "fr": "Palom et Porom",
+      "es": "Palom y Porom"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 77,
+          "pot": 16
+        },
+        "mag": {
+          "base": 129,
+          "pot": 24
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 101,
+          "pot": 26
+        },
+        "mag": {
+          "base": 168,
+          "pot": 34
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 132,
+          "pot": 40
+        },
+        "mag": {
+          "base": 219,
+          "pot": 65
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 232140,
+        "names": {
+          "en": "Joint Fire",
+          "tw": "聯合火焰",
+          "kr": "콜라보 파이어",
+          "fr": "Feu de transcendance",
+          "de": "Kollabo-Feuer",
+          "es": "Fuego conjunto"
+        },
+        "damage": "magic",
+        "base": 360,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          80
+        ]
+      },
+      {
+        "dataId": 510521,
+        "names": {
+          "en": "Prominence Force",
+          "tw": "卓越之力",
+          "kr": "프로미넌스 포스",
+          "fr": "Force incandescente",
+          "de": "Prominzenz-Kraft",
+          "es": "Fuerza desmedida"
+        },
+        "damage": "magic",
+        "base": 3750,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "canDualSkill": false,
+        "castTime": 76,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20
+        ],
+        "cooldown": {
+          "unlock": 3,
+          "wait": 3,
+          "unlockId": 800209
+        }
+      },
+      {
+        "dataId": 510420,
+        "names": {
+          "en": "Pyroblast",
+          "tw": "小型核爆",
+          "kr": "쁘띠 플레어",
+          "fr": "Déflagration",
+          "de": "Pyro",
+          "es": "Fogonazo"
+        },
+        "damage": "magic",
+        "base": 420,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "dataId": 510421,
+        "names": {
+          "en": "Comet",
+          "tw": "小型隕石",
+          "kr": "쁘띠 메테오",
+          "fr": "Comète",
+          "de": "Komet",
+          "es": "Cometa"
+        },
+        "damage": "magic",
+        "base": 500,
+        "hitDamage": [
+          20, 20, 20, 20, 20
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "spr",
+            "value": 65,
+            "turn": 3
+          }
+        ],
+        "framesList": [
+          72, 15, 15, 15, 15
+        ]
+      },
+      {
+        "dataId": 510422,
+        "names": {
+          "en": "Synchro Lapse",
+          "tw": "同步被擾亂了",
+          "kr": "싱크로가 어긋났다",
+          "fr": "Bénédiction harmonisée",
+          "de": "Synchro-Lapsus",
+          "es": "Lapsus sincrónico"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 510420,
+            "value": 3000,
+            "turn": 3,
+            "uniqueIdentifier": 1224
+          },
+          {
+            "id": 510421,
+            "value": 2500,
+            "turn": 3,
+            "uniqueIdentifier": 12133
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232143,
+        "names": {
+          "en": "Fire Force",
+          "tw": "火之力",
+          "kr": "파이어 포스",
+          "fr": "Pouvoir incandescent",
+          "de": "Feuerkraft",
+          "es": "Fuerza ígnea"
+        },
+        "damage": "magic",
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil",
+          "boostModifier"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 80,
+            "turn": 3
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 232144,
+            "value": 50,
+            "turn": 3,
+            "uniqueIdentifier": 1226
+          }
+        ],
+        "framesList": [
+          42, 22, 21, 22, 23, 23, 22, 23
+        ]
+      },
+      {
+        "dataId": 232144,
+        "names": {
+          "en": "Flame Force",
+          "tw": "炎之力",
+          "kr": "플레임 포스",
+          "fr": "Crescendo incandescent",
+          "de": "Flammenkraft",
+          "es": "Fuerza llameante"
+        },
+        "damage": "magic",
+        "base": 300,
+        "hitDamage": [
+          8, 8, 8, 8, 8, 8, 8, 44
+        ],
+        "castTime": 76,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "consecutive": {
+          "turns": 7,
+          "value": 300
+        },
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ]
+      },
+      {
+        "dataId": 510424,
+        "names": {
+          "en": "Palom's Turn",
+          "tw": "帕羅姆的回合",
+          "kr": "파롬의 차례",
+          "fr": "Coup de Palom",
+          "de": "Paloms Zug",
+          "es": "Turno de Palom"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 120,
+            "turn": 4
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 2,
+          "unlockId": 232146
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510425,
+        "names": {
+          "en": "Bluff",
+          "tw": "逞強",
+          "kr": "강한 척하기",
+          "es": "Farol"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 200,
+            "turn": 3
+          }
+        ],
+        "unlockBy": {
+          "510424": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510426,
+        "names": {
+          "en": "Melt Force",
+          "tw": "溶解之力",
+          "kr": "멜트 포스",
+          "fr": "Vague incandescente",
+          "de": "Schmelzkraft",
+          "es": "Fuerza fundente"
+        },
+        "damage": "magic",
+        "base": 1500,
+        "hitDamage": [
+          0.9333333333333335, 0.9333333333333335, 0.9333333333333335, 0.9333333333333335, 0.9333333333333335, 0.9333333333333335, 1.0666666666666667, 93.33333333333331
+        ],
+        "castTime": 76,
+        "elements": [
+          "fire"
+        ],
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 20, 20, 20, 20, 20, 20, 20
+        ],
+        "unlockBy": {
+          "510424": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510428,
+        "names": {
+          "en": "Cry",
+          "tw": "裝哭",
+          "kr": "거짓울음",
+          "fr": "Cri",
+          "de": "Krokodilstränen",
+          "es": "Llanto"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "break"
+        ],
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 70,
+            "turn": 3
+          },
+          {
+            "stat": "spr",
+            "value": 70,
+            "turn": 3
+          }
+        ],
+        "unlockBy": {
+          "510427": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 232148,
+        "names": {
+          "en": "Twin Break",
+          "tw": "雙重破壞",
+          "kr": "트윈 브레이크",
+          "fr": "Double pierre",
+          "de": "Zwillingsstein",
+          "es": "Petra doble"
+        },
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff"
+        ],
+        "buffs": [
+          {
+            "stat": "mag",
+            "value": 250,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510433,
+        "names": {
+          "en": "Concentrated Comet",
+          "tw": "一極集中小型隕石",
+          "kr": "일극집중 쁘띠 메테오",
+          "fr": "Comète focalisée",
+          "de": "Konzentrierter Komet",
+          "es": "Cometa concentrado"
+        },
+        "damage": "magic",
+        "base": 3600,
+        "hitDamage": [
+          100
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "boostModifiers": [
+          {
+            "id": 232143,
+            "value": 200,
+            "turn": 3,
+            "uniqueIdentifier": 12132
+          },
+          {
+            "id": 232144,
+            "value": 100,
+            "turn": 3,
+            "uniqueIdentifier": 1227
+          }
+        ],
+        "framesList": [
+          120
+        ],
+        "cooldown": {
+          "unlock": 4,
+          "wait": 4,
+          "unlockId": 232149
+        }
+      },
+      {
+        "dataId": 204002607,
+        "names": {
+          "en": "Elemental Gemini",
+          "tw": "元素雙子",
+          "kr": "엘리먼트 제미니",
+          "fr": "Gémeaux élémentaires",
+          "de": "Elementarzwllinge",
+          "es": "Gemelos elementales"
+        },
+        "damage": "magic",
+        "base": 2100,
+        "hitDamage": [
+          33, 33, 34
+        ],
+        "elements": [
+          "fire",
+          "ice",
+          "lightning"
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          254, 20, 20
+        ]
+      }
+    ],
+    "passiveBoostModifiers": [
+      {
+        "id": 232143,
+        "value": 200,
+        "rarity": 6
+      },
+      {
+        "id": 232144,
+        "value": 100,
+        "rarity": 6
+      },
+      {
+        "id": 232143,
+        "value": 200,
+        "rarity": 7
+      },
+      {
+        "id": 232144,
+        "value": 100,
+        "rarity": 7
+      }
+    ],
+    "multipleBlack": 2,
+    "multiCasts": [
+      {
+        "count": 2,
+        "abilities": [
+          232140,
+          232141,
+          232142,
+          232143,
+          232144,
+          232146,
+          232147,
+          232149,
+          510425,
+          510426,
+          510428,
+          510429,
+          800209,
+          510521,
+          510424,
+          510427,
+          510433
+        ]
+      },
+      {
+        "count": 4,
+        "abilities": [
+          232140,
+          232141,
+          232142,
+          232143,
+          232144,
+          232146,
+          232147,
+          232149,
+          510425,
+          510426,
+          510428,
+          510429,
+          800209,
+          510521,
+          510424,
+          510427,
+          510433
+        ]
+      }
+    ],
+    "passiveLBDamage": [
+      {
+        "value": 50,
+        "rarity": 7
+      }
+    ]
+  },
+  {
+    "dataId": 100023005,
+    "names": {
+      "en": "Hess King Lasswell",
+      "tw": "赫斯王拉斯韋爾",
+      "kr": "헤스의 왕 라스웰",
+      "fr": "Lasswell, roi de Hess",
+      "de": "König Lasswell von Hess",
+      "es": "Lasswell, rey de Hess"
+    },
+    "rarity": {
+      "min": 5,
+      "max": 7
+    },
+    "dataStats": {
+      "5": {
+        "atk": {
+          "base": 125,
+          "pot": 24
+        },
+        "mag": {
+          "base": 99,
+          "pot": 16
+        }
+      },
+      "6": {
+        "atk": {
+          "base": 162,
+          "pot": 34
+        },
+        "mag": {
+          "base": 128,
+          "pot": 26
+        }
+      },
+      "7": {
+        "atk": {
+          "base": 210,
+          "pot": 65
+        },
+        "mag": {
+          "base": 166,
+          "pot": 40
+        }
+      }
+    },
+    "abilities": [
+      {
+        "dataId": 200330,
+        "names": {
+          "en": "Fingersnap",
+          "tw": "醒夢",
+          "kr": "백일몽",
+          "fr": "Éveil",
+          "de": "Fieberwahn",
+          "es": "Agudeza"
+        },
+        "base": 110,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70
+        ]
+      },
+      {
+        "dataId": 510211,
+        "names": {
+          "en": "Success Through Conviction",
+          "tw": "一念通天",
+          "kr": "일념통천",
+          "fr": "De la conviction au succès",
+          "de": "Erfolg durch Überzeugung",
+          "es": "Determinación de éxito"
+        },
+        "base": 1600,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 231713,
+            "value": 50,
+            "turn": 2,
+            "uniqueIdentifier": 111014
+          },
+          {
+            "id": 510203,
+            "value": 50,
+            "turn": 2,
+            "uniqueIdentifier": 111014
+          },
+          {
+            "id": 510204,
+            "value": 50,
+            "turn": 2,
+            "uniqueIdentifier": 111014
+          },
+          {
+            "id": 510209,
+            "value": 50,
+            "turn": 2,
+            "uniqueIdentifier": 111014
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "cooldown": {
+          "unlock": 3,
+          "wait": 3,
+          "unlockId": 800134
+        }
+      },
+      {
+        "dataId": 231703,
+        "names": {
+          "en": "Mirror of Equity - Resolution",
+          "tw": "明鏡・斷",
+          "kr": "잔잔한 거울·단",
+          "fr": "Sérénité - Résolution",
+          "de": "Kata – Entschluss",
+          "es": "Tranquilidad - Resolución"
+        },
+        "base": 180,
+        "hitDamage": [
+          100
+        ],
+        "castTime": 10,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "break"
+        ],
+        "ignore": 50,
+        "breaks": [
+          {
+            "stat": "def",
+            "value": 50,
+            "turn": 4
+          },
+          {
+            "stat": "spr",
+            "value": 50,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          2
+        ]
+      },
+      {
+        "dataId": 231704,
+        "names": {
+          "en": "Mirror of Equity - Blazing Pyre",
+          "tw": "明鏡　─纏火─",
+          "kr": "잔잔한 거울-휘감는 불꽃-",
+          "fr": "Sérénité - Feu éternel",
+          "de": "Kata – Brandflamme",
+          "es": "Tranquilidad - Pira llameante"
+        },
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 231705,
+        "names": {
+          "en": "Mirror of Equity - Freezing Chill",
+          "tw": "明鏡　─止冰─",
+          "kr": "잔잔한 거울-옭아매는 얼음-",
+          "fr": "Sérénité - Choc de givre",
+          "de": "Kata – Froststocken",
+          "es": "Tranquilidad - Frío helador"
+        },
+        "base": 400,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 231706,
+        "names": {
+          "en": "Thirty Slashes of Fury",
+          "tw": "三十烈斬",
+          "kr": "삼십열참",
+          "fr": "Trente entailles furieuses",
+          "de": "Dreißig Schlitzer des Zorns",
+          "es": "Triacontacortes furiosos"
+        },
+        "base": 450,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          42, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        ]
+      },
+      {
+        "dataId": 231709,
+        "names": {
+          "en": "Mirror of Equity - Petals of Flame",
+          "tw": "明鏡・火華",
+          "kr": "잔잔한 거울·불꽃",
+          "fr": "Sérénité - Pétales de flammes",
+          "de": "Kata – Flammenblüten",
+          "es": "Tranquilidad - Pétalos de llamas"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "fire",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 231710,
+        "names": {
+          "en": "Mirror of Equity - Petals of Frost",
+          "tw": "明鏡・雪華",
+          "kr": "잔잔한 거울·눈꽃",
+          "fr": "Sérénité - Pétales de givre",
+          "de": "Kata – Frostblüten",
+          "es": "Tranquilidad - Pétalos de escarcha"
+        },
+        "base": 450,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imbue"
+        ],
+        "imbues": [
+          {
+            "element": "ice",
+            "turn": 5
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 231711,
+        "names": {
+          "en": "Sword of the Rising Sun",
+          "tw": "旭日之覇刀",
+          "kr": "아침해의 패도",
+          "fr": "Épée du soleil levant",
+          "de": "Schwert der aufgehenden Sonne",
+          "es": "Espada del sol naciente"
+        },
+        "base": 380,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 231712,
+        "names": {
+          "en": "Sword of Polaris",
+          "tw": "極星之覇刀",
+          "kr": "북극성의 패도",
+          "fr": "Épée de Polaris",
+          "de": "Schwert der aufgehenden Sonne",
+          "es": "Espada de Polaris"
+        },
+        "base": 380,
+        "hitDamage": [
+          14, 14, 14, 14, 14, 14, 16
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 7, 5, 7, 7, 7, 7
+        ]
+      },
+      {
+        "dataId": 231713,
+        "names": {
+          "en": "Absolute Mirror of Equity",
+          "tw": "極·明鏡",
+          "kr": "극·잔잔한 거울",
+          "fr": "Sérénité absolue",
+          "de": "Vollkommene Kata",
+          "es": "Tranquilidad total"
+        },
+        "base": 1100,
+        "hitDamage": [
+          1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.4545454545454546, 90.9090909090909
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 510204,
+        "names": {
+          "en": "Mirror of Equity - Universe",
+          "tw": "明鏡・天地",
+          "kr": "잔잔한 거울·천지",
+          "fr": "Sérénité - Univers",
+          "de": "Kata – Kosmos",
+          "es": "Tranquilidad - Universo"
+        },
+        "base": 1050,
+        "hitDamage": [
+          1.3333333333333335, 1.3333333333333335, 1.3333333333333335, 1.3333333333333335, 1.3333333333333335, 1.3333333333333335, 1.5238095238095237, 90.47619047619048
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "100023007": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          },
+          "900000338": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510207,
+        "names": {
+          "en": "Obliterating Mirror of Equity's Crimson Flame",
+          "tw": "絕・明鏡　─紅焰─",
+          "kr": "절·잔잔한 거울-홍염-",
+          "fr": "Sérénité - Flammes carmin dévastatrices",
+          "de": "Purpurflamme der Vernichtenden Kata",
+          "es": "Llama carmesí de tranquilidad fulminante"
+        },
+        "base": 1500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 100,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "900000338": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510208,
+        "names": {
+          "en": "Obliterating Mirror of Equity's Azure Frost",
+          "tw": "絕・明鏡　─蒼冰─",
+          "kr": "절·잔잔한 거울-창빙-",
+          "fr": "Sérénité - Givre azur dévastateur",
+          "de": "Azurfrost der Vernichtenden Kata",
+          "es": "Escarcha celeste de tranquilidad fulminante"
+        },
+        "base": 1500,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "ice",
+            "value": 100,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "900000338": {
+            "turns": 5,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 231718,
+        "names": {
+          "en": "Pyro Glacial Destruction",
+          "tw": "冰炎滅卻刃",
+          "kr": "빙염멸각인",
+          "fr": "Destruction des flammes gelées",
+          "de": "Eisflammenzerstörung",
+          "es": "Destrucción pirogélida"
+        },
+        "base": 700,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "imperil"
+        ],
+        "imperils": [
+          {
+            "type": "fire",
+            "value": 80,
+            "turn": 4
+          },
+          {
+            "type": "ice",
+            "value": 80,
+            "turn": 4
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 510209,
+        "names": {
+          "en": "True Mirror of Equity",
+          "tw": "真・明鏡",
+          "kr": "진·잔잔한 거울",
+          "fr": "Véritable Sérénité",
+          "de": "Wahre Kata",
+          "es": "Tranquilidad verdadera"
+        },
+        "base": 1100,
+        "hitDamage": [
+          1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.2727272727272727, 1.4545454545454546, 90.9090909090909
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "ignore": 50,
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "cooldown": {
+          "unlock": 2,
+          "wait": 2,
+          "unlockId": 231721
+        }
+      },
+      {
+        "dataId": 510201,
+        "names": {
+          "en": "Complete Awakening [Hess King]",
+          "tw": "完全覺醒【赫斯王】",
+          "kr": "완전 각성[헤스의 왕]",
+          "fr": "Éveil complet [Roi de Hess]",
+          "de": "Vollständiges Erwachen [König von Hess]",
+          "es": "Despertar completo [rey de Hess]"
+        },
+        "canDualSkill": false,
+        "castTime": 40,
+        "dualable": false,
+        "offset": 14,
+        "effectOrder": [
+          "buff",
+          "boostModifier"
+        ],
+        "buffs": [
+          {
+            "stat": "atk",
+            "value": 250,
+            "turn": 5
+          }
+        ],
+        "boostModifiers": [
+          {
+            "id": 231713,
+            "value": 50,
+            "turn": 5,
+            "uniqueIdentifier": 111012
+          },
+          {
+            "id": 510203,
+            "value": 50,
+            "turn": 5,
+            "uniqueIdentifier": 111012
+          }
+        ],
+        "cooldown": {
+          "unlock": 1,
+          "wait": 5,
+          "unlockId": 231719
+        },
+        "framesList": [
+          0
+        ]
+      },
+      {
+        "dataId": 510203,
+        "names": {
+          "en": "Final Mirror of Equity",
+          "tw": "終・明鏡",
+          "kr": "종·잔잔한 거울",
+          "fr": "Sérénité finale",
+          "de": "Finale Kata",
+          "es": "Tranquilidad definitiva"
+        },
+        "base": 1200,
+        "hitDamage": [
+          1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.1666666666666667, 1.3333333333333335, 91.66666666666669
+        ],
+        "canDualSkill": false,
+        "castTime": 40,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 231713,
+            "value": 50,
+            "turn": 4,
+            "uniqueIdentifier": 111013
+          },
+          {
+            "id": 510204,
+            "value": 50,
+            "turn": 4,
+            "uniqueIdentifier": 111013
+          }
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "cooldown": {
+          "unlock": 4,
+          "wait": 4,
+          "unlockId": 231720
+        }
+      },
+      {
+        "dataId": 100023007,
+        "names": {
+          "en": "Omniblade - Star Slicer",
+          "tw": "八垓拔刀 星軌",
+          "kr": "팔해발도·궤성",
+          "fr": "Omnilame - Entaille stellaire",
+          "de": "Omniklinge – Sterntilger",
+          "es": "Omniespada - Cortaestrellas"
+        },
+        "base": 1700,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 61
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 231703,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 231706,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 231713,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 510205,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 510206,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 510204,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 111011
+          }
+        ],
+        "framesList": [
+          3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 900000338,
+        "names": {
+          "en": "Omniblade - Star Slicer + 1",
+          "tw": "八垓拔刀 星軌 + 1",
+          "kr": "팔해발도·궤성 + 1",
+          "fr": "Omnilame - Entaille stellaire + 1",
+          "de": "Omniklinge – Sterntilger + 1",
+          "es": "Omniespada - Cortaestrellas + 1"
+        },
+        "base": 2000,
+        "hitDamage": [
+          3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 61
+        ],
+        "dualable": false,
+        "isLB": true,
+        "offset": 14,
+        "effectOrder": [
+          "damage",
+          "boostModifier"
+        ],
+        "ignore": 50,
+        "boostModifiers": [
+          {
+            "id": 231703,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 231706,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 231713,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 510207,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 510208,
+            "value": 250,
+            "turn": 5,
+            "uniqueIdentifier": 111010
+          },
+          {
+            "id": 510204,
+            "value": 400,
+            "turn": 5,
+            "uniqueIdentifier": 111011
+          }
+        ],
+        "framesList": [
+          3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
+        ]
+      },
+      {
+        "dataId": 510205,
+        "names": {
+          "en": "Obliterating Mirror of Equity's Flame",
+          "tw": "絕・明鏡　─焰─",
+          "kr": "절·잔잔한 거울-염-",
+          "fr": "Sérénité - Flammes dévastatrices",
+          "de": "Flamme der Vernichtenden Kata",
+          "es": "Llama de tranquilidad fulminante"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "fire"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "900000338": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      },
+      {
+        "dataId": 510206,
+        "names": {
+          "en": "Obliterating Mirror of Equity's Frost",
+          "tw": "絕・明鏡　─冰─",
+          "kr": "절·잔잔한 거울-빙-",
+          "fr": "Sérénité - Givre dévastateur",
+          "de": "Frost der Vernichtenden Kata",
+          "es": "Escarcha de tranquilidad fulminante"
+        },
+        "base": 800,
+        "hitDamage": [
+          10, 10, 10, 10, 10, 10, 10, 30
+        ],
+        "castTime": 40,
+        "elements": [
+          "ice"
+        ],
+        "offset": 14,
+        "effectOrder": [
+          "damage"
+        ],
+        "framesList": [
+          70, 6, 6, 6, 6, 6, 6, 6
+        ],
+        "unlockBy": {
+          "900000338": {
+            "turns": 3,
+            "nbUse": null,
+            "insteadOf": null
+          }
+        }
+      }
+    ],
+    "multiCasts": [
+      {
+        "count": 3,
+        "abilities": [
+          200330,
+          231703,
+          231704,
+          231705,
+          231706,
+          231709,
+          231710,
+          231711,
+          231712,
+          231713,
+          231718,
+          231719,
+          231720,
+          231721,
+          510204,
+          510205,
+          510206,
+          510207,
+          510208,
+          800134,
+          510211,
+          510209,
+          510201,
+          510203
+        ]
+      },
+      {
+        "count": 2,
+        "abilities": [
+          200330,
+          231703,
+          231704,
+          231705,
+          231706,
+          231709,
+          231710,
+          231711,
+          231712,
+          231713,
+          231718,
+          231719,
+          231720,
+          231721,
+          510204,
+          510205,
+          510206,
+          510207,
+          510208,
+          800134,
+          510211,
+          510209,
+          510201,
+          510203
+        ]
+      }
+    ],
+    "passiveLBDamage": [
+      {
+        "value": 50,
+        "rarity": 7
       }
     ]
   }
