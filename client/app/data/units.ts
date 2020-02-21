@@ -42448,7 +42448,6 @@ export const UNITS: any[] = [
           912312
         ]
       },
-
       {
         "count": 3,
         "abilities": [
@@ -44300,7 +44299,6 @@ export const UNITS: any[] = [
       }
     ]
   },
-
   {
     "id": 243,
     "names": {
@@ -92478,5 +92476,5732 @@ export const UNITS: any[] = [
         "rarity": 7
       }
     ]
-  }
+  },
+{
+  "dataId": 100024105,
+  "names": {
+    "en": "Sweet Nichol",
+    "tw": "甜蜜尼科爾",
+    "kr": "스위트 니콜",
+    "fr": "Tendre Nichol",
+    "de": "Niedlicher Nichol",
+    "es": "Nichol encantador"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 91,
+        "pot": 16
+      },
+      "mag": {
+        "base": 130,
+        "pot": 24
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 118,
+        "pot": 26
+      },
+      "mag": {
+        "base": 169,
+        "pot": 34
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 153,
+        "pot": 40
+      },
+      "mag": {
+        "base": 219,
+        "pot": 65
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 20210,
+      "names": {
+        "en": "Blizzaga",
+        "tw": "大暴雪",
+        "kr": "블리자가",
+        "fr": "Glace X",
+        "de": "Eisga",
+        "es": "Hielo++"
+      },
+      "damage": "magic",
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        150
+      ]
+    },
+    {
+      "dataId": 20230,
+      "names": {
+        "en": "Waterga",
+        "tw": "大流水",
+        "kr": "워터가",
+        "fr": "Eau X",
+        "de": "Aquaga",
+        "es": "Aqua++"
+      },
+      "damage": "magic",
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        110
+      ]
+    },
+    {
+      "dataId": 231244,
+      "names": {
+        "en": "Cool Smile",
+        "tw": "爽朗微笑",
+        "kr": "시원한 미소",
+        "fr": "Sourire ravageur",
+        "de": "Verschmitztes Lächeln",
+        "es": "Sonrisa traviesa"
+      },
+      "damage": "magic",
+      "base": 300,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 9,
+        "value": 150
+      },
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231245,
+      "names": {
+        "en": "Drowning in Love",
+        "tw": "沉溺於愛",
+        "kr": "사랑의 탐닉",
+        "fr": "Amour abondant",
+        "de": "Liebestrunken",
+        "es": "Muero de amor"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 75,
+          "turn": 4
+        }
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231246,
+      "names": {
+        "en": "Melting Heart",
+        "tw": "融化之心",
+        "kr": "사르르 녹아내리는 마음",
+        "fr": "Cœur fondant",
+        "de": "Herzschmelze",
+        "es": "Corazón derretido"
+      },
+      "damage": "magic",
+      "base": 300,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 509991,
+      "names": {
+        "en": "Heartbeat Accelerator",
+        "tw": "心跳加速器",
+        "kr": "가빠지는 심장 고동",
+        "fr": "Chamadaccélérateur",
+        "de": "Herzschlagbeschleuniger",
+        "es": "Acelerador de latido"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "boostModifier"
+      ],
+      "boostModifiers": [
+        {
+          "id": 231246,
+          "value": 400,
+          "turn": 5,
+          "uniqueIdentifier": 1234
+        },
+        {
+          "id": 231252,
+          "value": 400,
+          "turn": 5,
+          "uniqueIdentifier": 1234
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 5,
+        "unlockId": 800083
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 20300,
+      "names": {
+        "en": "Blizzaja",
+        "tw": "強暴雪",
+        "kr": "블리자쟈",
+        "fr": "Glace max",
+        "de": "Eiska",
+        "es": "Hielo+++"
+      },
+      "damage": "magic",
+      "base": 100,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 100
+      },
+      "framesList": [
+        240
+      ]
+    },
+    {
+      "dataId": 20320,
+      "names": {
+        "en": "Waterja",
+        "tw": "強流水",
+        "kr": "워터쟈",
+        "fr": "Eau max",
+        "de": "Aquaka",
+        "es": "Aqua+++"
+      },
+      "damage": "magic",
+      "base": 100,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 100
+      },
+      "framesList": [
+        190
+      ]
+    },
+    {
+      "dataId": 20360,
+      "names": {
+        "en": "Freeze",
+        "tw": "冰結",
+        "kr": "프리즈",
+        "fr": "Gel",
+        "de": "Frost",
+        "es": "Congelación"
+      },
+      "damage": "magic",
+      "base": 275,
+      "hitDamage": [
+        5,
+        5,
+        5,
+        10,
+        10,
+        10,
+        15,
+        40
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "ice",
+          "value": 50,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        140,
+        14,
+        14,
+        14,
+        14,
+        14,
+        15,
+        15
+      ]
+    },
+    {
+      "dataId": 231250,
+      "names": {
+        "en": "Passionate Rose",
+        "tw": "熱情的玫瑰",
+        "kr": "정열의 장미",
+        "fr": "Rose passionnée",
+        "de": "Leidenschaftliche Rose",
+        "es": "Rosa pasional"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "ice",
+          "value": 75,
+          "turn": 4
+        }
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 20380,
+      "names": {
+        "en": "Flood",
+        "tw": "洪水",
+        "kr": "플러드",
+        "fr": "Inondation",
+        "de": "Flut",
+        "es": "Inundación"
+      },
+      "damage": "magic",
+      "base": 250,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "lightning",
+          "value": 50,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        133,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "dataId": 231252,
+      "names": {
+        "en": "Ice Bloom",
+        "tw": "冰之花綻",
+        "kr": "얼음꽃",
+        "fr": "Éclat de givre",
+        "de": "Eisblüte",
+        "es": "Floración helada"
+      },
+      "damage": "magic",
+      "base": 300,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231256,
+      "names": {
+        "en": "Blue Harmony",
+        "tw": "藍色和弦",
+        "kr": "푸르른 가약",
+        "fr": "Harmonie bleue",
+        "de": "Blaue Harmonie",
+        "es": "Armonía azul"
+      },
+      "damage": "magic",
+      "base": 210,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice",
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostModifier"
+      ],
+      "ignore": 50,
+      "boostModifiers": [
+        {
+          "id": 231246,
+          "value": 150,
+          "turn": 5,
+          "uniqueIdentifier": 1231
+        },
+        {
+          "id": 231252,
+          "value": 150,
+          "turn": 5,
+          "uniqueIdentifier": 1231
+        }
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 509964,
+      "names": {
+        "en": "Love Tactics",
+        "tw": "愛情戰略",
+        "kr": "사랑의 전술",
+        "fr": "Stratégie en amour",
+        "de": "Liebesstrategien",
+        "es": "Tácticas amorosas"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "ice",
+          "value": 100,
+          "turn": 4
+        },
+        {
+          "type": "water",
+          "value": 100,
+          "turn": 4
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 5,
+        "unlockId": 231257
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 509966,
+      "names": {
+        "en": "Magical Climax",
+        "tw": "戲劇化高潮",
+        "kr": "환상적인 절정",
+        "fr": "Apogée magique",
+        "de": "Magischer Höhepunkt",
+        "es": "Clímax mágico"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "mag",
+          "value": 200,
+          "turn": 5
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231246,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 1232
+        },
+        {
+          "id": 231252,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 1232
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 5,
+        "unlockId": 231258
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 100024107,
+      "names": {
+        "en": "Rose Illusion",
+        "tw": "玫瑰幻影",
+        "kr": "환상의 장미",
+        "fr": "Rose illusoire",
+        "de": "Rosenillusion",
+        "es": "Ilusión de rosas"
+      },
+      "damage": "magic",
+      "base": 1250,
+      "hitDamage": [
+        5,
+        5,
+        5,
+        5,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "isLB": true,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostModifier"
+      ],
+      "ignore": 50,
+      "boostModifiers": [
+        {
+          "id": 231246,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 1233
+        },
+        {
+          "id": 231252,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 1233
+        }
+      ],
+      "framesList": [
+        139,
+        16,
+        16,
+        10,
+        16,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 5,
+      "abilities": [
+        231243,
+        231244,
+        231245,
+        231246,
+        231249,
+        231250,
+        231251,
+        231252,
+        231256,
+        231257,
+        231258,
+        800083,
+        509991,
+        509964,
+        509966
+      ]
+    },
+    {
+      "count": 4,
+      "abilities": [
+        231243,
+        231244,
+        231245,
+        231246,
+        231249,
+        231250,
+        231251,
+        231252,
+        231256,
+        231257,
+        231258,
+        800083,
+        509991,
+        509964,
+        509966
+      ]
+    },
+    {
+      "count": 2,
+      "abilities": [
+        231243,
+        231244,
+        231245,
+        231246,
+        231249,
+        231250,
+        231251,
+        231252,
+        231256,
+        231257,
+        231258,
+        800083,
+        509991,
+        509964,
+        509966
+      ]
+    },
+    {
+      "count": 3,
+      "abilities": [
+        231243,
+        231244,
+        231245,
+        231246,
+        231249,
+        231250,
+        231251,
+        231252,
+        231256,
+        231257,
+        231258,
+        800083,
+        509991,
+        509964,
+        509966
+      ]
+    }
+  ],
+  "multipleWhite": 3,
+  "multipleBlack": 3,
+  "multipleGreen": 3
+},
+{
+  "dataId": 100024205,
+  "names": {
+    "en": "Sweet Luka",
+    "tw": "甜蜜露露卡",
+    "kr": "스위트 루루카",
+    "fr": "Tendre Luluka",
+    "de": "Liebliche Luka",
+    "es": "Luka encantadora"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 99,
+        "pot": 20
+      },
+      "mag": {
+        "base": 129,
+        "pot": 20
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 128,
+        "pot": 30
+      },
+      "mag": {
+        "base": 167,
+        "pot": 30
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 166,
+        "pot": 50
+      },
+      "mag": {
+        "base": 217,
+        "pot": 50
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 231263,
+      "names": {
+        "en": "Wind Whip",
+        "tw": "風之鮮奶油",
+        "kr": "바람의 휘핑크림",
+        "fr": "Fouet de vent",
+        "de": "Windschlagen",
+        "es": "Batido de viento"
+      },
+      "damage": "magic",
+      "base": 280,
+      "hitDamage": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        30
+      ],
+      "castTime": 40,
+      "elements": [
+        "wind"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        70,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "dataId": 231264,
+      "names": {
+        "en": "Light Whip",
+        "tw": "光之鮮奶油",
+        "kr": "빛의 휘핑크림",
+        "fr": "Fouet de lumière",
+        "de": "Lichtschlagen",
+        "es": "Batido de luz"
+      },
+      "damage": "magic",
+      "base": 280,
+      "hitDamage": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        16
+      ],
+      "castTime": 40,
+      "elements": [
+        "light"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        70,
+        7,
+        5,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 231265,
+      "names": {
+        "en": "Topping - Water",
+        "tw": "甜點裝飾·水",
+        "kr": "토핑·물",
+        "fr": "Garniture - Eau",
+        "de": "Garnierung - Wasser",
+        "es": "Guarnición - Agua"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imbue"
+      ],
+      "imbues": [
+        {
+          "element": "water",
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231269,
+      "names": {
+        "en": "Water Whip",
+        "tw": "水之鮮奶油",
+        "kr": "물의 휘핑크림",
+        "fr": "Fouet d'eau",
+        "de": "Wasserschlagen",
+        "es": "Batido de agua"
+      },
+      "damage": "magic",
+      "base": 280,
+      "hitDamage": [
+        5,
+        5,
+        5,
+        5,
+        80
+      ],
+      "castTime": 50,
+      "elements": [
+        "water"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        52,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231270,
+      "names": {
+        "en": "Topping - Wind",
+        "tw": "甜點裝飾·風",
+        "kr": "토핑·바람",
+        "fr": "Garniture - Vent",
+        "de": "Garnierung - Wind",
+        "es": "Guarnición - Viento"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imbue"
+      ],
+      "imbues": [
+        {
+          "element": "wind",
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231271,
+      "names": {
+        "en": "Topping - Light",
+        "tw": "甜點裝飾·光",
+        "kr": "토핑·빛",
+        "fr": "Garniture - Lumière",
+        "de": "Garnierung - Licht",
+        "es": "Guarnición - Luz"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imbue"
+      ],
+      "imbues": [
+        {
+          "element": "light",
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 509971,
+      "names": {
+        "en": "Silky Chocolate Pudding",
+        "tw": "絲綢可可布丁",
+        "kr": "보드라운 초콜릿 푸딩",
+        "fr": "Pudding au chocolat soyeux",
+        "de": "Seidiger Schokopudding",
+        "es": "Flan de chocolate"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 3
+        },
+        {
+          "stat": "def",
+          "value": 150,
+          "turn": 3
+        },
+        {
+          "stat": "mag",
+          "value": 150,
+          "turn": 3
+        },
+        {
+          "stat": "spr",
+          "value": 150,
+          "turn": 3
+        }
+      ],
+      "unlockBy": {
+        "509970": {
+          "turns": 2,
+          "nbUse": null,
+          "insteadOf": null
+        }
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 509975,
+      "names": {
+        "en": "Gorgeous Chocolate à La Mode",
+        "tw": "豪華巧克力雪糕",
+        "kr": "화려한 초콜릿 아라모드",
+        "fr": "Sublime chocolat à la mode",
+        "de": "Prächtige Schokolade à la mode",
+        "es": "Chocolate à La Mode insuperable"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 200,
+          "turn": 3
+        },
+        {
+          "stat": "def",
+          "value": 200,
+          "turn": 3
+        },
+        {
+          "stat": "mag",
+          "value": 200,
+          "turn": 3
+        },
+        {
+          "stat": "spr",
+          "value": 200,
+          "turn": 3
+        }
+      ],
+      "unlockBy": {
+        "509974": {
+          "turns": 9999,
+          "nbUse": null,
+          "insteadOf": null
+        },
+        "509979": {
+          "turns": 9999,
+          "nbUse": null,
+          "insteadOf": null
+        },
+        "509982": {
+          "turns": 9999,
+          "nbUse": null,
+          "insteadOf": null
+        }
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231276,
+      "names": {
+        "en": "Meltdown - Water & Wind",
+        "tw": "融化·水風",
+        "kr": "용해·물/바람",
+        "fr": "Fonte - Eau et vent",
+        "de": "Einschmelzen - Wasser & Wind",
+        "es": "Fundir - Agua y viento"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil",
+        "buff"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 100,
+          "turn": 5
+        },
+        {
+          "type": "wind",
+          "value": 100,
+          "turn": 5
+        }
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 120,
+          "turn": 5
+        },
+        {
+          "stat": "def",
+          "value": 120,
+          "turn": 5
+        },
+        {
+          "stat": "mag",
+          "value": 120,
+          "turn": 5
+        },
+        {
+          "stat": "spr",
+          "value": 120,
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231277,
+      "names": {
+        "en": "Meltdown - Water & Light",
+        "tw": "融化·水光",
+        "kr": "용해·물/빛",
+        "fr": "Fonte - Eau et lumière",
+        "de": "Einschmelzen - Wasser & Licht",
+        "es": "Fundir - Agua y luz"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 100,
+          "turn": 5
+        },
+        {
+          "type": "light",
+          "value": 100,
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231278,
+      "names": {
+        "en": "Meltdown - Wind & Light",
+        "tw": "融化·風光",
+        "kr": "용해·바람/빛",
+        "fr": "Fonte - Vent et lumière",
+        "de": "Einschmelzen - Wind & Licht",
+        "es": "Fundir - Viento y luz"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "wind",
+          "value": 100,
+          "turn": 5
+        },
+        {
+          "type": "light",
+          "value": 100,
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 100024207,
+      "names": {
+        "en": "Sweet Present",
+        "tw": "甜美禮物",
+        "kr": "달콤한 선물",
+        "fr": "Tendre présent",
+        "de": "Süßes Geschenk",
+        "es": "Regalo dulce"
+      },
+      "damage": "magic",
+      "base": 1200,
+      "hitDamage": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        50
+      ],
+      "dualable": false,
+      "isLB": true,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        93,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        52
+      ]
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 2,
+      "abilities": [
+        231263,
+        231264,
+        231265,
+        231269,
+        231270,
+        231271,
+        231272,
+        231276,
+        231277,
+        231278,
+        231279,
+        231280,
+        509971,
+        509972,
+        509973,
+        509975,
+        509977,
+        509980
+      ]
+    }
+  ]
+},
+{
+  "dataId": 401008905,
+  "names": {
+    "en": "Sieghard & Ignacio",
+    "tw": "吉克哈特&伊格尼西奧",
+    "kr": "지크하르트&이그니시오",
+    "fr": "Sieghard et Ignacio",
+    "es": "Sieghard e Ignacio"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 126,
+        "pot": 24
+      },
+      "mag": {
+        "base": 63,
+        "pot": 16
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 164,
+        "pot": 34
+      },
+      "mag": {
+        "base": 82,
+        "pot": 26
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 214,
+        "pot": 65
+      },
+      "mag": {
+        "base": 107,
+        "pot": 40
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 913758,
+      "names": {
+        "en": "Tough Love",
+        "tw": "苦澀戀情",
+        "kr": "전쟁 같은 사랑",
+        "fr": "Battre la chamade",
+        "de": "Rau aber herzlich",
+        "es": "Amor férreo"
+      },
+      "base": 350,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 913759,
+      "names": {
+        "en": "Debilitating Charm",
+        "tw": "越消耗越有魅力",
+        "kr": "치명적인 매력",
+        "fr": "Maladie d'amour",
+        "de": "Entwaffnender Charme",
+        "es": "Encantamiento debilitador"
+      },
+      "base": 350,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "break"
+      ],
+      "breaks": [
+        {
+          "stat": "def",
+          "value": 60,
+          "turn": 5
+        },
+        {
+          "stat": "spr",
+          "value": 60,
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 913761,
+      "names": {
+        "en": "Weakening Charm",
+        "tw": "越衰弱越有魅力",
+        "kr": "숨 막히는 매력",
+        "fr": "Vertige de l'amour",
+        "de": "Schwächender Charme",
+        "es": "Encanto debilitante"
+      },
+      "base": 350,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "break"
+      ],
+      "breaks": [
+        {
+          "stat": "atk",
+          "value": 60,
+          "turn": 5
+        },
+        {
+          "stat": "mag",
+          "value": 60,
+          "turn": 5
+        }
+      ],
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 913766,
+      "names": {
+        "en": "Burning Desire",
+        "tw": "熱烈期望",
+        "kr": "불타는 열망",
+        "fr": "Désir brûlant",
+        "de": "Sehnlicher Wunsch",
+        "es": "Deseo ardiente"
+      },
+      "base": 400,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "elements": [
+        "fire"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "ignore": 50,
+      "imperils": [
+        {
+          "type": "fire",
+          "value": 100,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 913768,
+      "names": {
+        "en": "Charmed, I'm Sure",
+        "tw": "著迷了吧！",
+        "kr": "내게 반해버렸군!",
+        "fr": "Charmante rencontre",
+        "de": "Entzückend, nicht wahr?",
+        "es": "¿Te gusta lo que ves?"
+      },
+      "base": 400,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "ignore": 50,
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 100,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 20340,
+      "names": {
+        "en": "Stonja",
+        "tw": "強落石",
+        "kr": "스톤쟈",
+        "fr": "Terre max",
+        "de": "Terraka",
+        "es": "Piedra+++"
+      },
+      "damage": "magic",
+      "base": 100,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "earth"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 100
+      },
+      "framesList": [
+        170
+      ]
+    },
+    {
+      "dataId": 20290,
+      "names": {
+        "en": "Firaja",
+        "tw": "強火焰",
+        "kr": "파이자",
+        "fr": "Feu max",
+        "de": "Feuka",
+        "es": "Piro+++"
+      },
+      "damage": "magic",
+      "base": 100,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "fire"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 100
+      },
+      "framesList": [
+        210
+      ]
+    },
+    {
+      "dataId": 913770,
+      "names": {
+        "en": "Affectionate Encouragement",
+        "tw": "深情激勵",
+        "kr": "다정한 응원",
+        "fr": "Encouragement affectueux",
+        "de": "Liebevolle Ermunterung",
+        "es": "Apoyo cariñoso"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 200,
+          "turn": 3
+        },
+        {
+          "stat": "atk",
+          "value": 120,
+          "turn": 3
+        },
+        {
+          "stat": "mag",
+          "value": 120,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 913771,
+      "names": {
+        "en": "Affectionate Protection",
+        "tw": "深情愛護",
+        "kr": "다정한 보호",
+        "fr": "Protection affectueuse",
+        "de": "Liebevoller Schutz",
+        "es": "Protección cariñosa"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff"
+      ],
+      "buffs": [
+        {
+          "stat": "def",
+          "value": 200,
+          "turn": 3
+        },
+        {
+          "stat": "def",
+          "value": 120,
+          "turn": 3
+        },
+        {
+          "stat": "spr",
+          "value": 120,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 913774,
+      "names": {
+        "en": "Love Hurts",
+        "tw": "悲傷的愛情",
+        "kr": "가슴 아픈 사랑",
+        "fr": "Peine de cœur",
+        "de": "Liebe tut weh",
+        "es": "El amor duele"
+      },
+      "base": 500,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 913778,
+      "names": {
+        "en": "Striking Good Looks",
+        "tw": "引人注目的美貌",
+        "kr": "눈길을 사로잡는 미모",
+        "fr": "Une allure d'enfer",
+        "de": "Markant gutes Aussehen",
+        "es": "A posar"
+      },
+      "base": 500,
+      "hitDamage": [
+        100
+      ],
+      "canDualSkill": false,
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "buff",
+        "damage"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 300,
+          "turn": 3
+        },
+        {
+          "stat": "def",
+          "value": 300,
+          "turn": 3
+        },
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 5
+        },
+        {
+          "stat": "def",
+          "value": 150,
+          "turn": 5
+        }
+      ],
+      "ignore": 50,
+      "framesList": [
+        2
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 5,
+        "unlockId": 913777
+      }
+    },
+    {
+      "dataId": 913779,
+      "names": {
+        "en": "Fiery Passion",
+        "tw": "熊熊熱情",
+        "kr": "불타는 마음",
+        "fr": "Passion enflammée",
+        "de": "Feurige Leidenschaft",
+        "es": "Pasión ardiente"
+      },
+      "base": 1000,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "elements": [
+        "fire"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "imbue",
+        "damage"
+      ],
+      "imbues": [
+        {
+          "element": "fire",
+          "turn": 3
+        },
+        {
+          "element": "fire",
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        2
+      ],
+      "unlockBy": {
+        "913778": {
+          "turns": 3,
+          "nbUse": null,
+          "insteadOf": null
+        }
+      }
+    },
+    {
+      "dataId": 913780,
+      "names": {
+        "en": "Just a Crush",
+        "tw": "僅是單戀",
+        "kr": "그저 짝사랑",
+        "fr": "Petit béguin",
+        "de": "Nur ein Schwarm",
+        "es": "Amor aplastante"
+      },
+      "base": 1000,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "imbue",
+        "damage"
+      ],
+      "imbues": [
+        {
+          "element": "earth",
+          "turn": 3
+        },
+        {
+          "element": "earth",
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        2
+      ],
+      "unlockBy": {
+        "913778": {
+          "turns": 3,
+          "nbUse": null,
+          "insteadOf": null
+        }
+      }
+    },
+    {
+      "dataId": 913784,
+      "names": {
+        "en": "Gigantic Hug",
+        "tw": "大大的擁抱",
+        "kr": "포옹은 크게",
+        "fr": "Câlin gigantesque",
+        "de": "Riesige Umarmung",
+        "es": "Abrazo del oso"
+      },
+      "base": 12000,
+      "hitDamage": [
+        100
+      ],
+      "canDualSkill": false,
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostLB"
+      ],
+      "boostLB": [
+        {
+          "value": 220,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        2
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 7,
+        "unlockId": 913783
+      }
+    },
+    {
+      "dataId": 913785,
+      "names": {
+        "en": "All Roses Have Thorns",
+        "tw": "再美的玫瑰都有刺",
+        "kr": "장미에는 가시가 있다",
+        "fr": "Chaque rose a des épines",
+        "de": "Alle Rosen haben Dornen",
+        "es": "Hasta la rosa más bella tiene espinas"
+      },
+      "base": 3000,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        2
+      ]
+    },
+    {
+      "dataId": 401008907,
+      "names": {
+        "en": "Charming Duo",
+        "tw": "充滿魅力的兩人",
+        "kr": "매력 발산 2인조",
+        "fr": "Duo de charme",
+        "de": "Charmantes Duo",
+        "es": "Dúo encantador"
+      },
+      "base": 1200,
+      "hitDamage": [
+        100
+      ],
+      "dualable": false,
+      "isLB": true,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        380
+      ]
+    }
+  ],
+  "passiveLBDamage": [
+    {
+      "value": 50,
+      "rarity": 6
+    },
+    {
+      "value": 50,
+      "rarity": 6
+    },
+    {
+      "value": 150,
+      "rarity": 7
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 2,
+      "abilities": [
+        913758,
+        913759,
+        913761,
+        913765,
+        913766,
+        913768,
+        913770,
+        913771,
+        913774,
+        913777,
+        913786,
+        913779,
+        913780,
+        913778
+      ]
+    },
+    {
+      "count": 3,
+      "abilities": [
+        913758,
+        913759,
+        913761,
+        913765,
+        913766,
+        913768,
+        913770,
+        913771,
+        913774,
+        913777,
+        913786,
+        913779,
+        913780,
+        913778
+      ]
+    },
+    {
+      "count": 1,
+      "abilities": [
+        null
+      ]
+    }
+  ]
+},
+{
+  "dataId": 401009005,
+  "names": {
+    "en": "Sakura & Ayaka",
+    "tw": "櫻&彩花",
+    "kr": "사쿠라&아야카",
+    "fr": "Sakura et Ayaka",
+    "es": "Sakura y Ayaka"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 63,
+        "pot": 20
+      },
+      "mag": {
+        "base": 126,
+        "pot": 20
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 82,
+        "pot": 30
+      },
+      "mag": {
+        "base": 164,
+        "pot": 30
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 107,
+        "pot": 50
+      },
+      "mag": {
+        "base": 214,
+        "pot": 50
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 913717,
+      "names": {
+        "en": "Love from Above",
+        "tw": "愛從天而降",
+        "kr": "내리사랑",
+        "fr": "Pluie d'amour",
+        "de": "Liebesregen",
+        "es": "Amor de las alturas"
+      },
+      "castTime": 10,
+      "offset": 14,
+      "effectOrder": [
+        "jump"
+      ],
+      "jump": {
+        "type": "timed",
+        "round": 1,
+        "base": 214,
+        "damageType": "physic",
+        "hitDamage": [
+          100
+        ],
+        "framesList": [
+          10
+        ]
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 20220,
+      "names": {
+        "en": "Thundaga",
+        "tw": "大雷電",
+        "kr": "선더가",
+        "fr": "Foudre X",
+        "de": "Blitzga",
+        "es": "Electro++"
+      },
+      "damage": "magic",
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        70
+      ]
+    },
+    {
+      "dataId": 913728,
+      "names": {
+        "en": "You can do it!",
+        "tw": "你可以的！",
+        "kr": "할 수 있어!",
+        "fr": "Tu peux le faire !",
+        "de": "Du schaffst es!",
+        "es": "¡Puedes hacerlo!"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 130,
+          "turn": 4
+        },
+        {
+          "stat": "def",
+          "value": 130,
+          "turn": 4
+        },
+        {
+          "stat": "mag",
+          "value": 130,
+          "turn": 4
+        },
+        {
+          "stat": "spr",
+          "value": 130,
+          "turn": 4
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 10210,
+      "names": {
+        "en": "Holy",
+        "tw": "神聖",
+        "kr": "홀리",
+        "fr": "Sidéral",
+        "de": "Sanctus",
+        "es": "Sanctus"
+      },
+      "damage": "magic",
+      "base": 230,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "white",
+      "elements": [
+        "light"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        450
+      ]
+    },
+    {
+      "dataId": 20310,
+      "names": {
+        "en": "Thundaja",
+        "tw": "強雷電",
+        "kr": "선더쟈",
+        "fr": "Foudre max",
+        "de": "Blitzka",
+        "es": "Electro+++"
+      },
+      "damage": "magic",
+      "base": 100,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 100
+      },
+      "framesList": [
+        150
+      ]
+    },
+    {
+      "dataId": 913729,
+      "names": {
+        "en": "Magnetizing Wink",
+        "tw": "魅惑的媚眼",
+        "kr": "유혹의 윙크",
+        "fr": "Clin d'œil magnétique",
+        "de": "Magnetisierendes Zwinkern",
+        "es": "Guiño magnético"
+      },
+      "damage": "magic",
+      "base": 1000,
+      "hitDamage": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        44
+      ],
+      "castTime": 38,
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil",
+        "damage"
+      ],
+      "imperils": [
+        {
+          "type": "lightning",
+          "value": 80,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        42,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "dataId": 913730,
+      "names": {
+        "en": "Shiny Uniform",
+        "tw": "輝煌的服裝",
+        "kr": "눈부신 의상",
+        "fr": "Uniforme étincelant",
+        "de": "Glänzende Uniform",
+        "es": "Uniforme brillante"
+      },
+      "damage": "magic",
+      "base": 1000,
+      "hitDamage": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        44
+      ],
+      "castTime": 38,
+      "elements": [
+        "light"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil",
+        "damage"
+      ],
+      "imperils": [
+        {
+          "type": "light",
+          "value": 80,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        42,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "dataId": 913743,
+      "names": {
+        "en": "Kawaii Smile",
+        "tw": "可愛的笑容",
+        "kr": "귀여운 미소",
+        "fr": "Adorable sourire",
+        "de": "Kawaii-es Lächeln",
+        "es": "Sonrisa kawaii"
+      },
+      "canDualSkill": false,
+      "castTime": 50,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff",
+        "boostLB"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 3
+        },
+        {
+          "stat": "def",
+          "value": 150,
+          "turn": 3
+        },
+        {
+          "stat": "mag",
+          "value": 150,
+          "turn": 3
+        },
+        {
+          "stat": "spr",
+          "value": 150,
+          "turn": 3
+        }
+      ],
+      "boostLB": [
+        {
+          "value": 30,
+          "turn": 4
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 6,
+        "unlockId": 913742
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 913745,
+      "names": {
+        "en": "Electrifying Touch",
+        "tw": "觸電的感覺",
+        "kr": "찌릿찌릿 손길",
+        "fr": "Coup de foudre",
+        "de": "Elektrisierende Berührung",
+        "es": "Toque electrizante"
+      },
+      "damage": "magic",
+      "base": 3500,
+      "hitDamage": [
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        2,
+        2,
+        85.71428571428571
+      ],
+      "canDualSkill": false,
+      "castTime": 38,
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "break",
+        "imperil",
+        "buff",
+        "damage"
+      ],
+      "breaks": [
+        {
+          "stat": "spr",
+          "value": 74,
+          "turn": 1
+        }
+      ],
+      "imperils": [
+        {
+          "type": "lightning",
+          "value": 100,
+          "turn": 1
+        }
+      ],
+      "buffs": [
+        {
+          "stat": "spr",
+          "value": 200,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        42,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 2,
+        "unlockId": 913744
+      }
+    },
+    {
+      "dataId": 913747,
+      "names": {
+        "en": "V-I-C-T-O-R-Y!",
+        "fr": "V.I.C.T.O.I.R.E !",
+        "de": "T-R-I-U-M-P-H!",
+        "es": "¡V-I-C-T-O-R-I-A!"
+      },
+      "damage": "magic",
+      "base": 3500,
+      "hitDamage": [
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        1.7142857142857144,
+        2,
+        2,
+        85.71428571428571
+      ],
+      "canDualSkill": false,
+      "castTime": 38,
+      "elements": [
+        "light"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "break",
+        "imperil",
+        "buff",
+        "damage"
+      ],
+      "breaks": [
+        {
+          "stat": "spr",
+          "value": 74,
+          "turn": 1
+        }
+      ],
+      "imperils": [
+        {
+          "type": "light",
+          "value": 100,
+          "turn": 1
+        }
+      ],
+      "buffs": [
+        {
+          "stat": "spr",
+          "value": 200,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        42,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 2,
+        "unlockId": 913746
+      }
+    },
+    {
+      "dataId": 401009007,
+      "names": {
+        "en": "L-O-V-E!",
+        "fr": "A.M.O.U.R !",
+        "de": "L-I-E-B-E!",
+        "es": "¡A-M-O-R!"
+      },
+      "dualable": false,
+      "isLB": true,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "lightning",
+          "value": 120,
+          "turn": 3
+        },
+        {
+          "type": "light",
+          "value": 120,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    }
+  ],
+  "multipleBlack": 2,
+  "multipleWhite": 2,
+  "multipleGreen": 2,
+  "multiCasts": [
+    {
+      "count": 2,
+      "abilities": [
+        913718,
+        913720,
+        913724,
+        913726,
+        913727,
+        913728,
+        913729,
+        913730,
+        913731,
+        913735,
+        913740,
+        913742,
+        913744,
+        913746,
+        913748,
+        913741,
+        913743,
+        913745,
+        913747
+      ]
+    },
+    {
+      "count": 3,
+      "abilities": [
+        913729,
+        913730,
+        913744,
+        913746,
+        913745,
+        913747
+      ]
+    }
+  ],
+  "passiveBoostModifiers": [
+    {
+      "id": 913729,
+      "value": 200,
+      "rarity": 7
+    },
+    {
+      "id": 913730,
+      "value": 200,
+      "rarity": 7
+    },
+    {
+      "id": 913745,
+      "value": 200,
+      "rarity": 7
+    },
+    {
+      "id": 913747,
+      "value": 200,
+      "rarity": 7
+    },
+    {
+      "id": 20310,
+      "value": 1000,
+      "rarity": 7
+    },
+    {
+      "id": 10210,
+      "value": 1000,
+      "rarity": 7
+    },
+    {
+      "id": 913729,
+      "value": 300,
+      "rarity": 7
+    },
+    {
+      "id": 913730,
+      "value": 300,
+      "rarity": 7
+    },
+    {
+      "id": 913745,
+      "value": 300,
+      "rarity": 7
+    },
+    {
+      "id": 913747,
+      "value": 300,
+      "rarity": 7
+    }
+  ]
+},
+{
+  "dataId": 203001605,
+  "names": {
+    "en": "Awakened Onion Knight",
+    "tw": "覺醒洋蔥劍士",
+    "kr": "어니언 나이트",
+    "fr": "Chevalier Oignon éveillé",
+    "de": "Erweckter Zwiebelritter",
+    "es": "Caballero Cebolla despertado"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 121,
+        "pot": 24
+      },
+      "mag": {
+        "base": 89,
+        "pot": 16
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 158,
+        "pot": 34
+      },
+      "mag": {
+        "base": 116,
+        "pot": 26
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 206,
+        "pot": 65
+      },
+      "mag": {
+        "base": 151,
+        "pot": 40
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 231570,
+      "names": {
+        "en": "Full Speed Bladeblitz+",
+        "tw": "全速全斬改",
+        "kr": "개량형 전속 전방위 베기",
+        "fr": "Lame éclair rapide +",
+        "de": "Voller Klingenblitz+",
+        "es": "Tormenta de acero+"
+      },
+      "base": 360,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "effectOrder": [
+        "break",
+        "damage"
+      ],
+      "framesList": [
+        42,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 231571,
+      "names": {
+        "en": "Adept Fire Art",
+        "tw": "火之熟練技",
+        "kr": "불의 숙련기",
+        "fr": "Technique maîtresse de feu",
+        "de": "Versierte Feuerkunst",
+        "es": "Arte maestra de fuego"
+      },
+      "base": 400,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "elements": [
+        "fire"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 3
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231571,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11203
+        },
+        {
+          "id": 231575,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11203
+        },
+        {
+          "id": 231581,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11203
+        }
+      ],
+      "framesList": [
+        42,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 231572,
+      "names": {
+        "en": "Adept Water Art",
+        "tw": "水之熟練技",
+        "kr": "물의 숙련기",
+        "fr": "Technique maîtresse d'eau",
+        "de": "Versierte Wasserkunst",
+        "es": "Arte maestra de agua"
+      },
+      "base": 400,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "elements": [
+        "water"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 3
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231572,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11501
+        },
+        {
+          "id": 231576,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11501
+        },
+        {
+          "id": 231582,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11501
+        }
+      ],
+      "framesList": [
+        42,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 231573,
+      "names": {
+        "en": "Adept Wind Art",
+        "tw": "風之熟練技",
+        "kr": "바람의 숙련기",
+        "fr": "Technique maîtresse de vent",
+        "de": "Versierte Windkunst",
+        "es": "Arte maestra de viento"
+      },
+      "base": 400,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "elements": [
+        "wind"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 3
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231573,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11601
+        },
+        {
+          "id": 231577,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11601
+        },
+        {
+          "id": 231583,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11601
+        }
+      ],
+      "framesList": [
+        42,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 231574,
+      "names": {
+        "en": "Adept Earth Art",
+        "tw": "土之熟練技",
+        "kr": "땅의 숙련기",
+        "fr": "Technique maîtresse de terre",
+        "de": "Versierte Erdkunst",
+        "es": "Arte maestra de tierra"
+      },
+      "base": 400,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 150,
+          "turn": 3
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231574,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11701
+        },
+        {
+          "id": 231578,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11701
+        },
+        {
+          "id": 231584,
+          "value": 100,
+          "turn": 3,
+          "uniqueIdentifier": 11701
+        }
+      ],
+      "framesList": [
+        42,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 510264,
+      "names": {
+        "en": "Onion Dissect",
+        "tw": "洋蔥解剖",
+        "kr": "어니언 디섹트",
+        "fr": "Dissection d'Oignon",
+        "de": "Zwiebelaufschnitt",
+        "es": "Disección Cebolla"
+      },
+      "base": 850,
+      "hitDamage": [
+        1.2941176470588238,
+        1.2941176470588238,
+        1.2941176470588238,
+        1.2941176470588238,
+        1.2941176470588238,
+        1.2941176470588238,
+        1.2941176470588238,
+        1.2941176470588238,
+        1.411764705882353,
+        88.23529411764706
+      ],
+      "canDualSkill": false,
+      "castTime": 40,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostModifier"
+      ],
+      "ignore": 50,
+      "boostModifiers": [
+        {
+          "id": 231570,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231575,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231576,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231577,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231578,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231581,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231582,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231583,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231584,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        },
+        {
+          "id": 231585,
+          "value": 200,
+          "turn": 99999,
+          "uniqueIdentifier": 111015
+        }
+      ],
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "cooldown": {
+        "unlock": 5,
+        "wait": 5,
+        "unlockId": 800136
+      }
+    },
+    {
+      "dataId": 231575,
+      "names": {
+        "en": "Fire Slice",
+        "tw": "火焰削切",
+        "kr": "파이어 슬라이스",
+        "fr": "Ignilame",
+        "de": "Feuerschneider",
+        "es": "Tajo Piro"
+      },
+      "base": 445,
+      "hitDamage": [
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6741573033707866,
+        94.38202247191012
+      ],
+      "castTime": 40,
+      "elements": [
+        "fire"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "fire",
+          "value": 60,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 510130,
+      "names": {
+        "en": "Fire Slice",
+        "tw": "火焰削切",
+        "kr": "파이어 슬라이스",
+        "fr": "Ignilame",
+        "de": "Feuerschneider",
+        "es": "Tajo Piro"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "fire",
+          "value": 90,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 510131,
+      "names": {
+        "en": "Fire Slice",
+        "tw": "火焰削切",
+        "kr": "파이어 슬라이스",
+        "fr": "Ignilame",
+        "de": "Feuerschneider",
+        "es": "Tajo Piro"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "fire",
+          "value": 120,
+          "turn": 1
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231576,
+      "names": {
+        "en": "Water Slice",
+        "tw": "流水削切",
+        "kr": "워터 슬라이스",
+        "fr": "Hydrolame",
+        "de": "Wasserschneider",
+        "es": "Tajo Aqua"
+      },
+      "base": 445,
+      "hitDamage": [
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6741573033707866,
+        94.38202247191012
+      ],
+      "castTime": 40,
+      "elements": [
+        "water"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 60,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 510132,
+      "names": {
+        "en": "Water Slice",
+        "tw": "流水削切",
+        "kr": "워터 슬라이스",
+        "fr": "Hydrolame",
+        "de": "Wasserschneider",
+        "es": "Tajo Aqua"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 90,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 510133,
+      "names": {
+        "en": "Water Slice",
+        "tw": "流水削切",
+        "kr": "워터 슬라이스",
+        "fr": "Hydrolame",
+        "de": "Wasserschneider",
+        "es": "Tajo Aqua"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 120,
+          "turn": 1
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231577,
+      "names": {
+        "en": "Aero Slice",
+        "tw": "勁風削切",
+        "kr": "에어로 슬라이스",
+        "fr": "Aérolame",
+        "de": "Aero-Schneider",
+        "es": "Tajo Aero"
+      },
+      "base": 445,
+      "hitDamage": [
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6741573033707866,
+        94.38202247191012
+      ],
+      "castTime": 40,
+      "elements": [
+        "wind"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "wind",
+          "value": 60,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 510134,
+      "names": {
+        "en": "Aero Slice",
+        "tw": "勁風削切",
+        "kr": "에어로 슬라이스",
+        "fr": "Aérolame",
+        "de": "Aero-Schneider",
+        "es": "Tajo Aero"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "wind",
+          "value": 90,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 510135,
+      "names": {
+        "en": "Aero Slice",
+        "tw": "勁風削切",
+        "kr": "에어로 슬라이스",
+        "fr": "Aérolame",
+        "de": "Aero-Schneider",
+        "es": "Tajo Aero"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "wind",
+          "value": 120,
+          "turn": 1
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231578,
+      "names": {
+        "en": "Stone Slice",
+        "tw": "落石削切",
+        "kr": "스톤 슬라이스",
+        "fr": "Terralame",
+        "de": "Steinschneider",
+        "es": "Tajo Piedra"
+      },
+      "base": 445,
+      "hitDamage": [
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6179775280898877,
+        0.6741573033707866,
+        94.38202247191012
+      ],
+      "castTime": 40,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 60,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 510136,
+      "names": {
+        "en": "Stone Slice",
+        "tw": "落石削切",
+        "kr": "스톤 슬라이스",
+        "fr": "Terralame",
+        "de": "Steinschneider",
+        "es": "Tajo Piedra"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 90,
+          "turn": 2
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 510137,
+      "names": {
+        "en": "Stone Slice",
+        "tw": "落石削切",
+        "kr": "스톤 슬라이스",
+        "fr": "Terralame",
+        "de": "Steinschneider",
+        "es": "Tajo Piedra"
+      },
+      "castTime": 10,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 120,
+          "turn": 1
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231579,
+      "names": {
+        "en": "Pungent Onion",
+        "tw": "嗆辣洋蔥",
+        "kr": "피컨트 어니언",
+        "fr": "Oignon âcre",
+        "de": "Scharfe Zwiebel",
+        "es": "Cebolla olorosa"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "break",
+        "boostModifier"
+      ],
+      "breaks": [
+        {
+          "stat": "atk",
+          "value": 50,
+          "turn": 4
+        },
+        {
+          "stat": "mag",
+          "value": 50,
+          "turn": 4
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231571,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231572,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231573,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231574,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231575,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231576,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231577,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        },
+        {
+          "id": 231578,
+          "value": 150,
+          "turn": 4,
+          "uniqueIdentifier": 111005
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231581,
+      "names": {
+        "en": "Fire Shredder",
+        "tw": "火焰碎滅",
+        "kr": "파이어 슈레더",
+        "fr": "Tranchant de feu",
+        "de": "Feuerschredder",
+        "es": "Rallador Piro"
+      },
+      "base": 405,
+      "hitDamage": [
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.7407407407407408,
+        93.82716049382717
+      ],
+      "castTime": 40,
+      "elements": [
+        "fire"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 231582,
+      "names": {
+        "en": "Water Shredder",
+        "tw": "流水碎滅",
+        "kr": "워터 슈레더",
+        "fr": "Tranchant d'eau",
+        "de": "Wasserschredder",
+        "es": "Rallador Aqua"
+      },
+      "base": 405,
+      "hitDamage": [
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.7407407407407408,
+        93.82716049382717
+      ],
+      "castTime": 40,
+      "elements": [
+        "water"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 231583,
+      "names": {
+        "en": "Aero Shredder",
+        "tw": "勁風碎滅",
+        "kr": "에어로 슈레더",
+        "fr": "Tranchant de vent",
+        "de": "Aero-Schredder",
+        "es": "Rallador Aero"
+      },
+      "base": 405,
+      "hitDamage": [
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.7407407407407408,
+        93.82716049382717
+      ],
+      "castTime": 40,
+      "elements": [
+        "wind"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 231584,
+      "names": {
+        "en": "Stone Shredder",
+        "tw": "落石碎滅",
+        "kr": "스톤 슈레더",
+        "fr": "Tranchant de terre",
+        "de": "Steinschredder",
+        "es": "Rallador Piedra"
+      },
+      "base": 405,
+      "hitDamage": [
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.6790123456790123,
+        0.7407407407407408,
+        93.82716049382717
+      ],
+      "castTime": 40,
+      "elements": [
+        "earth"
+      ],
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "dataId": 231585,
+      "names": {
+        "en": "True Onion Chop",
+        "tw": "真・洋蔥斬碎",
+        "kr": "진·다진 양파",
+        "fr": "Taillade de l'Oignon +",
+        "de": "Zwiebelschlag",
+        "es": "Tajo Cebolla verdadero"
+      },
+      "base": 450,
+      "hitDamage": [
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.33333333333333326,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        0.4444444444444444,
+        88.88888888888889
+      ],
+      "castTime": 40,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        42,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "dataId": 510140,
+      "names": {
+        "en": "Precooking",
+        "tw": "預煮",
+        "kr": "사전 준비",
+        "fr": "Entrée",
+        "de": "Vorkochen",
+        "es": "Mise en place"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 200,
+          "turn": 3
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231570,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231571,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231572,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231573,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231574,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231575,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231576,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231577,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231578,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231581,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231582,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231583,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231584,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 231585,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        },
+        {
+          "id": 510141,
+          "value": 200,
+          "turn": 3,
+          "uniqueIdentifier": 111007
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 6,
+        "unlockId": 231586
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 510141,
+      "names": {
+        "en": "Twin Swords+",
+        "tw": "雙劍·改",
+        "kr": "개량형 트윈 소드",
+        "fr": "Épées jumelles +",
+        "de": "Zwillingsschwerter+",
+        "es": "Espadas gemelas+"
+      },
+      "base": 530,
+      "hitDamage": [
+        1.0377358490566038,
+        1.0377358490566038,
+        1.0377358490566038,
+        1.0377358490566038,
+        1.0377358490566038,
+        1.0377358490566038,
+        1.0377358490566038,
+        1.0377358490566038,
+        1.1320754716981134,
+        90.56603773584906
+      ],
+      "canDualSkill": false,
+      "castTime": 40,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "break",
+        "buff"
+      ],
+      "ignore": 50,
+      "breaks": [
+        {
+          "stat": "def",
+          "value": 70,
+          "turn": 1
+        }
+      ],
+      "buffs": [
+        {
+          "stat": "atk",
+          "value": 120,
+          "turn": 1
+        },
+        {
+          "stat": "mag",
+          "value": 120,
+          "turn": 1
+        }
+      ],
+      "framesList": [
+        110,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "cooldown": {
+        "unlock": 2,
+        "wait": 2,
+        "unlockId": 231587
+      }
+    },
+    {
+      "dataId": 203001607,
+      "names": {
+        "en": "Job Change Attack",
+        "tw": "轉職攻擊",
+        "kr": "직업 변경 어택",
+        "fr": "Coup du multijob",
+        "de": "Berufswechselangriff",
+        "es": "Cambio de profesión ofensivo"
+      },
+      "base": 3050,
+      "hitDamage": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        40
+      ],
+      "dualable": false,
+      "isLB": true,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostModifier"
+      ],
+      "boostModifiers": [
+        {
+          "id": 231570,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231575,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231576,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231577,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231578,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231581,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231582,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231583,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231584,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        },
+        {
+          "id": 231585,
+          "value": 500,
+          "turn": 5,
+          "uniqueIdentifier": 111006
+        }
+      ],
+      "framesList": [
+        42,
+        8,
+        8,
+        8,
+        8,
+        8,
+        21,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 2,
+      "abilities": [
+        231570,
+        231571,
+        231572,
+        231573,
+        231574,
+        231575,
+        231576,
+        231577,
+        231578,
+        231579,
+        231581,
+        231582,
+        231583,
+        231584,
+        231585,
+        231586,
+        231587,
+        800136,
+        510264,
+        510140,
+        510141
+      ]
+    },
+    {
+      "count": 3,
+      "abilities": [
+        231570,
+        231571,
+        231572,
+        231573,
+        231574,
+        231575,
+        231576,
+        231577,
+        231578,
+        231579,
+        231581,
+        231582,
+        231583,
+        231584,
+        231585,
+        231586,
+        231587,
+        800136,
+        510264,
+        510140,
+        510141
+      ]
+    }
+  ],
+  "maxChainCap": 6,
+  "passiveBoostModifiers": [
+    {
+      "id": 231581,
+      "value": 75,
+      "rarity": 7
+    },
+    {
+      "id": 231582,
+      "value": 75,
+      "rarity": 7
+    },
+    {
+      "id": 231583,
+      "value": 75,
+      "rarity": 7
+    },
+    {
+      "id": 231584,
+      "value": 75,
+      "rarity": 7
+    }
+  ]
+},
+{
+  "dataId": 203001805,
+  "names": {
+    "en": "Xande",
+    "tw": "魔王贊德",
+    "kr": "마왕 잔데",
+    "es": "Zande"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 75,
+        "pot": 16
+      },
+      "mag": {
+        "base": 123,
+        "pot": 24
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 98,
+        "pot": 26
+      },
+      "mag": {
+        "base": 160,
+        "pot": 34
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 128,
+        "pot": 40
+      },
+      "mag": {
+        "base": 209,
+        "pot": 65
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 231630,
+      "names": {
+        "en": "Scorching Flame",
+        "tw": "焦熱",
+        "kr": "집열",
+        "fr": "Flamme suprême",
+        "de": "Sengende Flamme",
+        "es": "Calor sofocante"
+      },
+      "damage": "magic",
+      "base": 240,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "castTime": 40,
+      "elements": [
+        "fire"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        42,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "dataId": 20250,
+      "names": {
+        "en": "Stonga",
+        "tw": "大落石",
+        "kr": "스톤가",
+        "fr": "Terre X",
+        "de": "Terraga",
+        "es": "Piedra++"
+      },
+      "damage": "magic",
+      "base": 180,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "earth"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        180
+      ]
+    },
+    {
+      "dataId": 231631,
+      "names": {
+        "en": "Ancient Darkga",
+        "tw": "遠古大暗黑",
+        "kr": "에인션트 다크가",
+        "fr": "Ténèbres X anciennes",
+        "de": "Uraltes Nega",
+        "es": "Sombra++ arcaica"
+      },
+      "damage": "magic",
+      "base": 400,
+      "hitDamage": [
+        3.125,
+        3.125,
+        3.125,
+        3.125,
+        87.5
+      ],
+      "castTime": 50,
+      "elements": [
+        "dark"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        52,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231632,
+      "names": {
+        "en": "Ancient Stonga",
+        "tw": "遠古大落石",
+        "kr": "에인션트 스톤가",
+        "fr": "Terre X ancienne",
+        "de": "Uraltes Terraga",
+        "es": "Piedra++ arcaica"
+      },
+      "damage": "magic",
+      "base": 400,
+      "hitDamage": [
+        3.125,
+        3.125,
+        3.125,
+        3.125,
+        87.5
+      ],
+      "castTime": 50,
+      "elements": [
+        "earth"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        52,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231633,
+      "names": {
+        "en": "Ancient Libra",
+        "tw": "遠古窺伺探測",
+        "kr": "에인션트 라이브라",
+        "fr": "Acuité ancienne",
+        "de": "Uralte Analyse",
+        "es": "Libra arcaica"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "break",
+        "boostModifier"
+      ],
+      "breaks": [
+        {
+          "stat": "spr",
+          "value": 60,
+          "turn": 3
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231631,
+          "value": 300,
+          "turn": 3,
+          "uniqueIdentifier": 12117
+        },
+        {
+          "id": 231632,
+          "value": 300,
+          "turn": 3,
+          "uniqueIdentifier": 12117
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 510266,
+      "names": {
+        "en": "Invoker of Darkness",
+        "tw": "呼喚黑暗之力",
+        "kr": "암흑을 부르는 힘",
+        "fr": "Invocateur des ténèbres",
+        "de": "Beschwörer der Dunkelheit",
+        "es": "Invocador de la Oscuridad"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil",
+        "boostModifier"
+      ],
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 100,
+          "turn": 4
+        },
+        {
+          "type": "dark",
+          "value": 100,
+          "turn": 4
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231638,
+          "value": 200,
+          "turn": 4,
+          "uniqueIdentifier": 12130
+        },
+        {
+          "id": 231639,
+          "value": 200,
+          "turn": 4,
+          "uniqueIdentifier": 12130
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 6,
+        "unlockId": 800140
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 20340,
+      "names": {
+        "en": "Stonja",
+        "tw": "強落石",
+        "kr": "스톤쟈",
+        "fr": "Terre max",
+        "de": "Terraka",
+        "es": "Piedra+++"
+      },
+      "damage": "magic",
+      "base": 100,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "earth"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 100
+      },
+      "framesList": [
+        170
+      ]
+    },
+    {
+      "dataId": 20400,
+      "names": {
+        "en": "Quake",
+        "tw": "地槌",
+        "kr": "퀘이크",
+        "fr": "Séisme",
+        "de": "Beben",
+        "es": "Seísmo"
+      },
+      "damage": "magic",
+      "base": 275,
+      "hitDamage": [
+        12,
+        13,
+        12,
+        13,
+        12,
+        13,
+        12,
+        13
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "earth"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 50,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        160,
+        22,
+        21,
+        22,
+        23,
+        23,
+        22,
+        23
+      ]
+    },
+    {
+      "dataId": 231634,
+      "names": {
+        "en": "Dark Stopga",
+        "tw": "暗黑大停止",
+        "kr": "다크 스톱가",
+        "fr": "Stop X ancien",
+        "de": "Dunkles Stoga",
+        "es": "Paro++ arcaico"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "dark",
+          "value": 80,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 20430,
+      "names": {
+        "en": "Meteor",
+        "tw": "隕石",
+        "kr": "메테오",
+        "fr": "Météore",
+        "de": "Meteo",
+        "es": "Meteo"
+      },
+      "damage": "magic",
+      "base": 250,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 25,
+      "framesList": [
+        350
+      ]
+    },
+    {
+      "dataId": 20350,
+      "names": {
+        "en": "Flare",
+        "tw": "核爆",
+        "kr": "플레어",
+        "fr": "Brasier",
+        "de": "Flamme",
+        "es": "Fulgor"
+      },
+      "damage": "magic",
+      "base": 230,
+      "hitDamage": [
+        100
+      ],
+      "castTime": 40,
+      "magicType": "black",
+      "elements": [
+        "fire"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "water",
+          "value": 30,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        240
+      ]
+    },
+    {
+      "dataId": 231635,
+      "names": {
+        "en": "Stone Stopga",
+        "tw": "落石大停止",
+        "kr": "스톤 스톱가",
+        "fr": "Stop X tellurique",
+        "de": "Steinernes Stoga",
+        "es": "Piedra Paro+"
+      },
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "earth",
+          "value": 80,
+          "turn": 3
+        }
+      ],
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231638,
+      "names": {
+        "en": "Ancient Meteor",
+        "tw": "遠古隕石",
+        "kr": "에인션트 메테오",
+        "fr": "Météore ancien",
+        "de": "Uraltes Meteo",
+        "es": "Meteo arcaico"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        3.5714285714285716,
+        3.5714285714285716,
+        3.5714285714285716,
+        3.5714285714285716,
+        85.71428571428571
+      ],
+      "castTime": 50,
+      "elements": [
+        "dark"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostModifier"
+      ],
+      "ignore": 50,
+      "boostModifiers": [
+        {
+          "id": 231638,
+          "value": 250,
+          "turn": 3,
+          "uniqueIdentifier": 12118
+        }
+      ],
+      "framesList": [
+        52,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231639,
+      "names": {
+        "en": "Ancient Quake",
+        "tw": "遠古地震",
+        "kr": "에인션트 퀘이크",
+        "fr": "Séisme ancien",
+        "de": "Uraltes Beben",
+        "es": "Seísmo arcaico"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        3.5714285714285716,
+        3.5714285714285716,
+        3.5714285714285716,
+        3.5714285714285716,
+        85.71428571428571
+      ],
+      "castTime": 50,
+      "elements": [
+        "earth"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "boostModifier"
+      ],
+      "ignore": 50,
+      "boostModifiers": [
+        {
+          "id": 231639,
+          "value": 250,
+          "turn": 3,
+          "uniqueIdentifier": 12119
+        }
+      ],
+      "framesList": [
+        52,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 510172,
+      "names": {
+        "en": "Demon King's Aura",
+        "tw": "魔王的靈氣",
+        "kr": "마왕의 아우라",
+        "fr": "Aura du roi démoniaque",
+        "de": "Aura des Dämonenkönigs",
+        "es": "Aura del rey demonio"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff"
+      ],
+      "buffs": [
+        {
+          "stat": "mag",
+          "value": 200,
+          "turn": 4
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 6,
+        "unlockId": 231640
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 203001807,
+      "names": {
+        "en": "Demon King's Meteor",
+        "tw": "魔王流星",
+        "kr": "마왕의 유성",
+        "fr": "Météore du roi démoniaque",
+        "de": "Meteorit des Dämonenkönigs",
+        "es": "Meteo del rey demonio"
+      },
+      "damage": "magic",
+      "base": 1350,
+      "hitDamage": [
+        33,
+        33,
+        34
+      ],
+      "dualable": false,
+      "isLB": true,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "ignore": 50,
+      "framesList": [
+        180,
+        5,
+        5
+      ]
+    }
+  ],
+  "multipleBlack": 2,
+  "passiveKillers": [
+    {
+      "race": "human",
+      "physic": 0,
+      "magic": 50,
+      "rarity": 5
+    }
+  ],
+  "passiveLBDamage": [
+    {
+      "value": 100,
+      "rarity": 6
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 2,
+      "abilities": [
+        231630,
+        231631,
+        231632,
+        231633,
+        231634,
+        231635,
+        231638,
+        231639,
+        231640,
+        800140,
+        510266,
+        510172
+      ]
+    },
+    {
+      "count": 3,
+      "abilities": [
+        231630,
+        231631,
+        231632,
+        231633,
+        231634,
+        231635,
+        231638,
+        231639,
+        231640,
+        800140,
+        510266,
+        510172
+      ]
+    },
+    {
+      "count": 4,
+      "abilities": [
+        231630,
+        231631,
+        231632,
+        231633,
+        231634,
+        231635,
+        231638,
+        231639,
+        231640,
+        800140,
+        510266,
+        510172
+      ]
+    }
+  ]
+},
+{
+  "dataId": 203001905,
+  "names": {
+    "en": "Hein",
+    "tw": "魔道師海因",
+    "kr": "마도사 하인"
+  },
+  "rarity": {
+    "min": 5,
+    "max": 7
+  },
+  "dataStats": {
+    "5": {
+      "atk": {
+        "base": 88,
+        "pot": 16
+      },
+      "mag": {
+        "base": 126,
+        "pot": 24
+      }
+    },
+    "6": {
+      "atk": {
+        "base": 115,
+        "pot": 26
+      },
+      "mag": {
+        "base": 165,
+        "pot": 34
+      }
+    },
+    "7": {
+      "atk": {
+        "base": 150,
+        "pot": 40
+      },
+      "mag": {
+        "base": 215,
+        "pot": 65
+      }
+    }
+  },
+  "abilities": [
+    {
+      "dataId": 231600,
+      "names": {
+        "en": "Fire Curse",
+        "tw": "炎咒",
+        "kr": "불꽃의 주술",
+        "fr": "Malédiction de feu",
+        "de": "Feuerfluch",
+        "es": "Maldición de fuego"
+      },
+      "damage": "magic",
+      "base": 420,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "fire"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231601,
+      "names": {
+        "en": "Ice Curse",
+        "tw": "冰咒",
+        "kr": "얼음의 주술",
+        "fr": "Malédiction de glace",
+        "de": "Eisfluch",
+        "es": "Maldición de hielo"
+      },
+      "damage": "magic",
+      "base": 420,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231602,
+      "names": {
+        "en": "Lightning Curse",
+        "tw": "雷咒",
+        "kr": "번개의 주술",
+        "fr": "Malédiction de foudre",
+        "de": "Blitzfluch",
+        "es": "Maldición de rayo"
+      },
+      "damage": "magic",
+      "base": 420,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 510265,
+      "names": {
+        "en": "Calamitous Curse",
+        "tw": "超咒法",
+        "kr": "초주법",
+        "fr": "Malédiction calamiteuse",
+        "de": "Verhängnisvoller Fluch",
+        "es": "Maldición funesta"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "buff",
+        "boostModifier"
+      ],
+      "buffs": [
+        {
+          "stat": "mag",
+          "value": 250,
+          "turn": 4
+        }
+      ],
+      "boostModifiers": [
+        {
+          "id": 231600,
+          "value": 500,
+          "turn": 4,
+          "uniqueIdentifier": 12129
+        },
+        {
+          "id": 231601,
+          "value": 500,
+          "turn": 4,
+          "uniqueIdentifier": 12129
+        },
+        {
+          "id": 231602,
+          "value": 500,
+          "turn": 4,
+          "uniqueIdentifier": 12129
+        },
+        {
+          "id": 231608,
+          "value": 500,
+          "turn": 4,
+          "uniqueIdentifier": 12129
+        },
+        {
+          "id": 231609,
+          "value": 500,
+          "turn": 4,
+          "uniqueIdentifier": 12129
+        },
+        {
+          "id": 231610,
+          "value": 500,
+          "turn": 4,
+          "uniqueIdentifier": 12129
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 6,
+        "unlockId": 800138
+      },
+      "framesList": [
+        0
+      ]
+    },
+    {
+      "dataId": 231603,
+      "names": {
+        "en": "Frazzle Hex",
+        "tw": "燒盡之詛咒",
+        "kr": "소진의 저주",
+        "fr": "Brasier maudit",
+        "de": "Brutzelnder Fluch",
+        "es": "Maleficio ígneo"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "fire"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "fire",
+          "value": 80,
+          "turn": 4
+        }
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231604,
+      "names": {
+        "en": "Frigid Hex",
+        "tw": "極寒之詛咒",
+        "kr": "극한의 저주",
+        "fr": "Glace maudite",
+        "de": "Fröstelnder Fluch",
+        "es": "Maleficio gélido"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "ice",
+          "value": 80,
+          "turn": 4
+        }
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231605,
+      "names": {
+        "en": "Fulmen Hex",
+        "tw": "降雷之詛咒",
+        "kr": "강뢰의 저주",
+        "fr": "Foudre maudite",
+        "de": "Durchzuckender Fluch",
+        "es": "Maleficio eléctrico"
+      },
+      "damage": "magic",
+      "base": 350,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage",
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "lightning",
+          "value": 80,
+          "turn": 4
+        }
+      ],
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231608,
+      "names": {
+        "en": "Forbidden Incandescence",
+        "tw": "灼熱禁咒法",
+        "kr": "작열의 금주법",
+        "fr": "Incandescence interdite",
+        "de": "Verbotenes Glühen",
+        "es": "Incandescencia prohibida"
+      },
+      "damage": "magic",
+      "base": 250,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "fire"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 250
+      },
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231609,
+      "names": {
+        "en": "Forbidden Glaciation",
+        "tw": "冰葬禁咒法",
+        "kr": "빙장의 금주법",
+        "fr": "Glaciation interdite",
+        "de": "Verbotene Vereisung",
+        "es": "Glaciación prohibida"
+      },
+      "damage": "magic",
+      "base": 250,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "ice"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 250
+      },
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 231610,
+      "names": {
+        "en": "Forbidden Fulmination",
+        "tw": "百雷禁咒法",
+        "kr": "백뢰의 금주법",
+        "fr": "Foudre interdite",
+        "de": "Verbotener Knall",
+        "es": "Fulminación prohibida"
+      },
+      "damage": "magic",
+      "base": 250,
+      "hitDamage": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        44
+      ],
+      "castTime": 76,
+      "elements": [
+        "lightning"
+      ],
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "damage"
+      ],
+      "consecutive": {
+        "turns": 5,
+        "value": 250
+      },
+      "framesList": [
+        42,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "dataId": 510152,
+      "names": {
+        "en": "Elemental Incarceration",
+        "tw": "元素牢籠",
+        "kr": "엘리먼트 제일",
+        "fr": "Incarcération élémentaire",
+        "de": "Elementares Gefängnis",
+        "es": "Prisión elemental"
+      },
+      "canDualSkill": false,
+      "castTime": 40,
+      "dualable": false,
+      "offset": 14,
+      "effectOrder": [
+        "imperil"
+      ],
+      "imperils": [
+        {
+          "type": "fire",
+          "value": 100,
+          "turn": 4
+        },
+        {
+          "type": "ice",
+          "value": 100,
+          "turn": 4
+        },
+        {
+          "type": "lightning",
+          "value": 100,
+          "turn": 4
+        }
+      ],
+      "cooldown": {
+        "unlock": 1,
+        "wait": 6,
+        "unlockId": 231611
+      },
+      "framesList": [
+        0
+      ]
+    }
+  ],
+  "multiCasts": [
+    {
+      "count": 2,
+      "abilities": [
+        231600,
+        231601,
+        231602,
+        231603,
+        231604,
+        231605,
+        231608,
+        231609,
+        231610,
+        231611,
+        231612,
+        231613,
+        231614,
+        800138,
+        510265,
+        510152,
+        510153,
+        510154,
+        510155
+      ]
+    },
+    {
+      "count": 3,
+      "abilities": [
+        231600,
+        231601,
+        231602,
+        231603,
+        231604,
+        231605,
+        231608,
+        231609,
+        231610,
+        231611,
+        231612,
+        231613,
+        231614,
+        800138,
+        510265,
+        510152,
+        510153,
+        510154,
+        510155
+      ]
+    },
+    {
+      "count": 4,
+      "abilities": [
+        231600,
+        231601,
+        231602,
+        231603,
+        231604,
+        231605,
+        231608,
+        231609,
+        231610,
+        231611,
+        231612,
+        231613,
+        231614,
+        800138,
+        510265,
+        510152,
+        510153,
+        510154,
+        510155
+      ]
+    }
+  ]
+}
 ];
