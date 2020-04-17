@@ -1,4 +1,0 @@
-app:
-  type:     rest
-  resource: "@AppBundle/Resources/config/routing.yml"
-  prefix:   /api

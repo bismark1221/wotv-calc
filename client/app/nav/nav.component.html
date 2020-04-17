@@ -1,22 +1,22 @@
 <nav class="navbar navbar-toggleable-md navbar-dark bg-dark fixed-top">
   <div class="centerNav">
-    <a class="navbar-brand" [routerLink]="['/']" (click)="menu(true)">FFBE-Chain</a>
+    <a class="navbar-brand" [routerLink]="['/']" (click)="menu(true)">WOTV-Chain</a>
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="['/chain']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.chain' | translate }}</a>
-        <!-- <a class="nav-link" [routerLink]="['/damage']" [routerLinkActive]="['active']" (click)="menu(true)">Damage Tools</a> -->
-        <a class="nav-link" [routerLink]="['/families']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.families' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/how-to']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.how-to' | translate }}</a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
+        <a class="nav-link" [routerLink]="['/units']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/cards']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/espers']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/equipments']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.equipments' | translate }}</a>
+        <!-- <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('tw')"><img src="../../assets/nav/blank.gif" class="flag flag-tw" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('es')"><img src="../../assets/nav/blank.gif" class="flag flag-es" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('de')"><img src="../../assets/nav/blank.gif" class="flag flag-de" /></a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('kr')"><img src="../../assets/nav/blank.gif" class="flag flag-kr" /></a>
+        <a class="nav-link nav-link-lang pointer" (click)="changeLang('kr')"><img src="../../assets/nav/blank.gif" class="flag flag-kr" /></a> -->
       </li>
     </ul>
   </div>
-  <div class="lang">
+  <!-- <div class="lang">
     <a class="pointer" (click)="changeLang('en')">
       <img src="../../assets/nav/blank.gif" class="flag flag-gb" />
     </a>
@@ -40,7 +40,7 @@
     <a class="pointer" (click)="changeLang('kr')">
       <img src="../../assets/nav/blank.gif" class="flag flag-kr" />
     </a>
-  </div>
+  </div> -->
 </nav>
 
 <nav class="navbar fixed-top-right navButton">

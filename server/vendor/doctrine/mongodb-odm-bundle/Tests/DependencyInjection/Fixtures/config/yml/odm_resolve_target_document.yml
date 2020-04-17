@@ -1,3 +1,0 @@
-doctrine_mongodb:
-    resolve_target_documents:
-        Symfony\Component\Security\Core\User\UserInterface: MyUserClass

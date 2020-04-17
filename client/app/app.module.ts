@@ -17,7 +17,6 @@ import { NgxMdModule } from 'ngx-md';
 import { AppRoutingModule } from './app-routing.module';
 
 import { TooltipModule } from './tooltip/tooltip.module';
-import { SliderModule } from './slider/slider.module';
 import { Select2Module } from './select2/select2.module';
 
 import { AppComponent } from './app.component';
@@ -25,17 +24,13 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ChainingComponent } from './chaining/chaining.component';
-import { ChainingModalComponent } from './chaining-modal/chaining-modal.component';
-import { ChainChartComponent } from './d3/chain-chart/chain-chart.component';
-import { DamageComponent } from './damage/damage.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
-import { MacroComponent } from './macro/macro.component';
-import { HowToComponent } from './how-to/how-to.component';
-import { RequestsComponent } from './requests/requests.component';
 import { JsonComponent } from './json/json.component';
-import { FamiliesComponent } from './families/families.component';
+
+import { UnitsComponent } from './units/units.component';
+import { CardsComponent } from './cards/cards.component';
+import { EspersComponent } from './espers/espers.component';
 
 import { UnitService } from './services/unit.service';
 import { ChainService } from './services/chain.service';
@@ -64,20 +59,15 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ChainingComponent,
-    ChainChartComponent,
     CapitalizePipe,
     AbsolutePipe,
     RoundPipe,
     ContactComponent,
     LegalComponent,
-    MacroComponent,
-    HowToComponent,
-    RequestsComponent,
     JsonComponent,
-    FamiliesComponent,
-    ChainingModalComponent,
-    DamageComponent
+    UnitsComponent,
+    CardsComponent,
+    EspersComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -92,7 +82,6 @@ export function createTranslateLoader(http: HttpClient) {
     NgxMdModule.forRoot(),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     TooltipModule,
-    SliderModule,
     Select2Module,
     ClipboardModule,
     HttpClientModule,
@@ -121,9 +110,6 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   bootstrap: [
     AppComponent
-  ],
-  entryComponents: [
-    ChainingModalComponent
   ]
 })
 

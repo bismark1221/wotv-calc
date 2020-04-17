@@ -4,30 +4,19 @@ import { UnitService } from './unit.service'
 
 @Injectable()
 export class JsonService {
-  ffbeChainUnits = [];
+  wotvChainUnits = [];
   isCollapsed = [];
   isCollapsedRaw = true;
   units = {};
-  abilitySkills = {};
-  magicSkills = {};
-  passiveSkills = {};
-  lbs = {};
-  summons = {};
-  upgrades = {};
-  materias = {};
-  equipments = {};
-  latentSkills = {};
+  skills = {};
+  buffs = {};
 
   names = {
-    ability: {},
-    magic: {},
-    lb: {},
+    skill: {},
     unit: {},
-    summon: {},
-    summonAbility: {}
+    buff: {}
   }
 
-  minimumHit = 1;
   imperilsElement = [
     'fire',
     'ice',
@@ -38,25 +27,6 @@ export class JsonService {
     'light',
     'dark'
   ];
-
-  moveTypes = {
-    0: "none",
-    1: "walk",
-    2: "walk",
-    3: "wrap",
-    4: "none",
-    5: "run",
-    6: "dash"
-  };
-
-  motionTypes = {
-    1: "default",
-    2: "orb",
-    3: "none",
-    5: "crouch",
-    6: "dance",
-    8: "default"
-  };
 
   stats = [
     "atk",
@@ -84,110 +54,65 @@ export class JsonService {
   constructor(private http: HttpClient, private unitService: UnitService) {}
 
   private getUnits() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/units.json').toPromise();
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Unit.json').toPromise();
   }
 
-  private getAbilitySkills() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/skills_ability.json').toPromise();
+  private getUnitsBoards() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitAbilityBoard.json').toPromise();
   }
 
-  private getMagicSkills() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/skills_magic.json').toPromise();
+  private getSkills() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Skill.json').toPromise();
   }
 
-  private getPassiveSkills() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/skills_passive.json').toPromise();
+  private getBuffs() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Buff.json').toPromise();
   }
 
-  private getLBs() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/limitbursts.json').toPromise();
-  }
 
-  private getSummons() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/summons.json').toPromise();
-  }
-
-  private getUpgrades() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/enhancements.json').toPromise();
-  }
-
-  private getEquipments() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/equipment.json').toPromise();
-  }
-
-  private getMaterias() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/materia.json').toPromise();
-  }
-
-  private getLatentSkills() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe/master/unit_latent_skills.json').toPromise();
-  }
-
+  /* Translation */
   private getUnitNames() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe-gl-strings/master/MST_UNIT_NAME.json').toPromise();
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/UnitName.json').toPromise();
   }
 
-  private getAbilityNames() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe-gl-strings/master/MST_ABILITY_NAME.json').toPromise();
+  private getSkillNames() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/SkillName.json').toPromise();
   }
 
-  private getMagicNames() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe-gl-strings/master/MST_MAGIC_NAME.json').toPromise();
+  private getBuffNames() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/BuffName.json').toPromise();
   }
 
-  private getLBNames() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe-gl-strings/master/MST_LIMITBURST_NAME.json').toPromise();
-  }
-
-  private getSummonNames() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe-gl-strings/master/MST_BEAST_NAME.json').toPromise();
-  }
-
-  private getSummonAbilityNames() {
-    return this.http.get('https://raw.githubusercontent.com/aEnigmatic/ffbe-gl-strings/master/MST_BEASTSKILL_NAME.json').toPromise();
+  private getJobNames() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/JobName.json').toPromise();
   }
 
 
   getJsons(): Promise<any[]> {
     return Promise.all([
       this.getUnits(),
-      this.getAbilitySkills(),
-      this.getMagicSkills(),
-      this.getPassiveSkills(),
-      this.getLBs(),
-      this.getSummons(),
-      this.getUpgrades(),
-      this.getEquipments(),
-      this.getMaterias(),
-      this.getLatentSkills(),
       this.getUnitNames(),
-      this.getAbilityNames(),
-      this.getMagicNames(),
-      this.getLBNames(),
-      this.getSummonNames(),
-      this.getSummonAbilityNames(),
+      this.getJobNames(),
+      this.getUnitsBoards(),
+      this.getSkills(),
+      this.getSkillNames(),
+      this.getBuffs(),
+      this.getBuffNames(),
     ]).then(responses => {
       this.units = responses[0];
-      this.abilitySkills = responses[1];
-      this.magicSkills = responses[2];
-      this.passiveSkills = responses[3];
-      this.lbs = responses[4];
-      this.summons = responses[5];
-      this.upgrades = responses[6];
-      this.equipments = responses[7];
-      this.materias = responses[8];
-      this.latentSkills = responses[9];
+      this.names.unit = responses[1];
+      this.names.job = responses[2];
+      this.boards = responses[3];
+      this.skills = responses[4];
+      this.names.skills = responses[5];
+      this.buffs = responses[6];
+      this.buffs.skills = responses[7];
 
-      this.names.unit = responses[10];
-      this.names.ability = responses[11];
-      this.names.magic = responses[12];
-      this.names.lb = responses[13];
-      this.names.summon = responses[14];
-      this.names.summonAbility = responses[15];
+      //this.formatJsons();
 
-      this.formatJsons();
+      console.log(this.units)
 
-      return this.ffbeChainUnits;
+      return this.wotvChainUnits;
     });
   }
 
