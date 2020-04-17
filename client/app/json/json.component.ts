@@ -18,6 +18,9 @@ export class JsonComponent implements OnInit {
   ngOnInit(): void {
     this.jsonService.getJsons().then(response => {
       this.units = response;
+
+      console.log(response);
+
       for (let i = 0; i < this.units.length; i++) {
         this.isCollapsed[i] = true;
       }
