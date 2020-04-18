@@ -26,12 +26,13 @@ export class JsonService {
   ]
 
   elements = [
+    'neutral',
     'fire',
     'ice',
+    'wind',
+    'earth',
     'lightning',
     'water',
-    'earth',
-    'earth',
     'light',
     'dark'
   ];
@@ -63,10 +64,21 @@ export class JsonService {
     1: "HP",
     21: "ATK",
     22: "DEF",
+    22: "MAG",
     25: "DEX",
     26: "AGI",
-    27: "LCK"
+    27: "LCK",
+    182: "FAITH"
   }
+
+  damageTypes = [ //pierce
+    "0",
+    "slash",
+    "2",
+    "strike",
+    "missile",
+    "magic"
+  ]
 
   constructor(private http: HttpClient, private unitService: UnitService) {}
 
@@ -179,21 +191,23 @@ export class JsonService {
     let dataId = unit.iname;
 
     if (unit.type === 0) {
+      console.log(unit.elem[0])
       this.wotvChainUnits[id] = {
         dataId: dataId,
         names: {},
         rarity: this.rarity[unit.rare],
         jobs: [{}, {}, {}],
         skills: [],
-        buffs: []
+        buffs: [],
+        element: this.elements[unit.elem[0]]
       };
 
       this.getUnitNames(this.wotvChainUnits[id]);
       this.getJobNames(this.wotvChainUnits[id], unit.jobsets);
 
-      if (id == 0) {
+      /*if (id == 0) {*/
         this.getSkillsAndBuffs(this.wotvChainUnits[id]);
-      }
+      /*}*/
 
       this.isCollapsed.push(true);
 
@@ -302,13 +316,40 @@ export class JsonService {
         value: this.skills[panelSkill.value].cost_type == 0 ? this.skills[panelSkill.value].cost_ap : this.skills[panelSkill.value].cost_mp
       }
       skill.type = "active"
+      skill.count = this.skills[panelSkill.value].count
       skill.range = {
         h: this.skills[panelSkill.value].range_h,
         l: this.skills[panelSkill.value].range_l,
         mh: this.skills[panelSkill.value].range_mh,
-        s: this.skills[panelSkill.value].range_s
+        s: this.skills[panelSkill.value].range_s,
+        line: this.skills[panelSkill.value].line
+      }
+      if (this.skills[panelSkill.value].eff_s) {
+        skill.aoe = {
+          s: this.skills[panelSkill.value].eff_s,
+          l: this.skills[panelSkill.value].eff_l,
+          h: this.skills[panelSkill.value].eff_h
+        }
       }
 
+      
+
+      if (this.skills[panelSkill.value].eff_val) {
+        skill.damage = {
+          minValue: this.skills[panelSkill.value].eff_val,
+          maxValue: this.skills[panelSkill.value].eff_val1,
+          minSpeed: this.skills[panelSkill.value].ct_spd,
+          maxSpeed: this.skills[panelSkill.value].ct_spd1,
+          type: this.damageTypes[this.skills[panelSkill.value].atk_det]
+        }
+
+        if (this.skills[panelSkill.value].elem) {
+          skill.elem = [];
+          this.skills[panelSkill.value].elem.forEach(elem => {
+            skill.elem.push(this.elements[elem])
+          });
+        }
+      }
 
 
 
