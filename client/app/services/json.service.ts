@@ -62,6 +62,7 @@ export class JsonService {
 
   buffTypes = {
     1: "HP",
+    3: "DEBUFF RES"
     21: "ATK",
     22: "DEF",
     23: "MAG",
@@ -70,6 +71,7 @@ export class JsonService {
     26: "AGI",
     27: "LCK",
     98: "STUN",
+    100: "DISABLE",
     156: "EVADE",
     182: "FAITH"
   }
@@ -333,6 +335,17 @@ export class JsonService {
         h: this.skills[panelSkill.value].eff_h
       }
 
+      skill.ctbreak = this.skills[panelSkill.value].ctbreak // Cancel ability activation
+
+
+
+
+      // check target 12 => ennemy -- 0 => self ??? for effects break
+      // check SK_LW_WAR_M_4  ==> Man killer
+      // SK_LW_PLD_M_3 ==> taunt
+      // SK_LW_KNT_S_2_SUB ==> reduce target TP
+      // SK_LW_WAR_M_1 ==> Beast killer
+      // SK_LW_PLD_M_2_SUB ==> Ignore 1 coup fatal
 
 
       if (typeof(this.skills[panelSkill.value].eff_val) == "number") {
