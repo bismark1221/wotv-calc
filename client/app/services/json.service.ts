@@ -64,10 +64,13 @@ export class JsonService {
     1: "HP",
     21: "ATK",
     22: "DEF",
-    22: "MAG",
+    23: "MAG",
+    24: "SPR",
     25: "DEX",
     26: "AGI",
     27: "LCK",
+    98: "STUN",
+    156: "EVADE",
     182: "FAITH"
   }
 
@@ -191,7 +194,6 @@ export class JsonService {
     let dataId = unit.iname;
 
     if (unit.type === 0) {
-      console.log(unit.elem[0])
       this.wotvChainUnits[id] = {
         dataId: dataId,
         names: {},
@@ -205,9 +207,9 @@ export class JsonService {
       this.getUnitNames(this.wotvChainUnits[id]);
       this.getJobNames(this.wotvChainUnits[id], unit.jobsets);
 
-      /*if (id == 0) {*/
+      if (id == 0) {
         this.getSkillsAndBuffs(this.wotvChainUnits[id]);
-      /*}*/
+      }
 
       this.isCollapsed.push(true);
 
@@ -324,17 +326,17 @@ export class JsonService {
         s: this.skills[panelSkill.value].range_s,
         line: this.skills[panelSkill.value].line
       }
-      if (this.skills[panelSkill.value].eff_s) {
-        skill.aoe = {
-          s: this.skills[panelSkill.value].eff_s,
-          l: this.skills[panelSkill.value].eff_l,
-          h: this.skills[panelSkill.value].eff_h
-        }
+
+      skill.aoe = {
+        s: this.skills[panelSkill.value].eff_s,
+        l: this.skills[panelSkill.value].eff_l,
+        h: this.skills[panelSkill.value].eff_h
       }
 
-      
 
-      if (this.skills[panelSkill.value].eff_val) {
+
+      if (typeof(this.skills[panelSkill.value].eff_val) == "number") {
+        console.log("FOOOOOOOO")
         skill.damage = {
           minValue: this.skills[panelSkill.value].eff_val,
           maxValue: this.skills[panelSkill.value].eff_val1,
@@ -349,6 +351,30 @@ export class JsonService {
             skill.elem.push(this.elements[elem])
           });
         }
+      }
+
+
+      if (this.skills[panelSkill.value].t_buffs) {
+        this.skills[panelSkill.value].t_buffs.forEach(buff => {
+          console.log(this.buffs[buff])
+          let finished = false;
+          let i = 1;
+          while (!finished) {
+            if (this.buffs[buff]["type" + i]) {
+              skill.effects.push({
+                type: this.buffTypes[this.buffs[buff]["type" + i]],
+                minValue: this.buffs[buff]["val" + i],
+                maxValue: this.buffs[buff]["val" + i + "1"],
+                percent: this.buffs[buff]["calc1"] == 2 || this.buffs[buff]["calc1"] == 30 ? true : undefined,
+                rate: this.buffs[buff].rate,
+                turn: this.buffs[buff].turn
+              });
+              i++;
+            } else {
+              finished = true;
+            }
+          }
+        })
       }
 
 
