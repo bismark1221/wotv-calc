@@ -11,11 +11,15 @@ export class JsonService {
   skills = {};
   buffs = {};
   equipments = {};
+  boards = {};
+  jobs = {};
 
   names = {
     skill: {},
     unit: {},
-    buff: {}
+    buff: {},
+    job: {},
+    equipment: {}
   }
 
   rarity = [
@@ -36,13 +40,6 @@ export class JsonService {
     'water',
     'light',
     'dark'
-  ];
-
-  stats = [
-    "atk",
-    "def",
-    "mag",
-    "spr"
   ];
 
   killerRaces = [
@@ -311,6 +308,7 @@ export class JsonService {
 
 
   getJsons(): Promise<any[]> {
+    // @ts-ignore
     return Promise.all([
       this.jsonUnits(),
       this.jsonUnitNames(),
@@ -324,17 +322,17 @@ export class JsonService {
       this.jsonequipments(),
       this.jsonequipmentNames()
     ]).then(responses => {
-      this.units = this.formatJson(responses[0].items);
-      this.names.unit = this.formatNames(responses[1].infos);
-      this.names.job = this.formatNames(responses[2].infos);
-      this.boards = this.formatJson(responses[3].items);
-      this.skills = this.formatJson(responses[4].items);
-      this.names.skill = this.formatNames(responses[5].infos);
-      this.buffs = this.formatJson(responses[6].items);
-      this.names.buff = this.formatNames(responses[7].infos);
-      this.jobs = this.formatJson(responses[8].items);
-      this.equipments = this.formatJson(responses[9].items);
-      this.names.equipment = this.formatNames(responses[10].infos);
+      this.units = this.formatJson(responses[0]);
+      this.names.unit = this.formatNames(responses[1]);
+      this.names.job = this.formatNames(responses[2]);
+      this.boards = this.formatJson(responses[3]);
+      this.skills = this.formatJson(responses[4]);
+      this.names.skill = this.formatNames(responses[5]);
+      this.buffs = this.formatJson(responses[6]);
+      this.names.buff = this.formatNames(responses[7]);
+      this.jobs = this.formatJson(responses[8]);
+      this.equipments = this.formatJson(responses[9]);
+      this.names.equipment = this.formatNames(responses[10]);
 
 
       //console.log(this.units)
@@ -350,7 +348,7 @@ export class JsonService {
 
   private formatJson(data) {
     let formatted = {};
-    data.forEach(item => {
+    data.items.forEach(item => {
       formatted[item.iname] = item;
     })
 
@@ -359,7 +357,7 @@ export class JsonService {
 
   private formatNames(data) {
     let formatted = {};
-    data.forEach(item => {
+    data.infos.forEach(item => {
       formatted[item.key] = item.value;
     })
 

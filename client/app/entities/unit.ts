@@ -9,6 +9,7 @@ export class Unit {
   names: any = {
     en: 'New Unit'
   };
+  name = "New Unit";
   jobs: any = [
     {
       en: 'Job 1'
