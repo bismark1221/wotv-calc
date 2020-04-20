@@ -1,231 +1,267 @@
 <div class="row unit form-group">
   <div class="chainParameters allSelectUnit" #chainDiv>
-    <div class="inlineBlock verticalTop" *ngFor="let column of [0, 3]">
+    <div class="inlineBlock verticalTop">
       <div
-        class=" verticalTop selectUnitZone marginUnit{{i}}"
-        [ngClass]="{'expandedSelecUnit': viewOptions[i], 'autoMargin': viewOptions[column + 0] || viewOptions[column + 1] || viewOptions[column + 2]}"
-        *ngFor="let i of [column + 0, column + 1, column + 2]">
-        <button *ngIf="chain[i].id !== 'unselect' || viewBestChainers === i" type="button" class="btn btn-secondary btnDelete" (click)="unselectUnit(i)">X</button>
+        class=" verticalTop selectUnitZone marginUnit">
 
-        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id !== 'unselect' || viewBestChainers !== i">
-          <label for="chain{{i}}">{{ 'chain.label.unit' | translate }} {{ i + 1 }}</label>
+        <div class="inlineBlock firstSelectLevel">
+          <label for="chain{{i}}">{{ 'chain.label.unit' | translate }}</label>
           <div>
             <select2
               [data]="observableUnits"
-              [value]="idSelected[i]"
-              [position]="i"
+              [value]="idSelected"
               [options]="select2Options"
-              (valueChanged)="onChangeUnit(i, $event.value);"></select2>
-            <img class="unitImg" src='assets/units/{{ chain[i].id }}.png' *ngIf="chain[i].id !== 'unselect' && !chain[i].selfCreated" />
+              (valueChanged)="selectUnit($event.value);"></select2>
           </div>
-
-          <div *ngIf="(chain[i].id === 'unselect' || (chain[i].selfCreated && !chain[i].activeRename)) && createdUnits && createdUnits.length > 0" [ngClass]="{ 'littleMarginTop': chain[i].id === 'unselect'}">
-            <button *ngIf="chain[i].id !== 'unselect' && !chain[i].activeRename" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="renameUnit(i)">
-              {{ 'chain.button.rename' | translate }}
-            </button>
-            <button *ngIf="chain[i].id !== 'unselect'" class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">
-              {{ 'chain.button.save' | translate }}
-            </button>
-          </div>
-
-          <div *ngIf="chain[i].id !== 'unselect' && chain[i].activeRename">
-            <label for="chainer{{i}}_name">{{ 'chain.label.unitName' | translate }} {{ i + 1 }}</label>
-            <input class="form-control" type="text" id="chainer{{i}}_name" [(ngModel)]="chain[i].name" (ngModelChange)="onChangeChain()" (keyup.enter)="saveUnit(i)">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="saveUnit(i)">
-              {{ 'chain.button.save' | translate }}
-            </button>
-          </div>
-
-          <div class="selectRightZoneOneThird mobileNoMarginTop tabletNoMarginLeft buttonDelete" *ngIf="chain[i].selfCreated">
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="removeUnit(i)">
-              {{ 'chain.button.removeUnit' | translate }}
-            </button>
-          </div>
-
-          <div class="selectRightZoneOneThird selectAbilityTop mobileNoMarginTop" *ngIf="chain[i].id !== 'unselect' && !viewOptions[i]">
-            <hr class="selectHrWithBottomMargin"/>
-            <label for="chainer{{i}}_ability">{{ 'chain.label.ability' | translate }}</label>
-            <button class="btn btn-secondary btnOptions" type="button" (click)="showOptions(i)">
-              <i class="fa fa-cog pointer" aria-hidden="true"></i>
-            </button>
-
-            <div *ngFor="let abilityIndex of chain[i].castNumber">
-              <select class="form-control" id="chainer{{i}}_ability_{{abilityIndex}}" [(ngModel)]="chain[i].selectedIds[abilityIndex]" (ngModelChange)="onChangeSkill(i, abilityIndex)">
-                <option *ngFor="let unitAbility of getAvailableAbilities(i, abilityIndex)" [ngValue]="unitAbility.id">{{ unitAbility.name | capitalize }}</option>
-              </select>
-            </div>
-          </div>
-
-          <div *ngIf="chain[i].id === 'unselect'">
-            <hr class="selectHr"/>
-            <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="createNewUnit(i)">
-              {{ 'chain.button.createUnit' | translate }}
-            </button>
-          </div>
-
-          <div class="littleMarginTop" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0">
-            <select class="form-control selectDuplicate" id="chainer{{i}}_ability" [(ngModel)]="duplicatePosition[i]">
-              <option *ngFor="let duplicate of availableDuplicate" [ngValue]="duplicate.id">{{ duplicate.name | capitalize }}</option>
-            </select>
-            <button class="btn btn-secondary fullWidth buttonDuplicate" type="button" (click)="duplicateUnit(i)">{{ 'chain.button.duplicate' | translate }}</button>
-          </div>
-
-          <hr class="selectHr" *ngIf="chain[i].id === 'unselect' && availableDuplicate.length > 0 && chainers.length <= 2"/>
-
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestChainers(i)" *ngIf="canFindBestChainers(i)">
-            {{ 'chain.button.findBest' | translate }}
-          </button>
-          <button class="btn btn-secondary fullWidth littleMarginTop" type="button" (click)="findBestCombos(i)" *ngIf="canFindBestChainers(i)">
-            {{ 'chain.button.findBestByCombo' | translate }}
-          </button>
-        </div>
-
-        <div class="inlineBlock firstSelectLevel" *ngIf="chain[i].id === 'unselect' && viewBestChainers === i">
-          <label>{{ 'chain.label.bestUnits' | translate }}</label>
-          <button
-            *ngFor="let chainer of bestChainers; let j = index"
-            class="btn btn-secondary fullWidth"
-            [ngClass]="{'littleMarginTop': j !== 0}"
-            type="button"
-            (click)="selectUnit(i, chainer.unit, chainer.abilities, chainer.frames)">
-            <div class="bestChainerButton">
-              {{ chainer.unit.name }}<br />
-              <span *ngFor="let ability of chainer.abilities">
-                {{ ability.name }}<br />
-              </span>
-              <span *ngIf="chainer.modifier">
-                {{ chainer.modifier }}%
-              </span>
-              <span *ngIf="chainer.combo">
-                max combo : {{ chainer.combo }}
-              </span>
-            </div>
-          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row" *ngIf="chainers.length + finishers.length > 1">
-  <div class="selectChainZone">
-    <div class="selectSlider">
-      <label class="block">{{ 'chain.label.differenceFirstHit' | translate }}</label>
-      <div class="inlineBlock" *ngFor="let unit of chain; let i = index">
-        <div class="inlineBlock" *ngIf="unit.id !== 'unselect'">
-          <label class="block">{{unit.name}}</label>
-        </div>
-      </div>
-      <div *ngIf="canFindBestChain()">
-        <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('modifier')">
-          {{ 'chain.button.findBestModifier' | translate }}
-        </button>
-        <button class="btn btn-secondary buttonsChain" type="button" (click)="findBestFrames('combo')">
-          {{ 'chain.button.findBestCombo' | translate }}
-        </button>
-      </div>
-      <div *ngIf="!canFindBestChain() && requestPosition === -1 && !requestAlreadyDone">
-        <!-- <button class="btn btn-secondary buttonsChain" type="button" (click)="saveRequest()">
-          {{ 'chain.button.findInQueue' | translate }}
-        </button> -->
-        {{ 'chain.label.sorryBestModifier' | translate }}
-      </div>
-      <div *ngIf="!canFindBestChain() && requestPosition !== -1 && !requestAlreadyDone">
-        Your request has been added to queue, you are positionned N°{{requestPosition}}, please check back the request page later!
-      </div>
-      <div *ngIf="!canFindBestChain() && requestAlreadyDone">
-        Lucky you, someone already search for the same chain, you can find the result below :<br />
-        - Max Modifier : {{ requestResult.modifier.max }}% <a class="pointer" (click)="showResult('modifier')">(click to show)</a><br />
-        - Max Combo : {{ requestResult.combo.max }} <a class="pointer" (click)="showResult('combo')">(click to show)</a>
-      </div>
-    </div>
-    <div class="selectFramesGap">
-      <label>{{ 'chain.label.differenceFirstHit' | translate }}</label>
-      <div class="input-group framesButtons" *ngFor="let unit of chain; let i = index">
-        <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(i, false)">
-            <i class="fa fa-minus" aria-hidden="true"></i>
-          </button>
-        </span>
-        <input class="form-control inputFramesGap" type="number" id="chain_framesGap" [(ngModel)]="unit.framesGap" (ngModelChange)="checkFramesGap(unit)">
-        <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number" (click)="updateFramesGap(i, true)">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
-        </span>
-      </div>
-      <div *ngIf="canFindBestChain()">
-        <button class="btn btn-secondary fullWidth" type="button" (click)="findBestFrames('modifier')">
-          {{ 'chain.button.findBestModifier' | translate }}
-        </button>
-        <button class="btn btn-secondary fullWidth tabletMarginTop" type="button" (click)="findBestFrames('combo')">
-          {{ 'chain.button.findBestCombo' | translate }}
-        </button>
-      </div>
-      <div *ngIf="!canFindBestChain()">
-        {{ 'chain.label.sorryBestModifier' | translate }}
-      </div>
-    </div>
-  </div>
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">{{ unit.name }}</th>
+      </tr>
+      <tr>
+        <td colspan="2"><img class="unitImg" src="{{'assets/units/' + unit.image + '.png'}}" /></td>
+      </tr>
+      <tr>
+        <td>Rarity</td>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" /></td>
+      </tr>
+      <tr>
+        <td>Element</td>
+        <td>{{ unit.element }}</td>
+      </tr>
+      <tr>
+        <td>Jobs</td>
+        <td>{{ unit.jobs[0].en }}<br />{{ unit.jobs[1].en }}<br />{{ unit.jobs[2].en }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<div class="row littleMarginTop" *ngIf="availableDuplicate.length > 0">
-  <div class="selectDetailZone">
-    <h2>{{ 'chain.label.result' | translate }}</h2>
-    <p>
-      {{ 'chain.label.totalModifier' | translate }} {{chainService.getResult().modifier}}%
-    </p>
-    <p *ngIf="chainers.length + finishers.length > 1">
-      {{ 'chain.label.totalCombo' | translate }} {{chainService.getResult().combo}}
-    </p>
-    <p *ngIf="chainers.length + finishers.length > 1">
-      {{ 'chain.label.averageChainModifier' | translate }} : {{ averageChainMultiplier | number : '1.2-2' }}
-    </p>
-    <p *ngIf="chainers.length + finishers.length > 1">
-      <span *ngFor="let hit of firstHits; let j = index">
-        <span *ngIf="j === 0">
-          Send unit {{ chain[hit.position].name }} ({{ hit.position + 1 }}) first
-        </span>
-        <span *ngIf="j !== 0">
-          Send unit {{ chain[hit.position].name }} ({{ hit.position + 1 }}) at
-          {{ (firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap) | absolute }} frames
-          ({{ (firstHits[0].firstHit - firstHits[0].framesGap - hit.firstHit + hit.framesGap) * 1 / 60 * 1000 | round | absolute }}ms)
-        </span>
-          - <a class="pointer linkColor" (click)="showChainMod(hit.position)">{{ 'chain.label.averageChainModifier' | translate }} (total {{ chain[hit.position].averageChainMultiplier | number : '1.2-2' }})</a>
-          <div *ngFor="let abilityIndex of chain[hit.position].castNumber">
-            <span *ngIf="chain[hit.position].showChainMod && chain[hit.position].selectedAbilities[abilityIndex]">
-              {{ chain[hit.position].selectedAbilities[abilityIndex].name }} :
-              {{ chain[hit.position].selectedAbilities[abilityIndex].averageChainMultiplier | number : '1.2-2' }}
-            </span>
+
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="13">Stats</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>HP</th>
+        <th>TP</th>
+        <th>AP</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>MAG</th>
+        <th>SPR</th>
+        <th>DEX</th>
+        <th>AGI</th>
+        <th>LUCK</th>
+        <th>MOVE</th>
+        <th>JUMP</th>
+      </tr>
+      <tr>
+        <td>Min</td>
+        <td>{{ unit.stats.HP.min }}</td>
+        <td>{{ unit.stats.TP.min }}</td>
+        <td>{{ unit.stats.AP.min }}</td>
+        <td>{{ unit.stats.ATK.min }}</td>
+        <td>{{ unit.stats.DEF.min }}</td>
+        <td>{{ unit.stats.MAG.min }}</td>
+        <td>{{ unit.stats.SPR.min }}</td>
+        <td>{{ unit.stats.DEX.min }}</td>
+        <td>{{ unit.stats.AGI.min }}</td>
+        <td>{{ unit.stats.LUCK.min }}</td>
+        <td>{{ unit.stats.MOVE.min }}</td>
+        <td>{{ unit.stats.JUMP.min }}</td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>{{ unit.stats.HP.max }}</td>
+        <td>{{ unit.stats.TP.max }}</td>
+        <td>{{ unit.stats.AP.max }}</td>
+        <td>{{ unit.stats.ATK.max }}</td>
+        <td>{{ unit.stats.DEF.max }}</td>
+        <td>{{ unit.stats.MAG.max }}</td>
+        <td>{{ unit.stats.SPR.max }}</td>
+        <td>{{ unit.stats.DEX.max }}</td>
+        <td>{{ unit.stats.AGI.max }}</td>
+        <td>{{ unit.stats.LUCK.max }}</td>
+        <td>{{ unit.stats.MOVE.max }}</td>
+        <td>{{ unit.stats.JUMP.max }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="8">Res Elem</th>
+      </tr>
+      <tr>
+        <td><img class="elementImg" src="{{'assets/elements/fire.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/ice.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/earth.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/wind.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/lightning.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/water.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/light.png'}}" /></td>
+        <td><img class="elementImg" src="{{'assets/elements/dark.png'}}" /></td>
+      </tr>
+      <tr>
+        <td><span *ngIf="unit.stats.FIRE.min">{{ unit.stats.FIRE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.ICE.min">{{ unit.stats.ICE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.EARTH.min">{{ unit.stats.EARTH.min }} %</span></td>
+        <td><span *ngIf="unit.stats.WIND.min">{{ unit.stats.WIND.min }} %</span></td>
+        <td><span *ngIf="unit.stats.LIGHTNING.min">{{ unit.stats.LIGHTNING.min }} %</span></td>
+        <td><span *ngIf="unit.stats.WATER.min">{{ unit.stats.WATER.min }} %</span></td>
+        <td><span *ngIf="unit.stats.LIGHT.min">{{ unit.stats.LIGHT.min }} %</span></td>
+        <td><span *ngIf="unit.stats.DARK.min">{{ unit.stats.DARK.min }} %</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="5">Res Damage</th>
+      </tr>
+      <tr>
+        <td><img class="damageImg" src="{{'assets/damage/none_slash.png'}}" /></td>
+        <td><img class="damageImg" src="{{'assets/damage/none_pierce.png'}}" /></td>
+        <td><img class="damageImg" src="{{'assets/damage/none_strike.png'}}" /></td>
+        <td><img class="damageImg" src="{{'assets/damage/none_missile.png'}}" /></td>
+        <td><img class="damageImg" src="{{'assets/damage/none_magic.png'}}" /></td>
+      </tr>
+      <tr>
+        <td><span *ngIf="unit.stats.SLASH.min">{{ unit.stats.SLASH.min }} %</span></td>
+        <td><span *ngIf="unit.stats.PIERCE.min">{{ unit.stats.PIERCE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.STRIKE.min">{{ unit.stats.STRIKE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.MISSILE.min">{{ unit.stats.MISSILE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.MAGIC.min">{{ unit.stats.MAGIC.min }} %</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="15">Res Status Ailment</th>
+      </tr>
+      <tr>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/POISON.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/BLIND.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/SLEEP.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/SILENCE.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/PARALYZE.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/CONFUSION.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/PETRIFY.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/TOAD.png'}}" /></td>
+      </tr>
+      <tr>
+        <td><span *ngIf="unit.stats.POISON.min">{{ unit.stats.POISON.min }} %</span></td>
+        <td><span *ngIf="unit.stats.BLIND.min">{{ unit.stats.BLIND.min }} %</span></td>
+        <td><span *ngIf="unit.stats.SLEEP.min">{{ unit.stats.SLEEP.min }} %</span></td>
+        <td><span *ngIf="unit.stats.SILENCE.min">{{ unit.stats.SILENCE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.PARALYZE.min">{{ unit.stats.PARALYZE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.CONFUSION.min">{{ unit.stats.CONFUSION.min }} %</span></td>
+        <td><span *ngIf="unit.stats.PETRIFY.min">{{ unit.stats.PETRIFY.min }} %</span></td>
+        <td><span *ngIf="unit.stats.TOAD.min">{{ unit.stats.TOAD.min }} %</span></td>
+      </tr>
+      <tr>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/CHARM.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/SLOW.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/STOP.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/DISABLE.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/BERSERK.png'}}" /></td>
+        <td><img class="statusAilmentImg" src="{{'assets/status-ailments/DOOM.png'}}" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span *ngIf="unit.stats.CHARM.min">{{ unit.stats.CHARM.min }} %</span></td>
+        <td><span *ngIf="unit.stats.SLOW.min">{{ unit.stats.SLOW.min }} %</span></td>
+        <td><span *ngIf="unit.stats.STOP.min">{{ unit.stats.STOP.min }} %</span></td>
+        <td><span *ngIf="unit.stats.IMMOBILIZE.min">{{ unit.stats.IMMOBILIZE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.DISABLE.min">{{ unit.stats.DISABLE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.BERSERK.min">{{ unit.stats.BERSERK.min }} %</span></td>
+        <td><span *ngIf="unit.stats.DOOM.min">{{ unit.stats.DOOM.min }} %</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th>Weapons</th>
+      </tr>
+      <tr>
+        <td>
+          <div *ngFor="let equip of unit.equipments">
+            <span *ngIf="isWeapon(equip)">{{ equip }}</span>
           </div>
-        <span *ngIf="j !== (firstHits.length - 1)"><br/></span>
-      </span>
-    </p>
-  </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Armors</th>
+      </tr>
+      <tr>
+        <td>
+          <div style="display: inline-block;" *ngFor="let equip of unit.equipments">
+            <span *ngIf="!isWeapon(equip)">{{ equip }}&nbsp;</span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<!-- <app-chain-chart *ngIf="availableDuplicate.length > 0"></app-chain-chart> -->
-<div *ngIf="availableDuplicate.length > 0">
-  <p>{{ 'chain.label.legend' | translate }}</p>
-  <div class="legendColorBlock">
-    <div class="legendColor legendClassic1"></div>
-    <div class="legendColor legendClassic2"></div>
-    <div class="legendColor legendDual1"></div>
-    <div class="legendColor legendDual2"></div>
-    <div>{{ 'chain.label.classicHit' | translate }}</div>
-  </div>
-  <div class="legendColorBlock">
-    <div class="legendColor legendBreak1"></div>
-    <div class="legendColor legendBreak2"></div>
-    <div class="legendColor legendBreak3"></div>
-    <div class="legendColor legendBreak4"></div>
-    <div>{{ 'chain.label.breakHit' | translate }}</div>
-  </div>
-</div>
-
-<div class="row littleMarginTop" *ngIf="availableDuplicate.length > 0">
-  <div class="selectDetailZone">
-    <h2>{{ 'chain.label.macro' | translate }}</h2>
-    <!-- <app-macro></app-macro> -->
-  </div>
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table *ngFor="let i of [0, 1, 2, 3]">
+    <tbody>
+      <tr>
+        <th *ngIf="i == 0" colspan="8">Main Job</th>
+        <th *ngIf="i != 0" colspan="8">{{ unit.jobs[i - 1].en }}</th>
+      </tr>
+      <tr>
+        <th>Job lvl</th>
+        <th>Star lvl</th>
+        <th>Type</th>
+        <th>name</th>
+        <th>Effects</th>
+        <th>Casts</th>
+        <th>Hits</th>
+        <th>Cost</th>
+      </tr>
+      <tr *ngFor="let skill of getSkillsPerJob(i)">
+        <td>{{ skill.jobLevel }}</td>
+        <td>{{ skill.unlockStar }}</td>
+        <td><img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" /></td>
+        <td>{{ skill.names.en }}</td>
+        <td></td>
+        <td>{{ skill.count }}</td>
+        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+      </tr>
+    </tbody>
+  </table>
 </div>

@@ -1,40 +1,17 @@
-<!-- ### Raw Json Units ###
+### Raw Units ###
 <div>
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsedRaw = !isCollapsedRaw" [attr.aria-expanded]="!isCollapsedRaw">
-    Toggle
-  </button>
-  <div id="dataRawJson" [ngbCollapse]="isCollapsedRaw">
-    <pre [innerHtml]="units | prettyjson"></pre>
-  </div>
-</div> -->
-
-### Raw Families ###
-<div>
-  <textarea id="rawJson">{{ families | json }}</textarea>
+  <textarea id="rawJson">{{ units | json }}</textarea>
 </div>
 
 <br />
 
 ### Units ###
-<div *ngFor="let unit of units; let j = index">
-  {{j}} -- {{unit.names.en}}
+<div *ngFor="let unitId of unitIds; let j = index">
+  {{j}} -- {{units[unitId].names.en}}
   <button type="button" class="btn btn-outline-primary" (click)="isCollapsed[j] = !isCollapsed[j]" [attr.aria-expanded]="!isCollapsed[j]">
     Toggle
   </button>
   <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed[j]">
-    <pre [innerHtml]="unit | prettyjson"></pre>
-  </div>
-</div>
-
-<br /><br /><br />
-
-### Families ###
-<div *ngFor="let family of families; let j = index">
-  {{ family.family }}
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsedFamily[j] = !isCollapsedFamily[j]" [attr.aria-expanded]="!isCollapsedFamily[j]">
-    Toggle
-  </button>
-  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsedFamily[j]">
-    <pre [innerHtml]="family | prettyjson"></pre>
+    <pre [innerHtml]="units[unitId] | prettyjson"></pre>
   </div>
 </div>

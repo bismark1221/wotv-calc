@@ -4,12 +4,13 @@ import { UnitService } from './unit.service'
 
 @Injectable()
 export class JsonService {
-  wotvChainUnits = [];
+  wotvChainUnits = {};
   isCollapsed = [];
   isCollapsedRaw = true;
   units = {};
   skills = {};
   buffs = {};
+  equipments = {};
 
   names = {
     skill: {},
@@ -90,6 +91,7 @@ export class JsonService {
     65: "MAGIC_ATK",
     70: "ALL_ATTACKS_ATK",
     81: "REGEN",
+    83: "AUTO_RESTORE",
     84: "POISON",
     85: "BLIND",
     86: "SLEEP",
@@ -117,7 +119,10 @@ export class JsonService {
     115: "MAGIC_EVADE",
     116: "CRITIC_BEHIND_GUARENTED",
     117: "CRITIC_GUARENTED",
+    119: "DARK_KILLER",
+    120: "HUMAN_KILLER",
     121: "FENNES_KILLER",
+    123: "SLEEP_IMBUE",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
     151: "INITIAL_AP",
@@ -133,7 +138,9 @@ export class JsonService {
     193: "FAITH",
     200: "DEBUFF_RES",
     300: "BUFFS_DURATION",
-    301: "DEBUFFS_DURATION"
+    301: "DEBUFFS_DURATION",
+    310: "ATTACK_RES",
+    311: "AOE_RES"
   }
 
   killers = {
@@ -181,10 +188,17 @@ export class JsonService {
     "ap": "AP",
     "atk": "ATK",
     "def": "DEF",
+    "mnd": "SPR",
     "mag": "MAG",
     "dex": "DEX",
     "spd": "AGI",
     "luk": "LUCK",
+    "iniap": "INITIAL_AP",
+
+    "hit" : "ACCURACY",
+    "crt" : "CRITIC_RATE",
+    "crta": "CRITIC_AVOID",
+    "avd" : "EVADE",
 
     "efi": "FIRE",
     "eic": "ICE",
@@ -201,7 +215,7 @@ export class JsonService {
     "ash": "MISSILE",
     "ama": "MAGIC",
 
-    "cpo": "POISION",
+    "cpo": "POISON",
     "cbl": "BLIND",
     "csl": "SLEEP",
     "cmu": "SILENCE",
@@ -269,6 +283,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Job.json').toPromise();
   }
 
+  private jsonequipments() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Artifact.json').toPromise();
+  }
+
 
   /* Translation */
   private jsonUnitNames() {
@@ -287,6 +305,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/JobName.json').toPromise();
   }
 
+  private jsonequipmentNames() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactName.json').toPromise();
+  }
+
 
   getJsons(): Promise<any[]> {
     return Promise.all([
@@ -299,6 +321,8 @@ export class JsonService {
       this.jsonBuffs(),
       this.jsonBuffNames(),
       this.jsonJobs(),
+      this.jsonequipments(),
+      this.jsonequipmentNames()
     ]).then(responses => {
       this.units = this.formatJson(responses[0].items);
       this.names.unit = this.formatNames(responses[1].infos);
@@ -309,6 +333,8 @@ export class JsonService {
       this.buffs = this.formatJson(responses[6].items);
       this.names.buff = this.formatNames(responses[7].infos);
       this.jobs = this.formatJson(responses[8].items);
+      this.equipments = this.formatJson(responses[9].items);
+      this.names.equipment = this.formatNames(responses[10].infos);
 
 
       //console.log(this.units)
@@ -342,16 +368,15 @@ export class JsonService {
 
   private formatJsons() {
     Object.keys(this.units).forEach(unitId => {
-      let id = this.addUnit(this.units[unitId]);
+      this.addUnit(this.units[unitId]);
     });
   }
 
   private addUnit(unit) {
-    let id = this.wotvChainUnits.length;
     let dataId = unit.iname;
 
     if (unit.type === 0) {
-      this.wotvChainUnits[id] = {
+      this.wotvChainUnits[dataId] = {
         dataId: dataId,
         names: {},
         rarity: this.rarity[unit.rare],
@@ -359,24 +384,21 @@ export class JsonService {
         skills: [],
         buffs: [],
         stats: {},
-        element: this.elements[unit.elem[0]]
+        element: this.elements[unit.elem[0]],
+        image: unit.charaId
       };
 
-      this.getUnitNames(this.wotvChainUnits[id]);
-      this.getJobNames(this.wotvChainUnits[id], unit.jobsets);
+      this.getUnitNames(this.wotvChainUnits[dataId]);
+      this.getJobNames(this.wotvChainUnits[dataId], unit.jobsets);
       
-      this.getStats(this.wotvChainUnits[id], unit.status)
-      this.getJobsStats(this.wotvChainUnits[id], unit.jobsets)
-      this.getLB(this.wotvChainUnits[id], unit.limit)
-      this.getTMR(this.wotvChainUnits[id], unit.trust)
-      this.getSkillsAndBuffs(this.wotvChainUnits[id]);
+      this.getStats(this.wotvChainUnits[dataId], unit.status)
+      this.getJobsStats(this.wotvChainUnits[dataId], unit.jobsets)
+      this.getLB(this.wotvChainUnits[dataId], unit.limit)
+      this.getTMR(this.wotvChainUnits[dataId], unit.trust)
+      this.getSkillsAndBuffs(this.wotvChainUnits[dataId]);
 
       this.isCollapsed.push(true);
-
-      return id;
     }
-
-    return null;
   }
 
   private getUnitNames(unit) {
@@ -472,97 +494,101 @@ export class JsonService {
       unlockStar: panelSkill.unlock_value + 1,
       unlockJob: panelSkill.get_job,
       jobLevel: panelSkill.need_level,
-      name: this.names.skill[panelSkill.value],
+      names: {en: this.names.skill[panelSkill.value]},
       effects: [],
-      iname: panelSkill.value,
+      dataId: panelSkill.value,
       slot: this.skills[panelSkill.value].slot
     };
 
+    this.updateSkill(unit, skill, panelSkill.value);
+
+    unit.skills.push(skill);
+  }
+
+  private updateSkill(unit, skill, skillId) {
     if (skill.slot !== 3) {
       skill.cost = {
-        type: this.skills[panelSkill.value].cost_type == 0 ? "AP" : "TP",
-        value: this.skills[panelSkill.value].cost_type == 0 ? this.skills[panelSkill.value].cost_ap : this.skills[panelSkill.value].cost_mp
+        type: this.skills[skillId].cost_type == 0 ? "AP" : "TP",
+        value: this.skills[skillId].cost_type == 0 ? this.skills[skillId].cost_ap : this.skills[skillId].cost_mp
       }
       skill.type = skill.slot === 4 ? "counter" : "active"
-      skill.count = this.skills[panelSkill.value].count
+      skill.count = this.skills[skillId].count
       skill.range = {
-        h: this.skills[panelSkill.value].range_h,
-        l: this.skills[panelSkill.value].range_l,
-        mh: this.skills[panelSkill.value].range_mh,
-        s: this.skills[panelSkill.value].range_s,
-        line: this.skills[panelSkill.value].line
+        h: this.skills[skillId].range_h,
+        l: this.skills[skillId].range_l,
+        mh: this.skills[skillId].range_mh,
+        s: this.skills[skillId].range_s,
+        line: this.skills[skillId].line
       }
 
       skill.aoe = {
-        s: this.skills[panelSkill.value].eff_s,
-        l: this.skills[panelSkill.value].eff_l,
-        h: this.skills[panelSkill.value].eff_h
+        s: this.skills[skillId].eff_s,
+        l: this.skills[skillId].eff_l,
+        h: this.skills[skillId].eff_h
       }
 
-      skill.hit = this.skills[panelSkill.value].hit
-      skill.pierce = this.skills[panelSkill.value].pierce
-      skill.ctbreak = this.skills[panelSkill.value].ctbreak // Cancel ability activation
+      skill.hit = this.skills[skillId].hit
+      skill.pierce = this.skills[skillId].pierce
+      skill.ctbreak = this.skills[skillId].ctbreak // Cancel ability activation
       skill.combo = {
-        num: this.skills[panelSkill.value].combo_num,
-        rate: this.skills[panelSkill.value].combo_rate
+        num: this.skills[skillId].combo_num,
+        rate: this.skills[skillId].combo_rate
       }
       skill.knockback = {
-        rate: this.skills[panelSkill.value].rate,
-        value: this.skills[panelSkill.value].vat,
-        direction: this.skills[panelSkill.value].dir,
-        ds: this.skills[panelSkill.value].ds
+        rate: this.skills[skillId].rate,
+        value: this.skills[skillId].vat,
+        direction: this.skills[skillId].dir,
+        ds: this.skills[skillId].ds
       }
 
       if (skill.slot === 4) {
         skill.counter = {
-          minRate: this.skills[panelSkill.value].eff_rate,
-          maxRate: this.skills[panelSkill.value].eff_rate1,
-          reactDamage: this.reactCounter[this.skills[panelSkill.value].react_d_type]
+          minRate: this.skills[skillId].eff_rate,
+          maxRate: this.skills[skillId].eff_rate1,
+          reactDamage: this.reactCounter[this.skills[skillId].react_d_type]
         }
       }
 
-      if (this.skills[panelSkill.value].klsp && !this.killers[this.skills[panelSkill.value].klsp[0]]) {
-        console.log("@@@@@ " + unit.names.en + " -- " + skill.name + " -- KLSP : " + this.skills[panelSkill.value].klsp[0])
+      if (this.skills[skillId].klsp && !this.killers[this.skills[skillId].klsp[0]]) {
+        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + this.skills[skillId].klsp[0])
       }
 
 
       // check target 12 => ennemy -- 0 => self ??? for effects break
 
 
-      if (typeof(this.skills[panelSkill.value].eff_val) == "number") {
+      if (typeof(this.skills[skillId].eff_val) == "number") {
         skill.damage = {
-          minValue: this.skills[panelSkill.value].eff_val,
-          maxValue: this.skills[panelSkill.value].eff_val1,
-          minSpeed: this.skills[panelSkill.value].ct_spd,
-          maxSpeed: this.skills[panelSkill.value].ct_spd1,
-          type: this.damageTypes[this.skills[panelSkill.value].atk_det],
-          pool: this.damagePool[this.skills[panelSkill.value].eff_dst]
+          minValue: this.skills[skillId].eff_val,
+          maxValue: this.skills[skillId].eff_val1,
+          minSpeed: this.skills[skillId].ct_spd,
+          maxSpeed: this.skills[skillId].ct_spd1,
+          type: this.damageTypes[this.skills[skillId].atk_det],
+          pool: this.damagePool[this.skills[skillId].eff_dst]
         }
 
-        if (this.skills[panelSkill.value].eff_dst && !this.damagePool[this.skills[panelSkill.value].eff_dst]) {
-          console.log("@@@@@ " + unit.names.en + " -- " + skill.name + " -- DST : " + this.skills[panelSkill.value].eff_dst)
+        if (this.skills[skillId].eff_dst && !this.damagePool[this.skills[skillId].eff_dst]) {
+          console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + this.skills[skillId].eff_dst)
         }
 
-        if (this.skills[panelSkill.value].elem) {
+        if (this.skills[skillId].elem) {
           skill.elem = [];
-          this.skills[panelSkill.value].elem.forEach(elem => {
+          this.skills[skillId].elem.forEach(elem => {
             skill.elem.push(this.elements[elem])
           });
         }
       }
 
 
-      if (this.skills[panelSkill.value].t_buffs || this.skills[panelSkill.value].s_buffs) {
-        let buffs = this.skills[panelSkill.value].t_buffs ? this.skills[panelSkill.value].t_buffs : this.skills[panelSkill.value].s_buffs
+      if (this.skills[skillId].t_buffs || this.skills[skillId].s_buffs) {
+        let buffs = this.skills[skillId].t_buffs ? this.skills[skillId].t_buffs : this.skills[skillId].s_buffs
         buffs.forEach(buff => {
-          //console.log(this.buffs[buff])
           let finished = false;
           let i = 1;
           while (!finished) {
             if (this.buffs[buff]["type" + i]) {
-
               if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- " + skill.name + " -- EFFECT : " + this.buffs[buff]["type" + i])
+                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
               }
 
               skill.effects.push({
@@ -589,14 +615,14 @@ export class JsonService {
 
     } else if (skill.slot === 3) {
       skill.type = "passive"
-      this.skills[panelSkill.value].s_buffs.forEach(buff => {
+      this.skills[skillId].s_buffs.forEach(buff => {
         let finished = false;
         let i = 1;
         while (!finished) {
           if (this.buffs[buff]["type" + i]) {
 
             if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
-              console.log("@@@@@ " + unit.names.en + " -- " + skill.name + " -- EFFECT : " + this.buffs[buff]["type" + i])
+              console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
             }
 
             skill.effects.push({
@@ -612,13 +638,8 @@ export class JsonService {
         }
       })
     } else {
-      //console.log("counter")
-      skill.type = "counter"
-
-      console.log(this.skills[panelSkill.value])
+       console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- SLOT : " + skill.slot)
     }
-
-    unit.skills.push(skill);
   }
 
   private getStats(unit, stats) {
@@ -631,18 +652,59 @@ export class JsonService {
   }
 
   private getJobsStats(unit, jobs) {
-    unit.equipements = [];
+    unit.equipments = [];
     this.jobs[jobs[0]].equips.forEach(equip => {
-      unit.equipements.push(this.jobEquip[equip])
+      unit.equipments.push(this.jobEquip[equip])
     });
   }
 
   private getLB(unit, lbId) {
+    if (lbId) {
+      let limit = {
+        names: {en: this.names.skill[lbId]},
+        effects: [],
+        dataId: lbId,
+        slot: this.skills[lbId].slot
+      };
 
+      this.updateSkill(unit, limit, lbId);
+
+      unit.limit = limit
+    }
   }
 
-  private getTMR(unit, tmrID) {
+  private getTMR(unit, tmrId) {
+    if (tmrId) {
+      let tmr = {
+        names: {en: this.names.equipment[tmrId]},
+        stats: this.equipments[tmrId].status[0],
+        type: this.jobEquip[this.equipments[tmrId].cat[0]],
+        inmae: tmrId,
+        skills: [],
+        image: this.equipments[tmrId].asset
+      }
 
+      let lastSkillId = [];
+      for (let i = 1; i <= 5; i++) {
+        if (this.equipments[tmrId]["skl" + i]) {
+          for (let j = 0; j < this.equipments[tmrId]["skl" + i].length; j++) {
+            if (lastSkillId[j] !== this.equipments[tmrId]["skl" + i][j]) {
+              let skill = {
+                names: {en: this.names.skill[this.equipments[tmrId]["skl" + i][j]]},
+                dataId: this.equipments[tmrId]["skl" + i][j],
+                effects: [],
+                slot: this.skills[this.equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1
+              }
+              this.updateSkill(unit, skill, this.equipments[tmrId]["skl" + i][j]);
+              tmr.skills.push(skill)
+              lastSkillId[j] = this.equipments[tmrId]["skl" + i][j]
+            }
+          }
+        }
+      }
+
+      unit.tmr = tmr
+    }
   }
 
 }

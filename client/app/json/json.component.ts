@@ -9,19 +9,18 @@ import { JsonService } from '../services/json.service';
 })
 export class JsonComponent implements OnInit {
   units = [];
+  unitIds = [];
 
   isCollapsed = [];
-  isCollapsedRaw = true;
 
   constructor(private jsonService: JsonService) {}
 
   ngOnInit(): void {
     this.jsonService.getJsons().then(response => {
       this.units = response;
+      this.unitIds = Object.keys(this.units)
 
-      console.log(response);
-
-      for (let i = 0; i < this.units.length; i++) {
+      for (let i = 0; i < this.unitIds.length; i++) {
         this.isCollapsed[i] = true;
       }
     });

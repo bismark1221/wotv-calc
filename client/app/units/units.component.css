@@ -1,3 +1,26 @@
+.elementImg, .damageImg, .statusAilmentImg, .skilImg {
+  height: 40px;
+}
+
+.rarityImg {
+  height: 30px;
+}
+
+th {
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border: 1px solid #404040;
+  padding: 0.3em 0.5em;
+}
+
+
+td {
+  text-align: center;
+  padding: 0.3em 0.5em;
+}
+
+
 .inlineBlock {
   display: inline-block;
 }

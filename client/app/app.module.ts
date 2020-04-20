@@ -40,7 +40,7 @@ import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
 import { MonsterService } from './services/monster.service';
-import { WeaponService } from './services/weapon.service';
+import { EquipmentService } from './services/equipment.service';
 import { RaceService } from './services/race.service';
 import { DamageService } from './services/damage.service';
 
@@ -104,7 +104,7 @@ export function createTranslateLoader(http: HttpClient) {
     NavService,
     JsonService,
     MonsterService,
-    WeaponService,
+    EquipmentService,
     RaceService,
     DamageService
   ],

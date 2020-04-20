@@ -16,6 +16,10 @@ button, input, optgroup, select, textarea {
   font-family: Palatino, Helvetica, sans-serif !important;
 }
 
+table, tbody, tr, th, td {
+  border: 1px solid grey;
+}
+
 .row {
   margin: 0;
 }
