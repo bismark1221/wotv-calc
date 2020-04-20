@@ -44,9 +44,10 @@ export class Skill {
   consecutive?;
   unlockBy?;
   cooldown?;
+  effects?;
 
   constructFromJson(ability: Skill, translateService: TranslateService): void {
-    
+
   }
 
   getName(translateService: TranslateService): string {
