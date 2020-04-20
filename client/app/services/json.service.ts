@@ -258,6 +258,12 @@ export class JsonService {
     "ACC"
   ]
 
+  calcType = [
+    "0",
+    "fixe",
+    "percent"
+  ]
+
   constructor(private http: HttpClient, private unitService: UnitService) {}
 
   private jsonUnits() {
@@ -465,7 +471,7 @@ export class JsonService {
         buff.effects.push({
           type: this.buffTypes[this.buffs[panelBuff.value]["type" + i]],
           value: this.buffs[panelBuff.value]["val" + i],
-          percent: this.buffs[panelBuff.value]["calc1"] == 2 ? true : undefined
+          calcType: this.calcType[this.buffs[panelBuff.value]["calc" + i]] ? this.calcType[this.buffs[panelBuff.value]["calc" + i]] : "unknow"
         });
 
 
@@ -593,7 +599,7 @@ export class JsonService {
                 type: this.buffTypes[this.buffs[buff]["type" + i]],
                 minValue: this.buffs[buff]["val" + i],
                 maxValue: this.buffs[buff]["val" + i + "1"],
-                percent: this.buffs[buff]["calc1"] == 2 || this.buffs[buff]["calc1"] == 30 ? true : undefined,
+                calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
                 rate: this.buffs[buff].rate,
                 turn: this.buffs[buff].turn
               });
@@ -627,7 +633,7 @@ export class JsonService {
               type: this.buffTypes[this.buffs[buff]["type" + i]],
               minValue: this.buffs[buff]["val" + i],
               maxValue: this.buffs[buff]["val" + i + "1"],
-              percent: this.buffs[buff]["calc1"] == 2 ? true : undefined
+              calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow"
             });
             i++;
           } else {

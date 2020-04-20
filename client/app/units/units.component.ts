@@ -13,6 +13,7 @@ import { Skill } from '../entities/skill';
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { EquipmentService } from '../services/equipment.service';
+import { SkillService } from '../services/skill.service';
 
 
 @Component({
@@ -41,7 +42,8 @@ export class UnitsComponent implements OnInit {
     private angulartics: Angulartics2,
     private translateService: TranslateService,
     private equipmentService: EquipmentService,
-    private navService: NavService
+    private navService: NavService,
+    private skillService: SkillService
   ) {
     this.getTranslation();
 
@@ -94,6 +96,15 @@ export class UnitsComponent implements OnInit {
         id: unit.dataId.toString(),
         text: unit.getName(this.translateService)
       });
+
+
+      unit.skills.forEach(skill => {
+        skill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
+        });
+      });
+
+
     });
 
     delete this.observableUnits[0].children;
@@ -102,6 +113,11 @@ export class UnitsComponent implements OnInit {
   selectUnit(unitId: string) {
     this.idSelected = unitId;
     this.unit = this.unitService.getUnit(unitId);
+    /*this.unit.skills.forEach(skill => {
+      skill.effects.forEach(effect => {
+        effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
+      });
+    });*/
     console.log(this.unit)
   }
 

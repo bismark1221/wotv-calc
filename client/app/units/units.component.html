@@ -257,7 +257,11 @@
         <td>{{ skill.unlockStar }}</td>
         <td><img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" /></td>
         <td>{{ skill.names.en }}</td>
-        <td></td>
+        <td>
+          <div *ngFor="let effect of skill.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
         <td>{{ skill.count }}</td>
         <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
         <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
