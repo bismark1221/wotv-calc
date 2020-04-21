@@ -8,11 +8,17 @@ export class SkillService {
     "0": "",
     "fixe": "",
     "percent": "%",
-    "resistance": "x",
+    "resistance": "%",
     "nullify": "x",
     "dispel": "x",
     "unknow": "x",
     undefined: "x"
+  }
+
+  counterType = {
+    "ALL": "all",
+    "PHYSIC": "physical",
+    "MAGIC": "magical"
   }
 
   constructor(private translateService: TranslateService) {}
@@ -39,8 +45,8 @@ export class SkillService {
 
   private getValue(effect) {
     let value = "";
-    if (typeof(effect.minValue) === "number") {
-      value = " (" + this.getPositiveValue(effect.minValue) + this.getCalc(effect) + this.getMaxValue(effect) + ")"
+    if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
+      value = " (" + this.getPositiveValue(typeof(effect.minValue) === "number" ? effect.minValue : effect.value) + this.getCalc(effect) + this.getMaxValue(effect) + ")"
     }
 
     return value;
@@ -82,32 +88,32 @@ export class SkillService {
     }
   }
 
-  formatEffect(unit, skill, effect) {
+  formatEffect(unit, skill, effect, isSkill = true) {
     let html = "";
     switch (effect.type) {
       case "HP" :
-        if (skill.slot === 3) {
+        if (skill.slot === 3 || !isSkill) {
           html = "Increase HP" + this.getValue(effect) + this.getTurns(effect)
         } else {
           html = "Restore HP" + this.getValue(effect) + this.getTurns(effect)
         }
       break
       case "TP" :
-        if (skill.slot === 3) {
+        if (skill.slot === 3 || !isSkill) {
           html = "Increase TP" + this.getValue(effect) + this.getTurns(effect)
         } else {
           html = "Restore TP" + this.getValue(effect) + this.getTurns(effect)
         }
       break
       case "AP" :
-        if (skill.slot === 3) {
+        if (skill.slot === 3 || !isSkill) {
           html = "Increase AP" + this.getValue(effect) + this.getTurns(effect)
         } else {
           html = "Restore AP" + this.getValue(effect) + this.getTurns(effect)
         }
       break
       case "CT" :
-        if (skill.slot === 3) {
+        if (skill.slot === 3 || !isSkill) {
           html = "Increase CT" + this.getValue(effect) + this.getTurns(effect)
         } else {
           html = "Restore CT" + this.getValue(effect) + this.getTurns(effect)
@@ -215,8 +221,7 @@ export class SkillService {
         html = this.getChance(effect) + " regen" + this.getValue(effect) + this.getTurns(effect)
       break
       case "AUTO_RESTORE" :
-//console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.names.en + " -- " + effect.minValue)
-//        html = this.getChance(effect) + " auto-restore" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " auto-restore" + this.getValue(effect) + this.getTurns(effect)
       break
       case "POISON" :
         html = this.getChance(effect) + " poison" + this.getValue(effect) + this.getTurns(effect)
@@ -306,10 +311,10 @@ export class SkillService {
         html = "Increase human killer" + this.getValue(effect) + this.getTurns(effect)
       break
       case "FENNES_KILLER" :
-        //html = "Increase fennes killer" + this.getValue(effect) + this.getTurns(effect)
+        html = "Increase fennes killer" + this.getValue(effect) + this.getTurns(effect)
       break
-      case "SLEEP_IMBUE" :
-        //html = "SLEEP_IMBUE" + this.getValue(effect) + this.getTurns(effect)
+      case "IMBUE" :
+        console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- SHOULD NOT BE USED !!!")
       break
       case "ALL_AILMENTS" :
         html = this.getChance(effect, false) + " all status ailments" + this.getValue(effect) + this.getTurns(effect)
@@ -347,10 +352,6 @@ export class SkillService {
       case "ACQUIRED_AP" :
         html = this.getIncrease(effect) + " Acquired AP" + this.getValue(effect) + this.getTurns(effect)
       break
-      case "FAITH" :
-//console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.names.en + " -- " + effect.minValue)
-  //      html = this.getIncrease(effect) + " Faith" + this.getValue(effect) + this.getTurns(effect)
-      break
       case "DEBUFF_RES" :
         html = this.getIncrease(effect) + " Debuff Res" + this.getValue(effect) + this.getTurns(effect)
       break
@@ -364,8 +365,7 @@ export class SkillService {
         html = this.getIncrease(effect) + " Attack Resistance" + this.getValue(effect) + this.getTurns(effect)
       break
       case "AOE_RES" :
-//console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.names.en + " -- " + effect.minValue)
-        //html = this.getIncrease(effect) + " AOE Resistance" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " Area Resistance" + this.getValue(effect) + this.getTurns(effect)
       break
     }
 
@@ -383,5 +383,9 @@ export class SkillService {
   formatDamage(unit, skill, damage) {
     let html = (skill.elem ? skill.elem : unit.element) + " " + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " + this.getValue(damage);
     return this.upperCaseFirst(html)
+  }
+
+  formatCounter(unit, skill, counter) {
+    return "Chance to counter " + this.counterType[counter.reactDamage] + " damage " + this.getValue(counter)
   }
 }

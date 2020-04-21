@@ -188,9 +188,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": 15,
@@ -433,9 +434,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         }
       },
       {
@@ -763,9 +765,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -1486,9 +1489,9 @@
         "en": "Lion Emblem"
       },
       "stats": {
-        "hp": 272,
-        "def": 8,
-        "mnd": 8
+        "HP": 272,
+        "DEF": 8,
+        "SPR": 8
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_MONT_1",
@@ -1652,9 +1655,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -1963,9 +1967,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -2319,9 +2324,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -3041,9 +3047,9 @@
         "en": "Lion Armor"
       },
       "stats": {
-        "hp": 434,
-        "def": 8,
-        "avd": 6
+        "HP": 434,
+        "DEF": 8,
+        "EVADE": 6
       },
       "type": "ARMOR",
       "inmae": "AF_ARM_LW_STRN_1",
@@ -3280,9 +3286,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -3477,9 +3484,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -3860,9 +3868,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -4561,8 +4570,8 @@
         "en": "Guardian's Mantle"
       },
       "stats": {
-        "hp": 350,
-        "avd": 15
+        "HP": 350,
+        "EVADE": 15
       },
       "type": "ACC",
       "inmae": "AF_CLK_LW_ELDE_1",
@@ -4835,9 +4844,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -5035,9 +5045,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -5071,9 +5082,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -6142,8 +6154,8 @@
         "en": "Glinting Armor"
       },
       "stats": {
-        "hp": 482,
-        "def": 10
+        "HP": 482,
+        "DEF": 10
       },
       "type": "ARMOR",
       "inmae": "AF_ARM_LW_ROBB_1",
@@ -6370,9 +6382,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         }
       },
       {
@@ -6582,9 +6595,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -6885,9 +6899,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -7646,8 +7661,8 @@
         "en": "Solidus Shield"
       },
       "stats": {
-        "hp": 584,
-        "def": 12
+        "HP": 584,
+        "DEF": 12
       },
       "type": "SHIELD",
       "inmae": "AF_SHI_LW_ENBT_1",
@@ -7886,9 +7901,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -8116,9 +8132,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -8465,9 +8482,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -9220,10 +9238,10 @@
         "en": "Illusory Bell"
       },
       "stats": {
-        "hp": 142,
-        "def": 8,
-        "spd": 7,
-        "hit": 14
+        "HP": 142,
+        "DEF": 8,
+        "AGI": 7,
+        "ACCURACY": 14
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_ZIZA_1",
@@ -9466,9 +9484,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -9663,9 +9682,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -9696,9 +9716,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -10765,9 +10786,9 @@
         "en": "Scanning Goggles"
       },
       "stats": {
-        "hp": 350,
-        "hit": 10,
-        "avd": 6
+        "HP": 350,
+        "ACCURACY": 10,
+        "EVADE": 6
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_AILN_1",
@@ -11060,9 +11081,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -11281,9 +11303,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -11652,9 +11675,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -12408,9 +12432,9 @@
         "en": "Kaleido Moon"
       },
       "stats": {
-        "hp": 320,
-        "mnd": 10,
-        "hit": 8
+        "HP": 320,
+        "SPR": 10,
+        "ACCURACY": 8
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_MDNA_1",
@@ -12679,9 +12703,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -12919,9 +12944,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -13303,9 +13329,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -14087,10 +14114,10 @@
         "en": "Sacred Step"
       },
       "stats": {
-        "hp": 240,
-        "mnd": 10,
-        "spd": 5,
-        "crta": 10
+        "HP": 240,
+        "SPR": 10,
+        "AGI": 5,
+        "CRITIC_AVOID": 10
       },
       "type": "ACC",
       "inmae": "AF_FTW_LW_AYKA_1",
@@ -14375,9 +14402,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -14617,9 +14645,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -15010,9 +15039,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -15704,10 +15734,10 @@
         "en": "Steel Maiden's Necklace"
       },
       "stats": {
-        "hp": 342,
-        "def": 5,
-        "mnd": 8,
-        "crta": 6
+        "HP": 342,
+        "DEF": 5,
+        "SPR": 8,
+        "CRITIC_AVOID": 6
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_MACR_1",
@@ -16013,9 +16043,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -16254,9 +16285,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -16622,9 +16654,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -17307,9 +17340,9 @@
         "en": "Guardian's Staff"
       },
       "stats": {
-        "hp": 136,
-        "mag": 99,
-        "crt": 9
+        "HP": 136,
+        "MAG": 99,
+        "CRITIC_RATE": 9
       },
       "type": "ROD",
       "inmae": "AF_ROD_LW_HLNA_1",
@@ -17440,9 +17473,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -17544,9 +17578,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -18149,9 +18184,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -18863,9 +18899,9 @@
         "en": "Flame Blade"
       },
       "stats": {
-        "hp": 102,
-        "atk": 114,
-        "avd": 9
+        "HP": 102,
+        "ATK": 114,
+        "EVADE": 9
       },
       "type": "SWORD",
       "inmae": "AF_SWO_LW_LILS_1",
@@ -19101,9 +19137,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -19341,9 +19378,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -19669,9 +19707,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -20337,9 +20376,9 @@
         "en": "Astrologer's Lance"
       },
       "stats": {
-        "hp": 68,
-        "atk": 99,
-        "crta": 9
+        "HP": 68,
+        "ATK": 99,
+        "CRITIC_AVOID": 9
       },
       "type": "SPEAR",
       "inmae": "AF_SPE_LW_RAMD_1",
@@ -20351,8 +20390,10 @@
           "dataId": "SK_SPE_LW_RAMD_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -20600,9 +20641,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -20798,9 +20840,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -21174,9 +21217,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -21836,10 +21880,10 @@
         "en": "Lightning Katana"
       },
       "stats": {
-        "hp": 68,
-        "atk": 82,
-        "avd": 9,
-        "crt": 13
+        "HP": 68,
+        "ATK": 82,
+        "EVADE": 9,
+        "CRITIC_RATE": 13
       },
       "type": "KATANA",
       "inmae": "AF_KAT_LW_OOOO_1",
@@ -21854,7 +21898,8 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent"
+              "calcType": "percent",
+              "rate": 200
             }
           ],
           "slot": 3,
@@ -22057,9 +22102,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -22254,9 +22300,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -22628,9 +22675,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -23334,9 +23382,9 @@
         "en": "Dragonslayer Lance"
       },
       "stats": {
-        "hp": 68,
-        "atk": 114,
-        "crt": 6
+        "HP": 68,
+        "ATK": 114,
+        "CRITIC_RATE": 6
       },
       "type": "SPEAR",
       "inmae": "AF_SPE_LW_LRNZ_1",
@@ -23351,7 +23399,8 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent"
+              "calcType": "percent",
+              "rate": 200
             }
           ],
           "slot": 3,
@@ -23622,9 +23671,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -23826,9 +23876,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -24143,9 +24194,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -24827,9 +24879,9 @@
         "en": "Moonless Gun"
       },
       "stats": {
-        "hp": 102,
-        "atk": 82,
-        "avd": 13
+        "HP": 102,
+        "ATK": 82,
+        "EVADE": 13
       },
       "type": "GUN",
       "inmae": "AF_GUN_LW_RIRY_1",
@@ -24841,8 +24893,12 @@
           "dataId": "SK_GUN_LW_RIRY_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "BLIND",
+              "minValue": 20,
+              "maxValue": 50,
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -25054,9 +25110,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -25248,9 +25305,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -25276,9 +25334,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -26309,9 +26368,9 @@
         "en": "Bloodsoaked Dagger"
       },
       "stats": {
-        "hp": 68,
-        "atk": 82,
-        "avd": 15
+        "HP": 68,
+        "ATK": 82,
+        "EVADE": 15
       },
       "type": "DAGGER",
       "inmae": "AF_DAG_LW_VSTR_1",
@@ -26326,7 +26385,8 @@
               "type": "DARK_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent"
+              "calcType": "percent",
+              "rate": 200
             }
           ],
           "slot": 3,
@@ -26598,9 +26658,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -26739,9 +26800,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -26799,9 +26861,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -27855,9 +27918,9 @@
         "en": "Glacier Bow"
       },
       "stats": {
-        "hp": 136,
-        "atk": 82,
-        "crt": 18
+        "HP": 136,
+        "ATK": 82,
+        "CRITIC_RATE": 18
       },
       "type": "BOW",
       "inmae": "AF_BOW_LW_CLEY_1",
@@ -28066,9 +28129,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -28097,9 +28161,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -28696,9 +28761,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -29393,9 +29459,9 @@
         "en": "Mace of Affection"
       },
       "stats": {
-        "hp": 102,
-        "mag": 82,
-        "crt": 13
+        "HP": 102,
+        "MAG": 82,
+        "CRITIC_RATE": 13
       },
       "type": "MACE",
       "inmae": "AF_MAC_LW_KADI_1",
@@ -29407,8 +29473,10 @@
           "dataId": "SK_MAC_LW_KADI_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "CONFUSION",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -29621,9 +29689,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -29814,9 +29883,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -30245,9 +30315,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -30990,9 +31061,9 @@
         "en": "Icebreaker Fists"
       },
       "stats": {
-        "hp": 68,
-        "atk": 99,
-        "crt": 13
+        "HP": 68,
+        "ATK": 99,
+        "CRITIC_RATE": 13
       },
       "type": "FIST",
       "inmae": "AF_FIS_LW_MRLK_1",
@@ -31007,7 +31078,8 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent"
+              "calcType": "percent",
+              "rate": 200
             }
           ],
           "slot": 3,
@@ -31284,9 +31356,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -31489,9 +31562,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -31823,9 +31897,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -32526,9 +32601,9 @@
         "en": "Magic Baton"
       },
       "stats": {
-        "hp": 102,
-        "mag": 99,
-        "crt": 9
+        "HP": 102,
+        "MAG": 99,
+        "CRITIC_RATE": 9
       },
       "type": "ROD",
       "inmae": "AF_ROD_LW_MGRT_1",
@@ -32782,9 +32857,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -33046,9 +33122,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -33378,9 +33455,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -34140,9 +34218,9 @@
         "en": "Magicite Staff"
       },
       "stats": {
-        "hp": 95,
-        "mag": 106,
-        "crt": 10
+        "HP": 95,
+        "MAG": 106,
+        "CRITIC_RATE": 10
       },
       "type": "ROD",
       "inmae": "AF_ROD_LW_PRAY_1",
@@ -34154,8 +34232,10 @@
           "dataId": "SK_ROD_LW_PRAY_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "DISABLE",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -34286,9 +34366,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -34612,9 +34693,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -34995,9 +35077,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -35686,9 +35769,9 @@
         "en": "Skycutter Greatsword"
       },
       "stats": {
-        "hp": 69,
-        "atk": 110,
-        "hit": 15
+        "HP": 69,
+        "ATK": 110,
+        "ACCURACY": 15
       },
       "type": "GREATSWORD",
       "inmae": "AF_BSW_LW_SZRT_1",
@@ -35700,8 +35783,12 @@
           "dataId": "SK_BSW_LW_SZRT_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "DOOM",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 5
             }
           ],
           "slot": 3,
@@ -35963,9 +36050,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -36228,9 +36316,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -36605,9 +36694,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -37307,10 +37397,10 @@
         "en": "Reincarnation"
       },
       "stats": {
-        "hp": 95,
-        "atk": 54,
-        "mag": 62,
-        "crt": 18
+        "HP": 95,
+        "ATK": 54,
+        "MAG": 62,
+        "CRITIC_RATE": 18
       },
       "type": "BOW",
       "inmae": "AF_BOW_LW_FINA_1",
@@ -37322,8 +37412,10 @@
           "dataId": "SK_BOW_LW_FINA_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "CHARM",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -37529,9 +37621,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -37765,9 +37858,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -38119,9 +38213,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         }
       },
       {
@@ -38793,8 +38888,8 @@
         "en": "Forest Armor"
       },
       "stats": {
-        "hp": 292,
-        "def": 7
+        "HP": 292,
+        "DEF": 7
       },
       "type": "ARMOR",
       "inmae": "AF_ARM_LW_BYLO_1",
@@ -39015,9 +39110,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -39247,9 +39343,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -39606,9 +39703,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -40334,9 +40432,9 @@
         "en": "Pretty Hood"
       },
       "stats": {
-        "hp": 68,
-        "def": 5,
-        "mag": 15
+        "HP": 68,
+        "DEF": 5,
+        "MAG": 15
       },
       "type": "ACC",
       "inmae": "AF_HAT_LW_RYER_1",
@@ -40555,9 +40653,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -40732,9 +40831,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -41115,9 +41215,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -41814,9 +41915,9 @@
         "en": "Dragon Boots"
       },
       "stats": {
-        "hp": 68,
-        "def": 11,
-        "hit": 11
+        "HP": 68,
+        "DEF": 11,
+        "ACCURACY": 11
       },
       "type": "ACC",
       "inmae": "AF_ARM_LW_SCIA_1",
@@ -42095,9 +42196,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -42298,9 +42400,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -42665,9 +42768,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -43349,9 +43453,9 @@
         "en": "Robe of Alliance"
       },
       "stats": {
-        "hp": 97,
-        "def": 7,
-        "mnd": 8
+        "HP": 97,
+        "DEF": 7,
+        "SPR": 8
       },
       "type": "CLOTH",
       "inmae": "AF_ARM_LW_VRID_1",
@@ -43600,9 +43704,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -43837,9 +43942,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -44174,9 +44280,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -44903,8 +45010,8 @@
         "en": "Lunar Cape"
       },
       "stats": {
-        "hp": 195,
-        "def": 8
+        "HP": 195,
+        "DEF": 8
       },
       "type": "CLOTH",
       "inmae": "AF_ARM_LW_NAIA_1",
@@ -45138,9 +45245,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -45338,9 +45446,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         }
       },
       {
@@ -45722,9 +45831,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -46407,8 +46517,8 @@
         "en": "Snowfield Wrap"
       },
       "stats": {
-        "hp": 243,
-        "def": 11
+        "HP": 243,
+        "DEF": 11
       },
       "type": "CLOTH",
       "inmae": "AF_CLT_LW_SRJS_1",
@@ -46710,9 +46820,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -46918,9 +47029,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -47256,9 +47368,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -47959,9 +48072,9 @@
         "en": "Cap of Devotion"
       },
       "stats": {
-        "hp": 97,
-        "def": 7,
-        "crt": 15
+        "HP": 97,
+        "DEF": 7,
+        "CRITIC_RATE": 15
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_UNII_1",
@@ -48213,9 +48326,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -48431,9 +48545,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -48756,9 +48871,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -49469,8 +49585,8 @@
         "en": "Seeker's Wrap"
       },
       "stats": {
-        "hp": 243,
-        "def": 11
+        "HP": 243,
+        "DEF": 11
       },
       "type": "CLOTH",
       "inmae": "AF_CLT_LW_SEVR_1",
@@ -49698,9 +49814,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -49881,9 +49998,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -50258,9 +50376,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -50941,9 +51060,9 @@
         "en": "Rubeus Bandana"
       },
       "stats": {
-        "hp": 146,
-        "def": 11,
-        "hit": 7
+        "HP": 146,
+        "DEF": 11,
+        "ACCURACY": 7
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_VADM_1",
@@ -51185,9 +51304,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -51458,9 +51578,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -51757,9 +51878,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -52489,9 +52611,9 @@
         "en": "Magicite Eye Mask"
       },
       "stats": {
-        "hp": 68,
-        "mag": 11,
-        "mnd": 7
+        "HP": 68,
+        "MAG": 11,
+        "SPR": 7
       },
       "type": "ACC",
       "inmae": "AF_ARM_LW_MURM_1",
@@ -52760,9 +52882,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -52990,9 +53113,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -53310,9 +53434,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -54004,9 +54129,9 @@
         "en": "Chronal Cap"
       },
       "stats": {
-        "hp": 146,
-        "def": 11,
-        "spd": 5
+        "HP": 146,
+        "DEF": 11,
+        "AGI": 5
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_PHBE_1",
@@ -54300,9 +54425,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -54527,9 +54653,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -54889,9 +55016,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -55555,9 +55683,9 @@
         "en": "Fancy Ribbon"
       },
       "stats": {
-        "hp": 68,
-        "def": 5,
-        "dex": 11
+        "HP": 68,
+        "DEF": 5,
+        "DEX": 11
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_RART_1",
@@ -55795,9 +55923,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -56007,9 +56136,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -56388,9 +56518,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -57096,9 +57227,9 @@
         "en": "Magician's Cap"
       },
       "stats": {
-        "hp": 68,
-        "def": 5,
-        "mag": 11
+        "HP": 68,
+        "DEF": 5,
+        "MAG": 11
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_MICE_1",
@@ -57304,9 +57435,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -57507,9 +57639,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -57844,9 +57977,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -58542,9 +58676,9 @@
         "en": "Shinobi's Bandana"
       },
       "stats": {
-        "hp": 68,
-        "def": 5,
-        "hit": 11
+        "HP": 68,
+        "DEF": 5,
+        "ACCURACY": 11
       },
       "type": "HAT",
       "inmae": "AF_HAT_LW_MIIA_1",
@@ -58736,9 +58870,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -58972,9 +59107,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -59293,9 +59429,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -59981,9 +60118,9 @@
         "en": "Bear Hood"
       },
       "stats": {
-        "hp": 68,
-        "def": 5,
-        "luk": 11
+        "HP": 68,
+        "DEF": 5,
+        "LUCK": 11
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_ZZAN_1",
@@ -60137,12 +60274,14 @@
           {
             "type": "FLOAT",
             "maxValue": 0,
-            "calcType": "percent"
+            "calcType": "percent",
+            "rate": 200
           },
           {
             "type": "JUMP",
             "minValue": 1,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "rate": 200
           }
         ],
         "dataId": "SK_LW_GLMS_P_2",
@@ -60204,9 +60343,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -60416,9 +60556,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -60444,9 +60585,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -61541,9 +61683,9 @@
         "en": "Helm of the Sworn"
       },
       "stats": {
-        "hp": 382,
-        "def": 8,
-        "mnd": 8
+        "HP": 382,
+        "DEF": 8,
+        "SPR": 8
       },
       "type": "HELM",
       "inmae": "AF_HLM_LW_GLMS_1",
@@ -61558,13 +61700,16 @@
               "type": "MAG",
               "minValue": 150,
               "maxValue": 150,
-              "calcType": "percent"
+              "calcType": "percent",
+              "turn": 1
             },
             {
               "type": "CT",
               "minValue": 250,
               "maxValue": 500,
-              "calcType": "unknow"
+              "calcType": "unknow",
+              "rate": 15,
+              "turn": 1
             }
           ],
           "slot": 3,
@@ -61758,9 +61903,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 30,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 30,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -61960,9 +62106,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -62370,9 +62517,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -63089,8 +63237,8 @@
         "en": "Nightseeker"
       },
       "stats": {
-        "hp": 80,
-        "mag": 78
+        "HP": 80,
+        "MAG": 78
       },
       "type": "ROD",
       "inmae": "AF_ROD_FF14_YSTL_1",
@@ -63102,8 +63250,10 @@
           "dataId": "SK_ROD_FF14_YSTL_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "SILENCE",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -63330,9 +63480,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "ALL"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -63534,9 +63685,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -63817,9 +63969,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "MAGIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
         }
       },
       {
@@ -64508,9 +64661,9 @@
         "en": "Bodyguard's Coat"
       },
       "stats": {
-        "hp": 584,
-        "def": 10,
-        "avd": 10
+        "HP": 584,
+        "DEF": 10,
+        "EVADE": 10
       },
       "type": "CLOTH",
       "inmae": "AF_CLT_FF14_TNCR_1",
@@ -64792,9 +64945,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -65017,9 +65171,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -65397,9 +65552,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 5,
-          "maxRate": 15,
-          "reactDamage": "ALL"
+          "minValue": 5,
+          "maxValue": 15,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -66103,9 +66259,9 @@
         "en": "Victory Ribbon"
       },
       "stats": {
-        "hp": 434,
-        "hit": 12,
-        "crt": 12
+        "HP": 434,
+        "ACCURACY": 12,
+        "CRITIC_RATE": 12
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_FDRC_1",
@@ -66399,9 +66555,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 30,
-          "maxRate": 50,
-          "reactDamage": "ALL"
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -66597,9 +66754,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -66939,9 +67097,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -67608,10 +67767,10 @@
         "en": "Shadow Ninja Blade"
       },
       "stats": {
-        "hp": 102,
-        "atk": 82,
-        "spd": 4,
-        "crt": 13
+        "HP": 102,
+        "ATK": 82,
+        "AGI": 4,
+        "CRITIC_RATE": 13
       },
       "type": "NINJABLADE",
       "inmae": "AF_NKN_LW_SDLX_1",
@@ -67623,8 +67782,12 @@
           "dataId": "SK_NKN_LW_SDLX_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "PARALYZE",
+              "minValue": 80,
+              "maxValue": 80,
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,
@@ -67880,9 +68043,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -68099,9 +68263,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -68417,9 +68582,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -69152,9 +69318,9 @@
         "en": "Herculean Waistcloth"
       },
       "stats": {
-        "hp": 440,
-        "def": 8,
-        "mnd": 4
+        "HP": 440,
+        "DEF": 8,
+        "SPR": 4
       },
       "type": "CLOTH",
       "inmae": "AF_BLT_LW_YERM_1",
@@ -69368,9 +69534,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "PHYSIC"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         }
       },
       {
@@ -69614,9 +69781,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -69905,9 +70073,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -85,
@@ -70645,9 +70814,9 @@
         "en": "Guiding Blade"
       },
       "stats": {
-        "hp": 68,
-        "atk": 104,
-        "hit": 12
+        "HP": 68,
+        "ATK": 104,
+        "ACCURACY": 12
       },
       "type": "SWORD",
       "inmae": "AF_SWO_LW_NASR_1",
@@ -70657,8 +70826,10 @@
           "dataId": "SK_SWO_LW_NASR_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "IMMOBILIZE",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 5
             }
           ],
           "slot": 3,
@@ -70865,9 +71036,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 15,
-          "maxRate": 30,
-          "reactDamage": "PHYSIC"
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
         },
         "damage": {
           "minValue": -5,
@@ -71112,9 +71284,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -71472,9 +71645,10 @@
         "combo": {},
         "knockback": {},
         "counter": {
-          "minRate": 10,
-          "maxRate": 20,
-          "reactDamage": "ALL"
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
         }
       },
       {
@@ -72194,11 +72368,11 @@
         "en": "Boxer's Badge"
       },
       "stats": {
-        "hp": 260,
-        "spd": 3,
-        "hit": 0,
-        "avd": 0,
-        "crt": 8
+        "HP": 260,
+        "AGI": 3,
+        "ACCURACY": 0,
+        "EVADE": 0,
+        "CRITIC_RATE": 8
       },
       "type": "ACC",
       "inmae": "AF_ACC_LW_ETRE_1",
@@ -72513,10 +72687,10 @@
         "en": "Sacred Step"
       },
       "stats": {
-        "hp": 240,
-        "mnd": 10,
-        "spd": 5,
-        "crta": 10
+        "HP": 240,
+        "SPR": 10,
+        "AGI": 5,
+        "CRITIC_AVOID": 10
       },
       "type": "ACC",
       "inmae": "AF_FTW_LW_AYKA_1",
@@ -72724,9 +72898,9 @@
         "en": "Magicite Staff"
       },
       "stats": {
-        "hp": 95,
-        "mag": 106,
-        "crt": 10
+        "HP": 95,
+        "MAG": 106,
+        "CRITIC_RATE": 10
       },
       "type": "ROD",
       "inmae": "AF_ROD_LW_PRAY_1",
@@ -72738,8 +72912,10 @@
           "dataId": "SK_ROD_LW_PRAY_1_1",
           "effects": [
             {
-              "type": "SLEEP_IMBUE",
-              "calcType": "percent"
+              "type": "DISABLE",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
             }
           ],
           "slot": 3,

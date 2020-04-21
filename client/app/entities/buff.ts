@@ -1,3 +1,5 @@
 import { TranslateService } from '@ngx-translate/core';
 
-export class Buff {}
+export class Buff {
+  effects;
+}

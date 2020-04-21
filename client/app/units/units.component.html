@@ -49,7 +49,65 @@
   <table>
     <tbody>
       <tr>
-        <th colspan="13">Stats</th>
+        <th [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '6' : '2'">TMR</th>
+      </tr>
+      <tr>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '2' : '1'">Name</td>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '4' : '1'">{{ unit.tmr.names.en }}</td>
+      </tr>
+      <tr>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '2' : '1'">Type</td>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '4' : '1'">{{ unit.tmr.type }}</td>
+      </tr>
+      <tr *ngFor="let statType of unit.tmr.statsTypes">
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '2' : '1'">{{ statType }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '4' : '1'">{{ unit.tmr.stats[statType] }}</td>
+      </tr>
+      <tr>
+        <th [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '6' : '2'">Skill</th>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'active'">name</th>
+        <th>Effects</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'active'">Casts</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'active'">Hits</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'active'">Cost</th>
+      </tr>
+      <tr>
+        <td>
+          <img class="skilImg" src="{{'assets/skill-type/' + unit.tmr.skills[0].type + '.png'}}" />
+        </td>
+        <td *ngIf="unit.tmr.skills[0].type == 'active'">
+          {{ unit.tmr.skills[0].names.en }}
+        </td>
+        <td>
+          <div>{{ unit.tmr.skills[0].counterHtml }}</div>
+          <div>{{ unit.tmr.skills[0].damageHtml }}</div>
+          <div *ngFor="let effect of unit.tmr.skills[0].effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td *ngIf="unit.tmr.skills[0].type == 'active'">
+          {{ unit.tmr.skills[0].count }}
+        </td>
+        <td *ngIf="unit.tmr.skills[0].type == 'active'">
+          <span *ngIf="unit.tmr.skills[0].combo">{{ unit.tmr.skills[0].combo.num }}</span>
+        </td>
+        <td *ngIf="unit.tmr.skills[0].type == 'active'">
+          <span *ngIf="unit.tmr.skills[0].cost">{{ unit.tmr.skills[0].cost.value }} {{ unit.tmr.skills[0].cost.type }}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="13">Unit Stats</th>
       </tr>
       <tr>
         <th></th>
@@ -100,6 +158,49 @@
   </table>
 </div>
 
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="11">Board Stats</th>
+      </tr>
+      <tr>
+        <th>HP</th>
+        <th>TP</th>
+        <th>INITIAL AP</th>
+        <th>ATK</th>
+        <th>DEF</th>
+        <th>MAG</th>
+        <th>SPR</th>
+        <th>DEX</th>
+        <th>AGI</th>
+        <th>LUCK</th>
+        <th>CRITIC RATE</th>
+      </tr>
+      <tr>
+        <td>{{ unit.totalBuffs.HP }}</td>
+        <td>{{ unit.totalBuffs.TP }}</td>
+        <td>{{ unit.totalBuffs.INITIAL_AP }}</td>
+        <td>{{ unit.totalBuffs.ATK }}</td>
+        <td>{{ unit.totalBuffs.DEF }}</td>
+        <td>{{ unit.totalBuffs.MAG }}</td>
+        <td>{{ unit.totalBuffs.SPR }}</td>
+        <td>{{ unit.totalBuffs.DEX }}</td>
+        <td>{{ unit.totalBuffs.AGI }}</td>
+        <td>{{ unit.totalBuffs.LCK }}</td>
+        <td>{{ unit.totalBuffs.CRITIC_RATE }}</td>
+      </tr>
+      <tr>
+        <th colspan="11">OTHERS</th>
+      </tr>
+      <tr>
+        <td colspan="11">
+          <div *ngFor="let buff of unit.remainingBuffs">{{ buff }}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
@@ -259,7 +360,8 @@
           <td><img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" /></td>
           <td>{{ skill.names.en }}</td>
           <td>
-            {{ skill.damageHtml }}
+            <div>{{ skill.counterHtml }}</div>
+            <div>{{ skill.damageHtml }}</div>
             <div *ngFor="let effect of skill.effects">
               {{ effect.formatHtml }}
             </div>

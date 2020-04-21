@@ -120,7 +120,7 @@ export class JsonService {
     120: "HUMAN_KILLER",
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
-    123: "SLEEP_IMBUE",
+    123: "IMBUE",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
     151: "INITIAL_AP",
@@ -557,9 +557,10 @@ export class JsonService {
 
       if (skill.slot === 4) {
         skill.counter = {
-          minRate: this.skills[skillId].eff_rate,
-          maxRate: this.skills[skillId].eff_rate1,
-          reactDamage: this.reactCounter[this.skills[skillId].react_d_type]
+          minValue: this.skills[skillId].eff_rate,
+          maxValue: this.skills[skillId].eff_rate1,
+          reactDamage: this.reactCounter[this.skills[skillId].react_d_type],
+          calcType: "percent",
         }
       }
 
@@ -620,6 +621,14 @@ export class JsonService {
                   console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
                 }
 
+                if (buff == "BUFF_MAC_LW_KADI_1_1") {
+                  console.log(buff)
+                }
+
+                if (this.buffs[buff]["id" + i]) {
+                  buffs.push(this.buffs[this.buffs[buff]["id" + i]]);
+                }
+
                 skill.effects.push({
                   type: this.buffs[buff]["type" + i] !== 122 ? this.buffTypes[this.buffs[buff]["type" + i]] : this.buffs[buff]["tag" + i] + "_KILLER",
                   minValue: this.buffs[buff]["val" + i],
@@ -655,16 +664,21 @@ export class JsonService {
         let i = 1;
         while (!finished) {
           if (this.buffs[buff]["type" + i]) {
-
             if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
               console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
+            }
+
+            if (this.buffs[buff]["id" + i]) {
+              this.buffs[buff] = this.buffs[this.buffs[buff]["id" + i]];
             }
 
             skill.effects.push({
               type: this.buffTypes[this.buffs[buff]["type" + i]],
               minValue: this.buffs[buff]["val" + i],
               maxValue: this.buffs[buff]["val" + i + "1"],
-              calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow"
+              calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
+              rate: this.buffs[buff].rate,
+              turn: this.buffs[buff].turn
             });
             i++;
           } else {
@@ -727,12 +741,16 @@ export class JsonService {
     if (tmrId) {
       let tmr = {
         names: {en: this.names.equipment[tmrId]},
-        stats: this.equipments[tmrId].status[0],
+        stats: {},
         type: this.jobEquip[this.equipments[tmrId].cat[0]],
         inmae: tmrId,
         skills: [],
         image: this.equipments[tmrId].asset
       }
+
+      Object.keys(this.equipments[tmrId].status[0]).forEach(stat => {
+        tmr.stats[this.stats[stat]] = this.equipments[tmrId].status[0][stat]
+      })
 
       let lastSkillId = [];
       for (let i = 1; i <= 5; i++) {

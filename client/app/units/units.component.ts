@@ -106,6 +106,10 @@ export class UnitsComponent implements OnInit {
         if (skill.damage) {
           skill.damageHtml = this.skillService.formatDamage(unit, skill, skill.damage);
         }
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(unit, skill, skill.counter);
+        }
       });
 
       if (unit.masterSkill) {
@@ -124,6 +128,39 @@ export class UnitsComponent implements OnInit {
         }
       }
 
+      unit.totalBuffs = {
+        HP: 0,
+        TP: 0,
+        INITIAL_AP: 0,
+        ATK: 0,
+        DEF: 0,
+        MAG: 0,
+        SPR: 0,
+        DEX: 0,
+        AGI: 0,
+        LCK: 0,
+        CRITIC_RATE: 0,
+      };
+      unit.remainingBuffs = [];
+
+      unit.buffs.forEach(buff => {
+        let effect = buff.effects[0]
+        if (typeof(unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
+          unit.totalBuffs[effect.type] += effect.value
+        } else {
+          unit.remainingBuffs.push(this.skillService.formatEffect(unit, buff, effect, false))
+        }
+      });
+
+      if (unit.tmr) {
+        unit.tmr.statsTypes = Object.keys(unit.tmr.stats)
+
+        unit.tmr.skills.forEach(skill => {
+          skill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
+          });
+        });
+      }
     });
 
     delete this.observableUnits[0].children;

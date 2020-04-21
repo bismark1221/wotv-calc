@@ -1,3 +1,7 @@
 import { TranslateService } from '@ngx-translate/core';
 
-export class Equipment {}
+export class Equipment {
+  statsTypes;
+  stats;
+  skills;
+}

@@ -80,6 +80,8 @@ export class Unit {
   limit = new Skill();
   tmr = new Equipment();
   masterSkill = new Skill();
+  totalBuffs;
+  remainingBuffs;
   
 
   constructFromJson(unit: Unit, translateService: TranslateService): void {

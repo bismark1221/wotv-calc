@@ -46,6 +46,8 @@ export class Skill {
   cooldown?;
   effects?;
   damageHtml?;
+  counter;
+  counterHtml;
 
   constructFromJson(ability: Skill, translateService: TranslateService): void {
 
