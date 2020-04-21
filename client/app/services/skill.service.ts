@@ -11,7 +11,8 @@ export class SkillService {
     "resistance": "x",
     "nullify": "x",
     "dispel": "x",
-    "unknow": "x"
+    "unknow": "x",
+    undefined: "x"
   }
 
   constructor(private translateService: TranslateService) {}
@@ -63,7 +64,7 @@ export class SkillService {
 
   private getChance(effect, inflict = true) {
     if (effect.rate) {
-      return effect.rate + "% chance" + (inflict ? "to inflict" : "")
+      return effect.rate + "% chance" + (inflict ? " to inflict" : "")
     } else if (effect.calcType === "nullify") {
       return "Nullify"
     } else if (effect.calcType === "dispel") {
@@ -369,5 +370,18 @@ export class SkillService {
     }
 
     return html;
+  }
+
+  private upperCaseFirst(text) {
+    if (text) {
+      return text[0].toUpperCase() + text.slice(1);
+    }
+
+    return "";
+  }
+
+  formatDamage(unit, skill, damage) {
+    let html = (skill.elem ? skill.elem : unit.element) + " " + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " + this.getValue(damage);
+    return this.upperCaseFirst(html)
   }
 }

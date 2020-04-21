@@ -102,6 +102,10 @@ export class UnitsComponent implements OnInit {
         skill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
         });
+
+        if (skill.damage) {
+          skill.damageHtml = this.skillService.formatDamage(unit, skill, skill.damage);
+        }
       });
 
       if (unit.masterSkill) {
@@ -114,6 +118,10 @@ export class UnitsComponent implements OnInit {
         unit.limit.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(unit, unit.limit, effect);
         });
+
+        if (unit.limit.damage) {
+          unit.limit.damageHtml = this.skillService.formatDamage(unit, unit.limit, unit.limit.damage);
+        }
       }
 
     });

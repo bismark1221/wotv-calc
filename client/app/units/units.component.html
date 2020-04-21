@@ -259,6 +259,7 @@
           <td><img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" /></td>
           <td>{{ skill.names.en }}</td>
           <td>
+            {{ skill.damageHtml }}
             <div *ngFor="let effect of skill.effects">
               {{ effect.formatHtml }}
             </div>
@@ -306,6 +307,7 @@
       <tr>
         <td>{{ unit.limit.names.en }}</td>
         <td>
+          {{ unit.limit.damageHtml }}
           <div *ngFor="let effect of unit.limit.effects">
             {{ effect.formatHtml }}
           </div>
