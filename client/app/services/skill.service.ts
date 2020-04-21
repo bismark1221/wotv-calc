@@ -61,7 +61,7 @@ export class SkillService {
     return "";
   }
 
-  private getChance(effect, inflict) {
+  private getChance(effect, inflict = true) {
     if (effect.rate) {
       return effect.rate + "% chance" + (inflict ? "to inflict" : "")
     } else if (effect.calcType === "nullify") {
