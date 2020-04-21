@@ -235,36 +235,83 @@
   </table>
 </div>
 
+<div *ngIf="idSelected !== 'unselect'">
+  <div class="row littleMarginTop" *ngFor="let i of [0, 1, 2, 3]">
+    <table>
+      <tbody>
+        <tr>
+          <th *ngIf="i == 0" colspan="8">Main Job</th>
+          <th *ngIf="i != 0" colspan="8">{{ unit.jobs[i - 1].en }}</th>
+        </tr>
+        <tr>
+          <th>Job lvl</th>
+          <th>Star lvl</th>
+          <th>Type</th>
+          <th>name</th>
+          <th>Effects</th>
+          <th>Casts</th>
+          <th>Hits</th>
+          <th>Cost</th>
+        </tr>
+        <tr *ngFor="let skill of getSkillsPerJob(i)">
+          <td>{{ skill.jobLevel }}</td>
+          <td>{{ skill.unlockStar }}</td>
+          <td><img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" /></td>
+          <td>{{ skill.names.en }}</td>
+          <td>
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>{{ skill.count }}</td>
+          <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+          <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table *ngFor="let i of [0, 1, 2, 3]">
+  <table>
     <tbody>
       <tr>
-        <th *ngIf="i == 0" colspan="8">Main Job</th>
-        <th *ngIf="i != 0" colspan="8">{{ unit.jobs[i - 1].en }}</th>
+        <th>Master Ability</th>
       </tr>
       <tr>
-        <th>Job lvl</th>
-        <th>Star lvl</th>
-        <th>Type</th>
-        <th>name</th>
-        <th>Effects</th>
-        <th>Casts</th>
-        <th>Hits</th>
-        <th>Cost</th>
-      </tr>
-      <tr *ngFor="let skill of getSkillsPerJob(i)">
-        <td>{{ skill.jobLevel }}</td>
-        <td>{{ skill.unlockStar }}</td>
-        <td><img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" /></td>
-        <td>{{ skill.names.en }}</td>
         <td>
-          <div *ngFor="let effect of skill.effects">
+          <div *ngFor="let effect of unit.masterSkill.effects">
             {{ effect.formatHtml }}
           </div>
         </td>
-        <td>{{ skill.count }}</td>
-        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect' && unit.limit">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="4">Limit Burst</th>
+      </tr>
+      <tr>
+        <th>name</th>
+        <th>Effects</th>
+        <th>Hits</th>
+        <th>Cost</th>
+      </tr>
+      <tr>
+        <td>{{ unit.limit.names.en }}</td>
+        <td>
+          <div *ngFor="let effect of unit.limit.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
+        <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
       </tr>
     </tbody>
   </table>

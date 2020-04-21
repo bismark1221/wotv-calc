@@ -119,6 +119,7 @@ export class JsonService {
     119: "DARK_KILLER",
     120: "HUMAN_KILLER",
     121: "FENNES_KILLER",
+    122: "GENERIC_KILLER",
     123: "SLEEP_IMBUE",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
@@ -126,6 +127,7 @@ export class JsonService {
     152: "RANGE",
     155: "ACCURACY",
     156: "EVADE",
+    157: "CRITIC_DAMAGE",
     158: "CRITIC_RATE",
     180: "PROVOKE",
     181: "BRAVERY",
@@ -151,7 +153,10 @@ export class JsonService {
     9: "DARK",
     101: "HUMAN",
     103: "BEAST",
+    106: "ELEMENTAL",
+    109: "AQUATIC",
     110: "MACHINA",
+    111: "PLANT",
     112: "REAPER",
     113: "STONE"
   }
@@ -258,11 +263,15 @@ export class JsonService {
     "ACC"
   ]
 
-  calcType = [
-    "0",
-    "fixe",
-    "percent"
-  ]
+  calcType = {
+    1: "fixe",
+    2: "percent",
+    3: "resistance",
+    11: "percent",
+    30: "percent",
+    31: "dispel",
+    40: "nullify"
+  }
 
   constructor(private http: HttpClient, private unitService: UnitService) {}
 
@@ -398,6 +407,7 @@ export class JsonService {
       this.getStats(this.wotvChainUnits[dataId], unit.status)
       this.getJobsStats(this.wotvChainUnits[dataId], unit.jobsets)
       this.getLB(this.wotvChainUnits[dataId], unit.limit)
+      this.getMasterSkill(this.wotvChainUnits[dataId], unit.mstskl)
       this.getTMR(this.wotvChainUnits[dataId], unit.trust)
       this.getSkillsAndBuffs(this.wotvChainUnits[dataId]);
 
@@ -553,12 +563,24 @@ export class JsonService {
         }
       }
 
-      if (this.skills[skillId].klsp && !this.killers[this.skills[skillId].klsp[0]]) {
-        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + this.skills[skillId].klsp[0])
+      if (this.skills[skillId].klsp) {
+        if (!this.killers[this.skills[skillId].klsp[0]]) {
+          console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + this.skills[skillId].klsp[0])
+        }
+
+        this.skills[skillId].klsp.forEach(killer => {
+          skill.effects.push({
+            type: this.killers[killer] + "_KILLER",
+            minValue: this.skills[skillId].klspr,
+            maxValue: this.skills[skillId].klspr,
+            calcType: "unknow",
+          });
+        });
       }
 
 
       // check target 12 => ennemy -- 0 => self ??? for effects break
+
 
 
       if (typeof(this.skills[skillId].eff_val) == "number") {
@@ -589,20 +611,29 @@ export class JsonService {
         buffs.forEach(buff => {
           let finished = false;
           let i = 1;
+          let duplicateFinded = false;
+
           while (!finished) {
             if (this.buffs[buff]["type" + i]) {
-              if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
+              if (duplicateFinded && this.buffs[buff]["type" + i] === 117) {} else {
+                if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
+                  console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
+                }
+
+                skill.effects.push({
+                  type: this.buffs[buff]["type" + i] !== 122 ? this.buffTypes[this.buffs[buff]["type" + i]] : this.buffs[buff]["tag" + i] + "_KILLER",
+                  minValue: this.buffs[buff]["val" + i],
+                  maxValue: this.buffs[buff]["val" + i + "1"],
+                  calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
+                  rate: this.buffs[buff].rate,
+                  turn: this.buffs[buff].turn
+                });
+
+                if (this.buffs[buff]["type" + i] === 116) {
+                  duplicateFinded = true;
+                }
               }
 
-              skill.effects.push({
-                type: this.buffTypes[this.buffs[buff]["type" + i]],
-                minValue: this.buffs[buff]["val" + i],
-                maxValue: this.buffs[buff]["val" + i + "1"],
-                calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
-                rate: this.buffs[buff].rate,
-                turn: this.buffs[buff].turn
-              });
               i++;
             } else {
               finished = true;
@@ -674,6 +705,21 @@ export class JsonService {
       this.updateSkill(unit, limit, lbId);
 
       unit.limit = limit
+    }
+  }
+
+  private getMasterSkill(unit, skillId) {
+    if (skillId) {
+      let masterSkill = {
+        names: {en: this.names.skill[skillId]},
+        effects: [],
+        dataId: skillId,
+        slot: this.skills[skillId].slot
+      };
+
+      this.updateSkill(unit, masterSkill, skillId);
+
+      unit.masterSkill = masterSkill
     }
   }
 

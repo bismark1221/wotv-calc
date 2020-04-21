@@ -77,8 +77,9 @@ export class Unit {
 
   equipments = [];
 
-  limit = {}
+  limit = new Skill();
   tmr = new Equipment();
+  masterSkill = new Skill();
   
 
   constructFromJson(unit: Unit, translateService: TranslateService): void {
@@ -94,6 +95,7 @@ export class Unit {
     this.equipments = unit.equipments;
     this.limit = unit.limit;
     this.tmr = unit.tmr;
+    this.masterSkill = unit.masterSkill;
   }
 
   getName(translateService: TranslateService): string {

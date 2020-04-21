@@ -138,7 +138,7 @@
         "effects": [
           {
             "type": "STUN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 1
           }
@@ -359,7 +359,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -562,7 +562,14 @@
         "names": {
           "en": "Killer Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_4",
         "slot": 1,
         "cost": {
@@ -669,7 +676,14 @@
         "names": {
           "en": "Beast Breaker"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "BEAST_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_1",
         "slot": 1,
         "cost": {
@@ -764,7 +778,7 @@
         "effects": [
           {
             "type": "IGNORE_FATAL",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -1438,6 +1452,35 @@
         "type": "slash"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEF",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "JUMP",
+          "minValue": 1,
+          "maxValue": 1,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_MONT",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Lion Emblem"
@@ -1640,31 +1683,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -1772,7 +1815,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -2043,7 +2086,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -2147,7 +2190,7 @@
         "effects": [
           {
             "type": "STOP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 30
           }
@@ -2226,7 +2269,7 @@
           },
           {
             "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -2970,6 +3013,29 @@
         "type": "slash"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_STRN",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Lion Armor"
@@ -3540,7 +3606,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -3740,7 +3806,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -3830,7 +3896,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 5
           }
@@ -3862,7 +3928,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -4461,6 +4527,35 @@
       "combo": {},
       "knockback": {}
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        },
+        {
+          "type": "ATK",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_ELDE",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Guardian's Mantle"
@@ -4757,7 +4852,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -5025,7 +5120,20 @@
         "names": {
           "en": "Kongou"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "MACHINA_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          },
+          {
+            "type": "STONE_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_SAM_M_4",
         "slot": 1,
         "cost": {
@@ -5061,7 +5169,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -5159,7 +5267,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -5198,7 +5306,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -5352,31 +5460,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -5393,7 +5501,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -6000,6 +6108,35 @@
         "type": "slash"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "CRITIC_RATE",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "EVADE",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_ROBB",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Glinting Armor"
@@ -6105,7 +6242,7 @@
         "effects": [
           {
             "type": "STUN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 1
           }
@@ -6573,7 +6710,7 @@
         "effects": [
           {
             "type": "IGNORE_FATAL",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -6646,7 +6783,7 @@
             "type": "TP",
             "minValue": 20,
             "maxValue": 32,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ],
         "dataId": "SK_LW_MNK_M_3_SUB",
@@ -6876,7 +7013,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -7481,6 +7618,29 @@
         "type": "slash"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEF",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_ENBT",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Solidus Shield"
@@ -7875,7 +8035,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -8024,7 +8184,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 5
           }
@@ -8090,7 +8250,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25
           }
         ],
@@ -8191,35 +8351,35 @@
         "effects": [
           {
             "type": "POISON",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "BLIND",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "SLEEP",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "SILENCE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "PETRIFY",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "TOAD",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "DISABLE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_MNK_M_2",
@@ -8336,7 +8496,7 @@
             "type": "TP",
             "minValue": 20,
             "maxValue": 32,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ],
         "dataId": "SK_LW_MNK_M_3",
@@ -8393,7 +8553,7 @@
         "effects": [
           {
             "type": "CHARM",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -8444,7 +8604,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -8996,7 +9156,14 @@
       "names": {
         "en": "Tiger Gnaw"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 50,
+          "maxValue": 50,
+          "calcType": "unknow"
+        }
+      ],
       "dataId": "SK_LB_LW_ZIZA",
       "slot": 6,
       "cost": {
@@ -9018,6 +9185,35 @@
         "maxValue": 110,
         "type": "strike"
       }
+    },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "EVADE",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_ZIZA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
     },
     "tmr": {
       "names": {
@@ -9042,7 +9238,7 @@
               "type": "AUTO_RESTORE",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
+              "calcType": "percent",
               "turn": 3
             }
           ],
@@ -9089,7 +9285,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -9554,7 +9750,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -9595,7 +9791,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -9875,31 +10071,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -10509,7 +10705,7 @@
           "type": "EARTH_ATK",
           "minValue": -18,
           "maxValue": -38,
-          "calcType": "unknow",
+          "calcType": "resistance",
           "turn": 3
         }
       ],
@@ -10535,6 +10731,35 @@
         "type": "pierce"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "TP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_AILN",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Scanning Goggles"
@@ -10557,7 +10782,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
+              "calcType": "percent",
               "rate": 200,
               "turn": 3
             },
@@ -10565,7 +10790,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
+              "calcType": "percent",
               "rate": 200,
               "turn": 3
             },
@@ -10714,7 +10939,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -10787,7 +11012,7 @@
             "type": "ICE_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -11038,7 +11263,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -11337,7 +11562,7 @@
         "effects": [
           {
             "type": "TOAD",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -11377,7 +11602,7 @@
           },
           {
             "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -11471,7 +11696,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_S_3_SUB",
@@ -11530,7 +11755,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -12125,7 +12350,7 @@
           "type": "ICE_ATK",
           "minValue": -18,
           "maxValue": -38,
-          "calcType": "unknow",
+          "calcType": "resistance",
           "turn": 3
         }
       ],
@@ -12154,6 +12379,29 @@
         "maxValue": 100,
         "type": "magic"
       }
+    },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_MDNA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
     },
     "tmr": {
       "names": {
@@ -12273,7 +12521,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2_INIT",
@@ -12303,19 +12551,19 @@
         "effects": [
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "SLOW",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "STOP",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "QUICKEN",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_TIM_P_2",
@@ -12332,7 +12580,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -12351,7 +12599,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -12382,7 +12630,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -12416,7 +12664,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -12480,7 +12728,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -12513,7 +12761,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -12544,7 +12792,7 @@
         "effects": [
           {
             "type": "FLOAT",
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -12579,7 +12827,7 @@
             "type": "WIND_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -12651,7 +12899,7 @@
             "type": "SLOW",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -12694,7 +12942,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -12785,7 +13033,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -12850,7 +13098,14 @@
         "names": {
           "en": "Holy"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REAPER_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WHM_M_6",
         "slot": 1,
         "cost": {
@@ -12891,7 +13146,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -12925,7 +13180,7 @@
             "type": "WIND_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -12962,7 +13217,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -13030,7 +13285,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -13241,7 +13496,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -13763,13 +14018,13 @@
         },
         {
           "type": "STOP",
-          "calcType": "unknow"
+          "calcType": "dispel"
         },
         {
           "type": "STOP",
           "minValue": 10,
           "maxValue": 25,
-          "calcType": "unknow",
+          "calcType": "resistance",
           "turn": 3
         }
       ],
@@ -13798,6 +14053,35 @@
         "maxValue": 100
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        },
+        {
+          "type": "STOP",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_MA_LW_AYKA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Sacred Step"
@@ -13819,31 +14103,31 @@
           "effects": [
             {
               "type": "POISON",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "BLIND",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "SLEEP",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "SILENCE",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "PARALYZE",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "CONFUSION",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "PETRIFY",
-              "calcType": "unknow"
+              "calcType": "dispel"
             }
           ],
           "slot": 1,
@@ -14108,7 +14392,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -14145,7 +14429,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -14255,7 +14539,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -14518,7 +14802,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_CLR_M_4",
@@ -14621,32 +14905,32 @@
         "effects": [
           {
             "type": "POISON",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "BLIND",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "SILENCE",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "PARALYZE",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           }
         ],
@@ -14770,7 +15054,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25
           }
         ],
@@ -15358,7 +15642,7 @@
           "type": "ALL_ATTACKS_ATK",
           "minValue": 20,
           "maxValue": 45,
-          "calcType": "unknow",
+          "calcType": "resistance",
           "turn": 1
         }
       ],
@@ -15385,6 +15669,35 @@
         "maxValue": 113,
         "type": "strike"
       }
+    },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        },
+        {
+          "type": "AGI",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_MACR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
     },
     "tmr": {
       "names": {
@@ -15495,7 +15808,7 @@
             "type": "WIND_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -15530,19 +15843,19 @@
         "effects": [
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "SLOW",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "STOP",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "QUICKEN",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_TIM_P_2",
@@ -15567,7 +15880,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -15646,7 +15959,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -15682,7 +15995,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -15785,7 +16098,7 @@
         "effects": [
           {
             "type": "FLOAT",
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -15818,7 +16131,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -15921,7 +16234,7 @@
             "type": "SLOW",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -15956,7 +16269,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -16007,7 +16320,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -16040,7 +16353,7 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -10,
             "maxValue": -25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -16084,7 +16397,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -16117,7 +16430,7 @@
             "type": "WIND_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -16154,7 +16467,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -16226,7 +16539,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_S_3",
@@ -16294,7 +16607,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -16343,7 +16656,7 @@
         "effects": [
           {
             "type": "QUICKEN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -16402,7 +16715,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -16435,7 +16748,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -16960,6 +17273,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "percent"
+        },
+        {
+          "type": "AGI",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_HLNA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Guardian's Staff"
@@ -17295,7 +17637,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -17500,14 +17842,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -17787,12 +18129,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -17830,31 +18172,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -17929,7 +18271,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -18188,7 +18530,7 @@
           {
             "type": "FENNES_KILLER",
             "value": 20,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ]
       },
@@ -18493,6 +18835,29 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_LILS",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Flame Blade"
@@ -18621,13 +18986,13 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "FIRE_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_MGK_FIRE_P_1",
@@ -18826,7 +19191,7 @@
             "type": "MAGIC_ATK",
             "minValue": 18,
             "maxValue": 38,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -18890,7 +19255,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -18924,7 +19289,14 @@
         "names": {
           "en": "Water Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "FIRE_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_MGK_WATR_S_1",
         "slot": 2,
         "cost": {
@@ -19038,7 +19410,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -19352,7 +19724,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -19598,7 +19970,7 @@
           {
             "type": "FENNES_KILLER",
             "value": 20,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ]
       },
@@ -19931,6 +20303,35 @@
       "ARMOR",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "percent"
+        },
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_RAMD",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Astrologer's Lance"
@@ -19951,7 +20352,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -20216,7 +20617,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -20324,7 +20725,7 @@
           },
           {
             "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -20511,7 +20912,20 @@
         "names": {
           "en": "Kongou"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "MACHINA_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          },
+          {
+            "type": "STONE_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_SAM_M_4",
         "slot": 1,
         "cost": {
@@ -20672,7 +21086,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -20772,7 +21186,14 @@
         "names": {
           "en": "Killer Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_4_SUB",
         "slot": 2,
         "cost": {
@@ -21381,6 +21802,35 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent"
+        },
+        {
+          "type": "EVADE",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_OOOO",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Lightning Katana"
@@ -21404,7 +21854,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -21700,7 +22150,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -21827,19 +22277,19 @@
         "effects": [
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "SLOW",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "STOP",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "QUICKEN",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_TIM_P_2",
@@ -21893,7 +22343,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -21960,7 +22410,7 @@
         "effects": [
           {
             "type": "FLOAT",
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -22058,7 +22508,7 @@
         "effects": [
           {
             "type": "STOP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 30
           }
@@ -22124,7 +22574,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -22158,7 +22608,7 @@
             "type": "SLOW",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -22296,7 +22746,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -22850,6 +23300,35 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "percent"
+        },
+        {
+          "type": "DEF",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_LRNZ",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Dragonslayer Lance"
@@ -22872,7 +23351,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -22911,7 +23390,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -23054,7 +23533,14 @@
         "names": {
           "en": "Sidewinder"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "BEAST_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_GUN_S_3",
         "slot": 2,
         "cost": {
@@ -23193,7 +23679,7 @@
           {
             "type": "IMMOBILIZE",
             "maxValue": 0,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -23447,7 +23933,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -23572,7 +24058,7 @@
           {
             "type": "DISABLE",
             "maxValue": 0,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -23610,7 +24096,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -23642,7 +24128,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -23723,7 +24209,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -23740,7 +24226,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -24301,6 +24787,41 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEX",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "RANGE",
+          "minValue": 1,
+          "maxValue": 1,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_RIRY",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Moonless Gun"
@@ -24321,7 +24842,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -24609,7 +25130,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -24712,7 +25233,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -24839,7 +25360,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -24876,12 +25397,7 @@
         "effects": [
           {
             "type": "CRITIC_BEHIND_GUARENTED",
-            "calcType": "unknow",
-            "rate": 200
-          },
-          {
-            "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -24917,7 +25433,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -24951,7 +25467,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -24988,7 +25504,7 @@
         "effects": [
           {
             "type": "CHARM",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -25082,7 +25598,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -25138,31 +25654,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -25179,7 +25695,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -25759,6 +26275,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "resistance"
+        },
+        {
+          "type": "EVADE",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_VSTR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Bloodsoaked Dagger"
@@ -25781,7 +26326,7 @@
               "type": "DARK_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -25970,14 +26515,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -26033,12 +26578,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -26176,7 +26721,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -26286,7 +26831,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -26448,7 +26993,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -26491,7 +27036,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_S_3_SUB",
@@ -26594,7 +27139,7 @@
             "type": "ICE_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -27270,6 +27815,41 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "fixe"
+        },
+        {
+          "type": "INITIAL_AP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_CLEY",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Glacier Bow"
@@ -27395,7 +27975,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -27471,7 +28051,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -27534,7 +28114,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -27571,7 +28151,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -27640,7 +28220,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -27742,7 +28322,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -27774,13 +28354,13 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "EARTH_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_MGK_SOIL_P_1",
@@ -27794,7 +28374,14 @@
         "names": {
           "en": "Aero Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "EARTH_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_MGK_WIND_S_1",
         "slot": 2,
         "cost": {
@@ -27866,7 +28453,7 @@
             "type": "MAGIC_ATK",
             "minValue": 18,
             "maxValue": 38,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -27899,7 +28486,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -27930,7 +28517,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_CLR_M_4",
@@ -28002,32 +28589,32 @@
         "effects": [
           {
             "type": "POISON",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "BLIND",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "SILENCE",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "PARALYZE",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           },
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "nullify",
             "turn": 3
           }
         ],
@@ -28126,7 +28713,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -28195,7 +28782,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -28772,6 +29359,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 40,
+          "maxValue": 40,
+          "calcType": "percent"
+        },
+        {
+          "type": "MAG",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_KADI",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Mace of Affection"
@@ -28792,7 +29408,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -29221,7 +29837,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -29312,7 +29928,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 5
           }
@@ -29383,7 +29999,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25
           }
         ],
@@ -29462,7 +30078,7 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -10,
             "maxValue": -25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -29504,35 +30120,35 @@
         "effects": [
           {
             "type": "POISON",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "BLIND",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "SLEEP",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "SILENCE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "PETRIFY",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "TOAD",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "DISABLE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_MNK_M_2",
@@ -29572,7 +30188,7 @@
             "type": "LIGHTNING_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -29611,7 +30227,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -29652,7 +30268,7 @@
             "type": "TP",
             "minValue": 20,
             "maxValue": 32,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ],
         "dataId": "SK_LW_MNK_M_3",
@@ -29786,7 +30402,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -30340,6 +30956,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 40,
+          "maxValue": 40,
+          "calcType": "fixe"
+        },
+        {
+          "type": "AGI",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_MRLK",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Icebreaker Fists"
@@ -30362,7 +31007,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -30433,7 +31078,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -30500,19 +31145,19 @@
         "effects": [
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "SLOW",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "STOP",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "QUICKEN",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_TIM_P_2",
@@ -30550,7 +31195,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -30619,7 +31264,7 @@
             "type": "SLOW",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -30656,7 +31301,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -30688,7 +31333,7 @@
         "effects": [
           {
             "type": "FLOAT",
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -30960,7 +31605,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -30990,7 +31635,7 @@
         "effects": [
           {
             "type": "QUICKEN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -31099,7 +31744,7 @@
         "effects": [
           {
             "type": "STOP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 30
           }
@@ -31131,7 +31776,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -31163,7 +31808,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -31234,7 +31879,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -31276,7 +31921,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -31847,6 +32492,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_MGRT",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Magic Baton"
@@ -31937,7 +32611,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2_INIT",
@@ -31975,7 +32649,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -31994,7 +32668,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -32027,7 +32701,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -32093,7 +32767,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -32157,7 +32831,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -32188,7 +32862,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -32278,7 +32952,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -32354,7 +33028,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -32440,7 +33114,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -32500,7 +33174,14 @@
         "names": {
           "en": "Holy"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REAPER_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WHM_M_6",
         "slot": 1,
         "cost": {
@@ -32541,7 +33222,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -32618,7 +33299,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -32783,7 +33464,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -33106,7 +33787,7 @@
           {
             "type": "ALL_ELEMENTS_ATK",
             "value": 10,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ]
       },
@@ -33401,6 +34082,59 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MAG",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_PRAY",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Magicite Staff"
@@ -33421,7 +34155,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -33583,31 +34317,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -33724,7 +34458,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -33961,14 +34695,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -33997,7 +34731,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -34241,12 +34975,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -34354,7 +35088,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -34918,6 +35652,35 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEX",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "CRITIC_RATE",
+          "minValue": 35,
+          "maxValue": 35,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_SZRT",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Skycutter Greatsword"
@@ -34938,7 +35701,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -35065,7 +35828,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_FINA_P_1",
@@ -35185,7 +35948,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -35250,7 +36013,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           },
           {
@@ -35341,7 +36104,7 @@
           {
             "type": "IMMOBILIZE",
             "maxValue": 0,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -35413,7 +36176,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -35580,7 +36343,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -35621,7 +36384,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -35658,7 +36421,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -35758,7 +36521,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -35791,7 +36554,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -35913,7 +36676,7 @@
           {
             "type": "DISABLE",
             "maxValue": 0,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -35950,7 +36713,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_FINA_S_3",
@@ -35977,7 +36740,14 @@
         "names": {
           "en": "Sidewinder"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "BEAST_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_GUN_S_3",
         "slot": 2,
         "cost": {
@@ -36503,6 +37273,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEX",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_MA_LW_FINA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Reincarnation"
@@ -36524,7 +37323,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -36851,7 +37650,7 @@
         "effects": [
           {
             "type": "STUN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 1
           }
@@ -37190,7 +37989,7 @@
         "effects": [
           {
             "type": "IGNORE_FATAL",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -37332,7 +38131,14 @@
         "names": {
           "en": "Killer Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_4_SUB",
         "slot": 2,
         "cost": {
@@ -37366,7 +38172,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -37953,6 +38759,35 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        },
+        {
+          "type": "LCK",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_BYLO",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Forest Armor"
@@ -37974,7 +38809,7 @@
               "type": "SLEEP",
               "minValue": 25,
               "maxValue": 25,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -38008,7 +38843,14 @@
         "names": {
           "en": "Dark Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "LIGHT_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_MGK_DARK_S_1_INIT",
         "slot": 1,
         "cost": {
@@ -38103,13 +38945,13 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "LIGHT_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_MGK_SHIN_P_1",
@@ -38232,7 +39074,7 @@
             "type": "MAGIC_ATK",
             "minValue": 18,
             "maxValue": 38,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -38301,7 +39143,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -38420,7 +39262,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -38471,7 +39313,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -38525,7 +39367,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -38553,7 +39395,14 @@
         "names": {
           "en": "Darkga Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "LIGHT_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_MGK_DARK_M_4",
         "slot": 1,
         "cost": {
@@ -38624,7 +39473,14 @@
         "names": {
           "en": "Holy"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REAPER_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WHM_M_6_SUB",
         "slot": 2,
         "cost": {
@@ -38735,7 +39591,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -38765,7 +39621,7 @@
         "effects": [
           {
             "type": "SILENCE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -38855,7 +39711,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -38894,7 +39750,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -39442,6 +40298,37 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DARK_KILLER",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "percent",
+          "rate": 200
+        },
+        {
+          "type": "MAG",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_MA_LW_RYER",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Pretty Hood"
@@ -39464,7 +40351,7 @@
               "type": "DARK_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -39933,14 +40820,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -40208,12 +41095,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -40240,7 +41127,14 @@
         "names": {
           "en": "Beast Breaker"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "BEAST_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_1_SUB",
         "slot": 2,
         "cost": {
@@ -40886,6 +41780,35 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "DEX",
+          "minValue": 40,
+          "maxValue": 40,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_SCIA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Dragon Boots"
@@ -40908,7 +41831,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -40981,7 +41904,7 @@
             "type": "ICE_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -41016,7 +41939,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -41041,7 +41964,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -41120,7 +42043,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -41154,7 +42077,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -41259,7 +42182,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -41360,7 +42283,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -41450,7 +42373,7 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -10,
             "maxValue": -25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -41492,7 +42415,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -41524,7 +42447,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -41557,7 +42480,7 @@
             "type": "ICE_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -41661,7 +42584,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_S_3",
@@ -41695,7 +42618,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -41727,7 +42650,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -41759,7 +42682,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -41792,7 +42715,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -41847,7 +42770,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -42392,6 +43315,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 45,
+          "maxValue": 45,
+          "calcType": "percent"
+        },
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_VRID",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Robe of Alliance"
@@ -42414,25 +43366,25 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "unknow"
+              "calcType": "resistance"
             },
             {
               "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "unknow"
+              "calcType": "resistance"
             },
             {
               "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "unknow"
+              "calcType": "resistance"
             },
             {
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -42500,7 +43452,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2_INIT",
@@ -42549,7 +43501,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -42568,7 +43520,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -42633,7 +43585,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -42697,7 +43649,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -42730,7 +43682,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -42763,7 +43715,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -42960,7 +43912,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -42991,7 +43943,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -43018,7 +43970,14 @@
         "names": {
           "en": "Holy"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REAPER_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WHM_M_6",
         "slot": 1,
         "cost": {
@@ -43059,7 +44018,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -43137,7 +44096,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -43168,7 +44127,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -43200,7 +44159,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -43302,7 +44261,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -43910,6 +44869,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 40,
+          "maxValue": 40,
+          "calcType": "percent"
+        },
+        {
+          "type": "ACTIVAITON_TIME",
+          "minValue": -250,
+          "maxValue": -250,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_NAIA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Lunar Cape"
@@ -43931,7 +44919,7 @@
               "type": "WATER_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -44098,7 +45086,7 @@
         "effects": [
           {
             "type": "STUN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 1
           }
@@ -44459,7 +45447,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -44500,7 +45488,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -44607,7 +45595,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_CLR_M_4_SUB",
@@ -44683,7 +45671,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -44779,7 +45767,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -45385,6 +46373,35 @@
       "ARMOR",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent"
+        },
+        {
+          "type": "LCK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_SRJS",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Snowfield Wrap"
@@ -45406,7 +46423,7 @@
               "type": "FIRE_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -45595,14 +46612,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -45673,12 +46690,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -45926,13 +46943,13 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "FIRE_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_MGK_FIRE_P_1",
@@ -45946,7 +46963,14 @@
         "names": {
           "en": "Water Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "FIRE_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_MGK_WATR_S_1",
         "slot": 2,
         "cost": {
@@ -46020,7 +47044,7 @@
             "type": "MAGIC_ATK",
             "minValue": 18,
             "maxValue": 38,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -46051,7 +47075,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -46247,7 +47271,7 @@
         "effects": [
           {
             "type": "TOAD",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -46279,7 +47303,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -46883,6 +47907,53 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "percent"
+        },
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_MA_LW_UNII",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Cap of Devotion"
@@ -46905,7 +47976,7 @@
               "type": "SLOW",
               "minValue": 25,
               "maxValue": 25,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -47240,7 +48311,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -47345,7 +48416,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -47532,7 +48603,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -47572,7 +48643,7 @@
             "type": "TP",
             "minValue": 20,
             "maxValue": 32,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ],
         "dataId": "SK_LW_MNK_M_3_SUB",
@@ -47610,7 +48681,7 @@
         "effects": [
           {
             "type": "TOAD",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -47710,7 +48781,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -47777,7 +48848,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -48346,6 +49417,53 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "resistance"
+        },
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "resistance"
+        },
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_MA_LW_SEVR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Seeker's Wrap"
@@ -48367,7 +49485,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -48950,12 +50068,7 @@
         "effects": [
           {
             "type": "CRITIC_BEHIND_GUARENTED",
-            "calcType": "unknow",
-            "rate": 200
-          },
-          {
-            "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -49057,7 +50170,7 @@
         "effects": [
           {
             "type": "CHARM",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -49091,7 +50204,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -49157,7 +50270,14 @@
         "names": {
           "en": "Killer Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_4_SUB",
         "slot": 2,
         "cost": {
@@ -49191,7 +50311,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -49781,6 +50901,41 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "EVADE",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_MA_LW_VADM",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Rubeus Bandana"
@@ -49803,7 +50958,7 @@
               "type": "EARTH_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -49954,7 +51109,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -50015,7 +51170,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -50045,7 +51200,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -50077,7 +51232,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -50218,7 +51373,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -50679,7 +51834,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -50942,7 +52097,7 @@
           {
             "type": "ALL_ELEMENTS_ATK",
             "value": 10,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ]
       },
@@ -51276,6 +52431,59 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MAGIC_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MAG",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_MURM",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Magicite Eye Mask"
@@ -51298,7 +52506,7 @@
               "type": "WIND_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -51369,7 +52577,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -51420,19 +52628,19 @@
         "effects": [
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "SLOW",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "STOP",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "QUICKEN",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_TIM_P_2",
@@ -51470,7 +52678,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -51532,7 +52740,7 @@
             "type": "SLOW",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -51569,7 +52777,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -51601,7 +52809,7 @@
         "effects": [
           {
             "type": "FLOAT",
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -51671,7 +52879,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -51806,7 +53014,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -51857,7 +53065,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -51925,7 +53133,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -51956,7 +53164,7 @@
         "effects": [
           {
             "type": "QUICKEN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -51990,7 +53198,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -52021,7 +53229,7 @@
         "effects": [
           {
             "type": "STOP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 30
           }
@@ -52087,7 +53295,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -52230,7 +53438,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -52762,6 +53970,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 20,
+          "maxValue": 20,
+          "calcType": "percent"
+        },
+        {
+          "type": "MOVE",
+          "minValue": 1,
+          "maxValue": 1,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_PHBE",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Chronal Cap"
@@ -52784,7 +54021,7 @@
               "type": "LIGHT_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -52973,14 +54210,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -53043,12 +54280,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -53177,7 +54414,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -53313,7 +54550,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -53364,7 +54601,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -53433,7 +54670,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -53464,7 +54701,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -53538,7 +54775,7 @@
             "type": "REVIVE",
             "minValue": 100,
             "maxValue": 100,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50
           }
         ],
@@ -53637,7 +54874,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -53726,7 +54963,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -53765,7 +55002,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -54282,6 +55519,37 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "ACCURACY",
+          "minValue": 50,
+          "maxValue": 50,
+          "calcType": "fixe",
+          "rate": 200
+        },
+        {
+          "type": "109_KILLER",
+          "minValue": 50,
+          "maxValue": 50,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_MA_LW_RART",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Fancy Ribbon"
@@ -54822,14 +56090,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -54995,7 +56263,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -55034,7 +56302,7 @@
         "effects": [
           {
             "type": "TOAD",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -55100,12 +56368,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -55154,12 +56422,7 @@
         "effects": [
           {
             "type": "CRITIC_BEHIND_GUARENTED",
-            "calcType": "unknow",
-            "rate": 200
-          },
-          {
-            "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -55220,7 +56483,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -55252,7 +56515,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -55797,6 +57060,37 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "ACTIVAITON_TIME",
+          "minValue": -750,
+          "maxValue": -750,
+          "calcType": "fixe",
+          "rate": 200
+        },
+        {
+          "type": "106_KILLER",
+          "minValue": 50,
+          "maxValue": 50,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_MA_LW_MICE",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Magician's Cap"
@@ -56088,7 +57382,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -56230,13 +57524,13 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "EARTH_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_MGK_SOIL_P_1",
@@ -56250,7 +57544,14 @@
         "names": {
           "en": "Aero Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "EARTH_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_MGK_WIND_S_1",
         "slot": 2,
         "cost": {
@@ -56318,7 +57619,7 @@
             "type": "MAGIC_ATK",
             "minValue": 18,
             "maxValue": 38,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -56349,12 +57650,7 @@
         "effects": [
           {
             "type": "CRITIC_BEHIND_GUARENTED",
-            "calcType": "unknow",
-            "rate": 200
-          },
-          {
-            "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -56392,7 +57688,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -56465,7 +57761,7 @@
         "effects": [
           {
             "type": "CHARM",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -56563,7 +57859,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_CLR_M_4_SUB",
@@ -56597,7 +57893,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -57210,6 +58506,37 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 100,
+          "maxValue": 100,
+          "calcType": "fixe",
+          "rate": 200
+        },
+        {
+          "type": "111_KILLER",
+          "minValue": 50,
+          "maxValue": 50,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_MA_LW_MIIA",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Shinobi's Bandana"
@@ -57570,7 +58897,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -57769,7 +59096,14 @@
         "names": {
           "en": "Killer Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_4",
         "slot": 1,
         "cost": {
@@ -57841,7 +59175,7 @@
         "effects": [
           {
             "type": "CHARM",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -57870,7 +59204,14 @@
         "names": {
           "en": "Beast Breaker"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "BEAST_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WAR_M_1",
         "slot": 1,
         "cost": {
@@ -58039,7 +59380,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -58600,6 +59941,41 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEX",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "MOVE",
+          "minValue": 1,
+          "maxValue": 1,
+          "calcType": "fixe"
+        },
+        {
+          "type": "JUMP",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_ZZAN",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Bear Hood"
@@ -58644,7 +60020,7 @@
             "type": "SLASH_ATK",
             "minValue": -18,
             "maxValue": -38,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -58685,7 +60061,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -58712,19 +60088,19 @@
         "effects": [
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "SLOW",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "STOP",
-            "calcType": "unknow"
+            "calcType": "nullify"
           },
           {
             "type": "QUICKEN",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_TIM_P_2",
@@ -58761,7 +60137,7 @@
           {
             "type": "FLOAT",
             "maxValue": 0,
-            "calcType": "unknow"
+            "calcType": "percent"
           },
           {
             "type": "JUMP",
@@ -58783,7 +60159,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -58916,7 +60292,7 @@
         "effects": [
           {
             "type": "FLOAT",
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -59020,7 +60396,7 @@
             "type": "SLOW",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 3
           }
@@ -59152,7 +60528,7 @@
             "type": "PARALYZE",
             "minValue": 60,
             "maxValue": 80,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -59212,7 +60588,7 @@
             "type": "SLOW",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -59246,7 +60622,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 5
           }
@@ -59399,7 +60775,7 @@
         "effects": [
           {
             "type": "QUICKEN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -59439,31 +60815,31 @@
             "type": "SLASH_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MISSILE_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           },
           {
             "type": "MAGIC_ATK",
             "minValue": -20,
             "maxValue": -8,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_SWN_P_1",
@@ -59546,7 +60922,7 @@
             "type": "HASTE",
             "minValue": 20,
             "maxValue": 42,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -60100,7 +61476,7 @@
           "type": "SLOW",
           "minValue": 30,
           "maxValue": 50,
-          "calcType": "unknow",
+          "calcType": "percent",
           "rate": 30,
           "turn": 3
         }
@@ -60130,6 +61506,35 @@
         "maxValue": 100,
         "type": "magic"
       }
+    },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "AGI",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_GLMS",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
     },
     "tmr": {
       "names": {
@@ -60271,7 +61676,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -60307,7 +61712,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -60438,7 +61843,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -60471,7 +61876,7 @@
             "type": "FIRE_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -60540,7 +61945,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -60578,7 +61983,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_GRM_P_1",
@@ -60745,7 +62150,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -60841,7 +62246,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_S_3_SUB",
@@ -60947,7 +62352,7 @@
           },
           {
             "type": "HASTE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_GRM_R_1",
@@ -60977,7 +62382,14 @@
         "names": {
           "en": "Holy"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REAPER_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_WHM_M_6_SUB",
         "slot": 2,
         "cost": {
@@ -61079,7 +62491,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -61643,6 +63055,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 30,
+          "maxValue": 30,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_FF14_YSTL",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Nightseeker"
@@ -61662,7 +63103,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -61781,7 +63222,7 @@
             "type": "MISSILE_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_TNCR_P_1",
@@ -61800,7 +63241,7 @@
             "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_TNCR_P_2",
@@ -61911,7 +63352,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -62205,7 +63646,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_RDM_M_2",
@@ -62329,7 +63770,7 @@
         "effects": [
           {
             "type": "SLEEP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -62361,7 +63802,7 @@
         "effects": [
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -62444,7 +63885,7 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_RDM_P_2",
@@ -63033,6 +64474,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        },
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_FF14_TNCR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Bodyguard's Coat"
@@ -63055,7 +64525,7 @@
               "type": "LIGHT_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "unknow"
+              "calcType": "resistance"
             }
           ],
           "slot": 3,
@@ -63094,7 +64564,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -63237,7 +64707,14 @@
         "names": {
           "en": "Sidewinder"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "BEAST_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_GUN_S_3",
         "slot": 2,
         "cost": {
@@ -63372,7 +64849,7 @@
           {
             "type": "IMMOBILIZE",
             "maxValue": 0,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -63623,14 +65100,14 @@
             "type": "ALL_ELEMENTS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           },
           {
             "type": "ALL_ATTACKS_ATK",
             "minValue": -35,
             "maxValue": -17,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 1
           }
         ],
@@ -63763,7 +65240,7 @@
           },
           {
             "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -63828,7 +65305,7 @@
           {
             "type": "DISABLE",
             "maxValue": 0,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -63900,12 +65377,12 @@
         "effects": [
           {
             "type": "PHYSIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           },
           {
             "type": "MAGIC_EVADE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -64598,6 +66075,29 @@
         "type": "missile"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_FDRC",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Victory Ribbon"
@@ -64618,17 +66118,17 @@
           "effects": [
             {
               "type": "DISABLE",
-              "calcType": "unknow",
+              "calcType": "nullify",
               "turn": 3
             },
             {
               "type": "IMMOBILIZE",
-              "calcType": "unknow",
+              "calcType": "nullify",
               "turn": 3
             },
             {
               "type": "STOP",
-              "calcType": "unknow",
+              "calcType": "nullify",
               "turn": 3
             }
           ],
@@ -64922,7 +66422,7 @@
           },
           {
             "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200,
             "turn": 1
           }
@@ -65291,7 +66791,7 @@
         "effects": [
           {
             "type": "STOP",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 30
           }
@@ -65385,7 +66885,7 @@
             "type": "BLIND",
             "minValue": 20,
             "maxValue": 50,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -66074,6 +67574,35 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "percent"
+        },
+        {
+          "type": "EVADE",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_SDLX",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Shadow Ninja Blade"
@@ -66095,7 +67624,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -66132,7 +67661,7 @@
         "effects": [
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -66273,7 +67802,7 @@
             "type": "MISSILE_ATK",
             "minValue": 5,
             "maxValue": 15,
-            "calcType": "unknow"
+            "calcType": "resistance"
           }
         ],
         "dataId": "SK_LW_VIK_P_2_2",
@@ -66335,7 +67864,7 @@
           },
           {
             "type": "BERSERK",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -66495,7 +68024,7 @@
         "effects": [
           {
             "type": "CONFUSION",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -66634,7 +68163,14 @@
         "names": {
           "en": "Killing Axe"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
         "dataId": "SK_LW_VIK_M_1",
         "slot": 1,
         "cost": {
@@ -66766,12 +68302,7 @@
         "effects": [
           {
             "type": "CRITIC_BEHIND_GUARENTED",
-            "calcType": "unknow",
-            "rate": 200
-          },
-          {
-            "type": "CRITIC_GUARENTED",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -66991,7 +68522,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -67587,6 +69118,35 @@
         "type": "slash"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "ACCURACY",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_YERM",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Herculean Waistcloth"
@@ -67690,7 +69250,7 @@
         "effects": [
           {
             "type": "STUN",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 1
           }
@@ -67727,7 +69287,7 @@
         "effects": [
           {
             "type": "DOOM",
-            "calcType": "unknow"
+            "calcType": "nullify"
           }
         ],
         "dataId": "SK_LW_WHM_P_1",
@@ -67769,7 +69329,7 @@
         "effects": [
           {
             "type": "ALL_AILMENTS",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_WHM_M_2",
@@ -67910,7 +69470,7 @@
             "type": "SHELL",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -68039,7 +69599,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -68189,7 +69749,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 30
           }
         ],
@@ -68220,7 +69780,7 @@
         "effects": [
           {
             "type": "IGNORE_FATAL",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 200
           }
         ],
@@ -68371,7 +69931,7 @@
             "type": "REGEN",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -68492,7 +70052,7 @@
             "type": "PROTECT",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "turn": 3
           }
         ],
@@ -69057,6 +70617,29 @@
       "ARMOR",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_P_NASR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Guiding Blade"
@@ -69075,7 +70658,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,
@@ -69368,7 +70951,7 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -69441,7 +71024,7 @@
         "effects": [
           {
             "type": "DISABLE",
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25,
             "turn": 3
           }
@@ -69594,7 +71177,7 @@
             "type": "DOOM",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 50,
             "turn": 5
           }
@@ -69666,7 +71249,7 @@
             "type": "REVIVE",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "percent",
             "rate": 25
           }
         ],
@@ -69707,7 +71290,7 @@
             "type": "DARK_ATK",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "unknow",
+            "calcType": "resistance",
             "turn": 3
           }
         ],
@@ -69776,35 +71359,35 @@
         "effects": [
           {
             "type": "POISON",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "BLIND",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "SLEEP",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "SILENCE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "PETRIFY",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "TOAD",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "DISABLE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           },
           {
             "type": "IMMOBILIZE",
-            "calcType": "unknow"
+            "calcType": "dispel"
           }
         ],
         "dataId": "SK_LW_MNK_M_2",
@@ -69912,7 +71495,7 @@
             "type": "TP",
             "minValue": 20,
             "maxValue": 32,
-            "calcType": "unknow"
+            "calcType": "percent"
           }
         ],
         "dataId": "SK_LW_MNK_M_3",
@@ -70571,6 +72154,41 @@
       "CLOTH",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "MOVE",
+          "minValue": 1,
+          "maxValue": 1,
+          "calcType": "fixe"
+        },
+        {
+          "type": "EVADE",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "JUMP",
+          "minValue": 1,
+          "maxValue": 1,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_P_ETRE",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Boxer's Badge"
@@ -70833,7 +72451,7 @@
           "type": "ALL_ATTACKS_ATK",
           "minValue": 20,
           "maxValue": 45,
-          "calcType": "unknow",
+          "calcType": "resistance",
           "turn": 1
         }
       ],
@@ -70861,6 +72479,35 @@
         "type": "strike"
       }
     },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "TP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        },
+        {
+          "type": "AGI",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_LW_MACR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Sacred Step"
@@ -70882,31 +72529,31 @@
           "effects": [
             {
               "type": "POISON",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "BLIND",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "SLEEP",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "SILENCE",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "PARALYZE",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "CONFUSION",
-              "calcType": "unknow"
+              "calcType": "dispel"
             },
             {
               "type": "PETRIFY",
-              "calcType": "unknow"
+              "calcType": "dispel"
             }
           ],
           "slot": 1,
@@ -71043,6 +72690,35 @@
       "HELM",
       "ACC"
     ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEX",
+          "minValue": 15,
+          "maxValue": 15,
+          "calcType": "percent"
+        },
+        {
+          "type": "CRITIC_RATE",
+          "minValue": 35,
+          "maxValue": 35,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_LW_SZRT",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
     "tmr": {
       "names": {
         "en": "Magicite Staff"
@@ -71063,7 +72739,7 @@
           "effects": [
             {
               "type": "SLEEP_IMBUE",
-              "calcType": "unknow"
+              "calcType": "percent"
             }
           ],
           "slot": 3,

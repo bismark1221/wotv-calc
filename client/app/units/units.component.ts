@@ -104,6 +104,17 @@ export class UnitsComponent implements OnInit {
         });
       });
 
+      if (unit.masterSkill) {
+        unit.masterSkill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(unit, unit.masterSkill, effect);
+        });
+      }
+
+      if (unit.limit) {
+        unit.limit.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(unit, unit.limit, effect);
+        });
+      }
 
     });
 
