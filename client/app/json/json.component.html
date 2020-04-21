@@ -5,13 +5,34 @@
 
 <br />
 
+
+### Raw Vision Cards ###
+<div>
+  <textarea id="rawJson">{{ visionCards | json }}</textarea>
+</div>
+
+<br />
+
+
 ### Units ###
 <div *ngFor="let unitId of unitIds; let j = index">
   {{j}} -- {{units[unitId].names.en}}
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed[j] = !isCollapsed[j]" [attr.aria-expanded]="!isCollapsed[j]">
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.units[j] = !isCollapsed.units[j]" [attr.aria-expanded]="!isCollapsed.units[j]">
     Toggle
   </button>
-  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed[j]">
+  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.units[j]">
     <pre [innerHtml]="units[unitId] | prettyjson"></pre>
+  </div>
+</div>
+
+
+### Vision Cards ###
+<div *ngFor="let visionCardId of visionCardIds; let j = index">
+  {{j}} -- {{visionCards[visionCardId].names.en}}
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.visionCards[j] = !isCollapsed.visionCards[j]" [attr.aria-expanded]="!isCollapsed.visionCards[j]">
+    Toggle
+  </button>
+  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.visionCards[j]">
+    <pre [innerHtml]="visionCards[visionCardId] | prettyjson"></pre>
   </div>
 </div>

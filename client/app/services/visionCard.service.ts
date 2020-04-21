@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { Unit } from '../entities/unit';
-import { default as UNITS } from '../data/units.json';
+import { VisionCard } from '../entities/visionCard';
+import { default as VISION_CARDS } from '../data/visionCards.json';
 
 @Injectable()
-export class UnitService {
-  private units: Unit[];
+export class VisionCardService {
+  private visionCards: VisionCard[];
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
   private sre = /^\s+|\s+$/g;
   private snre = /\s+/g;
@@ -27,8 +27,8 @@ export class UnitService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sort(units: Unit[], translate: any): Unit[] {
-    units.sort((a: any, b: any) => {
+  public sort(visionCards: VisionCard[], translate: any): VisionCard[] {
+    visionCards.sort((a: any, b: any) => {
       let x = this.i(a.name);
       let y = this.i(b.name);
 
@@ -63,27 +63,27 @@ export class UnitService {
       }
     });
 
-    return units;
+    return visionCards;
   }
 
-  getUnits(): Unit[] {
-    let units: Unit[] = [];
+  getVisionCards(): VisionCard[] {
+    let visionCards: VisionCard[] = [];
 
-    Object.keys(JSON.parse(JSON.stringify(UNITS))).forEach(unitId => {
-      let unit = new Unit();
-      unit.constructFromJson(UNITS[unitId], this.translateService);
-      units.push(unit);
+    Object.keys(JSON.parse(JSON.stringify(VISION_CARDS))).forEach(visionCardId => {
+      let visionCard = new VisionCard();
+      visionCard.constructFromJson(VISION_CARDS[visionCardId], this.translateService);
+      visionCards.push(visionCard);
     });
 
-    this.units = units;
-    return units;
+    this.visionCards = visionCards;
+    return visionCards;
   }
 
-  getUnit(id: string): Unit {
-    if (!this.units || this.units.length === 0) {
-      this.getUnits();
+  getVisionCard(id: string): VisionCard {
+    if (!this.visionCards || this.visionCards.length === 0) {
+      this.getVisionCards();
     }
 
-    return this.units.find(unit => unit.dataId === id);
+    return this.visionCards.find(visionCard => visionCard.dataId === id);
   }
 }

@@ -38,8 +38,8 @@ export class SkillService {
   private getPositiveValue(value) {
     if (value < 0) {
       return -value;
-    } 
-    
+    }
+
     return value
   }
 
@@ -304,9 +304,6 @@ export class SkillService {
       case "CRITIC_GUARENTED" :
         html = "Guarented critical hit"
       break
-      case "DARK_KILLER" :
-        html = "Increase dark killer" + this.getValue(effect) + this.getTurns(effect)
-      break
       case "HUMAN_KILLER" :
         html = "Increase human killer" + this.getValue(effect) + this.getTurns(effect)
       break
@@ -366,6 +363,54 @@ export class SkillService {
       break
       case "AOE_RES" :
         html = this.getIncrease(effect) + " Area Resistance" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "CRITIC_DAMAGE" :
+        html = this.getIncrease(effect) + " Critical Damage" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "ATK_DEBUFF_RES" :
+        html = this.getIncrease(effect) + " ATK Debuff Resistance" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "EVOCATION_GAUGE_BOOST" :
+        html = this.getIncrease(effect) + " Evocation Gauge Boost" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "REAPER_KILLER" :
+        html = "Increase reaper killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "BEAST_KILLER" :
+        html = "Increase beast killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "MACHINA_KILLER" :
+        html = "Increase machina killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "STONE_KILLER" :
+        html = "Increase stone killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "EARTH_KILLER" :
+        html = "Increase earth killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "FIRE_KILLER" :
+        html = "Increase fire killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "ICE_KILLER" :
+        html = "Increase ice killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "LIGHTNING_KILLER" :
+        html = "Increase ligthning killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "WIND_KILLER" :
+        html = "Increase wind killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "WATER_KILLER" :
+        html = "Increase water killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "LIGHT_KILLER" :
+        html = "Increase light killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "DARK_KILLER" :
+        html = "Increase dark killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      default:
+        console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
     }
 

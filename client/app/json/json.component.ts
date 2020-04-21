@@ -11,17 +11,32 @@ export class JsonComponent implements OnInit {
   units = [];
   unitIds = [];
 
-  isCollapsed = [];
+  visionCards = [];
+  visionCardIds = [];
+
+  isCollapsed = {
+    units: [],
+    visionCards: []
+  };
 
   constructor(private jsonService: JsonService) {}
 
   ngOnInit(): void {
     this.jsonService.getJsons().then(response => {
-      this.units = response;
+      // @ts-ignore
+      this.units = response.units;
       this.unitIds = Object.keys(this.units)
 
       for (let i = 0; i < this.unitIds.length; i++) {
-        this.isCollapsed[i] = true;
+        this.isCollapsed.units[i] = true;
+      }
+
+      // @ts-ignore
+      this.visionCards = response.visionCards;
+      this.visionCardIds = Object.keys(this.visionCards)
+
+      for (let i = 0; i < this.visionCardIds.length; i++) {
+        this.isCollapsed.visionCards[i] = true;
       }
     });
   }

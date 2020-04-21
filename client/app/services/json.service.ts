@@ -4,22 +4,24 @@ import { UnitService } from './unit.service'
 
 @Injectable()
 export class JsonService {
-  wotvChainUnits = {};
-  isCollapsed = [];
-  isCollapsedRaw = true;
+  wotvUnits = {};
+  wotvVisionCards = {};
+
   units = {};
   skills = {};
   buffs = {};
   equipments = {};
   boards = {};
   jobs = {};
+  visionCards = {};
 
   names = {
     skill: {},
     unit: {},
     buff: {},
     job: {},
-    equipment: {}
+    equipment: {},
+    visionCard: {}
   }
 
   rarity = [
@@ -134,8 +136,10 @@ export class JsonService {
     182: "FAITH",
     183: "ACTIVAITON_TIME",
     190: "ACQUIRED_AP",
+    191: "EVOCATION_GAUGE_BOOST",
     193: "FAITH",
     200: "DEBUFF_RES",
+    202: "ATK_DEBUFF_RES",
     300: "BUFFS_DURATION",
     301: "DEBUFFS_DURATION",
     310: "ATTACK_RES",
@@ -185,56 +189,63 @@ export class JsonService {
   ]
 
   stats = {
-    "hp": "HP",
-    "mp": "TP",
-    "ap": "AP",
-    "atk": "ATK",
-    "def": "DEF",
-    "mnd": "SPR",
-    "mag": "MAG",
-    "dex": "DEX",
-    "spd": "AGI",
-    "luk": "LUCK",
-    "iniap": "INITIAL_AP",
+    unit: {
+      "hp": "HP",
+      "mp": "TP",
+      "ap": "AP",
+      "atk": "ATK",
+      "def": "DEF",
+      "mnd": "SPR",
+      "mag": "MAG",
+      "dex": "DEX",
+      "spd": "AGI",
+      "luk": "LUCK",
+      "iniap": "INITIAL_AP",
 
-    "hit" : "ACCURACY",
-    "crt" : "CRITIC_RATE",
-    "crta": "CRITIC_AVOID",
-    "avd" : "EVADE",
+      "hit" : "ACCURACY",
+      "crt" : "CRITIC_RATE",
+      "crta": "CRITIC_AVOID",
+      "avd" : "EVADE",
 
-    "efi": "FIRE",
-    "eic": "ICE",
-    "eea": "EARTH",
-    "ewi": "WIND",
-    "eth": "LIGHTNING",
-    "ewa": "WATER",
-    "esh": "LIGHT",
-    "eda": "DARK",
+      "efi": "FIRE",
+      "eic": "ICE",
+      "eea": "EARTH",
+      "ewi": "WIND",
+      "eth": "LIGHTNING",
+      "ewa": "WATER",
+      "esh": "LIGHT",
+      "eda": "DARK",
 
-    "asl": "SLASH",
-    "api": "PIERCE",
-    "abl": "STRIKE",
-    "ash": "MISSILE",
-    "ama": "MAGIC",
+      "asl": "SLASH",
+      "api": "PIERCE",
+      "abl": "STRIKE",
+      "ash": "MISSILE",
+      "ama": "MAGIC",
 
-    "cpo": "POISON",
-    "cbl": "BLIND",
-    "csl": "SLEEP",
-    "cmu": "SILENCE",
-    "cpa": "PARALYZE",
-    "ccf": "CONFUSION",
-    "cpe": "PETRIFY",
-    "cfr": "TOAD",
-    "cch": "CHARM",
-    "csw": "SLOW",
-    "cst": "STOP",
-    "cdm": "IMMOBILIZE",
-    "cda": "DISABLE",
-    "cbe": "BERSERK",
-    "cdo": "DOOM",
+      "cpo": "POISON",
+      "cbl": "BLIND",
+      "csl": "SLEEP",
+      "cmu": "SILENCE",
+      "cpa": "PARALYZE",
+      "ccf": "CONFUSION",
+      "cpe": "PETRIFY",
+      "cfr": "TOAD",
+      "cch": "CHARM",
+      "csw": "SLOW",
+      "cst": "STOP",
+      "cdm": "IMMOBILIZE",
+      "cda": "DISABLE",
+      "cbe": "BERSERK",
+      "cdo": "DOOM",
 
-    "mov": "MOVE",
-    "jmp": "JUMP",
+      "mov": "MOVE",
+      "jmp": "JUMP"
+    },
+    visionCard: {
+      "hp": "HP",
+      "atk": "ATK",
+      "mag": "MAG"
+    }
   }
 
   jobEquip = [
@@ -295,8 +306,12 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Job.json').toPromise();
   }
 
-  private jsonequipments() {
+  private jsonEquipments() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Artifact.json').toPromise();
+  }
+
+  private jsonVisionCards() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/VisionCard.json').toPromise();
   }
 
 
@@ -317,8 +332,12 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/JobName.json').toPromise();
   }
 
-  private jsonequipmentNames() {
+  private jsonEquipmentNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactName.json').toPromise();
+  }
+
+  private jsonVisionCardNames() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/VisionCardName.json').toPromise();
   }
 
 
@@ -334,8 +353,10 @@ export class JsonService {
       this.jsonBuffs(),
       this.jsonBuffNames(),
       this.jsonJobs(),
-      this.jsonequipments(),
-      this.jsonequipmentNames()
+      this.jsonEquipments(),
+      this.jsonEquipmentNames(),
+      this.jsonVisionCards(),
+      this.jsonVisionCardNames()
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
       this.names.unit = this.formatNames(responses[1]);
@@ -348,6 +369,8 @@ export class JsonService {
       this.jobs = this.formatJson(responses[8]);
       this.equipments = this.formatJson(responses[9]);
       this.names.equipment = this.formatNames(responses[10]);
+      this.visionCards = this.formatJson(responses[11]);
+      this.names.visionCard = this.formatNames(responses[12]);
 
 
       //console.log(this.units)
@@ -357,7 +380,10 @@ export class JsonService {
       this.formatJsons();
 
 
-      return this.wotvChainUnits;
+      return {
+        units: this.wotvUnits,
+        visionCards: this.wotvVisionCards
+      };
     });
   }
 
@@ -383,13 +409,17 @@ export class JsonService {
     Object.keys(this.units).forEach(unitId => {
       this.addUnit(this.units[unitId]);
     });
+
+    Object.keys(this.visionCards).forEach(visionCardId => {
+      this.addVisionCard(this.visionCards[visionCardId]);
+    });
   }
 
   private addUnit(unit) {
     let dataId = unit.iname;
 
     if (unit.type === 0) {
-      this.wotvChainUnits[dataId] = {
+      this.wotvUnits[dataId] = {
         dataId: dataId,
         names: {},
         rarity: this.rarity[unit.rare],
@@ -401,25 +431,48 @@ export class JsonService {
         image: unit.charaId
       };
 
-      this.getUnitNames(this.wotvChainUnits[dataId]);
-      this.getJobNames(this.wotvChainUnits[dataId], unit.jobsets);
-      
-      this.getStats(this.wotvChainUnits[dataId], unit.status)
-      this.getJobsStats(this.wotvChainUnits[dataId], unit.jobsets)
-      this.getLB(this.wotvChainUnits[dataId], unit.limit)
-      this.getMasterSkill(this.wotvChainUnits[dataId], unit.mstskl)
-      this.getTMR(this.wotvChainUnits[dataId], unit.trust)
-      this.getSkillsAndBuffs(this.wotvChainUnits[dataId]);
+      this.getNames(this.wotvUnits[dataId], 'unit');
+      this.getJobNames(this.wotvUnits[dataId], unit.jobsets);
 
-      this.isCollapsed.push(true);
+      this.getStats(this.wotvUnits[dataId], unit.status, 'unit')
+      this.getJobsStats(this.wotvUnits[dataId], unit.jobsets)
+      this.getLB(this.wotvUnits[dataId], unit.limit)
+      this.getMasterSkill(this.wotvUnits[dataId], unit.mstskl)
+      this.getTMR(this.wotvUnits[dataId], unit.trust)
+      this.getSkillsAndBuffs(this.wotvUnits[dataId]);
     }
   }
 
-  private getUnitNames(unit) {
-    if (this.names.unit[unit.dataId]) {
-      unit.names.en = this.names.unit[unit.dataId]
+  private addVisionCard(visionCard) {
+    let dataId = visionCard.iname;
+
+    if (visionCard.type === 0) {
+      this.wotvVisionCards[dataId] = {
+        dataId: dataId,
+        names: {},
+        rarity: this.rarity[visionCard.rare],
+        unitBuffsClassic: [],
+        unitBuffsAwake: [],
+        unitBuffsMax: [],
+        partyBuffsClassic: [],
+        partyBuffsAwake: [],
+        partyBuffsMax: [],
+        stats: {},
+        image: visionCard.icon
+      };
+
+      this.getNames(this.wotvVisionCards[dataId], 'visionCard');
+      this.getStats(this.wotvVisionCards[dataId], visionCard.status, 'visionCard')
+
+      this.getVisionCardSkillsAndBuffs(this.wotvVisionCards[dataId], visionCard);
+    }
+  }
+
+  private getNames(item, type) {
+    if (this.names[type][item.dataId]) {
+      item.names.en = this.names[type][item.dataId]
     } else {
-      unit.names.en = unit.dataId;
+      item.names.en = item.dataId;
     }
   }
 
@@ -434,28 +487,46 @@ export class JsonService {
   }
 
   private getSkillsAndBuffs(unit) {
-    //console.log("=====")
-    // //console.log(this.boards)
-    // //console.log(this.skills)
-    // //console.log(this.buffs)
-
-
     if (this.boards[unit.dataId]) {
       this.boards[unit.dataId].panels.forEach(item => {
-        // //console.log(item)
-
         if (item.value.split("_")[0] === "BUFF") {
-          // //console.log("buff")
           this.addPassiveBuff(unit, item)
         } else {
           this.addSkill(unit, item)
-          // //console.log("skill")
         }
       });
     }
-
-    //console.log("=====")
   }
+
+
+  private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {
+    // party
+    if (rawVisionCard.card_skill) {
+      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.card_skill}, "partyBuffsClassic")
+    }
+
+    if (rawVisionCard.add_card_skill_buff_awake) {
+      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_card_skill_buff_awake}, "partyBuffsAwake")
+    }
+
+    if (rawVisionCard.add_card_skill_buff_lvmax) {
+      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_card_skill_buff_lvmax}, "partyBuffsMax")
+    }
+
+    // self
+    if (rawVisionCard.self_buff) {
+      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.self_buff}, "unitBuffsClassic")
+    }
+
+    if (rawVisionCard.add_self_buff_awake) {
+      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_self_buff_awake}, "unitBuffsAwake")
+    }
+
+    if (rawVisionCard.add_self_buff_lvmax) {
+      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_self_buff_lvmax}, "unitBuffsMax")
+    }
+  }
+
 
   private addPassiveBuff(unit, panelBuff) {
     // //console.log(panelBuff)
@@ -500,10 +571,7 @@ export class JsonService {
     unit.buffs.push(buff);
   }
 
-  private addSkill(unit, panelSkill) {
-    //console.log(panelSkill)
-    //console.log(this.skills[panelSkill.value])
-
+  private addSkill(unit, panelSkill, type = "skills") {
     let skill = {
       unlockStar: panelSkill.unlock_value + 1,
       unlockJob: panelSkill.get_job,
@@ -516,7 +584,7 @@ export class JsonService {
 
     this.updateSkill(unit, skill, panelSkill.value);
 
-    unit.skills.push(skill);
+    unit[type].push(skill);
   }
 
   private updateSkill(unit, skill, skillId) {
@@ -691,9 +759,9 @@ export class JsonService {
     }
   }
 
-  private getStats(unit, stats) {
-    Object.keys(this.stats).forEach(stat => {
-      unit.stats[this.stats[stat]] = {
+  private getStats(unit, stats, type) {
+    Object.keys(this.stats[type]).forEach(stat => {
+      unit.stats[this.stats[type][stat]] = {
         min: stats[0][stat],
         max: stats[1][stat]
       }
@@ -749,7 +817,7 @@ export class JsonService {
       }
 
       Object.keys(this.equipments[tmrId].status[0]).forEach(stat => {
-        tmr.stats[this.stats[stat]] = this.equipments[tmrId].status[0][stat]
+        tmr.stats[this.stats.unit[stat]] = this.equipments[tmrId].status[0][stat]
       })
 
       let lastSkillId = [];

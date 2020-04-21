@@ -1,0 +1,4755 @@
+{
+  "VC_LW_GLEM": {
+    "dataId": "VC_LW_GLEM",
+    "names": {
+      "en": "Rock Cliff Titan, Golem"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_GLEM_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_GLEM_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_GLEM_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_GLEM_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_GLEM_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_GLEM_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 64,
+        "max": 500
+      },
+      "ATK": {
+        "min": 16,
+        "max": 60
+      },
+      "MAG": {
+        "min": 10,
+        "max": 36
+      }
+    },
+    "image": "LAPSGlem"
+  },
+  "VC_LW_IFRT": {
+    "dataId": "VC_LW_IFRT",
+    "names": {
+      "en": "Howl of Ferocious Blaze, Ifrit"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_IFRT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_IFRT_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_IFRT_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 15,
+            "maxValue": 30,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_IFRT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 1,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_IFRT_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_IFRT_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 323
+      },
+      "ATK": {
+        "min": 34,
+        "max": 133
+      },
+      "MAG": {
+        "min": 14,
+        "max": 54
+      }
+    },
+    "image": "LAPSIfrt"
+  },
+  "VC_LW_SIRE": {
+    "dataId": "VC_LW_SIRE",
+    "names": {
+      "en": "Aquatic Songstress, Siren"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SIRE_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SIRE_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SIRE_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_SIRE_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_SIRE_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_SIRE_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 38,
+        "max": 300
+      },
+      "ATK": {
+        "min": 16,
+        "max": 60
+      },
+      "MAG": {
+        "min": 34,
+        "max": 131
+      }
+    },
+    "image": "LAPSSire"
+  },
+  "VC_LW_SOKYU": {
+    "dataId": "VC_LW_SOKYU",
+    "names": {
+      "en": "Second Division of the Kingdom of Leonis, «Caelum»"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SOKYU_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SOKYU_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SOKYU_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 10,
+            "maxValue": 20,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_SOKYU_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 1,
+            "maxValue": 7,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_SOKYU_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 8,
+            "maxValue": 8,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_SOKYU_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 44,
+        "max": 346
+      },
+      "ATK": {
+        "min": 24,
+        "max": 92
+      },
+      "MAG": {
+        "min": 21,
+        "max": 80
+      }
+    },
+    "image": "LAPSSoky"
+  },
+  "VC_LW_TRAINING": {
+    "dataId": "VC_LW_TRAINING",
+    "names": {
+      "en": "Becoming Stronger Than Anyone Else"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_DAMAGE",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRAINING_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_DAMAGE",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRAINING_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_DAMAGE",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRAINING_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACTIVAITON_TIME",
+            "minValue": -25,
+            "maxValue": -50,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRAINING_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACTIVAITON_TIME",
+            "minValue": -5,
+            "maxValue": -25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRAINING_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACTIVAITON_TIME",
+            "minValue": -25,
+            "maxValue": -25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRAINING_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 292
+      },
+      "ATK": {
+        "min": 48,
+        "max": 190
+      },
+      "MAG": {
+        "min": 5,
+        "max": 18
+      }
+    },
+    "image": "LAPSTrai"
+  },
+  "VC_LW_MACR": {
+    "dataId": "VC_LW_MACR",
+    "names": {
+      "en": "Trousseau​"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_MACR_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_MACR_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_MACR_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MACR_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MACR_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MACR_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 238
+      },
+      "ATK": {
+        "min": 8,
+        "max": 28
+      },
+      "MAG": {
+        "min": 48,
+        "max": 190
+      }
+    },
+    "image": "LAPSMacr"
+  },
+  "VC_LW_MURG": {
+    "dataId": "VC_LW_MURG",
+    "names": {
+      "en": "Echoing Screams"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK_DEBUFF_RES",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MURG_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK_DEBUFF_RES",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MURG_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK_DEBUFF_RES",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MURG_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MURG_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MURG_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MURG_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 44,
+        "max": 346
+      },
+      "ATK": {
+        "min": 43,
+        "max": 169
+      },
+      "MAG": {
+        "min": 3,
+        "max": 10
+      }
+    },
+    "image": "LAPSMurg"
+  },
+  "VC_LW_GRSR": {
+    "dataId": "VC_LW_GRSR",
+    "names": {
+      "en": "Dashing Over a Snowy Field"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 1,
+            "maxValue": 2,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_GRSR_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 1,
+            "maxValue": 2,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_GRSR_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 1,
+            "maxValue": 1,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_GRSR_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_GRSR_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_GRSR_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_GRSR_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 33,
+        "max": 261
+      },
+      "ATK": {
+        "min": 35,
+        "max": 137
+      },
+      "MAG": {
+        "min": 21,
+        "max": 80
+      }
+    },
+    "image": "LAPSGrsr"
+  },
+  "VC_FF14_MV1": {
+    "dataId": "VC_FF14_MV1",
+    "names": {
+      "en": "Scions of Shadow"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV1_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV1_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV1_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV1_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV1_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV1_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 20,
+        "max": 153
+      },
+      "ATK": {
+        "min": 36,
+        "max": 141
+      },
+      "MAG": {
+        "min": 33,
+        "max": 127
+      }
+    },
+    "image": "FF14Mv1"
+  },
+  "VC_LW_HOLYNIGHT": {
+    "dataId": "VC_LW_HOLYNIGHT",
+    "names": {
+      "en": "Frederika's Dream"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOLYNIGHT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOLYNIGHT_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOLYNIGHT_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOLYNIGHT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOLYNIGHT_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOLYNIGHT_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 287
+      },
+      "ATK": {
+        "min": 41,
+        "max": 162
+      },
+      "MAG": {
+        "min": 10,
+        "max": 39
+      }
+    },
+    "image": "LAPSHoly"
+  },
+  "VC_LW_IGNT": {
+    "dataId": "VC_LW_IGNT",
+    "names": {
+      "en": "Metal Daemon, Iron Giant"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          },
+          {
+            "type": "AGI",
+            "minValue": -3,
+            "maxValue": -3,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_IGNT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_IGNT_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_IGNT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_IGNT_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 48,
+        "max": 384
+      },
+      "ATK": {
+        "min": 20,
+        "max": 80
+      },
+      "MAG": {
+        "min": 6,
+        "max": 25
+      }
+    },
+    "image": "LAPSIgnt"
+  },
+  "VC_LW_BHMT": {
+    "dataId": "VC_LW_BHMT",
+    "names": {
+      "en": "Malevolent Legendary Beast, Behemoth"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 2,
+            "maxValue": 7,
+            "calcType": "percent",
+            "rate": 200
+          },
+          {
+            "type": "AGI",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "percent",
+            "rate": 200
+          }
+        ],
+        "dataId": "SK_VC_LW_BHMT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "percent",
+            "rate": 200
+          }
+        ],
+        "dataId": "SK_VC_LW_BHMT_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_BHMT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_BHMT_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 338
+      },
+      "ATK": {
+        "min": 33,
+        "max": 133
+      },
+      "MAG": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    "image": "LAPSBhmt"
+  },
+  "VC_LW_MABR": {
+    "dataId": "VC_LW_MABR",
+    "names": {
+      "en": "Defiling Curse, Malboro"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CONFUSION",
+            "minValue": 3,
+            "maxValue": 10,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_MABR_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CONFUSION",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_MABR_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MABR_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MABR_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 330
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 27,
+        "max": 109
+      }
+    },
+    "image": "LAPSMabr"
+  },
+  "VC_LW_SHIV": {
+    "dataId": "VC_LW_SHIV",
+    "names": {
+      "en": "Freezer of All, Shiva"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SHIV_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SHIV_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SHIV_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 6,
+            "maxValue": 12,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_SHIV_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_SHIV_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 4,
+            "maxValue": 4,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_SHIV_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 330
+      },
+      "ATK": {
+        "min": 5,
+        "max": 18
+      },
+      "MAG": {
+        "min": 43,
+        "max": 170
+      }
+    },
+    "image": "LAPSShiv"
+  },
+  "VC_LW_RAMU": {
+    "dataId": "VC_LW_RAMU",
+    "names": {
+      "en": "Roaring Thunderclap, Ramuh"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_RAMU_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_RAMU_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_RAMU_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAG",
+            "minValue": 15,
+            "maxValue": 30,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RAMU_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAG",
+            "minValue": 1,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RAMU_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RAMU_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 264
+      },
+      "ATK": {
+        "min": 21,
+        "max": 80
+      },
+      "MAG": {
+        "min": 34,
+        "max": 133
+      }
+    },
+    "image": "LAPSRamu"
+  },
+  "VC_LW_FAMILY": {
+    "dataId": "VC_LW_FAMILY",
+    "names": {
+      "en": "Birth of New Life"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_FAMILY_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_FAMILY_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LCK",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_FAMILY_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LCK",
+            "minValue": 1,
+            "maxValue": 6,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_FAMILY_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 58,
+        "max": 461
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 7,
+        "max": 29
+      }
+    },
+    "image": "LAPSFami"
+  },
+  "VC_LW_KTON": {
+    "dataId": "VC_LW_KTON",
+    "names": {
+      "en": "Secret Orders"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 5,
+            "maxValue": 7,
+            "calcType": "percent"
+          },
+          {
+            "type": "SPR",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_KTON_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_KTON_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_KTON_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_KTON_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 230
+      },
+      "ATK": {
+        "min": 26,
+        "max": 105
+      },
+      "MAG": {
+        "min": 22,
+        "max": 91
+      }
+    },
+    "image": "LAPSKton"
+  },
+  "VC_LW_PROPOSE": {
+    "dataId": "VC_LW_PROPOSE",
+    "names": {
+      "en": "Vow of Love"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          },
+          {
+            "type": "PROVOKE",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_PROPOSE_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_PROPOSE_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 20,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_PROPOSE_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 1,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_PROPOSE_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 43,
+        "max": 346
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 17,
+        "max": 69
+      }
+    },
+    "image": "LAPSProp"
+  },
+  "VC_LW_SDLX": {
+    "dataId": "VC_LW_SDLX",
+    "names": {
+      "en": "Cleansing the Mind"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LCK",
+            "minValue": 3,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_SDLX_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LCK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_SDLX_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SDLX_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_SDLX_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 48,
+        "max": 384
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 10,
+        "max": 43
+      }
+    },
+    "image": "LAPSSdlx"
+  },
+  "VC_LW_TEAPARTY": {
+    "dataId": "VC_LW_TEAPARTY",
+    "names": {
+      "en": "Fleeting Tranquility"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CHARM",
+            "minValue": 3,
+            "maxValue": 10,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_TEAPARTY_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CHARM",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_TEAPARTY_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_TEAPARTY_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_TEAPARTY_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 253
+      },
+      "ATK": {
+        "min": 28,
+        "max": 113
+      },
+      "MAG": {
+        "min": 18,
+        "max": 73
+      }
+    },
+    "image": "LAPSTeap"
+  },
+  "VC_LW_HUNT": {
+    "dataId": "VC_LW_HUNT",
+    "names": {
+      "en": "Sharpened Concentration"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          },
+          {
+            "type": "SPR",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HUNT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HUNT_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HUNT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_HUNT_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 25,
+        "max": 200
+      },
+      "ATK": {
+        "min": 30,
+        "max": 121
+      },
+      "MAG": {
+        "min": 22,
+        "max": 91
+      }
+    },
+    "image": "LAPSHunt"
+  },
+  "VC_FF14_MV2": {
+    "dataId": "VC_FF14_MV2",
+    "names": {
+      "en": "Shadowbringers"
+    },
+    "rarity": "MR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          },
+          {
+            "type": "LIGHT_ATK",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV2_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV2_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV2_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_FF14_MV2_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 230
+      },
+      "ATK": {
+        "min": 30,
+        "max": 121
+      },
+      "MAG": {
+        "min": 19,
+        "max": 76
+      }
+    },
+    "image": "FF14Mv2"
+  },
+  "VC_LW_CACT": {
+    "dataId": "VC_LW_CACT",
+    "names": {
+      "en": "Instantaneous 1,000 Needles, Cactuar"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 4,
+            "maxValue": 12,
+            "calcType": "percent"
+          },
+          {
+            "type": "DEF",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_CACT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "minValue": 4,
+            "maxValue": 9,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_CACT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 38,
+        "max": 307
+      },
+      "ATK": {
+        "min": 11,
+        "max": 44
+      },
+      "MAG": {
+        "min": 18,
+        "max": 73
+      }
+    },
+    "image": "LAPSCact"
+  },
+  "VC_LW_ARMN_01": {
+    "dataId": "VC_LW_ARMN_01",
+    "names": {
+      "en": "Magic Eye Beam, Floateye"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLOW",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "resistance"
+          },
+          {
+            "type": "ACCURACY",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_ARMN_01_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_ARMN_01_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 27,
+        "max": 215
+      },
+      "ATK": {
+        "min": 18,
+        "max": 72
+      },
+      "MAG": {
+        "min": 22,
+        "max": 91
+      }
+    },
+    "image": "LAPSArmn_01"
+  },
+  "VC_LW_ZUUU": {
+    "dataId": "VC_LW_ZUUU",
+    "names": {
+      "en": "Enormous Avian, Zuu"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 7,
+            "maxValue": 20,
+            "calcType": "percent",
+            "rate": 200
+          }
+        ],
+        "dataId": "SK_VC_LW_ZUUU_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_ZUUU_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 43,
+        "max": 346
+      },
+      "ATK": {
+        "min": 17,
+        "max": 68
+      },
+      "MAG": {
+        "min": 8,
+        "max": 32
+      }
+    },
+    "image": "LAPSZuuu"
+  },
+  "VC_LW_OGRE": {
+    "dataId": "VC_LW_OGRE",
+    "names": {
+      "en": "Herculean Demon, Ogre"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "PETRIFY",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "resistance"
+          },
+          {
+            "type": "AGI",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_OGRE_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "minValue": 3,
+            "maxValue": 7,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_OGRE_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 28,
+        "max": 223
+      },
+      "ATK": {
+        "min": 27,
+        "max": 109
+      },
+      "MAG": {
+        "min": 13,
+        "max": 54
+      }
+    },
+    "image": "LAPSOgre"
+  },
+  "VC_LW_BOMB": {
+    "dataId": "VC_LW_BOMB",
+    "names": {
+      "en": "Explosive Orb, Bomb"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "minValue": 7,
+            "maxValue": 20,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_BOMB_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 3,
+            "maxValue": 7,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_BOMB_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 330
+      },
+      "ATK": {
+        "min": 10,
+        "max": 40
+      },
+      "MAG": {
+        "min": 16,
+        "max": 65
+      }
+    },
+    "image": "LAPSBomb"
+  },
+  "VC_LW_BYLO": {
+    "dataId": "VC_LW_BYLO",
+    "names": {
+      "en": "Gluttonous King's Arrival"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_DAMAGE",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "fixe"
+          },
+          {
+            "type": "AGI",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_BYLO_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 3,
+            "maxValue": 7,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_BYLO_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 27,
+        "max": 215
+      },
+      "ATK": {
+        "min": 26,
+        "max": 105
+      },
+      "MAG": {
+        "min": 15,
+        "max": 62
+      }
+    },
+    "image": "LAPSBylo"
+  },
+  "VC_LW_RART": {
+    "dataId": "VC_LW_RART",
+    "names": {
+      "en": "Long-Awaited Holiday"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 7,
+            "maxValue": 20,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RART_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LCK",
+            "minValue": 5,
+            "maxValue": 11,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RART_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 253
+      },
+      "ATK": {
+        "min": 19,
+        "max": 76
+      },
+      "MAG": {
+        "min": 17,
+        "max": 69
+      }
+    },
+    "image": "LAPSRart"
+  },
+  "VC_LW_RYER": {
+    "dataId": "VC_LW_RYER",
+    "names": {
+      "en": "Great Detective Little Leela"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "fixe"
+          },
+          {
+            "type": "DEF",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_RYER_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAG",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RYER_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 28,
+        "max": 223
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 27,
+        "max": 109
+      }
+    },
+    "image": "LAPSRyer"
+  },
+  "VC_LW_VNLA": {
+    "dataId": "VC_LW_VNLA",
+    "names": {
+      "en": "Beguiling Witch"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "percent",
+            "rate": 200
+          },
+          {
+            "type": "DEF",
+            "minValue": -5,
+            "maxValue": -5,
+            "calcType": "fixe",
+            "rate": 200
+          }
+        ],
+        "dataId": "SK_VC_LW_VNLA_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACTIVAITON_TIME",
+            "minValue": -15,
+            "maxValue": -30,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_VNLA_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 184
+      },
+      "ATK": {
+        "min": 20,
+        "max": 80
+      },
+      "MAG": {
+        "min": 24,
+        "max": 98
+      }
+    },
+    "image": "LAPSVnla"
+  },
+  "VC_LW_RIRY": {
+    "dataId": "VC_LW_RIRY",
+    "names": {
+      "en": "Fun Time"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "minValue": 7,
+            "maxValue": 20,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_RIRY_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_RIRY_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 26,
+        "max": 207
+      },
+      "ATK": {
+        "min": 22,
+        "max": 88
+      },
+      "MAG": {
+        "min": 20,
+        "max": 80
+      }
+    },
+    "image": "LAPSRiry"
+  },
+  "VC_LW_LEONIS": {
+    "dataId": "VC_LW_LEONIS",
+    "names": {
+      "en": "Flag of Leonis"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STOP",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_LEONIS_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_LEONIS_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 21,
+        "max": 173
+      },
+      "ATK": {
+        "min": 20,
+        "max": 80
+      },
+      "MAG": {
+        "min": 10,
+        "max": 43
+      }
+    },
+    "image": "LAPSLeon"
+  },
+  "VC_LW_HOURN": {
+    "dataId": "VC_LW_HOURN",
+    "names": {
+      "en": "Flag of Hourne"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "BERSERK",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOURN_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 3,
+            "maxValue": 7,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOURN_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 296
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 7,
+        "max": 29
+      }
+    },
+    "image": "LAPSHour"
+  },
+  "VC_LW_FENICE": {
+    "dataId": "VC_LW_FENICE",
+    "names": {
+      "en": "Flag of Fennes"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK_DEBUFF_RES",
+            "minValue": 17,
+            "maxValue": 50,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_FENICE_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 4,
+            "maxValue": 8,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_FENICE_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 32,
+        "max": 257
+      },
+      "ATK": {
+        "min": 13,
+        "max": 52
+      },
+      "MAG": {
+        "min": 7,
+        "max": 29
+      }
+    },
+    "image": "LAPSFeni"
+  },
+  "VC_LW_WEZETT": {
+    "dataId": "VC_LW_WEZETT",
+    "names": {
+      "en": "Flag of Wezette"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "TOAD",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_WEZETT_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "EVOCATION_GAUGE_BOOST",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_WEZETT_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 234
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 10,
+        "max": 43
+      }
+    },
+    "image": "LAPSWeze"
+  },
+  "VC_LW_CRYSTAL": {
+    "dataId": "VC_LW_CRYSTAL",
+    "names": {
+      "en": "Flag of the Crystal Sanctum"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_CRYSTAL_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 3,
+            "maxValue": 6,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_CRYSTAL_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 24,
+        "max": 196
+      },
+      "ATK": {
+        "min": 5,
+        "max": 20
+      },
+      "MAG": {
+        "min": 21,
+        "max": 87
+      }
+    },
+    "image": "LAPSCrys"
+  },
+  "VC_LW_LEONIS2": {
+    "dataId": "VC_LW_LEONIS2",
+    "names": {
+      "en": "Leonis Castle"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEF",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          },
+          {
+            "type": "SPR",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_LEONIS2_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "minValue": 3,
+            "maxValue": 6,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_LEONIS2_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 280
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 5,
+        "max": 21
+      }
+    },
+    "image": "LAPSLeon2"
+  },
+  "VC_LW_HOURN2": {
+    "dataId": "VC_LW_HOURN2",
+    "names": {
+      "en": "Hourne Castle"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent"
+          },
+          {
+            "type": "LCK",
+            "minValue": -10,
+            "maxValue": -10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOURN2_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 2,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_HOURN2_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 16,
+        "max": 134
+      },
+      "ATK": {
+        "min": 23,
+        "max": 92
+      },
+      "MAG": {
+        "min": 12,
+        "max": 51
+      }
+    },
+    "image": "LAPSHour2"
+  },
+  "VC_LW_FENICE2": {
+    "dataId": "VC_LW_FENICE2",
+    "names": {
+      "en": "Fennes Castle"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 6,
+            "maxValue": 18,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_FENICE2_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "minValue": 2,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_FENICE2_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 234
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 10,
+        "max": 43
+      }
+    },
+    "image": "LAPSFeni2"
+  },
+  "VC_LW_WEZETT2": {
+    "dataId": "VC_LW_WEZETT2",
+    "names": {
+      "en": "Wezette Castle"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEF",
+            "minValue": 3,
+            "maxValue": 10,
+            "calcType": "fixe"
+          },
+          {
+            "type": "SPR",
+            "minValue": 3,
+            "maxValue": 10,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_WEZETT2_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "minValue": 2,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_WEZETT2_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 326
+      },
+      "ATK": {
+        "min": 6,
+        "max": 24
+      },
+      "MAG": {
+        "min": 5,
+        "max": 21
+      }
+    },
+    "image": "LAPSWeze2"
+  },
+  "VC_LW_DYNVERK": {
+    "dataId": "VC_LW_DYNVERK",
+    "names": {
+      "en": "Dynverk Cathedral"
+    },
+    "rarity": "R",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "BLIND",
+            "minValue": 8,
+            "maxValue": 25,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_DYNVERK_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "minValue": 2,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_DYNVERK_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 142
+      },
+      "ATK": {
+        "min": 16,
+        "max": 64
+      },
+      "MAG": {
+        "min": 18,
+        "max": 73
+      }
+    },
+    "image": "LAPSDynv"
+  },
+  "VC_LW_TRSV_01": {
+    "dataId": "VC_LW_TRSV_01",
+    "names": {
+      "en": "Long-Distance Communication Device «Heaven»"
+    },
+    "rarity": "N",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRSV_01_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 4,
+            "maxValue": 8,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRSV_01_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 12,
+        "max": 100
+      },
+      "ATK": {
+        "min": 14,
+        "max": 56
+      },
+      "MAG": {
+        "min": 7,
+        "max": 29
+      }
+    },
+    "image": "LAPSTsv1"
+  },
+  "VC_LW_TRSV_02": {
+    "dataId": "VC_LW_TRSV_02",
+    "names": {
+      "en": "Long-Distance Communication Device «Earth»"
+    },
+    "rarity": "N",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "LCK",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRSV_02_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_TRSV_02_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 12,
+        "max": 100
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 12,
+        "max": 51
+      }
+    },
+    "image": "LAPSTsv2"
+  },
+  "VC_LW_MIRROR": {
+    "dataId": "VC_LW_MIRROR",
+    "names": {
+      "en": "Far-Reaching Mirror"
+    },
+    "rarity": "N",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "DEX",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MIRROR_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "MAG",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_MIRROR_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 24,
+        "max": 192
+      },
+      "ATK": {
+        "min": 5,
+        "max": 20
+      },
+      "MAG": {
+        "min": 4,
+        "max": 18
+      }
+    },
+    "image": "LAPSMiro"
+  }
+}

@@ -33,16 +33,11 @@ import { CardsComponent } from './cards/cards.component';
 import { EspersComponent } from './espers/espers.component';
 
 import { UnitService } from './services/unit.service';
-import { ChainService } from './services/chain.service';
-import { BackService } from './services/back.service';
-import { FindBestService } from './services/find-best.service';
-import { ElementsService } from './services/elements.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
-import { MonsterService } from './services/monster.service';
-import { EquipmentService } from './services/equipment.service';
-import { RaceService } from './services/race.service';
 import { SkillService } from './services/skill.service';
+import { EquipmentService } from './services/equipment.service';
+import { VisionCardService } from './services/visionCard.service';
 
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AbsolutePipe } from './pipes/absolute.pipe';
@@ -97,16 +92,11 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     UnitService,
-    ChainService,
-    ElementsService,
-    BackService,
-    FindBestService,
     NavService,
     JsonService,
-    MonsterService,
     EquipmentService,
-    RaceService,
-    SkillService
+    SkillService,
+    VisionCardService
   ],
   bootstrap: [
     AppComponent

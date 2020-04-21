@@ -1,61 +1,140 @@
-<div class="row families">
-  <div>
-    <ngx-md [data]="markdown"></ngx-md>
+<div class="row visionCard form-group">
+  <div class="chainParameters allSelectVisionCard" #chainDiv>
+    <div class="inlineBlock verticalTop">
+      <div
+        class=" verticalTop selectVisionCardZone marginVisionCard">
+
+        <div class="inlineBlock firstSelectLevel">
+          <label>{{ 'chain.label.visionCard' | translate }}</label>
+          <div>
+            <select2
+              [data]="observableVisionCards"
+              [value]="idSelected"
+              [options]="select2Options"
+              (valueChanged)="selectVisionCard($event.value);"></select2>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <h1 class="title">
-    {{ 'families.known' | translate }}
-  </h1>
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">{{ visionCard.name }}</th>
+      </tr>
+      <tr>
+        <td colspan="2"><img class="visionCardImg" src="{{'assets/visionCards/' + visionCard.image + '.png'}}" /></td>
+      </tr>
+      <tr>
+        <td>Rarity</td>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + visionCard.rarity + '.png'}}" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-  <div *ngFor="let knownFamily of knownFamilies" class="table-responsive">
-    <table class="table table-striped table-bordered table-hover table-sm">
-      <thead  class="thead-light">
-        <tr>
-          <th scope="col" colspan="2" class="title_row">
-            {{ knownFamily.name | translate }} ({{ knownFamily.frames }})
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let unit of knownFamily.units" scope="row">
-          <td class="col-unit">
-            {{ unit.name }}
-          </td>
-          <td class="col-ability">
-            <div *ngFor="let ability of unit.abilities">
-              {{ ability.name }}
+
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="4">VisionCard Stats</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>HP</th>
+        <th>ATK</th>
+        <th>MAG</th>
+      </tr>
+      <tr>
+        <td>Min</td>
+        <td>{{ visionCard.stats.HP.min }}</td>
+        <td>{{ visionCard.stats.ATK.min }}</td>
+        <td>{{ visionCard.stats.MAG.min }}</td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>{{ visionCard.stats.HP.max }}</td>
+        <td>{{ visionCard.stats.ATK.max }}</td>
+        <td>{{ visionCard.stats.MAG.max }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">Unit Effects</th>
+      </tr>
+      <tr *ngIf="visionCard.unitBuffsClassic">
+        <td>Classic</td>
+        <td>
+          <div *ngFor="let skill of visionCard.unitBuffsClassic">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
             </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h1 class="title">
-    {{ 'families.else' | translate }}
-  </h1>
-
-  <div *ngFor="let family of families" class="table-responsive">
-    <table class="table table-striped table-bordered table-hover table-sm">
-      <thead  class="thead-light">
-        <tr>
-          <th scope="col" colspan="2" class="title_row">
-            {{ family.family }}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let unit of family.units" scope="row">
-          <td class="col-unit">
-            {{ unit.name }}
-          </td>
-          <td class="col-ability">
-            <div *ngFor="let ability of unit.abilities">
-              {{ ability.name }}
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="visionCard.unitBuffsAwake">
+        <td>Awake</td>
+        <td>
+          <div *ngFor="let skill of visionCard.unitBuffsAwake">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
             </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="visionCard.unitBuffsMax">
+        <td>Max</td>
+        <td>
+          <div *ngFor="let skill of visionCard.unitBuffsMax">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Party Effects</th>
+      </tr>
+      <tr *ngIf="visionCard.partyBuffsClassic">
+        <td>Classic</td>
+        <td>
+          <div *ngFor="let skill of visionCard.partyBuffsClassic">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="visionCard.partyBuffsAwake">
+        <td>Awake</td>
+        <td>
+          <div *ngFor="let skill of visionCard.partyBuffsAwake">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="visionCard.partyBuffsMax">
+        <td>Max</td>
+        <td>
+          <div *ngFor="let skill of visionCard.partyBuffsMax">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

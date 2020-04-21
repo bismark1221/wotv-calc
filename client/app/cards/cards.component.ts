@@ -1,7 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+
+import { LocalStorageService } from 'angular-2-local-storage';
+import { Select2OptionData } from '../select2/select2.interface';
+import { Angulartics2 } from 'angulartics2';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+import { Observable } from 'rxjs';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { default as families } from '../data/families.json';
+import { VisionCard } from '../entities/visionCard';
+import { Skill } from '../entities/skill';
+import { VisionCardService } from '../services/visionCard.service';
+import { NavService } from '../services/nav.service';
+import { SkillService } from '../services/skill.service';
+
 
 @Component({
   selector: 'app-cards',
@@ -9,126 +21,98 @@ import { default as families } from '../data/families.json';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-  lang = 'en';
-  markdown = '';
+  private visionCards: VisionCard[];
 
-  families = null;
-  knownFamilies = [
-    {
-      frames: "22-5-5-5-5-5-5-5-5-5-5-20",
-      name: "families.families.qh",
-      units: []
-    },
-    {
-      frames: "70-7-5-7-7-7-7",
-      name: "families.families.he",
-      units: []
-    },
-    {
-      frames: "42-7-7-7-7-7-7-7-7-7-7-7",
-      name: "families.families.os",
-      units: []
-    },
-    {
-      frames: "70-6-6-6-6-6-6-6",
-      name: "Absolute Mirror of Equity",
-      units: []
-    },
-    {
-      frames: "2-8-8-8-8-8-8",
-      name: "families.families.pd",
-      units: []
-    },
-    {
-      frames: "82-8-8-8-8-8-8-8",
-      name: "families.families.bc",
-      units: []
-    },
-    {
-      frames: "42-8-8-8-8-8-16",
-      name: "families.families.cs",
-      units: []
-    },
-    {
-      frames: "60-8-8-8-8-8-8-8-8-8",
-      name: "families.families.cwa",
-      units: []
-    },
-    {
-      frames: "42-10-10-10-10-10-10",
-      name: "families.families.sok",
-      units: []
-    },
-    {
-      frames: "10-10-10-10-10-10-10",
-      name: "Sonic Blast",
-      units: []
-    }
-  ];
+  idSelected: string = "unselect";
+  visionCard = null;
+
+  observableVisionCards: Array<Select2OptionData> = [];
+
+  select2Options: Select2.Options = {
+    theme: 'bootstrap'
+  }
+
+  labels = {
+    visionCards: 'VisionCards'
+  }
 
   constructor(
-    private translateService: TranslateService
+    private visionCardService: VisionCardService,
+    private angulartics: Angulartics2,
+    private translateService: TranslateService,
+    private navService: NavService,
+    private skillService: SkillService
   ) {
-    this.lang = this.translateService.currentLang;
     this.getTranslation();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.lang = this.translateService.currentLang;
       this.getTranslation();
-    });
-  }
-
-  private getTranslation() {
-    this.translateService.get('families.markdown').subscribe((res: string) => {
-      this.markdown = res;
+      this.reloadList();
     });
   }
 
   ngOnInit(): void {
-    this.families = JSON.parse(JSON.stringify(families));
-    this.cleanFamilies();
+    this.idSelected = 'unselect';
+
+    this.getVisionCards();
   }
 
-  private cleanFamilies() {
-    let indexToRemove = [];
+  private getTranslation() {
+    this.translateService.get('chain.label.visionCards').subscribe((res: string) => {
+      this.labels.visionCards = res;
+    });
+  }
 
-    this.families.forEach((family, index) => {
-      this.knownFamilies.forEach(knownFamily => {
-        if (family.family === knownFamily.frames) {
-          knownFamily.units = family.units;
-          indexToRemove.push(index);
-        }
+  private getVisionCards(): void {
+    this.visionCards = this.visionCardService.getVisionCards();
+    console.log(this.visionCards)
+    this.reloadList();
+  }
+
+  private sortVisionCards() {
+    this.visionCardService.sort(this.visionCards, this.translateService);
+  }
+
+  private reloadList() {
+    this.sortVisionCards();
+
+    this.observableVisionCards = [
+      {
+        id: 'unselect',
+        text: this.labels.visionCards,
+        children: []
+      },
+      {
+        id: '0',
+        text: this.labels.visionCards,
+        children: []
+      },
+    ];
+
+    this.visionCards.forEach(visionCard => {
+      this.observableVisionCards[1].children.push({
+        id: visionCard.dataId.toString(),
+        text: visionCard.getName(this.translateService)
       });
-    });
 
-    for (let i = indexToRemove.length - 1; i >= 0; i--) {
-      this.families.splice(indexToRemove[i], 1);
-    }
+      let skills = ["unitBuffsClassic", "unitBuffsAwake", "unitBuffsMax", "partyBuffsClassic", "partyBuffsAwake", "partyBuffsMax"];
 
-    this.updateName();
-
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.updateName();
-    });
-  }
-
-  private updateName() {
-    this.families.forEach(family => {
-      family.units.forEach(unit => {
-        unit.name = unit.names[this.lang] ? unit.names[this.lang] : unit.names['en'];
-        unit.abilities.forEach(ability => {
-          ability.name = ability.names[this.lang] ? ability.names[this.lang] : ability.names['en'];
+      skills.forEach(skillType => {
+        visionCard[skillType].forEach(skill => {
+          skill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(visionCard, skill, effect);
+          });
         });
       });
     });
 
-    this.knownFamilies.forEach(family => {
-      family.units.forEach(unit => {
-        unit.name = unit.names[this.lang] ? unit.names[this.lang] : unit.names['en'];
-        unit.abilities.forEach(ability => {
-          ability.name = ability.names[this.lang] ? ability.names[this.lang] : ability.names['en'];
-        });
-      });
-    });
+    delete this.observableVisionCards[0].children;
+  }
+
+  selectVisionCard(visionCardId: string) {
+    this.idSelected = visionCardId;
+    this.visionCard = this.visionCardService.getVisionCard(visionCardId);
+
+    console.log(this.visionCard)
   }
 }
