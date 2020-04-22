@@ -1,0 +1,6114 @@
+{
+  "UN_LW_S_IFRT": {
+    "dataId": "UN_LW_S_IFRT",
+    "names": {
+      "en": "Ifrit"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Hellfire"
+        },
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "FIRE_ATK",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          },
+          {
+            "side": "TEAM",
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_SMN_IFRT",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 2,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 135,
+          "maxValue": 175,
+          "type": "magic"
+        },
+        "elem": [
+          "fire"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 91,
+        "max": 870
+      },
+      "TP": {
+        "min": 19,
+        "max": 32
+      },
+      "AP": {
+        "min": 26,
+        "max": 39
+      },
+      "ATK": {
+        "min": 35,
+        "max": 94
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 15,
+        "max": 35
+      },
+      "DEX": {
+        "min": 24,
+        "max": 51
+      },
+      "AGI": {
+        "min": 10,
+        "max": 14
+      },
+      "LUCK": {
+        "min": 29,
+        "max": 62
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {
+        "min": 10,
+        "max": 10
+      },
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "fire",
+    "image": "LAPSifrt"
+  },
+  "UN_LW_S_GLEM": {
+    "dataId": "UN_LW_S_GLEM",
+    "names": {
+      "en": "Golem"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Fragmental Rock"
+        },
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "EARTH_ATK",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          },
+          {
+            "side": "TEAM",
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_SMN_GLEM",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 2,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 135,
+          "maxValue": 175,
+          "type": "strike"
+        },
+        "elem": [
+          "earth"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DEF",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DEF",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 6,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DEF",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DEF",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 10,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 6,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 7,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DEF",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 94,
+        "max": 963
+      },
+      "TP": {
+        "min": 18,
+        "max": 32
+      },
+      "AP": {
+        "min": 22,
+        "max": 33
+      },
+      "ATK": {
+        "min": 33,
+        "max": 85
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 15,
+        "max": 33
+      },
+      "DEX": {
+        "min": 29,
+        "max": 61
+      },
+      "AGI": {
+        "min": 8,
+        "max": 10
+      },
+      "LUCK": {
+        "min": 30,
+        "max": 61
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {
+        "min": -5,
+        "max": -5
+      },
+      "LIGHTNING": {
+        "min": 10,
+        "max": 10
+      },
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "earth",
+    "image": "LAPSglem"
+  },
+  "UN_LW_S_SIRE": {
+    "dataId": "UN_LW_S_SIRE",
+    "names": {
+      "en": "Siren"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Lunatic Voice"
+        },
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "WATER_ATK",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          },
+          {
+            "side": "TEAM",
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_SMN_SIRE",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 2,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 135,
+          "maxValue": 175,
+          "type": "magic"
+        },
+        "elem": [
+          "water"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 6,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 7,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 7,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 84,
+        "max": 768
+      },
+      "TP": {
+        "min": 16,
+        "max": 29
+      },
+      "AP": {
+        "min": 16,
+        "max": 25
+      },
+      "ATK": {
+        "min": 17,
+        "max": 41
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 28,
+        "max": 67
+      },
+      "DEX": {
+        "min": 29,
+        "max": 63
+      },
+      "AGI": {
+        "min": 12,
+        "max": 18
+      },
+      "LUCK": {
+        "min": 27,
+        "max": 55
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {
+        "min": 10,
+        "max": 10
+      },
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "water",
+    "image": "LAPSsire"
+  },
+  "UN_LW_S_IGNT": {
+    "dataId": "UN_LW_S_IGNT",
+    "names": {
+      "en": "Iron Giant"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Reaper"
+        },
+        "effects": [],
+        "dataId": "SK_SMN_IGNT",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 0,
+          "l": 1,
+          "s": 10,
+          "w": 2
+        },
+        "aoe": {},
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "slash"
+        },
+        "elem": [
+          "light"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 87,
+        "max": 826
+      },
+      "TP": {
+        "min": 15,
+        "max": 25
+      },
+      "AP": {
+        "min": 20,
+        "max": 31
+      },
+      "ATK": {
+        "min": 29,
+        "max": 78
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 12,
+        "max": 28
+      },
+      "DEX": {
+        "min": 28,
+        "max": 60
+      },
+      "AGI": {
+        "min": 7,
+        "max": 9
+      },
+      "LUCK": {
+        "min": 28,
+        "max": 60
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {
+        "min": -10,
+        "max": -10
+      },
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "light",
+    "image": "LAPSignt"
+  },
+  "UN_LW_S_BHMT": {
+    "dataId": "UN_LW_S_BHMT",
+    "names": {
+      "en": "Behemoth"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Rampage"
+        },
+        "effects": [],
+        "dataId": "SK_SMN_BHMT",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {},
+        "aoe": {
+          "s": 2,
+          "l": 2,
+          "h": 0
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "strike"
+        },
+        "elem": [
+          "dark"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 84,
+        "max": 764
+      },
+      "TP": {
+        "min": 12,
+        "max": 21
+      },
+      "AP": {
+        "min": 20,
+        "max": 29
+      },
+      "ATK": {
+        "min": 29,
+        "max": 78
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 12,
+        "max": 28
+      },
+      "DEX": {
+        "min": 23,
+        "max": 51
+      },
+      "AGI": {
+        "min": 10,
+        "max": 15
+      },
+      "LUCK": {
+        "min": 29,
+        "max": 63
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "dark",
+    "image": "LAPSbhmt"
+  },
+  "UN_LW_S_MABR": {
+    "dataId": "UN_LW_S_MABR",
+    "names": {
+      "en": "Malboro"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Smelly Breath"
+        },
+        "effects": [
+          {
+            "type": "POISON",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "unknow",
+            "rate": 30,
+            "turn": 3
+          },
+          {
+            "type": "BLIND",
+            "minValue": 20,
+            "maxValue": 50,
+            "calcType": "percent",
+            "rate": 30,
+            "turn": 3
+          },
+          {
+            "type": "SLEEP",
+            "calcType": "percent",
+            "rate": 30,
+            "turn": 3
+          },
+          {
+            "type": "CONFUSION",
+            "calcType": "percent",
+            "rate": 30,
+            "turn": 3
+          },
+          {
+            "type": "SILENCE",
+            "calcType": "percent",
+            "rate": 30,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_SMN_MABR",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 0
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 0
+        }
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "value": 2,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 8,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 79,
+        "max": 755
+      },
+      "TP": {
+        "min": 10,
+        "max": 17
+      },
+      "AP": {
+        "min": 14,
+        "max": 21
+      },
+      "ATK": {
+        "min": 23,
+        "max": 57
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 10,
+        "max": 22
+      },
+      "DEX": {
+        "min": 31,
+        "max": 66
+      },
+      "AGI": {
+        "min": 9,
+        "max": 13
+      },
+      "LUCK": {
+        "min": 28,
+        "max": 60
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {
+        "min": -5,
+        "max": -5
+      },
+      "EARTH": {
+        "min": 5,
+        "max": 5
+      },
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "wind",
+    "image": "LAPSmabr"
+  },
+  "UN_LW_S_CACT": {
+    "dataId": "UN_LW_S_CACT",
+    "names": {
+      "en": "Cactuar"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "1,000 Needles"
+        },
+        "effects": [],
+        "dataId": "SK_SMN_CACT",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 1,
+          "l": 2,
+          "s": 1
+        },
+        "aoe": {},
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 1000,
+          "maxValue": 1000,
+          "type": "0"
+        },
+        "elem": [
+          "earth"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 66,
+        "max": 550
+      },
+      "TP": {
+        "min": 16,
+        "max": 34
+      },
+      "AP": {
+        "min": 19,
+        "max": 35
+      },
+      "ATK": {
+        "min": 10,
+        "max": 24
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 26,
+        "max": 70
+      },
+      "DEX": {
+        "min": 27,
+        "max": 59
+      },
+      "AGI": {
+        "min": 8,
+        "max": 11
+      },
+      "LUCK": {
+        "min": 32,
+        "max": 66
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {
+        "min": -15,
+        "max": -15
+      },
+      "LIGHTNING": {
+        "min": 5,
+        "max": 5
+      },
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "earth",
+    "image": "LAPScact"
+  },
+  "UN_LW_S_ARMN_01": {
+    "dataId": "UN_LW_S_ARMN_01",
+    "names": {
+      "en": "Floateye"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Gaze"
+        },
+        "effects": [
+          {
+            "type": "BRAVERY",
+            "minValue": -20,
+            "maxValue": -20,
+            "calcType": "fixe",
+            "rate": 30
+          }
+        ],
+        "dataId": "SK_SMN_ARMN",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1,
+          "line": 1
+        },
+        "aoe": {},
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 17,
+          "type": "strike"
+        },
+        "elem": [
+          "ice"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 2,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 2,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 2,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 8,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 6,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PARALYZE",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 75,
+        "max": 761
+      },
+      "TP": {
+        "min": 12,
+        "max": 21
+      },
+      "AP": {
+        "min": 14,
+        "max": 21
+      },
+      "ATK": {
+        "min": 23,
+        "max": 57
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 10,
+        "max": 23
+      },
+      "DEX": {
+        "min": 27,
+        "max": 57
+      },
+      "AGI": {
+        "min": 9,
+        "max": 14
+      },
+      "LUCK": {
+        "min": 28,
+        "max": 58
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {
+        "min": -15,
+        "max": -15
+      },
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {
+        "min": 5,
+        "max": 5
+      },
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "ice",
+    "image": "LAPSarmn"
+  },
+  "UN_LW_S_ZUUU": {
+    "dataId": "UN_LW_S_ZUUU",
+    "names": {
+      "en": "Zuu"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Great Whirlwind"
+        },
+        "effects": [],
+        "dataId": "SK_SMN_ZUUU",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {},
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 1
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "slash"
+        },
+        "elem": [
+          "wind"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 70,
+        "max": 680
+      },
+      "TP": {
+        "min": 12,
+        "max": 19
+      },
+      "AP": {
+        "min": 14,
+        "max": 21
+      },
+      "ATK": {
+        "min": 18,
+        "max": 45
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 8,
+        "max": 18
+      },
+      "DEX": {
+        "min": 22,
+        "max": 49
+      },
+      "AGI": {
+        "min": 9,
+        "max": 14
+      },
+      "LUCK": {
+        "min": 29,
+        "max": 61
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {
+        "min": -15,
+        "max": -15
+      },
+      "EARTH": {
+        "min": 5,
+        "max": 5
+      },
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "wind",
+    "image": "LAPSzuuu"
+  },
+  "UN_LW_S_OGRE": {
+    "dataId": "UN_LW_S_OGRE",
+    "names": {
+      "en": "Ogre"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Hurl"
+        },
+        "effects": [],
+        "dataId": "SK_SMN_OGRE",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1,
+          "line": 1
+        },
+        "aoe": {},
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "strike"
+        },
+        "elem": [
+          "lightning"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 72,
+        "max": 713
+      },
+      "TP": {
+        "min": 12,
+        "max": 21
+      },
+      "AP": {
+        "min": 17,
+        "max": 25
+      },
+      "ATK": {
+        "min": 19,
+        "max": 48
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 7,
+        "max": 17
+      },
+      "DEX": {
+        "min": 22,
+        "max": 49
+      },
+      "AGI": {
+        "min": 8,
+        "max": 11
+      },
+      "LUCK": {
+        "min": 27,
+        "max": 57
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {
+        "min": -15,
+        "max": -15
+      },
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {
+        "min": 5,
+        "max": 5
+      },
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "lightning",
+    "image": "LAPSogre"
+  },
+  "UN_LW_S_BOMB": {
+    "dataId": "UN_LW_S_BOMB",
+    "names": {
+      "en": "Bomb"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Self-Destruct"
+        },
+        "effects": [],
+        "dataId": "SK_SMN_BOMB",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {},
+        "aoe": {
+          "s": 1,
+          "l": 3,
+          "h": 1
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {
+          "rate": -1
+        },
+        "damage": {
+          "minValue": 200,
+          "maxValue": 230,
+          "type": "strike"
+        },
+        "elem": [
+          "fire"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MISSILE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "CRITIC_EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "WATER_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 69,
+        "max": 657
+      },
+      "TP": {
+        "min": 12,
+        "max": 20
+      },
+      "AP": {
+        "min": 11,
+        "max": 17
+      },
+      "ATK": {
+        "min": 23,
+        "max": 57
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 10,
+        "max": 22
+      },
+      "DEX": {
+        "min": 27,
+        "max": 58
+      },
+      "AGI": {
+        "min": 8,
+        "max": 11
+      },
+      "LUCK": {
+        "min": 23,
+        "max": 51
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {
+        "min": 5,
+        "max": 5
+      },
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {
+        "min": -15,
+        "max": -15
+      },
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "fire",
+    "image": "LAPSbomb"
+  },
+  "UN_LW_S_SHIV": {
+    "dataId": "UN_LW_S_SHIV",
+    "names": {
+      "en": "Shiva"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Diamond Dust"
+        },
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "ICE_ATK",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          },
+          {
+            "side": "TEAM",
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_SMN_SHIV",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 2,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 135,
+          "maxValue": 175,
+          "type": "magic"
+        },
+        "elem": [
+          "ice"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "STRIKE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 90,
+        "max": 823
+      },
+      "TP": {
+        "min": 20,
+        "max": 36
+      },
+      "AP": {
+        "min": 27,
+        "max": 42
+      },
+      "ATK": {
+        "min": 15,
+        "max": 36
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 34,
+        "max": 81
+      },
+      "DEX": {
+        "min": 29,
+        "max": 63
+      },
+      "AGI": {
+        "min": 12,
+        "max": 18
+      },
+      "LUCK": {
+        "min": 27,
+        "max": 55
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {
+        "min": -10,
+        "max": -10
+      },
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "ice",
+    "image": "LAPSshiv"
+  },
+  "UN_LW_S_RAMU": {
+    "dataId": "UN_LW_S_RAMU",
+    "names": {
+      "en": "Ramuh"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": "Judgment Bolt"
+        },
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "LIGHTNING_ATK",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          },
+          {
+            "side": "TEAM",
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_SMN_RAMU",
+        "slot": 5,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 2,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "hit": 100,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 135,
+          "maxValue": 175,
+          "type": "magic"
+        },
+        "elem": [
+          "lightning"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 2,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVADE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 3,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 5,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 3,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 1,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 6,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 4,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 5,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EARTH_ATK",
+            "value": 4,
+            "calcType": "resistance"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "EVOCATION_MAGIC",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 90,
+        "max": 835
+      },
+      "TP": {
+        "min": 21,
+        "max": 40
+      },
+      "AP": {
+        "min": 28,
+        "max": 43
+      },
+      "ATK": {
+        "min": 14,
+        "max": 33
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 34,
+        "max": 91
+      },
+      "DEX": {
+        "min": 23,
+        "max": 49
+      },
+      "AGI": {
+        "min": 10,
+        "max": 14
+      },
+      "LUCK": {
+        "min": 30,
+        "max": 64
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {
+        "min": -10,
+        "max": -10
+      },
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {},
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {},
+      "MAGIC": {},
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "element": "lightning",
+    "image": "LAPSramu"
+  }
+}

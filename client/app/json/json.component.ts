@@ -14,9 +14,13 @@ export class JsonComponent implements OnInit {
   visionCards = [];
   visionCardIds = [];
 
+  espers = [];
+  esperIds = [];
+
   isCollapsed = {
     units: [],
-    visionCards: []
+    visionCards: [],
+    espers: []
   };
 
   constructor(private jsonService: JsonService) {}
@@ -37,6 +41,14 @@ export class JsonComponent implements OnInit {
 
       for (let i = 0; i < this.visionCardIds.length; i++) {
         this.isCollapsed.visionCards[i] = true;
+      }
+
+      // @ts-ignore
+      this.espers = response.espers;
+      this.esperIds = Object.keys(this.espers)
+
+      for (let i = 0; i < this.esperIds.length; i++) {
+        this.isCollapsed.espers[i] = true;
       }
     });
   }

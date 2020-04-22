@@ -14,6 +14,14 @@
 <br />
 
 
+### Raw Espers ###
+<div>
+  <textarea id="rawJson">{{ espers | json }}</textarea>
+</div>
+
+<br />
+
+
 ### Units ###
 <div *ngFor="let unitId of unitIds; let j = index">
   {{j}} -- {{units[unitId].names.en}}
@@ -34,5 +42,17 @@
   </button>
   <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.visionCards[j]">
     <pre [innerHtml]="visionCards[visionCardId] | prettyjson"></pre>
+  </div>
+</div>
+
+
+### Espers ###
+<div *ngFor="let esperId of esperIds; let j = index">
+  {{j}} -- {{espers[esperId].names.en}}
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.espers[j] = !isCollapsed.espers[j]" [attr.aria-expanded]="!isCollapsed.espers[j]">
+    Toggle
+  </button>
+  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.espers[j]">
+    <pre [innerHtml]="espers[esperId] | prettyjson"></pre>
   </div>
 </div>

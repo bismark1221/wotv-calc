@@ -6,6 +6,7 @@ import { UnitService } from './unit.service'
 export class JsonService {
   wotvUnits = {};
   wotvVisionCards = {};
+  wotvEspers = {};
 
   units = {};
   skills = {};
@@ -14,6 +15,8 @@ export class JsonService {
   boards = {};
   jobs = {};
   visionCards = {};
+  weathers = {};
+  espersBoards = {};
 
   names = {
     skill: {},
@@ -131,6 +134,7 @@ export class JsonService {
     156: "EVADE",
     157: "CRITIC_DAMAGE",
     158: "CRITIC_RATE",
+    159: "CRITIC_EVADE",
     180: "PROVOKE",
     181: "BRAVERY",
     182: "FAITH",
@@ -145,7 +149,8 @@ export class JsonService {
     300: "BUFFS_DURATION",
     301: "DEBUFFS_DURATION",
     310: "ATTACK_RES",
-    311: "AOE_RES"
+    311: "AOE_RES",
+    313: "EVOCATION_MAGIC"
   }
 
   killers = {
@@ -247,6 +252,58 @@ export class JsonService {
       "hp": "HP",
       "atk": "ATK",
       "mag": "MAG"
+    },
+    esper: {
+      "hp": "HP",
+      "mp": "TP",
+      "ap": "AP",
+      "atk": "ATK",
+      "def": "DEF",
+      "mnd": "SPR",
+      "mag": "MAG",
+      "dex": "DEX",
+      "spd": "AGI",
+      "luk": "LUCK",
+      "iniap": "INITIAL_AP",
+
+      "hit" : "ACCURACY",
+      "crt" : "CRITIC_RATE",
+      "crta": "CRITIC_AVOID",
+      "avd" : "EVADE",
+
+      "efi": "FIRE",
+      "eic": "ICE",
+      "eea": "EARTH",
+      "ewi": "WIND",
+      "eth": "LIGHTNING",
+      "ewa": "WATER",
+      "esh": "LIGHT",
+      "eda": "DARK",
+
+      "asl": "SLASH",
+      "api": "PIERCE",
+      "abl": "STRIKE",
+      "ash": "MISSILE",
+      "ama": "MAGIC",
+
+      "cpo": "POISON",
+      "cbl": "BLIND",
+      "csl": "SLEEP",
+      "cmu": "SILENCE",
+      "cpa": "PARALYZE",
+      "ccf": "CONFUSION",
+      "cpe": "PETRIFY",
+      "cfr": "TOAD",
+      "cch": "CHARM",
+      "csw": "SLOW",
+      "cst": "STOP",
+      "cdm": "IMMOBILIZE",
+      "cda": "DISABLE",
+      "cbe": "BERSERK",
+      "cdo": "DOOM",
+
+      "mov": "MOVE",
+      "jmp": "JUMP"
     }
   }
 
@@ -316,6 +373,14 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/VisionCard.json').toPromise();
   }
 
+  private jsonEspersBoards() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NetherBeastAbilityBoard.json').toPromise();
+  }
+
+  private jsonWeathers() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Weather.json').toPromise();
+  }
+
 
   /* Translation */
   private jsonUnitNames() {
@@ -358,7 +423,9 @@ export class JsonService {
       this.jsonEquipments(),
       this.jsonEquipmentNames(),
       this.jsonVisionCards(),
-      this.jsonVisionCardNames()
+      this.jsonVisionCardNames(),
+      this.jsonEspersBoards(),
+      this.jsonWeathers()
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
       this.names.unit = this.formatNames(responses[1]);
@@ -373,18 +440,15 @@ export class JsonService {
       this.names.equipment = this.formatNames(responses[10]);
       this.visionCards = this.formatJson(responses[11]);
       this.names.visionCard = this.formatNames(responses[12]);
-
-
-      //console.log(this.units)
-      //console.log(this.names)
-
+      this.espersBoards = this.formatJson(responses[13]);
+      this.weathers = this.formatJson(responses[14]);
 
       this.formatJsons();
 
-
       return {
         units: this.wotvUnits,
-        visionCards: this.wotvVisionCards
+        visionCards: this.wotvVisionCards,
+        espers: this.wotvEspers
       };
     });
   }
@@ -409,7 +473,13 @@ export class JsonService {
 
   private formatJsons() {
     Object.keys(this.units).forEach(unitId => {
-      this.addUnit(this.units[unitId]);
+      if (this.units[unitId].type === 0) {
+        this.addUnit(this.units[unitId]);
+      }
+
+      if (this.units[unitId].type === 1) {
+        this.addEsper(this.units[unitId]);
+      }
     });
 
     Object.keys(this.visionCards).forEach(visionCardId => {
@@ -419,30 +489,27 @@ export class JsonService {
 
   private addUnit(unit) {
     let dataId = unit.iname;
+    this.wotvUnits[dataId] = {
+      dataId: dataId,
+      names: {},
+      rarity: this.rarity[unit.rare],
+      jobs: [{}, {}, {}],
+      skills: [],
+      buffs: [],
+      stats: {},
+      element: this.elements[unit.elem[0]],
+      image: unit.charaId
+    };
 
-    if (unit.type === 0) {
-      this.wotvUnits[dataId] = {
-        dataId: dataId,
-        names: {},
-        rarity: this.rarity[unit.rare],
-        jobs: [{}, {}, {}],
-        skills: [],
-        buffs: [],
-        stats: {},
-        element: this.elements[unit.elem[0]],
-        image: unit.charaId
-      };
+    this.getNames(this.wotvUnits[dataId], 'unit');
+    this.getJobNames(this.wotvUnits[dataId], unit.jobsets);
 
-      this.getNames(this.wotvUnits[dataId], 'unit');
-      this.getJobNames(this.wotvUnits[dataId], unit.jobsets);
-
-      this.getStats(this.wotvUnits[dataId], unit.status, 'unit')
-      this.getJobsStats(this.wotvUnits[dataId], unit.jobsets)
-      this.getLB(this.wotvUnits[dataId], unit.limit)
-      this.getMasterSkill(this.wotvUnits[dataId], unit.mstskl)
-      this.getTMR(this.wotvUnits[dataId], unit.trust)
-      this.getSkillsAndBuffs(this.wotvUnits[dataId]);
-    }
+    this.getStats(this.wotvUnits[dataId], unit.status, 'unit')
+    this.getJobsStats(this.wotvUnits[dataId], unit.jobsets)
+    this.getLB(this.wotvUnits[dataId], unit.limit)
+    this.getMasterSkill(this.wotvUnits[dataId], unit.mstskl)
+    this.getTMR(this.wotvUnits[dataId], unit.trust)
+    this.getSkillsAndBuffs(this.wotvUnits[dataId]);
   }
 
   private addVisionCard(visionCard) {
@@ -549,6 +616,7 @@ export class JsonService {
 
         if (!this.buffTypes[this.buffs[panelBuff.value]["type" + i]]) {
           console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this.buffs[panelBuff.value]["type" + i])
+          console.log(this.buffs[panelBuff.value])
         }
 
         buff.effects.push({
@@ -585,6 +653,10 @@ export class JsonService {
     };
 
     this.updateSkill(unit, skill, panelSkill.value);
+
+    if (this.skills[panelSkill.value].wth) {
+      this.addWeather(unit, skill, this.skills[panelSkill.value].wth.id);
+    }
 
     unit[type].push(skill);
   }
@@ -858,4 +930,85 @@ export class JsonService {
     }
   }
 
+  private addEsper(esper) {
+    let dataId = esper.iname;
+    this.wotvEspers[dataId] = {
+      dataId: dataId,
+      names: {},
+      rarity: this.rarity[esper.rare],
+      skills: [],
+      buffs: [],
+      stats: {},
+      element: this.elements[esper.elem[0]],
+      image: esper.charaId
+    };
+
+    this.getNames(this.wotvEspers[dataId], 'unit');
+
+    this.getEsperStats(esper, 'esper')
+    this.getEspersSkillsAndBuffs(this.wotvEspers[dataId]);
+
+    this.addSkill(this.wotvEspers[dataId], {slot: 3, value: esper.atkskl});
+  }
+
+  private getEsperStats(esper, type) {
+    let maxUnit = esper;
+    while (maxUnit.nb_awake_id) {
+      maxUnit = this.units[maxUnit.nb_awake_id[0]]
+    }
+
+    Object.keys(this.stats[type]).forEach(stat => {
+      this.wotvEspers[esper.iname].stats[this.stats[type][stat]] = {
+        min: esper.status[0][stat],
+        max: maxUnit.status[1][stat]
+      }
+    })
+  }
+
+  private getEspersSkillsAndBuffs(esper) {
+    if (this.espersBoards[esper.dataId]) {
+      this.espersBoards[esper.dataId].panels.forEach(item => {
+        this.addPassiveBuff(esper, item)
+      });
+    }
+  }
+
+  private addWeather(unit, skill, weatherId) {
+    this.weathers[weatherId].buffs.forEach(buff => {
+      let weatherFinished = false;
+      let j = 1;
+      while (!weatherFinished) {
+        if (buff["buff" + j]) {
+          let finished = false;
+          let i = 1;
+          while (!finished) {
+            if (this.buffs[buff["buff" + j]]["type" + i]) {
+
+              if (!this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]]) {
+                console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this.buffs[buff["buff" + j]]["type" + i])
+                console.log(this.buffs[buff["buff" + j]])
+              }
+
+              skill.effects.push({
+                side: buff.side === 1 ? "TEAM" : "ENNEMIES",
+                type: this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]],
+                minValue: this.buffs[buff["buff" + j]]["val" + i],
+                maxValue: this.buffs[buff["buff" + j]]["val" + i + "1"],
+                calcType: this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] : "unknow"
+              });
+              i++;
+            } else {
+              finished = true;
+            }
+          }
+          j++;
+        } else {
+          weatherFinished = true;
+        }
+      }
+    });
+  }
+
+  // Sterne : passif loose HP
+  // Orlandeau : absorb damage
 }
