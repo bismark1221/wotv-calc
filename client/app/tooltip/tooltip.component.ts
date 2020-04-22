@@ -94,6 +94,7 @@ export class TooltipComponent {
     } else {
       this.active = false;
     }
+
     return this.elRef;
   }
 
@@ -125,6 +126,11 @@ export class TooltipComponent {
       Math.min((tooltipEl.offsetWidth / 2) - 10, targetX - adjustedX),
       -(tooltipEl.offsetWidth / 2) + 10
     );
+
+    console.log(window.innerWidth)
+    console.log(tooltipEl.offsetWidth)
+    console.log(adjustedX)
+
     return {
       left: adjustedX,
       top: relDimensions[1] - tooltipDimensions[1],

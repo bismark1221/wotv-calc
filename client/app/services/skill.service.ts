@@ -583,8 +583,18 @@ export class SkillService {
       if (maxLine !== middle) {
         skillTable[middle][middle] = "U" + skillTable[middle][middle];
       }
+
+      let html = "<table class='table-skill'>"
+      skillTable.forEach(line => {
+        html += "<tr>"
+        line.forEach(col => {
+          html += "<td class='table-skill-" + col + "'></td>"
+        })
+        html += "</tr>"
+      })
+      html += "</table>"
       
-      skill.skillTable = skillTable;
+      skill.skillTableHtml = html;
     }
   }
 }

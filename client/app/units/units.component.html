@@ -90,13 +90,7 @@
           </div>
         </td>
         <td *ngIf="unit.tmr.skills[0].type == 'active'">
-          <table *ngIf="unit.tmr.skills[0].skillTable" class="table-skill">
-            <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
-              <td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" class="table-skill-{{ unit.tmr.skills[0].skillTable[i][j] }}">
-                
-              </td>
-            </tr>
-          </table>
+          <div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
         </td>
         <td *ngIf="unit.tmr.skills[0].type == 'active'">
           {{ unit.tmr.skills[0].count }}
@@ -346,6 +340,23 @@
   </table>
 </div>
 
+<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+  <table>
+    <tbody>
+      <tr>
+        <th>Master Ability</th>
+      </tr>
+      <tr>
+        <td>
+          <div *ngFor="let effect of unit.masterSkill.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <div *ngIf="idSelected !== 'unselect'">
   <div class="row littleMarginTop" *ngFor="let i of [0, 1, 2, 3]">
     <table>
@@ -378,13 +389,9 @@
             </div>
           </td>
           <td>
-            <table *ngIf="skill.skillTable" class="table-skill">
-              <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
-                <td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" class="table-skill-{{ skill.skillTable[i][j] }}">
-                  
-                </td>
-              </tr>
-            </table>
+            <span id="tool_{{skill.dataId}}"></span>
+            <div tooltip="test"parentSelector="#tool_{{skill.dataId}}">test</div>
+            <div [innerHTML]="skill.skillTableHtml"></div>
           </td>
           <td>{{ skill.count }}</td>
           <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
@@ -398,22 +405,6 @@
 
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th>Master Ability</th>
-      </tr>
-      <tr>
-        <td>
-          <div *ngFor="let effect of unit.masterSkill.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect' && unit.limit">
@@ -438,13 +429,7 @@
           </div>
         </td>
         <td>
-          <table *ngIf="unit.limit.skillTable" class="table-skill">
-            <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
-              <td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" class="table-skill-{{ unit.limit.skillTable[i][j] }}">
-                
-              </td>
-            </tr>
-          </table>
+          <div [innerHTML]="unit.limit.skillTableHtml"></div>
         </td>
         <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
         <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>

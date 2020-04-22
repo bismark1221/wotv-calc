@@ -21,48 +21,7 @@ td {
 }
 
 
-.table-skill {
-  border-collapse: collapse;
-  width: 206px;
-  height: 206px;
-}
 
-.table-skill td {
-  content: ' ';
-  padding: 0;
-  margin: 0;
-  width: 12px;
-  height: 13px;
-  background-color: #635b52;
-}
-
-/*.table-skill-T {
-  background: url("assets/range/T.png") 0px 0px no-repeat;
-}*/
-
-.table-skill-UN {
-  background: url("assets/range/U.png") 0px 0px no-repeat;
-}
-
-.table-skill-UR {
-  background: url("assets/range/UR.png") 0px 0px no-repeat;
-}
-
-.table-skill-R {
-  background: url("assets/range/R.png") 0px 0px no-repeat;
-}
-
-.table-skill-AR {
-  background: url("assets/range/AR.png") 0px 0px no-repeat;
-}
-
-.table-skill-TAR {
-  background: url("assets/range/TAR.png") 0px 0px no-repeat;
-}
-
-.table-skill-A {
-  background: url("assets/range/A.png") 0px 0px no-repeat;
-}
 
 
 
