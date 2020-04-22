@@ -72380,6 +72380,4718 @@
       "image": "LAPSwpn_acc_011"
     }
   },
+  "UN_FFT_P_RAMZ": {
+    "dataId": "UN_FFT_P_RAMZ",
+    "names": {
+      "en": "Ramza"
+    },
+    "rarity": "UR",
+    "jobs": [
+      {
+        "en": "Squire"
+      },
+      {
+        "en": "Spellblade"
+      },
+      {
+        "en": "Ninja"
+      }
+    ],
+    "skills": [
+      {
+        "unlockStar": null,
+        "unlockJob": 1,
+        "names": {
+          "en": "Shimmering Blade"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_RAMZ_S_3",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 14
+        },
+        "type": "active",
+        "count": 4,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 30,
+          "maxValue": 60,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": null,
+        "unlockJob": 1,
+        "names": {
+          "en": "Chant"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 180,
+            "maxValue": 210,
+            "calcType": "unknow"
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_S_2",
+        "slot": 1,
+        "cost": {
+          "type": "TP",
+          "value": 16
+        },
+        "type": "active",
+        "count": 6,
+        "range": {
+          "h": 2,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Providence of Darkness"
+        },
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "minValue": 5,
+            "maxValue": 12,
+            "calcType": "resistance"
+          },
+          {
+            "type": "DARK_ATK",
+            "minValue": 5,
+            "maxValue": 12,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_LW_MGK_DARK_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Acquired JP Up"
+        },
+        "effects": [
+          {
+            "type": "ACQUIRED_JP",
+            "minValue": 50,
+            "maxValue": 100,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "names": {
+          "en": "Move +1"
+        },
+        "effects": [
+          {
+            "type": "MOVE",
+            "minValue": 1,
+            "maxValue": 1,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_P_2",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Stone Throw"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_RAMZ_S_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 5
+        },
+        "type": "active",
+        "count": 99,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "mh": 6,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {
+          "rate": -1
+        },
+        "damage": {
+          "minValue": -95,
+          "maxValue": -87,
+          "type": "missile"
+        }
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Bio Blade"
+        },
+        "effects": [
+          {
+            "type": "POISON",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "unknow",
+            "rate": 25,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_MGK_M_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 24
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 40,
+          "maxValue": 75,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Counter Tackle"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_RAMZ_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "ALL",
+          "calcType": "percent"
+        },
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "strike"
+        }
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "names": {
+          "en": "Tailwind"
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 5,
+            "maxValue": 20,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_S_5",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 4,
+        "range": {
+          "h": 2,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Steel"
+        },
+        "effects": [
+          {
+            "type": "BRAVERY",
+            "minValue": 4,
+            "maxValue": 10,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_S_4",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 1,
+        "range": {
+          "h": 2,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "names": {
+          "en": "Resist Magic"
+        },
+        "effects": [
+          {
+            "type": "MAGIC_ATK",
+            "minValue": 18,
+            "maxValue": 38,
+            "calcType": "resistance",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_MGK_S_3",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 35
+        },
+        "type": "active",
+        "count": 3,
+        "range": {},
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 0
+        },
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Hide"
+        },
+        "effects": [
+          {
+            "type": "PROVOKE",
+            "minValue": -20,
+            "maxValue": -43,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_NIN_S_2",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 24
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Banish Blade"
+        },
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
+        "dataId": "SK_LW_MGK_SHIN_S_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 8,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 5,
+          "maxValue": 31,
+          "type": "slash"
+        },
+        "elem": [
+          "light"
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "names": {
+          "en": "Magic Guard"
+        },
+        "effects": [],
+        "dataId": "SK_LW_MGK_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "MAGIC",
+          "calcType": "percent"
+        }
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Shadow Runner"
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 3,
+            "maxValue": 12,
+            "calcType": "percent"
+          },
+          {
+            "type": "LCK",
+            "minValue": 5,
+            "maxValue": 12,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_LW_NIN_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Shuriken"
+        },
+        "effects": [],
+        "dataId": "SK_LW_NIN_S_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 8,
+        "range": {
+          "h": 1,
+          "l": 5,
+          "s": 1,
+          "line": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Poison Mist"
+        },
+        "effects": [
+          {
+            "type": "POISON",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "unknow",
+            "rate": 50,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_NIN_M_3",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 30
+        },
+        "type": "active",
+        "count": 4,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 1,
+          "l": 2,
+          "h": 1
+        },
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 12,
+        "names": {
+          "en": "Shout"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "MAG",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "BRAVERY",
+            "minValue": 5,
+            "maxValue": 20,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_M_3",
+        "slot": 1,
+        "cost": {
+          "type": "TP",
+          "value": 36
+        },
+        "type": "active",
+        "count": 3,
+        "range": {},
+        "aoe": {
+          "s": 1,
+          "l": 3,
+          "h": 1
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 0,
+          "type": "0"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Koton"
+        },
+        "effects": [],
+        "dataId": "SK_LW_NIN_SHIN_M_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 17
+        },
+        "type": "active",
+        "count": 4,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 30,
+          "maxValue": 65,
+          "type": "0"
+        },
+        "elem": [
+          "light"
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "names": {
+          "en": "Double Break"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": -5,
+            "maxValue": -25,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "MAG",
+            "minValue": -5,
+            "maxValue": -25,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_RAMZ_M_2",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 26
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 75,
+          "maxValue": 110,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "names": {
+          "en": "Taunting Spell"
+        },
+        "effects": [
+          {
+            "type": "PROVOKE",
+            "minValue": 25,
+            "maxValue": 47,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_MGK_S_2",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 18
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 12,
+        "names": {
+          "en": "Utsusemi"
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 30,
+            "maxValue": 60,
+            "calcType": "fixe",
+            "turn": 1
+          }
+        ],
+        "dataId": "SK_LW_NIN_M_2_SUB",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 24
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "names": {
+          "en": "Triple Blow"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_RAMZ_M_1",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {
+          "num": 3,
+          "rate": 77
+        },
+        "knockback": {},
+        "damage": {
+          "minValue": 46,
+          "maxValue": 76,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Decider of Fate"
+        },
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 30,
+            "maxValue": 60,
+            "calcType": "fixe",
+            "rate": 200,
+            "turn": 1
+          },
+          {
+            "type": "CRITIC_GUARENTED",
+            "calcType": "percent",
+            "rate": 200,
+            "turn": 1
+          }
+        ],
+        "dataId": "SK_LW_NIN_S_4",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Poison Barb"
+        },
+        "effects": [
+          {
+            "type": "POISON",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "unknow",
+            "rate": 50,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_NIN_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 30,
+          "maxValue": 50,
+          "reactDamage": "ALL",
+          "calcType": "percent"
+        }
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 12,
+        "names": {
+          "en": "Banishga Blade"
+        },
+        "effects": [
+          {
+            "type": "DARK_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
+        "dataId": "SK_LW_MGK_SHIN_M_4_SUB",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 22
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 2,
+          "s": 10
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 70,
+          "maxValue": 105,
+          "type": "slash"
+        },
+        "elem": [
+          "light"
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Shukuchi"
+        },
+        "effects": [
+          {
+            "type": "MOVE",
+            "minValue": 1,
+            "maxValue": 1,
+            "calcType": "fixe"
+          },
+          {
+            "type": "JUMP",
+            "minValue": 1,
+            "maxValue": 1,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_LW_NIN_P_2",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 15,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 15,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 15,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 15,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 60,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 60,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "jp": 60,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 60,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 60,
+        "effects": [
+          {
+            "type": "SPR",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 15,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "AGI",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "TP",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 40,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "SPR",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "SPR",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "AGI",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "AGI",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 225,
+        "effects": [
+          {
+            "type": "MAG",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 266,
+        "max": 982
+      },
+      "TP": {
+        "min": 58,
+        "max": 90
+      },
+      "AP": {
+        "min": 69,
+        "max": 84
+      },
+      "ATK": {
+        "min": 96,
+        "max": 162
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 86,
+        "max": 144
+      },
+      "DEX": {
+        "min": 64,
+        "max": 96
+      },
+      "AGI": {
+        "min": 28,
+        "max": 32
+      },
+      "LUCK": {
+        "min": 65,
+        "max": 91
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {},
+      "DARK": {
+        "min": -10,
+        "max": -10
+      },
+      "SLASH": {
+        "min": 15,
+        "max": 15
+      },
+      "PIERCE": {},
+      "STRIKE": {
+        "min": 15,
+        "max": 15
+      },
+      "MISSILE": {
+        "min": 15,
+        "max": 15
+      },
+      "MAGIC": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON": {},
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {
+        "min": 50,
+        "max": 50
+      },
+      "PARALYZE": {},
+      "CONFUSION": {
+        "min": 10,
+        "max": 10
+      },
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {
+        "min": 50,
+        "max": 50
+      },
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {},
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "element": "light",
+    "image": "FFT0ramz",
+    "equipments": [
+      "SWORD",
+      "ARMOR",
+      "HAT",
+      "HELM",
+      "CLOTH",
+      "ACC"
+    ],
+    "limit": {
+      "names": {
+        "en": "Ultima"
+      },
+      "effects": [],
+      "dataId": "SK_LB_FFT_RAMZ",
+      "slot": 6,
+      "cost": {
+        "type": "AP",
+        "value": 49
+      },
+      "type": "active",
+      "count": 1,
+      "range": {
+        "h": 1,
+        "l": 4,
+        "s": 1
+      },
+      "aoe": {
+        "s": 0,
+        "l": 1,
+        "h": 1
+      },
+      "hit": 100,
+      "combo": {},
+      "knockback": {},
+      "damage": {
+        "minValue": 65,
+        "maxValue": 100,
+        "type": "magic"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "HP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_MA_FFT_RAMZ",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
+    "tmr": {
+      "names": {
+        "en": "Ramza's Outfit"
+      },
+      "stats": {
+        "HP": 422,
+        "DEF": 8,
+        "CRITIC_AVOID": 12
+      },
+      "type": "CLOTH",
+      "inmae": "AF_ARM_FFT_RAMZ_1",
+      "skills": [
+        {
+          "names": {
+            "en": "Entrust"
+          },
+          "dataId": "SK_ARM_FFT_RAMZ_1_1",
+          "effects": [
+            {
+              "type": "TP",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "unknow"
+            }
+          ],
+          "slot": 1,
+          "cost": {
+            "type": "TP",
+            "value": 20
+          },
+          "type": "active",
+          "count": 1,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "aoe": {},
+          "combo": {},
+          "knockback": {}
+        }
+      ],
+      "image": "FFTwpn_acc_001"
+    }
+  },
+  "UN_FFT_P_GFGR": {
+    "dataId": "UN_FFT_P_GFGR",
+    "names": {
+      "en": "Gaffgarion"
+    },
+    "rarity": "MR",
+    "jobs": [
+      {
+        "en": "Fell Knight"
+      },
+      {
+        "en": "Warrior"
+      },
+      {
+        "en": "Monk"
+      }
+    ],
+    "skills": [
+      {
+        "unlockStar": null,
+        "unlockJob": 1,
+        "names": {
+          "en": "Crushing Blow"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_GFGR_S_1",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 8,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": null,
+        "unlockJob": 1,
+        "names": {
+          "en": "Duskblade"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_GFGR_S_2",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 30
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -80,
+          "maxValue": -60,
+          "pool": "TP"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "ATK Up Lv. 1"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 5,
+            "maxValue": 20,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_LW_WAR_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Self-Sacrifice"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 30,
+            "maxValue": 60,
+            "calcType": "percent"
+          },
+          {
+            "type": "SLASH_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "STRIKE_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "PIERCE_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "MISSILE_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "MAGIC_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_FFT_GFGR_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "names": {
+          "en": "Sellsword's Pride"
+        },
+        "effects": [
+          {
+            "type": "CONFUSION",
+            "minValue": 5,
+            "maxValue": 25,
+            "calcType": "resistance"
+          },
+          {
+            "type": "CHARM",
+            "minValue": 5,
+            "maxValue": 25,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_FFT_GFGR_P_2",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Traitorous Blade"
+        },
+        "effects": [
+          {
+            "type": "CRITIC_GUARENTED",
+            "calcType": "percent",
+            "rate": 200
+          }
+        ],
+        "dataId": "SK_FFT_GFGR_S_3",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 16
+        },
+        "type": "active",
+        "count": 4,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 40,
+          "maxValue": 70,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Discipline"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 40,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_WAR_M_2",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 15
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 0,
+          "type": "0"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Knavish Mercenary"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_GFGR_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {
+          "h": 2,
+          "l": 2,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "ALL",
+          "calcType": "percent"
+        },
+        "damage": {
+          "minValue": -85,
+          "maxValue": -50,
+          "pool": "HP"
+        }
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "names": {
+          "en": "Unholy Sacrifice"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_GFGR_S_5",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 38
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {
+          "s": 1,
+          "l": 2,
+          "h": 1
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 100,
+          "maxValue": 135,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Field Lore"
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_GFGR_S_4",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 16
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "names": {
+          "en": "Body Slam"
+        },
+        "effects": [],
+        "dataId": "SK_LW_WAR_S_2",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 15
+        },
+        "type": "active",
+        "count": 5,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 40,
+          "maxValue": 75,
+          "type": "strike"
+        }
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Store"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 100,
+            "maxValue": 150,
+            "calcType": "percent",
+            "turn": 1
+          }
+        ],
+        "dataId": "SK_LW_MNK_S_2",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "type": "0"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Stone Throw"
+        },
+        "effects": [],
+        "dataId": "SK_LW_WAR_S_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 5
+        },
+        "type": "active",
+        "count": 99,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "mh": 6,
+          "s": 1,
+          "line": 2
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -95,
+          "maxValue": -87,
+          "type": "missile"
+        }
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "names": {
+          "en": "Counter Attack"
+        },
+        "effects": [],
+        "dataId": "SK_LW_WAR_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
+        },
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Strike Mastery"
+        },
+        "effects": [
+          {
+            "type": "PIERCE_ATK",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_LW_MNK_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Pummel"
+        },
+        "effects": [],
+        "dataId": "SK_LW_MNK_M_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 15
+        },
+        "type": "active",
+        "count": 5,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {
+          "num": 2,
+          "rate": 59
+        },
+        "knockback": {},
+        "damage": {
+          "minValue": 7,
+          "maxValue": 33,
+          "type": "strike"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 12,
+        "names": {
+          "en": "Abyssal Blade"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_GFGR_M_3",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 29
+        },
+        "type": "active",
+        "count": 2,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 1
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 90,
+          "maxValue": 125,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Terra Slash"
+        },
+        "effects": [],
+        "dataId": "SK_LW_MNK_M_4",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 30
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 4,
+          "s": 10
+        },
+        "aoe": {},
+        "pierce": 1,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 30,
+          "maxValue": 65,
+          "type": "strike"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "names": {
+          "en": "Deception"
+        },
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "rate": 200,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_GFGR_M_2",
+        "slot": 1,
+        "cost": {
+          "type": "TP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "names": {
+          "en": "Treatment"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 90,
+            "maxValue": 120,
+            "calcType": "unknow"
+          }
+        ],
+        "dataId": "SK_LW_WAR_M_3",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 24
+        },
+        "type": "active",
+        "count": 3,
+        "range": {},
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 0
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 0,
+          "type": "0"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 12,
+        "names": {
+          "en": "Purification"
+        },
+        "effects": [
+          {
+            "type": "POISON",
+            "calcType": "dispel"
+          },
+          {
+            "type": "BLIND",
+            "calcType": "dispel"
+          },
+          {
+            "type": "SLEEP",
+            "calcType": "dispel"
+          },
+          {
+            "type": "SILENCE",
+            "calcType": "dispel"
+          },
+          {
+            "type": "PETRIFY",
+            "calcType": "dispel"
+          },
+          {
+            "type": "TOAD",
+            "calcType": "dispel"
+          },
+          {
+            "type": "DISABLE",
+            "calcType": "dispel"
+          },
+          {
+            "type": "IMMOBILIZE",
+            "calcType": "dispel"
+          }
+        ],
+        "dataId": "SK_LW_MNK_M_2_SUB",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 18
+        },
+        "type": "active",
+        "count": 3,
+        "range": {},
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 0
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 0,
+          "type": "0"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "names": {
+          "en": "Shadowblade"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_GFGR_M_1",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Surge Strike"
+        },
+        "effects": [],
+        "dataId": "SK_LW_MNK_S_3",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 8,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "strike"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Fist Counter"
+        },
+        "effects": [],
+        "dataId": "SK_LW_MNK_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 15,
+          "maxValue": 30,
+          "reactDamage": "PHYSIC",
+          "calcType": "percent"
+        },
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "strike"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 12,
+        "names": {
+          "en": "Killer Blade"
+        },
+        "effects": [
+          {
+            "type": "HUMAN_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
+        "dataId": "SK_LW_WAR_M_4_SUB",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 26
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 2,
+          "s": 0,
+          "line": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 70,
+          "maxValue": 105,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "HP Up Lv. 1"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_LW_MNK_P_2",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "AGI",
+            "value": 10,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 179,
+        "max": 632
+      },
+      "TP": {
+        "min": 47,
+        "max": 74
+      },
+      "AP": {
+        "min": 56,
+        "max": 69
+      },
+      "ATK": {
+        "min": 80,
+        "max": 134
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 27,
+        "max": 45
+      },
+      "DEX": {
+        "min": 57,
+        "max": 86
+      },
+      "AGI": {
+        "min": 28,
+        "max": 33
+      },
+      "LUCK": {
+        "min": 60,
+        "max": 84
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {},
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {},
+      "LIGHT": {
+        "min": -15,
+        "max": -15
+      },
+      "DARK": {},
+      "SLASH": {
+        "min": 25,
+        "max": 25
+      },
+      "PIERCE": {},
+      "STRIKE": {},
+      "MISSILE": {
+        "min": -10,
+        "max": -10
+      },
+      "MAGIC": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON": {
+        "min": 50,
+        "max": 50
+      },
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {},
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {
+        "min": -25,
+        "max": -25
+      },
+      "STOP": {},
+      "IMMOBILIZE": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE": {},
+      "BERSERK": {
+        "min": 10,
+        "max": 10
+      },
+      "DOOM": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    "element": "dark",
+    "image": "FFT0gfgr",
+    "equipments": [
+      "SWORD",
+      "ARMOR",
+      "HELM",
+      "ACC"
+    ],
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "INITIAL_AP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        },
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 25,
+          "maxValue": 25,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_FFT_GFGR",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
+    "tmr": {
+      "names": {
+        "en": "Vermilion"
+      },
+      "stats": {
+        "HP": 68,
+        "ATK": 122,
+        "CRITIC_RATE": 5
+      },
+      "type": "SWORD",
+      "inmae": "AF_SWO_FFT_GFGR_1",
+      "skills": [
+        {
+          "names": {
+            "en": ""
+          },
+          "dataId": "SK_SWO_FFT_GFGR_1_1",
+          "effects": [
+            {
+              "type": "CONFUSION",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
+            }
+          ],
+          "slot": 3,
+          "type": "passive"
+        }
+      ],
+      "image": "FFT0wpn_swo_005"
+    }
+  },
+  "UN_FFT_P_ORND": {
+    "dataId": "UN_FFT_P_ORND",
+    "names": {
+      "en": "Orlandeau"
+    },
+    "rarity": "UR",
+    "jobs": [
+      {
+        "en": "Sword Saint"
+      },
+      {
+        "en": "Samurai"
+      },
+      {
+        "en": "Knight"
+      }
+    ],
+    "skills": [
+      {
+        "unlockStar": null,
+        "unlockJob": 1,
+        "names": {
+          "en": "Crush Armor"
+        },
+        "effects": [
+          {
+            "type": "DEF",
+            "minValue": -10,
+            "maxValue": -25,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_ORND_S_1",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 15
+        },
+        "type": "active",
+        "count": 5,
+        "range": {
+          "h": 1,
+          "l": 5,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": null,
+        "unlockJob": 1,
+        "names": {
+          "en": "Crest of the Black Lion"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 20,
+            "maxValue": 40,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "BLIND",
+            "calcType": "nullify",
+            "turn": 3
+          },
+          {
+            "type": "PARALYZE",
+            "calcType": "nullify",
+            "turn": 3
+          },
+          {
+            "type": "SLEEP",
+            "calcType": "nullify",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_ORND_S_2",
+        "slot": 1,
+        "cost": {
+          "type": "TP",
+          "value": 18
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Blade Soul"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 25,
+            "calcType": "percent"
+          },
+          {
+            "type": "EVADE",
+            "minValue": 5,
+            "maxValue": 12,
+            "calcType": "fixe"
+          },
+          {
+            "type": "DEF",
+            "minValue": -10,
+            "maxValue": -3,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_LW_SAM_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Thunder God"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 30,
+            "maxValue": 60,
+            "calcType": "percent"
+          },
+          {
+            "type": "SLASH_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "STRIKE_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "PIERCE_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "MISSILE_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          },
+          {
+            "type": "MAGIC_ATK",
+            "minValue": -20,
+            "maxValue": -8,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_FFT_ORND_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "names": {
+          "en": "Battlewise"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "percent"
+          },
+          {
+            "type": "JUMP",
+            "minValue": 1,
+            "maxValue": 1,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_FFT_ORND_P_2",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Crush Helm"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": -10,
+            "maxValue": -25,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_ORND_S_3",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 22
+        },
+        "type": "active",
+        "count": 4,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 30,
+          "maxValue": 65,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Meditation"
+        },
+        "effects": [
+          {
+            "type": "BRAVERY",
+            "minValue": 4,
+            "maxValue": 10,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_LW_SAM_S_3",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 1,
+        "range": {},
+        "aoe": {
+          "s": 1,
+          "l": 2,
+          "h": 0
+        },
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Auto-Refresh"
+        },
+        "effects": [
+          {
+            "type": "AP",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_FFT_ORND_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 10,
+          "maxValue": 30,
+          "reactDamage": "ALL",
+          "calcType": "percent"
+        }
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "names": {
+          "en": "Hallowed Bolt"
+        },
+        "effects": [
+          {
+            "type": "SILENCE",
+            "calcType": "percent",
+            "rate": 25,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_ORND_S_5",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 23
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 2,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 1
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "names": {
+          "en": "Duskblade"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_ORND_S_4",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 30
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -80,
+          "maxValue": -60,
+          "pool": "TP"
+        },
+        "elem": [
+          "neutral"
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "names": {
+          "en": "Illusion"
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 10,
+            "maxValue": 25,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_SAM_M_2",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 29
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 0
+        },
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Power Break"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": -20,
+            "maxValue": -43,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_KNT_M_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 18
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 10
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 26,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Arm Break"
+        },
+        "effects": [
+          {
+            "type": "DISABLE",
+            "calcType": "percent",
+            "rate": 25,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_KNT_S_3",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 22
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 40,
+          "maxValue": 91,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "names": {
+          "en": "Hien"
+        },
+        "effects": [],
+        "dataId": "SK_LW_SAM_M_1",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 8,
+        "range": {
+          "h": 2,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 20,
+          "maxValue": 37,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "names": {
+          "en": "Third Eye"
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_SAM_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
+        }
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Divine Protection"
+        },
+        "effects": [
+          {
+            "type": "DEBUFF_RES",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_LW_KNT_P_1",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "names": {
+          "en": "Divine Healing"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 5,
+            "maxValue": 20,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_KNT_S_1",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 12
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 12,
+        "names": {
+          "en": "Shadowblade"
+        },
+        "effects": [],
+        "dataId": "SK_FFT_ORND_M_3",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Magic Break"
+        },
+        "effects": [
+          {
+            "type": "MAG",
+            "minValue": -20,
+            "maxValue": -43,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_KNT_M_2",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 18
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 10
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "maxValue": 26,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "names": {
+          "en": "Crush Weapon"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": -10,
+            "maxValue": -30,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_ORND_M_2",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 27
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 1
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "names": {
+          "en": "Nightveil"
+        },
+        "effects": [
+          {
+            "type": "BLIND",
+            "minValue": 20,
+            "maxValue": 50,
+            "calcType": "percent",
+            "rate": 25,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_SAM_S_2",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 16
+        },
+        "type": "active",
+        "count": 4,
+        "range": {},
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 1
+        },
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 5,
+          "maxValue": 40,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 12,
+        "names": {
+          "en": "Trinity Break"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": -20,
+            "maxValue": -39,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "MAG",
+            "minValue": -20,
+            "maxValue": -39,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "AGI",
+            "minValue": -10,
+            "maxValue": -25,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_KNT_M_4_SUB",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 34
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 0
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 30,
+          "maxValue": 65,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "names": {
+          "en": "Divine Ruination"
+        },
+        "effects": [
+          {
+            "type": "LIGHTNING_ATK",
+            "minValue": -18,
+            "maxValue": -38,
+            "calcType": "resistance",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_FFT_ORND_M_1",
+        "slot": 1,
+        "cost": {
+          "type": "AP",
+          "value": 29
+        },
+        "type": "active",
+        "count": 2,
+        "range": {
+          "h": 1,
+          "l": 5,
+          "s": 10
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 30,
+          "maxValue": 65,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Speed Break"
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": -5,
+            "maxValue": -20,
+            "calcType": "percent",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_KNT_S_4",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 22
+        },
+        "type": "active",
+        "count": 3,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 10
+        },
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": -5,
+          "maxValue": 21,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "Sword Guard"
+        },
+        "effects": [],
+        "dataId": "SK_LW_KNT_R_1",
+        "slot": 4,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "counter",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "counter": {
+          "minValue": 10,
+          "maxValue": 20,
+          "reactDamage": "ALL",
+          "calcType": "percent"
+        }
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 12,
+        "names": {
+          "en": "Kongou"
+        },
+        "effects": [
+          {
+            "type": "MACHINA_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          },
+          {
+            "type": "STONE_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          }
+        ],
+        "dataId": "SK_LW_SAM_M_4_SUB",
+        "slot": 2,
+        "cost": {
+          "type": "AP",
+          "value": 36
+        },
+        "type": "active",
+        "count": 2,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 10
+        },
+        "aoe": {},
+        "pierce": 1,
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "slash"
+        }
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "names": {
+          "en": "HP Up Lv. 1"
+        },
+        "effects": [
+          {
+            "type": "HP",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_LW_KNT_P_2",
+        "slot": 3,
+        "type": "passive"
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "names": {
+          "en": "Devotion"
+        },
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turn": 3
+          },
+          {
+            "type": "CRITIC_RATE",
+            "minValue": 5,
+            "maxValue": 15,
+            "calcType": "fixe",
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_LW_SAM_S_1",
+        "slot": 2,
+        "cost": {
+          "type": "TP",
+          "value": 20
+        },
+        "type": "active",
+        "count": 2,
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {},
+        "damage": {
+          "minValue": 0,
+          "type": "0"
+        },
+        "elem": [
+          "neutral"
+        ]
+      }
+    ],
+    "buffs": [
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 8,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 1,
+        "unlockJob": 1,
+        "jobLevel": 1,
+        "jp": 25,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 1,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 2,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "AGI",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 4,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "DEF",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 2,
+        "jobLevel": 3,
+        "jp": 108,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 7,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 150,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 15,
+            "calcType": "percent"
+          }
+        ]
+      },
+      {
+        "unlockStar": 3,
+        "unlockJob": 1,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 6,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 30,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 4,
+        "unlockJob": 3,
+        "jobLevel": 5,
+        "jp": 165,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 30,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "DEX",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "CRITIC_RATE",
+            "value": 3,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "ATK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 1,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "LCK",
+            "value": 5,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 20,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 6,
+        "unlockJob": 2,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "AGI",
+            "value": 2,
+            "calcType": "fixe"
+          }
+        ]
+      },
+      {
+        "unlockStar": 5,
+        "unlockJob": 3,
+        "jobLevel": 7,
+        "jp": 184,
+        "effects": [
+          {
+            "type": "HP",
+            "value": 20,
+            "calcType": "fixe"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 280,
+        "max": 1062
+      },
+      "TP": {
+        "min": 59,
+        "max": 92
+      },
+      "AP": {
+        "min": 71,
+        "max": 87
+      },
+      "ATK": {
+        "min": 89,
+        "max": 151
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 32,
+        "max": 55
+      },
+      "DEX": {
+        "min": 63,
+        "max": 94
+      },
+      "AGI": {
+        "min": 30,
+        "max": 34
+      },
+      "LUCK": {
+        "min": 59,
+        "max": 84
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE": {},
+      "ICE": {},
+      "EARTH": {
+        "min": -10,
+        "max": -10
+      },
+      "WIND": {},
+      "LIGHTNING": {},
+      "WATER": {
+        "min": 20,
+        "max": 20
+      },
+      "LIGHT": {},
+      "DARK": {},
+      "SLASH": {
+        "min": 20,
+        "max": 20
+      },
+      "PIERCE": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC": {
+        "min": -20,
+        "max": -20
+      },
+      "POISON": {
+        "min": 50,
+        "max": 50
+      },
+      "BLIND": {},
+      "SLEEP": {},
+      "SILENCE": {},
+      "PARALYZE": {},
+      "CONFUSION": {},
+      "PETRIFY": {
+        "min": 10,
+        "max": 10
+      },
+      "TOAD": {},
+      "CHARM": {},
+      "SLOW": {},
+      "STOP": {},
+      "IMMOBILIZE": {},
+      "DISABLE": {
+        "min": 50,
+        "max": 50
+      },
+      "BERSERK": {},
+      "DOOM": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    "element": "lightning",
+    "image": "FFT0ornd",
+    "equipments": [
+      "SWORD",
+      "HAT",
+      "CLOTH",
+      "ACC"
+    ],
+    "limit": {
+      "names": {
+        "en": "Swordplay: Thunder God"
+      },
+      "effects": [
+        {
+          "type": "HASTE",
+          "minValue": 20,
+          "maxValue": 42,
+          "calcType": "percent",
+          "turn": 3
+        }
+      ],
+      "dataId": "SK_LB_FFT_ORND",
+      "slot": 6,
+      "cost": {
+        "type": "AP",
+        "value": 58
+      },
+      "type": "active",
+      "count": 1,
+      "range": {
+        "h": 1,
+        "l": 3,
+        "s": 1
+      },
+      "aoe": {
+        "s": 1,
+        "l": 2,
+        "h": 1
+      },
+      "combo": {},
+      "knockback": {},
+      "damage": {
+        "minValue": 65,
+        "maxValue": 100,
+        "type": "slash"
+      }
+    },
+    "masterSkill": {
+      "names": {
+        "en": "Master Ability"
+      },
+      "effects": [
+        {
+          "type": "DEF",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_MA_FFT_ORND",
+      "slot": 7,
+      "cost": {
+        "type": "TP"
+      },
+      "type": "active",
+      "range": {},
+      "aoe": {},
+      "combo": {},
+      "knockback": {}
+    },
+    "tmr": {
+      "names": {
+        "en": "Thunder God's Cape"
+      },
+      "stats": {
+        "HP": 362,
+        "DEF": 8,
+        "AGI": 5
+      },
+      "type": "ACC",
+      "inmae": "AF_ACC_FFT_ORND_1",
+      "skills": [
+        {
+          "names": {
+            "en": "Bolt Barrage"
+          },
+          "dataId": "SK_ACC_FFT_ORND_1_1",
+          "effects": [],
+          "slot": 1,
+          "cost": {
+            "type": "TP",
+            "value": 30
+          },
+          "type": "active",
+          "count": 1,
+          "range": {},
+          "aoe": {},
+          "combo": {},
+          "knockback": {}
+        }
+      ],
+      "image": "FFTwpn_arm_001"
+    }
+  },
   "UN_LW_P_MURG": {
     "dataId": "UN_LW_P_MURG",
     "names": {

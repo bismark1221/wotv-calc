@@ -349,6 +349,9 @@ export class SkillService {
       case "ACQUIRED_AP" :
         html = this.getIncrease(effect) + " Acquired AP" + this.getValue(effect) + this.getTurns(effect)
       break
+      case "ACQUIRED_JP" :
+        html = this.getIncrease(effect) + " Acquired JP" + this.getValue(effect) + this.getTurns(effect)
+      break
       case "DEBUFF_RES" :
         html = this.getIncrease(effect) + " Debuff Res" + this.getValue(effect) + this.getTurns(effect)
       break

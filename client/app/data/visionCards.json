@@ -2240,6 +2240,163 @@
     },
     "image": "LAPSRamu"
   },
+  "VC_FFT_MV1": {
+    "dataId": "VC_FFT_MV1",
+    "names": {
+      "en": "Scion of House Beoulve"
+    },
+    "rarity": "UR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 2,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV1_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 3,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV1_PAW",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 2,
+            "maxValue": 2,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV1_PMAX",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 2,
+            "maxValue": 8,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV1_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV1_GSAW",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsMax": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 3,
+            "maxValue": 3,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV1_GSMAX",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "stats": {
+      "HP": {
+        "min": 21,
+        "max": 162
+      },
+      "ATK": {
+        "min": 37,
+        "max": 144
+      },
+      "MAG": {
+        "min": 23,
+        "max": 90
+      }
+    },
+    "image": "FFTMv1"
+  },
   "VC_LW_FAMILY": {
     "dataId": "VC_LW_FAMILY",
     "names": {
@@ -3435,6 +3592,77 @@
       }
     },
     "image": "LAPSBomb"
+  },
+  "VC_LW_JOBCRYSTAL": {
+    "dataId": "VC_LW_JOBCRYSTAL",
+    "names": {
+      "en": "Job Crystal"
+    },
+    "rarity": "SR",
+    "unitBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACQUIRED_AP",
+            "minValue": 7,
+            "maxValue": 20,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_JOBCRYSTAL_P",
+        "slot": 3,
+        "type": "passive"
+      }
+    ],
+    "unitBuffsAwake": [],
+    "unitBuffsMax": [],
+    "partyBuffsClassic": [
+      {
+        "unlockStar": null,
+        "names": {
+          "en": ""
+        },
+        "effects": [
+          {
+            "type": "ACQUIRED_JP",
+            "minValue": 20,
+            "maxValue": 50,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
+        "slot": 8,
+        "cost": {
+          "type": "TP"
+        },
+        "type": "active",
+        "range": {},
+        "aoe": {},
+        "combo": {},
+        "knockback": {}
+      }
+    ],
+    "partyBuffsAwake": [],
+    "partyBuffsMax": [],
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 240
+      },
+      "ATK": {
+        "min": 17,
+        "max": 70
+      },
+      "MAG": {
+        "min": 17,
+        "max": 70
+      }
+    },
+    "image": "LAPSJcrystal"
   },
   "VC_LW_BYLO": {
     "dataId": "VC_LW_BYLO",
