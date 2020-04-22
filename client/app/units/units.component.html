@@ -90,7 +90,10 @@
           </div>
         </td>
         <td *ngIf="unit.tmr.skills[0].type == 'active'">
-          <div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
+          <ng-template #tip_table><div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table">
+            <div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
+          </div>
         </td>
         <td *ngIf="unit.tmr.skills[0].type == 'active'">
           {{ unit.tmr.skills[0].count }}
@@ -206,7 +209,7 @@
   </table>
 </div>
 
-  
+
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
   <table>
     <tbody>
@@ -237,7 +240,7 @@
   </table>
 </div>
 
-  
+
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
   <table>
     <tbody>
@@ -262,7 +265,7 @@
   </table>
 </div>
 
-  
+
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
   <table>
     <tbody>
@@ -389,9 +392,10 @@
             </div>
           </td>
           <td>
-            <span id="tool_{{skill.dataId}}"></span>
-            <div tooltip="test"parentSelector="#tool_{{skill.dataId}}">test</div>
-            <div [innerHTML]="skill.skillTableHtml"></div>
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table">
+              <div [innerHTML]="skill.skillTableHtml"></div>
+            </div>
           </td>
           <td>{{ skill.count }}</td>
           <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
@@ -429,7 +433,10 @@
           </div>
         </td>
         <td>
-          <div [innerHTML]="unit.limit.skillTableHtml"></div>
+          <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table">
+            <div [innerHTML]="unit.limit.skillTableHtml"></div>
+          </div>
         </td>
         <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
         <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>

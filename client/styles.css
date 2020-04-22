@@ -21,13 +21,13 @@ table, tbody, tr, th, td {
 }
 
 
-.table-skill {
+.tooltip-inner .table-skill {
   border-collapse: collapse;
   width: 219px;
   height: 219px;
 }
 
-.table-skill td {
+.tooltip-inner .table-skill td {
   content: ' ';
   padding: 0;
   margin: 0;
@@ -36,10 +36,15 @@ table, tbody, tr, th, td {
   background-color: #635b52;
 }
 
-/*.table-skill {
+.tooltip-inner .table-skill .table-skill-AR {
+  background: url("assets/range/AR.png") 0px 0px no-repeat;
+}
+
+.table-skill {
   border-collapse: collapse;
-  width: 55px;
-  height: 55px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
 }
 
 .table-skill td {
@@ -49,7 +54,15 @@ table, tbody, tr, th, td {
   width: 2px;
   height: 2px;
   background-color: #635b52;
-}*/
+}
+
+.tooltip-inner {
+  max-width: 500px;
+}
+
+.tooltip {
+  opacity: 1 !important;
+}
 
 .table-skill-UN {
   background: url("assets/range/U.png") 0px 0px no-repeat;
@@ -64,7 +77,7 @@ table, tbody, tr, th, td {
 }
 
 .table-skill-AR {
-  background: url("assets/range/AR.png") 0px 0px no-repeat;
+  background: url("assets/range/A.png") 0px 0px no-repeat;
 }
 
 .table-skill-TAR {
@@ -125,7 +138,7 @@ table, tbody, tr, th, td {
   color: #464a4c;
 }
 
-.tooltip {
+/*.tooltip {
   background-color: #848b8e !important;
   font-size: 0.9rem !important;
   font-family: Palatino, Helvetica, sans-serif !important;
@@ -133,7 +146,7 @@ table, tbody, tr, th, td {
 
 .tooltip-arrow {
   border-top-color: #848b8e !important;
-}
+}*/
 
 .noUi-value-sub {
   font-size: 15px;
