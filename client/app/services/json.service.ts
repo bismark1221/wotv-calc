@@ -600,8 +600,10 @@ export class JsonService {
       skill.range = {
         h: this.skills[skillId].range_h,
         l: this.skills[skillId].range_l,
+        m: this.skills[skillId].range_m,
         mh: this.skills[skillId].range_mh,
         s: this.skills[skillId].range_s,
+        w: this.skills[skillId].range_w,
         line: this.skills[skillId].line
       }
 

@@ -110,6 +110,8 @@ export class UnitsComponent implements OnInit {
         if (skill.counter) {
           skill.counterHtml = this.skillService.formatCounter(unit, skill, skill.counter);
         }
+
+        this.skillService.formatRange(unit, skill);
       });
 
       if (unit.masterSkill) {
@@ -126,6 +128,8 @@ export class UnitsComponent implements OnInit {
         if (unit.limit.damage) {
           unit.limit.damageHtml = this.skillService.formatDamage(unit, unit.limit, unit.limit.damage);
         }
+
+        this.skillService.formatRange(unit, unit.limit);
       }
 
       unit.totalBuffs = {
@@ -156,6 +160,7 @@ export class UnitsComponent implements OnInit {
         unit.tmr.statsTypes = Object.keys(unit.tmr.stats)
 
         unit.tmr.skills.forEach(skill => {
+          this.skillService.formatRange(unit, skill);
           skill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
           });

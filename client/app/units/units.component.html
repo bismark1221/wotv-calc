@@ -49,27 +49,28 @@
   <table>
     <tbody>
       <tr>
-        <th [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '6' : '2'">TMR</th>
+        <th [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '7' : '2'">TMR</th>
       </tr>
       <tr>
         <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '2' : '1'">Name</td>
-        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '4' : '1'">{{ unit.tmr.names.en }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ unit.tmr.names.en }}</td>
       </tr>
       <tr>
         <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '2' : '1'">Type</td>
-        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '4' : '1'">{{ unit.tmr.type }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ unit.tmr.type }}</td>
       </tr>
       <tr *ngFor="let statType of unit.tmr.statsTypes">
         <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '2' : '1'">{{ statType }}</td>
-        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '4' : '1'">{{ unit.tmr.stats[statType] }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ unit.tmr.stats[statType] }}</td>
       </tr>
       <tr>
-        <th [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '6' : '2'">Skill</th>
+        <th [attr.colspan]="unit.tmr.skills[0].type == 'active' ? '7' : '2'">Skill</th>
       </tr>
       <tr>
         <th>Type</th>
         <th *ngIf="unit.tmr.skills[0].type == 'active'">name</th>
         <th>Effects</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'active'">Range</th>
         <th *ngIf="unit.tmr.skills[0].type == 'active'">Casts</th>
         <th *ngIf="unit.tmr.skills[0].type == 'active'">Hits</th>
         <th *ngIf="unit.tmr.skills[0].type == 'active'">Cost</th>
@@ -87,6 +88,15 @@
           <div *ngFor="let effect of unit.tmr.skills[0].effects">
             {{ effect.formatHtml }}
           </div>
+        </td>
+        <td *ngIf="unit.tmr.skills[0].type == 'active'">
+          <table *ngIf="unit.tmr.skills[0].skillTable" class="table-skill">
+            <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
+              <td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" class="table-skill-{{ unit.tmr.skills[0].skillTable[i][j] }}">
+                
+              </td>
+            </tr>
+          </table>
         </td>
         <td *ngIf="unit.tmr.skills[0].type == 'active'">
           {{ unit.tmr.skills[0].count }}
@@ -341,8 +351,8 @@
     <table>
       <tbody>
         <tr>
-          <th *ngIf="i == 0" colspan="8">Main Job</th>
-          <th *ngIf="i != 0" colspan="8">{{ unit.jobs[i - 1].en }}</th>
+          <th *ngIf="i == 0" colspan="9">Main Job</th>
+          <th *ngIf="i != 0" colspan="9">{{ unit.jobs[i - 1].en }}</th>
         </tr>
         <tr>
           <th>Job lvl</th>
@@ -350,6 +360,7 @@
           <th>Type</th>
           <th>name</th>
           <th>Effects</th>
+          <th>Range</th>
           <th>Casts</th>
           <th>Hits</th>
           <th>Cost</th>
@@ -366,6 +377,15 @@
               {{ effect.formatHtml }}
             </div>
           </td>
+          <td>
+            <table *ngIf="skill.skillTable" class="table-skill">
+              <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
+                <td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" class="table-skill-{{ skill.skillTable[i][j] }}">
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
           <td>{{ skill.count }}</td>
           <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
           <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
@@ -374,6 +394,8 @@
     </table>
   </div>
 </div>
+
+
 
 
 <div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
@@ -398,11 +420,12 @@
   <table>
     <tbody>
       <tr>
-        <th colspan="4">Limit Burst</th>
+        <th colspan="5">Limit Burst</th>
       </tr>
       <tr>
         <th>name</th>
         <th>Effects</th>
+        <th>Range</th>
         <th>Hits</th>
         <th>Cost</th>
       </tr>
@@ -413,6 +436,15 @@
           <div *ngFor="let effect of unit.limit.effects">
             {{ effect.formatHtml }}
           </div>
+        </td>
+        <td>
+          <table *ngIf="unit.limit.skillTable" class="table-skill">
+            <tr *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
+              <td *ngFor="let j of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" class="table-skill-{{ unit.limit.skillTable[i][j] }}">
+                
+              </td>
+            </tr>
+          </table>
         </td>
         <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
         <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
