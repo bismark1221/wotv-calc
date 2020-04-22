@@ -649,6 +649,17 @@ export class JsonService {
         });
       }
 
+      if (this.skills[skillId].barrier) {
+        skill.effects.push({
+          type: this.skills[skillId].eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE",
+          minValue: this.skills[skillId].barrier.scut,
+          maxValue: this.skills[skillId].barrier.ecut,
+          calcType: "percent",
+          turn: this.skills[skillId].barrier.val,
+          turnType: this.skills[skillId].barrier.type !== 3 ? "TURNS" : "COUNT"
+        });
+      }
+
 
       // check target 12 => ennemy -- 0 => self ??? for effects break
 

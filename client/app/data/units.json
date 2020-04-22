@@ -422,7 +422,15 @@
         "names": {
           "en": "Paladin's Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_PLD_R_1",
         "slot": 4,
         "cost": {
@@ -753,7 +761,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -4516,6 +4532,14 @@
       },
       "effects": [
         {
+          "type": "REDUCE_DAMAGE",
+          "minValue": 30,
+          "maxValue": 50,
+          "calcType": "percent",
+          "turn": 3,
+          "turnType": "COUNT"
+        },
+        {
           "type": "PROVOKE",
           "minValue": 25,
           "maxValue": 40,
@@ -6370,7 +6394,15 @@
         "names": {
           "en": "Paladin's Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_PLD_R_1",
         "slot": 4,
         "cost": {
@@ -6583,7 +6615,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -6832,7 +6872,16 @@
         "names": {
           "en": "Saintly Wall"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_PLD_M_4",
         "slot": 1,
         "cost": {
@@ -14129,6 +14178,14 @@
           "dataId": "SK_FTW_LW_AYKA_1_1",
           "effects": [
             {
+              "type": "REDUCE_DAMAGE",
+              "minValue": 5,
+              "maxValue": 20,
+              "calcType": "percent",
+              "turn": 3,
+              "turnType": "TURNS"
+            },
+            {
               "type": "POISON",
               "calcType": "dispel"
             },
@@ -15748,6 +15805,14 @@
           },
           "dataId": "SK_ACC_LW_MACR_1_1",
           "effects": [
+            {
+              "type": "REDUCE_DAMAGE",
+              "minValue": 10,
+              "maxValue": 30,
+              "calcType": "percent",
+              "turn": 3,
+              "turnType": "COUNT"
+            },
             {
               "type": "HP",
               "minValue": 180,
@@ -17566,7 +17631,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -19366,7 +19439,15 @@
         "names": {
           "en": "Magic Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_MGK_R_1",
         "slot": 4,
         "cost": {
@@ -19720,7 +19801,16 @@
         "names": {
           "en": "Magic Barrier"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_MGK_M_3_SUB",
         "slot": 2,
         "cost": {
@@ -28749,7 +28839,15 @@
         "names": {
           "en": "Magic Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_MGK_R_1",
         "slot": 4,
         "cost": {
@@ -29871,7 +29969,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -34681,7 +34787,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -37609,7 +37723,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -38201,7 +38323,15 @@
         "names": {
           "en": "Paladin's Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_PLD_R_1",
         "slot": 4,
         "cost": {
@@ -39098,7 +39228,15 @@
         "names": {
           "en": "Magic Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_MGK_R_1",
         "slot": 4,
         "cost": {
@@ -39331,7 +39469,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -39438,7 +39584,16 @@
         "names": {
           "en": "Magic Barrier"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_MGK_M_3",
         "slot": 1,
         "cost": {
@@ -45434,7 +45589,15 @@
         "names": {
           "en": "Paladin's Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_PLD_R_1",
         "slot": 4,
         "cost": {
@@ -47259,7 +47422,16 @@
         "names": {
           "en": "Magic Barrier"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_MGK_M_3_SUB",
         "slot": 2,
         "cost": {
@@ -47356,7 +47528,15 @@
         "names": {
           "en": "Magic Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_MGK_R_1",
         "slot": 4,
         "cost": {
@@ -57965,7 +58145,15 @@
         "names": {
           "en": "Magic Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_MGK_R_1",
         "slot": 4,
         "cost": {
@@ -59095,7 +59283,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -60704,7 +60900,16 @@
         "names": {
           "en": "Armor of Discontinuity"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_GLMS_M_3",
         "slot": 1,
         "cost": {
@@ -63825,7 +64030,16 @@
         "names": {
           "en": "Superbolide"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_TNCR_M_3",
         "slot": 1,
         "cost": {
@@ -68251,7 +68465,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -69522,7 +69744,15 @@
         "names": {
           "en": "Paladin's Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_PLD_R_1",
         "slot": 4,
         "cost": {
@@ -70036,7 +70266,16 @@
         "names": {
           "en": "Saintly Wall"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 30,
+            "maxValue": 50,
+            "calcType": "percent",
+            "turn": 3,
+            "turnType": "COUNT"
+          }
+        ],
         "dataId": "SK_LW_PLD_M_4",
         "slot": 1,
         "cost": {
@@ -71633,7 +71872,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -72801,7 +73048,15 @@
         "names": {
           "en": "Magic Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 15,
+            "maxValue": 45,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_MGK_R_1",
         "slot": 4,
         "cost": {
@@ -76326,7 +76581,15 @@
         "names": {
           "en": "Sword Guard"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "REDUCE_DAMAGE",
+            "minValue": 10,
+            "maxValue": 30,
+            "calcType": "percent",
+            "turnType": "TURNS"
+          }
+        ],
         "dataId": "SK_LW_KNT_R_1",
         "slot": 4,
         "cost": {
@@ -77075,7 +77338,16 @@
             "en": "Bolt Barrage"
           },
           "dataId": "SK_ACC_FFT_ORND_1_1",
-          "effects": [],
+          "effects": [
+            {
+              "type": "REDUCE_DAMAGE",
+              "minValue": 15,
+              "maxValue": 35,
+              "calcType": "percent",
+              "turn": 3,
+              "turnType": "COUNT"
+            }
+          ],
           "slot": 1,
           "cost": {
             "type": "TP",
@@ -77413,6 +77685,14 @@
           },
           "dataId": "SK_FTW_LW_AYKA_1_1",
           "effects": [
+            {
+              "type": "REDUCE_DAMAGE",
+              "minValue": 5,
+              "maxValue": 20,
+              "calcType": "percent",
+              "turn": 3,
+              "turnType": "TURNS"
+            },
             {
               "type": "POISON",
               "calcType": "dispel"

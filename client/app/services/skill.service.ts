@@ -43,18 +43,23 @@ export class SkillService {
     return value
   }
 
-  private getValue(effect) {
+  private getValue(effect, getPositiveValue = true) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
-      value = " (" + this.getPositiveValue(typeof(effect.minValue) === "number" ? effect.minValue : effect.value) + this.getCalc(effect) + this.getMaxValue(effect) + ")"
+      let minValue = typeof(effect.minValue) === "number" ? effect.minValue : effect.value;
+      minValue = getPositiveValue ? this.getPositiveValue(minValue) : minValue;
+
+      value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect) + ")"
     }
 
     return value;
   }
 
-  private getMaxValue(effect) {
+  private getMaxValue(effect, getPositiveValue = true) {
     if (effect.minValue !== effect.maxValue) {
-      return " => " + this.getPositiveValue(effect.maxValue) + this.getCalc(effect);
+      let maxValue = getPositiveValue ? this.getPositiveValue(effect.maxValue) : effect.maxValue;
+
+      return " => " + maxValue + this.getCalc(effect);
     }
 
     return "";
@@ -62,7 +67,7 @@ export class SkillService {
 
   private getTurns(effect) {
     if (effect.turn) {
-      return " for " + effect.turn + " turn" + (effect.turn > 1 ? "s" : "")
+      return " for " + effect.turn + (effect.turnType === "COUNT" ? " time" : " turn") + (effect.turn > 1 ? "s" : "")
     }
 
     return "";
@@ -412,6 +417,12 @@ export class SkillService {
       case "DARK_KILLER" :
         html = "Increase dark killer" + this.getValue(effect) + this.getTurns(effect)
       break
+      case "BARRIER" :
+        html = "Forms a barrier that reduces damage" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE" :
+        html = "Reduces the damage taken" + this.getValue(effect) + this.getTurns(effect)
+      break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
@@ -429,7 +440,7 @@ export class SkillService {
   }
 
   formatDamage(unit, skill, damage) {
-    let html = (skill.elem ? skill.elem : unit.element) + " " + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " + this.getValue(damage);
+    let html = (skill.elem ? skill.elem : unit.element) + " " + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " + this.getValue(damage, false);
     return this.upperCaseFirst(html)
   }
 
