@@ -38,6 +38,7 @@ import { JsonService } from './services/json.service';
 import { SkillService } from './services/skill.service';
 import { EquipmentService } from './services/equipment.service';
 import { VisionCardService } from './services/visionCard.service';
+import { EsperService } from './services/esper.service';
 
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AbsolutePipe } from './pipes/absolute.pipe';
@@ -96,7 +97,8 @@ export function createTranslateLoader(http: HttpClient) {
     JsonService,
     EquipmentService,
     SkillService,
-    VisionCardService
+    VisionCardService,
+    EsperService
   ],
   bootstrap: [
     AppComponent

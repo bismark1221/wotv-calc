@@ -423,9 +423,19 @@ export class SkillService {
       case "REDUCE_DAMAGE" :
         html = "Reduces the damage taken" + this.getValue(effect) + this.getTurns(effect)
       break
+      case "CRITIC_EVADE" :
+        html = "Boost critical evasion" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "EVOCATION_MAGIC" :
+        html = "Boost Evocation damage" + this.getValue(effect) + this.getTurns(effect)
+      break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
+    }
+
+    if (effect.side) {
+      html = html + " for 3 turns " + (effect.side == "TEAM" ? "to all units" : "to all ennemies")
     }
 
     return html;

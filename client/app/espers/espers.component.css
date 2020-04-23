@@ -1,3 +1,33 @@
+.elementImg, .damageImg, .statusAilmentImg, .skilImg {
+  height: 40px;
+}
+
+.rarityImg {
+  height: 30px;
+}
+
+th {
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border: 1px solid #404040;
+  padding: 0.3em 0.5em;
+}
+
+
+td {
+  text-align: center;
+  padding: 0.3em 0.5em;
+}
+
+
+
+
+
+
+
+
+
 .inlineBlock {
   display: inline-block;
 }
@@ -65,22 +95,22 @@
   margin: auto;
 }
 
-.unit {
+.esper {
   max-width: 1030px;
   margin: auto;
 }
 
-.unitImg {
+.esperImg {
   height: 100px;
   margin-top: 10px;
 }
 
-.selectUnit1 {
+.selectEsper1 {
   color: #848b8e;;
   font-size: 4em;
 }
 
-.selectUnitZone {
+.selectEsperZone {
   width: 250px;
   min-height: 142px;
   text-align: center;
@@ -395,40 +425,40 @@
   display: inline-block;
 }
 
-.allSelectUnit {
+.allSelectEsper {
   text-align: center;
 }
 
-.expandedSelecUnit {
+.expandedSelecEsper {
   width: 1004px;
 }
 
-.marginUnit0 {
+.marginEsper0 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit1 {
+.marginEsper1 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit2 {
+.marginEsper2 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit3 {
+.marginEsper3 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit4 {
+.marginEsper4 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit5 {
+.marginEsper5 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
@@ -461,7 +491,7 @@
     display: block;
   }
 
-  .expandedSelecUnit {
+  .expandedSelecEsper {
     width: 792px;
   }
 
@@ -479,7 +509,7 @@
     display: block;
   }
 
-  .allSelectUnit {
+  .allSelectEsper {
     width: 542px;
   }
 
@@ -487,7 +517,7 @@
     width: 500px;
   }
 
-  .expandedSelecUnit {
+  .expandedSelecEsper {
     width: 522px !important;
   }
 
@@ -582,15 +612,15 @@
     display: none;
   }
 
-  .allSelectUnit {
+  .allSelectEsper {
     width: 250px
   }
 
-  .expandedSelecUnit {
+  .expandedSelecEsper {
     width: 250px !important;
   }
 
-  .selectUnitZone {
+  .selectEsperZone {
     margin: 0 0 10px;
     width: 250px;
   }

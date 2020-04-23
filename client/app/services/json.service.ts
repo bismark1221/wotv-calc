@@ -498,7 +498,7 @@ export class JsonService {
       buffs: [],
       stats: {},
       element: this.elements[unit.elem[0]],
-      image: unit.charaId
+      image: unit.charaId.toLowerCase()
     };
 
     this.getNames(this.wotvUnits[dataId], 'unit');
@@ -527,7 +527,7 @@ export class JsonService {
         partyBuffsAwake: [],
         partyBuffsMax: [],
         stats: {},
-        image: visionCard.icon
+        image: visionCard.icon.toLowerCase()
       };
 
       this.getNames(this.wotvVisionCards[dataId], 'visionCard');
@@ -900,7 +900,7 @@ export class JsonService {
         type: this.jobEquip[this.equipments[tmrId].cat[0]],
         inmae: tmrId,
         skills: [],
-        image: this.equipments[tmrId].asset
+        image: this.equipments[tmrId].asset.toLowerCase()
       }
 
       Object.keys(this.equipments[tmrId].status[0]).forEach(stat => {
@@ -940,7 +940,7 @@ export class JsonService {
       buffs: [],
       stats: {},
       element: this.elements[esper.elem[0]],
-      image: esper.charaId
+      image: esper.charaId.toLowerCase()
     };
 
     this.getNames(this.wotvEspers[dataId], 'unit');
@@ -994,7 +994,8 @@ export class JsonService {
                 type: this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]],
                 minValue: this.buffs[buff["buff" + j]]["val" + i],
                 maxValue: this.buffs[buff["buff" + j]]["val" + i + "1"],
-                calcType: this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] : "unknow"
+                calcType: this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] : "unknow",
+                turn: this.buffs[buff["buff" + j]].turn
               });
               i++;
             } else {
