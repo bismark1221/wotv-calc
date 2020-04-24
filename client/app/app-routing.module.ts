@@ -8,6 +8,7 @@ import { LegalComponent } from './legal/legal.component';
 import { JsonComponent } from './json/json.component';
 
 import { UnitsComponent } from './units/units.component';
+import { UnitComponent } from './unit/unit.component';
 import { CardsComponent } from './cards/cards.component';
 import { EspersComponent } from './espers/espers.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
@@ -15,6 +16,7 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'units', component: UnitsComponent },
+  { path: 'unit/:unitId', component: UnitComponent },
   { path: 'cards', component: CardsComponent },
   { path: 'espers', component: EspersComponent },
   { path: 'equipments', component: EquipmentsComponent },

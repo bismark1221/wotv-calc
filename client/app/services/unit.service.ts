@@ -86,4 +86,12 @@ export class UnitService {
 
     return this.units.find(unit => unit.dataId === id);
   }
+
+  getUnitBySlug(slug: string): Unit {
+    if (!this.units || this.units.length === 0) {
+      this.getUnits();
+    }
+
+    return this.units.find(unit => unit.slug === slug);
+  }
 }

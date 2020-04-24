@@ -29,6 +29,7 @@ import { LegalComponent } from './legal/legal.component';
 import { JsonComponent } from './json/json.component';
 
 import { UnitsComponent } from './units/units.component';
+import { UnitComponent } from './unit/unit.component';
 import { CardsComponent } from './cards/cards.component';
 import { EspersComponent } from './espers/espers.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
@@ -63,6 +64,7 @@ export function createTranslateLoader(http: HttpClient) {
     LegalComponent,
     JsonComponent,
     UnitsComponent,
+    UnitComponent,
     CardsComponent,
     EspersComponent,
     EquipmentsComponent

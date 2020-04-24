@@ -1,25 +1,4 @@
-<div class="row unit form-group">
-  <div class="chainParameters allSelectUnit" #chainDiv>
-    <div class="inlineBlock verticalTop">
-      <div
-        class=" verticalTop selectUnitZone marginUnit">
-
-        <div class="inlineBlock firstSelectLevel">
-          <label>{{ 'chain.label.unit' | translate }}</label>
-          <div>
-            <select2
-              [data]="observableUnits"
-              [value]="idSelected"
-              [options]="select2Options"
-              (valueChanged)="selectUnit($event.value);"></select2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -50,7 +29,7 @@
 </div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -116,7 +95,7 @@
 </div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -171,7 +150,7 @@
   </table>
 </div>
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -216,7 +195,7 @@
 </div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -247,7 +226,7 @@
 </div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -272,7 +251,7 @@
 </div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -322,7 +301,7 @@
   </table>
 </div>
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -349,7 +328,7 @@
   </table>
 </div>
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
+<div class="row littleMarginTop">
   <table>
     <tbody>
       <tr>
@@ -366,7 +345,7 @@
   </table>
 </div>
 
-<div *ngIf="idSelected !== 'unselect'">
+<div>
   <div class="row littleMarginTop" *ngFor="let i of [0, 1, 2, 3]">
     <table>
       <tbody>
@@ -419,7 +398,7 @@
   </div>
 </div>
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect' && unit.limit">
+<div class="row littleMarginTop" *ngIf="unit.limit">
   <table>
     <tbody>
       <tr>

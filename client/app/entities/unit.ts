@@ -80,8 +80,21 @@ export class Unit {
   limit = new Skill();
   tmr = new Equipment();
   masterSkill = new Skill();
-  totalBuffs;
-  remainingBuffs;
+  totalBuffs = {
+    HP: 0,
+    TP: 0,
+    INITIAL_AP: 0,
+    ATK: 0,
+    DEF: 0,
+    MAG: 0,
+    SPR: 0,
+    DEX: 0,
+    AGI: 0,
+    LCK: 0,
+    CRITIC_RATE: 0,
+  };
+  remainingBuffs = [];
+  slug;
   
 
   constructFromJson(unit: Unit, translateService: TranslateService): void {
