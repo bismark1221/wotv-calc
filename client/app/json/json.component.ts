@@ -17,10 +17,15 @@ export class JsonComponent implements OnInit {
   espers = [];
   esperIds = [];
 
+  equipments = [];
+  equipmentIds = [];
+
+
   isCollapsed = {
     units: [],
     visionCards: [],
-    espers: []
+    espers: [],
+    equipments: []
   };
 
   constructor(private jsonService: JsonService) {}
@@ -49,6 +54,14 @@ export class JsonComponent implements OnInit {
 
       for (let i = 0; i < this.esperIds.length; i++) {
         this.isCollapsed.espers[i] = true;
+      }
+
+      // @ts-ignore
+      this.equipments = response.equipments;
+      this.equipmentIds = Object.keys(this.equipments)
+
+      for (let i = 0; i < this.equipmentIds.length; i++) {
+        this.isCollapsed.equipments[i] = true;
       }
     });
   }

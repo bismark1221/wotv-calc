@@ -22,6 +22,14 @@
 <br />
 
 
+### Raw Equipments ###
+<div>
+  <textarea id="rawJson">{{ equipments | json }}</textarea>
+</div>
+
+<br />
+
+
 ### Units ###
 <div *ngFor="let unitId of unitIds; let j = index">
   {{j}} -- {{units[unitId].names.en}}
@@ -54,5 +62,17 @@
   </button>
   <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.espers[j]">
     <pre [innerHtml]="espers[esperId] | prettyjson"></pre>
+  </div>
+</div>
+
+
+### Equipments ###
+<div *ngFor="let equipmentId of equipmentIds; let j = index">
+  {{j}} -- {{equipments[equipmentId].names.en}}
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.equipments[j] = !isCollapsed.equipments[j]" [attr.aria-expanded]="!isCollapsed.equipments[j]">
+    Toggle
+  </button>
+  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.equipments[j]">
+    <pre [innerHtml]="equipments[equipmentId] | prettyjson"></pre>
   </div>
 </div>

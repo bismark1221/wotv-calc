@@ -45,7 +45,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -78,7 +79,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -162,7 +164,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -196,7 +199,8 @@
         "damage": {
           "minValue": 15,
           "maxValue": 41,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -266,7 +270,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -348,7 +353,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -385,7 +391,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -525,7 +532,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -564,7 +572,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -602,7 +611,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -644,7 +654,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -675,7 +686,8 @@
           "minValue": -94,
           "maxValue": -86,
           "type": "slash",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -715,7 +727,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -754,7 +767,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -1471,7 +1485,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "slash"
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -1579,6 +1594,11 @@
         },
         "effects": [
           {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
+          {
             "type": "ATK",
             "minValue": 30,
             "maxValue": 50,
@@ -1626,7 +1646,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -1682,7 +1703,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -1773,7 +1795,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -1793,7 +1821,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -1823,7 +1852,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -1862,7 +1892,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -1960,7 +1991,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -1995,7 +2027,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -2054,7 +2087,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -2134,7 +2168,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -2164,7 +2199,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "0"
+          "type": "0",
+          "effType": "DAMAGE"
         },
         "elem": [
           "dark"
@@ -2198,7 +2234,8 @@
           "minValue": -80,
           "maxValue": -63,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -2238,7 +2275,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -2248,7 +2286,13 @@
         "names": {
           "en": "Hazard Break"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_M_4",
         "slot": 1,
         "cost": {
@@ -2272,7 +2316,8 @@
         "damage": {
           "minValue": 90,
           "maxValue": 125,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -2401,7 +2446,8 @@
           "maxValue": 85,
           "minSpeed": 140,
           "maxSpeed": 320,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3035,7 +3081,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "slash"
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -3149,7 +3196,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3274,7 +3322,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -3313,7 +3362,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -3349,7 +3399,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3381,7 +3432,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3413,7 +3465,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3478,7 +3531,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3512,7 +3566,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -3576,7 +3631,8 @@
         "damage": {
           "minValue": 20,
           "maxValue": 37,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3616,7 +3672,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -3660,7 +3717,8 @@
         "damage": {
           "minValue": -35,
           "maxValue": -9,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3723,7 +3781,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3753,7 +3812,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3819,7 +3879,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3858,7 +3919,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 40,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -3982,7 +4044,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -4683,7 +4746,8 @@
         "damage": {
           "minValue": 20,
           "maxValue": 37,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -4804,7 +4868,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -4915,7 +4980,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 40,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -4980,7 +5046,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5011,7 +5078,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -5046,7 +5114,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5082,7 +5151,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -5119,7 +5189,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -5133,6 +5204,11 @@
           "en": "Hazard Form"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
           {
             "type": "ATK",
             "minValue": 30,
@@ -5195,7 +5271,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5234,7 +5311,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5293,7 +5371,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5332,7 +5411,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5371,7 +5451,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5401,7 +5482,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5411,7 +5493,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -5431,7 +5519,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5480,7 +5569,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -5567,7 +5657,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -6147,7 +6238,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "slash"
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -6308,7 +6400,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6391,7 +6484,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6466,7 +6560,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6548,7 +6643,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6581,7 +6677,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -6698,7 +6795,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6728,7 +6826,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 96,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6760,7 +6859,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6826,7 +6926,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6932,7 +7033,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -6966,7 +7068,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -7019,7 +7122,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "slash",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -7111,7 +7215,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -7689,7 +7794,8 @@
       "damage": {
         "minValue": 75,
         "maxValue": 110,
-        "type": "slash"
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -7732,6 +7838,11 @@
           },
           "dataId": "SK_SHI_LW_ENBT_1_1",
           "effects": [
+            {
+              "type": "HP_COST",
+              "value": 25,
+              "calcType": "percent"
+            },
             {
               "type": "ATK",
               "minValue": 55,
@@ -7803,7 +7914,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -7835,7 +7947,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -7968,7 +8081,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -8001,7 +8115,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8033,7 +8148,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8136,7 +8252,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8247,7 +8364,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8313,7 +8431,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8416,7 +8535,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8515,7 +8635,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -8551,7 +8672,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -8707,7 +8829,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -9262,7 +9385,8 @@
       "damage": {
         "minValue": 75,
         "maxValue": 110,
-        "type": "strike"
+        "type": "strike",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -9389,7 +9513,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9515,7 +9640,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -9554,7 +9680,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -9590,7 +9717,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9622,7 +9750,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9652,7 +9781,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9683,7 +9813,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -9718,7 +9849,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9752,7 +9884,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9786,7 +9919,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -9800,6 +9934,11 @@
           "en": "Hazard Form"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
           {
             "type": "ATK",
             "minValue": 30,
@@ -9859,7 +9998,8 @@
         "damage": {
           "minValue": -35,
           "maxValue": -9,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9898,7 +10038,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9928,7 +10069,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -9999,7 +10141,8 @@
           "minValue": -80,
           "maxValue": -63,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -10042,7 +10185,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -10072,7 +10216,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -10082,7 +10227,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -10102,7 +10253,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -10133,7 +10285,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -10214,7 +10367,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -10811,7 +10965,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "pierce"
+        "type": "pierce",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -10955,7 +11110,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -10998,7 +11154,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -11077,7 +11234,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -11151,7 +11309,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -11187,7 +11346,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -11226,7 +11386,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -11327,7 +11488,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -11424,7 +11586,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -11497,7 +11660,8 @@
           "maxValue": 222,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -11530,7 +11694,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "0"
+          "type": "0",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -11569,7 +11734,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -12463,7 +12629,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "magic"
+        "type": "magic",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -12968,7 +13135,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -13066,7 +13234,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -13216,7 +13385,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -13481,7 +13651,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -14297,7 +14468,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -14407,7 +14579,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -14440,7 +14613,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -14581,7 +14755,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -14622,7 +14797,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -14690,7 +14866,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -14724,7 +14901,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -14778,7 +14956,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -14813,7 +14992,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -14886,7 +15066,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -14953,7 +15134,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -14989,7 +15171,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -15081,7 +15264,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -15118,7 +15302,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -15768,7 +15953,8 @@
       "damage": {
         "minValue": 78,
         "maxValue": 113,
-        "type": "strike"
+        "type": "strike",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -15900,7 +16086,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -16326,7 +16513,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -16493,7 +16681,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17527,7 +17716,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17561,7 +17751,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -17633,7 +17824,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -17708,7 +17900,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17747,7 +17940,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17786,7 +17980,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17828,7 +18023,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17839,6 +18035,11 @@
           "en": "Hazard Form"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
           {
             "type": "ATK",
             "minValue": 30,
@@ -17867,7 +18068,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -17887,7 +18094,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -17947,7 +18155,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18021,7 +18230,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "slash",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -18058,7 +18268,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18089,7 +18300,8 @@
           "minValue": -94,
           "maxValue": -86,
           "type": "slash",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -18122,7 +18334,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18159,7 +18372,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18211,7 +18425,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18246,7 +18461,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18341,7 +18557,13 @@
         "names": {
           "en": "Hazard Break"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_M_4_SUB",
         "slot": 2,
         "cost": {
@@ -18364,7 +18586,8 @@
         "damage": {
           "minValue": 90,
           "maxValue": 125,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -18426,7 +18649,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -19067,7 +19291,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19204,7 +19429,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19240,7 +19466,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -19276,7 +19503,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19308,7 +19536,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19411,7 +19640,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19448,7 +19678,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -19577,7 +19808,8 @@
         "damage": {
           "minValue": -35,
           "maxValue": -9,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19636,7 +19868,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19678,7 +19911,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19708,7 +19942,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19748,7 +19983,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -19900,7 +20136,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -20560,7 +20797,8 @@
         "damage": {
           "minValue": 20,
           "maxValue": 37,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -20681,7 +20919,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -20796,7 +21035,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 40,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -20859,7 +21099,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -20927,7 +21168,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -20961,7 +21203,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -21017,7 +21260,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -21102,7 +21346,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -21132,7 +21377,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "0"
+          "type": "0",
+          "effType": "DAMAGE"
         },
         "elem": [
           "lightning"
@@ -21195,7 +21441,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -21266,7 +21513,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -21371,7 +21619,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22068,7 +22317,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22224,7 +22474,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -22296,7 +22547,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22385,7 +22637,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22421,7 +22674,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -22485,7 +22739,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -22557,7 +22812,8 @@
           "maxValue": 85,
           "minSpeed": 140,
           "maxSpeed": 320,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22622,7 +22878,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22655,7 +22912,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22719,7 +22977,8 @@
           "maxValue": 125,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22840,7 +23099,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -22932,7 +23192,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -23579,7 +23840,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -23726,7 +23988,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -23795,7 +24058,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -23871,7 +24135,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -24051,7 +24316,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "dark"
@@ -24089,7 +24355,8 @@
         "damage": {
           "minValue": 13,
           "maxValue": 39,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -24151,7 +24418,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -24214,7 +24482,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -24254,7 +24523,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -24366,7 +24636,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -24422,7 +24693,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -25355,7 +25627,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -25394,7 +25667,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -25462,7 +25736,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -25476,6 +25751,11 @@
           "en": "Hazard Form"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
           {
             "type": "ATK",
             "minValue": 30,
@@ -25524,7 +25804,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25563,7 +25844,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25599,7 +25881,8 @@
         "damage": {
           "minValue": 75,
           "maxValue": 110,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25670,7 +25953,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25732,7 +26016,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25742,7 +26027,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -25762,7 +26053,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25812,7 +26104,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -25898,7 +26191,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -26565,7 +26859,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -26606,7 +26901,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -26818,7 +27114,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -26852,7 +27149,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -26959,7 +27257,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -26994,7 +27293,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -27054,7 +27354,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -27131,7 +27432,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -27208,7 +27510,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -27281,7 +27584,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -27402,7 +27706,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -28118,7 +28423,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -28226,7 +28532,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -28469,7 +28776,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -28593,7 +28901,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "wind"
@@ -28768,7 +29077,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -28866,7 +29176,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -29668,7 +29979,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -29700,7 +30012,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -29799,7 +30112,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -29833,7 +30147,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -29866,7 +30181,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -29898,7 +30214,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -29937,7 +30254,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -30089,7 +30407,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -30280,7 +30599,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -30324,7 +30644,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -30582,7 +30903,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -30644,7 +30966,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -31282,7 +31605,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -31348,7 +31672,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -31465,7 +31790,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -31609,7 +31935,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -31680,7 +32007,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -31717,7 +32045,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -31775,7 +32104,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -31810,7 +32140,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -31916,7 +32247,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -32083,7 +32415,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -33200,7 +33533,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -33232,7 +33566,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -33324,7 +33659,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -33389,7 +33725,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -33429,7 +33766,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -33509,7 +33847,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -33575,7 +33914,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -33611,7 +33951,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -34419,6 +34760,11 @@
         },
         "effects": [
           {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
+          {
             "type": "ATK",
             "minValue": 30,
             "maxValue": 50,
@@ -34466,7 +34812,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -34522,7 +34869,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -34613,7 +34961,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34623,7 +34972,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -34643,7 +34998,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34673,7 +35029,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34712,7 +35069,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34751,7 +35109,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34793,7 +35152,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34915,7 +35275,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -34997,7 +35358,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -35031,7 +35393,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -35062,7 +35425,8 @@
           "minValue": -80,
           "maxValue": -63,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -35104,7 +35468,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -35139,7 +35504,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -35149,7 +35515,13 @@
         "names": {
           "en": "Hazard Break"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_M_4",
         "slot": 1,
         "cost": {
@@ -35173,7 +35545,8 @@
         "damage": {
           "minValue": 90,
           "maxValue": 125,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -35208,7 +35581,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -35294,7 +35668,8 @@
           "minValue": -94,
           "maxValue": -86,
           "type": "slash",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -35359,7 +35734,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -36042,7 +36418,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -36252,7 +36629,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -36342,7 +36720,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -36385,7 +36764,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -36458,7 +36838,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -36494,7 +36875,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -36548,7 +36930,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -36589,7 +36972,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -36629,7 +37013,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -36962,7 +37347,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -37031,7 +37417,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -37678,7 +38065,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -37769,7 +38157,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -37844,7 +38233,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -37883,7 +38273,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -37913,7 +38304,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -37950,7 +38342,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -38015,7 +38408,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -38049,7 +38443,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -38133,7 +38528,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "slash",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -38210,7 +38606,8 @@
           "minValue": -94,
           "maxValue": -86,
           "type": "slash",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -38332,7 +38729,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -38374,7 +38772,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -38445,7 +38844,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -38482,7 +38882,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -39156,7 +39557,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "dark"
@@ -39197,7 +39599,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -39280,7 +39683,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -39355,7 +39759,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -39427,7 +39832,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -39738,7 +40144,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "dark"
@@ -39780,7 +40187,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -39820,7 +40228,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -39861,7 +40270,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -39963,7 +40373,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -40013,7 +40424,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "slash",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -40053,7 +40465,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -40725,7 +41138,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -40844,7 +41258,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -40882,7 +41297,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -40952,7 +41368,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -40994,7 +41411,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41026,7 +41444,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41060,7 +41479,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41120,7 +41540,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41199,7 +41620,8 @@
           "maxValue": 85,
           "minSpeed": 140,
           "maxSpeed": 320,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41233,7 +41655,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41265,7 +41688,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41340,7 +41764,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41372,7 +41797,8 @@
           "maxValue": 125,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41407,7 +41833,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -41480,7 +41907,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -42213,7 +42641,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -42683,7 +43112,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -42730,7 +43160,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -44135,7 +44566,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -44225,7 +44657,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -44331,7 +44764,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -44412,7 +44846,8 @@
         "damage": {
           "minValue": 18,
           "maxValue": 44,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -44671,7 +45106,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -45307,7 +45743,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45442,7 +45879,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45478,7 +45916,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -45514,7 +45953,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45546,7 +45986,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45733,7 +46174,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -45774,7 +46216,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45815,7 +46258,8 @@
         "damage": {
           "minValue": -35,
           "maxValue": -9,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45882,7 +46326,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45924,7 +46369,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -45998,7 +46444,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -46097,7 +46544,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 96,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -46135,7 +46583,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -46826,7 +47275,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -46867,7 +47317,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47020,7 +47471,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -47094,7 +47546,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47128,7 +47581,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47164,7 +47618,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -47206,7 +47661,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47238,7 +47694,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -47275,7 +47732,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -47340,7 +47798,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -47380,7 +47839,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47453,7 +47913,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47486,7 +47947,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -47554,7 +48016,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47596,7 +48059,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -47725,7 +48189,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -48403,7 +48868,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -48446,7 +48912,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -48519,7 +48986,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -48592,7 +49060,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -48628,7 +49097,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -48667,7 +49137,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -48733,7 +49204,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -48772,7 +49244,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -48858,7 +49331,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -48890,7 +49364,8 @@
           "maxValue": 222,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -48925,7 +49400,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -48961,7 +49437,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -49104,7 +49581,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -49138,7 +49616,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -49191,7 +49670,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50040,7 +50520,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -50167,7 +50648,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50231,7 +50713,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50265,7 +50748,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50326,7 +50810,8 @@
         "damage": {
           "minValue": 20,
           "maxValue": 37,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50366,7 +50851,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -50399,7 +50885,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50468,7 +50955,8 @@
         "damage": {
           "minValue": 75,
           "maxValue": 110,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50605,7 +51093,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 40,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50676,7 +51165,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -50713,7 +51203,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -51396,7 +51887,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "earth"
@@ -51532,7 +52024,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -51661,7 +52154,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -51700,7 +52194,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "earth"
@@ -51777,7 +52272,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -51809,7 +52305,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "earth"
@@ -51846,7 +52343,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -51900,7 +52398,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -51941,7 +52440,8 @@
         "damage": {
           "minValue": 18,
           "maxValue": 44,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -51973,7 +52473,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -52004,7 +52505,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -52044,7 +52546,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -52110,7 +52613,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -52146,7 +52650,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -52181,7 +52686,8 @@
           "maxValue": 222,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -52267,7 +52773,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -52944,7 +53451,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -53347,7 +53855,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -53382,7 +53891,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -53499,7 +54009,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -53748,7 +54259,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54465,7 +54977,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54506,7 +55019,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54725,7 +55239,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54759,7 +55274,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54791,7 +55307,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54889,7 +55406,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -54925,7 +55443,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -55047,7 +55566,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -55120,7 +55640,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -55153,7 +55674,8 @@
           "minValue": -96,
           "maxValue": -88,
           "type": "pierce",
-          "pool": "AP"
+          "pool": "AP",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -55221,7 +55743,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -55345,7 +55868,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -55383,7 +55907,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 70,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56007,7 +56532,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -56050,7 +56576,8 @@
           "maxValue": 25,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -56129,7 +56656,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -56199,7 +56727,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -56235,7 +56764,8 @@
           "minSpeed": 160,
           "maxSpeed": 360,
           "type": "magic",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -56274,7 +56804,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -56348,7 +56879,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56468,7 +57000,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56543,7 +57076,8 @@
           "maxValue": 222,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -56580,7 +57114,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56616,7 +57151,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -56691,7 +57227,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56758,7 +57295,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56849,7 +57387,8 @@
         "damage": {
           "minValue": 75,
           "maxValue": 110,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -56943,7 +57482,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -57848,7 +58388,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -57880,7 +58421,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -57977,7 +58519,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "wind"
@@ -58010,7 +58553,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -58079,7 +58623,8 @@
         "damage": {
           "minValue": 75,
           "maxValue": 110,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -58154,7 +58699,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -58228,7 +58774,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -58332,7 +58879,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -58370,7 +58918,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -59013,7 +59562,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59046,7 +59596,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -59126,7 +59677,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59160,7 +59712,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59230,7 +59783,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59269,7 +59823,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59339,7 +59894,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59484,7 +60040,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59551,7 +60108,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59590,7 +60148,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59659,7 +60218,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -59774,7 +60334,8 @@
           "minValue": -94,
           "maxValue": -86,
           "type": "slash",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -59833,7 +60394,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -60476,7 +61038,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -60643,7 +61206,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -60775,7 +61339,8 @@
           "minValue": -80,
           "maxValue": -60,
           "type": "0",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -60810,7 +61375,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -60885,7 +61451,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -60899,6 +61466,11 @@
           "en": "Hazard Form"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
           {
             "type": "ATK",
             "minValue": 30,
@@ -60947,7 +61519,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -60986,7 +61559,8 @@
         "damage": {
           "minValue": -40,
           "maxValue": -14,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -61089,7 +61663,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -61123,7 +61698,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -61156,7 +61732,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -61166,7 +61743,13 @@
         "names": {
           "en": "Hazard Spin"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_LW_SWN_S_4",
         "slot": 2,
         "cost": {
@@ -61186,7 +61769,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -61325,7 +61909,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -61947,7 +62532,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "magic"
+        "type": "magic",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -62066,7 +62652,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -62243,7 +62830,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -62467,7 +63055,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -62543,7 +63132,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -62747,7 +63337,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -62861,7 +63452,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -63611,7 +64203,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -63726,7 +64319,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -63789,7 +64383,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -63960,7 +64555,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -63995,7 +64591,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -64053,7 +64650,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -64086,7 +64684,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -64127,6 +64726,11 @@
           "en": "Superbolide"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 15,
+            "calcType": "percent"
+          },
           {
             "type": "REDUCE_DAMAGE",
             "minValue": 30,
@@ -64187,7 +64791,8 @@
         "damage": {
           "minValue": 18,
           "maxValue": 44,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -64220,7 +64825,8 @@
           "maxValue": 125,
           "minSpeed": 120,
           "maxSpeed": 200,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -64334,7 +64940,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65054,7 +65661,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65201,7 +65809,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65266,7 +65875,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -65342,7 +65952,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65372,7 +65983,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "0"
+          "type": "0",
+          "effType": "DAMAGE"
         },
         "elem": [
           "lightning"
@@ -65417,7 +66029,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65448,7 +66061,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -65549,7 +66163,8 @@
           "maxValue": 41,
           "minSpeed": 120,
           "maxSpeed": 320,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65627,7 +66242,8 @@
         "damage": {
           "minValue": 13,
           "maxValue": 39,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65661,7 +66277,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65693,7 +66310,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65766,7 +66384,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65806,7 +66425,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -65841,7 +66461,8 @@
           "maxValue": 85,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -66550,7 +67171,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "missile"
+        "type": "missile",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -66675,7 +67297,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -66946,7 +67569,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "0"
+          "type": "0",
+          "effType": "DAMAGE"
         },
         "elem": [
           "dark"
@@ -67050,7 +67674,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -67085,7 +67710,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -67149,7 +67775,8 @@
         "damage": {
           "minValue": 20,
           "maxValue": 37,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -67189,7 +67816,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -67225,7 +67853,8 @@
         "damage": {
           "minValue": -30,
           "maxValue": -10,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -67295,7 +67924,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -67389,7 +68019,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 40,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -67473,7 +68104,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68172,7 +68804,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68219,7 +68852,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -68330,7 +68964,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68399,7 +69034,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68466,7 +69102,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68536,7 +69173,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68688,7 +69326,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68749,7 +69388,8 @@
           "maxValue": 170,
           "minSpeed": 120,
           "maxSpeed": 240,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68788,7 +69428,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68824,7 +69465,8 @@
         "damage": {
           "minValue": 75,
           "maxValue": 110,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -68854,7 +69496,8 @@
         "damage": {
           "minValue": -30,
           "maxValue": -4,
-          "type": "slash"
+          "type": "slash",
+          "effType": "ABSORB"
         }
       },
       {
@@ -68990,7 +69633,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -69046,7 +69690,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -69615,7 +70260,8 @@
       "damage": {
         "minValue": 75,
         "maxValue": 110,
-        "type": "slash"
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -69774,7 +70420,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -69921,7 +70568,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -70177,7 +70825,8 @@
           "maxValue": 90,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -70207,7 +70856,8 @@
         "damage": {
           "minValue": 35,
           "maxValue": 96,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -70368,7 +71018,8 @@
           "maxValue": 120,
           "minSpeed": 120,
           "maxSpeed": 280,
-          "type": "pierce"
+          "type": "pierce",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -70433,7 +71084,8 @@
           "minValue": -85,
           "maxValue": -50,
           "type": "0",
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -71237,7 +71889,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -71269,7 +71922,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -71395,7 +72049,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -71428,7 +72083,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -71460,7 +72116,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -71536,7 +72193,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -71573,7 +72231,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -71605,7 +72264,8 @@
           "maxValue": 41,
           "minSpeed": 160,
           "maxSpeed": 360,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -71761,7 +72421,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -71870,7 +72531,8 @@
           "minValue": -94,
           "maxValue": -86,
           "type": "slash",
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -71978,7 +72640,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -72148,7 +72811,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       }
     ],
@@ -72787,7 +73451,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 60,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -72797,6 +73462,11 @@
           "en": "Chant"
         },
         "effects": [
+          {
+            "type": "HP_COST",
+            "value": 10,
+            "calcType": "percent"
+          },
           {
             "type": "HP",
             "minValue": 180,
@@ -72914,7 +73584,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -72953,7 +73624,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -72987,7 +73659,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -73151,7 +73824,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 31,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -73243,7 +73917,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -73336,7 +74011,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -73369,7 +74045,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "0"
+          "type": "0",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -73417,7 +74094,8 @@
         "damage": {
           "minValue": 75,
           "maxValue": 110,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -73459,7 +74137,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -73521,7 +74200,8 @@
         "damage": {
           "minValue": 46,
           "maxValue": 76,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -73633,7 +74313,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -74242,7 +74923,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "magic"
+        "type": "magic",
+        "effType": "DAMAGE"
       },
       "elem": [
         "neutral"
@@ -74366,7 +75048,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74395,7 +75078,8 @@
         "damage": {
           "minValue": -80,
           "maxValue": -60,
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -74527,7 +75211,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 70,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74561,7 +75246,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -74598,7 +75284,8 @@
         "damage": {
           "minValue": -85,
           "maxValue": -50,
-          "pool": "HP"
+          "pool": "HP",
+          "effType": "ABSORB"
         }
       },
       {
@@ -74608,7 +75295,13 @@
         "names": {
           "en": "Unholy Sacrifice"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_FFT_GFGR_S_5",
         "slot": 2,
         "cost": {
@@ -74628,7 +75321,8 @@
         "damage": {
           "minValue": 100,
           "maxValue": 135,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74687,7 +75381,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 75,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74720,7 +75415,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -74755,7 +75451,8 @@
         "damage": {
           "minValue": -95,
           "maxValue": -87,
-          "type": "missile"
+          "type": "missile",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74789,7 +75486,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74841,7 +75539,8 @@
         "damage": {
           "minValue": 7,
           "maxValue": 33,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74851,7 +75550,13 @@
         "names": {
           "en": "Abyssal Blade"
         },
-        "effects": [],
+        "effects": [
+          {
+            "type": "HP_COST",
+            "value": 25,
+            "calcType": "percent"
+          }
+        ],
         "dataId": "SK_FFT_GFGR_M_3",
         "slot": 1,
         "cost": {
@@ -74875,7 +75580,8 @@
         "damage": {
           "minValue": 90,
           "maxValue": 125,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -74907,7 +75613,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -75073,7 +75780,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "ABSORB"
         }
       },
       {
@@ -75103,7 +75811,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -75137,7 +75846,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "neutral"
@@ -75178,7 +75888,8 @@
         "damage": {
           "minValue": 70,
           "maxValue": 105,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -75873,7 +76584,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76059,7 +76771,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76164,7 +76877,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76194,7 +76908,8 @@
         "damage": {
           "minValue": -80,
           "maxValue": -60,
-          "pool": "TP"
+          "pool": "TP",
+          "effType": "ABSORB"
         },
         "elem": [
           "neutral"
@@ -76269,7 +76984,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76306,7 +77022,8 @@
         "damage": {
           "minValue": 40,
           "maxValue": 91,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76336,7 +77053,8 @@
         "damage": {
           "minValue": 20,
           "maxValue": 37,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76447,7 +77165,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "ABSORB"
         }
       },
       {
@@ -76486,7 +77205,8 @@
         "damage": {
           "minValue": 0,
           "maxValue": 26,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76524,7 +77244,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76563,7 +77284,8 @@
         "damage": {
           "minValue": 5,
           "maxValue": 40,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76615,7 +77337,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76654,7 +77377,8 @@
         "damage": {
           "minValue": 30,
           "maxValue": 65,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76693,7 +77417,8 @@
         "damage": {
           "minValue": -5,
           "maxValue": 21,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76770,7 +77495,8 @@
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         }
       },
       {
@@ -76829,7 +77555,8 @@
         "knockback": {},
         "damage": {
           "minValue": 0,
-          "type": "0"
+          "type": "0",
+          "effType": "0"
         },
         "elem": [
           "neutral"
@@ -77411,7 +78138,8 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
-        "type": "slash"
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {
@@ -77756,7 +78484,8 @@
       "damage": {
         "minValue": 78,
         "maxValue": 113,
-        "type": "strike"
+        "type": "strike",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": {

@@ -31,6 +31,7 @@ import { JsonComponent } from './json/json.component';
 import { UnitsComponent } from './units/units.component';
 import { CardsComponent } from './cards/cards.component';
 import { EspersComponent } from './espers/espers.component';
+import { EquipmentsComponent } from './equipments/equipments.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -63,7 +64,8 @@ export function createTranslateLoader(http: HttpClient) {
     JsonComponent,
     UnitsComponent,
     CardsComponent,
-    EspersComponent
+    EspersComponent,
+    EquipmentsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

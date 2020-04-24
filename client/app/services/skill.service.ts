@@ -429,6 +429,12 @@ export class SkillService {
       case "EVOCATION_MAGIC" :
         html = "Boost Evocation damage" + this.getValue(effect) + this.getTurns(effect)
       break
+      case "HP_COST" :
+        html = "Consumes own HP" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "BOOST_DAMAGE_AGAINST_METAL" :
+        html = "Boost damage against metal unit" + this.getValue(effect) + this.getTurns(effect)
+      break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
@@ -450,7 +456,16 @@ export class SkillService {
   }
 
   formatDamage(unit, skill, damage) {
-    let html = (skill.elem ? skill.elem : unit.element) + " " + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " + this.getValue(damage, false);
+    let html = "";
+
+    if (typeof(damage.minValue) === "number" && damage.minValue !== 0 || typeof(damage.value) === "number" && damage.value !== 0) {
+      html = (damage.effType && damage.effType !== "DAMAGE" ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "") 
+      + (damage.pool && damage.pool !== "HP" ? " " + damage.pool + " " : "")
+      + (skill.elem ? skill.elem : unit.element) + " " 
+      + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " 
+      + this.getValue(damage, false);
+    }
+
     return this.upperCaseFirst(html)
   }
 

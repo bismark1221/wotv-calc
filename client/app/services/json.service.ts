@@ -7,6 +7,7 @@ export class JsonService {
   wotvUnits = {};
   wotvVisionCards = {};
   wotvEspers = {};
+  wotvEquipments = {};
 
   units = {};
   skills = {};
@@ -126,6 +127,7 @@ export class JsonService {
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
     123: "IMBUE",
+    134: "BOOST_DAMAGE_AGAINST_METAL",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
     151: "INITIAL_AP",
@@ -172,6 +174,12 @@ export class JsonService {
     113: "STONE"
   }
 
+  damageEffectType = [
+    "0",
+    "DAMAGE",
+    "DAMAGE",
+    "ABSORB"
+  ]
 
   damageTypes = [
     "0",
@@ -425,7 +433,7 @@ export class JsonService {
       this.jsonVisionCards(),
       this.jsonVisionCardNames(),
       this.jsonEspersBoards(),
-      this.jsonWeathers()
+      this.jsonWeathers(),
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
       this.names.unit = this.formatNames(responses[1]);
@@ -448,7 +456,8 @@ export class JsonService {
       return {
         units: this.wotvUnits,
         visionCards: this.wotvVisionCards,
-        espers: this.wotvEspers
+        espers: this.wotvEspers,
+        equipments: this.wotvEquipments
       };
     });
   }
@@ -484,6 +493,10 @@ export class JsonService {
 
     Object.keys(this.visionCards).forEach(visionCardId => {
       this.addVisionCard(this.visionCards[visionCardId]);
+    });
+
+    Object.keys(this.equipments).forEach(equipmentId => {
+      this.addEquipment(this.equipments[equipmentId]);
     });
   }
 
@@ -667,6 +680,15 @@ export class JsonService {
         type: this.skills[skillId].cost_type == 0 ? "AP" : "TP",
         value: this.skills[skillId].cost_type == 0 ? this.skills[skillId].cost_ap : this.skills[skillId].cost_mp
       }
+
+      if (this.skills[skillId].hp_cost) {
+        skill.effects.push({
+          type: "HP_COST",
+          value: this.skills[skillId].hp_cost,
+          calcType: "percent"
+        });
+      }
+
       skill.type = skill.slot === 4 ? "counter" : "active"
       skill.count = this.skills[skillId].count
       skill.range = {
@@ -730,7 +752,7 @@ export class JsonService {
           maxValue: this.skills[skillId].barrier.ecut,
           calcType: "percent",
           turn: this.skills[skillId].barrier.val,
-          turnType: this.skills[skillId].barrier.type !== 3 ? "TURNS" : "COUNT"
+          turnType: this.skills[skillId].barrier.type !== 3 ? "TURNS" : "COUNT",
         });
       }
 
@@ -746,7 +768,8 @@ export class JsonService {
           minSpeed: this.skills[skillId].ct_spd,
           maxSpeed: this.skills[skillId].ct_spd1,
           type: this.damageTypes[this.skills[skillId].atk_det],
-          pool: this.damagePool[this.skills[skillId].eff_dst]
+          pool: this.damagePool[this.skills[skillId].eff_dst],
+          effType: this.damageEffectType[this.skills[skillId].eff_type ]
         }
 
         if (this.skills[skillId].eff_dst && !this.damagePool[this.skills[skillId].eff_dst]) {
@@ -814,7 +837,9 @@ export class JsonService {
 
     } else if (skill.slot === 3) {
       skill.type = "passive"
-      this.skills[skillId].s_buffs.forEach(buff => {
+      let buffs = this.skills[skillId].t_buffs ? this.skills[skillId].t_buffs : this.skills[skillId].s_buffs
+
+      buffs.forEach(buff => {
         let finished = false;
         let i = 1;
         while (!finished) {
@@ -898,7 +923,7 @@ export class JsonService {
         names: {en: this.names.equipment[tmrId]},
         stats: {},
         type: this.jobEquip[this.equipments[tmrId].cat[0]],
-        inmae: tmrId,
+        dataId: tmrId,
         skills: [],
         image: this.equipments[tmrId].asset.toLowerCase()
       }
@@ -1010,6 +1035,50 @@ export class JsonService {
     });
   }
 
-  // Sterne : passif loose HP
-  // Orlandeau : absorb damage
+  private addEquipment(equipment) {
+    let dataId = equipment.iname;
+    let rType = equipment.rtype !=="AF_LOT_50" && equipment.rtype !=="AF_LOT_TRUST" ? equipment.rtype : dataId;
+
+    if (this.names.equipment[dataId]) {
+      if (!this.wotvEquipments[rType]) {
+        this.wotvEquipments[rType] = {
+          names: {en: this.names.equipment[dataId]},
+          stats: {},
+          type: this.jobEquip[this.equipments[dataId].cat[0]],
+          dataId: dataId,
+          skills: [],
+          rarity: this.rarity[equipment.rare],
+          image: this.equipments[dataId].asset.toLowerCase()
+        }
+
+        Object.keys(this.equipments[dataId].status[0]).forEach(stat => {
+          this.wotvEquipments[rType].stats[this.stats.unit[stat]] = {
+            min: this.equipments[dataId].status[0][stat],
+            max: this.equipments[dataId].status[1] ? this.equipments[dataId].status[1][stat] : this.equipments[dataId].status[0][stat]
+          }
+        })
+      }
+
+      let lastSkillId = [];
+      let skills = [];
+      for (let i = 1; i <= 5; i++) {
+        if (this.equipments[dataId]["skl" + i]) {
+          for (let j = 0; j < this.equipments[dataId]["skl" + i].length; j++) {
+            if (lastSkillId[j] !== this.equipments[dataId]["skl" + i][j]) {
+              let skill = {
+                names: {en: this.names.skill[this.equipments[dataId]["skl" + i][j]]},
+                dataId: this.equipments[dataId]["skl" + i][j],
+                effects: [],
+                slot: this.skills[this.equipments[dataId]["skl" + i][j]].s_buffs || this.skills[this.equipments[dataId]["skl" + i][j]].type === 6 ? 3 : 1
+              }
+              this.updateSkill(this.wotvEquipments[rType], skill, this.equipments[dataId]["skl" + i][j]);
+              skills.push(skill)
+              lastSkillId[j] = this.equipments[dataId]["skl" + i][j]
+            }
+          }
+        }
+      }
+      this.wotvEquipments[rType].skills.push(skills)
+    }
+  }
 }
