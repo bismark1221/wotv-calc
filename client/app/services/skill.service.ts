@@ -23,6 +23,22 @@ export class SkillService {
 
   constructor(private translateService: TranslateService) {}
 
+  public sort(skills) {
+    return skills.sort((a: any, b: any) => {
+      if (a.jobLevel < b.jobLevel) {
+        return -1
+      } else if (a.jobLevel > b.jobLevel) {
+        return 1
+      } else {
+        if (a.unlockStar < b.unlockStar) {
+          return -1
+        } else if (a.unlockStar > b.unlockStar) {
+          return 1
+        }
+      }
+    });
+  }
+
   private getCalc(effect) {
     return this.calcTypeFormat[effect.calcType];
   }
@@ -435,6 +451,12 @@ export class SkillService {
       case "BOOST_DAMAGE_AGAINST_METAL" :
         html = "Boost damage against metal unit" + this.getValue(effect) + this.getTurns(effect)
       break
+      case "MOVE_UNIT" :
+        html = "Move unit to target panel"
+      break
+      case "SWITCH_POS" :
+        html = "Switch position with target"
+      break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
@@ -458,15 +480,20 @@ export class SkillService {
   formatDamage(unit, skill, damage) {
     let html = "";
 
-    if (typeof(damage.minValue) === "number" && damage.minValue !== 0 || typeof(damage.value) === "number" && damage.value !== 0) {
-      html = (damage.effType && damage.effType !== "DAMAGE" ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "") 
-      + (damage.pool && damage.pool !== "HP" ? " " + damage.pool + " " : "")
-      + (skill.elem ? skill.elem : unit.element) + " " 
-      + (damage.type !== "0" ? this.upperCaseFirst(damage.type) : "") + " damage " 
-      + this.getValue(damage, false);
+    if (skill.damage) {
+      if (damage.type) {
+        let image = (skill.elem ? skill.elem : unit.element) + "_" + damage.type.toLowerCase();
+        html = html + "<img class='damageSkillImg' src='assets/damage/" + image + ".png' />&nbsp;"
+      }
+
+      let pool = damage.pool && damage.pool !== "HP" ? " " + damage.pool + " " : "";
+
+      html = html + this.upperCaseFirst((damage.effType ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage") 
+      + (pool === "" && damage.effType === "ABSORB" ? " HP " : pool)
+      + this.getValue(damage, false));
     }
 
-    return this.upperCaseFirst(html)
+    return html
   }
 
   formatCounter(unit, skill, counter) {

@@ -103,9 +103,7 @@ export class UnitsComponent implements OnInit {
           effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
         });
 
-        if (skill.damage) {
-          skill.damageHtml = this.skillService.formatDamage(unit, skill, skill.damage);
-        }
+        skill.damageHtml = this.skillService.formatDamage(unit, skill, skill.damage);
 
         if (skill.counter) {
           skill.counterHtml = this.skillService.formatCounter(unit, skill, skill.counter);
@@ -113,6 +111,7 @@ export class UnitsComponent implements OnInit {
 
         this.skillService.formatRange(unit, skill);
       });
+      this.skillService.sort(unit.skills);
 
       if (unit.masterSkill) {
         unit.masterSkill.effects.forEach(effect => {
@@ -121,13 +120,13 @@ export class UnitsComponent implements OnInit {
       }
 
       if (unit.limit) {
+        unit.limit.basedHtml = unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + unit.limit.based.toLowerCase() + ".png' />" : "";
+
         unit.limit.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(unit, unit.limit, effect);
         });
 
-        if (unit.limit.damage) {
-          unit.limit.damageHtml = this.skillService.formatDamage(unit, unit.limit, unit.limit.damage);
-        }
+        unit.limit.damageHtml = this.skillService.formatDamage(unit, unit.limit, unit.limit.damage);
 
         this.skillService.formatRange(unit, unit.limit);
       }
@@ -160,6 +159,7 @@ export class UnitsComponent implements OnInit {
         unit.tmr.statsTypes = Object.keys(unit.tmr.stats)
 
         unit.tmr.skills.forEach(skill => {
+          skill.damageHtml = this.skillService.formatDamage(unit, skill, skill.damage);
           this.skillService.formatRange(unit, skill);
           skill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(unit, skill, effect);
@@ -203,5 +203,9 @@ export class UnitsComponent implements OnInit {
     }
 
     return skills;
+  }
+
+  getEquipementType(type) {
+    return this.equipmentService.getFormatType(type)
   }
 }

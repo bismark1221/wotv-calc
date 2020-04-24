@@ -1,9 +1,23 @@
-.elementImg, .damageImg, .statusAilmentImg, .skilImg {
-  height: 40px;
+.elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg {
+  height: 32px;
 }
 
 .rarityImg {
-  height: 30px;
+  height: 32px;
+}
+
+.mainJob {
+  height: 40px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+}
+
+.subJob {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
 }
 
 th {
@@ -20,8 +34,13 @@ td {
   padding: 0.3em 0.5em;
 }
 
+.limitBased{
+  border-right: none;
+}
 
-
+.noBorderLeft {
+  border-left: none;
+}
 
 
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { UnitService } from './unit.service'
+import { EquipmentService } from './equipment.service'
 
 @Injectable()
 export class JsonService {
@@ -182,7 +182,7 @@ export class JsonService {
   ]
 
   damageTypes = [
-    "0",
+    "all",
     "slash",
     "pierce",
     "strike",
@@ -201,6 +201,13 @@ export class JsonService {
     "ALL",
     "PHYSIC",
     "MAGIC"
+  ]
+
+  atkBased = [
+    "0",
+    "physic",
+    "magic",
+    "hybrid"
   ]
 
   stats = {
@@ -351,7 +358,7 @@ export class JsonService {
     40: "nullify"
   }
 
-  constructor(private http: HttpClient, private unitService: UnitService) {}
+  constructor(private http: HttpClient, private equipmentService: EquipmentService) {}
 
   private jsonUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Unit.json').toPromise();
@@ -511,14 +518,17 @@ export class JsonService {
       buffs: [],
       stats: {},
       element: this.elements[unit.elem[0]],
-      image: unit.charaId.toLowerCase()
+      image: unit.charaId.toLowerCase(),
+      equipments: {
+        weapons: [],
+        armors: []
+      }
     };
 
     this.getNames(this.wotvUnits[dataId], 'unit');
-    this.getJobNames(this.wotvUnits[dataId], unit.jobsets);
+    this.getJobInfos(this.wotvUnits[dataId], unit.jobsets);
 
     this.getStats(this.wotvUnits[dataId], unit.status, 'unit')
-    this.getJobsStats(this.wotvUnits[dataId], unit.jobsets)
     this.getLB(this.wotvUnits[dataId], unit.limit)
     this.getMasterSkill(this.wotvUnits[dataId], unit.mstskl)
     this.getTMR(this.wotvUnits[dataId], unit.trust)
@@ -558,14 +568,23 @@ export class JsonService {
     }
   }
 
-  private getJobNames(unit, jobs) {
+  private getJobInfos(unit, jobs) {
     for (let i = 0; i < 3; i++) {
+      unit.jobs[i].image = this.jobs[jobs[i]].mdl.toLowerCase();
       if (this.names.job[jobs[i]]) {
-        unit.jobs[i].en = this.names.job[jobs[i]]
+        unit.jobs[i].names = {en: this.names.job[jobs[i]]}
       } else {
-        unit.jobs[i].en = jobs[i];
+        unit.jobs[i].names = {en: jobs[i]}
       }
     }
+
+    this.jobs[jobs[0]].equips.forEach(equip => {
+      if (this.equipmentService.isWeapon(this.jobEquip[equip])) {
+        unit.equipments.weapons.push(this.jobEquip[equip])
+      } else {
+        unit.equipments.armors.push(this.jobEquip[equip])
+      }
+    });
   }
 
   private getSkillsAndBuffs(unit) {
@@ -701,6 +720,8 @@ export class JsonService {
         line: this.skills[skillId].line
       }
 
+      skill.based = this.skills[skillId].atk_type ? this.atkBased[this.skills[skillId].atk_type] : null
+
       skill.aoe = {
         s: this.skills[skillId].eff_s,
         l: this.skills[skillId].eff_l,
@@ -756,12 +777,22 @@ export class JsonService {
         });
       }
 
+      if (this.skills[skillId].chang) {
+        skill.effects.push({
+          type: "SWITCH_POS"
+        });
+      }
 
-      // check target 12 => ennemy -- 0 => self ??? for effects break
+      if (this.skills[skillId].move) {
+        skill.effects.push({
+          type: "MOVE_UNIT"
+        });
+      }
 
 
-
-      if (typeof(this.skills[skillId].eff_val) == "number") {
+      if (typeof(this.skills[skillId].eff_val) == "number" && this.skills[skillId].eff_val !== 0 
+        && typeof(this.skills[skillId].eff_val1) == "number" && this.skills[skillId].eff_val1 !== 0 
+      ) {
         skill.damage = {
           minValue: this.skills[skillId].eff_val,
           maxValue: this.skills[skillId].eff_val1,
@@ -769,7 +800,7 @@ export class JsonService {
           maxSpeed: this.skills[skillId].ct_spd1,
           type: this.damageTypes[this.skills[skillId].atk_det],
           pool: this.damagePool[this.skills[skillId].eff_dst],
-          effType: this.damageEffectType[this.skills[skillId].eff_type ]
+          effType: this.damageEffectType[this.skills[skillId].eff_type],
         }
 
         if (this.skills[skillId].eff_dst && !this.damagePool[this.skills[skillId].eff_dst]) {
@@ -878,13 +909,6 @@ export class JsonService {
         max: stats[1][stat]
       }
     })
-  }
-
-  private getJobsStats(unit, jobs) {
-    unit.equipments = [];
-    this.jobs[jobs[0]].equips.forEach(equip => {
-      unit.equipments.push(this.jobEquip[equip])
-    });
   }
 
   private getLB(unit, lbId) {
@@ -1082,3 +1106,60 @@ export class JsonService {
     }
   }
 }
+
+
+/*
+
+//move :
+
+==> Move user to target panel
+@@@@@ Oelde Leonis -- Hayate
+{type: 1, flock: 3, height: 2, ismov: 1}
+@@@@@ Robb Hourne -- Hayate
+{type: 1, flock: 3, height: 2, ismov: 1}
+@@@@@ Owe -- Hayate
+{type: 1, flock: 3, height: 2, ismov: 1}
+@@@@@ Vadim -- Hayate
+{type: 1, flock: 3, height: 2, ismov: 1}
+@@@@@ Shadowlynx -- Hayate
+{type: 1, flock: 3, height: 2, ismov: 1}
+
+
+==> Move to target panel
+@@@@@ Robb Hourne -- Majestic Prestige
+{type: 2, flock: 2, height: 1}
+@@@@@ Gilgamesh -- Excalibur
+{type: 2, flock: 2, height: 2, ismov: 1}
+@@@@@ Y'shtola -- Aetherial Manipulation
+{type: 2, flock: 1, height: 2, ismov: 1}
+@@@@@ Thancred -- Rough Divide
+{type: 2, flock: 2, height: 2, ismov: 1}
+
+
+@@@@@ Sterne Leonis -- Poison Mist
+{type: 3, flock: 3}
+@@@@@ Mediena -- Poison Mist
+{type: 3, flock: 3}
+@@@@@ Owe -- Poison Mist
+{type: 3, flock: 3}
+@@@@@ Frederika -- Poison Mist
+{type: 3, flock: 3}
+@@@@@ Shadowlynx -- Poison Mist
+{type: 3, flock: 3}
+@@@@@ Ramza -- Poison Mist
+{type: 3, flock: 3}
+
+
+
+
+
+
+
+
+
+      "ct_type": 1,
+      "ct_lock": 1,
+      "ct_spd": 120,
+      "ct_spd1": 280
+
+*/

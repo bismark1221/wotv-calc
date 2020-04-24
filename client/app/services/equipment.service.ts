@@ -31,6 +31,27 @@ export class EquipmentService {
     "ACC"
   ]
 
+  private formatType = {
+    "DAGGER": "Dagger",
+    "SWORD": "Sword",
+    "GREATSWORD": "Great Sword",
+    "KATANA": "Katana",
+    "ROD": "Rod",
+    "NINJABLADE": "Ninja Blade",
+    "BOW": "Bow",
+    "AXE": "Axe",
+    "SPEAR": "Spear",
+    "GUN": "Gun",
+    "MACE": "Mace",
+    "FIST": "Fist",
+    "SHIELD": "Shield",
+    "ARMOR": "Armor",
+    "HAT": "Hat",
+    "HELM": "Helm",
+    "CLOTH": "Cloth",
+    "ACC": "Accessory"
+  }
+
   private equipments: Equipment[];
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
   private sre = /^\s+|\s+$/g;
@@ -113,5 +134,9 @@ export class EquipmentService {
 
   isWeapon(type) {
     return this.weaponTypes.indexOf(type) !== -1 ? true : false;
+  }
+
+  getFormatType(type) {
+    return this.formatType[type];
   }
 }

@@ -48,6 +48,8 @@ export class Skill {
   damageHtml?;
   counter;
   counterHtml;
+  basedHtml;
+  based;
 
   constructFromJson(ability: Skill, translateService: TranslateService): void {
 
