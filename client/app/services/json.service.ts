@@ -459,6 +459,7 @@ export class JsonService {
       this.weathers = this.formatJson(responses[14]);
 
       this.formatJsons();
+      this.cleanUnits();
 
       return {
         units: this.wotvUnits,
@@ -1105,49 +1106,24 @@ export class JsonService {
       this.wotvEquipments[rType].skills.push(skills)
     }
   }
+
+  private cleanUnits() {
+    let unitToDelete = [];
+
+    Object.keys(this.wotvUnits).forEach(unitId => {
+      if (this.wotvUnits[unitId].skills.length === 0) {
+        unitToDelete.push(unitId)
+      }
+    })
+
+    unitToDelete.forEach(unitId => {
+      delete this.wotvUnits[unitId]
+    })
+  }
 }
 
 
 /*
-
-//move :
-
-==> Move user to target panel
-@@@@@ Oelde Leonis -- Hayate
-{type: 1, flock: 3, height: 2, ismov: 1}
-@@@@@ Robb Hourne -- Hayate
-{type: 1, flock: 3, height: 2, ismov: 1}
-@@@@@ Owe -- Hayate
-{type: 1, flock: 3, height: 2, ismov: 1}
-@@@@@ Vadim -- Hayate
-{type: 1, flock: 3, height: 2, ismov: 1}
-@@@@@ Shadowlynx -- Hayate
-{type: 1, flock: 3, height: 2, ismov: 1}
-
-
-==> Move to target panel
-@@@@@ Robb Hourne -- Majestic Prestige
-{type: 2, flock: 2, height: 1}
-@@@@@ Gilgamesh -- Excalibur
-{type: 2, flock: 2, height: 2, ismov: 1}
-@@@@@ Y'shtola -- Aetherial Manipulation
-{type: 2, flock: 1, height: 2, ismov: 1}
-@@@@@ Thancred -- Rough Divide
-{type: 2, flock: 2, height: 2, ismov: 1}
-
-
-@@@@@ Sterne Leonis -- Poison Mist
-{type: 3, flock: 3}
-@@@@@ Mediena -- Poison Mist
-{type: 3, flock: 3}
-@@@@@ Owe -- Poison Mist
-{type: 3, flock: 3}
-@@@@@ Frederika -- Poison Mist
-{type: 3, flock: 3}
-@@@@@ Shadowlynx -- Poison Mist
-{type: 3, flock: 3}
-@@@@@ Ramza -- Poison Mist
-{type: 3, flock: 3}
 
 
 

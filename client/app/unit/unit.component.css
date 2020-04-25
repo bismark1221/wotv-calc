@@ -36,13 +36,97 @@ td {
 
 .limitBased{
   border-right: none;
+  padding-right: 0px;
+  width: 50px;
 }
 
-.noBorderLeft {
+.row {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.unitTable {
+  width: 350px;
+  margin-right: 20px;
+}
+
+.jobTd {
+  width: 33%;
+}
+
+.tmrTable {
+  width: 829px;
+}
+
+.emptyLine {
+  height: 50px;
+}
+
+.statsTable {
+  width: 800px;
+}
+
+.skillsTable {
+  width: 1200px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillJobTd {
+  width: 70px;
+}
+
+.skillStarTd {
+  width: 72px;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.tmrNameTd {
+  width: 150px;
+}
+
+.tmrTypeTd {
+  width: 60px;
+}
+
+.skillEffectTdAndNoBorderLeft {
+  text-align: left;
   border-left: none;
 }
 
+.skillEffectTd {
+  text-align: left;
+}
 
+.limitNameTd {
+  width: 300px;
+}
+
+.heightResTd {
+  height: 33px;
+}
 
 
 

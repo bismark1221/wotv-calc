@@ -27,7 +27,7 @@ export class UnitService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sort(units: Unit[], translate: any): Unit[] {
+  public sortByName(units, translate: any) {
     units.sort((a: any, b: any) => {
       let x = this.i(a.name);
       let y = this.i(b.name);
@@ -76,6 +76,24 @@ export class UnitService {
     });
 
     this.units = units;
+    return units;
+  }
+
+  getUnitsForListing() {
+    let units = {
+      N: [],
+      R: [],
+      SR: [],
+      MR: [],
+      UR: []
+    };
+
+    Object.keys(JSON.parse(JSON.stringify(UNITS))).forEach(unitId => {
+      let unit = new Unit();
+      unit.constructFromJson(UNITS[unitId], this.translateService);
+      units[unit.rarity].push(unit);
+    });
+
     return units;
   }
 
