@@ -72,7 +72,7 @@ export class EquipmentService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sort(equipments: Equipment[], translate: any): Equipment[] {
+  public sortByName(equipments: Equipment[], translate: any): Equipment[] {
     equipments.sort((a: any, b: any) => {
       let x = this.i(a.name);
       let y = this.i(b.name);
@@ -122,6 +122,32 @@ export class EquipmentService {
 
     this.equipments = equipments;
     return equipments;
+  }
+
+  getEquipmentsForListing() {
+    let equipments = {
+      N: [],
+      R: [],
+      SR: [],
+      MR: [],
+      UR: []
+    };
+
+    Object.keys(JSON.parse(JSON.stringify(EQUIPMENTS))).forEach(equipmentId => {
+      let equipment = new Equipment();
+      equipment.constructFromJson(EQUIPMENTS[equipmentId], this.translateService);
+      equipments[equipment.rarity].push(equipment);
+    });
+
+    return equipments;
+  }
+
+  getEquipmentBySlug(slug: string): Equipment {
+    if (!this.equipments || this.equipments.length === 0) {
+      this.getEquipments();
+    }
+
+    return this.equipments.find(equipment => equipment.slug === slug);
   }
 
   getEquipment(id: string): Equipment {

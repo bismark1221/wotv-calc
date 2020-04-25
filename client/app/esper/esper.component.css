@@ -1,124 +1,29 @@
-.elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg {
-  height: 32px;
+.elementImg, .damageImg, .statusAilmentImg, .skilImg {
+  height: 40px;
 }
 
 .rarityImg {
-  height: 32px;
+  height: 30px;
 }
 
-.mainJob {
-  height: 40px;
-  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
-  background-size: 40px;
-  padding: 5px;
+th {
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border: 1px solid #404040;
+  padding: 0.3em 0.5em;
 }
 
-.subJob {
-  height: 40px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
-  background-size: 40px;
-  padding: 5px;
+
+td {
+  text-align: center;
+  padding: 0.3em 0.5em;
 }
 
-.limitBased{
-  border-right: none;
-  padding-right: 0px;
-  width: 50px;
-}
 
-.row {
-  width: 1200px;
-  margin: auto;
-  margin-bottom: 20px;
-}
 
-.unitTable {
-  width: 350px;
-  margin-right: 20px;
-}
 
-.jobTd {
-  width: 33%;
-}
 
-.tmrTable {
-  width: 829px;
-}
-
-.emptyLine {
-  height: 50px;
-}
-
-.statsTable {
-  width: 800px;
-}
-
-.skillsTable {
-  width: 1200px;
-}
-
-.rangeTd {
-  width: 69px;
-}
-
-.skillJobTd {
-  width: 70px;
-}
-
-.skillStarTd {
-  width: 72px;
-}
-
-.skillTypeTd {
-  width: 85px;
-}
-
-.skillCastTd {
-  width: 61px;
-}
-
-.skillHitTd {
-  width: 50px;
-}
-
-.skillCostTd {
-  width: 60px;
-}
-
-.skillNameTd {
-  width: 200px;
-}
-
-.tmrNameTd {
-  width: 150px;
-}
-
-.tmrTypeTd {
-  width: 60px;
-}
-
-.skillEffectTdAndNoBorderLeft {
-  text-align: left;
-  border-left: none;
-}
-
-.skillEffectTd {
-  text-align: left;
-}
-
-.limitNameTd {
-  width: 300px;
-}
-
-.heightResTd {
-  height: 33px;
-}
-
-.timeImg {
-  height: 32px;
-  cursor: pointer;
-  margin-top: 2px;
-}
 
 
 
@@ -190,22 +95,22 @@
   margin: auto;
 }
 
-.unit {
+.esper {
   max-width: 1030px;
   margin: auto;
 }
 
-.unitImg {
-  height: 250px;
+.esperImg {
+  height: 100px;
   margin-top: 10px;
 }
 
-.selectUnit1 {
+.selectEsper1 {
   color: #848b8e;;
   font-size: 4em;
 }
 
-.selectUnitZone {
+.selectEsperZone {
   width: 250px;
   min-height: 142px;
   text-align: center;
@@ -520,40 +425,40 @@
   display: inline-block;
 }
 
-.allSelectUnit {
+.allSelectEsper {
   text-align: center;
 }
 
-.expandedSelecUnit {
+.expandedSelecEsper {
   width: 1004px;
 }
 
-.marginUnit0 {
+.marginEsper0 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit1 {
+.marginEsper1 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit2 {
+.marginEsper2 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit3 {
+.marginEsper3 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit4 {
+.marginEsper4 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit5 {
+.marginEsper5 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
@@ -586,7 +491,7 @@
     display: block;
   }
 
-  .expandedSelecUnit {
+  .expandedSelecEsper {
     width: 792px;
   }
 
@@ -604,7 +509,7 @@
     display: block;
   }
 
-  .allSelectUnit {
+  .allSelectEsper {
     width: 542px;
   }
 
@@ -612,7 +517,7 @@
     width: 500px;
   }
 
-  .expandedSelecUnit {
+  .expandedSelecEsper {
     width: 522px !important;
   }
 
@@ -707,15 +612,15 @@
     display: none;
   }
 
-  .allSelectUnit {
+  .allSelectEsper {
     width: 250px
   }
 
-  .expandedSelecUnit {
+  .expandedSelecEsper {
     width: 250px !important;
   }
 
-  .selectUnitZone {
+  .selectEsperZone {
     margin: 0 0 10px;
     width: 250px;
   }

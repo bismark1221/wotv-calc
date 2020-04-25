@@ -23,6 +23,7 @@ export class VisionCard {
   partyBuffsClassic = new Skill();
   partyBuffsAwake = new Skill();
   partyBuffsMax = new Skill();
+  slug;
 
 
   constructFromJson(visionCard: VisionCard, translateService: TranslateService): void {

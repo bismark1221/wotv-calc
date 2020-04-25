@@ -796,8 +796,8 @@ export class JsonService {
       }
 
 
-      if (typeof(this.skills[skillId].eff_val) == "number" && this.skills[skillId].eff_val !== 0 
-        && typeof(this.skills[skillId].eff_val1) == "number" && this.skills[skillId].eff_val1 !== 0 
+      if (typeof(this.skills[skillId].eff_val) == "number" && this.skills[skillId].eff_val !== 0
+        && typeof(this.skills[skillId].eff_val1) == "number" && this.skills[skillId].eff_val1 !== 0
       ) {
         skill.damage = {
           minValue: this.skills[skillId].eff_val,
@@ -1082,9 +1082,15 @@ export class JsonService {
         }
 
         Object.keys(this.equipments[dataId].status[0]).forEach(stat => {
-          this.wotvEquipments[rType].stats[this.stats.unit[stat]] = {
-            min: this.equipments[dataId].status[0][stat],
-            max: this.equipments[dataId].status[1] ? this.equipments[dataId].status[1][stat] : this.equipments[dataId].status[0][stat]
+          if (this.equipments[dataId].status[0][stat] !== 0
+            || (this.equipments[dataId].status[1]
+              && typeof(this.equipments[dataId].status[1][stat]) == "number"
+              && this.equipments[dataId].status[1][stat] !== 0)
+          ) {
+            this.wotvEquipments[rType].stats[this.stats.unit[stat]] = {
+              min: this.equipments[dataId].status[0][stat],
+              max: this.equipments[dataId].status[1] ? this.equipments[dataId].status[1][stat] : this.equipments[dataId].status[0][stat]
+            }
           }
         })
       }

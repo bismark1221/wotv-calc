@@ -1,140 +1,19 @@
-<div class="row visionCard form-group">
-  <div class="chainParameters allSelectVisionCard" #chainDiv>
-    <div class="inlineBlock verticalTop">
-      <div
-        class=" verticalTop selectVisionCardZone marginVisionCard">
-
-        <div class="inlineBlock firstSelectLevel">
-          <label>{{ 'chain.label.visionCard' | translate }}</label>
-          <div>
-            <select2
-              [data]="observableVisionCards"
-              [value]="idSelected"
-              [options]="select2Options"
-              (valueChanged)="selectVisionCard($event.value);"></select2>
-          </div>
+<div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+  <table class="visionCardsTable">
+    <tr>
+      <td colspan="4">
+        <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
+      </td>
+    </tr>
+    <tr *ngFor="let line of formattedVisionCards[rarity]; let j = index">
+      <td *ngFor="let visionCard of formattedVisionCards[rarity][j]" class="visionCardsCol">
+        <div>
+          <a [routerLink]="['/card/' + visionCard.dataId ]" [routerLinkActive]="['active']">
+            <img class="visionCardImg" src="{{'assets/visionCards/' + visionCard.image + '_m.png'}}" />
+          </a>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th colspan="2">{{ visionCard.name }}</th>
-      </tr>
-      <tr>
-        <td colspan="2"><img class="visionCardImg" src="{{'assets/visionCards/' + visionCard.image + '_full.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Rarity</td>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + visionCard.rarity + '.png'}}" /></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th colspan="4">VisionCard Stats</th>
-      </tr>
-      <tr>
-        <th></th>
-        <th>HP</th>
-        <th>ATK</th>
-        <th>MAG</th>
-      </tr>
-      <tr>
-        <td>Min</td>
-        <td>{{ visionCard.stats.HP.min }}</td>
-        <td>{{ visionCard.stats.ATK.min }}</td>
-        <td>{{ visionCard.stats.MAG.min }}</td>
-      </tr>
-      <tr>
-        <td>Max</td>
-        <td>{{ visionCard.stats.HP.max }}</td>
-        <td>{{ visionCard.stats.ATK.max }}</td>
-        <td>{{ visionCard.stats.MAG.max }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th colspan="2">Unit Effects</th>
-      </tr>
-      <tr *ngIf="visionCard.unitBuffsClassic">
-        <td>Classic</td>
-        <td>
-          <div *ngFor="let skill of visionCard.unitBuffsClassic">
-            <div *ngFor="let effect of skill.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr *ngIf="visionCard.unitBuffsAwake">
-        <td>Awake</td>
-        <td>
-          <div *ngFor="let skill of visionCard.unitBuffsAwake">
-            <div *ngFor="let effect of skill.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr *ngIf="visionCard.unitBuffsMax">
-        <td>Max</td>
-        <td>
-          <div *ngFor="let skill of visionCard.unitBuffsMax">
-            <div *ngFor="let effect of skill.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <th colspan="2">Party Effects</th>
-      </tr>
-      <tr *ngIf="visionCard.partyBuffsClassic">
-        <td>Classic</td>
-        <td>
-          <div *ngFor="let skill of visionCard.partyBuffsClassic">
-            <div *ngFor="let effect of skill.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr *ngIf="visionCard.partyBuffsAwake">
-        <td>Awake</td>
-        <td>
-          <div *ngFor="let skill of visionCard.partyBuffsAwake">
-            <div *ngFor="let effect of skill.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr *ngIf="visionCard.partyBuffsMax">
-        <td>Max</td>
-        <td>
-          <div *ngFor="let skill of visionCard.partyBuffsMax">
-            <div *ngFor="let effect of skill.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
+        <span class="visionCardName"><a [routerLink]="['/visionCard/' + visionCard.dataId ]" [routerLinkActive]="['active']">{{ visionCard.names.en }}</a></span>
+      </td>
+    </tr>
   </table>
 </div>

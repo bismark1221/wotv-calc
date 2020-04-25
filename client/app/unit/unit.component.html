@@ -83,7 +83,7 @@
             <ng-template #tip_time>
               <div>
                 Min time: {{ unit.tmr.skills[0].time.minValue }}<br />
-                Max time: {{ unit.tmr.skills[0].time.maxValue }}    
+                Max time: {{ unit.tmr.skills[0].time.maxValue }}
               </div>
             </ng-template>
             <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -112,8 +112,7 @@
           <span *ngIf="unit.tmr.skills[0].cost">{{ unit.tmr.skills[0].cost.value }} {{ unit.tmr.skills[0].cost.type }}</span>
         </td>
       </tr>
-      <tr class="emptyLine">
-      </tr>
+      <tr class="emptyLine"></tr>
       <tr>
         <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">Master Ability</th>
       </tr>
@@ -355,7 +354,7 @@
             <ng-template #tip_time>
               <div>
                 Min time: {{ skill.time.minValue }}<br />
-                Max time: {{ skill.time.maxValue }}    
+                Max time: {{ skill.time.maxValue }}
               </div>
             </ng-template>
             <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -404,7 +403,7 @@
             <ng-template #tip_time>
               <div>
                 Min time: {{ unit.limit.time.minValue }}<br />
-                Max time: {{ unit.limit.time.maxValue }}    
+                Max time: {{ unit.limit.time.maxValue }}
               </div>
             </ng-template>
             <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>

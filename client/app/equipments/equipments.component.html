@@ -1,128 +1,19 @@
-<div class="row equipment form-group">
-  <div class="chainParameters allSelectEquipment" #chainDiv>
-    <div class="inlineBlock verticalTop">
-      <div
-        class=" verticalTop selectEquipmentZone marginEquipment">
-
-        <div class="inlineBlock firstSelectLevel">
-          <label>{{ 'chain.label.equipment' | translate }}</label>
-          <div>
-            <select2
-              [data]="observableEquipments"
-              [value]="idSelected"
-              [options]="select2Options"
-              (valueChanged)="selectEquipment($event.value);"></select2>
-          </div>
+<div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+  <table class="equipmentsTable">
+    <tr>
+      <td colspan="4">
+        <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
+      </td>
+    </tr>
+    <tr *ngFor="let line of formattedEquipments[rarity]; let j = index">
+      <td *ngFor="let equipment of formattedEquipments[rarity][j]" class="equipmentsCol">
+        <div>
+          <a [routerLink]="['/equipment/' + equipment.dataId ]" [routerLinkActive]="['active']">
+            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}" />
+          </a>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th colspan="3">{{ equipment.name }}</th>
-      </tr>
-      <tr>
-        <td colspan="3"><img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Rarity</td>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Type</td>
-        <td>{{ equipment.type }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th colspan="13">Equipment Stats</th>
-      </tr>
-      <tr>
-        <th></th>
-        <th *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
-      </tr>
-      <tr>
-        <td>Min</td>
-        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].min }}</td>
-      </tr>
-      <tr>
-        <td>Max</td>
-        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].max }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table *ngIf="equipment.skills[0]">
-    <tbody>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
-        <th colspan="6">Skill</th>
-      </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
-        <th>name</th>
-        <th>Effects</th>
-        <th>Range</th>
-        <th>Casts</th>
-        <th>Hits</th>
-        <th>Cost</th>
-      </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
-        <td>
-          {{ equipment.skills[0][0].names.en }}
-        </td>
-        <td>
-          <div>{{ equipment.skills[0][0].counterHtml }}</div>
-          <div>{{ equipment.skills[0][0].damageHtml }}</div>
-          <div *ngFor="let effect of equipment.skills[0][0].effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
-            <div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
-          </div>
-        </td>
-        <td>
-          {{ equipment.skills[0][0].count }}
-        </td>
-        <td>
-          <span *ngIf="equipment.skills[0][0].combo">{{ equipment.skills[0][0].combo.num }}</span>
-        </td>
-        <td>
-          <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
-        </td>
-      </tr>
-
-
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active'">
-        <th colspan="6">Effects</th>
-      </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active' && equipment.skills.length > 1">
-        <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
-      </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active'">
-        <td *ngFor="let i of equipment.countSkills">
-          <div *ngFor="let skill of equipment.skills[i]">
-            <div *ngFor="let effect of skill.effects"> 
-              {{ effect.formatHtml }}
-            </div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
+        <span class="equipmentName"><a [routerLink]="['/equipment/' + equipment.dataId ]" [routerLinkActive]="['active']">{{ equipment.names.en }}</a></span>
+      </td>
+    </tr>
   </table>
 </div>

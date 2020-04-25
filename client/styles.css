@@ -20,6 +20,18 @@ table, tbody, tr, th, td {
   border: 1px solid grey;
 }
 
+th {
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border: 1px solid #404040;
+  padding: 0.3em 0.5em;
+}
+
+td {
+  text-align: center;
+  padding: 0.3em 0.5em;
+}
 
 .tooltip-inner .table-skill {
   border-collapse: collapse;

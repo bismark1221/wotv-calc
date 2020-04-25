@@ -20,7 +20,8 @@ export class Equipment {
   image = "ITEMcrst";
   type;
   countSkills;
-  
+  slug;
+
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
     this.dataId = equipment.dataId;

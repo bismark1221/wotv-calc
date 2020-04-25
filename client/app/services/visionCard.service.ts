@@ -27,7 +27,7 @@ export class VisionCardService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sort(visionCards: VisionCard[], translate: any): VisionCard[] {
+  public sortByName(visionCards: VisionCard[], translate: any): VisionCard[] {
     visionCards.sort((a: any, b: any) => {
       let x = this.i(a.name);
       let y = this.i(b.name);
@@ -79,11 +79,37 @@ export class VisionCardService {
     return visionCards;
   }
 
+  getVisionCardsForListing() {
+    let visionCards = {
+      N: [],
+      R: [],
+      SR: [],
+      MR: [],
+      UR: []
+    };
+
+    Object.keys(JSON.parse(JSON.stringify(VISION_CARDS))).forEach(visionCardId => {
+      let visionCard = new VisionCard();
+      visionCard.constructFromJson(VISION_CARDS[visionCardId], this.translateService);
+      visionCards[visionCard.rarity].push(visionCard);
+    });
+
+    return visionCards;
+  }
+
   getVisionCard(id: string): VisionCard {
     if (!this.visionCards || this.visionCards.length === 0) {
       this.getVisionCards();
     }
 
     return this.visionCards.find(visionCard => visionCard.dataId === id);
+  }
+
+  getVisionCardBySlug(slug: string): VisionCard {
+    if (!this.visionCards || this.visionCards.length === 0) {
+      this.getVisionCards();
+    }
+
+    return this.visionCards.find(visionCard => visionCard.slug === slug);
   }
 }

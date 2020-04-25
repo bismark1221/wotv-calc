@@ -1,29 +1,9 @@
-.elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg {
-  height: 32px;
+.elementImg, .damageImg, .statusAilmentImg, .skilImg {
+  height: 40px;
 }
 
 .rarityImg {
-  height: 32px;
-}
-
-.mainJob {
-  height: 40px;
-  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
-  background-size: 40px;
-  padding: 5px;
-}
-
-.subJob {
-  height: 40px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
-  background-size: 40px;
-  padding: 5px;
-}
-
-.limitBased{
-  border-right: none;
-  padding-right: 0px;
-  width: 50px;
+  height: 30px;
 }
 
 .row {
@@ -32,93 +12,27 @@
   margin-bottom: 20px;
 }
 
-.unitTable {
+.visionCardTable {
   width: 350px;
   margin-right: 20px;
 }
 
-.jobTd {
-  width: 33%;
-}
-
-.tmrTable {
+.StatTable {
   width: 829px;
 }
 
-.emptyLine {
-  height: 50px;
-}
 
-.statsTable {
-  width: 800px;
-}
 
-.skillsTable {
-  width: 1200px;
-}
 
-.rangeTd {
-  width: 69px;
-}
 
-.skillJobTd {
-  width: 70px;
-}
 
-.skillStarTd {
-  width: 72px;
-}
 
-.skillTypeTd {
-  width: 85px;
-}
 
-.skillCastTd {
-  width: 61px;
-}
 
-.skillHitTd {
-  width: 50px;
-}
 
-.skillCostTd {
-  width: 60px;
-}
 
-.skillNameTd {
-  width: 200px;
-}
 
-.tmrNameTd {
-  width: 150px;
-}
 
-.tmrTypeTd {
-  width: 60px;
-}
-
-.skillEffectTdAndNoBorderLeft {
-  text-align: left;
-  border-left: none;
-}
-
-.skillEffectTd {
-  text-align: left;
-}
-
-.limitNameTd {
-  width: 300px;
-}
-
-.heightResTd {
-  height: 33px;
-}
-
-.timeImg {
-  height: 32px;
-  cursor: pointer;
-  margin-top: 2px;
-}
 
 
 
@@ -190,22 +104,22 @@
   margin: auto;
 }
 
-.unit {
+.visionCard {
   max-width: 1030px;
   margin: auto;
 }
 
-.unitImg {
+.visionCardImg {
   height: 250px;
   margin-top: 10px;
 }
 
-.selectUnit1 {
+.selectVisionCard1 {
   color: #848b8e;;
   font-size: 4em;
 }
 
-.selectUnitZone {
+.selectVisionCardZone {
   width: 250px;
   min-height: 142px;
   text-align: center;
@@ -520,40 +434,40 @@
   display: inline-block;
 }
 
-.allSelectUnit {
+.allSelectVisionCard {
   text-align: center;
 }
 
-.expandedSelecUnit {
+.expandedSelecVisionCard {
   width: 1004px;
 }
 
-.marginUnit0 {
+.marginVisionCard0 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit1 {
+.marginVisionCard1 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit2 {
+.marginVisionCard2 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit3 {
+.marginVisionCard3 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit4 {
+.marginVisionCard4 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.marginUnit5 {
+.marginVisionCard5 {
   margin-right: 20px;
   margin-bottom: 10px;
 }
@@ -586,7 +500,7 @@
     display: block;
   }
 
-  .expandedSelecUnit {
+  .expandedSelecVisionCard {
     width: 792px;
   }
 
@@ -604,7 +518,7 @@
     display: block;
   }
 
-  .allSelectUnit {
+  .allSelectVisionCard {
     width: 542px;
   }
 
@@ -612,7 +526,7 @@
     width: 500px;
   }
 
-  .expandedSelecUnit {
+  .expandedSelecVisionCard {
     width: 522px !important;
   }
 
@@ -707,15 +621,15 @@
     display: none;
   }
 
-  .allSelectUnit {
+  .allSelectVisionCard {
     width: 250px
   }
 
-  .expandedSelecUnit {
+  .expandedSelecVisionCard {
     width: 250px !important;
   }
 
-  .selectUnitZone {
+  .selectVisionCardZone {
     margin: 0 0 10px;
     width: 250px;
   }
