@@ -729,6 +729,11 @@ export class JsonService {
         h: this.skills[skillId].eff_h
       }
 
+      skill.time = {
+        minValue: this.skills[skillId].ct_spd,
+        maxValue: this.skills[skillId].ct_spd1
+      }
+
       skill.hit = this.skills[skillId].hit
       skill.pierce = this.skills[skillId].pierce
       skill.ctbreak = this.skills[skillId].ctbreak // Cancel ability activation
@@ -1132,10 +1137,5 @@ export class JsonService {
 
 
 
-
-      "ct_type": 1,
-      "ct_lock": 1,
-      "ct_spd": 120,
-      "ct_spd1": 280
 
 */

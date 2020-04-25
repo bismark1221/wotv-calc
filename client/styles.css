@@ -56,6 +56,10 @@ table, tbody, tr, th, td {
   background-color: #635b52;
 }
 
+.divSkillTableHtml .tableSkillHeight{
+  display: none;
+}
+
 .tooltip-inner {
   max-width: 500px;
 }

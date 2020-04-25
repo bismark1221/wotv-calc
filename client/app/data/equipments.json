@@ -6441,10 +6441,15 @@
             "l": 3,
             "s": 1
           },
+          "based": "magic",
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
           },
           "combo": {},
           "knockback": {},
@@ -6453,7 +6458,7 @@
             "maxValue": 20,
             "minSpeed": 120,
             "maxSpeed": 320,
-            "type": "0"
+            "type": "all"
           },
           "elem": [
             "neutral"
@@ -6500,10 +6505,15 @@
             "l": 3,
             "s": 1
           },
+          "based": "magic",
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
           },
           "combo": {},
           "knockback": {},
@@ -6512,7 +6522,7 @@
             "maxValue": 20,
             "minSpeed": 120,
             "maxSpeed": 320,
-            "type": "0"
+            "type": "all"
           },
           "elem": [
             "neutral"
@@ -6573,10 +6583,15 @@
             "l": 3,
             "s": 1
           },
+          "based": "magic",
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
           },
           "combo": {},
           "knockback": {},
@@ -6585,7 +6600,7 @@
             "maxValue": 20,
             "minSpeed": 120,
             "maxSpeed": 320,
-            "type": "0"
+            "type": "all"
           },
           "elem": [
             "neutral"
@@ -6646,10 +6661,15 @@
             "l": 3,
             "s": 1
           },
+          "based": "magic",
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
           },
           "combo": {},
           "knockback": {},
@@ -6658,7 +6678,7 @@
             "maxValue": 20,
             "minSpeed": 120,
             "maxSpeed": 320,
-            "type": "0"
+            "type": "all"
           },
           "elem": [
             "neutral"
@@ -6719,10 +6739,15 @@
             "l": 3,
             "s": 1
           },
+          "based": "magic",
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
           },
           "combo": {},
           "knockback": {},
@@ -6731,7 +6756,7 @@
             "maxValue": 20,
             "minSpeed": 120,
             "maxSpeed": 320,
-            "type": "0"
+            "type": "all"
           },
           "elem": [
             "neutral"
@@ -6792,10 +6817,15 @@
             "l": 3,
             "s": 1
           },
+          "based": "magic",
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
           },
           "combo": {},
           "knockback": {},
@@ -6804,7 +6834,7 @@
             "maxValue": 20,
             "minSpeed": 120,
             "maxSpeed": 320,
-            "type": "0"
+            "type": "all"
           },
           "elem": [
             "neutral"
@@ -11901,7 +11931,9 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -11954,7 +11986,9 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12009,11 +12043,13 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {
             "s": 2,
             "l": 1,
             "h": 1
           },
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12307,7 +12343,9 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12374,11 +12412,13 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {
             "s": 1,
             "l": 2,
             "h": 1
           },
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12649,11 +12689,13 @@
             "l": 3,
             "s": 1
           },
+          "based": null,
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
           },
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12717,11 +12759,13 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
           },
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12770,11 +12814,13 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
           },
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12831,7 +12877,9 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -12896,7 +12944,9 @@
             "l": 4,
             "s": 1
           },
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -13108,11 +13158,13 @@
             "l": 2,
             "s": 1
           },
+          "based": null,
           "aoe": {
             "s": 0,
             "l": 1,
             "h": 1
           },
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -13332,7 +13384,9 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -13463,7 +13517,9 @@
             "l": 3,
             "s": 1
           },
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }
@@ -13560,7 +13616,9 @@
           "type": "active",
           "count": 1,
           "range": {},
+          "based": null,
           "aoe": {},
+          "time": {},
           "combo": {},
           "knockback": {}
         }

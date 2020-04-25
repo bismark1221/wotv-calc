@@ -79,6 +79,15 @@
         <td class="tmrNameTd" *ngIf="unit.tmr.skills[0].type == 'active'">
           <span>{{ unit.tmr.skills[0].names.en }}</span>
           <span *ngIf="unit.tmr.skills[0].based"><img class='atkBasedImg' src="{{'assets/atkBased/' + unit.tmr.skills[0].based + '.png'}}" /></span>
+          <div *ngIf="unit.tmr.skills[0].time && unit.tmr.skills[0].time.minValue">
+            <ng-template #tip_time>
+              <div>
+                Min time: {{ unit.tmr.skills[0].time.minValue }}<br />
+                Max time: {{ unit.tmr.skills[0].time.maxValue }}    
+              </div>
+            </ng-template>
+            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+          </div>
         </td>
         <td class="skillEffectTd">
           <div>{{ unit.tmr.skills[0].counterHtml }}</div>
@@ -90,7 +99,7 @@
         <td class="rangeTd" *ngIf="unit.tmr.skills[0].type == 'active'">
           <ng-template #tip_table><div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div></ng-template>
           <div [ngbTooltip]="tip_table">
-            <div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
+            <div class="divSkillTableHtml" [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
           </div>
         </td>
         <td class="skillCastTd" *ngIf="unit.tmr.skills[0].type == 'active'">
@@ -199,10 +208,10 @@
         <td>{{ unit.totalBuffs.CRITIC_RATE }}</td>
       </tr>
       <tr>
-        <th colspan="11">OTHERS</th>
+        <th colspan="11" *ngIf="unit.remainingBuffs.length > 0">OTHERS</th>
       </tr>
       <tr>
-        <td colspan="11">
+        <td colspan="11" *ngIf="unit.remainingBuffs.length > 0">
           <div *ngFor="let buff of unit.remainingBuffs">{{ buff }}</div>
         </td>
       </tr>
@@ -342,6 +351,15 @@
         <td>
           <img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
           <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+          <div *ngIf="skill.time && skill.time.minValue">
+            <ng-template #tip_time>
+              <div>
+                Min time: {{ skill.time.minValue }}<br />
+                Max time: {{ skill.time.maxValue }}    
+              </div>
+            </ng-template>
+            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+          </div>
         </td>
         <td>{{ skill.names.en }}</td>
         <td class="skillEffectTd">
@@ -354,7 +372,7 @@
         <td>
           <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
           <div [ngbTooltip]="tip_table">
-            <div [innerHTML]="skill.skillTableHtml"></div>
+            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
           </div>
         </td>
         <td>{{ skill.count }}</td>
@@ -382,6 +400,15 @@
         <td>{{ unit.limit.names.en }}</td>
         <td class="limitBased" *ngIf="unit.limit.based">
           <img class='atkBasedImg' src="{{ 'assets/atkBased/' + unit.limit.based + '.png' }}" />
+          <div *ngIf="unit.limit.time && unit.limit.time.minValue">
+            <ng-template #tip_time>
+              <div>
+                Min time: {{ unit.limit.time.minValue }}<br />
+                Max time: {{ unit.limit.time.maxValue }}    
+              </div>
+            </ng-template>
+            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+          </div>
         </td>
         <td [className]="unit.limit.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
           <div class="limitDamageDiv" [innerHTML]="unit.limit.damageHtml"></div>
@@ -392,7 +419,7 @@
         <td>
           <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
           <div [ngbTooltip]="tip_table">
-            <div [innerHTML]="unit.limit.skillTableHtml"></div>
+            <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
           </div>
         </td>
         <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
