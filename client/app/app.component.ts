@@ -16,7 +16,7 @@ export class AppComponent {
     private angulartics: Angulartics2,
     private localStorageService: LocalStorageService
   ) {
-    translate.addLangs(["en", "fr", "tw", "es", "de", "kr"]);
+    translate.addLangs(["en"]); //"en", "fr", "tw", "es", "de", "kr"
     translate.setDefaultLang('en');
 
     let lang = this.localStorageService.get<any[]>('lang') ? this.localStorageService.get<any[]>('lang').toString() : translate.getDefaultLang();

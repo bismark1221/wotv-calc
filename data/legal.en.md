@@ -1,12 +1,12 @@
 ### Informations about the app
-The app ffbe-chain.com is here to help you to optimized your chain in FFBE.
+The app wotv-calc.com is here to help you to optimized your chain in FFBE.
 It's developed voluntarily by Bismark (bismark@ffbe-chain.com)
 
 ### Visual content
-Almost all visual host on ffbe-chain.com belong to Square Enix Co., Ltd.
+Almost all visual host on wotv-calc.com belong to Square Enix Co., Ltd.
 
 ### Copyright
-You can use all or parts of this app without asking us, you just need to mention the reference to ffbe-chain.
+You can use all or parts of this app without asking us, you just need to mention the reference to wotv-calc.
 
 ### Personnal data
 We don't save any information about you on our infrastructure.

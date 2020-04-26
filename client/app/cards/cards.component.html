@@ -1,18 +1,18 @@
 <div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-  <table class="visionCardsTable">
+  <table class="cardsTable">
     <tr>
       <td colspan="4">
         <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
       </td>
     </tr>
-    <tr *ngFor="let line of formattedVisionCards[rarity]; let j = index">
-      <td *ngFor="let visionCard of formattedVisionCards[rarity][j]" class="visionCardsCol">
+    <tr *ngFor="let line of formattedCards[rarity]; let j = index">
+      <td *ngFor="let card of formattedCards[rarity][j]" class="cardsCol">
         <div>
-          <a [routerLink]="['/card/' + visionCard.dataId ]" [routerLinkActive]="['active']">
-            <img class="visionCardImg" src="{{'assets/visionCards/' + visionCard.image + '_m.png'}}" />
+          <a [routerLink]="['/card/' + card.dataId ]" [routerLinkActive]="['active']">
+            <img class="cardImg" src="{{'assets/cards/' + card.image + '_m.png'}}" />
           </a>
         </div>
-        <span class="visionCardName"><a [routerLink]="['/visionCard/' + visionCard.dataId ]" [routerLinkActive]="['active']">{{ visionCard.names.en }}</a></span>
+        <span class="cardName"><a [routerLink]="['/card/' + card.dataId ]" [routerLinkActive]="['active']">{{ card.names.en }}</a></span>
       </td>
     </tr>
   </table>

@@ -1,23 +1,18 @@
-td {
-  text-align: center;
-  padding: 0.3em 0.5em;
-}
-
-.visionCardImg {
+.cardImg {
   height: 150px;
   margin-top: 10px;
 }
 
-.visionCardName {
+.cardName {
   font-weight: bold;
   margin-left: 10px
 }
 
-.visionCardsTable {
+.cardsTable {
   width: 800px;
 }
 
-.visionCardsCol {
+.cardsCol {
   width: 200px;
 }
 

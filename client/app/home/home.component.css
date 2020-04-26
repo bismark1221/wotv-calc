@@ -46,3 +46,27 @@
   margin-bottom: 5px;
   text-align: center;
 }
+
+
+.itemImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.elementImg, .rarityImg {
+  height: 32px;
+}
+
+.itemName {
+  font-weight: bold;
+  margin-left: 10px
+}
+
+.itemsTable {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.itemsCol {
+  width: 200px;
+}

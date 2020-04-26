@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-import { Esper } from '../entities/esper';
-import { Skill } from '../entities/skill';
 import { EsperService } from '../services/esper.service';
-import { NavService } from '../services/nav.service';
-import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 
 
@@ -20,7 +16,6 @@ export class EsperComponent implements OnInit {
 
   constructor(
     private esperService: EsperService,
-    private translateService: TranslateService,
     private skillService: SkillService,
     private activatedRoute: ActivatedRoute,
     private router: Router

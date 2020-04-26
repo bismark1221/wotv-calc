@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ffbe-chain": {
+    "wotv-calc": {
       "root": "",
       "sourceRoot": "client",
       "projectType": "application",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ffbe-chain:build"
+            "browserTarget": "wotv-calc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ffbe-chain:build:production"
+              "browserTarget": "wotv-calc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ffbe-chain:build"
+            "browserTarget": "wotv-calc:build"
           }
         },
         "test": {
@@ -97,7 +97,7 @@
         }
       }
     },
-    "ffbe-chain-e2e": {
+    "wotv-calc-e2e": {
       "root": "",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -106,7 +106,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ffbe-chain:serve"
+            "devServerTarget": "wotv-calc:serve"
           }
         },
         "lint": {
@@ -123,7 +123,7 @@
       }
     }
   },
-  "defaultProject": "ffbe-chain",
+  "defaultProject": "wotv-calc",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

@@ -1,18 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import { LocalStorageService } from 'angular-2-local-storage';
-import { Select2OptionData } from '../select2/select2.interface';
-import { Angulartics2 } from 'angulartics2';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { Observable } from 'rxjs';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-
-import { Unit } from '../entities/unit';
-import { Skill } from '../entities/skill';
 import { UnitService } from '../services/unit.service';
-import { NavService } from '../services/nav.service';
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 
@@ -27,10 +16,7 @@ export class UnitComponent implements OnInit {
 
   constructor(
     private unitService: UnitService,
-    private angulartics: Angulartics2,
-    private translateService: TranslateService,
     private equipmentService: EquipmentService,
-    private navService: NavService,
     private skillService: SkillService,
     private activatedRoute: ActivatedRoute,
     private router: Router

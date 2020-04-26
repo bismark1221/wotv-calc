@@ -1,10 +1,10 @@
-import { FfbeChainPage } from './app.po';
+import { WotvCalcPage } from './app.po';
 
-describe('ffbe-chain App', () => {
-  let page: FfbeChainPage;
+describe('wotv-chain App', () => {
+  let page: WotvCalcPage;
 
   beforeEach(() => {
-    page = new FfbeChainPage();
+    page = new WotvCalcPage();
   });
 
   it('should display welcome message', () => {

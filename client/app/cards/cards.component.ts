@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-import { VisionCardService } from '../services/visionCard.service';
+import { CardService } from '../services/card.service';
 
 @Component({
   selector: 'app-cards',
@@ -9,11 +9,11 @@ import { VisionCardService } from '../services/visionCard.service';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-  private visionCards;
-  private formattedVisionCards = {};
+  private cards;
+  private formattedCards = {};
 
   constructor(
-    private visionCardService: VisionCardService,
+    private cardService: CardService,
     private translateService: TranslateService
   ) {}
 
@@ -22,20 +22,20 @@ export class CardsComponent implements OnInit {
   }
 
   private getCards(): void {
-    this.visionCards = this.visionCardService.getVisionCardsForListing();
+    this.cards = this.cardService.getCardsForListing();
 
-    Object.keys(this.visionCards).forEach(rarity => {
-      this.visionCardService.sortByName(this.visionCards[rarity], this.translateService)
+    Object.keys(this.cards).forEach(rarity => {
+      this.cardService.sortByName(this.cards[rarity], this.translateService)
 
-      this.formattedVisionCards[rarity] = [];
+      this.formattedCards[rarity] = [];
       let tableIndex = -1;
-      this.visionCards[rarity].forEach((card, index) => {
+      this.cards[rarity].forEach((card, index) => {
         if (index % 4 === 0) {
           tableIndex++;
-          this.formattedVisionCards[rarity][tableIndex] = [];
+          this.formattedCards[rarity][tableIndex] = [];
         }
 
-        this.formattedVisionCards[rarity][tableIndex].push(card)
+        this.formattedCards[rarity][tableIndex].push(card)
       });
     });
   }

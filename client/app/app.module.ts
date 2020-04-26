@@ -16,9 +16,6 @@ import { NgxMdModule } from 'ngx-md';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { TooltipModule } from './tooltip/tooltip.module';
-import { Select2Module } from './select2/select2.module';
-
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
@@ -42,12 +39,8 @@ import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
 import { SkillService } from './services/skill.service';
 import { EquipmentService } from './services/equipment.service';
-import { VisionCardService } from './services/visionCard.service';
+import { CardService } from './services/card.service';
 import { EsperService } from './services/esper.service';
-
-import { CapitalizePipe } from './pipes/capitalize.pipe';
-import { AbsolutePipe } from './pipes/absolute.pipe';
-import { RoundPipe } from './pipes/round.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -60,9 +53,6 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    CapitalizePipe,
-    AbsolutePipe,
-    RoundPipe,
     ContactComponent,
     LegalComponent,
     JsonComponent,
@@ -82,13 +72,11 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     MultiselectDropdownModule,
     LocalStorageModule.withConfig({
-      prefix: 'ffbe-chain',
+      prefix: 'wotv-calc',
       storageType: 'localStorage'
     }),
     NgxMdModule.forRoot(),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
-    TooltipModule,
-    Select2Module,
     ClipboardModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -107,7 +95,7 @@ export function createTranslateLoader(http: HttpClient) {
     JsonService,
     EquipmentService,
     SkillService,
-    VisionCardService,
+    CardService,
     EsperService
   ],
   bootstrap: [

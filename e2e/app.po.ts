@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class FfbeChainPage {
+export class WotvCalcPage {
   navigateTo() {
     return browser.get('/');
   }

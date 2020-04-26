@@ -1,24 +1,24 @@
 <div class="row">
-  <table class="visionCardTable">
+  <table class="cardTable">
     <tbody>
       <tr>
-        <th colspan="2">{{ visionCard.names.en }}</th>
+        <th colspan="2">{{ card.names.en }}</th>
       </tr>
       <tr>
-        <td colspan="2"><img class="visionCardImg" src="{{'assets/visionCards/' + visionCard.image + '_full.png'}}" /></td>
+        <td colspan="2"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
       </tr>
       <tr>
         <td>Rarity</td>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + visionCard.rarity + '.png'}}" /></td>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
       </tr>
     </tbody>
   </table>
 
   <div>
-    <table class="StatTable">
+    <table class="statTable">
       <tbody>
         <tr>
-          <th colspan="4">VisionCard Stats</th>
+          <th colspan="4">Stats</th>
         </tr>
         <tr>
           <th></th>
@@ -28,43 +28,43 @@
         </tr>
         <tr>
           <td>Min</td>
-          <td>{{ visionCard.stats.HP.min }}</td>
-          <td>{{ visionCard.stats.ATK.min }}</td>
-          <td>{{ visionCard.stats.MAG.min }}</td>
+          <td>{{ card.stats.HP.min }}</td>
+          <td>{{ card.stats.ATK.min }}</td>
+          <td>{{ card.stats.MAG.min }}</td>
         </tr>
         <tr>
           <td>Max</td>
-          <td>{{ visionCard.stats.HP.max }}</td>
-          <td>{{ visionCard.stats.ATK.max }}</td>
-          <td>{{ visionCard.stats.MAG.max }}</td>
+          <td>{{ card.stats.HP.max }}</td>
+          <td>{{ card.stats.ATK.max }}</td>
+          <td>{{ card.stats.MAG.max }}</td>
         </tr>
         <tr>
           <th colspan="4">Unit Effects</th>
         </tr>
-        <tr *ngIf="visionCard.unitBuffsClassic">
+        <tr *ngIf="card.unitBuffsClassic">
           <td>Classic</td>
           <td colspan="3">
-            <div *ngFor="let skill of visionCard.unitBuffsClassic">
+            <div *ngFor="let skill of card.unitBuffsClassic">
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
             </div>
           </td>
         </tr>
-        <tr *ngIf="visionCard.unitBuffsAwake.length > 0">
+        <tr *ngIf="card.unitBuffsAwake.length > 0">
           <td>Awake</td>
           <td colspan="3">
-            <div *ngFor="let skill of visionCard.unitBuffsAwake">
+            <div *ngFor="let skill of card.unitBuffsAwake">
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
             </div>
           </td>
         </tr>
-        <tr *ngIf="visionCard.unitBuffsMax.length > 0">
+        <tr *ngIf="card.unitBuffsMax.length > 0">
           <td>Max</td>
           <td colspan="3">
-            <div *ngFor="let skill of visionCard.unitBuffsMax">
+            <div *ngFor="let skill of card.unitBuffsMax">
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
@@ -74,30 +74,30 @@
         <tr>
           <th colspan="4">Party Effects</th>
         </tr>
-        <tr *ngIf="visionCard.partyBuffsClassic">
+        <tr *ngIf="card.partyBuffsClassic">
           <td>Classic</td>
           <td colspan="3">
-            <div *ngFor="let skill of visionCard.partyBuffsClassic">
+            <div *ngFor="let skill of card.partyBuffsClassic">
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
             </div>
           </td>
         </tr>
-        <tr *ngIf="visionCard.partyBuffsAwake.length > 0">
+        <tr *ngIf="card.partyBuffsAwake.length > 0">
           <td>Awake</td>
           <td colspan="3">
-            <div *ngFor="let skill of visionCard.partyBuffsAwake">
+            <div *ngFor="let skill of card.partyBuffsAwake">
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
             </div>
           </td>
         </tr>
-        <tr *ngIf="visionCard.partyBuffsMax.length > 0">
+        <tr *ngIf="card.partyBuffsMax.length > 0">
           <td>Max</td>
           <td colspan="3">
-            <div *ngFor="let skill of visionCard.partyBuffsMax">
+            <div *ngFor="let skill of card.partyBuffsMax">
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
