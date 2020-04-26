@@ -27,4 +27,8 @@ export class AppComponent {
     translate.use(lang);
     this.angulartics.eventTrack.next({ action: lang, properties: { category: 'lang' }});
   }
+
+  onActivate(event) {
+    window.scroll(0,0);
+  }
 }

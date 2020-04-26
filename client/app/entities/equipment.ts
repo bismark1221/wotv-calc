@@ -32,6 +32,7 @@ export class Equipment {
     this.stats = equipment.stats;
     this.image = equipment.image;
     this.type = equipment.type;
+    this.slug = equipment.slug;
   }
 
   getName(translateService: TranslateService): string {

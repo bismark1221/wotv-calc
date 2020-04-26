@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { EquipmentService } from './equipment.service'
+import {Slug } from 'ng2-slugify';
 
 @Injectable()
 export class JsonService {
+  slug = new Slug('default');
+
   wotvUnits = {};
   wotvVisionCards = {};
   wotvEspers = {};
@@ -564,8 +567,10 @@ export class JsonService {
   private getNames(item, type) {
     if (this.names[type][item.dataId]) {
       item.names.en = this.names[type][item.dataId]
+      item.slug = this.slug.slugify(item.names.en)
     } else {
       item.names.en = item.dataId;
+      item.slug = this.slug.slugify(item.names.en)
     }
   }
 
@@ -1073,6 +1078,7 @@ export class JsonService {
       if (!this.wotvEquipments[rType]) {
         this.wotvEquipments[rType] = {
           names: {en: this.names.equipment[dataId]},
+          slug: this.slug.slugify(this.names.equipment[dataId]),
           stats: {},
           type: this.jobEquip[this.equipments[dataId].cat[0]],
           dataId: dataId,

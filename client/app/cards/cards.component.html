@@ -8,11 +8,11 @@
     <tr *ngFor="let line of formattedCards[rarity]; let j = index">
       <td *ngFor="let card of formattedCards[rarity][j]" class="cardsCol">
         <div>
-          <a [routerLink]="['/card/' + card.dataId ]" [routerLinkActive]="['active']">
+          <a [routerLink]="['/card/' + card.slug ]" [routerLinkActive]="['active']">
             <img class="cardImg" src="{{'assets/cards/' + card.image + '_m.png'}}" />
           </a>
         </div>
-        <span class="cardName"><a [routerLink]="['/card/' + card.dataId ]" [routerLinkActive]="['active']">{{ card.names.en }}</a></span>
+        <span class="cardName"><a [routerLink]="['/card/' + card.slug ]" [routerLinkActive]="['active']">{{ card.names.en }}</a></span>
       </td>
     </tr>
   </table>

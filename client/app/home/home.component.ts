@@ -23,8 +23,7 @@ export class HomeComponent {
       {type: "card", dataId: "VC_FFT_MV1"}
     ],
     [
-      {type: "unit", dataId: "UN_LW_P_YERM"},
-      {type: "esper", dataId: "UN_LW_S_IFRT"}
+      {type: "unit", dataId: "UN_LW_P_ETRE"}
     ]
   ];
 
@@ -65,7 +64,7 @@ export class HomeComponent {
         let dataItem = this[item.type + "Service"]["get" + item.type[0].toUpperCase() + item.type.slice(1)](item.dataId);
         this.updatedFormatted[updateIndex][tableIndex].push({
           type: item.type,
-          dataId: item.dataId,
+          slug: dataItem.slug,
           name: dataItem.names.en,
           image: dataItem.image,
           element: dataItem.element,

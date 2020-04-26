@@ -22,7 +22,7 @@ export class EquipmentComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.equipment = this.equipmentService.getEquipment(params.get('equipmentId'))
+      this.equipment = this.equipmentService.getEquipmentBySlug(params.get('slug'))
       if (!this.equipment) {
         this.router.navigate(['/equipment-not-found']);
       } else {

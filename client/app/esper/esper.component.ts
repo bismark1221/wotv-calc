@@ -23,7 +23,7 @@ export class EsperComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.esper = this.esperService.getEsper(params.get('esperId'))
+      this.esper = this.esperService.getEsperBySlug(params.get('slug'))
       if (!this.esper) {
         this.router.navigate(['/esper-not-found']);
       } else {

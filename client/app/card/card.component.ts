@@ -23,7 +23,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.card = this.cardService.getCard(params.get('cardId'))
+      this.card = this.cardService.getCardBySlug(params.get('slug'))
       if (!this.card) {
         this.router.navigate(['/card-not-found']);
       } else {

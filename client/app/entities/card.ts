@@ -38,6 +38,7 @@ export class Card {
     this.partyBuffsClassic = card.partyBuffsClassic;
     this.partyBuffsAwake = card.partyBuffsAwake;
     this.partyBuffsMax = card.partyBuffsMax;
+    this.slug = card.slug;
   }
 
   getName(translateService: TranslateService): string {

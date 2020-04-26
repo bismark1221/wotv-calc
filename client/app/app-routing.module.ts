@@ -19,13 +19,13 @@ import { EquipmentComponent } from './equipment/equipment.component';
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'units', component: UnitsComponent },
-  { path: 'unit/:unitId', component: UnitComponent },
+  { path: 'unit/:slug', component: UnitComponent },
   { path: 'cards', component: CardsComponent },
-  { path: 'card/:cardId', component: CardComponent },
+  { path: 'card/:slug', component: CardComponent },
   { path: 'espers', component: EspersComponent },
-  { path: 'esper/:esperId', component: EsperComponent },
+  { path: 'esper/:slug', component: EsperComponent },
   { path: 'equipments', component: EquipmentsComponent },
-  { path: 'equipment/:equipmentId', component: EquipmentComponent },
+  { path: 'equipment/:slug', component: EquipmentComponent },
 
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },

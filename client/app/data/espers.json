@@ -4,7 +4,7 @@
     "names": {
       "en": "Ifrit"
     },
-    "rarity": "UR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -46,18 +46,21 @@
           "l": 4,
           "s": 1
         },
+        "based": "magic",
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 2
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 135,
           "maxValue": 175,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -480,14 +483,15 @@
       }
     },
     "element": "fire",
-    "image": "lapsifrt"
+    "image": "lapsifrt",
+    "slug": "ifrit"
   },
   "UN_LW_S_GLEM": {
     "dataId": "UN_LW_S_GLEM",
     "names": {
       "en": "Golem"
     },
-    "rarity": "UR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -529,18 +533,21 @@
           "l": 4,
           "s": 1
         },
+        "based": "magic",
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 2
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 135,
           "maxValue": 175,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "earth"
@@ -963,14 +970,15 @@
       }
     },
     "element": "earth",
-    "image": "lapsglem"
+    "image": "lapsglem",
+    "slug": "golem"
   },
   "UN_LW_S_SIRE": {
     "dataId": "UN_LW_S_SIRE",
     "names": {
       "en": "Siren"
     },
-    "rarity": "UR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -1012,18 +1020,21 @@
           "l": 4,
           "s": 1
         },
+        "based": "magic",
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 2
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 135,
           "maxValue": 175,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "water"
@@ -1446,14 +1457,15 @@
       }
     },
     "element": "water",
-    "image": "lapssire"
+    "image": "lapssire",
+    "slug": "siren"
   },
   "UN_LW_S_IGNT": {
     "dataId": "UN_LW_S_IGNT",
     "names": {
       "en": "Iron Giant"
     },
-    "rarity": "MR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -1474,14 +1486,17 @@
           "s": 10,
           "w": 2
         },
+        "based": "physic",
         "aoe": {},
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "light"
@@ -1901,14 +1916,15 @@
       }
     },
     "element": "light",
-    "image": "lapsignt"
+    "image": "lapsignt",
+    "slug": "iron-giant"
   },
   "UN_LW_S_BHMT": {
     "dataId": "UN_LW_S_BHMT",
     "names": {
       "en": "Behemoth"
     },
-    "rarity": "MR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -1924,18 +1940,21 @@
         "type": "active",
         "count": 1,
         "range": {},
+        "based": "physic",
         "aoe": {
           "s": 2,
           "l": 2,
           "h": 0
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "dark"
@@ -2355,14 +2374,15 @@
       }
     },
     "element": "dark",
-    "image": "lapsbhmt"
+    "image": "lapsbhmt",
+    "slug": "behemoth"
   },
   "UN_LW_S_MABR": {
     "dataId": "UN_LW_S_MABR",
     "names": {
       "en": "Malboro"
     },
-    "rarity": "MR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -2417,17 +2437,15 @@
           "l": 3,
           "s": 1
         },
+        "based": null,
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 0
         },
+        "time": {},
         "combo": {},
-        "knockback": {},
-        "damage": {
-          "minValue": 0,
-          "maxValue": 0
-        }
+        "knockback": {}
       }
     ],
     "buffs": [
@@ -2846,14 +2864,15 @@
       }
     },
     "element": "wind",
-    "image": "lapsmabr"
+    "image": "lapsmabr",
+    "slug": "malboro"
   },
   "UN_LW_S_CACT": {
     "dataId": "UN_LW_S_CACT",
     "names": {
       "en": "Cactuar"
     },
-    "rarity": "SR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -2873,14 +2892,17 @@
           "l": 2,
           "s": 1
         },
+        "based": "physic",
         "aoe": {},
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 1000,
           "maxValue": 1000,
-          "type": "0"
+          "type": "all",
+          "effType": "DAMAGE"
         },
         "elem": [
           "earth"
@@ -3303,14 +3325,15 @@
       }
     },
     "element": "earth",
-    "image": "lapscact"
+    "image": "lapscact",
+    "slug": "cactuar"
   },
   "UN_LW_S_ARMN_01": {
     "dataId": "UN_LW_S_ARMN_01",
     "names": {
       "en": "Floateye"
     },
-    "rarity": "SR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -3339,14 +3362,17 @@
           "s": 1,
           "line": 1
         },
+        "based": "physic",
         "aoe": {},
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": -5,
           "maxValue": 17,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -3769,14 +3795,15 @@
       }
     },
     "element": "ice",
-    "image": "lapsarmn"
+    "image": "lapsarmn",
+    "slug": "floateye"
   },
   "UN_LW_S_ZUUU": {
     "dataId": "UN_LW_S_ZUUU",
     "names": {
       "en": "Zuu"
     },
-    "rarity": "SR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -3792,18 +3819,21 @@
         "type": "active",
         "count": 1,
         "range": {},
+        "based": "physic",
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 1
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "slash"
+          "type": "slash",
+          "effType": "DAMAGE"
         },
         "elem": [
           "wind"
@@ -4226,14 +4256,15 @@
       }
     },
     "element": "wind",
-    "image": "lapszuuu"
+    "image": "lapszuuu",
+    "slug": "zuu"
   },
   "UN_LW_S_OGRE": {
     "dataId": "UN_LW_S_OGRE",
     "names": {
       "en": "Ogre"
     },
-    "rarity": "SR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -4254,14 +4285,17 @@
           "s": 1,
           "line": 1
         },
+        "based": "physic",
         "aoe": {},
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 65,
           "maxValue": 100,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "lightning"
@@ -4684,14 +4718,15 @@
       }
     },
     "element": "lightning",
-    "image": "lapsogre"
+    "image": "lapsogre",
+    "slug": "ogre"
   },
   "UN_LW_S_BOMB": {
     "dataId": "UN_LW_S_BOMB",
     "names": {
       "en": "Bomb"
     },
-    "rarity": "SR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -4707,11 +4742,13 @@
         "type": "active",
         "count": 1,
         "range": {},
+        "based": "physic",
         "aoe": {
           "s": 1,
           "l": 3,
           "h": 1
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {
@@ -4720,7 +4757,8 @@
         "damage": {
           "minValue": 200,
           "maxValue": 230,
-          "type": "strike"
+          "type": "strike",
+          "effType": "DAMAGE"
         },
         "elem": [
           "fire"
@@ -5143,14 +5181,15 @@
       }
     },
     "element": "fire",
-    "image": "lapsbomb"
+    "image": "lapsbomb",
+    "slug": "bomb"
   },
   "UN_LW_S_SHIV": {
     "dataId": "UN_LW_S_SHIV",
     "names": {
       "en": "Shiva"
     },
-    "rarity": "UR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -5192,18 +5231,21 @@
           "l": 4,
           "s": 1
         },
+        "based": "magic",
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 2
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 135,
           "maxValue": 175,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "ice"
@@ -5626,14 +5668,15 @@
       }
     },
     "element": "ice",
-    "image": "lapsshiv"
+    "image": "lapsshiv",
+    "slug": "shiva"
   },
   "UN_LW_S_RAMU": {
     "dataId": "UN_LW_S_RAMU",
     "names": {
       "en": "Ramuh"
     },
-    "rarity": "UR",
+    "rarity": "N",
     "skills": [
       {
         "unlockStar": null,
@@ -5675,18 +5718,21 @@
           "l": 4,
           "s": 1
         },
+        "based": "magic",
         "aoe": {
           "s": 0,
           "l": 1,
           "h": 2
         },
+        "time": {},
         "hit": 100,
         "combo": {},
         "knockback": {},
         "damage": {
           "minValue": 135,
           "maxValue": 175,
-          "type": "magic"
+          "type": "magic",
+          "effType": "DAMAGE"
         },
         "elem": [
           "lightning"
@@ -6109,6 +6155,7 @@
       }
     },
     "element": "lightning",
-    "image": "lapsramu"
+    "image": "lapsramu",
+    "slug": "ramuh"
   }
 }

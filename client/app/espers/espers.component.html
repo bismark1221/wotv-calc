@@ -9,12 +9,12 @@
       <tr *ngFor="let line of formattedEspers[rarity]; let j = index">
         <td *ngFor="let esper of formattedEspers[rarity][j]" class="espersCol">
           <div>
-            <a [routerLink]="['/esper/' + esper.dataId ]" [routerLinkActive]="['active']">
+            <a [routerLink]="['/esper/' + esper.slug ]" [routerLinkActive]="['active']">
               <img class="esperImg" src="{{'assets/units/' + esper.image + '_s.png'}}" />
             </a>
           </div>
           <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" />
-          <span class="esperName"><a [routerLink]="['/esper/' + esper.dataId ]" [routerLinkActive]="['active']">{{ esper.names.en }}</a></span>
+          <span class="esperName"><a [routerLink]="['/esper/' + esper.slug ]" [routerLinkActive]="['active']">{{ esper.names.en }}</a></span>
         </td>
       </tr>
     </table>
