@@ -41,7 +41,7 @@
 
 
 <div class="row">
-  <table class="skillsTable" *ngIf="equipment.skills[0]">
+  <table class="skillsTable" *ngIf="equipment.countSkills.length > 0">
     <tbody>
       <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
         <th colspan="6">Skill</th>
@@ -96,10 +96,10 @@
       <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active'">
         <th colspan="6">Effects</th>
       </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active' && equipment.skills.length > 1">
+      <tr *ngIf="equipment.countSkills.length > 1">
         <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
       </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active'">
+      <tr *ngIf="(equipment.skills[0][0] && equipment.skills[0][0].type != 'active') || equipment.countSkills.length > 1">
         <td *ngFor="let i of equipment.countSkills">
           <div *ngFor="let skill of equipment.skills[i]">
             <div *ngFor="let effect of skill.effects">
