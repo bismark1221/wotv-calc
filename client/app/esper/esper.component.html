@@ -1,32 +1,11 @@
-<div class="row esper form-group">
-  <div class="chainParameters allSelectEsper" #chainDiv>
-    <div class="inlineBlock verticalTop">
-      <div
-        class=" verticalTop selectEsperZone marginEsper">
-
-        <div class="inlineBlock firstSelectLevel">
-          <label>{{ 'chain.label.esper' | translate }}</label>
-          <div>
-            <select2
-              [data]="observableEspers"
-              [value]="idSelected"
-              [options]="select2Options"
-              (valueChanged)="selectEsper($event.value);"></select2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
+<div class="row">
+  <table class="esperTable">
     <tbody>
       <tr>
-        <th colspan="2">{{ esper.name }}</th>
+        <th colspan="2">{{ esper.names.en }}</th>
       </tr>
       <tr>
-        <td colspan="2"><img class="esperImg" src="{{'assets/units/' + esper.image + '.png'}}" /></td>
+        <td colspan="2"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.png'}}" /></td>
       </tr>
       <tr>
         <td>Rarity</td>
@@ -34,60 +13,16 @@
       </tr>
       <tr>
         <td>Element</td>
-        <td>{{ esper.element }}</td>
+        <td><img class="rarityImg" src="{{'assets/elements/' + esper.element + '.png'}}" /></td>
       </tr>
     </tbody>
   </table>
-</div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
+  <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="5">Cast Skill</th>
-      </tr>
-      <tr>
-        <th>Type</th>
-        <th>name</th>
-        <th>Effects</th>
-        <th>Range</th>
-        <th>Hits</th>
-      </tr>
-      <tr>
-        <td>
-          <img class="skilImg" src="{{'assets/skill-type/' + esper.skills[0].type + '.png'}}" />
-        </td>
-        <td *ngIf="esper.skills[0].type == 'active'">
-          {{ esper.skills[0].names.en }}
-        </td>
-        <td>
-          <div>{{ esper.skills[0].counterHtml }}</div>
-          <div>{{ esper.skills[0].damageHtml }}</div>
-          <div *ngFor="let effect of esper.skills[0].effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="esper.skills[0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
-            <div [innerHTML]="esper.skills[0].skillTableHtml"></div>
-          </div>
-        </td>
-        <td>
-          <span *ngIf="esper.skills[0].combo">{{ esper.skills[0].combo.num }}</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
-      <tr>
-        <th colspan="13">Esper Stats</th>
+        <th colspan="9">Stats</th>
       </tr>
       <tr>
         <th></th>
@@ -95,14 +30,10 @@
         <th>TP</th>
         <th>AP</th>
         <th>ATK</th>
-        <th>DEF</th>
         <th>MAG</th>
-        <th>SPR</th>
         <th>DEX</th>
         <th>AGI</th>
         <th>LUCK</th>
-        <th>MOVE</th>
-        <th>JUMP</th>
       </tr>
       <tr>
         <td>Min</td>
@@ -110,14 +41,10 @@
         <td>{{ esper.stats.TP.min }}</td>
         <td>{{ esper.stats.AP.min }}</td>
         <td>{{ esper.stats.ATK.min }}</td>
-        <td>{{ esper.stats.DEF.min }}</td>
         <td>{{ esper.stats.MAG.min }}</td>
-        <td>{{ esper.stats.SPR.min }}</td>
         <td>{{ esper.stats.DEX.min }}</td>
         <td>{{ esper.stats.AGI.min }}</td>
         <td>{{ esper.stats.LUCK.min }}</td>
-        <td>{{ esper.stats.MOVE.min }}</td>
-        <td>{{ esper.stats.JUMP.min }}</td>
       </tr>
       <tr>
         <td>Max</td>
@@ -125,27 +52,17 @@
         <td>{{ esper.stats.TP.max }}</td>
         <td>{{ esper.stats.AP.max }}</td>
         <td>{{ esper.stats.ATK.max }}</td>
-        <td>{{ esper.stats.DEF.max }}</td>
         <td>{{ esper.stats.MAG.max }}</td>
-        <td>{{ esper.stats.SPR.max }}</td>
         <td>{{ esper.stats.DEX.max }}</td>
         <td>{{ esper.stats.AGI.max }}</td>
         <td>{{ esper.stats.LUCK.max }}</td>
-        <td>{{ esper.stats.MOVE.max }}</td>
-        <td>{{ esper.stats.JUMP.max }}</td>
       </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
-    <tbody>
+      <tr class="emptyLine"></tr>
       <tr>
-        <th colspan="8">Res Elem</th>
+        <th colspan="9">Res Elem</th>
       </tr>
       <tr>
+        <td></td>
         <td><img class="elementImg" src="{{'assets/elements/fire.png'}}" /></td>
         <td><img class="elementImg" src="{{'assets/elements/ice.png'}}" /></td>
         <td><img class="elementImg" src="{{'assets/elements/earth.png'}}" /></td>
@@ -156,6 +73,7 @@
         <td><img class="elementImg" src="{{'assets/elements/dark.png'}}" /></td>
       </tr>
       <tr>
+        <td></td>
         <td><span *ngIf="esper.stats.FIRE.min">{{ esper.stats.FIRE.min }} %</span></td>
         <td><span *ngIf="esper.stats.ICE.min">{{ esper.stats.ICE.min }} %</span></td>
         <td><span *ngIf="esper.stats.EARTH.min">{{ esper.stats.EARTH.min }} %</span></td>
@@ -170,8 +88,50 @@
 </div>
 
 
-<div class="row littleMarginTop" *ngIf="idSelected !== 'unselect'">
-  <table>
+<div class="row">
+  <table class="skillsTable">
+    <tbody>
+      <tr>
+        <th colspan="5">Cast Skill</th>
+      </tr>
+      <tr>
+        <th class="skillTypeTd">Type</th>
+        <th class="skillNameTd">name</th>
+        <th>Effects</th>
+        <th class="rangeTd">Range</th>
+        <th class="skillHitTd">Hits</th>
+      </tr>
+      <tr>
+        <td>
+          <img class="skilImg" src="{{'assets/skill-type/' + esper.skills[0].type + '.png'}}" />
+        </td>
+        <td *ngIf="esper.skills[0].type == 'active'">
+          {{ esper.skills[0].names.en }}
+        </td>
+        <td class="skillEffectTd">
+          <div>{{ esper.skills[0].counterHtml }}</div>
+          <div [innerHTML]="esper.skills[0].damageHtml"></div>
+          <div *ngFor="let effect of esper.skills[0].effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td>
+          <ng-template #tip_table><div [innerHTML]="esper.skills[0].skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table">
+            <div class="divSkillTableHtml" [innerHTML]="esper.skills[0].skillTableHtml"></div>
+          </div>
+        </td>
+        <td>
+          <span *ngIf="esper.skills[0].combo">{{ esper.skills[0].combo.num }}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="row">
+  <table class="skillsTable">
     <tbody>
       <tr>
         <th colspan="11">Board Effects</th>

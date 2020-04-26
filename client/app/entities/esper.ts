@@ -65,6 +65,7 @@ export class Esper {
   image = "ITEMcrst";
 
   effectBuffs;
+  slug;
   
 
   constructFromJson(esper: Esper, translateService: TranslateService): void {

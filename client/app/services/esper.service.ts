@@ -17,6 +17,30 @@ export class EsperService {
   private oFxNcL: any;
   private oFyNcL: any;
 
+  private espersRarity = {
+    N: [],
+    R: [],
+    SR: [
+      "UN_LW_S_BOMB",
+      "UN_LW_S_CACT",
+      "UN_LW_S_ARMN_01",
+      "UN_LW_S_OGRE",
+      "UN_LW_S_ZUUU"
+    ],
+    MR: [
+      "UN_LW_S_BHMT",
+      "UN_LW_S_IGNT",
+      "UN_LW_S_MABR"
+    ],
+    UR: [
+      "UN_LW_S_IFRT",
+      "UN_LW_S_GLEM",
+      "UN_LW_S_RAMU",
+      "UN_LW_S_SHIV",
+      "UN_LW_S_SIRE"
+    ]
+  }
+
   constructor(private translateService: TranslateService) {}
 
   private i(s: any) {
@@ -27,7 +51,7 @@ export class EsperService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sort(espers: Esper[], translate: any): Esper[] {
+  public sortByName(espers: Esper[], translate: any): Esper[] {
     espers.sort((a: any, b: any) => {
       let x = this.i(a.name);
       let y = this.i(b.name);
@@ -77,6 +101,43 @@ export class EsperService {
 
     this.espers = espers;
     return espers;
+  }
+
+  getEspersForListing() {
+    let espers = {
+      N: [],
+      R: [],
+      SR: [],
+      MR: [],
+      UR: []
+    };
+
+    Object.keys(JSON.parse(JSON.stringify(ESPERS))).forEach(esperId => {
+      let esper = new Esper();
+      esper.constructFromJson(ESPERS[esperId], this.translateService);
+      espers[this.findRarity(esper)].push(esper);
+    });
+
+    return espers;
+  }
+
+  findRarity(esper) {
+    let rarity = "N";
+    Object.keys(this.espersRarity).forEach(rarityType => {
+      if (this.espersRarity[rarityType].indexOf(esper.dataId) !== -1) {
+        rarity = rarityType
+      }
+    })
+
+    return rarity;
+  }
+
+  getEsperBySlug(slug: string): Esper {
+    if (!this.espers || this.espers.length === 0) {
+      this.getEspers();
+    }
+
+    return this.espers.find(esper => esper.slug === slug);
   }
 
   getEsper(id: string): Esper {

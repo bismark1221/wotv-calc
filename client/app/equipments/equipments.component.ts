@@ -23,23 +23,20 @@ export class EquipmentsComponent implements OnInit {
 
   private getEquipments(): void {
     this.equipments = this.equipmentService.getEquipmentsForListing();
-    console.log(this.equipments)
 
     Object.keys(this.equipments).forEach(rarity => {
       this.equipmentService.sortByName(this.equipments[rarity], this.translateService)
 
       this.formattedEquipments[rarity] = [];
       let tableIndex = -1;
-      this.equipments[rarity].forEach((unit, index) => {
+      this.equipments[rarity].forEach((equipment, index) => {
         if (index % 4 === 0) {
           tableIndex++;
           this.formattedEquipments[rarity][tableIndex] = [];
         }
 
-        this.formattedEquipments[rarity][tableIndex].push(unit)
+        this.formattedEquipments[rarity][tableIndex].push(equipment)
       });
     });
-
-    console.log(this.formattedEquipments)
   }
 }
