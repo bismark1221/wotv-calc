@@ -21,6 +21,7 @@ export class JsonService {
   visionCards = {};
   weathers = {};
   espersBoards = {};
+  espersTbl = {};
 
   names = {
     skill: {},
@@ -91,8 +92,8 @@ export class JsonService {
     49: "DARK_ATK",
     50: "ALL_ELEMENTS_ATK",
     61: "SLASH_ATK",
-    62: "STRIKE_ATK",
-    63: "PIERCE_ATK",
+    62: "PIERCE_ATK",
+    63: "STRIKE_ATK",
     64: "MISSILE_ATK",
     65: "MAGIC_ATK",
     70: "ALL_ATTACKS_ATK",
@@ -399,6 +400,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Weather.json').toPromise();
   }
 
+  private jsonEsperLvTbls() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NBeastLvTbl.json').toPromise();
+  }
+
 
   /* Translation */
   private jsonUnitNames() {
@@ -444,6 +449,7 @@ export class JsonService {
       this.jsonVisionCardNames(),
       this.jsonEspersBoards(),
       this.jsonWeathers(),
+      this.jsonEsperLvTbls(),
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
       this.names.unit = this.formatNames(responses[1]);
@@ -460,6 +466,7 @@ export class JsonService {
       this.names.visionCard = this.formatNames(responses[12]);
       this.espersBoards = this.formatJson(responses[13]);
       this.weathers = this.formatJson(responses[14]);
+      this.espersTbl = this.formatJson(responses[15]);
 
       this.formatJsons();
       this.cleanUnits();
@@ -644,6 +651,7 @@ export class JsonService {
       unlockJob: panelBuff.get_job,
       jobLevel: panelBuff.need_level,
       jp: panelBuff.jp,
+      sp: panelBuff.sp,
       effects: []
     };
 
@@ -999,6 +1007,7 @@ export class JsonService {
       skills: [],
       buffs: [],
       stats: {},
+      SPs : [],
       element: this.elements[esper.elem[0]],
       image: esper.charaId.toLowerCase()
     };
@@ -1007,6 +1016,7 @@ export class JsonService {
 
     this.getEsperStats(esper, 'esper')
     this.getEspersSkillsAndBuffs(this.wotvEspers[dataId]);
+    this.getEspersSPs(this.wotvEspers[dataId], esper.nb_lv_tbl);
 
     this.addSkill(this.wotvEspers[dataId], {slot: 3, value: esper.atkskl});
   }
@@ -1068,6 +1078,16 @@ export class JsonService {
         }
       }
     });
+  }
+
+  private getEspersSPs(esper, tblId) {
+    for (let awake = 1; awake <= 2; awake++) {
+      esper.SPs.push([]);
+
+      this.espersTbl[tblId]["awake" + awake].forEach(SP => {
+        esper.SPs[awake - 1].push(SP.sp)
+      })
+    }
   }
 
   private addEquipment(equipment) {

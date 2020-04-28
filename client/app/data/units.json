@@ -1781,13 +1781,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -3365,7 +3365,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -3384,7 +3384,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -4963,7 +4963,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -5803,13 +5803,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -6989,7 +6989,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -8254,7 +8254,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -8609,7 +8609,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -9334,7 +9334,7 @@
         "jp": 800,
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "value": 10,
             "calcType": "fixe"
           }
@@ -9692,7 +9692,7 @@
           "calcType": "fixe"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "STRIKE_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -9888,7 +9888,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -10639,13 +10639,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -11313,7 +11313,7 @@
       },
       "effects": [
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -15142,7 +15142,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -19408,13 +19408,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -20274,7 +20274,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -21659,7 +21659,7 @@
           "calcType": "percent"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 20,
           "maxValue": 20,
           "calcType": "fixe"
@@ -23373,7 +23373,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -27362,13 +27362,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -31496,7 +31496,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -35293,7 +35293,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -36389,13 +36389,13 @@
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "STRIKE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -36642,13 +36642,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -44605,7 +44605,7 @@
       },
       "effects": [
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "fixe"
@@ -46323,13 +46323,13 @@
               "calcType": "resistance"
             },
             {
-              "type": "PIERCE_ATK",
+              "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "STRIKE_ATK",
+              "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
@@ -48149,7 +48149,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -51248,13 +51248,13 @@
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "STRIKE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -51827,7 +51827,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -52854,13 +52854,13 @@
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "STRIKE_ATK",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
@@ -54391,7 +54391,7 @@
           "calcType": "fixe"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "resistance"
@@ -55027,7 +55027,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -56039,13 +56039,13 @@
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "PIERCE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "STRIKE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -57884,7 +57884,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -65065,13 +65065,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -67667,7 +67667,7 @@
         },
         "effects": [
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "resistance"
@@ -75700,7 +75700,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -78967,13 +78967,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
@@ -79342,7 +79342,7 @@
         },
         "effects": [
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": 5,
             "maxValue": 15,
             "calcType": "fixe"
@@ -80550,13 +80550,13 @@
             "calcType": "resistance"
           },
           {
-            "type": "STRIKE_ATK",
+            "type": "PIERCE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"
           },
           {
-            "type": "PIERCE_ATK",
+            "type": "STRIKE_ATK",
             "minValue": -20,
             "maxValue": -8,
             "calcType": "resistance"

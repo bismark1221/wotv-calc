@@ -22,7 +22,7 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="9">Stats</th>
+        <th colspan="10">Stats</th>
       </tr>
       <tr>
         <th></th>
@@ -34,6 +34,7 @@
         <th>DEX</th>
         <th>AGI</th>
         <th>LUCK</th>
+        <th>SP</th>
       </tr>
       <tr>
         <td>Min</td>
@@ -45,6 +46,7 @@
         <td>{{ esper.stats.DEX.min }}</td>
         <td>{{ esper.stats.AGI.min }}</td>
         <td>{{ esper.stats.LUCK.min }}</td>
+        <td rowspan="2">{{ esper.maxSP }}</td>
       </tr>
       <tr>
         <td>Max</td>
@@ -59,10 +61,10 @@
       </tr>
       <tr class="emptyLine"></tr>
       <tr>
-        <th colspan="9">Res Elem</th>
+        <th colspan="10">Res Elem</th>
       </tr>
       <tr>
-        <td></td>
+        <td rowspan="2"></td>
         <td><img class="elementImg" src="{{'assets/elements/fire.png'}}" /></td>
         <td><img class="elementImg" src="{{'assets/elements/ice.png'}}" /></td>
         <td><img class="elementImg" src="{{'assets/elements/earth.png'}}" /></td>
@@ -71,9 +73,9 @@
         <td><img class="elementImg" src="{{'assets/elements/water.png'}}" /></td>
         <td><img class="elementImg" src="{{'assets/elements/light.png'}}" /></td>
         <td><img class="elementImg" src="{{'assets/elements/dark.png'}}" /></td>
+        <td rowspan="2"></td>
       </tr>
       <tr>
-        <td></td>
         <td><span *ngIf="esper.stats.FIRE.min">{{ esper.stats.FIRE.min }} %</span></td>
         <td><span *ngIf="esper.stats.ICE.min">{{ esper.stats.ICE.min }} %</span></td>
         <td><span *ngIf="esper.stats.EARTH.min">{{ esper.stats.EARTH.min }} %</span></td>
@@ -134,12 +136,15 @@
   <table class="skillsTable">
     <tbody>
       <tr>
-        <th colspan="11">Board Effects</th>
+        <th colspan="2">Board Effects</th>
       </tr>
       <tr>
-        <td colspan="11">
-          <div *ngFor="let buff of esper.effectBuffs">{{ buff }}</div>
-        </td>
+        <th>Effects</th>
+        <th>Cost</th>
+      </tr>
+      <tr *ngFor="let buff of esper.effectBuffs">
+        <td>{{ buff.html }}</td>
+        <td>{{ buff.sp }}</td>
       </tr>
     </tbody>
   </table>

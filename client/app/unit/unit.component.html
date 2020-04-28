@@ -61,7 +61,7 @@
         <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ unit.tmr.stats[statType] }}</td>
       </tr>
       <tr *ngIf="unit.tmr.skills[0]">
-        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">Skill</th>
+        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">TMR Skill</th>
       </tr>
       <tr *ngIf="unit.tmr.skills[0]">
         <th>Type</th>
@@ -131,7 +131,7 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="13">Unit Stats</th>
+        <th colspan="13">Unit Stats (with only job lvl 1)</th>
       </tr>
       <tr>
         <th></th>

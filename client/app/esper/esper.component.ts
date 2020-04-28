@@ -52,10 +52,20 @@ export class EsperComponent implements OnInit {
 
     this.esper.buffs.forEach(buff => {
       let effect = buff.effects[0]
-      this.esper.effectBuffs.push(this.skillService.formatEffect(this.esper, buff, effect, false))
+      this.esper.effectBuffs.push({
+        html: this.skillService.formatEffect(this.esper, buff, effect, false),
+        sp: buff.sp
+      })
     });
     this.skillService.sortEffectBuffs(this.esper.effectBuffs);
 
     this.esper.rarity = this.esperService.findRarity(this.esper);
+
+    this.esper.maxSP = 0;
+    this.esper.SPs.forEach(awake => {
+      awake.forEach(sp => {
+        this.esper.maxSP += sp;
+      })
+    })
   }
 }

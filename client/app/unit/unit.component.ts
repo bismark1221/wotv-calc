@@ -67,6 +67,21 @@ export class UnitComponent implements OnInit {
       this.skillService.formatRange(this.unit, this.unit.limit);
     }
 
+    this.unit.totalBuffs = {
+      HP: 0,
+      TP: 0,
+      INITIAL_AP: 0,
+      ATK: 0,
+      DEF: 0,
+      MAG: 0,
+      SPR: 0,
+      DEX: 0,
+      AGI: 0,
+      LCK: 0,
+      CRITIC_RATE: 0,
+    };
+    this.unit.remainingBuffs = [];
+
     this.unit.buffs.forEach(buff => {
       let effect = buff.effects[0]
       if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {

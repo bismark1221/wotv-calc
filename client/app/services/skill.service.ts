@@ -42,8 +42,8 @@ export class SkillService {
 
   public sortEffectBuffs(effects) {
     effects.sort((a: any, b: any) => {
-      let x = this.i(a);
-      let y = this.i(b);
+      let x = this.i(a.html);
+      let y = this.i(b.html);
 
       const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
       const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
@@ -116,7 +116,7 @@ export class SkillService {
       let minValue = typeof(effect.minValue) === "number" ? effect.minValue : effect.value;
       minValue = getPositiveValue ? this.getPositiveValue(minValue) : minValue;
 
-      value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect) + ")"
+      value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect, getPositiveValue) + ")"
     }
 
     return value;

@@ -66,6 +66,7 @@ export class Esper {
 
   effectBuffs;
   slug;
+  SPs;
 
 
   constructFromJson(esper: Esper, translateService: TranslateService): void {
@@ -78,6 +79,7 @@ export class Esper {
     this.element = esper.element;
     this.image = esper.image;
     this.slug = esper.slug;
+    this.SPs = esper.SPs;
   }
 
   getName(translateService: TranslateService): string {
