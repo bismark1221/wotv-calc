@@ -543,8 +543,9 @@ export class SkillService {
 
     if (skill.damage) {
       if (damage.type) {
-        let image = (skill.elem ? skill.elem : unit.element) + "_" + damage.type.toLowerCase();
-        html = html + "<img class='damageSkillImg' src='assets/damage/" + image + ".png' />&nbsp;"
+        let elem = skill.elem ? skill.elem : unit.element
+        let image = elem + "_" + damage.type.toLowerCase();
+        html = html + "<img title='" + elem + " " + damage.type.toLowerCase() + "' class='damageSkillImg' src='assets/damage/" + image + ".png' />&nbsp;"
       }
 
       let pool = damage.pool && damage.pool !== "HP" ? " " + damage.pool + " " : "";

@@ -22,6 +22,8 @@ export class JsonService {
   weathers = {};
   espersBoards = {};
   espersTbl = {};
+  equipmentRecipes = {};
+  itemOthers = {};
 
   names = {
     skill: {},
@@ -404,6 +406,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NBeastLvTbl.json').toPromise();
   }
 
+  private jsonArtifactRecipes() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRecipe.json').toPromise();
+  }
+
 
   /* Translation */
   private jsonUnitNames() {
@@ -430,6 +436,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/VisionCardName.json').toPromise();
   }
 
+  private jsonVisionItemOthers() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemOther.json').toPromise();
+  }
+
 
   getJsons(): Promise<any[]> {
     // @ts-ignore
@@ -450,6 +460,8 @@ export class JsonService {
       this.jsonEspersBoards(),
       this.jsonWeathers(),
       this.jsonEsperLvTbls(),
+      this.jsonArtifactRecipes(),
+      this.jsonVisionItemOthers(),
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
       this.names.unit = this.formatNames(responses[1]);
@@ -467,6 +479,8 @@ export class JsonService {
       this.espersBoards = this.formatJson(responses[13]);
       this.weathers = this.formatJson(responses[14]);
       this.espersTbl = this.formatJson(responses[15]);
+      this.equipmentRecipes = this.formatJson(responses[16]);
+      this.itemOthers = this.formatNames(responses[17]);
 
       this.formatJsons();
 
@@ -1125,6 +1139,19 @@ export class JsonService {
           this.wotvEquipments[rType].acquisition = {
             type: "tmr",
             unitId: unitId
+          }
+        } else if (this.equipmentRecipes[dataId]) {
+          let recipe = this.equipmentRecipes[dataId].recipe;
+          if (this.itemOthers[recipe] != "") {
+            this.wotvEquipments[rType].acquisition = {
+              type: this.itemOthers[recipe]
+            }
+          }
+        }
+
+        if (!this.wotvEquipments[rType].acquisition) {
+          this.wotvEquipments[rType].acquisition = {
+            type: "Unknown"
           }
         }
 
