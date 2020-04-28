@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
+import { UnitService } from '../services/unit.service';
 
 
 @Component({
@@ -16,6 +17,7 @@ export class EquipmentComponent implements OnInit {
   constructor(
     private equipmentService: EquipmentService,
     private skillService: SkillService,
+    private unitService: UnitService,
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {}
@@ -57,9 +59,21 @@ export class EquipmentComponent implements OnInit {
       });
       i++;
     });
+
+    if (this.equipment.acquisition && this.equipment.acquisition.type === "tmr") {
+      let unit = this.getUnit(this.equipment.acquisition.unitId)
+      this.equipment.acquisition.unit = {
+        name: unit.names.en,
+        slug: unit.slug
+      }
+    }
   }
 
   getEquipementType(type) {
     return this.equipmentService.getFormatType(type)
+  }
+
+  private getUnit(unitId) {
+    return this.unitService.getUnit(unitId)
   }
 }

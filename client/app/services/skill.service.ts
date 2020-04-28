@@ -147,6 +147,8 @@ export class SkillService {
       return "Nullify"
     } else if (effect.calcType === "dispel") {
       return "Dispel"
+    } else if (effect.calcType === "resistance") {
+      return "Increase"
     } else {
       return inflict ? "Inflict" : "Grant"
     }
@@ -157,6 +159,14 @@ export class SkillService {
       return "resistance"
     } else {
       return "ATK"
+    }
+  }
+
+  private getResistanceOrNothing(effect) {
+    if (effect.calcType === "resistance") {
+      return " resistance"
+    } else {
+      return ""
     }
   }
 
@@ -245,106 +255,106 @@ export class SkillService {
         html = this.getIncrease(effect) + " JUMP" + this.getValue(effect) + this.getTurns(effect)
       break
       case "FIRE_ATK" :
-        html = this.getIncrease(effect) + " fire " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " fire " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "ICE_ATK" :
-        html = this.getIncrease(effect) + " ice " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " ice " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "WIND_ATK" :
-        html = this.getIncrease(effect) + " wind " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " wind " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "EARTH_ATK" :
-        html = this.getIncrease(effect) + " earth " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " earth " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "LIGHTNING_ATK" :
-        html = this.getIncrease(effect) + " lightning " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " lightning " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "WATER_ATK" :
-        html = this.getIncrease(effect) + " water " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " water " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "LIGHT_ATK" :
-        html = this.getIncrease(effect) + " light " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " light " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "DARK_ATK" :
-        html = this.getIncrease(effect) + " dark " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " dark " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "ALL_ELEMENTS_ATK" :
-        html = this.getIncrease(effect) + " all elemental " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " all elemental " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "SLASH_ATK" :
-        html = this.getIncrease(effect) + " slash " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " slash " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "STRIKE_ATK" :
-        html = this.getIncrease(effect) + " strike " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " strike " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "PIERCE_ATK" :
-        html = this.getIncrease(effect) + " pierce " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " pierce " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "MISSILE_ATK" :
-        html = this.getIncrease(effect) + " missile " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " missile " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "MAGIC_ATK" :
-        html = this.getIncrease(effect) + " magic " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " magic " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "ALL_ATTACKS_ATK" :
-        html = this.getIncrease(effect) + " all attacks " + this.getResistanceOrATK(effect) + "" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " all attacks " + this.getResistanceOrATK(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "REGEN" :
-        html = this.getChance(effect) + " regen" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " regen" + this.getValue(effect) + this.getTurns(effect)
       break
       case "AUTO_RESTORE" :
         html = this.getChance(effect, false) + " auto-restore" + this.getValue(effect) + this.getTurns(effect)
       break
       case "POISON" :
-        html = this.getChance(effect) + " poison" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " poison" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "BLIND" :
-        html = this.getChance(effect) + " blind" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " blind" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "SLEEP" :
-        html = this.getChance(effect) + " sleep" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " sleep" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "SILENCE" :
-        html = this.getChance(effect) + " silence" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " silence" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "PARALYZE" :
-        html = this.getChance(effect) + " paralyze" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " paralyze" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "CONFUSION" :
-        html = this.getChance(effect) + " confusion" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " confusion" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "CHARM" :
-        html = this.getChance(effect) + " charm" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " charm" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "PETRIFY" :
-        html = this.getChance(effect) + " petrify" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " petrify" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "TOAD" :
-        html = this.getChance(effect) + " toad" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " toad" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "HASTE" :
-        html = this.getChance(effect) + " haste" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " haste" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "SLOW" :
-        html = this.getChance(effect) + " slow" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " slow" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "STOP" :
-        html = this.getChance(effect) + " stop" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " stop" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "STUN" :
-        html = this.getChance(effect) + " stun" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " stun" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "IMMOBILIZE" :
-        html = this.getChance(effect) + " immobilize" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " immobilize" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "DISABLE" :
-        html = this.getChance(effect) + " disable" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " disable" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "BERSERK" :
-        html = this.getChance(effect) + " berserk" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " berserk" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "DOOM" :
-        html = this.getChance(effect) + " doom" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " doom" + this.getResistanceOrNothing(effect) + this.getValue(effect) + this.getTurns(effect)
       break
       case "REVIVE" :
         html = this.getChance(effect, false) + " to revive" + this.getValue(effect) + this.getTurns(effect)
@@ -425,7 +435,7 @@ export class SkillService {
         html = this.getIncrease(effect) + " Acquired JP" + this.getValue(effect) + this.getTurns(effect)
       break
       case "DEBUFF_RES" :
-        html = this.getIncrease(effect) + " Debuff Res" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getIncrease(effect) + " Debuff Resistance" + this.getValue(effect) + this.getTurns(effect)
       break
       case "BUFFS_DURATION" :
         html = this.getIncrease(effect) + " Buff Duration" + this.getValue(effect) + this.getTurns(effect)

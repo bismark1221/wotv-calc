@@ -469,7 +469,6 @@ export class JsonService {
       this.espersTbl = this.formatJson(responses[15]);
 
       this.formatJsons();
-      this.cleanUnits();
 
       return {
         units: this.wotvUnits,
@@ -508,6 +507,8 @@ export class JsonService {
         this.addEsper(this.units[unitId]);
       }
     });
+
+    this.cleanUnits();
 
     Object.keys(this.visionCards).forEach(visionCardId => {
       this.addVisionCard(this.visionCards[visionCardId]);
@@ -811,6 +812,7 @@ export class JsonService {
 
       if (typeof(this.skills[skillId].eff_val) == "number" && this.skills[skillId].eff_val !== 0
         && typeof(this.skills[skillId].eff_val1) == "number" && this.skills[skillId].eff_val1 !== 0
+        && this.skills[skillId].eff_type !== 10
       ) {
         skill.damage = {
           minValue: this.skills[skillId].eff_val,
@@ -1094,7 +1096,7 @@ export class JsonService {
     let dataId = equipment.iname;
     let rType = equipment.rtype !=="AF_LOT_50" && equipment.rtype !=="AF_LOT_TRUST" ? equipment.rtype : dataId;
 
-    if (this.names.equipment[dataId]) {
+    if (this.names.equipment[dataId] && equipment.type !== -1) {
       if (!this.wotvEquipments[rType]) {
         this.wotvEquipments[rType] = {
           names: {en: this.names.equipment[dataId]},
@@ -1105,6 +1107,25 @@ export class JsonService {
           skills: [],
           rarity: this.rarity[equipment.rare],
           image: this.equipments[dataId].asset.toLowerCase()
+        }
+
+        if (equipment.trust) {
+          let unitId = null;
+          let i = 0;
+          let unitIds = Object.keys(this.wotvUnits);
+
+          while(!unitId && i < unitIds.length) {
+            if (this.wotvUnits[unitIds[i]].tmr.dataId === dataId) {
+              unitId = unitIds[i]
+            }
+
+            i++;
+          }
+          
+          this.wotvEquipments[rType].acquisition = {
+            type: "tmr",
+            unitId: unitId
+          }
         }
 
         Object.keys(this.equipments[dataId].status[0]).forEach(stat => {
