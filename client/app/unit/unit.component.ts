@@ -4,6 +4,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { UnitService } from '../services/unit.service';
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
+import { JobService } from '../services/job.service';
 
 
 @Component({
@@ -13,11 +14,13 @@ import { SkillService } from '../services/skill.service';
 })
 export class UnitComponent implements OnInit {
   unit = null;
+  jobs = [];
 
   constructor(
     private unitService: UnitService,
     private equipmentService: EquipmentService,
     private skillService: SkillService,
+    private jobService: JobService,
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {}
@@ -102,6 +105,33 @@ export class UnitComponent implements OnInit {
         });
       });
     }
+
+    this.unit.jobsStats = [];
+    this.unit.totalJobsStats = {};
+
+    let i = 0
+    this.unit.jobs.forEach(jobId => {
+      let job = this.jobService.getJob(jobId)
+      this.calcJobStat(job, (i > 0 ? true : false))
+      this.jobs.push(job)
+      i++
+    })
+  }
+
+  private calcJobStat(job, subJob) {
+    let stats = {};
+
+    Object.keys(job.statsModifiers[14]).forEach(stat => {
+      stats[stat] = Math.floor(this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1))
+
+      if (!subJob) {
+        this.unit.totalJobsStats[stat] = stats[stat]
+      } else {
+        this.unit.totalJobsStats[stat] += stats[stat]
+      }
+    });
+
+    this.unit.jobsStats.push(stats)
   }
 
   isWeapon(type) {

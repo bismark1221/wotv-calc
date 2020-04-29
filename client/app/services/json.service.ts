@@ -11,6 +11,7 @@ export class JsonService {
   wotvVisionCards = {};
   wotvEspers = {};
   wotvEquipments = {};
+  wotvJobs = {};
 
   units = {};
   skills = {};
@@ -354,6 +355,18 @@ export class JsonService {
     "ACC"
   ]
 
+  jobStats = [
+    "hp",
+    "mp",
+    "ap",
+    "atk",
+    "mag",
+    "dex",
+    "spd",
+    "luk",
+    "iniap"
+  ]
+
   calcType = {
     1: "fixe",
     2: "percent",
@@ -488,7 +501,8 @@ export class JsonService {
         units: this.wotvUnits,
         visionCards: this.wotvVisionCards,
         espers: this.wotvEspers,
-        equipments: this.wotvEquipments
+        equipments: this.wotvEquipments,
+        jobs: this.wotvJobs
       };
     });
   }
@@ -512,6 +526,10 @@ export class JsonService {
   }
 
   private formatJsons() {
+    Object.keys(this.jobs).forEach(jobId => {
+      this.addJob(this.jobs[jobId])
+    })
+
     Object.keys(this.units).forEach(unitId => {
       if (this.units[unitId].type === 0) {
         this.addUnit(this.units[unitId]);
@@ -533,13 +551,45 @@ export class JsonService {
     });
   }
 
+  private addJob(job) {
+    let dataId = job.iname;
+    this.wotvJobs[dataId] = {
+      dataId: dataId,
+      names: {en: this.names.job[dataId]},
+      statsModifiers: [],
+      image: job.mdl.toLowerCase(),
+      subRate: job.sub_rate,
+      equipments: {
+        weapons: [],
+        armors: []
+      }
+    };
+
+    job.equips.forEach(equip => {
+      if (this.equipmentService.isWeapon(this.jobEquip[equip])) {
+        this.wotvJobs[dataId].equipments.weapons.push(this.jobEquip[equip])
+      } else {
+        this.wotvJobs[dataId].equipments.armors.push(this.jobEquip[equip])
+      }
+    });
+
+    job.ranks.forEach(rank => {
+      let rankModifiers = {};
+      this.jobStats.forEach(stat => {
+        rankModifiers[this.stats.unit[stat]] = rank[stat];
+      })
+
+      this.wotvJobs[dataId].statsModifiers.push(rankModifiers);
+    })
+  }
+
   private addUnit(unit) {
     let dataId = unit.iname;
     this.wotvUnits[dataId] = {
       dataId: dataId,
       names: {},
       rarity: this.rarity[unit.rare],
-      jobs: [{}, {}, {}],
+      jobs: unit.jobsets,
       skills: [],
       buffs: [],
       stats: {},
@@ -552,7 +602,6 @@ export class JsonService {
     };
 
     this.getNames(this.wotvUnits[dataId], 'unit');
-    this.getJobInfos(this.wotvUnits[dataId], unit.jobsets);
 
     this.getStats(this.wotvUnits[dataId], unit.status, 'unit')
     this.getLB(this.wotvUnits[dataId], unit.limit)
@@ -594,25 +643,6 @@ export class JsonService {
       item.names.en = item.dataId;
       item.slug = this.slug.slugify(item.names.en)
     }
-  }
-
-  private getJobInfos(unit, jobs) {
-    for (let i = 0; i < 3; i++) {
-      unit.jobs[i].image = this.jobs[jobs[i]].mdl.toLowerCase();
-      if (this.names.job[jobs[i]]) {
-        unit.jobs[i].names = {en: this.names.job[jobs[i]]}
-      } else {
-        unit.jobs[i].names = {en: jobs[i]}
-      }
-    }
-
-    this.jobs[jobs[0]].equips.forEach(equip => {
-      if (this.equipmentService.isWeapon(this.jobEquip[equip])) {
-        unit.equipments.weapons.push(this.jobEquip[equip])
-      } else {
-        unit.equipments.armors.push(this.jobEquip[equip])
-      }
-    });
   }
 
   private getSkillsAndBuffs(unit) {

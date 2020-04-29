@@ -18,25 +18,25 @@
       <tr>
         <td colspan="3">Jobs</td>
       </tr>
-      <tr>
+      <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
         <td class="jobTd" *ngFor="let i of [0, 1, 2]">
-          <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobs[i].image + '.png'}}" /><br />
-          {{ unit.jobs[i].names.en }}
+          <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+          {{ jobs[i].names.en }}
         </td>
       </tr>
-      <tr>
+      <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
         <td>Weapons</td>
         <td colspan="2">
-          <div *ngFor="let equip of unit.equipments.weapons; let j = index">
-            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (unit.equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
+          <div *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
+            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
           </div>
         </td>
       </tr>
       <tr>
         <td>Armors</td>
         <td colspan="2">
-          <div style="display: inline-block;" *ngFor="let equip of unit.equipments.armors; let j = index">
-            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (unit.equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
+          <div style="display: inline-block;" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
+            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
           </div>
         </td>
       </tr>
@@ -218,6 +218,51 @@
   </table>
 </div>
 
+<div class="row" *ngIf="jobs[0] && jobs[1] && jobs[2]">
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="11">Jobs Stats (lv 15)</th>
+      </tr>
+      <tr>
+        <th>Job</th>
+        <th>HP</th>
+        <th>TP</th>
+        <th>AP</th>
+        <th>ATK</th>
+        <th>MAG</th>
+        <th>DEX</th>
+        <th>AGI</th>
+        <th>LUCK</th>
+      </tr>
+      <tr *ngFor="let i of [0, 1, 2]">
+        <td>
+          <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+        </td>
+        <td>{{ unit.jobsStats[i].HP }}</td>
+        <td>{{ unit.jobsStats[i].TP }}</td>
+        <td>{{ unit.jobsStats[i].AP }}</td>
+        <td>{{ unit.jobsStats[i].ATK }}</td>
+        <td>{{ unit.jobsStats[i].MAG }}</td>
+        <td>{{ unit.jobsStats[i].DEX }}</td>
+        <td>{{ unit.jobsStats[i].AGI }}</td>
+        <td>{{ unit.jobsStats[i].LUCK }}</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>{{ unit.totalJobsStats.HP }}</td>
+        <td>{{ unit.totalJobsStats.TP }}</td>
+        <td>{{ unit.totalJobsStats.AP }}</td>
+        <td>{{ unit.totalJobsStats.ATK }}</td>
+        <td>{{ unit.totalJobsStats.MAG }}</td>
+        <td>{{ unit.totalJobsStats.DEX }}</td>
+        <td>{{ unit.totalJobsStats.AGI }}</td>
+        <td>{{ unit.totalJobsStats.LUCK }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 <div class="row">
   <table class="statsTable">
@@ -326,11 +371,11 @@
   <table class="skillsTable">
     <tbody>
       <tr>
-        <th *ngIf="i == 0" colspan="9">
-          <img class="mainJob" src="{{'assets/jobs/' + unit.jobs[0].image + '.png'}}" />&nbsp;Main Job
+        <th *ngIf="i == 0 && jobs[0]" colspan="9">
+          <img class="mainJob" src="{{'assets/jobs/' + jobs[0].image + '.png'}}" />&nbsp;Main Job
         </th>
-        <th *ngIf="i != 0" colspan="9">
-          <img class="subJob" src="{{'assets/jobs/' + unit.jobs[i - 1].image + '.png'}}" />&nbsp;{{ unit.jobs[i - 1].names.en }}
+        <th *ngIf="i != 0 && jobs[i - 1]" colspan="9">
+          <img class="subJob" src="{{'assets/jobs/' + jobs[i - 1].image + '.png'}}" />&nbsp;{{ jobs[i - 1].names.en }}
         </th>
       </tr>
       <tr>

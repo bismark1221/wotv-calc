@@ -30,7 +30,15 @@
 <br />
 
 
-### Units ###
+### Raw Jobs ###
+<div>
+  <textarea id="rawJson">{{ jobs | json }}</textarea>
+</div>
+
+<br />
+
+
+<!-- ### Units ###
 <div *ngFor="let unitId of unitIds; let j = index">
   {{j}} -- {{units[unitId].names.en}}
   <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.units[j] = !isCollapsed.units[j]" [attr.aria-expanded]="!isCollapsed.units[j]">
@@ -75,4 +83,4 @@
   <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.equipments[j]">
     <pre [innerHtml]="equipments[equipmentId] | prettyjson"></pre>
   </div>
-</div>
+</div> -->

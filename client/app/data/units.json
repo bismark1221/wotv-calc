@@ -6,24 +6,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "war",
-        "names": {
-          "en": "Lord"
-        }
-      },
-      {
-        "image": "pld",
-        "names": {
-          "en": "Paladin"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      }
+      "JB_LW_WAR",
+      "JB_LW_PLD_SOIL",
+      "JB_LW_KNT_SOIL"
     ],
     "skills": [
       {
@@ -1474,16 +1459,8 @@
     "element": "earth",
     "image": "lapsmont",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "mont-leonis",
     "limit": {
@@ -1610,24 +1587,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      },
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "nin",
-        "names": {
-          "en": "Ninja"
-        }
-      }
+      "JB_LW_SWN_DARK",
+      "JB_LW_DRG_DARK",
+      "JB_LW_NIN_DARK"
     ],
     "skills": [
       {
@@ -3149,14 +3111,8 @@
     "element": "dark",
     "image": "lapsstrn",
     "equipments": {
-      "weapons": [
-        "GREATSWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "sterne-leonis",
     "limit": {
@@ -3265,24 +3221,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      },
-      {
-        "image": "sam",
-        "names": {
-          "en": "Samurai"
-        }
-      }
+      "JB_LW_LAN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE"
     ],
     "skills": [
       {
@@ -4736,16 +4677,8 @@
     "element": "fire",
     "image": "lapselde",
     "equipments": {
-      "weapons": [
-        "SPEAR"
-      ],
-      "armors": [
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ARMOR",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "oelde-leonis",
     "limit": {
@@ -4869,24 +4802,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "sam",
-        "names": {
-          "en": "Samurai"
-        }
-      },
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      }
+      "JB_LW_SAM_SHINE",
+      "JB_LW_LAN_SHINE",
+      "JB_LW_SWN_SHINE"
     ],
     "skills": [
       {
@@ -6411,14 +6329,8 @@
     "element": "light",
     "image": "lapsrobb",
     "equipments": {
-      "weapons": [
-        "KATANA"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "robb-hourne",
     "limit": {
@@ -6554,24 +6466,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "pld",
-        "names": {
-          "en": "Paladin"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      }
+      "JB_LW_PLD_SHINE",
+      "JB_LW_KNT_SHINE",
+      "JB_LW_MNK_SHINE"
     ],
     "skills": [
       {
@@ -8014,15 +7911,8 @@
     "element": "light",
     "image": "lapsenbt",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "SHIELD",
-        "HELM",
-        "ARMOR",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "engelbert",
     "limit": {
@@ -8135,24 +8025,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      },
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      },
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      }
+      "JB_LW_MNK_DARK",
+      "JB_LW_THI_DARK",
+      "JB_LW_LAN_DARK"
     ],
     "skills": [
       {
@@ -9633,14 +9508,8 @@
     "element": "dark",
     "image": "lapsziza",
     "equipments": {
-      "weapons": [
-        "FIST"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "xiza",
     "limit": {
@@ -9763,24 +9632,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      }
+      "JB_LW_LAN_SOIL",
+      "JB_LW_WAR_SOIL",
+      "JB_LW_SWN_SOIL"
     ],
     "skills": [
       {
@@ -11257,16 +11111,8 @@
     "element": "earth",
     "image": "lapsailn",
     "equipments": {
-      "weapons": [
-        "SPEAR"
-      ],
-      "armors": [
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ARMOR",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "aileen",
     "limit": {
@@ -11413,24 +11259,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      },
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      },
-      {
-        "image": "nin",
-        "names": {
-          "en": "Ninja"
-        }
-      }
+      "JB_LW_BLM_ICE",
+      "JB_LW_GRM_ICE",
+      "JB_LW_NIN_ICE"
     ],
     "skills": [
       {
@@ -13035,14 +12866,8 @@
     "element": "ice",
     "image": "lapsmdna",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "mediena",
     "limit": {
@@ -13181,24 +13006,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "tim",
-        "names": {
-          "en": "Time Mage"
-        }
-      },
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      }
+      "JB_LW_WHM_WIND",
+      "JB_LW_TIM_WIND",
+      "JB_LW_GRM_WIND"
     ],
     "skills": [
       {
@@ -14857,14 +14667,8 @@
     "element": "wind",
     "image": "lapsayka",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "ayaka",
     "limit": {
@@ -15033,24 +14837,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      },
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      },
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      }
+      "JB_LW_CLR_SHINE",
+      "JB_LW_MNK_SHINE",
+      "JB_LW_BLM_SHINE"
     ],
     "skills": [
       {
@@ -16599,14 +16388,8 @@
     "element": "light",
     "image": "lapsmacr",
     "equipments": {
-      "weapons": [
-        "MACE"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "macherie-hourne",
     "limit": {
@@ -16743,24 +16526,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      },
-      {
-        "image": "tim",
-        "names": {
-          "en": "Time Mage"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      }
+      "JB_LW_GRM_WIND",
+      "JB_LW_TIM_WIND",
+      "JB_LW_WHM_WIND"
     ],
     "skills": [
       {
@@ -18399,14 +18167,8 @@
     "element": "wind",
     "image": "lapshlna",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "helena-leonis",
     "masterSkill": {
@@ -18479,24 +18241,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      },
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      }
+      "JB_LW_KNT_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_HUN_FIRE"
     ],
     "skills": [
       {
@@ -20071,14 +19818,8 @@
     "element": "fire",
     "image": "lapslils",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "lilyth",
     "masterSkill": {
@@ -20145,24 +19886,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "mgk",
-        "names": {
-          "en": "Spellblade"
-        }
-      },
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      }
+      "JB_LW_LAN_WATER",
+      "JB_LW_MGK_WATR",
+      "JB_LW_THI_WATER"
     ],
     "skills": [
       {
@@ -21631,16 +21357,8 @@
     "element": "water",
     "image": "lapsramd",
     "equipments": {
-      "weapons": [
-        "SPEAR"
-      ],
-      "armors": [
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ARMOR",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "ramada",
     "masterSkill": {
@@ -21713,24 +21431,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "sam",
-        "names": {
-          "en": "Samurai"
-        }
-      },
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "nin",
-        "names": {
-          "en": "Ninja"
-        }
-      }
+      "JB_LW_SAM_THUN",
+      "JB_LW_WAR_THUN",
+      "JB_LW_NIN_THUN"
     ],
     "skills": [
       {
@@ -23191,14 +22894,8 @@
     "element": "lightning",
     "image": "lapsoooo",
     "equipments": {
-      "weapons": [
-        "KATANA"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "owe",
     "masterSkill": {
@@ -23273,24 +22970,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "tim",
-        "names": {
-          "en": "Time Mage"
-        }
-      }
+      "JB_LW_DRG_SOIL",
+      "JB_LW_LAN_SOIL",
+      "JB_LW_TIM_SOIL"
     ],
     "skills": [
       {
@@ -24805,14 +24487,8 @@
     "element": "earth",
     "image": "lapslrnz",
     "equipments": {
-      "weapons": [
-        "SPEAR"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "lorenzo",
     "masterSkill": {
@@ -24886,24 +24562,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "gun",
-        "names": {
-          "en": "Gunner"
-        }
-      },
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      }
+      "JB_LW_GUN_DARK",
+      "JB_LW_THI_DARK",
+      "JB_LW_RDM_DARK"
     ],
     "skills": [
       {
@@ -26385,14 +26046,8 @@
     "element": "dark",
     "image": "lapsriry",
     "equipments": {
-      "weapons": [
-        "GUN"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "rairyuu",
     "masterSkill": {
@@ -26473,24 +26128,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      },
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      }
+      "JB_LW_THI_SHINE",
+      "JB_LW_RDM_SHIN",
+      "JB_LW_SWN_SHINE"
     ],
     "skills": [
       {
@@ -27974,14 +27614,8 @@
     "element": "light",
     "image": "lapsvstr",
     "equipments": {
-      "weapons": [
-        "DAGGER"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "vistralle",
     "masterSkill": {
@@ -28055,24 +27689,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      },
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      }
+      "JB_LW_HUN_ICE",
+      "JB_LW_DRG_ICE",
+      "JB_LW_GRM_ICE"
     ],
     "skills": [
       {
@@ -29629,14 +29248,8 @@
     "element": "ice",
     "image": "lapscley",
     "equipments": {
-      "weapons": [
-        "BOW"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "khury-wezette",
     "masterSkill": {
@@ -29715,24 +29328,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "mgk",
-        "names": {
-          "en": "Spellblade"
-        }
-      }
+      "JB_LW_CLR_WIND",
+      "JB_LW_WHM_WIND",
+      "JB_LW_MGK_WIND"
     ],
     "skills": [
       {
@@ -31299,14 +30897,8 @@
     "element": "wind",
     "image": "lapskadi",
     "equipments": {
-      "weapons": [
-        "MACE"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "cadia",
     "masterSkill": {
@@ -31379,24 +30971,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      }
+      "JB_LW_MNK_THUN",
+      "JB_LW_KNT_THUN",
+      "JB_LW_GRM_THUN"
     ],
     "skills": [
       {
@@ -32961,14 +32538,8 @@
     "element": "lightning",
     "image": "lapsmrlk",
     "equipments": {
-      "weapons": [
-        "FIST"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "meriluke",
     "masterSkill": {
@@ -33042,24 +32613,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "tim",
-        "names": {
-          "en": "Time Mage"
-        }
-      },
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      }
+      "JB_LW_TIM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_RDM_FIRE"
     ],
     "skills": [
       {
@@ -34642,14 +34198,8 @@
     "element": "fire",
     "image": "lapsmgrt",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "margritte",
     "masterSkill": {
@@ -34722,24 +34272,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      },
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      }
+      "JB_LW_WHM_SHINE",
+      "JB_LW_GRM_SHIN",
+      "JB_LW_LAN_SHINE"
     ],
     "skills": [
       {
@@ -36363,14 +35898,8 @@
     "element": "light",
     "image": "lapspray",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "grace",
     "masterSkill": {
@@ -36467,24 +35996,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      }
+      "JB_LW_SWN_THUN",
+      "JB_LW_KNT_THUN",
+      "JB_LW_HUN_THUN"
     ],
     "skills": [
       {
@@ -38048,14 +37562,8 @@
     "element": "lightning",
     "image": "lapsszrt",
     "equipments": {
-      "weapons": [
-        "GREATSWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "schuzelt",
     "masterSkill": {
@@ -38130,24 +37638,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "lapsfina",
-        "names": {
-          "en": "White Mage of Lapis"
-        }
-      },
-      {
-        "image": "gun",
-        "names": {
-          "en": "Gunner"
-        }
-      },
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      }
+      "JB_LW_FINA",
+      "JB_LW_GUN_SHINE",
+      "JB_LW_CLR_SHINE"
     ],
     "skills": [
       {
@@ -39802,14 +39295,8 @@
     "element": "light",
     "image": "lapsfina",
     "equipments": {
-      "weapons": [
-        "BOW"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "fina",
     "masterSkill": {
@@ -39883,24 +39370,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "pld",
-        "names": {
-          "en": "Paladin"
-        }
-      }
+      "JB_LW_KNT_SOIL",
+      "JB_LW_WAR_SOIL",
+      "JB_LW_PLD_SOIL"
     ],
     "skills": [
       {
@@ -41357,14 +40829,8 @@
     "element": "earth",
     "image": "lapsbylo",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "baelo",
     "masterSkill": {
@@ -41436,24 +40902,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "mgk",
-        "names": {
-          "en": "Spellblade"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      }
+      "JB_LW_MGK_DARK",
+      "JB_LW_KNT_DARK",
+      "JB_LW_WHM_DARK"
     ],
     "skills": [
       {
@@ -43018,14 +42469,8 @@
     "element": "dark",
     "image": "lapsryer",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "little-leela",
     "masterSkill": {
@@ -43100,24 +42545,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      }
+      "JB_LW_DRG_WIND",
+      "JB_LW_WAR_WIND",
+      "JB_LW_HUN_WIND"
     ],
     "skills": [
       {
@@ -44585,14 +44015,8 @@
     "element": "wind",
     "image": "lapsscia",
     "equipments": {
-      "weapons": [
-        "SPEAR"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "sosha",
     "masterSkill": {
@@ -44665,24 +44089,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      }
+      "JB_LW_GRM_ICE",
+      "JB_LW_WHM_ICE",
+      "JB_LW_RDM_ICE"
     ],
     "skills": [
       {
@@ -46253,14 +45662,8 @@
     "element": "ice",
     "image": "lapsvrid",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "vallaide",
     "masterSkill": {
@@ -46351,24 +45754,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      }
+      "JB_LW_WHM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_LW_RDM_FIRE"
     ],
     "skills": [
       {
@@ -47941,14 +47329,8 @@
     "element": "fire",
     "image": "lapsnaia",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "naiah",
     "masterSkill": {
@@ -48020,24 +47402,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "pld",
-        "names": {
-          "en": "Paladin"
-        }
-      },
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      }
+      "JB_LW_LAN_ICE",
+      "JB_LW_PLD_ICE",
+      "JB_LW_CLR_ICE"
     ],
     "skills": [
       {
@@ -49545,16 +48912,8 @@
     "element": "ice",
     "image": "lapssrjs",
     "equipments": {
-      "weapons": [
-        "SPEAR"
-      ],
-      "armors": [
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ARMOR",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "serjes",
     "masterSkill": {
@@ -49626,24 +48985,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      },
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      },
-      {
-        "image": "mgk",
-        "names": {
-          "en": "Spellblade"
-        }
-      }
+      "JB_LW_HUN_WATER",
+      "JB_LW_BLM_WATR",
+      "JB_LW_MGK_WATR"
     ],
     "skills": [
       {
@@ -51216,14 +50560,8 @@
     "element": "water",
     "image": "lapsunii",
     "equipments": {
-      "weapons": [
-        "BOW"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "yuni",
     "masterSkill": {
@@ -51314,24 +50652,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      },
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      }
+      "JB_LW_BLM_WATR",
+      "JB_LW_RDM_WATR",
+      "JB_LW_MNK_WATER"
     ],
     "skills": [
       {
@@ -52828,14 +52151,8 @@
     "element": "water",
     "image": "lapssevr",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "severo",
     "masterSkill": {
@@ -52925,24 +52242,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      },
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "sam",
-        "names": {
-          "en": "Samurai"
-        }
-      }
+      "JB_LW_THI_THUN",
+      "JB_LW_WAR_THUN",
+      "JB_LW_SAM_THUN"
     ],
     "skills": [
       {
@@ -54365,14 +53667,8 @@
     "element": "lightning",
     "image": "lapsvadm",
     "equipments": {
-      "weapons": [
-        "DAGGER"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "vadim",
     "masterSkill": {
@@ -54451,24 +53747,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      },
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      },
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      }
+      "JB_LW_RDM_SOIL",
+      "JB_LW_BLM_SOIL",
+      "JB_LW_LAN_SOIL"
     ],
     "skills": [
       {
@@ -56013,14 +55294,8 @@
     "element": "earth",
     "image": "lapsmurm",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "murmur",
     "masterSkill": {
@@ -56117,24 +55392,9 @@
     },
     "rarity": "SR",
     "jobs": [
-      {
-        "image": "tim",
-        "names": {
-          "en": "Time Mage"
-        }
-      },
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      }
+      "JB_LW_TIM_SHINE",
+      "JB_LW_DRG_SHINE",
+      "JB_LW_WHM_SHINE"
     ],
     "skills": [
       {
@@ -57687,14 +56947,8 @@
     "element": "light",
     "image": "lapsphbe",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "phoebe",
     "masterSkill": {
@@ -57767,24 +57021,9 @@
     },
     "rarity": "R",
     "jobs": [
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      },
-      {
-        "image": "lan",
-        "names": {
-          "en": "Lancer"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      }
+      "JB_LW_HUN_THUN",
+      "JB_LW_LAN_THUN",
+      "JB_LW_WHM_THUN"
     ],
     "skills": [
       {
@@ -59359,14 +58598,8 @@
     "element": "lightning",
     "image": "lapsrart",
     "equipments": {
-      "weapons": [
-        "BOW"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "learte",
     "masterSkill": {
@@ -59424,24 +58657,9 @@
     },
     "rarity": "R",
     "jobs": [
-      {
-        "image": "blm",
-        "names": {
-          "en": "Black Mage"
-        }
-      },
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      },
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      }
+      "JB_LW_BLM_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_HUN_FIRE"
     ],
     "skills": [
       {
@@ -61020,14 +60238,8 @@
     "element": "fire",
     "image": "lapsmice",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "miche",
     "masterSkill": {
@@ -61085,24 +60297,9 @@
     },
     "rarity": "R",
     "jobs": [
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      },
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      },
-      {
-        "image": "mgk",
-        "names": {
-          "en": "Spellblade"
-        }
-      }
+      "JB_LW_THI_WIND",
+      "JB_LW_CLR_WIND",
+      "JB_LW_MGK_WIND"
     ],
     "skills": [
       {
@@ -62561,14 +61758,8 @@
     "element": "wind",
     "image": "lapsmiia",
     "equipments": {
-      "weapons": [
-        "DAGGER"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "mia",
     "masterSkill": {
@@ -62626,24 +61817,9 @@
     },
     "rarity": "N",
     "jobs": [
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      }
+      "JB_LW_WAR_WATER",
+      "JB_LW_KNT_WATER",
+      "JB_LW_THI_WATER"
     ],
     "skills": [
       {
@@ -64052,16 +63228,8 @@
     "element": "water",
     "image": "lapszzan",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "zazan",
     "masterSkill": {
@@ -64123,24 +63291,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "lapsglms",
-        "names": {
-          "en": "Winged One"
-        }
-      },
-      {
-        "image": "tim",
-        "names": {
-          "en": "Time Mage"
-        }
-      },
-      {
-        "image": "swn",
-        "names": {
-          "en": "Soldier"
-        }
-      }
+      "JB_LW_GLMS",
+      "JB_LW_TIM_ICE",
+      "JB_LW_SWN_ICE"
     ],
     "skills": [
       {
@@ -65722,14 +64875,8 @@
     "element": "ice",
     "image": "lapsglms",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "gilgamesh",
     "limit": {
@@ -65854,24 +65001,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "ff14ystl",
-        "names": {
-          "en": "Sorceress"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "grm",
-        "names": {
-          "en": "Green Mage"
-        }
-      }
+      "JB_FF14_YSTL",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_GRM_FIRE"
     ],
     "skills": [
       {
@@ -67452,14 +66584,8 @@
     "element": "fire",
     "image": "ff14ystl",
     "equipments": {
-      "weapons": [
-        "ROD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "yshtola",
     "masterSkill": {
@@ -67531,24 +66657,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "ff14tncr",
-        "names": {
-          "en": "Gunbreaker"
-        }
-      },
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "rdm",
-        "names": {
-          "en": "Red Mage"
-        }
-      }
+      "JB_FF14_TNCR",
+      "JB_LW_DRG_SHINE",
+      "JB_LW_RDM_SHIN"
     ],
     "skills": [
       {
@@ -68987,14 +68098,8 @@
     "element": "light",
     "image": "ff14tncr",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "thancred",
     "masterSkill": {
@@ -69067,24 +68172,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "gun",
-        "names": {
-          "en": "Gunner"
-        }
-      },
-      {
-        "image": "nin",
-        "names": {
-          "en": "Ninja"
-        }
-      },
-      {
-        "image": "hun",
-        "names": {
-          "en": "Ranger"
-        }
-      }
+      "JB_LW_GUN_THUN",
+      "JB_LW_NIN_THUN",
+      "JB_LW_HUN_THUN"
     ],
     "skills": [
       {
@@ -70652,14 +69742,8 @@
     "element": "lightning",
     "image": "lapsfdrc",
     "equipments": {
-      "weapons": [
-        "GUN"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "frederika",
     "limit": {
@@ -70788,24 +69872,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "nin",
-        "names": {
-          "en": "Ninja"
-        }
-      },
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      },
-      {
-        "image": "sam",
-        "names": {
-          "en": "Samurai"
-        }
-      }
+      "JB_LW_NIN_DARK",
+      "JB_LW_DRG_DARK",
+      "JB_LW_SAM_DARK"
     ],
     "skills": [
       {
@@ -72269,14 +71338,8 @@
     "element": "dark",
     "image": "lapssdlx",
     "equipments": {
-      "weapons": [
-        "NINJABLADE"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "shadowlynx",
     "masterSkill": {
@@ -72352,24 +71415,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "vik",
-        "names": {
-          "en": "Viking"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      },
-      {
-        "image": "thi",
-        "names": {
-          "en": "Thief"
-        }
-      }
+      "JB_LW_VIK_WIND",
+      "JB_LW_KNT_WIND",
+      "JB_LW_THI_WIND"
     ],
     "skills": [
       {
@@ -73852,14 +72900,8 @@
     "element": "wind",
     "image": "lapsyerm",
     "equipments": {
-      "weapons": [
-        "AXE"
-      ],
-      "armors": [
-        "HELM",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "yerma",
     "limit": {
@@ -73989,24 +73031,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "pld",
-        "names": {
-          "en": "Paladin"
-        }
-      },
-      {
-        "image": "whm",
-        "names": {
-          "en": "White Mage"
-        }
-      },
-      {
-        "image": "drg",
-        "names": {
-          "en": "Dragoon"
-        }
-      }
+      "JB_LW_PLD_ICE",
+      "JB_LW_WHM_ICE",
+      "JB_LW_DRG_ICE"
     ],
     "skills": [
       {
@@ -75510,15 +74537,8 @@
     "element": "ice",
     "image": "lapsnasr",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "SHIELD",
-        "HELM",
-        "ARMOR",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "nasha",
     "masterSkill": {
@@ -75583,24 +74603,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      },
-      {
-        "image": "clr",
-        "names": {
-          "en": "Cleric"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      }
+      "JB_LW_MNK_SOIL",
+      "JB_LW_CLR_SOIL",
+      "JB_LW_KNT_SOIL"
     ],
     "skills": [
       {
@@ -77110,14 +76115,8 @@
     "element": "earth",
     "image": "lapsetre",
     "equipments": {
-      "weapons": [
-        "FIST"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "etre",
     "masterSkill": {
@@ -77181,24 +76180,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "fft0ramz",
-        "names": {
-          "en": "Squire"
-        }
-      },
-      {
-        "image": "mgk",
-        "names": {
-          "en": "Spellblade"
-        }
-      },
-      {
-        "image": "nin",
-        "names": {
-          "en": "Ninja"
-        }
-      }
+      "JB_FFT_RAMZ",
+      "JB_LW_MGK_SHINE",
+      "JB_LW_NIN_SHIN"
     ],
     "skills": [
       {
@@ -78701,16 +77685,8 @@
     "element": "light",
     "image": "fft0ramz",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HAT",
-        "HELM",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "ramza",
     "limit": {
@@ -78836,24 +77812,9 @@
     },
     "rarity": "MR",
     "jobs": [
-      {
-        "image": "fft0gfgr",
-        "names": {
-          "en": "Fell Knight"
-        }
-      },
-      {
-        "image": "war",
-        "names": {
-          "en": "Warrior"
-        }
-      },
-      {
-        "image": "mnk",
-        "names": {
-          "en": "Monk"
-        }
-      }
+      "JB_FFT_GFGR",
+      "JB_LW_WAR_DARK",
+      "JB_LW_MNK_DARK"
     ],
     "skills": [
       {
@@ -80309,14 +79270,8 @@
     "element": "dark",
     "image": "fft0gfgr",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "gaffgarion",
     "masterSkill": {
@@ -80389,24 +79344,9 @@
     },
     "rarity": "UR",
     "jobs": [
-      {
-        "image": "fft0ornd",
-        "names": {
-          "en": "Sword Saint"
-        }
-      },
-      {
-        "image": "sam",
-        "names": {
-          "en": "Samurai"
-        }
-      },
-      {
-        "image": "knt",
-        "names": {
-          "en": "Knight"
-        }
-      }
+      "JB_FFT_ORND",
+      "JB_LW_SAM_THUN",
+      "JB_LW_KNT_THUN"
     ],
     "skills": [
       {
@@ -81982,14 +80922,8 @@
     "element": "lightning",
     "image": "fft0ornd",
     "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "HAT",
-        "CLOTH",
-        "ACC"
-      ]
+      "weapons": [],
+      "armors": []
     },
     "slug": "orlandeau",
     "limit": {

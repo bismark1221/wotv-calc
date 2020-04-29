@@ -41,6 +41,9 @@ import { SkillService } from './services/skill.service';
 import { EquipmentService } from './services/equipment.service';
 import { CardService } from './services/card.service';
 import { EsperService } from './services/esper.service';
+import { JobService } from './services/job.service';
+
+import { RoundDownPipe } from './pipes/roundDown.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -63,7 +66,8 @@ export function createTranslateLoader(http: HttpClient) {
     EspersComponent,
     EsperComponent,
     EquipmentsComponent,
-    EquipmentComponent
+    EquipmentComponent,
+    RoundDownPipe
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -96,7 +100,8 @@ export function createTranslateLoader(http: HttpClient) {
     EquipmentService,
     SkillService,
     CardService,
-    EsperService
+    EsperService,
+    JobService
   ],
   bootstrap: [
     AppComponent
