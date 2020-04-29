@@ -11203,7 +11203,7 @@
           "dataId": "SK_HAT_LW_AILN_1_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "STONE_KILLER",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
@@ -11211,7 +11211,7 @@
               "turn": 3
             },
             {
-              "type": "HUMAN_KILLER",
+              "type": "MACHINA_KILLER",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
@@ -24541,7 +24541,7 @@
           "dataId": "SK_SPE_LW_LRNZ_1_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
@@ -32592,7 +32592,7 @@
           "dataId": "SK_FIS_LW_MRLK_1_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "STONE_KILLER",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
@@ -42479,7 +42479,7 @@
       },
       "effects": [
         {
-          "type": "DARK_KILLER",
+          "type": "LIGHT_KILLER",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "percent",
@@ -58615,7 +58615,7 @@
           "rate": 200
         },
         {
-          "type": "109_KILLER",
+          "type": "AQUATIC_KILLER",
           "minValue": 50,
           "maxValue": 50,
           "calcType": "percent",
@@ -60255,7 +60255,7 @@
           "rate": 200
         },
         {
-          "type": "106_KILLER",
+          "type": "ELEMENTAL_KILLER",
           "minValue": 50,
           "maxValue": 50,
           "calcType": "percent",
@@ -61775,7 +61775,7 @@
           "rate": 200
         },
         {
-          "type": "111_KILLER",
+          "type": "PLANT_KILLER",
           "minValue": 50,
           "maxValue": 50,
           "calcType": "percent",

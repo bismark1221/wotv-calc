@@ -73,7 +73,7 @@
           "dataId": "SK_LW_SWO_007_1",
           "effects": [
             {
-              "type": "BOOST_DAMAGE_AGAINST_METAL",
+              "type": "METAL_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -4852,7 +4852,7 @@
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
@@ -4869,7 +4869,7 @@
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -4888,7 +4888,7 @@
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
@@ -4919,7 +4919,7 @@
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -4938,7 +4938,7 @@
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
@@ -4969,7 +4969,7 @@
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -4988,7 +4988,7 @@
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
@@ -5019,7 +5019,7 @@
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -5038,7 +5038,7 @@
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
@@ -5069,7 +5069,7 @@
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -5088,7 +5088,7 @@
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
@@ -5119,7 +5119,7 @@
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
@@ -14534,7 +14534,7 @@
           "dataId": "SK_FIS_LW_MRLK_1_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "STONE_KILLER",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
@@ -14633,7 +14633,7 @@
           "dataId": "SK_SPE_LW_LRNZ_1_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "DRAGON_KILLER",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
@@ -15574,7 +15574,7 @@
           "dataId": "SK_HAT_LW_AILN_1_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "STONE_KILLER",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
@@ -15582,7 +15582,7 @@
               "turn": 3
             },
             {
-              "type": "HUMAN_KILLER",
+              "type": "MACHINA_KILLER",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",

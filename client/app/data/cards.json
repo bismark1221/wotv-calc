@@ -1778,7 +1778,7 @@
         },
         "effects": [
           {
-            "type": "HUMAN_KILLER",
+            "type": "BEAST_KILLER",
             "minValue": 2,
             "maxValue": 7,
             "calcType": "percent",
@@ -1805,7 +1805,7 @@
         },
         "effects": [
           {
-            "type": "HUMAN_KILLER",
+            "type": "BEAST_KILLER",
             "minValue": 1,
             "maxValue": 3,
             "calcType": "percent",
@@ -3534,7 +3534,7 @@
         },
         "effects": [
           {
-            "type": "HUMAN_KILLER",
+            "type": "AVIAN_KILLER",
             "minValue": 7,
             "maxValue": 20,
             "calcType": "percent",
@@ -4071,7 +4071,7 @@
         },
         "effects": [
           {
-            "type": "HUMAN_KILLER",
+            "type": "REAPER_KILLER",
             "minValue": 8,
             "maxValue": 25,
             "calcType": "percent",

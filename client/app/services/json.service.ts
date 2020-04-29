@@ -176,12 +176,15 @@ export class JsonService {
     9: "DARK",
     101: "HUMAN",
     103: "BEAST",
+    105: "DRAGON",
     106: "ELEMENTAL",
+    107: "AVIAN",
     109: "AQUATIC",
     110: "MACHINA",
     111: "PLANT",
     112: "REAPER",
-    113: "STONE"
+    113: "STONE",
+    114: "METAL"
   }
 
   damageEffectType = [
@@ -917,16 +920,16 @@ export class JsonService {
                   console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
                 }
 
-                if (buff == "BUFF_MAC_LW_KADI_1_1") {
-                  console.log(buff)
-                }
-
                 if (this.buffs[buff]["id" + i]) {
                   buffs.push(this.buffs[this.buffs[buff]["id" + i]]);
                 }
 
+                if (this.buffs[buff]["tag" + i] && !this.killers[this.buffs[buff]["tag" + i]]) {
+                  console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
+                }
+
                 skill.effects.push({
-                  type: this.buffs[buff]["type" + i] !== 122 ? this.buffTypes[this.buffs[buff]["type" + i]] : this.buffs[buff]["tag" + i] + "_KILLER",
+                  type: this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]],
                   minValue: this.buffs[buff]["val" + i],
                   maxValue: this.buffs[buff]["val" + i + "1"],
                   calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
@@ -970,8 +973,12 @@ export class JsonService {
               this.buffs[buff] = this.buffs[this.buffs[buff]["id" + i]];
             }
 
+            if (this.buffs[buff]["tag" + i] && !this.killers[this.buffs[buff]["tag" + i]]) {
+              console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
+            }
+
             skill.effects.push({
-              type: this.buffTypes[this.buffs[buff]["type" + i]],
+              type: this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]],
               minValue: this.buffs[buff]["val" + i],
               maxValue: this.buffs[buff]["val" + i + "1"],
               calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",

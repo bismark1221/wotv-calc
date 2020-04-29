@@ -464,6 +464,15 @@ export class SkillService {
       case "BEAST_KILLER" :
         html = "Increase beast killer" + this.getValue(effect) + this.getTurns(effect)
       break
+      case "AVIAN_KILLER" :
+        html = "Increase avian killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "DRAGON_KILLER" :
+        html = "Increase dragon killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "METAL_KILLER" :
+        html = "Increase metal killer" + this.getValue(effect) + this.getTurns(effect)
+      break
       case "MACHINA_KILLER" :
         html = "Increase machina killer" + this.getValue(effect) + this.getTurns(effect)
       break
