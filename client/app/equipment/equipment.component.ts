@@ -67,6 +67,15 @@ export class EquipmentComponent implements OnInit {
         slug: unit.slug
       }
     }
+
+    this.equipment.growIds = Object.keys(this.equipment.grows)
+    Object.keys(this.equipment.grows).forEach(growId => {
+      this.equipment.grows[growId].stats = {};
+      this.equipment.statsTypes.forEach(statType => {
+        let maxValue = this.equipment.stats[statType].max
+        this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+      })      
+    })
   }
 
   getEquipementType(type) {

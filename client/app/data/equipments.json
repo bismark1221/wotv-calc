@@ -28,6 +28,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -62,6 +63,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_007",
+    "grows": {},
     "skills": [
       [
         {
@@ -118,6 +120,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -246,6 +313,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -374,6 +506,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_003",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -695,6 +892,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -1016,6 +1278,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -1087,6 +1414,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_006",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -1158,6 +1550,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_016",
+    "grows": {},
     "skills": [
       []
     ],
@@ -1196,6 +1589,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FF14_TNCT",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -1324,6 +1782,71 @@
     },
     "type": "SWORD",
     "dataId": "AF_FFT_SWO_001",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -1452,6 +1975,7 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_LW_BSW_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -1490,6 +2014,71 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_LW_BSW_001",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -1618,6 +2207,71 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_LW_BSW_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -1746,6 +2400,71 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_LW_BSW_003",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -1878,6 +2597,50 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_LW_BSW_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2010,6 +2773,7 @@
     },
     "type": "KATANA",
     "dataId": "AF_LW_KAT_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -2052,6 +2816,71 @@
     },
     "type": "KATANA",
     "dataId": "AF_LW_KAT_001",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2188,6 +3017,71 @@
     },
     "type": "KATANA",
     "dataId": "AF_LW_KAT_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2320,6 +3214,71 @@
     },
     "type": "KATANA",
     "dataId": "AF_LW_KAT_003",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2448,6 +3407,7 @@
     },
     "type": "FIST",
     "dataId": "AF_LW_FIS_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -2486,6 +3446,71 @@
     },
     "type": "FIST",
     "dataId": "AF_LW_FIS_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2608,6 +3633,71 @@
     },
     "type": "FIST",
     "dataId": "AF_LW_FIS_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2734,6 +3824,71 @@
     },
     "type": "FIST",
     "dataId": "AF_LW_FIS_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -2852,6 +4007,7 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -2890,6 +4046,71 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -3008,6 +4229,71 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -3126,6 +4412,71 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_003",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -3244,6 +4595,71 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_004",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -3362,6 +4778,71 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_006",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -3685,6 +5166,7 @@
     },
     "type": "DAGGER",
     "dataId": "AF_LW_DAG_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -3723,6 +5205,71 @@
     },
     "type": "DAGGER",
     "dataId": "AF_LW_DAG_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -3851,6 +5398,71 @@
     },
     "type": "DAGGER",
     "dataId": "AF_LW_DAG_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -3983,6 +5595,71 @@
     },
     "type": "DAGGER",
     "dataId": "AF_LW_DAG_004",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4111,6 +5788,71 @@
     },
     "type": "DAGGER",
     "dataId": "AF_LW_DAG_006",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4239,6 +5981,7 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_LW_NKN_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -4277,6 +6020,71 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_LW_NKN_001",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4405,6 +6213,71 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_LW_NKN_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4533,6 +6406,71 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_LW_NKN_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4665,6 +6603,7 @@
     },
     "type": "BOW",
     "dataId": "AF_LW_BOW_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -4707,6 +6646,71 @@
     },
     "type": "BOW",
     "dataId": "AF_LW_BOW_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4829,6 +6833,71 @@
     },
     "type": "BOW",
     "dataId": "AF_LW_BOW_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -4951,6 +7020,71 @@
     },
     "type": "BOW",
     "dataId": "AF_LW_BOW_003",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -5073,6 +7207,7 @@
     },
     "type": "GUN",
     "dataId": "AF_LW_GUN_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -5111,6 +7246,71 @@
     },
     "type": "GUN",
     "dataId": "AF_LW_GUN_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -5229,6 +7429,71 @@
     },
     "type": "GUN",
     "dataId": "AF_LW_GUN_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -5351,6 +7616,71 @@
     },
     "type": "GUN",
     "dataId": "AF_LW_GUN_003",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -5469,6 +7799,7 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -5507,6 +7838,7 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -5545,6 +7877,71 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -5663,6 +8060,71 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -6084,6 +8546,71 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_005",
+    "grows": {
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -6202,6 +8729,71 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_007",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -6320,6 +8912,7 @@
     },
     "type": "MACE",
     "dataId": "AF_LW_MAC_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -6358,6 +8951,71 @@
     },
     "type": "MACE",
     "dataId": "AF_LW_MAC_001",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -6480,6 +9138,71 @@
     },
     "type": "MACE",
     "dataId": "AF_LW_MAC_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -6602,6 +9325,71 @@
     },
     "type": "MACE",
     "dataId": "AF_LW_MAC_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -6724,6 +9512,7 @@
     },
     "type": "AXE",
     "dataId": "AF_LW_AXE_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -6766,6 +9555,71 @@
     },
     "type": "AXE",
     "dataId": "AF_LW_AXE_001",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -6898,6 +9752,71 @@
     },
     "type": "AXE",
     "dataId": "AF_LW_AXE_002",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "names": {
+          "en": "Magic"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7030,6 +9949,71 @@
     },
     "type": "AXE",
     "dataId": "AF_LW_AXE_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_ASS_50": {
+        "names": {
+          "en": "Assault"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7137,6 +10121,7 @@
     "stats": {},
     "type": "SHIELD",
     "dataId": "AF_LW_SHI_000",
+    "grows": {},
     "skills": [
       []
     ],
@@ -7171,6 +10156,7 @@
     },
     "type": "ARMOR",
     "dataId": "AF_LW_ARM_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -7201,6 +10187,50 @@
     },
     "type": "ARMOR",
     "dataId": "AF_LW_ARM_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7311,6 +10341,71 @@
     },
     "type": "ARMOR",
     "dataId": "AF_LW_ARM_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7433,6 +10528,71 @@
     },
     "type": "ARMOR",
     "dataId": "AF_LW_ARM_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7551,6 +10711,71 @@
     },
     "type": "ARMOR",
     "dataId": "AF_LW_ARM_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7665,6 +10890,7 @@
     },
     "type": "HELM",
     "dataId": "AF_LW_HLM_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -7695,6 +10921,50 @@
     },
     "type": "HELM",
     "dataId": "AF_LW_HLM_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7805,6 +11075,71 @@
     },
     "type": "HELM",
     "dataId": "AF_LW_HLM_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -7919,6 +11254,71 @@
     },
     "type": "HELM",
     "dataId": "AF_LW_HLM_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8033,6 +11433,7 @@
     },
     "type": "HAT",
     "dataId": "AF_LW_HAT_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -8071,6 +11472,50 @@
     },
     "type": "HAT",
     "dataId": "AF_LW_HAT_002",
+    "grows": {
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8189,6 +11634,71 @@
     },
     "type": "HAT",
     "dataId": "AF_LW_HAT_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8307,6 +11817,71 @@
     },
     "type": "HAT",
     "dataId": "AF_LW_HAT_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8421,6 +11996,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_LW_CLT_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -8455,6 +12031,71 @@
     },
     "type": "CLOTH",
     "dataId": "AF_LW_CLT_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8569,6 +12210,71 @@
     },
     "type": "CLOTH",
     "dataId": "AF_LW_CLT_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8683,6 +12389,71 @@
     },
     "type": "CLOTH",
     "dataId": "AF_LW_CLT_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "names": {
+          "en": "Shield"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "names": {
+          "en": "Barrier"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [],
       [
@@ -8805,6 +12576,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_001",
+    "grows": {},
     "skills": [
       [
         {
@@ -8880,6 +12652,71 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -9195,6 +13032,71 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_003",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -9510,6 +13412,71 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_004",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "names": {
+          "en": "Aim"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -9825,6 +13792,71 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_FTW_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "names": {
+          "en": "Vital"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_DOD_50": {
+        "names": {
+          "en": "Dodge"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -60,
+          "MAG": -30,
+          "SPR": -60,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": 0,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "names": {
+          "en": "Critical"
+        },
+        "curve": {
+          "undefined": 1,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -10052,6 +14084,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_006",
+    "grows": {},
     "skills": [
       []
     ],
@@ -10102,6 +14135,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ARW_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -10152,6 +14186,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ARW_003",
+    "grows": {},
     "skills": [
       []
     ],
@@ -10202,6 +14237,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_CLK_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -10252,6 +14288,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ACC_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -10302,6 +14339,7 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ACC_002",
+    "grows": {},
     "skills": [
       []
     ],
@@ -10332,6 +14370,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_LILS_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10380,6 +14419,7 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_BSW_LW_SZRT_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10434,6 +14474,7 @@
     },
     "type": "KATANA",
     "dataId": "AF_KAT_LW_OOOO_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10483,6 +14524,7 @@
     },
     "type": "FIST",
     "dataId": "AF_FIS_LW_MRLK_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10532,6 +14574,7 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_RAMD_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10580,6 +14623,7 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_LRNZ_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10629,6 +14673,7 @@
     },
     "type": "DAGGER",
     "dataId": "AF_DAG_LW_VSTR_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10678,6 +14723,7 @@
     },
     "type": "BOW",
     "dataId": "AF_BOW_LW_CLEY_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10726,6 +14772,7 @@
     },
     "type": "GUN",
     "dataId": "AF_GUN_LW_RIRY_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10776,6 +14823,7 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_HLNA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10824,6 +14872,7 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_MGRT_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10872,6 +14921,7 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_PRAY_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10920,6 +14970,7 @@
     },
     "type": "MACE",
     "dataId": "AF_MAC_LW_KADI_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -10972,6 +15023,7 @@
     },
     "type": "BOW",
     "dataId": "AF_BOW_LW_FINA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11024,6 +15076,7 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_NKN_LW_SDLX_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11070,6 +15123,7 @@
     },
     "type": "SHIELD",
     "dataId": "AF_SHI_LW_ENBT_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11135,6 +15189,7 @@
     },
     "type": "ARMOR",
     "dataId": "AF_ARM_LW_STRN_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11191,6 +15246,7 @@
     },
     "type": "ARMOR",
     "dataId": "AF_ARM_LW_ROBB_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11257,6 +15313,7 @@
     },
     "type": "ARMOR",
     "dataId": "AF_ARM_LW_BYLO_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11305,6 +15362,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_ARM_LW_VRID_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11367,6 +15425,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_ARM_LW_NAIA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11411,6 +15470,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_CLT_LW_SEVR_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11455,6 +15515,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_CLT_LW_SRJS_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11503,6 +15564,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_AILN_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11587,6 +15649,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_MDNA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11665,6 +15728,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_UNII_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11713,6 +15777,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_VADM_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11761,6 +15826,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_PHBE_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11809,6 +15875,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_MICE_1",
+    "grows": {},
     "skills": [
       []
     ],
@@ -11840,6 +15907,7 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_MIIA_1",
+    "grows": {},
     "skills": [
       []
     ],
@@ -11875,6 +15943,7 @@
     },
     "type": "ACC",
     "dataId": "AF_FTW_LW_AYKA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -11976,6 +16045,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_MACR_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12043,6 +16113,7 @@
     },
     "type": "ACC",
     "dataId": "AF_CLK_LW_ELDE_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12111,6 +16182,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_ZIZA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12171,6 +16243,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_FDRC_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12243,6 +16316,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ARM_LW_SCIA_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12291,6 +16365,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ARM_LW_MURM_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12339,6 +16414,7 @@
     },
     "type": "ACC",
     "dataId": "AF_HAT_LW_RYER_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12387,6 +16463,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_RART_1",
+    "grows": {},
     "skills": [
       []
     ],
@@ -12418,6 +16495,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_MONT_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12486,6 +16564,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_ZZAN_1",
+    "grows": {},
     "skills": [
       []
     ],
@@ -12517,6 +16596,7 @@
     },
     "type": "HELM",
     "dataId": "AF_HLM_LW_GLMS_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12574,6 +16654,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_CLT_FF14_TNCR_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12618,6 +16699,7 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_FF14_YSTL_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12666,6 +16748,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_BLT_LW_YERM_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12733,6 +16816,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_NASR_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12779,6 +16863,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_ETRE_1",
+    "grows": {},
     "skills": [
       []
     ],
@@ -12810,6 +16895,7 @@
     },
     "type": "CLOTH",
     "dataId": "AF_ARM_FFT_RAMZ_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12873,6 +16959,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FFT_GFGR_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12921,6 +17008,7 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_FFT_ORND_1",
+    "grows": {},
     "skills": [
       [
         {
@@ -12990,6 +17078,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_MONT_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13028,6 +17117,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_ENBT_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13066,6 +17156,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_GLMS_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13104,6 +17195,7 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_BSW_LW_STRN_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13142,6 +17234,7 @@
     },
     "type": "KATANA",
     "dataId": "AF_KAT_LW_ROBB_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13180,6 +17273,7 @@
     },
     "type": "FIST",
     "dataId": "AF_FIS_LW_ZIZA_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13218,6 +17312,7 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_ELDE_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13256,6 +17351,7 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_AILN_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13294,6 +17390,7 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_MDNA_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13332,6 +17429,7 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_AYKA_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13370,6 +17468,7 @@
     },
     "type": "MACE",
     "dataId": "AF_MAC_LW_MACR_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13387,6 +17486,7 @@
     "stats": {},
     "type": "SHIELD",
     "dataId": "AF_LW_SHI_001",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13425,6 +17525,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FFT_RAMZ_2",
+    "grows": {},
     "skills": [
       []
     ],
@@ -13463,6 +17564,7 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FFT_ORND_2",
+    "grows": {},
     "skills": [
       []
     ],

@@ -25,6 +25,8 @@ export class JsonService {
   espersTbl = {};
   equipmentRecipes = {};
   itemOthers = {};
+  equipementLots = {};
+  grows = {};
 
   names = {
     skill: {},
@@ -32,7 +34,8 @@ export class JsonService {
     buff: {},
     job: {},
     equipment: {},
-    visionCard: {}
+    visionCard: {},
+    equipmentGrow: {}
   }
 
   rarity = [
@@ -423,6 +426,14 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRecipe.json').toPromise();
   }
 
+  private jsonArtifactLot() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRandLot.json').toPromise();
+  }
+
+  private jsonGrows() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Grow.json').toPromise();
+  }
+
 
   /* Translation */
   private jsonUnitNames() {
@@ -453,6 +464,11 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemOther.json').toPromise();
   }
 
+  private jsonEquipmentGrow() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactGrow.json').toPromise();
+  }
+
+
 
   getJsons(): Promise<any[]> {
     // @ts-ignore
@@ -475,6 +491,9 @@ export class JsonService {
       this.jsonEsperLvTbls(),
       this.jsonArtifactRecipes(),
       this.jsonVisionItemOthers(),
+      this.jsonArtifactLot(),
+      this.jsonEquipmentGrow(),
+      this.jsonGrows(),
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
       this.names.unit = this.formatNames(responses[1]);
@@ -494,6 +513,9 @@ export class JsonService {
       this.espersTbl = this.formatJson(responses[15]);
       this.equipmentRecipes = this.formatJson(responses[16]);
       this.itemOthers = this.formatNames(responses[17]);
+      this.equipementLots = this.formatJson(responses[18]);
+      this.names.equipmentGrow = this.formatNames(responses[19]);
+      this.grows = this.formatJson(responses[20]);
 
       this.formatJsons();
 
@@ -510,7 +532,7 @@ export class JsonService {
   private formatJson(data) {
     let formatted = {};
     data.items.forEach(item => {
-      formatted[item.iname] = item;
+      formatted[(item.iname ? item.iname : item.type)] = item;
     })
 
     return formatted;
@@ -1148,6 +1170,7 @@ export class JsonService {
           stats: {},
           type: this.jobEquip[this.equipments[dataId].cat[0]],
           dataId: dataId,
+          grows: {},
           skills: [],
           rarity: this.rarity[equipment.rare],
           image: this.equipments[dataId].asset.toLowerCase()
@@ -1182,6 +1205,22 @@ export class JsonService {
         if (!this.wotvEquipments[rType].acquisition) {
           this.wotvEquipments[rType].acquisition = {
             type: "Unknown"
+          }
+        }
+
+        if (this.equipementLots[rType]) {
+          for (let i = 1; i <= 3; i++) {
+            let growId = this.equipementLots[rType].lot[0]["grow" + i]
+            if (growId) {
+              this.wotvEquipments[rType].grows[growId] = {
+                names: {en: this.names.equipmentGrow[growId]},
+                curve: {}
+              }
+
+              Object.keys(this.grows[growId].curve[0]).forEach(stat => {
+                this.wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this.grows[growId].curve[0][stat]
+              })
+            }
           }
         }
 
@@ -1249,3 +1288,5 @@ export class JsonService {
 
 
 */
+
+

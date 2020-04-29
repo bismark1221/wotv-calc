@@ -22,6 +22,7 @@ export class Equipment {
   countSkills;
   slug;
   acquisition;
+  grows;
 
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
@@ -35,6 +36,7 @@ export class Equipment {
     this.type = equipment.type;
     this.slug = equipment.slug;
     this.acquisition = equipment.acquisition;
+    this.grows = equipment.grows
   }
 
   getName(translateService: TranslateService): string {
