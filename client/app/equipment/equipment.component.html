@@ -2,7 +2,7 @@
   <table class="equipmentTable">
     <tbody>
       <tr>
-        <th colspan="3">{{ equipment.names.en }}</th>
+        <th colspan="3">{{ equipment.name }}</th>
       </tr>
       <tr>
         <td colspan="3"><img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}" /></td>
@@ -45,7 +45,7 @@
         <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].max }}</td>
       </tr>
       <tr *ngFor="let growId of equipment.growIds">
-        <td>{{ equipment.grows[growId].names.en }}</td>
+        <td>{{ equipment.grows[growId].name }}</td>
         <td *ngFor="let statType of equipment.statsTypes">{{ equipment.grows[growId].stats[statType] }}</td>
       </tr>
     </tbody>
@@ -69,7 +69,7 @@
       </tr>
       <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
         <td class="skillNameTd">
-          {{ equipment.skills[0][0].names.en }}
+          {{ equipment.skills[0][0].name }}
           <span *ngIf="equipment.skills[0][0].based">
             <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skills[0][0].based + '.png'}}" />
           </span>

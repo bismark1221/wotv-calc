@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { UnitService } from '../services/unit.service';
@@ -22,8 +23,13 @@ export class UnitComponent implements OnInit {
     private skillService: SkillService,
     private jobService: JobService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
-  ) {}
+    private router: Router,
+    private translateService: TranslateService
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.formatUnit();
+    });
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -37,7 +43,12 @@ export class UnitComponent implements OnInit {
   }
 
   private formatUnit() {
+    let lang = this.translateService.currentLang
+    this.unit.name = this.unit.names[lang]
+
     this.unit.skills.forEach(skill => {
+      skill.name = skill.names[lang]
+
       skill.effects.forEach(effect => {
         effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
       });
@@ -53,12 +64,16 @@ export class UnitComponent implements OnInit {
     this.skillService.sort(this.unit.skills);
 
     if (this.unit.masterSkill) {
+      this.unit.masterSkill.name = this.unit.masterSkill.names[lang]
+
       this.unit.masterSkill.effects.forEach(effect => {
         effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.masterSkill, effect);
       });
     }
 
     if (this.unit.limit) {
+      this.unit.limit.name = this.unit.limit.names[lang]
+
       this.unit.limit.basedHtml = this.unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.limit.based.toLowerCase() + ".png' />" : "";
 
       this.unit.limit.effects.forEach(effect => {
@@ -95,9 +110,11 @@ export class UnitComponent implements OnInit {
     });
 
     if (this.unit.tmr) {
+      this.unit.tmr.name = this.unit.tmr.names[lang]
       this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats)
 
       this.unit.tmr.skills.forEach(skill => {
+        skill.name = skill.names[lang]
         skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
         this.skillService.formatRange(this.unit, skill);
         skill.effects.forEach(effect => {
@@ -113,6 +130,7 @@ export class UnitComponent implements OnInit {
     this.unit.jobs.forEach(jobId => {
       let job = this.jobService.getJob(jobId)
       this.calcJobStat(job, (i > 0 ? true : false))
+      job.name = job.names[lang]
       this.jobs.push(job)
       i++
     })

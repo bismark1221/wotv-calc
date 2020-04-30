@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable()
 export class SkillService {

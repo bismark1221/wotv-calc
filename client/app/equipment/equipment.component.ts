@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
@@ -19,8 +20,13 @@ export class EquipmentComponent implements OnInit {
     private skillService: SkillService,
     private unitService: UnitService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
-  ) {}
+    private router: Router,
+    private translateService: TranslateService
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.formatEquipment();
+    });
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -34,6 +40,9 @@ export class EquipmentComponent implements OnInit {
   }
 
   private formatEquipment() {
+    let lang = this.translateService.currentLang
+
+    this.equipment.name = this.equipment.names[lang]
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
     let i = 0;
@@ -43,6 +52,7 @@ export class EquipmentComponent implements OnInit {
       this.equipment.countSkills.push(i);
 
       equipmentLvl.forEach(skill => {
+        skill.name = skill.names[lang]
         skill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
         });
@@ -70,6 +80,7 @@ export class EquipmentComponent implements OnInit {
 
     this.equipment.growIds = Object.keys(this.equipment.grows)
     Object.keys(this.equipment.grows).forEach(growId => {
+      this.equipment.grows[growId].name = this.equipment.grows[growId].names[lang]
       this.equipment.grows[growId].stats = {};
       this.equipment.statsTypes.forEach(statType => {
         let maxValue = this.equipment.stats[statType].max

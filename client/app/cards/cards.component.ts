@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { CardService } from '../services/card.service';
 
@@ -15,13 +15,18 @@ export class CardsComponent implements OnInit {
   constructor(
     private cardService: CardService,
     private translateService: TranslateService
-  ) {}
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.translateCards();
+    });
+  }
 
   ngOnInit(): void {
     this.getCards();
   }
 
   private getCards(): void {
+    let lang = this.translateService.currentLang
     this.cards = this.cardService.getCardsForListing();
 
     Object.keys(this.cards).forEach(rarity => {
@@ -35,7 +40,20 @@ export class CardsComponent implements OnInit {
           this.formattedCards[rarity][tableIndex] = [];
         }
 
+        card.name = card.names[lang]
         this.formattedCards[rarity][tableIndex].push(card)
+      });
+    });
+  }
+
+  private translateCards() {
+    let lang = this.translateService.currentLang
+
+    Object.keys(this.formattedCards).forEach(rarity => {
+      this.formattedCards[rarity].forEach(line => {
+        line.forEach(card => {
+          card.name = card.names[lang]
+        });
       });
     });
   }

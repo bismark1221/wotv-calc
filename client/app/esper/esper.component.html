@@ -2,7 +2,7 @@
   <table class="esperTable">
     <tbody>
       <tr>
-        <th colspan="2">{{ esper.names.en }}</th>
+        <th colspan="2">{{ esper.name }}</th>
       </tr>
       <tr>
         <td colspan="2"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.png'}}" /></td>
@@ -108,7 +108,7 @@
           <img class="skilImg" src="{{'assets/skill-type/' + esper.skills[0].type + '.png'}}" />
         </td>
         <td *ngIf="esper.skills[0].type == 'active'">
-          {{ esper.skills[0].names.en }}
+          {{ esper.skills[0].name }}
         </td>
         <td class="skillEffectTd">
           <div>{{ esper.skills[0].counterHtml }}</div>

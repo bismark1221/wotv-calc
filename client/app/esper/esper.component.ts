@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
 import { SkillService } from '../services/skill.service';
@@ -18,8 +18,13 @@ export class EsperComponent implements OnInit {
     private esperService: EsperService,
     private skillService: SkillService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
-  ) {}
+    private router: Router,
+    private translateService: TranslateService
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.formatEsper();
+    });
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -33,7 +38,11 @@ export class EsperComponent implements OnInit {
   }
 
   private formatEsper() {
+    let lang = this.translateService.currentLang
+    this.esper.name = this.esper.names[lang]
+
     this.esper.skills.forEach(skill => {
+      skill.name = skill.names[lang]
       skill.effects.forEach(effect => {
         effect.formatHtml = this.skillService.formatEffect(this.esper, skill, effect);
       });

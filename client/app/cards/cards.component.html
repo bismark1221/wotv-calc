@@ -12,7 +12,7 @@
             <img class="cardImg" src="{{'assets/cards/' + card.image + '_m.png'}}" />
           </a>
         </div>
-        <span class="cardName"><a [routerLink]="['/card/' + card.slug ]" [routerLinkActive]="['active']">{{ card.names.en }}</a></span>
+        <span class="cardName"><a [routerLink]="['/card/' + card.slug ]" [routerLinkActive]="['active']">{{ card.name }}</a></span>
       </td>
     </tr>
   </table>

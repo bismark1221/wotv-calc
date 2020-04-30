@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
@@ -18,8 +19,13 @@ export class CardComponent implements OnInit {
     private cardService: CardService,
     private skillService: SkillService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
-  ) {}
+    private router: Router,
+    private translateService: TranslateService
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.formatCard();
+    });
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -33,8 +39,10 @@ export class CardComponent implements OnInit {
   }
 
   private formatCard() {
+    let lang = this.translateService.currentLang
     let skills = ["unitBuffsClassic", "unitBuffsAwake", "unitBuffsMax", "partyBuffsClassic", "partyBuffsAwake", "partyBuffsMax"];
 
+    this.card.name = this.card.names[lang]
     skills.forEach(skillType => {
       this.card[skillType].forEach(skill => {
         skill.effects.forEach(effect => {

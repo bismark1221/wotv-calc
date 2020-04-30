@@ -3,6 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import { EquipmentService } from './equipment.service'
 import {Slug } from 'ng2-slugify';
 
+// Translations
+import { default as FR_UnitName } from       '../../../../wotv-assets/global/localize/fr/text/masterparam/unitname.json';
+import { default as FR_SkillName } from      '../../../../wotv-assets/global/localize/fr/text/masterparam/skillname.json';
+import { default as FR_BuffName } from       '../../../../wotv-assets/global/localize/fr/text/masterparam/buffname.json';
+import { default as FR_JobName } from        '../../../../wotv-assets/global/localize/fr/text/masterparam/jobname.json';
+import { default as FR_ArtifactName } from   '../../../../wotv-assets/global/localize/fr/text/masterparam/artifactname.json';
+import { default as FR_VisionCardName } from '../../../../wotv-assets/global/localize/fr/text/masterparam/visioncardname.json';
+import { default as FR_ItemOther } from      '../../../../wotv-assets/global/localize/fr/text/masterparam/itemother.json';
+import { default as FR_ArtifactGrow } from   '../../../../wotv-assets/global/localize/fr/text/masterparam/artifactgrow.json';
+
 @Injectable()
 export class JsonService {
   slug = new Slug('default');
@@ -24,18 +34,30 @@ export class JsonService {
   espersBoards = {};
   espersTbl = {};
   equipmentRecipes = {};
-  itemOthers = {};
   equipementLots = {};
   grows = {};
 
   names = {
-    skill: {},
-    unit: {},
-    buff: {},
-    job: {},
-    equipment: {},
-    visionCard: {},
-    equipmentGrow: {}
+    en : {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {}
+    },
+    fr: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {}
+    }
   }
 
   rarity = [
@@ -472,7 +494,6 @@ export class JsonService {
   }
 
 
-
   getJsons(): Promise<any[]> {
     // @ts-ignore
     return Promise.all([
@@ -499,26 +520,35 @@ export class JsonService {
       this.jsonGrows(),
     ]).then(responses => {
       this.units = this.formatJson(responses[0]);
-      this.names.unit = this.formatNames(responses[1]);
-      this.names.job = this.formatNames(responses[2]);
+      this.names.en.unit = this.formatNames(responses[1]);
+      this.names.en.job = this.formatNames(responses[2]);
       this.boards = this.formatJson(responses[3]);
       this.skills = this.formatJson(responses[4]);
-      this.names.skill = this.formatNames(responses[5]);
+      this.names.en.skill = this.formatNames(responses[5]);
       this.buffs = this.formatJson(responses[6]);
-      this.names.buff = this.formatNames(responses[7]);
+      this.names.en.buff = this.formatNames(responses[7]);
       this.jobs = this.formatJson(responses[8]);
       this.equipments = this.formatJson(responses[9]);
-      this.names.equipment = this.formatNames(responses[10]);
+      this.names.en.equipment = this.formatNames(responses[10]);
       this.visionCards = this.formatJson(responses[11]);
-      this.names.visionCard = this.formatNames(responses[12]);
+      this.names.en.visionCard = this.formatNames(responses[12]);
       this.espersBoards = this.formatJson(responses[13]);
       this.weathers = this.formatJson(responses[14]);
       this.espersTbl = this.formatJson(responses[15]);
       this.equipmentRecipes = this.formatJson(responses[16]);
-      this.itemOthers = this.formatNames(responses[17]);
+      this.names.en.itemOther = this.formatNames(responses[17]);
       this.equipementLots = this.formatJson(responses[18]);
-      this.names.equipmentGrow = this.formatNames(responses[19]);
+      this.names.en.equipmentGrow = this.formatNames(responses[19]);
       this.grows = this.formatJson(responses[20]);
+
+      this.names.fr.unit = this.formatNames(FR_UnitName)
+      this.names.fr.skill = this.formatNames(FR_SkillName)
+      this.names.fr.job = this.formatNames(FR_JobName)
+      this.names.fr.buff = this.formatNames(FR_BuffName)
+      this.names.fr.equipment = this.formatNames(FR_ArtifactName)
+      this.names.fr.visionCard = this.formatNames(FR_VisionCardName)
+      this.names.fr.itemOther = this.formatNames(FR_ItemOther)
+      this.names.fr.equipmentGrow = this.formatNames(FR_ArtifactGrow)
 
       this.formatJsons();
 
@@ -580,7 +610,7 @@ export class JsonService {
     let dataId = job.iname;
     this.wotvJobs[dataId] = {
       dataId: dataId,
-      names: {en: this.names.job[dataId]},
+      names: { en: this.names.en.job[dataId], fr: this.names.fr.job[dataId] },
       statsModifiers: [],
       image: job.mdl.toLowerCase(),
       subRate: job.sub_rate,
@@ -661,11 +691,13 @@ export class JsonService {
   }
 
   private getNames(item, type) {
-    if (this.names[type][item.dataId]) {
-      item.names.en = this.names[type][item.dataId]
+    if (this.names.en[type][item.dataId]) {
+      item.names.en = this.names.en[type][item.dataId]
+      item.names.fr = this.names.fr[type][item.dataId]
       item.slug = this.slug.slugify(item.names.en)
     } else {
       item.names.en = item.dataId;
+      item.names.fr = item.dataId;
       item.slug = this.slug.slugify(item.names.en)
     }
   }
@@ -762,7 +794,7 @@ export class JsonService {
       unlockStar: panelSkill.unlock_value + 1,
       unlockJob: panelSkill.get_job,
       jobLevel: panelSkill.need_level,
-      names: {en: this.names.skill[panelSkill.value]},
+      names: { en: this.names.en.skill[panelSkill.value], fr: this.names.fr.skill[panelSkill.value]},
       effects: [],
       dataId: panelSkill.value,
       slot: this.skills[panelSkill.value].slot
@@ -1008,7 +1040,7 @@ export class JsonService {
   private getLB(unit, lbId) {
     if (lbId) {
       let limit = {
-        names: {en: this.names.skill[lbId]},
+        names: { en: this.names.en.skill[lbId], fr: this.names.fr.skill[lbId]},
         effects: [],
         dataId: lbId,
         slot: this.skills[lbId].slot
@@ -1023,7 +1055,7 @@ export class JsonService {
   private getMasterSkill(unit, skillId) {
     if (skillId) {
       let masterSkill = {
-        names: {en: this.names.skill[skillId]},
+        names: { en: this.names.en.skill[skillId], fr: this.names.fr.skill[skillId]},
         effects: [],
         dataId: skillId,
         slot: this.skills[skillId].slot
@@ -1038,7 +1070,7 @@ export class JsonService {
   private getTMR(unit, tmrId) {
     if (tmrId) {
       let tmr = {
-        names: {en: this.names.equipment[tmrId]},
+        names: { en: this.names.en.equipment[tmrId], fr: this.names.fr.equipment[tmrId]},
         stats: {},
         type: this.jobEquip[this.equipments[tmrId].cat[0]],
         dataId: tmrId,
@@ -1056,7 +1088,7 @@ export class JsonService {
           for (let j = 0; j < this.equipments[tmrId]["skl" + i].length; j++) {
             if (lastSkillId[j] !== this.equipments[tmrId]["skl" + i][j]) {
               let skill = {
-                names: {en: this.names.skill[this.equipments[tmrId]["skl" + i][j]]},
+                names: { en: this.names.en.skill[this.equipments[tmrId]["skl" + i][j]], fr: this.names.fr.skill[this.equipments[tmrId]["skl" + i][j]]},
                 dataId: this.equipments[tmrId]["skl" + i][j],
                 effects: [],
                 slot: this.skills[this.equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1
@@ -1169,11 +1201,11 @@ export class JsonService {
     let dataId = equipment.iname;
     let rType = equipment.rtype !=="AF_LOT_50" && equipment.rtype !=="AF_LOT_TRUST" ? equipment.rtype : dataId;
 
-    if (this.names.equipment[dataId] && equipment.type !== -1) {
+    if (this.names.en.equipment[dataId] && equipment.type !== -1) {
       if (!this.wotvEquipments[rType]) {
         this.wotvEquipments[rType] = {
-          names: {en: this.names.equipment[dataId]},
-          slug: this.slug.slugify(this.names.equipment[dataId]),
+          names: { en: this.names.en.equipment[dataId], fr: this.names.fr.equipment[dataId]},
+          slug: this.slug.slugify(this.names.en.equipment[dataId]),
           stats: {},
           type: this.jobEquip[this.equipments[dataId].cat[0]],
           dataId: dataId,
@@ -1202,9 +1234,12 @@ export class JsonService {
           }
         } else if (this.equipmentRecipes[dataId]) {
           let recipe = this.equipmentRecipes[dataId].recipe;
-          if (this.itemOthers[recipe] != "") {
+          if (this.names.en.itemOther[recipe] != "") {
             this.wotvEquipments[rType].acquisition = {
-              type: this.itemOthers[recipe]
+              type: {
+                en: this.names.en.itemOther[recipe],
+                fr: this.names.fr.itemOther[recipe],
+              }
             }
           }
         }
@@ -1220,7 +1255,7 @@ export class JsonService {
             let growId = this.equipementLots[rType].lot[0]["grow" + i]
             if (growId) {
               this.wotvEquipments[rType].grows[growId] = {
-                names: {en: this.names.equipmentGrow[growId]},
+                names: { en: this.names.en.equipmentGrow[growId], fr: this.names.fr.equipmentGrow[growId] },
                 curve: {}
               }
 
@@ -1252,7 +1287,10 @@ export class JsonService {
           for (let j = 0; j < this.equipments[dataId]["skl" + i].length; j++) {
             if (lastSkillId[j] !== this.equipments[dataId]["skl" + i][j]) {
               let skill = {
-                names: {en: this.names.skill[this.equipments[dataId]["skl" + i][j]]},
+                names: { 
+                  en: this.names.en.skill[this.equipments[dataId]["skl" + i][j]],
+                  fr: this.names.fr.skill[this.equipments[dataId]["skl" + i][j]]
+                },
                 dataId: this.equipments[dataId]["skl" + i][j],
                 effects: [],
                 slot: this.skills[this.equipments[dataId]["skl" + i][j]].s_buffs || this.skills[this.equipments[dataId]["skl" + i][j]].type === 6 ? 3 : 1

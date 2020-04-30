@@ -1,7 +1,8 @@
 {
   "AF_LW_SWO_000": {
     "names": {
-      "en": "Broadsword"
+      "en": "Broadsword",
+      "fr": "Épée large"
     },
     "slug": "broadsword",
     "stats": {
@@ -40,7 +41,8 @@
   },
   "AF_LW_SWO_007": {
     "names": {
-      "en": "Metal Slayer"
+      "en": "Metal Slayer",
+      "fr": "Brise-métal"
     },
     "slug": "metal-slayer",
     "stats": {
@@ -68,7 +70,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_007_1",
           "effects": [
@@ -93,7 +96,8 @@
   },
   "AF_LOT_LW_SWO_001": {
     "names": {
-      "en": "Longsword"
+      "en": "Longsword",
+      "fr": "Épée longue"
     },
     "slug": "longsword",
     "stats": {
@@ -123,7 +127,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -144,7 +149,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -165,7 +171,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -190,7 +197,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -208,7 +216,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -226,7 +235,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -244,7 +254,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +6"
+            "en": "Slash ATK +6",
+            "fr": "Att tranchante +6"
           },
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
@@ -262,7 +273,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +12"
+            "en": "Slash ATK +12",
+            "fr": "Att tranchante +12"
           },
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
@@ -281,12 +293,16 @@
     "rarity": "R",
     "image": "lapswpn_swo_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SWO_002": {
     "names": {
-      "en": "Mythril Sword"
+      "en": "Mythril Sword",
+      "fr": "Épée en mithril"
     },
     "slug": "mythril-sword",
     "stats": {
@@ -316,7 +332,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -337,7 +354,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -358,7 +376,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -383,7 +402,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -401,7 +421,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -419,7 +440,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -437,7 +459,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +7"
+            "en": "Slash ATK +7",
+            "fr": "Att tranchante +7"
           },
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
@@ -455,7 +478,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +13"
+            "en": "Slash ATK +13",
+            "fr": "Att tranchante +13"
           },
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
@@ -474,12 +498,16 @@
     "rarity": "SR",
     "image": "lapswpn_swo_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SWO_003": {
     "names": {
-      "en": "Sleep Blade"
+      "en": "Sleep Blade",
+      "fr": "Lame Morphée"
     },
     "slug": "sleep-blade",
     "stats": {
@@ -509,7 +537,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -530,7 +559,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -551,7 +581,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -575,7 +606,8 @@
       [
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
@@ -591,7 +623,8 @@
         },
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Sommeil"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -609,7 +642,8 @@
       [
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
@@ -625,7 +659,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -641,7 +676,8 @@
         },
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Sommeil"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -659,7 +695,8 @@
       [
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
@@ -675,7 +712,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -691,7 +729,8 @@
         },
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Sommeil"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -709,7 +748,8 @@
       [
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
@@ -725,7 +765,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -741,7 +782,8 @@
         },
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Sommeil"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -759,7 +801,8 @@
       [
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
@@ -775,7 +818,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -791,7 +835,8 @@
         },
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Sommeil"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -809,7 +854,8 @@
       [
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
@@ -825,7 +871,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -841,7 +888,8 @@
         },
         {
           "names": {
-            "en": "Sleep Blade"
+            "en": "Sleep Blade",
+            "fr": "Lame Sommeil"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -860,12 +908,16 @@
     "rarity": "MR",
     "image": "lapswpn_swo_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SWO_004": {
     "names": {
-      "en": "Icebrand"
+      "en": "Icebrand",
+      "fr": "Cryolame"
     },
     "slug": "icebrand",
     "stats": {
@@ -895,7 +947,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -916,7 +969,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -937,7 +991,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -961,7 +1016,8 @@
       [
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
@@ -977,7 +1033,8 @@
         },
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
@@ -995,7 +1052,8 @@
       [
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
@@ -1011,7 +1069,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -1027,7 +1086,8 @@
         },
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
@@ -1045,7 +1105,8 @@
       [
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
@@ -1061,7 +1122,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -1077,7 +1139,8 @@
         },
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
@@ -1095,7 +1158,8 @@
       [
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
@@ -1111,7 +1175,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -1127,7 +1192,8 @@
         },
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
@@ -1145,7 +1211,8 @@
       [
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
@@ -1161,7 +1228,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -1177,7 +1245,8 @@
         },
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
@@ -1195,7 +1264,8 @@
       [
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
@@ -1211,7 +1281,8 @@
         },
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -1227,7 +1298,8 @@
         },
         {
           "names": {
-            "en": "Icebrand"
+            "en": "Icebrand",
+            "fr": "Cryolame"
           },
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
@@ -1246,12 +1318,16 @@
     "rarity": "MR",
     "image": "lapswpn_swo_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SWO_005": {
     "names": {
-      "en": "Flametongue"
+      "en": "Flametongue",
+      "fr": "Pyrolame"
     },
     "slug": "flametongue",
     "stats": {
@@ -1281,7 +1357,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -1302,7 +1379,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -1323,7 +1401,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -1347,7 +1426,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_005_1",
           "effects": [
@@ -1363,7 +1443,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_005_5",
           "effects": [
@@ -1387,7 +1468,8 @@
   },
   "AF_LOT_LW_SWO_006": {
     "names": {
-      "en": "Coral Sword"
+      "en": "Coral Sword",
+      "fr": "Épée de corail"
     },
     "slug": "coral-sword",
     "stats": {
@@ -1417,7 +1499,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -1438,7 +1521,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -1459,7 +1543,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -1483,7 +1568,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_006_1",
           "effects": [
@@ -1499,7 +1585,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_006_5",
           "effects": [
@@ -1523,7 +1610,8 @@
   },
   "AF_LW_SWO_016": {
     "names": {
-      "en": "Excalibur"
+      "en": "Excalibur",
+      "fr": "Excalibur"
     },
     "slug": "excalibur",
     "stats": {
@@ -1562,7 +1650,8 @@
   },
   "AF_SWO_FF14_TNCT": {
     "names": {
-      "en": "Lion Heart Replica"
+      "en": "Lion Heart Replica",
+      "fr": "Réplique de Cœur-de-lion"
     },
     "slug": "lion-heart-replica",
     "stats": {
@@ -1592,7 +1681,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -1613,7 +1703,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -1634,7 +1725,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -1659,7 +1751,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -1677,7 +1770,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -1695,7 +1789,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -1713,7 +1808,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -1731,7 +1827,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -1755,7 +1852,8 @@
   },
   "AF_FFT_SWO_001": {
     "names": {
-      "en": "Nagnarok"
+      "en": "Nagnarok",
+      "fr": "Nagrarok"
     },
     "slug": "nagnarok",
     "stats": {
@@ -1785,7 +1883,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -1806,7 +1905,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -1827,7 +1927,8 @@
       },
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -1852,7 +1953,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -1870,7 +1972,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -1888,7 +1991,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -1906,7 +2010,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -1924,7 +2029,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -1948,7 +2054,8 @@
   },
   "AF_LW_BSW_000": {
     "names": {
-      "en": "Greatsword"
+      "en": "Greatsword",
+      "fr": "Spathe"
     },
     "slug": "greatsword",
     "stats": {
@@ -1987,7 +2094,8 @@
   },
   "AF_LOT_LW_BSW_001": {
     "names": {
-      "en": "Claymore"
+      "en": "Claymore",
+      "fr": "Claymore"
     },
     "slug": "claymore",
     "stats": {
@@ -2017,7 +2125,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -2038,7 +2147,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -2059,7 +2169,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -2084,7 +2195,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -2102,7 +2214,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -2120,7 +2233,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -2138,7 +2252,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +6"
+            "en": "Slash ATK +6",
+            "fr": "Att tranchante +6"
           },
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
@@ -2156,7 +2271,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +12"
+            "en": "Slash ATK +12",
+            "fr": "Att tranchante +12"
           },
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
@@ -2175,12 +2291,16 @@
     "rarity": "R",
     "image": "lapswpn_bsw_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_BSW_002": {
     "names": {
-      "en": "Mythril Saber"
+      "en": "Mythril Saber",
+      "fr": "Sabre en mithril"
     },
     "slug": "mythril-saber",
     "stats": {
@@ -2210,7 +2330,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -2231,7 +2352,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -2252,7 +2374,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -2277,7 +2400,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -2295,7 +2419,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -2313,7 +2438,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -2331,7 +2457,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +7"
+            "en": "Slash ATK +7",
+            "fr": "Att tranchante +7"
           },
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
@@ -2349,7 +2476,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +13"
+            "en": "Slash ATK +13",
+            "fr": "Att tranchante +13"
           },
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
@@ -2368,12 +2496,16 @@
     "rarity": "SR",
     "image": "lapswpn_bsw_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_BSW_003": {
     "names": {
-      "en": "Rune Blade"
+      "en": "Rune Blade",
+      "fr": "Épée runique"
     },
     "slug": "rune-blade",
     "stats": {
@@ -2403,7 +2535,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -2424,7 +2557,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -2445,7 +2579,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -2470,7 +2605,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -2488,7 +2624,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -2506,7 +2643,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -2524,7 +2662,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -2542,7 +2681,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -2566,7 +2706,8 @@
   },
   "AF_LOT_LW_BSW_004": {
     "names": {
-      "en": "Golden Blade"
+      "en": "Golden Blade",
+      "fr": "Lame en or"
     },
     "slug": "golden-blade",
     "stats": {
@@ -2600,7 +2741,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -2621,7 +2763,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -2646,7 +2789,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -2664,7 +2808,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -2682,7 +2827,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -2700,7 +2846,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -2718,7 +2865,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -2737,12 +2885,16 @@
     "rarity": "MR",
     "image": "lapswpn_bsw_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_KAT_000": {
     "names": {
-      "en": "Ashura"
+      "en": "Ashura",
+      "fr": "Ashura"
     },
     "slug": "ashura",
     "stats": {
@@ -2785,7 +2937,8 @@
   },
   "AF_LOT_LW_KAT_001": {
     "names": {
-      "en": "Kotetsu"
+      "en": "Kotetsu",
+      "fr": "Kotetsu"
     },
     "slug": "kotetsu",
     "stats": {
@@ -2819,7 +2972,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -2840,7 +2994,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -2861,7 +3016,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -2886,7 +3042,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -2904,7 +3061,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -2922,7 +3080,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -2940,7 +3099,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +6"
+            "en": "Slash ATK +6",
+            "fr": "Att tranchante +6"
           },
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
@@ -2958,7 +3118,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +12"
+            "en": "Slash ATK +12",
+            "fr": "Att tranchante +12"
           },
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
@@ -2977,12 +3138,16 @@
     "rarity": "R",
     "image": "lapswpn_kat_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_KAT_002": {
     "names": {
-      "en": "Kiku-ichimonji"
+      "en": "Kiku-ichimonji",
+      "fr": "Kiku-ichimonji"
     },
     "slug": "kiku-ichimonji",
     "stats": {
@@ -3020,7 +3185,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -3041,7 +3207,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -3062,7 +3229,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -3087,7 +3255,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -3105,7 +3274,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -3123,7 +3293,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -3141,7 +3312,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +7"
+            "en": "Slash ATK +7",
+            "fr": "Att tranchante +7"
           },
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
@@ -3159,7 +3331,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +13"
+            "en": "Slash ATK +13",
+            "fr": "Att tranchante +13"
           },
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
@@ -3178,12 +3351,16 @@
     "rarity": "SR",
     "image": "lapswpn_kat_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_KAT_003": {
     "names": {
-      "en": "Osafune"
+      "en": "Osafune",
+      "fr": "Osafune"
     },
     "slug": "osafune",
     "stats": {
@@ -3217,7 +3394,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -3238,7 +3416,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -3259,7 +3438,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -3284,7 +3464,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -3302,7 +3483,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -3320,7 +3502,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -3338,7 +3521,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -3356,7 +3540,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -3375,12 +3560,16 @@
     "rarity": "MR",
     "image": "lapswpn_kat_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_FIS_000": {
     "names": {
-      "en": "Bronze Knuckles"
+      "en": "Bronze Knuckles",
+      "fr": "Poings en bronze"
     },
     "slug": "bronze-knuckles",
     "stats": {
@@ -3419,7 +3608,8 @@
   },
   "AF_LOT_LW_FIS_001": {
     "names": {
-      "en": "Metal Knuckles"
+      "en": "Metal Knuckles",
+      "fr": "Poings en métal"
     },
     "slug": "metal-knuckles",
     "stats": {
@@ -3449,7 +3639,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -3470,7 +3661,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -3491,7 +3683,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -3597,12 +3790,16 @@
     "rarity": "R",
     "image": "lapswpn_fis_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_FIS_002": {
     "names": {
-      "en": "Mythril Claws"
+      "en": "Mythril Claws",
+      "fr": "Griffes en mithril"
     },
     "slug": "mythril-claws",
     "stats": {
@@ -3636,7 +3833,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -3657,7 +3855,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -3678,7 +3877,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -3784,12 +3984,16 @@
     "rarity": "SR",
     "image": "lapswpn_fis_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_FIS_003": {
     "names": {
-      "en": "Cat Claws"
+      "en": "Cat Claws",
+      "fr": "Griffes de chat"
     },
     "slug": "cat-claws",
     "stats": {
@@ -3827,7 +4031,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -3848,7 +4053,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -3869,7 +4075,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -3975,12 +4182,16 @@
     "rarity": "MR",
     "image": "lapswpn_fis_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_SPE_000": {
     "names": {
-      "en": "Javelin"
+      "en": "Javelin",
+      "fr": "Javelot"
     },
     "slug": "javelin",
     "stats": {
@@ -4019,7 +4230,8 @@
   },
   "AF_LOT_LW_SPE_001": {
     "names": {
-      "en": "Partisan"
+      "en": "Partisan",
+      "fr": "Partisan"
     },
     "slug": "partisan",
     "stats": {
@@ -4049,7 +4261,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -4070,7 +4283,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -4091,7 +4305,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -4197,12 +4412,16 @@
     "rarity": "R",
     "image": "lapswpn_spe_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SPE_002": {
     "names": {
-      "en": "Mythril Spear"
+      "en": "Mythril Spear",
+      "fr": "Lance en mithril"
     },
     "slug": "mythril-spear",
     "stats": {
@@ -4232,7 +4451,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -4253,7 +4473,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -4274,7 +4495,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -4380,12 +4602,16 @@
     "rarity": "SR",
     "image": "lapswpn_spe_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SPE_003": {
     "names": {
-      "en": "Wind Spear"
+      "en": "Wind Spear",
+      "fr": "Lance zéphyr"
     },
     "slug": "wind-spear",
     "stats": {
@@ -4415,7 +4641,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -4436,7 +4663,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -4457,7 +4685,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -4568,7 +4797,8 @@
   },
   "AF_LOT_LW_SPE_004": {
     "names": {
-      "en": "Ice Lance"
+      "en": "Ice Lance",
+      "fr": "Lance de glace"
     },
     "slug": "ice-lance",
     "stats": {
@@ -4598,7 +4828,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -4619,7 +4850,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -4640,7 +4872,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -4746,12 +4979,16 @@
     "rarity": "MR",
     "image": "lapswpn_spe_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_SPE_006": {
     "names": {
-      "en": "Drakeshorn Spear"
+      "en": "Drakeshorn Spear",
+      "fr": "Lance cornodragon"
     },
     "slug": "drakeshorn-spear",
     "stats": {
@@ -4781,7 +5018,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -4802,7 +5040,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -4823,7 +5062,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -4847,7 +5087,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
@@ -4864,7 +5105,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
@@ -4883,7 +5125,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
@@ -4914,7 +5157,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
@@ -4933,7 +5177,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
@@ -4964,7 +5209,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
@@ -4983,7 +5229,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
@@ -5014,7 +5261,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
@@ -5033,7 +5281,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
@@ -5064,7 +5313,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
@@ -5083,7 +5333,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_1",
           "effects": [
@@ -5114,7 +5365,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_SPE_006_5",
           "effects": [
@@ -5134,12 +5386,16 @@
     "rarity": "MR",
     "image": "lapswpn_spe_006",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_DAG_000": {
     "names": {
-      "en": "Bronze Knife"
+      "en": "Bronze Knife",
+      "fr": "Couteau en bronze"
     },
     "slug": "bronze-knife",
     "stats": {
@@ -5178,7 +5434,8 @@
   },
   "AF_LOT_LW_DAG_001": {
     "names": {
-      "en": "Dagger"
+      "en": "Dagger",
+      "fr": "Dague"
     },
     "slug": "dagger",
     "stats": {
@@ -5208,7 +5465,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -5229,7 +5487,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -5250,7 +5509,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -5275,7 +5535,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -5293,7 +5554,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -5311,7 +5573,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -5329,7 +5592,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +6"
+            "en": "Slash ATK +6",
+            "fr": "Att tranchante +6"
           },
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
@@ -5347,7 +5611,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +12"
+            "en": "Slash ATK +12",
+            "fr": "Att tranchante +12"
           },
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
@@ -5366,12 +5631,16 @@
     "rarity": "R",
     "image": "lapswpn_dag_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_DAG_002": {
     "names": {
-      "en": "Mythril Dagger"
+      "en": "Mythril Dagger",
+      "fr": "Dague en mithril"
     },
     "slug": "mythril-dagger",
     "stats": {
@@ -5401,7 +5670,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -5422,7 +5692,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -5443,7 +5714,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -5468,7 +5740,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -5486,7 +5759,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -5504,7 +5778,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -5522,7 +5797,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +7"
+            "en": "Slash ATK +7",
+            "fr": "Att tranchante +7"
           },
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
@@ -5540,7 +5816,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +13"
+            "en": "Slash ATK +13",
+            "fr": "Att tranchante +13"
           },
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
@@ -5559,12 +5836,16 @@
     "rarity": "SR",
     "image": "lapswpn_dag_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_DAG_004": {
     "names": {
-      "en": "Main Gauche"
+      "en": "Main Gauche",
+      "fr": "Main gauche"
     },
     "slug": "main-gauche",
     "stats": {
@@ -5598,7 +5879,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -5619,7 +5901,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -5640,7 +5923,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -5665,7 +5949,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -5683,7 +5968,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -5701,7 +5987,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -5719,7 +6006,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -5737,7 +6025,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -5756,12 +6045,16 @@
     "rarity": "MR",
     "image": "lapswpn_dag_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_DAG_006": {
     "names": {
-      "en": "Mage Masher"
+      "en": "Mage Masher",
+      "fr": "Dague magik"
     },
     "slug": "mage-masher",
     "stats": {
@@ -5791,7 +6084,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -5812,7 +6106,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -5833,7 +6128,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -5858,7 +6154,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -5876,7 +6173,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -5894,7 +6192,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -5912,7 +6211,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -5930,7 +6230,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -5949,12 +6250,16 @@
     "rarity": "MR",
     "image": "lapswpn_dag_006",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_NKN_000": {
     "names": {
-      "en": "Ninja Blade"
+      "en": "Ninja Blade",
+      "fr": "Lame ninja"
     },
     "slug": "ninja-blade",
     "stats": {
@@ -5993,7 +6298,8 @@
   },
   "AF_LOT_LW_NKN_001": {
     "names": {
-      "en": "Kunai"
+      "en": "Kunai",
+      "fr": "Kunaï"
     },
     "slug": "kunai",
     "stats": {
@@ -6023,7 +6329,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -6044,7 +6351,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -6065,7 +6373,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -6090,7 +6399,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -6108,7 +6418,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -6126,7 +6437,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -6144,7 +6456,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +6"
+            "en": "Slash ATK +6",
+            "fr": "Att tranchante +6"
           },
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
@@ -6162,7 +6475,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +12"
+            "en": "Slash ATK +12",
+            "fr": "Att tranchante +12"
           },
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
@@ -6181,12 +6495,16 @@
     "rarity": "R",
     "image": "lapswpn_nkn_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_NKN_002": {
     "names": {
-      "en": "Kodachi"
+      "en": "Kodachi",
+      "fr": "Kodachi"
     },
     "slug": "kodachi",
     "stats": {
@@ -6216,7 +6534,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -6237,7 +6556,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -6258,7 +6578,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -6283,7 +6604,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -6301,7 +6623,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -6319,7 +6642,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -6337,7 +6661,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +7"
+            "en": "Slash ATK +7",
+            "fr": "Att tranchante +7"
           },
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
@@ -6355,7 +6680,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +13"
+            "en": "Slash ATK +13",
+            "fr": "Att tranchante +13"
           },
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
@@ -6374,12 +6700,16 @@
     "rarity": "SR",
     "image": "lapswpn_nkn_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_NKN_003": {
     "names": {
-      "en": "Sasuke's Katana"
+      "en": "Sasuke's Katana",
+      "fr": "Katana de Sasuke"
     },
     "slug": "sasukes-katana",
     "stats": {
@@ -6409,7 +6739,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -6430,7 +6761,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -6451,7 +6783,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -6476,7 +6809,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -6494,7 +6828,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -6512,7 +6847,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -6530,7 +6866,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -6548,7 +6885,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -6567,12 +6905,16 @@
     "rarity": "MR",
     "image": "lapswpn_nkn_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_BOW_000": {
     "names": {
-      "en": "Short Bow"
+      "en": "Short Bow",
+      "fr": "Arc court"
     },
     "slug": "short-bow",
     "stats": {
@@ -6615,7 +6957,8 @@
   },
   "AF_LOT_LW_BOW_001": {
     "names": {
-      "en": "Long Bow"
+      "en": "Long Bow",
+      "fr": "Arc long"
     },
     "slug": "long-bow",
     "stats": {
@@ -6649,7 +6992,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -6670,7 +7014,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -6691,7 +7036,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -6797,12 +7143,16 @@
     "rarity": "R",
     "image": "lapswpn_bow_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_BOW_002": {
     "names": {
-      "en": "Great Bow"
+      "en": "Great Bow",
+      "fr": "Grand arc"
     },
     "slug": "great-bow",
     "stats": {
@@ -6836,7 +7186,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -6857,7 +7208,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -6878,7 +7230,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -6984,12 +7337,16 @@
     "rarity": "SR",
     "image": "lapswpn_bow_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_BOW_003": {
     "names": {
-      "en": "Rune Bow"
+      "en": "Rune Bow",
+      "fr": "Arc runique"
     },
     "slug": "rune-bow",
     "stats": {
@@ -7023,7 +7380,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -7044,7 +7402,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -7065,7 +7424,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -7171,12 +7531,16 @@
     "rarity": "MR",
     "image": "lapswpn_bow_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_GUN_000": {
     "names": {
-      "en": "Altair"
+      "en": "Altair",
+      "fr": "Altaïr"
     },
     "slug": "altair",
     "stats": {
@@ -7219,7 +7583,8 @@
   },
   "AF_LOT_LW_GUN_001": {
     "names": {
-      "en": "Capella"
+      "en": "Capella",
+      "fr": "Capella"
     },
     "slug": "capella",
     "stats": {
@@ -7249,7 +7614,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -7270,7 +7636,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -7291,7 +7658,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -7397,12 +7765,16 @@
     "rarity": "R",
     "image": "lapswpn_gun_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_GUN_002": {
     "names": {
-      "en": "Vega"
+      "en": "Vega",
+      "fr": "Véga"
     },
     "slug": "vega",
     "stats": {
@@ -7432,7 +7804,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -7453,7 +7826,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -7474,7 +7848,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -7580,12 +7955,16 @@
     "rarity": "SR",
     "image": "lapswpn_gun_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_GUN_003": {
     "names": {
-      "en": "Ras Algethi"
+      "en": "Ras Algethi",
+      "fr": "Ras Algethi"
     },
     "slug": "ras-algethi",
     "stats": {
@@ -7619,7 +7998,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -7640,7 +8020,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -7661,7 +8042,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -7767,12 +8149,16 @@
     "rarity": "MR",
     "image": "lapswpn_gun_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_ROD_000": {
     "names": {
-      "en": "Staff"
+      "en": "Staff",
+      "fr": "Bâton"
     },
     "slug": "staff",
     "stats": {
@@ -7811,7 +8197,8 @@
   },
   "AF_LW_ROD_001": {
     "names": {
-      "en": "Rod"
+      "en": "Rod",
+      "fr": "Sceptre"
     },
     "slug": "rod",
     "stats": {
@@ -7850,7 +8237,8 @@
   },
   "AF_LOT_LW_ROD_002": {
     "names": {
-      "en": "Iron Rod"
+      "en": "Iron Rod",
+      "fr": "Sceptre en fer"
     },
     "slug": "iron-rod",
     "stats": {
@@ -7880,7 +8268,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -7901,7 +8290,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -7922,7 +8312,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -8028,12 +8419,16 @@
     "rarity": "R",
     "image": "lapswpn_rod_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_ROD_004": {
     "names": {
-      "en": "Healing Staff"
+      "en": "Healing Staff",
+      "fr": "Bâton de soin"
     },
     "slug": "healing-staff",
     "stats": {
@@ -8063,7 +8458,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -8084,7 +8480,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -8105,7 +8502,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -8129,7 +8527,8 @@
       [
         {
           "names": {
-            "en": "Cura"
+            "en": "Cura",
+            "fr": "Soin +"
           },
           "dataId": "SK_LW_ROD_004_5",
           "effects": [
@@ -8183,7 +8582,8 @@
         },
         {
           "names": {
-            "en": "Cura"
+            "en": "Cura",
+            "fr": "Soin +"
           },
           "dataId": "SK_LW_ROD_004_5",
           "effects": [
@@ -8251,7 +8651,8 @@
         },
         {
           "names": {
-            "en": "Cura"
+            "en": "Cura",
+            "fr": "Soin +"
           },
           "dataId": "SK_LW_ROD_004_5",
           "effects": [
@@ -8319,7 +8720,8 @@
         },
         {
           "names": {
-            "en": "Cura"
+            "en": "Cura",
+            "fr": "Soin +"
           },
           "dataId": "SK_LW_ROD_004_5",
           "effects": [
@@ -8387,7 +8789,8 @@
         },
         {
           "names": {
-            "en": "Cura"
+            "en": "Cura",
+            "fr": "Soin +"
           },
           "dataId": "SK_LW_ROD_004_5",
           "effects": [
@@ -8455,7 +8858,8 @@
         },
         {
           "names": {
-            "en": "Cura"
+            "en": "Cura",
+            "fr": "Soin +"
           },
           "dataId": "SK_LW_ROD_004_5",
           "effects": [
@@ -8510,12 +8914,16 @@
     "rarity": "SR",
     "image": "lapswpn_rod_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_ROD_005": {
     "names": {
-      "en": "Platinum Rod"
+      "en": "Platinum Rod",
+      "fr": "Sceptre de platine"
     },
     "slug": "platinum-rod",
     "stats": {
@@ -8549,7 +8957,8 @@
     "grows": {
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -8570,7 +8979,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -8591,7 +9001,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -8697,12 +9108,16 @@
     "rarity": "MR",
     "image": "lapswpn_rod_005",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_ROD_007": {
     "names": {
-      "en": "Sage's Staff"
+      "en": "Sage's Staff",
+      "fr": "Bâton du sage"
     },
     "slug": "sages-staff",
     "stats": {
@@ -8732,7 +9147,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -8753,7 +9169,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -8774,7 +9191,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -8880,12 +9298,16 @@
     "rarity": "UR",
     "image": "lapswpn_rod_007",
     "acquisition": {
-      "type": "Arena Medal Exchange Shop"
+      "type": {
+        "en": "Arena Medal Exchange Shop",
+        "fr": "Boutique d'échange des médailles d'arène"
+      }
     }
   },
   "AF_LW_MAC_000": {
     "names": {
-      "en": "Bronze Mace"
+      "en": "Bronze Mace",
+      "fr": "Masse en bronze"
     },
     "slug": "bronze-mace",
     "stats": {
@@ -8924,7 +9346,8 @@
   },
   "AF_LOT_LW_MAC_001": {
     "names": {
-      "en": "Iron Mace"
+      "en": "Iron Mace",
+      "fr": "Masse en fer"
     },
     "slug": "iron-mace",
     "stats": {
@@ -8954,7 +9377,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -8975,7 +9399,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -8996,7 +9421,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -9102,12 +9528,16 @@
     "rarity": "R",
     "image": "lapswpn_mac_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_MAC_002": {
     "names": {
-      "en": "Mythril Mace"
+      "en": "Mythril Mace",
+      "fr": "Masse en mithril"
     },
     "slug": "mythril-mace",
     "stats": {
@@ -9141,7 +9571,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -9162,7 +9593,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -9183,7 +9615,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -9289,12 +9722,16 @@
     "rarity": "SR",
     "image": "lapswpn_mac_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_MAC_003": {
     "names": {
-      "en": "Platinum Mace"
+      "en": "Platinum Mace",
+      "fr": "Masse de platine"
     },
     "slug": "platinum-mace",
     "stats": {
@@ -9328,7 +9765,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -9349,7 +9787,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -9370,7 +9809,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -9476,12 +9916,16 @@
     "rarity": "MR",
     "image": "lapswpn_mac_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_AXE_000": {
     "names": {
-      "en": "Battle Axe"
+      "en": "Battle Axe",
+      "fr": "Hache de combat"
     },
     "slug": "battle-axe",
     "stats": {
@@ -9524,7 +9968,8 @@
   },
   "AF_LOT_LW_AXE_001": {
     "names": {
-      "en": "Ogrekiller"
+      "en": "Ogrekiller",
+      "fr": "Tue-ogres"
     },
     "slug": "ogrekiller",
     "stats": {
@@ -9558,7 +10003,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -9579,7 +10025,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -9600,7 +10047,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -9625,7 +10073,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -9643,7 +10092,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -9661,7 +10111,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -9679,7 +10130,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +6"
+            "en": "Slash ATK +6",
+            "fr": "Att tranchante +6"
           },
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
@@ -9697,7 +10149,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +12"
+            "en": "Slash ATK +12",
+            "fr": "Att tranchante +12"
           },
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
@@ -9716,12 +10169,16 @@
     "rarity": "R",
     "image": "lapswpn_axe_001",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_AXE_002": {
     "names": {
-      "en": "Mythril Axe"
+      "en": "Mythril Axe",
+      "fr": "Hache en mithril"
     },
     "slug": "mythril-axe",
     "stats": {
@@ -9755,7 +10212,8 @@
     "grows": {
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -9776,7 +10234,8 @@
       },
       "AFGROW_MAG_50": {
         "names": {
-          "en": "Magic"
+          "en": "Magic",
+          "fr": "Magie"
         },
         "curve": {
           "undefined": 1,
@@ -9797,7 +10256,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -9822,7 +10282,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -9840,7 +10301,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -9858,7 +10320,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -9876,7 +10339,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +7"
+            "en": "Slash ATK +7",
+            "fr": "Att tranchante +7"
           },
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
@@ -9894,7 +10358,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +13"
+            "en": "Slash ATK +13",
+            "fr": "Att tranchante +13"
           },
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
@@ -9913,12 +10378,16 @@
     "rarity": "SR",
     "image": "lapswpn_axe_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_AXE_003": {
     "names": {
-      "en": "Golden Axe"
+      "en": "Golden Axe",
+      "fr": "Hache en or"
     },
     "slug": "golden-axe",
     "stats": {
@@ -9952,7 +10421,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -9973,7 +10443,8 @@
       },
       "AFGROW_ASS_50": {
         "names": {
-          "en": "Assault"
+          "en": "Assault",
+          "fr": "Assaut"
         },
         "curve": {
           "undefined": 1,
@@ -9994,7 +10465,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -10019,7 +10491,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2"
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
           },
           "dataId": "SK_LW_SLASH_1",
           "effects": [
@@ -10037,7 +10510,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +3"
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
           },
           "dataId": "SK_LW_SLASH_2",
           "effects": [
@@ -10055,7 +10529,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +5"
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
           },
           "dataId": "SK_LW_SLASH_3",
           "effects": [
@@ -10073,7 +10548,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +8"
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
           },
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
@@ -10091,7 +10567,8 @@
       [
         {
           "names": {
-            "en": "Slash ATK +15"
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
           },
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
@@ -10110,12 +10587,16 @@
     "rarity": "MR",
     "image": "lapswpn_axe_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_SHI_000": {
     "names": {
-      "en": "Standard Shield"
+      "en": "Standard Shield",
+      "fr": "Bouclier ordinaire"
     },
     "slug": "standard-shield",
     "stats": {},
@@ -10133,7 +10614,8 @@
   },
   "AF_LW_ARM_001": {
     "names": {
-      "en": "Leather Plate"
+      "en": "Leather Plate",
+      "fr": "Cuirasse"
     },
     "slug": "leather-plate",
     "stats": {
@@ -10168,7 +10650,8 @@
   },
   "AF_LOT_LW_ARM_002": {
     "names": {
-      "en": "Iron Plate"
+      "en": "Iron Plate",
+      "fr": "Plates en fer"
     },
     "slug": "iron-plate",
     "stats": {
@@ -10190,7 +10673,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -10211,7 +10695,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -10317,12 +10802,16 @@
     "rarity": "R",
     "image": "lapswpn_arm_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_ARM_003": {
     "names": {
-      "en": "Mythril Armor"
+      "en": "Mythril Armor",
+      "fr": "Armure en mithril"
     },
     "slug": "mythril-armor",
     "stats": {
@@ -10344,7 +10833,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -10365,7 +10855,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -10386,7 +10877,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -10492,12 +10984,16 @@
     "rarity": "SR",
     "image": "lapswpn_arm_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_ARM_004": {
     "names": {
-      "en": "Golden Armor"
+      "en": "Golden Armor",
+      "fr": "Armure d'or"
     },
     "slug": "golden-armor",
     "stats": {
@@ -10531,7 +11027,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -10552,7 +11049,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -10573,7 +11071,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -10679,12 +11178,16 @@
     "rarity": "MR",
     "image": "lapswpn_arm_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_ARM_005": {
     "names": {
-      "en": "Platinum Armor"
+      "en": "Platinum Armor",
+      "fr": "Armure de platine"
     },
     "slug": "platinum-armor",
     "stats": {
@@ -10714,7 +11217,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -10735,7 +11239,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -10756,7 +11261,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -10862,12 +11368,16 @@
     "rarity": "UR",
     "image": "lapswpn_arm_005",
     "acquisition": {
-      "type": "PVP Medal Exchange Shop"
+      "type": {
+        "en": "PVP Medal Exchange Shop",
+        "fr": "Boutique d'échange des médailles de JcJ"
+      }
     }
   },
   "AF_LW_HLM_001": {
     "names": {
-      "en": "Bronze Helm"
+      "en": "Bronze Helm",
+      "fr": "Casque en bronze"
     },
     "slug": "bronze-helm",
     "stats": {
@@ -10902,7 +11412,8 @@
   },
   "AF_LOT_LW_HLM_002": {
     "names": {
-      "en": "Iron Helm"
+      "en": "Iron Helm",
+      "fr": "Casque en fer"
     },
     "slug": "iron-helm",
     "stats": {
@@ -10924,7 +11435,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -10945,7 +11457,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -11051,12 +11564,16 @@
     "rarity": "R",
     "image": "lapswpn_hlm_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_HLM_003": {
     "names": {
-      "en": "Mythril Helm"
+      "en": "Mythril Helm",
+      "fr": "Casque en mithril"
     },
     "slug": "mythril-helm",
     "stats": {
@@ -11078,7 +11595,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -11099,7 +11617,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -11120,7 +11639,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -11226,12 +11746,16 @@
     "rarity": "SR",
     "image": "lapswpn_hlm_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_HLM_004": {
     "names": {
-      "en": "Golden Helm"
+      "en": "Golden Helm",
+      "fr": "Casque en or"
     },
     "slug": "golden-helm",
     "stats": {
@@ -11257,7 +11781,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -11278,7 +11803,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -11299,7 +11825,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -11405,12 +11932,16 @@
     "rarity": "MR",
     "image": "lapswpn_hlm_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_HAT_001": {
     "names": {
-      "en": "Leather Hat"
+      "en": "Leather Hat",
+      "fr": "Chapeau en cuir"
     },
     "slug": "leather-hat",
     "stats": {
@@ -11445,7 +11976,8 @@
   },
   "AF_LOT_LW_HAT_002": {
     "names": {
-      "en": "Wizard's Hat"
+      "en": "Wizard's Hat",
+      "fr": "Chapeau de sorcier"
     },
     "slug": "wizards-hat",
     "stats": {
@@ -11475,7 +12007,8 @@
     "grows": {
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -11496,7 +12029,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -11602,12 +12136,16 @@
     "rarity": "R",
     "image": "lapswpn_hat_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_HAT_003": {
     "names": {
-      "en": "Circlet"
+      "en": "Circlet",
+      "fr": "Diadème"
     },
     "slug": "circlet",
     "stats": {
@@ -11637,7 +12175,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -11658,7 +12197,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -11679,7 +12219,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -11785,12 +12326,16 @@
     "rarity": "SR",
     "image": "lapswpn_hat_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_HAT_004": {
     "names": {
-      "en": "Sage's Hat"
+      "en": "Sage's Hat",
+      "fr": "Chapeau de sage"
     },
     "slug": "sages-hat",
     "stats": {
@@ -11820,7 +12365,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -11841,7 +12387,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -11862,7 +12409,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -11968,12 +12516,16 @@
     "rarity": "MR",
     "image": "lapswpn_hat_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_CLT_001": {
     "names": {
-      "en": "Leather Clothing"
+      "en": "Leather Clothing",
+      "fr": "Chemise en cuir"
     },
     "slug": "leather-clothing",
     "stats": {
@@ -12008,7 +12560,8 @@
   },
   "AF_LOT_LW_CLT_002": {
     "names": {
-      "en": "Scholar Robe"
+      "en": "Scholar Robe",
+      "fr": "Robe d'érudit"
     },
     "slug": "scholar-robe",
     "stats": {
@@ -12034,7 +12587,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -12055,7 +12609,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -12076,7 +12631,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -12182,12 +12738,16 @@
     "rarity": "R",
     "image": "lapswpn_clt_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_CLT_003": {
     "names": {
-      "en": "Mirage Vest"
+      "en": "Mirage Vest",
+      "fr": "Gilet mirage"
     },
     "slug": "mirage-vest",
     "stats": {
@@ -12213,7 +12773,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -12234,7 +12795,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -12255,7 +12817,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -12361,12 +12924,16 @@
     "rarity": "SR",
     "image": "lapswpn_clt_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_CLT_004": {
     "names": {
-      "en": "Smart Coat"
+      "en": "Smart Coat",
+      "fr": "Manteau perspicace"
     },
     "slug": "smart-coat",
     "stats": {
@@ -12392,7 +12959,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -12413,7 +12981,8 @@
       },
       "AFGROW_SLD_50": {
         "names": {
-          "en": "Shield"
+          "en": "Shield",
+          "fr": "Bouclier"
         },
         "curve": {
           "undefined": 1,
@@ -12434,7 +13003,8 @@
       },
       "AFGROW_BAR_50": {
         "names": {
-          "en": "Barrier"
+          "en": "Barrier",
+          "fr": "Barrière"
         },
         "curve": {
           "undefined": 1,
@@ -12540,12 +13110,16 @@
     "rarity": "MR",
     "image": "lapswpn_clt_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_RNG_001": {
     "names": {
-      "en": "Rhinestone Ring"
+      "en": "Rhinestone Ring",
+      "fr": "Anneau Rhinopierre"
     },
     "slug": "rhinestone-ring",
     "stats": {
@@ -12581,7 +13155,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_001_1",
           "effects": [
@@ -12597,7 +13172,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_001_5",
           "effects": [
@@ -12621,7 +13197,8 @@
   },
   "AF_LOT_LW_RNG_002": {
     "names": {
-      "en": "Hero's Ring"
+      "en": "Hero's Ring",
+      "fr": "Bague de héros"
     },
     "slug": "heros-ring",
     "stats": {
@@ -12655,7 +13232,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -12676,7 +13254,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -12697,7 +13276,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -12721,7 +13301,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_1",
           "effects": [
@@ -12737,7 +13318,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_5",
           "effects": [
@@ -12755,7 +13337,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_1",
           "effects": [
@@ -12785,7 +13368,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_5",
           "effects": [
@@ -12803,7 +13387,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_1",
           "effects": [
@@ -12833,7 +13418,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_5",
           "effects": [
@@ -12851,7 +13437,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_1",
           "effects": [
@@ -12881,7 +13468,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_5",
           "effects": [
@@ -12899,7 +13487,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_1",
           "effects": [
@@ -12929,7 +13518,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_5",
           "effects": [
@@ -12947,7 +13537,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_1",
           "effects": [
@@ -12977,7 +13568,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_002_5",
           "effects": [
@@ -12996,12 +13588,16 @@
     "rarity": "R",
     "image": "lapswpn_rng_002",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_RNG_003": {
     "names": {
-      "en": "Fairy Ring"
+      "en": "Fairy Ring",
+      "fr": "Anneau de fée"
     },
     "slug": "fairy-ring",
     "stats": {
@@ -13035,7 +13631,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -13056,7 +13653,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -13077,7 +13675,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -13101,7 +13700,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
@@ -13117,7 +13717,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
@@ -13135,7 +13736,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
@@ -13165,7 +13767,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
@@ -13183,7 +13786,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
@@ -13213,7 +13817,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
@@ -13231,7 +13836,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
@@ -13261,7 +13867,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
@@ -13279,7 +13886,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
@@ -13309,7 +13917,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
@@ -13327,7 +13936,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
@@ -13357,7 +13967,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
@@ -13376,12 +13987,16 @@
     "rarity": "SR",
     "image": "lapswpn_rng_003",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_RNG_004": {
     "names": {
-      "en": "Jeweled Ring"
+      "en": "Jeweled Ring",
+      "fr": "Marquise"
     },
     "slug": "jeweled-ring",
     "stats": {
@@ -13415,7 +14030,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -13436,7 +14052,8 @@
       },
       "AFGROW_AIM_50": {
         "names": {
-          "en": "Aim"
+          "en": "Aim",
+          "fr": "Visée"
         },
         "curve": {
           "undefined": 1,
@@ -13457,7 +14074,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -13481,7 +14099,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
@@ -13497,7 +14116,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
@@ -13515,7 +14135,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
@@ -13545,7 +14166,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
@@ -13563,7 +14185,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
@@ -13593,7 +14216,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
@@ -13611,7 +14235,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
@@ -13641,7 +14266,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
@@ -13659,7 +14285,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
@@ -13689,7 +14316,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
@@ -13707,7 +14335,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
@@ -13737,7 +14366,8 @@
         },
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
@@ -13756,12 +14386,16 @@
     "rarity": "MR",
     "image": "lapswpn_rng_004",
     "acquisition": {
-      "type": "General Shop"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_FTW_001": {
     "names": {
-      "en": "Hermes Sandals"
+      "en": "Hermes Sandals",
+      "fr": "Sandales d'Hermès"
     },
     "slug": "hermes-sandals",
     "stats": {
@@ -13795,7 +14429,8 @@
     "grows": {
       "AFGROW_VIT_50": {
         "names": {
-          "en": "Vital"
+          "en": "Vital",
+          "fr": "Vitalité"
         },
         "curve": {
           "undefined": 1,
@@ -13816,7 +14451,8 @@
       },
       "AFGROW_DOD_50": {
         "names": {
-          "en": "Dodge"
+          "en": "Dodge",
+          "fr": "Esquive"
         },
         "curve": {
           "undefined": 1,
@@ -13837,7 +14473,8 @@
       },
       "AFGROW_CRI_50": {
         "names": {
-          "en": "Critical"
+          "en": "Critical",
+          "fr": "Coups critiques"
         },
         "curve": {
           "undefined": 1,
@@ -13861,7 +14498,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
@@ -13879,7 +14517,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
@@ -13911,7 +14550,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
@@ -13943,7 +14583,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
@@ -13975,7 +14616,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
@@ -14007,7 +14649,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
@@ -14040,12 +14683,16 @@
     "rarity": "UR",
     "image": "lapswpn_ftw_001",
     "acquisition": {
-      "type": "PVP Medal Exchange Shop"
+      "type": {
+        "en": "PVP Medal Exchange Shop",
+        "fr": "Boutique d'échange des médailles de JcJ"
+      }
     }
   },
   "AF_LW_RNG_006": {
     "names": {
-      "en": "Three Stars"
+      "en": "Three Stars",
+      "fr": "Tristella"
     },
     "slug": "three-stars",
     "stats": {
@@ -14096,7 +14743,8 @@
   },
   "AF_LW_ARW_001": {
     "names": {
-      "en": "Defense Bracer"
+      "en": "Defense Bracer",
+      "fr": "Brassard de protection"
     },
     "slug": "defense-bracer",
     "stats": {
@@ -14147,7 +14795,8 @@
   },
   "AF_LW_ARW_003": {
     "names": {
-      "en": "Thief Bracer"
+      "en": "Thief Bracer",
+      "fr": "Brassard de bandit"
     },
     "slug": "thief-bracer",
     "stats": {
@@ -14198,7 +14847,8 @@
   },
   "AF_LW_CLK_001": {
     "names": {
-      "en": "Elf's Cloak"
+      "en": "Elf's Cloak",
+      "fr": "Tunique d'Elfe"
     },
     "slug": "elfs-cloak",
     "stats": {
@@ -14249,7 +14899,8 @@
   },
   "AF_LW_ACC_001": {
     "names": {
-      "en": "Ribbon"
+      "en": "Ribbon",
+      "fr": "Ruban"
     },
     "slug": "ribbon",
     "stats": {
@@ -14300,7 +14951,8 @@
   },
   "AF_LW_ACC_002": {
     "names": {
-      "en": "Soul of Thamasa"
+      "en": "Soul of Thamasa",
+      "fr": "Âme de Thamasa"
     },
     "slug": "soul-of-thamasa",
     "stats": {
@@ -14351,7 +15003,8 @@
   },
   "AF_SWO_LW_LILS_1": {
     "names": {
-      "en": "Flame Blade"
+      "en": "Flame Blade",
+      "fr": "Lame de feu"
     },
     "slug": "flame-blade",
     "stats": {
@@ -14375,7 +15028,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_SWO_LW_LILS_1_1",
           "effects": [
@@ -14400,7 +15054,8 @@
   },
   "AF_BSW_LW_SZRT_1": {
     "names": {
-      "en": "Skycutter Greatsword"
+      "en": "Skycutter Greatsword",
+      "fr": "Fend-les-cieux"
     },
     "slug": "skycutter-greatsword",
     "stats": {
@@ -14424,7 +15079,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_BSW_LW_SZRT_1_1",
           "effects": [
@@ -14451,7 +15107,8 @@
   },
   "AF_KAT_LW_OOOO_1": {
     "names": {
-      "en": "Lightning Katana"
+      "en": "Lightning Katana",
+      "fr": "Katana de foudre"
     },
     "slug": "lightning-katana",
     "stats": {
@@ -14479,7 +15136,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_KAT_LW_OOOO_1_1",
           "effects": [
@@ -14505,7 +15163,8 @@
   },
   "AF_FIS_LW_MRLK_1": {
     "names": {
-      "en": "Icebreaker Fists"
+      "en": "Icebreaker Fists",
+      "fr": "Poings brise-glace"
     },
     "slug": "icebreaker-fists",
     "stats": {
@@ -14529,7 +15188,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_FIS_LW_MRLK_1_1",
           "effects": [
@@ -14555,7 +15215,8 @@
   },
   "AF_SPE_LW_RAMD_1": {
     "names": {
-      "en": "Astrologer's Lance"
+      "en": "Astrologer's Lance",
+      "fr": "Lance de l'astrologue"
     },
     "slug": "astrologers-lance",
     "stats": {
@@ -14579,7 +15240,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_SPE_LW_RAMD_1_1",
           "effects": [
@@ -14604,7 +15266,8 @@
   },
   "AF_SPE_LW_LRNZ_1": {
     "names": {
-      "en": "Dragonslayer Lance"
+      "en": "Dragonslayer Lance",
+      "fr": "Lance tueuse de dragons"
     },
     "slug": "dragonslayer-lance",
     "stats": {
@@ -14628,7 +15291,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_SPE_LW_LRNZ_1_1",
           "effects": [
@@ -14654,7 +15318,8 @@
   },
   "AF_DAG_LW_VSTR_1": {
     "names": {
-      "en": "Bloodsoaked Dagger"
+      "en": "Bloodsoaked Dagger",
+      "fr": "Dague sanglante"
     },
     "slug": "bloodsoaked-dagger",
     "stats": {
@@ -14678,7 +15343,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_DAG_LW_VSTR_1_1",
           "effects": [
@@ -14704,7 +15370,8 @@
   },
   "AF_BOW_LW_CLEY_1": {
     "names": {
-      "en": "Glacier Bow"
+      "en": "Glacier Bow",
+      "fr": "Arc glacial"
     },
     "slug": "glacier-bow",
     "stats": {
@@ -14728,7 +15395,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_BOW_LW_CLEY_1_1",
           "effects": [
@@ -14753,7 +15421,8 @@
   },
   "AF_GUN_LW_RIRY_1": {
     "names": {
-      "en": "Moonless Gun"
+      "en": "Moonless Gun",
+      "fr": "Lune nouvelle"
     },
     "slug": "moonless-gun",
     "stats": {
@@ -14777,7 +15446,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_GUN_LW_RIRY_1_1",
           "effects": [
@@ -14804,7 +15474,8 @@
   },
   "AF_ROD_LW_HLNA_1": {
     "names": {
-      "en": "Guardian's Staff"
+      "en": "Guardian's Staff",
+      "fr": "Bâton du gardien"
     },
     "slug": "guardians-staff",
     "stats": {
@@ -14828,7 +15499,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ROD_LW_HLNA_1_1",
           "effects": [
@@ -14853,7 +15525,8 @@
   },
   "AF_ROD_LW_MGRT_1": {
     "names": {
-      "en": "Magic Baton"
+      "en": "Magic Baton",
+      "fr": "Bâton magique"
     },
     "slug": "magic-baton",
     "stats": {
@@ -14877,7 +15550,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ROD_LW_MGRT_1_1",
           "effects": [
@@ -14902,7 +15576,8 @@
   },
   "AF_ROD_LW_PRAY_1": {
     "names": {
-      "en": "Magicite Staff"
+      "en": "Magicite Staff",
+      "fr": "Bâton de magilithe"
     },
     "slug": "magicite-staff",
     "stats": {
@@ -14926,7 +15601,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ROD_LW_PRAY_1_1",
           "effects": [
@@ -14951,7 +15627,8 @@
   },
   "AF_MAC_LW_KADI_1": {
     "names": {
-      "en": "Mace of Affection"
+      "en": "Mace of Affection",
+      "fr": "Masse de la tendresse"
     },
     "slug": "mace-of-affection",
     "stats": {
@@ -14975,7 +15652,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_MAC_LW_KADI_1_1",
           "effects": [
@@ -15000,7 +15678,8 @@
   },
   "AF_BOW_LW_FINA_1": {
     "names": {
-      "en": "Reincarnation"
+      "en": "Reincarnation",
+      "fr": "Réincarnation"
     },
     "slug": "reincarnation",
     "stats": {
@@ -15028,7 +15707,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_BOW_LW_FINA_1_1",
           "effects": [
@@ -15053,7 +15733,8 @@
   },
   "AF_NKN_LW_SDLX_1": {
     "names": {
-      "en": "Shadow Ninja Blade"
+      "en": "Shadow Ninja Blade",
+      "fr": "Serpe arrondie"
     },
     "slug": "shadow-ninja-blade",
     "stats": {
@@ -15081,7 +15762,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_NKN_LW_SDLX_1_1",
           "effects": [
@@ -15108,7 +15790,8 @@
   },
   "AF_SHI_LW_ENBT_1": {
     "names": {
-      "en": "Solidus Shield"
+      "en": "Solidus Shield",
+      "fr": "Bouclier de Solidus"
     },
     "slug": "solidus-shield",
     "stats": {
@@ -15128,7 +15811,8 @@
       [
         {
           "names": {
-            "en": "Loyal Blitz"
+            "en": "Loyal Blitz",
+            "fr": "Éclair loyal"
           },
           "dataId": "SK_SHI_LW_ENBT_1_1",
           "effects": [
@@ -15170,7 +15854,8 @@
   },
   "AF_ARM_LW_STRN_1": {
     "names": {
-      "en": "Lion Armor"
+      "en": "Lion Armor",
+      "fr": "Armure du lion"
     },
     "slug": "lion-armor",
     "stats": {
@@ -15194,7 +15879,8 @@
       [
         {
           "names": {
-            "en": "Wall of Field"
+            "en": "Wall of Field",
+            "fr": "Mur de champ"
           },
           "dataId": "SK_ARM_LW_STRN_1_1",
           "effects": [
@@ -15231,7 +15917,8 @@
   },
   "AF_ARM_LW_ROBB_1": {
     "names": {
-      "en": "Glinting Armor"
+      "en": "Glinting Armor",
+      "fr": "Armure étincelante"
     },
     "slug": "glinting-armor",
     "stats": {
@@ -15251,7 +15938,8 @@
       [
         {
           "names": {
-            "en": "Keen Blade"
+            "en": "Keen Blade",
+            "fr": "Lame affûtée"
           },
           "dataId": "SK_ARM_LW_ROBB_1_1",
           "effects": [
@@ -15298,7 +15986,8 @@
   },
   "AF_ARM_LW_BYLO_1": {
     "names": {
-      "en": "Forest Armor"
+      "en": "Forest Armor",
+      "fr": "Armure forestière"
     },
     "slug": "forest-armor",
     "stats": {
@@ -15318,7 +16007,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_BYLO_1_1",
           "effects": [
@@ -15343,7 +16033,8 @@
   },
   "AF_ARM_LW_VRID_1": {
     "names": {
-      "en": "Robe of Alliance"
+      "en": "Robe of Alliance",
+      "fr": "Robe de l'alliance"
     },
     "slug": "robe-of-alliance",
     "stats": {
@@ -15367,7 +16058,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_VRID_1_1",
           "effects": [
@@ -15410,7 +16102,8 @@
   },
   "AF_ARM_LW_NAIA_1": {
     "names": {
-      "en": "Lunar Cape"
+      "en": "Lunar Cape",
+      "fr": "Cape lunaire"
     },
     "slug": "lunar-cape",
     "stats": {
@@ -15430,7 +16123,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_NAIA_1_1",
           "effects": [
@@ -15455,7 +16149,8 @@
   },
   "AF_CLT_LW_SEVR_1": {
     "names": {
-      "en": "Seeker's Wrap"
+      "en": "Seeker's Wrap",
+      "fr": "Châle du chercheur"
     },
     "slug": "seekers-wrap",
     "stats": {
@@ -15475,7 +16170,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_CLT_LW_SEVR_1_1",
           "effects": [
@@ -15500,7 +16196,8 @@
   },
   "AF_CLT_LW_SRJS_1": {
     "names": {
-      "en": "Snowfield Wrap"
+      "en": "Snowfield Wrap",
+      "fr": "Châle enneigé"
     },
     "slug": "snowfield-wrap",
     "stats": {
@@ -15520,7 +16217,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_SRJS_1_1",
           "effects": [
@@ -15545,7 +16243,8 @@
   },
   "AF_HAT_LW_AILN_1": {
     "names": {
-      "en": "Scanning Goggles"
+      "en": "Scanning Goggles",
+      "fr": "Lunettes d'analyse"
     },
     "slug": "scanning-goggles",
     "stats": {
@@ -15569,7 +16268,8 @@
       [
         {
           "names": {
-            "en": "Analysis"
+            "en": "Analysis",
+            "fr": "Analyse"
           },
           "dataId": "SK_HAT_LW_AILN_1_1",
           "effects": [
@@ -15630,7 +16330,8 @@
   },
   "AF_HAT_LW_MDNA_1": {
     "names": {
-      "en": "Kaleido Moon"
+      "en": "Kaleido Moon",
+      "fr": "Lune kaléidoscopique"
     },
     "slug": "kaleido-moon",
     "stats": {
@@ -15654,7 +16355,8 @@
       [
         {
           "names": {
-            "en": "Luna Verve"
+            "en": "Luna Verve",
+            "fr": "Verve lunaire"
           },
           "dataId": "SK_HAT_LW_MDNA_1_1",
           "effects": [
@@ -15709,7 +16411,8 @@
   },
   "AF_HAT_LW_UNII_1": {
     "names": {
-      "en": "Cap of Devotion"
+      "en": "Cap of Devotion",
+      "fr": "Bonnet de dévotion"
     },
     "slug": "cap-of-devotion",
     "stats": {
@@ -15733,7 +16436,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_UNII_1_1",
           "effects": [
@@ -15758,7 +16462,8 @@
   },
   "AF_HAT_LW_VADM_1": {
     "names": {
-      "en": "Rubeus Bandana"
+      "en": "Rubeus Bandana",
+      "fr": "Bandana de Rubeus"
     },
     "slug": "rubeus-bandana",
     "stats": {
@@ -15782,7 +16487,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_VADM_1_1",
           "effects": [
@@ -15807,7 +16513,8 @@
   },
   "AF_HAT_LW_PHBE_1": {
     "names": {
-      "en": "Chronal Cap"
+      "en": "Chronal Cap",
+      "fr": "Bonnet temporel"
     },
     "slug": "chronal-cap",
     "stats": {
@@ -15831,7 +16538,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_PHBE_1_1",
           "effects": [
@@ -15856,7 +16564,8 @@
   },
   "AF_HAT_LW_MICE_1": {
     "names": {
-      "en": "Magician's Cap"
+      "en": "Magician's Cap",
+      "fr": "Chapeau de magicien"
     },
     "slug": "magicians-cap",
     "stats": {
@@ -15888,7 +16597,8 @@
   },
   "AF_HAT_LW_MIIA_1": {
     "names": {
-      "en": "Shinobi's Bandana"
+      "en": "Shinobi's Bandana",
+      "fr": "Bandana de shinobi"
     },
     "slug": "shinobis-bandana",
     "stats": {
@@ -15920,7 +16630,8 @@
   },
   "AF_FTW_LW_AYKA_1": {
     "names": {
-      "en": "Sacred Step"
+      "en": "Sacred Step",
+      "fr": "Marche sacrée"
     },
     "slug": "sacred-step",
     "stats": {
@@ -15948,7 +16659,8 @@
       [
         {
           "names": {
-            "en": "Purify"
+            "en": "Purify",
+            "fr": "Pureté"
           },
           "dataId": "SK_FTW_LW_AYKA_1_1",
           "effects": [
@@ -16022,7 +16734,8 @@
   },
   "AF_ACC_LW_MACR_1": {
     "names": {
-      "en": "Steel Maiden's Necklace"
+      "en": "Steel Maiden's Necklace",
+      "fr": "Collier de la jeune fille d'acier"
     },
     "slug": "steel-maidens-necklace",
     "stats": {
@@ -16050,7 +16763,8 @@
       [
         {
           "names": {
-            "en": "Knight's Blessing"
+            "en": "Knight's Blessing",
+            "fr": "Adoubement"
           },
           "dataId": "SK_ACC_LW_MACR_1_1",
           "effects": [
@@ -16098,7 +16812,8 @@
   },
   "AF_CLK_LW_ELDE_1": {
     "names": {
-      "en": "Guardian's Mantle"
+      "en": "Guardian's Mantle",
+      "fr": "Cape du gardien"
     },
     "slug": "guardians-mantle",
     "stats": {
@@ -16118,7 +16833,8 @@
       [
         {
           "names": {
-            "en": "King's Command"
+            "en": "King's Command",
+            "fr": "Ordre du roi"
           },
           "dataId": "SK_CLK_LW_ELDE_1_1",
           "effects": [
@@ -16159,7 +16875,8 @@
   },
   "AF_ACC_LW_ZIZA_1": {
     "names": {
-      "en": "Illusory Bell"
+      "en": "Illusory Bell",
+      "fr": "Cloche psychophonique"
     },
     "slug": "illusory-bell",
     "stats": {
@@ -16187,7 +16904,8 @@
       [
         {
           "names": {
-            "en": "Revitalize"
+            "en": "Revitalize",
+            "fr": "Revitalise"
           },
           "dataId": "SK_ACC_LW_ZIZA_1_1",
           "effects": [
@@ -16224,7 +16942,8 @@
   },
   "AF_ACC_LW_FDRC_1": {
     "names": {
-      "en": "Victory Ribbon"
+      "en": "Victory Ribbon",
+      "fr": "Nœud victorieux"
     },
     "slug": "victory-ribbon",
     "stats": {
@@ -16248,7 +16967,8 @@
       [
         {
           "names": {
-            "en": "Tri-Protection"
+            "en": "Tri-Protection",
+            "fr": "Protection triple"
           },
           "dataId": "SK_ACC_LW_FDRC_1_1",
           "effects": [
@@ -16297,7 +17017,8 @@
   },
   "AF_ARM_LW_SCIA_1": {
     "names": {
-      "en": "Dragon Boots"
+      "en": "Dragon Boots",
+      "fr": "Bottes du dragon"
     },
     "slug": "dragon-boots",
     "stats": {
@@ -16321,7 +17042,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_SCIA_1_1",
           "effects": [
@@ -16346,7 +17068,8 @@
   },
   "AF_ARM_LW_MURM_1": {
     "names": {
-      "en": "Magicite Eye Mask"
+      "en": "Magicite Eye Mask",
+      "fr": "Cache-œil de magilithe"
     },
     "slug": "magicite-eye-mask",
     "stats": {
@@ -16370,7 +17093,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_MURM_1_1",
           "effects": [
@@ -16395,7 +17119,8 @@
   },
   "AF_HAT_LW_RYER_1": {
     "names": {
-      "en": "Pretty Hood"
+      "en": "Pretty Hood",
+      "fr": "Jolie capuche"
     },
     "slug": "pretty-hood",
     "stats": {
@@ -16419,7 +17144,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_LW_RYER_1_1",
           "effects": [
@@ -16444,7 +17170,8 @@
   },
   "AF_ACC_LW_RART_1": {
     "names": {
-      "en": "Fancy Ribbon"
+      "en": "Fancy Ribbon",
+      "fr": "Ruban raffiné"
     },
     "slug": "fancy-ribbon",
     "stats": {
@@ -16476,7 +17203,8 @@
   },
   "AF_ACC_LW_MONT_1": {
     "names": {
-      "en": "Lion Emblem"
+      "en": "Lion Emblem",
+      "fr": "Emblème du lion"
     },
     "slug": "lion-emblem",
     "stats": {
@@ -16500,7 +17228,8 @@
       [
         {
           "names": {
-            "en": "Rallying Cry"
+            "en": "Rallying Cry",
+            "fr": "Cri de ralliement"
           },
           "dataId": "SK_ACC_LW_MONT_1_1",
           "effects": [
@@ -16545,7 +17274,8 @@
   },
   "AF_ACC_LW_ZZAN_1": {
     "names": {
-      "en": "Bear Hood"
+      "en": "Bear Hood",
+      "fr": "Capuche ours"
     },
     "slug": "bear-hood",
     "stats": {
@@ -16577,7 +17307,8 @@
   },
   "AF_HLM_LW_GLMS_1": {
     "names": {
-      "en": "Helm of the Sworn"
+      "en": "Helm of the Sworn",
+      "fr": "Casque des Jurés"
     },
     "slug": "helm-of-the-sworn",
     "stats": {
@@ -16601,7 +17332,8 @@
       [
         {
           "names": {
-            "en": "Mystic Dash"
+            "en": "Mystic Dash",
+            "fr": "Vélocité mystique"
           },
           "dataId": "SK_HLM_LW_GLMS_1_1",
           "effects": [
@@ -16635,7 +17367,8 @@
   },
   "AF_CLT_FF14_TNCR_1": {
     "names": {
-      "en": "Bodyguard's Coat"
+      "en": "Bodyguard's Coat",
+      "fr": "Manteau de garde du corps"
     },
     "slug": "bodyguards-coat",
     "stats": {
@@ -16659,7 +17392,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ARM_FF14_TNCR_1_1",
           "effects": [
@@ -16684,7 +17418,8 @@
   },
   "AF_ROD_FF14_YSTL_1": {
     "names": {
-      "en": "Nightseeker"
+      "en": "Nightseeker",
+      "fr": "Quêteur de la nuit"
     },
     "slug": "nightseeker",
     "stats": {
@@ -16704,7 +17439,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_ROD_FF14_YSTL_1_1",
           "effects": [
@@ -16729,7 +17465,8 @@
   },
   "AF_BLT_LW_YERM_1": {
     "names": {
-      "en": "Herculean Waistcloth"
+      "en": "Herculean Waistcloth",
+      "fr": "Pagne herculéen"
     },
     "slug": "herculean-waistcloth",
     "stats": {
@@ -16753,7 +17490,8 @@
       [
         {
           "names": {
-            "en": "Bloodboil"
+            "en": "Bloodboil",
+            "fr": "Sang chaud"
           },
           "dataId": "SK_BLT_LW_YERM_1_1",
           "effects": [
@@ -16797,7 +17535,8 @@
   },
   "AF_SWO_LW_NASR_1": {
     "names": {
-      "en": "Guiding Blade"
+      "en": "Guiding Blade",
+      "fr": "Lame guide"
     },
     "slug": "guiding-blade",
     "stats": {
@@ -16844,7 +17583,8 @@
   },
   "AF_ACC_LW_ETRE_1": {
     "names": {
-      "en": "Boxer's Badge"
+      "en": "Boxer's Badge",
+      "fr": "Insigne du boxeur"
     },
     "slug": "boxers-badge",
     "stats": {
@@ -16876,7 +17616,8 @@
   },
   "AF_ARM_FFT_RAMZ_1": {
     "names": {
-      "en": "Ramza's Outfit"
+      "en": "Ramza's Outfit",
+      "fr": "Tenue de Ramza"
     },
     "slug": "ramzas-outfit",
     "stats": {
@@ -16900,7 +17641,8 @@
       [
         {
           "names": {
-            "en": "Entrust"
+            "en": "Entrust",
+            "fr": "Altruisme"
           },
           "dataId": "SK_ARM_FFT_RAMZ_1_1",
           "effects": [
@@ -16940,7 +17682,8 @@
   },
   "AF_SWO_FFT_GFGR_1": {
     "names": {
-      "en": "Vermilion"
+      "en": "Vermilion",
+      "fr": "Vermillon"
     },
     "slug": "vermilion",
     "stats": {
@@ -16964,7 +17707,8 @@
       [
         {
           "names": {
-            "en": ""
+            "en": "",
+            "fr": ""
           },
           "dataId": "SK_SWO_FFT_GFGR_1_1",
           "effects": [
@@ -16989,7 +17733,8 @@
   },
   "AF_ACC_FFT_ORND_1": {
     "names": {
-      "en": "Thunder God's Cape"
+      "en": "Thunder God's Cape",
+      "fr": "Cape du dieu-foudre"
     },
     "slug": "thunder-gods-cape",
     "stats": {
@@ -17013,7 +17758,8 @@
       [
         {
           "names": {
-            "en": "Bolt Barrage"
+            "en": "Bolt Barrage",
+            "fr": "Pluie électrique"
           },
           "dataId": "SK_ACC_FFT_ORND_1_1",
           "effects": [
@@ -17051,7 +17797,8 @@
   },
   "AF_SWO_LW_MONT_2": {
     "names": {
-      "en": "Lion Sword"
+      "en": "Lion Sword",
+      "fr": "Épée du lion"
     },
     "slug": "lion-sword",
     "stats": {
@@ -17090,7 +17837,8 @@
   },
   "AF_SWO_LW_ENBT_2": {
     "names": {
-      "en": "Solidus Sword"
+      "en": "Solidus Sword",
+      "fr": "Épée de Solidus"
     },
     "slug": "solidus-sword",
     "stats": {
@@ -17129,7 +17877,8 @@
   },
   "AF_SWO_LW_GLMS_2": {
     "names": {
-      "en": "Frost Blade"
+      "en": "Frost Blade",
+      "fr": "Lame du gel"
     },
     "slug": "frost-blade",
     "stats": {
@@ -17168,7 +17917,8 @@
   },
   "AF_BSW_LW_STRN_2": {
     "names": {
-      "en": "Lion Blade"
+      "en": "Lion Blade",
+      "fr": "Lame du lion"
     },
     "slug": "lion-blade",
     "stats": {
@@ -17207,7 +17957,8 @@
   },
   "AF_KAT_LW_ROBB_2": {
     "names": {
-      "en": "Glinting Katana"
+      "en": "Glinting Katana",
+      "fr": "Katana étincelant"
     },
     "slug": "glinting-katana",
     "stats": {
@@ -17246,7 +17997,8 @@
   },
   "AF_FIS_LW_ZIZA_2": {
     "names": {
-      "en": "Illusory Claw"
+      "en": "Illusory Claw",
+      "fr": "Griffe psychophonique"
     },
     "slug": "illusory-claw",
     "stats": {
@@ -17285,7 +18037,8 @@
   },
   "AF_SPE_LW_ELDE_2": {
     "names": {
-      "en": "Guardian's Spear"
+      "en": "Guardian's Spear",
+      "fr": "Lance du gardien"
     },
     "slug": "guardians-spear",
     "stats": {
@@ -17324,7 +18077,8 @@
   },
   "AF_SPE_LW_AILN_2": {
     "names": {
-      "en": "Artisan"
+      "en": "Artisan",
+      "fr": "Artisan"
     },
     "slug": "artisan",
     "stats": {
@@ -17363,7 +18117,8 @@
   },
   "AF_ROD_LW_MDNA_2": {
     "names": {
-      "en": "Lunar Eclipse Rod"
+      "en": "Lunar Eclipse Rod",
+      "fr": "Sceptre d'éclipse lunaire"
     },
     "slug": "lunar-eclipse-rod",
     "stats": {
@@ -17402,7 +18157,8 @@
   },
   "AF_ROD_LW_AYKA_2": {
     "names": {
-      "en": "Serapia's Staff"
+      "en": "Serapia's Staff",
+      "fr": "Bâton de Serapia"
     },
     "slug": "serapias-staff",
     "stats": {
@@ -17441,7 +18197,8 @@
   },
   "AF_MAC_LW_MACR_2": {
     "names": {
-      "en": "Steel Maiden's Mace"
+      "en": "Steel Maiden's Mace",
+      "fr": "Masse de la jeune fille d'acier"
     },
     "slug": "steel-maidens-mace",
     "stats": {
@@ -17480,7 +18237,8 @@
   },
   "AF_LW_SHI_001": {
     "names": {
-      "en": "Engelbert's Shield"
+      "en": "Engelbert's Shield",
+      "fr": "Bouclier d'Engelbert"
     },
     "slug": "engelberts-shield",
     "stats": {},
@@ -17498,7 +18256,8 @@
   },
   "AF_SWO_FFT_RAMZ_2": {
     "names": {
-      "en": "Integral Blade"
+      "en": "Integral Blade",
+      "fr": "Lame du Juste"
     },
     "slug": "integral-blade",
     "stats": {
@@ -17537,7 +18296,8 @@
   },
   "AF_SWO_FFT_ORND_2": {
     "names": {
-      "en": "Caliburn"
+      "en": "Caliburn",
+      "fr": "Calibourne"
     },
     "slug": "caliburn",
     "stats": {

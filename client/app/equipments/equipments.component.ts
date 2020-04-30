@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EquipmentService } from '../services/equipment.service';
 
@@ -15,13 +15,19 @@ export class EquipmentsComponent implements OnInit {
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService
-  ) {}
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.translateEquipments();
+    });
+  }
 
   ngOnInit(): void {
     this.getEquipments();
   }
 
   private getEquipments(): void {
+    let lang = this.translateService.currentLang
+
     this.equipments = this.equipmentService.getEquipmentsForListing();
 
     Object.keys(this.equipments).forEach(rarity => {
@@ -35,7 +41,20 @@ export class EquipmentsComponent implements OnInit {
           this.formattedEquipments[rarity][tableIndex] = [];
         }
 
+        equipment.name = equipment.names[lang]
         this.formattedEquipments[rarity][tableIndex].push(equipment)
+      });
+    });
+  }
+
+  private translateEquipments() {
+    let lang = this.translateService.currentLang
+
+    Object.keys(this.formattedEquipments).forEach(rarity => {
+      this.formattedEquipments[rarity].forEach(line => {
+        line.forEach(equipment => {
+          equipment.name = equipment.names[lang]
+        });
       });
     });
   }

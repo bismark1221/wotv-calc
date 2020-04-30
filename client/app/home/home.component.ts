@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service'
 import { EsperService } from '../services/esper.service'
@@ -37,6 +37,11 @@ export class HomeComponent {
   ) {
     this.getTranslation();
     this.getUpdate();
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.getTranslation();
+      this.getUpdate();
+    });
   }
 
   private getTranslation() {
@@ -50,6 +55,7 @@ export class HomeComponent {
   }
 
   private getUpdate() {
+    let lang = this.translateService.currentLang
 
     this.updated.forEach((update, updateIndex) => {
       this.updatedFormatted[updateIndex] = []
@@ -65,7 +71,7 @@ export class HomeComponent {
         this.updatedFormatted[updateIndex][tableIndex].push({
           type: item.type,
           slug: dataItem.slug,
-          name: dataItem.names.en,
+          name: dataItem.names[lang],
           image: dataItem.image,
           element: dataItem.element,
           rarity: item.type == "esper" ? this.esperService.findRarity(dataItem) : dataItem.rarity

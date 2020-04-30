@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
 
@@ -15,13 +15,18 @@ export class EspersComponent implements OnInit {
   constructor(
     private esperService: EsperService,
     private translateService: TranslateService
-  ) {}
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.translateEspers();
+    });
+  }
 
   ngOnInit(): void {
     this.getEspers();
   }
 
   private getEspers(): void {
+    let lang = this.translateService.currentLang
     this.espers = this.esperService.getEspersForListing();
 
     Object.keys(this.espers).forEach(rarity => {
@@ -35,7 +40,20 @@ export class EspersComponent implements OnInit {
           this.formattedEspers[rarity][tableIndex] = [];
         }
 
+        esper.name = esper.names[lang]
         this.formattedEspers[rarity][tableIndex].push(esper)
+      });
+    });
+  }
+
+  private translateEspers() {
+    let lang = this.translateService.currentLang
+
+    Object.keys(this.formattedEspers).forEach(rarity => {
+      this.formattedEspers[rarity].forEach(line => {
+        line.forEach(esper => {
+          esper.name = esper.names[lang]
+        });
       });
     });
   }
