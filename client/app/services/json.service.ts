@@ -4,14 +4,14 @@ import { EquipmentService } from './equipment.service'
 import {Slug } from 'ng2-slugify';
 
 // Translations
-import { default as FR_UnitName } from       '../../../../wotv-assets/global/localize/fr/text/masterparam/unitname.json';
-import { default as FR_SkillName } from      '../../../../wotv-assets/global/localize/fr/text/masterparam/skillname.json';
-import { default as FR_BuffName } from       '../../../../wotv-assets/global/localize/fr/text/masterparam/buffname.json';
-import { default as FR_JobName } from        '../../../../wotv-assets/global/localize/fr/text/masterparam/jobname.json';
-import { default as FR_ArtifactName } from   '../../../../wotv-assets/global/localize/fr/text/masterparam/artifactname.json';
-import { default as FR_VisionCardName } from '../../../../wotv-assets/global/localize/fr/text/masterparam/visioncardname.json';
-import { default as FR_ItemOther } from      '../../../../wotv-assets/global/localize/fr/text/masterparam/itemother.json';
-import { default as FR_ArtifactGrow } from   '../../../../wotv-assets/global/localize/fr/text/masterparam/artifactgrow.json';
+import { default as FR_UnitName } from       '../../../data/unitname.json';
+import { default as FR_SkillName } from      '../../../data/skillname.json';
+import { default as FR_BuffName } from       '../../../data/buffname.json';
+import { default as FR_JobName } from        '../../../data/jobname.json';
+import { default as FR_ArtifactName } from   '../../../data/artifactname.json';
+import { default as FR_VisionCardName } from '../../../data/visioncardname.json';
+import { default as FR_ItemOther } from      '../../../data/itemother.json';
+import { default as FR_ArtifactGrow } from   '../../../data/artifactgrow.json';
 
 @Injectable()
 export class JsonService {

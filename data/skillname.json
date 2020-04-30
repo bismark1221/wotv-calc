@@ -1,0 +1,4964 @@
+{
+    "infos": [
+        {
+            "key": "SK_EMPTY",
+            "value": ""
+        },
+        {
+            "key": "SK_FROG_ATK",
+            "value": "Compétence d'attaque normale (pendant Crapaud)"
+        },
+        {
+            "key": "SK_CRYSTAL_NORMAL",
+            "value": "Effet cristal"
+        },
+        {
+            "key": "SK_LW_WAR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_WAR_M_1",
+            "value": "Brise-bête"
+        },
+        {
+            "key": "SK_LW_WAR_M_4",
+            "value": "Lame Tueuse"
+        },
+        {
+            "key": "SK_LW_WAR_S_3",
+            "value": "Bord enrayé"
+        },
+        {
+            "key": "SK_LW_WAR_S_1_INIT",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_LW_WAR_M_2_INIT",
+            "value": "Discipline"
+        },
+        {
+            "key": "SK_LW_WAR_S_2",
+            "value": "Bourrade"
+        },
+        {
+            "key": "SK_LW_WAR_M_3",
+            "value": "Traitement"
+        },
+        {
+            "key": "SK_LW_WAR_R_1",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "SK_LW_WAR_R_1_MONT",
+            "value": "Lame vengeresse"
+        },
+        {
+            "key": "SK_LW_WAR_P_1",
+            "value": "Aug. ATT Niv. 1"
+        },
+        {
+            "key": "SK_LW_WAR_P_1_MONT",
+            "value": "Couronne princière de Leonis"
+        },
+        {
+            "key": "SK_LW_WAR_M_1_SUB",
+            "value": "Brise-bête"
+        },
+        {
+            "key": "SK_LW_WAR_M_4_SUB",
+            "value": "Lame Tueuse"
+        },
+        {
+            "key": "SK_LW_WAR_S_3_SUB",
+            "value": "Bord enrayé"
+        },
+        {
+            "key": "SK_LW_WAR_S_1",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_LW_WAR_M_2",
+            "value": "Discipline"
+        },
+        {
+            "key": "SK_LW_KNT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_KNT_M_4",
+            "value": "Annul'trinité"
+        },
+        {
+            "key": "SK_LW_KNT_S_2",
+            "value": "Brise PT"
+        },
+        {
+            "key": "SK_LW_KNT_M_3",
+            "value": "Brise PA"
+        },
+        {
+            "key": "SK_LW_KNT_S_1_INIT",
+            "value": "Guérison divine"
+        },
+        {
+            "key": "SK_LW_KNT_M_1_INIT",
+            "value": "Émousse"
+        },
+        {
+            "key": "SK_LW_KNT_M_2",
+            "value": "Brise-magie"
+        },
+        {
+            "key": "SK_LW_KNT_S_3",
+            "value": "Brise bras"
+        },
+        {
+            "key": "SK_LW_KNT_S_4",
+            "value": "Brise-vitesse"
+        },
+        {
+            "key": "SK_LW_KNT_R_1",
+            "value": "Garde d'épée"
+        },
+        {
+            "key": "SK_LW_KNT_P_1",
+            "value": "Protection divine"
+        },
+        {
+            "key": "SK_LW_KNT_P_2",
+            "value": "Aug. PV Niv. 1"
+        },
+        {
+            "key": "SK_LW_KNT_M_4_SUB",
+            "value": "Annul'trinité"
+        },
+        {
+            "key": "SK_LW_KNT_S_2_SUB",
+            "value": "Brise PT"
+        },
+        {
+            "key": "SK_LW_KNT_M_3_SUB",
+            "value": "Brise PA"
+        },
+        {
+            "key": "SK_LW_KNT_S_1",
+            "value": "Guérison divine"
+        },
+        {
+            "key": "SK_LW_KNT_M_1",
+            "value": "Émousse"
+        },
+        {
+            "key": "SK_LW_PLD_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_PLD_M_4",
+            "value": "Mur sacré"
+        },
+        {
+            "key": "SK_LW_PLD_M_2",
+            "value": "Esprit immortel"
+        },
+        {
+            "key": "SK_LW_PLD_S_7",
+            "value": "Croix sacrée"
+        },
+        {
+            "key": "SK_LW_PLD_M_1_INIT",
+            "value": "Guérison sacrée"
+        },
+        {
+            "key": "SK_LW_PLD_S_5_INIT",
+            "value": "Revers de lame"
+        },
+        {
+            "key": "SK_LW_PLD_S_6",
+            "value": "Sentinelle"
+        },
+        {
+            "key": "SK_LW_PLD_S_2",
+            "value": "Grâce divine"
+        },
+        {
+            "key": "SK_LW_PLD_M_3",
+            "value": "Lame railleuse"
+        },
+        {
+            "key": "SK_LW_PLD_R_1",
+            "value": "Paladin protecteur"
+        },
+        {
+            "key": "SK_LW_PLD_P_1",
+            "value": "Protection du chevalier saint"
+        },
+        {
+            "key": "SK_LW_PLD_M_4_SUB",
+            "value": "Mur sacré"
+        },
+        {
+            "key": "SK_LW_PLD_M_2_SUB",
+            "value": "Esprit immortel"
+        },
+        {
+            "key": "SK_LW_PLD_S_7_SUB",
+            "value": "Croix sacrée"
+        },
+        {
+            "key": "SK_LW_PLD_M_1",
+            "value": "Guérison sacrée"
+        },
+        {
+            "key": "SK_LW_PLD_S_5",
+            "value": "Revers de lame"
+        },
+        {
+            "key": "SK_LW_MGK_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_M_4",
+            "value": "Lame Feu X"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_M_4",
+            "value": "Lame Eau X"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_M_4",
+            "value": "Lame Glace X"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_M_4",
+            "value": "Lame Terre X"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_M_4",
+            "value": "Lame Foudre X"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_M_4",
+            "value": "Lame Vent X"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_M_4",
+            "value": "Lame Bannissement X"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_M_4",
+            "value": "Lame Ombre X"
+        },
+        {
+            "key": "SK_LW_MGK_M_2",
+            "value": "Taill'volaille"
+        },
+        {
+            "key": "SK_LW_MGK_S_4",
+            "value": "Lame Silence "
+        },
+        {
+            "key": "SK_LW_MGK_M_3",
+            "value": "Barrière magique"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_S_1_INIT",
+            "value": "Lame Feu"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_S_1_INIT",
+            "value": "Lame Eau"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_S_1_INIT",
+            "value": "Lame Glace"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_S_1_INIT",
+            "value": "Lame Terre"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_S_1_INIT",
+            "value": "Lame Foudre"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_S_1_INIT",
+            "value": "Lame Vent"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_S_1_INIT",
+            "value": "Lame Bannissement"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_S_1_INIT",
+            "value": "Lame Ombre"
+        },
+        {
+            "key": "SK_LW_MGK_M_1_INIT",
+            "value": "Lame Toxine"
+        },
+        {
+            "key": "SK_LW_MGK_S_3",
+            "value": "Rés. magique"
+        },
+        {
+            "key": "SK_LW_MGK_S_2",
+            "value": "Sort railleur"
+        },
+        {
+            "key": "SK_LW_MGK_R_1",
+            "value": "Garde magique"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_P_1",
+            "value": "Providence de Feu"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_P_1",
+            "value": "Providence d'Eau"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_P_1",
+            "value": "Providence de Glace"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_P_1",
+            "value": "Providence de Terre"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_P_1",
+            "value": "Providence de Foudre"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_P_1",
+            "value": "Providence de Vent"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_P_1",
+            "value": "Providence de Lumière"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_P_1",
+            "value": "Providence d'Ombre"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_M_4_SUB",
+            "value": "Lame Feu X"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_M_4_SUB",
+            "value": "Lame Eau X"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_M_4_SUB",
+            "value": "Lame Glace X"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_M_4_SUB",
+            "value": "Lame Terre X"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_M_4_SUB",
+            "value": "Lame Foudre X"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_M_4_SUB",
+            "value": "Lame Vent X"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_M_4_SUB",
+            "value": "Lame Bannissement X"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_M_4_SUB",
+            "value": "Lame Ombre X"
+        },
+        {
+            "key": "SK_LW_MGK_M_2_SUB",
+            "value": "Taill'volaille"
+        },
+        {
+            "key": "SK_LW_MGK_S_4_SUB",
+            "value": "Lame Silence "
+        },
+        {
+            "key": "SK_LW_MGK_M_3_SUB",
+            "value": "Barrière magique"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_S_1",
+            "value": "Lame Feu"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_S_1",
+            "value": "Lame Eau"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_S_1",
+            "value": "Lame Glace"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_S_1",
+            "value": "Lame Terre"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_S_1",
+            "value": "Lame Foudre"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_S_1",
+            "value": "Lame Vent"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_S_1",
+            "value": "Lame Bannissement"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_S_1",
+            "value": "Lame Ombre"
+        },
+        {
+            "key": "SK_LW_MGK_M_1",
+            "value": "Lame Toxine"
+        },
+        {
+            "key": "SK_LW_SWN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_SWN_M_4",
+            "value": "Brise danger"
+        },
+        {
+            "key": "SK_LW_SWN_S_2",
+            "value": "Force vampirique"
+        },
+        {
+            "key": "SK_LW_SWN_S_3",
+            "value": "Faucheur sombre"
+        },
+        {
+            "key": "SK_LW_SWN_M_2_INIT",
+            "value": "Forme dangereuse"
+        },
+        {
+            "key": "SK_LW_SWN_M_5_INIT",
+            "value": "Force synergique"
+        },
+        {
+            "key": "SK_LW_SWN_M_1",
+            "value": "Tranchant sévère"
+        },
+        {
+            "key": "SK_LW_SWN_S_1",
+            "value": "Lame paralysante"
+        },
+        {
+            "key": "SK_LW_SWN_S_4",
+            "value": "Coup dangereux"
+        },
+        {
+            "key": "SK_LW_SWN_R_1",
+            "value": "Riposte"
+        },
+        {
+            "key": "SK_LW_SWN_P_1",
+            "value": "Sacrifice ultime"
+        },
+        {
+            "key": "SK_LW_SWN_M_4_SUB",
+            "value": "Brise danger"
+        },
+        {
+            "key": "SK_LW_SWN_S_2_SUB",
+            "value": "Force vampirique"
+        },
+        {
+            "key": "SK_LW_SWN_S_3_SUB",
+            "value": "Faucheur sombre"
+        },
+        {
+            "key": "SK_LW_SWN_M_2",
+            "value": "Forme dangereuse"
+        },
+        {
+            "key": "SK_LW_SWN_M_5",
+            "value": "Force synergique"
+        },
+        {
+            "key": "SK_LW_MNK_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MNK_M_3",
+            "value": "Chakra"
+        },
+        {
+            "key": "SK_LW_MNK_M_2",
+            "value": "Purification"
+        },
+        {
+            "key": "SK_LW_MNK_S_5",
+            "value": "Résurrection"
+        },
+        {
+            "key": "SK_LW_MNK_S_4",
+            "value": "Ermitage"
+        },
+        {
+            "key": "SK_LW_MNK_M_1_INIT",
+            "value": "Poings furieux"
+        },
+        {
+            "key": "SK_LW_MNK_S_2_INIT",
+            "value": "Accumulation"
+        },
+        {
+            "key": "SK_LW_MNK_M_4",
+            "value": "Tranchant tellurique"
+        },
+        {
+            "key": "SK_LW_MNK_S_3",
+            "value": "Frappe surchargée"
+        },
+        {
+            "key": "SK_LW_MNK_R_1",
+            "value": "Contre-poing"
+        },
+        {
+            "key": "SK_LW_MNK_P_1",
+            "value": "Maîtrise contondante"
+        },
+        {
+            "key": "SK_LW_MNK_P_2",
+            "value": "Aug. PV Niv. 1"
+        },
+        {
+            "key": "SK_LW_MNK_M_3_SUB",
+            "value": "Chakra"
+        },
+        {
+            "key": "SK_LW_MNK_M_2_SUB",
+            "value": "Purification"
+        },
+        {
+            "key": "SK_LW_MNK_S_5_SUB",
+            "value": "Résurrection"
+        },
+        {
+            "key": "SK_LW_MNK_S_4_SUB",
+            "value": "Ermitage"
+        },
+        {
+            "key": "SK_LW_MNK_M_1",
+            "value": "Poings furieux"
+        },
+        {
+            "key": "SK_LW_MNK_S_2",
+            "value": "Accumulation"
+        },
+        {
+            "key": "SK_LW_SAM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_SAM_M_4",
+            "value": "Kongō"
+        },
+        {
+            "key": "SK_LW_SAM_S_4",
+            "value": "Oborozuki"
+        },
+        {
+            "key": "SK_LW_SAM_M_3",
+            "value": "Hayate"
+        },
+        {
+            "key": "SK_LW_SAM_M_1_INIT",
+            "value": "Hien"
+        },
+        {
+            "key": "SK_LW_SAM_S_3_INIT",
+            "value": "Méditation"
+        },
+        {
+            "key": "SK_LW_SAM_S_1",
+            "value": "Dévotion"
+        },
+        {
+            "key": "SK_LW_SAM_M_2",
+            "value": "Illusion"
+        },
+        {
+            "key": "SK_LW_SAM_S_2",
+            "value": "Voile de la nuit"
+        },
+        {
+            "key": "SK_LW_SAM_R_1",
+            "value": "Troisième œil"
+        },
+        {
+            "key": "SK_LW_SAM_P_1",
+            "value": "Lame d'âmes"
+        },
+        {
+            "key": "SK_LW_SAM_M_4_SUB",
+            "value": "Kongō"
+        },
+        {
+            "key": "SK_LW_SAM_S_4_SUB",
+            "value": "Oborozuki"
+        },
+        {
+            "key": "SK_LW_SAM_M_3_SUB",
+            "value": "Hayate"
+        },
+        {
+            "key": "SK_LW_SAM_M_1",
+            "value": "Hien"
+        },
+        {
+            "key": "SK_LW_SAM_S_3",
+            "value": "Méditation "
+        },
+        {
+            "key": "SK_LW_THI_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_THI_M_3",
+            "value": "Piller"
+        },
+        {
+            "key": "SK_LW_THI_M_4",
+            "value": "Attaque furtive"
+        },
+        {
+            "key": "SK_LW_THI_S_3",
+            "value": "Vol cœur"
+        },
+        {
+            "key": "SK_LW_THI_M_1_INIT",
+            "value": "Vol"
+        },
+        {
+            "key": "SK_LW_THI_S_1_INIT",
+            "value": "Vision dérobée"
+        },
+        {
+            "key": "SK_LW_THI_S_2",
+            "value": "Sort obscur"
+        },
+        {
+            "key": "SK_LW_THI_S_4",
+            "value": "Dague de précision"
+        },
+        {
+            "key": "SK_LW_THI_M_2",
+            "value": "Vol temps"
+        },
+        {
+            "key": "SK_LW_THI_R_1",
+            "value": "Action rapide"
+        },
+        {
+            "key": "SK_LW_THI_P_1",
+            "value": "Voie du voleur"
+        },
+        {
+            "key": "SK_LW_THI_P_2",
+            "value": "Aug. PA acquis niv. 1"
+        },
+        {
+            "key": "SK_LW_THI_M_3_SUB",
+            "value": "Piller"
+        },
+        {
+            "key": "SK_LW_THI_M_4_SUB",
+            "value": "Attaque furtive"
+        },
+        {
+            "key": "SK_LW_THI_S_3_SUB",
+            "value": "Vol cœur"
+        },
+        {
+            "key": "SK_LW_THI_M_1",
+            "value": "Vol"
+        },
+        {
+            "key": "SK_LW_THI_S_1",
+            "value": "Vision dérobée"
+        },
+        {
+            "key": "SK_LW_NIN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_NIN_M_4",
+            "value": "Rêve dans un rêve"
+        },
+        {
+            "key": "SK_LW_NIN_S_3",
+            "value": "Entrave d'ombre"
+        },
+        {
+            "key": "SK_LW_NIN_M_2",
+            "value": "Utsusemi"
+        },
+        {
+            "key": "SK_LW_NIN_S_1_INIT",
+            "value": "Shuriken"
+        },
+        {
+            "key": "SK_LW_NIN_S_2_INIT",
+            "value": "Dissimulation"
+        },
+        {
+            "key": "SK_LW_NIN_M_3",
+            "value": "Brume empoisonnée"
+        },
+        {
+            "key": "SK_LW_NIN_FIRE_M_1",
+            "value": "Katon"
+        },
+        {
+            "key": "SK_LW_NIN_ICE_M_1",
+            "value": "Hyoton"
+        },
+        {
+            "key": "SK_LW_NIN_WIND_M_1",
+            "value": "Huton"
+        },
+        {
+            "key": "SK_LW_NIN_SOIL_M_1",
+            "value": "Doton"
+        },
+        {
+            "key": "SK_LW_NIN_THUN_M_1",
+            "value": "Raiton"
+        },
+        {
+            "key": "SK_LW_NIN_WATR_M_1",
+            "value": "Suiton"
+        },
+        {
+            "key": "SK_LW_NIN_DARK_M_1",
+            "value": "Anton"
+        },
+        {
+            "key": "SK_LW_NIN_SHIN_M_1",
+            "value": "Koton"
+        },
+        {
+            "key": "SK_LW_NIN_S_4",
+            "value": "Contrôleur du destin"
+        },
+        {
+            "key": "SK_LW_NIN_R_1",
+            "value": "Pointe empoisonnée"
+        },
+        {
+            "key": "SK_LW_NIN_P_1",
+            "value": "Coureur de l'ombre"
+        },
+        {
+            "key": "SK_LW_NIN_P_2",
+            "value": "Shukuchi"
+        },
+        {
+            "key": "SK_LW_NIN_M_4_SUB",
+            "value": "Rêve dans un rêve"
+        },
+        {
+            "key": "SK_LW_NIN_S_3_SUB",
+            "value": "Entrave d'ombre"
+        },
+        {
+            "key": "SK_LW_NIN_M_2_SUB",
+            "value": "Utsusemi"
+        },
+        {
+            "key": "SK_LW_NIN_S_1",
+            "value": "Shuriken"
+        },
+        {
+            "key": "SK_LW_NIN_S_2",
+            "value": "Dissimulation"
+        },
+        {
+            "key": "SK_LW_LAN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_LAN_M_4",
+            "value": "Entaille du vide"
+        },
+        {
+            "key": "SK_LW_LAN_S_4",
+            "value": "Gloire terrestre"
+        },
+        {
+            "key": "SK_LW_LAN_S_3",
+            "value": "Dévastation"
+        },
+        {
+            "key": "SK_LW_LAN_M_2_INIT",
+            "value": "Faucon nocturne"
+        },
+        {
+            "key": "SK_LW_LAN_S_2_INIT",
+            "value": "Lance aiguisée"
+        },
+        {
+            "key": "SK_LW_LAN_M_3_INIT",
+            "value": "Tornade mentale"
+        },
+        {
+            "key": "SK_LW_LAN_M_1_INIT",
+            "value": "Tranchant explosif"
+        },
+        {
+            "key": "SK_LW_LAN_S_1_INIT",
+            "value": "Pique-ombre"
+        },
+        {
+            "key": "SK_LW_LAN_R_1",
+            "value": "Contre-perçant"
+        },
+        {
+            "key": "SK_LW_LAN_P_2",
+            "value": "Maîtrise perçante"
+        },
+        {
+            "key": "SK_LW_LAN_P_1",
+            "value": "Maîtrise mortelle"
+        },
+        {
+            "key": "SK_LW_LAN_M_4_SUB",
+            "value": "Entaille du vide"
+        },
+        {
+            "key": "SK_LW_LAN_S_4_SUB",
+            "value": "Gloire terrestre"
+        },
+        {
+            "key": "SK_LW_LAN_S_3_SUB",
+            "value": "Dévastation"
+        },
+        {
+            "key": "SK_LW_LAN_M_2",
+            "value": "Faucon nocturne"
+        },
+        {
+            "key": "SK_LW_LAN_S_2",
+            "value": "Lance aiguisée"
+        },
+        {
+            "key": "SK_LW_LAN_M_3",
+            "value": "Tornade mentale"
+        },
+        {
+            "key": "SK_LW_LAN_M_1",
+            "value": "Tranchant explosif"
+        },
+        {
+            "key": "SK_LW_LAN_S_1",
+            "value": "Pique-ombre"
+        },
+        {
+            "key": "SK_LW_DRG_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_DRG_S_3",
+            "value": "Saut vertical"
+        },
+        {
+            "key": "SK_LW_DRG_S_4",
+            "value": "Saut horizontal"
+        },
+        {
+            "key": "SK_LW_DRG_M_4",
+            "value": "Plongeon draconique"
+        },
+        {
+            "key": "SK_LW_DRG_S_1_INIT",
+            "value": "Saut"
+        },
+        {
+            "key": "SK_LW_DRG_M_3_INIT",
+            "value": "Famille draconique"
+        },
+        {
+            "key": "SK_LW_DRG_M_1",
+            "value": "Rugissement draconique"
+        },
+        {
+            "key": "SK_LW_DRG_M_2",
+            "value": "Norme draconique"
+        },
+        {
+            "key": "SK_LW_DRG_R_1",
+            "value": "Lame draconique"
+        },
+        {
+            "key": "SK_LW_DRG_P_1",
+            "value": "Saut +1"
+        },
+        {
+            "key": "SK_LW_DRG_P_2",
+            "value": "Aug. PV niv. 1"
+        },
+        {
+            "key": "SK_LW_DRG_S_3_SUB",
+            "value": "Saut vertical"
+        },
+        {
+            "key": "SK_LW_DRG_S_4_SUB",
+            "value": "Saut horizontal"
+        },
+        {
+            "key": "SK_LW_DRG_M_4_SUB",
+            "value": "Plongeon draconique"
+        },
+        {
+            "key": "SK_LW_DRG_S_1",
+            "value": "Saut"
+        },
+        {
+            "key": "SK_LW_DRG_M_3",
+            "value": "Famille draconique"
+        },
+        {
+            "key": "SK_LW_HUN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_HUN_M_4",
+            "value": "Barrage"
+        },
+        {
+            "key": "SK_LW_HUN_M_2",
+            "value": "Liens de l'ombre"
+        },
+        {
+            "key": "SK_LW_HUN_S_4",
+            "value": "Méga-charge"
+        },
+        {
+            "key": "SK_LW_HUN_S_2_INIT",
+            "value": "Charge"
+        },
+        {
+            "key": "SK_LW_HUN_M_3_INIT",
+            "value": "Flèche empoisonnée"
+        },
+        {
+            "key": "SK_LW_HUN_S_1",
+            "value": "Vigilance"
+        },
+        {
+            "key": "SK_LW_HUN_M_1",
+            "value": "Tir d'élite"
+        },
+        {
+            "key": "SK_LW_HUN_S_3",
+            "value": "Charge augmentée"
+        },
+        {
+            "key": "SK_LW_HUN_R_1",
+            "value": "Réflexe"
+        },
+        {
+            "key": "SK_LW_HUN_P_1",
+            "value": "Voie du chasseur"
+        },
+        {
+            "key": "SK_LW_HUN_P_2",
+            "value": "Concentration"
+        },
+        {
+            "key": "SK_LW_HUN_M_4_SUB",
+            "value": "Barrage"
+        },
+        {
+            "key": "SK_LW_HUN_M_2_SUB",
+            "value": "Liens de l'ombre"
+        },
+        {
+            "key": "SK_LW_HUN_S_4_SUB",
+            "value": "Méga-charge"
+        },
+        {
+            "key": "SK_LW_HUN_S_2",
+            "value": "Charge"
+        },
+        {
+            "key": "SK_LW_HUN_M_3",
+            "value": "Flèche empoisonnée"
+        },
+        {
+            "key": "SK_LW_GUN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_GUN_M_4",
+            "value": "Tir dans le bras"
+        },
+        {
+            "key": "SK_LW_GUN_M_3",
+            "value": "Tir vital"
+        },
+        {
+            "key": "SK_LW_GUN_S_4",
+            "value": "Tir doublé"
+        },
+        {
+            "key": "SK_LW_GUN_M_1_INIT",
+            "value": "Noir total"
+        },
+        {
+            "key": "SK_LW_GUN_M_2_INIT",
+            "value": "Feu de précision"
+        },
+        {
+            "key": "SK_LW_GUN_S_3",
+            "value": "Vent venimeux"
+        },
+        {
+            "key": "SK_LW_GUN_S_1",
+            "value": "Tir dans le pied"
+        },
+        {
+            "key": "SK_LW_GUN_S_2",
+            "value": "Conseil"
+        },
+        {
+            "key": "SK_LW_GUN_R_1",
+            "value": "Tir de riposte"
+        },
+        {
+            "key": "SK_LW_GUN_P_1",
+            "value": "Focus"
+        },
+        {
+            "key": "SK_LW_GUN_P_2",
+            "value": "Maîtrise balistique"
+        },
+        {
+            "key": "SK_LW_GUN_M_4_SUB",
+            "value": "Tir dans le bras"
+        },
+        {
+            "key": "SK_LW_GUN_M_3_SUB",
+            "value": "Tir vital"
+        },
+        {
+            "key": "SK_LW_GUN_S_4_SUB",
+            "value": "Tir doublé"
+        },
+        {
+            "key": "SK_LW_GUN_M_1",
+            "value": "Noir total"
+        },
+        {
+            "key": "SK_LW_GUN_M_2",
+            "value": "Feu de précision"
+        },
+        {
+            "key": "SK_LW_BLM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_BLM_M_7",
+            "value": "Brasier"
+        },
+        {
+            "key": "SK_LW_BLM_M_3",
+            "value": "Crapaud"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_M_5",
+            "value": "Feu X"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_M_5",
+            "value": "Glace X"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_M_5",
+            "value": "Vent X"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_M_5",
+            "value": "Omnipierre"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_M_5",
+            "value": "Foudre X"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_M_5",
+            "value": "Eau X"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_M_5",
+            "value": "Ombre X"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_M_5",
+            "value": "Bannissement X"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_S_1_INIT",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_S_1_INIT",
+            "value": "Glace"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_S_1_INIT",
+            "value": "Vent"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_S_1_INIT",
+            "value": "Terre"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_S_1_INIT",
+            "value": "Foudre"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_S_1_INIT",
+            "value": "Eau"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_S_1_INIT",
+            "value": "Ombre"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_S_1_INIT",
+            "value": "Bannissement"
+        },
+        {
+            "key": "SK_LW_BLM_M_1_INIT",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_LW_BLM_S_3",
+            "value": "Saignée"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_M_4",
+            "value": "Feu +"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_M_4",
+            "value": "Glace +"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_M_4",
+            "value": "Vent +"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_M_4",
+            "value": "Terre +"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_M_4",
+            "value": "Foudre +"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_M_4",
+            "value": "Eau +"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_M_4",
+            "value": "Ombre +"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_M_4",
+            "value": "Bannissement +"
+        },
+        {
+            "key": "SK_LW_BLM_S_4",
+            "value": "Sommeil"
+        },
+        {
+            "key": "SK_LW_BLM_M_2",
+            "value": "Aspire"
+        },
+        {
+            "key": "SK_LW_BLM_R_1",
+            "value": "Contre-magie"
+        },
+        {
+            "key": "SK_LW_BLM_P_1",
+            "value": "Aug. MAGIE Niv. 1"
+        },
+        {
+            "key": "SK_LW_BLM_M_7_SUB",
+            "value": "Brasier"
+        },
+        {
+            "key": "SK_LW_BLM_M_3_SUB",
+            "value": "Crapaud"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_M_5_SUB",
+            "value": "Feu X"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_M_5_SUB",
+            "value": "Glace X"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_M_5_SUB",
+            "value": "Vent X"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_M_5_SUB",
+            "value": "Omnipierre"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_M_5_SUB",
+            "value": "Foudre X"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_M_5_SUB",
+            "value": "Eau X"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_M_5_SUB",
+            "value": "Ombre X"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_M_5_SUB",
+            "value": "Bannissement X"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_S_1",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_S_1",
+            "value": "Glace"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_S_1",
+            "value": "Vent"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_S_1",
+            "value": "Terre"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_S_1",
+            "value": "Foudre"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_S_1",
+            "value": "Eau"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_S_1",
+            "value": "Ombre"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_S_1",
+            "value": "Bannissement"
+        },
+        {
+            "key": "SK_LW_BLM_M_1",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_LW_WHM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1",
+            "value": "Soin Max"
+        },
+        {
+            "key": "SK_LW_WHM_M_4",
+            "value": "Récup"
+        },
+        {
+            "key": "SK_LW_WHM_M_6",
+            "value": "Sidéral"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_3",
+            "value": "Vie Max"
+        },
+        {
+            "key": "SK_LW_WHM_S_1_INIT",
+            "value": "Soin"
+        },
+        {
+            "key": "SK_LW_WHM_M_2_INIT",
+            "value": "Guérison"
+        },
+        {
+            "key": "SK_LW_WHM_M_1",
+            "value": "Soin +"
+        },
+        {
+            "key": "SK_LW_WHM_S_2",
+            "value": "Bouclier"
+        },
+        {
+            "key": "SK_LW_WHM_S_3",
+            "value": "Barrière"
+        },
+        {
+            "key": "SK_LW_WHM_M_3",
+            "value": "Soin X"
+        },
+        {
+            "key": "SK_LW_WHM_M_5",
+            "value": "Vie"
+        },
+        {
+            "key": "SK_LW_WHM_R_1",
+            "value": "Régénérateur"
+        },
+        {
+            "key": "SK_LW_WHM_P_1",
+            "value": "La Marche des Saints"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1_SUB",
+            "value": "Soin Max"
+        },
+        {
+            "key": "SK_LW_WHM_M_4_SUB",
+            "value": "Récup"
+        },
+        {
+            "key": "SK_LW_WHM_M_6_SUB",
+            "value": "Sidéral"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_3_SUB",
+            "value": "Vie Max"
+        },
+        {
+            "key": "SK_LW_WHM_S_1",
+            "value": "Soin"
+        },
+        {
+            "key": "SK_LW_WHM_M_2",
+            "value": "Guérison "
+        },
+        {
+            "key": "SK_LW_CLR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_CLR_M_3",
+            "value": "Anti-fléau"
+        },
+        {
+            "key": "SK_LW_CLR_M_4",
+            "value": "Guérison X"
+        },
+        {
+            "key": "SK_LW_CLR_S_5",
+            "value": "Suppression"
+        },
+        {
+            "key": "SK_LW_CLR_M_2_INIT",
+            "value": "Banissement"
+        },
+        {
+            "key": "SK_LW_CLR_S_1_INIT",
+            "value": "Soin"
+        },
+        {
+            "key": "SK_LW_CLR_M_1",
+            "value": "Bâton denté"
+        },
+        {
+            "key": "SK_LW_CLR_M_5",
+            "value": "Voile de Lumière"
+        },
+        {
+            "key": "SK_LW_CLR_M_6",
+            "value": "Voile ténébreux"
+        },
+        {
+            "key": "SK_LW_CLR_R_1",
+            "value": "Auto-Soin"
+        },
+        {
+            "key": "SK_LW_CLR_P_1",
+            "value": "Aug. PSY Niv. 1"
+        },
+        {
+            "key": "SK_LW_CLR_M_3_SUB",
+            "value": "Anti-fléau"
+        },
+        {
+            "key": "SK_LW_CLR_M_4_SUB",
+            "value": "Guérison X"
+        },
+        {
+            "key": "SK_LW_CLR_S_5_SUB",
+            "value": "Suppression"
+        },
+        {
+            "key": "SK_LW_CLR_M_2",
+            "value": "Bannissement"
+        },
+        {
+            "key": "SK_LW_CLR_S_1",
+            "value": "Soin"
+        },
+        {
+            "key": "SK_LW_GRM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_GRM_M_4",
+            "value": "Vulnérabilité"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_3",
+            "value": "Anti-Feu +"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_3",
+            "value": "Anti-Glace +"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_3",
+            "value": "Anti-Vent +"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_3",
+            "value": "Anti-Terre +"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_3",
+            "value": "Anti-Foudre +"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_3",
+            "value": "Anti-Eau +"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_3",
+            "value": "Antilumi"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_3",
+            "value": "Anti-Ombre +"
+        },
+        {
+            "key": "SK_LW_GRM_S_3",
+            "value": "Dissipation"
+        },
+        {
+            "key": "SK_LW_GRM_M_5_INIT",
+            "value": "Détérioration"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_2_INIT",
+            "value": "Anti-Feu"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_2_INIT",
+            "value": "Anti-Glace"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_2_INIT",
+            "value": "Anti-Vent"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_2_INIT",
+            "value": "Anti-Terre"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_2_INIT",
+            "value": "Anti-Foudre"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_2_INIT",
+            "value": "Anti-Eau"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_2_INIT",
+            "value": "Anti-Lumière"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_2_INIT",
+            "value": "Anti-Ombre"
+        },
+        {
+            "key": "SK_LW_GRM_S_1",
+            "value": "Retire-Bouclier"
+        },
+        {
+            "key": "SK_LW_GRM_S_2",
+            "value": "Retire-Barrière"
+        },
+        {
+            "key": "SK_LW_GRM_M_1",
+            "value": "Vitalise"
+        },
+        {
+            "key": "SK_LW_GRM_R_1",
+            "value": "Contre-dissipation"
+        },
+        {
+            "key": "SK_LW_GRM_P_1",
+            "value": "Protection du sauveur"
+        },
+        {
+            "key": "SK_LW_GRM_P_2",
+            "value": "Écho émeraude"
+        },
+        {
+            "key": "SK_LW_GRM_M_4_SUB",
+            "value": "Vulnérabilité"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_3_SUB",
+            "value": "Anti-Feu +"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_3_SUB",
+            "value": "Anti-Glace +"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_3_SUB",
+            "value": "Anti-Vent +"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_3_SUB",
+            "value": "Anti-Terre +"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_3_SUB",
+            "value": "Anti-Foudre +"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_3_SUB",
+            "value": "Anti-Eau +"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_3_SUB",
+            "value": "Anti-Lumière +"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_3_SUB",
+            "value": "Anti-Ombre +"
+        },
+        {
+            "key": "SK_LW_GRM_S_3_SUB",
+            "value": "Dissipation"
+        },
+        {
+            "key": "SK_LW_GRM_M_5",
+            "value": "Détérioration"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_2",
+            "value": "Anti-Feu"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_2",
+            "value": "Anti-Glace"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_2",
+            "value": "Anti-Vent"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_2",
+            "value": "Anti-Terre"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_2",
+            "value": "Anti-Foudre"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_2",
+            "value": "Anti-Eau"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_2",
+            "value": "Anti-Lumière"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_2",
+            "value": "Anti-Ombre"
+        },
+        {
+            "key": "SK_LW_RDM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_RDM_M_4",
+            "value": "Annurésistance"
+        },
+        {
+            "key": "SK_LW_RDM_S_3",
+            "value": "Élan enrayé"
+        },
+        {
+            "key": "SK_LW_RDM_S_4",
+            "value": "Lancer rapide"
+        },
+        {
+            "key": "SK_LW_RDM_M_2_INIT",
+            "value": "Guérison"
+        },
+        {
+            "key": "SK_LW_RDM_S_2_INIT",
+            "value": "Soin +"
+        },
+        {
+            "key": "SK_LW_RDM_FIRE_M_1_INIT",
+            "value": "Feu +"
+        },
+        {
+            "key": "SK_LW_RDM_ICE_M_1_INIT",
+            "value": "Glace +"
+        },
+        {
+            "key": "SK_LW_RDM_WIND_M_1_INIT",
+            "value": "Vent +"
+        },
+        {
+            "key": "SK_LW_RDM_SOIL_M_1_INIT",
+            "value": "Terre +"
+        },
+        {
+            "key": "SK_LW_RDM_THUN_M_1_INIT",
+            "value": "Foudre +"
+        },
+        {
+            "key": "SK_LW_RDM_WATR_M_1_INIT",
+            "value": "Eau +"
+        },
+        {
+            "key": "SK_LW_RDM_DARK_M_1_INIT",
+            "value": "Ombre +"
+        },
+        {
+            "key": "SK_LW_RDM_SHIN_M_1_INIT",
+            "value": "Bannissement +"
+        },
+        {
+            "key": "SK_LW_RDM_S_1",
+            "value": "Sommeil"
+        },
+        {
+            "key": "SK_LW_RDM_R_1",
+            "value": "Réflexe magique"
+        },
+        {
+            "key": "SK_LW_RDM_P_1",
+            "value": "Aug. PA initiaux Niv. 1"
+        },
+        {
+            "key": "SK_LW_RDM_P_2",
+            "value": "Protection du mage"
+        },
+        {
+            "key": "SK_LW_RDM_M_4_SUB",
+            "value": "Annurésistance"
+        },
+        {
+            "key": "SK_LW_RDM_S_3_SUB",
+            "value": "Élan enrayé"
+        },
+        {
+            "key": "SK_LW_RDM_S_4_SUB",
+            "value": "Lancer rapide"
+        },
+        {
+            "key": "SK_LW_RDM_M_2",
+            "value": "Guérison "
+        },
+        {
+            "key": "SK_LW_RDM_S_2",
+            "value": "Soin +"
+        },
+        {
+            "key": "SK_LW_RDM_FIRE_M_1",
+            "value": "Feu +"
+        },
+        {
+            "key": "SK_LW_RDM_ICE_M_1",
+            "value": "Glace +"
+        },
+        {
+            "key": "SK_LW_RDM_WIND_M_1",
+            "value": "Vent +"
+        },
+        {
+            "key": "SK_LW_RDM_SOIL_M_1",
+            "value": "Terre +"
+        },
+        {
+            "key": "SK_LW_RDM_THUN_M_1",
+            "value": "Foudre +"
+        },
+        {
+            "key": "SK_LW_RDM_WATR_M_1",
+            "value": "Eau +"
+        },
+        {
+            "key": "SK_LW_RDM_DARK_M_1",
+            "value": "Ombre +"
+        },
+        {
+            "key": "SK_LW_RDM_SHIN_M_1",
+            "value": "Bannissement +"
+        },
+        {
+            "key": "SK_LW_TIM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_TIM_M_5",
+            "value": "Météore"
+        },
+        {
+            "key": "SK_LW_TIM_S_2",
+            "value": "Stop "
+        },
+        {
+            "key": "SK_LW_TIM_M_4",
+            "value": "Rapide "
+        },
+        {
+            "key": "SK_LW_TIM_M_3_INIT",
+            "value": "Comète"
+        },
+        {
+            "key": "SK_LW_TIM_S_3_INIT",
+            "value": "Immobilisation"
+        },
+        {
+            "key": "SK_LW_TIM_M_1",
+            "value": "Booster"
+        },
+        {
+            "key": "SK_LW_TIM_S_4",
+            "value": "Apesanteur"
+        },
+        {
+            "key": "SK_LW_TIM_M_2",
+            "value": "Transposition"
+        },
+        {
+            "key": "SK_LW_TIM_S_1",
+            "value": "Lenteur "
+        },
+        {
+            "key": "SK_LW_TIM_R_1",
+            "value": "Contre-lent"
+        },
+        {
+            "key": "SK_LW_TIM_P_2",
+            "value": "Annule changements CT"
+        },
+        {
+            "key": "SK_LW_TIM_P_1",
+            "value": "Sort accéléré"
+        },
+        {
+            "key": "SK_LW_TIM_M_5_SUB",
+            "value": "Météore"
+        },
+        {
+            "key": "SK_LW_TIM_S_2_SUB",
+            "value": "Stop "
+        },
+        {
+            "key": "SK_LW_TIM_M_4_SUB",
+            "value": "Rapide "
+        },
+        {
+            "key": "SK_LW_TIM_M_3",
+            "value": "Comète"
+        },
+        {
+            "key": "SK_LW_TIM_S_3",
+            "value": "Immobilisation"
+        },
+        {
+            "key": "SK_LW_GLMS_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_GLMS_M_4",
+            "value": "Lame du gel"
+        },
+        {
+            "key": "SK_LW_GLMS_M_3",
+            "value": "Armure de la Discontinuité"
+        },
+        {
+            "key": "SK_LW_GLMS_S_4",
+            "value": "Excalibur"
+        },
+        {
+            "key": "SK_LW_GLMS_S_2",
+            "value": "Kotetsu"
+        },
+        {
+            "key": "SK_LW_GLMS_M_2",
+            "value": "Auto-Boost"
+        },
+        {
+            "key": "SK_LW_GLMS_S_1",
+            "value": "Aura curative"
+        },
+        {
+            "key": "SK_LW_GLMS_M_1",
+            "value": "Hamon"
+        },
+        {
+            "key": "SK_LW_GLMS_S_3",
+            "value": "Dernière heure"
+        },
+        {
+            "key": "SK_LW_GLMS_R_1",
+            "value": "Lame clairvoyante"
+        },
+        {
+            "key": "SK_LW_GLMS_P_1",
+            "value": "Aug. PA acquis niv. 1"
+        },
+        {
+            "key": "SK_LW_GLMS_P_2",
+            "value": "Auto-lévit'"
+        },
+        {
+            "key": "SK_LW_FINA_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_FINA_M_1",
+            "value": "Soin Max"
+        },
+        {
+            "key": "SK_LW_FINA_M_3",
+            "value": "Récup"
+        },
+        {
+            "key": "SK_LW_FINA_M_4",
+            "value": "Vie Max"
+        },
+        {
+            "key": "SK_LW_FINA_M_2",
+            "value": "Liens de l'ombre"
+        },
+        {
+            "key": "SK_LW_FINA_S_1",
+            "value": "Soin"
+        },
+        {
+            "key": "SK_LW_FINA_S_2",
+            "value": "Charge"
+        },
+        {
+            "key": "SK_LW_FINA_S_3",
+            "value": "Guérison "
+        },
+        {
+            "key": "SK_LW_FINA_S_4",
+            "value": "Soin +"
+        },
+        {
+            "key": "SK_LW_FINA_S_5",
+            "value": "Encourager"
+        },
+        {
+            "key": "SK_LW_FINA_S_6",
+            "value": "Viser"
+        },
+        {
+            "key": "SK_LW_FINA_S_7",
+            "value": "Pluie de lumière"
+        },
+        {
+            "key": "SK_LW_FINA_R_1",
+            "value": "Vœu honnête"
+        },
+        {
+            "key": "SK_LW_FINA_P_1",
+            "value": "La Marche des Saints"
+        },
+        {
+            "key": "SK_LW_FINA_P_2",
+            "value": "Tir innocent"
+        },
+        {
+            "key": "SK_LW_YSTL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_YSTL_M_1",
+            "value": "Feu+ d'héritier"
+        },
+        {
+            "key": "SK_LW_YSTL_M_2",
+            "value": "Magie prompte"
+        },
+        {
+            "key": "SK_LW_YSTL_M_4",
+            "value": "Xenoglossie"
+        },
+        {
+            "key": "SK_LW_YSTL_S_1",
+            "value": "Feu d'héritier"
+        },
+        {
+            "key": "SK_LW_YSTL_S_2",
+            "value": "Manipulation de l'ether"
+        },
+        {
+            "key": "SK_LW_YSTL_M_3",
+            "value": "Dynamisation"
+        },
+        {
+            "key": "SK_LW_YSTL_S_3",
+            "value": "Infect"
+        },
+        {
+            "key": "SK_LW_YSTL_R_1",
+            "value": "Vasque de mana"
+        },
+        {
+            "key": "SK_LW_YSTL_P_1",
+            "value": "Énochien"
+        },
+        {
+            "key": "SK_LW_TNCR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_TNCR_S_3",
+            "value": "Lamineur"
+        },
+        {
+            "key": "SK_LW_TNCR_M_3",
+            "value": "Bolide"
+        },
+        {
+            "key": "SK_LW_TNCR_M_4",
+            "value": "Zone de destruction"
+        },
+        {
+            "key": "SK_LW_TNCR_M_2",
+            "value": "Tranchant acéré"
+        },
+        {
+            "key": "SK_LW_TNCR_S_1",
+            "value": "Sans pitié"
+        },
+        {
+            "key": "SK_LW_TNCR_M_1",
+            "value": "Frappe explosive"
+        },
+        {
+            "key": "SK_LW_TNCR_S_2",
+            "value": "Cœur de pierre"
+        },
+        {
+            "key": "SK_LW_TNCR_S_4",
+            "value": "Aurore"
+        },
+        {
+            "key": "SK_LW_TNCR_R_1",
+            "value": "Arrachage de la jugulaire"
+        },
+        {
+            "key": "SK_LW_TNCR_P_1",
+            "value": "Camouflage"
+        },
+        {
+            "key": "SK_LW_TNCR_P_2",
+            "value": "Nébuleuse"
+        },
+        {
+            "key": "SK_LW_VIK_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_VIK_M_1",
+            "value": "Hache meurtrière"
+        },
+        {
+            "key": "SK_LW_VIK_M_2",
+            "value": "Explosion totale"
+        },
+        {
+            "key": "SK_LW_VIK_M_3",
+            "value": "Cyclone aspirant"
+        },
+        {
+            "key": "SK_LW_VIK_S_1_INIT",
+            "value": "Brise-rotule"
+        },
+        {
+            "key": "SK_LW_VIK_S_2_INIT",
+            "value": "Esprit rebelle"
+        },
+        {
+            "key": "SK_LW_VIK_S_1",
+            "value": "Brise-rotule"
+        },
+        {
+            "key": "SK_LW_VIK_S_2",
+            "value": "Esprit rebelle"
+        },
+        {
+            "key": "SK_LW_VIK_S_3",
+            "value": "Cri de guerre"
+        },
+        {
+            "key": "SK_LW_VIK_S_4",
+            "value": "Lancement"
+        },
+        {
+            "key": "SK_LW_VIK_R_1",
+            "value": "Esprit combatif"
+        },
+        {
+            "key": "SK_LW_VIK_P_1_2",
+            "value": "Savoir viking"
+        },
+        {
+            "key": "SK_LW_VIK_P_2_2",
+            "value": "Protection inébranlable"
+        },
+        {
+            "key": "SK_LW_VIK_M_1_SUB",
+            "value": "Hache meurtrière"
+        },
+        {
+            "key": "SK_LW_VIK_M_2_SUB",
+            "value": "Explosion totale"
+        },
+        {
+            "key": "SK_LW_VIK_M_3_SUB",
+            "value": "Cyclone aspirant"
+        },
+        {
+            "key": "SK_LW_VIK_P_1",
+            "value": "Fanatique de guerre"
+        },
+        {
+            "key": "SK_LW_VIK_P_2",
+            "value": "Protection inébranlable"
+        },
+        {
+            "key": "SK_FFT_RAMZ_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FFT_RAMZ_M_1",
+            "value": "Triple explosion"
+        },
+        {
+            "key": "SK_FFT_RAMZ_M_2",
+            "value": "Double brise"
+        },
+        {
+            "key": "SK_FFT_RAMZ_M_3",
+            "value": "Hurlement"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_2",
+            "value": "Abnégation"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_3",
+            "value": "Lame scintillante"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_1",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_4",
+            "value": "Corps d'acier"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_5",
+            "value": "Vent arrière"
+        },
+        {
+            "key": "SK_FFT_RAMZ_R_1",
+            "value": "Contre-plaquage"
+        },
+        {
+            "key": "SK_FFT_RAMZ_P_1",
+            "value": "PJ obtenus ↑"
+        },
+        {
+            "key": "SK_FFT_RAMZ_P_2",
+            "value": "Déplacement +1"
+        },
+        {
+            "key": "SK_FFT_GFGR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FFT_GFGR_M_1",
+            "value": "Saignée obscure"
+        },
+        {
+            "key": "SK_FFT_GFGR_M_2",
+            "value": "Déception"
+        },
+        {
+            "key": "SK_FFT_GFGR_M_3",
+            "value": "Lame des abysses"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_1",
+            "value": "Charge éclair"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_2",
+            "value": "Aspiration obscure"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_3",
+            "value": "Lame taître"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_4",
+            "value": "Voie de l'échiquier"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_5",
+            "value": "Sacrifice impie"
+        },
+        {
+            "key": "SK_FFT_GFGR_R_1",
+            "value": "Mercenaire dégourdi"
+        },
+        {
+            "key": "SK_FFT_GFGR_P_1",
+            "value": "Sacrifice ultime"
+        },
+        {
+            "key": "SK_FFT_GFGR_P_2",
+            "value": "L'honneur du mercenaire"
+        },
+        {
+            "key": "SK_FFT_ORND_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FFT_ORND_M_1",
+            "value": "Ire céleste"
+        },
+        {
+            "key": "SK_FFT_ORND_M_2",
+            "value": "Pulvérisation d'arme"
+        },
+        {
+            "key": "SK_FFT_ORND_M_3",
+            "value": "Saignée obscure"
+        },
+        {
+            "key": "SK_FFT_ORND_S_1",
+            "value": "Ravage de plastron"
+        },
+        {
+            "key": "SK_FFT_ORND_S_2",
+            "value": "Emblème du Lion Noir"
+        },
+        {
+            "key": "SK_FFT_ORND_S_3",
+            "value": "Destruction de crâne"
+        },
+        {
+            "key": "SK_FFT_ORND_S_4",
+            "value": "Aspiration obscure"
+        },
+        {
+            "key": "SK_FFT_ORND_S_5",
+            "value": "Éclair inimitable"
+        },
+        {
+            "key": "SK_FFT_ORND_R_1",
+            "value": "Auto-Recharge"
+        },
+        {
+            "key": "SK_FFT_ORND_P_1",
+            "value": "Dieu foudroyant"
+        },
+        {
+            "key": "SK_FFT_ORND_P_2",
+            "value": "Aguerri"
+        },
+        {
+            "key": "SK_LW_TU_BLM_ICE",
+            "value": "Glace +"
+        },
+        {
+            "key": "SK_LB_LW_TU_MONT",
+            "value": "Croix du destin"
+        },
+        {
+            "key": "SK_SMN_TU_IFRT",
+            "value": "Flammes de l'enfer"
+        },
+        {
+            "key": "SK_LW_TU_WAR_M_4",
+            "value": "Tranchant puissant"
+        },
+        {
+            "key": "SK_LW_TU_CLR_M_2",
+            "value": "Banissement"
+        },
+        {
+            "key": "SK_TU_BHMT_M_01",
+            "value": "Haymaker"
+        },
+        {
+            "key": "SK_TU_USE_RING",
+            "value": "Anneau porté"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_M_3",
+            "value": "Crapaud"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_S_4",
+            "value": "Sommeil"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_M_1_2",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_M_1",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_S_2",
+            "value": "Cécité"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_S_2_2",
+            "value": "Cécité"
+        },
+        {
+            "key": "SK_LB_LW_BGN_MONT",
+            "value": "Croix du destin"
+        },
+        {
+            "key": "SK_LB_LW_BGN_STRN",
+            "value": "Croc mortel"
+        },
+        {
+            "key": "SK_LW_WHM_BGN",
+            "value": "PA initiaux+ 1 - 999"
+        },
+        {
+            "key": "SK_LW_WHM_BGN_M_5",
+            "value": "Vie"
+        },
+        {
+            "key": "SK_BTL_GETSP_1-999_U",
+            "value": "Augmente les PI acquis 1 - 999 %"
+        },
+        {
+            "key": "SK_LW_WAR_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_KNT_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_PLD_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MGK_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_SWN_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MNK_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_VIK_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_SAM_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_THI_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_NIN_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_LAN_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_DRG_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_HUN_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_GUN_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_BLM_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_WHM_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_CLR_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_GRM_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_RDM_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_TIM_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_GLMS_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_FINA_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_YSTL_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_TNCR_ATK_100",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_BOMB_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_BOMB_M_01",
+            "value": "Intimidation"
+        },
+        {
+            "key": "SK_BOMB_M_02",
+            "value": "Auto-destruction"
+        },
+        {
+            "key": "SK_BOMB_M_02_1",
+            "value": "Auto-destruction"
+        },
+        {
+            "key": "SK_BOMB_M_03",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "SK_BOMB_M_03_CHECK",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "SK_BOMB_M_04",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_BOMB_M_04_01",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_BHMT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_BHMT_M_01",
+            "value": "Haymaker"
+        },
+        {
+            "key": "SK_BHMT_M_02",
+            "value": "Rage"
+        },
+        {
+            "key": "SK_BHMT_M_03",
+            "value": "Ravager"
+        },
+        {
+            "key": "SK_BHMT_ATK_01",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_BHMT_M_01_01",
+            "value": "Haymaker"
+        },
+        {
+            "key": "SK_BHMT_M_02_01",
+            "value": "Rage"
+        },
+        {
+            "key": "SK_BHMT_M_03_01",
+            "value": "Ravager"
+        },
+        {
+            "key": "SK_MABR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_MABR_M_01",
+            "value": "Matière visqueuse"
+        },
+        {
+            "key": "SK_MABR_M_02",
+            "value": "Tentacule"
+        },
+        {
+            "key": "SK_MABR_M_03",
+            "value": "Haleine fétide"
+        },
+        {
+            "key": "SK_ARMN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_ARMN_M_01",
+            "value": "Mauvais œil"
+        },
+        {
+            "key": "SK_ARMN_M_02",
+            "value": "Regard démoniaque"
+        },
+        {
+            "key": "SK_ARMN_M_03",
+            "value": "Glas"
+        },
+        {
+            "key": "SK_OGRE_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_OGRE_M_01",
+            "value": "Renverser"
+        },
+        {
+            "key": "SK_OGRE_M_02",
+            "value": "Projection violente "
+        },
+        {
+            "key": "SK_OGRE_M_03",
+            "value": "Coup de queue"
+        },
+        {
+            "key": "SK_WOLF_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_WOLF_M_01",
+            "value": "Griffes venin"
+        },
+        {
+            "key": "SK_WOLF_M_02",
+            "value": "Frappe du pied"
+        },
+        {
+            "key": "SK_WOLF_M_03",
+            "value": "Rugissement"
+        },
+        {
+            "key": "SK_ZUUU_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_ZUUU_M_01",
+            "value": "Grand tourbillon"
+        },
+        {
+            "key": "SK_ZUUU_M_02",
+            "value": "Coup de bec"
+        },
+        {
+            "key": "SK_ZUUU_M_03",
+            "value": "Souffle ailé"
+        },
+        {
+            "key": "SK_SKEL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_SKEL_M_01",
+            "value": "Attaque guibole"
+        },
+        {
+            "key": "SK_SKEL_M_02",
+            "value": "Attaque bras"
+        },
+        {
+            "key": "SK_SKEL_M_03",
+            "value": "Cécité"
+        },
+        {
+            "key": "SK_SKEL_M_04",
+            "value": "Vampire"
+        },
+        {
+            "key": "SK_CACT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CACT_M_01",
+            "value": "1 000 épines"
+        },
+        {
+            "key": "SK_CACT_M_02",
+            "value": "10 000 épines"
+        },
+        {
+            "key": "SK_CACT_M_03",
+            "value": "Aiguille paralysante"
+        },
+        {
+            "key": "SK_CACT_M_03_CHECK",
+            "value": "Aiguille paralysante"
+        },
+        {
+            "key": "SK_GLSP_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_GLSP_M_01",
+            "value": "Endurci"
+        },
+        {
+            "key": "SK_GLSP_M_02",
+            "value": "Aplatir"
+        },
+        {
+            "key": "SK_GLSP_R_01",
+            "value": "Carapace de tortue"
+        },
+        {
+            "key": "SK_ELEM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_ELEM_R_01",
+            "value": "Renvoi"
+        },
+        {
+            "key": "SK_ELEM_M_01",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_ELEM_M_02",
+            "value": "Feu +"
+        },
+        {
+            "key": "SK_ELEM_M_03",
+            "value": "Glace"
+        },
+        {
+            "key": "SK_ELEM_M_04",
+            "value": "Glace +"
+        },
+        {
+            "key": "SK_ELEM_M_05",
+            "value": "Vent"
+        },
+        {
+            "key": "SK_ELEM_M_06",
+            "value": "Vent +"
+        },
+        {
+            "key": "SK_ELEM_M_07",
+            "value": "Foudre"
+        },
+        {
+            "key": "SK_ELEM_M_08",
+            "value": "Foudre +"
+        },
+        {
+            "key": "SK_ELEM_M_09",
+            "value": "Terre"
+        },
+        {
+            "key": "SK_ELEM_M_10",
+            "value": "Terre +"
+        },
+        {
+            "key": "SK_ELEM_M_11",
+            "value": "Eau"
+        },
+        {
+            "key": "SK_ELEM_M_12",
+            "value": "Eau +"
+        },
+        {
+            "key": "SK_ELEM_M_13",
+            "value": "Banissement"
+        },
+        {
+            "key": "SK_ELEM_M_14",
+            "value": "Soin"
+        },
+        {
+            "key": "SK_ELEM_M_15",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_ELEM_M_16",
+            "value": "Saignée"
+        },
+        {
+            "key": "SK_FF14BOSS_ATK",
+            "value": "Compétence d'attaque normale"
+        },
+        {
+            "key": "SK_FF14BOSS_M_01",
+            "value": "Éventreur"
+        },
+        {
+            "key": "SK_FF14BOSS_M_02",
+            "value": "Poire d'angoisse"
+        },
+        {
+            "key": "SK_FF14BOSS_M_03",
+            "value": "Cheval de bois"
+        },
+        {
+            "key": "SK_CHCB_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CHCB_M_01",
+            "value": "Choco-soin"
+        },
+        {
+            "key": "SK_CHCB_M_02",
+            "value": "Choco-feu"
+        },
+        {
+            "key": "SK_CHCB_M_03",
+            "value": "Choco-guérison"
+        },
+        {
+            "key": "SK_CHCB_M_04",
+            "value": "Choco-météore"
+        },
+        {
+            "key": "SK_CHCB_R_01",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "SK_CHCB1_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CHCB1_M_02",
+            "value": "Choco-feu"
+        },
+        {
+            "key": "SK_CHCB1_R_01",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "SK_CCLI_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CCLI_M_01",
+            "value": "Terreur / Cauchemar"
+        },
+        {
+            "key": "SK_CCLI_M_02",
+            "value": "Terreur / Constriction"
+        },
+        {
+            "key": "SK_CCLI_M_03",
+            "value": "Magie impure / Frisson"
+        },
+        {
+            "key": "SK_CCLI_M_04",
+            "value": "Magie impure / Toxine X"
+        },
+        {
+            "key": "SK_IFRT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_IFRT_M_01",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_IFRT_M_02",
+            "value": "Feu X"
+        },
+        {
+            "key": "SK_IFRT_M_03",
+            "value": "Incandescence"
+        },
+        {
+            "key": "SK_IFRT_M_04",
+            "value": "Flammes de l'enfer"
+        },
+        {
+            "key": "SK_SIRE_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_SIRE_M_01",
+            "value": "Eau"
+        },
+        {
+            "key": "SK_SIRE_M_02",
+            "value": "Eau X"
+        },
+        {
+            "key": "SK_SIRE_M_03",
+            "value": "Voix inaudible"
+        },
+        {
+            "key": "SK_SIRE_M_04",
+            "value": "Voix ensorcelante"
+        },
+        {
+            "key": "SK_SHIV_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_SHIV_M_01",
+            "value": "Glace"
+        },
+        {
+            "key": "SK_SHIV_M_02",
+            "value": "Glace X"
+        },
+        {
+            "key": "SK_SHIV_M_03",
+            "value": "Tir de grêle"
+        },
+        {
+            "key": "SK_SHIV_M_04",
+            "value": "Poussière de diamant"
+        },
+        {
+            "key": "SK_RAMU_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_RAMU_M_01",
+            "value": "Foudre"
+        },
+        {
+            "key": "SK_RAMU_M_02",
+            "value": "Foudre X"
+        },
+        {
+            "key": "SK_RAMU_M_03",
+            "value": "Frappe brutale"
+        },
+        {
+            "key": "SK_RAMU_M_04",
+            "value": "Foudre du jugement"
+        },
+        {
+            "key": "SK_GLEM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_GLEM_M_01",
+            "value": "Terre"
+        },
+        {
+            "key": "SK_GLEM_M_02",
+            "value": "Omnipierre"
+        },
+        {
+            "key": "SK_GLEM_M_03",
+            "value": "Mur terrestre"
+        },
+        {
+            "key": "SK_GLEM_M_04",
+            "value": "Rocher à fragmentation"
+        },
+        {
+            "key": "SK_IGNT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_IGNT_M_01",
+            "value": "Berserker en fer"
+        },
+        {
+            "key": "SK_IGNT_M_02",
+            "value": "Onde puissante"
+        },
+        {
+            "key": "SK_IGNT_M_03",
+            "value": "Faucheur"
+        },
+        {
+            "key": "SK_LW_E_VIK_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_E_VIK_P_1",
+            "value": "Fanatique de guerre"
+        },
+        {
+            "key": "SK_LW_E_VIK_P_2",
+            "value": "Protection inébranlable"
+        },
+        {
+            "key": "SK_LW_E_VIK_M_1",
+            "value": "Lancement"
+        },
+        {
+            "key": "SK_LW_E_VIK_M_3",
+            "value": "Grande révolution"
+        },
+        {
+            "key": "SK_LW_E_VIK_M_4",
+            "value": "Hache meurtrière"
+        },
+        {
+            "key": "SK_LW_E_VIK_S_1",
+            "value": "Ne pas utiliser"
+        },
+        {
+            "key": "SK_LW_E_VIK_S_2",
+            "value": "Brise-rotule"
+        },
+        {
+            "key": "SK_LW_E_VIK_S_3",
+            "value": "Esprit rebelle"
+        },
+        {
+            "key": "SK_GMK_ATK_NEEDLE",
+            "value": "Piège"
+        },
+        {
+            "key": "SK_GMK_ATK_FIRE",
+            "value": "Piège"
+        },
+        {
+            "key": "SK_GMK_ATK_ARROW",
+            "value": "Piège"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_1",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_2",
+            "value": "Averse de pierres"
+        },
+        {
+            "key": "SK_LB_LW_MONT",
+            "value": "Croix du destin"
+        },
+        {
+            "key": "SK_LB_LW_MONT_B",
+            "value": "Croix du destin+"
+        },
+        {
+            "key": "SK_LB_LW_ELDE",
+            "value": "Barrière de Leonis"
+        },
+        {
+            "key": "SK_LB_LW_ELDE_B",
+            "value": "Barrière de Leonis+"
+        },
+        {
+            "key": "SK_LB_LW_STRN",
+            "value": "Croc mortel"
+        },
+        {
+            "key": "SK_LB_LW_STRN_B",
+            "value": "Croc mortel+"
+        },
+        {
+            "key": "SK_LB_LW_ROBB",
+            "value": "Prestige majestueux"
+        },
+        {
+            "key": "SK_LB_LW_ROBB_B",
+            "value": "Prestige majestueux+"
+        },
+        {
+            "key": "SK_LB_LW_ENBT",
+            "value": "Courage inébranlable"
+        },
+        {
+            "key": "SK_LB_LW_ENBT_B",
+            "value": "Courage inébranlable+"
+        },
+        {
+            "key": "SK_LB_LW_FDRC",
+            "value": "Piqûre de papillon"
+        },
+        {
+            "key": "SK_LB_LW_FDRC_B",
+            "value": "Piqûre de papillon+"
+        },
+        {
+            "key": "SK_LB_LW_MRND",
+            "value": "Tempête pourpre"
+        },
+        {
+            "key": "SK_LB_LW_MRND_B",
+            "value": "Tempête pourpre+"
+        },
+        {
+            "key": "SK_LB_LW_AILN",
+            "value": "Impact perforant"
+        },
+        {
+            "key": "SK_LB_LW_AILN_B",
+            "value": "Impact perforant+"
+        },
+        {
+            "key": "SK_LB_LW_ZIZA",
+            "value": "Bouchée du tigre"
+        },
+        {
+            "key": "SK_LB_LW_ZIZA_B",
+            "value": "Bouchée du tigre+"
+        },
+        {
+            "key": "SK_LB_LW_MDNA",
+            "value": "Plume cosmique"
+        },
+        {
+            "key": "SK_LB_LW_MDNA_B",
+            "value": "Plume cosmique+"
+        },
+        {
+            "key": "SK_LB_LW_AYKA",
+            "value": "Grâce angélique"
+        },
+        {
+            "key": "SK_LB_LW_AYKA_B",
+            "value": "Grâce angélique+"
+        },
+        {
+            "key": "SK_LB_LW_GLMS",
+            "value": "Flash"
+        },
+        {
+            "key": "SK_LB_LW_GLMS_B",
+            "value": "Flash+"
+        },
+        {
+            "key": "SK_LB_LW_KTON",
+            "value": "Compétence de Kitone"
+        },
+        {
+            "key": "SK_LB_LW_KTON_B",
+            "value": "Compétence de Kitone +"
+        },
+        {
+            "key": "SK_LB_LW_WHIS",
+            "value": "Onde blanche"
+        },
+        {
+            "key": "SK_LB_LW_WHIS_B",
+            "value": "Onde blanche+"
+        },
+        {
+            "key": "SK_LB_LW_MACR",
+            "value": "Lumière éclatante"
+        },
+        {
+            "key": "SK_LB_LW_MACR_B",
+            "value": "Lumière éclatante+"
+        },
+        {
+            "key": "SK_LB_LW_LUCA",
+            "value": "Compétence de Lu'Cia"
+        },
+        {
+            "key": "SK_LB_LW_LUCA_B",
+            "value": "Compétence de Lu'Cia +"
+        },
+        {
+            "key": "SK_LB_LW_YERM",
+            "value": "Hache viking"
+        },
+        {
+            "key": "SK_LB_LW_YERM_B",
+            "value": "Hache viking +"
+        },
+        {
+            "key": "SK_LB_FFT_RAMZ",
+            "value": "Ultima"
+        },
+        {
+            "key": "SK_LB_FFT_ORND",
+            "value": "Tech. d'épée : Dieu foudroyant"
+        },
+        {
+            "key": "SK_SMN_IFRT",
+            "value": "Flammes de l'enfer"
+        },
+        {
+            "key": "SK_SMN_GLEM",
+            "value": "Rocher à fragmentation"
+        },
+        {
+            "key": "SK_SMN_RAMU",
+            "value": "Foudre du jugement"
+        },
+        {
+            "key": "SK_SMN_SHIV",
+            "value": "Poussière de diamant"
+        },
+        {
+            "key": "SK_SMN_SIRE",
+            "value": "Voix ensorcelante"
+        },
+        {
+            "key": "SK_SMN_IGNT",
+            "value": "Fauchage"
+        },
+        {
+            "key": "SK_SMN_BHMT",
+            "value": "Rage"
+        },
+        {
+            "key": "SK_SMN_MABR",
+            "value": "Haleine fétide"
+        },
+        {
+            "key": "SK_SMN_CACT",
+            "value": "1 000 épines"
+        },
+        {
+            "key": "SK_SMN_ARMN",
+            "value": "Mauvais œil"
+        },
+        {
+            "key": "SK_SMN_ZUUU",
+            "value": "Grand tourbillon"
+        },
+        {
+            "key": "SK_SMN_OGRE",
+            "value": "Projection violente "
+        },
+        {
+            "key": "SK_SMN_BOMB",
+            "value": "Auto-destruction"
+        },
+        {
+            "key": "SK_US_POTION",
+            "value": "Potion"
+        },
+        {
+            "key": "SK_US_HIPOTION",
+            "value": "Potion +"
+        },
+        {
+            "key": "SK_US_EXPOTION",
+            "value": "Potion X"
+        },
+        {
+            "key": "SK_US_ETHER",
+            "value": "Éther"
+        },
+        {
+            "key": "SK_US_ETHERTURBO",
+            "value": "Éther +"
+        },
+        {
+            "key": "SK_US_ELIXIR",
+            "value": "Élixir"
+        },
+        {
+            "key": "SK_US_PNXFEATHER",
+            "value": "Queue de phénix"
+        },
+        {
+            "key": "SK_US_ANTIDOTE",
+            "value": "Antidote "
+        },
+        {
+            "key": "SK_US_EYEDROPS",
+            "value": "Collyre"
+        },
+        {
+            "key": "SK_US_REMINDER",
+            "value": " Flacon de sels"
+        },
+        {
+            "key": "SK_US_ECHODROP",
+            "value": "Herbe d'écho"
+        },
+        {
+            "key": "SK_US_UNICORNHORN",
+            "value": "Corne de licorne"
+        },
+        {
+            "key": "SK_US_MAIDENKISS",
+            "value": " Baiser de vierge"
+        },
+        {
+            "key": "SK_US_GOLDNEEDLE",
+            "value": " Défigeur"
+        },
+        {
+            "key": "SK_US_REMEDY",
+            "value": "Remède"
+        },
+        {
+            "key": "SK_US_ENCHANTDRAG",
+            "value": "Stimulant"
+        },
+        {
+            "key": "SK_US_HOLYTORCH",
+            "value": "Torche sacrée"
+        },
+        {
+            "key": "SK_US_HERODRINK",
+            "value": "Boisson de héros"
+        },
+        {
+            "key": "SK_US_BACCHUS",
+            "value": "Vin de Bacchus"
+        },
+        {
+            "key": "SK_US_SHELL",
+            "value": "Boisson Barrière"
+        },
+        {
+            "key": "SK_US_PROTECT",
+            "value": "Reconstituant"
+        },
+        {
+            "key": "SK_US_HEALWATER",
+            "value": "Source régénérante"
+        },
+        {
+            "key": "SK_US_HPPOTION",
+            "value": "Potion d'endurance"
+        },
+        {
+            "key": "SK_US_ATKPOTION",
+            "value": "Potion de force"
+        },
+        {
+            "key": "SK_US_MAGPOTION",
+            "value": "Potion de mana"
+        },
+        {
+            "key": "SK_US_SPDPOTION",
+            "value": "Potion d'agilité"
+        },
+        {
+            "key": "SK_US_DEXPOTION",
+            "value": "Potion de dextérité"
+        },
+        {
+            "key": "SK_MA_LW_MONT",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_STRN",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ELDE",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ROBB",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ENBT",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ZIZA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MRND",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_AILN",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MDNA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_AYKA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_GLMS",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MACR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FF14_TNCR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_HLNA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_LILS",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_RAMD",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_OOOO",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_LRNZ",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_RIRY",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_VSTR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_CLEY",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_KADI",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MRLK",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MGRT",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_PRAY",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FF14_YSTL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_SZRT",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_FINA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_BYLO",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_RYER",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_SCIA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_VRID",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_NAIA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_SRJS",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_UNII",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_SEVR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_VADM",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MURM",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_PHBE",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_RART",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MICE",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MIIA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ZZAN",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_FDRC",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_SDLX",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MINU",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_YERM",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_P_NASR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_P_ETRE",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FFT_RAMZ",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FFT_GFGR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FFT_ORND",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_LW_SLASH_1",
+            "value": "Att tranchante +2"
+        },
+        {
+            "key": "SK_LW_SLASH_2",
+            "value": "Att tranchante +3"
+        },
+        {
+            "key": "SK_LW_SLASH_3",
+            "value": "Att tranchante +5"
+        },
+        {
+            "key": "SK_LW_SLASH_4_N",
+            "value": "Att tranchante +6"
+        },
+        {
+            "key": "SK_LW_SLASH_5_N",
+            "value": "Att tranchante +10"
+        },
+        {
+            "key": "SK_LW_SLASH_4_R",
+            "value": "Att tranchante +6"
+        },
+        {
+            "key": "SK_LW_SLASH_5_R",
+            "value": "Att tranchante +12"
+        },
+        {
+            "key": "SK_LW_SLASH_4_SR",
+            "value": "Att tranchante +7"
+        },
+        {
+            "key": "SK_LW_SLASH_5_SR",
+            "value": "Att tranchante +13"
+        },
+        {
+            "key": "SK_LW_SLASH_4_SSR",
+            "value": "Att tranchante +8"
+        },
+        {
+            "key": "SK_LW_SLASH_5_SSR",
+            "value": "Att tranchante +15"
+        },
+        {
+            "key": "SK_LW_SLASH_4_UR",
+            "value": "Att tranchante +10"
+        },
+        {
+            "key": "SK_LW_SLASH_5_UR",
+            "value": "Att tranchante +20"
+        },
+        {
+            "key": "SK_LW_SWO_003_1",
+            "value": "Lame Morphée"
+        },
+        {
+            "key": "SK_LW_SWO_003_5",
+            "value": "Lame Sommeil"
+        },
+        {
+            "key": "SK_LW_ROD_003_1",
+            "value": "Sceptre de glace"
+        },
+        {
+            "key": "SK_LW_ROD_004_5",
+            "value": "Soin +"
+        },
+        {
+            "key": "SK_LW_SWO_004_1",
+            "value": "Cryolame"
+        },
+        {
+            "key": "SK_LW_SWO_004_5",
+            "value": "Cryolame"
+        },
+        {
+            "key": "SK_ACC_LW_MONT_1_1",
+            "value": "Cri de ralliement"
+        },
+        {
+            "key": "SK_ARM_LW_STRN_1_1",
+            "value": "Mur de champ"
+        },
+        {
+            "key": "SK_CLK_LW_ELDE_1_1",
+            "value": "Ordre du roi"
+        },
+        {
+            "key": "SK_ARM_LW_ROBB_1_1",
+            "value": "Lame affûtée"
+        },
+        {
+            "key": "SK_SHI_LW_ENBT_1_1",
+            "value": "Éclair loyal"
+        },
+        {
+            "key": "SK_ACC_LW_FDRC_1_1",
+            "value": "Protection triple"
+        },
+        {
+            "key": "SK_ACC_LW_ZIZA_1_1",
+            "value": "Revitalise"
+        },
+        {
+            "key": "SK_CLT_LW_MRND_1_1",
+            "value": "Encouragements élégants"
+        },
+        {
+            "key": "SK_HAT_LW_AILN_1_1",
+            "value": "Analyse"
+        },
+        {
+            "key": "SK_HAT_LW_MDNA_1_1",
+            "value": "Verve lunaire"
+        },
+        {
+            "key": "SK_FTW_LW_AYKA_1_1",
+            "value": "Pureté"
+        },
+        {
+            "key": "SK_HLM_LW_GLMS_1_1",
+            "value": "Vélocité mystique"
+        },
+        {
+            "key": "SK_ACC_LW_MACR_1_1",
+            "value": "Adoubement"
+        },
+        {
+            "key": "SK_BLT_LW_YERM_1_1",
+            "value": "Sang chaud"
+        },
+        {
+            "key": "SK_ARM_FFT_RAMZ_1_1",
+            "value": "Altruisme"
+        },
+        {
+            "key": "SK_ACC_FFT_ORND_1_1",
+            "value": "Pluie électrique"
+        },
+        {
+            "key": "SK_ROD_LW_HLNA_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_SWO_LW_LILS_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_SPE_LW_RAMD_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_KAT_LW_OOOO_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_NKN_LW_SDLX_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_SPE_LW_LRNZ_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_GUN_LW_RIRY_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_DAG_LW_VSTR_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_BOW_LW_CLEY_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_MAC_LW_KADI_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_FIS_LW_MRLK_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ROD_LW_MGRT_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ROD_LW_PRAY_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ROD_FF14_YSTL_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_BOW_LW_FINA_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_BSW_LW_SZRT_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_BYLO_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_RYER_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_SCIA_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_VRID_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_NAIA_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_SRJS_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_UNII_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_CLT_LW_SEVR_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_VADM_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_MURM_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_PHBE_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_FF14_TNCR_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_SWO_FFT_GFGR_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_CMLO_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ARM_LW_DRZA_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_005_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_005_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_006_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_006_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_007_1",
+            "value": ""
+        },
+        {
+            "key": "SK_KAT_LW_DIAA_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SPE_006_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SPE_006_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_004_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_004_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_FTW_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_001_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_002_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_002_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_003_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_003_5",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GLEM_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GLEM_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GLEM_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SHIV_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SHIV_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SHIV_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAMU_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAMU_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAMU_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IFRT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IFRT_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IFRT_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SIRE_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SIRE_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SIRE_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SOKYU_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SOKYU_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SOKYU_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRAINING_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRAINING_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRAINING_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MURG_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MURG_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MURG_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MACR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MACR_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MACR_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV1_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOLYNIGHT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOLYNIGHT_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOLYNIGHT_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV1_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IGNT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IGNT_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BHMT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BHMT_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MABR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MABR_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FAMILY_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FAMILY_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KTON_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KTON_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_PROPOSE_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_PROPOSE_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HUNT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HUNT_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TEAPARTY_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TEAPARTY_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SDLX_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SDLX_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV2_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CACT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ARMN_01_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ZUUU_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_OGRE_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BOMB_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_JOBCRYSTAL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BYLO_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RART_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RYER_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RIRY_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LEONIS_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOURN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FENICE_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WEZETT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CRYSTAL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LEONIS2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOURN2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FENICE2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WEZETT2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DYNVERK_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRSV_01_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRSV_02_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MIRROR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GLEM_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GLEM_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GLEM_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SHIV_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SHIV_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SHIV_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAMU_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAMU_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAMU_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IFRT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IFRT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IFRT_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SIRE_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SIRE_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SIRE_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SOKYU_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SOKYU_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SOKYU_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRAINING_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRAINING_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRAINING_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MURG_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MURG_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MURG_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MACR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MACR_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MACR_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOLYNIGHT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOLYNIGHT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOLYNIGHT_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IGNT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_IGNT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BHMT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BHMT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MABR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MABR_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FAMILY_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FAMILY_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KTON_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KTON_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_PROPOSE_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_PROPOSE_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HUNT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HUNT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TEAPARTY_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TEAPARTY_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SDLX_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SDLX_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF14_MV2_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CACT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ARMN_01_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ZUUU_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_OGRE_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BOMB_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_JOBCRYSTAL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BYLO_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RART_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RYER_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RIRY_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LEONIS_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOURN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FENICE_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WEZETT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CRYSTAL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LEONIS2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HOURN2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_FENICE2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WEZETT2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DYNVERK_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRSV_01_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TRSV_02_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MIRROR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_BTL_HP_100-99900_U",
+            "value": "Aug. PV max 100 - 99 900"
+        },
+        {
+            "key": "SK_BTL_HP_1-999_U",
+            "value": "Aug. PV max 1 - 999"
+        },
+        {
+            "key": "SK_BTL_MP_1-999_U",
+            "value": "Aug. PT max 1 - 999"
+        },
+        {
+            "key": "SK_BTL_AP_1-999_U",
+            "value": "Aug. PA max 1 - 999"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999_U",
+            "value": "Aug. ATT 1 - 999"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999PER_U",
+            "value": "Aug. ATT 1 - 999 %"
+        },
+        {
+            "key": "SK_BTL_MAG_1-999_U",
+            "value": "Aug. MAGIE 1 - 999"
+        },
+        {
+            "key": "SK_BTL_SPD_1-999_U",
+            "value": "Aug. AGI 1 - 999"
+        },
+        {
+            "key": "SK_BTL_DEX_1-999_U",
+            "value": "Aug. DEX 1 - 999"
+        },
+        {
+            "key": "SK_BTL_LUK_1-999_U",
+            "value": "Aug. CHA 1 - 999"
+        },
+        {
+            "key": "SK_BTL_BRAVE_1-100_U",
+            "value": "Aug. Bravoure 1 - 100"
+        },
+        {
+            "key": "SK_BTL_FAITH_1-100_U",
+            "value": "Aug. Foi 1 - 100"
+        },
+        {
+            "key": "SK_BTL_MOVE_1-20_U",
+            "value": "Aug. Mouvement 1-20"
+        },
+        {
+            "key": "SK_BTL_JUMP_1-20_U",
+            "value": "Aug. Saut 1 - 20"
+        },
+        {
+            "key": "SK_BTL_RANGE_1-20_U",
+            "value": "Aug. Portée 1-20"
+        },
+        {
+            "key": "SK_BTL_HP_100-99900_D",
+            "value": "Réduit PV max 100 - 99 900"
+        },
+        {
+            "key": "SK_BTL_AP_1-999_D",
+            "value": "Réduit PA 1 - 999"
+        },
+        {
+            "key": "SK_BTL_HP_1-999_D",
+            "value": "Réduit PV max 1 - 999"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999_D",
+            "value": "Réduit ATT 1 - 999"
+        },
+        {
+            "key": "SK_BTL_MAG_1-999_D",
+            "value": "Réduit MAGIE 1 - 999"
+        },
+        {
+            "key": "SK_BTL_SPD_1-999_D",
+            "value": "Réduit AGI 1 - 999"
+        },
+        {
+            "key": "SK_BTL_DEX_1-999_D",
+            "value": "Réduit DEX 1 - 999"
+        },
+        {
+            "key": "SK_BTL_LUK_1-999_D",
+            "value": "Réduit CHA 1 - 999"
+        },
+        {
+            "key": "SK_BTL_BRAVE_1-100_D",
+            "value": "Réduit Bravoure 1 - 100"
+        },
+        {
+            "key": "SK_BTL_FAITH_1-100_D",
+            "value": "Réduit Foi 1 - 100"
+        },
+        {
+            "key": "SK_BTL_MOVE_1-20_D",
+            "value": "Réduit Mouvement 1 - 20"
+        },
+        {
+            "key": "SK_BTL_JUMP_1-20_D",
+            "value": "Réduit Saut 1 - 20"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_U",
+            "value": "Aug. RésM 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_U",
+            "value": "Aug. Rés att tranchantes 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_U",
+            "value": "Aug. Rés att perçantes 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_U",
+            "value": "Aug. Rés att projectiles 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_U",
+            "value": "Aug. Rés att contondantes 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_U",
+            "value": "Aug. toutes les Rés d'attaque 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_D",
+            "value": "Réduit RésM 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_D",
+            "value": "Réduit Rés att tranchantes 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_D",
+            "value": "Réduit Rés att perçantes 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_D",
+            "value": "Réduit Rés att projectiles 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_D",
+            "value": "Réduit Rés att contondantes 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_D",
+            "value": "Réduit toutes les Rés d'attaque 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_U",
+            "value": "Aug. Rés feu 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_U",
+            "value": "Aug. Rés eau 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_U",
+            "value": "Aug. Rés vent 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_U",
+            "value": "Aug. Rés foudre 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_U",
+            "value": "Aug. Rés glace 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_U",
+            "value": "Aug. Rés terre 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_DARK_1_80_U",
+            "value": "Aug. Rés ombre 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_U",
+            "value": "Aug. Rés lumière 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_U",
+            "value": "Aug. Rés à tous les éléments 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_D",
+            "value": "Réduit Rés feu 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_D",
+            "value": "Réduit Rés eau 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_D",
+            "value": "Réduit Rés vent 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_D",
+            "value": "Réduit Rés foudre 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_D",
+            "value": "Réduit Rés glace 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_D",
+            "value": "Réduit Rés terre 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_DARK_1_80_D",
+            "value": "Réduit Rés ombre 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_D",
+            "value": "Réduit Rés lumière 1 - 80"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_D",
+            "value": "Réduit toutes les Rés élémentaires 1 - 80"
+        },
+        {
+            "key": "SK_BTL_HIT_1_999_U",
+            "value": "Aug. précision 1 - 999"
+        },
+        {
+            "key": "SK_BTL_AVOI_1_999_U",
+            "value": "Aug. esquive 1 - 999"
+        },
+        {
+            "key": "SK_BTL_CRI_1_999_U",
+            "value": "Aug. Coup critique 1 - 999"
+        },
+        {
+            "key": "SK_BTL_CRIHIT_1_999_U",
+            "value": "Aug. précision de coup critique 1 - 999"
+        },
+        {
+            "key": "SK_BTL_CRIAVOI_1_999_U",
+            "value": "Aug. esquive critique 1 - 999"
+        },
+        {
+            "key": "SK_BTL_HIT_1_999_D",
+            "value": "Réduit précision 1 - 999"
+        },
+        {
+            "key": "SK_BTL_AVOI_1_999_D",
+            "value": "Réduit esquive 1 - 999"
+        },
+        {
+            "key": "SK_BTL_CRI_1_999_D",
+            "value": "Réduit Coup critique 1 - 999"
+        },
+        {
+            "key": "SK_BTL_CRIHIT_1_999_D",
+            "value": "Réduit précision de coup critique 1 - 999"
+        },
+        {
+            "key": "SK_BTL_CRIAVOI_1_999_D",
+            "value": "Réduit esquive critique 1 - 999"
+        },
+        {
+            "key": "SK_BTL_STR_MAGIC_1_100_U",
+            "value": "Aug. AttM 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_SLASH_1_100_U",
+            "value": "Aug. Att tranchante 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_SPEAR_1_100_U",
+            "value": "Aug. Att perçante 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_SHOT_1_100_U",
+            "value": "Aug. Att projectile 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_BLOW_1_100_U",
+            "value": "Aug. Att contondante 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_MAGIC_1_100_D",
+            "value": "Réduit AttM 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_SLASH_1_100_D",
+            "value": "Réduit Att tranchante 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_SPEAR_1_100_D",
+            "value": "Réduit Att perçante 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_SHOT_1_100_D",
+            "value": "Réduit Att projectile 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STR_BLOW_1_100_D",
+            "value": "Réduit Att contondante 1 - 100"
+        },
+        {
+            "key": "SK_BTL_CASTTIME_1_999_D",
+            "value": "Réduit le délai d'activation de sort 1-999"
+        },
+        {
+            "key": "SK_BTL_RES_DEBUFF_1_100_U",
+            "value": "Aug. Rés malus 1 - 100"
+        },
+        {
+            "key": "SK_BTL_RES_DEBUFF_1_100_D",
+            "value": "Réduit Rés malus 1 - 100"
+        },
+        {
+            "key": "SK_BTL_RES_POISON_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Poison]"
+        },
+        {
+            "key": "SK_BTL_RES_DARKN_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Cécité]"
+        },
+        {
+            "key": "SK_BTL_RES_SLEEP_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Sommeil]"
+        },
+        {
+            "key": "SK_BTL_RES_SILENCE_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Silence]"
+        },
+        {
+            "key": "SK_BTL_RES_PARA_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Paralysie]"
+        },
+        {
+            "key": "SK_BTL_RES_CONFU_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Confusion]"
+        },
+        {
+            "key": "SK_BTL_RES_CHARM_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Charme]"
+        },
+        {
+            "key": "SK_BTL_RES_STONE_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Pétrification]"
+        },
+        {
+            "key": "SK_BTL_RES_TOAD_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Crapaud]"
+        },
+        {
+            "key": "SK_BTL_RES_SLOW_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Lenteur]"
+        },
+        {
+            "key": "SK_BTL_RES_STOP_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Stop]"
+        },
+        {
+            "key": "SK_BTL_RES_DACT_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Incapacité]"
+        },
+        {
+            "key": "SK_BTL_RES_DMOV_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Immobilisation]"
+        },
+        {
+            "key": "SK_BTL_RES_BERSK_1_100_U",
+            "value": "Aug. la Rés de l'altération d'état [Berserker]"
+        },
+        {
+            "key": "SK_BTL_RES_POISON_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Poison]"
+        },
+        {
+            "key": "SK_BTL_RES_DARKN_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Cécité]"
+        },
+        {
+            "key": "SK_BTL_RES_SLEEP_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Sommeil]"
+        },
+        {
+            "key": "SK_BTL_RES_SILENCE_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Silence]"
+        },
+        {
+            "key": "SK_BTL_RES_PARA_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Paralysie]"
+        },
+        {
+            "key": "SK_BTL_RES_CONFU_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Confusion]"
+        },
+        {
+            "key": "SK_BTL_RES_CHARM_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Charme]"
+        },
+        {
+            "key": "SK_BTL_RES_STONE_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Pétrification]"
+        },
+        {
+            "key": "SK_BTL_RES_TOAD_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Crapaud]"
+        },
+        {
+            "key": "SK_BTL_RES_SLOW_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Lenteur]"
+        },
+        {
+            "key": "SK_BTL_RES_STOP_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Stop]"
+        },
+        {
+            "key": "SK_BTL_RES_DACT_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Incapacité]"
+        },
+        {
+            "key": "SK_BTL_RES_DMOV_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Immobilisation]"
+        },
+        {
+            "key": "SK_BTL_RES_BERSK_1_100_D",
+            "value": "Réduit la Rés de l'altération d'état [Berserker]"
+        },
+        {
+            "key": "SK_BTL_INV_DEATH",
+            "value": "Mort instantanulée"
+        },
+        {
+            "key": "SK_BTL_INV_DOOM",
+            "value": "Annule peine de mort"
+        },
+        {
+            "key": "SK_BTL_INV_POISON",
+            "value": "Annule poison"
+        },
+        {
+            "key": "SK_BTL_JOB_THI_1_15_U",
+            "value": "Niv. du job [Voleur] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_HUN_1_15_U",
+            "value": "Niv. du job [Chasseur] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_GUN_1_15_U",
+            "value": "Niv. du job [Artilleur] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_WAR_1_15_U",
+            "value": "Niv. du job [Guerrier] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_PLD_1_15_U",
+            "value": "Niv. du job [Paladin] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_KNT_1_15_U",
+            "value": "Niv. du job [Chevalier] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_SWN_1_15_U",
+            "value": "Niveau du job [Chevalier occulte] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_MNK_1_15_U",
+            "value": "Niv. du job [Moine] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_LAN_1_15_U",
+            "value": "Niv. du job [Lancier] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_SAM_1_15_U",
+            "value": "Niv. du job [Samouraï] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_DRG_1_15_U",
+            "value": "Niv. du job [Dragonnier] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_NIN_1_15_U",
+            "value": "Niv. du job [Ninja] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_CLR_1_15_U",
+            "value": "Niv. du job [Prêtre] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_BLM_1_15_U",
+            "value": "Niv. du job [Mage noir] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_WHM_1_15_U",
+            "value": "Niv. du job [Mage blanc] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_TIM_1_15_U",
+            "value": "Niv. du job [Chronomage] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_GRM_1_15_U",
+            "value": "Niv. du job [Mage vert] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_RDM_1_15_U",
+            "value": "Niv. du job [Mage rouge] 1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_MGK_1_15_U",
+            "value": "Niv. du job [Magilame] 1-15"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST",
+            "value": "Attaque de Gadget provisoire"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_FIRE",
+            "value": "Attaque de Gadget provisoire (Feu)"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_ARROW",
+            "value": "Attaque de Gadget provisoire (Arc)"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_KATA_1",
+            "value": "Attaque de Gadget provisoire (Unité de catapulte simple)"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_KATA_2",
+            "value": "Attaque de Gadget provisoire (Zone de catapulte)"
+        },
+        {
+            "key": "SK_LW_WAR_P_2",
+            "value": "Aug. PV"
+        },
+        {
+            "key": "SK_LW_PLD_P_2",
+            "value": "Aug. Rés contondants"
+        },
+        {
+            "key": "SK_LW_SWN_P_2",
+            "value": "Aug. PV"
+        },
+        {
+            "key": "SK_LW_SAM_P_2",
+            "value": "Aug. Rés att tranchantes"
+        },
+        {
+            "key": "SK_LW_HUN_P_3",
+            "value": "Aug. Taux de précision"
+        },
+        {
+            "key": "SK_LW_WHM_P_2",
+            "value": "Aug. Foi"
+        }
+    ]
+}

@@ -1,0 +1,736 @@
+{
+    "infos": [
+        {
+            "key": "JB_LW_WAR",
+            "value": "Sire"
+        },
+        {
+            "key": "JB_LW_WAR_FIRE",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_ICE",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_WIND",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_SOIL",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_THUN",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_WATER",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_SHINE",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_WAR_DARK",
+            "value": "Guerrier"
+        },
+        {
+            "key": "JB_LW_PLD",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_FIRE",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_ICE",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_WIND",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_SOIL",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_THUN",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_WATER",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_SHINE",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_PLD_DARK",
+            "value": "Paladin"
+        },
+        {
+            "key": "JB_LW_KNT",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_FIRE",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_ICE",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_WIND",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_SOIL",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_THUN",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_WATER",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_SHINE",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_KNT_DARK",
+            "value": "Chevalier"
+        },
+        {
+            "key": "JB_LW_SWN",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_FIRE",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_ICE",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_WIND",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_SOIL",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_THUN",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_WATER",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_SHINE",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_SWN_DARK",
+            "value": "Soldat"
+        },
+        {
+            "key": "JB_LW_HUN",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_FIRE",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_ICE",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_WIND",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_SOIL",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_THUN",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_WATER",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_SHINE",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_HUN_DARK",
+            "value": "Chasseur"
+        },
+        {
+            "key": "JB_LW_MNK",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_FIRE",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_ICE",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_WIND",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_SOIL",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_THUN",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_WATER",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_SHINE",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_MNK_DARK",
+            "value": "Moine"
+        },
+        {
+            "key": "JB_LW_LAN",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_FIRE",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_ICE",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_WIND",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_SOIL",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_THUN",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_WATER",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_SHINE",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_LAN_DARK",
+            "value": "Lancier"
+        },
+        {
+            "key": "JB_LW_CLR",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_FIRE",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_ICE",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_WIND",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_SOIL",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_THUN",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_WATER",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_SHINE",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_CLR_DARK",
+            "value": "Prêtre"
+        },
+        {
+            "key": "JB_LW_SAM",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_FIRE",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_ICE",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_WIND",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_SOIL",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_THUN",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_WATER",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_SHINE",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_SAM_DARK",
+            "value": "Samouraï"
+        },
+        {
+            "key": "JB_LW_DRG",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_FIRE",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_ICE",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_WIND",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_SOIL",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_THUN",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_WATER",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_SHINE",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_DRG_DARK",
+            "value": "Dragonnier"
+        },
+        {
+            "key": "JB_LW_BLM_FIRE",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_WATR",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_ICE",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_SOIL",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_THUN",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_WIND",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_SHINE",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_BLM_DARK",
+            "value": "Mage noir"
+        },
+        {
+            "key": "JB_LW_THI",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_FIRE",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_ICE",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_WIND",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_SOIL",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_THUN",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_WATER",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_SHINE",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_THI_DARK",
+            "value": "Voleur"
+        },
+        {
+            "key": "JB_LW_NIN",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_FIRE",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_ICE",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_WIND",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_SOIL",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_THUN",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_WATR",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_SHIN",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_NIN_DARK",
+            "value": "Ninja"
+        },
+        {
+            "key": "JB_LW_GUN",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_FIRE",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_ICE",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_WIND",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_SOIL",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_THUN",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_WATER",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_SHINE",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GUN_DARK",
+            "value": "Artilleur"
+        },
+        {
+            "key": "JB_LW_GRM_FIRE",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_ICE",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_WIND",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_SOIL",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_THUN",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_SHIN",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_DARK",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_GRM_WATR",
+            "value": "Mage vert"
+        },
+        {
+            "key": "JB_LW_MGK_FIRE",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_WATR",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_ICE",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_SOIL",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_THUN",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_SHINE",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_DARK",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_MGK_WIND",
+            "value": "Magilame"
+        },
+        {
+            "key": "JB_LW_RDM_FIRE",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_ICE",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_WIND",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_SOIL",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_THUN",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_WATR",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_SHIN",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_RDM_DARK",
+            "value": "Mage rouge"
+        },
+        {
+            "key": "JB_LW_TIM",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_FIRE",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_ICE",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_WIND",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_SOIL",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_THUN",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_WATER",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_SHINE",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_TIM_DARK",
+            "value": "Chronomage"
+        },
+        {
+            "key": "JB_LW_WHM",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_FIRE",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_ICE",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_WIND",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_SOIL",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_THUN",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_WATER",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_SHINE",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_WHM_DARK",
+            "value": "Mage blanc"
+        },
+        {
+            "key": "JB_LW_GLMS",
+            "value": "Ailes d'acier"
+        },
+        {
+            "key": "JB_FF14_YSTL",
+            "value": "Sorcière"
+        },
+        {
+            "key": "JB_FF14_TNCR",
+            "value": "Pistosabreur"
+        },
+        {
+            "key": "JB_LW_VIK",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_FIRE",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_ICE",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_WIND",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_SOIL",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_THUN",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_WATER",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_SHINE",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_VIK_DARK",
+            "value": "Viking"
+        },
+        {
+            "key": "JB_LW_FINA",
+            "value": "Mage blanc de Lapis"
+        },
+        {
+            "key": "JB_FFT_RAMZ",
+            "value": "Écuyer"
+        },
+        {
+            "key": "JB_FFT_GFGR",
+            "value": "Chevalier occulte"
+        },
+        {
+            "key": "JB_FFT_ORND",
+            "value": "Épée sacrée"
+        }
+    ]
+}
