@@ -4,14 +4,17 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": []
+    "types": [],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
   ],
   "include": [
-    ".",
+    "main.ts",
+    "polyfills.ts",
     "../node_modules/ng2-slugify/charmaps.ts"
   ]
 }

@@ -12,7 +12,7 @@ const yMatch = new Map([
 	['u', 0.75],
 	['g', 0.25],
 	['h', 0.25],
-	['k', 0.25]
+	['j', 0.25]
 ]);
 
 const eMatch = new Map([
@@ -58,11 +58,9 @@ const oMatch = new Map([
 	['l', 0.25]
 ]);
 
-function getYesMatchScore(val) {
+function getYesMatchScore(value) {
+	const [y, e, s] = value;
 	let score = 0;
-	const y = val[0];
-	const e = val[1];
-	const s = val[2];
 
 	if (yMatch.has(y)) {
 		score += yMatch.get(y);
@@ -79,10 +77,9 @@ function getYesMatchScore(val) {
 	return score;
 }
 
-function getNoMatchScore(val) {
+function getNoMatchScore(value) {
+	const [n, o] = value;
 	let score = 0;
-	const n = val[0];
-	const o = val[1];
 
 	if (nMatch.has(n)) {
 		score += nMatch.get(n);
@@ -95,14 +92,14 @@ function getNoMatchScore(val) {
 	return score;
 }
 
-module.exports = (val, opts) => {
-	if (getYesMatchScore(val) >= YES_MATCH_SCORE_THRESHOLD) {
+module.exports = (input, options) => {
+	if (getYesMatchScore(input) >= YES_MATCH_SCORE_THRESHOLD) {
 		return true;
 	}
 
-	if (getNoMatchScore(val) >= NO_MATCH_SCORE_THRESHOLD) {
+	if (getNoMatchScore(input) >= NO_MATCH_SCORE_THRESHOLD) {
 		return false;
 	}
 
-	return opts.default;
+	return options.default;
 };

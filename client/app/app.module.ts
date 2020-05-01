@@ -6,8 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
-import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
-import { ClipboardModule } from 'ngx-clipboard';
+import { Angulartics2Module } from 'angulartics2';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -76,13 +75,12 @@ export function createTranslateLoader(http: HttpClient) {
     FormsModule,
     AppRoutingModule,
     MultiselectDropdownModule,
-    LocalStorageModule.withConfig({
+    LocalStorageModule.forRoot({
       prefix: 'wotv-calc',
       storageType: 'localStorage'
     }),
     NgxMdModule.forRoot(),
-    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
-    ClipboardModule,
+    Angulartics2Module.forRoot(),
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -91,7 +89,7 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    NgbModule.forRoot(),
+    NgbModule,
     PrettyJsonModule
   ],
   providers: [

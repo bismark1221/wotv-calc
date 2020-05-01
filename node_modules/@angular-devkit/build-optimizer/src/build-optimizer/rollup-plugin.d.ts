@@ -8,6 +8,7 @@
 import { RawSourceMap } from 'source-map';
 export interface Options {
     sideEffectFreeModules?: string[];
+    angularCoreModules?: string[];
 }
 export default function optimizer(options: Options): {
     name: string;

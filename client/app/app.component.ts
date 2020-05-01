@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Angulartics2GoogleAnalytics, Angulartics2 } from 'angulartics2';
+import { Angulartics2 } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
@@ -16,6 +17,8 @@ export class AppComponent {
     private angulartics: Angulartics2,
     private localStorageService: LocalStorageService
   ) {
+    angulartics2GoogleAnalytics.startTracking();
+
     translate.addLangs(["en", "fr"]); //"en", "fr", "tw", "es", "de", "kr"
     translate.setDefaultLang('en');
 

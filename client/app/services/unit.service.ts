@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
-import { default as UNITS } from '../data/units.json';
+import UNITS from '../data/units.json';
 
 @Injectable()
 export class UnitService {

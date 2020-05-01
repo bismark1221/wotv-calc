@@ -28,6 +28,9 @@ define(function () {
     },
     searching: function () {
       return 'Recherche en cours…';
+    },
+    removeAllItems: function () {
+      return 'Supprimer tous les éléments';
     }
   };
 });

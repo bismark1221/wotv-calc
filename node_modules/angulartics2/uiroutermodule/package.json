@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/package.schema.json",
+  "name": "angulartics2/uiroutermodule",
+  "description": "The ui-router module",
+  "homepage": "https://angulartics.github.io/angulartics2/",
+  "author": "João Ribeiro <jonnybgod@gmail.com> (http://github.com/JonnyBGod)",
+  "repository": "angulartics/angulartics2",
+  "license": "MIT",
+  "main": "bundles/angulartics2-uiroutermodule.umd.js",
+  "module": "fesm5/angulartics2-uiroutermodule.js",
+  "es2015": "fesm2015/angulartics2-uiroutermodule.js",
+  "esm5": "esm5/angulartics2-uiroutermodule.js",
+  "esm2015": "esm2015/angulartics2-uiroutermodule.js",
+  "fesm5": "fesm5/angulartics2-uiroutermodule.js",
+  "fesm2015": "fesm2015/angulartics2-uiroutermodule.js",
+  "typings": "angulartics2-uiroutermodule.d.ts",
+  "metadata": "angulartics2-uiroutermodule.metadata.json",
+  "sideEffects": false,
+  "peerDependencies": {
+    "tslib": "^1.10.0"
+  }
+}
