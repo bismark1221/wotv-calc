@@ -70,12 +70,14 @@ export class EquipmentComponent implements OnInit {
       i++;
     });
 
-    if (this.equipment.acquisition && this.equipment.acquisition.type === "tmr") {
+    if (this.equipment.acquisition.type === "tmr") {
       let unit = this.getUnit(this.equipment.acquisition.unitId)
       this.equipment.acquisition.unit = {
         name: unit.names.en,
         slug: unit.slug
       }
+    } else {
+      this.equipment.acquisition.name = this.equipment.acquisition.type === "Unknown" ? "Unknown" : this.equipment.acquisition.type[lang]
     }
 
     this.equipment.growIds = Object.keys(this.equipment.grows)

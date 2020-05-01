@@ -198,6 +198,7 @@ export class JsonService {
     9: "DARK",
     101: "HUMAN",
     103: "BEAST",
+    104: "DEMON",
     105: "DRAGON",
     106: "ELEMENTAL",
     107: "AVIAN",
@@ -206,7 +207,8 @@ export class JsonService {
     111: "PLANT",
     112: "REAPER",
     113: "STONE",
-    114: "METAL"
+    114: "METAL",
+    204: "FENNES"
   }
 
   damageEffectType = [
@@ -754,7 +756,8 @@ export class JsonService {
       jobLevel: panelBuff.need_level,
       jp: panelBuff.jp,
       sp: panelBuff.sp,
-      effects: []
+      effects: [],
+      dataId: panelBuff.value
     };
 
     let finished = false;
@@ -763,12 +766,16 @@ export class JsonService {
       if (this.buffs[panelBuff.value]["type" + i]) {
 
         if (!this.buffTypes[this.buffs[panelBuff.value]["type" + i]]) {
-          console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this.buffs[panelBuff.value]["type" + i])
+          console.log("@@@@@ " + unit.names.en + " -- " + panelBuff.value + " -- EFFECT : " + this.buffs[panelBuff.value]["type" + i])
           console.log(this.buffs[panelBuff.value])
         }
 
+        if (this.buffs[panelBuff.value]["tag" + i] && !this.killers[this.buffs[panelBuff.value]["tag" + i]]) {
+          console.log("@@@@@ " + unit.names.en + " -- " + panelBuff.value + " -- KILLER : " + this.buffs[panelBuff.value]["tag" + i])
+        }
+
         buff.effects.push({
-          type: this.buffTypes[this.buffs[panelBuff.value]["type" + i]],
+          type: this.buffs[panelBuff.value]["tag" + i] ? this.killers[this.buffs[panelBuff.value]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[panelBuff.value]["type" + i]],
           value: this.buffs[panelBuff.value]["val" + i],
           calcType: this.calcType[this.buffs[panelBuff.value]["calc" + i]] ? this.calcType[this.buffs[panelBuff.value]["calc" + i]] : "unknow"
         });
@@ -1116,7 +1123,11 @@ export class JsonService {
       stats: {},
       SPs : [],
       element: this.elements[esper.elem[0]],
-      image: esper.charaId.toLowerCase()
+      image: esper.charaId.toLowerCase(),
+      board: {
+        nodes: {},
+        lines: []
+      }
     };
 
     this.getNames(this.wotvEspers[dataId], 'unit');
@@ -1146,7 +1157,12 @@ export class JsonService {
     if (this.espersBoards[esper.dataId]) {
       this.espersBoards[esper.dataId].panels.forEach(item => {
         this.addPassiveBuff(esper, item)
+        esper.board.nodes[item.panel_id] = item.value
       });
+
+      this.espersBoards[esper.dataId].lines.forEach(line => {
+        esper.board.lines.push(line.line_id)
+      })
     }
   }
 

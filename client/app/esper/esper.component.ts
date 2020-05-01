@@ -4,6 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
 import { SkillService } from '../services/skill.service';
+import { GridService } from '../services/grid.service';
 
 
 @Component({
@@ -13,13 +14,15 @@ import { SkillService } from '../services/skill.service';
 })
 export class EsperComponent implements OnInit {
   esper = null;
+  grid = null;
 
   constructor(
     private esperService: EsperService,
     private skillService: SkillService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private gridService: GridService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEsper();
@@ -57,16 +60,6 @@ export class EsperComponent implements OnInit {
 
       this.skillService.formatRange(this.esper, skill);
     });
-    this.esper.effectBuffs = [];
-
-    this.esper.buffs.forEach(buff => {
-      let effect = buff.effects[0]
-      this.esper.effectBuffs.push({
-        html: this.skillService.formatEffect(this.esper, buff, effect, false),
-        sp: buff.sp
-      })
-    });
-    this.skillService.sortEffectBuffs(this.esper.effectBuffs);
 
     this.esper.rarity = this.esperService.findRarity(this.esper);
 
@@ -76,5 +69,7 @@ export class EsperComponent implements OnInit {
         this.esper.maxSP += sp;
       })
     })
+
+    this.grid = this.gridService.generateEsperGrid(this.esper, this.skillService, this.translateService)
   }
 }

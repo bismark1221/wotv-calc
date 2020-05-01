@@ -131,21 +131,9 @@
   </table>
 </div>
 
-
 <div class="row">
-  <table class="skillsTable">
-    <tbody>
-      <tr>
-        <th colspan="2">Board Effects</th>
-      </tr>
-      <tr>
-        <th>Effects</th>
-        <th>Cost</th>
-      </tr>
-      <tr *ngFor="let buff of esper.effectBuffs">
-        <td>{{ buff.html }}</td>
-        <td>{{ buff.sp }}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="hexGridContainer" style="text-align: center;">
+    <div [innerHTML]="grid.nodes"></div>
+    <div [innerHTML]="grid.lines"></div>
+  </div>
 </div>

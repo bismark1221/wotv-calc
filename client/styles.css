@@ -129,3 +129,138 @@ td {
   background-color: #e6e6e6 !important;
   border-color: #adadad !important;
 }
+
+
+
+
+/* Esper Grid */
+.hexGridContainer {
+  margin-left: 150px;
+  height: 1000px;
+  width: 1000px;
+  position: relative;
+  transform-origin: 50% 50%;
+}
+
+.hexGrid {
+  padding: 0;
+}
+
+.hexGrid, .hexGrid li {
+  overflow: hidden
+}
+
+.hexGrid li {
+  -moz-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  -o-transform: rotate(-60deg) skewY(30deg);
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  float: left;
+  list-style-type: none;
+  padding: 0 0 10.722533817%;
+  position: relative;
+  transform: rotate(-60deg) skewY(30deg);
+  visibility: hidden;
+  width: 9.285714286%;
+}
+
+.hexGrid li * {
+  visibility: visible
+}
+
+.hexGrid li .hex {
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  align-items: center;
+  background-color: #f5f6f5;
+  color: #b0b0b0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: skewY(-30deg) rotate(60deg);
+  width: 100%
+}
+
+.hexGrid li .hex img {
+  opacity: .6
+}
+
+.hexGrid li .hex.selected, .hexGrid li .hex.selected a {
+  color: #000
+}
+
+.hexGrid li .hex.selected img {
+  opacity: 1
+}
+
+.hexGrid li .hex.hover, .hexGrid li .hex:hover {
+  cursor: pointer;
+  filter: contrast(70%)
+}
+
+.hexGrid li .hex.hover *, .hexGrid li .hex.selected *, .hexGrid li .hex:hover * {
+  opacity: 1 !important
+}
+
+.hexGrid li .hex.selected {
+  filter: contrast(100%)
+}
+
+.hexGrid li .hex.hideNode {
+  visibility: hidden
+}
+
+.hexGrid li:nth-child(9n+2), .hexGrid li:nth-child(9n+4), .hexGrid li:nth-child(9n+6), .hexGrid li:nth-child(9n+8) {
+  margin: 0 1%
+}
+
+.hexGrid li:nth-child(18n+10), .hexGrid li:nth-child(18n+11), .hexGrid li:nth-child(18n+12), .hexGrid li:nth-child(18n+13), .hexGrid li:nth-child(18n+14), .hexGrid li:nth-child(18n+15), .hexGrid li:nth-child(18n+16), .hexGrid li:nth-child(18n+17), .hexGrid li:nth-child(18n+18) {
+  -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  margin-bottom: -2%;
+  margin-top: -2%;
+  transform: translateX(50%) rotate(-60deg) skewY(30deg)
+}
+
+.hexGrid li:nth-child(18n+10) {
+  margin-left: .5%
+}
+
+.hexGrid li .hex .icon {
+  position: absolute;
+  top: 7px
+}
+
+.hexGrid li .hex .cost {
+  bottom: 10px;
+  position: absolute;
+  font-size: 14px;
+}
+
+.hexGrid li .hex .text {
+  text-align: center;
+  z-index: 10;
+  font-size: 12px;
+}
+
+.line {
+  border: none;
+  outline: 6px solid grey;
+  z-index: -1;
+  width: 100px; 
+  position: absolute; 
+}
+
+.hex i.img {
+  height: 20px;
+  width: 20px
+}

@@ -378,7 +378,7 @@ export class SkillService {
         html = this.getChance(effect, false) + " to physical evasion" + this.getValue(effect) + this.getTurns(effect)
       break
       case "MAGIC_EVADE" :
-        html = this.getChance(effect, false) + " to physical evasion" + this.getValue(effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " to magical evasion" + this.getValue(effect) + this.getTurns(effect)
       break
       case "CRITIC_BEHIND_GUARENTED" :
         html = "Guarented critical hit from behind"
@@ -463,6 +463,15 @@ export class SkillService {
       break
       case "BEAST_KILLER" :
         html = "Increase beast killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "DEMON_KILLER" :
+        html = "Increase demon killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "AQUATIC_KILLER" :
+        html = "Increase aquatic killer" + this.getValue(effect) + this.getTurns(effect)
+      break
+      case "ELEMENTAL_KILLER" :
+        html = "Increase elemental killer" + this.getValue(effect) + this.getTurns(effect)
       break
       case "AVIAN_KILLER" :
         html = "Increase avian killer" + this.getValue(effect) + this.getTurns(effect)

@@ -42,6 +42,7 @@ import { EquipmentService } from './services/equipment.service';
 import { CardService } from './services/card.service';
 import { EsperService } from './services/esper.service';
 import { JobService } from './services/job.service';
+import { GridService } from './services/grid.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 
@@ -101,7 +102,8 @@ export function createTranslateLoader(http: HttpClient) {
     SkillService,
     CardService,
     EsperService,
-    JobService
+    JobService,
+    GridService
   ],
   bootstrap: [
     AppComponent

@@ -21,7 +21,7 @@
            <a [routerLink]="['/unit/' + equipment.acquisition.unit.slug ]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
         </td>
         <td *ngIf="equipment.acquisition.type !== 'tmr'">
-          {{ equipment.acquisition.type }}
+          {{ equipment.acquisition.name }}
         </td>
       </tr>
     </tbody>
