@@ -6,6 +6,7 @@ import { UnitService } from '../services/unit.service';
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 import { JobService } from '../services/job.service';
+import { GridService } from '../services/grid.service';
 
 
 @Component({
@@ -16,6 +17,7 @@ import { JobService } from '../services/job.service';
 export class UnitComponent implements OnInit {
   unit = null;
   jobs = [];
+  grid = null;
 
   constructor(
     private unitService: UnitService,
@@ -24,7 +26,8 @@ export class UnitComponent implements OnInit {
     private jobService: JobService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private gridService: GridService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatUnit();
@@ -134,6 +137,8 @@ export class UnitComponent implements OnInit {
       this.jobs.push(job)
       i++
     })
+
+    this.grid = this.gridService.generateUnitGrid(this.unit)
   }
 
   private calcJobStat(job, subJob) {

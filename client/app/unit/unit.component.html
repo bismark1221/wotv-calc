@@ -472,3 +472,10 @@
     </tbody>
   </table>
 </div>
+
+<div class="row" *ngIf="grid">
+  <div class="hexGridContainer" style="text-align: center;">
+    <div [innerHTML]="grid.nodes"></div>
+    <div [innerHTML]="grid.lines"></div>
+  </div>
+</div>

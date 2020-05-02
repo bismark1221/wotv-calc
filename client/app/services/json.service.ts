@@ -655,6 +655,10 @@ export class JsonService {
       equipments: {
         weapons: [],
         armors: []
+      },
+      board: {
+        nodes: {},
+        lines: []
       }
     };
 
@@ -712,7 +716,13 @@ export class JsonService {
         } else {
           this.addSkill(unit, item)
         }
+
+        unit.board.nodes[item.panel_id] = item.value
       });
+
+      this.boards[unit.dataId].lines.forEach(line => {
+        unit.board.lines.push(line.line_id)
+      })
     }
   }
 
@@ -1243,7 +1253,7 @@ export class JsonService {
 
             i++;
           }
-          
+
           this.wotvEquipments[rType].acquisition = {
             type: "tmr",
             unitId: unitId
@@ -1303,7 +1313,7 @@ export class JsonService {
           for (let j = 0; j < this.equipments[dataId]["skl" + i].length; j++) {
             if (lastSkillId[j] !== this.equipments[dataId]["skl" + i][j]) {
               let skill = {
-                names: { 
+                names: {
                   en: this.names.en.skill[this.equipments[dataId]["skl" + i][j]],
                   fr: this.names.fr.skill[this.equipments[dataId]["skl" + i][j]]
                 },
