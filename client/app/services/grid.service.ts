@@ -476,9 +476,42 @@ export class GridService {
       linesHtml += this.lines[line]
     })
 
+
+    this.generateNodesHierachy(unit)
+
     return {
       nodes: nodesHtml,
       lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml)
     }
+  }
+
+  generateNodesHierachy(item) {
+    let lines = JSON.parse(JSON.stringify(item.board.lines))
+    this.searchChildNodes(lines, 0)
+  }
+
+  private searchChildNodes(lines, node) {
+    let childNodes = []
+    let linesToRemove = []
+
+    this.nodeLine.forEach((line, lineIndex) => {
+      let boardIndex = lines.find(line => line === lineIndex);
+
+      if (line.node1 === node && boardIndex) {
+        childNodes.push(line.node2)
+        linesToRemove.push(lineIndex)
+
+      } else if (line.node2 === node && boardIndex) {
+        childNodes.push(line.node1)
+        linesToRemove.push(lineIndex)
+      }
+    })
+
+    linesToRemove.sort(function(a, b){return b-a});
+    linesToRemove.forEach(line => {
+      lines.splice(line, 1)
+    })
+
+    return childNodes
   }
 }
