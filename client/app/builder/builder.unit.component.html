@@ -112,6 +112,32 @@
         <td>{{ stats.JUMP.baseTotal }}</td>
       </tr>
       <tr>
+        <td>Guild</td>
+        <td>{{ stats.HP.guild }}</td>
+        <td>{{ stats.TP.guild }}</td>
+        <td></td>
+        <td>{{ stats.ATK.guild }}</td>
+        <td>{{ stats.MAG.guild }}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Board</td>
+        <td>{{ stats.HP.board }}</td>
+        <td>{{ stats.TP.board }}</td>
+        <td>{{ stats.AP.board }}</td>
+        <td>{{ stats.ATK.board }}</td>
+        <td>{{ stats.MAG.board }}</td>
+        <td>{{ stats.DEX.board }}</td>
+        <td>{{ stats.AGI.board }}</td>
+        <td>{{ stats.LUCK.board }}</td>
+        <td>{{ stats.MOVE.board }}</td>
+        <td>{{ stats.JUMP.board }}</td>
+      </tr>
+      <tr>
         <td>Total</td>
         <td>{{ stats.HP.total }}</td>
         <td>{{ stats.TP.total }}</td>
@@ -141,7 +167,7 @@
         <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
           <i class="fa fa-plus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
           <span class="text">{{ grid.nodesForGrid[node].value }}</span>
-          <span class="skillLevel" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">{{ getSkillLevel(unit.board.nodes[node].dataId) }}</span>
+          <span class="skillLevel" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">{{ unit.board.nodes[node].level }}</span>
           <i class="fa fa-minus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
         </div>
       </li>

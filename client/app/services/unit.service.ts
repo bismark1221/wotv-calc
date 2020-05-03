@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -17,7 +18,12 @@ export class UnitService {
   private oFxNcL: any;
   private oFyNcL: any;
 
-  constructor(private translateService: TranslateService) {}
+  savedUnits
+
+  constructor(
+    private translateService: TranslateService,
+    private localStorageService: LocalStorageService
+  ) {}
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -129,5 +135,35 @@ export class UnitService {
     }
 
     return this.units.find(unit => unit.slug === slug);
+  }
+
+  getSavedUnits() {
+    this.savedUnits = this.localStorageService.get('units') ? this.localStorageService.get('units') : {};
+    return this.savedUnits;
+  }
+
+  saveUnit(unit) {
+    if (!this.savedUnits) {
+      this.getSavedUnits()
+    }
+
+    console.log(unit)
+    this.savedUnits[unit.dataId] = {
+      star: unit.star,
+      lb: unit.lb,
+      level: unit.level,
+      jobs: [
+        unit.jobsData[0].level,
+        unit.jobsData[1].level,
+        unit.jobsData[2].level
+      ],
+      nodes: {}
+    }
+
+    Object.keys(unit.board.nodes).forEach(nodeId => {
+      this.savedUnits[unit.dataId].nodes[nodeId] = unit.board.nodes[nodeId].level
+    })
+
+    this.localStorageService.set('units', this.savedUnits);
   }
 }

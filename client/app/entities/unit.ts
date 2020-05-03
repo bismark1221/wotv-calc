@@ -90,7 +90,7 @@ export class Unit {
     SPR: 0,
     DEX: 0,
     AGI: 0,
-    LCK: 0,
+    LUCK: 0,
     CRITIC_RATE: 0,
   };
   remainingBuffs = [];

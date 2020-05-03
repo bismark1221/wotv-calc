@@ -107,7 +107,7 @@ export class JsonService {
     24: "SPR",
     25: "DEX",
     26: "AGI",
-    27: "LCK",
+    27: "LUCK",
     28: "MOVE",
     29: "JUMP",
     42: "FIRE_ATK",

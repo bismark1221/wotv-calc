@@ -17,7 +17,6 @@ export class BuilderUnitComponent implements OnInit {
   unit
   tableLevels
   tableJobLevels
-  savedUnits
   guild
   stats
   grid
@@ -46,7 +45,6 @@ export class BuilderUnitComponent implements OnInit {
 
   private getUnits() {
     this.units = this.unitService.getUnitsForBuilder(this.translateService);
-    this.savedUnits = this.localStorageService.get('units') ? this.localStorageService.get('units') : {};
     this.translateUnits();
   }
 
@@ -62,29 +60,21 @@ export class BuilderUnitComponent implements OnInit {
 
   private selectUnit() {
     let lang = this.translateService.currentLang
-
-    if (this.savedUnits[this.unit.dataId]) {
-      this.unit = this.savedUnits[this.unit.dataId]
-
-      this.unit.jobsData.forEach(job => {
-        job.name = job.names[lang]
-      })
-    } else {
-      this.unit.star = 1;
-      this.unit.lb = 0;
-      this.unit.level = 1;
-
-      this.unit.jobsData = []
-      this.unit.jobs.forEach((jobId, jobIndex) => {
-        let job = this.jobService.getJob(jobId)
-        job.name = job.names[lang]
-        job.level = 1;
-        this.unit.jobsData.push(job)
-      })
-    }
-
-    let lang = this.translateService.currentLang
     this.unit.name = this.unit.names[lang]
+
+    this.unit.jobsData = []
+    this.unit.jobs.forEach((jobId, jobIndex) => {
+      let job = this.jobService.getJob(jobId)
+      job.name = job.names[lang]
+      job.level = 1;
+      this.unit.jobsData.push(job)
+    })
+
+    this.unit.star = 1;
+    this.unit.lb = 0;
+    this.unit.level = 1;
+
+    this.initiateSavedUnit()
 
     this.updateMaxLevel();
     this.updateMaxJobLevel();
@@ -92,6 +82,30 @@ export class BuilderUnitComponent implements OnInit {
     this.grid = this.gridService.generateUnitGrid(this.unit)
 
     console.log(this.unit)
+  }
+
+  private initiateSavedUnit() {
+    let savedUnits = this.unitService.getSavedUnits()
+    let unit = savedUnits[this.unit.dataId]
+    console.log(unit)
+    if (unit) {
+      let lang = this.translateService.currentLang
+
+      this.unit.star = unit.star;
+      this.unit.lb = unit.lb;
+      this.unit.level = unit.level;
+
+      this.unit.jobs.forEach((jobId, jobIndex) => {
+        this.unit.jobsData[jobIndex].level = unit.jobs[jobIndex]
+      })
+
+      let activatedSkills = [];
+
+      Object.keys(unit.nodes).forEach(nodeId => {
+        this.unit.board.nodes[nodeId].level = unit.nodes[nodeId]
+        this.unit.board.nodes[nodeId].activated = true
+      })
+    }
   }
 
   private changeStar() {
@@ -206,15 +220,39 @@ export class BuilderUnitComponent implements OnInit {
 
     Object.keys(this.unit.stats).forEach(stat => {
       this.stats[stat].total = this.stats[stat].baseTotal;
+      this.stats[stat].board = 0;
       if (statsPerStatue[stat]) {
-        this.stats[stat].total += Math.floor(this.stats[stat].baseTotal * this.guild[statsPerStatue[stat]] / 100)
+        this.stats[stat].guild = Math.floor(this.stats[stat].baseTotal * this.guild[statsPerStatue[stat]] / 100)
+        this.stats[stat].total += this.stats[stat].guild
       }
     });
+
+    let statsType = ["HP", "TP", "AP", "ATK", "MAG", "DEX", "AGI", "LUCK", "MOVE", "JUMP"]
+
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      let node = this.unit.board.nodes[nodeId]
+      if (node.level) {
+        let buff = this.unit.buffs.find(buff => buff.dataId === node.dataId)
+        if (buff) {
+          buff.effects.forEach(effect => {
+            if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+              this.stats[effect.type].board += effect.value
+            } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+              this.stats[effect.type].board += Math.floor(this.stats[effect.type].baseTotal * effect.value / 100)
+            } else {
+              console.log("not manage effect")
+              console.log(buff)
+            }
+          })
+        }
+      }
+    })
   }
 
   rightClickNode(node) {
     if (node !== 0) {
       this.hideNode(node)
+      this.changeLevels()
     }
   }
 
@@ -225,6 +263,7 @@ export class BuilderUnitComponent implements OnInit {
       } else {
         this.hideNode(node)
       }
+      this.changeLevels()
     }
   }
 
@@ -251,25 +290,20 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
-  private updateSkill(node, increase) {
-    console.log(this.unit.board.nodes[node].dataId)
+  private updateSkill(nodeId, increase) {
+    let node = this.unit.board.nodes[nodeId]
 
-    if (this.grid.nodesForGrid[node].subType == "buff") {
-      let skill = this.unit.buffs.find(buff => buff.dataId === this.unit.board.nodes[node].dataId)
-      skill.level = increase ? 1 : 0;
-
+    if (this.grid.nodesForGrid[nodeId].subType == "buff") {
+      node.level = increase ? 1 : 0;
     } else {
-      let skill = this.unit.skills.find(skill => skill.dataId === this.unit.board.nodes[node].dataId)
-      console.log(typeof(skill.level) == "number")
       if (increase) {
-        skill.level = typeof(skill.level) == "number" ? (skill.level == 20 ? 20 : skill.level + 1) : 1
+        node.level = typeof(node.level) == "number" ? (node.level == 20 ? 20 : node.level + 1) : 1
       } else {
-        skill.level = typeof(skill.level) == "number" ? (skill.level == 0 ? 0 : skill.level - 1) : 0
+        node.level = typeof(node.level) == "number" ? (node.level == 0 ? 0 : node.level - 1) : 0
       }
     }
 
-    console.log(skill.level)
-    return skill.level
+    return node.level
   }
 
   getSkillLevel(skillId) {
@@ -279,10 +313,7 @@ export class BuilderUnitComponent implements OnInit {
 
 
   private consoleLog() {
-    this.savedUnits[this.unit.dataId] = this.unit
-    this.localStorageService.set('units', this.savedUnits);
+    this.unitService.saveUnit(this.unit)
     this.guildService.saveGuild()
-
-    console.log(this.savedUnits)
   }
 }

@@ -245,7 +245,7 @@ export class SkillService {
       case "AGI" :
         html = this.getIncrease(effect) + " AGI" + this.getValue(effect) + this.getTurns(effect)
       break
-      case "LCK" :
+      case "LUCK" :
         html = this.getIncrease(effect) + " LUCK" + this.getValue(effect) + this.getTurns(effect)
       break
       case "MOVE" :
@@ -568,7 +568,7 @@ export class SkillService {
 
       let pool = damage.pool && damage.pool !== "HP" ? " " + damage.pool + " " : "";
 
-      html = html + this.upperCaseFirst((damage.effType ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage") 
+      html = html + this.upperCaseFirst((damage.effType ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage")
       + (pool === "" && damage.effType === "ABSORB" ? " HP " : pool)
       + this.getValue(damage, false));
     }
@@ -599,7 +599,7 @@ export class SkillService {
             let countCol = 0;
 
             for(let j = middle - countLine; j <= middle; j++) { // up-left
-              if ((skill.range.s !== 0 || i === middle || j === middle) 
+              if ((skill.range.s !== 0 || i === middle || j === middle)
                 && (!skill.range.m || (countCol < skill.range.l - skill.range.m ))
               ) {
                 skillTable[i][j] = "R"
@@ -610,7 +610,7 @@ export class SkillService {
 
             countCol = 0;
             for(let j = middle + 1; j <= middle + countLine; j++) { //up-right
-              if ((skill.range.s !== 0 || i === middle || j === middle) 
+              if ((skill.range.s !== 0 || i === middle || j === middle)
                 && (!skill.range.m || (countCol >= ((countLine) - (skill.range.l - skill.range.m)) ))
               ) {
                 skillTable[i][j] = "R"
@@ -633,7 +633,7 @@ export class SkillService {
 
               countCol = 0;
               for(let j = middle + 1; j <= middle + skill.range.l - countLine; j++) { //down-right
-                if ((skill.range.s !== 0 || middle + countLine === middle || j === middle) 
+                if ((skill.range.s !== 0 || middle + countLine === middle || j === middle)
                   && (!skill.range.m || (countCol >= ((skill.range.l - countLine) - (skill.range.l - skill.range.m)) ))
                 ) {
                   skillTable[middle + countLine][j] = "R"
@@ -703,7 +703,7 @@ export class SkillService {
             }
 
             for(let j = middle + 1; j <= middle + skill.aoe.l - countLine; j++) { //down-right
-              skillTable[maxLine + countLine][j] =skillTable[maxLine + countLine][j] === "N" ? "A" : "AR"; 
+              skillTable[maxLine + countLine][j] =skillTable[maxLine + countLine][j] === "N" ? "A" : "AR";
             }
           }
 
@@ -729,7 +729,7 @@ export class SkillService {
       if (skill.aoe && skill.aoe.l) {
         html+= "<div class='tableSkillHeight'>AOE Height: " + skill.aoe.h + "</div>"
       }
-      
+
       skill.skillTableHtml = html;
     }
   }
