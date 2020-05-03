@@ -17,6 +17,7 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 
 import { BuilderUnitComponent } from './builder/builder.unit.component';
+import { BuilderGuildComponent } from './builder/builder.guild.component';
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -32,6 +33,7 @@ const ROUTES: Routes = [
   { path: 'builder', component: BuilderUnitComponent },
   { path: 'builder/unit', component: BuilderUnitComponent },
   { path: 'builder/unit/:slug', component: BuilderUnitComponent },
+  { path: 'builder/guild', component: BuilderGuildComponent },
 
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },

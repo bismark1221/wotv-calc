@@ -475,7 +475,20 @@
 
 <div class="row" *ngIf="grid">
   <div class="hexGridContainer" style="text-align: center;">
-    <div [innerHTML]="grid.nodes"></div>
+    <ul class="hexGrid">
+      <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
+        <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+
+        <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+          <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
+        </div>
+
+        <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
+          <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+        </div>
+      </li>
+    </ul>
+
     <div [innerHTML]="grid.lines"></div>
   </div>
 </div>

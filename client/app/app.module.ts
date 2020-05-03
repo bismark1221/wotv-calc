@@ -37,6 +37,7 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 
 import { BuilderUnitComponent } from './builder/builder.unit.component';
+import { BuilderGuildComponent } from './builder/builder.guild.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -74,7 +75,8 @@ export function createTranslateLoader(http: HttpClient) {
     EquipmentsComponent,
     EquipmentComponent,
     RoundDownPipe,
-    BuilderUnitComponent
+    BuilderUnitComponent,
+    BuilderGuildComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

@@ -408,27 +408,26 @@ export class GridService {
   ) {}
 
   generateEsperGrid(esper) {
-    let nodesHtml = '<ul class="hexGrid">';
+    let nodesForGrid = []
 
     this.gridNodes.forEach(node => {
       if (esper.board.nodes[node.toString()]) {
         let buff = esper.buffs.find(buff => buff.dataId === esper.board.nodes[node.toString()].dataId)
 
-        nodesHtml += '<li class="node_' + node + '"><div class="hex">'
-        //nodesHtml += '<span class="iconHolder"><img class="icon" src="/img/items/ability_100.png"></span>'
-        nodesHtml += '<span class="text">'+ this.skillService.formatEffect(esper, buff, buff.effects[0], false) + '</span>'
-        nodesHtml += '<span class="cost">' + buff.sp + ' SP</span>'
-        nodesHtml += '</div></li>'
+        nodesForGrid[node] = {
+          type: "text",
+          value: this.skillService.formatEffect(esper, buff, buff.effects[0], false)
+        }
       } else if (node === 0) {
-        nodesHtml += '<li $node="' + node + '"><div class="hex activated">'
-        nodesHtml += '<span class="fullIcon"><img src="/assets/units/' + esper.image + '_s.png"></span>'
-        nodesHtml += '</div></li>'
+        nodesForGrid[node] = {
+          type: "center"
+        }
       } else {
-        nodesHtml += '<li><div class="hex hideNode"></div></li>'
+        nodesForGrid[node] = {
+          type: "hidden"
+        }
       }
-    });
-
-    nodesHtml += '</ul>'
+    })
 
     let linesHtml = '';
     esper.board.lines.forEach(line => {
@@ -438,40 +437,44 @@ export class GridService {
     this.generateNodesHierachy(esper)
 
     return {
-      nodes: nodesHtml,
-      lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml)
+      lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml),
+      nodesForGrid: nodesForGrid,
+      gridNodes: this.gridNodes
     }
   }
 
   generateUnitGrid(unit) {
-    let nodesHtml = '<ul class="hexGrid">';
+    let nodesForGrid = []
 
     this.gridNodes.forEach(node => {
       if (unit.board.nodes[node.toString()]) {
         let skill = unit.buffs.find(buff => buff.dataId === unit.board.nodes[node.toString()].dataId)
         let text = ""
+        let subType = "buff"
 
         if (!skill) {
           skill = unit.skills.find(skill => skill.dataId === unit.board.nodes[node.toString()].dataId)
-          text = skill.name
+          text = skill.names[this.translateService.currentLang]
+          subType = "skill"
         } else {
           text = this.skillService.formatEffect(unit, skill, skill.effects[0], false)
         }
 
-        nodesHtml += '<li class="node_' + node + '"><div class="hex">'
-        //nodesHtml += '<span class="iconHolder"><img class="icon" src="/img/items/ability_100.png"></span>'
-        nodesHtml += '<span class="text">'+ text + '</span>'
-        nodesHtml += '</div></li>'
+        nodesForGrid[node] = {
+          type: "text",
+          subType: subType,
+          value: text
+        }
       } else if (node === 0) {
-        nodesHtml += '<li $node="' + node + '"><div class="hex activated">'
-        nodesHtml += '<span class="fullIcon"><img src="/assets/units/' + unit.image + '_m.png"></span>'
-        nodesHtml += '</div></li>'
+        nodesForGrid[node] = {
+          type: "center"
+        }
       } else {
-        nodesHtml += '<li><div class="hex hideNode">' + node + '</div></li>'
+        nodesForGrid[node] = {
+          type: "hidden"
+        }
       }
-    });
-
-    nodesHtml += '</ul>'
+    })
 
     let linesHtml = '';
     unit.board.lines.forEach(line => {
@@ -481,8 +484,9 @@ export class GridService {
     this.generateNodesHierachy(unit)
 
     return {
-      nodes: nodesHtml,
-      lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml)
+      lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml),
+      nodesForGrid: nodesForGrid,
+      gridNodes: this.gridNodes
     }
   }
 

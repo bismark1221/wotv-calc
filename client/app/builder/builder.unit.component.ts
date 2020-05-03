@@ -5,6 +5,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
 import { GuildService } from '../services/guild.service';
+import { GridService } from '../services/grid.service';
 
 @Component({
   selector: 'app-builder-unit',
@@ -19,13 +20,15 @@ export class BuilderUnitComponent implements OnInit {
   savedUnits
   guild
   stats
+  grid
 
   constructor(
     private unitService: UnitService,
     private jobService: JobService,
     private localStorageService: LocalStorageService,
     private translateService: TranslateService,
-    private guildService: GuildService
+    private guildService: GuildService,
+    private gridService: GridService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
@@ -39,7 +42,6 @@ export class BuilderUnitComponent implements OnInit {
 
   private getGuild() {
     this.guild = this.guildService.getGuild()
-    console.log(this.guild)
   }
 
   private getUnits() {
@@ -59,6 +61,8 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private selectUnit() {
+    let lang = this.translateService.currentLang
+
     if (this.savedUnits[this.unit.dataId]) {
       this.unit = this.savedUnits[this.unit.dataId]
 
@@ -85,6 +89,9 @@ export class BuilderUnitComponent implements OnInit {
     this.updateMaxLevel();
     this.updateMaxJobLevel();
     this.changeLevels();
+    this.grid = this.gridService.generateUnitGrid(this.unit)
+
+    console.log(this.unit)
   }
 
   private changeStar() {
@@ -188,7 +195,7 @@ export class BuilderUnitComponent implements OnInit {
     })
 
     Object.keys(this.stats).forEach(stat => {
-      this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal) 
+      this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal)
     })
 
     this.calculateTotalStats()
@@ -203,6 +210,70 @@ export class BuilderUnitComponent implements OnInit {
         this.stats[stat].total += Math.floor(this.stats[stat].baseTotal * this.guild[statsPerStatue[stat]] / 100)
       }
     });
+  }
+
+  rightClickNode(node) {
+    if (node !== 0) {
+      this.hideNode(node)
+    }
+  }
+
+  clickNode(node) {
+    if (node !== 0) {
+      if (!this.unit.board.nodes[node].activated || this.grid.nodesForGrid[node].subType == "skill") {
+        this.showNode(node)
+      } else {
+        this.hideNode(node)
+      }
+    }
+  }
+
+  showNode(node) {
+    if (node !== 0) {
+      if (!this.unit.board.nodes[node].activated) {
+        this.unit.board.nodes[node].activated = true;
+        this.showNode(this.unit.board.nodes[node].parent)
+      }
+
+      this.updateSkill(node, true)
+    }
+  }
+
+  hideNode(node) {
+    if (node !== 0) {
+      let level = this.updateSkill(node, false)
+      if (level === 0) {
+        this.unit.board.nodes[node].activated = false;
+        this.unit.board.nodes[node].children.forEach(childNode => {
+          this.hideNode(childNode)
+        })
+      }
+    }
+  }
+
+  private updateSkill(node, increase) {
+    console.log(this.unit.board.nodes[node].dataId)
+
+    if (this.grid.nodesForGrid[node].subType == "buff") {
+      let skill = this.unit.buffs.find(buff => buff.dataId === this.unit.board.nodes[node].dataId)
+      skill.level = increase ? 1 : 0;
+
+    } else {
+      let skill = this.unit.skills.find(skill => skill.dataId === this.unit.board.nodes[node].dataId)
+      console.log(typeof(skill.level) == "number")
+      if (increase) {
+        skill.level = typeof(skill.level) == "number" ? (skill.level == 20 ? 20 : skill.level + 1) : 1
+      } else {
+        skill.level = typeof(skill.level) == "number" ? (skill.level == 0 ? 0 : skill.level - 1) : 0
+      }
+    }
+
+    console.log(skill.level)
+    return skill.level
+  }
+
+  getSkillLevel(skillId) {
+    return this.unit.skills.find(skill => skill.dataId === skillId).level
   }
 
 

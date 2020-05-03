@@ -127,3 +127,26 @@
     </tbody>
   </table>
 </div>
+
+<div class="row" *ngIf="grid">
+  <div class="hexGridContainer" style="text-align: center;">
+    <ul class="hexGrid" oncontextmenu="return false;">
+      <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+        <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+
+        <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+          <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
+        </div>
+
+        <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
+          <i class="fa fa-plus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
+          <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+          <span class="skillLevel" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">{{ getSkillLevel(unit.board.nodes[node].dataId) }}</span>
+          <i class="fa fa-minus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
+        </div>
+      </li>
+    </ul>
+
+    <div [innerHTML]="grid.lines"></div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
@@ -22,8 +22,7 @@ export class EsperComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
-    private gridService: GridService,
-    private elRef: ElementRef
+    private gridService: GridService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEsper();
@@ -89,11 +88,6 @@ export class EsperComponent implements OnInit {
     if (node !== 0) {
       this.esper.board.nodes[node].activated = true;
       this.showNode(this.esper.board.nodes[node].parent)
-
-      let element = this.elRef.nativeElement.querySelector('.node_' + node + ' div')
-      if(!element.classList.contains('activated')) {
-        element.classList.add('activated')
-      }
     }
   }
 
@@ -103,22 +97,6 @@ export class EsperComponent implements OnInit {
       this.esper.board.nodes[node].children.forEach(childNode => {
         this.hideNode(childNode)
       })
-
-      let element = this.elRef.nativeElement.querySelector('.node_' + node + ' div')
-      if(element.classList.contains('activated')) {
-        element.classList.remove('activated')
-      }
-    }
-  }
-
-  ngAfterViewInit() {
-    let grid = this.elRef.nativeElement.querySelector('.hexGrid')
-
-    for (let i = 0; i < grid.children.length; i++) {
-      let element = grid.children[i]
-      if (element.getAttribute("class")) {
-        element.addEventListener('click', this.clickNode.bind(this, element.getAttribute("class").split("_")[1]))
-      }
     }
   }
 }
