@@ -97,6 +97,24 @@ export class UnitService {
     return units;
   }
 
+  getUnitsForBuilder(translate) {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    let units = this.getUnitsForListing();
+
+    Object.keys(units).forEach(rarity => {
+      this.sortByName(units[rarity], translate)
+    });
+
+    let formattedUnitsForBuilder = []
+    rarityOrder.forEach(rarity => {
+      units[rarity].forEach(unit => {
+        formattedUnitsForBuilder.push(unit)
+      })
+    })
+
+    return formattedUnitsForBuilder;
+  }
+
   getUnit(id: string): Unit {
     if (!this.units || this.units.length === 0) {
       this.getUnits();

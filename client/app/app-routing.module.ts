@@ -16,6 +16,8 @@ import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 
+import { BuilderUnitComponent } from './builder/builder.unit.component';
+
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'units', component: UnitsComponent },
@@ -26,6 +28,10 @@ const ROUTES: Routes = [
   { path: 'esper/:slug', component: EsperComponent },
   { path: 'equipments', component: EquipmentsComponent },
   { path: 'equipment/:slug', component: EquipmentComponent },
+
+  { path: 'builder', component: BuilderUnitComponent },
+  { path: 'builder/unit', component: BuilderUnitComponent },
+  { path: 'builder/unit/:slug', component: BuilderUnitComponent },
 
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },

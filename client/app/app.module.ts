@@ -12,6 +12,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrettyJsonModule } from 'angular2-prettyjson';
 import { NgxMdModule } from 'ngx-md';
+import { NgSelectModule } from '@ng-select/ng-select';
+
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -33,6 +36,8 @@ import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 
+import { BuilderUnitComponent } from './builder/builder.unit.component';
+
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
@@ -42,6 +47,7 @@ import { CardService } from './services/card.service';
 import { EsperService } from './services/esper.service';
 import { JobService } from './services/job.service';
 import { GridService } from './services/grid.service';
+import { GuildService } from './services/guild.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 
@@ -67,7 +73,8 @@ export function createTranslateLoader(http: HttpClient) {
     EsperComponent,
     EquipmentsComponent,
     EquipmentComponent,
-    RoundDownPipe
+    RoundDownPipe,
+    BuilderUnitComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -90,7 +97,8 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     NgbModule,
-    PrettyJsonModule
+    PrettyJsonModule,
+    NgSelectModule
   ],
   providers: [
     UnitService,
@@ -101,7 +109,8 @@ export function createTranslateLoader(http: HttpClient) {
     CardService,
     EsperService,
     JobService,
-    GridService
+    GridService,
+    GuildService
   ],
   bootstrap: [
     AppComponent

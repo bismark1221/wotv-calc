@@ -1,0 +1,129 @@
+<div style="width: 50%; display: inline-block;">
+  <ng-select [items]="units"
+             bindLabel="name"
+             groupBy="rarity"
+             [(ngModel)]="unit"
+             (ngModelChange)="selectUnit()">
+  </ng-select>
+
+  <div *ngIf="unit">
+    <table class="unitTable">
+      <tbody>
+        <tr>
+          <th colspan="3">{{ unit.name }}</th>
+        </tr>
+        <tr>
+          <td colspan="3"><img class="unitImg" src="{{'assets/units/' + unit.image + '_m.png'}}" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="unit">
+    Star
+    <select [(ngModel)]="unit.star" (ngModelChange)="changeStar()">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+
+    LB
+    <select [(ngModel)]="unit.lb" (ngModelChange)="changeLB()">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+
+    Level
+    <select [(ngModel)]="unit.level" (ngModelChange)="changeLevels()">
+      <option *ngFor="let level of tableLevels">{{ level }}</option>
+    </select>
+  </div>
+
+  <div *ngIf="unit">
+    <table>
+      <tr>
+        <td *ngFor="let i of [0, 1, 2]">{{ unit.jobsData[i].name }}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let i of [0, 1, 2]">
+          <select [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevels()">
+            <option *ngFor="let level of tableJobLevels">{{ level }}</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div *ngIf="guild">
+    <table>
+      <tr>
+        <td>Guild</td>
+      </tr>
+      <tr>
+        <td *ngFor="let statue of guildService.getStatues()">
+          <select [(ngModel)]="guild[statue]" (ngModelChange)="calculateTotalStats()">
+            <option *ngFor="let level of [0, 1, 2, 3, 4, 5]">{{ level }}</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <button (click)="consoleLog()">CONSOLE</button>
+</div>
+
+<div style="width: 50%; display: inline-block;" *ngIf="stats">
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="13">Stats</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>HP</th>
+        <th>TP</th>
+        <th>AP</th>
+        <th>ATK</th>
+        <th>MAG</th>
+        <th>DEX</th>
+        <th>AGI</th>
+        <th>LUCK</th>
+        <th>MOVE</th>
+        <th>JUMP</th>
+      </tr>
+      <tr>
+        <td>Base</td>
+        <td>{{ stats.HP.baseTotal }}</td>
+        <td>{{ stats.TP.baseTotal }}</td>
+        <td>{{ stats.AP.baseTotal }}</td>
+        <td>{{ stats.ATK.baseTotal }}</td>
+        <td>{{ stats.MAG.baseTotal }}</td>
+        <td>{{ stats.DEX.baseTotal }}</td>
+        <td>{{ stats.AGI.baseTotal }}</td>
+        <td>{{ stats.LUCK.baseTotal }}</td>
+        <td>{{ stats.MOVE.baseTotal }}</td>
+        <td>{{ stats.JUMP.baseTotal }}</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>{{ stats.HP.total }}</td>
+        <td>{{ stats.TP.total }}</td>
+        <td>{{ stats.AP.total }}</td>
+        <td>{{ stats.ATK.total }}</td>
+        <td>{{ stats.MAG.total }}</td>
+        <td>{{ stats.DEX.total }}</td>
+        <td>{{ stats.AGI.total }}</td>
+        <td>{{ stats.LUCK.total }}</td>
+        <td>{{ stats.MOVE.total }}</td>
+        <td>{{ stats.JUMP.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

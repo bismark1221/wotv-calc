@@ -717,7 +717,9 @@ export class JsonService {
           this.addSkill(unit, item)
         }
 
-        unit.board.nodes[item.panel_id] = item.value
+        unit.board.nodes[item.panel_id] = {
+          dataId: item.value
+        }
       });
 
       this.boards[unit.dataId].lines.forEach(line => {
@@ -1167,7 +1169,9 @@ export class JsonService {
     if (this.espersBoards[esper.dataId]) {
       this.espersBoards[esper.dataId].panels.forEach(item => {
         this.addPassiveBuff(esper, item)
-        esper.board.nodes[item.panel_id] = item.value
+        esper.board.nodes[item.panel_id] = {
+          dataId: item.value
+        }
       });
 
       this.espersBoards[esper.dataId].lines.forEach(line => {

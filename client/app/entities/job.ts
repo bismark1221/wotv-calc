@@ -11,6 +11,7 @@ export class Job {
   image;
   subRate;
   equipments;
+  level;
 
   constructFromJson(job: Job): void {
     this.dataId = job.dataId;

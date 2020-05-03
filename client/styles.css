@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
 
 body {
   padding-top: 5rem;
@@ -188,8 +189,9 @@ td {
   width: 100%
 }
 
-.hexGrid li .hex img {
-  opacity: .6
+.hexGrid li .hex.activated {
+  background-color: #737272;
+  color: #fff;
 }
 
 .hexGrid li .hex.selected, .hexGrid li .hex.selected a {
@@ -263,4 +265,8 @@ td {
 .hex i.img {
   height: 20px;
   width: 20px
+}
+
+.hex .fullIcon img {
+  width: 100px;
 }

@@ -690,39 +690,105 @@
     "image": "lapsifrt",
     "board": {
       "nodes": {
-        "1": "BUFF_IFRT_01",
-        "2": "BUFF_IFRT_02",
-        "3": "BUFF_IFRT_03",
-        "4": "BUFF_IFRT_04",
-        "5": "BUFF_IFRT_05",
-        "6": "BUFF_IFRT_06",
-        "7": "BUFF_IFRT_07",
-        "8": "BUFF_IFRT_08",
-        "9": "BUFF_IFRT_09",
-        "10": "BUFF_IFRT_10",
-        "11": "BUFF_IFRT_11",
-        "12": "BUFF_IFRT_12",
-        "13": "BUFF_IFRT_13",
-        "14": "BUFF_IFRT_14",
-        "15": "BUFF_IFRT_15",
-        "16": "BUFF_IFRT_16",
-        "17": "BUFF_IFRT_17",
-        "18": "BUFF_IFRT_18",
-        "19": "BUFF_IFRT_19",
-        "21": "BUFF_IFRT_20",
-        "22": "BUFF_IFRT_21",
-        "24": "BUFF_IFRT_22",
-        "25": "BUFF_IFRT_23",
-        "27": "BUFF_IFRT_24",
-        "28": "BUFF_IFRT_25",
-        "30": "BUFF_IFRT_26",
-        "31": "BUFF_IFRT_27",
-        "33": "BUFF_IFRT_28",
-        "34": "BUFF_IFRT_29",
-        "36": "BUFF_IFRT_30",
-        "37": "BUFF_IFRT_31",
-        "45": "BUFF_IFRT_32",
-        "53": "BUFF_IFRT_33"
+        "1": {
+          "dataId": "BUFF_IFRT_01"
+        },
+        "2": {
+          "dataId": "BUFF_IFRT_02"
+        },
+        "3": {
+          "dataId": "BUFF_IFRT_03"
+        },
+        "4": {
+          "dataId": "BUFF_IFRT_04"
+        },
+        "5": {
+          "dataId": "BUFF_IFRT_05"
+        },
+        "6": {
+          "dataId": "BUFF_IFRT_06"
+        },
+        "7": {
+          "dataId": "BUFF_IFRT_07"
+        },
+        "8": {
+          "dataId": "BUFF_IFRT_08"
+        },
+        "9": {
+          "dataId": "BUFF_IFRT_09"
+        },
+        "10": {
+          "dataId": "BUFF_IFRT_10"
+        },
+        "11": {
+          "dataId": "BUFF_IFRT_11"
+        },
+        "12": {
+          "dataId": "BUFF_IFRT_12"
+        },
+        "13": {
+          "dataId": "BUFF_IFRT_13"
+        },
+        "14": {
+          "dataId": "BUFF_IFRT_14"
+        },
+        "15": {
+          "dataId": "BUFF_IFRT_15"
+        },
+        "16": {
+          "dataId": "BUFF_IFRT_16"
+        },
+        "17": {
+          "dataId": "BUFF_IFRT_17"
+        },
+        "18": {
+          "dataId": "BUFF_IFRT_18"
+        },
+        "19": {
+          "dataId": "BUFF_IFRT_19"
+        },
+        "21": {
+          "dataId": "BUFF_IFRT_20"
+        },
+        "22": {
+          "dataId": "BUFF_IFRT_21"
+        },
+        "24": {
+          "dataId": "BUFF_IFRT_22"
+        },
+        "25": {
+          "dataId": "BUFF_IFRT_23"
+        },
+        "27": {
+          "dataId": "BUFF_IFRT_24"
+        },
+        "28": {
+          "dataId": "BUFF_IFRT_25"
+        },
+        "30": {
+          "dataId": "BUFF_IFRT_26"
+        },
+        "31": {
+          "dataId": "BUFF_IFRT_27"
+        },
+        "33": {
+          "dataId": "BUFF_IFRT_28"
+        },
+        "34": {
+          "dataId": "BUFF_IFRT_29"
+        },
+        "36": {
+          "dataId": "BUFF_IFRT_30"
+        },
+        "37": {
+          "dataId": "BUFF_IFRT_31"
+        },
+        "45": {
+          "dataId": "BUFF_IFRT_32"
+        },
+        "53": {
+          "dataId": "BUFF_IFRT_33"
+        }
       },
       "lines": [
         0,
@@ -1453,39 +1519,105 @@
     "image": "lapsglem",
     "board": {
       "nodes": {
-        "1": "BUFF_GLEM_01",
-        "2": "BUFF_GLEM_02",
-        "3": "BUFF_GLEM_03",
-        "4": "BUFF_GLEM_04",
-        "5": "BUFF_GLEM_05",
-        "6": "BUFF_GLEM_06",
-        "7": "BUFF_GLEM_07",
-        "8": "BUFF_GLEM_08",
-        "9": "BUFF_GLEM_09",
-        "10": "BUFF_GLEM_10",
-        "11": "BUFF_GLEM_11",
-        "12": "BUFF_GLEM_12",
-        "13": "BUFF_GLEM_13",
-        "14": "BUFF_GLEM_14",
-        "15": "BUFF_GLEM_15",
-        "16": "BUFF_GLEM_16",
-        "17": "BUFF_GLEM_17",
-        "18": "BUFF_GLEM_18",
-        "19": "BUFF_GLEM_19",
-        "21": "BUFF_GLEM_20",
-        "22": "BUFF_GLEM_21",
-        "24": "BUFF_GLEM_22",
-        "25": "BUFF_GLEM_23",
-        "27": "BUFF_GLEM_24",
-        "28": "BUFF_GLEM_25",
-        "30": "BUFF_GLEM_26",
-        "31": "BUFF_GLEM_27",
-        "33": "BUFF_GLEM_28",
-        "34": "BUFF_GLEM_29",
-        "36": "BUFF_GLEM_30",
-        "37": "BUFF_GLEM_31",
-        "45": "BUFF_GLEM_32",
-        "53": "BUFF_GLEM_33"
+        "1": {
+          "dataId": "BUFF_GLEM_01"
+        },
+        "2": {
+          "dataId": "BUFF_GLEM_02"
+        },
+        "3": {
+          "dataId": "BUFF_GLEM_03"
+        },
+        "4": {
+          "dataId": "BUFF_GLEM_04"
+        },
+        "5": {
+          "dataId": "BUFF_GLEM_05"
+        },
+        "6": {
+          "dataId": "BUFF_GLEM_06"
+        },
+        "7": {
+          "dataId": "BUFF_GLEM_07"
+        },
+        "8": {
+          "dataId": "BUFF_GLEM_08"
+        },
+        "9": {
+          "dataId": "BUFF_GLEM_09"
+        },
+        "10": {
+          "dataId": "BUFF_GLEM_10"
+        },
+        "11": {
+          "dataId": "BUFF_GLEM_11"
+        },
+        "12": {
+          "dataId": "BUFF_GLEM_12"
+        },
+        "13": {
+          "dataId": "BUFF_GLEM_13"
+        },
+        "14": {
+          "dataId": "BUFF_GLEM_14"
+        },
+        "15": {
+          "dataId": "BUFF_GLEM_15"
+        },
+        "16": {
+          "dataId": "BUFF_GLEM_16"
+        },
+        "17": {
+          "dataId": "BUFF_GLEM_17"
+        },
+        "18": {
+          "dataId": "BUFF_GLEM_18"
+        },
+        "19": {
+          "dataId": "BUFF_GLEM_19"
+        },
+        "21": {
+          "dataId": "BUFF_GLEM_20"
+        },
+        "22": {
+          "dataId": "BUFF_GLEM_21"
+        },
+        "24": {
+          "dataId": "BUFF_GLEM_22"
+        },
+        "25": {
+          "dataId": "BUFF_GLEM_23"
+        },
+        "27": {
+          "dataId": "BUFF_GLEM_24"
+        },
+        "28": {
+          "dataId": "BUFF_GLEM_25"
+        },
+        "30": {
+          "dataId": "BUFF_GLEM_26"
+        },
+        "31": {
+          "dataId": "BUFF_GLEM_27"
+        },
+        "33": {
+          "dataId": "BUFF_GLEM_28"
+        },
+        "34": {
+          "dataId": "BUFF_GLEM_29"
+        },
+        "36": {
+          "dataId": "BUFF_GLEM_30"
+        },
+        "37": {
+          "dataId": "BUFF_GLEM_31"
+        },
+        "45": {
+          "dataId": "BUFF_GLEM_32"
+        },
+        "53": {
+          "dataId": "BUFF_GLEM_33"
+        }
       },
       "lines": [
         0,
@@ -2216,39 +2348,105 @@
     "image": "lapssire",
     "board": {
       "nodes": {
-        "1": "BUFF_SIRE_01",
-        "2": "BUFF_SIRE_02",
-        "3": "BUFF_SIRE_03",
-        "4": "BUFF_SIRE_04",
-        "5": "BUFF_SIRE_05",
-        "6": "BUFF_SIRE_06",
-        "7": "BUFF_SIRE_07",
-        "8": "BUFF_SIRE_08",
-        "9": "BUFF_SIRE_09",
-        "10": "BUFF_SIRE_10",
-        "11": "BUFF_SIRE_11",
-        "12": "BUFF_SIRE_12",
-        "13": "BUFF_SIRE_13",
-        "14": "BUFF_SIRE_14",
-        "15": "BUFF_SIRE_15",
-        "16": "BUFF_SIRE_16",
-        "17": "BUFF_SIRE_17",
-        "18": "BUFF_SIRE_18",
-        "19": "BUFF_SIRE_19",
-        "21": "BUFF_SIRE_20",
-        "22": "BUFF_SIRE_21",
-        "24": "BUFF_SIRE_22",
-        "25": "BUFF_SIRE_23",
-        "27": "BUFF_SIRE_24",
-        "28": "BUFF_SIRE_25",
-        "30": "BUFF_SIRE_26",
-        "31": "BUFF_SIRE_27",
-        "33": "BUFF_SIRE_28",
-        "34": "BUFF_SIRE_29",
-        "36": "BUFF_SIRE_30",
-        "37": "BUFF_SIRE_31",
-        "45": "BUFF_SIRE_32",
-        "53": "BUFF_SIRE_33"
+        "1": {
+          "dataId": "BUFF_SIRE_01"
+        },
+        "2": {
+          "dataId": "BUFF_SIRE_02"
+        },
+        "3": {
+          "dataId": "BUFF_SIRE_03"
+        },
+        "4": {
+          "dataId": "BUFF_SIRE_04"
+        },
+        "5": {
+          "dataId": "BUFF_SIRE_05"
+        },
+        "6": {
+          "dataId": "BUFF_SIRE_06"
+        },
+        "7": {
+          "dataId": "BUFF_SIRE_07"
+        },
+        "8": {
+          "dataId": "BUFF_SIRE_08"
+        },
+        "9": {
+          "dataId": "BUFF_SIRE_09"
+        },
+        "10": {
+          "dataId": "BUFF_SIRE_10"
+        },
+        "11": {
+          "dataId": "BUFF_SIRE_11"
+        },
+        "12": {
+          "dataId": "BUFF_SIRE_12"
+        },
+        "13": {
+          "dataId": "BUFF_SIRE_13"
+        },
+        "14": {
+          "dataId": "BUFF_SIRE_14"
+        },
+        "15": {
+          "dataId": "BUFF_SIRE_15"
+        },
+        "16": {
+          "dataId": "BUFF_SIRE_16"
+        },
+        "17": {
+          "dataId": "BUFF_SIRE_17"
+        },
+        "18": {
+          "dataId": "BUFF_SIRE_18"
+        },
+        "19": {
+          "dataId": "BUFF_SIRE_19"
+        },
+        "21": {
+          "dataId": "BUFF_SIRE_20"
+        },
+        "22": {
+          "dataId": "BUFF_SIRE_21"
+        },
+        "24": {
+          "dataId": "BUFF_SIRE_22"
+        },
+        "25": {
+          "dataId": "BUFF_SIRE_23"
+        },
+        "27": {
+          "dataId": "BUFF_SIRE_24"
+        },
+        "28": {
+          "dataId": "BUFF_SIRE_25"
+        },
+        "30": {
+          "dataId": "BUFF_SIRE_26"
+        },
+        "31": {
+          "dataId": "BUFF_SIRE_27"
+        },
+        "33": {
+          "dataId": "BUFF_SIRE_28"
+        },
+        "34": {
+          "dataId": "BUFF_SIRE_29"
+        },
+        "36": {
+          "dataId": "BUFF_SIRE_30"
+        },
+        "37": {
+          "dataId": "BUFF_SIRE_31"
+        },
+        "45": {
+          "dataId": "BUFF_SIRE_32"
+        },
+        "53": {
+          "dataId": "BUFF_SIRE_33"
+        }
       },
       "lines": [
         0,
@@ -2951,39 +3149,105 @@
     "image": "lapsignt",
     "board": {
       "nodes": {
-        "1": "BUFF_IGNT_01",
-        "2": "BUFF_IGNT_02",
-        "3": "BUFF_IGNT_03",
-        "4": "BUFF_IGNT_04",
-        "5": "BUFF_IGNT_05",
-        "6": "BUFF_IGNT_06",
-        "7": "BUFF_IGNT_07",
-        "8": "BUFF_IGNT_08",
-        "9": "BUFF_IGNT_09",
-        "10": "BUFF_IGNT_10",
-        "11": "BUFF_IGNT_11",
-        "12": "BUFF_IGNT_12",
-        "13": "BUFF_IGNT_13",
-        "14": "BUFF_IGNT_14",
-        "15": "BUFF_IGNT_15",
-        "16": "BUFF_IGNT_16",
-        "17": "BUFF_IGNT_17",
-        "18": "BUFF_IGNT_18",
-        "19": "BUFF_IGNT_19",
-        "21": "BUFF_IGNT_20",
-        "22": "BUFF_IGNT_21",
-        "24": "BUFF_IGNT_22",
-        "25": "BUFF_IGNT_23",
-        "27": "BUFF_IGNT_24",
-        "28": "BUFF_IGNT_25",
-        "30": "BUFF_IGNT_26",
-        "31": "BUFF_IGNT_27",
-        "33": "BUFF_IGNT_28",
-        "34": "BUFF_IGNT_29",
-        "36": "BUFF_IGNT_30",
-        "37": "BUFF_IGNT_31",
-        "45": "BUFF_IGNT_32",
-        "53": "BUFF_IGNT_33"
+        "1": {
+          "dataId": "BUFF_IGNT_01"
+        },
+        "2": {
+          "dataId": "BUFF_IGNT_02"
+        },
+        "3": {
+          "dataId": "BUFF_IGNT_03"
+        },
+        "4": {
+          "dataId": "BUFF_IGNT_04"
+        },
+        "5": {
+          "dataId": "BUFF_IGNT_05"
+        },
+        "6": {
+          "dataId": "BUFF_IGNT_06"
+        },
+        "7": {
+          "dataId": "BUFF_IGNT_07"
+        },
+        "8": {
+          "dataId": "BUFF_IGNT_08"
+        },
+        "9": {
+          "dataId": "BUFF_IGNT_09"
+        },
+        "10": {
+          "dataId": "BUFF_IGNT_10"
+        },
+        "11": {
+          "dataId": "BUFF_IGNT_11"
+        },
+        "12": {
+          "dataId": "BUFF_IGNT_12"
+        },
+        "13": {
+          "dataId": "BUFF_IGNT_13"
+        },
+        "14": {
+          "dataId": "BUFF_IGNT_14"
+        },
+        "15": {
+          "dataId": "BUFF_IGNT_15"
+        },
+        "16": {
+          "dataId": "BUFF_IGNT_16"
+        },
+        "17": {
+          "dataId": "BUFF_IGNT_17"
+        },
+        "18": {
+          "dataId": "BUFF_IGNT_18"
+        },
+        "19": {
+          "dataId": "BUFF_IGNT_19"
+        },
+        "21": {
+          "dataId": "BUFF_IGNT_20"
+        },
+        "22": {
+          "dataId": "BUFF_IGNT_21"
+        },
+        "24": {
+          "dataId": "BUFF_IGNT_22"
+        },
+        "25": {
+          "dataId": "BUFF_IGNT_23"
+        },
+        "27": {
+          "dataId": "BUFF_IGNT_24"
+        },
+        "28": {
+          "dataId": "BUFF_IGNT_25"
+        },
+        "30": {
+          "dataId": "BUFF_IGNT_26"
+        },
+        "31": {
+          "dataId": "BUFF_IGNT_27"
+        },
+        "33": {
+          "dataId": "BUFF_IGNT_28"
+        },
+        "34": {
+          "dataId": "BUFF_IGNT_29"
+        },
+        "36": {
+          "dataId": "BUFF_IGNT_30"
+        },
+        "37": {
+          "dataId": "BUFF_IGNT_31"
+        },
+        "45": {
+          "dataId": "BUFF_IGNT_32"
+        },
+        "53": {
+          "dataId": "BUFF_IGNT_33"
+        }
       },
       "lines": [
         0,
@@ -3685,39 +3949,105 @@
     "image": "lapsbhmt",
     "board": {
       "nodes": {
-        "1": "BUFF_BHMT_01",
-        "2": "BUFF_BHMT_02",
-        "3": "BUFF_BHMT_03",
-        "4": "BUFF_BHMT_04",
-        "5": "BUFF_BHMT_05",
-        "6": "BUFF_BHMT_06",
-        "7": "BUFF_BHMT_07",
-        "8": "BUFF_BHMT_08",
-        "9": "BUFF_BHMT_09",
-        "10": "BUFF_BHMT_10",
-        "11": "BUFF_BHMT_11",
-        "12": "BUFF_BHMT_12",
-        "13": "BUFF_BHMT_13",
-        "14": "BUFF_BHMT_14",
-        "15": "BUFF_BHMT_15",
-        "16": "BUFF_BHMT_16",
-        "17": "BUFF_BHMT_17",
-        "18": "BUFF_BHMT_18",
-        "19": "BUFF_BHMT_19",
-        "21": "BUFF_BHMT_20",
-        "22": "BUFF_BHMT_21",
-        "24": "BUFF_BHMT_22",
-        "25": "BUFF_BHMT_23",
-        "27": "BUFF_BHMT_24",
-        "28": "BUFF_BHMT_25",
-        "30": "BUFF_BHMT_26",
-        "31": "BUFF_BHMT_27",
-        "33": "BUFF_BHMT_28",
-        "34": "BUFF_BHMT_29",
-        "36": "BUFF_BHMT_30",
-        "37": "BUFF_BHMT_31",
-        "45": "BUFF_BHMT_32",
-        "53": "BUFF_BHMT_33"
+        "1": {
+          "dataId": "BUFF_BHMT_01"
+        },
+        "2": {
+          "dataId": "BUFF_BHMT_02"
+        },
+        "3": {
+          "dataId": "BUFF_BHMT_03"
+        },
+        "4": {
+          "dataId": "BUFF_BHMT_04"
+        },
+        "5": {
+          "dataId": "BUFF_BHMT_05"
+        },
+        "6": {
+          "dataId": "BUFF_BHMT_06"
+        },
+        "7": {
+          "dataId": "BUFF_BHMT_07"
+        },
+        "8": {
+          "dataId": "BUFF_BHMT_08"
+        },
+        "9": {
+          "dataId": "BUFF_BHMT_09"
+        },
+        "10": {
+          "dataId": "BUFF_BHMT_10"
+        },
+        "11": {
+          "dataId": "BUFF_BHMT_11"
+        },
+        "12": {
+          "dataId": "BUFF_BHMT_12"
+        },
+        "13": {
+          "dataId": "BUFF_BHMT_13"
+        },
+        "14": {
+          "dataId": "BUFF_BHMT_14"
+        },
+        "15": {
+          "dataId": "BUFF_BHMT_15"
+        },
+        "16": {
+          "dataId": "BUFF_BHMT_16"
+        },
+        "17": {
+          "dataId": "BUFF_BHMT_17"
+        },
+        "18": {
+          "dataId": "BUFF_BHMT_18"
+        },
+        "19": {
+          "dataId": "BUFF_BHMT_19"
+        },
+        "21": {
+          "dataId": "BUFF_BHMT_20"
+        },
+        "22": {
+          "dataId": "BUFF_BHMT_21"
+        },
+        "24": {
+          "dataId": "BUFF_BHMT_22"
+        },
+        "25": {
+          "dataId": "BUFF_BHMT_23"
+        },
+        "27": {
+          "dataId": "BUFF_BHMT_24"
+        },
+        "28": {
+          "dataId": "BUFF_BHMT_25"
+        },
+        "30": {
+          "dataId": "BUFF_BHMT_26"
+        },
+        "31": {
+          "dataId": "BUFF_BHMT_27"
+        },
+        "33": {
+          "dataId": "BUFF_BHMT_28"
+        },
+        "34": {
+          "dataId": "BUFF_BHMT_29"
+        },
+        "36": {
+          "dataId": "BUFF_BHMT_30"
+        },
+        "37": {
+          "dataId": "BUFF_BHMT_31"
+        },
+        "45": {
+          "dataId": "BUFF_BHMT_32"
+        },
+        "53": {
+          "dataId": "BUFF_BHMT_33"
+        }
       },
       "lines": [
         0,
@@ -4451,39 +4781,105 @@
     "image": "lapsmabr",
     "board": {
       "nodes": {
-        "1": "BUFF_MABR_01",
-        "2": "BUFF_MABR_02",
-        "3": "BUFF_MABR_03",
-        "4": "BUFF_MABR_04",
-        "5": "BUFF_MABR_05",
-        "6": "BUFF_MABR_06",
-        "7": "BUFF_MABR_07",
-        "8": "BUFF_MABR_08",
-        "9": "BUFF_MABR_09",
-        "10": "BUFF_MABR_10",
-        "11": "BUFF_MABR_11",
-        "12": "BUFF_MABR_12",
-        "13": "BUFF_MABR_13",
-        "14": "BUFF_MABR_14",
-        "15": "BUFF_MABR_15",
-        "16": "BUFF_MABR_16",
-        "17": "BUFF_MABR_17",
-        "18": "BUFF_MABR_18",
-        "19": "BUFF_MABR_19",
-        "21": "BUFF_MABR_20",
-        "22": "BUFF_MABR_21",
-        "24": "BUFF_MABR_22",
-        "25": "BUFF_MABR_23",
-        "27": "BUFF_MABR_24",
-        "28": "BUFF_MABR_25",
-        "30": "BUFF_MABR_26",
-        "31": "BUFF_MABR_27",
-        "33": "BUFF_MABR_28",
-        "34": "BUFF_MABR_29",
-        "36": "BUFF_MABR_30",
-        "37": "BUFF_MABR_31",
-        "45": "BUFF_MABR_32",
-        "53": "BUFF_MABR_33"
+        "1": {
+          "dataId": "BUFF_MABR_01"
+        },
+        "2": {
+          "dataId": "BUFF_MABR_02"
+        },
+        "3": {
+          "dataId": "BUFF_MABR_03"
+        },
+        "4": {
+          "dataId": "BUFF_MABR_04"
+        },
+        "5": {
+          "dataId": "BUFF_MABR_05"
+        },
+        "6": {
+          "dataId": "BUFF_MABR_06"
+        },
+        "7": {
+          "dataId": "BUFF_MABR_07"
+        },
+        "8": {
+          "dataId": "BUFF_MABR_08"
+        },
+        "9": {
+          "dataId": "BUFF_MABR_09"
+        },
+        "10": {
+          "dataId": "BUFF_MABR_10"
+        },
+        "11": {
+          "dataId": "BUFF_MABR_11"
+        },
+        "12": {
+          "dataId": "BUFF_MABR_12"
+        },
+        "13": {
+          "dataId": "BUFF_MABR_13"
+        },
+        "14": {
+          "dataId": "BUFF_MABR_14"
+        },
+        "15": {
+          "dataId": "BUFF_MABR_15"
+        },
+        "16": {
+          "dataId": "BUFF_MABR_16"
+        },
+        "17": {
+          "dataId": "BUFF_MABR_17"
+        },
+        "18": {
+          "dataId": "BUFF_MABR_18"
+        },
+        "19": {
+          "dataId": "BUFF_MABR_19"
+        },
+        "21": {
+          "dataId": "BUFF_MABR_20"
+        },
+        "22": {
+          "dataId": "BUFF_MABR_21"
+        },
+        "24": {
+          "dataId": "BUFF_MABR_22"
+        },
+        "25": {
+          "dataId": "BUFF_MABR_23"
+        },
+        "27": {
+          "dataId": "BUFF_MABR_24"
+        },
+        "28": {
+          "dataId": "BUFF_MABR_25"
+        },
+        "30": {
+          "dataId": "BUFF_MABR_26"
+        },
+        "31": {
+          "dataId": "BUFF_MABR_27"
+        },
+        "33": {
+          "dataId": "BUFF_MABR_28"
+        },
+        "34": {
+          "dataId": "BUFF_MABR_29"
+        },
+        "36": {
+          "dataId": "BUFF_MABR_30"
+        },
+        "37": {
+          "dataId": "BUFF_MABR_31"
+        },
+        "45": {
+          "dataId": "BUFF_MABR_32"
+        },
+        "53": {
+          "dataId": "BUFF_MABR_33"
+        }
       },
       "lines": [
         7,
@@ -5188,39 +5584,105 @@
     "image": "lapscact",
     "board": {
       "nodes": {
-        "1": "BUFF_CACT_01",
-        "2": "BUFF_CACT_02",
-        "3": "BUFF_CACT_03",
-        "4": "BUFF_CACT_04",
-        "5": "BUFF_CACT_05",
-        "6": "BUFF_CACT_06",
-        "7": "BUFF_CACT_07",
-        "8": "BUFF_CACT_08",
-        "9": "BUFF_CACT_09",
-        "10": "BUFF_CACT_10",
-        "11": "BUFF_CACT_11",
-        "12": "BUFF_CACT_12",
-        "13": "BUFF_CACT_13",
-        "14": "BUFF_CACT_14",
-        "15": "BUFF_CACT_15",
-        "16": "BUFF_CACT_16",
-        "17": "BUFF_CACT_17",
-        "18": "BUFF_CACT_18",
-        "19": "BUFF_CACT_19",
-        "21": "BUFF_CACT_20",
-        "22": "BUFF_CACT_21",
-        "24": "BUFF_CACT_22",
-        "25": "BUFF_CACT_23",
-        "27": "BUFF_CACT_24",
-        "28": "BUFF_CACT_25",
-        "30": "BUFF_CACT_26",
-        "31": "BUFF_CACT_27",
-        "33": "BUFF_CACT_28",
-        "34": "BUFF_CACT_29",
-        "36": "BUFF_CACT_30",
-        "37": "BUFF_CACT_31",
-        "45": "BUFF_CACT_32",
-        "53": "BUFF_CACT_33"
+        "1": {
+          "dataId": "BUFF_CACT_01"
+        },
+        "2": {
+          "dataId": "BUFF_CACT_02"
+        },
+        "3": {
+          "dataId": "BUFF_CACT_03"
+        },
+        "4": {
+          "dataId": "BUFF_CACT_04"
+        },
+        "5": {
+          "dataId": "BUFF_CACT_05"
+        },
+        "6": {
+          "dataId": "BUFF_CACT_06"
+        },
+        "7": {
+          "dataId": "BUFF_CACT_07"
+        },
+        "8": {
+          "dataId": "BUFF_CACT_08"
+        },
+        "9": {
+          "dataId": "BUFF_CACT_09"
+        },
+        "10": {
+          "dataId": "BUFF_CACT_10"
+        },
+        "11": {
+          "dataId": "BUFF_CACT_11"
+        },
+        "12": {
+          "dataId": "BUFF_CACT_12"
+        },
+        "13": {
+          "dataId": "BUFF_CACT_13"
+        },
+        "14": {
+          "dataId": "BUFF_CACT_14"
+        },
+        "15": {
+          "dataId": "BUFF_CACT_15"
+        },
+        "16": {
+          "dataId": "BUFF_CACT_16"
+        },
+        "17": {
+          "dataId": "BUFF_CACT_17"
+        },
+        "18": {
+          "dataId": "BUFF_CACT_18"
+        },
+        "19": {
+          "dataId": "BUFF_CACT_19"
+        },
+        "21": {
+          "dataId": "BUFF_CACT_20"
+        },
+        "22": {
+          "dataId": "BUFF_CACT_21"
+        },
+        "24": {
+          "dataId": "BUFF_CACT_22"
+        },
+        "25": {
+          "dataId": "BUFF_CACT_23"
+        },
+        "27": {
+          "dataId": "BUFF_CACT_24"
+        },
+        "28": {
+          "dataId": "BUFF_CACT_25"
+        },
+        "30": {
+          "dataId": "BUFF_CACT_26"
+        },
+        "31": {
+          "dataId": "BUFF_CACT_27"
+        },
+        "33": {
+          "dataId": "BUFF_CACT_28"
+        },
+        "34": {
+          "dataId": "BUFF_CACT_29"
+        },
+        "36": {
+          "dataId": "BUFF_CACT_30"
+        },
+        "37": {
+          "dataId": "BUFF_CACT_31"
+        },
+        "45": {
+          "dataId": "BUFF_CACT_32"
+        },
+        "53": {
+          "dataId": "BUFF_CACT_33"
+        }
       },
       "lines": [
         0,
@@ -5934,39 +6396,105 @@
     "image": "lapsarmn",
     "board": {
       "nodes": {
-        "1": "BUFF_ARMN_01",
-        "2": "BUFF_ARMN_02",
-        "3": "BUFF_ARMN_03",
-        "4": "BUFF_ARMN_04",
-        "5": "BUFF_ARMN_05",
-        "6": "BUFF_ARMN_06",
-        "7": "BUFF_ARMN_07",
-        "8": "BUFF_ARMN_08",
-        "9": "BUFF_ARMN_09",
-        "10": "BUFF_ARMN_10",
-        "11": "BUFF_ARMN_11",
-        "12": "BUFF_ARMN_12",
-        "13": "BUFF_ARMN_13",
-        "14": "BUFF_ARMN_14",
-        "15": "BUFF_ARMN_15",
-        "16": "BUFF_ARMN_16",
-        "17": "BUFF_ARMN_17",
-        "18": "BUFF_ARMN_18",
-        "19": "BUFF_ARMN_19",
-        "21": "BUFF_ARMN_20",
-        "22": "BUFF_ARMN_21",
-        "24": "BUFF_ARMN_22",
-        "25": "BUFF_ARMN_23",
-        "27": "BUFF_ARMN_24",
-        "28": "BUFF_ARMN_25",
-        "30": "BUFF_ARMN_26",
-        "31": "BUFF_ARMN_27",
-        "33": "BUFF_ARMN_28",
-        "34": "BUFF_ARMN_29",
-        "36": "BUFF_ARMN_30",
-        "37": "BUFF_ARMN_31",
-        "45": "BUFF_ARMN_32",
-        "53": "BUFF_ARMN_33"
+        "1": {
+          "dataId": "BUFF_ARMN_01"
+        },
+        "2": {
+          "dataId": "BUFF_ARMN_02"
+        },
+        "3": {
+          "dataId": "BUFF_ARMN_03"
+        },
+        "4": {
+          "dataId": "BUFF_ARMN_04"
+        },
+        "5": {
+          "dataId": "BUFF_ARMN_05"
+        },
+        "6": {
+          "dataId": "BUFF_ARMN_06"
+        },
+        "7": {
+          "dataId": "BUFF_ARMN_07"
+        },
+        "8": {
+          "dataId": "BUFF_ARMN_08"
+        },
+        "9": {
+          "dataId": "BUFF_ARMN_09"
+        },
+        "10": {
+          "dataId": "BUFF_ARMN_10"
+        },
+        "11": {
+          "dataId": "BUFF_ARMN_11"
+        },
+        "12": {
+          "dataId": "BUFF_ARMN_12"
+        },
+        "13": {
+          "dataId": "BUFF_ARMN_13"
+        },
+        "14": {
+          "dataId": "BUFF_ARMN_14"
+        },
+        "15": {
+          "dataId": "BUFF_ARMN_15"
+        },
+        "16": {
+          "dataId": "BUFF_ARMN_16"
+        },
+        "17": {
+          "dataId": "BUFF_ARMN_17"
+        },
+        "18": {
+          "dataId": "BUFF_ARMN_18"
+        },
+        "19": {
+          "dataId": "BUFF_ARMN_19"
+        },
+        "21": {
+          "dataId": "BUFF_ARMN_20"
+        },
+        "22": {
+          "dataId": "BUFF_ARMN_21"
+        },
+        "24": {
+          "dataId": "BUFF_ARMN_22"
+        },
+        "25": {
+          "dataId": "BUFF_ARMN_23"
+        },
+        "27": {
+          "dataId": "BUFF_ARMN_24"
+        },
+        "28": {
+          "dataId": "BUFF_ARMN_25"
+        },
+        "30": {
+          "dataId": "BUFF_ARMN_26"
+        },
+        "31": {
+          "dataId": "BUFF_ARMN_27"
+        },
+        "33": {
+          "dataId": "BUFF_ARMN_28"
+        },
+        "34": {
+          "dataId": "BUFF_ARMN_29"
+        },
+        "36": {
+          "dataId": "BUFF_ARMN_30"
+        },
+        "37": {
+          "dataId": "BUFF_ARMN_31"
+        },
+        "45": {
+          "dataId": "BUFF_ARMN_32"
+        },
+        "53": {
+          "dataId": "BUFF_ARMN_33"
+        }
       },
       "lines": [
         0,
@@ -6671,39 +7199,105 @@
     "image": "lapszuuu",
     "board": {
       "nodes": {
-        "1": "BUFF_ZUUU_01",
-        "2": "BUFF_ZUUU_02",
-        "3": "BUFF_ZUUU_03",
-        "4": "BUFF_ZUUU_04",
-        "5": "BUFF_ZUUU_05",
-        "6": "BUFF_ZUUU_06",
-        "7": "BUFF_ZUUU_07",
-        "8": "BUFF_ZUUU_08",
-        "9": "BUFF_ZUUU_09",
-        "10": "BUFF_ZUUU_10",
-        "11": "BUFF_ZUUU_11",
-        "12": "BUFF_ZUUU_12",
-        "13": "BUFF_ZUUU_13",
-        "14": "BUFF_ZUUU_14",
-        "15": "BUFF_ZUUU_15",
-        "16": "BUFF_ZUUU_16",
-        "17": "BUFF_ZUUU_17",
-        "18": "BUFF_ZUUU_18",
-        "19": "BUFF_ZUUU_19",
-        "21": "BUFF_ZUUU_20",
-        "22": "BUFF_ZUUU_21",
-        "24": "BUFF_ZUUU_22",
-        "25": "BUFF_ZUUU_23",
-        "27": "BUFF_ZUUU_24",
-        "28": "BUFF_ZUUU_25",
-        "30": "BUFF_ZUUU_26",
-        "31": "BUFF_ZUUU_27",
-        "33": "BUFF_ZUUU_28",
-        "34": "BUFF_ZUUU_29",
-        "36": "BUFF_ZUUU_30",
-        "37": "BUFF_ZUUU_31",
-        "45": "BUFF_ZUUU_32",
-        "53": "BUFF_ZUUU_33"
+        "1": {
+          "dataId": "BUFF_ZUUU_01"
+        },
+        "2": {
+          "dataId": "BUFF_ZUUU_02"
+        },
+        "3": {
+          "dataId": "BUFF_ZUUU_03"
+        },
+        "4": {
+          "dataId": "BUFF_ZUUU_04"
+        },
+        "5": {
+          "dataId": "BUFF_ZUUU_05"
+        },
+        "6": {
+          "dataId": "BUFF_ZUUU_06"
+        },
+        "7": {
+          "dataId": "BUFF_ZUUU_07"
+        },
+        "8": {
+          "dataId": "BUFF_ZUUU_08"
+        },
+        "9": {
+          "dataId": "BUFF_ZUUU_09"
+        },
+        "10": {
+          "dataId": "BUFF_ZUUU_10"
+        },
+        "11": {
+          "dataId": "BUFF_ZUUU_11"
+        },
+        "12": {
+          "dataId": "BUFF_ZUUU_12"
+        },
+        "13": {
+          "dataId": "BUFF_ZUUU_13"
+        },
+        "14": {
+          "dataId": "BUFF_ZUUU_14"
+        },
+        "15": {
+          "dataId": "BUFF_ZUUU_15"
+        },
+        "16": {
+          "dataId": "BUFF_ZUUU_16"
+        },
+        "17": {
+          "dataId": "BUFF_ZUUU_17"
+        },
+        "18": {
+          "dataId": "BUFF_ZUUU_18"
+        },
+        "19": {
+          "dataId": "BUFF_ZUUU_19"
+        },
+        "21": {
+          "dataId": "BUFF_ZUUU_20"
+        },
+        "22": {
+          "dataId": "BUFF_ZUUU_21"
+        },
+        "24": {
+          "dataId": "BUFF_ZUUU_22"
+        },
+        "25": {
+          "dataId": "BUFF_ZUUU_23"
+        },
+        "27": {
+          "dataId": "BUFF_ZUUU_24"
+        },
+        "28": {
+          "dataId": "BUFF_ZUUU_25"
+        },
+        "30": {
+          "dataId": "BUFF_ZUUU_26"
+        },
+        "31": {
+          "dataId": "BUFF_ZUUU_27"
+        },
+        "33": {
+          "dataId": "BUFF_ZUUU_28"
+        },
+        "34": {
+          "dataId": "BUFF_ZUUU_29"
+        },
+        "36": {
+          "dataId": "BUFF_ZUUU_30"
+        },
+        "37": {
+          "dataId": "BUFF_ZUUU_31"
+        },
+        "45": {
+          "dataId": "BUFF_ZUUU_32"
+        },
+        "53": {
+          "dataId": "BUFF_ZUUU_33"
+        }
       },
       "lines": [
         0,
@@ -7409,39 +8003,105 @@
     "image": "lapsogre",
     "board": {
       "nodes": {
-        "1": "BUFF_OGRE_01",
-        "2": "BUFF_OGRE_02",
-        "3": "BUFF_OGRE_03",
-        "4": "BUFF_OGRE_04",
-        "5": "BUFF_OGRE_05",
-        "6": "BUFF_OGRE_06",
-        "7": "BUFF_OGRE_07",
-        "8": "BUFF_OGRE_08",
-        "9": "BUFF_OGRE_09",
-        "10": "BUFF_OGRE_10",
-        "11": "BUFF_OGRE_11",
-        "12": "BUFF_OGRE_12",
-        "13": "BUFF_OGRE_13",
-        "14": "BUFF_OGRE_14",
-        "15": "BUFF_OGRE_15",
-        "16": "BUFF_OGRE_16",
-        "17": "BUFF_OGRE_17",
-        "18": "BUFF_OGRE_18",
-        "19": "BUFF_OGRE_19",
-        "21": "BUFF_OGRE_20",
-        "22": "BUFF_OGRE_21",
-        "24": "BUFF_OGRE_22",
-        "25": "BUFF_OGRE_23",
-        "27": "BUFF_OGRE_24",
-        "28": "BUFF_OGRE_25",
-        "30": "BUFF_OGRE_26",
-        "31": "BUFF_OGRE_27",
-        "33": "BUFF_OGRE_28",
-        "34": "BUFF_OGRE_29",
-        "36": "BUFF_OGRE_30",
-        "37": "BUFF_OGRE_31",
-        "45": "BUFF_OGRE_32",
-        "53": "BUFF_OGRE_33"
+        "1": {
+          "dataId": "BUFF_OGRE_01"
+        },
+        "2": {
+          "dataId": "BUFF_OGRE_02"
+        },
+        "3": {
+          "dataId": "BUFF_OGRE_03"
+        },
+        "4": {
+          "dataId": "BUFF_OGRE_04"
+        },
+        "5": {
+          "dataId": "BUFF_OGRE_05"
+        },
+        "6": {
+          "dataId": "BUFF_OGRE_06"
+        },
+        "7": {
+          "dataId": "BUFF_OGRE_07"
+        },
+        "8": {
+          "dataId": "BUFF_OGRE_08"
+        },
+        "9": {
+          "dataId": "BUFF_OGRE_09"
+        },
+        "10": {
+          "dataId": "BUFF_OGRE_10"
+        },
+        "11": {
+          "dataId": "BUFF_OGRE_11"
+        },
+        "12": {
+          "dataId": "BUFF_OGRE_12"
+        },
+        "13": {
+          "dataId": "BUFF_OGRE_13"
+        },
+        "14": {
+          "dataId": "BUFF_OGRE_14"
+        },
+        "15": {
+          "dataId": "BUFF_OGRE_15"
+        },
+        "16": {
+          "dataId": "BUFF_OGRE_16"
+        },
+        "17": {
+          "dataId": "BUFF_OGRE_17"
+        },
+        "18": {
+          "dataId": "BUFF_OGRE_18"
+        },
+        "19": {
+          "dataId": "BUFF_OGRE_19"
+        },
+        "21": {
+          "dataId": "BUFF_OGRE_20"
+        },
+        "22": {
+          "dataId": "BUFF_OGRE_21"
+        },
+        "24": {
+          "dataId": "BUFF_OGRE_22"
+        },
+        "25": {
+          "dataId": "BUFF_OGRE_23"
+        },
+        "27": {
+          "dataId": "BUFF_OGRE_24"
+        },
+        "28": {
+          "dataId": "BUFF_OGRE_25"
+        },
+        "30": {
+          "dataId": "BUFF_OGRE_26"
+        },
+        "31": {
+          "dataId": "BUFF_OGRE_27"
+        },
+        "33": {
+          "dataId": "BUFF_OGRE_28"
+        },
+        "34": {
+          "dataId": "BUFF_OGRE_29"
+        },
+        "36": {
+          "dataId": "BUFF_OGRE_30"
+        },
+        "37": {
+          "dataId": "BUFF_OGRE_31"
+        },
+        "45": {
+          "dataId": "BUFF_OGRE_32"
+        },
+        "53": {
+          "dataId": "BUFF_OGRE_33"
+        }
       },
       "lines": [
         0,
@@ -8148,39 +8808,105 @@
     "image": "lapsbomb",
     "board": {
       "nodes": {
-        "1": "BUFF_BOMB_01",
-        "2": "BUFF_BOMB_02",
-        "3": "BUFF_BOMB_03",
-        "4": "BUFF_BOMB_04",
-        "5": "BUFF_BOMB_05",
-        "6": "BUFF_BOMB_06",
-        "7": "BUFF_BOMB_07",
-        "8": "BUFF_BOMB_08",
-        "9": "BUFF_BOMB_09",
-        "10": "BUFF_BOMB_10",
-        "11": "BUFF_BOMB_11",
-        "12": "BUFF_BOMB_12",
-        "13": "BUFF_BOMB_13",
-        "14": "BUFF_BOMB_14",
-        "15": "BUFF_BOMB_15",
-        "16": "BUFF_BOMB_16",
-        "17": "BUFF_BOMB_17",
-        "18": "BUFF_BOMB_18",
-        "19": "BUFF_BOMB_19",
-        "21": "BUFF_BOMB_20",
-        "22": "BUFF_BOMB_21",
-        "24": "BUFF_BOMB_22",
-        "25": "BUFF_BOMB_23",
-        "27": "BUFF_BOMB_24",
-        "28": "BUFF_BOMB_25",
-        "30": "BUFF_BOMB_26",
-        "31": "BUFF_BOMB_27",
-        "33": "BUFF_BOMB_28",
-        "34": "BUFF_BOMB_29",
-        "36": "BUFF_BOMB_30",
-        "37": "BUFF_BOMB_31",
-        "45": "BUFF_BOMB_32",
-        "53": "BUFF_BOMB_33"
+        "1": {
+          "dataId": "BUFF_BOMB_01"
+        },
+        "2": {
+          "dataId": "BUFF_BOMB_02"
+        },
+        "3": {
+          "dataId": "BUFF_BOMB_03"
+        },
+        "4": {
+          "dataId": "BUFF_BOMB_04"
+        },
+        "5": {
+          "dataId": "BUFF_BOMB_05"
+        },
+        "6": {
+          "dataId": "BUFF_BOMB_06"
+        },
+        "7": {
+          "dataId": "BUFF_BOMB_07"
+        },
+        "8": {
+          "dataId": "BUFF_BOMB_08"
+        },
+        "9": {
+          "dataId": "BUFF_BOMB_09"
+        },
+        "10": {
+          "dataId": "BUFF_BOMB_10"
+        },
+        "11": {
+          "dataId": "BUFF_BOMB_11"
+        },
+        "12": {
+          "dataId": "BUFF_BOMB_12"
+        },
+        "13": {
+          "dataId": "BUFF_BOMB_13"
+        },
+        "14": {
+          "dataId": "BUFF_BOMB_14"
+        },
+        "15": {
+          "dataId": "BUFF_BOMB_15"
+        },
+        "16": {
+          "dataId": "BUFF_BOMB_16"
+        },
+        "17": {
+          "dataId": "BUFF_BOMB_17"
+        },
+        "18": {
+          "dataId": "BUFF_BOMB_18"
+        },
+        "19": {
+          "dataId": "BUFF_BOMB_19"
+        },
+        "21": {
+          "dataId": "BUFF_BOMB_20"
+        },
+        "22": {
+          "dataId": "BUFF_BOMB_21"
+        },
+        "24": {
+          "dataId": "BUFF_BOMB_22"
+        },
+        "25": {
+          "dataId": "BUFF_BOMB_23"
+        },
+        "27": {
+          "dataId": "BUFF_BOMB_24"
+        },
+        "28": {
+          "dataId": "BUFF_BOMB_25"
+        },
+        "30": {
+          "dataId": "BUFF_BOMB_26"
+        },
+        "31": {
+          "dataId": "BUFF_BOMB_27"
+        },
+        "33": {
+          "dataId": "BUFF_BOMB_28"
+        },
+        "34": {
+          "dataId": "BUFF_BOMB_29"
+        },
+        "36": {
+          "dataId": "BUFF_BOMB_30"
+        },
+        "37": {
+          "dataId": "BUFF_BOMB_31"
+        },
+        "45": {
+          "dataId": "BUFF_BOMB_32"
+        },
+        "53": {
+          "dataId": "BUFF_BOMB_33"
+        }
       },
       "lines": [
         0,
@@ -8911,39 +9637,105 @@
     "image": "lapsshiv",
     "board": {
       "nodes": {
-        "1": "BUFF_SHIV_01",
-        "2": "BUFF_SHIV_02",
-        "3": "BUFF_SHIV_03",
-        "4": "BUFF_SHIV_04",
-        "5": "BUFF_SHIV_05",
-        "6": "BUFF_SHIV_06",
-        "7": "BUFF_SHIV_07",
-        "8": "BUFF_SHIV_08",
-        "9": "BUFF_SHIV_09",
-        "10": "BUFF_SHIV_10",
-        "11": "BUFF_SHIV_11",
-        "12": "BUFF_SHIV_12",
-        "13": "BUFF_SHIV_13",
-        "14": "BUFF_SHIV_14",
-        "15": "BUFF_SHIV_15",
-        "16": "BUFF_SHIV_16",
-        "17": "BUFF_SHIV_17",
-        "18": "BUFF_SHIV_18",
-        "19": "BUFF_SHIV_19",
-        "21": "BUFF_SHIV_20",
-        "22": "BUFF_SHIV_21",
-        "24": "BUFF_SHIV_22",
-        "25": "BUFF_SHIV_23",
-        "27": "BUFF_SHIV_24",
-        "28": "BUFF_SHIV_25",
-        "30": "BUFF_SHIV_26",
-        "31": "BUFF_SHIV_27",
-        "33": "BUFF_SHIV_28",
-        "34": "BUFF_SHIV_29",
-        "36": "BUFF_SHIV_30",
-        "37": "BUFF_SHIV_31",
-        "45": "BUFF_SHIV_32",
-        "53": "BUFF_SHIV_33"
+        "1": {
+          "dataId": "BUFF_SHIV_01"
+        },
+        "2": {
+          "dataId": "BUFF_SHIV_02"
+        },
+        "3": {
+          "dataId": "BUFF_SHIV_03"
+        },
+        "4": {
+          "dataId": "BUFF_SHIV_04"
+        },
+        "5": {
+          "dataId": "BUFF_SHIV_05"
+        },
+        "6": {
+          "dataId": "BUFF_SHIV_06"
+        },
+        "7": {
+          "dataId": "BUFF_SHIV_07"
+        },
+        "8": {
+          "dataId": "BUFF_SHIV_08"
+        },
+        "9": {
+          "dataId": "BUFF_SHIV_09"
+        },
+        "10": {
+          "dataId": "BUFF_SHIV_10"
+        },
+        "11": {
+          "dataId": "BUFF_SHIV_11"
+        },
+        "12": {
+          "dataId": "BUFF_SHIV_12"
+        },
+        "13": {
+          "dataId": "BUFF_SHIV_13"
+        },
+        "14": {
+          "dataId": "BUFF_SHIV_14"
+        },
+        "15": {
+          "dataId": "BUFF_SHIV_15"
+        },
+        "16": {
+          "dataId": "BUFF_SHIV_16"
+        },
+        "17": {
+          "dataId": "BUFF_SHIV_17"
+        },
+        "18": {
+          "dataId": "BUFF_SHIV_18"
+        },
+        "19": {
+          "dataId": "BUFF_SHIV_19"
+        },
+        "21": {
+          "dataId": "BUFF_SHIV_20"
+        },
+        "22": {
+          "dataId": "BUFF_SHIV_21"
+        },
+        "24": {
+          "dataId": "BUFF_SHIV_22"
+        },
+        "25": {
+          "dataId": "BUFF_SHIV_23"
+        },
+        "27": {
+          "dataId": "BUFF_SHIV_24"
+        },
+        "28": {
+          "dataId": "BUFF_SHIV_25"
+        },
+        "30": {
+          "dataId": "BUFF_SHIV_26"
+        },
+        "31": {
+          "dataId": "BUFF_SHIV_27"
+        },
+        "33": {
+          "dataId": "BUFF_SHIV_28"
+        },
+        "34": {
+          "dataId": "BUFF_SHIV_29"
+        },
+        "36": {
+          "dataId": "BUFF_SHIV_30"
+        },
+        "37": {
+          "dataId": "BUFF_SHIV_31"
+        },
+        "45": {
+          "dataId": "BUFF_SHIV_32"
+        },
+        "53": {
+          "dataId": "BUFF_SHIV_33"
+        }
       },
       "lines": [
         0,
@@ -9674,39 +10466,105 @@
     "image": "lapsramu",
     "board": {
       "nodes": {
-        "1": "BUFF_RAMU_01",
-        "2": "BUFF_RAMU_02",
-        "3": "BUFF_RAMU_03",
-        "4": "BUFF_RAMU_04",
-        "5": "BUFF_RAMU_05",
-        "6": "BUFF_RAMU_06",
-        "7": "BUFF_RAMU_07",
-        "8": "BUFF_RAMU_08",
-        "9": "BUFF_RAMU_09",
-        "10": "BUFF_RAMU_10",
-        "11": "BUFF_RAMU_11",
-        "12": "BUFF_RAMU_12",
-        "13": "BUFF_RAMU_13",
-        "14": "BUFF_RAMU_14",
-        "15": "BUFF_RAMU_15",
-        "16": "BUFF_RAMU_16",
-        "17": "BUFF_RAMU_17",
-        "18": "BUFF_RAMU_18",
-        "19": "BUFF_RAMU_19",
-        "21": "BUFF_RAMU_20",
-        "22": "BUFF_RAMU_21",
-        "24": "BUFF_RAMU_22",
-        "25": "BUFF_RAMU_23",
-        "27": "BUFF_RAMU_24",
-        "28": "BUFF_RAMU_25",
-        "30": "BUFF_RAMU_26",
-        "31": "BUFF_RAMU_27",
-        "33": "BUFF_RAMU_28",
-        "34": "BUFF_RAMU_29",
-        "36": "BUFF_RAMU_30",
-        "37": "BUFF_RAMU_31",
-        "45": "BUFF_RAMU_32",
-        "53": "BUFF_RAMU_33"
+        "1": {
+          "dataId": "BUFF_RAMU_01"
+        },
+        "2": {
+          "dataId": "BUFF_RAMU_02"
+        },
+        "3": {
+          "dataId": "BUFF_RAMU_03"
+        },
+        "4": {
+          "dataId": "BUFF_RAMU_04"
+        },
+        "5": {
+          "dataId": "BUFF_RAMU_05"
+        },
+        "6": {
+          "dataId": "BUFF_RAMU_06"
+        },
+        "7": {
+          "dataId": "BUFF_RAMU_07"
+        },
+        "8": {
+          "dataId": "BUFF_RAMU_08"
+        },
+        "9": {
+          "dataId": "BUFF_RAMU_09"
+        },
+        "10": {
+          "dataId": "BUFF_RAMU_10"
+        },
+        "11": {
+          "dataId": "BUFF_RAMU_11"
+        },
+        "12": {
+          "dataId": "BUFF_RAMU_12"
+        },
+        "13": {
+          "dataId": "BUFF_RAMU_13"
+        },
+        "14": {
+          "dataId": "BUFF_RAMU_14"
+        },
+        "15": {
+          "dataId": "BUFF_RAMU_15"
+        },
+        "16": {
+          "dataId": "BUFF_RAMU_16"
+        },
+        "17": {
+          "dataId": "BUFF_RAMU_17"
+        },
+        "18": {
+          "dataId": "BUFF_RAMU_18"
+        },
+        "19": {
+          "dataId": "BUFF_RAMU_19"
+        },
+        "21": {
+          "dataId": "BUFF_RAMU_20"
+        },
+        "22": {
+          "dataId": "BUFF_RAMU_21"
+        },
+        "24": {
+          "dataId": "BUFF_RAMU_22"
+        },
+        "25": {
+          "dataId": "BUFF_RAMU_23"
+        },
+        "27": {
+          "dataId": "BUFF_RAMU_24"
+        },
+        "28": {
+          "dataId": "BUFF_RAMU_25"
+        },
+        "30": {
+          "dataId": "BUFF_RAMU_26"
+        },
+        "31": {
+          "dataId": "BUFF_RAMU_27"
+        },
+        "33": {
+          "dataId": "BUFF_RAMU_28"
+        },
+        "34": {
+          "dataId": "BUFF_RAMU_29"
+        },
+        "36": {
+          "dataId": "BUFF_RAMU_30"
+        },
+        "37": {
+          "dataId": "BUFF_RAMU_31"
+        },
+        "45": {
+          "dataId": "BUFF_RAMU_32"
+        },
+        "53": {
+          "dataId": "BUFF_RAMU_33"
+        }
       },
       "lines": [
         0,

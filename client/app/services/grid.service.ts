@@ -397,7 +397,7 @@ export class GridService {
     { "node1": 56, "node2": 57 },
     { "node1": 57, "node2": 58 },
     { "node1": 58, "node2": 59 },
-    { "node1": 59, "node2": 40 },
+    { "node1": 59, "node2": 60 },
     { "node1": 60, "node2": 37 }, // 155
   ]
 
@@ -412,19 +412,19 @@ export class GridService {
 
     this.gridNodes.forEach(node => {
       if (esper.board.nodes[node.toString()]) {
-        let buff = esper.buffs.find(buff => buff.dataId === esper.board.nodes[node.toString()])
+        let buff = esper.buffs.find(buff => buff.dataId === esper.board.nodes[node.toString()].dataId)
 
-        nodesHtml += '<li><div class="hex">'
+        nodesHtml += '<li class="node_' + node + '"><div class="hex">'
         //nodesHtml += '<span class="iconHolder"><img class="icon" src="/img/items/ability_100.png"></span>'
         nodesHtml += '<span class="text">'+ this.skillService.formatEffect(esper, buff, buff.effects[0], false) + '</span>'
         nodesHtml += '<span class="cost">' + buff.sp + ' SP</span>'
         nodesHtml += '</div></li>'
       } else if (node === 0) {
-        nodesHtml += '<li><div class="hex">'
-        nodesHtml += '<span class="text"><span>Esper</span>'
+        nodesHtml += '<li $node="' + node + '"><div class="hex activated">'
+        nodesHtml += '<span class="fullIcon"><img src="/assets/units/' + esper.image + '_s.png"></span>'
         nodesHtml += '</div></li>'
       } else {
-       nodesHtml += '<li><div class="hex hideNode"></div></li>'
+        nodesHtml += '<li><div class="hex hideNode"></div></li>'
       }
     });
 
@@ -434,6 +434,8 @@ export class GridService {
     esper.board.lines.forEach(line => {
       linesHtml += this.lines[line]
     })
+
+    this.generateNodesHierachy(esper)
 
     return {
       nodes: nodesHtml,
@@ -446,26 +448,26 @@ export class GridService {
 
     this.gridNodes.forEach(node => {
       if (unit.board.nodes[node.toString()]) {
-        let skill = unit.buffs.find(buff => buff.dataId === unit.board.nodes[node.toString()])
+        let skill = unit.buffs.find(buff => buff.dataId === unit.board.nodes[node.toString()].dataId)
         let text = ""
 
         if (!skill) {
-          skill = unit.skills.find(skill => skill.dataId === unit.board.nodes[node.toString()])
+          skill = unit.skills.find(skill => skill.dataId === unit.board.nodes[node.toString()].dataId)
           text = skill.name
         } else {
           text = this.skillService.formatEffect(unit, skill, skill.effects[0], false)
         }
 
-        nodesHtml += '<li><div class="hex">'
+        nodesHtml += '<li class="node_' + node + '"><div class="hex">'
         //nodesHtml += '<span class="iconHolder"><img class="icon" src="/img/items/ability_100.png"></span>'
         nodesHtml += '<span class="text">'+ text + '</span>'
         nodesHtml += '</div></li>'
       } else if (node === 0) {
-        nodesHtml += '<li><div class="hex">'
-        nodesHtml += '<span class="text"><span>Unit</span>'
+        nodesHtml += '<li $node="' + node + '"><div class="hex activated">'
+        nodesHtml += '<span class="fullIcon"><img src="/assets/units/' + unit.image + '_m.png"></span>'
         nodesHtml += '</div></li>'
       } else {
-       nodesHtml += '<li><div class="hex hideNode">' + node + '</div></li>'
+        nodesHtml += '<li><div class="hex hideNode">' + node + '</div></li>'
       }
     });
 
@@ -476,7 +478,6 @@ export class GridService {
       linesHtml += this.lines[line]
     })
 
-
     this.generateNodesHierachy(unit)
 
     return {
@@ -485,24 +486,34 @@ export class GridService {
     }
   }
 
-  generateNodesHierachy(item) {
-    let lines = JSON.parse(JSON.stringify(item.board.lines))
-    this.searchChildNodes(lines, 0)
+  generateNodesHierachy(item, lines = null, node = 0) {
+    if (!lines) {
+      lines = JSON.parse(JSON.stringify(item.board.lines))
+    }
+
+    let childNodes = this.searchChildNodes(lines, node)
+    if (node !== 0) {
+      item.board.nodes[node].children = childNodes
+    }
+
+    childNodes.forEach(childNode => {
+      item.board.nodes[childNode].parent = node
+      this.generateNodesHierachy(item, lines, childNode)
+    })
+
   }
 
   private searchChildNodes(lines, node) {
     let childNodes = []
     let linesToRemove = []
 
-    this.nodeLine.forEach((line, lineIndex) => {
-      let boardIndex = lines.find(line => line === lineIndex);
-
-      if (line.node1 === node && boardIndex) {
-        childNodes.push(line.node2)
+    lines.forEach((line, lineIndex) => {
+      if (this.nodeLine[line].node1 === node) {
+        childNodes.push(this.nodeLine[line].node2)
         linesToRemove.push(lineIndex)
 
-      } else if (line.node2 === node && boardIndex) {
-        childNodes.push(line.node1)
+      } else if (this.nodeLine[line].node2 === node) {
+        childNodes.push(this.nodeLine[line].node1)
         linesToRemove.push(lineIndex)
       }
     })

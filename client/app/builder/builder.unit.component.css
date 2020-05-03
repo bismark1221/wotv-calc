@@ -1,0 +1,27 @@
+.elementImg {
+  height: 32px;
+}
+
+.unitImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.unitName {
+  font-weight: bold;
+  margin-left: 10px
+}
+
+.unitsTable {
+  width: 800px;
+}
+
+.unitsCol {
+  width: 200px;
+}
+
+.row {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}
