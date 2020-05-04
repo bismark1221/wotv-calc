@@ -61,6 +61,38 @@
     </table>
   </div>
 
+  <div *ngIf="unit">
+    <table>
+      <tr>
+        <td colspan="2">Support Skills</td>
+      </tr>
+      <tr>
+        <td *ngFor="let i of [0, 1]">
+          <select [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="changeLevels()">
+            <option value="0"></option>
+            <option *ngFor="let node of getAvailableSupportNodes(i)" [ngValue]="node.nodeId">
+              {{ node.name }}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div *ngIf="unit">
+    <table>
+      <tr>
+        <td>Master Skill</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" [(ngModel)]="unit.masterSkill.activated" (ngModelChange)="changeLevels()" />
+          {{ unit.masterSkill.name }}
+        </td>
+      </tr>
+    </table>
+  </div>
+
   <div *ngIf="guild">
     <table>
       <tr>
@@ -136,6 +168,19 @@
         <td>{{ stats.LUCK.board }}</td>
         <td>{{ stats.MOVE.board }}</td>
         <td>{{ stats.JUMP.board }}</td>
+      </tr>
+      <tr>
+        <td>Master Skill</td>
+        <td>{{ stats.HP.masterSkill }}</td>
+        <td>{{ stats.TP.masterSkill }}</td>
+        <td>{{ stats.AP.masterSkill }}</td>
+        <td>{{ stats.ATK.masterSkill }}</td>
+        <td>{{ stats.MAG.masterSkill }}</td>
+        <td>{{ stats.AGI.masterSkill }}</td>
+        <td>{{ stats.DEX.masterSkill }}</td>
+        <td>{{ stats.LUCK.masterSkill }}</td>
+        <td>{{ stats.MOVE.masterSkill }}</td>
+        <td>{{ stats.JUMP.masterSkill }}</td>
       </tr>
       <tr>
         <td>Total</td>

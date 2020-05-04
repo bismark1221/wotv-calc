@@ -73,6 +73,12 @@ export class BuilderUnitComponent implements OnInit {
     this.unit.star = 1;
     this.unit.lb = 0;
     this.unit.level = 1;
+    this.unit.activatedSupport = [
+      "0",
+      "0"
+    ]
+    this.unit.masterSkill.activated = false;
+    this.unit.masterSkill.name = this.unit.masterSkill.names[lang]
 
     this.initiateSavedUnit()
 
@@ -215,6 +221,7 @@ export class BuilderUnitComponent implements OnInit {
     })
 
     this.calculateTotalStats()
+    console.log(this.unit.activatedSupport)
   }
 
   private calculateTotalStats() {
@@ -231,27 +238,38 @@ export class BuilderUnitComponent implements OnInit {
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       let node = this.unit.board.nodes[nodeId]
-      if (node.level) {
-        let buff = this.unit.buffs.find(buff => buff.dataId === node.dataId)
-        if (buff) {
-          buff.effects.forEach(effect => {
-            if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
-              this.stats[effect.type].board += effect.value
-            } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
-              this.stats[effect.type].board += Math.floor(this.stats[effect.type].baseTotal * effect.value / 100)
-            } else {
-              console.log("not manage effect")
-              console.log(buff)
-            }
-          })
-        }
+      if (node.type == "buff" && node.level) {
+        node.skill.effects.forEach(effect => {
+          if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+            this.stats[effect.type].board += effect.minValue
+          } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+            this.stats[effect.type].board += Math.floor(this.stats[effect.type].baseTotal * effect.minValue / 100)
+          } else {
+            console.log("not manage effect")
+            console.log(node)
+          }
+        })
       }
     })
+
+    if (this.unit.masterSkill.activated) {
+      this.unit.masterSkill.effects.forEach(effect => {
+        if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+          this.stats[effect.type].masterSkill += effect.minValue
+        } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+          this.stats[effect.type].masterSkill += Math.floor(this.stats[effect.type].baseTotal * effect.minValue / 100)
+        } else {
+          console.log("not manage effect")
+          console.log(this.unit.masterSkill)
+        }
+      })
+    }
 
     Object.keys(this.unit.stats).forEach(stat => {
       this.stats[stat].total = this.stats[stat].baseTotal;
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0
       this.stats[stat].total += this.stats[stat].board ? this.stats[stat].board : 0
+      this.stats[stat].total += this.stats[stat].masterSkill ? this.stats[stat].masterSkill : 0
     })
   }
 
@@ -313,13 +331,30 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   canActivateNode(node) {
-    let buff = this.unit.buffs.find(buff => buff.dataId === this.unit.board.nodes[node].dataId)
-    if (buff) {
-      return this.unit.star >= buff.unlockStar && this.unit.jobsData[(buff.unlockJob - 1)].level >= buff.jobLevel
+    let nodeData = this.unit.board.nodes[node]
+
+    if (nodeData.type == "buff") {
+      return this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel
     } else {
-      let skill = this.unit.skills.find(skill => skill.dataId === this.unit.board.nodes[node].dataId)
-      return !skill.unlockStar || (this.unit.star >= skill.unlockStar && this.unit.jobsData[(skill.unlockJob - 1)].level >= skill.jobLevel)
+      return !nodeData.skill.unlockStar || (this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
     }
+  }
+
+  getAvailableSupportNodes(pos) {
+    let nodes = []
+    let lang = this.translateService.currentLang
+
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      let node = this.unit.board.nodes[nodeId]
+      if (node.level && node.level >= 1 && node.skill.type == "support" && this.unit.activatedSupport[(pos == 0 ? 1 : 0)] !== nodeId) {
+        nodes.push({
+          nodeId: nodeId.toString(),
+          name: node.skill.names[lang]
+        })
+      }
+    })
+
+    return nodes
   }
 
 
