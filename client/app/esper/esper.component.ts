@@ -74,7 +74,6 @@ export class EsperComponent implements OnInit {
   }
 
   clickNode(this, node) {
-    console.log(this.esper)
     if (node !== 0) {
       if (!this.esper.board.nodes[node].activated) {
         this.showNode(node)

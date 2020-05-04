@@ -44,11 +44,11 @@ export class CardComponent implements OnInit {
 
     this.card.name = this.card.names[lang]
     skills.forEach(skillType => {
-      this.card[skillType].forEach(skill => {
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.card, skill, effect);
+      if (this.card[skillType]) {
+        this.card[skillType].effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.card, this.card[skillType], effect);
         });
-      });
+      }
     });
   }
 }

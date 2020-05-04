@@ -725,7 +725,7 @@ export class SkillService {
         html += "</tr>"
       })
       html += "</table>"
-      html += "<div class='tableSkillHeight'>Range Height: " + (skill.range.h ? skill.range.h : "0") + "</div>"
+      html += "<div class='tableSkillHeight'>Range Height: " + (skill.range && skill.range.h ? skill.range.h : "0") + "</div>"
       if (skill.aoe && skill.aoe.l) {
         html+= "<div class='tableSkillHeight'>AOE Height: " + skill.aoe.h + "</div>"
       }

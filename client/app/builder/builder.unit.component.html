@@ -1,4 +1,4 @@
-<div style="width: 50%; display: inline-block;">
+<div style="width: 30%; display: inline-block;">
   <ng-select [items]="units"
              bindLabel="name"
              groupBy="rarity"
@@ -79,7 +79,7 @@
   <button (click)="consoleLog()">CONSOLE</button>
 </div>
 
-<div style="width: 50%; display: inline-block;" *ngIf="stats">
+<div style="width: 70%; display: inline-block;" *ngIf="stats">
   <table class="statsTable">
     <tbody>
       <tr>
@@ -92,8 +92,8 @@
         <th>AP</th>
         <th>ATK</th>
         <th>MAG</th>
-        <th>DEX</th>
         <th>AGI</th>
+        <th>DEX</th>
         <th>LUCK</th>
         <th>MOVE</th>
         <th>JUMP</th>
@@ -105,8 +105,8 @@
         <td>{{ stats.AP.baseTotal }}</td>
         <td>{{ stats.ATK.baseTotal }}</td>
         <td>{{ stats.MAG.baseTotal }}</td>
-        <td>{{ stats.DEX.baseTotal }}</td>
         <td>{{ stats.AGI.baseTotal }}</td>
+        <td>{{ stats.DEX.baseTotal }}</td>
         <td>{{ stats.LUCK.baseTotal }}</td>
         <td>{{ stats.MOVE.baseTotal }}</td>
         <td>{{ stats.JUMP.baseTotal }}</td>
@@ -131,8 +131,8 @@
         <td>{{ stats.AP.board }}</td>
         <td>{{ stats.ATK.board }}</td>
         <td>{{ stats.MAG.board }}</td>
-        <td>{{ stats.DEX.board }}</td>
         <td>{{ stats.AGI.board }}</td>
+        <td>{{ stats.DEX.board }}</td>
         <td>{{ stats.LUCK.board }}</td>
         <td>{{ stats.MOVE.board }}</td>
         <td>{{ stats.JUMP.board }}</td>
@@ -144,8 +144,8 @@
         <td>{{ stats.AP.total }}</td>
         <td>{{ stats.ATK.total }}</td>
         <td>{{ stats.MAG.total }}</td>
-        <td>{{ stats.DEX.total }}</td>
         <td>{{ stats.AGI.total }}</td>
+        <td>{{ stats.DEX.total }}</td>
         <td>{{ stats.LUCK.total }}</td>
         <td>{{ stats.MOVE.total }}</td>
         <td>{{ stats.JUMP.total }}</td>

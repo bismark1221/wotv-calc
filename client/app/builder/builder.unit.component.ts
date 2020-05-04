@@ -87,7 +87,7 @@ export class BuilderUnitComponent implements OnInit {
   private initiateSavedUnit() {
     let savedUnits = this.unitService.getSavedUnits()
     let unit = savedUnits[this.unit.dataId]
-    console.log(unit)
+
     if (unit) {
       let lang = this.translateService.currentLang
 
@@ -102,8 +102,10 @@ export class BuilderUnitComponent implements OnInit {
       let activatedSkills = [];
 
       Object.keys(unit.nodes).forEach(nodeId => {
-        this.unit.board.nodes[nodeId].level = unit.nodes[nodeId]
-        this.unit.board.nodes[nodeId].activated = true
+        if (unit.nodes[nodeId]) {
+          this.unit.board.nodes[nodeId].level = unit.nodes[nodeId]
+          this.unit.board.nodes[nodeId].activated = true
+        }
       })
     }
   }
@@ -219,11 +221,9 @@ export class BuilderUnitComponent implements OnInit {
     let statsPerStatue = this.guildService.getStats()
 
     Object.keys(this.unit.stats).forEach(stat => {
-      this.stats[stat].total = this.stats[stat].baseTotal;
       this.stats[stat].board = 0;
       if (statsPerStatue[stat]) {
         this.stats[stat].guild = Math.floor(this.stats[stat].baseTotal * this.guild[statsPerStatue[stat]] / 100)
-        this.stats[stat].total += this.stats[stat].guild
       }
     });
 
@@ -247,6 +247,12 @@ export class BuilderUnitComponent implements OnInit {
         }
       }
     })
+
+    Object.keys(this.unit.stats).forEach(stat => {
+      this.stats[stat].total = this.stats[stat].baseTotal;
+      this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0
+      this.stats[stat].total += this.stats[stat].board ? this.stats[stat].board : 0
+    })
   }
 
   rightClickNode(node) {
@@ -268,7 +274,7 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   showNode(node) {
-    if (node !== 0) {
+    if (node !== 0 && this.canActivateNode(node)) {
       if (!this.unit.board.nodes[node].activated) {
         this.unit.board.nodes[node].activated = true;
         this.showNode(this.unit.board.nodes[node].parent)
@@ -278,19 +284,19 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
-  hideNode(node) {
+  hideNode(node, fullHide = false) {
     if (node !== 0) {
-      let level = this.updateSkill(node, false)
+      let level = this.updateSkill(node, false, fullHide)
       if (level === 0) {
         this.unit.board.nodes[node].activated = false;
         this.unit.board.nodes[node].children.forEach(childNode => {
-          this.hideNode(childNode)
+          this.hideNode(childNode, true)
         })
       }
     }
   }
 
-  private updateSkill(nodeId, increase) {
+  private updateSkill(nodeId, increase, fullHide = false) {
     let node = this.unit.board.nodes[nodeId]
 
     if (this.grid.nodesForGrid[nodeId].subType == "buff") {
@@ -299,15 +305,21 @@ export class BuilderUnitComponent implements OnInit {
       if (increase) {
         node.level = typeof(node.level) == "number" ? (node.level == 20 ? 20 : node.level + 1) : 1
       } else {
-        node.level = typeof(node.level) == "number" ? (node.level == 0 ? 0 : node.level - 1) : 0
+        node.level = typeof(node.level) == "number" ? (node.level == 0 || fullHide ? 0 : node.level - 1) : 0
       }
     }
 
     return node.level
   }
 
-  getSkillLevel(skillId) {
-    return this.unit.skills.find(skill => skill.dataId === skillId).level
+  canActivateNode(node) {
+    let buff = this.unit.buffs.find(buff => buff.dataId === this.unit.board.nodes[node].dataId)
+    if (buff) {
+      return this.unit.star >= buff.unlockStar && this.unit.jobsData[(buff.unlockJob - 1)].level >= buff.jobLevel
+    } else {
+      let skill = this.unit.skills.find(skill => skill.dataId === this.unit.board.nodes[node].dataId)
+      return !skill.unlockStar || (this.unit.star >= skill.unlockStar && this.unit.jobsData[(skill.unlockJob - 1)].level >= skill.jobLevel)
+    }
   }
 
 

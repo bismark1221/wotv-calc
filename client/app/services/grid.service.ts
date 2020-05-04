@@ -412,7 +412,7 @@ export class GridService {
 
     this.gridNodes.forEach(node => {
       if (esper.board.nodes[node.toString()]) {
-        let buff = esper.buffs.find(buff => buff.dataId === esper.board.nodes[node.toString()].dataId)
+        let buff = esper.board.nodes[node.toString()].skill
 
         nodesForGrid[node] = {
           type: "text",
@@ -448,21 +448,18 @@ export class GridService {
 
     this.gridNodes.forEach(node => {
       if (unit.board.nodes[node.toString()]) {
-        let skill = unit.buffs.find(buff => buff.dataId === unit.board.nodes[node.toString()].dataId)
+        let skill = unit.board.nodes[node.toString()].skill
         let text = ""
-        let subType = "buff"
 
-        if (!skill) {
-          skill = unit.skills.find(skill => skill.dataId === unit.board.nodes[node.toString()].dataId)
-          text = skill.names[this.translateService.currentLang]
-          subType = "skill"
-        } else {
+        if (unit.board.nodes[node.toString()].type == "buff") {
           text = this.skillService.formatEffect(unit, skill, skill.effects[0], false)
+        } else {
+          text = skill.names[this.translateService.currentLang]
         }
 
         nodesForGrid[node] = {
           type: "text",
-          subType: subType,
+          subType: unit.board.nodes[node.toString()].type,
           value: text
         }
       } else if (node === 0) {

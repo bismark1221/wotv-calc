@@ -56,10 +56,10 @@
 <div class="row">
   <table class="skillsTable" *ngIf="equipment.countSkills.length > 0">
     <tbody>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
+      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'skill'">
         <th colspan="6">Skill</th>
       </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
+      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'skill'">
         <th>name</th>
         <th>Effects</th>
         <th>Range</th>
@@ -67,7 +67,7 @@
         <th>Hits</th>
         <th>Cost</th>
       </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'active'">
+      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type == 'skill'">
         <td class="skillNameTd">
           {{ equipment.skills[0][0].name }}
           <span *ngIf="equipment.skills[0][0].based">
@@ -106,13 +106,13 @@
           <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
         </td>
       </tr>
-      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'active'">
+      <tr *ngIf="equipment.skills[0][0] && equipment.skills[0][0].type != 'skill'">
         <th colspan="6">Effects</th>
       </tr>
       <tr *ngIf="equipment.countSkills.length > 1">
         <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
       </tr>
-      <tr *ngIf="(equipment.skills[0][0] && equipment.skills[0][0].type != 'active') || equipment.countSkills.length > 1">
+      <tr *ngIf="(equipment.skills[0][0] && equipment.skills[0][0].type != 'skill') || equipment.countSkills.length > 1">
         <td *ngFor="let i of equipment.countSkills">
           <div *ngFor="let skill of equipment.skills[i]">
             <div *ngFor="let effect of skill.effects">

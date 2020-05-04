@@ -49,21 +49,49 @@ export class UnitComponent implements OnInit {
     let lang = this.translateService.currentLang
     this.unit.name = this.unit.names[lang]
 
-    this.unit.skills.forEach(skill => {
-      skill.name = skill.names[lang]
+    this.unit.skills = []
 
-      skill.effects.forEach(effect => {
-        effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-      });
+    this.unit.totalBuffs = {
+      HP: 0,
+      TP: 0,
+      INITIAL_AP: 0,
+      ATK: 0,
+      DEF: 0,
+      MAG: 0,
+      SPR: 0,
+      DEX: 0,
+      AGI: 0,
+      LUCK: 0,
+      CRITIC_RATE: 0,
+    };
+    this.unit.remainingBuffs = [];
 
-      skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      let skill = this.unit.board.nodes[nodeId].skill
+      if (skill.type !== "buff") {
+        skill.name = skill.names[lang]
 
-      if (skill.counter) {
-        skill.counterHtml = this.skillService.formatCounter(this.unit, skill, skill.counter);
+        skill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+        });
+
+        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(this.unit, skill, skill.counter);
+        }
+
+        this.skillService.formatRange(this.unit, skill);
+        this.unit.skills.push(skill)
+      } else {
+        let effect = skill.effects[0]
+        if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
+          this.unit.totalBuffs[effect.type] += effect.minValue
+        } else {
+          this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect, false))
+        }
       }
-
-      this.skillService.formatRange(this.unit, skill);
-    });
+    })
     this.skillService.sort(this.unit.skills);
 
     if (this.unit.masterSkill) {
@@ -87,30 +115,6 @@ export class UnitComponent implements OnInit {
 
       this.skillService.formatRange(this.unit, this.unit.limit);
     }
-
-    this.unit.totalBuffs = {
-      HP: 0,
-      TP: 0,
-      INITIAL_AP: 0,
-      ATK: 0,
-      DEF: 0,
-      MAG: 0,
-      SPR: 0,
-      DEX: 0,
-      AGI: 0,
-      LUCK: 0,
-      CRITIC_RATE: 0,
-    };
-    this.unit.remainingBuffs = [];
-
-    this.unit.buffs.forEach(buff => {
-      let effect = buff.effects[0]
-      if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
-        this.unit.totalBuffs[effect.type] += effect.value
-      } else {
-        this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, buff, effect, false))
-      }
-    });
 
     if (this.unit.tmr) {
       this.unit.tmr.name = this.unit.tmr.names[lang]

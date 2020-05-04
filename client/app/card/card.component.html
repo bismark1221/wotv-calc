@@ -44,30 +44,24 @@
         <tr *ngIf="card.unitBuffsClassic">
           <td>Classic</td>
           <td colspan="3">
-            <div *ngFor="let skill of card.unitBuffsClassic">
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
-              </div>
+            <div *ngFor="let effect of card.unitBuffsClassic.effects">
+              {{ effect.formatHtml }}
             </div>
           </td>
         </tr>
-        <tr *ngIf="card.unitBuffsAwake.length > 0">
+        <tr *ngIf="card.unitBuffsAwake">
           <td>Awake</td>
           <td colspan="3">
-            <div *ngFor="let skill of card.unitBuffsAwake">
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
-              </div>
+            <div *ngFor="let effect of card.unitBuffsAwake.effects">
+              {{ effect.formatHtml }}
             </div>
           </td>
         </tr>
-        <tr *ngIf="card.unitBuffsMax.length > 0">
+        <tr *ngIf="card.unitBuffsMax">
           <td>Max</td>
           <td colspan="3">
-            <div *ngFor="let skill of card.unitBuffsMax">
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
-              </div>
+            <div *ngFor="let effect of card.unitBuffsMax.effects">
+              {{ effect.formatHtml }}
             </div>
           </td>
         </tr>
@@ -77,30 +71,24 @@
         <tr *ngIf="card.partyBuffsClassic">
           <td>Classic</td>
           <td colspan="3">
-            <div *ngFor="let skill of card.partyBuffsClassic">
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
-              </div>
+            <div *ngFor="let effect of card.partyBuffsClassic.effects">
+              {{ effect.formatHtml }}
             </div>
           </td>
         </tr>
-        <tr *ngIf="card.partyBuffsAwake.length > 0">
+        <tr *ngIf="card.partyBuffsAwake">
           <td>Awake</td>
           <td colspan="3">
-            <div *ngFor="let skill of card.partyBuffsAwake">
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
-              </div>
+            <div *ngFor="let effect of card.partyBuffsAwake.effects">
+              {{ effect.formatHtml }}
             </div>
           </td>
         </tr>
-        <tr *ngIf="card.partyBuffsMax.length > 0">
+        <tr *ngIf="card.partyBuffsMax">
           <td>Max</td>
           <td colspan="3">
-            <div *ngFor="let skill of card.partyBuffsMax">
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
-              </div>
+            <div *ngFor="let effect of card.partyBuffsMax.effects">
+              {{ effect.formatHtml }}
             </div>
           </td>
         </tr>

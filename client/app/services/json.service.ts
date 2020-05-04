@@ -407,6 +407,20 @@ export class JsonService {
     40: "nullify"
   }
 
+  slots = [
+    "buff",
+    "skill",
+    "skill",
+    "support",
+    "counter",
+    "esper",
+    "limit",
+    "master",
+    "party"
+  ]
+
+
+
   constructor(private http: HttpClient, private equipmentService: EquipmentService) {}
 
   private jsonUnits() {
@@ -647,8 +661,6 @@ export class JsonService {
       names: {},
       rarity: this.rarity[unit.rare],
       jobs: unit.jobsets,
-      skills: [],
-      buffs: [],
       stats: {},
       element: this.elements[unit.elem[0]],
       image: unit.charaId.toLowerCase(),
@@ -679,12 +691,6 @@ export class JsonService {
         dataId: dataId,
         names: {},
         rarity: this.rarity[visionCard.rare],
-        unitBuffsClassic: [],
-        unitBuffsAwake: [],
-        unitBuffsMax: [],
-        partyBuffsClassic: [],
-        partyBuffsAwake: [],
-        partyBuffsMax: [],
         stats: {},
         image: visionCard.icon.toLowerCase()
       };
@@ -711,14 +717,11 @@ export class JsonService {
   private getSkillsAndBuffs(unit) {
     if (this.boards[unit.dataId]) {
       this.boards[unit.dataId].panels.forEach(item => {
-        if (item.value.split("_")[0] === "BUFF") {
-          this.addPassiveBuff(unit, item)
-        } else {
-          this.addSkill(unit, item)
-        }
 
         unit.board.nodes[item.panel_id] = {
-          dataId: item.value
+          dataId: item.value,
+          type: item.panel_effect_type == 1 ? "skill" : "buff",
+          skill: this.addSkill(unit, item)
         }
       });
 
@@ -732,318 +735,295 @@ export class JsonService {
   private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {
     // party
     if (rawVisionCard.card_skill) {
-      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.card_skill}, "partyBuffsClassic")
+      visionCard.partyBuffsClassic = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill})
     }
 
     if (rawVisionCard.add_card_skill_buff_awake) {
-      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_card_skill_buff_awake}, "partyBuffsAwake")
+      visionCard.partyBuffsAwake = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake})
     }
 
     if (rawVisionCard.add_card_skill_buff_lvmax) {
-      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_card_skill_buff_lvmax}, "partyBuffsMax")
+      visionCard.partyBuffsMax = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax})
     }
 
     // self
     if (rawVisionCard.self_buff) {
-      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.self_buff}, "unitBuffsClassic")
+      visionCard.unitBuffsClassic = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff})
     }
 
     if (rawVisionCard.add_self_buff_awake) {
-      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_self_buff_awake}, "unitBuffsAwake")
+      visionCard.unitBuffsAwake = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_awake})
     }
 
     if (rawVisionCard.add_self_buff_lvmax) {
-      this.addSkill(visionCard, {slot: 3, value: rawVisionCard.add_self_buff_lvmax}, "unitBuffsMax")
+      visionCard.unitBuffsMax = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax})
     }
   }
 
-
-  private addPassiveBuff(unit, panelBuff) {
-    // //console.log(panelBuff)
-    // //console.log(this.buffs[panelBuff.value])
-
-    let buff = {
-      unlockStar: panelBuff.unlock_value + 1,
-      unlockJob: panelBuff.get_job,
-      jobLevel: panelBuff.need_level,
-      jp: panelBuff.jp,
-      sp: panelBuff.sp,
-      effects: [],
-      dataId: panelBuff.value
-    };
-
-    let finished = false;
-    let i = 1;
-    while (!finished) {
-      if (this.buffs[panelBuff.value]["type" + i]) {
-
-        if (!this.buffTypes[this.buffs[panelBuff.value]["type" + i]]) {
-          console.log("@@@@@ " + unit.names.en + " -- " + panelBuff.value + " -- EFFECT : " + this.buffs[panelBuff.value]["type" + i])
-          console.log(this.buffs[panelBuff.value])
-        }
-
-        if (this.buffs[panelBuff.value]["tag" + i] && !this.killers[this.buffs[panelBuff.value]["tag" + i]]) {
-          console.log("@@@@@ " + unit.names.en + " -- " + panelBuff.value + " -- KILLER : " + this.buffs[panelBuff.value]["tag" + i])
-        }
-
-        buff.effects.push({
-          type: this.buffs[panelBuff.value]["tag" + i] ? this.killers[this.buffs[panelBuff.value]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[panelBuff.value]["type" + i]],
-          value: this.buffs[panelBuff.value]["val" + i],
-          calcType: this.calcType[this.buffs[panelBuff.value]["calc" + i]] ? this.calcType[this.buffs[panelBuff.value]["calc" + i]] : "unknow"
-        });
-
-
-        // if (this.buffs[panelBuff.value]["calc1"] == 2) {
-        //   //console.log(panelBuff.value)
-        //   //console.log(this.buffs[panelBuff.value]["type" + i])
-        // }
-
-
-        i++;
-      } else {
-        finished = true;
-      }
-    }
-
-    unit.buffs.push(buff);
-  }
-
-  private addSkill(unit, panelSkill, type = "skills") {
+  private addSkill(unit, panelSkill) {
     let skill = {
       unlockStar: panelSkill.unlock_value + 1,
       unlockJob: panelSkill.get_job,
       jobLevel: panelSkill.need_level,
-      names: { en: this.names.en.skill[panelSkill.value], fr: this.names.fr.skill[panelSkill.value]},
+      jp: panelSkill.jp,
+      sp: panelSkill.sp,
       effects: [],
       dataId: panelSkill.value,
-      slot: this.skills[panelSkill.value].slot
+      type: this.slots[(this.skills[panelSkill.value] && this.skills[panelSkill.value].slot ? this.skills[panelSkill.value].slot : 0)]
     };
 
     this.updateSkill(unit, skill, panelSkill.value);
 
-    if (this.skills[panelSkill.value].wth) {
+    if (skill.type !== "buff" && this.skills[panelSkill.value].wth) {
       this.addWeather(unit, skill, this.skills[panelSkill.value].wth.id);
     }
 
-    unit[type].push(skill);
+    return skill;
   }
 
   private updateSkill(unit, skill, skillId) {
-    if (skill.slot !== 3) {
+    let dataSkill = {
+      t_buffs: null,
+      s_buffs: null,
+      cost_type: null,
+      cost_ap: null,
+      cost_mp: null,
+      hp_cost: null,
+      count: null,
+      range_h: null,
+      range_l: null,
+      range_m: null,
+      range_mh: null,
+      range_s: null,
+      range_w: null,
+      line: null,
+      atk_type: null,
+      eff_s: null,
+      eff_l: null,
+      eff_h: null,
+      ct_spd: null,
+      ct_spd1: null,
+      hit: null,
+      pierce: null,
+      ctbreak: null,
+      combo_num: null,
+      combo_rate: null,
+      vat: null,
+      rate: null,
+      dir: null,
+      ds: null,
+      eff_rate: null,
+      eff_rate1: null,
+      react_d_type: null,
+      klsp: null,
+      klspr: null,
+      barrier: null,
+      eff: null,
+      chang: null,
+      move: null,
+      eff_val: null,
+      eff_val1: null,
+      eff_type: null,
+      eff_dst: null,
+      atk_det: null,
+      elem: null
+    };
+
+    if (skill.type == "buff") {
+      dataSkill.s_buffs = [skillId]
+    } else {
+      dataSkill = this.skills[skillId]
+      skill.names = {
+        en: this.names.en.skill[skillId],
+        fr: this.names.fr.skill[skillId]
+      }
+    }
+
+    if (dataSkill.cost_type) {
       skill.cost = {
-        type: this.skills[skillId].cost_type == 0 ? "AP" : "TP",
-        value: this.skills[skillId].cost_type == 0 ? this.skills[skillId].cost_ap : this.skills[skillId].cost_mp
+        type: dataSkill.cost_type == 0 ? "AP" : "TP",
+        value: dataSkill.cost_type == 0 ? dataSkill.cost_ap : dataSkill.cost_mp
       }
+    }
 
-      if (this.skills[skillId].hp_cost) {
-        skill.effects.push({
-          type: "HP_COST",
-          value: this.skills[skillId].hp_cost,
-          calcType: "percent"
-        });
-      }
+    if (dataSkill.hp_cost) {
+      skill.effects.push({
+        type: "HP_COST",
+        value: dataSkill.hp_cost,
+        calcType: "percent"
+      });
+    }
 
-      skill.type = skill.slot === 4 ? "counter" : "active"
-      skill.count = this.skills[skillId].count
+    skill.count = dataSkill.count
+
+    if (dataSkill.range_h || dataSkill.range_l || dataSkill.range_m || dataSkill.range_mh || dataSkill.range_s || dataSkill.range_w || dataSkill.line) {
       skill.range = {
-        h: this.skills[skillId].range_h,
-        l: this.skills[skillId].range_l,
-        m: this.skills[skillId].range_m,
-        mh: this.skills[skillId].range_mh,
-        s: this.skills[skillId].range_s,
-        w: this.skills[skillId].range_w,
-        line: this.skills[skillId].line
+        h: dataSkill.range_h,
+        l: dataSkill.range_l,
+        m: dataSkill.range_m,
+        mh: dataSkill.range_mh,
+        s: dataSkill.range_s,
+        w: dataSkill.range_w,
+        line: dataSkill.line
       }
+    }
 
-      skill.based = this.skills[skillId].atk_type ? this.atkBased[this.skills[skillId].atk_type] : null
+    if (dataSkill.atk_type) {
+      skill.based = this.atkBased[dataSkill.atk_type]
+    }
 
+    if (dataSkill.eff_s || dataSkill.eff_l || dataSkill.eff_h) {
       skill.aoe = {
-        s: this.skills[skillId].eff_s,
-        l: this.skills[skillId].eff_l,
-        h: this.skills[skillId].eff_h
+        s: dataSkill.eff_s,
+        l: dataSkill.eff_l,
+        h: dataSkill.eff_h
       }
+    }
 
+    if (dataSkill.ct_spd) {
       skill.time = {
-        minValue: this.skills[skillId].ct_spd,
-        maxValue: this.skills[skillId].ct_spd1
+        minValue: dataSkill.ct_spd,
+        maxValue: dataSkill.ct_spd1
       }
+    }
 
-      skill.hit = this.skills[skillId].hit
-      skill.pierce = this.skills[skillId].pierce
-      skill.ctbreak = this.skills[skillId].ctbreak // Cancel ability activation
+    skill.hit = dataSkill.hit
+    skill.pierce = dataSkill.pierce
+    skill.ctbreak = dataSkill.ctbreak // Cancel ability activation
+
+    if (dataSkill.combo_num) {
       skill.combo = {
-        num: this.skills[skillId].combo_num,
-        rate: this.skills[skillId].combo_rate
+        num: dataSkill.combo_num,
+        rate: dataSkill.combo_rate
       }
+    }
+
+    if (dataSkill.vat) {
       skill.knockback = {
-        rate: this.skills[skillId].rate,
-        value: this.skills[skillId].vat,
-        direction: this.skills[skillId].dir,
-        ds: this.skills[skillId].ds
+        rate: dataSkill.rate,
+        value: dataSkill.vat,
+        direction: dataSkill.dir,
+        ds: dataSkill.ds
+      }
+    }
+
+    if (skill.type === "counter") {
+      skill.counter = {
+        minValue: dataSkill.eff_rate,
+        maxValue: dataSkill.eff_rate1,
+        reactDamage: this.reactCounter[dataSkill.react_d_type],
+        calcType: "percent",
+      }
+    }
+
+    if (dataSkill.klsp) {
+      if (!this.killers[dataSkill.klsp[0]]) {
+        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + dataSkill.klsp[0])
       }
 
-      if (skill.slot === 4) {
-        skill.counter = {
-          minValue: this.skills[skillId].eff_rate,
-          maxValue: this.skills[skillId].eff_rate1,
-          reactDamage: this.reactCounter[this.skills[skillId].react_d_type],
-          calcType: "percent",
-        }
-      }
-
-      if (this.skills[skillId].klsp) {
-        if (!this.killers[this.skills[skillId].klsp[0]]) {
-          console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + this.skills[skillId].klsp[0])
-        }
-
-        this.skills[skillId].klsp.forEach(killer => {
-          skill.effects.push({
-            type: this.killers[killer] + "_KILLER",
-            minValue: this.skills[skillId].klspr,
-            maxValue: this.skills[skillId].klspr,
-            calcType: "unknow",
-          });
-        });
-      }
-
-      if (this.skills[skillId].barrier) {
+      dataSkill.klsp.forEach(killer => {
         skill.effects.push({
-          type: this.skills[skillId].eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE",
-          minValue: this.skills[skillId].barrier.scut,
-          maxValue: this.skills[skillId].barrier.ecut,
-          calcType: "percent",
-          turn: this.skills[skillId].barrier.val,
-          turnType: this.skills[skillId].barrier.type !== 3 ? "TURNS" : "COUNT",
+          type: this.killers[killer] + "_KILLER",
+          minValue: dataSkill.klspr,
+          maxValue: dataSkill.klspr,
+          calcType: "unknow",
+        });
+      });
+    }
+
+    if (dataSkill.barrier) {
+      skill.effects.push({
+        type: dataSkill.eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE",
+        minValue: dataSkill.barrier.scut,
+        maxValue: dataSkill.barrier.ecut,
+        calcType: "percent",
+        turn: dataSkill.barrier.val,
+        turnType: dataSkill.barrier.type !== 3 ? "TURNS" : "COUNT",
+      });
+    }
+
+    if (dataSkill.chang) {
+      skill.effects.push({
+        type: "SWITCH_POS"
+      });
+    }
+
+    if (dataSkill.move) {
+      skill.effects.push({
+        type: "MOVE_UNIT"
+      });
+    }
+
+
+    if (typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val !== 0
+      && typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 !== 0
+      && dataSkill.eff_type !== 10
+    ) {
+      skill.damage = {
+        minValue: dataSkill.eff_val,
+        maxValue: dataSkill.eff_val1,
+        minSpeed: dataSkill.ct_spd,
+        maxSpeed: dataSkill.ct_spd1,
+        type: this.damageTypes[dataSkill.atk_det],
+        pool: this.damagePool[dataSkill.eff_dst],
+        effType: this.damageEffectType[dataSkill.eff_type],
+      }
+
+      if (dataSkill.eff_dst && !this.damagePool[dataSkill.eff_dst]) {
+        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + dataSkill.eff_dst)
+      }
+
+      if (dataSkill.elem) {
+        skill.elem = [];
+        dataSkill.elem.forEach(elem => {
+          skill.elem.push(this.elements[elem])
         });
       }
-
-      if (this.skills[skillId].chang) {
-        skill.effects.push({
-          type: "SWITCH_POS"
-        });
-      }
-
-      if (this.skills[skillId].move) {
-        skill.effects.push({
-          type: "MOVE_UNIT"
-        });
-      }
+    }
 
 
-      if (typeof(this.skills[skillId].eff_val) == "number" && this.skills[skillId].eff_val !== 0
-        && typeof(this.skills[skillId].eff_val1) == "number" && this.skills[skillId].eff_val1 !== 0
-        && this.skills[skillId].eff_type !== 10
-      ) {
-        skill.damage = {
-          minValue: this.skills[skillId].eff_val,
-          maxValue: this.skills[skillId].eff_val1,
-          minSpeed: this.skills[skillId].ct_spd,
-          maxSpeed: this.skills[skillId].ct_spd1,
-          type: this.damageTypes[this.skills[skillId].atk_det],
-          pool: this.damagePool[this.skills[skillId].eff_dst],
-          effType: this.damageEffectType[this.skills[skillId].eff_type],
-        }
-
-        if (this.skills[skillId].eff_dst && !this.damagePool[this.skills[skillId].eff_dst]) {
-          console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + this.skills[skillId].eff_dst)
-        }
-
-        if (this.skills[skillId].elem) {
-          skill.elem = [];
-          this.skills[skillId].elem.forEach(elem => {
-            skill.elem.push(this.elements[elem])
-          });
-        }
-      }
-
-
-      if (this.skills[skillId].t_buffs || this.skills[skillId].s_buffs) {
-        let buffs = this.skills[skillId].t_buffs ? this.skills[skillId].t_buffs : this.skills[skillId].s_buffs
-        buffs.forEach(buff => {
-          let finished = false;
-          let i = 1;
-          let duplicateFinded = false;
-
-          while (!finished) {
-            if (this.buffs[buff]["type" + i]) {
-              if (duplicateFinded && this.buffs[buff]["type" + i] === 117) {} else {
-                if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
-                  console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
-                }
-
-                if (this.buffs[buff]["id" + i]) {
-                  buffs.push(this.buffs[this.buffs[buff]["id" + i]]);
-                }
-
-                if (this.buffs[buff]["tag" + i] && !this.killers[this.buffs[buff]["tag" + i]]) {
-                  console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
-                }
-
-                skill.effects.push({
-                  type: this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]],
-                  minValue: this.buffs[buff]["val" + i],
-                  maxValue: this.buffs[buff]["val" + i + "1"],
-                  calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
-                  rate: this.buffs[buff].rate,
-                  turn: this.buffs[buff].turn
-                });
-
-                if (this.buffs[buff]["type" + i] === 116) {
-                  duplicateFinded = true;
-                }
-              }
-
-              i++;
-            } else {
-              finished = true;
-            }
-          }
-        })
-      }
-
-
-
-
-
-
-
-    } else if (skill.slot === 3) {
-      skill.type = "passive"
-      let buffs = this.skills[skillId].t_buffs ? this.skills[skillId].t_buffs : this.skills[skillId].s_buffs
-
+    if (dataSkill.t_buffs || dataSkill.s_buffs) {
+      let buffs = dataSkill.t_buffs ? dataSkill.t_buffs : dataSkill.s_buffs
       buffs.forEach(buff => {
         let finished = false;
         let i = 1;
+        let duplicateFinded = false;
+
         while (!finished) {
           if (this.buffs[buff]["type" + i]) {
-            if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
-              console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
+            if (duplicateFinded && this.buffs[buff]["type" + i] === 117) {} else {
+              if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
+                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
+              }
+
+              if (this.buffs[buff]["id" + i]) {
+                buffs.push(this.buffs[this.buffs[buff]["id" + i]].iname);
+              }
+
+              if (this.buffs[buff]["tag" + i] && !this.killers[this.buffs[buff]["tag" + i]]) {
+                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
+              }
+
+              skill.effects.push({
+                type: this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]],
+                minValue: this.buffs[buff]["val" + i],
+                maxValue: this.buffs[buff]["val" + i + "1"],
+                calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
+                rate: this.buffs[buff].rate,
+                turn: this.buffs[buff].turn
+              });
+
+              if (this.buffs[buff]["type" + i] === 116) {
+                duplicateFinded = true;
+              }
             }
 
-            if (this.buffs[buff]["id" + i]) {
-              this.buffs[buff] = this.buffs[this.buffs[buff]["id" + i]];
-            }
-
-            if (this.buffs[buff]["tag" + i] && !this.killers[this.buffs[buff]["tag" + i]]) {
-              console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
-            }
-
-            skill.effects.push({
-              type: this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]],
-              minValue: this.buffs[buff]["val" + i],
-              maxValue: this.buffs[buff]["val" + i + "1"],
-              calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
-              rate: this.buffs[buff].rate,
-              turn: this.buffs[buff].turn
-            });
             i++;
           } else {
             finished = true;
           }
         }
       })
-    } else {
-       console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- SLOT : " + skill.slot)
     }
   }
 
@@ -1061,8 +1041,7 @@ export class JsonService {
       let limit = {
         names: { en: this.names.en.skill[lbId], fr: this.names.fr.skill[lbId]},
         effects: [],
-        dataId: lbId,
-        slot: this.skills[lbId].slot
+        dataId: lbId
       };
 
       this.updateSkill(unit, limit, lbId);
@@ -1076,8 +1055,7 @@ export class JsonService {
       let masterSkill = {
         names: { en: this.names.en.skill[skillId], fr: this.names.fr.skill[skillId]},
         effects: [],
-        dataId: skillId,
-        slot: this.skills[skillId].slot
+        dataId: skillId
       };
 
       this.updateSkill(unit, masterSkill, skillId);
@@ -1110,7 +1088,7 @@ export class JsonService {
                 names: { en: this.names.en.skill[this.equipments[tmrId]["skl" + i][j]], fr: this.names.fr.skill[this.equipments[tmrId]["skl" + i][j]]},
                 dataId: this.equipments[tmrId]["skl" + i][j],
                 effects: [],
-                slot: this.skills[this.equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1
+                type: this.slots[this.skills[this.equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1]
               }
               this.updateSkill(unit, skill, this.equipments[tmrId]["skl" + i][j]);
               tmr.skills.push(skill)
@@ -1130,8 +1108,9 @@ export class JsonService {
       dataId: dataId,
       names: {},
       rarity: this.rarity[esper.rare],
-      skills: [],
-      buffs: [],
+      skills: [
+        this.addSkill(this.wotvEspers[dataId], {slot: 1, value: esper.atkskl})
+      ],
       stats: {},
       SPs : [],
       element: this.elements[esper.elem[0]],
@@ -1147,8 +1126,6 @@ export class JsonService {
     this.getEsperStats(esper, 'esper')
     this.getEspersSkillsAndBuffs(this.wotvEspers[dataId]);
     this.getEspersSPs(this.wotvEspers[dataId], esper.nb_lv_tbl);
-
-    this.addSkill(this.wotvEspers[dataId], {slot: 3, value: esper.atkskl});
   }
 
   private getEsperStats(esper, type) {
@@ -1168,9 +1145,10 @@ export class JsonService {
   private getEspersSkillsAndBuffs(esper) {
     if (this.espersBoards[esper.dataId]) {
       this.espersBoards[esper.dataId].panels.forEach(item => {
-        this.addPassiveBuff(esper, item)
         esper.board.nodes[item.panel_id] = {
-          dataId: item.value
+          dataId: item.value,
+          type: "buff",
+          skill: this.addSkill(esper, item)
         }
       });
 
@@ -1323,7 +1301,7 @@ export class JsonService {
                 },
                 dataId: this.equipments[dataId]["skl" + i][j],
                 effects: [],
-                slot: this.skills[this.equipments[dataId]["skl" + i][j]].s_buffs || this.skills[this.equipments[dataId]["skl" + i][j]].type === 6 ? 3 : 1
+                type: this.slots[this.skills[this.equipments[dataId]["skl" + i][j]].s_buffs || this.skills[this.equipments[dataId]["skl" + i][j]].type === 6 ? 3 : 1]
               }
               this.updateSkill(this.wotvEquipments[rType], skill, this.equipments[dataId]["skl" + i][j]);
               skills.push(skill)
@@ -1340,7 +1318,7 @@ export class JsonService {
     let unitToDelete = [];
 
     Object.keys(this.wotvUnits).forEach(unitId => {
-      if (this.wotvUnits[unitId].skills.length === 0) {
+      if (this.wotvUnits[unitId].board.lines.length === 0) {
         unitToDelete.push(unitId)
       }
     })
