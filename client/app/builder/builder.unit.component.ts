@@ -229,6 +229,8 @@ export class BuilderUnitComponent implements OnInit {
 
     Object.keys(this.unit.stats).forEach(stat => {
       this.stats[stat].board = 0;
+      this.stats[stat].masterSkill = 0;
+      this.stats[stat].support = 0;
       if (statsPerStatue[stat]) {
         this.stats[stat].guild = Math.floor(this.stats[stat].baseTotal * this.guild[statsPerStatue[stat]] / 100)
       }
@@ -245,8 +247,24 @@ export class BuilderUnitComponent implements OnInit {
           } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
             this.stats[effect.type].board += Math.floor(this.stats[effect.type].baseTotal * effect.minValue / 100)
           } else {
-            console.log("not manage effect")
+            console.log("not manage effect in board")
             console.log(node)
+          }
+        })
+      }
+    })
+
+    this.unit.activatedSupport.forEach(supportNode => {
+      if (supportNode != "0") {
+        this.unit.board.nodes[supportNode].skill.effects.forEach(effect => {
+          let value = effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (this.unit.board.nodes[supportNode].level - 1))
+          if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+            this.stats[effect.type].support += value
+          } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+            this.stats[effect.type].support += Math.floor(this.stats[effect.type].baseTotal * value / 100)
+          } else {
+            console.log("not manage effect in support")
+            console.log(this.unit.board.nodes[supportNode].skill)
           }
         })
       }
@@ -259,7 +277,7 @@ export class BuilderUnitComponent implements OnInit {
         } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
           this.stats[effect.type].masterSkill += Math.floor(this.stats[effect.type].baseTotal * effect.minValue / 100)
         } else {
-          console.log("not manage effect")
+          console.log("not manage effect in masterSkill")
           console.log(this.unit.masterSkill)
         }
       })
@@ -269,6 +287,7 @@ export class BuilderUnitComponent implements OnInit {
       this.stats[stat].total = this.stats[stat].baseTotal;
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0
       this.stats[stat].total += this.stats[stat].board ? this.stats[stat].board : 0
+      this.stats[stat].total += this.stats[stat].support ? this.stats[stat].support : 0
       this.stats[stat].total += this.stats[stat].masterSkill ? this.stats[stat].masterSkill : 0
     })
   }
