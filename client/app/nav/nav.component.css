@@ -1,6 +1,18 @@
 .navbar {
   flex-direction: row;
+  height: 40px;
+  padding-top: 0;
 }
+
+.sub.fixed-top {
+  top: 40px;
+  background-color: #555c63 !important;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
 
 .centerNav {
   display: inline-flex;
@@ -94,6 +106,7 @@
   border-color: #ccc;
   opacity: .65;
 }
+
 
 @media (max-width: 500px) {
   .centerNav {

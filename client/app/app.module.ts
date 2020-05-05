@@ -36,7 +36,9 @@ import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 
+import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
+import { BuilderCardComponent } from './builder/builder.card.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 
 import { UnitService } from './services/unit.service';
@@ -75,7 +77,9 @@ export function createTranslateLoader(http: HttpClient) {
     EquipmentsComponent,
     EquipmentComponent,
     RoundDownPipe,
+    BuilderComponent,
     BuilderUnitComponent,
+    BuilderCardComponent,
     BuilderGuildComponent
   ],
   imports: [

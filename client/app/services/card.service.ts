@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -16,8 +17,12 @@ export class CardService {
   private ore = /^0/;
   private oFxNcL: any;
   private oFyNcL: any;
+  private savedCards = {};
 
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    private translateService: TranslateService,
+    private localStorageService: LocalStorageService
+  ) {}
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -111,5 +116,43 @@ export class CardService {
     }
 
     return this.cards.find(card => card.slug === slug);
+  }
+
+
+  getCardsForBuilder(translate) {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    let cards = this.getCardsForListing();
+
+    Object.keys(cards).forEach(rarity => {
+      this.sortByName(cards[rarity], translate)
+    });
+
+    let formattedCardsForBuilder = []
+    rarityOrder.forEach(rarity => {
+      cards[rarity].forEach(card => {
+        formattedCardsForBuilder.push(card)
+      })
+    })
+
+    return formattedCardsForBuilder;
+  }
+
+
+  getSavedCards() {
+    this.savedCards = this.localStorageService.get('cards') ? this.localStorageService.get('cards') : {};
+    return this.savedCards;
+  }
+
+  saveCard(card) {
+    if (!this.savedCards) {
+      this.getSavedCards()
+    }
+
+    this.savedCards[card.dataId] = {
+      star: card.star,
+      level: card.level
+    }
+
+    this.localStorageService.set('cards', this.savedCards);
   }
 }

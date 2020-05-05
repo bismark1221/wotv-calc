@@ -2366,31 +2366,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -4296,7 +4296,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -4344,7 +4344,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -6260,7 +6260,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -7666,31 +7666,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -7977,7 +7977,7 @@
           "dataId": "SK_ARM_LW_ROBB_1_1",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "fixe",
@@ -8881,7 +8881,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -10305,7 +10305,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -10824,7 +10824,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -10944,7 +10944,7 @@
             "jp": 800,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "fixe"
@@ -11896,7 +11896,7 @@
           "calcType": "fixe"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -12299,7 +12299,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -13607,31 +13607,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -13845,7 +13845,7 @@
       },
       "effects": [
         {
-          "type": "EARTH_ATK",
+          "type": "EARTH",
           "minValue": -18,
           "maxValue": -38,
           "calcType": "resistance",
@@ -13874,7 +13874,7 @@
       },
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -14281,7 +14281,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -14440,7 +14440,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ICE_ATK",
+                "type": "ICE",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -15998,7 +15998,7 @@
       },
       "effects": [
         {
-          "type": "ICE_ATK",
+          "type": "ICE",
           "minValue": -18,
           "maxValue": -38,
           "calcType": "resistance",
@@ -16879,7 +16879,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "WIND_ATK",
+                "type": "WIND",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -17055,7 +17055,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -17600,7 +17600,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "WIND_ATK",
+                "type": "WIND",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -18645,7 +18645,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -18889,7 +18889,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -18934,7 +18934,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -20336,7 +20336,7 @@
       },
       "effects": [
         {
-          "type": "ALL_ATTACKS_ATK",
+          "type": "ALL_ATTACKS",
           "minValue": 20,
           "maxValue": 45,
           "calcType": "resistance",
@@ -20689,7 +20689,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "WIND_ATK",
+                "type": "WIND",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -20822,7 +20822,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -21692,7 +21692,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "resistance",
@@ -21853,7 +21853,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "WIND_ATK",
+                "type": "WIND",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -23690,14 +23690,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -24222,31 +24222,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -24340,7 +24340,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -24588,7 +24588,7 @@
           "dataId": "SK_SWO_LW_LILS_1_1",
           "effects": [
             {
-              "type": "FIRE_ATK",
+              "type": "FIRE",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -24904,13 +24904,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "FIRE_ATK",
+                "type": "FIRE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -24958,7 +24958,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -25294,7 +25294,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -26505,7 +26505,7 @@
           "calcType": "percent"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 20,
           "maxValue": 20,
           "calcType": "fixe"
@@ -28805,7 +28805,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -30748,7 +30748,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "fixe",
@@ -30899,7 +30899,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -32203,7 +32203,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -34073,7 +34073,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -34158,31 +34158,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -34401,7 +34401,7 @@
       },
       "effects": [
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "resistance"
@@ -34851,7 +34851,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -34882,14 +34882,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -35387,7 +35387,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -36079,7 +36079,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ICE_ATK",
+                "type": "ICE",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -36498,7 +36498,7 @@
           "dataId": "SK_BOW_LW_CLEY_1_1",
           "effects": [
             {
-              "type": "ICE_ATK",
+              "type": "ICE",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -37071,7 +37071,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -37116,7 +37116,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -37451,13 +37451,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "EARTH_ATK",
+                "type": "EARTH",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -37755,7 +37755,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -38943,7 +38943,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -39458,7 +39458,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -39986,7 +39986,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "resistance",
@@ -40144,7 +40144,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHTNING_ATK",
+                "type": "LIGHTNING",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -42441,7 +42441,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -42680,7 +42680,7 @@
           "calcType": "percent"
         },
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "fixe"
@@ -43040,7 +43040,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -43683,7 +43683,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -43803,7 +43803,7 @@
             "jp": 800,
             "effects": [
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "resistance"
@@ -44146,7 +44146,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -44466,7 +44466,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -44782,31 +44782,31 @@
       },
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -45247,31 +45247,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -45983,14 +45983,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -46600,7 +46600,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -47354,7 +47354,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "fixe",
@@ -48153,7 +48153,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -48500,7 +48500,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -48620,7 +48620,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -48947,7 +48947,7 @@
           "calcType": "percent"
         },
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
@@ -51290,13 +51290,13 @@
             "jp": 20,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -51524,7 +51524,7 @@
             "jp": 15,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -52945,7 +52945,7 @@
           "dataId": "SK_ARM_LW_RYER_1_1",
           "effects": [
             {
-              "type": "DARK_ATK",
+              "type": "DARK",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -54040,14 +54040,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -54655,7 +54655,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -54874,7 +54874,7 @@
       },
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "fixe"
@@ -54909,7 +54909,7 @@
           "dataId": "SK_ARM_LW_SCIA_1_1",
           "effects": [
             {
-              "type": "ICE_ATK",
+              "type": "ICE",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -55170,7 +55170,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "ICE_ATK",
+                "type": "ICE",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -55291,7 +55291,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -56133,7 +56133,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "resistance",
@@ -56307,7 +56307,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ICE_ATK",
+                "type": "ICE",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -56730,7 +56730,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -57007,25 +57007,25 @@
           "dataId": "SK_ARM_LW_VRID_1_1",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "STRIKE_ATK",
+              "type": "STRIKE",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "PIERCE_ATK",
+              "type": "PIERCE",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MISSILE_ATK",
+              "type": "MISSILE",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
@@ -57770,7 +57770,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -58457,7 +58457,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -58835,7 +58835,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -59109,7 +59109,7 @@
           "dataId": "SK_ARM_LW_NAIA_1_1",
           "effects": [
             {
-              "type": "WATER_ATK",
+              "type": "WATER",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -59473,7 +59473,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -60311,7 +60311,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -60655,7 +60655,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -61099,7 +61099,7 @@
           "dataId": "SK_ARM_LW_SRJS_1_1",
           "effects": [
             {
-              "type": "FIRE_ATK",
+              "type": "FIRE",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -61507,7 +61507,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -61538,14 +61538,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -62060,13 +62060,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "FIRE_ATK",
+                "type": "FIRE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -62360,7 +62360,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -63119,25 +63119,25 @@
           "calcType": "percent"
         },
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -64107,7 +64107,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -64827,7 +64827,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -65127,31 +65127,31 @@
       },
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
@@ -65179,7 +65179,7 @@
           "dataId": "SK_CLT_LW_SEVR_1_1",
           "effects": [
             {
-              "type": "LIGHTNING_ATK",
+              "type": "LIGHTNING",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -67069,13 +67069,13 @@
           "calcType": "fixe"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "resistance"
@@ -67104,7 +67104,7 @@
           "dataId": "SK_ARM_LW_VADM_1_1",
           "effects": [
             {
-              "type": "EARTH_ATK",
+              "type": "EARTH",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -67513,7 +67513,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -68072,7 +68072,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -68192,7 +68192,7 @@
             "jp": 800,
             "effects": [
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "resistance"
@@ -69093,31 +69093,31 @@
       },
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -69152,7 +69152,7 @@
           "dataId": "SK_ARM_LW_MURM_1_1",
           "effects": [
             {
-              "type": "WIND_ATK",
+              "type": "WIND",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -71206,7 +71206,7 @@
           "dataId": "SK_ARM_LW_PHBE_1_1",
           "effects": [
             {
-              "type": "LIGHT_ATK",
+              "type": "LIGHT",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -71518,7 +71518,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -71602,7 +71602,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -71633,14 +71633,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -74375,14 +74375,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -75000,7 +75000,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -75932,7 +75932,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -76134,13 +76134,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "EARTH_ATK",
+                "type": "EARTH",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -76426,7 +76426,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -76594,7 +76594,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -79254,7 +79254,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -18,
                 "maxValue": -38,
                 "calcType": "resistance",
@@ -80829,31 +80829,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -81137,7 +81137,7 @@
       },
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -81948,7 +81948,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "FIRE_ATK",
+                "type": "FIRE",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -82118,7 +82118,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -83533,7 +83533,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "fixe",
@@ -83635,7 +83635,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -83659,7 +83659,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -84972,7 +84972,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -85197,7 +85197,7 @@
           "calcType": "percent"
         },
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -85226,7 +85226,7 @@
           "dataId": "SK_ARM_FF14_TNCR_1_1",
           "effects": [
             {
-              "type": "LIGHT_ATK",
+              "type": "LIGHT",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "resistance"
@@ -85486,7 +85486,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "fixe",
@@ -85637,7 +85637,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -86381,14 +86381,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS_ATK",
+                "type": "ALL_ELEMENTS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS_ATK",
+                "type": "ALL_ATTACKS",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -86994,7 +86994,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -87250,7 +87250,7 @@
       },
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "fixe"
@@ -89667,7 +89667,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -93606,7 +93606,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -93937,7 +93937,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHT_ATK",
+                "type": "LIGHT",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -94594,7 +94594,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -95542,13 +95542,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "DARK_ATK",
+                "type": "DARK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -95938,7 +95938,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -97211,7 +97211,7 @@
       },
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -97615,31 +97615,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -98157,7 +98157,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -99596,31 +99596,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH_ATK",
+                "type": "SLASH",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE_ATK",
+                "type": "PIERCE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE_ATK",
+                "type": "STRIKE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE_ATK",
+                "type": "MISSILE",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC_ATK",
+                "type": "MAGIC",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -100722,7 +100722,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "LIGHTNING_ATK",
+                "type": "LIGHTNING",
                 "minValue": -18,
                 "maxValue": -38,
                 "calcType": "resistance",
@@ -101232,7 +101232,7 @@
           "calcType": "fixe"
         },
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"

@@ -1,18 +1,19 @@
 <nav class="navbar navbar-toggleable-md navbar-dark bg-dark fixed-top">
   <div class="centerNav">
+    <div></div>
     <a class="navbar-brand" [routerLink]="['/']" (click)="menu(true)">WOTV-Calc</a>
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="['/units']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.units' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/cards']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.cards' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/espers']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.espers' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/equipments']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.equipments' | translate }}</a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>
-        <!-- <a class="nav-link nav-link-lang pointer" (click)="changeLang('tw')"><img src="../../assets/nav/blank.gif" class="flag flag-tw" /></a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('es')"><img src="../../assets/nav/blank.gif" class="flag flag-es" /></a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('de')"><img src="../../assets/nav/blank.gif" class="flag flag-de" /></a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('kr')"><img src="../../assets/nav/blank.gif" class="flag flag-kr" /></a> -->
+        <a class="nav-link" [routerLink]="['/units']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/cards']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/espers']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/equipments']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/builder']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=true">
+          {{ 'nav.builder' | translate }}
+        </a>
+        <div class="inlineBlock" (mouseover)="showBuilderNav=false">&nbsp;</div>
+        <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')" (mouseover)="showBuilderNav=false"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
+        <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')" (mouseover)="showBuilderNav=false"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>
       </li>
     </ul>
   </div>
@@ -24,22 +25,20 @@
     <a class="pointer" (click)="changeLang('fr')">
       <img src="../../assets/nav/blank.gif" class="flag flag-fr" />
     </a>
-    <!--<span class="separator"></span>
-    <a class="pointer" (click)="changeLang('tw')">
-      <img src="../../assets/nav/blank.gif" class="flag flag-tw" />
-    </a>
-    <span class="separator"></span>
-    <a class="pointer" (click)="changeLang('es')">
-      <img src="../../assets/nav/blank.gif" class="flag flag-es" />
-    </a>
-    <span class="separator"></span>
-    <a class="pointer" (click)="changeLang('de')">
-      <img src="../../assets/nav/blank.gif" class="flag flag-de" />
-    </a>
-    <span class="separator"></span>
-    <a class="pointer" (click)="changeLang('kr')">
-      <img src="../../assets/nav/blank.gif" class="flag flag-kr" />
-    </a> -->
+  </div>
+</nav>
+
+<nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false" *ngIf="showBuilderNav || inBuilder">
+  <div class="centerNav">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
+        <a class="nav-link" [routerLink]="['/builder/unit']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/builder/card']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/builder/esper']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/builder/equipment']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="['/builder/guild']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.guild' | translate }}</a>
+      </li>
+    </ul>
   </div>
 </nav>
 

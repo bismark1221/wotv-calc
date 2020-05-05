@@ -21,6 +21,9 @@ export class BuilderUnitComponent implements OnInit {
   stats
   grid
 
+  private statsType = ["HP", "TP", "AP", "ATK", "DEF", "SPR", "MAG", "DEX", "AGI", "LUCK", "INITIAL_AP", "ACCURACY", "CRITIC_RATE", "CRITIC_AVOID", "EVADE", "POISON", "BLIND", "SLEEP", "SILENCE", "PARALYZE", "CONFUSION", "PETRIFY", "TOAD", "CHARM", "SLOW", "STOP", "IMMOBILIZE", "DISABLE", "BERSERK", "DOOM", "MOVE", "JUMP", "RANGE"]
+  private statsAtkRes = ["FIRE", "ICE", "EARTH", "WIND", "LIGHTNING", "WATER", "LIGHT", "DARK", "SLASH", "PIERCE", "STRIKE", "MISSILE", "MAGIC"]
+
   constructor(
     private unitService: UnitService,
     private jobService: JobService,
@@ -218,13 +221,36 @@ export class BuilderUnitComponent implements OnInit {
   private changeLevels() {
     this.stats = {}
 
-    Object.keys(this.unit.stats).forEach(stat => {
-      let min = this.unit.stats[stat].min
-      let max = this.unit.stats[stat].max
+    this.statsType.forEach(stat => {
+      let min = 0
+      let max = 0
+
+      if (this.unit.stats[stat]) {
+        min = this.unit.stats[stat].min
+        max = this.unit.stats[stat].max
+      }
 
       this.stats[stat] = {}
       this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.unit.level - 1)))
       this.stats[stat].baseTotal = this.stats[stat].base
+    })
+
+    this.statsAtkRes.forEach(stat => {
+      let min = 0
+      let max = 0
+
+      if (this.unit.stats[stat]) {
+        min = this.unit.stats[stat].min ? this.unit.stats[stat].min : 0
+        max = this.unit.stats[stat].max ? this.unit.stats[stat].max : 0
+      }
+
+      this.stats[stat + "_RES"] = {}
+      this.stats[stat + "_RES"].base = Math.floor(min + ((max - min) / (99 - 1) * (this.unit.level - 1)))
+      this.stats[stat + "_RES"].baseTotal = this.stats[stat + "_RES"].base
+
+      this.stats[stat + "_ATK"] = {}
+      this.stats[stat + "_ATK"].base = 0
+      this.stats[stat + "_ATK"].baseTotal = 0
     })
 
     this.unit.jobsData.forEach((job, jobIndex) => {
@@ -241,13 +267,12 @@ export class BuilderUnitComponent implements OnInit {
     })
 
     this.calculateTotalStats()
-    console.log(this.unit.activatedSupport)
   }
 
   private calculateTotalStats() {
     let statsPerStatue = this.guildService.getStats()
 
-    Object.keys(this.unit.stats).forEach(stat => {
+    this.statsType.forEach(stat => {
       this.stats[stat].board = 0;
       this.stats[stat].masterSkill = 0;
       this.stats[stat].support = 0;
@@ -256,16 +281,33 @@ export class BuilderUnitComponent implements OnInit {
       }
     });
 
-    let statsType = ["HP", "TP", "AP", "ATK", "MAG", "DEX", "AGI", "LUCK", "MOVE", "JUMP"]
+    this.statsAtkRes.forEach(stat => {
+      this.stats[stat + "_RES"].board = 0;
+      this.stats[stat + "_RES"].masterSkill = 0;
+      this.stats[stat + "_RES"].support = 0;
+
+      this.stats[stat + "_ATK"].board = 0;
+      this.stats[stat + "_ATK"].masterSkill = 0;
+      this.stats[stat + "_ATK"].support = 0;
+    });
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       let node = this.unit.board.nodes[nodeId]
       if (node.type == "buff" && node.level) {
         node.skill.effects.forEach(effect => {
-          if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+          if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
             this.stats[effect.type].board += effect.minValue
-          } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
-            this.stats[effect.type].board += Math.floor(this.stats[effect.type].baseTotal * effect.minValue / 100)
+          } else if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+            this.stats[effect.type].board += this.stats[effect.type].baseTotal * effect.minValue / 100
+          } else if (this.statsAtkRes.indexOf(effect.type) !== -1) {
+            if (effect.calcType === "resistance") {
+              this.stats[effect.type + "_RES"].board += effect.minValue
+            } else if (effect.calcType === "fixe") {
+              this.stats[effect.type + "_ATK"].board += effect.minValue
+            } else {
+              console.log("not manage effect in board")
+              console.log(node)
+            }
           } else {
             console.log("not manage effect in board")
             console.log(node)
@@ -278,10 +320,19 @@ export class BuilderUnitComponent implements OnInit {
       if (supportNode != "0") {
         this.unit.board.nodes[supportNode].skill.effects.forEach(effect => {
           let value = effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (this.unit.board.nodes[supportNode].level - 1))
-          if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+          if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
             this.stats[effect.type].support += value
-          } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+          } else if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
             this.stats[effect.type].support += this.stats[effect.type].baseTotal * value / 100
+          } else if (this.statsAtkRes.indexOf(effect.type) !== -1) {
+            if (effect.calcType === "resistance") {
+              this.stats[effect.type + "_RES"].support += value
+            } else if (effect.calcType === "fixe") {
+              this.stats[effect.type + "_ATK"].support += value
+            } else {
+              console.log("not manage effect in support")
+              console.log(this.unit.board.nodes[supportNode].skill)
+            }
           } else {
             console.log("not manage effect in support")
             console.log(this.unit.board.nodes[supportNode].skill)
@@ -292,10 +343,19 @@ export class BuilderUnitComponent implements OnInit {
 
     if (this.unit.masterSkill.activated) {
       this.unit.masterSkill.effects.forEach(effect => {
-        if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
+        if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
           this.stats[effect.type].masterSkill += effect.minValue
-        } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
-          this.stats[effect.type].masterSkill += Math.floor(this.stats[effect.type].baseTotal * effect.minValue / 100)
+        } else if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
+          this.stats[effect.type].masterSkill += this.stats[effect.type].baseTotal * effect.minValue / 100
+        } else if (this.statsAtkRes.indexOf(effect.type) !== -1) {
+          if (effect.calcType === "resistance") {
+            this.stats[effect.type + "_RES"].masterSkill += effect.minValue
+          } else if (effect.calcType === "fixe") {
+            this.stats[effect.type + "_ATK"].masterSkill += effect.minValue
+          } else {
+            console.log("not manage effect in masterSkill")
+            console.log(this.unit.masterSkill)
+          }
         } else {
           console.log("not manage effect in masterSkill")
           console.log(this.unit.masterSkill)
@@ -303,14 +363,29 @@ export class BuilderUnitComponent implements OnInit {
       })
     }
 
-    Object.keys(this.unit.stats).forEach(stat => {
-      this.stats[stat].support = Math.floor(this.stats[stat].support)
-
+    this.statsType.forEach(stat => {
       this.stats[stat].total = this.stats[stat].baseTotal;
+      this.stats[stat].board = Math.floor(this.stats[stat].board)
+      this.stats[stat].support = Math.floor(this.stats[stat].support)
+      this.stats[stat].masterSkill = Math.floor(this.stats[stat].masterSkill)
+
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0
       this.stats[stat].total += this.stats[stat].board
       this.stats[stat].total += this.stats[stat].support
       this.stats[stat].total += this.stats[stat].masterSkill
+    })
+
+    this.statsAtkRes.forEach(stat => {
+      ["RES", "ATK"].forEach(type => {
+        this.stats[stat + "_" + type].total = this.stats[stat + "_" + type].baseTotal;
+        this.stats[stat + "_" + type].board = Math.floor(this.stats[stat + "_" + type].board)
+        this.stats[stat + "_" + type].support = Math.floor(this.stats[stat + "_" + type].support)
+        this.stats[stat + "_" + type].masterSkill = Math.floor(this.stats[stat + "_" + type].masterSkill)
+
+        this.stats[stat + "_" + type].total += this.stats[stat + "_" + type].board
+        this.stats[stat + "_" + type].total += this.stats[stat + "_" + type].support
+        this.stats[stat + "_" + type].total += this.stats[stat + "_" + type].masterSkill
+      })
     })
   }
 

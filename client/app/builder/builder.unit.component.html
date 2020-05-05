@@ -96,7 +96,10 @@
   <div *ngIf="guild">
     <table>
       <tr>
-        <td>Guild</td>
+        <td colspan="4">Guild Statues</td>
+      </tr>
+      <tr>
+        <td *ngFor="let statue of guildService.getStatues()">{{ statue }}</td>
       </tr>
       <tr>
         <td *ngFor="let statue of guildService.getStatues()">
@@ -111,7 +114,7 @@
   <button (click)="consoleLog()">SAVE</button>
 </div>
 
-<div style="width: 70%; display: inline-block;" *ngIf="stats">
+<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="stats">
   <table class="statsTable">
     <tbody>
       <tr>
@@ -119,97 +122,271 @@
       </tr>
       <tr>
         <th></th>
-        <th>HP</th>
-        <th>TP</th>
-        <th>AP</th>
-        <th>ATK</th>
-        <th>MAG</th>
-        <th>AGI</th>
-        <th>DEX</th>
-        <th>LUCK</th>
-        <th>MOVE</th>
-        <th>JUMP</th>
+        <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">{{ type }}</th>
       </tr>
       <tr>
         <td>Base</td>
-        <td>{{ stats.HP.baseTotal }}</td>
-        <td>{{ stats.TP.baseTotal }}</td>
-        <td>{{ stats.AP.baseTotal }}</td>
-        <td>{{ stats.ATK.baseTotal }}</td>
-        <td>{{ stats.MAG.baseTotal }}</td>
-        <td>{{ stats.AGI.baseTotal }}</td>
-        <td>{{ stats.DEX.baseTotal }}</td>
-        <td>{{ stats.LUCK.baseTotal }}</td>
-        <td>{{ stats.MOVE.baseTotal }}</td>
-        <td>{{ stats.JUMP.baseTotal }}</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+          {{ stats[type].baseTotal }}
+        </td>
       </tr>
       <tr>
-        <td>Guild</td>
-        <td>{{ stats.HP.guild }}</td>
-        <td>{{ stats.TP.guild }}</td>
-        <td></td>
-        <td>{{ stats.ATK.guild }}</td>
-        <td>{{ stats.MAG.guild }}</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Guild Statues</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span *ngIf="stats[type].guild > 0">{{ stats[type].guild }}</span>
+        </td>
       </tr>
       <tr>
         <td>Board</td>
-        <td>{{ stats.HP.board }}</td>
-        <td>{{ stats.TP.board }}</td>
-        <td>{{ stats.AP.board }}</td>
-        <td>{{ stats.ATK.board }}</td>
-        <td>{{ stats.MAG.board }}</td>
-        <td>{{ stats.AGI.board }}</td>
-        <td>{{ stats.DEX.board }}</td>
-        <td>{{ stats.LUCK.board }}</td>
-        <td>{{ stats.MOVE.board }}</td>
-        <td>{{ stats.JUMP.board }}</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span *ngIf="stats[type].board > 0">{{ stats[type].board }}</span>
+        </td>
       </tr>
       <tr>
         <td>Support</td>
-        <td>{{ stats.HP.support }}</td>
-        <td>{{ stats.TP.support }}</td>
-        <td>{{ stats.AP.support }}</td>
-        <td>{{ stats.ATK.support }}</td>
-        <td>{{ stats.MAG.support }}</td>
-        <td>{{ stats.AGI.support }}</td>
-        <td>{{ stats.DEX.support }}</td>
-        <td>{{ stats.LUCK.support }}</td>
-        <td>{{ stats.MOVE.support }}</td>
-        <td>{{ stats.JUMP.support }}</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span *ngIf="stats[type].support > 0">{{ stats[type].support }}</span>
+        </td>
       </tr>
       <tr>
         <td>Master Skill</td>
-        <td>{{ stats.HP.masterSkill }}</td>
-        <td>{{ stats.TP.masterSkill }}</td>
-        <td>{{ stats.AP.masterSkill }}</td>
-        <td>{{ stats.ATK.masterSkill }}</td>
-        <td>{{ stats.MAG.masterSkill }}</td>
-        <td>{{ stats.AGI.masterSkill }}</td>
-        <td>{{ stats.DEX.masterSkill }}</td>
-        <td>{{ stats.LUCK.masterSkill }}</td>
-        <td>{{ stats.MOVE.masterSkill }}</td>
-        <td>{{ stats.JUMP.masterSkill }}</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span *ngIf="stats[type].masterSkill > 0">{{ stats[type].masterSkill }}</span>
+        </td>
       </tr>
       <tr>
         <td>Total</td>
-        <td>{{ stats.HP.total }}</td>
-        <td>{{ stats.TP.total }}</td>
-        <td>{{ stats.AP.total }}</td>
-        <td>{{ stats.ATK.total }}</td>
-        <td>{{ stats.MAG.total }}</td>
-        <td>{{ stats.AGI.total }}</td>
-        <td>{{ stats.DEX.total }}</td>
-        <td>{{ stats.LUCK.total }}</td>
-        <td>{{ stats.MOVE.total }}</td>
-        <td>{{ stats.JUMP.total }}</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span *ngIf="stats[type].total > 0">{{ stats[type].total }}</span>
+        </td>
       </tr>
     </tbody>
   </table>
+
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="9">Res Elem</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td *ngFor="let elem of ['fire','ice','earth','wind','lightning','water','light','dark']">
+          <img class="elementImg" title="{{ elem }} resistance" src="{{'assets/elements/' + elem + '.png'}}" />
+        </td>
+      </tr>
+      <tr>
+        <td>Base</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
+          <span *ngIf="stats[elem].baseTotal">{{ stats[elem].baseTotal }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Board</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
+          <span *ngIf="stats[elem].board != 0">{{ stats[elem].board }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
+          <span *ngIf="stats[elem].support != 0">{{ stats[elem].support }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Master Skill</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
+          <span *ngIf="stats[elem].masterSkill != 0">{{ stats[elem].masterSkill }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
+          <span *ngIf="stats[elem].baseTotal || (stats[elem].total && stats[elem].total != 0)">{{ stats[elem].total }} %</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="9">ATK Elem</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td *ngFor="let elem of ['fire','ice','earth','wind','lightning','water','light','dark']">
+          <img class="elementImg" title="{{ elem }} resistance" src="{{'assets/elements/' + elem + '.png'}}" />
+        </td>
+      </tr>
+      <tr>
+        <td>Base</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
+          <span *ngIf="stats[elem].baseTotal">{{ stats[elem].baseTotal }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Board</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
+          <span *ngIf="stats[elem].board != 0">{{ stats[elem].board }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
+          <span *ngIf="stats[elem].support != 0">{{ stats[elem].support }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Master Skill</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
+          <span *ngIf="stats[elem].masterSkill != 0">{{ stats[elem].masterSkill }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
+          <span *ngIf="stats[elem].baseTotal || (stats[elem].total && stats[elem].total != 0)">{{ stats[elem].total }} %</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="6">Res Damage</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td *ngFor="let type of ['slash', 'pierce', 'strike', 'missile', 'magic']">
+          <img class="damageImg" title="{{ type }} resistance" src="{{'assets/damage/neutral_' + type + '.png'}}" />
+        </td>
+      </tr>
+      <tr>
+        <td>Base</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
+          <span *ngIf="stats[type].baseTotal">{{ stats[type].baseTotal }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Board</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
+          <span *ngIf="stats[type].board != 0">{{ stats[type].board }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
+          <span *ngIf="stats[type].support != 0">{{ stats[type].support }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Master Skill</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
+          <span *ngIf="stats[type].masterSkill != 0">{{ stats[type].masterSkill }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
+          <span *ngIf="stats[type].baseTotal || (stats[type].total && stats[type].total != 0)">{{ stats[type].total }} %</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="6">ATK Damage</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td *ngFor="let type of ['slash', 'pierce', 'strike', 'missile', 'magic']">
+          <img class="damageImg" title="{{ type }} resistance" src="{{'assets/damage/neutral_' + type + '.png'}}" />
+        </td>
+      </tr>
+      <tr>
+        <td>Base</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
+          <span *ngIf="stats[type].baseTotal">{{ stats[type].baseTotal }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Board</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
+          <span *ngIf="stats[type].board != 0">{{ stats[type].board }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
+          <span *ngIf="stats[type].support != 0">{{ stats[type].support }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Master Skill</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
+          <span *ngIf="stats[type].masterSkill != 0">{{ stats[type].masterSkill }} %</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
+          <span *ngIf="stats[type].baseTotal || (stats[type].total && stats[type].total != 0)">{{ stats[type].total }} %</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<!--
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="15">Res Status Ailment</th>
+      </tr>
+      <tr>
+        <td><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></td>
+      </tr>
+      <tr>
+        <td class="heightResTd"><span *ngIf="unit.stats.POISON.min">{{ unit.stats.POISON.min }} %</span></td>
+        <td><span *ngIf="unit.stats.BLIND.min">{{ unit.stats.BLIND.min }} %</span></td>
+        <td><span *ngIf="unit.stats.SLEEP.min">{{ unit.stats.SLEEP.min }} %</span></td>
+        <td><span *ngIf="unit.stats.SILENCE.min">{{ unit.stats.SILENCE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.PARALYZE.min">{{ unit.stats.PARALYZE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.CONFUSION.min">{{ unit.stats.CONFUSION.min }} %</span></td>
+        <td><span *ngIf="unit.stats.PETRIFY.min">{{ unit.stats.PETRIFY.min }} %</span></td>
+        <td><span *ngIf="unit.stats.TOAD.min">{{ unit.stats.TOAD.min }} %</span></td>
+      </tr>
+      <tr>
+        <td><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></td>
+        <td><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="heightResTd"><span *ngIf="unit.stats.CHARM.min">{{ unit.stats.CHARM.min }} %</span></td>
+        <td><span *ngIf="unit.stats.SLOW.min">{{ unit.stats.SLOW.min }} %</span></td>
+        <td><span *ngIf="unit.stats.STOP.min">{{ unit.stats.STOP.min }} %</span></td>
+        <td><span *ngIf="unit.stats.IMMOBILIZE.min">{{ unit.stats.IMMOBILIZE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.DISABLE.min">{{ unit.stats.DISABLE.min }} %</span></td>
+        <td><span *ngIf="unit.stats.BERSERK.min">{{ unit.stats.BERSERK.min }} %</span></td>
+        <td><span *ngIf="unit.stats.DOOM.min">{{ unit.stats.DOOM.min }} %</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table> -->
 </div>
 
 <div class="row" *ngIf="grid">

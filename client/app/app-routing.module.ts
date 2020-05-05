@@ -16,7 +16,9 @@ import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 
+import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
+import { BuilderCardComponent } from './builder/builder.card.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 
 const ROUTES: Routes = [
@@ -30,10 +32,16 @@ const ROUTES: Routes = [
   { path: 'equipments', component: EquipmentsComponent },
   { path: 'equipment/:slug', component: EquipmentComponent },
 
-  { path: 'builder', component: BuilderUnitComponent },
-  { path: 'builder/unit', component: BuilderUnitComponent },
-  { path: 'builder/unit/:slug', component: BuilderUnitComponent },
-  { path: 'builder/guild', component: BuilderGuildComponent },
+  { path: 'builder', component: BuilderComponent,
+    children: [
+      { path: '', redirectTo: 'unit', pathMatch: 'full' },
+      { path: 'unit', component: BuilderUnitComponent },
+      { path: 'unit/:slug', component: BuilderUnitComponent },
+      { path: 'card', component: BuilderCardComponent },
+      { path: 'card/:slug', component: BuilderCardComponent },
+      { path: 'guild', component: BuilderGuildComponent },
+    ]
+  },
 
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
+import { Router, NavigationEnd } from '@angular/router';
+
 import { NavService } from '../services/nav.service'
 
 @Component({
@@ -13,16 +15,30 @@ import { NavService } from '../services/nav.service'
 export class NavComponent {
   displayLink: boolean = false;
   menuDisabled: boolean;
+  inBuilder = false;
+  showBuilderNav = false;
 
   constructor(
     private localStorageService: LocalStorageService,
     private angulartics: Angulartics2,
     private translateService: TranslateService,
-    private navService: NavService
+    private navService: NavService,
+    private router: Router
   ) {}
 
   ngOnInit() {
     this.menuDisabled = this.navService.menuDisabled;
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        let url = event.url.split("/")
+        if (url.length >= 2 && url[1] == "builder") {
+          this.inBuilder = true
+        } else {
+          this.inBuilder = false
+        }
+      }
+    });
   }
 
   ngAfterViewInit() {

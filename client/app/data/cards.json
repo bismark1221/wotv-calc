@@ -65,7 +65,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "EARTH_ATK",
+          "type": "EARTH",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -78,7 +78,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "EARTH_ATK",
+          "type": "EARTH",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -91,7 +91,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "EARTH_ATK",
+          "type": "EARTH",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -167,7 +167,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE_ATK",
+          "type": "FIRE",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "fixe"
@@ -180,7 +180,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE_ATK",
+          "type": "FIRE",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "fixe"
@@ -193,7 +193,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE_ATK",
+          "type": "FIRE",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "fixe"
@@ -230,7 +230,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_ATK",
+          "type": "WATER",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -243,7 +243,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_ATK",
+          "type": "WATER",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -256,7 +256,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_ATK",
+          "type": "WATER",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -269,7 +269,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_ATK",
+          "type": "WATER",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -282,7 +282,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_ATK",
+          "type": "WATER",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -295,7 +295,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_ATK",
+          "type": "WATER",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -371,7 +371,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -384,7 +384,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -397,7 +397,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -536,7 +536,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -549,7 +549,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -562,7 +562,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MAGIC_ATK",
+          "type": "MAGIC",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -575,7 +575,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -588,7 +588,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -601,7 +601,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -638,7 +638,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -651,7 +651,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -664,7 +664,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -740,7 +740,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -753,7 +753,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -766,7 +766,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -842,7 +842,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHT_ATK",
+          "type": "LIGHT",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -855,7 +855,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHT_ATK",
+          "type": "LIGHT",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -868,7 +868,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHT_ATK",
+          "type": "LIGHT",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -881,7 +881,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -894,7 +894,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -907,7 +907,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -944,7 +944,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -957,7 +957,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -970,7 +970,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -983,7 +983,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING_ATK",
+          "type": "LIGHTNING",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "fixe"
@@ -996,7 +996,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING_ATK",
+          "type": "LIGHTNING",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "fixe"
@@ -1009,7 +1009,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING_ATK",
+          "type": "LIGHTNING",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "fixe"
@@ -1046,7 +1046,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -1059,7 +1059,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1072,7 +1072,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "fixe"
@@ -1091,7 +1091,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1128,7 +1128,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -1141,7 +1141,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1213,7 +1213,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
@@ -1226,7 +1226,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1328,7 +1328,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "ICE_ATK",
+          "type": "ICE",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1341,7 +1341,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "ICE_ATK",
+          "type": "ICE",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -1354,7 +1354,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "ICE_ATK",
+          "type": "ICE",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -1430,7 +1430,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING_ATK",
+          "type": "LIGHTNING",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1443,7 +1443,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING_ATK",
+          "type": "LIGHTNING",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -1456,7 +1456,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING_ATK",
+          "type": "LIGHTNING",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -1532,7 +1532,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1545,7 +1545,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "fixe"
@@ -1558,7 +1558,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "fixe"
@@ -1671,7 +1671,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
@@ -1684,7 +1684,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1779,7 +1779,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "fixe"
@@ -1798,7 +1798,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1835,7 +1835,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -1848,7 +1848,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1987,7 +1987,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
@@ -2000,7 +2000,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -2069,7 +2069,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -2082,7 +2082,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -2095,13 +2095,13 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "fixe"
         },
         {
-          "type": "LIGHT_ATK",
+          "type": "LIGHT",
           "minValue": -5,
           "maxValue": -5,
           "calcType": "resistance"
@@ -2114,7 +2114,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "DARK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -2314,7 +2314,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 3,
           "maxValue": 7,
           "calcType": "resistance"
@@ -2370,7 +2370,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE_ATK",
+          "type": "FIRE",
           "minValue": 3,
           "maxValue": 7,
           "calcType": "resistance"
@@ -3046,7 +3046,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "SLASH",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3102,7 +3102,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE_ATK",
+          "type": "STRIKE",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3152,7 +3152,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE_ATK",
+          "type": "PIERCE",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3208,7 +3208,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE_ATK",
+          "type": "MISSILE",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"

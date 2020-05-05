@@ -147,7 +147,6 @@ export class UnitService {
       this.getSavedUnits()
     }
 
-    console.log(unit)
     this.savedUnits[unit.dataId] = {
       star: unit.star,
       lb: unit.lb,
