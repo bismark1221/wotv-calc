@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -16,6 +17,7 @@ export class EsperService {
   private ore = /^0/;
   private oFxNcL: any;
   private oFyNcL: any;
+  private savedEspers = {};
 
   private espersRarity = {
     N: [],
@@ -41,7 +43,10 @@ export class EsperService {
     ]
   }
 
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    private translateService: TranslateService,
+    private localStorageService: LocalStorageService
+  ) {}
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -146,5 +151,47 @@ export class EsperService {
     }
 
     return this.espers.find(esper => esper.dataId === id);
+  }
+
+
+  getEspersForBuilder(translate) {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    let espers = this.getEspersForListing();
+
+    Object.keys(espers).forEach(rarity => {
+      this.sortByName(espers[rarity], translate)
+    });
+
+    let formattedEspersForBuilder = []
+    rarityOrder.forEach(rarity => {
+      espers[rarity].forEach(esper => {
+        formattedEspersForBuilder.push(esper)
+      })
+    })
+
+    return formattedEspersForBuilder;
+  }
+
+
+  getSavedEspers() {
+    this.savedEspers = this.localStorageService.get('espers') ? this.localStorageService.get('espers') : {};
+    return this.savedEspers;
+  }
+
+  saveEsper(esper) {
+    if (!this.savedEspers) {
+      this.getSavedEspers()
+    }
+
+    this.savedEspers[esper.dataId] = {
+      star: esper.star,
+      level: esper.level
+    }
+
+    Object.keys(esper.board.nodes).forEach(nodeId => {
+      this.savedEspers[esper.dataId].nodes[nodeId] = esper.board.nodes[nodeId].level
+    })
+
+    this.localStorageService.set('espers', this.savedEspers);
   }
 }

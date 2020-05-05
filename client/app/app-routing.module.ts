@@ -19,6 +19,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
 import { BuilderCardComponent } from './builder/builder.card.component';
+import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 
 const ROUTES: Routes = [
@@ -39,6 +40,8 @@ const ROUTES: Routes = [
       { path: 'unit/:slug', component: BuilderUnitComponent },
       { path: 'card', component: BuilderCardComponent },
       { path: 'card/:slug', component: BuilderCardComponent },
+      { path: 'esper', component: BuilderEsperComponent },
+      { path: 'esper/:slug', component: BuilderEsperComponent },
       { path: 'guild', component: BuilderGuildComponent },
     ]
   },
