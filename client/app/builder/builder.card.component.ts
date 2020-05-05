@@ -128,20 +128,19 @@ export class BuilderCardComponent implements OnInit {
 
   private changeLevels() {
     this.stats = {}
+    let maxLevel = this.levelPerStar[this.card.rarity][4]
 
     this.statsType.forEach(stat => {
       let min = this.card.stats[stat].min
       let max = this.card.stats[stat].max
 
-      this.stats[stat] = Math.floor(min + ((max - min) / (99 - 1) * (this.card.level - 1)))
+      this.stats[stat] = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.card.level - 1)))
     })
 
     let buffs = {
       self: {},
       party: {}
     }
-    let maxLevel = this.levelPerStar[this.card.rarity][4]
-
 
     this.card.unitBuffsClassic.effects.forEach(effect => {
       buffs.self[effect.type] = {}
