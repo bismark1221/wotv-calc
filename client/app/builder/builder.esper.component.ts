@@ -20,6 +20,11 @@ export class BuilderEsperComponent implements OnInit {
   private statsType = ["HP", "TP", "AP", "ATK", "DEF", "SPR", "MAG", "DEX", "AGI", "LUCK", "INITIAL_AP", "ACCURACY", "CRITIC_RATE", "CRITIC_AVOID", "EVADE", "POISON", "BLIND", "SLEEP", "SILENCE", "PARALYZE", "CONFUSION", "PETRIFY", "TOAD", "CHARM", "SLOW", "STOP", "IMMOBILIZE", "DISABLE", "BERSERK", "DOOM", "MOVE", "JUMP", "RANGE"]
   private statsAtkRes = ["FIRE", "ICE", "EARTH", "WIND", "LIGHTNING", "WATER", "LIGHT", "DARK", "SLASH", "PIERCE", "STRIKE", "MISSILE", "MAGIC"]
 
+  private maxLevelPerStar = {
+    1: 50,
+    2: 80
+  }
+
   constructor(
     private esperService: EsperService,
     private localStorageService: LocalStorageService,
@@ -56,7 +61,8 @@ export class BuilderEsperComponent implements OnInit {
 
     this.esper.star = 1;
     this.esper.level = 1;
-
+    this.esper.maxSPs = 0;
+    this.esper.usedSPs = 0;
     this.initiateSavedEsper()
 
     this.updateMaxLevel();
@@ -91,12 +97,7 @@ export class BuilderEsperComponent implements OnInit {
   }
 
   private updateMaxLevel() {
-    let levelPerStar = {
-      1: 50,
-      2: 80
-    }
-
-    this.esper.maxLevel = levelPerStar[this.esper.star];
+    this.esper.maxLevel = this.maxLevelPerStar[this.esper.star];
 
     if (this.esper.level > this.esper.maxLevel) {
       this.esper.level = this.esper.maxLevel
@@ -116,12 +117,13 @@ export class BuilderEsperComponent implements OnInit {
       let max = 0
 
       if (this.esper.stats[stat]) {
-        min = this.esper.stats[stat].min
-        max = this.esper.stats[stat].max
+        min = this.esper.stats[stat][(this.esper.star - 1)].min
+        max = this.esper.stats[stat][(this.esper.star - 1)].max
       }
 
       this.stats[stat] = {}
-      this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.esper.level - 1)))
+      let maxLevel = this.maxLevelPerStar[this.esper.star]
+      this.stats[stat].base = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.esper.level - 1)))
       this.stats[stat].baseTotal = this.stats[stat].base
     })
 
@@ -130,12 +132,13 @@ export class BuilderEsperComponent implements OnInit {
       let max = 0
 
       if (this.esper.stats[stat]) {
-        min = this.esper.stats[stat].min ? this.esper.stats[stat].min : 0
-        max = this.esper.stats[stat].max ? this.esper.stats[stat].max : 0
+        min = this.esper.stats[stat][(this.esper.star - 1)].min ? this.esper.stats[stat][(this.esper.star - 1)].min : 0
+        max = this.esper.stats[stat][(this.esper.star - 1)].max ? this.esper.stats[stat][(this.esper.star - 1)].max : 0
       }
 
       this.stats[stat + "_RES"] = {}
-      this.stats[stat + "_RES"].base = Math.floor(min + ((max - min) / (99 - 1) * (this.esper.level - 1)))
+      let maxLevel = this.maxLevelPerStar[this.esper.star]
+      this.stats[stat + "_RES"].base = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.esper.level - 1)))
       this.stats[stat + "_RES"].baseTotal = this.stats[stat + "_RES"].base
 
       this.stats[stat + "_ATK"] = {}
@@ -148,6 +151,7 @@ export class BuilderEsperComponent implements OnInit {
     })
 
     this.calculateTotalStats()
+    this.calculateSPs()
   }
 
   private calculateTotalStats() {
@@ -202,6 +206,23 @@ export class BuilderEsperComponent implements OnInit {
     })
   }
 
+  private calculateSPs() {
+    this.esper.maxSPs = 0;
+    for (let i = 1; i <= this.esper.star; i++) {
+      let level = this.esper.star == 2 && i == 1 ? 50 : this.esper.level
+      for (let j = 0; j <= level - 1; j++) {
+        this.esper.maxSPs += this.esper.SPs[i - 1][j]
+      }
+    }
+
+    this.esper.usedSPs = 0
+    Object.keys(this.esper.board.nodes).forEach(nodeId => {
+      if (this.esper.board.nodes[nodeId].activated) {
+        this.esper.usedSPs += this.esper.board.nodes[nodeId].skill.sp
+      }
+    })
+  }
+
   rightClickNode(node) {
     if (node !== 0) {
       this.hideNode(node)
@@ -253,16 +274,19 @@ export class BuilderEsperComponent implements OnInit {
   canActivateNode(node) {
     let nodeData = this.esper.board.nodes[node]
 
-    // TODO Check SP
-    /*if (node !== 0) {
-      if (nodeData.type == "buff") {
-        return this.canActivateNode(nodeData.parent) && this.esper.star >= nodeData.skill.unlockStar && this.esper.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel
-      } else {
-        return !nodeData.skill.unlockStar || (this.canActivateNode(nodeData.parent) && this.esper.star >= nodeData.skill.unlockStar && this.esper.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
-      }
-    } else {*/
+    if (node !== 0) {
+      return (this.esper.maxSPs - this.esper.usedSPs - this.countSPsNeededForParents(node)) >= 0
+    } else {
       return true
-    //}
+    }
+  }
+
+  private countSPsNeededForParents(node) {
+    if (node !== 0 && !this.esper.board.nodes[node].activated) {
+      return this.esper.board.nodes[node].skill.sp + this.countSPsNeededForParents(this.esper.board.nodes[node].parent)
+    } else {
+      return 0
+    }
   }
 
 

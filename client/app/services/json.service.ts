@@ -1135,10 +1135,16 @@ export class JsonService {
     }
 
     Object.keys(this.stats[type]).forEach(stat => {
-      this.wotvEspers[esper.iname].stats[this.stats[type][stat]] = {
-        min: esper.status[0][stat],
-        max: maxUnit.status[1][stat]
-      }
+      this.wotvEspers[esper.iname].stats[this.stats[type][stat]] = [
+        {
+          min: esper.status[0][stat],
+          max: esper.status[1][stat]
+        },
+        {
+          min: maxUnit.status[0][stat],
+          max: maxUnit.status[1][stat]
+        }
+      ]
     })
   }
 

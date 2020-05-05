@@ -13,7 +13,7 @@
           <th colspan="3">{{ esper.name }}</th>
         </tr>
         <tr>
-          <td colspan="3"><img class="esperImg" src="{{'assets/espers/' + esper.image + '_m.png'}}" /></td>
+          <td colspan="3"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.png'}}" /></td>
         </tr>
       </tbody>
     </table>
@@ -43,29 +43,29 @@
       </tr>
       <tr>
         <th></th>
-        <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">{{ type }}</th>
+        <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">{{ type }}</th>
       </tr>
       <tr>
         <td>Base</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
           {{ stats[type].baseTotal }}
         </td>
       </tr>
       <tr>
         <td>Guild Statues</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
           <span *ngIf="stats[type].guild > 0">{{ stats[type].guild }}</span>
         </td>
       </tr>
       <tr>
         <td>Board</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
           <span *ngIf="stats[type].board > 0">{{ stats[type].board }}</span>
         </td>
       </tr>
       <tr>
         <td>Total</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
           <span *ngIf="stats[type].total > 0">{{ stats[type].total }}</span>
         </td>
       </tr>
@@ -202,6 +202,9 @@
 </div>
 
 <div class="row" *ngIf="grid">
+  <div class="countSPs">
+    SPs: {{ esper.usedSPs }} / {{ esper.maxSPs }}
+  </div>
   <div class="hexGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
       <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
@@ -218,6 +221,7 @@
                'notActivable': !canActivateNode(node)
         }" >
           <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+          <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
         </div>
       </li>
     </ul>

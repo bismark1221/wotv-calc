@@ -38,26 +38,26 @@
       </tr>
       <tr>
         <td>Min</td>
-        <td>{{ esper.stats.HP.min }}</td>
-        <td>{{ esper.stats.TP.min }}</td>
-        <td>{{ esper.stats.AP.min }}</td>
-        <td>{{ esper.stats.ATK.min }}</td>
-        <td>{{ esper.stats.MAG.min }}</td>
-        <td>{{ esper.stats.DEX.min }}</td>
-        <td>{{ esper.stats.AGI.min }}</td>
-        <td>{{ esper.stats.LUCK.min }}</td>
+        <td>{{ esper.stats.HP[0].min }}</td>
+        <td>{{ esper.stats.TP[0].min }}</td>
+        <td>{{ esper.stats.AP[0].min }}</td>
+        <td>{{ esper.stats.ATK[0].min }}</td>
+        <td>{{ esper.stats.MAG[0].min }}</td>
+        <td>{{ esper.stats.DEX[0].min }}</td>
+        <td>{{ esper.stats.AGI[0].min }}</td>
+        <td>{{ esper.stats.LUCK[0].min }}</td>
         <td rowspan="2">{{ esper.maxSP }}</td>
       </tr>
       <tr>
         <td>Max</td>
-        <td>{{ esper.stats.HP.max }}</td>
-        <td>{{ esper.stats.TP.max }}</td>
-        <td>{{ esper.stats.AP.max }}</td>
-        <td>{{ esper.stats.ATK.max }}</td>
-        <td>{{ esper.stats.MAG.max }}</td>
-        <td>{{ esper.stats.DEX.max }}</td>
-        <td>{{ esper.stats.AGI.max }}</td>
-        <td>{{ esper.stats.LUCK.max }}</td>
+        <td>{{ esper.stats.HP[1].max }}</td>
+        <td>{{ esper.stats.TP[1].max }}</td>
+        <td>{{ esper.stats.AP[1].max }}</td>
+        <td>{{ esper.stats.ATK[1].max }}</td>
+        <td>{{ esper.stats.MAG[1].max }}</td>
+        <td>{{ esper.stats.DEX[1].max }}</td>
+        <td>{{ esper.stats.AGI[1].max }}</td>
+        <td>{{ esper.stats.LUCK[1].max }}</td>
       </tr>
       <tr class="emptyLine"></tr>
       <tr>
@@ -76,14 +76,14 @@
         <td rowspan="2"></td>
       </tr>
       <tr>
-        <td><span *ngIf="esper.stats.FIRE.min">{{ esper.stats.FIRE.min }} %</span></td>
-        <td><span *ngIf="esper.stats.ICE.min">{{ esper.stats.ICE.min }} %</span></td>
-        <td><span *ngIf="esper.stats.EARTH.min">{{ esper.stats.EARTH.min }} %</span></td>
-        <td><span *ngIf="esper.stats.WIND.min">{{ esper.stats.WIND.min }} %</span></td>
-        <td><span *ngIf="esper.stats.LIGHTNING.min">{{ esper.stats.LIGHTNING.min }} %</span></td>
-        <td><span *ngIf="esper.stats.WATER.min">{{ esper.stats.WATER.min }} %</span></td>
-        <td><span *ngIf="esper.stats.LIGHT.min">{{ esper.stats.LIGHT.min }} %</span></td>
-        <td><span *ngIf="esper.stats.DARK.min">{{ esper.stats.DARK.min }} %</span></td>
+        <td><span *ngIf="esper.stats.FIRE[0].min">{{ esper.stats.FIRE[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.ICE[0].min">{{ esper.stats.ICE[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.EARTH[0].min">{{ esper.stats.EARTH[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.WIND[0].min">{{ esper.stats.WIND[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.LIGHTNING[0].min">{{ esper.stats.LIGHTNING[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.WATER[0].min">{{ esper.stats.WATER[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.LIGHT[0].min">{{ esper.stats.LIGHT[0].min }} %</span></td>
+        <td><span *ngIf="esper.stats.DARK[0].min">{{ esper.stats.DARK[0].min }} %</span></td>
       </tr>
     </tbody>
   </table>
@@ -143,6 +143,7 @@
 
         <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
           <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+          <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
         </div>
       </li>
     </ul>

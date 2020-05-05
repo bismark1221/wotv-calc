@@ -66,87 +66,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 91,
-        "max": 870
-      },
-      "TP": {
-        "min": 19,
-        "max": 32
-      },
-      "AP": {
-        "min": 26,
-        "max": 39
-      },
-      "ATK": {
-        "min": 35,
-        "max": 94
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 15,
-        "max": 35
-      },
-      "DEX": {
-        "min": 24,
-        "max": 51
-      },
-      "AGI": {
-        "min": 10,
-        "max": 14
-      },
-      "LUCK": {
-        "min": 29,
-        "max": 62
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {
-        "min": 10,
-        "max": 10
-      },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
-        "min": -10,
-        "max": -10
-      },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 91,
+          "max": 432
+        },
+        {
+          "min": 453,
+          "max": 870
+        }
+      ],
+      "TP": [
+        {
+          "min": 19,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 32
+        }
+      ],
+      "AP": [
+        {
+          "min": 26,
+          "max": 32
+        },
+        {
+          "min": 33,
+          "max": 39
+        }
+      ],
+      "ATK": [
+        {
+          "min": 35,
+          "max": 61
+        },
+        {
+          "min": 64,
+          "max": 94
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 15,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 35
+        }
+      ],
+      "DEX": [
+        {
+          "min": 24,
+          "max": 36
+        },
+        {
+          "min": 38,
+          "max": 51
+        }
+      ],
+      "AGI": [
+        {
+          "min": 10,
+          "max": 12
+        },
+        {
+          "min": 12,
+          "max": 14
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 29,
+          "max": 43
+        },
+        {
+          "min": 45,
+          "max": 62
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -1120,87 +1291,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 94,
-        "max": 963
-      },
-      "TP": {
-        "min": 18,
-        "max": 32
-      },
-      "AP": {
-        "min": 22,
-        "max": 33
-      },
-      "ATK": {
-        "min": 33,
-        "max": 85
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 15,
-        "max": 33
-      },
-      "DEX": {
-        "min": 29,
-        "max": 61
-      },
-      "AGI": {
-        "min": 8,
-        "max": 10
-      },
-      "LUCK": {
-        "min": 30,
-        "max": 61
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
-        "min": -5,
-        "max": -5
-      },
-      "LIGHTNING": {
-        "min": 10,
-        "max": 10
-      },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 94,
+          "max": 474
+        },
+        {
+          "min": 498,
+          "max": 963
+        }
+      ],
+      "TP": [
+        {
+          "min": 18,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 32
+        }
+      ],
+      "AP": [
+        {
+          "min": 22,
+          "max": 27
+        },
+        {
+          "min": 28,
+          "max": 33
+        }
+      ],
+      "ATK": [
+        {
+          "min": 33,
+          "max": 56
+        },
+        {
+          "min": 59,
+          "max": 85
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 15,
+          "max": 23
+        },
+        {
+          "min": 24,
+          "max": 33
+        }
+      ],
+      "DEX": [
+        {
+          "min": 29,
+          "max": 43
+        },
+        {
+          "min": 45,
+          "max": 61
+        }
+      ],
+      "AGI": [
+        {
+          "min": 8,
+          "max": 9
+        },
+        {
+          "min": 9,
+          "max": 10
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 30,
+          "max": 43
+        },
+        {
+          "min": 45,
+          "max": 61
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {
+          "min": -5,
+          "max": -5
+        },
+        {
+          "min": -5,
+          "max": -5
+        }
+      ],
+      "LIGHTNING": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -2174,87 +2516,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 84,
-        "max": 768
-      },
-      "TP": {
-        "min": 16,
-        "max": 29
-      },
-      "AP": {
-        "min": 16,
-        "max": 25
-      },
-      "ATK": {
-        "min": 17,
-        "max": 41
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 28,
-        "max": 67
-      },
-      "DEX": {
-        "min": 29,
-        "max": 63
-      },
-      "AGI": {
-        "min": 12,
-        "max": 18
-      },
-      "LUCK": {
-        "min": 27,
-        "max": 55
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {
-        "min": 10,
-        "max": 10
-      },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {
-        "min": -10,
-        "max": -10
-      },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 84,
+          "max": 384
+        },
+        {
+          "min": 403,
+          "max": 768
+        }
+      ],
+      "TP": [
+        {
+          "min": 16,
+          "max": 22
+        },
+        {
+          "min": 23,
+          "max": 29
+        }
+      ],
+      "AP": [
+        {
+          "min": 16,
+          "max": 20
+        },
+        {
+          "min": 21,
+          "max": 25
+        }
+      ],
+      "ATK": [
+        {
+          "min": 17,
+          "max": 27
+        },
+        {
+          "min": 28,
+          "max": 41
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 28,
+          "max": 46
+        },
+        {
+          "min": 48,
+          "max": 67
+        }
+      ],
+      "DEX": [
+        {
+          "min": 29,
+          "max": 44
+        },
+        {
+          "min": 46,
+          "max": 63
+        }
+      ],
+      "AGI": [
+        {
+          "min": 12,
+          "max": 14
+        },
+        {
+          "min": 15,
+          "max": 18
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 27,
+          "max": 39
+        },
+        {
+          "min": 41,
+          "max": 55
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -3202,84 +3715,252 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 87,
-        "max": 826
-      },
-      "TP": {
-        "min": 15,
-        "max": 25
-      },
-      "AP": {
-        "min": 20,
-        "max": 31
-      },
-      "ATK": {
-        "min": 29,
-        "max": 78
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 12,
-        "max": 28
-      },
-      "DEX": {
-        "min": 28,
-        "max": 60
-      },
-      "AGI": {
-        "min": 7,
-        "max": 9
-      },
-      "LUCK": {
-        "min": 28,
-        "max": 60
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
-        "min": -10,
-        "max": -10
-      },
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 87,
+          "max": 411
+        },
+        {
+          "min": 431,
+          "max": 826
+        }
+      ],
+      "TP": [
+        {
+          "min": 15,
+          "max": 20
+        },
+        {
+          "min": 21,
+          "max": 25
+        }
+      ],
+      "AP": [
+        {
+          "min": 20,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 31
+        }
+      ],
+      "ATK": [
+        {
+          "min": 29,
+          "max": 50
+        },
+        {
+          "min": 53,
+          "max": 78
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 12,
+          "max": 19
+        },
+        {
+          "min": 20,
+          "max": 28
+        }
+      ],
+      "DEX": [
+        {
+          "min": 28,
+          "max": 42
+        },
+        {
+          "min": 44,
+          "max": 60
+        }
+      ],
+      "AGI": [
+        {
+          "min": 7,
+          "max": 8
+        },
+        {
+          "min": 8,
+          "max": 9
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 28,
+          "max": 42
+        },
+        {
+          "min": 44,
+          "max": 60
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -4226,84 +4907,252 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 84,
-        "max": 764
-      },
-      "TP": {
-        "min": 12,
-        "max": 21
-      },
-      "AP": {
-        "min": 20,
-        "max": 29
-      },
-      "ATK": {
-        "min": 29,
-        "max": 78
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 12,
-        "max": 28
-      },
-      "DEX": {
-        "min": 23,
-        "max": 51
-      },
-      "AGI": {
-        "min": 10,
-        "max": 15
-      },
-      "LUCK": {
-        "min": 29,
-        "max": 63
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
-        "min": -10,
-        "max": -10
-      },
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 84,
+          "max": 382
+        },
+        {
+          "min": 401,
+          "max": 764
+        }
+      ],
+      "TP": [
+        {
+          "min": 12,
+          "max": 16
+        },
+        {
+          "min": 17,
+          "max": 21
+        }
+      ],
+      "AP": [
+        {
+          "min": 20,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 29
+        }
+      ],
+      "ATK": [
+        {
+          "min": 29,
+          "max": 50
+        },
+        {
+          "min": 53,
+          "max": 78
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 12,
+          "max": 19
+        },
+        {
+          "min": 20,
+          "max": 28
+        }
+      ],
+      "DEX": [
+        {
+          "min": 23,
+          "max": 35
+        },
+        {
+          "min": 37,
+          "max": 51
+        }
+      ],
+      "AGI": [
+        {
+          "min": 10,
+          "max": 12
+        },
+        {
+          "min": 13,
+          "max": 15
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 29,
+          "max": 44
+        },
+        {
+          "min": 46,
+          "max": 63
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -5279,87 +6128,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 79,
-        "max": 755
-      },
-      "TP": {
-        "min": 10,
-        "max": 17
-      },
-      "AP": {
-        "min": 14,
-        "max": 21
-      },
-      "ATK": {
-        "min": 23,
-        "max": 57
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 10,
-        "max": 22
-      },
-      "DEX": {
-        "min": 31,
-        "max": 66
-      },
-      "AGI": {
-        "min": 9,
-        "max": 13
-      },
-      "LUCK": {
-        "min": 28,
-        "max": 60
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {
-        "min": -5,
-        "max": -5
-      },
-      "EARTH": {
-        "min": 5,
-        "max": 5
-      },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 79,
+          "max": 374
+        },
+        {
+          "min": 393,
+          "max": 755
+        }
+      ],
+      "TP": [
+        {
+          "min": 10,
+          "max": 12
+        },
+        {
+          "min": 13,
+          "max": 17
+        }
+      ],
+      "AP": [
+        {
+          "min": 14,
+          "max": 17
+        },
+        {
+          "min": 18,
+          "max": 21
+        }
+      ],
+      "ATK": [
+        {
+          "min": 23,
+          "max": 38
+        },
+        {
+          "min": 39,
+          "max": 57
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 10,
+          "max": 15
+        },
+        {
+          "min": 15,
+          "max": 22
+        }
+      ],
+      "DEX": [
+        {
+          "min": 31,
+          "max": 47
+        },
+        {
+          "min": 48,
+          "max": 66
+        }
+      ],
+      "AGI": [
+        {
+          "min": 9,
+          "max": 10
+        },
+        {
+          "min": 11,
+          "max": 13
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 28,
+          "max": 42
+        },
+        {
+          "min": 44,
+          "max": 60
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {
+          "min": -5,
+          "max": -5
+        },
+        {
+          "min": -5,
+          "max": -5
+        }
+      ],
+      "EARTH": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -6306,87 +7326,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 66,
-        "max": 550
-      },
-      "TP": {
-        "min": 16,
-        "max": 34
-      },
-      "AP": {
-        "min": 19,
-        "max": 35
-      },
-      "ATK": {
-        "min": 10,
-        "max": 24
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 26,
-        "max": 70
-      },
-      "DEX": {
-        "min": 27,
-        "max": 59
-      },
-      "AGI": {
-        "min": 8,
-        "max": 11
-      },
-      "LUCK": {
-        "min": 32,
-        "max": 66
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
-        "min": -15,
-        "max": -15
-      },
-      "LIGHTNING": {
-        "min": 5,
-        "max": 5
-      },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 66,
+          "max": 278
+        },
+        {
+          "min": 291,
+          "max": 550
+        }
+      ],
+      "TP": [
+        {
+          "min": 16,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 34
+        }
+      ],
+      "AP": [
+        {
+          "min": 19,
+          "max": 26
+        },
+        {
+          "min": 27,
+          "max": 35
+        }
+      ],
+      "ATK": [
+        {
+          "min": 10,
+          "max": 16
+        },
+        {
+          "min": 17,
+          "max": 24
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 26,
+          "max": 45
+        },
+        {
+          "min": 47,
+          "max": 70
+        }
+      ],
+      "DEX": [
+        {
+          "min": 27,
+          "max": 41
+        },
+        {
+          "min": 43,
+          "max": 59
+        }
+      ],
+      "AGI": [
+        {
+          "min": 8,
+          "max": 9
+        },
+        {
+          "min": 10,
+          "max": 11
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 32,
+          "max": 46
+        },
+        {
+          "min": 49,
+          "max": 66
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {
+          "min": -15,
+          "max": -15
+        },
+        {
+          "min": -15,
+          "max": -15
+        }
+      ],
+      "LIGHTNING": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -7342,87 +8533,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 75,
-        "max": 761
-      },
-      "TP": {
-        "min": 12,
-        "max": 21
-      },
-      "AP": {
-        "min": 14,
-        "max": 21
-      },
-      "ATK": {
-        "min": 23,
-        "max": 57
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 10,
-        "max": 23
-      },
-      "DEX": {
-        "min": 27,
-        "max": 57
-      },
-      "AGI": {
-        "min": 9,
-        "max": 14
-      },
-      "LUCK": {
-        "min": 28,
-        "max": 58
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {
-        "min": -15,
-        "max": -15
-      },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
-        "min": 5,
-        "max": 5
-      },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 75,
+          "max": 375
+        },
+        {
+          "min": 393,
+          "max": 761
+        }
+      ],
+      "TP": [
+        {
+          "min": 12,
+          "max": 16
+        },
+        {
+          "min": 16,
+          "max": 21
+        }
+      ],
+      "AP": [
+        {
+          "min": 14,
+          "max": 17
+        },
+        {
+          "min": 18,
+          "max": 21
+        }
+      ],
+      "ATK": [
+        {
+          "min": 23,
+          "max": 38
+        },
+        {
+          "min": 39,
+          "max": 57
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 10,
+          "max": 15
+        },
+        {
+          "min": 16,
+          "max": 23
+        }
+      ],
+      "DEX": [
+        {
+          "min": 27,
+          "max": 40
+        },
+        {
+          "min": 42,
+          "max": 57
+        }
+      ],
+      "AGI": [
+        {
+          "min": 9,
+          "max": 11
+        },
+        {
+          "min": 11,
+          "max": 14
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 28,
+          "max": 41
+        },
+        {
+          "min": 43,
+          "max": 58
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {
+          "min": -15,
+          "max": -15
+        },
+        {
+          "min": -15,
+          "max": -15
+        }
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -8369,87 +9731,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 70,
-        "max": 680
-      },
-      "TP": {
-        "min": 12,
-        "max": 19
-      },
-      "AP": {
-        "min": 14,
-        "max": 21
-      },
-      "ATK": {
-        "min": 18,
-        "max": 45
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 8,
-        "max": 18
-      },
-      "DEX": {
-        "min": 22,
-        "max": 49
-      },
-      "AGI": {
-        "min": 9,
-        "max": 14
-      },
-      "LUCK": {
-        "min": 29,
-        "max": 61
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {
-        "min": -15,
-        "max": -15
-      },
-      "EARTH": {
-        "min": 5,
-        "max": 5
-      },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 70,
+          "max": 337
+        },
+        {
+          "min": 354,
+          "max": 680
+        }
+      ],
+      "TP": [
+        {
+          "min": 12,
+          "max": 15
+        },
+        {
+          "min": 16,
+          "max": 19
+        }
+      ],
+      "AP": [
+        {
+          "min": 14,
+          "max": 17
+        },
+        {
+          "min": 18,
+          "max": 21
+        }
+      ],
+      "ATK": [
+        {
+          "min": 18,
+          "max": 30
+        },
+        {
+          "min": 32,
+          "max": 45
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 8,
+          "max": 12
+        },
+        {
+          "min": 12,
+          "max": 18
+        }
+      ],
+      "DEX": [
+        {
+          "min": 22,
+          "max": 34
+        },
+        {
+          "min": 35,
+          "max": 49
+        }
+      ],
+      "AGI": [
+        {
+          "min": 9,
+          "max": 11
+        },
+        {
+          "min": 11,
+          "max": 14
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 29,
+          "max": 43
+        },
+        {
+          "min": 45,
+          "max": 61
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {
+          "min": -15,
+          "max": -15
+        },
+        {
+          "min": -15,
+          "max": -15
+        }
+      ],
+      "EARTH": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -9397,87 +10930,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 72,
-        "max": 713
-      },
-      "TP": {
-        "min": 12,
-        "max": 21
-      },
-      "AP": {
-        "min": 17,
-        "max": 25
-      },
-      "ATK": {
-        "min": 19,
-        "max": 48
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 7,
-        "max": 17
-      },
-      "DEX": {
-        "min": 22,
-        "max": 49
-      },
-      "AGI": {
-        "min": 8,
-        "max": 11
-      },
-      "LUCK": {
-        "min": 27,
-        "max": 57
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
-        "min": -15,
-        "max": -15
-      },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
-        "min": 5,
-        "max": 5
-      },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 72,
+          "max": 352
+        },
+        {
+          "min": 369,
+          "max": 713
+        }
+      ],
+      "TP": [
+        {
+          "min": 12,
+          "max": 16
+        },
+        {
+          "min": 16,
+          "max": 21
+        }
+      ],
+      "AP": [
+        {
+          "min": 17,
+          "max": 20
+        },
+        {
+          "min": 20,
+          "max": 25
+        }
+      ],
+      "ATK": [
+        {
+          "min": 19,
+          "max": 32
+        },
+        {
+          "min": 33,
+          "max": 48
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 7,
+          "max": 12
+        },
+        {
+          "min": 12,
+          "max": 17
+        }
+      ],
+      "DEX": [
+        {
+          "min": 22,
+          "max": 34
+        },
+        {
+          "min": 35,
+          "max": 49
+        }
+      ],
+      "AGI": [
+        {
+          "min": 8,
+          "max": 9
+        },
+        {
+          "min": 10,
+          "max": 11
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 27,
+          "max": 40
+        },
+        {
+          "min": 42,
+          "max": 57
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {
+          "min": -15,
+          "max": -15
+        },
+        {
+          "min": -15,
+          "max": -15
+        }
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -10424,87 +12128,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 69,
-        "max": 657
-      },
-      "TP": {
-        "min": 12,
-        "max": 20
-      },
-      "AP": {
-        "min": 11,
-        "max": 17
-      },
-      "ATK": {
-        "min": 23,
-        "max": 57
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 10,
-        "max": 22
-      },
-      "DEX": {
-        "min": 27,
-        "max": 58
-      },
-      "AGI": {
-        "min": 8,
-        "max": 11
-      },
-      "LUCK": {
-        "min": 23,
-        "max": 51
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {
-        "min": 5,
-        "max": 5
-      },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
-        "min": -15,
-        "max": -15
-      },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 69,
+          "max": 326
+        },
+        {
+          "min": 342,
+          "max": 657
+        }
+      ],
+      "TP": [
+        {
+          "min": 12,
+          "max": 15
+        },
+        {
+          "min": 16,
+          "max": 20
+        }
+      ],
+      "AP": [
+        {
+          "min": 11,
+          "max": 14
+        },
+        {
+          "min": 15,
+          "max": 17
+        }
+      ],
+      "ATK": [
+        {
+          "min": 23,
+          "max": 38
+        },
+        {
+          "min": 39,
+          "max": 57
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 10,
+          "max": 15
+        },
+        {
+          "min": 15,
+          "max": 22
+        }
+      ],
+      "DEX": [
+        {
+          "min": 27,
+          "max": 41
+        },
+        {
+          "min": 42,
+          "max": 58
+        }
+      ],
+      "AGI": [
+        {
+          "min": 8,
+          "max": 9
+        },
+        {
+          "min": 10,
+          "max": 11
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 23,
+          "max": 35
+        },
+        {
+          "min": 37,
+          "max": 51
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {
+          "min": -15,
+          "max": -15
+        },
+        {
+          "min": -15,
+          "max": -15
+        }
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -11478,87 +13353,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 90,
-        "max": 823
-      },
-      "TP": {
-        "min": 20,
-        "max": 36
-      },
-      "AP": {
-        "min": 27,
-        "max": 42
-      },
-      "ATK": {
-        "min": 15,
-        "max": 36
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 34,
-        "max": 81
-      },
-      "DEX": {
-        "min": 29,
-        "max": 63
-      },
-      "AGI": {
-        "min": 12,
-        "max": 18
-      },
-      "LUCK": {
-        "min": 27,
-        "max": 55
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {
-        "min": -10,
-        "max": -10
-      },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
-        "min": 10,
-        "max": 10
-      },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 90,
+          "max": 411
+        },
+        {
+          "min": 432,
+          "max": 823
+        }
+      ],
+      "TP": [
+        {
+          "min": 20,
+          "max": 28
+        },
+        {
+          "min": 29,
+          "max": 36
+        }
+      ],
+      "AP": [
+        {
+          "min": 27,
+          "max": 34
+        },
+        {
+          "min": 35,
+          "max": 42
+        }
+      ],
+      "ATK": [
+        {
+          "min": 15,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 36
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 34,
+          "max": 56
+        },
+        {
+          "min": 58,
+          "max": 81
+        }
+      ],
+      "DEX": [
+        {
+          "min": 29,
+          "max": 44
+        },
+        {
+          "min": 46,
+          "max": 63
+        }
+      ],
+      "AGI": [
+        {
+          "min": 12,
+          "max": 14
+        },
+        {
+          "min": 15,
+          "max": 18
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 27,
+          "max": 39
+        },
+        {
+          "min": 41,
+          "max": 55
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {},
+        {}
+      ],
+      "WIND": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {},
+        {}
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [
@@ -12532,87 +14578,258 @@
       }
     ],
     "stats": {
-      "HP": {
-        "min": 90,
-        "max": 835
-      },
-      "TP": {
-        "min": 21,
-        "max": 40
-      },
-      "AP": {
-        "min": 28,
-        "max": 43
-      },
-      "ATK": {
-        "min": 14,
-        "max": 33
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 34,
-        "max": 91
-      },
-      "DEX": {
-        "min": 23,
-        "max": 49
-      },
-      "AGI": {
-        "min": 10,
-        "max": 14
-      },
-      "LUCK": {
-        "min": 30,
-        "max": 64
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
-        "min": -10,
-        "max": -10
-      },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
-        "min": 10,
-        "max": 10
-      },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      }
+      "HP": [
+        {
+          "min": 90,
+          "max": 414
+        },
+        {
+          "min": 435,
+          "max": 835
+        }
+      ],
+      "TP": [
+        {
+          "min": 21,
+          "max": 30
+        },
+        {
+          "min": 31,
+          "max": 40
+        }
+      ],
+      "AP": [
+        {
+          "min": 28,
+          "max": 35
+        },
+        {
+          "min": 36,
+          "max": 43
+        }
+      ],
+      "ATK": [
+        {
+          "min": 14,
+          "max": 22
+        },
+        {
+          "min": 23,
+          "max": 33
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 34,
+          "max": 59
+        },
+        {
+          "min": 62,
+          "max": 91
+        }
+      ],
+      "DEX": [
+        {
+          "min": 23,
+          "max": 35
+        },
+        {
+          "min": 36,
+          "max": 49
+        }
+      ],
+      "AGI": [
+        {
+          "min": 10,
+          "max": 12
+        },
+        {
+          "min": 12,
+          "max": 14
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 30,
+          "max": 44
+        },
+        {
+          "min": 47,
+          "max": 64
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE": [
+        {},
+        {}
+      ],
+      "ICE": [
+        {},
+        {}
+      ],
+      "EARTH": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "WIND": [
+        {},
+        {}
+      ],
+      "LIGHTNING": [
+        {},
+        {}
+      ],
+      "WATER": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "LIGHT": [
+        {},
+        {}
+      ],
+      "DARK": [
+        {},
+        {}
+      ],
+      "SLASH": [
+        {},
+        {}
+      ],
+      "PIERCE": [
+        {},
+        {}
+      ],
+      "STRIKE": [
+        {},
+        {}
+      ],
+      "MISSILE": [
+        {},
+        {}
+      ],
+      "MAGIC": [
+        {},
+        {}
+      ],
+      "POISON": [
+        {},
+        {}
+      ],
+      "BLIND": [
+        {},
+        {}
+      ],
+      "SLEEP": [
+        {},
+        {}
+      ],
+      "SILENCE": [
+        {},
+        {}
+      ],
+      "PARALYZE": [
+        {},
+        {}
+      ],
+      "CONFUSION": [
+        {},
+        {}
+      ],
+      "PETRIFY": [
+        {},
+        {}
+      ],
+      "TOAD": [
+        {},
+        {}
+      ],
+      "CHARM": [
+        {},
+        {}
+      ],
+      "SLOW": [
+        {},
+        {}
+      ],
+      "STOP": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE": [
+        {},
+        {}
+      ],
+      "DISABLE": [
+        {},
+        {}
+      ],
+      "BERSERK": [
+        {},
+        {}
+      ],
+      "DOOM": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
     },
     "SPs": [
       [

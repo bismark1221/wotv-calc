@@ -165,6 +165,7 @@ export class EsperService {
     let formattedEspersForBuilder = []
     rarityOrder.forEach(rarity => {
       espers[rarity].forEach(esper => {
+        esper.rarity = this.findRarity(esper)
         formattedEspersForBuilder.push(esper)
       })
     })
@@ -185,7 +186,8 @@ export class EsperService {
 
     this.savedEspers[esper.dataId] = {
       star: esper.star,
-      level: esper.level
+      level: esper.level,
+      nodes: {}
     }
 
     Object.keys(esper.board.nodes).forEach(nodeId => {
