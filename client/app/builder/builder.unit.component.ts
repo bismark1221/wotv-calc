@@ -13,7 +13,7 @@ import { GridService } from '../services/grid.service';
   styleUrls: ['./builder.unit.component.css']
 })
 export class BuilderUnitComponent implements OnInit {
-  private units;
+  units;
   unit
   tableLevels
   tableJobLevels
@@ -58,7 +58,7 @@ export class BuilderUnitComponent implements OnInit {
     this.units = [...this.units];
   }
 
-  private selectUnit() {
+  selectUnit() {
     let lang = this.translateService.currentLang
     this.unit.name = this.unit.names[lang]
 
@@ -404,7 +404,7 @@ export class BuilderUnitComponent implements OnInit {
 
 
 
-  private consoleLog() {
+  consoleLog() {
     this.unitService.saveUnit(this.unit)
     this.guildService.saveGuild()
   }

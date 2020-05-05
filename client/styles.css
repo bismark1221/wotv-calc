@@ -230,6 +230,11 @@ td {
   color: #fff;
 }
 
+.hexGrid li .hex.activated {
+  background-color: #737272;
+  color: #fff;
+}
+
 .hexGrid li .hex.selected, .hexGrid li .hex.selected a {
   color: #000
 }
