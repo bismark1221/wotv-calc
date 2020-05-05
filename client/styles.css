@@ -189,8 +189,44 @@ td {
   width: 100%
 }
 
-.hexGrid li .hex.activated {
-  background-color: #737272;
+
+.hexGrid li .hex.notActivable {
+  background-color: #f5f6f5 !important;
+}
+
+.hexGrid li .hex.buff {
+  background: #fff4b8;
+}
+
+.hexGrid li .hex.buff.activated {
+  background: #fedd4c;
+  color: #000;
+}
+
+.hexGrid li .hex.skill {
+  background: #fbdcdc;
+}
+
+.hexGrid li .hex.skill.activated {
+  background: #e42828;
+  color: #fff;
+}
+
+.hexGrid li .hex.support {
+  background: #c9ffb7;
+}
+
+.hexGrid li .hex.support.activated {
+  background: #52bb2e;
+  color: #fff;
+}
+
+.hexGrid li .hex.counter {
+  background: #ccd4ff;
+}
+
+.hexGrid li .hex.counter.activated {
+  background: #2649ff;
   color: #fff;
 }
 

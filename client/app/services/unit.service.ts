@@ -157,7 +157,12 @@ export class UnitService {
         unit.jobsData[1].level,
         unit.jobsData[2].level
       ],
-      nodes: {}
+      nodes: {},
+      masterSkill: unit.masterSkill.activated,
+      activatedSupport: [
+        unit.activatedSupport[0],
+        unit.activatedSupport[1]
+      ]
     }
 
     Object.keys(unit.board.nodes).forEach(nodeId => {

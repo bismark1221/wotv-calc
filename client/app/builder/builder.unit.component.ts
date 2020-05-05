@@ -80,6 +80,13 @@ export class BuilderUnitComponent implements OnInit {
     this.unit.masterSkill.activated = false;
     this.unit.masterSkill.name = this.unit.masterSkill.names[lang]
 
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
+        this.unit.board.nodes[nodeId].activated = true
+        this.unit.board.nodes[nodeId].level = 1
+      }
+    })
+
     this.initiateSavedUnit()
 
     this.updateMaxLevel();
@@ -113,6 +120,12 @@ export class BuilderUnitComponent implements OnInit {
           this.unit.board.nodes[nodeId].activated = true
         }
       })
+
+      this.unit.masterSkill.activated = unit.masterSkill
+      this.unit.activatedSupport = [
+        unit.activatedSupport[0],
+        unit.activatedSupport[1]
+      ]
     }
   }
 
@@ -155,6 +168,8 @@ export class BuilderUnitComponent implements OnInit {
     for (let i = 1; i <= this.unit.maxLevel; i++) {
       this.tableLevels.push(i);
     }
+
+    this.updateMaxJobLevel()
   }
 
   private updateMaxJobLevel() {
@@ -179,8 +194,13 @@ export class BuilderUnitComponent implements OnInit {
     this.unit.jobsData.forEach((job, jobIndex) => {
       job.unlocked = this.unit.star >= starToUnlock[jobIndex]
 
-      if (job.level > this.unit.maxJobLevel) {
-        job.level = this.unit.maxJobLevel
+      if (job.unlocked) {
+        if (job.level > this.unit.maxJobLevel) {
+          job.level = this.unit.maxJobLevel
+          updated = true
+        }
+      } else {
+        job.level = 1;
         updated = true
       }
     })
@@ -261,7 +281,7 @@ export class BuilderUnitComponent implements OnInit {
           if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
             this.stats[effect.type].support += value
           } else if (statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
-            this.stats[effect.type].support += Math.floor(this.stats[effect.type].baseTotal * value / 100)
+            this.stats[effect.type].support += this.stats[effect.type].baseTotal * value / 100
           } else {
             console.log("not manage effect in support")
             console.log(this.unit.board.nodes[supportNode].skill)
@@ -284,11 +304,13 @@ export class BuilderUnitComponent implements OnInit {
     }
 
     Object.keys(this.unit.stats).forEach(stat => {
+      this.stats[stat].support = Math.floor(this.stats[stat].support)
+
       this.stats[stat].total = this.stats[stat].baseTotal;
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0
-      this.stats[stat].total += this.stats[stat].board ? this.stats[stat].board : 0
-      this.stats[stat].total += this.stats[stat].support ? this.stats[stat].support : 0
-      this.stats[stat].total += this.stats[stat].masterSkill ? this.stats[stat].masterSkill : 0
+      this.stats[stat].total += this.stats[stat].board
+      this.stats[stat].total += this.stats[stat].support
+      this.stats[stat].total += this.stats[stat].masterSkill
     })
   }
 
@@ -352,10 +374,14 @@ export class BuilderUnitComponent implements OnInit {
   canActivateNode(node) {
     let nodeData = this.unit.board.nodes[node]
 
-    if (nodeData.type == "buff") {
-      return this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel
+    if (node !== 0) {
+      if (nodeData.type == "buff") {
+        return this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel
+      } else {
+        return !nodeData.skill.unlockStar || (this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
+      }
     } else {
-      return !nodeData.skill.unlockStar || (this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
+      return true
     }
   }
 

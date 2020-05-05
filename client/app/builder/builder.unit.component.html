@@ -53,7 +53,7 @@
       </tr>
       <tr>
         <td *ngFor="let i of [0, 1, 2]">
-          <select [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevels()">
+          <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevels()">
             <option *ngFor="let level of tableJobLevels">{{ level }}</option>
           </select>
         </td>
@@ -222,10 +222,18 @@
           <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
         </div>
 
-        <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
+        <div class="hex" *ngIf="grid.nodesForGrid[node].type == 'text'"
+             [ngClass]="{
+               'activated': unit.board.nodes[node].activated,
+               'buff': unit.board.nodes[node].type == 'buff',
+               'skill': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'skill',
+               'support': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'support',
+               'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
+               'notActivable': !canActivateNode(node)
+        }" >
           <i class="fa fa-plus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
           <span class="text">{{ grid.nodesForGrid[node].value }}</span>
-          <span class="skillLevel" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">{{ unit.board.nodes[node].level }}</span>
+          <span class="skillLevel" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level }}</span>
           <i class="fa fa-minus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
         </div>
       </li>
