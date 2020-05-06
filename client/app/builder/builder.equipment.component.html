@@ -19,19 +19,22 @@
     </table>
   </div>
 
-  <div *ngIf="equipment">
+  <div *ngIf="equipment && equipment.skills.length > 1">
     Star
-    <select [(ngModel)]="equipment.star" (ngModelChange)="changeStar()">
+    <select [(ngModel)]="equipment.update" (ngModelChange)="changeLevels()">
       <option>0</option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
+      <option>+1</option>
+      <option>+2</option>
+      <option>+3</option>
+      <option>+4</option>
+      <option>+5</option>
     </select>
+  </div>
 
-    Level
-    <select [(ngModel)]="equipment.level" (ngModelChange)="changeLevels()">
-      <option *ngFor="let level of tableLevels">{{ level }}</option>
+  <div *ngIf="equipment && equipment.growIds.length > 1">
+    Type
+    <select [(ngModel)]="equipment.grow" (ngModelChange)="changeLevels()">
+      <option *ngFor="let growId of equipment.growIds" [ngValue]="growId">{{ equipment.grows[growId].name }}</option>
     </select>
   </div>
 
@@ -42,31 +45,13 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="3">Stats</th>
+        <th colspan="13">Stats</th>
       </tr>
       <tr>
-        <th *ngFor="let type of statsType">{{ type }}</th>
+        <th *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
       </tr>
-      <tr>
-        <td *ngFor="let type of statsType">
-          {{ stats[type] }}
-        </td>
-      </tr>
-      <tr>
-        <th colspan="3">Unit Buff</th>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <div *ngFor="let buff of equipment.buff.self">{{ buff }}</div>
-        </td>
-      </tr>
-      <tr>
-        <th colspan="3">Party Buff</th>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <div *ngFor="let buff of equipment.buff.party">{{ buff }}</div>
-        </td>
+      <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].min }}</td>
       </tr>
     </tbody>
   </table>
