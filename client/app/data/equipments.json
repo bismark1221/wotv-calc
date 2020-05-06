@@ -29,7 +29,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -65,7 +75,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_007",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -130,7 +150,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -152,7 +172,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -174,7 +194,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -330,7 +350,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -352,7 +372,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -374,7 +394,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -530,7 +550,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -552,7 +572,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -574,7 +594,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -601,10 +621,9 @@
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
             {
-              "type": "SLEEP",
+              "type": "IMBUE",
               "calcType": "percent",
-              "rate": 25,
-              "turn": 4
+              "rate": 200
             }
           ],
           "type": "support"
@@ -617,10 +636,9 @@
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
             {
-              "type": "SLEEP",
+              "type": "IMBUE",
               "calcType": "percent",
-              "rate": 25,
-              "turn": 4
+              "rate": 200
             }
           ],
           "type": "support"
@@ -634,6 +652,11 @@
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -667,6 +690,11 @@
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
             {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
               "type": "SLEEP",
               "calcType": "percent",
               "rate": 25,
@@ -684,6 +712,17 @@
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -717,6 +756,17 @@
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
             {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
               "type": "SLEEP",
               "calcType": "percent",
               "rate": 25,
@@ -734,6 +784,23 @@
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -767,6 +834,23 @@
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
             {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
               "type": "SLEEP",
               "calcType": "percent",
               "rate": 25,
@@ -784,6 +868,29 @@
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -817,6 +924,29 @@
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
             {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
               "type": "SLEEP",
               "calcType": "percent",
               "rate": 25,
@@ -834,6 +964,35 @@
           },
           "dataId": "SK_LW_SWO_003_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -866,6 +1025,35 @@
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
+            {
+              "type": "SLEEP",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -923,7 +1111,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -945,7 +1133,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -967,7 +1155,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -1316,7 +1504,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -1338,7 +1526,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -1360,7 +1548,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -1456,7 +1644,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -1478,7 +1666,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -1500,7 +1688,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -1589,7 +1777,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_LW_SWO_016",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -1636,7 +1834,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -1658,7 +1856,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -1680,7 +1878,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -1833,7 +2031,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -1855,7 +2053,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -1877,7 +2075,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -2023,7 +2221,17 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_LW_BSW_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -2070,7 +2278,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -2092,7 +2300,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -2114,7 +2322,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -2270,7 +2478,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -2292,7 +2500,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -2314,7 +2522,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -2470,7 +2678,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -2492,7 +2700,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -2514,7 +2722,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -2671,7 +2879,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -2693,7 +2901,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -2846,7 +3054,17 @@
     },
     "type": "KATANA",
     "dataId": "AF_LW_KAT_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -2897,7 +3115,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -2919,7 +3137,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -2941,7 +3159,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -3105,7 +3323,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -3127,7 +3345,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -3149,7 +3367,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -3309,7 +3527,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -3331,7 +3549,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -3353,7 +3571,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -3502,7 +3720,17 @@
     },
     "type": "FIST",
     "dataId": "AF_LW_FIS_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -3549,7 +3777,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -3571,7 +3799,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -3593,7 +3821,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -3738,7 +3966,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -3760,7 +3988,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -3782,7 +4010,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -3931,7 +4159,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -3953,7 +4181,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -3975,7 +4203,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -4109,7 +4337,17 @@
     },
     "type": "SPEAR",
     "dataId": "AF_LW_SPE_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -4156,7 +4394,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -4178,7 +4416,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -4200,7 +4438,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -4341,7 +4579,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -4363,7 +4601,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -4385,7 +4623,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -4526,7 +4764,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -4548,7 +4786,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -4570,7 +4808,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -4708,7 +4946,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -4730,7 +4968,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -4752,7 +4990,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -4893,7 +5131,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -4915,7 +5153,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -4937,7 +5175,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -5276,7 +5514,17 @@
     },
     "type": "DAGGER",
     "dataId": "AF_LW_DAG_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -5323,7 +5571,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -5345,7 +5593,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -5367,7 +5615,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -5523,7 +5771,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -5545,7 +5793,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -5567,7 +5815,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -5727,7 +5975,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -5749,7 +5997,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -5771,7 +6019,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -5927,7 +6175,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -5949,7 +6197,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -5971,7 +6219,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -6120,7 +6368,17 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_LW_NKN_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -6167,7 +6425,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -6189,7 +6447,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -6211,7 +6469,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -6367,7 +6625,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -6389,7 +6647,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -6411,7 +6669,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -6567,7 +6825,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -6589,7 +6847,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -6611,7 +6869,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -6764,7 +7022,17 @@
     },
     "type": "BOW",
     "dataId": "AF_LW_BOW_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -6815,7 +7083,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -6837,7 +7105,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -6859,7 +7127,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -7004,7 +7272,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -7026,7 +7294,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -7048,7 +7316,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -7193,7 +7461,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -7215,7 +7483,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -7237,7 +7505,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -7375,7 +7643,17 @@
     },
     "type": "GUN",
     "dataId": "AF_LW_GUN_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -7422,7 +7700,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -7444,7 +7722,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -7466,7 +7744,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -7607,7 +7885,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -7629,7 +7907,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -7651,7 +7929,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -7796,7 +8074,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -7818,7 +8096,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -7840,7 +8118,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -7974,7 +8252,17 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -8014,7 +8302,17 @@
     },
     "type": "ROD",
     "dataId": "AF_LW_ROD_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -8061,7 +8359,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -8083,7 +8381,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -8105,7 +8403,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -8246,7 +8544,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -8268,7 +8566,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -8290,7 +8588,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -8717,7 +9015,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -8739,7 +9037,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -8761,7 +9059,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -8902,7 +9200,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -8924,7 +9222,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -8946,7 +9244,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -9080,7 +9378,17 @@
     },
     "type": "MACE",
     "dataId": "AF_LW_MAC_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -9127,7 +9435,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9149,7 +9457,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9171,7 +9479,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -9316,7 +9624,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9338,7 +9646,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9360,7 +9668,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -9505,7 +9813,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -9527,7 +9835,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9549,7 +9857,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9687,7 +9995,17 @@
     },
     "type": "AXE",
     "dataId": "AF_LW_AXE_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -9738,7 +10056,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9760,7 +10078,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -9782,7 +10100,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -9942,7 +10260,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9964,7 +10282,7 @@
           "fr": "Magie"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -9986,7 +10304,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -10146,7 +10464,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -10168,7 +10486,7 @@
           "fr": "Assaut"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -40,
           "TP": 0,
           "AP": 0,
@@ -10190,7 +10508,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -10318,7 +10636,17 @@
     "stats": {},
     "type": "SHIELD",
     "dataId": "AF_LW_SHI_000",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -10354,7 +10682,17 @@
     },
     "type": "ARMOR",
     "dataId": "AF_LW_ARM_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -10393,7 +10731,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -10415,7 +10753,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -10548,7 +10886,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -10570,7 +10908,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -10592,7 +10930,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -10737,7 +11075,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -10759,7 +11097,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -10781,7 +11119,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -10922,7 +11260,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -10944,7 +11282,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -10966,7 +11304,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11096,7 +11434,17 @@
     },
     "type": "HELM",
     "dataId": "AF_LW_HLM_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -11135,7 +11483,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -11157,7 +11505,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11290,7 +11638,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -11312,7 +11660,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11334,7 +11682,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11471,7 +11819,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -11493,7 +11841,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11515,7 +11863,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11645,7 +11993,17 @@
     },
     "type": "HAT",
     "dataId": "AF_LW_HAT_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -11692,7 +12050,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11714,7 +12072,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11855,7 +12213,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -11877,7 +12235,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -11899,7 +12257,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12040,7 +12398,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -12062,7 +12420,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12084,7 +12442,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12214,7 +12572,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_LW_CLT_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -12257,7 +12625,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -12279,7 +12647,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12301,7 +12669,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12438,7 +12806,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -12460,7 +12828,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12482,7 +12850,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12619,7 +12987,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -12641,7 +13009,7 @@
           "fr": "Bouclier"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12663,7 +13031,7 @@
           "fr": "Barrière"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12801,7 +13169,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -12885,7 +13263,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -12907,7 +13285,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -12929,7 +13307,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -13267,7 +13645,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -13289,7 +13667,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -13311,7 +13689,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -13649,7 +14027,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -13671,7 +14049,7 @@
           "fr": "Visée"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -13693,7 +14071,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -14031,7 +14409,7 @@
           "fr": "Vitalité"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": 0,
           "TP": 0,
           "AP": 0,
@@ -14053,7 +14431,7 @@
           "fr": "Esquive"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -30,
           "TP": 0,
           "AP": 0,
@@ -14075,7 +14453,7 @@
           "fr": "Coups critiques"
         },
         "curve": {
-          "undefined": 1,
+          "MAX_LV": 50,
           "HP": -20,
           "TP": 0,
           "AP": 0,
@@ -14318,7 +14696,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_RNG_006",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -14370,7 +14758,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ARW_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -14422,7 +14820,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ARW_003",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -14474,7 +14882,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_CLK_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -14526,7 +14944,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ACC_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -14578,7 +15006,17 @@
     },
     "type": "ACC",
     "dataId": "AF_LW_ACC_002",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -14610,7 +15048,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_LILS_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14660,7 +15108,17 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_BSW_LW_SZRT_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14670,6 +15128,11 @@
           },
           "dataId": "SK_BSW_LW_SZRT_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "DOOM",
               "minValue": 4,
@@ -14716,7 +15179,17 @@
     },
     "type": "KATANA",
     "dataId": "AF_KAT_LW_OOOO_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14767,7 +15240,17 @@
     },
     "type": "FIST",
     "dataId": "AF_FIS_LW_MRLK_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14818,7 +15301,17 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_RAMD_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14828,6 +15321,11 @@
           },
           "dataId": "SK_SPE_LW_RAMD_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "SLEEP",
               "calcType": "percent",
@@ -14868,7 +15366,17 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_LRNZ_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14919,7 +15427,17 @@
     },
     "type": "DAGGER",
     "dataId": "AF_DAG_LW_VSTR_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -14970,7 +15488,17 @@
     },
     "type": "BOW",
     "dataId": "AF_BOW_LW_CLEY_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15020,7 +15548,17 @@
     },
     "type": "GUN",
     "dataId": "AF_GUN_LW_RIRY_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15030,6 +15568,11 @@
           },
           "dataId": "SK_GUN_LW_RIRY_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "BLIND",
               "minValue": 20,
@@ -15072,7 +15615,17 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_HLNA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15122,7 +15675,17 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_MGRT_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15172,7 +15735,17 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_PRAY_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15182,6 +15755,17 @@
           },
           "dataId": "SK_ROD_LW_PRAY_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
+            {
+              "type": "DISABLE",
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
+            },
             {
               "type": "DISABLE",
               "calcType": "percent",
@@ -15222,7 +15806,17 @@
     },
     "type": "MACE",
     "dataId": "AF_MAC_LW_KADI_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15232,6 +15826,11 @@
           },
           "dataId": "SK_MAC_LW_KADI_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "CONFUSION",
               "calcType": "percent",
@@ -15276,7 +15875,17 @@
     },
     "type": "BOW",
     "dataId": "AF_BOW_LW_FINA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15286,6 +15895,11 @@
           },
           "dataId": "SK_BOW_LW_FINA_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "CHARM",
               "calcType": "percent",
@@ -15330,7 +15944,17 @@
     },
     "type": "NINJABLADE",
     "dataId": "AF_NKN_LW_SDLX_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15340,6 +15964,11 @@
           },
           "dataId": "SK_NKN_LW_SDLX_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "PARALYZE",
               "minValue": 80,
@@ -15378,7 +16007,17 @@
     },
     "type": "SHIELD",
     "dataId": "AF_SHI_LW_ENBT_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15439,7 +16078,17 @@
     },
     "type": "ARMOR",
     "dataId": "AF_ARM_LW_STRN_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15491,7 +16140,17 @@
     },
     "type": "ARMOR",
     "dataId": "AF_ARM_LW_ROBB_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15554,7 +16213,17 @@
     },
     "type": "ARMOR",
     "dataId": "AF_ARM_LW_BYLO_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15604,7 +16273,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_ARM_LW_VRID_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15668,7 +16347,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_ARM_LW_NAIA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15714,7 +16403,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_CLT_LW_SEVR_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15760,7 +16459,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_CLT_LW_SRJS_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15810,7 +16519,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_AILN_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15890,7 +16609,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_MDNA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -15965,7 +16694,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_UNII_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16015,7 +16754,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_VADM_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16065,7 +16814,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_PHBE_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16115,7 +16874,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_MICE_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -16148,7 +16917,17 @@
     },
     "type": "HAT",
     "dataId": "AF_HAT_LW_MIIA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -16185,7 +16964,17 @@
     },
     "type": "ACC",
     "dataId": "AF_FTW_LW_AYKA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16284,7 +17073,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_MACR_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16348,7 +17147,17 @@
     },
     "type": "ACC",
     "dataId": "AF_CLK_LW_ELDE_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16413,7 +17222,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_ZIZA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16469,7 +17288,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_FDRC_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16538,7 +17367,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ARM_LW_SCIA_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16588,7 +17427,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ARM_LW_MURM_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16638,7 +17487,17 @@
     },
     "type": "ACC",
     "dataId": "AF_HAT_LW_RYER_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16688,7 +17547,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_RART_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -16721,7 +17590,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_MONT_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16787,7 +17666,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_ZZAN_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -16820,7 +17709,17 @@
     },
     "type": "HELM",
     "dataId": "AF_HLM_LW_GLMS_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16846,7 +17745,12 @@
               "turn": 1
             }
           ],
-          "type": "support"
+          "type": "support",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1
         }
       ]
     ],
@@ -16879,7 +17783,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_CLT_FF14_TNCR_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16925,7 +17839,17 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_FF14_YSTL_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -16935,6 +17859,11 @@
           },
           "dataId": "SK_ROD_FF14_YSTL_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "SILENCE",
               "calcType": "percent",
@@ -16975,7 +17904,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_BLT_LW_YERM_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -17038,13 +17977,28 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_NASR_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
           "names": {},
           "dataId": "SK_SWO_LW_NASR_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "IMMOBILIZE",
               "calcType": "percent",
@@ -17085,7 +18039,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_LW_ETRE_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17118,7 +18082,17 @@
     },
     "type": "CLOTH",
     "dataId": "AF_ARM_FFT_RAMZ_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -17178,7 +18152,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FFT_GFGR_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -17188,6 +18172,11 @@
           },
           "dataId": "SK_SWO_FFT_GFGR_1_1",
           "effects": [
+            {
+              "type": "IMBUE",
+              "calcType": "percent",
+              "rate": 200
+            },
             {
               "type": "CONFUSION",
               "calcType": "percent",
@@ -17228,7 +18217,17 @@
     },
     "type": "ACC",
     "dataId": "AF_ACC_FFT_ORND_1",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
     "skills": [
       [
         {
@@ -17293,7 +18292,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_MONT_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17333,7 +18342,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_ENBT_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17373,7 +18392,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_LW_GLMS_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17413,7 +18442,17 @@
     },
     "type": "GREATSWORD",
     "dataId": "AF_BSW_LW_STRN_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17453,7 +18492,17 @@
     },
     "type": "KATANA",
     "dataId": "AF_KAT_LW_ROBB_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17493,7 +18542,17 @@
     },
     "type": "FIST",
     "dataId": "AF_FIS_LW_ZIZA_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17533,7 +18592,17 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_ELDE_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17573,7 +18642,17 @@
     },
     "type": "SPEAR",
     "dataId": "AF_SPE_LW_AILN_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17613,7 +18692,17 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_MDNA_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17653,7 +18742,17 @@
     },
     "type": "ROD",
     "dataId": "AF_ROD_LW_AYKA_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17693,7 +18792,17 @@
     },
     "type": "MACE",
     "dataId": "AF_MAC_LW_MACR_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17712,7 +18821,17 @@
     "stats": {},
     "type": "SHIELD",
     "dataId": "AF_LW_SHI_001",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17752,7 +18871,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FFT_RAMZ_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],
@@ -17792,7 +18921,17 @@
     },
     "type": "SWORD",
     "dataId": "AF_SWO_FFT_ORND_2",
-    "grows": {},
+    "grows": {
+      "ARTIFACT_50": {
+        "names": {
+          "en": "",
+          "fr": ""
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
     "skills": [
       []
     ],

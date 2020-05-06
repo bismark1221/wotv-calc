@@ -46,37 +46,37 @@
   <table class="tmrTable">
     <tbody>
       <tr>
-        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">TMR</th>
+        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">TMR</th>
       </tr>
       <tr>
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '2' : '1'">Name</td>
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ unit.tmr.name }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '2' : '1'">Name</td>
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '5' : '1'">{{ unit.tmr.name }}</td>
       </tr>
       <tr>
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '2' : '1'">Type</td>
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ getEquipementType(unit.tmr.type) }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '2' : '1'">Type</td>
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '5' : '1'">{{ getEquipementType(unit.tmr.type) }}</td>
       </tr>
       <tr *ngFor="let statType of unit.tmr.statsTypes">
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '2' : '1'">{{ statType }}</td>
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '5' : '1'">{{ unit.tmr.stats[statType] }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '2' : '1'">{{ statType }}</td>
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '5' : '1'">{{ unit.tmr.stats[statType] }}</td>
       </tr>
       <tr *ngIf="unit.tmr.skills[0]">
-        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">TMR Skill</th>
+        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">TMR Skill</th>
       </tr>
       <tr *ngIf="unit.tmr.skills[0]">
         <th>Type</th>
-        <th *ngIf="unit.tmr.skills[0].type == 'active'">name</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'skill'">name</th>
         <th>Effects</th>
-        <th *ngIf="unit.tmr.skills[0].type == 'active'">Range</th>
-        <th *ngIf="unit.tmr.skills[0].type == 'active'">Casts</th>
-        <th *ngIf="unit.tmr.skills[0].type == 'active'">Hits</th>
-        <th *ngIf="unit.tmr.skills[0].type == 'active'">Cost</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'skill'">Range</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'skill'">Casts</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'skill'">Hits</th>
+        <th *ngIf="unit.tmr.skills[0].type == 'skill'">Cost</th>
       </tr>
       <tr *ngIf="unit.tmr.skills[0]">
         <td class="tmrTypeTd">
           <img class="skilImg" src="{{'assets/skill-type/' + unit.tmr.skills[0].type + '.png'}}" />
         </td>
-        <td class="tmrNameTd" *ngIf="unit.tmr.skills[0].type == 'active'">
+        <td class="tmrNameTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
           <span>{{ unit.tmr.skills[0].name }}</span>
           <span *ngIf="unit.tmr.skills[0].based"><img class='atkBasedImg' src="{{'assets/atkBased/' + unit.tmr.skills[0].based + '.png'}}" /></span>
           <div *ngIf="unit.tmr.skills[0].time && unit.tmr.skills[0].time.minValue">
@@ -96,28 +96,28 @@
             {{ effect.formatHtml }}
           </div>
         </td>
-        <td class="rangeTd" *ngIf="unit.tmr.skills[0].type == 'active'">
+        <td class="rangeTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
           <ng-template #tip_table><div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div></ng-template>
           <div [ngbTooltip]="tip_table">
             <div class="divSkillTableHtml" [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
           </div>
         </td>
-        <td class="skillCastTd" *ngIf="unit.tmr.skills[0].type == 'active'">
+        <td class="skillCastTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
           {{ unit.tmr.skills[0].count }}
         </td>
-        <td class="skillHitTd" *ngIf="unit.tmr.skills[0].type == 'active'">
+        <td class="skillHitTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
           <span *ngIf="unit.tmr.skills[0].combo">{{ unit.tmr.skills[0].combo.num }}</span>
         </td>
-        <td class="skillCostTd" *ngIf="unit.tmr.skills[0].type == 'active'">
+        <td class="skillCostTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
           <span *ngIf="unit.tmr.skills[0].cost">{{ unit.tmr.skills[0].cost.value }} {{ unit.tmr.skills[0].cost.type }}</span>
         </td>
       </tr>
       <tr class="emptyLine"></tr>
       <tr>
-        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">Master Ability</th>
+        <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">Master Ability</th>
       </tr>
       <tr>
-        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'active' ? '7' : '2'">
+        <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">
           <div *ngFor="let effect of unit.masterSkill.effects">
             {{ effect.formatHtml }}
           </div>

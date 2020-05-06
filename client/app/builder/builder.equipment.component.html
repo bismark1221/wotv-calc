@@ -1,0 +1,73 @@
+<div style="width: 30%; display: inline-block;">
+  <ng-select [items]="equipments"
+             bindLabel="name"
+             groupBy="rarity"
+             [(ngModel)]="equipment"
+             (ngModelChange)="selectEquipment()">
+  </ng-select>
+
+  <div *ngIf="equipment">
+    <table class="equipmentTable">
+      <tbody>
+        <tr>
+          <th colspan="3">{{ equipment.name }}</th>
+        </tr>
+        <tr>
+          <td colspan="3"><img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_m.png'}}" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="equipment">
+    Star
+    <select [(ngModel)]="equipment.star" (ngModelChange)="changeStar()">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+
+    Level
+    <select [(ngModel)]="equipment.level" (ngModelChange)="changeLevels()">
+      <option *ngFor="let level of tableLevels">{{ level }}</option>
+    </select>
+  </div>
+
+  <button (click)="consoleLog()">SAVE</button>
+</div>
+
+<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="stats">
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="3">Stats</th>
+      </tr>
+      <tr>
+        <th *ngFor="let type of statsType">{{ type }}</th>
+      </tr>
+      <tr>
+        <td *ngFor="let type of statsType">
+          {{ stats[type] }}
+        </td>
+      </tr>
+      <tr>
+        <th colspan="3">Unit Buff</th>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div *ngFor="let buff of equipment.buff.self">{{ buff }}</div>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="3">Party Buff</th>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div *ngFor="let buff of equipment.buff.party">{{ buff }}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

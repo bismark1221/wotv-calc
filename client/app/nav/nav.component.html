@@ -8,9 +8,9 @@
         <a class="nav-link" [routerLink]="['/cards']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.cards' | translate }}</a>
         <a class="nav-link" [routerLink]="['/espers']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.espers' | translate }}</a>
         <a class="nav-link" [routerLink]="['/equipments']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.equipments' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/builder']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=true">
+        <!-- <a class="nav-link" [routerLink]="['/builder']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=true">
           {{ 'nav.builder' | translate }}
-        </a>
+        </a> -->
         <div class="inlineBlock" (mouseover)="showBuilderNav=false">&nbsp;</div>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')" (mouseover)="showBuilderNav=false"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
         <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')" (mouseover)="showBuilderNav=false"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>

@@ -573,11 +573,18 @@ export class SkillService {
       + this.getValue(damage, false));
     }
 
+    if (skill.hit) {
+      html += (skill.damage ? "<br />" : "") + "+" + skill.hit + "% Accuracy"
+    }
+
     return html
   }
 
   formatCounter(unit, skill, counter) {
     return "Chance to counter " + this.counterType[counter.reactDamage] + " damage " + this.getValue(counter)
+  }
+
+  formatAccuracy(unit, skill, hit) {
   }
 
 

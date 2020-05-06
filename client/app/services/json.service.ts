@@ -298,7 +298,8 @@ export class JsonService {
       "cdo": "DOOM",
 
       "mov": "MOVE",
-      "jmp": "JUMP"
+      "jmp": "JUMP",
+      "lv": "MAX_LV"
     },
     visionCard: {
       "hp": "HP",
@@ -1264,9 +1265,14 @@ export class JsonService {
           }
         }
 
-        if (this.equipementLots[rType]) {
+        if (this.equipementLots[equipment.rtype]) {
+          if (equipment.rtype == "AF_LOT_50") {
+            console.log(this.equipementLots[equipment.rtype])
+            console.log(this.equipementLots[equipment.rtype].lot[0])
+            console.log(this.equipementLots[equipment.rtype].lot[0].grow1)
+          }
           for (let i = 1; i <= 3; i++) {
-            let growId = this.equipementLots[rType].lot[0]["grow" + i]
+            let growId = this.equipementLots[equipment.rtype].lot[0]["grow" + i]
             if (growId) {
               this.wotvEquipments[rType].grows[growId] = {
                 names: { en: this.names.en.equipmentGrow[growId], fr: this.names.fr.equipmentGrow[growId] },
@@ -1274,7 +1280,9 @@ export class JsonService {
               }
 
               Object.keys(this.grows[growId].curve[0]).forEach(stat => {
-                this.wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this.grows[growId].curve[0][stat]
+                if (this.stats.unit[stat]) {
+                  this.wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this.grows[growId].curve[0][stat]
+                }
               })
             }
           }

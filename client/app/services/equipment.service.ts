@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-
 import { TranslateService } from '@ngx-translate/core';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Equipment } from '../entities/equipment';
 import { default as EQUIPMENTS } from '../data/equipments.json';
@@ -52,6 +52,8 @@ export class EquipmentService {
     "ACC": "Accessory"
   }
 
+  private savedEquipments = {}
+
   private equipments: Equipment[];
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
   private sre = /^\s+|\s+$/g;
@@ -62,7 +64,10 @@ export class EquipmentService {
   private oFxNcL: any;
   private oFyNcL: any;
 
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    private translateService: TranslateService,
+    private localStorageService: LocalStorageService
+  ) {}
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -164,5 +169,43 @@ export class EquipmentService {
 
   getFormatType(type) {
     return this.formatType[type];
+  }
+
+
+  getEquipmentsForBuilder(translate) {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    let equipments = this.getEquipmentsForListing();
+
+    Object.keys(equipments).forEach(rarity => {
+      this.sortByName(equipments[rarity], translate)
+    });
+
+    let formattedEquipmentsForBuilder = []
+    rarityOrder.forEach(rarity => {
+      equipments[rarity].forEach(equipment => {
+        formattedEquipmentsForBuilder.push(equipment)
+      })
+    })
+
+    return formattedEquipmentsForBuilder;
+  }
+
+
+  getSavedEquipments() {
+    this.savedEquipments = this.localStorageService.get('equipments') ? this.localStorageService.get('equipments') : {};
+    return this.savedEquipments;
+  }
+
+  saveEquipment(equipment) {
+    if (!this.savedEquipments) {
+      this.getSavedEquipments()
+    }
+
+    /*this.savedEquipments[equipment.dataId] = {
+      star: equipment.star,
+      level: equipment.level
+    }
+
+    this.localStorageService.set('equipments', this.savedEquipments);*/
   }
 }
