@@ -76,11 +76,8 @@ export class BuilderEquipmentComponent implements OnInit {
     let lang = this.translateService.currentLang
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
     this.equipment.growIds = Object.keys(this.equipment.grows)
-    this.equipment.countSkills = [];
 
     this.equipment.skills.forEach(equipmentLvl => {
-      this.equipment.countSkills.push(i);
-
       equipmentLvl.forEach(skill => {
         skill.name = skill.names[lang]
         skill.effects.forEach(effect => {
@@ -97,7 +94,6 @@ export class BuilderEquipmentComponent implements OnInit {
 
         this.skillService.formatRange(this.equipment, skill);
       });
-      i++;
     });
 
     Object.keys(this.equipment.grows).forEach(growId => {

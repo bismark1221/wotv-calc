@@ -80,15 +80,18 @@ export class EquipmentComponent implements OnInit {
       this.equipment.acquisition.name = this.equipment.acquisition.type === "Unknown" ? "Unknown" : this.equipment.acquisition.type[lang]
     }
 
-    this.equipment.growIds = Object.keys(this.equipment.grows)
-    Object.keys(this.equipment.grows).forEach(growId => {
-      this.equipment.grows[growId].name = this.equipment.grows[growId].names[lang]
-      this.equipment.grows[growId].stats = {};
-      this.equipment.statsTypes.forEach(statType => {
-        let maxValue = this.equipment.stats[statType].max
-        this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+    this.equipment.growIds = []
+    if (Object.keys(this.equipment.grows).length > 1) {
+      this.equipment.growIds = Object.keys(this.equipment.grows)
+      Object.keys(this.equipment.grows).forEach(growId => {
+        this.equipment.grows[growId].name = this.equipment.grows[growId].names[lang]
+        this.equipment.grows[growId].stats = {};
+        this.equipment.statsTypes.forEach(statType => {
+          let maxValue = this.equipment.stats[statType].max
+          this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+        })
       })
-    })
+    }
   }
 
   getEquipementType(type) {
