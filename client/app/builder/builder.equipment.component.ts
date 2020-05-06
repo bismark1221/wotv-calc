@@ -17,6 +17,7 @@ export class BuilderEquipmentComponent implements OnInit {
   stats
 
   statsType = ["HP", "ATK", "MAG"]
+  tableStats = {}
 
   constructor(
     private equipmentService: EquipmentService,
@@ -55,11 +56,13 @@ export class BuilderEquipmentComponent implements OnInit {
 
 
     this.initiateSavedEquipment()
+    this.updateMaxStat()
 
-    this.updateMaxStat();
-    this.changeLevels()
+    this.changeUpgrade()
+    this.changeGrow()
 
     console.log(this.equipment)
+    console.log(this.tableStats)
   }
 
   private initiateSavedEquipment() {
@@ -101,21 +104,31 @@ export class BuilderEquipmentComponent implements OnInit {
       this.equipment.grows[growId].stats = {};
       this.equipment.statsTypes.forEach(statType => {
         let maxValue = this.equipment.stats[statType].max
-        this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+        let growMax = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+        this.equipment.grows[growId].stats[statType] = []
+        for (let i = this.equipment.stats[statType].min; i <= growMax; i++) {
+          this.equipment.grows[growId].stats[statType].push(i)
+        }
       })
     })
+
+    console.log(this.equipment.grows)
+
+    this.equipment.grow = this.equipment.growIds[0]
   }
 
-  private changeLevels() {
-    /*this.stats = {}
-    let maxLevel = this.levelPerStar[this.equipment.rarity][4]
+  private changeUpgrade() {
+    // change effect
+    // verify & change max stat
 
-    this.statsType.forEach(stat => {
-      let min = this.equipment.stats[stat].min
-      let max = this.equipment.stats[stat].max
+    // Need to do skill upgrade
+  }
 
-      this.stats[stat] = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.equipment.level - 1)))
-    })*/
+  private changeGrow() {
+    this.tableStats = {}
+    this.equipment.statsTypes.forEach(statType => {
+      this.tableStats[statType] = this.equipment.grows[this.equipment.grow].stats[statType]
+    })
   }
 
 

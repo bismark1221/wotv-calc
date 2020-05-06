@@ -20,8 +20,8 @@
   </div>
 
   <div *ngIf="equipment && equipment.skills.length > 1">
-    Star
-    <select [(ngModel)]="equipment.update" (ngModelChange)="changeLevels()">
+    Upgrade
+    <select [(ngModel)]="equipment.upgrade" (ngModelChange)="changeUpgrade()">
       <option>0</option>
       <option>+1</option>
       <option>+2</option>
@@ -33,7 +33,7 @@
 
   <div *ngIf="equipment && equipment.growIds.length > 1">
     Type
-    <select [(ngModel)]="equipment.grow" (ngModelChange)="changeLevels()">
+    <select [(ngModel)]="equipment.grow" (ngModelChange)="changeGrow()">
       <option *ngFor="let growId of equipment.growIds" [ngValue]="growId">{{ equipment.grows[growId].name }}</option>
     </select>
   </div>
@@ -41,7 +41,7 @@
   <button (click)="consoleLog()">SAVE</button>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="stats">
+<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="equipment">
   <table class="statsTable">
     <tbody>
       <tr>
@@ -51,7 +51,16 @@
         <th *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
       </tr>
       <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].min }}</td>
+        <td *ngFor="let statType of equipment.statsTypes">
+          <select>
+            <option *ngFor="let stat of tableStats[statType]">{{ stat }}</option>
+          </select>
+        </td>
+      </tr>
+      <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">
+        <td *ngFor="let statType of equipment.statsTypes">
+          {{ equipment.stats[statType].min }}
+        </td>
       </tr>
     </tbody>
   </table>
