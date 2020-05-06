@@ -168,19 +168,29 @@ export class UnitComponent implements OnInit {
   getSkillsPerJob(job) {
     let skills = [];
     if (job === 0) {
-      console.log(this.unit.skills)
       this.unit.skills.forEach(skill => {
-        if (skill.mainSkill) {
+        if (skill.mainSkill && skill.type == "skill") {
           skills.push(skill)
         }
       })
     } else {
       this.unit.skills.forEach(skill => {
-        if (skill.unlockJob === job && !skill.mainSkill) {
+        if (skill.unlockJob === job && !skill.mainSkill && skill.type == "skill") {
           skills.push(skill)
         }
       })
     }
+
+    return skills;
+  }
+
+  getSkillsPerType(type) {
+    let skills = [];
+    this.unit.skills.forEach(skill => {
+      if (skill.type == type) {
+        skills.push(skill)
+      }
+    })
 
     return skills;
   }

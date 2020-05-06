@@ -367,6 +367,47 @@
   </table>
 </div>
 
+<div class="row" *ngFor="let i of ['support', 'counter']">
+  <table class="skillsTable">
+    <tbody>
+      <tr>
+        <th colspan="20">
+          <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.png'}}" /> {{ i | titlecase }}
+        </th>
+      </tr>
+      <tr>
+        <th class="skillJobTd">Job</th>
+        <th class="skillJobTd">Job lvl</th>
+        <th class="skillStarTd">Star lvl</th>
+        <th class="skillNameTd">name</th>
+        <th>Effects</th>
+        <th *ngIf="i == 'counter'" class="rangeTd">Range</th>
+        <th *ngIf="i == 'counter'" class="skillHitTd">Hits</th>
+      </tr>
+      <tr *ngFor="let skill of getSkillsPerType(i)">
+        <td><img class="subJob" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
+        <td>{{ skill.jobLevel }}</td>
+        <td>{{ skill.unlockStar }}</td>
+        <td>{{ skill.name }}</td>
+        <td class="skillEffectTd">
+          <div>{{ skill.counterHtml }}</div>
+          <div [innerHTML]="skill.damageHtml"></div>
+          <div *ngFor="let effect of skill.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td *ngIf="i == 'counter'">
+          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table">
+            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+          </div>
+        </td>
+        <td *ngIf="i == 'counter'"><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <div class="row" *ngFor="let i of [0, 1, 2, 3]">
   <table class="skillsTable">
     <tbody>
