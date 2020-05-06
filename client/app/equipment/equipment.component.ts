@@ -87,7 +87,7 @@ export class EquipmentComponent implements OnInit {
       this.equipment.statsTypes.forEach(statType => {
         let maxValue = this.equipment.stats[statType].max
         this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
-      })      
+      })
     })
   }
 
