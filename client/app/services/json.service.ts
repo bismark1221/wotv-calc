@@ -770,7 +770,8 @@ export class JsonService {
       sp: panelSkill.sp,
       effects: [],
       dataId: panelSkill.value,
-      type: this.slots[(this.skills[panelSkill.value] && this.skills[panelSkill.value].slot ? this.skills[panelSkill.value].slot : 0)]
+      type: this.slots[(this.skills[panelSkill.value] && this.skills[panelSkill.value].slot ? this.skills[panelSkill.value].slot : 0)],
+      mainSkill: this.skills[panelSkill.value] && this.skills[panelSkill.value].slot == 1
     };
 
     this.updateSkill(unit, skill, panelSkill.value);
@@ -840,7 +841,7 @@ export class JsonService {
       }
     }
 
-    if (dataSkill.cost_type) {
+    if (typeof(dataSkill.cost_type) == "number") {
       skill.cost = {
         type: dataSkill.cost_type == 0 ? "AP" : "TP",
         value: dataSkill.cost_type == 0 ? dataSkill.cost_ap : dataSkill.cost_mp

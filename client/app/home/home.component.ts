@@ -17,6 +17,10 @@ export class HomeComponent {
 
   updated = [
     [
+      {type: "unit", dataId: "UN_LW_P_WHIS"},
+      {type: "unit", dataId: "UN_LW_P_KTON"}
+    ],
+    [
       {type: "unit", dataId: "UN_FFT_P_ORND"},
       {type: "unit", dataId: "UN_FFT_P_RAMZ"},
       {type: "unit", dataId: "UN_FFT_P_GFGR"},
