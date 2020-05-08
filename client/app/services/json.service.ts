@@ -828,7 +828,8 @@ export class JsonService {
       eff_type: null,
       eff_dst: null,
       atk_det: null,
-      elem: null
+      elem: null,
+      cap: null
     };
 
     if (skill.type == "buff") {
@@ -857,6 +858,7 @@ export class JsonService {
     }
 
     skill.count = dataSkill.count
+    skill.maxLevel = dataSkill.cap
 
     if (dataSkill.range_h || dataSkill.range_l || dataSkill.range_m || dataSkill.range_mh || dataSkill.range_s || dataSkill.range_w || dataSkill.line) {
       skill.range = {

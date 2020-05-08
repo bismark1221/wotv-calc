@@ -22,12 +22,12 @@
   <div *ngIf="equipment && equipment.skills.length > 1">
     Upgrade
     <select [(ngModel)]="equipment.upgrade" (ngModelChange)="changeUpgrade()">
-      <option>0</option>
-      <option>+1</option>
-      <option>+2</option>
-      <option>+3</option>
-      <option>+4</option>
-      <option>+5</option>
+      <option value="0">0</option>
+      <option value="1">+1</option>
+      <option value="2">+2</option>
+      <option value="3">+3</option>
+      <option value="4">+4</option>
+      <option value="5">+5</option>
     </select>
   </div>
 
@@ -52,14 +52,88 @@
       </tr>
       <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
         <td *ngFor="let statType of equipment.statsTypes">
-          <select>
+          <select [(ngModel)]="equipment.stats[statType].selected">
             <option *ngFor="let stat of tableStats[statType]">{{ stat }}</option>
-          </select>
+          </select> / {{ tableStats[statType][tableStats[statType].length - 1] }}
         </td>
       </tr>
       <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">
         <td *ngFor="let statType of equipment.statsTypes">
           {{ equipment.stats[statType].min }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <table class="skillsTable" *ngIf="equipment.skill[0]">
+    <tbody>
+      <tr *ngIf="equipment.skill[0].type == 'skill'">
+        <th colspan="7">Skill</th>
+      </tr>
+      <tr *ngIf="equipment.skill[0].type == 'skill'">
+        <th>Level</th>
+        <th>name</th>
+        <th>Effects</th>
+        <th>Range</th>
+        <th>Casts</th>
+        <th>Hits</th>
+        <th>Cost</th>
+      </tr>
+      <tr *ngIf="equipment.skill[0].type == 'skill'">
+        <td>
+          <select [(ngModel)]="equipment.skill[0].level" (ngModelChange)="changeSkillLevel()">
+            <option *ngFor="let level of equipment.skill[0].tableLevel">{{ level }}</option>
+          </select>
+        </td>
+        <td class="skillNameTd">
+          {{ equipment.skill[0].name }}
+          <span *ngIf="equipment.skill[0].based">
+            <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skill[0].based + '.png'}}" />
+          </span>
+          <div *ngIf="equipment.skill[0].time && equipment.skill[0].time.minValue">
+            <ng-template #tip_time>
+              <div>
+                Min time: {{ equipment.skill[0].time.minValue }}<br />
+                Max time: {{ equipment.skill[0].time.maxValue }}
+              </div>
+            </ng-template>
+            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+          </div>
+        </td>
+        <td class="skillEffectTd">
+          <div>{{ equipment.skill[0].counterHtml }}</div>
+          <div>{{ equipment.skill[0].damageHtml }}</div>
+          <div *ngFor="let effect of equipment.skill[0].effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td class="rangeTd">
+          <ng-template #tip_table><div [innerHTML]="equipment.skill[0].skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table">
+            <div class="divSkillTableHtml" [innerHTML]="equipment.skill[0].skillTableHtml"></div>
+          </div>
+        </td>
+        <td class="skillCastTd">
+          {{ equipment.skill[0].count }}
+        </td>
+        <td class="skillHitTd">
+          <span *ngIf="equipment.skill[0].combo">{{ equipment.skill[0].combo.num }}</span>
+        </td>
+        <td class="skillCostTd">
+          <span *ngIf="equipment.skill[0].cost">{{ equipment.skill[0].cost.value }} {{ equipment.skill[0].cost.type }}</span>
+        </td>
+      </tr>
+      <tr *ngIf="equipment.skill[0].type != 'skill'">
+        <th>Effects</th>
+      </tr>
+      <tr *ngIf="equipment.skill[0].type != 'skill'">
+        <td>
+          <div *ngFor="let skill of equipment.skill">
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </div>
         </td>
       </tr>
     </tbody>

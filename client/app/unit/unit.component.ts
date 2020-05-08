@@ -88,7 +88,7 @@ export class UnitComponent implements OnInit {
         if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
           this.unit.totalBuffs[effect.type] += effect.minValue
         } else {
-          this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect, false))
+          this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
         }
       }
     })

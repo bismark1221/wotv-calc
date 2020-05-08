@@ -49,20 +49,24 @@ export class BuilderEquipmentComponent implements OnInit {
   }
 
   selectEquipment() {
-    let lang = this.translateService.currentLang
-    this.equipment.name = this.equipment.names[lang]
-    this.equipment.upgrade = 0;
-    this.equipment.level = 1;
+    if (this.equipment) {
+      let lang = this.translateService.currentLang
+      this.equipment.name = this.equipment.names[lang]
+      this.equipment.upgrade = 0;
+      this.equipment.level = 1;
+      if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == "skill") {
+        this.equipment.skills[0][0].level = 1
+      }
 
+      this.initiateSavedEquipment()
+      this.updateMaxStat()
 
-    this.initiateSavedEquipment()
-    this.updateMaxStat()
+      this.changeUpgrade(true)
+      this.changeGrow()
 
-    this.changeUpgrade()
-    this.changeGrow()
-
-    console.log(this.equipment)
-    console.log(this.tableStats)
+      console.log(this.equipment)
+      console.log(this.tableStats)
+    }
   }
 
   private initiateSavedEquipment() {
@@ -104,7 +108,8 @@ export class BuilderEquipmentComponent implements OnInit {
       this.equipment.grows[growId].stats = {};
       this.equipment.statsTypes.forEach(statType => {
         let maxValue = this.equipment.stats[statType].max
-        let growMax = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+        let growMax = this.equipment.grows[growId].curve[statType] ? Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100)) : maxValue
+
         this.equipment.grows[growId].stats[statType] = []
         for (let i = this.equipment.stats[statType].min; i <= growMax; i++) {
           this.equipment.grows[growId].stats[statType].push(i)
@@ -112,25 +117,54 @@ export class BuilderEquipmentComponent implements OnInit {
       })
     })
 
-    console.log(this.equipment.grows)
-
     this.equipment.grow = this.equipment.growIds[0]
   }
 
-  private changeUpgrade() {
-    // change effect
-    // verify & change max stat
+  private changeUpgrade(init = false) {
+    if (!this.equipment.skill) {
+      this.equipment.skill = this.equipment.skills[0]
+    } else {
+      this.equipment.skill = this.equipment.skills[this.equipment.upgrade]
+    }
 
-    // Need to do skill upgrade
+    if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type == "skill") {
+      this.equipment.skill[0].tableLevel = [];
+      for (let i = 1; i <= this.equipment.skill[0].maxLevel; i++) {
+        this.equipment.skill[0].tableLevel.push(i)
+      }
+    }
   }
 
   private changeGrow() {
     this.tableStats = {}
     this.equipment.statsTypes.forEach(statType => {
       this.tableStats[statType] = this.equipment.grows[this.equipment.grow].stats[statType]
+
+      if (!this.equipment.stats[statType].selected) {
+        this.equipment.stats[statType].selected = this.tableStats[statType][0]
+      } else if (this.equipment.stats[statType].selected > this.tableStats[statType][this.tableStats[statType].length - 1]) {
+        this.equipment.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1]
+      }
     })
   }
 
+  private changeSkillLevel() {
+    this.equipment.skill.forEach(skill => {
+      skill.effects.forEach(effect => {
+        effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
+      });
+
+      if (skill.damage) {
+        skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
+      }
+
+      if (skill.counter) {
+        skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
+      }
+
+      this.skillService.formatRange(this.equipment, skill);
+    });
+  }
 
   consoleLog() {
     this.equipmentService.saveEquipment(this.equipment)

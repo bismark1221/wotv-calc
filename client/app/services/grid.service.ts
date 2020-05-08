@@ -416,7 +416,7 @@ export class GridService {
 
         nodesForGrid[node] = {
           type: "text",
-          value: this.skillService.formatEffect(esper, buff, buff.effects[0], false)
+          value: this.skillService.formatEffect(esper, buff, buff.effects[0])
         }
       } else if (node === 0) {
         nodesForGrid[node] = {
@@ -452,7 +452,7 @@ export class GridService {
         let text = ""
 
         if (unit.board.nodes[node.toString()].type == "buff") {
-          text = this.skillService.formatEffect(unit, skill, skill.effects[0], false)
+          text = this.skillService.formatEffect(unit, skill, skill.effects[0])
         } else {
           text = skill.names[this.translateService.currentLang]
         }
