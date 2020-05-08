@@ -959,8 +959,8 @@ export class JsonService {
     }
 
 
-    if (typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val !== 0
-      && typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 !== 0
+    if (((typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val !== 0)
+      || (typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 !== 0))
       && dataSkill.eff_type !== 10
     ) {
       skill.damage = {
@@ -1269,11 +1269,6 @@ export class JsonService {
         }
 
         if (this.equipementLots[equipment.rtype]) {
-          if (equipment.rtype == "AF_LOT_50") {
-            console.log(this.equipementLots[equipment.rtype])
-            console.log(this.equipementLots[equipment.rtype].lot[0])
-            console.log(this.equipementLots[equipment.rtype].lot[0].grow1)
-          }
           for (let i = 1; i <= 3; i++) {
             let growId = this.equipementLots[equipment.rtype].lot[0]["grow" + i]
             if (growId) {
