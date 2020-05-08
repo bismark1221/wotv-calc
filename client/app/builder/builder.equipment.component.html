@@ -48,9 +48,15 @@
         <th colspan="13">Stats</th>
       </tr>
       <tr>
+        <th *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">Level</th>
         <th *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
       </tr>
       <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+        <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+          <select [(ngModel)]="equipment.level" (ngModelChange)="changeSkillLevel()">
+            <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
+          </select> / {{ equipment.maxLevel }}
+        </td>
         <td *ngFor="let statType of equipment.statsTypes">
           <select [(ngModel)]="equipment.stats[statType].selected">
             <option *ngFor="let stat of tableStats[statType]">{{ stat }}</option>

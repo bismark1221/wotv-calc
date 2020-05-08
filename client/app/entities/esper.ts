@@ -12,7 +12,6 @@ export class Esper {
   name = "New Esper";
 
   skills: Skill[] = [new Skill()];
-  buffs: Buff[] = [new Buff()];
   stats = {
     "HP": {},
     "TP": {},

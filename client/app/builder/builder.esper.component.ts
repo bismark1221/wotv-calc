@@ -16,9 +16,99 @@ export class BuilderEsperComponent implements OnInit {
   tableLevels
   stats
   grid
+  buffs
+  possibleBuffs
 
-  private statsType = ["HP", "TP", "AP", "ATK", "DEF", "SPR", "MAG", "DEX", "AGI", "LUCK", "INITIAL_AP", "ACCURACY", "CRITIC_RATE", "CRITIC_AVOID", "EVADE", "POISON", "BLIND", "SLEEP", "SILENCE", "PARALYZE", "CONFUSION", "PETRIFY", "TOAD", "CHARM", "SLOW", "STOP", "IMMOBILIZE", "DISABLE", "BERSERK", "DOOM", "MOVE", "JUMP", "RANGE"]
-  private statsAtkRes = ["FIRE", "ICE", "EARTH", "WIND", "LIGHTNING", "WATER", "LIGHT", "DARK", "SLASH", "PIERCE", "STRIKE", "MISSILE", "MAGIC"]
+  private statsType = [
+    "HP",
+    "TP",
+    "AP",
+    "ATK",
+    "DEF",
+    "SPR",
+    "MAG",
+    "DEX",
+    "AGI",
+    "LUCK"
+  ]
+
+  private unitBuffsAtkRes = [
+    "FIRE",
+    "ICE",
+    "EARTH",
+    "WIND",
+    "LIGHTNING",
+    "WATER",
+    "LIGHT",
+    "DARK",
+    "SLASH",
+    "PIERCE",
+    "STRIKE",
+    "MISSILE",
+    "MAGIC"
+  ]
+
+  private unitBuffsOrder = [
+    "HP",
+    "TP",
+    "AP",
+    "ATK",
+    "DEF",
+    "SPR",
+    "MAG",
+    "DEX",
+    "AGI",
+    "LUCK",
+    "FIRE_RES",
+    "ICE_RES",
+    "EARTH_RES",
+    "WIND_RES",
+    "LIGHTNING_RES",
+    "WATER_RES",
+    "LIGHT_RES",
+    "DARK_RES",
+    "SLASH_RES",
+    "PIERCE_RES",
+    "STRIKE_RES",
+    "MISSILE_RES",
+    "MAGIC_RES",
+    "FIRE_ATK",
+    "ICE_ATK",
+    "EARTH_ATK",
+    "WIND_ATK",
+    "LIGHTNING_ATK",
+    "WATER_ATK",
+    "LIGHT_ATK",
+    "DARK_ATK",
+    "SLASH_ATK",
+    "PIERCE_ATK",
+    "STRIKE_ATK",
+    "MISSILE_ATK",
+    "MAGIC_ATK",
+    "INITIAL_AP",
+    "ACCURACY",
+    "CRITIC_RATE",
+    "CRITIC_AVOID",
+    "EVADE",
+    "POISON",
+    "BLIND",
+    "SLEEP",
+    "SILENCE",
+    "PARALYZE",
+    "CONFUSION",
+    "PETRIFY",
+    "TOAD",
+    "CHARM",
+    "SLOW",
+    "STOP",
+    "IMMOBILIZE",
+    "DISABLE",
+    "BERSERK",
+    "DOOM",
+    "MOVE",
+    "JUMP",
+    "RANGE"
+  ]
 
   private maxLevelPerStar = {
     1: 50,
@@ -63,13 +153,17 @@ export class BuilderEsperComponent implements OnInit {
     this.esper.level = 1;
     this.esper.maxSPs = 0;
     this.esper.usedSPs = 0;
+    this.possibleBuffs = null;
+
     this.initiateSavedEsper()
 
     this.updateMaxLevel();
     this.changeLevels();
+    this.updateUnitBuffs();
     this.grid = this.gridService.generateEsperGrid(this.esper)
 
     console.log(this.esper)
+    console.log(this.buffs)
   }
 
   private initiateSavedEsper() {
@@ -124,86 +218,135 @@ export class BuilderEsperComponent implements OnInit {
       this.stats[stat] = {}
       let maxLevel = this.maxLevelPerStar[this.esper.star]
       this.stats[stat].base = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.esper.level - 1)))
-      this.stats[stat].baseTotal = this.stats[stat].base
     })
 
-    this.statsAtkRes.forEach(stat => {
-      let min = 0
-      let max = 0
-
-      if (this.esper.stats[stat]) {
-        min = this.esper.stats[stat][(this.esper.star - 1)].min ? this.esper.stats[stat][(this.esper.star - 1)].min : 0
-        max = this.esper.stats[stat][(this.esper.star - 1)].max ? this.esper.stats[stat][(this.esper.star - 1)].max : 0
-      }
-
-      this.stats[stat + "_RES"] = {}
-      let maxLevel = this.maxLevelPerStar[this.esper.star]
-      this.stats[stat + "_RES"].base = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.esper.level - 1)))
-      this.stats[stat + "_RES"].baseTotal = this.stats[stat + "_RES"].base
-
-      this.stats[stat + "_ATK"] = {}
-      this.stats[stat + "_ATK"].base = 0
-      this.stats[stat + "_ATK"].baseTotal = 0
-    })
-
-    Object.keys(this.stats).forEach(stat => {
-      this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal)
-    })
-
-    this.calculateTotalStats()
     this.calculateSPs()
   }
 
-  private calculateTotalStats() {
-    this.statsType.forEach(stat => {
-      this.stats[stat].board = 0;
-    });
+  private updateUnitBuffs() {
+    this.buffs = {}
 
-    this.statsAtkRes.forEach(stat => {
-      this.stats[stat + "_RES"].board = 0;
-      this.stats[stat + "_ATK"].board = 0;
-    });
+    this.unitBuffsAtkRes.forEach(stat => {
+      if (this.esper.stats[stat] && this.esper.stats[stat][(this.esper.star - 1)].min) {
+        this.buffs[stat + "_RES"] = {}
+        this.buffs[stat + "_RES"].base = this.esper.stats[stat][(this.esper.star - 1)].min
+      }
+    })
 
+    this.calculateTotalBuffs()
+    this.formatUnitBuffs()
+    this.calculateSPs()
+  }
+
+  private calculateTotalBuffs() {
     Object.keys(this.esper.board.nodes).forEach(nodeId => {
       let node = this.esper.board.nodes[nodeId]
       if (node.type == "buff" && node.level) {
         node.skill.effects.forEach(effect => {
-          if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "fixe") {
-            this.stats[effect.type].board += effect.minValue
-          } else if (this.statsType.indexOf(effect.type) !== -1 && effect.calcType === "percent") {
-            this.stats[effect.type].board += this.stats[effect.type].baseTotal * effect.minValue / 100
-          } else if (this.statsAtkRes.indexOf(effect.type) !== -1) {
+
+          if (this.unitBuffsAtkRes.indexOf(effect.type) !== -1) {
             if (effect.calcType === "resistance") {
-              this.stats[effect.type + "_RES"].board += effect.minValue
+              this.updateBuff(effect.type + "_RES", effect.minValue, "board")
             } else if (effect.calcType === "fixe") {
-              this.stats[effect.type + "_ATK"].board += effect.minValue
+              this.updateBuff(effect.type + "_ATK", effect.minValue, "board")
             } else {
-              console.log("not manage effect in board")
+              console.log("not manage effect in board AtkRes")
               console.log(node)
             }
+
           } else {
-            console.log("not manage effect in board")
-            console.log(node)
+            if (effect.calcType === "percent" || effect.calcType === "fixe") {
+              this.updateBuff(effect.type, effect.minValue, effect.calcType === "fixe" ? "board" : "percent")
+            } else {
+              console.log("not manage effect in board percent/fixe")
+              console.log(node)
+            }
           }
         })
       }
     })
 
-    this.statsType.forEach(stat => {
-      this.stats[stat].total = this.stats[stat].baseTotal;
-      this.stats[stat].board = Math.floor(this.stats[stat].board)
+    Object.keys(this.buffs).forEach(buff => {
+      this.buffs[buff].total = this.buffs[buff].base + (this.buffs[buff].board ? this.buffs[buff].board : 0)
+    })
+  }
 
-      this.stats[stat].total += this.stats[stat].board
+  private updateBuff(type, value, calc) {
+    if (!this.buffs[type]) {
+      this.buffs[type] = {}
+      this.buffs[type].base = 0;
+    }
+
+    if (!this.buffs[type][calc]) {
+      this.buffs[type][calc] = 0
+    }
+
+    this.buffs[type][calc] += value
+  }
+
+  private formatUnitBuffs() {
+    let i = 0;
+    let findedBuffs = []
+    Object.keys(this.buffs).forEach(buffType => {
+      findedBuffs.push(buffType)
     })
 
-    this.statsAtkRes.forEach(stat => {
-      ["RES", "ATK"].forEach(type => {
-        this.stats[stat + "_" + type].total = this.stats[stat + "_" + type].baseTotal;
-        this.stats[stat + "_" + type].board = Math.floor(this.stats[stat + "_" + type].board)
+    Object.keys(this.esper.board.nodes).forEach(nodeId => {
+      this.esper.board.nodes[nodeId].skill.effects.forEach(effect => {
+        if (findedBuffs.indexOf(effect.type) === -1) {
+          if (this.unitBuffsAtkRes.indexOf(effect.type) !== -1) {
+            if (effect.calcType === "resistance") {
+              if (!this.buffs[effect.type + "_RES"]) {
+                this.buffs[effect.type + "_RES"] = {}
+              }
+              findedBuffs.push(effect.type + "_RES")
+            } else if (effect.calcType === "fixe") {
+              if (!this.buffs[effect.type + "_ATK"]) {
+                this.buffs[effect.type + "_ATK"] = {}
+              }
+              findedBuffs.push(effect.type + "_ATK")
+            }
+          } else {
+            if (!this.buffs[effect.type]) {
+              this.buffs[effect.type] = {}
+            }
 
-        this.stats[stat + "_" + type].total += this.stats[stat + "_" + type].board
+            if (effect.calcType === "percent" && !this.buffs[effect.type].percent) {
+              this.buffs[effect.type].percent = 0;
+            }
+
+            findedBuffs.push(effect.type)
+          }
+        }
       })
     })
+
+    if (!this.possibleBuffs) {
+      this.possibleBuffs = [[]];
+      let addedBuffs = []
+      this.unitBuffsOrder.forEach(buffType => {
+        if (findedBuffs.indexOf(buffType) !== -1) {
+          if (this.possibleBuffs[i].length == 8) {
+            this.possibleBuffs.push([])
+            i++;
+          }
+
+          this.possibleBuffs[i].push(buffType)
+          addedBuffs.push(buffType)
+        }
+      })
+
+      Object.keys(this.buffs).forEach(buffType => {
+        if (addedBuffs.indexOf(buffType) === -1) {
+          if (this.possibleBuffs[i].length == 8) {
+            this.possibleBuffs.push([])
+            i++;
+          }
+
+          this.possibleBuffs[i].push(buffType)
+        }
+      })
+    }
   }
 
   private calculateSPs() {
@@ -226,7 +369,7 @@ export class BuilderEsperComponent implements OnInit {
   rightClickNode(node) {
     if (node !== 0) {
       this.hideNode(node)
-      this.changeLevels()
+      this.updateUnitBuffs()
     }
   }
 
@@ -237,7 +380,7 @@ export class BuilderEsperComponent implements OnInit {
       } else {
         this.hideNode(node)
       }
-      this.changeLevels()
+      this.updateUnitBuffs()
     }
   }
 

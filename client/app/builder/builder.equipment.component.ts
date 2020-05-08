@@ -13,7 +13,6 @@ import { SkillService } from '../services/skill.service';
 export class BuilderEquipmentComponent implements OnInit {
   equipments;
   equipment
-  tableLevels
   stats
 
   statsType = ["HP", "ATK", "MAG"]
@@ -61,11 +60,8 @@ export class BuilderEquipmentComponent implements OnInit {
       this.initiateSavedEquipment()
       this.updateMaxStat()
 
-      this.changeUpgrade(true)
+      this.changeUpgrade()
       this.changeGrow()
-
-      console.log(this.equipment)
-      console.log(this.tableStats)
     }
   }
 
@@ -75,7 +71,22 @@ export class BuilderEquipmentComponent implements OnInit {
 
     if (equipment) {
       this.equipment.upgrade = equipment.upgrade;
-      this.equipment.stats = equipment.stats;
+      this.equipment.grow = equipment.grow;
+      this.equipment.level = equipment.level;
+
+      Object.keys(equipment.stats).forEach(stat => {
+        this.equipment.stats[stat].selected = equipment.stats[stat];
+      })
+
+      Object.keys(equipment.skill).forEach(skillId => {
+        this.equipment.skills.forEach(skill => {
+          skill.forEach(subSkill => {
+            if (subSkill.dataId == skillId) {
+              subSkill.level = equipment.skill[skillId]
+            }
+          })
+        })
+      })
     }
   }
 
@@ -118,14 +129,16 @@ export class BuilderEquipmentComponent implements OnInit {
     })
 
     this.equipment.grow = this.equipment.growIds[0]
+
+    this.equipment.maxLevel = this.equipment.grows[this.equipment.grow].curve.MAX_LV
+    this.equipment.tableLevel = []
+    for (let i = 1; i <= this.equipment.maxLevel; i++) {
+      this.equipment.tableLevel.push(i)
+    }
   }
 
-  private changeUpgrade(init = false) {
-    if (!this.equipment.skill) {
-      this.equipment.skill = this.equipment.skills[0]
-    } else {
-      this.equipment.skill = this.equipment.skills[this.equipment.upgrade]
-    }
+  private changeUpgrade() {
+    this.equipment.skill = this.equipment.skills[this.equipment.upgrade]
 
     if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type == "skill") {
       this.equipment.skill[0].tableLevel = [];
@@ -133,6 +146,15 @@ export class BuilderEquipmentComponent implements OnInit {
         this.equipment.skill[0].tableLevel.push(i)
       }
     }
+
+    if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type !== "skill") {
+      this.equipment.skill.forEach(skill => {
+        skill.level = this.equipment.level
+        skill.maxLevel = this.equipment.maxLevel
+      })
+    }
+
+    this.changeSkillLevel();
   }
 
   private changeGrow() {
@@ -149,6 +171,13 @@ export class BuilderEquipmentComponent implements OnInit {
   }
 
   private changeSkillLevel() {
+    if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type !== "skill") {
+      this.equipment.skill.forEach(skill => {
+        skill.level = this.equipment.level
+        skill.maxLevel = this.equipment.maxLevel
+      })
+    }
+
     this.equipment.skill.forEach(skill => {
       skill.effects.forEach(effect => {
         effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);

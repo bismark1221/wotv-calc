@@ -201,11 +201,22 @@ export class EquipmentService {
       this.getSavedEquipments()
     }
 
-    /*this.savedEquipments[equipment.dataId] = {
-      star: equipment.star,
-      level: equipment.level
+    this.savedEquipments[equipment.dataId] = {
+      upgrade: equipment.upgrade,
+      grow: equipment.grow,
+      level: equipment.level,
+      stats: {},
+      skill: {}
     }
 
-    this.localStorageService.set('equipments', this.savedEquipments);*/
+    Object.keys(equipment.stats).forEach(stat => {
+      this.savedEquipments[equipment.dataId].stats[stat] = equipment.stats[stat].selected
+    })
+
+    equipment.skill.forEach(skill => {
+      this.savedEquipments[equipment.dataId].skill[skill.dataId] = skill.level
+    })
+
+    this.localStorageService.set('equipments', this.savedEquipments);
   }
 }

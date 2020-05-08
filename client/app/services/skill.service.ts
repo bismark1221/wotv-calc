@@ -122,9 +122,9 @@ export class SkillService {
         if (effect.minValue !== effect.maxValue) {
           let maxValue = getPositiveValue ? this.getPositiveValue(effect.maxValue) : effect.maxValue;
           let valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
-          value = " " + valueForLevel + this.getCalc(effect)
+          value = " (" + valueForLevel + this.getCalc(effect) + ")"
         } else {
-          value = " " + minValue + this.getCalc(effect)
+          value = " (" + minValue + this.getCalc(effect) + ")"
         }
       }
     }

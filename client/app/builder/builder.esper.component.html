@@ -42,31 +42,11 @@
         <th colspan="13">Stats</th>
       </tr>
       <tr>
-        <th></th>
         <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">{{ type }}</th>
       </tr>
       <tr>
-        <td>Base</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-          {{ stats[type].baseTotal }}
-        </td>
-      </tr>
-      <tr>
-        <td>Guild Statues</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-          <span *ngIf="stats[type].guild > 0">{{ stats[type].guild }}</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-          <span *ngIf="stats[type].board > 0">{{ stats[type].board }}</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-          <span *ngIf="stats[type].total > 0">{{ stats[type].total }}</span>
+          {{ stats[type].base }} / {{ esper.stats[type][1].max }}
         </td>
       </tr>
     </tbody>
@@ -75,127 +55,15 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="9">Res Elem</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let elem of ['fire','ice','earth','wind','lightning','water','light','dark']">
-          <img class="elementImg" title="{{ elem }} resistance" src="{{'assets/elements/' + elem + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].baseTotal">{{ stats[elem].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].board != 0">{{ stats[elem].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].baseTotal || (stats[elem].total && stats[elem].total != 0)">{{ stats[elem].total }} %</span>
-        </td>
+        <th colspan="9">buffs</th>
       </tr>
     </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
+    <tbody *ngFor="let line of possibleBuffs">
       <tr>
-        <th colspan="9">ATK Elem</th>
+        <th *ngFor="let buffType of line">{{ buffType }}</th>
       </tr>
       <tr>
-        <td></td>
-        <td *ngFor="let elem of ['fire','ice','earth','wind','lightning','water','light','dark']">
-          <img class="elementImg" title="{{ elem }} resistance" src="{{'assets/elements/' + elem + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].baseTotal">{{ stats[elem].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].board != 0">{{ stats[elem].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].baseTotal || (stats[elem].total && stats[elem].total != 0)">{{ stats[elem].total }} %</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="6">Res Damage</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let type of ['slash', 'pierce', 'strike', 'missile', 'magic']">
-          <img class="damageImg" title="{{ type }} resistance" src="{{'assets/damage/neutral_' + type + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].baseTotal">{{ stats[type].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].board != 0">{{ stats[type].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].baseTotal || (stats[type].total && stats[type].total != 0)">{{ stats[type].total }} %</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="6">ATK Damage</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let type of ['slash', 'pierce', 'strike', 'missile', 'magic']">
-          <img class="damageImg" title="{{ type }} resistance" src="{{'assets/damage/neutral_' + type + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].baseTotal">{{ stats[type].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].board != 0">{{ stats[type].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].baseTotal || (stats[type].total && stats[type].total != 0)">{{ stats[type].total }} %</span>
-        </td>
+        <td *ngFor="let buffType of line">{{ buffs[buffType].percent >= 0 ? buffs[buffType].percent + '%' : buffs[buffType].total }}</td>
       </tr>
     </tbody>
   </table>
