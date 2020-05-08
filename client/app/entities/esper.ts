@@ -74,7 +74,6 @@ export class Esper {
     this.rarity = esper.rarity;
     this.names = esper.names;
     this.skills = esper.skills;
-    this.buffs = esper.buffs;
     this.stats = esper.stats;
     this.element = esper.element;
     this.image = esper.image;

@@ -71,11 +71,6 @@ export class EsperComponent implements OnInit {
     })
 
     this.grid = this.gridService.generateEsperGrid(this.esper)
-
-    console.log(this.esper.stats)
-    console.log(this.esper.stats.FIRE)
-    console.log(this.esper.stats.FIRE[0])
-    console.log(this.esper.stats.FIRE[0].min)
   }
 
   clickNode(this, node) {
