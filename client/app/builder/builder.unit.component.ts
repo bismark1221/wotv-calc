@@ -44,8 +44,6 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   selectUnit() {
-    console.log(this.selectedId)
-
     if (this.selectedId) {
       this.unit = this.unitService.selectUnitForBuilder(this.selectedId)
     } else {

@@ -353,12 +353,12 @@ export class UnitService {
     this.updateMaxLevel();
   }
 
-  private changeLB() {
+  changeLB() {
     this.updateMaxLevel();
     this.updateMaxJobLevel();
   }
 
-  updateMaxLevel() {
+  private updateMaxLevel() {
     let levelPerStar = {
       1: 0,
       2: 5,
@@ -564,7 +564,7 @@ export class UnitService {
               this.updateStat(effect.type + "_ATK", value, "support")
             } else {
               console.log("not manage effect in support AtkRes")
-              console.log(node)
+              console.log(supportNode)
             }
 
           } else {
@@ -572,7 +572,7 @@ export class UnitService {
               this.updateStat(effect.type, value, "support", effect.calcType)
             } else {
               console.log("not manage effect in support percent/fixe")
-              console.log(node)
+              console.log(supportNode)
             }
           }
         })
@@ -591,7 +591,7 @@ export class UnitService {
             this.updateStat(effect.type + "_ATK", effect.minValue, "masterSkill")
           } else {
             console.log("not manage effect in masterSkill AtkRes")
-            console.log(node)
+            console.log(this.unit.masterSkill)
           }
 
         } else {
@@ -599,7 +599,7 @@ export class UnitService {
             this.updateStat(effect.type, effect.minValue, "masterSkill", effect.calcType)
           } else {
             console.log("not manage effect in masterSkill percent/fixe")
-            console.log(node)
+            console.log(this.unit.masterSkill)
           }
         }
       })
