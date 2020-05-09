@@ -1,8 +1,9 @@
 <div style="width: 30%; display: inline-block;">
   <ng-select [items]="equipments"
              bindLabel="name"
+             bindValue="id"
              groupBy="rarity"
-             [(ngModel)]="equipment"
+             [(ngModel)]="selectedId"
              (ngModelChange)="selectEquipment()">
   </ng-select>
 
@@ -38,7 +39,7 @@
     </select>
   </div>
 
-  <button (click)="consoleLog()">SAVE</button>
+  <button (click)="save()">SAVE</button>
 </div>
 
 <div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="equipment">
@@ -59,8 +60,8 @@
         </td>
         <td *ngFor="let statType of equipment.statsTypes">
           <select [(ngModel)]="equipment.stats[statType].selected">
-            <option *ngFor="let stat of tableStats[statType]">{{ stat }}</option>
-          </select> / {{ tableStats[statType][tableStats[statType].length - 1] }}
+            <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
+          </select> / {{ equipment.tableStats[statType][equipment.tableStats[statType].length - 1] }}
         </td>
       </tr>
       <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">

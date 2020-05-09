@@ -1,8 +1,9 @@
 <div style="width: 30%; display: inline-block;">
   <ng-select [items]="cards"
              bindLabel="name"
+             bindValue="id"
              groupBy="rarity"
-             [(ngModel)]="card"
+             [(ngModel)]="selectedId"
              (ngModelChange)="selectCard()">
   </ng-select>
 
@@ -31,25 +32,25 @@
 
     Level
     <select [(ngModel)]="card.level" (ngModelChange)="changeLevels()">
-      <option *ngFor="let level of tableLevels">{{ level }}</option>
+      <option *ngFor="let level of card.tableLevels">{{ level }}</option>
     </select>
   </div>
 
-  <button (click)="consoleLog()">SAVE</button>
+  <button (click)="save()">SAVE</button>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="stats">
+<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="card">
   <table class="statsTable">
     <tbody>
       <tr>
         <th colspan="3">Stats</th>
       </tr>
       <tr>
-        <th *ngFor="let type of statsType">{{ type }}</th>
+        <th *ngFor="let type of card.statsType">{{ type }}</th>
       </tr>
       <tr>
-        <td *ngFor="let type of statsType">
-          {{ stats[type] }}
+        <td *ngFor="let type of card.statsType">
+          {{ card.stats[type].total }}
         </td>
       </tr>
       <tr>

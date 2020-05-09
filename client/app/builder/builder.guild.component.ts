@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { GuildService } from '../services/guild.service';
 
@@ -12,7 +11,6 @@ export class BuilderGuildComponent implements OnInit {
   guild
 
   constructor(
-    private translateService: TranslateService,
     private guildService: GuildService
   ) {
   }
@@ -24,8 +22,6 @@ export class BuilderGuildComponent implements OnInit {
   private getGuild() {
     this.guild = this.guildService.getGuild()
   }
-
-
 
   private saveGuild() {
     this.guildService.saveGuild()

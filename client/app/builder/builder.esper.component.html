@@ -1,8 +1,9 @@
 <div style="width: 30%; display: inline-block;">
   <ng-select [items]="espers"
              bindLabel="name"
+             bindValue="id"
              groupBy="rarity"
-             [(ngModel)]="esper"
+             [(ngModel)]="selectedId"
              (ngModelChange)="selectEsper()">
   </ng-select>
 
@@ -27,15 +28,15 @@
     </select>
 
     Level
-    <select [(ngModel)]="esper.level" (ngModelChange)="changeLevels()">
-      <option *ngFor="let level of tableLevels">{{ level }}</option>
+    <select [(ngModel)]="esper.level" (ngModelChange)="changeLevel()">
+      <option *ngFor="let level of esper.tableLevels">{{ level }}</option>
     </select>
   </div>
 
-  <button (click)="consoleLog()">SAVE</button>
+  <button (click)="save()">SAVE</button>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="stats">
+<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="esper">
   <table class="statsTable">
     <tbody>
       <tr>
@@ -46,7 +47,7 @@
       </tr>
       <tr>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-          {{ stats[type].base }} / {{ esper.stats[type][1].max }}
+          {{ esper.stats[type].base }} / {{ esper.stats[type][1].max }}
         </td>
       </tr>
     </tbody>
@@ -58,42 +59,42 @@
         <th colspan="9">buffs</th>
       </tr>
     </tbody>
-    <tbody *ngFor="let line of possibleBuffs">
+    <tbody *ngFor="let line of esper.possibleBuffs">
       <tr>
         <th *ngFor="let buffType of line">{{ buffType }}</th>
       </tr>
       <tr>
-        <td *ngFor="let buffType of line">{{ buffs[buffType].percent >= 0 ? buffs[buffType].percent + '%' : buffs[buffType].total }}</td>
+        <td *ngFor="let buffType of line">{{ esper.buffs[buffType].percent >= 0 ? esper.buffs[buffType].percent + '%' : esper.buffs[buffType].total }}</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div class="row" *ngIf="grid">
+<div class="row" *ngIf="esper && esper.grid">
   <div class="countSPs">
     SPs: {{ esper.usedSPs }} / {{ esper.maxSPs }}
   </div>
   <div class="hexGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
-      <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
-        <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+      <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+        <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
 
-        <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+        <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type == 'center'">
           <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
         </div>
 
-        <div class="hex" *ngIf="grid.nodesForGrid[node].type == 'text'"
+        <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type == 'text'"
              [ngClass]="{
                'activated': esper.board.nodes[node].activated,
                'buff': esper.board.nodes[node].type == 'buff',
                'notActivable': !canActivateNode(node)
         }" >
-          <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+          <span class="text">{{ esper.grid.nodesForGrid[node].value }}</span>
           <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
         </div>
       </li>
     </ul>
 
-    <div [innerHTML]="grid.lines"></div>
+    <div [innerHTML]="esper.grid.lines"></div>
   </div>
 </div>

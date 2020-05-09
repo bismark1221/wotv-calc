@@ -1,8 +1,9 @@
 <div style="width: 30%; display: inline-block;">
   <ng-select [items]="units"
              bindLabel="name"
+             bindValue="id"
              groupBy="rarity"
-             [(ngModel)]="unit"
+             [(ngModel)]="selectedId"
              (ngModelChange)="selectUnit()">
   </ng-select>
 
@@ -41,8 +42,8 @@
     </select>
 
     Level
-    <select [(ngModel)]="unit.level" (ngModelChange)="changeLevels()">
-      <option *ngFor="let level of tableLevels">{{ level }}</option>
+    <select [(ngModel)]="unit.level" (ngModelChange)="changeLevel()">
+      <option *ngFor="let level of unit.tableLevels">{{ level }}</option>
     </select>
   </div>
 
@@ -53,8 +54,8 @@
       </tr>
       <tr>
         <td *ngFor="let i of [0, 1, 2]">
-          <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevels()">
-            <option *ngFor="let level of tableJobLevels">{{ level }}</option>
+          <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevel()">
+            <option *ngFor="let level of unit.tableJobLevels">{{ level }}</option>
           </select>
         </td>
       </tr>
@@ -68,7 +69,7 @@
       </tr>
       <tr>
         <td *ngFor="let i of [0, 1]">
-          <select [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="changeLevels()">
+          <select [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="changeLevel()">
             <option value="0"></option>
             <option *ngFor="let node of getAvailableSupportNodes(i)" [ngValue]="node.nodeId">
               {{ node.name }}
@@ -86,7 +87,7 @@
       </tr>
       <tr>
         <td>
-          <input type="checkbox" [(ngModel)]="unit.masterSkill.activated" (ngModelChange)="changeLevels()" />
+          <input type="checkbox" [(ngModel)]="unit.masterSkill.activated" (ngModelChange)="changeLevel()" />
           {{ unit.masterSkill.name }}
         </td>
       </tr>
@@ -103,7 +104,7 @@
       </tr>
       <tr>
         <td *ngFor="let statue of guildService.getStatues()">
-          <select [(ngModel)]="guild[statue]" (ngModelChange)="calculateTotalStats()">
+          <select [(ngModel)]="guild[statue]" (ngModelChange)="changeLevel()">
             <option *ngFor="let level of [0, 1, 2, 3, 4, 5]">{{ level }}</option>
           </select>
         </td>
@@ -111,10 +112,10 @@
     </table>
   </div>
 
-  <button (click)="consoleLog()">SAVE</button>
+  <button (click)="save()">SAVE</button>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="stats">
+<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="unit">
   <table class="statsTable">
     <tbody>
       <tr>
@@ -127,37 +128,37 @@
       <tr>
         <td>Base</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
-          {{ stats[type].baseTotal }}
+          {{ unit.stats[type].baseTotal }}
         </td>
       </tr>
       <tr>
         <td>Guild Statues</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
-          <span *ngIf="stats[type].guild > 0">{{ stats[type].guild }}</span>
+          <span>{{ unit.stats[type].guild }}</span>
         </td>
       </tr>
       <tr>
         <td>Board</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
-          <span *ngIf="stats[type].board > 0">{{ stats[type].board }}</span>
+          <span>{{ unit.stats[type].board }}</span>
         </td>
       </tr>
       <tr>
         <td>Support</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
-          <span *ngIf="stats[type].support > 0">{{ stats[type].support }}</span>
+          <span>{{ unit.stats[type].support }}</span>
         </td>
       </tr>
       <tr>
         <td>Master Skill</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
-          <span *ngIf="stats[type].masterSkill > 0">{{ stats[type].masterSkill }}</span>
+          <span>{{ unit.stats[type].masterSkill }}</span>
         </td>
       </tr>
       <tr>
         <td>Total</td>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
-          <span *ngIf="stats[type].total > 0">{{ stats[type].total }}</span>
+          <span>{{ unit.stats[type].total }}</span>
         </td>
       </tr>
     </tbody>
@@ -166,240 +167,32 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="9">Res Elem</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let elem of ['fire','ice','earth','wind','lightning','water','light','dark']">
-          <img class="elementImg" title="{{ elem }} resistance" src="{{'assets/elements/' + elem + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].baseTotal">{{ stats[elem].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].board != 0">{{ stats[elem].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Support</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].support != 0">{{ stats[elem].support }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Master Skill</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].masterSkill != 0">{{ stats[elem].masterSkill }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_RES','ICE_RES','EARTH_RES','WIND_RES','LIGHTNING_RES','WATER_RES','LIGHT_RES','DARK_RES']">
-          <span *ngIf="stats[elem].baseTotal || (stats[elem].total && stats[elem].total != 0)">{{ stats[elem].total }} %</span>
-        </td>
+        <th colspan="9">Buffs</th>
       </tr>
     </tbody>
+    <tbody *ngFor="let line of unit.availableStats">
+      <tr>
+        <th></th>
+        <th *ngFor="let statType of line">{{ statType }}</th>
+      </tr>
+      <tr *ngFor="let comeFrom of ['base', 'board', 'support', 'masterSkill', 'total']">
+        <td>{{ comeFrom }}</td>
+        <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom] : '' }}</td>
+      </tr>
   </table>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="9">ATK Elem</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let elem of ['fire','ice','earth','wind','lightning','water','light','dark']">
-          <img class="elementImg" title="{{ elem }} resistance" src="{{'assets/elements/' + elem + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].baseTotal">{{ stats[elem].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].board != 0">{{ stats[elem].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Support</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].support != 0">{{ stats[elem].support }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Master Skill</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].masterSkill != 0">{{ stats[elem].masterSkill }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let elem of ['FIRE_ATK','ICE_ATK','EARTH_ATK','WIND_ATK','LIGHTNING_ATK','WATER_ATK','LIGHT_ATK','DARK_ATK']">
-          <span *ngIf="stats[elem].baseTotal || (stats[elem].total && stats[elem].total != 0)">{{ stats[elem].total }} %</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="6">Res Damage</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let type of ['slash', 'pierce', 'strike', 'missile', 'magic']">
-          <img class="damageImg" title="{{ type }} resistance" src="{{'assets/damage/neutral_' + type + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].baseTotal">{{ stats[type].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].board != 0">{{ stats[type].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Support</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].support != 0">{{ stats[type].support }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Master Skill</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].masterSkill != 0">{{ stats[type].masterSkill }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES']">
-          <span *ngIf="stats[type].baseTotal || (stats[type].total && stats[type].total != 0)">{{ stats[type].total }} %</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="6">ATK Damage</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td *ngFor="let type of ['slash', 'pierce', 'strike', 'missile', 'magic']">
-          <img class="damageImg" title="{{ type }} resistance" src="{{'assets/damage/neutral_' + type + '.png'}}" />
-        </td>
-      </tr>
-      <tr>
-        <td>Base</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].baseTotal">{{ stats[type].baseTotal }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Board</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].board != 0">{{ stats[type].board }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Support</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].support != 0">{{ stats[type].support }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Master Skill</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].masterSkill != 0">{{ stats[type].masterSkill }} %</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="heightResTd" *ngFor="let type of ['SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK']">
-          <span *ngIf="stats[type].baseTotal || (stats[type].total && stats[type].total != 0)">{{ stats[type].total }} %</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-<!--
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="15">Res Status Ailment</th>
-      </tr>
-      <tr>
-        <td><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></td>
-      </tr>
-      <tr>
-        <td class="heightResTd"><span *ngIf="unit.stats.POISON.min">{{ unit.stats.POISON.min }} %</span></td>
-        <td><span *ngIf="unit.stats.BLIND.min">{{ unit.stats.BLIND.min }} %</span></td>
-        <td><span *ngIf="unit.stats.SLEEP.min">{{ unit.stats.SLEEP.min }} %</span></td>
-        <td><span *ngIf="unit.stats.SILENCE.min">{{ unit.stats.SILENCE.min }} %</span></td>
-        <td><span *ngIf="unit.stats.PARALYZE.min">{{ unit.stats.PARALYZE.min }} %</span></td>
-        <td><span *ngIf="unit.stats.CONFUSION.min">{{ unit.stats.CONFUSION.min }} %</span></td>
-        <td><span *ngIf="unit.stats.PETRIFY.min">{{ unit.stats.PETRIFY.min }} %</span></td>
-        <td><span *ngIf="unit.stats.TOAD.min">{{ unit.stats.TOAD.min }} %</span></td>
-      </tr>
-      <tr>
-        <td><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></td>
-        <td><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td class="heightResTd"><span *ngIf="unit.stats.CHARM.min">{{ unit.stats.CHARM.min }} %</span></td>
-        <td><span *ngIf="unit.stats.SLOW.min">{{ unit.stats.SLOW.min }} %</span></td>
-        <td><span *ngIf="unit.stats.STOP.min">{{ unit.stats.STOP.min }} %</span></td>
-        <td><span *ngIf="unit.stats.IMMOBILIZE.min">{{ unit.stats.IMMOBILIZE.min }} %</span></td>
-        <td><span *ngIf="unit.stats.DISABLE.min">{{ unit.stats.DISABLE.min }} %</span></td>
-        <td><span *ngIf="unit.stats.BERSERK.min">{{ unit.stats.BERSERK.min }} %</span></td>
-        <td><span *ngIf="unit.stats.DOOM.min">{{ unit.stats.DOOM.min }} %</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table> -->
 </div>
 
-<div class="row" *ngIf="grid">
+<div class="row" *ngIf="unit">
   <div class="hexGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
-      <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
-        <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+      <li *ngFor="let node of unit.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+        <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
 
-        <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+        <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type == 'center'">
           <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
         </div>
 
-        <div class="hex" *ngIf="grid.nodesForGrid[node].type == 'text'"
+        <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type == 'text'"
              [ngClass]="{
                'activated': unit.board.nodes[node].activated,
                'buff': unit.board.nodes[node].type == 'buff',
@@ -408,14 +201,14 @@
                'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
                'notActivable': !canActivateNode(node)
         }" >
-          <i class="fa fa-plus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
-          <span class="text">{{ grid.nodesForGrid[node].value }}</span>
-          <span class="skillLevel" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level }}</span>
-          <i class="fa fa-minus" *ngIf="grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
+          <i class="fa fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
+          <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
+          <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level }}</span>
+          <i class="fa fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
         </div>
       </li>
     </ul>
 
-    <div [innerHTML]="grid.lines"></div>
+    <div [innerHTML]="unit.grid.lines"></div>
   </div>
 </div>
