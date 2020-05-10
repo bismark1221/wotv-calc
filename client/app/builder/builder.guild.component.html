@@ -9,10 +9,11 @@
       </td>
     </tr>
     <tr>
-      <td *ngFor="let statue of guildService.getStatues()">
+      <td *ngFor="let statue of guildService.getStatues(); let j = index">
         <select [(ngModel)]="guild[statue]" (ngModelChange)="saveGuild()">
           <option *ngFor="let level of [0, 1, 2, 3, 4, 5]">{{ level }}</option>
         </select>
+        % {{ statsType[j] }}
       </td>
     </tr>
   </table>

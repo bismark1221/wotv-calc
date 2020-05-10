@@ -257,6 +257,16 @@ export class UnitService {
       activatedSupport: [
         unit.activatedSupport[0],
         unit.activatedSupport[1]
+      ],
+      esper: {
+        dataId: unit.esper.dataId,
+        resonance: unit.esper.resonance
+      },
+      card: unit.card.dataId,
+      equipments: [
+        unit.equipments[0].dataId,
+        unit.equipments[1].dataId,
+        unit.equipments[2].dataId,
       ]
     }
 
@@ -345,6 +355,10 @@ export class UnitService {
         unit.activatedSupport[0],
         unit.activatedSupport[1]
       ]
+
+      this.unit.savedEsper = unit.esper
+      this.unit.savedCard = unit.card
+      this.unit.savedEquipments = unit.equipments
     }
   }
 

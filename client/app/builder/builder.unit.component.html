@@ -3,6 +3,7 @@
              bindLabel="name"
              bindValue="id"
              groupBy="rarity"
+             placeholder="Units"
              [(ngModel)]="selectedUnitId"
              (ngModelChange)="selectUnit()">
   </ng-select>
@@ -88,13 +89,13 @@
       <tr>
         <td>
           <input type="checkbox" [(ngModel)]="unit.masterSkill.activated" (ngModelChange)="changeLevel()" />
-          {{ unit.masterSkill.name }}
+          activated
         </td>
       </tr>
     </table>
   </div>
 
-  <div *ngIf="guild">
+  <div *ngIf="unit">
     <table>
       <tr>
         <td colspan="4">Guild Statues</td>
@@ -103,21 +104,20 @@
         <td *ngFor="let statue of guildService.getStatues()">{{ statue }}</td>
       </tr>
       <tr>
-        <td *ngFor="let statue of guildService.getStatues()">
-          <select [(ngModel)]="guild[statue]" (ngModelChange)="changeLevel()">
-            <option *ngFor="let level of [0, 1, 2, 3, 4, 5]">{{ level }}</option>
-          </select>
+        <td *ngFor="let statue of guildService.getStatues(); let j = index">
+          {{ guild[statue] }}% {{ guildStatsType[j] }}
         </td>
       </tr>
     </table>
   </div>
 
-  <div>
+  <div *ngIf="unit">
     Esper :<br />
     <ng-select [items]="espers"
                bindLabel="name"
                bindValue="id"
                groupBy="rarity"
+               placeholder="Espers"
                [(ngModel)]="selectedEsperId"
                (ngModelChange)="selectEsper()">
     </ng-select>
@@ -134,6 +134,7 @@
                bindLabel="name"
                bindValue="id"
                groupBy="rarity"
+               placeholder="Cards"
                [(ngModel)]="selectedCardId"
                (ngModelChange)="selectCard()">
     </ng-select>
@@ -143,6 +144,7 @@
                bindLabel="name"
                bindValue="id"
                groupBy="rarity"
+               placeholder="Equipment 1"
                [(ngModel)]="selectedEquipmentsIds[0]"
                (ngModelChange)="selectEquipment(0)">
     </ng-select>
@@ -152,6 +154,7 @@
                  bindLabel="name"
                  bindValue="id"
                  groupBy="rarity"
+                 placeholder="Equipment 2"
                  [(ngModel)]="selectedEquipmentsIds[1]"
                  (ngModelChange)="selectEquipment(1)">
       </ng-select>
@@ -162,6 +165,7 @@
                  bindLabel="name"
                  bindValue="id"
                  groupBy="rarity"
+                 placeholder="Equipment 3"
                  [(ngModel)]="selectedEquipmentsIds[2]"
                  (ngModelChange)="selectEquipment(2)">
       </ng-select>

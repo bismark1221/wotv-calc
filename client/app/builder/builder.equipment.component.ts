@@ -38,9 +38,6 @@ export class BuilderEquipmentComponent implements OnInit {
     } else {
       this.equipment = null;
     }
-
-
-    console.log(this.equipment)
   }
 
   changeUpgrade() {

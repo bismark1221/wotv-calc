@@ -21,6 +21,7 @@ export class BuilderUnitComponent implements OnInit {
   selectedUnitId = null
 
   guild
+  guildStatsType
 
   espers
   esper = null
@@ -30,7 +31,7 @@ export class BuilderUnitComponent implements OnInit {
   card = null
   selectedCardId = null
 
-  equipements
+  equipments
   selectedEquipments = [null, null, null]
   selectedEquipmentsIds = [null, null, null]
 
@@ -58,6 +59,7 @@ export class BuilderUnitComponent implements OnInit {
 
   private getGuild() {
     this.guild = this.guildService.getGuild()
+    this.guildStatsType = Object.keys(this.guildService.getStats())
   }
 
   private getUnits() {
@@ -123,29 +125,42 @@ export class BuilderUnitComponent implements OnInit {
     if (this.selectedUnitId) {
       this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId)
 
-      this.addEsperToUnit()
-      this.addCardToUnit()
+      if (this.unit.savedEsper) {
+        this.selectedEsperId = this.unit.savedEsper.dataId
+        this.selectEsper(this.unit.savedEsper.resonance)
+      } else {
+        this.selectedEsperId = null
+      }
+
+      if (this.unit.savedCard) {
+        this.selectedCardId = this.unit.savedCard
+        this.selectCard()
+      } else {
+        this.selectedCardId = null
+      }
+
       for (let i = 0; i <= 2; i++) {
-        this.addEquipmentToUnit(i)
+        if (this.unit.savedEquipments && this.unit.savedEquipments[i]) {
+          this.selectedEquipmentsIds[i] = this.unit.savedEquipments[i]
+          this.selectEquipment(i)
+        } else {
+          this.selectedEquipmentsIds[i] = null
+        }
       }
     } else {
       this.unit = null
     }
-
-    console.log(this.unit)
   }
 
-  selectEsper() {
+  selectEsper(resonance = 1) {
     if (this.selectedEsperId) {
       this.esper = this.esperService.selectEsperForBuilder(this.selectedEsperId)
-      this.esper.resonance = 1
+      this.esper.resonance = resonance
     } else {
       this.esper = null
     }
 
     this.addEsperToUnit()
-
-    console.log(this.esper)
   }
 
   selectCard() {
@@ -156,22 +171,21 @@ export class BuilderUnitComponent implements OnInit {
     }
 
     this.addCardToUnit()
-
-    console.log(this.card)
   }
 
-  selectEquipment(pos) {
+  selectEquipment(pos, noParent = false) {
     if (this.selectedEquipmentsIds[pos]) {
       this.selectedEquipments[pos] = this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentsIds[pos])
     } else {
       for (let i = pos; i <= 2; i++) {
         this.selectedEquipments[i] = null
+        if (!noParent) {
+          this.selectEquipment(i, true)
+        }
       }
     }
 
     this.addEquipmentToUnit(pos)
-
-    console.log(this.selectedEquipments[pos])
   }
 
   changeStar() {

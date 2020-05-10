@@ -37,8 +37,6 @@ export class BuilderEsperComponent implements OnInit {
     } else {
       this.esper = null
     }
-
-    console.log(this.esper)
   }
 
   changeStar() {
