@@ -34,10 +34,12 @@
       ],
       "dataId": "SK_VC_LW_GLEM_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -51,10 +53,12 @@
       ],
       "dataId": "SK_VC_LW_GLEM_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -68,16 +72,18 @@
       ],
       "dataId": "SK_VC_LW_GLEM_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "EARTH",
+          "type": "EARTH_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -85,16 +91,18 @@
       ],
       "dataId": "SK_VC_LW_GLEM_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "EARTH",
+          "type": "EARTH_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -102,16 +110,18 @@
       ],
       "dataId": "SK_VC_LW_GLEM_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "EARTH",
+          "type": "EARTH_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -119,10 +129,12 @@
       ],
       "dataId": "SK_VC_LW_GLEM_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_IFRT": {
@@ -160,10 +172,12 @@
       ],
       "dataId": "SK_VC_LW_IFRT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -177,10 +191,12 @@
       ],
       "dataId": "SK_VC_LW_IFRT_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -194,16 +210,18 @@
       ],
       "dataId": "SK_VC_LW_IFRT_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE",
+          "type": "FIRE_ATK",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "fixe"
@@ -211,16 +229,18 @@
       ],
       "dataId": "SK_VC_LW_IFRT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE",
+          "type": "FIRE_ATK",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "fixe"
@@ -228,16 +248,18 @@
       ],
       "dataId": "SK_VC_LW_IFRT_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE",
+          "type": "FIRE_ATK",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "fixe"
@@ -245,10 +267,12 @@
       ],
       "dataId": "SK_VC_LW_IFRT_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_SIRE": {
@@ -278,7 +302,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER",
+          "type": "WATER_ATK",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -286,16 +310,18 @@
       ],
       "dataId": "SK_VC_LW_SIRE_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER",
+          "type": "WATER_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -303,16 +329,18 @@
       ],
       "dataId": "SK_VC_LW_SIRE_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER",
+          "type": "WATER_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -320,16 +348,18 @@
       ],
       "dataId": "SK_VC_LW_SIRE_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER",
+          "type": "WATER_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -337,16 +367,18 @@
       ],
       "dataId": "SK_VC_LW_SIRE_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER",
+          "type": "WATER_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -354,16 +386,18 @@
       ],
       "dataId": "SK_VC_LW_SIRE_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER",
+          "type": "WATER_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -371,10 +405,12 @@
       ],
       "dataId": "SK_VC_LW_SIRE_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_SOKYU": {
@@ -412,10 +448,12 @@
       ],
       "dataId": "SK_VC_LW_SOKYU_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -429,10 +467,12 @@
       ],
       "dataId": "SK_VC_LW_SOKYU_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -446,16 +486,18 @@
       ],
       "dataId": "SK_VC_LW_SOKYU_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -463,16 +505,18 @@
       ],
       "dataId": "SK_VC_LW_SOKYU_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -480,16 +524,18 @@
       ],
       "dataId": "SK_VC_LW_SOKYU_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -497,10 +543,12 @@
       ],
       "dataId": "SK_VC_LW_SOKYU_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_TRAINING": {
@@ -538,10 +586,12 @@
       ],
       "dataId": "SK_VC_LW_TRAINING_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -555,10 +605,12 @@
       ],
       "dataId": "SK_VC_LW_TRAINING_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -572,10 +624,12 @@
       ],
       "dataId": "SK_VC_LW_TRAINING_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -589,10 +643,12 @@
       ],
       "dataId": "SK_VC_LW_TRAINING_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -606,10 +662,12 @@
       ],
       "dataId": "SK_VC_LW_TRAINING_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
@@ -623,10 +681,12 @@
       ],
       "dataId": "SK_VC_LW_TRAINING_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_MACR": {
@@ -656,7 +716,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MAGIC",
+          "type": "MAGIC_ATK",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -664,16 +724,18 @@
       ],
       "dataId": "SK_VC_LW_MACR_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "MAGIC",
+          "type": "MAGIC_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -681,16 +743,18 @@
       ],
       "dataId": "SK_VC_LW_MACR_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "MAGIC",
+          "type": "MAGIC_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -698,16 +762,18 @@
       ],
       "dataId": "SK_VC_LW_MACR_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -715,16 +781,18 @@
       ],
       "dataId": "SK_VC_LW_MACR_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -732,16 +800,18 @@
       ],
       "dataId": "SK_VC_LW_MACR_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -749,10 +819,12 @@
       ],
       "dataId": "SK_VC_LW_MACR_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_MURG": {
@@ -782,7 +854,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -790,16 +862,18 @@
       ],
       "dataId": "SK_VC_LW_MURG_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -807,16 +881,18 @@
       ],
       "dataId": "SK_VC_LW_MURG_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -824,10 +900,12 @@
       ],
       "dataId": "SK_VC_LW_MURG_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -841,10 +919,12 @@
       ],
       "dataId": "SK_VC_LW_MURG_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -858,10 +938,12 @@
       ],
       "dataId": "SK_VC_LW_MURG_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
@@ -875,10 +957,12 @@
       ],
       "dataId": "SK_VC_LW_MURG_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_GRSR": {
@@ -908,7 +992,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_ATK",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -916,16 +1000,18 @@
       ],
       "dataId": "SK_VC_LW_GRSR_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -933,16 +1019,18 @@
       ],
       "dataId": "SK_VC_LW_GRSR_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -950,10 +1038,12 @@
       ],
       "dataId": "SK_VC_LW_GRSR_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -967,10 +1057,12 @@
       ],
       "dataId": "SK_VC_LW_GRSR_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -984,10 +1076,12 @@
       ],
       "dataId": "SK_VC_LW_GRSR_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
@@ -1001,10 +1095,12 @@
       ],
       "dataId": "SK_VC_LW_GRSR_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_FF14_MV1": {
@@ -1034,7 +1130,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHT",
+          "type": "LIGHT_ATK",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -1042,16 +1138,18 @@
       ],
       "dataId": "SK_VC_FF14_MV1_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHT",
+          "type": "LIGHT_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1059,16 +1157,18 @@
       ],
       "dataId": "SK_VC_FF14_MV1_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHT",
+          "type": "LIGHT_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1076,16 +1176,18 @@
       ],
       "dataId": "SK_VC_FF14_MV1_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1093,16 +1195,18 @@
       ],
       "dataId": "SK_VC_FF14_MV1_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -1110,16 +1214,18 @@
       ],
       "dataId": "SK_VC_FF14_MV1_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -1127,10 +1233,12 @@
       ],
       "dataId": "SK_VC_FF14_MV1_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_HOLYNIGHT": {
@@ -1160,7 +1268,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_ATK",
           "minValue": 15,
           "maxValue": 25,
           "calcType": "fixe"
@@ -1168,16 +1276,18 @@
       ],
       "dataId": "SK_VC_LW_HOLYNIGHT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1185,16 +1295,18 @@
       ],
       "dataId": "SK_VC_LW_HOLYNIGHT_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1202,16 +1314,18 @@
       ],
       "dataId": "SK_VC_LW_HOLYNIGHT_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING",
+          "type": "LIGHTNING_ATK",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1219,16 +1333,18 @@
       ],
       "dataId": "SK_VC_LW_HOLYNIGHT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING",
+          "type": "LIGHTNING_ATK",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "fixe"
@@ -1236,16 +1352,18 @@
       ],
       "dataId": "SK_VC_LW_HOLYNIGHT_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING",
+          "type": "LIGHTNING_ATK",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "fixe"
@@ -1253,10 +1371,12 @@
       ],
       "dataId": "SK_VC_LW_HOLYNIGHT_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_IGNT": {
@@ -1286,7 +1406,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -1294,16 +1414,18 @@
       ],
       "dataId": "SK_VC_LW_IGNT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1311,16 +1433,18 @@
       ],
       "dataId": "SK_VC_LW_IGNT_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "fixe"
@@ -1334,16 +1458,18 @@
       ],
       "dataId": "SK_VC_LW_IGNT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1351,10 +1477,12 @@
       ],
       "dataId": "SK_VC_LW_IGNT_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_BHMT": {
@@ -1384,7 +1512,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -1392,16 +1520,18 @@
       ],
       "dataId": "SK_VC_LW_BHMT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1409,10 +1539,12 @@
       ],
       "dataId": "SK_VC_LW_BHMT_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -1434,10 +1566,12 @@
       ],
       "dataId": "SK_VC_LW_BHMT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -1452,10 +1586,12 @@
       ],
       "dataId": "SK_VC_LW_BHMT_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_MABR": {
@@ -1485,7 +1621,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE",
+          "type": "STRIKE_ATK",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
@@ -1493,16 +1629,18 @@
       ],
       "dataId": "SK_VC_LW_MABR_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE",
+          "type": "STRIKE_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1510,10 +1648,12 @@
       ],
       "dataId": "SK_VC_LW_MABR_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -1527,10 +1667,12 @@
       ],
       "dataId": "SK_VC_LW_MABR_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -1544,10 +1686,12 @@
       ],
       "dataId": "SK_VC_LW_MABR_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_SHIV": {
@@ -1585,10 +1729,12 @@
       ],
       "dataId": "SK_VC_LW_SHIV_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -1602,10 +1748,12 @@
       ],
       "dataId": "SK_VC_LW_SHIV_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -1619,16 +1767,18 @@
       ],
       "dataId": "SK_VC_LW_SHIV_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "ICE",
+          "type": "ICE_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1636,16 +1786,18 @@
       ],
       "dataId": "SK_VC_LW_SHIV_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "ICE",
+          "type": "ICE_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -1653,16 +1805,18 @@
       ],
       "dataId": "SK_VC_LW_SHIV_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "ICE",
+          "type": "ICE_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -1670,10 +1824,12 @@
       ],
       "dataId": "SK_VC_LW_SHIV_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_RAMU": {
@@ -1711,10 +1867,12 @@
       ],
       "dataId": "SK_VC_LW_RAMU_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -1728,10 +1886,12 @@
       ],
       "dataId": "SK_VC_LW_RAMU_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -1745,16 +1905,18 @@
       ],
       "dataId": "SK_VC_LW_RAMU_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING",
+          "type": "LIGHTNING_RES",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "resistance"
@@ -1762,16 +1924,18 @@
       ],
       "dataId": "SK_VC_LW_RAMU_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING",
+          "type": "LIGHTNING_RES",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "resistance"
@@ -1779,16 +1943,18 @@
       ],
       "dataId": "SK_VC_LW_RAMU_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LIGHTNING",
+          "type": "LIGHTNING_RES",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "resistance"
@@ -1796,10 +1962,12 @@
       ],
       "dataId": "SK_VC_LW_RAMU_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_FFT_MV1": {
@@ -1837,10 +2005,12 @@
       ],
       "dataId": "SK_VC_FFT_MV1_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -1854,10 +2024,12 @@
       ],
       "dataId": "SK_VC_FFT_MV1_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "partyBuffsMax": {
       "unlockStar": null,
@@ -1871,16 +2043,18 @@
       ],
       "dataId": "SK_VC_FFT_MV1_GSMAX",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 2,
           "maxValue": 5,
           "calcType": "fixe"
@@ -1888,16 +2062,18 @@
       ],
       "dataId": "SK_VC_FFT_MV1_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 99
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 1,
           "maxValue": 3,
           "calcType": "fixe"
@@ -1905,16 +2081,18 @@
       ],
       "dataId": "SK_VC_FFT_MV1_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 2,
           "maxValue": 2,
           "calcType": "fixe"
@@ -1922,10 +2100,12 @@
       ],
       "dataId": "SK_VC_FFT_MV1_PMAX",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_FAMILY": {
@@ -1963,10 +2143,12 @@
       ],
       "dataId": "SK_VC_LW_FAMILY_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -1980,10 +2162,12 @@
       ],
       "dataId": "SK_VC_LW_FAMILY_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -1997,10 +2181,12 @@
       ],
       "dataId": "SK_VC_LW_FAMILY_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -2014,10 +2200,12 @@
       ],
       "dataId": "SK_VC_LW_FAMILY_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_KTON": {
@@ -2047,7 +2235,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
@@ -2055,16 +2243,18 @@
       ],
       "dataId": "SK_VC_LW_KTON_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -2072,10 +2262,12 @@
       ],
       "dataId": "SK_VC_LW_KTON_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2095,10 +2287,12 @@
       ],
       "dataId": "SK_VC_LW_KTON_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -2112,10 +2306,12 @@
       ],
       "dataId": "SK_VC_LW_KTON_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_PROPOSE": {
@@ -2153,10 +2349,12 @@
       ],
       "dataId": "SK_VC_LW_PROPOSE_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -2170,16 +2368,18 @@
       ],
       "dataId": "SK_VC_LW_PROPOSE_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "fixe"
@@ -2193,16 +2393,18 @@
       ],
       "dataId": "SK_VC_LW_PROPOSE_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -2210,10 +2412,12 @@
       ],
       "dataId": "SK_VC_LW_PROPOSE_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_SDLX": {
@@ -2243,7 +2447,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -2251,16 +2455,18 @@
       ],
       "dataId": "SK_VC_LW_SDLX_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -2268,10 +2474,12 @@
       ],
       "dataId": "SK_VC_LW_SDLX_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2285,10 +2493,12 @@
       ],
       "dataId": "SK_VC_LW_SDLX_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -2302,10 +2512,12 @@
       ],
       "dataId": "SK_VC_LW_SDLX_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_TEAPARTY": {
@@ -2343,10 +2555,12 @@
       ],
       "dataId": "SK_VC_LW_TEAPARTY_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
@@ -2360,10 +2574,12 @@
       ],
       "dataId": "SK_VC_LW_TEAPARTY_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2377,10 +2593,12 @@
       ],
       "dataId": "SK_VC_LW_TEAPARTY_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -2394,10 +2612,12 @@
       ],
       "dataId": "SK_VC_LW_TEAPARTY_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_HUNT": {
@@ -2427,7 +2647,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_ATK",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
@@ -2435,16 +2655,18 @@
       ],
       "dataId": "SK_VC_LW_HUNT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -2452,10 +2674,12 @@
       ],
       "dataId": "SK_VC_LW_HUNT_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2475,10 +2699,12 @@
       ],
       "dataId": "SK_VC_LW_HUNT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
@@ -2492,10 +2718,12 @@
       ],
       "dataId": "SK_VC_LW_HUNT_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_FF14_MV2": {
@@ -2525,7 +2753,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 5,
           "maxValue": 10,
           "calcType": "resistance"
@@ -2533,16 +2761,18 @@
       ],
       "dataId": "SK_VC_FF14_MV2_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_RES",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -2550,22 +2780,24 @@
       ],
       "dataId": "SK_VC_FF14_MV2_GSAW",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     },
     "unitBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_ATK",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "fixe"
         },
         {
-          "type": "LIGHT",
+          "type": "LIGHT_RES",
           "minValue": -5,
           "maxValue": -5,
           "calcType": "resistance"
@@ -2573,16 +2805,18 @@
       ],
       "dataId": "SK_VC_FF14_MV2_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 70
     },
     "unitBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK",
+          "type": "DARK_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
@@ -2590,10 +2824,12 @@
       ],
       "dataId": "SK_VC_FF14_MV2_PAW",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 4
     }
   },
   "VC_LW_CACT": {
@@ -2631,10 +2867,12 @@
       ],
       "dataId": "SK_VC_LW_CACT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2654,10 +2892,12 @@
       ],
       "dataId": "SK_VC_LW_CACT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_ARMN_01": {
@@ -2695,10 +2935,12 @@
       ],
       "dataId": "SK_VC_LW_ARMN_01_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2718,10 +2960,12 @@
       ],
       "dataId": "SK_VC_LW_ARMN_01_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_ZUUU": {
@@ -2759,10 +3003,12 @@
       ],
       "dataId": "SK_VC_LW_ZUUU_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2777,10 +3023,12 @@
       ],
       "dataId": "SK_VC_LW_ZUUU_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_OGRE": {
@@ -2810,7 +3058,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 3,
           "maxValue": 7,
           "calcType": "resistance"
@@ -2818,10 +3066,12 @@
       ],
       "dataId": "SK_VC_LW_OGRE_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2841,10 +3091,12 @@
       ],
       "dataId": "SK_VC_LW_OGRE_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_BOMB": {
@@ -2874,7 +3126,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "FIRE",
+          "type": "FIRE_RES",
           "minValue": 3,
           "maxValue": 7,
           "calcType": "resistance"
@@ -2882,10 +3134,12 @@
       ],
       "dataId": "SK_VC_LW_BOMB_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2899,10 +3153,12 @@
       ],
       "dataId": "SK_VC_LW_BOMB_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_JOBCRYSTAL": {
@@ -2940,10 +3196,12 @@
       ],
       "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -2957,10 +3215,12 @@
       ],
       "dataId": "SK_VC_LW_JOBCRYSTAL_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_BYLO": {
@@ -2998,10 +3258,12 @@
       ],
       "dataId": "SK_VC_LW_BYLO_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3021,10 +3283,12 @@
       ],
       "dataId": "SK_VC_LW_BYLO_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_RART": {
@@ -3062,10 +3326,12 @@
       ],
       "dataId": "SK_VC_LW_RART_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3079,10 +3345,12 @@
       ],
       "dataId": "SK_VC_LW_RART_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_RYER": {
@@ -3120,10 +3388,12 @@
       ],
       "dataId": "SK_VC_LW_RYER_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3143,10 +3413,12 @@
       ],
       "dataId": "SK_VC_LW_RYER_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_VNLA": {
@@ -3184,10 +3456,12 @@
       ],
       "dataId": "SK_VC_LW_VNLA_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3209,10 +3483,12 @@
       ],
       "dataId": "SK_VC_LW_VNLA_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_RIRY": {
@@ -3250,10 +3526,12 @@
       ],
       "dataId": "SK_VC_LW_RIRY_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3267,10 +3545,12 @@
       ],
       "dataId": "SK_VC_LW_RIRY_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 60
     }
   },
   "VC_LW_LEONIS": {
@@ -3308,10 +3588,12 @@
       ],
       "dataId": "SK_VC_LW_LEONIS_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3325,10 +3607,12 @@
       ],
       "dataId": "SK_VC_LW_LEONIS_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_HOURN": {
@@ -3366,10 +3650,12 @@
       ],
       "dataId": "SK_VC_LW_HOURN_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3383,10 +3669,12 @@
       ],
       "dataId": "SK_VC_LW_HOURN_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_FENICE": {
@@ -3424,10 +3712,12 @@
       ],
       "dataId": "SK_VC_LW_FENICE_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3441,10 +3731,12 @@
       ],
       "dataId": "SK_VC_LW_FENICE_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_WEZETT": {
@@ -3482,10 +3774,12 @@
       ],
       "dataId": "SK_VC_LW_WEZETT_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3499,10 +3793,12 @@
       ],
       "dataId": "SK_VC_LW_WEZETT_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_CRYSTAL": {
@@ -3540,10 +3836,12 @@
       ],
       "dataId": "SK_VC_LW_CRYSTAL_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3557,10 +3855,12 @@
       ],
       "dataId": "SK_VC_LW_CRYSTAL_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_LEONIS2": {
@@ -3598,10 +3898,12 @@
       ],
       "dataId": "SK_VC_LW_LEONIS2_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3621,10 +3923,12 @@
       ],
       "dataId": "SK_VC_LW_LEONIS2_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_HOURN2": {
@@ -3654,7 +3958,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3662,10 +3966,12 @@
       ],
       "dataId": "SK_VC_LW_HOURN2_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3685,10 +3991,12 @@
       ],
       "dataId": "SK_VC_LW_HOURN2_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_FENICE2": {
@@ -3718,7 +4026,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3726,10 +4034,12 @@
       ],
       "dataId": "SK_VC_LW_FENICE2_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3743,10 +4053,12 @@
       ],
       "dataId": "SK_VC_LW_FENICE2_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_WEZETT2": {
@@ -3776,7 +4088,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3784,10 +4096,12 @@
       ],
       "dataId": "SK_VC_LW_WEZETT2_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3807,10 +4121,12 @@
       ],
       "dataId": "SK_VC_LW_WEZETT2_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_DYNVERK": {
@@ -3840,7 +4156,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 2,
           "maxValue": 4,
           "calcType": "resistance"
@@ -3848,10 +4164,12 @@
       ],
       "dataId": "SK_VC_LW_DYNVERK_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3865,10 +4183,12 @@
       ],
       "dataId": "SK_VC_LW_DYNVERK_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 40
     }
   },
   "VC_LW_TRSV_01": {
@@ -3906,10 +4226,12 @@
       ],
       "dataId": "SK_VC_LW_TRSV_01_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 30
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3923,10 +4245,12 @@
       ],
       "dataId": "SK_VC_LW_TRSV_01_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 30
     }
   },
   "VC_LW_TRSV_02": {
@@ -3964,10 +4288,12 @@
       ],
       "dataId": "SK_VC_LW_TRSV_02_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 30
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -3981,10 +4307,12 @@
       ],
       "dataId": "SK_VC_LW_TRSV_02_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 30
     }
   },
   "VC_LW_MIRROR": {
@@ -4022,10 +4350,12 @@
       ],
       "dataId": "SK_VC_LW_MIRROR_GS",
       "type": "party",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 30
     },
     "unitBuffsClassic": {
       "unlockStar": null,
@@ -4039,10 +4369,12 @@
       ],
       "dataId": "SK_VC_LW_MIRROR_P",
       "type": "support",
+      "mainSkill": false,
       "names": {
         "en": "",
         "fr": ""
-      }
+      },
+      "maxLevel": 30
     }
   }
 }

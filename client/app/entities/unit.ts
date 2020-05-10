@@ -75,8 +75,6 @@ export class Unit {
   element = "fire";
   image = "ITEMcrst";
 
-  equipments = [];
-
   limit = new Skill();
   tmr = new Equipment();
   masterSkill = new Skill();
@@ -108,7 +106,6 @@ export class Unit {
     this.stats = unit.stats;
     this.element = unit.element;
     this.image = unit.image;
-    this.equipments = unit.equipments;
     this.limit = unit.limit;
     this.tmr = unit.tmr;
     this.masterSkill = unit.masterSkill;

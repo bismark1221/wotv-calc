@@ -294,6 +294,7 @@ export class CardService {
         buffs.party[effect.type].value += effect.minValue
       })
     }
+    this.card.buffs = buffs
 
     this.card.buff = {}
     let types = ['self', 'party']

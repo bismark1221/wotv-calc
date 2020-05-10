@@ -223,7 +223,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -242,7 +242,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -261,7 +261,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -280,7 +280,7 @@
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -299,7 +299,7 @@
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -428,7 +428,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -447,7 +447,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -466,7 +466,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -485,7 +485,7 @@
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -504,7 +504,7 @@
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -688,7 +688,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -757,7 +757,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -838,7 +838,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -931,7 +931,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -1036,7 +1036,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1210,7 +1210,7 @@
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1227,7 +1227,7 @@
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1246,7 +1246,7 @@
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1263,7 +1263,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -1280,7 +1280,7 @@
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1299,7 +1299,7 @@
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1316,7 +1316,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -1333,7 +1333,7 @@
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1352,7 +1352,7 @@
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1369,7 +1369,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -1386,7 +1386,7 @@
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1405,7 +1405,7 @@
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1422,7 +1422,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -1439,7 +1439,7 @@
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1458,7 +1458,7 @@
           "dataId": "SK_LW_SWO_004_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1475,7 +1475,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -1492,7 +1492,7 @@
           "dataId": "SK_LW_SWO_004_5",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1620,7 +1620,7 @@
           "dataId": "SK_LW_SWO_005_1",
           "effects": [
             {
-              "type": "FIRE",
+              "type": "FIRE_ATK",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "fixe"
@@ -1637,7 +1637,7 @@
           "dataId": "SK_LW_SWO_005_5",
           "effects": [
             {
-              "type": "FIRE",
+              "type": "FIRE_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1762,7 +1762,7 @@
           "dataId": "SK_LW_SWO_006_1",
           "effects": [
             {
-              "type": "LIGHTNING",
+              "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "fixe"
@@ -1779,7 +1779,7 @@
           "dataId": "SK_LW_SWO_006_5",
           "effects": [
             {
-              "type": "LIGHTNING",
+              "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "fixe"
@@ -1955,7 +1955,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -1974,7 +1974,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -1993,7 +1993,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -2012,7 +2012,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -2031,7 +2031,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -2157,7 +2157,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -2176,7 +2176,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -2195,7 +2195,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -2214,7 +2214,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -2233,7 +2233,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -2409,7 +2409,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -2428,7 +2428,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -2447,7 +2447,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -2466,7 +2466,7 @@
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -2485,7 +2485,7 @@
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -2614,7 +2614,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -2633,7 +2633,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -2652,7 +2652,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -2671,7 +2671,7 @@
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -2690,7 +2690,7 @@
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -2819,7 +2819,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -2838,7 +2838,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -2857,7 +2857,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -2876,7 +2876,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -2895,7 +2895,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -3003,7 +3003,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -3022,7 +3022,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -3041,7 +3041,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -3060,7 +3060,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -3079,7 +3079,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -3266,7 +3266,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -3285,7 +3285,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -3304,7 +3304,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -3323,7 +3323,7 @@
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -3342,7 +3342,7 @@
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -3479,7 +3479,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -3498,7 +3498,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -3517,7 +3517,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -3536,7 +3536,7 @@
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -3555,7 +3555,7 @@
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -3688,7 +3688,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -3707,7 +3707,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -3726,7 +3726,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -3745,7 +3745,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -3764,7 +3764,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -3940,7 +3940,7 @@
           "dataId": "SK_LW_BLOW_1",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -3956,7 +3956,7 @@
           "dataId": "SK_LW_BLOW_2",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -3972,7 +3972,7 @@
           "dataId": "SK_LW_BLOW_3",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -3988,7 +3988,7 @@
           "dataId": "SK_LW_BLOW_4_R",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -4004,7 +4004,7 @@
           "dataId": "SK_LW_BLOW_5_R",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -4134,7 +4134,7 @@
           "dataId": "SK_LW_BLOW_1",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -4150,7 +4150,7 @@
           "dataId": "SK_LW_BLOW_2",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -4166,7 +4166,7 @@
           "dataId": "SK_LW_BLOW_3",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -4182,7 +4182,7 @@
           "dataId": "SK_LW_BLOW_4_SR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -4198,7 +4198,7 @@
           "dataId": "SK_LW_BLOW_5_SR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -4332,7 +4332,7 @@
           "dataId": "SK_LW_BLOW_1",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -4348,7 +4348,7 @@
           "dataId": "SK_LW_BLOW_2",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -4364,7 +4364,7 @@
           "dataId": "SK_LW_BLOW_3",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -4380,7 +4380,7 @@
           "dataId": "SK_LW_BLOW_4_SSR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -4396,7 +4396,7 @@
           "dataId": "SK_LW_BLOW_5_SSR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -4572,7 +4572,7 @@
           "dataId": "SK_LW_SPEAR_1",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -4588,7 +4588,7 @@
           "dataId": "SK_LW_SPEAR_2",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -4604,7 +4604,7 @@
           "dataId": "SK_LW_SPEAR_3",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -4620,7 +4620,7 @@
           "dataId": "SK_LW_SPEAR_4_R",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -4636,7 +4636,7 @@
           "dataId": "SK_LW_SPEAR_5_R",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -4762,7 +4762,7 @@
           "dataId": "SK_LW_SPEAR_1",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -4778,7 +4778,7 @@
           "dataId": "SK_LW_SPEAR_2",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -4794,7 +4794,7 @@
           "dataId": "SK_LW_SPEAR_3",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -4810,7 +4810,7 @@
           "dataId": "SK_LW_SPEAR_4_SR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -4826,7 +4826,7 @@
           "dataId": "SK_LW_SPEAR_5_SR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -4952,7 +4952,7 @@
           "dataId": "SK_LW_SPEAR_1",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -4968,7 +4968,7 @@
           "dataId": "SK_LW_SPEAR_2",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -4984,7 +4984,7 @@
           "dataId": "SK_LW_SPEAR_3",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -5000,7 +5000,7 @@
           "dataId": "SK_LW_SPEAR_4_SSR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -5016,7 +5016,7 @@
           "dataId": "SK_LW_SPEAR_5_SSR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -5139,7 +5139,7 @@
           "dataId": "SK_LW_SPEAR_1",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -5155,7 +5155,7 @@
           "dataId": "SK_LW_SPEAR_2",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -5171,7 +5171,7 @@
           "dataId": "SK_LW_SPEAR_3",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -5187,7 +5187,7 @@
           "dataId": "SK_LW_SPEAR_4_SSR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -5203,7 +5203,7 @@
           "dataId": "SK_LW_SPEAR_5_SSR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -5384,7 +5384,7 @@
           "dataId": "SK_LW_SPEAR_1",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -5436,7 +5436,7 @@
           "dataId": "SK_LW_SPEAR_2",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -5488,7 +5488,7 @@
           "dataId": "SK_LW_SPEAR_3",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -5540,7 +5540,7 @@
           "dataId": "SK_LW_SPEAR_4_SSR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -5592,7 +5592,7 @@
           "dataId": "SK_LW_SPEAR_5_SSR",
           "effects": [
             {
-              "type": "PIERCE",
+              "type": "PIERCE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -5789,7 +5789,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -5808,7 +5808,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -5827,7 +5827,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -5846,7 +5846,7 @@
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -5865,7 +5865,7 @@
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -5994,7 +5994,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -6013,7 +6013,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -6032,7 +6032,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -6051,7 +6051,7 @@
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -6070,7 +6070,7 @@
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -6203,7 +6203,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -6222,7 +6222,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -6241,7 +6241,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -6260,7 +6260,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -6279,7 +6279,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -6408,7 +6408,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -6427,7 +6427,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -6446,7 +6446,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -6465,7 +6465,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -6484,7 +6484,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -6663,7 +6663,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -6682,7 +6682,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -6701,7 +6701,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -6720,7 +6720,7 @@
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -6739,7 +6739,7 @@
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -6868,7 +6868,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -6887,7 +6887,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -6906,7 +6906,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -6925,7 +6925,7 @@
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -6944,7 +6944,7 @@
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -7073,7 +7073,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -7092,7 +7092,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -7111,7 +7111,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -7130,7 +7130,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -7149,7 +7149,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -7333,7 +7333,7 @@
           "dataId": "SK_LW_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -7349,7 +7349,7 @@
           "dataId": "SK_LW_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -7365,7 +7365,7 @@
           "dataId": "SK_LW_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -7381,7 +7381,7 @@
           "dataId": "SK_LW_SHOOT_4_R",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -7397,7 +7397,7 @@
           "dataId": "SK_LW_SHOOT_5_R",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -7527,7 +7527,7 @@
           "dataId": "SK_LW_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -7543,7 +7543,7 @@
           "dataId": "SK_LW_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -7559,7 +7559,7 @@
           "dataId": "SK_LW_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -7575,7 +7575,7 @@
           "dataId": "SK_LW_SHOOT_4_SR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -7591,7 +7591,7 @@
           "dataId": "SK_LW_SHOOT_5_SR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -7721,7 +7721,7 @@
           "dataId": "SK_LW_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -7737,7 +7737,7 @@
           "dataId": "SK_LW_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -7753,7 +7753,7 @@
           "dataId": "SK_LW_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -7769,7 +7769,7 @@
           "dataId": "SK_LW_SHOOT_4_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -7785,7 +7785,7 @@
           "dataId": "SK_LW_SHOOT_5_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -7965,7 +7965,7 @@
           "dataId": "SK_LW_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -7981,7 +7981,7 @@
           "dataId": "SK_LW_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -7997,7 +7997,7 @@
           "dataId": "SK_LW_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -8013,7 +8013,7 @@
           "dataId": "SK_LW_SHOOT_4_R",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -8029,7 +8029,7 @@
           "dataId": "SK_LW_SHOOT_5_R",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -8155,7 +8155,7 @@
           "dataId": "SK_LW_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -8171,7 +8171,7 @@
           "dataId": "SK_LW_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -8187,7 +8187,7 @@
           "dataId": "SK_LW_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -8203,7 +8203,7 @@
           "dataId": "SK_LW_SHOOT_4_SR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -8219,7 +8219,7 @@
           "dataId": "SK_LW_SHOOT_5_SR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -8349,7 +8349,7 @@
           "dataId": "SK_LW_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -8365,7 +8365,7 @@
           "dataId": "SK_LW_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -8381,7 +8381,7 @@
           "dataId": "SK_LW_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -8397,7 +8397,7 @@
           "dataId": "SK_LW_SHOOT_4_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -8413,7 +8413,7 @@
           "dataId": "SK_LW_SHOOT_5_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -8639,7 +8639,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -8655,7 +8655,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -8671,7 +8671,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -8687,7 +8687,7 @@
           "dataId": "SK_LW_MAGIC_4_R",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -8703,7 +8703,7 @@
           "dataId": "SK_LW_MAGIC_5_R",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -8867,7 +8867,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -8918,7 +8918,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -8934,7 +8934,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -8985,7 +8985,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -9001,7 +9001,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -9052,7 +9052,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -9068,7 +9068,7 @@
           "dataId": "SK_LW_MAGIC_4_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -9119,7 +9119,7 @@
           "dataId": "SK_LW_MAGIC_4_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -9135,7 +9135,7 @@
           "dataId": "SK_LW_MAGIC_5_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -9186,7 +9186,7 @@
           "dataId": "SK_LW_MAGIC_5_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -9316,7 +9316,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -9332,7 +9332,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -9348,7 +9348,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -9364,7 +9364,7 @@
           "dataId": "SK_LW_MAGIC_4_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -9380,7 +9380,7 @@
           "dataId": "SK_LW_MAGIC_5_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -9506,7 +9506,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -9522,7 +9522,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -9538,7 +9538,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -9554,7 +9554,7 @@
           "dataId": "SK_LW_MAGIC_4_UR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "fixe"
@@ -9570,7 +9570,7 @@
           "dataId": "SK_LW_MAGIC_5_UR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 20,
               "maxValue": 20,
               "calcType": "fixe"
@@ -9746,7 +9746,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -9762,7 +9762,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -9778,7 +9778,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -9794,7 +9794,7 @@
           "dataId": "SK_LW_MAGIC_4_R",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -9810,7 +9810,7 @@
           "dataId": "SK_LW_MAGIC_5_R",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -9940,7 +9940,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -9956,7 +9956,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -9972,7 +9972,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -9988,7 +9988,7 @@
           "dataId": "SK_LW_MAGIC_4_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -10004,7 +10004,7 @@
           "dataId": "SK_LW_MAGIC_5_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -10134,7 +10134,7 @@
           "dataId": "SK_LW_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -10150,7 +10150,7 @@
           "dataId": "SK_LW_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -10166,7 +10166,7 @@
           "dataId": "SK_LW_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -10182,7 +10182,7 @@
           "dataId": "SK_LW_MAGIC_4_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -10198,7 +10198,7 @@
           "dataId": "SK_LW_MAGIC_5_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -10385,7 +10385,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -10404,7 +10404,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -10423,7 +10423,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -10442,7 +10442,7 @@
           "dataId": "SK_LW_SLASH_4_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "fixe"
@@ -10461,7 +10461,7 @@
           "dataId": "SK_LW_SLASH_5_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
               "calcType": "fixe"
@@ -10594,7 +10594,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -10613,7 +10613,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -10632,7 +10632,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -10651,7 +10651,7 @@
           "dataId": "SK_LW_SLASH_4_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "fixe"
@@ -10670,7 +10670,7 @@
           "dataId": "SK_LW_SLASH_5_SR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
               "calcType": "fixe"
@@ -10803,7 +10803,7 @@
           "dataId": "SK_LW_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe"
@@ -10822,7 +10822,7 @@
           "dataId": "SK_LW_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe"
@@ -10841,7 +10841,7 @@
           "dataId": "SK_LW_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe"
@@ -10860,7 +10860,7 @@
           "dataId": "SK_LW_SLASH_4_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "fixe"
@@ -10879,7 +10879,7 @@
           "dataId": "SK_LW_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -11050,7 +11050,7 @@
           "dataId": "SK_LW_DF_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -11066,7 +11066,7 @@
           "dataId": "SK_LW_DF_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -11082,7 +11082,7 @@
           "dataId": "SK_LW_DF_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -11098,7 +11098,7 @@
           "dataId": "SK_LW_DF_SLASH_4_N_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -11114,7 +11114,7 @@
           "dataId": "SK_LW_DF_SLASH_5_N_R",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "resistance"
@@ -11232,7 +11232,7 @@
           "dataId": "SK_LW_DF_BLOW_1",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -11248,7 +11248,7 @@
           "dataId": "SK_LW_DF_BLOW_2",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -11264,7 +11264,7 @@
           "dataId": "SK_LW_DF_BLOW_3",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -11280,7 +11280,7 @@
           "dataId": "SK_LW_DF_BLOW_4_N_SSR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -11296,7 +11296,7 @@
           "dataId": "SK_LW_DF_BLOW_5_SR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "resistance"
@@ -11426,7 +11426,7 @@
           "dataId": "SK_LW_DF_SLASH_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -11442,7 +11442,7 @@
           "dataId": "SK_LW_DF_SLASH_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -11458,7 +11458,7 @@
           "dataId": "SK_LW_DF_SLASH_3",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -11474,7 +11474,7 @@
           "dataId": "SK_LW_DF_SLASH_4_N_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -11490,7 +11490,7 @@
           "dataId": "SK_LW_DF_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "resistance"
@@ -11616,7 +11616,7 @@
           "dataId": "SK_LW_DF_BLOW_1",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -11632,7 +11632,7 @@
           "dataId": "SK_LW_DF_BLOW_2",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -11648,7 +11648,7 @@
           "dataId": "SK_LW_DF_BLOW_3",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -11664,7 +11664,7 @@
           "dataId": "SK_LW_DF_BLOW_4_UR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
@@ -11680,7 +11680,7 @@
           "dataId": "SK_LW_DF_BLOW_5_UR",
           "effects": [
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -11822,7 +11822,7 @@
           "dataId": "SK_LW_DF_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -11838,7 +11838,7 @@
           "dataId": "SK_LW_DF_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -11854,7 +11854,7 @@
           "dataId": "SK_LW_DF_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -11870,7 +11870,7 @@
           "dataId": "SK_LW_DF_SHOOT_4_N_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -11886,7 +11886,7 @@
           "dataId": "SK_LW_DF_SHOOT_5_N_R",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "resistance"
@@ -12004,7 +12004,7 @@
           "dataId": "SK_LW_DF_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -12020,7 +12020,7 @@
           "dataId": "SK_LW_DF_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -12036,7 +12036,7 @@
           "dataId": "SK_LW_DF_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -12052,7 +12052,7 @@
           "dataId": "SK_LW_DF_SHOOT_4_N_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -12068,7 +12068,7 @@
           "dataId": "SK_LW_DF_SHOOT_5_SR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "resistance"
@@ -12190,7 +12190,7 @@
           "dataId": "SK_LW_DF_SHOOT_1",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -12206,7 +12206,7 @@
           "dataId": "SK_LW_DF_SHOOT_2",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -12222,7 +12222,7 @@
           "dataId": "SK_LW_DF_SHOOT_3",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -12238,7 +12238,7 @@
           "dataId": "SK_LW_DF_SHOOT_4_N_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -12254,7 +12254,7 @@
           "dataId": "SK_LW_DF_SHOOT_5_SSR",
           "effects": [
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "resistance"
@@ -13016,7 +13016,7 @@
           "dataId": "SK_LW_DF_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -13032,7 +13032,7 @@
           "dataId": "SK_LW_DF_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -13048,7 +13048,7 @@
           "dataId": "SK_LW_DF_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -13064,7 +13064,7 @@
           "dataId": "SK_LW_DF_MAGIC_4_N_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -13080,7 +13080,7 @@
           "dataId": "SK_LW_DF_MAGIC_5_N_R",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 6,
               "maxValue": 6,
               "calcType": "resistance"
@@ -13202,7 +13202,7 @@
           "dataId": "SK_LW_DF_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -13218,7 +13218,7 @@
           "dataId": "SK_LW_DF_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -13234,7 +13234,7 @@
           "dataId": "SK_LW_DF_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -13250,7 +13250,7 @@
           "dataId": "SK_LW_DF_MAGIC_4_N_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -13266,7 +13266,7 @@
           "dataId": "SK_LW_DF_MAGIC_5_SR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 7,
               "maxValue": 7,
               "calcType": "resistance"
@@ -13388,7 +13388,7 @@
           "dataId": "SK_LW_DF_MAGIC_1",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "resistance"
@@ -13404,7 +13404,7 @@
           "dataId": "SK_LW_DF_MAGIC_2",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance"
@@ -13420,7 +13420,7 @@
           "dataId": "SK_LW_DF_MAGIC_3",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "resistance"
@@ -13436,7 +13436,7 @@
           "dataId": "SK_LW_DF_MAGIC_4_N_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "resistance"
@@ -13452,7 +13452,7 @@
           "dataId": "SK_LW_DF_MAGIC_5_SSR",
           "effects": [
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 8,
               "maxValue": 8,
               "calcType": "resistance"
@@ -15470,7 +15470,7 @@
           "dataId": "SK_SWO_LW_LILS_1_1",
           "effects": [
             {
-              "type": "FIRE",
+              "type": "FIRE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -15917,7 +15917,7 @@
           "dataId": "SK_BOW_LW_CLEY_1_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -16579,7 +16579,7 @@
           "dataId": "SK_ARM_LW_ROBB_1_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "fixe",
@@ -16714,25 +16714,25 @@
           "dataId": "SK_ARM_LW_VRID_1_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "PIERCE",
+              "type": "PIERCE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
@@ -16789,7 +16789,7 @@
           "dataId": "SK_ARM_LW_NAIA_1_1",
           "effects": [
             {
-              "type": "WATER",
+              "type": "WATER_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -16846,7 +16846,7 @@
           "dataId": "SK_CLT_LW_SEVR_1_1",
           "effects": [
             {
-              "type": "LIGHTNING",
+              "type": "LIGHTNING_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -16903,7 +16903,7 @@
           "dataId": "SK_ARM_LW_SRJS_1_1",
           "effects": [
             {
-              "type": "FIRE",
+              "type": "FIRE_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -17202,7 +17202,7 @@
           "dataId": "SK_ARM_LW_VADM_1_1",
           "effects": [
             {
-              "type": "EARTH",
+              "type": "EARTH_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -17263,7 +17263,7 @@
           "dataId": "SK_ARM_LW_PHBE_1_1",
           "effects": [
             {
-              "type": "LIGHT",
+              "type": "LIGHT_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -17822,7 +17822,7 @@
           "dataId": "SK_ARM_LW_SCIA_1_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -17883,7 +17883,7 @@
           "dataId": "SK_ARM_LW_MURM_1_1",
           "effects": [
             {
-              "type": "WIND",
+              "type": "WIND_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -17944,7 +17944,7 @@
           "dataId": "SK_ARM_LW_RYER_1_1",
           "effects": [
             {
-              "type": "DARK",
+              "type": "DARK_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -18243,7 +18243,7 @@
           "dataId": "SK_ARM_FF14_TNCR_1_1",
           "effects": [
             {
-              "type": "LIGHT",
+              "type": "LIGHT_RES",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "resistance"
@@ -18872,31 +18872,31 @@
           "dataId": "SK_HAT_LW_WHIS_1_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "PIERCE",
+              "type": "PIERCE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"

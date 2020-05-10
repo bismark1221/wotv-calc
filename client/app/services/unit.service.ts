@@ -314,7 +314,6 @@ export class UnitService {
     this.updateMaxLevel();
     this.updateMaxJobLevel();
     this.changeLevel();
-    this.getAvailableStatType();
 
     this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
@@ -436,62 +435,52 @@ export class UnitService {
   }
 
   changeLevel() {
-    Object.keys(this.unit.stats).forEach(stat => {
-      if (typeof(this.unit.stats[stat].min) == "number") {
-        this.unit.stats[stat] = {
-          min: this.unit.stats[stat].min,
-          max: this.unit.stats[stat].max
-        }
-      } else {
-        delete this.unit.stats[stat]
-      }
-    })
-
-    this.statsType.forEach(stat => {
-      let min = this.unit.stats[stat].min
-      let max = this.unit.stats[stat].max
-
-      this.unit.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.unit.level - 1)))
-      this.unit.stats[stat].baseTotal = this.unit.stats[stat].base
-    })
-
-    this.statsAtkRes.forEach(stat => {
-      if (this.unit.stats[stat]) {
-        let min = this.unit.stats[stat].min ? this.unit.stats[stat].min : 0
-        let max = this.unit.stats[stat].max ? this.unit.stats[stat].max : 0
-        let value = Math.floor(min + ((max - min) / (99 - 1) * (this.unit.level - 1)))
-
-        this.unit.stats[stat + "_RES"] = {
-          base: value,
-          baseTotal: value
-        }
-      }
-    })
-
-    this.unit.jobsData.forEach((job, jobIndex) => {
-      let subJob = jobIndex !== 0
-      Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
-        if (!this.unit.stats[statType]) {
-          this.unit.stats[statType] = {
-            base: 0
+    if (this.unit) {
+      Object.keys(this.unit.stats).forEach(stat => {
+        if (typeof(this.unit.stats[stat].min) == "number") {
+          this.unit.stats[stat] = {
+            min: this.unit.stats[stat].min,
+            max: this.unit.stats[stat].max
           }
+        } else {
+          delete this.unit.stats[stat]
         }
-        let stat = this.unit.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
+      })
 
-        this.unit.stats[statType].baseTotal += stat
-      });
-    })
+      Object.keys(this.unit.stats).forEach(stat => {
+        let min = this.unit.stats[stat].min
+        let max = this.unit.stats[stat].max
 
-    Object.keys(this.unit.stats).forEach(stat => {
-      if (!this.unit.stats[stat].baseTotal) {
-        this.unit.stats[stat].base = this.unit.stats[stat].min
-        this.unit.stats[stat].baseTotal = this.unit.stats[stat].min
-      } else {
-        this.unit.stats[stat].baseTotal = Math.floor(this.unit.stats[stat].baseTotal)
-      }
-    })
+        this.unit.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.unit.level - 1)))
+        this.unit.stats[stat].baseTotal = this.unit.stats[stat].base
+      })
 
-    this.calculateTotalStats()
+      this.unit.jobsData.forEach((job, jobIndex) => {
+        let subJob = jobIndex !== 0
+        Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
+          if (!this.unit.stats[statType]) {
+            this.unit.stats[statType] = {
+              base: 0
+            }
+          }
+          let stat = this.unit.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
+
+          this.unit.stats[statType].baseTotal += stat
+        });
+      })
+
+      Object.keys(this.unit.stats).forEach(stat => {
+        if (!this.unit.stats[stat].baseTotal) {
+          this.unit.stats[stat].base = this.unit.stats[stat].min
+          this.unit.stats[stat].baseTotal = this.unit.stats[stat].min
+        } else {
+          this.unit.stats[stat].baseTotal = Math.floor(this.unit.stats[stat].baseTotal)
+        }
+      })
+
+      this.calculateTotalStats()
+      this.getAvailableStatType();
+    }
   }
 
   private calculateGuildStats() {
@@ -526,24 +515,11 @@ export class UnitService {
       let node = this.unit.board.nodes[nodeId]
       if (node.type == "buff" && node.level) {
         node.skill.effects.forEach(effect => {
-
-          if (this.statsAtkRes.indexOf(effect.type) !== -1) {
-            if (effect.calcType === "resistance") {
-              this.updateStat(effect.type + "_RES", effect.minValue, "board")
-            } else if (effect.calcType === "fixe") {
-              this.updateStat(effect.type + "_ATK", effect.minValue, "board")
-            } else {
-              console.log("not manage effect in board AtkRes")
-              console.log(node)
-            }
-
+          if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
+            this.updateStat(effect.type, effect.minValue, "board", effect.calcType === "percent" ? "percent" : "fixe")
           } else {
-            if (effect.calcType === "percent" || effect.calcType === "fixe") {
-              this.updateStat(effect.type, effect.minValue, "board", effect.calcType)
-            } else {
-              console.log("not manage effect in board percent/fixe")
-              console.log(node)
-            }
+            console.log("not manage effect in board percent/fixe")
+            console.log(node)
           }
         })
       }
@@ -555,25 +531,11 @@ export class UnitService {
       if (supportNode != "0") {
         this.unit.board.nodes[supportNode].skill.effects.forEach(effect => {
           let value = effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (this.unit.board.nodes[supportNode].level - 1))
-
-
-          if (this.statsAtkRes.indexOf(effect.type) !== -1) {
-            if (effect.calcType === "resistance") {
-              this.updateStat(effect.type + "_RES", value, "support")
-            } else if (effect.calcType === "fixe") {
-              this.updateStat(effect.type + "_ATK", value, "support")
-            } else {
-              console.log("not manage effect in support AtkRes")
-              console.log(supportNode)
-            }
-
+          if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
+            this.updateStat(effect.type, value, "support", effect.calcType === "percent" ? "percent" : "fixe")
           } else {
-            if (effect.calcType === "percent" || effect.calcType === "fixe") {
-              this.updateStat(effect.type, value, "support", effect.calcType)
-            } else {
-              console.log("not manage effect in support percent/fixe")
-              console.log(supportNode)
-            }
+            console.log("not manage effect in support percent/fixe")
+            console.log(supportNode)
           }
         })
       }
@@ -583,34 +545,150 @@ export class UnitService {
   private calculateMasterSkillStats() {
     if (this.unit.masterSkill.activated) {
       this.unit.masterSkill.effects.forEach(effect => {
-
-        if (this.statsAtkRes.indexOf(effect.type) !== -1) {
-          if (effect.calcType === "resistance") {
-            this.updateStat(effect.type + "_RES", effect.minValue, "masterSkill")
-          } else if (effect.calcType === "fixe") {
-            this.updateStat(effect.type + "_ATK", effect.minValue, "masterSkill")
-          } else {
-            console.log("not manage effect in masterSkill AtkRes")
-            console.log(this.unit.masterSkill)
-          }
-
+        if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
+          this.updateStat(effect.type, effect.minValue, "masterSkill", effect.calcType === "percent" ? "percent" : "fixe")
         } else {
-          if (effect.calcType === "percent" || effect.calcType === "fixe") {
-            this.updateStat(effect.type, effect.minValue, "masterSkill", effect.calcType)
-          } else {
-            console.log("not manage effect in masterSkill percent/fixe")
-            console.log(this.unit.masterSkill)
-          }
+          console.log("not manage effect in masterSkill percent/fixe")
+          console.log(this.unit.masterSkill)
         }
       })
     }
   }
+
+  private calculateEsperStats() {
+    this.statsType.forEach(statType => {
+      if (this.unit.esper.stats[statType].base) {
+        this.unit.stats[statType].esper = Math.ceil(this.unit.esper.stats[statType].base * parseInt(this.unit.esper.resonance) / 10)
+      }
+    })
+
+    Object.keys(this.unit.esper.buffs).forEach(statType => {
+      if (typeof(this.unit.esper.buffs[statType].total) == "number") {
+        if (!this.unit.stats[statType]) {
+          this.unit.stats[statType] = {
+            baseTotal: 0
+          }
+        }
+
+        if (typeof(this.unit.esper.buffs[statType].percent) == "number"
+          && this.unit.esper.buffs[statType].percent != 0
+        ) {
+          if (this.statsType.indexOf(statType) !== -1) {
+            this.unit.stats[statType].esper = Math.floor((this.unit.stats[statType].esper ? this.unit.stats[statType].esper : 0) + (this.unit.stats[statType].baseTotal * this.unit.esper.buffs[statType].percent / 100))
+          } else {
+            this.unit.stats[statType].esper = this.unit.esper.buffs[statType].percent
+          }
+        } else {
+          this.unit.stats[statType].esper = this.unit.esper.buffs[statType].total
+        }
+      }
+    })
+  }
+
+  private calculateCardStats() {
+    ["HP", "ATK", "MAG"].forEach(statType => {
+      this.unit.stats[statType].card = this.unit.card.stats[statType].total
+    })
+
+    Object.keys(this.unit.card.buffs.self).forEach(statType => {
+      let value = this.unit.card.buffs.self[statType].value
+
+      if (this.statsType.indexOf(statType) !== -1) {
+        if (this.unit.card.buffs.self[statType].calcType === "percent") {
+          value = Math.floor(this.unit.stats[statType].baseTotal * value / 100)
+        }
+
+        if (this.unit.stats[statType].card) {
+          value += this.unit.stats[statType].card
+        }
+      }
+
+      if (!this.unit.stats[statType]) {
+        this.unit.stats[statType] = {
+          baseTotal: 0
+        }
+      }
+      this.unit.stats[statType].card = value
+    })
+
+    Object.keys(this.unit.card.buffs.party).forEach(statType => {
+      let value = this.unit.card.buffs.party[statType].value
+
+      if (this.statsType.indexOf(statType) !== -1) {
+        if (this.unit.card.buffs.party[statType].calcType === "percent") {
+          value = Math.floor(this.unit.stats[statType].baseTotal * value / 100)
+        }
+
+        if (this.unit.stats[statType].cardParty) {
+          value += this.unit.stats[statType].cardParty
+        }
+      }
+
+      if (!this.unit.stats[statType]) {
+        this.unit.stats[statType] = {
+          baseTotal: 0
+        }
+      }
+      this.unit.stats[statType].cardParty = value
+    })
+  }
+
+  private calculateEquipmentsStats() {
+    let statsType = [];
+
+    for (let i = 0; i <= 2; i++) {
+      if (this.unit.equipments[i]) {
+        Object.keys(this.unit.equipments[i].stats).forEach(statType => {
+          if (!this.unit.stats[statType]) {
+            this.unit.stats[statType] = {
+              baseTotal: 0
+            }
+          }
+          let value = parseInt(this.unit.equipments[i].stats[statType].selected)
+          this.unit.stats[statType]['equipment' + i] = value
+
+          if (!this.unit.stats[statType].equipment) {
+            this.unit.stats[statType].equipment = {
+              positive: 0,
+              negative: -100000000
+            }
+          }
+
+          if (value > 0 && value > this.unit.stats[statType].equipment.positive) {
+            this.unit.stats[statType].equipment.positive = value
+          } else if (value <= 0 && value > this.unit.stats[statType].equipment.negative) {
+            this.unit.stats[statType].equipment.negative = value
+          }
+
+          statsType.push(statType)
+        })
+      }
+    }
+
+    statsType.forEach(statType => {
+      let negativeValue = this.unit.stats[statType].equipment.negative !== -100000000 ? this.unit.stats[statType].equipment.negative : 0
+      this.unit.stats[statType].totalEquipment = this.unit.stats[statType].equipment.positive + negativeValue
+    })
+  }
+
 
   private calculateTotalStats() {
     this.calculateGuildStats()
     this.calculateBoardStats()
     this.calculateSupportStats()
     this.calculateMasterSkillStats()
+
+    if (this.unit.esper) {
+      this.calculateEsperStats()
+    }
+
+    if (this.unit.card) {
+      this.calculateCardStats()
+    }
+
+    if (this.unit.equipments && this.unit.equipments[0]) {
+      this.calculateEquipmentsStats()
+    }
 
     Object.keys(this.unit.stats).forEach(stat => {
       this.unit.stats[stat].total = this.unit.stats[stat].baseTotal;
@@ -628,6 +706,22 @@ export class UnitService {
       if (this.unit.stats[stat].masterSkill) {
         this.unit.stats[stat].masterSkill = Math.floor(this.unit.stats[stat].masterSkill)
         this.unit.stats[stat].total += this.unit.stats[stat].masterSkill
+      }
+
+      if (this.unit.stats[stat].esper) {
+        this.unit.stats[stat].total += this.unit.stats[stat].esper
+      }
+
+      if (this.unit.stats[stat].card) {
+        this.unit.stats[stat].total += this.unit.stats[stat].card
+      }
+
+      if (this.unit.stats[stat].cardParty) {
+        this.unit.stats[stat].total += this.unit.stats[stat].cardParty
+      }
+
+      if (this.unit.stats[stat].totalEquipment) {
+        this.unit.stats[stat].total += this.unit.stats[stat].totalEquipment
       }
 
       this.unit.stats[stat].total += this.unit.stats[stat].guild ? this.unit.stats[stat].guild : 0
@@ -734,20 +828,7 @@ export class UnitService {
       this.unit.board.nodes[nodeId].skill.effects.forEach(effect => {
         if (findedStats.indexOf(effect.type) === -1) {
           if (skill.type === "buff" || skill.type === "support") {
-            if (this.statsAtkRes.indexOf(effect.type) !== -1) {
-              if (effect.calcType === "resistance") {
-                if (!this.unit.stats[effect.type + "_RES"]) {
-                  this.unit.stats[effect.type + "_RES"] = {}
-                }
-                findedStats.push(effect.type + "_RES")
-
-              } else if (effect.calcType === "fixe") {
-                if (!this.unit.stats[effect.type + "_ATK"]) {
-                  this.unit.stats[effect.type + "_ATK"] = {}
-                }
-                findedStats.push(effect.type + "_ATK")
-              }
-            } else if (this.statsType.indexOf(effect.type) === -1) {
+            if (this.statsType.indexOf(effect.type) === -1) {
               if (!this.unit.stats[effect.type]) {
                 this.unit.stats[effect.type] = {}
               }

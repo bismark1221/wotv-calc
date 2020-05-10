@@ -12,7 +12,7 @@
         "effects": [
           {
             "side": "ENNEMIES",
-            "type": "FIRE",
+            "type": "FIRE_RES",
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance"
@@ -34,6 +34,7 @@
         ],
         "dataId": "SK_SMN_IFRT",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Hellfire",
           "fr": "Flammes de l'enfer"
@@ -42,6 +43,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 2,
           "l": 4,
@@ -174,11 +176,11 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {
           "min": 10,
           "max": 10
@@ -188,19 +190,19 @@
           "max": 10
         }
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {
           "min": -10,
           "max": -10
@@ -210,31 +212,31 @@
           "max": -10
         }
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -476,6 +478,7 @@
             "dataId": "BUFF_IFRT_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -498,6 +501,7 @@
             "dataId": "BUFF_IFRT_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -520,6 +524,7 @@
             "dataId": "BUFF_IFRT_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -542,6 +547,7 @@
             "dataId": "BUFF_IFRT_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -564,6 +570,7 @@
             "dataId": "BUFF_IFRT_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -586,6 +593,7 @@
             "dataId": "BUFF_IFRT_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -608,6 +616,7 @@
             "dataId": "BUFF_IFRT_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -630,6 +639,7 @@
             "dataId": "BUFF_IFRT_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -643,7 +653,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -652,6 +662,7 @@
             "dataId": "BUFF_IFRT_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -665,7 +676,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -674,6 +685,7 @@
             "dataId": "BUFF_IFRT_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -696,6 +708,7 @@
             "dataId": "BUFF_IFRT_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -718,6 +731,7 @@
             "dataId": "BUFF_IFRT_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -731,7 +745,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -740,6 +754,7 @@
             "dataId": "BUFF_IFRT_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -753,7 +768,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -762,6 +777,7 @@
             "dataId": "BUFF_IFRT_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -784,6 +800,7 @@
             "dataId": "BUFF_IFRT_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -806,6 +823,7 @@
             "dataId": "BUFF_IFRT_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -819,7 +837,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -828,6 +846,7 @@
             "dataId": "BUFF_IFRT_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -841,7 +860,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -850,6 +869,7 @@
             "dataId": "BUFF_IFRT_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -872,6 +892,7 @@
             "dataId": "BUFF_IFRT_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -885,7 +906,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -894,6 +915,7 @@
             "dataId": "BUFF_IFRT_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -907,7 +929,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -916,6 +938,7 @@
             "dataId": "BUFF_IFRT_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -938,6 +961,7 @@
             "dataId": "BUFF_IFRT_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -960,6 +984,7 @@
             "dataId": "BUFF_IFRT_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -973,7 +998,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "fixe"
@@ -982,6 +1007,7 @@
             "dataId": "BUFF_IFRT_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -995,7 +1021,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -1004,6 +1030,7 @@
             "dataId": "BUFF_IFRT_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1026,6 +1053,7 @@
             "dataId": "BUFF_IFRT_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1048,6 +1076,7 @@
             "dataId": "BUFF_IFRT_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1061,7 +1090,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -1070,6 +1099,7 @@
             "dataId": "BUFF_IFRT_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1083,7 +1113,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -1092,6 +1122,7 @@
             "dataId": "BUFF_IFRT_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1114,6 +1145,7 @@
             "dataId": "BUFF_IFRT_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1136,6 +1168,7 @@
             "dataId": "BUFF_IFRT_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1158,6 +1191,7 @@
             "dataId": "BUFF_IFRT_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1180,6 +1214,7 @@
             "dataId": "BUFF_IFRT_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1237,7 +1272,7 @@
         "effects": [
           {
             "side": "ENNEMIES",
-            "type": "EARTH",
+            "type": "EARTH_RES",
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance"
@@ -1259,6 +1294,7 @@
         ],
         "dataId": "SK_SMN_GLEM",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Fragmental Rock",
           "fr": "Rocher à fragmentation"
@@ -1267,6 +1303,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 2,
           "l": 4,
@@ -1399,19 +1436,19 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {
           "min": -5,
           "max": -5
@@ -1421,7 +1458,7 @@
           "max": -5
         }
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {
           "min": 10,
           "max": 10
@@ -1431,35 +1468,35 @@
           "max": 10
         }
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -1701,6 +1738,7 @@
             "dataId": "BUFF_GLEM_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1714,7 +1752,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -1723,6 +1761,7 @@
             "dataId": "BUFF_GLEM_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1745,6 +1784,7 @@
             "dataId": "BUFF_GLEM_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1767,6 +1807,7 @@
             "dataId": "BUFF_GLEM_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1789,6 +1830,7 @@
             "dataId": "BUFF_GLEM_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1811,6 +1853,7 @@
             "dataId": "BUFF_GLEM_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1833,6 +1876,7 @@
             "dataId": "BUFF_GLEM_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1855,6 +1899,7 @@
             "dataId": "BUFF_GLEM_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1877,6 +1922,7 @@
             "dataId": "BUFF_GLEM_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1899,6 +1945,7 @@
             "dataId": "BUFF_GLEM_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1912,7 +1959,7 @@
             "sp": 35,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -1921,6 +1968,7 @@
             "dataId": "BUFF_GLEM_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1943,6 +1991,7 @@
             "dataId": "BUFF_GLEM_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1965,6 +2014,7 @@
             "dataId": "BUFF_GLEM_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -1987,6 +2037,7 @@
             "dataId": "BUFF_GLEM_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2009,6 +2060,7 @@
             "dataId": "BUFF_GLEM_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2031,6 +2083,7 @@
             "dataId": "BUFF_GLEM_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2044,7 +2097,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -2053,6 +2106,7 @@
             "dataId": "BUFF_GLEM_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2066,7 +2120,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -2075,6 +2129,7 @@
             "dataId": "BUFF_GLEM_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2097,6 +2152,7 @@
             "dataId": "BUFF_GLEM_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2119,6 +2175,7 @@
             "dataId": "BUFF_GLEM_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2141,6 +2198,7 @@
             "dataId": "BUFF_GLEM_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2154,7 +2212,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -2163,6 +2221,7 @@
             "dataId": "BUFF_GLEM_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2176,7 +2235,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 6,
                 "maxValue": 6,
                 "calcType": "resistance"
@@ -2185,6 +2244,7 @@
             "dataId": "BUFF_GLEM_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2207,6 +2267,7 @@
             "dataId": "BUFF_GLEM_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2229,6 +2290,7 @@
             "dataId": "BUFF_GLEM_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2251,6 +2313,7 @@
             "dataId": "BUFF_GLEM_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2273,6 +2336,7 @@
             "dataId": "BUFF_GLEM_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2286,7 +2350,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "resistance"
@@ -2295,6 +2359,7 @@
             "dataId": "BUFF_GLEM_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2308,7 +2373,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 6,
                 "maxValue": 6,
                 "calcType": "resistance"
@@ -2317,6 +2382,7 @@
             "dataId": "BUFF_GLEM_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2339,6 +2405,7 @@
             "dataId": "BUFF_GLEM_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2361,6 +2428,7 @@
             "dataId": "BUFF_GLEM_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2374,7 +2442,7 @@
             "sp": 90,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 7,
                 "maxValue": 7,
                 "calcType": "resistance"
@@ -2383,6 +2451,7 @@
             "dataId": "BUFF_GLEM_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2405,6 +2474,7 @@
             "dataId": "BUFF_GLEM_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2462,7 +2532,7 @@
         "effects": [
           {
             "side": "ENNEMIES",
-            "type": "WATER",
+            "type": "WATER_RES",
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance"
@@ -2484,6 +2554,7 @@
         ],
         "dataId": "SK_SMN_SIRE",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Lunatic Voice",
           "fr": "Voix ensorcelante"
@@ -2492,6 +2563,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 2,
           "l": 4,
@@ -2624,7 +2696,7 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {
           "min": 10,
           "max": 10
@@ -2634,19 +2706,19 @@
           "max": 10
         }
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {
           "min": -10,
           "max": -10
@@ -2656,35 +2728,35 @@
           "max": -10
         }
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -2926,6 +2998,7 @@
             "dataId": "BUFF_SIRE_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2939,7 +3012,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -2948,6 +3021,7 @@
             "dataId": "BUFF_SIRE_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2970,6 +3044,7 @@
             "dataId": "BUFF_SIRE_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -2992,6 +3067,7 @@
             "dataId": "BUFF_SIRE_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3014,6 +3090,7 @@
             "dataId": "BUFF_SIRE_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3036,6 +3113,7 @@
             "dataId": "BUFF_SIRE_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3058,6 +3136,7 @@
             "dataId": "BUFF_SIRE_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3080,6 +3159,7 @@
             "dataId": "BUFF_SIRE_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3102,6 +3182,7 @@
             "dataId": "BUFF_SIRE_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3124,6 +3205,7 @@
             "dataId": "BUFF_SIRE_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3137,7 +3219,7 @@
             "sp": 35,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -3146,6 +3228,7 @@
             "dataId": "BUFF_SIRE_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3168,6 +3251,7 @@
             "dataId": "BUFF_SIRE_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3181,7 +3265,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -3190,6 +3274,7 @@
             "dataId": "BUFF_SIRE_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3203,7 +3288,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -3212,6 +3297,7 @@
             "dataId": "BUFF_SIRE_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3234,6 +3320,7 @@
             "dataId": "BUFF_SIRE_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3256,6 +3343,7 @@
             "dataId": "BUFF_SIRE_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3269,7 +3357,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -3278,6 +3366,7 @@
             "dataId": "BUFF_SIRE_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3291,7 +3380,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -3300,6 +3389,7 @@
             "dataId": "BUFF_SIRE_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3322,6 +3412,7 @@
             "dataId": "BUFF_SIRE_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3344,6 +3435,7 @@
             "dataId": "BUFF_SIRE_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3366,6 +3458,7 @@
             "dataId": "BUFF_SIRE_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3379,7 +3472,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -3388,6 +3481,7 @@
             "dataId": "BUFF_SIRE_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3401,7 +3495,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 6,
                 "maxValue": 6,
                 "calcType": "resistance"
@@ -3410,6 +3504,7 @@
             "dataId": "BUFF_SIRE_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3423,7 +3518,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "fixe"
@@ -3432,6 +3527,7 @@
             "dataId": "BUFF_SIRE_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3445,7 +3541,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -3454,6 +3550,7 @@
             "dataId": "BUFF_SIRE_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3476,6 +3573,7 @@
             "dataId": "BUFF_SIRE_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3498,6 +3596,7 @@
             "dataId": "BUFF_SIRE_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3511,7 +3610,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -3520,6 +3619,7 @@
             "dataId": "BUFF_SIRE_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3533,7 +3633,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -3542,6 +3642,7 @@
             "dataId": "BUFF_SIRE_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3564,6 +3665,7 @@
             "dataId": "BUFF_SIRE_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3586,6 +3688,7 @@
             "dataId": "BUFF_SIRE_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3599,7 +3702,7 @@
             "sp": 90,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 7,
                 "maxValue": 7,
                 "calcType": "resistance"
@@ -3608,6 +3711,7 @@
             "dataId": "BUFF_SIRE_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3630,6 +3734,7 @@
             "dataId": "BUFF_SIRE_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -3687,6 +3792,7 @@
         "effects": [],
         "dataId": "SK_SMN_IGNT",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Reaper",
           "fr": "Fauchage"
@@ -3695,6 +3801,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 0,
           "l": 1,
@@ -3823,35 +3930,35 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {
           "min": -10,
           "max": -10
@@ -3861,23 +3968,23 @@
           "max": -10
         }
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -4119,6 +4226,7 @@
             "dataId": "BUFF_IGNT_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4141,6 +4249,7 @@
             "dataId": "BUFF_IGNT_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4163,6 +4272,7 @@
             "dataId": "BUFF_IGNT_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4185,6 +4295,7 @@
             "dataId": "BUFF_IGNT_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4207,6 +4318,7 @@
             "dataId": "BUFF_IGNT_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4229,6 +4341,7 @@
             "dataId": "BUFF_IGNT_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4251,6 +4364,7 @@
             "dataId": "BUFF_IGNT_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4273,6 +4387,7 @@
             "dataId": "BUFF_IGNT_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4286,7 +4401,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -4295,6 +4410,7 @@
             "dataId": "BUFF_IGNT_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4308,7 +4424,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -4317,6 +4433,7 @@
             "dataId": "BUFF_IGNT_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4339,6 +4456,7 @@
             "dataId": "BUFF_IGNT_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4361,6 +4479,7 @@
             "dataId": "BUFF_IGNT_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4374,7 +4493,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "fixe"
@@ -4383,6 +4502,7 @@
             "dataId": "BUFF_IGNT_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4396,7 +4516,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -4405,6 +4525,7 @@
             "dataId": "BUFF_IGNT_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4427,6 +4548,7 @@
             "dataId": "BUFF_IGNT_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4449,6 +4571,7 @@
             "dataId": "BUFF_IGNT_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4462,7 +4585,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -4471,6 +4594,7 @@
             "dataId": "BUFF_IGNT_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4484,7 +4608,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -4493,6 +4617,7 @@
             "dataId": "BUFF_IGNT_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4515,6 +4640,7 @@
             "dataId": "BUFF_IGNT_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4528,7 +4654,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -4537,6 +4663,7 @@
             "dataId": "BUFF_IGNT_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4550,7 +4677,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -4559,6 +4686,7 @@
             "dataId": "BUFF_IGNT_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4581,6 +4709,7 @@
             "dataId": "BUFF_IGNT_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4603,6 +4732,7 @@
             "dataId": "BUFF_IGNT_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4616,7 +4746,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "fixe"
@@ -4625,6 +4755,7 @@
             "dataId": "BUFF_IGNT_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4638,7 +4769,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -4647,6 +4778,7 @@
             "dataId": "BUFF_IGNT_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4669,6 +4801,7 @@
             "dataId": "BUFF_IGNT_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4691,6 +4824,7 @@
             "dataId": "BUFF_IGNT_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4704,7 +4838,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -4713,6 +4847,7 @@
             "dataId": "BUFF_IGNT_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4726,7 +4861,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -4735,6 +4870,7 @@
             "dataId": "BUFF_IGNT_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4757,6 +4893,7 @@
             "dataId": "BUFF_IGNT_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4779,6 +4916,7 @@
             "dataId": "BUFF_IGNT_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4801,6 +4939,7 @@
             "dataId": "BUFF_IGNT_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4823,6 +4962,7 @@
             "dataId": "BUFF_IGNT_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -4880,6 +5020,7 @@
         "effects": [],
         "dataId": "SK_SMN_BHMT",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Rampage",
           "fr": "Rage"
@@ -4888,6 +5029,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "based": "physic",
         "aoe": {
           "s": 2,
@@ -5015,31 +5157,31 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {
           "min": -10,
           "max": -10
@@ -5049,27 +5191,27 @@
           "max": -10
         }
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -5311,6 +5453,7 @@
             "dataId": "BUFF_BHMT_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5333,6 +5476,7 @@
             "dataId": "BUFF_BHMT_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5355,6 +5499,7 @@
             "dataId": "BUFF_BHMT_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5377,6 +5522,7 @@
             "dataId": "BUFF_BHMT_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5399,6 +5545,7 @@
             "dataId": "BUFF_BHMT_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5421,6 +5568,7 @@
             "dataId": "BUFF_BHMT_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5443,6 +5591,7 @@
             "dataId": "BUFF_BHMT_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5465,6 +5614,7 @@
             "dataId": "BUFF_BHMT_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5478,7 +5628,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -5487,6 +5637,7 @@
             "dataId": "BUFF_BHMT_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5500,7 +5651,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -5509,6 +5660,7 @@
             "dataId": "BUFF_BHMT_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5531,6 +5683,7 @@
             "dataId": "BUFF_BHMT_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5553,6 +5706,7 @@
             "dataId": "BUFF_BHMT_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5566,7 +5720,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -5575,6 +5729,7 @@
             "dataId": "BUFF_BHMT_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5588,7 +5743,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -5597,6 +5752,7 @@
             "dataId": "BUFF_BHMT_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5619,6 +5775,7 @@
             "dataId": "BUFF_BHMT_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5641,6 +5798,7 @@
             "dataId": "BUFF_BHMT_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5654,7 +5812,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -5663,6 +5821,7 @@
             "dataId": "BUFF_BHMT_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5676,7 +5835,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -5685,6 +5844,7 @@
             "dataId": "BUFF_BHMT_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5707,6 +5867,7 @@
             "dataId": "BUFF_BHMT_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5720,7 +5881,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -5729,6 +5890,7 @@
             "dataId": "BUFF_BHMT_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5742,7 +5904,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -5751,6 +5913,7 @@
             "dataId": "BUFF_BHMT_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5773,6 +5936,7 @@
             "dataId": "BUFF_BHMT_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5795,6 +5959,7 @@
             "dataId": "BUFF_BHMT_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5808,7 +5973,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "fixe"
@@ -5817,6 +5982,7 @@
             "dataId": "BUFF_BHMT_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5830,7 +5996,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -5839,6 +6005,7 @@
             "dataId": "BUFF_BHMT_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5861,6 +6028,7 @@
             "dataId": "BUFF_BHMT_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5883,6 +6051,7 @@
             "dataId": "BUFF_BHMT_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5896,7 +6065,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -5905,6 +6074,7 @@
             "dataId": "BUFF_BHMT_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5918,7 +6088,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -5927,6 +6097,7 @@
             "dataId": "BUFF_BHMT_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5949,6 +6120,7 @@
             "dataId": "BUFF_BHMT_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5971,6 +6143,7 @@
             "dataId": "BUFF_BHMT_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -5993,6 +6166,7 @@
             "dataId": "BUFF_BHMT_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6015,6 +6189,7 @@
             "dataId": "BUFF_BHMT_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6107,6 +6282,7 @@
         ],
         "dataId": "SK_SMN_MABR",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Smelly Breath",
           "fr": "Haleine fétide"
@@ -6115,6 +6291,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 1,
           "l": 3,
@@ -6236,11 +6413,11 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {
           "min": -5,
           "max": -5
@@ -6250,7 +6427,7 @@
           "max": -5
         }
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {
           "min": 5,
           "max": 5
@@ -6260,43 +6437,43 @@
           "max": 5
         }
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -6538,6 +6715,7 @@
             "dataId": "BUFF_MABR_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6560,6 +6738,7 @@
             "dataId": "BUFF_MABR_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6582,6 +6761,7 @@
             "dataId": "BUFF_MABR_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6595,7 +6775,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -6604,6 +6784,7 @@
             "dataId": "BUFF_MABR_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6617,7 +6798,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "resistance"
@@ -6626,6 +6807,7 @@
             "dataId": "BUFF_MABR_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6648,6 +6830,7 @@
             "dataId": "BUFF_MABR_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6670,6 +6853,7 @@
             "dataId": "BUFF_MABR_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6692,6 +6876,7 @@
             "dataId": "BUFF_MABR_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6705,7 +6890,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -6714,6 +6899,7 @@
             "dataId": "BUFF_MABR_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6727,7 +6913,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -6736,6 +6922,7 @@
             "dataId": "BUFF_MABR_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6758,6 +6945,7 @@
             "dataId": "BUFF_MABR_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6780,6 +6968,7 @@
             "dataId": "BUFF_MABR_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6793,7 +6982,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -6802,6 +6991,7 @@
             "dataId": "BUFF_MABR_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6815,7 +7005,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -6824,6 +7014,7 @@
             "dataId": "BUFF_MABR_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6846,6 +7037,7 @@
             "dataId": "BUFF_MABR_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6859,7 +7051,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -6868,6 +7060,7 @@
             "dataId": "BUFF_MABR_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6890,6 +7083,7 @@
             "dataId": "BUFF_MABR_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6912,6 +7106,7 @@
             "dataId": "BUFF_MABR_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6934,6 +7129,7 @@
             "dataId": "BUFF_MABR_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6947,7 +7143,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -6956,6 +7152,7 @@
             "dataId": "BUFF_MABR_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -6969,7 +7166,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -6978,6 +7175,7 @@
             "dataId": "BUFF_MABR_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7000,6 +7198,7 @@
             "dataId": "BUFF_MABR_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7022,6 +7221,7 @@
             "dataId": "BUFF_MABR_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7035,7 +7235,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "fixe"
@@ -7044,6 +7244,7 @@
             "dataId": "BUFF_MABR_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7057,7 +7258,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -7066,6 +7267,7 @@
             "dataId": "BUFF_MABR_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7088,6 +7290,7 @@
             "dataId": "BUFF_MABR_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7110,6 +7313,7 @@
             "dataId": "BUFF_MABR_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7132,6 +7336,7 @@
             "dataId": "BUFF_MABR_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7154,6 +7359,7 @@
             "dataId": "BUFF_MABR_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7176,6 +7382,7 @@
             "dataId": "BUFF_MABR_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7198,6 +7405,7 @@
             "dataId": "BUFF_MABR_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7220,6 +7428,7 @@
             "dataId": "BUFF_MABR_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7242,6 +7451,7 @@
             "dataId": "BUFF_MABR_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7299,6 +7509,7 @@
         "effects": [],
         "dataId": "SK_SMN_CACT",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "1,000 Needles",
           "fr": "1 000 épines"
@@ -7307,6 +7518,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 1,
           "l": 2,
@@ -7434,19 +7646,19 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {
           "min": -15,
           "max": -15
@@ -7456,7 +7668,7 @@
           "max": -15
         }
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {
           "min": 5,
           "max": 5
@@ -7466,35 +7678,35 @@
           "max": 5
         }
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -7727,7 +7939,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -7736,6 +7948,7 @@
             "dataId": "BUFF_CACT_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7758,6 +7971,7 @@
             "dataId": "BUFF_CACT_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7780,6 +7994,7 @@
             "dataId": "BUFF_CACT_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7802,6 +8017,7 @@
             "dataId": "BUFF_CACT_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7815,7 +8031,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -7824,6 +8040,7 @@
             "dataId": "BUFF_CACT_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7846,6 +8063,7 @@
             "dataId": "BUFF_CACT_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7868,6 +8086,7 @@
             "dataId": "BUFF_CACT_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7881,7 +8100,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -7890,6 +8109,7 @@
             "dataId": "BUFF_CACT_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7912,6 +8132,7 @@
             "dataId": "BUFF_CACT_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7934,6 +8155,7 @@
             "dataId": "BUFF_CACT_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7956,6 +8178,7 @@
             "dataId": "BUFF_CACT_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7978,6 +8201,7 @@
             "dataId": "BUFF_CACT_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -7991,7 +8215,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -8000,6 +8224,7 @@
             "dataId": "BUFF_CACT_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8013,7 +8238,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -8022,6 +8247,7 @@
             "dataId": "BUFF_CACT_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8044,6 +8270,7 @@
             "dataId": "BUFF_CACT_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8057,7 +8284,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -8066,6 +8293,7 @@
             "dataId": "BUFF_CACT_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8088,6 +8316,7 @@
             "dataId": "BUFF_CACT_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8110,6 +8339,7 @@
             "dataId": "BUFF_CACT_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8132,6 +8362,7 @@
             "dataId": "BUFF_CACT_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8154,6 +8385,7 @@
             "dataId": "BUFF_CACT_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8176,6 +8408,7 @@
             "dataId": "BUFF_CACT_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8198,6 +8431,7 @@
             "dataId": "BUFF_CACT_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8220,6 +8454,7 @@
             "dataId": "BUFF_CACT_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8233,7 +8468,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -8242,6 +8477,7 @@
             "dataId": "BUFF_CACT_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8255,7 +8491,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -8264,6 +8500,7 @@
             "dataId": "BUFF_CACT_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8286,6 +8523,7 @@
             "dataId": "BUFF_CACT_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8308,6 +8546,7 @@
             "dataId": "BUFF_CACT_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8330,6 +8569,7 @@
             "dataId": "BUFF_CACT_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8352,6 +8592,7 @@
             "dataId": "BUFF_CACT_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8374,6 +8615,7 @@
             "dataId": "BUFF_CACT_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8396,6 +8638,7 @@
             "dataId": "BUFF_CACT_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8418,6 +8661,7 @@
             "dataId": "BUFF_CACT_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8440,6 +8684,7 @@
             "dataId": "BUFF_CACT_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8505,6 +8750,7 @@
         ],
         "dataId": "SK_SMN_ARMN",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Gaze",
           "fr": "Mauvais œil"
@@ -8513,6 +8759,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 1,
           "l": 3,
@@ -8641,7 +8888,7 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {
           "min": -15,
           "max": -15
@@ -8651,15 +8898,15 @@
           "max": -15
         }
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {
           "min": 5,
           "max": 5
@@ -8669,39 +8916,39 @@
           "max": 5
         }
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -8934,7 +9181,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -8943,6 +9190,7 @@
             "dataId": "BUFF_ARMN_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8956,7 +9204,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -8965,6 +9213,7 @@
             "dataId": "BUFF_ARMN_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -8987,6 +9236,7 @@
             "dataId": "BUFF_ARMN_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9009,6 +9259,7 @@
             "dataId": "BUFF_ARMN_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9031,6 +9282,7 @@
             "dataId": "BUFF_ARMN_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9053,6 +9305,7 @@
             "dataId": "BUFF_ARMN_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9075,6 +9328,7 @@
             "dataId": "BUFF_ARMN_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9088,7 +9342,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -9097,6 +9351,7 @@
             "dataId": "BUFF_ARMN_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9110,7 +9365,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -9119,6 +9374,7 @@
             "dataId": "BUFF_ARMN_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9141,6 +9397,7 @@
             "dataId": "BUFF_ARMN_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9163,6 +9420,7 @@
             "dataId": "BUFF_ARMN_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9185,6 +9443,7 @@
             "dataId": "BUFF_ARMN_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9198,7 +9457,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "resistance"
@@ -9207,6 +9466,7 @@
             "dataId": "BUFF_ARMN_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9220,7 +9480,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "resistance"
@@ -9229,6 +9489,7 @@
             "dataId": "BUFF_ARMN_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9251,6 +9512,7 @@
             "dataId": "BUFF_ARMN_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9273,6 +9535,7 @@
             "dataId": "BUFF_ARMN_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9295,6 +9558,7 @@
             "dataId": "BUFF_ARMN_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9317,6 +9581,7 @@
             "dataId": "BUFF_ARMN_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9339,6 +9604,7 @@
             "dataId": "BUFF_ARMN_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9352,7 +9618,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 8,
                 "maxValue": 8,
                 "calcType": "resistance"
@@ -9361,6 +9627,7 @@
             "dataId": "BUFF_ARMN_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9374,7 +9641,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -9383,6 +9650,7 @@
             "dataId": "BUFF_ARMN_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9405,6 +9673,7 @@
             "dataId": "BUFF_ARMN_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9427,6 +9696,7 @@
             "dataId": "BUFF_ARMN_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9440,7 +9710,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -9449,6 +9719,7 @@
             "dataId": "BUFF_ARMN_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9462,7 +9733,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -9471,6 +9742,7 @@
             "dataId": "BUFF_ARMN_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9493,6 +9765,7 @@
             "dataId": "BUFF_ARMN_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9515,6 +9788,7 @@
             "dataId": "BUFF_ARMN_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9537,6 +9811,7 @@
             "dataId": "BUFF_ARMN_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9559,6 +9834,7 @@
             "dataId": "BUFF_ARMN_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9581,6 +9857,7 @@
             "dataId": "BUFF_ARMN_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9603,6 +9880,7 @@
             "dataId": "BUFF_ARMN_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9625,6 +9903,7 @@
             "dataId": "BUFF_ARMN_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9647,6 +9926,7 @@
             "dataId": "BUFF_ARMN_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -9704,6 +9984,7 @@
         "effects": [],
         "dataId": "SK_SMN_ZUUU",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Great Whirlwind",
           "fr": "Grand tourbillon"
@@ -9712,6 +9993,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "based": "physic",
         "aoe": {
           "s": 0,
@@ -9839,11 +10121,11 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {
           "min": -15,
           "max": -15
@@ -9853,7 +10135,7 @@
           "max": -15
         }
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {
           "min": 5,
           "max": 5
@@ -9863,43 +10145,43 @@
           "max": 5
         }
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -10132,7 +10414,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -10141,6 +10423,7 @@
             "dataId": "BUFF_ZUUU_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10163,6 +10446,7 @@
             "dataId": "BUFF_ZUUU_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10185,6 +10469,7 @@
             "dataId": "BUFF_ZUUU_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10207,6 +10492,7 @@
             "dataId": "BUFF_ZUUU_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10220,7 +10506,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -10229,6 +10515,7 @@
             "dataId": "BUFF_ZUUU_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10251,6 +10538,7 @@
             "dataId": "BUFF_ZUUU_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10273,6 +10561,7 @@
             "dataId": "BUFF_ZUUU_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10286,7 +10575,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -10295,6 +10584,7 @@
             "dataId": "BUFF_ZUUU_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10317,6 +10607,7 @@
             "dataId": "BUFF_ZUUU_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10339,6 +10630,7 @@
             "dataId": "BUFF_ZUUU_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10361,6 +10653,7 @@
             "dataId": "BUFF_ZUUU_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10383,6 +10676,7 @@
             "dataId": "BUFF_ZUUU_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10396,7 +10690,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -10405,6 +10699,7 @@
             "dataId": "BUFF_ZUUU_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10418,7 +10713,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -10427,6 +10722,7 @@
             "dataId": "BUFF_ZUUU_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10449,6 +10745,7 @@
             "dataId": "BUFF_ZUUU_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10462,7 +10759,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -10471,6 +10768,7 @@
             "dataId": "BUFF_ZUUU_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10493,6 +10791,7 @@
             "dataId": "BUFF_ZUUU_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10515,6 +10814,7 @@
             "dataId": "BUFF_ZUUU_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10537,6 +10837,7 @@
             "dataId": "BUFF_ZUUU_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10559,6 +10860,7 @@
             "dataId": "BUFF_ZUUU_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10581,6 +10883,7 @@
             "dataId": "BUFF_ZUUU_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10603,6 +10906,7 @@
             "dataId": "BUFF_ZUUU_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10625,6 +10929,7 @@
             "dataId": "BUFF_ZUUU_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10638,7 +10943,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -10647,6 +10952,7 @@
             "dataId": "BUFF_ZUUU_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10660,7 +10966,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -10669,6 +10975,7 @@
             "dataId": "BUFF_ZUUU_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10691,6 +10998,7 @@
             "dataId": "BUFF_ZUUU_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10713,6 +11021,7 @@
             "dataId": "BUFF_ZUUU_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10735,6 +11044,7 @@
             "dataId": "BUFF_ZUUU_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10757,6 +11067,7 @@
             "dataId": "BUFF_ZUUU_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10779,6 +11090,7 @@
             "dataId": "BUFF_ZUUU_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10801,6 +11113,7 @@
             "dataId": "BUFF_ZUUU_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10823,6 +11136,7 @@
             "dataId": "BUFF_ZUUU_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10845,6 +11159,7 @@
             "dataId": "BUFF_ZUUU_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -10902,6 +11217,7 @@
         "effects": [],
         "dataId": "SK_SMN_OGRE",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Hurl",
           "fr": "Projection violente "
@@ -10910,6 +11226,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 1,
           "l": 3,
@@ -11038,15 +11355,15 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {
           "min": -15,
           "max": -15
@@ -11056,15 +11373,15 @@
           "max": -15
         }
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {
           "min": 5,
           "max": 5
@@ -11074,31 +11391,31 @@
           "max": 5
         }
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -11331,7 +11648,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -11340,6 +11657,7 @@
             "dataId": "BUFF_OGRE_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11362,6 +11680,7 @@
             "dataId": "BUFF_OGRE_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11384,6 +11703,7 @@
             "dataId": "BUFF_OGRE_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11406,6 +11726,7 @@
             "dataId": "BUFF_OGRE_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11419,7 +11740,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -11428,6 +11749,7 @@
             "dataId": "BUFF_OGRE_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11450,6 +11772,7 @@
             "dataId": "BUFF_OGRE_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11472,6 +11795,7 @@
             "dataId": "BUFF_OGRE_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11485,7 +11809,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -11494,6 +11818,7 @@
             "dataId": "BUFF_OGRE_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11516,6 +11841,7 @@
             "dataId": "BUFF_OGRE_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11538,6 +11864,7 @@
             "dataId": "BUFF_OGRE_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11560,6 +11887,7 @@
             "dataId": "BUFF_OGRE_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11582,6 +11910,7 @@
             "dataId": "BUFF_OGRE_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11595,7 +11924,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -11604,6 +11933,7 @@
             "dataId": "BUFF_OGRE_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11617,7 +11947,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -11626,6 +11956,7 @@
             "dataId": "BUFF_OGRE_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11648,6 +11979,7 @@
             "dataId": "BUFF_OGRE_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11661,7 +11993,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -11670,6 +12002,7 @@
             "dataId": "BUFF_OGRE_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11692,6 +12025,7 @@
             "dataId": "BUFF_OGRE_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11714,6 +12048,7 @@
             "dataId": "BUFF_OGRE_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11736,6 +12071,7 @@
             "dataId": "BUFF_OGRE_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11758,6 +12094,7 @@
             "dataId": "BUFF_OGRE_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11780,6 +12117,7 @@
             "dataId": "BUFF_OGRE_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11802,6 +12140,7 @@
             "dataId": "BUFF_OGRE_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11824,6 +12163,7 @@
             "dataId": "BUFF_OGRE_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11837,7 +12177,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -11846,6 +12186,7 @@
             "dataId": "BUFF_OGRE_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11859,7 +12200,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -11868,6 +12209,7 @@
             "dataId": "BUFF_OGRE_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11890,6 +12232,7 @@
             "dataId": "BUFF_OGRE_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11912,6 +12255,7 @@
             "dataId": "BUFF_OGRE_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11934,6 +12278,7 @@
             "dataId": "BUFF_OGRE_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11956,6 +12301,7 @@
             "dataId": "BUFF_OGRE_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -11978,6 +12324,7 @@
             "dataId": "BUFF_OGRE_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12000,6 +12347,7 @@
             "dataId": "BUFF_OGRE_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12022,6 +12370,7 @@
             "dataId": "BUFF_OGRE_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12044,6 +12393,7 @@
             "dataId": "BUFF_OGRE_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12101,6 +12451,7 @@
         "effects": [],
         "dataId": "SK_SMN_BOMB",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Self-Destruct",
           "fr": "Auto-destruction"
@@ -12109,6 +12460,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "based": "physic",
         "aoe": {
           "s": 1,
@@ -12236,11 +12588,11 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {
           "min": 5,
           "max": 5
@@ -12250,19 +12602,19 @@
           "max": 5
         }
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {
           "min": -15,
           "max": -15
@@ -12272,31 +12624,31 @@
           "max": -15
         }
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -12529,7 +12881,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -12538,6 +12890,7 @@
             "dataId": "BUFF_BOMB_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12560,6 +12913,7 @@
             "dataId": "BUFF_BOMB_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12582,6 +12936,7 @@
             "dataId": "BUFF_BOMB_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12604,6 +12959,7 @@
             "dataId": "BUFF_BOMB_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12617,7 +12973,7 @@
             "sp": 10,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -12626,6 +12982,7 @@
             "dataId": "BUFF_BOMB_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12648,6 +13005,7 @@
             "dataId": "BUFF_BOMB_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12670,6 +13028,7 @@
             "dataId": "BUFF_BOMB_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12683,7 +13042,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -12692,6 +13051,7 @@
             "dataId": "BUFF_BOMB_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12714,6 +13074,7 @@
             "dataId": "BUFF_BOMB_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12736,6 +13097,7 @@
             "dataId": "BUFF_BOMB_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12758,6 +13120,7 @@
             "dataId": "BUFF_BOMB_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12780,6 +13143,7 @@
             "dataId": "BUFF_BOMB_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12793,7 +13157,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -12802,6 +13166,7 @@
             "dataId": "BUFF_BOMB_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12815,7 +13180,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -12824,6 +13189,7 @@
             "dataId": "BUFF_BOMB_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12846,6 +13212,7 @@
             "dataId": "BUFF_BOMB_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12859,7 +13226,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "WATER",
+                "type": "WATER_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -12868,6 +13235,7 @@
             "dataId": "BUFF_BOMB_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12890,6 +13258,7 @@
             "dataId": "BUFF_BOMB_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12912,6 +13281,7 @@
             "dataId": "BUFF_BOMB_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12934,6 +13304,7 @@
             "dataId": "BUFF_BOMB_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12956,6 +13327,7 @@
             "dataId": "BUFF_BOMB_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -12978,6 +13350,7 @@
             "dataId": "BUFF_BOMB_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13000,6 +13373,7 @@
             "dataId": "BUFF_BOMB_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13022,6 +13396,7 @@
             "dataId": "BUFF_BOMB_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13035,7 +13410,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -13044,6 +13419,7 @@
             "dataId": "BUFF_BOMB_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13057,7 +13433,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "fixe"
@@ -13066,6 +13442,7 @@
             "dataId": "BUFF_BOMB_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13088,6 +13465,7 @@
             "dataId": "BUFF_BOMB_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13110,6 +13488,7 @@
             "dataId": "BUFF_BOMB_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13132,6 +13511,7 @@
             "dataId": "BUFF_BOMB_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13154,6 +13534,7 @@
             "dataId": "BUFF_BOMB_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13176,6 +13557,7 @@
             "dataId": "BUFF_BOMB_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13198,6 +13580,7 @@
             "dataId": "BUFF_BOMB_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13220,6 +13603,7 @@
             "dataId": "BUFF_BOMB_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13242,6 +13626,7 @@
             "dataId": "BUFF_BOMB_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13299,7 +13684,7 @@
         "effects": [
           {
             "side": "ENNEMIES",
-            "type": "ICE",
+            "type": "ICE_RES",
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance"
@@ -13321,6 +13706,7 @@
         ],
         "dataId": "SK_SMN_SHIV",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Diamond Dust",
           "fr": "Poussière de diamant"
@@ -13329,6 +13715,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 2,
           "l": 4,
@@ -13461,7 +13848,7 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {
           "min": -10,
           "max": -10
@@ -13471,15 +13858,15 @@
           "max": -10
         }
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {},
         {}
       ],
-      "WIND": [
+      "WIND_RES": [
         {
           "min": 10,
           "max": 10
@@ -13489,39 +13876,39 @@
           "max": 10
         }
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {},
         {}
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -13763,6 +14150,7 @@
             "dataId": "BUFF_SHIV_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13785,6 +14173,7 @@
             "dataId": "BUFF_SHIV_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13807,6 +14196,7 @@
             "dataId": "BUFF_SHIV_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13829,6 +14219,7 @@
             "dataId": "BUFF_SHIV_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13851,6 +14242,7 @@
             "dataId": "BUFF_SHIV_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13873,6 +14265,7 @@
             "dataId": "BUFF_SHIV_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13895,6 +14288,7 @@
             "dataId": "BUFF_SHIV_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13917,6 +14311,7 @@
             "dataId": "BUFF_SHIV_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13930,7 +14325,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -13939,6 +14334,7 @@
             "dataId": "BUFF_SHIV_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13952,7 +14348,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -13961,6 +14357,7 @@
             "dataId": "BUFF_SHIV_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -13983,6 +14380,7 @@
             "dataId": "BUFF_SHIV_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14005,6 +14403,7 @@
             "dataId": "BUFF_SHIV_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14018,7 +14417,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -14027,6 +14426,7 @@
             "dataId": "BUFF_SHIV_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14040,7 +14440,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -14049,6 +14449,7 @@
             "dataId": "BUFF_SHIV_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14071,6 +14472,7 @@
             "dataId": "BUFF_SHIV_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14093,6 +14495,7 @@
             "dataId": "BUFF_SHIV_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14106,7 +14509,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -14115,6 +14518,7 @@
             "dataId": "BUFF_SHIV_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14128,7 +14532,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -14137,6 +14541,7 @@
             "dataId": "BUFF_SHIV_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14159,6 +14564,7 @@
             "dataId": "BUFF_SHIV_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14172,7 +14578,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -14181,6 +14587,7 @@
             "dataId": "BUFF_SHIV_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14194,7 +14601,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -14203,6 +14610,7 @@
             "dataId": "BUFF_SHIV_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14225,6 +14633,7 @@
             "dataId": "BUFF_SHIV_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14247,6 +14656,7 @@
             "dataId": "BUFF_SHIV_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14260,7 +14670,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -14269,6 +14679,7 @@
             "dataId": "BUFF_SHIV_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14282,7 +14693,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -14291,6 +14702,7 @@
             "dataId": "BUFF_SHIV_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14313,6 +14725,7 @@
             "dataId": "BUFF_SHIV_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14335,6 +14748,7 @@
             "dataId": "BUFF_SHIV_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14348,7 +14762,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -14357,6 +14771,7 @@
             "dataId": "BUFF_SHIV_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14370,7 +14785,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -14379,6 +14794,7 @@
             "dataId": "BUFF_SHIV_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14401,6 +14817,7 @@
             "dataId": "BUFF_SHIV_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14423,6 +14840,7 @@
             "dataId": "BUFF_SHIV_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14445,6 +14863,7 @@
             "dataId": "BUFF_SHIV_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14467,6 +14886,7 @@
             "dataId": "BUFF_SHIV_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -14524,7 +14944,7 @@
         "effects": [
           {
             "side": "ENNEMIES",
-            "type": "LIGHTNING",
+            "type": "LIGHTNING_RES",
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance"
@@ -14546,6 +14966,7 @@
         ],
         "dataId": "SK_SMN_RAMU",
         "type": "esper",
+        "mainSkill": false,
         "names": {
           "en": "Judgment Bolt",
           "fr": "Foudre du jugement"
@@ -14554,6 +14975,7 @@
           "type": "TP"
         },
         "count": 1,
+        "maxLevel": 20,
         "range": {
           "h": 2,
           "l": 4,
@@ -14686,15 +15108,15 @@
         {},
         {}
       ],
-      "FIRE": [
+      "FIRE_RES": [
         {},
         {}
       ],
-      "ICE": [
+      "ICE_RES": [
         {},
         {}
       ],
-      "EARTH": [
+      "EARTH_RES": [
         {
           "min": -10,
           "max": -10
@@ -14704,15 +15126,15 @@
           "max": -10
         }
       ],
-      "WIND": [
+      "WIND_RES": [
         {},
         {}
       ],
-      "LIGHTNING": [
+      "LIGHTNING_RES": [
         {},
         {}
       ],
-      "WATER": [
+      "WATER_RES": [
         {
           "min": 10,
           "max": 10
@@ -14722,31 +15144,31 @@
           "max": 10
         }
       ],
-      "LIGHT": [
+      "LIGHT_RES": [
         {},
         {}
       ],
-      "DARK": [
+      "DARK_RES": [
         {},
         {}
       ],
-      "SLASH": [
+      "SLASH_RES": [
         {},
         {}
       ],
-      "PIERCE": [
+      "PIERCE_RES": [
         {},
         {}
       ],
-      "STRIKE": [
+      "STRIKE_RES": [
         {},
         {}
       ],
-      "MISSILE": [
+      "MISSILE_RES": [
         {},
         {}
       ],
-      "MAGIC": [
+      "MAGIC_RES": [
         {},
         {}
       ],
@@ -14988,6 +15410,7 @@
             "dataId": "BUFF_RAMU_01",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15010,6 +15433,7 @@
             "dataId": "BUFF_RAMU_02",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15032,6 +15456,7 @@
             "dataId": "BUFF_RAMU_03",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15054,6 +15479,7 @@
             "dataId": "BUFF_RAMU_04",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15076,6 +15502,7 @@
             "dataId": "BUFF_RAMU_05",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15098,6 +15525,7 @@
             "dataId": "BUFF_RAMU_06",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15120,6 +15548,7 @@
             "dataId": "BUFF_RAMU_07",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15142,6 +15571,7 @@
             "dataId": "BUFF_RAMU_08",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15155,7 +15585,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -15164,6 +15594,7 @@
             "dataId": "BUFF_RAMU_09",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15177,7 +15608,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -15186,6 +15617,7 @@
             "dataId": "BUFF_RAMU_10",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15208,6 +15640,7 @@
             "dataId": "BUFF_RAMU_11",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15230,6 +15663,7 @@
             "dataId": "BUFF_RAMU_12",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15243,7 +15677,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -15252,6 +15686,7 @@
             "dataId": "BUFF_RAMU_13",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15265,7 +15700,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -15274,6 +15709,7 @@
             "dataId": "BUFF_RAMU_14",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15296,6 +15732,7 @@
             "dataId": "BUFF_RAMU_15",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15318,6 +15755,7 @@
             "dataId": "BUFF_RAMU_16",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15331,7 +15769,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -15340,6 +15778,7 @@
             "dataId": "BUFF_RAMU_17",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15353,7 +15792,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -15362,6 +15801,7 @@
             "dataId": "BUFF_RAMU_18",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15384,6 +15824,7 @@
             "dataId": "BUFF_RAMU_19",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15397,7 +15838,7 @@
             "sp": 70,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -15406,6 +15847,7 @@
             "dataId": "BUFF_RAMU_20",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15419,7 +15861,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -15428,6 +15870,7 @@
             "dataId": "BUFF_RAMU_21",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15450,6 +15893,7 @@
             "dataId": "BUFF_RAMU_22",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15472,6 +15916,7 @@
             "dataId": "BUFF_RAMU_23",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15485,7 +15930,7 @@
             "sp": 55,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "fixe"
@@ -15494,6 +15939,7 @@
             "dataId": "BUFF_RAMU_24",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15507,7 +15953,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_ATK",
                 "minValue": 2,
                 "maxValue": 2,
                 "calcType": "fixe"
@@ -15516,6 +15962,7 @@
             "dataId": "BUFF_RAMU_25",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15538,6 +15985,7 @@
             "dataId": "BUFF_RAMU_26",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15560,6 +16008,7 @@
             "dataId": "BUFF_RAMU_27",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15573,7 +16022,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"
@@ -15582,6 +16031,7 @@
             "dataId": "BUFF_RAMU_28",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15595,7 +16045,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -15604,6 +16054,7 @@
             "dataId": "BUFF_RAMU_29",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15626,6 +16077,7 @@
             "dataId": "BUFF_RAMU_30",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15648,6 +16100,7 @@
             "dataId": "BUFF_RAMU_31",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15670,6 +16123,7 @@
             "dataId": "BUFF_RAMU_32",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null
@@ -15692,6 +16146,7 @@
             "dataId": "BUFF_RAMU_33",
             "type": "buff",
             "count": null,
+            "maxLevel": null,
             "hit": null,
             "pierce": null,
             "ctbreak": null

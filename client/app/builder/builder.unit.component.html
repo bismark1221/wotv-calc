@@ -3,7 +3,7 @@
              bindLabel="name"
              bindValue="id"
              groupBy="rarity"
-             [(ngModel)]="selectedId"
+             [(ngModel)]="selectedUnitId"
              (ngModelChange)="selectUnit()">
   </ng-select>
 
@@ -112,6 +112,62 @@
     </table>
   </div>
 
+  <div>
+    Esper :<br />
+    <ng-select [items]="espers"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               [(ngModel)]="selectedEsperId"
+               (ngModelChange)="selectEsper()">
+    </ng-select>
+
+    <div *ngIf="esper">
+      Esper resonance <br/>
+      <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
+        <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
+      </select>
+    </div>
+
+    Card :<br />
+    <ng-select [items]="cards"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               [(ngModel)]="selectedCardId"
+               (ngModelChange)="selectCard()">
+    </ng-select>
+
+    Equipments :<br />
+    <ng-select [items]="equipments"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               [(ngModel)]="selectedEquipmentsIds[0]"
+               (ngModelChange)="selectEquipment(0)">
+    </ng-select>
+
+    <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[0]">
+      <ng-select [items]="equipments"
+                 bindLabel="name"
+                 bindValue="id"
+                 groupBy="rarity"
+                 [(ngModel)]="selectedEquipmentsIds[1]"
+                 (ngModelChange)="selectEquipment(1)">
+      </ng-select>
+    </div>
+
+    <div *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[1]">
+      <ng-select [items]="equipments"
+                 bindLabel="name"
+                 bindValue="id"
+                 groupBy="rarity"
+                 [(ngModel)]="selectedEquipmentsIds[2]"
+                 (ngModelChange)="selectEquipment(2)">
+      </ng-select>
+    </div>
+  </div>
+
   <button (click)="save()">SAVE</button>
 </div>
 
@@ -123,41 +179,83 @@
       </tr>
       <tr>
         <th></th>
-        <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">{{ type }}</th>
+        <th *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">{{ type }}</th>
       </tr>
       <tr>
         <td>Base</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
           {{ unit.stats[type].baseTotal }}
         </td>
       </tr>
       <tr>
         <td>Guild Statues</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
           <span>{{ unit.stats[type].guild }}</span>
         </td>
       </tr>
       <tr>
         <td>Board</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
           <span>{{ unit.stats[type].board }}</span>
         </td>
       </tr>
       <tr>
         <td>Support</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
           <span>{{ unit.stats[type].support }}</span>
         </td>
       </tr>
       <tr>
         <td>Master Skill</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
           <span>{{ unit.stats[type].masterSkill }}</span>
         </td>
       </tr>
       <tr>
+        <td>Esper</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].esper }}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Card</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].card }}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Card Party</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].cardParty }}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Equipment 0</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].equipment0 }}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Equipment 1</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].equipment1 }}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Equipment 2</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].equipment2 }}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Total Equipement</td>
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
+          <span>{{ unit.stats[type].totalEquipment }}</span>
+        </td>
+      </tr>
+      <tr>
         <td>Total</td>
-        <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK','MOVE','JUMP']">
+        <td *ngFor="let type of ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']">
           <span>{{ unit.stats[type].total }}</span>
         </td>
       </tr>
@@ -175,7 +273,7 @@
         <th></th>
         <th *ngFor="let statType of line">{{ statType }}</th>
       </tr>
-      <tr *ngFor="let comeFrom of ['base', 'board', 'support', 'masterSkill', 'total']">
+      <tr *ngFor="let comeFrom of ['base', 'board', 'support', 'masterSkill', 'esper', 'card', 'cardParty', 'equipment0', 'equipment1', 'equipment2', 'totalEquipment', 'total']">
         <td>{{ comeFrom }}</td>
         <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom] : '' }}</td>
       </tr>

@@ -57,37 +57,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -15,
         "max": -15
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 15,
         "max": 15
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 10,
         "max": 10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -5,
         "max": -5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -2186,31 +2186,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -25,
         "max": -25
       },
-      "DARK": {
+      "DARK_RES": {
         "min": 15,
         "max": 15
       },
-      "SLASH": {},
-      "PIERCE": {
+      "SLASH_RES": {},
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 20,
         "max": 20
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -10,
         "max": -10
       },
@@ -2538,31 +2538,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -4353,31 +4353,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": 20,
         "max": 20
       },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": -10,
         "max": -10
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 20,
         "max": 20
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -10,
         "max": -10
       },
@@ -4606,7 +4606,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -4657,7 +4657,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -6465,31 +6465,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -10,
         "max": -10
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": 15,
         "max": 15
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 15,
         "max": 15
       },
-      "MAGIC": {},
+      "MAGIC_RES": {},
       "POISON": {},
       "BLIND": {
         "min": 50,
@@ -6713,7 +6713,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -8238,31 +8238,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -8567,7 +8567,7 @@
           "dataId": "SK_ARM_LW_ROBB_1_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_ATK",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "fixe",
@@ -8655,34 +8655,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -10,
         "max": -10
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": 20,
         "max": 20
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 5,
         "max": 5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 20,
         "max": 20
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -30,
         "max": -30
       },
@@ -9539,7 +9539,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -10755,31 +10755,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -10,
         "max": -10
       },
-      "DARK": {},
-      "SLASH": {
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 10,
         "max": 10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 10,
         "max": 10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 10,
         "max": 10
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -11063,7 +11063,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -11623,7 +11623,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -11749,7 +11749,7 @@
             "jp": 800,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "fixe"
@@ -12769,7 +12769,7 @@
           "calcType": "fixe"
         },
         {
-          "type": "STRIKE",
+          "type": "STRIKE_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
@@ -12877,31 +12877,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -10,
         "max": -10
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 20,
         "max": 20
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 20,
         "max": 20
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -10,
         "max": -10
       },
@@ -13190,7 +13190,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -14617,31 +14617,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -14867,7 +14867,7 @@
       },
       "effects": [
         {
-          "type": "EARTH",
+          "type": "EARTH_RES",
           "minValue": -18,
           "maxValue": -38,
           "calcType": "resistance",
@@ -14901,7 +14901,7 @@
       },
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -15038,37 +15038,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": -10,
         "max": -10
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": 20,
         "max": 20
       },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -20,
         "max": -20
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -20,
         "max": -20
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -20,
         "max": -20
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -20,
         "max": -20
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 25,
         "max": 25
       },
@@ -15327,7 +15327,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -15499,7 +15499,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -17157,7 +17157,7 @@
       },
       "effects": [
         {
-          "type": "ICE",
+          "type": "ICE_RES",
           "minValue": -18,
           "maxValue": -38,
           "calcType": "resistance",
@@ -17322,37 +17322,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": -10,
         "max": -10
       },
-      "EARTH": {
+      "EARTH_RES": {
         "min": 20,
         "max": 20
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -5,
         "max": -5
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -5,
         "max": -5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -5,
         "max": -5
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -5,
         "max": -5
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 10,
         "max": 10
       },
@@ -18078,7 +18078,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "WIND",
+                "type": "WIND_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -18266,7 +18266,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -18844,7 +18844,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "WIND",
+                "type": "WIND_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -19673,34 +19673,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -10,
         "max": -10
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 10,
         "max": 10
       },
@@ -19940,7 +19940,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -20202,7 +20202,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -20249,7 +20249,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -21750,7 +21750,7 @@
       },
       "effects": [
         {
-          "type": "ALL_ATTACKS",
+          "type": "ALL_ATTACKS_RES",
           "minValue": 20,
           "maxValue": 45,
           "calcType": "resistance",
@@ -21913,37 +21913,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": -15,
         "max": -15
       },
-      "EARTH": {
+      "EARTH_RES": {
         "min": 15,
         "max": 15
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -25,
         "max": -25
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -22120,7 +22120,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "WIND",
+                "type": "WIND_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -22259,7 +22259,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -23176,7 +23176,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "resistance",
@@ -23348,7 +23348,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "WIND",
+                "type": "WIND_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -24165,31 +24165,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": 15,
         "max": 15
       },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": -15,
         "max": -15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
         "min": -15,
         "max": -15
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -25311,14 +25311,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -25897,31 +25897,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -26024,7 +26024,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -26285,7 +26285,7 @@
           "dataId": "SK_SWO_LW_LILS_1_1",
           "effects": [
             {
-              "type": "FIRE",
+              "type": "FIRE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -26356,31 +26356,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": 15,
         "max": 15
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
         "min": -15,
         "max": -15
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 15,
         "max": 15
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": -15,
         "max": -15
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -5,
         "max": -5
       },
@@ -26615,13 +26615,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -26672,7 +26672,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -27038,7 +27038,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -28339,7 +28339,7 @@
           "calcType": "percent"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_ATK",
           "minValue": 20,
           "maxValue": 20,
           "calcType": "fixe"
@@ -28439,31 +28439,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -15,
         "max": -15
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 15,
         "max": 15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
         "min": -15,
         "max": -15
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -15,
         "max": -15
       },
@@ -30520,37 +30520,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -15,
         "max": -15
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 15,
         "max": 15
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 25,
         "max": 25
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 10,
         "max": 10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -5,
         "max": -5
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 20,
         "max": 20
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -30,
         "max": -30
       },
@@ -30779,7 +30779,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -32651,28 +32651,28 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -15,
         "max": -15
       },
-      "DARK": {},
-      "SLASH": {
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -15,
         "max": -15
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 15,
         "max": 15
       },
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -15,
         "max": -15
       },
@@ -32851,7 +32851,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "fixe",
@@ -33010,7 +33010,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -34413,7 +34413,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -34756,34 +34756,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -15,
         "max": -15
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": 10,
         "max": 10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -5,
         "max": -5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 10,
         "max": 10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -5,
         "max": -5
       },
@@ -36404,7 +36404,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -36498,31 +36498,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -36753,7 +36753,7 @@
       },
       "effects": [
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "resistance"
@@ -36861,31 +36861,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": -15,
         "max": -15
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": 15,
         "max": 15
       },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -15,
         "max": -15
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 15,
         "max": 15
       },
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -15,
         "max": -15
       },
@@ -37227,7 +37227,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -37260,14 +37260,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -37802,7 +37802,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -38542,7 +38542,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -38982,7 +38982,7 @@
           "dataId": "SK_BOW_LW_CLEY_1_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_ATK",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe"
@@ -39053,37 +39053,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": -15,
         "max": -15
       },
-      "EARTH": {
+      "EARTH_RES": {
         "min": 15,
         "max": 15
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 0,
         "max": 0
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -39587,7 +39587,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -39634,7 +39634,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -39989,13 +39989,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -40311,7 +40311,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -41250,34 +41250,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -15,
         "max": -15
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 15,
         "max": 15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -5,
         "max": -5
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -5,
         "max": -5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 5,
         "max": 5
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -15,
         "max": -15
       },
@@ -41558,7 +41558,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -42129,7 +42129,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -42690,7 +42690,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "resistance",
@@ -42858,7 +42858,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHTNING",
+                "type": "LIGHTNING_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -43442,37 +43442,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": 15,
         "max": 15
       },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": -15,
         "max": -15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -45300,7 +45300,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -45549,7 +45549,7 @@
           "calcType": "percent"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_ATK",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "fixe"
@@ -45650,34 +45650,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -15,
         "max": -15
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": 25,
         "max": 25
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 25,
         "max": 25
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 25,
         "max": 25
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 40,
         "max": 40
       },
@@ -45920,7 +45920,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -46604,7 +46604,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -46730,7 +46730,7 @@
             "jp": 800,
             "effects": [
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "resistance"
@@ -47101,7 +47101,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -47445,7 +47445,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -47773,31 +47773,31 @@
       },
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -47903,31 +47903,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -15,
         "max": -15
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 15,
         "max": 15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -48258,31 +48258,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -49070,14 +49070,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -49750,7 +49750,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -50087,34 +50087,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -15,
         "max": -15
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -50541,7 +50541,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "fixe",
@@ -51406,7 +51406,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -51769,7 +51769,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -51895,7 +51895,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -52243,7 +52243,7 @@
           "calcType": "percent"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
@@ -52344,31 +52344,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -20,
         "max": -20
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 10,
         "max": 10
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
         "min": -20,
         "max": -20
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -20,
         "max": -20
       },
@@ -54431,34 +54431,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -20,
         "max": -20
       },
-      "DARK": {},
-      "SLASH": {
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -15,
         "max": -15
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -20,
         "max": -20
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -15,
         "max": -15
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 15,
         "max": 15
       },
@@ -54757,13 +54757,13 @@
             "jp": 20,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -55017,7 +55017,7 @@
             "jp": 15,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -56543,7 +56543,7 @@
           "dataId": "SK_ARM_LW_RYER_1_1",
           "effects": [
             {
-              "type": "DARK",
+              "type": "DARK_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -56614,34 +56614,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": -20,
         "max": -20
       },
-      "EARTH": {
+      "EARTH_RES": {
         "min": 10,
         "max": 10
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 15,
         "max": 15
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": -20,
         "max": -20
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 5,
         "max": 5
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -20,
         "max": -20
       },
@@ -57708,14 +57708,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -58381,7 +58381,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -58608,7 +58608,7 @@
       },
       "effects": [
         {
-          "type": "PIERCE",
+          "type": "PIERCE_ATK",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "fixe"
@@ -58644,7 +58644,7 @@
           "dataId": "SK_ARM_LW_SCIA_1_1",
           "effects": [
             {
-              "type": "ICE",
+              "type": "ICE_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -58715,37 +58715,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": -20,
         "max": -20
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": 10,
         "max": 10
       },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -35,
         "max": -35
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -15,
         "max": -15
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -15,
         "max": -15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -15,
         "max": -15
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -58916,7 +58916,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -59043,7 +59043,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -59930,7 +59930,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "resistance",
@@ -60116,7 +60116,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ICE",
+                "type": "ICE_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -60559,7 +60559,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -60846,25 +60846,25 @@
           "dataId": "SK_ARM_LW_VRID_1_1",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "PIERCE",
+              "type": "PIERCE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
@@ -60935,37 +60935,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": 10,
         "max": 10
       },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": -20,
         "max": -20
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -35,
         "max": -35
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -35,
         "max": -35
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -35,
         "max": -35
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -35,
         "max": -35
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -61641,7 +61641,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -62372,7 +62372,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -62772,7 +62772,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -63060,7 +63060,7 @@
           "dataId": "SK_ARM_LW_NAIA_1_1",
           "effects": [
             {
-              "type": "WATER",
+              "type": "WATER_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -63131,28 +63131,28 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": -20,
         "max": -20
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 5,
         "max": 5
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": -30,
         "max": -30
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -30,
         "max": -30
       },
@@ -63441,7 +63441,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -64346,7 +64346,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -64718,7 +64718,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -65188,7 +65188,7 @@
           "dataId": "SK_ARM_LW_SRJS_1_1",
           "effects": [
             {
-              "type": "FIRE",
+              "type": "FIRE_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -65259,31 +65259,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": 10,
         "max": 10
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
         "min": -20,
         "max": -20
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -30,
         "max": -30
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 5,
         "max": 5
       },
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -20,
         "max": -20
       },
@@ -65619,7 +65619,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -65652,14 +65652,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -66223,13 +66223,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -66545,7 +66545,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -67357,25 +67357,25 @@
           "calcType": "percent"
         },
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -67476,37 +67476,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": 10,
         "max": 10
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
         "min": -20,
         "max": -20
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -35,
         "max": -35
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -35,
         "max": -35
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -15,
         "max": -15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -15,
         "max": -15
       },
-      "MAGIC": {},
+      "MAGIC_RES": {},
       "POISON": {},
       "BLIND": {},
       "SLEEP": {
@@ -68411,7 +68411,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -69186,7 +69186,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -69503,31 +69503,31 @@
       },
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 25,
           "maxValue": 25,
           "calcType": "resistance"
@@ -69556,7 +69556,7 @@
           "dataId": "SK_CLT_LW_SEVR_1_1",
           "effects": [
             {
-              "type": "LIGHTNING",
+              "type": "LIGHTNING_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -69627,37 +69627,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -20,
         "max": -20
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 10,
         "max": 10
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -30,
         "max": -30
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 5,
         "max": 5
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -30,
         "max": -30
       },
@@ -71566,13 +71566,13 @@
           "calcType": "fixe"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 30,
           "maxValue": 30,
           "calcType": "resistance"
@@ -71602,7 +71602,7 @@
           "dataId": "SK_ARM_LW_VADM_1_1",
           "effects": [
             {
-              "type": "EARTH",
+              "type": "EARTH_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -71673,37 +71673,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -20,
         "max": -20
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 10,
         "max": 10
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 15,
         "max": 15
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 10,
         "max": 10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 45,
         "max": 45
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 15,
         "max": 15
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 45,
         "max": 45
       },
@@ -72030,7 +72030,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -72637,7 +72637,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -72763,7 +72763,7 @@
             "jp": 800,
             "effects": [
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "resistance"
@@ -73737,31 +73737,31 @@
       },
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "resistance"
@@ -73797,7 +73797,7 @@
           "dataId": "SK_ARM_LW_MURM_1_1",
           "effects": [
             {
-              "type": "WIND",
+              "type": "WIND_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -73868,34 +73868,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -20,
         "max": -20
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": -5,
         "max": -5
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -5,
         "max": -5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -5,
         "max": -5
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -5,
         "max": -5
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -5,
         "max": -5
       },
@@ -75960,7 +75960,7 @@
           "dataId": "SK_ARM_LW_PHBE_1_1",
           "effects": [
             {
-              "type": "LIGHT",
+              "type": "LIGHT_RES",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance"
@@ -76031,25 +76031,25 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -20,
         "max": -20
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 5,
         "max": 5
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -76290,7 +76290,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -76379,7 +76379,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -76412,14 +76412,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -78193,37 +78193,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": 5,
         "max": 5
       },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": -20,
         "max": -20
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -25,
         "max": -25
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -25,
         "max": -25
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -25,
         "max": -25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -25,
         "max": -25
       },
-      "MAGIC": {},
+      "MAGIC_RES": {},
       "POISON": {},
       "BLIND": {},
       "SLEEP": {},
@@ -79348,14 +79348,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -80028,7 +80028,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -80366,25 +80366,25 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": -20,
         "max": -20
       },
-      "EARTH": {
+      "EARTH_RES": {
         "min": 5,
         "max": 5
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -81004,7 +81004,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -81224,13 +81224,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "EARTH",
+                "type": "EARTH_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -81538,7 +81538,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -81718,7 +81718,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -82438,22 +82438,22 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
         "min": -20,
         "max": -20
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -84460,37 +84460,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": -10,
         "max": -10
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": 20,
         "max": 20
       },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 5,
         "max": 5
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 5,
         "max": 5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -10,
         "max": -10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 5,
         "max": 5
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 5,
         "max": 5
       },
@@ -84567,7 +84567,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -18,
                 "maxValue": -38,
                 "calcType": "resistance",
@@ -86256,31 +86256,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -86583,7 +86583,7 @@
       },
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -86704,37 +86704,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": 15,
         "max": 15
       },
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": -15,
         "max": -15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -10,
         "max": -10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": -15,
         "max": -15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -15,
         "max": -15
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 10,
         "max": 10
       },
@@ -87435,7 +87435,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "FIRE",
+                "type": "FIRE_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -87613,7 +87613,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -88913,31 +88913,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 20,
         "max": 20
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 5,
         "max": 5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 35,
         "max": 35
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 20,
         "max": 20
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -30,
         "max": -30
       },
@@ -89106,7 +89106,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "SLASH",
+                "type": "SLASH_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "fixe",
@@ -89214,7 +89214,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -89240,7 +89240,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -90647,7 +90647,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -90880,7 +90880,7 @@
           "calcType": "percent"
         },
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -90910,7 +90910,7 @@
           "dataId": "SK_ARM_FF14_TNCR_1_1",
           "effects": [
             {
-              "type": "LIGHT",
+              "type": "LIGHT_RES",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "resistance"
@@ -90981,31 +90981,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -15,
         "max": -15
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 15,
         "max": 15
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -15,
         "max": -15
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 10,
         "max": 10
       },
-      "STRIKE": {},
-      "MISSILE": {},
-      "MAGIC": {
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": 10,
         "max": 10
       },
@@ -91181,7 +91181,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "fixe",
@@ -91340,7 +91340,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -92145,14 +92145,14 @@
                 "turn": 1
               },
               {
-                "type": "ALL_ELEMENTS",
+                "type": "ALL_ELEMENTS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
                 "turn": 1
               },
               {
-                "type": "ALL_ATTACKS",
+                "type": "ALL_ATTACKS_RES",
                 "minValue": -35,
                 "maxValue": -17,
                 "calcType": "resistance",
@@ -92813,7 +92813,7 @@
                 "calcType": "fixe"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_ATK",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "fixe"
@@ -93082,7 +93082,7 @@
       },
       "effects": [
         {
-          "type": "MISSILE",
+          "type": "MISSILE_ATK",
           "minValue": 15,
           "maxValue": 15,
           "calcType": "fixe"
@@ -93202,28 +93202,28 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -15,
         "max": -15
       },
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {},
-      "STRIKE": {
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": 10,
         "max": 10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": -15,
         "max": -15
       },
-      "MAGIC": {},
+      "MAGIC_RES": {},
       "POISON": {
         "min": 50,
         "max": 50
@@ -95283,31 +95283,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {
+      "FIRE_RES": {},
+      "ICE_RES": {
         "min": -10,
         "max": -10
       },
-      "EARTH": {
+      "EARTH_RES": {
         "min": 20,
         "max": 20
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {},
-      "PIERCE": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {},
-      "MISSILE": {
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
         "min": 10,
         "max": 10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -95641,7 +95641,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "resistance"
@@ -97430,37 +97430,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {
+      "FIRE_RES": {
         "min": -15,
         "max": -15
       },
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": 15,
         "max": 15
       },
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 15,
         "max": 15
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 5,
         "max": 5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 5,
         "max": 5
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -20,
         "max": -20
       },
@@ -99537,34 +99537,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -20,
         "max": -20
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 10,
         "max": 10
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": -5,
         "max": -5
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -5,
         "max": -5
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 5,
         "max": 5
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -15,
         "max": -15
       },
@@ -99845,7 +99845,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -100202,7 +100202,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -100920,7 +100920,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "resistance",
@@ -101665,31 +101665,31 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
         "min": -10,
         "max": -10
       },
-      "SLASH": {
+      "SLASH_RES": {
         "min": 15,
         "max": 15
       },
-      "PIERCE": {},
-      "STRIKE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
         "min": 15,
         "max": 15
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 15,
         "max": 15
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -10,
         "max": -10
       },
@@ -101920,13 +101920,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "DARK",
+                "type": "DARK_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -102346,7 +102346,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -103709,7 +103709,7 @@
       },
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -103826,28 +103826,28 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -15,
         "max": -15
       },
-      "DARK": {},
-      "SLASH": {
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 25,
         "max": 25
       },
-      "PIERCE": {},
-      "STRIKE": {},
-      "MISSILE": {
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
         "min": -10,
         "max": -10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -25,
         "max": -25
       },
@@ -104135,31 +104135,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -104722,7 +104722,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STRIKE",
+                "type": "STRIKE_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "fixe"
@@ -105905,37 +105905,37 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
         "min": -10,
         "max": -10
       },
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
         "min": 20,
         "max": 20
       },
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 20,
         "max": 20
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 10,
         "max": 10
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 10,
         "max": 10
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": -20,
         "max": -20
       },
@@ -106249,31 +106249,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
@@ -107488,7 +107488,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "LIGHTNING",
+                "type": "LIGHTNING_RES",
                 "minValue": -18,
                 "maxValue": -38,
                 "calcType": "resistance",
@@ -108035,7 +108035,7 @@
           "calcType": "fixe"
         },
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 10,
           "maxValue": 10,
           "calcType": "fixe"
@@ -108143,34 +108143,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {},
-      "LIGHTNING": {},
-      "WATER": {},
-      "LIGHT": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -10,
         "max": -10
       },
-      "DARK": {},
-      "SLASH": {
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 25,
         "max": 25
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": 25,
         "max": 25
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 25,
         "max": 25
       },
-      "MISSILE": {
+      "MISSILE_RES": {
         "min": 25,
         "max": 25
       },
-      "MAGIC": {
+      "MAGIC_RES": {
         "min": 25,
         "max": 25
       },
@@ -109031,13 +109031,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
               },
               {
-                "type": "LIGHT",
+                "type": "LIGHT_RES",
                 "minValue": 5,
                 "maxValue": 12,
                 "calcType": "resistance"
@@ -109349,7 +109349,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": 18,
                 "maxValue": 38,
                 "calcType": "resistance",
@@ -110208,37 +110208,37 @@
       },
       "effects": [
         {
-          "type": "SLASH",
+          "type": "SLASH_ATK",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "fixe"
         },
         {
-          "type": "SLASH",
+          "type": "SLASH_RES",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "resistance"
         },
         {
-          "type": "PIERCE",
+          "type": "PIERCE_RES",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "resistance"
         },
         {
-          "type": "STRIKE",
+          "type": "STRIKE_RES",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "resistance"
         },
         {
-          "type": "MISSILE",
+          "type": "MISSILE_RES",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "resistance"
         },
         {
-          "type": "MAGIC",
+          "type": "MAGIC_RES",
           "minValue": 5,
           "maxValue": 5,
           "calcType": "resistance"
@@ -110307,31 +110307,31 @@
           "dataId": "SK_HAT_LW_WHIS_1_2",
           "effects": [
             {
-              "type": "SLASH",
+              "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "STRIKE",
+              "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "PIERCE",
+              "type": "PIERCE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MISSILE",
+              "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
             },
             {
-              "type": "MAGIC",
+              "type": "MAGIC_RES",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "resistance"
@@ -110402,34 +110402,34 @@
       "CRITIC_RATE": {},
       "CRITIC_AVOID": {},
       "EVADE": {},
-      "FIRE": {},
-      "ICE": {},
-      "EARTH": {},
-      "WIND": {
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
         "min": -10,
         "max": -10
       },
-      "LIGHTNING": {
+      "LIGHTNING_RES": {
         "min": 20,
         "max": 20
       },
-      "WATER": {},
-      "LIGHT": {},
-      "DARK": {},
-      "SLASH": {
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
         "min": 10,
         "max": 10
       },
-      "PIERCE": {
+      "PIERCE_RES": {
         "min": -10,
         "max": -10
       },
-      "STRIKE": {
+      "STRIKE_RES": {
         "min": 5,
         "max": 5
       },
-      "MISSILE": {},
-      "MAGIC": {
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
         "min": -10,
         "max": -10
       },
@@ -112138,31 +112138,31 @@
                 "calcType": "percent"
               },
               {
-                "type": "SLASH",
+                "type": "SLASH_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "PIERCE",
+                "type": "PIERCE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "STRIKE",
+                "type": "STRIKE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MISSILE",
+                "type": "MISSILE_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"
               },
               {
-                "type": "MAGIC",
+                "type": "MAGIC_RES",
                 "minValue": -20,
                 "maxValue": -8,
                 "calcType": "resistance"

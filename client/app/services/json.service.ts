@@ -266,20 +266,20 @@ export class JsonService {
       "crta": "CRITIC_AVOID",
       "avd" : "EVADE",
 
-      "efi": "FIRE",
-      "eic": "ICE",
-      "eea": "EARTH",
-      "ewi": "WIND",
-      "eth": "LIGHTNING",
-      "ewa": "WATER",
-      "esh": "LIGHT",
-      "eda": "DARK",
+      "efi": "FIRE_RES",
+      "eic": "ICE_RES",
+      "eea": "EARTH_RES",
+      "ewi": "WIND_RES",
+      "eth": "LIGHTNING_RES",
+      "ewa": "WATER_RES",
+      "esh": "LIGHT_RES",
+      "eda": "DARK_RES",
 
-      "asl": "SLASH",
-      "api": "PIERCE",
-      "abl": "STRIKE",
-      "ash": "MISSILE",
-      "ama": "MAGIC",
+      "asl": "SLASH_RES",
+      "api": "PIERCE_RES",
+      "abl": "STRIKE_RES",
+      "ash": "MISSILE_RES",
+      "ama": "MAGIC_RES",
 
       "cpo": "POISON",
       "cbl": "BLIND",
@@ -324,20 +324,20 @@ export class JsonService {
       "crta": "CRITIC_AVOID",
       "avd" : "EVADE",
 
-      "efi": "FIRE",
-      "eic": "ICE",
-      "eea": "EARTH",
-      "ewi": "WIND",
-      "eth": "LIGHTNING",
-      "ewa": "WATER",
-      "esh": "LIGHT",
-      "eda": "DARK",
+      "efi": "FIRE_RES",
+      "eic": "ICE_RES",
+      "eea": "EARTH_RES",
+      "ewi": "WIND_RES",
+      "eth": "LIGHTNING_RES",
+      "ewa": "WATER_RES",
+      "esh": "LIGHT_RES",
+      "eda": "DARK_RES",
 
-      "asl": "SLASH",
-      "api": "PIERCE",
-      "abl": "STRIKE",
-      "ash": "MISSILE",
-      "ama": "MAGIC",
+      "asl": "SLASH_RES",
+      "api": "PIERCE_RES",
+      "abl": "STRIKE_RES",
+      "ash": "MISSILE_RES",
+      "ama": "MAGIC_RES",
 
       "cpo": "POISON",
       "cbl": "BLIND",
@@ -420,6 +420,23 @@ export class JsonService {
     "party"
   ]
 
+  private statsAtkRes = [
+    "FIRE",
+    "ICE",
+    "EARTH",
+    "WIND",
+    "LIGHTNING",
+    "WATER",
+    "LIGHT",
+    "DARK",
+    "SLASH",
+    "PIERCE",
+    "STRIKE",
+    "MISSILE",
+    "MAGIC",
+    "ALL_ELEMENTS",
+    "ALL_ATTACKS"
+  ]
 
 
   constructor(private http: HttpClient, private equipmentService: EquipmentService) {}
@@ -1008,8 +1025,13 @@ export class JsonService {
                 console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
               }
 
+              let type = this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]]
+              if (this.statsAtkRes.indexOf(type) !== -1) {
+                type = type + "_" + (this.calcType[this.buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+              }
+
               skill.effects.push({
-                type: this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]],
+                type: type,
                 minValue: this.buffs[buff]["val" + i],
                 maxValue: this.buffs[buff]["val" + i + "1"],
                 calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
@@ -1184,9 +1206,14 @@ export class JsonService {
                 console.log(this.buffs[buff["buff" + j]])
               }
 
+              let type = this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]]
+              if (this.statsAtkRes.indexOf(type) !== -1) {
+                type = type + "_" + (this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] == "resistance" ? "RES" : "ATK")
+              }
+
               skill.effects.push({
                 side: buff.side === 1 ? "TEAM" : "ENNEMIES",
-                type: this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]],
+                type: type,
                 minValue: this.buffs[buff["buff" + j]]["val" + i],
                 maxValue: this.buffs[buff["buff" + j]]["val" + i + "1"],
                 calcType: this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] : "unknow",

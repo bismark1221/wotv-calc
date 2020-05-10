@@ -41,6 +41,7 @@ export class UnitComponent implements OnInit {
         this.router.navigate(['/unit-not-found']);
       } else {
         this.formatUnit();
+        console.log(this.unit)
       }
     });
   }

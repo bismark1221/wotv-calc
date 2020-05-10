@@ -58,22 +58,6 @@ export class EsperService {
     "LUCK"
   ]
 
-  private unitBuffsAtkRes = [
-    "FIRE",
-    "ICE",
-    "EARTH",
-    "WIND",
-    "LIGHTNING",
-    "WATER",
-    "LIGHT",
-    "DARK",
-    "SLASH",
-    "PIERCE",
-    "STRIKE",
-    "MISSILE",
-    "MAGIC"
-  ]
-
   private unitBuffsOrder = [
     "HP",
     "TP",
@@ -387,10 +371,10 @@ export class EsperService {
   private updateUnitBuffs() {
     this.esper.buffs = {}
 
-    this.unitBuffsAtkRes.forEach(stat => {
-      if (this.esper.stats[stat] && this.esper.stats[stat][(this.esper.star - 1)].min) {
-        this.esper.buffs[stat + "_RES"] = {}
-        this.esper.buffs[stat + "_RES"].base = this.esper.stats[stat][(this.esper.star - 1)].min
+    Object.keys(this.esper.stats).forEach(stat => {
+      if (this.statsType.indexOf(stat) === -1 && this.esper.stats[stat][(this.esper.star - 1)].min) {
+        this.esper.buffs[stat] = {}
+        this.esper.buffs[stat].base = this.esper.stats[stat][(this.esper.star - 1)].min
       }
     })
 
@@ -404,24 +388,11 @@ export class EsperService {
       let node = this.esper.board.nodes[nodeId]
       if (node.type == "buff" && node.level) {
         node.skill.effects.forEach(effect => {
-
-          if (this.unitBuffsAtkRes.indexOf(effect.type) !== -1) {
-            if (effect.calcType === "resistance") {
-              this.updateBuff(effect.type + "_RES", effect.minValue, "board")
-            } else if (effect.calcType === "fixe") {
-              this.updateBuff(effect.type + "_ATK", effect.minValue, "board")
-            } else {
-              console.log("not manage effect in board AtkRes")
-              console.log(node)
-            }
-
+          if (effect.calcType === "percent" || effect.calcType === "fixe" ||  effect.calcType === "resistance") {
+            this.updateBuff(effect.type, effect.minValue, effect.calcType === "percent" ? "percent" : "board")
           } else {
-            if (effect.calcType === "percent" || effect.calcType === "fixe") {
-              this.updateBuff(effect.type, effect.minValue, effect.calcType === "fixe" ? "board" : "percent")
-            } else {
-              console.log("not manage effect in board percent/fixe")
-              console.log(node)
-            }
+            console.log("not manage effect in board percent/fixe")
+            console.log(node)
           }
         })
       }
@@ -454,29 +425,15 @@ export class EsperService {
     Object.keys(this.esper.board.nodes).forEach(nodeId => {
       this.esper.board.nodes[nodeId].skill.effects.forEach(effect => {
         if (findedBuffs.indexOf(effect.type) === -1) {
-          if (this.unitBuffsAtkRes.indexOf(effect.type) !== -1) {
-            if (effect.calcType === "resistance") {
-              if (!this.esper.buffs[effect.type + "_RES"]) {
-                this.esper.buffs[effect.type + "_RES"] = {}
-              }
-              findedBuffs.push(effect.type + "_RES")
-            } else if (effect.calcType === "fixe") {
-              if (!this.esper.buffs[effect.type + "_ATK"]) {
-                this.esper.buffs[effect.type + "_ATK"] = {}
-              }
-              findedBuffs.push(effect.type + "_ATK")
-            }
-          } else {
-            if (!this.esper.buffs[effect.type]) {
-              this.esper.buffs[effect.type] = {}
-            }
-
-            if (effect.calcType === "percent" && !this.esper.buffs[effect.type].percent) {
-              this.esper.buffs[effect.type].percent = 0;
-            }
-
-            findedBuffs.push(effect.type)
+          if (!this.esper.buffs[effect.type]) {
+            this.esper.buffs[effect.type] = {}
           }
+
+          if (effect.calcType === "percent" && !this.esper.buffs[effect.type].percent) {
+            this.esper.buffs[effect.type].percent = 0;
+          }
+
+          findedBuffs.push(effect.type)
         }
       })
     })

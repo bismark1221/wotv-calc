@@ -164,14 +164,6 @@ export class SkillService {
     }
   }
 
-  private getResistanceOrATK(effect) {
-    if (effect.calcType === "resistance") {
-      return "resistance"
-    } else {
-      return "ATK"
-    }
-  }
-
   private getResistanceOrNothing(effect) {
     if (effect.calcType === "resistance") {
       return " resistance"
@@ -264,50 +256,95 @@ export class SkillService {
       case "JUMP" :
         html = this.getIncrease(effect) + " JUMP" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "FIRE" :
-        html = this.getIncrease(effect) + " fire " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "FIRE_RES" :
+        html = this.getIncrease(effect) + " fire resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "ICE" :
-        html = this.getIncrease(effect) + " ice " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "ICE_RES" :
+        html = this.getIncrease(effect) + " ice resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "WIND" :
-        html = this.getIncrease(effect) + " wind " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "WIND_RES" :
+        html = this.getIncrease(effect) + " wind resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "EARTH" :
-        html = this.getIncrease(effect) + " earth " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "EARTH_RES" :
+        html = this.getIncrease(effect) + " earth resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "LIGHTNING" :
-        html = this.getIncrease(effect) + " lightning " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "LIGHTNING_RES" :
+        html = this.getIncrease(effect) + " lightning resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "WATER" :
-        html = this.getIncrease(effect) + " water " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "WATER_RES" :
+        html = this.getIncrease(effect) + " water resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "LIGHT" :
-        html = this.getIncrease(effect) + " light " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "LIGHT_RES" :
+        html = this.getIncrease(effect) + " light resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "DARK" :
-        html = this.getIncrease(effect) + " dark " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "DARK_RES" :
+        html = this.getIncrease(effect) + " dark resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "ALL_ELEMENTS" :
-        html = this.getIncrease(effect) + " all elemental " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "ALL_ELEMENTS_RES" :
+        html = this.getIncrease(effect) + " all elemental resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "SLASH" :
-        html = this.getIncrease(effect) + " slash " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "SLASH_RES" :
+        html = this.getIncrease(effect) + " slash resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "STRIKE" :
-        html = this.getIncrease(effect) + " strike " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "STRIKE_RES" :
+        html = this.getIncrease(effect) + " strike resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "PIERCE" :
-        html = this.getIncrease(effect) + " pierce " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "PIERCE_RES" :
+        html = this.getIncrease(effect) + " pierce resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "MISSILE" :
-        html = this.getIncrease(effect) + " missile " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "MISSILE_RES" :
+        html = this.getIncrease(effect) + " missile resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "MAGIC" :
-        html = this.getIncrease(effect) + " magic " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "MAGIC_RES" :
+        html = this.getIncrease(effect) + " magic resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "ALL_ATTACKS" :
-        html = this.getIncrease(effect) + " all attacks " + this.getResistanceOrATK(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "ALL_ATTACKS_RES" :
+        html = this.getIncrease(effect) + " all attacks resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "FIRE_ATK" :
+        html = this.getIncrease(effect) + " fire ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ICE_ATK" :
+        html = this.getIncrease(effect) + " ice ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "WIND_ATK" :
+        html = this.getIncrease(effect) + " wind ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "EARTH_ATK" :
+        html = this.getIncrease(effect) + " earth ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "LIGHTNING_ATK" :
+        html = this.getIncrease(effect) + " lightning ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "WATER_ATK" :
+        html = this.getIncrease(effect) + " water ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "LIGHT_ATK" :
+        html = this.getIncrease(effect) + " light ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DARK_ATK" :
+        html = this.getIncrease(effect) + " dark ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ALL_ELEMENTS_ATK" :
+        html = this.getIncrease(effect) + " all elemental ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SLASH_ATK" :
+        html = this.getIncrease(effect) + " slash ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "STRIKE_ATK" :
+        html = this.getIncrease(effect) + " strike ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "PIERCE_ATK" :
+        html = this.getIncrease(effect) + " pierce ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MISSILE_ATK" :
+        html = this.getIncrease(effect) + " missile ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MAGIC_ATK" :
+        html = this.getIncrease(effect) + " magic ATK" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ALL_ATTACKS_ATK" :
+        html = this.getIncrease(effect) + " all attacks ATK" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "REGEN" :
         html = this.getChance(effect, false) + " regen" + this.getValue(skill, effect) + this.getTurns(effect)
