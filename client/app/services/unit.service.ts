@@ -258,16 +258,26 @@ export class UnitService {
         unit.activatedSupport[0],
         unit.activatedSupport[1]
       ],
-      esper: {
+      esper: null,
+      card: null,
+      equipments: [null, null, null]
+    }
+
+    if (unit.esper) {
+      this.savedUnits[unit.dataId].esper = {
         dataId: unit.esper.dataId,
         resonance: unit.esper.resonance
-      },
-      card: unit.card.dataId,
-      equipments: [
-        unit.equipments[0].dataId,
-        unit.equipments[1].dataId,
-        unit.equipments[2].dataId,
-      ]
+      }
+    }
+
+    if (unit.card) {
+      this.savedUnits[unit.dataId].card = unit.card.dataId
+    }
+
+    for (let i = 0; i <= 2; i++) {
+      if (unit.equipments && unit.equipments[i]) {
+        this.savedUnits[unit.dataId].equipments[i] = unit.equipments[i].dataId
+      }
     }
 
     Object.keys(unit.board.nodes).forEach(nodeId => {
@@ -675,6 +685,39 @@ export class UnitService {
           }
 
           statsType.push(statType)
+        })
+
+        this.unit.equipments[i].skill.forEach(skill => {
+          if (skill.type !== "skill") {
+            skill.level = this.unit.equipments[i].level
+            skill.maxLevel = this.unit.equipments[i].maxLevel
+          }
+
+          skill.effects.forEach(effect => {
+            if (!this.unit.stats[effect.type]) {
+              this.unit.stats[effect.type] = {
+                baseTotal: 0
+              }
+            }
+
+            let value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+            this.unit.stats[effect.type]['equipment' + i] = value
+
+            if (!this.unit.stats[effect.type].equipment) {
+              this.unit.stats[effect.type].equipment = {
+                positive: 0,
+                negative: -100000000
+              }
+            }
+
+            if (value > 0 && value > this.unit.stats[effect.type].equipment.positive) {
+              this.unit.stats[effect.type].equipment.positive = value
+            } else if (value <= 0 && value > this.unit.stats[effect.type].equipment.negative) {
+              this.unit.stats[effect.type].equipment.negative = value
+            }
+
+            statsType.push(effect.type)
+          })
         })
       }
     }
