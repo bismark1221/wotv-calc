@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
@@ -9,6 +10,8 @@ import { GridService } from '../services/grid.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
+
+import { BuilderEsperDetailComponent } from './builder.esper.detail.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -37,6 +40,7 @@ export class BuilderUnitComponent implements OnInit {
 
   showStatsDetail = false
   showBuffsDetail = false
+  viewCardDetail = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -76,6 +80,7 @@ export class BuilderUnitComponent implements OnInit {
     private esperService: EsperService,
     private cardService: CardService,
     private equipmentService: EquipmentService,
+    private modalService: NgbModal,
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
@@ -271,7 +276,19 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   maxNodes() {
-    console.log(this.unit)
     this.unitService.maxNodes()
+  }
+
+  showEsperDetail() {
+    //viewCardDetail
+    const modalRef = this.modalService.open(BuilderEsperDetailComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.esper = this.unit.esper;
+
+    modalRef.result.then((result) => {
+      //this.navService.updateMenu(false);
+    }, (reason) => {
+      //this.navService.updateMenu(false);
+    });
   }
 }
