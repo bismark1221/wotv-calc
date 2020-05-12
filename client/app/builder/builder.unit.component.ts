@@ -68,9 +68,6 @@ export class BuilderUnitComponent implements OnInit {
     {type: "totalEquipment", translate: "Total Equipement"}
   ]
 
-  selectedLB = 0
-  selectedStar = 1
-
   constructor(
     private unitService: UnitService,
     private localStorageService: LocalStorageService,
@@ -183,9 +180,6 @@ export class BuilderUnitComponent implements OnInit {
           this.selectedEquipmentsIds[i] = null
         }
       }
-
-      this.selectedLB = this.unit.lb
-      this.selectedStar = this.unit.star
     } else {
       this.unit = null
     }
@@ -265,30 +259,19 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   showHideDetail(type) {
-    this.selectedLB = 0
     this["show" + type + "Detail"] = !this["show" + type + "Detail"]
   }
 
   maxUnit() {
-    this.unit.star = 6;
-    this.unit.lb = 5;
-    this.unit.level = 99;
-
-    this.unit.jobsData.forEach(job => {
-      job.level = 15
-    })
-
-    this.unitService.changeStar()
-    this.unitService.changeLevel()
+    this.unitService.maxUnit()
   }
 
-  maxLevel() {
-    this.unit.level = this.unit.maxLevel;
+  maxLevelAndJobs() {
+    this.unitService.maxLevelAndJobs()
+  }
 
-    this.unit.jobsData.forEach(job => {
-      job.level = this.unit.maxJobLevel
-    })
-
-    this.unitService.changeLevel()
+  maxNodes() {
+    console.log(this.unit)
+    this.unitService.maxNodes()
   }
 }
