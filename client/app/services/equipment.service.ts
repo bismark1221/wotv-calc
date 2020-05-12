@@ -235,6 +235,8 @@ export class EquipmentService {
     if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == "skill") {
       this.equipment.skills[0][0].level = 1
     }
+    this.equipment.growIds = Object.keys(this.equipment.grows)
+    this.equipment.grow = this.equipment.growIds[0]
 
     this.initiateSavedEquipment()
     this.updateMaxStat()
@@ -273,7 +275,6 @@ export class EquipmentService {
   private updateMaxStat() {
     let lang = this.translateService.currentLang
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
-    this.equipment.growIds = Object.keys(this.equipment.grows)
 
     this.equipment.skills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
@@ -307,8 +308,6 @@ export class EquipmentService {
         }
       })
     })
-
-    this.equipment.grow = this.equipment.growIds[0]
 
     this.equipment.maxLevel = this.equipment.grows[this.equipment.grow].curve.MAX_LV
     this.equipment.tableLevel = []
