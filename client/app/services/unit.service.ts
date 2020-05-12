@@ -245,7 +245,7 @@ export class UnitService {
 
     this.savedUnits[unit.dataId] = {
       star: unit.star,
-      lb: unit.lb,
+      lb: unit.lb ? unit.lb : 0,
       level: unit.level,
       jobs: [
         unit.jobsData[0].level,
@@ -400,7 +400,7 @@ export class UnitService {
       5: 35
     }
 
-    this.unit.maxLevel = 30 + levelPerStar[this.unit.star] + levelPerLB[this.unit.lb];
+    this.unit.maxLevel = 30 + levelPerStar[this.unit.star] + levelPerLB[this.unit.lb ? this.unit.lb : 0];
 
     if (this.unit.level > this.unit.maxLevel) {
       this.unit.level = this.unit.maxLevel
@@ -431,7 +431,7 @@ export class UnitService {
       4
     ]
 
-    this.unit.maxJobLevel = 6 + levelPerLB[this.unit.lb];
+    this.unit.maxJobLevel = 6 + levelPerLB[this.unit.lb ? this.unit.lb : 0];
 
     let updated = false;
     this.unit.jobsData.forEach((job, jobIndex) => {

@@ -40,6 +40,7 @@ export class BuilderUnitComponent implements OnInit {
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
+    {type: "baseTotal", translate: "Base"},
     {type: "guild", translate: "Guild Statues"},
     {type: "board", translate: "Board"},
     {type: "support", translate: "Support"},
@@ -54,6 +55,7 @@ export class BuilderUnitComponent implements OnInit {
   ]
 
   BuffsFrom = [
+    {type: "base", translate: "Base"},
     {type: "board", translate: "Board"},
     {type: "support", translate: "Support"},
     {type: "masterSkill", translate: "Master Skill"},
@@ -65,6 +67,9 @@ export class BuilderUnitComponent implements OnInit {
     {type: "equipment2", translate: "Equipment 3"},
     {type: "totalEquipment", translate: "Total Equipement"}
   ]
+
+  selectedLB = 0
+  selectedStar = 1
 
   constructor(
     private unitService: UnitService,
@@ -178,6 +183,9 @@ export class BuilderUnitComponent implements OnInit {
           this.selectedEquipmentsIds[i] = null
         }
       }
+
+      this.selectedLB = this.unit.lb
+      this.selectedStar = this.unit.star
     } else {
       this.unit = null
     }
@@ -219,11 +227,16 @@ export class BuilderUnitComponent implements OnInit {
     this.addEquipmentToUnit(pos)
   }
 
-  changeStar() {
+  changeStar(value) {
+    this.unit.star = value
     this.unitService.changeStar()
   }
 
-  changeLB() {
+  changeLB(value) {
+    if (value == this.unit.lb) {
+      value = undefined
+    }
+    this.unit.lb = value
     this.unitService.changeLB()
   }
 
@@ -252,6 +265,30 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   showHideDetail(type) {
+    this.selectedLB = 0
     this["show" + type + "Detail"] = !this["show" + type + "Detail"]
+  }
+
+  maxUnit() {
+    this.unit.star = 6;
+    this.unit.lb = 5;
+    this.unit.level = 99;
+
+    this.unit.jobsData.forEach(job => {
+      job.level = 15
+    })
+
+    this.unitService.changeStar()
+    this.unitService.changeLevel()
+  }
+
+  maxLevel() {
+    this.unit.level = this.unit.maxLevel;
+
+    this.unit.jobsData.forEach(job => {
+      job.level = this.unit.maxJobLevel
+    })
+
+    this.unitService.changeLevel()
   }
 }

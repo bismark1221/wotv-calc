@@ -29,3 +29,45 @@
 tr.disable {
   display: none;
 }
+
+.star {
+  height: 40px;
+  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background-size: 40px;
+  width: 40px;
+}
+
+.star.filled {
+  height: 40px;
+  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background-size: 40px;
+  width: 40px;
+}
+
+.lb {
+  height: 40px;
+  background: url("assets/icons/lb_off.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb.filled {
+  height: 40px;
+  background: url("assets/icons/lb_on.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.mainJob {
+  height: 40px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+}
+
+.subJob {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+}
