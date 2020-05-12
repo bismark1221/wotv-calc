@@ -35,6 +35,37 @@ export class BuilderUnitComponent implements OnInit {
   selectedEquipments = [null, null, null]
   selectedEquipmentsIds = [null, null, null]
 
+  showStatsDetail = false
+  showBuffsDetail = false
+
+  statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
+  statsFrom = [
+    {type: "guild", translate: "Guild Statues"},
+    {type: "board", translate: "Board"},
+    {type: "support", translate: "Support"},
+    {type: "masterSkill", translate: "Master Skill"},
+    {type: "esper", translate: "Esper"},
+    {type: "card", translate: "Card"},
+    {type: "cardParty", translate: "Card Party"},
+    {type: "equipment0", translate: "Equipment 1"},
+    {type: "equipment1", translate: "Equipment 2"},
+    {type: "equipment2", translate: "Equipment 3"},
+    {type: "totalEquipment", translate: "Total Equipement"}
+  ]
+
+  BuffsFrom = [
+    {type: "board", translate: "Board"},
+    {type: "support", translate: "Support"},
+    {type: "masterSkill", translate: "Master Skill"},
+    {type: "esper", translate: "Esper"},
+    {type: "card", translate: "Card"},
+    {type: "cardParty", translate: "Card Party"},
+    {type: "equipment0", translate: "Equipment 1"},
+    {type: "equipment1", translate: "Equipment 2"},
+    {type: "equipment2", translate: "Equipment 3"},
+    {type: "totalEquipment", translate: "Total Equipement"}
+  ]
+
   constructor(
     private unitService: UnitService,
     private localStorageService: LocalStorageService,
@@ -218,5 +249,9 @@ export class BuilderUnitComponent implements OnInit {
 
   save() {
     this.unitService.saveUnit(this.unit)
+  }
+
+  showHideDetail(type) {
+    this["show" + type + "Detail"] = !this["show" + type + "Detail"]
   }
 }
