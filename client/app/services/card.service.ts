@@ -313,7 +313,7 @@ export class CardService {
 
   maxCard() {
     this.card.star = 4;
-    this.card.level = this.card.maxLevel;
+    this.card.level = this.levelPerStar[this.card.rarity][this.card.star];
 
     this.changeStar()
     this.changeLevel()
