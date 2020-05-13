@@ -35,9 +35,11 @@
     <select [(ngModel)]="card.level" (ngModelChange)="changeLevels()">
       <option *ngFor="let level of card.tableLevels">{{ level }}</option>
     </select>
-  </div>
 
-  <button (click)="save()">SAVE</button>
+    <button (click)="maxCard()">Max card</button>
+    <button (click)="maxLevel()">Max level</button>
+    <button (click)="save()">SAVE</button>
+  </div>
 </div>
 
 <div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="card">

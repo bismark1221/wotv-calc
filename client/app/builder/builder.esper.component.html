@@ -32,9 +32,10 @@
     <select [(ngModel)]="esper.level" (ngModelChange)="changeLevel()">
       <option *ngFor="let level of esper.tableLevels">{{ level }}</option>
     </select>
-  </div>
 
-  <button (click)="save()">SAVE</button>
+    <button (click)="maxEsper()">Max Esper</button>
+    <button (click)="save()">SAVE</button>
+  </div>
 </div>
 
 <div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="esper">

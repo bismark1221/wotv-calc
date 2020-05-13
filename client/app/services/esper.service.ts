@@ -285,16 +285,6 @@ export class EsperService {
     this.localStorageService.set('espers', this.savedEspers);
   }
 
-
-
-
-
-
-
-
-
-
-
   selectEsperForBuilder(esperId) {
     this.esper = this.getEsper(esperId)
     this.esper.name = this.esper.getName(this.translateService)
@@ -350,6 +340,7 @@ export class EsperService {
     for (let i = 1; i <= this.esper.maxLevel; i++) {
       this.esper.tableLevels.push(i);
     }
+    this.disableNotAvailableNodes()
   }
 
   changeLevel() {
@@ -484,6 +475,8 @@ export class EsperService {
         this.esper.usedSPs += this.esper.board.nodes[nodeId].skill.sp
       }
     })
+
+    this.disableNotAvailableNodes()
   }
 
   rightClickNode(node) {
@@ -550,5 +543,21 @@ export class EsperService {
     } else {
       return 0
     }
+  }
+
+  maxEsper() {
+    this.esper.star = 2;
+    this.esper.level = 80;
+
+    this.changeStar()
+    this.changeLevel()
+  }
+
+  disableNotAvailableNodes() {
+    Object.keys(this.esper.board.nodes).forEach(node => {
+      if (this.esper.board.nodes[node].activated && !this.canActivateNode(node)) {
+        this.hideNode(node, true)
+      }
+    })
   }
 }

@@ -62,4 +62,8 @@ export class BuilderEsperComponent implements OnInit {
   save() {
     this.esperService.saveEsper(this.esper)
   }
+
+  maxEsper() {
+    this.esperService.maxEsper()
+  }
 }

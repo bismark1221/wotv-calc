@@ -310,4 +310,18 @@ export class CardService {
       })
     })
   }
+
+  maxCard() {
+    this.card.star = 4;
+    this.card.level = this.card.maxLevel;
+
+    this.changeStar()
+    this.changeLevel()
+  }
+
+  maxLevel() {
+    this.card.level = this.card.maxLevel;
+
+    this.changeLevel()
+  }
 }

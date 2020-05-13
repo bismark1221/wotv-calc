@@ -49,4 +49,12 @@ export class BuilderCardComponent implements OnInit {
   save() {
     this.cardService.saveCard(this.card)
   }
+
+  maxCard() {
+    this.cardService.maxCard()
+  }
+
+  maxLevel() {
+    this.cardService.maxLevel()
+  }
 }
