@@ -98,7 +98,7 @@
         </td>
         <td class="rangeTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
           <ng-template #tip_table><div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
             <div class="divSkillTableHtml" [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
           </div>
         </td>
@@ -398,7 +398,7 @@
         </td>
         <td *ngIf="i == 'counter'">
           <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
             <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
           </div>
         </td>
@@ -456,7 +456,7 @@
         </td>
         <td>
           <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
             <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
           </div>
         </td>
@@ -503,7 +503,7 @@
         </td>
         <td>
           <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
             <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
           </div>
         </td>

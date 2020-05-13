@@ -92,7 +92,7 @@
         </td>
         <td class="rangeTd">
           <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
             <div class="divSkillTableHtml" [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
           </div>
         </td>

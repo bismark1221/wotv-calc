@@ -119,7 +119,7 @@
         </td>
         <td>
           <ng-template #tip_table><div [innerHTML]="esper.skills[0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table">
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
             <div class="divSkillTableHtml" [innerHTML]="esper.skills[0].skillTableHtml"></div>
           </div>
         </td>
