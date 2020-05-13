@@ -374,6 +374,7 @@ export class UnitService {
 
   changeStar() {
     this.updateMaxLevel();
+    this.disableNotAvailableNodes()
   }
 
   changeLB() {
@@ -456,6 +457,8 @@ export class UnitService {
     for (let i = 1; i <= this.unit.maxJobLevel; i++) {
       this.unit.tableJobLevels.push(i);
     }
+
+    this.disableNotAvailableNodes()
   }
 
   changeLevel() {
@@ -807,7 +810,10 @@ export class UnitService {
     if (node !== 0 && this.canActivateNode(node)) {
       if (!this.unit.board.nodes[node].activated) {
         this.unit.board.nodes[node].activated = true;
-        this.showNode(this.unit.board.nodes[node].parent)
+        let parentNode = this.unit.board.nodes[node].parent
+        if (!this.unit.board.nodes[parentNode].activated) {
+          this.showNode(parentNode)
+        }
       }
 
       this.updateSkill(node, true)
@@ -833,7 +839,7 @@ export class UnitService {
       node.level = increase ? 1 : 0;
     } else {
       if (increase) {
-        node.level = typeof(node.level) == "number" ? (node.level == 20 ? 20 : node.level + 1) : 1
+        node.level = typeof(node.level) == "number" ? (node.level == node.skill.maxLevel ? node.skill.maxLevel : node.level + 1) : 1
       } else {
         node.level = typeof(node.level) == "number" ? (node.level == 0 || fullHide ? 0 : node.level - 1) : 0
       }
@@ -846,10 +852,10 @@ export class UnitService {
     let nodeData = this.unit.board.nodes[node]
 
     if (node !== 0) {
-      if (nodeData.type == "buff") {
+      if (nodeData && nodeData.type == "buff") {
         return this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel
       } else {
-        return !nodeData.skill.unlockStar || (this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
+        return !nodeData || !nodeData.skill.unlockStar || (this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
       }
     } else {
       return true
@@ -925,6 +931,50 @@ export class UnitService {
         }
 
         this.unit.availableStats[i].push(statType)
+      }
+    })
+  }
+
+  maxUnit() {
+    this.unit.star = 6;
+    this.unit.lb = 5;
+    this.unit.level = 99;
+
+    this.unit.jobsData.forEach(job => {
+      job.level = 15
+    })
+
+    this.maxNodes()
+    this.changeStar()
+    this.changeLevel()
+  }
+
+  maxLevelAndJobs() {
+    this.unit.level = this.unit.maxLevel;
+
+    this.unit.jobsData.forEach(job => {
+      job.level = this.unit.maxJobLevel
+    })
+
+    this.maxNodes()
+    this.changeLevel()
+  }
+
+  maxNodes() {
+    Object.keys(this.unit.board.nodes).forEach(node => {
+      if (this.canActivateNode(node)) {
+        this.showNode(node)
+        if (this.unit.board.nodes[node].skill && this.unit.board.nodes[node].skill.maxLevel) {
+          this.unit.board.nodes[node].level = this.unit.board.nodes[node].skill.maxLevel
+        }
+      }
+    })
+  }
+
+  disableNotAvailableNodes() {
+    Object.keys(this.unit.board.nodes).forEach(node => {
+      if (this.unit.board.nodes[node].activated && !this.canActivateNode(node)) {
+        this.hideNode(node, true)
       }
     })
   }

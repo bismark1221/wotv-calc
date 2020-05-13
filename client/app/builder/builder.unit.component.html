@@ -59,7 +59,7 @@
 
   <div *ngIf="unit">
     <button (click)="maxUnit()">Max unit</button>
-    <button (click)="maxLevel()">Max level & jobs</button>
+    <button (click)="maxLevelAndJobs()">Max level & jobs</button>
   </div>
 
   <div *ngIf="unit">
@@ -126,6 +126,7 @@
       <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
         <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
       </select>
+      <!-- <button (click)="showEsperDetail()">TEST</button> -->
     </div>
 
     Card :<br />
@@ -249,7 +250,7 @@
         }" >
           <i class="fa fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
           <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
-          <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level }}</span>
+          <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
           <i class="fa fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
         </div>
       </li>

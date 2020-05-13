@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
@@ -9,6 +10,8 @@ import { GridService } from '../services/grid.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
+
+import { BuilderEsperDetailComponent } from './builder.esper.detail.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -37,6 +40,7 @@ export class BuilderUnitComponent implements OnInit {
 
   showStatsDetail = false
   showBuffsDetail = false
+  viewCardDetail = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -68,9 +72,6 @@ export class BuilderUnitComponent implements OnInit {
     {type: "totalEquipment", translate: "Total Equipement"}
   ]
 
-  selectedLB = 0
-  selectedStar = 1
-
   constructor(
     private unitService: UnitService,
     private localStorageService: LocalStorageService,
@@ -79,6 +80,7 @@ export class BuilderUnitComponent implements OnInit {
     private esperService: EsperService,
     private cardService: CardService,
     private equipmentService: EquipmentService,
+    private modalService: NgbModal,
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
@@ -183,9 +185,6 @@ export class BuilderUnitComponent implements OnInit {
           this.selectedEquipmentsIds[i] = null
         }
       }
-
-      this.selectedLB = this.unit.lb
-      this.selectedStar = this.unit.star
     } else {
       this.unit = null
     }
@@ -265,30 +264,31 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   showHideDetail(type) {
-    this.selectedLB = 0
     this["show" + type + "Detail"] = !this["show" + type + "Detail"]
   }
 
   maxUnit() {
-    this.unit.star = 6;
-    this.unit.lb = 5;
-    this.unit.level = 99;
-
-    this.unit.jobsData.forEach(job => {
-      job.level = 15
-    })
-
-    this.unitService.changeStar()
-    this.unitService.changeLevel()
+    this.unitService.maxUnit()
   }
 
-  maxLevel() {
-    this.unit.level = this.unit.maxLevel;
+  maxLevelAndJobs() {
+    this.unitService.maxLevelAndJobs()
+  }
 
-    this.unit.jobsData.forEach(job => {
-      job.level = this.unit.maxJobLevel
-    })
+  maxNodes() {
+    this.unitService.maxNodes()
+  }
 
-    this.unitService.changeLevel()
+  showEsperDetail() {
+    //viewCardDetail
+    const modalRef = this.modalService.open(BuilderEsperDetailComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.esper = this.unit.esper;
+
+    modalRef.result.then((result) => {
+      //this.navService.updateMenu(false);
+    }, (reason) => {
+      //this.navService.updateMenu(false);
+    });
   }
 }
