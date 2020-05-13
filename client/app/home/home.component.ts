@@ -17,6 +17,11 @@ export class HomeComponent {
 
   updated = [
     [
+      {type: "esper", dataId: "UN_LW_S_ODIN"},
+      {type: "card", dataId: "VC_LW_ODIN"},
+      {type: "card", dataId: "VC_LW_NEWYEAR"}
+    ],
+    [
       {type: "unit", dataId: "UN_LW_P_WHIS"},
       {type: "unit", dataId: "UN_LW_P_KTON"}
     ],
@@ -25,9 +30,6 @@ export class HomeComponent {
       {type: "unit", dataId: "UN_FFT_P_RAMZ"},
       {type: "unit", dataId: "UN_FFT_P_GFGR"},
       {type: "card", dataId: "VC_FFT_MV1"}
-    ],
-    [
-      {type: "unit", dataId: "UN_LW_P_ETRE"}
     ]
   ];
 

@@ -41,7 +41,8 @@ export class EsperService {
       "UN_LW_S_GLEM",
       "UN_LW_S_RAMU",
       "UN_LW_S_SHIV",
-      "UN_LW_S_SIRE"
+      "UN_LW_S_SIRE",
+      "UN_LW_S_ODIN"
     ]
   }
 

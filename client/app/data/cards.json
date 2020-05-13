@@ -1241,6 +1241,104 @@
       "maxLevel": 1
     }
   },
+  "VC_LW_NEWYEAR": {
+    "dataId": "VC_LW_NEWYEAR",
+    "names": {
+      "en": "Greetings from Afar",
+      "fr": "Par-delà les terres"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 25,
+        "max": 200
+      },
+      "ATK": {
+        "min": 25,
+        "max": 100
+      },
+      "MAG": {
+        "min": 25,
+        "max": 100
+      }
+    },
+    "image": "lapsnewy",
+    "slug": "greetings-from-afar",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AQUATIC_KILLER",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AQUATIC_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 4
+    }
+  },
   "VC_LW_HOLYNIGHT": {
     "dataId": "VC_LW_HOLYNIGHT",
     "names": {
@@ -3097,6 +3195,141 @@
         "fr": ""
       },
       "maxLevel": 60
+    }
+  },
+  "VC_LW_ODIN": {
+    "dataId": "VC_LW_ODIN",
+    "names": {
+      "en": "Realm Reaver, Odin",
+      "fr": "Odin, le Saccageur"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 46,
+        "max": 362
+      },
+      "ATK": {
+        "min": 36,
+        "max": 142
+      },
+      "MAG": {
+        "min": 10,
+        "max": 38
+      }
+    },
+    "image": "lapsodin",
+    "slug": "realm-reaver-odin",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATTACK_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATTACK_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATTACK_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": ""
+      },
+      "maxLevel": 1
     }
   },
   "VC_LW_BOMB": {
