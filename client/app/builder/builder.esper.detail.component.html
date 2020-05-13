@@ -1,13 +1,4 @@
 <div style="width: 30%; display: inline-block;">
-  <ng-select [items]="espers"
-             bindLabel="name"
-             bindValue="id"
-             groupBy="rarity"
-             placeholder="Espers"
-             [(ngModel)]="selectedId"
-             (ngModelChange)="selectEsper()">
-  </ng-select>
-
   <div *ngIf="esper">
     <table class="esperTable">
       <tbody>
