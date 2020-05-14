@@ -515,7 +515,7 @@
 </div>
 
 <div class="row" *ngIf="grid">
-  <div class="hexGridContainer" style="text-align: center;">
+  <div class="unitGridContainer" style="text-align: center;">
     <ul class="hexGrid">
       <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
         <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
