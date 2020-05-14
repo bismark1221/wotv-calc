@@ -125,8 +125,8 @@
       Esper resonance <br/>
       <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
         <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
-      </select>
-      <!-- <button (click)="showEsperDetail()">TEST</button> -->
+      </select><br />
+      <button (click)="showEsperDetail()">Custom Esper</button>
     </div>
 
     Card :<br />
@@ -233,7 +233,7 @@
 </div>
 
 <div class="row" *ngIf="unit">
-  <div class="hexGridContainer" style="text-align: center;">
+  <div class="unitGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
       <li *ngFor="let node of unit.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
         <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>

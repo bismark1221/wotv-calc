@@ -1,19 +1,9 @@
-.elementImg {
-  height: 32px;
-}
-
-.unitImg {
-  height: 150px;
-  margin-top: 10px;
-}
-
-.unitName {
-  font-weight: bold;
-  margin-left: 10px
+.esperImg {
+  width: 200px;
 }
 
 .statsTable {
-  width: 800px;
+  width: 1000px;
 }
 
 .unitsCol {
@@ -32,4 +22,74 @@
   margin-top: 50px;
   background-color: #e6e3e3;
   padding: 10px;
+}
+
+.buffImg {
+  width: 40px;
+}
+
+.statTd {
+  width: 12.5%
+}
+
+
+
+
+.leftBlock {
+  display: inline-block;
+  width: 250px;
+}
+
+.leftBlock .esperTableAsset {
+  margin: auto;
+}
+
+.rightBlock {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+
+.upperBlock {
+  display: block;
+}
+
+.upperBlock .esperDiv {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.upperBlock .esperTableAsset {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.upperBlock .starLevelDiv {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.lowerBlock {}
+
+.lowerBlock .statsTable {
+  margin: auto
+}
+
+.star {
+  height: 40px;
+  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background-size: 40px;
+  width: 40px;
+}
+
+.star.filled {
+  height: 40px;
+  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background-size: 40px;
+  width: 40px;
 }

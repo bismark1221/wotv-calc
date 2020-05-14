@@ -11,7 +11,7 @@ import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 
-import { BuilderEsperDetailComponent } from './builder.esper.detail.component';
+import { BuilderEsperComponent } from './builder.esper.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -322,14 +322,17 @@ export class BuilderUnitComponent implements OnInit {
 
   showEsperDetail() {
     //viewCardDetail
-    const modalRef = this.modalService.open(BuilderEsperDetailComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
 
     modalRef.componentInstance.esper = this.unit.esper;
+    modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
       //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
     }, (reason) => {
       //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
     });
   }
 }

@@ -134,13 +134,23 @@ td {
 
 
 
-/* Esper Grid */
-.hexGridContainer {
-  margin-left: 150px;
-  height: 1000px;
+/* Grid */
+.esperGridContainer {
+  margin: auto;
+  height: 720px;
   width: 1000px;
   position: relative;
   transform-origin: 50% 50%;
+  left: 50px;
+}
+
+.unitGridContainer {
+  margin: auto;
+  height: 800px;
+  width: 1000px;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 50px;
 }
 
 .hexGrid {
@@ -163,6 +173,7 @@ td {
   transform: rotate(-60deg) skewY(30deg);
   visibility: hidden;
   width: 9.285714286%;
+  z-index: 10;
 }
 
 .hexGrid li * {
@@ -298,7 +309,6 @@ td {
 .line {
   border: none;
   outline: 6px solid grey;
-  z-index: -1;
   width: 100px;
   position: absolute;
 }
@@ -310,4 +320,8 @@ td {
 
 .hex .fullIcon img {
   width: 100px;
+}
+
+.modal-dialog {
+  max-width: 1200px;
 }

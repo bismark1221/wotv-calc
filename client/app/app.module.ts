@@ -40,7 +40,6 @@ import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
 import { BuilderCardComponent } from './builder/builder.card.component';
 import { BuilderEsperComponent } from './builder/builder.esper.component';
-import { BuilderEsperDetailComponent } from './builder/builder.esper.detail.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 
@@ -84,7 +83,6 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderUnitComponent,
     BuilderCardComponent,
     BuilderEsperComponent,
-    BuilderEsperDetailComponent,
     BuilderEquipmentComponent,
     BuilderGuildComponent
   ],

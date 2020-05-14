@@ -1,15 +1,21 @@
-<div style="width: 30%; display: inline-block;">
-  <ng-select [items]="espers"
-             bindLabel="name"
-             bindValue="id"
-             groupBy="rarity"
-             placeholder="Espers"
-             [(ngModel)]="selectedId"
-             (ngModelChange)="selectEsper()">
-  </ng-select>
+<div
+  [ngClass]="{
+    'leftBlock': !fromUnitBuilder,
+    'upperBlock': fromUnitBuilder
+  }">
+  <div *ngIf="!fromUnitBuilder">
+    <ng-select [items]="espers"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               placeholder="Espers"
+               [(ngModel)]="selectedId"
+               (ngModelChange)="selectEsper()">
+    </ng-select>
+  </div>
 
-  <div *ngIf="esper">
-    <table class="esperTable">
+  <div *ngIf="esper" class="esperDiv">
+    <table class="esperTableAsset">
       <tbody>
         <tr>
           <th colspan="3">{{ esper.name }}</th>
@@ -19,51 +25,57 @@
         </tr>
       </tbody>
     </table>
-  </div>
 
-  <div *ngIf="esper">
-    Star
-    <select [(ngModel)]="esper.star" (ngModelChange)="changeStar()">
-      <option>1</option>
-      <option>2</option>
-    </select>
+    <div class="starLevelDiv">
+      <div>
+        <ngb-rating [(rate)]="esper.star" [max]="2">
+          <ng-template let-fill="fill" let-index="index">
+            <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
+          </ng-template>
+        </ngb-rating>
+      </div>
 
-    Level
-    <select [(ngModel)]="esper.level" (ngModelChange)="changeLevel()">
-      <option *ngFor="let level of esper.tableLevels">{{ level }}</option>
-    </select>
+      <div>
+        Level
+        <select [(ngModel)]="esper.level" (ngModelChange)="changeLevel()">
+          <option *ngFor="let level of esper.tableLevels">{{ level }}</option>
+        </select>
+      </div>
 
-    <button (click)="maxEsper()">Max Esper</button>
-    <button (click)="save()">SAVE</button>
+      <button (click)="maxEsper()">Max Esper</button>
+      <button (click)="save()">SAVE</button>
+    </div>
   </div>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="esper">
+<div *ngIf="esper"
+  [ngClass]="{
+    'rightBlock': !fromUnitBuilder,
+    'lowerBlock': fromUnitBuilder
+  }">
   <table class="statsTable">
     <tbody>
       <tr>
         <th colspan="13">Stats</th>
       </tr>
       <tr>
-        <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">{{ type }}</th>
+        <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']" class="statTd">{{ type }}</th>
       </tr>
       <tr>
         <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
           {{ esper.stats[type].base }} / {{ esper.stats[type][1].max }}
         </td>
       </tr>
-    </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
       <tr>
         <th colspan="9">buffs</th>
       </tr>
     </tbody>
     <tbody *ngFor="let line of esper.possibleBuffs">
       <tr>
-        <th *ngFor="let buffType of line">{{ buffType }}</th>
+        <th *ngFor="let buffType of line">
+          <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.png' }}">
+          <span *ngIf="buffsImage.indexOf(buffType.toLowerCase()) === -1">{{ buffType.replace("_", " ") }}</span>
+        </th>
       </tr>
       <tr>
         <td *ngFor="let buffType of line">{{ esper.buffs[buffType].percent >= 0 ? esper.buffs[buffType].percent + '%' : esper.buffs[buffType].total }}</td>
@@ -76,7 +88,7 @@
   <div class="countSPs">
     SPs: {{ esper.usedSPs }} / {{ esper.maxSPs }}
   </div>
-  <div class="hexGridContainer" style="text-align: center;">
+  <div class="esperGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
       <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
         <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
