@@ -846,7 +846,9 @@ export class JsonService {
       eff_dst: null,
       atk_det: null,
       elem: null,
-      cap: null
+      cap: null,
+      stl_val: null,
+      stl_val1 : null
     };
 
     if (skill.type == "buff") {
@@ -972,6 +974,15 @@ export class JsonService {
     if (dataSkill.move) {
       skill.effects.push({
         type: "MOVE_UNIT"
+      });
+    }
+
+    if (dataSkill.stl_val) {
+      skill.effects.push({
+        type: "STEAL",
+        minValue: dataSkill.stl_val,
+        maxValue: dataSkill.stl_val1,
+        calcType: "unknow"
       });
     }
 

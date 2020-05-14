@@ -583,6 +583,9 @@ export class SkillService {
       case "SWITCH_POS" :
         html = "Switch position with target"
       break
+      case "STEAL" :
+        html = "Steal" + this.getValue(skill, effect)
+      break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
@@ -622,6 +625,14 @@ export class SkillService {
 
     if (skill.hit) {
       html += (skill.damage ? "<br />" : "") + "+" + skill.hit + "% Accuracy"
+    }
+
+    if (skill.pierce) {
+      html += (skill.damage ? "<br />" : "") + "Piercing"
+    }
+
+    if (skill.ctbreak) {
+      html += (skill.damage ? "<br />" : "") + "Cancel Ability Activation"
     }
 
     return html

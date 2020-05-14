@@ -11532,7 +11532,14 @@
             "unlockJob": 2,
             "jobLevel": 3,
             "jp": 100,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1",
             "type": "skill",
             "mainSkill": false,
@@ -27417,7 +27424,14 @@
             "unlockJob": 3,
             "jobLevel": 5,
             "jp": 200,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1",
             "type": "skill",
             "mainSkill": false,
@@ -27787,7 +27801,14 @@
             "unlockJob": 3,
             "jobLevel": 12,
             "jp": 1250,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 115,
+                "maxValue": 130,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_3_SUB",
             "type": "skill",
             "mainSkill": false,
@@ -33472,7 +33493,14 @@
             "unlockJob": 2,
             "jobLevel": 3,
             "jp": 100,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1",
             "type": "skill",
             "mainSkill": false,
@@ -34350,7 +34378,14 @@
             "unlockJob": 2,
             "jobLevel": 12,
             "jp": 1250,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 115,
+                "maxValue": 130,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_3_SUB",
             "type": "skill",
             "mainSkill": false,
@@ -34864,7 +34899,14 @@
             "unlockStar": null,
             "unlockJob": 1,
             "jp": 0,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1_INIT",
             "type": "skill",
             "mainSkill": true,
@@ -35903,7 +35945,14 @@
             "unlockJob": 1,
             "jobLevel": 12,
             "jp": 1250,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 115,
+                "maxValue": 130,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_3",
             "type": "skill",
             "mainSkill": true,
@@ -69732,7 +69781,14 @@
             "unlockStar": null,
             "unlockJob": 1,
             "jp": 0,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1_INIT",
             "type": "skill",
             "mainSkill": true,
@@ -70757,7 +70813,14 @@
             "unlockJob": 1,
             "jobLevel": 12,
             "jp": 1250,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 115,
+                "maxValue": 130,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_3",
             "type": "skill",
             "mainSkill": true,
@@ -79023,7 +79086,14 @@
             "unlockJob": 2,
             "jobLevel": 3,
             "jp": 100,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1",
             "type": "skill",
             "mainSkill": false,
@@ -80456,7 +80526,14 @@
             "unlockStar": null,
             "unlockJob": 1,
             "jp": 0,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1_INIT",
             "type": "skill",
             "mainSkill": true,
@@ -81500,7 +81577,14 @@
             "unlockJob": 1,
             "jobLevel": 12,
             "jp": 1250,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 115,
+                "maxValue": 130,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_3",
             "type": "skill",
             "mainSkill": true,
@@ -83451,7 +83535,14 @@
             "unlockJob": 3,
             "jobLevel": 5,
             "jp": 200,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1",
             "type": "skill",
             "mainSkill": false,
@@ -96341,7 +96432,14 @@
             "unlockJob": 3,
             "jobLevel": 5,
             "jp": 200,
-            "effects": [],
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
             "dataId": "SK_LW_THI_M_1",
             "type": "skill",
             "mainSkill": false,
