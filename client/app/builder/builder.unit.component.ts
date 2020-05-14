@@ -72,6 +72,47 @@ export class BuilderUnitComponent implements OnInit {
     {type: "totalEquipment", translate: "Total Equipement"}
   ]
 
+  buffsImage = [
+    "dark_atk",
+    "dark_killer",
+    "dark_res",
+    "earth_atk",
+    "earth_killer",
+    "earth_res",
+    "fire_atk",
+    "fire_killer",
+    "fire_res",
+    "ice_atk",
+    "ice_killer",
+    "ice_res",
+    "light_atk",
+    "light_killer",
+    "light_res",
+    "lightning_atk",
+    "lightning_killer",
+    "lightning_res",
+    "neutral_atk",
+    "neutral_killer",
+    "neutral_res",
+    "water_atk",
+    "water_killer",
+    "water_res",
+    "wind_atk",
+    "wind_killer",
+    "wind_res",
+
+    "magic_atk",
+    "magic_res",
+    "missile_atk",
+    "missile_res",
+    "pierce_atk",
+    "pierce_res",
+    "slash_atk",
+    "slash_res",
+    "strike_atk",
+    "strike_res",
+  ]
+
   constructor(
     private unitService: UnitService,
     private localStorageService: LocalStorageService,

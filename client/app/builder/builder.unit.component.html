@@ -214,7 +214,10 @@
     <tbody *ngFor="let line of unit.availableStats">
       <tr>
         <th></th>
-        <th *ngFor="let statType of line">{{ statType }}</th>
+        <th *ngFor="let statType of line">
+          <img *ngIf="buffsImage.indexOf(statType.toLowerCase()) !== -1" class="buffImg" title="{{ statType }}" src="{{ '/assets/buffs/' + statType.toLowerCase() + '.png' }}">
+          <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType }}</span>
+        </th>
       </tr>
       <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of ['board', 'support', 'masterSkill', 'esper', 'card', 'cardParty', 'equipment0', 'equipment1', 'equipment2', 'totalEquipment']">
         <td>{{ comeFrom }}</td>
