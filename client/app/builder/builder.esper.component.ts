@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { EsperService } from '../services/esper.service';
 
@@ -59,7 +60,8 @@ export class BuilderEsperComponent implements OnInit {
 
   constructor(
     private esperService: EsperService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private modalService: NgbModal
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getEspers();
@@ -110,5 +112,9 @@ export class BuilderEsperComponent implements OnInit {
 
   maxEsper() {
     this.esperService.maxEsper()
+  }
+
+  close() {
+    this.modalService.dismissAll();
   }
 }

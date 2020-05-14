@@ -12,6 +12,7 @@ import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 
 import { BuilderEsperComponent } from './builder.esper.component';
+import { BuilderCardComponent } from './builder.card.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -40,7 +41,6 @@ export class BuilderUnitComponent implements OnInit {
 
   showStatsDetail = false
   showBuffsDetail = false
-  viewCardDetail = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -321,10 +321,24 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   showEsperDetail() {
-    //viewCardDetail
     const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
 
     modalRef.componentInstance.esper = this.unit.esper;
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
+    }, (reason) => {
+      //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
+    });
+  }
+
+  showCardDetail() {
+    const modalRef = this.modalService.open(BuilderCardComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.card = this.unit.card;
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {

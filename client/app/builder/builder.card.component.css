@@ -2,26 +2,79 @@
   height: 32px;
 }
 
-.unitImg {
-  height: 150px;
-  margin-top: 10px;
-}
-
 .unitName {
   font-weight: bold;
   margin-left: 10px
 }
 
 .statsTable {
-  width: 800px;
-}
-
-.unitsCol {
-  width: 200px;
+  width: 1000px;
 }
 
 .row {
   width: 1200px;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.closeButton button {
+  padding: 10px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 250px;
+}
+
+.leftBlock .cardTableAsset {
+  margin: auto;
+}
+
+.rightBlock {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.upperBlock {
+  display: block;
+}
+
+.upperBlock .cardDiv {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.upperBlock .cardTableAsset {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.upperBlock .starLevelDiv {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.lowerBlock {}
+
+.lowerBlock .statsTable {
+  margin: auto
+}
+
+.star {
+  height: 40px;
+  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background-size: 40px;
+  width: 40px;
+}
+
+.star.filled {
+  height: 40px;
+  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background-size: 40px;
+  width: 40px;
 }

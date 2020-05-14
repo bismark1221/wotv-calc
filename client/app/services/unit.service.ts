@@ -287,19 +287,6 @@ export class UnitService {
     this.localStorageService.set('units', this.savedUnits);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   selectUnitForBuilder(unitId) {
     this.unit = this.getUnit(unitId)
     this.unit.name = this.unit.getName(this.translateService)

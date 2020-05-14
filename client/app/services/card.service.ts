@@ -231,7 +231,8 @@ export class CardService {
   }
 
   private updateMaxLevel() {
-    this.card.maxLevel = this.levelPerStar[this.card.rarity][this.card.star];
+    let star = this.card.star ? this.card.star : 0
+    this.card.maxLevel = this.levelPerStar[this.card.rarity][star];
 
     if (this.card.level > this.card.maxLevel) {
       this.card.level = this.card.maxLevel

@@ -1,15 +1,27 @@
-<div style="width: 30%; display: inline-block;">
-  <ng-select [items]="cards"
-             bindLabel="name"
-             bindValue="id"
-             groupBy="rarity"
-             placeholder="Cards"
-             [(ngModel)]="selectedId"
-             (ngModelChange)="selectCard()">
-  </ng-select>
+<div *ngIf="fromUnitBuilder" class="closeButton">
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-  <div *ngIf="card">
-    <table class="cardTable">
+<div
+  [ngClass]="{
+    'leftBlock': !fromUnitBuilder,
+    'upperBlock': fromUnitBuilder
+  }">
+  <div  *ngIf="!fromUnitBuilder">
+    <ng-select [items]="cards"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               placeholder="Cards"
+               [(ngModel)]="selectedId"
+               (ngModelChange)="selectCard()">
+    </ng-select>
+  </div>
+
+  <div *ngIf="card" class="cardDiv">
+    <table class="cardTableAsset">
       <tbody>
         <tr>
           <th colspan="3">{{ card.name }}</th>
@@ -19,30 +31,35 @@
         </tr>
       </tbody>
     </table>
-  </div>
 
-  <div *ngIf="card">
-    Star
-    <select [(ngModel)]="card.star" (ngModelChange)="changeStar()">
-      <option>0</option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-    </select>
+    <div class="starLevelDiv">
+      <div>
+        <ngb-rating [(rate)]="card.star" [max]="4">
+          <ng-template let-fill="fill" let-index="index">
+            <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
+          </ng-template>
+        </ngb-rating>
+      </div>
 
-    Level
-    <select [(ngModel)]="card.level" (ngModelChange)="changeLevels()">
-      <option *ngFor="let level of card.tableLevels">{{ level }}</option>
-    </select>
+      <div>
+        Level
+        <select [(ngModel)]="card.level" (ngModelChange)="changeLevels()">
+          <option *ngFor="let level of card.tableLevels">{{ level }}</option>
+        </select>
+      </div>
 
-    <button (click)="maxCard()">Max card</button>
-    <button (click)="maxLevel()">Max level</button>
-    <button (click)="save()">SAVE</button>
+      <button (click)="maxCard()">Max card</button>
+      <button (click)="maxLevel()">Max level</button>
+      <button (click)="save()">SAVE</button>
+    </div>
   </div>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="card">
+<div *ngIf="card"
+  [ngClass]="{
+    'rightBlock': !fromUnitBuilder,
+    'lowerBlock': fromUnitBuilder
+  }">
   <table class="statsTable">
     <tbody>
       <tr>

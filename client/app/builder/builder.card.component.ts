@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { CardService } from '../services/card.service';
 import { SkillService } from '../services/skill.service';
@@ -11,14 +12,18 @@ import { SkillService } from '../services/skill.service';
   styleUrls: ['./builder.card.component.css']
 })
 export class BuilderCardComponent implements OnInit {
+  @Input() public card;
+  @Input() public fromUnitBuilder = false;
+  @Output() passEntry: EventEmitter<any> = new EventEmitter();
+
   selectedId
   cards
-  card
 
   constructor(
     private cardService: CardService,
     private translateService: TranslateService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    private modalService: NgbModal
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getCards();
@@ -35,10 +40,19 @@ export class BuilderCardComponent implements OnInit {
   }
 
   selectCard() {
-    this.card = this.cardService.selectCardForBuilder(this.selectedId)
+    if (this.selectedId) {
+      this.card = this.cardService.selectCardForBuilder(this.selectedId)
+    } else {
+      this.card = null
+    }
   }
 
-  changeStar() {
+  changeStar(value) {
+    if (value == this.card.star) {
+      value = undefined
+    }
+
+    this.card.star = value
     this.cardService.changeStar()
   }
 
@@ -56,5 +70,9 @@ export class BuilderCardComponent implements OnInit {
 
   maxLevel() {
     this.cardService.maxLevel()
+  }
+
+  close() {
+    this.modalService.dismissAll();
   }
 }

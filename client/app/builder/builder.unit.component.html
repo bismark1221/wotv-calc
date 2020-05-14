@@ -139,6 +139,10 @@
                (ngModelChange)="selectCard()">
     </ng-select>
 
+    <div *ngIf="card">
+      <button (click)="showCardDetail()">Custom Card</button>
+    </div>
+
     Equipments :<br />
     <ng-select [items]="equipments"
                bindLabel="name"
