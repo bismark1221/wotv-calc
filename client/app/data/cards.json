@@ -1244,8 +1244,7 @@
   "VC_LW_NEWYEAR": {
     "dataId": "VC_LW_NEWYEAR",
     "names": {
-      "en": "Greetings from Afar",
-      "fr": "Par-delà les terres"
+      "en": "Greetings from Afar"
     },
     "rarity": "MR",
     "stats": {
@@ -1757,7 +1756,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "CONFUSION",
+          "type": "CONFUSION_RES",
           "minValue": 3,
           "maxValue": 10,
           "calcType": "resistance"
@@ -1776,7 +1775,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "CONFUSION",
+          "type": "CONFUSION_RES",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -2683,7 +2682,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "CHARM",
+          "type": "CHARM_RES",
           "minValue": 3,
           "maxValue": 10,
           "calcType": "resistance"
@@ -2702,7 +2701,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "CHARM",
+          "type": "CHARM_RES",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
@@ -3044,7 +3043,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLOW",
+          "type": "SLOW_RES",
           "minValue": 5,
           "maxValue": 15,
           "calcType": "resistance"
@@ -3175,7 +3174,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "PETRIFY",
+          "type": "PETRIFY_RES",
           "minValue": 8,
           "maxValue": 25,
           "calcType": "resistance"
@@ -3200,8 +3199,7 @@
   "VC_LW_ODIN": {
     "dataId": "VC_LW_ODIN",
     "names": {
-      "en": "Realm Reaver, Odin",
-      "fr": "Odin, le Saccageur"
+      "en": "Realm Reaver, Odin"
     },
     "rarity": "UR",
     "stats": {
@@ -3832,7 +3830,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "STOP",
+          "type": "STOP_RES",
           "minValue": 8,
           "maxValue": 25,
           "calcType": "resistance"
@@ -3894,7 +3892,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "BERSERK",
+          "type": "BERSERK_RES",
           "minValue": 8,
           "maxValue": 25,
           "calcType": "resistance"
@@ -4018,7 +4016,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "TOAD",
+          "type": "TOAD_RES",
           "minValue": 8,
           "maxValue": 25,
           "calcType": "resistance"
@@ -4408,7 +4406,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "BLIND",
+          "type": "BLIND_RES",
           "minValue": 8,
           "maxValue": 25,
           "calcType": "resistance"

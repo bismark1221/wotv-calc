@@ -91,36 +91,36 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {
+      "POISON_RES": {
         "min": -10,
         "max": -10
       },
-      "BLIND": {},
-      "SLEEP": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": -10,
         "max": -10
       },
-      "SILENCE": {},
-      "PARALYZE": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": 40,
         "max": 40
       },
-      "CONFUSION": {
+      "CONFUSION_RES": {
         "min": 50,
         "max": 50
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -10,
         "max": -10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 4,
         "max": 4
@@ -476,7 +476,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "STUN",
+                "type": "STUN_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 1
@@ -820,7 +820,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -2214,27 +2214,27 @@
         "min": -10,
         "max": -10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": 50,
         "max": 50
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": 50,
         "max": 50
       },
@@ -2774,7 +2774,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -3328,7 +3328,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -3397,7 +3397,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -3645,7 +3645,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -3825,7 +3825,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -4381,27 +4381,27 @@
         "min": -10,
         "max": -10
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -5505,7 +5505,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -5892,7 +5892,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -6022,7 +6022,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -6111,7 +6111,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -6490,30 +6490,30 @@
         "max": 15
       },
       "MAGIC_RES": {},
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": 50,
         "max": 50
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -6991,7 +6991,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -7684,7 +7684,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -7902,7 +7902,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -7972,7 +7972,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -8338,7 +8338,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -8686,30 +8686,30 @@
         "min": -30,
         "max": -30
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 5,
         "max": 5
       },
-      "SLOW": {
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
         "min": 50,
         "max": 50
       },
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -8843,7 +8843,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "STUN",
+                "type": "STUN_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 1
@@ -10463,7 +10463,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -10783,30 +10783,30 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": 50,
         "max": 50
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -11490,7 +11490,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -11894,7 +11894,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -12046,7 +12046,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -12206,36 +12206,17 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "POISON",
-                "calcType": "dispel"
-              },
-              {
-                "type": "BLIND",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SILENCE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "PETRIFY",
-                "calcType": "dispel"
-              },
-              {
-                "type": "TOAD",
-                "calcType": "dispel"
-              },
-              {
-                "type": "DISABLE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "IMMOBILIZE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "POISON",
+                  "BLIND",
+                  "SLEEP",
+                  "SILENCE",
+                  "PETRIFY",
+                  "TOAD",
+                  "DISABLE",
+                  "IMMOBILIZE"
+                ]
               }
             ],
             "dataId": "SK_LW_MNK_M_2",
@@ -12444,7 +12425,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CHARM",
+                "type": "CHARM_ATK",
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3
@@ -12582,7 +12563,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -12807,7 +12788,7 @@
           "dataId": "SK_ACC_LW_ZIZA_1_1",
           "effects": [
             {
-              "type": "AUTO_RESTORE",
+              "type": "AUTO_RESTORE_ATK",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
@@ -12912,30 +12893,30 @@
         "min": -10,
         "max": -10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {},
-      "CHARM": {
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -12988,7 +12969,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -14029,7 +14010,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -14076,7 +14057,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -15079,30 +15060,30 @@
         "min": 25,
         "max": 25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": 50,
         "max": 50
       },
-      "PETRIFY": {},
-      "TOAD": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": 50,
         "max": 50
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -15249,7 +15230,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -15964,12 +15945,11 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -16229,7 +16209,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -16632,7 +16612,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "TOAD",
+                "type": "TOAD_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -16738,7 +16718,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -16834,12 +16814,11 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_S_3_SUB",
@@ -16939,7 +16918,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -17363,30 +17342,30 @@
         "min": 10,
         "max": 10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": 50,
         "max": 50
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {
+      "SLOW_RES": {},
+      "STOP_RES": {
         "min": 50,
         "max": 50
       },
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -17529,8 +17508,10 @@
             "jp": 0,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2_INIT",
@@ -17593,20 +17574,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -17654,8 +17628,10 @@
             "jp": 20,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -17703,7 +17679,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -17770,7 +17746,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -17836,7 +17812,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -17911,7 +17887,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -17978,7 +17954,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -18045,7 +18021,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -18227,7 +18203,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -18566,7 +18542,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -18808,7 +18784,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -18923,7 +18899,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -19032,12 +19008,11 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -19380,7 +19355,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -19490,11 +19465,13 @@
           "calcType": "unknow"
         },
         {
-          "type": "STOP",
-          "calcType": "dispel"
+          "type": "DISPEL",
+          "ailments": [
+            "STOP"
+          ]
         },
         {
-          "type": "STOP",
+          "type": "STOP_RES",
           "minValue": 10,
           "maxValue": 25,
           "calcType": "resistance",
@@ -19533,7 +19510,7 @@
           "calcType": "percent"
         },
         {
-          "type": "STOP",
+          "type": "STOP_RES",
           "minValue": 20,
           "maxValue": 20,
           "calcType": "resistance"
@@ -19572,32 +19549,16 @@
               "turnType": "TURNS"
             },
             {
-              "type": "POISON",
-              "calcType": "dispel"
-            },
-            {
-              "type": "BLIND",
-              "calcType": "dispel"
-            },
-            {
-              "type": "SLEEP",
-              "calcType": "dispel"
-            },
-            {
-              "type": "SILENCE",
-              "calcType": "dispel"
-            },
-            {
-              "type": "PARALYZE",
-              "calcType": "dispel"
-            },
-            {
-              "type": "CONFUSION",
-              "calcType": "dispel"
-            },
-            {
-              "type": "PETRIFY",
-              "calcType": "dispel"
+              "type": "DISPEL",
+              "ailments": [
+                "POISON",
+                "BLIND",
+                "SLEEP",
+                "SILENCE",
+                "PARALYZE",
+                "CONFUSION",
+                "PETRIFY"
+              ]
             }
           ],
           "type": "skill",
@@ -19711,30 +19672,30 @@
         "min": 10,
         "max": 10
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": 50,
         "max": 50
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -20416,7 +20377,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -20470,7 +20431,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -20907,7 +20868,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
+                "type": "ALL_DEBUFFS_ATK",
                 "calcType": "unknow"
               }
             ],
@@ -21076,8 +21037,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_CLR_M_4",
@@ -21256,34 +21219,15 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "POISON",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "BLIND",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "SILENCE",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "PARALYZE",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "CONFUSION",
-                "calcType": "nullify",
-                "turn": 3
+                "type": "NULLIFY",
+                "ailments": [
+                  "POISON",
+                  "BLIND",
+                  "SLEEP",
+                  "SILENCE",
+                  "PARALYZE",
+                  "CONFUSION"
+                ]
               }
             ],
             "dataId": "SK_LW_CLR_M_3",
@@ -21483,7 +21427,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -21954,33 +21898,33 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {
+      "POISON_RES": {
         "min": -25,
         "max": -25
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {
         "min": 50,
         "max": 50
       },
-      "PARALYZE": {
+      "PARALYZE_RES": {
         "min": 50,
         "max": 50
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -22199,20 +22143,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -22396,7 +22333,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -22462,12 +22399,11 @@
             "jp": 20,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -22666,7 +22602,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -22706,8 +22642,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -22861,7 +22799,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -22901,8 +22839,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -23116,7 +23056,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -23238,7 +23178,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -23427,7 +23367,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -23541,12 +23481,11 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_S_3",
@@ -23655,7 +23594,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -23740,7 +23679,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "QUICKEN",
+                "type": "QUICKEN_ATK",
                 "calcType": "percent",
                 "rate": 200,
                 "turn": 1
@@ -23919,7 +23858,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -23961,7 +23900,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -24200,33 +24139,33 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": -25,
         "max": -25
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -24861,7 +24800,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -24906,7 +24845,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -26057,7 +25996,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -26391,30 +26330,30 @@
         "min": -5,
         "max": -5
       },
-      "POISON": {
+      "POISON_RES": {
         "min": -25,
         "max": -25
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {},
-      "CHARM": {
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": 50,
         "max": 50
       },
@@ -26781,7 +26720,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -27121,7 +27060,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -27538,7 +27477,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -28148,7 +28087,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -28488,30 +28427,30 @@
         "min": -15,
         "max": -15
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": -25,
         "max": -25
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -28985,7 +28924,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -29569,7 +29508,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -29952,7 +29891,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -30055,7 +29994,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -30575,30 +30514,30 @@
         "min": -30,
         "max": -30
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": -25,
         "max": -25
       },
-      "CONFUSION": {
+      "CONFUSION_RES": {
         "min": 50,
         "max": 50
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -31240,7 +31179,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -31424,20 +31363,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -31655,7 +31587,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -31769,7 +31701,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -31990,7 +31922,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -32123,7 +32055,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -32166,7 +32098,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -32408,7 +32340,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -32697,33 +32629,33 @@
         "min": -15,
         "max": -15
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": -25,
         "max": -25
       },
-      "SILENCE": {},
-      "PARALYZE": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": 50,
         "max": 50
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -32776,7 +32708,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -33270,7 +33202,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 25,
@@ -33909,8 +33841,10 @@
             "jp": 400,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -34185,7 +34119,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 25,
@@ -34256,7 +34190,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -34524,7 +34458,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -34822,33 +34756,33 @@
         "min": -5,
         "max": -5
       },
-      "POISON": {
+      "POISON_RES": {
         "min": -25,
         "max": -25
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
         "min": 50,
         "max": 50
       },
-      "DISABLE": {},
-      "BERSERK": {
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -35459,8 +35393,10 @@
             "jp": 200,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -35990,7 +35926,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -36177,7 +36113,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -36218,7 +36154,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -36288,7 +36224,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CHARM",
+                "type": "CHARM_ATK",
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3
@@ -36597,7 +36533,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -36938,36 +36874,36 @@
         "min": -15,
         "max": -15
       },
-      "POISON": {
+      "POISON_RES": {
         "min": -10,
         "max": -10
       },
-      "BLIND": {
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {
+      "SLEEP_RES": {
         "min": 10,
         "max": 10
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": -25,
         "max": -25
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -37114,7 +37050,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -37672,12 +37608,11 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -38310,7 +38245,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -38406,12 +38341,11 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_S_3_SUB",
@@ -39136,33 +39070,33 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": -25,
         "max": -25
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -39375,8 +39309,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -39544,7 +39480,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -39821,7 +39757,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -39863,7 +39799,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -39999,8 +39935,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -40316,7 +40254,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
+                "type": "ALL_DEBUFFS_ATK",
                 "calcType": "unknow"
               }
             ],
@@ -40398,7 +40336,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -40490,8 +40428,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_CLR_M_4",
@@ -40653,34 +40593,15 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "POISON",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "BLIND",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "SILENCE",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "PARALYZE",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "CONFUSION",
-                "calcType": "nullify",
-                "turn": 3
+                "type": "NULLIFY",
+                "ailments": [
+                  "POISON",
+                  "BLIND",
+                  "SLEEP",
+                  "SILENCE",
+                  "PARALYZE",
+                  "CONFUSION"
+                ]
               }
             ],
             "dataId": "SK_LW_CLR_M_3",
@@ -40876,7 +40797,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -41089,7 +41010,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -41330,33 +41251,33 @@
         "min": -15,
         "max": -15
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": -25,
         "max": -25
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -42471,7 +42392,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -42632,7 +42553,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -42819,36 +42740,17 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "POISON",
-                "calcType": "dispel"
-              },
-              {
-                "type": "BLIND",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SILENCE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "PETRIFY",
-                "calcType": "dispel"
-              },
-              {
-                "type": "TOAD",
-                "calcType": "dispel"
-              },
-              {
-                "type": "DISABLE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "IMMOBILIZE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "POISON",
+                  "BLIND",
+                  "SLEEP",
+                  "SILENCE",
+                  "PETRIFY",
+                  "TOAD",
+                  "DISABLE",
+                  "IMMOBILIZE"
+                ]
               }
             ],
             "dataId": "SK_LW_MNK_M_2",
@@ -42954,12 +42856,11 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -43228,7 +43129,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -43525,33 +43426,33 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": -25,
         "max": -25
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {
+      "SLOW_RES": {},
+      "STOP_RES": {
         "min": 50,
         "max": 50
       },
-      "IMMOBILIZE": {
+      "IMMOBILIZE_RES": {
         "min": 50,
         "max": 50
       },
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -43698,7 +43599,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -43834,20 +43735,13 @@
             "jp": 20,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -43896,7 +43790,7 @@
             "jp": 15,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -44034,7 +43928,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -44074,7 +43968,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -44117,7 +44011,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -44784,8 +44678,10 @@
             "jp": 400,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -44898,7 +44794,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "QUICKEN",
+                "type": "QUICKEN_ATK",
                 "calcType": "percent",
                 "rate": 200,
                 "turn": 1
@@ -44964,7 +44860,7 @@
             "jp": 140,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -45085,7 +44981,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -45151,7 +45047,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -45438,7 +45334,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -45730,33 +45626,33 @@
         "min": 40,
         "max": 40
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {
         "min": 50,
         "max": 50
       },
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 20,
         "max": 20
       },
-      "SLOW": {
+      "SLOW_RES": {
         "min": -25,
         "max": -25
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -45899,8 +45795,10 @@
             "jp": 0,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2_INIT",
@@ -46020,7 +45918,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -46087,7 +45985,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -46221,7 +46119,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -46296,7 +46194,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -46363,8 +46261,10 @@
             "jp": 20,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -46499,7 +46399,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -46613,12 +46513,11 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -46917,7 +46816,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -47268,7 +47167,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -47980,30 +47879,30 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": 15,
         "max": 15
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": 50,
         "max": 50
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": -25,
         "max": -25
       },
@@ -48555,7 +48454,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -48720,7 +48619,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -49184,7 +49083,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -49875,7 +49774,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -50167,33 +50066,33 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": -25,
         "max": -25
       },
-      "CONFUSION": {},
-      "PETRIFY": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {},
-      "CHARM": {
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {
+      "SLOW_RES": {},
+      "STOP_RES": {
         "min": 50,
         "max": 50
       },
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -50463,8 +50362,10 @@
             "jp": 20,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_FINA_P_1",
@@ -50660,7 +50561,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -50734,7 +50635,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -50893,7 +50794,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 25,
@@ -51005,7 +50906,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -51409,7 +51310,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -51577,7 +51478,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -51682,7 +51583,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
+                "type": "ALL_DEBUFFS_ATK",
                 "calcType": "unknow"
               }
             ],
@@ -51751,7 +51652,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -51970,7 +51871,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 25,
@@ -52065,8 +51966,10 @@
             "jp": 15,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_FINA_S_3",
@@ -52421,27 +52324,27 @@
         "min": -20,
         "max": -20
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": -25,
         "max": -25
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -15,
         "max": -15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": 50,
         "max": 50
       },
@@ -53095,7 +52998,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "STUN",
+                "type": "STUN_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 1
@@ -54169,7 +54072,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -54409,7 +54312,7 @@
           "dataId": "SK_ARM_LW_BYLO_1_1",
           "effects": [
             {
-              "type": "SLEEP",
+              "type": "SLEEP_RES",
               "minValue": 25,
               "maxValue": 25,
               "calcType": "resistance"
@@ -54511,33 +54414,33 @@
         "min": 15,
         "max": 15
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": -10,
         "max": -10
       },
-      "SILENCE": {},
-      "PARALYZE": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": -25,
         "max": -25
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": 50,
         "max": 50
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -54685,7 +54588,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -55224,8 +55127,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -55401,8 +55306,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -55616,7 +55523,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -55717,7 +55624,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -56139,7 +56046,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -56173,7 +56080,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "SILENCE",
+                "type": "SILENCE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -56382,7 +56289,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -56425,7 +56332,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -56694,30 +56601,30 @@
         "min": -20,
         "max": -20
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": -25,
         "max": -25
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -57350,7 +57257,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -58798,27 +58705,27 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {
         "min": 50,
         "max": 50
       },
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": -25,
         "max": -25
       },
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -59037,8 +58944,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -59222,8 +59131,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -59286,12 +59197,11 @@
             "jp": 20,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -59490,7 +59400,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -59669,7 +59579,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -60034,8 +59944,10 @@
             "jp": 400,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -60073,7 +59985,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -60345,12 +60257,11 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_S_3",
@@ -60418,7 +60329,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -60541,7 +60452,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -60755,7 +60666,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -61018,30 +60929,30 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {
+      "POISON_RES": {
         "min": -25,
         "max": -25
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {},
-      "CHARM": {
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -61184,8 +61095,10 @@
             "jp": 0,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2_INIT",
@@ -61299,8 +61212,10 @@
             "jp": 20,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -61348,7 +61263,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -61481,7 +61396,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -61556,7 +61471,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -61623,7 +61538,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -62187,7 +62102,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -62229,8 +62144,10 @@
             "jp": 400,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -62541,7 +62458,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -62608,7 +62525,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -62752,7 +62669,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
+                "type": "ALL_DEBUFFS_ATK",
                 "calcType": "unknow"
               }
             ],
@@ -63205,30 +63122,30 @@
         "min": -30,
         "max": -30
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
         "min": 40,
         "max": 40
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {
+      "SLOW_RES": {},
+      "STOP_RES": {
         "min": -35,
         "max": -35
       },
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -63592,7 +63509,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "STUN",
+                "type": "STUN_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 1
@@ -64348,7 +64265,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -64627,8 +64544,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_CLR_M_4_SUB",
@@ -64983,7 +64902,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -65336,30 +65255,30 @@
         "min": -20,
         "max": -20
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {
+      "SLOW_RES": {
         "min": -25,
         "max": -25
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -65506,7 +65425,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -65766,7 +65685,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -66092,7 +66011,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -66707,7 +66626,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -67086,7 +67005,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "TOAD",
+                "type": "TOAD_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -67227,7 +67146,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -67454,7 +67373,7 @@
           "dataId": "SK_ARM_LW_UNII_1_1",
           "effects": [
             {
-              "type": "SLOW",
+              "type": "SLOW_RES",
               "minValue": 25,
               "maxValue": 25,
               "calcType": "resistance"
@@ -67556,27 +67475,27 @@
         "max": -15
       },
       "MAGIC_RES": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": -25,
         "max": -25
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -67723,7 +67642,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -68256,8 +68175,10 @@
             "jp": 200,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -68959,7 +68880,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -69068,7 +68989,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "TOAD",
+                "type": "TOAD_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -69349,7 +69270,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -69710,27 +69631,27 @@
         "min": -30,
         "max": -30
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": -25,
         "max": -25
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -71133,7 +71054,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CHARM",
+                "type": "CHARM_ATK",
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3
@@ -71195,7 +71116,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -71418,7 +71339,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -71770,30 +71691,30 @@
         "min": 45,
         "max": 45
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": -25,
         "max": -25
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {},
-      "CHARM": {
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 20,
         "max": 20
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 4,
         "max": 4
@@ -72169,7 +72090,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -72280,7 +72201,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -72321,8 +72242,10 @@
             "jp": 15,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -72546,7 +72469,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -73627,7 +73550,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -73962,30 +73885,30 @@
         "min": -5,
         "max": -5
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {
         "min": -25,
         "max": -25
       },
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -74132,7 +74055,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -74249,20 +74172,13 @@
             "jp": 20,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -74311,7 +74227,7 @@
             "jp": 15,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -74436,7 +74352,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -74476,7 +74392,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -74519,7 +74435,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -74677,8 +74593,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -74870,8 +74788,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -75085,7 +75005,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -75197,7 +75117,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -75314,7 +75234,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "QUICKEN",
+                "type": "QUICKEN_ATK",
                 "calcType": "percent",
                 "rate": 200,
                 "turn": 1
@@ -75405,7 +75325,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -75472,7 +75392,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -75579,7 +75499,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -75858,7 +75778,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -76116,24 +76036,24 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -76280,7 +76200,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -76840,8 +76760,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -77030,8 +76952,10 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -77245,7 +77169,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -77356,7 +77280,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -77473,7 +77397,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -77583,7 +77507,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 100,
                 "maxValue": 100,
                 "calcType": "percent",
@@ -77761,7 +77685,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -77992,7 +77916,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -78036,7 +77960,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -78287,24 +78211,24 @@
         "max": -25
       },
       "MAGIC_RES": {},
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -78451,7 +78375,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -79015,7 +78939,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -79755,7 +79679,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -79826,7 +79750,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "TOAD",
+                "type": "TOAD_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -80124,7 +80048,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -80190,7 +80114,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -80458,24 +80382,24 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 15,
         "max": 15
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -81128,7 +81052,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -81918,7 +81842,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CHARM",
+                "type": "CHARM_ATK",
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3
@@ -82113,8 +82037,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_CLR_M_4_SUB",
@@ -82207,7 +82133,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -82541,24 +82467,24 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 4,
         "max": 4
@@ -83245,7 +83171,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -83908,7 +83834,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CHARM",
+                "type": "CHARM_ATK",
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3
@@ -84301,7 +84227,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -84585,24 +84511,24 @@
         "min": 5,
         "max": 5
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
         "min": 50,
         "max": 50
       },
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": 50,
         "max": 50
       },
@@ -84756,7 +84682,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -84818,20 +84744,13 @@
             "jp": 150,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -84905,7 +84824,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 200
@@ -84987,7 +84906,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -85249,7 +85168,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -85423,7 +85342,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -85781,7 +85700,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -85964,7 +85883,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -86007,7 +85926,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -86275,7 +86194,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "QUICKEN",
+                "type": "QUICKEN_ATK",
                 "calcType": "percent",
                 "rate": 200,
                 "turn": 1
@@ -86530,7 +86449,7 @@
             "jp": 200,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -86634,7 +86553,7 @@
       },
       "effects": [
         {
-          "type": "SLOW",
+          "type": "SLOW_ATK",
           "minValue": 30,
           "maxValue": 50,
           "calcType": "percent",
@@ -86829,30 +86748,30 @@
         "min": 10,
         "max": 10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {
+      "TOAD_RES": {
         "min": 50,
         "max": 50
       },
-      "CHARM": {
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": -25,
         "max": -25
       },
@@ -87075,8 +86994,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -87225,8 +87146,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -87484,7 +87407,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -87664,7 +87587,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -88094,7 +88017,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -88289,12 +88212,11 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_S_3_SUB",
@@ -88474,12 +88396,11 @@
             "jp": 300,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
-                "calcType": "unknow"
-              },
-              {
-                "type": "HASTE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_DEBUFFS",
+                  "HASTE"
+                ]
               }
             ],
             "dataId": "SK_LW_GRM_R_1",
@@ -88795,7 +88716,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -89032,30 +88953,30 @@
         "min": -30,
         "max": -30
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": 50,
         "max": 50
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
         "min": 50,
         "max": 50
       },
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -89513,7 +89434,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -90204,8 +90125,10 @@
             "jp": 400,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_RDM_M_2",
@@ -90547,7 +90470,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLEEP",
+                "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -91100,30 +91023,30 @@
         "min": 10,
         "max": 10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 50,
         "max": 50
       },
-      "TOAD": {},
-      "CHARM": {
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": -5,
         "max": -5
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -91176,7 +91099,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -91665,7 +91588,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 25,
@@ -91825,7 +91748,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -91963,7 +91886,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -92630,7 +92553,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "maxValue": 0,
                 "calcType": "percent",
                 "rate": 25,
@@ -93033,7 +92956,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -93203,19 +93126,12 @@
           "dataId": "SK_ACC_LW_FDRC_1_1",
           "effects": [
             {
-              "type": "DISABLE",
-              "calcType": "nullify",
-              "turn": 3
-            },
-            {
-              "type": "IMMOBILIZE",
-              "calcType": "nullify",
-              "turn": 3
-            },
-            {
-              "type": "STOP",
-              "calcType": "nullify",
-              "turn": 3
+              "type": "NULLIFY",
+              "ailments": [
+                "DISABLE",
+                "IMMOBILIZE",
+                "STOP"
+              ]
             }
           ],
           "type": "skill",
@@ -93315,33 +93231,33 @@
         "max": -15
       },
       "MAGIC_RES": {},
-      "POISON": {
+      "POISON_RES": {
         "min": 50,
         "max": 50
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
         "min": 50,
         "max": 50
       },
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
         "min": 10,
         "max": 10
       },
-      "DISABLE": {
+      "DISABLE_RES": {
         "min": -25,
         "max": -25
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 4,
         "max": 4
@@ -93659,7 +93575,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -93786,7 +93702,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -94634,7 +94550,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -94844,7 +94760,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -95402,30 +95318,30 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
         "min": 10,
         "max": 10
       },
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -95478,7 +95394,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -95885,7 +95801,7 @@
                 "turn": 3
               },
               {
-                "type": "BERSERK",
+                "type": "BERSERK_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -96142,7 +96058,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -97219,7 +97135,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -97562,30 +97478,30 @@
         "min": -20,
         "max": -20
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": -25,
         "max": -25
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
         "min": 10,
         "max": 10
       },
@@ -97722,7 +97638,7 @@
             "jp": 0,
             "effects": [
               {
-                "type": "STUN",
+                "type": "STUN_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 1
@@ -97790,8 +97706,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "DOOM",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "DOOM"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_P_1",
@@ -97946,8 +97864,10 @@
             "jp": 150,
             "effects": [
               {
-                "type": "ALL_AILMENTS",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "ALL_AILMENTS"
+                ]
               }
             ],
             "dataId": "SK_LW_WHM_M_2",
@@ -98215,7 +98135,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SHELL",
+                "type": "SHELL_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -98395,7 +98315,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -98776,7 +98696,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 20,
                 "calcType": "percent",
@@ -99207,7 +99127,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REGEN",
+                "type": "REGEN_ATK",
                 "minValue": 5,
                 "maxValue": 10,
                 "calcType": "percent",
@@ -99434,7 +99354,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PROTECT",
+                "type": "PROTECT_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -99666,30 +99586,30 @@
         "min": -15,
         "max": -15
       },
-      "POISON": {},
-      "BLIND": {
+      "POISON_RES": {},
+      "BLIND_RES": {
         "min": 50,
         "max": 50
       },
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": -25,
         "max": -25
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 50,
         "max": 50
       },
-      "DOOM": {
+      "DOOM_RES": {
         "min": 10,
         "max": 10
       },
@@ -100392,7 +100312,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -100797,7 +100717,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "DOOM",
+                "type": "DOOM_ATK",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "percent",
@@ -100956,7 +100876,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REVIVE",
+                "type": "REVIVE_ATK",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
@@ -101130,36 +101050,17 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "POISON",
-                "calcType": "dispel"
-              },
-              {
-                "type": "BLIND",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SILENCE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "PETRIFY",
-                "calcType": "dispel"
-              },
-              {
-                "type": "TOAD",
-                "calcType": "dispel"
-              },
-              {
-                "type": "DISABLE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "IMMOBILIZE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "POISON",
+                  "BLIND",
+                  "SLEEP",
+                  "SILENCE",
+                  "PETRIFY",
+                  "TOAD",
+                  "DISABLE",
+                  "IMMOBILIZE"
+                ]
               }
             ],
             "dataId": "SK_LW_MNK_M_2",
@@ -101365,7 +101266,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "ALL_DEBUFFS",
+                "type": "ALL_DEBUFFS_ATK",
                 "calcType": "unknow"
               }
             ],
@@ -101791,30 +101692,30 @@
         "min": -10,
         "max": -10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {
         "min": 50,
         "max": 50
       },
-      "PARALYZE": {},
-      "CONFUSION": {
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": 10,
         "max": 10
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": 50,
         "max": 50
       },
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -102189,7 +102090,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -102870,7 +102771,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -103392,7 +103293,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -103949,33 +103850,33 @@
         "min": -25,
         "max": -25
       },
-      "POISON": {
+      "POISON_RES": {
         "min": 50,
         "max": 50
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": -25,
         "max": -25
       },
-      "STOP": {},
-      "IMMOBILIZE": {
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
         "min": 50,
         "max": 50
       },
-      "DISABLE": {},
-      "BERSERK": {
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
         "min": 10,
         "max": 10
       },
-      "DOOM": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -104283,13 +104184,13 @@
             "jp": 100,
             "effects": [
               {
-                "type": "CONFUSION",
+                "type": "CONFUSION_RES",
                 "minValue": 5,
                 "maxValue": 25,
                 "calcType": "resistance"
               },
               {
-                "type": "CHARM",
+                "type": "CHARM_RES",
                 "minValue": 5,
                 "maxValue": 25,
                 "calcType": "resistance"
@@ -105340,36 +105241,17 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "POISON",
-                "calcType": "dispel"
-              },
-              {
-                "type": "BLIND",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "dispel"
-              },
-              {
-                "type": "SILENCE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "PETRIFY",
-                "calcType": "dispel"
-              },
-              {
-                "type": "TOAD",
-                "calcType": "dispel"
-              },
-              {
-                "type": "DISABLE",
-                "calcType": "dispel"
-              },
-              {
-                "type": "IMMOBILIZE",
-                "calcType": "dispel"
+                "type": "DISPEL",
+                "ailments": [
+                  "POISON",
+                  "BLIND",
+                  "SLEEP",
+                  "SILENCE",
+                  "PETRIFY",
+                  "TOAD",
+                  "DISABLE",
+                  "IMMOBILIZE"
+                ]
               }
             ],
             "dataId": "SK_LW_MNK_M_2_SUB",
@@ -106037,30 +105919,30 @@
         "min": -20,
         "max": -20
       },
-      "POISON": {
+      "POISON_RES": {
         "min": 50,
         "max": 50
       },
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
         "min": 10,
         "max": 10
       },
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -106213,19 +106095,12 @@
                 "turn": 3
               },
               {
-                "type": "BLIND",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "PARALYZE",
-                "calcType": "nullify",
-                "turn": 3
-              },
-              {
-                "type": "SLEEP",
-                "calcType": "nullify",
-                "turn": 3
+                "type": "NULLIFY",
+                "ailments": [
+                  "BLIND",
+                  "PARALYZE",
+                  "SLEEP"
+                ]
               }
             ],
             "dataId": "SK_FFT_ORND_S_2",
@@ -106592,7 +106467,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "SILENCE",
+                "type": "SILENCE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -106836,7 +106711,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -107458,7 +107333,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -108088,7 +107963,7 @@
       },
       "effects": [
         {
-          "type": "HASTE",
+          "type": "HASTE_ATK",
           "minValue": 20,
           "maxValue": 42,
           "calcType": "percent",
@@ -108272,30 +108147,30 @@
         "min": 25,
         "max": 25
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {},
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {},
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
         "min": -5,
         "max": -5
       },
-      "STOP": {
+      "STOP_RES": {
         "min": 50,
         "max": 50
       },
-      "IMMOBILIZE": {},
-      "DISABLE": {
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
         "min": 50,
         "max": 50
       },
-      "BERSERK": {},
-      "DOOM": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -108964,7 +108839,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -109625,7 +109500,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "BLIND",
+                "type": "BLIND_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -109958,7 +109833,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -110053,7 +109928,7 @@
             "jp": 100,
             "effects": [
               {
-                "type": "DISABLE",
+                "type": "DISABLE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -110531,30 +110406,30 @@
         "min": -10,
         "max": -10
       },
-      "POISON": {},
-      "BLIND": {},
-      "SLEEP": {
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
         "min": 50,
         "max": 50
       },
-      "SILENCE": {},
-      "PARALYZE": {},
-      "CONFUSION": {
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
         "min": -5,
         "max": -5
       },
-      "PETRIFY": {},
-      "TOAD": {},
-      "CHARM": {},
-      "SLOW": {},
-      "STOP": {},
-      "IMMOBILIZE": {
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
         "min": 50,
         "max": 50
       },
-      "DISABLE": {},
-      "BERSERK": {},
-      "DOOM": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3
@@ -110886,7 +110761,7 @@
                 "type": "MOVE_UNIT"
               },
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -111019,7 +110894,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "POISON",
+                "type": "POISON_ATK",
                 "minValue": 5,
                 "maxValue": 15,
                 "calcType": "unknow",
@@ -111212,7 +111087,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "PARALYZE",
+                "type": "PARALYZE_ATK",
                 "minValue": 60,
                 "maxValue": 80,
                 "calcType": "percent",
@@ -111257,7 +111132,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "IMMOBILIZE",
+                "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3
@@ -111441,20 +111316,13 @@
             "jp": 300,
             "effects": [
               {
-                "type": "HASTE",
-                "calcType": "nullify"
-              },
-              {
-                "type": "SLOW",
-                "calcType": "nullify"
-              },
-              {
-                "type": "STOP",
-                "calcType": "nullify"
-              },
-              {
-                "type": "QUICKEN",
-                "calcType": "nullify"
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ]
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
@@ -111672,7 +111540,7 @@
             "jp": 400,
             "effects": [
               {
-                "type": "HASTE",
+                "type": "HASTE_ATK",
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
@@ -111779,7 +111647,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "FLOAT",
+                "type": "FLOAT_ATK",
                 "calcType": "percent",
                 "turn": 3
               }
@@ -111894,7 +111762,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -111998,7 +111866,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "STOP",
+                "type": "STOP_ATK",
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30
@@ -112122,7 +111990,7 @@
             "jp": 500,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 20,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -112165,7 +112033,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "SLOW",
+                "type": "SLOW_ATK",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -112563,7 +112431,7 @@
       },
       "effects": [
         {
-          "type": "STOP",
+          "type": "STOP_ATK",
           "calcType": "percent",
           "rate": 67,
           "turn": 30

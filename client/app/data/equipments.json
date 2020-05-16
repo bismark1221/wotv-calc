@@ -671,7 +671,7 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -710,7 +710,7 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -734,13 +734,13 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -779,13 +779,13 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -809,19 +809,19 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -860,19 +860,19 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -896,25 +896,25 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -953,25 +953,25 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -995,31 +995,31 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -1058,31 +1058,31 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 4
@@ -13527,7 +13527,7 @@
           "dataId": "SK_LW_RNG_001_1",
           "effects": [
             {
-              "type": "POISON",
+              "type": "POISON_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -13544,7 +13544,7 @@
           "dataId": "SK_LW_RNG_001_5",
           "effects": [
             {
-              "type": "POISON",
+              "type": "POISON_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14072,7 +14072,7 @@
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14089,7 +14089,7 @@
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14108,7 +14108,7 @@
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14139,7 +14139,7 @@
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14158,7 +14158,7 @@
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14189,7 +14189,7 @@
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14208,7 +14208,7 @@
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14239,7 +14239,7 @@
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14258,7 +14258,7 @@
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14289,7 +14289,7 @@
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14308,7 +14308,7 @@
           "dataId": "SK_LW_RNG_003_1",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14339,7 +14339,7 @@
           "dataId": "SK_LW_RNG_003_5",
           "effects": [
             {
-              "type": "SILENCE",
+              "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14471,7 +14471,7 @@
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14488,7 +14488,7 @@
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14507,7 +14507,7 @@
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14538,7 +14538,7 @@
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14557,7 +14557,7 @@
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14588,7 +14588,7 @@
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14607,7 +14607,7 @@
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14638,7 +14638,7 @@
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14657,7 +14657,7 @@
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14688,7 +14688,7 @@
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14707,7 +14707,7 @@
           "dataId": "SK_LW_RNG_004_1",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14738,7 +14738,7 @@
           "dataId": "SK_LW_RNG_004_5",
           "effects": [
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
               "calcType": "resistance"
@@ -14870,7 +14870,7 @@
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14889,7 +14889,7 @@
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14922,7 +14922,7 @@
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14955,7 +14955,7 @@
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -14988,7 +14988,7 @@
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -15021,7 +15021,7 @@
           "dataId": "SK_LW_FTW_001_1",
           "effects": [
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "resistance"
@@ -15536,7 +15536,7 @@
               "rate": 200
             },
             {
-              "type": "DOOM",
+              "type": "DOOM_ATK",
               "minValue": 4,
               "maxValue": 4,
               "calcType": "percent",
@@ -15732,7 +15732,7 @@
               "rate": 200
             },
             {
-              "type": "SLEEP",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3
@@ -15983,7 +15983,7 @@
               "rate": 200
             },
             {
-              "type": "BLIND",
+              "type": "BLIND_ATK",
               "minValue": 20,
               "maxValue": 50,
               "calcType": "percent",
@@ -16173,13 +16173,13 @@
               "rate": 200
             },
             {
-              "type": "DISABLE",
+              "type": "DISABLE_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3
             },
             {
-              "type": "DISABLE",
+              "type": "DISABLE_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3
@@ -16245,7 +16245,7 @@
               "rate": 200
             },
             {
-              "type": "CONFUSION",
+              "type": "CONFUSION_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3
@@ -16315,7 +16315,7 @@
               "rate": 200
             },
             {
-              "type": "CHARM",
+              "type": "CHARM_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3
@@ -16385,7 +16385,7 @@
               "rate": 200
             },
             {
-              "type": "PARALYZE",
+              "type": "PARALYZE_ATK",
               "minValue": 80,
               "maxValue": 80,
               "calcType": "percent",
@@ -16653,7 +16653,7 @@
           "dataId": "SK_ARM_LW_BYLO_1_1",
           "effects": [
             {
-              "type": "SLEEP",
+              "type": "SLEEP_RES",
               "minValue": 25,
               "maxValue": 25,
               "calcType": "resistance"
@@ -17141,7 +17141,7 @@
           "dataId": "SK_ARM_LW_UNII_1_1",
           "effects": [
             {
-              "type": "SLOW",
+              "type": "SLOW_RES",
               "minValue": 25,
               "maxValue": 25,
               "calcType": "resistance"
@@ -17422,32 +17422,16 @@
               "turnType": "TURNS"
             },
             {
-              "type": "POISON",
-              "calcType": "dispel"
-            },
-            {
-              "type": "BLIND",
-              "calcType": "dispel"
-            },
-            {
-              "type": "SLEEP",
-              "calcType": "dispel"
-            },
-            {
-              "type": "SILENCE",
-              "calcType": "dispel"
-            },
-            {
-              "type": "PARALYZE",
-              "calcType": "dispel"
-            },
-            {
-              "type": "CONFUSION",
-              "calcType": "dispel"
-            },
-            {
-              "type": "PETRIFY",
-              "calcType": "dispel"
+              "type": "DISPEL",
+              "ailments": [
+                "POISON",
+                "BLIND",
+                "SLEEP",
+                "SILENCE",
+                "PARALYZE",
+                "CONFUSION",
+                "PETRIFY"
+              ]
             }
           ],
           "type": "skill",
@@ -17675,7 +17659,7 @@
           "dataId": "SK_ACC_LW_ZIZA_1_1",
           "effects": [
             {
-              "type": "AUTO_RESTORE",
+              "type": "AUTO_RESTORE_ATK",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
@@ -17742,19 +17726,12 @@
           "dataId": "SK_ACC_LW_FDRC_1_1",
           "effects": [
             {
-              "type": "DISABLE",
-              "calcType": "nullify",
-              "turn": 3
-            },
-            {
-              "type": "IMMOBILIZE",
-              "calcType": "nullify",
-              "turn": 3
-            },
-            {
-              "type": "STOP",
-              "calcType": "nullify",
-              "turn": 3
+              "type": "NULLIFY",
+              "ailments": [
+                "DISABLE",
+                "IMMOBILIZE",
+                "STOP"
+              ]
             }
           ],
           "type": "skill",
@@ -18305,7 +18282,7 @@
               "rate": 200
             },
             {
-              "type": "SILENCE",
+              "type": "SILENCE_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3
@@ -18442,7 +18419,7 @@
               "rate": 200
             },
             {
-              "type": "IMMOBILIZE",
+              "type": "IMMOBILIZE_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 5
@@ -18622,7 +18599,7 @@
               "rate": 200
             },
             {
-              "type": "CONFUSION",
+              "type": "CONFUSION_ATK",
               "calcType": "percent",
               "rate": 15,
               "turn": 3

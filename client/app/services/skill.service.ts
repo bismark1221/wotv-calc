@@ -586,6 +586,38 @@ export class SkillService {
       case "STEAL" :
         html = "Steal" + this.getValue(skill, effect)
       break
+      case "NULLIFY" :
+        html = "Nullify " + this.getValue(skill, effect)
+        effect.ailments.forEach((ailment, index) => {
+          if (index == effect.ailments.length - 1) {
+            if (index !== 0) {
+              html += " and "
+            }
+          } else {
+            if (index !== 0) {
+              html += ", "
+            }
+          }
+
+          html += this.upperCaseFirst(ailment.replace("_", " "))
+        })
+      break
+      case "DISPEL" :
+        html = "Dispel " + this.getValue(skill, effect)
+        effect.ailments.forEach((ailment, index) => {
+          if (index == effect.ailments.length - 1) {
+            if (index !== 0) {
+              html += " and "
+            }
+          } else {
+            if (index !== 0) {
+              html += ", "
+            }
+          }
+
+          html += this.upperCaseFirst(ailment.replace("_", " "))
+        })
+      break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
@@ -600,7 +632,7 @@ export class SkillService {
 
   private upperCaseFirst(text) {
     if (text) {
-      return text[0].toUpperCase() + text.slice(1);
+      return text[0].toUpperCase() + text.slice(1).toLowerCase();
     }
 
     return "";

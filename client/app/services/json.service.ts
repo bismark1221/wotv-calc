@@ -281,21 +281,21 @@ export class JsonService {
       "ash": "MISSILE_RES",
       "ama": "MAGIC_RES",
 
-      "cpo": "POISON",
-      "cbl": "BLIND",
-      "csl": "SLEEP",
-      "cmu": "SILENCE",
-      "cpa": "PARALYZE",
-      "ccf": "CONFUSION",
-      "cpe": "PETRIFY",
-      "cfr": "TOAD",
-      "cch": "CHARM",
-      "csw": "SLOW",
-      "cst": "STOP",
-      "cdm": "IMMOBILIZE",
-      "cda": "DISABLE",
-      "cbe": "BERSERK",
-      "cdo": "DOOM",
+      "cpo": "POISON_RES",
+      "cbl": "BLIND_RES",
+      "csl": "SLEEP_RES",
+      "cmu": "SILENCE_RES",
+      "cpa": "PARALYZE_RES",
+      "ccf": "CONFUSION_RES",
+      "cpe": "PETRIFY_RES",
+      "cfr": "TOAD_RES",
+      "cch": "CHARM_RES",
+      "csw": "SLOW_RES",
+      "cst": "STOP_RES",
+      "cdm": "IMMOBILIZE_RES",
+      "cda": "DISABLE_RES",
+      "cbe": "BERSERK_RES",
+      "cdo": "DOOM_RES",
 
       "mov": "MOVE",
       "jmp": "JUMP",
@@ -339,21 +339,21 @@ export class JsonService {
       "ash": "MISSILE_RES",
       "ama": "MAGIC_RES",
 
-      "cpo": "POISON",
-      "cbl": "BLIND",
-      "csl": "SLEEP",
-      "cmu": "SILENCE",
-      "cpa": "PARALYZE",
-      "ccf": "CONFUSION",
-      "cpe": "PETRIFY",
-      "cfr": "TOAD",
-      "cch": "CHARM",
-      "csw": "SLOW",
-      "cst": "STOP",
-      "cdm": "IMMOBILIZE",
-      "cda": "DISABLE",
-      "cbe": "BERSERK",
-      "cdo": "DOOM",
+      "cpo": "POISON_RES",
+      "cbl": "BLIND_RES",
+      "csl": "SLEEP_RES",
+      "cmu": "SILENCE_RES",
+      "cpa": "PARALYZE_RES",
+      "ccf": "CONFUSION_RES",
+      "cpe": "PETRIFY_RES",
+      "cfr": "TOAD_RES",
+      "cch": "CHARM_RES",
+      "csw": "SLOW_RES",
+      "cst": "STOP_RES",
+      "cdm": "IMMOBILIZE_RES",
+      "cda": "DISABLE_RES",
+      "cbe": "BERSERK_RES",
+      "cdo": "DOOM_RES",
 
       "mov": "MOVE",
       "jmp": "JUMP"
@@ -405,6 +405,7 @@ export class JsonService {
     11: "percent",
     30: "percent",
     31: "dispel",
+    32: "dispel",
     40: "nullify"
   }
 
@@ -436,6 +437,35 @@ export class JsonService {
     "MAGIC",
     "ALL_ELEMENTS",
     "ALL_ATTACKS"
+  ]
+
+  private ailmentStatus = [
+    "REGEN",
+    "AUTO_RESTORE",
+    "POISON",
+    "BLIND",
+    "SLEEP",
+    "SILENCE",
+    "PARALYZE",
+    "CONFUSION",
+    "CHARM",
+    "PETRIFY",
+    "TOAD",
+    "HASTE",
+    "SLOW",
+    "STOP",
+    "STUN",
+    "IMMOBILIZE",
+    "DISABLE",
+    "BERSERK",
+    "DOOM",
+    "REVIVE",
+    "PROTECT",
+    "SHELL",
+    "FLOAT",
+    "QUICKEN",
+    "ALL_AILMENTS",
+    "ALL_DEBUFFS"
   ]
 
 
@@ -1037,18 +1067,37 @@ export class JsonService {
               }
 
               let type = this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]]
+              let nullifyOrDispel = false;
               if (this.statsAtkRes.indexOf(type) !== -1) {
                 type = type + "_" + (this.calcType[this.buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+              } else if (this.ailmentStatus.indexOf(type) !== -1) {
+                let calcType = this.calcType[this.buffs[buff]["calc" + i]]
+                if (calcType == "nullify" || calcType == "dispel") {
+                  nullifyOrDispel = true
+                  let effect = this.findEffect(skill, calcType.toUpperCase())
+                  if (!effect) {
+                    effect = {
+                      type: calcType.toUpperCase(),
+                      ailments: []
+                    }
+                    skill.effects.push(effect)
+                  }
+                  effect.ailments.push(type)
+                } else {
+                  type = type + "_" + (this.calcType[this.buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                }
               }
 
-              skill.effects.push({
-                type: type,
-                minValue: this.buffs[buff]["val" + i],
-                maxValue: this.buffs[buff]["val" + i + "1"],
-                calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
-                rate: this.buffs[buff].rate,
-                turn: this.buffs[buff].turn
-              });
+              if (!nullifyOrDispel) {
+                skill.effects.push({
+                  type: type,
+                  minValue: this.buffs[buff]["val" + i],
+                  maxValue: this.buffs[buff]["val" + i + "1"],
+                  calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
+                  rate: this.buffs[buff].rate,
+                  turn: this.buffs[buff].turn
+                });
+              }
 
               if (this.buffs[buff]["type" + i] === 116) {
                 duplicateFinded = true;
@@ -1062,6 +1111,18 @@ export class JsonService {
         }
       })
     }
+  }
+
+  private findEffect(skill, type) {
+    let findedEffect = null
+
+    skill.effects.forEach(effect => {
+      if (effect.type == type) {
+        findedEffect = effect
+      }
+    })
+
+    return findedEffect
   }
 
   private getStats(unit, stats, type) {
