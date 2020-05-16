@@ -102,9 +102,13 @@ export class SkillService {
     }
   }
 
-  private getPositiveValue(value) {
+  private getPositiveValue(value, getPositiveValue) {
     if (value < 0) {
-      return -value;
+      if (!getPositiveValue) {
+        return (100 + value) / 100 ;
+      } else {
+        return -value;
+      }
     }
 
     return value
@@ -114,13 +118,13 @@ export class SkillService {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
       let minValue = typeof(effect.minValue) === "number" ? effect.minValue : effect.value;
-      minValue = getPositiveValue ? this.getPositiveValue(minValue) : minValue;
+      minValue = this.getPositiveValue(minValue, getPositiveValue);
 
       if (!skill.level) {
         value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect, getPositiveValue) + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
-          let maxValue = getPositiveValue ? this.getPositiveValue(effect.maxValue) : effect.maxValue;
+          let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
           let valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
           value = " (" + valueForLevel + this.getCalc(effect) + ")"
         } else {
@@ -134,7 +138,7 @@ export class SkillService {
 
   private getMaxValue(effect, getPositiveValue = true) {
     if (effect.minValue !== effect.maxValue) {
-      let maxValue = getPositiveValue ? this.getPositiveValue(effect.maxValue) : effect.maxValue;
+      let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
 
       return " => " + maxValue + this.getCalc(effect);
     }
