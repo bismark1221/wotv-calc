@@ -346,77 +346,161 @@ export class SkillService {
       case "ALL_ATTACKS_ATK" :
         html = this.getIncrease(effect) + " all attacks ATK" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "REGEN" :
+      case "REGEN_ATK" :
         html = this.getChance(effect, false) + " regen" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "AUTO_RESTORE" :
+      case "AUTO_RESTORE_ATK" :
         html = this.getChance(effect, false) + " auto-restore" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "POISON" :
-        html = this.getChance(effect) + " poison" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "POISON_ATK" :
+        html = this.getChance(effect) + " poison" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "BLIND" :
-        html = this.getChance(effect) + " blind" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "BLIND_ATK" :
+        html = this.getChance(effect) + " blind" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "SLEEP" :
-        html = this.getChance(effect) + " sleep" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "SLEEP_ATK" :
+        html = this.getChance(effect) + " sleep" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "SILENCE" :
-        html = this.getChance(effect) + " silence" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "SILENCE_ATK" :
+        html = this.getChance(effect) + " silence" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "PARALYZE" :
-        html = this.getChance(effect) + " paralyze" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "PARALYZE_ATK" :
+        html = this.getChance(effect) + " paralyze" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "CONFUSION" :
-        html = this.getChance(effect) + " confusion" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "CONFUSION_ATK" :
+        html = this.getChance(effect) + " confusion" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "CHARM" :
-        html = this.getChance(effect) + " charm" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "CHARM_ATK" :
+        html = this.getChance(effect) + " charm" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "PETRIFY" :
-        html = this.getChance(effect) + " petrify" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "PETRIFY_ATK" :
+        html = this.getChance(effect) + " petrify" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "TOAD" :
-        html = this.getChance(effect) + " toad" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "TOAD_ATK" :
+        html = this.getChance(effect) + " toad" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "HASTE" :
-        html = this.getChance(effect, false) + " haste" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "HASTE_ATK" :
+        html = this.getChance(effect, false) + " haste" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "SLOW" :
-        html = this.getChance(effect) + " slow" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "SLOW_ATK" :
+        html = this.getChance(effect) + " slow" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "STOP" :
-        html = this.getChance(effect) + " stop" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "STOP_ATK" :
+        html = this.getChance(effect) + " stop" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "STUN" :
-        html = this.getChance(effect) + " stun" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "STUN_ATK" :
+        html = this.getChance(effect) + " stun" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "IMMOBILIZE" :
-        html = this.getChance(effect) + " immobilize" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "IMMOBILIZE_ATK" :
+        html = this.getChance(effect) + " immobilize" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "DISABLE" :
-        html = this.getChance(effect) + " disable" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "DISABLE_ATK" :
+        html = this.getChance(effect) + " disable" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "BERSERK" :
-        html = this.getChance(effect) + " berserk" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "BERSERK_ATK" :
+        html = this.getChance(effect) + " berserk" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "DOOM" :
-        html = this.getChance(effect) + " doom" + this.getResistanceOrNothing(effect) + this.getValue(skill, effect) + this.getTurns(effect)
+      case "DOOM_ATK" :
+        html = this.getChance(effect) + " doom" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "REVIVE" :
+      case "REVIVE_ATK" :
         html = this.getChance(effect, false) + " to revive" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "PROTECT" :
+      case "PROTECT_ATK" :
         html = this.getChance(effect, false) + " protect" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "SHELL" :
+      case "SHELL_ATK" :
         html = this.getChance(effect, false) + " shell" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "FLOAT" :
+      case "FLOAT_ATK" :
         html = this.getChance(effect, false) + " float" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "QUICKEN" :
+      case "QUICKEN_ATK" :
         html = this.getChance(effect, false) + " quicken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ALL_AILMENTS_ATK" :
+        html = this.getChance(effect, false) + " all status ailments" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ALL_DEBUFFS_ATK" :
+        html = this.getChance(effect, false) + " all debuffs" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REGEN_RES" :
+        html = this.getChance(effect, false) + " regen resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "AUTO_RESTORE_RES" :
+        html = this.getChance(effect, false) + " auto-restore resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "POISON_RES" :
+        html = this.getChance(effect) + " poison resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BLIND_RES" :
+        html = this.getChance(effect) + " blind resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SLEEP_RES" :
+        html = this.getChance(effect) + " sleep resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SILENCE_RES" :
+        html = this.getChance(effect) + " silence resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "PARALYZE_RES" :
+        html = this.getChance(effect) + " paralyze resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "CONFUSION_RES" :
+        html = this.getChance(effect) + " confusion resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "CHARM_RES" :
+        html = this.getChance(effect) + " charm resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "PETRIFY_RES" :
+        html = this.getChance(effect) + " petrify resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "TOAD_RES" :
+        html = this.getChance(effect) + " toad resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "HASTE_RES" :
+        html = this.getChance(effect, false) + " haste resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SLOW_RES" :
+        html = this.getChance(effect) + " slow resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "STOP_RES" :
+        html = this.getChance(effect) + " stop resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "STUN_RES" :
+        html = this.getChance(effect) + " stun resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "IMMOBILIZE_RES" :
+        html = this.getChance(effect) + " immobilize resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DISABLE_RES" :
+        html = this.getChance(effect) + " disable resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BERSERK_RES" :
+        html = this.getChance(effect) + " berserk resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DOOM_RES" :
+        html = this.getChance(effect) + " doom resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REVIVE_RES" :
+        html = this.getChance(effect, false) + " to revive resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "PROTECT_RES" :
+        html = this.getChance(effect, false) + " protect resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SHELL_RES" :
+        html = this.getChance(effect, false) + " shell resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "FLOAT_RES" :
+        html = this.getChance(effect, false) + " float resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "QUICKEN_RES" :
+        html = this.getChance(effect, false) + " quicken resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ALL_AILMENTS_RES" :
+        html = this.getChance(effect, false) + " all status ailments resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ALL_DEBUFFS_RES" :
+        html = this.getChance(effect, false) + " all debuffs resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "IGNORE_FATAL" :
         html = this.getChance(effect, false) + " to ignore fatal damage" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -441,12 +525,6 @@ export class SkillService {
       break
       case "IMBUE" :
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- SHOULD NOT BE USED !!!")
-      break
-      case "ALL_AILMENTS" :
-        html = this.getChance(effect, false) + " all status ailments" + this.getValue(skill, effect) + this.getTurns(effect)
-      break
-      case "ALL_DEBUFFS" :
-        html = this.getChance(effect, false) + " all debuffs" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "INITIAL_AP" :
         html = this.getIncrease(effect) + " Initial AP" + this.getValue(skill, effect) + this.getTurns(effect)
