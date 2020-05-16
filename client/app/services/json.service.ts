@@ -1045,8 +1045,11 @@ export class JsonService {
 
 
     if (dataSkill.t_buffs || dataSkill.s_buffs) {
-      let buffs = dataSkill.t_buffs ? dataSkill.t_buffs : dataSkill.s_buffs
-      buffs.forEach(buff => {
+      let buffs = JSON.parse(JSON.stringify(dataSkill.t_buffs ? dataSkill.t_buffs : dataSkill.s_buffs))
+
+      let buffIndex = 0
+      while (buffIndex <= buffs.length - 1) {
+        let buff = buffs[buffIndex]
         let finished = false;
         let i = 1;
         let duplicateFinded = false;
@@ -1088,7 +1091,7 @@ export class JsonService {
                 }
               }
 
-              if (!nullifyOrDispel) {
+              if (!nullifyOrDispel && type !== "IMBUE") {
                 skill.effects.push({
                   type: type,
                   minValue: this.buffs[buff]["val" + i],
@@ -1109,7 +1112,8 @@ export class JsonService {
             finished = true;
           }
         }
-      })
+        buffIndex++
+      }
     }
   }
 
@@ -1401,26 +1405,25 @@ export class JsonService {
 
       let lastSkillId = [];
       let skills = [];
-      for (let i = 1; i <= 5; i++) {
-        if (this.equipments[dataId]["skl" + i]) {
-          for (let j = 0; j < this.equipments[dataId]["skl" + i].length; j++) {
-            if (lastSkillId[j] !== this.equipments[dataId]["skl" + i][j]) {
-              let skill = {
-                names: {
-                  en: this.names.en.skill[this.equipments[dataId]["skl" + i][j]],
-                  fr: this.names.fr.skill[this.equipments[dataId]["skl" + i][j]]
-                },
-                dataId: this.equipments[dataId]["skl" + i][j],
-                effects: [],
-                type: this.slots[this.skills[this.equipments[dataId]["skl" + i][j]].s_buffs || this.skills[this.equipments[dataId]["skl" + i][j]].type === 6 ? 3 : 1]
-              }
-              this.updateSkill(this.wotvEquipments[rType], skill, this.equipments[dataId]["skl" + i][j]);
-              skills.push(skill)
-              lastSkillId[j] = this.equipments[dataId]["skl" + i][j]
+      if (this.equipments[dataId].skl1) {
+        for (let j = 0; j < this.equipments[dataId].skl1.length; j++) {
+          if (lastSkillId[j] !== this.equipments[dataId].skl1[j]) {
+            let skill = {
+              names: {
+                en: this.names.en.skill[this.equipments[dataId].skl1[j]],
+                fr: this.names.fr.skill[this.equipments[dataId].skl1[j]]
+              },
+              dataId: this.equipments[dataId].skl1[j],
+              effects: [],
+              type: this.slots[this.skills[this.equipments[dataId].skl1[j]].s_buffs || this.skills[this.equipments[dataId].skl1[j]].type === 6 ? 3 : 1]
             }
+            this.updateSkill(this.wotvEquipments[rType], skill, this.equipments[dataId].skl1[j]);
+            skills.push(skill)
+            lastSkillId[j] = this.equipments[dataId].skl1[j]
           }
         }
       }
+
       this.wotvEquipments[rType].skills.push(skills)
     }
   }
@@ -1439,18 +1442,3 @@ export class JsonService {
     })
   }
 }
-
-
-/*
-
-
-
-
-
-
-
-
-
-*/
-
-

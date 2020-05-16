@@ -28329,9 +28329,10 @@
           "dataId": "SK_SPE_LW_RAMD_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "SLEEP_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -34655,9 +34656,12 @@
           "dataId": "SK_GUN_LW_RIRY_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "BLIND_ATK",
+              "minValue": 20,
+              "maxValue": 50,
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -41150,9 +41154,10 @@
           "dataId": "SK_MAC_LW_KADI_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "CONFUSION_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -47781,9 +47786,10 @@
           "dataId": "SK_ROD_LW_PRAY_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "DISABLE_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -49965,9 +49971,12 @@
           "dataId": "SK_BSW_LW_SZRT_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "DOOM_ATK",
+              "minValue": 4,
+              "maxValue": 4,
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 5
             }
           ],
           "type": "support",
@@ -52226,9 +52235,10 @@
           "dataId": "SK_BOW_LW_FINA_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "CHARM_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -88855,9 +88865,10 @@
           "dataId": "SK_ROD_FF14_YSTL_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "SILENCE_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -95220,9 +95231,12 @@
           "dataId": "SK_NKN_LW_SDLX_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "PARALYZE_ATK",
+              "minValue": 80,
+              "maxValue": 80,
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
@@ -99485,9 +99499,10 @@
           "dataId": "SK_SWO_LW_NASR_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "IMMOBILIZE_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 5
             }
           ],
           "type": "support",
@@ -105815,9 +105830,10 @@
           "dataId": "SK_SWO_FFT_GFGR_1_1",
           "effects": [
             {
-              "type": "IMBUE",
+              "type": "CONFUSION_ATK",
               "calcType": "percent",
-              "rate": 200
+              "rate": 15,
+              "turn": 3
             }
           ],
           "type": "support",
