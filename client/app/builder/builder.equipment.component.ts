@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { EquipmentService } from '../services/equipment.service';
 

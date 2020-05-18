@@ -33,6 +33,7 @@ export class JsonService {
 
   gl = {
     units: {},
+    unitModels: {},
     skills: {},
     buffs: {},
     equipments: {},
@@ -54,6 +55,7 @@ export class JsonService {
 
   jp = {
     units: {},
+    unitModels: {},
     skills: {},
     buffs: {},
     equipments: {},
@@ -172,6 +174,7 @@ export class JsonService {
     65: "MAGIC",
     70: "ALL_ATTACKS",
     81: "REGEN",
+    82: "TP_AUTO_RESTORE",
     83: "AUTO_RESTORE",
     84: "POISON",
     85: "BLIND",
@@ -205,9 +208,11 @@ export class JsonService {
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
     123: "IMBUE",
+    130: "IF_KILL_WITH_MAGIC",
     134: "BOOST_DAMAGE_AGAINST_METAL",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
+    144: "IMBUE",
     151: "INITIAL_AP",
     152: "RANGE",
     155: "ACCURACY",
@@ -226,11 +231,17 @@ export class JsonService {
     193: "FAITH",
     200: "DEBUFF_RES",
     202: "ATK_DEBUFF_RES",
+    203: "DEF_DEBUFF_RES",
+    204: "MAG_DEBUFF_RES",
+    205: "SPR_DEBUFF_RES",
     300: "BUFFS_DURATION",
     301: "DEBUFFS_DURATION",
     310: "ATTACK_RES",
     311: "AOE_RES",
-    313: "EVOCATION_MAGIC"
+    312: "MAX_DAMAGE",
+    313: "EVOCATION_MAGIC",
+    314: "DEFENSE_PENETRATION",
+    316: "AP_CONSUMPTION"
   }
 
   killers = {
@@ -254,7 +265,8 @@ export class JsonService {
     112: "REAPER",
     113: "STONE",
     114: "METAL",
-    204: "FENNES"
+    204: "FENNES",
+    401: "MALES"
   }
 
   damageEffectType = [
@@ -569,6 +581,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Grow.json').toPromise();
   }
 
+  private GLUnitModels() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitModel.json').toPromise();
+  }
+
   /* JP */
   private JPUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
@@ -620,6 +636,10 @@ export class JsonService {
 
   private JPGrows() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Grow.json').toPromise();
+  }
+
+  private JPUnitModels() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitModel.json').toPromise();
   }
 
   /* Translation */
@@ -695,6 +715,9 @@ export class JsonService {
       this.TranslateVisionCardNames(),
       this.TranslateVisionItemOthers(),
       this.TranslateEquipmentGrow(),
+
+      this.GLUnitModels(),
+      this.JPUnitModels(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -709,6 +732,7 @@ export class JsonService {
       this.gl.equipmentRecipes = this.formatJson(responses[10]);
       this.gl.equipementLots = this.formatJson(responses[11]);
       this.gl.grows = this.formatJson(responses[12]);
+      this.gl.unitModels = this.formatJson(responses[34]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -723,6 +747,7 @@ export class JsonService {
       this.jp.equipmentRecipes = this.formatJson(responses[23]);
       this.jp.equipementLots = this.formatJson(responses[24]);
       this.jp.grows = this.formatJson(responses[25]);
+      this.jp.unitModels = this.formatJson(responses[35]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -871,6 +896,7 @@ export class JsonService {
       }
     };
 
+    this.getUnitImage(this[this.version].wotvUnits[dataId])
     this.getNames(this[this.version].wotvUnits[dataId], 'unit');
 
     this.getStats(this[this.version].wotvUnits[dataId], unit.status, 'unit')
@@ -878,6 +904,12 @@ export class JsonService {
     this.getMasterSkill(this[this.version].wotvUnits[dataId], unit.mstskl)
     this.getTMR(this[this.version].wotvUnits[dataId], unit.trust)
     this.getSkillsAndBuffs(this[this.version].wotvUnits[dataId]);
+  }
+
+  private getUnitImage(unit) {
+    if (this[this.version].unitModels[unit.dataId] && this[this.version].unitModels[unit.dataId].img) {
+      unit.image = this[this.version].unitModels[unit.dataId].img.toLowerCase()
+    }
   }
 
   private addVisionCard(visionCard) {
@@ -914,7 +946,7 @@ export class JsonService {
       if (type == "unit" && this.names.en[type][item.dataId]
         || type == "visionCard" && this.names.en[type][item.dataId]
         || type == "equipment" && this.names.en[type][item.dataId]) {
-        item.names.en = this.names.en[type][item.dataId] + " - " + this.names.jp[type][item.dataId]
+        item.names.en = this.names.jp[type][item.dataId] + " - " + this.names.en[type][item.dataId]
         item.slug = this.slug.slugify(this.names.en[type][item.dataId])
       } else if (this.names.jp[type][item.dataId]) {
         item.names.en = this.names.jp[type][item.dataId]
@@ -958,7 +990,7 @@ export class JsonService {
       visionCard.partyBuffsMax = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax})
     }
 
-    // self
+    // self GL
     if (rawVisionCard.self_buff) {
       visionCard.unitBuffsClassic = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff})
     }
@@ -969,6 +1001,22 @@ export class JsonService {
 
     if (rawVisionCard.add_self_buff_lvmax) {
       visionCard.unitBuffsMax = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax})
+    }
+
+    // self JP
+    if (rawVisionCard.self_buffs) {
+      let buffs = rawVisionCard.self_buffs[0]
+      if (buffs.self_buff) {
+        visionCard.unitBuffsClassic = this.addSkill(visionCard, {slot: 0, value: buffs.self_buff})
+      }
+
+      if (buffs.add_self_buff_awake) {
+        visionCard.unitBuffsAwake = this.addSkill(visionCard, {slot: 0, value: buffs.add_self_buff_awake})
+      }
+
+      if (buffs.add_self_buff_lvmax) {
+        visionCard.unitBuffsMax = this.addSkill(visionCard, {slot: 0, value: buffs.add_self_buff_lvmax})
+      }
     }
   }
 
@@ -1042,7 +1090,8 @@ export class JsonService {
       elem: null,
       cap: null,
       stl_val: null,
-      stl_val1 : null
+      stl_val1 : null,
+      names: null
     };
 
     if (skill.type == "buff") {
@@ -1541,8 +1590,8 @@ export class JsonService {
             this[this.version].wotvEquipments[rType].acquisition = {
               type: {
                 en: this.names.en.itemOther[recipe],
-                fr: this.names.fr.itemOther[recipe],
-              } // @TODO
+                fr: this.names.fr.itemOther[recipe]
+              }
             }
           }
         }

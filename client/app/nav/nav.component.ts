@@ -18,6 +18,7 @@ export class NavComponent {
   inBuilder = false;
   showBuilderNav = false;
   actualRoute = null;
+  version = null;
 
   constructor(
     private localStorageService: LocalStorageService,
@@ -29,14 +30,17 @@ export class NavComponent {
 
   ngOnInit() {
     this.menuDisabled = this.navService.menuDisabled;
+    this.version = this.navService.getVersion()
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         let url = event.url.split("/")
         if (url.length >= 2 && url[1] == "JP") {
           this.navService.setVersion("JP")
+          this.version = "JP"
         } else {
           this.navService.setVersion("GL")
+          this.version = "GL"
         }
         this.actualRoute = url
       }

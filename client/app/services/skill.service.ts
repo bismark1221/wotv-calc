@@ -517,12 +517,6 @@ export class SkillService {
       case "CRITIC_GUARENTED" :
         html = "Guarented critical hit"
       break
-      case "HUMAN_KILLER" :
-        html = "Increase human killer" + this.getValue(skill, effect) + this.getTurns(effect)
-      break
-      case "FENNES_KILLER" :
-        html = "Increase fennes killer" + this.getValue(skill, effect) + this.getTurns(effect)
-      break
       case "IMBUE" :
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- SHOULD NOT BE USED !!!")
       break
@@ -580,8 +574,23 @@ export class SkillService {
       case "ATK_DEBUFF_RES" :
         html = this.getIncrease(effect) + " ATK Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "DEF_DEBUFF_RES" :
+        html = this.getIncrease(effect) + " DEF Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MAG_DEBUFF_RES" :
+        html = this.getIncrease(effect) + " MAG Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SPR_DEBUFF_RES" :
+        html = this.getIncrease(effect) + " SPR Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "EVOCATION_GAUGE_BOOST" :
         html = this.getIncrease(effect) + " Evocation Gauge Boost" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "HUMAN_KILLER" :
+        html = "Increase human killer" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "FENNES_KILLER" :
+        html = "Increase fennes killer" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "REAPER_KILLER" :
         html = "Increase reaper killer" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -600,6 +609,9 @@ export class SkillService {
       break
       case "AVIAN_KILLER" :
         html = "Increase avian killer" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MALES_KILLER" :
+        html = "Increase male killer" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "DRAGON_KILLER" :
         html = "Increase dragon killer" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -663,6 +675,21 @@ export class SkillService {
       break
       case "STEAL" :
         html = "Steal" + this.getValue(skill, effect)
+      break
+      case "TP_AUTO_RESTORE" :
+        html = "Auto restore TP" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MAX_DAMAGE" :
+        html = "Increase maximum damage" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DEFENSE_PENETRATION" :
+        html = "Increase defense penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "AP_CONSUMPTION" :
+        html = "Decrease AP consumption" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "IF_KILL_WITH_MAGIC" :
+        html = "If kill with magic grants"
       break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)

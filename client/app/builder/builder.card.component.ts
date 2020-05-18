@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { CardService } from '../services/card.service';

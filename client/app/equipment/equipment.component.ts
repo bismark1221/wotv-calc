@@ -43,9 +43,7 @@ export class EquipmentComponent implements OnInit {
   }
 
   private formatEquipment() {
-    let lang = this.translateService.currentLang
-
-    this.equipment.name = this.this.nameService.getName(equipment)
+    this.equipment.name = this.nameService.getName(this.equipment)
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
     let i = 0;
@@ -80,14 +78,22 @@ export class EquipmentComponent implements OnInit {
         slug: unit.slug
       }
     } else {
-      this.equipment.acquisition.name = this.equipment.acquisition.type === "Unknown" ? "Unknown" : this.equipment.acquisition.type[lang]
+      let acquis = "Unknown"
+      if (this.equipment.acquisition.type !== "Unknown") {
+        if (!this.equipment.acquisition.type[this.translateService.currentLang]) {
+          acquis = this.equipment.acquisition.type[this.translateService.getDefaultLang()];
+        } else {
+          acquis = this.equipment.acquisition.type[this.translateService.currentLang];
+        }
+      }
+      this.equipment.acquisition.name = acquis
     }
 
     this.equipment.growIds = []
     if (Object.keys(this.equipment.grows).length > 1) {
       this.equipment.growIds = Object.keys(this.equipment.grows)
       Object.keys(this.equipment.grows).forEach(growId => {
-        this.equipment.grows[growId].name = this.equipment.grows[this.nameService.getName(growId)]
+        this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
         this.equipment.grows[growId].stats = {};
         this.equipment.statsTypes.forEach(statType => {
           let maxValue = this.equipment.stats[statType].max

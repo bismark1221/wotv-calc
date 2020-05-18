@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { UnitService } from '../services/unit.service';
@@ -115,7 +114,6 @@ export class BuilderUnitComponent implements OnInit {
 
   constructor(
     private unitService: UnitService,
-    private localStorageService: LocalStorageService,
     private translateService: TranslateService,
     private guildService: GuildService,
     private esperService: EsperService,

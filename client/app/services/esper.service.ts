@@ -244,17 +244,13 @@ export class EsperService {
   }
 
   getEsperBySlug(slug: string): Esper {
-    if (!this.espers || this.espers.length === 0) {
-      this.getEspers();
-    }
+    this.getEspers();
 
     return this.espers.find(esper => esper.slug === slug);
   }
 
   getEsper(id: string): Esper {
-    if (!this.espers || this.espers.length === 0) {
-      this.getEspers();
-    }
+    this.getEspers();
 
     return this.espers.find(esper => esper.dataId === id);
   }
@@ -283,9 +279,12 @@ export class EsperService {
     return formattedEspersForBuilder;
   }
 
+  getLocalStorage() {
+    return this.navService.getVersion() == "JP" ? "jp_espers" : "espers"
+  }
 
   getSavedEspers() {
-    this.savedEspers = this.localStorageService.get('espers') ? this.localStorageService.get('espers') : {};
+    this.savedEspers = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
     return this.savedEspers;
   }
 
@@ -304,7 +303,7 @@ export class EsperService {
       this.savedEspers[esper.dataId].nodes[nodeId] = esper.board.nodes[nodeId].level
     })
 
-    this.localStorageService.set('espers', this.savedEspers);
+    this.localStorageService.set(this.getLocalStorage(), this.savedEspers);
   }
 
   selectEsperForBuilder(esperId) {

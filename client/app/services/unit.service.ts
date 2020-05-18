@@ -246,8 +246,12 @@ export class UnitService {
     return this.units.find(unit => unit.slug === slug);
   }
 
+  getLocalStorage() {
+    return this.navService.getVersion() == "JP" ? "jp_units" : "units"
+  }
+
   getSavedUnits() {
-    this.savedUnits = this.localStorageService.get('units') ? this.localStorageService.get('units') : {};
+    this.savedUnits = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
     return this.savedUnits;
   }
 
@@ -266,7 +270,7 @@ export class UnitService {
         unit.jobsData[2].level
       ],
       nodes: {},
-      masterSkill: unit.masterSkill.activated,
+      masterSkill: unit.masterSkillActivated,
       activatedSupport: [
         unit.activatedSupport[0],
         unit.activatedSupport[1]
@@ -297,7 +301,7 @@ export class UnitService {
       this.savedUnits[unit.dataId].nodes[nodeId] = unit.board.nodes[nodeId].level
     })
 
-    this.localStorageService.set('units', this.savedUnits);
+    this.localStorageService.set(this.getLocalStorage(), this.savedUnits);
   }
 
   selectUnitForBuilder(unitId) {
@@ -320,8 +324,14 @@ export class UnitService {
       "0",
       "0"
     ]
-    this.unit.masterSkill.activated = false;
-    this.unit.masterSkill.name = this.nameService.getName(this.unit.masterSkill)
+
+    this.unit.masterSkillLevel = [-1]
+    let i = 0;
+    this.unit.masterSkill.forEach(skill => {
+      this.unit.masterSkillLevel.push(i)
+      i++
+    })
+    this.unit.masterSkillActivated = -1;
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
@@ -361,7 +371,12 @@ export class UnitService {
         }
       })
 
-      this.unit.masterSkill.activated = unit.masterSkill
+      if (unit.masterSkill === true) {
+        this.unit.masterSkillActivated = 0;
+      } else if (typeof(unit.masterSkill) == "number") {
+        this.unit.masterSkillActivated = unit.masterSkill
+      }
+
       this.unit.activatedSupport = [
         unit.activatedSupport[0],
         unit.activatedSupport[1]
@@ -571,13 +586,14 @@ export class UnitService {
   }
 
   private calculateMasterSkillStats() {
-    if (this.unit.masterSkill.activated) {
-      this.unit.masterSkill.effects.forEach(effect => {
+    if (this.unit.masterSkillActivated >= 0) {
+      let masterSkill = this.unit.masterSkill[this.unit.masterSkillActivated]
+      masterSkill.effects.forEach(effect => {
         if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
           this.updateStat(effect.type, effect.minValue, "masterSkill", effect.calcType === "percent" ? "percent" : "fixe")
         } else {
           console.log("not manage effect in masterSkill percent/fixe")
-          console.log(this.unit.masterSkill)
+          console.log(masterSkill)
         }
       })
     }

@@ -166,17 +166,13 @@ export class EquipmentService {
   }
 
   getEquipmentBySlug(slug: string): Equipment {
-    if (!this.equipments || this.equipments.length === 0) {
-      this.getEquipments();
-    }
+    this.getEquipments();
 
     return this.equipments.find(equipment => equipment.slug === slug);
   }
 
   getEquipment(id: string): Equipment {
-    if (!this.equipments || this.equipments.length === 0) {
-      this.getEquipments();
-    }
+    this.getEquipments();
 
     return this.equipments.find(equipment => equipment.dataId === id);
   }
@@ -212,9 +208,12 @@ export class EquipmentService {
     return formattedEquipmentsForBuilder;
   }
 
+  getLocalStorage() {
+    return this.navService.getVersion() == "JP" ? "jp_equipments" : "equipments"
+  }
 
   getSavedEquipments() {
-    this.savedEquipments = this.localStorageService.get('equipments') ? this.localStorageService.get('equipments') : {};
+    this.savedEquipments = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
     return this.savedEquipments;
   }
 
@@ -239,7 +238,7 @@ export class EquipmentService {
       this.savedEquipments[equipment.dataId].skill[skill.dataId] = skill.level
     })
 
-    this.localStorageService.set('equipments', this.savedEquipments);
+    this.localStorageService.set(this.getLocalStorage(), this.savedEquipments);
   }
 
   selectEquipmentForBuilder(equipmentId) {

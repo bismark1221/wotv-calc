@@ -157,17 +157,13 @@ export class CardService {
   }
 
   getCard(id: string): Card {
-    if (!this.cards || this.cards.length === 0) {
-      this.getCards();
-    }
+    this.getCards();
 
     return this.cards.find(card => card.dataId === id);
   }
 
   getCardBySlug(slug: string): Card {
-    if (!this.cards || this.cards.length === 0) {
-      this.getCards();
-    }
+    this.getCards();
 
     return this.cards.find(card => card.slug === slug);
   }
@@ -195,8 +191,12 @@ export class CardService {
     return formattedCardsForBuilder;
   }
 
+  getLocalStorage() {
+    return this.navService.getVersion() == "JP" ? "jp_cards" : "cards"
+  }
+
   getSavedCards() {
-    this.savedCards = this.localStorageService.get('cards') ? this.localStorageService.get('cards') : {};
+    this.savedCards = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
     return this.savedCards;
   }
 
@@ -210,7 +210,7 @@ export class CardService {
       level: card.level
     }
 
-    this.localStorageService.set('cards', this.savedCards);
+    this.localStorageService.set(this.getLocalStorage(), this.savedCards);
   }
 
   selectCardForBuilder(cardId) {
@@ -271,6 +271,8 @@ export class CardService {
       self: {},
       party: {}
     }
+
+    console.log(this.card)
 
     this.card.unitBuffsClassic.effects.forEach(effect => {
       buffs.self[effect.type] = {}

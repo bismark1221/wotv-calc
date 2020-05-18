@@ -36,9 +36,7 @@ export class JobService {
   }
 
   getJob(id: string): Job {
-    if (!this.jobs || this.jobs.length === 0) {
-      this.getJobs();
-    }
+    this.getJobs();
 
     return this.jobs.find(job => job.dataId === id);
   }

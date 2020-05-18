@@ -83,12 +83,15 @@
   <div *ngIf="unit">
     <table>
       <tr>
-        <td>Master Skill</td>
+        <td>Master Skill Level</td>
       </tr>
       <tr>
         <td>
-          <input type="checkbox" [(ngModel)]="unit.masterSkill.activated" (ngModelChange)="changeLevel()" />
-          activated
+          <select [(ngModel)]="unit.masterSkillActivated" (ngModelChange)="changeLevel()">
+            <option *ngFor="let i of unit.masterSkillLevel" [ngValue]="i">
+              {{ i + 1 }}
+            </option>
+          </select>
         </td>
       </tr>
     </table>

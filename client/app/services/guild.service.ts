@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Guild } from '../entities/guild';
+import { NavService } from './nav.service';
 
 @Injectable()
 export class GuildService {
@@ -16,11 +17,18 @@ export class GuildService {
     "MAG": "lion",
   }
 
-  constructor(private localStorageService: LocalStorageService) {}
+  constructor(
+    private localStorageService: LocalStorageService,
+    private navService: NavService
+  ) {}
+
+  getLocalStorage() {
+    return this.navService.getVersion() == "JP" ? "jp_guild" : "guild"
+  }
 
   getGuild() {
-    if (this.localStorageService.get('guild')) {
-      this.guild = this.localStorageService.get('guild')
+    if (this.localStorageService.get(this.getLocalStorage())) {
+      this.guild = this.localStorageService.get(this.getLocalStorage())
     } else {
       this.guild = new Guild();
     }
@@ -29,7 +37,7 @@ export class GuildService {
   }
 
   saveGuild() {
-    this.localStorageService.set('guild', this.guild);
+    this.localStorageService.set(this.getLocalStorage(), this.guild);
   }
 
   getStatues() {

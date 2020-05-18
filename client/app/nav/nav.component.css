@@ -97,14 +97,30 @@
   margin-right: 5px;
 }
 
-.lang {
-  margin-top: 6px;
-}
-
 .menuDisabled {
   background-color: #fff;
   border-color: #ccc;
   opacity: .65;
+}
+
+.versions {
+  margin-left: 10px;
+}
+
+.btn.activated {
+  background-color: #615f5f;
+  color: #fff;
+}
+
+.btn-group {
+  height: 25px;
+}
+
+.btn {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 

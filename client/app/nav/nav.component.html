@@ -26,14 +26,11 @@
       <img src="../../assets/nav/blank.gif" class="flag flag-fr" />
     </a>
   </div>
-  <div class="lang">
-    <a class="pointer" (click)="changeVersion('GL')">
-      GL
-    </a>
-    <span class="separator"></span>
-    <a class="pointer" (click)="changeVersion('JP')">
-      JP
-    </a>
+  <div class="versions">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button [ngClass]="{'activated': version == 'GL'}" type="button" class="btn btn-secondary" (click)="changeVersion('GL')">GL</button>
+      <button [ngClass]="{'activated': version == 'JP'}" type="button" class="btn btn-secondary" (click)="changeVersion('JP')">JP</button>
+    </div>
   </div>
 </nav>
 
