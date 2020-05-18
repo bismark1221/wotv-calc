@@ -3,6 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-equipments',
@@ -16,7 +17,8 @@ export class EquipmentsComponent implements OnInit {
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
@@ -43,7 +45,7 @@ export class EquipmentsComponent implements OnInit {
           this.formattedEquipments[rarity][tableIndex] = [];
         }
 
-        equipment.name = equipment.names[lang]
+        equipment.name = this.nameService.getName(equipment)
         this.formattedEquipments[rarity][tableIndex].push(equipment)
       });
     });
@@ -55,7 +57,7 @@ export class EquipmentsComponent implements OnInit {
     Object.keys(this.formattedEquipments).forEach(rarity => {
       this.formattedEquipments[rarity].forEach(line => {
         line.forEach(equipment => {
-          equipment.name = equipment.names[lang]
+          equipment.name = this.nameService.getName(equipment)
         });
       });
     });

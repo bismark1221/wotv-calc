@@ -7,6 +7,7 @@ import { default as GL_EQUIPMENTS } from '../data/gl/equipments.json';
 import { default as JP_EQUIPMENTS } from '../data/jp/equipments.json';
 import { SkillService } from './skill.service'
 import { NavService } from './nav.service'
+import { NameService } from './name.service'
 
 @Injectable()
 export class EquipmentService {
@@ -72,7 +73,8 @@ export class EquipmentService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private skillService: SkillService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {}
 
   private i(s: any) {
@@ -291,7 +293,7 @@ export class EquipmentService {
 
     this.equipment.skills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
-        skill.name = skill.names[lang]
+        skill.name = this.nameService.getName(skill)
         skill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
         });
@@ -309,7 +311,7 @@ export class EquipmentService {
     });
 
     Object.keys(this.equipment.grows).forEach(growId => {
-      this.equipment.grows[growId].name = this.equipment.grows[growId].names[lang]
+      this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
       this.equipment.grows[growId].stats = {};
       this.equipment.statsTypes.forEach(statType => {
         let maxValue = this.equipment.stats[statType].max

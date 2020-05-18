@@ -5,6 +5,7 @@ import { UnitService } from '../services/unit.service'
 import { EsperService } from '../services/esper.service'
 import { CardService } from '../services/card.service'
 import { NavService } from '../services/nav.service'
+import { NameService } from '../services/name.service'
 
 @Component({
   selector: 'app-home',
@@ -48,7 +49,8 @@ export class HomeComponent {
     private unitService: UnitService,
     private esperService: EsperService,
     private cardService: CardService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.getTranslation();
     this.getUpdate();
@@ -87,7 +89,7 @@ export class HomeComponent {
         this.updatedFormatted[updateIndex][tableIndex].push({
           type: item.type,
           slug: dataItem.slug,
-          name: dataItem.names[lang],
+          name: this.nameService.getName(dataItem),
           image: dataItem.image,
           element: dataItem.element,
           rarity: item.type == "esper" ? this.esperService.findRarity(dataItem) : dataItem.rarity

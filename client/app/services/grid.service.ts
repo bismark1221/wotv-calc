@@ -3,6 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser'
 import { TranslateService } from '@ngx-translate/core';
 
 import { SkillService } from './skill.service'
+import { NameService } from './name.service'
 
 @Injectable()
 export class GridService {
@@ -404,7 +405,8 @@ export class GridService {
   constructor(
     private sanitizer: DomSanitizer,
     private skillService: SkillService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private nameService: NameService
   ) {}
 
   generateEsperGrid(esper) {
@@ -454,7 +456,7 @@ export class GridService {
         if (unit.board.nodes[node.toString()].type == "buff") {
           text = this.skillService.formatEffect(unit, skill, skill.effects[0])
         } else {
-          text = skill.names[this.translateService.currentLang]
+          text = this.nameService.getName(skill)
         }
 
         nodesForGrid[node] = {

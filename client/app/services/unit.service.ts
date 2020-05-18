@@ -11,6 +11,7 @@ import { SkillService } from './skill.service'
 import { JobService } from './job.service'
 import { GuildService } from './guild.service'
 import { NavService } from './nav.service'
+import { NameService } from './name.service'
 
 @Injectable()
 export class UnitService {
@@ -118,7 +119,8 @@ export class UnitService {
     private skillService: SkillService,
     private jobService: JobService,
     private guildService: GuildService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {}
 
   private i(s: any) {
@@ -319,7 +321,7 @@ export class UnitService {
       "0"
     ]
     this.unit.masterSkill.activated = false;
-    this.unit.masterSkill.name = this.unit.masterSkill.names[this.translateService.currentLang]
+    this.unit.masterSkill.name = this.nameService.getName(this.unit.masterSkill)
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
@@ -869,7 +871,7 @@ export class UnitService {
       if (node.level && node.level >= 1 && node.skill.type == "support" && this.unit.activatedSupport[(pos == 0 ? 1 : 0)] !== nodeId) {
         nodes.push({
           nodeId: nodeId.toString(),
-          name: node.skill.names[this.translateService.currentLang]
+          name: this.nameService.getName(node.skill)
         })
       }
     })

@@ -3,6 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
 import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-espers',
@@ -16,7 +17,8 @@ export class EspersComponent implements OnInit {
   constructor(
     private esperService: EsperService,
     private translateService: TranslateService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEspers();
@@ -42,7 +44,7 @@ export class EspersComponent implements OnInit {
           this.formattedEspers[rarity][tableIndex] = [];
         }
 
-        esper.name = esper.names[lang]
+        esper.name = this.nameService.getName(esper)
         this.formattedEspers[rarity][tableIndex].push(esper)
       });
     });
@@ -54,7 +56,7 @@ export class EspersComponent implements OnInit {
     Object.keys(this.formattedEspers).forEach(rarity => {
       this.formattedEspers[rarity].forEach(line => {
         line.forEach(esper => {
-          esper.name = esper.names[lang]
+          esper.name = this.nameService.getName(esper)
         });
       });
     });

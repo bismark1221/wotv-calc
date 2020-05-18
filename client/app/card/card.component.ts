@@ -6,6 +6,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { CardService } from '../services/card.service';
 import { SkillService } from '../services/skill.service';
 import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
 
 
 @Component({
@@ -22,7 +23,8 @@ export class CardComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       if (this.card) {
@@ -46,7 +48,7 @@ export class CardComponent implements OnInit {
     let lang = this.translateService.currentLang
     let skills = ["unitBuffsClassic", "unitBuffsAwake", "unitBuffsMax", "partyBuffsClassic", "partyBuffsAwake", "partyBuffsMax"];
 
-    this.card.name = this.card.names[lang]
+    this.card.name = this.nameService.getName(this.card)
     skills.forEach(skillType => {
       if (this.card[skillType]) {
         this.card[skillType].effects.forEach(effect => {

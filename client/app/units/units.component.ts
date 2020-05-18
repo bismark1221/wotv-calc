@@ -3,6 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-units',
@@ -16,7 +17,8 @@ export class UnitsComponent implements OnInit {
   constructor(
     private unitService: UnitService,
     private translateService: TranslateService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
@@ -42,7 +44,7 @@ export class UnitsComponent implements OnInit {
           this.formattedUnits[rarity][tableIndex] = [];
         }
 
-        unit.name = unit.names[lang]
+        unit.name = this.nameService.getName(unit)
         this.formattedUnits[rarity][tableIndex].push(unit)
       });
     });
@@ -54,7 +56,7 @@ export class UnitsComponent implements OnInit {
     Object.keys(this.formattedUnits).forEach(rarity => {
       this.formattedUnits[rarity].forEach(line => {
         line.forEach(unit => {
-          unit.name = unit.names[lang]
+          unit.name = this.nameService.getName(unit)
         });
       });
     });

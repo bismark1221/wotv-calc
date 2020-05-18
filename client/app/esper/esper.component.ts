@@ -6,6 +6,7 @@ import { EsperService } from '../services/esper.service';
 import { SkillService } from '../services/skill.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-esper',
@@ -23,7 +24,8 @@ export class EsperComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private gridService: GridService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEsper();
@@ -43,10 +45,10 @@ export class EsperComponent implements OnInit {
 
   private formatEsper() {
     let lang = this.translateService.currentLang
-    this.esper.name = this.esper.names[lang]
+    this.esper.name = this.nameService.getName(this.esper)
 
     this.esper.skills.forEach(skill => {
-      skill.name = skill.names[lang]
+      skill.name = this.nameService.getName(skill)
       skill.effects.forEach(effect => {
         effect.formatHtml = this.skillService.formatEffect(this.esper, skill, effect);
       });

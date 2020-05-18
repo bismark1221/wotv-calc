@@ -6,7 +6,7 @@ import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
-
+import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-equipment',
@@ -23,7 +23,8 @@ export class EquipmentComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEquipment();
@@ -44,7 +45,7 @@ export class EquipmentComponent implements OnInit {
   private formatEquipment() {
     let lang = this.translateService.currentLang
 
-    this.equipment.name = this.equipment.names[lang]
+    this.equipment.name = this.this.nameService.getName(equipment)
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
     let i = 0;
@@ -54,7 +55,7 @@ export class EquipmentComponent implements OnInit {
       this.equipment.countSkills.push(i);
 
       equipmentLvl.forEach(skill => {
-        skill.name = skill.names[lang]
+        skill.name = this.nameService.getName(skill)
         skill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
         });
@@ -75,7 +76,7 @@ export class EquipmentComponent implements OnInit {
     if (this.equipment.acquisition.type === "tmr") {
       let unit = this.getUnit(this.equipment.acquisition.unitId)
       this.equipment.acquisition.unit = {
-        name: unit.names.en,
+        name: this.nameService.getName(unit),
         slug: unit.slug
       }
     } else {
@@ -86,7 +87,7 @@ export class EquipmentComponent implements OnInit {
     if (Object.keys(this.equipment.grows).length > 1) {
       this.equipment.growIds = Object.keys(this.equipment.grows)
       Object.keys(this.equipment.grows).forEach(growId => {
-        this.equipment.grows[growId].name = this.equipment.grows[growId].names[lang]
+        this.equipment.grows[growId].name = this.equipment.grows[this.nameService.getName(growId)]
         this.equipment.grows[growId].stats = {};
         this.equipment.statsTypes.forEach(statType => {
           let maxValue = this.equipment.stats[statType].max

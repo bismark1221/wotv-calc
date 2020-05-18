@@ -8,6 +8,7 @@ import { SkillService } from '../services/skill.service';
 import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-unit',
@@ -28,7 +29,8 @@ export class UnitComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private gridService: GridService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatUnit();
@@ -48,7 +50,7 @@ export class UnitComponent implements OnInit {
 
   private formatUnit() {
     let lang = this.translateService.currentLang
-    this.unit.name = this.unit.names[lang]
+    this.unit.name = this.nameService.getName(this.unit)
 
     this.unit.skills = []
 
@@ -70,7 +72,7 @@ export class UnitComponent implements OnInit {
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       let skill = this.unit.board.nodes[nodeId].skill
       if (skill.type !== "buff") {
-        skill.name = skill.names[lang]
+        skill.name = this.nameService.getName(skill)
 
         skill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
@@ -97,7 +99,7 @@ export class UnitComponent implements OnInit {
 
     if (this.unit.masterSkill.length > 0) {
       this.unit.masterSkill.forEach(masterSkill => {
-        masterSkill.name = masterSkill.names[lang]
+        masterSkill.name = this.nameService.getName(masterSkill)
 
         masterSkill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
@@ -106,7 +108,7 @@ export class UnitComponent implements OnInit {
     }
 
     if (this.unit.limit) {
-      this.unit.limit.name = this.unit.limit.names[lang]
+      this.unit.limit.name = this.nameService.getName(this.unit.limit)
 
       this.unit.limit.basedHtml = this.unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.limit.based.toLowerCase() + ".png' />" : "";
 
@@ -120,11 +122,11 @@ export class UnitComponent implements OnInit {
     }
 
     if (this.unit.tmr) {
-      this.unit.tmr.name = this.unit.tmr.names[lang]
+      this.unit.tmr.name = this.nameService.getName(this.unit.tmr)
       this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats)
 
       this.unit.tmr.skills.forEach(skill => {
-        skill.name = skill.names[lang]
+        skill.name = this.nameService.getName(skill)
         skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
         this.skillService.formatRange(this.unit, skill);
         skill.effects.forEach(effect => {
@@ -140,7 +142,7 @@ export class UnitComponent implements OnInit {
     this.unit.jobs.forEach(jobId => {
       let job = this.jobService.getJob(jobId)
       this.calcJobStat(job, (i > 0 ? true : false))
-      job.name = job.names[lang]
+      job.name = this.nameService.getName(job)
       this.jobs.push(job)
       i++
     })
