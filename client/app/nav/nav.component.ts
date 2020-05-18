@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 
 import { NavService } from '../services/nav.service'
 
@@ -17,6 +17,7 @@ export class NavComponent {
   menuDisabled: boolean;
   inBuilder = false;
   showBuilderNav = false;
+  actualRoute = null;
 
   constructor(
     private localStorageService: LocalStorageService,
@@ -30,9 +31,20 @@ export class NavComponent {
     this.menuDisabled = this.navService.menuDisabled;
 
     this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        let url = event.url.split("/")
+        if (url.length >= 2 && url[1] == "JP") {
+          this.navService.setVersion("JP")
+        } else {
+          this.navService.setVersion("GL")
+        }
+        this.actualRoute = url
+      }
+
       if (event instanceof NavigationEnd) {
         let url = event.url.split("/")
-        if (url.length >= 2 && url[1] == "builder") {
+        if ((url.length >= 2 && url[1] == "builder")
+          || (url.length >= 3 && url[2] == "builder")) {
           this.inBuilder = true
         } else {
           this.inBuilder = false
@@ -60,5 +72,19 @@ export class NavComponent {
     }
 
     this.menu(true);
+  }
+
+  changeVersion(version) {
+    if (version == "GL" && this.actualRoute.length >= 2 && this.actualRoute[1] === "JP") {
+      this.actualRoute.splice(1, 1)
+      this.router.navigate([this.actualRoute.join("/") == "" ? "/" : this.actualRoute.join("/")])
+    } else if (version == "JP" && this.actualRoute.length >= 2 && this.actualRoute[1] !== "JP") {
+      this.actualRoute.splice(1, 0, "JP");
+      this.router.navigate([this.actualRoute.join("/")])
+    }
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
   }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-units',
@@ -14,7 +15,8 @@ export class UnitsComponent implements OnInit {
 
   constructor(
     private unitService: UnitService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
@@ -56,5 +58,9 @@ export class UnitsComponent implements OnInit {
         });
       });
     });
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
   }
 }

@@ -5,6 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';
 import { SkillService } from '../services/skill.service';
+import { NavService } from '../services/nav.service';
 
 
 @Component({
@@ -20,10 +21,13 @@ export class CardComponent implements OnInit {
     private skillService: SkillService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.formatCard();
+      if (this.card) {
+        this.formatCard();
+      }
     });
   }
 
@@ -31,7 +35,7 @@ export class CardComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.card = this.cardService.getCardBySlug(params.get('slug'))
       if (!this.card) {
-        this.router.navigate(['/card-not-found']);
+        this.router.navigate([this.navService.getRoute('/card-not-found')]);
       } else {
         this.formatCard();
       }

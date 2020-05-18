@@ -1,14 +1,14 @@
 <nav class="navbar navbar-toggleable-md navbar-dark bg-dark fixed-top">
   <div class="centerNav">
     <div></div>
-    <a class="navbar-brand" [routerLink]="['/']" (click)="menu(true)">WOTV-Calc</a>
+    <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="menu(true)">WOTV-Calc</a>
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="['/units']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.units' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/cards']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.cards' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/espers']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.espers' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/equipments']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.equipments' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/builder']" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=true">
+        <a class="nav-link" [routerLink]="[getRoute('/units')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/cards')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/espers')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/equipments')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=true">
           {{ 'nav.builder' | translate }}
         </a>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false">&nbsp;</div>
@@ -26,17 +26,26 @@
       <img src="../../assets/nav/blank.gif" class="flag flag-fr" />
     </a>
   </div>
+  <div class="lang">
+    <a class="pointer" (click)="changeVersion('GL')">
+      GL
+    </a>
+    <span class="separator"></span>
+    <a class="pointer" (click)="changeVersion('JP')">
+      JP
+    </a>
+  </div>
 </nav>
 
 <nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false" *ngIf="showBuilderNav || inBuilder">
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="['/builder/unit']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.units' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/builder/card']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.cards' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/builder/esper']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.espers' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/builder/equipment']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.equipments' | translate }}</a>
-        <a class="nav-link" [routerLink]="['/builder/guild']" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.guild' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.guild' | translate }}</a>
       </li>
     </ul>
   </div>

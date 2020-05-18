@@ -1,0 +1,5992 @@
+{
+    "infos": [
+        {
+            "key": "SK_FROG_ATK",
+            "value": "通常攻撃スキル(カエル時)"
+        },
+        {
+            "key": "SK_CRYSTAL_NORMAL",
+            "value": "クリスタル効果"
+        },
+        {
+            "key": "SK_LW_WAR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_WAR_M_1",
+            "value": "獣殺刃"
+        },
+        {
+            "key": "SK_LW_WAR_M_4",
+            "value": "キラーブレード"
+        },
+        {
+            "key": "SK_LW_WAR_S_3",
+            "value": "ジャマーエッジ"
+        },
+        {
+            "key": "SK_LW_WAR_S_1_INIT",
+            "value": "投石"
+        },
+        {
+            "key": "SK_LW_WAR_M_2_INIT",
+            "value": "気を練る"
+        },
+        {
+            "key": "SK_LW_WAR_S_2",
+            "value": "体当たり"
+        },
+        {
+            "key": "SK_LW_WAR_M_3",
+            "value": "応急手当"
+        },
+        {
+            "key": "SK_LW_WAR_R_1",
+            "value": "カウンターアタック"
+        },
+        {
+            "key": "SK_LW_WAR_R_1_MONT",
+            "value": "反撃の刃"
+        },
+        {
+            "key": "SK_LW_WAR_P_1",
+            "value": "攻撃アップLv1"
+        },
+        {
+            "key": "SK_LW_WAR_P_1_MONT",
+            "value": "リオニス第一王子"
+        },
+        {
+            "key": "SK_LW_WAR_M_1_SUB",
+            "value": "獣殺刃"
+        },
+        {
+            "key": "SK_LW_WAR_M_4_SUB",
+            "value": "キラーブレード"
+        },
+        {
+            "key": "SK_LW_WAR_S_3_SUB",
+            "value": "ジャマーエッジ"
+        },
+        {
+            "key": "SK_LW_WAR_S_1",
+            "value": "投石"
+        },
+        {
+            "key": "SK_LW_WAR_M_2",
+            "value": "気を練る"
+        },
+        {
+            "key": "SK_LW_KNT_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_KNT_M_4",
+            "value": "トリニティブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_S_2",
+            "value": "TPブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_M_3",
+            "value": "APブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_S_1_INIT",
+            "value": "ディバインヒール"
+        },
+        {
+            "key": "SK_LW_KNT_M_1_INIT",
+            "value": "パワーブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_M_2",
+            "value": "マジックブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_S_3",
+            "value": "アームブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_S_4",
+            "value": "スピードブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_R_1",
+            "value": "ソードガード"
+        },
+        {
+            "key": "SK_LW_KNT_P_1",
+            "value": "聖なる加護"
+        },
+        {
+            "key": "SK_LW_KNT_P_2",
+            "value": "HPアップLv１"
+        },
+        {
+            "key": "SK_LW_KNT_M_4_SUB",
+            "value": "トリニティブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_S_2_SUB",
+            "value": "TPブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_M_3_SUB",
+            "value": "APブレイク"
+        },
+        {
+            "key": "SK_LW_KNT_S_1",
+            "value": "ディバインヒール"
+        },
+        {
+            "key": "SK_LW_KNT_M_1",
+            "value": "パワーブレイク"
+        },
+        {
+            "key": "SK_LW_PLD_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_PLD_M_4",
+            "value": "セイントウォール"
+        },
+        {
+            "key": "SK_LW_PLD_M_2",
+            "value": "不滅の闘志"
+        },
+        {
+            "key": "SK_LW_PLD_S_7",
+            "value": "セイントクロス"
+        },
+        {
+            "key": "SK_LW_PLD_M_1_INIT",
+            "value": "セイントヒール"
+        },
+        {
+            "key": "SK_LW_PLD_S_5_INIT",
+            "value": "ブレードバッシュ"
+        },
+        {
+            "key": "SK_LW_PLD_S_6",
+            "value": "センチネル"
+        },
+        {
+            "key": "SK_LW_PLD_S_2",
+            "value": "ディバイングレイス"
+        },
+        {
+            "key": "SK_LW_PLD_M_3",
+            "value": "アトラクトブレード"
+        },
+        {
+            "key": "SK_LW_PLD_R_1",
+            "value": "パラディンガード"
+        },
+        {
+            "key": "SK_LW_PLD_P_1",
+            "value": "聖騎士の加護"
+        },
+        {
+            "key": "SK_LW_PLD_M_4_SUB",
+            "value": "セイントウォール"
+        },
+        {
+            "key": "SK_LW_PLD_M_2_SUB",
+            "value": "不滅の闘志"
+        },
+        {
+            "key": "SK_LW_PLD_S_7_SUB",
+            "value": "セイントクロス"
+        },
+        {
+            "key": "SK_LW_PLD_M_1",
+            "value": "セイントヒール"
+        },
+        {
+            "key": "SK_LW_PLD_S_5",
+            "value": "ブレードバッシュ"
+        },
+        {
+            "key": "SK_LW_MGK_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_M_4",
+            "value": "ファイガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_M_4",
+            "value": "ウォタガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_M_4",
+            "value": "ブリザガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_M_4",
+            "value": "ストンガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_M_4",
+            "value": "サンダガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_M_4",
+            "value": "エアロガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_M_4",
+            "value": "バニシュガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_M_4",
+            "value": "ダーガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_M_2",
+            "value": "チキン剣"
+        },
+        {
+            "key": "SK_LW_MGK_S_4",
+            "value": "サイレス剣"
+        },
+        {
+            "key": "SK_LW_MGK_M_3",
+            "value": "マジックバリア"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_S_1_INIT",
+            "value": "ファイア剣"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_S_1_INIT",
+            "value": "ウォータ剣"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_S_1_INIT",
+            "value": "ブリザド剣"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_S_1_INIT",
+            "value": "ストーン剣"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_S_1_INIT",
+            "value": "サンダー剣"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_S_1_INIT",
+            "value": "エアロ剣"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_S_1_INIT",
+            "value": "バニシュ剣"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_S_1_INIT",
+            "value": "ダーク剣"
+        },
+        {
+            "key": "SK_LW_MGK_M_1_INIT",
+            "value": "バイオ剣"
+        },
+        {
+            "key": "SK_LW_MGK_S_3",
+            "value": "マジックレジスト"
+        },
+        {
+            "key": "SK_LW_MGK_S_2",
+            "value": "アトラクトスペル"
+        },
+        {
+            "key": "SK_LW_MGK_R_1",
+            "value": "マジックガード"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_P_1",
+            "value": "炎精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_P_1",
+            "value": "水精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_P_1",
+            "value": "氷精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_P_1",
+            "value": "土精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_P_1",
+            "value": "雷精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_P_1",
+            "value": "風精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_P_1",
+            "value": "光精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_P_1",
+            "value": "闇精の加護"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_M_4_SUB",
+            "value": "ファイガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_M_4_SUB",
+            "value": "ウォタガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_M_4_SUB",
+            "value": "ブリザガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_M_4_SUB",
+            "value": "ストンガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_M_4_SUB",
+            "value": "サンダガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_M_4_SUB",
+            "value": "エアロガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_M_4_SUB",
+            "value": "バニシュガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_M_4_SUB",
+            "value": "ダーガ剣"
+        },
+        {
+            "key": "SK_LW_MGK_M_2_SUB",
+            "value": "チキン剣"
+        },
+        {
+            "key": "SK_LW_MGK_S_4_SUB",
+            "value": "サイレス剣"
+        },
+        {
+            "key": "SK_LW_MGK_M_3_SUB",
+            "value": "マジックバリア"
+        },
+        {
+            "key": "SK_LW_MGK_FIRE_S_1",
+            "value": "ファイア剣"
+        },
+        {
+            "key": "SK_LW_MGK_WATR_S_1",
+            "value": "ウォータ剣"
+        },
+        {
+            "key": "SK_LW_MGK_ICE_S_1",
+            "value": "ブリザド剣"
+        },
+        {
+            "key": "SK_LW_MGK_SOIL_S_1",
+            "value": "ストーン剣"
+        },
+        {
+            "key": "SK_LW_MGK_THUN_S_1",
+            "value": "サンダー剣"
+        },
+        {
+            "key": "SK_LW_MGK_WIND_S_1",
+            "value": "エアロ剣"
+        },
+        {
+            "key": "SK_LW_MGK_SHIN_S_1",
+            "value": "バニシュ剣"
+        },
+        {
+            "key": "SK_LW_MGK_DARK_S_1",
+            "value": "ダーク剣"
+        },
+        {
+            "key": "SK_LW_MGK_M_1",
+            "value": "バイオ剣"
+        },
+        {
+            "key": "SK_LW_SWN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_SWN_M_4",
+            "value": "ハザードブレイク"
+        },
+        {
+            "key": "SK_LW_SWN_S_2",
+            "value": "ドレインフォース"
+        },
+        {
+            "key": "SK_LW_SWN_S_3",
+            "value": "グリムリーパー"
+        },
+        {
+            "key": "SK_LW_SWN_M_2_INIT",
+            "value": "ハザードフォーム"
+        },
+        {
+            "key": "SK_LW_SWN_M_5_INIT",
+            "value": "アスピルフォース"
+        },
+        {
+            "key": "SK_LW_SWN_M_1",
+            "value": "ハードスラッシュ"
+        },
+        {
+            "key": "SK_LW_SWN_S_1",
+            "value": "パライズエッジ"
+        },
+        {
+            "key": "SK_LW_SWN_S_4",
+            "value": "ハザードスピン"
+        },
+        {
+            "key": "SK_LW_SWN_R_1",
+            "value": "カウンタースラッシュ"
+        },
+        {
+            "key": "SK_LW_SWN_P_1",
+            "value": "捨て身"
+        },
+        {
+            "key": "SK_LW_SWN_M_4_SUB",
+            "value": "ハザードブレイク"
+        },
+        {
+            "key": "SK_LW_SWN_S_2_SUB",
+            "value": "ドレインフォース"
+        },
+        {
+            "key": "SK_LW_SWN_S_3_SUB",
+            "value": "グリムリーパー"
+        },
+        {
+            "key": "SK_LW_SWN_M_2",
+            "value": "ハザードフォーム"
+        },
+        {
+            "key": "SK_LW_SWN_M_5",
+            "value": "アスピルフォース"
+        },
+        {
+            "key": "SK_LW_MNK_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_MNK_M_3",
+            "value": "チャクラ"
+        },
+        {
+            "key": "SK_LW_MNK_M_2",
+            "value": "気孔術"
+        },
+        {
+            "key": "SK_LW_MNK_S_5",
+            "value": "蘇生"
+        },
+        {
+            "key": "SK_LW_MNK_S_4",
+            "value": "秘孔拳"
+        },
+        {
+            "key": "SK_LW_MNK_M_1_INIT",
+            "value": "連続拳"
+        },
+        {
+            "key": "SK_LW_MNK_S_2_INIT",
+            "value": "ためる"
+        },
+        {
+            "key": "SK_LW_MNK_M_4",
+            "value": "地烈斬"
+        },
+        {
+            "key": "SK_LW_MNK_S_3",
+            "value": "波動撃"
+        },
+        {
+            "key": "SK_LW_MNK_R_1",
+            "value": "拳カウンター"
+        },
+        {
+            "key": "SK_LW_MNK_P_1",
+            "value": "打撃の極意"
+        },
+        {
+            "key": "SK_LW_MNK_P_2",
+            "value": "HPアップLv１"
+        },
+        {
+            "key": "SK_LW_MNK_M_3_SUB",
+            "value": "チャクラ"
+        },
+        {
+            "key": "SK_LW_MNK_M_2_SUB",
+            "value": "気孔術"
+        },
+        {
+            "key": "SK_LW_MNK_S_5_SUB",
+            "value": "蘇生"
+        },
+        {
+            "key": "SK_LW_MNK_S_4_SUB",
+            "value": "秘孔拳"
+        },
+        {
+            "key": "SK_LW_MNK_M_1",
+            "value": "連続拳"
+        },
+        {
+            "key": "SK_LW_MNK_S_2",
+            "value": "ためる"
+        },
+        {
+            "key": "SK_LW_SAM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_SAM_M_4",
+            "value": "金剛"
+        },
+        {
+            "key": "SK_LW_SAM_S_4",
+            "value": "朧月"
+        },
+        {
+            "key": "SK_LW_SAM_M_3",
+            "value": "疾風"
+        },
+        {
+            "key": "SK_LW_SAM_M_1_INIT",
+            "value": "飛燕"
+        },
+        {
+            "key": "SK_LW_SAM_S_3_INIT",
+            "value": "黙想"
+        },
+        {
+            "key": "SK_LW_SAM_S_1",
+            "value": "専心"
+        },
+        {
+            "key": "SK_LW_SAM_M_2",
+            "value": "虚像"
+        },
+        {
+            "key": "SK_LW_SAM_S_2",
+            "value": "夜帳"
+        },
+        {
+            "key": "SK_LW_SAM_R_1",
+            "value": "心眼"
+        },
+        {
+            "key": "SK_LW_SAM_P_1",
+            "value": "刀魂"
+        },
+        {
+            "key": "SK_LW_SAM_M_4_SUB",
+            "value": "金剛"
+        },
+        {
+            "key": "SK_LW_SAM_S_4_SUB",
+            "value": "朧月"
+        },
+        {
+            "key": "SK_LW_SAM_M_3_SUB",
+            "value": "疾風"
+        },
+        {
+            "key": "SK_LW_SAM_M_1",
+            "value": "飛燕"
+        },
+        {
+            "key": "SK_LW_SAM_S_3",
+            "value": "黙想"
+        },
+        {
+            "key": "SK_LW_THI_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_THI_M_3",
+            "value": "ぶんどる"
+        },
+        {
+            "key": "SK_LW_THI_M_4",
+            "value": "不意打ち"
+        },
+        {
+            "key": "SK_LW_THI_S_3",
+            "value": "ハートを盗む"
+        },
+        {
+            "key": "SK_LW_THI_M_1_INIT",
+            "value": "盗む"
+        },
+        {
+            "key": "SK_LW_THI_S_1_INIT",
+            "value": "視力を盗む"
+        },
+        {
+            "key": "SK_LW_THI_S_2",
+            "value": "闇に紛れる"
+        },
+        {
+            "key": "SK_LW_THI_S_4",
+            "value": "コンフュダガー"
+        },
+        {
+            "key": "SK_LW_THI_M_2",
+            "value": "時間を盗む"
+        },
+        {
+            "key": "SK_LW_THI_R_1",
+            "value": "クイックアクション"
+        },
+        {
+            "key": "SK_LW_THI_P_1",
+            "value": "シーフの心得"
+        },
+        {
+            "key": "SK_LW_THI_P_2",
+            "value": "獲得APアップLv1"
+        },
+        {
+            "key": "SK_LW_THI_M_3_SUB",
+            "value": "ぶんどる"
+        },
+        {
+            "key": "SK_LW_THI_M_4_SUB",
+            "value": "不意打ち"
+        },
+        {
+            "key": "SK_LW_THI_S_3_SUB",
+            "value": "ハートを盗む"
+        },
+        {
+            "key": "SK_LW_THI_M_1",
+            "value": "盗む"
+        },
+        {
+            "key": "SK_LW_THI_S_1",
+            "value": "視力を盗む"
+        },
+        {
+            "key": "SK_LW_NIN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_NIN_M_4",
+            "value": "夢幻三段"
+        },
+        {
+            "key": "SK_LW_NIN_S_3",
+            "value": "影縛り"
+        },
+        {
+            "key": "SK_LW_NIN_M_2",
+            "value": "空蝉"
+        },
+        {
+            "key": "SK_LW_NIN_S_1_INIT",
+            "value": "手裏剣"
+        },
+        {
+            "key": "SK_LW_NIN_S_2_INIT",
+            "value": "かくれる"
+        },
+        {
+            "key": "SK_LW_NIN_M_3",
+            "value": "毒霧の術"
+        },
+        {
+            "key": "SK_LW_NIN_FIRE_M_1",
+            "value": "火遁"
+        },
+        {
+            "key": "SK_LW_NIN_ICE_M_1",
+            "value": "氷遁"
+        },
+        {
+            "key": "SK_LW_NIN_WIND_M_1",
+            "value": "風遁"
+        },
+        {
+            "key": "SK_LW_NIN_SOIL_M_1",
+            "value": "土遁"
+        },
+        {
+            "key": "SK_LW_NIN_THUN_M_1",
+            "value": "雷遁"
+        },
+        {
+            "key": "SK_LW_NIN_WATR_M_1",
+            "value": "水遁"
+        },
+        {
+            "key": "SK_LW_NIN_DARK_M_1",
+            "value": "闇遁"
+        },
+        {
+            "key": "SK_LW_NIN_SHIN_M_1",
+            "value": "光遁"
+        },
+        {
+            "key": "SK_LW_NIN_S_4",
+            "value": "活殺自在"
+        },
+        {
+            "key": "SK_LW_NIN_R_1",
+            "value": "毒針返し"
+        },
+        {
+            "key": "SK_LW_NIN_P_1",
+            "value": "影走り"
+        },
+        {
+            "key": "SK_LW_NIN_P_2",
+            "value": "縮地"
+        },
+        {
+            "key": "SK_LW_NIN_M_4_SUB",
+            "value": "夢幻三段"
+        },
+        {
+            "key": "SK_LW_NIN_S_3_SUB",
+            "value": "影縛り"
+        },
+        {
+            "key": "SK_LW_NIN_M_2_SUB",
+            "value": "空蝉"
+        },
+        {
+            "key": "SK_LW_NIN_S_1",
+            "value": "手裏剣"
+        },
+        {
+            "key": "SK_LW_NIN_S_2",
+            "value": "かくれる"
+        },
+        {
+            "key": "SK_LW_LAN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_LAN_M_4",
+            "value": "虚空一閃"
+        },
+        {
+            "key": "SK_LW_LAN_S_4",
+            "value": "大地讃衝"
+        },
+        {
+            "key": "SK_LW_LAN_S_3",
+            "value": "黄泉贈り"
+        },
+        {
+            "key": "SK_LW_LAN_M_2_INIT",
+            "value": "ナイトホーク"
+        },
+        {
+            "key": "SK_LW_LAN_S_2_INIT",
+            "value": "シャープスピア"
+        },
+        {
+            "key": "SK_LW_LAN_M_3_INIT",
+            "value": "ブルーパッション"
+        },
+        {
+            "key": "SK_LW_LAN_M_1_INIT",
+            "value": "バーストスラッシュ"
+        },
+        {
+            "key": "SK_LW_LAN_S_1_INIT",
+            "value": "スタックシャドー"
+        },
+        {
+            "key": "SK_LW_LAN_R_1",
+            "value": "カウンタースラスト"
+        },
+        {
+            "key": "SK_LW_LAN_P_2",
+            "value": "刺突の極意"
+        },
+        {
+            "key": "SK_LW_LAN_P_1",
+            "value": "必殺の極意"
+        },
+        {
+            "key": "SK_LW_LAN_M_4_SUB",
+            "value": "虚空一閃"
+        },
+        {
+            "key": "SK_LW_LAN_S_4_SUB",
+            "value": "大地讃衝"
+        },
+        {
+            "key": "SK_LW_LAN_S_3_SUB",
+            "value": "黄泉贈り"
+        },
+        {
+            "key": "SK_LW_LAN_M_2",
+            "value": "ナイトホーク"
+        },
+        {
+            "key": "SK_LW_LAN_S_2",
+            "value": "シャープスピア"
+        },
+        {
+            "key": "SK_LW_LAN_M_3",
+            "value": "ブルーパッション"
+        },
+        {
+            "key": "SK_LW_LAN_M_1",
+            "value": "バーストスラッシュ"
+        },
+        {
+            "key": "SK_LW_LAN_S_1",
+            "value": "スタックシャドー"
+        },
+        {
+            "key": "SK_LW_DRG_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_DRG_S_3",
+            "value": "垂直ジャンプ"
+        },
+        {
+            "key": "SK_LW_DRG_S_4",
+            "value": "水平ジャンプ"
+        },
+        {
+            "key": "SK_LW_DRG_M_4",
+            "value": "ドラゴンダイブ"
+        },
+        {
+            "key": "SK_LW_DRG_S_1_INIT",
+            "value": "ジャンプ"
+        },
+        {
+            "key": "SK_LW_DRG_M_3_INIT",
+            "value": "竜血"
+        },
+        {
+            "key": "SK_LW_DRG_M_1",
+            "value": "竜の咆哮"
+        },
+        {
+            "key": "SK_LW_DRG_M_2",
+            "value": "飛竜纏い"
+        },
+        {
+            "key": "SK_LW_DRG_R_1",
+            "value": "竜剣"
+        },
+        {
+            "key": "SK_LW_DRG_P_1",
+            "value": "Jump+1"
+        },
+        {
+            "key": "SK_LW_DRG_P_2",
+            "value": "HPアップLv１"
+        },
+        {
+            "key": "SK_LW_DRG_S_3_SUB",
+            "value": "垂直ジャンプ"
+        },
+        {
+            "key": "SK_LW_DRG_S_4_SUB",
+            "value": "水平ジャンプ"
+        },
+        {
+            "key": "SK_LW_DRG_M_4_SUB",
+            "value": "ドラゴンダイブ"
+        },
+        {
+            "key": "SK_LW_DRG_S_1",
+            "value": "ジャンプ"
+        },
+        {
+            "key": "SK_LW_DRG_M_3",
+            "value": "竜血"
+        },
+        {
+            "key": "SK_LW_HUN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_HUN_M_4",
+            "value": "さみだれ射ち"
+        },
+        {
+            "key": "SK_LW_HUN_M_2",
+            "value": "影縫い"
+        },
+        {
+            "key": "SK_LW_HUN_S_4",
+            "value": "オーバーチャージ"
+        },
+        {
+            "key": "SK_LW_HUN_S_2_INIT",
+            "value": "チャージ"
+        },
+        {
+            "key": "SK_LW_HUN_M_3_INIT",
+            "value": "ポイズンアロー"
+        },
+        {
+            "key": "SK_LW_HUN_S_1",
+            "value": "警戒"
+        },
+        {
+            "key": "SK_LW_HUN_M_1",
+            "value": "狙い射ち"
+        },
+        {
+            "key": "SK_LW_HUN_S_3",
+            "value": "ハイチャージ"
+        },
+        {
+            "key": "SK_LW_HUN_R_1",
+            "value": "見切り"
+        },
+        {
+            "key": "SK_LW_HUN_P_1",
+            "value": "狩人の心得"
+        },
+        {
+            "key": "SK_LW_HUN_P_2",
+            "value": "集中"
+        },
+        {
+            "key": "SK_LW_HUN_M_4_SUB",
+            "value": "さみだれ射ち"
+        },
+        {
+            "key": "SK_LW_HUN_M_2_SUB",
+            "value": "影縫い"
+        },
+        {
+            "key": "SK_LW_HUN_S_4_SUB",
+            "value": "オーバーチャージ"
+        },
+        {
+            "key": "SK_LW_HUN_S_2",
+            "value": "チャージ"
+        },
+        {
+            "key": "SK_LW_HUN_M_3",
+            "value": "ポイズンアロー"
+        },
+        {
+            "key": "SK_LW_GUN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GUN_M_4",
+            "value": "腕を狙う"
+        },
+        {
+            "key": "SK_LW_GUN_M_3",
+            "value": "急所を狙う"
+        },
+        {
+            "key": "SK_LW_GUN_S_4",
+            "value": "二重撃ち"
+        },
+        {
+            "key": "SK_LW_GUN_M_1_INIT",
+            "value": "ブラックアウト"
+        },
+        {
+            "key": "SK_LW_GUN_M_2_INIT",
+            "value": "狙いを定める"
+        },
+        {
+            "key": "SK_LW_GUN_S_3",
+            "value": "サイドワインダー"
+        },
+        {
+            "key": "SK_LW_GUN_S_1",
+            "value": "足を狙う"
+        },
+        {
+            "key": "SK_LW_GUN_S_2",
+            "value": "助言"
+        },
+        {
+            "key": "SK_LW_GUN_R_1",
+            "value": "カウンターショット"
+        },
+        {
+            "key": "SK_LW_GUN_P_1",
+            "value": "精神統一"
+        },
+        {
+            "key": "SK_LW_GUN_P_2",
+            "value": "射撃の極意"
+        },
+        {
+            "key": "SK_LW_GUN_M_4_SUB",
+            "value": "腕を狙う"
+        },
+        {
+            "key": "SK_LW_GUN_M_3_SUB",
+            "value": "急所を狙う"
+        },
+        {
+            "key": "SK_LW_GUN_S_4_SUB",
+            "value": "二重撃ち"
+        },
+        {
+            "key": "SK_LW_GUN_M_1",
+            "value": "ブラックアウト"
+        },
+        {
+            "key": "SK_LW_GUN_M_2",
+            "value": "狙いを定める"
+        },
+        {
+            "key": "SK_LW_BLM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_BLM_M_7",
+            "value": "フレア"
+        },
+        {
+            "key": "SK_LW_BLM_M_3",
+            "value": "トード"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_M_5",
+            "value": "ファイガ"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_M_5",
+            "value": "ブリザガ"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_M_5",
+            "value": "エアロガ"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_M_5",
+            "value": "ストンガ"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_M_5",
+            "value": "サンダガ"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_M_5",
+            "value": "ウォタガ"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_M_5",
+            "value": "ダーガ"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_M_5",
+            "value": "バニシュガ"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_S_1_INIT",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_S_1_INIT",
+            "value": "ブリザド"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_S_1_INIT",
+            "value": "エアロ"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_S_1_INIT",
+            "value": "ストーン"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_S_1_INIT",
+            "value": "サンダー"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_S_1_INIT",
+            "value": "ウォータ"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_S_1_INIT",
+            "value": "ダーク"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_S_1_INIT",
+            "value": "バニシュ"
+        },
+        {
+            "key": "SK_LW_BLM_M_1_INIT",
+            "value": "バイオ"
+        },
+        {
+            "key": "SK_LW_BLM_S_3",
+            "value": "ドレイン"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_M_4",
+            "value": "ファイラ"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_M_4",
+            "value": "ブリザラ"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_M_4",
+            "value": "エアロラ"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_M_4",
+            "value": "ストンラ"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_M_4",
+            "value": "サンダラ"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_M_4",
+            "value": "ウォタラ"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_M_4",
+            "value": "ダーラ"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_M_4",
+            "value": "バニシュラ"
+        },
+        {
+            "key": "SK_LW_BLM_S_4",
+            "value": "スリプル"
+        },
+        {
+            "key": "SK_LW_BLM_M_2",
+            "value": "アスピル"
+        },
+        {
+            "key": "SK_LW_BLM_R_1",
+            "value": "マジックカウンター"
+        },
+        {
+            "key": "SK_LW_BLM_P_1",
+            "value": "魔力アップLv１"
+        },
+        {
+            "key": "SK_LW_BLM_M_7_SUB",
+            "value": "フレア"
+        },
+        {
+            "key": "SK_LW_BLM_M_3_SUB",
+            "value": "トード"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_M_5_SUB",
+            "value": "ファイガ"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_M_5_SUB",
+            "value": "ブリザガ"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_M_5_SUB",
+            "value": "エアロガ"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_M_5_SUB",
+            "value": "ストンガ"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_M_5_SUB",
+            "value": "サンダガ"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_M_5_SUB",
+            "value": "ウォタガ"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_M_5_SUB",
+            "value": "ダーガ"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_M_5_SUB",
+            "value": "バニシュガ"
+        },
+        {
+            "key": "SK_LW_BLM_FIRE_S_1",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_LW_BLM_ICE_S_1",
+            "value": "ブリザド"
+        },
+        {
+            "key": "SK_LW_BLM_WIND_S_1",
+            "value": "エアロ"
+        },
+        {
+            "key": "SK_LW_BLM_SOIL_S_1",
+            "value": "ストーン"
+        },
+        {
+            "key": "SK_LW_BLM_THUN_S_1",
+            "value": "サンダー"
+        },
+        {
+            "key": "SK_LW_BLM_WATR_S_1",
+            "value": "ウォータ"
+        },
+        {
+            "key": "SK_LW_BLM_DARK_S_1",
+            "value": "ダーク"
+        },
+        {
+            "key": "SK_LW_BLM_SHIN_S_1",
+            "value": "バニシュ"
+        },
+        {
+            "key": "SK_LW_BLM_M_1",
+            "value": "バイオ"
+        },
+        {
+            "key": "SK_LW_WHM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1",
+            "value": "ケアルガ"
+        },
+        {
+            "key": "SK_LW_WHM_M_4",
+            "value": "リジェネ"
+        },
+        {
+            "key": "SK_LW_WHM_M_6",
+            "value": "ホーリー"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_3",
+            "value": "アレイズ"
+        },
+        {
+            "key": "SK_LW_WHM_S_1_INIT",
+            "value": "ケアル"
+        },
+        {
+            "key": "SK_LW_WHM_M_2_INIT",
+            "value": "エスナ"
+        },
+        {
+            "key": "SK_LW_WHM_M_1",
+            "value": "ケアルラ"
+        },
+        {
+            "key": "SK_LW_WHM_S_2",
+            "value": "プロテス"
+        },
+        {
+            "key": "SK_LW_WHM_S_3",
+            "value": "シェル"
+        },
+        {
+            "key": "SK_LW_WHM_M_3",
+            "value": "ケアルダ"
+        },
+        {
+            "key": "SK_LW_WHM_M_5",
+            "value": "レイズ"
+        },
+        {
+            "key": "SK_LW_WHM_R_1",
+            "value": "リジェネーター"
+        },
+        {
+            "key": "SK_LW_WHM_P_1",
+            "value": "聖者の行進"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1_SUB",
+            "value": "ケアルガ"
+        },
+        {
+            "key": "SK_LW_WHM_M_4_SUB",
+            "value": "リジェネ"
+        },
+        {
+            "key": "SK_LW_WHM_M_6_SUB",
+            "value": "ホーリー"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_3_SUB",
+            "value": "アレイズ"
+        },
+        {
+            "key": "SK_LW_WHM_S_1",
+            "value": "ケアル"
+        },
+        {
+            "key": "SK_LW_WHM_M_2",
+            "value": "エスナ"
+        },
+        {
+            "key": "SK_LW_CLR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_CLR_M_3",
+            "value": "アンチカラミティ"
+        },
+        {
+            "key": "SK_LW_CLR_M_4",
+            "value": "エスナガ"
+        },
+        {
+            "key": "SK_LW_CLR_S_5",
+            "value": "イレース"
+        },
+        {
+            "key": "SK_LW_CLR_M_2_INIT",
+            "value": "バニシュ"
+        },
+        {
+            "key": "SK_LW_CLR_S_1_INIT",
+            "value": "ケアル"
+        },
+        {
+            "key": "SK_LW_CLR_M_1",
+            "value": "重足の杖"
+        },
+        {
+            "key": "SK_LW_CLR_M_5",
+            "value": "ライトヴェール"
+        },
+        {
+            "key": "SK_LW_CLR_M_6",
+            "value": "ダークヴェール"
+        },
+        {
+            "key": "SK_LW_CLR_R_1",
+            "value": "オートケアル"
+        },
+        {
+            "key": "SK_LW_CLR_P_1",
+            "value": "精神アップLv1"
+        },
+        {
+            "key": "SK_LW_CLR_M_3_SUB",
+            "value": "アンチカラミティ"
+        },
+        {
+            "key": "SK_LW_CLR_M_4_SUB",
+            "value": "エスナガ"
+        },
+        {
+            "key": "SK_LW_CLR_S_5_SUB",
+            "value": "イレース"
+        },
+        {
+            "key": "SK_LW_CLR_M_2",
+            "value": "バニシュ"
+        },
+        {
+            "key": "SK_LW_CLR_S_1",
+            "value": "ケアル"
+        },
+        {
+            "key": "SK_LW_GRM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GRM_M_4",
+            "value": "ウィーク"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_3",
+            "value": "バファイラ"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_3",
+            "value": "バブリザラ"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_3",
+            "value": "バエアロラ"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_3",
+            "value": "バストンラ"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_3",
+            "value": "バサンダラ"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_3",
+            "value": "バウォタラ"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_3",
+            "value": "バライトラ"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_3",
+            "value": "バダーラ"
+        },
+        {
+            "key": "SK_LW_GRM_S_3",
+            "value": "デスペル"
+        },
+        {
+            "key": "SK_LW_GRM_M_5_INIT",
+            "value": "ルイン"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_2_INIT",
+            "value": "バファイ"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_2_INIT",
+            "value": "バブリザ"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_2_INIT",
+            "value": "バエアロ"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_2_INIT",
+            "value": "バストン"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_2_INIT",
+            "value": "バサンダ"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_2_INIT",
+            "value": "バウォタ"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_2_INIT",
+            "value": "バライト"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_2_INIT",
+            "value": "バダーク"
+        },
+        {
+            "key": "SK_LW_GRM_S_1",
+            "value": "デプロテ"
+        },
+        {
+            "key": "SK_LW_GRM_S_2",
+            "value": "デシェル"
+        },
+        {
+            "key": "SK_LW_GRM_M_1",
+            "value": "速力付与"
+        },
+        {
+            "key": "SK_LW_GRM_R_1",
+            "value": "デスペルカウンター"
+        },
+        {
+            "key": "SK_LW_GRM_P_1",
+            "value": "神魔の加護"
+        },
+        {
+            "key": "SK_LW_GRM_P_2",
+            "value": "エメラルドエコー"
+        },
+        {
+            "key": "SK_LW_GRM_M_4_SUB",
+            "value": "ウィーク"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_3_SUB",
+            "value": "バファイラ"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_3_SUB",
+            "value": "バブリザラ"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_3_SUB",
+            "value": "バエアロラ"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_3_SUB",
+            "value": "バストンラ"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_3_SUB",
+            "value": "バサンダラ"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_3_SUB",
+            "value": "バウォタラ"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_3_SUB",
+            "value": "バライトラ"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_3_SUB",
+            "value": "バダーラ"
+        },
+        {
+            "key": "SK_LW_GRM_S_3_SUB",
+            "value": "デスペル"
+        },
+        {
+            "key": "SK_LW_GRM_M_5",
+            "value": "ルイン"
+        },
+        {
+            "key": "SK_LW_GRM_FIRE_M_2",
+            "value": "バファイ"
+        },
+        {
+            "key": "SK_LW_GRM_ICE_M_2",
+            "value": "バブリザ"
+        },
+        {
+            "key": "SK_LW_GRM_WIND_M_2",
+            "value": "バエアロ"
+        },
+        {
+            "key": "SK_LW_GRM_SOIL_M_2",
+            "value": "バストン"
+        },
+        {
+            "key": "SK_LW_GRM_THUN_M_2",
+            "value": "バサンダ"
+        },
+        {
+            "key": "SK_LW_GRM_WATR_M_2",
+            "value": "バウォタ"
+        },
+        {
+            "key": "SK_LW_GRM_SHIN_M_2",
+            "value": "バライト"
+        },
+        {
+            "key": "SK_LW_GRM_DARK_M_2",
+            "value": "バダーク"
+        },
+        {
+            "key": "SK_LW_RDM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_RDM_M_4",
+            "value": "レジストブレイク"
+        },
+        {
+            "key": "SK_LW_RDM_S_3",
+            "value": "ジャマースラスト"
+        },
+        {
+            "key": "SK_LW_RDM_S_4",
+            "value": "ファストキャスト"
+        },
+        {
+            "key": "SK_LW_RDM_M_2_INIT",
+            "value": "エスナ"
+        },
+        {
+            "key": "SK_LW_RDM_S_2_INIT",
+            "value": "ケアルラ"
+        },
+        {
+            "key": "SK_LW_RDM_FIRE_M_1_INIT",
+            "value": "ファイラ"
+        },
+        {
+            "key": "SK_LW_RDM_ICE_M_1_INIT",
+            "value": "ブリザラ"
+        },
+        {
+            "key": "SK_LW_RDM_WIND_M_1_INIT",
+            "value": "エアロラ"
+        },
+        {
+            "key": "SK_LW_RDM_SOIL_M_1_INIT",
+            "value": "ストンラ"
+        },
+        {
+            "key": "SK_LW_RDM_THUN_M_1_INIT",
+            "value": "サンダラ"
+        },
+        {
+            "key": "SK_LW_RDM_WATR_M_1_INIT",
+            "value": "ウォタラ"
+        },
+        {
+            "key": "SK_LW_RDM_DARK_M_1_INIT",
+            "value": "ダーラ"
+        },
+        {
+            "key": "SK_LW_RDM_SHIN_M_1_INIT",
+            "value": "バニシュラ"
+        },
+        {
+            "key": "SK_LW_RDM_S_1",
+            "value": "スリプル"
+        },
+        {
+            "key": "SK_LW_RDM_R_1",
+            "value": "魔法見切り"
+        },
+        {
+            "key": "SK_LW_RDM_P_1",
+            "value": "初期APアップLv1"
+        },
+        {
+            "key": "SK_LW_RDM_P_2",
+            "value": "魔道士の加護"
+        },
+        {
+            "key": "SK_LW_RDM_M_4_SUB",
+            "value": "レジストブレイク"
+        },
+        {
+            "key": "SK_LW_RDM_S_3_SUB",
+            "value": "ジャマースラスト"
+        },
+        {
+            "key": "SK_LW_RDM_S_4_SUB",
+            "value": "ファストキャスト"
+        },
+        {
+            "key": "SK_LW_RDM_M_2",
+            "value": "エスナ"
+        },
+        {
+            "key": "SK_LW_RDM_S_2",
+            "value": "ケアルラ"
+        },
+        {
+            "key": "SK_LW_RDM_FIRE_M_1",
+            "value": "ファイラ"
+        },
+        {
+            "key": "SK_LW_RDM_ICE_M_1",
+            "value": "ブリザラ"
+        },
+        {
+            "key": "SK_LW_RDM_WIND_M_1",
+            "value": "エアロラ"
+        },
+        {
+            "key": "SK_LW_RDM_SOIL_M_1",
+            "value": "ストンラ"
+        },
+        {
+            "key": "SK_LW_RDM_THUN_M_1",
+            "value": "サンダラ"
+        },
+        {
+            "key": "SK_LW_RDM_WATR_M_1",
+            "value": "ウォタラ"
+        },
+        {
+            "key": "SK_LW_RDM_DARK_M_1",
+            "value": "ダーラ"
+        },
+        {
+            "key": "SK_LW_RDM_SHIN_M_1",
+            "value": "バニシュラ"
+        },
+        {
+            "key": "SK_LW_TIM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_TIM_M_5",
+            "value": "メテオ"
+        },
+        {
+            "key": "SK_LW_TIM_S_2",
+            "value": "ストップ"
+        },
+        {
+            "key": "SK_LW_TIM_M_4",
+            "value": "クイック"
+        },
+        {
+            "key": "SK_LW_TIM_M_3_INIT",
+            "value": "コメット"
+        },
+        {
+            "key": "SK_LW_TIM_S_3_INIT",
+            "value": "ドンムブ"
+        },
+        {
+            "key": "SK_LW_TIM_M_1",
+            "value": "ヘイスト"
+        },
+        {
+            "key": "SK_LW_TIM_S_4",
+            "value": "レビテト"
+        },
+        {
+            "key": "SK_LW_TIM_M_2",
+            "value": "空間転移"
+        },
+        {
+            "key": "SK_LW_TIM_S_1",
+            "value": "スロウ"
+        },
+        {
+            "key": "SK_LW_TIM_R_1",
+            "value": "スロウカウンター"
+        },
+        {
+            "key": "SK_LW_TIM_P_2",
+            "value": "CT変化無効"
+        },
+        {
+            "key": "SK_LW_TIM_P_1",
+            "value": "高速詠唱"
+        },
+        {
+            "key": "SK_LW_TIM_M_5_SUB",
+            "value": "メテオ"
+        },
+        {
+            "key": "SK_LW_TIM_S_2_SUB",
+            "value": "ストップ"
+        },
+        {
+            "key": "SK_LW_TIM_M_4_SUB",
+            "value": "クイック"
+        },
+        {
+            "key": "SK_LW_TIM_M_3",
+            "value": "コメット"
+        },
+        {
+            "key": "SK_LW_TIM_S_3",
+            "value": "ドンムブ"
+        },
+        {
+            "key": "SK_LW_GLMS_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GLMS_M_4",
+            "value": "氷刃"
+        },
+        {
+            "key": "SK_LW_GLMS_M_3",
+            "value": "断絶の鎧"
+        },
+        {
+            "key": "SK_LW_GLMS_S_4",
+            "value": "エクスカリバー"
+        },
+        {
+            "key": "SK_LW_GLMS_S_2",
+            "value": "虎鉄"
+        },
+        {
+            "key": "SK_LW_GLMS_M_2",
+            "value": "自己ヘイスト"
+        },
+        {
+            "key": "SK_LW_GLMS_S_1",
+            "value": "ヒーリングオーラ"
+        },
+        {
+            "key": "SK_LW_GLMS_M_1",
+            "value": "刃紋"
+        },
+        {
+            "key": "SK_LW_GLMS_S_3",
+            "value": "終末の時"
+        },
+        {
+            "key": "SK_LW_GLMS_R_1",
+            "value": "破先の刃"
+        },
+        {
+            "key": "SK_LW_GLMS_P_1",
+            "value": "獲得APアップLv1"
+        },
+        {
+            "key": "SK_LW_GLMS_P_2",
+            "value": "オートレビテト"
+        },
+        {
+            "key": "SK_LW_FINA_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_FINA_M_1",
+            "value": "ケアルガ"
+        },
+        {
+            "key": "SK_LW_FINA_M_3",
+            "value": "リジェネ"
+        },
+        {
+            "key": "SK_LW_FINA_M_4",
+            "value": "アレイズ"
+        },
+        {
+            "key": "SK_LW_FINA_M_2",
+            "value": "影縫い"
+        },
+        {
+            "key": "SK_LW_FINA_S_1",
+            "value": "ケアル"
+        },
+        {
+            "key": "SK_LW_FINA_S_2",
+            "value": "チャージ"
+        },
+        {
+            "key": "SK_LW_FINA_S_3",
+            "value": "エスナ"
+        },
+        {
+            "key": "SK_LW_FINA_S_4",
+            "value": "ケアルラ"
+        },
+        {
+            "key": "SK_LW_FINA_S_5",
+            "value": "はげます"
+        },
+        {
+            "key": "SK_LW_FINA_S_6",
+            "value": "ねらう"
+        },
+        {
+            "key": "SK_LW_FINA_S_7",
+            "value": "ブライトシャワー"
+        },
+        {
+            "key": "SK_LW_FINA_R_1",
+            "value": "清廉なる願い"
+        },
+        {
+            "key": "SK_LW_FINA_P_1",
+            "value": "聖者の行進"
+        },
+        {
+            "key": "SK_LW_FINA_P_2",
+            "value": "イノセントシューター"
+        },
+        {
+            "key": "SK_LW_YSTL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_YSTL_M_1",
+            "value": "サイオンズ・ファイラ"
+        },
+        {
+            "key": "SK_LW_YSTL_M_2",
+            "value": "迅速魔"
+        },
+        {
+            "key": "SK_LW_YSTL_M_4",
+            "value": "ゼノグロシー"
+        },
+        {
+            "key": "SK_LW_YSTL_S_1",
+            "value": "サイオンズ・ファイア"
+        },
+        {
+            "key": "SK_LW_YSTL_S_2",
+            "value": "エーテリアルステップ"
+        },
+        {
+            "key": "SK_LW_YSTL_M_3",
+            "value": "激成魔"
+        },
+        {
+            "key": "SK_LW_YSTL_S_3",
+            "value": "ファウル"
+        },
+        {
+            "key": "SK_LW_YSTL_R_1",
+            "value": "マナフォント"
+        },
+        {
+            "key": "SK_LW_YSTL_P_1",
+            "value": "エノキアン"
+        },
+        {
+            "key": "SK_LW_TNCR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_TNCR_S_3",
+            "value": "ラフディバイド"
+        },
+        {
+            "key": "SK_LW_TNCR_M_3",
+            "value": "ボーライド"
+        },
+        {
+            "key": "SK_LW_TNCR_M_4",
+            "value": "ブラスティングゾーン"
+        },
+        {
+            "key": "SK_LW_TNCR_M_2",
+            "value": "キーンエッジ"
+        },
+        {
+            "key": "SK_LW_TNCR_S_1",
+            "value": "ノー・マーシー"
+        },
+        {
+            "key": "SK_LW_TNCR_M_1",
+            "value": "バーストストライク"
+        },
+        {
+            "key": "SK_LW_TNCR_S_2",
+            "value": "ハート・オブ・ストーン"
+        },
+        {
+            "key": "SK_LW_TNCR_S_4",
+            "value": "オーロラ"
+        },
+        {
+            "key": "SK_LW_TNCR_R_1",
+            "value": "ジャギュラーリップ"
+        },
+        {
+            "key": "SK_LW_TNCR_P_1",
+            "value": "カモフラージュ"
+        },
+        {
+            "key": "SK_LW_TNCR_P_2",
+            "value": "ネビュラ"
+        },
+        {
+            "key": "SK_LW_VIK_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_VIK_M_1",
+            "value": "キリングアックス"
+        },
+        {
+            "key": "SK_LW_VIK_M_2",
+            "value": "渾身の一撃"
+        },
+        {
+            "key": "SK_LW_VIK_M_3",
+            "value": "ドレインサイクロン"
+        },
+        {
+            "key": "SK_LW_VIK_S_1_INIT",
+            "value": "膝砕き"
+        },
+        {
+            "key": "SK_LW_VIK_S_2_INIT",
+            "value": "反骨精神"
+        },
+        {
+            "key": "SK_LW_VIK_S_1",
+            "value": "膝砕き"
+        },
+        {
+            "key": "SK_LW_VIK_S_2",
+            "value": "反骨精神"
+        },
+        {
+            "key": "SK_LW_VIK_S_3",
+            "value": "ウォークライ"
+        },
+        {
+            "key": "SK_LW_VIK_S_4",
+            "value": "大投擲"
+        },
+        {
+            "key": "SK_LW_VIK_R_1",
+            "value": "戦意高揚"
+        },
+        {
+            "key": "SK_LW_VIK_P_1_2",
+            "value": "バイキングの心得"
+        },
+        {
+            "key": "SK_LW_VIK_P_2_2",
+            "value": "矢盾の加護"
+        },
+        {
+            "key": "SK_LW_VIK_M_1_SUB",
+            "value": "キリングアックス"
+        },
+        {
+            "key": "SK_LW_VIK_M_2_SUB",
+            "value": "渾身の一撃"
+        },
+        {
+            "key": "SK_LW_VIK_M_3_SUB",
+            "value": "ドレインサイクロン"
+        },
+        {
+            "key": "SK_LW_VIK_P_1",
+            "value": "戦闘狂い"
+        },
+        {
+            "key": "SK_LW_VIK_P_2",
+            "value": "矢盾の加護"
+        },
+        {
+            "key": "SK_FFT_RAMZ_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FFT_RAMZ_M_1",
+            "value": "三連撃"
+        },
+        {
+            "key": "SK_FFT_RAMZ_M_2",
+            "value": "Ｗブレイク"
+        },
+        {
+            "key": "SK_FFT_RAMZ_M_3",
+            "value": "さけぶ"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_2",
+            "value": "おまじない"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_3",
+            "value": "耀の剣"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_1",
+            "value": "投石"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_4",
+            "value": "はげます"
+        },
+        {
+            "key": "SK_FFT_RAMZ_S_5",
+            "value": "エール"
+        },
+        {
+            "key": "SK_FFT_RAMZ_R_1",
+            "value": "反撃タックル"
+        },
+        {
+            "key": "SK_FFT_RAMZ_P_1",
+            "value": "取得JPアップ"
+        },
+        {
+            "key": "SK_FFT_RAMZ_P_2",
+            "value": "Move+1"
+        },
+        {
+            "key": "SK_FFT_GFGR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FFT_GFGR_M_1",
+            "value": "闇の剣"
+        },
+        {
+            "key": "SK_FFT_GFGR_M_2",
+            "value": "デセプション"
+        },
+        {
+            "key": "SK_FFT_GFGR_M_3",
+            "value": "イービルブレード"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_1",
+            "value": "ウエポンバッシュ"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_2",
+            "value": "暗の剣"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_3",
+            "value": "裏切りの刃"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_4",
+            "value": "戦場の心得"
+        },
+        {
+            "key": "SK_FFT_GFGR_S_5",
+            "value": "イービルデッド"
+        },
+        {
+            "key": "SK_FFT_GFGR_R_1",
+            "value": "老獪なる傭兵"
+        },
+        {
+            "key": "SK_FFT_GFGR_P_1",
+            "value": "捨て身"
+        },
+        {
+            "key": "SK_FFT_GFGR_P_2",
+            "value": "傭兵の矜持"
+        },
+        {
+            "key": "SK_FFT_ORND_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FFT_ORND_M_1",
+            "value": "聖光爆裂破"
+        },
+        {
+            "key": "SK_FFT_ORND_M_2",
+            "value": "冥界恐叫打"
+        },
+        {
+            "key": "SK_FFT_ORND_M_3",
+            "value": "闇の剣"
+        },
+        {
+            "key": "SK_FFT_ORND_S_1",
+            "value": "強甲破点突き"
+        },
+        {
+            "key": "SK_FFT_ORND_S_2",
+            "value": "黒獅子の紋章"
+        },
+        {
+            "key": "SK_FFT_ORND_S_3",
+            "value": "星天爆撃打"
+        },
+        {
+            "key": "SK_FFT_ORND_S_4",
+            "value": "暗の剣"
+        },
+        {
+            "key": "SK_FFT_ORND_S_5",
+            "value": "無双稲妻突き"
+        },
+        {
+            "key": "SK_FFT_ORND_R_1",
+            "value": "オートリフレシュ"
+        },
+        {
+            "key": "SK_FFT_ORND_P_1",
+            "value": "雷神"
+        },
+        {
+            "key": "SK_FFT_ORND_P_2",
+            "value": "戦上手"
+        },
+        {
+            "key": "SK_LW_WGN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_WGN_M_1",
+            "value": "射撃体勢"
+        },
+        {
+            "key": "SK_LW_WGN_M_2",
+            "value": "四連射"
+        },
+        {
+            "key": "SK_LW_WGN_M_3",
+            "value": "ダブルショット"
+        },
+        {
+            "key": "SK_LW_WGN_S_1_INIT",
+            "value": "スプリットショット"
+        },
+        {
+            "key": "SK_LW_WGN_S_2_INIT",
+            "value": "速射"
+        },
+        {
+            "key": "SK_LW_WGN_S_3",
+            "value": "煙幕"
+        },
+        {
+            "key": "SK_LW_WGN_S_4",
+            "value": "スタンショット"
+        },
+        {
+            "key": "SK_LW_WGN_S_5",
+            "value": "水平撃ち"
+        },
+        {
+            "key": "SK_LW_WGN_R_1",
+            "value": "予測射撃"
+        },
+        {
+            "key": "SK_LW_WGN_P_1",
+            "value": "射撃の極意"
+        },
+        {
+            "key": "SK_LW_WGN_P_2",
+            "value": "チューンナップ"
+        },
+        {
+            "key": "SK_LW_WGN_S_1",
+            "value": "スプリットショット"
+        },
+        {
+            "key": "SK_LW_WGN_S_2",
+            "value": "速射"
+        },
+        {
+            "key": "SK_LW_WGN_M_1_SUB",
+            "value": "射撃体勢"
+        },
+        {
+            "key": "SK_LW_WGN_M_2_SUB",
+            "value": "四連射"
+        },
+        {
+            "key": "SK_LW_WGN_M_3_SUB",
+            "value": "ダブルショット"
+        },
+        {
+            "key": "SK_LW_ASS_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_ASS_M_4",
+            "value": "破鎧刃"
+        },
+        {
+            "key": "SK_LW_ASS_M_3",
+            "value": "天刃"
+        },
+        {
+            "key": "SK_LW_ASS_S_4",
+            "value": "裏宣刃"
+        },
+        {
+            "key": "SK_LW_ASS_S_1_INIT",
+            "value": "毒針"
+        },
+        {
+            "key": "SK_LW_ASS_M_1_INIT",
+            "value": "襲奪刃"
+        },
+        {
+            "key": "SK_LW_ASS_S_2",
+            "value": "金縛り"
+        },
+        {
+            "key": "SK_LW_ASS_M_2",
+            "value": "急襲刃"
+        },
+        {
+            "key": "SK_LW_ASS_S_3",
+            "value": "AP強奪"
+        },
+        {
+            "key": "SK_LW_ASS_R_1",
+            "value": "闇影"
+        },
+        {
+            "key": "SK_LW_ASS_P_1",
+            "value": "回避アップLv1"
+        },
+        {
+            "key": "SK_LW_ASS_P_2",
+            "value": "獲得APアップLv1"
+        },
+        {
+            "key": "SK_LW_ASS_M_4_SUB",
+            "value": "破鎧刃"
+        },
+        {
+            "key": "SK_LW_ASS_M_3_SUB",
+            "value": "天刃"
+        },
+        {
+            "key": "SK_LW_ASS_S_4_SUB",
+            "value": "裏宣刃"
+        },
+        {
+            "key": "SK_LW_ASS_S_1",
+            "value": "毒針"
+        },
+        {
+            "key": "SK_LW_ASS_M_1",
+            "value": "襲奪刃"
+        },
+        {
+            "key": "SK_LW_RAIN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_RAIN_M_1",
+            "value": "ファイガ"
+        },
+        {
+            "key": "SK_LW_RAIN_M_2",
+            "value": "燃え立つ体"
+        },
+        {
+            "key": "SK_LW_RAIN_M_3",
+            "value": "ソウルプロミネンス"
+        },
+        {
+            "key": "SK_LW_RAIN_M_3_B",
+            "value": "ソウルプロミネンス"
+        },
+        {
+            "key": "SK_LW_RAIN_S_1",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_LW_RAIN_S_2",
+            "value": "パワーブレイク"
+        },
+        {
+            "key": "SK_LW_RAIN_S_3",
+            "value": "アストラルガード"
+        },
+        {
+            "key": "SK_LW_RAIN_S_4",
+            "value": "アンダーマイン"
+        },
+        {
+            "key": "SK_LW_RAIN_R_1",
+            "value": "カウンター"
+        },
+        {
+            "key": "SK_LW_RAIN_P_1",
+            "value": "精神アップLv1"
+        },
+        {
+            "key": "SK_LW_RAIN_P_2",
+            "value": "激化する力"
+        },
+        {
+            "key": "SK_FF1_WROL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FF1_WROL_M_1",
+            "value": "ブレイブホーリー"
+        },
+        {
+            "key": "SK_FF1_WROL_M_2",
+            "value": "生命の息吹"
+        },
+        {
+            "key": "SK_FF1_WROL_M_3",
+            "value": "インビンシブルシールド"
+        },
+        {
+            "key": "SK_FF1_WROL_S_1",
+            "value": "シフトアタック"
+        },
+        {
+            "key": "SK_FF1_WROL_S_2",
+            "value": "ブレイブプレゼンス"
+        },
+        {
+            "key": "SK_FF1_WROL_S_3",
+            "value": "ディタレンスソード"
+        },
+        {
+            "key": "SK_FF1_WROL_S_4",
+            "value": "ストップストライク"
+        },
+        {
+            "key": "SK_FF1_WROL_R_1",
+            "value": "戦士の誇り"
+        },
+        {
+            "key": "SK_FF1_WROL_P_1",
+            "value": "はじまりの戦士"
+        },
+        {
+            "key": "SK_FF1_WROL_P_2",
+            "value": "混沌を退ける力"
+        },
+        {
+            "key": "SK_LW_MST_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_MST_M_1",
+            "value": "エナジーバスター"
+        },
+        {
+            "key": "SK_LW_MST_M_2",
+            "value": "魔杖防盾"
+        },
+        {
+            "key": "SK_LW_MST_M_3",
+            "value": "フェイスライジング"
+        },
+        {
+            "key": "SK_LW_MST_FIRE_S_1_INIT",
+            "value": "火杖術"
+        },
+        {
+            "key": "SK_LW_MST_ICE_S_1_INIT",
+            "value": "氷杖術"
+        },
+        {
+            "key": "SK_LW_MST_WIND_S_1_INIT",
+            "value": "風杖術"
+        },
+        {
+            "key": "SK_LW_MST_THUN_S_1_INIT",
+            "value": "雷杖術"
+        },
+        {
+            "key": "SK_LW_MST_WATR_S_1_INIT",
+            "value": "水杖術"
+        },
+        {
+            "key": "SK_LW_MST_SOIL_S_1_INIT",
+            "value": "土杖術"
+        },
+        {
+            "key": "SK_LW_MST_SHIN_S_1_INIT",
+            "value": "光杖術"
+        },
+        {
+            "key": "SK_LW_MST_DARK_S_1_INIT",
+            "value": "闇杖術"
+        },
+        {
+            "key": "SK_LW_MST_S_2_INIT",
+            "value": "魔杖術・ウィング"
+        },
+        {
+            "key": "SK_LW_MST_S_3",
+            "value": "魔杖術・コンフュ"
+        },
+        {
+            "key": "SK_LW_MST_S_4",
+            "value": "魔杖術・スタン"
+        },
+        {
+            "key": "SK_LW_MST_S_5",
+            "value": "ステップ＆マジック"
+        },
+        {
+            "key": "SK_LW_MST_R_1",
+            "value": "反障壁"
+        },
+        {
+            "key": "SK_LW_MST_P_1",
+            "value": "魔力アップLv1"
+        },
+        {
+            "key": "SK_LW_MST_P_2",
+            "value": "防御アップLv1"
+        },
+        {
+            "key": "SK_FFT_AGRA_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FFT_AGRA_M_1",
+            "value": "不動無明剣"
+        },
+        {
+            "key": "SK_FFT_AGRA_M_2",
+            "value": "無双稲妻突き"
+        },
+        {
+            "key": "SK_FFT_AGRA_M_3",
+            "value": "魔除け"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_1",
+            "value": "北斗骨砕打"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_2",
+            "value": "王女の近衛騎士"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_3",
+            "value": "聖近衛騎士の護り"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_4",
+            "value": "私はおまえを信じる！！"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_5",
+            "value": "フルブレイク"
+        },
+        {
+            "key": "SK_FFT_AGRA_R_1",
+            "value": "防御"
+        },
+        {
+            "key": "SK_FFT_AGRA_P_1",
+            "value": "騎士道"
+        },
+        {
+            "key": "SK_FFT_AGRA_P_2",
+            "value": "騎士の信義"
+        },
+        {
+            "key": "SK_FFT_DELT_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FFT_DELT_M_1",
+            "value": "乱命割殺打"
+        },
+        {
+            "key": "SK_FFT_DELT_M_2",
+            "value": "咬撃氷狼破"
+        },
+        {
+            "key": "SK_FFT_DELT_M_3",
+            "value": "因果の剣"
+        },
+        {
+            "key": "SK_FFT_DELT_S_1",
+            "value": "投石"
+        },
+        {
+            "key": "SK_FFT_DELT_S_2",
+            "value": "おまじない"
+        },
+        {
+            "key": "SK_FFT_DELT_S_3",
+            "value": "ファイガ剣"
+        },
+        {
+            "key": "SK_FFT_DELT_S_4",
+            "value": "瞑想"
+        },
+        {
+            "key": "SK_FFT_DELT_S_5",
+            "value": "不動無明剣"
+        },
+        {
+            "key": "SK_FFT_DELT_R_1",
+            "value": "反撃タックル"
+        },
+        {
+            "key": "SK_FFT_DELT_P_1",
+            "value": "Move+1"
+        },
+        {
+            "key": "SK_FFT_DELT_P_2",
+            "value": "獲得APアップ"
+        },
+        {
+            "key": "SK_FFT_MSTD_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FFT_MSTD_M_1",
+            "value": "マルチバースト"
+        },
+        {
+            "key": "SK_FFT_MSTD_M_2",
+            "value": "邪心封印"
+        },
+        {
+            "key": "SK_FFT_MSTD_M_3",
+            "value": "ラピッドファイア"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_1",
+            "value": "パワーショット"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_2",
+            "value": "メンテナンス"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_3",
+            "value": "カモフラージュ"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_4",
+            "value": "足を狙う"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_5",
+            "value": "腕を狙う"
+        },
+        {
+            "key": "SK_FFT_MSTD_R_1",
+            "value": "オートポーション"
+        },
+        {
+            "key": "SK_FFT_MSTD_P_1",
+            "value": "ねらう"
+        },
+        {
+            "key": "SK_FFT_MSTD_P_2",
+            "value": "射撃攻撃力アップ"
+        },
+        {
+            "key": "SK_LW_CAL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_CAL_M_1",
+            "value": "ハイト3ホーリー"
+        },
+        {
+            "key": "SK_LW_CAL_M_1_B",
+            "value": "ハイト2ホーリー"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2",
+            "value": "レベル4ウォタガ"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2_B",
+            "value": "レベル3ウォタガ"
+        },
+        {
+            "key": "SK_LW_CAL_M_3",
+            "value": "ハイト3ケアルラ"
+        },
+        {
+            "key": "SK_LW_CAL_M_3_B",
+            "value": "ハイト2ケアルラ"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_1_INIT",
+            "value": "ハイト高ウォータ"
+        },
+        {
+            "key": "SK_LW_CAL_S_2_INIT",
+            "value": "ハイト高ケアル"
+        },
+        {
+            "key": "SK_LW_CAL_S_3",
+            "value": "ハイト3ドンアク"
+        },
+        {
+            "key": "SK_LW_CAL_S_3_B",
+            "value": "ハイト2ドンアク"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_4",
+            "value": "レベル4ウォタラ"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_4_B",
+            "value": "レベル3ウォタラ"
+        },
+        {
+            "key": "SK_LW_CAL_S_5",
+            "value": "CTアベレージ"
+        },
+        {
+            "key": "SK_LW_CAL_R_1",
+            "value": "ダメージ分配"
+        },
+        {
+            "key": "SK_LW_CAL_P_1",
+            "value": "ハイト3をハイト2に"
+        },
+        {
+            "key": "SK_LW_CAL_P_2",
+            "value": "レベル4をレベル3に"
+        },
+        {
+            "key": "SK_LW_STRN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_STRN_M_1",
+            "value": "カタストロフィ"
+        },
+        {
+            "key": "SK_LW_STRN_M_2",
+            "value": "スウィフトスラッシュ"
+        },
+        {
+            "key": "SK_LW_STRN_M_3",
+            "value": "ハザードクラッシュ"
+        },
+        {
+            "key": "SK_LW_STRN_S_1",
+            "value": "マイティブレイク"
+        },
+        {
+            "key": "SK_LW_STRN_S_2",
+            "value": "ダブルアタック"
+        },
+        {
+            "key": "SK_LW_STRN_S_3",
+            "value": "破滅の咆哮"
+        },
+        {
+            "key": "SK_LW_STRN_S_4",
+            "value": "デモニックヒール"
+        },
+        {
+            "key": "SK_LW_STRN_R_1",
+            "value": "殺意の睨み"
+        },
+        {
+            "key": "SK_LW_STRN_P_1",
+            "value": "デスパレーション"
+        },
+        {
+            "key": "SK_LW_TU_BLM_ICE",
+            "value": "ブリザラ"
+        },
+        {
+            "key": "SK_LB_LW_TU_MONT",
+            "value": "デスティニークロス"
+        },
+        {
+            "key": "SK_SMN_TU_IFRT",
+            "value": "地獄の火炎"
+        },
+        {
+            "key": "SK_LW_TU_WAR_M_4",
+            "value": "全力斬り"
+        },
+        {
+            "key": "SK_LW_TU_CLR_M_2",
+            "value": "バニシュ"
+        },
+        {
+            "key": "SK_TU_BHMT_M_01",
+            "value": "つきあげる"
+        },
+        {
+            "key": "SK_TU_USE_RING",
+            "value": "指輪を使う"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_M_3",
+            "value": "トード"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_S_4",
+            "value": "スリプル"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_M_1_2",
+            "value": "バイオ"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_M_1",
+            "value": "バイオ"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_S_2",
+            "value": "ブライン"
+        },
+        {
+            "key": "SK_LW_BLM_BGN_S_2_2",
+            "value": "ブライン"
+        },
+        {
+            "key": "SK_LB_LW_BGN_MONT",
+            "value": "デスティニークロス"
+        },
+        {
+            "key": "SK_LB_LW_BGN_STRN",
+            "value": "フェイタルファング"
+        },
+        {
+            "key": "SK_LW_WHM_BGN",
+            "value": "初期AP加算1-999"
+        },
+        {
+            "key": "SK_LW_WHM_BGN_M_5",
+            "value": "レイズ"
+        },
+        {
+            "key": "SK_BTL_GETSP_1-999_U",
+            "value": "獲得SP1-999%アップ"
+        },
+        {
+            "key": "SK_LW_WAR_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_KNT_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_PLD_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_MGK_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_SWN_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_MNK_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_VIK_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_SAM_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_THI_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_NIN_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_LAN_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_DRG_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_HUN_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GUN_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_BLM_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_WHM_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_CLR_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GRM_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_RDM_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_TIM_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GLMS_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_FINA_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_WGN_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_YSTL_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_TNCR_ATK_100",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_BOMB_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_BOMB_M_01",
+            "value": "威嚇"
+        },
+        {
+            "key": "SK_BOMB_M_02",
+            "value": "自爆"
+        },
+        {
+            "key": "SK_BOMB_M_02_1",
+            "value": "自爆"
+        },
+        {
+            "key": "SK_BOMB_M_03",
+            "value": "カウンター"
+        },
+        {
+            "key": "SK_BOMB_M_03_CHECK",
+            "value": "カウンター"
+        },
+        {
+            "key": "SK_BOMB_M_04",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_BOMB_M_04_01",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_BHMT_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_BHMT_M_01",
+            "value": "つきあげる"
+        },
+        {
+            "key": "SK_BHMT_M_02",
+            "value": "あばれまわる"
+        },
+        {
+            "key": "SK_BHMT_M_03",
+            "value": "しゃくりあげ"
+        },
+        {
+            "key": "SK_BHMT_ATK_01",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_BHMT_M_01_01",
+            "value": "つきあげる"
+        },
+        {
+            "key": "SK_BHMT_M_02_01",
+            "value": "あばれまわる"
+        },
+        {
+            "key": "SK_BHMT_M_03_01",
+            "value": "しゃくりあげ"
+        },
+        {
+            "key": "SK_MABR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_MABR_M_01",
+            "value": "ねとねと液"
+        },
+        {
+            "key": "SK_MABR_M_02",
+            "value": "触手"
+        },
+        {
+            "key": "SK_MABR_M_03",
+            "value": "くさい息"
+        },
+        {
+            "key": "SK_ARMN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_ARMN_M_01",
+            "value": "にらみ"
+        },
+        {
+            "key": "SK_ARMN_M_02",
+            "value": "悪魔の視線"
+        },
+        {
+            "key": "SK_ARMN_M_03",
+            "value": "死の宣告"
+        },
+        {
+            "key": "SK_ARMN_M_01_TW",
+            "value": "にらみ"
+        },
+        {
+            "key": "SK_ARMN_M_02_TW",
+            "value": "悪魔の視線"
+        },
+        {
+            "key": "SK_ARMN_M_03_TW",
+            "value": "死の宣告"
+        },
+        {
+            "key": "SK_OGRE_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_OGRE_M_01",
+            "value": "ふりおろす"
+        },
+        {
+            "key": "SK_OGRE_M_02",
+            "value": "なげつける"
+        },
+        {
+            "key": "SK_OGRE_M_03",
+            "value": "ぶんまわす"
+        },
+        {
+            "key": "SK_WOLF_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_WOLF_M_01",
+            "value": "ポイズンクロー"
+        },
+        {
+            "key": "SK_WOLF_M_02",
+            "value": "キック"
+        },
+        {
+            "key": "SK_WOLF_M_03",
+            "value": "ロアー"
+        },
+        {
+            "key": "SK_ZUUU_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_ZUUU_M_01",
+            "value": "大旋風"
+        },
+        {
+            "key": "SK_ZUUU_M_02",
+            "value": "つっつき"
+        },
+        {
+            "key": "SK_ZUUU_M_03",
+            "value": "ブレスウィング"
+        },
+        {
+            "key": "SK_SKEL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_SKEL_M_01",
+            "value": "レッグアタック"
+        },
+        {
+            "key": "SK_SKEL_M_02",
+            "value": "アームアタック"
+        },
+        {
+            "key": "SK_SKEL_M_03",
+            "value": "ブライン"
+        },
+        {
+            "key": "SK_SKEL_M_04",
+            "value": "吸血"
+        },
+        {
+            "key": "SK_CACT_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CACT_M_01",
+            "value": "針千本"
+        },
+        {
+            "key": "SK_CACT_M_02",
+            "value": "針万本"
+        },
+        {
+            "key": "SK_CACT_M_03",
+            "value": "麻痺針"
+        },
+        {
+            "key": "SK_CACT_M_03_CHECK",
+            "value": "麻痺針"
+        },
+        {
+            "key": "SK_GLSP_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_GLSP_M_01",
+            "value": "硬くなる"
+        },
+        {
+            "key": "SK_GLSP_M_02",
+            "value": "押しつぶす"
+        },
+        {
+            "key": "SK_GLSP_R_01",
+            "value": "かめのこうら"
+        },
+        {
+            "key": "SK_ELEM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_ELEM_R_01",
+            "value": "反射"
+        },
+        {
+            "key": "SK_ELEM_M_01",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_ELEM_M_02",
+            "value": "ファイラ"
+        },
+        {
+            "key": "SK_ELEM_M_03",
+            "value": "ブリザド"
+        },
+        {
+            "key": "SK_ELEM_M_04",
+            "value": "ブリザラ"
+        },
+        {
+            "key": "SK_ELEM_M_05",
+            "value": "エアロ"
+        },
+        {
+            "key": "SK_ELEM_M_06",
+            "value": "エアロラ"
+        },
+        {
+            "key": "SK_ELEM_M_07",
+            "value": "サンダー"
+        },
+        {
+            "key": "SK_ELEM_M_08",
+            "value": "サンダラ"
+        },
+        {
+            "key": "SK_ELEM_M_09",
+            "value": "ストーン"
+        },
+        {
+            "key": "SK_ELEM_M_10",
+            "value": "ストンラ"
+        },
+        {
+            "key": "SK_ELEM_M_11",
+            "value": "ウォータ"
+        },
+        {
+            "key": "SK_ELEM_M_12",
+            "value": "ウォタラ"
+        },
+        {
+            "key": "SK_ELEM_M_13",
+            "value": "バニシュ"
+        },
+        {
+            "key": "SK_ELEM_M_14",
+            "value": "ケアル"
+        },
+        {
+            "key": "SK_ELEM_M_15",
+            "value": "バイオ"
+        },
+        {
+            "key": "SK_ELEM_M_16",
+            "value": "ドレイン"
+        },
+        {
+            "key": "SK_FF14BOSS_ATK",
+            "value": "通常攻撃スキル"
+        },
+        {
+            "key": "SK_FF14BOSS_M_01",
+            "value": "ブレストリッパー"
+        },
+        {
+            "key": "SK_FF14BOSS_M_02",
+            "value": "ペア・オブ・アングウィッシュ"
+        },
+        {
+            "key": "SK_FF14BOSS_M_03",
+            "value": "ウッデンホース"
+        },
+        {
+            "key": "SK_LAMA_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LAMA_M_01",
+            "value": "誘惑"
+        },
+        {
+            "key": "SK_LAMA_M_01_MAN",
+            "value": "誘惑"
+        },
+        {
+            "key": "SK_LAMA_M_02",
+            "value": "ブリンク"
+        },
+        {
+            "key": "SK_LAMA_M_03",
+            "value": "魅惑のしっぽ"
+        },
+        {
+            "key": "SK_CHCB_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CHCB_M_01",
+            "value": "チョコケアル"
+        },
+        {
+            "key": "SK_CHCB_M_02",
+            "value": "チョコボール"
+        },
+        {
+            "key": "SK_CHCB_M_03",
+            "value": "チョコエスナ"
+        },
+        {
+            "key": "SK_CHCB_M_04",
+            "value": "チョコメテオ"
+        },
+        {
+            "key": "SK_CHCB_R_01",
+            "value": "カウンター"
+        },
+        {
+            "key": "SK_CHCB1_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CHCB1_M_02",
+            "value": "チョコボール"
+        },
+        {
+            "key": "SK_CHCB1_R_01",
+            "value": "カウンター"
+        },
+        {
+            "key": "SK_CCLI_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CCLI_M_01",
+            "value": "恐怖・悪夢"
+        },
+        {
+            "key": "SK_CCLI_M_02",
+            "value": "恐怖・鶏走"
+        },
+        {
+            "key": "SK_CCLI_M_03",
+            "value": "不浄・悪寒"
+        },
+        {
+            "key": "SK_CCLI_M_04",
+            "value": "不浄・バイオガ"
+        },
+        {
+            "key": "SK_SLIM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_SLIM_M_01",
+            "value": "フルイドスルー"
+        },
+        {
+            "key": "SK_SLIM_M_02",
+            "value": "消化"
+        },
+        {
+            "key": "SK_SLIM_M_03",
+            "value": "フルイドスプレッド"
+        },
+        {
+            "key": "SK_CSLI_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CSLI_M_01",
+            "value": "ブラウンスフィア"
+        },
+        {
+            "key": "SK_CSLI_M_02",
+            "value": "かぶりつく"
+        },
+        {
+            "key": "SK_CSLI_M_03",
+            "value": "スイートファウンテン"
+        },
+        {
+            "key": "SK_CSLI_M_03_QE",
+            "value": "スイートファウンテン"
+        },
+        {
+            "key": "SK_CSLI_01_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CSLI_01_M_01",
+            "value": "マシュマロスルー"
+        },
+        {
+            "key": "SK_CSLI_01_M_02",
+            "value": "とかす"
+        },
+        {
+            "key": "SK_CSLI_01_M_03",
+            "value": "ホワイトパーティー"
+        },
+        {
+            "key": "SK_IFRT_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_IFRT_M_01",
+            "value": "ファイア"
+        },
+        {
+            "key": "SK_IFRT_M_02",
+            "value": "ファイガ"
+        },
+        {
+            "key": "SK_IFRT_M_03",
+            "value": "熱を集める"
+        },
+        {
+            "key": "SK_IFRT_M_04",
+            "value": "地獄の火炎"
+        },
+        {
+            "key": "SK_SIRE_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_SIRE_M_01",
+            "value": "ウォータ"
+        },
+        {
+            "key": "SK_SIRE_M_02",
+            "value": "ウォタガ"
+        },
+        {
+            "key": "SK_SIRE_M_03",
+            "value": "サイレントボイス"
+        },
+        {
+            "key": "SK_SIRE_M_04",
+            "value": "ルナティックボイス"
+        },
+        {
+            "key": "SK_SHIV_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_SHIV_M_01",
+            "value": "ブリザド"
+        },
+        {
+            "key": "SK_SHIV_M_02",
+            "value": "ブリザガ"
+        },
+        {
+            "key": "SK_SHIV_M_03",
+            "value": "シューティングヘイル"
+        },
+        {
+            "key": "SK_SHIV_M_04",
+            "value": "ダイアモンドダスト"
+        },
+        {
+            "key": "SK_RAMU_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_RAMU_M_01",
+            "value": "サンダー"
+        },
+        {
+            "key": "SK_RAMU_M_02",
+            "value": "サンダガ"
+        },
+        {
+            "key": "SK_RAMU_M_03",
+            "value": "ショックストライク"
+        },
+        {
+            "key": "SK_RAMU_M_04",
+            "value": "裁きの雷"
+        },
+        {
+            "key": "SK_GLEM_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_GLEM_M_01",
+            "value": "ストーン"
+        },
+        {
+            "key": "SK_GLEM_M_02",
+            "value": "ストンガ"
+        },
+        {
+            "key": "SK_GLEM_M_03",
+            "value": "アースウォール"
+        },
+        {
+            "key": "SK_GLEM_M_04",
+            "value": "フラグメンタルロック"
+        },
+        {
+            "key": "SK_ODIN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_ODIN_M_01",
+            "value": "グングニル"
+        },
+        {
+            "key": "SK_ODIN_M_02",
+            "value": "エインヘリヤル召喚詠唱"
+        },
+        {
+            "key": "SK_ODIN_M_03",
+            "value": "エインヘリヤル"
+        },
+        {
+            "key": "SK_ODIN_M_04",
+            "value": "斬鉄剣"
+        },
+        {
+            "key": "SK_ODIN_R_01",
+            "value": "カウンター"
+        },
+        {
+            "key": "SK_TSLP_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_TSLP_M_01",
+            "value": "エアロ"
+        },
+        {
+            "key": "SK_TSLP_M_02",
+            "value": "エアロガ"
+        },
+        {
+            "key": "SK_TSLP_M_03",
+            "value": "エアウォール"
+        },
+        {
+            "key": "SK_TSLP_M_04",
+            "value": "四天の風"
+        },
+        {
+            "key": "SK_WRMC_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_WRMC_M_01",
+            "value": "かくさんミサイル"
+        },
+        {
+            "key": "SK_WRMC_M_02",
+            "value": "ビームほう"
+        },
+        {
+            "key": "SK_WRMC_M_03",
+            "value": "かくこうげき"
+        },
+        {
+            "key": "SK_IGNT_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_IGNT_M_01",
+            "value": "アイアンバーサーカー"
+        },
+        {
+            "key": "SK_IGNT_M_02",
+            "value": "パワーウェイブ"
+        },
+        {
+            "key": "SK_IGNT_M_03",
+            "value": "なぎ払い"
+        },
+        {
+            "key": "SK_OCHU_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_OCHU_M_01",
+            "value": "猛毒の花粉"
+        },
+        {
+            "key": "SK_OCHU_M_02",
+            "value": "しびれムチ"
+        },
+        {
+            "key": "SK_OCHU_M_03",
+            "value": "オチューダンス"
+        },
+        {
+            "key": "SK_OCHU_M_04",
+            "value": "集束・種子大砲"
+        },
+        {
+            "key": "SK_MDFY_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_MDFY_M_01",
+            "value": "バイオ"
+        },
+        {
+            "key": "SK_MDFY_M_02",
+            "value": "ドレイン"
+        },
+        {
+            "key": "SK_MDFY_M_03",
+            "value": "トリビュレーション"
+        },
+        {
+            "key": "SK_MDFY_M_04",
+            "value": "マインドブラスト"
+        },
+        {
+            "key": "SK_THDG_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_THDG_R_01",
+            "value": "ドラゴンボイス"
+        },
+        {
+            "key": "SK_THDG_M_01",
+            "value": "ヘッドラッシュ"
+        },
+        {
+            "key": "SK_THDG_M_02",
+            "value": "ためこむ"
+        },
+        {
+            "key": "SK_THDG_M_03",
+            "value": "ダブルブレイクブレス・火"
+        },
+        {
+            "key": "SK_THDG_M_04",
+            "value": "ダブルブレイクブレス・氷"
+        },
+        {
+            "key": "SK_THDG_M_05",
+            "value": "ときはなつ"
+        },
+        {
+            "key": "SK_DABL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_DABL_M_01",
+            "value": "バイオレットテラー"
+        },
+        {
+            "key": "SK_DABL_M_02",
+            "value": "グラビデ"
+        },
+        {
+            "key": "SK_DABL_M_03",
+            "value": "ケアルガ"
+        },
+        {
+            "key": "SK_DABL_M_04",
+            "value": "闇よりの使者"
+        },
+        {
+            "key": "SK_LW_E_VIK_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_E_VIK_P_1",
+            "value": "戦闘狂い"
+        },
+        {
+            "key": "SK_LW_E_VIK_P_2",
+            "value": "矢盾の加護"
+        },
+        {
+            "key": "SK_LW_E_VIK_M_1",
+            "value": "大投擲"
+        },
+        {
+            "key": "SK_LW_E_VIK_M_3",
+            "value": "大回転"
+        },
+        {
+            "key": "SK_LW_E_VIK_M_4",
+            "value": "キリングアックス"
+        },
+        {
+            "key": "SK_LW_E_VIK_S_1",
+            "value": "使用しない"
+        },
+        {
+            "key": "SK_LW_E_VIK_S_2",
+            "value": "膝砕き"
+        },
+        {
+            "key": "SK_LW_E_VIK_S_3",
+            "value": "反骨精神"
+        },
+        {
+            "key": "SK_GMK_ATK_NEEDLE",
+            "value": "トラップ"
+        },
+        {
+            "key": "SK_GMK_ATK_FIRE",
+            "value": "トラップ"
+        },
+        {
+            "key": "SK_GMK_ATK_ARROW",
+            "value": "トラップ"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_1",
+            "value": "投石"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_2",
+            "value": "さみだれ石"
+        },
+        {
+            "key": "SK_LB_LW_MONT",
+            "value": "デスティニークロス"
+        },
+        {
+            "key": "SK_LB_LW_MONT_B",
+            "value": "デスティニークロス改"
+        },
+        {
+            "key": "SK_LB_LW_ELDE",
+            "value": "リオニスウォール"
+        },
+        {
+            "key": "SK_LB_LW_ELDE_B",
+            "value": "リオニスウォール改"
+        },
+        {
+            "key": "SK_LB_LW_STRN",
+            "value": "フェイタルファング"
+        },
+        {
+            "key": "SK_LB_LW_STRN_B",
+            "value": "フェイタルファング改"
+        },
+        {
+            "key": "SK_LB_LW_ROBB",
+            "value": "威風凛然"
+        },
+        {
+            "key": "SK_LB_LW_ROBB_B",
+            "value": "威風凛然改"
+        },
+        {
+            "key": "SK_LB_LW_ENBT",
+            "value": "堅忍不抜"
+        },
+        {
+            "key": "SK_LB_LW_ENBT_B",
+            "value": "堅忍不抜改"
+        },
+        {
+            "key": "SK_LB_LW_FDRC",
+            "value": "蝶舞蜂刺"
+        },
+        {
+            "key": "SK_LB_LW_FDRC_B",
+            "value": "蝶舞蜂刺改"
+        },
+        {
+            "key": "SK_LB_LW_MRND",
+            "value": "紅嵐"
+        },
+        {
+            "key": "SK_LB_LW_MRND_B",
+            "value": "紅嵐改"
+        },
+        {
+            "key": "SK_LB_LW_AILN",
+            "value": "ドリルインパクト"
+        },
+        {
+            "key": "SK_LB_LW_AILN_B",
+            "value": "ドリルインパクト改"
+        },
+        {
+            "key": "SK_LB_LW_ZIZA",
+            "value": "虎咬"
+        },
+        {
+            "key": "SK_LB_LW_ZIZA_B",
+            "value": "虎咬改"
+        },
+        {
+            "key": "SK_LB_LW_MDNA",
+            "value": "コスモプリューム"
+        },
+        {
+            "key": "SK_LB_LW_MDNA_B",
+            "value": "コスモプリューム改"
+        },
+        {
+            "key": "SK_LB_LW_AYKA",
+            "value": "エンジェリックグレイス"
+        },
+        {
+            "key": "SK_LB_LW_AYKA_B",
+            "value": "エンジェリックグレイス改"
+        },
+        {
+            "key": "SK_LB_LW_GLMS",
+            "value": "弌閃"
+        },
+        {
+            "key": "SK_LB_LW_GLMS_B",
+            "value": "弌閃改"
+        },
+        {
+            "key": "SK_LB_LW_KTON",
+            "value": "サイガ流影縛り"
+        },
+        {
+            "key": "SK_LB_LW_KTON_B",
+            "value": "サイガ流影縛り改"
+        },
+        {
+            "key": "SK_LB_LW_WHIS",
+            "value": "白の波動"
+        },
+        {
+            "key": "SK_LB_LW_WHIS_B",
+            "value": "白の波動改"
+        },
+        {
+            "key": "SK_LB_LW_MACR",
+            "value": "聖光双撃"
+        },
+        {
+            "key": "SK_LB_LW_MACR_B",
+            "value": "聖光双撃改"
+        },
+        {
+            "key": "SK_LB_LW_LUCA",
+            "value": "サディスティックダンス"
+        },
+        {
+            "key": "SK_LB_LW_LUCA_B",
+            "value": "サディスティックダンス改"
+        },
+        {
+            "key": "SK_LB_LW_YERM",
+            "value": "飛びつき大斬斧"
+        },
+        {
+            "key": "SK_LB_LW_YERM_B",
+            "value": "飛びつき大斬斧改"
+        },
+        {
+            "key": "SK_LB_LW_RAMD_01",
+            "value": "聖夜の裁き"
+        },
+        {
+            "key": "SK_LB_LW_MACR_01",
+            "value": "聖夜の贈り物"
+        },
+        {
+            "key": "SK_LB_FFT_RAMZ",
+            "value": "アルテマ"
+        },
+        {
+            "key": "SK_LB_FFT_ORND",
+            "value": "全剣技「雷神」"
+        },
+        {
+            "key": "SK_LB_LW_VKTR",
+            "value": "甘美な罠"
+        },
+        {
+            "key": "SK_LB_LW_VNLA",
+            "value": "暗技・朧隠"
+        },
+        {
+            "key": "SK_LB_LW_RAIN",
+            "value": "シャイニングノヴァ"
+        },
+        {
+            "key": "SK_LB_FF1_WROL",
+            "value": "クリスタルブレイバー"
+        },
+        {
+            "key": "SK_LB_LW_QILF",
+            "value": "魔杖集戟"
+        },
+        {
+            "key": "SK_LB_LW_ORDR",
+            "value": "オルドアンボンバー"
+        },
+        {
+            "key": "SK_LB_FFT_AGRA_01",
+            "value": "聖光集煌破"
+        },
+        {
+            "key": "SK_LB_FFT_DELT_01",
+            "value": "真・稲妻無双三段"
+        },
+        {
+            "key": "SK_LB_LW_IRDL",
+            "value": "イルディラの定理"
+        },
+        {
+            "key": "SK_LB_LW_STRN_01",
+            "value": "デストラクションファング"
+        },
+        {
+            "key": "SK_SMN_IFRT",
+            "value": "地獄の火炎"
+        },
+        {
+            "key": "SK_SMN_GLEM",
+            "value": "フラグメンタルロック"
+        },
+        {
+            "key": "SK_SMN_RAMU",
+            "value": "裁きの雷"
+        },
+        {
+            "key": "SK_SMN_SHIV",
+            "value": "ダイアモンドダスト"
+        },
+        {
+            "key": "SK_SMN_SIRE",
+            "value": "ルナティックボイス"
+        },
+        {
+            "key": "SK_SMN_ODIN",
+            "value": "斬鉄剣"
+        },
+        {
+            "key": "SK_SMN_TSLP",
+            "value": "四天の風"
+        },
+        {
+            "key": "SK_SMN_THDG",
+            "value": "ときはなつ"
+        },
+        {
+            "key": "SK_SMN_WRMC",
+            "value": "かくこうげき"
+        },
+        {
+            "key": "SK_SMN_DABL",
+            "value": "闇よりの使者"
+        },
+        {
+            "key": "SK_SMN_IGNT",
+            "value": "なぎ払い"
+        },
+        {
+            "key": "SK_SMN_BHMT",
+            "value": "あばれまわる"
+        },
+        {
+            "key": "SK_SMN_MABR",
+            "value": "くさい息"
+        },
+        {
+            "key": "SK_SMN_MOGL",
+            "value": "Xmasモーグリダンス"
+        },
+        {
+            "key": "SK_SMN_CACT",
+            "value": "針千本"
+        },
+        {
+            "key": "SK_SMN_ARMN",
+            "value": "にらみ"
+        },
+        {
+            "key": "SK_SMN_ZUUU",
+            "value": "大旋風"
+        },
+        {
+            "key": "SK_SMN_OGRE",
+            "value": "なげつける"
+        },
+        {
+            "key": "SK_SMN_BOMB",
+            "value": "自爆"
+        },
+        {
+            "key": "SK_SMN_LAMA",
+            "value": "魅惑のしっぽ"
+        },
+        {
+            "key": "SK_SMN_OCHU",
+            "value": "集束・種子大砲"
+        },
+        {
+            "key": "SK_SMN_CHCB_01",
+            "value": "チョコメテオ"
+        },
+        {
+            "key": "SK_SMN_MDFY",
+            "value": "マインドブラスト"
+        },
+        {
+            "key": "SK_US_POTION",
+            "value": "ポーション"
+        },
+        {
+            "key": "SK_US_HIPOTION",
+            "value": "ハイポーション"
+        },
+        {
+            "key": "SK_US_EXPOTION",
+            "value": "エクスポーション"
+        },
+        {
+            "key": "SK_US_ETHER",
+            "value": "エーテル"
+        },
+        {
+            "key": "SK_US_ETHERTURBO",
+            "value": "エーテルターボ"
+        },
+        {
+            "key": "SK_US_ELIXIR",
+            "value": "エリクサー"
+        },
+        {
+            "key": "SK_US_PNXFEATHER",
+            "value": "フェニックスの尾"
+        },
+        {
+            "key": "SK_US_ANTIDOTE",
+            "value": "毒消し "
+        },
+        {
+            "key": "SK_US_EYEDROPS",
+            "value": "目薬"
+        },
+        {
+            "key": "SK_US_REMINDER",
+            "value": " 気付け薬"
+        },
+        {
+            "key": "SK_US_ECHODROP",
+            "value": "やまびこ草"
+        },
+        {
+            "key": "SK_US_UNICORNHORN",
+            "value": "ユニコーンの角"
+        },
+        {
+            "key": "SK_US_MAIDENKISS",
+            "value": " 乙女のキッス"
+        },
+        {
+            "key": "SK_US_GOLDNEEDLE",
+            "value": " 金の針"
+        },
+        {
+            "key": "SK_US_REMEDY",
+            "value": "万能薬"
+        },
+        {
+            "key": "SK_US_ENCHANTDRAG",
+            "value": "増強薬"
+        },
+        {
+            "key": "SK_US_HOLYTORCH",
+            "value": "聖なるトーチ"
+        },
+        {
+            "key": "SK_US_HERODRINK",
+            "value": "英雄の薬"
+        },
+        {
+            "key": "SK_US_BACCHUS",
+            "value": "バッカスの酒"
+        },
+        {
+            "key": "SK_US_SHELL",
+            "value": "シェルドリンク"
+        },
+        {
+            "key": "SK_US_PROTECT",
+            "value": "プロテスドリンク"
+        },
+        {
+            "key": "SK_US_HEALWATER",
+            "value": "回復の泉"
+        },
+        {
+            "key": "SK_US_HPPOTION",
+            "value": "体力の薬"
+        },
+        {
+            "key": "SK_US_ATKPOTION",
+            "value": "力の薬"
+        },
+        {
+            "key": "SK_US_MAGPOTION",
+            "value": "魔力の薬"
+        },
+        {
+            "key": "SK_US_SPDPOTION",
+            "value": "迅速の薬"
+        },
+        {
+            "key": "SK_US_DEXPOTION",
+            "value": "手練の薬"
+        },
+        {
+            "key": "SK_MA_LW_MONT",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_STRN",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_ELDE",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_ROBB",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_ENBT",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_ZIZA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MRND",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_AILN",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MDNA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_AYKA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_GLMS",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_GLMS_2",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MACR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FF14_TNCR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_HLNA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_LILS",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_RAMD",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_OOOO",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_LRNZ",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_RIRY",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_VSTR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_CLEY",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_KADI",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MRLK",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MGRT",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_PRAY",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FF14_YSTL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SZRT",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_FINA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_BYLO",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_RYER",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SCIA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_VRID",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_NAIA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SRJS",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_UNII",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SEVR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_VADM",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MURM",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_PHBE",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_RART",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MICE",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MIIA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_ZZAN",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_FDRC",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SDLX",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MINU",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_YERM",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_RAMD_01",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_NASR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_MACR_01",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_ETRE",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FFT_RAMZ",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FFT_GFGR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FFT_ORND",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_WHIS",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_KTON",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_DRND",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_LUCA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_P_ADLD",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_VKTR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_THLA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_VNLA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_DRIO",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_TREL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_RAIN",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FF1_WROL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_QILF",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SIMR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_ORDR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_LVES",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FFT_AGRA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FFT_DELT",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FFT_MSTD",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_IRDL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_STRN_01",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_LW_SLASH_1",
+            "value": "斬撃攻撃力+2"
+        },
+        {
+            "key": "SK_LW_SLASH_2",
+            "value": "斬撃攻撃力+3"
+        },
+        {
+            "key": "SK_LW_SLASH_3",
+            "value": "斬撃攻撃力+5"
+        },
+        {
+            "key": "SK_LW_SLASH_4_N",
+            "value": "斬撃攻撃力+6"
+        },
+        {
+            "key": "SK_LW_SLASH_5_N",
+            "value": "斬撃攻撃力+10"
+        },
+        {
+            "key": "SK_LW_SLASH_4_R",
+            "value": "斬撃攻撃力+6"
+        },
+        {
+            "key": "SK_LW_SLASH_5_R",
+            "value": "斬撃攻撃力+12"
+        },
+        {
+            "key": "SK_LW_SLASH_4_SR",
+            "value": "斬撃攻撃力+7"
+        },
+        {
+            "key": "SK_LW_SLASH_5_SR",
+            "value": "斬撃攻撃力+13"
+        },
+        {
+            "key": "SK_LW_SLASH_4_SSR",
+            "value": "斬撃攻撃力+8"
+        },
+        {
+            "key": "SK_LW_SLASH_5_SSR",
+            "value": "斬撃攻撃力+15"
+        },
+        {
+            "key": "SK_LW_SLASH_4_UR",
+            "value": "斬撃攻撃力+10"
+        },
+        {
+            "key": "SK_LW_SLASH_5_UR",
+            "value": "斬撃攻撃力+20"
+        },
+        {
+            "key": "SK_LW_BLOW_1",
+            "value": "打撃攻撃力+2"
+        },
+        {
+            "key": "SK_LW_BLOW_2",
+            "value": "打撃攻撃力+3"
+        },
+        {
+            "key": "SK_LW_BLOW_3",
+            "value": "打撃攻撃力+5"
+        },
+        {
+            "key": "SK_LW_BLOW_4_N",
+            "value": "打撃攻撃力+6"
+        },
+        {
+            "key": "SK_LW_BLOW_5_N",
+            "value": "打撃攻撃力+10"
+        },
+        {
+            "key": "SK_LW_BLOW_4_R",
+            "value": "打撃攻撃力+6"
+        },
+        {
+            "key": "SK_LW_BLOW_5_R",
+            "value": "打撃攻撃力+12"
+        },
+        {
+            "key": "SK_LW_BLOW_4_SR",
+            "value": "打撃攻撃力+7"
+        },
+        {
+            "key": "SK_LW_BLOW_5_SR",
+            "value": "打撃攻撃力+13"
+        },
+        {
+            "key": "SK_LW_BLOW_4_SSR",
+            "value": "打撃攻撃力+8"
+        },
+        {
+            "key": "SK_LW_BLOW_5_SSR",
+            "value": "打撃攻撃力+15"
+        },
+        {
+            "key": "SK_LW_BLOW_4_UR",
+            "value": "打撃攻撃力+10"
+        },
+        {
+            "key": "SK_LW_BLOW_5_UR",
+            "value": "打撃攻撃力+20"
+        },
+        {
+            "key": "SK_LW_SHOOT_1",
+            "value": "射撃攻撃力+2"
+        },
+        {
+            "key": "SK_LW_SHOOT_2",
+            "value": "射撃攻撃力+3"
+        },
+        {
+            "key": "SK_LW_SHOOT_3",
+            "value": "射撃攻撃力+5"
+        },
+        {
+            "key": "SK_LW_SHOOT_4_N",
+            "value": "射撃攻撃力+6"
+        },
+        {
+            "key": "SK_LW_SHOOT_5_N",
+            "value": "射撃攻撃力+10"
+        },
+        {
+            "key": "SK_LW_SHOOT_4_R",
+            "value": "射撃攻撃力+6"
+        },
+        {
+            "key": "SK_LW_SHOOT_5_R",
+            "value": "射撃攻撃力+12"
+        },
+        {
+            "key": "SK_LW_SHOOT_4_SR",
+            "value": "射撃攻撃力+7"
+        },
+        {
+            "key": "SK_LW_SHOOT_5_SR",
+            "value": "射撃攻撃力+13"
+        },
+        {
+            "key": "SK_LW_SHOOT_4_SSR",
+            "value": "射撃攻撃力+8"
+        },
+        {
+            "key": "SK_LW_SHOOT_5_SSR",
+            "value": "射撃攻撃力+15"
+        },
+        {
+            "key": "SK_LW_SHOOT_4_UR",
+            "value": "射撃攻撃力+10"
+        },
+        {
+            "key": "SK_LW_SHOOT_5_UR",
+            "value": "射撃攻撃力+20"
+        },
+        {
+            "key": "SK_LW_SPEAR_1",
+            "value": "刺突攻撃力+2"
+        },
+        {
+            "key": "SK_LW_SPEAR_2",
+            "value": "刺突攻撃力+3"
+        },
+        {
+            "key": "SK_LW_SPEAR_3",
+            "value": "刺突攻撃力+5"
+        },
+        {
+            "key": "SK_LW_SPEAR_4_N",
+            "value": "刺突攻撃力+6"
+        },
+        {
+            "key": "SK_LW_SPEAR_5_N",
+            "value": "刺突攻撃力+10"
+        },
+        {
+            "key": "SK_LW_SPEAR_4_R",
+            "value": "刺突攻撃力+6"
+        },
+        {
+            "key": "SK_LW_SPEAR_5_R",
+            "value": "刺突攻撃力+12"
+        },
+        {
+            "key": "SK_LW_SPEAR_4_SR",
+            "value": "刺突攻撃力+7"
+        },
+        {
+            "key": "SK_LW_SPEAR_5_SR",
+            "value": "刺突攻撃力+13"
+        },
+        {
+            "key": "SK_LW_SPEAR_4_SSR",
+            "value": "刺突攻撃力+8"
+        },
+        {
+            "key": "SK_LW_SPEAR_5_SSR",
+            "value": "刺突攻撃力+15"
+        },
+        {
+            "key": "SK_LW_SPEAR_4_UR",
+            "value": "刺突攻撃力+10"
+        },
+        {
+            "key": "SK_LW_SPEAR_5_UR",
+            "value": "刺突攻撃力+20"
+        },
+        {
+            "key": "SK_LW_MAGIC_1",
+            "value": "魔法攻撃力+2"
+        },
+        {
+            "key": "SK_LW_MAGIC_2",
+            "value": "魔法攻撃力+3"
+        },
+        {
+            "key": "SK_LW_MAGIC_3",
+            "value": "魔法攻撃力+5"
+        },
+        {
+            "key": "SK_LW_MAGIC_4_N",
+            "value": "魔法攻撃力+6"
+        },
+        {
+            "key": "SK_LW_MAGIC_5_N",
+            "value": "魔法攻撃力+10"
+        },
+        {
+            "key": "SK_LW_MAGIC_4_R",
+            "value": "魔法攻撃力+6"
+        },
+        {
+            "key": "SK_LW_MAGIC_5_R",
+            "value": "魔法攻撃力+12"
+        },
+        {
+            "key": "SK_LW_MAGIC_4_SR",
+            "value": "魔法攻撃力+7"
+        },
+        {
+            "key": "SK_LW_MAGIC_5_SR",
+            "value": "魔法攻撃力+13"
+        },
+        {
+            "key": "SK_LW_MAGIC_4_SSR",
+            "value": "魔法攻撃力+8"
+        },
+        {
+            "key": "SK_LW_MAGIC_5_SSR",
+            "value": "魔法攻撃力+15"
+        },
+        {
+            "key": "SK_LW_MAGIC_4_UR",
+            "value": "魔法攻撃力+10"
+        },
+        {
+            "key": "SK_LW_MAGIC_5_UR",
+            "value": "魔法攻撃力+20"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_1",
+            "value": "斬撃攻撃耐性+1"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_2",
+            "value": "斬撃攻撃耐性+2"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_3",
+            "value": "斬撃攻撃耐性+3"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_4_N_SSR",
+            "value": "斬撃攻撃耐性+4"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_5_N_R",
+            "value": "斬撃攻撃耐性+6"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_5_SR",
+            "value": "斬撃攻撃耐性+7"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_5_SSR",
+            "value": "斬撃攻撃耐性+8"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_4_UR",
+            "value": "斬撃攻撃耐性+5"
+        },
+        {
+            "key": "SK_LW_DF_SLASH_5_UR",
+            "value": "斬撃攻撃耐性+10"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_1",
+            "value": "打撃攻撃耐性+1"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_2",
+            "value": "打撃攻撃耐性+2"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_3",
+            "value": "打撃攻撃耐性+3"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_4_N_SSR",
+            "value": "打撃攻撃耐性+4"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_5_N_R",
+            "value": "打撃攻撃耐性+6"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_5_SR",
+            "value": "打撃攻撃耐性+7"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_5_SSR",
+            "value": "打撃攻撃耐性+8"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_4_UR",
+            "value": "打撃攻撃耐性+5"
+        },
+        {
+            "key": "SK_LW_DF_BLOW_5_UR",
+            "value": "打撃攻撃耐性+10"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_1",
+            "value": "射撃攻撃耐性+1"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_2",
+            "value": "射撃攻撃耐性+2"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_3",
+            "value": "射撃攻撃耐性+3"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_4_N_SSR",
+            "value": "射撃攻撃耐性+4"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_5_N_R",
+            "value": "射撃攻撃耐性+6"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_5_SR",
+            "value": "射撃攻撃耐性+7"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_5_SSR",
+            "value": "射撃攻撃耐性+8"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_4_UR",
+            "value": "射撃攻撃耐性+5"
+        },
+        {
+            "key": "SK_LW_DF_SHOOT_5_UR",
+            "value": "射撃攻撃耐性+10"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_1",
+            "value": "刺突攻撃耐性+1"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_2",
+            "value": "刺突攻撃耐性+2"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_3",
+            "value": "刺突攻撃耐性+3"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_4_N_SSR",
+            "value": "刺突攻撃耐性+4"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_5_N_R",
+            "value": "刺突攻撃耐性+6"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_5_SR",
+            "value": "刺突攻撃耐性+7"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_5_SSR",
+            "value": "刺突攻撃耐性+8"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_4_UR",
+            "value": "刺突攻撃耐性+5"
+        },
+        {
+            "key": "SK_LW_DF_SPEAR_5_UR",
+            "value": "刺突攻撃耐性+10"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_1",
+            "value": "魔法攻撃耐性+1"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_2",
+            "value": "魔法攻撃耐性+2"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_3",
+            "value": "魔法攻撃耐性+3"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_4_N_SSR",
+            "value": "魔法攻撃耐性+4"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_5_N_R",
+            "value": "魔法攻撃耐性+6"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_5_SR",
+            "value": "魔法攻撃耐性+7"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_5_SSR",
+            "value": "魔法攻撃耐性+8"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_4_UR",
+            "value": "魔法攻撃耐性+5"
+        },
+        {
+            "key": "SK_LW_DF_MAGIC_5_UR",
+            "value": "魔法攻撃耐性+10"
+        },
+        {
+            "key": "SK_LW_AVOID_1",
+            "value": "回避率+1"
+        },
+        {
+            "key": "SK_LW_AVOID_2",
+            "value": "回避率+20"
+        },
+        {
+            "key": "SK_LW_AVOID_3",
+            "value": "回避率+3"
+        },
+        {
+            "key": "SK_LW_AVOID_4_N_SSR",
+            "value": "回避率+4"
+        },
+        {
+            "key": "SK_LW_AVOID_5_N_R",
+            "value": "回避率+6"
+        },
+        {
+            "key": "SK_LW_AVOID_5_SR",
+            "value": "回避率+7"
+        },
+        {
+            "key": "SK_LW_AVOID_5_SSR",
+            "value": "回避率+8"
+        },
+        {
+            "key": "SK_LW_AVOID_4_UR",
+            "value": "回避率+5"
+        },
+        {
+            "key": "SK_LW_AVOID_5_UR",
+            "value": "回避率+10"
+        },
+        {
+            "key": "SK_LW_HIT_1",
+            "value": "命中率+2"
+        },
+        {
+            "key": "SK_LW_HIT_2",
+            "value": "命中率+3"
+        },
+        {
+            "key": "SK_LW_HIT_3",
+            "value": "命中率+5"
+        },
+        {
+            "key": "SK_LW_HIT_4_N_SSR",
+            "value": "命中率+8"
+        },
+        {
+            "key": "SK_LW_HIT_5_N_R",
+            "value": "命中率+10"
+        },
+        {
+            "key": "SK_LW_HIT_5_SR",
+            "value": "命中率+12"
+        },
+        {
+            "key": "SK_LW_HIT_5_SSR",
+            "value": "命中率+15"
+        },
+        {
+            "key": "SK_LW_HIT_4_UR",
+            "value": "命中率+10"
+        },
+        {
+            "key": "SK_LW_HIT_5_UR",
+            "value": "命中率+20"
+        },
+        {
+            "key": "SK_LW_SWO_003_1",
+            "value": "眠りの剣"
+        },
+        {
+            "key": "SK_LW_SWO_003_5",
+            "value": "眠りの剣"
+        },
+        {
+            "key": "SK_LW_ROD_003_1",
+            "value": "氷のロッド"
+        },
+        {
+            "key": "SK_LW_ROD_004_5",
+            "value": "ケアルラ"
+        },
+        {
+            "key": "SK_LW_SWO_004_1",
+            "value": "アイスブランド"
+        },
+        {
+            "key": "SK_LW_SWO_004_5",
+            "value": "アイスブランド"
+        },
+        {
+            "key": "SK_LW_AF_ICE_PA_1",
+            "value": "氷属性アビリティ攻撃UPパッシブ"
+        },
+        {
+            "key": "SK_LW_AF_ICE_PA_5",
+            "value": "氷属性アビリティ攻撃UPパッシブ"
+        },
+        {
+            "key": "SK_LW_SWO_006_1",
+            "value": "サンゴの剣"
+        },
+        {
+            "key": "SK_LW_SWO_006_5",
+            "value": "サンゴの剣"
+        },
+        {
+            "key": "SK_LW_BSW_011_1",
+            "value": "クリムゾンセイバー"
+        },
+        {
+            "key": "SK_LW_BSW_011_3",
+            "value": "クリムゾンセイバー"
+        },
+        {
+            "key": "SK_LW_BSW_011_5",
+            "value": "クリムゾンセイバー"
+        },
+        {
+            "key": "SK_ACC_LW_MONT_1_1",
+            "value": "掛け声"
+        },
+        {
+            "key": "SK_ARM_LW_STRN_1_1",
+            "value": "ウォールオブフィールド"
+        },
+        {
+            "key": "SK_CLK_LW_ELDE_1_1",
+            "value": "王の号令"
+        },
+        {
+            "key": "SK_ARM_LW_ROBB_1_1",
+            "value": "慧眼の刃"
+        },
+        {
+            "key": "SK_SHI_LW_ENBT_1_1",
+            "value": "忠義の猛攻"
+        },
+        {
+            "key": "SK_ACC_LW_FDRC_1_1",
+            "value": "トライプロテクション"
+        },
+        {
+            "key": "SK_ACC_LW_ZIZA_1_1",
+            "value": "活性孔"
+        },
+        {
+            "key": "SK_CLT_LW_MRND_1_1",
+            "value": "繊麗の鼓舞"
+        },
+        {
+            "key": "SK_HAT_LW_AILN_1_1",
+            "value": "アナリシス"
+        },
+        {
+            "key": "SK_HAT_LW_MDNA_1_1",
+            "value": "ルナヴァーヴ"
+        },
+        {
+            "key": "SK_FTW_LW_AYKA_1_1",
+            "value": "ピュリファイ"
+        },
+        {
+            "key": "SK_HLM_LW_GLMS_1_1",
+            "value": "咒力疾走"
+        },
+        {
+            "key": "SK_ACC_LW_MACR_1_1",
+            "value": "騎士への祝福"
+        },
+        {
+            "key": "SK_BLT_LW_YERM_1_1",
+            "value": "湧血の沸騰"
+        },
+        {
+            "key": "SK_CLT_LW_RAMD_01_1_1",
+            "value": "イグザルテーション"
+        },
+        {
+            "key": "SK_ACC_LW_MACR_01_1",
+            "value": "クリスマスハーモニー"
+        },
+        {
+            "key": "SK_ARM_FFT_RAMZ_1_1",
+            "value": "TPたくす"
+        },
+        {
+            "key": "SK_ACC_FFT_ORND_1_1",
+            "value": "雷神塵地の型"
+        },
+        {
+            "key": "SK_HAT_LW_WHIS_1_1",
+            "value": "虚心の献羽"
+        },
+        {
+            "key": "SK_ARW_LW_KTON_1_1",
+            "value": "早駆の術"
+        },
+        {
+            "key": "SK_ARM_LW_LUCA_1_1",
+            "value": "リミッターオフ"
+        },
+        {
+            "key": "SK_ARM_LW_VKTR_1_1",
+            "value": "妖竜の瞳"
+        },
+        {
+            "key": "SK_ACC_LW_VNLA_1_1",
+            "value": "偽りの夜帳"
+        },
+        {
+            "key": "SK_CLT_LW_RAIN_1_1",
+            "value": "守護者の闘気"
+        },
+        {
+            "key": "SK_ACC_FF1_WROL_1_1",
+            "value": "ディバインライト"
+        },
+        {
+            "key": "SK_ACC_LW_QILF_1_1",
+            "value": "背反する矜持"
+        },
+        {
+            "key": "SK_ACC_LW_ORDR_1_1",
+            "value": "受け継がれし暴威"
+        },
+        {
+            "key": "SK_ACC_FFT_AGRA_1_1",
+            "value": "聖近衛騎士団の誇り"
+        },
+        {
+            "key": "SK_ARM_FFT_DELT_1_1",
+            "value": "APたくす"
+        },
+        {
+            "key": "SK_ACC_LW_IRDL_1_1",
+            "value": "瞬速転移法"
+        },
+        {
+            "key": "SK_ARM_LW_STRN_01_1_1",
+            "value": "尽き果てぬ憎悪"
+        },
+        {
+            "key": "SK_BTL_HP_100-99900_U",
+            "value": "最大HP100-99900アップ"
+        },
+        {
+            "key": "SK_BTL_HP_1-999_U",
+            "value": "最大HP1-999アップ"
+        },
+        {
+            "key": "SK_BTL_MP_1-999_U",
+            "value": "最大TP1-999アップ"
+        },
+        {
+            "key": "SK_BTL_AP_1-999_U",
+            "value": "最大AP1-999アップ"
+        },
+        {
+            "key": "SK_BTL_FAP_1-999_U",
+            "value": "初期AP1-999アップ"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999_U",
+            "value": "物攻1-999アップ"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999PER_U",
+            "value": "物攻1-999%アップ"
+        },
+        {
+            "key": "SK_BTL_MAG_1-999_U",
+            "value": "魔攻1-999アップ"
+        },
+        {
+            "key": "SK_BTL_DF_1-80_U",
+            "value": "防御1-80アップ"
+        },
+        {
+            "key": "SK_BTL_MDF_1-80_U",
+            "value": "精神1-80アップ"
+        },
+        {
+            "key": "SK_BTL_SPD_1-999_U",
+            "value": "素早さ1-999アップ"
+        },
+        {
+            "key": "SK_BTL_DEX_1-999_U",
+            "value": "器用さ1-999アップ"
+        },
+        {
+            "key": "SK_BTL_LUK_1-999_U",
+            "value": "運1-999アップ"
+        },
+        {
+            "key": "SK_BTL_BRAVE_1-100_U",
+            "value": "Brave1-100アップ"
+        },
+        {
+            "key": "SK_BTL_FAITH_1-100_U",
+            "value": "Faith1-100アップ"
+        },
+        {
+            "key": "SK_BTL_MOVE_1-20_U",
+            "value": "Move1-20アップ"
+        },
+        {
+            "key": "SK_BTL_JUMP_1-20_U",
+            "value": "Jump1-20アップ"
+        },
+        {
+            "key": "SK_BTL_RANGE_1-20_U",
+            "value": "射程1-20アップ"
+        },
+        {
+            "key": "SK_BTL_RANGE_1-20_U_PA",
+            "value": "射程1-15アップ"
+        },
+        {
+            "key": "SK_BTL_HP_100-99900_D",
+            "value": "▼最大HP100-99900ダウン"
+        },
+        {
+            "key": "SK_BTL_HP_1-999_D",
+            "value": "▼最大HP1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_FAP_1-999_D",
+            "value": "▼初期AP1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_AP_1-999_D",
+            "value": "▼AP1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999_D",
+            "value": "▼物攻1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_MAG_1-999_D",
+            "value": "▼魔攻1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_SPD_1-999_D",
+            "value": "▼素早さ1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_DEX_1-999_D",
+            "value": "▼器用さ1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_LUK_1-999_D",
+            "value": "▼運1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_BRAVE_1-100_D",
+            "value": "▼Brave1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_FAITH_1-100_D",
+            "value": "▼Faith1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_MOVE_1-20_D",
+            "value": "▼Move1-20ダウン"
+        },
+        {
+            "key": "SK_BTL_JUMP_1-20_D",
+            "value": "▼Jump1-20ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_U",
+            "value": "魔法耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_U",
+            "value": "斬撃耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_U",
+            "value": "刺突耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_U",
+            "value": "射撃耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_U",
+            "value": "打撃耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_U",
+            "value": "全攻撃種別耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_D",
+            "value": "▼魔法耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_D",
+            "value": "▼斬撃耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_D",
+            "value": "▼刺突耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_D",
+            "value": "▼射撃耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_D",
+            "value": "▼打撃耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_D",
+            "value": "▼全攻撃種別耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_U",
+            "value": "火属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_U",
+            "value": "水属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_U",
+            "value": "風属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_U",
+            "value": "雷属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_U",
+            "value": "氷属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_U",
+            "value": "土属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_DARK_1_80_U",
+            "value": "闇属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_U",
+            "value": "光属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_U",
+            "value": "全属性耐性1-80アップ"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_D",
+            "value": "▼火属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_D",
+            "value": "▼水属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_D",
+            "value": "▼風属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_D",
+            "value": "▼雷属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_D",
+            "value": "▼氷属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_D",
+            "value": "▼土属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_DARK_1_80_D",
+            "value": "▼闇属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_D",
+            "value": "▼光属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_D",
+            "value": "▼全属性耐性1-80ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_U_KISO",
+            "value": "魔法耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_U_KISO",
+            "value": "斬撃耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_U_KISO",
+            "value": "刺突耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_U_KISO",
+            "value": "射撃耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_U_KISO",
+            "value": "打撃耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_U_KISO",
+            "value": "全攻撃種別耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_D_KISO",
+            "value": "▼魔法耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_D_KISO",
+            "value": "▼斬撃耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_D_KISO",
+            "value": "▼刺突耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_D_KISO",
+            "value": "▼射撃耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_D_KISO",
+            "value": "▼打撃耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_D_KISO",
+            "value": "▼全攻撃種別耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_U_KISO",
+            "value": "火属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_U_KISO",
+            "value": "水属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_U_KISO",
+            "value": "風属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_U_KISO",
+            "value": "雷属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_U_KISO",
+            "value": "氷属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_U_KISO",
+            "value": "土属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_DARK_1_80_U_KISO",
+            "value": "闇属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_U_KISO",
+            "value": "光属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_U_KISO",
+            "value": "全属性耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_D_KISO",
+            "value": "▼火属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_D_KISO",
+            "value": "▼水属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_D_KISO",
+            "value": "▼風属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_D_KISO",
+            "value": "▼雷属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_D_KISO",
+            "value": "▼氷属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_D_KISO",
+            "value": "▼土属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_D_KISOARK_1_80_D_KISO",
+            "value": "▼闇属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_D_KISO",
+            "value": "▼光属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_D_KISO",
+            "value": "▼全属性耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTFIRE_1_80_U",
+            "value": "火属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWATER_1_80_U",
+            "value": "水属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWIND_1_80_U",
+            "value": "風属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTTHUNDER_1_80_U",
+            "value": "雷属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTICE_1_80_U",
+            "value": "氷属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSOIL_1_80_U",
+            "value": "土属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTDARK_1_80_U",
+            "value": "闇属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSHINE_1_80_U",
+            "value": "光属性以外の耐性1-80アップ(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTFIRE_1_80_D",
+            "value": "▼火属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWATER_1_80_D",
+            "value": "▼水属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWIND_1_80_D",
+            "value": "▼風属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTTHUNDER_1_80_D",
+            "value": "▼雷属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTICE_1_80_D",
+            "value": "▼氷属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSOIL_1_80_D",
+            "value": "▼土属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTDARK_1_80_D",
+            "value": "▼闇属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSHINE_1_80_D",
+            "value": "▼光属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_RES_OTELEMALL_1_80_D",
+            "value": "▼全属性以外の耐性1-80ダウン(基礎)"
+        },
+        {
+            "key": "SK_BTL_HIT_1_999_U",
+            "value": "命中1-999アップ"
+        },
+        {
+            "key": "SK_BTL_AVOI_1_999_U",
+            "value": "回避1-999アップ"
+        },
+        {
+            "key": "SK_BTL_CRI_1_999_U",
+            "value": "必殺1-999アップ"
+        },
+        {
+            "key": "SK_BTL_CRIHIT_1_999_U",
+            "value": "必殺命中1-999アップ"
+        },
+        {
+            "key": "SK_BTL_CRIAVOI_1_999_U",
+            "value": "必殺回避1-999アップ"
+        },
+        {
+            "key": "SK_BTL_HIT_1_999_D",
+            "value": "▼命中1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_AVOI_1_999_D",
+            "value": "▼回避1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_CRI_1_999_D",
+            "value": "▼必殺1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_CRIHIT_1_999_D",
+            "value": "▼必殺命中1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_CRIAVOI_1_999_D",
+            "value": "▼必殺回避1-999ダウン"
+        },
+        {
+            "key": "SK_BTL_STR_MAGIC_1_100_U",
+            "value": "魔法攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STR_SLASH_1_100_U",
+            "value": "斬撃攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STR_SPEAR_1_100_U",
+            "value": "刺突攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STR_SHOT_1_100_U",
+            "value": "射撃攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STR_BLOW_1_100_U",
+            "value": "打撃攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STR_MAGIC_1_100_D",
+            "value": "▼魔法攻撃力1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_STR_SLASH_1_100_D",
+            "value": "▼斬撃攻撃力1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_STR_SPEAR_1_100_D",
+            "value": "▼刺突攻撃力1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_STR_SHOT_1_100_D",
+            "value": "▼射撃攻撃力1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_STR_BLOW_1_100_D",
+            "value": "▼打撃攻撃力1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_CASTTIME_1_999_D",
+            "value": "▼詠唱時間1-999短縮"
+        },
+        {
+            "key": "SK_BTL_RES_DEBUFF_1_100_U",
+            "value": "デバフ耐性1-100アップ"
+        },
+        {
+            "key": "SK_BTL_RES_DEBUFF_1_100_D",
+            "value": "▼デバフ耐性1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_POISON_1_100_U",
+            "value": "状態異常【毒】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_DARKN_1_100_U",
+            "value": "状態異常【暗闇】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SLEEP_1_100_U",
+            "value": "状態異常【睡眠】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SILENCE_1_100_U",
+            "value": "状態異常【沈黙】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_PARA_1_100_U",
+            "value": "状態異常【麻痺】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_CONFU_1_100_U",
+            "value": "状態異常【混乱】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_CHARM_1_100_U",
+            "value": "状態異常【魅了】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_STONE_1_100_U",
+            "value": "状態異常【石化】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_TOAD_1_100_U",
+            "value": "状態異常【トード】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_SLOW_1_100_U",
+            "value": "状態異常【スロウ】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_STOP_1_100_U",
+            "value": "状態異常【ストップ】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_DACT_1_100_U",
+            "value": "状態異常【ドンアク】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_DMOV_1_100_U",
+            "value": "状態異常【ドンムブ】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_BERSK_1_100_U",
+            "value": "状態異常【バーサク】耐性アップ"
+        },
+        {
+            "key": "SK_BTL_RES_POISON_1_100_D",
+            "value": "▼状態異常【毒】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_DARKN_1_100_D",
+            "value": "▼状態異常【暗闇】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SLEEP_1_100_D",
+            "value": "▼状態異常【睡眠】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SILENCE_1_100_D",
+            "value": "▼状態異常【沈黙】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_PARA_1_100_D",
+            "value": "▼状態異常【麻痺】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_CONFU_1_100_D",
+            "value": "▼状態異常【混乱】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_CHARM_1_100_D",
+            "value": "▼状態異常【魅了】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_STONE_1_100_D",
+            "value": "▼状態異常【石化】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_TOAD_1_100_D",
+            "value": "▼状態異常【トード】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_SLOW_1_100_D",
+            "value": "▼状態異常【スロウ】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_STOP_1_100_D",
+            "value": "▼状態異常【ストップ】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_DACT_1_100_D",
+            "value": "▼状態異常【ドンアク】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_DMOV_1_100_D",
+            "value": "▼状態異常【ドンムブ】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_RES_BERSK_1_100_D",
+            "value": "▼状態異常【バーサク】耐性ダウン"
+        },
+        {
+            "key": "SK_BTL_INV_DEATH",
+            "value": "即死無効"
+        },
+        {
+            "key": "SK_BTL_INV_DOOM",
+            "value": "死の宣告無効"
+        },
+        {
+            "key": "SK_BTL_INV_POISON",
+            "value": "毒無効"
+        },
+        {
+            "key": "SK_BTL_INV_HPDOWN",
+            "value": "最大HPダウン無効"
+        },
+        {
+            "key": "SK_BTL_INV_MKBT",
+            "value": "無機物の耐性"
+        },
+        {
+            "key": "SK_BTL_INV_CTDOWN",
+            "value": "CT変動無効"
+        },
+        {
+            "key": "SK_BTL_HP_100-99900_U_PA",
+            "value": "最大HP100-99900アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_HP_1-999_U_PA",
+            "value": "最大HP1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_MP_1-999_U_PA",
+            "value": "最大TP1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_AP_1-999_U_PA",
+            "value": "最大AP1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999_U_PA",
+            "value": "物攻1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_MAG_1-999_U_PA",
+            "value": "魔攻1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_DF_1-80_U_PA",
+            "value": "防御1-80アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_MDF_1-80_U_PA",
+            "value": "精神1-80アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_SPD_1-999_U_PA",
+            "value": "素早さ1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_DEX_1-999_U_PA",
+            "value": "器用さ1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_LUK_1-999_U_PA",
+            "value": "運1-999アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_HATE_1-100_U_PA",
+            "value": "ヘイト1-100アップ(パッシブ）"
+        },
+        {
+            "key": "SK_BTL_SATK_1-100_U",
+            "value": "単体攻撃耐性1-100アップ"
+        },
+        {
+            "key": "SK_BTL_SATK_1-100_D",
+            "value": "▼単体攻撃耐性1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_RATK_1-100_U",
+            "value": "範囲攻撃耐性1-100アップ"
+        },
+        {
+            "key": "SK_BTL_RATK_1-100_D",
+            "value": "▼範囲攻撃耐性1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_KILLER_MAN_1-100_U",
+            "value": "人キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_FIRE_1-100_U",
+            "value": "火属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_WATER_1-100_U",
+            "value": "水属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_WIND_1-100_U",
+            "value": "風属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_THUNDER_1-100_U",
+            "value": "雷属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_ICE_1-100_U",
+            "value": "氷属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_SOIL_1-100_U",
+            "value": "土属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_DARK_1-100_U",
+            "value": "闇属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_KILLER_SHINE_1-100_U",
+            "value": "光属性キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_CHARM_1-100_U",
+            "value": "状態異常【魅了】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_POIS_1-100_U",
+            "value": "状態異常【毒】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_TOAD_1-100_U",
+            "value": "状態異常【トード】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STONE_1-100_U",
+            "value": "状態異常【石化】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_DONMV_1-100_D",
+            "value": "状態異常【ドンムブ】確率1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_DEFPIERCE_1-100_U",
+            "value": "防御貫通率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_JOB_THI_1_15_U",
+            "value": "ジョブレベル【シーフ】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_HUN_1_15_U",
+            "value": "ジョブレベル【狩人】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_GUN_1_15_U",
+            "value": "ジョブレベル【ガンナー】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_WAR_1_15_U",
+            "value": "ジョブレベル【戦士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_PLD_1_15_U",
+            "value": "ジョブレベル【パラディン】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_KNT_1_15_U",
+            "value": "ジョブレベル【ナイト】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_SWN_1_15_U",
+            "value": "ジョブレベル【ソードナイト】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_MNK_1_15_U",
+            "value": "ジョブレベル【モンク】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_LAN_1_15_U",
+            "value": "ジョブレベル【槍術士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_SAM_1_15_U",
+            "value": "ジョブレベル【侍】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_DRG_1_15_U",
+            "value": "ジョブレベル【竜騎士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_NIN_1_15_U",
+            "value": "ジョブレベル【忍者】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_CLR_1_15_U",
+            "value": "ジョブレベル【クレリック】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_BLM_1_15_U",
+            "value": "ジョブレベル【黒魔道士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_WHM_1_15_U",
+            "value": "ジョブレベル【白魔道士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_TIM_1_15_U",
+            "value": "ジョブレベル【時魔道士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_GRM_1_15_U",
+            "value": "ジョブレベル【緑魔道士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_RDM_1_15_U",
+            "value": "ジョブレベル【赤魔道士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_MGK_1_15_U",
+            "value": "ジョブレベル【魔法剣士】1-15"
+        },
+        {
+            "key": "SK_BTL_JOB_VIK_1_15_U",
+            "value": "ジョブレベル【バイキング】1-15"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST",
+            "value": "ギミック仮攻撃"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_FIRE",
+            "value": "ギミック仮攻撃(炎)"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_ARROW",
+            "value": "ギミック仮攻撃(弓)"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_KATA_1",
+            "value": "ギミック仮攻撃(カタパルト単体)"
+        },
+        {
+            "key": "SK_GMK_ATK_TEST_KATA_2",
+            "value": "ギミック仮攻撃(カタパルト範囲)"
+        },
+        {
+            "key": "SK_LW_WAR_P_2",
+            "value": "HPアップ"
+        },
+        {
+            "key": "SK_LW_PLD_P_2",
+            "value": "打撃耐性アップ"
+        },
+        {
+            "key": "SK_LW_SWN_P_2",
+            "value": "HPアップ"
+        },
+        {
+            "key": "SK_LW_SAM_P_2",
+            "value": "斬撃耐性アップ"
+        },
+        {
+            "key": "SK_LW_HUN_P_3",
+            "value": "命中率アップ"
+        },
+        {
+            "key": "SK_LW_WHM_P_2",
+            "value": "Faithアップ"
+        },
+        {
+            "key": "SK_ACC_LW_MONT_ARENA",
+            "value": "掛け声"
+        },
+        {
+            "key": "SK_ACC_LW_ZIZA_ARENA",
+            "value": "活性孔"
+        },
+        {
+            "key": "SK_ARW_LW_KTON_ARENA",
+            "value": "早駆の術"
+        },
+        {
+            "key": "SK_ARM_LW_LUCA_ARENA",
+            "value": "リミッターオフ"
+        }
+    ]
+}

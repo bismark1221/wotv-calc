@@ -4,8 +4,10 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { TranslateService } from '@ngx-translate/core';
 
 import { SkillService } from './skill.service'
+import { NavService } from './nav.service'
 import { Card } from '../entities/card';
-import { default as CARDS } from '../data/cards.json';
+import { default as GL_CARDS } from '../data/gl/cards.json';
+import { default as JP_CARDS } from '../data/jp/cards.json';
 
 @Injectable()
 export class CardService {
@@ -64,7 +66,8 @@ export class CardService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    private navService: NavService
   ) {}
 
   private i(s: any) {
@@ -112,12 +115,21 @@ export class CardService {
     return cards;
   }
 
+  private getRaw() {
+    if (this.navService.getVersion() == "GL") {
+      return GL_CARDS
+    } else {
+      return JP_CARDS
+    }
+  }
+
   getCards(): Card[] {
     let cards: Card[] = [];
+    let rawCards = JSON.parse(JSON.stringify(this.getRaw()))
 
-    Object.keys(JSON.parse(JSON.stringify(CARDS))).forEach(cardId => {
+    Object.keys(rawCards).forEach(cardId => {
       let card = new Card();
-      card.constructFromJson(CARDS[cardId], this.translateService);
+      card.constructFromJson(rawCards[cardId], this.translateService);
       cards.push(card);
     });
 
@@ -133,10 +145,11 @@ export class CardService {
       MR: [],
       UR: []
     };
+    let rawCards = JSON.parse(JSON.stringify(this.getRaw()))
 
-    Object.keys(JSON.parse(JSON.stringify(CARDS))).forEach(cardId => {
+    Object.keys(rawCards).forEach(cardId => {
       let card = new Card();
-      card.constructFromJson(CARDS[cardId], this.translateService);
+      card.constructFromJson(rawCards[cardId], this.translateService);
       cards[card.rarity].push(card);
     });
 

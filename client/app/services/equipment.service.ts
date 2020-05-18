@@ -3,8 +3,10 @@ import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Equipment } from '../entities/equipment';
-import { default as EQUIPMENTS } from '../data/equipments.json';
+import { default as GL_EQUIPMENTS } from '../data/gl/equipments.json';
+import { default as JP_EQUIPMENTS } from '../data/jp/equipments.json';
 import { SkillService } from './skill.service'
+import { NavService } from './nav.service'
 
 @Injectable()
 export class EquipmentService {
@@ -69,7 +71,8 @@ export class EquipmentService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    private navService: NavService
   ) {}
 
   private i(s: any) {
@@ -119,12 +122,21 @@ export class EquipmentService {
     return equipments;
   }
 
+  private getRaw() {
+    if (this.navService.getVersion() == "GL") {
+      return GL_EQUIPMENTS
+    } else {
+      return JP_EQUIPMENTS
+    }
+  }
+
   getEquipments(): Equipment[] {
     let equipments: Equipment[] = [];
+    let rawEquipments = JSON.parse(JSON.stringify(this.getRaw()))
 
-    Object.keys(JSON.parse(JSON.stringify(EQUIPMENTS))).forEach(equipmentId => {
+    Object.keys(rawEquipments).forEach(equipmentId => {
       let equipment = new Equipment();
-      equipment.constructFromJson(EQUIPMENTS[equipmentId], this.translateService);
+      equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
       equipments.push(equipment);
     });
 
@@ -140,10 +152,11 @@ export class EquipmentService {
       MR: [],
       UR: []
     };
+    let rawEquipments = JSON.parse(JSON.stringify(this.getRaw()))
 
-    Object.keys(JSON.parse(JSON.stringify(EQUIPMENTS))).forEach(equipmentId => {
+    Object.keys(rawEquipments).forEach(equipmentId => {
       let equipment = new Equipment();
-      equipment.constructFromJson(EQUIPMENTS[equipmentId], this.translateService);
+      equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
       equipments[equipment.rarity].push(equipment);
     });
 

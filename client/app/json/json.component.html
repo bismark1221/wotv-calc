@@ -1,86 +1,72 @@
-### Raw Units ###
-<div>
-  <textarea id="rawJson">{{ units | json }}</textarea>
-</div>
-
-<br />
-
-
-### Raw Vision Cards ###
-<div>
-  <textarea id="rawJson">{{ visionCards | json }}</textarea>
-</div>
-
-<br />
-
-
-### Raw Espers ###
-<div>
-  <textarea id="rawJson">{{ espers | json }}</textarea>
-</div>
-
-<br />
-
-
-### Raw Equipments ###
-<div>
-  <textarea id="rawJson">{{ equipments | json }}</textarea>
-</div>
-
-<br />
-
-
-### Raw Jobs ###
-<div>
-  <textarea id="rawJson">{{ jobs | json }}</textarea>
-</div>
-
-<br />
-
-
-<!-- ### Units ###
-<div *ngFor="let unitId of unitIds; let j = index">
-  {{j}} -- {{units[unitId].names.en}}
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.units[j] = !isCollapsed.units[j]" [attr.aria-expanded]="!isCollapsed.units[j]">
-    Toggle
-  </button>
-  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.units[j]">
-    <pre [innerHtml]="units[unitId] | prettyjson"></pre>
-  </div>
-</div>
-
-
-### Vision Cards ###
-<div *ngFor="let visionCardId of visionCardIds; let j = index">
-  {{j}} -- {{visionCards[visionCardId].names.en}}
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.visionCards[j] = !isCollapsed.visionCards[j]" [attr.aria-expanded]="!isCollapsed.visionCards[j]">
-    Toggle
-  </button>
-  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.visionCards[j]">
-    <pre [innerHtml]="visionCards[visionCardId] | prettyjson"></pre>
-  </div>
-</div>
-
-
-### Espers ###
-<div *ngFor="let esperId of esperIds; let j = index">
-  {{j}} -- {{espers[esperId].names.en}}
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.espers[j] = !isCollapsed.espers[j]" [attr.aria-expanded]="!isCollapsed.espers[j]">
-    Toggle
-  </button>
-  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.espers[j]">
-    <pre [innerHtml]="espers[esperId] | prettyjson"></pre>
-  </div>
-</div>
-
-
-### Equipments ###
-<div *ngFor="let equipmentId of equipmentIds; let j = index">
-  {{j}} -- {{equipments[equipmentId].names.en}}
-  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed.equipments[j] = !isCollapsed.equipments[j]" [attr.aria-expanded]="!isCollapsed.equipments[j]">
-    Toggle
-  </button>
-  <div id="dataJson_{{j}}" [ngbCollapse]="isCollapsed.equipments[j]">
-    <pre [innerHtml]="equipments[equipmentId] | prettyjson"></pre>
-  </div>
-</div> -->
+<table>
+  <tr>
+    <td>
+      ### GL Units ###
+      <div>
+        <textarea id="rawJson">{{ GLunits | json }}</textarea>
+      </div>
+    </td>
+    <td>
+      ### JP Units ###
+      <div>
+        <textarea id="rawJson">{{ JPunits | json }}</textarea>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ### GL Vision Cards ###
+      <div>
+        <textarea id="rawJson">{{ GLvisionCards | json }}</textarea>
+      </div>
+    </td>
+    <td>
+      ### JP Vision Cards ###
+      <div>
+        <textarea id="rawJson">{{ JPvisionCards | json }}</textarea>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ### GL Espers ###
+      <div>
+        <textarea id="rawJson">{{ GLespers | json }}</textarea>
+      </div>
+    </td>
+    <td>
+      ### JP Espers ###
+      <div>
+        <textarea id="rawJson">{{ JPespers | json }}</textarea>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ### GL Equipments ###
+      <div>
+        <textarea id="rawJson">{{ GLequipments | json }}</textarea>
+      </div>
+    </td>
+    <td>
+      ### JP Equipments ###
+      <div>
+        <textarea id="rawJson">{{ JPequipments | json }}</textarea>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ### GL Jobs ###
+      <div>
+        <textarea id="rawJson">{{ GLjobs | json }}</textarea>
+      </div>
+    </td>
+    <td>
+      ### JP Jobs ###
+      <div>
+        <textarea id="rawJson">{{ JPjobs | json }}</textarea>
+      </div>
+    </td>
+  </tr>
+</table>

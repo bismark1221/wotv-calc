@@ -2,8 +2,7 @@
   "VC_LW_GLEM": {
     "dataId": "VC_LW_GLEM",
     "names": {
-      "en": "Rock Cliff Titan, Golem",
-      "fr": "Golem, le Géant rocheux"
+      "en": "Rock Cliff Titan, Golem - 岩壁の巨人　ゴーレム"
     },
     "rarity": "UR",
     "stats": {
@@ -36,9 +35,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GLEM_GS"
       },
+      "slug": "sk_vc_lw_glem_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -55,9 +54,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GLEM_GSAW"
       },
+      "slug": "sk_vc_lw_glem_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -74,74 +73,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GLEM_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "EARTH_RES",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_GLEM_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "EARTH_RES",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_GLEM_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "EARTH_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_GLEM_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_glem_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_IFRT": {
     "dataId": "VC_LW_IFRT",
     "names": {
-      "en": "Howl of Ferocious Blaze, Ifrit",
-      "fr": "Ifrit, le Torrent de flammes"
+      "en": "Howl of Ferocious Blaze, Ifrit - 猛き炎の叫び　イフリート"
     },
     "rarity": "UR",
     "stats": {
@@ -174,9 +115,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_IFRT_GS"
       },
+      "slug": "sk_vc_lw_ifrt_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -193,9 +134,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_IFRT_GSAW"
       },
+      "slug": "sk_vc_lw_ifrt_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -212,74 +153,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_IFRT_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "FIRE_ATK",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_IFRT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "FIRE_ATK",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_IFRT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "FIRE_ATK",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_IFRT_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_ifrt_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_SIRE": {
     "dataId": "VC_LW_SIRE",
     "names": {
-      "en": "Aquatic Songstress, Siren",
-      "fr": "Sirène, la Muse des océans"
+      "en": "Aquatic Songstress, Siren - 水界に響く魔音 セイレーン"
     },
     "rarity": "UR",
     "stats": {
@@ -312,9 +195,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_SIRE_GS"
       },
+      "slug": "sk_vc_lw_sire_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -331,9 +214,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_SIRE_GSAW"
       },
+      "slug": "sk_vc_lw_sire_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -350,74 +233,96 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_SIRE_GSMAX"
       },
+      "slug": "sk_vc_lw_sire_gsmax",
       "maxLevel": 1
+    }
+  },
+  "VC_LW_RAMU": {
+    "dataId": "VC_LW_RAMU",
+    "names": {
+      "en": "Roaring Thunderclap, Ramuh - 空に轟く雷鳴　ラムウ"
     },
-    "unitBuffsClassic": {
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 264
+      },
+      "ATK": {
+        "min": 21,
+        "max": 80
+      },
+      "MAG": {
+        "min": 34,
+        "max": 133
+      }
+    },
+    "image": "lapsramu",
+    "slug": "roaring-thunderclap-ramuh",
+    "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_RES",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "resistance"
+          "type": "MAG",
+          "minValue": 15,
+          "maxValue": 30,
+          "calcType": "percent"
         }
       ],
-      "dataId": "SK_VC_LW_SIRE_P",
-      "type": "support",
+      "dataId": "SK_VC_LW_RAMU_GS",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_RAMU_GS"
       },
+      "slug": "sk_vc_lw_ramu_gs",
       "maxLevel": 99
     },
-    "unitBuffsAwake": {
+    "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_RES",
+          "type": "MAG",
           "minValue": 1,
-          "maxValue": 3,
-          "calcType": "resistance"
+          "maxValue": 10,
+          "calcType": "percent"
         }
       ],
-      "dataId": "SK_VC_LW_SIRE_PAW",
-      "type": "support",
+      "dataId": "SK_VC_LW_RAMU_GSAW",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_RAMU_GSAW"
       },
+      "slug": "sk_vc_lw_ramu_gsaw",
       "maxLevel": 4
     },
-    "unitBuffsMax": {
+    "partyBuffsMax": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "WATER_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
+          "type": "MAG",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
         }
       ],
-      "dataId": "SK_VC_LW_SIRE_PMAX",
-      "type": "support",
+      "dataId": "SK_VC_LW_RAMU_GSMAX",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_RAMU_GSMAX"
       },
+      "slug": "sk_vc_lw_ramu_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_SOKYU": {
     "dataId": "VC_LW_SOKYU",
     "names": {
-      "en": "Second Division of the Kingdom of Leonis, «Caelum»",
-      "fr": "« Caelum », la seconde division du royaume de Leonis"
+      "en": "Second Division of the Kingdom of Leonis, «Caelum» - リオニス王国第二部隊　蒼穹"
     },
     "rarity": "UR",
     "stats": {
@@ -450,9 +355,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_SOKYU_GS"
       },
+      "slug": "sk_vc_lw_sokyu_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -469,9 +374,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_SOKYU_GSAW"
       },
+      "slug": "sk_vc_lw_sokyu_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -488,74 +393,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_SOKYU_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SOKYU_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SOKYU_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SOKYU_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_sokyu_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_TRAINING": {
     "dataId": "VC_LW_TRAINING",
     "names": {
-      "en": "Becoming Stronger Than Anyone Else",
-      "fr": "Et l'élève surpassa le maître"
+      "en": "Becoming Stronger Than Anyone Else - 誰よりも強くなるために"
     },
     "rarity": "UR",
     "stats": {
@@ -588,9 +435,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_TRAINING_GS"
       },
+      "slug": "sk_vc_lw_training_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -607,9 +454,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_TRAINING_GSAW"
       },
+      "slug": "sk_vc_lw_training_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -626,74 +473,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_TRAINING_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CRITIC_DAMAGE",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_TRAINING_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CRITIC_DAMAGE",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_TRAINING_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CRITIC_DAMAGE",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_TRAINING_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_training_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_MACR": {
     "dataId": "VC_LW_MACR",
     "names": {
-      "en": "Trousseau​",
-      "fr": "Précieuse dot​"
+      "en": "Trousseau​ - 嫁入り道具"
     },
     "rarity": "UR",
     "stats": {
@@ -726,9 +515,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MACR_GS"
       },
+      "slug": "sk_vc_lw_macr_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -745,9 +534,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MACR_GSAW"
       },
+      "slug": "sk_vc_lw_macr_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -764,74 +553,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MACR_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_RES",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MACR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_RES",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MACR_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MACR_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_macr_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_MURG": {
     "dataId": "VC_LW_MURG",
     "names": {
-      "en": "Echoing Screams",
-      "fr": "Hurlement résonnant"
+      "en": "Echoing Screams - 鳴り響く悲鳴"
     },
     "rarity": "UR",
     "stats": {
@@ -864,9 +595,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MURG_GS"
       },
+      "slug": "sk_vc_lw_murg_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -883,9 +614,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MURG_GSAW"
       },
+      "slug": "sk_vc_lw_murg_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -902,74 +633,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MURG_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK_DEBUFF_RES",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MURG_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK_DEBUFF_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MURG_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK_DEBUFF_RES",
-          "minValue": 5,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MURG_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_murg_gsmax",
       "maxLevel": 1
     }
   },
   "VC_LW_GRSR": {
     "dataId": "VC_LW_GRSR",
     "names": {
-      "en": "Dashing Over a Snowy Field",
-      "fr": "À cheval sous la neige"
+      "en": "Dashing Over a Snowy Field - 雪原を駆ける"
     },
     "rarity": "UR",
     "stats": {
@@ -1002,9 +675,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GRSR_GS"
       },
+      "slug": "sk_vc_lw_grsr_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -1021,9 +694,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GRSR_GSAW"
       },
+      "slug": "sk_vc_lw_grsr_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -1040,74 +713,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GRSR_GSMAX"
       },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 1,
-          "maxValue": 2,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_GRSR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 1,
-          "maxValue": 2,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_GRSR_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 1,
-          "maxValue": 1,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_GRSR_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_grsr_gsmax",
       "maxLevel": 1
     }
   },
   "VC_FF14_MV1": {
     "dataId": "VC_FF14_MV1",
     "names": {
-      "en": "Scions of Shadow",
-      "fr": "Porteurs d'ombre"
+      "en": "Scions of Shadow - 漆黒の群像"
     },
     "rarity": "UR",
     "stats": {
@@ -1140,9 +755,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_FF14_MV1_GS"
       },
+      "slug": "sk_vc_ff14_mv1_gs",
       "maxLevel": 99
     },
     "partyBuffsAwake": {
@@ -1159,9 +774,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_FF14_MV1_GSAW"
       },
+      "slug": "sk_vc_ff14_mv1_gsaw",
       "maxLevel": 4
     },
     "partyBuffsMax": {
@@ -1178,73 +793,1726 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_FF14_MV1_GSMAX"
       },
+      "slug": "sk_vc_ff14_mv1_gsmax",
       "maxLevel": 1
+    }
+  },
+  "VC_LW_SHIV": {
+    "dataId": "VC_LW_SHIV",
+    "names": {
+      "en": "Freezer of All, Shiva - 全てを凍らせし者　シヴァ"
     },
-    "unitBuffsClassic": {
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 330
+      },
+      "ATK": {
+        "min": 5,
+        "max": 18
+      },
+      "MAG": {
+        "min": 43,
+        "max": 170
+      }
+    },
+    "image": "lapsshiv",
+    "slug": "freezer-of-all-shiva",
+    "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_RES",
+          "type": "EVADE",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_SHIV_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_SHIV_GS"
+      },
+      "slug": "sk_vc_lw_shiv_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EVADE",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_SHIV_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_SHIV_GSAW"
+      },
+      "slug": "sk_vc_lw_shiv_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EVADE",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_SHIV_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_SHIV_GSMAX"
+      },
+      "slug": "sk_vc_lw_shiv_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_HOLYNIGHT": {
+    "dataId": "VC_LW_HOLYNIGHT",
+    "names": {
+      "en": "Frederika's Dream - 聖夜の二人"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 287
+      },
+      "ATK": {
+        "min": 41,
+        "max": 162
+      },
+      "MAG": {
+        "min": 10,
+        "max": 39
+      }
+    },
+    "image": "lapsholy",
+    "slug": "frederikas-dream",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 15,
+          "maxValue": 25,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_HOLYNIGHT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_HOLYNIGHT_GS"
+      },
+      "slug": "sk_vc_lw_holynight_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_HOLYNIGHT_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_HOLYNIGHT_GSAW"
+      },
+      "slug": "sk_vc_lw_holynight_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_HOLYNIGHT_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_HOLYNIGHT_GSMAX"
+      },
+      "slug": "sk_vc_lw_holynight_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_FFT_MV1": {
+    "dataId": "VC_FFT_MV1",
+    "names": {
+      "en": "Scion of House Beoulve - ベオルブの名を継ぐ者"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 21,
+        "max": 162
+      },
+      "ATK": {
+        "min": 37,
+        "max": 144
+      },
+      "MAG": {
+        "min": 23,
+        "max": 90
+      }
+    },
+    "image": "fftmv1",
+    "slug": "scion-of-house-beoulve",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
           "minValue": 2,
+          "maxValue": 8,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV1_GS"
+      },
+      "slug": "sk_vc_fft_mv1_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV1_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV1_GSAW"
+      },
+      "slug": "sk_vc_fft_mv1_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV1_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV1_GSMAX"
+      },
+      "slug": "sk_vc_fft_mv1_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_ODIN": {
+    "dataId": "VC_LW_ODIN",
+    "names": {
+      "en": "Realm Reaver, Odin - 次元切断　オーディン"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 46,
+        "max": 362
+      },
+      "ATK": {
+        "min": 36,
+        "max": 142
+      },
+      "MAG": {
+        "min": 10,
+        "max": 38
+      }
+    },
+    "image": "lapsodin",
+    "slug": "realm-reaver-odin",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATTACK_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ODIN_GS"
+      },
+      "slug": "sk_vc_lw_odin_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATTACK_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ODIN_GSAW"
+      },
+      "slug": "sk_vc_lw_odin_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATTACK_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ODIN_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ODIN_GSMAX"
+      },
+      "slug": "sk_vc_lw_odin_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_TSLP": {
+    "dataId": "VC_LW_TSLP",
+    "names": {
+      "en": "四天烈風　テトラシルフィード"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 302
+      },
+      "ATK": {
+        "min": 41,
+        "max": 162
+      },
+      "MAG": {
+        "min": 10,
+        "max": 37
+      }
+    },
+    "image": "lapstslp",
+    "slug": "si-tian-lie-feng-tetorasiruhuido",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "WIND_ATK",
+          "minValue": 15,
+          "maxValue": 25,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_TSLP_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TSLP_GS"
+      },
+      "slug": "sk_vc_lw_tslp_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "WIND_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_TSLP_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TSLP_GSAW"
+      },
+      "slug": "sk_vc_lw_tslp_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "WIND_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_TSLP_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TSLP_GSMAX"
+      },
+      "slug": "sk_vc_lw_tslp_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_VALE1": {
+    "dataId": "VC_LW_VALE1",
+    "names": {
+      "en": "伝えられない気持ち"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 292
+      },
+      "ATK": {
+        "min": 43,
+        "max": 168
+      },
+      "MAG": {
+        "min": 9,
+        "max": 32
+      }
+    },
+    "image": "lapsvale1",
+    "slug": "chuanerarenai-qi-chiti",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 15,
+          "maxValue": 25,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_GS"
+      },
+      "slug": "sk_vc_lw_vale1_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_GSAW"
+      },
+      "slug": "sk_vc_lw_vale1_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_GSMAX"
+      },
+      "slug": "sk_vc_lw_vale1_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_THDG": {
+    "dataId": "VC_LW_THDG",
+    "names": {
+      "en": "猛攻双竜　２ヘッドドラゴン"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 38,
+        "max": 300
+      },
+      "ATK": {
+        "min": 46,
+        "max": 180
+      },
+      "MAG": {
+        "min": 5,
+        "max": 18
+      }
+    },
+    "image": "lapsthdg",
+    "slug": "meng-gong-shuang-long-2hetudodoragon",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 750,
+          "maxValue": 1500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_GS"
+      },
+      "slug": "sk_vc_lw_thdg_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 100,
+          "maxValue": 500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_GS_AW"
+      },
+      "slug": "sk_vc_lw_thdg_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 500,
+          "maxValue": 500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_GSMAX"
+      },
+      "slug": "sk_vc_lw_thdg_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_MBFF_MV1": {
+    "dataId": "VC_MBFF_MV1",
+    "names": {
+      "en": "絶望と真実のメビウス"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 320
+      },
+      "ATK": {
+        "min": 4,
+        "max": 12
+      },
+      "MAG": {
+        "min": 44,
+        "max": 172
+      }
+    },
+    "image": "mbffmv1",
+    "slug": "jue-wangto-zhen-shinomebiusu",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_GS"
+      },
+      "slug": "sk_vc_mbff_mv1_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_GSAW"
+      },
+      "slug": "sk_vc_mbff_mv1_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_GSMAX"
+      },
+      "slug": "sk_vc_mbff_mv1_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_FF01_DMAC": {
+    "dataId": "VC_FF01_DMAC",
+    "names": {
+      "en": "デスマシーン"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 51,
+        "max": 400
+      },
+      "ATK": {
+        "min": 31,
+        "max": 119
+      },
+      "MAG": {
+        "min": 11,
+        "max": 43
+      }
+    },
+    "image": "ff01dmac",
+    "slug": "desumasin",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FF01_DMAC_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF01_DMAC_GS"
+      },
+      "slug": "sk_vc_ff01_dmac_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FF01_DMAC_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF01_DMAC_GSAW"
+      },
+      "slug": "sk_vc_ff01_dmac_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FF01_DMAC_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF01_DMAC_GSMAX"
+      },
+      "slug": "sk_vc_ff01_dmac_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_FFT_MV3": {
+    "dataId": "VC_FFT_MV3",
+    "names": {
+      "en": "草笛"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 331
+      },
+      "ATK": {
+        "min": 39,
+        "max": 154
+      },
+      "MAG": {
+        "min": 10,
+        "max": 36
+      }
+    },
+    "image": "fftmv3",
+    "slug": "cao-di",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACCURACY",
+          "minValue": 7,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV3_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV3_GS"
+      },
+      "slug": "sk_vc_fft_mv3_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACCURACY",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV3_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV3_GSAW"
+      },
+      "slug": "sk_vc_fft_mv3_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACCURACY",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV3_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV3_GSMAX"
+      },
+      "slug": "sk_vc_fft_mv3_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_CBVPARTY1": {
+    "dataId": "VC_LW_CBVPARTY1",
+    "names": {
+      "en": "徒桜の宴"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 18,
+        "max": 142
+      },
+      "ATK": {
+        "min": 40,
+        "max": 156
+      },
+      "MAG": {
+        "min": 27,
+        "max": 104
+      }
+    },
+    "image": "lapscbvp1",
+    "slug": "tu-yingno-yan",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 10,
+          "maxValue": 30,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_CBVPARTY1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CBVPARTY1_GS"
+      },
+      "slug": "sk_vc_lw_cbvparty1_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 2,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_CBVPARTY1_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CBVPARTY1_GS_AW"
+      },
+      "slug": "sk_vc_lw_cbvparty1_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_CBVPARTY1_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CBVPARTY1_GSMAX"
+      },
+      "slug": "sk_vc_lw_cbvparty1_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_DABL": {
+    "dataId": "VC_LW_DABL",
+    "names": {
+      "en": "夢幻魔人　ディアボロス"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 32,
+        "max": 252
+      },
+      "ATK": {
+        "min": 42,
+        "max": 164
+      },
+      "MAG": {
+        "min": 14,
+        "max": 52
+      }
+    },
+    "image": "lapsdabl",
+    "slug": "meng-huan-mo-ren-deiaborosu",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 15,
+          "maxValue": 25,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_GS"
+      },
+      "slug": "sk_vc_lw_dabl_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_GS_AW"
+      },
+      "slug": "sk_vc_lw_dabl_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_GSMAX"
+      },
+      "slug": "sk_vc_lw_dabl_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_ROBUST": {
+    "dataId": "VC_LW_ROBUST",
+    "names": {
+      "en": "ホルン王国第一部隊《堅牢》"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 292
+      },
+      "ATK": {
+        "min": 6,
+        "max": 22
+      },
+      "MAG": {
+        "min": 45,
+        "max": 178
+      }
+    },
+    "image": "lapsrobust",
+    "slug": "horun-wang-guo-di-yi-bu-dui-jian-lao",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_ROBUST_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ROBUST_GS"
+      },
+      "slug": "sk_vc_lw_robust_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_ROBUST_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ROBUST_GS_AW"
+      },
+      "slug": "sk_vc_lw_robust_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_ROBUST_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ROBUST_GSMAX"
+      },
+      "slug": "sk_vc_lw_robust_gsmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_IGNT": {
+    "dataId": "VC_LW_IGNT",
+    "names": {
+      "en": "Metal Daemon, Iron Giant - 鋼の魔人　鉄巨人"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 48,
+        "max": 384
+      },
+      "ATK": {
+        "min": 20,
+        "max": 80
+      },
+      "MAG": {
+        "min": 6,
+        "max": 25
+      }
+    },
+    "image": "lapsignt",
+    "slug": "metal-daemon-iron-giant",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_IGNT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_IGNT_GS"
+      },
+      "slug": "sk_vc_lw_ignt_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 1,
           "maxValue": 5,
           "calcType": "resistance"
         }
       ],
-      "dataId": "SK_VC_FF14_MV1_P",
-      "type": "support",
+      "dataId": "SK_VC_LW_IGNT_GSAW",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_IGNT_GSAW"
       },
-      "maxLevel": 99
+      "slug": "sk_vc_lw_ignt_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_BHMT": {
+    "dataId": "VC_LW_BHMT",
+    "names": {
+      "en": "Malevolent Legendary Beast, Behemoth - 荒ぶる魔獣　ベヒーモス"
     },
-    "unitBuffsAwake": {
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 338
+      },
+      "ATK": {
+        "min": 33,
+        "max": 133
+      },
+      "MAG": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    "image": "lapsbhmt",
+    "slug": "malevolent-legendary-beast-behemoth",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_BHMT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BHMT_GS"
+      },
+      "slug": "sk_vc_lw_bhmt_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_BHMT_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BHMT_GSAW"
+      },
+      "slug": "sk_vc_lw_bhmt_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_MABR": {
+    "dataId": "VC_LW_MABR",
+    "names": {
+      "en": "Defiling Curse, Malboro - 穢れの呪い　モルボル"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 330
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 27,
+        "max": 109
+      }
+    },
+    "image": "lapsmabr",
+    "slug": "defiling-curse-malboro",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_MABR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MABR_GS"
+      },
+      "slug": "sk_vc_lw_mabr_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_MABR_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MABR_GSAW"
+      },
+      "slug": "sk_vc_lw_mabr_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_FAMILY": {
+    "dataId": "VC_LW_FAMILY",
+    "names": {
+      "en": "Birth of New Life - 新しき生命の誕生"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 58,
+        "max": 461
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 7,
+        "max": 29
+      }
+    },
+    "image": "lapsfami",
+    "slug": "birth-of-new-life",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 7,
+          "maxValue": 15,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_FAMILY_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FAMILY_GS"
+      },
+      "slug": "sk_vc_lw_family_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 1,
+          "maxValue": 6,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_FAMILY_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FAMILY_GSAW"
+      },
+      "slug": "sk_vc_lw_family_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_KTON": {
+    "dataId": "VC_LW_KTON",
+    "names": {
+      "en": "Secret Orders - 密命"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 230
+      },
+      "ATK": {
+        "min": 26,
+        "max": 105
+      },
+      "MAG": {
+        "min": 22,
+        "max": 91
+      }
+    },
+    "image": "lapskton",
+    "slug": "secret-orders",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_KTON_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_KTON_GS"
+      },
+      "slug": "sk_vc_lw_kton_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_KTON_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_KTON_GSAW"
+      },
+      "slug": "sk_vc_lw_kton_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_PROPOSE": {
+    "dataId": "VC_LW_PROPOSE",
+    "names": {
+      "en": "Vow of Love - 愛の誓い"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 43,
+        "max": 346
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 17,
+        "max": 69
+      }
+    },
+    "image": "lapsprop",
+    "slug": "vow-of-love",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_PROPOSE_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_PROPOSE_GS"
+      },
+      "slug": "sk_vc_lw_propose_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 1,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_PROPOSE_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_PROPOSE_GSAW"
+      },
+      "slug": "sk_vc_lw_propose_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_SDLX": {
+    "dataId": "VC_LW_SDLX",
+    "names": {
+      "en": "Cleansing the Mind - 心の洗濯"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 48,
+        "max": 384
+      },
+      "ATK": {
+        "min": 12,
+        "max": 48
+      },
+      "MAG": {
+        "min": 10,
+        "max": 43
+      }
+    },
+    "image": "lapssdlx",
+    "slug": "cleansing-the-mind",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_SDLX_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_SDLX_GS"
+      },
+      "slug": "sk_vc_lw_sdlx_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_SDLX_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_SDLX_GSAW"
+      },
+      "slug": "sk_vc_lw_sdlx_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_TEAPARTY": {
+    "dataId": "VC_LW_TEAPARTY",
+    "names": {
+      "en": "Fleeting Tranquility - ひとときの安らぎ"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 253
+      },
+      "ATK": {
+        "min": 28,
+        "max": 113
+      },
+      "MAG": {
+        "min": 18,
+        "max": 73
+      }
+    },
+    "image": "lapsteap",
+    "slug": "fleeting-tranquility",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_TEAPARTY_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TEAPARTY_GS"
+      },
+      "slug": "sk_vc_lw_teaparty_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_TEAPARTY_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TEAPARTY_GSAW"
+      },
+      "slug": "sk_vc_lw_teaparty_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_HUNT": {
+    "dataId": "VC_LW_HUNT",
+    "names": {
+      "en": "Sharpened Concentration - 研ぎ澄まされた集中力"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 25,
+        "max": 200
+      },
+      "ATK": {
+        "min": 30,
+        "max": 121
+      },
+      "MAG": {
+        "min": 22,
+        "max": 91
+      }
+    },
+    "image": "lapshunt",
+    "slug": "sharpened-concentration",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_HUNT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_HUNT_GS"
+      },
+      "slug": "sk_vc_lw_hunt_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_HUNT_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_HUNT_GSAW"
+      },
+      "slug": "sk_vc_lw_hunt_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_FF14_MV2": {
+    "dataId": "VC_FF14_MV2",
+    "names": {
+      "en": "Shadowbringers - SHADOWBRINGERS"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 230
+      },
+      "ATK": {
+        "min": 30,
+        "max": 121
+      },
+      "MAG": {
+        "min": 19,
+        "max": 76
+      }
+    },
+    "image": "ff14mv2",
+    "slug": "shadowbringers",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV2_GS"
+      },
+      "slug": "sk_vc_ff14_mv2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
           "type": "DARK_RES",
           "minValue": 1,
-          "maxValue": 3,
+          "maxValue": 5,
           "calcType": "resistance"
         }
       ],
-      "dataId": "SK_VC_FF14_MV1_PAW",
-      "type": "support",
+      "dataId": "SK_VC_FF14_MV2_GSAW",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_FF14_MV2_GSAW"
       },
+      "slug": "sk_vc_ff14_mv2_gsaw",
       "maxLevel": 4
+    }
+  },
+  "VC_LW_MOGL": {
+    "dataId": "VC_LW_MOGL",
+    "names": {
+      "en": "聖夜のモーグリ"
     },
-    "unitBuffsMax": {
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 53,
+        "max": 423
+      },
+      "ATK": {
+        "min": 7,
+        "max": 28
+      },
+      "MAG": {
+        "min": 13,
+        "max": 53
+      }
+    },
+    "image": "lapsmogl",
+    "slug": "sheng-yenomoguri",
+    "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
+          "type": "DEMON_KILLER",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 200
         }
       ],
-      "dataId": "SK_VC_FF14_MV1_PMAX",
-      "type": "support",
+      "dataId": "SK_VC_LW_MOGL_GS",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MOGL_GS"
       },
-      "maxLevel": 1
+      "slug": "sk_vc_lw_mogl_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DEMON_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_MOGL_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MOGL_GSAW"
+      },
+      "slug": "sk_vc_lw_mogl_gsaw",
+      "maxLevel": 4
     }
   },
   "VC_LW_NEWYEAR": {
     "dataId": "VC_LW_NEWYEAR",
     "names": {
-      "en": "Greetings from Afar"
+      "en": "Greetings from Afar - 謹賀新年2020"
     },
     "rarity": "MR",
     "stats": {
@@ -1278,8 +2546,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": ""
+        "en": "SK_VC_LW_NEWYEAR_GS"
       },
+      "slug": "sk_vc_lw_newyear_gs",
       "maxLevel": 70
     },
     "partyBuffsAwake": {
@@ -1297,1643 +2566,685 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": ""
+        "en": "SK_VC_LW_NEWYEAR_GSAW"
       },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_NEWYEAR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_NEWYEAR_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
+      "slug": "sk_vc_lw_newyear_gsaw",
       "maxLevel": 4
     }
   },
-  "VC_LW_HOLYNIGHT": {
-    "dataId": "VC_LW_HOLYNIGHT",
+  "VC_LW_LAMA_01": {
+    "dataId": "VC_LW_LAMA_01",
     "names": {
-      "en": "Frederika's Dream",
-      "fr": "Rêve de Frederika"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 37,
-        "max": 287
-      },
-      "ATK": {
-        "min": 41,
-        "max": 162
-      },
-      "MAG": {
-        "min": 10,
-        "max": 39
-      }
-    },
-    "image": "lapsholy",
-    "slug": "frederikas-dream",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_ATK",
-          "minValue": 15,
-          "maxValue": 25,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOLYNIGHT_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOLYNIGHT_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_ATK",
-          "minValue": 5,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOLYNIGHT_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LIGHTNING_ATK",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOLYNIGHT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LIGHTNING_ATK",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOLYNIGHT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LIGHTNING_ATK",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOLYNIGHT_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    }
-  },
-  "VC_LW_IGNT": {
-    "dataId": "VC_LW_IGNT",
-    "names": {
-      "en": "Metal Daemon, Iron Giant",
-      "fr": "Géant de fer, le Dæmon de métal"
+      "en": "蠱惑大蛇　ラミアクイーン"
     },
     "rarity": "MR",
     "stats": {
       "HP": {
-        "min": 48,
-        "max": 384
+        "min": 45,
+        "max": 364
       },
       "ATK": {
-        "min": 20,
-        "max": 80
-      },
-      "MAG": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "image": "lapsignt",
-    "slug": "metal-daemon-iron-giant",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 5,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        },
-        {
-          "type": "AGI",
-          "minValue": -3,
-          "maxValue": -3,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_BHMT": {
-    "dataId": "VC_LW_BHMT",
-    "names": {
-      "en": "Malevolent Legendary Beast, Behemoth",
-      "fr": "Béhémoth, la Bête infernale mythifiée"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 42,
-        "max": 338
-      },
-      "ATK": {
-        "min": 33,
-        "max": 133
-      },
-      "MAG": {
-        "min": 3,
-        "max": 14
-      }
-    },
-    "image": "lapsbhmt",
-    "slug": "malevolent-legendary-beast-behemoth",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "PIERCE_RES",
-          "minValue": 5,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "PIERCE_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "BEAST_KILLER",
-          "minValue": 2,
-          "maxValue": 7,
-          "calcType": "percent",
-          "rate": 200
-        },
-        {
-          "type": "AGI",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "BEAST_KILLER",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_MABR": {
-    "dataId": "VC_LW_MABR",
-    "names": {
-      "en": "Defiling Curse, Malboro",
-      "fr": "Morbol, le Mal profanateur"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 41,
-        "max": 330
-      },
-      "ATK": {
-        "min": 8,
-        "max": 32
-      },
-      "MAG": {
-        "min": 27,
-        "max": 109
-      }
-    },
-    "image": "lapsmabr",
-    "slug": "defiling-curse-malboro",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "STRIKE_ATK",
-          "minValue": 10,
-          "maxValue": 15,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "STRIKE_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CONFUSION_RES",
-          "minValue": 3,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CONFUSION_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_SHIV": {
-    "dataId": "VC_LW_SHIV",
-    "names": {
-      "en": "Freezer of All, Shiva",
-      "fr": "Shiva, le Cœur de glace"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 42,
-        "max": 330
-      },
-      "ATK": {
-        "min": 5,
-        "max": 18
-      },
-      "MAG": {
-        "min": 43,
-        "max": 170
-      }
-    },
-    "image": "lapsshiv",
-    "slug": "freezer-of-all-shiva",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "EVADE",
-          "minValue": 6,
-          "maxValue": 12,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_SHIV_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "EVADE",
-          "minValue": 1,
-          "maxValue": 4,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_SHIV_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "EVADE",
-          "minValue": 4,
-          "maxValue": 4,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_SHIV_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ICE_RES",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SHIV_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ICE_RES",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SHIV_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ICE_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SHIV_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    }
-  },
-  "VC_LW_RAMU": {
-    "dataId": "VC_LW_RAMU",
-    "names": {
-      "en": "Roaring Thunderclap, Ramuh",
-      "fr": "Ramuh, le Tonnerre hurlant"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 34,
-        "max": 264
-      },
-      "ATK": {
-        "min": 21,
-        "max": 80
-      },
-      "MAG": {
-        "min": 34,
-        "max": 133
-      }
-    },
-    "image": "lapsramu",
-    "slug": "roaring-thunderclap-ramuh",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 15,
-          "maxValue": 30,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_RAMU_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 1,
-          "maxValue": 10,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_RAMU_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 10,
-          "maxValue": 10,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_RAMU_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LIGHTNING_RES",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_RAMU_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LIGHTNING_RES",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_RAMU_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LIGHTNING_RES",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_RAMU_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    }
-  },
-  "VC_FFT_MV1": {
-    "dataId": "VC_FFT_MV1",
-    "names": {
-      "en": "Scion of House Beoulve",
-      "fr": "Héritier des Béoulve"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 21,
-        "max": 162
-      },
-      "ATK": {
-        "min": 37,
-        "max": 144
-      },
-      "MAG": {
         "min": 23,
-        "max": 90
-      }
-    },
-    "image": "fftmv1",
-    "slug": "scion-of-house-beoulve",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 2,
-          "maxValue": 8,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_FFT_MV1_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 1,
-          "maxValue": 4,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_FFT_MV1_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 3,
-          "maxValue": 3,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_FFT_MV1_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_FFT_MV1_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_FFT_MV1_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_FFT_MV1_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 1
-    }
-  },
-  "VC_LW_FAMILY": {
-    "dataId": "VC_LW_FAMILY",
-    "names": {
-      "en": "Birth of New Life",
-      "fr": "Une vie s'éveille"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 58,
-        "max": 461
-      },
-      "ATK": {
-        "min": 8,
-        "max": 32
+        "max": 92
       },
       "MAG": {
-        "min": 7,
-        "max": 29
+        "min": 5,
+        "max": 20
       }
     },
-    "image": "lapsfami",
-    "slug": "birth-of-new-life",
+    "image": "lapslama_01",
+    "slug": "gu-huo-da-she-ramiakuin",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "LUCK",
-          "minValue": 7,
-          "maxValue": 15,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_FAMILY_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LUCK",
-          "minValue": 1,
-          "maxValue": 6,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_FAMILY_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HP",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_FAMILY_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HP",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_FAMILY_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_KTON": {
-    "dataId": "VC_LW_KTON",
-    "names": {
-      "en": "Secret Orders",
-      "fr": "Ordres confidentiels"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 29,
-        "max": 230
-      },
-      "ATK": {
-        "min": 26,
-        "max": 105
-      },
-      "MAG": {
-        "min": 22,
-        "max": 91
-      }
-    },
-    "image": "lapskton",
-    "slug": "secret-orders",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
+          "type": "FIRE_ATK",
           "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
         }
       ],
-      "dataId": "SK_VC_LW_KTON_GS",
+      "dataId": "SK_VC_LW_LAMA_01_GS",
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_LAMA_01_GS"
       },
+      "slug": "sk_vc_lw_lama_01_gs",
       "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "SLASH_ATK",
+          "type": "FIRE_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
         }
       ],
-      "dataId": "SK_VC_LW_KTON_GSAW",
+      "dataId": "SK_VC_LW_LAMA_01_GSAW",
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_LAMA_01_GSAW"
       },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 5,
-          "maxValue": 7,
-          "calcType": "percent"
-        },
-        {
-          "type": "SPR",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_KTON_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_KTON_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_lama_01_gsaw",
       "maxLevel": 4
     }
   },
-  "VC_LW_PROPOSE": {
-    "dataId": "VC_LW_PROPOSE",
+  "VC_LW_GUARD": {
+    "dataId": "VC_LW_GUARD",
     "names": {
-      "en": "Vow of Love",
-      "fr": "Déclaration d'amour"
+      "en": "純白の親衛隊"
     },
     "rarity": "MR",
     "stats": {
       "HP": {
-        "min": 43,
-        "max": 346
+        "min": 35,
+        "max": 284
       },
       "ATK": {
-        "min": 12,
-        "max": 48
-      },
-      "MAG": {
-        "min": 17,
-        "max": 69
-      }
-    },
-    "image": "lapsprop",
-    "slug": "vow-of-love",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK",
-          "minValue": 10,
-          "maxValue": 20,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_PROPOSE_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK",
-          "minValue": 1,
-          "maxValue": 10,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_PROPOSE_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        },
-        {
-          "type": "PROVOKE",
-          "minValue": 5,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_PROPOSE_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_PROPOSE_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_SDLX": {
-    "dataId": "VC_LW_SDLX",
-    "names": {
-      "en": "Cleansing the Mind",
-      "fr": "Apaiser son esprit"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 48,
-        "max": 384
-      },
-      "ATK": {
-        "min": 12,
-        "max": 48
-      },
-      "MAG": {
-        "min": 10,
-        "max": 43
-      }
-    },
-    "image": "lapssdlx",
-    "slug": "cleansing-the-mind",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_RES",
-          "minValue": 5,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SDLX_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_SDLX_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LUCK",
-          "minValue": 3,
-          "maxValue": 10,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_SDLX_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LUCK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_SDLX_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_TEAPARTY": {
-    "dataId": "VC_LW_TEAPARTY",
-    "names": {
-      "en": "Fleeting Tranquility",
-      "fr": "Tranquillité éphémère"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 31,
-        "max": 253
-      },
-      "ATK": {
-        "min": 28,
-        "max": 113
-      },
-      "MAG": {
-        "min": 18,
-        "max": 73
-      }
-    },
-    "image": "lapsteap",
-    "slug": "fleeting-tranquility",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HP",
-          "minValue": 5,
-          "maxValue": 10,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_TEAPARTY_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HP",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_TEAPARTY_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CHARM_RES",
-          "minValue": 3,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_TEAPARTY_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CHARM_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_TEAPARTY_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_HUNT": {
-    "dataId": "VC_LW_HUNT",
-    "names": {
-      "en": "Sharpened Concentration",
-      "fr": "Concentration optimale"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 25,
-        "max": 200
-      },
-      "ATK": {
-        "min": 30,
-        "max": 121
-      },
-      "MAG": {
-        "min": 22,
-        "max": 91
-      }
-    },
-    "image": "lapshunt",
-    "slug": "sharpened-concentration",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_ATK",
-          "minValue": 10,
-          "maxValue": 15,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HUNT_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MISSILE_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HUNT_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ACCURACY",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        },
-        {
-          "type": "SPR",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HUNT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ACCURACY",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_HUNT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 4
-    }
-  },
-  "VC_FF14_MV2": {
-    "dataId": "VC_FF14_MV2",
-    "names": {
-      "en": "Shadowbringers",
-      "fr": "Shadowbringers"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 29,
-        "max": 230
-      },
-      "ATK": {
-        "min": 30,
-        "max": 121
+        "min": 19,
+        "max": 76
       },
       "MAG": {
         "min": 19,
         "max": 76
       }
     },
-    "image": "ff14mv2",
-    "slug": "shadowbringers",
+    "image": "lapsguard",
+    "slug": "chun-baino-qin-wei-dui",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_RES",
+          "type": "CRITIC_DAMAGE",
           "minValue": 5,
-          "maxValue": 10,
-          "calcType": "resistance"
+          "maxValue": 12,
+          "calcType": "fixe"
         }
       ],
-      "dataId": "SK_VC_FF14_MV2_GS",
+      "dataId": "SK_VC_LW_GUARD_GS",
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GUARD_GS"
       },
+      "slug": "sk_vc_lw_guard_gs",
       "maxLevel": 70
     },
     "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_RES",
+          "type": "CRITIC_DAMAGE",
           "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
+          "maxValue": 6,
+          "calcType": "fixe"
         }
       ],
-      "dataId": "SK_VC_FF14_MV2_GSAW",
+      "dataId": "SK_VC_LW_GUARD_GSAW",
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_GUARD_GSAW"
       },
+      "slug": "sk_vc_lw_guard_gsaw",
       "maxLevel": 4
+    }
+  },
+  "VC_LW_LILS": {
+    "dataId": "VC_LW_LILS",
+    "names": {
+      "en": "復讐の旅"
     },
-    "unitBuffsClassic": {
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 312
+      },
+      "ATK": {
+        "min": 20,
+        "max": 82
+      },
+      "MAG": {
+        "min": 15,
+        "max": 60
+      }
+    },
+    "image": "lapslils",
+    "slug": "fu-chouno-lu",
+    "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
-          "minValue": 5,
+          "type": "SLASH_ATK",
+          "minValue": 10,
           "maxValue": 15,
           "calcType": "fixe"
-        },
-        {
-          "type": "LIGHT_RES",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "resistance"
         }
       ],
-      "dataId": "SK_VC_FF14_MV2_P",
-      "type": "support",
+      "dataId": "SK_VC_LW_LILS_GS",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_LILS_GS"
       },
+      "slug": "sk_vc_lw_lils_gs",
       "maxLevel": 70
     },
-    "unitBuffsAwake": {
+    "partyBuffsAwake": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "DARK_ATK",
+          "type": "SLASH_ATK",
           "minValue": 1,
           "maxValue": 5,
           "calcType": "fixe"
         }
       ],
-      "dataId": "SK_VC_FF14_MV2_PAW",
-      "type": "support",
+      "dataId": "SK_VC_LW_LILS_GSAW",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_LILS_GSAW"
       },
+      "slug": "sk_vc_lw_lils_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_VALE2": {
+    "dataId": "VC_LW_VALE2",
+    "names": {
+      "en": "イケメン争奪戦！！"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 33,
+        "max": 268
+      },
+      "ATK": {
+        "min": 23,
+        "max": 92
+      },
+      "MAG": {
+        "min": 17,
+        "max": 68
+      }
+    },
+    "image": "lapsvale2",
+    "slug": "ikemen-zheng-duo-zhan",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE2_GS"
+      },
+      "slug": "sk_vc_lw_vale2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 1,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE2_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE2_GSAW"
+      },
+      "slug": "sk_vc_lw_vale2_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_OCHU": {
+    "dataId": "VC_LW_OCHU",
+    "names": {
+      "en": "豪快植物　オチュー"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 252
+      },
+      "ATK": {
+        "min": 26,
+        "max": 105
+      },
+      "MAG": {
+        "min": 13,
+        "max": 54
+      }
+    },
+    "image": "lapsochu",
+    "slug": "hao-kuai-zhi-wu-otiyu",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_OCHU_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_OCHU_GS"
+      },
+      "slug": "sk_vc_lw_ochu_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_OCHU_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_OCHU_GSAW"
+      },
+      "slug": "sk_vc_lw_ochu_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_ADLD": {
+    "dataId": "VC_LW_ADLD",
+    "names": {
+      "en": "嫉心の魔術師"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 242
+      },
+      "ATK": {
+        "min": 11,
+        "max": 46
+      },
+      "MAG": {
+        "min": 31,
+        "max": 126
+      }
+    },
+    "image": "lapsadld",
+    "slug": "ji-xinno-mo-shu-shi",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_ADLD_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ADLD_GS"
+      },
+      "slug": "sk_vc_lw_adld_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 1,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_ADLD_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ADLD_GS_AW"
+      },
+      "slug": "sk_vc_lw_adld_gs_aw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_WHITEDAY1": {
+    "dataId": "VC_LW_WHITEDAY1",
+    "names": {
+      "en": "見栄の代償"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 312
+      },
+      "ATK": {
+        "min": 23,
+        "max": 95
+      },
+      "MAG": {
+        "min": 10,
+        "max": 42
+      }
+    },
+    "image": "lapswday1",
+    "slug": "jian-rongno-dai-chang",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LIGHT_KILLER",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_WHITEDAY1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_WHITEDAY1_GS"
+      },
+      "slug": "sk_vc_lw_whiteday1_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LIGHT_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_WHITEDAY1_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_WHITEDAY1_GSAW"
+      },
+      "slug": "sk_vc_lw_whiteday1_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_VNLA2": {
+    "dataId": "VC_LW_VNLA2",
+    "names": {
+      "en": "偽りの契り、偽れぬ魂"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 33,
+        "max": 264
+      },
+      "ATK": {
+        "min": 20,
+        "max": 82
+      },
+      "MAG": {
+        "min": 18,
+        "max": 75
+      }
+    },
+    "image": "lapsvnla2",
+    "slug": "weirino-qiri-weirenu-hun",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EVADE",
+          "minValue": 3,
+          "maxValue": 7,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VNLA2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VNLA2_GS"
+      },
+      "slug": "sk_vc_lw_vnla2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EVADE",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VNLA2_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VNLA2_GSAW"
+      },
+      "slug": "sk_vc_lw_vnla2_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_MBFF_MV2": {
+    "dataId": "VC_MBFF_MV2",
+    "names": {
+      "en": "希望と幻想のメビウス"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 47,
+        "max": 380
+      },
+      "ATK": {
+        "min": 21,
+        "max": 87
+      },
+      "MAG": {
+        "min": 8,
+        "max": 35
+      }
+    },
+    "image": "mbffmv2",
+    "slug": "xi-wangto-huan-xiangnomebiusu",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ICE_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV2_GS"
+      },
+      "slug": "sk_vc_mbff_mv2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ICE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV2_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV2_GSAW"
+      },
+      "slug": "sk_vc_mbff_mv2_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_FFT_MV2": {
+    "dataId": "VC_FFT_MV2",
+    "names": {
+      "en": "赤チョコボ"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 273
+      },
+      "ATK": {
+        "min": 10,
+        "max": 42
+      },
+      "MAG": {
+        "min": 32,
+        "max": 127
+      }
+    },
+    "image": "fftmv2",
+    "slug": "chitiyokobo",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LIGHT_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV2_GS"
+      },
+      "slug": "sk_vc_fft_mv2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LIGHT_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_FFT_MV2_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FFT_MV2_GSAW"
+      },
+      "slug": "sk_vc_fft_mv2_gsaw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_MDFY": {
+    "dataId": "VC_LW_MDFY",
+    "names": {
+      "en": "決壊精神　マインドフレイア"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 281
+      },
+      "ATK": {
+        "min": 15,
+        "max": 61
+      },
+      "MAG": {
+        "min": 24,
+        "max": 97
+      }
+    },
+    "image": "lapsmdfy",
+    "slug": "jue-huai-jing-shen-maindohureia",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 1000,
+          "maxValue": 1500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_MDFY_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MDFY_GS"
+      },
+      "slug": "sk_vc_lw_mdfy_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "minValue": 100,
+          "maxValue": 500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_MDFY_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MDFY_GSAW"
+      },
+      "slug": "sk_vc_lw_mdfy_gsaw",
       "maxLevel": 4
     }
   },
   "VC_LW_CACT": {
     "dataId": "VC_LW_CACT",
     "names": {
-      "en": "Instantaneous 1,000 Needles, Cactuar",
-      "fr": "Pampa, la Créature aux mille épines"
+      "en": "Instantaneous 1,000 Needles, Cactuar - 瞬間千本　サボテンダー"
     },
     "rarity": "SR",
     "stats": {
@@ -2966,42 +3277,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_CACT_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AGI",
-          "minValue": 4,
-          "maxValue": 12,
-          "calcType": "percent"
-        },
-        {
-          "type": "DEF",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_CACT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_cact_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_ARMN_01": {
     "dataId": "VC_LW_ARMN_01",
     "names": {
-      "en": "Magic Eye Beam, Floateye",
-      "fr": "Œil flottant, Rayon oculaire magique"
+      "en": "Magic Eye Beam, Floateye - 魔眼光線　フロータイボール"
     },
     "rarity": "SR",
     "stats": {
@@ -3034,42 +3319,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_ARMN_01_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLOW_RES",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "resistance"
-        },
-        {
-          "type": "ACCURACY",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_ARMN_01_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_armn_01_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_ZUUU": {
     "dataId": "VC_LW_ZUUU",
     "names": {
-      "en": "Enormous Avian, Zuu",
-      "fr": "Zu, l'Oiseau monstrueux légendaire"
+      "en": "Enormous Avian, Zuu - 巨大怪鳥　ズー"
     },
     "rarity": "SR",
     "stats": {
@@ -3102,37 +3361,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_ZUUU_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AVIAN_KILLER",
-          "minValue": 7,
-          "maxValue": 20,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_ZUUU_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_zuuu_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_OGRE": {
     "dataId": "VC_LW_OGRE",
     "names": {
-      "en": "Herculean Demon, Ogre",
-      "fr": "Ogre, le Démon herculéen"
+      "en": "Herculean Demon, Ogre - 剛力鬼人　オーガ"
     },
     "rarity": "SR",
     "stats": {
@@ -3165,176 +3403,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_OGRE_GS"
       },
+      "slug": "sk_vc_lw_ogre_gs",
       "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "PETRIFY_RES",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "resistance"
-        },
-        {
-          "type": "AGI",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_OGRE_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 60
-    }
-  },
-  "VC_LW_ODIN": {
-    "dataId": "VC_LW_ODIN",
-    "names": {
-      "en": "Realm Reaver, Odin"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 46,
-        "max": 362
-      },
-      "ATK": {
-        "min": 36,
-        "max": 142
-      },
-      "MAG": {
-        "min": 10,
-        "max": 38
-      }
-    },
-    "image": "lapsodin",
-    "slug": "realm-reaver-odin",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATTACK_RES",
-          "minValue": 6,
-          "maxValue": 12,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_ODIN_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATTACK_RES",
-          "minValue": 1,
-          "maxValue": 4,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_ODIN_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATTACK_RES",
-          "minValue": 4,
-          "maxValue": 4,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_ODIN_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HUMAN_KILLER",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_ODIN_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HUMAN_KILLER",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_ODIN_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "HUMAN_KILLER",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_ODIN_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": ""
-      },
-      "maxLevel": 1
     }
   },
   "VC_LW_BOMB": {
     "dataId": "VC_LW_BOMB",
     "names": {
-      "en": "Explosive Orb, Bomb",
-      "fr": "Bombo, la Boule explosive"
+      "en": "Explosive Orb, Bomb - 爆裂弾丸　ボム"
     },
     "rarity": "SR",
     "stats": {
@@ -3367,98 +3445,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_BOMB_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CRITIC_RATE",
-          "minValue": 7,
-          "maxValue": 20,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_BOMB_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 60
-    }
-  },
-  "VC_LW_JOBCRYSTAL": {
-    "dataId": "VC_LW_JOBCRYSTAL",
-    "names": {
-      "en": "Job Crystal",
-      "fr": "Cristal de job"
-    },
-    "rarity": "SR",
-    "stats": {
-      "HP": {
-        "min": 30,
-        "max": 240
-      },
-      "ATK": {
-        "min": 17,
-        "max": 70
-      },
-      "MAG": {
-        "min": 17,
-        "max": 70
-      }
-    },
-    "image": "lapsjcrystal",
-    "slug": "job-crystal",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ACQUIRED_JP",
-          "minValue": 20,
-          "maxValue": 50,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ACQUIRED_AP",
-          "minValue": 7,
-          "maxValue": 20,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_JOBCRYSTAL_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_bomb_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_BYLO": {
     "dataId": "VC_LW_BYLO",
     "names": {
-      "en": "Gluttonous King's Arrival",
-      "fr": "L'arrivée du Roi glouton"
+      "en": "Gluttonous King's Arrival - 暴食王出現"
     },
     "rarity": "SR",
     "stats": {
@@ -3491,42 +3487,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_BYLO_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CRITIC_DAMAGE",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "fixe"
-        },
-        {
-          "type": "AGI",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_BYLO_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_bylo_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_RART": {
     "dataId": "VC_LW_RART",
     "names": {
-      "en": "Long-Awaited Holiday",
-      "fr": "Vacances bien méritées"
+      "en": "Long-Awaited Holiday - 久しぶりの休暇"
     },
     "rarity": "SR",
     "stats": {
@@ -3559,36 +3529,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_RART_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DEX",
-          "minValue": 7,
-          "maxValue": 20,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_RART_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_rart_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_RYER": {
     "dataId": "VC_LW_RYER",
     "names": {
-      "en": "Great Detective Little Leela",
-      "fr": "Lillyla, la Grande Détective"
+      "en": "Great Detective Little Leela - 名探偵リレルリラ"
     },
     "rarity": "SR",
     "stats": {
@@ -3621,42 +3571,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_RYER_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ACCURACY",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "fixe"
-        },
-        {
-          "type": "DEF",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_RYER_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_ryer_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_VNLA": {
     "dataId": "VC_LW_VNLA",
     "names": {
-      "en": "Beguiling Witch",
-      "fr": "Sorcière envoûtante"
+      "en": "Beguiling Witch - 妖艶魔女"
     },
     "rarity": "SR",
     "stats": {
@@ -3689,44 +3613,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_VNLA_GS"
       },
-      "maxLevel": 60
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "REAPER_KILLER",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "percent",
-          "rate": 200
-        },
-        {
-          "type": "DEF",
-          "minValue": -5,
-          "maxValue": -5,
-          "calcType": "fixe",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_VNLA_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_vnla_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_RIRY": {
     "dataId": "VC_LW_RIRY",
     "names": {
-      "en": "Fun Time",
-      "fr": "Bons moments entre ennemis"
+      "en": "Fun Time - お楽しみタイム"
     },
     "rarity": "SR",
     "stats": {
@@ -3759,36 +3655,58 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_RIRY_GS"
       },
+      "slug": "sk_vc_lw_riry_gs",
       "maxLevel": 60
+    }
+  },
+  "VC_LW_JOBCRYSTAL": {
+    "dataId": "VC_LW_JOBCRYSTAL",
+    "names": {
+      "en": "Job Crystal - ジョブクリスタル"
     },
-    "unitBuffsClassic": {
+    "rarity": "SR",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 240
+      },
+      "ATK": {
+        "min": 17,
+        "max": 70
+      },
+      "MAG": {
+        "min": 17,
+        "max": 70
+      }
+    },
+    "image": "lapsjcrystal",
+    "slug": "job-crystal",
+    "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
         {
-          "type": "CRITIC_RATE",
-          "minValue": 7,
-          "maxValue": 20,
-          "calcType": "fixe"
+          "type": "ACQUIRED_JP",
+          "minValue": 20,
+          "maxValue": 50,
+          "calcType": "percent"
         }
       ],
-      "dataId": "SK_VC_LW_RIRY_P",
-      "type": "support",
+      "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
+      "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_JOBCRYSTAL_GS"
       },
+      "slug": "sk_vc_lw_jobcrystal_gs",
       "maxLevel": 60
     }
   },
   "VC_LW_LEONIS": {
     "dataId": "VC_LW_LEONIS",
     "names": {
-      "en": "Flag of Leonis",
-      "fr": "Bannière de Leonis"
+      "en": "Flag of Leonis - リオニス旗"
     },
     "rarity": "R",
     "stats": {
@@ -3821,36 +3739,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_LEONIS_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "STOP_RES",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_LEONIS_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_leonis_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_HOURN": {
     "dataId": "VC_LW_HOURN",
     "names": {
-      "en": "Flag of Hourne",
-      "fr": "Bannière de Hourne"
+      "en": "Flag of Hourne - ホルン旗"
     },
     "rarity": "R",
     "stats": {
@@ -3883,36 +3781,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_HOURN_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "BERSERK_RES",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOURN_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_hourn_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_FENICE": {
     "dataId": "VC_LW_FENICE",
     "names": {
-      "en": "Flag of Fennes",
-      "fr": "Bannière de Fennes"
+      "en": "Flag of Fennes - フェネス旗"
     },
     "rarity": "R",
     "stats": {
@@ -3945,36 +3823,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_FENICE_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK_DEBUFF_RES",
-          "minValue": 17,
-          "maxValue": 50,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_FENICE_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_fenice_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_WEZETT": {
     "dataId": "VC_LW_WEZETT",
     "names": {
-      "en": "Flag of Wezette",
-      "fr": "Bannière de Wezett"
+      "en": "Flag of Wezette - ウェズエット旗"
     },
     "rarity": "R",
     "stats": {
@@ -4007,36 +3865,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_WEZETT_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "TOAD_RES",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_WEZETT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_wezett_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_CRYSTAL": {
     "dataId": "VC_LW_CRYSTAL",
     "names": {
-      "en": "Flag of the Crystal Sanctum",
-      "fr": "Bannière de l'Église du Cristal"
+      "en": "Flag of the Crystal Sanctum - クリスタル教会旗"
     },
     "rarity": "R",
     "stats": {
@@ -4069,36 +3907,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_CRYSTAL_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ACCURACY",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_CRYSTAL_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_crystal_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_LEONIS2": {
     "dataId": "VC_LW_LEONIS2",
     "names": {
-      "en": "Leonis Castle",
-      "fr": "Château de Leonis"
+      "en": "Leonis Castle - リオニス城"
     },
     "rarity": "R",
     "stats": {
@@ -4131,42 +3949,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_LEONIS2_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DEF",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        },
-        {
-          "type": "SPR",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_LEONIS2_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_leonis2_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_HOURN2": {
     "dataId": "VC_LW_HOURN2",
     "names": {
-      "en": "Hourne Castle",
-      "fr": "Château de Hourne"
+      "en": "Hourne Castle - ホルン城"
     },
     "rarity": "R",
     "stats": {
@@ -4199,42 +3991,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_HOURN2_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK",
-          "minValue": 10,
-          "maxValue": 30,
-          "calcType": "percent"
-        },
-        {
-          "type": "LUCK",
-          "minValue": -10,
-          "maxValue": -10,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_HOURN2_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_hourn2_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_FENICE2": {
     "dataId": "VC_LW_FENICE2",
     "names": {
-      "en": "Fennes Castle",
-      "fr": "Château de Fennes"
+      "en": "Fennes Castle - フェネス城"
     },
     "rarity": "R",
     "stats": {
@@ -4267,36 +4033,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_FENICE2_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DEX",
-          "minValue": 6,
-          "maxValue": 18,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_FENICE2_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_fenice2_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_WEZETT2": {
     "dataId": "VC_LW_WEZETT2",
     "names": {
-      "en": "Wezette Castle",
-      "fr": "Château de Wezett"
+      "en": "Wezette Castle - ウェズエット城"
     },
     "rarity": "R",
     "stats": {
@@ -4329,42 +4075,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_WEZETT2_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DEF",
-          "minValue": 3,
-          "maxValue": 10,
-          "calcType": "fixe"
-        },
-        {
-          "type": "SPR",
-          "minValue": 3,
-          "maxValue": 10,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_WEZETT2_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_wezett2_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_DYNVERK": {
     "dataId": "VC_LW_DYNVERK",
     "names": {
-      "en": "Dynverk Cathedral",
-      "fr": "Cathédrale Dynverk"
+      "en": "Dynverk Cathedral - ダインヴェルク教会"
     },
     "rarity": "R",
     "stats": {
@@ -4397,36 +4117,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_DYNVERK_GS"
       },
-      "maxLevel": 40
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "BLIND_RES",
-          "minValue": 8,
-          "maxValue": 25,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_DYNVERK_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_dynverk_gs",
       "maxLevel": 40
     }
   },
   "VC_LW_TRSV_01": {
     "dataId": "VC_LW_TRSV_01",
     "names": {
-      "en": "Long-Distance Communication Device «Heaven»",
-      "fr": "Appareil de communication longue distance « Cieux »"
+      "en": "Long-Distance Communication Device «Heaven» - 遠話装置・天"
     },
     "rarity": "N",
     "stats": {
@@ -4459,36 +4159,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_TRSV_01_GS"
       },
-      "maxLevel": 30
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "ATK",
-          "minValue": 10,
-          "maxValue": 30,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_TRSV_01_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_trsv_01_gs",
       "maxLevel": 30
     }
   },
   "VC_LW_TRSV_02": {
     "dataId": "VC_LW_TRSV_02",
     "names": {
-      "en": "Long-Distance Communication Device «Earth»",
-      "fr": "Appareil de communication longue distance « Terre »"
+      "en": "Long-Distance Communication Device «Earth» - 遠話装置・地"
     },
     "rarity": "N",
     "stats": {
@@ -4521,36 +4201,16 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_TRSV_02_GS"
       },
-      "maxLevel": 30
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "LUCK",
-          "minValue": 10,
-          "maxValue": 30,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_TRSV_02_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_trsv_02_gs",
       "maxLevel": 30
     }
   },
   "VC_LW_MIRROR": {
     "dataId": "VC_LW_MIRROR",
     "names": {
-      "en": "Far-Reaching Mirror",
-      "fr": "Miroir longue-vue"
+      "en": "Far-Reaching Mirror - 遠見の鏡"
     },
     "rarity": "N",
     "stats": {
@@ -4583,28 +4243,9 @@
       "type": "party",
       "mainSkill": false,
       "names": {
-        "en": "",
-        "fr": ""
+        "en": "SK_VC_LW_MIRROR_GS"
       },
-      "maxLevel": 30
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DEX",
-          "minValue": 10,
-          "maxValue": 30,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MIRROR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "",
-        "fr": ""
-      },
+      "slug": "sk_vc_lw_mirror_gs",
       "maxLevel": 30
     }
   }

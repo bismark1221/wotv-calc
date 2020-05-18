@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { CardService } from '../services/card.service';
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-cards',
@@ -14,7 +15,8 @@ export class CardsComponent implements OnInit {
 
   constructor(
     private cardService: CardService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateCards();
@@ -56,5 +58,9 @@ export class CardsComponent implements OnInit {
         });
       });
     });
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
   }
 }

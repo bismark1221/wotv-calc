@@ -8,73 +8,51 @@ import { JsonService } from '../services/json.service';
   styleUrls: ['./json.component.css']
 })
 export class JsonComponent implements OnInit {
-  units = [];
-  unitIds = [];
+  GLunits = [];
+  GLvisionCards = [];
+  GLespers = [];
+  GLequipments = [];
+  GLjobs = [];
 
-  visionCards = [];
-  visionCardIds = [];
-
-  espers = [];
-  esperIds = [];
-
-  equipments = [];
-  equipmentIds = [];
-
-  jobs = [];
-  jobIds = [];
-
-
-  isCollapsed = {
-    units: [],
-    visionCards: [],
-    espers: [],
-    equipments: [],
-    jobs: []
-  };
+  JPunits = [];
+  JPvisionCards = [];
+  JPespers = [];
+  JPequipments = [];
+  JPjobs = [];
 
   constructor(private jsonService: JsonService) {}
 
   ngOnInit(): void {
     this.jsonService.getJsons().then(response => {
       // @ts-ignore
-      this.units = response.units;
-      this.unitIds = Object.keys(this.units)
-
-      for (let i = 0; i < this.unitIds.length; i++) {
-        this.isCollapsed.units[i] = true;
-      }
+      this.GLunits = response.gl.units;
 
       // @ts-ignore
-      this.visionCards = response.visionCards;
-      this.visionCardIds = Object.keys(this.visionCards)
-
-      for (let i = 0; i < this.visionCardIds.length; i++) {
-        this.isCollapsed.visionCards[i] = true;
-      }
+      this.GLvisionCards = response.gl.visionCards;
 
       // @ts-ignore
-      this.espers = response.espers;
-      this.esperIds = Object.keys(this.espers)
-
-      for (let i = 0; i < this.esperIds.length; i++) {
-        this.isCollapsed.espers[i] = true;
-      }
+      this.GLespers = response.gl.espers;
 
       // @ts-ignore
-      this.equipments = response.equipments;
-      this.equipmentIds = Object.keys(this.equipments)
-
-      for (let i = 0; i < this.equipmentIds.length; i++) {
-        this.isCollapsed.equipments[i] = true;
-      }
+      this.GLequipments = response.gl.equipments;
 
       // @ts-ignore
-      this.jobs = response.jobs;
-      this.jobIds = Object.keys(this.jobs)
+      this.GLjobs = response.gl.jobs;
 
-      for (let i = 0; i < this.jobIds.length; i++) {
-        this.isCollapsed.jobs[i] = true;
-      }
+      // @ts-ignore
+      this.JPunits = response.jp.units;
+
+      // @ts-ignore
+      this.JPvisionCards = response.jp.visionCards;
+
+      // @ts-ignore
+      this.JPespers = response.jp.espers;
+
+      // @ts-ignore
+      this.JPequipments = response.jp.equipments;
+
+      // @ts-ignore
+      this.JPjobs = response.jp.jobs;
     });
   }
 }

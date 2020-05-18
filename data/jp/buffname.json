@@ -1,0 +1,3416 @@
+{
+    "infos": [
+        {
+            "key": "BUFF_LW_SWO_003_1_T_00",
+            "value": "通常攻撃（睡眠）"
+        },
+        {
+            "key": "BUFF_LW_SWO_003_5_T_00",
+            "value": "通常攻撃（睡眠）"
+        },
+        {
+            "key": "BUFF_LW_BSW_011_1_T_EN",
+            "value": "通常攻撃（防御ダウン）"
+        },
+        {
+            "key": "BUFF_LW_BSW_011_3_T_EN",
+            "value": "通常攻撃（防御ダウン）"
+        },
+        {
+            "key": "BUFF_LW_BSW_011_5_T_EN",
+            "value": "通常攻撃（防御ダウン）"
+        },
+        {
+            "key": "BUFF_SPE_LW_RAMD_1_1_EN",
+            "value": "通常攻撃（睡眠）"
+        },
+        {
+            "key": "BUFF_NKN_LW_SDLX_1_1_EN",
+            "value": "通常攻撃（麻痺）"
+        },
+        {
+            "key": "BUFF_GUN_LW_RIRY_1_1_EN",
+            "value": "通常攻撃（暗闇）"
+        },
+        {
+            "key": "BUFF_MAC_LW_KADI_1_1_EN",
+            "value": "通常攻撃（混乱）"
+        },
+        {
+            "key": "BUFF_ROD_LW_PRAY_1_1_EN",
+            "value": "通常攻撃（ドンアク）"
+        },
+        {
+            "key": "BUFF_ROD_FF14_YSTL_1_1_EN",
+            "value": "通常攻撃（沈黙）"
+        },
+        {
+            "key": "BUFF_BOW_LW_FINA_1_1_EN",
+            "value": "通常攻撃（魅了）"
+        },
+        {
+            "key": "BUFF_BSW_LW_SZRT_1_1_EN",
+            "value": "通常攻撃（死の宣告）"
+        },
+        {
+            "key": "BUFF_SWO_LW_NASR_1_1_EN",
+            "value": "通常攻撃（ドンムブ）"
+        },
+        {
+            "key": "BUFF_SWO_FFT_GFGR_1_1_EN",
+            "value": "通常攻撃（混乱）"
+        },
+        {
+            "key": "BUFF_AXE_LW_DRND_1_1_EN",
+            "value": "通常攻撃（暗闇）"
+        },
+        {
+            "key": "BUFF_KAT_LW_SIMR_1_1_EN",
+            "value": "通常攻撃（スロウ）"
+        },
+        {
+            "key": "BUFF_GUN_FFT_MSTD_1_1_EN",
+            "value": "通常攻撃（回避率ダウン）"
+        },
+        {
+            "key": "BUFF_ARENA_00003",
+            "value": "射程+1"
+        },
+        {
+            "key": "BUFF_ARENA_00004",
+            "value": "魔法攻撃アップ"
+        },
+        {
+            "key": "BUFF_ARENA_00005",
+            "value": "射撃攻撃耐性アップ"
+        },
+        {
+            "key": "BUFF_ARENA_00006",
+            "value": "単体攻撃耐性アップ"
+        },
+        {
+            "key": "BUFF_GVG_001",
+            "value": "闇属性アビリティ攻撃アップ"
+        },
+        {
+            "key": "BUFF_GVG_002",
+            "value": "魔力アップ"
+        },
+        {
+            "key": "BUFF_GVG_003",
+            "value": "水属性アビリティ攻撃アップ"
+        },
+        {
+            "key": "BUFF_IFRT_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_IFRT_02",
+            "value": "悪魔キラー+2%"
+        },
+        {
+            "key": "BUFF_IFRT_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_IFRT_04",
+            "value": "氷属性キラー+2%"
+        },
+        {
+            "key": "BUFF_IFRT_05",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_IFRT_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_IFRT_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_IFRT_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_IFRT_09",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_IFRT_10",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_IFRT_11",
+            "value": "悪魔キラー+3%"
+        },
+        {
+            "key": "BUFF_IFRT_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_IFRT_13",
+            "value": "刺突攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_IFRT_14",
+            "value": "刺突攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_IFRT_15",
+            "value": "氷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_IFRT_16",
+            "value": "攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_IFRT_17",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_IFRT_18",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_IFRT_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_IFRT_20",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_IFRT_21",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_IFRT_22",
+            "value": "悪魔キラー+4%"
+        },
+        {
+            "key": "BUFF_IFRT_23",
+            "value": "悪魔キラー+6%"
+        },
+        {
+            "key": "BUFF_IFRT_24",
+            "value": "刺突攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_IFRT_25",
+            "value": "刺突攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_IFRT_26",
+            "value": "氷属性キラー+6%"
+        },
+        {
+            "key": "BUFF_IFRT_27",
+            "value": "氷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_IFRT_28",
+            "value": "水耐性+5%"
+        },
+        {
+            "key": "BUFF_IFRT_29",
+            "value": "水耐性+4%"
+        },
+        {
+            "key": "BUFF_IFRT_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_IFRT_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_IFRT_32",
+            "value": "悪魔キラー+10%"
+        },
+        {
+            "key": "BUFF_IFRT_33",
+            "value": "氷属性キラー+10%"
+        },
+        {
+            "key": "BUFF_RAMU_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_RAMU_02",
+            "value": "水棲キラー+2%"
+        },
+        {
+            "key": "BUFF_RAMU_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_RAMU_04",
+            "value": "水属性キラー+2%"
+        },
+        {
+            "key": "BUFF_RAMU_05",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_RAMU_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_RAMU_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_RAMU_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_RAMU_09",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_RAMU_10",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_RAMU_11",
+            "value": "水棲キラー+3%"
+        },
+        {
+            "key": "BUFF_RAMU_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_RAMU_13",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_RAMU_14",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_RAMU_15",
+            "value": "水属性キラー+3%"
+        },
+        {
+            "key": "BUFF_RAMU_16",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_RAMU_17",
+            "value": "土耐性+3%"
+        },
+        {
+            "key": "BUFF_RAMU_18",
+            "value": "土耐性+3%"
+        },
+        {
+            "key": "BUFF_RAMU_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_RAMU_20",
+            "value": "打撃耐性+5%"
+        },
+        {
+            "key": "BUFF_RAMU_21",
+            "value": "打撃耐性+4%"
+        },
+        {
+            "key": "BUFF_RAMU_22",
+            "value": "水棲キラー+4%"
+        },
+        {
+            "key": "BUFF_RAMU_23",
+            "value": "水棲キラー+6%"
+        },
+        {
+            "key": "BUFF_RAMU_24",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_RAMU_25",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_RAMU_26",
+            "value": "水属性キラー+6%"
+        },
+        {
+            "key": "BUFF_RAMU_27",
+            "value": "水属性キラー+4%"
+        },
+        {
+            "key": "BUFF_RAMU_28",
+            "value": "土耐性+5%"
+        },
+        {
+            "key": "BUFF_RAMU_29",
+            "value": "土耐性+4%"
+        },
+        {
+            "key": "BUFF_RAMU_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_RAMU_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_RAMU_32",
+            "value": "水棲キラー+10%"
+        },
+        {
+            "key": "BUFF_RAMU_33",
+            "value": "水属性キラー+10%"
+        },
+        {
+            "key": "BUFF_SHIV_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_SHIV_02",
+            "value": "鳥キラー+2%"
+        },
+        {
+            "key": "BUFF_SHIV_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_SHIV_04",
+            "value": "風属性キラー+2%"
+        },
+        {
+            "key": "BUFF_SHIV_05",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_SHIV_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_SHIV_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_SHIV_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_SHIV_09",
+            "value": "刺突耐性+3%"
+        },
+        {
+            "key": "BUFF_SHIV_10",
+            "value": "刺突耐性+3%"
+        },
+        {
+            "key": "BUFF_SHIV_11",
+            "value": "鳥キラー+3%"
+        },
+        {
+            "key": "BUFF_SHIV_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_SHIV_13",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_SHIV_14",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_SHIV_15",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_SHIV_16",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_SHIV_17",
+            "value": "火耐性+3%"
+        },
+        {
+            "key": "BUFF_SHIV_18",
+            "value": "火耐性+3%"
+        },
+        {
+            "key": "BUFF_SHIV_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_SHIV_20",
+            "value": "刺突耐性+5%"
+        },
+        {
+            "key": "BUFF_SHIV_21",
+            "value": "刺突耐性+4%"
+        },
+        {
+            "key": "BUFF_SHIV_22",
+            "value": "鳥キラー+4%"
+        },
+        {
+            "key": "BUFF_SHIV_23",
+            "value": "鳥キラー+6%"
+        },
+        {
+            "key": "BUFF_SHIV_24",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_SHIV_25",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_SHIV_26",
+            "value": "風属性キラー+6%"
+        },
+        {
+            "key": "BUFF_SHIV_27",
+            "value": "風属性キラー+4%"
+        },
+        {
+            "key": "BUFF_SHIV_28",
+            "value": "火耐性+5%"
+        },
+        {
+            "key": "BUFF_SHIV_29",
+            "value": "火耐性+4%"
+        },
+        {
+            "key": "BUFF_SHIV_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_SHIV_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_SHIV_32",
+            "value": "鳥キラー+10%"
+        },
+        {
+            "key": "BUFF_SHIV_33",
+            "value": "風属性キラー+10%"
+        },
+        {
+            "key": "BUFF_GLEM_01",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_GLEM_02",
+            "value": "刺突耐性+3%"
+        },
+        {
+            "key": "BUFF_GLEM_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_GLEM_04",
+            "value": "防御UP+1%"
+        },
+        {
+            "key": "BUFF_GLEM_05",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_GLEM_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_GLEM_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_GLEM_08",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_GLEM_09",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_GLEM_10",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_GLEM_11",
+            "value": "刺突耐性+4%"
+        },
+        {
+            "key": "BUFF_GLEM_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_GLEM_13",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_GLEM_14",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_GLEM_15",
+            "value": "防御UP+2%"
+        },
+        {
+            "key": "BUFF_GLEM_16",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_GLEM_17",
+            "value": "土耐性+4%"
+        },
+        {
+            "key": "BUFF_GLEM_18",
+            "value": "土耐性+5%"
+        },
+        {
+            "key": "BUFF_GLEM_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_GLEM_20",
+            "value": "人キラー+5%"
+        },
+        {
+            "key": "BUFF_GLEM_21",
+            "value": "人キラー+4%"
+        },
+        {
+            "key": "BUFF_GLEM_22",
+            "value": "刺突耐性+5%"
+        },
+        {
+            "key": "BUFF_GLEM_23",
+            "value": "刺突耐性+6%"
+        },
+        {
+            "key": "BUFF_GLEM_24",
+            "value": "風属性キラー+5%"
+        },
+        {
+            "key": "BUFF_GLEM_25",
+            "value": "風属性キラー+4%"
+        },
+        {
+            "key": "BUFF_GLEM_26",
+            "value": "防御UP+3%"
+        },
+        {
+            "key": "BUFF_GLEM_27",
+            "value": "防御UP+4%"
+        },
+        {
+            "key": "BUFF_GLEM_28",
+            "value": "土耐性+10%"
+        },
+        {
+            "key": "BUFF_GLEM_29",
+            "value": "土耐性+6%"
+        },
+        {
+            "key": "BUFF_GLEM_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_GLEM_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_GLEM_32",
+            "value": "刺突耐性+7%"
+        },
+        {
+            "key": "BUFF_GLEM_33",
+            "value": "防御UP+5%"
+        },
+        {
+            "key": "BUFF_SIRE_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_SIRE_02",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_SIRE_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_SIRE_04",
+            "value": "獣キラー+3%"
+        },
+        {
+            "key": "BUFF_SIRE_05",
+            "value": "クリティカル発生率+2"
+        },
+        {
+            "key": "BUFF_SIRE_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_SIRE_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_SIRE_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_SIRE_09",
+            "value": "火属性キラー+3%"
+        },
+        {
+            "key": "BUFF_SIRE_10",
+            "value": "火属性キラー+3%"
+        },
+        {
+            "key": "BUFF_SIRE_11",
+            "value": "斬撃耐性+4%"
+        },
+        {
+            "key": "BUFF_SIRE_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_SIRE_13",
+            "value": "刺突攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_SIRE_14",
+            "value": "刺突攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_SIRE_15",
+            "value": "獣キラー+4%"
+        },
+        {
+            "key": "BUFF_SIRE_16",
+            "value": "クリティカル発生率+5"
+        },
+        {
+            "key": "BUFF_SIRE_17",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_SIRE_18",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_SIRE_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_SIRE_20",
+            "value": "火属性キラー+5%"
+        },
+        {
+            "key": "BUFF_SIRE_21",
+            "value": "火属性キラー+4%"
+        },
+        {
+            "key": "BUFF_SIRE_22",
+            "value": "斬撃耐性+5%"
+        },
+        {
+            "key": "BUFF_SIRE_23",
+            "value": "斬撃耐性+6%"
+        },
+        {
+            "key": "BUFF_SIRE_24",
+            "value": "刺突攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_SIRE_25",
+            "value": "刺突攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_SIRE_26",
+            "value": "獣キラー+6%"
+        },
+        {
+            "key": "BUFF_SIRE_27",
+            "value": "獣キラー+5%"
+        },
+        {
+            "key": "BUFF_SIRE_28",
+            "value": "水耐性+5%"
+        },
+        {
+            "key": "BUFF_SIRE_29",
+            "value": "水耐性+4%"
+        },
+        {
+            "key": "BUFF_SIRE_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_SIRE_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_SIRE_32",
+            "value": "斬撃耐性+7%"
+        },
+        {
+            "key": "BUFF_SIRE_33",
+            "value": "獣キラー+7%"
+        },
+        {
+            "key": "BUFF_ODIN_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_ODIN_02",
+            "value": "鳥キラー+2%"
+        },
+        {
+            "key": "BUFF_ODIN_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_ODIN_04",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_ODIN_05",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_ODIN_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_ODIN_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_ODIN_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_ODIN_09",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_ODIN_10",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_ODIN_11",
+            "value": "鳥キラー+3%"
+        },
+        {
+            "key": "BUFF_ODIN_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_ODIN_13",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ODIN_14",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ODIN_15",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_ODIN_16",
+            "value": "攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_ODIN_17",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_ODIN_18",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_ODIN_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_ODIN_20",
+            "value": "斬撃耐性+5%"
+        },
+        {
+            "key": "BUFF_ODIN_21",
+            "value": "斬撃耐性+4%"
+        },
+        {
+            "key": "BUFF_ODIN_22",
+            "value": "鳥キラー+4%"
+        },
+        {
+            "key": "BUFF_ODIN_23",
+            "value": "鳥キラー+6%"
+        },
+        {
+            "key": "BUFF_ODIN_24",
+            "value": "斬撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_ODIN_25",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_ODIN_26",
+            "value": "人キラー+6%"
+        },
+        {
+            "key": "BUFF_ODIN_27",
+            "value": "人キラー+4%"
+        },
+        {
+            "key": "BUFF_ODIN_28",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_ODIN_29",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_ODIN_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_ODIN_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_ODIN_32",
+            "value": "鳥キラー+10%"
+        },
+        {
+            "key": "BUFF_ODIN_33",
+            "value": "人キラー+10%"
+        },
+        {
+            "key": "BUFF_TSLP_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_TSLP_02",
+            "value": "水棲キラー+3%"
+        },
+        {
+            "key": "BUFF_TSLP_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_TSLP_04",
+            "value": "土属性キラー+3%"
+        },
+        {
+            "key": "BUFF_TSLP_05",
+            "value": "APUP+2%"
+        },
+        {
+            "key": "BUFF_TSLP_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_TSLP_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_TSLP_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_TSLP_09",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_TSLP_10",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_TSLP_11",
+            "value": "水棲キラー+4%"
+        },
+        {
+            "key": "BUFF_TSLP_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_TSLP_13",
+            "value": "射撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_TSLP_14",
+            "value": "射撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_TSLP_15",
+            "value": "土属性キラー+4%"
+        },
+        {
+            "key": "BUFF_TSLP_16",
+            "value": "APUP+5%"
+        },
+        {
+            "key": "BUFF_TSLP_17",
+            "value": "風耐性+4%"
+        },
+        {
+            "key": "BUFF_TSLP_18",
+            "value": "風耐性+5%"
+        },
+        {
+            "key": "BUFF_TSLP_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_TSLP_20",
+            "value": "回避率+5"
+        },
+        {
+            "key": "BUFF_TSLP_21",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_TSLP_22",
+            "value": "水棲キラー+5%"
+        },
+        {
+            "key": "BUFF_TSLP_23",
+            "value": "水棲キラー+6%"
+        },
+        {
+            "key": "BUFF_TSLP_24",
+            "value": "射撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_TSLP_25",
+            "value": "射撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_TSLP_26",
+            "value": "土属性キラー+6%"
+        },
+        {
+            "key": "BUFF_TSLP_27",
+            "value": "土属性キラー+5%"
+        },
+        {
+            "key": "BUFF_TSLP_28",
+            "value": "風耐性+10%"
+        },
+        {
+            "key": "BUFF_TSLP_29",
+            "value": "風耐性+6%"
+        },
+        {
+            "key": "BUFF_TSLP_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_TSLP_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_TSLP_32",
+            "value": "水棲キラー+7%"
+        },
+        {
+            "key": "BUFF_TSLP_33",
+            "value": "土属性キラー+7%"
+        },
+        {
+            "key": "BUFF_THDG_01",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_THDG_02",
+            "value": "竜キラー+2%"
+        },
+        {
+            "key": "BUFF_THDG_03",
+            "value": "刺突耐性+3%"
+        },
+        {
+            "key": "BUFF_THDG_04",
+            "value": "闇属性キラー+2%"
+        },
+        {
+            "key": "BUFF_THDG_05",
+            "value": "クリティカルダメージ+2%"
+        },
+        {
+            "key": "BUFF_THDG_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_THDG_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_THDG_08",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_THDG_09",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_THDG_10",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_THDG_11",
+            "value": "竜キラー+3%"
+        },
+        {
+            "key": "BUFF_THDG_12",
+            "value": "刺突耐性+4%"
+        },
+        {
+            "key": "BUFF_THDG_13",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_THDG_14",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_THDG_15",
+            "value": "闇属性キラー+3%"
+        },
+        {
+            "key": "BUFF_THDG_16",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_THDG_17",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_THDG_18",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_THDG_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_THDG_20",
+            "value": "命中率+5"
+        },
+        {
+            "key": "BUFF_THDG_21",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_THDG_22",
+            "value": "竜キラー+4%"
+        },
+        {
+            "key": "BUFF_THDG_23",
+            "value": "竜キラー+6%"
+        },
+        {
+            "key": "BUFF_THDG_24",
+            "value": "斬撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_THDG_25",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_THDG_26",
+            "value": "闇属性キラー+6%"
+        },
+        {
+            "key": "BUFF_THDG_27",
+            "value": "闇属性キラー+4%"
+        },
+        {
+            "key": "BUFF_THDG_28",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_THDG_29",
+            "value": "攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_THDG_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_THDG_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_THDG_32",
+            "value": "竜キラー+10%"
+        },
+        {
+            "key": "BUFF_THDG_33",
+            "value": "闇属性キラー+10%"
+        },
+        {
+            "key": "BUFF_WRMC_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_WRMC_02",
+            "value": "防御UP+1%"
+        },
+        {
+            "key": "BUFF_WRMC_03",
+            "value": "毒耐性+3%"
+        },
+        {
+            "key": "BUFF_WRMC_04",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_WRMC_05",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_WRMC_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_WRMC_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_WRMC_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_WRMC_09",
+            "value": "火耐性+4%"
+        },
+        {
+            "key": "BUFF_WRMC_10",
+            "value": "火耐性+5%"
+        },
+        {
+            "key": "BUFF_WRMC_11",
+            "value": "防御UP+2%"
+        },
+        {
+            "key": "BUFF_WRMC_12",
+            "value": "毒耐性+4%"
+        },
+        {
+            "key": "BUFF_WRMC_13",
+            "value": "氷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_WRMC_14",
+            "value": "氷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_WRMC_15",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_WRMC_16",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_WRMC_17",
+            "value": "機械キラー+3%"
+        },
+        {
+            "key": "BUFF_WRMC_18",
+            "value": "機械キラー+3%"
+        },
+        {
+            "key": "BUFF_WRMC_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_WRMC_20",
+            "value": "火耐性+10%"
+        },
+        {
+            "key": "BUFF_WRMC_21",
+            "value": "火耐性+6%"
+        },
+        {
+            "key": "BUFF_WRMC_22",
+            "value": "防御UP+3%"
+        },
+        {
+            "key": "BUFF_WRMC_23",
+            "value": "防御UP+4%"
+        },
+        {
+            "key": "BUFF_WRMC_24",
+            "value": "氷属性キラー+5%"
+        },
+        {
+            "key": "BUFF_WRMC_25",
+            "value": "氷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_WRMC_26",
+            "value": "射撃耐性+6%"
+        },
+        {
+            "key": "BUFF_WRMC_27",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_WRMC_28",
+            "value": "機械キラー+5%"
+        },
+        {
+            "key": "BUFF_WRMC_29",
+            "value": "機械キラー+4%"
+        },
+        {
+            "key": "BUFF_WRMC_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_WRMC_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_WRMC_32",
+            "value": "防御UP+5%"
+        },
+        {
+            "key": "BUFF_WRMC_33",
+            "value": "射撃耐性+7%"
+        },
+        {
+            "key": "BUFF_DABL_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_DABL_02",
+            "value": "悪魔キラー+2%"
+        },
+        {
+            "key": "BUFF_DABL_03",
+            "value": "クリティカル発生率+3"
+        },
+        {
+            "key": "BUFF_DABL_04",
+            "value": "光属性キラー+2%"
+        },
+        {
+            "key": "BUFF_DABL_05",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_DABL_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_DABL_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_DABL_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_DABL_09",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_DABL_10",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_DABL_11",
+            "value": "悪魔キラー+3%"
+        },
+        {
+            "key": "BUFF_DABL_12",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_DABL_13",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_DABL_14",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_DABL_15",
+            "value": "光属性キラー+3%"
+        },
+        {
+            "key": "BUFF_DABL_16",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_DABL_17",
+            "value": "魔力UP+3%"
+        },
+        {
+            "key": "BUFF_DABL_18",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_DABL_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_DABL_20",
+            "value": "斬撃耐性+5%"
+        },
+        {
+            "key": "BUFF_DABL_21",
+            "value": "斬撃耐性+4%"
+        },
+        {
+            "key": "BUFF_DABL_22",
+            "value": "悪魔キラー+4%"
+        },
+        {
+            "key": "BUFF_DABL_23",
+            "value": "悪魔キラー+6%"
+        },
+        {
+            "key": "BUFF_DABL_24",
+            "value": "魔法攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_DABL_25",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_DABL_26",
+            "value": "光属性キラー+6%"
+        },
+        {
+            "key": "BUFF_DABL_27",
+            "value": "光属性キラー+4%"
+        },
+        {
+            "key": "BUFF_DABL_28",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_DABL_29",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_DABL_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_DABL_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_DABL_32",
+            "value": "悪魔キラー+10%"
+        },
+        {
+            "key": "BUFF_DABL_33",
+            "value": "光属性キラー+10%"
+        },
+        {
+            "key": "BUFF_IGNT_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_IGNT_02",
+            "value": "獣キラー+2%"
+        },
+        {
+            "key": "BUFF_IGNT_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_IGNT_04",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_IGNT_05",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_IGNT_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_IGNT_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_IGNT_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_IGNT_09",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_IGNT_10",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_IGNT_11",
+            "value": "獣キラー+2%"
+        },
+        {
+            "key": "BUFF_IGNT_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_IGNT_13",
+            "value": "斬撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_IGNT_14",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_IGNT_15",
+            "value": "闇属性キラー+3%"
+        },
+        {
+            "key": "BUFF_IGNT_16",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_IGNT_17",
+            "value": "闇耐性+3%"
+        },
+        {
+            "key": "BUFF_IGNT_18",
+            "value": "闇耐性+3%"
+        },
+        {
+            "key": "BUFF_IGNT_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_IGNT_20",
+            "value": "斬撃耐性+5%"
+        },
+        {
+            "key": "BUFF_IGNT_21",
+            "value": "斬撃耐性+4%"
+        },
+        {
+            "key": "BUFF_IGNT_22",
+            "value": "獣キラー+3%"
+        },
+        {
+            "key": "BUFF_IGNT_23",
+            "value": "獣キラー+3%"
+        },
+        {
+            "key": "BUFF_IGNT_24",
+            "value": "斬撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_IGNT_25",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_IGNT_26",
+            "value": "闇属性キラー+4%"
+        },
+        {
+            "key": "BUFF_IGNT_27",
+            "value": "闇属性キラー+3%"
+        },
+        {
+            "key": "BUFF_IGNT_28",
+            "value": "闇耐性+5%"
+        },
+        {
+            "key": "BUFF_IGNT_29",
+            "value": "闇耐性+5%"
+        },
+        {
+            "key": "BUFF_IGNT_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_IGNT_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_IGNT_32",
+            "value": "獣キラー+5%"
+        },
+        {
+            "key": "BUFF_IGNT_33",
+            "value": "闇属性キラー+5%"
+        },
+        {
+            "key": "BUFF_BHMT_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_BHMT_02",
+            "value": "悪魔キラー+2%"
+        },
+        {
+            "key": "BUFF_BHMT_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_BHMT_04",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_BHMT_05",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BHMT_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_BHMT_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_BHMT_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_BHMT_09",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_BHMT_10",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_BHMT_11",
+            "value": "悪魔キラー+2%"
+        },
+        {
+            "key": "BUFF_BHMT_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_BHMT_13",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BHMT_14",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BHMT_15",
+            "value": "光属性キラー+3%"
+        },
+        {
+            "key": "BUFF_BHMT_16",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_BHMT_17",
+            "value": "光耐性+3%"
+        },
+        {
+            "key": "BUFF_BHMT_18",
+            "value": "光耐性+3%"
+        },
+        {
+            "key": "BUFF_BHMT_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_BHMT_20",
+            "value": "打撃耐性+5%"
+        },
+        {
+            "key": "BUFF_BHMT_21",
+            "value": "打撃耐性+4%"
+        },
+        {
+            "key": "BUFF_BHMT_22",
+            "value": "悪魔キラー+3%"
+        },
+        {
+            "key": "BUFF_BHMT_23",
+            "value": "悪魔キラー+3%"
+        },
+        {
+            "key": "BUFF_BHMT_24",
+            "value": "斬撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_BHMT_25",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_BHMT_26",
+            "value": "光属性キラー+4%"
+        },
+        {
+            "key": "BUFF_BHMT_27",
+            "value": "光属性キラー+3%"
+        },
+        {
+            "key": "BUFF_BHMT_28",
+            "value": "光耐性+5%"
+        },
+        {
+            "key": "BUFF_BHMT_29",
+            "value": "光耐性+4%"
+        },
+        {
+            "key": "BUFF_BHMT_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_BHMT_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_BHMT_32",
+            "value": "悪魔キラー+5%"
+        },
+        {
+            "key": "BUFF_BHMT_33",
+            "value": "光属性キラー+5%"
+        },
+        {
+            "key": "BUFF_MABR_01",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_MABR_02",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_MABR_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_MABR_04",
+            "value": "氷耐性+4%"
+        },
+        {
+            "key": "BUFF_MABR_05",
+            "value": "氷耐性+2%"
+        },
+        {
+            "key": "BUFF_MABR_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_MABR_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_MABR_08",
+            "value": "TPUP+8%"
+        },
+        {
+            "key": "BUFF_MABR_09",
+            "value": "魔法攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_MABR_10",
+            "value": "魔法攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_MABR_11",
+            "value": "植物キラー+3%"
+        },
+        {
+            "key": "BUFF_MABR_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_MABR_13",
+            "value": "打撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MABR_14",
+            "value": "打撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MABR_15",
+            "value": "麻痺耐性+3%"
+        },
+        {
+            "key": "BUFF_MABR_16",
+            "value": "氷耐性+4%"
+        },
+        {
+            "key": "BUFF_MABR_17",
+            "value": "土属性キラー+3%"
+        },
+        {
+            "key": "BUFF_MABR_18",
+            "value": "土属性キラー+3%"
+        },
+        {
+            "key": "BUFF_MABR_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_MABR_20",
+            "value": "魔法攻撃耐性+5%"
+        },
+        {
+            "key": "BUFF_MABR_21",
+            "value": "魔法攻撃耐性+4%"
+        },
+        {
+            "key": "BUFF_MABR_22",
+            "value": "植物キラー+3%"
+        },
+        {
+            "key": "BUFF_MABR_23",
+            "value": "植物キラー+4%"
+        },
+        {
+            "key": "BUFF_MABR_24",
+            "value": "打撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MABR_25",
+            "value": "打撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MABR_26",
+            "value": "麻痺耐性+4%"
+        },
+        {
+            "key": "BUFF_MABR_27",
+            "value": "麻痺耐性+3%"
+        },
+        {
+            "key": "BUFF_MABR_28",
+            "value": "土属性キラー+5%"
+        },
+        {
+            "key": "BUFF_MABR_29",
+            "value": "土属性キラー+4%"
+        },
+        {
+            "key": "BUFF_MABR_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_MABR_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_MABR_32",
+            "value": "植物キラー+5%"
+        },
+        {
+            "key": "BUFF_MABR_33",
+            "value": "麻痺耐性+5%"
+        },
+        {
+            "key": "BUFF_MOGL_01",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_MOGL_02",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_MOGL_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_MOGL_04",
+            "value": "火耐性+4%"
+        },
+        {
+            "key": "BUFF_MOGL_05",
+            "value": "火耐性+2%"
+        },
+        {
+            "key": "BUFF_MOGL_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_MOGL_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_MOGL_08",
+            "value": "TPUP+8%"
+        },
+        {
+            "key": "BUFF_MOGL_09",
+            "value": "魔法攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_MOGL_10",
+            "value": "魔法攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_MOGL_11",
+            "value": "悪魔キラー+3%"
+        },
+        {
+            "key": "BUFF_MOGL_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_MOGL_13",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MOGL_14",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MOGL_15",
+            "value": "ドンムブ耐性+3%"
+        },
+        {
+            "key": "BUFF_MOGL_16",
+            "value": "火耐性+4%"
+        },
+        {
+            "key": "BUFF_MOGL_17",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_MOGL_18",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_MOGL_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_MOGL_20",
+            "value": "魔法攻撃耐性+5%"
+        },
+        {
+            "key": "BUFF_MOGL_21",
+            "value": "魔法攻撃耐性+4%"
+        },
+        {
+            "key": "BUFF_MOGL_22",
+            "value": "悪魔キラー+3%"
+        },
+        {
+            "key": "BUFF_MOGL_23",
+            "value": "悪魔キラー+4%"
+        },
+        {
+            "key": "BUFF_MOGL_24",
+            "value": "魔法攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MOGL_25",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MOGL_26",
+            "value": "ドンムブ耐性+4%"
+        },
+        {
+            "key": "BUFF_MOGL_27",
+            "value": "ドンムブ耐性+3%"
+        },
+        {
+            "key": "BUFF_MOGL_28",
+            "value": "風属性キラー+5%"
+        },
+        {
+            "key": "BUFF_MOGL_29",
+            "value": "風属性キラー+4%"
+        },
+        {
+            "key": "BUFF_MOGL_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_MOGL_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_MOGL_32",
+            "value": "悪魔キラー+5%"
+        },
+        {
+            "key": "BUFF_MOGL_33",
+            "value": "ドンムブ耐性+5%"
+        },
+        {
+            "key": "BUFF_LAMA_01_01",
+            "value": "命中UP+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_02",
+            "value": "死霊キラー+2%"
+        },
+        {
+            "key": "BUFF_LAMA_01_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_LAMA_01_04",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_LAMA_01_05",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_LAMA_01_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_LAMA_01_08",
+            "value": "命中UP+4%"
+        },
+        {
+            "key": "BUFF_LAMA_01_09",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_10",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_11",
+            "value": "死霊キラー+2%"
+        },
+        {
+            "key": "BUFF_LAMA_01_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_LAMA_01_13",
+            "value": "打撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_14",
+            "value": "打撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_15",
+            "value": "氷属性キラー+1%"
+        },
+        {
+            "key": "BUFF_LAMA_01_16",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_LAMA_01_17",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_18",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_LAMA_01_20",
+            "value": "打撃耐性+5%"
+        },
+        {
+            "key": "BUFF_LAMA_01_21",
+            "value": "打撃耐性+4%"
+        },
+        {
+            "key": "BUFF_LAMA_01_22",
+            "value": "死霊キラー+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_23",
+            "value": "死霊キラー+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_24",
+            "value": "打撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_LAMA_01_25",
+            "value": "打撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_LAMA_01_26",
+            "value": "氷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_LAMA_01_27",
+            "value": "氷属性キラー+2%"
+        },
+        {
+            "key": "BUFF_LAMA_01_28",
+            "value": "水耐性+5%"
+        },
+        {
+            "key": "BUFF_LAMA_01_29",
+            "value": "水耐性+4%"
+        },
+        {
+            "key": "BUFF_LAMA_01_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_LAMA_01_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_LAMA_01_32",
+            "value": "死霊キラー+5%"
+        },
+        {
+            "key": "BUFF_LAMA_01_33",
+            "value": "氷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_OCHU_01",
+            "value": "命中UP+3%"
+        },
+        {
+            "key": "BUFF_OCHU_02",
+            "value": "植物キラー+2%"
+        },
+        {
+            "key": "BUFF_OCHU_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_OCHU_04",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_OCHU_05",
+            "value": "魔力UP+3%"
+        },
+        {
+            "key": "BUFF_OCHU_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_OCHU_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_OCHU_08",
+            "value": "命中UP+4%"
+        },
+        {
+            "key": "BUFF_OCHU_09",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_OCHU_10",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_OCHU_11",
+            "value": "植物キラー+2%"
+        },
+        {
+            "key": "BUFF_OCHU_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_OCHU_13",
+            "value": "風耐性+3%"
+        },
+        {
+            "key": "BUFF_OCHU_14",
+            "value": "風耐性+3%"
+        },
+        {
+            "key": "BUFF_OCHU_15",
+            "value": "雷属性キラー+1%"
+        },
+        {
+            "key": "BUFF_OCHU_16",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_OCHU_17",
+            "value": "雷耐性+3%"
+        },
+        {
+            "key": "BUFF_OCHU_18",
+            "value": "雷耐性+3%"
+        },
+        {
+            "key": "BUFF_OCHU_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_OCHU_20",
+            "value": "斬撃耐性+5%"
+        },
+        {
+            "key": "BUFF_OCHU_21",
+            "value": "斬撃耐性+4%"
+        },
+        {
+            "key": "BUFF_OCHU_22",
+            "value": "植物キラー+3%"
+        },
+        {
+            "key": "BUFF_OCHU_23",
+            "value": "植物キラー+3%"
+        },
+        {
+            "key": "BUFF_OCHU_24",
+            "value": "風耐性+5%"
+        },
+        {
+            "key": "BUFF_OCHU_25",
+            "value": "風耐性+4%"
+        },
+        {
+            "key": "BUFF_OCHU_26",
+            "value": "雷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_OCHU_27",
+            "value": "雷属性キラー+2%"
+        },
+        {
+            "key": "BUFF_OCHU_28",
+            "value": "雷耐性+5%"
+        },
+        {
+            "key": "BUFF_OCHU_29",
+            "value": "雷耐性+4%"
+        },
+        {
+            "key": "BUFF_OCHU_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_OCHU_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_OCHU_32",
+            "value": "植物キラー+5%"
+        },
+        {
+            "key": "BUFF_OCHU_33",
+            "value": "雷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_MDFY_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_MDFY_02",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_MDFY_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_MDFY_04",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MDFY_05",
+            "value": "魔力UP+3%"
+        },
+        {
+            "key": "BUFF_MDFY_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_MDFY_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_MDFY_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_MDFY_09",
+            "value": "刺突攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_MDFY_10",
+            "value": "刺突攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_MDFY_11",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_MDFY_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_MDFY_13",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MDFY_14",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MDFY_15",
+            "value": "火属性キラー+3%"
+        },
+        {
+            "key": "BUFF_MDFY_16",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MDFY_17",
+            "value": "雷耐性+2%"
+        },
+        {
+            "key": "BUFF_MDFY_18",
+            "value": "雷耐性+2%"
+        },
+        {
+            "key": "BUFF_MDFY_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_MDFY_20",
+            "value": "刺突攻撃耐性+5%"
+        },
+        {
+            "key": "BUFF_MDFY_21",
+            "value": "刺突攻撃耐性+4%"
+        },
+        {
+            "key": "BUFF_MDFY_22",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_MDFY_23",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_MDFY_24",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MDFY_25",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MDFY_26",
+            "value": "火属性キラー+4%"
+        },
+        {
+            "key": "BUFF_MDFY_27",
+            "value": "火属性キラー+3%"
+        },
+        {
+            "key": "BUFF_MDFY_28",
+            "value": "雷耐性+4%"
+        },
+        {
+            "key": "BUFF_MDFY_29",
+            "value": "雷耐性+2%"
+        },
+        {
+            "key": "BUFF_MDFY_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_MDFY_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_MDFY_32",
+            "value": "人キラー+5%"
+        },
+        {
+            "key": "BUFF_MDFY_33",
+            "value": "火属性キラー+5%"
+        },
+        {
+            "key": "BUFF_CACT_01",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_CACT_02",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_CACT_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_CACT_04",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_CACT_05",
+            "value": "土耐性+3%"
+        },
+        {
+            "key": "BUFF_CACT_06",
+            "value": "クリティカル発生率+2"
+        },
+        {
+            "key": "BUFF_CACT_07",
+            "value": "クリティカル発生率+3"
+        },
+        {
+            "key": "BUFF_CACT_08",
+            "value": "打撃耐性+4%"
+        },
+        {
+            "key": "BUFF_CACT_09",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_CACT_10",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_CACT_11",
+            "value": "TPUP+3%"
+        },
+        {
+            "key": "BUFF_CACT_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_CACT_13",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_CACT_14",
+            "value": "魔法攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_CACT_15",
+            "value": "魔力UP+3%"
+        },
+        {
+            "key": "BUFF_CACT_16",
+            "value": "土耐性+5%"
+        },
+        {
+            "key": "BUFF_CACT_17",
+            "value": "雷属性キラー+2%"
+        },
+        {
+            "key": "BUFF_CACT_18",
+            "value": "雷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_CACT_19",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_CACT_20",
+            "value": "人キラー+6%"
+        },
+        {
+            "key": "BUFF_CACT_21",
+            "value": "人キラー+4%"
+        },
+        {
+            "key": "BUFF_CACT_22",
+            "value": "TPUP+4%"
+        },
+        {
+            "key": "BUFF_CACT_23",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_CACT_24",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_CACT_25",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_CACT_26",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_CACT_27",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_CACT_28",
+            "value": "雷属性キラー+6%"
+        },
+        {
+            "key": "BUFF_CACT_29",
+            "value": "雷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_CACT_30",
+            "value": "クリティカル発生率+5"
+        },
+        {
+            "key": "BUFF_CACT_31",
+            "value": "クリティカル発生率+6"
+        },
+        {
+            "key": "BUFF_CACT_32",
+            "value": "TPUP+6%"
+        },
+        {
+            "key": "BUFF_CACT_33",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_ARMN_01",
+            "value": "射撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ARMN_02",
+            "value": "刺突耐性+3%"
+        },
+        {
+            "key": "BUFF_ARMN_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_ARMN_04",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_ARMN_05",
+            "value": "鳥キラー+3%"
+        },
+        {
+            "key": "BUFF_ARMN_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_ARMN_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_ARMN_08",
+            "value": "射撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_ARMN_09",
+            "value": "刺突耐性+4%"
+        },
+        {
+            "key": "BUFF_ARMN_10",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_ARMN_11",
+            "value": "TPUP+3%"
+        },
+        {
+            "key": "BUFF_ARMN_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_ARMN_13",
+            "value": "火耐性+2%"
+        },
+        {
+            "key": "BUFF_ARMN_14",
+            "value": "火耐性+2%"
+        },
+        {
+            "key": "BUFF_ARMN_15",
+            "value": "魔力UP+3%"
+        },
+        {
+            "key": "BUFF_ARMN_16",
+            "value": "鳥キラー+4%"
+        },
+        {
+            "key": "BUFF_ARMN_17",
+            "value": "麻痺耐性+2%"
+        },
+        {
+            "key": "BUFF_ARMN_18",
+            "value": "麻痺耐性+3%"
+        },
+        {
+            "key": "BUFF_ARMN_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_ARMN_20",
+            "value": "刺突耐性+8%"
+        },
+        {
+            "key": "BUFF_ARMN_21",
+            "value": "刺突耐性+5%"
+        },
+        {
+            "key": "BUFF_ARMN_22",
+            "value": "TPUP+4%"
+        },
+        {
+            "key": "BUFF_ARMN_23",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_ARMN_24",
+            "value": "火耐性+3%"
+        },
+        {
+            "key": "BUFF_ARMN_25",
+            "value": "火耐性+3%"
+        },
+        {
+            "key": "BUFF_ARMN_26",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_ARMN_27",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_ARMN_28",
+            "value": "麻痺耐性+6%"
+        },
+        {
+            "key": "BUFF_ARMN_29",
+            "value": "麻痺耐性+4%"
+        },
+        {
+            "key": "BUFF_ARMN_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_ARMN_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_ARMN_32",
+            "value": "TPUP+6%"
+        },
+        {
+            "key": "BUFF_ARMN_33",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_ZUUU_01",
+            "value": "魔法攻撃耐性+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_02",
+            "value": "植物キラー+2%"
+        },
+        {
+            "key": "BUFF_ZUUU_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_ZUUU_04",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_ZUUU_05",
+            "value": "氷耐性+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_ZUUU_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_ZUUU_08",
+            "value": "魔法攻撃耐性+4%"
+        },
+        {
+            "key": "BUFF_ZUUU_09",
+            "value": "植物キラー+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_10",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_ZUUU_11",
+            "value": "TPUP+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_ZUUU_13",
+            "value": "打撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_ZUUU_14",
+            "value": "打撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_ZUUU_15",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_16",
+            "value": "氷耐性+5%"
+        },
+        {
+            "key": "BUFF_ZUUU_17",
+            "value": "土属性キラー+2%"
+        },
+        {
+            "key": "BUFF_ZUUU_18",
+            "value": "土属性キラー+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_ZUUU_20",
+            "value": "植物キラー+6%"
+        },
+        {
+            "key": "BUFF_ZUUU_21",
+            "value": "植物キラー+4%"
+        },
+        {
+            "key": "BUFF_ZUUU_22",
+            "value": "TPUP+4%"
+        },
+        {
+            "key": "BUFF_ZUUU_23",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_ZUUU_24",
+            "value": "打撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_25",
+            "value": "打撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ZUUU_26",
+            "value": "攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_ZUUU_27",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_ZUUU_28",
+            "value": "土属性キラー+6%"
+        },
+        {
+            "key": "BUFF_ZUUU_29",
+            "value": "土属性キラー+4%"
+        },
+        {
+            "key": "BUFF_ZUUU_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_ZUUU_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_ZUUU_32",
+            "value": "TPUP+6%"
+        },
+        {
+            "key": "BUFF_ZUUU_33",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_OGRE_01",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_OGRE_02",
+            "value": "水棲キラー+2%"
+        },
+        {
+            "key": "BUFF_OGRE_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_OGRE_04",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_OGRE_05",
+            "value": "土耐性+3%"
+        },
+        {
+            "key": "BUFF_OGRE_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_OGRE_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_OGRE_08",
+            "value": "打撃耐性+4%"
+        },
+        {
+            "key": "BUFF_OGRE_09",
+            "value": "水棲キラー+3%"
+        },
+        {
+            "key": "BUFF_OGRE_10",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_OGRE_11",
+            "value": "TPUP+3%"
+        },
+        {
+            "key": "BUFF_OGRE_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_OGRE_13",
+            "value": "斬撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_OGRE_14",
+            "value": "斬撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_OGRE_15",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_OGRE_16",
+            "value": "土耐性+5%"
+        },
+        {
+            "key": "BUFF_OGRE_17",
+            "value": "水属性キラー+2%"
+        },
+        {
+            "key": "BUFF_OGRE_18",
+            "value": "水属性キラー+3%"
+        },
+        {
+            "key": "BUFF_OGRE_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_OGRE_20",
+            "value": "水棲キラー+6%"
+        },
+        {
+            "key": "BUFF_OGRE_21",
+            "value": "水棲キラー+4%"
+        },
+        {
+            "key": "BUFF_OGRE_22",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_OGRE_23",
+            "value": "TPUP+4%"
+        },
+        {
+            "key": "BUFF_OGRE_24",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_OGRE_25",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_OGRE_26",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_OGRE_27",
+            "value": "攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_OGRE_28",
+            "value": "水属性キラー+6%"
+        },
+        {
+            "key": "BUFF_OGRE_29",
+            "value": "水属性キラー+4%"
+        },
+        {
+            "key": "BUFF_OGRE_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_OGRE_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_OGRE_32",
+            "value": "TPUP+6%"
+        },
+        {
+            "key": "BUFF_OGRE_33",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_BOMB_01",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_BOMB_02",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_BOMB_03",
+            "value": "クリティカル回避率+3"
+        },
+        {
+            "key": "BUFF_BOMB_04",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_BOMB_05",
+            "value": "水耐性+3%"
+        },
+        {
+            "key": "BUFF_BOMB_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_BOMB_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_BOMB_08",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_BOMB_09",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_BOMB_10",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_BOMB_11",
+            "value": "TPUP+3%"
+        },
+        {
+            "key": "BUFF_BOMB_12",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_BOMB_13",
+            "value": "刺突攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_BOMB_14",
+            "value": "刺突攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_BOMB_15",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BOMB_16",
+            "value": "水耐性+5%"
+        },
+        {
+            "key": "BUFF_BOMB_17",
+            "value": "氷属性キラー+2%"
+        },
+        {
+            "key": "BUFF_BOMB_18",
+            "value": "氷属性キラー+3%"
+        },
+        {
+            "key": "BUFF_BOMB_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_BOMB_20",
+            "value": "人キラー+6%"
+        },
+        {
+            "key": "BUFF_BOMB_21",
+            "value": "人キラー+4%"
+        },
+        {
+            "key": "BUFF_BOMB_22",
+            "value": "TPUP+4%"
+        },
+        {
+            "key": "BUFF_BOMB_23",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_BOMB_24",
+            "value": "刺突攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BOMB_25",
+            "value": "刺突攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BOMB_26",
+            "value": "攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_BOMB_27",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_BOMB_28",
+            "value": "氷属性キラー+6%"
+        },
+        {
+            "key": "BUFF_BOMB_29",
+            "value": "氷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_BOMB_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_BOMB_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_BOMB_32",
+            "value": "TPUP+6%"
+        },
+        {
+            "key": "BUFF_BOMB_33",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_CHCB_01_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_CHCB_01_02",
+            "value": "鳥キラー+2%"
+        },
+        {
+            "key": "BUFF_CHCB_01_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_CHCB_01_04",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_CHCB_01_05",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_CHCB_01_07",
+            "value": "召喚魔法Lv3"
+        },
+        {
+            "key": "BUFF_CHCB_01_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_CHCB_01_09",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_10",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_11",
+            "value": "鳥キラー+2%"
+        },
+        {
+            "key": "BUFF_CHCB_01_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_CHCB_01_13",
+            "value": "闇耐性+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_14",
+            "value": "闇耐性+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_15",
+            "value": "闇属性キラー+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_16",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_CHCB_01_17",
+            "value": "斬撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_CHCB_01_18",
+            "value": "斬撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_CHCB_01_19",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_CHCB_01_20",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_CHCB_01_21",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_CHCB_01_22",
+            "value": "鳥キラー+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_23",
+            "value": "鳥キラー+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_24",
+            "value": "闇耐性+5%"
+        },
+        {
+            "key": "BUFF_CHCB_01_25",
+            "value": "闇耐性+4%"
+        },
+        {
+            "key": "BUFF_CHCB_01_26",
+            "value": "闇属性キラー+4%"
+        },
+        {
+            "key": "BUFF_CHCB_01_27",
+            "value": "闇属性キラー+3%"
+        },
+        {
+            "key": "BUFF_CHCB_01_28",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_CHCB_01_29",
+            "value": "斬撃攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_CHCB_01_30",
+            "value": "召喚魔法Lv6"
+        },
+        {
+            "key": "BUFF_CHCB_01_31",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_CHCB_01_32",
+            "value": "鳥キラー+5%"
+        },
+        {
+            "key": "BUFF_CHCB_01_33",
+            "value": "闇属性キラー+5%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_HP_01",
+            "value": "HP+7"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_HP_02",
+            "value": "HP+20"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_HP_03",
+            "value": "HP+30"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_HP_04",
+            "value": "HP+40"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_HP_05",
+            "value": "HP+60"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MP_01",
+            "value": "TP+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MP_02",
+            "value": "TP+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MP_03",
+            "value": "TP+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MP_04",
+            "value": "TP+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MP_05",
+            "value": "TP+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_01",
+            "value": "初期AP+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_02",
+            "value": "初期AP+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_03",
+            "value": "初期AP+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_04",
+            "value": "初期AP+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_05",
+            "value": "初期AP+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AT_01",
+            "value": "攻撃+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AT_02",
+            "value": "攻撃+5"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AT_03",
+            "value": "攻撃+7"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AT_04",
+            "value": "攻撃+8"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AT_05",
+            "value": "攻撃+10"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DF_01",
+            "value": "防御+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DF_02",
+            "value": "防御+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DF_03",
+            "value": "防御+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DF_04",
+            "value": "防御+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DF_05",
+            "value": "防御+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MA_01",
+            "value": "魔力+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MA_02",
+            "value": "魔力+5"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MA_03",
+            "value": "魔力+7"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MA_04",
+            "value": "魔力+8"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MA_05",
+            "value": "魔力+10"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MD_01",
+            "value": "精神+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MD_02",
+            "value": "精神+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MD_03",
+            "value": "精神+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MD_04",
+            "value": "精神+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MD_05",
+            "value": "精神+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DX_01",
+            "value": "器用さ+4"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DX_02",
+            "value": "器用さ+5"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DX_03",
+            "value": "器用さ+6"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DX_04",
+            "value": "器用さ+7"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DX_05",
+            "value": "器用さ+10"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_SD_01",
+            "value": "素早さ+1"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_SD_02",
+            "value": "素早さ+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_SD_03",
+            "value": "素早さ+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_SD_04",
+            "value": "素早さ+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_SD_05",
+            "value": "素早さ+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_LK_01",
+            "value": "運+4"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_LK_02",
+            "value": "運+5"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_LK_03",
+            "value": "運+6"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_LK_04",
+            "value": "運+7"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_LK_05",
+            "value": "運+10"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_CR_01",
+            "value": "クリティカル発生率+2"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_CR_02",
+            "value": "クリティカル発生率+3"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_CR_03",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_CR_04",
+            "value": "クリティカル発生率+5"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_CR_05",
+            "value": "クリティカル発生率+6"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_HP_15_PER",
+            "value": "HP+15%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AT_20_PER",
+            "value": "攻撃+20%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MA_20_PER",
+            "value": "魔力+20%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_DX_20_PER",
+            "value": "器用さ+20%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_LK_20_PER",
+            "value": "運+20%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_SD_10_PER",
+            "value": "素早さ+10%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MP_20_PER",
+            "value": "TP+20%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_20_PER",
+            "value": "AP+20%"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_MV_1",
+            "value": "Move+1"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_ELME_ALL_10",
+            "value": "全攻撃属性耐性+10"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_RA_1",
+            "value": "射程+1"
+        },
+        {
+            "key": "BUFF_UN_KL_FENE_20",
+            "value": "フェネスキラー+20"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_AP_15",
+            "value": "初期AP+15"
+        },
+        {
+            "key": "BUFF_UN_BD_BUFF_BL_15",
+            "value": "打撃攻撃力+10"
+        }
+    ]
+}

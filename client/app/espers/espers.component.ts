@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-espers',
@@ -14,7 +15,8 @@ export class EspersComponent implements OnInit {
 
   constructor(
     private esperService: EsperService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEspers();
@@ -56,5 +58,9 @@ export class EspersComponent implements OnInit {
         });
       });
     });
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
   }
 }

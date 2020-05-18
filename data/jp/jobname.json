@@ -1,0 +1,896 @@
+{
+    "infos": [
+        {
+            "key": "JB_LW_WAR",
+            "value": "ロード"
+        },
+        {
+            "key": "JB_LW_WAR_FIRE",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_ICE",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_WIND",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_SOIL",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_THUN",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_WATER",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_SHINE",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_WAR_DARK",
+            "value": "戦士"
+        },
+        {
+            "key": "JB_LW_PLD",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_FIRE",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_ICE",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_WIND",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_SOIL",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_THUN",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_WATER",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_SHINE",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_PLD_DARK",
+            "value": "パラディン"
+        },
+        {
+            "key": "JB_LW_KNT",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_FIRE",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_ICE",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_WIND",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_SOIL",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_THUN",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_WATER",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_SHINE",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_KNT_DARK",
+            "value": "ナイト"
+        },
+        {
+            "key": "JB_LW_SWN",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_FIRE",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_ICE",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_WIND",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_SOIL",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_THUN",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_WATER",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_SHINE",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_SWN_DARK",
+            "value": "ソルジャー"
+        },
+        {
+            "key": "JB_LW_HUN",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_FIRE",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_ICE",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_WIND",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_SOIL",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_THUN",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_WATER",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_SHINE",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_HUN_DARK",
+            "value": "狩人"
+        },
+        {
+            "key": "JB_LW_MNK",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_FIRE",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_ICE",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_WIND",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_SOIL",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_THUN",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_WATER",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_SHINE",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_MNK_DARK",
+            "value": "モンク"
+        },
+        {
+            "key": "JB_LW_LAN",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_FIRE",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_ICE",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_WIND",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_SOIL",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_THUN",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_WATER",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_SHINE",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_LAN_DARK",
+            "value": "槍術士"
+        },
+        {
+            "key": "JB_LW_CLR",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_FIRE",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_ICE",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_WIND",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_SOIL",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_THUN",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_WATER",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_SHINE",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_CLR_DARK",
+            "value": "クレリック"
+        },
+        {
+            "key": "JB_LW_SAM",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_FIRE",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_ICE",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_WIND",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_SOIL",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_THUN",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_WATER",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_SHINE",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_SAM_DARK",
+            "value": "侍"
+        },
+        {
+            "key": "JB_LW_DRG",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_FIRE",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_ICE",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_WIND",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_SOIL",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_THUN",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_WATER",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_SHINE",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_DRG_DARK",
+            "value": "竜騎士"
+        },
+        {
+            "key": "JB_LW_BLM_FIRE",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_WATR",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_ICE",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_SOIL",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_THUN",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_WIND",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_SHINE",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_BLM_DARK",
+            "value": "黒魔道士"
+        },
+        {
+            "key": "JB_LW_THI",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_FIRE",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_ICE",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_WIND",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_SOIL",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_THUN",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_WATER",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_SHINE",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_THI_DARK",
+            "value": "シーフ"
+        },
+        {
+            "key": "JB_LW_NIN",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_FIRE",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_ICE",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_WIND",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_SOIL",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_THUN",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_WATR",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_SHIN",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_DARK",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_GUN",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_FIRE",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_ICE",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_WIND",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_SOIL",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_THUN",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_WATER",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_SHINE",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GUN_DARK",
+            "value": "ガンナー"
+        },
+        {
+            "key": "JB_LW_GRM_FIRE",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_ICE",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_WIND",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_SOIL",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_THUN",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_SHIN",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_DARK",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_GRM_WATR",
+            "value": "緑魔道士"
+        },
+        {
+            "key": "JB_LW_MGK_FIRE",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_WATR",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_ICE",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_SOIL",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_THUN",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_SHINE",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_DARK",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_MGK_WIND",
+            "value": "魔法剣士"
+        },
+        {
+            "key": "JB_LW_RDM_FIRE",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_ICE",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_WIND",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_SOIL",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_THUN",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_WATR",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_SHIN",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_RDM_DARK",
+            "value": "赤魔道士"
+        },
+        {
+            "key": "JB_LW_TIM",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_FIRE",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_ICE",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_WIND",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_SOIL",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_THUN",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_WATER",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_SHINE",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_TIM_DARK",
+            "value": "時魔道士"
+        },
+        {
+            "key": "JB_LW_WHM",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_FIRE",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_ICE",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_WIND",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_SOIL",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_THUN",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_WATER",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_SHINE",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_WHM_DARK",
+            "value": "白魔道士"
+        },
+        {
+            "key": "JB_LW_GLMS",
+            "value": "翼ある者"
+        },
+        {
+            "key": "JB_FF14_YSTL",
+            "value": "魔女"
+        },
+        {
+            "key": "JB_FF14_TNCR",
+            "value": "ガンブレイカー"
+        },
+        {
+            "key": "JB_LW_VIK",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_FIRE",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_ICE",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_WIND",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_SOIL",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_THUN",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_WATER",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_SHINE",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_VIK_DARK",
+            "value": "バイキング"
+        },
+        {
+            "key": "JB_LW_FINA",
+            "value": "ラピスの白魔道士"
+        },
+        {
+            "key": "JB_FFT_RAMZ",
+            "value": "見習い戦士"
+        },
+        {
+            "key": "JB_FFT_GFGR",
+            "value": "ダークナイト"
+        },
+        {
+            "key": "JB_FFT_ORND",
+            "value": "剣聖"
+        },
+        {
+            "key": "JB_LW_WGN",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_FIRE",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_ICE",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_WIND",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_SOIL",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_THUN",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_WATER",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_SHINE",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_WGN_DARK",
+            "value": "ダブルガンナー"
+        },
+        {
+            "key": "JB_LW_ASS",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_FIRE",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_ICE",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_WIND",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_SOIL",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_THUN",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_WATER",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_SHINE",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_ASS_DARK",
+            "value": "アサシン"
+        },
+        {
+            "key": "JB_LW_RAIN",
+            "value": "グランシェルトの騎士"
+        },
+        {
+            "key": "JB_FF1_WROL",
+            "value": "光の戦士"
+        },
+        {
+            "key": "JB_LW_MST_FIRE",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_WATER",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_ICE",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_SOIL",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_THUN",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_WIND",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_SHINE",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_LW_MST_DARK",
+            "value": "魔杖術士"
+        },
+        {
+            "key": "JB_FFT_AGRA",
+            "value": "ホーリーナイト"
+        },
+        {
+            "key": "JB_FFT_DELT",
+            "value": "見習い戦士"
+        },
+        {
+            "key": "JB_FFT_MSTD",
+            "value": "機工士"
+        },
+        {
+            "key": "JB_LW_CAL_FIRE",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_ICE",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_WIND",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_SOIL",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_THUN",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_WATER",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_SHINE",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_CAL_DARK",
+            "value": "算術士"
+        },
+        {
+            "key": "JB_LW_STRN",
+            "value": "破滅の騎士"
+        }
+    ]
+}

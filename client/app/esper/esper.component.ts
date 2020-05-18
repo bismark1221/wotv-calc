@@ -5,7 +5,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { EsperService } from '../services/esper.service';
 import { SkillService } from '../services/skill.service';
 import { GridService } from '../services/grid.service';
-
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-esper',
@@ -22,7 +22,8 @@ export class EsperComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
-    private gridService: GridService
+    private gridService: GridService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEsper();
@@ -33,7 +34,7 @@ export class EsperComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.esper = this.esperService.getEsperBySlug(params.get('slug'))
       if (!this.esper) {
-        this.router.navigate(['/esper-not-found']);
+        this.router.navigate([this.navService.getRoute('/esper-not-found')]);
       } else {
         this.formatEsper();
       }

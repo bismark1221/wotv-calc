@@ -1,41 +1,77 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { EquipmentService } from './equipment.service'
-import {Slug } from 'ng2-slugify';
+import { Slug } from 'ng2-slugify';
+import { transliterate as tr, slugify } from 'transliteration';
 
 // Translations
-import { default as FR_UnitName } from       '../../../data/unitname.json';
-import { default as FR_SkillName } from      '../../../data/skillname.json';
-import { default as FR_BuffName } from       '../../../data/buffname.json';
-import { default as FR_JobName } from        '../../../data/jobname.json';
-import { default as FR_ArtifactName } from   '../../../data/artifactname.json';
-import { default as FR_VisionCardName } from '../../../data/visioncardname.json';
-import { default as FR_ItemOther } from      '../../../data/itemother.json';
-import { default as FR_ArtifactGrow } from   '../../../data/artifactgrow.json';
+import { default as FR_ArtifactGrow } from   '../../../data/fr/artifactgrow.json';
+import { default as FR_ArtifactName } from   '../../../data/fr/artifactname.json';
+import { default as FR_BuffName } from       '../../../data/fr/buffname.json';
+import { default as FR_ItemOther } from      '../../../data/fr/itemother.json';
+import { default as FR_JobName } from        '../../../data/fr/jobname.json';
+import { default as FR_SkillName } from      '../../../data/fr/skillname.json';
+import { default as FR_UnitName } from       '../../../data/fr/unitname.json';
+import { default as FR_VisionCardName } from '../../../data/fr/visioncardname.json';
+
+
+import { default as JP_ArtifactGrow } from   '../../../data/jp/artifactgrow.json';
+import { default as JP_ArtifactName } from   '../../../data/jp/artifactname.json';
+import { default as JP_BuffName } from       '../../../data/jp/buffname.json';
+import { default as JP_ItemOther } from      '../../../data/jp/itemother.json';
+import { default as JP_JobName } from        '../../../data/jp/jobname.json';
+import { default as JP_SkillName } from      '../../../data/jp/skillname.json';
+import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
+import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
+
+
 
 @Injectable()
 export class JsonService {
   slug = new Slug('default');
+  version = null
 
-  wotvUnits = {};
-  wotvVisionCards = {};
-  wotvEspers = {};
-  wotvEquipments = {};
-  wotvJobs = {};
+  gl = {
+    units: {},
+    skills: {},
+    buffs: {},
+    equipments: {},
+    boards: {},
+    jobs: {},
+    visionCards: {},
+    weathers: {},
+    espersBoards: {},
+    espersTbl: {},
+    equipmentRecipes: {},
+    equipementLots: {},
+    grows: {},
+    wotvUnits: {},
+    wotvVisionCards: {},
+    wotvEspers: {},
+    wotvEquipments: {},
+    wotvJobs: {}
+  }
 
-  units = {};
-  skills = {};
-  buffs = {};
-  equipments = {};
-  boards = {};
-  jobs = {};
-  visionCards = {};
-  weathers = {};
-  espersBoards = {};
-  espersTbl = {};
-  equipmentRecipes = {};
-  equipementLots = {};
-  grows = {};
+  jp = {
+    units: {},
+    skills: {},
+    buffs: {},
+    equipments: {},
+    boards: {},
+    jobs: {},
+    visionCards: {},
+    weathers: {},
+    espersBoards: {},
+    espersTbl: {},
+    equipmentRecipes: {},
+    equipementLots: {},
+    grows: {},
+    wotvUnits: {},
+    wotvVisionCards: {},
+    wotvEspers: {},
+    wotvEquipments: {},
+    wotvJobs: {}
+  }
 
   names = {
     en : {
@@ -49,6 +85,16 @@ export class JsonService {
       itemOther: {}
     },
     fr: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {}
+    },
+    jp: {
       skill: {},
       unit: {},
       buff: {},
@@ -471,89 +517,141 @@ export class JsonService {
 
   constructor(private http: HttpClient, private equipmentService: EquipmentService) {}
 
-  private jsonUnits() {
+  private GLUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Unit.json').toPromise();
   }
 
-  private jsonUnitsBoards() {
+  private GLUnitsBoards() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitAbilityBoard.json').toPromise();
   }
 
-  private jsonSkills() {
+  private GLSkills() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Skill.json').toPromise();
   }
 
-  private jsonBuffs() {
+  private GLBuffs() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Buff.json').toPromise();
   }
 
-  private jsonJobs() {
+  private GLJobs() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Job.json').toPromise();
   }
 
-  private jsonEquipments() {
+  private GLEquipments() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Artifact.json').toPromise();
   }
 
-  private jsonVisionCards() {
+  private GLVisionCards() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/VisionCard.json').toPromise();
   }
 
-  private jsonEspersBoards() {
+  private GLEspersBoards() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NetherBeastAbilityBoard.json').toPromise();
   }
 
-  private jsonWeathers() {
+  private GLWeathers() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Weather.json').toPromise();
   }
 
-  private jsonEsperLvTbls() {
+  private GLEsperLvTbls() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NBeastLvTbl.json').toPromise();
   }
 
-  private jsonArtifactRecipes() {
+  private GLArtifactRecipes() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRecipe.json').toPromise();
   }
 
-  private jsonArtifactLot() {
+  private GLArtifactLot() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRandLot.json').toPromise();
   }
 
-  private jsonGrows() {
+  private GLGrows() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Grow.json').toPromise();
   }
 
+  /* JP */
+  private JPUnits() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
+  }
+
+  private JPUnitsBoards() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitAbilityBoard.json').toPromise();
+  }
+
+  private JPSkills() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Skill.json').toPromise();
+  }
+
+  private JPBuffs() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Buff.json').toPromise();
+  }
+
+  private JPJobs() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Job.json').toPromise();
+  }
+
+  private JPEquipments() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Artifact.json').toPromise();
+  }
+
+  private JPVisionCards() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/VisionCard.json').toPromise();
+  }
+
+  private JPEspersBoards() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/NetherBeastAbilityBoard.json').toPromise();
+  }
+
+  private JPWeathers() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Weather.json').toPromise();
+  }
+
+  private JPEsperLvTbls() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/NBeastLvTbl.json').toPromise();
+  }
+
+  private JPArtifactRecipes() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactRecipe.json').toPromise();
+  }
+
+  private JPArtifactLot() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactRandLot.json').toPromise();
+  }
+
+  private JPGrows() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Grow.json').toPromise();
+  }
 
   /* Translation */
-  private jsonUnitNames() {
+  private TranslateUnitNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/UnitName.json').toPromise();
   }
 
-  private jsonSkillNames() {
+  private TranslateSkillNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/SkillName.json').toPromise();
   }
 
-  private jsonBuffNames() {
+  private TranslateBuffNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/BuffName.json').toPromise();
   }
 
-  private jsonJobNames() {
+  private TranslateJobNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/JobName.json').toPromise();
   }
 
-  private jsonEquipmentNames() {
+  private TranslateEquipmentNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactName.json').toPromise();
   }
 
-  private jsonVisionCardNames() {
+  private TranslateVisionCardNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/VisionCardName.json').toPromise();
   }
 
-  private jsonVisionItemOthers() {
+  private TranslateVisionItemOthers() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemOther.json').toPromise();
   }
 
-  private jsonEquipmentGrow() {
+  private TranslateEquipmentGrow() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactGrow.json').toPromise();
   }
 
@@ -561,49 +659,79 @@ export class JsonService {
   getJsons(): Promise<any[]> {
     // @ts-ignore
     return Promise.all([
-      this.jsonUnits(),
-      this.jsonUnitNames(),
-      this.jsonJobNames(),
-      this.jsonUnitsBoards(),
-      this.jsonSkills(),
-      this.jsonSkillNames(),
-      this.jsonBuffs(),
-      this.jsonBuffNames(),
-      this.jsonJobs(),
-      this.jsonEquipments(),
-      this.jsonEquipmentNames(),
-      this.jsonVisionCards(),
-      this.jsonVisionCardNames(),
-      this.jsonEspersBoards(),
-      this.jsonWeathers(),
-      this.jsonEsperLvTbls(),
-      this.jsonArtifactRecipes(),
-      this.jsonVisionItemOthers(),
-      this.jsonArtifactLot(),
-      this.jsonEquipmentGrow(),
-      this.jsonGrows(),
+      this.GLUnits(),
+      this.GLUnitsBoards(),
+      this.GLSkills(),
+      this.GLBuffs(),
+      this.GLJobs(),
+      this.GLEquipments(),
+      this.GLVisionCards(),
+      this.GLEspersBoards(),
+      this.GLWeathers(),
+      this.GLEsperLvTbls(),
+      this.GLArtifactRecipes(),
+      this.GLArtifactLot(),
+      this.GLGrows(),
+
+      this.JPUnits(),
+      this.JPUnitsBoards(),
+      this.JPSkills(),
+      this.JPBuffs(),
+      this.JPJobs(),
+      this.JPEquipments(),
+      this.JPVisionCards(),
+      this.JPEspersBoards(),
+      this.JPWeathers(),
+      this.JPEsperLvTbls(),
+      this.JPArtifactRecipes(),
+      this.JPArtifactLot(),
+      this.JPGrows(),
+
+      this.TranslateUnitNames(),
+      this.TranslateJobNames(),
+      this.TranslateSkillNames(),
+      this.TranslateBuffNames(),
+      this.TranslateEquipmentNames(),
+      this.TranslateVisionCardNames(),
+      this.TranslateVisionItemOthers(),
+      this.TranslateEquipmentGrow(),
     ]).then(responses => {
-      this.units = this.formatJson(responses[0]);
-      this.names.en.unit = this.formatNames(responses[1]);
-      this.names.en.job = this.formatNames(responses[2]);
-      this.boards = this.formatJson(responses[3]);
-      this.skills = this.formatJson(responses[4]);
-      this.names.en.skill = this.formatNames(responses[5]);
-      this.buffs = this.formatJson(responses[6]);
-      this.names.en.buff = this.formatNames(responses[7]);
-      this.jobs = this.formatJson(responses[8]);
-      this.equipments = this.formatJson(responses[9]);
-      this.names.en.equipment = this.formatNames(responses[10]);
-      this.visionCards = this.formatJson(responses[11]);
-      this.names.en.visionCard = this.formatNames(responses[12]);
-      this.espersBoards = this.formatJson(responses[13]);
-      this.weathers = this.formatJson(responses[14]);
-      this.espersTbl = this.formatJson(responses[15]);
-      this.equipmentRecipes = this.formatJson(responses[16]);
-      this.names.en.itemOther = this.formatNames(responses[17]);
-      this.equipementLots = this.formatJson(responses[18]);
-      this.names.en.equipmentGrow = this.formatNames(responses[19]);
-      this.grows = this.formatJson(responses[20]);
+      this.gl.units = this.formatJson(responses[0]);
+      this.gl.boards = this.formatJson(responses[1]);
+      this.gl.skills = this.formatJson(responses[2]);
+      this.gl.buffs = this.formatJson(responses[3]);
+      this.gl.jobs = this.formatJson(responses[4]);
+      this.gl.equipments = this.formatJson(responses[5]);
+      this.gl.visionCards = this.formatJson(responses[6]);
+      this.gl.espersBoards = this.formatJson(responses[7]);
+      this.gl.weathers = this.formatJson(responses[8]);
+      this.gl.espersTbl = this.formatJson(responses[9]);
+      this.gl.equipmentRecipes = this.formatJson(responses[10]);
+      this.gl.equipementLots = this.formatJson(responses[11]);
+      this.gl.grows = this.formatJson(responses[12]);
+
+      this.jp.units = this.formatJson(responses[13]);
+      this.jp.boards = this.formatJson(responses[14]);
+      this.jp.skills = this.formatJson(responses[15]);
+      this.jp.buffs = this.formatJson(responses[16]);
+      this.jp.jobs = this.formatJson(responses[17]);
+      this.jp.equipments = this.formatJson(responses[18]);
+      this.jp.visionCards = this.formatJson(responses[19]);
+      this.jp.espersBoards = this.formatJson(responses[20]);
+      this.jp.weathers = this.formatJson(responses[21]);
+      this.jp.espersTbl = this.formatJson(responses[22]);
+      this.jp.equipmentRecipes = this.formatJson(responses[23]);
+      this.jp.equipementLots = this.formatJson(responses[24]);
+      this.jp.grows = this.formatJson(responses[25]);
+
+      this.names.en.unit = this.formatNames(responses[26]);
+      this.names.en.job = this.formatNames(responses[27]);
+      this.names.en.skill = this.formatNames(responses[28]);
+      this.names.en.buff = this.formatNames(responses[29]);
+      this.names.en.equipment = this.formatNames(responses[30]);
+      this.names.en.visionCard = this.formatNames(responses[31]);
+      this.names.en.itemOther = this.formatNames(responses[32]);
+      this.names.en.equipmentGrow = this.formatNames(responses[33]);
 
       this.names.fr.unit = this.formatNames(FR_UnitName)
       this.names.fr.skill = this.formatNames(FR_SkillName)
@@ -614,14 +742,32 @@ export class JsonService {
       this.names.fr.itemOther = this.formatNames(FR_ItemOther)
       this.names.fr.equipmentGrow = this.formatNames(FR_ArtifactGrow)
 
+      this.names.jp.unit = this.formatNames(JP_UnitName)
+      this.names.jp.skill = this.formatNames(JP_SkillName)
+      this.names.jp.job = this.formatNames(JP_JobName)
+      this.names.jp.buff = this.formatNames(JP_BuffName)
+      this.names.jp.equipment = this.formatNames(JP_ArtifactName)
+      this.names.jp.visionCard = this.formatNames(JP_VisionCardName)
+      this.names.jp.itemOther = this.formatNames(JP_ItemOther)
+      this.names.jp.equipmentGrow = this.formatNames(JP_ArtifactGrow)
+
       this.formatJsons();
 
       return {
-        units: this.wotvUnits,
-        visionCards: this.wotvVisionCards,
-        espers: this.wotvEspers,
-        equipments: this.wotvEquipments,
-        jobs: this.wotvJobs
+        gl: {
+          units: this.gl.wotvUnits,
+          visionCards: this.gl.wotvVisionCards,
+          espers: this.gl.wotvEspers,
+          equipments: this.gl.wotvEquipments,
+          jobs: this.gl.wotvJobs
+        },
+        jp: {
+          units: this.jp.wotvUnits,
+          visionCards: this.jp.wotvVisionCards,
+          espers: this.jp.wotvEspers,
+          equipments: this.jp.wotvEquipments,
+          jobs: this.jp.wotvJobs
+        }
       };
     });
   }
@@ -645,36 +791,41 @@ export class JsonService {
   }
 
   private formatJsons() {
-    Object.keys(this.jobs).forEach(jobId => {
-      this.addJob(this.jobs[jobId])
-    })
+    let versions = ["gl", "jp"]
+    for(let i = 0; i < versions.length; i ++) {
+      this.version = versions[i]
 
-    Object.keys(this.units).forEach(unitId => {
-      if (this.units[unitId].type === 0) {
-        this.addUnit(this.units[unitId]);
-      }
+      Object.keys(this[this.version].jobs).forEach(jobId => {
+        this.addJob(this[this.version].jobs[jobId])
+      })
 
-      if (this.units[unitId].type === 1) {
-        this.addEsper(this.units[unitId]);
-      }
-    });
+      Object.keys(this[this.version].units).forEach(unitId => {
+        if (this[this.version].units[unitId].type === 0) {
+          this.addUnit(this[this.version].units[unitId]);
+        }
 
-    this.cleanUnits();
+        if (this[this.version].units[unitId].type === 1) {
+          this.addEsper(this[this.version].units[unitId]);
+        }
+      });
 
-    Object.keys(this.visionCards).forEach(visionCardId => {
-      this.addVisionCard(this.visionCards[visionCardId]);
-    });
+      this.cleanUnits();
 
-    Object.keys(this.equipments).forEach(equipmentId => {
-      this.addEquipment(this.equipments[equipmentId]);
-    });
+      Object.keys(this[this.version].visionCards).forEach(visionCardId => {
+        this.addVisionCard(this[this.version].visionCards[visionCardId]);
+      });
+
+      Object.keys(this[this.version].equipments).forEach(equipmentId => {
+        this.addEquipment(this[this.version].equipments[equipmentId]);
+      });
+    }
   }
 
   private addJob(job) {
     let dataId = job.iname;
-    this.wotvJobs[dataId] = {
+    this[this.version].wotvJobs[dataId] = {
       dataId: dataId,
-      names: { en: this.names.en.job[dataId], fr: this.names.fr.job[dataId] },
+      names: {},
       statsModifiers: [],
       image: job.mdl.toLowerCase(),
       subRate: job.sub_rate,
@@ -684,11 +835,13 @@ export class JsonService {
       }
     };
 
+    this.getNames(this[this.version].wotvJobs[dataId], 'job');
+
     job.equips.forEach(equip => {
       if (this.equipmentService.isWeapon(this.jobEquip[equip])) {
-        this.wotvJobs[dataId].equipments.weapons.push(this.jobEquip[equip])
+        this[this.version].wotvJobs[dataId].equipments.weapons.push(this.jobEquip[equip])
       } else {
-        this.wotvJobs[dataId].equipments.armors.push(this.jobEquip[equip])
+        this[this.version].wotvJobs[dataId].equipments.armors.push(this.jobEquip[equip])
       }
     });
 
@@ -698,13 +851,13 @@ export class JsonService {
         rankModifiers[this.stats.unit[stat]] = rank[stat];
       })
 
-      this.wotvJobs[dataId].statsModifiers.push(rankModifiers);
+      this[this.version].wotvJobs[dataId].statsModifiers.push(rankModifiers);
     })
   }
 
   private addUnit(unit) {
     let dataId = unit.iname;
-    this.wotvUnits[dataId] = {
+    this[this.version].wotvUnits[dataId] = {
       dataId: dataId,
       names: {},
       rarity: this.rarity[unit.rare],
@@ -712,30 +865,26 @@ export class JsonService {
       stats: {},
       element: this.elements[unit.elem[0]],
       image: unit.charaId.toLowerCase(),
-      equipments: {
-        weapons: [],
-        armors: []
-      },
       board: {
         nodes: {},
         lines: []
       }
     };
 
-    this.getNames(this.wotvUnits[dataId], 'unit');
+    this.getNames(this[this.version].wotvUnits[dataId], 'unit');
 
-    this.getStats(this.wotvUnits[dataId], unit.status, 'unit')
-    this.getLB(this.wotvUnits[dataId], unit.limit)
-    this.getMasterSkill(this.wotvUnits[dataId], unit.mstskl)
-    this.getTMR(this.wotvUnits[dataId], unit.trust)
-    this.getSkillsAndBuffs(this.wotvUnits[dataId]);
+    this.getStats(this[this.version].wotvUnits[dataId], unit.status, 'unit')
+    this.getLB(this[this.version].wotvUnits[dataId], unit.limit)
+    this.getMasterSkill(this[this.version].wotvUnits[dataId], unit.mstskl)
+    this.getTMR(this[this.version].wotvUnits[dataId], unit.trust)
+    this.getSkillsAndBuffs(this[this.version].wotvUnits[dataId]);
   }
 
   private addVisionCard(visionCard) {
     let dataId = visionCard.iname;
 
     if (visionCard.type === 0) {
-      this.wotvVisionCards[dataId] = {
+      this[this.version].wotvVisionCards[dataId] = {
         dataId: dataId,
         names: {},
         rarity: this.rarity[visionCard.rare],
@@ -743,28 +892,43 @@ export class JsonService {
         image: visionCard.icon.toLowerCase()
       };
 
-      this.getNames(this.wotvVisionCards[dataId], 'visionCard');
-      this.getStats(this.wotvVisionCards[dataId], visionCard.status, 'visionCard')
+      this.getNames(this[this.version].wotvVisionCards[dataId], 'visionCard');
+      this.getStats(this[this.version].wotvVisionCards[dataId], visionCard.status, 'visionCard')
 
-      this.getVisionCardSkillsAndBuffs(this.wotvVisionCards[dataId], visionCard);
+      this.getVisionCardSkillsAndBuffs(this[this.version].wotvVisionCards[dataId], visionCard);
     }
   }
 
   private getNames(item, type) {
-    if (this.names.en[type][item.dataId]) {
-      item.names.en = this.names.en[type][item.dataId]
-      item.names.fr = this.names.fr[type][item.dataId]
-      item.slug = this.slug.slugify(item.names.en)
+    if (this.version == "gl") {
+      if (this.names.en[type][item.dataId]) {
+        item.names.en = this.names.en[type][item.dataId]
+        item.names.fr = this.names.fr[type][item.dataId]
+        item.slug = this.slug.slugify(item.names.en)
+      } else {
+        item.names.en = item.dataId;
+        item.names.fr = item.dataId;
+        item.slug = this.slug.slugify(item.names.en)
+      }
     } else {
-      item.names.en = item.dataId;
-      item.names.fr = item.dataId;
-      item.slug = this.slug.slugify(item.names.en)
+      if (type == "unit" && this.names.en[type][item.dataId]
+        || type == "visionCard" && this.names.en[type][item.dataId]
+        || type == "equipment" && this.names.en[type][item.dataId]) {
+        item.names.en = this.names.en[type][item.dataId] + " - " + this.names.jp[type][item.dataId]
+        item.slug = this.slug.slugify(this.names.en[type][item.dataId])
+      } else if (this.names.jp[type][item.dataId]) {
+        item.names.en = this.names.jp[type][item.dataId]
+        item.slug = slugify(item.names.en)
+      } else {
+        item.names.en = item.dataId;
+        item.slug = this.slug.slugify(item.names.en)
+      }
     }
   }
 
   private getSkillsAndBuffs(unit) {
-    if (this.boards[unit.dataId]) {
-      this.boards[unit.dataId].panels.forEach(item => {
+    if (this[this.version].boards[unit.dataId]) {
+      this[this.version].boards[unit.dataId].panels.forEach(item => {
 
         unit.board.nodes[item.panel_id] = {
           dataId: item.value,
@@ -773,7 +937,7 @@ export class JsonService {
         }
       });
 
-      this.boards[unit.dataId].lines.forEach(line => {
+      this[this.version].boards[unit.dataId].lines.forEach(line => {
         unit.board.lines.push(line.line_id)
       })
     }
@@ -817,14 +981,14 @@ export class JsonService {
       sp: panelSkill.sp,
       effects: [],
       dataId: panelSkill.value,
-      type: this.slots[(this.skills[panelSkill.value] && this.skills[panelSkill.value].slot ? this.skills[panelSkill.value].slot : 0)],
-      mainSkill: this.skills[panelSkill.value] && this.skills[panelSkill.value].slot == 1
+      type: this.slots[(this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot ? this[this.version].skills[panelSkill.value].slot : 0)],
+      mainSkill: this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot == 1
     };
 
     this.updateSkill(unit, skill, panelSkill.value);
 
-    if (skill.type !== "buff" && this.skills[panelSkill.value].wth) {
-      this.addWeather(unit, skill, this.skills[panelSkill.value].wth.id);
+    if (skill.type !== "buff" && this[this.version].skills[panelSkill.value].wth) {
+      this.addWeather(unit, skill, this[this.version].skills[panelSkill.value].wth.id);
     }
 
     return skill;
@@ -884,11 +1048,10 @@ export class JsonService {
     if (skill.type == "buff") {
       dataSkill.s_buffs = [skillId]
     } else {
-      dataSkill = this.skills[skillId]
-      skill.names = {
-        en: this.names.en.skill[skillId],
-        fr: this.names.fr.skill[skillId]
-      }
+      dataSkill = this[this.version].skills[skillId]
+      skill.names = {}
+      this.getNames(skill, 'skill')
+      dataSkill.names = skill.names
     }
 
     if (typeof(dataSkill.cost_type) == "number") {
@@ -1055,26 +1218,26 @@ export class JsonService {
         let duplicateFinded = false;
 
         while (!finished) {
-          if (this.buffs[buff]["type" + i]) {
-            if (duplicateFinded && this.buffs[buff]["type" + i] === 117) {} else {
-              if (!this.buffTypes[this.buffs[buff]["type" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this.buffs[buff]["type" + i])
+          if (this[this.version].buffs[buff]["type" + i]) {
+            if (duplicateFinded && this[this.version].buffs[buff]["type" + i] === 117) {} else {
+              if (!this.buffTypes[this[this.version].buffs[buff]["type" + i]]) {
+                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
               }
 
-              if (this.buffs[buff]["id" + i]) {
-                buffs.push(this.buffs[this.buffs[buff]["id" + i]].iname);
+              if (this[this.version].buffs[buff]["id" + i]) {
+                buffs.push(this[this.version].buffs[this[this.version].buffs[buff]["id" + i]].iname);
               }
 
-              if (this.buffs[buff]["tag" + i] && !this.killers[this.buffs[buff]["tag" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this.buffs[buff]["tag" + i])
+              if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
+                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
               }
 
-              let type = this.buffs[buff]["tag" + i] ? this.killers[this.buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this.buffs[buff]["type" + i]]
+              let type = this[this.version].buffs[buff]["tag" + i] ? this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this[this.version].buffs[buff]["type" + i]]
               let nullifyOrDispel = false;
               if (this.statsAtkRes.indexOf(type) !== -1) {
-                type = type + "_" + (this.calcType[this.buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
               } else if (this.ailmentStatus.indexOf(type) !== -1) {
-                let calcType = this.calcType[this.buffs[buff]["calc" + i]]
+                let calcType = this.calcType[this[this.version].buffs[buff]["calc" + i]]
                 if (calcType == "nullify" || calcType == "dispel") {
                   nullifyOrDispel = true
                   let effect = this.findEffect(skill, calcType.toUpperCase())
@@ -1087,22 +1250,22 @@ export class JsonService {
                   }
                   effect.ailments.push(type)
                 } else {
-                  type = type + "_" + (this.calcType[this.buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                  type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
                 }
               }
 
               if (!nullifyOrDispel && type !== "IMBUE") {
                 skill.effects.push({
                   type: type,
-                  minValue: this.buffs[buff]["val" + i],
-                  maxValue: this.buffs[buff]["val" + i + "1"],
-                  calcType: this.calcType[this.buffs[buff]["calc" + i]] ? this.calcType[this.buffs[buff]["calc" + i]] : "unknow",
-                  rate: this.buffs[buff].rate,
-                  turn: this.buffs[buff].turn
+                  minValue: this[this.version].buffs[buff]["val" + i],
+                  maxValue: this[this.version].buffs[buff]["val" + i + "1"],
+                  calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
+                  rate: this[this.version].buffs[buff].rate,
+                  turn: this[this.version].buffs[buff].turn
                 });
               }
 
-              if (this.buffs[buff]["type" + i] === 116) {
+              if (this[this.version].buffs[buff]["type" + i] === 116) {
                 duplicateFinded = true;
               }
             }
@@ -1141,11 +1304,10 @@ export class JsonService {
   private getLB(unit, lbId) {
     if (lbId) {
       let limit = {
-        names: { en: this.names.en.skill[lbId], fr: this.names.fr.skill[lbId]},
+        names: {},
         effects: [],
         dataId: lbId
       };
-
       this.updateSkill(unit, limit, lbId);
 
       unit.limit = limit
@@ -1154,47 +1316,64 @@ export class JsonService {
 
   private getMasterSkill(unit, skillId) {
     if (skillId) {
-      let masterSkill = {
-        names: { en: this.names.en.skill[skillId], fr: this.names.fr.skill[skillId]},
-        effects: [],
-        dataId: skillId
-      };
+      if (Array.isArray(skillId)) {
+        unit.masterSkill = []
+        let masterSkill = null
 
-      this.updateSkill(unit, masterSkill, skillId);
+        skillId.forEach(id => {
+          let masterSkill = {
+            names: {},
+            effects: [],
+            dataId: id
+          };
+          this.updateSkill(unit, masterSkill, id);
 
-      unit.masterSkill = masterSkill
+          unit.masterSkill.push(masterSkill)
+        })
+      } else {
+        let masterSkill = {
+          names: {},
+          effects: [],
+          dataId: skillId
+        };
+        this.updateSkill(unit, masterSkill, skillId);
+
+        unit.masterSkill =  [masterSkill]
+      }
     }
   }
 
   private getTMR(unit, tmrId) {
     if (tmrId) {
       let tmr = {
-        names: { en: this.names.en.equipment[tmrId], fr: this.names.fr.equipment[tmrId]},
+        names: {},
         stats: {},
-        type: this.jobEquip[this.equipments[tmrId].cat[0]],
+        type: this.jobEquip[this[this.version].equipments[tmrId].cat[0]],
         dataId: tmrId,
         skills: [],
-        image: this.equipments[tmrId].asset.toLowerCase()
+        image: this[this.version].equipments[tmrId].asset.toLowerCase()
       }
 
-      Object.keys(this.equipments[tmrId].status[0]).forEach(stat => {
-        tmr.stats[this.stats.unit[stat]] = this.equipments[tmrId].status[0][stat]
+      this.getNames(tmr, "equipment")
+
+      Object.keys(this[this.version].equipments[tmrId].status[0]).forEach(stat => {
+        tmr.stats[this.stats.unit[stat]] = this[this.version].equipments[tmrId].status[0][stat]
       })
 
       let lastSkillId = [];
       for (let i = 1; i <= 5; i++) {
-        if (this.equipments[tmrId]["skl" + i]) {
-          for (let j = 0; j < this.equipments[tmrId]["skl" + i].length; j++) {
-            if (lastSkillId[j] !== this.equipments[tmrId]["skl" + i][j]) {
+        if (this[this.version].equipments[tmrId]["skl" + i]) {
+          for (let j = 0; j < this[this.version].equipments[tmrId]["skl" + i].length; j++) {
+            if (lastSkillId[j] !== this[this.version].equipments[tmrId]["skl" + i][j]) {
               let skill = {
-                names: { en: this.names.en.skill[this.equipments[tmrId]["skl" + i][j]], fr: this.names.fr.skill[this.equipments[tmrId]["skl" + i][j]]},
-                dataId: this.equipments[tmrId]["skl" + i][j],
+                dataId: this[this.version].equipments[tmrId]["skl" + i][j],
+                names: {},
                 effects: [],
-                type: this.slots[this.skills[this.equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1]
+                type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1]
               }
-              this.updateSkill(unit, skill, this.equipments[tmrId]["skl" + i][j]);
+              this.updateSkill(unit, skill, this[this.version].equipments[tmrId]["skl" + i][j]);
               tmr.skills.push(skill)
-              lastSkillId[j] = this.equipments[tmrId]["skl" + i][j]
+              lastSkillId[j] = this[this.version].equipments[tmrId]["skl" + i][j]
             }
           }
         }
@@ -1206,13 +1385,11 @@ export class JsonService {
 
   private addEsper(esper) {
     let dataId = esper.iname;
-    this.wotvEspers[dataId] = {
+    this[this.version].wotvEspers[dataId] = {
       dataId: dataId,
       names: {},
       rarity: this.rarity[esper.rare],
-      skills: [
-        this.addSkill(this.wotvEspers[dataId], {slot: 1, value: esper.atkskl})
-      ],
+      skills: [],
       stats: {},
       SPs : [],
       element: this.elements[esper.elem[0]],
@@ -1223,21 +1400,25 @@ export class JsonService {
       }
     };
 
-    this.getNames(this.wotvEspers[dataId], 'unit');
+    this[this.version].wotvEspers[dataId].skills = [
+      this.addSkill(this[this.version].wotvEspers[dataId], {slot: 1, value: esper.atkskl})
+    ]
+
+    this.getNames(this[this.version].wotvEspers[dataId], 'unit');
 
     this.getEsperStats(esper, 'esper')
-    this.getEspersSkillsAndBuffs(this.wotvEspers[dataId]);
-    this.getEspersSPs(this.wotvEspers[dataId], esper.nb_lv_tbl);
+    this.getEspersSkillsAndBuffs(this[this.version].wotvEspers[dataId]);
+    this.getEspersSPs(this[this.version].wotvEspers[dataId], esper.nb_lv_tbl);
   }
 
   private getEsperStats(esper, type) {
     let maxUnit = esper;
     while (maxUnit.nb_awake_id) {
-      maxUnit = this.units[maxUnit.nb_awake_id[0]]
+      maxUnit = this[this.version].units[maxUnit.nb_awake_id[0]]
     }
 
     Object.keys(this.stats[type]).forEach(stat => {
-      this.wotvEspers[esper.iname].stats[this.stats[type][stat]] = [
+      this[this.version].wotvEspers[esper.iname].stats[this.stats[type][stat]] = [
         {
           min: esper.status[0][stat],
           max: esper.status[1][stat]
@@ -1251,8 +1432,8 @@ export class JsonService {
   }
 
   private getEspersSkillsAndBuffs(esper) {
-    if (this.espersBoards[esper.dataId]) {
-      this.espersBoards[esper.dataId].panels.forEach(item => {
+    if (this[this.version].espersBoards[esper.dataId]) {
+      this[this.version].espersBoards[esper.dataId].panels.forEach(item => {
         esper.board.nodes[item.panel_id] = {
           dataId: item.value,
           type: "buff",
@@ -1260,14 +1441,14 @@ export class JsonService {
         }
       });
 
-      this.espersBoards[esper.dataId].lines.forEach(line => {
+      this[this.version].espersBoards[esper.dataId].lines.forEach(line => {
         esper.board.lines.push(line.line_id)
       })
     }
   }
 
   private addWeather(unit, skill, weatherId) {
-    this.weathers[weatherId].buffs.forEach(buff => {
+    this[this.version].weathers[weatherId].buffs.forEach(buff => {
       let weatherFinished = false;
       let j = 1;
       while (!weatherFinished) {
@@ -1275,25 +1456,24 @@ export class JsonService {
           let finished = false;
           let i = 1;
           while (!finished) {
-            if (this.buffs[buff["buff" + j]]["type" + i]) {
+            if (this[this.version].buffs[buff["buff" + j]]["type" + i]) {
 
-              if (!this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this.buffs[buff["buff" + j]]["type" + i])
-                console.log(this.buffs[buff["buff" + j]])
+              if (!this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]) {
+                console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
               }
 
-              let type = this.buffTypes[this.buffs[buff["buff" + j]]["type" + i]]
+              let type = this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]
               if (this.statsAtkRes.indexOf(type) !== -1) {
-                type = type + "_" + (this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                type = type + "_" + (this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] == "resistance" ? "RES" : "ATK")
               }
 
               skill.effects.push({
                 side: buff.side === 1 ? "TEAM" : "ENNEMIES",
                 type: type,
-                minValue: this.buffs[buff["buff" + j]]["val" + i],
-                maxValue: this.buffs[buff["buff" + j]]["val" + i + "1"],
-                calcType: this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this.buffs[buff["buff" + j]]["calc" + i]] : "unknow",
-                turn: this.buffs[buff["buff" + j]].turn
+                minValue: this[this.version].buffs[buff["buff" + j]]["val" + i],
+                maxValue: this[this.version].buffs[buff["buff" + j]]["val" + i + "1"],
+                calcType: this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] : "unknow",
+                turn: this[this.version].buffs[buff["buff" + j]].turn
               });
               i++;
             } else {
@@ -1312,7 +1492,7 @@ export class JsonService {
     for (let awake = 1; awake <= 2; awake++) {
       esper.SPs.push([]);
 
-      this.espersTbl[tblId]["awake" + awake].forEach(SP => {
+      this[this.version].espersTbl[tblId]["awake" + awake].forEach(SP => {
         esper.SPs[awake - 1].push(SP.sp)
       })
     }
@@ -1323,81 +1503,85 @@ export class JsonService {
     let rType = equipment.rtype !=="AF_LOT_50" && equipment.rtype !=="AF_LOT_TRUST" ? equipment.rtype : dataId;
 
     if (this.names.en.equipment[dataId] && equipment.type !== -1) {
-      if (!this.wotvEquipments[rType]) {
-        this.wotvEquipments[rType] = {
-          names: { en: this.names.en.equipment[dataId], fr: this.names.fr.equipment[dataId]},
+      if (!this[this.version].wotvEquipments[rType]) {
+        this[this.version].wotvEquipments[rType] = {
+          names: {},
           slug: this.slug.slugify(this.names.en.equipment[dataId]),
           stats: {},
-          type: this.jobEquip[this.equipments[dataId].cat[0]],
+          type: this.jobEquip[this[this.version].equipments[dataId].cat[0]],
           dataId: dataId,
           grows: {},
           skills: [],
           rarity: this.rarity[equipment.rare],
-          image: this.equipments[dataId].asset.toLowerCase()
+          image: this[this.version].equipments[dataId].asset.toLowerCase()
         }
+
+        this.getNames(this[this.version].wotvEquipments[rType], "equipment")
 
         if (equipment.trust) {
           let unitId = null;
           let i = 0;
-          let unitIds = Object.keys(this.wotvUnits);
+          let unitIds = Object.keys(this[this.version].wotvUnits);
 
           while(!unitId && i < unitIds.length) {
-            if (this.wotvUnits[unitIds[i]].tmr.dataId === dataId) {
+            if (this[this.version].wotvUnits[unitIds[i]].tmr.dataId === dataId) {
               unitId = unitIds[i]
             }
 
             i++;
           }
 
-          this.wotvEquipments[rType].acquisition = {
+          this[this.version].wotvEquipments[rType].acquisition = {
             type: "tmr",
             unitId: unitId
           }
-        } else if (this.equipmentRecipes[dataId]) {
-          let recipe = this.equipmentRecipes[dataId].recipe;
+        } else if (this[this.version].equipmentRecipes[dataId]) {
+          let recipe = this[this.version].equipmentRecipes[dataId].recipe;
           if (this.names.en.itemOther[recipe] != "") {
-            this.wotvEquipments[rType].acquisition = {
+            this[this.version].wotvEquipments[rType].acquisition = {
               type: {
                 en: this.names.en.itemOther[recipe],
                 fr: this.names.fr.itemOther[recipe],
-              }
+              } // @TODO
             }
           }
         }
 
-        if (!this.wotvEquipments[rType].acquisition) {
-          this.wotvEquipments[rType].acquisition = {
+        if (!this[this.version].wotvEquipments[rType].acquisition) {
+          this[this.version].wotvEquipments[rType].acquisition = {
             type: "Unknown"
           }
         }
 
-        if (this.equipementLots[equipment.rtype]) {
+        if (this[this.version].equipementLots[equipment.rtype]) {
           for (let i = 1; i <= 3; i++) {
-            let growId = this.equipementLots[equipment.rtype].lot[0]["grow" + i]
+            let growId = this[this.version].equipementLots[equipment.rtype].lot[0]["grow" + i]
             if (growId) {
-              this.wotvEquipments[rType].grows[growId] = {
-                names: { en: this.names.en.equipmentGrow[growId], fr: this.names.fr.equipmentGrow[growId] },
+              this[this.version].wotvEquipments[rType].grows[growId] = {
+                dataId: growId,
+                names: {},
                 curve: {}
               }
+              this.getNames(this[this.version].wotvEquipments[rType].grows[growId], "equipmentGrow")
 
-              Object.keys(this.grows[growId].curve[0]).forEach(stat => {
+              Object.keys(this[this.version].grows[growId].curve[0]).forEach(stat => {
                 if (this.stats.unit[stat]) {
-                  this.wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this.grows[growId].curve[0][stat]
+                  this[this.version].wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this[this.version].grows[growId].curve[0][stat]
                 }
               })
             }
           }
         }
 
-        Object.keys(this.equipments[dataId].status[0]).forEach(stat => {
-          if (this.equipments[dataId].status[0][stat] !== 0
-            || (this.equipments[dataId].status[1]
-              && typeof(this.equipments[dataId].status[1][stat]) == "number"
-              && this.equipments[dataId].status[1][stat] !== 0)
+        Object.keys(this[this.version].equipments[dataId].status[0]).forEach(stat => {
+          if (this[this.version].equipments[dataId].status[0][stat] !== 0
+            || (this[this.version].equipments[dataId].status[1]
+              && typeof(this[this.version].equipments[dataId].status[1][stat]) == "number"
+              && this[this.version].equipments[dataId].status[1][stat] !== 0)
           ) {
-            this.wotvEquipments[rType].stats[this.stats.unit[stat]] = {
-              min: this.equipments[dataId].status[0][stat],
-              max: this.equipments[dataId].status[1] ? this.equipments[dataId].status[1][stat] : this.equipments[dataId].status[0][stat]
+            this[this.version].wotvEquipments[rType].stats[this.stats.unit[stat]] = {
+              min: this[this.version].equipments[dataId].status[0][stat],
+              max: this[this.version].equipments[dataId].status[1] ? this[this.version].equipments[dataId].status[1][stat] : this[this.version].equipments[dataId].status[0][stat]
             }
           }
         })
@@ -1405,40 +1589,37 @@ export class JsonService {
 
       let lastSkillId = [];
       let skills = [];
-      if (this.equipments[dataId].skl1) {
-        for (let j = 0; j < this.equipments[dataId].skl1.length; j++) {
-          if (lastSkillId[j] !== this.equipments[dataId].skl1[j]) {
+      if (this[this.version].equipments[dataId].skl1) {
+        for (let j = 0; j < this[this.version].equipments[dataId].skl1.length; j++) {
+          if (lastSkillId[j] !== this[this.version].equipments[dataId].skl1[j]) {
             let skill = {
-              names: {
-                en: this.names.en.skill[this.equipments[dataId].skl1[j]],
-                fr: this.names.fr.skill[this.equipments[dataId].skl1[j]]
-              },
-              dataId: this.equipments[dataId].skl1[j],
+              names: {},
+              dataId: this[this.version].equipments[dataId].skl1[j],
               effects: [],
-              type: this.slots[this.skills[this.equipments[dataId].skl1[j]].s_buffs || this.skills[this.equipments[dataId].skl1[j]].type === 6 ? 3 : 1]
+              type: this.slots[this[this.version].skills[this[this.version].equipments[dataId].skl1[j]].s_buffs || this[this.version].skills[this[this.version].equipments[dataId].skl1[j]].type === 6 ? 3 : 1]
             }
-            this.updateSkill(this.wotvEquipments[rType], skill, this.equipments[dataId].skl1[j]);
+            this.updateSkill(this[this.version].wotvEquipments[rType], skill, this[this.version].equipments[dataId].skl1[j]);
             skills.push(skill)
-            lastSkillId[j] = this.equipments[dataId].skl1[j]
+            lastSkillId[j] = this[this.version].equipments[dataId].skl1[j]
           }
         }
       }
 
-      this.wotvEquipments[rType].skills.push(skills)
+      this[this.version].wotvEquipments[rType].skills.push(skills)
     }
   }
 
   private cleanUnits() {
     let unitToDelete = [];
 
-    Object.keys(this.wotvUnits).forEach(unitId => {
-      if (this.wotvUnits[unitId].board.lines.length === 0) {
+    Object.keys(this[this.version].wotvUnits).forEach(unitId => {
+      if (this[this.version].wotvUnits[unitId].board.lines.length === 0) {
         unitToDelete.push(unitId)
       }
     })
 
     unitToDelete.forEach(unitId => {
-      delete this.wotvUnits[unitId]
+      delete this[this.version].wotvUnits[unitId]
     })
   }
 }

@@ -4,11 +4,13 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Unit } from '../entities/unit';
-import UNITS from '../data/units.json';
+import GL_UNITS from '../data/gl/units.json';
+import JP_UNITS from '../data/jp/units.json';
 import { GridService } from './grid.service'
 import { SkillService } from './skill.service'
 import { JobService } from './job.service'
 import { GuildService } from './guild.service'
+import { NavService } from './nav.service'
 
 @Injectable()
 export class UnitService {
@@ -21,6 +23,7 @@ export class UnitService {
   private ore = /^0/;
   private oFxNcL: any;
   private oFyNcL: any;
+  private savedVersion = null;
 
   savedUnits
   unit
@@ -114,7 +117,8 @@ export class UnitService {
     private gridService: GridService,
     private skillService: SkillService,
     private jobService: JobService,
-    private guildService: GuildService
+    private guildService: GuildService,
+    private navService: NavService
   ) {}
 
   private i(s: any) {
@@ -164,9 +168,18 @@ export class UnitService {
     return units;
   }
 
+  private getRaw() {
+    this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()))
+    if (this.savedVersion == "GL") {
+      return GL_UNITS
+    } else {
+      return JP_UNITS
+    }
+  }
+
   getUnits(): Unit[] {
     let units: Unit[] = [];
-    let rawUnits = JSON.parse(JSON.stringify(UNITS))
+    let rawUnits = JSON.parse(JSON.stringify(this.getRaw()))
 
     Object.keys(rawUnits).forEach(unitId => {
       let unit = new Unit();
@@ -186,7 +199,7 @@ export class UnitService {
       MR: [],
       UR: []
     };
-    let rawUnits = JSON.parse(JSON.stringify(UNITS))
+    let rawUnits = JSON.parse(JSON.stringify(this.getRaw()))
 
     Object.keys(rawUnits).forEach(unitId => {
       let unit = new Unit();
@@ -220,17 +233,13 @@ export class UnitService {
   }
 
   getUnit(id: string): Unit {
-    if (!this.units || this.units.length === 0) {
-      this.getUnits();
-    }
+    this.getUnits();
 
     return this.units.find(unit => unit.dataId === id);
   }
 
   getUnitBySlug(slug: string): Unit {
-    if (!this.units || this.units.length === 0) {
-      this.getUnits();
-    }
+    this.getUnits();
 
     return this.units.find(unit => unit.slug === slug);
   }

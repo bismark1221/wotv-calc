@@ -11,7 +11,7 @@
       <tr *ngFor="let line of update">
         <td class="itemsCol" *ngFor="let item of line">
           <div>
-            <a [routerLink]="['/'  + item.type + '/' + item.slug ]" [routerLinkActive]="['active']">
+            <a [routerLink]="[getRoute('/'  + item.type + '/' + item.slug)]" [routerLinkActive]="['active']">
               <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type !== 'esper' ? '_m' : '_s' }}.png" />
             </a>
           </div>
@@ -19,7 +19,7 @@
             <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + '.png'}}" />
             <img class="elementImg" src="{{'assets/elements/' + item.element + '.png'}}" *ngIf="item.element"/>
           </div>
-          <a [routerLink]="['/'  + item.type + '/' + item.slug ]" [routerLinkActive]="['active']">
+          <a [routerLink]="[getRoute('/'  + item.type + '/' + item.slug)]" [routerLinkActive]="['active']">
             <span class="itemName">{{ item.name }}</span>
           </a>
         </td>

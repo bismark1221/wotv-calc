@@ -5,6 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 import { UnitService } from '../services/unit.service';
+import { NavService } from '../services/nav.service';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class EquipmentComponent implements OnInit {
     private unitService: UnitService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEquipment();
@@ -32,7 +34,7 @@ export class EquipmentComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.equipment = this.equipmentService.getEquipmentBySlug(params.get('slug'))
       if (!this.equipment) {
-        this.router.navigate(['/equipment-not-found']);
+        this.router.navigate([this.navService.getRoute('/equipment-not-found')]);
       } else {
         this.formatEquipment();
       }
@@ -96,6 +98,10 @@ export class EquipmentComponent implements OnInit {
 
   getEquipementType(type) {
     return this.equipmentService.getFormatType(type)
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
   }
 
   private getUnit(unitId) {

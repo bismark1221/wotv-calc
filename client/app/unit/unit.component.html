@@ -116,9 +116,9 @@
       <tr>
         <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">Master Ability</th>
       </tr>
-      <tr>
+      <tr *ngFor="let masterSkill of unit.masterSkill">
         <td [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">
-          <div *ngFor="let effect of unit.masterSkill.effects">
+          <div *ngFor="let effect of masterSkill.effects">
             {{ effect.formatHtml }}
           </div>
         </td>

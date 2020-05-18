@@ -4,6 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { UnitService } from '../services/unit.service'
 import { EsperService } from '../services/esper.service'
 import { CardService } from '../services/card.service'
+import { NavService } from '../services/nav.service'
 
 @Component({
   selector: 'app-home',
@@ -15,23 +16,30 @@ export class HomeComponent {
   markdown = '';
   thanks = '';
 
-  updated = [
-    [
-      {type: "esper", dataId: "UN_LW_S_ODIN"},
-      {type: "card", dataId: "VC_LW_ODIN"},
-      {type: "card", dataId: "VC_LW_NEWYEAR"}
+  updated = {
+    GL: [
+      [
+        {type: "esper", dataId: "UN_LW_S_ODIN"},
+        {type: "card", dataId: "VC_LW_ODIN"},
+        {type: "card", dataId: "VC_LW_NEWYEAR"}
+      ],
+      [
+        {type: "unit", dataId: "UN_LW_P_WHIS"},
+        {type: "unit", dataId: "UN_LW_P_KTON"}
+      ],
+      [
+        {type: "unit", dataId: "UN_FFT_P_ORND"},
+        {type: "unit", dataId: "UN_FFT_P_RAMZ"},
+        {type: "unit", dataId: "UN_FFT_P_GFGR"},
+        {type: "card", dataId: "VC_FFT_MV1"}
+      ]
     ],
-    [
-      {type: "unit", dataId: "UN_LW_P_WHIS"},
-      {type: "unit", dataId: "UN_LW_P_KTON"}
-    ],
-    [
-      {type: "unit", dataId: "UN_FFT_P_ORND"},
-      {type: "unit", dataId: "UN_FFT_P_RAMZ"},
-      {type: "unit", dataId: "UN_FFT_P_GFGR"},
-      {type: "card", dataId: "VC_FFT_MV1"}
+    JP: [
+      [
+        {type: "unit", dataId: "UN_LW_P_STRN_01"}
+      ]
     ]
-  ];
+  };
 
   updatedFormatted = [];
 
@@ -39,7 +47,8 @@ export class HomeComponent {
     private translateService: TranslateService,
     private unitService: UnitService,
     private esperService: EsperService,
-    private cardService: CardService
+    private cardService: CardService,
+    private navService: NavService
   ) {
     this.getTranslation();
     this.getUpdate();
@@ -62,8 +71,9 @@ export class HomeComponent {
 
   private getUpdate() {
     let lang = this.translateService.currentLang
+    let version = this.navService.getVersion()
 
-    this.updated.forEach((update, updateIndex) => {
+    this.updated[version].forEach((update, updateIndex) => {
       this.updatedFormatted[updateIndex] = []
       let tableIndex = -1;
 
@@ -84,5 +94,9 @@ export class HomeComponent {
         });
       });
     });
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
   }
 }

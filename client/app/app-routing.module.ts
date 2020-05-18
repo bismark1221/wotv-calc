@@ -52,6 +52,39 @@ const ROUTES: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'legal-notices', component: LegalComponent },
   { path: 'json', component: JsonComponent },
+
+
+
+  { path: 'JP', component: HomeComponent },
+  { path: 'JP/units', component: UnitsComponent },
+  { path: 'JP/unit/:slug', component: UnitComponent },
+  { path: 'JP/cards', component: CardsComponent },
+  { path: 'JP/card/:slug', component: CardComponent },
+  { path: 'JP/espers', component: EspersComponent },
+  { path: 'JP/esper/:slug', component: EsperComponent },
+  { path: 'JP/equipments', component: EquipmentsComponent },
+  { path: 'JP/equipment/:slug', component: EquipmentComponent },
+
+  { path: 'JP/builder', component: BuilderComponent,
+    children: [
+      { path: '', redirectTo: 'unit', pathMatch: 'full' },
+      { path: 'unit', component: BuilderUnitComponent },
+      { path: 'unit/:slug', component: BuilderUnitComponent },
+      { path: 'card', component: BuilderCardComponent },
+      { path: 'card/:slug', component: BuilderCardComponent },
+      { path: 'esper', component: BuilderEsperComponent },
+      { path: 'esper/:slug', component: BuilderEsperComponent },
+      { path: 'equipment', component: BuilderEquipmentComponent },
+      { path: 'equipment/:slug', component: BuilderEquipmentComponent },
+      { path: 'guild', component: BuilderGuildComponent },
+    ]
+  },
+
+  { path: 'JP/contact', component: ContactComponent },
+  { path: 'JP/legal-notices', component: LegalComponent },
+  { path: 'JP/json', component: JsonComponent },
+
+
   { path: '**', component: PageNotFoundComponent }
 ];
 

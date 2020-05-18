@@ -4,8 +4,10 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Esper } from '../entities/esper';
-import { default as ESPERS } from '../data/espers.json';
+import { default as GL_ESPERS } from '../data/gl/espers.json';
+import { default as JP_ESPERS } from '../data/jp/espers.json';
 import { GridService } from './grid.service'
+import { NavService } from './nav.service'
 
 @Injectable()
 export class EsperService {
@@ -34,7 +36,11 @@ export class EsperService {
     MR: [
       "UN_LW_S_BHMT",
       "UN_LW_S_IGNT",
-      "UN_LW_S_MABR"
+      "UN_LW_S_MABR",
+      "UN_LW_S_MOGL",
+      "UN_LW_S_OCHU",
+      "UN_FFT_S_CHCB_01",
+      "UN_LW_S_MDFY"
     ],
     UR: [
       "UN_LW_S_IFRT",
@@ -42,7 +48,12 @@ export class EsperService {
       "UN_LW_S_RAMU",
       "UN_LW_S_SHIV",
       "UN_LW_S_SIRE",
-      "UN_LW_S_ODIN"
+      "UN_LW_S_ODIN",
+      "UN_LW_S_TSLP",
+      "UN_LW_S_THDG",
+      "UN_FF01_S_WRMC",
+      "UN_LW_S_DABL",
+      "UN_LW_S_LAMA_01"
     ]
   }
 
@@ -129,7 +140,8 @@ export class EsperService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private gridService: GridService
+    private gridService: GridService,
+    private navService: NavService
   ) {}
 
   private i(s: any) {
@@ -179,12 +191,21 @@ export class EsperService {
     return espers;
   }
 
+  private getRaw() {
+    if (this.navService.getVersion() == "GL") {
+      return GL_ESPERS
+    } else {
+      return JP_ESPERS
+    }
+  }
+
   getEspers(): Esper[] {
     let espers: Esper[] = [];
+    let rawEspers = JSON.parse(JSON.stringify(this.getRaw()))
 
-    Object.keys(JSON.parse(JSON.stringify(ESPERS))).forEach(esperId => {
+    Object.keys(rawEspers).forEach(esperId => {
       let esper = new Esper();
-      esper.constructFromJson(ESPERS[esperId], this.translateService);
+      esper.constructFromJson(rawEspers[esperId], this.translateService);
       espers.push(esper);
     });
 
@@ -200,10 +221,11 @@ export class EsperService {
       MR: [],
       UR: []
     };
+    let rawEspers = JSON.parse(JSON.stringify(this.getRaw()))
 
-    Object.keys(JSON.parse(JSON.stringify(ESPERS))).forEach(esperId => {
+    Object.keys(rawEspers).forEach(esperId => {
       let esper = new Esper();
-      esper.constructFromJson(ESPERS[esperId], this.translateService);
+      esper.constructFromJson(rawEspers[esperId], this.translateService);
       espers[this.findRarity(esper)].push(esper);
     });
 

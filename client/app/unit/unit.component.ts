@@ -7,7 +7,7 @@ import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
-
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-unit',
@@ -27,7 +27,8 @@ export class UnitComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
-    private gridService: GridService
+    private gridService: GridService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatUnit();
@@ -38,7 +39,7 @@ export class UnitComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.unit = this.unitService.getUnitBySlug(params.get('slug'))
       if (!this.unit) {
-        this.router.navigate(['/unit-not-found']);
+        this.router.navigate([this.navService.getRoute('/unit-not-found')]);
       } else {
         this.formatUnit();
       }
@@ -94,12 +95,14 @@ export class UnitComponent implements OnInit {
     })
     this.skillService.sort(this.unit.skills);
 
-    if (this.unit.masterSkill) {
-      this.unit.masterSkill.name = this.unit.masterSkill.names[lang]
+    if (this.unit.masterSkill.length > 0) {
+      this.unit.masterSkill.forEach(masterSkill => {
+        masterSkill.name = masterSkill.names[lang]
 
-      this.unit.masterSkill.effects.forEach(effect => {
-        effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.masterSkill, effect);
-      });
+        masterSkill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
+        });
+      })
     }
 
     if (this.unit.limit) {
