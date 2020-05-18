@@ -103,12 +103,8 @@ export class SkillService {
   }
 
   private getPositiveValue(value, getPositiveValue) {
-    if (value < 0) {
-      if (!getPositiveValue) {
-        return (100 + value) / 100 ;
-      } else {
-        return -value;
-      }
+    if (value < 0 && getPositiveValue) {
+      return -value;
     }
 
     return value

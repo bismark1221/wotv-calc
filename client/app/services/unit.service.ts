@@ -166,10 +166,11 @@ export class UnitService {
 
   getUnits(): Unit[] {
     let units: Unit[] = [];
+    let rawUnits = JSON.parse(JSON.stringify(UNITS))
 
-    Object.keys(JSON.parse(JSON.stringify(UNITS))).forEach(unitId => {
+    Object.keys(rawUnits).forEach(unitId => {
       let unit = new Unit();
-      unit.constructFromJson(UNITS[unitId], this.translateService);
+      unit.constructFromJson(rawUnits[unitId], this.translateService);
       units.push(unit);
     });
 
@@ -185,10 +186,11 @@ export class UnitService {
       MR: [],
       UR: []
     };
+    let rawUnits = JSON.parse(JSON.stringify(UNITS))
 
-    Object.keys(JSON.parse(JSON.stringify(UNITS))).forEach(unitId => {
+    Object.keys(rawUnits).forEach(unitId => {
       let unit = new Unit();
-      unit.constructFromJson(UNITS[unitId], this.translateService);
+      unit.constructFromJson(rawUnits[unitId], this.translateService);
       units[unit.rarity].push(unit);
     });
 
@@ -288,7 +290,8 @@ export class UnitService {
   }
 
   selectUnitForBuilder(unitId) {
-    this.unit = this.getUnit(unitId)
+    this.unit = new Unit()
+    this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId))), this.translateService)
     this.unit.name = this.unit.getName(this.translateService)
 
     this.unit.jobsData = []
