@@ -25,5 +25,5 @@ hr {
 }
 
 .grey {
-  color: #636c72;
+  color: var(--background-tooltip);
 }

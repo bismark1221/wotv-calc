@@ -26,6 +26,12 @@
       <img src="../../assets/nav/blank.gif" class="flag flag-fr" />
     </a>
   </div>
+  <div class="them">
+    <button type="button" (click)="toggleTheme()">
+      <i class="fa fa-sun-o" *ngIf="theme == 'light'"></i>
+      <i class="fa fa-moon-o" *ngIf="theme == 'dark'"></i>
+    </button>
+  </div>
   <div class="versions">
     <div class="btn-group" role="group" aria-label="Basic example">
       <button [ngClass]="{'activated': version == 'GL'}" type="button" class="btn btn-secondary" (click)="changeVersion('GL')">GL</button>

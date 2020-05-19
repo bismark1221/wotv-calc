@@ -5,6 +5,7 @@ import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 
 import { NavService } from '../services/nav.service'
+import { ThemeService } from '../services/theme.service'
 
 @Component({
   selector: 'app-nav',
@@ -19,16 +20,19 @@ export class NavComponent {
   showBuilderNav = false;
   actualRoute = null;
   version = null;
+  theme = null;
 
   constructor(
     private localStorageService: LocalStorageService,
     private angulartics: Angulartics2,
     private translateService: TranslateService,
     private navService: NavService,
-    private router: Router
+    private router: Router,
+    private themeService: ThemeService
   ) {}
 
   ngOnInit() {
+    this.theme = this.themeService.initTheme()
     this.menuDisabled = this.navService.menuDisabled;
     this.version = this.navService.getVersion()
 
@@ -90,5 +94,9 @@ export class NavComponent {
 
   getRoute(route) {
     return this.navService.getRoute(route)
+  }
+
+  toggleTheme() {
+    this.theme = this.themeService.toogleTheme()
   }
 }

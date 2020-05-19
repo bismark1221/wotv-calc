@@ -54,6 +54,7 @@ import { JobService } from './services/job.service';
 import { GridService } from './services/grid.service';
 import { GuildService } from './services/guild.service';
 import { NameService } from './services/name.service';
+import { ThemeService } from './services/theme.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 
@@ -122,7 +123,8 @@ export function createTranslateLoader(http: HttpClient) {
     JobService,
     GridService,
     GuildService,
-    NameService
+    NameService,
+    ThemeService
   ],
   bootstrap: [
     AppComponent

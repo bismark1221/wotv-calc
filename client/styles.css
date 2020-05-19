@@ -4,13 +4,50 @@
 @import "~font-awesome/css/font-awesome.css";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
+:root {
+  --link-color: #0275d8;
+  --table-border: #404040;
+  --background-tooltip: #635b52;
+  --btn-background-activated: #e6e6e6;
+  --btn-border-activated: #adadad;
+
+  --nav-btn-menu: #464a4c;
+  --nav-disable: #ccc;
+  --subnav-background: #555c63;
+
+  --black: #000;
+  --white: #fff;
+  --dark-grey: #292b2c;
+
+  --hex-default: #f5f6f5;
+  --hex-color-default: #b0b0b0;
+  --hex-default-activated: #737272;
+  --hex-buff: #fff4b8;
+  --hex-buff-color: #b0b0b0;
+  --hex-buff-activated: #fedd4c;
+  --hex-skill: #fbdcdc;
+  --hex-skill-color: #b0b0b0;
+  --hex-skill-activated: #e42828;
+  --hex-support: #c9ffb7;
+  --hex-support-color: #b0b0b0;
+  --hex-support-activated: #52bb2e;
+  --hex-counter: #ccd4ff;
+  --hex-counter-color: #b0b0b0;
+  --hex-counter-activated: #2649ff;
+
+  --body-background: #fff;
+  --body-color: #212529;
+}
+
 body {
   padding-top: 5rem;
   font-family: Palatino, Helvetica, sans-serif !important;
+  background-color: var(--body-background);
+  color: var(--body-color);
 }
 
 a {
-  color: #0275d8;
+  color: var(--link-color);
 }
 
 button, input, optgroup, select, textarea {
@@ -22,10 +59,10 @@ table, tbody, tr, th, td {
 }
 
 th {
-  color: white;
+  color: var(--white);
   background-color: grey;
   text-align: center;
-  border: 1px solid #404040;
+  border: 1px solid var(--table-border);
   padding: 0.3em 0.5em;
 }
 
@@ -46,7 +83,7 @@ td {
   margin: 0;
   width: 12px;
   height: 13px;
-  background-color: #635b52;
+  background-color: var(--background-tooltip);
 }
 
 .tooltip-inner .table-skill .table-skill-AR {
@@ -66,7 +103,7 @@ td {
   margin: 0;
   width: 2px;
   height: 2px;
-  background-color: #635b52;
+  background-color: var(--background-tooltip);
 }
 
 .divSkillTableHtml .tableSkillHeight{
@@ -114,21 +151,21 @@ td {
 }
 
 .btn-secondary {
-  color: #292b2c;
-  background-color: #fff;
-  border-color: #ccc;
+  color: var(--dark-grey);
+  background-color: var(--white);
+  border-color: var(--table-border);
 }
 
 .btn-secondary:hover {
-  color: #292b2c;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: var(--dark-grey);
+  background-color: var(--btn-background-activated);
+  border-color: var(--btn-border-activated);
 }
 
 .btn-secondary:active {
-  color: #292b2c !important;
-  background-color: #e6e6e6 !important;
-  border-color: #adadad !important;
+  color: var(--dark-grey) !important;
+  background-color: var(--btn-background-activated) !important;
+  border-color: var(--btn-border-activated) !important;
 }
 
 
@@ -186,8 +223,8 @@ td {
   -o-transform: skewY(-30deg) rotate(60deg);
   -webkit-transform: skewY(-30deg) rotate(60deg);
   align-items: center;
-  background-color: #f5f6f5;
-  color: #b0b0b0;
+  background-color: var(--hex-default);
+  color: var(--hex-color-default);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -202,52 +239,56 @@ td {
 
 
 .hexGrid li .hex.notActivable {
-  background-color: #f5f6f5 !important;
+  background-color: var(--hex-default) !important;
 }
 
 .hexGrid li .hex.buff {
-  background: #fff4b8;
+  background: var(--hex-buff);
+  color: var(--hex-buff-color);
 }
 
 .hexGrid li .hex.buff.activated {
-  background: #fedd4c;
-  color: #000;
+  background: var(--hex-buff-activated);
+  color: var(--black);
 }
 
 .hexGrid li .hex.skill {
-  background: #fbdcdc;
+  background: var(--hex-skill);
+  color: var(--hex-skill-color);
 }
 
 .hexGrid li .hex.skill.activated {
-  background: #e42828;
-  color: #fff;
+  background: var(--hex-skill-activated);
+  color: var(--white);
 }
 
 .hexGrid li .hex.support {
-  background: #c9ffb7;
+  background: var(--hex-support);
+  color: var(--hex-support-color);
 }
 
 .hexGrid li .hex.support.activated {
-  background: #52bb2e;
-  color: #fff;
+  background: var(--hex-support-activated);
+  color: var(--white);
 }
 
 .hexGrid li .hex.counter {
-  background: #ccd4ff;
+  background: var(--hex-counter);
+  color: var(--hex-counter-color);
 }
 
 .hexGrid li .hex.counter.activated {
-  background: #2649ff;
-  color: #fff;
+  background: var(--hex-counter-activated);
+  color: var(--white);
 }
 
 .hexGrid li .hex.activated {
-  background-color: #737272;
-  color: #fff;
+  background-color: var(--hex-default-activated);
+  color: var(--white);
 }
 
 .hexGrid li .hex.selected, .hexGrid li .hex.selected a {
-  color: #000
+  color: var(--black)
 }
 
 .hexGrid li .hex.selected img {
@@ -324,4 +365,8 @@ td {
 
 .modal-dialog {
   max-width: 1200px;
+}
+
+.modal-content {
+  background-color: var(--body-background);
 }

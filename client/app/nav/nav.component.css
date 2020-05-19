@@ -6,13 +6,12 @@
 
 .sub.fixed-top {
   top: 40px;
-  background-color: #555c63 !important;
+  background-color: var(--subnav-background) !important;
 }
 
 .inlineBlock {
   display: inline-block;
 }
-
 
 .centerNav {
   display: inline-flex;
@@ -34,7 +33,7 @@
 }
 
 .btnMenu {
-  color: #464a4c;
+  color: var(--nav-btn-menu);
   height: 35px;
   cursor: pointer;
 }
@@ -98,8 +97,8 @@
 }
 
 .menuDisabled {
-  background-color: #fff;
-  border-color: #ccc;
+  background-color: var(--white);
+  border-color: var(--nav-disable);
   opacity: .65;
 }
 
@@ -108,8 +107,8 @@
 }
 
 .btn.activated {
-  background-color: #615f5f;
-  color: #fff;
+  background-color: var(--background-tooltip);
+  color: var(--white);
 }
 
 .btn-group {
