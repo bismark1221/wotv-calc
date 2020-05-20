@@ -315,7 +315,7 @@ button.close {
 }
 
 .hexGrid li .hex.hideNode {
-  visibility: hidden
+  display: none;
 }
 
 .hexGrid li:nth-child(9n+2), .hexGrid li:nth-child(9n+4), .hexGrid li:nth-child(9n+6), .hexGrid li:nth-child(9n+8) {
