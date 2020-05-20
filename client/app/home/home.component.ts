@@ -20,6 +20,12 @@ export class HomeComponent {
   updated = {
     GL: [
       [
+        {type: "unit", dataId: "UN_LW_P_MRND"},
+        {type: "unit", dataId: "UN_LW_P_DRND"},
+        {type: "card", dataId: "VC_LW_LAMA_01"},
+        {type: "card", dataId: "VC_LW_GUARD"}
+      ],
+      [
         {type: "esper", dataId: "UN_LW_S_ODIN"},
         {type: "card", dataId: "VC_LW_ODIN"},
         {type: "card", dataId: "VC_LW_NEWYEAR"}
@@ -27,12 +33,6 @@ export class HomeComponent {
       [
         {type: "unit", dataId: "UN_LW_P_WHIS"},
         {type: "unit", dataId: "UN_LW_P_KTON"}
-      ],
-      [
-        {type: "unit", dataId: "UN_FFT_P_ORND"},
-        {type: "unit", dataId: "UN_FFT_P_RAMZ"},
-        {type: "unit", dataId: "UN_FFT_P_GFGR"},
-        {type: "card", dataId: "VC_FFT_MV1"}
       ]
     ],
     JP: [

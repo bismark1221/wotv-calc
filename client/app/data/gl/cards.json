@@ -1295,112 +1295,6 @@
       "maxLevel": 1
     }
   },
-  "VC_LW_NEWYEAR": {
-    "dataId": "VC_LW_NEWYEAR",
-    "names": {
-      "en": "Greetings from Afar",
-      "fr": "Par-delà les terres"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 25,
-        "max": 200
-      },
-      "ATK": {
-        "min": 25,
-        "max": 100
-      },
-      "MAG": {
-        "min": 25,
-        "max": 100
-      }
-    },
-    "image": "lapsnewy",
-    "slug": "greetings-from-afar",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AQUATIC_KILLER",
-          "minValue": 10,
-          "maxValue": 15,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_NEWYEAR_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_NEWYEAR_GS",
-        "fr": "SK_VC_LW_NEWYEAR_GS"
-      },
-      "slug": "sk_vc_lw_newyear_gs",
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "AQUATIC_KILLER",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_NEWYEAR_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_NEWYEAR_GSAW",
-        "fr": "SK_VC_LW_NEWYEAR_GSAW"
-      },
-      "slug": "sk_vc_lw_newyear_gsaw",
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_NEWYEAR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_NEWYEAR_P",
-        "fr": "SK_VC_LW_NEWYEAR_P"
-      },
-      "slug": "sk_vc_lw_newyear_p",
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAG",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_NEWYEAR_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_NEWYEAR_PAW",
-        "fr": "SK_VC_LW_NEWYEAR_PAW"
-      },
-      "slug": "sk_vc_lw_newyear_paw",
-      "maxLevel": 4
-    }
-  },
   "VC_LW_HOLYNIGHT": {
     "dataId": "VC_LW_HOLYNIGHT",
     "names": {
@@ -1543,333 +1437,6 @@
       },
       "slug": "sk_vc_lw_holynight_pmax",
       "maxLevel": 1
-    }
-  },
-  "VC_LW_IGNT": {
-    "dataId": "VC_LW_IGNT",
-    "names": {
-      "en": "Metal Daemon, Iron Giant",
-      "fr": "Géant de fer, le Dæmon de métal"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 48,
-        "max": 384
-      },
-      "ATK": {
-        "min": 20,
-        "max": 80
-      },
-      "MAG": {
-        "min": 6,
-        "max": 25
-      }
-    },
-    "image": "lapsignt",
-    "slug": "metal-daemon-iron-giant",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 5,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_IGNT_GS",
-        "fr": "SK_VC_LW_IGNT_GS"
-      },
-      "slug": "sk_vc_lw_ignt_gs",
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_IGNT_GSAW",
-        "fr": "SK_VC_LW_IGNT_GSAW"
-      },
-      "slug": "sk_vc_lw_ignt_gsaw",
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "fixe"
-        },
-        {
-          "type": "AGI",
-          "minValue": -3,
-          "maxValue": -3,
-          "calcType": "percent"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_IGNT_P",
-        "fr": "SK_VC_LW_IGNT_P"
-      },
-      "slug": "sk_vc_lw_ignt_p",
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "SLASH_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_IGNT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_IGNT_PAW",
-        "fr": "SK_VC_LW_IGNT_PAW"
-      },
-      "slug": "sk_vc_lw_ignt_paw",
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_BHMT": {
-    "dataId": "VC_LW_BHMT",
-    "names": {
-      "en": "Malevolent Legendary Beast, Behemoth",
-      "fr": "Béhémoth, la Bête infernale mythifiée"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 42,
-        "max": 338
-      },
-      "ATK": {
-        "min": 33,
-        "max": 133
-      },
-      "MAG": {
-        "min": 3,
-        "max": 14
-      }
-    },
-    "image": "lapsbhmt",
-    "slug": "malevolent-legendary-beast-behemoth",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "PIERCE_RES",
-          "minValue": 5,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_BHMT_GS",
-        "fr": "SK_VC_LW_BHMT_GS"
-      },
-      "slug": "sk_vc_lw_bhmt_gs",
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "PIERCE_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_BHMT_GSAW",
-        "fr": "SK_VC_LW_BHMT_GSAW"
-      },
-      "slug": "sk_vc_lw_bhmt_gsaw",
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "BEAST_KILLER",
-          "minValue": 2,
-          "maxValue": 7,
-          "calcType": "percent",
-          "rate": 200
-        },
-        {
-          "type": "AGI",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_BHMT_P",
-        "fr": "SK_VC_LW_BHMT_P"
-      },
-      "slug": "sk_vc_lw_bhmt_p",
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "BEAST_KILLER",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "percent",
-          "rate": 200
-        }
-      ],
-      "dataId": "SK_VC_LW_BHMT_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_BHMT_PAW",
-        "fr": "SK_VC_LW_BHMT_PAW"
-      },
-      "slug": "sk_vc_lw_bhmt_paw",
-      "maxLevel": 4
-    }
-  },
-  "VC_LW_MABR": {
-    "dataId": "VC_LW_MABR",
-    "names": {
-      "en": "Defiling Curse, Malboro",
-      "fr": "Morbol, le Mal profanateur"
-    },
-    "rarity": "MR",
-    "stats": {
-      "HP": {
-        "min": 41,
-        "max": 330
-      },
-      "ATK": {
-        "min": 8,
-        "max": 32
-      },
-      "MAG": {
-        "min": 27,
-        "max": 109
-      }
-    },
-    "image": "lapsmabr",
-    "slug": "defiling-curse-malboro",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "STRIKE_ATK",
-          "minValue": 10,
-          "maxValue": 15,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_MABR_GS",
-        "fr": "SK_VC_LW_MABR_GS"
-      },
-      "slug": "sk_vc_lw_mabr_gs",
-      "maxLevel": 70
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "STRIKE_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_GSAW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_MABR_GSAW",
-        "fr": "SK_VC_LW_MABR_GSAW"
-      },
-      "slug": "sk_vc_lw_mabr_gsaw",
-      "maxLevel": 4
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CONFUSION_RES",
-          "minValue": 3,
-          "maxValue": 10,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_MABR_P",
-        "fr": "SK_VC_LW_MABR_P"
-      },
-      "slug": "sk_vc_lw_mabr_p",
-      "maxLevel": 70
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "CONFUSION_RES",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "resistance"
-        }
-      ],
-      "dataId": "SK_VC_LW_MABR_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_MABR_PAW",
-        "fr": "SK_VC_LW_MABR_PAW"
-      },
-      "slug": "sk_vc_lw_mabr_paw",
-      "maxLevel": 4
     }
   },
   "VC_LW_SHIV": {
@@ -2302,6 +1869,665 @@
       },
       "slug": "sk_vc_fft_mv1_pmax",
       "maxLevel": 1
+    }
+  },
+  "VC_LW_NEWYEAR": {
+    "dataId": "VC_LW_NEWYEAR",
+    "names": {
+      "en": "Greetings from Afar",
+      "fr": "Par-delà les terres"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 25,
+        "max": 200
+      },
+      "ATK": {
+        "min": 25,
+        "max": 100
+      },
+      "MAG": {
+        "min": 25,
+        "max": 100
+      }
+    },
+    "image": "lapsnewy",
+    "slug": "greetings-from-afar",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AQUATIC_KILLER",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_NEWYEAR_GS",
+        "fr": "SK_VC_LW_NEWYEAR_GS"
+      },
+      "slug": "sk_vc_lw_newyear_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AQUATIC_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_NEWYEAR_GSAW",
+        "fr": "SK_VC_LW_NEWYEAR_GSAW"
+      },
+      "slug": "sk_vc_lw_newyear_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_NEWYEAR_P",
+        "fr": "SK_VC_LW_NEWYEAR_P"
+      },
+      "slug": "sk_vc_lw_newyear_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_NEWYEAR_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_NEWYEAR_PAW",
+        "fr": "SK_VC_LW_NEWYEAR_PAW"
+      },
+      "slug": "sk_vc_lw_newyear_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_IGNT": {
+    "dataId": "VC_LW_IGNT",
+    "names": {
+      "en": "Metal Daemon, Iron Giant",
+      "fr": "Géant de fer, le Dæmon de métal"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 48,
+        "max": 384
+      },
+      "ATK": {
+        "min": 20,
+        "max": 80
+      },
+      "MAG": {
+        "min": 6,
+        "max": 25
+      }
+    },
+    "image": "lapsignt",
+    "slug": "metal-daemon-iron-giant",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_IGNT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_IGNT_GS",
+        "fr": "SK_VC_LW_IGNT_GS"
+      },
+      "slug": "sk_vc_lw_ignt_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_IGNT_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_IGNT_GSAW",
+        "fr": "SK_VC_LW_IGNT_GSAW"
+      },
+      "slug": "sk_vc_lw_ignt_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "AGI",
+          "minValue": -3,
+          "maxValue": -3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_IGNT_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_IGNT_P",
+        "fr": "SK_VC_LW_IGNT_P"
+      },
+      "slug": "sk_vc_lw_ignt_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_IGNT_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_IGNT_PAW",
+        "fr": "SK_VC_LW_IGNT_PAW"
+      },
+      "slug": "sk_vc_lw_ignt_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_BHMT": {
+    "dataId": "VC_LW_BHMT",
+    "names": {
+      "en": "Malevolent Legendary Beast, Behemoth",
+      "fr": "Béhémoth, la Bête infernale mythifiée"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 338
+      },
+      "ATK": {
+        "min": 33,
+        "max": 133
+      },
+      "MAG": {
+        "min": 3,
+        "max": 14
+      }
+    },
+    "image": "lapsbhmt",
+    "slug": "malevolent-legendary-beast-behemoth",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_BHMT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BHMT_GS",
+        "fr": "SK_VC_LW_BHMT_GS"
+      },
+      "slug": "sk_vc_lw_bhmt_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_BHMT_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BHMT_GSAW",
+        "fr": "SK_VC_LW_BHMT_GSAW"
+      },
+      "slug": "sk_vc_lw_bhmt_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "BEAST_KILLER",
+          "minValue": 2,
+          "maxValue": 7,
+          "calcType": "percent",
+          "rate": 200
+        },
+        {
+          "type": "AGI",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_BHMT_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BHMT_P",
+        "fr": "SK_VC_LW_BHMT_P"
+      },
+      "slug": "sk_vc_lw_bhmt_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "BEAST_KILLER",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_BHMT_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BHMT_PAW",
+        "fr": "SK_VC_LW_BHMT_PAW"
+      },
+      "slug": "sk_vc_lw_bhmt_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_MABR": {
+    "dataId": "VC_LW_MABR",
+    "names": {
+      "en": "Defiling Curse, Malboro",
+      "fr": "Morbol, le Mal profanateur"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 330
+      },
+      "ATK": {
+        "min": 8,
+        "max": 32
+      },
+      "MAG": {
+        "min": 27,
+        "max": 109
+      }
+    },
+    "image": "lapsmabr",
+    "slug": "defiling-curse-malboro",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_MABR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MABR_GS",
+        "fr": "SK_VC_LW_MABR_GS"
+      },
+      "slug": "sk_vc_lw_mabr_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "STRIKE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_MABR_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MABR_GSAW",
+        "fr": "SK_VC_LW_MABR_GSAW"
+      },
+      "slug": "sk_vc_lw_mabr_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CONFUSION_RES",
+          "minValue": 3,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_MABR_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MABR_P",
+        "fr": "SK_VC_LW_MABR_P"
+      },
+      "slug": "sk_vc_lw_mabr_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CONFUSION_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_MABR_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_MABR_PAW",
+        "fr": "SK_VC_LW_MABR_PAW"
+      },
+      "slug": "sk_vc_lw_mabr_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_LAMA_01": {
+    "dataId": "VC_LW_LAMA_01",
+    "names": {
+      "en": "Seductive Serpent, Lamia Queen"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 45,
+        "max": 364
+      },
+      "ATK": {
+        "min": 23,
+        "max": 92
+      },
+      "MAG": {
+        "min": 5,
+        "max": 20
+      }
+    },
+    "image": "lapslama_01",
+    "slug": "seductive-serpent-lamia-queen",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "FIRE_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_LAMA_01_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LAMA_01_GS",
+        "fr": "SK_VC_LW_LAMA_01_GS"
+      },
+      "slug": "sk_vc_lw_lama_01_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "FIRE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_LAMA_01_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LAMA_01_GSAW",
+        "fr": "SK_VC_LW_LAMA_01_GSAW"
+      },
+      "slug": "sk_vc_lw_lama_01_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ICE_KILLER",
+          "minValue": 3,
+          "maxValue": 10,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_LAMA_01_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LAMA_01_P",
+        "fr": "SK_VC_LW_LAMA_01_P"
+      },
+      "slug": "sk_vc_lw_lama_01_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ICE_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_LAMA_01_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LAMA_01_PAW",
+        "fr": "SK_VC_LW_LAMA_01_PAW"
+      },
+      "slug": "sk_vc_lw_lama_01_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_GUARD": {
+    "dataId": "VC_LW_GUARD",
+    "names": {
+      "en": "Snow-White Guard"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 284
+      },
+      "ATK": {
+        "min": 19,
+        "max": 76
+      },
+      "MAG": {
+        "min": 19,
+        "max": 76
+      }
+    },
+    "image": "lapsguard",
+    "slug": "snow-white-guard",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 5,
+          "maxValue": 12,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_GUARD_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GUARD_GS",
+        "fr": "SK_VC_LW_GUARD_GS"
+      },
+      "slug": "sk_vc_lw_guard_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CRITIC_DAMAGE",
+          "minValue": 1,
+          "maxValue": 6,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_GUARD_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GUARD_GSAW",
+        "fr": "SK_VC_LW_GUARD_GSAW"
+      },
+      "slug": "sk_vc_lw_guard_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 3,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MISSILE_RES",
+          "minValue": 3,
+          "maxValue": 10,
+          "calcType": "resistance"
+        },
+        {
+          "type": "HP",
+          "minValue": -15,
+          "maxValue": -15,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_GUARD_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GUARD_P",
+        "fr": "SK_VC_LW_GUARD_P"
+      },
+      "slug": "sk_vc_lw_guard_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "SLASH_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        },
+        {
+          "type": "MISSILE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_GUARD_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GUARD_PAW",
+        "fr": "SK_VC_LW_GUARD_PAW"
+      },
+      "slug": "sk_vc_lw_guard_paw",
+      "maxLevel": 4
     }
   },
   "VC_LW_FAMILY": {
