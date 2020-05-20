@@ -1,27 +1,55 @@
-.elementImg {
-  height: 32px;
-}
-
-.unitImg {
-  height: 150px;
-  margin-top: 10px;
-}
-
-.unitName {
-  font-weight: bold;
-  margin-left: 10px
+.equipmentImg {
+  height: 200px;
 }
 
 .statsTable {
-  width: 800px;
+  width: 1000px;
 }
 
-.unitsCol {
-  width: 200px;
+.leftBlock {
+  display: inline-block;
+  width: 250px;
 }
 
-.row {
-  width: 1200px;
+.leftBlock .equipmentTable {
   margin: auto;
-  margin-bottom: 20px;
+}
+
+.rightBlock {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.closeButton button {
+  padding: 10px;
+}
+
+.upperBlock {
+  display: block;
+}
+
+.upperBlock .equipmentDiv {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.upperBlock .equipmentTable {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.upperBlock .upgradeTypeDiv {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.lowerBlock {}
+
+.lowerBlock .statsTable {
+  margin: auto
 }

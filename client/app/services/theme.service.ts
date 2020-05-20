@@ -32,7 +32,6 @@ export class ThemeService {
   }
 
   setActiveTheme(theme) {
-    console.log(theme)
     this.active = theme;
     this.localStorageService.set("theme", theme);
 

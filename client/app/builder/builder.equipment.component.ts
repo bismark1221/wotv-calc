@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { EquipmentService } from '../services/equipment.service';
 
@@ -9,13 +10,17 @@ import { EquipmentService } from '../services/equipment.service';
   styleUrls: ['./builder.equipment.component.css']
 })
 export class BuilderEquipmentComponent implements OnInit {
+  @Input() public equipment;
+  @Input() public fromUnitBuilder = false;
+  @Output() passEntry: EventEmitter<any> = new EventEmitter();
+
   selectedId
   equipments
-  equipment
 
   constructor(
     private equipmentService: EquipmentService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private modalService: NgbModal
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getEquipments();
@@ -53,5 +58,9 @@ export class BuilderEquipmentComponent implements OnInit {
 
   save() {
     this.equipmentService.saveEquipment(this.equipment)
+  }
+
+  close() {
+    this.modalService.dismissAll();
   }
 }

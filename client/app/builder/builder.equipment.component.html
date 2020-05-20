@@ -1,49 +1,67 @@
-<div style="width: 30%; display: inline-block;">
-  <ng-select [items]="equipments"
-             bindLabel="name"
-             bindValue="id"
-             groupBy="rarity"
-             placeholder="Equipments"
-             [(ngModel)]="selectedId"
-             (ngModelChange)="selectEquipment()">
-  </ng-select>
+<div *ngIf="fromUnitBuilder" class="closeButton">
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-  <div *ngIf="equipment">
+<div
+  [ngClass]="{
+    'leftBlock': !fromUnitBuilder,
+    'upperBlock': fromUnitBuilder
+  }">
+  <div *ngIf="!fromUnitBuilder">
+    <ng-select [items]="equipments"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               placeholder="Equipments"
+               [(ngModel)]="selectedId"
+               (ngModelChange)="selectEquipment()">
+    </ng-select>
+  </div>
+
+  <div *ngIf="equipment" class="equipmentDiv">
     <table class="equipmentTable">
       <tbody>
         <tr>
           <th colspan="3">{{ equipment.name }}</th>
         </tr>
         <tr>
-          <td colspan="3"><img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}" /></td>
+          <td colspan="3"><img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}" ngbAutofocus/></td>
         </tr>
       </tbody>
     </table>
-  </div>
 
-  <div *ngIf="equipment && equipment.skills.length > 1">
-    Upgrade
-    <select [(ngModel)]="equipment.upgrade" (ngModelChange)="changeUpgrade()">
-      <option value="0">0</option>
-      <option value="1">+1</option>
-      <option value="2">+2</option>
-      <option value="3">+3</option>
-      <option value="4">+4</option>
-      <option value="5">+5</option>
-    </select>
-  </div>
+    <div class="upgradeTypeDiv">
+      <div *ngIf="equipment && equipment.skills.length > 1">
+        Upgrade
+        <select [(ngModel)]="equipment.upgrade" (ngModelChange)="changeUpgrade()">
+          <option value="0">0</option>
+          <option value="1">+1</option>
+          <option value="2">+2</option>
+          <option value="3">+3</option>
+          <option value="4">+4</option>
+          <option value="5">+5</option>
+        </select>
+      </div>
 
-  <div *ngIf="equipment && equipment.growIds.length > 1">
-    Type
-    <select [(ngModel)]="equipment.grow" (ngModelChange)="changeGrow()">
-      <option *ngFor="let growId of equipment.growIds" [ngValue]="growId">{{ equipment.grows[growId].name }}</option>
-    </select>
-  </div>
+      <div *ngIf="equipment && equipment.growIds.length > 1">
+        Type
+        <select [(ngModel)]="equipment.grow" (ngModelChange)="changeGrow()">
+          <option *ngFor="let growId of equipment.growIds" [ngValue]="growId">{{ equipment.grows[growId].name }}</option>
+        </select>
+      </div>
 
-  <button (click)="save()">SAVE</button>
+      <button (click)="save()">SAVE</button>
+    </div>
+  </div>
 </div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="equipment">
+<div *ngIf="equipment"
+  [ngClass]="{
+    'rightBlock': !fromUnitBuilder,
+    'lowerBlock': fromUnitBuilder
+  }">
   <table class="statsTable">
     <tbody>
       <tr>
@@ -74,7 +92,7 @@
   </table>
 
 
-  <table class="skillsTable" *ngIf="equipment.skill[0]">
+  <table class="statsTable" *ngIf="equipment.skill[0]">
     <tbody>
       <tr *ngIf="equipment.skill[0].type == 'skill'">
         <th colspan="7">Skill</th>

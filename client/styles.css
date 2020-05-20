@@ -37,6 +37,8 @@
 
   --body-background: #fff;
   --body-color: #212529;
+
+  --cross-close: #000;
 }
 
 body {
@@ -69,6 +71,10 @@ th {
 td {
   text-align: center;
   padding: 0.3em 0.5em;
+}
+
+button.close {
+  color: var(--cross-close);
 }
 
 .tooltip-inner .table-skill {

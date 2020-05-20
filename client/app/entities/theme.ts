@@ -33,7 +33,9 @@ export const themes = {
       "--hex-counter-activated": "#2649ff",
 
       "--body-background": "#fff",
-      "--body-color": "#212529"
+      "--body-color": "#212529",
+
+      "--cross-close": "#000"
     }
   },
   dark: {
@@ -70,7 +72,9 @@ export const themes = {
       "--hex-counter-activated": "#2649ff",
 
       "--body-background": "#3a3a3a",
-      "--body-color": "#e2e2e2"
+      "--body-color": "#e2e2e2",
+
+      "--cross-close": "#fff"
     }
   }
 }

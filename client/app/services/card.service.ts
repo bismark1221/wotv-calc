@@ -272,8 +272,6 @@ export class CardService {
       party: {}
     }
 
-    console.log(this.card)
-
     this.card.unitBuffsClassic.effects.forEach(effect => {
       buffs.self[effect.type] = {}
       buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (maxLevel - 1) * (this.card.level - 1)))

@@ -12,6 +12,7 @@ import { EquipmentService } from '../services/equipment.service';
 
 import { BuilderEsperComponent } from './builder.esper.component';
 import { BuilderCardComponent } from './builder.card.component';
+import { BuilderEquipmentComponent } from './builder.equipment.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -337,6 +338,21 @@ export class BuilderUnitComponent implements OnInit {
     const modalRef = this.modalService.open(BuilderCardComponent, { windowClass: 'options-modal' });
 
     modalRef.componentInstance.card = this.unit.card;
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
+    }, (reason) => {
+      //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
+    });
+  }
+
+  showEquipmentDetail(position) {
+    const modalRef = this.modalService.open(BuilderEquipmentComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.equipment = this.unit.equipments[position];
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
