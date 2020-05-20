@@ -35,7 +35,7 @@ export class BuilderUnitComponent implements OnInit {
   card = null
   selectedCardId = null
 
-  equipments
+  equipments = [[], [], []]
   selectedEquipments = [null, null, null]
   selectedEquipmentsIds = [null, null, null]
 
@@ -131,7 +131,6 @@ export class BuilderUnitComponent implements OnInit {
     this.getUnits();
     this.getGuild();
     this.getEspers();
-    this.getEquipments();
     this.getCards();
   }
 
@@ -153,11 +152,6 @@ export class BuilderUnitComponent implements OnInit {
   private getEspers() {
     this.espers = this.esperService.getEspersForBuilder(this.translateService);
     this.espers = [...this.espers];
-  }
-
-  private getEquipments() {
-    this.equipments = this.equipmentService.getEquipmentsForBuilder(this.translateService);
-    this.equipments = [...this.equipments];
   }
 
   private addEsperToUnit() {
@@ -225,6 +219,10 @@ export class BuilderUnitComponent implements OnInit {
           this.selectedEquipmentsIds[i] = null
         }
       }
+
+      for (let i = 0; i <= 2; i++) {
+        this.getAvailableEquipments(i)
+      }
     } else {
       this.unit = null
     }
@@ -264,6 +262,10 @@ export class BuilderUnitComponent implements OnInit {
     }
 
     this.addEquipmentToUnit(pos)
+
+    for (let i = 0; i <= 2; i++) {
+      this.getAvailableEquipments(i)
+    }
   }
 
   changeStar(value) {
@@ -297,6 +299,11 @@ export class BuilderUnitComponent implements OnInit {
 
   getAvailableSupportNodes(pos) {
     return this.unitService.getAvailableSupportNodes(pos)
+  }
+
+  getAvailableEquipments(pos) {
+    this.equipments[pos] = this.unitService.getAvailableEquipments(pos);
+    this.equipments[pos] = [...this.equipments[pos]];
   }
 
   save() {

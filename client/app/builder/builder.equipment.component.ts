@@ -32,7 +32,7 @@ export class BuilderEquipmentComponent implements OnInit {
   }
 
   private getEquipments() {
-    this.equipments = this.equipmentService.getEquipmentsForBuilder(this.translateService);
+    this.equipments = this.equipmentService.getEquipmentsForBuilder();
     this.equipments = [...this.equipments];
   }
 
