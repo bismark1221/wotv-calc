@@ -12,6 +12,7 @@ import { JobService } from './job.service'
 import { GuildService } from './guild.service'
 import { NavService } from './nav.service'
 import { NameService } from './name.service'
+import { EquipmentService } from './equipment.service'
 
 @Injectable()
 export class UnitService {
@@ -120,7 +121,8 @@ export class UnitService {
     private jobService: JobService,
     private guildService: GuildService,
     private navService: NavService,
-    private nameService: NameService
+    private nameService: NameService,
+    private equipmentService: EquipmentService
   ) {}
 
   private i(s: any) {
@@ -994,5 +996,53 @@ export class UnitService {
         this.hideNode(node, true)
       }
     })
+  }
+
+  getAvailableEquipments(pos) {
+    let armorTypes = []
+    this.unit.jobsData[0].equipments.armors.forEach(type => {
+      if (type !== "ACC") {
+        armorTypes.push(type)
+      }
+    })
+
+    let weaponsTypes = []
+    this.unit.jobsData[0].equipments.weapons.forEach(type => {
+      weaponsTypes.push(type)
+    })
+
+    let hasArmor = false
+    let hasWeapon = false
+    let hasAcc = false
+    let hasTmr = false;
+    for (let i = 0; i <= 2; i++) {
+      if (i !== pos && this.unit.equipments && this.unit.equipments[i]) {
+        if (this.unit.equipments[i].type === "ACC") {
+          hasAcc = true
+        } else if (this.equipmentService.isArmor(this.unit.equipments[i].type)) {
+          hasArmor = true
+        } else {
+          hasWeapon = true
+        }
+
+        if (this.unit.equipments[i].acquisition && this.unit.equipments[i].acquisition.type === "tmr") {
+          hasTmr = true
+        }
+      }
+    }
+
+    let equipments = this.equipmentService.getEquipmentsForUnitBuilder()
+    let availableEquipments = []
+    equipments.forEach(equipment => {
+      if (((!hasAcc && equipment.type === "ACC")
+        || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
+        || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
+        && (!hasTmr || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr")))) {
+        equipment.name = this.nameService.getName(equipment)
+        availableEquipments.push(equipment)
+      }
+    })
+
+    return availableEquipments
   }
 }

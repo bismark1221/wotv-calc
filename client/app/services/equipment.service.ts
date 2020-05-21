@@ -132,7 +132,7 @@ export class EquipmentService {
     }
   }
 
-  getEquipments(): Equipment[] {
+  getEquipments(sortBy = null): Equipment[] {
     let equipments: Equipment[] = [];
     let rawEquipments = JSON.parse(JSON.stringify(this.getRaw()))
 
@@ -181,17 +181,38 @@ export class EquipmentService {
     return this.weaponTypes.indexOf(type) !== -1 ? true : false;
   }
 
+  isArmor(type) {
+    return this.armorTypes.indexOf(type) !== -1 ? true : false;
+  }
+
   getFormatType(type) {
     return this.formatType[type];
   }
 
-
-  getEquipmentsForBuilder(translate) {
+  getEquipmentsForUnitBuilder() {
     let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
     let equipments = this.getEquipmentsForListing();
 
     Object.keys(equipments).forEach(rarity => {
-      this.sortByName(equipments[rarity], translate)
+      this.sortByName(equipments[rarity], this.translateService)
+    });
+
+    let formattedEquipmentsForBuilder = []
+    rarityOrder.forEach(rarity => {
+      equipments[rarity].forEach(equipment => {
+        formattedEquipmentsForBuilder.push(equipment)
+      })
+    })
+
+    return formattedEquipmentsForBuilder;
+  }
+
+  getEquipmentsForBuilder() {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    let equipments = this.getEquipmentsForListing();
+
+    Object.keys(equipments).forEach(rarity => {
+      this.sortByName(equipments[rarity], this.translateService)
     });
 
     let formattedEquipmentsForBuilder = []

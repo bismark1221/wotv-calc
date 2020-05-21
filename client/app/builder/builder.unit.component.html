@@ -172,9 +172,9 @@
     </div>
 
     Equipments :<br />
-    <ng-select [items]="equipments"
+    <ng-select [items]="equipments[0]"
                bindLabel="name"
-               bindValue="id"
+               bindValue="dataId"
                groupBy="rarity"
                placeholder="Equipment 1"
                [(ngModel)]="selectedEquipmentsIds[0]"
@@ -185,29 +185,29 @@
     </div>
 
     <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[0]">
-      <ng-select [items]="equipments"
+      <ng-select [items]="equipments[1]"
                  bindLabel="name"
-                 bindValue="id"
+                 bindValue="dataId"
                  groupBy="rarity"
                  placeholder="Equipment 2"
                  [(ngModel)]="selectedEquipmentsIds[1]"
                  (ngModelChange)="selectEquipment(1)">
       </ng-select>
     </div>
-    <div *ngIf="selectedEquipments[1]">
+    <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[1]">
       <button (click)="showEquipmentDetail(1)">Custom Equipment</button>
     </div>
 
     <div *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[1]">
-      <ng-select [items]="equipments"
+      <ng-select [items]="equipments[2]"
                  bindLabel="name"
-                 bindValue="id"
+                 bindValue="dataId"
                  groupBy="rarity"
                  placeholder="Equipment 3"
                  [(ngModel)]="selectedEquipmentsIds[2]"
                  (ngModelChange)="selectEquipment(2)">
       </ng-select>
-    <div *ngIf="selectedEquipments[2]">
+    <div  *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[2]">
       <button (click)="showEquipmentDetail(2)">Custom Equipment</button>
     </div>
     </div>
