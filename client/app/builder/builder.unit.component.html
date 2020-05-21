@@ -1,14 +1,4 @@
-<div *ngIf="fromUnitBuilder" class="closeButton">
-  <button type="button" class="close" aria-label="Close" (click)="close()">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-<div
-  [ngClass]="{
-    'leftBlock': !fromUnitBuilder,
-    'upperBlock': fromUnitBuilder
-  }">
+<div class="leftBlock">
   <div>
     <ng-select [items]="units"
                bindLabel="name"
