@@ -77,6 +77,139 @@
     <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max level & jobs</button>
   </div>
 
+
+  <div *ngIf="unit">
+    <table class="equipmentsTable">
+      <tr>
+        <td>
+          <ng-select [items]="equipments[0]"
+                     bindLabel="name"
+                     bindValue="dataId"
+                     groupBy="rarity"
+                     placeholder="Equipment 1"
+                     [(ngModel)]="selectedEquipmentsIds[0]"
+                     (ngModelChange)="selectEquipment(0)"
+                     class="selectEquipment">
+          </ng-select>
+          <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
+            <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg"/>
+            <button (click)="showEquipmentDetail(0)">Custom</button>
+          </div>
+          <div *ngIf="!selectedEquipments[0]">
+            <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+          </div>
+        </td>
+        <td>
+          <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[0]">
+            <ng-select [items]="equipments[1]"
+                       bindLabel="name"
+                       bindValue="dataId"
+                       groupBy="rarity"
+                       placeholder="Equipment 2"
+                       [(ngModel)]="selectedEquipmentsIds[1]"
+                       (ngModelChange)="selectEquipment(1)"
+                       class="selectEquipment">
+            </ng-select>
+          </div>
+
+          <div *ngIf="unit && unit.lb >= 2">
+            <div *ngIf="selectedEquipmentsIds[1]">
+              <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg"/>
+              <button (click)="showEquipmentDetail(1)">Custom</button>
+            </div>
+            <div *ngIf="!selectedEquipmentsIds[1]">
+              <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+            </div>
+          </div>
+
+          <div *ngIf="unit && unit.lb < 2">
+            <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+          </div>
+        </td>
+        <td>
+          <div *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[1]">
+            <ng-select [items]="equipments[2]"
+                       bindLabel="name"
+                       bindValue="dataId"
+                       groupBy="rarity"
+                       placeholder="Equipment 3"
+                       [(ngModel)]="selectedEquipmentsIds[2]"
+                       (ngModelChange)="selectEquipment(2)"
+                       class="selectEquipment">
+            </ng-select>
+          </div>
+
+          <div *ngIf="unit && unit.lb >= 4">
+            <div *ngIf="selectedEquipmentsIds[2]">
+              <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg"/>
+              <button (click)="showEquipmentDetail(2)">Custom</button>
+            </div>
+            <div *ngIf="!selectedEquipmentsIds[2]">
+              <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+            </div>
+          </div>
+
+          <div *ngIf="unit && unit.lb < 4">
+            <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table class="esperCardTable">
+      <tr>
+        <td>
+          <ng-select [items]="espers"
+                     bindLabel="name"
+                     bindValue="id"
+                     groupBy="rarity"
+                     placeholder="Espers"
+                     [(ngModel)]="selectedEsperId"
+                     (ngModelChange)="selectEsper()"
+                     class="selectEsper">
+          </ng-select>
+
+          <div *ngIf="esper">
+            <img src="{{'assets/units/' + esper.image + '_m.png'}}" class="esperImg"/>
+            Reso
+            <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
+              <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
+            </select><br />
+            <button (click)="showEsperDetail()">Custom</button>
+          </div>
+
+          <div *ngIf="!esper">
+            <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
+          </div>
+        </td>
+        <td>
+          <ng-select [items]="cards"
+                     bindLabel="name"
+                     bindValue="id"
+                     groupBy="rarity"
+                     placeholder="Cards"
+                     [(ngModel)]="selectedCardId"
+                     (ngModelChange)="selectCard()"
+                     class="selectCard">
+          </ng-select>
+
+          <div *ngIf="card">
+            <img src="{{'assets/cards/' + card.image + '_m.png'}}" class="cardImg"/>
+            <button (click)="showCardDetail()">Custom</button>
+          </div>
+
+          <div *ngIf="!card">
+            <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
   <div *ngIf="unit">
     <table>
       <tr>
@@ -136,81 +269,6 @@
         </td>
       </tr>
     </table>
-  </div>
-
-  <div *ngIf="unit">
-    Esper :<br />
-    <ng-select [items]="espers"
-               bindLabel="name"
-               bindValue="id"
-               groupBy="rarity"
-               placeholder="Espers"
-               [(ngModel)]="selectedEsperId"
-               (ngModelChange)="selectEsper()">
-    </ng-select>
-
-    <div *ngIf="esper">
-      Esper resonance <br/>
-      <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
-        <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
-      </select><br />
-      <button (click)="showEsperDetail()">Custom Esper</button>
-    </div>
-
-    Card :<br />
-    <ng-select [items]="cards"
-               bindLabel="name"
-               bindValue="id"
-               groupBy="rarity"
-               placeholder="Cards"
-               [(ngModel)]="selectedCardId"
-               (ngModelChange)="selectCard()">
-    </ng-select>
-
-    <div *ngIf="card">
-      <button (click)="showCardDetail()">Custom Card</button>
-    </div>
-
-    Equipments :<br />
-    <ng-select [items]="equipments[0]"
-               bindLabel="name"
-               bindValue="dataId"
-               groupBy="rarity"
-               placeholder="Equipment 1"
-               [(ngModel)]="selectedEquipmentsIds[0]"
-               (ngModelChange)="selectEquipment(0)">
-    </ng-select>
-    <div *ngIf="selectedEquipments[0]">
-      <button (click)="showEquipmentDetail(0)">Custom Equipment</button>
-    </div>
-
-    <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[0]">
-      <ng-select [items]="equipments[1]"
-                 bindLabel="name"
-                 bindValue="dataId"
-                 groupBy="rarity"
-                 placeholder="Equipment 2"
-                 [(ngModel)]="selectedEquipmentsIds[1]"
-                 (ngModelChange)="selectEquipment(1)">
-      </ng-select>
-    </div>
-    <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[1]">
-      <button (click)="showEquipmentDetail(1)">Custom Equipment</button>
-    </div>
-
-    <div *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[1]">
-      <ng-select [items]="equipments[2]"
-                 bindLabel="name"
-                 bindValue="dataId"
-                 groupBy="rarity"
-                 placeholder="Equipment 3"
-                 [(ngModel)]="selectedEquipmentsIds[2]"
-                 (ngModelChange)="selectEquipment(2)">
-      </ng-select>
-    <div  *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[2]">
-      <button (click)="showEquipmentDetail(2)">Custom Equipment</button>
-    </div>
-    </div>
   </div>
 
   <button (click)="save()">SAVE</button>

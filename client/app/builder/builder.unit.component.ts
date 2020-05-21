@@ -217,6 +217,7 @@ export class BuilderUnitComponent implements OnInit {
           this.selectEquipment(i)
         } else {
           this.selectedEquipmentsIds[i] = null
+          this.selectedEquipments[i] = null
         }
       }
 

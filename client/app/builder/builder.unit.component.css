@@ -160,3 +160,23 @@ tr.disable {
 .maxLevelButton {
   margin-left: 10px;
 }
+
+.equipmentsTable, .equipmentsTable tr, .equipmentsTable td {
+  padding: 0;
+}
+
+.equipmentImg, .selectEquipment {
+  width: 80px;
+}
+
+.esperImg, .selectEsper, .cardImg, .selectCard {
+  width: 120px;
+}
+
+.esperCardTable, .esperCardTable tr, .esperCardTable td {
+  padding: 0;
+}
+
+.esperCardTable td, .equipmentsTable td {
+  vertical-align: top;
+}

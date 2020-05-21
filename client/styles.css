@@ -376,3 +376,8 @@ button.close {
 .modal-content {
   background-color: var(--body-background);
 }
+
+.selectEquipment ng-dropdown-panel {
+  width: 300px;
+  text-align: left;
+}
