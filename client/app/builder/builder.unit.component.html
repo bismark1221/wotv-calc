@@ -1,15 +1,26 @@
-<div style="width: 30%; display: inline-block;">
-  Build everything before to add them to units !!! Later on you will be able to modify levels and stats directly from here
-  <ng-select [items]="units"
-             bindLabel="name"
-             bindValue="id"
-             groupBy="rarity"
-             placeholder="Units"
-             [(ngModel)]="selectedUnitId"
-             (ngModelChange)="selectUnit()">
-  </ng-select>
+<div *ngIf="fromUnitBuilder" class="closeButton">
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-  <div *ngIf="unit">
+<div
+  [ngClass]="{
+    'leftBlock': !fromUnitBuilder,
+    'upperBlock': fromUnitBuilder
+  }">
+  <div>
+    <ng-select [items]="units"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               placeholder="Units"
+               [(ngModel)]="selectedUnitId"
+               (ngModelChange)="selectUnit()">
+    </ng-select>
+  </div>
+
+  <div *ngIf="unit" class="unitDiv">
     <table class="unitTable">
       <tbody>
         <tr>
@@ -20,31 +31,35 @@
         </tr>
       </tbody>
     </table>
+
+    <div *ngIf="unit" class="starsLbsLevels">
+      <div class="stars">
+        <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
+          <ng-template let-fill="fill" let-index="index">
+            <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
+          </ng-template>
+        </ngb-rating>
+      </div>
+
+      <div class="lbs">
+        <ngb-rating [(rate)]="unit.lb" [max]="5">
+          <ng-template let-fill="fill" let-index="index">
+            <div class="lb" [class.filled]="fill === 100" (click)="changeLB(index + 1)">&nbsp;</div>
+          </ng-template>
+        </ngb-rating>
+      </div>
+
+      <div>
+        Lv
+        <select [(ngModel)]="unit.level" (ngModelChange)="changeLevel()">
+          <option *ngFor="let level of unit.tableLevels">{{ level }}</option>
+        </select> / {{ unit.maxLevel }}
+      </div>
+    </div>
   </div>
 
   <div *ngIf="unit">
-    <ngb-rating [(rate)]="unit.star" [max]="6">
-      <ng-template let-fill="fill" let-index="index">
-        <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
-      </ng-template>
-    </ngb-rating>
-    <br />
-
-    <ngb-rating [(rate)]="unit.lb" [max]="5">
-      <ng-template let-fill="fill" let-index="index">
-        <div class="lb" [class.filled]="fill === 100" (click)="changeLB(index + 1)">&nbsp;</div>
-      </ng-template>
-    </ngb-rating>
-    <br />
-
-    Level
-    <select [(ngModel)]="unit.level" (ngModelChange)="changeLevel()">
-      <option *ngFor="let level of unit.tableLevels">{{ level }}</option>
-    </select> / {{ unit.maxLevel }}
-  </div>
-
-  <div *ngIf="unit">
-    <table>
+    <table class="jobsTable">
       <tr>
         <td *ngFor="let i of [0, 1, 2]">
           <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
@@ -57,9 +72,9 @@
     </table>
   </div>
 
-  <div *ngIf="unit">
+  <div *ngIf="unit" class="unitButtons">
     <button (click)="maxUnit()">Max unit</button>
-    <button (click)="maxLevelAndJobs()">Max level & jobs</button>
+    <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max level & jobs</button>
   </div>
 
   <div *ngIf="unit">
@@ -68,10 +83,20 @@
         <td colspan="2">Support Skills</td>
       </tr>
       <tr>
-        <td *ngFor="let i of [0, 1]">
-          <select [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="changeLevel()">
+        <td>
+          <select [(ngModel)]="unit.activatedSupport[0]" (ngModelChange)="changeLevel()">
             <option value="0"></option>
-            <option *ngFor="let node of getAvailableSupportNodes(i)" [ngValue]="node.nodeId">
+            <option *ngFor="let node of getAvailableSupportNodes(0)" [ngValue]="node.nodeId">
+              {{ node.name }}
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select [(ngModel)]="unit.activatedSupport[1]" (ngModelChange)="changeLevel()">
+            <option value="0"></option>
+            <option *ngFor="let node of getAvailableSupportNodes(1)" [ngValue]="node.nodeId">
               {{ node.name }}
             </option>
           </select>

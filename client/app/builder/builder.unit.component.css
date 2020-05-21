@@ -1,9 +1,5 @@
-.elementImg {
-  height: 32px;
-}
-
 .unitImg {
-  height: 150px;
+  width: 100px;
   margin-top: 10px;
 }
 
@@ -31,17 +27,17 @@ tr.disable {
 }
 
 .star {
-  height: 40px;
+  height: 20px;
   background: url("assets/icons/star_off.png") 0px 0px no-repeat;
-  background-size: 40px;
-  width: 40px;
+  background-size: 20px;
+  width: 20px;
 }
 
 .star.filled {
-  height: 40px;
+  height: 20px;
   background: url("assets/icons/star_on.png") 0px 0px no-repeat;
-  background-size: 40px;
-  width: 40px;
+  background-size: 20px;
+  width: 20px;
 }
 
 .lb {
@@ -74,4 +70,93 @@ tr.disable {
 
 .buffImg {
   width: 40px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 250px;
+}
+
+.leftBlock .unitDiv {
+  margin-top: 10px;
+}
+
+.leftBlock .unitTable {
+  display: inline-block;
+}
+
+.leftBlock .starsLbsLevels {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.leftBlock .stars {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.leftBlock .ratingStars {
+  height: 25px;
+}
+
+.leftBlock .lbs {
+  margin-bottom: 10px;
+}
+
+.rightBlock {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.upperBlock {
+  display: block;
+}
+
+.upperBlock .unitDiv {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.upperBlock .unitTable {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.upperBlock .starsLbsLevels {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.lowerBlock {}
+
+.lowerBlock .statsTable {
+  margin: auto
+}
+
+.jobsTable, .jobsTable tr, .jobsTable td {
+  border: 0;
+  padding: 0;
+}
+
+.jobsTable td:nth-child(2), .jobsTable td:nth-child(3) {
+  padding-left: 5px;
+}
+
+.jobsTable select {
+  width: 40px;
+}
+
+.unitButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.maxLevelButton {
+  margin-left: 10px;
 }
