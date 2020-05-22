@@ -255,6 +255,7 @@ export class JsonService {
     9: "DARK",
     101: "HUMAN",
     103: "BEAST",
+    102: "ESPER",
     104: "DEMON",
     105: "DRAGON",
     106: "ELEMENTAL",
@@ -1278,7 +1279,7 @@ export class JsonService {
               }
 
               if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
+                console.log("@@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
               }
 
               let type = this[this.version].buffs[buff]["tag" + i] ? this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this[this.version].buffs[buff]["type" + i]]

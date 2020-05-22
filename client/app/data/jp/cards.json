@@ -550,7 +550,7 @@
   "VC_LW_SOKYU": {
     "dataId": "VC_LW_SOKYU",
     "names": {
-      "en": "リオニス王国第二部隊　蒼穹 - Second Division of the Kingdom of Leonis, «Caelum»"
+      "en": "リオニス王国第二部隊≪蒼穹≫ - Second Division of the Kingdom of Leonis, «Caelum»"
     },
     "rarity": "UR",
     "stats": {
@@ -3025,7 +3025,7 @@
   "VC_LW_ROBUST": {
     "dataId": "VC_LW_ROBUST",
     "names": {
-      "en": "ホルン王国第一部隊《堅牢》"
+      "en": "ホルン王国第一部隊≪堅牢≫"
     },
     "rarity": "UR",
     "stats": {
@@ -3156,6 +3156,143 @@
         "en": "SK_VC_LW_ROBUST_PMAX"
       },
       "slug": "sk_vc_lw_robust_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_FNRR": {
+    "dataId": "VC_LW_FNRR",
+    "names": {
+      "en": "月影狼牙　フェンリル"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 46,
+        "max": 362
+      },
+      "ATK": {
+        "min": 31,
+        "max": 120
+      },
+      "MAG": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "image": "lapsfnrr",
+    "slug": "yue-ying-lang-ya-huenriru",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAGIC_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_FNRR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FNRR_GS"
+      },
+      "slug": "sk_vc_lw_fnrr_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAGIC_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_FNRR_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FNRR_GS_AW"
+      },
+      "slug": "sk_vc_lw_fnrr_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAGIC_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_FNRR_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FNRR_GSMAX"
+      },
+      "slug": "sk_vc_lw_fnrr_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_FNRR_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FNRR_P"
+      },
+      "slug": "sk_vc_lw_fnrr_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_FNRR_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FNRR_PAW"
+      },
+      "slug": "sk_vc_lw_fnrr_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_FNRR_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FNRR_PMAX"
+      },
+      "slug": "sk_vc_lw_fnrr_pmax",
       "maxLevel": 1
     }
   },
@@ -4393,7 +4530,7 @@
   "VC_LW_LAMA_01": {
     "dataId": "VC_LW_LAMA_01",
     "names": {
-      "en": "蠱惑大蛇　ラミアクイーン"
+      "en": "蠱惑大蛇　ラミアクイーン - Seductive Serpent, Lamia Queen"
     },
     "rarity": "MR",
     "stats": {
@@ -4411,7 +4548,7 @@
       }
     },
     "image": "lapslama_01",
-    "slug": "gu-huo-da-she-ramiakuin",
+    "slug": "seductive-serpent-lamia-queen",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -4494,7 +4631,7 @@
   "VC_LW_GUARD": {
     "dataId": "VC_LW_GUARD",
     "names": {
-      "en": "純白の親衛隊"
+      "en": "純白の親衛隊 - Snow-White Guard"
     },
     "rarity": "MR",
     "stats": {
@@ -4512,7 +4649,7 @@
       }
     },
     "image": "lapsguard",
-    "slug": "chun-baino-qin-wei-dui",
+    "slug": "snow-white-guard",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -5513,6 +5650,105 @@
         "en": "SK_VC_LW_MDFY_PAW"
       },
       "slug": "sk_vc_lw_mdfy_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_ORDR": {
+    "dataId": "VC_LW_ORDR",
+    "names": {
+      "en": "届かぬ想い"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 33,
+        "max": 268
+      },
+      "ATK": {
+        "min": 22,
+        "max": 91
+      },
+      "MAG": {
+        "min": 22,
+        "max": 89
+      }
+    },
+    "image": "lapsordr",
+    "slug": "jiekanu-xiangi",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "WIND_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ORDR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ORDR_GS"
+      },
+      "slug": "sk_vc_lw_ordr_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "WIND_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_ORDR_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ORDR_GSAW"
+      },
+      "slug": "sk_vc_lw_ordr_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_ORDR_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ORDR_P"
+      },
+      "slug": "sk_vc_lw_ordr_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_ORDR_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_ORDR_PAW"
+      },
+      "slug": "sk_vc_lw_ordr_paw",
       "maxLevel": 4
     }
   },

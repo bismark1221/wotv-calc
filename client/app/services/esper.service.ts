@@ -40,7 +40,8 @@ export class EsperService {
       "UN_LW_S_MOGL",
       "UN_LW_S_OCHU",
       "UN_FFT_S_CHCB_01",
-      "UN_LW_S_MDFY"
+      "UN_LW_S_MDFY",
+      "UN_LW_S_LAMA_01"
     ],
     UR: [
       "UN_LW_S_IFRT",
@@ -53,7 +54,7 @@ export class EsperService {
       "UN_LW_S_THDG",
       "UN_FF01_S_WRMC",
       "UN_LW_S_DABL",
-      "UN_LW_S_LAMA_01"
+      "UN_LW_S_FNRR"
     ]
   }
 

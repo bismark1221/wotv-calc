@@ -38,6 +38,11 @@ export class HomeComponent {
     ],
     JP: [
       [
+        {type: "esper", dataId: "UN_LW_S_FNRR"},
+        {type: "card", dataId: "VC_LW_FNRR"},
+        {type: "card", dataId: "VC_LW_ORDR"}
+      ],
+      [
         {type: "unit", dataId: "UN_LW_P_STRN_01"}
       ]
     ]
