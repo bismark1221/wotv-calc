@@ -294,7 +294,8 @@ export class EsperService {
       dataId: esper.dataId,
       star: esper.star,
       level: esper.level,
-      nodes: {}
+      nodes: {},
+      resonance: 1
     }
 
     Object.keys(esper.board.nodes).forEach(nodeId => {
