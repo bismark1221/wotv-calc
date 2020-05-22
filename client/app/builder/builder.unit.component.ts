@@ -202,14 +202,15 @@ export class BuilderUnitComponent implements OnInit {
         this.selectEsper(this.unit.savedEsper.resonance)
       } else {
         this.selectedEsperId = null
+        this.selectEsper()
       }
 
       if (this.unit.savedCard) {
         this.selectedCardId = this.unit.savedCard
-        this.selectCard()
       } else {
         this.selectedCardId = null
       }
+      this.selectCard()
 
       for (let i = 0; i <= 2; i++) {
         if (this.unit.savedEquipments && this.unit.savedEquipments[i]) {
@@ -250,16 +251,11 @@ export class BuilderUnitComponent implements OnInit {
     this.addCardToUnit()
   }
 
-  selectEquipment(pos, noParent = false) {
+  selectEquipment(pos) {
     if (this.selectedEquipmentsIds[pos]) {
       this.selectedEquipments[pos] = this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentsIds[pos])
     } else {
-      for (let i = pos; i <= 2; i++) {
-        this.selectedEquipments[i] = null
-        if (!noParent) {
-          this.selectEquipment(i, true)
-        }
-      }
+      this.selectedEquipments[pos] = null
     }
 
     this.addEquipmentToUnit(pos)

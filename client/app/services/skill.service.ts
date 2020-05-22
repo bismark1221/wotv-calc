@@ -177,28 +177,28 @@ export class SkillService {
     switch (effect.type) {
       case "HP" :
         if (skill.slot === 3 || skill.type !== "skill") {
-          html = "Increase HP" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = this.getIncrease(effect) + " HP" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
           html = "Restore HP" + this.getValue(skill, effect) + this.getTurns(effect)
         }
       break
       case "TP" :
         if (skill.slot === 3 || skill.type !== "skill") {
-          html = "Increase TP" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = this.getIncrease(effect) + " TP" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
           html = "Restore TP" + this.getValue(skill, effect) + this.getTurns(effect)
         }
       break
       case "AP" :
         if (skill.slot === 3 || skill.type !== "skill") {
-          html = "Increase AP" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = this.getIncrease(effect) + " AP" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
           html = "Restore AP" + this.getValue(skill, effect) + this.getTurns(effect)
         }
       break
       case "CT" :
         if (skill.slot === 3 || skill.type !== "skill") {
-          html = "Increase CT" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = this.getIncrease(effect) + " CT" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
           html = "Restore CT" + this.getValue(skill, effect) + this.getTurns(effect)
         }

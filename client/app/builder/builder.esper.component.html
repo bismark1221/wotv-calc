@@ -94,6 +94,9 @@
   <div class="countSPs">
     SPs: {{ esper.usedSPs }} / {{ esper.maxSPs }}
   </div>
+</div>
+
+<div class="row" *ngIf="esper && esper.grid">
   <div class="esperGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
       <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">

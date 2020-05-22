@@ -90,7 +90,7 @@
           </div>
         </td>
         <td>
-          <div *ngIf="unit && unit.lb >= 2 && selectedEquipmentsIds[0]">
+          <div *ngIf="unit && unit.lb >= 2">
             <ng-select [items]="equipments[1]"
                        bindLabel="name"
                        bindValue="dataId"
@@ -117,7 +117,7 @@
           </div>
         </td>
         <td>
-          <div *ngIf="unit && unit.lb >= 4 && selectedEquipmentsIds[1]">
+          <div *ngIf="unit && unit.lb >= 4">
             <ng-select [items]="equipments[2]"
                        bindLabel="name"
                        bindValue="dataId"

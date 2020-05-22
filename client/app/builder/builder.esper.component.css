@@ -13,9 +13,7 @@
 }
 
 .countSPs {
-  position: absolute;
-  left: 200px;
-  margin-top: 50px;
+  margin: auto;
   background-color: var(--btn-background-activated);
   padding: 10px;
   color: var(--black);
@@ -32,7 +30,6 @@
 .closeButton button {
   padding: 10px;
 }
-
 
 
 .leftBlock {

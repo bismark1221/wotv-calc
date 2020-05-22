@@ -13,8 +13,8 @@ export class GuildService {
   private statsPerStatue = {
     "HP": "serpent",
     "TP": "bull",
-    "ATK": "kirin",
-    "MAG": "lion",
+    "MAG": "kirin",
+    "ATK": "lion",
   }
 
   constructor(
