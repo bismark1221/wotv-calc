@@ -267,8 +267,8 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <textarea class="textLink" #textLink>{{ getExportableLink() }}</textarea>
-    <button [ngxClipboard]="textLink">Copy</button>
+    <textarea rows="10" class="textLink">{{ getExportableLink() }}</textarea>
+    <button (click)="copyLink()">Copy</button>
   </ng-template>
 
   <div *ngIf="unit">

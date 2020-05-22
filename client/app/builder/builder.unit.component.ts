@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
+import { ClipboardService } from 'ngx-clipboard'
 
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
@@ -124,7 +125,8 @@ export class BuilderUnitComponent implements OnInit {
     private cardService: CardService,
     private equipmentService: EquipmentService,
     private modalService: NgbModal,
-    private navService: NavService
+    private navService: NavService,
+    private clipboardService: ClipboardService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
@@ -402,10 +404,15 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   openModal(content) {
-    this.modalService.open(content, {windowClass: 'link-modal'});
+    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+    modalRef.result.then((result) => {}, (reason) => {})
   }
 
   closeModal() {
     this.modalService.dismissAll();
+  }
+
+  copyLink() {
+    this.clipboardService.copyFromContent(this.getExportableLink())
   }
 }
