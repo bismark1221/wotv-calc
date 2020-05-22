@@ -1,0 +1,27 @@
+import { __decorate } from "tslib";
+import { Directive, OnInit, TemplateRef, ViewContainerRef } from '@angular/core';
+import { ClipboardService } from './ngx-clipboard.service';
+let ClipboardIfSupportedDirective = class ClipboardIfSupportedDirective {
+    constructor(_clipboardService, _viewContainerRef, _templateRef) {
+        this._clipboardService = _clipboardService;
+        this._viewContainerRef = _viewContainerRef;
+        this._templateRef = _templateRef;
+    }
+    ngOnInit() {
+        if (this._clipboardService.isSupported) {
+            this._viewContainerRef.createEmbeddedView(this._templateRef);
+        }
+    }
+};
+ClipboardIfSupportedDirective.ctorParameters = () => [
+    { type: ClipboardService },
+    { type: ViewContainerRef },
+    { type: TemplateRef }
+];
+ClipboardIfSupportedDirective = __decorate([
+    Directive({
+        selector: '[ngxClipboardIfSupported]'
+    })
+], ClipboardIfSupportedDirective);
+export { ClipboardIfSupportedDirective };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LWNsaXBib2FyZC1pZi1zdXBwb3J0ZWQuZGlyZWN0aXZlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmd4LWNsaXBib2FyZC8iLCJzb3VyY2VzIjpbImxpYi9uZ3gtY2xpcGJvYXJkLWlmLXN1cHBvcnRlZC5kaXJlY3RpdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxTQUFTLEVBQUUsTUFBTSxFQUFFLFdBQVcsRUFBRSxnQkFBZ0IsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUVqRixPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSx5QkFBeUIsQ0FBQztBQUszRCxJQUFhLDZCQUE2QixHQUExQyxNQUFhLDZCQUE2QjtJQUN0QyxZQUNZLGlCQUFtQyxFQUNuQyxpQkFBbUMsRUFDbkMsWUFBOEI7UUFGOUIsc0JBQWlCLEdBQWpCLGlCQUFpQixDQUFrQjtRQUNuQyxzQkFBaUIsR0FBakIsaUJBQWlCLENBQWtCO1FBQ25DLGlCQUFZLEdBQVosWUFBWSxDQUFrQjtJQUN2QyxDQUFDO0lBRUosUUFBUTtRQUNKLElBQUksSUFBSSxDQUFDLGlCQUFpQixDQUFDLFdBQVcsRUFBRTtZQUNwQyxJQUFJLENBQUMsaUJBQWlCLENBQUMsa0JBQWtCLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxDQUFDO1NBQ2hFO0lBQ0wsQ0FBQztDQUNKLENBQUE7O1lBVmtDLGdCQUFnQjtZQUNoQixnQkFBZ0I7WUFDckIsV0FBVzs7QUFKNUIsNkJBQTZCO0lBSHpDLFNBQVMsQ0FBQztRQUNQLFFBQVEsRUFBRSwyQkFBMkI7S0FDeEMsQ0FBQztHQUNXLDZCQUE2QixDQVl6QztTQVpZLDZCQUE2QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IERpcmVjdGl2ZSwgT25Jbml0LCBUZW1wbGF0ZVJlZiwgVmlld0NvbnRhaW5lclJlZiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuaW1wb3J0IHsgQ2xpcGJvYXJkU2VydmljZSB9IGZyb20gJy4vbmd4LWNsaXBib2FyZC5zZXJ2aWNlJztcclxuXHJcbkBEaXJlY3RpdmUoe1xyXG4gICAgc2VsZWN0b3I6ICdbbmd4Q2xpcGJvYXJkSWZTdXBwb3J0ZWRdJ1xyXG59KVxyXG5leHBvcnQgY2xhc3MgQ2xpcGJvYXJkSWZTdXBwb3J0ZWREaXJlY3RpdmUgaW1wbGVtZW50cyBPbkluaXQge1xyXG4gICAgY29uc3RydWN0b3IoXHJcbiAgICAgICAgcHJpdmF0ZSBfY2xpcGJvYXJkU2VydmljZTogQ2xpcGJvYXJkU2VydmljZSxcclxuICAgICAgICBwcml2YXRlIF92aWV3Q29udGFpbmVyUmVmOiBWaWV3Q29udGFpbmVyUmVmLFxyXG4gICAgICAgIHByaXZhdGUgX3RlbXBsYXRlUmVmOiBUZW1wbGF0ZVJlZjxhbnk+XHJcbiAgICApIHt9XHJcblxyXG4gICAgbmdPbkluaXQoKSB7XHJcbiAgICAgICAgaWYgKHRoaXMuX2NsaXBib2FyZFNlcnZpY2UuaXNTdXBwb3J0ZWQpIHtcclxuICAgICAgICAgICAgdGhpcy5fdmlld0NvbnRhaW5lclJlZi5jcmVhdGVFbWJlZGRlZFZpZXcodGhpcy5fdGVtcGxhdGVSZWYpO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxufVxyXG4iXX0=
