@@ -200,27 +200,32 @@ export class CardService {
     return this.savedCards;
   }
 
+  getSavableData(card) {
+    return {
+      dataId: card.dataId,
+      star: card.star,
+      level: card.level
+    }
+  }
+
   saveCard(card) {
     if (!this.savedCards) {
       this.getSavedCards()
     }
 
-    this.savedCards[card.dataId] = {
-      star: card.star,
-      level: card.level
-    }
+    this.savedCards[card.dataId] = this.getSavableData(card)
 
     this.localStorageService.set(this.getLocalStorage(), this.savedCards);
   }
 
-  selectCardForBuilder(cardId) {
+  selectCardForBuilder(cardId, customData = null) {
     this.card = this.getCard(cardId)
     this.card.name = this.card.getName(this.translateService)
     this.card.star = 0;
     this.card.level = 1;
     this.card.statsType = this.statsType
 
-    this.initiateSavedCard()
+    this.initiateSavedCard(customData)
 
     this.updateMaxLevel();
     this.changeLevel()
@@ -228,9 +233,12 @@ export class CardService {
     return this.card
   }
 
-  private initiateSavedCard() {
-    let savedCards = this.getSavedCards()
-    let card = savedCards[this.card.dataId]
+  private initiateSavedCard(customData = null) {
+    let card = customData
+    if (!card) {
+      let savedCards = this.getSavedCards()
+      card = savedCards[this.card.dataId]
+    }
 
     if (card) {
       this.card.star = card.star;

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
@@ -9,6 +10,7 @@ import { GridService } from '../services/grid.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
+import { NavService } from '../services/nav.service'
 
 import { BuilderEsperComponent } from './builder.esper.component';
 import { BuilderCardComponent } from './builder.card.component';
@@ -114,6 +116,7 @@ export class BuilderUnitComponent implements OnInit {
   ]
 
   constructor(
+    private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
     private translateService: TranslateService,
     private guildService: GuildService,
@@ -121,6 +124,7 @@ export class BuilderUnitComponent implements OnInit {
     private cardService: CardService,
     private equipmentService: EquipmentService,
     private modalService: NgbModal,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
@@ -132,6 +136,17 @@ export class BuilderUnitComponent implements OnInit {
     this.getGuild();
     this.getEspers();
     this.getCards();
+
+    this.activatedRoute.paramMap.subscribe((params: Params) => {
+      let data = params.get('data')
+      if (data) {
+        data = JSON.parse(atob(params.get('data')))
+        console.log(data)
+
+        this.selectedUnitId = data.dataId
+        this.selectUnit(data)
+      }
+    });
   }
 
   private getGuild() {
@@ -193,47 +208,65 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
-  selectUnit() {
-    if (this.selectedUnitId) {
-      this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId)
-
-      if (this.unit.savedEsper) {
-        this.selectedEsperId = this.unit.savedEsper.dataId
-        this.selectEsper(this.unit.savedEsper.resonance)
-      } else {
-        this.selectedEsperId = null
-        this.selectEsper()
-      }
-
-      if (this.unit.savedCard) {
-        this.selectedCardId = this.unit.savedCard
-      } else {
-        this.selectedCardId = null
-      }
-      this.selectCard()
-
-      for (let i = 0; i <= 2; i++) {
-        if (this.unit.savedEquipments && this.unit.savedEquipments[i]) {
-          this.selectedEquipmentsIds[i] = this.unit.savedEquipments[i]
-          this.selectEquipment(i)
-        } else {
-          this.selectedEquipmentsIds[i] = null
-          this.selectedEquipments[i] = null
-        }
-      }
-
-      for (let i = 0; i <= 2; i++) {
-        this.getAvailableEquipments(i)
-      }
+  private loadEsper() {
+    if (this.unit.savedEsper && this.unit.savedEsper.level) {
+      this.selectedEsperId = this.unit.savedEsper.dataId
+      this.selectEsper(this.unit.savedEsper)
     } else {
-      this.unit = null
+      this.selectedEsperId = null
+      this.selectEsper()
     }
   }
 
-  selectEsper(resonance = 1) {
+  private loadCard() {
+    if (this.unit.savedCard && this.unit.savedCard.level) {
+      this.selectedCardId = this.unit.savedCard.dataId
+      this.selectCard(this.unit.savedCard)
+    } else {
+      this.selectedCardId = null
+      this.selectCard()
+    }
+  }
+
+  private loadEquipments() {
+    for (let i = 0; i <= 2; i++) {
+      if (this.unit.savedEquipments && this.unit.savedEquipments[i] && this.unit.savedEquipments[i].level) {
+        this.selectedEquipmentsIds[i] = this.unit.savedEquipments[i].dataId
+        this.selectEquipment(i, this.unit.savedEquipments[i])
+      } else {
+        this.selectedEquipmentsIds[i] = null
+        this.selectedEquipments[i] = null
+        this.selectEquipment(i)
+      }
+    }
+
+    for (let i = 0; i <= 2; i++) {
+      this.getAvailableEquipments(i)
+    }
+  }
+
+  selectUnit(customData = null) {
+    if (this.selectedUnitId) {
+      this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId, customData)
+
+      this.loadEsper()
+      this.loadCard()
+      this.loadEquipments()
+    } else {
+      this.unit = null
+    }
+
+    this.getExportableLink()
+  }
+
+  getExportableLink() {
+    let link = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + btoa(JSON.stringify(this.unitService.getSavableData(this.unit)))
+    return link
+  }
+
+  selectEsper(customData = null) {
     if (this.selectedEsperId) {
-      this.esper = this.esperService.selectEsperForBuilder(this.selectedEsperId)
-      this.esper.resonance = resonance
+      this.esper = this.esperService.selectEsperForBuilder(this.selectedEsperId, customData)
     } else {
       this.esper = null
     }
@@ -241,9 +274,9 @@ export class BuilderUnitComponent implements OnInit {
     this.addEsperToUnit()
   }
 
-  selectCard() {
+  selectCard(customData = null) {
     if (this.selectedCardId) {
-      this.card = this.cardService.selectCardForBuilder(this.selectedCardId)
+      this.card = this.cardService.selectCardForBuilder(this.selectedCardId, customData)
     } else {
       this.card = null
     }
@@ -251,9 +284,9 @@ export class BuilderUnitComponent implements OnInit {
     this.addCardToUnit()
   }
 
-  selectEquipment(pos) {
+  selectEquipment(pos, customData = null) {
     if (this.selectedEquipmentsIds[pos]) {
-      this.selectedEquipments[pos] = this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentsIds[pos])
+      this.selectedEquipments[pos] = this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentsIds[pos], customData)
     } else {
       this.selectedEquipments[pos] = null
     }
@@ -366,5 +399,13 @@ export class BuilderUnitComponent implements OnInit {
       //this.navService.updateMenu(false);
       this.unitService.changeLevel()
     });
+  }
+
+  openModal(content) {
+    this.modalService.open(content, {windowClass: 'link-modal'});
+  }
+
+  closeModal() {
+    this.modalService.dismissAll();
   }
 }

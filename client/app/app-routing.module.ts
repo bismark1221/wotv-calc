@@ -38,7 +38,7 @@ const ROUTES: Routes = [
     children: [
       { path: '', redirectTo: 'unit', pathMatch: 'full' },
       { path: 'unit', component: BuilderUnitComponent },
-      { path: 'unit/:slug', component: BuilderUnitComponent },
+      { path: 'unit/:data', component: BuilderUnitComponent },
       { path: 'card', component: BuilderCardComponent },
       { path: 'card/:slug', component: BuilderCardComponent },
       { path: 'esper', component: BuilderEsperComponent },
@@ -69,7 +69,7 @@ const ROUTES: Routes = [
     children: [
       { path: '', redirectTo: 'unit', pathMatch: 'full' },
       { path: 'unit', component: BuilderUnitComponent },
-      { path: 'unit/:slug', component: BuilderUnitComponent },
+      { path: 'unit/:data', component: BuilderUnitComponent },
       { path: 'card', component: BuilderCardComponent },
       { path: 'card/:slug', component: BuilderCardComponent },
       { path: 'esper', component: BuilderEsperComponent },

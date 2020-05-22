@@ -238,12 +238,9 @@ export class EquipmentService {
     return this.savedEquipments;
   }
 
-  saveEquipment(equipment) {
-    if (!this.savedEquipments) {
-      this.getSavedEquipments()
-    }
-
-    this.savedEquipments[equipment.dataId] = {
+  getSavableData(equipment) {
+    let data = {
+      dataId: equipment.dataId,
       upgrade: equipment.upgrade,
       grow: equipment.grow,
       level: equipment.level,
@@ -252,17 +249,27 @@ export class EquipmentService {
     }
 
     Object.keys(equipment.stats).forEach(stat => {
-      this.savedEquipments[equipment.dataId].stats[stat] = equipment.stats[stat].selected
+      data.stats[stat] = equipment.stats[stat].selected
     })
 
     equipment.skill.forEach(skill => {
-      this.savedEquipments[equipment.dataId].skill[skill.dataId] = skill.level
+      data.skill[skill.dataId] = skill.level
     })
+
+    return data
+  }
+
+  saveEquipment(equipment) {
+    if (!this.savedEquipments) {
+      this.getSavedEquipments()
+    }
+
+    this.savedEquipments[equipment.dataId] = this.getSavableData(equipment)
 
     this.localStorageService.set(this.getLocalStorage(), this.savedEquipments);
   }
 
-  selectEquipmentForBuilder(equipmentId) {
+  selectEquipmentForBuilder(equipmentId, customData = null) {
     this.equipment = this.getEquipment(equipmentId)
     this.equipment.name = this.equipment.getName(this.translateService)
     this.equipment.upgrade = 0;
@@ -273,7 +280,7 @@ export class EquipmentService {
     this.equipment.growIds = Object.keys(this.equipment.grows)
     this.equipment.grow = this.equipment.growIds[0]
 
-    this.initiateSavedEquipment()
+    this.initiateSavedEquipment(customData)
     this.updateMaxStat()
 
     this.changeUpgrade()
@@ -282,9 +289,12 @@ export class EquipmentService {
     return this.equipment
   }
 
-  private initiateSavedEquipment() {
-    let savedEquipments = this.getSavedEquipments()
-    let equipment = savedEquipments[this.equipment.dataId]
+  private initiateSavedEquipment(customData = null) {
+    let equipment = customData
+    if (!equipment) {
+      let savedEquipments = this.getSavedEquipments()
+      equipment = savedEquipments[this.equipment.dataId]
+    }
 
     if (equipment) {
       this.equipment.upgrade = equipment.upgrade;

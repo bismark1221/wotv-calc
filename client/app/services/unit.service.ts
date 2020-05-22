@@ -13,6 +13,8 @@ import { GuildService } from './guild.service'
 import { NavService } from './nav.service'
 import { NameService } from './name.service'
 import { EquipmentService } from './equipment.service'
+import { CardService } from './card.service'
+import { EsperService } from './esper.service'
 
 @Injectable()
 export class UnitService {
@@ -122,7 +124,9 @@ export class UnitService {
     private guildService: GuildService,
     private navService: NavService,
     private nameService: NameService,
-    private equipmentService: EquipmentService
+    private equipmentService: EquipmentService,
+    private cardService: CardService,
+    private esperService: EsperService
   ) {}
 
   private i(s: any) {
@@ -257,12 +261,9 @@ export class UnitService {
     return this.savedUnits;
   }
 
-  saveUnit(unit) {
-    if (!this.savedUnits) {
-      this.getSavedUnits()
-    }
-
-    this.savedUnits[unit.dataId] = {
+  getSavableData(unit) {
+    let data = {
+      dataId: unit.dataId,
       star: unit.star,
       lb: unit.lb ? unit.lb : 0,
       level: unit.level,
@@ -283,30 +284,45 @@ export class UnitService {
     }
 
     if (unit.esper) {
-      this.savedUnits[unit.dataId].esper = {
-        dataId: unit.esper.dataId,
-        resonance: unit.esper.resonance
-      }
+      let savedEsper = this.esperService.getSavableData(unit.esper)
+      savedEsper.resonance = unit.esper.resonance
+      data.esper = savedEsper
+    } else {
+      data.esper = null
     }
 
     if (unit.card) {
-      this.savedUnits[unit.dataId].card = unit.card.dataId
+      data.card = this.cardService.getSavableData(unit.card)
+    } else {
+      data.card = null
     }
 
     for (let i = 0; i <= 2; i++) {
       if (unit.equipments && unit.equipments[i]) {
-        this.savedUnits[unit.dataId].equipments[i] = unit.equipments[i].dataId
+        data.equipments[i] = this.equipmentService.getSavableData(unit.equipments[i])
+      } else {
+        data.equipments[i] = null
       }
     }
 
     Object.keys(unit.board.nodes).forEach(nodeId => {
-      this.savedUnits[unit.dataId].nodes[nodeId] = unit.board.nodes[nodeId].level
+      data.nodes[nodeId] = unit.board.nodes[nodeId].level
     })
+
+    return data
+  }
+
+  saveUnit(unit) {
+    if (!this.savedUnits) {
+      this.getSavedUnits()
+    }
+
+    this.savedUnits[unit.dataId] = this.getSavableData(unit)
 
     this.localStorageService.set(this.getLocalStorage(), this.savedUnits);
   }
 
-  selectUnitForBuilder(unitId) {
+  selectUnitForBuilder(unitId, customData = null) {
     this.unit = new Unit()
     this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId))), this.translateService)
     this.unit.name = this.unit.getName(this.translateService)
@@ -342,7 +358,7 @@ export class UnitService {
       }
     })
 
-    this.initiateSavedUnit()
+    this.initiateSavedUnit(customData)
 
     this.updateMaxLevel();
     this.updateMaxJobLevel();
@@ -353,9 +369,12 @@ export class UnitService {
     return this.unit
   }
 
-  private initiateSavedUnit() {
-    let savedUnits = this.getSavedUnits()
-    let unit = savedUnits[this.unit.dataId]
+  private initiateSavedUnit(customData = null) {
+    let unit = customData
+    if (!unit) {
+      let savedUnits = this.getSavedUnits()
+      unit = savedUnits[this.unit.dataId]
+    }
 
     if (unit) {
       this.unit.star = unit.star;

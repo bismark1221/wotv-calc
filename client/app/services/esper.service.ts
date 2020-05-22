@@ -289,25 +289,32 @@ export class EsperService {
     return this.savedEspers;
   }
 
-  saveEsper(esper) {
-    if (!this.savedEspers) {
-      this.getSavedEspers()
-    }
-
-    this.savedEspers[esper.dataId] = {
+  getSavableData(esper) {
+    let data = {
+      dataId: esper.dataId,
       star: esper.star,
       level: esper.level,
       nodes: {}
     }
 
     Object.keys(esper.board.nodes).forEach(nodeId => {
-      this.savedEspers[esper.dataId].nodes[nodeId] = esper.board.nodes[nodeId].level
+      data.nodes[nodeId] = esper.board.nodes[nodeId].level
     })
+
+    return data
+  }
+
+  saveEsper(esper) {
+    if (!this.savedEspers) {
+      this.getSavedEspers()
+    }
+
+    this.savedEspers[esper.dataId] = this.getSavableData(esper)
 
     this.localStorageService.set(this.getLocalStorage(), this.savedEspers);
   }
 
-  selectEsperForBuilder(esperId) {
+  selectEsperForBuilder(esperId, customData = null) {
     this.esper = this.getEsper(esperId)
     this.esper.name = this.esper.getName(this.translateService)
 
@@ -317,7 +324,7 @@ export class EsperService {
     this.esper.usedSPs = 0;
     this.esper.possibleBuffs = null;
 
-    this.initiateSavedEsper()
+    this.initiateSavedEsper(customData)
 
     this.updateMaxLevel();
     this.changeLevel();
@@ -327,15 +334,17 @@ export class EsperService {
     return this.esper
   }
 
-  private initiateSavedEsper() {
-    let savedEspers = this.getSavedEspers()
-    let esper = savedEspers[this.esper.dataId]
+  private initiateSavedEsper(customData = null) {
+    let esper = customData
+    if (!esper) {
+      let savedEspers = this.getSavedEspers()
+      esper = savedEspers[this.esper.dataId]
+    }
 
     if (esper) {
-      let lang = this.translateService.currentLang
-
       this.esper.star = esper.star;
       this.esper.level = esper.level;
+      this.esper.resonance = esper.resonance
 
       Object.keys(esper.nodes).forEach(nodeId => {
         if (esper.nodes[nodeId]) {

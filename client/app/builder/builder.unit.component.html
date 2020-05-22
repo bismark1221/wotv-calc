@@ -261,7 +261,20 @@
     </table>
   </div>
 
-  <button (click)="save()">SAVE</button>
+  <ng-template #builderLink let-modal>
+    <div>
+      <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <textarea class="textLink" #textLink>{{ getExportableLink() }}</textarea>
+    <button [ngxClipboard]="textLink">Copy</button>
+  </ng-template>
+
+  <div *ngIf="unit">
+    <button (click)="save()">SAVE</button>
+    <button (click)="openModal(builderLink)">Get Build Link</button>
+  </div>
 </div>
 
 <div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="unit">

@@ -180,3 +180,12 @@ tr.disable {
 .esperCardTable td, .equipmentsTable td {
   vertical-align: top;
 }
+
+.modal-dialog {
+  width: 270px
+}
+
+.textLink {
+  margin: auto;
+  width: 250px;
+}

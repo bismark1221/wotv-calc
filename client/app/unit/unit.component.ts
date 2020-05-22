@@ -39,6 +39,7 @@ export class UnitComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
+      console.log(params)
       this.unit = this.unitService.getUnitBySlug(params.get('slug'))
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);

@@ -13,8 +13,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrettyJsonModule } from 'angular2-prettyjson';
 import { NgxMdModule } from 'ngx-md';
 import { NgSelectModule } from '@ng-select/ng-select';
-
 import { LocalStorageService } from 'angular-2-local-storage';
+import { ClipboardModule } from 'ngx-clipboard';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -110,7 +110,8 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     NgbModule,
     PrettyJsonModule,
-    NgSelectModule
+    NgSelectModule,
+    ClipboardModule
   ],
   providers: [
     UnitService,
