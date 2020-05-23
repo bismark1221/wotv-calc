@@ -110,6 +110,49 @@ export class SkillService {
     return value
   }
 
+
+
+
+  private getDamageValue(skill, effect) {
+    let value = "";
+    if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
+      let minValue = 100 + (typeof(effect.minValue) === "number" ? effect.minValue : effect.value);
+
+      if (!skill.level) {
+        value = " (" + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect) + ")"
+      } else {
+        if (effect.minValue !== effect.maxValue) {
+          let valueForLevel = Math.floor(minValue + ((effect.maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+          value = " (" + (100 + valueForLevel) + this.getDamageCalc(effect) + ")"
+        } else {
+          value = " (" + minValue + this.getDamageCalc(effect) + ")"
+        }
+      }
+    }
+
+    return value;
+  }
+
+  private getDamageMaxValue(effect, getPositiveValue = true) {
+    if (effect.minValue !== effect.maxValue) {
+      let maxValue = 100 + effect.maxValue;
+
+      return " => " + maxValue + this.getDamageCalc(effect);
+    }
+
+    return "";
+  }
+
+  private getDamageCalc(effect) {
+    if (effect.fixedDamage === true) {
+      return ""
+    } else {
+      return "%"
+    }
+  }
+
+
+
   private getValue(skill, effect, getPositiveValue = true) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
@@ -760,7 +803,7 @@ export class SkillService {
 
       html = html + this.upperCaseFirst((damage.effType ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage")
       + (pool === "" && damage.effType === "ABSORB" ? " HP " : pool)
-      + this.getValue(skill, damage, false));
+      + this.getDamageValue(skill, damage));
     }
 
     if (skill.hit) {

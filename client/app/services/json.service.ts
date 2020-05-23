@@ -1092,7 +1092,8 @@ export class JsonService {
       cap: null,
       stl_val: null,
       stl_val1 : null,
-      names: null
+      names: null,
+      atk_rev: null
     };
 
     if (skill.type == "buff") {
@@ -1241,7 +1242,11 @@ export class JsonService {
         maxSpeed: dataSkill.ct_spd1,
         type: this.damageTypes[dataSkill.atk_det],
         pool: this.damagePool[dataSkill.eff_dst],
-        effType: this.damageEffectType[dataSkill.eff_type],
+        effType: this.damageEffectType[dataSkill.eff_type]
+      }
+
+      if (dataSkill.atk_rev && dataSkill.atk_rev == 1) {
+        skill.damage.fixedDamage = true
       }
 
       if (dataSkill.eff_dst && !this.damagePool[dataSkill.eff_dst]) {
