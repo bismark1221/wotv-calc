@@ -984,30 +984,6 @@ export class SkillService {
         }
       }
 
-
-
-
-      /*if (i + 1 == middle) {
-        for (let j = 1; j <= range.l; j++) {
-          if (j === 1) {
-            skillTable[i][middle + j] = "AR"
-            skillTable[i][middle - j] = "AR"
-          } else {
-            skillTable[i][middle + j] = "R"
-            skillTable[i][middle - j] = "R"
-          }
-
-          skillTable[(middle + countLine + 1)][middle + j] = "R"
-          skillTable[(middle + countLine + 1)][middle - j] = "R"
-        }
-      } else {
-        skillTable[i][middle + 1] = "AR"
-        skillTable[i][middle - 1] = "AR"
-
-        skillTable[(middle + countLine + 1)][middle + 1] = "R"
-        skillTable[(middle + countLine + 1)][middle - 1] = "R"
-      }*/
-
       countLine++;
     }
 

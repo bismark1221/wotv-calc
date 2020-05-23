@@ -143,7 +143,6 @@ export class BuilderUnitComponent implements OnInit {
       let data = params.get('data')
       if (data) {
         data = JSON.parse(atob(params.get('data')))
-        console.log(data)
 
         this.selectedUnitId = data.dataId
         this.selectUnit(data)
