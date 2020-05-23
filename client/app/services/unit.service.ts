@@ -1032,12 +1032,12 @@ export class UnitService {
 
     let hasArmor = false
     let hasWeapon = false
-    let hasAcc = false
+    let countAcc = 0
     let hasTmr = false;
     for (let i = 0; i <= 2; i++) {
       if (i !== pos && this.unit.equipments && this.unit.equipments[i]) {
         if (this.unit.equipments[i].type === "ACC") {
-          hasAcc = true
+          countAcc++
         } else if (this.equipmentService.isArmor(this.unit.equipments[i].type)) {
           hasArmor = true
         } else {
@@ -1053,7 +1053,7 @@ export class UnitService {
     let equipments = this.equipmentService.getEquipmentsForUnitBuilder()
     let availableEquipments = []
     equipments.forEach(equipment => {
-      if (((!hasAcc && equipment.type === "ACC")
+      if (((countAcc < 2 && equipment.type === "ACC")
         || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
         || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
         && (!hasTmr || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr")))) {

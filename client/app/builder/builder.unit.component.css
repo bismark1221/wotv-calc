@@ -189,3 +189,18 @@ tr.disable {
   margin: auto;
   width: 250px;
 }
+
+.background_acc {
+  background: url("assets/builder/background_acc.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.background_weapon {
+  background: url("assets/builder/background_weapon.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.background_armor {
+  background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
+  background-size: 80px;
+}

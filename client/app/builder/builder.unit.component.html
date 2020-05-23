@@ -82,7 +82,7 @@
                      class="selectEquipment">
           </ng-select>
           <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
-            <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg"/>
+            <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
             <button (click)="showEquipmentDetail(0)">Custom</button>
           </div>
           <div *ngIf="!selectedEquipments[0]">
@@ -104,7 +104,7 @@
 
           <div *ngIf="unit && unit.lb >= 2">
             <div *ngIf="selectedEquipmentsIds[1]">
-              <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg"/>
+              <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
               <button (click)="showEquipmentDetail(1)">Custom</button>
             </div>
             <div *ngIf="!selectedEquipmentsIds[1]">
@@ -131,7 +131,7 @@
 
           <div *ngIf="unit && unit.lb >= 4">
             <div *ngIf="selectedEquipmentsIds[2]">
-              <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg"/>
+              <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
               <button (click)="showEquipmentDetail(2)">Custom</button>
             </div>
             <div *ngIf="!selectedEquipmentsIds[2]">
