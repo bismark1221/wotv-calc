@@ -1238,8 +1238,6 @@ export class JsonService {
       skill.damage = {
         minValue: dataSkill.eff_val,
         maxValue: dataSkill.eff_val1,
-        minSpeed: dataSkill.ct_spd,
-        maxSpeed: dataSkill.ct_spd1,
         type: this.damageTypes[dataSkill.atk_det],
         pool: this.damagePool[dataSkill.eff_dst],
         effType: this.damageEffectType[dataSkill.eff_type]
