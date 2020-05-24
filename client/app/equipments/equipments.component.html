@@ -9,7 +9,8 @@
       <td *ngFor="let equipment of formattedEquipments[rarity][j]" class="equipmentsCol">
         <div>
           <a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">
-            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}" />
+            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
+              onerror="this.src='assets/equipments/placeholder.png';"/>
           </a>
         </div>
         <span class="equipmentName"><a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">{{ equipment.name }}</a></span>

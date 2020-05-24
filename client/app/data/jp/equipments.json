@@ -1394,6 +1394,186 @@
           "slug": "sangono-jian",
           "maxLevel": 50
         }
+      ],
+      [
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "sangono-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "sangono-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-li-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "sangono-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-li-5",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "sangono-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+8"
+          },
+          "dataId": "SK_LW_SLASH_4_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-li-8",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "sangono-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+15"
+          },
+          "dataId": "SK_LW_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-li-15",
+          "maxLevel": 50
+        }
       ]
     ],
     "rarity": "MR",
@@ -1856,6 +2036,69 @@
     ],
     "rarity": "MR",
     "image": "fft0wpn_swo_001",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_FFT_SWO_002": {
+    "names": {
+      "en": "ルザリア近衛騎士団制式剣"
+    },
+    "slug": "ruzaria-jin-wei-qi-shi-tuan-zhi-shi-jian",
+    "stats": {
+      "HP": {
+        "min": 3,
+        "max": 64
+      },
+      "ATK": {
+        "min": 24,
+        "max": 232
+      },
+      "MAG": {
+        "min": 15,
+        "max": 132
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 20
+      },
+      "CRITIC_RATE": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FFT_SWO_002",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "eimu"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "fft0wpn_swo_002",
     "acquisition": {
       "type": "Unknown"
     }
@@ -2331,16 +2574,16 @@
     "slug": "rune-blade",
     "stats": {
       "HP": {
-        "min": 3,
-        "max": 69
+        "min": 4,
+        "max": 71
       },
       "ATK": {
-        "min": 9,
-        "max": 189
+        "min": 10,
+        "max": 202
       },
       "MAG": {
         "min": 1,
-        "max": 21
+        "max": 13
       },
       "ACCURACY": {
         "min": 1,
@@ -2429,95 +2672,95 @@
       [
         {
           "names": {
-            "en": "斬撃攻撃力+2"
+            "en": "斬撃攻撃耐性+1"
           },
-          "dataId": "SK_LW_SLASH_1",
+          "dataId": "SK_LW_DF_SLASH_1",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-nai-xing-1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "resistance"
             }
           ],
           "type": "support",
-          "slug": "zhan-ji-gong-ji-li-2",
+          "slug": "zhan-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
       ],
       [
         {
           "names": {
-            "en": "斬撃攻撃力+3"
+            "en": "斬撃攻撃耐性+3"
           },
-          "dataId": "SK_LW_SLASH_2",
+          "dataId": "SK_LW_DF_SLASH_3",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "resistance"
             }
           ],
           "type": "support",
-          "slug": "zhan-ji-gong-ji-li-3",
+          "slug": "zhan-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
       ],
       [
         {
           "names": {
-            "en": "斬撃攻撃力+5"
+            "en": "斬撃攻撃耐性+4"
           },
-          "dataId": "SK_LW_SLASH_3",
+          "dataId": "SK_LW_DF_SLASH_4_N_SSR",
           "effects": [
             {
-              "type": "SLASH_ATK",
-              "minValue": 5,
-              "maxValue": 5,
-              "calcType": "fixe"
+              "type": "SLASH_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance"
             }
           ],
           "type": "support",
-          "slug": "zhan-ji-gong-ji-li-5",
+          "slug": "zhan-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
       ],
       [
         {
           "names": {
-            "en": "斬撃攻撃力+8"
+            "en": "斬撃攻撃耐性+8"
           },
-          "dataId": "SK_LW_SLASH_4_SSR",
+          "dataId": "SK_LW_DF_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe"
+              "calcType": "resistance"
             }
           ],
           "type": "support",
-          "slug": "zhan-ji-gong-ji-li-8",
-          "maxLevel": 50
-        }
-      ],
-      [
-        {
-          "names": {
-            "en": "斬撃攻撃力+15"
-          },
-          "dataId": "SK_LW_SLASH_5_SSR",
-          "effects": [
-            {
-              "type": "SLASH_ATK",
-              "minValue": 15,
-              "maxValue": 15,
-              "calcType": "fixe"
-            }
-          ],
-          "type": "support",
-          "slug": "zhan-ji-gong-ji-li-15",
+          "slug": "zhan-ji-gong-ji-nai-xing-8",
           "maxLevel": 50
         }
       ]
@@ -2714,6 +2957,106 @@
         "en": "General Shop",
         "fr": "Boutique ordinaire"
       }
+    }
+  },
+  "AF_LOT_LW_BSW_011": {
+    "names": {
+      "en": "クリムゾンセイバー"
+    },
+    "slug": "kurimuzonseiba",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 70
+      },
+      "ATK": {
+        "min": 8,
+        "max": 160
+      },
+      "MAG": {
+        "min": 9,
+        "max": 170
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 20
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_LW_BSW_011",
+    "grows": {
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "マジック"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "mazituku"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "クリムゾンセイバー"
+          },
+          "dataId": "SK_LW_BSW_011_1",
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": -10,
+              "maxValue": -10,
+              "calcType": "fixe",
+              "rate": 25,
+              "turn": 3
+            }
+          ],
+          "type": "support",
+          "slug": "kurimuzonseiba",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 50
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_bsw_011",
+    "acquisition": {
+      "type": "Unknown"
     }
   },
   "AF_LW_KAT_000": {
@@ -11469,6 +11812,210 @@
       }
     }
   },
+  "AF_LOT_FF1_ARM_002": {
+    "names": {
+      "en": "アーマーオブライト"
+    },
+    "slug": "amaoburaito",
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 584
+      },
+      "DEF": {
+        "min": 1,
+        "max": 15
+      },
+      "SPR": {
+        "min": 1,
+        "max": 12
+      },
+      "ACCURACY": {
+        "min": -6,
+        "max": -3
+      },
+      "CRITIC_RATE": {
+        "min": -6,
+        "max": -3
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_FF1_ARM_002",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_MAGIC_1",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "mo-fa-gong-ji-nai-xing-1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_MAGIC_2",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "mo-fa-gong-ji-nai-xing-2",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_MAGIC_3",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "mo-fa-gong-ji-nai-xing-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃耐性+4"
+          },
+          "dataId": "SK_LW_DF_MAGIC_4_N_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "mo-fa-gong-ji-nai-xing-4",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃耐性+8"
+          },
+          "dataId": "SK_LW_DF_MAGIC_5_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "mo-fa-gong-ji-nai-xing-8",
+          "maxLevel": 50
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff1wpn_arm_002",
+    "acquisition": {
+      "type": {}
+    }
+  },
   "AF_LW_HLM_001": {
     "names": {
       "en": "ブロンズヘルム - Bronze Helm"
@@ -12091,6 +12638,210 @@
         "en": "General Shop",
         "fr": "Boutique ordinaire"
       }
+    }
+  },
+  "AF_LOT_LW_HLM_005": {
+    "names": {
+      "en": "プラチナヘルム"
+    },
+    "slug": "puratinaherumu",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 698
+      },
+      "DEF": {
+        "min": 0,
+        "max": 8
+      },
+      "SPR": {
+        "min": 1,
+        "max": 18
+      },
+      "AGI": {
+        "min": -5,
+        "max": 0
+      },
+      "EVADE": {
+        "min": -8,
+        "max": 0
+      }
+    },
+    "type": "HELM",
+    "dataId": "AF_LW_HLM_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-nai-xing-1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-nai-xing-2",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-nai-xing-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+5"
+          },
+          "dataId": "SK_LW_DF_SLASH_4_UR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-nai-xing-5",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+10"
+          },
+          "dataId": "SK_LW_DF_SLASH_5_UR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "zhan-ji-gong-ji-nai-xing-10",
+          "maxLevel": 50
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_hlm_005",
+    "acquisition": {
+      "type": {}
     }
   },
   "AF_LW_HAT_001": {
@@ -13390,6 +14141,210 @@
         "en": "General Shop",
         "fr": "Boutique ordinaire"
       }
+    }
+  },
+  "AF_LOT_LW_CLT_005": {
+    "names": {
+      "en": "プラチナローブ"
+    },
+    "slug": "puratinarobu",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 683
+      },
+      "DEF": {
+        "min": 1,
+        "max": 18
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": -10,
+        "max": -8
+      },
+      "EVADE": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_LW_CLT_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_SHOOT_1",
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "she-ji-gong-ji-nai-xing-1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SHOOT_2",
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "she-ji-gong-ji-nai-xing-2",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_SHOOT_3",
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "she-ji-gong-ji-nai-xing-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃耐性+5"
+          },
+          "dataId": "SK_LW_DF_SHOOT_4_UR",
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "she-ji-gong-ji-nai-xing-5",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃耐性+10"
+          },
+          "dataId": "SK_LW_DF_SHOOT_5_UR",
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "she-ji-gong-ji-nai-xing-10",
+          "maxLevel": 50
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_005",
+    "acquisition": {
+      "type": {}
     }
   },
   "AF_LW_RNG_001": {
@@ -14720,6 +15675,628 @@
       }
     }
   },
+  "AF_LOT_LW_RNG_005": {
+    "names": {
+      "en": "アレキサンドライトの指輪"
+    },
+    "slug": "arekisandoraitono-zhi-lun",
+    "stats": {
+      "HP": {
+        "min": 11,
+        "max": 228
+      },
+      "DEF": {
+        "min": 0,
+        "max": 8
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 20
+      },
+      "EVADE": {
+        "min": 1,
+        "max": 11
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_RNG_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "eimu"
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "kuriteikaru"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_1"
+          },
+          "dataId": "SK_LW_RNG_005_1",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_1"
+          },
+          "dataId": "SK_LW_RNG_005_1",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "命中率+2"
+          },
+          "dataId": "SK_LW_HIT_1",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "ming-zhong-lu-2",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_1"
+          },
+          "dataId": "SK_LW_RNG_005_1",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "命中率+3"
+          },
+          "dataId": "SK_LW_HIT_2",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "ming-zhong-lu-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_1"
+          },
+          "dataId": "SK_LW_RNG_005_1",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "命中率+5"
+          },
+          "dataId": "SK_LW_HIT_3",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "ming-zhong-lu-5",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_1"
+          },
+          "dataId": "SK_LW_RNG_005_1",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "命中率+10"
+          },
+          "dataId": "SK_LW_HIT_4_UR",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "ming-zhong-lu-10",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_1"
+          },
+          "dataId": "SK_LW_RNG_005_1",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "命中率+20"
+          },
+          "dataId": "SK_LW_HIT_5_UR",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "ming-zhong-lu-20",
+          "maxLevel": 50
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_rng_005",
+    "acquisition": {
+      "type": {}
+    }
+  },
+  "AF_LOT_FFT_ACC_001": {
+    "names": {
+      "en": "ソルティレージュ"
+    },
+    "slug": "soruteireziyu",
+    "stats": {
+      "HP": {
+        "min": 8,
+        "max": 168
+      },
+      "DEF": {
+        "min": 1,
+        "max": 12
+      },
+      "SPR": {
+        "min": 1,
+        "max": 12
+      },
+      "ACCURACY": {
+        "min": 0,
+        "max": 4
+      },
+      "EVADE": {
+        "min": 0,
+        "max": 4
+      },
+      "CRITIC_RATE": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_FFT_ACC_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_1"
+          },
+          "dataId": "SK_FFT_ACC_001_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_1"
+          },
+          "dataId": "SK_FFT_ACC_001_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+1"
+          },
+          "dataId": "SK_LW_AVOID_1",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_1"
+          },
+          "dataId": "SK_FFT_ACC_001_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+20"
+          },
+          "dataId": "SK_LW_AVOID_2",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_1"
+          },
+          "dataId": "SK_FFT_ACC_001_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+3"
+          },
+          "dataId": "SK_LW_AVOID_3",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_1"
+          },
+          "dataId": "SK_FFT_ACC_001_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+4"
+          },
+          "dataId": "SK_LW_AVOID_4_N_SSR",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-4",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_1"
+          },
+          "dataId": "SK_FFT_ACC_001_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+8"
+          },
+          "dataId": "SK_LW_AVOID_5_SSR",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-8",
+          "maxLevel": 50
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "fftwpn_acc_002",
+    "acquisition": {
+      "type": {}
+    }
+  },
   "AF_LW_RNG_006": {
     "names": {
       "en": "スリースターズ - Three Stars"
@@ -15091,6 +16668,216 @@
           ],
           "type": "support",
           "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_1"
+          },
+          "dataId": "SK_LW_ACC_001_1",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+1"
+          },
+          "dataId": "SK_LW_AVOID_1",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_1"
+          },
+          "dataId": "SK_LW_ACC_001_1",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+20"
+          },
+          "dataId": "SK_LW_AVOID_2",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_1"
+          },
+          "dataId": "SK_LW_ACC_001_1",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+3"
+          },
+          "dataId": "SK_LW_AVOID_3",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_1"
+          },
+          "dataId": "SK_LW_ACC_001_1",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+5"
+          },
+          "dataId": "SK_LW_AVOID_4_UR",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-5",
+          "maxLevel": 50
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_1"
+          },
+          "dataId": "SK_LW_ACC_001_1",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "回避率+10"
+          },
+          "dataId": "SK_LW_AVOID_5_UR",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "hui-bi-lu-10",
           "maxLevel": 50
         }
       ]
@@ -18125,6 +19912,80 @@
       "unitId": "UN_LW_P_NASR"
     }
   },
+  "AF_CLT_LW_RAMD_01_1": {
+    "names": {
+      "en": "聖樹の髪飾り"
+    },
+    "slug": "sheng-shuno-fa-shiri",
+    "stats": {
+      "HP": {
+        "min": 542,
+        "max": 542
+      },
+      "DEF": {
+        "min": 7,
+        "max": 7
+      },
+      "CRITIC_AVOID": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    "type": "HELM",
+    "dataId": "AF_CLT_LW_RAMD_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "イグザルテーション"
+          },
+          "dataId": "SK_CLT_LW_RAMD_01_1_1",
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 40,
+              "calcType": "percent",
+              "turn": 3
+            },
+            {
+              "type": "MOVE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "iguzarutesiyon",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_010",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_RAMD_01"
+    }
+  },
   "AF_ACC_LW_ETRE_1": {
     "names": {
       "en": "拳闘のバッジ - Boxer's Badge"
@@ -18166,6 +20027,81 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ETRE"
+    }
+  },
+  "AF_ACC_LW_MACR_01_1": {
+    "names": {
+      "en": "贈り人のリボン"
+    },
+    "slug": "zengri-rennoribon",
+    "stats": {
+      "HP": {
+        "min": 342,
+        "max": 342
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "SPR": {
+        "min": 5,
+        "max": 5
+      },
+      "CRITIC_RATE": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_MACR_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "クリスマスハーモニー"
+          },
+          "dataId": "SK_ACC_LW_MACR_01_1",
+          "effects": [
+            {
+              "type": "AP",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "slug": "kurisumasuhamoni",
+          "cost": {
+            "type": "TP",
+            "value": 36
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_014",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_MACR_01"
     }
   },
   "AF_HAT_LW_WHIS_1": {
@@ -18571,6 +20507,1386 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_ORND"
+    }
+  },
+  "AF_CLT_LW_MRND_1": {
+    "names": {
+      "en": "レッドジャケット - Red Jacket"
+    },
+    "slug": "red-jacket",
+    "stats": {
+      "HP": {
+        "min": 482,
+        "max": 482
+      },
+      "DEF": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_LW_MRND_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "繊麗の鼓舞"
+          },
+          "dataId": "SK_CLT_LW_MRND_1_1",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "turn": 3
+            },
+            {
+              "type": "SLASH_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "sem-lino-gu-wu",
+          "cost": {
+            "type": "TP",
+            "value": 28
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 3,
+            "s": 1
+          },
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_007",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_MRND"
+    }
+  },
+  "AF_AXE_LW_DRND_1": {
+    "names": {
+      "en": "惨殺の大斧 - Slaughter Axe"
+    },
+    "slug": "slaughter-axe",
+    "stats": {
+      "HP": {
+        "min": 68,
+        "max": 68
+      },
+      "ATK": {
+        "min": 114,
+        "max": 114
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "AXE",
+    "dataId": "AF_AXE_LW_DRND_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_AXE_LW_DRND_1_1"
+          },
+          "dataId": "SK_AXE_LW_DRND_1_1",
+          "effects": [
+            {
+              "type": "BLIND_ATK",
+              "minValue": 20,
+              "maxValue": 50,
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
+            }
+          ],
+          "type": "support",
+          "slug": "sk_axe_lw_drnd_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_axe_006",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_DRND"
+    }
+  },
+  "AF_ARM_LW_LUCA_1": {
+    "names": {
+      "en": "魅惑のブーツ"
+    },
+    "slug": "mei-huonobutu",
+    "stats": {
+      "HP": {
+        "min": 142,
+        "max": 142
+      },
+      "DEF": {
+        "min": 5,
+        "max": 5
+      },
+      "AGI": {
+        "min": 7,
+        "max": 7
+      },
+      "EVADE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ARM_LW_LUCA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "リミッターオフ"
+          },
+          "dataId": "SK_ARM_LW_LUCA_1_1",
+          "effects": [
+            {
+              "type": "RANGE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "turn": 3
+            },
+            {
+              "type": "AGI",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "rimitutaohu",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_023",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_LUCA"
+    }
+  },
+  "AF_SWO_LW_ADLD_1": {
+    "names": {
+      "en": "紅の剣"
+    },
+    "slug": "hongno-jian",
+    "stats": {
+      "HP": {
+        "min": 102,
+        "max": 102
+      },
+      "ATK": {
+        "min": 82,
+        "max": 82
+      },
+      "MAG": {
+        "min": 96,
+        "max": 96
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_ADLD_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_SWO_LW_ADLD_1_1"
+          },
+          "dataId": "SK_SWO_LW_ADLD_1_1",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_swo_lw_adld_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_swo_014",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_ADLD"
+    }
+  },
+  "AF_ARM_LW_VKTR_1": {
+    "names": {
+      "en": "グリードアーマー"
+    },
+    "slug": "guridoama",
+    "stats": {
+      "HP": {
+        "min": 502,
+        "max": 502
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_LW_VKTR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "妖竜の瞳"
+          },
+          "dataId": "SK_ARM_LW_VKTR_1_1",
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 60,
+              "maxValue": 80,
+              "calcType": "fixe",
+              "turn": 1
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "turn": 1
+            }
+          ],
+          "type": "skill",
+          "slug": "yao-longno-tong",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_025",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_VKTR"
+    }
+  },
+  "AF_ACC_LW_THLA_1": {
+    "names": {
+      "en": "魔力の紐"
+    },
+    "slug": "mo-lino-niu",
+    "stats": {
+      "HP": {
+        "min": 172,
+        "max": 172
+      },
+      "SPR": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_THLA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_ACC_LW_THLA_1_1"
+          },
+          "dataId": "SK_ACC_LW_THLA_1_1",
+          "effects": [
+            {
+              "type": "HUMAN_KILLER",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "slug": "sk_acc_lw_thla_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_012",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_THLA"
+    }
+  },
+  "AF_ACC_LW_VNLA_1": {
+    "names": {
+      "en": "幻惑のヒール"
+    },
+    "slug": "huan-huonohiru",
+    "stats": {
+      "HP": {
+        "min": 182,
+        "max": 182
+      },
+      "DEF": {
+        "min": 7,
+        "max": 7
+      },
+      "AGI": {
+        "min": 5,
+        "max": 5
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_VNLA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "偽りの夜帳"
+          },
+          "dataId": "SK_ACC_LW_VNLA_1_1",
+          "effects": [
+            {
+              "type": "MALES_KILLER",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 3
+            },
+            {
+              "type": "PROVOKE",
+              "minValue": -6,
+              "maxValue": -6,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "skill",
+          "slug": "weirino-ye-zhang",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_015",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_VNLA"
+    }
+  },
+  "AF_SWO_LW_DRIO_1": {
+    "names": {
+      "en": "閃光の剣"
+    },
+    "slug": "shan-guangno-jian",
+    "stats": {
+      "HP": {
+        "min": 68,
+        "max": 68
+      },
+      "ATK": {
+        "min": 60,
+        "max": 60
+      },
+      "MAG": {
+        "min": 112,
+        "max": 112
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_DRIO_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_SWO_LW_DRIO_1_1"
+          },
+          "dataId": "SK_SWO_LW_DRIO_1_1",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_swo_lw_drio_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_swo_017",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_DRIO"
+    }
+  },
+  "AF_ACC_LW_TREL_1": {
+    "names": {
+      "en": "蛇闘士の冠"
+    },
+    "slug": "she-dou-shino-guan",
+    "stats": {
+      "HP": {
+        "min": 264,
+        "max": 264
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 15,
+        "max": 15
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_TREL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_020",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_TREL"
+    }
+  },
+  "AF_CLT_LW_RAIN_1": {
+    "names": {
+      "en": "レインの服"
+    },
+    "slug": "reinno-fu",
+    "stats": {
+      "HP": {
+        "min": 496,
+        "max": 496
+      },
+      "SPR": {
+        "min": 14,
+        "max": 14
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_LW_RAIN_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "守護者の闘気"
+          },
+          "dataId": "SK_CLT_LW_RAIN_1_1",
+          "effects": [
+            {
+              "type": "SPR",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "shou-hu-zheno-dou-qi",
+          "cost": {
+            "type": "TP",
+            "value": 42
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "aoe": {
+            "s": 2,
+            "l": 1,
+            "h": 2
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_011",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_RAIN"
+    }
+  },
+  "AF_ACC_FF1_WROL_1": {
+    "names": {
+      "en": "ガントレットオブライト"
+    },
+    "slug": "gantoretutooburaito",
+    "stats": {
+      "HP": {
+        "min": 322,
+        "max": 322
+      },
+      "ACCURACY": {
+        "min": 18,
+        "max": 18
+      },
+      "EVADE": {
+        "min": 8,
+        "max": 8
+      },
+      "CRITIC_AVOID": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_FF1_WROL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "ディバインライト"
+          },
+          "dataId": "SK_ACC_FF1_WROL_1_1",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent",
+              "turn": 3
+            },
+            {
+              "type": "TP_AUTO_RESTORE",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "percent",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "deibainraito",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff1wpn_arm_001",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FF1_P_WROL"
+    }
+  },
+  "AF_ACC_LW_QILF_1": {
+    "names": {
+      "en": "杖術士の髪飾り"
+    },
+    "slug": "zhang-shu-shino-fa-shiri",
+    "stats": {
+      "HP": {
+        "min": 201,
+        "max": 201
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "CRITIC_RATE": {
+        "min": 15,
+        "max": 15
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_QILF_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "背反する矜持"
+          },
+          "dataId": "SK_ACC_LW_QILF_1_1",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 15,
+              "maxValue": 45,
+              "calcType": "fixe",
+              "turn": 3
+            },
+            {
+              "type": "AOE_RES",
+              "minValue": -10,
+              "maxValue": -25,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "bei-fansuru-jin-chi",
+          "cost": {
+            "type": "TP",
+            "value": 30
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_019",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_QILF"
+    }
+  },
+  "AF_KAT_LW_SIMR_1": {
+    "names": {
+      "en": "滅却の大太刀"
+    },
+    "slug": "mie-queno-da-tai-dao",
+    "stats": {
+      "HP": {
+        "min": 61,
+        "max": 61
+      },
+      "ATK": {
+        "min": 102,
+        "max": 102
+      },
+      "ACCURACY": {
+        "min": 18,
+        "max": 18
+      },
+      "CRITIC_RATE": {
+        "min": 11,
+        "max": 11
+      }
+    },
+    "type": "KATANA",
+    "dataId": "AF_KAT_LW_SIMR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_KAT_LW_SIMR_1_1"
+          },
+          "dataId": "SK_KAT_LW_SIMR_1_1",
+          "effects": [
+            {
+              "type": "SLOW_ATK",
+              "minValue": 20,
+              "maxValue": 50,
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 3
+            }
+          ],
+          "type": "support",
+          "slug": "sk_kat_lw_simr_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_kat_009",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_SIMR"
+    }
+  },
+  "AF_ACC_LW_ORDR_1": {
+    "names": {
+      "en": "オルドアンエプロン"
+    },
+    "slug": "orudoanepuron",
+    "stats": {
+      "HP": {
+        "min": 158,
+        "max": 158
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_ORDR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "受け継がれし暴威"
+          },
+          "dataId": "SK_ACC_LW_ORDR_1_1",
+          "effects": [
+            {
+              "type": "AUTO_RESTORE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "turn": 3
+            },
+            {
+              "type": "DEFENSE_PENETRATION",
+              "minValue": 30,
+              "maxValue": 50,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "shouke-jigaresi-bao-wei",
+          "cost": {
+            "type": "TP",
+            "value": 30
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_018",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_ORDR"
+    }
+  },
+  "AF_SWO_LW_LVES_1": {
+    "names": {
+      "en": "ホロウスレイヴ"
+    },
+    "slug": "horousureivu",
+    "stats": {
+      "HP": {
+        "min": 66,
+        "max": 66
+      },
+      "ATK": {
+        "min": 117,
+        "max": 117
+      },
+      "EVADE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_LVES_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_SWO_LW_LVES_1_1"
+          },
+          "dataId": "SK_SWO_LW_LVES_1_1",
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent"
+            }
+          ],
+          "type": "support",
+          "slug": "sk_swo_lw_lves_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_swo_020",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_LVES"
+    }
+  },
+  "AF_ACC_FFT_AGRA_1": {
+    "names": {
+      "en": "ホーリーナイトアーマー"
+    },
+    "slug": "horinaitoama",
+    "stats": {
+      "HP": {
+        "min": 488,
+        "max": 488
+      },
+      "DEF": {
+        "min": 6,
+        "max": 6
+      },
+      "SPR": {
+        "min": 11,
+        "max": 11
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ACC_FFT_AGRA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "聖近衛騎士団の誇り"
+          },
+          "dataId": "SK_ACC_FFT_AGRA_1_1",
+          "effects": [
+            {
+              "type": "PROTECT_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3
+            },
+            {
+              "type": "SHELL_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "sheng-jin-wei-qi-shi-tuanno-kuari",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "fftwpn_acc_000",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FFT_P_AGRA"
+    }
+  },
+  "AF_ARM_FFT_DELT_1": {
+    "names": {
+      "en": "エンデュランスベスト"
+    },
+    "slug": "endeyuransubesuto",
+    "stats": {
+      "HP": {
+        "min": 388,
+        "max": 388
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "EVADE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_FFT_DELT_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "APたくす"
+          },
+          "dataId": "SK_ARM_FFT_DELT_1_1",
+          "effects": [
+            {
+              "type": "AP",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "slug": "aptakusu",
+          "cost": {
+            "type": "AP",
+            "value": 20
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "fftwpn_arm_000",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FFT_P_DELT"
+    }
+  },
+  "AF_GUN_FFT_MSTD_2": {
+    "names": {
+      "en": "ベスロディオ"
+    },
+    "slug": "besurodeio",
+    "stats": {
+      "HP": {
+        "min": 107,
+        "max": 107
+      },
+      "ATK": {
+        "min": 103,
+        "max": 103
+      },
+      "ACCURACY": {
+        "min": 18,
+        "max": 18
+      },
+      "CRITIC_RATE": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_FFT_MSTD_2",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_GUN_FFT_MSTD_1_1"
+          },
+          "dataId": "SK_GUN_FFT_MSTD_1_1",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": -40,
+              "maxValue": -40,
+              "calcType": "fixe",
+              "rate": 15,
+              "turn": 3
+            }
+          ],
+          "type": "support",
+          "slug": "sk_gun_fft_mstd_1_1",
+          "maxLevel": 1
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "fft0wpn_gun_000",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FFT_P_MSTD"
+    }
+  },
+  "AF_ACC_LW_IRDL_1": {
+    "names": {
+      "en": "カルキュレーターローブ"
+    },
+    "slug": "karukiyuretarobu",
+    "stats": {
+      "HP": {
+        "min": 322,
+        "max": 322
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_ACC_LW_IRDL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "瞬速転移法"
+          },
+          "dataId": "SK_ACC_LW_IRDL_1_1",
+          "effects": [
+            {
+              "type": "SWITCH_POS"
+            },
+            {
+              "type": "QUICKEN_ATK",
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 1
+            }
+          ],
+          "type": "support",
+          "slug": "shun-su-zhuan-yi-fa",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "range": {
+            "h": 5,
+            "l": 2,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 120,
+            "maxValue": 200
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_017",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_IRDL"
+    }
+  },
+  "AF_ARM_LW_STRN_01_1": {
+    "names": {
+      "en": "魔晶の鎧"
+    },
+    "slug": "mo-jingno-kai",
+    "stats": {
+      "HP": {
+        "min": 444,
+        "max": 444
+      },
+      "DEF": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_RATE": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_LW_STRN_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "尽き果てぬ憎悪"
+          },
+          "dataId": "SK_ARM_LW_STRN_01_1_1",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 20,
+              "maxValue": 35,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "jinki-guotenu-zeng-e",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_026",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_STRN_01"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -19152,6 +22468,211 @@
       "type": "Unknown"
     }
   },
+  "AF_GUN_LW_FDRC_2": {
+    "names": {
+      "en": "フェデリカ式騎銃"
+    },
+    "slug": "huederika-shi-qi-chong",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_FDRC_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_gun_006",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_BSW_LW_RAMD_01_2": {
+    "names": {
+      "en": "聖樹の大剣"
+    },
+    "slug": "sheng-shuno-da-jian",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_BSW_LW_RAMD_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_swo_008",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_AXE_LW_YERM_2": {
+    "names": {
+      "en": "剛力の大斧"
+    },
+    "slug": "gang-lino-da-fu",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "AXE",
+    "dataId": "AF_AXE_LW_YERM_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_axe_005",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_SHI_002": {
+    "names": {
+      "en": "ナーシア盾"
+    },
+    "slug": "nasia-dun",
+    "stats": {},
+    "type": "SHIELD",
+    "dataId": "AF_LW_SHI_002",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_shi_002",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SPE_LW_MACR_01_2": {
+    "names": {
+      "en": "贈り人の槍"
+    },
+    "slug": "zengri-renno-qiang",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "SPEAR",
+    "dataId": "AF_SPE_LW_MACR_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_spe_012",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_SWO_FFT_RAMZ_2": {
     "names": {
       "en": "インテグリティソード - Integral Blade"
@@ -19348,6 +22869,636 @@
     ],
     "rarity": "MR",
     "image": "lapswpn_nkn_006",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SWO_LW_MRND_2": {
+    "names": {
+      "en": "レッドブレード - Ruby Red Blade"
+    },
+    "slug": "ruby-red-blade",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_MRND_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_swo_010",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_GUN_LW_LUCA_2": {
+    "names": {
+      "en": "魅惑の銃"
+    },
+    "slug": "mei-huono-chong",
+    "stats": {
+      "HP": {
+        "min": 7,
+        "max": 137
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 13
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_LUCA_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_gun_007",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SPE_LW_VKTR_2": {
+    "names": {
+      "en": "グリードランス"
+    },
+    "slug": "guridoransu",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "SPEAR",
+    "dataId": "AF_SPE_LW_VKTR_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_spe_013",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_DAG_LW_VNLA_2": {
+    "names": {
+      "en": "アサシンクリス"
+    },
+    "slug": "asasinkurisu",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 4
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "DAGGER",
+    "dataId": "AF_DAG_LW_VNLA_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_dag_009",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_BSW_LW_RAIN_2": {
+    "names": {
+      "en": "レイン用"
+    },
+    "slug": "rein-yong",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_BSW_LW_RAIN_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_bsw_011",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SWO_FF1_WROL_2": {
+    "names": {
+      "en": "ソードオブライト"
+    },
+    "slug": "sodooburaito",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_FF1_WROL_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "ff01wpn_swo_000",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_ROD_LW_QILF_2": {
+    "names": {
+      "en": "ファントムケーン"
+    },
+    "slug": "huantomuken",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "ROD",
+    "dataId": "AF_ROD_LW_QILF_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_rod_014",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_BSW_LW_ORDR_2": {
+    "names": {
+      "en": "オルドアンソード"
+    },
+    "slug": "orudoansodo",
+    "stats": {
+      "HP": {
+        "min": 5,
+        "max": 98
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_BSW_LW_ORDR_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_bsw_010",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": null
+    }
+  },
+  "AF_LW_SHI_003": {
+    "names": {
+      "en": "ラヴィエス盾"
+    },
+    "slug": "ravuiesu-dun",
+    "stats": {},
+    "type": "SHIELD",
+    "dataId": "AF_LW_SHI_003",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_shi_003",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SWO_FFT_AGRA_2": {
+    "names": {
+      "en": "FFTアグリアス"
+    },
+    "slug": "fftaguriasu",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_FFT_AGRA_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "fft0wpn_swo_002",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SWO_FFT_DELT_2": {
+    "names": {
+      "en": "FFTディリータ"
+    },
+    "slug": "fftdeirita",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_FFT_DELT_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "fft0wpn_swo_003",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_MAC_LW_IRDL_2": {
+    "names": {
+      "en": "イルディラ用"
+    },
+    "slug": "irudeira-yong",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_MAC_LW_IRDL_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_mac_007",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_BSW_LW_STRN_01_2": {
+    "names": {
+      "en": "シュテル（破滅の騎士）専用武器"
+    },
+    "slug": "siyuteru-po-mieno-qi-shi-zhuan-yong-wu-qi",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_BSW_LW_STRN_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_bsw_008",
     "acquisition": {
       "type": "Unknown"
     }

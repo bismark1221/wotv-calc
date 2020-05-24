@@ -73,9 +73,16 @@ export class EquipmentComponent implements OnInit {
 
     if (this.equipment.acquisition.type === "tmr") {
       let unit = this.getUnit(this.equipment.acquisition.unitId)
-      this.equipment.acquisition.unit = {
-        name: this.nameService.getName(unit),
-        slug: unit.slug
+      if (unit) {
+        this.equipment.acquisition.unit = {
+          name: this.nameService.getName(unit),
+          slug: unit.slug
+        }
+      } else {
+        this.equipment.acquisition.unit = {
+          name: "Unknown",
+          slug: "Unknown"
+        }
       }
     } else {
       let acquis = "Unknown"

@@ -1552,7 +1552,7 @@ export class JsonService {
     let dataId = equipment.iname;
     let rType = equipment.rtype !=="AF_LOT_50" && equipment.rtype !=="AF_LOT_TRUST" ? equipment.rtype : dataId;
 
-    if (this.names.en.equipment[dataId] && equipment.type !== -1) {
+    if ((this.version == "jp" || this.names.en.equipment[dataId]) && equipment.type !== -1) {
       if (!this[this.version].wotvEquipments[rType]) {
         this[this.version].wotvEquipments[rType] = {
           names: {},
