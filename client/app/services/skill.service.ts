@@ -881,12 +881,16 @@ export class SkillService {
     let middle = 8;
     let countLine = 0;
 
-    for(let i = middle - range.l; i <= middle; i++) {
-      if (i !== middle) {
+    for(let i = middle; i >= middle - range.l; i--) {
+      if (i !== middle && (!range.m || countLine > range.m)) {
         skillTable[i][middle] = fullAOE ? "AR" : "R"
-        skillTable[(middle + countLine + 1)][middle] = "R"
+        skillTable[(middle + countLine)][middle] = "R"
       } else {
         let start = fullAOE ? 1 : 0
+        if (range.m) {
+          start = range.m + 1
+        }
+
         for (let j = start; j <= range.l; j++) {
           skillTable[middle][middle - j] = "R"
           skillTable[middle][middle + j] = "R"
