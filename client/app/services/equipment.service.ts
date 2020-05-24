@@ -286,6 +286,8 @@ export class EquipmentService {
     this.changeUpgrade()
     this.changeGrow()
 
+    this.equipmentCategory()
+
     return this.equipment
   }
 
@@ -417,5 +419,20 @@ export class EquipmentService {
 
       this.skillService.formatRange(this.equipment, skill);
     });
+  }
+
+  private equipmentCategory() {
+    let category = null
+    if (this.isWeapon(this.equipment.type)) {
+      category = "weapon"
+    } else {
+      if (this.equipment.type == "ACC") {
+        category = "acc"
+      } else {
+        category = "armor"
+      }
+    }
+
+    this.equipment.category = category
   }
 }

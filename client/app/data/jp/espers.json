@@ -23922,7 +23922,8 @@
           "minValue": 1000,
           "maxValue": 1000,
           "type": "all",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "fixedDamage": true
         },
         "elem": [
           "earth"

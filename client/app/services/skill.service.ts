@@ -110,6 +110,49 @@ export class SkillService {
     return value
   }
 
+
+
+
+  private getDamageValue(skill, effect) {
+    let value = "";
+    if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
+      let minValue = 100 + (typeof(effect.minValue) === "number" ? effect.minValue : effect.value);
+
+      if (!skill.level) {
+        value = " (" + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect) + ")"
+      } else {
+        if (effect.minValue !== effect.maxValue) {
+          let valueForLevel = Math.floor(minValue + ((effect.maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+          value = " (" + (100 + valueForLevel) + this.getDamageCalc(effect) + ")"
+        } else {
+          value = " (" + minValue + this.getDamageCalc(effect) + ")"
+        }
+      }
+    }
+
+    return value;
+  }
+
+  private getDamageMaxValue(effect, getPositiveValue = true) {
+    if (effect.minValue !== effect.maxValue) {
+      let maxValue = 100 + effect.maxValue;
+
+      return " => " + maxValue + this.getDamageCalc(effect);
+    }
+
+    return "";
+  }
+
+  private getDamageCalc(effect) {
+    if (effect.fixedDamage === true) {
+      return ""
+    } else {
+      return "%"
+    }
+  }
+
+
+
   private getValue(skill, effect, getPositiveValue = true) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
@@ -760,7 +803,7 @@ export class SkillService {
 
       html = html + this.upperCaseFirst((damage.effType ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage")
       + (pool === "" && damage.effType === "ABSORB" ? " HP " : pool)
-      + this.getValue(skill, damage, false));
+      + this.getDamageValue(skill, damage));
     }
 
     if (skill.hit) {
@@ -782,7 +825,273 @@ export class SkillService {
     return "Chance to counter " + this.counterType[counter.reactDamage] + " damage " + this.getValue(skill, counter)
   }
 
-  formatAccuracy(unit, skill, hit) {
+
+  formatDiamond(skillTable, range) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = middle - range.l; i <= middle; i++) {
+      let countCol = 0;
+
+      for(let j = middle - countLine; j <= middle; j++) { // up-left
+        if (!range.m || (countCol < range.l - range.m )) {
+          skillTable[i][j] = "R"
+        }
+
+        countCol++;
+      }
+
+      countCol = 0;
+      for(let j = middle + 1; j <= middle + countLine; j++) { //up-right
+        if (!range.m || (countCol >= ((countLine) - (range.l - range.m)))) {
+          skillTable[i][j] = "R"
+        }
+
+        countCol++;
+      }
+
+      if (countLine > 0) {
+        countCol = 0;
+        for(let j = middle - range.l + countLine; j <= middle; j++) { // down-left
+          if (!range.m || (countCol < range.l - range.m )) {
+            skillTable[middle + countLine][j] = "R"
+          }
+
+          countCol++;
+        }
+
+        countCol = 0;
+        for(let j = middle + 1; j <= middle + range.l - countLine; j++) { //down-right
+          if (!range.m || (countCol >= ((range.l - countLine) - (range.l - range.m)))) {
+            skillTable[middle + countLine][j] = "R"
+          }
+
+          countCol++;
+        }
+      }
+
+      countLine++
+    }
+
+    return skillTable
+  }
+
+
+  formatLine(skillTable, range, fullAOE = false) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = middle; i >= middle - range.l; i--) {
+      if (i !== middle && (!range.m || countLine > range.m)) {
+        skillTable[i][middle] = fullAOE ? "AR" : "R"
+        skillTable[(middle + countLine)][middle] = "R"
+      } else {
+        let start = fullAOE ? 1 : 0
+        if (range.m) {
+          start = range.m + 1
+        }
+
+        for (let j = start; j <= range.l; j++) {
+          skillTable[middle][middle - j] = "R"
+          skillTable[middle][middle + j] = "R"
+        }
+      }
+
+      countLine++;
+    }
+
+    return skillTable
+  }
+
+  formatSquare(skillTable, range) {
+    let middle = 8;
+    let countLine = 0;
+    for(let i = middle; i >= middle - range.l; i--) {
+      for (let j = 1; j <= range.l; j++) {
+        if (i === (middle - range.l)) {
+          skillTable[i][middle + j] = "AR"
+          skillTable[i][middle] = "AR"
+          skillTable[i][middle - j] = "AR"
+
+          skillTable[(middle + countLine)][middle + j] = "R"
+          skillTable[(middle + countLine)][middle] = "R"
+          skillTable[(middle + countLine)][middle - j] = "R"
+        } else if (i === middle) {
+          skillTable[i][middle - j] = "R"
+          skillTable[i][middle + j] = "R"
+        }
+      }
+
+      countLine++;
+    }
+
+    return skillTable
+  }
+
+  formatL(skillTable, range) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = middle - 1; i >= middle - range.l; i--) {
+      if (i + 1 == middle) {
+        for (let j = 1; j <= range.l; j++) {
+          if (j === 1) {
+            skillTable[i][middle + j] = "AR"
+            skillTable[i][middle - j] = "AR"
+          } else {
+            skillTable[i][middle + j] = "R"
+            skillTable[i][middle - j] = "R"
+          }
+
+          skillTable[(middle + countLine + 1)][middle + j] = "R"
+          skillTable[(middle + countLine + 1)][middle - j] = "R"
+        }
+      } else {
+        skillTable[i][middle + 1] = "AR"
+        skillTable[i][middle - 1] = "AR"
+
+        skillTable[(middle + countLine + 1)][middle + 1] = "R"
+        skillTable[(middle + countLine + 1)][middle - 1] = "R"
+      }
+
+      countLine++;
+    }
+
+    return skillTable
+  }
+
+  formatV(skillTable, range) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = middle; i >= middle - range.l; i--) {
+
+      if (i == middle) {
+        for (let j = 1; j <= range.l; j++) {
+          skillTable[i][middle + j] = "R"
+          skillTable[i][middle - j] = "R"
+        }
+      } else {
+        for (let j = 0; j <= range.l; j++) {
+          if ((middle - j) !== i) {
+            if (j <= countLine) {
+              skillTable[i][middle + j] = "AR"
+              skillTable[i][middle - j] = "AR"
+            } else {
+              skillTable[i][middle + j] = "R"
+              skillTable[i][middle - j] = "R"
+            }
+
+            skillTable[(middle + countLine)][middle + j] = "R"
+            skillTable[(middle + countLine)][middle - j] = "R"
+          }
+        }
+      }
+
+      countLine++;
+    }
+
+    return skillTable
+  }
+
+  private aoeDiamond(skillTable, aoe, maxLine) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = maxLine - aoe.l; i <= maxLine; i++) {
+      for(let j = middle - countLine; j <= middle; j++) { // up-left
+        skillTable[i][j] = skillTable[i][j] === "N" ? "A" : "AR";
+      }
+
+      for(let j = middle + 1; j <= middle + countLine; j++) { //up-right
+        skillTable[i][j] = skillTable[i][j] === "N" ? "A" : "AR";
+      }
+
+      if (countLine > 0) {
+        for(let j = middle - aoe.l + countLine; j <= middle; j++) { // down-left
+          skillTable[maxLine + countLine][j] = skillTable[maxLine + countLine][j] === "N" ? "A" : "AR";
+        }
+
+        for(let j = middle + 1; j <= middle + aoe.l - countLine; j++) { //down-right
+          skillTable[maxLine + countLine][j] =skillTable[maxLine + countLine][j] === "N" ? "A" : "AR";
+        }
+      }
+
+      countLine++
+    }
+
+    return skillTable
+  }
+
+  private aoeLine(skillTable, aoe, maxLine, onlyHorizontal = false) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = maxLine - aoe.l; i <= maxLine; i++) {
+      if (i !== maxLine && !onlyHorizontal) {
+        skillTable[i][middle] = skillTable[i][middle] === "N" || skillTable[i][middle] === "A" ? "A" : "AR"
+        skillTable[(maxLine + countLine + 1)][middle] = skillTable[(maxLine + countLine + 1)][middle] === "N" || skillTable[(maxLine + countLine + 1)][middle] === "A" ? "A" : "AR"
+      } else {
+        for (let j = 0; j <= aoe.l; j++) {
+          skillTable[maxLine][middle - j] = skillTable[maxLine][middle - j] === "N" || skillTable[maxLine][middle - j] === "A" ? "A" : "AR"
+          skillTable[maxLine][middle + j] = skillTable[maxLine][middle + j] === "N" || skillTable[maxLine][middle + j] === "A" ? "A" : "AR"
+        }
+      }
+
+      countLine++;
+    }
+
+    return skillTable
+  }
+
+  aoeSquare(skillTable, aoe, maxLine) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = maxLine; i >= maxLine - aoe.l; i--) {
+      for (let j = 0; j <= aoe.l; j++) {
+        skillTable[i][middle - j] = skillTable[i][middle - j] === "N" || skillTable[i][middle - j] === "A" ? "A" : "AR"
+        skillTable[i][middle + j] = skillTable[i][middle + j] === "N" || skillTable[i][middle + j] === "A" ? "A" : "AR"
+
+        skillTable[(maxLine + countLine)][middle - j] = skillTable[i][middle - j] === "N" || skillTable[i][middle - j] === "A" ? "A" : "AR"
+        skillTable[(maxLine + countLine)][middle + j] = skillTable[i][middle + j] === "N" || skillTable[i][middle + j] === "A" ? "A" : "AR"
+      }
+
+      countLine++;
+    }
+
+    return skillTable
+  }
+
+  aoeX(skillTable, aoe, maxLine) {
+    let middle = 8;
+    let countLine = 0;
+
+    for(let i = middle; i >= middle - aoe.l; i--) {
+
+      if (i == middle) {
+        skillTable[i][middle] = skillTable[i][middle] === "N" ? "A" : "AR"
+      } else {
+        for (let j = 0; j <= aoe.l; j++) {
+          if ((middle - j) === i) {
+            if (j <= countLine) {
+              skillTable[i][middle + j] = "A"
+              skillTable[i][middle - j] = "A"
+            } else {
+              skillTable[i][middle + j] = "A"
+              skillTable[i][middle - j] = "A"
+            }
+
+            skillTable[(maxLine + countLine)][middle + j] = "A"
+            skillTable[(maxLine + countLine)][middle - j] = "A"
+          }
+        }
+      }
+
+      countLine++;
+    }
+
+    return skillTable
   }
 
 
@@ -795,128 +1104,51 @@ export class SkillService {
           skillTable[i].push("N");
         }
       }
-      let middle = 8;
 
       if (skill.range && skill.range.l) {
-        if (skill.range.s !== 10) { // diamond
-          let countLine = 0;
-          for(let i = middle - skill.range.l; i <= middle; i++) {
-            let countCol = 0;
-
-            for(let j = middle - countLine; j <= middle; j++) { // up-left
-              if ((skill.range.s !== 0 || i === middle || j === middle)
-                && (!skill.range.m || (countCol < skill.range.l - skill.range.m ))
-              ) {
-                skillTable[i][j] = "R"
-              }
-
-              countCol++;
-            }
-
-            countCol = 0;
-            for(let j = middle + 1; j <= middle + countLine; j++) { //up-right
-              if ((skill.range.s !== 0 || i === middle || j === middle)
-                && (!skill.range.m || (countCol >= ((countLine) - (skill.range.l - skill.range.m)) ))
-              ) {
-                skillTable[i][j] = "R"
-              }
-
-              countCol++;
-            }
-
-            if (countLine > 0) {
-              countCol = 0;
-              for(let j = middle - skill.range.l + countLine; j <= middle; j++) { // down-left
-                if ((skill.range.s !== 0 || middle + countLine === middle || j === middle)
-                  && (!skill.range.m || (countCol < skill.range.l - skill.range.m ))
-                ) {
-                  skillTable[middle + countLine][j] = "R"
-                }
-
-                countCol++;
-              }
-
-              countCol = 0;
-              for(let j = middle + 1; j <= middle + skill.range.l - countLine; j++) { //down-right
-                if ((skill.range.s !== 0 || middle + countLine === middle || j === middle)
-                  && (!skill.range.m || (countCol >= ((skill.range.l - countLine) - (skill.range.l - skill.range.m)) ))
-                ) {
-                  skillTable[middle + countLine][j] = "R"
-                }
-
-                countCol++;
-              }
-            }
-
-            countLine++
+        if (skill.range.s === 0) {
+          skillTable = this.formatLine(skillTable, skill.range)
+        } else if (skill.range.s === 1) {
+          skillTable = this.formatDiamond(skillTable, skill.range)
+        } else if (skill.range.s === 10) {
+          if (!skill.range.w || (skill.range.w && skill.range.w === 1)) {
+            skillTable = this.formatLine(skillTable, skill.range, true)
+          } else {
+            skillTable = this.formatSquare(skillTable, skill.range)
           }
+        } else if (skill.range.s === 11) {
+          skillTable = this.formatL(skillTable, skill.range)
+        } else if (skill.range.s === 13) {
+          skillTable = this.formatV(skillTable, skill.range)
         } else {
-          if (!skill.range.w || (skill.range.w && skill.range.w === 1)) { // line full aoe
-            let countLine = 0;
-            for(let i = middle - skill.range.l; i <= middle; i++) {
-              if (i !== middle) {
-                skillTable[i][middle] = "AR"
-                skillTable[(middle + countLine + 1)][middle] = "R"
-              } else {
-                for (let j = 1; j <= skill.range.l; j++) {
-                  skillTable[middle][middle - j] = "R"
-                  skillTable[middle][middle + j] = "R"
-                }
-              }
-
-              countLine++;
-            }
-          } else { //square
-            let countLine = 0;
-            for(let i = middle - skill.range.l; i <= middle; i++) {
-              for (let j = 1; j <= skill.range.l; j++) {
-                if (i === (middle - skill.range.l)) {
-                  skillTable[i][middle + j] = "AR"
-                  skillTable[i][middle] = "AR"
-                  skillTable[i][middle - j] = "AR"
-
-                  skillTable[(middle + countLine + 1)][middle + j] = "R"
-                  skillTable[(middle + countLine + 1)][middle] = "R"
-                  skillTable[(middle + countLine + 1)][middle - j] = "R"
-                } else if (i === middle) {
-                  skillTable[i][middle - j] = "R"
-                  skillTable[i][middle + j] = "R"
-                }
-              }
-
-              countLine++;
-            }
-          }
+          console.log("Unknow range grid -- " + skill.dataId)
         }
       }
 
+      let middle = 8;
       let maxLine = (skill.range && skill.range.l) ? middle - skill.range.l : middle;
       if (skill.aoe && skill.aoe.l) {
-        let countLine = 0;
-        for(let i = maxLine - skill.aoe.l; i <= maxLine; i++) {
-          for(let j = middle - countLine; j <= middle; j++) { // up-left
-            skillTable[i][j] = skillTable[i][j] === "N" ? "A" : "AR";
-          }
-
-          for(let j = middle + 1; j <= middle + countLine; j++) { //up-right
-            skillTable[i][j] = skillTable[i][j] === "N" ? "A" : "AR";
-          }
-
-          if (countLine > 0) {
-            for(let j = middle - skill.aoe.l + countLine; j <= middle; j++) { // down-left
-              skillTable[maxLine + countLine][j] = skillTable[maxLine + countLine][j] === "N" ? "A" : "AR";
-            }
-
-            for(let j = middle + 1; j <= middle + skill.aoe.l - countLine; j++) { //down-right
-              skillTable[maxLine + countLine][j] =skillTable[maxLine + countLine][j] === "N" ? "A" : "AR";
-            }
-          }
-
-          countLine++
+        if (skill.aoe.s === 0) {
+          skillTable = this.aoeLine(skillTable, skill.aoe, maxLine)
+        } else if (skill.aoe.s === 1) {
+          skillTable = this.aoeDiamond(skillTable, skill.aoe, maxLine)
+        } else if (skill.aoe.s === 2) {
+          skillTable = this.aoeSquare(skillTable, skill.aoe, maxLine)
+        } else if (skill.aoe.s === 3) {
+          skillTable = this.aoeLine(skillTable, skill.aoe, maxLine, true)
+        } else if (skill.aoe.s === 5) {
+          skillTable = this.aoeX(skillTable, skill.aoe, maxLine)
+        } else {
+          console.log("unknow aoe -- " + skill.dataId)
         }
       }
 
-      skillTable[maxLine][middle] = "TAR";
+      if (!skill.range || (skill.range.s !== 11 && skill.range.s !== 13)) {
+        skillTable[maxLine][middle] = "TAR";
+      } else if (skill.range.s === 13) {
+        skillTable[middle - 1][middle] = "TAR";
+      }
+
       if (maxLine !== middle) {
         skillTable[middle][middle] = "U" + skillTable[middle][middle];
       }
