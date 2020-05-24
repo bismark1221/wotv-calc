@@ -741,7 +741,10 @@ export class UnitService {
               }
             }
 
-            let value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+            let value = effect.minValue
+            if (skill.maxLevel !== 1 || skill.level !== 1) {
+              value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+            }
             this.unit.stats[effect.type]['equipment' + i] = value
 
             if (!this.unit.stats[effect.type].equipment) {
@@ -756,6 +759,7 @@ export class UnitService {
             } else if (value <= 0 && value > this.unit.stats[effect.type].equipment.negative) {
               this.unit.stats[effect.type].equipment.negative = value
             }
+
 
             statsType.push(effect.type)
           })
@@ -784,7 +788,7 @@ export class UnitService {
       this.calculateCardStats()
     }
 
-    if (this.unit.equipments && this.unit.equipments[0]) {
+    if (this.unit.equipments) {
       this.calculateEquipmentsStats()
     }
 
