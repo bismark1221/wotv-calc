@@ -323,6 +323,7 @@ export class EsperService {
     this.esper.level = 1;
     this.esper.maxSPs = 0;
     this.esper.usedSPs = 0;
+    this.esper.resonance = 1;
     this.esper.possibleBuffs = null;
 
     this.initiateSavedEsper(customData)
@@ -345,7 +346,7 @@ export class EsperService {
     if (esper) {
       this.esper.star = esper.star;
       this.esper.level = esper.level;
-      this.esper.resonance = esper.resonance
+      this.esper.resonance = esper.resonance ? esper.resonance : 1;
 
       Object.keys(esper.nodes).forEach(nodeId => {
         if (esper.nodes[nodeId]) {
