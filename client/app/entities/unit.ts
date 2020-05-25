@@ -94,6 +94,7 @@ export class Unit {
   remainingBuffs = [];
   slug;
   board;
+  attack;
 
 
   constructFromJson(unit: Unit, translateService: TranslateService): void {
@@ -111,6 +112,7 @@ export class Unit {
     this.masterSkill = unit.masterSkill;
     this.slug = unit.slug;
     this.board = unit.board;
+    this.attack = unit.attack;
   }
 
   getName(translateService: TranslateService): string {

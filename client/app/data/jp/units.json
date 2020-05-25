@@ -2050,6 +2050,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_WAR_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -3010,8 +3034,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -3935,8 +3957,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 140,
-              "maxSpeed": 320,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -4228,6 +4248,30 @@
         "type": "slash",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SWN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -6326,6 +6370,32 @@
       "count": 1,
       "maxLevel": 20,
       "based": "physic"
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_LAN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -8507,6 +8577,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SAM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -10615,6 +10709,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_PLD_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -12718,6 +12836,30 @@
         "type": "strike",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MNK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -14854,6 +14996,32 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_LAN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -15130,8 +15298,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -15233,8 +15399,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -15411,8 +15575,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -15593,8 +15755,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -15644,8 +15804,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -15868,8 +16026,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -16271,8 +16427,6 @@
             "damage": {
               "minValue": 100,
               "maxValue": 222,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -16435,8 +16589,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -17142,6 +17294,30 @@
         "type": "magic",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_BLM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -18123,8 +18299,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -18390,8 +18564,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -18704,8 +18876,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -19109,8 +19279,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -19462,6 +19630,30 @@
         "h": 1
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_WHM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -19735,8 +19927,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -20373,8 +20563,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -20715,8 +20903,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -20785,8 +20971,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -20904,8 +21088,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -21136,8 +21318,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -21277,8 +21457,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -21693,6 +21871,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_CLR_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -21961,8 +22163,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -22713,8 +22913,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -23120,8 +23318,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             }
@@ -23956,6 +24152,30 @@
       ]
     },
     "slug": "helena-leonis",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GRM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -25165,8 +25385,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -25715,8 +25933,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -26151,6 +26367,30 @@
       ]
     },
     "slug": "lilyth",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_KNT_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -28240,6 +28480,32 @@
       ]
     },
     "slug": "ramada",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_LAN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -30315,6 +30581,30 @@
       ]
     },
     "slug": "owe",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SAM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -30563,8 +30853,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -31490,8 +31778,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -31632,8 +31918,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 140,
-              "maxSpeed": 320,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -31789,8 +32073,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -31961,8 +32243,6 @@
             "damage": {
               "minValue": 90,
               "maxValue": 125,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -32437,6 +32717,32 @@
       ]
     },
     "slug": "lorenzo",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_DRG_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -33649,8 +33955,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -34551,6 +34855,32 @@
       ]
     },
     "slug": "rairyuu",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GUN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 4,
+        "m": 2,
+        "s": 1,
+        "line": 1
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -35473,8 +35803,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -36676,6 +37004,30 @@
       ]
     },
     "slug": "vistralle",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_THI_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -36926,8 +37278,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -37375,8 +37725,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -37639,8 +37987,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -37904,8 +38250,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -38383,8 +38727,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -38590,8 +38932,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -38858,6 +39198,33 @@
       ]
     },
     "slug": "khury-wezette",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_HUN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 3,
+        "m": 2,
+        "mh": 8,
+        "s": 1,
+        "line": 2
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -39113,8 +39480,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -41045,6 +41410,30 @@
       ]
     },
     "slug": "cadia",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_CLR_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -42211,8 +42600,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -42634,8 +43021,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             }
@@ -43213,6 +43598,30 @@
       ]
     },
     "slug": "meriluke",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MNK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -43463,8 +43872,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -43623,8 +44030,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -43815,8 +44220,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -44089,8 +44492,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -44205,8 +44606,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -44471,8 +44870,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -44591,8 +44988,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -44827,8 +45222,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -45133,8 +45526,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -45414,6 +45805,30 @@
       ]
     },
     "slug": "margritte",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_TIM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -46398,8 +46813,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -46934,8 +47347,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -47644,6 +48055,30 @@
       ]
     },
     "slug": "grace",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_WHM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -48897,8 +49332,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -49308,8 +49741,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -49450,8 +49881,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -49850,6 +50279,30 @@
       ]
     },
     "slug": "schuzelt",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SWN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -50191,8 +50644,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -51124,8 +51575,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -52110,6 +52559,33 @@
       ]
     },
     "slug": "fina",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_FINA_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 3,
+        "m": 2,
+        "mh": 8,
+        "s": 1,
+        "line": 2
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -54195,6 +54671,30 @@
       ]
     },
     "slug": "baelo",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_KNT_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -55812,8 +56312,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -56375,6 +56873,29 @@
       ]
     },
     "slug": "little-leela",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MGK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -56620,8 +57141,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -57533,8 +58052,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -57677,8 +58194,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 140,
-              "maxSpeed": 320,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -57834,8 +58349,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -57940,8 +58453,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -58007,8 +58518,6 @@
             "damage": {
               "minValue": 90,
               "maxValue": 125,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -58077,8 +58586,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -58475,6 +58982,32 @@
       ]
     },
     "slug": "sosha",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_DRG_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -58718,8 +59251,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -59709,8 +60240,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -59842,8 +60371,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             }
@@ -60678,6 +61205,30 @@
       ]
     },
     "slug": "vallaide",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GRM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -61660,8 +62211,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -61919,8 +62468,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -62205,8 +62752,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -62896,6 +63441,30 @@
       ]
     },
     "slug": "naiah",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_WHM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -64060,8 +64629,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -65022,6 +65589,32 @@
       ]
     },
     "slug": "serjes",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_LAN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -65264,8 +65857,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -65624,8 +66215,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -65734,8 +66323,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -65896,8 +66483,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -66011,8 +66596,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -66627,8 +67210,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -66735,8 +67316,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -67141,8 +67720,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -67216,6 +67793,33 @@
       ]
     },
     "slug": "yuni",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_HUN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 3,
+        "m": 2,
+        "mh": 8,
+        "s": 1,
+        "line": 2
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -67474,8 +68078,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -67577,8 +68179,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -67749,8 +68349,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -67930,8 +68528,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -67981,8 +68577,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -68205,8 +68799,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -68573,8 +69165,6 @@
             "damage": {
               "minValue": 100,
               "maxValue": 222,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -68736,8 +69326,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -69367,6 +69955,30 @@
       ]
     },
     "slug": "severo",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_BLM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -71435,6 +72047,30 @@
       ]
     },
     "slug": "vadim",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_THI_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -71692,8 +72328,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -72019,8 +72653,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -72203,8 +72835,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -72304,8 +72934,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -72433,8 +73061,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -73324,8 +73950,6 @@
             "damage": {
               "minValue": 100,
               "maxValue": 222,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -73536,8 +74160,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -73611,6 +74233,30 @@
       ]
     },
     "slug": "murmur",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_RDM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -73878,8 +74524,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -74597,8 +75241,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -74989,8 +75631,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -75501,8 +76141,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -75792,6 +76430,30 @@
       ]
     },
     "slug": "phoebe",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_TIM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -76023,8 +76685,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -76479,8 +77139,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -77491,8 +78149,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -77971,6 +78627,33 @@
       ]
     },
     "slug": "learte",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_HUN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 3,
+        "m": 2,
+        "mh": 8,
+        "s": 1,
+        "line": 2
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -78192,8 +78875,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -78295,8 +78976,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -78473,8 +79152,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -78646,8 +79323,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -78697,8 +79372,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -79179,8 +79852,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -79318,8 +79989,6 @@
             "damage": {
               "minValue": 100,
               "maxValue": 222,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -79483,8 +80152,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -79730,8 +80397,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -80148,6 +80813,30 @@
       ]
     },
     "slug": "miche",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_BLM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -81030,8 +81719,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -82232,6 +82919,30 @@
       ]
     },
     "slug": "mia",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_THI_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -84254,6 +84965,30 @@
       ]
     },
     "slug": "zazan",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_WAR_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -85173,8 +85908,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -86462,6 +87195,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GLMS_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -86759,8 +87516,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -87182,8 +87937,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -87710,8 +88463,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -87857,8 +88608,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -88216,8 +88965,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -88425,8 +89172,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -88720,6 +89465,30 @@
       ]
     },
     "slug": "yshtola",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_YSTL_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -89631,8 +90400,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -89895,8 +90662,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -90333,8 +91098,6 @@
             "damage": {
               "minValue": 90,
               "maxValue": 125,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "slash",
               "effType": "DAMAGE"
             }
@@ -90524,8 +91287,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -90786,6 +91547,30 @@
       ]
     },
     "slug": "thancred",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_TNCR_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -92011,8 +92796,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -92553,8 +93336,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -92989,6 +93770,32 @@
         "type": "missile",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GUN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 4,
+        "m": 2,
+        "s": 1,
+        "line": 1
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -93922,8 +94729,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -94812,8 +95617,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -95073,6 +95876,30 @@
       ]
     },
     "slug": "shadowlynx",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_NIN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -96530,8 +97357,6 @@
             "damage": {
               "minValue": 130,
               "maxValue": 170,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "slash",
               "effType": "DAMAGE"
             }
@@ -97207,6 +98032,30 @@
         "type": "slash",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_VIK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -99378,6 +100227,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SWN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -100582,8 +101455,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -100967,8 +101838,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -101508,6 +102377,30 @@
       ]
     },
     "slug": "nasha",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_PLD_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -101748,8 +102641,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -102684,8 +103575,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -102828,8 +103717,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 140,
-              "maxSpeed": 320,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -102985,8 +103872,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -103157,8 +104042,6 @@
             "damage": {
               "minValue": 90,
               "maxValue": 125,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -103227,8 +104110,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -103357,8 +104238,6 @@
             "damage": {
               "minValue": 130,
               "maxValue": 170,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "slash",
               "effType": "DAMAGE"
             }
@@ -103663,6 +104542,32 @@
         "type": "pierce",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_DRG_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -104613,8 +105518,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -105793,6 +106696,30 @@
       ]
     },
     "slug": "etre",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MNK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -107929,6 +108856,30 @@
         "neutral"
       ]
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FFT_RAMZ_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -109997,6 +110948,21 @@
       ]
     },
     "slug": "gaffgarion",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FFT_GFGR_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    },
     "masterSkill": [
       {
         "names": {
@@ -112218,6 +113184,21 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FFT_ORND_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    },
     "masterSkill": [
       {
         "names": {
@@ -114393,6 +115374,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_KNT_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -115710,8 +116715,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -116676,6 +117679,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_NIN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -116751,7 +117778,7 @@
   "UN_LW_P_MRND": {
     "dataId": "UN_LW_P_MRND",
     "names": {
-      "en": "ミランダ"
+      "en": "ミランダ - Miranda"
     },
     "rarity": "UR",
     "jobs": [
@@ -116935,8 +117962,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -117632,8 +118657,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -118846,6 +119869,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_RDM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -118878,7 +119925,7 @@
     ],
     "tmr": {
       "names": {
-        "en": "レッドジャケット"
+        "en": "レッドジャケット - Red Jacket"
       },
       "stats": {
         "HP": 482,
@@ -118930,13 +119977,13 @@
         }
       ],
       "image": "lapswpn_clt_007",
-      "slug": "retudoziyaketuto"
+      "slug": "red-jacket"
     }
   },
   "UN_LW_P_DRND": {
     "dataId": "UN_LW_P_DRND",
     "names": {
-      "en": "ドランド"
+      "en": "ドランド - Dorando"
     },
     "rarity": "MR",
     "jobs": [
@@ -120364,8 +121411,6 @@
             "damage": {
               "minValue": 130,
               "maxValue": 170,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "slash",
               "effType": "DAMAGE"
             }
@@ -120971,6 +122016,30 @@
       ]
     },
     "slug": "dorando",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_VIK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -120997,7 +122066,7 @@
     ],
     "tmr": {
       "names": {
-        "en": "惨殺の大斧"
+        "en": "惨殺の大斧 - Slaughter Axe"
       },
       "stats": {
         "HP": 68,
@@ -121028,7 +122097,7 @@
         }
       ],
       "image": "lapswpn_axe_006",
-      "slug": "can-shano-da-fu"
+      "slug": "slaughter-axe"
     }
   },
   "UN_LW_P_LUCA": {
@@ -121913,8 +122982,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -122508,8 +123575,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -122811,8 +123876,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -123125,6 +124188,32 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_WGN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 4,
+        "m": 2,
+        "s": 1,
+        "line": 1
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -123395,8 +124484,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -124114,8 +125201,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -125059,8 +126144,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             }
@@ -125345,6 +126428,30 @@
       ]
     },
     "slug": "adorado",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_RDM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -125588,8 +126695,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -126657,8 +127762,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 140,
-              "maxSpeed": 320,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -126807,8 +127910,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -126977,8 +128078,6 @@
             "damage": {
               "minValue": 90,
               "maxValue": 125,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -127495,6 +128594,32 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_DRG_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1,
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -127757,8 +128882,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -127860,8 +128983,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -128032,8 +129153,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -128208,8 +129327,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -128259,8 +129376,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -128872,8 +129987,6 @@
             "damage": {
               "minValue": 100,
               "maxValue": 222,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -129053,8 +130166,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -129435,8 +130546,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -129746,6 +130855,30 @@
       ]
     },
     "slug": "saria",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_BLM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -131889,6 +133022,30 @@
         "type": "slash",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_ASS_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -134045,6 +135202,29 @@
       ]
     },
     "slug": "dariohorun",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MGK_ATK",
+      "slug": "tong-chang-gong-ji",
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -136158,6 +137338,30 @@
       ]
     },
     "slug": "teireru",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_KNT_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -136384,8 +137588,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -137125,8 +138327,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -137491,8 +138691,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -138303,6 +139501,30 @@
         "type": "slash",
         "effType": "DAMAGE"
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_RAIN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -139529,8 +140751,6 @@
             "damage": {
               "minValue": 55,
               "maxValue": 90,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -139903,8 +141123,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 140,
-              "maxSpeed": 320,
               "type": "pierce",
               "effType": "DAMAGE"
             }
@@ -140441,6 +141659,27 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FF1_WROL_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      }
+    },
     "masterSkill": [
       {
         "names": {
@@ -140709,8 +141948,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -142078,8 +143315,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -142150,8 +143385,6 @@
             "damage": {
               "minValue": 85,
               "maxValue": 120,
-              "minSpeed": 120,
-              "maxSpeed": 200,
               "type": "magic",
               "effType": "DAMAGE"
             }
@@ -142433,8 +143666,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             }
@@ -142652,6 +143883,27 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
+        "type": "magic",
+        "effType": "DAMAGE"
+      }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MST_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "magic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
         "type": "magic",
         "effType": "DAMAGE"
       }
@@ -144504,8 +145756,6 @@
             "damage": {
               "minValue": 130,
               "maxValue": 170,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "slash",
               "effType": "DAMAGE"
             }
@@ -144752,6 +146002,30 @@
       ]
     },
     "slug": "simuru",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SAM_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -146944,6 +148218,30 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SWN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -149066,6 +150364,30 @@
       ]
     },
     "slug": "ravuiesu",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_PLD_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
+    },
     "masterSkill": [
       {
         "names": {
@@ -150265,8 +151587,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -151261,6 +152581,27 @@
       "damage": {
         "minValue": 65,
         "maxValue": 100,
+        "type": "slash",
+        "effType": "DAMAGE"
+      }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FFT_AGRA_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
         "type": "slash",
         "effType": "DAMAGE"
       }
@@ -153465,6 +154806,27 @@
         "effType": "DAMAGE"
       }
     },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FFT_DELT_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      }
+    },
     "masterSkill": [
       {
         "names": {
@@ -154438,8 +155800,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 320,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -155034,8 +156394,6 @@
             "damage": {
               "minValue": 50,
               "maxValue": 85,
-              "minSpeed": 120,
-              "maxSpeed": 240,
               "type": "missile",
               "effType": "DAMAGE"
             }
@@ -155611,6 +156969,29 @@
       ]
     },
     "slug": "musutadeio",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_FFT_MSTD_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 4,
+        "m": 2,
+        "s": 1,
+        "line": 1
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      }
+    },
     "masterSkill": [
       {
         "names": {
@@ -156481,8 +157862,6 @@
             "damage": {
               "minValue": -10,
               "maxValue": 25,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -156823,8 +158202,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -156893,8 +158270,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "effType": "ABSORB"
             },
@@ -157012,8 +158387,6 @@
             "damage": {
               "minValue": 15,
               "maxValue": 41,
-              "minSpeed": 120,
-              "maxSpeed": 280,
               "type": "magic",
               "effType": "DAMAGE"
             },
@@ -157382,8 +158755,6 @@
             "damage": {
               "minValue": -90,
               "maxValue": -80,
-              "minSpeed": 160,
-              "maxSpeed": 360,
               "type": "magic",
               "pool": "TP",
               "effType": "ABSORB"
@@ -157821,6 +159192,30 @@
         "l": 1,
         "h": 1
       }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_CAL_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ]
     },
     "masterSkill": [
       {
@@ -160027,6 +161422,27 @@
         "type": "slash",
         "pool": "HP",
         "effType": "ABSORB"
+      }
+    },
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_STRN_ATK",
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
       }
     },
     "masterSkill": [

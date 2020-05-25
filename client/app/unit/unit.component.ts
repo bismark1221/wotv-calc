@@ -121,6 +121,18 @@ export class UnitComponent implements OnInit {
       this.skillService.formatRange(this.unit, this.unit.limit);
     }
 
+    if (this.unit.attack) {
+      this.unit.attack.basedHtml = this.unit.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.attack.based.toLowerCase() + ".png' />" : "";
+
+      this.unit.attack.effects.forEach(effect => {
+        effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.attack, effect);
+      });
+
+      this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
+
+      this.skillService.formatRange(this.unit, this.unit.attack);
+    }
+
     if (this.unit.tmr) {
       this.unit.tmr.name = this.nameService.getName(this.unit.tmr)
       this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats)

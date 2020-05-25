@@ -902,6 +902,7 @@ export class JsonService {
 
     this.getStats(this[this.version].wotvUnits[dataId], unit.status, 'unit')
     this.getLB(this[this.version].wotvUnits[dataId], unit.limit)
+    this.getAttackSkill(this[this.version].wotvUnits[dataId], unit.atkskl)
     this.getMasterSkill(this[this.version].wotvUnits[dataId], unit.mstskl)
     this.getTMR(this[this.version].wotvUnits[dataId], unit.trust)
     this.getSkillsAndBuffs(this[this.version].wotvUnits[dataId]);
@@ -1364,6 +1365,19 @@ export class JsonService {
       this.updateSkill(unit, limit, lbId);
 
       unit.limit = limit
+    }
+  }
+
+  private getAttackSkill(unit, attackId) {
+    if (attackId) {
+      let attack = {
+        names: {},
+        effects: [],
+        dataId: attackId
+      };
+      this.updateSkill(unit, attack, attackId);
+
+      unit.attack = attack
     }
   }
 

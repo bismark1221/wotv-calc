@@ -408,6 +408,35 @@
   </table>
 </div>
 
+<div class="row">
+  <table class="skillsTable">
+    <tbody>
+      <tr>
+        <th></th>
+        <th>Effects</th>
+        <th class="rangeTd">Range</th>
+        <th class="skillHitTd">Hits</th>
+      </tr>
+      <tr>
+        <td class="skillNameTd">Basic Attack</td>
+        <td class="skillEffectTd">
+          <div [innerHTML]="unit.attack.damageHtml"></div>
+          <div *ngFor="let effect of unit.attack.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td>
+          <ng-template #tip_table><div [innerHTML]="unit.attack.skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+            <div class="divSkillTableHtml" [innerHTML]="unit.attack.skillTableHtml"></div>
+          </div>
+        </td>
+        <td><span *ngIf="unit.attack.combo">{{ unit.attack.combo.num }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <div class="row" *ngFor="let i of [0, 1, 2, 3]">
   <table class="skillsTable">
     <tbody>
