@@ -793,6 +793,13 @@ export class UnitService {
     }
 
     Object.keys(this.unit.stats).forEach(stat => {
+      if (stat == "INITIAL_AP") {
+        let initialAPModifier = 100 + this.unit.jobsData[0].statsModifiers[this.unit.jobsData[0].level - 1]["INITIAL_AP"]
+        let initialAP = this.unit.stats["AP"].total * initialAPModifier / 100
+
+        this.unit.stats["INITIAL_AP"].base = Math.floor(initialAP)
+        this.unit.stats["INITIAL_AP"].baseTotal = Math.floor(initialAP)
+      }
       this.unit.stats[stat].total = this.unit.stats[stat].baseTotal;
 
       if (this.unit.stats[stat].board) {

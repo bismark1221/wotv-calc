@@ -292,7 +292,8 @@
       <tr *ngFor="let statFrom of statsFrom">
         <td>{{ statFrom.translate }}</td>
         <td *ngFor="let type of statsType">
-          {{ unit.stats[type][statFrom.type] }}
+          <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
+          <span>{{ unit.stats[type][statFrom.type] }}</span>
         </td>
       </tr>
     </tbody>
@@ -300,6 +301,7 @@
       <tr>
         <td>Total</td>
         <td *ngFor="let type of statsType">
+          <span *ngIf="type == 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
           <span>{{ unit.stats[type].total }}</span>
         </td>
       </tr>
