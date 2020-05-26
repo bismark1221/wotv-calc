@@ -248,14 +248,15 @@
   <div *ngIf="unit">
     <table>
       <tr>
-        <td colspan="4">Guild Statues</td>
+        <td>Sub-job</td>
       </tr>
       <tr>
-        <td *ngFor="let statue of guildService.getStatues()">{{ statue }}</td>
-      </tr>
-      <tr>
-        <td *ngFor="let statue of guildService.getStatues(); let j = index">
-          {{ guild[statue] }}% {{ guildStatsType[j] }}
+        <td>
+          <select [(ngModel)]="unit.subjob">
+            <option *ngFor="let i of [0, 1, 2]" [ngValue]="i">
+              {{ unit.jobsData[i].name }}
+            </option>
+          </select>
         </td>
       </tr>
     </table>

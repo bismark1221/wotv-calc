@@ -278,6 +278,7 @@ export class UnitService {
         unit.activatedSupport[0],
         unit.activatedSupport[1]
       ],
+      subjob: unit.subjob,
       esper: null,
       card: null,
       equipments: [null, null, null]
@@ -334,6 +335,7 @@ export class UnitService {
       job.level = 1;
       this.unit.jobsData.push(job)
     })
+    this.unit.subjob = 0;
 
     this.unit.star = 1;
     this.unit.lb = 0;
@@ -396,6 +398,10 @@ export class UnitService {
         this.unit.masterSkillActivated = 0;
       } else if (typeof(unit.masterSkill) == "number") {
         this.unit.masterSkillActivated = unit.masterSkill
+      }
+
+      if (unit.subjob) {
+        this.unit.subjob = unit.subjob
       }
 
       this.unit.activatedSupport = [
