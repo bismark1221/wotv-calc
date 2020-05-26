@@ -45,15 +45,15 @@ export class BuilderEquipmentComponent implements OnInit {
   }
 
   changeUpgrade() {
-    this.equipmentService.changeUpgrade()
+    this.equipmentService.changeUpgrade(this.equipment)
   }
 
   changeGrow() {
-    this.equipmentService.changeGrow()
+    this.equipmentService.changeGrow(this.equipment)
   }
 
   changeSkillLevel() {
-    this.equipmentService.changeSkillLevel()
+    this.equipmentService.changeSkillLevel(this.equipment)
   }
 
   save() {

@@ -732,44 +732,60 @@ export class UnitService {
           if (skill.type !== "skill") {
             skill.level = this.unit.equipments[i].level
             skill.maxLevel = this.unit.equipments[i].maxLevel
+
+            skill.effects.forEach(effect => {
+              if (!this.unit.stats[effect.type]) {
+                this.unit.stats[effect.type] = {
+                  baseTotal: 0
+                }
+              }
+
+              let value = effect.minValue
+              if (skill.maxLevel !== 1 || skill.level !== 1) {
+                value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+              }
+
+              if (this.unit.stats[effect.type]['equipment' + i]) {
+                this.unit.stats[effect.type]['equipment' + i] += value
+              } else {
+                this.unit.stats[effect.type]['equipment' + i] = value
+              }
+
+              if (!this.unit.stats[effect.type].equipmentBuff) {
+                this.unit.stats[effect.type].equipmentBuff = {
+                  positive: 0,
+                  negative: -100000000
+                }
+              }
+
+              if (value > 0 && value > this.unit.stats[effect.type].equipmentBuff.positive) {
+                this.unit.stats[effect.type].equipmentBuff.positive = value
+              } else if (value <= 0 && value > this.unit.stats[effect.type].equipmentBuff.negative) {
+                this.unit.stats[effect.type].equipmentBuff.negative = value
+              }
+
+
+              statsType.push(effect.type)
+            })
           }
-
-          skill.effects.forEach(effect => {
-            if (!this.unit.stats[effect.type]) {
-              this.unit.stats[effect.type] = {
-                baseTotal: 0
-              }
-            }
-
-            let value = effect.minValue
-            if (skill.maxLevel !== 1 || skill.level !== 1) {
-              value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
-            }
-            this.unit.stats[effect.type]['equipment' + i] = value
-
-            if (!this.unit.stats[effect.type].equipment) {
-              this.unit.stats[effect.type].equipment = {
-                positive: 0,
-                negative: -100000000
-              }
-            }
-
-            if (value > 0 && value > this.unit.stats[effect.type].equipment.positive) {
-              this.unit.stats[effect.type].equipment.positive = value
-            } else if (value <= 0 && value > this.unit.stats[effect.type].equipment.negative) {
-              this.unit.stats[effect.type].equipment.negative = value
-            }
-
-
-            statsType.push(effect.type)
-          })
         })
       }
     }
 
     statsType.forEach(statType => {
-      let negativeValue = this.unit.stats[statType].equipment.negative !== -100000000 ? this.unit.stats[statType].equipment.negative : 0
-      this.unit.stats[statType].totalEquipment = this.unit.stats[statType].equipment.positive + negativeValue
+      if (this.unit.stats[statType].equipment) {
+        let negativeValue = this.unit.stats[statType].equipment.negative !== -100000000 ? this.unit.stats[statType].equipment.negative : 0
+        this.unit.stats[statType].totalEquipment = this.unit.stats[statType].equipment.positive + negativeValue
+      }
+
+      if (this.unit.stats[statType].equipmentBuff) {
+        let negativeBuffValue = this.unit.stats[statType].equipmentBuff.negative !== -100000000 ? this.unit.stats[statType].equipmentBuff.negative : 0
+        let total = 0
+        if (this.unit.stats[statType].totalEquipment) {
+          total = this.unit.stats[statType].totalEquipment
+        }
+        this.unit.stats[statType].totalEquipment = total + this.unit.stats[statType].equipmentBuff.positive + negativeBuffValue
+      }
     })
   }
 

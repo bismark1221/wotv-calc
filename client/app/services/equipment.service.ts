@@ -363,7 +363,11 @@ export class EquipmentService {
     }
   }
 
-  changeUpgrade() {
+  changeUpgrade(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment
+    }
+
     this.equipment.skill = this.equipment.skills[this.equipment.upgrade]
 
     if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type == "skill") {
@@ -383,7 +387,11 @@ export class EquipmentService {
     this.changeSkillLevel();
   }
 
-  changeGrow() {
+  changeGrow(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment
+    }
+
     this.equipment.tableStats = {}
     this.equipment.statsTypes.forEach(statType => {
       this.equipment.tableStats[statType] = this.equipment.grows[this.equipment.grow].stats[statType]
@@ -396,7 +404,11 @@ export class EquipmentService {
     })
   }
 
-  changeSkillLevel() {
+  changeSkillLevel(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment
+    }
+
     if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type !== "skill") {
       this.equipment.skill.forEach(skill => {
         skill.level = this.equipment.level
