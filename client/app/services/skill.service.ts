@@ -153,21 +153,21 @@ export class SkillService {
 
 
 
-  private getValue(skill, effect, getPositiveValue = true) {
+  private getValue(skill, effect, getPositiveValue = true, explaination = "") {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
       let minValue = typeof(effect.minValue) === "number" ? effect.minValue : effect.value;
       minValue = this.getPositiveValue(minValue, getPositiveValue);
 
       if (!skill.level) {
-        value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect, getPositiveValue) + ")"
+        value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect, getPositiveValue) + explaination + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
           let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
           let valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
-          value = " (" + valueForLevel + this.getCalc(effect) + ")"
+          value = " (" + valueForLevel + this.getCalc(effect) + explaination + ")"
         } else {
-          value = " (" + minValue + this.getCalc(effect) + ")"
+          value = " (" + minValue + this.getCalc(effect) + explaination + ")"
         }
       }
     }
@@ -396,10 +396,10 @@ export class SkillService {
         html = this.getChance(effect, false) + " auto-restore" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "POISON_ATK" :
-        html = this.getChance(effect) + " poison" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " poison" + this.getValue(skill, effect, true, " damage") + this.getTurns(effect)
       break
       case "BLIND_ATK" :
-        html = this.getChance(effect) + " blind" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " blind" + this.getValue(skill, effect, true, " reduced accuracy") + this.getTurns(effect)
       break
       case "SLEEP_ATK" :
         html = this.getChance(effect) + " sleep" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -408,7 +408,7 @@ export class SkillService {
         html = this.getChance(effect) + " silence" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "PARALYZE_ATK" :
-        html = this.getChance(effect) + " paralyze" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " paralyze" + this.getValue(skill, effect, true, " chance of paralysis") + this.getTurns(effect)
       break
       case "CONFUSION_ATK" :
         html = this.getChance(effect) + " confusion" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -423,10 +423,10 @@ export class SkillService {
         html = this.getChance(effect) + " toad" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "HASTE_ATK" :
-        html = this.getChance(effect, false) + " haste" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " haste" + this.getValue(skill, effect, true, " increased speed") + this.getTurns(effect)
       break
       case "SLOW_ATK" :
-        html = this.getChance(effect) + " slow" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " slow" + this.getValue(skill, effect, true, " reduced speed") + this.getTurns(effect)
       break
       case "STOP_ATK" :
         html = this.getChance(effect) + " stop" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -444,16 +444,16 @@ export class SkillService {
         html = this.getChance(effect) + " berserk" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "DOOM_ATK" :
-        html = this.getChance(effect) + " doom" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect) + " doom" + this.getValue(skill, effect, true, " turns before death") + this.getTurns(effect)
       break
       case "REVIVE_ATK" :
-        html = this.getChance(effect, false) + " to revive" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " to revive" + this.getValue(skill, effect, true, " HP regained") + this.getTurns(effect)
       break
       case "PROTECT_ATK" :
-        html = this.getChance(effect, false) + " protect" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " protect" + this.getValue(skill, effect, true, " reduced physical damage") + this.getTurns(effect)
       break
       case "SHELL_ATK" :
-        html = this.getChance(effect, false) + " shell" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " shell" + this.getValue(skill, effect, true, " reduced magical damage") + this.getTurns(effect)
       break
       case "FLOAT_ATK" :
         html = this.getChance(effect, false) + " float" + this.getValue(skill, effect) + this.getTurns(effect)
