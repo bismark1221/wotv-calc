@@ -19356,6 +19356,86 @@
       "unitId": "UN_LW_P_DRND"
     }
   },
+  "AF_ARM_LW_LUCA_1": {
+    "names": {
+      "en": "Bewitching Boots"
+    },
+    "slug": "bewitching-boots",
+    "stats": {
+      "HP": {
+        "min": 142,
+        "max": 142
+      },
+      "DEF": {
+        "min": 5,
+        "max": 5
+      },
+      "AGI": {
+        "min": 7,
+        "max": 7
+      },
+      "EVADE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ARM_LW_LUCA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_ARM_LW_LUCA_1_1",
+            "fr": "SK_ARM_LW_LUCA_1_1"
+          },
+          "dataId": "SK_ARM_LW_LUCA_1_1",
+          "effects": [
+            {
+              "type": "RANGE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "turn": 3
+            },
+            {
+              "type": "AGI",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "sk_arm_lw_luca_1_1",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_023",
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_LUCA"
+    }
+  },
   "AF_SWO_LW_MONT_2": {
     "names": {
       "en": "Lion Sword",
@@ -20214,6 +20294,57 @@
     ],
     "rarity": "UR",
     "image": "lapswpn_swo_010",
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_GUN_LW_LUCA_2": {
+    "names": {
+      "en": "Bewitching Gun"
+    },
+    "slug": "bewitching-gun",
+    "stats": {
+      "HP": {
+        "min": 7,
+        "max": 137
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 13
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_LUCA_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_gun_007",
     "acquisition": {
       "type": "Unknown"
     }
