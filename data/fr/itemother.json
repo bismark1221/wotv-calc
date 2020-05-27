@@ -1585,6 +1585,10 @@
             "value": "Boutique ordinaire / Expédition chocobo"
         },
         {
+            "key": "IT_PI_LW_DRND",
+            "value": "Boutique ordinaire / Boutique surprise / Expédition chocobo"
+        },
+        {
             "key": "IT_PI_LW_GLMS",
             "value": "Boutique ordinaire / Boutique surprise / Expédition chocobo"
         },
@@ -1635,6 +1639,10 @@
         {
             "key": "IT_PI_LW_KTON",
             "value": "Boutique ordinaire / Boutique surprise / Expédition chocobo"
+        },
+        {
+            "key": "IT_PI_LW_MRND",
+            "value": "Boutique ordinaire / Boutique surprise / Expédition chocobo / Boutique d'échange des médailles d'âme UR"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -1866,6 +1874,14 @@
         },
         {
             "key": "IT_SB_AW_ODIN_R3",
+            "value": ""
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R2",
+            "value": "Le repaire de la bête - Combat contre la Reine Lamia"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R3",
             "value": ""
         },
         {
@@ -2585,6 +2601,10 @@
             "value": ""
         },
         {
+            "key": "IT_EC_SUMMON_05_B",
+            "value": ""
+        },
+        {
             "key": "IT_EC_FFT_1",
             "value": ""
         },
@@ -2630,6 +2650,10 @@
         },
         {
             "key": "IT_US_G_V_SSR_UR_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_GL_G_V_SSR_UR_01",
             "value": ""
         },
         {
@@ -2798,7 +2822,7 @@
         },
         {
             "key": "IT_VPI_LW_ODIN",
-            "value": "Boutique d'échange des médailles de vision UR"
+            "value": "Boutique ordinaire / Boutique d'échange des médailles de vision UR"
         },
         {
             "key": "IT_VPI_LW_IGNT",
@@ -2814,11 +2838,11 @@
         },
         {
             "key": "IT_VPI_LW_SHIV",
-            "value": "Boutique d'échange des médailles de vision UR"
+            "value": "Boutique ordinaire / Boutique d'échange des médailles de vision UR"
         },
         {
             "key": "IT_VPI_LW_RAMU",
-            "value": "Boutique d'échange des médailles de vision UR"
+            "value": "Boutique ordinaire / Boutique d'échange des médailles de vision UR"
         },
         {
             "key": "IT_VPI_LW_FAMILY",
@@ -2847,6 +2871,14 @@
         {
             "key": "IT_VPI_FF14_MV2",
             "value": ""
+        },
+        {
+            "key": "IT_VPI_LW_LAMA_01",
+            "value": "Boutique ordinaire / Boutique d'échange des médailles de vision MR"
+        },
+        {
+            "key": "IT_VPI_LW_GUARD",
+            "value": "Boutique ordinaire / Boutique d'échange des médailles de vision MR"
         },
         {
             "key": "IT_VPI_LW_CACT",
@@ -3027,6 +3059,46 @@
         {
             "key": "IT_GU_EXP_S1_03",
             "value": "Boutique d'échange des médailles de guilde"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_1",
+            "value": ""
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_2",
+            "value": ""
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_4",
+            "value": ""
+        },
+        {
+            "key": "IT_PI_LW_LUCA",
+            "value": "Boutique ordinaire / Boutique surprise / Expédition chocobo"
+        },
+        {
+            "key": "IT_JB_MM_WGN",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_WGN_2",
+            "value": "Boutique d'échange des médailles d'âme R"
+        },
+        {
+            "key": "IT_JB_MM_WGN_3",
+            "value": "Boutique d'échange des médailles d'âme SR"
+        },
+        {
+            "key": "IT_JB_MM_WGN_4",
+            "value": "Boutique d'échange des médailles d'âme MR"
+        },
+        {
+            "key": "IT_JB_MM_WGN_5",
+            "value": "Boutique d'échange des médailles d'âme UR"
         }
     ]
 }

@@ -283,6 +283,7 @@ export class EquipmentService {
     this.initiateSavedEquipment(customData)
     this.updateMaxStat()
 
+    this.changeLevel()
     this.changeUpgrade()
     this.changeGrow()
 
@@ -402,6 +403,24 @@ export class EquipmentService {
         this.equipment.stats[statType].selected = this.equipment.tableStats[statType][this.equipment.tableStats[statType].length - 1]
       }
     })
+  }
+
+  changeLevel(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment
+    }
+
+    if (this.equipment.growIds.length == 1) {
+      Object.keys(this.equipment.stats).forEach(statType => {
+        let minValue = this.equipment.stats[statType].min
+        let maxValue = this.equipment.stats[statType].max
+        this.equipment.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.equipment.maxLevel - 1) * (this.equipment.level - 1)))
+      })
+    }
+
+    if (this.equipment.skill) {
+      this.changeSkillLevel()
+    }
   }
 
   changeSkillLevel(equipment = null) {

@@ -24216,7 +24216,7 @@
             "mainSkill": false,
             "names": {
               "en": "Quicken",
-              "fr": "Rapide "
+              "fr": "Accélération"
             },
             "slug": "quicken",
             "cost": {
@@ -45826,7 +45826,7 @@
             "mainSkill": true,
             "names": {
               "en": "Quicken",
-              "fr": "Rapide "
+              "fr": "Accélération"
             },
             "slug": "quicken",
             "cost": {
@@ -76939,7 +76939,7 @@
             "mainSkill": true,
             "names": {
               "en": "Quicken",
-              "fr": "Rapide "
+              "fr": "Accélération"
             },
             "slug": "quicken",
             "cost": {
@@ -88144,7 +88144,7 @@
             "mainSkill": false,
             "names": {
               "en": "Quicken",
-              "fr": "Rapide "
+              "fr": "Accélération"
             },
             "slug": "quicken",
             "cost": {
@@ -115114,7 +115114,8 @@
   "UN_LW_P_MRND": {
     "dataId": "UN_LW_P_MRND",
     "names": {
-      "en": "Miranda"
+      "en": "Miranda",
+      "fr": "Miranda"
     },
     "rarity": "UR",
     "jobs": [
@@ -116908,7 +116909,7 @@
             "mainSkill": false,
             "names": {
               "en": "Quicken",
-              "fr": "Rapide "
+              "fr": "Accélération"
             },
             "slug": "quicken",
             "cost": {
@@ -117293,7 +117294,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Red Jacket"
+        "en": "Red Jacket",
+        "fr": "Veste rouge"
       },
       "stats": {
         "HP": 482,
@@ -117352,7 +117354,8 @@
   "UN_LW_P_DRND": {
     "dataId": "UN_LW_P_DRND",
     "names": {
-      "en": "Dorando"
+      "en": "Dorando",
+      "fr": "Dorando"
     },
     "rarity": "MR",
     "jobs": [
@@ -119446,7 +119449,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -119469,7 +119473,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Slaughter Axe"
+        "en": "Slaughter Axe",
+        "fr": "Hache massacrante"
       },
       "stats": {
         "HP": 68,
@@ -119507,7 +119512,8 @@
   "UN_LW_P_LUCA": {
     "dataId": "UN_LW_P_LUCA",
     "names": {
-      "en": "Lu'Cia"
+      "en": "Lu'Cia",
+      "fr": "Lu'Cia"
     },
     "rarity": "UR",
     "jobs": [
@@ -119667,7 +119673,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Split Shot"
+              "en": "Split Shot",
+              "fr": "Tir perçant"
             },
             "slug": "split-shot",
             "cost": {
@@ -119753,7 +119760,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Rapid Fire"
+              "en": "Rapid Fire",
+              "fr": "Tir rapide"
             },
             "slug": "rapid-fire",
             "cost": {
@@ -119881,7 +119889,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "Missile Mastery"
+              "en": "Missile Mastery",
+              "fr": "Maîtrise balistique"
             },
             "slug": "missile-mastery",
             "maxLevel": 20
@@ -119913,7 +119922,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "Tune-Up"
+              "en": "Tune-Up",
+              "fr": "Ajustement"
             },
             "slug": "tune-up",
             "maxLevel": 20
@@ -119947,7 +119957,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Smokescreen"
+              "en": "Smokescreen",
+              "fr": "Rideau de fumée"
             },
             "slug": "smokescreen",
             "cost": {
@@ -120071,7 +120082,8 @@
             "type": "counter",
             "mainSkill": false,
             "names": {
-              "en": "Predictive Fire"
+              "en": "Predictive Fire",
+              "fr": "Embrasement prévisible"
             },
             "slug": "predictive-fire",
             "maxLevel": 20,
@@ -120112,7 +120124,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Horizontal Shot"
+              "en": "Horizontal Shot",
+              "fr": "Tir horizontal"
             },
             "slug": "horizontal-shot",
             "cost": {
@@ -120155,7 +120168,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Stun Shot"
+              "en": "Stun Shot",
+              "fr": "Tir paralysant"
             },
             "slug": "stun-shot",
             "cost": {
@@ -120740,7 +120754,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Dual Trigger"
+              "en": "Dual Trigger",
+              "fr": "Gâchette impitoyable"
             },
             "slug": "dual-trigger",
             "cost": {
@@ -120896,7 +120911,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Quadruple Shot"
+              "en": "Quadruple Shot",
+              "fr": "Quadruple tir"
             },
             "slug": "quadruple-shot",
             "cost": {
@@ -121078,7 +121094,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Firing Stance"
+              "en": "Firing Stance",
+              "fr": "En joue"
             },
             "slug": "firing-stance",
             "cost": {
@@ -121568,7 +121585,7 @@
     "limit": {
       "names": {
         "en": "Sadistic Dance",
-        "fr": "Compétence de Lu'Cia"
+        "fr": "Danse sadique"
       },
       "effects": [
         {
@@ -121612,7 +121629,8 @@
     },
     "attack": {
       "names": {
-        "en": "Normal Attack"
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
       },
       "effects": [],
       "dataId": "SK_LW_WGN_ATK",
@@ -121639,7 +121657,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -121664,7 +121683,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Bewitching Boots"
+        "en": "Bewitching Boots",
+        "fr": "Bottes ensorcelées"
       },
       "stats": {
         "HP": 142,

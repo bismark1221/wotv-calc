@@ -52,6 +52,10 @@ export class BuilderEquipmentComponent implements OnInit {
     this.equipmentService.changeGrow(this.equipment)
   }
 
+  changeLevel() {
+    this.equipmentService.changeLevel(this.equipment)
+  }
+
   changeSkillLevel() {
     this.equipmentService.changeSkillLevel(this.equipment)
   }

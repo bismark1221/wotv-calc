@@ -1734,7 +1734,7 @@
         },
         {
             "key": "SK_LW_TIM_M_4",
-            "value": "Rapide "
+            "value": "Accélération"
         },
         {
             "key": "SK_LW_TIM_M_3_INIT",
@@ -1782,7 +1782,7 @@
         },
         {
             "key": "SK_LW_TIM_M_4_SUB",
-            "value": "Rapide "
+            "value": "Accélération"
         },
         {
             "key": "SK_LW_TIM_M_3",
@@ -2203,6 +2203,74 @@
         {
             "key": "SK_FFT_ORND_P_2",
             "value": "Aguerri"
+        },
+        {
+            "key": "SK_LW_WGN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_WGN_M_1",
+            "value": "En joue"
+        },
+        {
+            "key": "SK_LW_WGN_M_2",
+            "value": "Quadruple tir"
+        },
+        {
+            "key": "SK_LW_WGN_M_3",
+            "value": "Gâchette impitoyable"
+        },
+        {
+            "key": "SK_LW_WGN_S_1_INIT",
+            "value": "Tir perçant"
+        },
+        {
+            "key": "SK_LW_WGN_S_2_INIT",
+            "value": "Tir rapide"
+        },
+        {
+            "key": "SK_LW_WGN_S_3",
+            "value": "Rideau de fumée"
+        },
+        {
+            "key": "SK_LW_WGN_S_4",
+            "value": "Tir paralysant"
+        },
+        {
+            "key": "SK_LW_WGN_S_5",
+            "value": "Tir horizontal"
+        },
+        {
+            "key": "SK_LW_WGN_R_1",
+            "value": "Embrasement prévisible"
+        },
+        {
+            "key": "SK_LW_WGN_P_1",
+            "value": "Maîtrise balistique"
+        },
+        {
+            "key": "SK_LW_WGN_P_2",
+            "value": "Ajustement"
+        },
+        {
+            "key": "SK_LW_WGN_S_1",
+            "value": "Tir spirituel"
+        },
+        {
+            "key": "SK_LW_WGN_S_2",
+            "value": "Tir rapide"
+        },
+        {
+            "key": "SK_LW_WGN_M_1_SUB",
+            "value": "En joug"
+        },
+        {
+            "key": "SK_LW_WGN_M_2_SUB",
+            "value": "Quadruple tir"
+        },
+        {
+            "key": "SK_LW_WGN_M_3_SUB",
+            "value": "Gâchette impitoyable"
         },
         {
             "key": "SK_LW_TU_BLM_ICE",
@@ -2717,6 +2785,30 @@
             "value": "Magie impure / Toxine X"
         },
         {
+            "key": "SK_LAMA_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LAMA_M_01",
+            "value": "Appâter"
+        },
+        {
+            "key": "SK_LAMA_M_01_MAN",
+            "value": "Appâter"
+        },
+        {
+            "key": "SK_LAMA_M_02",
+            "value": "Cillement"
+        },
+        {
+            "key": "SK_LAMA_M_03",
+            "value": "Queue ensorceleuse"
+        },
+        {
+            "key": "SK_GL_LAMA_M_03",
+            "value": "Queue ensorceleuse"
+        },
+        {
             "key": "SK_IFRT_ATK",
             "value": "Attaque normale"
         },
@@ -2826,7 +2918,7 @@
         },
         {
             "key": "SK_ODIN_M_02",
-            "value": "Invoquer Einherjar"
+            "value": "Invoque Einherjar"
         },
         {
             "key": "SK_ODIN_M_03",
@@ -3033,14 +3125,6 @@
             "value": "Lumière éclatante+"
         },
         {
-            "key": "SK_LB_LW_LUCA",
-            "value": "Compétence de Lu'Cia"
-        },
-        {
-            "key": "SK_LB_LW_LUCA_B",
-            "value": "Compétence de Lu'Cia +"
-        },
-        {
             "key": "SK_LB_LW_YERM",
             "value": "Hache viking"
         },
@@ -3055,6 +3139,14 @@
         {
             "key": "SK_LB_FFT_ORND",
             "value": "Tech. d'épée : Dieu foudroyant"
+        },
+        {
+            "key": "SK_LB_LW_LUCA",
+            "value": "Danse sadique"
+        },
+        {
+            "key": "SK_LB_LW_LUCA_B",
+            "value": "Danse sadique +"
         },
         {
             "key": "SK_SMN_IFRT",
@@ -3103,6 +3195,10 @@
         {
             "key": "SK_SMN_ZUUU",
             "value": "Grand tourbillon"
+        },
+        {
+            "key": "SK_SMN_LAMA",
+            "value": "Queue ensorceleuse"
         },
         {
             "key": "SK_SMN_OGRE",
@@ -3437,6 +3533,14 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_DRND",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_P_LUCA",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -3705,6 +3809,10 @@
             "value": ""
         },
         {
+            "key": "SK_AXE_LW_DRND_1_1",
+            "value": ""
+        },
+        {
             "key": "SK_ARM_LW_CMLO_1_1",
             "value": ""
         },
@@ -3934,6 +4042,22 @@
         },
         {
             "key": "SK_VC_LW_NEWYEAR_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LAMA_01_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LAMA_01_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUARD_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUARD_GSAW",
             "value": ""
         },
         {
@@ -4393,6 +4517,22 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_LAMA_01_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LAMA_01_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUARD_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUARD_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_CACT_P",
             "value": ""
         },
@@ -4734,11 +4874,11 @@
         },
         {
             "key": "SK_BTL_CRI_1_999_U",
-            "value": "Aug. Coup critique 1 - 999"
+            "value": "Aug. Coups critiques 1 - 999"
         },
         {
             "key": "SK_BTL_CRIHIT_1_999_U",
-            "value": "Aug. précision de coup critique 1 - 999"
+            "value": "Aug. précision de coups critiques 1 - 999"
         },
         {
             "key": "SK_BTL_CRIAVOI_1_999_U",
@@ -4754,11 +4894,11 @@
         },
         {
             "key": "SK_BTL_CRI_1_999_D",
-            "value": "Réduit Coup critique 1 - 999"
+            "value": "Réduit Coups critiques 1 - 999"
         },
         {
             "key": "SK_BTL_CRIHIT_1_999_D",
-            "value": "Réduit précision de coup critique 1 - 999"
+            "value": "Réduit précision de coups critiques 1 - 999"
         },
         {
             "key": "SK_BTL_CRIAVOI_1_999_D",

@@ -73,14 +73,19 @@
       </tr>
       <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
         <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-          <select [(ngModel)]="equipment.level" (ngModelChange)="changeSkillLevel()">
+          <select [(ngModel)]="equipment.level" (ngModelChange)="changeLevel()">
             <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
           </select> / {{ equipment.maxLevel }}
         </td>
         <td *ngFor="let statType of equipment.statsTypes">
-          <select [(ngModel)]="equipment.stats[statType].selected">
-            <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
-          </select> / {{ equipment.tableStats[statType][equipment.tableStats[statType].length - 1] }}
+          <span *ngIf="equipment.growIds.length > 1">
+            <select [(ngModel)]="equipment.stats[statType].selected">
+              <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
+            </select>
+          </span>
+          <span *ngIf="equipment.growIds.length == 1">
+            {{ equipment.stats[statType].selected }}
+          </span> / {{ equipment.tableStats[statType][equipment.tableStats[statType].length - 1] }}
         </td>
       </tr>
       <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">
