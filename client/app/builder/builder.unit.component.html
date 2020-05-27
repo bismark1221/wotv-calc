@@ -112,7 +112,7 @@
             </div>
           </div>
 
-          <div *ngIf="unit && unit.lb < 2">
+          <div *ngIf="unit && (unit.lb < 2 || !unit.lb)">
             <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
           </div>
         </td>
@@ -139,7 +139,7 @@
             </div>
           </div>
 
-          <div *ngIf="unit && unit.lb < 4">
+          <div *ngIf="unit && (unit.lb < 4 || !unit.lb)">
             <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
           </div>
         </td>
