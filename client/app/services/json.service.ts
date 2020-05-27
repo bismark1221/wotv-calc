@@ -1676,21 +1676,28 @@ export class JsonService {
         })
       }
 
-      let lastSkillId = [];
       let skills = [];
-      if (this[this.version].equipments[dataId].skl1) {
-        for (let j = 0; j < this[this.version].equipments[dataId].skl1.length; j++) {
-          if (lastSkillId[j] !== this[this.version].equipments[dataId].skl1[j]) {
-            let skill = {
-              names: {},
-              dataId: this[this.version].equipments[dataId].skl1[j],
-              effects: [],
-              type: this.slots[this[this.version].skills[this[this.version].equipments[dataId].skl1[j]].s_buffs || this[this.version].skills[this[this.version].equipments[dataId].skl1[j]].type === 6 ? 3 : 1]
+      let countSkill = 0;
+      let skillsPos = {};
+      for (let i = 1; i <= 5; i++) {
+        if (this[this.version].equipments[dataId]['skl' + i]) {
+          this[this.version].equipments[dataId]['skl' + i].forEach(skillId => {
+            if (typeof(skillsPos[skillId]) !== "number") {
+              let skill = {
+                names: {},
+                dataId: skillId,
+                effects: [],
+                type: this.slots[this[this.version].skills[skillId].s_buffs || this[this.version].skills[skillId].type === 6 ? 3 : 1],
+                upgrade: [i]
+              }
+              this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
+              skills.push(skill)
+              skillsPos[skillId] = countSkill
+              countSkill++
+            } else {
+              skills[skillsPos[skillId]].upgrade.push(i)
             }
-            this.updateSkill(this[this.version].wotvEquipments[rType], skill, this[this.version].equipments[dataId].skl1[j]);
-            skills.push(skill)
-            lastSkillId[j] = this[this.version].equipments[dataId].skl1[j]
-          }
+          })
         }
       }
 

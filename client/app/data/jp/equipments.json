@@ -118,6 +118,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_swo_007_1",
           "maxLevel": 50
         }
@@ -261,6 +268,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -280,6 +294,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -299,6 +320,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -318,6 +346,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -337,6 +372,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -483,6 +525,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -502,6 +551,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -521,6 +577,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -540,6 +603,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -559,6 +629,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -704,6 +781,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "mianrino-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "眠りの剣"
+          },
+          "dataId": "SK_LW_SWO_003_5",
+          "effects": [
+            {
+              "type": "SLEEP_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "mianrino-jian",
           "maxLevel": 50
         }
@@ -723,6 +826,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "mianrino-jian",
           "maxLevel": 50
         },
@@ -740,7 +849,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "眠りの剣"
+          },
+          "dataId": "SK_LW_SWO_003_5",
+          "effects": [
+            {
+              "type": "SLEEP_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "mianrino-jian",
           "maxLevel": 50
         }
       ],
@@ -759,6 +895,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "mianrino-jian",
           "maxLevel": 50
         },
@@ -776,7 +918,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "眠りの剣"
+          },
+          "dataId": "SK_LW_SWO_003_5",
+          "effects": [
+            {
+              "type": "SLEEP_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "mianrino-jian",
           "maxLevel": 50
         }
       ],
@@ -795,6 +964,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "mianrino-jian",
           "maxLevel": 50
         },
@@ -812,7 +987,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "眠りの剣"
+          },
+          "dataId": "SK_LW_SWO_003_5",
+          "effects": [
+            {
+              "type": "SLEEP_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "mianrino-jian",
           "maxLevel": 50
         }
       ],
@@ -831,6 +1033,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "mianrino-jian",
           "maxLevel": 50
         },
@@ -848,7 +1056,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "眠りの剣"
+          },
+          "dataId": "SK_LW_SWO_003_5",
+          "effects": [
+            {
+              "type": "SLEEP_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "mianrino-jian",
           "maxLevel": 50
         }
       ],
@@ -867,6 +1102,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "mianrino-jian",
           "maxLevel": 50
         },
@@ -884,7 +1125,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "眠りの剣"
+          },
+          "dataId": "SK_LW_SWO_003_5",
+          "effects": [
+            {
+              "type": "SLEEP_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 4
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "mianrino-jian",
           "maxLevel": 50
         }
       ]
@@ -1029,6 +1297,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "aisuburando",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "アイスブランド"
+          },
+          "dataId": "SK_LW_SWO_004_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "aisuburando",
           "maxLevel": 50
         }
@@ -1048,6 +1342,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "aisuburando",
           "maxLevel": 50
         },
@@ -1065,7 +1365,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "アイスブランド"
+          },
+          "dataId": "SK_LW_SWO_004_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "aisuburando",
           "maxLevel": 50
         }
       ],
@@ -1084,6 +1411,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "aisuburando",
           "maxLevel": 50
         },
@@ -1101,7 +1434,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "アイスブランド"
+          },
+          "dataId": "SK_LW_SWO_004_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "aisuburando",
           "maxLevel": 50
         }
       ],
@@ -1120,6 +1480,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "aisuburando",
           "maxLevel": 50
         },
@@ -1137,7 +1503,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "アイスブランド"
+          },
+          "dataId": "SK_LW_SWO_004_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "aisuburando",
           "maxLevel": 50
         }
       ],
@@ -1156,6 +1549,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "aisuburando",
           "maxLevel": 50
         },
@@ -1173,7 +1572,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "アイスブランド"
+          },
+          "dataId": "SK_LW_SWO_004_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "aisuburando",
           "maxLevel": 50
         }
       ],
@@ -1192,6 +1618,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "aisuburando",
           "maxLevel": 50
         },
@@ -1209,7 +1641,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "アイスブランド"
+          },
+          "dataId": "SK_LW_SWO_004_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "aisuburando",
           "maxLevel": 50
         }
       ]
@@ -1354,7 +1813,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_swo_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SWO_005_5"
+          },
+          "dataId": "SK_LW_SWO_005_5",
+          "effects": [
+            {
+              "type": "FIRE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_swo_005_5",
           "maxLevel": 50
         }
       ]
@@ -1496,6 +1981,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "sangono-jian",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "sangono-jian",
           "maxLevel": 50
         }
@@ -1515,6 +2026,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sangono-jian",
           "maxLevel": 50
         },
@@ -1532,7 +2049,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sangono-jian",
           "maxLevel": 50
         }
       ],
@@ -1551,6 +2095,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sangono-jian",
           "maxLevel": 50
         },
@@ -1568,7 +2118,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sangono-jian",
           "maxLevel": 50
         }
       ],
@@ -1587,6 +2164,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sangono-jian",
           "maxLevel": 50
         },
@@ -1604,7 +2187,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sangono-jian",
           "maxLevel": 50
         }
       ],
@@ -1623,6 +2233,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sangono-jian",
           "maxLevel": 50
         },
@@ -1640,7 +2256,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sangono-jian",
           "maxLevel": 50
         }
       ],
@@ -1659,6 +2302,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sangono-jian",
           "maxLevel": 50
         },
@@ -1676,7 +2325,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "サンゴの剣"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sangono-jian",
           "maxLevel": 50
         }
       ]
@@ -1884,6 +2560,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -1903,6 +2586,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -1922,6 +2612,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -1941,6 +2638,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -1960,6 +2664,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -2102,6 +2813,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -2121,6 +2839,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -2140,6 +2865,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -2159,6 +2891,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -2178,6 +2917,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -2259,7 +3005,112 @@
       }
     },
     "skills": [
-      []
+      [
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_2"
+          },
+          "dataId": "SK_FFT_SWO_002_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            2
+          ],
+          "slug": "sk_fft_swo_002_2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_3"
+          },
+          "dataId": "SK_FFT_SWO_002_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            3
+          ],
+          "slug": "sk_fft_swo_002_3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_4"
+          },
+          "dataId": "SK_FFT_SWO_002_4",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            4
+          ],
+          "slug": "sk_fft_swo_002_4",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_5"
+          },
+          "dataId": "SK_FFT_SWO_002_5",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_swo_002_5",
+          "maxLevel": 50
+        }
+      ]
     ],
     "rarity": "UR",
     "image": "fft0wpn_swo_002",
@@ -2454,6 +3305,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -2473,6 +3331,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -2492,6 +3357,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -2511,6 +3383,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -2530,6 +3409,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -2666,6 +3552,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -2685,6 +3578,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -2704,6 +3604,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -2723,6 +3630,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -2742,6 +3656,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -2878,6 +3799,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -2897,6 +3825,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -2916,6 +3851,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -2935,6 +3877,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -2954,6 +3903,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-8",
           "maxLevel": 50
         }
@@ -3068,6 +4024,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -3087,6 +4050,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -3106,6 +4076,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -3125,6 +4102,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -3144,6 +4128,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -3235,6 +4226,10 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2
+          ],
           "slug": "kurimuzonseiba",
           "maxLevel": 50
         },
@@ -3252,7 +4247,135 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            2
+          ],
+          "slug": "zhan-ji-gong-ji-li-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "クリムゾンセイバー"
+          },
+          "dataId": "SK_LW_BSW_011_3",
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": -15,
+              "maxValue": -15,
+              "calcType": "fixe",
+              "rate": 25,
+              "turn": 3
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            3,
+            4
+          ],
+          "slug": "kurimuzonseiba",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            3
+          ],
+          "slug": "zhan-ji-gong-ji-li-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+8"
+          },
+          "dataId": "SK_LW_SLASH_4_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            4
+          ],
+          "slug": "zhan-ji-gong-ji-li-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "クリムゾンセイバー"
+          },
+          "dataId": "SK_LW_BSW_011_5",
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": -20,
+              "maxValue": -20,
+              "calcType": "fixe",
+              "rate": 25,
+              "turn": 3
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "kurimuzonseiba",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+15"
+          },
+          "dataId": "SK_LW_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
       ]
@@ -3446,6 +4569,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -3465,6 +4595,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -3484,6 +4621,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -3503,6 +4647,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -3522,6 +4673,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -3664,6 +4822,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -3683,6 +4848,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -3702,6 +4874,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -3721,6 +4900,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -3740,6 +4926,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -3878,6 +5071,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -3897,6 +5097,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -3916,6 +5123,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -3935,6 +5149,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -3954,6 +5175,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -4141,6 +5369,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -4160,6 +5395,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -4179,6 +5421,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -4198,6 +5447,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -4217,6 +5473,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -4355,6 +5618,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -4374,6 +5644,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -4393,6 +5670,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -4412,6 +5696,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -4431,6 +5722,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -4573,6 +5871,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -4592,6 +5897,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -4611,6 +5923,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -4630,6 +5949,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -4649,6 +5975,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -4837,6 +6170,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -4856,6 +6196,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -4875,6 +6222,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -4894,6 +6248,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -4913,6 +6274,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -5048,6 +6416,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -5067,6 +6442,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -5086,6 +6468,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -5105,6 +6494,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -5124,6 +6520,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -5259,6 +6662,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -5278,6 +6688,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -5297,6 +6714,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -5316,6 +6740,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -5335,6 +6766,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -5466,6 +6904,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "氷属性アビリティ攻撃UPパッシブ"
+          },
+          "dataId": "SK_LW_AF_ICE_PA_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
           "maxLevel": 50
         }
@@ -5485,6 +6949,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-2",
           "maxLevel": 50
         },
@@ -5502,6 +6973,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "氷属性アビリティ攻撃UPパッシブ"
+          },
+          "dataId": "SK_LW_AF_ICE_PA_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
           "maxLevel": 50
         }
@@ -5521,6 +7018,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-3",
           "maxLevel": 50
         },
@@ -5538,6 +7042,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "氷属性アビリティ攻撃UPパッシブ"
+          },
+          "dataId": "SK_LW_AF_ICE_PA_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
           "maxLevel": 50
         }
@@ -5557,6 +7087,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-5",
           "maxLevel": 50
         },
@@ -5574,6 +7111,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "氷属性アビリティ攻撃UPパッシブ"
+          },
+          "dataId": "SK_LW_AF_ICE_PA_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
           "maxLevel": 50
         }
@@ -5593,6 +7156,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-8",
           "maxLevel": 50
         },
@@ -5610,6 +7180,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "氷属性アビリティ攻撃UPパッシブ"
+          },
+          "dataId": "SK_LW_AF_ICE_PA_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
           "maxLevel": 50
         }
@@ -5629,6 +7225,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-15",
           "maxLevel": 50
         },
@@ -5646,6 +7249,32 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "氷属性アビリティ攻撃UPパッシブ"
+          },
+          "dataId": "SK_LW_AF_ICE_PA_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
           "slug": "bing-shu-xingabiritei-gong-jiuppatusibu",
           "maxLevel": 50
         }
@@ -5781,7 +7410,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_spe_006_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SPE_006_5"
+          },
+          "dataId": "SK_LW_SPE_006_5",
+          "effects": [
+            {
+              "type": "DRAGON_KILLER",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_spe_006_5",
           "maxLevel": 50
         }
       ],
@@ -5801,6 +7457,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_spe_006_1",
           "maxLevel": 50
         },
@@ -5818,7 +7480,35 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SPE_006_5"
+          },
+          "dataId": "SK_LW_SPE_006_5",
+          "effects": [
+            {
+              "type": "DRAGON_KILLER",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_spe_006_5",
           "maxLevel": 50
         }
       ],
@@ -5838,6 +7528,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_spe_006_1",
           "maxLevel": 50
         },
@@ -5855,7 +7551,35 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SPE_006_5"
+          },
+          "dataId": "SK_LW_SPE_006_5",
+          "effects": [
+            {
+              "type": "DRAGON_KILLER",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_spe_006_5",
           "maxLevel": 50
         }
       ],
@@ -5875,6 +7599,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_spe_006_1",
           "maxLevel": 50
         },
@@ -5892,7 +7622,35 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SPE_006_5"
+          },
+          "dataId": "SK_LW_SPE_006_5",
+          "effects": [
+            {
+              "type": "DRAGON_KILLER",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_spe_006_5",
           "maxLevel": 50
         }
       ],
@@ -5912,6 +7670,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_spe_006_1",
           "maxLevel": 50
         },
@@ -5929,7 +7693,35 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SPE_006_5"
+          },
+          "dataId": "SK_LW_SPE_006_5",
+          "effects": [
+            {
+              "type": "DRAGON_KILLER",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_spe_006_5",
           "maxLevel": 50
         }
       ],
@@ -5949,6 +7741,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_spe_006_1",
           "maxLevel": 50
         },
@@ -5966,7 +7764,35 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ci-tu-gong-ji-li-15",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_SPE_006_5"
+          },
+          "dataId": "SK_LW_SPE_006_5",
+          "effects": [
+            {
+              "type": "DRAGON_KILLER",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "percent",
+              "rate": 200
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_spe_006_5",
           "maxLevel": 50
         }
       ]
@@ -6155,6 +7981,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -6174,6 +8007,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -6193,6 +8033,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -6212,6 +8059,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -6231,6 +8085,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -6366,6 +8227,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -6385,6 +8253,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -6404,6 +8279,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -6423,6 +8305,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -6442,6 +8331,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -6581,6 +8477,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -6600,6 +8503,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -6619,6 +8529,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -6638,6 +8555,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -6657,6 +8581,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -6792,6 +8723,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -6811,6 +8749,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -6830,6 +8775,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -6849,6 +8801,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -6868,6 +8827,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -7056,6 +9022,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -7075,6 +9048,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -7094,6 +9074,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -7113,6 +9100,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -7132,6 +9126,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -7266,6 +9267,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -7285,6 +9293,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -7304,6 +9319,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -7323,6 +9345,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -7342,6 +9371,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -7476,6 +9512,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -7495,6 +9538,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -7514,6 +9564,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -7533,6 +9590,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -7552,6 +9616,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -7748,6 +9819,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -7767,6 +9845,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -7786,6 +9871,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -7805,6 +9897,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -7824,6 +9923,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -7963,6 +10069,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -7982,6 +10095,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -8001,6 +10121,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -8020,6 +10147,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -8039,6 +10173,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -8178,6 +10319,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -8197,6 +10345,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -8216,6 +10371,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -8235,6 +10397,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -8254,6 +10423,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -8448,6 +10624,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -8467,6 +10650,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -8486,6 +10676,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -8505,6 +10702,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -8524,6 +10728,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -8660,6 +10871,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -8679,6 +10897,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -8698,6 +10923,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -8717,6 +10949,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -8736,6 +10975,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -8876,6 +11122,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -8895,6 +11148,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -8914,6 +11174,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -8933,6 +11200,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -8952,6 +11226,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -9204,6 +11485,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -9223,6 +11511,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -9242,6 +11537,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -9261,6 +11563,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -9280,6 +11589,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -9403,7 +11719,50 @@
       }
     },
     "skills": [
-      [],
+      [
+        {
+          "names": {
+            "en": "ケアルラ"
+          },
+          "dataId": "SK_LW_ROD_004_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 90,
+              "maxValue": 120,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "slug": "kearura",
+          "cost": {
+            "type": "TP",
+            "value": 31
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
+          }
+        }
+      ],
       [
         {
           "names": {
@@ -9419,8 +11778,57 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "ケアルラ"
+          },
+          "dataId": "SK_LW_ROD_004_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 90,
+              "maxValue": 120,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "slug": "kearura",
+          "cost": {
+            "type": "TP",
+            "value": 31
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
+          }
         }
       ],
       [
@@ -9438,8 +11846,57 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "ケアルラ"
+          },
+          "dataId": "SK_LW_ROD_004_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 90,
+              "maxValue": 120,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "slug": "kearura",
+          "cost": {
+            "type": "TP",
+            "value": 31
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
+          }
         }
       ],
       [
@@ -9457,8 +11914,57 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "ケアルラ"
+          },
+          "dataId": "SK_LW_ROD_004_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 90,
+              "maxValue": 120,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "slug": "kearura",
+          "cost": {
+            "type": "TP",
+            "value": 31
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
+          }
         }
       ],
       [
@@ -9476,8 +11982,57 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-7",
           "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "ケアルラ"
+          },
+          "dataId": "SK_LW_ROD_004_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 90,
+              "maxValue": 120,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "slug": "kearura",
+          "cost": {
+            "type": "TP",
+            "value": 31
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
+          }
         }
       ],
       [
@@ -9495,8 +12050,57 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-13",
           "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "ケアルラ"
+          },
+          "dataId": "SK_LW_ROD_004_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 90,
+              "maxValue": 120,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "slug": "kearura",
+          "cost": {
+            "type": "TP",
+            "value": 31
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "time": {
+            "minValue": 120,
+            "maxValue": 320
+          }
         }
       ]
     ],
@@ -9638,6 +12242,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -9657,6 +12268,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -9676,6 +12294,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -9695,6 +12320,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -9714,6 +12346,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -9853,6 +12492,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -9872,6 +12518,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -9891,6 +12544,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -9910,6 +12570,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-10",
           "maxLevel": 50
         }
@@ -9929,6 +12596,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-20",
           "maxLevel": 50
         }
@@ -10122,6 +12796,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -10141,6 +12822,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -10160,6 +12848,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -10179,6 +12874,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -10198,6 +12900,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -10337,6 +13046,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -10356,6 +13072,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -10375,6 +13098,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -10394,6 +13124,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -10413,6 +13150,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -10552,6 +13296,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -10571,6 +13322,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -10590,6 +13348,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -10609,6 +13374,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -10628,6 +13400,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -10824,6 +13603,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -10843,6 +13629,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -10862,6 +13655,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -10881,6 +13681,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-6",
           "maxLevel": 50
         }
@@ -10900,6 +13707,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-12",
           "maxLevel": 50
         }
@@ -11038,6 +13852,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -11057,6 +13878,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -11076,6 +13904,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -11095,6 +13930,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-7",
           "maxLevel": 50
         }
@@ -11114,6 +13956,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-13",
           "maxLevel": 50
         }
@@ -11252,6 +14101,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-2",
           "maxLevel": 50
         }
@@ -11271,6 +14127,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-3",
           "maxLevel": 50
         }
@@ -11290,6 +14153,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-5",
           "maxLevel": 50
         }
@@ -11309,6 +14179,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-8",
           "maxLevel": 50
         }
@@ -11328,6 +14205,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-li-15",
           "maxLevel": 50
         }
@@ -11527,6 +14411,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -11546,6 +14437,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -11565,6 +14463,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -11584,6 +14489,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -11603,6 +14515,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-6",
           "maxLevel": 50
         }
@@ -11744,6 +14663,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -11763,6 +14689,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -11782,6 +14715,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -11801,6 +14741,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -11820,6 +14767,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-7",
           "maxLevel": 50
         }
@@ -11973,6 +14927,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -11992,6 +14953,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -12011,6 +14979,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -12030,6 +15005,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -12049,6 +15031,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-8",
           "maxLevel": 50
         }
@@ -12198,6 +15187,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -12217,6 +15213,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -12236,6 +15239,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -12255,6 +15265,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-5",
           "maxLevel": 50
         }
@@ -12274,6 +15291,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "da-ji-gong-ji-nai-xing-10",
           "maxLevel": 50
         }
@@ -12423,6 +15447,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -12442,6 +15473,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -12461,6 +15499,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -12480,6 +15525,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -12499,6 +15551,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-8",
           "maxLevel": 50
         }
@@ -12679,6 +15738,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -12698,6 +15764,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -12717,6 +15790,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -12736,6 +15816,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -12755,6 +15842,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-6",
           "maxLevel": 50
         }
@@ -12897,6 +15991,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -12916,6 +16017,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -12935,6 +16043,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -12954,6 +16069,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -12973,6 +16095,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-7",
           "maxLevel": 50
         }
@@ -13119,6 +16248,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -13138,6 +16274,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -13157,6 +16300,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -13176,6 +16326,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -13195,6 +16352,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-8",
           "maxLevel": 50
         }
@@ -13345,6 +16509,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -13364,6 +16535,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -13383,6 +16561,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -13402,6 +16587,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-5",
           "maxLevel": 50
         }
@@ -13421,6 +16613,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhan-ji-gong-ji-nai-xing-10",
           "maxLevel": 50
         }
@@ -13619,6 +16818,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
           "maxLevel": 50
         }
@@ -13638,6 +16844,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
           "maxLevel": 50
         }
@@ -13657,6 +16870,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
           "maxLevel": 50
         }
@@ -13676,6 +16896,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
           "maxLevel": 50
         }
@@ -13695,6 +16922,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-6",
           "maxLevel": 50
         }
@@ -13854,6 +17088,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
           "maxLevel": 50
         }
@@ -13873,6 +17114,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
           "maxLevel": 50
         }
@@ -13892,6 +17140,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
           "maxLevel": 50
         }
@@ -13911,6 +17166,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
           "maxLevel": 50
         }
@@ -13930,6 +17192,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-7",
           "maxLevel": 50
         }
@@ -14089,6 +17358,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
           "maxLevel": 50
         }
@@ -14108,6 +17384,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
           "maxLevel": 50
         }
@@ -14127,6 +17410,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
           "maxLevel": 50
         }
@@ -14146,6 +17436,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
           "maxLevel": 50
         }
@@ -14165,6 +17462,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-8",
           "maxLevel": 50
         }
@@ -14395,6 +17699,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -14414,6 +17725,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -14433,6 +17751,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -14452,6 +17777,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -14471,6 +17803,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-6",
           "maxLevel": 50
         }
@@ -14627,6 +17966,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -14646,6 +17992,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -14665,6 +18018,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -14684,6 +18044,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -14703,6 +18070,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-7",
           "maxLevel": 50
         }
@@ -14859,6 +18233,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -14878,6 +18259,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -14897,6 +18285,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -14916,6 +18311,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-4",
           "maxLevel": 50
         }
@@ -14935,6 +18337,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "mo-fa-gong-ji-nai-xing-8",
           "maxLevel": 50
         }
@@ -15095,6 +18504,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-1",
           "maxLevel": 50
         }
@@ -15114,6 +18530,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-2",
           "maxLevel": 50
         }
@@ -15133,6 +18556,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-3",
           "maxLevel": 50
         }
@@ -15152,6 +18582,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-5",
           "maxLevel": 50
         }
@@ -15171,6 +18608,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "she-ji-gong-ji-nai-xing-10",
           "maxLevel": 50
         }
@@ -15272,7 +18716,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_001_5"
+          },
+          "dataId": "SK_LW_RNG_001_5",
+          "effects": [
+            {
+              "type": "POISON_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_001_5",
           "maxLevel": 50
         }
       ]
@@ -15443,7 +18913,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_002_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_002_5"
+          },
+          "dataId": "SK_LW_RNG_002_5",
+          "effects": [
+            {
+              "type": "BRAVERY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_002_5",
           "maxLevel": 50
         }
       ],
@@ -15462,6 +18958,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_002_1",
           "maxLevel": 50
         },
@@ -15479,7 +18981,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_002_5"
+          },
+          "dataId": "SK_LW_RNG_002_5",
+          "effects": [
+            {
+              "type": "BRAVERY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_002_5",
           "maxLevel": 50
         }
       ],
@@ -15498,6 +19027,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_002_1",
           "maxLevel": 50
         },
@@ -15515,7 +19050,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_002_5"
+          },
+          "dataId": "SK_LW_RNG_002_5",
+          "effects": [
+            {
+              "type": "BRAVERY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_002_5",
           "maxLevel": 50
         }
       ],
@@ -15534,6 +19096,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_002_1",
           "maxLevel": 50
         },
@@ -15551,7 +19119,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_002_5"
+          },
+          "dataId": "SK_LW_RNG_002_5",
+          "effects": [
+            {
+              "type": "BRAVERY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_002_5",
           "maxLevel": 50
         }
       ],
@@ -15570,6 +19165,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_002_1",
           "maxLevel": 50
         },
@@ -15587,7 +19188,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_002_5"
+          },
+          "dataId": "SK_LW_RNG_002_5",
+          "effects": [
+            {
+              "type": "BRAVERY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_002_5",
           "maxLevel": 50
         }
       ],
@@ -15606,6 +19234,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_002_1",
           "maxLevel": 50
         },
@@ -15623,7 +19257,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-6",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_002_5"
+          },
+          "dataId": "SK_LW_RNG_002_5",
+          "effects": [
+            {
+              "type": "BRAVERY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_002_5",
           "maxLevel": 50
         }
       ]
@@ -15797,7 +19458,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_003_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_003_5"
+          },
+          "dataId": "SK_LW_RNG_003_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_003_5",
           "maxLevel": 50
         }
       ],
@@ -15816,6 +19503,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_003_1",
           "maxLevel": 50
         },
@@ -15833,7 +19526,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_003_5"
+          },
+          "dataId": "SK_LW_RNG_003_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_003_5",
           "maxLevel": 50
         }
       ],
@@ -15852,6 +19572,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_003_1",
           "maxLevel": 50
         },
@@ -15869,7 +19595,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_003_5"
+          },
+          "dataId": "SK_LW_RNG_003_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_003_5",
           "maxLevel": 50
         }
       ],
@@ -15888,6 +19641,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_003_1",
           "maxLevel": 50
         },
@@ -15905,7 +19664,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_003_5"
+          },
+          "dataId": "SK_LW_RNG_003_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_003_5",
           "maxLevel": 50
         }
       ],
@@ -15924,6 +19710,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_003_1",
           "maxLevel": 50
         },
@@ -15941,7 +19733,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_003_5"
+          },
+          "dataId": "SK_LW_RNG_003_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_003_5",
           "maxLevel": 50
         }
       ],
@@ -15960,6 +19779,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_003_1",
           "maxLevel": 50
         },
@@ -15977,7 +19802,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-7",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_003_5"
+          },
+          "dataId": "SK_LW_RNG_003_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_003_5",
           "maxLevel": 50
         }
       ]
@@ -16151,7 +20003,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_004_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_004_5"
+          },
+          "dataId": "SK_LW_RNG_004_5",
+          "effects": [
+            {
+              "type": "PARALYZE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_004_5",
           "maxLevel": 50
         }
       ],
@@ -16170,6 +20048,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_004_1",
           "maxLevel": 50
         },
@@ -16187,7 +20071,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_004_5"
+          },
+          "dataId": "SK_LW_RNG_004_5",
+          "effects": [
+            {
+              "type": "PARALYZE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_004_5",
           "maxLevel": 50
         }
       ],
@@ -16206,6 +20117,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_004_1",
           "maxLevel": 50
         },
@@ -16223,7 +20140,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_004_5"
+          },
+          "dataId": "SK_LW_RNG_004_5",
+          "effects": [
+            {
+              "type": "PARALYZE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_004_5",
           "maxLevel": 50
         }
       ],
@@ -16242,6 +20186,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_004_1",
           "maxLevel": 50
         },
@@ -16259,7 +20209,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_004_5"
+          },
+          "dataId": "SK_LW_RNG_004_5",
+          "effects": [
+            {
+              "type": "PARALYZE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_004_5",
           "maxLevel": 50
         }
       ],
@@ -16278,6 +20255,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_004_1",
           "maxLevel": 50
         },
@@ -16295,7 +20278,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_004_5"
+          },
+          "dataId": "SK_LW_RNG_004_5",
+          "effects": [
+            {
+              "type": "PARALYZE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_004_5",
           "maxLevel": 50
         }
       ],
@@ -16314,6 +20324,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_004_1",
           "maxLevel": 50
         },
@@ -16331,7 +20347,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_004_5"
+          },
+          "dataId": "SK_LW_RNG_004_5",
+          "effects": [
+            {
+              "type": "PARALYZE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_004_5",
           "maxLevel": 50
         }
       ]
@@ -16505,6 +20548,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_ftw_001_1",
           "maxLevel": 50
         }
@@ -16524,6 +20574,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_ftw_001_1",
           "maxLevel": 50
         },
@@ -16541,6 +20598,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
           "maxLevel": 50
         }
@@ -16560,6 +20624,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_ftw_001_1",
           "maxLevel": 50
         },
@@ -16577,6 +20648,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
           "maxLevel": 50
         }
@@ -16596,6 +20674,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_ftw_001_1",
           "maxLevel": 50
         },
@@ -16613,6 +20698,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
           "maxLevel": 50
         }
@@ -16632,6 +20724,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_ftw_001_1",
           "maxLevel": 50
         },
@@ -16649,6 +20748,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-5",
           "maxLevel": 50
         }
@@ -16668,6 +20774,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_lw_ftw_001_1",
           "maxLevel": 50
         },
@@ -16685,6 +20798,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-10",
           "maxLevel": 50
         }
@@ -16859,7 +20979,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_005_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_5"
+          },
+          "dataId": "SK_LW_RNG_005_5",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_005_5",
           "maxLevel": 50
         }
       ],
@@ -16878,6 +21024,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_005_1",
           "maxLevel": 50
         },
@@ -16895,7 +21047,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ming-zhong-lu-2",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_5"
+          },
+          "dataId": "SK_LW_RNG_005_5",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_005_5",
           "maxLevel": 50
         }
       ],
@@ -16914,6 +21093,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_005_1",
           "maxLevel": 50
         },
@@ -16931,7 +21116,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ming-zhong-lu-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_5"
+          },
+          "dataId": "SK_LW_RNG_005_5",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_005_5",
           "maxLevel": 50
         }
       ],
@@ -16950,6 +21162,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_005_1",
           "maxLevel": 50
         },
@@ -16967,7 +21185,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ming-zhong-lu-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_5"
+          },
+          "dataId": "SK_LW_RNG_005_5",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_005_5",
           "maxLevel": 50
         }
       ],
@@ -16986,6 +21231,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_005_1",
           "maxLevel": 50
         },
@@ -17003,7 +21254,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ming-zhong-lu-10",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_5"
+          },
+          "dataId": "SK_LW_RNG_005_5",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_005_5",
           "maxLevel": 50
         }
       ],
@@ -17022,6 +21300,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_rng_005_1",
           "maxLevel": 50
         },
@@ -17039,7 +21323,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "ming-zhong-lu-20",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_005_5"
+          },
+          "dataId": "SK_LW_RNG_005_5",
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_rng_005_5",
           "maxLevel": 50
         }
       ]
@@ -17210,7 +21521,33 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_fft_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_5"
+          },
+          "dataId": "SK_FFT_ACC_001_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -17229,6 +21566,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_fft_acc_001_1",
           "maxLevel": 50
         },
@@ -17246,7 +21589,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_5"
+          },
+          "dataId": "SK_FFT_ACC_001_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -17265,6 +21635,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_fft_acc_001_1",
           "maxLevel": 50
         },
@@ -17282,7 +21658,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_5"
+          },
+          "dataId": "SK_FFT_ACC_001_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -17301,6 +21704,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_fft_acc_001_1",
           "maxLevel": 50
         },
@@ -17318,7 +21727,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_5"
+          },
+          "dataId": "SK_FFT_ACC_001_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -17337,6 +21773,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_fft_acc_001_1",
           "maxLevel": 50
         },
@@ -17354,7 +21796,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-4",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_5"
+          },
+          "dataId": "SK_FFT_ACC_001_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -17373,6 +21842,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_fft_acc_001_1",
           "maxLevel": 50
         },
@@ -17390,7 +21865,34 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-8",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_FFT_ACC_001_5"
+          },
+          "dataId": "SK_FFT_ACC_001_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_fft_acc_001_5",
           "maxLevel": 50
         }
       ]
@@ -17971,7 +22473,39 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_acc_001_1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_5"
+          },
+          "dataId": "SK_LW_ACC_001_5",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -17996,6 +22530,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_acc_001_1",
           "maxLevel": 50
         },
@@ -18013,7 +22553,40 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-1",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_5"
+          },
+          "dataId": "SK_LW_ACC_001_5",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -18038,6 +22611,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_acc_001_1",
           "maxLevel": 50
         },
@@ -18055,7 +22634,40 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-20",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_5"
+          },
+          "dataId": "SK_LW_ACC_001_5",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -18080,6 +22692,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_acc_001_1",
           "maxLevel": 50
         },
@@ -18097,7 +22715,40 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-3",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_5"
+          },
+          "dataId": "SK_LW_ACC_001_5",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -18122,6 +22773,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_acc_001_1",
           "maxLevel": 50
         },
@@ -18139,7 +22796,40 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-5",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_5"
+          },
+          "dataId": "SK_LW_ACC_001_5",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_acc_001_5",
           "maxLevel": 50
         }
       ],
@@ -18164,6 +22854,12 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
           "slug": "sk_lw_acc_001_1",
           "maxLevel": 50
         },
@@ -18181,7 +22877,40 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-bi-lu-10",
+          "maxLevel": 50
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_001_5"
+          },
+          "dataId": "SK_LW_ACC_001_5",
+          "effects": [
+            {
+              "type": "STOP_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            },
+            {
+              "type": "SLOW_RES",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "slug": "sk_lw_acc_001_5",
           "maxLevel": 50
         }
       ]
@@ -18383,6 +23112,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_swo_lw_lils_1_1",
           "maxLevel": 1
         }
@@ -18461,6 +23197,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_bsw_lw_szrt_1_1",
           "maxLevel": 1
         }
@@ -18532,6 +23275,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_kat_lw_oooo_1_1",
           "maxLevel": 1
         }
@@ -18597,6 +23347,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_fis_lw_mrlk_1_1",
           "maxLevel": 1
         }
@@ -18661,6 +23418,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_spe_lw_ramd_1_1",
           "maxLevel": 1
         }
@@ -18727,6 +23491,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_spe_lw_lrnz_1_1",
           "maxLevel": 1
         }
@@ -18793,6 +23564,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_dag_lw_vstr_1_1",
           "maxLevel": 1
         }
@@ -18858,6 +23636,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_bow_lw_cley_1_1",
           "maxLevel": 1
         }
@@ -18925,6 +23710,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_gun_lw_riry_1_1",
           "maxLevel": 1
         }
@@ -18991,6 +23783,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_rod_lw_hlna_1_1",
           "maxLevel": 1
         }
@@ -19060,6 +23859,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_rod_lw_mgrt_1_1",
           "maxLevel": 1
         }
@@ -19129,6 +23935,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_rod_lw_pray_1_1",
           "maxLevel": 1
         }
@@ -19198,6 +24011,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_mac_lw_kadi_1_1",
           "maxLevel": 1
         }
@@ -19267,6 +24087,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_bow_lw_fina_1_1",
           "maxLevel": 1
         }
@@ -19338,6 +24165,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_nkn_lw_sdlx_1_1",
           "maxLevel": 1
         }
@@ -19404,6 +24238,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhong-yino-meng-gong",
           "cost": {
             "type": "TP",
@@ -19474,6 +24315,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "uoruobuhuirudo",
           "cost": {
             "type": "TP",
@@ -19561,6 +24409,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "hui-yanno-ren",
           "cost": {
             "type": "TP",
@@ -19646,6 +24501,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_bylo_1_1",
           "maxLevel": 1
         }
@@ -19743,6 +24605,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_vrid_1_1",
           "maxLevel": 1
         }
@@ -19829,6 +24698,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_naia_1_1",
           "maxLevel": 1
         }
@@ -19915,6 +24791,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_clt_lw_sevr_1_1",
           "maxLevel": 1
         }
@@ -20001,6 +24884,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_srjs_1_1",
           "maxLevel": 1
         }
@@ -20116,6 +25006,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "anarisisu",
           "cost": {
             "type": "TP",
@@ -20225,6 +25122,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "runavuavu",
           "cost": {
             "type": "TP",
@@ -20324,6 +25228,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_unii_1_1",
           "maxLevel": 1
         }
@@ -20413,6 +25324,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_vadm_1_1",
           "maxLevel": 1
         }
@@ -20502,6 +25420,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_phbe_1_1",
           "maxLevel": 1
         }
@@ -20751,6 +25676,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "piyurihuai",
           "cost": {
             "type": "TP",
@@ -20879,6 +25811,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "qi-shiheno-zhu-fu",
           "cost": {
             "type": "TP",
@@ -20987,6 +25926,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "wangno-hao-ling",
           "cost": {
             "type": "TP",
@@ -21103,6 +26049,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "huo-xing-kong",
           "cost": {
             "type": "TP",
@@ -21211,6 +26164,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "toraipurotekusiyon",
           "cost": {
             "type": "TP",
@@ -21322,6 +26282,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_scia_1_1",
           "maxLevel": 1
         }
@@ -21423,6 +26390,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_murm_1_1",
           "maxLevel": 1
         }
@@ -21524,6 +26498,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_lw_ryer_1_1",
           "maxLevel": 1
         }
@@ -21709,6 +26690,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "guake-sheng",
           "cost": {
             "type": "TP",
@@ -21917,6 +26905,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zhou-li-ji-zou",
           "cost": {
             "type": "TP",
@@ -22002,6 +26997,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_arm_ff14_tncr_1_1",
           "maxLevel": 1
         }
@@ -22088,6 +27090,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_rod_ff14_ystl_1_1",
           "maxLevel": 1
         }
@@ -22165,6 +27174,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "yong-xieno-fei-teng",
           "cost": {
             "type": "TP",
@@ -22260,6 +27276,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_swo_lw_nasr_1_1",
           "maxLevel": 1
         }
@@ -22344,6 +27367,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "iguzarutesiyon",
           "cost": {
             "type": "TP",
@@ -22516,6 +27546,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "kurisumasuhamoni",
           "cost": {
             "type": "TP",
@@ -22636,6 +27673,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "xu-xinno-xian-yu",
           "cost": {
             "type": "TP",
@@ -22687,6 +27731,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_hat_lw_whis_1_2",
           "maxLevel": 1
         }
@@ -22806,6 +27857,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "zao-quno-shu",
           "cost": {
             "type": "TP",
@@ -22912,6 +27970,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "tptakusu",
           "cost": {
             "type": "TP",
@@ -23012,6 +28077,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_swo_fft_gfgr_1_1",
           "maxLevel": 1
         }
@@ -23090,6 +28162,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "lei-shen-chen-dino-xing",
           "cost": {
             "type": "TP",
@@ -23176,6 +28255,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sem-lino-gu-wu",
           "cost": {
             "type": "TP",
@@ -23283,6 +28369,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_axe_lw_drnd_1_1",
           "maxLevel": 1
         }
@@ -23359,6 +28452,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "rimitutaohu",
           "cost": {
             "type": "TP",
@@ -23454,6 +28554,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_swo_lw_adld_1_1",
           "maxLevel": 1
         }
@@ -23538,6 +28645,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "yao-longno-tong",
           "cost": {
             "type": "TP",
@@ -23619,6 +28733,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_acc_lw_thla_1_1",
           "maxLevel": 1
         }
@@ -23732,6 +28853,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "weirino-ye-zhang",
           "cost": {
             "type": "TP",
@@ -23827,6 +28955,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_swo_lw_drio_1_1",
           "maxLevel": 1
         }
@@ -23983,6 +29118,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "shou-hu-zheno-dou-qi",
           "cost": {
             "type": "TP",
@@ -24095,6 +29237,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "deibainraito",
           "cost": {
             "type": "TP",
@@ -24209,6 +29358,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "bei-fansuru-jin-chi",
           "cost": {
             "type": "TP",
@@ -24321,6 +29477,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_kat_lw_simr_1_1",
           "maxLevel": 1
         }
@@ -24393,6 +29556,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "shouke-jigaresi-bao-wei",
           "cost": {
             "type": "TP",
@@ -24474,6 +29644,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_swo_lw_lves_1_1",
           "maxLevel": 1
         }
@@ -24558,6 +29735,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sheng-jin-wei-qi-shi-tuanno-kuari",
           "cost": {
             "type": "TP",
@@ -24642,6 +29826,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "aptakusu",
           "cost": {
             "type": "AP",
@@ -24737,6 +29928,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "sk_gun_fft_mstd_1_1",
           "maxLevel": 1
         }
@@ -24806,6 +30004,13 @@
             }
           ],
           "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "shun-su-zhuan-yi-fa",
           "cost": {
             "type": "TP",
@@ -24895,6 +30100,13 @@
             }
           ],
           "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "slug": "jinki-guotenu-zeng-e",
           "cost": {
             "type": "TP",
