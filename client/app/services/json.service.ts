@@ -46,6 +46,7 @@ export class JsonService {
     equipmentRecipes: {},
     equipementLots: {},
     grows: {},
+    EquipmentCond: {},
     wotvUnits: {},
     wotvVisionCards: {},
     wotvEspers: {},
@@ -68,6 +69,7 @@ export class JsonService {
     equipmentRecipes: {},
     equipementLots: {},
     grows: {},
+    EquipmentCond: {},
     wotvUnits: {},
     wotvVisionCards: {},
     wotvEspers: {},
@@ -586,6 +588,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitModel.json').toPromise();
   }
 
+  private GLArtifactEquipCond() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactEquipCondition.json').toPromise();
+  }
+
   /* JP */
   private JPUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
@@ -641,6 +647,10 @@ export class JsonService {
 
   private JPUnitModels() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitModel.json').toPromise();
+  }
+
+  private JPArtifactEquipCond() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactEquipCondition.json').toPromise();
   }
 
   /* Translation */
@@ -719,6 +729,9 @@ export class JsonService {
 
       this.GLUnitModels(),
       this.JPUnitModels(),
+
+      this.GLArtifactEquipCond(),
+      this.JPArtifactEquipCond(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -734,6 +747,7 @@ export class JsonService {
       this.gl.equipementLots = this.formatJson(responses[11]);
       this.gl.grows = this.formatJson(responses[12]);
       this.gl.unitModels = this.formatJson(responses[34]);
+      this.gl.EquipmentCond = this.formatJson(responses[36]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -749,6 +763,7 @@ export class JsonService {
       this.jp.equipementLots = this.formatJson(responses[24]);
       this.jp.grows = this.formatJson(responses[25]);
       this.jp.unitModels = this.formatJson(responses[35]);
+      this.jp.EquipmentCond = this.formatJson(responses[37]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1580,10 +1595,17 @@ export class JsonService {
           grows: {},
           skills: [],
           rarity: this.rarity[equipment.rare],
-          image: this[this.version].equipments[dataId].asset.toLowerCase()
+          image: this[this.version].equipments[dataId].asset.toLowerCase(),
+          equippableJobs: []
         }
 
         this.getNames(this[this.version].wotvEquipments[rType], "equipment")
+
+        if (equipment.equip) {
+          this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
+            this[this.version].wotvEquipments[rType].equippableJobs.push(job)
+          })
+        }
 
         if (equipment.trust) {
           let unitId = null;
