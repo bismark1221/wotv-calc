@@ -166,8 +166,15 @@ export class SkillService {
         value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect, getPositiveValue) + explaination + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
+          let valueForLevel = 0;
           let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
-          let valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+
+          if (skill.level >= skill.maxLevel) {
+            valueForLevel = maxValue
+          } else {
+            valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+          }
+
           value = " (" + valueForLevel + this.getCalc(effect) + explaination + ")"
         } else {
           value = " (" + minValue + this.getCalc(effect) + explaination + ")"

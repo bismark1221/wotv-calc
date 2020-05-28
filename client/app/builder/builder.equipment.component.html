@@ -98,11 +98,11 @@
 
 
   <table class="statsTable" *ngIf="equipment.skill[0]">
-    <tbody>
-      <tr *ngIf="equipment.skill[0].type == 'skill'">
+    <tbody *ngIf="equipment.activeSkill">
+      <tr>
         <th colspan="7">Skill</th>
       </tr>
-      <tr *ngIf="equipment.skill[0].type == 'skill'">
+      <tr>
         <th>Level</th>
         <th>name</th>
         <th>Effects</th>
@@ -111,7 +111,7 @@
         <th>Hits</th>
         <th>Cost</th>
       </tr>
-      <tr *ngIf="equipment.skill[0].type == 'skill'">
+      <tr>
         <td>
           <select [(ngModel)]="equipment.skill[0].level" (ngModelChange)="changeSkillLevel()">
             <option *ngFor="let level of equipment.skill[0].tableLevel">{{ level }}</option>
@@ -155,12 +155,14 @@
           <span *ngIf="equipment.skill[0].cost">{{ equipment.skill[0].cost.value }} {{ equipment.skill[0].cost.type }}</span>
         </td>
       </tr>
-      <tr *ngIf="equipment.skill[0].type != 'skill'">
-        <th>Effects</th>
+    </tbody>
+    <tbody  *ngIf="equipment.passiveSkills.length > 0">
+      <tr>
+        <th colspan="6">Effects</th>
       </tr>
-      <tr *ngIf="equipment.skill[0].type != 'skill'">
-        <td>
-          <div *ngFor="let skill of equipment.skill">
+      <tr>
+        <td colspan="6">
+          <div *ngFor="let skill of equipment.passiveSkills">
             <div *ngFor="let effect of skill.effects">
               {{ effect.formatHtml }}
             </div>

@@ -324,6 +324,7 @@ export class EquipmentService {
     let lang = this.translateService.currentLang
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
+    this.equipment.passiveSkills = [];
     this.equipment.skills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
         skill.name = this.nameService.getName(skill)
@@ -340,8 +341,14 @@ export class EquipmentService {
         }
 
         this.skillService.formatRange(this.equipment, skill);
-      });
-    });
+
+        if (skill.type == "skill") {
+          this.equipment.activeSkill = skill
+        } else {
+          this.equipment.passiveSkills.push(skill)
+        }
+      })
+    })
 
     Object.keys(this.equipment.grows).forEach(growId => {
       this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
@@ -381,7 +388,6 @@ export class EquipmentService {
     if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type !== "skill") {
       this.equipment.skill.forEach(skill => {
         skill.level = this.equipment.level
-        skill.maxLevel = this.equipment.maxLevel
       })
     }
 
@@ -428,27 +434,34 @@ export class EquipmentService {
       this.equipment = equipment
     }
 
-    if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type !== "skill") {
-      this.equipment.skill.forEach(skill => {
-        skill.level = this.equipment.level
-        skill.maxLevel = this.equipment.maxLevel
-      })
-    }
-
+    this.equipment.passiveSkills = [];
     this.equipment.skill.forEach(skill => {
-      skill.effects.forEach(effect => {
-        effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
-      });
-
-      if (skill.damage) {
-        skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
+      if (skill.type !== "skill") {
+        skill.level = this.equipment.level
       }
 
-      if (skill.counter) {
-        skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
-      }
+      if (skill.level >= (skill.upgrade[0] * 10 - 10)
+        && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level == this.equipment.maxLevel && skill.upgrade[skill.upgrade.length - 1] == 5))) {
+        skill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
+        });
 
-      this.skillService.formatRange(this.equipment, skill);
+        if (skill.damage) {
+          skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
+        }
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
+        }
+
+        this.skillService.formatRange(this.equipment, skill);
+
+        if (skill.type == "skill") {
+          this.equipment.activeSkill = skill
+        } else {
+          this.equipment.passiveSkills.push(skill)
+        }
+      }
     });
   }
 

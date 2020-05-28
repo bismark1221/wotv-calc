@@ -734,10 +734,9 @@ export class UnitService {
           statsType.push(statType)
         })
 
-        this.unit.equipments[i].skill.forEach(skill => {
+        this.unit.equipments[i].passiveSkills.forEach(skill => {
           if (skill.type !== "skill") {
             skill.level = this.unit.equipments[i].level
-            skill.maxLevel = this.unit.equipments[i].maxLevel
 
             skill.effects.forEach(effect => {
               if (!this.unit.stats[effect.type]) {
@@ -747,7 +746,9 @@ export class UnitService {
               }
 
               let value = effect.minValue
-              if (skill.maxLevel !== 1 || skill.level !== 1) {
+              if (skill.level >= skill.maxLevel) {
+                value = effect.maxValue
+              } else if (skill.maxLevel !== 1 || skill.level !== 1) {
                 value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
               }
 
