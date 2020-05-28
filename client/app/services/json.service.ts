@@ -1109,7 +1109,8 @@ export class JsonService {
       stl_val: null,
       stl_val1 : null,
       names: null,
-      atk_rev: null
+      atk_rev: null,
+      grow: null
     };
 
     if (skill.type == "buff") {
@@ -1137,7 +1138,13 @@ export class JsonService {
     }
 
     skill.count = dataSkill.count
-    skill.maxLevel = dataSkill.cap
+
+    console.log(skill.grow)
+    if (skill.grow) {
+      skill.maxLevel = this[this.version].grows[skill.grow].curve[0].lv
+    } else {
+      skill.maxLevel = dataSkill.cap
+    }
 
     if (dataSkill.range_h || dataSkill.range_l || dataSkill.range_m || dataSkill.range_mh || dataSkill.range_s || dataSkill.range_w || dataSkill.line) {
       skill.range = {
@@ -1688,7 +1695,8 @@ export class JsonService {
                 dataId: skillId,
                 effects: [],
                 type: this.slots[this[this.version].skills[skillId].s_buffs || this[this.version].skills[skillId].type === 6 ? 3 : 1],
-                upgrade: [i]
+                upgrade: [i],
+                grow: this[this.version].skills[skillId].grow
               }
               this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
               skills.push(skill)

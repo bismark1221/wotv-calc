@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { DomSanitizer } from '@angular/platform-browser'
 import { TranslateService } from '@ngx-translate/core';
 
 @Injectable()
@@ -30,7 +30,10 @@ export class SkillService {
   private oFxNcL: any;
   private oFyNcL: any;
 
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    private sanitizer: DomSanitizer,
+    private translateService: TranslateService
+  ) {}
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -213,6 +216,23 @@ export class SkillService {
     } else {
       return ""
     }
+  }
+
+  formatEquipmentEffect(unit, skill, effect) {
+    let html = ""
+
+    if (skill.upgrade.length !== 5) {
+      if (skill.maxLevel < (skill.upgrade[0] * 10 - 10)) {
+        html += "<b>Acquired at " + skill.upgrade[0] + " <i class='fa fa-star'></i></b><br />"
+        effect.minValue = effect.maxValue
+      } else {
+        html += "<b>From " + skill.upgrade[0] + " to " + skill.upgrade[skill.upgrade.length - 1] + " <i class='fa fa-star'></i></b><br />"
+      }
+    }
+
+    html += this.formatEffect(unit, skill, effect)
+
+    return this.sanitizer.bypassSecurityTrustHtml(html)
   }
 
   formatEffect(unit, skill, effect) {

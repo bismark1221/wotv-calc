@@ -42,20 +42,45 @@ export class EquipmentComponent implements OnInit {
     });
   }
 
+  private sortSkills(skills) {
+    skills.sort((a: any, b: any) => {
+      if (a.damage) {
+        return -1
+      } else {
+        if (a.effects.length > 1) {
+          return -1
+        } else if (b.effects.length > 1) {
+          return 1
+        } else {
+          if (a.effects[0].type > b.effects[0].type) {
+            return 1
+          } else {
+            return -1
+          }
+        }
+      }
+    })
+  }
+
   private formatEquipment() {
     this.equipment.name = this.nameService.getName(this.equipment)
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
     let i = 0;
     this.equipment.countSkills = [];
+    this.equipment.effectTypes = [];
+    this.equipment.passiveSkills = [];
 
     this.equipment.skills.forEach(equipmentLvl => {
       this.equipment.countSkills.push(i);
 
+      this.sortSkills(equipmentLvl)
+
       equipmentLvl.forEach(skill => {
         skill.name = this.nameService.getName(skill)
+
         skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
+          effect.formatHtml = this.skillService.formatEquipmentEffect(this.equipment, skill, effect);
         });
 
         if (skill.damage) {
@@ -67,6 +92,21 @@ export class EquipmentComponent implements OnInit {
         }
 
         this.skillService.formatRange(this.equipment, skill);
+
+        if (skill.type == "skill") {
+          this.equipment.activeSkill = skill
+        }
+
+        if (skill.type !== "skill") {
+          if (skill.effects[0]) {
+            if (this.equipment.effectTypes.indexOf(skill.effects[0].type) == -1) {
+              this.equipment.effectTypes.push(skill.effects[0].type)
+            }
+            skill.mainEffect = skill.effects[0].type
+          }
+
+          this.equipment.passiveSkills.push(skill)
+        }
       });
       i++;
     });
