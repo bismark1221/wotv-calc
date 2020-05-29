@@ -19,17 +19,21 @@
 
   <div class="lang" (mouseover)="showLangSelector=true" (mouseleave)="showLangSelector=false">
     <div class="actualLang">
-      <img src="assets/nav/blank.gif" class="flag flag-fr" *ngIf="lang == 'fr'"/>
-      <img src="assets/nav/blank.gif" class="flag flag-gb" *ngIf="lang == 'en'"/>
+      <div *ngIf="lang == 'fr'">
+        <img src="assets/nav/blank.gif" class="flag flag-fr" /> FR
+      </div>
+      <div *ngIf="lang == 'en'">
+        <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
+      </div>
     </div>
     <div class="otherLang" *ngIf="lang != 'fr' && showLangSelector" >
       <a class="pointer" (click)="changeLang('fr')">
-        <img src="assets/nav/blank.gif" class="flag flag-fr" />
+        <img src="assets/nav/blank.gif" class="flag flag-fr" /> FR
       </a>
     </div>
     <div class="otherLang" *ngIf="lang != 'en' && showLangSelector">
       <a class="pointer" (click)="changeLang('en')">
-        <img src="assets/nav/blank.gif" class="flag flag-gb" />
+        <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
       </a>
     </div>
   </div>

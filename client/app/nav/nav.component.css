@@ -132,7 +132,7 @@
 
 .lang {
   margin-left: 10px;
-  width: 35px;
+  width: 65px;
 }
 
 .actualLang {
@@ -142,7 +142,7 @@
 .otherLang {
   position: fixed;
   padding: 5px;
-  width: 35px;
+  width: 65px;
   background-color: var(--nav-background-main);
 }
 

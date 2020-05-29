@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
@@ -32,7 +32,11 @@ export class NavComponent {
     private navService: NavService,
     private router: Router,
     private themeService: ThemeService
-  ) {}
+  ) {
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.lang = this.translateService.currentLang
+    });
+  }
 
   ngOnInit() {
     this.theme = this.themeService.initTheme()
