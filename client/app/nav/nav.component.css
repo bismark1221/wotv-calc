@@ -1,11 +1,16 @@
+.main {
+  background-color: var(--nav-background-main);
+}
+
 .navbar {
   flex-direction: row;
-  height: 40px;
+  height: 60px;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .sub.fixed-top {
-  top: 40px;
+  top: 60px;
   background-color: var(--subnav-background) !important;
 }
 
@@ -22,10 +27,15 @@
   text-align: center;
 }
 
+.navbar-brand {
+  color: var(--white);
+}
+
 .nav-link {
   display: inline-block;
   padding-right: .5rem;
   padding-left: .5rem;
+  color: var(--white);
 }
 
 .nav-link.active {
@@ -53,41 +63,6 @@
   z-index: 1100;
 }
 
-.flag {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url('../../assets/nav/flags.png') no-repeat;
-}
-
-.flag.flag-tw {
-    background-position: -48px -24px;
-}
-
-.flag.flag-es {
-    background-position: -24px 0;
-}
-
-.flag.flag-gb {
-    background-position: 0 -24px;
-}
-
-.flag.flag-fr {
-    background-position: -48px 0;
-}
-
-.flag.flag-de {
-    background-position: 0 0;
-}
-
-.flag.flag-kr {
-    background-position: -24px -24px;
-}
-
-.nav-link-lang {
-  display: none;
-}
-
 .pointer {
   cursor: pointer;
 }
@@ -100,10 +75,6 @@
   background-color: var(--white);
   border-color: var(--nav-disable);
   opacity: .65;
-}
-
-.versions {
-  margin-left: 10px;
 }
 
 .btn.activated {
@@ -122,29 +93,96 @@
   padding-right: 5px;
 }
 
+.logo {
+  height: 30px;
+  margin-left: 20px;
+}
 
-@media (max-width: 500px) {
-  .centerNav {
-    display: block;
-  }
+/* Lang Selector */
+.flag {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/nav/flags.png') no-repeat;
+}
 
-  .navButton {
-    display: block;
-  }
+.flag.flag-tw {
+  background-position: -48px -24px;
+}
 
-  .nav-item {
-    display: none;
-  }
+.flag.flag-es {
+  background-position: -24px 0;
+}
 
-  .navbar-brand {
-    margin-right: 0;
-  }
+.flag.flag-gb {
+  background-position: 0 -24px;
+}
 
-  .nav-link {
-    display: block;
-  }
+.flag.flag-fr {
+  background-position: -48px 0;
+}
 
-  .lang {
-    display: none;
-  }
+.flag.flag-de {
+  background-position: 0 0;
+}
+
+.flag.flag-kr {
+  background-position: -24px -24px;
+}
+
+.lang {
+  margin-left: 10px;
+  width: 35px;
+}
+
+.actualLang {
+  padding: 5px;
+}
+
+.otherLang {
+  position: fixed;
+  padding: 5px;
+  width: 35px;
+  background-color: var(--nav-background-main);
+}
+
+.actualLang:hover, .otherLang:hover {
+  cursor: pointer;
+  background-color: #4e4e4e;
+}
+
+/* Separator */
+.split {
+  height: 40px;
+  width: 2px;
+  margin-left: 5px;
+}
+
+/* Version Selector */
+.versions {
+  margin-left: 10px;
+  width: 60px;
+  color: var(--white);
+}
+
+.actualVersion {
+  padding: 5px;
+}
+
+.otherVersion {
+  position: fixed;
+  padding: 5px;
+  width: 60px;
+  background-color: var(--nav-background-main);
+}
+
+.actualVersion:hover, .otherVersion:hover {
+  cursor: pointer;
+  background-color: #4e4e4e;
+}
+
+/* Theme toogle switch */
+.them {
+  height: 100%;
+  margin-left: 5px;
 }

@@ -20,7 +20,8 @@
               "client/assets"
             ],
             "styles": [
-              "client/styles.css"
+              "client/styles.css",
+              "./node_modules/ngx-ui-switch/ui-switch.component.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -76,7 +77,8 @@
               "node_modules/select2/dist/js/select2.full.min.js"
             ],
             "styles": [
-              "client/styles.css"
+              "client/styles.css",
+              "./node_modules/ngx-ui-switch/ui-switch.component.css"
             ],
             "assets": [
               "client/assets"

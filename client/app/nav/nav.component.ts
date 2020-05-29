@@ -18,9 +18,12 @@ export class NavComponent {
   menuDisabled: boolean;
   inBuilder = false;
   showBuilderNav = false;
+  showVersionSelector = false;
+  showLangSelector = false;
   actualRoute = null;
   version = null;
   theme = null;
+  lang = null;
 
   constructor(
     private localStorageService: LocalStorageService,
@@ -34,7 +37,8 @@ export class NavComponent {
   ngOnInit() {
     this.theme = this.themeService.initTheme()
     this.menuDisabled = this.navService.menuDisabled;
-    this.version = this.navService.getVersion()
+    this.version = this.navService.getVersion();
+    this.lang = this.translateService.currentLang
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
@@ -67,10 +71,6 @@ export class NavComponent {
     });
   }
 
-  menu(forceClose: boolean = false) {
-    this.displayLink = forceClose ? false : !this.displayLink;
-  }
-
   changeLang(lang: string) {
     if (this.translateService.getLangs().indexOf(lang) !== -1) {
       this.localStorageService.set('lang', lang);
@@ -79,7 +79,7 @@ export class NavComponent {
       this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});
     }
 
-    this.menu(true);
+    this.showLangSelector = false
   }
 
   changeVersion(version) {
@@ -90,6 +90,8 @@ export class NavComponent {
       this.actualRoute.splice(1, 0, "JP");
       this.router.navigate([this.actualRoute.join("/")])
     }
+
+    this.showVersionSelector = false
   }
 
   getRoute(route) {

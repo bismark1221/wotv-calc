@@ -39,6 +39,8 @@
   --body-color: #212529;
 
   --cross-close: #000;
+
+  --nav-background-main: #1D1B1B;
 }
 
 body {
@@ -175,6 +177,51 @@ button.close {
 }
 
 
+/* Toogle switch theme */
+.switch .switch-pane > span {
+  min-height: 0 !important;
+}
+
+.switch-label-unchecked {
+  width: 65px !important;
+  padding-top: 5px !important;
+  padding-right: 5px !important;
+  content: url(assets/nav/moon.png);
+}
+
+.switch-label-checked {
+  padding-top: 5px !important;
+  padding-left: 5px !important;
+  height: 25px !important;
+  content: url(assets/nav/sun.png);
+}
+
+.switch {
+  margin-top: 15px !important;
+  border: 0 !important;
+  background: #3D3A41 !important;
+  width: 65px !important;
+}
+
+.switch.checked {
+  background: #fff !important;
+}
+
+small {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.switch.checked small {
+  right: 4px !important;
+  top: 2px !important;
+  left: auto !important;
+}
+
+.switch small {
+  left: 4px !important;
+  top: 2px !important;
+}
 
 
 /* Grid */

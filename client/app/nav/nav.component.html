@@ -1,7 +1,8 @@
-<nav class="navbar navbar-toggleable-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-toggleable-md main fixed-top">
+  <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="menu(true)">
+    <img src="assets/nav/WOTV-CALC.png" class="logo" />
+  </a>
   <div class="centerNav">
-    <div></div>
-    <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="menu(true)">WOTV-Calc</a>
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
         <a class="nav-link" [routerLink]="[getRoute('/units')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.units' | translate }}</a>
@@ -12,31 +13,43 @@
           {{ 'nav.builder' | translate }}
         </a>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false">&nbsp;</div>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('en')" (mouseover)="showBuilderNav=false"><img src="../../assets/nav/blank.gif" class="flag flag-gb" /></a>
-        <a class="nav-link nav-link-lang pointer" (click)="changeLang('fr')" (mouseover)="showBuilderNav=false"><img src="../../assets/nav/blank.gif" class="flag flag-fr" /></a>
       </li>
     </ul>
   </div>
-  <div class="lang">
-    <a class="pointer" (click)="changeLang('en')">
-      <img src="../../assets/nav/blank.gif" class="flag flag-gb" />
-    </a>
-    <span class="separator"></span>
-    <a class="pointer" (click)="changeLang('fr')">
-      <img src="../../assets/nav/blank.gif" class="flag flag-fr" />
-    </a>
-  </div>
-  <div class="them">
-    <button type="button" (click)="toggleTheme()">
-      <i class="fa fa-sun-o" *ngIf="theme == 'light'"></i>
-      <i class="fa fa-moon-o" *ngIf="theme == 'dark'"></i>
-    </button>
-  </div>
-  <div class="versions">
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button [ngClass]="{'activated': version == 'GL'}" type="button" class="btn btn-secondary" (click)="changeVersion('GL')">GL</button>
-      <button [ngClass]="{'activated': version == 'JP'}" type="button" class="btn btn-secondary" (click)="changeVersion('JP')">JP</button>
+
+  <div class="lang" (mouseover)="showLangSelector=true" (mouseleave)="showLangSelector=false">
+    <div class="actualLang">
+      <img src="assets/nav/blank.gif" class="flag flag-fr" *ngIf="lang == 'fr'"/>
+      <img src="assets/nav/blank.gif" class="flag flag-gb" *ngIf="lang == 'en'"/>
     </div>
+    <div class="otherLang" *ngIf="lang != 'fr' && showLangSelector" >
+      <a class="pointer" (click)="changeLang('fr')">
+        <img src="assets/nav/blank.gif" class="flag flag-fr" />
+      </a>
+    </div>
+    <div class="otherLang" *ngIf="lang != 'en' && showLangSelector">
+      <a class="pointer" (click)="changeLang('en')">
+        <img src="assets/nav/blank.gif" class="flag flag-gb" />
+      </a>
+    </div>
+  </div>
+
+  <img src="assets/nav/split.png" class="split"/>
+
+  <div class="versions" (mouseover)="showVersionSelector=true" (mouseleave)="showVersionSelector=false">
+    <div class="actualVersion">
+      {{ version == 'GL' ? 'Global' : 'Japan' }}
+    </div>
+    <div class="otherVersion" *ngIf="version != 'GL' && showVersionSelector" >
+      <a (click)="changeVersion('GL')">Global</a>
+    </div>
+    <div class="otherVersion" *ngIf="version != 'JP' && showVersionSelector">
+      <a (click)="changeVersion('JP')">Japan</a>
+    </div>
+  </div>
+
+  <div class="them">
+    <ui-switch (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme == 'light'"></ui-switch>
   </div>
 </nav>
 

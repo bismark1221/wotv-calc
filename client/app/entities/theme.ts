@@ -35,7 +35,9 @@ export const themes = {
       "--body-background": "#fff",
       "--body-color": "#212529",
 
-      "--cross-close": "#000"
+      "--cross-close": "#000",
+
+      "--nav-background-main": "#1D1B1B",
     }
   },
   dark: {
@@ -74,7 +76,9 @@ export const themes = {
       "--body-background": "#3a3a3a",
       "--body-color": "#e2e2e2",
 
-      "--cross-close": "#fff"
+      "--cross-close": "#fff",
+
+      "--nav-background-main": "#1D1B1B",
     }
   }
 }
