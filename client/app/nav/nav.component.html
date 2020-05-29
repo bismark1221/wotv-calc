@@ -1,15 +1,15 @@
 <nav class="navbar navbar-toggleable-md main fixed-top">
-  <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="menu(true)">
+  <a class="navbar-brand" [routerLink]="[getRoute('/')]">
     <img src="assets/nav/WOTV-CALC.png" class="logo" />
   </a>
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="[getRoute('/units')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.units' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/cards')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.cards' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/espers')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.espers' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/equipments')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=false">{{ 'nav.equipments' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder')]" [routerLinkActive]="['active']" (click)="menu(true)" (mouseover)="showBuilderNav=true">
+        <a class="nav-link" [routerLink]="[getRoute('/units')]" [routerLinkActive]="['active']" (mouseover)="showBuilderNav=false">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/cards')]" [routerLinkActive]="['active']" (mouseover)="showBuilderNav=false">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/espers')]" [routerLinkActive]="['active']" (mouseover)="showBuilderNav=false">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/equipments')]" [routerLinkActive]="['active']" (mouseover)="showBuilderNav=false">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder')]" [routerLinkActive]="['active']" (mouseover)="showBuilderNav=true">
           {{ 'nav.builder' | translate }}
         </a>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false">&nbsp;</div>
@@ -57,18 +57,12 @@
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.units' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.cards' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.espers' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.equipments' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']" (click)="menu(true)">{{ 'nav.guild' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']">{{ 'nav.units' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']">{{ 'nav.cards' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']">{{ 'nav.espers' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']">{{ 'nav.guild' | translate }}</a>
       </li>
     </ul>
   </div>
-</nav>
-
-<nav class="navbar fixed-top-right navButton">
-  <button type="button" class="btn btn-secondary btnMenu" [ngClass]="{'menuDisabled': menuDisabled}" (click)="menu()">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </button>
 </nav>
