@@ -8,22 +8,34 @@
 
 hr {
   margin-bottom: 0;
-  max-width: 700px;
+  width: 95%;
 }
 
-.marginRight {
-  margin-right: 10px;
+.logo {
+  float: left;
+  padding-top: 15px;
 }
 
 .textFooter {
   margin: 0;
   height: 30px;
+  padding-left: 150px;
 }
 
 .red {
   color: red;
 }
 
-.grey {
-  color: var(--background-tooltip);
+.links {
+  display: inline-block;
+  float: right;
+}
+
+.links a {
+  color: var(----footer-link);
+  text-decoration: underline;
+}
+
+.twitter, .youtube, .contact, .legal {
+  padding: 5px;
 }

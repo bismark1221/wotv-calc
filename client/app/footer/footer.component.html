@@ -1,12 +1,8 @@
 <footer class="footer">
-  <div class="container">
-    <hr>
-    <div class="text-muted">
-      <p class="textFooter">{{ 'footer.made' | translate }}<i class="fa fa-heart red" aria-hidden="true"></i>{{ 'footer.by' | translate }}</p>
-      <a class="marginRight" [routerLink]="[getRoute('/contact')]">{{ 'footer.contact' | translate }}</a>
-      <a class="marginRight" [routerLink]="[getRoute('/legal-notices')]">{{ 'footer.legal' | translate }}</a>
-      <a class="marginRight" href="https://twitter.com/bismarktv"><i class="fa fa-twitter grey" aria-hidden="true"></i></a>
-      <a href="https://www.youtube.com/channel/UCvRB2kQNT7QlrGTigTVXU2w"><i class="fa fa-youtube-play grey" aria-hidden="true"></i></a>
-    </div>
+  <hr>
+  <img src="{{ 'assets/footer/' + theme + '_wotv-calc.png' }}" class="logo" />
+  <div class="links">
+    <a class="twitter" href="https://twitter.com/bismarktv">Twitter</a>/<a class="youtube" href="https://www.youtube.com/channel/UCvRB2kQNT7QlrGTigTVXU2w">Youtube</a>/<a class="contact" [routerLink]="[getRoute('/contact')]">{{ 'footer.contact' | translate }}</a>/<a class="legal" [routerLink]="[getRoute('/legal-notices')]">{{ 'footer.legal' | translate }}</a>
   </div>
+  <span class="textFooter">{{ 'footer.made' | translate }}<i class="fa fa-heart red" aria-hidden="true"></i>{{ 'footer.by' | translate }}</span>
 </footer>

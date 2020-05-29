@@ -38,6 +38,7 @@ export const themes = {
       "--cross-close": "#000",
 
       "--nav-background-main": "#1D1B1B",
+      "--footer-link": "#1D1B1B",
     }
   },
   dark: {
@@ -73,12 +74,13 @@ export const themes = {
       "--hex-counter-color": "#000",
       "--hex-counter-activated": "#2649ff",
 
-      "--body-background": "#3a3a3a",
+      "--body-background": "#242222",
       "--body-color": "#e2e2e2",
 
       "--cross-close": "#fff",
 
       "--nav-background-main": "#1D1B1B",
+      "--footer-link": "#fff",
     }
   }
 }
