@@ -21,25 +21,38 @@
 .centerNav {
   display: inline-flex;
   margin: 0 auto;
+  height: 100%
 }
 
 .navbar-nav {
   text-align: center;
+  margin-top: 10px;
 }
 
 .navbar-brand {
   color: var(--white);
 }
 
+.nav-item {
+  height: 100%
+}
+
 .nav-link {
   display: inline-block;
   padding-right: .5rem;
   padding-left: .5rem;
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%
 }
 
 .nav-link.active {
-  color: rgba(255,255,255,.7) !important;
+  color: var(--white) !important;
+  border-bottom: 2px solid #43FFFF;
+}
+
+.nav-link:hover {
+  color: var(--white) !important;
+  border-bottom: 2px solid #43FFFF;
 }
 
 .btnMenu {

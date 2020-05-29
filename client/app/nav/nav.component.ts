@@ -17,6 +17,10 @@ export class NavComponent {
   displayLink: boolean = false;
   menuDisabled: boolean;
   inBuilder = false;
+  inUnit = false;
+  inCard = false;
+  inEsper = false;
+  inEquipment = false;
   showBuilderNav = false;
   showVersionSelector = false;
   showLangSelector = false;
@@ -58,12 +62,24 @@ export class NavComponent {
       }
 
       if (event instanceof NavigationEnd) {
+        this.inBuilder = false
+        this.inUnit = false;
+        this.inCard = false;
+        this.inEsper = false;
+        this.inEquipment = false;
+
         let url = event.url.split("/")
         if ((url.length >= 2 && url[1] == "builder")
           || (url.length >= 3 && url[2] == "builder")) {
           this.inBuilder = true
-        } else {
-          this.inBuilder = false
+        } else if (url.length >= 2 && (url[1] == "unit" || url[1] == "units")) {
+          this.inUnit = true;
+        } else if (url.length >= 2 && (url[1] == "card" || url[1] == "cards")) {
+          this.inCard = true;
+        } else if (url.length >= 2 && (url[1] == "esper" || url[1] == "espers")) {
+          this.inEsper = true;
+        } else if (url.length >= 2 && (url[1] == "equipment" || url[1] == "equipments")) {
+          this.inEquipment = true;
         }
       }
     });
