@@ -47,12 +47,12 @@
 
 .nav-link.active {
   color: var(--white) !important;
-  border-bottom: 2px solid #43FFFF;
+  border-bottom: 4px solid #43FFFF;
 }
 
 .nav-link:hover {
   color: var(--white) !important;
-  border-bottom: 2px solid #43FFFF;
+  border-bottom: 4px solid #43FFFF;
 }
 
 .btnMenu {

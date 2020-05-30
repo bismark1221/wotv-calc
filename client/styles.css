@@ -80,6 +80,10 @@ button.close {
   color: var(--cross-close);
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .tooltip-inner .table-skill {
   border-collapse: collapse;
   width: 219px;

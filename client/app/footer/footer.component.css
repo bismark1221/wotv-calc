@@ -8,12 +8,13 @@
 
 hr {
   margin-bottom: 0;
-  width: 95%;
+  width: 100%;
 }
 
 .logo {
   float: left;
   padding-top: 15px;
+  padding-left: 15px;
 }
 
 .textFooter {
@@ -34,6 +35,7 @@ hr {
 .links a {
   color: var(----footer-link);
   text-decoration: underline;
+  padding-right: 15px;
 }
 
 .twitter, .youtube, .contact, .legal {
