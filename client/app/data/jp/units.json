@@ -6576,8 +6576,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 2,
-        "max": 2
+        "min": 1,
+        "max": 1
       },
       "MAX_LV": {}
     },
@@ -10909,8 +10909,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 3,
-        "max": 3
+        "min": 2,
+        "max": 2
       },
       "MAX_LV": {}
     },
@@ -30785,8 +30785,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 5,
-        "max": 5
+        "min": 4,
+        "max": 4
       },
       "MAX_LV": {}
     },
@@ -35067,8 +35067,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 4,
-        "max": 4
+        "min": 3,
+        "max": 3
       },
       "MAX_LV": {}
     },
@@ -37207,8 +37207,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 3,
-        "max": 3
+        "min": 2,
+        "max": 2
       },
       "MAX_LV": {}
     },
@@ -41612,8 +41612,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 3,
-        "max": 3
+        "min": 2,
+        "max": 2
       },
       "MAX_LV": {}
     },
@@ -43804,8 +43804,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 2,
-        "max": 2
+        "min": 1,
+        "max": 1
       },
       "MAX_LV": {}
     },
@@ -54872,8 +54872,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 2,
-        "max": 2
+        "min": 1,
+        "max": 1
       },
       "MAX_LV": {}
     },
@@ -57073,8 +57073,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 5,
-        "max": 5
+        "min": 4,
+        "max": 4
       },
       "MAX_LV": {}
     },
@@ -65786,8 +65786,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 3,
-        "max": 3
+        "min": 2,
+        "max": 2
       },
       "MAX_LV": {}
     },
@@ -70171,8 +70171,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 4,
-        "max": 4
+        "min": 3,
+        "max": 3
       },
       "MAX_LV": {}
     },
@@ -72251,12 +72251,12 @@
       "BERSERK_RES": {},
       "DOOM_RES": {},
       "MOVE": {
-        "min": 4,
-        "max": 4
+        "min": 3,
+        "max": 3
       },
       "JUMP": {
-        "min": 1,
-        "max": 1
+        "min": 2,
+        "max": 2
       },
       "MAX_LV": {}
     },
@@ -74456,8 +74456,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 2,
-        "max": 2
+        "min": 1,
+        "max": 1
       },
       "MAX_LV": {}
     },
@@ -80981,8 +80981,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 4,
-        "max": 4
+        "min": 3,
+        "max": 3
       },
       "MAX_LV": {}
     },
@@ -85152,8 +85152,8 @@
         "max": 3
       },
       "JUMP": {
-        "min": 2,
-        "max": 2
+        "min": 1,
+        "max": 1
       },
       "MAX_LV": {}
     },
@@ -115656,12 +115656,12 @@
       "BERSERK_RES": {},
       "DOOM_RES": {},
       "MOVE": {
-        "min": 3,
-        "max": 3
+        "min": 4,
+        "max": 4
       },
       "JUMP": {
-        "min": 1,
-        "max": 1
+        "min": 3,
+        "max": 3
       },
       "MAX_LV": {}
     },
@@ -122103,7 +122103,7 @@
   "UN_LW_P_LUCA": {
     "dataId": "UN_LW_P_LUCA",
     "names": {
-      "en": "ル・シア"
+      "en": "ル・シア - Lu'Cia"
     },
     "rarity": "UR",
     "jobs": [
@@ -124143,7 +124143,7 @@
         154
       ]
     },
-    "slug": "rusia",
+    "slug": "lucia",
     "limit": {
       "names": {
         "en": "サディスティックダンス"
@@ -124242,7 +124242,7 @@
     ],
     "tmr": {
       "names": {
-        "en": "魅惑のブーツ"
+        "en": "魅惑のブーツ - Bewitching Boots"
       },
       "stats": {
         "HP": 142,
@@ -124285,7 +124285,7 @@
         }
       ],
       "image": "lapswpn_arm_023",
-      "slug": "mei-huonobutu"
+      "slug": "bewitching-boots"
     }
   },
   "UN_LW_P_ADLD": {

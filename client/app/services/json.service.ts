@@ -916,6 +916,7 @@ export class JsonService {
     this.getNames(this[this.version].wotvUnits[dataId], 'unit');
 
     this.getStats(this[this.version].wotvUnits[dataId], unit.status, 'unit')
+    this.getMoveJumpUnit(this[this.version].wotvUnits[dataId])
     this.getLB(this[this.version].wotvUnits[dataId], unit.limit)
     this.getAttackSkill(this[this.version].wotvUnits[dataId], unit.atkskl)
     this.getMasterSkill(this[this.version].wotvUnits[dataId], unit.mstskl)
@@ -1375,6 +1376,18 @@ export class JsonService {
         max: stats[1][stat]
       }
     })
+  }
+
+  private getMoveJumpUnit(unit) {
+    unit.stats.JUMP = {
+      "min": this[this.version].jobs[unit.jobs[0]].jump,
+      "max": this[this.version].jobs[unit.jobs[0]].jump
+    }
+
+    unit.stats.MOVE = {
+      "min": this[this.version].jobs[unit.jobs[0]].move,
+      "max": this[this.version].jobs[unit.jobs[0]].move
+    }
   }
 
   private getLB(unit, lbId) {
