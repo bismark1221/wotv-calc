@@ -39,6 +39,9 @@ export const themes = {
 
       "--nav-background-main": "#1D1B1B",
       "--footer-link": "#1D1B1B",
+
+      "--card-background": "#E8E6DF",
+      "--card-title": "#3D3A41",
     }
   },
   dark: {
@@ -81,6 +84,9 @@ export const themes = {
 
       "--nav-background-main": "#1D1B1B",
       "--footer-link": "#fff",
+
+      "--card-background": "#E8E6DF",
+      "--card-title": "#3D3A41",
     }
   }
 }
