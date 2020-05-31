@@ -1,36 +1,60 @@
-<div class="home">
-  <h1 class="title">{{ 'home.title' | translate }}</h1>
-  <div class="right_zone">
-    <a href='https://ko-fi.com/bismarktv' target='_blank'>
-      <img class='buy_coffee' src='assets/home/buy_coffee_en.png' alt='Buy Me a Coffee at ko-fi.com' />
-    </a>
-  </div>
-  <ngx-md [data]="markdown"></ngx-md>
-  <div class="updates">
-    <div class="lastUpdate">
-      Last Updates
+<div class="header">
+  <div class="headerBlock">
+    <h1 class="title">{{ 'home.title' | translate }}</h1>
+    <ngx-md class="markdownHome" [data]="markdown"></ngx-md>
+    <div class="right_zone">
+      <a href='https://ko-fi.com/bismarktv' target='_blank'>
+        <img class='buy_coffee' src='assets/home/buy_coffee_en.png' alt='Buy Me a Coffee at ko-fi.com' />
+      </a>
     </div>
-    <div *ngFor="let line of updatedFormatted">
-      <div class="itemsTable">
-        <div class="date">
-          {{ line.date }}
-        </div>
-        <div class="itemsCol" *ngFor="let item of line.items">
-          <a [routerLink]="[getRoute('/'  + item.type + '/' + item.slug)]" [routerLinkActive]="['active']">
-            <div>
-              <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type !== 'esper' ? '_m' : '_s' }}.png" />
+  </div>
+</div>
+<div class="updates">
+  <div class="lastUpdate">
+    Last Updates
+  </div>
+  <div *ngFor="let line of updatedFormatted">
+    <div class="itemsTable">
+      <div class="date">
+        {{ line.date }}
+      </div>
+      <div class="itemsCol" *ngFor="let item of line.items">
+        <a [routerLink]="[getRoute('/'  + item.type + '/' + item.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + item.element + '.png'}}" *ngIf="item.element" />
+            <div *ngIf="item.jobs">
+              <img *ngFor="let job of item.jobs; let j = index" src="{{'assets/jobs/' + job.image + '.png'}}"
+                [ngClass]="{
+                  'mainJob': j == 0,
+                  'subJob': j != 0
+                }"/>
             </div>
-            <div class="cardTitle">
-              <div>
-                <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + '.png'}}" />
-                <img class="elementImg" src="{{'assets/elements/' + item.element + '.png'}}" *ngIf="item.element" />
-              </div>
-              <span class="itemName">{{ item.name }}</span>
-            </div>
-          </a>
-        </div>
+          </div>
+          <div>
+            <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type !== 'esper' ? '_m' : '_s' }}.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="itemName">{{ item.name }}</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
-  <ngx-md [data]="thanks"></ngx-md>
+</div>
+<div class="news">
+  <div class="whatsnew">
+    <h1>What's new</h1>
+    <span>Get the lastest updates on WotV-Calc</span>
+  </div>
+  <div class="changelog">
+    <h1>02/06</h1>
+    <span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis tellus vitae massa vulputate accumsan. Praesent efficitur lectus velit, in vehicula enim ultricies ac.
+    </span>
+    <h1>25/05</h1>
+    <span>
+      Aenean eu scelerisque purus, nec convallis erat.
+    </span>
+  </div>
 </div>

@@ -8,6 +8,7 @@ import { NavService } from '../services/nav.service'
 import { NameService } from '../services/name.service'
 import { JobService } from '../services/job.service'
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -24,10 +25,10 @@ export class HomeComponent {
         date: "03/06",
         items: [
           {type: "unit", dataId: "UN_LW_P_LUCA"},
-          {type: "unit", dataId: "UN_LW_P_ADLD"},
-          {type: "esper", dataId: "UN_LW_S_TSLP"},
-          {type: "card", dataId: "VC_LW_TSLP"},
-          {type: "card", dataId: "VC_LW_LILS"}
+      {type: "unit", dataId: "UN_LW_P_ADLD"},
+      {type: "esper", dataId: "UN_LW_S_TSLP"},
+      {type: "card", dataId: "VC_LW_TSLP"},
+      {type: "card", dataId: "VC_LW_LILS"}
         ]
       },
       {
@@ -106,6 +107,7 @@ export class HomeComponent {
   }
 
   private getUpdate() {
+    let lang = this.translateService.currentLang
     let version = this.navService.getVersion()
 
     this.updated[version].forEach((update, updateIndex) => {
@@ -135,6 +137,8 @@ export class HomeComponent {
         }
       });
     });
+
+    console.log(this.updatedFormatted)
   }
 
   getRoute(route) {

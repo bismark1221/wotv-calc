@@ -36,6 +36,14 @@
   height: 32px;
 }
 
+.rarityImg {
+  float: left;
+}
+
+.elementImg {
+  float: right;
+}
+
 .itemsTable {
   margin-bottom: 20px;
   border: 0;
@@ -71,7 +79,7 @@
 .itemName {
   font-weight: bold;
   margin-left: 10px;
-  display: block;
+  display: table-cell;
   vertical-align: middle;
   color: var(--white);
 }
