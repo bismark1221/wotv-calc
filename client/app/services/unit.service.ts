@@ -1086,13 +1086,23 @@ export class UnitService {
 
     let equipments = this.equipmentService.getEquipmentsForUnitBuilder()
     let availableEquipments = []
+    let mainJob = this.unit.jobs[0].split("_")
+    mainJob = mainJob[0] + "_" + mainJob[1] + "_" + mainJob[2]
     equipments.forEach(equipment => {
       if (((countAcc < 2 && equipment.type === "ACC")
         || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
         || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
         && (!hasTmr || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr")))) {
-        equipment.name = this.nameService.getName(equipment)
-        availableEquipments.push(equipment)
+
+        let jobs = []
+        equipment.equippableJobs.forEach(job => {
+          let tableJob = job.split("_")
+          jobs.push(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2])
+        })
+
+        if (jobs.indexOf(mainJob) != -1) {
+          availableEquipments.push(equipment)
+        }
       }
     })
 
