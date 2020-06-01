@@ -7,6 +7,7 @@ import { SkillService } from '../services/skill.service';
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-equipment',
@@ -24,7 +25,8 @@ export class EquipmentComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService
+    private nameService: NameService,
+    private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEquipment();
@@ -148,6 +150,13 @@ export class EquipmentComponent implements OnInit {
         })
       })
     }
+
+    this.equipment.jobs = []
+    this.equipment.equippableJobs.forEach(jobId => {
+      let job = this.jobService.getJob(jobId)
+      job.name = this.nameService.getName(job)
+      this.equipment.jobs.push(job)
+    })
   }
 
   getEquipementType(type) {

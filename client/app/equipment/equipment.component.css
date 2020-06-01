@@ -53,3 +53,10 @@
 .rangeTd {
   width: 69px;
 }
+
+.job {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+}

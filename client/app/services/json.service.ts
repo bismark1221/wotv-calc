@@ -1140,7 +1140,6 @@ export class JsonService {
 
     skill.count = dataSkill.count
 
-    console.log(skill.grow)
     if (skill.grow) {
       skill.maxLevel = this[this.version].grows[skill.grow].curve[0].lv
     } else {

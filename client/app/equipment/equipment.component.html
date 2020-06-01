@@ -2,10 +2,10 @@
   <table class="equipmentTable">
     <tbody>
       <tr>
-        <th colspan="3">{{ equipment.name }}</th>
+        <th colspan="2">{{ equipment.name }}</th>
       </tr>
       <tr>
-        <td colspan="3">
+        <td colspan="2">
           <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
               onerror="this.src='assets/equipments/placeholder.png';"/>
         </td>
@@ -25,6 +25,16 @@
         </td>
         <td *ngIf="equipment.acquisition.type !== 'tmr'">
           {{ equipment.acquisition.name }}
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Equippable jobs
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <img *ngFor="let job of equipment.jobs" src="{{ 'assets/jobs/' + job.image + '.png'}}" class="job" title="{{ job.name }}"/>
         </td>
       </tr>
     </tbody>
