@@ -1092,8 +1092,10 @@ export class UnitService {
       if (((countAcc < 2 && equipment.type === "ACC")
         || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
         || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
-        && (!hasTmr || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr")))) {
-
+        && (
+          (!hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr" || (equipment.acquisition.type === "tmr" && this.unit.lb >= 4))
+          || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr"))))
+      ) {
         let jobs = []
         equipment.equippableJobs.forEach(job => {
           let tableJob = job.split("_")

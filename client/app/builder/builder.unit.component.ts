@@ -310,6 +310,32 @@ export class BuilderUnitComponent implements OnInit {
     }
     this.unit.lb = value
     this.unitService.changeLB()
+
+    this.updateSelectedEquipments()
+  }
+
+  updateSelectedEquipments() {
+    if (this.unit.lb < 4) {
+      if (this.selectedEquipmentsIds[2]) {
+        this.selectedEquipmentsIds[2] = null;
+        this.selectEquipment(2)
+      }
+
+      if (this.selectedEquipmentsIds[1] && this.unit.equipments[1].acquisition && this.unit.equipments[1].acquisition.type === "tmr") {
+        this.selectedEquipmentsIds[1] = null;
+        this.selectEquipment(1)
+      }
+
+      if (this.selectedEquipmentsIds[0] && this.unit.equipments[0].acquisition && this.unit.equipments[0].acquisition.type === "tmr") {
+        this.selectedEquipmentsIds[0] = null;
+        this.selectEquipment(0)
+      }
+    }
+
+    if (this.unit.lb < 2 && this.selectedEquipmentsIds[1]) {
+      this.selectedEquipmentsIds[1] = null;
+      this.selectEquipment(1)
+    }
   }
 
   changeLevel() {
