@@ -73,6 +73,10 @@
             "value": "通常攻撃（回避率ダウン）"
         },
         {
+            "key": "BUFF_BOW_LW_RRIR_1_1_EN",
+            "value": "通常攻撃（死の宣告）"
+        },
+        {
             "key": "BUFF_ARENA_00003",
             "value": "射程+1"
         },
@@ -99,6 +103,10 @@
         {
             "key": "BUFF_GVG_003",
             "value": "水属性アビリティ攻撃アップ"
+        },
+        {
+            "key": "BUFF_GVG_004",
+            "value": "刺突攻撃アップ"
         },
         {
             "key": "BUFF_IFRT_01",
@@ -1850,11 +1858,11 @@
         },
         {
             "key": "BUFF_MABR_09",
-            "value": "魔法攻撃耐性+3%"
+            "value": "魔法耐性+3%"
         },
         {
             "key": "BUFF_MABR_10",
-            "value": "魔法攻撃耐性+3%"
+            "value": "魔法耐性+3%"
         },
         {
             "key": "BUFF_MABR_11",
@@ -1894,11 +1902,11 @@
         },
         {
             "key": "BUFF_MABR_20",
-            "value": "魔法攻撃耐性+5%"
+            "value": "魔法耐性+5%"
         },
         {
             "key": "BUFF_MABR_21",
-            "value": "魔法攻撃耐性+4%"
+            "value": "魔法耐性+4%"
         },
         {
             "key": "BUFF_MABR_22",
@@ -1982,11 +1990,11 @@
         },
         {
             "key": "BUFF_MOGL_09",
-            "value": "魔法攻撃耐性+3%"
+            "value": "魔法耐性+3%"
         },
         {
             "key": "BUFF_MOGL_10",
-            "value": "魔法攻撃耐性+3%"
+            "value": "魔法耐性+3%"
         },
         {
             "key": "BUFF_MOGL_11",
@@ -2026,11 +2034,11 @@
         },
         {
             "key": "BUFF_MOGL_20",
-            "value": "魔法攻撃耐性+5%"
+            "value": "魔法耐性+5%"
         },
         {
             "key": "BUFF_MOGL_21",
-            "value": "魔法攻撃耐性+4%"
+            "value": "魔法耐性+4%"
         },
         {
             "key": "BUFF_MOGL_22",
@@ -2082,7 +2090,7 @@
         },
         {
             "key": "BUFF_LAMA_01_01",
-            "value": "命中UP+3%"
+            "value": "命中率+3"
         },
         {
             "key": "BUFF_LAMA_01_02",
@@ -2110,7 +2118,7 @@
         },
         {
             "key": "BUFF_LAMA_01_08",
-            "value": "命中UP+4%"
+            "value": "命中率+4"
         },
         {
             "key": "BUFF_LAMA_01_09",
@@ -2214,7 +2222,7 @@
         },
         {
             "key": "BUFF_OCHU_01",
-            "value": "命中UP+3%"
+            "value": "命中率+3"
         },
         {
             "key": "BUFF_OCHU_02",
@@ -2242,7 +2250,7 @@
         },
         {
             "key": "BUFF_OCHU_08",
-            "value": "命中UP+4%"
+            "value": "命中率+4"
         },
         {
             "key": "BUFF_OCHU_09",
@@ -2378,11 +2386,11 @@
         },
         {
             "key": "BUFF_MDFY_09",
-            "value": "刺突攻撃耐性+3%"
+            "value": "刺突耐性+3%"
         },
         {
             "key": "BUFF_MDFY_10",
-            "value": "刺突攻撃耐性+3%"
+            "value": "刺突耐性+3%"
         },
         {
             "key": "BUFF_MDFY_11",
@@ -2422,11 +2430,11 @@
         },
         {
             "key": "BUFF_MDFY_20",
-            "value": "刺突攻撃耐性+5%"
+            "value": "刺突耐性+5%"
         },
         {
             "key": "BUFF_MDFY_21",
-            "value": "刺突攻撃耐性+4%"
+            "value": "刺突耐性+4%"
         },
         {
             "key": "BUFF_MDFY_22",
@@ -2742,7 +2750,7 @@
         },
         {
             "key": "BUFF_ZUUU_01",
-            "value": "魔法攻撃耐性+3%"
+            "value": "魔法耐性+3%"
         },
         {
             "key": "BUFF_ZUUU_02",
@@ -2770,7 +2778,7 @@
         },
         {
             "key": "BUFF_ZUUU_08",
-            "value": "魔法攻撃耐性+4%"
+            "value": "魔法耐性+4%"
         },
         {
             "key": "BUFF_ZUUU_09",

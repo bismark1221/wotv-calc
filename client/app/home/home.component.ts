@@ -37,6 +37,11 @@ export class HomeComponent {
     ],
     JP: [
       [
+        {type: "unit", dataId: "UN_LW_P_GRSR"},
+        {type: "unit", dataId: "UN_LW_P_LSWL"},
+        {type: "unit", dataId: "UN_LW_P_RRIR"}
+      ],
+      [
         {type: "esper", dataId: "UN_LW_S_FNRR"},
         {type: "card", dataId: "VC_LW_FNRR"},
         {type: "card", dataId: "VC_LW_ORDR"}

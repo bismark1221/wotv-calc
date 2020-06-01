@@ -2756,10 +2756,12 @@
       "JB_LW_RDM_FIRE",
       "JB_LW_GLMS",
       "JB_LW_WAR",
-      "JB_FFT_ORND",
       "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
       "JB_FFT_GFGR",
-      "JB_FF1_WROL"
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -4548,7 +4550,8 @@
     "rarity": "N",
     "image": "lapswpn_kat_000",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -4799,7 +4802,8 @@
     "rarity": "R",
     "image": "lapswpn_kat_001",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -5057,7 +5061,8 @@
     "rarity": "SR",
     "image": "lapswpn_kat_002",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -5311,7 +5316,8 @@
     "rarity": "MR",
     "image": "lapswpn_kat_003",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -6183,7 +6189,8 @@
     "image": "lapswpn_spe_000",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -6431,7 +6438,8 @@
     "image": "lapswpn_spe_001",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -6682,7 +6690,8 @@
     "image": "lapswpn_spe_002",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -6933,7 +6942,8 @@
     "image": "lapswpn_spe_003",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -7452,7 +7462,8 @@
     "image": "lapswpn_spe_004",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -7986,7 +7997,8 @@
     "image": "lapswpn_spe_006",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -14625,7 +14637,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -14856,7 +14870,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -15113,7 +15129,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -15382,7 +15400,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -15647,7 +15667,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -15912,7 +15934,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {}
@@ -15977,7 +16001,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -16209,7 +16234,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -16467,7 +16493,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -16729,7 +16756,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {
@@ -16995,7 +17023,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": {}
@@ -17069,7 +17098,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -17318,7 +17348,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -17593,7 +17624,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -17868,7 +17900,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -17946,7 +17979,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -18215,7 +18249,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -18487,7 +18522,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -18759,7 +18795,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -19035,7 +19072,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {}
@@ -19175,7 +19213,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -19734,7 +19774,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -20296,7 +20338,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -20858,7 +20902,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -21300,7 +21346,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {
@@ -21862,7 +21910,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {}
@@ -22421,7 +22471,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {}
@@ -22523,7 +22575,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -22625,7 +22679,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -22727,7 +22783,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -22829,7 +22887,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -23456,7 +23516,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": {}
@@ -23558,7 +23620,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -23794,7 +23858,8 @@
     "rarity": "MR",
     "image": "lapswpn_kat_006",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -23940,7 +24005,8 @@
     "image": "lapswpn_spe_010",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -24014,7 +24080,8 @@
     "image": "lapswpn_spe_011",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -24868,7 +24935,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -24968,7 +25037,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25051,7 +25122,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25167,7 +25240,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25261,7 +25335,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25355,7 +25430,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25449,7 +25525,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25576,7 +25653,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25698,7 +25776,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25795,7 +25874,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25892,7 +25972,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -25989,7 +26070,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26060,7 +26142,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26131,7 +26214,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26273,7 +26357,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26404,7 +26490,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26520,7 +26608,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26639,7 +26729,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26760,7 +26852,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26869,7 +26963,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -26978,7 +27074,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27087,7 +27185,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27170,7 +27270,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27295,7 +27397,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27378,7 +27482,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27480,7 +27586,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27578,7 +27685,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27762,7 +27870,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -27947,7 +28056,8 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -28030,7 +28140,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -28153,7 +28265,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -28330,7 +28444,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -28462,7 +28578,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -28570,7 +28688,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -28863,7 +28982,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29052,7 +29172,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29236,7 +29357,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29342,7 +29465,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29457,7 +29582,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29624,7 +29750,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29729,7 +29857,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29855,7 +29984,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -29977,7 +30108,9 @@
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
       "JB_LW_CAL_FIRE",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -30055,7 +30188,8 @@
     "rarity": "MR",
     "image": "lapswpn_kat_009",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -30152,7 +30286,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "tmr",
@@ -30336,7 +30471,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -30433,7 +30570,9 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
@@ -30705,11 +30844,302 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_LW_STRN"
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_STRN_01"
+    }
+  },
+  "AF_ARM_LW_GRSR_1": {
+    "names": {
+      "en": "白狼の鎧"
+    },
+    "slug": "bai-langno-kai",
+    "stats": {
+      "HP": {
+        "min": 424,
+        "max": 424
+      },
+      "DEF": {
+        "min": 9,
+        "max": 9
+      },
+      "SPR": {
+        "min": 4,
+        "max": 4
+      },
+      "ACCURACY": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_LW_GRSR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "戦乙女の息吹"
+          },
+          "dataId": "SK_ARM_LW_GRSR_1_1",
+          "effects": [
+            {
+              "type": "AP",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "unknow"
+            },
+            {
+              "type": "SLASH_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "zhan-yi-nuno-xi-chui",
+          "cost": {
+            "type": "TP",
+            "value": 20
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_027",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL"
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_GRSR"
+    }
+  },
+  "AF_BOW_LW_RRIR_1": {
+    "names": {
+      "en": "暗殺弓・無心"
+    },
+    "slug": "an-sha-gong-wu-xin",
+    "stats": {
+      "HP": {
+        "min": 55,
+        "max": 55
+      },
+      "ATK": {
+        "min": 95,
+        "max": 95
+      },
+      "ACCURACY": {
+        "min": 15,
+        "max": 15
+      },
+      "CRITIC_RATE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "BOW",
+    "dataId": "AF_BOW_LW_RRIR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_BOW_LW_RRIR_1_1"
+          },
+          "dataId": "SK_BOW_LW_RRIR_1_1",
+          "effects": [
+            {
+              "type": "DOOM_ATK",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "rate": 15,
+              "turn": 5
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_bow_lw_rrir_1_1",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_bow_008",
+    "equippableJobs": [
+      "JB_LW_HUN_FIRE",
+      "JB_LW_FINA"
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_RRIR"
+    }
+  },
+  "AF_CLT_LW_LSWL_1": {
+    "names": {
+      "en": "ラスウェルの服"
+    },
+    "slug": "rasuueruno-fu",
+    "stats": {
+      "HP": {
+        "min": 396,
+        "max": 396
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": 15,
+        "max": 15
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_LW_LSWL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "静かなる闘志"
+          },
+          "dataId": "SK_CLT_LW_LSWL_1_1",
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 20,
+              "maxValue": 40,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "jingkanaru-dou-zhi",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_012",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_FF14_TNCR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL"
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_LSWL"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -31009,7 +31439,8 @@
     "rarity": "MR",
     "image": "lapswpn_kat_005",
     "equippableJobs": [
-      "JB_LW_SAM_FIRE"
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -31116,7 +31547,8 @@
     "image": "lapswpn_spe_008",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -31170,7 +31602,8 @@
     "image": "lapswpn_spe_009",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -31597,7 +32030,8 @@
     "image": "lapswpn_spe_012",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -32005,7 +32439,8 @@
     "image": "lapswpn_spe_013",
     "equippableJobs": [
       "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE"
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR"
     ],
     "acquisition": {
       "type": "Unknown"
@@ -32566,6 +33001,115 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN",
       "JB_LW_STRN"
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SPE_LW_GRSR_2": {
+    "names": {
+      "en": "グラセラ用"
+    },
+    "slug": "gurasera-yong",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "SPEAR",
+    "dataId": "AF_SPE_LW_GRSR_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_spe_014",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_STRN"
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_KAT_LW_LSWL_2": {
+    "names": {
+      "en": "ラスウェル用"
+    },
+    "slug": "rasuueru-yong",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "KATANA",
+    "dataId": "AF_KAT_LW_LSWL_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_kat_008",
+    "equippableJobs": [
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
     ],
     "acquisition": {
       "type": "Unknown"

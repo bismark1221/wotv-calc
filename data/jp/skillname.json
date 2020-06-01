@@ -2757,6 +2757,94 @@
             "value": "デスパレーション"
         },
         {
+            "key": "SK_LW_GRSR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_GRSR_M_1",
+            "value": "トリプルピアッサー"
+        },
+        {
+            "key": "SK_LW_GRSR_M_2",
+            "value": "シュアリーバースト"
+        },
+        {
+            "key": "SK_LW_GRSR_M_3",
+            "value": "リープストライク"
+        },
+        {
+            "key": "SK_LW_GRSR_S_1",
+            "value": "ジャベリンクロウ"
+        },
+        {
+            "key": "SK_LW_GRSR_S_2",
+            "value": "戦乙女の慧眼"
+        },
+        {
+            "key": "SK_LW_GRSR_S_3",
+            "value": "クロスインパクト"
+        },
+        {
+            "key": "SK_LW_GRSR_S_4",
+            "value": "パライズクロス"
+        },
+        {
+            "key": "SK_LW_GRSR_R_1",
+            "value": "カウンタースティング"
+        },
+        {
+            "key": "SK_LW_GRSR_P_1",
+            "value": "迅突の極意"
+        },
+        {
+            "key": "SK_LW_LSWL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_LSWL_M_1",
+            "value": "ぶんしん"
+        },
+        {
+            "key": "SK_LW_LSWL_M_2",
+            "value": "紫電一閃・醒"
+        },
+        {
+            "key": "SK_LW_LSWL_M_3",
+            "value": "雪華終焉"
+        },
+        {
+            "key": "SK_LW_LSWL_M_3_B",
+            "value": "雪華終焉"
+        },
+        {
+            "key": "SK_LW_LSWL_S_1",
+            "value": "明鏡"
+        },
+        {
+            "key": "SK_LW_LSWL_S_2",
+            "value": "秘刀の継承者"
+        },
+        {
+            "key": "SK_LW_LSWL_S_3",
+            "value": "醒夢"
+        },
+        {
+            "key": "SK_LW_LSWL_S_4",
+            "value": "破邪氷嵐"
+        },
+        {
+            "key": "SK_LW_LSWL_R_1",
+            "value": "明鏡・応報"
+        },
+        {
+            "key": "SK_LW_LSWL_P_1",
+            "value": "攻撃アップLv1"
+        },
+        {
+            "key": "SK_LW_LSWL_P_2",
+            "value": "恬淡虚無"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "ブリザラ"
         },
@@ -3893,6 +3981,14 @@
             "value": "デストラクションファング"
         },
         {
+            "key": "SK_LB_LW_GRSR",
+            "value": "ヴァルキリードライブ"
+        },
+        {
+            "key": "SK_LB_LW_LSWL",
+            "value": "雲外蒼天"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "地獄の火炎"
         },
@@ -4398,6 +4494,18 @@
         },
         {
             "key": "SK_MA_LW_STRN_01",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_GRSR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_RRIR",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_LSWL",
             "value": "マスターアビリティ"
         },
         {
@@ -5087,6 +5195,14 @@
         {
             "key": "SK_ARM_LW_STRN_01_1_1",
             "value": "尽き果てぬ憎悪"
+        },
+        {
+            "key": "SK_ARM_LW_GRSR_1_1",
+            "value": "戦乙女の息吹"
+        },
+        {
+            "key": "SK_CLT_LW_LSWL_1_1",
+            "value": "静かなる闘志"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",
@@ -5819,6 +5935,10 @@
         {
             "key": "SK_BTL_KILLER_MAN_1-100_U",
             "value": "人キラー1-100アップ"
+        },
+        {
+            "key": "SK_BTL_MKILLER_MAN_1-100_U",
+            "value": "魔法攻撃時人キラー1-100アップ"
         },
         {
             "key": "SK_BTL_KILLER_FIRE_1-100_U",
