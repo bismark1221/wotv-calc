@@ -44,6 +44,7 @@ export class BuilderUnitComponent implements OnInit {
 
   showStatsDetail = false
   showBuffsDetail = false
+  showActiveDetail = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -256,8 +257,6 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.unit = null
     }
-
-    this.getExportableLink()
   }
 
   getExportableLink() {
@@ -344,10 +343,12 @@ export class BuilderUnitComponent implements OnInit {
 
   rightClickNode(node) {
     this.unitService.rightClickNode(node)
+    this.unitService.getActiveSkills()
   }
 
   clickNode(node) {
     this.unitService.clickNode(node)
+    this.unitService.getActiveSkills()
   }
 
   canActivateNode(node) {
@@ -439,5 +440,9 @@ export class BuilderUnitComponent implements OnInit {
 
   copyLink() {
     this.clipboardService.copyFromContent(this.getExportableLink())
+  }
+
+  changeSubJob() {
+    this.unitService.getActiveSkills()
   }
 }

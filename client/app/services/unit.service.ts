@@ -365,6 +365,7 @@ export class UnitService {
     this.updateMaxLevel();
     this.updateMaxJobLevel();
     this.changeLevel();
+    this.getActiveSkills();
 
     this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
@@ -1041,6 +1042,8 @@ export class UnitService {
         }
       }
     })
+
+    this.getActiveSkills();
   }
 
   disableNotAvailableNodes() {
@@ -1049,6 +1052,8 @@ export class UnitService {
         this.hideNode(node, true)
       }
     })
+
+    this.getActiveSkills();
   }
 
   getAvailableEquipments(pos) {
@@ -1109,5 +1114,30 @@ export class UnitService {
     })
 
     return availableEquipments
+  }
+
+  getActiveSkills() {
+    this.unit.activeSkills = []
+
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      let node = this.unit.board.nodes[nodeId]
+      if (node.level && node.level >= 1 && node.skill.type == "skill" &&
+        (node.skill.mainSkill || node.skill.unlockJob == this.unit.subjob + 1)
+      ) {
+        let skill = node.skill
+        skill.level = node.level
+        skill.name = this.nameService.getName(skill)
+
+        skill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+        });
+
+        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+
+        this.skillService.formatRange(this.unit, skill);
+
+        this.unit.activeSkills.push(skill)
+      }
+    })
   }
 }

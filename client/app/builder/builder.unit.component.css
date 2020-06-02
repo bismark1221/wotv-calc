@@ -9,7 +9,7 @@
 }
 
 .statsTable {
-  width: 800px;
+  width: 1000px;
 }
 
 .unitsCol {
@@ -203,4 +203,8 @@ tr.disable {
 .background_armor {
   background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
   background-size: 80px;
+}
+
+.damageImg, .skilImg, .damageSkillImg {
+  height: 32px;
 }

@@ -125,7 +125,7 @@ export class SkillService {
         value = " (" + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect) + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
-          let valueForLevel = Math.floor(minValue + ((effect.maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
+          let valueForLevel = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
           value = " (" + (100 + valueForLevel) + this.getDamageCalc(effect) + ")"
         } else {
           value = " (" + minValue + this.getDamageCalc(effect) + ")"

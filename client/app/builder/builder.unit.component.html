@@ -252,7 +252,7 @@
       </tr>
       <tr>
         <td>
-          <select [(ngModel)]="unit.subjob">
+          <select [(ngModel)]="unit.subjob" (ngModelChange)="changeSubJob()">
             <option *ngFor="let i of [0, 1, 2]" [ngValue]="i">
               {{ unit.jobsData[i].name }}
             </option>
@@ -335,6 +335,58 @@
     </tbody>
   </table>
   <button (click)="showHideDetail('Buffs')">Buffs Detail</button>
+
+  <table class="statsTable">
+    <tbody>
+      <tr>
+        <th colspan="9">Active skills</th>
+      </tr>
+    </tbody>
+    <tbody *ngIf="showActiveDetail">
+      <tr>
+        <th class="skillTypeTd">Type</th>
+        <th class="skillNameTd">name</th>
+        <th>Effects</th>
+        <th class="rangeTd">Range</th>
+        <th class="skillCastTd">Casts</th>
+        <th class="skillHitTd">Hits</th>
+        <th class="skillCostTd">Cost</th>
+      </tr>
+      <tr *ngFor="let skill of unit.activeSkills">
+        <td>
+          <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
+          <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+          <div *ngIf="skill.time && skill.time.minValue">
+            <ng-template #tip_time>
+              <div>
+                Min time: {{ skill.time.minValue }}<br />
+                Max time: {{ skill.time.maxValue }}
+              </div>
+            </ng-template>
+            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+          </div>
+        </td>
+        <td>{{ skill.name }}</td>
+        <td class="skillEffectTd">
+          <div>{{ skill.counterHtml }}</div>
+          <div [innerHTML]="skill.damageHtml"></div>
+          <div *ngFor="let effect of skill.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td>
+          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+          </div>
+        </td>
+        <td>{{ skill.count }}</td>
+        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="showHideDetail('Active')">Show active skills</button>
 </div>
 
 <div class="row" *ngIf="unit">
