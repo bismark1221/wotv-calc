@@ -45,10 +45,11 @@
 
   --card-background: #E8E6DF;
   --card-title: #3D3A41;
+  --home-title: #1D1B1B;
 }
 
 body {
-  padding-top: 5rem;
+  padding-top: 60px;
   font-family: Palatino, Helvetica, sans-serif !important;
   background-color: var(--body-background);
   color: var(--body-color);
@@ -444,4 +445,8 @@ small {
 
 .link-modal .modal-dialog {
   width: 270px;
+}
+
+.markdownHome p {
+  margin-bottom: 2px;
 }
