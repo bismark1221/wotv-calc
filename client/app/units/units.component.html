@@ -1,20 +1,45 @@
-<div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-  <table class="unitsTable">
-    <tr>
-      <td colspan="4">
-        <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
-      </td>
-    </tr>
-    <tr *ngFor="let line of formattedUnits[rarity]; let j = index">
-      <td *ngFor="let unit of formattedUnits[rarity][j]" class="unitsCol">
-        <div>
-          <a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">
-            <img class="unitImg" src="{{'assets/units/' + unit.image + '_m.png'}}" />
-          </a>
+<div class="units">
+  <div class="leftBlock">
+    <h1>FILTERS</h1>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <!-- input search name -->
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalUnits">
+          A total of <span class="countUnits">{{ units.length }}</span> characters found
         </div>
-        <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" />
-        <span class="unitName"><a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">{{ unit.name }}</a></span>
-      </td>
-    </tr>
-  </table>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div>
+            Sort by :
+          </div>
+          <div>
+            Order by :
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unitsList">
+      <div class="unitsCol" *ngFor="let unit of units">
+        <a [routerLink]="[getRoute('/'  + unit.type + '/' + unit.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" *ngIf="unit.element" />
+          </div>
+          <div>
+            <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="unitName">{{ unit.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

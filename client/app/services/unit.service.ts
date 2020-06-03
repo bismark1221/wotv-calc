@@ -199,23 +199,63 @@ export class UnitService {
     return units;
   }
 
-  getUnitsForListing() {
-    let units = {
-      N: [],
-      R: [],
-      SR: [],
-      MR: [],
-      UR: []
-    };
-    let rawUnits = JSON.parse(JSON.stringify(this.getRaw()))
+  sortByRarity(units) {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
 
-    Object.keys(rawUnits).forEach(unitId => {
-      let unit = new Unit();
-      unit.constructFromJson(rawUnits[unitId], this.translateService);
-      units[unit.rarity].push(unit);
-    });
+    units.sort((a: any, b: any) => {
+      if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
+        return -1
+      } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
+        return 1
+      } else {
+        let x = this.i(a.getName(this.translateService));
+        let y = this.i(b.getName(this.translateService));
 
-    return units;
+        const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+        const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+        const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+        const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+        if (yD) {
+            if (xD < yD) { return -1; }
+            else if (xD > yD) { return 1; }
+        }
+
+        for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+            this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+            this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+            if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+                return isNaN(this.oFxNcL) ? 1 : -1;
+            }
+            if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+                var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+                return comp / Math.abs(comp);
+            }
+            if (this.oFxNcL < this.oFyNcL) { return -1; }
+            else if (this.oFxNcL > this.oFyNcL) { return 1; }
+        }
+      }
+    })
+
+    return units
+  }
+
+  getUnitsForListing(sort, filter) {
+    this.getUnits();
+
+    switch (sort) {
+      case "rarity" :
+        this.sortByRarity(this.units)
+      break
+      default :
+        console.log("not managed sort")
+      break
+    }
+
+    console.log(this.units)
+
+    return this.units;
   }
 
   getUnitsForBuilder(translate) {

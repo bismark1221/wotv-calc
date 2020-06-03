@@ -11,8 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./units.component.css']
 })
 export class UnitsComponent implements OnInit {
-  private units;
-  private formattedUnits = {};
+  units;
 
   constructor(
     private unitService: UnitService,
@@ -30,35 +29,12 @@ export class UnitsComponent implements OnInit {
   }
 
   private getUnits(): void {
-    let lang = this.translateService.currentLang
-    this.units = this.unitService.getUnitsForListing();
-
-    Object.keys(this.units).forEach(rarity => {
-      this.unitService.sortByName(this.units[rarity], this.translateService)
-
-      this.formattedUnits[rarity] = [];
-      let tableIndex = -1;
-      this.units[rarity].forEach((unit, index) => {
-        if (index % 4 === 0) {
-          tableIndex++;
-          this.formattedUnits[rarity][tableIndex] = [];
-        }
-
-        unit.name = this.nameService.getName(unit)
-        this.formattedUnits[rarity][tableIndex].push(unit)
-      });
-    });
+    this.units = this.unitService.getUnitsForListing("rarity", null);
   }
 
   private translateUnits() {
-    let lang = this.translateService.currentLang
-
-    Object.keys(this.formattedUnits).forEach(rarity => {
-      this.formattedUnits[rarity].forEach(line => {
-        line.forEach(unit => {
-          unit.name = this.nameService.getName(unit)
-        });
-      });
+    this.units.forEach(unit => {
+      unit.name = this.nameService.getName(unit)
     });
   }
 

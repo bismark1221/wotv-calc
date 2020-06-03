@@ -1,27 +1,76 @@
-.elementImg {
-  height: 32px;
+.units {
+  width: 100%;
+  text-align: center;
+}
+
+.leftBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  float: left;
+}
+
+.rightBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+.upperBlock {
+
+}
+
+.countUnits {
+  font-weight: bold;
 }
 
 .unitImg {
-  height: 150px;
+  height: 100px;
   margin-top: 10px;
+}
+
+.elementImg, .rarityImg {
+  height: 26px;
+}
+
+.rarityImg {
+  float: left;
+}
+
+.elementImg {
+  float: right;
+}
+
+.unitsCol {
+  background-color: var(--card-background);
+  width: 150px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title);
+  display: table;
+  height: 40px;
+  width: 100%;
 }
 
 .unitName {
   font-weight: bold;
-  margin-left: 10px
-}
-
-.unitsTable {
-  width: 800px;
-}
-
-.unitsCol {
-  width: 200px;
-}
-
-.row {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--white);
 }
