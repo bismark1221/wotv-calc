@@ -496,7 +496,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_02",
@@ -542,7 +543,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_04",
@@ -703,7 +705,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_11",
@@ -795,7 +798,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_15",
@@ -956,7 +960,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_22",
@@ -979,7 +984,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_23",
@@ -1048,7 +1054,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_26",
@@ -1071,7 +1078,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_27",
@@ -1186,7 +1194,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_32",
@@ -1209,7 +1218,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IFRT_33",
@@ -1918,7 +1928,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_09",
@@ -1941,7 +1952,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_10",
@@ -2010,7 +2022,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_13",
@@ -2033,7 +2046,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_14",
@@ -2171,7 +2185,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_20",
@@ -2194,7 +2209,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_21",
@@ -2263,7 +2279,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_24",
@@ -2286,7 +2303,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_GLEM_25",
@@ -3064,7 +3082,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_04",
@@ -3179,7 +3198,8 @@
                 "type": "FIRE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_09",
@@ -3202,7 +3222,8 @@
                 "type": "FIRE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_10",
@@ -3317,7 +3338,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_15",
@@ -3432,7 +3454,8 @@
                 "type": "FIRE_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_20",
@@ -3455,7 +3478,8 @@
                 "type": "FIRE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_21",
@@ -3570,7 +3594,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_26",
@@ -3593,7 +3618,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_27",
@@ -3731,7 +3757,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 7,
                 "maxValue": 7,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SIRE_33",
@@ -4247,7 +4274,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_02",
@@ -4454,7 +4482,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_11",
@@ -4546,7 +4575,8 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_15",
@@ -4707,7 +4737,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_22",
@@ -4730,7 +4761,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_23",
@@ -4799,7 +4831,8 @@
                 "type": "DARK_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_26",
@@ -4822,7 +4855,8 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_27",
@@ -4937,7 +4971,8 @@
                 "type": "BEAST_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_32",
@@ -4960,7 +4995,8 @@
                 "type": "DARK_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_IGNT_33",
@@ -5475,7 +5511,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_02",
@@ -5682,7 +5719,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_11",
@@ -5774,7 +5812,8 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_15",
@@ -5935,7 +5974,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_22",
@@ -5958,7 +5998,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_23",
@@ -6027,7 +6068,8 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_26",
@@ -6050,7 +6092,8 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_27",
@@ -6165,7 +6208,8 @@
                 "type": "DEMON_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_32",
@@ -6188,7 +6232,8 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BHMT_33",
@@ -6945,7 +6990,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_11",
@@ -7083,7 +7129,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_17",
@@ -7106,7 +7153,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_18",
@@ -7198,7 +7246,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_22",
@@ -7221,7 +7270,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_23",
@@ -7336,7 +7386,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_28",
@@ -7359,7 +7410,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_29",
@@ -7428,7 +7480,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_MABR_32",
@@ -7501,1262 +7554,6 @@
       ]
     },
     "slug": "malboro"
-  },
-  "UN_LW_S_LAMA_01": {
-    "dataId": "UN_LW_S_LAMA_01",
-    "names": {
-      "en": "Lamia Queen",
-      "fr": "Reine Lamia"
-    },
-    "rarity": "N",
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "ICE_KILLER",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "unknow"
-          },
-          {
-            "type": "CONFUSION_ATK",
-            "calcType": "percent",
-            "rate": 30,
-            "turn": 3
-          }
-        ],
-        "dataId": "SK_SMN_LAMA",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "Bewitching Tail",
-          "fr": "Queue ensorceleuse"
-        },
-        "slug": "bewitching-tail",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 10,
-          "w": 1
-        },
-        "based": "physic",
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "strike",
-          "effType": "DAMAGE"
-        },
-        "elem": [
-          "fire"
-        ]
-      }
-    ],
-    "stats": {
-      "HP": [
-        {
-          "min": 85,
-          "max": 415
-        },
-        {
-          "min": 456,
-          "max": 821
-        }
-      ],
-      "TP": [
-        {
-          "min": 20,
-          "max": 24
-        },
-        {
-          "min": 24,
-          "max": 25
-        }
-      ],
-      "AP": [
-        {
-          "min": 20,
-          "max": 24
-        },
-        {
-          "min": 24,
-          "max": 25
-        }
-      ],
-      "ATK": [
-        {
-          "min": 21,
-          "max": 31
-        },
-        {
-          "min": 33,
-          "max": 48
-        }
-      ],
-      "DEF": [
-        {},
-        {}
-      ],
-      "SPR": [
-        {},
-        {}
-      ],
-      "MAG": [
-        {
-          "min": 21,
-          "max": 31
-        },
-        {
-          "min": 33,
-          "max": 48
-        }
-      ],
-      "DEX": [
-        {
-          "min": 21,
-          "max": 32
-        },
-        {
-          "min": 33,
-          "max": 46
-        }
-      ],
-      "AGI": [
-        {
-          "min": 8,
-          "max": 10
-        },
-        {
-          "min": 10,
-          "max": 12
-        }
-      ],
-      "LUCK": [
-        {
-          "min": 21,
-          "max": 32
-        },
-        {
-          "min": 33,
-          "max": 46
-        }
-      ],
-      "INITIAL_AP": [
-        {},
-        {}
-      ],
-      "ACCURACY": [
-        {},
-        {}
-      ],
-      "CRITIC_RATE": [
-        {},
-        {}
-      ],
-      "CRITIC_AVOID": [
-        {},
-        {}
-      ],
-      "EVADE": [
-        {},
-        {}
-      ],
-      "FIRE_RES": [
-        {},
-        {}
-      ],
-      "ICE_RES": [
-        {
-          "min": 5,
-          "max": 5
-        },
-        {
-          "min": 5,
-          "max": 5
-        }
-      ],
-      "EARTH_RES": [
-        {},
-        {}
-      ],
-      "WIND_RES": [
-        {},
-        {}
-      ],
-      "LIGHTNING_RES": [
-        {},
-        {}
-      ],
-      "WATER_RES": [
-        {
-          "min": -10,
-          "max": -10
-        },
-        {
-          "min": -10,
-          "max": -10
-        }
-      ],
-      "LIGHT_RES": [
-        {},
-        {}
-      ],
-      "DARK_RES": [
-        {},
-        {}
-      ],
-      "SLASH_RES": [
-        {},
-        {}
-      ],
-      "PIERCE_RES": [
-        {},
-        {}
-      ],
-      "STRIKE_RES": [
-        {},
-        {}
-      ],
-      "MISSILE_RES": [
-        {},
-        {}
-      ],
-      "MAGIC_RES": [
-        {},
-        {}
-      ],
-      "POISON_RES": [
-        {},
-        {}
-      ],
-      "BLIND_RES": [
-        {},
-        {}
-      ],
-      "SLEEP_RES": [
-        {},
-        {}
-      ],
-      "SILENCE_RES": [
-        {},
-        {}
-      ],
-      "PARALYZE_RES": [
-        {},
-        {}
-      ],
-      "CONFUSION_RES": [
-        {},
-        {}
-      ],
-      "PETRIFY_RES": [
-        {},
-        {}
-      ],
-      "TOAD_RES": [
-        {},
-        {}
-      ],
-      "CHARM_RES": [
-        {},
-        {}
-      ],
-      "SLOW_RES": [
-        {},
-        {}
-      ],
-      "STOP_RES": [
-        {},
-        {}
-      ],
-      "IMMOBILIZE_RES": [
-        {},
-        {}
-      ],
-      "DISABLE_RES": [
-        {},
-        {}
-      ],
-      "BERSERK_RES": [
-        {},
-        {}
-      ],
-      "DOOM_RES": [
-        {},
-        {}
-      ],
-      "MOVE": [
-        {
-          "min": 0,
-          "max": 0
-        },
-        {
-          "min": 0,
-          "max": 0
-        }
-      ],
-      "JUMP": [
-        {
-          "min": 0,
-          "max": 0
-        },
-        {
-          "min": 0,
-          "max": 0
-        }
-      ]
-    },
-    "SPs": [
-      [
-        0,
-        10,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3
-      ],
-      [
-        0,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6
-      ]
-    ],
-    "element": "fire",
-    "image": "lapslama",
-    "board": {
-      "nodes": {
-        "1": {
-          "dataId": "BUFF_LAMA_01_01",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 10,
-            "effects": [
-              {
-                "type": "ACCURACY",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_01",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "2": {
-          "dataId": "BUFF_LAMA_01_02",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 10,
-            "effects": [
-              {
-                "type": "REAPER_KILLER",
-                "minValue": 2,
-                "maxValue": 2,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_02",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "3": {
-          "dataId": "BUFF_LAMA_01_03",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 10,
-            "effects": [
-              {
-                "type": "CRITIC_EVADE",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_03",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "4": {
-          "dataId": "BUFF_LAMA_01_04",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 10,
-            "effects": [
-              {
-                "type": "ATK",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "unknow"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_04",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "5": {
-          "dataId": "BUFF_LAMA_01_05",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 10,
-            "effects": [
-              {
-                "type": "ATK",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "unknow"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_05",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "6": {
-          "dataId": "BUFF_LAMA_01_06",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 10,
-            "effects": [
-              {
-                "type": "EVOCATION_MAGIC",
-                "minValue": 1,
-                "maxValue": 1,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_06",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "7": {
-          "dataId": "BUFF_LAMA_01_07",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 40,
-            "effects": [
-              {
-                "type": "EVOCATION_MAGIC",
-                "minValue": 1,
-                "maxValue": 1,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_07",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "8": {
-          "dataId": "BUFF_LAMA_01_08",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "ACCURACY",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_08",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "9": {
-          "dataId": "BUFF_LAMA_01_09",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "STRIKE_RES",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_09",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "10": {
-          "dataId": "BUFF_LAMA_01_10",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "STRIKE_RES",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_10",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "11": {
-          "dataId": "BUFF_LAMA_01_11",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 35,
-            "effects": [
-              {
-                "type": "REAPER_KILLER",
-                "minValue": 2,
-                "maxValue": 2,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_11",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "12": {
-          "dataId": "BUFF_LAMA_01_12",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "CRITIC_EVADE",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_12",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "13": {
-          "dataId": "BUFF_LAMA_01_13",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "STRIKE_ATK",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_13",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "14": {
-          "dataId": "BUFF_LAMA_01_14",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "STRIKE_ATK",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_14",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "15": {
-          "dataId": "BUFF_LAMA_01_15",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 35,
-            "effects": [
-              {
-                "type": "ICE_KILLER",
-                "minValue": 1,
-                "maxValue": 1,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_15",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "16": {
-          "dataId": "BUFF_LAMA_01_16",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "ATK",
-                "minValue": 8,
-                "maxValue": 8,
-                "calcType": "unknow"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_16",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "17": {
-          "dataId": "BUFF_LAMA_01_17",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "WATER_RES",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_17",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "18": {
-          "dataId": "BUFF_LAMA_01_18",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 30,
-            "effects": [
-              {
-                "type": "WATER_RES",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_18",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "19": {
-          "dataId": "BUFF_LAMA_01_19",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 55,
-            "effects": [
-              {
-                "type": "EVOCATION_MAGIC",
-                "minValue": 1,
-                "maxValue": 1,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_19",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "21": {
-          "dataId": "BUFF_LAMA_01_20",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 70,
-            "effects": [
-              {
-                "type": "STRIKE_RES",
-                "minValue": 5,
-                "maxValue": 5,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_20",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "22": {
-          "dataId": "BUFF_LAMA_01_21",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 60,
-            "effects": [
-              {
-                "type": "STRIKE_RES",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_21",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "24": {
-          "dataId": "BUFF_LAMA_01_22",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 40,
-            "effects": [
-              {
-                "type": "REAPER_KILLER",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_22",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "25": {
-          "dataId": "BUFF_LAMA_01_23",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 70,
-            "effects": [
-              {
-                "type": "REAPER_KILLER",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_23",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "27": {
-          "dataId": "BUFF_LAMA_01_24",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 55,
-            "effects": [
-              {
-                "type": "STRIKE_ATK",
-                "minValue": 5,
-                "maxValue": 5,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_24",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "28": {
-          "dataId": "BUFF_LAMA_01_25",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 60,
-            "effects": [
-              {
-                "type": "STRIKE_ATK",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_25",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "30": {
-          "dataId": "BUFF_LAMA_01_26",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 40,
-            "effects": [
-              {
-                "type": "ICE_KILLER",
-                "minValue": 3,
-                "maxValue": 3,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_26",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "31": {
-          "dataId": "BUFF_LAMA_01_27",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 50,
-            "effects": [
-              {
-                "type": "ICE_KILLER",
-                "minValue": 2,
-                "maxValue": 2,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_27",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "33": {
-          "dataId": "BUFF_LAMA_01_28",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 40,
-            "effects": [
-              {
-                "type": "WATER_RES",
-                "minValue": 5,
-                "maxValue": 5,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_28",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "34": {
-          "dataId": "BUFF_LAMA_01_29",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 60,
-            "effects": [
-              {
-                "type": "WATER_RES",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "resistance"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_29",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "36": {
-          "dataId": "BUFF_LAMA_01_30",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 50,
-            "effects": [
-              {
-                "type": "EVOCATION_MAGIC",
-                "minValue": 2,
-                "maxValue": 2,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_30",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "37": {
-          "dataId": "BUFF_LAMA_01_31",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 90,
-            "effects": [
-              {
-                "type": "EVOCATION_MAGIC",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "fixe"
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_31",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "45": {
-          "dataId": "BUFF_LAMA_01_32",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 90,
-            "effects": [
-              {
-                "type": "REAPER_KILLER",
-                "minValue": 5,
-                "maxValue": 5,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_32",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        },
-        "53": {
-          "dataId": "BUFF_LAMA_01_33",
-          "type": "buff",
-          "skill": {
-            "unlockStar": 2,
-            "sp": 80,
-            "effects": [
-              {
-                "type": "ICE_KILLER",
-                "minValue": 4,
-                "maxValue": 4,
-                "calcType": "percent",
-                "rate": 200
-              }
-            ],
-            "dataId": "BUFF_LAMA_01_33",
-            "type": "buff",
-            "count": null,
-            "maxLevel": null,
-            "hit": null,
-            "pierce": null,
-            "ctbreak": null
-          }
-        }
-      },
-      "lines": [
-        0,
-        1,
-        2,
-        10,
-        4,
-        5,
-        29,
-        13,
-        14,
-        32,
-        17,
-        19,
-        20,
-        36,
-        24,
-        25,
-        26,
-        40,
-        42,
-        75,
-        48,
-        51,
-        78,
-        81,
-        58,
-        84,
-        62,
-        87,
-        68,
-        72,
-        131,
-        104,
-        117
-      ]
-    },
-    "slug": "lamia-queen"
   },
   "UN_LW_S_CACT": {
     "dataId": "UN_LW_S_CACT",
@@ -9229,7 +8026,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_02",
@@ -9390,7 +8188,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_09",
@@ -9574,7 +8373,8 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_17",
@@ -9597,7 +8397,8 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_18",
@@ -9643,7 +8444,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_20",
@@ -9666,7 +8468,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_21",
@@ -9827,7 +8630,8 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_28",
@@ -9850,7 +8654,8 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_CACT_29",
@@ -10541,7 +9346,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ARMN_05",
@@ -10794,7 +9600,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ARMN_16",
@@ -11706,7 +10513,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_02",
@@ -11867,7 +10675,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_09",
@@ -12051,7 +10860,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_17",
@@ -12074,7 +10884,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_18",
@@ -12120,7 +10931,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_20",
@@ -12143,7 +10955,8 @@
                 "type": "ELEMENTAL_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_21",
@@ -12304,7 +11117,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_28",
@@ -12327,7 +11141,8 @@
                 "type": "EARTH_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_ZUUU_29",
@@ -12941,7 +11756,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_02",
@@ -13102,7 +11918,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_09",
@@ -13286,7 +12103,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_17",
@@ -13309,7 +12127,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_18",
@@ -13355,7 +12174,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_20",
@@ -13378,7 +12198,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_21",
@@ -13539,7 +12360,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_28",
@@ -13562,7 +12384,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_OGRE_29",
@@ -14175,7 +12998,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_02",
@@ -14336,7 +13160,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_09",
@@ -14520,7 +13345,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_17",
@@ -14543,7 +13369,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_18",
@@ -14589,7 +13416,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_20",
@@ -14612,7 +13440,8 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_21",
@@ -14773,7 +13602,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_28",
@@ -14796,7 +13626,8 @@
                 "type": "ICE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_BOMB_29",
@@ -15436,7 +14267,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_02",
@@ -15482,7 +14314,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_04",
@@ -15643,7 +14476,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_11",
@@ -15735,7 +14569,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_15",
@@ -15896,7 +14731,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_22",
@@ -15919,7 +14755,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_23",
@@ -15988,7 +14825,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_26",
@@ -16011,7 +14849,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_27",
@@ -16126,7 +14965,8 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_32",
@@ -16149,7 +14989,8 @@
                 "type": "WIND_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_SHIV_33",
@@ -16697,7 +15538,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_02",
@@ -16743,7 +15585,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_04",
@@ -16904,7 +15747,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_11",
@@ -16996,7 +15840,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_15",
@@ -17157,7 +16002,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_22",
@@ -17180,7 +16026,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_23",
@@ -17249,7 +16096,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_26",
@@ -17272,7 +16120,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_27",
@@ -17387,7 +16236,8 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_32",
@@ -17410,7 +16260,8 @@
                 "type": "WATER_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_RAMU_33",
@@ -18705,5 +17556,2523 @@
       ]
     },
     "slug": "odin"
+  },
+  "UN_LW_S_LAMA_01": {
+    "dataId": "UN_LW_S_LAMA_01",
+    "names": {
+      "en": "Lamia Queen",
+      "fr": "Reine Lamia"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ICE_KILLER",
+            "minValue": 25,
+            "maxValue": 25,
+            "calcType": "unknow"
+          },
+          {
+            "type": "CONFUSION_ATK",
+            "calcType": "percent",
+            "rate": 30,
+            "turn": 3
+          }
+        ],
+        "dataId": "SK_SMN_LAMA",
+        "type": "esper",
+        "mainSkill": false,
+        "names": {
+          "en": "Bewitching Tail",
+          "fr": "Queue ensorceleuse"
+        },
+        "slug": "bewitching-tail",
+        "cost": {
+          "type": "TP"
+        },
+        "count": 1,
+        "maxLevel": 20,
+        "range": {
+          "h": 1,
+          "l": 3,
+          "s": 10,
+          "w": 1
+        },
+        "based": "physic",
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "strike",
+          "effType": "DAMAGE"
+        },
+        "elem": [
+          "fire"
+        ]
+      }
+    ],
+    "stats": {
+      "HP": [
+        {
+          "min": 85,
+          "max": 415
+        },
+        {
+          "min": 456,
+          "max": 821
+        }
+      ],
+      "TP": [
+        {
+          "min": 20,
+          "max": 24
+        },
+        {
+          "min": 24,
+          "max": 25
+        }
+      ],
+      "AP": [
+        {
+          "min": 20,
+          "max": 24
+        },
+        {
+          "min": 24,
+          "max": 25
+        }
+      ],
+      "ATK": [
+        {
+          "min": 21,
+          "max": 31
+        },
+        {
+          "min": 33,
+          "max": 48
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 21,
+          "max": 31
+        },
+        {
+          "min": 33,
+          "max": 48
+        }
+      ],
+      "DEX": [
+        {
+          "min": 21,
+          "max": 32
+        },
+        {
+          "min": 33,
+          "max": 46
+        }
+      ],
+      "AGI": [
+        {
+          "min": 8,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 12
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 21,
+          "max": 32
+        },
+        {
+          "min": 33,
+          "max": 46
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "EARTH_RES": [
+        {},
+        {}
+      ],
+      "WIND_RES": [
+        {},
+        {}
+      ],
+      "LIGHTNING_RES": [
+        {},
+        {}
+      ],
+      "WATER_RES": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "LIGHT_RES": [
+        {},
+        {}
+      ],
+      "DARK_RES": [
+        {},
+        {}
+      ],
+      "SLASH_RES": [
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {}
+      ],
+      "BERSERK_RES": [
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ],
+    "element": "fire",
+    "image": "lapslama",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_LAMA_01_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "BUFF_LAMA_01_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "REAPER_KILLER",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "3": {
+          "dataId": "BUFF_LAMA_01_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_LAMA_01_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "BUFF_LAMA_01_05",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_05",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "6": {
+          "dataId": "BUFF_LAMA_01_06",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_06",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "BUFF_LAMA_01_07",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_07",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "8": {
+          "dataId": "BUFF_LAMA_01_08",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_08",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "BUFF_LAMA_01_09",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STRIKE_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_09",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "10": {
+          "dataId": "BUFF_LAMA_01_10",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STRIKE_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_10",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "11": {
+          "dataId": "BUFF_LAMA_01_11",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "REAPER_KILLER",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_11",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_LAMA_01_12",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_12",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "BUFF_LAMA_01_13",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STRIKE_ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_13",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "14": {
+          "dataId": "BUFF_LAMA_01_14",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STRIKE_ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_14",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "BUFF_LAMA_01_15",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_15",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "16": {
+          "dataId": "BUFF_LAMA_01_16",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_16",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "17": {
+          "dataId": "BUFF_LAMA_01_17",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "WATER_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_17",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "18": {
+          "dataId": "BUFF_LAMA_01_18",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "WATER_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_18",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_LAMA_01_19",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_19",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "BUFF_LAMA_01_20",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "STRIKE_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_20",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "22": {
+          "dataId": "BUFF_LAMA_01_21",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "STRIKE_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_21",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "BUFF_LAMA_01_22",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "REAPER_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_22",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "25": {
+          "dataId": "BUFF_LAMA_01_23",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "REAPER_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_23",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "27": {
+          "dataId": "BUFF_LAMA_01_24",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "STRIKE_ATK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_24",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "28": {
+          "dataId": "BUFF_LAMA_01_25",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "STRIKE_ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_25",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_LAMA_01_26",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_26",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_LAMA_01_27",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_27",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "BUFF_LAMA_01_28",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "WATER_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_28",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "34": {
+          "dataId": "BUFF_LAMA_01_29",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "WATER_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_29",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "36": {
+          "dataId": "BUFF_LAMA_01_30",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_30",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "BUFF_LAMA_01_31",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_31",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "45": {
+          "dataId": "BUFF_LAMA_01_32",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "REAPER_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_32",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "53": {
+          "dataId": "BUFF_LAMA_01_33",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 80,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_LAMA_01_33",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        10,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        24,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117
+      ]
+    },
+    "slug": "lamia-queen"
+  },
+  "UN_LW_S_TSLP": {
+    "dataId": "UN_LW_S_TSLP",
+    "names": {
+      "en": "Tetra Sylphid"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "WIND_RES",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "EVADE",
+            "minValue": 10,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_SMN_TSLP",
+        "type": "esper",
+        "mainSkill": false,
+        "names": {
+          "en": "Heavenswind"
+        },
+        "slug": "heavenswind",
+        "cost": {
+          "type": "TP"
+        },
+        "count": 1,
+        "maxLevel": 20,
+        "range": {
+          "h": 2,
+          "l": 4,
+          "s": 1
+        },
+        "based": "magic",
+        "aoe": {
+          "s": 0,
+          "l": 1,
+          "h": 2
+        },
+        "hit": 100,
+        "damage": {
+          "minValue": 135,
+          "maxValue": 175,
+          "type": "magic",
+          "effType": "DAMAGE"
+        },
+        "elem": [
+          "wind"
+        ]
+      }
+    ],
+    "stats": {
+      "HP": [
+        {
+          "min": 88,
+          "max": 429
+        },
+        {
+          "min": 472,
+          "max": 849
+        }
+      ],
+      "TP": [
+        {
+          "min": 22,
+          "max": 26
+        },
+        {
+          "min": 26,
+          "max": 28
+        }
+      ],
+      "AP": [
+        {
+          "min": 26,
+          "max": 31
+        },
+        {
+          "min": 31,
+          "max": 33
+        }
+      ],
+      "ATK": [
+        {
+          "min": 26,
+          "max": 39
+        },
+        {
+          "min": 41,
+          "max": 60
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 26,
+          "max": 39
+        },
+        {
+          "min": 41,
+          "max": 60
+        }
+      ],
+      "DEX": [
+        {
+          "min": 29,
+          "max": 44
+        },
+        {
+          "min": 45,
+          "max": 62
+        }
+      ],
+      "AGI": [
+        {
+          "min": 11,
+          "max": 13
+        },
+        {
+          "min": 13,
+          "max": 16
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 27,
+          "max": 41
+        },
+        {
+          "min": 42,
+          "max": 58
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "EARTH_RES": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "WIND_RES": [
+        {},
+        {}
+      ],
+      "LIGHTNING_RES": [
+        {},
+        {}
+      ],
+      "WATER_RES": [
+        {},
+        {}
+      ],
+      "LIGHT_RES": [
+        {},
+        {}
+      ],
+      "DARK_RES": [
+        {},
+        {}
+      ],
+      "SLASH_RES": [
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {}
+      ],
+      "BERSERK_RES": [
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ],
+    "element": "wind",
+    "image": "lapstslp",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_TSLP_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "BUFF_TSLP_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "AQUATIC_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "3": {
+          "dataId": "BUFF_TSLP_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_TSLP_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EARTH_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "BUFF_TSLP_05",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "AP",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "BUFF_TSLP_05",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "6": {
+          "dataId": "BUFF_TSLP_06",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_06",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "BUFF_TSLP_07",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_07",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "8": {
+          "dataId": "BUFF_TSLP_08",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_08",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "BUFF_TSLP_09",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_09",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "10": {
+          "dataId": "BUFF_TSLP_10",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_10",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "11": {
+          "dataId": "BUFF_TSLP_11",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "AQUATIC_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_11",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_TSLP_12",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_12",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "BUFF_TSLP_13",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "MISSILE_ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_13",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "14": {
+          "dataId": "BUFF_TSLP_14",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "MISSILE_ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_14",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "BUFF_TSLP_15",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "EARTH_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_15",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "16": {
+          "dataId": "BUFF_TSLP_16",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "AP",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "BUFF_TSLP_16",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "17": {
+          "dataId": "BUFF_TSLP_17",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "WIND_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_TSLP_17",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "18": {
+          "dataId": "BUFF_TSLP_18",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "WIND_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_TSLP_18",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_TSLP_19",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_19",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "BUFF_TSLP_20",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_20",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "22": {
+          "dataId": "BUFF_TSLP_21",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_21",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "BUFF_TSLP_22",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "AQUATIC_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_22",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "25": {
+          "dataId": "BUFF_TSLP_23",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "AQUATIC_KILLER",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_23",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "27": {
+          "dataId": "BUFF_TSLP_24",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "MISSILE_ATK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_24",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "28": {
+          "dataId": "BUFF_TSLP_25",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "MISSILE_ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_25",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_TSLP_26",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "EARTH_KILLER",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_26",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_TSLP_27",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "EARTH_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_27",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "BUFF_TSLP_28",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "WIND_RES",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_TSLP_28",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "34": {
+          "dataId": "BUFF_TSLP_29",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "WIND_RES",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_TSLP_29",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "36": {
+          "dataId": "BUFF_TSLP_30",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_30",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "BUFF_TSLP_31",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_TSLP_31",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "45": {
+          "dataId": "BUFF_TSLP_32",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "AQUATIC_KILLER",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_32",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "53": {
+          "dataId": "BUFF_TSLP_33",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 80,
+            "effects": [
+              {
+                "type": "EARTH_KILLER",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_TSLP_33",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        23,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117
+      ]
+    },
+    "slug": "tetra-sylphid"
   }
 }

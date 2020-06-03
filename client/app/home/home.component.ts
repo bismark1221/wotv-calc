@@ -20,7 +20,11 @@ export class HomeComponent {
   updated = {
     GL: [
       [
-        {type: "unit", dataId: "UN_LW_P_LUCA"}
+        {type: "unit", dataId: "UN_LW_P_LUCA"},
+        {type: "unit", dataId: "UN_LW_P_ADLD"},
+        {type: "esper", dataId: "UN_LW_S_TSLP"},
+        {type: "card", dataId: "VC_LW_TSLP"},
+        {type: "card", dataId: "VC_LW_LILS"}
       ],
       [
         {type: "unit", dataId: "UN_LW_P_MRND"},
