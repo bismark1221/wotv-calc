@@ -19,12 +19,30 @@
 }
 
 
-.upperBlock {
+.underSearchBlock {
+  height: 30px;
+}
 
+.totalUnits {
+  float: left;
+  display: inline-block;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy  {
+  display: inline-block;
 }
 
 .countUnits {
   font-weight: bold;
+}
+
+.unitsList {
+  margin-top: 10px;
 }
 
 .unitImg {

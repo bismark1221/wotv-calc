@@ -259,21 +259,14 @@ export class UnitService {
   }
 
   getUnitsForBuilder(translate) {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    let units = this.getUnitsForListing();
-
-    Object.keys(units).forEach(rarity => {
-      this.sortByName(units[rarity], translate)
-    });
+    let units = this.getUnitsForListing("rarity", null);
 
     let formattedUnitsForBuilder = []
-    rarityOrder.forEach(rarity => {
-      units[rarity].forEach(unit => {
-        formattedUnitsForBuilder.push({
-          id: unit.dataId,
-          name: unit.getName(this.translateService),
-          rarity: unit.rarity
-        })
+    units.forEach(unit => {
+      formattedUnitsForBuilder.push({
+        id: unit.dataId,
+        name: unit.getName(this.translateService),
+        rarity: unit.rarity
       })
     })
 
