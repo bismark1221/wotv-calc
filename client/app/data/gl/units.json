@@ -12389,6 +12389,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -28506,6 +28513,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -34794,6 +34808,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -36069,6 +36090,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -71690,6 +71718,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -81416,6 +81451,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -82674,6 +82716,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -85840,6 +85889,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -86918,6 +86974,13 @@
             "jobLevel": 5,
             "jp": 100,
             "effects": [
+              {
+                "type": "FAITH",
+                "minValue": 10,
+                "maxValue": 25,
+                "calcType": "percent",
+                "turn": 3
+              },
               {
                 "type": "FAITH",
                 "minValue": 10,
@@ -99055,6 +99118,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -99496,6 +99566,13 @@
           "type": "ATTACK_RES",
           "minValue": -18,
           "maxValue": -38,
+          "calcType": "fixe",
+          "turn": 3
+        },
+        {
+          "type": "ATTACK_RES",
+          "minValue": 18,
+          "maxValue": 38,
           "calcType": "fixe",
           "turn": 3
         }
@@ -121086,6 +121163,13 @@
                 "type": "MISSILE_ATK",
                 "minValue": 20,
                 "maxValue": 40,
+                "calcType": "fixe",
+                "turn": 3
+              },
+              {
+                "type": "DEFENSE_PENETRATION",
+                "minValue": 5,
+                "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 3
               }

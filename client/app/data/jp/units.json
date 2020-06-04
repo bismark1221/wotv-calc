@@ -12205,6 +12205,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -28079,6 +28086,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -34273,6 +34287,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -35527,6 +35548,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -70618,6 +70646,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -80199,6 +80234,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -81436,6 +81478,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -84558,6 +84607,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -85619,6 +85675,13 @@
             "jobLevel": 5,
             "jp": 100,
             "effects": [
+              {
+                "type": "FAITH",
+                "minValue": 10,
+                "maxValue": 25,
+                "calcType": "percent",
+                "turn": 3
+              },
               {
                 "type": "FAITH",
                 "minValue": 10,
@@ -97574,6 +97637,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -98008,6 +98078,13 @@
           "type": "ATTACK_RES",
           "minValue": -18,
           "maxValue": -38,
+          "calcType": "fixe",
+          "turn": 3
+        },
+        {
+          "type": "ATTACK_RES",
+          "minValue": 18,
+          "maxValue": 38,
           "calcType": "fixe",
           "turn": 3
         }
@@ -123657,6 +123734,13 @@
                 "maxValue": 40,
                 "calcType": "fixe",
                 "turn": 3
+              },
+              {
+                "type": "DEFENSE_PENETRATION",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_WGN_M_1",
@@ -124291,7 +124375,7 @@
   "UN_LW_P_ADLD": {
     "dataId": "UN_LW_P_ADLD",
     "names": {
-      "en": "アドラード"
+      "en": "アドラード - Adelard"
     },
     "rarity": "MR",
     "jobs": [
@@ -126427,7 +126511,7 @@
         154
       ]
     },
-    "slug": "adorado",
+    "slug": "adelard",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -126478,7 +126562,7 @@
     ],
     "tmr": {
       "names": {
-        "en": "紅の剣"
+        "en": "紅の剣 - Vermilion Sword"
       },
       "stats": {
         "HP": 102,
@@ -126507,7 +126591,7 @@
         }
       ],
       "image": "lapswpn_swo_014",
-      "slug": "hongno-jian"
+      "slug": "vermilion-sword"
     }
   },
   "UN_LW_P_VKTR": {
@@ -128122,6 +128206,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -132389,6 +132480,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -145613,6 +145711,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -149769,6 +149874,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -156548,6 +156660,13 @@
                 "minValue": 50,
                 "maxValue": 50,
                 "calcType": "unknow"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -159165,6 +159284,13 @@
         "en": "イルディラの定理"
       },
       "effects": [
+        {
+          "type": "CT",
+          "minValue": 200,
+          "maxValue": 400,
+          "calcType": "unknow",
+          "turn": 1
+        },
         {
           "type": "CT",
           "minValue": 200,
