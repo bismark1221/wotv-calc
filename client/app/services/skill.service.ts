@@ -156,14 +156,19 @@ export class SkillService {
 
 
 
-  private getValue(skill, effect, getPositiveValue = true, explaination = "") {
+  private getValue(skill, effect, getPositiveValue = true, explaination = "", forceCalc = null) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
       let minValue = typeof(effect.minValue) === "number" ? effect.minValue : effect.value;
       minValue = this.getPositiveValue(minValue, getPositiveValue);
 
+      if (forceCalc) {
+        effect.calcType = forceCalc
+      }
+      let calc = this.getCalc(effect)
+
       if (!skill.level) {
-        value = " (" + minValue + this.getCalc(effect) + this.getMaxValue(effect, getPositiveValue) + explaination + ")"
+        value = " (" + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc) + explaination + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
           let valueForLevel = 0;
@@ -175,9 +180,9 @@ export class SkillService {
             valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
           }
 
-          value = " (" + valueForLevel + this.getCalc(effect) + explaination + ")"
+          value = " (" + valueForLevel + calc + explaination + ")"
         } else {
-          value = " (" + minValue + this.getCalc(effect) + explaination + ")"
+          value = " (" + minValue + calc + explaination + ")"
         }
       }
     }
@@ -185,9 +190,12 @@ export class SkillService {
     return value;
   }
 
-  private getMaxValue(effect, getPositiveValue = true) {
+  private getMaxValue(effect, getPositiveValue = true, forceCalc = null) {
     if (effect.minValue !== effect.maxValue) {
       let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
+      if (forceCalc) {
+        effect.calcType = forceCalc
+      }
 
       return " => " + maxValue + this.getCalc(effect);
     }
@@ -417,7 +425,7 @@ export class SkillService {
         html = this.getIncrease(effect) + " all attacks ATK" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "REGEN_ATK" :
-        html = this.getChance(effect, false) + " regen" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = this.getChance(effect, false) + " regen" + this.getValue(skill, effect, true, " health restored by turn") + this.getTurns(effect)
       break
       case "AUTO_RESTORE_ATK" :
         html = this.getChance(effect, false) + " auto-restore" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -471,7 +479,7 @@ export class SkillService {
         html = this.getChance(effect) + " berserk" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "DOOM_ATK" :
-        html = this.getChance(effect) + " doom" + this.getValue(skill, effect, true, " turns before death") + this.getTurns(effect)
+        html = this.getChance(effect) + " doom" + this.getValue(skill, effect, true, " turns before death", "fixe") + this.getTurns(effect)
       break
       case "REVIVE_ATK" :
         html = this.getChance(effect, false) + " to revive" + this.getValue(skill, effect, true, " HP regained") + this.getTurns(effect)
@@ -492,7 +500,7 @@ export class SkillService {
         html = this.getChance(effect, false) + " all status ailments" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "ALL_DEBUFFS_ATK" :
-        html = this.getChance(effect, false) + " all debuffs" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Dispel all debuffs" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "REGEN_RES" :
         html = this.getChance(effect, false) + " regen resistance" + this.getValue(skill, effect) + this.getTurns(effect)
