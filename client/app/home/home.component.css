@@ -1,10 +1,6 @@
-.title {
-  text-align: center;
-}
-
 .home {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 850px;
   text-align: left;
   padding: 10px;
   position: relative;
@@ -31,23 +27,6 @@
   margin-bottom: 5px;
 }
 
-.right_zone {
-  float: right;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.youtube_video {
-  width: 175px;
-  height: 100px;
-}
-
-.youtube_block {
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-
 .itemImg {
   height: 150px;
   margin-top: 10px;
@@ -57,16 +36,127 @@
   height: 32px;
 }
 
-.itemName {
-  font-weight: bold;
-  margin-left: 10px
+.itemsTable {
+  margin-bottom: 20px;
+  border: 0;
 }
 
-.itemsTable {
-  width: 800px;
-  margin-bottom: 20px;
+.itemsTable tr, .itemsTable td {
+  border: 0;
 }
 
 .itemsCol {
+  background-color: var(--card-background);
   width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.itemName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: block;
+  vertical-align: middle;
+  color: var(--white);
+}
+
+.mainJob {
+  margin-top: 45px;
+  height: 30px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+}
+
+.subJob {
+  margin-top: 5px;
+  height: 30px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+}
+
+.header {
+  background-color: var(--home-title);
+}
+
+.headerBlock {
+  width: 840px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.markdownHome {
+  width: 840px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0;
+}
+
+.title {
+  font-size: 35px;
+  color: var(--white);
+}
+
+.right_zone {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.updates {
+  width: 840px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.lastUpdate {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.date {
+  margin-bottom: 10px;
+}
+
+.news {
+  margin-top: 50px;
+  width: 840px;
+  margin: auto;
+}
+
+.whatsnew {
+  text-align: center;
+}
+
+.whatsnew h1 {
+  font-size: 25px;
+}
+
+.chanlog {
+  margin-left: 100px;
+}
+
+.changelog h1 {
+  font-size: 20px;
+  margin-top: 20px;
 }
