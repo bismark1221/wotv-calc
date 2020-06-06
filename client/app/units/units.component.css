@@ -18,6 +18,23 @@
   margin-bottom: 20px;
 }
 
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 750px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
 
 .underSearchBlock {
   height: 30px;

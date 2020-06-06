@@ -12,6 +12,7 @@ import { NameService } from '../services/name.service';
 })
 export class UnitsComponent implements OnInit {
   units;
+  searchText = "";
 
   constructor(
     private unitService: UnitService,
@@ -40,5 +41,16 @@ export class UnitsComponent implements OnInit {
 
   getRoute(route) {
     return this.navService.getRoute(route)
+  }
+
+  getFilteredUnits() {
+    if (this.searchText !== "") {
+      let text = this.searchText.toLowerCase();
+      return this.units.filter(unit => {
+        return unit.name.toLowerCase().includes(text);
+      });
+    } else {
+      return this.units
+    }
   }
 }

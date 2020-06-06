@@ -6,7 +6,8 @@
   <div class="rightBlock">
     <div class="upperBlock">
       <div class="searchBlock">
-        <!-- input search name -->
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
       </div>
       <div class="underSearchBlock">
         <div class="totalUnits">
@@ -26,7 +27,7 @@
       </div>
     </div>
     <div class="unitsList">
-      <div class="unitsCol" *ngFor="let unit of units">
+      <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
         <a [routerLink]="[getRoute('/'  + unit.type + '/' + unit.slug)]" [routerLinkActive]="['active']">
           <div class="cardIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />

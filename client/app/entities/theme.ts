@@ -42,7 +42,7 @@ export const themes = {
 
       "--card-background": "#E8E6DF",
       "--card-title": "#3D3A41",
-      "--home-title": "#1D1B1B",
+      "--home-title": "rgba(29, 27, 27, 0.95)",
     }
   },
   dark: {
@@ -88,7 +88,7 @@ export const themes = {
 
       "--card-background": "#E8E6DF",
       "--card-title": "#3D3A41",
-      "--home-title": "#1D1B1B",
+      "--home-title": "rgba(29, 27, 27, 0.95)",
     }
   }
 }
