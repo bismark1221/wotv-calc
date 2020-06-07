@@ -1,6 +1,7 @@
 .units {
   width: 100%;
   text-align: center;
+  display: flex;
 }
 
 .leftBlock {
@@ -8,6 +9,32 @@
   display: inline-block;
   width: 250px;
   float: left;
+  text-align: left;
+  background: #F5F6F8;
+  color: #3D3A41;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.fa-chevron-up, .fa-chevron-down {
+  float: right;
+  margin-right: 10px;
 }
 
 .rightBlock {
@@ -16,6 +43,10 @@
   width: 800px;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 10px;
 }
 
 .searchBlock {
@@ -50,8 +81,12 @@
   display: inline-block;
 }
 
-.sortBy, .orderBy  {
+.sortBy, .orderBy {
   display: inline-block;
+}
+
+.orderBy {
+  margin-left: 20px;
 }
 
 .countUnits {

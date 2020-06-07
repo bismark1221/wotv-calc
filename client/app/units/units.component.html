@@ -2,10 +2,12 @@
   <div class="leftBlock">
     <h1>FILTERS</h1>
     <div class="filters">
-      <div>
+      <div (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
         Rarity
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
       </div>
-      <div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
         <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
         <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
         <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
@@ -13,10 +15,14 @@
         <div><input type="checkbox" (change)="filterList('rarity', 'N', $event.target.checked)"/>N</div>
       </div>
 
-      <div>
+      <hr />
+
+      <div (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
         Elements
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
       </div>
-      <div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
         <div><input type="checkbox" (change)="filterList('element', 'fire', $event.target.checked)"/>Fire</div>
         <div><input type="checkbox" (change)="filterList('element', 'ice', $event.target.checked)"/>Ice</div>
         <div><input type="checkbox" (change)="filterList('element', 'wind', $event.target.checked)"/>Wind</div>
@@ -27,10 +33,14 @@
         <div><input type="checkbox" (change)="filterList('element', 'dark', $event.target.checked)"/>Dark</div>
       </div>
 
-      <div>
+      <hr />
+
+      <div (click)="isCollapsedJob = !isCollapsedJob" [attr.aria-expanded]="!isCollapsedJob">
         Jobs
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedJob" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedJob" aria-hidden="true"></i>
       </div>
-      <div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedJob">
         <div *ngFor="let job of jobs"><input type="checkbox" (change)="filterList('job', job.dataId, $event.target.checked)"/>{{ job.name }}</div>
       </div>
     </div>

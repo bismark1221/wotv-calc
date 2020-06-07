@@ -22,6 +22,9 @@ export class UnitsComponent implements OnInit {
     element: [],
     job: []
   }
+  isCollapsedRarity = true;
+  isCollapsedElement = true;
+  isCollapsedJob = true;
 
   constructor(
     private unitService: UnitService,
