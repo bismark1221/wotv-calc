@@ -1,6 +1,39 @@
 <div class="units">
   <div class="leftBlock">
     <h1>FILTERS</h1>
+    <div class="filters">
+      <div>
+        Rarity
+      </div>
+      <div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'R', $event.target.checked)"/>R</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'N', $event.target.checked)"/>N</div>
+      </div>
+
+      <div>
+        Elements
+      </div>
+      <div>
+        <div><input type="checkbox" (change)="filterList('element', 'fire', $event.target.checked)"/>Fire</div>
+        <div><input type="checkbox" (change)="filterList('element', 'ice', $event.target.checked)"/>Ice</div>
+        <div><input type="checkbox" (change)="filterList('element', 'wind', $event.target.checked)"/>Wind</div>
+        <div><input type="checkbox" (change)="filterList('element', 'earth', $event.target.checked)"/>Earth</div>
+        <div><input type="checkbox" (change)="filterList('element', 'lightning', $event.target.checked)"/>Lightning</div>
+        <div><input type="checkbox" (change)="filterList('element', 'water', $event.target.checked)"/>Water</div>
+        <div><input type="checkbox" (change)="filterList('element', 'light', $event.target.checked)"/>Light</div>
+        <div><input type="checkbox" (change)="filterList('element', 'dark', $event.target.checked)"/>Dark</div>
+      </div>
+
+      <div>
+        Jobs
+      </div>
+      <div>
+        <div *ngFor="let job of jobs"><input type="checkbox" (change)="filterList('job', job.dataId, $event.target.checked)"/>{{ job.name }}</div>
+      </div>
+    </div>
   </div>
 
   <div class="rightBlock">

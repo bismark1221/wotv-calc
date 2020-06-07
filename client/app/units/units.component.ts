@@ -4,6 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-units',
@@ -15,29 +16,50 @@ export class UnitsComponent implements OnInit {
   searchText = "";
   sort = "rarity"
   order = "asc"
+  jobs = [];
+  filters = {
+    rarity: [],
+    element: [],
+    job: []
+  }
 
   constructor(
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService
+    private nameService: NameService,
+    private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
+      this.translateJobs();
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getUnits();
+    this.getJobs();
   }
 
-  getUnits(): void {
-    this.units = this.unitService.getUnitsForListing(this.sort, this.order);
+  getUnits() {
+    this.units = this.unitService.getUnitsForListing(this.filters, this.sort, this.order);
+    this.translateUnits();
+  }
+
+  getJobs() {
+    this.jobs = this.jobService.getUniqJobs()
+    this.translateJobs()
   }
 
   private translateUnits() {
     this.units.forEach(unit => {
       unit.name = this.nameService.getName(unit)
+    });
+  }
+
+  private translateJobs() {
+    this.jobs.forEach(job => {
+      job.name = this.nameService.getName(job)
     });
   }
 
@@ -54,5 +76,15 @@ export class UnitsComponent implements OnInit {
     } else {
       return this.units
     }
+  }
+
+  filterList(type, value, checked) {
+    if (checked) {
+      this.filters[type].push(value)
+    } else {
+      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+    }
+
+    this.getUnits()
   }
 }

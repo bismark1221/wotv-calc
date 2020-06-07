@@ -251,8 +251,9 @@ export class UnitService {
     return units
   }
 
-  getUnitsForListing(sort, order = "asc") {
+  getUnitsForListing(filters, sort, order = "asc") {
     this.getUnits();
+    this.units = this.filterUnits(this.units, filters);
 
     switch (sort) {
       case "rarity" :
@@ -266,13 +267,39 @@ export class UnitService {
       break
     }
 
-    console.log(this.units)
-
     return this.units;
   }
 
+  filterUnits(units, filters) {
+    if (filters) {
+      let filteredUnits = []
+
+      units.forEach(unit => {
+        if ((filters.element.length == 0 || filters.element.indexOf(unit.element) != -1)
+          && (filters.rarity.length == 0 || filters.rarity.indexOf(unit.rarity) != -1)
+        ) {
+          if (filters.job.length == 0) {
+            filteredUnits.push(unit)
+          } else {
+            for (let i = 0; i <= 2; i++) {
+              let tableJob = unit.jobs[i].split("_")
+              if (filters.job.indexOf(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2]) != -1) {
+                filteredUnits.push(unit)
+                break;
+              }
+            }
+          }
+        }
+      })
+
+      return filteredUnits
+    } else {
+      return units
+    }
+  }
+
   getUnitsForBuilder(translate) {
-    let units = this.getUnitsForListing("rarity", "asc");
+    let units = this.getUnitsForListing(null, "rarity", "asc");
 
     let formattedUnitsForBuilder = []
     units.forEach(unit => {

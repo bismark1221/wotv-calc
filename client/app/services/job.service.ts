@@ -35,6 +35,26 @@ export class JobService {
     return jobs;
   }
 
+  getUniqJobs(): Job[] {
+    let jobs: Job[] = [];
+    let rawJobs = JSON.parse(JSON.stringify(this.getRaw()))
+    let uniqJobs = []
+
+    Object.keys(rawJobs).forEach(jobId => {
+      let job = new Job();
+      job.constructFromJson(rawJobs[jobId]);
+      let tableJob = job.dataId.split("_")
+      let genericDataId = tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2]
+      if (uniqJobs.indexOf(genericDataId) == -1) {
+        jobs.push(job);
+        uniqJobs.push(genericDataId)
+      }
+    });
+
+    this.jobs = jobs;
+    return jobs;
+  }
+
   getJob(id: string): Job {
     this.getJobs();
 
