@@ -137,45 +137,6 @@ export class UnitService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sortByName(units, translate: any) {
-    units.sort((a: any, b: any) => {
-      let x = this.i(a.name);
-      let y = this.i(b.name);
-
-      if (translate) {
-        x = this.i(a.getName(translate));
-        y = this.i(b.getName(translate));
-      }
-
-      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-      if (yD) {
-          if (xD < yD) { return -1; }
-          else if (xD > yD) { return 1; }
-      }
-
-      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-          this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-          this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-          if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-              return isNaN(this.oFxNcL) ? 1 : -1;
-          }
-          if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-              var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-              return comp / Math.abs(comp);
-          }
-          if (this.oFxNcL < this.oFyNcL) { return -1; }
-          else if (this.oFxNcL > this.oFyNcL) { return 1; }
-      }
-    });
-
-    return units;
-  }
-
   private getRaw() {
     this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()))
     if (this.savedVersion == "GL") {
@@ -199,8 +160,57 @@ export class UnitService {
     return units;
   }
 
-  sortByRarity(units) {
+  sortByName(units, order = "asc") {
+    units.sort((a: any, b: any) => {
+      let x = this.i(a.getName(this.translateService));
+      let y = this.i(b.getName(this.translateService));
+
+      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+      if (yD) {
+        if (xD < yD) {
+          return order == "asc" ? -1 : 1;
+        } else if (xD > yD) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
+
+      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+        this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+        this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+        if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+          if (isNaN(this.oFxNcL)) {
+            return order == "asc" ? 1 : -1;
+          } else {
+            return order == "asc" ? -1 : 1;
+          }
+        }
+
+        if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+          var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+          return comp / Math.abs(comp);
+        }
+
+        if (this.oFxNcL < this.oFyNcL) {
+          return order == "asc" ? -1 : 1;
+        } else if (this.oFxNcL > this.oFyNcL) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
+    });
+
+    return units;
+  }
+
+  sortByRarity(units, order = "asc") {
     let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    if (order == "desc") {
+      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
+    }
 
     units.sort((a: any, b: any) => {
       if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
@@ -241,12 +251,15 @@ export class UnitService {
     return units
   }
 
-  getUnitsForListing(sort, filter) {
+  getUnitsForListing(sort, order = "asc") {
     this.getUnits();
 
     switch (sort) {
       case "rarity" :
-        this.sortByRarity(this.units)
+        this.sortByRarity(this.units, order)
+      break
+      case "name" :
+        this.sortByName(this.units, order)
       break
       default :
         console.log("not managed sort")
@@ -259,7 +272,7 @@ export class UnitService {
   }
 
   getUnitsForBuilder(translate) {
-    let units = this.getUnitsForListing("rarity", null);
+    let units = this.getUnitsForListing("rarity", "asc");
 
     let formattedUnitsForBuilder = []
     units.forEach(unit => {

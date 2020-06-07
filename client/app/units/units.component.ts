@@ -13,6 +13,8 @@ import { NameService } from '../services/name.service';
 export class UnitsComponent implements OnInit {
   units;
   searchText = "";
+  sort = "rarity"
+  order = "asc"
 
   constructor(
     private unitService: UnitService,
@@ -29,8 +31,8 @@ export class UnitsComponent implements OnInit {
     this.getUnits();
   }
 
-  private getUnits(): void {
-    this.units = this.unitService.getUnitsForListing("rarity", null);
+  getUnits(): void {
+    this.units = this.unitService.getUnitsForListing(this.sort, this.order);
   }
 
   private translateUnits() {

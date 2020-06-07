@@ -19,9 +19,17 @@
           </div> -->
           <div class="sortBy">
             Sort by :
+            <select [(ngModel)]="sort" (ngModelChange)="getUnits()">
+              <option>rarity</option>
+              <option>name</option>
+            </select>
           </div>
           <div class="orderBy">
             Order by :
+            <select [(ngModel)]="order" (ngModelChange)="getUnits()">
+              <option>asc</option>
+              <option>desc</option>
+            </select>
           </div>
         </div>
       </div>
