@@ -556,12 +556,10 @@ export class UnitService {
 
   private calculateGuildStats() {
     let guild = this.guildService.getGuild()
-    console.log(guild)
     let statues = this.guildService.getStatues()
 
     Object.keys(guild).forEach(statue => {
       statues[statue][guild[statue] - 1].forEach(stat => {
-        console.log(stat)
         let value = stat.value;
         if (stat.calcType == "percent") {
           value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
