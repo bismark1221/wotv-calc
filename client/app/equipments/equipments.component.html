@@ -1,20 +1,95 @@
-<div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-  <table class="equipmentsTable">
-    <tr>
-      <td colspan="4">
-        <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
-      </td>
-    </tr>
-    <tr *ngFor="let line of formattedEquipments[rarity]; let j = index">
-      <td *ngFor="let equipment of formattedEquipments[rarity][j]" class="equipmentsCol">
-        <div>
-          <a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">
-            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
-              onerror="this.src='assets/equipments/placeholder.png';"/>
-          </a>
+<div class="equipments">
+  <div class="leftBlock">
+    <h1>FILTERS</h1>
+    <div class="filters">
+      <div (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
+        Rarity
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
+        <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'R', $event.target.checked)"/>R</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'N', $event.target.checked)"/>N</div>
+      </div>
+
+      <hr />
+
+      <div (click)="isCollapsedType = !isCollapsedType" [attr.aria-expanded]="!isCollapsedType">
+        Types
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedType" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedType" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedType">
+        <div><input type="checkbox" (change)="filterList('type', 'DAGGER', $event.target.checked)"/>Dagger</div>
+        <div><input type="checkbox" (change)="filterList('type', 'SWORD', $event.target.checked)"/>Sword</div>
+        <div><input type="checkbox" (change)="filterList('type', 'GREATSWORD', $event.target.checked)"/>Great Sword</div>
+        <div><input type="checkbox" (change)="filterList('type', 'KATANA', $event.target.checked)"/>Katana</div>
+        <div><input type="checkbox" (change)="filterList('type', 'ROD', $event.target.checked)"/>Rod</div>
+        <div><input type="checkbox" (change)="filterList('type', 'NINJABLADE', $event.target.checked)"/>Ninja Blade</div>
+        <div><input type="checkbox" (change)="filterList('type', 'BOW', $event.target.checked)"/>Bow</div>
+        <div><input type="checkbox" (change)="filterList('type', 'AXE', $event.target.checked)"/>Axe</div>
+        <div><input type="checkbox" (change)="filterList('type', 'SPEAR', $event.target.checked)"/>Spear</div>
+        <div><input type="checkbox" (change)="filterList('type', 'GUN', $event.target.checked)"/>Gun</div>
+        <div><input type="checkbox" (change)="filterList('type', 'MACE', $event.target.checked)"/>Mace</div>
+        <div><input type="checkbox" (change)="filterList('type', 'FIST', $event.target.checked)"/>Fist</div>
+        <div><input type="checkbox" (change)="filterList('type', 'SHIELD', $event.target.checked)"/>Shield</div>
+        <div><input type="checkbox" (change)="filterList('type', 'ARMOR', $event.target.checked)"/>Armor</div>
+        <div><input type="checkbox" (change)="filterList('type', 'HAT', $event.target.checked)"/>Hat</div>
+        <div><input type="checkbox" (change)="filterList('type', 'HELM', $event.target.checked)"/>Helm</div>
+        <div><input type="checkbox" (change)="filterList('type', 'CLOTH', $event.target.checked)"/>Cloth</div>
+        <div><input type="checkbox" (change)="filterList('type', 'ACC', $event.target.checked)"/>Accessory</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalEquipments">
+          A total of <span class="countEquipments">{{ equipments.length }}</span> equipments found
         </div>
-        <span class="equipmentName"><a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">{{ equipment.name }}</a></span>
-      </td>
-    </tr>
-  </table>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            Sort by :
+            <select [(ngModel)]="sort" (ngModelChange)="getEquipments()">
+              <option>rarity</option>
+              <option>name</option>
+            </select>
+          </div>
+          <div class="orderBy">
+            Order by :
+            <select [(ngModel)]="order" (ngModelChange)="getEquipments()">
+              <option>asc</option>
+              <option>desc</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="equipmentsList">
+      <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
+        <a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+          </div>
+          <div>
+            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+          </div>
+          <div class="cardTitle">
+            <span class="equipmentName">{{ equipment.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

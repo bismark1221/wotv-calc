@@ -11,8 +11,16 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./equipments.component.css']
 })
 export class EquipmentsComponent implements OnInit {
-  private equipments;
-  private formattedEquipments = {};
+  equipments;
+  searchText = "";
+  sort = "rarity"
+  order = "asc"
+  filters = {
+    rarity: [],
+    type: []
+  }
+  isCollapsedRarity = true;
+  isCollapsedType = true;
 
   constructor(
     private equipmentService: EquipmentService,
@@ -25,45 +33,43 @@ export class EquipmentsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getEquipments();
   }
 
-  private getEquipments(): void {
-    let lang = this.translateService.currentLang
-
-    this.equipments = this.equipmentService.getEquipmentsForListing();
-
-    Object.keys(this.equipments).forEach(rarity => {
-      this.equipmentService.sortByName(this.equipments[rarity], this.translateService)
-
-      this.formattedEquipments[rarity] = [];
-      let tableIndex = -1;
-      this.equipments[rarity].forEach((equipment, index) => {
-        if (index % 4 === 0) {
-          tableIndex++;
-          this.formattedEquipments[rarity][tableIndex] = [];
-        }
-
-        equipment.name = this.nameService.getName(equipment)
-        this.formattedEquipments[rarity][tableIndex].push(equipment)
-      });
-    });
+  private getEquipments() {
+    this.equipments = this.equipmentService.getEquipmentsForListing(this.filters, this.sort, this.order);
+    this.translateEquipments();
   }
 
   private translateEquipments() {
-    let lang = this.translateService.currentLang
-
-    Object.keys(this.formattedEquipments).forEach(rarity => {
-      this.formattedEquipments[rarity].forEach(line => {
-        line.forEach(equipment => {
-          equipment.name = this.nameService.getName(equipment)
-        });
-      });
+    this.equipments.forEach(equipment => {
+      equipment.name = this.nameService.getName(equipment)
     });
   }
 
   getRoute(route) {
     return this.navService.getRoute(route)
+  }
+
+  getFilteredEquipments() {
+    if (this.searchText !== "") {
+      let text = this.searchText.toLowerCase();
+      return this.equipments.filter(equipment => {
+        return equipment.name.toLowerCase().includes(text);
+      });
+    } else {
+      return this.equipments
+    }
+  }
+
+  filterList(type, value, checked) {
+    if (checked) {
+      this.filters[type].push(value)
+    } else {
+      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+    }
+
+    this.getEquipments()
   }
 }

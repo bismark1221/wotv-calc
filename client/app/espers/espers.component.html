@@ -1,22 +1,84 @@
-<div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-  <div *ngIf="formattedEspers[rarity].length > 0">
-    <table class="espersTable">
-      <tr>
-        <td colspan="4">
-          <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
-        </td>
-      </tr>
-      <tr *ngFor="let line of formattedEspers[rarity]; let j = index">
-        <td *ngFor="let esper of formattedEspers[rarity][j]" class="espersCol">
-          <div>
-            <a [routerLink]="[getRoute('/esper/' + esper.slug)]" [routerLinkActive]="['active']">
-              <img class="esperImg" src="{{'assets/units/' + esper.image + '_s.png'}}" />
-            </a>
+<div class="espers">
+  <div class="leftBlock">
+    <h1>FILTERS</h1>
+    <div class="filters">
+      <div (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
+        Rarity
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
+        <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
+      </div>
+
+      <hr />
+
+      <div (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
+        Elements
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
+        <div><input type="checkbox" (change)="filterList('element', 'fire', $event.target.checked)"/>Fire</div>
+        <div><input type="checkbox" (change)="filterList('element', 'ice', $event.target.checked)"/>Ice</div>
+        <div><input type="checkbox" (change)="filterList('element', 'wind', $event.target.checked)"/>Wind</div>
+        <div><input type="checkbox" (change)="filterList('element', 'earth', $event.target.checked)"/>Earth</div>
+        <div><input type="checkbox" (change)="filterList('element', 'lightning', $event.target.checked)"/>Lightning</div>
+        <div><input type="checkbox" (change)="filterList('element', 'water', $event.target.checked)"/>Water</div>
+        <div><input type="checkbox" (change)="filterList('element', 'light', $event.target.checked)"/>Light</div>
+        <div><input type="checkbox" (change)="filterList('element', 'dark', $event.target.checked)"/>Dark</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalEspers">
+          A total of <span class="countEspers">{{ espers.length }}</span> espers found
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            Sort by :
+            <select [(ngModel)]="sort" (ngModelChange)="getEspers()">
+              <option>rarity</option>
+              <option>name</option>
+            </select>
           </div>
-          <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" />
-          <span class="esperName"><a [routerLink]="[getRoute('/esper/' + esper.slug)]" [routerLinkActive]="['active']">{{ esper.name }}</a></span>
-        </td>
-      </tr>
-    </table>
+          <div class="orderBy">
+            Order by :
+            <select [(ngModel)]="order" (ngModelChange)="getEspers()">
+              <option>asc</option>
+              <option>desc</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="espersList">
+      <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
+        <a [routerLink]="[getRoute('/esper/' + esper.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
+          </div>
+          <div>
+            <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="esperName">{{ esper.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </div>

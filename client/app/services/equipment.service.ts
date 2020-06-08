@@ -85,45 +85,6 @@ export class EquipmentService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sortByName(equipments: Equipment[], translate: any): Equipment[] {
-    equipments.sort((a: any, b: any) => {
-      let x = this.i(a.name);
-      let y = this.i(b.name);
-
-      if (translate) {
-        x = this.i(a.getName(translate));
-        y = this.i(b.getName(translate));
-      }
-
-      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-      if (yD) {
-          if (xD < yD) { return -1; }
-          else if (xD > yD) { return 1; }
-      }
-
-      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-          this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-          this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-          if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-              return isNaN(this.oFxNcL) ? 1 : -1;
-          }
-          if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-              var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-              return comp / Math.abs(comp);
-          }
-          if (this.oFxNcL < this.oFyNcL) { return -1; }
-          else if (this.oFxNcL > this.oFyNcL) { return 1; }
-      }
-    });
-
-    return equipments;
-  }
-
   private getRaw() {
     if (this.navService.getVersion() == "GL") {
       return GL_EQUIPMENTS
@@ -146,23 +107,132 @@ export class EquipmentService {
     return equipments;
   }
 
-  getEquipmentsForListing() {
-    let equipments = {
-      N: [],
-      R: [],
-      SR: [],
-      MR: [],
-      UR: []
-    };
-    let rawEquipments = JSON.parse(JSON.stringify(this.getRaw()))
+  sortByName(equipments, order = "asc") {
+    equipments.sort((a: any, b: any) => {
+      let x = this.i(a.getName(this.translateService));
+      let y = this.i(b.getName(this.translateService));
 
-    Object.keys(rawEquipments).forEach(equipmentId => {
-      let equipment = new Equipment();
-      equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
-      equipments[equipment.rarity].push(equipment);
+      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+      if (yD) {
+        if (xD < yD) {
+          return order == "asc" ? -1 : 1;
+        } else if (xD > yD) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
+
+      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+        this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+        this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+        if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+          if (isNaN(this.oFxNcL)) {
+            return order == "asc" ? 1 : -1;
+          } else {
+            return order == "asc" ? -1 : 1;
+          }
+        }
+
+        if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+          var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+          return comp / Math.abs(comp);
+        }
+
+        if (this.oFxNcL < this.oFyNcL) {
+          return order == "asc" ? -1 : 1;
+        } else if (this.oFxNcL > this.oFyNcL) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
     });
 
     return equipments;
+  }
+
+  sortByRarity(equipments, order = "asc") {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    if (order == "desc") {
+      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
+    }
+
+    equipments.sort((a: any, b: any) => {
+      if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
+        return -1
+      } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
+        return 1
+      } else {
+        let x = this.i(a.getName(this.translateService));
+        let y = this.i(b.getName(this.translateService));
+
+        const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+        const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+        const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+        const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+        if (yD) {
+            if (xD < yD) { return -1; }
+            else if (xD > yD) { return 1; }
+        }
+
+        for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+            this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+            this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+            if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+                return isNaN(this.oFxNcL) ? 1 : -1;
+            }
+            if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+                var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+                return comp / Math.abs(comp);
+            }
+            if (this.oFxNcL < this.oFyNcL) { return -1; }
+            else if (this.oFxNcL > this.oFyNcL) { return 1; }
+        }
+      }
+    })
+
+    return equipments
+  }
+
+  getEquipmentsForListing(filters, sort, order = "asc") {
+    this.getEquipments();
+    this.equipments = this.filterEquipments(this.equipments, filters);
+
+    switch (sort) {
+      case "rarity" :
+        this.sortByRarity(this.equipments, order)
+      break
+      case "name" :
+        this.sortByName(this.equipments, order)
+      break
+      default :
+        console.log("not managed sort")
+      break
+    }
+
+    return this.equipments;
+  }
+
+  filterEquipments(equipments, filters) {
+    if (filters) {
+      let filteredEquipments = []
+
+      equipments.forEach(equipment => {
+        if ((filters.type.length == 0 || filters.type.indexOf(equipment.type) != -1)
+          && (filters.rarity.length == 0 || filters.rarity.indexOf(equipment.rarity) != -1)
+        ) {
+          filteredEquipments.push(equipment)
+        }
+      })
+
+      return filteredEquipments
+    } else {
+      return equipments
+    }
   }
 
   getEquipmentBySlug(slug: string): Equipment {
@@ -190,39 +260,25 @@ export class EquipmentService {
   }
 
   getEquipmentsForUnitBuilder() {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    let equipments = this.getEquipmentsForListing();
-
-    Object.keys(equipments).forEach(rarity => {
-      this.sortByName(equipments[rarity], this.translateService)
-    });
+    let equipments = this.getEquipmentsForListing(null, "rarity", "asc");
 
     let formattedEquipmentsForBuilder = []
-    rarityOrder.forEach(rarity => {
-      equipments[rarity].forEach(equipment => {
-        formattedEquipmentsForBuilder.push(equipment)
-      })
+    equipments.forEach(equipment => {
+      formattedEquipmentsForBuilder.push(equipment)
     })
 
     return formattedEquipmentsForBuilder;
   }
 
   getEquipmentsForBuilder() {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    let equipments = this.getEquipmentsForListing();
-
-    Object.keys(equipments).forEach(rarity => {
-      this.sortByName(equipments[rarity], this.translateService)
-    });
+    let equipments = this.getEquipmentsForListing(null, "rarity", "asc");
 
     let formattedEquipmentsForBuilder = []
-    rarityOrder.forEach(rarity => {
-      equipments[rarity].forEach(equipment => {
-        formattedEquipmentsForBuilder.push({
-          id: equipment.dataId,
-          name: equipment.getName(this.translateService),
-          rarity: equipment.rarity
-        })
+    equipments.forEach(equipment => {
+      formattedEquipmentsForBuilder.push({
+        id: equipment.dataId,
+        name: equipment.getName(this.translateService),
+        rarity: equipment.rarity
       })
     })
 

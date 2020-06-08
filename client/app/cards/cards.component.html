@@ -1,19 +1,67 @@
-<div class="row" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-  <table class="cardsTable">
-    <tr>
-      <td colspan="4">
-        <img class="rarityImg" src="{{'assets/rarity/' + rarity + '.png'}}" />
-      </td>
-    </tr>
-    <tr *ngFor="let line of formattedCards[rarity]; let j = index">
-      <td *ngFor="let card of formattedCards[rarity][j]" class="cardsCol">
-        <div>
-          <a [routerLink]="[getRoute('/card/' + card.slug)]" [routerLinkActive]="['active']">
-            <img class="cardImg" src="{{'assets/cards/' + card.image + '_m.png'}}" />
-          </a>
+<div class="cards">
+  <div class="leftBlock">
+    <h1>FILTERS</h1>
+    <div class="filters">
+      <div (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
+        Rarity
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
+        <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'R', $event.target.checked)"/>R</div>
+        <div><input type="checkbox" (change)="filterList('rarity', 'N', $event.target.checked)"/>N</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalCards">
+          A total of <span class="countCards">{{ cards.length }}</span> cards found
         </div>
-        <span class="cardName"><a [routerLink]="[getRoute('/card/' + card.slug)]" [routerLinkActive]="['active']">{{ card.name }}</a></span>
-      </td>
-    </tr>
-  </table>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            Sort by :
+            <select [(ngModel)]="sort" (ngModelChange)="getCards()">
+              <option>rarity</option>
+              <option>name</option>
+            </select>
+          </div>
+          <div class="orderBy">
+            Order by :
+            <select [(ngModel)]="order" (ngModelChange)="getCards()">
+              <option>asc</option>
+              <option>desc</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardsList">
+      <div class="cardsCol" *ngFor="let card of getFilteredCards()">
+        <a [routerLink]="[getRoute('/card/' + card.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" />
+          </div>
+          <div>
+            <img class="cardImg" src="assets/cards/{{ card.image }}_m.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="cardName">{{ card.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

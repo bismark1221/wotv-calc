@@ -71,7 +71,7 @@ export class EsperService {
     "LUCK"
   ]
 
-  private unitBuffsOrder = [
+  private esperBuffsOrder = [
     "HP",
     "TP",
     "AP",
@@ -153,45 +153,6 @@ export class EsperService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sortByName(espers: Esper[], translate: any): Esper[] {
-    espers.sort((a: any, b: any) => {
-      let x = this.i(a.name);
-      let y = this.i(b.name);
-
-      if (translate) {
-        x = this.i(a.getName(translate));
-        y = this.i(b.getName(translate));
-      }
-
-      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-      if (yD) {
-          if (xD < yD) { return -1; }
-          else if (xD > yD) { return 1; }
-      }
-
-      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-          this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-          this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-          if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-              return isNaN(this.oFxNcL) ? 1 : -1;
-          }
-          if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-              var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-              return comp / Math.abs(comp);
-          }
-          if (this.oFxNcL < this.oFyNcL) { return -1; }
-          else if (this.oFxNcL > this.oFyNcL) { return 1; }
-      }
-    });
-
-    return espers;
-  }
-
   private getRaw() {
     if (this.navService.getVersion() == "GL") {
       return GL_ESPERS
@@ -207,6 +168,7 @@ export class EsperService {
     Object.keys(rawEspers).forEach(esperId => {
       let esper = new Esper();
       esper.constructFromJson(rawEspers[esperId], this.translateService);
+      esper.rarity = this.findRarity(esper)
       espers.push(esper);
     });
 
@@ -214,23 +176,132 @@ export class EsperService {
     return espers;
   }
 
-  getEspersForListing() {
-    let espers = {
-      N: [],
-      R: [],
-      SR: [],
-      MR: [],
-      UR: []
-    };
-    let rawEspers = JSON.parse(JSON.stringify(this.getRaw()))
+  sortByName(espers, order = "asc") {
+    espers.sort((a: any, b: any) => {
+      let x = this.i(a.getName(this.translateService));
+      let y = this.i(b.getName(this.translateService));
 
-    Object.keys(rawEspers).forEach(esperId => {
-      let esper = new Esper();
-      esper.constructFromJson(rawEspers[esperId], this.translateService);
-      espers[this.findRarity(esper)].push(esper);
+      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+      if (yD) {
+        if (xD < yD) {
+          return order == "asc" ? -1 : 1;
+        } else if (xD > yD) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
+
+      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+        this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+        this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+        if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+          if (isNaN(this.oFxNcL)) {
+            return order == "asc" ? 1 : -1;
+          } else {
+            return order == "asc" ? -1 : 1;
+          }
+        }
+
+        if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+          var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+          return comp / Math.abs(comp);
+        }
+
+        if (this.oFxNcL < this.oFyNcL) {
+          return order == "asc" ? -1 : 1;
+        } else if (this.oFxNcL > this.oFyNcL) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
     });
 
     return espers;
+  }
+
+  sortByRarity(espers, order = "asc") {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    if (order == "desc") {
+      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
+    }
+
+    espers.sort((a: any, b: any) => {
+      if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
+        return -1
+      } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
+        return 1
+      } else {
+        let x = this.i(a.getName(this.translateService));
+        let y = this.i(b.getName(this.translateService));
+
+        const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+        const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+        const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+        const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+        if (yD) {
+            if (xD < yD) { return -1; }
+            else if (xD > yD) { return 1; }
+        }
+
+        for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+            this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+            this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+            if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+                return isNaN(this.oFxNcL) ? 1 : -1;
+            }
+            if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+                var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+                return comp / Math.abs(comp);
+            }
+            if (this.oFxNcL < this.oFyNcL) { return -1; }
+            else if (this.oFxNcL > this.oFyNcL) { return 1; }
+        }
+      }
+    })
+
+    return espers
+  }
+
+  getEspersForListing(filters, sort, order = "asc") {
+    this.getEspers();
+    this.espers = this.filterEspers(this.espers, filters);
+
+    switch (sort) {
+      case "rarity" :
+        this.sortByRarity(this.espers, order)
+      break
+      case "name" :
+        this.sortByName(this.espers, order)
+      break
+      default :
+        console.log("not managed sort")
+      break
+    }
+
+    return this.espers;
+  }
+
+  filterEspers(espers, filters) {
+    if (filters) {
+      let filteredEspers = []
+
+      espers.forEach(esper => {
+        if ((filters.element.length == 0 || filters.element.indexOf(esper.element) != -1)
+          && (filters.rarity.length == 0 || filters.rarity.indexOf(esper.rarity) != -1)
+        ) {
+          filteredEspers.push(esper)
+        }
+      })
+
+      return filteredEspers
+    } else {
+      return espers
+    }
   }
 
   findRarity(esper) {
@@ -258,22 +329,14 @@ export class EsperService {
 
 
   getEspersForBuilder(translate) {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    let espers = this.getEspersForListing();
-
-    Object.keys(espers).forEach(rarity => {
-      this.sortByName(espers[rarity], translate)
-    });
+    let espers = this.getEspersForListing(null, "rarity", "asc");
 
     let formattedEspersForBuilder = []
-    rarityOrder.forEach(rarity => {
-      espers[rarity].forEach(esper => {
-        esper.rarity = this.findRarity(esper)
-        formattedEspersForBuilder.push({
-          id: esper.dataId,
-          name: esper.getName(this.translateService),
-          rarity: esper.rarity
-        })
+    espers.forEach(esper => {
+      formattedEspersForBuilder.push({
+        id: esper.dataId,
+        name: esper.getName(this.translateService),
+        rarity: esper.rarity
       })
     })
 
@@ -330,7 +393,7 @@ export class EsperService {
 
     this.updateMaxLevel();
     this.changeLevel();
-    this.updateUnitBuffs();
+    this.updateEsperBuffs();
     this.esper.grid = this.gridService.generateEsperGrid(this.esper)
 
     return this.esper
@@ -393,7 +456,7 @@ export class EsperService {
     this.calculateSPs()
   }
 
-  private updateUnitBuffs() {
+  private updateEsperBuffs() {
     this.esper.buffs = {}
 
     Object.keys(this.esper.stats).forEach(stat => {
@@ -404,7 +467,7 @@ export class EsperService {
     })
 
     this.calculateTotalBuffs()
-    this.formatUnitBuffs()
+    this.formatEsperBuffs()
     this.calculateSPs()
   }
 
@@ -441,7 +504,7 @@ export class EsperService {
     this.esper.buffs[type][calc] += value
   }
 
-  private formatUnitBuffs() {
+  private formatEsperBuffs() {
     let findedBuffs = []
     Object.keys(this.esper.buffs).forEach(buffType => {
       findedBuffs.push(buffType)
@@ -468,7 +531,7 @@ export class EsperService {
       let addedBuffs = []
       let i = 0;
 
-      this.unitBuffsOrder.forEach(buffType => {
+      this.esperBuffsOrder.forEach(buffType => {
         if (findedBuffs.indexOf(buffType) !== -1) {
           if (this.esper.possibleBuffs[i].length == 8) {
             this.esper.possibleBuffs.push([])
@@ -515,7 +578,7 @@ export class EsperService {
   rightClickNode(node) {
     if (node !== 0) {
       this.hideNode(node)
-      this.updateUnitBuffs()
+      this.updateEsperBuffs()
     }
   }
 
@@ -526,7 +589,7 @@ export class EsperService {
       } else {
         this.hideNode(node)
       }
-      this.updateUnitBuffs()
+      this.updateEsperBuffs()
     }
   }
 

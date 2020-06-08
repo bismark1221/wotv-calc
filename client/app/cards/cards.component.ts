@@ -11,8 +11,14 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-  private cards;
-  private formattedCards = {};
+  cards;
+  searchText = "";
+  sort = "rarity"
+  order = "asc"
+  filters = {
+    rarity: []
+  }
+  isCollapsedRarity = true;
 
   constructor(
     private cardService: CardService,
@@ -25,44 +31,43 @@ export class CardsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getCards();
   }
 
-  private getCards(): void {
-    let lang = this.translateService.currentLang
-    this.cards = this.cardService.getCardsForListing();
-
-    Object.keys(this.cards).forEach(rarity => {
-      this.cardService.sortByName(this.cards[rarity], this.translateService)
-
-      this.formattedCards[rarity] = [];
-      let tableIndex = -1;
-      this.cards[rarity].forEach((card, index) => {
-        if (index % 4 === 0) {
-          tableIndex++;
-          this.formattedCards[rarity][tableIndex] = [];
-        }
-
-        card.name = this.nameService.getName(card)
-        this.formattedCards[rarity][tableIndex].push(card)
-      });
-    });
+  getCards() {
+    this.cards = this.cardService.getCardsForListing(this.filters, this.sort, this.order);
+    this.translateCards();
   }
 
   private translateCards() {
-    let lang = this.translateService.currentLang
-
-    Object.keys(this.formattedCards).forEach(rarity => {
-      this.formattedCards[rarity].forEach(line => {
-        line.forEach(card => {
-          card.name = this.nameService.getName(card)
-        });
-      });
+    this.cards.forEach(card => {
+      card.name = this.nameService.getName(card)
     });
   }
 
   getRoute(route) {
     return this.navService.getRoute(route)
+  }
+
+  getFilteredCards() {
+    if (this.searchText !== "") {
+      let text = this.searchText.toLowerCase();
+      return this.cards.filter(card => {
+        return card.name.toLowerCase().includes(text);
+      });
+    } else {
+      return this.cards
+    }
+  }
+
+  filterList(type, value, checked) {
+    if (checked) {
+      this.filters[type].push(value)
+    } else {
+      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+    }
+
+    this.getCards()
   }
 }

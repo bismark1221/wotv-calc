@@ -78,43 +78,6 @@ export class CardService {
       return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
-  public sortByName(cards: Card[], translate: any): Card[] {
-    cards.sort((a: any, b: any) => {
-      let x = this.i(a.name);
-      let y = this.i(b.name);
-
-      x = this.i(a.getName(this.translateService));
-      y = this.i(b.getName(this.translateService));
-
-      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-      if (yD) {
-          if (xD < yD) { return -1; }
-          else if (xD > yD) { return 1; }
-      }
-
-      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-          this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-          this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-          if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-              return isNaN(this.oFxNcL) ? 1 : -1;
-          }
-          if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-              var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-              return comp / Math.abs(comp);
-          }
-          if (this.oFxNcL < this.oFyNcL) { return -1; }
-          else if (this.oFxNcL > this.oFyNcL) { return 1; }
-      }
-    });
-
-    return cards;
-  }
-
   private getRaw() {
     if (this.navService.getVersion() == "GL") {
       return GL_CARDS
@@ -137,23 +100,130 @@ export class CardService {
     return cards;
   }
 
-  getCardsForListing() {
-    let cards = {
-      N: [],
-      R: [],
-      SR: [],
-      MR: [],
-      UR: []
-    };
-    let rawCards = JSON.parse(JSON.stringify(this.getRaw()))
+  sortByName(cards, order = "asc") {
+    cards.sort((a: any, b: any) => {
+      let x = this.i(a.getName(this.translateService));
+      let y = this.i(b.getName(this.translateService));
 
-    Object.keys(rawCards).forEach(cardId => {
-      let card = new Card();
-      card.constructFromJson(rawCards[cardId], this.translateService);
-      cards[card.rarity].push(card);
+      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+      if (yD) {
+        if (xD < yD) {
+          return order == "asc" ? -1 : 1;
+        } else if (xD > yD) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
+
+      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+        this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+        this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+        if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+          if (isNaN(this.oFxNcL)) {
+            return order == "asc" ? 1 : -1;
+          } else {
+            return order == "asc" ? -1 : 1;
+          }
+        }
+
+        if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+          var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+          return comp / Math.abs(comp);
+        }
+
+        if (this.oFxNcL < this.oFyNcL) {
+          return order == "asc" ? -1 : 1;
+        } else if (this.oFxNcL > this.oFyNcL) {
+          return order == "asc" ? 1 : -1;
+        }
+      }
     });
 
     return cards;
+  }
+
+  sortByRarity(cards, order = "asc") {
+    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    if (order == "desc") {
+      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
+    }
+
+    cards.sort((a: any, b: any) => {
+      if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
+        return -1
+      } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
+        return 1
+      } else {
+        let x = this.i(a.getName(this.translateService));
+        let y = this.i(b.getName(this.translateService));
+
+        const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+        const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
+
+        const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+        const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+
+        if (yD) {
+            if (xD < yD) { return -1; }
+            else if (xD > yD) { return 1; }
+        }
+
+        for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
+            this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
+            this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
+            if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
+                return isNaN(this.oFxNcL) ? 1 : -1;
+            }
+            if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
+                var comp = this.oFxNcL.localeCompare(this.oFyNcL);
+                return comp / Math.abs(comp);
+            }
+            if (this.oFxNcL < this.oFyNcL) { return -1; }
+            else if (this.oFxNcL > this.oFyNcL) { return 1; }
+        }
+      }
+    })
+
+    return cards
+  }
+
+  getCardsForListing(filters, sort, order = "asc") {
+    this.getCards();
+    this.cards = this.filterCards(this.cards, filters);
+
+    switch (sort) {
+      case "rarity" :
+        this.sortByRarity(this.cards, order)
+      break
+      case "name" :
+        this.sortByName(this.cards, order)
+      break
+      default :
+        console.log("not managed sort")
+      break
+    }
+
+    return this.cards;
+  }
+
+  filterCards(cards, filters) {
+    if (filters) {
+      let filteredCards = []
+
+      cards.forEach(card => {
+        if (filters.rarity.length == 0 || filters.rarity.indexOf(card.rarity) != -1) {
+          filteredCards.push(card)
+        }
+      })
+
+      return filteredCards
+    } else {
+      return cards
+    }
   }
 
   getCard(id: string): Card {
@@ -170,21 +240,14 @@ export class CardService {
 
 
   getCardsForBuilder(translate) {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    let cards = this.getCardsForListing();
-
-    Object.keys(cards).forEach(rarity => {
-      this.sortByName(cards[rarity], translate)
-    });
+    let cards = this.getCardsForListing(null, "rarity", "asc");
 
     let formattedCardsForBuilder = []
-    rarityOrder.forEach(rarity => {
-      cards[rarity].forEach(card => {
-        formattedCardsForBuilder.push({
-          id: card.dataId,
-          name: card.getName(this.translateService),
-          rarity: card.rarity
-        })
+    cards.forEach(card => {
+      formattedCardsForBuilder.push({
+        id: card.dataId,
+        name: card.getName(this.translateService),
+        rarity: card.rarity
       })
     })
 

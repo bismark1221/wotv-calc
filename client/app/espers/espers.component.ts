@@ -11,8 +11,16 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./espers.component.css']
 })
 export class EspersComponent implements OnInit {
-  private espers;
-  private formattedEspers = {};
+  espers;
+  searchText = "";
+  sort = "rarity"
+  order = "asc"
+  filters = {
+    rarity: [],
+    element: []
+  }
+  isCollapsedRarity = true;
+  isCollapsedElement = true;
 
   constructor(
     private esperService: EsperService,
@@ -25,44 +33,43 @@ export class EspersComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getEspers();
   }
 
-  private getEspers(): void {
-    let lang = this.translateService.currentLang
-    this.espers = this.esperService.getEspersForListing();
-
-    Object.keys(this.espers).forEach(rarity => {
-      this.esperService.sortByName(this.espers[rarity], this.translateService)
-
-      this.formattedEspers[rarity] = [];
-      let tableIndex = -1;
-      this.espers[rarity].forEach((esper, index) => {
-        if (index % 4 === 0) {
-          tableIndex++;
-          this.formattedEspers[rarity][tableIndex] = [];
-        }
-
-        esper.name = this.nameService.getName(esper)
-        this.formattedEspers[rarity][tableIndex].push(esper)
-      });
-    });
+  getEspers() {
+    this.espers = this.esperService.getEspersForListing(this.filters, this.sort, this.order);
+    this.translateEspers();
   }
 
   private translateEspers() {
-    let lang = this.translateService.currentLang
-
-    Object.keys(this.formattedEspers).forEach(rarity => {
-      this.formattedEspers[rarity].forEach(line => {
-        line.forEach(esper => {
-          esper.name = this.nameService.getName(esper)
-        });
-      });
+    this.espers.forEach(esper => {
+      esper.name = this.nameService.getName(esper)
     });
   }
 
   getRoute(route) {
     return this.navService.getRoute(route)
+  }
+
+  getFilteredEspers() {
+    if (this.searchText !== "") {
+      let text = this.searchText.toLowerCase();
+      return this.espers.filter(unit => {
+        return unit.name.toLowerCase().includes(text);
+      });
+    } else {
+      return this.espers
+    }
+  }
+
+  filterList(type, value, checked) {
+    if (checked) {
+      this.filters[type].push(value)
+    } else {
+      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+    }
+
+    this.getEspers()
   }
 }

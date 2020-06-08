@@ -8,7 +8,7 @@ export class Equipment {
   stats;
 
   dataId?;
-  rarity: "N";
+  rarity = "N";
   names: any = {
     en: 'New Equipment'
   };

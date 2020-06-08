@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class Esper {
   dataId?;
-  rarity: "N";
+  rarity = "N";
   names: any = {
     en: 'New Esper'
   };

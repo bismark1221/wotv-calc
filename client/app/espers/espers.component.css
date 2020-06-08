@@ -1,27 +1,147 @@
-.esperImg {
-  height: 150px;
+.espers {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.leftBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  float: left;
+  text-align: left;
+  background: #F5F6F8;
+  color: #3D3A41;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.fa-chevron-up, .fa-chevron-down {
+  float: right;
+  margin-right: 10px;
+}
+
+.rightBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 750px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
+
+.underSearchBlock {
+  height: 30px;
+}
+
+.totalEspers {
+  float: left;
+  display: inline-block;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy {
+  display: inline-block;
+}
+
+.orderBy {
+  margin-left: 20px;
+}
+
+.countEspers {
+  font-weight: bold;
+}
+
+.espersList {
   margin-top: 10px;
 }
 
+.esperImg {
+  height: 100px;
+  margin-top: 10px;
+}
+
+.elementImg, .rarityImg {
+  height: 26px;
+}
+
+.rarityImg {
+  float: left;
+}
+
 .elementImg {
-  height: 32px;
+  float: right;
+}
+
+.espersCol {
+  background-color: var(--card-background);
+  width: 150px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title);
+  display: table;
+  height: 40px;
+  width: 100%;
 }
 
 .esperName {
   font-weight: bold;
-  margin-left: 10px
-}
-
-.espersTable {
-  width: 800px;
-}
-
-.espersCol {
-  width: 200px;
-}
-
-.row {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--white);
 }

@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class Card {
   dataId?;
-  rarity: "N";
+  rarity = "N";
   names: any = {
     en: 'New Vision Card'
   };
