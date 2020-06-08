@@ -37,7 +37,7 @@ export class EquipmentsComponent implements OnInit {
     this.getEquipments();
   }
 
-  private getEquipments() {
+  getEquipments() {
     this.equipments = this.equipmentService.getEquipmentsForListing(this.filters, this.sort, this.order);
     this.translateEquipments();
   }
