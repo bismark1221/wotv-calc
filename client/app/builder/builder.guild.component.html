@@ -4,16 +4,22 @@
       <td colspan="4">Guild Statues</td>
     </tr>
     <tr>
-      <td *ngFor="let statue of guildService.getStatues()">
+      <td *ngFor="let statue of statueNames">
         <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
       </td>
     </tr>
     <tr>
-      <td *ngFor="let statue of guildService.getStatues(); let j = index">
-        <select [(ngModel)]="guild[statue]" (ngModelChange)="saveGuild()">
-          <option *ngFor="let level of [0, 1, 2, 3, 4, 5]">{{ level }}</option>
-        </select>
-        % {{ statsType[j] }}
+      <td *ngFor="let statue of statueNames">
+        <div>
+          lv. <select [(ngModel)]="guild[statue]" (ngModelChange)="saveGuild()">
+            <option *ngFor="let level of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ level }}</option>
+          </select>
+        </div>
+        <div *ngIf="guild[statue] > 0">
+          <div *ngFor="let stats of statues[statue][guild[statue] - 1]">
+            {{ stats.value + (stats.calcType == "percent" ? "% " : " ") + stats.type }}
+          </div>
+        </div>
       </td>
     </tr>
   </table>

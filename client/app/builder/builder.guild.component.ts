@@ -9,7 +9,8 @@ import { GuildService } from '../services/guild.service';
 })
 export class BuilderGuildComponent implements OnInit {
   guild
-  statsType
+  statues
+  statueNames
 
   constructor(
     private guildService: GuildService
@@ -18,7 +19,10 @@ export class BuilderGuildComponent implements OnInit {
 
   ngOnInit(): void {
     this.getGuild();
-    this.statsType = Object.keys(this.guildService.getStats())
+    this.statues = this.guildService.getStatues()
+    this.statueNames = Object.keys(this.statues)
+
+    console.log(this.statues)
   }
 
   private getGuild() {

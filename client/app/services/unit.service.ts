@@ -556,10 +556,24 @@ export class UnitService {
 
   private calculateGuildStats() {
     let guild = this.guildService.getGuild()
-    let statsPerStatue = this.guildService.getStats()
+    console.log(guild)
+    let statues = this.guildService.getStatues()
 
-    Object.keys(statsPerStatue).forEach(statType => {
-      this.unit.stats[statType].guild = Math.floor(this.unit.stats[statType].baseTotal * guild[statsPerStatue[statType]] / 100)
+    Object.keys(guild).forEach(statue => {
+      statues[statue][guild[statue] - 1].forEach(stat => {
+        console.log(stat)
+        let value = stat.value;
+        if (stat.calcType == "percent") {
+          value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
+        }
+
+        if (!this.unit.stats[stat.type]) {
+          this.unit.stats[stat.type] = {}
+          this.unit.stats[stat.type].base = 0
+          this.unit.stats[stat.type].baseTotal = 0
+        }
+        this.unit.stats[stat.type].guild = value
+      })
     });
   }
 

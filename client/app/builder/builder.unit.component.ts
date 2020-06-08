@@ -28,7 +28,6 @@ export class BuilderUnitComponent implements OnInit {
   selectedUnitId = null
 
   guild
-  guildStatsType
 
   espers
   esper = null
@@ -153,7 +152,6 @@ export class BuilderUnitComponent implements OnInit {
 
   private getGuild() {
     this.guild = this.guildService.getGuild()
-    this.guildStatsType = Object.keys(this.guildService.getStats())
   }
 
   private getUnits() {
@@ -257,6 +255,8 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.unit = null
     }
+
+    console.log(this.unit)
   }
 
   getExportableLink() {
