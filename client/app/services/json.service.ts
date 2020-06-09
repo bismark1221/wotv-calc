@@ -1411,7 +1411,11 @@ export class JsonService {
       let attack = {
         names: {},
         effects: [],
-        dataId: attackId
+        dataId: attackId,
+        damage: {
+          minValue: 0,
+          maxValue: 0
+        }
       };
 
       let modifiedAttack = false
