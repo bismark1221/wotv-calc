@@ -458,4 +458,8 @@ export class BuilderUnitComponent implements OnInit {
   changeSubJob() {
     this.unitService.getActiveSkills()
   }
+
+  changeLimit() {
+    this.unitService.getActiveSkills()
+  }
 }

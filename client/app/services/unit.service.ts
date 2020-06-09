@@ -282,7 +282,8 @@ export class UnitService {
       esper: null,
       card: null,
       equipments: [null, null, null],
-      guild: unit.guild
+      guild: unit.guild,
+      limitLv: unit.limit.level
     }
 
     if (unit.esper) {
@@ -361,6 +362,10 @@ export class UnitService {
       }
     })
 
+    if (this.unit.limit) {
+      this.unit.limit.level = 1
+    }
+
     this.initiateSavedUnit(customData)
 
     this.updateMaxLevel();
@@ -406,6 +411,10 @@ export class UnitService {
         this.unit.subjob = unit.subjob
       }
 
+      if (unit.limitLv) {
+        this.unit.limit.level = unit.limitLv
+      }
+
       this.unit.activatedSupport = [
         unit.activatedSupport[0],
         unit.activatedSupport[1]
@@ -414,6 +423,7 @@ export class UnitService {
       this.unit.savedEsper = unit.esper
       this.unit.savedCard = unit.card
       this.unit.savedEquipments = unit.equipments
+
       if (unit.guild) {
         this.unit.savedGuild = unit.guild
       }
@@ -1144,20 +1154,28 @@ export class UnitService {
       if (node.level && node.level >= 1 && node.skill.type == "skill" &&
         (node.skill.mainSkill || node.skill.unlockJob == this.unit.subjob + 1)
       ) {
-        let skill = node.skill
-        skill.level = node.level
-        skill.name = this.nameService.getName(skill)
+        node.skill.level = node.level
 
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-        });
-
-        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
-
-        this.skillService.formatRange(this.unit, skill);
-
-        this.unit.activeSkills.push(skill)
+        this.unit.activeSkills.push(this.formatActiveSkill(node.skill))
       }
     })
+
+    if (this.unit.limit) {
+      this.unit.limit = this.formatActiveSkill(this.unit.limit)
+    }
+  }
+
+  private formatActiveSkill(skill) {
+    skill.name = this.nameService.getName(skill)
+
+    skill.effects.forEach(effect => {
+      effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+    });
+
+    skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+
+    this.skillService.formatRange(this.unit, skill);
+
+    return skill
   }
 }
