@@ -108275,7 +108275,13 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic"
+      "based": "physic",
+      "damage": {
+        "minValue": 0,
+        "maxValue": 0,
+        "type": "slash",
+        "effType": "DAMAGE"
+      }
     },
     "masterSkill": [
       {
@@ -110545,7 +110551,13 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic"
+      "based": "physic",
+      "damage": {
+        "minValue": 0,
+        "maxValue": 0,
+        "type": "slash",
+        "effType": "DAMAGE"
+      }
     },
     "masterSkill": [
       {

@@ -1254,8 +1254,8 @@ export class JsonService {
     }
 
 
-    if (((typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val !== 0)
-      || (typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 !== 0))
+    if (((typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val != 0)
+      || (typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 != 0))
       && dataSkill.eff_type !== 10
     ) {
       skill.damage = {
@@ -1413,7 +1413,20 @@ export class JsonService {
         effects: [],
         dataId: attackId
       };
+
+      let modifiedAttack = false
+      if (!this[this.version].skills[attackId].eff_val) {
+        this[this.version].skills[attackId].eff_val = 1
+        this[this.version].skills[attackId].eff_val1 = 1
+        modifiedAttack = true
+      }
+
       this.updateSkill(unit, attack, attackId);
+
+      if (modifiedAttack) {
+        attack.damage.minValue = 0
+        attack.damage.maxValue = 0
+      }
 
       unit.attack = attack
     }
