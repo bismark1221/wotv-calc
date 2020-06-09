@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { GuildService } from '../services/guild.service';
 
@@ -8,26 +9,33 @@ import { GuildService } from '../services/guild.service';
   styleUrls: ['./builder.guild.component.css']
 })
 export class BuilderGuildComponent implements OnInit {
-  guild
+  @Input() public guild
+  @Input() public fromUnitBuilder = false;
+  @Output() passEntry: EventEmitter<any> = new EventEmitter();
+
   statues
   statueNames
 
   constructor(
-    private guildService: GuildService
+    private guildService: GuildService,
+    private modalService: NgbModal
   ) {
   }
 
   ngOnInit(): void {
-    this.getGuild();
+    if (!this.guild) {
+      this.guild = this.guildService.getGuild()
+    }
+
     this.statues = this.guildService.getStatues()
-    this.statueNames = Object.keys(this.statues)
+    this.statueNames = Object.keys(this.guild)
   }
 
-  private getGuild() {
-    this.guild = this.guildService.getGuild()
-  }
-
-  private saveGuild() {
+  saveGuild() {
     this.guildService.saveGuild()
+  }
+
+  close() {
+    this.modalService.dismissAll();
   }
 }

@@ -262,6 +262,27 @@
     </table>
   </div>
 
+  <div *ngIf="unit">
+    <table>
+      <tr>
+        <td colspan="4">Guild</td>
+      </tr>
+      <tr>
+        <td *ngFor="let statue of statueNames">
+          <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+        </td>
+      </tr>
+      <td *ngFor="let statue of statueNames">
+        <div>
+          {{ unit.guild[statue] }}
+        </div>
+      </td>
+      <tr>
+        <td colspan="4"><button (click)="showGuildDetail()">Custom</button></td>
+      </tr>
+    </table>
+  </div>
+
   <ng-template #builderLink let-modal>
     <div>
       <button type="button" class="close" aria-label="Close" (click)="closeModal()">

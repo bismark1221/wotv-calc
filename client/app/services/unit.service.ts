@@ -281,7 +281,8 @@ export class UnitService {
       subjob: unit.subjob,
       esper: null,
       card: null,
-      equipments: [null, null, null]
+      equipments: [null, null, null],
+      guild: unit.guild
     }
 
     if (unit.esper) {
@@ -413,6 +414,9 @@ export class UnitService {
       this.unit.savedEsper = unit.esper
       this.unit.savedCard = unit.card
       this.unit.savedEquipments = unit.equipments
+      if (unit.guild) {
+        this.unit.savedGuild = unit.guild
+      }
     }
   }
 
@@ -555,26 +559,28 @@ export class UnitService {
   }
 
   private calculateGuildStats() {
-    let guild = this.guildService.getGuild()
-    let statues = this.guildService.getStatues()
+    let guild = this.unit.guild
+    if (guild) {
+      let statues = this.guildService.getStatues()
 
-    Object.keys(guild).forEach(statue => {
-      if (guild[statue] > 0) {
-        statues[statue][guild[statue] - 1].forEach(stat => {
-          let value = stat.value;
-          if (stat.calcType == "percent") {
-            value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
-          }
+      Object.keys(guild).forEach(statue => {
+        if (guild[statue] > 0) {
+          statues[statue][guild[statue] - 1].forEach(stat => {
+            let value = stat.value;
+            if (stat.calcType == "percent") {
+              value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
+            }
 
-          if (!this.unit.stats[stat.type]) {
-            this.unit.stats[stat.type] = {}
-            this.unit.stats[stat.type].base = 0
-            this.unit.stats[stat.type].baseTotal = 0
-          }
-          this.unit.stats[stat.type].guild = value
-        })
-      }
-    });
+            if (!this.unit.stats[stat.type]) {
+              this.unit.stats[stat.type] = {}
+              this.unit.stats[stat.type].base = 0
+              this.unit.stats[stat.type].baseTotal = 0
+            }
+            this.unit.stats[stat.type].guild = value
+          })
+        }
+      });
+    }
   }
 
   private updateStat(type, value, statType, calc = "fixe") {

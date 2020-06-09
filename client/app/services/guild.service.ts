@@ -70,7 +70,7 @@ export class GuildService {
 
   getGuild() {
     if (this.localStorageService.get(this.getLocalStorage())) {
-      this.guild = this.localStorageService.get(this.getLocalStorage())
+      this.guild = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
     } else {
       this.guild = new Guild();
     }
