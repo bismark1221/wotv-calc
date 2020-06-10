@@ -98,7 +98,7 @@ export class SkillService {
   }
 
   private getIncrease(effect) {
-    if (effect.minValue < 0) {
+    if (effect.minValue < 0 || effect.value < 0) {
       return "Decrease"
     } else {
       return "Increase"
