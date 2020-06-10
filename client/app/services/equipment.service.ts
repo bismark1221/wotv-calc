@@ -357,6 +357,10 @@ export class EquipmentService {
         let maxValue = this.equipment.stats[statType].max
         let growMax = this.equipment.grows[growId].curve[statType] ? Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100)) : maxValue
 
+        if (maxValue != growMax) {
+          this.equipment.stats[statType].max = growMax
+        }
+
         this.equipment.grows[growId].stats[statType] = []
         for (let i = this.equipment.stats[statType].min; i <= growMax; i++) {
           this.equipment.grows[growId].stats[statType].push(i)
