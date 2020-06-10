@@ -3081,6 +3081,22 @@
             "value": "しゃくりあげ"
         },
         {
+            "key": "SK_BHMT_ATK_02",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_BHMT_M_01_02",
+            "value": "つきあげる"
+        },
+        {
+            "key": "SK_BHMT_M_02_02",
+            "value": "あばれまわる"
+        },
+        {
+            "key": "SK_BHMT_M_03_02",
+            "value": "しゃくりあげ"
+        },
+        {
             "key": "SK_MABR_ATK",
             "value": "通常攻撃"
         },
@@ -3211,6 +3227,30 @@
         {
             "key": "SK_CACT_M_03_CHECK",
             "value": "麻痺針"
+        },
+        {
+            "key": "SK_TNBR_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_TNBR_M_01",
+            "value": "ほうちょう"
+        },
+        {
+            "key": "SK_TNBR_M_02",
+            "value": "うらみぼうちょう"
+        },
+        {
+            "key": "SK_TNBR_M_03",
+            "value": "うらみ骨髄"
+        },
+        {
+            "key": "SK_TNBR_M_04",
+            "value": "みんなのうらみ"
+        },
+        {
+            "key": "SK_TNBR_M_04_R",
+            "value": "みんなのうらみ"
         },
         {
             "key": "SK_GLSP_ATK",
@@ -3733,6 +3773,26 @@
             "value": "ミスティックロアー"
         },
         {
+            "key": "SK_TITN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_TITN_M_01",
+            "value": "土石流"
+        },
+        {
+            "key": "SK_TITN_M_02",
+            "value": "ロック・デポジション"
+        },
+        {
+            "key": "SK_TITN_M_03",
+            "value": "ジャイアント・グロウス"
+        },
+        {
+            "key": "SK_TITN_M_04",
+            "value": "大地の怒り"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "通常攻撃"
         },
@@ -4031,6 +4091,10 @@
         {
             "key": "SK_SMN_FNRR",
             "value": "ミスティックロアー"
+        },
+        {
+            "key": "SK_SMN_TITN",
+            "value": "大地の怒り"
         },
         {
             "key": "SK_SMN_IGNT",
@@ -5073,6 +5137,14 @@
             "value": "クリムゾンセイバー"
         },
         {
+            "key": "SK_LW_KAT_008_1",
+            "value": "紫電(氷属性攻撃UP)"
+        },
+        {
+            "key": "SK_LW_KAT_008_5",
+            "value": "紫電(氷属性攻撃UP)"
+        },
+        {
             "key": "SK_ACC_LW_MONT_1_1",
             "value": "掛け声"
         },
@@ -5859,6 +5931,10 @@
         {
             "key": "SK_BTL_INV_HPDOWN",
             "value": "最大HPダウン無効"
+        },
+        {
+            "key": "SK_BTL_INV_SPDDOWN",
+            "value": "素早さダウン無効"
         },
         {
             "key": "SK_BTL_INV_MKBT",

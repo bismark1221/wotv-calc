@@ -210,6 +210,7 @@ export class JsonService {
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
     123: "IMBUE",
+    126: "ON_BASIC_ATTACK",
     130: "IF_KILL_WITH_MAGIC",
     134: "BOOST_DAMAGE_AGAINST_METAL",
     140: "ALL_AILMENTS",
@@ -245,6 +246,10 @@ export class JsonService {
     314: "DEFENSE_PENETRATION",
     316: "AP_CONSUMPTION"
   }
+
+  forceAddBuff = [
+    126
+  ]
 
   killers = {
     2: "FIRE",
@@ -1208,7 +1213,7 @@ export class JsonService {
 
     if (dataSkill.klsp) {
       if (!this.killers[dataSkill.klsp[0]]) {
-        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + dataSkill.klsp[0])
+        console.log("1 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + dataSkill.klsp[0])
       }
 
       dataSkill.klsp.forEach(killer => {
@@ -1271,7 +1276,7 @@ export class JsonService {
       }
 
       if (dataSkill.eff_dst && !this.damagePool[dataSkill.eff_dst]) {
-        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + dataSkill.eff_dst)
+        console.log("2 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + dataSkill.eff_dst)
       }
 
       if (dataSkill.elem) {
@@ -1299,7 +1304,7 @@ export class JsonService {
               if (this[this.version].buffs[buff]["type" + i]) {
                 if (duplicateFinded && this[this.version].buffs[buff]["type" + i] === 117) {} else {
                   if (!this.buffTypes[this[this.version].buffs[buff]["type" + i]]) {
-                    console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
+                    console.log("3 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
                   }
 
                   if (this[this.version].buffs[buff]["id" + i]) {
@@ -1307,7 +1312,13 @@ export class JsonService {
                   }
 
                   if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
-                    console.log("@@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
+                    console.log("4 @@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
+                  }
+
+                  if (this.forceAddBuff.indexOf(this[this.version].buffs[buff]["type" + i]) != -1) {
+                    skill.effects.push({
+                      type: this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+                    })
                   }
 
                   let type = this[this.version].buffs[buff]["tag" + i] ? this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this[this.version].buffs[buff]["type" + i]]
@@ -1581,7 +1592,7 @@ export class JsonService {
             if (this[this.version].buffs[buff["buff" + j]]["type" + i]) {
 
               if (!this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
+                console.log("5 @@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
               }
 
               let type = this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]

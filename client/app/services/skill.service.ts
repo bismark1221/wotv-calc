@@ -772,6 +772,9 @@ export class SkillService {
       case "IF_KILL_WITH_MAGIC" :
         html = "If kill with magic grants"
       break
+      case "ON_BASIC_ATTACK" :
+        html = "On basic attacks only"
+      break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)
         effect.ailments.forEach((ailment, index) => {

@@ -54,7 +54,8 @@ export class EsperService {
       "UN_LW_S_THDG",
       "UN_FF01_S_WRMC",
       "UN_LW_S_DABL",
-      "UN_LW_S_FNRR"
+      "UN_LW_S_FNRR",
+      "UN_LW_S_TITN"
     ]
   }
 

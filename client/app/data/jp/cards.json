@@ -2060,7 +2060,7 @@
   "VC_LW_VALE1": {
     "dataId": "VC_LW_VALE1",
     "names": {
-      "en": "伝えられない気持ち"
+      "en": "伝えられない気持ち - Secrets of the Heart"
     },
     "rarity": "UR",
     "stats": {
@@ -2078,7 +2078,7 @@
       }
     },
     "image": "lapsvale1",
-    "slug": "chuanerarenai-qi-chiti",
+    "slug": "secrets-of-the-heart",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -3293,6 +3293,155 @@
         "en": "SK_VC_LW_FNRR_PMAX"
       },
       "slug": "sk_vc_lw_fnrr_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_TITN": {
+    "dataId": "VC_LW_TITN",
+    "names": {
+      "en": "猛る大地　タイタン"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 36,
+        "max": 283
+      },
+      "ATK": {
+        "min": 29,
+        "max": 112
+      },
+      "MAG": {
+        "min": 16,
+        "max": 62
+      }
+    },
+    "image": "lapstitn",
+    "slug": "mengru-da-di-taitan",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ON_BASIC_ATTACK"
+        },
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 7,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_TITN_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TITN_GS"
+      },
+      "slug": "sk_vc_lw_titn_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ON_BASIC_ATTACK"
+        },
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_TITN_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TITN_GS_AW"
+      },
+      "slug": "sk_vc_lw_titn_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ON_BASIC_ATTACK"
+        },
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_TITN_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TITN_GSMAX"
+      },
+      "slug": "sk_vc_lw_titn_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_TITN_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TITN_P"
+      },
+      "slug": "sk_vc_lw_titn_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_TITN_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TITN_PAW"
+      },
+      "slug": "sk_vc_lw_titn_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_TITN_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_TITN_PMAX"
+      },
+      "slug": "sk_vc_lw_titn_pmax",
       "maxLevel": 1
     }
   },
@@ -4847,7 +4996,7 @@
   "VC_LW_VALE2": {
     "dataId": "VC_LW_VALE2",
     "names": {
-      "en": "イケメン争奪戦！！"
+      "en": "イケメン争奪戦！！ - Admirers' Rivalry"
     },
     "rarity": "MR",
     "stats": {
@@ -4865,7 +5014,7 @@
       }
     },
     "image": "lapsvale2",
-    "slug": "ikemen-zheng-duo-zhan",
+    "slug": "admirers-rivalry",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -5749,6 +5898,105 @@
         "en": "SK_VC_LW_ORDR_PAW"
       },
       "slug": "sk_vc_lw_ordr_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_KING": {
+    "dataId": "VC_LW_KING",
+    "names": {
+      "en": "戦乱四君"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 28,
+        "max": 226
+      },
+      "ATK": {
+        "min": 23,
+        "max": 95
+      },
+      "MAG": {
+        "min": 6,
+        "max": 24
+      }
+    },
+    "image": "lapsking",
+    "slug": "zhan-luan-si-jun",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CRITIC_RATE",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_KING_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_KING_GS"
+      },
+      "slug": "sk_vc_lw_king_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CRITIC_RATE",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_KING_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_KING_GSAW"
+      },
+      "slug": "sk_vc_lw_king_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_KING_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_KING_P"
+      },
+      "slug": "sk_vc_lw_king_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_KING_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_KING_PAW"
+      },
+      "slug": "sk_vc_lw_king_paw",
       "maxLevel": 4
     }
   },

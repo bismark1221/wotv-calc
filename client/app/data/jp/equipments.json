@@ -5326,6 +5326,525 @@
       }
     }
   },
+  "AF_LOT_LW_KAT_008": {
+    "names": {
+      "en": "紫電"
+    },
+    "slug": "zi-dian",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 74
+      },
+      "ATK": {
+        "min": 8,
+        "max": 159
+      },
+      "MAG": {
+        "min": 1,
+        "max": 9
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "KATANA",
+    "dataId": "AF_LW_KAT_008",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "アサルト"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "asaruto"
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "eimu"
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "kuriteikaru"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-li-2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-li-3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-li-5",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+10"
+          },
+          "dataId": "SK_LW_SLASH_4_UR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-li-10",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+20"
+          },
+          "dataId": "SK_LW_SLASH_5_UR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-li-20",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "紫電(氷属性攻撃UP)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zi-dian-bing-shu-xing-gong-jiup",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_kat_008",
+    "equippableJobs": [
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
+    ],
+    "acquisition": {
+      "type": {}
+    }
+  },
   "AF_LW_FIS_000": {
     "names": {
       "en": "ブロンズナックル - Bronze Knuckles"
@@ -21359,9 +21878,9 @@
   },
   "AF_LOT_LW_RNG_005": {
     "names": {
-      "en": "アレキサンドライトの指輪"
+      "en": "アレキサンドライトの指輪 - Alexandrite Ring"
     },
-    "slug": "arekisandoraitono-zhi-lun",
+    "slug": "alexandrite-ring",
     "stats": {
       "HP": {
         "min": 11,
@@ -21915,7 +22434,7 @@
       "JB_LW_LSWL"
     ],
     "acquisition": {
-      "type": {}
+      "type": "Unknown"
     }
   },
   "AF_LOT_FFT_ACC_001": {

@@ -1439,6 +1439,150 @@
       "maxLevel": 1
     }
   },
+  "VC_LW_VALE1": {
+    "dataId": "VC_LW_VALE1",
+    "names": {
+      "en": "Secrets of the Heart",
+      "fr": "Cœur insondable"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 292
+      },
+      "ATK": {
+        "min": 43,
+        "max": 168
+      },
+      "MAG": {
+        "min": 9,
+        "max": 32
+      }
+    },
+    "image": "lapsvale1",
+    "slug": "secrets-of-the-heart",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 15,
+          "maxValue": 25,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_GS",
+        "fr": "SK_VC_LW_VALE1_GS"
+      },
+      "slug": "sk_vc_lw_vale1_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_GSAW",
+        "fr": "SK_VC_LW_VALE1_GSAW"
+      },
+      "slug": "sk_vc_lw_vale1_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "LUCK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_GSMAX",
+        "fr": "SK_VC_LW_VALE1_GSMAX"
+      },
+      "slug": "sk_vc_lw_vale1_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EARTH_ATK",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_P",
+        "fr": "SK_VC_LW_VALE1_P"
+      },
+      "slug": "sk_vc_lw_vale1_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EARTH_ATK",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_PAW",
+        "fr": "SK_VC_LW_VALE1_PAW"
+      },
+      "slug": "sk_vc_lw_vale1_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EARTH_ATK",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE1_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE1_PMAX",
+        "fr": "SK_VC_LW_VALE1_PMAX"
+      },
+      "slug": "sk_vc_lw_vale1_pmax",
+      "maxLevel": 1
+    }
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -2052,6 +2196,119 @@
       },
       "slug": "sk_vc_lw_ramu_pmax",
       "maxLevel": 1
+    }
+  },
+  "VC_LW_VALE2": {
+    "dataId": "VC_LW_VALE2",
+    "names": {
+      "en": "Admirers' Rivalry",
+      "fr": "Admiratrices rivales"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 33,
+        "max": 268
+      },
+      "ATK": {
+        "min": 23,
+        "max": 92
+      },
+      "MAG": {
+        "min": 17,
+        "max": 68
+      }
+    },
+    "image": "lapsvale2",
+    "slug": "admirers-rivalry",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DEF_DEBUFF_RES",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE2_GS",
+        "fr": "SK_VC_LW_VALE2_GS"
+      },
+      "slug": "sk_vc_lw_vale2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DEF_DEBUFF_RES",
+          "minValue": 1,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE2_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE2_GSAW",
+        "fr": "SK_VC_LW_VALE2_GSAW"
+      },
+      "slug": "sk_vc_lw_vale2_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EARTH_KILLER",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 200
+        },
+        {
+          "type": "DEX",
+          "minValue": -10,
+          "maxValue": -10,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE2_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE2_P",
+        "fr": "SK_VC_LW_VALE2_P"
+      },
+      "slug": "sk_vc_lw_vale2_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "EARTH_KILLER",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_VALE2_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VALE2_PAW",
+        "fr": "SK_VC_LW_VALE2_PAW"
+      },
+      "slug": "sk_vc_lw_vale2_paw",
+      "maxLevel": 4
     }
   },
   "VC_FFT_MV1": {
@@ -5027,7 +5284,8 @@
   "VC_LW_TSLP": {
     "dataId": "VC_LW_TSLP",
     "names": {
-      "en": "Gale-Begetting Heavenly Four, Tetra Sylphid"
+      "en": "Gale-Begetting Heavenly Four, Tetra Sylphid",
+      "fr": "Tétra-Sylphides, les Quatre tempêtes célestes"
     },
     "rarity": "UR",
     "stats": {
@@ -5170,7 +5428,8 @@
   "VC_LW_LILS": {
     "dataId": "VC_LW_LILS",
     "names": {
-      "en": "Path to Revenge"
+      "en": "Path to Revenge",
+      "fr": "Voie de la vengeance"
     },
     "rarity": "MR",
     "stats": {

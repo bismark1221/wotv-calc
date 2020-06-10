@@ -385,7 +385,7 @@
             "mainSkill": false,
             "names": {
               "en": "Crown Prince of Leonis",
-              "fr": "Couronne princière de Leonis"
+              "fr": "Prince héritier de Leonis"
             },
             "slug": "crown-prince-of-leonis",
             "maxLevel": 20
@@ -2085,6 +2085,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_WAR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -2093,12 +2099,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -4317,6 +4317,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_SWN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -4325,12 +4331,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -6472,6 +6472,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -6482,12 +6488,6 @@
       },
       "based": "physic",
       "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -8711,6 +8711,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_SAM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -8719,12 +8725,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -10876,6 +10876,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_PLD_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -10884,12 +10890,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -13046,6 +13046,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_MNK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -13054,12 +13060,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -15237,6 +15237,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -15247,12 +15253,6 @@
       },
       "based": "physic",
       "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -17571,6 +17571,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -17579,12 +17585,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -19944,6 +19944,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_WHM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -19952,12 +19958,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -22218,6 +22218,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_CLR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -22226,12 +22232,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -24535,6 +24535,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_GRM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -24543,12 +24549,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -26782,6 +26782,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -26790,12 +26796,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -28933,6 +28933,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -28943,12 +28949,6 @@
       },
       "based": "physic",
       "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -31065,6 +31065,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_SAM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -31073,12 +31079,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -33235,6 +33235,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_DRG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -33245,12 +33251,6 @@
       },
       "based": "physic",
       "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -35413,6 +35413,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_GUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -35423,12 +35429,6 @@
         "line": 1
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -37601,6 +37601,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_THI_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -37609,12 +37615,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -39828,6 +39828,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -39839,12 +39845,6 @@
         "line": 2
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -42072,6 +42072,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_CLR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -42080,12 +42086,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -44294,6 +44294,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_MNK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -44302,12 +44308,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -46535,6 +46535,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_TIM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -46543,12 +46549,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -48821,6 +48821,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_WHM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -48829,12 +48835,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -51078,6 +51078,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_SWN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -51086,12 +51092,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -53394,6 +53394,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_FINA_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -53405,12 +53411,6 @@
         "line": 2
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -55537,6 +55537,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -55545,12 +55551,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -57773,6 +57773,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_MGK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "range": {
         "h": 1,
@@ -57780,12 +57786,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -59913,6 +59913,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_DRG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -59923,12 +59929,6 @@
       },
       "based": "physic",
       "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -62170,6 +62170,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_GRM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -62178,12 +62184,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -64440,6 +64440,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_WHM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -64448,12 +64454,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -66620,6 +66620,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -66630,12 +66636,6 @@
       },
       "based": "physic",
       "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -68856,6 +68856,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -68867,12 +68873,6 @@
         "line": 2
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -71050,6 +71050,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -71058,12 +71064,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -73180,6 +73180,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_THI_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -73188,12 +73194,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -75399,6 +75399,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_RDM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -75407,12 +75413,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -77631,6 +77631,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_TIM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -77639,12 +77645,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -79863,6 +79863,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -79874,12 +79880,6 @@
         "line": 2
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -82089,6 +82089,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -82097,12 +82103,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -84232,6 +84232,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_THI_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -84240,12 +84246,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -86316,6 +86316,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_WAR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -86324,12 +86330,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -88587,6 +88587,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_GLMS_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -88595,12 +88601,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -88631,7 +88631,8 @@
       },
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -90890,6 +90891,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_YSTL_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -90898,12 +90905,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -93004,6 +93005,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_TNCR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -93012,12 +93019,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -95263,6 +95264,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_GUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -95273,12 +95280,6 @@
         "line": 1
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -97400,6 +97401,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_NIN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -97408,12 +97415,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -99605,6 +99606,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_VIK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -99613,12 +99620,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -101788,6 +101789,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_PLD_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -101796,12 +101803,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -103953,6 +103954,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_MNK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -103961,12 +103968,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "strike",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -106145,6 +106146,12 @@
       },
       "effects": [],
       "dataId": "SK_FFT_RAMZ_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -106153,12 +106160,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -108268,6 +108269,12 @@
       },
       "effects": [],
       "dataId": "SK_FFT_GFGR_ATK",
+      "damage": {
+        "minValue": 0,
+        "maxValue": 0,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -108275,13 +108282,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": 0,
-        "maxValue": 0,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -110544,6 +110545,12 @@
       },
       "effects": [],
       "dataId": "SK_FFT_ORND_ATK",
+      "damage": {
+        "minValue": 0,
+        "maxValue": 0,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -110551,13 +110558,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": 0,
-        "maxValue": 0,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -112772,6 +112773,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -112780,12 +112787,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -115113,6 +115114,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_NIN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -115121,12 +115128,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -115173,10 +115174,9 @@
           "effects": [
             {
               "type": "PROVOKE",
-              "minValue": -30,
-              "maxValue": -60,
-              "calcType": "fixe",
-              "turn": 3
+              "minValue": -6,
+              "maxValue": -8,
+              "calcType": "fixe"
             },
             {
               "type": "MOVE",
@@ -117338,6 +117338,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_RDM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -117346,12 +117352,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -119517,6 +119517,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_VIK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -119525,12 +119531,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -120172,7 +120172,7 @@
             "mainSkill": false,
             "names": {
               "en": "Predictive Fire",
-              "fr": "Embrasement prévisible"
+              "fr": "Tir préventif"
             },
             "slug": "predictive-fire",
             "maxLevel": 20,
@@ -121730,6 +121730,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_WGN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -121740,12 +121746,6 @@
         "line": 1
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -121794,7 +121794,8 @@
         {
           "dataId": "SK_ARM_LW_LUCA_1_1",
           "names": {
-            "en": "Limiter Off"
+            "en": "Limiter Off",
+            "fr": "Sans limite"
           },
           "effects": [
             {
@@ -121829,7 +121830,8 @@
   "UN_LW_P_ADLD": {
     "dataId": "UN_LW_P_ADLD",
     "names": {
-      "en": "Adelard"
+      "en": "Adelard",
+      "fr": "Adelard"
     },
     "rarity": "MR",
     "jobs": [
@@ -124002,6 +124004,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_RDM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -124010,12 +124018,6 @@
         "s": 0
       },
       "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      },
       "elem": [
         "neutral"
       ]
@@ -124023,7 +124025,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -124046,7 +124049,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Vermilion Sword"
+        "en": "Vermilion Sword",
+        "fr": "Épée vermillon"
       },
       "stats": {
         "HP": 102,

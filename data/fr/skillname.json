@@ -58,7 +58,7 @@
         },
         {
             "key": "SK_LW_WAR_P_1_MONT",
-            "value": "Couronne princière de Leonis"
+            "value": "Prince héritier de Leonis"
         },
         {
             "key": "SK_LW_WAR_M_1_SUB",
@@ -2242,7 +2242,7 @@
         },
         {
             "key": "SK_LW_WGN_R_1",
-            "value": "Embrasement prévisible"
+            "value": "Tir préventif"
         },
         {
             "key": "SK_LW_WGN_P_1",
@@ -2254,7 +2254,7 @@
         },
         {
             "key": "SK_LW_WGN_S_1",
-            "value": "Tir spirituel"
+            "value": "Tir perçant"
         },
         {
             "key": "SK_LW_WGN_S_2",
@@ -2262,7 +2262,7 @@
         },
         {
             "key": "SK_LW_WGN_M_1_SUB",
-            "value": "En joug"
+            "value": "En joue"
         },
         {
             "key": "SK_LW_WGN_M_2_SUB",
@@ -2785,28 +2785,40 @@
             "value": "Magie impure / Toxine X"
         },
         {
-            "key": "SK_LAMA_ATK",
+            "key": "SK_CSLI_ATK",
             "value": "Attaque normale"
         },
         {
-            "key": "SK_LAMA_M_01",
-            "value": "Appâter"
+            "key": "SK_CSLI_M_01",
+            "value": "Sphère marron"
         },
         {
-            "key": "SK_LAMA_M_01_MAN",
-            "value": "Appâter"
+            "key": "SK_CSLI_M_02",
+            "value": "Mordre à pleines dents"
         },
         {
-            "key": "SK_LAMA_M_02",
-            "value": "Cillement"
+            "key": "SK_CSLI_M_03",
+            "value": "Adorable fontaine"
         },
         {
-            "key": "SK_LAMA_M_03",
-            "value": "Queue ensorceleuse"
+            "key": "SK_CSLI_M_03_QE",
+            "value": "Adorable fontaine"
         },
         {
-            "key": "SK_GL_LAMA_M_03",
-            "value": "Queue ensorceleuse"
+            "key": "SK_SLIM_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_SLIM_M_01",
+            "value": "Éclaboussures"
+        },
+        {
+            "key": "SK_SLIM_M_02",
+            "value": "Absorption"
+        },
+        {
+            "key": "SK_SLIM_M_03",
+            "value": "Propagation liquide"
         },
         {
             "key": "SK_IFRT_ATK",
@@ -2947,6 +2959,50 @@
         {
             "key": "SK_IGNT_M_03",
             "value": "Faucheur"
+        },
+        {
+            "key": "SK_LAMA_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LAMA_M_01",
+            "value": "Appâter"
+        },
+        {
+            "key": "SK_LAMA_M_01_MAN",
+            "value": "Appâter"
+        },
+        {
+            "key": "SK_LAMA_M_02",
+            "value": "Cillement"
+        },
+        {
+            "key": "SK_LAMA_M_03",
+            "value": "Queue ensorceleuse"
+        },
+        {
+            "key": "SK_GL_LAMA_M_03",
+            "value": "Queue ensorceleuse"
+        },
+        {
+            "key": "SK_TSLP_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_TSLP_M_01",
+            "value": "Vent"
+        },
+        {
+            "key": "SK_TSLP_M_02",
+            "value": "Vent X"
+        },
+        {
+            "key": "SK_TSLP_M_03",
+            "value": "Mur éolien"
+        },
+        {
+            "key": "SK_TSLP_M_04",
+            "value": "Vent céleste"
         },
         {
             "key": "SK_LW_E_VIK_ATK",
@@ -3125,6 +3181,14 @@
             "value": "Lumière éclatante+"
         },
         {
+            "key": "SK_LB_LW_LUCA",
+            "value": "Danse sadique"
+        },
+        {
+            "key": "SK_LB_LW_LUCA_B",
+            "value": "Danse sadique +"
+        },
+        {
             "key": "SK_LB_LW_YERM",
             "value": "Hache viking"
         },
@@ -3139,14 +3203,6 @@
         {
             "key": "SK_LB_FFT_ORND",
             "value": "Tech. d'épée : Dieu foudroyant"
-        },
-        {
-            "key": "SK_LB_LW_LUCA",
-            "value": "Danse sadique"
-        },
-        {
-            "key": "SK_LB_LW_LUCA_B",
-            "value": "Danse sadique +"
         },
         {
             "key": "SK_SMN_IFRT",
@@ -3197,16 +3253,20 @@
             "value": "Grand tourbillon"
         },
         {
-            "key": "SK_SMN_LAMA",
-            "value": "Queue ensorceleuse"
-        },
-        {
             "key": "SK_SMN_OGRE",
             "value": "Projection violente "
         },
         {
             "key": "SK_SMN_BOMB",
             "value": "Auto-destruction"
+        },
+        {
+            "key": "SK_SMN_LAMA",
+            "value": "Queue ensorceleuse"
+        },
+        {
+            "key": "SK_SMN_TSLP",
+            "value": "Vent céleste"
         },
         {
             "key": "SK_US_POTION",
@@ -3358,6 +3418,10 @@
         },
         {
             "key": "SK_MA_LW_GLMS",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_GLMS_2",
             "value": "Aptitude maître"
         },
         {
@@ -3541,6 +3605,10 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_P_ADLD",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -3617,6 +3685,14 @@
             "value": "Cryolame"
         },
         {
+            "key": "SK_LW_RNG_005_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_005_5",
+            "value": ""
+        },
+        {
             "key": "SK_ACC_LW_MONT_1_1",
             "value": "Cri de ralliement"
         },
@@ -3687,6 +3763,14 @@
         {
             "key": "SK_ARW_LW_KTON_1_1",
             "value": "Mille-pattes"
+        },
+        {
+            "key": "SK_ARM_LW_LUCA_1_1",
+            "value": "Sans limite"
+        },
+        {
+            "key": "SK_SWO_LW_ADLD_1_1",
+            "value": ""
         },
         {
             "key": "SK_ROD_LW_HLNA_1_1",
@@ -3843,6 +3927,14 @@
         {
             "key": "SK_LW_SWO_007_1",
             "value": ""
+        },
+        {
+            "key": "SK_LW_AF_ICE_PA_1",
+            "value": "Attaque de glace augmentée passive"
+        },
+        {
+            "key": "SK_LW_AF_ICE_PA_5",
+            "value": "Attaque de glace augmentée passive"
         },
         {
             "key": "SK_KAT_LW_DIAA_1_1",
@@ -4045,22 +4137,6 @@
             "value": ""
         },
         {
-            "key": "SK_VC_LW_LAMA_01_GS",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_LAMA_01_GSAW",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_GUARD_GS",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_GUARD_GSAW",
-            "value": ""
-        },
-        {
             "key": "SK_VC_LW_HOLYNIGHT_GS",
             "value": ""
         },
@@ -4165,6 +4241,22 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_LAMA_01_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LAMA_01_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUARD_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUARD_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_CACT_GS",
             "value": ""
         },
@@ -4258,6 +4350,46 @@
         },
         {
             "key": "SK_VC_LW_MIRROR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TSLP_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TSLP_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TSLP_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LILS_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LILS_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE1_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE2_GSAW",
             "value": ""
         },
         {
@@ -4626,6 +4758,46 @@
         },
         {
             "key": "SK_VC_LW_MIRROR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TSLP_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TSLP_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TSLP_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LILS_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_LILS_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VALE2_PAW",
             "value": ""
         },
         {
@@ -5081,6 +5253,18 @@
             "value": "Annule poison"
         },
         {
+            "key": "SK_BTL_INV_HPDOWN",
+            "value": "Annule PV max réduits"
+        },
+        {
+            "key": "SK_BTL_INV_MKBT",
+            "value": "Rés inorganiques"
+        },
+        {
+            "key": "SK_BTL_INV_CTDOWN",
+            "value": "Annule les changements de CT"
+        },
+        {
             "key": "SK_BTL_JOB_THI_1_15_U",
             "value": "Niv. du job [Voleur] 1-15"
         },
@@ -5106,7 +5290,7 @@
         },
         {
             "key": "SK_BTL_JOB_SWN_1_15_U",
-            "value": "Niveau du job [Chevalier occulte] 1-15"
+            "value": "Niv. du job [Chevalier épéiste] 1-15"
         },
         {
             "key": "SK_BTL_JOB_MNK_1_15_U",
