@@ -63,7 +63,7 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="3">Stats</th>
+        <th colspan="10">Stats</th>
       </tr>
       <tr>
         <th *ngFor="let type of card.statsType">{{ type }}</th>
@@ -74,18 +74,18 @@
         </td>
       </tr>
       <tr>
-        <th colspan="3">Unit Buff</th>
+        <th colspan="10">Unit Buff</th>
       </tr>
       <tr>
-        <td colspan="3">
+        <td colspan="10">
           <div *ngFor="let buff of card.buff.self">{{ buff }}</div>
         </td>
       </tr>
       <tr>
-        <th colspan="3">Party Buff</th>
+        <th colspan="10">Party Buff</th>
       </tr>
       <tr>
-        <td colspan="3">
+        <td colspan="10">
           <div *ngFor="let buff of card.buff.party">{{ buff }}</div>
         </td>
       </tr>

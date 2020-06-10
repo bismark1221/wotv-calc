@@ -18,32 +18,26 @@
     <table class="statTable">
       <tbody>
         <tr>
-          <th colspan="4">Stats</th>
+          <th colspan="10">Stats</th>
         </tr>
         <tr>
           <th></th>
-          <th>HP</th>
-          <th>ATK</th>
-          <th>MAG</th>
+          <th *ngFor="let stat of card.statsType">{{ stat }}</th>
         </tr>
         <tr>
           <td>Min</td>
-          <td>{{ card.stats.HP.min }}</td>
-          <td>{{ card.stats.ATK.min }}</td>
-          <td>{{ card.stats.MAG.min }}</td>
+          <td *ngFor="let stat of card.statsType">{{ card.stats[stat].min }}</td>
         </tr>
         <tr>
           <td>Max</td>
-          <td>{{ card.stats.HP.max }}</td>
-          <td>{{ card.stats.ATK.max }}</td>
-          <td>{{ card.stats.MAG.max }}</td>
+          <td *ngFor="let stat of card.statsType">{{ card.stats[stat].max }}</td>
         </tr>
         <tr>
-          <th colspan="4">Unit Effects</th>
+          <th colspan="10">Unit Effects</th>
         </tr>
         <tr *ngIf="card.unitBuffsClassic">
           <td>Classic</td>
-          <td colspan="3">
+          <td colspan="10">
             <div *ngFor="let effect of card.unitBuffsClassic.effects">
               {{ effect.formatHtml }}
             </div>
@@ -51,7 +45,7 @@
         </tr>
         <tr *ngIf="card.unitBuffsAwake">
           <td>Awake</td>
-          <td colspan="3">
+          <td colspan="10">
             <div *ngFor="let effect of card.unitBuffsAwake.effects">
               {{ effect.formatHtml }}
             </div>
@@ -59,18 +53,18 @@
         </tr>
         <tr *ngIf="card.unitBuffsMax">
           <td>Max</td>
-          <td colspan="3">
+          <td colspan="10">
             <div *ngFor="let effect of card.unitBuffsMax.effects">
               {{ effect.formatHtml }}
             </div>
           </td>
         </tr>
         <tr>
-          <th colspan="4">Party Effects</th>
+          <th colspan="10">Party Effects</th>
         </tr>
         <tr *ngIf="card.partyBuffsClassic">
           <td>Classic</td>
-          <td colspan="3">
+          <td colspan="10">
             <div *ngFor="let effect of card.partyBuffsClassic.effects">
               {{ effect.formatHtml }}
             </div>
@@ -78,7 +72,7 @@
         </tr>
         <tr *ngIf="card.partyBuffsAwake">
           <td>Awake</td>
-          <td colspan="3">
+          <td colspan="10">
             <div *ngFor="let effect of card.partyBuffsAwake.effects">
               {{ effect.formatHtml }}
             </div>
@@ -86,7 +80,7 @@
         </tr>
         <tr *ngIf="card.partyBuffsMax">
           <td>Max</td>
-          <td colspan="3">
+          <td colspan="20">
             <div *ngFor="let effect of card.partyBuffsMax.effects">
               {{ effect.formatHtml }}
             </div>

@@ -688,7 +688,7 @@ export class UnitService {
   }
 
   private calculateCardStats() {
-    ["HP", "ATK", "MAG"].forEach(statType => {
+    this.unit.card.statsType.forEach(statType => {
       this.unit.stats[statType].card = this.unit.card.stats[statType].total
     })
 
