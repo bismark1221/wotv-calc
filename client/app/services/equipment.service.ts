@@ -357,10 +357,6 @@ export class EquipmentService {
         let maxValue = this.equipment.stats[statType].max
         let growMax = this.equipment.grows[growId].curve[statType] ? Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100)) : maxValue
 
-        if (maxValue != growMax) {
-          this.equipment.stats[statType].max = growMax
-        }
-
         this.equipment.grows[growId].stats[statType] = []
         for (let i = this.equipment.stats[statType].min; i <= growMax; i++) {
           this.equipment.grows[growId].stats[statType].push(i)
@@ -423,7 +419,7 @@ export class EquipmentService {
     if (this.equipment.growIds.length == 1) {
       Object.keys(this.equipment.stats).forEach(statType => {
         let minValue = this.equipment.stats[statType].min
-        let maxValue = this.equipment.stats[statType].max
+        let maxValue = this.equipment.grows[this.equipment.growIds[0]].stats[statType][this.equipment.grows[this.equipment.growIds[0]].stats[statType].length - 1]
         this.equipment.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.equipment.maxLevel - 1) * (this.equipment.level - 1)))
       })
     }
