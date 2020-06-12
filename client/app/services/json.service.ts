@@ -1473,7 +1473,8 @@ export class JsonService {
         damage: {
           minValue: 0,
           maxValue: 0
-        }
+        },
+        elem: []
       };
 
       let modifiedAttack = false
@@ -1488,6 +1489,9 @@ export class JsonService {
       if (modifiedAttack) {
         attack.damage.minValue = 0
         attack.damage.maxValue = 0
+        attack.elem = ["neutral"]
+      } else if (attack.elem.length == 0) {
+        delete(attack.elem)
       }
 
       unit.attack = attack

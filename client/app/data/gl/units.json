@@ -2091,6 +2091,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -2098,10 +2101,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -4323,6 +4323,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -4330,10 +4333,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -6478,6 +6478,9 @@
         "type": "pierce",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -6487,10 +6490,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -8717,6 +8717,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -8724,10 +8727,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -10882,6 +10882,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -10889,10 +10892,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -13052,6 +13052,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -13059,10 +13062,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -15243,6 +15243,9 @@
         "type": "pierce",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -15252,10 +15255,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -17577,6 +17577,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -17584,10 +17587,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -19950,6 +19950,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -19957,10 +19960,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -22224,6 +22224,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -22231,10 +22234,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -24541,6 +24541,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -24548,10 +24551,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -26788,6 +26788,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -26795,10 +26798,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -28939,6 +28939,9 @@
         "type": "pierce",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -28948,10 +28951,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -31071,6 +31071,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -31078,10 +31081,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -33241,6 +33241,9 @@
         "type": "pierce",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -33250,10 +33253,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -35419,6 +35419,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -35428,10 +35431,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -37607,6 +37607,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -37614,10 +37617,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -39834,6 +39834,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -39844,10 +39847,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -42078,6 +42078,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -42085,10 +42088,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -44300,6 +44300,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -44307,10 +44310,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -46541,6 +46541,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -46548,10 +46551,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -48827,6 +48827,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -48834,10 +48837,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -51084,6 +51084,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -51091,10 +51094,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -53400,6 +53400,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -53410,10 +53413,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -55543,6 +55543,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -55550,10 +55553,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -57779,16 +57779,16 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "range": {
         "h": 1,
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -59919,6 +59919,9 @@
         "type": "pierce",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -59928,10 +59931,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -62176,6 +62176,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -62183,10 +62186,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -64446,6 +64446,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -64453,10 +64456,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -66626,6 +66626,9 @@
         "type": "pierce",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -66635,10 +66638,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -68862,6 +68862,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -68872,10 +68875,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -71056,6 +71056,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -71063,10 +71066,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -73186,6 +73186,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -73193,10 +73196,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -75405,6 +75405,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -75412,10 +75415,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -77637,6 +77637,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -77644,10 +77647,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -79869,6 +79869,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -79879,10 +79882,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -82095,6 +82095,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -82102,10 +82105,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -84238,6 +84238,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -84245,10 +84248,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -86322,6 +86322,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -86329,10 +86332,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -88593,6 +88593,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -88600,10 +88603,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -90897,6 +90897,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -90904,10 +90907,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -93011,6 +93011,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -93018,10 +93021,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -95270,6 +95270,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -95279,10 +95282,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -97407,6 +97407,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -97414,10 +97417,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -99612,6 +99612,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -99619,10 +99622,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -101795,6 +101795,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -101802,10 +101805,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -103960,6 +103960,9 @@
         "type": "strike",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -103967,10 +103970,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -106152,6 +106152,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -106159,10 +106162,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -108275,6 +108275,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -110551,6 +110554,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -112779,6 +112785,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -112786,10 +112795,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -115120,6 +115126,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -115127,10 +115136,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -117344,6 +117350,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -117351,10 +117360,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -119523,6 +119529,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -119530,10 +119539,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -121736,6 +121742,9 @@
         "type": "missile",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -121745,10 +121754,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -124010,6 +124016,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -124017,10 +124026,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
