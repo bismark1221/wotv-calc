@@ -98,7 +98,9 @@ export class SkillService {
   }
 
   private getIncrease(effect) {
-    if (effect.minValue < 0 || effect.value < 0) {
+    if (effect.rate && effect.rate != 200) {
+      return effect.rate + "% chance" + (effect.minValue < 0 || effect.value < 0 ? " to decrease" : " to increase")
+    } else if (effect.minValue < 0 || effect.value < 0) {
       return "Decrease"
     } else {
       return "Increase"
