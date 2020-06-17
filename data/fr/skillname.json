@@ -2294,7 +2294,7 @@
         },
         {
             "key": "SK_TU_BHMT_M_01",
-            "value": "Haymaker"
+            "value": "Uppercut magistral"
         },
         {
             "key": "SK_TU_USE_RING",
@@ -2478,7 +2478,7 @@
         },
         {
             "key": "SK_BHMT_M_01",
-            "value": "Haymaker"
+            "value": "Uppercut magistral"
         },
         {
             "key": "SK_BHMT_M_02",
@@ -2494,7 +2494,7 @@
         },
         {
             "key": "SK_BHMT_M_01_01",
-            "value": "Haymaker"
+            "value": "Uppercut magistral"
         },
         {
             "key": "SK_BHMT_M_02_01",
@@ -3005,6 +3005,26 @@
             "value": "Vent céleste"
         },
         {
+            "key": "SK_OCHU_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_OCHU_M_01",
+            "value": "Poudre empoisonnée"
+        },
+        {
+            "key": "SK_OCHU_M_02",
+            "value": "Fouet paralysant"
+        },
+        {
+            "key": "SK_OCHU_M_03",
+            "value": "Danse d'Otyugh"
+        },
+        {
+            "key": "SK_OCHU_M_04",
+            "value": "Canon à graines"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Attaque normale"
         },
@@ -3205,6 +3225,10 @@
             "value": "Tech. d'épée : Dieu foudroyant"
         },
         {
+            "key": "SK_LB_LW_VKTR",
+            "value": "Doux piège"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -3267,6 +3291,10 @@
         {
             "key": "SK_SMN_TSLP",
             "value": "Vent céleste"
+        },
+        {
+            "key": "SK_SMN_OCHU",
+            "value": "Canon à graines"
         },
         {
             "key": "SK_US_POTION",
@@ -3609,6 +3637,14 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_VKTR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_THLA",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -3769,6 +3805,10 @@
             "value": "Sans limite"
         },
         {
+            "key": "SK_ARM_LW_VKTR_1_1",
+            "value": "L'œil du dragon"
+        },
+        {
             "key": "SK_SWO_LW_ADLD_1_1",
             "value": ""
         },
@@ -3906,6 +3946,10 @@
         },
         {
             "key": "SK_ARM_LW_KTON_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ACC_LW_THLA_1_1",
             "value": ""
         },
         {
@@ -4246,6 +4290,14 @@
         },
         {
             "key": "SK_VC_LW_LAMA_01_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_OCHU_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_OCHU_GSAW",
             "value": ""
         },
         {
@@ -4781,6 +4833,14 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_OCHU_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_OCHU_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_VALE1_P",
             "value": ""
         },
@@ -5193,6 +5253,18 @@
             "value": "Réduit la Rés de l'altération d'état [Cécité]"
         },
         {
+            "key": "SK_BTL_INV_HPDOWN",
+            "value": "Annule PV max réduits"
+        },
+        {
+            "key": "SK_BTL_INV_MKBT",
+            "value": "Rés inorganiques"
+        },
+        {
+            "key": "SK_BTL_INV_CTDOWN",
+            "value": "Annule les changements de CT"
+        },
+        {
             "key": "SK_BTL_RES_SLEEP_1_100_D",
             "value": "Réduit la Rés de l'altération d'état [Sommeil]"
         },
@@ -5251,18 +5323,6 @@
         {
             "key": "SK_BTL_INV_POISON",
             "value": "Annule poison"
-        },
-        {
-            "key": "SK_BTL_INV_HPDOWN",
-            "value": "Annule PV max réduits"
-        },
-        {
-            "key": "SK_BTL_INV_MKBT",
-            "value": "Rés inorganiques"
-        },
-        {
-            "key": "SK_BTL_INV_CTDOWN",
-            "value": "Annule les changements de CT"
         },
         {
             "key": "SK_BTL_JOB_THI_1_15_U",
