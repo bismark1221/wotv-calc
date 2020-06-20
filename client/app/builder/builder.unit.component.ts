@@ -341,6 +341,10 @@ export class BuilderUnitComponent implements OnInit {
       this.selectedEquipmentsIds[1] = null;
       this.selectEquipment(1)
     }
+
+    for (let i = 0; i <= 2; i++) {
+      this.getAvailableEquipments(i)
+    }
   }
 
   changeLevel() {
