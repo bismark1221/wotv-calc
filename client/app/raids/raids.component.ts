@@ -12,7 +12,7 @@ import { NameService } from '../services/name.service';
 })
 export class RaidsComponent implements OnInit {
   private raids;
-  private formattedRaids = [];
+  formattedRaids = [];
 
   constructor(
     private raidService: RaidService,
