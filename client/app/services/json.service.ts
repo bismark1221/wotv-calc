@@ -1927,7 +1927,8 @@ export class JsonService {
       species: this.species[bossUnit.species[0]],
       element: this.elements[bossUnit.elem[0]],
       image: bossUnit.charaId.toLowerCase(),
-      skills: {}
+      skills: {},
+      slug: ""
     }
 
     this.getUnitImage(boss)
@@ -1937,6 +1938,7 @@ export class JsonService {
 
     if (!raid.names.en) {
       raid.names = boss.names
+      raid.slug = boss.slug
     }
 
     this[this.version].raidBoss[bossId].param.forEach(quest => {

@@ -15,6 +15,8 @@ import { EspersComponent } from './espers/espers.component';
 import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
+import { RaidsComponent } from './raids/raids.component';
+import { RaidComponent } from './raid/raid.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -33,6 +35,8 @@ const ROUTES: Routes = [
   { path: 'esper/:slug', component: EsperComponent },
   { path: 'equipments', component: EquipmentsComponent },
   { path: 'equipment/:slug', component: EquipmentComponent },
+  { path: 'raids', component: RaidsComponent },
+  { path: 'raid/:slug', component: RaidComponent },
 
   { path: 'builder', component: BuilderComponent,
     children: [
@@ -64,6 +68,8 @@ const ROUTES: Routes = [
   { path: 'JP/esper/:slug', component: EsperComponent },
   { path: 'JP/equipments', component: EquipmentsComponent },
   { path: 'JP/equipment/:slug', component: EquipmentComponent },
+  { path: 'JP/raids', component: RaidsComponent },
+  { path: 'JP/raid/:slug', component: RaidComponent },
 
   { path: 'JP/builder', component: BuilderComponent,
     children: [

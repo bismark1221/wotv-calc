@@ -1,0 +1,15 @@
+<div class="row">
+  <table class="raidsTable">
+    <tr *ngFor="let line of formattedRaids; let j = index">
+      <td *ngFor="let raid of formattedRaids[j]" class="raidsCol">
+        <div>
+          <a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">
+            <img class="raidImg" src="{{'assets/units/' + raid.bosses[0].image + '_m.png'}}" />
+          </a>
+        </div>
+        <img class="elementImg" src="{{'assets/elements/' + raid.bosses[0].element + '.png'}}" />
+        <span class="raidName"><a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">{{ raid.name }}</a></span>
+      </td>
+    </tr>
+  </table>
+</div>

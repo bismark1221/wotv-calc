@@ -1,0 +1,27 @@
+.elementImg {
+  height: 32px;
+}
+
+.raidImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.raidName {
+  font-weight: bold;
+  margin-left: 10px
+}
+
+.raidsTable {
+  width: 800px;
+}
+
+.raidsCol {
+  width: 200px;
+}
+
+.row {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}

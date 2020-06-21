@@ -651,6 +651,9 @@ export class SkillService {
       case "CRITIC_DAMAGE" :
         html = this.getIncrease(effect) + " Critical Damage" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "MAX_HP_DOWN_RES" :
+        html = this.getIncrease(effect) + " Max HP Down Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "ATK_DEBUFF_RES" :
         html = this.getIncrease(effect) + " ATK Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
