@@ -1,0 +1,325 @@
+{
+  "RAID_GL_01": {
+    "dataId": "RAID_GL_01",
+    "names": {
+      "en": "Chocolate Flan",
+      "fr": "Chocoflan"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_CSLI",
+        "names": {
+          "en": "Chocolate Flan",
+          "fr": "Chocoflan"
+        },
+        "stats": {
+          "HP": {
+            "min": 1500,
+            "max": 120000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 150,
+            "max": 948
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 39,
+            "max": 120
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 95
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "PIERCE_RES": {},
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "MAGIC_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 0,
+            "max": 0
+          },
+          "SLEEP_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 4,
+            "max": 4
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "earth",
+        "image": "lapscsli",
+        "skills": {
+          "SK_CSLI_M_01": {
+            "effects": [],
+            "dataId": "SK_CSLI_M_01",
+            "rate": 60,
+            "names": {
+              "en": "Brown Sphere",
+              "fr": "Sphère marron"
+            },
+            "slug": "brown-sphere",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "slug": "null-max-hp-down",
+            "maxLevel": 150,
+            "minLevel": 1
+          },
+          "SK_CSLI_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_M_02",
+            "rate": 10,
+            "names": {
+              "en": "Bite Into",
+              "fr": "Mordre à pleines dents"
+            },
+            "slug": "bite-into",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB"
+            },
+            "minLevel": 61
+          },
+          "SK_CSLI_M_03": {
+            "effects": [
+              {
+                "type": "CHARM_ATK",
+                "calcType": "percent",
+                "rate": 10,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_CSLI_M_03",
+            "rate": 30,
+            "names": {
+              "en": "Sweet Fountain",
+              "fr": "Adorable fontaine"
+            },
+            "slug": "sweet-fountain",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 61
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Aug. précision 1 - 999"
+            },
+            "slug": "accuracy-1-999-up",
+            "maxLevel": 150,
+            "minLevel": 61
+          }
+        },
+        "slug": "chocolate-flan",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_CSLI_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "slug": "normal-attack",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ]
+  }
+}

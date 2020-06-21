@@ -1,0 +1,1312 @@
+{
+  "RAID_ID_06": {
+    "dataId": "RAID_ID_06",
+    "names": {
+      "en": "チョコプリン - Chocolate Flan"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_CSLI",
+        "names": {
+          "en": "チョコプリン - Chocolate Flan"
+        },
+        "stats": {
+          "HP": {
+            "min": 1500,
+            "max": 120000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 150,
+            "max": 948
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 39,
+            "max": 120
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 95
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "PIERCE_RES": {},
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "MAGIC_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 0,
+            "max": 0
+          },
+          "SLEEP_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 4,
+            "max": 4
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "earth",
+        "image": "lapscsli",
+        "skills": {},
+        "slug": "chocolate-flan",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_CSLI_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ]
+  },
+  "RAID_ID_07": {
+    "dataId": "RAID_ID_07",
+    "names": {
+      "en": "ホワイトマシュマロ"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_CSLI_01",
+        "names": {
+          "en": "ホワイトマシュマロ"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 140000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 150,
+            "max": 948
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 39,
+            "max": 120
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 75
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "ICE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "EARTH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WIND_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "LIGHT_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "DARK_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "STRIKE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "MISSILE_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "MAGIC_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SLEEP_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 0,
+            "max": 0
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 4,
+            "max": 4
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "light",
+        "image": "lapscsli_01",
+        "skills": {},
+        "slug": "howaitomasiyumaro",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_CSLI_01_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ]
+  },
+  "RAID_ID_08": {
+    "dataId": "RAID_ID_08",
+    "names": {
+      "en": "デスマシーン"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_FF01_E_WRMC_RAID",
+        "names": {
+          "en": "デスマシーン"
+        },
+        "stats": {
+          "HP": {
+            "min": 1500,
+            "max": 110000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 150,
+            "max": 948
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 39,
+            "max": 120
+          },
+          "DEX": {
+            "min": 102,
+            "max": 322
+          },
+          "AGI": {
+            "min": 33,
+            "max": 70
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 272
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "PIERCE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "STRIKE_RES": {
+            "min": 0,
+            "max": 0
+          },
+          "MISSILE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "MAGIC_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {},
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SLOW_RES": {},
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "machine",
+        "element": "dark",
+        "image": "ff01wrmc",
+        "skills": {},
+        "slug": "desumasin",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_WRMC_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "missile",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 4,
+            "l": 4,
+            "mh": 1,
+            "s": 1,
+            "line": 2
+          },
+          "based": "physic"
+        }
+      }
+    ]
+  },
+  "RAID_ID_09": {
+    "dataId": "RAID_ID_09",
+    "names": {
+      "en": "イフリート"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_IFRT_RAID",
+        "names": {
+          "en": "イフリート"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 130,
+            "max": 630
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 150,
+            "max": 650
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 30,
+            "max": 99
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 2,
+            "max": 2
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "netherBeast",
+        "element": "fire",
+        "image": "lapsifrt",
+        "skills": {},
+        "slug": "ihurito",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_IFRT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_CACT_03",
+        "names": {
+          "en": "ゴールドサボテン"
+        },
+        "stats": {
+          "HP": {
+            "min": 5000,
+            "max": 100000
+          },
+          "TP": {
+            "min": 40,
+            "max": 73
+          },
+          "AP": {
+            "min": 48,
+            "max": 75
+          },
+          "ATK": {
+            "min": 450,
+            "max": 467
+          },
+          "DEF": {
+            "min": 80,
+            "max": 80
+          },
+          "SPR": {
+            "min": 80,
+            "max": 80
+          },
+          "MAG": {
+            "min": 23,
+            "max": 59
+          },
+          "DEX": {
+            "min": 130,
+            "max": 241
+          },
+          "AGI": {
+            "min": 55,
+            "max": 82
+          },
+          "LUCK": {
+            "min": 130,
+            "max": 222
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MISSILE_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "MAGIC_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {},
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 5,
+            "max": 5
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "plane",
+        "element": "earth",
+        "image": "lapscact_02",
+        "skills": {},
+        "slug": "gorudosaboten",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_CACT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 0,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ]
+  },
+  "RAID_ID_10": {
+    "dataId": "RAID_ID_10",
+    "names": {
+      "en": "キングベヒーモス"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_BHMT_01_RAID",
+        "names": {
+          "en": "キングベヒーモス"
+        },
+        "stats": {
+          "HP": {
+            "min": 1200,
+            "max": 120000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 130,
+            "max": 630
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 100,
+            "max": 500
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 30,
+            "max": 90
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "PIERCE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "STRIKE_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "beast",
+        "element": "dark",
+        "image": "lapsbhmt",
+        "skills": {},
+        "slug": "kingubehimosu",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_BHMT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 0,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_TNBR_RAID",
+        "names": {
+          "en": "トンベリ"
+        },
+        "stats": {
+          "HP": {
+            "min": 5000,
+            "max": 100000
+          },
+          "TP": {
+            "min": 40,
+            "max": 73
+          },
+          "AP": {
+            "min": 48,
+            "max": 75
+          },
+          "ATK": {
+            "min": 430,
+            "max": 450
+          },
+          "DEF": {
+            "min": 40,
+            "max": 40
+          },
+          "SPR": {
+            "min": 40,
+            "max": 40
+          },
+          "MAG": {
+            "min": 300,
+            "max": 350
+          },
+          "DEX": {
+            "min": 130,
+            "max": 241
+          },
+          "AGI": {
+            "min": 55,
+            "max": 82
+          },
+          "LUCK": {
+            "min": 130,
+            "max": 222
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "EARTH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {},
+          "STRIKE_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 1,
+            "max": 1
+          },
+          "JUMP": {
+            "min": 2,
+            "max": 2
+          },
+          "MAX_LV": {}
+        },
+        "species": "human",
+        "element": "wind",
+        "image": "lapstnbr",
+        "skills": {},
+        "slug": "tonberi",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_TNBR_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE"
+          },
+          "slug": "tong-chang-gong-ji",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ]
+  }
+}

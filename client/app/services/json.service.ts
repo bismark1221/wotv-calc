@@ -25,6 +25,14 @@ import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
 import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
 
 
+import { default as gl_raid_1 } from         '../../../data/raid/gl/raid_ev_06_01_set.json';
+import { default as gl_raid_2 } from         '../../../data/raid/gl/raid_ev_06_02_set.json';
+import { default as gl_raid_3 } from         '../../../data/raid/gl/raid_ev_06_03_set.json';
+import { default as gl_raid_4 } from         '../../../data/raid/gl/raid_ev_06_04_set.json';
+import { default as gl_raid_5 } from         '../../../data/raid/gl/raid_ev_07_01_set.json';
+import { default as gl_raid_6 } from         '../../../data/raid/gl/raid_ev_07_02_set.json';
+import { default as gl_raid_7 } from         '../../../data/raid/gl/raid_ev_07_03_set.json';
+import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_04_set.json';
 
 @Injectable()
 export class JsonService {
@@ -51,7 +59,11 @@ export class JsonService {
     wotvVisionCards: {},
     wotvEspers: {},
     wotvEquipments: {},
-    wotvJobs: {}
+    wotvJobs: {},
+    raid: {},
+    raidBoss: {},
+    raidMaps: {},
+    wotvRaids: {}
   }
 
   jp = {
@@ -74,7 +86,11 @@ export class JsonService {
     wotvVisionCards: {},
     wotvEspers: {},
     wotvEquipments: {},
-    wotvJobs: {}
+    wotvJobs: {},
+    raid: {},
+    raidBoss: {},
+    raidMaps: {},
+    wotvRaids: {}
   }
 
   names = {
@@ -129,6 +145,24 @@ export class JsonService {
     'light',
     'dark'
   ];
+
+  species = [
+    '',
+    'human',
+    'netherBeast',
+    'beast',
+    'demon',
+    'dragon',
+    'plane',
+    'bird',
+    'insect',
+    'aquatic',
+    'machine',
+    'spirit',
+    'undead',
+    'stone',
+    'metal'
+  ]
 
   killerRaces = [
     "",
@@ -233,6 +267,7 @@ export class JsonService {
     192: "BRAVERY",
     193: "FAITH",
     200: "DEBUFF_RES",
+    201: "MAX_HP_DOWN_RES",
     202: "ATK_DEBUFF_RES",
     203: "DEF_DEBUFF_RES",
     204: "MAG_DEBUFF_RES",
@@ -644,6 +679,14 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactEquipCondition.json').toPromise();
   }
 
+  private GLRaid() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Raid.json').toPromise();
+  }
+
+  private GLRaidBoss() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBoss.json').toPromise();
+  }
+
   /* JP */
   private JPUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
@@ -703,6 +746,14 @@ export class JsonService {
 
   private JPArtifactEquipCond() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactEquipCondition.json').toPromise();
+  }
+
+  private JPRaid() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Raid.json').toPromise();
+  }
+
+  private JPRaidBoss() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBoss.json').toPromise();
   }
 
   /* Translation */
@@ -784,6 +835,11 @@ export class JsonService {
 
       this.GLArtifactEquipCond(),
       this.JPArtifactEquipCond(),
+
+      this.GLRaid(),
+      this.GLRaidBoss(),
+      this.JPRaid(),
+      this.JPRaidBoss(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -800,6 +856,8 @@ export class JsonService {
       this.gl.grows = this.formatJson(responses[12]);
       this.gl.unitModels = this.formatJson(responses[34]);
       this.gl.EquipmentCond = this.formatJson(responses[36]);
+      this.gl.raid = this.formatJson(responses[38]);
+      this.gl.raidBoss = this.formatJson(responses[39]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -816,6 +874,8 @@ export class JsonService {
       this.jp.grows = this.formatJson(responses[25]);
       this.jp.unitModels = this.formatJson(responses[35]);
       this.jp.EquipmentCond = this.formatJson(responses[37]);
+      this.jp.raid = this.formatJson(responses[40]);
+      this.jp.raidBoss = this.formatJson(responses[41]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -852,14 +912,16 @@ export class JsonService {
           visionCards: this.gl.wotvVisionCards,
           espers: this.gl.wotvEspers,
           equipments: this.gl.wotvEquipments,
-          jobs: this.gl.wotvJobs
+          jobs: this.gl.wotvJobs,
+          raids: this.gl.wotvRaids
         },
         jp: {
           units: this.jp.wotvUnits,
           visionCards: this.jp.wotvVisionCards,
           espers: this.jp.wotvEspers,
           equipments: this.jp.wotvEquipments,
-          jobs: this.jp.wotvJobs
+          jobs: this.jp.wotvJobs,
+          raids: this.jp.wotvRaids
         }
       };
     });
@@ -911,6 +973,8 @@ export class JsonService {
       Object.keys(this[this.version].equipments).forEach(equipmentId => {
         this.addEquipment(this[this.version].equipments[equipmentId]);
       });
+
+      this.formatRaid();
     }
   }
 
@@ -1820,5 +1884,96 @@ export class JsonService {
     unitToDelete.forEach(unitId => {
       delete this[this.version].wotvUnits[unitId]
     })
+  }
+
+  private formatRaid() {
+    if (this.version == "gl") {
+      this[this.version].raidMaps[gl_raid_1.wcond.expr] = gl_raid_1
+      this[this.version].raidMaps[gl_raid_2.wcond.expr] = gl_raid_2
+      this[this.version].raidMaps[gl_raid_3.wcond.expr] = gl_raid_3
+      this[this.version].raidMaps[gl_raid_4.wcond.expr] = gl_raid_4
+      this[this.version].raidMaps[gl_raid_5.wcond.expr] = gl_raid_5
+      this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6
+      this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7
+      this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8
+    } else {
+      // whaiting for jp maps
+    }
+
+    Object.keys(this[this.version].raid).forEach(raidId => {
+      let raid = this[this.version].raid[raidId]
+
+      if (raid.home_tex !== "LAPS_RD_0001" && raid.home_tex !== "LAPS_RD_FF14_01") {
+        this[this.version].wotvRaids[raidId] = {
+          dataId: raidId,
+          names: {},
+          bosses: []
+        }
+
+        raid.prob.forEach((boss, bossIndex) => {
+          this.addRaidBoss(this[this.version].wotvRaids[raidId], boss.boss_id)
+        })
+      }
+    })
+  }
+
+  private addRaidBoss(raid, bossId) {
+    let bossUnit = this[this.version].units[this[this.version].raidBoss[bossId].unit_id]
+    let dataId = bossUnit.iname
+    let boss = {
+      dataId: dataId,
+      names: {},
+      stats: {},
+      species: this.species[bossUnit.species[0]],
+      element: this.elements[bossUnit.elem[0]],
+      image: bossUnit.charaId.toLowerCase(),
+      skills: {}
+    }
+
+    this.getUnitImage(boss)
+    this.getNames(boss, 'unit');
+    this.getStats(boss, bossUnit.status, 'unit')
+    this.getAttackSkill(boss, bossUnit.atkskl)
+
+    if (!raid.names.en) {
+      raid.names = boss.names
+    }
+
+    this[this.version].raidBoss[bossId].param.forEach(quest => {
+      this.addBossSkill(boss, quest.quest_id, quest.lv_min, quest.lv_max)
+
+      if (raid.maxLevel < quest.lv_max) {
+        raid.maxLevel = quest.lv_max
+      }
+    })
+
+    raid.bosses.push(boss)
+  }
+
+  private addBossSkill(boss, questId, lvMin, lvMax) {
+    let quest = this[this.version].raidMaps[questId]
+    if (quest) {
+      quest.enemy.forEach(enemy => {
+        if (enemy.iname == boss.dataId) {
+          enemy.skills.forEach(skill => {
+            let skillId = skill.iname
+            if (!boss.skills[skillId]) {
+              boss.skills[skillId] = {
+                effects: [],
+                dataId: skillId,
+                rate: skill.rate
+              }
+              this.updateSkill(boss, boss.skills[skillId], skillId);
+              boss.skills[skillId].minLevel = lvMin
+              boss.skills[skillId].maxLevel = lvMax
+            } else if (boss.skills[skillId].maxLevel < lvMax) {
+              boss.skills[skillId].maxLevel = lvMax
+            } else if (boss.skills[skillId].minLevel > lvMin) {
+              boss.skills[skillId].minLevel = lvMin
+            }
+          })
+        }
+      })
+    }
   }
 }
