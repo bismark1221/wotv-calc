@@ -40,7 +40,7 @@
 .rightBlock {
   vertical-align: top;
   display: inline-block;
-  width: 800px;
+  width: 900px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -99,7 +99,7 @@
 }
 
 .cardImg {
-  height: 100px;
+  height: 150px;
   margin-top: 10px;
 }
 
@@ -110,12 +110,17 @@
 
 .cardsCol {
   background-color: var(--card-background);
-  width: 150px;
+  width: 200px;
   display: inline-block;
   margin-right: 10px;
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+}
+
+.cardsCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--white)
 }
 
 .cardIcons {
@@ -127,7 +132,7 @@
 .cardTitle {
   background-color: var(--card-title);
   display: table;
-  height: 40px;
+  height: 50px;
   width: 100%;
 }
 

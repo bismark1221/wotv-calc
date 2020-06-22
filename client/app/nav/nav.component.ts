@@ -21,6 +21,7 @@ export class NavComponent {
   inCard = false;
   inEsper = false;
   inEquipment = false;
+  inRaid = false;
   showBuilderNav = false;
   showVersionSelector = false;
   showLangSelector = false;
@@ -67,19 +68,23 @@ export class NavComponent {
         this.inCard = false;
         this.inEsper = false;
         this.inEquipment = false;
+        this.inRaid = false;
 
         let url = event.url.split("/")
+
         if ((url.length >= 2 && url[1] == "builder")
           || (url.length >= 3 && url[2] == "builder")) {
           this.inBuilder = true
-        } else if (url.length >= 2 && (url[1] == "unit" || url[1] == "units")) {
+        } else if (url.length >= 2 && (url[1] == "unit" || url[1] == "units" || (url[1] == "JP" && (url[2] == "unit" || url[2] == "units")))) {
           this.inUnit = true;
-        } else if (url.length >= 2 && (url[1] == "card" || url[1] == "cards")) {
+        } else if (url.length >= 2 && (url[1] == "card" || url[1] == "cards" || (url[1] == "JP" && (url[2] == "card" || url[2] == "cards")))) {
           this.inCard = true;
-        } else if (url.length >= 2 && (url[1] == "esper" || url[1] == "espers")) {
+        } else if (url.length >= 2 && (url[1] == "esper" || url[1] == "espers" || (url[1] == "JP" && (url[2] == "esper" || url[2] == "espers")))) {
           this.inEsper = true;
-        } else if (url.length >= 2 && (url[1] == "equipment" || url[1] == "equipments")) {
+        } else if (url.length >= 2 && (url[1] == "equipment" || url[1] == "equipments" || (url[1] == "JP" && (url[2] == "equipment" || url[2] == "equipments")))) {
           this.inEquipment = true;
+        } else if (url.length >= 2 && (url[1] == "raid" || url[1] == "raids" || (url[1] == "JP" && (url[2] == "raid" || url[2] == "raids")))) {
+          this.inRaid = true;
         }
       }
     });

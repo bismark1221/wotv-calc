@@ -13,6 +13,7 @@
 .sub.fixed-top {
   top: 60px;
   background-color: var(--subnav-background) !important;
+  z-index: 11;
 }
 
 .inlineBlock {
@@ -68,13 +69,6 @@
 
 .navLinkMobile {
   display: list-item !important;
-}
-
-.fixed-top-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1100;
 }
 
 .pointer {
@@ -159,6 +153,7 @@
   padding: 5px;
   width: 65px;
   background-color: var(--nav-background-main);
+  z-index: 20;
 }
 
 .actualLang:hover, .otherLang:hover {
@@ -189,6 +184,7 @@
   padding: 5px;
   width: 60px;
   background-color: var(--nav-background-main);
+  z-index: 20;
 }
 
 .actualVersion:hover, .otherVersion:hover {

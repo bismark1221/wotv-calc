@@ -1,15 +1,69 @@
-<div class="row">
-  <table class="raidsTable">
-    <tr *ngFor="let line of formattedRaids; let j = index">
-      <td *ngFor="let raid of formattedRaids[j]" class="raidsCol">
-        <div>
-          <a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">
-            <img class="raidImg" src="{{'assets/units/' + raid.bosses[0].image + '_m.png'}}" />
-          </a>
+<div class="raids">
+  <div class="leftBlock">
+    <h1>FILTERS</h1>
+    <div class="filters">
+      <div (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
+        Elements
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
+        <div><input type="checkbox" (change)="filterList('element', 'fire', $event.target.checked)"/>Fire</div>
+        <div><input type="checkbox" (change)="filterList('element', 'ice', $event.target.checked)"/>Ice</div>
+        <div><input type="checkbox" (change)="filterList('element', 'wind', $event.target.checked)"/>Wind</div>
+        <div><input type="checkbox" (change)="filterList('element', 'earth', $event.target.checked)"/>Earth</div>
+        <div><input type="checkbox" (change)="filterList('element', 'lightning', $event.target.checked)"/>Lightning</div>
+        <div><input type="checkbox" (change)="filterList('element', 'water', $event.target.checked)"/>Water</div>
+        <div><input type="checkbox" (change)="filterList('element', 'light', $event.target.checked)"/>Light</div>
+        <div><input type="checkbox" (change)="filterList('element', 'dark', $event.target.checked)"/>Dark</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalRaids">
+          A total of <span class="countRaids">{{ getFilteredRaids().length }}</span> raids found
         </div>
-        <img class="elementImg" src="{{'assets/elements/' + raid.bosses[0].element + '.png'}}" />
-        <span class="raidName"><a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">{{ raid.name }}</a></span>
-      </td>
-    </tr>
-  </table>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            Sort by :
+            <select [(ngModel)]="sort" (ngModelChange)="getRaids()">
+              <option>name</option>
+            </select>
+          </div>
+          <div class="orderBy">
+            Order by :
+            <select [(ngModel)]="order" (ngModelChange)="getRaids()">
+              <option>asc</option>
+              <option>desc</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="raidsList">
+      <div class="raidsCol" *ngFor="let raid of getFilteredRaids()">
+        <a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="elementImg" src="{{'assets/elements/' + raid.bosses[0].element + '.png'}}" *ngIf="raid.bosses[0].element" />
+          </div>
+          <div>
+            <img class="raidImg" src="{{'assets/units/' + raid.bosses[0].image + '_m.png'}}" />
+          </div>
+          <div class="cardTitle">
+            <span class="raidName">{{ raid.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

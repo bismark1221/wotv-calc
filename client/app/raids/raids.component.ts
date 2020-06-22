@@ -11,8 +11,14 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./raids.component.css']
 })
 export class RaidsComponent implements OnInit {
-  private raids;
-  formattedRaids = [];
+  raids;
+  searchText = "";
+  sort = "name"
+  order = "asc"
+  filters = {
+    element: []
+  }
+  isCollapsedElement = true;
 
   constructor(
     private raidService: RaidService,
@@ -30,33 +36,38 @@ export class RaidsComponent implements OnInit {
   }
 
   private getRaids(): void {
-    let lang = this.translateService.currentLang
-    this.raids = this.raidService.getRaids();
-
-    this.formattedRaids = [];
-    let tableIndex = -1;
-    this.raids.forEach((raid, index) => {
-      if (index % 4 === 0) {
-        tableIndex++;
-        this.formattedRaids[tableIndex] = [];
-      }
-
-      raid.name = this.nameService.getName(raid)
-      this.formattedRaids[tableIndex].push(raid)
-    });
+    this.raids = this.raidService.getRaidsForListing(this.filters, this.sort, this.order);
+    this.translateRaids();
   }
 
   private translateRaids() {
-    let lang = this.translateService.currentLang
-
-    this.formattedRaids.forEach(line => {
-      line.forEach(raid => {
-        raid.name = this.nameService.getName(raid)
-      });
+    this.raids.forEach(raid => {
+      raid.name = this.nameService.getName(raid)
     });
   }
 
   getRoute(route) {
     return this.navService.getRoute(route)
+  }
+
+  getFilteredRaids() {
+    if (this.searchText !== "") {
+      let text = this.searchText.toLowerCase();
+      return this.raids.filter(raid => {
+        return raid.name.toLowerCase().includes(text);
+      });
+    } else {
+      return this.raids
+    }
+  }
+
+  filterList(type, value, checked) {
+    if (checked) {
+      this.filters[type].push(value)
+    } else {
+      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+    }
+
+    this.getRaids()
   }
 }
