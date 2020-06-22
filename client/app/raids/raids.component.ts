@@ -35,7 +35,7 @@ export class RaidsComponent implements OnInit {
     this.getRaids();
   }
 
-  private getRaids(): void {
+  getRaids(): void {
     this.raids = this.raidService.getRaidsForListing(this.filters, this.sort, this.order);
     this.translateRaids();
   }
