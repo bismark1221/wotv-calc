@@ -16,6 +16,7 @@ import { NavService } from '../services/nav.service'
 import { BuilderEsperComponent } from './builder.esper.component';
 import { BuilderCardComponent } from './builder.card.component';
 import { BuilderEquipmentComponent } from './builder.equipment.component';
+import { BuilderGuildComponent } from './builder.guild.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -27,8 +28,7 @@ export class BuilderUnitComponent implements OnInit {
   unit = null
   selectedUnitId = null
 
-  guild
-  guildStatsType
+  statueNames
 
   espers
   esper = null
@@ -136,7 +136,6 @@ export class BuilderUnitComponent implements OnInit {
 
   ngOnInit(): void {
     this.getUnits();
-    this.getGuild();
     this.getEspers();
     this.getCards();
 
@@ -149,11 +148,6 @@ export class BuilderUnitComponent implements OnInit {
         this.selectUnit(data)
       }
     });
-  }
-
-  private getGuild() {
-    this.guild = this.guildService.getGuild()
-    this.guildStatsType = Object.keys(this.guildService.getStats())
   }
 
   private getUnits() {
@@ -247,6 +241,17 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
+  private loadGuild() {
+     if (this.unit.savedGuild) {
+      this.unit.guild = this.unit.savedGuild
+    } else {
+      this.unit.guild = this.guildService.getGuild()
+    }
+
+    this.statueNames = Object.keys(this.unit.guild)
+    this.unitService.changeLevel()
+  }
+
   selectUnit(customData = null) {
     if (this.selectedUnitId) {
       this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId, customData)
@@ -254,6 +259,7 @@ export class BuilderUnitComponent implements OnInit {
       this.loadEsper()
       this.loadCard()
       this.loadEquipments()
+      this.loadGuild()
     } else {
       this.unit = null
     }
@@ -335,6 +341,10 @@ export class BuilderUnitComponent implements OnInit {
       this.selectedEquipmentsIds[1] = null;
       this.selectEquipment(1)
     }
+
+    for (let i = 0; i <= 2; i++) {
+      this.getAvailableEquipments(i)
+    }
   }
 
   changeLevel() {
@@ -391,10 +401,8 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      //this.navService.updateMenu(false);
       this.unitService.changeLevel()
     }, (reason) => {
-      //this.navService.updateMenu(false);
       this.unitService.changeLevel()
     });
   }
@@ -406,10 +414,8 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      //this.navService.updateMenu(false);
       this.unitService.changeLevel()
     }, (reason) => {
-      //this.navService.updateMenu(false);
       this.unitService.changeLevel()
     });
   }
@@ -421,10 +427,21 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      //this.navService.updateMenu(false);
       this.unitService.changeLevel()
     }, (reason) => {
-      //this.navService.updateMenu(false);
+      this.unitService.changeLevel()
+    });
+  }
+
+  showGuildDetail() {
+    const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.guild = this.unit.guild;
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      this.unitService.changeLevel()
+    }, (reason) => {
       this.unitService.changeLevel()
     });
   }
@@ -443,6 +460,10 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   changeSubJob() {
+    this.unitService.getActiveSkills()
+  }
+
+  changeLimit() {
     this.unitService.getActiveSkills()
   }
 }

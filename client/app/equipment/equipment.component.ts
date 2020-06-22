@@ -138,18 +138,19 @@ export class EquipmentComponent implements OnInit {
       this.equipment.acquisition.name = acquis
     }
 
-    this.equipment.growIds = []
-    if (Object.keys(this.equipment.grows).length > 1) {
-      this.equipment.growIds = Object.keys(this.equipment.grows)
-      Object.keys(this.equipment.grows).forEach(growId => {
-        this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
-        this.equipment.grows[growId].stats = {};
-        this.equipment.statsTypes.forEach(statType => {
-          let maxValue = this.equipment.stats[statType].max
+    this.equipment.growIds = Object.keys(this.equipment.grows)
+    this.equipment.growIds.forEach(growId => {
+      this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
+      this.equipment.grows[growId].stats = {};
+      this.equipment.statsTypes.forEach(statType => {
+        let maxValue = this.equipment.stats[statType].max
+        if (typeof(this.equipment.grows[growId].curve[statType]) == "number") {
           this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
-        })
+        } else {
+          this.equipment.grows[growId].stats[statType] = maxValue
+        }
       })
-    }
+    })
 
     this.equipment.jobs = []
     this.equipment.equippableJobs.forEach(jobId => {

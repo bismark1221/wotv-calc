@@ -25,6 +25,14 @@ import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
 import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
 
 
+import { default as gl_raid_1 } from         '../../../data/raid/gl/raid_ev_06_01_set.json';
+import { default as gl_raid_2 } from         '../../../data/raid/gl/raid_ev_06_02_set.json';
+import { default as gl_raid_3 } from         '../../../data/raid/gl/raid_ev_06_03_set.json';
+import { default as gl_raid_4 } from         '../../../data/raid/gl/raid_ev_06_04_set.json';
+import { default as gl_raid_5 } from         '../../../data/raid/gl/raid_ev_07_01_set.json';
+import { default as gl_raid_6 } from         '../../../data/raid/gl/raid_ev_07_02_set.json';
+import { default as gl_raid_7 } from         '../../../data/raid/gl/raid_ev_07_03_set.json';
+import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_04_set.json';
 
 @Injectable()
 export class JsonService {
@@ -51,7 +59,11 @@ export class JsonService {
     wotvVisionCards: {},
     wotvEspers: {},
     wotvEquipments: {},
-    wotvJobs: {}
+    wotvJobs: {},
+    raid: {},
+    raidBoss: {},
+    raidMaps: {},
+    wotvRaids: {}
   }
 
   jp = {
@@ -74,7 +86,11 @@ export class JsonService {
     wotvVisionCards: {},
     wotvEspers: {},
     wotvEquipments: {},
-    wotvJobs: {}
+    wotvJobs: {},
+    raid: {},
+    raidBoss: {},
+    raidMaps: {},
+    wotvRaids: {}
   }
 
   names = {
@@ -129,6 +145,24 @@ export class JsonService {
     'light',
     'dark'
   ];
+
+  species = [
+    '',
+    'human',
+    'netherBeast',
+    'beast',
+    'demon',
+    'dragon',
+    'plane',
+    'bird',
+    'insect',
+    'aquatic',
+    'machine',
+    'spirit',
+    'undead',
+    'stone',
+    'metal'
+  ]
 
   killerRaces = [
     "",
@@ -210,6 +244,7 @@ export class JsonService {
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
     123: "IMBUE",
+    126: "ON_BASIC_ATTACK",
     130: "IF_KILL_WITH_MAGIC",
     134: "BOOST_DAMAGE_AGAINST_METAL",
     140: "ALL_AILMENTS",
@@ -232,6 +267,7 @@ export class JsonService {
     192: "BRAVERY",
     193: "FAITH",
     200: "DEBUFF_RES",
+    201: "MAX_HP_DOWN_RES",
     202: "ATK_DEBUFF_RES",
     203: "DEF_DEBUFF_RES",
     204: "MAG_DEBUFF_RES",
@@ -245,6 +281,10 @@ export class JsonService {
     314: "DEFENSE_PENETRATION",
     316: "AP_CONSUMPTION"
   }
+
+  forceAddBuff = [
+    126
+  ]
 
   killers = {
     2: "FIRE",
@@ -364,8 +404,55 @@ export class JsonService {
     },
     visionCard: {
       "hp": "HP",
+      "mp": "TP",
+      "ap": "AP",
       "atk": "ATK",
-      "mag": "MAG"
+      "def": "DEF",
+      "mnd": "SPR",
+      "mag": "MAG",
+      "dex": "DEX",
+      "spd": "AGI",
+      "luk": "LUCK",
+      "iniap": "INITIAL_AP",
+
+      "hit" : "ACCURACY",
+      "crt" : "CRITIC_RATE",
+      "crta": "CRITIC_AVOID",
+      "avd" : "EVADE",
+
+      "efi": "FIRE_RES",
+      "eic": "ICE_RES",
+      "eea": "EARTH_RES",
+      "ewi": "WIND_RES",
+      "eth": "LIGHTNING_RES",
+      "ewa": "WATER_RES",
+      "esh": "LIGHT_RES",
+      "eda": "DARK_RES",
+
+      "asl": "SLASH_RES",
+      "api": "PIERCE_RES",
+      "abl": "STRIKE_RES",
+      "ash": "MISSILE_RES",
+      "ama": "MAGIC_RES",
+
+      "cpo": "POISON_RES",
+      "cbl": "BLIND_RES",
+      "csl": "SLEEP_RES",
+      "cmu": "SILENCE_RES",
+      "cpa": "PARALYZE_RES",
+      "ccf": "CONFUSION_RES",
+      "cpe": "PETRIFY_RES",
+      "cfr": "TOAD_RES",
+      "cch": "CHARM_RES",
+      "csw": "SLOW_RES",
+      "cst": "STOP_RES",
+      "cdm": "IMMOBILIZE_RES",
+      "cda": "DISABLE_RES",
+      "cbe": "BERSERK_RES",
+      "cdo": "DOOM_RES",
+
+      "mov": "MOVE",
+      "jmp": "JUMP"
     },
     esper: {
       "hp": "HP",
@@ -592,6 +679,14 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactEquipCondition.json').toPromise();
   }
 
+  private GLRaid() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Raid.json').toPromise();
+  }
+
+  private GLRaidBoss() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBoss.json').toPromise();
+  }
+
   /* JP */
   private JPUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
@@ -651,6 +746,14 @@ export class JsonService {
 
   private JPArtifactEquipCond() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactEquipCondition.json').toPromise();
+  }
+
+  private JPRaid() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Raid.json').toPromise();
+  }
+
+  private JPRaidBoss() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBoss.json').toPromise();
   }
 
   /* Translation */
@@ -732,6 +835,11 @@ export class JsonService {
 
       this.GLArtifactEquipCond(),
       this.JPArtifactEquipCond(),
+
+      this.GLRaid(),
+      this.GLRaidBoss(),
+      this.JPRaid(),
+      this.JPRaidBoss(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -748,6 +856,8 @@ export class JsonService {
       this.gl.grows = this.formatJson(responses[12]);
       this.gl.unitModels = this.formatJson(responses[34]);
       this.gl.EquipmentCond = this.formatJson(responses[36]);
+      this.gl.raid = this.formatJson(responses[38]);
+      this.gl.raidBoss = this.formatJson(responses[39]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -764,6 +874,8 @@ export class JsonService {
       this.jp.grows = this.formatJson(responses[25]);
       this.jp.unitModels = this.formatJson(responses[35]);
       this.jp.EquipmentCond = this.formatJson(responses[37]);
+      this.jp.raid = this.formatJson(responses[40]);
+      this.jp.raidBoss = this.formatJson(responses[41]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -800,14 +912,16 @@ export class JsonService {
           visionCards: this.gl.wotvVisionCards,
           espers: this.gl.wotvEspers,
           equipments: this.gl.wotvEquipments,
-          jobs: this.gl.wotvJobs
+          jobs: this.gl.wotvJobs,
+          raids: this.gl.wotvRaids
         },
         jp: {
           units: this.jp.wotvUnits,
           visionCards: this.jp.wotvVisionCards,
           espers: this.jp.wotvEspers,
           equipments: this.jp.wotvEquipments,
-          jobs: this.jp.wotvJobs
+          jobs: this.jp.wotvJobs,
+          raids: this.jp.wotvRaids
         }
       };
     });
@@ -859,6 +973,8 @@ export class JsonService {
       Object.keys(this[this.version].equipments).forEach(equipmentId => {
         this.addEquipment(this[this.version].equipments[equipmentId]);
       });
+
+      this.formatRaid();
     }
   }
 
@@ -1208,7 +1324,7 @@ export class JsonService {
 
     if (dataSkill.klsp) {
       if (!this.killers[dataSkill.klsp[0]]) {
-        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + dataSkill.klsp[0])
+        console.log("1 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + dataSkill.klsp[0])
       }
 
       dataSkill.klsp.forEach(killer => {
@@ -1254,8 +1370,8 @@ export class JsonService {
     }
 
 
-    if (((typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val !== 0)
-      || (typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 !== 0))
+    if (((typeof(dataSkill.eff_val) == "number" && dataSkill.eff_val != 0)
+      || (typeof(dataSkill.eff_val1) == "number" && dataSkill.eff_val1 != 0))
       && dataSkill.eff_type !== 10
     ) {
       skill.damage = {
@@ -1271,7 +1387,7 @@ export class JsonService {
       }
 
       if (dataSkill.eff_dst && !this.damagePool[dataSkill.eff_dst]) {
-        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + dataSkill.eff_dst)
+        console.log("2 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- DST : " + dataSkill.eff_dst)
       }
 
       if (dataSkill.elem) {
@@ -1299,7 +1415,7 @@ export class JsonService {
               if (this[this.version].buffs[buff]["type" + i]) {
                 if (duplicateFinded && this[this.version].buffs[buff]["type" + i] === 117) {} else {
                   if (!this.buffTypes[this[this.version].buffs[buff]["type" + i]]) {
-                    console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
+                    console.log("3 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
                   }
 
                   if (this[this.version].buffs[buff]["id" + i]) {
@@ -1307,7 +1423,13 @@ export class JsonService {
                   }
 
                   if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
-                    console.log("@@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
+                    console.log("4 @@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
+                  }
+
+                  if (this.forceAddBuff.indexOf(this[this.version].buffs[buff]["type" + i]) != -1) {
+                    skill.effects.push({
+                      type: this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+                    })
                   }
 
                   let type = this[this.version].buffs[buff]["tag" + i] ? this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this[this.version].buffs[buff]["type" + i]]
@@ -1411,9 +1533,30 @@ export class JsonService {
       let attack = {
         names: {},
         effects: [],
-        dataId: attackId
+        dataId: attackId,
+        damage: {
+          minValue: 0,
+          maxValue: 0
+        },
+        elem: []
       };
+
+      let modifiedAttack = false
+      if (!this[this.version].skills[attackId].eff_val) {
+        this[this.version].skills[attackId].eff_val = 1
+        this[this.version].skills[attackId].eff_val1 = 1
+        modifiedAttack = true
+      }
+
       this.updateSkill(unit, attack, attackId);
+
+      if (modifiedAttack) {
+        attack.damage.minValue = 0
+        attack.damage.maxValue = 0
+        attack.elem = ["neutral"]
+      } else if (attack.elem.length == 0) {
+        delete(attack.elem)
+      }
 
       unit.attack = attack
     }
@@ -1564,7 +1707,7 @@ export class JsonService {
             if (this[this.version].buffs[buff["buff" + j]]["type" + i]) {
 
               if (!this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]) {
-                console.log("@@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
+                console.log("5 @@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
               }
 
               let type = this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]
@@ -1741,5 +1884,98 @@ export class JsonService {
     unitToDelete.forEach(unitId => {
       delete this[this.version].wotvUnits[unitId]
     })
+  }
+
+  private formatRaid() {
+    if (this.version == "gl") {
+      this[this.version].raidMaps[gl_raid_1.wcond.expr] = gl_raid_1
+      this[this.version].raidMaps[gl_raid_2.wcond.expr] = gl_raid_2
+      this[this.version].raidMaps[gl_raid_3.wcond.expr] = gl_raid_3
+      this[this.version].raidMaps[gl_raid_4.wcond.expr] = gl_raid_4
+      this[this.version].raidMaps[gl_raid_5.wcond.expr] = gl_raid_5
+      this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6
+      this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7
+      this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8
+    } else {
+      // whaiting for jp maps
+    }
+
+    Object.keys(this[this.version].raid).forEach(raidId => {
+      let raid = this[this.version].raid[raidId]
+
+      if (raid.home_tex !== "LAPS_RD_0001" && raid.home_tex !== "LAPS_RD_FF14_01") {
+        this[this.version].wotvRaids[raidId] = {
+          dataId: raidId,
+          names: {},
+          bosses: []
+        }
+
+        raid.prob.forEach((boss, bossIndex) => {
+          this.addRaidBoss(this[this.version].wotvRaids[raidId], boss.boss_id)
+        })
+      }
+    })
+  }
+
+  private addRaidBoss(raid, bossId) {
+    let bossUnit = this[this.version].units[this[this.version].raidBoss[bossId].unit_id]
+    let dataId = bossUnit.iname
+    let boss = {
+      dataId: dataId,
+      names: {},
+      stats: {},
+      species: this.species[bossUnit.species[0]],
+      element: this.elements[bossUnit.elem[0]],
+      image: bossUnit.charaId.toLowerCase(),
+      skills: {},
+      slug: ""
+    }
+
+    this.getUnitImage(boss)
+    this.getNames(boss, 'unit');
+    this.getStats(boss, bossUnit.status, 'unit')
+    this.getAttackSkill(boss, bossUnit.atkskl)
+
+    if (!raid.names.en) {
+      raid.names = boss.names
+      raid.slug = boss.slug
+    }
+
+    this[this.version].raidBoss[bossId].param.forEach(quest => {
+      this.addBossSkill(boss, quest.quest_id, quest.lv_min, quest.lv_max)
+
+      if (raid.maxLevel < quest.lv_max) {
+        raid.maxLevel = quest.lv_max
+      }
+    })
+
+    raid.bosses.push(boss)
+  }
+
+  private addBossSkill(boss, questId, lvMin, lvMax) {
+    let quest = this[this.version].raidMaps[questId]
+    if (quest) {
+      quest.enemy.forEach(enemy => {
+        if (enemy.iname == boss.dataId) {
+          enemy.skills.forEach(skill => {
+            let skillId = skill.iname
+            if (!boss.skills[skillId]) {
+              boss.skills[skillId] = {
+                effects: [],
+                dataId: skillId,
+                rate: skill.rate
+              }
+              this.updateSkill(boss, boss.skills[skillId], skillId);
+              boss.skills[skillId].minLevel = lvMin
+              boss.skills[skillId].maxLevel = lvMax
+            } else if (boss.skills[skillId].maxLevel < lvMax) {
+              boss.skills[skillId].maxLevel = lvMax
+            } else if (boss.skills[skillId].minLevel > lvMin) {
+              boss.skills[skillId].minLevel = lvMin
+            }
+          })
+        }
+      })
+    }
   }
 }

@@ -61,8 +61,6 @@ export class CardService {
     }
   }
 
-  statsType = ["HP", "ATK", "MAG"]
-
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -234,8 +232,10 @@ export class CardService {
 
   getCardBySlug(slug: string): Card {
     this.getCards();
+    this.card = this.cards.find(card => card.slug === slug)
+    this.card.statsType = this.getAvailableStats()
 
-    return this.cards.find(card => card.slug === slug);
+    return this.card;
   }
 
 
@@ -286,7 +286,7 @@ export class CardService {
     this.card.name = this.card.getName(this.translateService)
     this.card.star = 0;
     this.card.level = 1;
-    this.card.statsType = this.statsType
+    this.card.statsType = this.getAvailableStats()
 
     this.initiateSavedCard(customData)
 
@@ -331,7 +331,7 @@ export class CardService {
   changeLevel() {
     let maxLevel = this.levelPerStar[this.card.rarity][4]
 
-    this.statsType.forEach(stat => {
+    this.card.statsType.forEach(stat => {
       let min = this.card.stats[stat].min
       let max = this.card.stats[stat].max
 
@@ -408,5 +408,17 @@ export class CardService {
     this.card.level = this.card.maxLevel;
 
     this.changeLevel()
+  }
+
+  getAvailableStats() {
+    let availableStats = []
+
+    Object.keys(this.card.stats).forEach(stat => {
+      if (typeof(this.card.stats[stat].min) == "number") {
+        availableStats.push(stat)
+      }
+    })
+
+    return availableStats
   }
 }

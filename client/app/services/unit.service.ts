@@ -354,7 +354,9 @@ export class UnitService {
       subjob: unit.subjob,
       esper: null,
       card: null,
-      equipments: [null, null, null]
+      equipments: [null, null, null],
+      guild: unit.guild,
+      limitLv: unit.limit.level
     }
 
     if (unit.esper) {
@@ -433,6 +435,10 @@ export class UnitService {
       }
     })
 
+    if (this.unit.limit) {
+      this.unit.limit.level = 1
+    }
+
     this.initiateSavedUnit(customData)
 
     this.updateMaxLevel();
@@ -478,6 +484,10 @@ export class UnitService {
         this.unit.subjob = unit.subjob
       }
 
+      if (unit.limitLv) {
+        this.unit.limit.level = unit.limitLv
+      }
+
       this.unit.activatedSupport = [
         unit.activatedSupport[0],
         unit.activatedSupport[1]
@@ -486,6 +496,10 @@ export class UnitService {
       this.unit.savedEsper = unit.esper
       this.unit.savedCard = unit.card
       this.unit.savedEquipments = unit.equipments
+
+      if (unit.guild) {
+        this.unit.savedGuild = unit.guild
+      }
     }
   }
 
@@ -628,12 +642,28 @@ export class UnitService {
   }
 
   private calculateGuildStats() {
-    let guild = this.guildService.getGuild()
-    let statsPerStatue = this.guildService.getStats()
+    let guild = this.unit.guild
+    if (guild) {
+      let statues = this.guildService.getStatues()
 
-    Object.keys(statsPerStatue).forEach(statType => {
-      this.unit.stats[statType].guild = Math.floor(this.unit.stats[statType].baseTotal * guild[statsPerStatue[statType]] / 100)
-    });
+      Object.keys(guild).forEach(statue => {
+        if (guild[statue] > 0) {
+          statues[statue][guild[statue] - 1].forEach(stat => {
+            let value = stat.value;
+            if (stat.calcType == "percent") {
+              value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
+            }
+
+            if (!this.unit.stats[stat.type]) {
+              this.unit.stats[stat.type] = {}
+              this.unit.stats[stat.type].base = 0
+              this.unit.stats[stat.type].baseTotal = 0
+            }
+            this.unit.stats[stat.type].guild = value
+          })
+        }
+      });
+    }
   }
 
   private updateStat(type, value, statType, calc = "fixe") {
@@ -731,7 +761,7 @@ export class UnitService {
   }
 
   private calculateCardStats() {
-    ["HP", "ATK", "MAG"].forEach(statType => {
+    this.unit.card.statsType.forEach(statType => {
       this.unit.stats[statType].card = this.unit.card.stats[statType].total
     })
 
@@ -1197,20 +1227,28 @@ export class UnitService {
       if (node.level && node.level >= 1 && node.skill.type == "skill" &&
         (node.skill.mainSkill || node.skill.unlockJob == this.unit.subjob + 1)
       ) {
-        let skill = node.skill
-        skill.level = node.level
-        skill.name = this.nameService.getName(skill)
+        node.skill.level = node.level
 
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-        });
-
-        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
-
-        this.skillService.formatRange(this.unit, skill);
-
-        this.unit.activeSkills.push(skill)
+        this.unit.activeSkills.push(this.formatActiveSkill(node.skill))
       }
     })
+
+    if (this.unit.limit) {
+      this.unit.limit = this.formatActiveSkill(this.unit.limit)
+    }
+  }
+
+  private formatActiveSkill(skill) {
+    skill.name = this.nameService.getName(skill)
+
+    skill.effects.forEach(effect => {
+      effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+    });
+
+    skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+
+    this.skillService.formatRange(this.unit, skill);
+
+    return skill
   }
 }

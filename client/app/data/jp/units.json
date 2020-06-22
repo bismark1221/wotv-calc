@@ -2056,14 +2056,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_WAR_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -2072,7 +2064,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -4255,14 +4255,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SWN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -4271,7 +4263,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -6377,6 +6377,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -6386,16 +6395,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -8583,14 +8583,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SAM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -8599,7 +8591,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -10715,14 +10715,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_PLD_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -10731,7 +10723,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -12850,14 +12850,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_MNK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -12866,7 +12858,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -15009,6 +15009,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -15018,16 +15027,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -17308,14 +17308,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -17324,7 +17316,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -19643,14 +19643,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_WHM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -19659,7 +19651,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -21884,14 +21884,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_CLR_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -21900,7 +21892,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -24165,14 +24165,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_GRM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -24181,7 +24173,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -26380,14 +26380,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -26396,7 +26388,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -28500,6 +28500,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -28509,16 +28518,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -30601,14 +30601,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SAM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -30617,7 +30609,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -32737,6 +32737,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_DRG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -32746,16 +32755,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -34882,6 +34882,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_GUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -34891,16 +34900,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -37038,14 +37038,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_THI_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -37054,7 +37046,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -39232,6 +39232,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -39242,16 +39251,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -41444,14 +41444,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_CLR_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -41460,7 +41452,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -43632,14 +43632,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_MNK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -43648,7 +43640,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -45839,14 +45839,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_TIM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -45855,7 +45847,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -48089,14 +48089,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_WHM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -48105,7 +48097,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -50313,14 +50313,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SWN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -50329,7 +50321,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -52593,6 +52593,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_FINA_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -52603,16 +52612,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -54705,14 +54705,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -54721,7 +54713,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -56907,13 +56907,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_MGK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -56922,7 +56915,14 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -59016,6 +59016,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_DRG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -59025,16 +59034,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -61239,14 +61239,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_GRM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -61255,7 +61247,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -63475,14 +63475,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_WHM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -63491,7 +63483,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -65623,6 +65623,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -65632,16 +65641,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -67827,6 +67827,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -67837,16 +67846,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -69989,14 +69989,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -70005,7 +69997,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -72088,14 +72088,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_THI_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -72104,7 +72096,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -74274,14 +74274,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_RDM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -74290,7 +74282,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -76471,14 +76471,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_TIM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -76487,7 +76479,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -78668,6 +78668,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -78678,16 +78687,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -80861,14 +80861,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -80877,7 +80869,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -82974,14 +82974,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_THI_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -82990,7 +82982,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -85027,14 +85027,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_WAR_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -85043,7 +85035,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -87264,14 +87264,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_GLMS_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -87280,7 +87272,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -89534,14 +89534,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_YSTL_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -89550,7 +89542,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -91616,14 +91616,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_TNCR_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -91632,7 +91624,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -93840,6 +93840,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_GUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -93849,16 +93858,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -95945,14 +95945,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_NIN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -95961,7 +95953,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -98116,14 +98116,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_VIK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -98132,7 +98124,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -100310,14 +100310,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SWN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -100326,7 +100318,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -102460,14 +102460,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_PLD_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -102476,7 +102468,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -104626,6 +104626,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_DRG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -104635,16 +104644,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -106779,14 +106779,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_MNK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -106795,7 +106787,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -108939,14 +108939,6 @@
       },
       "effects": [],
       "dataId": "SK_FFT_RAMZ_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -108955,7 +108947,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -111031,6 +111031,15 @@
       },
       "effects": [],
       "dataId": "SK_FFT_GFGR_ATK",
+      "damage": {
+        "minValue": 0,
+        "maxValue": 0,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -113267,6 +113276,15 @@
       },
       "effects": [],
       "dataId": "SK_FFT_ORND_ATK",
+      "damage": {
+        "minValue": 0,
+        "maxValue": 0,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -115457,14 +115475,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -115473,7 +115483,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -117762,14 +117780,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_NIN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -117778,7 +117788,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -119952,14 +119970,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_RDM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -119968,7 +119978,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -122099,14 +122117,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_VIK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -122115,7 +122125,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -124278,6 +124296,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_WGN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -124287,16 +124314,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -126518,14 +126536,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_RDM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -126534,7 +126544,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -128691,6 +128709,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_DRG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -128700,16 +128727,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -130952,14 +130970,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_BLM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -130968,7 +130978,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -133127,14 +133145,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_ASS_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -133143,7 +133153,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -135306,13 +135324,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_MGK_ATK",
-      "slug": "tong-chang-gong-ji",
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -135321,7 +135332,14 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -137442,14 +137460,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_KNT_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -137458,7 +137468,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -139606,14 +139624,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_RAIN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -139622,7 +139632,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -141763,6 +141781,12 @@
       },
       "effects": [],
       "dataId": "SK_FF1_WROL_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -141770,13 +141794,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -143991,6 +144009,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_MST_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "magic",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -143998,13 +144022,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "magic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "magic",
-        "effType": "DAMAGE"
-      }
+      "based": "magic"
     },
     "masterSkill": [
       {
@@ -146113,14 +146131,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SAM_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -146129,7 +146139,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -148329,14 +148347,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_SWN_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -148345,7 +148355,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -150482,14 +150500,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_PLD_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -150498,7 +150508,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -152703,6 +152721,12 @@
       },
       "effects": [],
       "dataId": "SK_FFT_AGRA_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -152710,13 +152734,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -154924,6 +154942,12 @@
       },
       "effects": [],
       "dataId": "SK_FFT_DELT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -154931,13 +154955,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -157094,6 +157112,12 @@
       },
       "effects": [],
       "dataId": "SK_FFT_MSTD_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -157103,13 +157127,7 @@
         "s": 1,
         "line": 1
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -159325,14 +159343,6 @@
       },
       "effects": [],
       "dataId": "SK_LW_CAL_ATK",
-      "slug": "tong-chang-gong-ji",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
       "damage": {
         "minValue": -30,
         "maxValue": -30,
@@ -159341,7 +159351,15 @@
       },
       "elem": [
         "neutral"
-      ]
+      ],
+      "slug": "tong-chang-gong-ji",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -161556,6 +161574,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_STRN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -161563,13 +161587,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -163706,6 +163724,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_GRSR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -163715,13 +163739,7 @@
         "line": 1
       },
       "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE"
-      }
+      "pierce": 1
     },
     "masterSkill": [
       {
@@ -165879,6 +165897,15 @@
       },
       "effects": [],
       "dataId": "SK_LW_HUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -165889,16 +165916,7 @@
         "s": 1,
         "line": 2
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "missile",
-        "effType": "DAMAGE"
-      },
-      "elem": [
-        "neutral"
-      ]
+      "based": "physic"
     },
     "masterSkill": [
       {
@@ -168012,6 +168030,12 @@
       },
       "effects": [],
       "dataId": "SK_LW_LSWL_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
       "slug": "tong-chang-gong-ji",
       "maxLevel": 20,
       "range": {
@@ -168019,13 +168043,7 @@
         "l": 1,
         "s": 0
       },
-      "based": "physic",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE"
-      }
+      "based": "physic"
     },
     "masterSkill": [
       {

@@ -53,12 +53,11 @@
         <td>Min</td>
         <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].min }}</td>
       </tr>
-      <tr *ngIf="equipment.growIds.length <= 1">
-        <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">Max</td>
-        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].max }}</td>
-      </tr>
       <tr *ngFor="let growId of equipment.growIds" >
-        <td>{{ equipment.grows[growId].name }}</td>
+        <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+          <span *ngIf="equipment.growIds.length == 1">Max</span>
+          <span *ngIf="equipment.growIds.length > 1">{{ equipment.grows[growId].name }}</span>
+        </td>
         <td *ngFor="let statType of equipment.statsTypes">{{ equipment.grows[growId].stats[statType] }}</td>
       </tr>
     </tbody>

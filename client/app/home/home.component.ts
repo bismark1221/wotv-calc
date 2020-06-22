@@ -22,35 +22,41 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "17/06",
+        items: [
+          {type: "unit", dataId: "UN_LW_P_VKTR"},
+          {type: "unit", dataId: "UN_LW_P_THLA"},
+          {type: "esper", dataId: "UN_LW_S_OCHU"},
+          {type: "card", dataId: "VC_LW_OCHU"}
+        ]
+      },
+      {
+        date: "10/06",
+        items: [
+          {type: "card", dataId: "VC_LW_VALE1"},
+          {type: "card", dataId: "VC_LW_VALE2"}
+        ]
+      },
+      {
         date: "03/06",
         items: [
           {type: "unit", dataId: "UN_LW_P_LUCA"},
-      {type: "unit", dataId: "UN_LW_P_ADLD"},
-      {type: "esper", dataId: "UN_LW_S_TSLP"},
-      {type: "card", dataId: "VC_LW_TSLP"},
-      {type: "card", dataId: "VC_LW_LILS"}
-        ]
-      },
-      {
-        date: "20/05",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_MRND"},
-          {type: "unit", dataId: "UN_LW_P_DRND"},
-          {type: "esper", dataId: "UN_LW_S_LAMA_01"},
-          {type: "card", dataId: "VC_LW_LAMA_01"},
-          {type: "card", dataId: "VC_LW_GUARD"}
-        ]
-      },
-      {
-        date: "13/05",
-        items: [
-          {type: "esper", dataId: "UN_LW_S_ODIN"},
-          {type: "card", dataId: "VC_LW_ODIN"},
-          {type: "card", dataId: "VC_LW_NEWYEAR"}
+          {type: "unit", dataId: "UN_LW_P_ADLD"},
+          {type: "esper", dataId: "UN_LW_S_TSLP"},
+          {type: "card", dataId: "VC_LW_TSLP"},
+          {type: "card", dataId: "VC_LW_LILS"}
         ]
       }
     ],
     JP: [
+      {
+        date: "10/06",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_TITN"},
+          {type: "card", dataId: "VC_LW_TITN"},
+          {type: "card", dataId: "VC_LW_KING"}
+        ]
+      },
       {
         date: "31/05",
         items: [
@@ -65,12 +71,6 @@ export class HomeComponent {
           {type: "esper", dataId: "UN_LW_S_FNRR"},
           {type: "card", dataId: "VC_LW_FNRR"},
           {type: "card", dataId: "VC_LW_ORDR"}
-        ]
-      },
-      {
-        date: "18/05",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_STRN_01"}
         ]
       }
     ]

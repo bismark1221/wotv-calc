@@ -98,7 +98,9 @@ export class SkillService {
   }
 
   private getIncrease(effect) {
-    if (effect.minValue < 0) {
+    if (effect.rate && effect.rate != 200) {
+      return effect.rate + "% chance" + (effect.minValue < 0 || effect.value < 0 ? " to decrease" : " to increase")
+    } else if (effect.minValue < 0 || effect.value < 0) {
       return "Decrease"
     } else {
       return "Increase"
@@ -649,6 +651,9 @@ export class SkillService {
       case "CRITIC_DAMAGE" :
         html = this.getIncrease(effect) + " Critical Damage" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "MAX_HP_DOWN_RES" :
+        html = this.getIncrease(effect) + " Max HP Down Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "ATK_DEBUFF_RES" :
         html = this.getIncrease(effect) + " ATK Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
@@ -771,6 +776,9 @@ export class SkillService {
       break
       case "IF_KILL_WITH_MAGIC" :
         html = "If kill with magic grants"
+      break
+      case "ON_BASIC_ATTACK" :
+        html = "On basic attacks only"
       break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)

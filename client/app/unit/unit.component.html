@@ -413,12 +413,16 @@
     <tbody>
       <tr>
         <th></th>
+        <th></th>
         <th>Effects</th>
         <th class="rangeTd">Range</th>
         <th class="skillHitTd">Hits</th>
       </tr>
       <tr>
         <td class="skillNameTd">Basic Attack</td>
+        <td>
+          <span *ngIf="unit.attack.based"><img title="{{ unit.attack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.attack.based + '.png'}}" /></span>
+        </td>
         <td class="skillEffectTd">
           <div [innerHTML]="unit.attack.damageHtml"></div>
           <div *ngFor="let effect of unit.attack.effects">
