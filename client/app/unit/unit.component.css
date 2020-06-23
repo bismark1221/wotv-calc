@@ -1,3 +1,59 @@
+th {
+  background-color: var(--th-background);
+}
+
+th.sub {
+  background-color: var(--sub-th-background);
+  color: var(--black);
+  font-weight: normal;
+}
+
+.tab-content {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background-color: #F4F5F9;
+  height: 55px;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  height: 100%;
+  padding-top: 15px;
+  color: var(--th-background);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  font-weight: bold;
+  border-bottom: 4px solid var(--th-background);
+  background-color: #F4F5F9;
+}
+
+.leftBlock {
+  width: 350px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+
 .elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg, .rarityImg {
   height: 32px;
 }
@@ -27,24 +83,18 @@
   width: 50px;
 }
 
-.row {
-  width: 1200px;
-  margin: auto;
-  margin-bottom: 20px;
+.unitTable, .tmrTable, .tmrSkillTable, .masterSkillTable {
+  width: 100%;
 }
 
-.unitTable {
-  width: 350px;
-  margin-right: 20px;
+.tmrSkillTable, .masterSkillTable {
+  margin-top: 10px;
 }
 
 .jobTd {
   width: 33%;
 }
 
-.tmrTable {
-  width: 829px;
-}
 
 .emptyLine {
   height: 50px;

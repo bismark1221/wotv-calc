@@ -43,6 +43,10 @@ export const themes = {
       "--card-background": "#E8E6DF",
       "--card-title": "#3D3A41",
       "--home-title": "rgba(29, 27, 27, 0.95)",
+
+      "--th-background": "#3D3A41",
+      "--sub-th-background": "#E8E6DF",
+      "--tabs-background": "#F4F5F9"
     }
   },
   dark: {
@@ -89,6 +93,10 @@ export const themes = {
       "--card-background": "#E8E6DF",
       "--card-title": "#3D3A41",
       "--home-title": "rgba(29, 27, 27, 0.95)",
+
+      "--th-background": "#3D3A41",
+      "--sub-th-background": "#E8E6DF",
+      "--tabs-background": "#F4F5F9"
     }
   }
 }
