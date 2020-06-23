@@ -52,6 +52,14 @@ th.sub {
 }
 
 
+.unitTable, .tmrTable, .tmrSkillTable, .masterSkillTable, .statsTable {
+  width: 100%;
+}
+
+
+
+
+
 
 
 .elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg, .rarityImg {
@@ -83,9 +91,6 @@ th.sub {
   width: 50px;
 }
 
-.unitTable, .tmrTable, .tmrSkillTable, .masterSkillTable {
-  width: 100%;
-}
 
 .tmrSkillTable, .masterSkillTable {
   margin-top: 10px;
@@ -98,10 +103,6 @@ th.sub {
 
 .emptyLine {
   height: 50px;
-}
-
-.statsTable {
-  width: 800px;
 }
 
 .skillsTable {
