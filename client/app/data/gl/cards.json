@@ -2978,6 +2978,191 @@
       "maxLevel": 1
     }
   },
+  "VC_MBFF_MV1": {
+    "dataId": "VC_MBFF_MV1",
+    "names": {
+      "en": "Mobius of Despair and Truth"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 320
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 4,
+        "max": 12
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 44,
+        "max": 172
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "mbffmv1",
+    "slug": "mobius-of-despair-and-truth",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_GS",
+        "fr": "SK_VC_MBFF_MV1_GS"
+      },
+      "slug": "sk_vc_mbff_mv1_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_GSAW",
+        "fr": "SK_VC_MBFF_MV1_GSAW"
+      },
+      "slug": "sk_vc_mbff_mv1_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_GSMAX",
+        "fr": "SK_VC_MBFF_MV1_GSMAX"
+      },
+      "slug": "sk_vc_mbff_mv1_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 3,
+          "maxValue": 8,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_P",
+        "fr": "SK_VC_MBFF_MV1_P"
+      },
+      "slug": "sk_vc_mbff_mv1_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_PAW",
+        "fr": "SK_VC_MBFF_MV1_PAW"
+      },
+      "slug": "sk_vc_mbff_mv1_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV1_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV1_PMAX",
+        "fr": "SK_VC_MBFF_MV1_PMAX"
+      },
+      "slug": "sk_vc_mbff_mv1_pmax",
+      "maxLevel": 1
+    }
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -5381,6 +5566,151 @@
         "fr": "SK_VC_LW_OCHU_PAW"
       },
       "slug": "sk_vc_lw_ochu_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_MBFF_MV2": {
+    "dataId": "VC_MBFF_MV2",
+    "names": {
+      "en": "Mobius of Hope and Illusion"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 47,
+        "max": 380
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 21,
+        "max": 87
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 8,
+        "max": 35
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "mbffmv2",
+    "slug": "mobius-of-hope-and-illusion",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ICE_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV2_GS",
+        "fr": "SK_VC_MBFF_MV2_GS"
+      },
+      "slug": "sk_vc_mbff_mv2_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ICE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV2_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV2_GSAW",
+        "fr": "SK_VC_MBFF_MV2_GSAW"
+      },
+      "slug": "sk_vc_mbff_mv2_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV2_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV2_P",
+        "fr": "SK_VC_MBFF_MV2_P"
+      },
+      "slug": "sk_vc_mbff_mv2_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_MBFF_MV2_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_MBFF_MV2_PAW",
+        "fr": "SK_VC_MBFF_MV2_PAW"
+      },
+      "slug": "sk_vc_mbff_mv2_paw",
       "maxLevel": 4
     }
   },
