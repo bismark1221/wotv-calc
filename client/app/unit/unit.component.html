@@ -221,17 +221,17 @@
               <th colspan="13">Unit Stats (with only job lvl 1)</th>
             </tr>
             <tr>
-              <th></th>
-              <th>HP</th>
-              <th>TP</th>
-              <th>AP</th>
-              <th>ATK</th>
-              <th>MAG</th>
-              <th>DEX</th>
-              <th>AGI</th>
-              <th>LUCK</th>
-              <th>MOVE</th>
-              <th>JUMP</th>
+              <th class="sub"></th>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">MAG</th>
+              <th class="sub">DEX</th>
+              <th class="sub">AGI</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">MOVE</th>
+              <th class="sub">JUMP</th>
             </tr>
             <tr>
               <td>Min</td>
@@ -266,17 +266,17 @@
               <th colspan="11">Board Stats</th>
             </tr>
             <tr>
-              <th>HP</th>
-              <th>TP</th>
-              <th>INITIAL AP</th>
-              <th>ATK</th>
-              <th>DEF</th>
-              <th>MAG</th>
-              <th>SPR</th>
-              <th>DEX</th>
-              <th>AGI</th>
-              <th>LUCK</th>
-              <th>CRITIC RATE</th>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">INITIAL AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">DEF</th>
+              <th class="sub">MAG</th>
+              <th class="sub">SPR</th>
+              <th class="sub">DEX</th>
+              <th class="sub">AGI</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">CRITIC RATE</th>
             </tr>
             <tr>
               <td>{{ unit.totalBuffs.HP }}</td>
@@ -292,7 +292,7 @@
               <td>{{ unit.totalBuffs.CRITIC_RATE }}</td>
             </tr>
             <tr>
-              <th colspan="11" *ngIf="unit.remainingBuffs.length > 0">OTHERS</th>
+              <th class="sub" colspan="11" *ngIf="unit.remainingBuffs.length > 0">OTHERS</th>
             </tr>
             <tr>
               <td colspan="11" *ngIf="unit.remainingBuffs.length > 0">
@@ -308,15 +308,15 @@
               <th colspan="11">Jobs Stats (job lv 15 - unit lv 99)</th>
             </tr>
             <tr>
-              <th>Job</th>
-              <th>HP</th>
-              <th>TP</th>
-              <th>AP</th>
-              <th>ATK</th>
-              <th>MAG</th>
-              <th>DEX</th>
-              <th>AGI</th>
-              <th>LUCK</th>
+              <th class="sub">Job</th>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">MAG</th>
+              <th class="sub">DEX</th>
+              <th class="sub">AGI</th>
+              <th class="sub">LUCK</th>
             </tr>
             <tr *ngFor="let i of [0, 1, 2]">
               <td>
@@ -351,14 +351,14 @@
               <th colspan="8">Res Elem</th>
             </tr>
             <tr>
-              <td><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.png'}}" /></td>
-              <td><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.png'}}" /></td>
-              <td><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.png'}}" /></td>
-              <td><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.png'}}" /></td>
-              <td><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.png'}}" /></td>
-              <td><img class="elementImg" title="water resistance" src="{{'assets/elements/water.png'}}" /></td>
-              <td><img class="elementImg" title="light resistance" src="{{'assets/elements/light.png'}}" /></td>
-              <td><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.png'}}" /></td>
+              <th class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.png'}}" /></th>
+              <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.png'}}" /></th>
             </tr>
             <tr>
               <td class="heightResTd"><span *ngIf="unit.stats.FIRE_RES.min">{{ unit.stats.FIRE_RES.min }} %</span></td>
@@ -379,11 +379,11 @@
               <th colspan="5">Res Damage</th>
             </tr>
             <tr>
-              <td><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.png'}}" /></td>
-              <td><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.png'}}" /></td>
-              <td><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.png'}}" /></td>
-              <td><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.png'}}" /></td>
-              <td><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.png'}}" /></td>
+              <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.png'}}" /></th>
+              <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.png'}}" /></th>
+              <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.png'}}" /></th>
+              <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.png'}}" /></th>
+              <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.png'}}" /></th>
             </tr>
             <tr>
               <td class="heightResTd"><span *ngIf="unit.stats.SLASH_RES.min">{{ unit.stats.SLASH_RES.min }} %</span></td>
@@ -401,14 +401,14 @@
               <th colspan="15">Res Status Ailment</th>
             </tr>
             <tr>
-              <td><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></td>
+              <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></th>
             </tr>
             <tr>
               <td class="heightResTd"><span *ngIf="unit.stats.POISON_RES.min">{{ unit.stats.POISON_RES.min }} %</span></td>
@@ -421,14 +421,14 @@
               <td><span *ngIf="unit.stats.TOAD_RES.min">{{ unit.stats.TOAD_RES.min }} %</span></td>
             </tr>
             <tr>
-              <td><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></td>
-              <td><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></td>
-              <td></td>
+              <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></th>
+              <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></th>
+              <th class="sub"></th>
             </tr>
             <tr>
               <td class="heightResTd"><span *ngIf="unit.stats.CHARM_RES.min">{{ unit.stats.CHARM_RES.min }} %</span></td>
@@ -456,13 +456,13 @@
             </th>
           </tr>
           <tr>
-            <th class="skillJobTd">Job</th>
-            <th class="skillJobTd">Job lvl</th>
-            <th class="skillStarTd">Star lvl</th>
-            <th class="skillNameTd">name</th>
-            <th>Effects</th>
-            <th *ngIf="i == 'counter'" class="rangeTd">Range</th>
-            <th *ngIf="i == 'counter'" class="skillHitTd">Hits</th>
+            <th class="sub skillJobTd">Job</th>
+            <th class="sub skillJobTd">Job lvl</th>
+            <th class="sub skillStarTd">Star lvl</th>
+            <th class="sub skillNameTd">name</th>
+            <th class="sub">Effects</th>
+            <th *ngIf="i == 'counter'" class="sub rangeTd">Range</th>
+            <th *ngIf="i == 'counter'" class="sub skillHitTd">Hits</th>
           </tr>
           <tr *ngFor="let skill of getSkillsPerType(i)">
             <td><img class="subJob" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
@@ -490,11 +490,11 @@
       <table class="skillsTable">
         <tbody>
           <tr>
-            <th></th>
-            <th></th>
-            <th>Effects</th>
-            <th class="rangeTd">Range</th>
-            <th class="skillHitTd">Hits</th>
+            <th class="sub"></th>
+            <th class="sub"></th>
+            <th class="sub">Effects</th>
+            <th class="rangeTd sub">Range</th>
+            <th class="skillHitTd sub">Hits</th>
           </tr>
           <tr>
             <td class="skillNameTd">Basic Attack</td>
@@ -518,111 +518,107 @@
         </tbody>
       </table>
 
-      <div *ngFor="let i of [0, 1, 2, 3]">
-        <table class="skillsTable">
-          <tbody>
-            <tr>
-              <th *ngIf="i == 0 && jobs[0]" colspan="9">
-                <img class="mainJob" src="{{'assets/jobs/' + jobs[0].image + '.png'}}" />&nbsp;Main Job
-              </th>
-              <th *ngIf="i != 0 && jobs[i - 1]" colspan="9">
-                <img class="subJob" src="{{'assets/jobs/' + jobs[i - 1].image + '.png'}}" />&nbsp;{{ jobs[i - 1].name }}
-              </th>
-            </tr>
-            <tr>
-              <th class="skillJobTd">Job lvl</th>
-              <th class="skillStarTd">Star lvl</th>
-              <th class="skillTypeTd">Type</th>
-              <th class="skillNameTd">name</th>
-              <th>Effects</th>
-              <th class="rangeTd">Range</th>
-              <th class="skillCastTd">Casts</th>
-              <th class="skillHitTd">Hits</th>
-              <th class="skillCostTd">Cost</th>
-            </tr>
-            <tr *ngFor="let skill of getSkillsPerJob(i)">
-              <td>{{ skill.jobLevel }}</td>
-              <td>{{ skill.unlockStar }}</td>
-              <td>
-                <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
-                <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                <div *ngIf="skill.time && skill.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
-                      Min time: {{ skill.time.minValue }}<br />
-                      Max time: {{ skill.time.maxValue }}
-                    </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
-              </td>
-              <td>{{ skill.name }}</td>
-              <td class="skillEffectTd">
-                <div>{{ skill.counterHtml }}</div>
-                <div [innerHTML]="skill.damageHtml"></div>
-                <div *ngFor="let effect of skill.effects">
-                  {{ effect.formatHtml }}
-                </div>
-              </td>
-              <td>
-                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                  <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-                </div>
-              </td>
-              <td>{{ skill.count }}</td>
-              <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-              <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="skillsTable" *ngFor="let i of [0, 1, 2, 3]">
+        <tbody>
+          <tr>
+            <th *ngIf="i == 0 && jobs[0]" colspan="9">
+              <img class="mainJob" src="{{'assets/jobs/' + jobs[0].image + '.png'}}" />&nbsp;Main Job
+            </th>
+            <th *ngIf="i != 0 && jobs[i - 1]" colspan="9">
+              <img class="subJob" src="{{'assets/jobs/' + jobs[i - 1].image + '.png'}}" />&nbsp;{{ jobs[i - 1].name }}
+            </th>
+          </tr>
+          <tr>
+            <th class="sub skillJobTd">Job lvl</th>
+            <th class="sub skillStarTd">Star lvl</th>
+            <th class="sub skillTypeTd">Type</th>
+            <th class="sub skillNameTd">name</th>
+            <th class="sub">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillCastTd">Casts</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+          <tr *ngFor="let skill of getSkillsPerJob(i)">
+            <td>{{ skill.jobLevel }}</td>
+            <td>{{ skill.unlockStar }}</td>
+            <td>
+              <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
+              <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+              <div *ngIf="skill.time && skill.time.minValue">
+                <ng-template #tip_time>
+                  <div>
+                    Min time: {{ skill.time.minValue }}<br />
+                    Max time: {{ skill.time.maxValue }}
+                  </div>
+                </ng-template>
+                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+              </div>
+            </td>
+            <td>{{ skill.name }}</td>
+            <td class="skillEffectTd">
+              <div>{{ skill.counterHtml }}</div>
+              <div [innerHTML]="skill.damageHtml"></div>
+              <div *ngFor="let effect of skill.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+            <td>
+              <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+              </div>
+            </td>
+            <td>{{ skill.count }}</td>
+            <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+            <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div *ngIf="unit.limit">
-        <table class="skillsTable">
-          <tbody>
-            <tr>
-              <th [attr.colspan]="unit.limit.based ? '6' : '5'">Limit Burst</th>
-            </tr>
-            <tr>
-              <th class="limitNameTd">name</th>
-              <th [attr.colspan]="unit.limit.based ? '2' : '1'">Effects</th>
-              <th class="rangeTd">Range</th>
-              <th class="skillHitTd">Hits</th>
-              <th class="skillCostTd">Cost</th>
-            </tr>
-            <tr>
-              <td>{{ unit.limit.name }}</td>
-              <td class="limitBased" *ngIf="unit.limit.based">
-                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + unit.limit.based + '.png' }}" />
-                <div *ngIf="unit.limit.time && unit.limit.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
-                      Min time: {{ unit.limit.time.minValue }}<br />
-                      Max time: {{ unit.limit.time.maxValue }}
-                    </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
-              </td>
-              <td [className]="unit.limit.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
-                <div class="limitDamageDiv" [innerHTML]="unit.limit.damageHtml"></div>
-                <div *ngFor="let effect of unit.limit.effects">
-                  {{ effect.formatHtml }}
-                </div>
-              </td>
-              <td>
-                <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                  <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
-                </div>
-              </td>
-              <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
-              <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="skillsTable" *ngIf="unit.limit">
+        <tbody>
+          <tr>
+            <th [attr.colspan]="unit.limit.based ? '6' : '5'">Limit Burst</th>
+          </tr>
+          <tr>
+            <th class="sub limitNameTd">name</th>
+            <th class="sub" [attr.colspan]="unit.limit.based ? '2' : '1'">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+          <tr>
+            <td>{{ unit.limit.name }}</td>
+            <td class="limitBased" *ngIf="unit.limit.based">
+              <img class='atkBasedImg' src="{{ 'assets/atkBased/' + unit.limit.based + '.png' }}" />
+              <div *ngIf="unit.limit.time && unit.limit.time.minValue">
+                <ng-template #tip_time>
+                  <div>
+                    Min time: {{ unit.limit.time.minValue }}<br />
+                    Max time: {{ unit.limit.time.maxValue }}
+                  </div>
+                </ng-template>
+                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+              </div>
+            </td>
+            <td [className]="unit.limit.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
+              <div class="limitDamageDiv" [innerHTML]="unit.limit.damageHtml"></div>
+              <div *ngFor="let effect of unit.limit.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+            <td>
+              <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
+              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
+              </div>
+            </td>
+            <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
+            <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
+          </tr>
+        </tbody>
+      </table>
     </ng-template>
   </li>
   <li ngbNavItem>
@@ -650,4 +646,5 @@
     </ng-template>
   </li>
 </ul>
+
 <div [ngbNavOutlet]="nav"></div>

@@ -82,6 +82,7 @@ th {
 td {
   text-align: center;
   padding: 0.3em 0.5em;
+  border: 1px solid var(--table-border);
 }
 
 button.close {

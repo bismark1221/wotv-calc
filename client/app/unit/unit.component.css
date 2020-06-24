@@ -56,7 +56,13 @@ th.sub {
   width: 100%;
 }
 
+.statsTable:not(:first-child) {
+  margin-top: 10px;
+}
 
+.skillsTable:not(:first-child) {
+  margin-top: 10px;
+}
 
 
 
