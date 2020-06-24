@@ -1,7 +1,7 @@
-<ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill">
-  <li ngbNavItem>
+<ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill" [(activeId)]="activeTab">
+  <li [ngbNavItem]="1">
     <a ngbNavLink>CHARACTER</a>
-    <ng-template ngbNavContent>
+    <ng-template ngbNavContent #character>
       <div class="leftBlock">
         <table class="unitTable">
           <tbody>
@@ -16,7 +16,7 @@
               <th class="sub" colspan="3">Element</th>
             </tr>
             <tr>
-              <td colspan="3"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.png'}}" /></td>
+              <td colspan="3"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.png'}}" (click)="clickSpecialBismark()"/></td>
               <td colspan="3"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" /></td>
             </tr>
             <tr>
@@ -153,10 +153,10 @@
       </div>
     </ng-template>
   </li>
-  <li ngbNavItem>
+  <li [ngbNavItem]="2">
     <a ngbNavLink>STATS</a>
-    <ng-template ngbNavContent>
-      <div class="leftBlock">
+    <ng-template ngbNavContent #stats>
+      <div class="leftBlock" *ngIf="!specialBismark">
         <table class="unitTable">
           <tbody>
             <tr>
@@ -445,9 +445,9 @@
       </div>
     </ng-template>
   </li>
-  <li ngbNavItem>
+  <li [ngbNavItem]="3">
     <a ngbNavLink>SKILLS</a>
-    <ng-template ngbNavContent>
+    <ng-template ngbNavContent #skills>
       <table class="skillsTable" *ngFor="let i of ['support', 'counter']">
         <tbody>
           <tr>
@@ -621,9 +621,9 @@
       </table>
     </ng-template>
   </li>
-  <li ngbNavItem>
+  <li [ngbNavItem]="4">
     <a ngbNavLink>SKILL TREE</a>
-    <ng-template ngbNavContent>
+    <ng-template ngbNavContent #tree>
       <div *ngIf="grid">
         <div class="unitGridContainer" style="text-align: center;">
           <ul class="hexGrid">
@@ -648,3 +648,9 @@
 </ul>
 
 <div [ngbNavOutlet]="nav"></div>
+
+<div *ngIf="specialBismark && activeTab == 1" class="tab-content">
+  <div *ngIf="activeTab == 2 else stats"></div>
+  <div *ngIf="activeTab == 3 else skills"></div>
+  <div *ngIf="activeTab == 4 else tree"></div>
+</div>

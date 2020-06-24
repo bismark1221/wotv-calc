@@ -19,6 +19,8 @@ export class UnitComponent implements OnInit {
   unit = null;
   jobs = [];
   grid = null;
+  specialBismark = false;
+  activeTab;
 
   constructor(
     private unitService: UnitService,
@@ -240,5 +242,9 @@ export class UnitComponent implements OnInit {
         this.hideNode(childNode)
       })
     }
+  }
+
+  clickSpecialBismark() {
+    this.specialBismark = !this.specialBismark
   }
 }
