@@ -938,7 +938,7 @@ export class UnitService {
   private updateSkill(nodeId, increase, fullHide = false) {
     let node = this.unit.board.nodes[nodeId]
 
-    if (this.unit.grid.nodesForGrid[nodeId].subType == "buff") {
+    if (this.unit.grid && this.unit.grid.nodesForGrid[nodeId].subType == "buff") {
       node.level = increase ? 1 : 0;
     } else {
       if (increase) {
