@@ -928,6 +928,7 @@ export class UnitService {
       let level = this.updateSkill(node, false, fullHide)
       if (level === 0) {
         this.unit.board.nodes[node].activated = false;
+        console.log(this.unit)
         this.unit.board.nodes[node].children.forEach(childNode => {
           this.hideNode(childNode, true)
         })
