@@ -367,13 +367,12 @@ export class UnitService {
     }
 
     this.initiateSavedUnit(customData)
+    this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
     this.updateMaxLevel();
     this.updateMaxJobLevel();
     this.changeLevel();
     this.getActiveSkills();
-
-    this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
     return this.unit
   }
@@ -388,7 +387,7 @@ export class UnitService {
     if (unit) {
       this.unit.star = unit.star;
       this.unit.lb = unit.lb;
-      this.unit.level = unit.level;
+      this.unit.level = parseInt(unit.level);
 
       this.unit.jobs.forEach((jobId, jobIndex) => {
         this.unit.jobsData[jobIndex].level = unit.jobs[jobIndex]
@@ -928,7 +927,6 @@ export class UnitService {
       let level = this.updateSkill(node, false, fullHide)
       if (level === 0) {
         this.unit.board.nodes[node].activated = false;
-        console.log(this.unit)
         this.unit.board.nodes[node].children.forEach(childNode => {
           this.hideNode(childNode, true)
         })
@@ -939,7 +937,7 @@ export class UnitService {
   private updateSkill(nodeId, increase, fullHide = false) {
     let node = this.unit.board.nodes[nodeId]
 
-    if (this.unit.grid && this.unit.grid.nodesForGrid[nodeId].subType == "buff") {
+    if (this.unit.grid.nodesForGrid[nodeId].subType == "buff") {
       node.level = increase ? 1 : 0;
     } else {
       if (increase) {
