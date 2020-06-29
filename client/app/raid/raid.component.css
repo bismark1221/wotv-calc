@@ -1,3 +1,46 @@
+.tab-content {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background-color: #F4F5F9;
+  height: 55px;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  height: 100%;
+  padding-top: 15px;
+  color: var(--th-background);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  font-weight: bold;
+  border-bottom: 4px solid var(--th-background);
+  background-color: #F4F5F9;
+}
+
+.leftBlock {
+  width: 350px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg, .rarityImg {
   height: 32px;
 }
@@ -7,19 +50,6 @@
   margin-top: 10px;
 }
 
-.mainJob {
-  height: 40px;
-  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
-  background-size: 40px;
-  padding: 5px;
-}
-
-.subJob {
-  height: 40px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
-  background-size: 40px;
-  padding: 5px;
-}
 
 .limitBased{
   border-right: none;
@@ -27,35 +57,25 @@
   width: 50px;
 }
 
-.row {
-  width: 1200px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
 .raidTable {
-  width: 350px;
+  width: 100%;
   margin-right: 20px;
 }
 
-.jobTd {
-  width: 33%;
-}
-
-.tmrTable {
-  width: 829px;
-}
-
-.emptyLine {
-  height: 50px;
-}
-
 .statsTable {
-  width: 800px;
+  width: 100%;
 }
 
 .skillsTable {
-  width: 1200px;
+  width: 100%;
+}
+
+.statsTable:not(:first-child) {
+  margin-top: 10px;
+}
+
+.skillsTable:not(:first-child) {
+  margin-top: 10px;
 }
 
 .rangeTd {

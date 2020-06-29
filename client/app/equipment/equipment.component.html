@@ -1,142 +1,148 @@
 <div class="row">
-  <table class="equipmentTable">
-    <tbody>
-      <tr>
-        <th colspan="2">{{ equipment.name }}</th>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
-              onerror="this.src='assets/equipments/placeholder.png';"/>
-        </td>
-      </tr>
-      <tr>
-        <td>Rarity</td>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Type</td>
-        <td>{{ getEquipementType(equipment.type) }}</td>
-      </tr>
-      <tr *ngIf="equipment.acquisition">
-        <td>Acquisition</td>
-        <td *ngIf="equipment.acquisition.type == 'tmr'">
-           <a [routerLink]="[getRoute('/unit/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
-        </td>
-        <td *ngIf="equipment.acquisition.type !== 'tmr'">
-          {{ equipment.acquisition.name }}
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          Equippable jobs
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <img *ngFor="let job of equipment.jobs" src="{{ 'assets/jobs/' + job.image + '.png'}}" class="job" title="{{ job.name }}"/>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="leftBlock">
+    <table class="equipmentTable">
+      <tbody>
+        <tr>
+          <th colspan="2">{{ equipment.name }}</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
+                onerror="this.src='assets/equipments/placeholder.png';"/>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Rarity</th>
+          <th class="sub">Type</th>
+        </tr>
+        <tr>
+          <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" /></td>
+          <td>{{ getEquipementType(equipment.type) }}</td>
+        </tr>
+        <tr *ngIf="equipment.acquisition">
+          <th class="sub" colspan="2">Acquisition</th>
+        </tr>
+        <tr>
+          <td *ngIf="equipment.acquisition.type == 'tmr'" colspan="2">
+             <a [routerLink]="[getRoute('/unit/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
+          </td>
+          <td *ngIf="equipment.acquisition.type !== 'tmr'" colspan="2">
+            {{ equipment.acquisition.name }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <table class="StatTable" *ngIf="equipment.statsTypes.length > 0">
-    <tbody>
-      <tr>
-        <th colspan="13">Equipment Stats</th>
-      </tr>
-      <tr>
-        <th *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'"></th>
-        <th *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
-      </tr>
-      <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-        <td>Min</td>
-        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].min }}</td>
-      </tr>
-      <tr *ngFor="let growId of equipment.growIds" >
-        <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-          <span *ngIf="equipment.growIds.length == 1">Max</span>
-          <span *ngIf="equipment.growIds.length > 1">{{ equipment.grows[growId].name }}</span>
-        </td>
-        <td *ngFor="let statType of equipment.statsTypes">{{ equipment.grows[growId].stats[statType] }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div class="rightBlock">
+    <table class="StatTable" *ngIf="equipment.statsTypes.length > 0">
+      <tbody>
+        <tr>
+          <th colspan="13">Equipment Stats</th>
+        </tr>
+        <tr>
+          <th class="sub" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'"></th>
+          <th class="sub" *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
+        </tr>
+        <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+          <td>Min</td>
+          <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[statType].min }}</td>
+        </tr>
+        <tr *ngFor="let growId of equipment.growIds" >
+          <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+            <span *ngIf="equipment.growIds.length == 1">Max</span>
+            <span *ngIf="equipment.growIds.length > 1">{{ equipment.grows[growId].name }}</span>
+          </td>
+          <td *ngFor="let statType of equipment.statsTypes">{{ equipment.grows[growId].stats[statType] }}</td>
+        </tr>
+      </tbody>
+    </table>
 
+    <table class="equippableJobsTable">
+      <tbody>
+        <tr>
+          <th>Equippable jobs</th>
+        </tr>
+        <tr>
+          <td>
+            <img *ngFor="let job of equipment.jobs" src="{{ 'assets/jobs/' + job.image + '.png'}}" class="job" title="{{ job.name }}"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-<div class="row">
-  <table class="skillsTable" *ngIf="equipment.countSkills.length > 0">
-    <tbody *ngIf="equipment.activeSkill">
-      <tr>
-        <th colspan="6">Skill</th>
-      </tr>
-      <tr>
-        <th>name</th>
-        <th>Effects</th>
-        <th>Range</th>
-        <th>Casts</th>
-        <th>Hits</th>
-        <th>Cost</th>
-      </tr>
-      <tr>
-        <td class="skillNameTd">
-          {{ equipment.skills[0][0].name }}
-          <span *ngIf="equipment.skills[0][0].based">
-            <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skills[0][0].based + '.png'}}" />
-          </span>
-          <div *ngIf="equipment.skills[0][0].time && equipment.skills[0][0].time.minValue">
-            <ng-template #tip_time>
-              <div>
-                Min time: {{ equipment.skills[0][0].time.minValue }}<br />
-                Max time: {{ equipment.skills[0][0].time.maxValue }}
-              </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td class="skillEffectTd">
-          <div>{{ equipment.skills[0][0].counterHtml }}</div>
-          <div>{{ equipment.skills[0][0].damageHtml }}</div>
-          <div *ngFor="let effect of equipment.skills[0][0].effects">
-            <span [innerHTML]="effect.formatHtml"></span>
-          </div>
-        </td>
-        <td class="rangeTd">
-          <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
-          </div>
-        </td>
-        <td class="skillCastTd">
-          {{ equipment.skills[0][0].count }}
-        </td>
-        <td class="skillHitTd">
-          <span *ngIf="equipment.skills[0][0].combo">{{ equipment.skills[0][0].combo.num }}</span>
-        </td>
-        <td class="skillCostTd">
-          <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
-        </td>
-      </tr>
-    </tbody>
-    <tbody *ngIf="equipment.passiveSkills.length > 0">
-      <tr>
-        <th colspan="6">Passive Effects</th>
-      </tr>
-      <tr *ngIf="equipment.countSkills.length > 1">
-        <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
-      </tr>
-      <tr *ngFor="let effectType of equipment.effectTypes">
-        <td *ngFor="let i of equipment.countSkills" [attr.colspan]="equipment.activeSkill ? '6' : '1'">
-          <div *ngFor="let skill of equipment.skills[i]">
-            <diV *ngIf="skill.mainEffect == effectType">
-              <div *ngFor="let effect of skill.effects">
-                <span [innerHTML]="effect.formatHtml"></span>
-              </div>
-            </diV>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <table class="skillsTable" *ngIf="equipment.countSkills.length > 0">
+      <tbody *ngIf="equipment.activeSkill">
+        <tr>
+          <th colspan="6">Skill</th>
+        </tr>
+        <tr>
+          <th class="sub">Name</th>
+          <th class="sub">Effects</th>
+          <th class="sub">Range</th>
+          <th class="sub">Casts</th>
+          <th class="sub">Hits</th>
+          <th class="sub">Cost</th>
+        </tr>
+        <tr>
+          <td class="skillNameTd">
+            {{ equipment.skills[0][0].name }}
+            <span *ngIf="equipment.skills[0][0].based">
+              <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skills[0][0].based + '.png'}}" />
+            </span>
+            <div *ngIf="equipment.skills[0][0].time && equipment.skills[0][0].time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ equipment.skills[0][0].time.minValue }}<br />
+                  Max time: {{ equipment.skills[0][0].time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td class="skillEffectTd">
+            <div>{{ equipment.skills[0][0].counterHtml }}</div>
+            <div>{{ equipment.skills[0][0].damageHtml }}</div>
+            <div *ngFor="let effect of equipment.skills[0][0].effects">
+              <span [innerHTML]="effect.formatHtml"></span>
+            </div>
+          </td>
+          <td class="rangeTd">
+            <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
+            </div>
+          </td>
+          <td class="skillCastTd">
+            {{ equipment.skills[0][0].count }}
+          </td>
+          <td class="skillHitTd">
+            <span *ngIf="equipment.skills[0][0].combo">{{ equipment.skills[0][0].combo.num }}</span>
+          </td>
+          <td class="skillCostTd">
+            <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
+          </td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="equipment.passiveSkills.length > 0">
+        <tr>
+          <th colspan="6">Passive Effects</th>
+        </tr>
+        <tr *ngIf="equipment.countSkills.length > 1">
+          <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
+        </tr>
+        <tr *ngFor="let effectType of equipment.effectTypes">
+          <td *ngFor="let i of equipment.countSkills" [attr.colspan]="equipment.activeSkill ? '6' : '1'">
+            <div *ngFor="let skill of equipment.skills[i]">
+              <diV *ngIf="skill.mainEffect == effectType">
+                <div *ngFor="let effect of skill.effects">
+                  <span [innerHTML]="effect.formatHtml"></span>
+                </div>
+              </diV>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

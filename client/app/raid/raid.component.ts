@@ -17,6 +17,8 @@ import { NameService } from '../services/name.service';
 })
 export class RaidComponent implements OnInit {
   raid = null;
+  specialBismark = false;
+  activeTab;
 
   constructor(
     private raidService: RaidService,
@@ -93,5 +95,9 @@ export class RaidComponent implements OnInit {
         this.skillService.formatRange(boss, boss.attack);
       }
     })
+  }
+
+  clickSpecialBismark() {
+    this.specialBismark = !this.specialBismark
   }
 }

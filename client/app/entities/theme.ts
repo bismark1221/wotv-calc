@@ -46,7 +46,9 @@ export const themes = {
 
       "--th-background": "#3D3A41",
       "--sub-th-background": "#E8E6DF",
-      "--tabs-background": "#F4F5F9"
+      "--tabs-background": "#F4F5F9",
+
+      "--hr-color": "rgba(0, 0, 0, 0.1)"
     }
   },
   dark: {
@@ -96,7 +98,9 @@ export const themes = {
 
       "--th-background": "#3D3A41",
       "--sub-th-background": "#E8E6DF",
-      "--tabs-background": "#F4F5F9"
+      "--tabs-background": "#F4F5F9",
+
+      "--hr-color": "#6b6a68"
     }
   }
 }
