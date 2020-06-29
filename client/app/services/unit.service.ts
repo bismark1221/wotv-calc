@@ -1182,7 +1182,7 @@ export class UnitService {
 
   getExportableLink() {
     let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + btoa(JSON.stringify(this.getSavableData(this.unit)))
-    let shortenUrl = "http://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
+    let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
 
     return this.http.get(shortenUrl);
   }
