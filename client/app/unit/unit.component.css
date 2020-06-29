@@ -1,13 +1,3 @@
-th {
-  background-color: var(--th-background);
-}
-
-th.sub {
-  background-color: var(--sub-th-background);
-  color: var(--black);
-  font-weight: normal;
-}
-
 .tab-content {
   width: 1200px;
   margin: auto;
@@ -51,7 +41,6 @@ th.sub {
   vertical-align: top;
 }
 
-
 .unitTable, .tmrTable, .tmrSkillTable, .masterSkillTable, .statsTable {
   width: 100%;
 }
@@ -63,10 +52,6 @@ th.sub {
 .skillsTable:not(:first-child) {
   margin-top: 10px;
 }
-
-
-
-
 
 .elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg, .rarityImg {
   height: 32px;
@@ -104,11 +89,6 @@ th.sub {
 
 .jobTd {
   width: 33%;
-}
-
-
-.emptyLine {
-  height: 50px;
 }
 
 .skillsTable {

@@ -1,28 +1,32 @@
 <div class="row" *ngIf="card">
-  <table class="cardTable">
-    <tbody>
-      <tr>
-        <th colspan="2">{{ card.name }}</th>
-      </tr>
-      <tr>
-        <td colspan="2"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Rarity</td>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="leftBlock">
+    <table class="cardTable">
+      <tbody>
+        <tr>
+          <th>{{ card.name }}</th>
+        </tr>
+        <tr>
+          <td><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
+        </tr>
+        <tr>
+          <th class="sub">Rarity</th>
+        </tr>
+        <tr>
+          <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <div>
+  <div class="rightBlock">
     <table class="statTable">
       <tbody>
         <tr>
           <th colspan="10">Stats</th>
         </tr>
         <tr>
-          <th></th>
-          <th *ngFor="let stat of card.statsType">{{ stat }}</th>
+          <th class="sub"></th>
+          <th class="sub" *ngFor="let stat of card.statsType">{{ stat }}</th>
         </tr>
         <tr>
           <td>Min</td>
@@ -32,8 +36,13 @@
           <td>Max</td>
           <td *ngFor="let stat of card.statsType">{{ card.stats[stat].max }}</td>
         </tr>
+      </tbody>
+    </table>
+
+    <table class="effectsTable">
+      <tbody>
         <tr>
-          <th colspan="10">Unit Effects</th>
+          <th class="sub" colspan="10">Unit Effects</th>
         </tr>
         <tr *ngIf="card.unitBuffsClassic">
           <td>Classic</td>
@@ -59,8 +68,13 @@
             </div>
           </td>
         </tr>
+      </tbody>
+    </table>
+
+    <table class="effectsTable">
+      <tbody>
         <tr>
-          <th colspan="10">Party Effects</th>
+          <th class="sub" colspan="10">Party Effects</th>
         </tr>
         <tr *ngIf="card.partyBuffsClassic">
           <td>Classic</td>

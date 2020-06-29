@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';

@@ -1,153 +1,170 @@
-<div class="row">
-  <table class="esperTable">
-    <tbody>
-      <tr>
-        <th colspan="2">{{ esper.name }}</th>
-      </tr>
-      <tr>
-        <td colspan="2"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Rarity</td>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" /></td>
-      </tr>
-      <tr>
-        <td>Element</td>
-        <td><img class="rarityImg" src="{{'assets/elements/' + esper.element + '.png'}}" /></td>
-      </tr>
-    </tbody>
-  </table>
+<ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill" [(activeId)]="activeTab">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink>ESPER</a>
+    <ng-template ngbNavContent #esperView>
+      <div class="leftBlock">
+        <table class="esperTable">
+          <tbody>
+            <tr>
+              <th colspan="2">{{ esper.name }}</th>
+            </tr>
+            <tr>
+              <td colspan="2"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.png'}}" /></td>
+            </tr>
+            <tr>
+              <th class="sub">Rarity</th>
+              <th class="sub">Element</th>
+            </tr>
+            <tr>
+              <td><img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" /></td>
+              <td><img class="rarityImg" src="{{'assets/elements/' + esper.element + '.png'}}" (click)="clickSpecialBismark()"/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="rightBlock">
+        <table class="statsTable">
+          <tbody>
+            <tr>
+              <th colspan="10">Stats</th>
+            </tr>
+            <tr>
+              <th class="sub"></th>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">MAG</th>
+              <th class="sub">DEX</th>
+              <th class="sub">AGI</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">SP</th>
+            </tr>
+            <tr>
+              <td>Min</td>
+              <td>{{ esper.stats.HP[0].min }}</td>
+              <td>{{ esper.stats.TP[0].min }}</td>
+              <td>{{ esper.stats.AP[0].min }}</td>
+              <td>{{ esper.stats.ATK[0].min }}</td>
+              <td>{{ esper.stats.MAG[0].min }}</td>
+              <td>{{ esper.stats.DEX[0].min }}</td>
+              <td>{{ esper.stats.AGI[0].min }}</td>
+              <td>{{ esper.stats.LUCK[0].min }}</td>
+              <td rowspan="2">{{ esper.maxSP }}</td>
+            </tr>
+            <tr>
+              <td>Max</td>
+              <td>{{ esper.stats.HP[1].max }}</td>
+              <td>{{ esper.stats.TP[1].max }}</td>
+              <td>{{ esper.stats.AP[1].max }}</td>
+              <td>{{ esper.stats.ATK[1].max }}</td>
+              <td>{{ esper.stats.MAG[1].max }}</td>
+              <td>{{ esper.stats.DEX[1].max }}</td>
+              <td>{{ esper.stats.AGI[1].max }}</td>
+              <td>{{ esper.stats.LUCK[1].max }}</td>
+            </tr>
+          </tbody>
+        </table>
 
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="10">Stats</th>
-      </tr>
-      <tr>
-        <th></th>
-        <th>HP</th>
-        <th>TP</th>
-        <th>AP</th>
-        <th>ATK</th>
-        <th>MAG</th>
-        <th>DEX</th>
-        <th>AGI</th>
-        <th>LUCK</th>
-        <th>SP</th>
-      </tr>
-      <tr>
-        <td>Min</td>
-        <td>{{ esper.stats.HP[0].min }}</td>
-        <td>{{ esper.stats.TP[0].min }}</td>
-        <td>{{ esper.stats.AP[0].min }}</td>
-        <td>{{ esper.stats.ATK[0].min }}</td>
-        <td>{{ esper.stats.MAG[0].min }}</td>
-        <td>{{ esper.stats.DEX[0].min }}</td>
-        <td>{{ esper.stats.AGI[0].min }}</td>
-        <td>{{ esper.stats.LUCK[0].min }}</td>
-        <td rowspan="2">{{ esper.maxSP }}</td>
-      </tr>
-      <tr>
-        <td>Max</td>
-        <td>{{ esper.stats.HP[1].max }}</td>
-        <td>{{ esper.stats.TP[1].max }}</td>
-        <td>{{ esper.stats.AP[1].max }}</td>
-        <td>{{ esper.stats.ATK[1].max }}</td>
-        <td>{{ esper.stats.MAG[1].max }}</td>
-        <td>{{ esper.stats.DEX[1].max }}</td>
-        <td>{{ esper.stats.AGI[1].max }}</td>
-        <td>{{ esper.stats.LUCK[1].max }}</td>
-      </tr>
-      <tr class="emptyLine"></tr>
-      <tr>
-        <th colspan="10">Res Elem</th>
-      </tr>
-      <tr>
-        <td rowspan="2"></td>
-        <td><img class="elementImg" src="{{'assets/elements/fire.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/ice.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/earth.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/wind.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/lightning.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/water.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/light.png'}}" /></td>
-        <td><img class="elementImg" src="{{'assets/elements/dark.png'}}" /></td>
-        <td rowspan="2"></td>
-      </tr>
-      <tr>
-        <td><span *ngIf="esper.stats.FIRE_RES[0].min">{{ esper.stats.FIRE_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.ICE_RES[0].min">{{ esper.stats.ICE_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.EARTH_RES[0].min">{{ esper.stats.EARTH_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.WIND_RES[0].min">{{ esper.stats.WIND_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.LIGHTNING_RES[0].min">{{ esper.stats.LIGHTNING_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.WATER_RES[0].min">{{ esper.stats.WATER_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.LIGHT_RES[0].min">{{ esper.stats.LIGHT_RES[0].min }} %</span></td>
-        <td><span *ngIf="esper.stats.DARK_RES[0].min">{{ esper.stats.DARK_RES[0].min }} %</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+        <table class="resTable">
+          <tbody>
+            <tr>
+              <th colspan="10">Res Elem</th>
+            </tr>
+            <tr>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/fire.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/ice.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/earth.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/wind.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/lightning.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/water.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/light.png'}}" /></th>
+              <th class="sub"><img class="elementImg" src="{{'assets/elements/dark.png'}}" /></th>
+            </tr>
+            <tr>
+              <td><span *ngIf="esper.stats.FIRE_RES[0].min">{{ esper.stats.FIRE_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.ICE_RES[0].min">{{ esper.stats.ICE_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.EARTH_RES[0].min">{{ esper.stats.EARTH_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.WIND_RES[0].min">{{ esper.stats.WIND_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.LIGHTNING_RES[0].min">{{ esper.stats.LIGHTNING_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.WATER_RES[0].min">{{ esper.stats.WATER_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.LIGHT_RES[0].min">{{ esper.stats.LIGHT_RES[0].min }} %</span></td>
+              <td><span *ngIf="esper.stats.DARK_RES[0].min">{{ esper.stats.DARK_RES[0].min }} %</span></td>
+            </tr>
+          </tbody>
+        </table>
 
+        <table class="skillsTable">
+          <tbody>
+            <tr>
+              <th colspan="5">Cast Skill</th>
+            </tr>
+            <tr>
+              <th class="sub skillTypeTd">Type</th>
+              <th class="sub skillNameTd">name</th>
+              <th class="sub">Effects</th>
+              <th class="sub rangeTd">Range</th>
+              <th class="sub skillHitTd">Hits</th>
+            </tr>
+            <tr>
+              <td>
+                <img class="skilImg" src="{{'assets/skill-type/' + esper.skills[0].type + '.png'}}" />
+              </td>
+              <td *ngIf="esper.skills[0].type == 'esper'">
+                {{ esper.skills[0].name }}
+              </td>
+              <td class="skillEffectTd">
+                <div>{{ esper.skills[0].counterHtml }}</div>
+                <div [innerHTML]="esper.skills[0].damageHtml"></div>
+                <div *ngFor="let effect of esper.skills[0].effects">
+                  {{ effect.formatHtml }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="esper.skills[0].skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="esper.skills[0].skillTableHtml"></div>
+                </div>
+              </td>
+              <td>
+                <span *ngIf="esper.skills[0].combo">{{ esper.skills[0].combo.num }}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink>SKILL TREE</a>
+    <ng-template ngbNavContent #tree>
+      <div class="row" *ngIf="grid">
+        <div class="esperGridContainer" style="text-align: center;">
+          <ul class="hexGrid">
+            <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
+              <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
 
-<div class="row">
-  <table class="skillsTable">
-    <tbody>
-      <tr>
-        <th colspan="5">Cast Skill</th>
-      </tr>
-      <tr>
-        <th class="skillTypeTd">Type</th>
-        <th class="skillNameTd">name</th>
-        <th>Effects</th>
-        <th class="rangeTd">Range</th>
-        <th class="skillHitTd">Hits</th>
-      </tr>
-      <tr>
-        <td>
-          <img class="skilImg" src="{{'assets/skill-type/' + esper.skills[0].type + '.png'}}" />
-        </td>
-        <td *ngIf="esper.skills[0].type == 'esper'">
-          {{ esper.skills[0].name }}
-        </td>
-        <td class="skillEffectTd">
-          <div>{{ esper.skills[0].counterHtml }}</div>
-          <div [innerHTML]="esper.skills[0].damageHtml"></div>
-          <div *ngFor="let effect of esper.skills[0].effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="esper.skills[0].skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="esper.skills[0].skillTableHtml"></div>
-          </div>
-        </td>
-        <td>
-          <span *ngIf="esper.skills[0].combo">{{ esper.skills[0].combo.num }}</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+              <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+                <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
+              </div>
 
-<div class="row" *ngIf="grid">
-  <div class="esperGridContainer" style="text-align: center;">
-    <ul class="hexGrid">
-      <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
-        <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+              <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
+                <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+                <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
+              </div>
+            </li>
+          </ul>
 
-        <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
-          <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
+          <div [innerHTML]="grid.lines"></div>
         </div>
+      </div>
+    </ng-template>
+  </li>
+</ul>
 
-        <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
-          <span class="text">{{ grid.nodesForGrid[node].value }}</span>
-          <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
-        </div>
-      </li>
-    </ul>
+<div [ngbNavOutlet]="nav"></div>
 
-    <div [innerHTML]="grid.lines"></div>
-  </div>
+<div *ngIf="specialBismark && activeTab == 1" class="tab-content">
+  <div *ngIf="activeTab == 2 else tree"></div>
 </div>

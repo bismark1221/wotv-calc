@@ -16,6 +16,8 @@ import { NameService } from '../services/name.service';
 export class EsperComponent implements OnInit {
   esper = null;
   grid = null;
+  specialBismark = false;
+  activeTab;
 
   constructor(
     private esperService: EsperService,
@@ -100,5 +102,9 @@ export class EsperComponent implements OnInit {
         this.hideNode(childNode)
       })
     }
+  }
+
+  clickSpecialBismark() {
+    this.specialBismark = !this.specialBismark
   }
 }

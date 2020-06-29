@@ -73,10 +73,16 @@ table, tbody, tr, th, td {
 
 th {
   color: var(--white);
-  background-color: grey;
+  background-color: var(--th-background);
   text-align: center;
   border: 1px solid var(--table-border);
   padding: 0.3em 0.5em;
+}
+
+th.sub {
+  background-color: var(--sub-th-background);
+  color: var(--black);
+  font-weight: normal;
 }
 
 td {

@@ -1,3 +1,51 @@
+.tab-content {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background-color: #F4F5F9;
+  height: 55px;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  height: 100%;
+  padding-top: 15px;
+  color: var(--th-background);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  font-weight: bold;
+  border-bottom: 4px solid var(--th-background);
+  background-color: #F4F5F9;
+}
+
+.leftBlock {
+  width: 350px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.esperImg {
+  height: 250px;
+  margin-top: 10px;
+}
+
 .elementImg, .skilImg, .damageSkillImg, .rarityImg {
   height: 32px;
 }
@@ -9,16 +57,16 @@
 }
 
 .esperTable {
-  width: 350px;
+  width: 100%;
   margin-right: 20px;
 }
 
-.statsTable {
-  width: 829px;
+.statsTable, .skillsTable, .resTable {
+  width: 100%;
 }
 
-.skillsTable {
-  width: 1200px;
+.skillsTable, .resTable {
+  margin-top: 10px;
 }
 
 .rangeTd {
@@ -26,7 +74,7 @@
 }
 
 .skillTypeTd {
-  width: 85px;
+  width: 60px;
 }
 
 .skillHitTd {
@@ -34,14 +82,9 @@
 }
 
 .skillNameTd {
-  width: 200px;
+  width: 140px;
 }
 
 .skillEffectTd {
   text-align: left;
-}
-
-.esperImg {
-  height: 250px;
-  margin-top: 10px;
 }

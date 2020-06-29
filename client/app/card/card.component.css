@@ -1,27 +1,36 @@
-.elementImg, .damageImg, .statusAilmentImg, .skilImg {
-  height: 32px;
+.row {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.leftBlock {
+  width: 350px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.statTable, .effectsTable, .cardTable {
+  width: 100%;
 }
 
 .rarityImg {
   height: 32px;
 }
 
-.row {
-  width: 1200px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.cardTable {
-  width: 350px;
-  margin-right: 20px;
-}
-
-.statTable {
-  width: 829px;
-}
-
 .cardImg {
   height: 250px;
+  margin-top: 10px;
+}
+
+.effectsTable {
   margin-top: 10px;
 }
