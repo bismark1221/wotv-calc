@@ -1,6 +1,6 @@
 <ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill" [(activeId)]="activeTab">
   <li [ngbNavItem]="1">
-    <a ngbNavLink>Boss</a>
+    <a ngbNavLink>BOSS</a>
     <ng-template ngbNavContent #bossView>
       <div *ngFor="let boss of raid.bosses; let j = index">
         <div class="leftBlock">
@@ -174,7 +174,7 @@
   </li>
 
   <li [ngbNavItem]="2">
-    <a ngbNavLink>STATS</a>
+    <a ngbNavLink>SKILLS</a>
     <ng-template ngbNavContent #skills>
       <div *ngFor="let boss of raid.bosses; let j = index">
         <table class="skillsTable">
