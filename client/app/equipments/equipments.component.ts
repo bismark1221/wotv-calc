@@ -19,8 +19,8 @@ export class EquipmentsComponent implements OnInit {
     rarity: [],
     type: []
   }
-  isCollapsedRarity = true;
-  isCollapsedType = true;
+  isCollapsedRarity = false;
+  isCollapsedType = false;
 
   constructor(
     private equipmentService: EquipmentService,

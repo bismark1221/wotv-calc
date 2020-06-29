@@ -994,6 +994,29 @@ export class JsonService {
 
     this.getNames(this[this.version].wotvJobs[dataId], 'job');
 
+    if (this.version == "gl") {
+      if (this.names.en['job'][dataId] || this.names.en['job'][dataId + "_FIRE"]) {
+        this[this.version].wotvJobs[dataId].names.en = this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + "_FIRE"]
+        this[this.version].wotvJobs[dataId].names.fr = this.names.fr['job'][dataId] ? this.names.fr['job'][dataId] : this.names.fr['job'][dataId + "_FIRE"]
+        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this[this.version].wotvJobs[dataId].names.en)
+      } else {
+        this[this.version].wotvJobs[dataId].names.en = dataId;
+        this[this.version].wotvJobs[dataId].names.fr = dataId;
+        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this[this.version].wotvJobs[dataId].names.en)
+      }
+    } else {
+      if (this.names.en['job'][dataId] || this.names.en['job'][dataId + "_FIRE"]) {
+        this[this.version].wotvJobs[dataId].names.en = this.names.jp['job'][dataId] ? this.names.jp['job'][dataId] : this.names.jp['job'][dataId + "_FIRE"] + " - " + this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + "_FIRE"]
+        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this.names.en['job'][dataId])
+      } else if (this.names.jp['job'][dataId] || this.names.jp['job'][dataId + "_FIRE"]) {
+        this[this.version].wotvJobs[dataId].names.en = this.names.jp['job'][dataId] ? this.names.jp['job'][dataId] : this.names.jp['job'][dataId + "_FIRE"]
+        this[this.version].wotvJobs[dataId].slug = slugify(this[this.version].wotvJobs[dataId].names.en)
+      } else {
+        this[this.version].wotvJobs[dataId].names.en = dataId;
+        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this[this.version].wotvJobs[dataId].names.en)
+      }
+    }
+
     job.equips.forEach(equip => {
       if (this.equipmentService.isWeapon(this.jobEquip[equip])) {
         this[this.version].wotvJobs[dataId].equipments.weapons.push(this.jobEquip[equip])

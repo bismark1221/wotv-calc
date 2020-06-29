@@ -18,7 +18,7 @@ export class CardsComponent implements OnInit {
   filters = {
     rarity: []
   }
-  isCollapsedRarity = true;
+  isCollapsedRarity = false;
 
   constructor(
     private cardService: CardService,

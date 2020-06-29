@@ -18,7 +18,7 @@ export class RaidsComponent implements OnInit {
   filters = {
     element: []
   }
-  isCollapsedElement = true;
+  isCollapsedElement = false;
 
   constructor(
     private raidService: RaidService,

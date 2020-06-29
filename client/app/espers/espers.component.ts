@@ -19,8 +19,8 @@ export class EspersComponent implements OnInit {
     rarity: [],
     element: []
   }
-  isCollapsedRarity = true;
-  isCollapsedElement = true;
+  isCollapsedRarity = false;
+  isCollapsedElement = false;
 
   constructor(
     private esperService: EsperService,
