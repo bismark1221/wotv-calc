@@ -306,13 +306,13 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <textarea rows="10" class="textLink">{{ getExportableLink() }}</textarea>
+    <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
     <button (click)="copyLink()">Copy</button>
   </ng-template>
 
   <div *ngIf="unit">
     <button (click)="save()">SAVE</button>
-    <button (click)="openModal(builderLink)">Get Build Link</button>
+    <button (click)="openLinkModal(builderLink)">Get Build Link</button>
   </div>
 </div>
 
