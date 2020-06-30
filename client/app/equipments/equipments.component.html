@@ -1,8 +1,8 @@
 <div class="equipments">
   <div class="leftBlock">
-    <h1>FILTERS</h1>
+    <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
+      <div class="boldText" (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
         Rarity
         <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
         <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
@@ -17,29 +17,31 @@
 
       <hr />
 
-      <div (click)="isCollapsedType = !isCollapsedType" [attr.aria-expanded]="!isCollapsedType">
+      <div class="boldText" (click)="isCollapsedType = !isCollapsedType" [attr.aria-expanded]="!isCollapsedType">
         Types
         <i class="fa fa-chevron-up" *ngIf="!isCollapsedType" aria-hidden="true"></i>
         <i class="fa fa-chevron-down" *ngIf="isCollapsedType" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedType">
-        <div><input type="checkbox" (change)="filterList('type', 'DAGGER', $event.target.checked)"/>Dagger</div>
-        <div><input type="checkbox" (change)="filterList('type', 'SWORD', $event.target.checked)"/>Sword</div>
-        <div><input type="checkbox" (change)="filterList('type', 'GREATSWORD', $event.target.checked)"/>Great Sword</div>
-        <div><input type="checkbox" (change)="filterList('type', 'KATANA', $event.target.checked)"/>Katana</div>
-        <div><input type="checkbox" (change)="filterList('type', 'ROD', $event.target.checked)"/>Rod</div>
-        <div><input type="checkbox" (change)="filterList('type', 'NINJABLADE', $event.target.checked)"/>Ninja Blade</div>
-        <div><input type="checkbox" (change)="filterList('type', 'BOW', $event.target.checked)"/>Bow</div>
         <div><input type="checkbox" (change)="filterList('type', 'AXE', $event.target.checked)"/>Axe</div>
-        <div><input type="checkbox" (change)="filterList('type', 'SPEAR', $event.target.checked)"/>Spear</div>
-        <div><input type="checkbox" (change)="filterList('type', 'GUN', $event.target.checked)"/>Gun</div>
-        <div><input type="checkbox" (change)="filterList('type', 'MACE', $event.target.checked)"/>Mace</div>
+        <div><input type="checkbox" (change)="filterList('type', 'BOW', $event.target.checked)"/>Bow</div>
+        <div><input type="checkbox" (change)="filterList('type', 'DAGGER', $event.target.checked)"/>Dagger</div>
         <div><input type="checkbox" (change)="filterList('type', 'FIST', $event.target.checked)"/>Fist</div>
-        <div><input type="checkbox" (change)="filterList('type', 'SHIELD', $event.target.checked)"/>Shield</div>
+        <div><input type="checkbox" (change)="filterList('type', 'GREATSWORD', $event.target.checked)"/>Great Sword</div>
+        <div><input type="checkbox" (change)="filterList('type', 'GUN', $event.target.checked)"/>Gun</div>
+        <div><input type="checkbox" (change)="filterList('type', 'KATANA', $event.target.checked)"/>Katana</div>
+        <div><input type="checkbox" (change)="filterList('type', 'MACE', $event.target.checked)"/>Mace</div>
+        <div><input type="checkbox" (change)="filterList('type', 'NINJABLADE', $event.target.checked)"/>Ninja Blade</div>
+        <div><input type="checkbox" (change)="filterList('type', 'ROD', $event.target.checked)"/>Rod</div>
+        <div><input type="checkbox" (change)="filterList('type', 'SPEAR', $event.target.checked)"/>Spear</div>
+        <div><input type="checkbox" (change)="filterList('type', 'SWORD', $event.target.checked)"/>Sword</div>
+
         <div><input type="checkbox" (change)="filterList('type', 'ARMOR', $event.target.checked)"/>Armor</div>
+        <div><input type="checkbox" (change)="filterList('type', 'CLOTH', $event.target.checked)"/>Cloth</div>
         <div><input type="checkbox" (change)="filterList('type', 'HAT', $event.target.checked)"/>Hat</div>
         <div><input type="checkbox" (change)="filterList('type', 'HELM', $event.target.checked)"/>Helm</div>
-        <div><input type="checkbox" (change)="filterList('type', 'CLOTH', $event.target.checked)"/>Cloth</div>
+        <div><input type="checkbox" (change)="filterList('type', 'SHIELD', $event.target.checked)"/>Shield</div>
+
         <div><input type="checkbox" (change)="filterList('type', 'ACC', $event.target.checked)"/>Accessory</div>
       </div>
     </div>

@@ -101,6 +101,10 @@ hr {
   border-color: var(--hr-color);
 }
 
+.boldText {
+  font-weight: bold;
+}
+
 .container-fluid {
   padding: 0;
 }

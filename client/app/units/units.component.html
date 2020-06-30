@@ -1,8 +1,8 @@
 <div class="units">
   <div class="leftBlock">
-    <h1>FILTERS</h1>
+    <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
+      <div class="boldText"(click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
         Rarity
         <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
         <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
@@ -17,7 +17,7 @@
 
       <hr />
 
-      <div (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
+      <div class="boldText"(click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
         Elements
         <i class="fa fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
         <i class="fa fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
@@ -35,7 +35,7 @@
 
       <hr />
 
-      <div (click)="isCollapsedJob = !isCollapsedJob" [attr.aria-expanded]="!isCollapsedJob">
+      <div class="boldText"(click)="isCollapsedJob = !isCollapsedJob" [attr.aria-expanded]="!isCollapsedJob">
         Jobs
         <i class="fa fa-chevron-up" *ngIf="!isCollapsedJob" aria-hidden="true"></i>
         <i class="fa fa-chevron-down" *ngIf="isCollapsedJob" aria-hidden="true"></i>
