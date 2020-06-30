@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { HttpClient } from '@angular/common/http';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -126,7 +127,8 @@ export class UnitService {
     private nameService: NameService,
     private equipmentService: EquipmentService,
     private cardService: CardService,
-    private esperService: EsperService
+    private esperService: EsperService,
+    private http: HttpClient
   ) {}
 
   private i(s: any) {
@@ -440,13 +442,12 @@ export class UnitService {
     }
 
     this.initiateSavedUnit(customData)
+    this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
     this.updateMaxLevel();
     this.updateMaxJobLevel();
     this.changeLevel();
     this.getActiveSkills();
-
-    this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
     return this.unit
   }
@@ -461,7 +462,7 @@ export class UnitService {
     if (unit) {
       this.unit.star = unit.star;
       this.unit.lb = unit.lb;
-      this.unit.level = unit.level;
+      this.unit.level = parseInt(unit.level);
 
       this.unit.jobs.forEach((jobId, jobIndex) => {
         this.unit.jobsData[jobIndex].level = unit.jobs[jobIndex]
@@ -1250,5 +1251,12 @@ export class UnitService {
     this.skillService.formatRange(this.unit, skill);
 
     return skill
+  }
+
+  getExportableLink() {
+    let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + btoa(JSON.stringify(this.getSavableData(this.unit)))
+    let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
+
+    return this.http.get(shortenUrl);
   }
 }

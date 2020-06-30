@@ -2505,6 +2505,54 @@
             "value": "防御アップLv1"
         },
         {
+            "key": "SK_LW_MST_M_1_SUB",
+            "value": "エナジーバスター"
+        },
+        {
+            "key": "SK_LW_MST_M_2_SUB",
+            "value": "魔杖防盾"
+        },
+        {
+            "key": "SK_LW_MST_M_3_SUB",
+            "value": "フェイスライジング"
+        },
+        {
+            "key": "SK_LW_MST_FIRE_S_1",
+            "value": "火杖術"
+        },
+        {
+            "key": "SK_LW_MST_ICE_S_1",
+            "value": "氷杖術"
+        },
+        {
+            "key": "SK_LW_MST_WIND_S_1",
+            "value": "風杖術"
+        },
+        {
+            "key": "SK_LW_MST_THUN_S_1",
+            "value": "雷杖術"
+        },
+        {
+            "key": "SK_LW_MST_WATR_S_1",
+            "value": "水杖術"
+        },
+        {
+            "key": "SK_LW_MST_SOIL_S_1",
+            "value": "土杖術"
+        },
+        {
+            "key": "SK_LW_MST_SHIN_S_1",
+            "value": "光杖術"
+        },
+        {
+            "key": "SK_LW_MST_DARK_S_1",
+            "value": "闇杖術"
+        },
+        {
+            "key": "SK_LW_MST_S_2",
+            "value": "魔杖術・ウィング"
+        },
+        {
             "key": "SK_FFT_AGRA_ATK",
             "value": "通常攻撃"
         },
@@ -2661,12 +2709,68 @@
             "value": "ハイト2ホーリー"
         },
         {
+            "key": "SK_LW_CAL_FIRE_M_2",
+            "value": "レベル4ファイガ"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_M_2_B",
+            "value": "レベル3ファイガ"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2",
+            "value": "レベル4ブリザガ"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2_B",
+            "value": "レベル3ブリザガ"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2",
+            "value": "レベル4エアロガ"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2_B",
+            "value": "レベル3エアロガ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2",
+            "value": "レベル4ストンガ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2_B",
+            "value": "レベル3ストンガ"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2",
+            "value": "レベル4サンダガ"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2_B",
+            "value": "レベル3サンダガ"
+        },
+        {
             "key": "SK_LW_CAL_WATER_M_2",
             "value": "レベル4ウォタガ"
         },
         {
             "key": "SK_LW_CAL_WATER_M_2_B",
             "value": "レベル3ウォタガ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2",
+            "value": "レベル4バニシュガ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2_B",
+            "value": "レベル3バニシュガ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2",
+            "value": "レベル4ダーガ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2_B",
+            "value": "レベル3ダーガ"
         },
         {
             "key": "SK_LW_CAL_M_3",
@@ -2677,8 +2781,36 @@
             "value": "ハイト2ケアルラ"
         },
         {
+            "key": "SK_LW_CAL_FIRE_S_1_INIT",
+            "value": "ハイト高ファイア"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_1_INIT",
+            "value": "ハイト高ブリザド"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_1_INIT",
+            "value": "ハイト高エアロ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_1_INIT",
+            "value": "ハイト高ストーン"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_1_INIT",
+            "value": "ハイト高サンダー"
+        },
+        {
             "key": "SK_LW_CAL_WATER_S_1_INIT",
             "value": "ハイト高ウォータ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_1_INIT",
+            "value": "ハイト高バニシュ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_1_INIT",
+            "value": "ハイト高ダーク"
         },
         {
             "key": "SK_LW_CAL_S_2_INIT",
@@ -2693,12 +2825,68 @@
             "value": "ハイト2ドンアク"
         },
         {
+            "key": "SK_LW_CAL_FIRE_S_4",
+            "value": "レベル4ファイラ"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_S_4_B",
+            "value": "レベル3ファイラ"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_4",
+            "value": "レベル4ブリザラ"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_4_B",
+            "value": "レベル3ブリザラ"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_4",
+            "value": "レベル4エアロラ"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_4_B",
+            "value": "レベル3エアロラ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_4",
+            "value": "レベル4ストンラ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_4_B",
+            "value": "レベル3ストンラ"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_4",
+            "value": "レベル4サンダラ"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_4_B",
+            "value": "レベル3サンダラ"
+        },
+        {
             "key": "SK_LW_CAL_WATER_S_4",
             "value": "レベル4ウォタラ"
         },
         {
             "key": "SK_LW_CAL_WATER_S_4_B",
             "value": "レベル3ウォタラ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_4",
+            "value": "レベル4バニシュラ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_4_B",
+            "value": "レベル3バニシュラ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_4",
+            "value": "レベル4ダーラ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_4_B",
+            "value": "レベル3ダーラ"
         },
         {
             "key": "SK_LW_CAL_S_5",
@@ -2715,6 +2903,122 @@
         {
             "key": "SK_LW_CAL_P_2",
             "value": "レベル4をレベル3に"
+        },
+        {
+            "key": "SK_LW_CAL_M_1_SUB",
+            "value": "ハイト3ホーリー"
+        },
+        {
+            "key": "SK_LW_CAL_M_1_B_SUB",
+            "value": "ハイト2ホーリー"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_M_2_SUB",
+            "value": "レベル4ファイガ"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_M_2_B_SUB",
+            "value": "レベル3ファイガ"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2_SUB",
+            "value": "レベル4ブリザガ"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2_B_SUB",
+            "value": "レベル3ブリザガ"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2_SUB",
+            "value": "レベル4エアロガ"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2_B_SUB",
+            "value": "レベル3エアロガ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2_SUB",
+            "value": "レベル4ストンガ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2_B_SUB",
+            "value": "レベル3ストンガ"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2_SUB",
+            "value": "レベル4サンダガ"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2_B_SUB",
+            "value": "レベル3サンダガ"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2_SUB",
+            "value": "レベル4ウォタガ"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2_B_SUB",
+            "value": "レベル3ウォタガ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2_SUB",
+            "value": "レベル4バニシュガ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2_B_SUB",
+            "value": "レベル3バニシュガ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2_SUB",
+            "value": "レベル4ダーガ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2_B_SUB",
+            "value": "レベル3ダーガ"
+        },
+        {
+            "key": "SK_LW_CAL_M_3_SUB",
+            "value": "ハイト3ケアルラ"
+        },
+        {
+            "key": "SK_LW_CAL_M_3_B_SUB",
+            "value": "ハイト2ケアルラ"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_S_1",
+            "value": "ハイト高ファイア"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_1",
+            "value": "ハイト高ブリザド"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_1",
+            "value": "ハイト高エアロ"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_1",
+            "value": "ハイト高ストーン"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_1",
+            "value": "ハイト高サンダー"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_1",
+            "value": "ハイト高ウォータ"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_1",
+            "value": "ハイト高バニシュ"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_1",
+            "value": "ハイト高ダーク"
+        },
+        {
+            "key": "SK_LW_CAL_S_2",
+            "value": "ハイト高ケアル"
         },
         {
             "key": "SK_LW_STRN_ATK",
@@ -3269,6 +3573,14 @@
             "value": "かめのこうら"
         },
         {
+            "key": "SK_GLSP_M_02_TOW",
+            "value": "押しつぶす"
+        },
+        {
+            "key": "SK_GLSP_R_01_TOW",
+            "value": "かめのこうら"
+        },
+        {
             "key": "SK_ELEM_ATK",
             "value": "通常攻撃"
         },
@@ -3793,6 +4105,22 @@
             "value": "大地の怒り"
         },
         {
+            "key": "SK_BLMN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_BLMN_M_01",
+            "value": "メテオムーン"
+        },
+        {
+            "key": "SK_BLMN_M_02",
+            "value": "死月の嘲笑"
+        },
+        {
+            "key": "SK_BLMN_M_03",
+            "value": "紅月の大落下"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "通常攻撃"
         },
@@ -3847,6 +4175,10 @@
         {
             "key": "SK_GMK_ATK_KATA_2",
             "value": "さみだれ石"
+        },
+        {
+            "key": "SK_GMK_ATK_KENZAN",
+            "value": "ダメージゾーン"
         },
         {
             "key": "SK_LB_LW_MONT",
@@ -4049,6 +4381,10 @@
             "value": "雲外蒼天"
         },
         {
+            "key": "SK_LB_LW_SCAL",
+            "value": "天迅召雷"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "地獄の火炎"
         },
@@ -4147,6 +4483,10 @@
         {
             "key": "SK_SMN_MDFY",
             "value": "マインドブラスト"
+        },
+        {
+            "key": "SK_SMN_BLMN",
+            "value": "死月の嘲笑"
         },
         {
             "key": "SK_US_POTION",
@@ -4570,6 +4910,14 @@
         },
         {
             "key": "SK_MA_LW_LSWL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_SCAL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_MRAL",
             "value": "マスターアビリティ"
         },
         {
@@ -5275,6 +5623,10 @@
         {
             "key": "SK_CLT_LW_LSWL_1_1",
             "value": "静かなる闘志"
+        },
+        {
+            "key": "SK_ACC_LW_SCAL_1_1",
+            "value": "魔脈励起"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",
@@ -6057,6 +6409,10 @@
             "value": "状態異常【毒】確率1-100アップ"
         },
         {
+            "key": "SK_BTL_SILENCE_1-100_U",
+            "value": "状態異常【沈黙】確率1-100アップ"
+        },
+        {
             "key": "SK_BTL_TOAD_1-100_U",
             "value": "状態異常【トード】確率1-100アップ"
         },
@@ -6065,8 +6421,20 @@
             "value": "状態異常【石化】確率1-100アップ"
         },
         {
+            "key": "SK_BTL_DONMV_1-100_U",
+            "value": "状態異常【ドンムブ】確率1-100アップ"
+        },
+        {
             "key": "SK_BTL_DONMV_1-100_D",
             "value": "状態異常【ドンムブ】確率1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_STUN_1-100_U",
+            "value": "状態異常【スタン】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_STUN_1-100_D",
+            "value": "状態異常【スタン】確率1-100ダウン"
         },
         {
             "key": "SK_BTL_DEFPIERCE_1-100_U",

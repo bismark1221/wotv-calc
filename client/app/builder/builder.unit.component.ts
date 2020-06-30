@@ -117,6 +117,8 @@ export class BuilderUnitComponent implements OnInit {
     "strike_res",
   ]
 
+  exportableLink = ""
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
@@ -263,11 +265,6 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.unit = null
     }
-  }
-
-  getExportableLink() {
-    let link = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + btoa(JSON.stringify(this.unitService.getSavableData(this.unit)))
-    return link
   }
 
   selectEsper(customData = null) {
@@ -446,7 +443,11 @@ export class BuilderUnitComponent implements OnInit {
     });
   }
 
-  openModal(content) {
+  openLinkModal(content) {
+    this.unitService.getExportableLink().subscribe((data: any) => {
+      this.exportableLink = data.shorturl;
+    })
+
     const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
     modalRef.result.then((result) => {}, (reason) => {})
   }
@@ -456,7 +457,7 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   copyLink() {
-    this.clipboardService.copyFromContent(this.getExportableLink())
+    this.clipboardService.copyFromContent(this.exportableLink)
   }
 
   changeSubJob() {
