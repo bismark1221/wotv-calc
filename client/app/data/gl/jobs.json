@@ -35949,5 +35949,1875 @@
       ]
     },
     "slug": "sword-saint"
+  },
+  "JB_LW_RAIN": {
+    "dataId": "JB_LW_RAIN",
+    "names": {
+      "en": "Knight of Grandshelt",
+      "fr": "Chevalier de Grandshelt"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 589,
+        "AP": 589,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 589,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 933,
+        "AP": 933,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 933,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 1177,
+        "AP": 1177,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1177,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 1367,
+        "AP": 1367,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 1367,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 1522,
+        "AP": 1522,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 1522,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1653,
+        "AP": 1653,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 1653,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1766,
+        "AP": 1766,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 1766,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1866,
+        "AP": 1866,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 1866,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1956,
+        "AP": 1956,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 1956,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 2037,
+        "AP": 2037,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 2037,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 2110,
+        "AP": 2110,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 2110,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 2178,
+        "AP": 2178,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 2178,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 2241,
+        "AP": 2241,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 2241,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 2300,
+        "AP": 2300,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 2300,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "lapsrain",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "GREATSWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "knight-of-grandshelt"
+  },
+  "JB_LW_ASS": {
+    "dataId": "JB_LW_ASS",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_FIRE": {
+    "dataId": "JB_LW_ASS_FIRE",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_ICE": {
+    "dataId": "JB_LW_ASS_ICE",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_WIND": {
+    "dataId": "JB_LW_ASS_WIND",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_SOIL": {
+    "dataId": "JB_LW_ASS_SOIL",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_THUN": {
+    "dataId": "JB_LW_ASS_THUN",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_WATER": {
+    "dataId": "JB_LW_ASS_WATER",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_SHINE": {
+    "dataId": "JB_LW_ASS_SHINE",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
+  },
+  "JB_LW_ASS_DARK": {
+    "dataId": "JB_LW_ASS_DARK",
+    "names": {
+      "en": "Assassin",
+      "fr": "Assassin"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 1075,
+        "LUCK": 1075,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1704,
+        "LUCK": 1704,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 2150,
+        "LUCK": 2150,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2496,
+        "LUCK": 2496,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2779,
+        "LUCK": 2779,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 3018,
+        "LUCK": 3018,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 3225,
+        "LUCK": 3225,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 3408,
+        "LUCK": 3408,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 3571,
+        "LUCK": 3571,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3719,
+        "LUCK": 3719,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3854,
+        "LUCK": 3854,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3978,
+        "LUCK": 3978,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 4093,
+        "LUCK": 4093,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 4200,
+        "LUCK": 4200,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ass",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "assassin"
   }
 }

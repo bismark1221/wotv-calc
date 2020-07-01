@@ -54,7 +54,7 @@
         },
         {
             "key": "SK_LW_WAR_P_1",
-            "value": "Aug. ATT Niv. 1"
+            "value": "ATT ↑ Niv. 1"
         },
         {
             "key": "SK_LW_WAR_P_1_MONT",
@@ -98,7 +98,7 @@
         },
         {
             "key": "SK_LW_KNT_S_1_INIT",
-            "value": "Guérison divine"
+            "value": "Longévité divine"
         },
         {
             "key": "SK_LW_KNT_M_1_INIT",
@@ -126,7 +126,7 @@
         },
         {
             "key": "SK_LW_KNT_P_2",
-            "value": "Aug. PV Niv. 1"
+            "value": "PV ↑ Niv. 1"
         },
         {
             "key": "SK_LW_KNT_M_4_SUB",
@@ -142,7 +142,7 @@
         },
         {
             "key": "SK_LW_KNT_S_1",
-            "value": "Guérison divine"
+            "value": "Longévité divine"
         },
         {
             "key": "SK_LW_KNT_M_1",
@@ -190,7 +190,7 @@
         },
         {
             "key": "SK_LW_PLD_P_1",
-            "value": "Protection du chevalier saint"
+            "value": "Protection du chevalier sacré"
         },
         {
             "key": "SK_LW_PLD_M_4_SUB",
@@ -530,7 +530,7 @@
         },
         {
             "key": "SK_LW_MNK_P_2",
-            "value": "Aug. PV Niv. 1"
+            "value": "PV ↑ Niv. 1"
         },
         {
             "key": "SK_LW_MNK_M_3_SUB",
@@ -666,7 +666,7 @@
         },
         {
             "key": "SK_LW_THI_P_2",
-            "value": "Aug. PA acquis niv. 1"
+            "value": "PA acquis ↑ niv. 1"
         },
         {
             "key": "SK_LW_THI_M_3_SUB",
@@ -906,7 +906,7 @@
         },
         {
             "key": "SK_LW_DRG_P_2",
-            "value": "Aug. PV niv. 1"
+            "value": "PV ↑ Niv. 1"
         },
         {
             "key": "SK_LW_DRG_S_3_SUB",
@@ -1194,7 +1194,7 @@
         },
         {
             "key": "SK_LW_BLM_P_1",
-            "value": "Aug. MAGIE Niv. 1"
+            "value": "MAGIE ↑ Niv. 1"
         },
         {
             "key": "SK_LW_BLM_M_7_SUB",
@@ -1394,7 +1394,7 @@
         },
         {
             "key": "SK_LW_CLR_P_1",
-            "value": "Aug. PSY Niv. 1"
+            "value": "PSY ↑ Niv. 1"
         },
         {
             "key": "SK_LW_CLR_M_3_SUB",
@@ -1662,7 +1662,7 @@
         },
         {
             "key": "SK_LW_RDM_P_1",
-            "value": "Aug. PA initiaux Niv. 1"
+            "value": "PA initiaux ↑ Niv. 1"
         },
         {
             "key": "SK_LW_RDM_P_2",
@@ -1834,7 +1834,7 @@
         },
         {
             "key": "SK_LW_GLMS_P_1",
-            "value": "Aug. PA acquis niv. 1"
+            "value": "PA acquis ↑ niv. 1"
         },
         {
             "key": "SK_LW_GLMS_P_2",
@@ -1882,7 +1882,7 @@
         },
         {
             "key": "SK_LW_FINA_S_6",
-            "value": "Viser"
+            "value": "Visée"
         },
         {
             "key": "SK_LW_FINA_S_7",
@@ -2273,6 +2273,122 @@
             "value": "Gâchette impitoyable"
         },
         {
+            "key": "SK_LW_RAIN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_RAIN_M_1",
+            "value": "Feu X"
+        },
+        {
+            "key": "SK_LW_RAIN_M_2",
+            "value": "Physique ardent"
+        },
+        {
+            "key": "SK_LW_RAIN_M_3",
+            "value": "Grandeur d'âme"
+        },
+        {
+            "key": "SK_LW_RAIN_M_3_B",
+            "value": "Grandeur d'âme"
+        },
+        {
+            "key": "SK_LW_RAIN_S_1",
+            "value": "Feu"
+        },
+        {
+            "key": "SK_LW_RAIN_S_2",
+            "value": "Émousse"
+        },
+        {
+            "key": "SK_LW_RAIN_S_3",
+            "value": "Garde astrale"
+        },
+        {
+            "key": "SK_LW_RAIN_S_4",
+            "value": "Saper"
+        },
+        {
+            "key": "SK_LW_RAIN_R_1",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "SK_LW_RAIN_P_1",
+            "value": "PSY ↑ Niv. 1"
+        },
+        {
+            "key": "SK_LW_RAIN_P_2",
+            "value": "Puissance intensifiée"
+        },
+        {
+            "key": "SK_LW_ASS_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_ASS_M_4",
+            "value": "Lacération d'armure"
+        },
+        {
+            "key": "SK_LW_ASS_M_3",
+            "value": "Lame céleste"
+        },
+        {
+            "key": "SK_LW_ASS_S_4",
+            "value": "Lame de condamnation"
+        },
+        {
+            "key": "SK_LW_ASS_S_1_INIT",
+            "value": "Piqûre toxique"
+        },
+        {
+            "key": "SK_LW_ASS_M_1_INIT",
+            "value": "Lame pilleuse"
+        },
+        {
+            "key": "SK_LW_ASS_S_2",
+            "value": "Entrave"
+        },
+        {
+            "key": "SK_LW_ASS_M_2",
+            "value": "Lame maraudeuse"
+        },
+        {
+            "key": "SK_LW_ASS_S_3",
+            "value": "Saisie de PA"
+        },
+        {
+            "key": "SK_LW_ASS_R_1",
+            "value": "Ombre ténébreuse"
+        },
+        {
+            "key": "SK_LW_ASS_P_1",
+            "value": "Esquive ↑ Niv. 1"
+        },
+        {
+            "key": "SK_LW_ASS_M_4_SUB",
+            "value": "Lacération d'armure"
+        },
+        {
+            "key": "SK_LW_ASS_M_3_SUB",
+            "value": "Lame céleste"
+        },
+        {
+            "key": "SK_LW_ASS_S_4_SUB",
+            "value": "Lame de condamnation"
+        },
+        {
+            "key": "SK_LW_ASS_S_1",
+            "value": "Piqûre toxique"
+        },
+        {
+            "key": "SK_LW_ASS_M_1",
+            "value": "Lame pilleuse"
+        },
+        {
+            "key": "SK_LW_ASS_P_2",
+            "value": "PA acquis ↑ niv. 1"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -2342,7 +2458,7 @@
         },
         {
             "key": "SK_BTL_GETSP_1-999_U",
-            "value": "Augmente les PI acquis 1 - 999 %"
+            "value": "PI acquis ↑ 1 - 999 %"
         },
         {
             "key": "SK_LW_WAR_ATK_100",
@@ -3229,6 +3345,14 @@
             "value": "Doux piège"
         },
         {
+            "key": "SK_LB_LW_RAIN",
+            "value": "Nova étincelante"
+        },
+        {
+            "key": "SK_LB_LW_FRVA",
+            "value": "Prison de glace"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -3645,6 +3769,14 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_RAIN",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_FRVA",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -3807,6 +3939,46 @@
         {
             "key": "SK_ARM_LW_VKTR_1_1",
             "value": "L'œil du dragon"
+        },
+        {
+            "key": "SK_CLT_LW_RAIN_1_1",
+            "value": "Combativité de gardien"
+        },
+        {
+            "key": "SK_ACC_LW_FRVA_1_1",
+            "value": "Maîtrise glaciale"
+        },
+        {
+            "key": "SK_ACC_LW_MONT_ARENA",
+            "value": "Cri de ralliement"
+        },
+        {
+            "key": "SK_ACC_LW_ZIZA_ARENA",
+            "value": "Revitalise"
+        },
+        {
+            "key": "SK_ARW_LW_KTON_ARENA",
+            "value": "Mille-pattes"
+        },
+        {
+            "key": "SK_ARM_LW_LUCA_ARENA",
+            "value": "Sans limite"
+        },
+        {
+            "key": "SK_HAT_LW_MDNA_ARENA",
+            "value": "Verve lunaire"
+        },
+        {
+            "key": "SK_ARM_FFT_RAMZ_ARENA",
+            "value": "Altruisme"
+        },
+        {
+            "key": "SK_SHI_LW_ENBT_ARENA",
+            "value": "Éclair loyal"
+        },
+        {
+            "key": "SK_ACC_LW_FDRC_ARENA",
+            "value": "Protection triple"
         },
         {
             "key": "SK_SWO_LW_ADLD_1_1",
@@ -3974,11 +4146,11 @@
         },
         {
             "key": "SK_LW_AF_ICE_PA_1",
-            "value": "Attaque de glace augmentée passive"
+            "value": "Att de glace ↑ (Passif)"
         },
         {
             "key": "SK_LW_AF_ICE_PA_5",
-            "value": "Attaque de glace augmentée passive"
+            "value": "Att de glace ↑ (Passif)"
         },
         {
             "key": "SK_KAT_LW_DIAA_1_1",
@@ -4027,6 +4199,18 @@
         {
             "key": "SK_LW_RNG_003_5",
             "value": ""
+        },
+        {
+            "key": "SK_LW_BSW_011_1",
+            "value": "Sabre carmin"
+        },
+        {
+            "key": "SK_LW_BSW_011_3",
+            "value": "Sabre carmin"
+        },
+        {
+            "key": "SK_LW_BSW_011_5",
+            "value": "Sabre carmin"
         },
         {
             "key": "SK_VC_LW_GLEM_GS",
@@ -4306,6 +4490,26 @@
         },
         {
             "key": "SK_VC_LW_GUARD_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV1_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV2_GSAW",
             "value": ""
         },
         {
@@ -4717,6 +4921,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_MBFF_MV1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_MBFF_MV2_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_CACT_P",
             "value": ""
         },
@@ -4862,395 +5086,395 @@
         },
         {
             "key": "SK_BTL_HP_100-99900_U",
-            "value": "Aug. PV max 100 - 99 900"
+            "value": "PV max ↑ 100 - 99 900"
         },
         {
             "key": "SK_BTL_HP_1-999_U",
-            "value": "Aug. PV max 1 - 999"
+            "value": "PV max ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_MP_1-999_U",
-            "value": "Aug. PT max 1 - 999"
+            "value": "PT max ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_AP_1-999_U",
-            "value": "Aug. PA max 1 - 999"
+            "value": "PA max ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_ATK_1-999_U",
-            "value": "Aug. ATT 1 - 999"
+            "value": "ATT ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_ATK_1-999PER_U",
-            "value": "Aug. ATT 1 - 999 %"
+            "value": "ATT ↑ 1 - 999 %"
         },
         {
             "key": "SK_BTL_MAG_1-999_U",
-            "value": "Aug. MAGIE 1 - 999"
+            "value": "MAGIE ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_SPD_1-999_U",
-            "value": "Aug. AGI 1 - 999"
+            "value": "AGI ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_DEX_1-999_U",
-            "value": "Aug. DEX 1 - 999"
+            "value": "DEX ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_LUK_1-999_U",
-            "value": "Aug. CHA 1 - 999"
+            "value": "CHA ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_BRAVE_1-100_U",
-            "value": "Aug. Bravoure 1 - 100"
+            "value": "Bravoure ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_FAITH_1-100_U",
-            "value": "Aug. Foi 1 - 100"
+            "value": "Foi ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_MOVE_1-20_U",
-            "value": "Aug. Mouvement 1-20"
+            "value": "Déplacement ↑ 1 - 20"
         },
         {
             "key": "SK_BTL_JUMP_1-20_U",
-            "value": "Aug. Saut 1 - 20"
+            "value": "Saut ↑ 1 - 20"
         },
         {
             "key": "SK_BTL_RANGE_1-20_U",
-            "value": "Aug. Portée 1-20"
+            "value": "Portée ↑ 1 - 20"
         },
         {
             "key": "SK_BTL_HP_100-99900_D",
-            "value": "Réduit PV max 100 - 99 900"
+            "value": "PV max ↓ 100 - 99 900"
         },
         {
             "key": "SK_BTL_AP_1-999_D",
-            "value": "Réduit PA 1 - 999"
+            "value": "PA ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_HP_1-999_D",
-            "value": "Réduit PV max 1 - 999"
+            "value": "PV max ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_ATK_1-999_D",
-            "value": "Réduit ATT 1 - 999"
+            "value": "ATT ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_MAG_1-999_D",
-            "value": "Réduit MAGIE 1 - 999"
+            "value": "MAGIE ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_DF_1-80_U",
-            "value": "Aug. DEF 1 - 80"
+            "value": "DEF ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_MDF_1-80_U",
-            "value": "Aug. PSY 1 - 80"
+            "value": "PSY ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_SPD_1-999_D",
-            "value": "Réduit AGI 1 - 999"
+            "value": "AGI ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_DEX_1-999_D",
-            "value": "Réduit DEX 1 - 999"
+            "value": "DEX ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_LUK_1-999_D",
-            "value": "Réduit CHA 1 - 999"
+            "value": "CHA ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_BRAVE_1-100_D",
-            "value": "Réduit Bravoure 1 - 100"
+            "value": "Bravoure ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_FAITH_1-100_D",
-            "value": "Réduit Foi 1 - 100"
+            "value": "Foi ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_MOVE_1-20_D",
-            "value": "Réduit Mouvement 1 - 20"
+            "value": "Déplacement ↓ 1 - 20"
         },
         {
             "key": "SK_BTL_JUMP_1-20_D",
-            "value": "Réduit Saut 1 - 20"
+            "value": "Saut ↓ 1 - 20"
         },
         {
             "key": "SK_BTL_RES_MAGIC_1_80_U",
-            "value": "Aug. RésM 1 - 80"
+            "value": "RésM ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SLASH_1_80_U",
-            "value": "Aug. Rés att tranchantes 1 - 80"
+            "value": "Rés att tranchantes ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SPEAR_1_80_U",
-            "value": "Aug. Rés att perçantes 1 - 80"
+            "value": "Rés att perçantes ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SHOT_1_80_U",
-            "value": "Aug. Rés att projectiles 1 - 80"
+            "value": "Rés att projectiles ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_BLOW_1_80_U",
-            "value": "Aug. Rés att contondantes 1 - 80"
+            "value": "Rés att contondantes ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_ATKALL_1_80_U",
-            "value": "Aug. toutes les Rés d'attaque 1 - 80"
+            "value": "Ttoutes Rés d'attaque ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_MAGIC_1_80_D",
-            "value": "Réduit RésM 1 - 80"
+            "value": "RésM ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SLASH_1_80_D",
-            "value": "Réduit Rés att tranchantes 1 - 80"
+            "value": "Rés att tranchantes ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SPEAR_1_80_D",
-            "value": "Réduit Rés att perçantes 1 - 80"
+            "value": "Rés att perçantes ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SHOT_1_80_D",
-            "value": "Réduit Rés att projectiles 1 - 80"
+            "value": "Rés att projectiles ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_BLOW_1_80_D",
-            "value": "Réduit Rés att contondantes 1 - 80"
+            "value": "Rés att contondantes ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_ATKALL_1_80_D",
-            "value": "Réduit toutes les Rés d'attaque 1 - 80"
+            "value": "Toutes les Rés d'attaque ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_FIRE_1_80_U",
-            "value": "Aug. Rés feu 1 - 80"
+            "value": "Rés feu ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_WATER_1_80_U",
-            "value": "Aug. Rés eau 1 - 80"
+            "value": "Rés eau ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_WIND_1_80_U",
-            "value": "Aug. Rés vent 1 - 80"
+            "value": "Rés vent ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_THUNDER_1_80_U",
-            "value": "Aug. Rés foudre 1 - 80"
+            "value": "Rés foudre ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_ICE_1_80_U",
-            "value": "Aug. Rés glace 1 - 80"
+            "value": "Rés glace ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SOIL_1_80_U",
-            "value": "Aug. Rés terre 1 - 80"
+            "value": "Rés terre ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_DARK_1_80_U",
-            "value": "Aug. Rés ombre 1 - 80"
+            "value": "Rés ombre ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SHINE_1_80_U",
-            "value": "Aug. Rés lumière 1 - 80"
+            "value": "Rés lumière ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_ELEMALL_1_80_U",
-            "value": "Aug. Rés à tous les éléments 1 - 80"
+            "value": "Rés tous éléments ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_FIRE_1_80_D",
-            "value": "Réduit Rés feu 1 - 80"
+            "value": "Rés feu ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_WATER_1_80_D",
-            "value": "Réduit Rés eau 1 - 80"
+            "value": "Rés eau ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_WIND_1_80_D",
-            "value": "Réduit Rés vent 1 - 80"
+            "value": "Rés vent ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_THUNDER_1_80_D",
-            "value": "Réduit Rés foudre 1 - 80"
+            "value": "Rés foudre ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_ICE_1_80_D",
-            "value": "Réduit Rés glace 1 - 80"
+            "value": "Rés glace ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SOIL_1_80_D",
-            "value": "Réduit Rés terre 1 - 80"
+            "value": "Rés terre ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_DARK_1_80_D",
-            "value": "Réduit Rés ombre 1 - 80"
+            "value": "Rés ombre ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_SHINE_1_80_D",
-            "value": "Réduit Rés lumière 1 - 80"
+            "value": "Rés lumière ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_ELEMALL_1_80_D",
-            "value": "Réduit toutes les Rés élémentaires 1 - 80"
+            "value": "Toutes les Rés élémentaires ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_HIT_1_999_U",
-            "value": "Aug. précision 1 - 999"
+            "value": "Précision ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_AVOI_1_999_U",
-            "value": "Aug. esquive 1 - 999"
+            "value": "Esquive ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_CRI_1_999_U",
-            "value": "Aug. Coups critiques 1 - 999"
+            "value": "Coups critiques ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_CRIHIT_1_999_U",
-            "value": "Aug. précision de coups critiques 1 - 999"
+            "value": "Précision des coups critiques ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_CRIAVOI_1_999_U",
-            "value": "Aug. esquive critique 1 - 999"
+            "value": "Esquive critique ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_HIT_1_999_D",
-            "value": "Réduit précision 1 - 999"
+            "value": "Précision ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_AVOI_1_999_D",
-            "value": "Réduit esquive 1 - 999"
+            "value": "Esquive ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_CRI_1_999_D",
-            "value": "Réduit Coups critiques 1 - 999"
+            "value": "Coups critiques ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_CRIHIT_1_999_D",
-            "value": "Réduit précision de coups critiques 1 - 999"
+            "value": "Précision des coups critiques ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_CRIAVOI_1_999_D",
-            "value": "Réduit esquive critique 1 - 999"
+            "value": "Esquive critique ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_STR_MAGIC_1_100_U",
-            "value": "Aug. AttM 1 - 100"
+            "value": "AttM ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SLASH_1_100_U",
-            "value": "Aug. Att tranchante 1 - 100"
+            "value": "Att tranchante ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SPEAR_1_100_U",
-            "value": "Aug. Att perçante 1 - 100"
+            "value": "Att perçante ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SHOT_1_100_U",
-            "value": "Aug. Att projectile 1 - 100"
+            "value": "Att projectile ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_BLOW_1_100_U",
-            "value": "Aug. Att contondante 1 - 100"
+            "value": "Att contondante ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_MAGIC_1_100_D",
-            "value": "Réduit AttM 1 - 100"
+            "value": "AttM ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SLASH_1_100_D",
-            "value": "Réduit Att tranchante 1 - 100"
+            "value": "Att tranchante ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SPEAR_1_100_D",
-            "value": "Réduit Att perçante 1 - 100"
+            "value": "Att perçante ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SHOT_1_100_D",
-            "value": "Réduit Att projectile 1 - 100"
+            "value": "Att projectile ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_BLOW_1_100_D",
-            "value": "Réduit Att contondante 1 - 100"
+            "value": "Att contondante ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_CASTTIME_1_999_D",
-            "value": "Réduit le délai d'activation de sort 1-999"
+            "value": "Délai d'activation de sort ↓ 1-999"
         },
         {
             "key": "SK_BTL_RES_DEBUFF_1_100_U",
-            "value": "Aug. Rés malus 1 - 100"
+            "value": "Rés malus ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_RES_DEBUFF_1_100_D",
-            "value": "Réduit Rés malus 1 - 100"
+            "value": "Rés malus ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_RES_POISON_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Poison]"
+            "value": "Rés [Poison] ↑"
         },
         {
             "key": "SK_BTL_RES_DARKN_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Cécité]"
+            "value": "Rés [Cécité] ↑"
         },
         {
             "key": "SK_BTL_RES_SLEEP_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Sommeil]"
+            "value": "Rés [Sommeil] ↑"
         },
         {
             "key": "SK_BTL_RES_SILENCE_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Silence]"
+            "value": "Rés [Silence] ↑"
         },
         {
             "key": "SK_BTL_RES_PARA_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Paralysie]"
+            "value": "Rés [Paralysie] ↑"
         },
         {
             "key": "SK_BTL_RES_CONFU_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Confusion]"
+            "value": "Rés [Confusion] ↑"
         },
         {
             "key": "SK_BTL_RES_CHARM_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Charme]"
+            "value": "Rés [Charme] ↑"
         },
         {
             "key": "SK_BTL_RES_STONE_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Pétrification]"
+            "value": "Rés [Pétrification] ↑"
         },
         {
             "key": "SK_BTL_RES_TOAD_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Crapaud]"
+            "value": "Rés [Crapaud] ↑"
         },
         {
             "key": "SK_BTL_RES_SLOW_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Lenteur]"
+            "value": "Rés [Lenteur] ↑"
         },
         {
             "key": "SK_BTL_RES_STOP_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Stop]"
+            "value": "Rés [Stop] ↑"
         },
         {
             "key": "SK_BTL_RES_DACT_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Incapacité]"
+            "value": "Rés [Incapacité] ↑"
         },
         {
             "key": "SK_BTL_RES_DMOV_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Immobilisation]"
+            "value": "Rés [Immobilisation] ↑"
         },
         {
             "key": "SK_BTL_RES_BERSK_1_100_U",
-            "value": "Aug. la Rés de l'altération d'état [Berserker]"
+            "value": "Rés [Berserker] ↑"
         },
         {
             "key": "SK_BTL_RES_POISON_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Poison]"
+            "value": "Rés [Poison] ↓"
         },
         {
             "key": "SK_BTL_RES_DARKN_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Cécité]"
+            "value": "Rés [Cécité] ↓"
         },
         {
             "key": "SK_BTL_INV_HPDOWN",
@@ -5266,51 +5490,295 @@
         },
         {
             "key": "SK_BTL_RES_SLEEP_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Sommeil]"
+            "value": "Rés [Sommeil] ↓"
         },
         {
             "key": "SK_BTL_RES_SILENCE_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Silence]"
+            "value": "Rés [Silence] ↓"
         },
         {
             "key": "SK_BTL_RES_PARA_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Paralysie]"
+            "value": "Rés [Paralysie] ↓"
         },
         {
             "key": "SK_BTL_RES_CONFU_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Confusion]"
+            "value": "Rés [Confusion] ↓"
         },
         {
             "key": "SK_BTL_RES_CHARM_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Charme]"
+            "value": "Rés [Charme] ↓"
         },
         {
             "key": "SK_BTL_RES_STONE_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Pétrification]"
+            "value": "Rés [Pétrification] ↓"
         },
         {
             "key": "SK_BTL_RES_TOAD_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Crapaud]"
+            "value": "Rés [Crapaud] ↓"
         },
         {
             "key": "SK_BTL_RES_SLOW_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Lenteur]"
+            "value": "Rés [Lenteur] ↓"
         },
         {
             "key": "SK_BTL_RES_STOP_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Stop]"
+            "value": "Rés [Stop] ↓"
         },
         {
             "key": "SK_BTL_RES_DACT_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Incapacité]"
+            "value": "Rés [Incapacité] ↓"
         },
         {
             "key": "SK_BTL_RES_DMOV_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Immobilisation]"
+            "value": "Rés [Immobilisation] ↓"
         },
         {
             "key": "SK_BTL_RES_BERSK_1_100_D",
-            "value": "Réduit la Rés de l'altération d'état [Berserker]"
+            "value": "Rés [Berserker] ↓"
+        },
+        {
+            "key": "SK_BTL_FAP_1-999_U",
+            "value": "PA initiaux ↑ 1 - 999"
+        },
+        {
+            "key": "SK_BTL_FAP_1-999_D",
+            "value": "PA initiaux ↓ 1 - 999"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_U_KISO",
+            "value": "RésM ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_U_KISO",
+            "value": "Rés att tranchantes ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_U_KISO",
+            "value": "Rés att perçantes ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_U_KISO",
+            "value": "Rés att projectiles ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_U_KISO",
+            "value": "Rés att contondantes ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_U_KISO",
+            "value": "Toutes Rés d'attaque ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_MAGIC_1_80_D_KISO",
+            "value": "RésM ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SLASH_1_80_D_KISO",
+            "value": "Rés att tranchantes ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SPEAR_1_80_D_KISO",
+            "value": "Rés att perçantes ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SHOT_1_80_D_KISO",
+            "value": "Rés att projectiles ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_BLOW_1_80_D_KISO",
+            "value": "Rés att contondantes ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_ATKALL_1_80_D_KISO",
+            "value": "Toutes les Rés d'attaque ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_U_KISO",
+            "value": "Rés feu ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_U_KISO",
+            "value": "Rés eau ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_U_KISO",
+            "value": "Rés vent ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_U_KISO",
+            "value": "Rés foudre ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_U_KISO",
+            "value": "Rés glace ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_U_KISO",
+            "value": "Rés terre ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_DARK_1_80_U_KISO",
+            "value": "Rés ombre ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_U_KISO",
+            "value": "Rés lumière ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_U_KISO",
+            "value": "Rés tous éléments ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_FIRE_1_80_D_KISO",
+            "value": "Rés feu ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_WATER_1_80_D_KISO",
+            "value": "Rés eau ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_WIND_1_80_D_KISO",
+            "value": "Rés vent ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_THUNDER_1_80_D_KISO",
+            "value": "Rés foudre ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_ICE_1_80_D_KISO",
+            "value": "Rés glace ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SOIL_1_80_D_KISO",
+            "value": "Rés terre ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_D_KISOARK_1_80_D_KISO",
+            "value": "Rés ombre ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_SHINE_1_80_D_KISO",
+            "value": "Rés lumière ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_ELEMALL_1_80_D_KISO",
+            "value": "Toutes les Rés élémentaires ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_HP_100-99900_U_PA",
+            "value": "PV max ↑ 100 - 99 900 (Passif)"
+        },
+        {
+            "key": "SK_BTL_HP_1-999_U_PA",
+            "value": "PV max ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_MP_1-999_U_PA",
+            "value": "PT max ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_AP_1-999_U_PA",
+            "value": "PA max ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_ATK_1-999_U_PA",
+            "value": "ATT ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_MAG_1-999_U_PA",
+            "value": "MAGIE ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_DF_1-80_U_PA",
+            "value": "DEF ↑ 1 - 80 (Passif)"
+        },
+        {
+            "key": "SK_BTL_MDF_1-80_U_PA",
+            "value": "PSY ↑ 1 - 80 (Passif)"
+        },
+        {
+            "key": "SK_BTL_SPD_1-999_U_PA",
+            "value": "AGI 1 ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_DEX_1-999_U_PA",
+            "value": "DEX ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_LUK_1-999_U_PA",
+            "value": "CHA ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_HATE_1-100_U_PA",
+            "value": "Haine ↑ 1 - 999 (Passif)"
+        },
+        {
+            "key": "SK_BTL_SATK_1-100_U",
+            "value": "Rés attaques d'unité ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_SATK_1-100_D",
+            "value": "Rés aux attaques d'unité ↓ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_RATK_1-100_U",
+            "value": "Rés attaques de zone ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_RATK_1-100_D",
+            "value": "Rés aux attaques de zone ↓ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_MAN_1-100_U",
+            "value": "Anthropophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_FIRE_1-100_U",
+            "value": "Pyrophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_WATER_1-100_U",
+            "value": "Hydrophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_WIND_1-100_U",
+            "value": "Éophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_THUNDER_1-100_U",
+            "value": "Foudrophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_ICE_1-100_U",
+            "value": "Cryophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_SOIL_1-100_U",
+            "value": "Terraphage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_DARK_1-100_U",
+            "value": "Noctophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_KILLER_SHINE_1-100_U",
+            "value": "Luminophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_TOAD_1-100_U",
+            "value": "Chance de Rés [Crapaud] ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STONE_1-100_U",
+            "value": "Chance de Rés [Pétrification] ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_DONMV_1-100_D",
+            "value": "Chance [Immobilisation] ↓ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_DEFPIERCE_1-100_U",
+            "value": "Perforation de la DEF ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_INV_DEATH",
@@ -5422,27 +5890,39 @@
         },
         {
             "key": "SK_LW_WAR_P_2",
-            "value": "Aug. PV"
+            "value": "PV ↑"
         },
         {
             "key": "SK_LW_PLD_P_2",
-            "value": "Aug. Rés contondants"
+            "value": "Rés att contondantes ↑"
         },
         {
             "key": "SK_LW_SWN_P_2",
-            "value": "Aug. PV"
+            "value": "PV ↑"
         },
         {
             "key": "SK_LW_SAM_P_2",
-            "value": "Aug. Rés att tranchantes"
+            "value": "Rés att tranchantes ↑"
         },
         {
             "key": "SK_LW_HUN_P_3",
-            "value": "Aug. Taux de précision"
+            "value": "Précision ↑"
         },
         {
             "key": "SK_LW_WHM_P_2",
-            "value": "Aug. Foi"
+            "value": "Foi ↑"
+        },
+        {
+            "key": "SK_ARMN_M_01_TW",
+            "value": "Mauvais œil"
+        },
+        {
+            "key": "SK_ARMN_M_02_TW",
+            "value": "Regard démoniaque"
+        },
+        {
+            "key": "SK_ARMN_M_03_TW",
+            "value": "Peine de mort"
         }
     ]
 }
